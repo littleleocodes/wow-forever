@@ -163,6 +163,10 @@ def pct(x):
     return f"{x * 100:+.1f}%"
 
 
+def flat(alloc):
+    return {n: r for items in alloc.values() for n, r in items if r}
+
+
 def best_by_label(rows, setting=None, key="dps"):
     """{label: (value, entry)} over the entries: each build's best entry (the rotation that suits it best)."""
     out = {}
@@ -247,9 +251,12 @@ def render(res):
               "build in that same entry (same rotation and gear: the talents alone differ). Leveling is time per kill, so + means slower.", "",
               "| # | Lead | Split | Popularity (shared / saved / opened) | Dummy DPS (entry) | vs best | vs same | Raid DPS (entry) | vs best | vs same | Leveling s/kill (played as) | vs best | vs same |",
               "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+        mine = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]
         for p in pc["top"]:
             d, r_, l_ = bd.get(p["id"]), br.get(p["id"]), best_l.get(p["id"])
             short = "" if p["valid"] else f" ({sum(int(x) for x in p['split'].split('/'))} pts)"
+            same = [b["id"] for b in mine if flat(b["allocation"]) == flat(p["allocation"])]
+            short += f" (= `{same[0]}`)" if same else ""
             o.append(f"| {p['rank']} | [{p['lead']}]({p['url']}) | {p['split']}{short} | {p['shared']} / {p['saved']} / {p['opened']} | "
                      + (f"{d[0]:.0f} (`{d[1]}`) | {cmp(d[0], our_d and our_d[0])} | {cmp(d[0], ours_in('dummy', d[1]))}" if d else "- | - | -") + " | "
                      + (f"{r_[0]:.0f} (`{r_[1]}`) | {cmp(r_[0], our_r and our_r[0])} | {cmp(r_[0], ours_in('raid', r_[1]))}" if r_ else "- | - | -") + " | "
@@ -282,6 +289,9 @@ def render(res):
           "raced as published; the split column gives their point count.",
           "- Leveling orders for the popular builds are the scorer's (the same order search our optimizer builds get); people who planned these builds "
           "for level 60 may level differently. Most popular builds are raid or PvP plans, so a leveling gap is expected, not a flaw.",
+          "- \"(= `id`)\" marks a popular build identical to one of ours. Builds that differ only in talents the simulator does not model "
+          "(e.g. the Survival hunters' Survival Tactics, Clever Traps, Survivalist's Discipline under the melee rotation) read the same DPS: a tie, "
+          "not a result.",
           "- Popularity is what visitors of a talent calculator planned during a level-20 beta. It says nothing about what performs.", ""]
     REPORT.write_text("\n".join(o) + "\n", encoding="utf-8")
     print(f"wrote {REPORT.relative_to(ROOT)}")

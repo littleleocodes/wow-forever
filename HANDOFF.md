@@ -82,6 +82,9 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    `popular_builds.py` archives and decodes it, `popular_race.py` races the 45 builds in the raid sim (dummy and raid), the tank
    and healer tools and the fight lab; report `_reference/popular-builds.md`. Re-run both after the site's list changes
    (`popular_builds.py --fetch`, then `popular_race.py`). The cloud session reached talentsforever.com with the default network.
+   Outcome: no popular build beats our best of its class on the training dummy; in the raid setting only the popular Enhancement
+   18/33/0 (+1.7%, Elemental damage talents instead of our Restoration mana talents; it loses 4.6% on the dummy, where mana runs
+   short). The popular Marksmanship build is our `mm-lone-wolf-raid`. Nothing was adopted.
 2. Model caveats to keep in mind: the Summon Hawk builds rest on the simulator's guess of the hawks' follow-up swings (the client
    does not describe them); Frostfire Bolt is our own implementation; talent searches are local and run on the dummy only.
 3. From the notes in `_reference/notes/`: `abs_dps_factor` still 1.0 for most classes; Bastion / Focused Rage (tables vs notes);
