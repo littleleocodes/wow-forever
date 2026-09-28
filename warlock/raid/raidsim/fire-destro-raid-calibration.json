@@ -1,0 +1,1011 @@
+{
+ "class": "warlock",
+ "spec": "fire-destro-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "destruction-fire-raid",
+  "opt-fire-destro-raid-raid-dps",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-26.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-27.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-28.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r1.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r2.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r3.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r4.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r5.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r6.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r7.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r8.json",
+  "F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r9.json"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "warlock/dps",
+  "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+  "apl": "_reference/data/raidsim/apls/warlock/fire-destro-raid.apl.json",
+  "apl_sim": "ui/specs/warlock/dps/apls/destruction.apl.json",
+  "race": "RaceGnome",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 6373,
+   "guardianElixirId": 20007,
+   "zanzaId": 8423,
+   "alcoholId": 21151,
+   "foodId": 18254,
+   "potId": 13444,
+   "conjuredId": 12662
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "talents": [
+  {
+   "talent": "Demonic Sacrifice",
+   "sim": 0.13086777494466414,
+   "ev_before": 0.13916165723328916,
+   "ev_after": 0.138649205423728,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Bane",
+   "sim": 0.10177171626393378,
+   "ev_before": 0.10191830336248597,
+   "ev_after": 0.10158013407915917,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Agonizing Flames",
+   "sim": 0.06056821101742815,
+   "ev_before": 0.05587182401803237,
+   "ev_after": 0.0556999078074264,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Malevolence",
+   "sim": 0.0516603693030066,
+   "ev_before": 0.05008325716209259,
+   "ev_after": 0.05166038882453689,
+   "scale": 1.3376225969804416,
+   "how": "fitted",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Suppression",
+   "sim": 0.051320701646832605,
+   "ev_before": 0.058035357104496484,
+   "ev_after": 0.058035357637511734,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Corruption",
+   "sim": 0.04525942232934282,
+   "ev_before": 0.04187418215375726,
+   "ev_after": 0.04168213093228348,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Shadow Bolt",
+   "sim": 0.04508704414440728,
+   "ev_before": 0.03326556060693032,
+   "ev_after": 0.04432461001905189,
+   "scale": 1.355364260263741,
+   "how": "fitted",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Ruin",
+   "sim": 0.0322933051151277,
+   "ev_before": 0.029902825065871032,
+   "ev_after": 0.02980671204781947,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Pandemic",
+   "sim": 0.020641822704048317,
+   "ev_before": 0.03254740295824755,
+   "ev_after": 0.02361220590583674,
+   "scale": 0.6178525001741946,
+   "how": "fitted",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Life Tap",
+   "sim": 0.018721801251444396,
+   "ev_before": 0.028642722400549905,
+   "ev_after": 0.02749419463361905,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Bane of Agony",
+   "sim": 0.014873357505962248,
+   "ev_before": 0.009941946362955069,
+   "ev_after": 0.010283365516412662,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Malediction",
+   "sim": 0.014152745541857735,
+   "ev_before": 0.01231918316418307,
+   "ev_after": 0.012356903578230775,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r7"
+   ]
+  },
+  {
+   "talent": "Shadowburn",
+   "sim": 0.012997981188501767,
+   "ev_before": 0.006086488369083192,
+   "ev_after": 0.006061196440992689,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Cataclysm",
+   "sim": 0.012539392123127524,
+   "ev_before": 0.01393560987981497,
+   "ev_after": 0.013384959196592992,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8"
+   ]
+  },
+  {
+   "talent": "Aftermath",
+   "sim": 0.012455150447330058,
+   "ev_before": 0.01236445687550728,
+   "ev_after": 0.01237484931940317,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-r2"
+   ]
+  },
+  {
+   "talent": "Fel Vitality",
+   "sim": 0.010982004700790667,
+   "ev_before": 0.023183636987510414,
+   "ev_after": 0.022257617402408548,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Decimation",
+   "sim": 0.008887704137198341,
+   "ev_before": 0.0018662929908962033,
+   "ev_after": 0.0018662929908959101,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Amplify Curse",
+   "sim": 0.00720110042686813,
+   "ev_before": 0.0064957153096844985,
+   "ev_after": 0.006716574129103261,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Nightfall",
+   "sim": 0.0056375252790575965,
+   "ev_before": 0.004244509503493221,
+   "ev_after": 0.004233230979669414,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6"
+   ]
+  },
+  {
+   "talent": "Demonic Aegis",
+   "sim": 0.0,
+   "ev_before": 1.1327195448959541e-05,
+   "ev_after": 1.131029189212679e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Health Funnel",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Improved Imp",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "destruction-fire-raid",
+    "opt-fire-destro-raid-raid-dps",
+    "cand-fire-destro-raid-hand-2026-09-28",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r6",
+    "cand-fire-destro-raid-r7",
+    "cand-fire-destro-raid-r8",
+    "cand-fire-destro-raid-r9"
+   ]
+  },
+  {
+   "talent": "Bane of Havoc",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Conflagrate",
+   "sim": 0.0,
+   "ev_before": 0.002019794425520942,
+   "ev_after": 0.002019794381371567,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Demonic Embrace",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26",
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-preset-ds-ruin",
+    "cand-fire-destro-raid-r1",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5"
+   ]
+  },
+  {
+   "talent": "Destructive Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Fire and Brimstone",
+   "sim": 0.0,
+   "ev_before": 0.002019794425520942,
+   "ev_after": 0.002019794381371567,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Incinerate",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Shadow and Flame",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Siphon Life",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-hand-2026-09-27",
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-r2",
+    "cand-fire-destro-raid-r3",
+    "cand-fire-destro-raid-r4",
+    "cand-fire-destro-raid-r5"
+   ]
+  },
+  {
+   "talent": "Unholy Power",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16",
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Demonic Brand",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Demonic Knowledge",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Demonic Pact",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Improved Felhunter",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Master Demonologist",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  },
+  {
+   "talent": "Soul Link",
+   "sim": 0.0,
+   "ev_before": -0.13517401956902758,
+   "ev_after": -0.13517401956902772,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-fire-destro-raid-r1"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": {
+   "profiles": [
+    "raid-dps",
+    "raid-dps-extwc"
+   ],
+   "loss": 0.155,
+   "cap": 0.9,
+   "rms": 0.0051,
+   "points": 43
+  },
+  "builds": {
+   "destruction-fire-raid": {
+    "dps": 559.2073909144293,
+    "surplus": 630.7256252497651,
+    "oom_seconds": 1.9466666666666663,
+    "deficit": 0.11339040538746914,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "opt-fire-destro-raid-raid-dps": {
+    "dps": 559.2073909144293,
+    "surplus": 630.7256252497651,
+    "oom_seconds": 1.9466666666666663,
+    "deficit": 0.11339040538746914,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-hand-2026-09-26": {
+    "dps": 484.8105479569747,
+    "surplus": 545.7109425564583,
+    "oom_seconds": 1.416,
+    "deficit": 0.11159826540070339,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-hand-2026-09-27": {
+    "dps": 532.8447313095656,
+    "surplus": 599.2299884185697,
+    "oom_seconds": 1.9659999999999997,
+    "deficit": 0.11078427046717354,
+    "sustain": 1.0481,
+    "bound_share": 1.0,
+    "model_deficit": 0.1069
+   },
+   "cand-fire-destro-raid-hand-2026-09-28": {
+    "dps": 541.7532483506707,
+    "surplus": 606.5156852884035,
+    "oom_seconds": 1.462,
+    "deficit": 0.10677784352260844,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16": {
+    "dps": 535.1109735343067,
+    "surplus": 603.2340734572559,
+    "oom_seconds": 1.6109999999999995,
+    "deficit": 0.11292979445362228,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-preset-ds-ruin": {
+    "dps": 523.6774484284985,
+    "surplus": 587.0088747712426,
+    "oom_seconds": 1.476,
+    "deficit": 0.10788836262045343,
+    "sustain": 1.0481,
+    "bound_share": 1.0,
+    "model_deficit": 0.1069
+   },
+   "cand-fire-destro-raid-r1": {
+    "dps": 460.3059688563146,
+    "surplus": 508.6860533200446,
+    "oom_seconds": 1.276,
+    "deficit": 0.09510794358911034,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r2": {
+    "dps": 519.5618180493288,
+    "surplus": 577.5881328752005,
+    "oom_seconds": 1.62,
+    "deficit": 0.1004631354474338,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r3": {
+    "dps": 528.8977860765671,
+    "surplus": 590.7203829602098,
+    "oom_seconds": 1.613,
+    "deficit": 0.10465627844740721,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r4": {
+    "dps": 532.8447313095656,
+    "surplus": 599.2299884185697,
+    "oom_seconds": 1.9659999999999997,
+    "deficit": 0.11078427046717354,
+    "sustain": 1.0481,
+    "bound_share": 1.0,
+    "model_deficit": 0.1069
+   },
+   "cand-fire-destro-raid-r5": {
+    "dps": 539.1815848375076,
+    "surplus": 605.4586434998357,
+    "oom_seconds": 1.9659999999999997,
+    "deficit": 0.10946587248175299,
+    "sustain": 1.0481,
+    "bound_share": 1.0,
+    "model_deficit": 0.1069
+   },
+   "cand-fire-destro-raid-r6": {
+    "dps": 541.7532483506707,
+    "surplus": 606.5156852884035,
+    "oom_seconds": 1.462,
+    "deficit": 0.10677784352260844,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r7": {
+    "dps": 544.690008586415,
+    "surplus": 604.3147324989055,
+    "oom_seconds": 1.276,
+    "deficit": 0.09866501792192939,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r8": {
+    "dps": 553.9111272948406,
+    "surplus": 617.5603003815695,
+    "oom_seconds": 1.276,
+    "deficit": 0.10306551934669728,
+    "sustain": 1.059,
+    "bound_share": 1.0,
+    "model_deficit": 0.096
+   },
+   "cand-fire-destro-raid-r9": {
+    "dps": 559.2073909144293,
+    "surplus": 630.7256252497651,
+    "oom_seconds": 1.9466666666666663,
+    "deficit": 0.11339040538746914,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   }
+  },
+  "removals": {
+   "destruction-fire-raid -Improved Life Tap": {
+    "deficit": 0.1293,
+    "sustain": 1.0195,
+    "bound_share": 1.0,
+    "model_deficit": 0.1355
+   },
+   "opt-fire-destro-raid-raid-dps -Improved Life Tap": {
+    "deficit": 0.1293,
+    "sustain": 1.0195,
+    "bound_share": 1.0,
+    "model_deficit": 0.1355
+   },
+   "cand-fire-destro-raid-hand-2026-09-26 -Cataclysm": {
+    "deficit": 0.1304,
+    "sustain": 1.0195,
+    "bound_share": 1.0,
+    "model_deficit": 0.1355
+   },
+   "cand-fire-destro-raid-hand-2026-09-27 -Cataclysm": {
+    "deficit": 0.1148,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-hand-2026-09-27 -Improved Life Tap": {
+    "deficit": 0.1289,
+    "sustain": 1.0241,
+    "bound_share": 1.0,
+    "model_deficit": 0.1309
+   },
+   "cand-fire-destro-raid-hand-2026-09-28 -Cataclysm": {
+    "deficit": 0.12,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-hand-2026-09-28 -Improved Life Tap": {
+    "deficit": 0.121,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16 -Improved Life Tap": {
+    "deficit": 0.1304,
+    "sustain": 1.0195,
+    "bound_share": 1.0,
+    "model_deficit": 0.1355
+   },
+   "cand-fire-destro-raid-preset-ds-ruin -Cataclysm": {
+    "deficit": 0.111,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-preset-ds-ruin -Improved Life Tap": {
+    "deficit": 0.1241,
+    "sustain": 1.0241,
+    "bound_share": 1.0,
+    "model_deficit": 0.1309
+   },
+   "cand-fire-destro-raid-r1 -Cataclysm": {
+    "deficit": 0.1113,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r1 -Improved Life Tap": {
+    "deficit": 0.1122,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r2 -Cataclysm": {
+    "deficit": 0.1109,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r2 -Improved Life Tap": {
+    "deficit": 0.1146,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r3 -Cataclysm": {
+    "deficit": 0.1156,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r3 -Improved Life Tap": {
+    "deficit": 0.1195,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r4 -Cataclysm": {
+    "deficit": 0.1148,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r4 -Improved Life Tap": {
+    "deficit": 0.1289,
+    "sustain": 1.0241,
+    "bound_share": 1.0,
+    "model_deficit": 0.1309
+   },
+   "cand-fire-destro-raid-r5 -Cataclysm": {
+    "deficit": 0.1135,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r5 -Improved Life Tap": {
+    "deficit": 0.1275,
+    "sustain": 1.0241,
+    "bound_share": 1.0,
+    "model_deficit": 0.1309
+   },
+   "cand-fire-destro-raid-r6 -Cataclysm": {
+    "deficit": 0.12,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r6 -Improved Life Tap": {
+    "deficit": 0.121,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r7 -Cataclysm": {
+    "deficit": 0.1159,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r7 -Improved Life Tap": {
+    "deficit": 0.116,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r8 -Cataclysm": {
+    "deficit": 0.1205,
+    "sustain": 1.0435,
+    "bound_share": 1.0,
+    "model_deficit": 0.1115
+   },
+   "cand-fire-destro-raid-r8 -Improved Life Tap": {
+    "deficit": 0.1214,
+    "sustain": 1.035,
+    "bound_share": 1.0,
+    "model_deficit": 0.12
+   },
+   "cand-fire-destro-raid-r9 -Improved Life Tap": {
+    "deficit": 0.1293,
+    "sustain": 1.0195,
+    "bound_share": 1.0,
+    "model_deficit": 0.1355
+   }
+  }
+ }
+}

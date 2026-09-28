@@ -1,0 +1,91 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "enhancement_shaman",
+  "gear": "ui/enhancement_shaman/gear_sets/phase_1.gear.json",
+  "apl": "ui/enhancement_shaman/apls/default.apl.json",
+  "race": "RaceOrc",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultPotion": "MajorManaPotion",
+   "defaultConjured": "ConjuredDemonicRune",
+   "dragonBreathChili": true,
+   "firePowerBuff": "ElixirOfFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodBlessSunfruit",
+   "mainHandImbue": "WindfuryWeapon",
+   "manaRegenElixir": "MagebloodPotion",
+   "offHandImbue": "WindfuryWeapon",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "ROIDS"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "enhancement-raid-support",
+   "talents": "-5005002125023051-0500530115",
+   "split": "0/31/20",
+   "ours": true,
+   "dps": 777.4061096212495,
+   "dps_stdev": 102.44007733106383,
+   "threat": 773.5887438558584,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 30.320350000000005,
+   "error": null,
+   "scorer": 0.4725779676833165,
+   "shares": {
+    "Auto Attack": 0.6347401050831315,
+    "Windfury Weapon": 0.30684015703158257,
+    "Attack": 0.03124086028664006,
+    "Elemental Sharpening Stone": 0.018708107568026457,
+    "Dragonbreath Chili": 0.008470770030619268
+   },
+   "source_shares": {
+    "white": 0.6741,
+    "windfury": 0.3259
+   },
+   "unmatched_share": 0.0584
+  },
+  {
+   "label": "sim preset: Level 60",
+   "talents": "05-5025002105023051-05105301",
+   "split": "",
+   "ours": false,
+   "dps": 777.4061096212495,
+   "dps_stdev": 102.44007733106383,
+   "threat": 773.5887438558584,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 30.320350000000005,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.6347401050831315,
+    "Windfury Weapon": 0.30684015703158257,
+    "Attack": 0.03124086028664006,
+    "Elemental Sharpening Stone": 0.018708107568026457,
+    "Dragonbreath Chili": 0.008470770030619268
+   },
+   "source_shares": {
+    "white": 0.6741,
+    "windfury": 0.3259
+   },
+   "unmatched_share": 0.0584
+  }
+ ],
+ "deltas": {}
+}

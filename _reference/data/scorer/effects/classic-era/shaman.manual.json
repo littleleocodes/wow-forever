@@ -1,0 +1,1060 @@
+{
+  "_doc": "Classic Era hand-entered Shaman effects for calibration. Same tag conventions as the Forever file.",
+  "Earth's Grasp": {
+    "note": "Stoneclaw health / Earthbind radius: leveling utility. 2026-09-27 audit: split into Stoneclaw (stun) and Earthbind (kite) halves. PvP (2026-09-27): medium, kite: Earthbind Totem radius +20% (10 -> 12 yd) for kiting; the Stoneclaw +50% health half only taunts pets. The 30/0/21 build takes 2/2.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001,
+        "modes": ["leveling-st", "solo-60"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "modes": ["leveling-aoe"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001,
+        "kind": "kite"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Elemental Warding": {
+    "note": "-3.3%/rank Fire/Frost/Nature damage taken. PvP (2026-09-27): low, defensive: -10% Fire/Frost/Nature damage taken. The survival term already counts it at ~30% spell damage; mages, shamans, druids, poisons and Destruction warlocks push that share higher. The 30/0/21 build's alternative filler.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.008
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Call of Thunder": {
+    "note": "+1/2/3/4/6% Lightning Bolt and Chain Lightning crit. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 3.9% DPS in the simulator (scorer said 3.9% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.06],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.06],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.006285, 0.01257, 0.018855, 0.02514, 0.037709],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Improved Fire Totems": {
+    "note": "Fire Nova delay and Magma threat: small. 2026-09-27 audit: leveling utility only (it counted in raid-dps and raid-heal). PvP (2026-09-27): low, burst: Fire Nova Totem goes off 2 s sooner (3 s): it lands before melee leave its radius. The Magma Totem threat half is worthless in PvP.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Eye of the Storm": {
+    "note": "33%/rank chance for 6s of no pushback after being crit: leveling only. PvP (2026-09-27): high, resist: Focused Casting for 6 s after every melee or ranged crit taken: no pushback while being hit. Pushback protection, not a CC breaker. Core of the 30/0/21 build.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.008,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Elemental Devastation": {
+    "note": "+3%/rank melee crit for 10s after a spell crit: ~40% uptime for Enhancement.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.012
+      }
+    ]
+  },
+  "Elemental Mastery": {
+    "note": "Guaranteed free crit every 3 min. Not fitted to the Classic simulator: its rotation conditions on this talent, so the removal run measures a broken rotation (raidsim/run.py flags it apl_dependent). PvP (2026-09-27): high, burst: Next Fire/Frost/Nature damage spell crits for free (3 min cooldown): a guaranteed Chain Lightning or Lightning Bolt crit with Elemental Fury. The 31/0/20 alternative to Nature's Swiftness.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.02]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Elemental Focus": {
+    "note": "10% Clearcasting after any damage spell. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 4.7% DPS in the simulator (scorer said 5.1% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.204928],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Storm Reach": {
+    "note": "+3 yd/rank Lightning range: leveling. PvP (2026-09-27): medium, range: +6 yd Lightning Bolt and Chain Lightning range (36 yd): more casting before melee close in. Taken by the 30/0/21 build; casters only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Ancestral Knowledge": {
+    "note": "+1%/rank maximum mana. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs -0.1% DPS in the simulator (scorer said 1.0% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Shield Specialization": {
+    "note": "+1%/rank block, +5%/rank block value: only with a shield.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      }
+    ]
+  },
+  "Thundering Strikes": {
+    "note": "+1%/rank melee crit. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 5.1% DPS in the simulator (scorer said 5.1% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.013171,
+        "values": [0.013171, 0.026343, 0.039514, 0.052685, 0.065857],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Enhancing Totems": {
+    "note": "+7.5%/rank Strength of Earth / Grace of Air: ~+9 AP per rank for you, more for the melee group. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002507,
+        "values": [0.002507, 0.005013, 0.00752, 0.010026, 0.012533],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Two-Handed Axes and Maces": {
+    "note": "Unlocks two-handers: Windfury on a slow two-hander is ~+15% over a one-hander for every two-hander-tagged source. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.15],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.15],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Anticipation": {
+    "note": "+1%/rank dodge.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Flurry": {
+    "note": "+6%/rank attack speed for 3 swings after a crit (30% at 5/5). ~66% of swings hasted at raid crit -> 4/8/12/16/20%; leveling ~35% -> 2/4/6/8/10%. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 22.6% DPS in the simulator (scorer said 19.1% on the same scale); already within tolerance, raid effects split off unchanged (19.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Improved Weapon Totems": {
+    "note": "+15%/rank Windfury Totem AP (the melee group; your own imbue overrides it) and Flametongue Totem damage. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.5%). Other modes unchanged. PvP (2026-09-27): zero, burst: Party Windfury and Flametongue Totems only; your own Windfury Weapon replaces the totem's effect. Nothing in a duel.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003986,
+        "values": [0.003986, 0.007971, 0.011957, 0.015943, 0.019929],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Elemental Weapons": {
+    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 2.7% DPS in the simulator (scorer said 3.0% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.133,
+        "values": [0.133, 0.266, 0.399, 0.532, 0.665],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.133,
+        "values": [0.133, 0.266, 0.399, 0.532, 0.665],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.067,
+        "values": [0.067, 0.134, 0.201, 0.268, 0.335],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.067,
+        "values": [0.067, 0.134, 0.201, 0.268, 0.335],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.03203,
+        "values": [0.03203, 0.064061, 0.096091, 0.128122, 0.160152],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.016136,
+        "values": [0.016136, 0.032271, 0.048407, 0.064543, 0.080678],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Parry": {
+    "note": "~5% parry.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.05]
+      }
+    ]
+  },
+  "Weapon Mastery": {
+    "note": "+2%/rank damage with all weapons. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 9.4% DPS in the simulator (scorer said 9.6% on the same scale); already within tolerance, raid effects split off unchanged (9.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Stormstrike": {
+    "note": "Extra attack every 20s (+17% main-hand swings with a 3.5-speed weapon) and +20% on the next 2 Nature hits (~2 of 3 shocks per window). Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 9.6% on the same scale); raid values scaled x0.05 to match (0.5%). Other modes unchanged. PvP (2026-09-27): high, burst: Enhancement: extra attack plus +20% on the next 2 Nature hits (20 s cooldown): Stormstrike -> Earth Shock (-> Lightning Bolt) is the enhancement kill combo.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.17],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.17],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-nature"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-nature"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.007932],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-nature"],
+        "values": [0.004666],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Ancestral Healing": {
+    "note": "+25% armor on crit-healed targets: tank mitigation. PvP (2026-09-27): low, avoid: Restoration: heal crits give the target +25% armor for 15 s, less melee damage on you or a flag carrier.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"],
+        "kind": "avoid"
+      }
+    ]
+  },
+  "Totemic Focus": {
+    "note": "-5%/rank totem mana. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs -0.7% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Totemic Mastery": {
+    "note": "30 yd totem radius: raid healer utility. PvP (2026-09-27): low, range: Friendly totems (Stoneskin, Healing Stream, Poison Cleansing, Mana Spring) reach 30 yd instead of 20: they keep working while you kite.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.003]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Healing Way": {
+    "note": "33%/rank chance per Healing Wave to stack +6% (3 stacks) on that target: ~4/8/12% on Healing Wave.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.04, 0.08, 0.12]
+      }
+    ]
+  },
+  "Nature's Swiftness": {
+    "note": "Instant Healing Wave/Chain Lightning every 3 min. PvP (2026-09-27): high, burst: Next Nature spell instant (3 min cooldown): an unkickable Chain Lightning or Lightning Bolt kill shot, or an instant Healing Wave to survive. The 30/0/21 build is built around it.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Mana Tide Totem": {
+    "note": "680 mana to the group every 5 min: ~+6% of your own mana budget plus group mana.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.06]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.03]
+      }
+    ]
+  },
+  "Improved Lightning Shield": {
+    "note": "+5%/rank Lightning Shield orb damage.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05
+      }
+    ]
+  },
+  "Restorative Totems": {
+    "note": "Mana Spring and Healing Stream +5%/rank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Healing Grace": {
+    "note": "-5%/rank healing threat. PvP (2026-09-27): zero, defensive: Only -15% healing threat: nothing in PvP (the 30/0/21 build's filler point).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003
+      }
+    ]
+  },
+  "Healing Focus": {
+    "note": "-14%/rank pushback on heals. PvP (2026-09-27): medium, resist: 70% chance to ignore pushback on heals: healing while being hit. Core for Restoration; a better 30/0/21 filler than Healing Grace.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Guardian Totems": {
+    "note": "Grounding Totem cooldown: utility. 2026-09-27 audit: leveling utility only (kind avoid). PvP (2026-09-27): low, resist: Grounding Totem cooldown 15 -> 13 s (it eats one Polymorph, Fear or nuke); Stoneskin/Windwall +20% is a few points per hit. Grounding itself is baseline.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Ghost Wolf": {
+    "note": "-1s/rank Ghost Wolf cast: travel while leveling. PvP (2026-09-27): medium, move: Ghost Wolf cast 3 -> 1 s (outdoors only): +40% speed usable mid-fight to leave melee or chase. Enhancement staple, out of reach for 30/0/21. Does not remove snares.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.006
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Improved Reincarnation": {
+    "note": "Shorter self-res cooldown. PvP (2026-09-27): low, defensive: Reincarnation every 40 min with +20% health and mana: one more self-res per battleground.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Elemental Fury": {
+    "note": "+100% crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 17.8% DPS in the simulator (scorer said 17.0% on the same scale); already within tolerance, raid effects split off unchanged (17.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [1.0],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [1.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [1.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Call of Flame": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 1.0% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Concussion": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 4.6% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Convection": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 4.5% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (5.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.062345, 0.12469, 0.187035, 0.24938, 0.311726],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Lightning Mastery": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 27.2% DPS in the simulator (scorer said 25.1% on the same scale); already within tolerance, raid effects split off unchanged (25.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.111364, 0.222727, 0.334091, 0.445454, 0.556818],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Nature's Guidance": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 1.6% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.004004, 0.008008, 0.012011],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Tidal Focus": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, enhancement-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.9% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Tidal Mastery": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, elemental-dps): removing it costs 3.2% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell", "heal"],
+        "values": [0.006093, 0.012185, 0.018278, 0.024371, 0.030464],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Reverberation": {
+    "note": "PvP (2026-09-27): medium, stun: Shock cooldown 6 -> 5 s: more Earth Shock interrupts and Frost Shocks. Core for shock/Stormstrike hybrids; the 30/0/21 build gives it up for Convection (tier 3 here, tier 2 in Forever).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  }
+}

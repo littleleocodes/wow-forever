@@ -1,0 +1,98 @@
+{
+ "id": "cand-frostfire-raid-from-fire-preset",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    4
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Flame Throwing",
+    2
+   ],
+   [
+    "Burning Soul",
+    2
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Blast Wave",
+    1
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Wake of Fire",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frostfire-raid from sim preset: Fire 0/35/16 in the dummy setting: 487.2 -> 489.6 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Fire 0/35/16",
+  "setting": "dummy",
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Improved Fireball -> Wake of Fire",
+    "gain_seed1": 0.0038965283220337987,
+    "gain_seed2": 0.004963010027689396,
+    "split": "0/35/16"
+   }
+  ],
+  "dps_start": 487.2316884239258,
+  "dps_end": 489.64784071736653
+ }
+}

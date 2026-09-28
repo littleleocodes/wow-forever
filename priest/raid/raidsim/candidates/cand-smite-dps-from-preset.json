@@ -1,0 +1,96 @@
+{
+ "id": "cand-smite-dps-from-preset",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Wand Specialization",
+    1
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Penance",
+    1
+   ],
+   [
+    "Divine Aegis",
+    3
+   ],
+   [
+    "Power Infusion",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Blessed Recovery",
+    2
+   ],
+   [
+    "Inspiration",
+    3
+   ],
+   [
+    "Searing Light",
+    2
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for smite-dps from sim preset: Smite 31/17/3 in the dummy setting: 312.7 -> 314.5 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Smite 31/17/3",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Spirit Tap -> Shadow Focus",
+    "gain_seed1": 0.005733298131433084,
+    "gain_seed2": 0.0057005640163030336,
+    "split": "31/17/3"
+   }
+  ],
+  "dps_start": 312.71709374928616,
+  "dps_end": 314.4988669714746
+ }
+}

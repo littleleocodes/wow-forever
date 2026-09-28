@@ -1,0 +1,232 @@
+{
+ "class": "shaman",
+ "spec": "resto-heal",
+ "runs": 60,
+ "builds": [
+  "resto-raid-healer",
+  "opt-resto-heal-raid-heal",
+  "cand-resto-heal-hand-2026-09-26",
+  "cand-resto-r1",
+  "cand-resto-r2"
+ ],
+ "capacity": [
+  3.2263754038346546,
+  1.6620756443867273,
+  1.0969707518345007
+ ],
+ "talents": [
+  {
+   "talent": "Mindfulness",
+   "lab": 0.21154840038337971,
+   "ev_before": 0.18253496606301894,
+   "ev_after": 0.17454208875239377,
+   "scale": 1.0969707518345007,
+   "how": "capped",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Healing Way",
+   "lab": 0.13750712009342916,
+   "ev_before": 0.08818874840277509,
+   "ev_after": 0.1346943656050869,
+   "scale": 1.5592379989102483,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Water Shield",
+   "lab": 0.07010705864508027,
+   "ev_before": 0.057901177209151986,
+   "ev_after": 0.06490184812239488,
+   "scale": 1.2688447711989284,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Purification",
+   "lab": 0.06391941216000349,
+   "ev_before": 0.05655139003820926,
+   "ev_after": 0.05952889380035231,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Mana Tide Totem",
+   "lab": 0.050140156553311686,
+   "ev_before": 0.04067949552311835,
+   "ev_after": 0.04703719720672496,
+   "scale": 1.4737318912521005,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Tidal Focus",
+   "lab": 0.048251290818918394,
+   "ev_before": 0.053284926171194916,
+   "ev_after": 0.04645951490269641,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Thundering Strikes",
+   "lab": 0.04570822752776079,
+   "ev_before": 0.028008365294244032,
+   "ev_after": 0.04526602684246231,
+   "scale": 1.5781719023361802,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Tidal Mastery",
+   "lab": 0.04064806211938672,
+   "ev_before": 0.03046192357798954,
+   "ev_after": 0.030796285915144706,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Ancestral Knowledge",
+   "lab": 0.03789589159628562,
+   "ev_before": 0.0343359408984644,
+   "ev_after": 0.030781729347486787,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Ancestral Healing",
+   "lab": 0.0374814000108495,
+   "ev_before": 0.028942278555724683,
+   "ev_after": 0.029187863180538304,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Riptide",
+   "lab": 0.03327518947940578,
+   "ev_before": 0.0123640236965601,
+   "ev_after": 0.032917059113216365,
+   "scale": 3.6324272882193327,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Restorative Totems",
+   "lab": 0.02934554115123402,
+   "ev_before": 0.015907892069451163,
+   "ev_after": 0.028948732433239883,
+   "scale": 1.990323088131845,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Nature's Swiftness",
+   "lab": 0.004245717660494938,
+   "ev_before": 0.004535782389334926,
+   "ev_after": 0.003978337694669932,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Improved Healing Wave",
+   "lab": 0.003042619995206705,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-resto-heal-hand-2026-09-26",
+    "cand-resto-r2"
+   ]
+  }
+ ],
+ "shares": {
+  "Healing Wave": 0.7296950853615891,
+  "Healing Stream Totem": 0.10447937006630767,
+  "Riptide": 0.09696909528129392,
+  "Lesser Healing Wave": 0.05844796565838311,
+  "Chain Heal": 0.010408483632426097
+ }
+}

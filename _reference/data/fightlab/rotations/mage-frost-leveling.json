@@ -1,0 +1,107 @@
+{
+ "veto": {
+  "Fire Blast": {
+   "off": true
+  },
+  "Cone of Cold": {
+   "off": true
+  },
+  "Frostbolt": {
+   "min_hp": 0.1
+  }
+ },
+ "drink_below": 0.25,
+ "class": "mage",
+ "spec": "frost-leveling",
+ "build": "leveling-frost",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-27",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Fire Blast",
+   "rule": [
+    "off",
+    "Fire Blast",
+    true
+   ],
+   "gain_seed1": 0.037940002847695276,
+   "gain_seed2": 0.034724560022865725
+  },
+  {
+   "round": 2,
+   "change": "never cast Cone of Cold",
+   "rule": [
+    "off",
+    "Cone of Cold",
+    true
+   ],
+   "gain_seed1": 0.010072192970070337,
+   "gain_seed2": 0.007025752008237074
+  },
+  {
+   "round": 3,
+   "change": "drink below 25% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.25
+   ],
+   "gain_seed1": 0.004153240377799072,
+   "gain_seed2": 0.007005528707267117
+  },
+  {
+   "round": 4,
+   "change": "Frostbolt only while the mob has more than 10% health",
+   "rule": [
+    "min_hp",
+    "Frostbolt",
+    0.1
+   ],
+   "gain_seed1": 0.00664288784956546,
+   "gain_seed2": 0.004142886064754547
+  }
+ ],
+ "weighted_before": 27.799734819545773,
+ "weighted_after": 26.26389817993233,
+ "per_level": {
+  "20": {
+   "before": 27.999415271369653,
+   "after": 27.98975164079378,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 29.39857412757593,
+   "after": 29.41910811664722,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 31.922237056388827,
+   "after": 29.784003956449897,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 26.836535934019736,
+   "after": 24.50282396890898,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 24.98808592829907,
+   "after": 23.231833382795486,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

@@ -1,0 +1,851 @@
+{
+  "_doc": "Classic Era hand-entered Hunter effects, used to calibrate the model against the known-optimal Classic builds. Same conventions as forever/hunter.manual.json.",
+  "Improved Aspect of the Hawk": {
+    "note": "1%/rank chance per auto shot for +30% ranged attack speed 12s (Classic is 1-5%, Forever's Deadly Aspects is 2-10%). Uptime = 1-(1-p)^4.3 shots: 4/8/12/16/20% -> haste EV = uptime*0.30 on Auto Shot. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 3.3% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.013, 0.025, 0.037, 0.048, 0.059],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.013, 0.025, 0.037, 0.048, 0.059],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.01914, 0.036808, 0.054476, 0.070671, 0.086867],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Improved Eyes of the Beast": {
+    "note": "Longer Eyes of the Beast: no combat value.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0]
+      }
+    ]
+  },
+  "Improved Aspect of the Monkey": {
+    "note": "Dodge only while Aspect of the Monkey is up. A ranged hunter shoots under Aspect of the Hawk and the melee hunter fights under Aspect of the Beast (Deadly Aspects' melee haste and the attack power need it), so nothing wears Monkey while leveling or raiding (fight lab 2026-09-27: 0.0% in the melee loop). Kept for PvP, where Monkey is worn against melee: +2%/rank dodge (+1%/rank in Classic) as survival.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Thick Hide": {
+    "note": "+10%/rank pet armor: ~half as valuable as pet health.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "per_rank": 0.05
+      }
+    ]
+  },
+  "Improved Revive Pet": {
+    "note": "As in Forever: ~2%/rank of downtime. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.2% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Pathfinding": {
+    "note": "Travel speed. PvP (2026-09-27): low, move: +6% Aspect of the Cheetah/Pack speed: battleground travel only (the aspect dazes on any hit).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Bestial Swiftness": {
+    "note": "Pet speed outdoors. PvP (2026-09-27): low, move: +30% outdoor pet run speed (battlegrounds are outdoors): the pet keeps up with runners and lands Intimidation sooner. Needs a pet.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Improved Mend Pet": {
+    "note": "Cleanse chance, cheaper Mend Pet. PvP (2026-09-27): low, dispel: Mend Pet has a 50% chance per tick to cleanse 1 Curse, Disease, Magic or Poison effect from the pet: frees a feared or slowed pet.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Spirit Bond": {
+    "note": "1%/rank health per 10s for both. PvP (2026-09-27): low, defensive: 2% health every 10 s for hunter and pet during the fight; the model counts it as leveling sustain only. Needs a pet.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Intimidation": {
+    "note": "Pet stun + high threat. PvP (2026-09-27): high, stun: 3 s pet stun on a 1 min cooldown: the BM control and burst setup. Needs a pet.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.008]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Bestial Discipline": {
+    "note": "+10%/rank pet focus regen: more pet specials -> ~+2%/rank pet damage.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Frenzy": {
+    "note": "20%/rank chance on pet crit for +30% pet speed 8s; pet crit ~12%, 4 swings/8s -> P(proc)=9/17/25/33/40% -> x0.30.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.028, 0.052, 0.075, 0.098, 0.12]
+      }
+    ]
+  },
+  "Bestial Wrath": {
+    "note": "+50% pet damage 18s / 2 min = +7.5% average; CC immunity. PvP (2026-09-27): high, burst: Pet +50% damage for 18 s and immune to fear and crowd control (2 min cooldown): the 31-point BM PvP window. Needs a pet.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.075]
+      },
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Concussive Shot": {
+    "note": "Stun chance on Concussive Shot: kiting. PvP (2026-09-27): high, stun: 20% chance of a 3 s stun on Concussive Shot (12 s cooldown): free shots and room for a 3 s Aimed Shot; core of the 0/31/20 build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0015
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Hunter's Mark": {
+    "note": "+3%/rank of Hunter's Mark's +110 RAP (rank 4) = +3.3 RAP/rank for you (and every ranged party member, not scored).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "per_rank": 0.002
+      }
+    ]
+  },
+  "Aimed Shot": {
+    "note": "+600 damage (rank 6), 3s cast, 6s cooldown: in a raid rotation ~+8% ranged damage over auto/multi alone; leveling ~+6% (opener at range). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 17.4% DPS in the simulator (scorer said 14.4% on the same scale); already within tolerance, raid effects split off unchanged (14.5%). Other modes unchanged. PvP (2026-09-27): medium, burst: 3 s cast, +600 damage at rank 6: the spike after Scatter Shot, a Concussive stun or a Wing Clip root, and the opener from range (no healing debuff in 1.12).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.06],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.08],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.217074],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Mortal Shots": {
+    "note": "+6%/rank ranged crit damage bonus (parser missed the Classic wording). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 6.2% DPS in the simulator (scorer said 6.2% on the same scale); already within tolerance, raid effects split off unchanged (6.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "per_rank": 0.080288,
+        "values": [0.080288, 0.160575, 0.240863, 0.321151, 0.401438],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Scatter Shot": {
+    "note": "Disorient: escape button. PvP (2026-09-27): high, stun: Instant 4 s disorient, 30 s cooldown, 15 yd: peel, get back to range, set up Aimed Shot or a Feign Death trap.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Scorpid Sting": {
+    "note": "Stamina reduction: PvP only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0, 0.0]
+      }
+    ]
+  },
+  "Trueshot Aura": {
+    "note": "+50 AP at rank 1 (+100 at 60): ~+5% own ranged damage; party value not scored. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 7.6% on the same scale); raid values scaled x0.00 to match (7.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.1135],
+        "modes": ["raid"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Hawk Eye": {
+    "note": "+2 yd/rank ranged range. Leveling: one more shot before the mob reaches you (~+0.5%/rank ranged damage) and a wider kiting/dead-zone margin (+1%/rank survivability); raids: positioning out of cleaves and AoE (utility 0.3%/rank). Community: a preference point in raid builds (Icy Veins). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.6%). Other modes unchanged. PvP (2026-09-27): medium, range: +6 yd shot range (41 yd): more shots on an approaching melee, outranges 30 yd caster spells.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "per_rank": 0.005,
+        "modes": ["leveling"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Monster Slaying": {
+    "note": "+1%/rank damage and crit damage vs Beasts/Giants/Dragonkin: ~half of leveling mobs, most raid bosses. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 3.4% on the same scale); raid values scaled x0.15 to match (0.5%). Other modes unchanged. PvP (2026-09-27): zero, burst: Beasts, Giants and Dragonkin only; players are Humanoid (hunter pets and feral-form druids aside). Its value is leveling; the PvP build's 2 points are a gating filler.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.005,
+        "modes": ["leveling"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["all", "pet"],
+        "per_rank": 0.005,
+        "modes": ["leveling"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["all", "pet"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.001455,
+        "modes": ["raid"],
+        "values": [0.001455, 0.00291, 0.004366, 0.005821, 0.007276],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["all", "pet"],
+        "per_rank": 0.001455,
+        "modes": ["raid"],
+        "values": [0.001455, 0.00291, 0.004366, 0.005821, 0.007276],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Humanoid Slaying": {
+    "note": "Same vs Humanoids: ~40% of leveling mobs, few raid bosses. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP damage (2026-09-27): every player is humanoid: the tooltip's full +1%/rank, of which the solo value counts 0.4%.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.004,
+        "modes": ["leveling"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["all", "pet"],
+        "per_rank": 0.004,
+        "modes": ["leveling"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.003,
+        "modes": ["raid"],
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "specs": ["bm-leveling", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.006,
+        "modes": ["pvp"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["all", "pet"],
+        "per_rank": 0.006,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Entrapment": {
+    "note": "Trap root chance. PvP (2026-09-27): low, kite: 25% chance on Immolation, Frost and Explosive Trap to root 5 s; 1.12 traps are out-of-combat only (Feign Death first).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Improved Wing Clip": {
+    "note": "4%/rank root on Wing Clip. PvP (2026-09-27): high, kite: 20% chance per Wing Clip (no cooldown) to root 5 s: how a ranged hunter gets out of melee; the main reason for the 20 Survival points.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Clever Traps": {
+    "note": "Trap duration/damage. PvP (2026-09-27): low, stun: Freezing Trap and Frost Trap last 30% longer; 1.12 traps are out-of-combat only (Feign Death first).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Survivalist": {
+    "note": "+2%/rank total health.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Deterrence": {
+    "note": "+25% dodge/parry 10s per 5 min. PvP (2026-09-27): high, defensive: +25% dodge and parry for 10 s (5 min cooldown): the only defensive cooldown against melee burst; prerequisite of Counterattack.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Trap Mastery": {
+    "note": "Trap resist -5%/rank. PvP (2026-09-27): low, stun: Trap effects resisted 10% less: a small gain on Freezing Trap against same-level players (spell hit caps at 99%).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Feign Death": {
+    "note": "Feign Death resist -2%/rank: fewer deaths. PvP (2026-09-27): medium, escape: Feign Death resisted 4% less: 1.12 traps are out-of-combat only, so a resisted Feign Death costs the trap as well as the target drop.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Counterattack": {
+    "note": "Melee root after a parry. PvP (2026-09-27): medium, kite: After a parry: a 5 s root to walk back out to range (Survival builds; parries come mostly during Deterrence).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.004]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Wyvern Sting": {
+    "note": "12s sleep out of combat: pull control. PvP (2026-09-27): medium, stun: 12 s sleep, but out of combat only in 1.12: an opener or used after Feign Death; the community PvP build (0/31/20) goes without it.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.008]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Barrage": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 2.1% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Volley"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Volley"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Volley"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Efficiency": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, mm-raid): removing it costs -0.1% DPS in the simulator (scorer said 2.3% on the same scale); raid values scaled x0.23 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shots", "ability:Stings"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shots", "ability:Stings"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shots", "ability:Stings"],
+        "values": [0.004541, 0.009083, 0.013624, 0.018165, 0.022707],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Ferocity": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 3.0% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.045966, 0.091933, 0.137899, 0.183865, 0.229832],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Lethal Shots": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 3.4% DPS in the simulator (scorer said 3.9% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Ranged Weapon Specialization": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 3.8% DPS in the simulator (scorer said 3.8% on the same scale); already within tolerance, raid effects split off unchanged (3.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Unleashed Fury": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, mm-raid): removing it costs 3.5% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Surefooted": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, mm-raid): removing it costs 0.0% DPS in the simulator (scorer said 2.7% on the same scale); raid values scaled x0.18 to match (0.5%). Other modes unchanged. PvP (2026-09-27): medium, resist: 15% more snares and roots on you resisted: kiting against Hamstring, Crippling Poison and Frost slows. The +3% hit is counted separately.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.001839, 0.003678, 0.005518],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Deflection": {
+    "note": "PvP (2026-09-27): low, avoid: +5% parry against melee (counted as survival); a kiting hunter faces away most of the time; more Counterattack roots in Survival builds.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "avoid"
+      }
+    ]
+  }
+}

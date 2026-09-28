@@ -1,0 +1,274 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "bm-mm-raid",
+  "mm-surv-hit-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "hunter",
+  "gear": "ui/hunter/gear_sets/p1.bis.gear.json",
+  "apl": "ui/hunter/apls/p1.apl.json",
+  "race": "RaceTroll",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own trueshot_aura (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "alcohol": "AlcoholRumseyRumBlackLabel",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodSmokedDesertDumpling",
+   "healthElixir": "ElixirOfFortitude",
+   "mainHandImbue": "Windfury",
+   "manaRegenElixir": "MagebloodPotion",
+   "offHandImbue": "ElementalSharpeningStone",
+   "petAttackPowerConsumable": 1,
+   "petAgilityConsumable": 1,
+   "petStrengthConsumable": 1,
+   "sapperExplosive": "SapperUnknown",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Aimed Shot",
+   "sim": 0.17384456932814796,
+   "ev_before": 0.14371713953748702,
+   "ev_after": 0.14455110376031463,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Mortal Shots",
+   "sim": 0.061718213947176914,
+   "ev_before": 0.06162322474146323,
+   "ev_after": 0.06197822447416573,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Ranged Weapon Specialization",
+   "sim": 0.03808188495884811,
+   "ev_before": 0.03801568031689806,
+   "ev_after": 0.03822975020082259,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Unleashed Fury",
+   "sim": 0.03514709182855007,
+   "ev_before": 0.027893658681398325,
+   "ev_after": 0.028238376194644154,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid"
+   ]
+  },
+  {
+   "talent": "Lethal Shots",
+   "sim": 0.03377376660861611,
+   "ev_before": 0.03905373798017039,
+   "ev_after": 0.0392737789413629,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Improved Aspect of the Hawk",
+   "sim": 0.03269822703137256,
+   "ev_before": 0.03109249599639507,
+   "ev_after": 0.031477956243271946,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid"
+   ]
+  },
+  {
+   "talent": "Ferocity",
+   "sim": 0.029859169597073132,
+   "ev_before": 0.02895466218165567,
+   "ev_after": 0.029312865793492106,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid"
+   ]
+  },
+  {
+   "talent": "Barrage",
+   "sim": 0.020507636537266033,
+   "ev_before": 0.02113773006513595,
+   "ev_after": 0.021251978829006007,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Endurance Training",
+   "sim": 0.0,
+   "ev_before": 0.0026792917411391786,
+   "ev_after": 0.002711581149941251,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "bm-mm-raid"
+   ]
+  },
+  {
+   "talent": "Hawk Eye",
+   "sim": 0.0,
+   "ev_before": 0.005605222912785264,
+   "ev_after": 0.0056618773576533115,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Improved Hunter's Mark",
+   "sim": 0.0,
+   "ev_before": 0.00460802097596618,
+   "ev_after": 0.00463318316970107,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Improved Revive Pet",
+   "sim": 0.0,
+   "ev_before": 0.012018881604714102,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "bm-mm-raid"
+   ]
+  },
+  {
+   "talent": "Trueshot Aura",
+   "sim": 0.0,
+   "ev_before": 0.07561860009237711,
+   "ev_after": 0.07643593043090816,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Deterrence",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Humanoid Slaying",
+   "sim": 0.0,
+   "ev_before": 0.008239435486296227,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Monster Slaying",
+   "sim": 0.0,
+   "ev_before": 0.004700454703725751,
+   "ev_after": 0.004696894951059121,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Surefooted",
+   "sim": 0.0,
+   "ev_before": 0.0047480955653653656,
+   "ev_after": 0.004744499562899555,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Survivalist",
+   "sim": 0.0,
+   "ev_before": 6.44884730684208e-05,
+   "ev_after": 6.501985623008826e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-surv-hit-raid"
+   ]
+  },
+  {
+   "talent": "Efficiency",
+   "sim": -0.0016208526331101562,
+   "ev_before": 0.0045915015184518964,
+   "ev_after": 0.004637863217866377,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "bm-mm-raid",
+    "mm-surv-hit-raid"
+   ]
+  }
+ ]
+}

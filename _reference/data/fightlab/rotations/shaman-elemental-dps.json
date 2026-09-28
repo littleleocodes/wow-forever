@@ -1,0 +1,63 @@
+{
+ "eat_below": 0.8,
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "build": "opt-elemental-dps-leveling-st",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "eat below 80% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.8
+   ],
+   "gain_seed1": 0.016398508491126118,
+   "gain_seed2": 0.019323477664229594
+  }
+ ],
+ "weighted_before": 38.818486192839025,
+ "weighted_after": 38.02308070678673,
+ "per_level": {
+  "20": {
+   "before": 28.08066078904139,
+   "after": 28.076852756310767,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 40.26864287509477,
+   "after": 40.01578004292578,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 39.408929375466734,
+   "after": 38.61400742448841,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 41.65346835190734,
+   "after": 40.451347050152464,
+   "deaths_before": 0.5,
+   "deaths_after": 0.5333333333333333
+  },
+  "60": {
+   "before": 38.91656906533497,
+   "after": 37.92463392426997,
+   "deaths_before": 0.16666666666666666,
+   "deaths_after": 0.16666666666666666
+  }
+ }
+}

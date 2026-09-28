@@ -1,0 +1,6198 @@
+{
+ "class": "Hunter",
+ "slug": "hunter",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 293,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "changed": 121,
+  "new": 58,
+  "same": 114
+ },
+ "tabs": [
+  {
+   "name": "Beast Mastery",
+   "spells": [
+    {
+     "name": "Aspect of the Beast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13161,
+       "text": "The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 50. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "The hunter takes on the aspects of a beast, becoming untrackable. Only one Aspect can be active at a time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1299445,
+       "text": "The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 70. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1299446,
+       "text": "The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 90. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1299447,
+       "text": "The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Aspect of the Cheetah",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5118,
+       "text": "The hunter takes on the aspects of a cheetah, increasing movement speed by 30%. If the hunter takes damage, he will be dazed for 4 sec. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Aspect of the Hawk",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13165,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 20. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14318,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 35. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14319,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 50. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14320,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 70. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 14321,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 90. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 14322,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 55. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 110. Only one Aspect can be active at a time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 25296,
+       "text": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by 120. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Aspect of the Monkey",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 13163,
+       "text": "The hunter takes on the aspects of a monkey, increasing chance to dodge by 8%. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "20 Mana",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Aspect of the Pack",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 13159,
+       "text": "The hunter and group members within 30 yards take on the aspects of a pack of cheetahs, increasing movement speed by 30%. If a pack member takes damage, they will be dazed for 4 sec. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Aspect of the Wild",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20043,
+       "text": "The hunter and all party and raid members within 30 yards take on the aspect of the wild, increasing Nature resistance by 45. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "The hunter and group members within 30 yards take on the aspect of the wild, increasing Nature resistance by 45. Only one Aspect can be active at a time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20190,
+       "text": "The hunter and all party and raid members within 30 yards take on the aspect of the wild, increasing Nature resistance by 60. Only one Aspect can be active at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "The hunter and group members within 30 yards take on the aspect of the wild, increasing Nature resistance by 60. Only one Aspect can be active at a time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Beast Lore",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1462,
+       "text": "Gather information about the target beast. The tooltip will display damage, health, armor, any special resistances, and diet.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Bestial Wrath",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19574,
+       "text": "Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "12% of base mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Call Pet",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 883,
+       "text": "Summons your pet to you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dismiss Pet",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2641,
+       "text": "Dismiss your pet. Dismissing your pet will reduce its happiness by 50.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "10 yd range",
+       "cast": "5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Eagle Eye",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 6197,
+       "text": "Zooms in the hunter's vision. Only usable outdoors. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "Unlimited range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Eyes of the Beast",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1002,
+       "text": "Take direct control of your pet and see through its eyes for 2 min.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "Unlimited range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Take direct control of your pet and see through its eyes for 1 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Feed Pet",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 6991,
+       "text": "Feed your pet the selected item. Feeding your pet increases happiness. Using food close to the pet's level will have a better result.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Intimidation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19577,
+       "text": "Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mend Pet",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 136,
+       "text": "Heals your pet 20 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "14% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 3111,
+       "text": "Heals your pet 38 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 3661,
+       "text": "Heals your pet 68 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 3662,
+       "text": "Heals your pet 103 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 13542,
+       "text": "Heals your pet 142 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "300 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 13543,
+       "text": "Heals your pet 189 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "385 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 13544,
+       "text": "Heals your pet 245 health every second while you focus. Lasts 5 sec.",
+       "school": "Nature",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "480 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Revive Pet",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 982,
+       "text": "Revive your pet, returning it to life with 15% of its health.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100% of base mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Scare Beast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1513,
+       "text": "Scares a beast, causing it to run in fear for up to 10 sec. Damage caused may interrupt the effect. Only one beast can be feared at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "10 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14326,
+       "text": "Scares a beast, causing it to run in fear for up to 15 sec. Damage caused may interrupt the effect. Only one beast can be feared at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "10 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14327,
+       "text": "Scares a beast, causing it to run in fear for up to 20 sec. Damage caused may interrupt the effect. Only one beast can be feared at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "10 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Summon Hawk",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1293241,
+       "text": "Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1293525,
+       "text": "Command a hawk to dive-bomb your targeted enemy, dealing 47 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1293526,
+       "text": "Command a hawk to dive-bomb your targeted enemy, dealing 85 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1293527,
+       "text": "Command a hawk to dive-bomb your targeted enemy, dealing 108 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Tame Beast",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1515,
+       "text": "Begins taming a beast to be your companion. Your armor is reduced by 100% while you focus on taming the beast for 20 sec. If you lose the beast's attention for any reason, the taming process will fail. Once tamed, the beast will be very unhappy and disloyal. Try feeding the pet immediately to make it happy.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60% of base mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Tranquilizing Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19801,
+       "text": "Attempts to remove 1 Frenzy effect from an enemy creature.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "270 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Marksmanship",
+   "spells": [
+    {
+     "name": "Aimed Shot",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19434,
+       "text": "An aimed shot that increases ranged damage by 20. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 70.",
+        "classic_cost": "75 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20900,
+       "text": "An aimed shot that increases ranged damage by 34. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 125.",
+        "classic_cost": "115 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20901,
+       "text": "An aimed shot that increases ranged damage by 55. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 200.",
+        "classic_cost": "160 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20902,
+       "text": "An aimed shot that increases ranged damage by 89. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 330.",
+        "classic_cost": "210 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20903,
+       "text": "An aimed shot that increases ranged damage by 125. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "260 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 460.",
+        "classic_cost": "260 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 20904,
+       "text": "An aimed shot that increases ranged damage by 166. Aimed Shot shares its cooldown with Multi-Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "310 Mana",
+       "range": "8-35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "An aimed shot that increases ranged damage by 600.",
+        "classic_cost": "310 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "3 sec cast",
+        "classic_cooldown": "6 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Shot",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 3044,
+       "text": "An instant shot that causes 20 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 13 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14281,
+       "text": "An instant shot that causes 26 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 21 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14282,
+       "text": "An instant shot that causes 39 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 33 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14283,
+       "text": "An instant shot that causes 65 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 59 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 14284,
+       "text": "An instant shot that causes 94 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 83 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 14285,
+       "text": "An instant shot that causes 134 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 115 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 14286,
+       "text": "An instant shot that causes 170 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 145 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 14287,
+       "text": "An instant shot that causes 217 Arcane damage.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "An instant shot that causes 183 Arcane damage.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Auto Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 75,
+       "text": "Automatically shoots the target until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Concussive Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5116,
+       "text": "Dazes the target, slowing movement speed by 50% for 4 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "12 sec cooldown",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Distracting Shot",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20736,
+       "text": "Distract the target, causing threat.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14274,
+       "text": "Distract the target, causing threat. More effective than Distracting Shot (Rank 1).",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 15629,
+       "text": "Distract the target, causing threat. More effective than Distracting Shot (Rank 2).",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 15630,
+       "text": "Distract the target, causing threat. More effective than Distracting Shot (Rank 3).",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 15631,
+       "text": "Distract the target, causing threat. More effective than Distracting Shot (Rank 4).",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 15632,
+       "text": "Distract the target, causing threat. More effective than Distracting Shot (Rank 5).",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Enchanted Flare",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1221404,
+       "text": "Exposes all hidden and invisible enemies within 10 yards of the targeted area, and staves off magical darkness for 30 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Flare",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1543,
+       "text": "Exposes all hidden and invisible enemies within 10 yards of the targeted area for 30 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hunter's Mark",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1130,
+       "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 26. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 20. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14323,
+       "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 59. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 45. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14324,
+       "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 98. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 75. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14325,
+       "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 71. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by 110. In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible. The target also appears on the mini-map. Lasts for 2 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Multi-Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2643,
+       "text": "Fires several missiles, hitting 3 targets. Multi-Shot shares its cooldown with Aimed Shot.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "13.9% of base mana",
+       "range": "8-35 yd range",
+       "cast": "0.5 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Fires several missiles, hitting 3 targets.",
+        "classic_cost": "100 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Rapid Fire",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3045,
+       "text": "Increases ranged and melee attack speed by 40% for 15 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Increases ranged attack speed by 40% for 15 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Scatter Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19503,
+       "text": "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "15 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Scorpid Sting",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3043,
+       "text": "Stings the target, reducing the target's chance to hit with attacks by 2% for 20 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "9% of base mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, reducing Strength and Agility by 20 for 20 sec. Only one Sting per Hunter can be active on any one target.",
+        "classic_cost": "70 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Serpent Sting",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1978,
+       "text": "Stings the target, causing 10 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 20 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 13549,
+       "text": "Stings the target, causing 30 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 40 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 13550,
+       "text": "Stings the target, causing 60 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 80 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 13551,
+       "text": "Stings the target, causing 110 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 140 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 13552,
+       "text": "Stings the target, causing 170 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 210 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 13553,
+       "text": "Stings the target, causing 240 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 290 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 13554,
+       "text": "Stings the target, causing 320 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 385 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 13555,
+       "text": "Stings the target, causing 415 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Stings the target, causing 490 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 25295,
+       "text": "Stings the target, causing 555 Nature damage over 15 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sniper Shot",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1310687,
+       "text": "A steady snipe that increases ranged damage by 160.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "8-35 yd range",
+       "cast": "4 sec cast",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1310785,
+       "text": "A steady snipe that increases ranged damage by 225.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "8-35 yd range",
+       "cast": "4 sec cast",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1310786,
+       "text": "A steady snipe that increases ranged damage by 295.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "8-35 yd range",
+       "cast": "4 sec cast",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Trueshot Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1299346,
+       "text": "Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Increases the attack power of party members within 45 yards by 50. Lasts 30 min.",
+        "classic_cost": "325 Mana",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1299348,
+       "text": "Increases the Ranged Attack Power of party members within 45 yards by 40. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "245 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the attack power of party members within 45 yards by 75. Lasts 30 min.",
+        "classic_cost": "425 Mana",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19506,
+       "text": "Increases the Ranged Attack Power of party members within 45 yards by 50. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "325 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the attack power of party members within 45 yards by 50. Lasts 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20905,
+       "text": "Increases the Ranged Attack Power of party members within 45 yards by 75. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "425 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the attack power of party members within 45 yards by 75. Lasts 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20906,
+       "text": "Increases the Ranged Attack Power of party members within 45 yards by 50. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "525 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the attack power of party members within 45 yards by 100. Lasts 30 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Viper Sting",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 3034,
+       "text": "Stings the target, draining 616 mana over 8 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "135 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14279,
+       "text": "Stings the target, draining 848 mana over 8 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "175 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "175 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14280,
+       "text": "Stings the target, draining 1,108 mana over 8 sec. Only one Sting per Hunter can be active on any one target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "215 Mana",
+       "range": "8-35 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "215 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Instant",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Volley",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1510,
+       "text": "Continuously fires a volley of ammo at the target area, causing 70 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "35 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Continuously fires a volley of ammo at the target area, causing 50 Arcane damage to enemy targets within 8 yards every second for 6 sec.",
+        "classic_cost": "350 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Channeled",
+        "classic_cooldown": "1 min cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14294,
+       "text": "Continuously fires a volley of ammo at the target area, causing 91 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "420 Mana",
+       "range": "35 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Continuously fires a volley of ammo at the target area, causing 65 Arcane damage to enemy targets within 8 yards every second for 6 sec.",
+        "classic_cost": "420 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Channeled",
+        "classic_cooldown": "1 min cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14295,
+       "text": "Continuously fires a volley of ammo at the target area, causing 112 Arcane damage to enemy targets within 8 yards every 1 sec for 6 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "490 Mana",
+       "range": "35 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Continuously fires a volley of ammo at the target area, causing 80 Arcane damage to enemy targets within 8 yards every second for 6 sec.",
+        "classic_cost": "490 Mana",
+        "classic_range": "8-35 yd range",
+        "classic_cast": "Channeled",
+        "classic_cooldown": "1 min cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Survival",
+   "spells": [
+    {
+     "name": "Counterattack",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19306,
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "classic_cost": "45 Mana",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "5 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1242634,
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 20 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 70 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "classic_cost": "65 Mana",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "5 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20909,
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 35 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 70 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20910,
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 55 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 110 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Deterrence",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19263,
+       "text": "When activated, increases your Dodge and Parry chance by 25% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Disengage",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 781,
+       "text": "Attempts to disengage from the target by reducing threat. Disables auto-attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Attempts to disengage from the target, reducing threat. Character exits combat mode.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14272,
+       "text": "Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 1). Disables auto-attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Attempts to disengage from the target, reducing threat. More effective than Disengage (Rank 1). Character exits combat mode.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14273,
+       "text": "Attempts to disengage from the target by reducing threat. More effective than Disengage (Rank 2). Disables auto-attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Attempts to disengage from the target, reducing threat. More effective than Disengage (Rank 2). Character exits combat mode.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Explosive Trap",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13813,
+       "text": "Place a Fire trap that explodes when an enemy approaches, causing 104 to 134 Fire damage and 150 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "275 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that explodes when an enemy approaches, causing 104 to 134 Fire damage and 150 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "275 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14316,
+       "text": "Place a Fire trap that explodes when an enemy approaches, causing 145 to 193 Fire damage and 240 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "395 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that explodes when an enemy approaches, causing 145 to 193 Fire damage and 240 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "395 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14317,
+       "text": "Place a Fire trap that explodes when an enemy approaches, causing 208 to 264 Fire damage and 330 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "520 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that explodes when an enemy approaches, causing 208 to 264 Fire damage and 330 additional Fire damage over 20 sec to all within 10 yards. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "520 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Feign Death",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5384,
+       "text": "Feign death which may trick enemies into ignoring you. Lasts 6 min. If not cancelled, after 6 min you will actually die.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Feign death which may trick enemies into ignoring you. Lasts up to 6 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Freezing Trap",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1499,
+       "text": "Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to 10 sec. Any damage caused will break the ice. Trap will exist for 1 min. Only one Frost trap can be active at a time.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Place a frost trap that freezes the first enemy that approaches, preventing all action for up to 10 sec. Any damage caused will break the ice. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "50 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14310,
+       "text": "Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to 15 sec. Any damage caused will break the ice. Trap will exist for 1 min. Only one Frost trap can be active at a time.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Place a frost trap that freezes the first enemy that approaches, preventing all action for up to 15 sec. Any damage caused will break the ice. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "75 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14311,
+       "text": "Place a Frost trap that freezes the first enemy that approaches, preventing all action for up to 20 sec. Any damage caused will break the ice. Trap will exist for 1 min. Only one Frost trap can be active at a time.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Place a frost trap that freezes the first enemy that approaches, preventing all action for up to 20 sec. Any damage caused will break the ice. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "100 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Trap",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 13809,
+       "text": "Place a Frost trap that creates an ice slick around itself for 30 sec when the first enemy approaches it. All enemies within 10 yards will be slowed by 60% while in the area of effect. Trap will exist for 1 min. Only one Frost trap can be active at a time.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Place a frost trap that creates an ice slick around itself for 30 sec when the first enemy approaches it. All enemies within 10 yards will be slowed by 60% while in the area of effect. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "60 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Immolation Trap",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13795,
+       "text": "Place a Fire trap that will burn the first enemy to approach for 105 Fire damage over 15 sec. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that will burn the first enemy to approach for 105 Fire damage over 15 sec. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "50 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14302,
+       "text": "Place a Fire trap that will burn the first enemy to approach for 215 Fire damage over 15 sec. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that will burn the first enemy to approach for 215 Fire damage over 15 sec. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "90 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14303,
+       "text": "Place a Fire trap that will burn the first enemy to approach for 340 Fire damage over 15 sec. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that will burn the first enemy to approach for 340 Fire damage over 15 sec. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "135 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14304,
+       "text": "Place a Fire trap that will burn the first enemy to approach for 510 Fire damage over 15 sec. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that will burn the first enemy to approach for 510 Fire damage over 15 sec. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "190 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 14305,
+       "text": "Place a Fire trap that will burn the first enemy to approach for 690 Fire damage over 15 sec. Trap will exist for 1 min. Only one Fire trap can be active at a time.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "245 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Place a fire trap that will burn the first enemy to approach for 690 Fire damage over 15 sec. Trap will exist for 1 min. Traps can only be placed when out of combat. Only one trap can be active at a time.",
+        "classic_cost": "245 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "15 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Lacerate",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24118,
+       "text": "Wounds the target causing them to bleed for 147 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24119,
+       "text": "Wounds the target causing them to bleed for 224 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24120,
+       "text": "Wounds the target causing them to bleed for 315 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1299332,
+       "text": "Wounds the target causing them to bleed for 406 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mongoose Bite",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1495,
+       "text": "Counterattack the enemy for melee weapon damage plus 15. Can only be performed after you dodge.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Counterattack the enemy for 25 damage. Can only be performed after you dodge.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14269,
+       "text": "Counterattack the enemy for melee weapon damage plus 22. Can only be performed after you dodge.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Counterattack the enemy for 45 damage. Can only be performed after you dodge.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14270,
+       "text": "Counterattack the enemy for melee weapon damage plus 37. Can only be performed after you dodge.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Counterattack the enemy for 75 damage. Can only be performed after you dodge.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14271,
+       "text": "Counterattack the enemy for melee weapon damage plus 57. Can only be performed after you dodge.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Counterattack the enemy for 115 damage. Can only be performed after you dodge.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Raptor Strike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2973,
+       "text": "A strong attack that deals melee weapon damage plus 5.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 5.",
+        "classic_cost": "15 Mana",
+        "classic_cooldown": "6 sec cooldown",
+        "classic_requires": "Next melee",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14260,
+       "text": "A strong attack that deals melee weapon damage plus 11.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 11.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14261,
+       "text": "A strong attack that deals melee weapon damage plus 21.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 21.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14262,
+       "text": "A strong attack that deals melee weapon damage plus 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 34.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 14263,
+       "text": "A strong attack that deals melee weapon damage plus 35.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "55 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 50.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 14264,
+       "text": "A strong attack that deals melee weapon damage plus 40.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 80.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 14265,
+       "text": "A strong attack that deals melee weapon damage plus 55.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 110.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 14266,
+       "text": "A strong attack that deals melee weapon damage plus 70.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "",
+       "cooldown": "6 sec cooldown",
+       "requires": "Next melee",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "A strong attack that increases melee damage by 140.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Strider Kick",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1317257,
+       "text": "A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5.81% of base mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Beasts",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1494,
+       "text": "Shows the location of all nearby beasts on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Demons",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19878,
+       "text": "Shows the location of all nearby demons on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Dragonkin",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19879,
+       "text": "Shows the location of all nearby dragonkin on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Elementals",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19880,
+       "text": "Shows the location of all nearby elementals on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Giants",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19882,
+       "text": "Shows the location of all nearby giants on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Hidden",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19885,
+       "text": "Increases stealth detection and shows hidden units within detection range on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Humanoids",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19883,
+       "text": "Shows the location of all nearby humanoids on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Track Undead",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19884,
+       "text": "Shows the location of all nearby undead on the minimap. Only one form of tracking can be active at a time.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Wing Clip",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2974,
+       "text": "Inflicts 5 damage and reduces the enemy target's movement speed by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14267,
+       "text": "Inflicts 25 damage and reduces the enemy target's movement speed by 55% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14268,
+       "text": "Inflicts 50 damage and reduces the enemy target's movement speed by 60% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pets",
+   "spells": [
+    {
+     "name": "Arcane Resistance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24493,
+       "text": "Increases Arcane resistance by 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24497,
+       "text": "Increases Arcane resistance by 60.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24500,
+       "text": "Increases Arcane resistance by 90.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24501,
+       "text": "Increases Arcane resistance by 120.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Bite",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 17253,
+       "text": "Bite the enemy, causing 7 to 9 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 17255,
+       "text": "Bite the enemy, causing 16 to 18 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 17256,
+       "text": "Bite the enemy, causing 24 to 28 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 17257,
+       "text": "Bite the enemy, causing 31 to 37 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 17258,
+       "text": "Bite the enemy, causing 40 to 48 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 17259,
+       "text": "Bite the enemy, causing 49 to 59 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 17260,
+       "text": "Bite the enemy, causing 66 to 80 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 17261,
+       "text": "Bite the enemy, causing 81 to 99 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "35 Focus; Pet: every family",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Charge",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7371,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 66 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 60 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 26177,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 130 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 112 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 26178,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 204 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 192 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 26179,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 294 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 310 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 26201,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 430 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 420 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 27685,
+       "text": "Charges an enemy, immobilizes it for 1 sec, and adds 490 melee attack power to the boar's next attack.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "35 Focus; Pet: Boar",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Charges an enemy, immobilizes it for 1 sec, and adds 550 melee attack power to the boar's next attack.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Claw",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 16827,
+       "text": "Claw the enemy, causing 4 to 6 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 16828,
+       "text": "Claw the enemy, causing 8 to 12 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 16829,
+       "text": "Claw the enemy, causing 12 to 16 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 16830,
+       "text": "Claw the enemy, causing 16 to 22 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 16831,
+       "text": "Claw the enemy, causing 21 to 29 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 16832,
+       "text": "Claw the enemy, causing 26 to 36 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 3010,
+       "text": "Claw the enemy, causing 35 to 49 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 3009,
+       "text": "Claw the enemy, causing 43 to 59 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "25 Focus; Pet: Bear, Bird of Prey, Carrion Bird, Cat, Crab, Raptor, Scorpid",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "25 Focus; Pet: Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cower",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1742,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 5,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1753,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 15,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1754,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 25,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1755,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 35,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1756,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 45,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 16697,
+       "text": "Cower, causing no damage but lowering your threat, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 55,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dash",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 23099,
+       "text": "Increases movement speed by 40% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: every family",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Boar, Cat, Hyena, Tallstrider, Wolf",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 23109,
+       "text": "Increases movement speed by 60% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: every family",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Boar, Cat, Hyena, Tallstrider, Wolf",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 23110,
+       "text": "Increases movement speed by 80% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: every family",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Boar, Cat, Hyena, Tallstrider, Wolf",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Demoralizing Screech",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24423,
+       "text": "Blasts a single enemy for 7 to 9 damage and lowers the melee attack power of all enemies in melee range by 63 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "20 Focus; Pet: Carrion Bird",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts a single enemy for 7 to 9 damage and lowers the melee attack power of all enemies in melee range by 25. Effect lasts 4 sec.",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24577,
+       "text": "Blasts a single enemy for 9 to 13 damage and lowers the attack power of all enemies in melee range by 110 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "20 Focus; Pet: Carrion Bird",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts a single enemy for 12 to 16 damage and lowers the attack power of all enemies in melee range by 50. Effect lasts 4 sec.",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24578,
+       "text": "Blasts a single enemy for 21 to 27 damage and lowers the melee attack power of all enemies in melee range by 164 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "20 Focus; Pet: Carrion Bird",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts a single enemy for 19 to 25 damage and lowers the melee attack power of all enemies in melee range by 75. Effect lasts 4 sec.",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24579,
+       "text": "Blasts a single enemy for 24 to 42 damage and lowers the melee attack power of all enemies in melee range by 204 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "20 Focus; Pet: Carrion Bird",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts a single enemy for 26 to 46 damage and lowers the melee attack power of all enemies in melee range by 100. Effect lasts 4 sec.",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dismember",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1264758,
+       "text": "Viciously bites enemy appendages for 11 to 13 damage and reduces the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "35 Focus; Pet: Crocilisk",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1264927,
+       "text": "Viciously bites enemy appendages for 18 to 20 damage and reduces the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "35 Focus; Pet: Crocilisk",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1264929,
+       "text": "Viciously bites enemy appendages for 26 to 30 damage and reduces the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "35 Focus; Pet: Crocilisk",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1264930,
+       "text": "Viciously bites enemy appendages for 39 to 45 damage and reduces the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "35 Focus; Pet: Crocilisk",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1264933,
+       "text": "Viciously bites enemy appendages for 50 to 58 damage and reduces the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "35 Focus; Pet: Crocilisk",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dive",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 23145,
+       "text": "Increases movement speed by 40% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey, Carrion Bird, Wind Serpent",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl, Wind Serpent",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 23147,
+       "text": "Increases movement speed by 60% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: Bat, Bird of Prey, Carrion Bird, Wind Serpent",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl, Wind Serpent",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 23148,
+       "text": "Increases movement speed by 80% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "20 Focus; Pet: Bat, Bird of Prey, Carrion Bird, Wind Serpent",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "classic_requires": "20 Focus; Pet: Bat, Carrion Bird, Owl, Wind Serpent",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dust Cloud",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1265899,
+       "text": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 65 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "10 Focus; Pet: Tallstrider",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1265901,
+       "text": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 175 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "10 Focus; Pet: Tallstrider",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1265902,
+       "text": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 285 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "10 Focus; Pet: Tallstrider",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1265903,
+       "text": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 395 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "10 Focus; Pet: Tallstrider",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1265904,
+       "text": "Your tallstrider kicks up an abrasive cloud of dust, reducing the target's Armor by 505 for 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "10 Focus; Pet: Tallstrider",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fire Resistance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 23992,
+       "text": "Increases Fire resistance by 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24439,
+       "text": "Increases Fire resistance by 60.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24444,
+       "text": "Increases Fire resistance by 90.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24445,
+       "text": "Increases Fire resistance by 120.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Resistance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24446,
+       "text": "Increases Frost resistance by 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24447,
+       "text": "Increases Frost resistance by 60.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24448,
+       "text": "Increases Frost resistance by 90.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24449,
+       "text": "Increases Frost resistance by 120.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Furious Howl",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24604,
+       "text": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 23. Lasts 1 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "60 Focus; Pet: Wolf",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Party members within 15 yards receive an extra 9 to 11 damage to their next Physical attack. Lasts 10 sec.",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "classic_requires": "60 Focus; Pet: Wolf",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24605,
+       "text": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 50 to 62. Lasts 1 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "60 Focus; Pet: Wolf",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Party members within 15 yards receive an extra 18 to 22 damage to their next Physical attack. Lasts 10 sec.",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "classic_requires": "60 Focus; Pet: Wolf",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24603,
+       "text": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 114. Lasts 1 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "60 Focus; Pet: Wolf",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Party members within 15 yards receive an extra 28 to 34 damage to their next Physical attack. Lasts 10 sec.",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "classic_requires": "60 Focus; Pet: Wolf",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24597,
+       "text": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 138. Lasts 1 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "60 Focus; Pet: Wolf",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Party members within 15 yards receive an extra 45 to 57 damage to their next Physical attack. Lasts 10 sec.",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "classic_requires": "60 Focus; Pet: Wolf",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Great Stamina",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 4187,
+       "text": "Stamina increased by 3.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 4188,
+       "text": "Stamina increased by 5.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 4189,
+       "text": "Stamina increased by 7.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 4190,
+       "text": "Stamina increased by 10.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 4191,
+       "text": "Stamina increased by 13.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 4192,
+       "text": "Stamina increased by 17.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 4193,
+       "text": "Stamina increased by 21.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 4194,
+       "text": "Stamina increased by 26.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 5041,
+       "text": "Stamina increased by 32.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 5042,
+       "text": "Stamina increased by 40.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Growl",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2649,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14916,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14917,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 14918,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 14919,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 14920,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 14921,
+       "text": "Taunt the target, increasing the likelihood the creature will focus attacks on you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "15 Focus",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Lightning Breath",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24844,
+       "text": "Breathes lightning, instantly dealing 8 to 10 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 11 to 13 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 25008,
+       "text": "Breathes lightning, instantly dealing 20 to 22 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 21 to 23 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 25009,
+       "text": "Breathes lightning, instantly dealing 32 to 36 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 36 to 40 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 25010,
+       "text": "Breathes lightning, instantly dealing 46 to 54 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 52 to 60 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 25011,
+       "text": "Breathes lightning, instantly dealing 71 to 81 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 80 to 92 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 25012,
+       "text": "Breathes lightning, instantly dealing 86 to 98 Nature damage to a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "50 Focus; Pet: Wind Serpent",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Breathes lightning, instantly dealing 99 to 113 Nature damage to a single target.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mine!",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1265054,
+       "text": "Grabs an enemy's weapon with its talons, causing 10 to 12 damage and disarming them for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey",
+       "level": 10,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1265055,
+       "text": "Grabs an enemy's weapon with its talons, causing 14 to 16 damage and disarming them for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1265056,
+       "text": "Grabs an enemy's weapon with its talons, causing 20 to 24 damage and disarming them for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1265057,
+       "text": "Grabs an enemy's weapon with its talons, causing 33 to 37 damage and disarming them for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1265058,
+       "text": "Grabs an enemy's weapon with its talons, causing 41 to 47 damage and disarming them for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "20 Focus; Pet: Bird of Prey",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Natural Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24545,
+       "text": "Armor increased by 50.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24549,
+       "text": "Armor increased by 100.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24550,
+       "text": "Armor increased by 160.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24551,
+       "text": "Armor increased by 240.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 24552,
+       "text": "Armor increased by 330.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 24553,
+       "text": "Armor increased by 430.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 24554,
+       "text": "Armor increased by 550.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 24555,
+       "text": "Armor increased by 675.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 24629,
+       "text": "Armor increased by 810.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 24630,
+       "text": "Armor increased by 1,000.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Nature Resistance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24492,
+       "text": "Increases Nature resistance by 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24502,
+       "text": "Increases Nature resistance by 60.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24503,
+       "text": "Increases Nature resistance by 90.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24504,
+       "text": "Increases Nature resistance by 120.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Pinch",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1264735,
+       "text": "Pinches an enemy's legs for 19 to 21 damage and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "50 Focus; Pet: Crab",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1264736,
+       "text": "Pinches an enemy's legs for 32 to 36 damage and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "50 Focus; Pet: Crab",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1264739,
+       "text": "Pinches an enemy's legs for 41 to 47 damage and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "50 Focus; Pet: Crab",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1264741,
+       "text": "Pinches an enemy's legs for 68 to 78 damage and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "50 Focus; Pet: Crab",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1264742,
+       "text": "Pinches an enemy's legs for 88 to 102 damage and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "50 Focus; Pet: Crab",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prowl",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24450,
+       "text": "Puts your pet in stealth mode, but slows its movement speed by 50%. The first attack from stealth receives a 20% bonus to damage. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "40 Focus; Pet: Cat",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24452,
+       "text": "Puts your pet in stealth mode, but slows its movement speed by 45%. The first attack from stealth receives a 35% bonus to damage. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "40 Focus; Pet: Cat",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24453,
+       "text": "Puts your pet in stealth mode, but slows its movement speed by 40%. The first attack from stealth receives a 50% bonus to damage. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "40 Focus; Pet: Cat",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Savage Rend",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1265065,
+       "text": "Slash an enemy with razor talons, causing the target to Bleed for 30 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "50 Focus; Pet: Raptor",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1265066,
+       "text": "Slash an enemy with razor talons, causing the target to Bleed for 54 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "50 Focus; Pet: Raptor",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1265067,
+       "text": "Slash an enemy with razor talons, causing the target to Bleed for 72 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "50 Focus; Pet: Raptor",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1265068,
+       "text": "Slash an enemy with razor talons, causing the target to Bleed for 120 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "50 Focus; Pet: Raptor",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1265069,
+       "text": "Slash an enemy with razor talons, causing the target to Bleed for 156 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "50 Focus; Pet: Raptor",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Scorpid Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24640,
+       "text": "Inflicts 5 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "30 Focus; Pet: Scorpid",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "text": "Inflicts 10 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24583,
+       "text": "Inflicts 10 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "30 Focus; Pet: Scorpid",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Inflicts 15 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24586,
+       "text": "Inflicts 20 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "30 Focus; Pet: Scorpid",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Inflicts 30 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24587,
+       "text": "Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "30 Focus; Pet: Scorpid",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Inflicts 40 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadow Resistance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24488,
+       "text": "Increases Shadow resistance by 30.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24505,
+       "text": "Increases Shadow resistance by 60.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24506,
+       "text": "Increases Shadow resistance by 90.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 24507,
+       "text": "Increases Shadow resistance by 120.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shell Shield",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 26064,
+       "text": "Reduces all damage your pet takes by 50% and increases the time between your pet's attacks by 60%, but deals more damage with each attack. Lasts 12 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "10 Focus; Pet: Turtle",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces all damage your pet takes by 50%, but increases the time between your pet's attacks by 43%. Lasts 12 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Swipe",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1264494,
+       "text": "Swipe 3 nearby enemies, inflicting 4 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "20 Focus; Pet: Bear",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1264497,
+       "text": "Swipe 3 nearby enemies, inflicting 8 to 10 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "20 Focus; Pet: Bear",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1264498,
+       "text": "Swipe 3 nearby enemies, inflicting 11 to 13 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "20 Focus; Pet: Bear",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1264501,
+       "text": "Swipe 3 nearby enemies, inflicting 16 to 18 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "20 Focus; Pet: Bear",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1264502,
+       "text": "Swipe 3 nearby enemies, inflicting 20 to 22 damage.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "20 Focus; Pet: Bear",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Tendon Rip",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1265038,
+       "text": "Tears at an enemy's legs for 12 damage over 9 sec and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "25 Focus; Pet: Hyena",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1265039,
+       "text": "Tears at an enemy's legs for 21 damage over 9 sec and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "25 Focus; Pet: Hyena",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1265040,
+       "text": "Tears at an enemy's legs for 27 damage over 9 sec and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "25 Focus; Pet: Hyena",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1265041,
+       "text": "Tears at an enemy's legs for 45 damage over 9 sec and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "25 Focus; Pet: Hyena",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1265042,
+       "text": "Tears at an enemy's legs for 60 damage over 9 sec and reduces movement speed by 50% for 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "25 Focus; Pet: Hyena",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Thunderstomp",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 26090,
+       "text": "Shakes the ground with thundering force, doing 53 to 61 Nature damage to all enemies within 8 yards.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "60 Focus; Pet: Gorilla",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Shakes the ground with thundering force, doing 70 to 80 Nature damage to all enemies within 8 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 26187,
+       "text": "Shakes the ground with thundering force, doing 69 to 79 Nature damage to all enemies within 8 yards.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "60 Focus; Pet: Gorilla",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Shakes the ground with thundering force, doing 91 to 103 Nature damage to all enemies within 8 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 26188,
+       "text": "Shakes the ground with thundering force, doing 92 to 106 Nature damage to all enemies within 8 yards.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "60 Focus; Pet: Gorilla",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Shakes the ground with thundering force, doing 123 to 141 Nature damage to all enemies within 8 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1264455,
+       "text": "Shakes the ground with thundering force, doing 122 to 142 Nature damage to all enemies within 8 yards.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "60 Focus; Pet: Gorilla",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Trickster's Dance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1310612,
+       "text": "Increases your pet's chance to Dodge by 50% and decreases the time between your pet's attacks by 30%. Lasts 12 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "10 Focus; Pet: Fox",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Web",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1265843,
+       "text": "Entangles an enemy in a corrosive web, immobilizing them and dealing 12 Nature damage over 4 sec.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "40 sec cooldown",
+       "requires": "20 Focus; Pet: Spider",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1265878,
+       "text": "Entangles an enemy in a corrosive web, immobilizing them and dealing 20 Nature damage over 4 sec.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "40 sec cooldown",
+       "requires": "20 Focus; Pet: Spider",
+       "level": 24,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1265880,
+       "text": "Entangles an enemy in a corrosive web, immobilizing them and dealing 28 Nature damage over 4 sec.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "40 sec cooldown",
+       "requires": "20 Focus; Pet: Spider",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1265881,
+       "text": "Entangles an enemy in a corrosive web, immobilizing them and dealing 40 Nature damage over 4 sec.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "40 sec cooldown",
+       "requires": "20 Focus; Pet: Spider",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1265883,
+       "text": "Entangles an enemy in a corrosive web, immobilizing them and dealing 52 Nature damage over 4 sec.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "40 sec cooldown",
+       "requires": "20 Focus; Pet: Spider",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Throw",
+   "rank": "",
+   "text": "Hurl a thrown weapon at the target.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Beast Training",
+   "rank": "",
+   "text": "Lets you train your pet with various abilities that you have learned how to teach.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dual Wield",
+   "rank": "Passive",
+   "text": "Allows one-hand and off-hand weapons to be equipped in the off-hand.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: the ones your class can wear.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Parry",
+   "rank": "Passive",
+   "text": "Gives a chance to parry enemy melee attacks.",
+   "tooltip_source": "classic"
+  }
+ ]
+}

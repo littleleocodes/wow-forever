@@ -1,0 +1,50 @@
+{
+ "class": "paladin",
+ "spec": "seal-of-fury-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "gear_max": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "ret-raid-dps",
+   "split": "17/0/34",
+   "ours": true,
+   "dps": {
+    "dummy": 285.0749687126449,
+    "dummy60": 315.33933143621675,
+    "raid": 580.9980938409682,
+    "max": 580.9980938409682,
+    "max60": 586.72926428451
+   }
+  }
+ ]
+}

@@ -1,0 +1,376 @@
+{
+  "_doc": "Warrior spec models. Damage shares from Classic Fury/Arms parses. Dual-wield white swings carry a +19% miss penalty (miss_extra) in Classic-style combat; yellow abilities do not. Rage is modelled through resource_cost (cheaper abilities = more uses, at 50% efficiency) and sustain effects. Tank sources carry the tags tank/shield/threat so threat and shield talents apply only there. Bloodthirst/Mortal Strike/Shield Slam are talents, so they are encoded as damage effects on the abilities they replace. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check). enabled_by / displaces / enabled_ranks: see mage.json.",
+  "models": {
+    "fury-dw-raid": {
+      "note": "Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Bloodthirst rank 4 is 35% attack power plus 48 on a 6s cooldown (Classic 45% attack power); Battle Shout rank 7 gives 139 attack power; Whirlwind, Execute, Heroic Strike and Cleave are unchanged. Raid sim shares (2026-09-28, fury-dw-raid in the ElliotWood/Forever simulator 40be98e): execute 42%, white_mh 26%, white_oh 14%, heroic_strike 8%, whirlwind 8%, deep_wounds 2%; 1% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "white_mh",
+          "share": 0.2618,
+          "tags": ["type:melee", "white", "school:physical", "mainhand", "dw", "weapon:1h"],
+          "miss_extra": 0.19,
+          "game_overrides": {
+            "classic-era": {"share": 0.1979}
+          }
+        },
+        {
+          "id": "white_oh",
+          "share": 0.141,
+          "tags": ["type:melee", "white", "school:physical", "offhand", "dw", "weapon:1h"],
+          "miss_extra": 0.19,
+          "game_overrides": {
+            "classic-era": {"share": 0.1066}
+          }
+        },
+        {
+          "id": "heroic_strike",
+          "share": 0.0838,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Heroic Strike", "weapon:1h"],
+          "cost": 15,
+          "game_overrides": {
+            "classic-era": {"share": 0.3424}
+          }
+        },
+        {
+          "id": "whirlwind",
+          "share": 0.0789,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Whirlwind", "ww-offhand", "weapon:1h"],
+          "cost": 25,
+          "cooldown": 10,
+          "min_level": 36,
+          "game_overrides": {
+            "classic-era": {"share": 0.0343}
+          }
+        },
+        {
+          "id": "execute",
+          "share": 0.4183,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Execute", "weapon:1h"],
+          "cost": 15,
+          "min_level": 24,
+          "game_overrides": {
+            "classic-era": {"share": 0.181}
+          }
+        },
+        {
+          "id": "bloodthirst",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Bloodthirst", "weapon:1h"],
+          "enabled_by": "Bloodthirst",
+          "displaces": ["heroic_strike"],
+          "note": "Bloodthirst: 14% of the Forever raid split, 13% in Classic (2026-09-26); without the talent the rage goes to Heroic Strike.",
+          "game_overrides": {
+            "classic-era": {"share": 0.1332}
+          }
+        },
+        {
+          "id": "deep_wounds",
+          "share": 0.0162,
+          "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "ability:Deep Wound", "weapon:1h"],
+          "can_crit": false,
+          "enabled_by": "Deep Wounds",
+          "enabled_ranks": 3,
+          "note": "Deep Wounds bleed: 2% of the Forever raid split; grows with the rank.",
+          "game_overrides": {
+            "classic-era": {"share": 0.0046}
+          }
+        },
+        {
+          "id": "overpower",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Overpower", "weapon:1h"],
+          "cost": 5,
+          "cooldown": 5,
+          "min_level": 12,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "rend",
+          "share": 0.0,
+          "tags": ["type:melee", "dot", "school:physical", "ability:Rend", "weapon:1h"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.0}
+          },
+          "min_level": 4
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.08}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.3}
+        }
+      },
+      "stat_to_dps": {"strength": 0.5, "agility": 0.25, "stamina": 0.0},
+      "stat_to_sustain": {},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {},
+      "regen_share": 0.0,
+      "abs_dps_factor": 0.986,
+      "time": {
+        "leveling-st": {"fight": 0.7, "downtime": 0.2, "death": 0.1},
+        "solo-60": {"fight": 0.72, "downtime": 0.18, "death": 0.1}
+      },
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count. Leveling (2026-09-27 audit): Intercept is Fury's gap closer in Berserker Stance (move counts); snares that stop runners count a quarter.",
+      "kind_weights_by_profile": {
+        "leveling-st": {"stick": 0.25},
+        "solo-60": {"stick": 0.25}
+      }
+    },
+    "arms-2h-raid": {
+      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, arms-2h-raid in the ElliotWood/Forever simulator 40be98e): white 45%, execute 37%, whirlwind 8%, bloodthirst 5%, deep_wounds 5%; 1% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "white",
+          "share": 0.4453,
+          "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.467},
+            "solo-60": {"share": 0.467},
+            "leveling-aoe": {"share": 0.428}
+          }
+        },
+        {
+          "id": "heroic_strike",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Heroic Strike", "weapon:2h"],
+          "cost": 15,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.054},
+            "solo-60": {"share": 0.054},
+            "leveling-aoe": {"share": 0.001}
+          }
+        },
+        {
+          "id": "overpower",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Overpower", "weapon:2h"],
+          "cost": 5,
+          "cooldown": 5,
+          "min_level": 12,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.063},
+            "solo-60": {"share": 0.063},
+            "leveling-aoe": {"share": 0.055}
+          }
+        },
+        {
+          "id": "execute",
+          "share": 0.3674,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Execute", "weapon:2h"],
+          "cost": 15,
+          "min_level": 24,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.165},
+            "solo-60": {"share": 0.165},
+            "leveling-aoe": {"share": 0.134}
+          }
+        },
+        {
+          "id": "bloodthirst",
+          "share": 0.0539,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Bloodthirst", "weapon:2h"],
+          "enabled_by": "Bloodthirst",
+          "displaces": ["heroic_strike"],
+          "note": "Bloodthirst with a two-hander: 14% of the Forever raid split of the adopted 2H build (2026-09-26).",
+          "profile_overrides": {
+            "leveling-st": {"share": 0.116},
+            "solo-60": {"share": 0.116},
+            "leveling-aoe": {"share": 0.019}
+          }
+        },
+        {
+          "id": "whirlwind",
+          "share": 0.0801,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Whirlwind", "weapon:2h"],
+          "cost": 25,
+          "cooldown": 10,
+          "min_level": 36,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.142}
+          }
+        },
+        {
+          "id": "rend",
+          "share": 0.0,
+          "tags": ["type:melee", "dot", "school:physical", "ability:Rend", "weapon:2h"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.082},
+            "solo-60": {"share": 0.082},
+            "leveling-aoe": {"share": 0.078}
+          }
+        },
+        {
+          "id": "mortal_strike",
+          "share": 0.0,
+          "min_level": 40,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Mortal Strike", "weapon:2h"],
+          "cost": 30,
+          "cooldown": 6,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.0}
+          },
+          "enabled_by": "Mortal Strike",
+          "displaces": ["heroic_strike"]
+        },
+        {
+          "id": "deep_wounds",
+          "share": 0.0533,
+          "min_level": 20,
+          "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "weapon:2h", "ability:Deep Wound"],
+          "can_crit": false,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.036},
+            "solo-60": {"share": 0.036},
+            "leveling-aoe": {"share": 0.029}
+          },
+          "enabled_by": "Deep Wounds",
+          "enabled_ranks": 3
+        },
+        {
+          "id": "victory_rush",
+          "share": 0.0,
+          "min_level": 20,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Victory Rush", "weapon:2h"],
+          "cooldown": 30,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.016},
+            "solo-60": {"share": 0.016},
+            "leveling-aoe": {"share": 0.004}
+          }
+        },
+        {
+          "id": "cleave",
+          "share": 0.0,
+          "min_level": 20,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Cleave", "aoe", "weapon:2h"],
+          "cost": 20,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.047},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "thunder_clap",
+          "share": 0.0,
+          "min_level": 6,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Thunder Clap", "aoe", "weapon:2h"],
+          "cost": 20,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.061},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.08}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.28}
+        }
+      },
+      "stat_to_dps": {"strength": 0.55, "agility": 0.2},
+      "stat_to_sustain": {},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {},
+      "regen_share": 0.0,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.937, "drink": 0.0, "eat": 0.016, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.937, "drink": 0.0, "eat": 0.016, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.831, "drink": 0.0, "eat": 0.023, "other": 0.0, "death": 0.146}
+      },
+      "fight_coupling": {"leveling-aoe": 1.0},
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count. Leveling (2026-09-27 audit): the Arms loop fights in Battle Stance, so Intercept (Berserker) and Vanguard (Defensive) add nothing (move 0); runners cost ~0.9% of time per kill at 60 with Hamstring alone (fightlab sensitivity), so snares that stop them count a quarter.",
+      "kind_weights_by_profile": {
+        "leveling-st": {"stick": 0.25, "move": 0},
+        "solo-60": {"stick": 0.25, "move": 0},
+        "leveling-aoe": {"move": 0}
+      }
+    },
+    "prot-tank": {
+      "note": "Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect. Mitigation is the surv channel (armor, block, dodge/parry, defense, stamina). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Sunder Armor carries an explicit 1013 threat at rank 5 (Classic ~261) and Revenge rank 6 hits for 138-168 (Classic 81-99), Shield Block lasts 7s, Thunder Clap has a 6s cooldown and a 20% slow, Shield Slam rank 4 640-670 plus block value: Sunder 20 -> 35% and Revenge 15 -> 17% of threat, Heroic Strike 28 -> 18%, white 25 -> 20%. Raid sim shares (2026-09-28, prot-raid-tank in the ElliotWood/Forever simulator 40be98e): white 37%, heroic_strike 28%, revenge 23%, thunder_clap 12%; 38% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "white",
+          "share": 0.3676,
+          "tags": ["type:melee", "white", "school:physical", "mainhand", "tank", "shield", "threat", "weapon:1h"]
+        },
+        {
+          "id": "heroic_strike",
+          "share": 0.2761,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Heroic Strike", "tank", "shield", "threat", "weapon:1h"],
+          "cost": 15
+        },
+        {
+          "id": "sunder",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Sunder Armor", "tank", "shield", "threat", "weapon:1h"],
+          "cost": 15,
+          "min_level": 10
+        },
+        {
+          "id": "revenge",
+          "share": 0.232,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Revenge", "tank", "shield", "threat", "weapon:1h"],
+          "cost": 5,
+          "cooldown": 5,
+          "min_level": 14
+        },
+        {
+          "id": "thunder_clap",
+          "share": 0.1242,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Thunder Clap", "tank", "shield", "threat", "aoe", "weapon:1h"],
+          "cost": 20,
+          "min_level": 6,
+          "cooldown": 6
+        },
+        {
+          "id": "rend",
+          "share": 0.0,
+          "tags": ["type:melee", "dot", "school:physical", "ability:Rend", "tank", "shield", "threat", "weapon:1h"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.06}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.12}
+        }
+      },
+      "stat_to_dps": {"strength": 0.35, "agility": 0.1},
+      "stat_to_sustain": {},
+      "stat_to_surv": {"stamina": 1.0, "agility": 0.3},
+      "mana_share": {},
+      "regen_share": 0.0,
+      "abs_dps_factor": 1.0,
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count."
+    }
+  }
+}

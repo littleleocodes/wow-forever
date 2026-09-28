@@ -1,0 +1,781 @@
+"""Mage module for the fight lab.
+
+Spell ranks (damage, cost, cast, cooldown, chill, root, coefficient, burn) are read from
+`_reference/data/forever-spells/mage.json` (beta client build 1.60.1.70009); talent numbers are read from each rank's
+tooltip in `_reference/data/forever-talents/mage.json`. What a talent *does* (the mechanic) is coded here per talent;
+the numbers are the client's. Talents with no entry in MECHANICS are not simulated (listed by `not_simulated()`).
+
+Playstyles:
+- `frost-leveling`: single-target Frostbolt kiting: pull at max range, Frostbolt while the mob walks in, Frost Nova
+  when it reaches melee, step back, Ice Lance / Frostbolt into the freeze, Fire Blast and wand to finish without
+  overkill, Cone of Cold and Cold Snap as extra control, Ice Barrier before pulls.
+- `fire-leveling`: Fireball at range, Scorch and Fire Blast when the mob is close, Frost Nova / Blast Wave for
+  distance, Ice Lance into freezes if talented, Pyroblast on a full Hot Streak, Combustion on the pull.
+Both drink conjured water and use Evocation between fights.
+"""
+import json
+import pathlib
+import re
+
+from engine import parse_interrupt, BaseModule, Player, Spell
+from tables import (GCD, MELEE_RANGE, SPELL_CRIT_BASE, WAND_SPEED, base_health, base_mana, gear_stats, int_per_spell_crit,
+                    interp, mage_base_stats, mana_regen_tick, wand_dps)
+
+ROOT = pathlib.Path(__file__).resolve().parents[3]
+SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/mage.json", encoding="utf-8"))
+TREE = json.load(open(ROOT / "_reference/data/forever-talents/mage.json", encoding="utf-8"))
+
+NUM = re.compile(r"(\d+(?:\.\d+)?)")
+BLIZZARD = re.compile(r"doing (\d[\d,]*) Frost damage over (\d+) sec")
+DMG = re.compile(r"(\d[\d,]*) to (\d[\d,]*) (\w+) damage")
+BURN = re.compile(r"additional (\d[\d,]*) (\w+) damage over (\d+) sec")
+CHILL = re.compile(r"(?:slowing movement speed|slowed) by (\d+)% for (\d+) sec")
+ROOTRX = re.compile(r"freezes them in place for up to (\d+) sec")
+ABSORB = re.compile(r"absorbing ([\d,]+) damage")
+ARMOR = re.compile(r"Increases Armor by (\d+)")
+COEF = re.compile(r"([\d.]+)% of spell power")
+
+TALENT_SPELLS = {"Ice Lance": "Ice Lance", "Ice Barrier": "Ice Barrier", "Cold Snap": "Cold Snap", "Ice Block": "Ice Block",
+                 "Pyroblast": "Pyroblast", "Blast Wave": "Blast Wave"}
+DEFAULT_RANGE = {"Frost Nova": 10.0, "Cone of Cold": 10.0, "Arcane Explosion": 10.0, "Blast Wave": 10.0}
+ASSUMED_COEF = {"Ice Lance": 0.143, "Pyroblast": 1.0, "Blast Wave": 0.129}   # the client carries none; Classic-style values
+
+
+def _num(s):
+    return float(s.replace(",", ""))
+
+
+def _seconds(s):
+    m = re.search(r"([\d.]+)\s*(sec|min)", s or "")
+    if not m:
+        return 0.0
+    return float(m.group(1)) * (60 if m.group(2) == "min" else 1)
+
+
+def load_spellbook():
+    """{spell name: [Spell ranks sorted by level]} for the spells the module uses."""
+    book = {}
+    for tab in SPELLBOOK["tabs"]:
+        for sp in tab["spells"]:
+            for r in sp["ranks"]:
+                txt = r.get("text", "")
+                cost_txt = (r.get("cost") or "").replace(",", "")
+                cost = _num(NUM.search(cost_txt).group(1)) if NUM.search(cost_txt) else 0.0
+                cost_pct = "base mana" in cost_txt
+                cast_txt = (r.get("cast") or "").lower()
+                cast = 0.0 if "instant" in cast_txt or "channel" in cast_txt else _seconds(cast_txt)
+                dm, ch, rt, bn = DMG.search(txt), CHILL.search(txt), ROOTRX.search(txt), BURN.search(txt)
+                co = COEF.search(r.get("coefficient") or "")
+                rm = re.search(r"(\d+) yd range", r.get("range") or "")
+                rng = _num(rm.group(1)) if rm else DEFAULT_RANGE.get(sp["name"], 30.0)
+                s = Spell(name=sp["name"], school=(r.get("school") or "arcane").lower(),
+                          rank=int(NUM.search(r.get("rank") or "1").group(1)) if NUM.search(r.get("rank") or "") else 1,
+                          level=int(r.get("level") or 1), cost=cost, cast=cast, cooldown=_seconds(r.get("cooldown")), range=rng,
+                          dmg_min=_num(dm.group(1)) if dm else 0.0, dmg_max=_num(dm.group(2)) if dm else 0.0,
+                          coef=float(co.group(1)) / 100 if co else ASSUMED_COEF.get(sp["name"], 0.0),
+                          chill=float(ch.group(1)) / 100 if ch else 0.0, chill_dur=float(ch.group(2)) if ch else 0.0,
+                          root=float(rt.group(1)) if rt else 0.0,
+                          aoe=sp["name"] in ("Frost Nova", "Cone of Cold", "Arcane Explosion", "Blizzard", "Blast Wave", "Flamestrike"),
+                          tags=("cost_pct",) if cost_pct else ())
+                s.text = txt
+                if sp["name"] == "Frostfire Bolt" and not s.chill and "slowing movement speed by 40%" in txt:
+                    s.chill, s.chill_dur = 0.40, 9.0   # assumption: the tooltip gives no duration; its burn and Frostbolt's chill last 9 s
+                s.interrupt = parse_interrupt(txt)
+                s.burn = _num(bn.group(1)) if bn else 0.0
+                s.burn_dur = float(bn.group(3)) if bn else 0.0
+                ab = ABSORB.search(txt)
+                s.absorb = _num(ab.group(1)) if ab else 0.0
+                ar = ARMOR.search(txt)
+                s.armor = _num(ar.group(1)) if ar else 0.0
+                if "channel" in cast_txt:
+                    s.tags = s.tags + ("channel",)
+                bz = BLIZZARD.search(txt)
+                if sp["name"] == "Blizzard" and bz:   # channelled area damage: 8 ticks over 8 s, per-tick coefficient
+                    s.kind, s.channel, s.dot, s.dot_ticks, s.dot_dur = "channel", float(bz.group(2)), _num(bz.group(1)), int(float(bz.group(2))), float(bz.group(2))
+                    s.dot_coef = float(co.group(1)) / 100 if co else 0.0
+                    s.coef = 0.0
+                book.setdefault(sp["name"], []).append(s)
+    for name in book:
+        book[name].sort(key=lambda x: (x.level, x.rank))
+    # Pyroblast: the export holds rank 1 only (talent-taught); higher ranks are synthesised from Fireball's ranks
+    # (beta pass: Pyroblast rank 8 520-646 plus 212 over 12 sec vs Fireball rank 12 425-541 plus 60 -> x1.2 direct, x3.5 burn, x1.25 mana)
+    if "Fireball" in book:
+        pyro = []
+        for fb in book["Fireball"]:
+            if fb.level < 20:
+                continue
+            p = Spell(name="Pyroblast", school="fire", rank=len(pyro) + 1, level=fb.level, cost=round(fb.cost * 1.25), cast=6.0, range=35.0,
+                      dmg_min=round(fb.dmg_min * 1.2), dmg_max=round(fb.dmg_max * 1.2), coef=1.0)
+            p.text, p.burn, p.burn_dur, p.absorb, p.armor = "synthesised from Fireball", round(fb.burn * 3.5), 12.0, 0.0, 0.0
+            pyro.append(p)
+        if pyro:
+            book["Pyroblast"] = pyro
+    # Blast Wave: talent tooltip 154-184 at level 60 is rank 1; beta pass rank 5 453-533 at 60 -> scale with level from 30
+    bw = []
+    for L in (30, 38, 46, 54, 60):
+        avg = interp([(30, 169.0), (60, 493.0)], L)
+        b = Spell(name="Blast Wave", school="fire", rank=len(bw) + 1, level=L, cost=215.0, cast=0.0, cooldown=45.0, range=10.0,
+                  dmg_min=round(avg * 0.92), dmg_max=round(avg * 1.08), coef=0.129, aoe=True)
+        b.text, b.burn, b.burn_dur, b.absorb, b.armor = "synthesised from the talent tooltip", 0.0, 0.0, 0.0, 0.0
+        bw.append(b)
+    book["Blast Wave"] = bw
+    return book
+
+
+BOOK = load_spellbook()
+
+
+def talent_numbers():
+    out = {}
+    for tr in TREE["trees"]:
+        for t in tr["talents"]:
+            out[t["name"]] = [[float(x) for x in NUM.findall(rank.replace(",", ""))] for rank in t["ranks"]]
+    return out
+
+
+TNUM = talent_numbers()
+
+MECHANICS = {
+    "Improved Frostbolt": "Frostbolt cast time -0.1s per rank",
+    "Improved Counterspell": "Counterspell also silences: +2/4 s lockout on a caster mob (tables.MOB_CASTER_SHARE of pulls)",
+    "Elemental Precision": "+1% hit per rank with Frost and Fire spells",
+    "Ice Shards": "+20% Frost crit damage bonus per rank",
+    "Permafrost": "chill duration +11/22/33%, extra slow +3/6/10%",
+    "Improved Frost Nova": "Frost Nova cooldown -2s per rank",
+    "Frostbite": "each chill (Frostbolt, Cone of Cold, Ice Armor proc) has 5% per rank to freeze 5s",
+    "Piercing Ice": "+2% Frost damage per rank",
+    "Frost Channeling": "-5% Frost mana cost per rank",
+    "Ice Lance": "unlocks Ice Lance (ranks by level; x4 damage vs Frozen; coefficient assumed 0.143)",
+    "Arctic Reach": "+10% Frostbolt range per rank (longer pull)",
+    "Shatter": "+17/33/50% crit vs Frozen targets (Frost Nova, Frostbite, Fingers of Frost)",
+    "Improved Cone of Cold": "+12/23/35% Cone of Cold damage",
+    "Cold Snap": "resets Frost Nova / Cone of Cold / Ice Barrier when the mob is in melee and Nova is down",
+    "Fingers of Frost": "15% per chill: the next 1 (rank 1) / 2 (rank 2) spell casts count as Frozen, 15s",
+    "Winter's Chill": "20%/rank per Frost spell hit: +2% Frostbolt/Ice Lance crit per stack, stacks up to the rank, 15s",
+    "Ice Barrier": "absorb (447..819 by level) before every pull, 30s cooldown; no pushback while it holds",
+    "Frost Warding": "+15/30% armor from Frost/Ice Armor",
+    "Wand Specialization": "+13/25% wand damage",
+    "Arcane Concentration": "2%/rank per damaging spell hit: next damage spell is free (Clearcasting)",
+    "Arcane Meditation": "17/33/50% of Spirit regen continues inside the five-second rule",
+    "Arcane Subtlety": "lower target resistance: partial-resist loss -20% per rank",
+    "Magic Absorption": "1%/rank of maximum mana back when a spell misses (full resist)",
+    "Arcane Resilience": "armor equal to 25/50% of Intellect",
+    "Arcane Instability": "+1% spell damage and +1% spell crit per rank",
+    "Arcane Mind": "+2% Intellect per rank (Arcane crit damage unused)",
+    "Presence of Mind": "an instant Frostbolt/Fireball opener every 3 min",
+    "Wake of Fire": "Fire Blast cooldown -1s per rank; after a kill the next Fire Blast within 30s has +25%/50% crit",
+    "Incineration": "+2% crit per rank on Fire Blast, Ice Lance, Arcane Blast, Scorch",
+    "Master of Elements": "Fire/Frost crits refund 10% per rank of the spell's base mana",
+    "Fire Power": "+2% Fire damage per rank",
+    "Arcane Focus": "+1% hit per rank with Arcane spells (neither loop casts Arcane spells)",
+    "Improved Fireball": "Fireball cast time -0.1s per rank",
+    "Flame Throwing": "+3 yd Fire range per rank (longer pull for the Fire loop)",
+    "Ignite": "Fire crits burn for 8% per rank of the crit's damage over 4s",
+    "Impact": "Fire spell hits have 3/7/10% chance to stun 2s (no movement, no swings)",
+    "Burning Soul": "23%/rank chance to ignore pushback on Fire spells",
+    "Pyroblast": "unlocks Pyroblast (6s cast; ranks synthesised from Fireball); cast on a full Hot Streak",
+    "Improved Scorch": "33%/rank chance per Scorch to stack +3% Fire damage taken (5 stacks, 30s)",
+    "Hot Streak": "Fireball/Fire Blast/Scorch crits stack (3 = Pyroblast cast -75%), 20s",
+    "Critical Mass": "+2% Fire crit per rank",
+    "Blast Wave": "unlocks Blast Wave (instant AoE, daze 50% 6s, 45s cooldown; ranks synthesised): a snare when the mob is on us",
+    "Combustion": "on the pull every 3 min: +10% Fire crit per Fire hit until 4 crits",
+}
+
+# ------------------------------------------------------------ calibration and report metadata (read by calibrate.py / run.py)
+SHARE_SOURCE = {"Frostbolt": "frostbolt", "Fire Blast": "fire_blast", "Frost Nova": "frost_nova", "Cone of Cold": "cone",
+                "Arcane Missiles": "missiles", "Wand": "wand", "Ice Lance": "ice_lance"}
+NEW_SOURCES = {"ice_lance": {"id": "ice_lance", "share": 0.0, "min_level": 20, "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"]}}
+# talents to fit: "scale" = scale the entry's leveling-mode effects (created from its mode-less ones if needed);
+# ("replace", [...]) = use this template as the leveling-mode effects, then scale
+FIT = {"Improved Counterspell": "scale", 
+    "Ice Lance": ("replace", [{"channel": "dmg", "scope": ["type:spell"], "values": [0.30]}]),
+    "Shatter": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.10}]),
+    "Fingers of Frost": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.03, "requires": {"Shatter": 3}}]),
+    "Frostbite": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.04}]),
+    "Permafrost": ("replace", [{"channel": "surv", "scope": ["all"], "per_rank": 0.10}, {"channel": "sustain", "scope": ["all"], "per_rank": 0.08}]),
+    "Ice Barrier": ("replace", [{"channel": "sustain", "scope": ["all"], "values": [0.15]}, {"channel": "surv", "scope": ["all"], "values": [0.30]}, {"channel": "dmg", "scope": ["type:spell"], "values": [0.02]}]),
+    "Elemental Precision": ("replace", [{"channel": "hit", "scope": ["school:frost", "school:fire"], "per_rank": 0.01}, {"channel": "dmg", "scope": ["school:frost", "school:fire"], "per_rank": 0.005}]),
+    "Cold Snap": "scale",
+    "Winter's Chill": "scale",
+    "Improved Frostbolt": "scale",
+    "Ice Shards": ("replace", [{"channel": "dmg", "scope": ["school:frost"], "per_rank": 0.04, "requires": {"Shatter": 1}}, {"channel": "crit_bonus", "scope": ["school:frost"], "per_rank": 0.2}]),
+    "Arcane Meditation": "scale",
+    "Arcane Instability": "scale",   # crit + damage: the scorer has no crit cap, the Frozen Ice Lance already crits ~80% (sim: half the scorer value)
+    "Arcane Mind": "scale",          # 2%/rank Intellect (the Arcane crit-bonus part is irrelevant to a Frost mage): ~0 in the sim
+    "Frost Channeling": "scale",
+    "Piercing Ice": "scale",
+    "Presence of Mind": "scale",
+    "Arcane Concentration": "scale",
+    # Fire loop
+    "Improved Fireball": "scale",
+    "Ignite": "scale",
+    "Fire Power": "scale",
+    "Critical Mass": "scale",
+    "Improved Scorch": "scale",
+    "Hot Streak": "scale",
+    "Master of Elements": "scale",
+    "Impact": "scale",
+    "Burning Soul": "scale",
+    "Wake of Fire": "scale",
+    "Incineration": "scale",
+    "Pyroblast": "scale",
+    "Blast Wave": "scale",
+    "Combustion": "scale",
+    "Improved Frost Nova": "scale",
+    "Frost Warding": "scale",
+}
+KEY_TALENTS = ["Ice Lance", "Shatter"]
+DESCRIPTION = ("Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), "
+               "swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, "
+               "Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, "
+               "food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.")
+NOT_MODELLED = "runners, Ice Block, Mana Shield, Arcane Missiles, gear upgrades within a level bracket (adds and Blizzard only in the AoE variant, tables.MOBS_PER_PULL)."
+# rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
+PIPELINE = {"spec": "frost-leveling", "hand": "leveling-frost", "opt": "opt-frost-leveling-leveling-st", "tag": "frost", "lookahead": 12,
+            "levels": "20,30,40,50,60", "calibrate_levels": "30,60", "compare_extra": ["opt-fire-leveling-leveling-st"],
+            "extra_reports": [{"spec": "fire-leveling", "build": "opt-fire-leveling-leveling-st"},
+                              # the Frost optimizer build playing Frostfire Bolt instead of Frostbolt from 40 (decide_frostfire), against itself
+                              # playing Frost: what the new spell is worth in leveling (new-builds survey, 2026-09-28)
+                              {"spec": "frostfire-leveling", "build": "opt-frost-leveling-leveling-st", "compare": ["opt-frost-leveling-leveling-st"]}],
+            "variants": [{"spec": "frost-aoe", "opt": "opt-frost-aoe-leveling-aoe", "tag": "aoe", "profile": "leveling-aoe", "lookahead": 12,
+                          "sets": ["MOBS_PER_PULL=4"], "levels": "30,40,50,60", "calibrate_levels": "40,60", "label": "AoE grinding, 4 mobs per pull"}]}
+
+
+class MageModule(BaseModule):
+    special_stat = ("Frozen casts", "frozen_cast_share")
+
+    def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
+        self.t = {k: v for k, v in talents.items() if v > 0}
+        self.level = level
+        self.spec = spec
+        self.gear = gear
+        self.armor_spell = armor_spell
+        self.book = {name: self.rank_at(name) for name in BOOK}
+        self.spells = {n: s for n, s in self.book.items() if s is not None}
+        for tname, sname in TALENT_SPELLS.items():
+            if not self.t.get(tname):
+                self.spells.pop(sname, None)
+        self._fight = None
+        self._base_mana = 0.0
+
+    # ------------------------------------------------------------ talent helpers
+    def rank(self, name):
+        return self.t.get(name, 0)
+
+    def tv(self, name, idx=0, default=0.0):
+        r = self.rank(name)
+        if not r:
+            return default if default else 0.0
+        nums = TNUM.get(name, [])
+        if r - 1 < len(nums) and idx < len(nums[r - 1]):
+            return nums[r - 1][idx]
+        return 0.0
+
+    def not_simulated(self):
+        return sorted(n for n in self.t if n not in MECHANICS)
+
+    def rank_at(self, name):
+        ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
+        return ranks[-1] if ranks else None
+
+    # ------------------------------------------------------------ character
+    def make_player(self, level):
+        base = mage_base_stats(level)
+        g = gear_stats(level, self.gear)
+        intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Arcane Mind", 0) / 100)
+        spirit = base["spirit"] + g["spirit"]
+        stamina = base["stamina"] + g["stamina"]
+        armor_spell = self.armor_choice()
+        armor = g["armor"] + (armor_spell.armor if armor_spell else 0.0) * (1 + self.tv("Frost Warding", 0) / 100)
+        armor += intellect * self.tv("Arcane Resilience", 0) / 100
+        bm = base_mana(level)
+        p = Player(level=level, hp_max=base_health(level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0,
+                   base_mana=bm, spirit=spirit, intellect=intellect, spell_power=g["spell_power"], armor=armor,
+                   spell_crit=SPELL_CRIT_BASE + intellect / int_per_spell_crit(level) / 100 + self.tv("Arcane Instability", 1) / 100,
+                   dodge=0.04, ranged_crit=0.03)
+        p.hp, p.mana = p.hp_max, p.mana_max
+        p.regen_while_casting = self.tv("Arcane Meditation", 0) / 100
+        if armor_spell is not None and armor_spell.name == "Mage Armor":
+            p.regen_while_casting = min(1.0, p.regen_while_casting + 0.5)
+        self.armor_spell_used = armor_spell.name if armor_spell else "none"
+        return p
+
+    def armor_choice(self):
+        if self.armor_spell == "mage" and "Mage Armor" in self.spells:
+            return self.spells["Mage Armor"]
+        for name in ("Ice Armor", "Frost Armor"):
+            if name in self.spells:
+                return self.spells[name]
+        return None
+
+    def is_fire(self):
+        return self.spec.startswith("fire")
+
+    def is_frostfire(self):
+        return self.spec.startswith("frostfire")
+
+    @staticmethod
+    def sch(spell, school):
+        """True when the spell is of this school; Frostfire Bolt ("fire, frost") counts as both (2026-09-28)."""
+        return school in {x.strip() for x in (spell.school or "").split(",")}
+
+    def pull_range(self):
+        if self.is_frostfire() and self.spells.get("Frostfire Bolt"):
+            return self.spells["Frostfire Bolt"].range + self.tv("Flame Throwing", 0)
+        if self.is_fire():
+            fb = self.spells.get("Fireball")
+            return (fb.range if fb else 35.0) + self.tv("Flame Throwing", 0)
+        fb = self.spells.get("Frostbolt")
+        return (fb.range if fb else 30.0) * (1 + self.tv("Arctic Reach", 0) / 100)
+
+    # ------------------------------------------------------------ engine hooks: numbers
+    def cast_time(self, spell):
+        c = spell.cast
+        if spell.name == "Frostbolt":
+            c = max(GCD, c - 0.1 * self.rank("Improved Frostbolt"))
+        if spell.name in ("Fireball", "Frostfire Bolt"):
+            c = max(GCD, c - 0.1 * self.rank("Improved Fireball"))
+        if spell.name == "Pyroblast" and self._fight:
+            hs = self._fight.p.buff("Hot Streak", self._fight.t)
+            if hs:
+                c = max(GCD, c * (1 - 0.25 * hs["stacks"]))
+        if c > 0 and self._fight and self._fight.p.buff("Presence of Mind", self._fight.t):
+            return 0.0
+        return c
+
+    def mana_cost(self, spell):
+        cost = spell.cost
+        if "cost_pct" in spell.tags:
+            cost = cost / 100 * self._base_mana
+        if self.sch(spell, "frost"):
+            cost *= 1 - self.tv("Frost Channeling", 0) / 100
+        return cost
+
+    def final_cost(self, fight, spell, cost):
+        cc = fight.p.buff("Clearcasting", fight.t)
+        if cc and spell.dmg_max > 0:
+            del fight.p.buffs["Clearcasting"]
+            return 0.0
+        return cost
+
+    def hit_bonus(self, spell):
+        if (self.sch(spell, "frost") or self.sch(spell, "fire")):
+            return self.tv("Elemental Precision", 0) / 100
+        if self.sch(spell, "arcane"):
+            return self.tv("Arcane Focus", 0) / 100
+        return 0.0
+
+    def crit_bonus(self, spell, frozen):
+        c = 0.0
+        f = self._fight
+        if frozen:
+            c += self.tv("Shatter", 0) / 100
+        if spell.name in ("Fire Blast", "Ice Lance", "Arcane Blast", "Scorch"):
+            c += self.tv("Incineration", 0) / 100
+        if self.sch(spell, "fire"):
+            c += self.tv("Critical Mass", 0) / 100
+            if f and f.p.buff("Combustion", f.t):
+                c += 0.10 * f.p.buffs["Combustion"].get("hits", 0)
+        if spell.name in ("Frostbolt", "Ice Lance") and f:
+            wc = f.m.debuffs.get("Winter's Chill")
+            if wc and wc["until"] > f.t:
+                c += 0.02 * wc["stacks"]
+        if spell.name == "Fire Blast" and f and f.p.buff("Wake of Fire", f.t):
+            c += self.tv("Wake of Fire", 3) / 100
+        return c
+
+    def crit_damage_bonus(self, spell):
+        if self.sch(spell, "frost"):
+            return self.tv("Ice Shards", 0) / 100
+        if self.sch(spell, "arcane"):
+            return self.tv("Arcane Mind", 1) / 100
+        return 0.0
+
+    def damage_multiplier(self, spell, frozen):
+        m = 1.0 + self.tv("Arcane Instability", 0) / 100
+        if self.sch(spell, "frost"):
+            m *= 1 + self.tv("Piercing Ice", 0) / 100
+        if self.sch(spell, "fire"):
+            m *= 1 + self.tv("Fire Power", 0) / 100
+            if self._fight:
+                sc = self._fight.m.debuffs.get("Improved Scorch")
+                if sc and sc["until"] > self._fight.t:
+                    m *= 1 + 0.03 * sc["stacks"]
+        if spell.name == "Ice Lance" and frozen:
+            m *= 4.0
+        if spell.name == "Cone of Cold":
+            m *= 1 + self.tv("Improved Cone of Cold", 0) / 100
+        return m
+
+    def resist_factor(self):
+        return 1.0 - 0.2 * self.rank("Arcane Subtlety")
+
+    def chill_duration_bonus(self):
+        return self.tv("Permafrost", 0) / 100
+
+    def chill_extra_slow(self):
+        return self.tv("Permafrost", 1) / 100
+
+    def armor_bonus(self):
+        return 0.0
+
+    def wand_damage(self):
+        return wand_dps(self.level) * WAND_SPEED * (1 + self.tv("Wand Specialization", 0) / 100)
+
+    def retreat_time(self):
+        return 2.0
+
+    def pushback_resisted(self, fight, spell):
+        if fight.p.absorb > 0 and fight.t < fight.p.absorb_until:
+            return True
+        if self.sch(spell, "fire") and self.rank("Burning Soul"):
+            return fight.rng.random() < self.tv("Burning Soul", 0) / 100
+        return False
+
+    # ------------------------------------------------------------ engine hooks: events
+    def on_fight_start(self, fight):
+        self._fight = fight
+        self._base_mana = fight.p.base_mana
+        p, t = fight.p, fight.t
+        fight.retreated_for = -1.0
+        ib = self.spells.get("Ice Barrier")
+        if ib and p.ready("Ice Barrier", t) and not (p.absorb > 0 and t < p.absorb_until):
+            cost = self.mana_cost(ib)
+            if p.mana >= cost + 150:
+                p.mana -= cost
+                p.fsr_until = t + 5.0
+                p.absorb, p.absorb_until = ib.absorb, t + 60.0
+                p.cooldowns["Ice Barrier"] = t + ib.cooldown
+                fight.note(f"Ice Barrier ({ib.absorb:.0f})")
+        if self.rank("Presence of Mind") and p.ready("Presence of Mind", t):
+            p.buffs["Presence of Mind"] = {"until": t + 60.0}
+            p.cooldowns["Presence of Mind"] = t + 180.0
+        if self.rank("Combustion") and p.ready("Combustion", t) and self.is_fire():
+            p.buffs["Combustion"] = {"until": t + 120.0, "hits": 0, "crits": 0}
+            p.cooldowns["Combustion"] = t + 180.0
+
+    def on_chill(self, fight, spell):
+        p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
+        fb = self.tv("Frostbite", 0)
+        if fb and not m.frozen(t) and rng.random() < fb / 100:
+            m.root_until = t + 5.0
+            fight.note("Frostbite freeze")
+        if self.rank("Fingers of Frost") and rng.random() < self.tv("Fingers of Frost", 0) / 100:
+            charges = int(self.tv("Fingers of Frost", 1)) or 1
+            p.buffs["Fingers of Frost"] = {"until": t + 15.0, "charges": charges}
+
+    def consume_frozen_charge(self, fight):
+        b = fight.p.buff("Fingers of Frost", fight.t)
+        if b and b.get("charges", 0) > 0:
+            b["charges"] -= 1
+            if b["charges"] <= 0:
+                del fight.p.buffs["Fingers of Frost"]
+            return True
+        return False
+
+    def on_hit(self, fight, spell, amount, crit, frozen):
+        p, m, t, rng = fight.p, fight.m, fight.t, fight.rng
+        if amount <= 0:
+            return
+        if spell.burn > 0:
+            fight.add_dot(spell.name + " burn", spell.burn * self.damage_multiplier(spell, False), max(1, int(spell.burn_dur / 2)), 2.0)
+        if self.rank("Winter's Chill") and self.sch(spell, "frost") and rng.random() < self.tv("Winter's Chill", 0) / 100:
+            b = m.debuffs.get("Winter's Chill")
+            stacks = min(max(1, self.rank("Winter's Chill")), (b["stacks"] if b and b["until"] > t else 0) + 1)   # 70009: stacks cap at the rank
+            m.debuffs["Winter's Chill"] = {"until": t + 15.0, "stacks": stacks}
+        if self.rank("Arcane Concentration") and rng.random() < self.tv("Arcane Concentration", 0) / 100:
+            p.buffs["Clearcasting"] = {"until": t + 15.0}
+        if crit and (self.sch(spell, "fire") or self.sch(spell, "frost")) and self.rank("Master of Elements"):
+            p.mana = min(p.mana_max, p.mana + spell.cost * self.tv("Master of Elements", 0) / 100)
+        if self.sch(spell, "fire"):
+            if crit and self.rank("Ignite"):
+                fight.add_dot("Ignite", amount * self.tv("Ignite", 0) / 100, 2, 2.0)
+            if crit and self.rank("Hot Streak") and spell.name in ("Fireball", "Frostfire Bolt", "Fire Blast", "Scorch"):
+                b = p.buffs.get("Hot Streak")
+                stacks = min(3, (b["stacks"] if b and b["until"] > t else 0) + 1)
+                p.buffs["Hot Streak"] = {"until": t + 20.0, "stacks": stacks}
+            if self.rank("Impact") and rng.random() < self.tv("Impact", 0) / 100 and not m.frozen(t):
+                m.stun_until = t + 2.0
+                fight.note("Impact stun")
+            if spell.name == "Scorch" and self.rank("Improved Scorch") and rng.random() < self.tv("Improved Scorch", 0) / 100:
+                b = m.debuffs.get("Improved Scorch")
+                stacks = min(max(1, self.rank("Winter's Chill")), (b["stacks"] if b and b["until"] > t else 0) + 1)   # 70009: stacks cap at the rank
+                m.debuffs["Improved Scorch"] = {"until": t + 30.0, "stacks": stacks}
+            cb = p.buff("Combustion", t)
+            if cb:
+                cb["hits"] += 1
+                if crit:
+                    cb["crits"] += 1
+                    if cb["crits"] >= 4:
+                        del p.buffs["Combustion"]
+
+    def on_miss(self, fight, spell):
+        ma = self.tv("Magic Absorption", 1)
+        if ma:
+            fight.p.mana = min(fight.p.mana_max, fight.p.mana + fight.p.mana_max * ma / 100)
+
+    def after_cast(self, fight, spell):
+        p, m, t = fight.p, fight.m, fight.t
+        cd = spell.cooldown
+        if spell.name == "Fire Blast":
+            cd = max(0.0, cd - self.tv("Wake of Fire", 0))
+            if p.buff("Wake of Fire", t):
+                del p.buffs["Wake of Fire"]
+        if spell.name == "Frost Nova":
+            cd = max(0.0, cd - self.tv("Improved Frost Nova", 0))
+        if cd > 0:
+            p.cooldowns[spell.name] = t + cd
+        if spell.cast > 0 and p.buff("Presence of Mind", t):
+            del p.buffs["Presence of Mind"]
+        if spell.name == "Pyroblast" and p.buff("Hot Streak", t):
+            del p.buffs["Hot Streak"]
+        if spell.name in ("Frost Nova", "Cone of Cold", "Blast Wave") and m.in_melee and m.hp > 0:
+            if spell.name == "Frost Nova" and m.rooted(t):
+                fight.retreat_until = t + self.retreat_time()
+                fight.retreated_for = m.root_until
+            elif spell.name in ("Cone of Cold", "Blast Wave") and not m.rooted(t):
+                fight.retreat_until = t + 1.5
+
+    def on_hit_taken(self, fight, dmg, crit=False):
+        if self.armor_spell_used in ("Ice Armor", "Frost Armor"):
+            m, t = fight.m, fight.t
+            m.attack_slow_until = t + 5.0
+            fight.apply_chill(Spell("Ice Armor chill", "frost"), 0.30, 5.0)
+
+    def on_kill(self, fight):
+        if self.rank("Wake of Fire"):
+            fight.p.buffs["Wake of Fire"] = {"until": fight.t + 30.0}
+
+    def evocation(self, p, t):
+        if self.level < 20 or not p.ready("Evocation", t) or p.mana >= 0.4 * p.mana_max:
+            return 0.0
+        p.mana = min(p.mana_max, p.mana + 4 * 16 * mana_regen_tick(p.spirit))
+        p.cooldowns["Evocation"] = t + 480.0
+        return 8.0
+
+    # ------------------------------------------------------------ priority lists
+    def decide(self, fight):
+        p, m, t = fight.p, fight.m, fight.t
+        cs = self.spells.get("Counterspell")
+        if m.caster and m.casting(t) and cs is not None and p.ready("Counterspell", t) and p.mana >= self.mana_cost(cs) and m.dist <= cs.range:
+            return cs
+        if fight.others():
+            return self.decide_aoe(fight)
+        if self.is_frostfire():
+            return self.decide_frostfire(fight)
+        return self.decide_fire(fight) if self.is_fire() else self.decide_frost(fight)
+
+    def decide_aoe(self, fight):
+        """A pull of several mobs: Frost Nova once they are in melee, walk out of the root, Blizzard while they are held or
+        walking back, Cone of Cold and Arcane Explosion when at least two are in reach, single-target Frost when one is left."""
+        p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
+        sp = self.spells
+        nova, coc, ae, bliz, blast, fb = (sp.get(n) for n in ("Frost Nova", "Cone of Cold", "Arcane Explosion", "Blizzard", "Blast Wave", "Frostbolt"))
+        alive = fight.alive()
+        near = [x for x in alive if x.dist <= 10.5]
+        melee = [x for x in alive if x.in_melee]
+        loose = [x for x in melee if not x.rooted(t)]           # in melee and free to swing
+        controlled = all(x.rooted(t) or x.slow_until > t or x.dist > 8.0 for x in alive)
+        # 1. the pack is on me: Frost Nova, then walk out of the root
+        if nova and can(nova) and len(melee) >= 2 and loose:
+            return nova
+        if melee and not loose and min(x.root_until for x in melee) - t >= 1.5 and fight.retreated_for != m.root_until:
+            fight.retreated_for = m.root_until
+            return "retreat"
+        # 2. Blizzard while they are held, slowed or still walking back; Cone of Cold when they reach me and Nova is down
+        if bliz and can(bliz) and len(alive) >= 3 and not loose and controlled and all(x.dist <= bliz.range for x in alive) and p.mana > self.mana_cost(bliz) * 1.3:
+            return bliz
+        if coc and can(coc) and len(near) >= 2 and loose:
+            return coc
+        if blast and can(blast) and len(near) >= 2:
+            return blast
+        # 3. loose mobs on me, no control up: Arcane Explosion them down if there are still several, else single target
+        if ae and can(ae) and len(near) >= 2 and p.mana > self.mana_cost(ae) * 2:
+            return ae
+        if not melee and not near and fb and can(fb):   # the pull: bolt the first one while they walk in
+            return fb
+        if self.is_frostfire():
+            return self.decide_frostfire(fight)
+        return self.decide_fire(fight) if self.is_fire() else self.decide_frost(fight)
+
+    def interrupt_bonus(self, fight, spell):
+        return self.tv("Improved Counterspell", 0) if spell.name == "Counterspell" else 0.0
+
+    def _common(self, fight):
+        p, m, t = fight.p, fight.m, fight.t
+        in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
+        rooted = m.rooted(t)
+        frozen = rooted or bool(p.buff("Fingers of Frost", t))
+
+        def avg(s):
+            return (s.dmg_min + s.dmg_max) / 2 + s.coef * p.spell_power if s else 0.0
+
+        def can(s):
+            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+
+        return p, m, t, in_melee, rooted, frozen, avg, can
+
+    def decide_frost(self, fight):
+        p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
+        sp = self.spells
+        fb, blast, nova, coc, lance, snap = (sp.get(n) for n in ("Frostbolt", "Fire Blast", "Frost Nova", "Cone of Cold", "Ice Lance", "Cold Snap"))
+        if fb is None:
+            return "wand"
+        hp = m.hp
+        fb_cast = self.cast_time(fb)
+        wand_hit = self.wand_damage() * 0.65
+        if blast and can(blast) and hp <= avg(blast) * 0.9:
+            return blast
+        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+            return lance
+        if hp <= wand_hit * 1.5:
+            return "wand"
+        if in_melee and not rooted:
+            if nova and can(nova) and hp > 0.12 * m.hp_max:
+                return nova
+            if snap and can(snap) and nova and not p.ready("Frost Nova", t) and p.cooldowns.get("Frost Nova", 0) - t > 8 and hp > 0.4 * m.hp_max:
+                p.cooldowns["Frost Nova"] = t
+                p.cooldowns["Cone of Cold"] = t
+                p.cooldowns["Ice Barrier"] = t
+                p.cooldowns["Cold Snap"] = t + snap.cooldown
+                fight.note("Cold Snap")
+                return nova if can(nova) else None
+            if coc and can(coc) and hp > avg(coc):
+                return coc
+        if in_melee and rooted and m.root_until - t >= 1.0 and fight.retreated_for != m.root_until:
+            fight.retreated_for = m.root_until
+            return "retreat"
+        if frozen:
+            if lance and can(lance):
+                return lance
+            if can(fb):
+                return fb
+        if blast and can(blast) and p.buff("Wake of Fire", t):
+            return blast
+        if p.buff("Presence of Mind", t) and can(fb):
+            return fb
+        if not in_melee and not rooted:
+            time_to_melee = (m.dist - MELEE_RANGE) / max(0.1, m.speed(t))
+            if time_to_melee < fb_cast:
+                if blast and can(blast):
+                    return blast
+                if nova and can(nova):
+                    return "wand"
+        if in_melee and blast and can(blast):
+            return blast
+        if can(fb):
+            return fb
+        if blast and can(blast):
+            return blast
+        return "wand"
+
+    def decide_frostfire(self, fight):
+        """Frostfire Bolt (from level 40; Frostbolt before) as the bolt: it chills like Frostbolt and counts as Frost and Fire, so both
+        trees' talents apply. Finish with Fire Blast, Ice Lance or the wand; Pyroblast on a full Hot Streak; Frost Nova, Cone of Cold and
+        a step back when the mob reaches you; Ice Lance on a frozen mob."""
+        p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
+        sp = self.spells
+        ffb, fb, blast, nova, coc, lance, pyro = (sp.get(n) for n in ("Frostfire Bolt", "Frostbolt", "Fire Blast", "Frost Nova", "Cone of Cold", "Ice Lance", "Pyroblast"))
+        bolt = ffb or fb
+        if bolt is None:
+            return "wand"
+        hp = m.hp
+        bolt_cast = self.cast_time(bolt)
+        wand_hit = self.wand_damage() * 0.65
+        if blast and can(blast) and hp <= avg(blast) * 0.9:
+            return blast
+        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+            return lance
+        if hp <= wand_hit * 1.5:
+            return "wand"
+        hs = p.buff("Hot Streak", t)
+        if pyro and hs and hs["stacks"] >= 3 and can(pyro) and hp > avg(bolt) * 1.2:
+            return pyro
+        if in_melee and not rooted:
+            if nova and can(nova) and hp > 0.12 * m.hp_max:
+                return nova
+            if coc and can(coc) and hp > avg(coc):
+                return coc
+        if in_melee and rooted and m.root_until - t >= 1.0 and fight.retreated_for != m.root_until:
+            fight.retreated_for = m.root_until
+            return "retreat"
+        if frozen and lance and can(lance):
+            return lance
+        if blast and can(blast) and p.buff("Wake of Fire", t):
+            return blast
+        if p.buff("Presence of Mind", t) and can(bolt):
+            return bolt
+        if not in_melee and not rooted:
+            time_to_melee = (m.dist - MELEE_RANGE) / max(0.1, m.speed(t))
+            if time_to_melee < bolt_cast:
+                if blast and can(blast):
+                    return blast
+                if nova and can(nova):
+                    return "wand"
+        if in_melee and blast and can(blast):
+            return blast
+        if can(bolt):
+            return bolt
+        if blast and can(blast):
+            return blast
+        return "wand"
+
+    def decide_fire(self, fight):
+        p, m, t, in_melee, rooted, frozen, avg, can = self._common(fight)
+        sp = self.spells
+        fireball, blast, scorch, nova, lance, pyro, wave = (sp.get(n) for n in ("Fireball", "Fire Blast", "Scorch", "Frost Nova", "Ice Lance", "Pyroblast", "Blast Wave"))
+        if fireball is None:
+            return "wand"
+        hp = m.hp
+        fb_cast = self.cast_time(fireball)
+        wand_hit = self.wand_damage() * 0.65
+        # finishers without overkill
+        if blast and can(blast) and hp <= avg(blast) * 0.9:
+            return blast
+        if lance and can(lance) and hp <= avg(lance) * (4 if frozen else 1) * 0.9:
+            return lance
+        if scorch and can(scorch) and hp <= avg(scorch) * 0.9 and hp > wand_hit * 1.5:
+            return scorch
+        if hp <= wand_hit * 1.5:
+            return "wand"
+        # a full Hot Streak: a 1.5s Pyroblast beats everything
+        hs = p.buff("Hot Streak", t)
+        if pyro and hs and hs["stacks"] >= 3 and can(pyro) and hp > avg(scorch) * 1.5 if scorch else False:
+            return pyro
+        # control when the mob is on us
+        if in_melee and not rooted and not m.stunned(t):
+            if nova and can(nova) and hp > 0.12 * m.hp_max:
+                return nova
+            if wave and can(wave) and hp > avg(wave):
+                return wave
+            if blast and can(blast):
+                return blast
+        if in_melee and rooted and m.root_until - t >= 1.0 and fight.retreated_for != m.root_until:
+            fight.retreated_for = m.root_until
+            return "retreat"
+        if frozen and lance and can(lance):
+            return lance
+        if blast and can(blast) and p.buff("Wake of Fire", t):
+            return blast
+        if p.buff("Presence of Mind", t) and can(fireball):
+            return fireball
+        if not in_melee and not rooted and not m.stunned(t):
+            time_to_melee = (m.dist - MELEE_RANGE) / max(0.1, m.speed(t))
+            if time_to_melee < fb_cast:
+                if blast and can(blast):
+                    return blast
+                if scorch and can(scorch) and time_to_melee >= 1.5:
+                    return scorch
+                if nova and can(nova):
+                    return "wand"
+        if in_melee:
+            # the mob is on us and every control is down: Scorch (1.5s) suffers less pushback than a Fireball
+            if scorch and can(scorch):
+                return scorch
+        if can(fireball):
+            return fireball
+        if scorch and can(scorch):
+            return scorch
+        if blast and can(blast):
+            return blast
+        return "wand"

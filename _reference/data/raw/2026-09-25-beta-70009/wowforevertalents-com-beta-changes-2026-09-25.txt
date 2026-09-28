@@ -1,0 +1,6223 @@
+WoW Forever Beta Changes – What Each Beta Build Changed
+Skip to content
+∞
+WoW Forever Talents
+Talent calculator for World of Warcraft: Forever
+Talents
+Builds
+Abilities
+New
+Racials
+Professions
+New
+Reputations
+New
+Dungeons
+New
+Quests
+New
+PvP
+New
+Legacy Tree
+What to expect
+Beta changes
+Roadmap
+About the data
+Home
+Beta changes
+What the Forever beta changed
+Happening now
+17 September – 21 October 2026
+Every client build the beta ships is read table by table and compared with the one before it, rank for
+rank, and whatever moved is listed here under that build — beside what Blizzard's own notes for it claim,
+and whether the tables bear the claim out. Below that, everything that has changed since the BlizzCon 2026
+build the site started from.
+17/09/2026
+Beta opens
+21/10/2026
+Beta ends
+467
+Talents watched
+536
+Changes since BlizzCon
+Client builds this site has read
+Every table is compared against the build before it, so a patch that moves nothing is recorded as moving
+nothing rather than passed over in silence. Where Blizzard published notes for a build, each claim about
+talents and spells is checked against the tables and marked.
+1.60.1.70009
+In use
+Read from 25 September 2026, published 24 September 2026
+The first build that moved talents: two gone, two renamed, two swapped rows, and a round of retuning.
+42 of the 90 tables changed. In the trait tables the talent count went from 469 to 467: Improved Holy Strike (Holy, first row) and Crusade (Retribution, 15 points) are no longer in the trees, both of them talents Forever had added rather than Classic ones. Two druid nodes carry new names, Mangle as Primal Bite and Primal Fury as Blood Frenzy, and every talent that named Mangle (Ferocity, Berserk) now names Primal Bite. In the shaman Elemental tree, Elemental Alacrity moved from 25 points to 10 and Elemental Fury from 10 to 25, and the arrows moved with them. Seventeen talents were retuned or reworded: Bloodthrill, Improved Slam, Holy Power, Light's Vigil, Sacred Arbiter, Two-Handed Weapon Specialization, Vengeance, Twist of Light, Strider Kick, Devouring Contagion, Lava Burst, Rage of the Farseer, Wake of Fire, Hot Streak, Ferocity, Primal Bite and Berserk. In the spellbooks, Wrath's damage rose on all eight ranks, Holy Strike's weapon damage rose on ranks 2 to 8 and its cooldown fell from 12 to 10 seconds, Slam's cooldown rose from 15 to 18 seconds, Righteous Fury's threat bonus fell from 90% to 60%, Lightning Bolt ranks 3 and 4 and Lava Burst rank 2 gained damage, and Dark Sacrifice and Life Tap now state their Mana in terms of Spirit. Because talents moved, every build link written before this build is read against the frozen 1.60.1.69977 layout and placed by talent name, so it opens as the build it meant; a link whose only points sat in Improved Holy Strike or Crusade now opens empty. Beyond talents and spellbooks: the achievement tables grew by about 7,000 rows (Achievement 233 to 433, Criteria 1,353 to 3,276, CriteriaTree 1,951 to 6,603), 189 of the 200 new achievements being zero-point counters such as total gold acquired or duels lost, with only twelve worth points (ten 5-point dungeon and raid boss trackers, two 10-point cooking and fishing ones); a whole prototype encounter left the tables (about 90 spells, an Adaptive gear system of eight named armour sets, a slime boss kit and a Contribute Reagent mechanic, with its dev-only map, Development Land); Deadmines gained an encounter row for Miner Johnson; five quest ids, 66 newly named quest items, four zone item sets and a Spawn of Grubthor companion arrived; the Nightclaw Druids faction went from an empty stub to a wired reputation track; the Gnome racial Eureka! now discounts Energy by 10% instead of 20%; and, with no note anywhere, 1,053 spell effects had their bonus coefficient zeroed and some 270 items had their sheathe type reclassified.
+Every raw table hash-compared between the builds; the talent pipeline run against both and diffed node by node across all 469 talents; every spellbook rank compared text for text and cooldown for cooldown; 9,230 stored build codes re-read against the frozen layout, with the four that spend nothing all naming only Improved Holy Strike.
+Blizzard's
+WoW Forever Beta Development Notes – Updated September 24
+(24 September 2026) against the tables:
+✓
+Improved Holy Strike removed from the Holy talent tree
+—
+the tables agree.
+Its trait node is gone from the Holy tree; Holy Strike's cooldown in the spellbook is 10 seconds on every rank, down from 12.
+✕
+Bastion (row 5) and Focused Rage (row 6) swapped positions in the Protection tree
+—
+the tables disagree.
+In this build's trait tables Bastion still sits in row 5 and Focused Rage in row 6, at the same coordinates as in 1.60.1.69977. No warrior talent moved. If the swap exists, it is not in the client yet.
+✓
+Elemental Fury (row 3) and Elemental Alacrity (row 6) swapped positions
+—
+the tables agree.
+Elemental Alacrity now opens at 10 points and Elemental Fury at 25; the prerequisite arrows follow them.
+✓
+Mangle renamed Primal Bite, and talents referencing Mangle updated
+—
+the tables agree.
+Same trait node, new name; Ferocity and Berserk now read Primal Bite.
+✓
+Primal Fury renamed Blood Frenzy with the original icon
+—
+the tables agree.
+The node that was Primal Fury is named Blood Frenzy; the tables match it to Classic's Primal Fury by spell, so its page says which Classic talent it carries on.
+✓
+Holy Strike's weapon damage is now 25/29/32/36/39/43/46/50% by rank
+—
+the tables agree.
+Ranks 2 to 8 changed exactly so; rank 1 was already 25%.
+✓
+Holy Power now also raises Holy Strike's critical strike chance by 15%
+—
+the tables agree.
+All five ranks now name Holy Shock and Holy Strike.
+✓
+Vengeance activates on non-periodic critical strikes and stacks to 3
+—
+the tables agree.
+All three ranks read "non-periodic" and "up to 3 times".
+✓
+Two-Handed Weapon Specialization reduced to 2/4/6%
+—
+the tables agree.
+Which makes it read exactly as it does in Classic Era, so it is no longer marked as changed.
+✓
+Sacred Arbiter 20%; Twist of Light also cuts Seal Mana cost by 20%
+—
+the tables agree.
+Both tooltips changed as stated.
+✓
+Righteous Fury's Holy threat bonus lowered to 60%
+—
+the tables agree.
+90% to 60% in the spellbook.
+✓
+Wake of Fire 30 seconds, Hot Streak 20 seconds
+—
+the tables agree.
+Both durations changed in the tooltips.
+✓
+Strider Kick now also grants 30% movement speed for 3 seconds
+—
+the tables agree.
+The tooltip gained the clause.
+✓
+Bloodthrill 4/8/12/16/20%, main-hand attacks only; Slam's cooldown 18 seconds; Improved Slam reduces it by 1.5/3 seconds
+—
+the tables agree.
+All three read as stated.
+✓
+Rage of the Far Seer no longer increases spell casting speed
+—
+the tables agree.
+The tooltip now says attack speed only.
+✓
+Wrath base damage up about 50%; Lightning Bolt ranks 3 and 4 and Lava Burst ranks 1 and 2 up
+—
+the tables agree.
+Wrath rank 8 went from 62–69 to 92–102, every rank rose; Lightning Bolt rank 3 35–41 to 44–52, rank 4 49–57 to 55–63; Lava Burst rank 1 (the talent) 105–135 to 150–193 and rank 2 164–212 to 179–231.
+✓
+Eureka! changed on every class to a 10% discount
+—
+the tables agree.
+The gnome racial's tooltip went from a 20% Energy discount to 10%; the tables show one racial spell for all classes, so the per-class Mana and Rage wording is the server's.
+✓
+Windfury Totem and Flametongue Totem buffs display under those names
+—
+the tables agree.
+The buff spells were renamed in SpellName; Windfury Totem's tooltip now also states its 30-yard reach.
+✓
+Wizard Oil values reverted to Classic Era (8, 16, 24 spell power)
+—
+the tables agree.
+The oils' item effects point at spells whose values now read 8, 16 and 24; Brilliant Wizard Oil is unchanged.
+?
+Furious Howl attack power bonus reduced 40%; Tame Beast, Sonic Blast, Cultivation, Touch of the Grave, Feign Death and Consecration fixes
+—
+not in the tables.
+Pet spells, taming rules and the fixes are server-side or outside the class skill lines these tables list; nothing here can confirm or deny them.
+?
+Crusade
+—
+not in the tables.
+Not in the notes at all, but the Retribution talent Crusade is gone from this build's trait tables.
+93 measured changes against 1.60.1.69977, class by class
+· 469 → 467 talents · spellbooks compared
+Paladin
+34changes
+Retuned
+Holy Power
+· Holy · rank 1
+1.60.1.69977
+Increases the critical strike chance of your Holy Shock
+spell
+by 3%, and all other spells by 1%.
+1.60.1.70009
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 3%, and all other spells by 1%.
+Holy Power
+· Holy · rank 2
+1.60.1.69977
+Increases the critical strike chance of your Holy Shock
+spell
+by 6%, and all other spells by 2%.
+1.60.1.70009
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 6%, and all other spells by 2%.
+Holy Power
+· Holy · rank 3
+1.60.1.69977
+Increases the critical strike chance of your Holy Shock
+spell
+by 9%, and all other spells by 3%.
+1.60.1.70009
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 9%, and all other spells by 3%.
+Holy Power
+· Holy · rank 4
+1.60.1.69977
+Increases the critical strike chance of your Holy Shock
+spell
+by 12%, and all other spells by 4%.
+1.60.1.70009
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 12%, and all other spells by 4%.
+Holy Power
+· Holy · rank 5
+1.60.1.69977
+Increases the critical strike chance of your Holy Shock
+spell
+by 15%, and all other spells by 5%.
+1.60.1.70009
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 15%, and all other spells by 5%.
+Light's Vigil
+· Holy · rank 1
+1.60.1.69977
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes
+friendly targets to heal their party for 325 to 344, or
+enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana
+cost. You
+may only have
+1
+Light's Vigil active per
+Paladin, per
+party.
+1.60.1.70009
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana
+cost, or allied targets to heal their party for 325 to 344. The Paladin
+may only have
+one
+Light's Vigil active per party.
+Sacred Arbiter
+· Retribution · rank 1
+1.60.1.69977
+Increases the damage of your Holy Strike ability by
+10%
+and causes it to refresh all Judgement effects on the target.
+1.60.1.70009
+Increases the damage of your Holy Strike ability by
+20%
+and causes it to refresh all Judgement effects on the target.
+Two-Handed Weapon Specialization
+· Retribution · rank 1
+1.60.1.69977
+Increases the damage you deal with two-handed melee weapons by
+3%.
+1.60.1.70009
+Increases the damage you deal with two-handed melee weapons by
+2%.
+Two-Handed Weapon Specialization
+· Retribution · rank 2
+1.60.1.69977
+Increases the damage you deal with two-handed melee weapons by
+6%.
+1.60.1.70009
+Increases the damage you deal with two-handed melee weapons by
+4%.
+Two-Handed Weapon Specialization
+· Retribution · rank 3
+1.60.1.69977
+Increases the damage you deal with two-handed melee weapons by
+9%.
+1.60.1.70009
+Increases the damage you deal with two-handed melee weapons by
+6%.
+Vengeance
+· Retribution · rank 1
+1.60.1.69977
+Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+1.60.1.70009
+Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Vengeance
+· Retribution · rank 2
+1.60.1.69977
+Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+1.60.1.70009
+Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Vengeance
+· Retribution · rank 3
+1.60.1.69977
+Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+1.60.1.70009
+Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Twist of Light
+· Retribution · rank 1
+1.60.1.69977
+When
+you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an
+Echo.
+Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+1.60.1.70009
+Reduces the Mana cost of your Seal spells by 20%, and when
+you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an
+Echo of that Seal.
+Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+Removed
+Improved Holy Strike
+Holy
+Crusade
+Retribution · 15 points
+Spellbook
+Holy Strike
+· Rank 1
+· cost, range, cast or cooldown
+1.60.1.69977
+5 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+5 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 2
+1.60.1.69977
+An instant strike that causes
+25%
+weapon damage plus an additional 15 to 20 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+29%
+weapon damage plus an additional 15 to 20 as Holy damage.
+Holy Strike
+· Rank 2
+· cost, range, cast or cooldown
+1.60.1.69977
+9 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+9 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 3
+1.60.1.69977
+An instant strike that causes
+30%
+weapon damage plus an additional 18 to 23 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+32%
+weapon damage plus an additional 18 to 23 as Holy damage.
+Holy Strike
+· Rank 3
+· cost, range, cast or cooldown
+1.60.1.69977
+12 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+12 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 4
+1.60.1.69977
+An instant strike that causes
+30%
+weapon damage plus an additional 22 to 29 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+36%
+weapon damage plus an additional 22 to 29 as Holy damage.
+Holy Strike
+· Rank 4
+· cost, range, cast or cooldown
+1.60.1.69977
+14 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+14 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 5
+1.60.1.69977
+An instant strike that causes
+35%
+weapon damage plus an additional 32 to 41 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+39%
+weapon damage plus an additional 32 to 41 as Holy damage.
+Holy Strike
+· Rank 5
+· cost, range, cast or cooldown
+1.60.1.69977
+16 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+16 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 6
+1.60.1.69977
+An instant strike that causes
+35%
+weapon damage plus an additional 53 to 68 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+43%
+weapon damage plus an additional 53 to 68 as Holy damage.
+Holy Strike
+· Rank 6
+· cost, range, cast or cooldown
+1.60.1.69977
+17 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+17 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 7
+1.60.1.69977
+An instant strike that causes
+40%
+weapon damage plus an additional 72 to 92 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+46%
+weapon damage plus an additional 72 to 92 as Holy damage.
+Holy Strike
+· Rank 7
+· cost, range, cast or cooldown
+1.60.1.69977
+19 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+19 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Holy Strike
+· Rank 8
+1.60.1.69977
+An instant strike that causes
+40%
+weapon damage plus an additional 81 to 105 as Holy damage.
+1.60.1.70009
+An instant strike that causes
+50%
+weapon damage plus an additional 81 to 105 as Holy damage.
+Holy Strike
+· Rank 8
+· cost, range, cast or cooldown
+1.60.1.69977
+20 Mana · Melee Range · Instant ·
+12
+sec cooldown
+1.60.1.70009
+20 Mana · Melee Range · Instant ·
+10
+sec cooldown
+Righteous Fury
+1.60.1.69977
+Increases the threat generated by your Holy attacks by
+90%.
+Lasts 30 min.
+1.60.1.70009
+Increases the threat generated by your Holy attacks by
+60%.
+Lasts 30 min.
+Light's Vigil
+· Rank 2
+1.60.1.69977
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes
+allied targets to heal their party for 486 to 515, or
+enemy targets to suffer 268 to 288 Holy damage and refund 75% of Light's Vigil's Mana
+cost. You
+may only have
+1
+Light's Vigil active per
+Paladin, per
+party.
+1.60.1.70009
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 268 to 288 Holy damage and refund 75% of Light's Vigil's Mana
+cost, or allied targets to heal their party for 486 to 515. The Paladin
+may only have
+one
+Light's Vigil active per party.
+Light's Vigil
+· Rank 3
+1.60.1.69977
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes
+allied targets to heal their party for 684 to 724, or
+enemy targets to suffer 380 to 410 Holy damage and refund 75% of Light's Vigil's Mana
+cost. You
+may only have
+1
+Light's Vigil active per
+Paladin, per
+party.
+1.60.1.70009
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 380 to 410 Holy damage and refund 75% of Light's Vigil's Mana
+cost, or allied targets to heal their party for 684 to 724. The Paladin
+may only have
+one
+Light's Vigil active per party.
+Full Paladin spellbook →
+Druid
+17changes
+Retuned
+Ferocity
+· Feral Combat · rank 1
+1.60.1.69977
+Reduces the cost of your Maul,
+Mangle,
+Swipe, Claw, and Rake abilities by 1 Rage or Energy.
+1.60.1.70009
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 1 Rage or Energy.
+Ferocity
+· Feral Combat · rank 2
+1.60.1.69977
+Reduces the cost of your Maul,
+Mangle,
+Swipe, Claw, and Rake abilities by 2 Rage or Energy.
+1.60.1.70009
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 2 Rage or Energy.
+Ferocity
+· Feral Combat · rank 3
+1.60.1.69977
+Reduces the cost of your Maul,
+Mangle,
+Swipe, Claw, and Rake abilities by 3 Rage or Energy.
+1.60.1.70009
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 3 Rage or Energy.
+Ferocity
+· Feral Combat · rank 4
+1.60.1.69977
+Reduces the cost of your Maul,
+Mangle,
+Swipe, Claw, and Rake abilities by 4 Rage or Energy.
+1.60.1.70009
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 4 Rage or Energy.
+Ferocity
+· Feral Combat · rank 5
+1.60.1.69977
+Reduces the cost of your Maul,
+Mangle,
+Swipe, Claw, and Rake abilities by 5 Rage or Energy.
+1.60.1.70009
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 5 Rage or Energy.
+Primal Bite
+· Feral Combat · rank 1
+1.60.1.69977
+Mangle
+the target for 100% normal damage plus 26.
+1.60.1.70009
+Bite
+the target for 100% normal damage plus 26.
+Berserk
+· Feral Combat · rank 1
+1.60.1.69977
+Requires Cat Form, Bear Form, Dire Bear Form.
+Causes your
+Mangle
+ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.
+1.60.1.70009
+Requires Cat Form, Bear Form, Dire Bear Form.
+Causes your
+Primal Bite
+ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.
+Renamed
+Mangle →
+Primal Bite
+Feral Combat
+Primal Fury →
+Blood Frenzy
+Feral Combat
+Spellbook
+Wrath
+· Rank 1
+1.60.1.69977
+Causes
+10
+to
+12
+Nature damage to the target.
+1.60.1.70009
+Causes
+15
+to
+18
+Nature damage to the target.
+Wrath
+· Rank 2
+1.60.1.69977
+Causes
+16
+to
+19
+Nature damage to the target.
+1.60.1.70009
+Causes
+25
+to
+29
+Nature damage to the target.
+Wrath
+· Rank 3
+1.60.1.69977
+Causes
+21
+to
+25
+Nature damage to the target.
+1.60.1.70009
+Causes
+31
+to
+37
+Nature damage to the target.
+Wrath
+· Rank 4
+1.60.1.69977
+Causes
+26
+to
+31
+Nature damage to the target.
+1.60.1.70009
+Causes
+40
+to
+47
+Nature damage to the target.
+Wrath
+· Rank 5
+1.60.1.69977
+Causes
+31
+to
+36
+Nature damage to the target.
+1.60.1.70009
+Causes
+47
+to
+54
+Nature damage to the target.
+Wrath
+· Rank 6
+1.60.1.69977
+Causes
+37
+to
+42
+Nature damage to the target.
+1.60.1.70009
+Causes
+56
+to
+63
+Nature damage to the target.
+Wrath
+· Rank 7
+1.60.1.69977
+Causes
+46
+to
+51
+Nature damage to the target.
+1.60.1.70009
+Causes
+69
+to
+77
+Nature damage to the target.
+Wrath
+· Rank 8
+1.60.1.69977
+Causes
+62
+to
+69
+Nature damage to the target.
+1.60.1.70009
+Causes
+92
+to
+102
+Nature damage to the target.
+Full Druid spellbook →
+Warrior
+12changes
+Retuned
+Bloodthrill
+· Arms · rank 1
+1.60.1.69977
+Your melee attacks against
+targets
+afflicted by your Rend have a
+2%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+1.60.1.70009
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+4%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Bloodthrill
+· Arms · rank 2
+1.60.1.69977
+Your melee attacks against
+targets
+afflicted by your Rend have a
+4%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+1.60.1.70009
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+8%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Bloodthrill
+· Arms · rank 3
+1.60.1.69977
+Your melee attacks against
+targets
+afflicted by your Rend have a
+6%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+1.60.1.70009
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+12%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Bloodthrill
+· Arms · rank 4
+1.60.1.69977
+Your melee attacks against
+targets
+afflicted by your Rend have a
+8%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+1.60.1.70009
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+16%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Bloodthrill
+· Arms · rank 5
+1.60.1.69977
+Your melee attacks against
+targets
+afflicted by your Rend have a
+10%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+1.60.1.70009
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+20%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Improved Slam
+· Arms · rank 1
+1.60.1.69977
+Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts your melee swing
+time.
+1.60.1.70009
+Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts
+or delays
+your melee swing
+and Slam's cooldown is reduced by 1.5 sec.
+Improved Slam
+· Arms · rank 2
+1.60.1.69977
+Reduces the global cooldown and cast time of your Slam ability by 0.5 sec. In addition, Slam no longer interrupts your melee swing
+time.
+1.60.1.70009
+Reduces the global cooldown and cast time of your Slam ability by 0.5 sec. In addition, Slam no longer interrupts
+or delays
+your melee swing
+and Slam's cooldown is reduced by 3 sec.
+Spellbook
+Slam
+· Rank 1
+· cost, range, cast or cooldown
+1.60.1.69977
+15 Rage · Melee Range · 1.5 sec cast ·
+15
+sec cooldown
+1.60.1.70009
+15 Rage · Melee Range · 1.5 sec cast ·
+18
+sec cooldown
+Slam
+· Rank 2
+· cost, range, cast or cooldown
+1.60.1.69977
+15 Rage · Melee Range · 1.5 sec cast ·
+15
+sec cooldown
+1.60.1.70009
+15 Rage · Melee Range · 1.5 sec cast ·
+18
+sec cooldown
+Slam
+· Rank 3
+· cost, range, cast or cooldown
+1.60.1.69977
+15 Rage · Melee Range · 1.5 sec cast ·
+15
+sec cooldown
+1.60.1.70009
+15 Rage · Melee Range · 1.5 sec cast ·
+18
+sec cooldown
+Slam
+· Rank 4
+· cost, range, cast or cooldown
+1.60.1.69977
+15 Rage · Melee Range · 1.5 sec cast ·
+15
+sec cooldown
+1.60.1.70009
+15 Rage · Melee Range · 1.5 sec cast ·
+18
+sec cooldown
+Slam
+· Rank 5
+· cost, range, cast or cooldown
+1.60.1.69977
+15 Rage · Melee Range · 1.5 sec cast ·
+15
+sec cooldown
+1.60.1.70009
+15 Rage · Melee Range · 1.5 sec cast ·
+18
+sec cooldown
+Full Warrior spellbook →
+Shaman
+10changes
+Retuned
+Lava Burst
+· Elemental Combat · rank 1
+1.60.1.69977
+You hurl molten lava at the target, dealing
+105
+to
+135
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+1.60.1.70009
+You hurl molten lava at the target, dealing
+150
+to
+193
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+Rage of the Farseer
+· Enhancement · rank 1
+1.60.1.69977
+Increases your
+melee
+attack speed
+and spell casting speed
+by 30% for 25 sec.
+1.60.1.70009
+Increases your attack speed by 30% for 25 sec.
+Moved
+Elemental Alacrity
+Elemental Combat
+— now opens at 10 points instead of 25
+Elemental Fury
+Elemental Combat
+— now opens at 25 points instead of 10
+Spellbook
+Windfury Totem
+· Rank 1
+1.60.1.69977
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+$8514a1
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 95 extra melee attack power. Lasts 5 min.
+1.60.1.70009
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+30
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 95 extra melee attack power. Lasts 5 min.
+Windfury Totem
+· Rank 2
+1.60.1.69977
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+$10607a1
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 179 extra melee attack power. Lasts 5 min.
+1.60.1.70009
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+30
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 179 extra melee attack power. Lasts 5 min.
+Windfury Totem
+· Rank 3
+1.60.1.69977
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+$10611a1
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 246 extra melee attack power. Lasts 5 min.
+1.60.1.70009
+Summons a Windfury Totem with 5 health at the feet of the caster. The totem enhances the melee attacks of all party members within
+30
+yards. Each main hand hit has a 20% chance of granting the attacker 1 extra attack with 246 extra melee attack power. Lasts 5 min.
+Lightning Bolt
+· Rank 3
+1.60.1.69977
+Casts a bolt of lightning at the target for
+35
+to
+41
+Nature damage.
+1.60.1.70009
+Casts a bolt of lightning at the target for
+44
+to
+52
+Nature damage.
+Lightning Bolt
+· Rank 4
+1.60.1.69977
+Casts a bolt of lightning at the target for
+49
+to
+57
+Nature damage.
+1.60.1.70009
+Casts a bolt of lightning at the target for
+55
+to
+63
+Nature damage.
+Lava Burst
+· Rank 2
+1.60.1.69977
+You hurl molten lava at the target, dealing
+164
+to
+212
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+1.60.1.70009
+You hurl molten lava at the target, dealing
+179
+to
+231
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+Full Shaman spellbook →
+Priest
+8changes
+Retuned
+Devouring Contagion
+· Shadow Magic · rank 1
+1.60.1.69977
+Reduces the mana cost of your Devouring Plague by 25%.
+Targets that die while Devouring Plague
+it
+is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.
+1.60.1.70009
+Reduces the mana cost of your Devouring Plague by 25%.
+Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.
+Devouring Contagion
+· Shadow Magic · rank 2
+1.60.1.69977
+Reduces the mana cost of your Devouring Plague by 50%.
+Targets that die while Devouring Plague
+it
+is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration.
+1.60.1.70009
+Reduces the mana cost of your Devouring Plague by 50%.
+Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 10 yards for the remaining duration.
+Spellbook
+Dark Sacrifice
+· Rank 1
+1.60.1.69977
+Cannibalize 440 of your own Health over 15 sec to gain
+440
+Mana.
+1.60.1.70009
+Cannibalize 440 of your own Health over 15 sec to gain
+(440 + Spirit)
+Mana.
+Dark Sacrifice
+· Rank 2
+1.60.1.69977
+Cannibalize 720 of your own Health over 15 sec to gain
+720
+Mana.
+1.60.1.70009
+Cannibalize 720 of your own Health over 15 sec to gain
+(720 + Spirit)
+Mana.
+Dark Sacrifice
+· Rank 3
+1.60.1.69977
+Cannibalize 1020 of your own Health over 15 sec to gain
+1020
+Mana.
+1.60.1.70009
+Cannibalize 1020 of your own Health over 15 sec to gain
+(1020 + Spirit)
+Mana.
+Dark Sacrifice
+· Rank 4
+1.60.1.69977
+Cannibalize 1330 of your own Health over 15 sec to gain
+1330
+Mana.
+1.60.1.70009
+Cannibalize 1330 of your own Health over 15 sec to gain
+(1330 + Spirit)
+Mana.
+Dark Sacrifice
+· Rank 5
+1.60.1.69977
+Cannibalize 1600 of your own Health over 15 sec to gain
+1600
+Mana.
+1.60.1.70009
+Cannibalize 1600 of your own Health over 15 sec to gain
+(1600 + Spirit)
+Mana.
+Power Word: Shield
+· Rank 9
+1.60.1.69977
+Draws on the soul of the party member to shield them, absorbing
+$w1
+damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.
+1.60.1.70009
+Draws on the soul of the party member to shield them, absorbing
+769
+damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.
+Full Priest spellbook →
+Warlock
+8changes
+Spellbook
+Create Firestone
+· Rank 3
+1.60.1.69977
+Creates a Greater Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 17.
+1.60.1.70009
+Creates a Greater Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 17.
+Conjured items disappear if logged out for more than 15 minutes.
+Create Firestone
+· Rank 4
+1.60.1.69977
+Creates a Major Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 21.
+1.60.1.70009
+Creates a Major Firestone which can be used to enchant your weapon with Fire, increasing your spell critical strike chance by 2% and the damage done by your Fire spells by up to 21.
+Conjured items disappear if logged out for more than 15 minutes.
+Life Tap
+· Rank 1
+1.60.1.69977
+Converts
+30 health
+into (30 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(30 + Spirit) Health
+into (30 + Spirit) Mana for you. Spirit increases the amount converted.
+Life Tap
+· Rank 2
+1.60.1.69977
+Converts
+75 health
+into (75 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(75 + Spirit) Health
+into (75 + Spirit) Mana for you. Spirit increases the amount converted.
+Life Tap
+· Rank 3
+1.60.1.69977
+Converts
+140 health
+into (140 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(140 + Spirit) Health
+into (140 + Spirit) Mana for you. Spirit increases the amount converted.
+Life Tap
+· Rank 4
+1.60.1.69977
+Converts
+220 health
+into (220 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(220 + Spirit) Health
+into (220 + Spirit) Mana for you. Spirit increases the amount converted.
+Life Tap
+· Rank 5
+1.60.1.69977
+Converts
+310 health
+into (310 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(310 + Spirit) Health
+into (310 + Spirit) Mana for you. Spirit increases the amount converted.
+Life Tap
+· Rank 6
+1.60.1.69977
+Converts
+424 health
+into (424 + Spirit) Mana for you. Spirit increases the amount
+of Mana
+converted.
+Mana gained is increased by your Spirit.
+1.60.1.70009
+Converts
+(424 + Spirit) Health
+into (424 + Spirit) Mana for you. Spirit increases the amount converted.
+Full Warlock spellbook →
+Mage
+3changes
+Retuned
+Wake of Fire
+· Fire · rank 1
+1.60.1.69977
+Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+20
+sec by 25%.
+1.60.1.70009
+Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+30
+sec by 25%.
+Wake of Fire
+· Fire · rank 2
+1.60.1.69977
+Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+20
+sec by 50%.
+1.60.1.70009
+Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+30
+sec by 50%.
+Hot Streak
+· Fire · rank 1
+1.60.1.69977
+Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for
+15
+sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.
+1.60.1.70009
+Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for
+20
+sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.
+Hunter
+1change
+Retuned
+Strider Kick
+· Survival · rank 1
+1.60.1.69977
+A powerful kick that deals 100% melee weapon
+damage.
+1.60.1.70009
+A powerful kick that deals 100% melee weapon
+damage and increases movement speed by 30% for 3 sec.
+Sources: Forever client build 1.60.1.70009; Forever client build 1.60.1.69977.
+1.60.1.69977
+Read from 23 September 2026
+Nothing the site reads changed.
+88 of the 90 tables the two builds share are byte-identical, including every talent, spell, profession, reputation, instance and PvP table. The two that differ change nothing shown here: Map swapped a column this site has never read (RaidOffset out, WindSettingsID in, a change that actually arrived in 1.60.1.69913, a build published in between and never adopted), and PlayerCondition had two columns zeroed across all 1,818 rows, both of which held the same value in every row beforehand. All 469 talents are unchanged — none added, none removed, none retuned — and so are the 449 spellbook abilities. Every saved build link opens exactly as it did.
+Checked twice and independently: every raw table hash-compared between the builds, and the talent pipeline re-run against both builds and diffed field by field across all 469 talents.
+1.60.1.69893
+Read from 18 September 2026
+The first build the trees were read from.
+Talents and spellbooks stopped coming from BlizzCon footage and started coming from the client's own trait tables. The BlizzCon transcription is kept frozen as the baseline the changes on this page are measured against.
+536 changes since BlizzCon
+Everything the beta client has done to the talents and spellbooks the site first transcribed from the
+BlizzCon 2026 build, all builds taken together. Spellbook numbers are not compared here: the BlizzCon
+tooltips were read off a geared demo character, so only arrivals and departures are stated.
+Warlock
+77changes
+New in beta
+Wrack
+Affliction · 30 points
+Tears the target apart from within, dealing 36 Shadow damage every 1 sec and increasing the damage they take from your other Shadow damage over time effects by 10%. Lasts 6 sec.
+Retuned
+Suppression
+· Affliction · rank 1
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 1% and reduces all threat you generate by 4%.
+Beta
+Improves
+your chance to hit by 1% and reduces all threat you generate by 4%.
+Suppression
+· Affliction · rank 2
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 2% and reduces all threat you generate by 8%.
+Beta
+Improves
+your chance to hit by 2% and reduces all threat you generate by 8%.
+Suppression
+· Affliction · rank 3
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 3% and reduces all threat you generate by 12%.
+Beta
+Improves
+your chance to hit by 3% and reduces all threat you generate by 12%.
+Suppression
+· Affliction · rank 4
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 4% and reduces all threat you generate by 16%.
+Beta
+Improves
+your chance to hit by 4% and reduces all threat you generate by 16%.
+Suppression
+· Affliction · rank 5
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 5% and reduces all threat you generate by 20%.
+Beta
+Improves
+your chance to hit by 5% and reduces all threat you generate by 20%.
+Soul Harvesting
+· Affliction · rank 2
+BlizzCon
+You gain Soul Harvest for
+20
+sec if a victim is killed while afflicted with your Drain Soul. Soul Harvest allows your Mana to regenerate at 100% of normal speed while you are casting spells, and grants a 100% increase to your Mana regeneration.
+Beta
+You gain Soul Harvest for
+10
+sec if a victim is killed while afflicted with your Drain Soul. Soul Harvest allows your Mana to regenerate at 100% of normal speed while you are casting spells, and grants a 100% increase to your Mana regeneration.
+Improved Drains
+· Affliction · rank 1
+BlizzCon
+Increases
+the damage done or
+health drained by your Drain
+Life and
+Drain
+Soul
+spells by
+2% per each of your other Affliction effects active on the target, up to a maximum increase of 6%. When your Drain Soul damages targets below 20% health, this bonus is tripled. Additionally, your Drain Life range is extended by 3 yards.
+Beta
+Increases health drained
+or damage done
+by your Drain
+Life,
+Drain
+Soul, and Wrack
+spells by
+7%.
+Improved Drains
+· Affliction · rank 2
+BlizzCon
+Increases
+the damage done or
+health drained by your Drain
+Life and
+Drain
+Soul
+spells by
+4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%. When your Drain Soul damages targets below 40% health, this bonus is tripled. Additionally, your Drain Life range is extended by 6 yards.
+Beta
+Increases health drained
+or damage done
+by your Drain
+Life,
+Drain
+Soul, and Wrack
+spells by
+13%.
+Improved Drains
+· Affliction · rank 3
+BlizzCon
+Increases
+the damage done or
+health drained by your Drain
+Life and
+Drain
+Soul
+spells by
+6% per each of your other Affliction effects active on the target, up to a maximum increase of 18%. When your Drain Soul damages targets below 60% health, this bonus is tripled. Additionally, your Drain Life range is extended by 9 yards.
+Beta
+Increases health drained
+or damage done
+by your Drain
+Life,
+Drain
+Soul, and Wrack
+spells by
+20%.
+Fel Concentration
+· Affliction · rank 1
+BlizzCon
+Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana,
+or
+Drain
+Soul
+spells.
+Beta
+Gives you a 23% chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain
+Soul, or Wrack
+spells.
+Fel Concentration
+· Affliction · rank 2
+BlizzCon
+Gives you a
+46%
+chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana,
+or
+Drain
+Soul
+spells.
+Beta
+Gives you a
+47%
+chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain
+Soul, or Wrack
+spells.
+Fel Concentration
+· Affliction · rank 3
+BlizzCon
+Gives you a
+69%
+chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana,
+or
+Drain
+Soul
+spells.
+Beta
+Gives you a
+70%
+chance to avoid interruption caused by damage while channeling or casting your Drain Life, Drain Mana, Drain
+Soul, or Wrack
+spells.
+Pandemic
+· Affliction · rank 1
+BlizzCon
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Drain Hope
+spells by 33%.
+Beta
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Wrack
+spells by 33%.
+Pandemic
+· Affliction · rank 2
+BlizzCon
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Drain Hope
+spells by 67%.
+Beta
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Wrack
+spells by 67%.
+Pandemic
+· Affliction · rank 3
+BlizzCon
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Drain Hope
+spells by 100%.
+Beta
+Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and
+Wrack
+spells by 100%.
+Nightfall
+· Affliction · rank 1
+BlizzCon
+Gives your Corruption, Drain Soul,
+and
+Drain
+Life
+spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.
+Beta
+Gives your Corruption, Drain Soul, Drain
+Life, and Wrack
+spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%.
+Nightfall
+· Affliction · rank 2
+BlizzCon
+Gives your Corruption, Drain Soul,
+and
+Drain
+Life
+spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by
+200%.
+Beta
+Gives your Corruption, Drain Soul, Drain
+Life, and Wrack
+spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by
+100%.
+Siphon Life
+· Affliction · rank 1
+BlizzCon
+Transfers
+15
+health from the target to the caster every 3 sec. Lasts 30 sec.
+Beta
+Transfers
+11
+health from the target to the caster every 3 sec. Lasts 30 sec.
+Soul Siphon
+· Affliction · rank 1
+BlizzCon
+Increases the
+rate at which your Drain Life and Drain Soul deal
+damage by
+17%, but reduces
+your
+healing from
+Drain
+Life
+by
+10%.
+Beta
+Increases the damage
+done or health drained
+by your Drain
+Life, Drain Soul, and Wrack spells
+by
+4% per each of your other Affliction effects active on the target, up to a maximum increase of 12%.
+Soul Siphon
+· Affliction · rank 2
+BlizzCon
+Increases the
+rate at which your Drain Life and Drain Soul deal
+damage by
+34%, but reduces
+your
+healing from
+Drain
+Life
+by
+20%.
+Beta
+Increases the damage
+done or health drained
+by your Drain
+Life, Drain Soul, and Wrack spells
+by
+8% per each of your other Affliction effects active on the target, up to a maximum increase of 24%.
+Soul Siphon
+· Affliction · rank 3
+BlizzCon
+Increases the
+rate at which your Drain Life and Drain Soul deal
+damage by
+51%, but reduces
+your
+healing from
+Drain
+Life
+by
+30%.
+Beta
+Increases the damage
+done or health drained
+by your Drain
+Life, Drain Soul, and Wrack spells
+by
+12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%.
+Improved Voidwalker
+· Demonology · rank 1
+BlizzCon
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice
+and Suffering spells by 10%.
+Beta
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice,
+and Suffering spells by 10%.
+Improved Voidwalker
+· Demonology · rank 2
+BlizzCon
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice
+and Suffering spells by 20%.
+Beta
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice,
+and Suffering spells by 20%.
+Improved Voidwalker
+· Demonology · rank 3
+BlizzCon
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice
+and Suffering spells by 30%.
+Beta
+Increases the effectiveness of your Voidwalker's Torment, Consume Shadows,
+Sacrifice,
+and Suffering spells by 30%.
+Demonic Energies
+· Demonology · rank 2
+BlizzCon
+You heal your pet for
+16%
+of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain.
+Beta
+You heal your pet for
+15%
+of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain.
+Decimation
+· Demonology · rank 2
+BlizzCon
+Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below
+70%
+health, they deal 6% increased damage, and for the next
+20
+sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards.
+Beta
+Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below
+35%
+health, they deal 6% increased damage, and for the next
+10
+sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards.
+Demonic Brand
+· Demonology · rank 1
+BlizzCon
+Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target generate high threat and deal
+39
+to
+42
+Fire or Shadow damage based on the pet.
+Beta
+Your Searing Pain generates 17% less threat and brands the target for 10 sec. Your pet's next 2 attacks against the target generate high threat and deal
+$<minDam>
+to
+$<maxDam>
+Fire or Shadow damage based on the pet.
+Demonic Brand
+· Demonology · rank 2
+BlizzCon
+Your Searing Pain generates
+34%
+less threat and brands the target for
+20
+sec. Your pet's next 4 attacks against the target generate high threat and deal
+78
+to
+84
+Fire or Shadow damage based on the pet.
+Beta
+Your Searing Pain generates
+33%
+less threat and brands the target for
+10
+sec. Your pet's next 4 attacks against the target generate high threat and deal
+$<minDam>
+to
+$<maxDam>
+Fire or Shadow damage based on the pet.
+Demonic Brand
+· Demonology · rank 3
+BlizzCon
+Your Searing Pain generates
+51%
+less threat and brands the target for
+30
+sec. Your pet's next 6 attacks against the target generate high threat and deal
+117
+to
+126
+Fire or Shadow damage based on the pet.
+Beta
+Your Searing Pain generates
+50%
+less threat and brands the target for
+10
+sec. Your pet's next 6 attacks against the target generate high threat and deal
+$<minDam>
+to
+$<maxDam>
+Fire or Shadow damage based on the pet.
+Demonic Knowledge
+· Demonology · rank 1
+BlizzCon
+Increases your spell damage and
+healing
+by up to 33% of your level while you have a summoned Demon pet active.
+Beta
+Increases your spell damage and
+your Demon pet's spell damage
+by up to 33% of your level while you have a summoned Demon pet active.
+Demonic Knowledge
+· Demonology · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your spell damage and your Demon pet's spell damage by up to 67% of your level while you have a summoned Demon pet active.
+Demonic Knowledge
+· Demonology · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active.
+Improved Shadow Bolt
+· Destruction · rank 2
+BlizzCon
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 8% for
+24
+sec.
+Beta
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 8% for
+12
+sec.
+Improved Shadow Bolt
+· Destruction · rank 3
+BlizzCon
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 12% for
+36
+sec.
+Beta
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 12% for
+12
+sec.
+Improved Shadow Bolt
+· Destruction · rank 4
+BlizzCon
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 16% for
+48
+sec.
+Beta
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 16% for
+12
+sec.
+Improved Shadow Bolt
+· Destruction · rank 5
+BlizzCon
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for
+60
+sec.
+Beta
+Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for
+12
+sec.
+Cataclysm
+· Destruction · rank 3
+BlizzCon
+Reduces the Mana cost of your Destruction spells by
+9%.
+Beta
+Reduces the Mana cost of your Destruction spells by
+10%.
+Aftermath
+· Destruction · rank 2
+BlizzCon
+Increases the initial damage of your Immolate spell by 20% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by
+100%
+for
+10
+sec.
+Beta
+Increases the initial damage of your Immolate spell by 20% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by
+50%
+for
+5
+sec.
+Aftermath
+· Destruction · rank 3
+BlizzCon
+Increases the initial damage of your Immolate spell by 30% and your Conflagrate spell has a 60% chance to Daze the target, reducing the target's movement speed by
+150%
+for
+15
+sec.
+Beta
+Increases the initial damage of your Immolate spell by 30% and your Conflagrate spell has a 60% chance to Daze the target, reducing the target's movement speed by
+50%
+for
+5
+sec.
+Aftermath
+· Destruction · rank 4
+BlizzCon
+Increases the initial damage of your Immolate spell by 40% and your Conflagrate spell has a 80% chance to Daze the target, reducing the target's movement speed by
+200%
+for
+20
+sec.
+Beta
+Increases the initial damage of your Immolate spell by 40% and your Conflagrate spell has a 80% chance to Daze the target, reducing the target's movement speed by
+50%
+for
+5
+sec.
+Aftermath
+· Destruction · rank 5
+BlizzCon
+Increases the initial damage of your Immolate spell by 50% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by
+250%
+for
+25
+sec.
+Beta
+Increases the initial damage of your Immolate spell by 50% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by
+50%
+for
+5
+sec.
+Shadowburn
+· Destruction · rank 1
+BlizzCon
+Instantly blasts the target for
+102
+to
+111
+Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.
+Beta
+Instantly blasts the target for
+65
+to
+74
+Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard.
+Intensity
+· Destruction · rank 2
+BlizzCon
+Gives you a
+46%
+chance to resist interruption caused by damage while casting or channeling any Destruction spell.
+Beta
+Gives you a
+47%
+chance to resist interruption caused by damage while casting or channeling any Destruction spell.
+Intensity
+· Destruction · rank 3
+BlizzCon
+Gives you a
+69%
+chance to resist interruption caused by damage while casting or channeling any Destruction spell.
+Beta
+Gives you a
+70%
+chance to resist interruption caused by damage while casting or channeling any Destruction spell.
+Agonizing Flames
+· Destruction · rank 2
+BlizzCon
+Increases the critical strike chance of your Searing Pain spell by
+6%
+and the damage done by all your Destruction spells by
+6%.
+Beta
+Increases the critical strike chance of your Searing Pain spell by
+7%
+and the damage done by all your Destruction spells by
+7%.
+Agonizing Flames
+· Destruction · rank 3
+BlizzCon
+Increases the critical strike chance of your Searing Pain spell by
+9%
+and the damage done by all your Destruction spells by
+9%.
+Beta
+Increases the critical strike chance of your Searing Pain spell by
+10%
+and the damage done by all your Destruction spells by
+10%.
+Conflagrate
+· Destruction · rank 1
+BlizzCon
+Ignites a target that is already afflicted by your Immolate spell, dealing
+109
+to
+132
+Fire damage and consuming your Immolate effect.
+Beta
+Ignites a target that is already afflicted by your Immolate spell, dealing
+87
+to
+112
+Fire damage and consuming your Immolate effect.
+Pyroclasm
+· Destruction · rank 2
+BlizzCon
+Gives your Soul Fire spell a 26% chance to Stun the target for
+6
+sec, and your Rain of Fire and Hellfire spells a 26% chance over their duration to Stun targets they damage for
+6
+sec.
+Beta
+Gives your Soul Fire spell a 26% chance to Stun the target for
+3
+sec, and your Rain of Fire and Hellfire spells a 26% chance over their duration to Stun targets they damage for
+3
+sec.
+Incinerate
+· Destruction · rank 1
+BlizzCon
+Deals
+125
+to
+140
+Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate.
+Beta
+Deals
+99
+to
+115
+Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate.
+Gone
+Drain Hope
+Affliction · 30 points
+Spellbook
+New: Portal of Summoning (level 60)
+Begins a ritual that creates a summoning portal. The summoning portal can be used by 2 party or raid members to summon a targeted party or raid member. The ritual portal requires the caster and 2 additional party or raid members to complete. In order to participate, all players must be out of combat and right-click the portal and not move until the ritual is complete.
+New: Bane of Doom (level 60)
+Afflicts the target with impending doom, causing 1742 Shadow damage after 1 min. If the target dies from this damage, there is a chance that a Doomguard will be summoned. Cannot be cast on players. Only one Bane per Warlock can be active on any one target.
+New: Incinerate (level 50)
+Deals 201 to 233 Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate.
+New: Explorer Imp (level 10)
+Summon your Explorer Imp. Though it cannot fight, it can travel through portals to explore other worlds and bring back treasures.
+Gone: Create Healthstone (Minor)
+Gone: Create Soulstone (Minor)
+Gone: Create Healthstone (Lesser)
+Gone: Detect Lesser Invisibility
+Gone: Create Firestone (Lesser)
+Gone: Create Soulstone (Lesser)
+Gone: Summon Felsteed
+Gone: Create Firestone (Greater)
+Gone: Create Healthstone (Greater)
+Gone: Create Spellstone (Greater)
+Gone: Create Soulstone (Greater)
+Gone: Detect Greater Invisibility
+Gone: Create Firestone (Major)
+Gone: Create Healthstone (Major)
+Gone: Create Soulstone (Major)
+Gone: Create Spellstone (Major)
+Gone: Summon Dreadsteed
+Gone: Curse of Agony
+Gone: Curse of Idiocy
+Gone: Curse of Shadow
+Gone: Dark Pact
+Gone: Curse of Doom
+Full Warlock spellbook →
+Mage
+71changes
+Retuned
+Arcane Focus
+· Arcane · rank 1
+BlizzCon
+Increases
+your chance to hit with
+your
+Arcane spells by 1%.
+Beta
+Improves
+your chance to hit with Arcane spells by 1%.
+Arcane Focus
+· Arcane · rank 2
+BlizzCon
+Increases
+your chance to hit with
+your
+Arcane spells by 2%.
+Beta
+Improves
+your chance to hit with Arcane spells by 2%.
+Arcane Focus
+· Arcane · rank 3
+BlizzCon
+Increases
+your chance to hit with
+your
+Arcane spells by 3%.
+Beta
+Improves
+your chance to hit with Arcane spells by 3%.
+Arcane Focus
+· Arcane · rank 4
+BlizzCon
+Increases
+your chance to hit with
+your
+Arcane spells by 4%.
+Beta
+Improves
+your chance to hit with Arcane spells by 4%.
+Arcane Focus
+· Arcane · rank 5
+BlizzCon
+Increases
+your chance to hit with
+your
+Arcane spells by 5%.
+Beta
+Improves
+your chance to hit with Arcane spells by 5%.
+Improved Channeling
+· Arcane · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast.
+Improved Channeling
+· Arcane · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast.
+Improved Channeling
+· Arcane · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast.
+Improved Channeling
+· Arcane · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast.
+Arcane Resilience
+· Arcane · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Armor by an amount equal to 50% of your Intellect.
+Arcane Geometry
+· Arcane · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the range of your Arcane spells by 6 yards.
+Arcane Blast
+· Arcane · rank 1
+BlizzCon
+Blasts the target with energy, dealing
+95
+to
+104
+Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.
+Beta
+Blasts the target with energy, dealing
+57
+to
+66
+Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.
+Arcane Shielding
+· Arcane · rank 2
+BlizzCon
+Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by
+34%
+and increases the resistances granted by your Mage Armor spell by 50%.
+Beta
+Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by
+33%
+and increases the resistances granted by your Mage Armor spell by 50%.
+Improved Counterspell
+· Arcane · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Your Counterspell also Silences the target for 4 sec.
+Arcane Meditation
+· Arcane · rank 2
+BlizzCon
+Allows
+34%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+33%
+of your Mana regeneration to continue while casting.
+Arcane Meditation
+· Arcane · rank 3
+BlizzCon
+Allows
+51%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+50%
+of your Mana regeneration to continue while casting.
+Missile Barrage
+· Arcane · rank 1
+BlizzCon
+Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles
+will
+fire every 0.5 sec.
+Beta
+Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec.
+Arcane Instability
+· Arcane · rank 1
+BlizzCon
+Increases the damage done by
+all
+your spells by 1% and your critical strike chance
+with all attacks
+by 1%.
+Beta
+Increases the damage done by your spells by 1% and your critical strike chance by 1%.
+Arcane Instability
+· Arcane · rank 2
+BlizzCon
+Increases the damage done by
+all
+your spells by 2% and your critical strike chance
+with all attacks
+by 2%.
+Beta
+Increases the damage done by your spells by 2% and your critical strike chance by 2%.
+Arcane Instability
+· Arcane · rank 3
+BlizzCon
+Increases the damage done by
+all
+your spells by 3% and your critical strike chance
+with all attacks
+by 3%.
+Beta
+Increases the damage done by your spells by 3% and your critical strike chance by 3%.
+Wake of Fire
+· Fire · rank 1
+BlizzCon
+Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+20
+sec by 25%.
+Beta
+Reduces the cooldown of your Fire Blast spell by 1 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+30
+sec by 25%.
+Wake of Fire
+· Fire · rank 2
+BlizzCon
+Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+20
+sec by 50%.
+Beta
+Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within
+30
+sec by 50%.
+Incineration
+· Fire · rank 1
+BlizzCon
+Increases the critical strike chance of your Fire
+Blast
+and Scorch spells by 2%.
+Beta
+Increases the critical strike chance of your Fire
+Blast, Ice Lance, Arcane Blast,
+and Scorch spells by 2%.
+Incineration
+· Fire · rank 2
+BlizzCon
+Increases the critical strike chance of your Fire
+Blast
+and Scorch spells by 4%.
+Beta
+Increases the critical strike chance of your Fire
+Blast, Ice Lance, Arcane Blast,
+and Scorch spells by 4%.
+Incineration
+· Fire · rank 3
+BlizzCon
+Increases the critical strike chance of your Fire
+Blast
+and Scorch spells by
+4%.
+Beta
+Increases the critical strike chance of your Fire
+Blast, Ice Lance, Arcane Blast,
+and Scorch spells by
+6%.
+Improved Fireball
+· Fire · rank 1
+BlizzCon
+Reduces the casting time of your Fireball
+spell
+by 0.1 sec.
+Beta
+Reduces the casting time of your Fireball
+and Frostfire Bolt spells
+by 0.1 sec.
+Improved Fireball
+· Fire · rank 2
+BlizzCon
+Reduces the casting time of your Fireball
+spell
+by 0.2 sec.
+Beta
+Reduces the casting time of your Fireball
+and Frostfire Bolt spells
+by 0.2 sec.
+Improved Fireball
+· Fire · rank 3
+BlizzCon
+Reduces the casting time of your Fireball
+spell
+by 0.3 sec.
+Beta
+Reduces the casting time of your Fireball
+and Frostfire Bolt spells
+by 0.3 sec.
+Improved Fireball
+· Fire · rank 4
+BlizzCon
+Reduces the casting time of your Fireball
+spell
+by 0.4 sec.
+Beta
+Reduces the casting time of your Fireball
+and Frostfire Bolt spells
+by 0.4 sec.
+Improved Fireball
+· Fire · rank 5
+BlizzCon
+Reduces the casting time of your Fireball
+spell
+by 0.5 sec.
+Beta
+Reduces the casting time of your Fireball
+and Frostfire Bolt spells
+by 0.5 sec.
+Impact
+· Fire · rank 1
+BlizzCon
+Gives your Fire spells a
+2%
+chance to stun the target for 2 sec.
+Beta
+Gives your Fire spells a
+3%
+chance to stun the target for 2 sec.
+Impact
+· Fire · rank 2
+BlizzCon
+Gives your Fire spells a
+4%
+chance to stun the target for 2 sec.
+Beta
+Gives your Fire spells a
+7%
+chance to stun the target for 2 sec.
+Impact
+· Fire · rank 3
+BlizzCon
+Gives your Fire spells a
+6%
+chance to stun the target for 2 sec.
+Beta
+Gives your Fire spells a
+10%
+chance to stun the target for 2 sec.
+Burning Soul
+· Fire · rank 2
+BlizzCon
+Gives your Fire spells a
+70%
+chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by
+30%.
+Beta
+Gives your Fire spells a
+47%
+chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by
+20%.
+Pyroblast
+· Fire · rank 1
+BlizzCon
+Hurls an immense fiery boulder that causes
+155
+to
+185
+Fire damage and an additional
+76
+Fire damage over 12 sec.
+Beta
+Hurls an immense fiery boulder that causes
+100
+to
+132
+Fire damage and an additional
+44
+Fire damage over 12 sec.
+Improved Scorch
+· Fire · rank 2
+BlizzCon
+Your Scorch
+spells have
+a
+66%
+chance to cause your target to be vulnerable to Fire damage. This vulnerability increases
+the
+Fire damage
+dealt
+to your target by 3% and lasts 30
+sec. Stacks
+up to 5 times.
+Beta
+Your Scorch
+spell has
+a
+67%
+chance to cause your target to be vulnerable to Fire damage. This vulnerability increases
+all
+Fire damage
+you deal
+to your target by 3% and lasts 30
+sec, stacking
+up to 5 times.
+Improved Scorch
+· Fire · rank 3
+BlizzCon
+Your Scorch
+spells have
+a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases
+the
+Fire damage
+dealt
+to your target by 3% and lasts 30
+sec. Stacks
+up to 5 times.
+Beta
+Your Scorch
+spell has
+a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases
+all
+Fire damage
+you deal
+to your target by 3% and lasts 30
+sec, stacking
+up to 5 times.
+Hot Streak
+· Fire · rank 1
+BlizzCon
+Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for
+15
+sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.
+Beta
+Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for
+20
+sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times.
+Master of Elements
+· Fire · rank 2
+BlizzCon
+Your Fire and Frost
+spell criticals
+will refund 20% of their base mana cost.
+Beta
+Your Fire and Frost
+critical strikes
+will refund 20% of their base mana cost.
+Master of Elements
+· Fire · rank 3
+BlizzCon
+Your Fire and Frost
+spell criticals
+will refund 30% of their base mana cost.
+Beta
+Your Fire and Frost
+critical strikes
+will refund 30% of their base mana cost.
+Blast Wave
+· Fire · rank 1
+BlizzCon
+A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for
+160
+to
+191
+Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.
+Beta
+A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for
+153
+to
+185
+Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.
+Frost Warding
+· Frost · rank 2
+BlizzCon
+Increases the
+armor
+and
+resistances
+given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active.
+Beta
+Increases the
+Armor
+and
+resistance
+given by your Frost Armor and Ice Armor spells by 30%. In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active.
+Elemental Precision
+· Frost · rank 1
+BlizzCon
+Increases
+your chance to hit with Frost and Fire spells by 1%.
+Beta
+Improves
+your chance to hit with Frost and Fire spells by 1%.
+Elemental Precision
+· Frost · rank 2
+BlizzCon
+Increases
+your chance to hit with Frost and Fire spells by 2%.
+Beta
+Improves
+your chance to hit with Frost and Fire spells by 2%.
+Elemental Precision
+· Frost · rank 3
+BlizzCon
+Increases
+your chance to hit with Frost and Fire spells by 3%.
+Beta
+Improves
+your chance to hit with Frost and Fire spells by 3%.
+Elemental Precision
+· Frost · rank 4
+BlizzCon
+Increases
+your chance to hit with Frost and Fire spells by 4%.
+Beta
+Improves
+your chance to hit with Frost and Fire spells by 4%.
+Elemental Precision
+· Frost · rank 5
+BlizzCon
+Increases
+your chance to hit with Frost and Fire spells by 5%.
+Beta
+Improves
+your chance to hit with Frost and Fire spells by 5%.
+Permafrost
+· Frost · rank 2
+BlizzCon
+Increases the duration of your Chill effects by 22% and reduces the target's speed by an additional
+6%.
+Beta
+Increases the duration of your Chill effects by 22% and reduces the target's speed by an additional
+7%.
+Permafrost
+· Frost · rank 3
+BlizzCon
+Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional
+9%.
+Beta
+Increases the duration of your Chill effects by 33% and reduces the target's speed by an additional
+10%.
+Frostbite
+· Frost · rank 1
+BlizzCon
+Gives your Chill effects a 5% chance to
+freeze
+the target for 5 sec.
+Beta
+Gives your Chill effects a 5% chance to
+Freeze
+the target for 5 sec.
+Frostbite
+· Frost · rank 2
+BlizzCon
+Gives your Chill effects a 10% chance to
+freeze
+the target for 5 sec.
+Beta
+Gives your Chill effects a 10% chance to
+Freeze
+the target for 5 sec.
+Frostbite
+· Frost · rank 3
+BlizzCon
+Gives your Chill effects a 15% chance to
+freeze
+the target for 5 sec.
+Beta
+Gives your Chill effects a 15% chance to
+Freeze
+the target for 5 sec.
+Improved Blizzard
+· Frost · rank 2
+BlizzCon
+Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by
+30%
+for 1.5 sec.
+Beta
+Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by
+25%
+for 1.5 sec.
+Improved Blizzard
+· Frost · rank 3
+BlizzCon
+Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by
+45%
+for 1.5 sec.
+Beta
+Adds a Chill effect to your Blizzard spell. This effect lowers the target's movement speed by
+40%
+for 1.5 sec.
+Ice Block
+· Frost · rank 1
+BlizzCon
+You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack,
+move
+or cast spells.
+Beta
+You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack,
+move,
+or cast spells.
+Shatter
+· Frost · rank 1
+BlizzCon
+Increases the critical strike chance of all your spells against
+frozen
+targets by
+10%.
+Beta
+Increases the critical strike chance of all your spells against
+Frozen
+targets by
+17%.
+Shatter
+· Frost · rank 2
+BlizzCon
+Increases the critical strike chance of all your spells against
+frozen
+targets by
+20%.
+Beta
+Increases the critical strike chance of all your spells against
+Frozen
+targets by
+33%.
+Shatter
+· Frost · rank 3
+BlizzCon
+Increases the critical strike chance of all your spells against
+frozen
+targets by
+30%.
+Beta
+Increases the critical strike chance of all your spells against
+Frozen
+targets by
+50%.
+Improved Cone of Cold
+· Frost · rank 2
+BlizzCon
+Increases the damage dealt by your Cone of Cold spell by
+25%.
+Beta
+Increases the damage dealt by your Cone of Cold spell by
+23%.
+Fingers of Frost
+· Frost · rank 2
+BlizzCon
+Gives your Chill effects a
+30%
+chance to grant you the Fingers of Frost effect, which treats your next
+1 spell
+cast as if the target were Frozen. Lasts 15 sec.
+Beta
+Gives your Chill effects a
+15%
+chance to grant you the Fingers of Frost effect, which treats your next
+2 spells
+cast as if the target were Frozen. Lasts 15 sec.
+Winter's Chill
+· Frost · rank 2
+BlizzCon
+Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance
+a Frost spell
+will critically hit the target by 2% for 15 sec. Stacks up to
+5
+times.
+Beta
+Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance
+your Ice Lance and Frostbolt spells
+will critically hit the target by 2% for 15 sec. Stacks up to
+2
+times.
+Winter's Chill
+· Frost · rank 3
+BlizzCon
+Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance
+a Frost spell
+will critically hit the target by 2% for 15 sec. Stacks up to
+5
+times.
+Beta
+Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance
+your Ice Lance and Frostbolt spells
+will critically hit the target by 2% for 15 sec. Stacks up to
+3
+times.
+Winter's Chill
+· Frost · rank 4
+BlizzCon
+Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance
+a Frost spell
+will critically hit the target by 2% for 15 sec. Stacks up to
+5
+times.
+Beta
+Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance
+your Ice Lance and Frostbolt spells
+will critically hit the target by 2% for 15 sec. Stacks up to
+4
+times.
+Winter's Chill
+· Frost · rank 5
+BlizzCon
+Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance
+a Frost spell
+will critically hit the target by 2% for 15 sec. Stacks up to 5 times.
+Beta
+Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance
+your Ice Lance and Frostbolt spells
+will critically hit the target by 2% for 15 sec. Stacks up to 5 times.
+Ice Barrier
+· Frost · rank 1
+BlizzCon
+Instantly shields you, absorbing
+431
+damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
+Beta
+Instantly shields you, absorbing
+448
+damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.
+Spellbook
+New: Ice Lance (level 28)
+Deals 136 to 161 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.
+New: Frostfire Bolt (level 40)
+Launches a bolt of frostfire at the enemy, causing 270 to 314 Frostfire damage, slowing movement speed by 40% and causing an additional 57 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.
+New: Arcane Blast (level 30)
+Blasts the target with energy, dealing 364 to 424 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.
+New: Teleport: Dalaran (level 50)
+Teleports the caster to Dalaran.
+New: Study (level 6)
+Perform spell research, resulting in a bundle of scrolls. Requires a suitable library.
+Gone: Detect Magic
+Full Mage spellbook →
+Druid
+70changes
+New in beta
+Primal Bite
+Feral Combat · 15 points
+Bite the target for 100% normal damage plus 26.
+Blood Frenzy
+Feral Combat · 15 points
+Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point.
+Retuned
+Moonglow
+· Balance · rank 1
+BlizzCon
+Reduces the Mana cost of your spells by
+3%.
+Beta
+Reduces the Mana cost of your
+damaging
+spells by
+8%.
+Moonglow
+· Balance · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Reduces the Mana cost of your damaging spells by 17%.
+Moonglow
+· Balance · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Reduces the Mana cost of your damaging spells by 25%.
+Nature's Reach
+· Balance · rank 1
+BlizzCon
+Increases the range of your offensive Balance spells by 10% and
+increases the chance for all
+your
+spells and attacks
+to hit by 2%.
+Beta
+Increases the range of your offensive Balance spells by 10% and
+improves
+your
+chance
+to hit by 2%.
+Nature's Reach
+· Balance · rank 2
+BlizzCon
+Increases the range of your offensive Balance spells by 20% and
+increases the chance for all
+your
+spells and attacks
+to hit by 4%.
+Beta
+Increases the range of your offensive Balance spells by 20% and
+improves
+your
+chance
+to hit by 4%.
+Insect Swarm
+· Balance · rank 1
+BlizzCon
+The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing
+55
+Nature damage over 12 sec.
+Beta
+The enemy target is swarmed by insects, decreasing their chance to hit
+with attacks
+by 2% and causing
+48
+Nature damage over 12 sec.
+Vengeance
+· Balance · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the critical strike damage bonus of your Arcane and Nature spells by 40%.
+Vengeance
+· Balance · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases the critical strike damage bonus of your Arcane and Nature spells by 60%.
+Vengeance
+· Balance · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Increases the critical strike damage bonus of your Arcane and Nature spells by 80%.
+Vengeance
+· Balance · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Increases the critical strike damage bonus of your Arcane and Nature spells by 100%.
+Eclipse
+· Balance · rank 2
+BlizzCon
+Your Wrath spell reduces the cast time of your next 2 Starfire spells by
+0.34
+sec. Stores up to 4 charges. Lasts 15 sec.
+Beta
+Your Wrath spell reduces the cast time of your next 2 Starfire spells by
+0.33
+sec. Stores up to 4 charges. Lasts 15 sec.
+Eclipse
+· Balance · rank 3
+BlizzCon
+Your Wrath spell reduces the cast time of your next 2 Starfire spells by
+0.50
+sec. Stores up to 4 charges. Lasts 15 sec.
+Beta
+Your Wrath spell reduces the cast time of your next 2 Starfire spells by
+0.5
+sec. Stores up to 4 charges. Lasts 15 sec.
+Moonfury
+· Balance · rank 1
+BlizzCon
+Increases the damage done by your Arcane and Nature spells by
+1%.
+Beta
+Increases the damage done by your Arcane and Nature spells by
+2%.
+Moonfury
+· Balance · rank 2
+BlizzCon
+Increases the damage done by your Arcane and Nature spells by
+2%.
+Beta
+Increases the damage done by your Arcane and Nature spells by
+4%.
+Moonfury
+· Balance · rank 3
+BlizzCon
+Increases the damage done by your Arcane and Nature spells by
+3%.
+Beta
+Increases the damage done by your Arcane and Nature spells by
+6%.
+Moonfury
+· Balance · rank 4
+BlizzCon
+Increases the damage done by your Arcane and Nature spells by
+4%.
+Beta
+Increases the damage done by your Arcane and Nature spells by
+8%.
+Moonfury
+· Balance · rank 5
+BlizzCon
+Increases the damage done by your Arcane and Nature spells by
+5%.
+Beta
+Increases the damage done by your Arcane and Nature spells by
+10%.
+Moonkin Form
+· Balance · rank 1
+BlizzCon
+Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by
+360%
+and all party members within 45 yards have their critical chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted. The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+Beta
+Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by
+360%, Omen of Clarity gains 100% increased chance to trigger,
+and all party members within 45 yards have their critical
+strike
+chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.
+The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+Ferocity
+· Feral Combat · rank 1
+BlizzCon
+Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy.
+Beta
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 1 Rage or Energy.
+Ferocity
+· Feral Combat · rank 2
+BlizzCon
+Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 2 Rage or Energy.
+Beta
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 2 Rage or Energy.
+Ferocity
+· Feral Combat · rank 3
+BlizzCon
+Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 3 Rage or Energy.
+Beta
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 3 Rage or Energy.
+Ferocity
+· Feral Combat · rank 4
+BlizzCon
+Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 4 Rage or Energy.
+Beta
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 4 Rage or Energy.
+Ferocity
+· Feral Combat · rank 5
+BlizzCon
+Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 5 Rage or Energy.
+Beta
+Reduces the cost of your Maul,
+Primal Bite,
+Swipe, Claw, and Rake abilities by 5 Rage or Energy.
+Feral Instinct
+· Feral Combat · rank 1
+BlizzCon
+Increases
+threat caused in Bear Form and Dire Bear Form
+by
+5%
+and reduces the chance enemies have to detect you while
+Prowling.
+Beta
+Increases
+damage done
+by
+your Swipe ability by 10%
+and reduces the chance enemies have to detect you while
+Prowling as if you were 1 level higher.
+Feral Instinct
+· Feral Combat · rank 2
+BlizzCon
+Increases
+threat caused in Bear Form and Dire Bear Form
+by
+10%
+and reduces the chance enemies have to detect you while
+Prowling.
+Beta
+Increases
+damage done
+by
+your Swipe ability by 20%
+and reduces the chance enemies have to detect you while
+Prowling as if you were 2 levels higher.
+Feral Instinct
+· Feral Combat · rank 3
+BlizzCon
+Increases
+threat caused in Bear Form and Dire Bear Form
+by
+15%
+and reduces the chance enemies have to detect you while
+Prowling.
+Beta
+Increases
+damage done
+by
+your Swipe ability by 30%
+and reduces the chance enemies have to detect you while
+Prowling as if you were 3 levels higher.
+Brutal Impact
+· Feral Combat · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the stun duration of your Bash and Pounce abilities by 1 sec and reduces the cooldown of Bash by 30 sec.
+Thick Hide
+· Feral Combat · rank 2
+BlizzCon
+Rank
+2
+values not yet captured
+from
+footage.
+Beta
+While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain
+2
+additional base Armor per level and another 1.33 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers
+from
+those forms.
+Thick Hide
+· Feral Combat · rank 3
+BlizzCon
+Rank
+3
+values not yet captured
+from
+footage.
+Beta
+While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain
+3
+additional base Armor per level and another 2 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers
+from
+those forms.
+Feral Charge
+· Feral Combat · rank 1
+BlizzCon
+Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.
+Feral Charge (Cat)
+Leap behind an
+enemy, Dazing them for 3 sec.
+Beta
+Requires Bear Form, Dire Bear Form.
+Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.
+Leap behind an
+enemy.
+Predatory Strikes
+· Feral Combat · rank 1
+BlizzCon
+Increases your melee
+attack power
+in
+Cat, Bear,
+and Dire Bear
+Forms
+by 50% of your level.
+Beta
+Increases your melee
+Attack Power
+in
+Cat Form, Bear Form,
+and Dire Bear
+Form
+by 50% of your level.
+Predatory Strikes
+· Feral Combat · rank 2
+BlizzCon
+Increases your melee
+attack power
+in
+Cat, Bear,
+and Dire Bear
+Forms
+by 100% of your level.
+Beta
+Increases your melee
+Attack Power
+in
+Cat Form, Bear Form,
+and Dire Bear
+Form
+by 100% of your level.
+Predatory Strikes
+· Feral Combat · rank 3
+BlizzCon
+Increases your melee
+attack power
+in
+Cat, Bear,
+and Dire Bear
+Forms
+by 150% of your level.
+Beta
+Increases your melee
+Attack Power
+in
+Cat Form, Bear Form,
+and Dire Bear
+Form
+by 150% of your level.
+Berserk
+· Feral Combat · rank 1
+BlizzCon
+Causes your
+Mangle
+ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.
+Beta
+Requires Cat Form, Bear Form, Dire Bear Form.
+Causes your
+Primal Bite
+ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec.
+Nature's Focus
+· Restoration · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Gives you a 28% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
+Nature's Focus
+· Restoration · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Gives you a 42% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
+Nature's Focus
+· Restoration · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Gives you a 56% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
+Nature's Focus
+· Restoration · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells.
+Furor
+· Restoration · rank 2
+BlizzCon
+Rank 2 values
+not
+yet captured from footage.
+Beta
+Gives you a 40% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 40% of the Energy you had when you were last in Cat Form, plus 4 Energy for each second you spent
+not
+in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 40 Energy.
+Furor
+· Restoration · rank 3
+BlizzCon
+Rank 3 values
+not
+yet captured from footage.
+Beta
+Gives you a 60% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 60% of the Energy you had when you were last in Cat Form, plus 6 Energy for each second you spent
+not
+in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 60 Energy.
+Furor
+· Restoration · rank 4
+BlizzCon
+Rank 4 values
+not
+yet captured from footage.
+Beta
+Gives you a 80% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 80% of the Energy you had when you were last in Cat Form, plus 8 Energy for each second you spent
+not
+in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 80 Energy.
+Naturalist
+· Restoration · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Reduces the cast time of your Healing Touch spell by 0.2 sec and increases all damage you deal by 2%.
+Naturalist
+· Restoration · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Reduces the cast time of your Healing Touch spell by 0.3 sec and increases all damage you deal by 3%.
+Naturalist
+· Restoration · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%.
+Naturalist
+· Restoration · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%.
+Subtlety
+· Restoration · rank 1
+BlizzCon
+Reduces the threat generated by your
+Healing
+spells by
+4%.
+Beta
+Reduces the threat generated by your
+Nature and Arcane
+spells by
+10%.
+Subtlety
+· Restoration · rank 2
+BlizzCon
+Reduces the threat generated by your
+Healing
+spells by
+8%.
+Beta
+Reduces the threat generated by your
+Nature and Arcane
+spells by
+20%.
+Subtlety
+· Restoration · rank 3
+BlizzCon
+Reduces the threat generated by your
+Healing
+spells by
+12%.
+Beta
+Reduces the threat generated by your
+Nature and Arcane
+spells by
+30%.
+Reflection
+· Restoration · rank 1
+BlizzCon
+Allows
+5%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+17%
+of your Mana regeneration to continue while casting.
+Reflection
+· Restoration · rank 2
+BlizzCon
+Allows
+10%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+33%
+of your Mana regeneration to continue while casting.
+Reflection
+· Restoration · rank 3
+BlizzCon
+Allows
+15%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+50%
+of your Mana regeneration to continue while casting.
+Gift of Nature
+· Restoration · rank 1
+BlizzCon
+Increases the effect of all healing spells by 2%.
+Beta
+Increases the effect of all
+your
+healing spells by 2%.
+Gift of Nature
+· Restoration · rank 2
+BlizzCon
+Increases the effect of all healing spells by 4%.
+Beta
+Increases the effect of all
+your
+healing spells by 4%.
+Gift of Nature
+· Restoration · rank 3
+BlizzCon
+Increases the effect of all healing spells by 6%.
+Beta
+Increases the effect of all
+your
+healing spells by 6%.
+Gift of Nature
+· Restoration · rank 4
+BlizzCon
+Increases the effect of all healing spells by 8%.
+Beta
+Increases the effect of all
+your
+healing spells by 8%.
+Gift of Nature
+· Restoration · rank 5
+BlizzCon
+Increases the effect of all healing spells by 10%.
+Beta
+Increases the effect of all
+your
+healing spells by 10%.
+Living Spirit
+· Restoration · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Spirit by 10%.
+Living Spirit
+· Restoration · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases your Spirit by 15%.
+Improved Tranquility
+· Restoration · rank 1
+BlizzCon
+Reduces threat caused by Tranquility by
+50%.
+Beta
+Reduces threat caused by Tranquility by
+50% and its cooldown by 30%.
+Improved Tranquility
+· Restoration · rank 2
+BlizzCon
+Reduces threat caused by Tranquility by
+100%.
+Beta
+Reduces threat caused by Tranquility by
+100% and its cooldown by 60%.
+Wild Growth
+· Restoration · rank 1
+BlizzCon
+Heals the target and their party for
+285
+over 7 sec. Party members must be within
+43
+yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+Beta
+Heals the target and their party for
+336
+over 7 sec. Party members must be within
+43.5
+yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+Gone
+Balance of Nature
+Balance · 10 points
+Mangle
+Feral Combat · 15 points
+Primal Fury
+Feral Combat · 15 points
+Spellbook
+New: Lacerate (level 42)
+Lacerates the enemy target, making them bleed for 75 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. Causes a high amount of threat. This effect stacks up to 5 times on the same target.
+New: Wild Growth (level 50)
+Heals the target and their party for 679 over 7 sec. Party members must be within 43.5 yards of target. The amount healed is applied quickly at first, and slows down as Wild Growth reaches its full duration.
+Gone: Faerie Fire (Feral)
+Gone: Omen of Clarity
+Full Druid spellbook →
+Paladin
+63changes
+Retuned
+Healing Light
+· Holy · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 8%.
+Healing Light
+· Holy · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%.
+Spiritual Focus
+· Holy · rank 1
+BlizzCon
+Gives your Flash of Light, Holy Light, and Light's Vigil spells a
+70%
+chance to not lose casting time when you take damage.
+Beta
+Gives your Flash of Light, Holy Light, and Light's Vigil spells a
+35%
+chance to not lose casting time when you take damage.
+Spiritual Focus
+· Holy · rank 2
+BlizzCon
+Gives your Flash of Light, Holy Light, and Light's Vigil spells a
+100%
+chance to not lose casting time when you take damage.
+Beta
+Gives your Flash of Light, Holy Light, and Light's Vigil spells a
+70%
+chance to not lose casting time when you take damage.
+Unyielding Faith
+· Holy · rank 1
+BlizzCon
+Increases your chance to resist
+Fear and Disorient effects by
+an additional 5%.
+Beta
+Reduces the duration of
+Fear and Disorient effects
+on you
+by
+15%.
+Unyielding Faith
+· Holy · rank 2
+BlizzCon
+Increases your chance to resist
+Fear and Disorient effects by
+an additional 10%.
+Beta
+Reduces the duration of
+Fear and Disorient effects
+on you
+by
+30%.
+Purifying Power
+· Holy · rank 2
+BlizzCon
+Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by
+34%.
+Beta
+Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by
+33%.
+Infusion of Light
+· Holy · rank 2
+BlizzCon
+Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by
+1.0
+sec.
+Beta
+Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by
+1
+sec.
+Divine Precision
+· Holy · rank 1
+BlizzCon
+Increases
+your chance to hit with Holy spells by 6%.
+Beta
+Improves
+your chance to hit with Holy spells by 6%.
+Divine Precision
+· Holy · rank 2
+BlizzCon
+Increases
+your chance to hit with Holy spells by 12%.
+Beta
+Improves
+your chance to hit with Holy spells by 12%.
+Divine Precision
+· Holy · rank 3
+BlizzCon
+Increases
+your chance to hit with Holy spells by 18%.
+Beta
+Improves
+your chance to hit with Holy spells by 18%.
+Holy Shock
+· Holy · rank 1
+BlizzCon
+Blasts the target with Holy energy, causing
+138
+to
+149
+Holy damage to an enemy, or
+119
+to
+128
+healing to an ally.
+Beta
+Blasts the target with Holy energy, causing
+129
+to
+139
+Holy damage to an enemy, or
+110
+to
+118
+healing to an ally.
+Holy Power
+· Holy · rank 1
+BlizzCon
+Increases the critical strike chance of your Holy Shock
+spell
+by 3%, and all other spells by 1%.
+Beta
+Increases the critical strike chance of your Holy Shock
+and Holy Strike spells
+by 3%, and all other spells by 1%.
+Holy Power
+· Holy · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the critical strike chance of your Holy Shock and Holy Strike spells by 6%, and all other spells by 2%.
+Holy Power
+· Holy · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases the critical strike chance of your Holy Shock and Holy Strike spells by 9%, and all other spells by 3%.
+Holy Power
+· Holy · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Increases the critical strike chance of your Holy Shock and Holy Strike spells by 12%, and all other spells by 4%.
+Holy Power
+· Holy · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Increases the critical strike chance of your Holy Shock and Holy Strike spells by 15%, and all other spells by 5%.
+Light's Vigil
+· Holy · rank 1
+BlizzCon
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes
+friendly targets to heal their party for 329 to 348, or
+enemy targets to suffer
+184
+to
+199
+Holy damage and refund 75% of Light's Vigil's Mana
+cost. You
+may only have
+1
+Light's Vigil active per
+Paladin, per
+party.
+Beta
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer
+175
+to
+189
+Holy damage and refund 75% of Light's Vigil's Mana
+cost, or allied targets to heal their party for 325 to 344. The Paladin
+may only have
+one
+Light's Vigil active per party.
+Redoubt
+· Protection · rank 2
+BlizzCon
+Damaging melee attacks against you have a
+20%
+chance to increase your chance to block by
+6%.
+Lasts 10 sec or 5 blocks.
+Beta
+Damaging melee attacks against you have a
+10%
+chance to increase your chance to block by
+12%.
+Lasts 10 sec or 5 blocks.
+Redoubt
+· Protection · rank 3
+BlizzCon
+Damaging melee attacks against you have a
+30%
+chance to increase your chance to block by
+6%.
+Lasts 10 sec or 5 blocks.
+Beta
+Damaging melee attacks against you have a
+10%
+chance to increase your chance to block by
+18%.
+Lasts 10 sec or 5 blocks.
+Redoubt
+· Protection · rank 4
+BlizzCon
+Damaging melee attacks against you have a
+40%
+chance to increase your chance to block by
+6%.
+Lasts 10 sec or 5 blocks.
+Beta
+Damaging melee attacks against you have a
+10%
+chance to increase your chance to block by
+24%.
+Lasts 10 sec or 5 blocks.
+Redoubt
+· Protection · rank 5
+BlizzCon
+Damaging melee attacks against you have a
+50%
+chance to increase your chance to block by
+6%.
+Lasts 10 sec or 5 blocks.
+Beta
+Damaging melee attacks against you have a
+10%
+chance to increase your chance to block by
+30%.
+Lasts 10 sec or 5 blocks.
+Precision
+· Protection · rank 1
+BlizzCon
+Increases
+your chance to hit
+with all spells and attacks
+by 1%.
+Beta
+Improves
+your chance to hit by 1%.
+Precision
+· Protection · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Improves your chance to hit by 2%.
+Precision
+· Protection · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Improves your chance to hit by 3%.
+Guardian's Favor
+· Protection · rank 2
+BlizzCon
+Reduces the cooldown of your Blessing of Protection by
+120 sec
+and increases the duration of your Blessing of Freedom by 6 sec.
+Beta
+Reduces the cooldown of your Blessing of Protection by
+2 min
+and increases the duration of your Blessing of Freedom by 6 sec.
+Anticipation
+· Protection · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Defense Skill by 8.
+Anticipation
+· Protection · rank 3
+BlizzCon
+Increases your Defense
+skill
+by
+6.
+Beta
+Increases your Defense
+Skill
+by
+12.
+Anticipation
+· Protection · rank 4
+BlizzCon
+Increases your Defense
+skill
+by
+8.
+Beta
+Increases your Defense
+Skill
+by
+16.
+Anticipation
+· Protection · rank 5
+BlizzCon
+Increases your Defense
+skill
+by
+10.
+Beta
+Increases your Defense
+Skill
+by
+20.
+Shield Specialization
+· Protection · rank 2
+BlizzCon
+Increases the amount of damage absorbed by your shield by 20%, and gives your blocks a chance to restore 6% of your maximum
+Mana (rank 2 chance not yet captured; 33% at rank 1, 100% at rank 3).
+May only occur once every 3 sec.
+Beta
+Increases the amount of damage absorbed by your shield by 20%, and gives your blocks a
+66%
+chance to restore 6% of your maximum
+Mana.
+May only occur once every 3 sec.
+One-Handed Weapon Specialization
+· Protection · rank 2
+BlizzCon
+Increases the damage you deal with one-handed melee weapons by
+4%.
+Beta
+Increases the damage you deal with one-handed melee weapons by
+7%.
+One-Handed Weapon Specialization
+· Protection · rank 3
+BlizzCon
+Increases the damage you deal with one-handed melee weapons by
+6%.
+Beta
+Increases the damage you deal with one-handed melee weapons by
+10%.
+Iron Creed
+· Protection · rank 1
+BlizzCon
+Increases the threat generated by your Holy Strike ability
+by
+5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.
+Beta
+Increases the threat generated by your Holy Strike ability 5%. While Righteous Fury is active, Holy Strike also reduces your damage taken by 2% for 6 sec.
+Improved Judgement
+· Retribution · rank 2
+BlizzCon
+Decreases the cooldown of your Judgement
+spell
+by 2 sec.
+Beta
+Decreases the cooldown of your Judgement
+ability
+by 2 sec.
+Conviction
+· Retribution · rank 1
+BlizzCon
+Increases
+your chance to get a critical strike with melee attacks by 1%.
+Beta
+Improves
+your chance to get a critical strike with melee attacks by 1%.
+Conviction
+· Retribution · rank 2
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 2%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 2%.
+Conviction
+· Retribution · rank 3
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 3%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 3%.
+Conviction
+· Retribution · rank 4
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 4%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 4%.
+Conviction
+· Retribution · rank 5
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 5%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 5%.
+Vindication
+· Retribution · rank 1
+BlizzCon
+Gives your damaging melee attacks a chance to reduce the target's Attack Power by
+42,
+and increase your Attack Power by 1% for 30 sec.
+Beta
+Gives your damaging melee attacks a chance to reduce the target's Attack Power by
+68,
+and increase your Attack Power by 1% for 30 sec.
+Vindication
+· Retribution · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Gives your damaging melee attacks a chance to reduce the target's Attack Power by 136, and increase your Attack Power by 2% for 30 sec.
+Seal of Command
+· Retribution · rank 1
+BlizzCon
+Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec. Unleashing this Seal's energy will judge an enemy, instantly causing
+68 to 73
+Holy damage,
+137
+to
+146
+if the target is stunned or incapacitated.
+Beta
+Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.
+Unleashing this Seal's energy will judge an enemy, instantly causing
+74
+Holy damage,
+136
+to
+148
+if the target is stunned or incapacitated.
+Pursuit of Justice
+· Retribution · rank 2
+BlizzCon
+Increases movement and mounted movement speed by
+8%.
+This does not stack with other movement speed increasing effects.
+Beta
+Increases movement
+speed
+and mounted movement speed by
+15%.
+This does not stack with other movement speed increasing effects.
+Sacred Arbiter
+· Retribution · rank 1
+BlizzCon
+Increases the damage of your Holy Strike ability by
+10%
+and causes it to refresh all Judgement effects on the target.
+Beta
+Increases the damage of your Holy Strike ability by
+20%
+and causes it to refresh all Judgement effects on the target.
+Two-Handed Weapon Specialization
+· Retribution · rank 1
+BlizzCon
+Increases the damage you deal with two-handed melee weapons by
+3%.
+Beta
+Increases the damage you deal with two-handed melee weapons by
+2%.
+Two-Handed Weapon Specialization
+· Retribution · rank 2
+BlizzCon
+Increases the damage you deal with two-handed melee weapons by
+6%.
+Beta
+Increases the damage you deal with two-handed melee weapons by
+4%.
+Two-Handed Weapon Specialization
+· Retribution · rank 3
+BlizzCon
+Increases the damage you deal with two-handed melee weapons by
+9%.
+Beta
+Increases the damage you deal with two-handed melee weapons by
+6%.
+Vengeance
+· Retribution · rank 1
+BlizzCon
+Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+Beta
+Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Vengeance
+· Retribution · rank 2
+BlizzCon
+Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+Beta
+Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Vengeance
+· Retribution · rank 3
+BlizzCon
+Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to
+5
+times.
+Beta
+Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a
+non-periodic
+critical strike. Stacks up to
+3
+times.
+Instrument of Law
+· Retribution · rank 1
+BlizzCon
+Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces
+the
+threat you generate by 10% while Righteous Fury is not active.
+Beta
+Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces
+all
+threat you generate by 10% while Righteous Fury is not active.
+Instrument of Law
+· Retribution · rank 2
+BlizzCon
+Reduces the cast time of your Hammer of Wrath by
+1.0
+sec, and reduces all threat you generate by 20% while Righteous Fury is not active.
+Beta
+Reduces the cast time of your Hammer of Wrath by
+1
+sec, and reduces all threat you generate by 20% while Righteous Fury is not active.
+Twist of Light
+· Retribution · rank 1
+BlizzCon
+When
+you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an
+Echo.
+Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+Beta
+Reduces the Mana cost of your Seal spells by 20%, and when
+you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an
+Echo of that Seal.
+Your next melee attack applies the replaced Seal's effects, consuming the Echo.
+Gone
+Improved Holy Strike
+Holy
+Crusade
+Retribution · 15 points
+Spellbook
+New: Hammer of the Righteous (level 40)
+Hammer the current target and up to 3 additional nearby targets, causing Holy damage to each equal to 3 times the damage per second of your main hand weapon. Cooldown shared with Crusader Strike.
+New: Light's Vigil (level 50)
+Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 380 to 410 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 684 to 724. The Paladin may only have one Light's Vigil active per party.
+Gone: Blessing of Kings
+Gone: Blessing of Sanctuary
+Gone: Greater Blessing of Sanctuary
+Gone: Summon Warhorse
+Gone: Summon Charger
+Full Paladin spellbook →
+Hunter
+59changes
+New in beta
+Improved Serpent Sting
+Marksmanship · 15 points
+Increases the damage done by your Serpent Sting by 2%.
+Retuned
+Deadly Aspects
+· Beast Mastery · rank 1
+BlizzCon
+While Aspect of the Hawk is active,
+all normal ranged attacks have
+a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec.
+Beta
+While Aspect of the Hawk is active,
+Auto Shot has
+a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec.
+Deadly Aspects
+· Beast Mastery · rank 2
+BlizzCon
+While Aspect of the Hawk is active,
+all normal ranged attacks have
+a 4% chance of increasing ranged attack speed by
+60%
+for
+24
+sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by
+60%
+for
+24
+sec.
+Beta
+While Aspect of the Hawk is active,
+Auto Shot has
+a 4% chance of increasing ranged attack speed by
+30%
+for
+12
+sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by
+30%
+for
+12
+sec.
+Deadly Aspects
+· Beast Mastery · rank 3
+BlizzCon
+While Aspect of the Hawk is active,
+all normal ranged attacks have
+a 6% chance of increasing ranged attack speed by
+90%
+for
+36
+sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by
+90%
+for
+36
+sec.
+Beta
+While Aspect of the Hawk is active,
+Auto Shot has
+a 6% chance of increasing ranged attack speed by
+30%
+for
+12
+sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by
+30%
+for
+12
+sec.
+Deadly Aspects
+· Beast Mastery · rank 4
+BlizzCon
+While Aspect of the Hawk is active,
+all normal ranged attacks have
+a 8% chance of increasing ranged attack speed by
+120%
+for
+48
+sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by
+120%
+for
+48
+sec.
+Beta
+While Aspect of the Hawk is active,
+Auto Shot has
+a 8% chance of increasing ranged attack speed by
+30%
+for
+12
+sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by
+30%
+for
+12
+sec.
+Deadly Aspects
+· Beast Mastery · rank 5
+BlizzCon
+While Aspect of the Hawk is active,
+all normal ranged attacks have
+a 10% chance of increasing ranged attack speed by
+150%
+for
+60
+sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by
+150%
+for
+60
+sec.
+Beta
+While Aspect of the Hawk is active,
+Auto Shot has
+a 10% chance of increasing ranged attack speed by
+30%
+for
+12
+sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by
+30%
+for
+12
+sec.
+Focused Fire
+· Beast Mastery · rank 1
+BlizzCon
+Increases all damage you deal by 1% while your pet is active.
+Beta
+Increases all damage you
+and your pet
+deal by 1% while your pet is active.
+Focused Fire
+· Beast Mastery · rank 2
+BlizzCon
+Increases all damage you deal by 2% while your pet is active.
+Beta
+Increases all damage you
+and your pet
+deal by 2% while your pet is active.
+Improved Mend Pet
+· Beast Mastery · rank 2
+BlizzCon
+Gives your Mend Pet spell a
+30%
+chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 20%.
+Beta
+Gives your Mend Pet spell a
+50%
+chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 20%.
+Summon Hawk
+· Beast Mastery · rank 1
+BlizzCon
+Command a hawk to dive-bomb your targeted enemy, dealing
+53
+Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+Beta
+Command a hawk to dive-bomb your targeted enemy, dealing
+(32 + 5% of Ranged Attack Power)
+Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+Spirit Bond
+· Beast Mastery · rank 2
+BlizzCon
+While your pet is active, you and your pet will regenerate
+2%
+of total health every
+10
+sec.
+Beta
+While your pet is active, you and your pet will regenerate
+1%
+of total health every
+5
+sec.
+Improved Stings
+· Marksmanship · rank 1
+BlizzCon
+Increases
+the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.
+Beta
+Increased
+the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.
+Improved Stings
+· Marksmanship · rank 2
+BlizzCon
+Increases
+the damage of your Serpent Sting ability by
+12%,
+reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.
+Beta
+Increased
+the damage of your Serpent Sting ability by
+13%,
+reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.
+Improved Stings
+· Marksmanship · rank 3
+BlizzCon
+Increases
+the damage of your Serpent Sting ability by
+18%,
+reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec.
+Beta
+Increased
+the damage of your Serpent Sting ability by
+20%,
+reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec.
+Rapid Killing
+· Marksmanship · rank 2
+BlizzCon
+Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within
+40
+sec by 20%.
+Beta
+Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within
+20
+sec by 20%.
+Rapid Recuperation
+· Marksmanship · rank 2
+BlizzCon
+Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next
+30
+sec.
+Beta
+Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next
+15
+sec.
+Barrage
+· Marksmanship · rank 2
+BlizzCon
+Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by
+6%.
+Beta
+Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by
+7%.
+Barrage
+· Marksmanship · rank 3
+BlizzCon
+Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by
+9%.
+Beta
+Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by
+10%.
+Deflection
+· Survival · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Parry chance by 4%.
+Deflection
+· Survival · rank 3
+BlizzCon
+Increases your Parry chance by
+3%.
+Beta
+Increases your Parry chance by
+6%.
+Deflection
+· Survival · rank 4
+BlizzCon
+Increases your Parry chance by
+4%.
+Beta
+Increases your Parry chance by
+8%.
+Deflection
+· Survival · rank 5
+BlizzCon
+Increases your Parry chance by
+5%.
+Beta
+Increases your Parry chance by
+10%.
+Entrapment
+· Survival · rank 2
+BlizzCon
+Rank 2 values not yet captured
+from
+footage.
+Beta
+When your traps are triggered, all affected targets are Entrapped, preventing them
+from
+moving for 2 sec.
+Entrapment
+· Survival · rank 3
+BlizzCon
+Rank 3 values not yet captured
+from
+footage.
+Beta
+When your traps are triggered, all affected targets are Entrapped, preventing them
+from
+moving for 3 sec.
+Entrapment
+· Survival · rank 4
+BlizzCon
+Rank 4 values not yet captured
+from
+footage.
+Beta
+When your traps are triggered, all affected targets are Entrapped, preventing them
+from
+moving for 4 sec.
+Entrapment
+· Survival · rank 5
+BlizzCon
+Rank 5 values not yet captured
+from
+footage.
+Beta
+When your traps are triggered, all affected targets are Entrapped, preventing them
+from
+moving for 5 sec.
+Survivalist
+· Survival · rank 2
+BlizzCon
+Increases total
+health
+by 4%.
+Beta
+Increases
+your
+total
+Health
+by 4%.
+Survivalist
+· Survival · rank 3
+BlizzCon
+Increases total
+health
+by 6%.
+Beta
+Increases
+your
+total
+Health
+by 6%.
+Survivalist
+· Survival · rank 4
+BlizzCon
+Increases total
+health
+by 8%.
+Beta
+Increases
+your
+total
+Health
+by 8%.
+Survivalist
+· Survival · rank 5
+BlizzCon
+Increases total
+health
+by 10%.
+Beta
+Increases
+your
+total
+Health
+by 10%.
+Improved Wing Clip
+· Survival · rank 2
+BlizzCon
+Gives your Wing Clip ability a
+8%
+chance to immobilize the target for 5 sec.
+Beta
+Gives your Wing Clip ability a
+13%
+chance to immobilize the target for 5 sec.
+Improved Wing Clip
+· Survival · rank 3
+BlizzCon
+Gives your Wing Clip ability a
+12%
+chance to immobilize the target for 5 sec.
+Beta
+Gives your Wing Clip ability a
+20%
+chance to immobilize the target for 5 sec.
+Counterattack
+· Survival · rank 1
+BlizzCon
+A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus
+13
+and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
+Beta
+A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus
+26
+and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.
+Resourcefulness
+· Survival · rank 1
+BlizzCon
+Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a
+30%
+chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.
+Beta
+Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a
+$m3%
+chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.
+Resourcefulness
+· Survival · rank 2
+BlizzCon
+Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a
+60%
+chance to allow
+100%
+of your Mana regeneration to continue while casting for
+60
+sec.
+Beta
+Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a
+$m3%
+chance to allow
+50%
+of your Mana regeneration to continue while casting for
+30
+sec.
+Expose Prey
+· Survival · rank 2
+BlizzCon
+Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for
+10
+sec.
+Beta
+Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for
+5
+sec.
+Strider Kick
+· Survival · rank 1
+BlizzCon
+A powerful kick that deals 100% melee weapon
+damage.
+Beta
+A powerful kick that deals 100% melee weapon
+damage and increases movement speed by 30% for 3 sec.
+Spellbook
+New: Aspect of the Viper (level 1)
+The hunter takes on the aspect of the viper, causing your ranged and melee auto attacks to regenerate mana but reducing your total damage done by 10%. In addition, you gain 10% of maximum mana every 3 sec. Mana gained is based on the speed of your weapon. Only one Aspect can be active at a time.
+New: Summon Hawk (level 36)
+Command a hawk to dive-bomb your targeted enemy, dealing (108 + 5% of Ranged Attack Power) Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.
+New: Aspect of the Falcon (level 60)
+The hunter takes on the aspects of a Falcon, increasing melee and ranged Attack Power by the same amount as their highest rank of Aspect of the Hawk.
+While Aspect of the Falcon is active, the Improved Aspect of the Hawk talent can now proc from and benefit melee attacks. Only one Aspect can be active at a time.
+New: Heart of the Lion (level 1)
+The hunter invokes the heart of a lion, increasing total stats by 10% and Attack Power by 280 for all nearby allies, and increasing total stats for the Hunter by an additional 10%.
+New: Lacerate (level 30)
+Wounds the target causing them to bleed for 406 damage over 21 sec.
+New: Enchanted Flare (level 32)
+Exposes all hidden and invisible enemies within 10 yards of the targeted area, and staves off magical darkness for 30 sec.
+New: Sniper Shot (level 48)
+A steady snipe that increases ranged damage by 295.
+Gone: Call Owl
+Gone: Wyvern Sting
+Gone: Assist
+Gone: Attack
+Gone: Claw
+Gone: Defensive
+Gone: Dive
+Gone: Follow
+Gone: Great Stamina
+Gone: Growl
+Gone: Mine!
+Gone: Move To
+Gone: Natural Armor
+Gone: Passive
+Gone: Stay
+Full Hunter spellbook →
+Rogue
+52changes
+New in beta
+Flawless Execution
+Combat · 15 points
+Reduces the Energy cost of your Eviscerate ability by 10.
+Retuned
+Improved Gouge
+· Assassination · rank 2
+BlizzCon
+Increases the
+effect
+duration of your Gouge ability by 1 sec.
+Beta
+Increases the duration of your Gouge ability by 1 sec.
+Improved Gouge
+· Assassination · rank 3
+BlizzCon
+Increases the
+effect
+duration of your Gouge ability by 1.5 sec.
+Beta
+Increases the duration of your Gouge ability by 1.5 sec.
+Ruthlessness
+· Assassination · rank 2
+BlizzCon
+Gives your finishing moves a 40% chance to add a
+combo point
+to your target.
+Beta
+Gives your finishing moves a 40% chance to add a
+Combo Point
+to your target.
+Ruthlessness
+· Assassination · rank 3
+BlizzCon
+Gives your finishing moves a 60% chance to add a
+combo point
+to your target.
+Beta
+Gives your finishing moves a 60% chance to add a
+Combo Point
+to your target.
+Lethality
+· Assassination · rank 1
+BlizzCon
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+6%.
+Beta
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+4%.
+Lethality
+· Assassination · rank 2
+BlizzCon
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+12%.
+Beta
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+8%.
+Lethality
+· Assassination · rank 3
+BlizzCon
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+18%.
+Beta
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+12%.
+Lethality
+· Assassination · rank 4
+BlizzCon
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+24%.
+Beta
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+16%.
+Lethality
+· Assassination · rank 5
+BlizzCon
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+30%.
+Beta
+Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by
+20%.
+Mutilate
+· Assassination · rank 1
+BlizzCon
+Instantly attacks with both weapons for 75% weapon damage plus an additional
+13
+with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.
+Beta
+Instantly attacks with both weapons for 75% weapon damage plus an additional
+17.25
+with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.
+Seal Fate
+· Assassination · rank 1
+BlizzCon
+Your critical strikes from abilities that add
+combo points
+have a 20% chance to add an additional
+combo point.
+Beta
+Your critical strikes from abilities that add
+Combo Points
+have a 20% chance to add an additional
+Combo Point.
+Seal Fate
+· Assassination · rank 2
+BlizzCon
+Your critical strikes from abilities that add
+combo points
+have a 40% chance to add an additional
+combo point.
+Beta
+Your critical strikes from abilities that add
+Combo Points
+have a 40% chance to add an additional
+Combo Point.
+Seal Fate
+· Assassination · rank 3
+BlizzCon
+Your critical strikes from abilities that add
+combo points
+have a 60% chance to add an additional
+combo point.
+Beta
+Your critical strikes from abilities that add
+Combo Points
+have a 60% chance to add an additional
+Combo Point.
+Seal Fate
+· Assassination · rank 4
+BlizzCon
+Your critical strikes from abilities that add
+combo points
+have a 80% chance to add an additional
+combo point.
+Beta
+Your critical strikes from abilities that add
+Combo Points
+have a 80% chance to add an additional
+Combo Point.
+Seal Fate
+· Assassination · rank 5
+BlizzCon
+Your critical strikes from abilities that add
+combo points
+have a 100% chance to add an additional
+combo point.
+Beta
+Your critical strikes from abilities that add
+Combo Points
+have a 100% chance to add an additional
+Combo Point.
+Venom
+· Assassination · rank 1
+BlizzCon
+Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:
+1
+point:
+9 seconds
+2 points: 12 seconds
+3 points: 15 seconds
+4 points: 18 seconds
+5 points: 21 seconds
+Beta
+Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:
+1
+point :
+9 seconds
+2 points: 12 seconds
+3 points: 15 seconds
+4 points: 18 seconds
+5 points: 21 seconds
+Improved Eviscerate
+· Combat · rank 2
+BlizzCon
+Increases the damage done by your Eviscerate ability by
+10%.
+Beta
+Increases the damage done by your Eviscerate ability by
+13%.
+Improved Eviscerate
+· Combat · rank 3
+BlizzCon
+Increases the damage done by your Eviscerate ability by
+15%.
+Beta
+Increases the damage done by your Eviscerate ability by
+20%.
+Deflection
+· Combat · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Parry chance by 4%.
+Deflection
+· Combat · rank 3
+BlizzCon
+Increases your Parry chance by
+3%.
+Beta
+Increases your Parry chance by
+6%.
+Precision
+· Combat · rank 1
+BlizzCon
+Increases
+your chance to hit
+with all attacks and Poisons
+by 1%.
+Beta
+Improves
+your chance to hit by 1%.
+Precision
+· Combat · rank 2
+BlizzCon
+Increases
+your chance to hit
+with all attacks and Poisons
+by 2%.
+Beta
+Improves
+your chance to hit by 2%.
+Precision
+· Combat · rank 3
+BlizzCon
+Increases
+your chance to hit
+with all attacks and Poisons
+by 3%.
+Beta
+Improves
+your chance to hit by 3%.
+Riposte
+· Combat · rank 1
+BlizzCon
+A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for
+6 sec.
+Beta
+A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for
+$19718d.
+Improved Kick
+· Combat · rank 1
+BlizzCon
+Gives your Kick ability a 50% chance to
+silence
+the target for 2 sec.
+Beta
+Gives your Kick ability a 50% chance to
+Silence
+the target for 2 sec.
+Improved Kick
+· Combat · rank 2
+BlizzCon
+Gives your Kick ability a 100% chance to
+silence
+the target for 2 sec.
+Beta
+Gives your Kick ability a 100% chance to
+Silence
+the target for 2 sec.
+Camouflage
+· Subtlety · rank 2
+BlizzCon
+Reduces your speed penalty from your Stealth ability by 6% and reduces its cooldown by
+4
+sec.
+Beta
+Reduces your speed penalty from your Stealth ability by 6% and reduces its cooldown by
+3
+sec.
+Camouflage
+· Subtlety · rank 3
+BlizzCon
+Reduces your speed penalty from your Stealth ability by 9% and reduces its cooldown by
+6
+sec.
+Beta
+Reduces your speed penalty from your Stealth ability by 9% and reduces its cooldown by
+4
+sec.
+Camouflage
+· Subtlety · rank 4
+BlizzCon
+Reduces your speed penalty from your Stealth ability by 12% and reduces its cooldown by
+8
+sec.
+Beta
+Reduces your speed penalty from your Stealth ability by 12% and reduces its cooldown by
+5
+sec.
+Camouflage
+· Subtlety · rank 5
+BlizzCon
+Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by
+10
+sec.
+Beta
+Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by
+6
+sec.
+Master of Deception
+· Subtlety · rank 2
+BlizzCon
+Rank
+2
+values not yet captured from footage.
+Beta
+Reduces the chance enemies have to detect you while in Stealth mode as if you were
+2
+levels higher.
+Master of Deception
+· Subtlety · rank 3
+BlizzCon
+Rank
+3
+values not yet captured from footage.
+Beta
+Reduces the chance enemies have to detect you while in Stealth mode as if you were
+3
+levels higher.
+Setup
+· Subtlety · rank 2
+BlizzCon
+Gives you a
+66%
+chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.
+Beta
+Gives you a
+67%
+chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.
+Elusiveness
+· Subtlety · rank 2
+BlizzCon
+Reduces the cooldown of your Vanish and Blind abilities by
+1.5 min.
+Beta
+Reduces the cooldown of your Vanish and Blind abilities by
+90 sec.
+Dirty Tricks
+· Subtlety · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Reduces the Energy cost of your Sap and Blind abilities by 50%.
+Initiative
+· Subtlety · rank 2
+BlizzCon
+Gives you a
+66%
+chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.
+Beta
+Gives you a
+67%
+chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.
+Improved Distract
+· Subtlety · rank 1
+BlizzCon
+Increases the radius of your Distract ability by 3 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1
+level
+lower.
+Beta
+Increases the radius of your Distract ability by 3 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1
+levels
+lower.
+Improved Distract
+· Subtlety · rank 2
+BlizzCon
+Rank
+2
+values not yet captured from footage.
+Beta
+Increases the radius of your Distract ability by 5 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional
+2
+levels lower.
+Heightened Senses
+· Subtlety · rank 2
+BlizzCon
+Increases your Stealth detection as if you were
+2
+levels higher and reduces your chance to be hit by spells and ranged attacks by 4%.
+Beta
+Increases your Stealth detection as if you were
+3
+levels higher and reduces your chance to be hit by spells and ranged attacks by 4%.
+Cutthroat
+· Subtlety · rank 2
+BlizzCon
+Rank 2 values
+not
+yet captured from footage.
+Beta
+Your Backstab has a 6% chance to cause your next Ambush within 10 sec to
+not
+require Stealth.
+Cutthroat
+· Subtlety · rank 3
+BlizzCon
+Rank 3 values
+not
+yet captured from footage.
+Beta
+Your Backstab has a 9% chance to cause your next Ambush within 10 sec to
+not
+require Stealth.
+Cutthroat
+· Subtlety · rank 4
+BlizzCon
+Rank 4 values
+not
+yet captured from footage.
+Beta
+Your Backstab has a 12% chance to cause your next Ambush within 10 sec to
+not
+require Stealth.
+Cutthroat
+· Subtlety · rank 5
+BlizzCon
+Rank 5 values
+not
+yet captured from footage.
+Beta
+Your Backstab has a 15% chance to cause your next Ambush within 10 sec to
+not
+require Stealth.
+Gone
+Restless Blades
+Combat · 15 points
+Spellbook
+New: Redirect (level 1)
+Removes all your existing combo points from your target and stores them for up to 15 sec. These stored combat points will be transferred to the next non-player enemy you hit with a melee or ranged ability.
+New: Occult Poison (level 54)
+Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 30% chance of poisoning the enemy for 136 Nature damage over 12 sec and causing the enemy to take 4% increased Arcane, Fire, Frost, Nature, and Shadow damage. Stacks up to 5 times on a single target.
+Occult Poison counts as Deadly Poison and benefits from all talents and effects that trigger from or modify Deadly Poison.
+New: Atrophic Poison (level 60)
+Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 30% chance of poisoning the enemy, reducing the enemy's melee attack power by 205 for 15 sec. 105 charges.
+New: Numbing Poison (level 60)
+Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 30% chance of poisoning the enemy, increasing the time between the enemy's melee attacks by 20% for 15 sec. 105 charges.
+New: Sebacious Poison (level 60)
+Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 30% chance of poisoning the enemy, reducing the enemy's armor by 1700 for 15 sec. 105 charges.
+Sebacious Poison benefits from the Improved Expose Armor talent.
+New: Mutilate (level 40)
+Instantly attacks with both weapons for 75% weapon damage plus an additional 50.25 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.
+Gone: Hemorrhage
+Full Rogue spellbook →
+Shaman
+52changes
+Retuned
+Elemental Warding
+· Elemental Combat · rank 2
+BlizzCon
+Reduces damage taken from Fire, Frost, and Nature effects by
+6%.
+Beta
+Reduces damage taken from Fire, Frost, and Nature effects by
+7%.
+Elemental Warding
+· Elemental Combat · rank 3
+BlizzCon
+Reduces damage taken from Fire, Frost, and Nature effects by
+9%.
+Beta
+Reduces damage taken from Fire, Frost, and Nature effects by
+10%.
+Elemental Devastation
+· Elemental Combat · rank 2
+BlizzCon
+Your offensive spell
+crits
+will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.
+Beta
+Your offensive spell
+critical strikes
+will increase your chance to get a critical strike with melee attacks by 6% for 10 sec.
+Elemental Devastation
+· Elemental Combat · rank 3
+BlizzCon
+Your offensive spell
+crits
+will increase your chance to get a critical strike with melee attacks by 9% for 10 sec.
+Beta
+Your offensive spell
+critical strikes
+will increase your chance to get a critical strike with melee attacks by 9% for 10 sec.
+Elemental Alacrity
+· Elemental Combat · rank 2
+BlizzCon
+Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by
+0.34
+sec.
+Beta
+Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by
+0.33
+sec.
+Elemental Alacrity
+· Elemental Combat · rank 3
+BlizzCon
+Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by
+0.51
+sec.
+Beta
+Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by
+0.5
+sec.
+Eye of the Storm
+· Elemental Combat · rank 2
+BlizzCon
+Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by
+46%.
+Beta
+Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by
+47%.
+Eye of the Storm
+· Elemental Combat · rank 3
+BlizzCon
+Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by
+69%.
+Beta
+Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by
+70%.
+Call of Thunder
+· Elemental Combat · rank 1
+BlizzCon
+Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.
+Beta
+Elemental Reach
+· Elemental Combat · rank 2
+BlizzCon
+Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by
+16
+yards.
+Beta
+Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 6 yards, and increases the range of your Flame Shock spell by
+15
+yards.
+Lightning Overload
+· Elemental Combat · rank 2
+BlizzCon
+Gives your Lightning Bolt and Chain Lightning spells a
+6%
+chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.
+Beta
+Gives your Lightning Bolt and Chain Lightning spells a
+7%
+chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.
+Lightning Overload
+· Elemental Combat · rank 3
+BlizzCon
+Gives your Lightning Bolt and Chain Lightning spells a
+9%
+chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.
+Beta
+Gives your Lightning Bolt and Chain Lightning spells a
+10%
+chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.
+Earthbound
+· Elemental Combat · rank 1
+BlizzCon
+Your Earthbind Totem
+immobilizes
+nearby targets for 5 sec when cast.
+Beta
+Your Earthbind Totem
+Immobilizes
+nearby targets for 5 sec when cast.
+Lava Burst
+· Elemental Combat · rank 1
+BlizzCon
+You hurl molten lava at the target, dealing
+158
+to
+187
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+Beta
+You hurl molten lava at the target, dealing
+150
+to
+193
+Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+Mental Dexterity
+· Enhancement · rank 2
+BlizzCon
+Increases your Attack Power by an amount equal to
+66%
+of your Intellect.
+Beta
+Increases your Attack Power by an amount equal to
+67%
+of your Intellect.
+Mental Dexterity
+· Enhancement · rank 3
+BlizzCon
+Increases your Attack Power by an amount equal to
+99%
+of your Intellect.
+Beta
+Increases your Attack Power by an amount equal to
+100%
+of your Intellect.
+Improved Ghost Wolf
+· Enhancement · rank 1
+BlizzCon
+Reduces the cast time of your Ghost Wolf spell by
+1.0
+sec, and Ghost Wolf may be used indoors.
+Beta
+Reduces the cast time of your Ghost Wolf spell by
+1
+sec, and Ghost Wolf may be used indoors.
+Improved Ghost Wolf
+· Enhancement · rank 2
+BlizzCon
+Reduces the cast time of your Ghost Wolf spell by
+2
+sec, and Ghost Wolf may be used indoors.
+Beta
+Reduces the cast time of your Ghost Wolf spell by
+3
+sec, and Ghost Wolf may be used indoors.
+Elemental Weapons
+· Enhancement · rank 2
+BlizzCon
+Increases the melee attack power bonus of your Rockbiter Weapon by
+14%,
+your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%.
+Beta
+Increases the melee attack power bonus of your Rockbiter Weapon by
+13%,
+your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%.
+Flurry
+· Enhancement · rank 2
+BlizzCon
+Increases your attack speed by 10% for your next
+6
+swings after dealing a melee critical strike.
+Beta
+Increases your attack speed by 10% for your next
+3
+swings after dealing a melee critical strike.
+Flurry
+· Enhancement · rank 3
+BlizzCon
+Increases your attack speed by 15% for your next
+9
+swings after dealing a melee critical strike.
+Beta
+Increases your attack speed by 15% for your next
+3
+swings after dealing a melee critical strike.
+Flurry
+· Enhancement · rank 4
+BlizzCon
+Increases your attack speed by 20% for your next
+12
+swings after dealing a melee critical strike.
+Beta
+Increases your attack speed by 20% for your next
+3
+swings after dealing a melee critical strike.
+Flurry
+· Enhancement · rank 5
+BlizzCon
+Increases your attack speed by 25% for your next
+15
+swings after dealing a melee critical strike.
+Beta
+Increases your attack speed by 25% for your next
+3
+swings after dealing a melee critical strike.
+Stormstrike
+· Enhancement · rank 1
+BlizzCon
+Instantly strike for normal weapon damage and increase
+Nature
+damage you deal to the target by 20% for 12 sec.
+Beta
+Instantly strike for normal weapon damage and increase
+the
+damage you deal to the target
+with your next Lightning Bolt, Chain Lightning, or Earth Shock spell
+by 20% for 12 sec.
+Improved Stormstrike
+· Enhancement · rank 2
+BlizzCon
+When you Stormstrike, you have a 100% chance to gain
+100%
+mana regeneration while casting spells for
+30
+sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry.
+Beta
+When you Stormstrike, you have a 100% chance to gain
+50%
+mana regeneration while casting spells for
+15
+sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry.
+Maelstrom Weapon
+· Enhancement · rank 2
+BlizzCon
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to
+10
+times. Lasts
+60
+sec.
+Beta
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to
+5
+times. Lasts
+30
+sec.
+Maelstrom Weapon
+· Enhancement · rank 3
+BlizzCon
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to
+15
+times. Lasts
+90
+sec.
+Beta
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to
+5
+times. Lasts
+30
+sec.
+Maelstrom Weapon
+· Enhancement · rank 4
+BlizzCon
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to
+20
+times. Lasts
+120
+sec.
+Beta
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to
+5
+times. Lasts
+30
+sec.
+Maelstrom Weapon
+· Enhancement · rank 5
+BlizzCon
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to
+25
+times. Lasts
+150
+sec.
+Beta
+When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to
+5
+times. Lasts
+30
+sec.
+Rage of the Farseer
+· Enhancement · rank 1
+BlizzCon
+Increases your
+melee
+attack speed
+and spell casting speed
+by 30% for 25 sec.
+Beta
+Increases your attack speed by 30% for 25 sec.
+Mindfulness
+· Restoration · rank 2
+BlizzCon
+Allows
+34%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+33%
+of your Mana regeneration to continue while casting.
+Mindfulness
+· Restoration · rank 3
+BlizzCon
+Allows
+51%
+of your Mana regeneration to continue while casting.
+Beta
+Allows
+50%
+of your Mana regeneration to continue while casting.
+Tidal Focus
+· Restoration · rank 1
+BlizzCon
+Reduces the Mana cost of your healing spells by 1% and
+increases
+your chance to hit
+with all spells and attacks
+by 1%.
+Beta
+Reduces the Mana cost of your healing spells by 1% and
+improves
+your chance to hit by 1%.
+Tidal Focus
+· Restoration · rank 2
+BlizzCon
+Reduces the Mana cost of your healing spells by 2% and
+increases
+your chance to hit
+with all spells and attacks
+by 2%.
+Beta
+Reduces the Mana cost of your healing spells by 2% and
+improves
+your chance to hit by 2%.
+Tidal Focus
+· Restoration · rank 3
+BlizzCon
+Reduces the Mana cost of your healing spells by 3% and
+increases
+your chance to hit
+with all spells and attacks
+by 3%.
+Beta
+Reduces the Mana cost of your healing spells by 3% and
+improves
+your chance to hit by 3%.
+Tidal Focus
+· Restoration · rank 4
+BlizzCon
+Reduces the Mana cost of your healing spells by 4% and
+increases
+your chance to hit
+with all spells and attacks
+by 4%.
+Beta
+Reduces the Mana cost of your healing spells by 4% and
+improves
+your chance to hit by 4%.
+Tidal Focus
+· Restoration · rank 5
+BlizzCon
+Reduces the Mana cost of your healing spells by 5% and
+increases
+your chance to hit
+with all spells and attacks
+by 5%.
+Beta
+Reduces the Mana cost of your healing spells by 5% and
+improves
+your chance to hit by 5%.
+Ancestral Healing
+· Restoration · rank 2
+BlizzCon
+Increases your target's armor value by
+16%
+for 15 sec after getting a critical effect from one of your healing spells.
+Beta
+Increases your target's armor value by
+17%
+for 15 sec after getting a critical effect from one of your healing spells.
+Healing Focus
+· Restoration · rank 2
+BlizzCon
+Gives you a
+46%
+chance to avoid interruption caused by damage while casting any healing spell.
+Beta
+Gives you a
+47%
+chance to avoid interruption caused by damage while casting any healing spell.
+Healing Focus
+· Restoration · rank 3
+BlizzCon
+Gives you a
+69%
+chance to avoid interruption caused by damage while casting any healing spell.
+Beta
+Gives you a
+70%
+chance to avoid interruption caused by damage while casting any healing spell.
+Healing Way
+· Restoration · rank 2
+BlizzCon
+Increases the amount healed by your Healing Wave spell by
+16%.
+Beta
+Increases the amount healed by your Healing Wave spell by
+17%.
+Healing Way
+· Restoration · rank 3
+BlizzCon
+Increases the amount healed by your Healing Wave spell by
+24%.
+Beta
+Increases the amount healed by your Healing Wave spell by
+25%.
+Riptide
+· Restoration · rank 1
+BlizzCon
+Heals a friendly target for
+479
+to
+528,
+an additional
+499
+over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.
+Beta
+Heals a friendly target for
+484
+to
+535,
+an additional
+445
+over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.
+Moved
+Elemental Alacrity
+Elemental Combat
+— now opens at 10 points instead of 25
+Elemental Fury
+Elemental Combat
+— now opens at 25 points instead of 10
+Totemic Focus
+Restoration
+— now opens at 0 points instead of 15
+Tidal Mastery
+Restoration
+— now opens at 15 points instead of 0
+Spellbook
+New: Riptide (level 50)
+Heals a friendly target for 799 to 883, an additional 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.
+New: Call of the Spirits (level 40)
+Simultaneously places up to 4 totems specified in the Totem Bar. Can call different totems than Call of the Elements or Call of the Ancestors.
+New: Lava Burst (level 50)
+You hurl molten lava at the target, dealing 192 to 248 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.
+Gone: Tranquil Air Totem
+Gone: Fire Nova Totem
+Full Shaman spellbook →
+Warrior
+50changes
+Retuned
+Improved Heroic Strike
+· Arms · rank 2
+BlizzCon
+Reduces the cost of your Heroic Strike ability by 2
+rage points.
+Beta
+Reduces the cost of your Heroic Strike ability by 2
+Rage.
+Improved Heroic Strike
+· Arms · rank 3
+BlizzCon
+Reduces the cost of your Heroic Strike ability by 3
+rage points.
+Beta
+Reduces the cost of your Heroic Strike ability by 3
+Rage.
+Improved Rend
+· Arms · rank 2
+BlizzCon
+Increases the
+bleed
+damage done by your Rend ability by
+25%.
+Beta
+Increases the
+Bleed
+damage done by your Rend ability by
+23%.
+Improved Rend
+· Arms · rank 3
+BlizzCon
+Increases the
+bleed
+damage done by your Rend ability by 35%.
+Beta
+Increases the
+Bleed
+damage done by your Rend ability by 35%.
+Improved Charge
+· Arms · rank 2
+BlizzCon
+Increases the
+amount of rage
+generated by your Charge ability by 6.
+Beta
+Increases the
+Rage
+generated by your Charge ability by 6.
+Improved Tactical Mastery
+· Arms · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Tactical Mastery lets you retain up to an additional 6 Rage when you change stances.
+Improved Tactical Mastery
+· Arms · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Tactical Mastery lets you retain up to an additional 9 Rage when you change stances.
+Improved Tactical Mastery
+· Arms · rank 4
+BlizzCon
+Rank 4 values not yet captured from footage.
+Beta
+Tactical Mastery lets you retain up to an additional 12 Rage when you change stances.
+Improved Tactical Mastery
+· Arms · rank 5
+BlizzCon
+Rank 5 values not yet captured from footage.
+Beta
+Tactical Mastery lets you retain up to an additional 15 Rage when you change stances.
+Bloodthrill
+· Arms · rank 1
+BlizzCon
+Your melee attacks against
+targets
+afflicted by your Rend have a
+2%
+chance to
+activate
+your Overpower ability
+for 1 attack
+on
+your current
+target. Lasts 6 sec.
+Beta
+Your
+Main Hand
+melee attacks against
+enemies
+afflicted by your Rend have a
+4%
+chance to
+allow the use of
+your Overpower ability on
+the
+target. Lasts 6 sec.
+Improved Slam
+· Arms · rank 1
+BlizzCon
+Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts your melee swing
+time.
+Beta
+Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts
+or delays
+your melee swing
+and Slam's cooldown is reduced by 1.5 sec.
+Improved Slam
+· Arms · rank 2
+BlizzCon
+Reduces the global cooldown and cast time of your Slam ability by 0.5 sec. In addition, Slam no longer interrupts your melee swing
+time.
+Beta
+Reduces the global cooldown and cast time of your Slam ability by 0.5 sec. In addition, Slam no longer interrupts
+or delays
+your melee swing
+and Slam's cooldown is reduced by 3 sec.
+Cruelty
+· Fury · rank 1
+BlizzCon
+Increases
+your chance to get a critical strike with melee attacks by 1%.
+Beta
+Improves
+your chance to get a critical strike with melee attacks by 1%.
+Cruelty
+· Fury · rank 2
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 2%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 2%.
+Cruelty
+· Fury · rank 3
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 3%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 3%.
+Cruelty
+· Fury · rank 4
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 4%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 4%.
+Cruelty
+· Fury · rank 5
+BlizzCon
+Increases
+your chance to get a critical strike with melee
+weapons
+by 5%.
+Beta
+Improves
+your chance to get a critical strike with melee
+attacks
+by 5%.
+Enrage
+· Fury · rank 2
+BlizzCon
+Gives you a
+10% melee
+damage
+bonus
+for 12 sec
+up to a maximum of 12 swings
+after being the victim of
+a critical strike.
+Beta
+Gives you a
+30% chance to deal 4% increased Physical
+damage for 12 sec after being the victim of
+any damaging attack.
+Enrage
+· Fury · rank 3
+BlizzCon
+Gives you a
+15% melee
+damage
+bonus
+for 12 sec
+up to a maximum of 12 swings
+after being the victim of
+a critical strike.
+Beta
+Gives you a
+30% chance to deal 6% increased Physical
+damage for 12 sec after being the victim of
+any damaging attack.
+Enrage
+· Fury · rank 4
+BlizzCon
+Gives you a
+20% melee
+damage
+bonus
+for 12 sec
+up to a maximum of 12 swings
+after being the victim of
+a critical strike.
+Beta
+Gives you a
+30% chance to deal 8% increased Physical
+damage for 12 sec after being the victim of
+any damaging attack.
+Enrage
+· Fury · rank 5
+BlizzCon
+Gives you a
+25% melee
+damage
+bonus
+for 12 sec
+up to a maximum of 12 swings
+after being the victim of
+a critical strike.
+Beta
+Gives you a
+30% chance to deal 10% increased Physical
+damage for 12 sec after being the victim of
+any damaging attack.
+Precision
+· Fury · rank 1
+BlizzCon
+Increases
+your chance to hit
+with all abilities and attacks
+by 1%.
+Beta
+Improves
+your chance to hit by 1%.
+Improved Berserker Rage
+· Fury · rank 2
+BlizzCon
+The
+Berserker Rage ability will generate 10
+rage
+when
+used.
+Beta
+Your
+Berserker Rage ability will
+instantly
+generate 10
+Rage and has a 100% chance to remove all movement impairing effects
+when
+activated.
+Shield Specialization
+· Protection · rank 2
+BlizzCon
+Increases your chance to
+block
+attacks with
+a
+shield by 2% and
+has
+a 40% chance to generate
+1 rage
+when
+a block occurs.
+Beta
+Increases your chance to
+Block
+attacks with
+your
+shield by 2% and
+grants you
+a 40% chance to generate
+5 Rage
+when
+you Block.
+Shield Specialization
+· Protection · rank 3
+BlizzCon
+Increases your chance to
+block
+attacks with
+a
+shield by 3% and
+has
+a 60% chance to generate
+1 rage
+when
+a block occurs.
+Beta
+Increases your chance to
+Block
+attacks with
+your
+shield by 3% and
+grants you
+a 60% chance to generate
+5 Rage
+when
+you Block.
+Shield Specialization
+· Protection · rank 4
+BlizzCon
+Increases your chance to
+block
+attacks with
+a
+shield by 4% and
+has
+a 80% chance to generate
+1 rage
+when
+a block occurs.
+Beta
+Increases your chance to
+Block
+attacks with
+your
+shield by 4% and
+grants you
+a 80% chance to generate
+5 Rage
+when
+you Block.
+Shield Specialization
+· Protection · rank 5
+BlizzCon
+Increases your chance to
+block
+attacks with
+a
+shield by 5% and
+has
+a 100% chance to generate
+1 rage
+when
+a block occurs.
+Beta
+Increases your chance to
+Block
+attacks with
+your
+shield by 5% and
+grants you
+a 100% chance to generate
+5 Rage
+when
+you Block.
+Anticipation
+· Protection · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases your Defense Skill by 8.
+Anticipation
+· Protection · rank 3
+BlizzCon
+Increases your Defense
+skill
+by
+6.
+Beta
+Increases your Defense
+Skill
+by
+12.
+Anticipation
+· Protection · rank 4
+BlizzCon
+Increases your Defense
+skill
+by
+8.
+Beta
+Increases your Defense
+Skill
+by
+16.
+Anticipation
+· Protection · rank 5
+BlizzCon
+Increases your Defense
+skill
+by
+10.
+Beta
+Increases your Defense
+Skill
+by
+20.
+Toughness
+· Protection · rank 1
+BlizzCon
+Increases your
+armor
+value from items by 2%.
+Beta
+Increases your
+Armor
+value from items by 2%.
+Toughness
+· Protection · rank 2
+BlizzCon
+Increases your
+armor
+value from items by 4%.
+Beta
+Increases your
+Armor
+value from items by 4%.
+Toughness
+· Protection · rank 3
+BlizzCon
+Increases your
+armor
+value from items by 6%.
+Beta
+Increases your
+Armor
+value from items by 6%.
+Toughness
+· Protection · rank 4
+BlizzCon
+Increases your
+armor
+value from items by 8%.
+Beta
+Increases your
+Armor
+value from items by 8%.
+Toughness
+· Protection · rank 5
+BlizzCon
+Increases your
+armor
+value from items by 10%.
+Beta
+Increases your
+Armor
+value from items by 10%.
+Improved Thunder Clap
+· Protection · rank 2
+BlizzCon
+Reduces the cost of your Thunder Clap ability by
+2 rage points.
+Beta
+Reduces the
+Rage
+cost of your Thunder Clap ability by
+4.
+Improved Thunder Clap
+· Protection · rank 3
+BlizzCon
+Reduces the cost of your Thunder Clap ability by
+4 rage points.
+Beta
+Reduces the
+Rage
+cost of your Thunder Clap ability by
+6.
+Defiance
+· Protection · rank 1
+BlizzCon
+Requires Defensive Stance.
+Increases all threat generated in Defensive
+Stance
+by an additional 5% while a shield is equipped.
+Beta
+Increases all threat generated in Defensive
+stance
+by an additional 5% while a shield is equipped.
+Defiance
+· Protection · rank 2
+BlizzCon
+Requires Defensive Stance.
+Increases all threat generated in Defensive
+Stance
+by an additional 10% while a shield is equipped.
+Beta
+Increases all threat generated in Defensive
+stance
+by an additional 10% while a shield is equipped.
+Defiance
+· Protection · rank 3
+BlizzCon
+Requires Defensive Stance.
+Increases all threat generated in Defensive
+Stance
+by an additional 15% while a shield is equipped.
+Beta
+Increases all threat generated in Defensive
+stance
+by an additional 15% while a shield is equipped.
+Improved Sunder Armor
+· Protection · rank 2
+BlizzCon
+Reduces the cost of your Sunder Armor ability by
+2 rage points.
+Beta
+Reduces the
+Rage
+cost of your Sunder Armor ability by
+2.
+Improved Sunder Armor
+· Protection · rank 3
+BlizzCon
+Reduces the cost of your Sunder Armor ability by
+3 rage points.
+Beta
+Reduces the
+Rage
+cost of your Sunder Armor ability by
+3.
+Improved Disarm
+· Protection · rank 2
+BlizzCon
+Reduces the cooldown of your Disarm ability by
+14
+secs.
+Beta
+Reduces the cooldown of your Disarm ability by
+13
+secs.
+Improved Disarm
+· Protection · rank 3
+BlizzCon
+Reduces the cooldown of your Disarm ability by
+21
+secs.
+Beta
+Reduces the cooldown of your Disarm ability by
+20
+secs.
+Improved Shield Bash
+· Protection · rank 1
+BlizzCon
+Gives your Shield Bash ability a 50% chance to
+silence
+the target for 3 sec.
+Beta
+Gives your Shield Bash ability a 50% chance to
+Silence
+the target for 3 sec.
+Improved Shield Bash
+· Protection · rank 2
+BlizzCon
+Gives your Shield Bash ability a 100% chance to
+silence
+the target for 3 sec.
+Beta
+Gives your Shield Bash ability a 100% chance to
+Silence
+the target for 3 sec.
+Moved
+Bastion
+Protection
+— now opens at 20 points instead of 25
+Focused Rage
+Protection
+— now opens at 25 points instead of 25
+Gone
+Vitality
+Protection · 20 points
+Priest
+42changes
+Retuned
+Wand Specialization
+· Discipline · rank 2
+BlizzCon
+Increases your damage with Wands by
+26%.
+Beta
+Increases your damage with Wands by
+25%.
+Holy Precision
+· Discipline · rank 1
+BlizzCon
+Increases
+your chance to hit with Holy spells by 6%.
+Beta
+Improves
+your chance to hit with Holy spells by 6%.
+Holy Precision
+· Discipline · rank 2
+BlizzCon
+Increases
+your chance to hit with Holy spells by 12%.
+Beta
+Improves
+your chance to hit with Holy spells by 12%.
+Holy Precision
+· Discipline · rank 3
+BlizzCon
+Increases
+your chance to hit with Holy spells by 18%.
+Beta
+Improves
+your chance to hit with Holy spells by 18%.
+Improved Power Word: Shield
+· Discipline · rank 3
+BlizzCon
+Increases the damage absorbed by your Power Word: Shield by
+21%.
+Beta
+Increases the damage absorbed by your Power Word: Shield by
+20%.
+Mental Agility
+· Discipline · rank 2
+BlizzCon
+Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by
+6%.
+Beta
+Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by
+7%.
+Mental Agility
+· Discipline · rank 3
+BlizzCon
+Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by
+9%.
+Beta
+Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by
+10%.
+Penance
+· Discipline · rank 1
+BlizzCon
+Launches a volley of holy light at the target, causing
+96
+Holy damage to an enemy, or
+233
+healing to an
+ally. Instantly
+and every 1 sec for 2 sec.
+Beta
+Launches a volley of holy light at the target, causing
+81
+Holy damage to an enemy, or
+184
+healing to an
+ally, instantly
+and every 1 sec for 2 sec.
+Renewed Hope
+· Discipline · rank 1
+BlizzCon
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal
+and Penance gain 2% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 1 sec.
+Beta
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal,
+and Penance gain 2% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 1 sec.
+Renewed Hope
+· Discipline · rank 2
+BlizzCon
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal
+and Penance gain 4% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 2 sec.
+Beta
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal,
+and Penance gain 4% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 2 sec.
+Renewed Hope
+· Discipline · rank 3
+BlizzCon
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal
+and Penance gain 6% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 3 sec.
+Beta
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal,
+and Penance gain 6% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 3 sec.
+Renewed Hope
+· Discipline · rank 4
+BlizzCon
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal
+and Penance gain 8% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 4 sec.
+Beta
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal,
+and Penance gain 8% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 4 sec.
+Renewed Hope
+· Discipline · rank 5
+BlizzCon
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal
+and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec.
+Beta
+Your heals from Flash Heal, Binding Heal, Lesser Heal, Heal, Greater
+Heal,
+and Penance gain 10% increased critical strike chance when cast on targets with Weakened Soul, and reduce the remaining duration of Weakened Soul on their target by 5 sec.
+Twilight Focus
+· Holy · rank 2
+BlizzCon
+Gives you a
+46%
+chance to avoid interruption caused by damage while casting any spell.
+Beta
+Gives you a
+47%
+chance to avoid interruption caused by damage while casting any spell.
+Divine Fury
+· Holy · rank 1
+BlizzCon
+Reduces the casting time of your Smite, Holy Fire,
+Heal
+and Greater Heal spells by 0.1 sec.
+Beta
+Reduces the casting time of your Smite, Holy Fire,
+Heal,
+and Greater Heal spells by 0.1 sec.
+Divine Fury
+· Holy · rank 2
+BlizzCon
+Reduces the casting time of your Smite, Holy Fire,
+Heal
+and Greater Heal spells by 0.2 sec.
+Beta
+Reduces the casting time of your Smite, Holy Fire,
+Heal,
+and Greater Heal spells by 0.2 sec.
+Divine Fury
+· Holy · rank 3
+BlizzCon
+Reduces the casting time of your Smite, Holy Fire,
+Heal
+and Greater Heal spells by 0.3 sec.
+Beta
+Reduces the casting time of your Smite, Holy Fire,
+Heal,
+and Greater Heal spells by 0.3 sec.
+Divine Fury
+· Holy · rank 4
+BlizzCon
+Reduces the casting time of your Smite, Holy Fire,
+Heal
+and Greater Heal spells by 0.4 sec.
+Beta
+Reduces the casting time of your Smite, Holy Fire,
+Heal,
+and Greater Heal spells by 0.4 sec.
+Divine Fury
+· Holy · rank 5
+BlizzCon
+Reduces the casting time of your Smite, Holy Fire,
+Heal
+and Greater Heal spells by 0.5 sec.
+Beta
+Reduces the casting time of your Smite, Holy Fire,
+Heal,
+and Greater Heal spells by 0.5 sec.
+Holy Nova
+· Holy · rank 1
+BlizzCon
+Causes an explosion of holy light around the caster, causing
+31
+to
+36
+Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for
+68
+to
+77.
+These effects cause no threat.
+Beta
+Causes an explosion of holy light around the caster, causing
+26
+to
+30
+Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for
+50
+to
+57.
+These effects cause no threat.
+Blessed Recovery
+· Holy · rank 2
+BlizzCon
+After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal
+16%
+of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.
+Beta
+After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal
+17%
+of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.
+Inspiration
+· Holy · rank 2
+BlizzCon
+Your non-periodic critical heals increase your target's Armor by
+16%
+for 15 sec.
+Beta
+Your non-periodic critical heals increase your target's Armor by
+17%
+for 15 sec.
+Searing Light
+· Holy · rank 2
+BlizzCon
+Increases your Holy damage done by
+4%,
+and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.
+Beta
+Increases your Holy damage done by
+5%,
+and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.
+Binding Heal
+· Holy · rank 1
+BlizzCon
+Heals a friendly target and the caster for
+346
+to
+403.
+Low threat.
+Beta
+Heals a friendly target and the caster for
+235
+to
+286.
+Low threat.
+Spiritual Guidance
+· Holy · rank 1
+BlizzCon
+Increases your spell healing by up to 5% of your total Spirit and your spell damage by up to
+2%
+of your total Spirit.
+Beta
+Increases your spell healing by up to 5% of your total Spirit and your spell damage by up to
+1%
+of your total Spirit.
+Spiritual Guidance
+· Holy · rank 3
+BlizzCon
+Increases your spell healing by up to 15% of your total Spirit and your spell damage by up to
+4%
+of your total Spirit.
+Beta
+Increases your spell healing by up to 15% of your total Spirit and your spell damage by up to
+5%
+of your total Spirit.
+Spiritual Healing
+· Holy · rank 2
+BlizzCon
+Rank 2 values not yet captured from footage.
+Beta
+Increases the amount healed by your spells by 7%.
+Spiritual Healing
+· Holy · rank 3
+BlizzCon
+Rank 3 values not yet captured from footage.
+Beta
+Increases the amount healed by your spells by 10%.
+Prayer of Mending
+· Holy · rank 1
+BlizzCon
+Places a spell on the target that heals them for
+247
+the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.
+Beta
+Places a spell on the target that heals them for
+(172 + 42.9% of healing power)
+the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.
+Shadow Focus
+· Shadow Magic · rank 1
+BlizzCon
+Increases
+your chance to hit with
+your
+Shadow spells by 1%.
+Beta
+Improves
+your chance to hit with Shadow spells by 1%.
+Shadow Focus
+· Shadow Magic · rank 2
+BlizzCon
+Increases
+your chance to hit with
+your
+Shadow spells by 2%.
+Beta
+Improves
+your chance to hit with Shadow spells by 2%.
+Shadow Focus
+· Shadow Magic · rank 3
+BlizzCon
+Increases
+your chance to hit with
+your
+Shadow spells by 3%.
+Beta
+Improves
+your chance to hit with Shadow spells by 3%.
+Shadow Focus
+· Shadow Magic · rank 4
+BlizzCon
+Increases
+your chance to hit with
+your
+Shadow spells by 4%.
+Beta
+Improves
+your chance to hit with Shadow spells by 4%.
+Shadow Focus
+· Shadow Magic · rank 5
+BlizzCon
+Increases
+your chance to hit with
+your
+Shadow spells by 5%.
+Beta
+Improves
+your chance to hit with Shadow spells by 5%.
+Mind Flay
+· Shadow Magic · rank 1
+BlizzCon
+Assault the target's mind with Shadow energy, causing
+104
+Shadow damage over 3 sec and slowing their movement speed by 50%.
+Beta
+Assault the target's mind with Shadow energy, causing
+63
+Shadow damage over 3 sec and slowing their movement speed by 50%.
+Shadow Weaving
+· Shadow Magic · rank 2
+BlizzCon
+Your Shadow damage spells have a
+66%
+chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.
+Beta
+Your Shadow damage spells have a
+67%
+chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.
+Devouring Contagion
+· Shadow Magic · rank 2
+BlizzCon
+Reduces the mana cost of your Devouring Plague by 50%. Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within
+5
+yards for the remaining duration.
+Beta
+Reduces the mana cost of your Devouring Plague by 50%.
+Targets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within
+10
+yards for the remaining duration.
+Spellbook
+New: Binding Heal (level 32)
+Heals a friendly target and the caster for 772 to 911. Low threat.
+New: Prayer of Mending (level 50)
+Places a spell on the target that heals them for (413 + 42.9% of healing power) the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.
+New: Shadow Word: Death (level 32)
+A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.
+New: Penance (level 40)
+Launches a volley of holy light at the target, causing 131 Holy damage to an enemy, or 673 healing to an ally, instantly and every 1 sec for 2 sec.
+Gone: Lightwell
+Full Priest spellbook →
+Comparing BlizzCon 2026 build 1.15.9.69722 against build 1.60.1.70009.
+This site asks for nothing. The kids could use something.
+No ads, no accounts, built by one person. Instead of a tip jar, there is a fundraiser for
+Gamers Outreach
+, who roll portable gaming kiosks to the bedsides of children stuck in
+hospital. Every donation goes straight to them — nothing passes through this site.
+Donate to Gamers Outreach
+(opens in a new tab)
+Forged by
+Milenkas
+<Nihilum>
+·
+Thunderstrike
+·
+Horde
+Talents
+Builds
+Abilities
+Racials
+Professions
+Merchant’s Favor
+Reputations
+Dungeons
+Quests
+PvP
+Legacy Tree
+Beta changes
+Roadmap
+About the data
+Cookies
+Talent data read from the World of Warcraft: Forever client, build 1.60.1.70009, and compared rank for rank against Classic Era 1.15.9.69722.
+World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. This is an unofficial fan site and is not affiliated with Blizzard.

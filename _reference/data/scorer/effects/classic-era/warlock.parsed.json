@@ -1,0 +1,644 @@
+{
+ "Suppression": {
+  "tree": "Affliction",
+  "max": 5,
+  "text": "Reduces the chance for enemies to resist your Affliction spells by 2%.",
+  "effects": []
+ },
+ "Improved Corruption": {
+  "tree": "Affliction",
+  "max": 5,
+  "text": "Reduces the casting time of your Corruption spell by 0.4 sec.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Corruption"
+    ],
+    "values": [
+     0.4,
+     0.8,
+     1.2,
+     1.6,
+     2.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Curse of Weakness": {
+  "tree": "Affliction",
+  "max": 3,
+  "text": "Increases the effect of your Curse of Weakness by 6%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Curse of Weakness"
+    ],
+    "values": [
+     0.06,
+     0.13,
+     0.2
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Drain Soul": {
+  "tree": "Affliction",
+  "max": 2,
+  "text": "Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul. In addition your Mana may continue to regenerate while casting at 50% of normal.",
+  "effects": []
+ },
+ "Improved Life Tap": {
+  "tree": "Affliction",
+  "max": 2,
+  "text": "Increases the amount of Mana awarded by your Life Tap spell by 10%.",
+  "effects": []
+ },
+ "Improved Drain Life": {
+  "tree": "Affliction",
+  "max": 5,
+  "text": "Increases the Health drained by your Drain Life spell by 2%.",
+  "effects": []
+ },
+ "Improved Curse of Agony": {
+  "tree": "Affliction",
+  "max": 3,
+  "text": "Increases the damage done by your Curse of Agony by 2%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Curse of Agony"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Fel Concentration": {
+  "tree": "Affliction",
+  "max": 5,
+  "text": "Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.",
+  "effects": [
+   {
+    "channel": "pushback",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.14,
+     0.28,
+     0.42,
+     0.56,
+     0.7
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Amplify Curse": {
+  "tree": "Affliction",
+  "max": 1,
+  "text": "Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Curse of Agony"
+    ],
+    "values": [
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Grim Reach": {
+  "tree": "Affliction",
+  "max": 2,
+  "text": "Increases the range of your Affliction spells by 10%.",
+  "effects": [
+   {
+    "channel": "range",
+    "scope": [
+     "ability:Affliction"
+    ],
+    "values": [
+     10.0,
+     20.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Nightfall": {
+  "tree": "Affliction",
+  "max": 2,
+  "text": "Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.",
+  "effects": []
+ },
+ "Improved Drain Mana": {
+  "tree": "Affliction",
+  "max": 2,
+  "text": "Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent.",
+  "effects": []
+ },
+ "Siphon Life": {
+  "tree": "Affliction",
+  "max": 1,
+  "text": "Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.",
+  "effects": []
+ },
+ "Curse of Exhaustion": {
+  "tree": "Affliction",
+  "max": 1,
+  "text": "Reduces the target's movement speed by 10% for 12 sec. Only one Curse per Warlock can be active on any one target.",
+  "effects": []
+ },
+ "Improved Curse of Exhaustion": {
+  "tree": "Affliction",
+  "max": 4,
+  "text": "Increases the speed reduction of your Curse of Exhaustion by 5%.",
+  "effects": []
+ },
+ "Shadow Mastery": {
+  "tree": "Affliction",
+  "max": 5,
+  "text": "Increases the damage dealt or life drained by your Shadow spells by 2%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "school:shadow"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Dark Pact": {
+  "tree": "Affliction",
+  "max": 1,
+  "text": "Drains 150 of your pet's Mana, returning 100% to you.",
+  "effects": []
+ },
+ "Improved Healthstone": {
+  "tree": "Demonology",
+  "max": 2,
+  "text": "Increases the amount of Health restored by your Healthstone by 10%.",
+  "effects": []
+ },
+ "Improved Imp": {
+  "tree": "Demonology",
+  "max": 3,
+  "text": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 10%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Imp's Firebolt",
+     "ability:Fire Shield",
+     "ability:Blood Pact"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Demonic Embrace": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Increases your total Stamina by 3% but reduces your total Spirit by 1%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:stamina"
+    ],
+    "values": [
+     0.03,
+     0.06,
+     0.09,
+     0.12,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Health Funnel": {
+  "tree": "Demonology",
+  "max": 2,
+  "text": "Increases the amount of Health transferred by your Health Funnel spell by 10%.",
+  "effects": []
+ },
+ "Improved Voidwalker": {
+  "tree": "Demonology",
+  "max": 3,
+  "text": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 10%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Voidwalker's Torment",
+     "ability:Consume Shadows",
+     "ability:Sacrifice",
+     "ability:Suffering"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Fel Intellect": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Increases the maximum Mana of your Imp, Voidwalker, Succubus, and Felhunter by 3%.",
+  "effects": []
+ },
+ "Improved Succubus": {
+  "tree": "Demonology",
+  "max": 3,
+  "text": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by 10%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by 10%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Succubus' Lash of Pain",
+     "ability:Soothing Kiss"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Fel Domination": {
+  "tree": "Demonology",
+  "max": 1,
+  "text": "Your next Imp, Voidwalker, Succubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%.",
+  "effects": []
+ },
+ "Fel Stamina": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Increases the maximum Health of your Imp, Voidwalker, Succubus, and Felhunter by 3%.",
+  "effects": []
+ },
+ "Master Summoner": {
+  "tree": "Demonology",
+  "max": 2,
+  "text": "Reduces the casting time of your Imp, Voidwalker, Succubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Imp",
+     "ability:Voidwalker",
+     "ability:Succubus",
+     "ability:Felhunter Summoning"
+    ],
+    "values": [
+     2.0,
+     4.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Unholy Power": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Increases the damage done by your Voidwalker, Succubus, and Felhunter's melee attacks by 4%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "type:melee",
+     "ability:Voidwalker",
+     "ability:Succubus"
+    ],
+    "values": [
+     0.04,
+     0.08,
+     0.12,
+     0.16,
+     0.2
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Enslave Demon": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 2% and reduces the resist chance by 2%.",
+  "effects": []
+ },
+ "Demonic Sacrifice": {
+  "tree": "Demonology",
+  "max": 1,
+  "text": "When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.Imp: Increases your Fire damage by 15%.Voidwalker: Restores 3% of total Health ever",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "school:fire"
+    ],
+    "values": [
+     0.15
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "dmg",
+    "scope": [
+     "school:shadow"
+    ],
+    "values": [
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Firestone": {
+  "tree": "Demonology",
+  "max": 2,
+  "text": "Increases the bonus Fire damage from Firestones and the Firestone effect by 15%.",
+  "effects": []
+ },
+ "Master Demonologist": {
+  "tree": "Demonology",
+  "max": 5,
+  "text": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.Imp - Reduces threat caused by 4%.Voidwalker - Reduces physical damage taken by 2%.Succubus - Increases all damage caused by 2%.Fel",
+  "effects": []
+ },
+ "Soul Link": {
+  "tree": "Demonology",
+  "max": 1,
+  "text": "When active, 0% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, or Felhunter demon instead. In addition, both the demon and master will inflict 3% more damage. Lasts as long as the demon is ",
+  "effects": []
+ },
+ "Improved Spellstone": {
+  "tree": "Demonology",
+  "max": 2,
+  "text": "Increases the amount of damage absorbed by your Spellstone by 15%.",
+  "effects": []
+ },
+ "Improved Shadow Bolt": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.",
+  "effects": []
+ },
+ "Cataclysm": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Reduces the Mana cost of your Destruction spells by 1%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "ability:Destruction"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Bane": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Shadow Bolt",
+     "ability:Immolate"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Aftermath": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Gives your Destruction spells a 2% chance to daze the target for 5 sec.",
+  "effects": []
+ },
+ "Improved Firebolt": {
+  "tree": "Destruction",
+  "max": 2,
+  "text": "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Imp's Firebolt"
+    ],
+    "values": [
+     0.5,
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Lash of Pain": {
+  "tree": "Destruction",
+  "max": 2,
+  "text": "Reduces the cooldown of your Succubus' Lash of Pain spell by 3 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Succubus' Lash of Pain"
+    ],
+    "values": [
+     3.0,
+     6.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Devastation": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Increases the critical strike chance of your Destruction spells by 1%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "ability:Destruction"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Shadowburn": {
+  "tree": "Destruction",
+  "max": 1,
+  "text": "Instantly blasts the target for 91 to 104 Shadow damage. If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.",
+  "effects": []
+ },
+ "Intensity": {
+  "tree": "Destruction",
+  "max": 2,
+  "text": "Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.",
+  "effects": [
+   {
+    "channel": "pushback",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.35,
+     0.7
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Destructive Reach": {
+  "tree": "Destruction",
+  "max": 2,
+  "text": "Increases the range of your Destruction spells by 10%.",
+  "effects": [
+   {
+    "channel": "range",
+    "scope": [
+     "ability:Destruction"
+    ],
+    "values": [
+     10.0,
+     20.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Searing Pain": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Increases the critical strike chance of your Searing Pain spell by 2%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "ability:Searing Pain"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Pyroclasm": {
+  "tree": "Destruction",
+  "max": 2,
+  "text": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 13% chance to stun the target for 3 sec.",
+  "effects": []
+ },
+ "Improved Immolate": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Increases the initial damage of your Immolate spell by 5%.",
+  "effects": []
+ },
+ "Ruin": {
+  "tree": "Destruction",
+  "max": 1,
+  "text": "Increases the critical strike damage bonus of your Destruction spells by 100%.",
+  "effects": [
+   {
+    "channel": "crit_bonus",
+    "scope": [
+     "ability:Destruction"
+    ],
+    "values": [
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Emberstorm": {
+  "tree": "Destruction",
+  "max": 5,
+  "text": "Increases the damage done by your Fire spells by 2%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "school:fire"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Conflagrate": {
+  "tree": "Destruction",
+  "max": 1,
+  "text": "Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell.",
+  "effects": []
+ }
+}

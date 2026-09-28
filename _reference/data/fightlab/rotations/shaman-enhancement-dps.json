@@ -1,0 +1,81 @@
+{
+ "veto": {
+  "Lightning Bolt": {
+   "max_hp": 0.35
+  },
+  "Earth Shock": {
+   "max_hp": 0.2
+  }
+ },
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "build": "leveling-enhancement",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "Lightning Bolt only when the mob is below 35% health",
+   "rule": [
+    "max_hp",
+    "Lightning Bolt",
+    0.35
+   ],
+   "gain_seed1": 0.09870498383890969,
+   "gain_seed2": 0.0913446168194173
+  },
+  {
+   "round": 2,
+   "change": "Earth Shock only when the mob is below 20% health",
+   "rule": [
+    "max_hp",
+    "Earth Shock",
+    0.2
+   ],
+   "gain_seed1": 0.007755036605039511,
+   "gain_seed2": 0.008088292474723646
+  }
+ ],
+ "weighted_before": 36.742892402007094,
+ "weighted_after": 33.39107572881598,
+ "per_level": {
+  "20": {
+   "before": 25.17255529896443,
+   "after": 20.97233333320995,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 35.15608746127203,
+   "after": 29.3495085513724,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 37.054466001646475,
+   "after": 33.49366199219858,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 39.40491394841902,
+   "after": 36.23014507986836,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 38.96700688495266,
+   "after": 37.11715814794106,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "retribution_paladin",
+  "gear": "ui/retribution_paladin/gear_sets/p1_plate_2h.gear.json",
+  "apl": "ui/retribution_paladin/apls/basic_ret.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own sanctity_aura (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "boglingRoot": false,
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "fillerExplosive": "ExplosiveUnknown",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "food": "FoodBlessSunfruit",
+   "flask": "FlaskOfSupremePower",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "ROIDS"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "ret-raid-dps",
+   "talents": "550001--552350512023151",
+   "split": "11/0/40",
+   "ours": true,
+   "dps": 660.6948708360586,
+   "dps_stdev": 54.98897915530196,
+   "threat": 670.291302780503,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.38604999999999984,
+   "error": null,
+   "scorer": 0.5348576370991547,
+   "shares": {
+    "Auto Attack": 0.7347525369505814,
+    "Seal of Command": 0.13762417884082662,
+    "Seal of Righteousness": 0.055176599060624526,
+    "Judgement of Command": 0.042591474547391484,
+    "Judgement of Righteousness": 0.0174157951555474,
+    "Dragonbreath Chili": 0.01243941544502849
+   },
+   "source_shares": {
+    "white": 0.744,
+    "seal": 0.1952,
+    "judgement": 0.0608
+   },
+   "unmatched_share": 0.0124
+  },
+  {
+   "label": "sim preset: P4/P5 Ret",
+   "talents": "500501-503-52230351200315",
+   "split": "",
+   "ours": false,
+   "dps": 710.1341331677306,
+   "dps_stdev": 60.83944473763041,
+   "threat": 719.5095609455084,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 14.704010144926666,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.7514286142556307,
+    "Seal of Command": 0.12707641090168398,
+    "Seal of Righteousness": 0.051866800746485676,
+    "Judgement of Command": 0.036462564432703765,
+    "Judgement of Righteousness": 0.02195296242959982,
+    "Dragonbreath Chili": 0.011212647233896072
+   },
+   "source_shares": {
+    "white": 0.7599,
+    "seal": 0.181,
+    "judgement": 0.0591
+   },
+   "unmatched_share": 0.0112
+  }
+ ],
+ "deltas": {}
+}

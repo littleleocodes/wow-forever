@@ -1,0 +1,504 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "game": "forever",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "druid/balance",
+  "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/druid/balance-dps.apl.json",
+  "apl_sim": "ui/specs/druid/balance/apls/default.apl.json",
+  "race": "RaceTauren",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus gift_of_the_wild and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "guardianElixirId": 20007,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "mhImbueId": 25122
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 20000,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "date": "2026-09-28",
+ "results": [
+  {
+   "label": "balance-moonkin-raid",
+   "talents": "0532220115501051-03-505203",
+   "split": "33/3/15",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "29166": 1.0,
+    "24977": 8.9981,
+    "25298": 31.36215,
+    "2912": 0.017,
+    "9835": 8.55955
+   },
+   "casts": {
+    "OtherActionManaGain": 10.99675,
+    "Innervate": 1.0,
+    "Insect Swarm": 8.9981,
+    "Starfire": 31.37915,
+    "item 13444": 1.0,
+    "item 18820": 2.0,
+    "Moonfire": 8.55955
+   },
+   "dps": 461.3446527561973,
+   "dps_stdev": 32.89731202686805,
+   "threat": 376.5765552674576,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.012968200000000003,
+   "error": null,
+   "scorer": 1.5440530595228732,
+   "shares": {
+    "Starfire": 0.6288114313263345,
+    "Moonfire": 0.18922922307400877,
+    "Insect Swarm": 0.18195934559965662
+   },
+   "source_shares": {
+    "starfire": 0.6288,
+    "moonfire_direct": 0.1892,
+    "insect_swarm": 0.182
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "opt-balance-dps-raid-dps",
+   "talents": "0532220115501051-05-505003",
+   "split": "33/5/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "9835": 8.5597,
+    "25298": 31.3799,
+    "29166": 1.0,
+    "24977": 8.99995,
+    "2912": 0.0074
+   },
+   "casts": {
+    "Moonfire": 8.5597,
+    "item 18820": 2.0,
+    "Starfire": 31.3873,
+    "Innervate": 1.0,
+    "Insect Swarm": 8.99995,
+    "OtherActionManaGain": 10.99345,
+    "item 13444": 1.0
+   },
+   "dps": 462.1949335661351,
+   "dps_stdev": 33.01124508490471,
+   "threat": 469.69576635363524,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.00445265,
+   "error": null,
+   "scorer": 1.5508407920163116,
+   "shares": {
+    "Starfire": 0.6289935280405917,
+    "Moonfire": 0.1891030620659032,
+    "Insect Swarm": 0.18190340989350512
+   },
+   "source_shares": {
+    "starfire": 0.629,
+    "moonfire_direct": 0.1891,
+    "insect_swarm": 0.1819
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-hand-2026-09-26",
+   "talents": "5532223115521351--5",
+   "split": "46/0/5",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "29166": 1.0,
+    "25298": 29.82035,
+    "9835": 8.0973,
+    "24977": 8.88935,
+    "2912": 1.09555
+   },
+   "casts": {
+    "Innervate": 1.0,
+    "item 18820": 2.0,
+    "OtherActionManaGain": 11.0,
+    "Starfire": 30.9159,
+    "Moonfire": 8.0973,
+    "Insect Swarm": 8.88935,
+    "item 13444": 1.0
+   },
+   "dps": 429.3803337666396,
+   "dps_stdev": 32.86061527142985,
+   "threat": 436.8811670999729,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 2.6893647499999975,
+   "error": null,
+   "scorer": 1.413210070407633,
+   "shares": {
+    "Starfire": 0.6272410450143945,
+    "Moonfire": 0.18864651232759144,
+    "Insect Swarm": 0.18411244265801407
+   },
+   "source_shares": {
+    "starfire": 0.6272,
+    "moonfire_direct": 0.1886,
+    "insect_swarm": 0.1841
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r1",
+   "talents": "0532220115501051-02-50520300001",
+   "split": "33/2/16",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "2912": 0.02805,
+    "25298": 31.34545,
+    "24977": 8.9977,
+    "29166": 1.0,
+    "9835": 8.56385
+   },
+   "casts": {
+    "OtherActionManaGain": 10.9981,
+    "Starfire": 31.3735,
+    "item 18820": 2.0,
+    "Insect Swarm": 8.9977,
+    "Innervate": 1.0,
+    "item 13444": 1.0,
+    "Moonfire": 8.56385
+   },
+   "dps": 460.9658083907905,
+   "dps_stdev": 32.87328934033555,
+   "threat": 376.2734798876322,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0214684,
+   "error": null,
+   "scorer": 1.5406586865020389,
+   "shares": {
+    "Starfire": 0.6287352186011735,
+    "Moonfire": 0.1892695607568211,
+    "Insect Swarm": 0.18199522064200546
+   },
+   "source_shares": {
+    "starfire": 0.6287,
+    "moonfire_direct": 0.1893,
+    "insect_swarm": 0.182
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r2",
+   "talents": "5032220115501051-02-50520300001",
+   "split": "33/2/16",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "2912": 0.02805,
+    "29166": 1.0,
+    "25298": 31.34545,
+    "9835": 8.56385,
+    "24977": 8.9977
+   },
+   "casts": {
+    "item 13444": 1.0,
+    "Starfire": 31.3735,
+    "Innervate": 1.0,
+    "Moonfire": 8.56385,
+    "OtherActionManaGain": 10.9981,
+    "item 18820": 2.0,
+    "Insect Swarm": 8.9977
+   },
+   "dps": 453.87428246414885,
+   "dps_stdev": 32.78995664319337,
+   "threat": 370.6002591463192,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0214684,
+   "error": null,
+   "scorer": 1.5023415489991399,
+   "shares": {
+    "Starfire": 0.638558846587971,
+    "Moonfire": 0.185404208826463,
+    "Insect Swarm": 0.176036944585566
+   },
+   "source_shares": {
+    "starfire": 0.6386,
+    "moonfire_direct": 0.1854,
+    "insect_swarm": 0.176
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r3",
+   "talents": "0532220115501051-02-05520300001",
+   "split": "33/2/16",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "29166": 1.0,
+    "25298": 31.34545,
+    "24977": 8.9977,
+    "2912": 0.02805,
+    "9835": 8.56385
+   },
+   "casts": {
+    "Innervate": 1.0,
+    "item 13444": 1.0,
+    "Starfire": 31.3735,
+    "item 18820": 2.0,
+    "Insect Swarm": 8.9977,
+    "Moonfire": 8.56385,
+    "OtherActionManaGain": 10.9981
+   },
+   "dps": 460.9658083907905,
+   "dps_stdev": 32.87328934033555,
+   "threat": 376.2734798876322,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0214684,
+   "error": null,
+   "scorer": 1.5406586865020389,
+   "shares": {
+    "Starfire": 0.6287352186011735,
+    "Moonfire": 0.1892695607568211,
+    "Insect Swarm": 0.18199522064200546
+   },
+   "source_shares": {
+    "starfire": 0.6287,
+    "moonfire_direct": 0.1893,
+    "insect_swarm": 0.182
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r4",
+   "talents": "153222011550105-05-505003",
+   "split": "33/5/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "29166": 1.0,
+    "24977": 8.98645,
+    "9835": 8.56495,
+    "2912": 0.13795,
+    "25298": 31.09285
+   },
+   "casts": {
+    "Innervate": 1.0,
+    "item 18820": 2.0,
+    "Insect Swarm": 8.98645,
+    "Moonfire": 8.56495,
+    "item 13444": 1.0,
+    "Starfire": 31.2308,
+    "OtherActionManaGain": 11.0
+   },
+   "dps": 449.4176689979539,
+   "dps_stdev": 31.358406191718352,
+   "threat": 456.9185023312873,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.08679965000000002,
+   "error": null,
+   "scorer": 1.4686860071788916,
+   "shares": {
+    "Starfire": 0.6271359885462598,
+    "Moonfire": 0.19078550003159386,
+    "Insect Swarm": 0.18207851142214626
+   },
+   "source_shares": {
+    "starfire": 0.6271,
+    "moonfire_direct": 0.1908,
+    "insect_swarm": 0.1821
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r5",
+   "talents": "0532220115501051-05-505003",
+   "split": "33/5/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "2912": 0.0074,
+    "24977": 8.99995,
+    "29166": 1.0,
+    "25298": 31.3799,
+    "9835": 8.5597
+   },
+   "casts": {
+    "Starfire": 31.3873,
+    "item 18820": 2.0,
+    "Insect Swarm": 8.99995,
+    "Innervate": 1.0,
+    "OtherActionManaGain": 10.99345,
+    "item 13444": 1.0,
+    "Moonfire": 8.5597
+   },
+   "dps": 462.1949335661351,
+   "dps_stdev": 33.01124508490471,
+   "threat": 469.69576635363524,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.00445265,
+   "error": null,
+   "scorer": 1.5508407920163116,
+   "shares": {
+    "Starfire": 0.6289935280405917,
+    "Moonfire": 0.1891030620659032,
+    "Insect Swarm": 0.18190340989350512
+   },
+   "source_shares": {
+    "starfire": 0.629,
+    "moonfire_direct": 0.1891,
+    "insect_swarm": 0.1819
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r6",
+   "talents": "4512220115501051-05-505001",
+   "split": "35/5/11",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "24977": 8.17115,
+    "29166": 1.0,
+    "2912": 3.43855,
+    "9835": 7.2916,
+    "25298": 26.0107
+   },
+   "casts": {
+    "OtherActionManaGain": 11.0,
+    "Insect Swarm": 8.17115,
+    "Innervate": 1.0,
+    "item 18820": 2.0,
+    "Starfire": 29.44925,
+    "Moonfire": 7.2916,
+    "item 13444": 1.0
+   },
+   "dps": 416.94833852223,
+   "dps_stdev": 36.46190588279246,
+   "threat": 424.4491718555636,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 10.071182750000013,
+   "error": null,
+   "scorer": 1.5508407920163116,
+   "shares": {
+    "Starfire": 0.6316548757927437,
+    "Moonfire": 0.18456097802819282,
+    "Insect Swarm": 0.1837841461790635
+   },
+   "source_shares": {
+    "starfire": 0.6317,
+    "moonfire_direct": 0.1846,
+    "insect_swarm": 0.1838
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Balance",
+   "talents": "5532220115001351--505302",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "24977": 7.96485,
+    "25298": 27.1631,
+    "29166": 0.99965,
+    "9835": 8.44525,
+    "2912": 0.00035
+   },
+   "casts": {
+    "Insect Swarm": 7.96485,
+    "Starfire": 27.16345,
+    "item 18820": 2.0,
+    "Innervate": 0.99965,
+    "Moonfire": 8.44525,
+    "item 13444": 1.0,
+    "OtherActionManaGain": 10.8078
+   },
+   "dps": 410.655143775151,
+   "dps_stdev": 29.67075204987926,
+   "threat": 294.9594179592725,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0001313,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Starfire": 0.6089011480412888,
+    "Moonfire": 0.20989367051244764,
+    "Insect Swarm": 0.18120518144626344
+   },
+   "source_shares": {
+    "starfire": 0.6089,
+    "moonfire_direct": 0.2099,
+    "insect_swarm": 0.1812
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Moonkin 38/0/13",
+   "talents": "5502220115501351--055003",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "29166": 1.0,
+    "2912": 5.4439,
+    "25298": 23.9876,
+    "24977": 7.88815,
+    "9835": 6.9532
+   },
+   "casts": {
+    "item 18820": 2.0,
+    "Innervate": 1.0,
+    "Starfire": 29.4315,
+    "item 13444": 1.0,
+    "Insect Swarm": 7.88815,
+    "OtherActionManaGain": 11.0,
+    "Moonfire": 6.9532
+   },
+   "dps": 402.0715613590137,
+   "dps_stdev": 35.45068536417653,
+   "threat": 409.5723946923472,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 11.477852949999999,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Starfire": 0.636962547401504,
+    "Insect Swarm": 0.18285803817222493,
+    "Moonfire": 0.180179414426271
+   },
+   "source_shares": {
+    "starfire": 0.637,
+    "insect_swarm": 0.1829,
+    "moonfire_direct": 0.1802
+   },
+   "unmatched_share": 0.0
+  }
+ ],
+ "deltas": {}
+}

@@ -1,0 +1,110 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "gear_max": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "ret-raid-dps",
+   "split": "17/0/34",
+   "ours": true,
+   "dps": {
+    "dummy": 367.14060951885057,
+    "dummy60": 415.3852789998742,
+    "raid": 779.3927856904523,
+    "max": 779.3927856904523,
+    "max60": 764.4092353831716
+   }
+  },
+  {
+   "label": "ret-full-buffs-raid",
+   "split": "10/8/33",
+   "ours": true,
+   "dps": {
+    "dummy": 365.44501337282355,
+    "dummy60": 412.06971741516566,
+    "raid": 804.8136897009356,
+    "max": 804.8136897009356,
+    "max60": 791.3295529563862
+   }
+  },
+  {
+   "label": "opt-ret-dps-raid-dps",
+   "split": "17/0/34",
+   "ours": true,
+   "dps": {
+    "dummy": 368.4430518907619,
+    "dummy60": 418.88410449622364,
+    "raid": 779.098200262559,
+    "max": 779.098200262559,
+    "max60": 764.1101317114684
+   }
+  },
+  {
+   "label": "opt-ret-dps-parse",
+   "split": "9/8/34",
+   "ours": true,
+   "dps": {
+    "dummy": 365.10452758977044,
+    "dummy60": 411.9065140991525,
+    "raid": 805.4132816998726,
+    "max": 805.4132816998726,
+    "max60": 791.9135738163785
+   }
+  },
+  {
+   "label": "sim preset: P4/P5 Ret",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 365.45562234946055,
+    "dummy60": 414.5157230928562,
+    "raid": 776.9197904185272,
+    "max": 776.9197904185272,
+    "max60": 762.3798140870107
+   }
+  },
+  {
+   "label": "sim preset: Retribution 9/0/42",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 352.3308840335046,
+    "dummy60": 411.19050607815603,
+    "raid": 771.4913989545951,
+    "max": 771.4913989545951,
+    "max60": 758.6003798277623
+   }
+  }
+ ]
+}

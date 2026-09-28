@@ -1,0 +1,246 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 15208
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-2s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpEq",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 10438
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see elemental-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 10587
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10587
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 29228
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 29228
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1238300
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "or": {
+      "vals": [
+       {
+        "auraIsActive": {
+         "auraId": {
+          "spellId": 16246
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "2"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "currentMana": {}
+         },
+         "rhs": {
+          "math": {
+           "op": "OpMul",
+           "lhs": {
+            "remainingTime": {}
+           },
+           "rhs": {
+            "const": {
+             "val": "100"
+            }
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10605
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentMana": {}
+      },
+      "rhs": {
+       "math": {
+        "op": "OpMul",
+        "lhs": {
+         "remainingTime": {}
+        },
+        "rhs": {
+         "const": {
+          "val": "26.25"
+         }
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10391,
+      "rank": 7
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see elemental-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 529,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see elemental-dps-rotation-search.json)"
+  }
+ ]
+}

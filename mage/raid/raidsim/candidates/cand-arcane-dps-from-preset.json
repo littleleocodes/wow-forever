@@ -1,0 +1,112 @@
+{
+ "id": "cand-arcane-dps-from-preset",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Improved Channeling",
+    1
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Geometry",
+    2
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Improved Frostbolt",
+    4
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for arcane-dps from sim preset: Arcane 35/0/16 in the dummy setting: 509.7 -> 531.3 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Arcane 35/0/16",
+  "setting": "dummy",
+  "kept": [
+   "Arcane Blast"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Improved Channeling -> Incineration",
+    "gain_seed1": 0.023062489261031605,
+    "gain_seed2": 0.02358117607945287,
+    "split": "32/3/16"
+   },
+   {
+    "round": 2,
+    "move": "3 points Frost Channeling -> Improved Frostbolt",
+    "gain_seed1": 0.01629286980863265,
+    "gain_seed2": 0.01656083393286134,
+    "split": "32/3/16"
+   },
+   {
+    "round": 3,
+    "move": "1 point Improved Channeling -> Improved Frostbolt",
+    "gain_seed1": 0.0015194916838785488,
+    "gain_seed2": 0.0015793964448800324,
+    "split": "31/3/17"
+   }
+  ],
+  "dps_start": 509.74971788133286,
+  "dps_end": 531.2507225443937
+ }
+}

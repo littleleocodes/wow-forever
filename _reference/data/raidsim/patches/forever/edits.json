@@ -1,0 +1,4 @@
+[
+ {"file": "sim/mage/mage.go", "after": "\tmage.registerFireballSpell()\n", "insert": "\tmage.registerFrostfireBolt() // wow-forever patch: Frostfire Bolt (patches/forever/sim/mage/frostfire_bolt.go)\n",
+  "why": "the fork's frostfire_bolt.go is a stub and is not wired into Initialize"}
+]

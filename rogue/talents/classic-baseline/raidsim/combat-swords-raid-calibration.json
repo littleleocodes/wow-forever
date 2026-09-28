@@ -1,0 +1,235 @@
+{
+ "class": "rogue",
+ "spec": "combat-swords-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "combat-swords-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "rogue",
+  "gear": "ui/rogue/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+  "apl": "ui/rogue/apls/combat_sinister_strike.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredRogueThistleTea",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodGrilledSquid",
+   "mainHandImbue": "InstantPoison",
+   "offHandImbue": "DeadlyPoison",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay",
+   "sapperExplosive": "SapperGoblinSapper"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.09164921981425156,
+   "ev_before": 0.08594721023309383,
+   "ev_after": 0.08594721023309383,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Precision",
+   "sim": 0.06073506734000409,
+   "ev_before": 0.06046138374667498,
+   "ev_after": 0.06046138374667498,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Relentless Strikes",
+   "sim": 0.045086494855096415,
+   "ev_before": 0.04667187419761937,
+   "ev_after": 0.04667187419761937,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Adrenaline Rush",
+   "sim": 0.04330503205431199,
+   "ev_before": 0.04344518262780694,
+   "ev_after": 0.04344518262780694,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Improved Sinister Strike",
+   "sim": 0.041119950401297886,
+   "ev_before": 0.041824819855506595,
+   "ev_after": 0.041824819855506595,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Weapon Expertise",
+   "sim": 0.03344883696685049,
+   "ev_before": 0.03243546083636205,
+   "ev_after": 0.03243546083636205,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Sword Specialization",
+   "sim": 0.02716142258342136,
+   "ev_before": 0.026397576600259695,
+   "ev_after": 0.026397576600259695,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Improved Slice and Dice",
+   "sim": 0.026891940919764323,
+   "ev_before": 0.019549609882546684,
+   "ev_after": 0.019549609882546684,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Malice",
+   "sim": 0.019343855249076856,
+   "ev_before": 0.01896864358596989,
+   "ev_after": 0.01896864358596989,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Ruthlessness",
+   "sim": 0.018003146232182583,
+   "ev_before": 0.025856241744711794,
+   "ev_after": 0.025856241744711794,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Aggression",
+   "sim": 0.017100198129563052,
+   "ev_before": 0.02585624174471209,
+   "ev_after": 0.02585624174471209,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Blade Flurry",
+   "sim": 0.010013957779250798,
+   "ev_before": 0.01313020293882265,
+   "ev_after": 0.01313020293882265,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Lethality",
+   "sim": 0.008721808172866115,
+   "ev_before": 0.010556112115542146,
+   "ev_after": 0.010556112115542146,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Improved Eviscerate",
+   "sim": 0.008248587831837224,
+   "ev_before": 0.012596318300529456,
+   "ev_after": 0.012596318300529456,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Endurance",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Improved Sprint",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  },
+  {
+   "talent": "Murder",
+   "sim": 0.0,
+   "ev_before": 0.004999999999999802,
+   "ev_after": 0.004999999999999802,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid"
+   ]
+  }
+ ]
+}

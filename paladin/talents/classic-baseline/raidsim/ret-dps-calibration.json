@@ -1,0 +1,214 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "ret-raid-dps"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "retribution_paladin",
+  "gear": "ui/retribution_paladin/gear_sets/p1_plate_2h.gear.json",
+  "apl": "ui/retribution_paladin/apls/basic_ret.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own sanctity_aura (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "boglingRoot": false,
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "fillerExplosive": "ExplosiveUnknown",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "food": "FoodBlessSunfruit",
+   "flask": "FlaskOfSupremePower",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "ROIDS"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Vengeance",
+   "sim": 0.12045814354158575,
+   "ev_before": 0.1232404036358356,
+   "ev_after": 0.12360642053671846,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "sim": 0.056667599795011084,
+   "ev_before": 0.05771947929333707,
+   "ev_after": 0.05788087537457831,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Conviction",
+   "sim": 0.0454964316785266,
+   "ev_before": 0.03629547926054332,
+   "ev_after": 0.03644322215270013,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Divine Strength",
+   "sim": 0.025638990914315637,
+   "ev_before": 0.02619562761208973,
+   "ev_after": 0.0262666872279018,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Benediction",
+   "sim": 0.022247316815853065,
+   "ev_before": 0.013717021020305037,
+   "ev_after": 0.013871845994871816,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Improved Judgement",
+   "sim": 0.01650314801998199,
+   "ev_before": 0.008079976995548263,
+   "ev_after": 0.007923269093117288,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Divine Intellect",
+   "sim": 0.0013147893367812548,
+   "ev_before": 0.005158199513703649,
+   "ev_after": 0.0013221454323574773,
+   "scale": 0.2549000238068402,
+   "how": "fitted",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Consecration",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Improved Blessing of Might",
+   "sim": 0.0,
+   "ev_before": 0.004827167682678543,
+   "ev_after": 0.004860726892419221,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Improved Retribution Aura",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Improved Seal of the Crusader",
+   "sim": 0.0,
+   "ev_before": 0.007245409942656835,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Pursuit of Justice",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Repentance",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Sanctity Aura",
+   "sim": 0.0,
+   "ev_before": 0.01677209661180914,
+   "ev_after": 0.016961981421014474,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  },
+  {
+   "talent": "Seal of Command",
+   "sim": 0.0,
+   "ev_before": 0.14383452237493383,
+   "ev_after": 0.14426955847315387,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "ret-raid-dps"
+   ]
+  }
+ ]
+}

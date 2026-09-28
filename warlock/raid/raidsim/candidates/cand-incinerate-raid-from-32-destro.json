@@ -1,0 +1,109 @@
+{
+ "id": "cand-incinerate-raid-from-32-destro",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Aftermath",
+    4
+   ],
+   [
+    "Cataclysm",
+    2
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for incinerate-raid from F:/wow-forever/warlock/raid/raidsim/candidates/start-incinerate-8-11-32.json in the dummy setting: 478.0 -> 484.5 DPS on a third seed.",
+ "search": {
+  "start": "F:/wow-forever/warlock/raid/raidsim/candidates/start-incinerate-8-11-32.json",
+  "setting": "dummy",
+  "kept": [
+   "Incinerate"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Improved Corruption -> Suppression",
+    "gain_seed1": 0.007527572873179622,
+    "gain_seed2": 0.00775145699564761,
+    "split": "8/11/32"
+   },
+   {
+    "round": 2,
+    "move": "1 point Aftermath -> Improved Life Tap",
+    "gain_seed1": 0.005205779284997769,
+    "gain_seed2": 0.005630588578179774,
+    "split": "9/11/31"
+   }
+  ],
+  "dps_start": 478.0465778046814,
+  "dps_end": 484.46382672144307
+ }
+}

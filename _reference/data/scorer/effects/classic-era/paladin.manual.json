@@ -1,0 +1,792 @@
+{
+  "_doc": "Classic Era hand-entered Paladin effects for calibration.",
+  "Consecration": {
+    "note": "AoE Holy damage over 8s: the tank's AoE threat (+20% threat), leveling +3% (mana permitting), AoE +10%. PvP (2026-09-27): medium, stealth: Holy damage on the ground breaks stealth on rogues and druids who walk in (flag rooms, sap guards), kills totems and pressures groups; the holy-heal model counts none of its damage. Holy tier 3.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.03],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.1]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Improved Lay on Hands": {
+    "note": "Armor on the LoH target and shorter cooldown: utility. PvP (2026-09-27): low, defensive: Lay on Hands every 40 min instead of 60 and +30% item armor for 2 min on the target: still at most one full-health save per battleground. Audit said medium; lowered for the 40 min cooldown.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Unyielding Faith": {
+    "note": "+5%/rank fear/disorient resist. PvP (2026-09-27): medium, resist: +10% chance to resist fears and disorients (Fear, Psychic Scream, Intimidating Shout, Scatter Shot). Audit said high; a 10% resist chance is a nice extra (Forever's 30% shorter duration is high).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Illumination": {
+    "note": "20%/rank chance for a full mana refund on crit heals (100% at 5/5): refund = chance x crit (22%) -> +4.4%/rank mana.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.044
+      }
+    ]
+  },
+  "Divine Favor": {
+    "note": "Guaranteed crit heal every 2 min. PvP (2026-09-27): high, burst: Guaranteed crit on the next Holy Shock, Flash of Light or Holy Light, 2 min cooldown: the crit Holy Shock burst or an emergency crit heal; the holy-heal model has no damage sources. Needs Illumination 5/5.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Lasting Judgement": {
+    "note": "+10s/rank Judgement of Light/Wisdom: fewer re-judges.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003
+      }
+    ]
+  },
+  "Holy Shock": {
+    "note": "Instant heal/damage every 30s (Classic): +2% healing, +4% Holy damage leveling. PvP (2026-09-27): high, burst: Instant Holy damage or heal on a 30 s cooldown: the shockadin's uninterruptible finisher and heal on the move. The holy-heal model counts only its small healing share. Holy 31 points.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.02]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.04],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Devotion Aura": {
+    "note": "+5%/rank Devotion Aura armor (rank 7: 735 -> 919 at 5/5): ~+1.4% armor on a tank -> ~0.3%/rank effective health, and the whole melee group gets it (raid utility 0.4%/rank). Wowhead: 'Devotion Aura is the most commonly used aura for tanking, so it's worth investing points into.'",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.004
+      }
+    ]
+  },
+  "Redoubt": {
+    "note": "+6%/rank block after being crit (30% at 5/5, ~40% uptime for a tank).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"]
+      }
+    ]
+  },
+  "Blessing of Kings": {
+    "note": "+10% all stats on yourself (and, not scored, the raid): ~+5% damage/healing, +5% mana, +10% health.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.05]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.04]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.02]
+      }
+    ]
+  },
+  "Improved Righteous Fury": {
+    "note": "+16%/rank Righteous Fury threat (60% -> 108% Holy threat at 3/3): ~+6%/rank Holy threat. PvP (2026-09-27): zero, defensive: Righteous Fury threat only: nothing in PvP.",
+    "effects": [
+      {
+        "channel": "threat_up",
+        "scope": ["school:holy"],
+        "per_rank": 0.06
+      }
+    ]
+  },
+  "Shield Specialization": {
+    "note": "+10%/rank block value: ~+1%/rank mitigation.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Improved Concentration Aura": {
+    "note": "Pushback aura for the group: healer utility. PvP (2026-09-27): medium, resist: +15% chance for the group to resist silences and interrupts; the pushback half is redundant for a paladin with Spiritual Focus 5/5 (70% plus the aura's 35%). Audit said high; a 15% chance is not Voice of Truth's immunity. Protection tier 4.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Blessing of Sanctuary": {
+    "note": "-10 damage per hit and Holy damage on block: tank mitigation and threat. PvP (2026-09-27): low, defensive: Blessing on yourself: a flat cut to every hit from any source (10 at rank 1, more at higher ranks) plus Holy damage when you block; it takes the blessing slot from Kings or Might. Protection tier 5.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.03]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Reckoning": {
+    "note": "20%/rank extra attack after being crit: tanks get crit by trash; ~+2%/rank white swings tank, +1%/rank leveling. PvP (2026-09-27): medium, burst: Extra attacks after being crit bank as charges and fire together on a slow two-hander: the Reckoning-bomb build noted in builds.json; players crit far more than mobs. Melee, Protection tier 5.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["white"],
+        "per_rank": 0.02,
+        "modes": ["tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["white"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Holy Shield": {
+    "note": "+30% block 10s with 65 Holy damage per block (on demand): +10% effective health, +10% threat.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.1]
+      }
+    ]
+  },
+  "Improved Blessing of Might": {
+    "note": "+4%/rank Might (+185 AP): +7.4 AP/rank for you (~+0.5%/rank); the raid buff is extra. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, ret-dps): removing it costs 0.0% DPS in the simulator (scorer said 4.0% on the same scale); raid values scaled x0.12 to match (0.5%). Other modes unchanged. PvP (2026-09-27): zero, burst: Raid buff: +20% Blessing of Might for the group; on yourself only +37 attack power. The audit swaps it for Vindication and Pursuit of Justice in the shockadin.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.000619,
+        "values": [0.000619, 0.001238, 0.001857, 0.002476, 0.003095],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.000619,
+        "values": [0.000619, 0.001238, 0.001857, 0.002476, 0.003095],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Improved Seal of the Crusader": {
+    "note": "+5%/rank to Judgement of the Crusader's +140 Holy damage taken: ~+1%/rank Holy damage for you. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Vindication": {
+    "note": "Str/Agi debuff: bosses immune; leveling survivability. PvP (2026-09-27): medium, avoid: Melee hits cut the target's Strength and Agility by 15% for 10 s: less attack power, crit and dodge on a warrior, rogue or hunter, for your whole team. Against physical attackers only.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "avoid"
+      }
+    ]
+  },
+  "Seal of Command": {
+    "note": "70% weapon-damage Holy procs: ~+15% two-hander damage over Seal of Righteousness. Not fitted to the Classic simulator: its rotation conditions on this talent, so the removal run measures a broken rotation (raidsim/run.py flags it apl_dependent). PvP (2026-09-27): medium, burst: Judgement of Command does double damage (339-373 at rank 5) on a stunned or incapacitated target: Hammer of Justice then Judgement is the Retribution burst window. The seal's procs are in the damage term (not in the holy-heal model). Melee.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.15]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Pursuit of Justice": {
+    "note": "+4%/rank movement: travel. 2026-09-27 audit: run speed is travel, which the fight lab keeps fixed (6 s per kill), so it is no longer fitted: 8% / 15% speed x 6 s travel per ~34 s kill saves 0.44 / 0.78 s -> [0.013, 0.023]; pulls of several mobs travel less per kill -> [0.0035, 0.006]. PvP (2026-09-27): medium, move: +8% run and mount speed, but it does not stack with the 8% Minor Speed boot enchant most PvP players wear: the gain is a freed enchant slot and mount speed. Audit said high; Forever's 15% is high.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.013, 0.023],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0035, 0.006],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Eye for an Eye": {
+    "note": "Spell crit reflect: nothing measurable. PvP (2026-09-27): medium, burst: Casters take 30% of every spell crit they land on you (up to half your health): an 1,800 Shadow Bolt crit sends 540 back. Against casters only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Sanctity Aura": {
+    "note": "+10% Holy damage for you and the party. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 0.0% DPS in the simulator (scorer said 1.7% on the same scale); raid values scaled x0.00 to match (1.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.0256],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Vengeance": {
+    "note": "+3%/rank Physical and Holy damage for 8s after a crit: ~60% uptime at raid crit. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 12.0% DPS in the simulator (scorer said 12.3% on the same scale); already within tolerance, raid effects split off unchanged (12.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee", "school:holy"],
+        "per_rank": 0.018,
+        "values": [0.018, 0.036, 0.054, 0.072, 0.09],
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee", "school:holy"],
+        "per_rank": 0.018,
+        "values": [0.018, 0.036, 0.054, 0.072, 0.09],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee", "school:holy"],
+        "per_rank": 0.025685,
+        "values": [0.025685, 0.05137, 0.077055, 0.10274, 0.128424],
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Repentance": {
+    "note": "6s incapacitate: leveling/dungeon control. 2026-09-27 audit: humanoids only (35-46% of spawns) and any damage wakes it: 0.003 single-target, nothing in AoE pulls (Consecration wakes it). PvP (2026-09-27): high, stun: 6 s incapacitate on a 1 min cooldown against any player (all humanoid; shapeshifted druids aside): peel a melee, lock a healer, drink. Retribution 31 points.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.003],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Blessing of Wisdom": {
+    "note": "+10%/rank Wisdom (mana regen) for you (and casters).",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Guardian's Favor": {
+    "note": "BoP/Freedom: healer utility. PvP (2026-09-27): high, escape: Blessing of Freedom 10 -> 16 s (snare and root immunity: leave melee or stay on a kiter) and Blessing of Protection every 3 min instead of 5. Protection tier 2 (5 points).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Improved Hammer of Justice": {
+    "note": "Stun cooldown. 2026-09-27 audit: Hammer of Justice interrupts casting adds: 0.002/rank tank utility. PvP (2026-09-27): high, stun: Hammer of Justice (6 s stun) every 45 s instead of 60 s: the paladin's only stun, and each one doubles Judgement of Command. Protection tier 4 (15 points).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Spiritual Focus": {
+    "note": "14%/rank pushback resistance on heals: ~+0.7%/rank raid throughput. PvP (2026-09-27): high, resist: 70% chance that Flash of Light and Holy Light lose no cast time when you are hit; with Concentration Aura's 35% they cannot be pushed back at all. Healers and shockadin.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.007
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Retribution Aura": {
+    "note": "+25%/rank Retribution Aura damage (parsed): tank threat source.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Retribution Aura"],
+        "per_rank": 0.25
+      }
+    ]
+  },
+  "Toughness": {
+    "note": "+2%/rank armor from items: ~8000 item armor tank -> +800 at 5/5 -> physical damage taken ~-5.8% (armor DR 63.6% -> 65.7%) -> +1.1%/rank effective health. Wowhead classic prot guide: 'Toughness improves your physical damage mitigation'.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.011
+      }
+    ]
+  },
+  "Anticipation": {
+    "note": "+2 defense/rank: +0.04% dodge/parry/block/miss and -0.04% crit taken per point -> +1.6% avoidance, -0.4% crit at 5/5 -> ~+3% effective health for a tank (0.6%/rank). Wowhead: 'defense skill, which is the main stat tanks desire'; 'less valuable as your gear improves'.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "modes": ["tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.002,
+        "modes": ["leveling"]
+      }
+    ]
+  },
+  "Benediction": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 2.2% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Judgement", "ability:Seal"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Judgement", "ability:Seal"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Judgement", "ability:Seal"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Conviction": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 4.5% DPS in the simulator (scorer said 3.6% on the same scale); already within tolerance, raid effects split off unchanged (3.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Divine Intellect": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 0.1% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.25 to match (0.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.00129, 0.00258, 0.00387, 0.00516, 0.006451],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Divine Strength": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:strength"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength"],
+        "values": [0.00989, 0.019781, 0.029671, 0.039562, 0.049452],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Improved Judgement": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 1.7% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Judgement"],
+        "values": [1.0, 2.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Judgement"],
+        "values": [1.0, 2.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Judgement"],
+        "values": [0.75, 1.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  },
+  "Two-Handed Weapon Specialization": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, ret-dps): removing it costs 5.7% DPS in the simulator (scorer said 5.8% on the same scale); already within tolerance, raid effects split off unchanged (5.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["ret-dps"]
+      }
+    ]
+  }
+}

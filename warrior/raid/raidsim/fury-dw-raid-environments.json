@@ -1,0 +1,110 @@
+{
+ "class": "warrior",
+ "spec": "fury-dw-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
+  "gear_max": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "fury-dw-raid",
+   "split": "13/38/0",
+   "ours": true,
+   "dps": {
+    "dummy": 254.64749184798796,
+    "dummy60": 210.53907534440475,
+    "raid": 455.4069926160767,
+    "max": 455.4069926160767,
+    "max60": 458.74340328465564
+   }
+  },
+  {
+   "label": "opt-fury-dw-raid-raid-dps",
+   "split": "14/37/0",
+   "ours": true,
+   "dps": {
+    "dummy": 256.58065594658655,
+    "dummy60": 217.2130461237099,
+    "raid": 441.23966747858515,
+    "max": 441.23966747858515,
+    "max60": 436.91385933461527
+   }
+  },
+  {
+   "label": "opt-fury-dw-raid-parse",
+   "split": "14/37/0",
+   "ours": true,
+   "dps": {
+    "dummy": 256.58065594658655,
+    "dummy60": 217.2130461237099,
+    "raid": 441.23966747858515,
+    "max": 441.23966747858515,
+    "max60": 436.91385933461527
+   }
+  },
+  {
+   "label": "sim preset: DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 240.40410702057852,
+    "dummy60": 213.3202299488166,
+    "raid": 438.79008370776535,
+    "max": 438.79008370776535,
+    "max60": 447.3522477900556
+   }
+  },
+  {
+   "label": "sim preset: Fury 17/34/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 222.80328758973752,
+    "dummy60": 193.2684131042223,
+    "raid": 408.11039766107234,
+    "max": 408.11039766107234,
+    "max60": 412.8582012870699
+   }
+  },
+  {
+   "label": "sim preset: Arms 39/12/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 143.46015089478902,
+    "dummy60": 143.31303340475895,
+    "raid": 274.85960509545635,
+    "max": 274.85960509545635,
+    "max60": 271.93004876554954
+   }
+  }
+ ]
+}

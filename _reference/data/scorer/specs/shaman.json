@@ -1,0 +1,394 @@
+{
+  "_doc": "Shaman spec models. Restoration: Chain Heal / Healing Wave healer. Elemental: Lightning Bolt caster (Lava Burst arrives as a talent effect). Enhancement: one slow weapon with Windfury (Stormstrike arrives as a talent effect); Classic two-handers need the Two-Handed Axes and Maces talent, encoded as a damage effect. Tags enh-nature / enh-lb mark the Enhancement model's Nature spells so Stormstrike's debuff and Maelstrom Weapon only score for a melee shaman. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
+  "models": {
+    "resto-heal": {
+      "note": "Raid healing: Chain Heal 45%, Healing Wave 35%, Lesser Healing Wave 15%, Healing Stream Totem 5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Healing Stream ticks for 11 (Classic 14), Riptide ranks at 40/50/60 (rank 1 456-504 plus 89 every 3s), Water Shield is free with a 15s cooldown, Mana Tide 88 mana every 3s for 12s. Healer lab shares (2026-09-28, resto-raid-healer): healing_wave 81%, healing_stream 12%, lesser_hw 6%, chain_heal 1%; 10% of the healing came from talent-taught spells the model carries as talent effects.",
+      "sources": [
+        {
+          "id": "chain_heal",
+          "share": 0.0115,
+          "tags": ["type:spell", "heal", "school:nature", "direct", "aoe", "ability:Chain Heal"],
+          "cast": 2.5,
+          "min_cast": 1.5,
+          "min_level": 40
+        },
+        {
+          "id": "healing_wave",
+          "share": 0.8081,
+          "tags": ["type:spell", "heal", "school:nature", "direct", "ability:Healing Wave"],
+          "cast": 3.0,
+          "min_cast": 1.5
+        },
+        {
+          "id": "lesser_hw",
+          "share": 0.0647,
+          "tags": ["type:spell", "heal", "school:nature", "direct", "ability:Lesser Healing Wave"],
+          "cast": 1.5,
+          "min_cast": 1.5,
+          "min_level": 20
+        },
+        {
+          "id": "healing_stream",
+          "share": 0.1157,
+          "tags": ["type:spell", "heal", "school:nature", "hot", "ability:Healing Stream Totem", "ability:Totems"],
+          "can_crit": false,
+          "min_level": 20
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.18}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.7, "spirit": 0.2},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "heal": 0.92,
+        "direct": 0.9,
+        "ability:Chain Heal": 0.45,
+        "ability:Healing Wave": 0.35,
+        "ability:Lesser Healing Wave": 0.12,
+        "ability:Totems": 0.08,
+        "ability:Shock": 0.0,
+        "ability:Lightning Bolt": 0.0,
+        "dmgspell": 0.02
+      },
+      "regen_share": 0.5,
+      "abs_dps_factor": 1.0
+    },
+    "elemental-dps": {
+      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-09-28, elemental-raid-dps in the ElliotWood/Forever simulator 40be98e): lightning_bolt 74%, flame_shock 18%, chain_lightning 9%; 6% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "lightning_bolt",
+          "share": 0.7377,
+          "tags": ["type:spell", "school:nature", "ability:Lightning Bolt"],
+          "cast": 2.5,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.7226}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.476},
+            "solo-60": {"share": 0.476}
+          }
+        },
+        {
+          "id": "chain_lightning",
+          "share": 0.0851,
+          "tags": ["type:spell", "school:nature", "aoe", "ability:Chain Lightning"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "cooldown": 6,
+          "min_level": 32,
+          "game_overrides": {
+            "classic-era": {"share": 0.2555}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "earth_shock",
+          "share": 0.0,
+          "tags": ["type:spell", "school:nature", "instant", "ability:Earth Shock", "ability:Shock"],
+          "cooldown": 6,
+          "min_level": 4,
+          "game_overrides": {
+            "classic-era": {"share": 0.0219}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.185},
+            "solo-60": {"share": 0.185}
+          }
+        },
+        {
+          "id": "flame_shock",
+          "share": 0.1772,
+          "tags": ["type:spell", "school:fire", "dot", "instant", "ability:Flame Shock", "ability:Shock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.0}
+          },
+          "min_level": 10,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.182},
+            "solo-60": {"share": 0.182}
+          }
+        },
+        {
+          "id": "fire_totem",
+          "share": 0.0,
+          "tags": ["type:spell", "school:fire", "ability:Fire Totems", "ability:Searing", "ability:Totems"],
+          "can_crit": false,
+          "min_level": 10,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "searing_totem",
+          "share": 0.0,
+          "min_level": 10,
+          "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"],
+          "can_crit": true,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.156},
+            "solo-60": {"share": 0.156}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.7, "spirit": 0.3},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Lightning Bolt": 0.6,
+        "ability:Chain Lightning": 0.15,
+        "ability:Shock": 0.15,
+        "ability:Earth Shock": 0.1,
+        "ability:Flame Shock": 0.05,
+        "ability:Lava Burst": 0.05,
+        "ability:Totems": 0.05,
+        "heal": 0.0,
+        "dmgspell": 0.95
+      },
+      "regen_share": 0.3,
+      "abs_dps_factor": 0.868,
+      "time": {
+        "leveling-st": {"fight": 0.517, "drink": 0.358, "eat": 0.08, "other": 0.0, "death": 0.045},
+        "solo-60": {"fight": 0.517, "drink": 0.358, "eat": 0.08, "other": 0.0, "death": 0.045}
+      },
+      "mana_weight": {"raid-dps": 0.5},
+      "kind_weights_by_profile": {
+        "leveling-st": {"range": 0, "kite": 0.5},
+        "solo-60": {"range": 0, "kite": 0.5}
+      },
+      "kind_note": "Elemental leveling (2026-09-27 audit): the lab's loop bolts while the mob walks in and then fights in melee range, so a longer pull only lengthens the walk-in (Elemental Reach -1.0% in the lab): range 0. Earthbound's root would let it cast unhit, but the loop never casts Earthbind: kite 0.5 until it does. Stun, avoid and move count.",
+      "fight_coupling": {"leveling-st": 0.53, "solo-60": 0.53}
+    },
+    "enhancement-dps": {
+      "note": "One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt casts in 2.5s; Stormstrike is 125 mana on an 8s cooldown and buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%; Windfury Totem gives 95/179/246 attack power (Classic 122/229/315) and Strength of Earth 53 (Classic 77); totems last 5 min on a 1s global cooldown. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-enhancement-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 40%, Windfury 25%, Stormstrike 13%, Lightning Shield 9%, Searing Totem 8%, Chain Lightning 4%, Flame Shock 0%, Lightning Bolt 0%) and the leveling time split is fight 66% / drink 1% / eat 1% / other 0% / death 32% of talent-affected time with fight_coupling 0.8 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, enhancement-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): white 36%, windfury 23%, stormstrike 14%, earth_shock 11%, flame_shock 9%, lightning_bolt 7%; 10% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "white",
+          "share": 0.3586,
+          "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.269},
+            "solo-60": {"share": 0.269},
+            "leveling-aoe": {"share": 0.397}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.6717}
+          }
+        },
+        {
+          "id": "windfury",
+          "share": 0.2314,
+          "tags": ["type:melee", "white", "school:physical", "ability:Windfury Weapon", "weapon:2h"],
+          "min_level": 30,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.185},
+            "solo-60": {"share": 0.185},
+            "leveling-aoe": {"share": 0.252}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.3283}
+          }
+        },
+        {
+          "id": "earth_shock",
+          "share": 0.1071,
+          "tags": ["type:spell", "school:nature", "instant", "ability:Earth Shock", "ability:Shock", "enh-nature"],
+          "cooldown": 6,
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.092},
+            "solo-60": {"share": 0.092},
+            "leveling-aoe": {"share": 0.0}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "lightning_bolt",
+          "share": 0.0723,
+          "tags": ["type:spell", "school:nature", "ability:Lightning Bolt", "enh-nature", "enh-lb"],
+          "cast": 2.5,
+          "min_cast": 1.5,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.0}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "flame_shock",
+          "share": 0.0881,
+          "tags": ["type:spell", "school:fire", "dot", "instant", "ability:Flame Shock", "ability:Shock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.0}
+          },
+          "min_level": 10,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.074},
+            "solo-60": {"share": 0.074},
+            "leveling-aoe": {"share": 0.004}
+          }
+        },
+        {
+          "id": "lightning_shield",
+          "share": 0.0,
+          "tags": ["type:spell", "school:nature", "ability:Lightning Shield", "enh-nature"],
+          "can_crit": false,
+          "min_level": 8,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.16},
+            "solo-60": {"share": 0.16},
+            "leveling-aoe": {"share": 0.088}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "rockbiter",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Rockbiter Weapon", "weapon:2h"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.0}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "stormstrike",
+          "share": 0.1425,
+          "min_level": 25,
+          "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"],
+          "cooldown": 8,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.127},
+            "solo-60": {"share": 0.127},
+            "leveling-aoe": {"share": 0.133}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          },
+          "enabled_by": "Stormstrike"
+        },
+        {
+          "id": "searing_totem",
+          "share": 0.0,
+          "min_level": 10,
+          "tags": ["type:spell", "school:fire", "ability:Searing Totem", "ability:Fire Totems", "totem"],
+          "can_crit": true,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.095},
+            "solo-60": {"share": 0.095},
+            "leveling-aoe": {"share": 0.082}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "chain_lightning",
+          "share": 0.0,
+          "min_level": 32,
+          "tags": ["type:spell", "school:nature", "aoe", "ability:Chain Lightning", "enh-nature"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.044},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.08, "type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.25, "type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"strength": 0.45, "agility": 0.2, "intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.1},
+      "stat_to_surv": {"stamina": 1.0, "agility": 0.2},
+      "int_to_ap_dps": 0.09,
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 0.9,
+        "instant": 0.6,
+        "ability:Shock": 0.5,
+        "ability:Earth Shock": 0.4,
+        "ability:Flame Shock": 0.1,
+        "ability:Lightning Shield": 0.1,
+        "ability:Lightning Bolt": 0.2,
+        "ability:Totems": 0.1,
+        "heal": 0.1,
+        "dmgspell": 0.75
+      },
+      "regen_share": 0.2,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.659, "drink": 0.252, "eat": 0.042, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.659, "drink": 0.252, "eat": 0.042, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.659, "drink": 0.008, "eat": 0.01, "other": 0.0, "death": 0.323}
+      },
+      "mana_weight": {"raid-dps": 0.3},
+      "fight_coupling": {"leveling-aoe": 0.8},
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count.",
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.385,
+          "cap": 0.9,
+          "rms": 0.0104,
+          "points": 50,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-6% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    }
+  }
+}

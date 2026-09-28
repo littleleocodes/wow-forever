@@ -1,0 +1,320 @@
+{
+ "class": "warlock",
+ "spec": "sb-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "ds-ruin-raid",
+  "sm-ruin-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "warlock",
+  "gear": "ui/warlock/gear_sets/mc.gear.json",
+  "apl": "ui/warlock/apls/rotation.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own improved_shadow_bolt (its talent is under test)",
+  "consumables": {
+   "alcohol": "AlcoholRumseyRumBlackLabel",
+   "defaultPotion": "MajorManaPotion",
+   "defaultConjured": "ConjuredDemonicRune",
+   "flask": "FlaskOfSupremePower",
+   "firePowerBuff": "ElixirOfFirepower",
+   "food": "FoodRunnTumTuberSurprise",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "shadowPowerBuff": "ElixirOfShadowPower",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Bane",
+   "sim": 0.12587756943536205,
+   "ev_before": 0.10154852709498391,
+   "ev_after": 0.10215321581838958,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Shadow Bolt",
+   "sim": 0.09700226239763662,
+   "ev_before": 0.18076052796998643,
+   "ev_after": 0.18253938961593813,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Ruin",
+   "sim": 0.09612487693952448,
+   "ev_before": 0.0961786303829444,
+   "ev_after": 0.09672555582592729,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Shadow Mastery",
+   "sim": 0.07607035084003573,
+   "ev_before": 0.07275622962326171,
+   "ev_after": 0.07275622962326171,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Devastation",
+   "sim": 0.03240463113053588,
+   "ev_before": 0.02627105465316727,
+   "ev_after": 0.026411116665143196,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Corruption",
+   "sim": 0.02443203515608787,
+   "ev_before": 0.024025020172317935,
+   "ev_after": 0.024025020172317935,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Suppression",
+   "sim": 0.021470306881577597,
+   "ev_before": 0.018845961934528494,
+   "ev_after": 0.018935606416635622,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Shadowburn",
+   "sim": 0.011110339399543506,
+   "ev_before": 0.009195125702709629,
+   "ev_after": 0.009238281417567374,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Amplify Curse",
+   "sim": 0.007178009516491006,
+   "ev_before": 0.004390311450238931,
+   "ev_after": 0.004390311450238931,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Curse of Agony",
+   "sim": 0.006060184978361198,
+   "ev_before": 0.005222998627770684,
+   "ev_after": 0.005222998627770684,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Nightfall",
+   "sim": 0.005882682297168668,
+   "ev_before": 0.011266706381771298,
+   "ev_after": 0.011266706381771298,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Life Tap",
+   "sim": 0.0054338243318353754,
+   "ev_before": 0.004943635612057661,
+   "ev_after": 0.004984240572370263,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Cataclysm",
+   "sim": 0.0007124885055893637,
+   "ev_before": 0.004304392104179243,
+   "ev_after": 0.0043508486776494,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Demonic Embrace",
+   "sim": 0.0,
+   "ev_before": 0.01126843888247432,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Destructive Reach",
+   "sim": 0.0,
+   "ev_before": 0.0023470931538624486,
+   "ev_after": 0.0023663158245275945,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid",
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Fel Domination",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Fel Intellect",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Fel Stamina",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Healthstone",
+   "sim": 0.0,
+   "ev_before": 1.2278802077957793e-05,
+   "ev_after": 1.2470083228251447e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Master Summoner",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Grim Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Curse of Weakness",
+   "sim": 0.0,
+   "ev_before": 0.0022324105884291056,
+   "ev_after": 0.0022324105884291056,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Drain Soul",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Siphon Life",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "sm-ruin-raid"
+   ]
+  },
+  {
+   "talent": "Demonic Sacrifice",
+   "sim": -0.027129213884473365,
+   "ev_before": 0.004213821353862484,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "ds-ruin-raid"
+   ]
+  }
+ ]
+}

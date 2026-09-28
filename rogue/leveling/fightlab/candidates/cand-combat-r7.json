@@ -1,0 +1,245 @@
+{
+ "id": "cand-combat-r7",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Improved Gouge",
+    3
+   ],
+   [
+    "Remorseless Attacks",
+    1
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    5
+   ],
+   [
+    "Vile Poisons",
+    1
+   ],
+   [
+    "Mutilate",
+    1
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Improved Sprint",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    4
+   ]
+  ],
+  "Subtlety": []
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 3
+  },
+  {
+   "levels": "20",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "22-26",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "27-28",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "29-31",
+   "tree": "Assassination",
+   "talent": "Improved Slice and Dice",
+   "points": 3
+  },
+  {
+   "levels": "32",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Assassination",
+   "talent": "Improved Gouge",
+   "points": 3
+  },
+  {
+   "levels": "36",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 1
+  },
+  {
+   "levels": "37",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "38-41",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 4
+  },
+  {
+   "levels": "42-43",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 1
+  },
+  {
+   "levels": "46",
+   "tree": "Assassination",
+   "talent": "Mutilate",
+   "points": 1
+  },
+  {
+   "levels": "47-51",
+   "tree": "Assassination",
+   "talent": "Seal Fate",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Assassination",
+   "talent": "Venom",
+   "points": 1
+  },
+  {
+   "levels": "53-54",
+   "tree": "Combat",
+   "talent": "Endurance",
+   "points": 2
+  },
+  {
+   "levels": "55",
+   "tree": "Combat",
+   "talent": "Improved Sprint",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 4
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 7)"
+}

@@ -1,0 +1,63 @@
+{
+ "eat_below": 0.4,
+ "class": "warrior",
+ "spec": "arms-2h-raid",
+ "build": "leveling-arms",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.036530592124702,
+   "gain_seed2": 0.02589376806146171
+  }
+ ],
+ "weighted_before": 28.801383634562672,
+ "weighted_after": 27.954895000088634,
+ "per_level": {
+  "20": {
+   "before": 21.688866666525826,
+   "after": 21.688866666525826,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 26.080325470632058,
+   "after": 25.48469999998648,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 28.544229821851182,
+   "after": 27.70246666674256,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 29.58359550346544,
+   "after": 28.4246000001016,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 32.05234435692895,
+   "after": 31.055533333547235,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

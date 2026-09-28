@@ -1,0 +1,239 @@
+{
+ "id": "cand-aoe-r1",
+ "allocation": {
+  "Elemental": [],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Earth's Grasp",
+    2
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Guardian Totems",
+    2
+   ],
+   [
+    "Improved Lightning Shield",
+    1
+   ],
+   [
+    "Anticipation",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Improved Healing Wave",
+    5
+   ],
+   [
+    "Tidal Focus",
+    1
+   ],
+   [
+    "Improved Reincarnation",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Enhancement",
+   "talent": "Improved Ghost Wolf",
+   "points": 2
+  },
+  {
+   "levels": "20-22",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Toughness",
+   "points": 2
+  },
+  {
+   "levels": "28-29",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Enhancement",
+   "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 2
+  },
+  {
+   "levels": "33",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "35-37",
+   "tree": "Enhancement",
+   "talent": "Toughness",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Enhancement",
+   "talent": "Earth's Grasp",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Enhancement",
+   "talent": "Guardian Totems",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Restoration",
+   "talent": "Improved Healing Wave",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Enhancement",
+   "talent": "Guardian Totems",
+   "points": 1
+  },
+  {
+   "levels": "46-49",
+   "tree": "Restoration",
+   "talent": "Improved Healing Wave",
+   "points": 4
+  },
+  {
+   "levels": "50",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Restoration",
+   "talent": "Improved Reincarnation",
+   "points": 2
+  },
+  {
+   "levels": "53-54",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 2
+  },
+  {
+   "levels": "55-59",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 1)"
+}

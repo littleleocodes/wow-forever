@@ -1,0 +1,62 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "mm-hawk-raid",
+   "split": "22/29/0",
+   "ours": true,
+   "dps": {
+    "dummy": 468.5001989091286,
+    "dummy60": 507.2264276889651,
+    "raid": 814.541866889421,
+    "max": 814.541866889421,
+    "max60": 832.6631281959211
+   }
+  },
+  {
+   "label": "sim preset: Beast Mastery 35/16/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 436.73519538329094,
+    "dummy60": 474.5515824663469,
+    "raid": 763.4366643620675,
+    "max": 763.4366643620675,
+    "max60": 786.3201048520896
+   }
+  }
+ ]
+}

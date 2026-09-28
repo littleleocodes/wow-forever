@@ -1,0 +1,93 @@
+{
+ "class": "druid",
+ "spec": "feral-cat-dps",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "feral_druid",
+  "gear": "ui/feral_druid/gear_sets/p1.bis.gear.json",
+  "apl": "ui/feral_druid/apls/feral.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own leader_of_the_pack (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfDistilledWisdom",
+   "food": "FoodGrilledSquid",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay",
+   "sapperExplosive": "SapperGoblinSapper"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "feral-cat-dps",
+   "talents": "014005301-5000520323222051-05",
+   "split": "14/32/5",
+   "ours": true,
+   "dps": 671.2865559292646,
+   "dps_stdev": 32.00442681573922,
+   "threat": 503.16996895122855,
+   "dtps": 4.061661890674223,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.610817257730262,
+   "shares": {
+    "Shred": 0.42589180529003035,
+    "Auto Attack": 0.36566258422713266,
+    "Ferocious Bite": 0.18482513808520795,
+    "item 10646": 0.01639683759427105,
+    "Dragonbreath Chili": 0.006882361140647018,
+    "Claw": 0.0003412736627110011
+   },
+   "source_shares": {
+    "shred": 0.436,
+    "white": 0.3744,
+    "ferocious_bite": 0.1892,
+    "claw_rake": 0.0003
+   },
+   "unmatched_share": 0.0233
+  },
+  {
+   "label": "sim preset: Feral",
+   "talents": "500005301-5500021323202151-05",
+   "split": "",
+   "ours": false,
+   "dps": 690.9897985124634,
+   "dps_stdev": 34.058997943117475,
+   "threat": 517.2816289634288,
+   "dtps": 4.073845779083707,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Shred": 0.4146060706065653,
+    "Auto Attack": 0.3550965492759912,
+    "Ferocious Bite": 0.2073732873023629,
+    "item 10646": 0.01599457340221203,
+    "Dragonbreath Chili": 0.006623495584267588,
+    "Claw": 0.0003060238286010378
+   },
+   "source_shares": {
+    "shred": 0.4242,
+    "white": 0.3633,
+    "ferocious_bite": 0.2122,
+    "claw_rake": 0.0003
+   },
+   "unmatched_share": 0.0226
+  }
+ ],
+ "deltas": {}
+}

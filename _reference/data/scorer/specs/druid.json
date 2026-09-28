@@ -1,0 +1,400 @@
+{
+  "_doc": "Druid spec models. resto-heal: Healing Touch / Regrowth / Rejuvenation healer (Swiftmend and Wild Growth arrive as talent effects). balance-dps: Starfire caster with Wrath and Moonfire. feral-cat-dps: Shred cat with Ferocious Bite/Rip finishers (tags cat, finisher). feral-bear-tank: Maul/Swipe bear (tags tank, bear; Mangle arrives as a talent effect). 'form' drives Heart of the Wild's form-specific stats. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
+  "models": {
+    "resto-heal": {
+      "note": "Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5%. Healer lab shares (2026-09-28, resto-raid-healer): healing_touch 68%, regrowth 21%, rejuvenation 11%; 1% of the healing came from talent-taught spells the model carries as talent effects.",
+      "sources": [
+        {
+          "id": "healing_touch",
+          "share": 0.6756,
+          "tags": ["type:spell", "heal", "school:nature", "direct", "ability:Healing Touch", "ability:Healing"],
+          "cast": 3.5,
+          "min_cast": 1.5
+        },
+        {
+          "id": "regrowth",
+          "share": 0.2118,
+          "tags": ["type:spell", "heal", "school:nature", "direct", "hot", "ability:Regrowth", "ability:Healing"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "min_level": 12
+        },
+        {
+          "id": "rejuvenation",
+          "share": 0.1126,
+          "tags": ["type:spell", "heal", "school:nature", "hot", "instant", "ability:Rejuvenation", "ability:Healing"],
+          "can_crit": false,
+          "min_level": 4
+        },
+        {
+          "id": "tranquility",
+          "share": 0.0,
+          "tags": ["type:spell", "heal", "school:nature", "hot", "aoe", "ability:Tranquility", "ability:Healing"],
+          "can_crit": false,
+          "cooldown": 300,
+          "min_level": 30
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.18}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.5},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "heal": 1.0,
+        "ability:Healing": 1.0,
+        "direct": 0.65,
+        "hot": 0.35,
+        "ability:Healing Touch": 0.35,
+        "ability:Regrowth": 0.32,
+        "ability:Rejuvenation": 0.28,
+        "ability:Tranquility": 0.05,
+        "ability:Wrath": 0.0,
+        "ability:Starfire": 0.0,
+        "ability:Moonfire": 0.0
+      },
+      "regen_share": 0.45,
+      "abs_dps_factor": 1.0
+    },
+    "balance-dps": {
+      "note": "Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Wrath rank 8 92-102 in 2s for 120 mana (57.1% coefficient; +50% base in build 70009), Starfire rank 7 350-412 in 3.5s for 340 mana (100%): Starfire still leads per cast-second, Wrath per mana, so the 55/20 split stands; Moonfire rank 10 128-151 plus 240 over 12s. Raid sim shares (2026-09-28, balance-moonkin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): starfire 63%, moonfire_direct 19%, insect_swarm 18%; 0% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "starfire",
+          "share": 0.6321,
+          "tags": ["type:spell", "school:arcane", "direct", "ability:Starfire"],
+          "cast": 3.5,
+          "min_cast": 1.5,
+          "min_level": 20,
+          "game_overrides": {
+            "classic-era": {"share": 0.79}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.645},
+            "solo-60": {"share": 0.645}
+          }
+        },
+        {
+          "id": "wrath",
+          "share": 0.0,
+          "tags": ["type:spell", "school:nature", "direct", "ability:Wrath"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.0078}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "moonfire_direct",
+          "share": 0.1865,
+          "tags": ["type:spell", "school:arcane", "direct", "instant", "ability:Moonfire"],
+          "min_level": 4,
+          "game_overrides": {
+            "classic-era": {"share": 0.2021}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.193},
+            "solo-60": {"share": 0.193}
+          }
+        },
+        {
+          "id": "moonfire_dot",
+          "share": 0.0,
+          "tags": ["type:spell", "school:arcane", "dot", "instant", "ability:Moonfire"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.0}
+          },
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "insect_swarm",
+          "share": 0.1814,
+          "tags": ["type:spell", "school:nature", "dot", "ability:Insect Swarm"],
+          "can_crit": false,
+          "enabled_by": "Insect Swarm",
+          "displaces": ["starfire"],
+          "note": "Insect Swarm: 16% of the Forever raid split (2026-09-26), not cast by the Classic rotation; without the talent the casts are Starfires.",
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.162},
+            "solo-60": {"share": 0.162}
+          }
+        },
+        {
+          "id": "wand_white",
+          "share": 0.05,
+          "tags": ["type:ranged", "white", "school:arcane", "ability:Wand"],
+          "max_level": 39
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05, "type:ranged": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15, "type:ranged": 0.1}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Starfire": 0.6,
+        "ability:Wrath": 0.2,
+        "ability:Moonfire": 0.15,
+        "ability:Insect Swarm": 0.05,
+        "heal": 0.0,
+        "ability:Healing": 0.0
+      },
+      "regen_share": 0.4,
+      "abs_dps_factor": 0.491,
+      "time": {
+        "leveling-st": {"fight": 0.548, "drink": 0.358, "eat": 0.048, "other": 0.0, "death": 0.046},
+        "solo-60": {"fight": 0.548, "drink": 0.358, "eat": 0.048, "other": 0.0, "death": 0.046}
+      },
+      "mana_weight": {"raid-dps": 0.5},
+      "fight_coupling": {"leveling-st": 0.93, "solo-60": 0.93},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.3075,
+          "cap": 0.26,
+          "rms": 0.0257,
+          "points": 23,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-3% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    },
+    "feral-cat-dps": {
+      "note": "White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5%. Leveling: Claw/Rake replace most Shreds (no reliable positioning), see profile_overrides. Levels 10-19 (before Cat Form): Bear Form Maul with Moonfire/Wrath pulls (the *_early sources). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shred is 155% weapon damage plus 54-180 (Classic 225%), Claw 110% plus 29-126, Rake learned at 24 (Claw 20), Tiger's Fury one rank at 24 (15% for 6s, 30s cooldown, free); Shred still edges Claw per Energy at 60, so the shares stand. Cat Mangle does not exist; Primal Bite is bear-only. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-feral-cat-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 30%, Claw 24%, Ferocious Bite 20%, Ravage 15%, Rake 6%, Rip 3%) and the leveling time split is fight 82% / drink 5% / eat 9% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, feral-cat-dps in the ElliotWood/Forever simulator 40be98e): rip 36%, shred 33%, white 31%; 4% of the damage matched no source.",
+      "form": "cat",
+      "sources": [
+        {
+          "id": "white",
+          "share": 0.3087,
+          "tags": ["type:melee", "white", "school:physical", "cat", "form:cat", "mainhand"],
+          "min_level": 20,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.386},
+            "solo-60": {"share": 0.386}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.3743}
+          }
+        },
+        {
+          "id": "shred",
+          "share": 0.3268,
+          "tags": ["type:melee", "yellow", "school:physical", "cat", "form:cat", "builder", "ability:Shred"],
+          "cost": 60,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          },
+          "min_level": 22,
+          "game_overrides": {
+            "classic-era": {"share": 0.4364}
+          }
+        },
+        {
+          "id": "ferocious_bite",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "cat", "form:cat", "finisher", "ability:Ferocious Bite"],
+          "cost": 35,
+          "min_level": 32,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.26},
+            "solo-60": {"share": 0.26}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.1889}
+          }
+        },
+        {
+          "id": "rip",
+          "share": 0.3645,
+          "tags": ["type:melee", "yellow", "school:physical", "cat", "form:cat", "finisher", "dot", "bleed", "ability:Rip"],
+          "can_crit": false,
+          "cost": 30,
+          "min_level": 20,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.043},
+            "solo-60": {"share": 0.043}
+          },
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "claw_rake",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "cat", "form:cat", "builder", "ability:Claw", "ability:Rake"],
+          "cost": 40,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.31},
+            "solo-60": {"share": 0.31}
+          },
+          "min_level": 20,
+          "game_overrides": {
+            "classic-era": {"share": 0.0003}
+          }
+        },
+        {
+          "id": "bear_white_early",
+          "share": 0.25,
+          "max_level": 19,
+          "tags": ["type:melee", "white", "school:physical", "bear", "form:bear", "mainhand"]
+        },
+        {
+          "id": "maul_early",
+          "share": 0.3,
+          "max_level": 19,
+          "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "ability:Maul"],
+          "cost": 15
+        },
+        {
+          "id": "moonfire_early",
+          "share": 0.2,
+          "max_level": 19,
+          "tags": ["type:spell", "school:arcane", "direct", "instant", "ability:Moonfire"]
+        },
+        {
+          "id": "wrath_early",
+          "share": 0.25,
+          "max_level": 19,
+          "tags": ["type:spell", "school:nature", "direct", "ability:Wrath"],
+          "cast": 2.0,
+          "min_cast": 1.5
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.08}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.25}
+        }
+      },
+      "stat_to_dps": {"strength": 0.5, "agility": 0.35, "intellect": 0.0},
+      "stat_to_sustain": {"intellect": 0.3, "spirit": 0.1},
+      "stat_to_surv": {"stamina": 1.0, "agility": 0.2},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 0.6,
+        "ability:Healing": 0.5,
+        "ability:Healing Touch": 0.3,
+        "ability:Regrowth": 0.15,
+        "ability:Rejuvenation": 0.1,
+        "shapeshift": 0.4,
+        "ability:Wrath": 0.0,
+        "ability:Starfire": 0.0,
+        "ability:Moonfire": 0.05
+      },
+      "regen_share": 0.2,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.818, "drink": 0.046, "eat": 0.088, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.818, "drink": 0.046, "eat": 0.088, "other": 0.0, "death": 0.048}
+      },
+      "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0},
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count. Cat leveling (fight lab): Bash is Bear-only and the cat opens with Ravage, so stun talents measure 0.0 +-0.0 (Brutal Impact): stun 0 while leveling single-target.",
+      "kind_weights_by_profile": {
+        "leveling-st": {"stun": 0},
+        "solo-60": {"stun": 0}
+      }
+    },
+    "feral-bear-tank": {
+      "note": "Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Primal Bite (renamed Mangle) is bear-only, 20 Rage, 6s cooldown, ranks at 25/40/50/60 (+26/38/59/77) and arrives as a talent effect; Lacerate (42/50/58) is not modelled; Faerie Fire is learned at 18 and Demoralizing Roar at 10. Raid sim shares (2026-09-28, feral-bear-tank in the ElliotWood/Forever simulator 40be98e): lacerate 79%, white 17%, maul 3%, thorns 1%; 3% of the damage matched no source.",
+      "form": "bear",
+      "sources": [
+        {
+          "id": "maul",
+          "share": 0.0264,
+          "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "tank", "threat", "ability:Maul"],
+          "cost": 15
+        },
+        {
+          "id": "white",
+          "share": 0.1744,
+          "tags": ["type:melee", "white", "school:physical", "bear", "form:bear", "tank", "threat", "mainhand"]
+        },
+        {
+          "id": "swipe",
+          "share": 0.0,
+          "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "tank", "threat", "aoe", "ability:Swipe"],
+          "cost": 20,
+          "min_level": 16
+        },
+        {
+          "id": "thorns",
+          "share": 0.0072,
+          "tags": ["type:spell", "school:nature", "bear", "tank", "threat", "ability:Thorns"],
+          "can_crit": false,
+          "min_level": 6
+        },
+        {
+          "id": "debuffs",
+          "share": 0.0,
+          "tags": ["type:spell", "bear", "tank", "threat", "ability:Faerie Fire", "ability:Demoralizing Roar"],
+          "can_crit": false,
+          "min_level": 10
+        },
+        {
+          "id": "lacerate",
+          "share": 0.7921,
+          "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "tank", "threat", "dot", "bleed", "ability:Lacerate"],
+          "cost": 15,
+          "note": "2026-09-27 audit: Lacerate is 54.6% of the simulator's bear threat and had no source (Genesis, Shredding Attacks and Rend and Tear scored 0); the raid calibration writes its measured share."
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:melee": 0.05, "type:spell": 0.0}
+        },
+        "raid": {
+          "crit": {"type:melee": 0.12, "type:spell": 0.0}
+        }
+      },
+      "stat_to_dps": {"strength": 0.4, "agility": 0.2},
+      "stat_to_sustain": {"intellect": 0.3},
+      "stat_to_surv": {"stamina": 1.0, "agility": 0.3},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 0.6,
+        "ability:Healing": 0.5,
+        "ability:Healing Touch": 0.3,
+        "ability:Regrowth": 0.15,
+        "ability:Rejuvenation": 0.1,
+        "shapeshift": 0.4
+      },
+      "regen_share": 0.2,
+      "abs_dps_factor": 1.0,
+      "kind_weights": {"kite": 0, "range": 0},
+      "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count. A raid bear spends rage, not mana: mana_weight 0 in raid-tank (Reflection, Moonglow, Natural Shapeshifter no longer score as tank talents).",
+      "mana_weight": {"raid-tank": 0.0}
+    }
+  }
+}

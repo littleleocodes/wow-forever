@@ -1,0 +1,474 @@
+{
+  "_doc": "Warlock spec models. sb-raid: Shadow Bolt spam with Corruption/Curse (the DS/Ruin and SM/Ruin family). affliction-raid: DoT-heavy raid spec (Corruption, Agony, Siphon Life via talent, Drain Life filler). fire-destro-raid: Immolate/Searing Pain/Soul Fire with Conflagrate and Incinerate arriving as talent effects; its filler is tagged 'filler' so Incinerate can replace it. affliction-leveling: Voidwalker tank with DoTs and Drain Life. Tags: 'mainschool' marks the sources a Demonic Sacrifice / Master Demonologist school buff applies to; pets are 'pet' sources that Demonic Sacrifice disables. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
+  "models": {
+    "sb-raid": {
+      "note": "Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-28, ds-ruin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 56%, agony 18%, corruption 17%, immolate 9%; 1% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "shadow_bolt",
+          "share": 0.5588,
+          "tags": ["type:spell", "school:shadow", "direct", "mainschool", "ability:Shadow Bolt", "ability:Destruction"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.6238}
+          }
+        },
+        {
+          "id": "corruption",
+          "share": 0.1719,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.1325}
+          },
+          "min_level": 4
+        },
+        {
+          "id": "agony",
+          "share": 0.1799,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true},
+            "classic-era": {"share": 0.127}
+          },
+          "min_level": 8
+        },
+        {
+          "id": "immolate",
+          "share": 0.0894,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.1167}
+          }
+        },
+        {
+          "id": "imp",
+          "share": 0.0,
+          "tags": ["pet", "type:spell", "school:fire", "ability:Imp", "ability:Imp's Firebolt", "withpet"],
+          "cast": 2.0,
+          "min_cast": 1.0,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05, "pet": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15, "pet": 0.1}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.04},
+      "stat_to_sustain": {"intellect": 0.5, "stamina": 0.4, "spirit": 0.05},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Destruction": 0.8,
+        "ability:Shadow Bolt": 0.75,
+        "ability:Affliction": 0.15,
+        "ability:Corruption": 0.1,
+        "ability:Curse of Agony": 0.03,
+        "ability:Bane of Agony": 0.03,
+        "ability:Immolate": 0.05,
+        "ability:Drains": 0.0
+      },
+      "regen_share": 0.1,
+      "pet_surv_to_sustain": 0.0,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.6, "downtime": 0.3, "death": 0.1}
+      },
+      "mana_weight": {"raid-dps": 0.3},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.175,
+          "cap": 0.9,
+          "rms": 0.0054,
+          "points": 23,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 10-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    },
+    "affliction-raid": {
+      "note": "Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-28, affliction-dot-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 52%, agony 17%, corruption 16%, immolate 10%, imp 5%; 1% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "corruption",
+          "share": 0.1582,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4
+        },
+        {
+          "id": "agony",
+          "share": 0.1661,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 8
+        },
+        {
+          "id": "shadow_bolt",
+          "share": 0.5237,
+          "tags": ["type:spell", "school:shadow", "direct", "mainschool", "ability:Shadow Bolt", "ability:Destruction"],
+          "cast": 3.0,
+          "min_cast": 1.5
+        },
+        {
+          "id": "drain_life",
+          "share": 0.0,
+          "tags": ["type:spell", "school:shadow", "channel", "mainschool", "ability:Drain Life", "ability:Drains", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 14
+        },
+        {
+          "id": "immolate",
+          "share": 0.0971,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
+          "cast": 2.0,
+          "min_cast": 1.5
+        },
+        {
+          "id": "imp",
+          "share": 0.0549,
+          "tags": ["pet", "type:spell", "school:fire", "ability:Imp", "ability:Imp's Firebolt", "withpet"],
+          "cast": 2.0,
+          "min_cast": 1.0
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05, "pet": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15, "pet": 0.1}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.04},
+      "stat_to_sustain": {"intellect": 0.5, "stamina": 0.4, "spirit": 0.05},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Destruction": 0.4,
+        "ability:Shadow Bolt": 0.35,
+        "ability:Affliction": 0.6,
+        "ability:Corruption": 0.25,
+        "ability:Curse of Agony": 0.1,
+        "ability:Bane of Agony": 0.1,
+        "ability:Immolate": 0.05,
+        "ability:Drains": 0.15,
+        "ability:Drain Life": 0.15
+      },
+      "regen_share": 0.1,
+      "pet_surv_to_sustain": 0.0,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.6, "downtime": 0.3, "death": 0.1}
+      },
+      "mana_weight": {"raid-dps": 0.3},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.2,
+          "cap": 0.13,
+          "rms": 0.0092,
+          "points": 21,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 11-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    },
+    "fire-destro-raid": {
+      "note": "Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Incinerate ranks at 40/50/60 (201-233 in 2.5s at 71.4%, +25% with Immolate) replace the 3s Shadow Bolt filler (encoded as the Incinerate talent effect on the filler source); Conflagrate has six ranks from 25; Shadowburn rank 6 259-288; Soul Fire rank 2 390-487. Raid sim shares (2026-09-28, destruction-fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): filler 55%, agony 18%, corruption 17%, immolate 9%, searing_pain 1%; 1% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "immolate",
+          "share": 0.0941,
+          "tags": ["type:spell", "school:fire", "dot", "direct", "mainschool", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
+          "cast": 2.0,
+          "min_cast": 1.5
+        },
+        {
+          "id": "filler",
+          "share": 0.5487,
+          "tags": ["type:spell", "school:fire", "direct", "filler", "mainschool", "ability:Shadow Bolt", "ability:Incinerate", "ability:Destruction"],
+          "cast": 3.0,
+          "min_cast": 1.5
+        },
+        {
+          "id": "searing_pain",
+          "share": 0.0075,
+          "tags": ["type:spell", "school:fire", "direct", "mainschool", "ability:Searing Pain", "ability:Destruction"],
+          "cast": 1.5,
+          "min_cast": 1.5,
+          "min_level": 18
+        },
+        {
+          "id": "soul_fire",
+          "share": 0.0,
+          "tags": ["type:spell", "school:fire", "direct", "mainschool", "ability:Soul Fire", "ability:Destruction"],
+          "cooldown": 60,
+          "min_level": 48
+        },
+        {
+          "id": "corruption",
+          "share": 0.1728,
+          "tags": ["type:spell", "school:shadow", "dot", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4
+        },
+        {
+          "id": "agony",
+          "share": 0.1769,
+          "tags": ["type:spell", "school:shadow", "dot", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "note": "Bane of Agony: 17% of the Forever raid split of the fire-destro build (2026-09-26); the simulator's warlock rotation is Shadow Bolt + dots for every build."
+        },
+        {
+          "id": "imp",
+          "share": 0.0,
+          "tags": ["pet", "type:spell", "school:fire", "mainschool", "ability:Imp", "ability:Imp's Firebolt", "withpet"],
+          "cast": 2.0,
+          "min_cast": 1.0
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05, "pet": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15, "pet": 0.1}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.04},
+      "stat_to_sustain": {"intellect": 0.5, "stamina": 0.4, "spirit": 0.05},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Destruction": 0.9,
+        "ability:Shadow Bolt": 0.3,
+        "ability:Incinerate": 0.3,
+        "ability:Immolate": 0.3,
+        "ability:Searing Pain": 0.2,
+        "ability:Soul Fire": 0.05,
+        "ability:Affliction": 0.1,
+        "ability:Corruption": 0.1,
+        "ability:Drains": 0.0
+      },
+      "regen_share": 0.1,
+      "pet_surv_to_sustain": 0.0,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.6, "downtime": 0.3, "death": 0.1}
+      },
+      "mana_weight": {"raid-dps": 0.3},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.155,
+          "cap": 0.9,
+          "rms": 0.0051,
+          "points": 43,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 10-11% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    },
+    "affliction-leveling": {
+      "note": "Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20%. Downtime is mostly the pet's health and Life Tap. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-affliction-leveling-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Rain of Fire 70%, Corruption 9%, Voidwalker melee 8%, Bane of Agony 6%, Immolate 4%, Wand 2%, Drain Life 1%, Death Coil 1%) and the leveling time split is fight 73% / drink 4% / eat 7% / other 0% / death 16% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "sources": [
+        {
+          "id": "corruption",
+          "share": 0.219,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.254},
+            "solo-60": {"share": 0.254},
+            "leveling-aoe": {"share": 0.085}
+          }
+        },
+        {
+          "id": "agony",
+          "share": 0.225,
+          "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 8,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.243},
+            "solo-60": {"share": 0.243},
+            "leveling-aoe": {"share": 0.061}
+          }
+        },
+        {
+          "id": "drain_life",
+          "share": 0.021,
+          "tags": ["type:spell", "school:shadow", "channel", "mainschool", "ability:Drain Life", "ability:Drains", "ability:Affliction", "ability:Warlock"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 14,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.031},
+            "solo-60": {"share": 0.031},
+            "leveling-aoe": {"share": 0.01}
+          }
+        },
+        {
+          "id": "shadow_bolt",
+          "share": 0.232,
+          "tags": ["type:spell", "school:shadow", "direct", "mainschool", "ability:Shadow Bolt", "ability:Destruction"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.0}
+          }
+        },
+        {
+          "id": "immolate",
+          "share": 0.041,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
+          "cast": 2.0,
+          "min_cast": 1.5,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.056},
+            "solo-60": {"share": 0.056},
+            "leveling-aoe": {"share": 0.04}
+          }
+        },
+        {
+          "id": "wand",
+          "share": 0.062,
+          "tags": ["type:ranged", "white", "school:shadow", "ability:Wand"],
+          "can_crit": true,
+          "min_level": 5,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.16},
+            "solo-60": {"share": 0.16},
+            "leveling-aoe": {"share": 0.018}
+          }
+        },
+        {
+          "id": "voidwalker",
+          "share": 0.102,
+          "tags": ["pet", "type:melee", "school:physical", "ability:Voidwalker", "withpet"],
+          "min_level": 10,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.145},
+            "solo-60": {"share": 0.145},
+            "leveling-aoe": {"share": 0.08}
+          }
+        },
+        {
+          "id": "siphon_life",
+          "share": 0.098,
+          "min_level": 30,
+          "tags": ["type:spell", "school:shadow", "dot", "instant", "mainschool", "ability:Siphon Life", "ability:Affliction", "ability:Warlock"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.11},
+            "solo-60": {"share": 0.11},
+            "leveling-aoe": {"share": 0.0}
+          },
+          "enabled_by": "Siphon Life"
+        },
+        {
+          "id": "death_coil",
+          "share": 0.0,
+          "min_level": 42,
+          "tags": ["type:spell", "school:shadow", "instant", "mainschool", "ability:Death Coil"],
+          "cooldown": 120,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.006},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "rain_of_fire",
+          "share": 0.0,
+          "min_level": 20,
+          "tags": ["type:spell", "school:fire", "aoe", "ability:Rain of Fire", "ability:Destruction"],
+          "cast": 8.0,
+          "min_cast": 8.0,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.7},
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05, "type:ranged": 0.05, "pet": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15, "type:ranged": 0.1, "pet": 0.1}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.04},
+      "stat_to_sustain": {"intellect": 0.4, "stamina": 0.5, "spirit": 0.05},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "ability:Destruction": 0.3,
+        "ability:Shadow Bolt": 0.25,
+        "ability:Affliction": 0.65,
+        "ability:Corruption": 0.3,
+        "ability:Curse of Agony": 0.1,
+        "ability:Bane of Agony": 0.1,
+        "ability:Immolate": 0.05,
+        "ability:Drains": 0.25,
+        "ability:Drain Life": 0.25,
+        "ability:Imp": 0.0,
+        "ability:Voidwalker": 0.05
+      },
+      "regen_share": 0.15,
+      "pet_surv_to_sustain": 0.35,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.883, "drink": 0.0, "eat": 0.07, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.883, "drink": 0.0, "eat": 0.07, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.731, "drink": 0.039, "eat": 0.068, "other": 0.0, "death": 0.162}
+      },
+      "pet_dmg_to_surv": 0.3,
+      "fight_coupling": {"leveling-aoe": 1.0},
+      "kind_weights_by_profile": {
+        "leveling-st": {"kite": 0, "stun": 0, "range": 0, "avoid": 0.25},
+        "solo-60": {"kite": 0, "stun": 0, "range": 0, "avoid": 0.25},
+        "leveling-aoe": {"kite": 0, "range": 0}
+      },
+      "kind_note": "Voidwalker-tank leveling (2026-09-27 audit, fight lab 2026-09-26): the Voidwalker holds the mob, so kiting (Curse of Exhaustion 'not used', 0.0%), stun talents (Pyroclasm's spells are never cast single-target; Fear and Death Coil are baseline) and range (Destructive Reach +0.1%) add nothing single-target, and the warlock is rarely hit (0 deaths per 100 kills, 69-76% health after a fight): avoidance counts a quarter. Pulls of several mobs keep stun and avoidance: adds reach the warlock."
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "cand-enhancement-dps-preset-level-60",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    3
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ]
+ },
+ "preset": "Level 60",
+ "talents": "5505301-053030031005112251",
+ "note": "The community simulator's preset 'Level 60' (shaman/enhancement/presets.ts), a raid candidate since it ran within 6% of the best build of enhancement-dps (362.1 vs 371.9 in the race of 2026-09-27)."
+}

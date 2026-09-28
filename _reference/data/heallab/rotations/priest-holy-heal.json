@@ -1,0 +1,37 @@
+{
+ "class": "priest",
+ "spec": "holy-heal",
+ "build": "holy-raid-healer",
+ "date": "2026-09-27",
+ "runs": 60,
+ "confirm": 200,
+ "tables": {
+  "HOT_REFRESH_DEFICIT": 0.2,
+  "GROUP_HEAL_MIN": 2
+ },
+ "defaults": {
+  "DOWNRANK": true,
+  "HOT_REFRESH_DEFICIT": 0.1,
+  "EMERGENCY": 0.35,
+  "RAID_HEAL_AT": 0.7,
+  "GROUP_HEAL_MIN": 3,
+  "POTION_BELOW": 0.65,
+  "POTION_FIRST": 45.0
+ },
+ "changes": [
+  {
+   "round": 1,
+   "change": "GROUP_HEAL_MIN 3 -> 2",
+   "gain_seeds1": 0.022531259026946637,
+   "gain_seeds2": 0.032958647850344525
+  },
+  {
+   "round": 2,
+   "change": "HOT_REFRESH_DEFICIT 0.1 -> 0.2",
+   "gain_seeds1": 0.02937971669558892,
+   "gain_seeds2": 0.01858662239767428
+  }
+ ],
+ "capacity_before": 0.5934033203125001,
+ "capacity_after": 0.6150170898437499
+}

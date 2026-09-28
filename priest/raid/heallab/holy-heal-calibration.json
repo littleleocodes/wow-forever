@@ -1,0 +1,275 @@
+{
+ "class": "priest",
+ "spec": "holy-heal",
+ "runs": 60,
+ "builds": [
+  "holy-raid-healer",
+  "opt-holy-heal-raid-heal",
+  "cand-holy-heal-hand-2026-09-26",
+  "cand-holy-r1",
+  "cand-holy-r2",
+  "cand-holy-r3"
+ ],
+ "capacity": [
+  1.0,
+  26.666666666666664
+ ],
+ "talents": [
+  {
+   "talent": "Meditation",
+   "lab": 0.24644059429737156,
+   "ev_before": 0.23080680318310684,
+   "ev_after": 0.22190647058294058,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Improved Healing",
+   "lab": 0.07466144588632935,
+   "ev_before": 0.05140153692648211,
+   "ev_after": 0.07438905502365986,
+   "scale": 1.4623735966160893,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Spiritual Healing",
+   "lab": 0.06008164060241563,
+   "ev_before": 0.05693171278191616,
+   "ev_after": 0.056241171525274476,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Penance",
+   "lab": 0.04803008344479555,
+   "ev_before": 0.0584242367874888,
+   "ev_after": 0.05753007045942817,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Spiritual Guidance",
+   "lab": 0.0312754041189145,
+   "ev_before": 0.016813692985144416,
+   "ev_after": 0.03086134373830933,
+   "scale": 1.8898313706740737,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Mental Strength",
+   "lab": 0.029434785768690953,
+   "ev_before": 0.02518535536303504,
+   "ev_after": 0.02441811304026682,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Inner Focus",
+   "lab": 0.02849472859722124,
+   "ev_before": 0.020831555364511953,
+   "ev_after": 0.02036020344771649,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Inspiration",
+   "lab": 0.02182051324177071,
+   "ev_before": 0.0047937152893816,
+   "ev_after": 0.021176194248840933,
+   "scale": 4.551113564521074,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Prayer of Mending",
+   "lab": 0.02010785502278348,
+   "ev_before": 0.01319542878916956,
+   "ev_after": 0.012940650079823786,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-holy-heal-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Soul Warding",
+   "lab": 0.014945502179275042,
+   "ev_before": 0.004705481221118203,
+   "ev_after": 0.004772337146394783,
+   "scale": 1.0,
+   "how": "capped",
+   "builds": [
+    "holy-raid-healer",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Holy Specialization",
+   "lab": 0.014809832150600272,
+   "ev_before": 0.0049918706431799015,
+   "ev_after": 0.011180477214058474,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Improved Power Word: Shield",
+   "lab": 0.008511894772117749,
+   "ev_before": 0.0014689484414920273,
+   "ev_after": 0.0015126760361625646,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Mental Agility",
+   "lab": 0.0072344613664366295,
+   "ev_before": 0.002300426587116665,
+   "ev_after": 0.0022297550982488673,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Twin Disciplines",
+   "lab": 0.005034012420054599,
+   "ev_before": 0.0009429558009316142,
+   "ev_after": 0.0009728298332865866,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Improved Renew",
+   "lab": 0.0026502433176399825,
+   "ev_before": 0.0012650093675324412,
+   "ev_after": 0.0013056153924303965,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  },
+  {
+   "talent": "Divine Fury",
+   "lab": -0.0011624488336780408,
+   "ev_before": 0.027724574002392522,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-heal-hand-2026-09-26",
+    "cand-holy-r1",
+    "cand-holy-r2",
+    "cand-holy-r3"
+   ]
+  }
+ ],
+ "shares": {
+  "Greater Heal": 0.6737498605210464,
+  "Prayer of Healing": 0.17104413568854532,
+  "Flash Heal": 0.09307570353507316,
+  "Penance": 0.02938901104136009,
+  "Renew": 0.02075982780541698,
+  "Power Word: Shield": 0.011981461408558134
+ }
+}

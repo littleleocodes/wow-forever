@@ -1,0 +1,358 @@
+{
+ "class": "mage",
+ "spec": "frost-aoe",
+ "profile": "leveling-aoe",
+ "levels": [
+  40,
+  60
+ ],
+ "fights": 1500,
+ "builds": [
+  "opt-frost-aoe-leveling-aoe",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r4.json",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r5.json",
+  "F:\\wow-forever\\mage\\leveling\\fightlab\\candidates\\cand-aoe-r6.json"
+ ],
+ "shares": {
+  "Blizzard": 0.4907663081952471,
+  "Cone of Cold": 0.14169618910997223,
+  "Ice Lance": 0.13585565954887355,
+  "Arcane Explosion": 0.07876122363258693,
+  "Frostbolt": 0.06885301089878185,
+  "Frost Nova": 0.03129167569884787,
+  "Wand": 0.03003460194164945,
+  "Fire Blast": 0.022741330974041046
+ },
+ "time_split": {
+  "fight": 0.703,
+  "drink": 0.058,
+  "eat": 0.038,
+  "other": 0.0,
+  "death": 0.201
+ },
+ "talents": [
+  {
+   "talent": "Permafrost",
+   "sim": 0.617798159711545,
+   "ev_before": 0.052494536023897996,
+   "ev_after": 0.053273514488820506,
+   "scale": 5.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.9881645811025536,
+     "ev": 0.05844974699484101
+    },
+    {
+     "level": 60,
+     "sim": 0.24743173832053622,
+     "ev": 0.04809728198280001
+    }
+   ]
+  },
+  {
+   "talent": "Ice Barrier",
+   "sim": 0.408635709232002,
+   "ev_before": 0.16334933932106457,
+   "ev_after": 0.16365059371835058,
+   "scale": 5.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.5039835210266422,
+     "ev": 0.16543742369030978
+    },
+    {
+     "level": 60,
+     "sim": 0.31328789743736174,
+     "ev": 0.1618637637463914
+    }
+   ]
+  },
+  {
+   "talent": "Fingers of Frost",
+   "sim": 0.3306175793519384,
+   "ev_before": 0.3167008892441925,
+   "ev_after": 0.29673824227903967,
+   "scale": 4.871424999088049,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.26898641307023324,
+     "ev": 0.2945647837551788
+    },
+    {
+     "level": 60,
+     "sim": 0.3922487456336436,
+     "ev": 0.2989117008029005
+    }
+   ]
+  },
+  {
+   "talent": "Ice Lance",
+   "sim": 0.24461730968503403,
+   "ev_before": 0.23366390119780156,
+   "ev_after": 0.226019522087901,
+   "scale": 0.6478416663594544,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.16181402243749046,
+     "ev": 0.21746600957292014
+    },
+    {
+     "level": 60,
+     "sim": 0.3274205969325776,
+     "ev": 0.23457303460288187
+    }
+   ]
+  },
+  {
+   "talent": "Shatter",
+   "sim": 0.16504228820465355,
+   "ev_before": 0.4289915751462827,
+   "ev_after": 0.38933952297642366,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.1412137346655631,
+     "ev": 0.376236843372171
+    },
+    {
+     "level": 60,
+     "sim": 0.18887084174374402,
+     "ev": 0.4024422025806763
+    }
+   ]
+  },
+  {
+   "talent": "Piercing Ice",
+   "sim": 0.1261413685584541,
+   "ev_before": 0.12008228666940474,
+   "ev_after": 0.11905554925831253,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.10779796764967244,
+     "ev": 0.11820868003326757
+    },
+    {
+     "level": 60,
+     "sim": 0.14448476946723576,
+     "ev": 0.1199024184833575
+    }
+   ]
+  },
+  {
+   "talent": "Frost Channeling",
+   "sim": 0.11002190185890368,
+   "ev_before": 0.003053379407887204,
+   "ev_after": 0.00303536859680624,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0410547657596295,
+     "ev": 0.0016231274104984406
+    },
+    {
+     "level": 60,
+     "sim": 0.17898903795817786,
+     "ev": 0.00444760978311404
+    }
+   ]
+  },
+  {
+   "talent": "Ice Shards",
+   "sim": 0.09835883763515255,
+   "ev_before": 0.117951630788613,
+   "ev_after": 0.09743036120230146,
+   "scale": 0.4035175000317395,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.08083455739157815,
+     "ev": 0.08331176710444337
+    },
+    {
+     "level": 60,
+     "sim": 0.11588311787872695,
+     "ev": 0.11154895530015956
+    }
+   ]
+  },
+  {
+   "talent": "Elemental Precision",
+   "sim": 0.07235542978204872,
+   "ev_before": 0.07052211146582954,
+   "ev_after": 0.06992819644298226,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03952378728083969,
+     "ev": 0.06943486605355718
+    },
+    {
+     "level": 60,
+     "sim": 0.10518707228325774,
+     "ev": 0.07042152683240735
+    }
+   ]
+  },
+  {
+   "talent": "Arcane Concentration",
+   "sim": 0.03155732060650395,
+   "ev_before": 0.008406517624733167,
+   "ev_after": 0.008349636446767525,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.03155732060650395,
+     "ev": 0.008349636446767525
+    }
+   ]
+  },
+  {
+   "talent": "Incineration",
+   "sim": 0.013969394568376096,
+   "ev_before": 0.013224743661520611,
+   "ev_after": 0.012260108094044288,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.013969394568376096,
+     "ev": 0.012260108094044288
+    }
+   ]
+  },
+  {
+   "talent": "Improved Frostbolt",
+   "sim": 0.0074288130764050535,
+   "ev_before": 0.007389768205713307,
+   "ev_after": 0.007279296398175356,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.003664708319246964,
+     "ev": 0.007410274417996468
+    },
+    {
+     "level": 60,
+     "sim": 0.018522334472057072,
+     "ev": 0.007148318378354244
+    }
+   ]
+  },
+  {
+   "talent": "Improved Frost Nova",
+   "sim": 0.004262392350735913,
+   "ev_before": 0.013238723446588937,
+   "ev_after": 0.004267526709160635,
+   "scale": 0.32590000005438924,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0023053678242396245,
+     "ev": 0.004345539199482371
+    },
+    {
+     "level": 60,
+     "sim": 0.006219416877232201,
+     "ev": 0.0041895142188389
+    }
+   ]
+  },
+  {
+   "talent": "Cold Snap",
+   "sim": 0.0013039086293537621,
+   "ev_before": 0.0010825016059933129,
+   "ev_after": 0.001034844409479218,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0014117680317490948,
+     "ev": 0.000983644358388415
+    },
+    {
+     "level": 60,
+     "sim": 0.0011960492269584293,
+     "ev": 0.001086044460570021
+    }
+   ]
+  },
+  {
+   "talent": "Improved Counterspell",
+   "sim": -0.0017619948247934187,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": -0.0017619948247934187,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Winter's Chill",
+   "sim": -0.007687770856667605,
+   "ev_before": 0.0026546981442532613,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.019055937045399977,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.003680395332064768,
+     "ev": 0.0
+    }
+   ]
+  }
+ ]
+}

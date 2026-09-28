@@ -1,0 +1,230 @@
+{
+ "about": "Hand-kept notes of the new-builds survey (2026-09-28, user request): which new Forever spells could anchor a new build or a hybrid, the raid targets searched for them in the community simulator (a rotation-only entry of raidsim/specs.json each; talents by raidsim/talent_opt.py, the rotation by raidsim/apl_opt.py) and a sentence on each. Numbers are never written here: render_new_builds.py reads them from the races and the fight lab.",
+ "date": "2026-09-28",
+ "classes": {
+  "druid": {
+   "targets": [],
+   "notes": {
+    "Primal Bite": "Forever's Mangle, a Feral talent. Bear and Dire Bear only (the client's shapeshift mask, which the simulator follows), so no Cat build can use it; the simulator's Bear rotation casts it.",
+    "Berserk": "Feral capstone (3 min): Primal Bite hits up to 3 targets without a cooldown, and combo-point builders get +100% crit for 15 s; the Cat drafts take it for the crit.",
+    "Lacerate": "Bear bleed; the simulator's Bear rotation casts it.",
+    "Wild Growth": "A party heal (the healer lab's druid heals with it).",
+    "Revive": "Out-of-combat resurrection."
+   }
+  },
+  "hunter": {
+   "targets": [
+    {
+     "spec": "bm-raid",
+     "build": "mm-hawk-raid",
+     "idea": "Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft",
+     "spells": [
+      "Summon Hawk"
+     ],
+     "candidates": "cand-bm-raid-from-*"
+    },
+    {
+     "spec": "melee-dps",
+     "build": "melee-survival-raid",
+     "idea": "A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast",
+     "spells": [
+      "Strider Kick",
+      "Lacerate",
+      "Aspect of the Beast"
+     ],
+     "candidates": "cand-melee-dps-from-*"
+    }
+   ],
+   "notes": {
+    "Aspect of the Beast": "Melee attack power, and melee haste with Deadly Aspects: not in the simulator (it models only Aspect of the Hawk), so the melee hunter plays without it.",
+    "Sniper Shot": "A new Marksmanship shot (15 s cooldown); the rotation search offers it.",
+    "Enchanted Flare": "Reveals stealth: utility.",
+    "Pet family abilities": "Swipe, Pinch, Dismember, Tendon Rip, Mine!, Savage Rend, Web, Dust Cloud, Thunderstomp, Trickster's Dance: taught to pets; the simulator's pets use Claw, Bite and their family's classic ability."
+   }
+  },
+  "mage": {
+   "targets": [
+    {
+     "spec": "frostfire-raid",
+     "build": "frostfire-raid",
+     "idea": "Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name)",
+     "spells": [
+      "Frostfire Bolt"
+     ],
+     "candidates": "cand-frostfire-raid-*",
+     "leveling": {
+      "report": "frostfire-leveling",
+      "from": 40,
+      "what": "the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt"
+     }
+    },
+    {
+     "spec": "arcane-dps",
+     "build": "arcane-blast-raid",
+     "idea": "Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own",
+     "spells": [
+      "Arcane Blast"
+     ],
+     "candidates": "cand-arcane-dps-from-*"
+    },
+    {
+     "spec": "frost-raid",
+     "build": "frost-arcane-power-raid",
+     "idea": "Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast",
+     "spells": [
+      "Arcane Missiles"
+     ],
+     "candidates": "cand-frost-raid-from-arcane-*"
+    }
+   ],
+   "notes": {
+    "Frostfire Bolt": "The community simulator ships it as a stub; this project implements it (raidsim/patches/forever/sim/mage/frostfire_bolt.go), so its numbers are our model. The fight lab plays it from level 40 (fightlab/mage.py decide_frostfire).",
+    "Ice Lance": "Frost talent; the simulator's Frost rotation casts it on Fingers of Frost.",
+    "Teleport: Dalaran": "Travel."
+   }
+  },
+  "paladin": {
+   "targets": [
+    {
+     "spec": "seal-of-fury-raid",
+     "build": null,
+     "idea": "Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist",
+     "spells": [
+      "Seal of Fury"
+     ],
+     "candidates": "cand-seal-of-fury-raid-*",
+     "preset": null,
+     "result": "As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build.",
+     "race": "ret-raid-dps",
+     "race_note": "playing Seal of Fury"
+    },
+    {
+     "spec": "shockadin-raid",
+     "build": null,
+     "idea": "Holy Shock and Light's Vigil from the Holy tree on a Retribution rotation (a Shockadin)",
+     "spells": [
+      "Holy Shock",
+      "Light's Vigil"
+     ],
+     "candidates": "cand-shockadin-raid-*",
+     "result": "The talent search from a 21/0/30 Holy Shock start moved every point back to the Retribution draft's talents: Holy Shock never paid for its points."
+    }
+   ],
+   "notes": {
+    "Holy Strike": "The new baseline Retribution strike; every paladin rotation of the simulator casts it.",
+    "Swift Judgement": "Ends Judgement's cooldown (1 min); the rotation search offers it.",
+    "Templar's Bulwark": "A tank absorb cooldown; the Protection rotation search offers it.",
+    "Voice of Truth": "Silence and interrupt immunity: utility."
+   }
+  },
+  "priest": {
+   "targets": [
+    {
+     "spec": "smite-dps",
+     "build": "smite-discipline-raid",
+     "idea": "Penance and Smite: a Discipline/Holy damage build from the simulator's Smite preset",
+     "spells": [
+      "Penance"
+     ],
+     "candidates": "cand-smite-dps-from-*"
+    }
+   ],
+   "notes": {
+    "Shadow Word: Death": "A new Shadow nuke (15 s cooldown); the simulator's Shadow rotation casts it.",
+    "Chastise": "Humanoids only; a stub in the simulator.",
+    "Dark Sacrifice": "Health for mana (Undead); a stub in the simulator.",
+    "Binding Heal": "Healing.",
+    "Prayer of Mending": "Healing (the healer lab's priest heals with it).",
+    "Divine Grace": "Healing (Human).",
+    "Contingency Plan": "A ward (Gnome).",
+    "Confounding Flash": "Crowd control (Gnome)."
+   }
+  },
+  "rogue": {
+   "targets": [
+    {
+     "spec": "assassination-raid",
+     "build": "assassination-seal-fate-raid",
+     "idea": "Mutilate and Venom, the Forever Assassination talents, starting from our Mutilate draft: the tuned rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), and the talent search dropped Venom, then Mutilate",
+     "spells": [
+      "Mutilate",
+      "Venom"
+     ],
+     "candidates": "cand-assassination-raid-*",
+     "result": "Kept Mutilate (the search told to keep it), the build loses under half a percent: the rotation never casts it."
+    },
+    {
+     "spec": "subtlety-raid",
+     "build": "subtlety-hemo-raid",
+     "idea": "Subtlety with Hemorrhage from the simulator's Hemorrhage preset",
+     "spells": [],
+     "candidates": "cand-subtlety-raid-*"
+    }
+   ],
+   "notes": {
+    "Mutilate": "Forever talent: both weapons strike, more damage on poisoned targets.",
+    "Venom": "Finishing move: +30% poison damage and chance."
+   }
+  },
+  "shaman": {
+   "targets": [
+    {
+     "spec": "stormcaller-dps",
+     "build": null,
+     "preset": "Stormcaller 28/23/0",
+     "idea": "The simulator's Elemental/Enhancement hybrid preset (Stormcaller) tuned as a target of its own",
+     "spells": [
+      "Lava Burst"
+     ],
+     "candidates": "cand-stormcaller-dps-*",
+     "result": "The talent search from the preset ended on our Elemental draft's talents (29/22/0): the hybrid is the Elemental build."
+    }
+   ],
+   "notes": {
+    "Lava Burst": "A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it.",
+    "Fire Nova": "Now a spell with a 10 s cooldown instead of a totem: area damage around the fire totem.",
+    "Rage of the Farseer": "Enhancement cooldown: 30% attack speed for 25 s.",
+    "Riptide": "Healing.",
+    "Water Shield": "Mana on being hit.",
+    "Call of the Elements": "Drops several totems at once: utility.",
+    "Call of the Ancestors": "Drops several totems at once: utility.",
+    "Call of the Spirits": "Drops several totems at once: utility.",
+    "Totemic Recall": "Utility.",
+    "Totemic Projection": "Utility."
+   }
+  },
+  "warlock": {
+   "targets": [
+    {
+     "spec": "demonology-raid",
+     "build": "demonology-pact-raid",
+     "idea": "Demonic Pact from the simulator's Demonology preset: a raid Demonology build",
+     "spells": [],
+     "candidates": "cand-demonology-raid-*"
+    },
+    {
+     "spec": "incinerate-raid",
+     "build": "destruction-incinerate-raid",
+     "idea": "Incinerate (+25% on an Immolated target) as the filler, with Conflagrate while Immolate burns",
+     "spells": [
+      "Incinerate"
+     ],
+     "candidates": "cand-incinerate-raid-*",
+     "result": "The rotation search on this build inserted Shadow Bolt ahead of Incinerate in its first round (training dummy and raid): Shadow Bolt out-damages Incinerate even on an Immolated target. The entry keeps the Incinerate rotation, so the numbers are the build as designed."
+    }
+   ],
+   "notes": {
+    "Wrack": "Affliction capstone: a 6 s channel of 36 Shadow a second that makes Corruption and Bane of Agony tick 10% harder. Probed on the Affliction draft with Siphon Life and Wrack in the rotation (2026-09-28): every placement lost DPS against Shadow Bolt, so no build takes it.",
+    "Bane of Havoc": "Splits 15% of the warlock's damage to a second target: nothing to split on one boss.",
+    "Curse of the Elements": "Forever's Curse of the Elements; the simulator's warlock rotations cast it."
+   }
+  },
+  "warrior": {
+   "targets": [],
+   "notes": {
+    "Spearing Strike": "Arms talent attack; the simulator's DPS rotations cast it.",
+    "Victory Rush": "Baseline at 20 but needs a killing blow, which a boss never gives: a leveling tool (the fight lab's warrior uses it)."
+   }
+  }
+ }
+}

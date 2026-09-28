@@ -1,0 +1,289 @@
+{
+ "class": "mage",
+ "spec": "frost-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "frost-arcane-power-raid",
+  "frost-winters-chill-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "mage",
+  "gear": "ui/mage/gear_sets/p1.bis.gear.json",
+  "apl": "ui/mage/apls/p1.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own winters_chill (its talent is under test)",
+  "consumables": {
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Improved Frostbolt",
+   "sim": 0.20217485376829747,
+   "ev_before": 0.1786012839372746,
+   "ev_after": 0.18015021970148043,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Ice Shards",
+   "sim": 0.17270807901210583,
+   "ev_before": 0.1730988986843428,
+   "ev_after": 0.17463199458091763,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Elemental Precision",
+   "sim": 0.07265397344505951,
+   "ev_before": 0.06448078964039874,
+   "ev_after": 0.0649821063114022,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Winter's Chill",
+   "sim": 0.06872599493372276,
+   "ev_before": 0.16998229993152464,
+   "ev_after": 0.17291828048181127,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Piercing Ice",
+   "sim": 0.05801413927244499,
+   "ev_before": 0.054216739004152886,
+   "ev_after": 0.05463391410440593,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Instability",
+   "sim": 0.05070331393812437,
+   "ev_before": 0.054960437249050406,
+   "ev_after": 0.0555116281720945,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Power",
+   "sim": 0.03970114794079523,
+   "ev_before": 0.03992819859228018,
+   "ev_after": 0.040311169928240125,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Presence of Mind",
+   "sim": 0.029254356485304476,
+   "ev_before": 0.03037132482929091,
+   "ev_after": 0.030668745876955828,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Concentration",
+   "sim": 0.0004876581807840808,
+   "ev_before": 0.004835284322304103,
+   "ev_after": 0.004918824411844202,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Mind",
+   "sim": 0.0,
+   "ev_before": 0.004904235472727679,
+   "ev_after": 0.005000821644069335,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Resilience",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "sim": 0.0,
+   "ev_before": 0.00907501148280182,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Cold Snap",
+   "sim": 0.0,
+   "ev_before": 5.2353702975028505e-06,
+   "ev_after": 5.325378660769509e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Improved Arcane Explosion",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Magic Absorption",
+   "sim": 0.0,
+   "ev_before": 1.0604506761059882e-05,
+   "ev_after": 1.0812319606539589e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid"
+   ]
+  },
+  {
+   "talent": "Ice Barrier",
+   "sim": 0.0,
+   "ev_before": 4.134961863911273e-05,
+   "ev_after": 4.195855435650951e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Ice Block",
+   "sim": 0.0,
+   "ev_before": 2.0674381880624493e-05,
+   "ev_after": 2.0978837057388137e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Improved Frost Nova",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Shatter",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Frost Channeling",
+   "sim": -0.00036397109493725114,
+   "ev_before": 0.00445991576620299,
+   "ev_after": 0.004536941141601138,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Meditation",
+   "sim": -0.0004141369176048188,
+   "ev_before": 0.007938406590394487,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid"
+   ]
+  }
+ ]
+}

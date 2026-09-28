@@ -1,0 +1,235 @@
+{
+ "id": "cand-arms-r5",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Charge",
+    2
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Boundless Rage",
+    1
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Enrage",
+    4
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "20-22",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Arms",
+   "talent": "Spearing Strike",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "30-32",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 1
+  },
+  {
+   "levels": "35",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 1
+  },
+  {
+   "levels": "37-38",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Arms",
+   "talent": "Sweeping Strikes",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Arms",
+   "talent": "Mortal Strike",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "46",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 1
+  },
+  {
+   "levels": "47-51",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "52",
+   "tree": "Fury",
+   "talent": "Piercing Howl",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Fury",
+   "talent": "Boundless Rage",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 4
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 5)"
+}

@@ -1,0 +1,7 @@
+# Line endings: the repository stores LF (the project was written on Windows; cloud sessions run Linux).
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.gz binary

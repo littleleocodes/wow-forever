@@ -1,0 +1,178 @@
+{
+ "dummy": {
+  "class": "mage",
+  "spec": "fire-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/mage/dps/apls/fire.apl.json",
+  "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
+  "builds": [
+   {
+    "label": "fire-raid",
+    "talents": "250025-23550000130133051-005"
+   },
+   {
+    "label": "sim preset: Fire DPS",
+    "talents": "0502252000003-23550000130133051-"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.034320338780310156,
+    "gain_seed2": 0.0305169267447718,
+    "candidates": 218,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.030151486184799126,
+    "gain_seed2": 0.031231982100876632,
+    "candidates": 218,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert before the filler: if spell 44404 is up: cast Arcane Missiles",
+    "gain_seed1": 0.0022229707551228994,
+    "gain_seed2": 0.0022683575554265367,
+    "candidates": 212,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation",
+    "gain_seed1": 0.004226848688999585,
+    "gain_seed2": 0.004621764380807747,
+    "candidates": 242,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "fire-raid": {
+     "before": 494.85215305377477,
+     "after": 533.6731542005564,
+     "base": 494.85215305377477,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.13526684999845,
+     "oom_after": 0.7084733999948994
+    },
+    "sim preset: Fire DPS": {
+     "before": 488.3572792219715,
+     "after": 517.5930943795554,
+     "base": 488.3572792219715,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.16645144999870004,
+     "oom_after": 0.3367826499982499
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ },
+ "raid": {
+  "class": "mage",
+  "spec": "fire-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/mage/dps/apls/fire.apl.json",
+  "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
+  "builds": [
+   {
+    "label": "fire-raid",
+    "talents": "250025-23550000130133051-005"
+   },
+   {
+    "label": "sim preset: Fire DPS",
+    "talents": "0502252000003-23550000130133051-"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.03827614461840345,
+    "gain_seed2": 0.037360124739891365,
+    "candidates": 218,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.02606291829981533,
+    "gain_seed2": 0.024678490932543262,
+    "candidates": 212,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if mana % < 20% and time left in the fight > 25s: cast Evocation",
+    "gain_seed1": 0.0024876614922324514,
+    "gain_seed2": 0.0024965823507934193,
+    "candidates": 212,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "only with 3s or more of the fight left: if mana % \u2265 10%: cast Fireball",
+    "gain_seed1": 0.0018996283310339646,
+    "gain_seed2": 0.0018078211194869631,
+    "candidates": 195,
+    "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "move to the top: cast Fire Blast",
+    "gain_seed1": 0.0013696583726345857,
+    "gain_seed2": 0.0021124543722772504,
+    "candidates": 209,
+    "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.00427671761768722,
+    "gain_seed2": 0.0043896998297348055,
+    "candidates": 209,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "fire-raid": {
+     "before": 618.4423661441168,
+     "after": 661.9797548132989,
+     "base": 618.4423661441168,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Fire DPS": {
+     "before": 581.4422100148827,
+     "after": 623.2992247760401,
+     "base": 581.4422100148827,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ }
+}

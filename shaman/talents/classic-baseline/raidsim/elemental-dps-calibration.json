@@ -1,0 +1,212 @@
+{
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "elemental-raid-dps"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "elemental_shaman",
+  "gear": "ui/elemental_shaman/gear_sets/phase_1.gear.json",
+  "apl": "ui/elemental_shaman/apls/default.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfFirepower",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Lightning Mastery",
+   "sim": 0.2722894771863292,
+   "ev_before": 0.2508617348669903,
+   "ev_after": 0.25485538950003184,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Elemental Fury",
+   "sim": 0.1778952558984047,
+   "ev_before": 0.17006927527114601,
+   "ev_after": 0.172599259884683,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Elemental Mastery",
+   "sim": 0.08403316977472622,
+   "ev_before": 0.020285199830712197,
+   "ev_after": 0.02054783631719013,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Elemental Focus",
+   "sim": 0.04717928578474195,
+   "ev_before": 0.051279089348743784,
+   "ev_after": 0.05196344736207129,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Concussion",
+   "sim": 0.046145864018734106,
+   "ev_before": 0.04405904841994112,
+   "ev_after": 0.044642957726421136,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Convection",
+   "sim": 0.04455713365330974,
+   "ev_before": 0.04916611635085163,
+   "ev_after": 0.04982093876758831,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Call of Thunder",
+   "sim": 0.03860402132567371,
+   "ev_before": 0.03858719809893799,
+   "ev_after": 0.03909587412319643,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Nature's Guidance",
+   "sim": 0.03712390585742487,
+   "ev_before": 0.031521706403757975,
+   "ev_after": 0.03193437764432003,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Tidal Mastery",
+   "sim": 0.03208247810470454,
+   "ev_before": 0.03149432565361444,
+   "ev_after": 0.03190662734717548,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Call of Flame",
+   "sim": 0.00970403371061753,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Totemic Focus",
+   "sim": 0.0008797127269231604,
+   "ev_before": 0.0031417359664561995,
+   "ev_after": 0.0031817204689867013,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Eye of the Storm",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Improved Reincarnation",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Storm Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Tidal Focus",
+   "sim": 0.0,
+   "ev_before": 0.012686516925365283,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  },
+  {
+   "talent": "Totemic Mastery",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps"
+   ]
+  }
+ ]
+}

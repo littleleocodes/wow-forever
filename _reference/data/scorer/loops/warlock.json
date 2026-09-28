@@ -1,0 +1,123 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "sb-raid": {
+    "profiles": ["raid-dps"],
+    "reference": {"classic-era": "ds-ruin-raid / sm-ruin-raid"},
+    "purpose": "Shadow Bolt spam: DS/Ruin sacrifices the Succubus for +15% Shadow; SM/Ruin keeps the pet and takes Shadow Mastery; Life Tap is the mana.",
+    "loop": ["Curse (assigned)", "Shadow Bolt", "Life Tap when low", "Corruption only with Improved Corruption"],
+    "constraints": ["'Improved Life Tap is absolutely required for raiding as Life Tap is your main source of mana during fights'", "the 21 Demonology points of DS/Ruin buy Demonic Sacrifice; Fel Stamina/Intellect are its fillers ('they provide no benefits')", "Fel Domination is 'effectively a defensive cooldown'"],
+    "talents": {
+      "Fel Stamina": {
+        "role": "filler",
+        "why": "'Fel Stamina & Unholy Power... provide no benefits' - Demonology tier filler on the way to Demonic Sacrifice.",
+        "encoded": "pet_surv only",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Fel Intellect": {
+        "role": "filler",
+        "why": "Demonology tier filler.",
+        "encoded": "pet_surv only",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Fel Domination": {
+        "role": "safety",
+        "why": "'Quite useful since it effectively gives you a defensive cooldown when you need it' (instant re-summon).",
+        "encoded": "utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Destructive Reach": {
+        "role": "utility",
+        "why": "Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction).",
+        "encoded": "utility 0.2%/rank raid",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Demonic Embrace": {
+        "role": "safety",
+        "why": "Stamina: survivability on AoE mechanics; no DPS.",
+        "encoded": "parsed stamina -> surv/sustain",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Improved Life Tap": {
+        "role": "sustain",
+        "why": "'Absolutely required for raiding as Life Tap is your main source of mana during fights.'",
+        "encoded": "manual sustain 4%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Suppression": {
+        "role": "filler",
+        "why": "'Only if you do not have an assigned curse and if you are not going to be allowed to use Corruption.'",
+        "encoded": "hit on Affliction",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Improved Shadow Bolt": {
+        "role": "raid-buff",
+        "why": "Brings improved shadow bolt to 3 others (a target debuff (four charges of +20% shadow damage): three other warlocks share the charges, so the simulator's permanent debuff is an upper bound); worth classic-era: +8.7% per receiver (buff_value.py).",
+        "encoded": "utility 26.1% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Improved Healthstone": {
+        "role": "filler",
+        "why": "Demonology tier-1 path of the DS/Ruin build toward Demonic Sacrifice (21 points); no throughput.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      },
+      "Master Summoner": {
+        "role": "filler",
+        "why": "Demonology tier-2 path of the DS/Ruin build toward Demonic Sacrifice; faster and cheaper summons only.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "affliction-leveling": {
+    "profiles": ["leveling-st", "solo-60"],
+    "reference": {"classic-era": "leveling-affliction-demo"},
+    "purpose": "Voidwalker tanks, DoTs tick, Drain Life heals you: no downtime as long as the pet holds threat.",
+    "loop": ["Voidwalker pulls", "Corruption, Curse of Agony, Immolate", "Drain Life / wand", "Life Tap, Health Funnel between pulls"],
+    "constraints": ["pet damage is pet threat (model: pet_dmg_to_surv): Unholy Power and Fel Stamina keep the mobs on the Voidwalker", "Drain Life is both damage and the health that funds Life Tap"],
+    "talents": {
+      "Unholy Power": {
+        "role": "enabler",
+        "why": "Voidwalker damage = Voidwalker threat.",
+        "encoded": "parsed pet damage + pet_dmg_to_surv",
+        "sources": ["https://www.icy-veins.com/wow-classic/affliction-warlock-leveling-guide-1-60"]
+      },
+      "Fel Intellect": {
+        "role": "filler",
+        "why": "Voidwalker mana for Torment/Sacrifice; tier filler.",
+        "encoded": "pet_surv small",
+        "sources": ["https://www.icy-veins.com/wow-classic/affliction-warlock-leveling-guide-1-60"]
+      },
+      "Improved Drain Life": {
+        "role": "sustain",
+        "why": "Drain-tanking damage and health.",
+        "encoded": "dmg + sustain per rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/affliction-warlock-leveling-guide-1-60"]
+      },
+      "Improved Shadow Bolt": {
+        "role": "throughput",
+        "why": "Shadow Bolt crits raise the target's shadow damage taken from you by 20% for 12 s (beta): the Destruction tier-1 path of the leveling draft toward Bane; small while leveling because Shadow Bolt is a quarter of the leveling damage.",
+        "encoded": "manual dmg",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/warlock.json)"]
+      },
+      "Fel Concentration": {
+        "role": "utility",
+        "why": "70% pushback resistance on Drains and Wrack (beta): keeps Drain Life channels whole while a mob is on you.",
+        "encoded": "manual sustain",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/warlock.json)"]
+      },
+      "Wrack": {
+        "role": "throughput",
+        "why": "36 shadow damage per second plus +10% damage from your other shadow DoTs (beta): the Affliction 31-point DoT of the leveling loop (Drain Hope renamed); the fight lab's warlock module casts it.",
+        "encoded": "manual dmg (fight lab)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/warlock.json)"]
+      },
+      "Shadow Mastery": {
+        "role": "throughput",
+        "why": "+2%/rank shadow damage (beta): the Affliction tier-6 path to Wrack; 0.33%/point while leveling because a third of the leveling damage is the Voidwalker and the wand.",
+        "encoded": "parsed dmg (fight lab)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/warlock.json)"]
+      }
+    }
+  }
+}

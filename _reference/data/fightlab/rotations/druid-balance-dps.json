@@ -1,0 +1,82 @@
+{
+ "drink_below": 0.45,
+ "eat_below": 0.8,
+ "class": "druid",
+ "spec": "balance-dps",
+ "build": "opt-balance-dps-leveling-st",
+ "levels": [
+  15,
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "drink below 45% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.45
+   ],
+   "gain_seed1": 0.016451346050434634,
+   "gain_seed2": 0.014618636912607785
+  },
+  {
+   "round": 2,
+   "change": "eat below 80% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.8
+   ],
+   "gain_seed1": 0.004474937846169258,
+   "gain_seed2": 0.0043969134362308315
+  }
+ ],
+ "weighted_before": 53.08989707594953,
+ "weighted_after": 52.16812699603313,
+ "per_level": {
+  "15": {
+   "before": 36.57902206811843,
+   "after": 37.25711484570904,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "20": {
+   "before": 41.80489138590536,
+   "after": 42.70898453906171,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 51.07807293311048,
+   "after": 51.693385885798854,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 62.19382963992765,
+   "after": 60.7168595453166,
+   "deaths_before": 0.03333333333333333,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 57.28762552862288,
+   "after": 55.128342665314044,
+   "deaths_before": 0.2,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 52.417801042795,
+   "after": 51.12029665046534,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

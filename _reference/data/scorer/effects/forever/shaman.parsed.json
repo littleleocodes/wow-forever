@@ -1,0 +1,774 @@
+{
+ "Convection": {
+  "tree": "Elemental",
+  "max": 5,
+  "text": "Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 2%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "ability:Shock",
+     "ability:Lightning Bolt",
+     "ability:Lava Burst",
+     "ability:Chain Lightning"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Concussion": {
+  "tree": "Elemental",
+  "max": 5,
+  "text": "Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 1%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Lightning Bolt",
+     "ability:Chain Lightning",
+     "ability:Earth Shock"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Warding": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Reduces damage taken from Fire, Frost, and Nature effects by 3%.",
+  "effects": []
+ },
+ "Reverberation": {
+  "tree": "Elemental",
+  "max": 5,
+  "text": "Reduces the cooldown of your Shock spells by 0.2 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Shock"
+    ],
+    "values": [
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Call of Flame": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 5%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Fire Totems",
+     "ability:Fire Nova",
+     "ability:Lava Burst"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Devastation": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 3% for 10 sec.",
+  "effects": []
+ },
+ "Elemental Focus": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "type:spell"
+    ],
+    "values": [
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Alacrity": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.17 sec.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Lightning Bolt",
+     "ability:Chain Lightning",
+     "ability:Lava Burst"
+    ],
+    "values": [
+     0.17,
+     0.33,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Fire Nova": {
+  "tree": "Elemental",
+  "max": 2,
+  "text": "Increases the damage done by your Fire Nova spell by 10% and reduces its cooldown by 2 sec.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Fire Nova"
+    ],
+    "values": [
+     0.1,
+     0.2
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Eye of the Storm": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 23%.",
+  "effects": []
+ },
+ "Call of Thunder": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "ability:Lightning Bolt",
+     "ability:Chain Lightning"
+    ],
+    "values": [
+     0.03
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Reach": {
+  "tree": "Elemental",
+  "max": 2,
+  "text": "Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards.",
+  "effects": [
+   {
+    "channel": "range",
+    "scope": [
+     "ability:Lightning Bolt",
+     "ability:Chain Lightning",
+     "ability:Fire Nova",
+     "ability:Lava Burst"
+    ],
+    "values": [
+     3.0,
+     6.0
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "range",
+    "scope": [
+     "ability:Flame Shock"
+    ],
+    "values": [
+     8.0,
+     15.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Lightning Overload": {
+  "tree": "Elemental",
+  "max": 3,
+  "text": "Gives your Lightning Bolt and Chain Lightning spells a 3% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat.",
+  "effects": []
+ },
+ "Earthbound": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "Your Earthbind Totem Immobilizes nearby targets for 5 sec when cast.",
+  "effects": []
+ },
+ "Elemental Fury": {
+  "tree": "Elemental",
+  "max": 5,
+  "text": "Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 20%.",
+  "effects": [
+   {
+    "channel": "crit_bonus",
+    "scope": [
+     "school:fire",
+     "school:frost",
+     "school:nature",
+     "ability:Searing",
+     "ability:Magma Totems"
+    ],
+    "values": [
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+     1.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Lava Burst": {
+  "tree": "Elemental",
+  "max": 1,
+  "text": "You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage.",
+  "effects": []
+ },
+ "Earth's Grasp": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%.",
+  "effects": []
+ },
+ "Thundering Strikes": {
+  "tree": "Enhancement",
+  "max": 5,
+  "text": "Improves your chance to get a critical strike with all spells and attacks by 1%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "all",
+     "type:spell"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Ancestral Knowledge": {
+  "tree": "Enhancement",
+  "max": 5,
+  "text": "Increases your Intellect by 2%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:intellect"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Guardian Totems": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Grounding Totem"
+    ],
+    "values": [
+     1.0,
+     2.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Mental Dexterity": {
+  "tree": "Enhancement",
+  "max": 3,
+  "text": "Increases your Attack Power by an amount equal to 33% of your Intellect.",
+  "effects": []
+ },
+ "Improved Ghost Wolf": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "Reduces the cast time of your Ghost Wolf spell by 1 sec, and Ghost Wolf may be used indoors.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Ghost Wolf"
+    ],
+    "values": [
+     1.0,
+     3.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Lightning Shield": {
+  "tree": "Enhancement",
+  "max": 3,
+  "text": "Increases the damage done by your Lightning Shield orbs by 5%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "unknown:Lightning Shield orbs"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Elemental Weapons": {
+  "tree": "Enhancement",
+  "max": 3,
+  "text": "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%.",
+  "effects": []
+ },
+ "Shamanistic Focus": {
+  "tree": "Enhancement",
+  "max": 1,
+  "text": "Reduces the mana cost of your Shock and Lightning Shield spells by 45%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "ability:Shock",
+     "ability:Lightning Shield"
+    ],
+    "values": [
+     0.45
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Anticipation": {
+  "tree": "Enhancement",
+  "max": 3,
+  "text": "Increases your chance to dodge by an additional 2%.",
+  "effects": []
+ },
+ "Toughness": {
+  "tree": "Enhancement",
+  "max": 5,
+  "text": "Increases your Stamina by 2%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:stamina"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Flurry": {
+  "tree": "Enhancement",
+  "max": 5,
+  "text": "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike.",
+  "effects": []
+ },
+ "Stormstrike": {
+  "tree": "Enhancement",
+  "max": 1,
+  "text": "Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec.",
+  "effects": []
+ },
+ "Spirit Weapons": {
+  "tree": "Enhancement",
+  "max": 1,
+  "text": "Gives a chance to parry enemy melee attacks, reduces all threat generated by your attacks by 30% while Rockbiter Weapon is not active, and increases all threat generated by 30% while Rockbiter Weapon is active.",
+  "effects": [
+   {
+    "channel": "threat",
+    "scope": [
+     "unknown:attacks"
+    ],
+    "values": [
+     0.3
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "threat_up",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.3
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Mental Quickness": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "Increases your spell damage and healing by up to 15% of your Intellect.",
+  "effects": []
+ },
+ "Improved Stormstrike": {
+  "tree": "Enhancement",
+  "max": 2,
+  "text": "When you Stormstrike, you have a 50% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 50% chance to reset each time you Dodge or Parry.",
+  "effects": []
+ },
+ "Maelstrom Weapon": {
+  "tree": "Enhancement",
+  "max": 5,
+  "text": "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec.",
+  "effects": []
+ },
+ "Rage of the Farseer": {
+  "tree": "Enhancement",
+  "max": 1,
+  "text": "Increases your attack speed by 30% for 25 sec.",
+  "effects": []
+ },
+ "Improved Healing Wave": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Reduces the casting time of your Healing Wave spell by 0.1 sec.",
+  "effects": [
+   {
+    "channel": "cast_time",
+    "scope": [
+     "ability:Healing Wave"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Totemic Focus": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Reduces the Mana cost of your totems and any spells that summon or move them by 5%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "type:spell"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15,
+     0.2,
+     0.25
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Mindfulness": {
+  "tree": "Restoration",
+  "max": 3,
+  "text": "Allows 17% of your Mana regeneration to continue while casting.",
+  "effects": [
+   {
+    "channel": "regen",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.17,
+     0.33,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Natural Grace": {
+  "tree": "Restoration",
+  "max": 3,
+  "text": "Reduces the threat generated by your spells by 5%.",
+  "effects": [
+   {
+    "channel": "threat",
+    "scope": [
+     "type:spell"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Tidal Focus": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Reduces the Mana cost of your healing spells by 1% and improves your chance to hit by 1%.",
+  "effects": [
+   {
+    "channel": "hit",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "type:spell",
+     "heal"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Reincarnation": {
+  "tree": "Restoration",
+  "max": 2,
+  "text": "Reduces the cooldown of your Reincarnation spell by 10 min, increases your maximum health by 2%, and increases the amount of health and Mana you reincarnate with by an additional 10%.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Reincarnation"
+    ],
+    "values": [
+     600.0,
+     1200.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Ancestral Healing": {
+  "tree": "Restoration",
+  "max": 3,
+  "text": "Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells.",
+  "effects": []
+ },
+ "Healing Focus": {
+  "tree": "Restoration",
+  "max": 3,
+  "text": "Gives you a 23% chance to avoid interruption caused by damage while casting any healing spell.",
+  "effects": [
+   {
+    "channel": "pushback",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.23,
+     0.47,
+     0.7
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Water Shield": {
+  "tree": "Restoration",
+  "max": 1,
+  "text": "The caster is surrounded by 3 globes of water. When a spell, melee, or ranged attack hits the caster or when one of the caster's healing spells gets a critical result, 2% of maximum mana is restored to the caster, expend",
+  "effects": []
+ },
+ "Tidal Mastery": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Increases the critical effect chance of your healing spells by 1%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "type:spell",
+     "heal"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Restorative Totems": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Mana Spring Totem"
+    ],
+    "values": [
+     0.05,
+     0.1,
+     0.15,
+     0.2,
+     0.25
+    ],
+    "source": "parsed"
+   },
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Healing Stream Totem"
+    ],
+    "values": [
+     0.1,
+     0.2,
+     0.3,
+     0.4,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Mana Tide Totem": {
+  "tree": "Restoration",
+  "max": 1,
+  "text": "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards.",
+  "effects": []
+ },
+ "Healing Way": {
+  "tree": "Restoration",
+  "max": 3,
+  "text": "Increases the amount healed by your Healing Wave spell by 8%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Healing Wave"
+    ],
+    "values": [
+     0.08,
+     0.17,
+     0.25
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Nature's Swiftness": {
+  "tree": "Restoration",
+  "max": 1,
+  "text": "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell.",
+  "effects": []
+ },
+ "Purification": {
+  "tree": "Restoration",
+  "max": 5,
+  "text": "Increases the effectiveness of your healing spells by 2%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "type:spell",
+     "heal"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Riptide": {
+  "tree": "Restoration",
+  "max": 1,
+  "text": "Heals a friendly target for 485 to 533, an additional 445 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that target by 25%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "heal"
+    ],
+    "values": [
+     0.25
+    ],
+    "source": "parsed"
+   }
+  ]
+ }
+}

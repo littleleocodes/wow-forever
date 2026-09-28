@@ -1,0 +1,141 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "holy-heal": {
+    "profiles": ["raid-heal"],
+    "reference": {"classic-era": "holy-raid-healer"},
+    "purpose": "Raid healer: Flash Heal / Greater Heal downranked, Renew, Prayer of Healing; mana over 5+ minutes, Inspiration on tanks.",
+    "loop": ["Renew on the tank", "Greater Heal / Flash Heal by damage", "Prayer of Healing on raid damage", "Inner Focus for a free Greater Heal"],
+    "constraints": ["Discipline tier 1 has only Unbreakable Will or Wand Specialization: healers take Unbreakable Will for stun/fear resists", "threat: Silent Resolve is taken by healers who over-heal on pulls"],
+    "talents": {
+      "Unbreakable Will": {
+        "role": "filler",
+        "why": "Tier-1 Discipline filler with a use (stun/fear resist); Wand Specialization does nothing for a healer.",
+        "encoded": "surv 0.5%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Silent Resolve": {
+        "role": "utility",
+        "why": "-4%/rank spell threat: healers pulling aggro on pulls.",
+        "encoded": "utility (raid-heal)",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Holy Specialization": {
+        "role": "throughput",
+        "why": "Crit heals; 'Inspiration... provides your tanks with a lot of extra mitigation when your direct healing spells critically heal them'.",
+        "encoded": "parsed crit + utility 0.3%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Mental Agility": {
+        "role": "sustain",
+        "why": "Cheaper instants (Renew, Shield): part of the mana budget.",
+        "encoded": "parsed mana",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Inner Focus": {
+        "role": "sustain",
+        "why": "'Adds a lot of efficiency to your healing ability every 3 minutes.'",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Spiritual Healing": {
+        "role": "throughput",
+        "why": "'Provides you with a flat 10% healing increase.'",
+        "encoded": "parsed heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "shadow-dps": {
+    "profiles": ["leveling-st", "solo-60", "raid-dps"],
+    "reference": {"classic-era": "leveling-shadow"},
+    "purpose": "Leveling: Shadow Word: Pain, Mind Blast, Mind Flay kiting, wand finish; Spirit Tap for mana; Blackout stuns and Shield for safety.",
+    "loop": ["Power Word: Shield", "Shadow Word: Pain", "Mind Blast", "Mind Flay (snare) / wand", "Spirit Tap after the kill"],
+    "constraints": ["Blackout stuns are survivability while leveling (nothing on bosses)", "Shadow Focus removes resists on the DoT; Shadow Reach is one more cast before melee"],
+    "talents": {
+      "Blackout": {
+        "role": "safety",
+        "why": "10% stun chance per Shadow spell: interrupts the mob while it walks to you.",
+        "encoded": "surv +1%/rank, dmg +0.5%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Improved Fade": {
+        "role": "safety",
+        "why": "Shorter Fade in dungeons.",
+        "encoded": "surv 0.5%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Improved Power Word: Shield": {
+        "role": "safety",
+        "why": "Bigger shield on every pull.",
+        "encoded": "heal on the shield + surv 1%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Shadow Focus": {
+        "role": "control",
+        "why": "Resisted Shadow Word: Pain / Mind Flay means taking hits.",
+        "encoded": "parsed hit",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Shadow Reach": {
+        "role": "control",
+        "why": "+20% range: one more cast before melee.",
+        "encoded": "dmg 0.4%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Unbreakable Will": {
+        "role": "filler",
+        "why": "Discipline tier-1 path to Inner Focus/Meditation.",
+        "encoded": "surv 0.5%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Mind Flay": {
+        "role": "enabler",
+        "why": "The channelled filler of the shadow loop: 47% of a shadow priest's raid damage in the simulator. The model carries it as a gated source (2026-09-26) whose share goes to wanding and Smite when the talent is absent; the leveling split comes from the fight lab.",
+        "encoded": "gated source mind_flay (displaces wand, smite)",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Improved Vampiric Embrace": {
+        "role": "sustain",
+        "why": "+5%/rank Vampiric Embrace self-healing (Classic): less eating between leveling fights.",
+        "encoded": "manual sustain",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Martyrdom": {
+        "role": "utility",
+        "why": "Pushback immunity after being crit (beta): a leveling safety point of the leveling build; nothing in a raid.",
+        "encoded": "manual (leveling only)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/priest.json)"]
+      },
+      "Spirit Tap": {
+        "role": "sustain",
+        "why": "+100% Spirit for 15 s after a kill with 50% regen while casting (beta): the leveling mana loop; nothing in a raid, where nothing dies.",
+        "encoded": "manual regen (leveling only)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/priest.json)"]
+      },
+      "Silence": {
+        "role": "control",
+        "why": "5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only.",
+        "encoded": "manual utility (leveling)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/priest.json)"]
+      },
+      "Improved Shadow Word: Pain": {
+        "role": "throughput",
+        "why": "+3 s (one tick) per rank on Shadow Word: Pain, the dot that opens every pull; the fight lab values it 0.27%/point because mobs die before the extra ticks land.",
+        "encoded": "manual dot ticks (fight lab)",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Shadow Weaving": {
+        "role": "throughput",
+        "why": "+3%/rank shadow damage taken after each shadow spell, stacking to five: the raid's shadow debuff; while leveling it only builds over the first casts of a pull (0.33%/point), and it is the path to Vampiric Embrace and Shadowform.",
+        "encoded": "parsed dmg (fight lab)",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      },
+      "Improved Mind Blast": {
+        "role": "throughput",
+        "why": "-0.5 s/rank Mind Blast cooldown: more Mind Blasts per fight; 0.39%/point in the fight lab, just under the audit threshold.",
+        "encoded": "parsed cooldown (fight lab)",
+        "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+      }
+    }
+  }
+}

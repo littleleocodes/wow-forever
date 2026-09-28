@@ -1,0 +1,778 @@
+{
+  "class": "Priest",
+  "game": "forever",
+  "notes": "Proposed WoW: Forever builds derived from the Classic baselines and the BlizzCon 2026 demo trees (captured 2026-09-13). Point math is validated; performance is not — every build is a hypothesis until it is checked in the live game.",
+  "builds": [
+    {
+      "id": "holy-raid-healer",
+      "name": "Holy — Raid Healer (healer lab winner adopted 2026-09-26)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "holy-raid-healer",
+      "summary": "Allocation adopted on 2026-09-26 from `cand-holy-r1`, the build with the highest healing capacity in the healer lab (+4.4% vs the previous draft; kept under raid/heallab/candidates/). Previous summary: Divine Spirit, Unbreakable Will, Improved Fortitude and Healing Focus are gone, so the Discipline dip is rebuilt around Twin Disciplines (instant heals), Improved Power Word: Shield + Soul Warding, Inner Focus, Meditation (now 51% regen while casting) and Mental Agility. Holy keeps Spiritual Guidance, Spiritual Healing, Inspiration, Divine Fury and Improved Healing, adds Twilight Focus (the Healing Focus replacement), Binding Heal and the Prayer of Mending capstone.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Meditation", 3],
+          ["Inner Focus", 1],
+          ["Mental Agility", 1],
+          ["Mental Strength", 5],
+          ["Soul Warding", 1],
+          ["Penance", 1]
+        ],
+        "Holy": [
+          ["Holy Specialization", 5],
+          ["Twilight Focus", 3],
+          ["Improved Renew", 3],
+          ["Divine Fury", 1],
+          ["Inspiration", 3],
+          ["Holy Nova", 1],
+          ["Improved Healing", 3],
+          ["Binding Heal", 1],
+          ["Litany of Light", 2],
+          ["Spiritual Guidance", 4],
+          ["Spiritual Healing", 3]
+        ],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Meditation", "why": "Reworked: 17% regen per rank while casting (est. 51%). Healer lab (2026-09-26): removing it costs +20% healing capacity."},
+        {"talent": "Improved Healing", "why": "Cheaper Heal/Greater Heal/Penance/Prayer of Mending. Healer lab (2026-09-26): removing it costs +6% healing capacity."},
+        {"talent": "Spiritual Healing", "why": "Now 3 ranks (3%/rank). Healer lab (2026-09-26): removing it costs +5% healing capacity."},
+        {"talent": "Inspiration", "why": "Armor on crit heals (8%/rank est. 24%). Healer lab (2026-09-26): removing it costs +2% healing capacity."},
+        {"talent": "Spiritual Guidance", "why": "Spirit to healing (5%/rank est. 25%). Healer lab (2026-09-26): removing it costs +2% healing capacity."},
+        {"talent": "Soul Warding", "why": "Power Word: Shield -4s cooldown, -15% mana (requires Improved Power Word: Shield 3). Healer lab (2026-09-26): removing it costs +2% healing capacity."},
+        {"talent": "Inner Focus", "why": "Free +25% crit spell. Healer lab (2026-09-26): removing it costs +1% healing capacity."},
+        {"talent": "Mental Agility", "why": "Healer lab (2026-09-26): removing it costs +1% healing capacity."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Holy Specialization",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.7% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Improved Power Word: Shield",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.5% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Divine Fury",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.4% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Twilight Focus",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Binding Heal",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 5,
+          "default": "Twin Disciplines",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures -0.4% healing capacity in the healer lab (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Improved Renew",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures -0.7% healing capacity in the healer lab (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the healer lab on 2026-09-26: cand-holy-r1 beat the previous draft by +4.4% healing capacity.", "Divine Spirit does not exist as a talent in the demo tree; it is presumably baseline or removed — check at launch.", "Tier-1 Discipline has no other healer talent besides Twin Disciplines (Wand Specialization and Power in Light are the alternatives)."],
+      "open_questions": ["Divine Spirit: baseline, removed, or elsewhere?", "Prayer of Mending numbers at 60 and its healing-per-mana vs. Renew.", "Whether Penance (Discipline tier 5) is worth a 21+ Discipline build for a raid healer — see the Discipline build."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "disc-penance-healer",
+      "name": "Discipline — Penance / Divine Aegis / Power Infusion (raid healer)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "disc-power-infusion-healer",
+      "summary": "The Classic Power Infusion build becomes a real Discipline healer: Penance (channelled heal), Renewed Hope (crit on shielded targets), Divine Aegis (absorb on crit heals), Soul Warding shields and Power Infusion (which now requires Penance), with Holy taken to Inspiration, Improved Healing and Binding Heal.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Silent Resolve", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Mental Agility", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Strength", 3],
+          ["Soul Warding", 1],
+          ["Penance", 1],
+          ["Renewed Hope", 5],
+          ["Divine Aegis", 3],
+          ["Power Infusion", 1]
+        ],
+        "Holy": [
+          ["Twilight Focus", 2],
+          ["Improved Renew", 1],
+          ["Holy Specialization", 5],
+          ["Divine Fury", 5],
+          ["Inspiration", 3],
+          ["Improved Healing", 3],
+          ["Binding Heal", 1]
+        ],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Penance", "why": "New: channelled 3-hit heal (or damage) on a 12s cooldown."},
+        {"talent": "Divine Aegis", "why": "New: crit heals shield the target for 5%/rank of the heal (est. 15%)."},
+        {"talent": "Renewed Hope", "why": "New: +2%/rank crit (est. 10%) on direct heals to Weakened Soul targets and shorter Weakened Soul."},
+        {"talent": "Power Infusion", "why": "+20% spell damage/healing to a target for 15s."},
+        {"talent": "Soul Warding", "why": "Shield cooldown/mana — the Discipline engine."},
+        {"talent": "Improved Power Word: Shield", "why": "+21% shield (est.)."},
+        {"talent": "Meditation", "why": "Regen while casting."},
+        {"talent": "Inspiration", "why": "Armor on crit."},
+        {"talent": "Holy Specialization", "why": "Crit for Divine Aegis/Inspiration/Renewed Hope."},
+        {"talent": "Twin Disciplines", "why": "Instant heals +5%."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Mental Strength 3",
+          "alternatives": ["Improved Inner Fire", "Improved Mana Burn (PvP)"],
+          "why": "Reach 30 Discipline points."
+        },
+        {
+          "points": 3,
+          "default": "Twilight Focus 2 + Improved Renew 1",
+          "alternatives": ["Improved Renew 3"],
+          "why": "Tier-1 Holy filler."
+        }
+      ],
+      "notes": ["Gives up Spiritual Guidance, Spiritual Healing and Prayer of Mending — throughput vs. mitigation is the launch test."],
+      "open_questions": ["Penance healing at 60 and whether it can crit (feeds Divine Aegis/Inspiration)."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "shadow-pvp",
+      "name": "Shadow (PvP / solo)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "based_on": "pvp-shadow",
+      "summary": "Shadowform (+10% damage, -50% Shadow mana cost), Silence, Vampiric Embrace, Blackout, Improved Psychic Scream (now requires Blackout 5), Improved Mind Flay, Darkness and Early Demise (Shadow Word: Death exists in Forever), with Twin Disciplines and Silent Resolve replacing the removed Unbreakable Will.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Silent Resolve", 3],
+          ["Improved Power Word: Shield", 3],
+          ["Martyrdom", 2],
+          ["Inner Focus", 1],
+          ["Meditation", 2]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Blackout", 5],
+          ["Shadow Reach", 2],
+          ["Improved Mind Blast", 5],
+          ["Improved Psychic Scream", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Silence", 1],
+          ["Early Demise", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shadowform", "why": "+10% Shadow damage, -50% Shadow mana cost (demo)."},
+        {"talent": "Silence", "why": "5s silence + 3s interrupt."},
+        {"talent": "Blackout", "why": "Stun procs; now tier 1 and the Improved Psychic Scream prerequisite."},
+        {"talent": "Vampiric Embrace", "why": "Party healing from Shadow damage (now on a 1-minute cooldown)."},
+        {"talent": "Shadow Weaving", "why": "Reworked into a self-buff: 33% chance per Shadow spell for +2% Shadow damage, 5 stacks."},
+        {"talent": "Darkness", "why": "+10% Shadow damage."},
+        {"talent": "Improved Mind Flay", "why": "+10% damage and +5 yards; slows less."},
+        {"talent": "Early Demise", "why": "+15%/rank Shadow Word: Death crit below 20% — the execute."},
+        {"talent": "Improved Mind Blast", "why": "Shorter Mind Blast cooldown."},
+        {"talent": "Shadow Focus", "why": "5% Shadow hit."},
+        {"talent": "Silent Resolve", "why": "-15% duration of stuns, fears and silences on you at 3/3: the only crowd-control reduction left in the Forever priest trees."},
+        {"talent": "Improved Power Word: Shield", "why": "+20% absorb on the shield a PvP priest recasts every 15 s; casts are not pushed back while it holds."},
+        {"talent": "Inner Focus", "why": "A free spell with +25% crit on a 3 min cooldown: a near-certain crit Mind Blast in a burst window."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Wand Specialization 2 + Twin Disciplines 3",
+          "alternatives": ["Twin Disciplines 5"],
+          "why": "Tier-1 Discipline filler."
+        }
+      ],
+      "notes": ["Shadow raid DPS may finally be viable: Shadow Weaving no longer needs debuff slots, Vampiric Embrace heals the party, and Shadowform halves mana costs. The same 7/0/44 with Shadow Affinity 3 is the raid variant.", "2026-09-27 scenario audit: Spirit Tap 5, Improved Shadow Word: Pain 2, Improved Fade 2, Wand Specialization 2 -> Silent Resolve 1, Twin Disciplines 2, Improved Power Word: Shield 3, Inner Focus 1, Martyrdom 2, Meditation 2. Fade only lowers NPC threat, so Improved Fade does nothing against players; Spirit Tap procs only on a kill (one kill ends a duel); a longer Shadow Word: Pain is dispelled or outlasts the fight; wands are not a PvP weapon. The points buy the Discipline half of a PvP shadow priest: Silent Resolve 3/3 (-15% stun, fear and silence duration), Improved Power Word: Shield (+20% absorb; casts are not pushed back while it holds), Inner Focus (a free, +25% crit Mind Blast), Martyrdom and Meditation (PvP profile +8.8 points; the 2026-09-27 priest audit's 11/0/40 direction)."],
+      "open_questions": ["Shadow Word: Death baseline availability; Shadowform crit bonus (text truncated in the demo capture)."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "leveling-shadow",
+      "name": "Leveling — Shadow (fight-lab winner adopted 2026-09-26)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "based_on": "leveling-shadow",
+      "summary": "Allocation and order adopted on 2026-09-26 from `cand-shadow-r5`, the fastest build in the fight-lab race over levels 20/30/40/50/60 (+2.4% vs the previous draft, level-weighted time per kill; the previous draft is kept under leveling/fightlab/candidates/). Core talents are ranked by the sim's removal cost at 60. Previous summary: Classic Shadow leveling with the Forever tree: Spirit Tap first (reworked but the same 100% Spirit after kills at max rank), Mind Flay at 20 plus the new Improved Mind Flay, Vampiric Embrace at 25 (it is the 16-point talent now), Shadow Weaving as a self-buff, Darkness and Shadowform at 40, then Blackout/Silence/Early Demise and a small Discipline dip. Ends in the Forever Shadow PvP build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Martyrdom", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Agility", 3],
+          ["Mental Strength", 1]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Spirit Tap", 5],
+          ["Shadow Focus", 5],
+          ["Blackout", 3],
+          ["Shadow Reach", 2],
+          ["Improved Shadow Word: Pain", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Silence", 1],
+          ["Early Demise", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Shadow", "talent": "Spirit Tap", "points": 5},
+        {"levels": "15-16", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+        {"levels": "17-19", "tree": "Shadow", "talent": "Shadow Focus", "points": 3},
+        {"levels": "20", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+        {"levels": "21-22", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+        {"levels": "23-24", "tree": "Shadow", "talent": "Shadow Focus", "points": 2},
+        {"levels": "25-26", "tree": "Shadow", "talent": "Shadow Weaving", "points": 2},
+        {"levels": "27", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+        {"levels": "28", "tree": "Shadow", "talent": "Shadow Weaving", "points": 1},
+        {"levels": "29", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 1},
+        {"levels": "30", "tree": "Shadow", "talent": "Silence", "points": 1},
+        {"levels": "31", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 1},
+        {"levels": "32-34", "tree": "Shadow", "talent": "Blackout", "points": 3},
+        {"levels": "35-36", "tree": "Shadow", "talent": "Early Demise", "points": 2},
+        {"levels": "37-39", "tree": "Shadow", "talent": "Darkness", "points": 3},
+        {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+        {"levels": "41-42", "tree": "Shadow", "talent": "Darkness", "points": 2},
+        {"levels": "43-47", "tree": "Discipline", "talent": "Twin Disciplines", "points": 5},
+        {"levels": "48-49", "tree": "Discipline", "talent": "Martyrdom", "points": 2},
+        {"levels": "50-52", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 3},
+        {"levels": "53", "tree": "Discipline", "talent": "Inner Focus", "points": 1},
+        {"levels": "54-55", "tree": "Discipline", "talent": "Mental Agility", "points": 2},
+        {"levels": "56-58", "tree": "Discipline", "talent": "Meditation", "points": 3},
+        {"levels": "59", "tree": "Discipline", "talent": "Mental Agility", "points": 1},
+        {"levels": "60", "tree": "Discipline", "talent": "Mental Strength", "points": 1}
+      ],
+      "core": [
+        {"talent": "Mind Flay", "why": "Channelled snare + damage at 20. Fight lab (2026-09-26): removing it costs +53% time per kill at 60, +37% at 30."},
+        {"talent": "Shadowform", "why": "Level-40 milestone: +10% damage, -50% Shadow mana cost (demo). Fight lab (2026-09-26): removing it costs +42% time per kill at 60."},
+        {"talent": "Spirit Tap", "why": "Reworked wording, same effect at 5/5 (100% Spirit for 15s after a kill, est.): no drinking between pulls. Fight lab (2026-09-26): removing it costs +12% time per kill at 60, +11% at 30."},
+        {"talent": "Improved Mind Flay", "why": "New: +10% damage and +5 yards for 2 points, right after Mind Flay. Fight lab (2026-09-26): removing it costs +9% time per kill at 60, +10% at 30."},
+        {"talent": "Darkness", "why": "+10% Shadow damage. Fight lab (2026-09-26): removing it costs +6% time per kill at 60."},
+        {"talent": "Shadow Weaving", "why": "Self-buff now (est. +10% Shadow damage at 5 stacks) — no debuff slot, always up while leveling. Fight lab (2026-09-26): removing it costs +6% time per kill at 60, +6% at 30."},
+        {"talent": "Meditation", "why": "Fight lab (2026-09-26): removing it costs +5% time per kill at 60."},
+        {"talent": "Mental Agility", "why": "Fight lab (2026-09-26): removing it costs +3% time per kill at 60."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Blackout",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.6% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Shadow Reach",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.3% time per kill at 60 and +0.4% at 30 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Mental Strength",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.2% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Martyrdom",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Silence",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 and +0.0% at 30 in the fight lab (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-shadow-r5 beat the previous draft by +2.4% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: Shadow Word: Pain -> Mind Blast -> Mind Flay (kite) -> wand; Vampiric Embrace on every mob from 25; Shadowform from 40.", "Shadow Affinity (threat) is skipped — irrelevant solo.", "Fight lab (leveling/fightlab/shadow-dps.md, 2026-09-28, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 35/37/23/23/21 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-shadow-dps-leveling-st is +21% at 60 and +8% at 30 (negative = faster); race winner over the leveling: cand-shadow-r6; top talents at 60: Shadowform +47%, Mind Flay +23%, Darkness +7%, Shadow Weaving +7%; about zero: Holy Nova, Improved Power Word: Shield, Improved Renew, Spell Warding, Twilight Focus. See the Fight lab section of leveling/README.md."],
+      "open_questions": ["Shadow Word: Death availability and level.", "Whether Shadowform's demo crit bonus (text truncated) changes the value of Blackout/Early Demise."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-leveling-st",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `leveling-st`: score +74.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Improved Power Word: Shield", 2]
+        ],
+        "Holy": [
+          ["Twilight Focus", 3],
+          ["Improved Renew", 2],
+          ["Spell Warding", 5],
+          ["Holy Nova", 1]
+        ],
+        "Shadow": [
+          ["Blackout", 5],
+          ["Shadow Focus", 5],
+          ["Spirit Tap", 1],
+          ["Shadow Reach", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Early Demise", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 23.7 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 13.2 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 1.5 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 0.7 points of score in this model."},
+        {"talent": "Blackout", "why": "Removing it costs 0.7 points of score in this model."},
+        {"talent": "Shadow Reach", "why": "Removing it costs 0.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/talents/forever/optimizer/shadow-dps-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"],
+      "order": [
+        {"levels": "10-14", "tree": "Shadow", "talent": "Blackout", "points": 5},
+        {"levels": "15-16", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+        {"levels": "17-19", "tree": "Shadow", "talent": "Shadow Focus", "points": 3},
+        {"levels": "20", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+        {"levels": "21-22", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+        {"levels": "23-24", "tree": "Shadow", "talent": "Shadow Focus", "points": 2},
+        {"levels": "25", "tree": "Shadow", "talent": "Shadow Weaving", "points": 1},
+        {"levels": "26", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+        {"levels": "27-28", "tree": "Shadow", "talent": "Shadow Weaving", "points": 2},
+        {"levels": "29-33", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 5},
+        {"levels": "34", "tree": "Shadow", "talent": "Spirit Tap", "points": 1},
+        {"levels": "35-36", "tree": "Shadow", "talent": "Early Demise", "points": 2},
+        {"levels": "37-39", "tree": "Shadow", "talent": "Darkness", "points": 3},
+        {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+        {"levels": "41-42", "tree": "Shadow", "talent": "Darkness", "points": 2},
+        {"levels": "43-47", "tree": "Discipline", "talent": "Twin Disciplines", "points": 5},
+        {"levels": "48-50", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+        {"levels": "51-52", "tree": "Holy", "talent": "Improved Renew", "points": 2},
+        {"levels": "53-57", "tree": "Holy", "talent": "Spell Warding", "points": 5},
+        {"levels": "58", "tree": "Holy", "talent": "Holy Nova", "points": 1},
+        {"levels": "59-60", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-shadow-dps-solo-60",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (solo-60)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `solo-60`: score +74.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Improved Power Word: Shield", 2]
+        ],
+        "Holy": [
+          ["Twilight Focus", 3],
+          ["Improved Renew", 2],
+          ["Spell Warding", 5],
+          ["Holy Nova", 1]
+        ],
+        "Shadow": [
+          ["Blackout", 5],
+          ["Shadow Focus", 5],
+          ["Spirit Tap", 1],
+          ["Shadow Reach", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Early Demise", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 23.7 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 13.2 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 1.5 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 0.7 points of score in this model."},
+        {"talent": "Blackout", "why": "Removing it costs 0.7 points of score in this model."},
+        {"talent": "Shadow Reach", "why": "Removing it costs 0.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/talents/forever/optimizer/shadow-dps-solo-60.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"],
+      "order": [
+        {"levels": "10-14", "tree": "Shadow", "talent": "Blackout", "points": 5},
+        {"levels": "15-16", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+        {"levels": "17-19", "tree": "Shadow", "talent": "Shadow Focus", "points": 3},
+        {"levels": "20", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+        {"levels": "21-22", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+        {"levels": "23-24", "tree": "Shadow", "talent": "Shadow Focus", "points": 2},
+        {"levels": "25", "tree": "Shadow", "talent": "Shadow Weaving", "points": 1},
+        {"levels": "26", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+        {"levels": "27-28", "tree": "Shadow", "talent": "Shadow Weaving", "points": 2},
+        {"levels": "29-33", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 5},
+        {"levels": "34", "tree": "Shadow", "talent": "Spirit Tap", "points": 1},
+        {"levels": "35-36", "tree": "Shadow", "talent": "Early Demise", "points": 2},
+        {"levels": "37-39", "tree": "Shadow", "talent": "Darkness", "points": 3},
+        {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+        {"levels": "41-42", "tree": "Shadow", "talent": "Darkness", "points": 2},
+        {"levels": "43-47", "tree": "Discipline", "talent": "Twin Disciplines", "points": 5},
+        {"levels": "48-50", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+        {"levels": "51-52", "tree": "Holy", "talent": "Improved Renew", "points": 2},
+        {"levels": "53-57", "tree": "Holy", "talent": "Spell Warding", "points": 5},
+        {"levels": "58", "tree": "Holy", "talent": "Holy Nova", "points": 1},
+        {"levels": "59-60", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-shadow-dps-leveling-aoe",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `leveling-aoe`: score +76.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Wand Specialization", 2],
+          ["Twin Disciplines", 4],
+          ["Martyrdom", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Strength", 2]
+        ],
+        "Holy": [
+          ["Twilight Focus", 3]
+        ],
+        "Shadow": [
+          ["Shadow Focus", 4],
+          ["Blackout", 5],
+          ["Spirit Tap", 2],
+          ["Improved Shadow Word: Pain", 2],
+          ["Shadow Reach", 2],
+          ["Improved Psychic Scream", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 2],
+          ["Improved Fade", 1],
+          ["Silence", 1],
+          ["Early Demise", 2],
+          ["Darkness", 3],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shadowform", "why": "Removing it costs 19.6 points of score in this model."},
+        {"talent": "Twilight Focus", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Mind Flay", "why": "Removing it costs 8.4 points of score in this model."},
+        {"talent": "Shadow Reach", "why": "Removing it costs 5.7 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 1.1 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 0.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation and order taken from cand-aoe-r1 on 2026-09-28: an earlier optimizer round beat the last export in the fight lab (52.8s vs 116.4s per kill, level-weighted).", "Report: priest/talents/forever/optimizer/shadow-dps-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"],
+      "order": [
+        {"levels": "10-11", "tree": "Shadow", "talent": "Spirit Tap", "points": 2},
+        {"levels": "12-14", "tree": "Shadow", "talent": "Shadow Focus", "points": 3},
+        {"levels": "15-16", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 2},
+        {"levels": "17", "tree": "Shadow", "talent": "Shadow Focus", "points": 1},
+        {"levels": "18-19", "tree": "Shadow", "talent": "Shadow Reach", "points": 2},
+        {"levels": "20", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+        {"levels": "21-22", "tree": "Shadow", "talent": "Improved Mind Flay", "points": 2},
+        {"levels": "23-24", "tree": "Shadow", "talent": "Blackout", "points": 2},
+        {"levels": "25", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+        {"levels": "26-27", "tree": "Shadow", "talent": "Shadow Weaving", "points": 2},
+        {"levels": "28", "tree": "Shadow", "talent": "Improved Fade", "points": 1},
+        {"levels": "29", "tree": "Shadow", "talent": "Blackout", "points": 1},
+        {"levels": "30", "tree": "Shadow", "talent": "Silence", "points": 1},
+        {"levels": "31-32", "tree": "Shadow", "talent": "Blackout", "points": 2},
+        {"levels": "33-34", "tree": "Shadow", "talent": "Improved Psychic Scream", "points": 2},
+        {"levels": "35-36", "tree": "Shadow", "talent": "Early Demise", "points": 2},
+        {"levels": "37-39", "tree": "Shadow", "talent": "Darkness", "points": 3},
+        {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+        {"levels": "41-43", "tree": "Holy", "talent": "Twilight Focus", "points": 3},
+        {"levels": "44-45", "tree": "Discipline", "talent": "Wand Specialization", "points": 2},
+        {"levels": "46-48", "tree": "Discipline", "talent": "Twin Disciplines", "points": 3},
+        {"levels": "49-50", "tree": "Discipline", "talent": "Martyrdom", "points": 2},
+        {"levels": "51-53", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 3},
+        {"levels": "54", "tree": "Discipline", "talent": "Inner Focus", "points": 1},
+        {"levels": "55-57", "tree": "Discipline", "talent": "Meditation", "points": 3},
+        {"levels": "58", "tree": "Discipline", "talent": "Twin Disciplines", "points": 1},
+        {"levels": "59-60", "tree": "Discipline", "talent": "Mental Strength", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-holy-heal-raid-heal",
+      "name": "Optimizer — Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4% (raid-heal)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +93.7% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Meditation", 3],
+          ["Inner Focus", 1],
+          ["Mental Agility", 1],
+          ["Mental Strength", 5],
+          ["Soul Warding", 1],
+          ["Penance", 1]
+        ],
+        "Holy": [
+          ["Holy Specialization", 5],
+          ["Twilight Focus", 3],
+          ["Improved Renew", 3],
+          ["Divine Fury", 1],
+          ["Inspiration", 3],
+          ["Holy Nova", 1],
+          ["Improved Healing", 3],
+          ["Binding Heal", 1],
+          ["Litany of Light", 2],
+          ["Spiritual Guidance", 4],
+          ["Spiritual Healing", 3]
+        ],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Meditation", "why": "Removing it costs 34.5 points of score in this model."},
+        {"talent": "Improved Healing", "why": "Removing it costs 13.1 points of score in this model."},
+        {"talent": "Penance", "why": "Removing it costs 10.5 points of score in this model."},
+        {"talent": "Spiritual Healing", "why": "Removing it costs 10.3 points of score in this model."},
+        {"talent": "Spiritual Guidance", "why": "Removing it costs 6.4 points of score in this model."},
+        {"talent": "Mental Strength", "why": "Removing it costs 5.1 points of score in this model."},
+        {"talent": "Inspiration", "why": "Removing it costs 4.0 points of score in this model."},
+        {"talent": "Inner Focus", "why": "Removing it costs 3.8 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/talents/forever/optimizer/holy-heal-raid-heal.md", "Promoted by rebuild.py on 2026-09-28: cand-holy-r1 had the highest healing capacity in the healer lab (0.623 vs 0.608)."],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "smite-discipline-raid",
+      "name": "Discipline/Holy — Smite (raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: +10% Smite and Penance on targets with Holy Fire; Twin Disciplines on instants; Mental Strength), Holy for Divine Fury, Holy Specialization and Searing Light. From the simulator's Smite preset, tuned by the simulator talent search and its own rotation (Holy Fire up, Penance on cooldown, Smite). For a priest who wants to deal Holy damage; its rank against Shadow is on the survey page.",
+      "allocation": {
+        "Discipline": [
+          ["Power in Light", 5],
+          ["Wand Specialization", 1],
+          ["Twin Disciplines", 5],
+          ["Holy Precision", 3],
+          ["Mental Agility", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Strength", 5],
+          ["Penance", 1],
+          ["Divine Aegis", 3],
+          ["Power Infusion", 1]
+        ],
+        "Holy": [
+          ["Holy Specialization", 5],
+          ["Divine Fury", 5],
+          ["Blessed Recovery", 2],
+          ["Inspiration", 3],
+          ["Searing Light", 2]
+        ],
+        "Shadow": [
+          ["Shadow Focus", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Inner Focus", "why": "A free, +25% crit spell on its cooldown; the rotation opens a strict sequence with it. Simulator (2026-09-28): the rotation reads this talent's own spell or proc (or casts it in a sequence), so its removal run breaks the rotation rather than measuring it."},
+        {"talent": "Penance", "why": "Holy damage on a 12 s cooldown, cast on cooldown. Simulator removal run (2026-09-28): the build loses 13.0% of its DPS on the training dummy without it."},
+        {"talent": "Divine Fury", "why": "-0.5 s on Smite and Holy Fire. Simulator removal run (2026-09-28): the build loses 12.9% of its DPS on the training dummy without it."},
+        {"talent": "Holy Precision", "why": "Simulator removal run (2026-09-28): the build loses 11.7% of its DPS on the training dummy without it."},
+        {"talent": "Meditation", "why": "Simulator removal run (2026-09-28): the build loses 10.1% of its DPS on the training dummy without it."},
+        {"talent": "Power in Light", "why": "+10% Smite and Penance on targets with Holy Fire. Simulator removal run (2026-09-28): the build loses 4.9% of its DPS on the training dummy without it."},
+        {"talent": "Searing Light", "why": "+5% Holy damage. Simulator removal run (2026-09-28): the build loses 3.3% of its DPS on the training dummy without it."},
+        {"talent": "Power Infusion", "why": "+20% spell damage for 15 s. Simulator removal run (2026-09-28): the build loses 3.2% of its DPS on the training dummy without it."},
+        {"talent": "Mental Agility", "why": "Simulator removal run (2026-09-28): the build loses 2.0% of its DPS on the training dummy without it."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Shadow Focus",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.6% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 1,
+          "default": "Wand Specialization",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 3,
+          "default": "Divine Aegis",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Blessed Recovery",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 3,
+          "default": "Inspiration",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        }
+      ],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Smite 31/17/3`: 3 points Spirit Tap -> Shadow Focus.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "open_questions": ["Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts."],
+      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/priest/dps/presets.ts", "https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-raid-dps",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +373.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 5],
+          ["Wand Specialization", 2],
+          ["Meditation", 3],
+          ["Mental Strength", 5]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Shadow Affinity", 3],
+          ["Shadow Reach", 1],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Devouring Contagion", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 204.6 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 188.2 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 38.9 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 38.9 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 37.8 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 19.9 points of score in this model."},
+        {"talent": "Improved Mind Blast", "why": "Removing it costs 11.3 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 11.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).", "Report: priest/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-parse",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +350.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 5],
+          ["Wand Specialization", 1],
+          ["Inner Focus", 1],
+          ["Mental Agility", 3],
+          ["Mental Strength", 3]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Blackout", 4],
+          ["Improved Shadow Word: Pain", 2],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Devouring Contagion", 2],
+          ["Darkness", 5],
+          ["Early Demise", 2],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 204.6 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 167.1 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 38.9 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 38.9 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 37.8 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 19.9 points of score in this model."},
+        {"talent": "Improved Mind Blast", "why": "Removing it costs 11.3 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 10.8 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/talents/forever/optimizer/shadow-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    }
+  ]
+}

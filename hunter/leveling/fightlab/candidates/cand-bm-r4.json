@@ -1,0 +1,219 @@
+{
+ "id": "cand-bm-r4",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Ferocity",
+    3
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Lethal Attacks",
+    2
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Scatter Shot",
+    1
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    3
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Marksmanship",
+   "talent": "Hawk Eye",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 2
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "20-21",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "25",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Marksmanship",
+   "talent": "Scatter Shot",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Marksmanship",
+   "talent": "Barrage",
+   "points": 3
+  },
+  {
+   "levels": "36",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 1
+  },
+  {
+   "levels": "37-39",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Marksmanship",
+   "talent": "Sniper Shot",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Beast Mastery",
+   "talent": "Improved Revive Pet",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Beast Mastery",
+   "talent": "Summon Hawk",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Swiftness",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 3
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 4)"
+}

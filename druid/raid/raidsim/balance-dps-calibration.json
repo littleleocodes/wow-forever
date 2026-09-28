@@ -1,0 +1,586 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "balance-moonkin-raid",
+  "opt-balance-dps-raid-dps",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-hand-2026-09-26.json",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-r1.json",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-r2.json",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-r3.json",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-r4.json",
+  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-balance-dps-r5.json"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "druid/balance",
+  "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/druid/balance-dps.apl.json",
+  "apl_sim": "ui/specs/druid/balance/apls/default.apl.json",
+  "race": "RaceTauren",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus gift_of_the_wild and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "guardianElixirId": 20007,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "mhImbueId": 25122
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "talents": [
+  {
+   "talent": "Moonglow",
+   "sim": 0.14849198515616474,
+   "ev_before": 0.25078162162162165,
+   "ev_after": 0.17576124916292896,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Improved Starfire",
+   "sim": 0.11701947233634566,
+   "ev_before": 0.06235903593564271,
+   "ev_after": 0.11384655321404477,
+   "scale": 1.739374759607017,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Moonfury",
+   "sim": 0.09999999999999991,
+   "ev_before": 0.10000000000000024,
+   "ev_after": 0.1000000000000002,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Vengeance",
+   "sim": 0.09902055820249664,
+   "ev_before": 0.11177355008960113,
+   "ev_after": 0.1019615995770835,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Insect Swarm",
+   "sim": 0.09383162084826743,
+   "ev_before": 0.0936034429204357,
+   "ev_after": 0.08693181391575205,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Naturalist",
+   "sim": 0.050000000000000225,
+   "ev_before": 0.050000000000000086,
+   "ev_after": 0.05000000000000016,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Nature's Reach",
+   "sim": 0.04402555484195509,
+   "ev_before": 0.04869047619047631,
+   "ev_after": 0.04869047619047624,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Nature's Majesty",
+   "sim": 0.03649769216939885,
+   "ev_before": 0.02838654191196957,
+   "ev_after": 0.029333062177018133,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Moonkin Form",
+   "sim": 0.033299379607781274,
+   "ev_before": 0.07662901101991759,
+   "ev_after": 0.03335400843437737,
+   "scale": 0.5581647935323417,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Improved Moonfire",
+   "sim": 0.03270218244765829,
+   "ev_before": 0.035766363555056024,
+   "ev_after": 0.03710392464654473,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Nature's Splendor",
+   "sim": 0.030094191594521123,
+   "ev_before": 0.038661875469564164,
+   "ev_after": 0.030094158407273645,
+   "scale": 3.4859634917229414,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Nature's Grace",
+   "sim": 0.01910187889627593,
+   "ev_before": 0.009744000000000067,
+   "ev_after": 0.009743999999999768,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Reflection",
+   "sim": 0.017423338815849822,
+   "ev_before": 0.0960614801090841,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "held",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Genesis",
+   "sim": 0.01567643223792895,
+   "ev_before": 0.016182794545970273,
+   "ev_after": 0.01538646272255327,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Heart of the Wild",
+   "sim": 0.0045924864157300075,
+   "ev_before": 0.020311795418564847,
+   "ev_after": 0.004592492857142863,
+   "scale": 3.1837466340512037,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Nature's Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid",
+    "opt-balance-dps-raid-dps",
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r4",
+    "cand-balance-dps-r5"
+   ]
+  },
+  {
+   "talent": "Subtlety",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid",
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3"
+   ]
+  },
+  {
+   "talent": "Eclipse",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Improved Entangling Roots",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Improved Wrath",
+   "sim": 0.0,
+   "ev_before": 0.0028500079878600744,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-hand-2026-09-26",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r4"
+   ]
+  },
+  {
+   "talent": "Overgrowth",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Swiftmend",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-r1",
+    "cand-balance-dps-r2",
+    "cand-balance-dps-r3"
+   ]
+  },
+  {
+   "talent": "Furor",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-balance-dps-r3"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": {
+   "profiles": [
+    "raid-dps",
+    "raid-dps-extwc"
+   ],
+   "loss": 0.3075,
+   "cap": 0.26,
+   "rms": 0.0257,
+   "points": 23
+  },
+  "builds": {
+   "balance-moonkin-raid": {
+    "dps": 460.8075733928038,
+    "surplus": 466.85502403054113,
+    "oom_seconds": 0.017094666666666664,
+    "deficit": 0.01295359442751054,
+    "sustain": 1.6899,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "opt-balance-dps-raid-dps": {
+    "dps": 461.33016244401574,
+    "surplus": 467.5823384648929,
+    "oom_seconds": 0.002275333333333333,
+    "deficit": 0.013371283529235778,
+    "sustain": 1.722,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-hand-2026-09-26": {
+    "dps": 427.60605255068265,
+    "surplus": 443.0208121030838,
+    "oom_seconds": 2.7343339999999996,
+    "deficit": 0.03479466230768047,
+    "sustain": 1.5629,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r1": {
+    "dps": 460.23605330436885,
+    "surplus": 466.51346818689404,
+    "oom_seconds": 0.017654666666666666,
+    "deficit": 0.013456020695227444,
+    "sustain": 1.6738,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r2": {
+    "dps": 453.1409788338501,
+    "surplus": 459.39499211632705,
+    "oom_seconds": 0.017654666666666666,
+    "deficit": 0.013613586107384723,
+    "sustain": 1.6772,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r3": {
+    "dps": 460.23605330436885,
+    "surplus": 466.51346818689404,
+    "oom_seconds": 0.017654666666666666,
+    "deficit": 0.013456020695227444,
+    "sustain": 1.6738,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r4": {
+    "dps": 450.2409150490781,
+    "surplus": 454.76015828756,
+    "oom_seconds": 0.09511399999999999,
+    "deficit": 0.00993764109745121,
+    "sustain": 1.7077,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r5": {
+    "dps": 461.33016244401574,
+    "surplus": 467.5823384648929,
+    "oom_seconds": 0.002275333333333333,
+    "deficit": 0.013371283529235778,
+    "sustain": 1.722,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   }
+  },
+  "removals": {
+   "balance-moonkin-raid -Moonglow": {
+    "deficit": 0.1251,
+    "sustain": 1.1717,
+    "bound_share": 1.0,
+    "model_deficit": 0.1358
+   },
+   "balance-moonkin-raid -Reflection": {
+    "deficit": 0.0261,
+    "sustain": 1.6077,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "opt-balance-dps-raid-dps -Moonglow": {
+    "deficit": 0.117,
+    "sustain": 1.2038,
+    "bound_share": 1.0,
+    "model_deficit": 0.1037
+   },
+   "opt-balance-dps-raid-dps -Reflection": {
+    "deficit": 0.0219,
+    "sustain": 1.6398,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-hand-2026-09-26 -Moonglow": {
+    "deficit": 0.2139,
+    "sustain": 1.0448,
+    "bound_share": 1.0,
+    "model_deficit": 0.26
+   },
+   "cand-balance-dps-r1 -Moonglow": {
+    "deficit": 0.1317,
+    "sustain": 1.1556,
+    "bound_share": 1.0,
+    "model_deficit": 0.1519
+   },
+   "cand-balance-dps-r1 -Reflection": {
+    "deficit": 0.0295,
+    "sustain": 1.5916,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r2 -Moonglow": {
+    "deficit": 0.1317,
+    "sustain": 1.1591,
+    "bound_share": 1.0,
+    "model_deficit": 0.1484
+   },
+   "cand-balance-dps-r2 -Reflection": {
+    "deficit": 0.0298,
+    "sustain": 1.5951,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r3 -Moonglow": {
+    "deficit": 0.1317,
+    "sustain": 1.1556,
+    "bound_share": 1.0,
+    "model_deficit": 0.1519
+   },
+   "cand-balance-dps-r3 -Reflection": {
+    "deficit": 0.0295,
+    "sustain": 1.5916,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r4 -Moonglow": {
+    "deficit": 0.1673,
+    "sustain": 1.1895,
+    "bound_share": 1.0,
+    "model_deficit": 0.118
+   },
+   "cand-balance-dps-r4 -Reflection": {
+    "deficit": 0.0491,
+    "sustain": 1.6255,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-balance-dps-r5 -Moonglow": {
+    "deficit": 0.117,
+    "sustain": 1.2038,
+    "bound_share": 1.0,
+    "model_deficit": 0.1037
+   },
+   "cand-balance-dps-r5 -Reflection": {
+    "deficit": 0.0219,
+    "sustain": 1.6398,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   }
+  }
+ }
+}

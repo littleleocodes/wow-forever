@@ -1,0 +1,96 @@
+{
+ "class": "warlock",
+ "spec": "sb-raid",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "warlock",
+  "gear": "ui/warlock/gear_sets/mc.gear.json",
+  "apl": "ui/warlock/apls/rotation.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own improved_shadow_bolt (its talent is under test)",
+  "consumables": {
+   "alcohol": "AlcoholRumseyRumBlackLabel",
+   "defaultPotion": "MajorManaPotion",
+   "defaultConjured": "ConjuredDemonicRune",
+   "flask": "FlaskOfSupremePower",
+   "firePowerBuff": "ElixirOfFirepower",
+   "food": "FoodRunnTumTuberSurprise",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "shadowPowerBuff": "ElixirOfShadowPower",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "ds-ruin-raid",
+   "talents": "50002-2050050152001-54500051020001",
+   "split": "7/21/23",
+   "ours": true,
+   "dps": 948.5032864125101,
+   "dps_stdev": 82.46816166987544,
+   "threat": 997.4691910414084,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.00016666666666666666,
+   "error": null,
+   "scorer": 0.6038585337083592,
+   "shares": {
+    "Shadow Bolt": 0.6111778730696025,
+    "Corruption": 0.1295324671471885,
+    "Bane of Agony": 0.12434917204515201,
+    "Immolate": 0.11416703145852876,
+    "Shadowburn": 0.01430998105264861,
+    "Searing Pain": 0.006463475226879679
+   },
+   "source_shares": {
+    "shadow_bolt": 0.6241,
+    "corruption": 0.1323,
+    "agony": 0.127,
+    "immolate": 0.1166
+   },
+   "unmatched_share": 0.0208
+  },
+  {
+   "label": "sm-ruin-raid",
+   "talents": "5522203012201005--52500051020001",
+   "split": "30/0/21",
+   "ours": true,
+   "dps": 1091.880320565692,
+   "dps_stdev": 81.87998632573434,
+   "threat": 1002.2983220290809,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0005,
+   "error": null,
+   "scorer": 0.7957850868171652,
+   "shares": {
+    "Shadow Bolt": 0.5281833927665704,
+    "Pet: Auto Attack": 0.11983004441215434,
+    "Corruption": 0.11814454843085312,
+    "Bane of Agony": 0.1134290290794913,
+    "Immolate": 0.0929796820365013,
+    "Shadowburn": 0.01161657824455535,
+    "Pet: Lash of Pain": 0.009844017157307422,
+    "Searing Pain": 0.005972707872566782
+   },
+   "source_shares": {
+    "shadow_bolt": 0.5376,
+    "imp": 0.132,
+    "corruption": 0.1203,
+    "agony": 0.1155,
+    "immolate": 0.0946
+   },
+   "unmatched_share": 0.0176
+  }
+ ],
+ "deltas": {}
+}

@@ -1,0 +1,229 @@
+{
+ "id": "cand-ele-r1",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Earthbound",
+    1
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lava Burst",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Earth's Grasp",
+    2
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Guardian Totems",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Stormstrike",
+    1
+   ]
+  ],
+  "Restoration": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-25",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Improved Ghost Wolf",
+   "points": 2
+  },
+  {
+   "levels": "28-29",
+   "tree": "Enhancement",
+   "talent": "Guardian Totems",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "36-38",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "39",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
+  },
+  {
+   "levels": "42-45",
+   "tree": "Elemental",
+   "talent": "Reverberation",
+   "points": 4
+  },
+  {
+   "levels": "46-47",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Elemental",
+   "talent": "Elemental Fury",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Elemental",
+   "talent": "Lava Burst",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Elemental",
+   "talent": "Earthbound",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Enhancement",
+   "talent": "Earth's Grasp",
+   "points": 2
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 1)"
+}

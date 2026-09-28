@@ -1,0 +1,229 @@
+{
+ "class": "warrior",
+ "spec": "fury-dw-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "fury-dw-raid",
+  "fury-2h-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "warrior",
+  "gear": "ui/warrior/gear_sets/phase_1.gear.json",
+  "apl": "ui/warrior/apls/dps_no_reck.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "alcohol": "AlcoholRumseyRumBlackLabel",
+   "armorElixir": "ElixirOfSuperiorDefense",
+   "attackPowerBuff": "JujuMight",
+   "defaultPotion": "MightyRagePotion",
+   "dragonBreathChili": true,
+   "food": "FoodSmokedDesertDumpling",
+   "healthElixir": "ElixirOfFortitude",
+   "mainHandImbue": "Windfury",
+   "offHandImbue": "ElementalSharpeningStone",
+   "sapperExplosive": "SapperGoblinSapper",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "ROIDS"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Flurry",
+   "sim": 0.19213572714191876,
+   "ev_before": 0.15696502712332852,
+   "ev_after": 0.1580206292853962,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Bloodthirst",
+   "sim": 0.12255815348851862,
+   "ev_before": 0.10764070706063888,
+   "ev_after": 0.10750333241083918,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Death Wish",
+   "sim": 0.07777859234511159,
+   "ev_before": 0.07100648361353795,
+   "ev_after": 0.07091351123187356,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.0607522901824874,
+   "ev_before": 0.04900187643206387,
+   "ev_after": 0.04929361292698882,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid"
+   ]
+  },
+  {
+   "talent": "Cruelty",
+   "sim": 0.042658064268286805,
+   "ev_before": 0.039673989744689386,
+   "ev_after": 0.039603048808680916,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Impale",
+   "sim": 0.04173725313930515,
+   "ev_before": 0.04052111587440731,
+   "ev_after": 0.04029600751391624,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Improved Execute",
+   "sim": 0.012542365434087113,
+   "ev_before": 0.01044289233892998,
+   "ev_after": 0.010386545446405621,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Improved Heroic Strike",
+   "sim": 0.006874761591760866,
+   "ev_before": 0.004798728570332413,
+   "ev_after": 0.004772979748665352,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Deep Wounds",
+   "sim": 0.0046037315736776226,
+   "ev_before": 0.007506713946275233,
+   "ev_after": 0.004657643813097882,
+   "scale": 0.28172902623191476,
+   "how": "fitted",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Unbridled Wrath",
+   "sim": 0.0038754990445325067,
+   "ev_before": 0.004114982815350386,
+   "ev_after": 0.004138977772217317,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Anger Management",
+   "sim": 0.0014335750550983227,
+   "ev_before": 0.004982785535928166,
+   "ev_after": 0.004956044240926584,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Enrage",
+   "sim": 0.0,
+   "ev_before": 0.004611618032851599,
+   "ev_after": 0.004605953623000716,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Improved Battle Shout",
+   "sim": 0.0,
+   "ev_before": 0.08401923777030351,
+   "ev_after": 0.08534643992689596,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Improved Rend",
+   "sim": 0.0,
+   "ev_before": 0.0008924476977448135,
+   "ev_after": 0.0009054471780962179,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Tactical Mastery",
+   "sim": 0.0,
+   "ev_before": 0.0115925749511145,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "fury-dw-raid",
+    "fury-2h-raid"
+   ]
+  },
+  {
+   "talent": "Improved Slam",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fury-2h-raid"
+   ]
+  }
+ ]
+}

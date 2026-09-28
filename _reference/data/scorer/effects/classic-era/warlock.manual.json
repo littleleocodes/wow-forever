@@ -1,0 +1,1027 @@
+{
+  "_doc": "Classic Era hand-entered Warlock effects for calibration. Same tag conventions as the Forever file.",
+  "Suppression": {
+    "note": "-2%/rank Affliction resist chance. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 2.1% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged. PvP (2026-09-27): medium, stun: Affliction spells (Fear, Howl of Terror, Death Coil, curses) resisted less against players (96% base hit): 2 ranks reach the 99% cap, the rest adds nothing in PvP. The DoT hit is counted.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["ability:Affliction"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["ability:Affliction"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["ability:Affliction"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Corruption": {
+    "note": "-0.4s/rank Corruption cast (instant at 5/5): a 2s cast every 18s is ~11% of casting time -> ~2.2%/rank more filler casting time (Shadow Bolt / Drain Life); instant Corruption is also safer pulling while leveling. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 2.4% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged. PvP (2026-09-27): high, move: Corruption becomes instant (2 s cast baseline): the DoT applied while running or kiting, with no cast to kick or push back, and Nightfall's proc source. Core of the Soul Link build.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt", "ability:Drain Life", "ability:Incinerate"],
+        "per_rank": 0.022,
+        "values": [0.022, 0.044, 0.066, 0.088, 0.11],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt", "ability:Drain Life", "ability:Incinerate"],
+        "per_rank": 0.022,
+        "values": [0.022, 0.044, 0.066, 0.088, 0.11],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001566,
+        "values": [0.001566, 0.003132, 0.004698, 0.006265, 0.007831],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt", "ability:Drain Life", "ability:Incinerate"],
+        "per_rank": 0.008614,
+        "values": [0.008614, 0.017228, 0.025842, 0.034456, 0.043069],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Improved Curse of Weakness": {
+    "note": "Stronger Curse of Weakness: tank utility only. PvP (2026-09-27): low, defensive: Curse of Weakness 20% stronger (-37 instead of -31 damage per hit) against a warrior or rogue; it takes the Curse slot from Curse of Agony.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Drain Soul": {
+    "note": "Mana regen after a Drain Soul kill: leveling chain-pulls. 2026-09-27 audit: mana back needs a Drain Soul kill; about one kill in four: 0.0075/rank. PvP (2026-09-27): zero, defensive: Mana regen only for 10 s after a target dies while you Drain Soul it: a leveling kill proc; players are not finished with a 15 s Drain Soul channel.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["leveling"],
+        "per_rank": 0.0075
+      }
+    ]
+  },
+  "Improved Life Tap": {
+    "note": "+10%/rank Life Tap mana: ~half of a warlock's mana -> +4%/rank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 0.5% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.014005,
+        "values": [0.014005, 0.028011, 0.042016, 0.056021, 0.070026],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Improved Drain Life": {
+    "note": "+2%/rank Drain Life: drain-tanking damage and the health that replaces Life Taps -> +0.5%/rank sustain while leveling. PvP (2026-09-27): low, defensive: Drain Life heals 10% more: a little more self-healing while drain-tanking; drain healing is not in the survival term. Flex alternative in the Soul Link build.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Drain Life"],
+        "per_rank": 0.02
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Fel Concentration": {
+    "note": "14%/rank pushback avoidance on drains: leveling only. PvP (2026-09-27): medium, resist: 70% chance to ignore pushback on Drain Life, Drain Mana and Drain Soul channels: drains keep running under melee hits and DoT ticks. The Soul Link build's popular alternative to Suppression.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Drains"],
+        "per_rank": 0.02,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Amplify Curse": {
+    "note": "+50% next Curse of Agony every 3 min: ~+5% Agony damage. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged. PvP (2026-09-27): medium, kite: 3 min cooldown: next Curse of Exhaustion +20% (50% slow with Improved Curse of Exhaustion) or Curse of Weakness / Curse of Agony +50%. Required for Curse of Exhaustion.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Grim Reach": {
+    "note": "+10%/rank Affliction range: leveling. PvP (2026-09-27): medium, range: +20% range on Affliction spells: Fear and Drain Life/Mana 20 -> 24 yd, Death Coil and curses 30 -> 36 yd: fears and drains from further out. Taken by the Soul Link build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Nightfall": {
+    "note": "2%/rank chance per Corruption/drain tick for an instant Shadow Bolt: ~one free cast per 75s at 2/2 in a raid -> +1%/rank Shadow Bolt throughput; +3%/rank while leveling with Drain Life ticking every second. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 0.6% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.1%). Other modes unchanged. PvP (2026-09-27): medium, burst: 4% chance per Corruption or Drain Life tick to make the next Shadow Bolt instant: an unkickable nuke cast on the move. The cast time saved is counted as damage.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "per_rank": 0.03,
+        "modes": ["leveling"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Drain Mana": {
+    "note": "Drain Mana damage: nothing measurable. PvP (2026-09-27): low, antiheal: Drain Mana also deals 30% of the mana drained as damage: draining a healer's or caster's mana (a PvP-only use) costs less damage.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Siphon Life": {
+    "note": "Instant 30s drain DoT: ~1% of a raid warlock's damage at 60 (weak coefficient) but ~5% while leveling, and the healing makes drain-tanking safer and cuts Life Taps. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, sb-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.5% on the same scale); raid values scaled x0.32 to match (0.5%). Other modes unchanged. 2026-09-27 audit: raid: wowsims/classic measures 0.0%. PvP (2026-09-27): medium, defensive: Instant 30 s DoT that heals you every 3 s (rank 4: 45 a tick plus spell power): steady self-healing and a DoT that shields Corruption from dispels. Required for Shadow Mastery (SM/Ruin).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"],
+        "values": [0.0]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"],
+        "values": [0.0]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "modes": ["raid"],
+        "specs": ["sb-raid"],
+        "values": [0.0]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["raid"],
+        "specs": ["sb-raid"],
+        "values": [0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Curse of Exhaustion": {
+    "note": "Snare: kiting/PvP. PvP (2026-09-27): low, kite: Only a 10% slow alone, and it takes the Curse slot from Curse of Agony: the value is in Improved Curse of Exhaustion and Amplify Curse. Out of reach of the 20/31/0 Soul Link build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.004]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Improved Curse of Exhaustion": {
+    "note": "Stronger snare: PvP. PvP (2026-09-27): medium, kite: Curse of Exhaustion 10% -> 30% slow (50% amplified): the kiting snare of deep-Affliction builds, paid with Curse of Agony's slot and 5 points.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.00375,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Dark Pact": {
+    "note": "Pet mana to you: ~+10% mana budget with a pet out.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.1],
+        "requires_not": {"Demonic Sacrifice": 1}
+      }
+    ]
+  },
+  "Improved Healthstone": {
+    "note": "+10%/rank Healthstone. PvP (2026-09-27): low, defensive: Healthstones heal 20% more (Major 1,200 -> 1,440): a bigger instant heal on demand for you and the group. Filler in the Soul Link build.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Imp": {
+    "note": "+10%/rank Firebolt/Fire Shield/Blood Pact (the raid's tank group stamina).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Imp's Firebolt"],
+        "per_rank": 0.1
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.005
+      }
+    ]
+  },
+  "Improved Health Funnel": {
+    "note": "+10%/rank Health Funnel: pet survivability. PvP (2026-09-27): low, defensive: Health Funnel heals the demon 20% more: keeps the Soul Link partner up, but it is a channel that costs your health.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "per_rank": 0.03
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Voidwalker": {
+    "note": "+10%/rank Torment/Consume Shadows/Sacrifice/Suffering: pet tanking. PvP (2026-09-27): low, defensive: Voidwalker only: Sacrifice absorbs 30% more (~2,500, casts not interrupted while it holds) but kills the pet and ends Soul Link; Torment and Suffering do nothing to players, Consume Shadows is out of combat.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "per_rank": 0.05
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Fel Intellect": {
+    "note": "+3%/rank pet mana. PvP (2026-09-27): low, dispel: +15% demon mana: the Felhunter keeps mana for Devour Magic and Spell Lock later into long fights. Soul Link filler, Felhunter builds only.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Succubus": {
+    "note": "Succubus Lash of Pain/Seduction: PvP/dungeon utility. PvP (2026-09-27): high, stun: Succubus only: Seduction lasts 30% longer (15 -> 19.5 s; breaks on damage, humanoids only): the pet CC for Fear chains and second targets. The Lash of Pain part is damage.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Fel Domination": {
+    "note": "Instant re-summon every 15 min. PvP (2026-09-27): high, defensive: Next summon 5.5 s faster and 50% cheaper (15 min cooldown): a new Soul Link partner or Felhunter/Succubus mid-fight, or a fresh Succubus to re-sacrifice in DS builds. Core of the Soul Link build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Fel Stamina": {
+    "note": "+3%/rank pet health. PvP (2026-09-27): medium, defensive: +15% demon health: the Soul Link partner (and the CC pet) lives longer; Soul Link ends when it dies.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "per_rank": 0.03
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Master Summoner": {
+    "note": "-2s/rank summon cast, -20%/rank cost. PvP (2026-09-27): medium, defensive: Summons 4 s faster (6 s) and 40% cheaper: the re-summon while Fel Domination (15 min cooldown) is down; with it a summon takes ~0.5 s.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Enslave Demon": {
+    "note": "Enslave Demon: nothing measurable.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      }
+    ]
+  },
+  "Demonic Sacrifice": {
+    "note": "Raid: sacrifice the Succubus (+15% Shadow) or Imp (+15% Fire) and lose the pet's damage. Leveling keeps the Voidwalker. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs -2.7% DPS in the simulator (scorer said 0.4% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["mainschool"],
+        "values": [0.15],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"],
+        "requires_not": {"Soul Link": 1}
+      },
+      {
+        "channel": "disable",
+        "scope": ["pet"],
+        "values": [1.0],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"],
+        "requires_not": {"Soul Link": 1}
+      },
+      {
+        "channel": "disable",
+        "scope": ["pet"],
+        "values": [0.03973],
+        "modes": ["raid"],
+        "specs": ["sb-raid"],
+        "requires_not": {"Soul Link": 1}
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainschool"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["sb-raid"],
+        "requires_not": {"Soul Link": 1}
+      }
+    ]
+  },
+  "Improved Firestone": {
+    "note": "+15%/rank Firestone bonus: ~+1%/rank Fire damage.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Master Demonologist": {
+    "note": "With the Succubus out +2%/rank all damage for you and the pet (lost under Demonic Sacrifice); Voidwalker -2%/rank Physical damage taken while leveling. 2026-09-27 audit: its pet bonus also counts with Demonic Sacrifice + Soul Link (the pet is kept). PvP (2026-09-27): medium, resist: Felhunter: +60 all resistances for you and the pet, so roughly 15% of enemy Fears, Polymorphs and Frost Novas are fully resisted (the PvP-only part); the Voidwalker and Succubus parts are counted numbers, the Imp's threat cut is worthless.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.02,
+        "modes": ["raid"],
+        "requires_not": {"Demonic Sacrifice": 1}
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "per_rank": 0.02,
+        "modes": ["raid"],
+        "requires": {"Soul Link": 1}
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Soul Link": {
+    "note": "30% of damage taken goes to the pet and both deal +3% damage (needs a live pet). 2026-09-27 audit: Demonic Sacrifice is Soul Link's prerequisite, not a sacrifice: the +3% no longer requires_not Demonic Sacrifice (it never counted in a legal build).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.25],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all", "pet"],
+        "values": [0.03]
+      }
+    ]
+  },
+  "Improved Spellstone": {
+    "note": "+15%/rank Spellstone absorb. PvP (2026-09-27): low, defensive: Spellstone absorbs 30% more (Major 900 -> 1,170 magic damage for 1 min); its self-cleanse is unchanged. Needs 30 Demonology points.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Shadow Bolt": {
+    "note": "Shadow Bolt crits give +4%/rank Shadow damage taken for 4 hits: with ~15% raid crit roughly +2%/rank on your Shadow damage (other warlocks share the debuff); at ~5% leveling crit the debuff is rarely up -> +0.6%/rank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 9.7% DPS in the simulator (scorer said 18.1% on the same scale); raid values scaled x0.00 to match (18.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.006,
+        "modes": ["leveling"],
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.02,
+        "modes": ["raid"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.0523, 0.1046, 0.1569, 0.2091, 0.2614],
+        "modes": ["raid"],
+        "specs": ["sb-raid", "affliction-raid", "fire-destro-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Aftermath": {
+    "note": "2%/rank daze chance: leveling kiting. PvP (2026-09-27): low, kite: 10% chance per Destruction spell to daze the target for 5 s: random snares for Destruction builds.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Improved Lash of Pain": {
+    "note": "Succubus Lash of Pain cooldown: small.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "per_rank": 0.002
+      }
+    ]
+  },
+  "Shadowburn": {
+    "note": "Instant Shadow nuke every 15s (a shard each): ~+5% on the Shadow Bolt share, execute utility while leveling. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 1.1% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged. PvP (2026-09-27): medium, burst: Instant Shadow nuke (rank 6 462-514) on a 15 s cooldown for a Soul Shard: the unkickable finisher of SM/Ruin and DS/Ruin kill windows.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.003348],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "values": [0.016742],
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Intensity": {
+    "note": "35%/rank pushback resistance on Destruction spells: leveling only. PvP (2026-09-27): low, resist: Pushback protection only for Rain of Fire, Hellfire and Soul Fire (not Shadow Bolt): battleground AoE; mostly the prerequisite of Pyroclasm.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Destruction"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Destructive Reach": {
+    "note": "+10%/rank Destruction range: leveling (one more cast before melee) 0.4%/rank utility; raids: casting from outside cleave/AoE range, 0.2%/rank utility. The Classic tooltip has no threat component (that came with TBC). PvP (2026-09-27): medium, range: +20% range on Destruction spells: Shadow Bolt, Immolate, Searing Pain, Shadowburn and Conflagrate from 36 yd, outside most caster spells. Destruction builds.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Pyroclasm": {
+    "note": "Rain of Fire/Hellfire/Soul Fire stuns: leveling AoE and PvP. 2026-09-27 audit: stuns from Rain of Fire and Hellfire: AoE only. PvP (2026-09-27): low, stun: 26% chance to stun 3 s on Rain of Fire, Hellfire and Soul Fire: battleground AoE only. Needs Intensity 2.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Immolate": {
+    "note": "+5%/rank Immolate initial damage (about half of Immolate's total).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Immolate"],
+        "per_rank": 0.025
+      }
+    ]
+  },
+  "Conflagrate": {
+    "note": "Instant Fire hit every 10s that consumes Immolate: ~+30% on the Immolate share. PvP (2026-09-27): medium, burst: Instant Fire nuke (rank 4 447-557) on a 10 s cooldown, consuming your Immolate: front-loaded damage on the move for Conflagrate builds (Nightfall/Conflagrate).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Immolate"],
+        "values": [0.3]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Bane": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 12.6% DPS in the simulator (scorer said 10.2% on the same scale); already within tolerance, raid effects split off unchanged (10.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Shadow Bolt", "ability:Immolate"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Shadow Bolt", "ability:Immolate"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Shadow Bolt", "ability:Immolate"],
+        "values": [0.078385, 0.15677, 0.235155, 0.31354, 0.391926],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Devastation": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 3.2% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Destruction"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Destruction"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Destruction"],
+        "values": [0.006973, 0.013947, 0.02092, 0.027893, 0.034867],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Ruin": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 9.6% DPS in the simulator (scorer said 9.6% on the same scale); already within tolerance, raid effects split off unchanged (9.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Destruction"],
+        "values": [1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Destruction"],
+        "values": [1.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Destruction"],
+        "values": [0.914198],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Improved Curse of Agony": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 0.6% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Curse of Agony"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Shadow Mastery": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 7.6% DPS in the simulator (scorer said 7.3% on the same scale); already within tolerance, raid effects split off unchanged (7.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  },
+  "Demonic Embrace": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, sb-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.1% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["affliction-raid", "fire-destro-raid", "affliction-leveling"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["sb-raid"]
+      }
+    ]
+  }
+}

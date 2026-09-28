@@ -1,0 +1,534 @@
+{
+ "Divine Strength": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "Increases your Strength by 2%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:strength"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Divine Intellect": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "Increases your total Intellect by 2%.",
+  "effects": [
+   {
+    "channel": "stat",
+    "scope": [
+     "stat:intellect"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Spiritual Focus": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "Gives your Flash of Light and Holy Light spells a 14% chance to not lose casting time when you take damage.",
+  "effects": [
+   {
+    "channel": "pushback",
+    "scope": [
+     "all"
+    ],
+    "values": [
+     0.14,
+     0.28,
+     0.42,
+     0.56,
+     0.7
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Seal of Righteousness": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "Increases the damage done by your Seal of Righteousness and Judgement of Righteousness by 3%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Seal of Righteousness",
+     "ability:Judgement of Righteousness"
+    ],
+    "values": [
+     0.03,
+     0.06,
+     0.09,
+     0.12,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Healing Light": {
+  "tree": "Holy",
+  "max": 3,
+  "text": "Increases the amount healed by your Holy Light and Flash of Light spells by 4%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Holy Light",
+     "ability:Flash of Light"
+    ],
+    "values": [
+     0.04,
+     0.08,
+     0.12
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Consecration": {
+  "tree": "Holy",
+  "max": 1,
+  "text": "Consecrates the land beneath Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.",
+  "effects": []
+ },
+ "Improved Lay on Hands": {
+  "tree": "Holy",
+  "max": 2,
+  "text": "Gives the target of your Lay on Hands spell a 15% bonus to their armor value from items for 2 min. In addition, the cooldown for your Lay on Hands spell is reduced by 10 min.",
+  "effects": []
+ },
+ "Unyielding Faith": {
+  "tree": "Holy",
+  "max": 2,
+  "text": "Increases your chance to resist Fear and Disorient effects by an additional 5%.",
+  "effects": []
+ },
+ "Illumination": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, gives you a 20% chance to gain Mana equal to the base cost of the spell.",
+  "effects": []
+ },
+ "Improved Blessing of Wisdom": {
+  "tree": "Holy",
+  "max": 2,
+  "text": "Increases the effect of your Blessing of Wisdom spell by 10%.",
+  "effects": [
+   {
+    "channel": "heal",
+    "scope": [
+     "ability:Blessing of Wisdom"
+    ],
+    "values": [
+     0.1,
+     0.2
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Divine Favor": {
+  "tree": "Holy",
+  "max": 1,
+  "text": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
+  "effects": []
+ },
+ "Lasting Judgement": {
+  "tree": "Holy",
+  "max": 3,
+  "text": "Increases the duration of your Judgement of Light and Judgement of Wisdom by 10 sec.",
+  "effects": []
+ },
+ "Holy Power": {
+  "tree": "Holy",
+  "max": 5,
+  "text": "Increases the critical effect chance of your Holy spells by 1%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "school:holy"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Holy Shock": {
+  "tree": "Holy",
+  "max": 1,
+  "text": "Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally.",
+  "effects": []
+ },
+ "Improved Devotion Aura": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Increases the armor bonus of your Devotion Aura by 5%.",
+  "effects": []
+ },
+ "Redoubt": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Increases your chance to block attacks with your shield by 6% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.",
+  "effects": []
+ },
+ "Precision": {
+  "tree": "Protection",
+  "max": 3,
+  "text": "Increases your chance to hit with melee weapons by 1%.",
+  "effects": [
+   {
+    "channel": "hit",
+    "scope": [
+     "type:melee"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Guardian's Favor": {
+  "tree": "Protection",
+  "max": 2,
+  "text": "Reduces the cooldown of your Blessing of Protection by 60 sec and increases the duration of your Blessing of Freedom by 3 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Blessing of Protection"
+    ],
+    "values": [
+     60.0,
+     120.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Toughness": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Increases your armor value from items by 2%.",
+  "effects": [
+   {
+    "channel": "surv",
+    "scope": [
+     "surv:armor"
+    ],
+    "values": [
+     0.007,
+     0.014,
+     0.021,
+     0.028,
+     0.035
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Blessing of Kings": {
+  "tree": "Protection",
+  "max": 1,
+  "text": "Places a Blessing on the friendly target, increasing total stats by 10% for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+  "effects": []
+ },
+ "Improved Righteous Fury": {
+  "tree": "Protection",
+  "max": 3,
+  "text": "Increases the amount of threat generated by your Righteous Fury spell by 16%.",
+  "effects": []
+ },
+ "Shield Specialization": {
+  "tree": "Protection",
+  "max": 3,
+  "text": "Increases the amount of damage absorbed by your shield by 10%.",
+  "effects": []
+ },
+ "Anticipation": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Increases your Defense skill by 2.",
+  "effects": [
+   {
+    "channel": "surv",
+    "scope": [
+     "surv:defense"
+    ],
+    "values": [
+     0.00384,
+     0.00768,
+     0.01152,
+     0.01536,
+     0.0192
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Hammer of Justice": {
+  "tree": "Protection",
+  "max": 3,
+  "text": "Decreases the cooldown of your Hammer of Justice spell by 5 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Hammer of Justice"
+    ],
+    "values": [
+     5.0,
+     10.0,
+     15.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Concentration Aura": {
+  "tree": "Protection",
+  "max": 3,
+  "text": "Increases the effect of your Concentration Aura by an additional 5% and gives all group members affected by the aura an additional 5% chance to resist Silence and Interrupt effects.",
+  "effects": []
+ },
+ "Blessing of Sanctuary": {
+  "tree": "Protection",
+  "max": 1,
+  "text": "Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 for 5 min. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one ",
+  "effects": []
+ },
+ "Reckoning": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Gives you a 20% chance to gain an extra attack after being the victim of a critical strike.",
+  "effects": []
+ },
+ "One-Handed Weapon Specialization": {
+  "tree": "Protection",
+  "max": 5,
+  "text": "Increases the damage you deal with one-handed melee weapons by 2%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "weapon:1h"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06,
+     0.08,
+     0.1
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Holy Shield": {
+  "tree": "Protection",
+  "max": 1,
+  "text": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+  "effects": []
+ },
+ "Improved Blessing of Might": {
+  "tree": "Retribution",
+  "max": 5,
+  "text": "Increases the melee attack power bonus of your Blessing of Might by 4%.",
+  "effects": []
+ },
+ "Benediction": {
+  "tree": "Retribution",
+  "max": 5,
+  "text": "Reduces the Mana cost of your Judgement and Seal spells by 3%.",
+  "effects": [
+   {
+    "channel": "mana_cost",
+    "scope": [
+     "ability:Judgement",
+     "ability:Seal"
+    ],
+    "values": [
+     0.03,
+     0.06,
+     0.09,
+     0.12,
+     0.15
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Judgement": {
+  "tree": "Retribution",
+  "max": 2,
+  "text": "Decreases the cooldown of your Judgement spell by 1 sec.",
+  "effects": [
+   {
+    "channel": "cooldown",
+    "scope": [
+     "ability:Judgement"
+    ],
+    "values": [
+     1.0,
+     2.0
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Improved Seal of the Crusader": {
+  "tree": "Retribution",
+  "max": 3,
+  "text": "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%.",
+  "effects": []
+ },
+ "Deflection": {
+  "tree": "Retribution",
+  "max": 5,
+  "text": "Increases your Parry chance by 1%.",
+  "effects": [
+   {
+    "channel": "surv",
+    "scope": [
+     "surv:parry"
+    ],
+    "values": [
+     0.012,
+     0.024,
+     0.036,
+     0.048,
+     0.06
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Vindication": {
+  "tree": "Retribution",
+  "max": 3,
+  "text": "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec.",
+  "effects": []
+ },
+ "Conviction": {
+  "tree": "Retribution",
+  "max": 5,
+  "text": "Increases your chance to get a critical strike with melee weapons by 1%.",
+  "effects": [
+   {
+    "channel": "crit",
+    "scope": [
+     "type:melee"
+    ],
+    "values": [
+     0.01,
+     0.02,
+     0.03,
+     0.04,
+     0.05
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Seal of Command": {
+  "tree": "Retribution",
+  "max": 1,
+  "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.Unleashing this Seal's energy will judge an enemy, ",
+  "effects": []
+ },
+ "Pursuit of Justice": {
+  "tree": "Retribution",
+  "max": 2,
+  "text": "Increases movement and mounted movement speed by 4%. This does not stack with other movement speed increasing effects.",
+  "effects": []
+ },
+ "Eye for an Eye": {
+  "tree": "Retribution",
+  "max": 2,
+  "text": "All spell criticals against you cause 15% of the damage taken to the caster as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.",
+  "effects": []
+ },
+ "Improved Retribution Aura": {
+  "tree": "Retribution",
+  "max": 2,
+  "text": "Increases the damage done by your Retribution Aura by 25%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "ability:Retribution Aura"
+    ],
+    "values": [
+     0.25,
+     0.5
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Two-Handed Weapon Specialization": {
+  "tree": "Retribution",
+  "max": 3,
+  "text": "Increases the damage you deal with two-handed melee weapons by 2%.",
+  "effects": [
+   {
+    "channel": "dmg",
+    "scope": [
+     "weapon:2h"
+    ],
+    "values": [
+     0.02,
+     0.04,
+     0.06
+    ],
+    "source": "parsed"
+   }
+  ]
+ },
+ "Sanctity Aura": {
+  "tree": "Retribution",
+  "max": 1,
+  "text": "Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time.",
+  "effects": []
+ },
+ "Vengeance": {
+  "tree": "Retribution",
+  "max": 5,
+  "text": "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability.",
+  "effects": []
+ },
+ "Repentance": {
+  "tree": "Retribution",
+  "max": 1,
+  "text": "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.",
+  "effects": []
+ }
+}

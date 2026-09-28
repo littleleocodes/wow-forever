@@ -1,0 +1,139 @@
+{
+ "id": "cand-assassination-raid-from-ours",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    2
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Improved Sprint",
+    2
+   ],
+   [
+    "Dual Wield Specialization",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for assassination-raid from assassination-mutilate-raid in the dummy setting: 374.4 -> 411.5 DPS on a third seed.",
+ "search": {
+  "start": "assassination-mutilate-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Murder -> Improved Expose Armor",
+    "gain_seed1": 0.03609677737333117,
+    "gain_seed2": 0.03569843991133825,
+    "split": "31/20/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Venom -> Flawless Execution",
+    "gain_seed1": 0.022915140671874612,
+    "gain_seed2": 0.021997354585288287,
+    "split": "30/21/0"
+   },
+   {
+    "round": 3,
+    "move": "2 points Dual Wield Specialization -> Opportunity",
+    "gain_seed1": 0.01806168660048746,
+    "gain_seed2": 0.01811020667933394,
+    "split": "30/19/2"
+   },
+   {
+    "round": 4,
+    "move": "2 points Vigor -> Improved Poisons",
+    "gain_seed1": 0.010161799411744,
+    "gain_seed2": 0.010638131327214806,
+    "split": "30/19/2"
+   },
+   {
+    "round": 5,
+    "move": "1 point Mutilate -> Improved Poisons",
+    "gain_seed1": 0.004861408552490953,
+    "gain_seed2": 0.00560792348940109,
+    "split": "30/19/2"
+   },
+   {
+    "round": 6,
+    "move": "2 points Lethality -> Improved Poisons",
+    "gain_seed1": 0.004043461471025411,
+    "gain_seed2": 0.003602421310346271,
+    "split": "30/19/2"
+   }
+  ],
+  "dps_start": 374.37975230445034,
+  "dps_end": 411.5060102495595
+ }
+}

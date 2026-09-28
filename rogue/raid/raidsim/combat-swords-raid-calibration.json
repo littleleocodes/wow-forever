@@ -1,0 +1,616 @@
+{
+ "class": "rogue",
+ "spec": "combat-swords-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "combat-swords-raid",
+  "opt-combat-swords-raid-raid-dps",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-hand-2026-09-28.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-preset-combat-dual-wield-15-33-3.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-preset-improved-expose-armor-ss.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-preset-sinister-strike.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-r1.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-r2.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-r3.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-r4.json",
+  "F:\\wow-forever\\rogue\\raid\\raidsim\\candidates\\cand-combat-swords-raid-r5.json"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "rogue/dps",
+  "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/rogue/combat-swords-raid.apl.json",
+  "apl_sim": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+  "race": "RaceDwarf",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "battleElixirId": 13452,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8412,
+   "dragonbreathChili": true,
+   "foodId": 13928,
+   "conjuredId": 7676,
+   "mhImbueId": 26891,
+   "ohImbueId": 27186,
+   "goblinSapper": true
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "talents": [
+  {
+   "talent": "Relentless Strikes",
+   "sim": 0.0831275988366043,
+   "ev_before": 0.07045270746855851,
+   "ev_after": 0.069897973518188,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Expose Armor",
+   "sim": 0.07732012428301083,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss"
+   ]
+  },
+  {
+   "talent": "Improved Sinister Strike",
+   "sim": 0.07425808246023957,
+   "ev_before": 0.06481958338644084,
+   "ev_after": 0.06432080247419542,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Adrenaline Rush",
+   "sim": 0.06704651485867542,
+   "ev_before": 0.06848017114286574,
+   "ev_after": 0.067941954822527,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Ruthlessness",
+   "sim": 0.053701912956952064,
+   "ev_before": 0.03460535581562097,
+   "ev_after": 0.052595137220828585,
+   "scale": 1.551840833388269,
+   "how": "fitted",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Slice and Dice",
+   "sim": 0.05079507017290306,
+   "ev_before": 0.06591803546661812,
+   "ev_after": 0.050286849237803084,
+   "scale": 0.7604696652851999,
+   "how": "fitted",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Malice",
+   "sim": 0.049112578180649284,
+   "ev_before": 0.03902917890180947,
+   "ev_after": 0.049098962623477356,
+   "scale": 1.2582100005820394,
+   "how": "fitted",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.04118699457482015,
+   "ev_before": 0.03101682745545651,
+   "ev_after": 0.04118694250927807,
+   "scale": 1.3326259991154075,
+   "how": "fitted",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Precision",
+   "sim": 0.029471104161791526,
+   "ev_before": 0.0358702780171458,
+   "ev_after": 0.0359101424496969,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Hack and Slash",
+   "sim": 0.022202147795131525,
+   "ev_before": 0.024458450739869967,
+   "ev_after": 0.02447160772230004,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Poisons",
+   "sim": 0.021307925244439547,
+   "ev_before": 0.0250792447427871,
+   "ev_after": 0.024668655117170805,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Aggression",
+   "sim": 0.02008357183977797,
+   "ev_before": 0.019789425132563963,
+   "ev_after": 0.01964092823356509,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Weapon Expertise",
+   "sim": 0.015258073706072385,
+   "ev_before": 0.017536394761249567,
+   "ev_after": 0.01754682345745774,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Flawless Execution",
+   "sim": 0.008584159153511562,
+   "ev_before": 0.013746928654689867,
+   "ev_after": 0.013644380613166278,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Lethality",
+   "sim": 0.008528311810782644,
+   "ev_before": 0.01681303297649412,
+   "ev_after": 0.017102258396744258,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Eviscerate",
+   "sim": 0.006900691137402512,
+   "ev_before": 0.005548786128837303,
+   "ev_after": 0.005504225898985848,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Cold Blood",
+   "sim": 0.0048389696976388185,
+   "ev_before": 0.005917623689631647,
+   "ev_after": 0.0058740209591502095,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4"
+   ]
+  },
+  {
+   "talent": "Blade Flurry",
+   "sim": 0.004820879117546858,
+   "ev_before": 0.003454504350485492,
+   "ev_after": 0.003500008579857787,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
+   "talent": "Endurance",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
+   "talent": "Improved Sprint",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
+   "talent": "Riposte",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Murder",
+   "sim": 0.0,
+   "ev_before": 0.010999999999999913,
+   "ev_after": 0.011000000000000074,
+   "scale": 1.0,
+   "how": "unmeasured",
+   "builds": [
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Puncturing Wounds",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-combat-swords-raid-raid-dps",
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3",
+    "cand-combat-swords-raid-r1",
+    "cand-combat-swords-raid-r2",
+    "cand-combat-swords-raid-r3",
+    "cand-combat-swords-raid-r4",
+    "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Gouge",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3"
+   ]
+  },
+  {
+   "talent": "Master of Deception",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3"
+   ]
+  },
+  {
+   "talent": "Opportunity",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": null,
+  "builds": {
+   "combat-swords-raid": {
+    "dps": 401.7249872332631,
+    "surplus": 398.93828280620147,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "opt-combat-swords-raid-raid-dps": {
+    "dps": 380.862933840943,
+    "surplus": 381.2401295919942,
+    "oom_seconds": 0.0,
+    "deficit": 0.0009893915193420755
+   },
+   "cand-combat-swords-raid-hand-2026-09-28": {
+    "dps": 376.47390259722386,
+    "surplus": 376.5476432234327,
+    "oom_seconds": 0.0,
+    "deficit": 0.00019583345570195476
+   },
+   "cand-combat-swords-raid-preset-combat-dual-wield-15-33-3": {
+    "dps": 370.79699898576484,
+    "surplus": 370.9365909643727,
+    "oom_seconds": 0.0,
+    "deficit": 0.00037632302126078265
+   },
+   "cand-combat-swords-raid-preset-improved-expose-armor-ss": {
+    "dps": 401.7249872332631,
+    "surplus": 398.93828280620147,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-preset-sinister-strike": {
+    "dps": 378.9674849583141,
+    "surplus": 378.2398993925914,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-r1": {
+    "dps": 380.05190755059016,
+    "surplus": 380.00792148776566,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-r2": {
+    "dps": 378.9674849583141,
+    "surplus": 378.2398993925914,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-r3": {
+    "dps": 380.96294272630814,
+    "surplus": 380.55176564851536,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-r4": {
+    "dps": 378.9294046889349,
+    "surplus": 378.50894332495807,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-combat-swords-raid-r5": {
+    "dps": 380.862933840943,
+    "surplus": 381.2401295919942,
+    "oom_seconds": 0.0,
+    "deficit": 0.0009893915193420755
+   }
+  },
+  "removals": {}
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "id": "cand-melee-dps-from-ours",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    5
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for melee-dps from melee-survival-raid in the dummy setting: 325.0 -> 325.0 DPS on a third seed.",
+ "search": {
+  "start": "melee-survival-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 324.95741894387936,
+  "dps_end": 324.95741894387936
+ }
+}

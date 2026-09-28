@@ -1,0 +1,168 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "elemental-dps": {
+    "profiles": ["raid-dps", "leveling-st"],
+    "reference": {"classic-era": "elemental-raid-dps"},
+    "purpose": "Lightning Bolt spam with Elemental Mastery / Elemental Focus; mana is the wall.",
+    "loop": ["totems", "Lightning Bolt", "Chain Lightning on cooldown", "Earth Shock only when moving"],
+    "constraints": ["'Elemental Shaman talent builds are typically very defined, with certain talents being mandatory for throughput, and others helping to prevent you from running out of Mana early' (model: raid mana weight 0.5)", "Eye of the Storm / Storm Reach are PvP-solo preference points in raid builds ('you can swap them to Totemic Focus and Elemental Warding if you only want to focus on raiding')"],
+    "talents": {
+      "Eye of the Storm": {
+        "role": "filler",
+        "why": "PvP/solo preference point in the raid build.",
+        "encoded": "leveling only",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Storm Reach": {
+        "role": "filler",
+        "why": "Range: PvP/solo preference point.",
+        "encoded": "leveling utility",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Totemic Focus": {
+        "role": "sustain",
+        "why": "Cheaper totems: every fight starts with 3-4 totems.",
+        "encoded": "parsed mana on totems",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Tidal Focus": {
+        "role": "sustain",
+        "why": "Cheaper heals: off-healing between casts.",
+        "encoded": "parsed mana",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Convection": {
+        "role": "sustain",
+        "why": "Mana on Lightning Bolt / shocks - the core mana talent.",
+        "encoded": "parsed mana (spec mana_weight 0.5)",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Call of Flame": {
+        "role": "throughput",
+        "why": "Fire totem damage (Searing/Magma).",
+        "encoded": "parsed dmg on the fire totem source",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      }
+    }
+  },
+  "enhancement-dps": {
+    "profiles": ["raid-dps", "leveling-st", "solo-60"],
+    "reference": {"classic-era": "enhancement-raid-support / leveling-enhancement"},
+    "purpose": "Two-hander Windfury melee; in raids the spec is half support (Windfury Totem for the melee group, Mana Tide, totem mana).",
+    "loop": ["Windfury Weapon", "Stormstrike / Earth Shock on cooldown", "totems for the group", "Rockbiter for threat when soloing"],
+    "constraints": ["raid value is largely support (Windfury Totem, Mana Tide, Grace of Air) which the model scores as utility, so Restoration support talents look cheap", "leveling: Anticipation dodge and totem mana matter more than crit"],
+    "talents": {
+      "Anticipation": {
+        "role": "safety",
+        "why": "Dodge for a melee who takes hits; raid filler.",
+        "encoded": "surv per rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Totemic Focus": {
+        "role": "sustain",
+        "why": "Totem mana: the support half of the spec.",
+        "encoded": "parsed mana on totems",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Restorative Totems": {
+        "role": "utility",
+        "why": "Mana Spring / Healing Stream for the group.",
+        "encoded": "manual sustain + heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Tidal Focus": {
+        "role": "sustain",
+        "why": "Cheaper heals between pulls.",
+        "encoded": "parsed mana",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Ancestral Knowledge": {
+        "role": "sustain",
+        "why": "+5% mana: shocks and totems.",
+        "encoded": "manual sustain",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Improved Weapon Totems": {
+        "role": "utility",
+        "why": "Windfury Totem for the melee group (your own imbue overrides it).",
+        "encoded": "raid utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Enhancing Totems": {
+        "role": "utility",
+        "why": "Strength of Earth / Grace of Air for the group.",
+        "encoded": "small dmg + raid utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Thundering Strikes": {
+        "role": "throughput",
+        "why": "1% crit per rank; low at leveling crit rates, taken as the tier-1 path.",
+        "encoded": "manual crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+      },
+      "Flurry": {
+        "role": "throughput",
+        "why": "+25% attack speed for three swings after a melee crit: the enhancement haste loop; the fight lab fits it near 0.4%/point while leveling because fights are short and crit is low before 60.",
+        "encoded": "manual haste (fight lab)",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/pve-elemental-shaman/"]
+      },
+      "Elemental Weapons": {
+        "role": "throughput",
+        "why": "+40% Windfury Weapon effect (beta): the imbue that is 23-33% of enhancement damage in the simulators; Enhancement tier-3 path.",
+        "encoded": "manual dmg windfury",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/shaman.json)"]
+      },
+      "Spirit Weapons": {
+        "role": "utility",
+        "why": "Parry chance and threat changes (beta): survivability while leveling; one point on the path.",
+        "encoded": "manual surv",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/shaman.json)"]
+      },
+      "Maelstrom Weapon": {
+        "role": "throughput",
+        "why": "Melee hits stack -20% cast time and mana on the next Lightning Bolt, five stacks (beta): instant Lightning Bolts inside the melee loop. The fight lab's enhancement module does not proc it yet, so its leveling value is a manual estimate.",
+        "encoded": "manual (not simulated)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/shaman.json)"]
+      },
+      "Rage of the Farseer": {
+        "role": "throughput",
+        "why": "+30% attack speed for 25 s (beta): the enhancement cooldown; one point.",
+        "encoded": "manual haste",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/shaman.json)"]
+      }
+    }
+  },
+  "resto-heal": {
+    "profiles": ["raid-heal"],
+    "reference": {"classic-era": "resto-raid-healer"},
+    "purpose": "Chain Heal / Healing Wave healer with Mana Tide and totem support.",
+    "loop": ["Healing Stream / Mana Spring totems", "Chain Heal on melee groups", "Healing Wave on the tank (Healing Way stacks)", "Nature's Swiftness emergency"],
+    "constraints": ["Totemic Focus and Healing Grace are the tier fillers with a use (totem mana, threat)"],
+    "talents": {
+      "Totemic Focus": {
+        "role": "sustain",
+        "why": "Totem mana on every re-drop.",
+        "encoded": "parsed mana on totems",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-shaman-healer-pve-spec-builds-talents"]
+      },
+      "Healing Grace": {
+        "role": "utility",
+        "why": "-15% healing threat.",
+        "encoded": "utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-shaman-healer-pve-spec-builds-talents"]
+      },
+      "Healing Focus": {
+        "role": "throughput",
+        "why": "Pushback resistance when hit.",
+        "encoded": "small heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-shaman-healer-pve-spec-builds-talents"]
+      },
+      "Tidal Mastery": {
+        "role": "throughput",
+        "why": "Crit heals (and Lightning).",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-shaman-healer-pve-spec-builds-talents"]
+      }
+    }
+  }
+}

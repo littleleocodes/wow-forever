@@ -1,0 +1,80 @@
+{
+ "id": "cand-fire-raid-preset-fire-dps",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Magic Absorption",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Resilience",
+    2
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ]
+ },
+ "preset": "Fire DPS",
+ "talents": "0502252000003-23550000130133051-",
+ "note": "The community simulator's preset 'Fire DPS' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of fire-raid (464.3 vs 482.7 in the race of 2026-09-27)."
+}

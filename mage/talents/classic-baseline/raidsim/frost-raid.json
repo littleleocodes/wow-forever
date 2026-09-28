@@ -1,0 +1,99 @@
+{
+ "class": "mage",
+ "spec": "frost-raid",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "mage",
+  "gear": "ui/mage/gear_sets/p1.bis.gear.json",
+  "apl": "ui/mage/apls/p1.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own winters_chill (its talent is under test)",
+  "consumables": {
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "frost-arcane-power-raid",
+   "talents": "2500250310031531--053500031003",
+   "split": "31/0/20",
+   "ours": true,
+   "dps": 781.2660628217327,
+   "dps_stdev": 56.06565662845065,
+   "threat": 558.5425689407969,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.8497618433620341,
+   "shares": {
+    "Frostbolt": 1.0
+   },
+   "source_shares": {
+    "frostbolt": 1.0
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "frost-winters-chill-raid",
+   "talents": "250005030002--05350203100351051",
+   "split": "17/0/34",
+   "ours": true,
+   "dps": 748.370249927435,
+   "dps_stdev": 53.05442786824101,
+   "threat": 535.1456767489356,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.9067233824252495,
+   "shares": {
+    "Frostbolt": 1.0
+   },
+   "source_shares": {
+    "frostbolt": 1.0
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Frost DPS",
+   "talents": "230205021002--05353203102351001",
+   "split": "",
+   "ours": false,
+   "dps": 700.4161954199549,
+   "dps_stdev": 50.20868744007808,
+   "threat": 501.57783859369925,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Frostbolt": 1.0
+   },
+   "source_shares": {
+    "frostbolt": 1.0
+   },
+   "unmatched_share": 0.0
+  }
+ ],
+ "deltas": {}
+}

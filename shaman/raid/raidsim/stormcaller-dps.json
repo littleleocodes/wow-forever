@@ -1,0 +1,79 @@
+{
+ "class": "shaman",
+ "spec": "stormcaller-dps",
+ "game": "forever",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "shaman/elemental",
+  "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+  "apl": "_reference/data/raidsim/apls/shaman/stormcaller-dps.apl.json",
+  "apl_sim": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus mana_spring_totem and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 6373,
+   "guardianElixirId": 20007,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "conjuredId": 12662
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 20000,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "date": "2026-09-28",
+ "results": [
+  {
+   "label": "sim preset: Stormcaller 28/23/0",
+   "talents": "150533130010303-055030030004102",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "10438": 2.0,
+    "529": 25.2615,
+    "15208": 1.0,
+    "20554": 1.0,
+    "29228": 10.3339,
+    "10605": 4.50065,
+    "10392": 29.124
+   },
+   "casts": {
+    "Searing Totem": 2.0,
+    "Lightning Bolt": 55.3855,
+    "item 13444": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
+    "item 12662": 1.0,
+    "Flame Shock": 10.3339,
+    "item 18820": 2.0,
+    "Chain Lightning": 4.50065
+   },
+   "dps": 382.13684321567706,
+   "dps_stdev": 24.61249614372394,
+   "threat": 383.4900126234713,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.3020559999981514,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.7156426022869423,
+    "Flame Shock": 0.1663573024825278,
+    "Attack": 0.06428902961059928,
+    "Chain Lightning": 0.05371106561993067
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  }
+ ],
+ "deltas": {}
+}

@@ -1,0 +1,36 @@
+{
+ "dummy": {
+  "class": "paladin",
+  "spec": "shockadin-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\paladin\\shockadin-raid.base.apl.json",
+  "builds": [],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "dummy": {}
+  }
+ },
+ "raid": {
+  "class": "paladin",
+  "spec": "shockadin-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\paladin\\shockadin-raid.base.apl.json",
+  "builds": [],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {}
+  }
+ }
+}

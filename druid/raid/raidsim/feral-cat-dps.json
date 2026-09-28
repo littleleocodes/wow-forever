@@ -1,0 +1,504 @@
+{
+ "class": "druid",
+ "spec": "feral-cat-dps",
+ "game": "forever",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "druid/feralcat",
+  "gear": "ui/specs/druid/feralcat/gear_sets/launch.gear.json",
+  "apl": "_reference/data/raidsim/apls/druid/feral-cat-dps.apl.json",
+  "apl_sim": "ui/specs/druid/feralcat/apls/default.apl.json",
+  "race": "RaceTauren",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus gift_of_the_wild and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13511,
+   "battleElixirId": 13452,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8412,
+   "dragonbreathChili": true,
+   "foodId": 13928,
+   "potId": 13444,
+   "conjuredId": 12662,
+   "goblinSapper": true
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 20000,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "date": "2026-09-28",
+ "results": [
+  {
+   "label": "feral-cat-dps",
+   "talents": "050022-5510002023032213021-055",
+   "split": "9/32/10",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "9896": 9.3954,
+    "9830": 34.75325,
+    "9907": 11.08965,
+    "5217": 5.0,
+    "768": 1.0,
+    "417141": 1.0
+   },
+   "casts": {
+    "Rip": 9.3954,
+    "Shred": 34.75325,
+    "Faerie Fire": 11.08965,
+    "Tiger's Fury": 5.0,
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Auto Attack": 120.00475,
+    "Berserk": 1.0
+   },
+   "dps": 355.3439622329029,
+   "dps_stdev": 15.102071227784828,
+   "threat": 258.80654618536107,
+   "dtps": 5.263225726188335,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.0897471329038508,
+   "shares": {
+    "Rip": 0.35118608210791796,
+    "Shred": 0.31458439360528456,
+    "Auto Attack": 0.29685949264654965,
+    "item 10646": 0.029784407138134742,
+    "Dragonbreath Chili": 0.0075856245021131705
+   },
+   "source_shares": {
+    "rip": 0.3648,
+    "shred": 0.3268,
+    "white": 0.3084
+   },
+   "unmatched_share": 0.0374
+  },
+  {
+   "label": "opt-feral-cat-dps-raid-dps",
+   "talents": "050022-5510002023032213051-052",
+   "split": "9/35/7",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "9830": 34.75325,
+    "5217": 5.0,
+    "417141": 1.0,
+    "9907": 11.08965,
+    "768": 1.0,
+    "9896": 9.3954
+   },
+   "casts": {
+    "Auto Attack": 120.00475,
+    "Shred": 34.75325,
+    "Tiger's Fury": 5.0,
+    "Berserk": 1.0,
+    "Faerie Fire": 11.08965,
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Rip": 9.3954
+   },
+   "dps": 356.52453362793244,
+   "dps_stdev": 15.427788455120861,
+   "threat": 259.64475187583196,
+   "dtps": 5.112847848297243,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.0925344729845212,
+   "shares": {
+    "Rip": 0.3567858493453171,
+    "Shred": 0.3194589549789103,
+    "Auto Attack": 0.2875562933438634,
+    "item 10646": 0.028851001663214196,
+    "Dragonbreath Chili": 0.007347900668695033
+   },
+   "source_shares": {
+    "rip": 0.3702,
+    "shred": 0.3315,
+    "white": 0.2984
+   },
+   "unmatched_share": 0.0362
+  },
+  {
+   "label": "cand-feral-cat-dps-hand-2026-09-26",
+   "talents": "050022-5520002023032210041-055",
+   "split": "9/32/10",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "9830": 29.2426,
+    "417141": 1.0,
+    "768": 1.0,
+    "5217": 5.0,
+    "9896": 8.8828,
+    "9907": 11.1427
+   },
+   "casts": {
+    "Shred": 29.2426,
+    "Auto Attack": 120.00475,
+    "Berserk": 1.0,
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Tiger's Fury": 5.0,
+    "Rip": 8.8828,
+    "Faerie Fire": 11.1427
+   },
+   "dps": 333.403189717792,
+   "dps_stdev": 16.45574262981058,
+   "threat": 243.26548219963223,
+   "dtps": 5.263225726188335,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.9492722339305985,
+   "shares": {
+    "Rip": 0.3561467991271679,
+    "Auto Attack": 0.3160279228433722,
+    "Shred": 0.2882486711781751,
+    "item 10646": 0.03171401359367469,
+    "Dragonbreath Chili": 0.007862593257610026
+   },
+   "source_shares": {
+    "rip": 0.3708,
+    "white": 0.3291,
+    "shred": 0.3001
+   },
+   "unmatched_share": 0.0396
+  },
+  {
+   "label": "cand-feral-cat-dps-r1",
+   "talents": "050022-5510002020032213041-05303",
+   "split": "9/31/11",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "417141": 1.0,
+    "768": 1.0,
+    "9896": 8.11225,
+    "5217": 5.0,
+    "9907": 11.1306,
+    "9830": 25.5155
+   },
+   "casts": {
+    "Berserk": 1.0,
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Rip": 8.11225,
+    "Tiger's Fury": 5.0,
+    "Auto Attack": 120.00475,
+    "Faerie Fire": 11.1306,
+    "Shred": 25.5155
+   },
+   "dps": 299.1795709509311,
+   "dps_stdev": 17.177830321563444,
+   "threat": 218.96678387516107,
+   "dtps": 5.1908026067142155,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.7252503150520574,
+   "shares": {
+    "Auto Attack": 0.3444768313910394,
+    "Rip": 0.3416532173542708,
+    "Shred": 0.2707979073179416,
+    "item 10646": 0.03463760087389432,
+    "Dragonbreath Chili": 0.008434443062853922
+   },
+   "source_shares": {
+    "white": 0.36,
+    "rip": 0.357,
+    "shred": 0.283
+   },
+   "unmatched_share": 0.0431
+  },
+  {
+   "label": "cand-feral-cat-dps-r2",
+   "talents": "050022-5510002020032213051-055",
+   "split": "9/32/10",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "9830": 25.5155,
+    "9896": 8.11225,
+    "417141": 1.0,
+    "5217": 5.0,
+    "768": 1.0,
+    "9907": 11.1306
+   },
+   "casts": {
+    "item 10646": 1.0,
+    "Shred": 25.5155,
+    "Auto Attack": 120.00475,
+    "Rip": 8.11225,
+    "Berserk": 1.0,
+    "Tiger's Fury": 5.0,
+    "Cat Form": 1.0,
+    "Faerie Fire": 11.1306
+   },
+   "dps": 307.65423543222755,
+   "dps_stdev": 17.807979371905354,
+   "threat": 224.9837956568817,
+   "dtps": 5.291594890339734,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.7763886276434521,
+   "shares": {
+    "Rip": 0.34407510437053584,
+    "Auto Attack": 0.3415429301576775,
+    "Shred": 0.2716767651405116,
+    "item 10646": 0.03434259322558817,
+    "Dragonbreath Chili": 0.008362607105686919
+   },
+   "source_shares": {
+    "rip": 0.3594,
+    "white": 0.3568,
+    "shred": 0.2838
+   },
+   "unmatched_share": 0.0427
+  },
+  {
+   "label": "cand-feral-cat-dps-r3",
+   "talents": "05302201-5510002023032213051-03",
+   "split": "13/35/3",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "768": 1.0,
+    "5217": 5.0,
+    "417141": 1.0,
+    "9907": 11.07475,
+    "9830": 34.4444,
+    "9896": 9.53305
+   },
+   "casts": {
+    "Cat Form": 1.0,
+    "Tiger's Fury": 5.0,
+    "Auto Attack": 120.00475,
+    "Berserk": 1.0,
+    "Faerie Fire": 11.07475,
+    "Shred": 34.4444,
+    "item 10646": 1.0,
+    "Rip": 9.53305
+   },
+   "dps": 348.2746591471886,
+   "dps_stdev": 15.175172995639596,
+   "threat": 253.78471399450393,
+   "dtps": 5.012595929703179,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.0473990684379213,
+   "shares": {
+    "Rip": 0.35990462444745575,
+    "Shred": 0.31539348960415425,
+    "Auto Attack": 0.2883946272585784,
+    "item 10646": 0.02895383329481067,
+    "Dragonbreath Chili": 0.007353425395000913
+   },
+   "source_shares": {
+    "rip": 0.3735,
+    "shred": 0.3273,
+    "white": 0.2993
+   },
+   "unmatched_share": 0.0363
+  },
+  {
+   "label": "cand-feral-cat-dps-r4",
+   "talents": "050022-5510002023032213021-055",
+   "split": "9/32/10",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "5217": 5.0,
+    "9896": 9.3954,
+    "9907": 11.08965,
+    "9830": 34.75325,
+    "417141": 1.0,
+    "768": 1.0
+   },
+   "casts": {
+    "Tiger's Fury": 5.0,
+    "item 10646": 1.0,
+    "Rip": 9.3954,
+    "Faerie Fire": 11.08965,
+    "Shred": 34.75325,
+    "Berserk": 1.0,
+    "Cat Form": 1.0,
+    "Auto Attack": 120.00475
+   },
+   "dps": 355.3439622329029,
+   "dps_stdev": 15.102071227784828,
+   "threat": 258.80654618536107,
+   "dtps": 5.263225726188335,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.0897471329038508,
+   "shares": {
+    "Rip": 0.35118608210791796,
+    "Shred": 0.31458439360528456,
+    "Auto Attack": 0.29685949264654965,
+    "item 10646": 0.029784407138134742,
+    "Dragonbreath Chili": 0.0075856245021131705
+   },
+   "source_shares": {
+    "rip": 0.3648,
+    "shred": 0.3268,
+    "white": 0.3084
+   },
+   "unmatched_share": 0.0374
+  },
+  {
+   "label": "cand-feral-cat-dps-r5",
+   "talents": "050022-5510002023032213051-052",
+   "split": "9/35/7",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "768": 1.0,
+    "5217": 5.0,
+    "417141": 1.0,
+    "9830": 34.75325,
+    "9896": 9.3954,
+    "9907": 11.08965
+   },
+   "casts": {
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Tiger's Fury": 5.0,
+    "Berserk": 1.0,
+    "Shred": 34.75325,
+    "Auto Attack": 120.00475,
+    "Rip": 9.3954,
+    "Faerie Fire": 11.08965
+   },
+   "dps": 356.52453362793244,
+   "dps_stdev": 15.427788455120861,
+   "threat": 259.64475187583196,
+   "dtps": 5.112847848297243,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.0925344729845212,
+   "shares": {
+    "Rip": 0.3567858493453171,
+    "Shred": 0.3194589549789103,
+    "Auto Attack": 0.2875562933438634,
+    "item 10646": 0.028851001663214196,
+    "Dragonbreath Chili": 0.007347900668695033
+   },
+   "source_shares": {
+    "rip": 0.3702,
+    "shred": 0.3315,
+    "white": 0.2984
+   },
+   "unmatched_share": 0.0362
+  },
+  {
+   "label": "sim preset: Feral",
+   "talents": "-5521002023132213051-05503",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "9896": 9.7202,
+    "9907": 11.5352,
+    "5217": 5.0,
+    "9830": 35.6584,
+    "417141": 1.0,
+    "768": 1.0
+   },
+   "casts": {
+    "Rip": 9.7202,
+    "Faerie Fire": 11.5352,
+    "Tiger's Fury": 5.0,
+    "item 10646": 1.0,
+    "Shred": 35.6584,
+    "Berserk": 1.0,
+    "Cat Form": 1.0,
+    "Auto Attack": 120.00485
+   },
+   "dps": 341.1576705452121,
+   "dps_stdev": 15.361463106146498,
+   "threat": 248.72732108710053,
+   "dtps": 5.172491282068622,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Rip": 0.34625427443991585,
+    "Shred": 0.3278581974344128,
+    "Auto Attack": 0.2881276109212897,
+    "item 10646": 0.030494836618337965,
+    "Dragonbreath Chili": 0.007265080586043801
+   },
+   "source_shares": {
+    "rip": 0.3598,
+    "shred": 0.3407,
+    "white": 0.2994
+   },
+   "unmatched_share": 0.0378
+  },
+  {
+   "label": "sim preset: Feral Cat 9/35/7",
+   "talents": "050022-5500002123032213051-052",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "768": 1.0,
+    "9896": 9.3954,
+    "9907": 11.08965,
+    "5217": 5.0,
+    "417141": 1.0,
+    "9830": 34.75325
+   },
+   "casts": {
+    "item 10646": 1.0,
+    "Cat Form": 1.0,
+    "Rip": 9.3954,
+    "Faerie Fire": 11.08965,
+    "Tiger's Fury": 5.0,
+    "Auto Attack": 120.00475,
+    "Berserk": 1.0,
+    "Shred": 34.75325
+   },
+   "dps": 356.52453362793244,
+   "dps_stdev": 15.427788455120861,
+   "threat": 259.64475187583196,
+   "dtps": 5.112847848297243,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Rip": 0.3567858493453171,
+    "Shred": 0.3194589549789103,
+    "Auto Attack": 0.2875562933438634,
+    "item 10646": 0.028851001663214196,
+    "Dragonbreath Chili": 0.007347900668695033
+   },
+   "source_shares": {
+    "rip": 0.3702,
+    "shred": 0.3315,
+    "white": 0.2984
+   },
+   "unmatched_share": 0.0362
+  }
+ ],
+ "deltas": {}
+}

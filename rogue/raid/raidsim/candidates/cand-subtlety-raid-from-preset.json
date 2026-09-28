@@ -1,0 +1,146 @@
+{
+ "id": "cand-subtlety-raid-from-preset",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    1
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Cold Blood",
+    1
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Camouflage",
+    5
+   ],
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ],
+   [
+    "Thousand Cuts",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for subtlety-raid from sim preset: Subtlety Hemo 15/0/36 in the dummy setting: 335.8 -> 373.8 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Subtlety Hemo 15/0/36",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Remorseless Attacks -> Improved Expose Armor",
+    "gain_seed1": 0.053442955624751765,
+    "gain_seed2": 0.05426986357623709,
+    "split": "15/0/36"
+   },
+   {
+    "round": 2,
+    "move": "5 points Cutthroat -> Improved Poisons",
+    "gain_seed1": 0.034735652293019115,
+    "gain_seed2": 0.032474561659809886,
+    "split": "20/0/31"
+   },
+   {
+    "round": 3,
+    "move": "2 points Murder -> Improved Slice and Dice",
+    "gain_seed1": 0.01413785197318096,
+    "gain_seed2": 0.014800371089648934,
+    "split": "20/0/31"
+   },
+   {
+    "round": 4,
+    "move": "1 point Improved Gouge -> Lethality",
+    "gain_seed1": 0.002416821076537179,
+    "gain_seed2": 0.002408566882228236,
+    "split": "20/0/31"
+   },
+   {
+    "round": 5,
+    "move": "1 point Improved Poisons -> Cold Blood",
+    "gain_seed1": 0.0010242049995301539,
+    "gain_seed2": 0.0020066185827483096,
+    "split": "20/0/31"
+   },
+   {
+    "round": 6,
+    "move": "1 point Lethality -> Improved Slice and Dice",
+    "gain_seed1": 0.005579792208536105,
+    "gain_seed2": 0.0031469926505356405,
+    "split": "20/0/31"
+   }
+  ],
+  "dps_start": 335.82512843472585,
+  "dps_end": 373.7689747386112
+ }
+}

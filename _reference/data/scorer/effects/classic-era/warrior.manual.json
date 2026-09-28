@@ -1,0 +1,987 @@
+{
+  "_doc": "Classic Era hand-entered Warrior effects for calibration (same scope conventions as forever/warrior.manual.json).",
+  "Improved Charge": {
+    "note": "+3 rage/rank on Charge: leveling only. PvP (2026-09-27): medium, burst: +6 Rage on Charge (15 -> 21): Hamstring and the first Mortal Strike follow the opener at once. Medium, not high: Charge is out-of-combat only, so the gain is one opener per engagement.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.012,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Tactical Mastery": {
+    "note": "Retain 5 rage/rank on stance change: 'required for stance swapping to work' (Icy Veins) - Battle Stance Overpower / Berserker Whirlwind swaps without dumping rage. ~+2% raid damage at 5/5, +1.5% while leveling (Charge -> Berserker), tank utility for Charge/Mocking Blow swaps. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.2% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP (2026-09-27): high, stun: Keeps up to 25 Rage on a stance change (none without it): stance dancing for Intercept, Pummel and Berserker Rage (Berserker), Disarm (Defensive), Overpower and Charge (Battle). Every PvP warrior takes 5/5.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.003,
+        "modes": ["leveling"],
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.004,
+        "modes": ["raid"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Anger Management": {
+    "note": "'Generates 1 Rage every 3 seconds' (Icy Veins) in and out of combat: fights open with rage. Leveling +5% yellow damage, raid +4%, tanking +2% threat (rage-starved on pulls). Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.1% DPS in the simulator (scorer said 2.7% on the same scale); raid values scaled x0.21 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.05],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.02],
+        "modes": ["tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.04],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.008556],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Deep Wounds": {
+    "note": "20%/rank of weapon average as a bleed on crits: ~1.5%/rank dual-wield, 2%/rank two-handed, 1%/rank tank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.5% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.28 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.00114,
+        "values": [0.00114, 0.002279, 0.003419, 0.004558, 0.005697],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.001519,
+        "values": [0.001519, 0.003038, 0.004558, 0.006077, 0.007596],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.00076,
+        "values": [0.00076, 0.001519, 0.002279, 0.003038, 0.003798],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Sweeping Strikes": {
+    "note": "5 cleaving attacks per 30s; Mortal Strike prerequisite. PvP (2026-09-27): medium, burst: 30 s cooldown: the next 5 melee attacks also hit a second nearby enemy, killing totems and pets or cleaving a second player; the PvP model gives it no AoE share. Mortal Strike prerequisite.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Axe Specialization": {
+    "note": "+1%/rank crit with axes (parser tagged 'Axes'). Encoded as 0 - Sword Specialization carries the 'your weapon's specialization' value so the optimizer takes only one.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      }
+    ]
+  },
+  "Mace Specialization": {
+    "note": "Stun procs: PvP only. PvP (2026-09-27): high, stun: 6% chance per hit to stun the target for 3 s with a mace: frequent random stuns that interrupt casts and set up Mortal Strike and Hamstring. Mace users only; takes the points of Improved Heroic Strike/Improved Overpower.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Polearm Specialization": {
+    "note": "See Axe Specialization.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      }
+    ]
+  },
+  "Sword Specialization": {
+    "note": "1%/rank chance for an extra attack after any weapon hit = ~+1%/rank melee damage. Stands in for whichever weapon specialization matches your weapon.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Improved Hamstring": {
+    "note": "PvP root procs. 2026-09-27 audit: a root on top of Hamstring's slow: 0.0005/rank while leveling; its value is PvP. PvP (2026-09-27): high, stick: 15% chance per Hamstring to root the target for 5 s on top of the 50% snare: Hamstring spam pins runners and kiters in melee range. Core of the Arms PvP build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "stick"
+      }
+    ]
+  },
+  "Mortal Strike": {
+    "note": "Weapon damage + 85 every 6s: ~+10% total damage for a two-hander over Heroic Strike dumping. PvP (2026-09-27): high, antiheal: Wounds the target: -50% healing received for 10 s, reapplied every 6 s. The reason to play Arms in PvP; its damage is already in the burst term.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Thunder Clap": {
+    "note": "-1 rage/rank on Thunder Clap: AoE tank utility.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Thunder Clap"],
+        "per_rank": 1.0
+      }
+    ]
+  },
+  "Booming Voice": {
+    "note": "Shout radius/duration: nothing measurable.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      }
+    ]
+  },
+  "Improved Demoralizing Shout": {
+    "note": "Tank mitigation: -8%/rank more AP reduction (~-1% boss damage per rank). PvP (2026-09-27): low, defensive: Demoralizing Shout removes 40% more melee attack power (AoE, 30 s): a little less damage from rogues and warriors; rarely worth Unbridled Wrath's points.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Unbridled Wrath": {
+    "note": "8%/rank chance per weapon hit for +1 rage (40% at 5/5). 'Suits dual wielding well, as the more often you attack, the more often you activate this talent' (Icy Veins): DW at ~2.5 hits/s gains ~1 rage/s (~+12% rage at 5/5) -> +1%/rank yellow damage on dual-wield sources; two-handers hit half as often -> +0.5%/rank. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.4% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.25 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.00248,
+        "values": [0.00248, 0.00496, 0.00744, 0.00992, 0.012399],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.00124,
+        "values": [0.00124, 0.00248, 0.00372, 0.00496, 0.0062],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Improved Cleave": {
+    "note": "+40%/rank Cleave bonus damage: AoE only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "per_rank": 0.03
+      }
+    ]
+  },
+  "Piercing Howl": {
+    "note": "AoE daze: leveling/PvP utility. 2026-09-27 audit: leveling-st/solo-60 0.0015, leveling-aoe 0.006 (as Forever). PvP (2026-09-27): high, stick: Instant 50% daze on every enemy near the warrior for 6 s, no stance or weapon swing needed: snares several players (flag carrier, healer) at once. Core PvP point in Fury tier 3.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0015],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stick"
+      }
+    ]
+  },
+  "Blood Craze": {
+    "note": "1%/rank health after being crit: less bandaging. PvP (2026-09-27): medium, defensive: 3% health over 6 s after being crit: players crit far more than mobs, so it runs most of a fight against melee. PvP builds take 3/3 as the Fury tier-3 filler.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.008,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Battle Shout": {
+    "note": "+5%/rank Battle Shout AP (+232 AP shout -> +11.6 AP/rank for you, ~+0.7%/rank damage; the party value is not scored). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.0% DPS in the simulator (scorer said 8.4% on the same scale); raid values scaled x0.00 to match (8.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.007,
+        "values": [0.007, 0.014, 0.021, 0.028, 0.035],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.007,
+        "values": [0.007, 0.014, 0.021, 0.028, 0.035],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.028, 0.056, 0.084, 0.112, 0.14],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Enrage": {
+    "note": "+5%/rank damage for 12 swings after being crit: leveling uptime ~50% (+2.5%/rank), raid DPS ~15% (+0.75%/rank), tanks ~60% (+3%/rank). Flurry prerequisite. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.0% DPS in the simulator (scorer said 3.8% on the same scale); raid values scaled x0.13 to match (0.5%). Other modes unchanged. PvP (2026-09-27): medium, burst: +25% melee damage for 12 s (12 swings) after being crit: players crit far more than mobs, so it is up most of a PvP fight, above the ~50% uptime its leveling value assumes.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.025,
+        "modes": ["leveling"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.03,
+        "modes": ["raid-tank"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0075,
+        "modes": ["raid"],
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.001,
+        "modes": ["raid"],
+        "values": [0.001, 0.002, 0.003, 0.004, 0.005001],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Slam": {
+    "note": "Slam -0.1s/rank: only the two-handed Slam-weaving build uses it (~+1%/rank two-handed). PvP (2026-09-27): zero, burst: Slam cast 1.5 -> 1.0 s: the cast resets the swing and needs the target to stay in reach, so PvP warriors do not Slam; its model value is the PvE two-hander Slam loop.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Improved Berserker Rage": {
+    "note": "5 rage on Berserker Rage: small.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002
+      }
+    ]
+  },
+  "Flurry": {
+    "note": "+10%/rank attack speed for 3 swings after a crit (30% at 5/5). Raid crit ~30%: uptime ~80% -> haste 5/10/14/19/24% on white swings; leveling crit ~8%: 2/4/6/8/10%. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 19.2% DPS in the simulator (scorer said 15.7% on the same scale); already within tolerance, raid effects split off unchanged (15.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.05, 0.1, 0.14, 0.19, 0.24],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.141987, 0.283974, 0.397563, 0.53955, 0.681537],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Bloodthirst": {
+    "note": "45% AP every 6s for 30 rage: ~+12% total damage raid, +10% leveling. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 12.3% DPS in the simulator (scorer said 10.8% on the same scale); already within tolerance, raid effects split off unchanged (10.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.12],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.12],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Death Wish": {
+    "note": "+20% physical damage 30s / 3 min = +3.3% average. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 7.8% DPS in the simulator (scorer said 7.1% on the same scale); already within tolerance, raid effects split off unchanged (7.1%). Other modes unchanged. PvP (2026-09-27): high, burst: +20% physical damage for 30 s on a 3 min cooldown (-20% armor and resistances) plus immunity to Fear: the Fury kill window and a fear answer. Fury builds only (tier 5, out of reach of a 31/20 Mortal Strike build).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.033],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.033],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.077434],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Dual Wield Specialization": {
+    "note": "+5%/rank off-hand damage (parser could not scope 'offhand weapon'). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 6.1% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.087839,
+        "values": [0.087839, 0.175678, 0.263517, 0.351356, 0.439195],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Improved Execute": {
+    "note": "-2 rage/rank on Execute (parsed as resource_cost). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 1.3% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "per_rank": 2.0,
+        "values": [2.0, 4.0, 6.0, 8.0, 10.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "per_rank": 2.0,
+        "values": [2.0, 4.0, 6.0, 8.0, 10.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "per_rank": 0.912861,
+        "values": [0.912861, 1.825722, 2.738582, 3.651443, 4.564304],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Shield Specialization": {
+    "note": "+1%/rank block, 20% chance for 1 rage on block.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.003
+      }
+    ]
+  },
+  "Improved Bloodrage": {
+    "note": "+2 rage/rank on Bloodrage: tank opener.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.004
+      }
+    ]
+  },
+  "Iron Will": {
+    "note": "+3%/rank stun/charm resist. PvP (2026-09-27): medium, resist: +15% chance to resist stuns and charms (Cheap Shot, Kidney Shot, Hammer of Justice, Mind Control, Seduction). Protection tier 2, so Protection hybrids only.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Last Stand": {
+    "note": "+30% max health 20s / 3 min. PvP (2026-09-27): low, defensive: +30% maximum health for 20 s on a 10 min cooldown: an emergency button once per fight at most; its survival value already counts most of it. Protection tier 3.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.06]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Shield Block": {
+    "note": "Rank 1: Shield Block blocks an extra attack (the big one: no crushing blows for 5s every 5s -> ~3% EH); ranks 2-3 add duration (0.5%).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03, 0.035, 0.04]
+      }
+    ]
+  },
+  "Improved Revenge": {
+    "note": "15%/rank stun on Revenge: dungeon utility, wasted on bosses. PvP (2026-09-27): medium, stun: 45% chance per Revenge to stun for 3 s: Revenge follows every block, dodge or parry, so a sword-and-board warrior stuns melee attackers often. Defensive Stance only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Disarm": {
+    "note": "Longer Disarm: utility. PvP (2026-09-27): medium, stun: Disarm lasts 13 s instead of 10 (1 min cooldown): 30% longer with a warrior, rogue, paladin or shaman unarmed. Defensive Stance; melee opponents only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Shield Wall": {
+    "note": "Longer Shield Wall on a 30-min cooldown: 'the 5 extra seconds will make or break a kill' (Icy Veins) - boss-kill insurance, small on average. PvP (2026-09-27): low, defensive: Shield Wall lasts 15 s instead of 10 (75% less damage) on a 30 min cooldown: once per battleground. Shield only.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Concussion Blow": {
+    "note": "5s stun every 45s; Shield Slam prerequisite. PvP (2026-09-27): high, stun: 5 s stun on a 45 s cooldown, any stance: the warrior's longest stun and the reason for Arms/Protection hybrids. Protection tier 5.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Shield Bash": {
+    "note": "Silence on Shield Bash. PvP (2026-09-27): medium, stun: Shield Bash also silences for 3 s (100% at 2/2) on top of its 6 s school lockout, so a healer cannot switch schools. Needs a shield (or a shield swap).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Shield Slam": {
+    "note": "Block-value slam every 6s: ~+20% tank threat output. PvP (2026-09-27): medium, dispel: 50% chance per Shield Slam (6 s cooldown) to dispel one magic effect on the target: the warrior's only purge (Power Word: Shield, Blessing of Freedom, Ice Barrier). Deep Protection with a shield only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.2]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Defiance": {
+    "note": "+3%/rank threat in Defensive Stance (parser could not scope it). PvP (2026-09-27): zero, burst: +15% threat in Defensive Stance: threat only, nothing in PvP.",
+    "effects": [
+      {
+        "channel": "threat_up",
+        "scope": ["tank"],
+        "per_rank": 0.03
+      }
+    ]
+  },
+  "Improved Taunt": {
+    "note": "Taunt cooldown: utility.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.004
+      }
+    ]
+  },
+  "Improved Intercept": {
+    "note": "PvP. PvP (2026-09-27): medium, move: Intercept cooldown 30 -> 20 s: the in-combat gap closer and its 3 s stun more often. Berserker Stance; Fury tier 5, so Fury builds only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Impale": {
+    "note": "+10%/rank crit damage on abilities (parser mis-scoped the Classic stance wording). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 4.2% DPS in the simulator (scorer said 4.1% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "per_rank": 0.137677,
+        "values": [0.137677, 0.275354, 0.413032, 0.550709, 0.688386],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Toughness": {
+    "note": "+2%/rank armor from items: a raid tank at ~8000 item armor gains 800 at 5/5 -> physical damage taken 36.4% -> 34.3% (armor DR 63.6% -> 65.7%), i.e. ~-5.8% damage taken -> +1.1%/rank effective health. Icy Veins: 'looks better on paper than what it actually is. Only your armor value from items is increased' - the arithmetic above is item armor only.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.011
+      }
+    ]
+  },
+  "Anticipation": {
+    "note": "+2 defense/rank: each defense point is +0.04% dodge, parry, block and to-be-missed and -0.04% chance to be crit -> +1.6% avoidance and -0.4% crit at 5/5, ~+3% effective health for a tank (~0.6%/rank). Icy Veins: 'not quite as good as it might look... it comes at the cost of 5 precious talent points'.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "modes": ["tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.002,
+        "modes": ["leveling"]
+      }
+    ]
+  },
+  "Cruelty": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 4.3% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Improved Heroic Strike": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fury-dw-raid): removing it costs 0.7% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [0.163721, 0.327441, 0.491162],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  }
+}

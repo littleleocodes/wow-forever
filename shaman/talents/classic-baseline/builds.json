@@ -1,0 +1,316 @@
+{
+  "class": "Shaman",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds (Horde only in Classic; Forever adds Dwarf shamans). Shamans raid as Restoration healers; Elemental becomes a real raid DPS spec with Naxxramas-level gear; Enhancement is a totem-support/melee hybrid. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "resto-raid-healer",
+      "name": "Restoration — Raid Healer (0/5/46)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The maximum-healing build: Improved Healing Wave, Tidal Focus/Mastery, Purification, Healing Way, Nature's Swiftness and Mana Tide Totem, with Ancestral Knowledge from Enhancement for mana. Chain Heal and Healing Wave carry the raid; support totems are not improved.",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Ancestral Knowledge", 5]
+        ],
+        "Restoration": [
+          ["Improved Healing Wave", 5],
+          ["Tidal Focus", 5],
+          ["Ancestral Healing", 3],
+          ["Totemic Focus", 5],
+          ["Healing Focus", 5],
+          ["Totemic Mastery", 1],
+          ["Healing Grace", 2],
+          ["Restorative Totems", 5],
+          ["Tidal Mastery", 5],
+          ["Healing Way", 3],
+          ["Nature's Swiftness", 1],
+          ["Purification", 5],
+          ["Mana Tide Totem", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Purification", "why": "+10% healing."},
+        {"talent": "Mana Tide Totem", "why": "Group mana every 5 minutes."},
+        {"talent": "Nature's Swiftness", "why": "Instant Healing Wave / Chain Heal every 3 minutes."},
+        {"talent": "Tidal Mastery", "why": "+5% healing crit (feeds Ancestral Healing)."},
+        {"talent": "Improved Healing Wave", "why": "-0.5s Healing Wave cast."},
+        {"talent": "Healing Way", "why": "Healing Wave stacks +18% healing on the tank."},
+        {"talent": "Tidal Focus", "why": "-5% healing mana cost."},
+        {"talent": "Totemic Focus", "why": "-25% totem mana cost."},
+        {"talent": "Ancestral Healing", "why": "+25% armor on the target after a crit heal."},
+        {"talent": "Healing Focus", "why": "70% pushback resistance."},
+        {"talent": "Restorative Totems", "why": "+25% Healing Stream/Mana Spring; prerequisite for Mana Tide."},
+        {"talent": "Ancestral Knowledge", "why": "+5% Intellect/mana."},
+        {"talent": "Totemic Mastery", "why": "30-yard totem radius."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Healing Grace",
+          "alternatives": ["Improved Reincarnation", "Healing Grace 3 by dropping Ancestral Healing to 2"],
+          "why": "Threat reduction; Icy Veins lists Improved Reincarnation/Totemic Focus as the swap targets."
+        },
+        {
+          "points": 5,
+          "default": "Ancestral Knowledge",
+          "alternatives": ["Convection (Elemental)", "Enhancing Totems 2 + Guardian Totems 2 + 1 (melee-group support)"],
+          "why": "The five points outside Restoration."
+        }
+      ],
+      "notes": ["Chain Heal is the raid heal, Healing Wave (with Healing Way stacks) the tank heal, Lesser Healing Wave the emergency heal.", "Alternative 'Enhancing Totems' and 'Improved Weapon Totems' support builds move points into Enhancement for melee groups (see Enhancement build)."],
+      "sources": ["https://www.icy-veins.com/wow-classic/restoration-shaman-healer-pve-spec-builds-talents", "https://www.wowhead.com/classic/guide/classes/shaman/healer-talent-builds-pve"]
+    },
+    {
+      "id": "elemental-raid-dps",
+      "name": "Elemental — Raid DPS (31/0/20)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Lightning Bolt / Chain Lightning caster: Elemental Mastery, Lightning Mastery, Call of Thunder, Elemental Fury and Elemental Focus (Clearcasting), plus Nature's Guidance (hit), Tidal Mastery (crit) and Totemic Focus from Restoration. Viable in AQ40/Naxx gear.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 5],
+          ["Call of Flame", 3],
+          ["Elemental Focus", 1],
+          ["Call of Thunder", 5],
+          ["Eye of the Storm", 3],
+          ["Elemental Fury", 1],
+          ["Storm Reach", 2],
+          ["Lightning Mastery", 5],
+          ["Elemental Mastery", 1]
+        ],
+        "Enhancement": [],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Totemic Focus", 5],
+          ["Improved Reincarnation", 1],
+          ["Nature's Guidance", 3],
+          ["Totemic Mastery", 1],
+          ["Tidal Mastery", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Lightning Mastery", "why": "-1.0s Lightning Bolt/Chain Lightning cast."},
+        {"talent": "Elemental Mastery", "why": "Guaranteed crit every 3 minutes."},
+        {"talent": "Elemental Fury", "why": "+100% crit damage on Fire/Frost/Nature spells."},
+        {"talent": "Call of Thunder", "why": "+6% Lightning crit."},
+        {"talent": "Concussion", "why": "+5% Lightning/Shock damage."},
+        {"talent": "Convection", "why": "-10% Lightning/Shock mana."},
+        {"talent": "Elemental Focus", "why": "Clearcasting."},
+        {"talent": "Nature's Guidance", "why": "+3% spell hit."},
+        {"talent": "Tidal Mastery", "why": "+5% Lightning crit."},
+        {"talent": "Storm Reach", "why": "+6 yards range."},
+        {"talent": "Totemic Focus", "why": "-25% totem mana cost."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Call of Flame",
+          "alternatives": ["Elemental Warding", "Earth's Grasp"],
+          "why": "Tier-2 filler; Fire Nova/Searing/Magma totems +15%."
+        },
+        {
+          "points": 3,
+          "default": "Eye of the Storm",
+          "alternatives": ["Elemental Devastation", "Reverberation"],
+          "why": "Pushback resistance for a caster; Reverberation is for PvP."
+        },
+        {
+          "points": 1,
+          "default": "Improved Reincarnation",
+          "alternatives": ["Ancestral Healing"],
+          "why": "One filler point to unlock Tidal Mastery."
+        }
+      ],
+      "notes": ["Lightning Bolt spam; Chain Lightning on cooldown when there are 2+ targets; keep Totemic Focus totems up.", "Mana is the limit: Mana Tide is not reachable; rely on Mana Spring, potions and Clearcasting."],
+      "sources": ["https://www.icy-veins.com/wow-classic/elemental-shaman-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "enhancement-raid-support",
+      "name": "Enhancement — Windfury Support / Melee (0/31/20)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "situational",
+      "summary": "Stormstrike, Flurry and Weapon Mastery for melee damage, Improved Weapon Totems (Windfury +30% AP bonus) and Enhancing Totems for the melee group, Restorative Totems and Totemic Focus from Restoration. Mostly played to supercharge a warrior/rogue group with Windfury and Strength of Earth.",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Ancestral Knowledge", 5],
+          ["Thundering Strikes", 5],
+          ["Enhancing Totems", 2],
+          ["Two-Handed Axes and Maces", 1],
+          ["Anticipation", 2],
+          ["Flurry", 5],
+          ["Improved Weapon Totems", 2],
+          ["Elemental Weapons", 3],
+          ["Weapon Mastery", 5],
+          ["Stormstrike", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Totemic Focus", 5],
+          ["Nature's Guidance", 3],
+          ["Totemic Mastery", 1],
+          ["Healing Grace", 1],
+          ["Restorative Totems", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Weapon Totems", "why": "Windfury Totem +30% attack power bonus for the melee group — the raid reason for Enhancement."},
+        {"talent": "Enhancing Totems", "why": "Strength of Earth / Grace of Air +15%."},
+        {"talent": "Stormstrike", "why": "Instant weapon attack that makes the next 2 sources of Nature damage on the target deal +20% — feeds your own shocks."},
+        {"talent": "Flurry", "why": "30% haste after crits."},
+        {"talent": "Weapon Mastery", "why": "+10% weapon damage."},
+        {"talent": "Thundering Strikes", "why": "+5% melee crit."},
+        {"talent": "Elemental Weapons", "why": "+40% Rockbiter/Flametongue/Frostbrand; prerequisite for Stormstrike."},
+        {"talent": "Two-Handed Axes and Maces", "why": "Enables two-handers (Nightfall!)."},
+        {"talent": "Nature's Guidance", "why": "+3% hit (melee and spell)."},
+        {"talent": "Restorative Totems", "why": "Mana Spring/Healing Stream +25% for the group."},
+        {"talent": "Ancestral Knowledge", "why": "Mana."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Anticipation",
+          "alternatives": ["Improved Ghost Wolf", "Improved Lightning Shield", "Guardian Totems"],
+          "why": "Filler to reach 15 for Flurry."
+        },
+        {
+          "points": 1,
+          "default": "Healing Grace",
+          "alternatives": ["Improved Reincarnation", "Ancestral Healing"],
+          "why": "One filler point to unlock Restorative Totems."
+        }
+      ],
+      "notes": ["Nightfall (two-handed sword from Blackrock Spire) with Two-Handed Axes and Maces is the classic 'support Enhancement' weapon: its proc gives +15% spell damage taken.", "Personal DPS is well below rogues/warriors; the value is the totems."],
+      "sources": ["https://www.icy-veins.com/wow-classic/enhancement-shaman-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-elemental-ns",
+      "name": "Elemental / Nature's Swiftness (PvP, 30/0/21)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The classic PvP shaman: Lightning Mastery burst, Elemental Fury crits, Eye of the Storm, Earth's Grasp for totem control, plus Nature's Swiftness (instant Chain Lightning or Healing Wave) and Tidal Mastery from Restoration. Elemental Mastery is not reachable.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 5],
+          ["Earth's Grasp", 2],
+          ["Call of Flame", 1],
+          ["Elemental Focus", 1],
+          ["Call of Thunder", 5],
+          ["Eye of the Storm", 3],
+          ["Elemental Fury", 1],
+          ["Storm Reach", 2],
+          ["Lightning Mastery", 5]
+        ],
+        "Enhancement": [],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Totemic Focus", 5],
+          ["Nature's Guidance", 3],
+          ["Totemic Mastery", 1],
+          ["Healing Grace", 1],
+          ["Tidal Mastery", 5],
+          ["Nature's Swiftness", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Nature's Swiftness", "why": "Instant Chain Lightning burst or instant Healing Wave."},
+        {"talent": "Lightning Mastery", "why": "-1.0s casts."},
+        {"talent": "Elemental Fury", "why": "Double crit damage."},
+        {"talent": "Call of Thunder", "why": "+6% crit."},
+        {"talent": "Eye of the Storm", "why": "Casting through melee damage."},
+        {"talent": "Earth's Grasp", "why": "Stoneclaw health and Earthbind radius."},
+        {"talent": "Tidal Mastery", "why": "+5% crit on lightning and heals."},
+        {"talent": "Nature's Guidance", "why": "+3% hit."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Call of Flame",
+          "alternatives": ["Elemental Warding"],
+          "why": "Filler to reach tier 3."
+        },
+        {
+          "points": 1,
+          "default": "Healing Grace",
+          "alternatives": ["Ancestral Healing", "Improved Reincarnation"],
+          "why": "Filler to reach Tidal Mastery."
+        }
+      ],
+      "notes": ["Frost Shock kiting, Chain Lightning / Lightning Bolt with Nature's Swiftness for the kill, Grounding Totem against casters."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/shaman/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-enhancement",
+      "name": "Leveling — Enhancement (two-hander)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Two-handed Enhancement with Flurry at 29, Weapon Mastery and Stormstrike at 40, then Restoration for Totemic Focus, Nature's Guidance and Restorative Totems. Ends in the 0/31/20 support build; respec to Restoration for raid healing.",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Ancestral Knowledge", 5],
+          ["Thundering Strikes", 5],
+          ["Enhancing Totems", 2],
+          ["Two-Handed Axes and Maces", 1],
+          ["Anticipation", 2],
+          ["Flurry", 5],
+          ["Improved Weapon Totems", 2],
+          ["Elemental Weapons", 3],
+          ["Weapon Mastery", 5],
+          ["Stormstrike", 1]
+        ],
+        "Restoration": [
+          ["Tidal Focus", 5],
+          ["Totemic Focus", 5],
+          ["Nature's Guidance", 3],
+          ["Totemic Mastery", 1],
+          ["Healing Grace", 1],
+          ["Restorative Totems", 5]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Enhancement", "talent": "Ancestral Knowledge", "points": 5},
+        {"levels": "15-19", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "20", "tree": "Enhancement", "talent": "Two-Handed Axes and Maces", "points": 1},
+        {"levels": "21-22", "tree": "Enhancement", "talent": "Anticipation", "points": 2},
+        {"levels": "23-24", "tree": "Enhancement", "talent": "Enhancing Totems", "points": 2},
+        {"levels": "25-29", "tree": "Enhancement", "talent": "Flurry", "points": 5},
+        {"levels": "30-32", "tree": "Enhancement", "talent": "Elemental Weapons", "points": 3},
+        {"levels": "33-34", "tree": "Enhancement", "talent": "Improved Weapon Totems", "points": 2},
+        {"levels": "35-39", "tree": "Enhancement", "talent": "Weapon Mastery", "points": 5},
+        {"levels": "40", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+        {"levels": "41-45", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+        {"levels": "46-50", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+        {"levels": "51-53", "tree": "Restoration", "talent": "Nature's Guidance", "points": 3},
+        {"levels": "54", "tree": "Restoration", "talent": "Totemic Mastery", "points": 1},
+        {"levels": "55", "tree": "Restoration", "talent": "Healing Grace", "points": 1},
+        {"levels": "56-60", "tree": "Restoration", "talent": "Restorative Totems", "points": 5}
+      ],
+      "core": [
+        {"talent": "Two-Handed Axes and Maces", "why": "Big slow two-hander + Windfury Weapon from 30 = huge white crits."},
+        {"talent": "Flurry", "why": "Haste after crits at 29."},
+        {"talent": "Weapon Mastery", "why": "+10% weapon damage."},
+        {"talent": "Stormstrike", "why": "The 40 milestone; extra Nature damage from shocks."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Anticipation",
+          "alternatives": ["Improved Ghost Wolf (levels 21-22, respec later)"],
+          "why": "Improved Ghost Wolf is a real quality-of-life pick while leveling."
+        }
+      ],
+      "notes": ["Rockbiter (pre-30) then Windfury Weapon on a slow two-hander; Earth Shock / Flame Shock as mana allows, Stoneskin/Strength of Earth totems every pull."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/shaman/leveling-talents"]
+    }
+  ]
+}

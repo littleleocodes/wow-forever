@@ -1,0 +1,1365 @@
+{
+  "class": "Hunter",
+  "game": "forever",
+  "notes": "Proposed WoW: Forever builds derived from the Classic baselines and the BlizzCon 2026 demo trees (captured 2026-09-13). Aimed Shot, Lethal Shots and Improved Hunter's Mark no longer exist as talents; Trueshot Aura moved to the 16-point slot. Point math is validated; performance is not.",
+  "builds": [
+    {
+      "id": "bm-mm-raid",
+      "name": "Beast Mastery / Marksmanship (simulator winner adopted 2026-09-27)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "bm-mm-raid",
+      "summary": "Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+7.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Improved Mend Pet", 2],
+          ["Ferocity", 3],
+          ["Bestial Discipline", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 2],
+          ["Mortal Shots", 5],
+          ["Trueshot Aura", 1],
+          ["Barrage", 2],
+          ["Ranged Weapon Specialization", 4]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Deadly Aspects", "why": "Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement. Raid sim (2026-09-27): removing it costs +6% DPS."},
+        {"talent": "Bestial Discipline", "why": "Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Lethal Attacks", "why": "+5% crit with all attacks (est.) — replaces Lethal Shots. Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Mortal Shots", "why": "+30% ranged crit damage (est.); requires Careful Aim 5. Raid sim (2026-09-27): removing it costs +4% DPS."},
+        {"talent": "Efficiency", "why": "Mana on shots/stings (3%/rank). Raid sim (2026-09-27): removing it costs +4% DPS."},
+        {"talent": "Careful Aim", "why": "New: attack power from Intellect (20%/rank read; scaling unknown). Raid sim (2026-09-27): removing it costs +4% DPS."},
+        {"talent": "Ranged Weapon Specialization", "why": "+5% ranged damage. Raid sim (2026-09-27): removing it costs +3% DPS."},
+        {"talent": "Trueshot Aura", "why": "Group ranged attack power; now a 16-point talent (demo shows +30 RAP at level 38 — expect a higher rank at 60). Raid sim (2026-09-27): removing it costs +2% DPS."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Ferocity",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Endurance Training",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Improved Mend Pet",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "bm-mm-full-buffs-raid",
+      "name": "Beast Mastery / Marksmanship (full raid buffs, 20/31/0)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "bm-mm-raid",
+      "summary": "The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid` until the training-dummy adoption of 2026-09-27, restored as its companion. In the community simulator's raid setting (full buffs, ElliotWood/Forever 40be98e, 3000 iterations) it does 687 DPS against `bm-mm-raid`'s 643 (+6.8%); on the training dummy, where our raid drafts are ranked (your own buffs only), it does 327 against 352 (-7.1%), out of mana 68 s of 120. Simulator numbers, not measurements. The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Improved Revive Pet", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 4],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Trueshot Aura", "why": "Group ranged attack power; now a 16-point talent (demo shows +30 RAP at level 38 — expect a higher rank at 60)."},
+        {"talent": "Deadly Aspects", "why": "Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement."},
+        {"talent": "Lethal Attacks", "why": "+5% crit with all attacks (est.) — replaces Lethal Shots."},
+        {"talent": "Mortal Shots", "why": "+30% ranged crit damage (est.); requires Careful Aim 5."},
+        {"talent": "Careful Aim", "why": "New: attack power from Intellect (20%/rank read; scaling unknown)."},
+        {"talent": "Ranged Weapon Specialization", "why": "+5% ranged damage."},
+        {"talent": "Sniper Shot", "why": "New capstone: 4s cast, +160 damage snipe on a 15s cooldown — the Aimed Shot replacement."},
+        {"talent": "Unleashed Fury", "why": "+15% pet damage (est.)."},
+        {"talent": "Ferocity", "why": "+10% pet crit (est.)."},
+        {"talent": "Focused Fire", "why": "New: +2% all damage while the pet is out (est.)."},
+        {"talent": "Efficiency", "why": "Mana on shots/stings (3%/rank)."},
+        {"talent": "Barrage", "why": "Multi-Shot/Aimed Shot/Volley damage; gating filler for tier 6."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Rapid Killing",
+          "alternatives": ["Improved Arcane Shot", "Improved Stings"],
+          "why": "Tier-3 Marksmanship filler; Rapid Killing (-1 min Rapid Fire) also unlocks Rapid Recuperation if you find 2 more points."
+        },
+        {
+          "points": 3,
+          "default": "Endurance Training 1 + Improved Revive Pet 2",
+          "alternatives": ["Improved Aspect of the Monkey", "Pathfinding"],
+          "why": "Beast Mastery gating fillers."
+        },
+        {
+          "points": 4,
+          "default": "Efficiency 4",
+          "alternatives": ["Efficiency 5 with Rapid Killing 1"],
+          "why": "Mana vs. Rapid Fire uptime."
+        }
+      ],
+      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `bm-mm-raid` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "mm-lone-wolf-raid",
+      "name": "Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best build in the community simulator (+13.8% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Lone Wolf (+20% damage with no pet) plus the full Marksmanship core, with Survival for Improved Tracking (+5% vs. the tracked creature type), Surefooted (+3% hit) and Deterrence. The petless alternative to the BM/MM build; no Classic baseline.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Hawk Eye", 3],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Lone Wolf", 1],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Rapid Recuperation", 2],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "+20% damage with all attacks while no pet is active. Raid sim (2026-09-26): removing it costs +20% DPS."},
+        {"talent": "Deadly Aspects", "why": "Raid sim (2026-09-26): removing it costs +11% DPS."},
+        {"talent": "Sniper Shot", "why": "Capstone snipe. Raid sim (2026-09-26): removing it costs +8% DPS."},
+        {"talent": "Careful Aim", "why": "AP from Intellect. Raid sim (2026-09-26): removing it costs +6% DPS."},
+        {"talent": "Mortal Shots", "why": "Ranged crit damage. Raid sim (2026-09-26): removing it costs +6% DPS."},
+        {"talent": "Lethal Attacks", "why": "Crit. Raid sim (2026-09-26): removing it costs +5% DPS."},
+        {"talent": "Ranged Weapon Specialization", "why": "Ranged damage. Raid sim (2026-09-26): removing it costs +4% DPS."},
+        {"talent": "Improved Stings", "why": "Raid sim (2026-09-26): removing it costs +3% DPS."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Hawk Eye",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Efficiency",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Rapid Killing",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Trueshot Aura",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Rapid Recuperation",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 5,
+          "default": "Improved Tracking",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.", "2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "open_questions": ["Lone Wolf +20% vs. a Ferocity/Unleashed Fury pet: needs a sim or parse comparison at 60."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "mm-hawk-raid",
+      "name": "Marksmanship — Summon Hawk (raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Mastery talent: every 6 seconds (a cooldown shared with Arcane Shot) a hawk dive-bombs the target and keeps attacking for 18 seconds, two hawks at a time, and Unleashed Fury and Ferocity buff hawks as they buff pets. Beast Mastery for the hawk, Unleashed Fury, Ferocity, Focused Fire and Deadly Aspects; Marksmanship for Lethal Attacks, Efficiency, Careful Aim, Mortal Shots, Ranged Weapon Specialization, Improved Stings and Trueshot Aura. Found by the simulator talent search from bm-mm-raid under the Beast Mastery entry's rotation (Summon Hawk on cooldown, Serpent Sting kept up, the cooldowns, Auto Shot between): its first move, one point into Summon Hawk, was worth +47% on the training dummy (2026-09-28). A deeper Beast Mastery version (31/20/0, from the simulator's Beast Mastery preset) lands 0.3% lower on the dummy and 1.6% lower in a raid. Its lead rests on the simulator's guess at the hawks' follow-up attacks (open questions).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Bestial Discipline", 1],
+          ["Summon Hawk", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Mortal Shots", 5],
+          ["Trueshot Aura", 1],
+          ["Barrage", 1],
+          ["Ranged Weapon Specialization", 4]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "The build's engine: a dive bomb every 6 s and hawks that keep attacking for 18 s. Simulator removal run (2026-09-28): the build loses 47.6% of its DPS on the training dummy without it."},
+        {"talent": "Unleashed Fury", "why": "+15% pet and hawk damage. Simulator removal run (2026-09-28): the build loses 5.2% of its DPS on the training dummy without it."},
+        {"talent": "Deadly Aspects", "why": "Auto Shot procs +30% ranged attack speed under Aspect of the Hawk. Simulator removal run (2026-09-28): the build loses 4.6% of its DPS on the training dummy without it."},
+        {"talent": "Lethal Attacks", "why": "+5% crit on every attack. Simulator removal run (2026-09-28): the build loses 4.4% of its DPS on the training dummy without it."},
+        {"talent": "Improved Stings", "why": "+20% Serpent Sting damage, and the rotation keeps Serpent Sting up. Simulator removal run (2026-09-28): the build loses 3.5% of its DPS on the training dummy without it."},
+        {"talent": "Ferocity", "why": "+10% pet and hawk crit. Simulator removal run (2026-09-28): the build loses 3.3% of its DPS on the training dummy without it."},
+        {"talent": "Mortal Shots", "why": "+30% ranged crit damage. Simulator removal run (2026-09-28): the build loses 3.1% of its DPS on the training dummy without it."},
+        {"talent": "Careful Aim", "why": "Attack power from Intellect. Simulator removal run (2026-09-28): the build loses 2.6% of its DPS on the training dummy without it."},
+        {"talent": "Efficiency", "why": "-15% mana on shots and stings: the training dummy runs a hunter dry. Simulator removal run (2026-09-28): the build loses 2.2% of its DPS on the training dummy without it."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Bestial Discipline",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.7% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 3,
+          "default": "Endurance Training",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 1,
+          "default": "Barrage",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        }
+      ],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `bm-mm-raid`: 1 point Improved Mend Pet -> Summon Hawk, 1 point Barrage -> Improved Stings, 1 point Improved Mend Pet -> Ferocity, 1 point Bestial Discipline -> Ferocity.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "open_questions": ["How hard do the hawks hit after the dive bomb? The client does not describe the hawk's swings; the simulator (and the fight lab, which follows it) assumes the dive bomb's base damage (108 at rank 4) every 3 s for 18 s, two hawks at once. Those follow-up attacks are 22% of this build's damage on the training dummy and 13% in a raid (2026-09-28): at half that, the build only matches the best builds without the hawk.", "Do Unleashed Fury, Ferocity and Focused Fire apply to hawks in the game? The first two tooltips name hawks; the simulator applies all three.", "Summon Hawk shares its cooldown with Arcane Shot: the rotation gives up Arcane Shot for it."],
+      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/hunter/dps/presets.ts", "https://github.com/ElliotWood/Forever/blob/master/sim/hunter/summon_hawk.go", "https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "survival-melee",
+      "name": "Survival — Melee (Strider Kick / Lacerating Strikes)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "The demo Survival tree is a melee tree: Predator's Edge (melee crit damage, off-hand damage), Expose Prey (Mongoose Bite procs), Strider Kick, Resourcefulness, Lightning Reflexes (+10% Agility) and the Lacerating Strikes capstone (Mongoose Bite bleed), with Lethal Attacks and Careful Aim from Marksmanship and Deadly Aspects (Aspect of the Beast melee variant) from Beast Mastery. Entirely new; listed so it can be tested.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 2],
+          ["Focused Fire", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Efficiency", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 3],
+          ["Clever Traps", 1],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Strider Kick", 1],
+          ["Resourcefulness", 2],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Lacerating Strikes", "why": "Capstone: Mongoose Bite bleeds for 40% of its damage over 21s."},
+        {"talent": "Expose Prey", "why": "Attacks on Hunter's Marked targets activate Mongoose Bite (5%/rank est.)."},
+        {"talent": "Predator's Edge", "why": "+6%/rank melee crit damage and +10%/rank off-hand damage (est.)."},
+        {"talent": "Strider Kick", "why": "100% weapon damage instant on an 8s cooldown."},
+        {"talent": "Lightning Reflexes", "why": "+10% Agility (est.)."},
+        {"talent": "Savage Strikes", "why": "Melee ability crit."},
+        {"talent": "Lethal Attacks", "why": "Crit with all attacks."},
+        {"talent": "Careful Aim", "why": "AP from Intellect."},
+        {"talent": "Deadly Aspects", "why": "Aspect of the Beast: melee haste procs (demo text truncated)."},
+        {"talent": "Resourcefulness", "why": "Cheaper melee abilities/traps, regen on crits."}
+      ],
+      "flex": [
+        {
+          "points": 4,
+          "default": "Survivalist 3 + Clever Traps 1",
+          "alternatives": ["Deflection", "Improved Wing Clip"],
+          "why": "Gating fillers."
+        },
+        {
+          "points": 4,
+          "default": "Endurance Training 2 + Focused Fire 2",
+          "alternatives": ["Improved Revive Pet"],
+          "why": "Beast Mastery fillers with the pet kept."
+        }
+      ],
+      "notes": ["Dual-wield hunter melee did not exist in Classic; Predator's Edge's off-hand damage implies it does now.", "2026-09-27 scenario audit: Counterattack 1 -> Efficiency 1. Counterattack strikes after you parry; behind a raid boss you are never attacked, so it never fires. Efficiency makes Raptor Strike, Mongoose Bite and Serpent Sting cheaper (scorer +0.6 points)."],
+      "open_questions": ["Whether melee Survival is competitive at all — pure test build."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "bm-solo-farm",
+      "name": "Beast Mastery (solo / farming, 31/20/0)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "based_on": "bm-solo-farm",
+      "summary": "Bestial Wrath, Frenzy, Ferocity, Unleashed Fury, Endurance Training (pet health and armor), Focused Fire and Summon Hawk (a second attacker), with Lethal Attacks, Efficiency, Careful Aim and Mortal Shots from Marksmanship. Improved Revive Pet and Bestial Discipline are left out in favour of a pet that dies less in the first place.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 5],
+          ["Focused Fire", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Intimidation", 1],
+          ["Frenzy", 5],
+          ["Bestial Wrath", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Bestial Wrath", "why": "+50% pet damage, CC immunity; requires Intimidation (which requires Bestial Swiftness)."},
+        {"talent": "Frenzy", "why": "Pet haste on crits."},
+        {"talent": "Summon Hawk", "why": "New 16-point talent: a second attacker for 18s; Unleashed Fury/Ferocity buff hawks too."},
+        {"talent": "Ferocity", "why": "Pet/hawk crit."},
+        {"talent": "Unleashed Fury", "why": "Pet/hawk damage."},
+        {"talent": "Intimidation", "why": "Pet stun."},
+        {"talent": "Mortal Shots", "why": "Your own crit damage."},
+        {"talent": "Endurance Training", "why": "+15% pet health and armor (est.) — a pet that survives is a pet that tanks."}
+      ],
+      "flex": [
+        {
+          "points": 4,
+          "default": "Endurance Training 5 + Focused Fire 2 (the last 4 of them)",
+          "alternatives": ["Improved Revive Pet 2 + Bestial Discipline 2", "Improved Mend Pet 2"],
+          "why": "Pet durability vs. faster revives / regen while casting."
+        }
+      ],
+      "notes": ["Thick Hide is gone; Endurance Training now also gives pet armor."],
+      "open_questions": ["Hawk damage at 60 and whether two hawks plus a pet make BM a raid spec."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "pvp-mm-surv",
+      "name": "Marksmanship / Survival (PvP, 0/31/20)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "based_on": "pvp-mm-surv",
+      "summary": "Improved Concussive Shot stuns, Scatter Shot, Lethal Attacks and Mortal Shots, Trueshot Aura; Survival for Improved Wing Clip roots, Surefooted, Deterrence, Survival Tactics (trap hit) and Counterattack. Improved Feign Death and Wyvern Sting are gone.",
+      "allocation": {
+        "Beast Mastery": [],
+        "Marksmanship": [
+          ["Improved Concussive Shot", 5],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 1],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Scatter Shot", 1],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Entrapment", 2],
+          ["Survivalist", 2],
+          ["Improved Wing Clip", 3],
+          ["Clever Traps", 1],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Survival Tactics", 2],
+          ["Counterattack", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Scatter Shot", "why": "Disorient for trap setups."},
+        {"talent": "Improved Concussive Shot", "why": "Stun procs on Concussive Shot (4%/rank est. 20%)."},
+        {"talent": "Improved Wing Clip", "why": "Root procs (7%/rank est. 21%)."},
+        {"talent": "Counterattack", "why": "Root after a parry; requires Deterrence."},
+        {"talent": "Survival Tactics", "why": "+10% hit with traps and Feign Death (est.)."},
+        {"talent": "Deterrence", "why": "+25% dodge/parry for 10s."},
+        {"talent": "Improved Tracking", "why": "+5% vs. Humanoids while tracking them."},
+        {"talent": "Mortal Shots", "why": "Ranged crit damage."},
+        {"talent": "Lethal Attacks", "why": "Crit."}
+      ],
+      "flex": [
+        {
+          "points": 4,
+          "default": "Entrapment 2 + Survivalist 2",
+          "alternatives": ["Deflection", "Savage Strikes"],
+          "why": "Gating fillers in Survival."
+        },
+        {
+          "points": 1,
+          "default": "Improved Stings",
+          "alternatives": ["Efficiency"],
+          "why": "Thirty-first Marksmanship point."
+        }
+      ],
+      "notes": ["Sniper Shot's 4s cast is not taken for PvP."],
+      "open_questions": ["Whether Aimed Shot exists baseline for PvP burst."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "leveling-beast-mastery",
+      "name": "Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "based_on": "leveling-beast-mastery",
+      "summary": "Allocation and order adopted on 2026-09-26 from `cand-bm-r2`, the fastest build in the fight-lab race over levels 20/30/40/50/60 (+3.8% vs the previous draft, level-weighted time per kill; the previous draft is kept under leveling/fightlab/candidates/). Core talents are ranked by the sim's removal cost at 60. Previous summary: The Classic pet-first path, re-mapped: Deadly Aspects replaces Improved Aspect of the Hawk as the first five points, Endurance Training 5/5 at 15-19 (now +15% pet health AND armor — better than Classic), Unleashed Fury at 20-24, Summon Hawk (new 16-pt) at 25, Ferocity, Bestial Swiftness -> Intimidation (now a prerequisite chain), then Focused Fire is backfilled into tier 2 at 33-34 because nothing in tiers 5-6 beats +2% damage until Frenzy, and Bestial Wrath at 40. Marksmanship afterwards: Lethal Attacks, Careful Aim (Mortal Shots prerequisite), Efficiency, Mortal Shots. Ends in the Forever BM solo/farming build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Endurance Training", 3],
+          ["Deadly Aspects", 4],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 3]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Hawk Eye", 3],
+          ["Efficiency", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 1],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Rapid Recuperation", 2],
+          ["Scatter Shot", 1],
+          ["Barrage", 2],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": []
+      },
+      "order": [
+        {"levels": "10-11", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 2},
+        {"levels": "12-14", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 3},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
+        {"levels": "18-19", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "26-30", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "31-35", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "36-37", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "38-40", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "41", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "42-44", "tree": "Marksmanship", "talent": "Hawk Eye", "points": 3},
+        {"levels": "45", "tree": "Marksmanship", "talent": "Careful Aim", "points": 1},
+        {"levels": "46-47", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
+        {"levels": "48", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
+        {"levels": "49-50", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
+        {"levels": "51-55", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
+        {"levels": "56", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
+        {"levels": "57-59", "tree": "Beast Mastery", "talent": "Ferocity", "points": 3},
+        {"levels": "60", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1}
+      ],
+      "core": [
+        {"talent": "Summon Hawk", "why": "New 16-pt at 25: a second attacker for 18s that Unleashed Fury/Ferocity also buff. Demo damage is low (53 at level 38), so it is valued as 'an extra pet on pulls', not a burst cooldown. Fight lab (2026-09-26): removing it costs +8% time per kill at 60, +2% at 30."},
+        {"talent": "Efficiency", "why": "Fight lab (2026-09-26): removing it costs +5% time per kill at 60."},
+        {"talent": "Unleashed Fury", "why": "+3%/rank pet damage (est. 15%) as soon as tier 3 opens at 20. Fight lab (2026-09-26): removing it costs +4% time per kill at 60, +5% at 30."},
+        {"talent": "Rapid Recuperation", "why": "Fight lab (2026-09-26): removing it costs +4% time per kill at 60."},
+        {"talent": "Improved Stings", "why": "Fight lab (2026-09-26): removing it costs +2% time per kill at 60."},
+        {"talent": "Lethal Attacks", "why": "Fight lab (2026-09-26): removing it costs +2% time per kill at 60, +1% at 30."},
+        {"talent": "Focused Fire", "why": "New: +1%/rank all your damage while the pet is out (est. 2%). Tier 2, but taken at 33-34 — earlier rows are always in play when the current row has nothing better. Fight lab (2026-09-26): removing it costs +2% time per kill at 60, +1% at 30."},
+        {"talent": "Endurance Training", "why": "+3%/rank pet health and armor (est. 15%/15%) — the pet is the tank; Classic took it 5/5 at 15-19 and the Forever version is stronger. Fight lab (2026-09-26): removing it costs +1% time per kill at 60, +0% at 30."},
+        {"talent": "Ferocity", "why": "+10% crit for the pet and the hawk at 5/5 (3 ranks here): the pet does a large share of the leveling damage."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Hawk Eye",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 and +0.2% at 30 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Rapid Killing",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.2% time per kill at 60 and -0.1% at 30 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Barrage",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.4% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Pathfinding",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Trueshot Aura",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 and +0.0% at 30 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Scatter Shot",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Sniper Shot",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-09-28, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
+      "open_questions": ["Summon Hawk damage at 60 and whether the 'only 2 hawks' text means two can be up at once.", "Deadly Aspects rank scaling (extrapolated from 2%)."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "melee-survival-raid",
+      "name": "Melee Survival — Lone Wolf (dual wield, raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Forever's melee hunter for raids: Survival's melee package (Predator's Edge with dual wield, Savage Strikes, Expose Prey, Lacerating Strikes, Strider Kick, Lightning Reflexes, Improved Tracking, Surefooted, Resourcefulness) with Marksmanship's Lethal Attacks, Careful Aim, Efficiency and Lone Wolf, and Deadly Aspects for the Aspect of the Beast haste proc. No parry or dodge talents: a raid melee stands behind the boss and is never attacked. The scorer's optimum for the melee-dps model under the raid profile (2026-09-27); the model's damage split is a tooltip assumption until a melee rotation exists in a simulator.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Efficiency", 4],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 5],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Predator's Edge", "why": "+30% melee critical damage and +50% off-hand weapon damage: the reason to dual-wield; the biggest single multiplier of the build."},
+        {"talent": "Lone Wolf", "why": "+20% on every attack with no pet; a melee hunter fights beside the mob anyway, so the pet's threat matters less than the damage."},
+        {"talent": "Expose Prey", "why": "Attacks against a marked target activate Mongoose Bite (10% chance at 2/2): Mongoose Bite every few seconds instead of only after a dodge, and Lacerating Strikes needs it."},
+        {"talent": "Lacerating Strikes", "why": "Every Mongoose Bite also bleeds for 40% of its damage over 21 s: the 31-point capstone of the melee tree."},
+        {"talent": "Lethal Attacks", "why": "+5% critical strike chance with all attacks, doubled in value by Predator's Edge's crit damage."},
+        {"talent": "Savage Strikes", "why": "+4% crit on Raptor Strike, Mongoose Bite, Counterattack and Strider Kick."},
+        {"talent": "Deadly Aspects", "why": "Under Aspect of the Beast every melee swing has a 10% chance of +30% attack speed for 12 s."},
+        {"talent": "Strider Kick", "why": "100% weapon damage every 8 s for a trivial mana cost, plus a sprint."},
+        {"talent": "Improved Tracking", "why": "+5% damage against the tracked creature type: every raid boss is a beast, demon, dragon, elemental, giant, humanoid or undead."},
+        {"talent": "Efficiency", "why": "-15% mana on melee abilities and stings: a melee hunter's mana goes to Raptor Strike and Mongoose Bite."},
+        {"talent": "Lightning Reflexes", "why": "+15% Agility: attack power and crit."},
+        {"talent": "Resourcefulness", "why": "-60% mana on melee abilities and regen on crits: a raid melee hunter's mana goes to Raptor Strike and Mongoose Bite."},
+        {"talent": "Careful Aim", "why": "Attack power from Intellect."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Survivalist",
+          "alternatives": ["Deflection"],
+          "why": "Survival points on the way to Lacerating Strikes: +10% health against raid damage. Deflection, Deterrence and Counterattack need the boss to attack you, which it does not behind its back."
+        },
+        {
+          "points": 3,
+          "default": "Surefooted",
+          "alternatives": ["Survivalist"],
+          "why": "+3% hit against a level-63 boss."
+        }
+      ],
+      "notes": ["Dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "2026-09-27 scenario audit: Deflection 5, Deterrence 1, Counterattack 1, Hawk Eye 1 and Improved Stings 3 -> Survivalist 5, Resourcefulness 2, Careful Aim 5 (Efficiency 5 -> 4). Parry and dodge only matter when the boss attacks you, Hawk Eye extends shots a melee does not fire, and Serpent Sting is one cast per pull.", "The fight lab's melee rotation (hunter module, spec model melee-dps) plays this loop for the leveling comparison; the community simulator has no melee hunter, so this build has no raid-sim DPS yet."],
+      "open_questions": ["Melee hunter numbers are the scorer's assumptions and the fight lab's rotation, not measurements: the community simulator has no melee hunter rotation, so the raid build has no simulator DPS.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
+      "sources": ["https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/optimizer/melee-dps-raid-dps.md", "hunter/leveling/optimizer/melee-dps-leveling-st.md"]
+    },
+    {
+      "id": "leveling-melee",
+      "name": "Melee Survival leveling (dual wield, pet kept)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Leveling as a melee hunter with the pet as the tank: Survival's melee package first (Improved Tracking, Savage Strikes, Surefooted, Predator's Edge, Strider Kick at 30, Expose Prey, Resourcefulness), then Lethal Attacks, Lightning Reflexes, Careful Aim, Deadly Aspects and Focused Fire, and Lacerating Strikes at 58. No Lone Wolf, Improved Wing Clip or Improved Aspect of the Monkey: the pet holds the mob, so the hunter never needs to root, kite or dodge it. Adopted 2026-09-27 from opt-melee-dps-leveling-st, the fight lab's fastest melee build: 18.0/24.1/27.3/29.4/33.7 s per kill at 20/30/40/50/60 against 18.4/24.6/34.2/36.1/42.0 s for the previous Lone Wolf draft.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 4],
+          ["Savage Strikes", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Predator's Edge", 5],
+          ["Counterattack", 1],
+          ["Strider Kick", 1],
+          ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
+        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
+        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
+        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
+        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
+        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
+        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "31-32", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "33", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
+        {"levels": "34-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "39", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
+        {"levels": "40-44", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "45-48", "tree": "Marksmanship", "talent": "Careful Aim", "points": 4},
+        {"levels": "49-53", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "54-55", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "56", "tree": "Marksmanship", "talent": "Careful Aim", "points": 1},
+        {"levels": "57", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "58", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1},
+        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2}
+      ],
+      "core": [
+        {"talent": "Strider Kick", "why": "100% weapon damage every 8 s: the biggest single talent at 60 (fight lab: +10.9% time per kill without it)."},
+        {"talent": "Resourcefulness", "why": "-60% mana on melee abilities and regen on crits: the melee loop runs out of mana without it (fight lab +11.5% at 60, almost all downtime)."},
+        {"talent": "Lethal Attacks", "why": "+5% crit with all attacks, worth double with Predator's Edge (fight lab +6.1% at 60)."},
+        {"talent": "Expose Prey", "why": "Mongoose Bite procs against the marked target: the second strike of the loop (fight lab +6.0% at 60)."},
+        {"talent": "Predator's Edge", "why": "+30% melee crit damage and +50% off-hand damage: the reason to dual-wield (fight lab +5.6% at 60)."},
+        {"talent": "Careful Aim", "why": "Attack power from Intellect (fight lab +4.8% at 60)."},
+        {"talent": "Improved Tracking", "why": "+5% damage against the tracked creature type: every leveling mob has one (fight lab +3.6% at 60)."},
+        {"talent": "Lightning Reflexes", "why": "+15% Agility (fight lab +3.0% at 60)."},
+        {"talent": "Savage Strikes", "why": "Crit on Raptor Strike, Mongoose Bite and Strider Kick (fight lab +2.9% at 60)."},
+        {"talent": "Focused Fire", "why": "Pet damage: the pet tanks and still does a fifth of the damage (fight lab +2.2% at 60)."}
+      ],
+      "flex": [
+        {
+          "points": 4,
+          "default": "Deflection",
+          "alternatives": ["Survivalist"],
+          "why": "Survival points on the way to Lacerating Strikes: with the pet tanking the hunter is rarely hit (fight lab +0.6% at 60)."
+        },
+        {
+          "points": 2,
+          "default": "Deterrence 1 + Counterattack 1",
+          "alternatives": ["Survivalist"],
+          "why": "Tier fillers for the capstone; the pet takes the hits, so parry procs are rare (fight lab 0.0% and -0.1% at 60)."
+        },
+        {
+          "points": 2,
+          "default": "Pathfinding",
+          "alternatives": ["Endurance Training", "Improved Revive Pet"],
+          "why": "+run speed between pulls; the fight lab uses a fixed 6 s travel, so only the scorer's travel value counts it."
+        }
+      ],
+      "notes": ["Pull with Hunter's Mark and Serpent Sting and send the pet; the pet holds the mob while you strike beside it: Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.", "Why no Improved Wing Clip, Improved Aspect of the Monkey or Lone Wolf (2026-09-27 scenario audit): a melee hunter stands next to the mob, so a root to open distance does nothing (fight lab 0.0% at 30 and 60); the pet keeps the mob off you, so dodge talents add nothing (0.0%); and dropping the pet at 51 made the hunter take every hit (downtime 3.4 s -> 10.3 s per kill at 60).", "Fight lab: hunter/leveling/fightlab/melee-dps.md compares this build with the Beast Mastery and Marksmanship leveling builds under their own models."],
+      "open_questions": ["Melee hunter numbers are the scorer's assumptions and the fight lab's rotation, not measurements: the community simulator has no melee hunter rotation, so the raid build has no simulator DPS.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Counterattack after a parry: the base parry chance of a hunter in the beta (5% assumed, +2%/rank Deflection).", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack.", "Whether the pet holds melee-hunter threat as well as the fight lab assumes (it Growls every 5 s and loses the mob when your threat passes 130% of its own)."],
+      "sources": ["https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/optimizer/melee-dps-raid-dps.md", "hunter/leveling/optimizer/melee-dps-leveling-st.md"]
+    },
+    {
+      "id": "opt-bm-leveling-leveling-st",
+      "name": "Optimizer — Pet-first leveling (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-st`: score +27.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 3]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Scatter Shot", 1],
+          ["Barrage", 2],
+          ["Rapid Recuperation", 2],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "Removing it costs 4.0 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Rapid Recuperation", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Unleashed Fury", "why": "Removing it costs 2.5 points of score in this model."},
+        {"talent": "Sniper Shot", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 1.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/bm-leveling-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "15-19", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "20-24", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "25-27", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "28-29", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "30-31", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
+        {"levels": "32", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
+        {"levels": "33-34", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
+        {"levels": "35-38", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 4},
+        {"levels": "39", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "40", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
+        {"levels": "41-45", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "46-47", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "48-49", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "50", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
+        {"levels": "51-55", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "56", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "57", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 1},
+        {"levels": "58-60", "tree": "Beast Mastery", "talent": "Ferocity", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-bm-leveling-solo-60",
+      "name": "Optimizer — Pet-first leveling (solo-60)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `solo-60`: score +27.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Scatter Shot", 1],
+          ["Barrage", 3],
+          ["Rapid Recuperation", 2],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "Removing it costs 3.9 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Rapid Recuperation", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Unleashed Fury", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Sniper Shot", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 1.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/bm-leveling-solo-60.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "15-19", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "20-24", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "25-27", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "28-29", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "30-31", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
+        {"levels": "32", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
+        {"levels": "33-34", "tree": "Marksmanship", "talent": "Barrage", "points": 2},
+        {"levels": "35-38", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 4},
+        {"levels": "39", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "40", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
+        {"levels": "41-45", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "46-47", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "48-49", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "50", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
+        {"levels": "51-55", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "56", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "57", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 1},
+        {"levels": "58", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
+        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Ferocity", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-melee-dps-solo-60",
+      "name": "Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (solo-60)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `solo-60`: score +48.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 4],
+          ["Savage Strikes", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Predator's Edge", 5],
+          ["Counterattack", 1],
+          ["Strider Kick", 1],
+          ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Strider Kick", "why": "Removing it costs 7.2 points of score in this model."},
+        {"talent": "Expose Prey", "why": "Removing it costs 5.1 points of score in this model."},
+        {"talent": "Predator's Edge", "why": "Removing it costs 4.6 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Improved Tracking", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Resourcefulness", "why": "Removing it costs 1.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/melee-dps-solo-60.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
+        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
+        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
+        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
+        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
+        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
+        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "31-32", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "33", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
+        {"levels": "34-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "39", "tree": "Survival", "talent": "Resourcefulness", "points": 1},
+        {"levels": "40-44", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "45-49", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "50-54", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "55-56", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "57", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "58", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1},
+        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-mm-raid-leveling-st",
+      "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `leveling-st`: score +27.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Improved Revive Pet", 2],
+          ["Pathfinding", 2],
+          ["Bestial Swiftness", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Rapid Killing", 2],
+          ["Trueshot Aura", 1],
+          ["Scatter Shot", 1],
+          ["Rapid Recuperation", 2],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Careful Aim", "why": "Removing it costs 2.7 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Sniper Shot", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Improved Tracking", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 1.9 points of score in this model."},
+        {"talent": "Trueshot Aura", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Improved Stings", "why": "Removing it costs 1.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/mm-raid-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-11", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 2},
+        {"levels": "12-16", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "17", "tree": "Marksmanship", "talent": "Careful Aim", "points": 1},
+        {"levels": "18-20", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "21-24", "tree": "Marksmanship", "talent": "Careful Aim", "points": 4},
+        {"levels": "25-26", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "27", "tree": "Marksmanship", "talent": "Trueshot Aura", "points": 1},
+        {"levels": "28-31", "tree": "Marksmanship", "talent": "Efficiency", "points": 4},
+        {"levels": "32", "tree": "Marksmanship", "talent": "Scatter Shot", "points": 1},
+        {"levels": "33-34", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 2},
+        {"levels": "35", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
+        {"levels": "36", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
+        {"levels": "37-41", "tree": "Marksmanship", "talent": "Ranged Weapon Specialization", "points": 5},
+        {"levels": "42", "tree": "Marksmanship", "talent": "Sniper Shot", "points": 1},
+        {"levels": "43-44", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 2},
+        {"levels": "45", "tree": "Survival", "talent": "Improved Tracking", "points": 1},
+        {"levels": "46", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 1},
+        {"levels": "47-50", "tree": "Survival", "talent": "Improved Tracking", "points": 4},
+        {"levels": "51-52", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "53-54", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 2},
+        {"levels": "55", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
+        {"levels": "56", "tree": "Beast Mastery", "talent": "Bestial Swiftness", "points": 1},
+        {"levels": "57", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
+        {"levels": "58", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 1},
+        {"levels": "59", "tree": "Marksmanship", "talent": "Barrage", "points": 1},
+        {"levels": "60", "tree": "Survival", "talent": "Deflection", "points": 1}
+      ]
+    },
+    {
+      "id": "opt-melee-dps-raid-dps",
+      "name": "Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `raid-dps`: score +123.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Efficiency", 4],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 5],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Expose Prey", "why": "Removing it costs 29.5 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 19.2 points of score in this model."},
+        {"talent": "Lone Wolf", "why": "Removing it costs 19.1 points of score in this model."},
+        {"talent": "Resourcefulness", "why": "Removing it costs 15.6 points of score in this model."},
+        {"talent": "Predator's Edge", "why": "Removing it costs 11.9 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 11.6 points of score in this model."},
+        {"talent": "Lightning Reflexes", "why": "Removing it costs 10.3 points of score in this model."},
+        {"talent": "Strider Kick", "why": "Removing it costs 10.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/melee-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-bm-leveling-leveling-aoe",
+      "name": "Optimizer — Pet-first leveling (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +52.3% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Improved Revive Pet", 1],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 4]
+        ],
+        "Marksmanship": [],
+        "Survival": [
+          ["Deflection", 4],
+          ["Improved Tracking", 5],
+          ["Improved Wing Clip", 3],
+          ["Entrapment", 3],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Counterattack", 1],
+          ["Strider Kick", 1],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "Removing it costs 8.9 points of score in this model."},
+        {"talent": "Strider Kick", "why": "Removing it costs 6.8 points of score in this model."},
+        {"talent": "Unleashed Fury", "why": "Removing it costs 3.5 points of score in this model."},
+        {"talent": "Expose Prey", "why": "Removing it costs 2.5 points of score in this model."},
+        {"talent": "Lacerating Strikes", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Ferocity", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Surefooted", "why": "Removing it costs 2.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/bm-leveling-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
+        {"levels": "30-33", "tree": "Survival", "talent": "Deflection", "points": 4},
+        {"levels": "34", "tree": "Survival", "talent": "Improved Tracking", "points": 1},
+        {"levels": "35-37", "tree": "Survival", "talent": "Improved Wing Clip", "points": 3},
+        {"levels": "38-39", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
+        {"levels": "40-41", "tree": "Survival", "talent": "Surefooted", "points": 2},
+        {"levels": "42", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "43-44", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
+        {"levels": "45", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "46", "tree": "Survival", "talent": "Surefooted", "points": 1},
+        {"levels": "47-49", "tree": "Survival", "talent": "Entrapment", "points": 3},
+        {"levels": "50", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "51-52", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "53-54", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
+        {"levels": "55-59", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "60", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1}
+      ]
+    },
+    {
+      "id": "opt-melee-dps-leveling-st",
+      "name": "Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +42.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 4],
+          ["Savage Strikes", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Predator's Edge", 5],
+          ["Counterattack", 1],
+          ["Strider Kick", 1],
+          ["Resourcefulness", 2],
+          ["Expose Prey", 2],
+          ["Lightning Reflexes", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Strider Kick", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Predator's Edge", "why": "Removing it costs 4.3 points of score in this model."},
+        {"talent": "Resourcefulness", "why": "Removing it costs 3.9 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 3.5 points of score in this model."},
+        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.1 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Improved Tracking", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Surefooted", "why": "Removing it costs 1.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/melee-dps-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
+        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
+        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
+        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
+        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
+        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
+        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "31-32", "tree": "Survival", "talent": "Resourcefulness", "points": 2},
+        {"levels": "33-35", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 3},
+        {"levels": "36", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "37-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 2},
+        {"levels": "39-40", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "41-43", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "44-48", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "49-53", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "54-58", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2}
+      ]
+    },
+    {
+      "id": "opt-mm-raid-raid-dps",
+      "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +45.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 4]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Deadly Aspects", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 6.2 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 5.6 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 5.5 points of score in this model."},
+        {"talent": "Improved Stings", "why": "Removing it costs 4.9 points of score in this model."},
+        {"talent": "Trueshot Aura", "why": "Removing it costs 3.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/mm-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-mm-raid-parse",
+      "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +39.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Bestial Discipline", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Efficiency", 4],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Mortal Shots", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 5.9 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 5.8 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 5.2 points of score in this model."},
+        {"talent": "Improved Stings", "why": "Removing it costs 4.6 points of score in this model."},
+        {"talent": "Focused Fire", "why": "Removing it costs 2.3 points of score in this model."},
+        {"talent": "Unleashed Fury", "why": "Removing it costs 1.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/mm-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-mm-lonewolf-raid-raid-dps",
+      "name": "Optimizer — Marksmanship without a pet (Forever Lone Wolf) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +76.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Hawk Eye", 2],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Efficiency", 5],
+          ["Lone Wolf", 1],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Survivalist", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "Removing it costs 26.8 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 15.9 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 8.6 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 8.5 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 7.5 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 7.2 points of score in this model."},
+        {"talent": "Improved Stings", "why": "Removing it costs 7.2 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 6.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-mm-lonewolf-raid-parse",
+      "name": "Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +63.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Efficiency", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Lone Wolf", 1],
+          ["Rapid Killing", 2],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Rapid Recuperation", 2],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Survivalist", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "Removing it costs 23.6 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 6.7 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 6.4 points of score in this model."},
+        {"talent": "Improved Stings", "why": "Removing it costs 6.2 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 5.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/mm-lonewolf-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+"""Where every class file lives. One folder per scenario in each class (layout of 2026-09-27):
+
+    <class>/README.md                   class overview (hand-written) + the generated "Where to find things" index
+    <class>/spells/README.md            spell numbers (generated)
+    <class>/talents/forever/            proposed-builds.json (source of truth), talent-trees.md, baseline-audit.md,
+                                        README.md (hand-written adaptation notes)
+    <class>/talents/classic-baseline/   builds.json (source of truth) + the Classic Era reference pages, optimizer/, raidsim/
+    <class>/leveling/                   README.md (index), guide.md, rotation.md, respec-plan.md,
+                                        builds/ (leveling and solo builds), fightlab/, optimizer/
+    <class>/raid/                       README.md (index), rotation.md, gear.md, consumables.md,
+                                        builds/ (raid DPS, tank, healer builds), raidsim/, heallab/, optimizer/
+    <class>/pvp/                        README.md (index), builds/
+
+Every script that reads or writes a class file takes its path from here.
+"""
+import functools
+import json
+import os
+import pathlib
+
+HERE = pathlib.Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+
+SCENARIOS = ("leveling", "raid", "pvp")
+SCENARIO_TITLE = {"leveling": "Leveling and solo play", "raid": "Raids: training dummy, raid and parse", "pvp": "PvP"}
+CONTENT_SCENARIO = {"leveling": "leveling", "solo": "leveling", "raid": "raid", "dungeon": "raid", "pvp": "pvp"}
+PROFILE_SCENARIO = {"leveling-st": "leveling", "leveling-aoe": "leveling", "solo-60": "leveling",
+                    "raid-dps": "raid", "raid-dps-extwc": "raid", "parse": "raid", "raid-tank": "raid", "raid-heal": "raid",
+                    "pvp": "pvp"}
+
+
+def builds_json(game, cls):
+    """The source-of-truth build file of one class and game."""
+    return ROOT / cls / "talents" / ("forever/proposed-builds.json" if game == "forever" else "classic-baseline/builds.json")
+
+
+def talents_dir(game, cls):
+    return ROOT / cls / "talents" / ("forever" if game == "forever" else "classic-baseline")
+
+
+def scenario_dir(cls, scenario):
+    return ROOT / cls / scenario
+
+
+def scenario_of(build):
+    """leveling | raid | pvp for a build dict (its `content`)."""
+    return CONTENT_SCENARIO.get(build.get("content", ""), "raid")
+
+
+def scenario_of_profile(profile):
+    return PROFILE_SCENARIO.get(profile, "raid")
+
+
+def build_page(game, cls, build):
+    """The generated page of a build dict: Forever pages live in the scenario folder, Classic pages next to builds.json."""
+    if game == "forever":
+        return scenario_dir(cls, scenario_of(build)) / "builds" / f"{build['id']}.md"
+    return talents_dir(game, cls) / f"{build['id']}.md"
+
+
+@functools.lru_cache(maxsize=None)
+def _builds(game, cls):
+    p = builds_json(game, cls)
+    return {b["id"]: b for b in json.load(open(p, encoding="utf-8"))["builds"]} if p.exists() else {}
+
+
+def build_page_by_id(game, cls, bid):
+    """The page of a build id (None when the id is not in the build file)."""
+    b = _builds(game, cls).get(bid)
+    return build_page(game, cls, b) if b else None
+
+
+def fightlab_dir(cls):
+    return scenario_dir(cls, "leveling") / "fightlab"
+
+
+def raidsim_dir(cls, game="forever"):
+    return scenario_dir(cls, "raid") / "raidsim" if game == "forever" else talents_dir(game, cls) / "raidsim"
+
+
+def heallab_dir(cls):
+    return scenario_dir(cls, "raid") / "heallab"
+
+
+def optimizer_dir(cls, game, profile):
+    return scenario_dir(cls, scenario_of_profile(profile)) / "optimizer" if game == "forever" else talents_dir(game, cls) / "optimizer"
+
+
+def optimizer_report(cls, game, spec, profile):
+    return optimizer_dir(cls, game, profile) / f"{spec}-{profile}.md"
+
+
+def respec_plan(cls, game="forever"):
+    return scenario_dir(cls, "leveling") / "respec-plan.md" if game == "forever" else talents_dir(game, cls) / "respec-plan.md"
+
+
+def scenario_readme(cls, scenario):
+    return scenario_dir(cls, scenario) / "README.md"
+
+
+def leveling_guide(cls):
+    return scenario_dir(cls, "leveling") / "guide.md"
+
+
+def rotation_page(cls, scenario):
+    return scenario_dir(cls, scenario) / "rotation.md"
+
+
+def gear_page(cls):
+    return scenario_dir(cls, "raid") / "gear.md"
+
+
+def consumables_page(cls):
+    return scenario_dir(cls, "raid") / "consumables.md"
+
+
+def rel(src, dst):
+    """Markdown link from the file `src` to `dst` (posix, relative)."""
+    return pathlib.PurePath(os.path.relpath(dst, pathlib.Path(src).parent)).as_posix()
+
+
+def repo_rel(p):
+    """`p` relative to the project root (posix), for text that names a file."""
+    return pathlib.Path(p).resolve().relative_to(ROOT).as_posix()

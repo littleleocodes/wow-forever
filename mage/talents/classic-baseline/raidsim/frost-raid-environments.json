@@ -1,0 +1,67 @@
+{
+ "class": "mage",
+ "spec": "frost-raid",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/mage/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/mage/gear_sets/p1.bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "frost-arcane-power-raid",
+   "split": "31/0/20",
+   "ours": true,
+   "dps": {
+    "dummy": 461.0958764915408,
+    "max": 836.1746016189353,
+    "max60": 866.3130966814704,
+    "raid": 781.2660628217327
+   }
+  },
+  {
+   "label": "frost-winters-chill-raid",
+   "split": "17/0/34",
+   "ours": true,
+   "dps": {
+    "dummy": 441.6798015382314,
+    "max": 751.7759890177433,
+    "max60": 734.4175850224583,
+    "raid": 748.370249927435
+   }
+  },
+  {
+   "label": "sim preset: Frost DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 407.5396588991526,
+    "max": 751.5659845771645,
+    "max60": 733.9975761413008,
+    "raid": 700.4161954199549
+   }
+  }
+ ]
+}

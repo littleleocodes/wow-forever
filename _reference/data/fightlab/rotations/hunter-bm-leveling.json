@@ -1,0 +1,107 @@
+{
+ "veto": {
+  "Multi-Shot": {
+   "off": true
+  },
+  "Arcane Shot": {
+   "off": true
+  },
+  "Feign Death": {
+   "off": true
+  }
+ },
+ "drink_below": 0.15,
+ "class": "hunter",
+ "spec": "bm-leveling",
+ "build": "leveling-beast-mastery",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Multi-Shot",
+   "rule": [
+    "off",
+    "Multi-Shot",
+    true
+   ],
+   "gain_seed1": 0.025549971894465617,
+   "gain_seed2": 0.02545221940264264
+  },
+  {
+   "round": 2,
+   "change": "never cast Arcane Shot",
+   "rule": [
+    "off",
+    "Arcane Shot",
+    true
+   ],
+   "gain_seed1": 0.01961142983393771,
+   "gain_seed2": 0.019000002922843873
+  },
+  {
+   "round": 3,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.006292113919203035,
+   "gain_seed2": 0.008070083957910978
+  },
+  {
+   "round": 4,
+   "change": "never cast Feign Death",
+   "rule": [
+    "off",
+    "Feign Death",
+    true
+   ],
+   "gain_seed1": 0.007268323189918435,
+   "gain_seed2": 0.00514476695907673
+  }
+ ],
+ "weighted_before": 28.824407648024334,
+ "weighted_after": 27.102647926679214,
+ "per_level": {
+  "20": {
+   "before": 19.572078929084146,
+   "after": 17.791244173962447,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 25.478726037718534,
+   "after": 23.554844764906747,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 30.267553377446994,
+   "after": 28.100774235565968,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 30.21974445095622,
+   "after": 28.42998384820375,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 31.45648020409896,
+   "after": 30.208819951276094,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

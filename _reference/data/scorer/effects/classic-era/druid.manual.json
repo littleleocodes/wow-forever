@@ -1,0 +1,1169 @@
+{
+  "_doc": "Classic Era hand-entered Druid effects for calibration. Same tag conventions as the Forever file.",
+  "Improved Nature's Grasp": {
+    "note": "Nature's Grasp proc chance: leveling/PvP. PvP (2026-09-27): high, kite: +65% root chance (4/4 = 100%): Nature's Grasp roots on the first melee hit, before the Kick or stun; taken with Nature's Grasp in the Classic PvP builds.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.01,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Nature's Grasp": {
+    "note": "Roots on being hit: caster leveling. PvP (2026-09-27): high, kite: The next melee hit roots the attacker (35% per hit, 1 charge, 45 s, outdoors): the anti-melee root of the Classic resto PvP build and the usual 14/32/5 feral.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Improved Entangling Roots": {
+    "note": "Roots pushback: leveling/PvP. PvP (2026-09-27): high, kite: No pushback while casting Entangling Roots (3/3): the root lands with a melee on you; core of pvp-resto-feral-hybrid.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Natural Shapeshifter": {
+    "note": "-10%/rank shapeshift mana: powershifting (raid cat) and form-swapping while leveling. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 1.1% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.1%). Other modes unchanged. PvP (2026-09-27): high, escape: -30% shapeshift mana: shifting breaks roots, snares and Polymorph, and a Bear or Cat shift costs about half your base mana, so this buys more escapes per fight; core of the Classic PvP builds.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.026305,
+        "values": [0.026305, 0.05261, 0.078915, 0.10522, 0.131525],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.00263,
+        "modes": ["raid"],
+        "values": [0.00263, 0.005261, 0.007891, 0.010522, 0.013152],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Improved Thorns": {
+    "note": "+25%/rank Thorns: bear threat.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Thorns"],
+        "per_rank": 0.25
+      }
+    ]
+  },
+  "Nature's Reach": {
+    "note": "+10%/rank range: caster leveling. PvP (2026-09-27): medium, range: +20% range on Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane: root and dot from 36 yd, outside melee reach; casters only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Omen of Clarity": {
+    "note": "Clearcasting procs from melee: free Shreds/Mauls -> ~+6% cat/bear output. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 2.5% DPS in the simulator (scorer said 2.3% on the same scale); already within tolerance, raid effects split off unchanged (2.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["cat", "tank"],
+        "values": [0.06],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat", "tank"],
+        "values": [0.06],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat", "tank"],
+        "values": [0.024901],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Moonglow": {
+    "note": "-3%/rank mana on Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation (all the main spells). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 7.1% DPS in the simulator (scorer said 7.4% on the same scale); already within tolerance, raid effects split off unchanged (7.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "per_rank": 0.081598,
+        "values": [0.081598, 0.163197, 0.244795, 0.326394, 0.407992],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Nature's Grace": {
+    "note": "Spell crits cut the next cast by 0.5s - heals included. Caster: at ~15% crit with 3s Starfires ~+3% throughput. Healer: at 18% crit ~+3% (Healing Touch 3.0->2.5, Regrowth 2.0->1.5 on the cast after a crit); with Improved Regrowth 5/5 (~60% Regrowth crit) roughly half of all casts are hastened -> +5% more (the resto-regrowth-natures-grace build). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 5.6% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.05],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.05],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.062461],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.062461],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.104101],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Moonkin Form": {
+    "note": "+3% spell crit for the party (and you), +360% item armor. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 0.0% DPS in the simulator (scorer said 5.7% on the same scale); raid values scaled x0.00 to match (5.7%). Other modes unchanged. PvP (2026-09-27): medium, escape: The shift frees you from Polymorph, roots and snares and leaves you casting Balance spells; the +360% item armor is in the survival term; Balance only.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.0968],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Feral Aggression": {
+    "note": "+3%/rank Ferocious Bite and a stronger Demoralizing Roar.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Ferocious Bite"],
+        "per_rank": 0.03
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.003,
+        "modes": ["tank"]
+      }
+    ]
+  },
+  "Brutal Impact": {
+    "note": "Longer Bash/Pounce stuns: leveling/PvP. PvP (2026-09-27): high, stun: Bash stuns 5 s and Pounce 3 s (+1 s each): the feral's stun chain; Feral only (Bash needs Bear Form, Pounce needs Prowl).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Feral Instinct": {
+    "note": "+3%/rank bear threat. PvP (2026-09-27): medium, stealth: Prowl is harder to detect: more Pounce and Ravage openers land; the Bear threat part is PvE; Feral only.",
+    "effects": [
+      {
+        "channel": "threat_up",
+        "scope": ["tank"],
+        "per_rank": 0.03
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Thick Hide": {
+    "note": "+2%/rank item armor (multiplied by Bear Form): ~+1%/rank effective health.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Feline Swiftness": {
+    "note": "+2%/rank dodge in cat and +15%/rank outdoor speed. PvP (2026-09-27): high, move: +30% Cat Form speed outdoors (every battleground): flag carrying, reaching line of sight, catching casters; the dodge is in the survival term.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.006
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Feral Charge": {
+    "note": "Bear charge/interrupt: leveling and tanking utility. PvP (2026-09-27): high, stick: Bear charge that roots the target 4 s and interrupts its cast (15 s cooldown): the gap closer, root and interrupt of the 14/32/5 feral PvP build; Feral only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stick"
+      }
+    ]
+  },
+  "Sharpened Claws": {
+    "note": "+2%/rank crit in Cat/Bear form. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 5.7% DPS in the simulator (scorer said 5.7% on the same scale); already within tolerance, raid effects split off unchanged (5.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.025084,
+        "values": [0.025084, 0.050168, 0.075252, 0.100337, 0.125421],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Blood Frenzy": {
+    "note": "50%/rank chance for an extra combo point on cat crits: more finishers. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 1.4% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Predatory Strikes": {
+    "note": "+50%/rank of your level as attack power in forms (30 AP per rank at 60): ~+2.5%/rank at raid gear, ~+4%/rank while leveling. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.04,
+        "modes": ["leveling"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.025,
+        "modes": ["raid", "tank"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.025,
+        "modes": ["tank"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.009057,
+        "modes": ["raid"],
+        "values": [0.009057, 0.018115, 0.027172, 0.03623, 0.045287],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Primal Fury": {
+    "note": "50%/rank chance for 5 rage on bear crits: more Mauls.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Faerie Fire (Feral)": {
+    "note": "-175 armor in forms: ~+2% physical damage for you and the raid's melee. PvP (2026-09-27): medium, stealth: Castable in Cat or Bear Form: the target cannot stealth or turn invisible for 40 s (no Vanish, Prowl or Shadowmeld escape); the armor part is in the damage term; Feral only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Savage Fury": {
+    "note": "+10%/rank Claw, Rake, Maul and Swipe damage.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.1
+      }
+    ]
+  },
+  "Heart of the Wild": {
+    "note": "+4%/rank Intellect, +4%/rank Stamina in bear, +4%/rank Strength in cat. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 2.0% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged. PvP (2026-09-27): medium, defensive: +20% Stamina in Bear Form when a cat bears up under pressure; the survival term only counts it for the bear model; Feral only (25 points).",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "per_rank": 0.007707,
+        "values": [0.007707, 0.015414, 0.023121, 0.030828, 0.038534],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "per_rank": 0.007707,
+        "values": [0.007707, 0.015414, 0.023121, 0.030828, 0.038534],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "per_rank": 0.007707,
+        "values": [0.007707, 0.015414, 0.023121, 0.030828, 0.038534],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Leader of the Pack": {
+    "note": "+3% melee/ranged crit for you (in forms) and the party. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 2.8% DPS in the simulator (scorer said 5.3% on the same scale); raid values scaled x0.00 to match (5.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps", "profile:raid-tank"],
+        "values": [0.0811],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Furor": {
+    "note": "20%/rank chance for 40 energy on cat shift / 10 rage on bear shift: the powershifting engine of raid cat (with Wolfshead Helm) and opening rage for bears. Not fitted to the Classic simulator: its rotation conditions on this talent, so the removal run measures a broken rotation (raidsim/run.py flags it apl_dependent). PvP (2026-09-27): high, stun: 10 rage on a Bear shift = an instant Bash, 40 energy on a Cat shift after a snare-breaking shift; taken by both Classic PvP builds (14/0/37 and 14/32/5).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.03,
+        "modes": ["raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Mark of the Wild": {
+    "note": "+7%/rank Mark of the Wild stats (tiny for you, a raid buff). Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 0.0% DPS in the simulator (scorer said 1.1% on the same scale); raid values scaled x0.00 to match (1.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Improved Enrage": {
+    "note": "Enrage grants 10 rage instantly: opening bear threat. PvP (2026-09-27): low, stun: Enrage gives 10 rage at once: a Bash right after a Bear shift without Furor; the rest is Bear rage for PvE.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Nature's Focus": {
+    "note": "14%/rank pushback resistance on heals: ~+0.4%/rank raid healing. PvP (2026-09-27): high, resist: 70% chance to ignore pushback on Healing Touch, Regrowth and Tranquility: heals finish with a melee on you; core of pvp-resto-feral-hybrid.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Insect Swarm": {
+    "note": "Instant Nature DoT with a -2% hit debuff: ~+5% caster damage, tank/healer utility. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, balance-dps): removing it costs 0.0% DPS in the simulator (scorer said 4.7% on the same scale); raid values scaled x0.11 to match (0.5%). Other modes unchanged. PvP (2026-09-27): low, avoid: The target's hit chance -2%: a small cut to a warrior's, rogue's or hunter's damage on you (the damage part is counted).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.005542],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.001108],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.001108],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "avoid"
+      }
+    ]
+  },
+  "Subtlety": {
+    "note": "-4%/rank healing threat. PvP (2026-09-27): zero, defensive: Healing threat reduction: PvE aggro only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003
+      }
+    ]
+  },
+  "Improved Tranquility": {
+    "note": "Tranquility threat: raid utility. PvP (2026-09-27): zero, defensive: Tranquility threat only: PvE aggro.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.004
+      }
+    ]
+  },
+  "Nature's Swiftness": {
+    "note": "Instant Healing Touch (or Starfire) every 3 min. PvP (2026-09-27): high, burst: Next Nature spell instant: a max-rank Healing Touch no Kick can stop, or an instant Entangling Roots; the resto PvP cooldown.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.015]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Swiftmend": {
+    "note": "Instant heal every 15s that consumes a Rejuvenation/Regrowth: ~+15% throughput, mana-cheap. PvP (2026-09-27): medium, burst: Instant heal worth 12 s of Rejuvenation or 18 s of Regrowth (consumes the HoT): the emergency heal between interrupts; Restoration only.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.15]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Shred": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 2.6% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [3.187305, 6.374609],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Natural Weapons": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, feral-cat-dps): removing it costs 9.8% DPS in the simulator (scorer said 9.4% on the same scale); already within tolerance, raid effects split off unchanged (9.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Improved Moonfire": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 2.0% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.011025, 0.022049, 0.033074, 0.044099, 0.055124],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.011025, 0.022049, 0.033074, 0.044099, 0.055124],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Improved Starfire": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 15.0% DPS in the simulator (scorer said 13.7% on the same scale); already within tolerance, raid effects split off unchanged (13.7%). Other modes unchanged. PvP (2026-09-27): medium, stun: 15% chance on Starfire to stun the target for 3 s: a free peel or interrupt window; Balance only.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.122572, 0.245144, 0.367716, 0.490288, 0.612861],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Moonfury": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 5.0% DPS in the simulator (scorer said 4.8% on the same scale); already within tolerance, raid effects split off unchanged (4.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.011225, 0.022449, 0.033674, 0.044899, 0.056123],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Reflection": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 0.4% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.015218, 0.030437, 0.045655],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Vengeance": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, balance-dps): removing it costs 13.7% DPS in the simulator (scorer said 12.5% on the same scale); already within tolerance, raid effects split off unchanged (12.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Moonfire", "ability:Wrath"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  }
+}

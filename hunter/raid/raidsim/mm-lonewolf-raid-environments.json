@@ -1,0 +1,122 @@
+{
+ "class": "hunter",
+ "spec": "mm-lonewolf-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "mm-lone-wolf-raid",
+   "split": "5/41/5",
+   "ours": true,
+   "dps": {
+    "dummy": 424.01316848957066,
+    "dummy60": 451.8466314485846,
+    "raid": 761.6901023242222,
+    "max": 761.6901023242222,
+    "max60": 775.8176054743119
+   }
+  },
+  {
+   "label": "opt-mm-lonewolf-raid-raid-dps",
+   "split": "5/36/10",
+   "ours": true,
+   "dps": {
+    "dummy": 423.99411715806605,
+    "dummy60": 451.8350112371158,
+    "raid": 761.6556535798076,
+    "max": 761.6556535798076,
+    "max60": 775.8176054743119
+   }
+  },
+  {
+   "label": "opt-mm-lonewolf-raid-parse",
+   "split": "5/36/10",
+   "ours": true,
+   "dps": {
+    "dummy": 413.6630395909493,
+    "dummy60": 440.89701057713603,
+    "raid": 670.2251239369102,
+    "max": 687.3303947009695,
+    "max60": 712.0309248317018
+   }
+  },
+  {
+   "label": "sim preset: Marksmanship",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 338.9345302504509,
+    "dummy60": 360.4542563365965,
+    "raid": 618.8100846797672,
+    "max": 618.8100846797672,
+    "max60": 630.7234226700309
+   }
+  },
+  {
+   "label": "sim preset: Beast Mastery 35/16/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 299.1208081132955,
+    "dummy60": 315.51598804891006,
+    "raid": 482.99214554553237,
+    "max": 495.40457421370655,
+    "max60": 513.9574441917622
+   }
+  },
+  {
+   "label": "sim preset: Marksmanship 0/39/12",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 323.14710501363646,
+    "dummy60": 344.1141430814687,
+    "raid": 583.9706396607734,
+    "max": 583.9706396607734,
+    "max60": 591.1008633798332
+   }
+  },
+  {
+   "label": "sim preset: Survival 0/15/36",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 298.76573489462373,
+    "dummy60": 315.4317549343475,
+    "raid": 481.18508300100183,
+    "max": 492.85296694754487,
+    "max60": 510.1531635345898
+   }
+  }
+ ]
+}

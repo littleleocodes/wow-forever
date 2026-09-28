@@ -1,0 +1,162 @@
+{
+ "dummy": {
+  "class": "hunter",
+  "spec": "mm-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
+  "builds": [
+   {
+    "label": "opt-mm-raid-raid-dps",
+    "talents": "53200005050002-005355000150104"
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop 'mana % \u2265 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5 and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.022124546492048536,
+    "gain_seed2": 0.02272773559489516,
+    "candidates": 162,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop: if time to the next auto attack > 1s and time until Aimed Shot is ready \u2265 1 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.017271847471700408,
+    "gain_seed2": 0.01701336737619652,
+    "candidates": 158,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot",
+    "gain_seed1": 0.006754245291135774,
+    "gain_seed2": 0.006490949758503728,
+    "candidates": 121,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire",
+    "gain_seed1": 0.003514308559132484,
+    "gain_seed2": 0.0029413595832072925,
+    "candidates": 123,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.001989309860655819,
+    "gain_seed2": 0.002269176128165018,
+    "candidates": 126,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-mm-raid-raid-dps": {
+     "before": 396.56872049727366,
+     "after": 404.13835735424357,
+     "base": 396.56872049727366,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00034016439825000004,
+     "oom_after": 0
+    },
+    "sim preset: Marksmanship": {
+     "before": 360.1520860239894,
+     "after": 386.02114263681005,
+     "base": 360.1520860239894,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 11.324933031075554,
+     "oom_after": 10.627215097416803
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ },
+ "raid": {
+  "class": "hunter",
+  "spec": "mm-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
+  "builds": [
+   {
+    "label": "opt-mm-raid-raid-dps",
+    "talents": "53200005050002-005355000150104"
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.010456059497907066,
+    "gain_seed2": 0.010395308242548973,
+    "candidates": 162,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire",
+    "gain_seed1": 0.003084799519622372,
+    "gain_seed2": 0.0028561279973589038,
+    "candidates": 136,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5 and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.0022108986526054863,
+    "gain_seed2": 0.0022231869844990815,
+    "candidates": 133,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-mm-raid-raid-dps": {
+     "before": 647.3904028588241,
+     "after": 654.1763533587024,
+     "base": 647.3904028588241,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Marksmanship": {
+     "before": 681.0486888371892,
+     "after": 694.9771952017448,
+     "base": 681.0486888371892,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ }
+}

@@ -1,0 +1,199 @@
+{
+ "id": "cand-bm-r5",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Ferocity",
+    4
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Scatter Shot",
+    1
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "23-27",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "28",
+   "tree": "Marksmanship",
+   "talent": "Improved Arcane Shot",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Marksmanship",
+   "talent": "Scatter Shot",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 1
+  },
+  {
+   "levels": "32-33",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Marksmanship",
+   "talent": "Sniper Shot",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Beast Mastery",
+   "talent": "Summon Hawk",
+   "points": 1
+  },
+  {
+   "levels": "57-60",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 4
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 5)"
+}

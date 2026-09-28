@@ -1,0 +1,298 @@
+{
+ "dummy": {
+  "class": "priest",
+  "spec": "smite-dps",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
+  "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
+  "builds": [
+   {
+    "label": "smite-discipline-raid",
+    "talents": "515030031305001031-00505023002-3"
+   },
+   {
+    "label": "sim preset: Smite",
+    "talents": "515330031305001001-30505113002"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Smite",
+    "gain_seed1": 0.4306906545794189,
+    "gain_seed2": 0.42898161089386955,
+    "candidates": 163,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop: if mana % \u2265 20%: cast Smite",
+    "gain_seed1": 0.06751998016232896,
+    "gain_seed2": 0.06753521428603482,
+    "candidates": 175,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: strict sequence: cast Inner Focus; cast Devouring Plague",
+    "gain_seed1": 0.019631977757917474,
+    "gain_seed2": 0.019118343848043562,
+    "candidates": 148,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "insert in the middle: if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain",
+    "gain_seed1": 0.021343443470904777,
+    "gain_seed2": 0.021539823103570166,
+    "candidates": 156,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "only above 40% mana: cast Penance",
+    "gain_seed1": 0.024488203227926997,
+    "gain_seed2": 0.023787621872507936,
+    "candidates": 187,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "threshold 3s -> 2.5s: if time left on Holy Fire < 3s: cast Holy Fire",
+    "gain_seed1": 0.007618711766432584,
+    "gain_seed2": 0.007864244223973804,
+    "candidates": 197,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "move down below 'use every other cooldown when ready': strict sequence: cast Inner Focus; cast Devouring Plague",
+    "gain_seed1": 0.0067507163378168755,
+    "gain_seed2": 0.006871214990972874,
+    "candidates": 200,
+    "pass": 1
+   },
+   {
+    "round": 8,
+    "change": "threshold 40% -> 50%: if mana % \u2265 40%: cast Penance",
+    "gain_seed1": 0.0022580367453870487,
+    "gain_seed2": 0.002227483198420588,
+    "candidates": 200,
+    "pass": 1
+   },
+   {
+    "round": 9,
+    "change": "threshold 2.5s -> 1.25s: if time left on Holy Fire < 2.5s: cast Holy Fire",
+    "gain_seed1": 0.00276799496544311,
+    "gain_seed2": 0.0028505966871954502,
+    "candidates": 200,
+    "pass": 1
+   },
+   {
+    "round": 10,
+    "change": "drop the condition: if mana % \u2265 50%: cast Penance",
+    "gain_seed1": 0.03153796733780978,
+    "gain_seed2": 0.03243696763366066,
+    "candidates": 227,
+    "pass": 2
+   },
+   {
+    "round": 11,
+    "change": "threshold 10 -> 5: if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain",
+    "gain_seed1": 0.0016543123827044148,
+    "gain_seed2": 0.0017001293623493119,
+    "candidates": 217,
+    "pass": 3
+   }
+  ],
+  "final": {
+   "dummy": {
+    "smite-discipline-raid": {
+     "before": 223.32433459316283,
+     "after": 315.11441811171454,
+     "base": 223.32433459316283,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.4260484498255597,
+     "oom_after": 2.5043456998200617
+    },
+    "sim preset: Smite": {
+     "before": 222.374027180493,
+     "after": 313.16854308053894,
+     "base": 222.374027180493,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 3.207454099774054,
+     "oom_after": 3.2723621997692565
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ },
+ "raid": {
+  "class": "priest",
+  "spec": "smite-dps",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/priest/dps/apls/smite.apl.json",
+  "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
+  "builds": [
+   {
+    "label": "smite-discipline-raid",
+    "talents": "515030031305001031-00505023002-3"
+   },
+   {
+    "label": "sim preset: Smite",
+    "talents": "515330031305001001-30505113002"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "rank 4 below 50% mana, above: if mana % \u2265 20%: cast Smite",
+    "gain_seed1": 0.08616111262899806,
+    "gain_seed2": 0.08658698057272107,
+    "candidates": 163,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert at the top: if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain",
+    "gain_seed1": 0.02067907080838216,
+    "gain_seed2": 0.020519917161117895,
+    "candidates": 197,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "always rank 2 instead of rank 4: if mana % \u2265 20% and mana % < 50%: cast Smite",
+    "gain_seed1": 0.01060736172627097,
+    "gain_seed2": 0.011590420186937678,
+    "candidates": 228,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "insert at the top: strict sequence: cast Inner Focus; cast Devouring Plague",
+    "gain_seed1": 0.0116609964971095,
+    "gain_seed2": 0.009953942657749737,
+    "candidates": 224,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "move down below 'use every other cooldown when ready': if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain",
+    "gain_seed1": 0.009732219813057608,
+    "gain_seed2": 0.009892057913970298,
+    "candidates": 232,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "threshold 3s -> 1.5s: if time left on Holy Fire < 3s: cast Holy Fire",
+    "gain_seed1": 0.005317229697072046,
+    "gain_seed2": 0.005191138057290656,
+    "candidates": 232,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "only with 20s or more of the fight left: if mana % \u2265 20% and mana % < 50%: cast Smite",
+    "gain_seed1": 0.00652801470623432,
+    "gain_seed2": 0.0064700575047544895,
+    "candidates": 235,
+    "pass": 1
+   },
+   {
+    "round": 8,
+    "change": "insert before the filler: cast Mind Blast",
+    "gain_seed1": 0.0025332370365207524,
+    "gain_seed2": 0.0022136692077481257,
+    "candidates": 245,
+    "pass": 1
+   },
+   {
+    "round": 9,
+    "change": "move down below 'cast Mind Blast': if mana % \u2265 20%: cast Smite",
+    "gain_seed1": 0.00616084294168151,
+    "gain_seed2": 0.006105938681014722,
+    "candidates": 256,
+    "pass": 1
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: cast Smite",
+    "gain_seed1": 0.007863445502522826,
+    "gain_seed2": 0.008295039030221885,
+    "candidates": 256,
+    "pass": 1
+   },
+   {
+    "round": 11,
+    "change": "move down below 'use every other cooldown when ready': strict sequence: cast Inner Focus; cast Devouring Plague",
+    "gain_seed1": 0.003725632249553801,
+    "gain_seed2": 0.004157877407809707,
+    "candidates": 268,
+    "pass": 1
+   },
+   {
+    "round": 12,
+    "change": "threshold 20s -> 30s: if mana % \u2265 20% and mana % < 50% and time left in the fight \u2265 20s: cast Smite",
+    "gain_seed1": 0.0031439868221911915,
+    "gain_seed2": 0.0033635740288029403,
+    "candidates": 268,
+    "pass": 1
+   },
+   {
+    "round": 13,
+    "change": "insert in the middle: cast Shadow Word: Death",
+    "gain_seed1": 0.002157835023527177,
+    "gain_seed2": 0.003145206506436793,
+    "candidates": 295,
+    "pass": 2
+   },
+   {
+    "round": 14,
+    "change": "always rank 3 instead of rank 4: cast Shadow Word: Death",
+    "gain_seed1": 0.004393901689685675,
+    "gain_seed2": 0.005168823836389169,
+    "candidates": 305,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "smite-discipline-raid": {
+     "before": 440.8098836711682,
+     "after": 476.69967854560025,
+     "base": 440.8098836711682,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.033118799983001,
+     "oom_after": 2.033118799983001
+    },
+    "sim preset: Smite": {
+     "before": 439.3617013643111,
+     "after": 471.2115289704887,
+     "base": 439.3617013643111,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.3997440499782554,
+     "oom_after": 2.3997440499782554
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

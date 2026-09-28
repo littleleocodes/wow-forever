@@ -1,0 +1,102 @@
+{
+ "id": "cand-frost-raid-from-arcane-power",
+ "allocation": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Geometry",
+    2
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Improved Counterspell",
+    2
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ],
+   [
+    "Arcane Impact",
+    3
+   ]
+  ],
+  "Fire": [],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for frost-raid from frost-arcane-power-raid in the dummy setting: 548.1 -> 557.9 DPS on a third seed.",
+ "search": {
+  "start": "frost-arcane-power-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Arcane Meditation -> Arcane Impact",
+    "gain_seed1": 0.0119092094521287,
+    "gain_seed2": 0.012431550415693993,
+    "split": "31/0/20"
+   },
+   {
+    "round": 2,
+    "move": "2 points Frost Channeling -> Arcane Focus",
+    "gain_seed1": 0.006154511099785154,
+    "gain_seed2": 0.005351162016239641,
+    "split": "33/0/18"
+   }
+  ],
+  "dps_start": 548.0966366086882,
+  "dps_end": 557.8797899450503
+ }
+}

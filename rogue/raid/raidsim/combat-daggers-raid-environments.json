@@ -1,0 +1,158 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+  "gear_max": "ui/specs/rogue/dps/gear_sets/combat_backstab_p2_bis.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "combat-daggers-raid",
+   "split": "16/33/2",
+   "ours": true,
+   "dps": {
+    "dummy": 410.0616715034447,
+    "dummy60": 476.3849949717814,
+    "raid": 732.1016365112632,
+    "max": 740.1876112485875,
+    "max60": 809.9098721829866
+   }
+  },
+  {
+   "label": "opt-combat-daggers-raid-raid-dps",
+   "split": "16/33/2",
+   "ours": true,
+   "dps": {
+    "dummy": 413.7201031531562,
+    "dummy60": 480.1181382075423,
+    "raid": 741.9560524369844,
+    "max": 750.02198890648,
+    "max60": 826.6794252823055
+   }
+  },
+  {
+   "label": "opt-combat-daggers-raid-parse",
+   "split": "17/32/2",
+   "ours": true,
+   "dps": {
+    "dummy": 409.3893604612556,
+    "dummy60": 475.1562858236014,
+    "raid": 730.775573982698,
+    "max": 738.8132274909993,
+    "max60": 809.0161616990761
+   }
+  },
+  {
+   "label": "sim preset: Backstab",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 382.14642777794484,
+    "dummy60": 446.4442870154538,
+    "raid": 690.6611208834219,
+    "max": 698.554973177121,
+    "max60": 765.7126415488939
+   }
+  },
+  {
+   "label": "sim preset: Sinister Strike",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 343.5565719729848,
+    "dummy60": 406.1811318900309,
+    "raid": 644.9793092779923,
+    "max": 653.1019187700138,
+    "max60": 712.6715174626728
+   }
+  },
+  {
+   "label": "sim preset: Improved Expose Armor (SS)",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 354.9796203206063,
+    "dummy60": 419.3679442186935,
+    "raid": 633.829710746069,
+    "max": 641.4845979946078,
+    "max60": 694.6199677094841
+   }
+  },
+  {
+   "label": "sim preset: Mutilate",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 375.17068510768263,
+    "dummy60": 443.0527427477489,
+    "raid": 658.4786727523685,
+    "max": 667.2738418426268,
+    "max60": 699.8147412863373
+   }
+  },
+  {
+   "label": "sim preset: Combat Dual-Wield 15/33/3",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 404.76475537121723,
+    "dummy60": 470.6152407410607,
+    "raid": 720.8992133117536,
+    "max": 728.9342870138564,
+    "max60": 796.6751198546158
+   }
+  },
+  {
+   "label": "sim preset: Assassination Mutilate 31/20/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 363.3140267910748,
+    "dummy60": 430.56167472396834,
+    "raid": 639.5036619658607,
+    "max": 647.7247644518472,
+    "max60": 678.0227617779641
+   }
+  },
+  {
+   "label": "sim preset: Subtlety Hemo 15/0/36",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 261.14589253731975,
+    "dummy60": 314.7583250875477,
+    "raid": 505.35574472712835,
+    "max": 513.669287124223,
+    "max60": 531.080725156404
+   }
+  }
+ ]
+}

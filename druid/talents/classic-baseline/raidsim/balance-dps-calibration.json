@@ -1,0 +1,197 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "balance-moonkin-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "balance_druid",
+  "gear": "ui/balance_druid/gear_sets/p1.bis.gear.json",
+  "apl": "ui/balance_druid/apls/balance.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own moonkin_aura (its talent is under test)",
+  "consumables": {
+   "defaultPotion": "MajorManaPotion",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Improved Starfire",
+   "sim": 0.15022361319830516,
+   "ev_before": 0.13732451764591164,
+   "ev_after": 0.1373253921840981,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Vengeance",
+   "sim": 0.1371808631103505,
+   "ev_before": 0.12493761789094268,
+   "ev_after": 0.1249384048786066,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Moonglow",
+   "sim": 0.07053027433481109,
+   "ev_before": 0.07357830921459664,
+   "ev_after": 0.07357875152756313,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Nature's Grace",
+   "sim": 0.055722073741402624,
+   "ev_before": 0.05331241937931305,
+   "ev_after": 0.05331273381489552,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Moonfury",
+   "sim": 0.05012163339857941,
+   "ev_before": 0.04794462922819874,
+   "ev_after": 0.04794491056359547,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Moonfire",
+   "sim": 0.020068812638802565,
+   "ev_before": 0.018729257549102905,
+   "ev_after": 0.018729364387003733,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Reflection",
+   "sim": 0.003997944433343548,
+   "ev_before": 0.005139111534243858,
+   "ev_after": 0.005139140458366086,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Wrath",
+   "sim": 0.002897007264687573,
+   "ev_before": 0.0018755533616067871,
+   "ev_after": 0.001875563883385624,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Mark of the Wild",
+   "sim": 0.0,
+   "ev_before": 0.011331414190524528,
+   "ev_after": 0.01132575131486712,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Improved Thorns",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Insect Swarm",
+   "sim": 0.0,
+   "ev_before": 0.004767681277156274,
+   "ev_after": 0.004767708100866184,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Moonkin Form",
+   "sim": 0.0,
+   "ev_before": 0.057308718730424035,
+   "ev_after": 0.05730905801851151,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Nature's Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Nature's Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  },
+  {
+   "talent": "Subtlety",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "balance-moonkin-raid"
+   ]
+  }
+ ]
+}

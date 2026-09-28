@@ -1,0 +1,155 @@
+{
+  "class": "Priest",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Priests raid as Holy healers (Discipline for Divine Spirit, Inner Focus and Mental Agility); Discipline/Holy with Power Infusion is the late-game alternative; Shadow is for PvP and leveling. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "holy-raid-healer",
+      "name": "Holy — Raid Healer (21/30/0)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The standard Classic raid priest: Spiritual Healing (+10% healing), Spiritual Guidance (Spirit to healing), Holy Specialization + Inspiration for tank mitigation, Divine Fury for Greater Heal cast time, plus Divine Spirit, Inner Focus, Meditation and Mental Agility from Discipline.",
+      "allocation": {
+        "Discipline": [["Unbreakable Will", 5], ["Improved Power Word: Fortitude", 2], ["Silent Resolve", 4], ["Inner Focus", 1], ["Meditation", 3], ["Mental Agility", 5], ["Divine Spirit", 1]],
+        "Holy": [["Healing Focus", 2], ["Improved Renew", 2], ["Holy Specialization", 5], ["Divine Fury", 5], ["Inspiration", 3], ["Improved Healing", 3], ["Spiritual Guidance", 5], ["Spiritual Healing", 5]],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Spiritual Healing", "why": "+10% to all healing."},
+        {"talent": "Spiritual Guidance", "why": "25% of Spirit becomes healing power — Spirit is your best stat."},
+        {"talent": "Divine Spirit", "why": "+40 Spirit raid buff (one priest per raid must have it)."},
+        {"talent": "Inspiration", "why": "+25% armor on the target after a crit heal — tank mitigation."},
+        {"talent": "Holy Specialization", "why": "+5% Holy crit feeds Inspiration."},
+        {"talent": "Divine Fury", "why": "-0.5s on Greater Heal/Heal/Smite/Holy Fire."},
+        {"talent": "Improved Healing", "why": "-15% mana on Heal/Greater Heal."},
+        {"talent": "Meditation", "why": "+15% mana regen while casting."},
+        {"talent": "Inner Focus", "why": "Free +25% crit spell every 3 minutes."},
+        {"talent": "Healing Focus", "why": "70% pushback resistance — mandatory on any fight with raid damage."},
+        {"talent": "Mental Agility", "why": "-10% mana on instants (Renew, Shield, Fade)."},
+        {"talent": "Improved Power Word: Fortitude", "why": "+30% Fortitude for the raid."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Unbreakable Will", "alternatives": ["Wand Specialization"], "why": "Tier-1 Discipline filler; Unbreakable Will helps if you get feared/stunned."},
+        {"points": 4, "default": "Silent Resolve", "alternatives": ["Improved Power Word: Shield 3 + Silent Resolve 1", "Martyrdom"], "why": "Threat reduction is nice; Improved Shield is better if you shield a lot."},
+        {"points": 2, "default": "Improved Renew", "alternatives": ["Spirit of Redemption 1 + Improved Renew 1", "Improved Prayer of Healing (by dropping Healing Focus)"], "why": "Improved Renew 3/3 vs. Spirit of Redemption is personal preference."}
+      ],
+      "notes": [
+        "Greater Heal on tanks, Flash Heal/Renew on the raid; use Inner Focus with Greater Heal or Prayer of Healing.",
+        "Improved Prayer of Healing (2) is worth taking on heavy raid-damage fights by dropping Healing Focus."
+      ],
+      "sources": [
+        "https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents",
+        "https://www.wowhead.com/classic/guide/classes/priest/healer-talent-builds-pve"
+      ]
+    },
+    {
+      "id": "disc-power-infusion-healer",
+      "name": "Discipline / Holy — Power Infusion (raid healer)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Deep Discipline for Power Infusion (+20% spell damage for a mage/warlock every 3 minutes) and Mental Strength, keeping Divine Spirit and Inner Focus, with Holy taken to Inspiration and Improved Healing. Less raw healing than 21/30/0; taken once the raid is over-geared on healing and wants DPS.",
+      "allocation": {
+        "Discipline": [["Unbreakable Will", 5], ["Improved Power Word: Fortitude", 2], ["Silent Resolve", 4], ["Inner Focus", 1], ["Meditation", 3], ["Mental Agility", 5], ["Mental Strength", 5], ["Divine Spirit", 1], ["Force of Will", 4], ["Power Infusion", 1]],
+        "Holy": [["Healing Focus", 2], ["Improved Renew", 3], ["Holy Specialization", 5], ["Divine Fury", 5], ["Inspiration", 3], ["Improved Healing", 2]],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Power Infusion", "why": "+20% spell damage/healing on a target for 15s — given to the top caster."},
+        {"talent": "Divine Spirit", "why": "Raid Spirit buff."},
+        {"talent": "Mental Strength", "why": "+10% Intellect."},
+        {"talent": "Inner Focus", "why": "Free crit spell."},
+        {"talent": "Meditation", "why": "Mana regen while casting."},
+        {"talent": "Inspiration", "why": "Tank mitigation on crit heals."},
+        {"talent": "Divine Fury", "why": "Greater Heal cast time."}
+      ],
+      "flex": [
+        {"points": 4, "default": "Force of Will", "alternatives": ["Improved Mana Burn (PvP)", "Improved Inner Fire"], "why": "+4% spell damage/crit is a filler for a healer; needed to reach 30 points."},
+        {"points": 2, "default": "Improved Healing", "alternatives": ["Spell Warding", "Holy Reach"], "why": "Last two Holy points."}
+      ],
+      "notes": [
+        "Not recommended before the raid has healing to spare; you lose Spiritual Healing, Spiritual Guidance and Improved Healing 3/3."
+      ],
+      "sources": ["https://www.icy-veins.com/wow-classic/priest-healer-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-shadow",
+      "name": "Shadow (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "Shadowform, Silence, Vampiric Embrace, Improved Psychic Scream and Blackout stuns, with Unbreakable Will and Improved Power Word: Shield from Discipline. The standard Classic PvP priest.",
+      "allocation": {
+        "Discipline": [["Unbreakable Will", 5], ["Improved Power Word: Shield", 2]],
+        "Holy": [],
+        "Shadow": [["Spirit Tap", 5], ["Blackout", 5], ["Improved Shadow Word: Pain", 2], ["Shadow Focus", 5], ["Improved Psychic Scream", 2], ["Improved Mind Blast", 5], ["Mind Flay", 1], ["Improved Fade", 1], ["Shadow Reach", 3], ["Shadow Weaving", 5], ["Silence", 1], ["Vampiric Embrace", 1], ["Improved Vampiric Embrace", 2], ["Darkness", 5], ["Shadowform", 1]]
+      },
+      "core": [
+        {"talent": "Shadowform", "why": "+15% Shadow damage, -15% physical damage taken."},
+        {"talent": "Silence", "why": "5s silence — the anti-caster tool."},
+        {"talent": "Blackout", "why": "10% stun chance on Shadow damage (every DoT tick rolls)."},
+        {"talent": "Vampiric Embrace", "why": "Self-healing from Shadow damage."},
+        {"talent": "Improved Psychic Scream", "why": "-4s Psychic Scream cooldown; prerequisite for Silence."},
+        {"talent": "Shadow Weaving", "why": "Stacking +15% Shadow damage taken debuff."},
+        {"talent": "Darkness", "why": "+10% Shadow damage."},
+        {"talent": "Improved Mind Blast", "why": "-2.5s Mind Blast cooldown."},
+        {"talent": "Unbreakable Will", "why": "+15% resist to stun/fear/silence."},
+        {"talent": "Spirit Tap", "why": "Mana after kills — long battleground fights."}
+      ],
+      "flex": [
+        {"points": 3, "default": "Improved Vampiric Embrace 2 + Improved Fade 1", "alternatives": ["Shadow Affinity", "Improved Fade 2"], "why": "Last points in Shadow."},
+        {"points": 2, "default": "Improved Power Word: Shield", "alternatives": ["Martyrdom", "Wand Specialization"], "why": "Bigger shields."}
+      ],
+      "notes": [
+        "Shadow priests are not used as raid DPS in Classic Era (mana and the 16-debuff limit); this build is PvP and world content only."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/priest/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-shadow",
+      "name": "Leveling — Shadow",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Spirit Tap for endless mana, Mind Flay at 22, Shadow Weaving, Silence and Vampiric Embrace, Shadowform at 40. Ends in the 7/0/44 PvP build; respec to Holy for raiding.",
+      "allocation": {
+        "Discipline": [["Unbreakable Will", 5], ["Improved Power Word: Shield", 2]],
+        "Holy": [],
+        "Shadow": [["Spirit Tap", 5], ["Blackout", 5], ["Improved Shadow Word: Pain", 2], ["Shadow Focus", 5], ["Improved Psychic Scream", 2], ["Improved Mind Blast", 5], ["Mind Flay", 1], ["Improved Fade", 1], ["Shadow Reach", 3], ["Shadow Weaving", 5], ["Silence", 1], ["Vampiric Embrace", 1], ["Improved Vampiric Embrace", 2], ["Darkness", 5], ["Shadowform", 1]]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Shadow", "talent": "Spirit Tap", "points": 5},
+        {"levels": "15-16", "tree": "Shadow", "talent": "Improved Shadow Word: Pain", "points": 2},
+        {"levels": "17-21", "tree": "Shadow", "talent": "Shadow Focus", "points": 5},
+        {"levels": "22", "tree": "Shadow", "talent": "Mind Flay", "points": 1},
+        {"levels": "23-27", "tree": "Shadow", "talent": "Improved Mind Blast", "points": 5},
+        {"levels": "28-29", "tree": "Shadow", "talent": "Improved Psychic Scream", "points": 2},
+        {"levels": "30-34", "tree": "Shadow", "talent": "Shadow Weaving", "points": 5},
+        {"levels": "35-37", "tree": "Shadow", "talent": "Shadow Reach", "points": 3},
+        {"levels": "38", "tree": "Shadow", "talent": "Silence", "points": 1},
+        {"levels": "39", "tree": "Shadow", "talent": "Vampiric Embrace", "points": 1},
+        {"levels": "40", "tree": "Shadow", "talent": "Shadowform", "points": 1},
+        {"levels": "41-45", "tree": "Shadow", "talent": "Darkness", "points": 5},
+        {"levels": "46-50", "tree": "Shadow", "talent": "Blackout", "points": 5},
+        {"levels": "51-52", "tree": "Shadow", "talent": "Improved Vampiric Embrace", "points": 2},
+        {"levels": "53", "tree": "Shadow", "talent": "Improved Fade", "points": 1},
+        {"levels": "54-58", "tree": "Discipline", "talent": "Unbreakable Will", "points": 5},
+        {"levels": "59-60", "tree": "Discipline", "talent": "Improved Power Word: Shield", "points": 2}
+      ],
+      "core": [
+        {"talent": "Spirit Tap", "why": "100% Spirit regen after a kill — you barely drink."},
+        {"talent": "Mind Flay", "why": "Channelled snare/damage at 22."},
+        {"talent": "Shadowform", "why": "+15% damage / -15% physical taken at 40."},
+        {"talent": "Vampiric Embrace", "why": "Self-heal while you DoT."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Spirit Tap first", "alternatives": ["Wand Specialization first (levels 10-14) then respec"], "why": "Wanding is the actual damage source before 20; some prefer Wand Spec first."}
+      ],
+      "notes": [
+        "Shadow Word: Pain -> Mind Blast -> wand until 22; then SW:P -> Mind Blast -> Mind Flay."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/priest/leveling-talents"]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "bm-mm-raid",
+   "split": "22/29/0",
+   "ours": true,
+   "dps": {
+    "dummy": 399.53552362909096,
+    "dummy60": 432.8892807295333,
+    "raid": 648.7757497957109,
+    "max": 648.7757497957109,
+    "max60": 669.8118793636849
+   }
+  },
+  {
+   "label": "bm-mm-full-buffs-raid",
+   "split": "20/31/0",
+   "ours": true,
+   "dps": {
+    "dummy": 383.33744874265153,
+    "dummy60": 414.76609972804556,
+    "raid": 701.8047899094613,
+    "max": 701.8047899094613,
+    "max60": 718.4166510603291
+   }
+  },
+  {
+   "label": "opt-mm-raid-raid-dps",
+   "split": "19/32/0",
+   "ours": true,
+   "dps": {
+    "dummy": 404.0186521249162,
+    "dummy60": 437.8054864824314,
+    "raid": 660.1385233186259,
+    "max": 660.1385233186259,
+    "max60": 681.7061448340852
+   }
+  },
+  {
+   "label": "opt-mm-raid-parse",
+   "split": "21/30/0",
+   "ours": true,
+   "dps": {
+    "dummy": 400.62110770931747,
+    "dummy60": 434.0614994006989,
+    "raid": 649.9794285005449,
+    "max": 664.5541237350045,
+    "max60": 686.1363365791359
+   }
+  },
+  {
+   "label": "sim preset: Marksmanship",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 386.0207533526511,
+    "dummy60": 418.0688604346258,
+    "raid": 694.9814305981109,
+    "max": 694.9814305981109,
+    "max60": 711.4366108795658
+   }
+  },
+  {
+   "label": "sim preset: Beast Mastery 35/16/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 363.87796038156546,
+    "dummy60": 395.9853939550153,
+    "raid": 590.795517902376,
+    "max": 603.4783469660076,
+    "max60": 629.7785230688012
+   }
+  },
+  {
+   "label": "sim preset: Marksmanship 0/39/12",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 352.95350962978773,
+    "dummy60": 382.14635707616407,
+    "raid": 631.9486020838752,
+    "max": 631.9486020838752,
+    "max60": 649.6069577674843
+   }
+  },
+  {
+   "label": "sim preset: Survival 0/15/36",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 328.7860922298467,
+    "dummy60": 353.5793715501896,
+    "raid": 537.900960121014,
+    "max": 549.5715578162905,
+    "max60": 569.2104152868316
+   }
+  }
+ ]
+}

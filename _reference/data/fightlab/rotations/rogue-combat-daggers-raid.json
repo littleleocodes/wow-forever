@@ -1,0 +1,107 @@
+{
+ "veto": {
+  "Cheap Shot": {
+   "off": true
+  },
+  "Slice and Dice": {
+   "off": true
+  },
+  "Kidney Shot": {
+   "off": true
+  }
+ },
+ "eat_below": 0.4,
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "build": "opt-combat-daggers-raid-leveling-st",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Cheap Shot",
+   "rule": [
+    "off",
+    "Cheap Shot",
+    true
+   ],
+   "gain_seed1": 0.0957319646362681,
+   "gain_seed2": 0.09890851770239073
+  },
+  {
+   "round": 2,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.040148994099555746,
+   "gain_seed2": 0.04386881563041489
+  },
+  {
+   "round": 3,
+   "change": "never cast Slice and Dice",
+   "rule": [
+    "off",
+    "Slice and Dice",
+    true
+   ],
+   "gain_seed1": 0.0284481673689575,
+   "gain_seed2": 0.026853546276410567
+  },
+  {
+   "round": 4,
+   "change": "never cast Kidney Shot",
+   "rule": [
+    "off",
+    "Kidney Shot",
+    true
+   ],
+   "gain_seed1": 0.011578359724358722,
+   "gain_seed2": 0.010055895990148334
+  }
+ ],
+ "weighted_before": 35.495882017754774,
+ "weighted_after": 29.413066666807755,
+ "per_level": {
+  "20": {
+   "before": 22.995409187880075,
+   "after": 21.752433333197366,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 30.00687222324936,
+   "after": 24.279066666611925,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 36.88923958624204,
+   "after": 29.332033333467233,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 38.37408530556536,
+   "after": 31.751666666893918,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 39.07980340613206,
+   "after": 32.63880000026435,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

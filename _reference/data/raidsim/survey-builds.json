@@ -1,0 +1,188 @@
+{
+ "hunter": [
+  {
+   "id": "mm-hawk-raid",
+   "spec": "bm-raid",
+   "glob": "cand-bm-raid-from-bm-mm",
+   "after": "mm-lone-wolf-raid",
+   "name": "Marksmanship — Summon Hawk (raid)",
+   "summary": "Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Mastery talent: every 6 seconds (a cooldown shared with Arcane Shot) a hawk dive-bombs the target and keeps attacking for 18 seconds, two hawks at a time, and Unleashed Fury and Ferocity buff hawks as they buff pets. Beast Mastery for the hawk, Unleashed Fury, Ferocity, Focused Fire and Deadly Aspects; Marksmanship for Lethal Attacks, Efficiency, Careful Aim, Mortal Shots, Ranged Weapon Specialization, Improved Stings and Trueshot Aura. Found by the simulator talent search from bm-mm-raid under the Beast Mastery entry's rotation (Summon Hawk on cooldown, Serpent Sting kept up, the cooldowns, Auto Shot between): its first move, one point into Summon Hawk, was worth +47% on the training dummy (2026-09-28). A deeper Beast Mastery version (31/20/0, from the simulator's Beast Mastery preset) lands 0.3% lower on the dummy and 1.6% lower in a raid. Its lead rests on the simulator's guess at the hawks' follow-up attacks (open questions).",
+   "why": {
+    "Summon Hawk": "The build's engine: a dive bomb every 6 s and hawks that keep attacking for 18 s.",
+    "Unleashed Fury": "+15% pet and hawk damage.",
+    "Ferocity": "+10% pet and hawk crit.",
+    "Focused Fire": "+2% to all damage while the pet is out.",
+    "Lethal Attacks": "+5% crit on every attack.",
+    "Mortal Shots": "+30% ranged crit damage.",
+    "Careful Aim": "Attack power from Intellect.",
+    "Efficiency": "-15% mana on shots and stings: the training dummy runs a hunter dry.",
+    "Improved Stings": "+20% Serpent Sting damage, and the rotation keeps Serpent Sting up.",
+    "Deadly Aspects": "Auto Shot procs +30% ranged attack speed under Aspect of the Hawk.",
+    "Ranged Weapon Specialization": "+ranged damage.",
+    "Trueshot Aura": "+30 ranged attack power for the hunter (and the party)."
+   },
+   "open_questions": [
+    "How hard do the hawks hit after the dive bomb? The client does not describe the hawk's swings; the simulator (and the fight lab, which follows it) assumes the dive bomb's base damage (108 at rank 4) every 3 s for 18 s, two hawks at once. Those follow-up attacks are 22% of this build's damage on the training dummy and 13% in a raid (2026-09-28): at half that, the build only matches the best builds without the hawk.",
+    "Do Unleashed Fury, Ferocity and Focused Fire apply to hawks in the game? The first two tooltips name hawks; the simulator applies all three.",
+    "Summon Hawk shares its cooldown with Arcane Shot: the rotation gives up Arcane Shot for it."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/hunter/dps/presets.ts",
+    "https://github.com/ElliotWood/Forever/blob/master/sim/hunter/summon_hawk.go",
+    "https://warcraftforever.games/talents/hunter"
+   ]
+  }
+ ],
+ "warlock": [
+  {
+   "id": "demonology-pact-raid",
+   "spec": "demonology-raid",
+   "glob": "cand-demonology-raid-from-*",
+   "after": "destruction-fire-raid",
+   "name": "Demonology — Demonic Pact (raid)",
+   "summary": "Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effect when another demon is summoned: the Imp is sacrificed before the pull (+15% Shadow damage) and the Succubus stays out for Master Demonologist, Soul Link, Demonic Knowledge and Unholy Power. Destruction for Improved Shadow Bolt, Bane, Ruin and Agonizing Flames; Shadow Bolt is the filler. From the simulator's Demonic Pact preset, tuned by the simulator talent search under the Demonology rotation.",
+   "why": {
+    "Demonic Pact": "Keeps the sacrificed Imp's +15% Shadow damage with the Succubus summoned.",
+    "Demonic Sacrifice": "The Imp's sacrifice: +15% Shadow damage.",
+    "Master Demonologist": "The Succubus's bonus for warlock and demon.",
+    "Demonic Knowledge": "Spell damage while a demon is out.",
+    "Soul Link": "+3% damage for warlock and demon.",
+    "Unholy Power": "+10% demon damage.",
+    "Ruin": "+100% crit damage on Destruction spells (Shadow Bolt).",
+    "Bane": "-0.5 s on Shadow Bolt.",
+    "Improved Shadow Bolt": "Shadow Bolt crits raise the Shadow damage the target takes by 20%.",
+    "Agonizing Flames": "+10% Destruction damage."
+   },
+   "open_questions": [
+    "Demonic Pact in the game: does a demon summoned after Demonic Sacrifice leave the sacrifice's effect in place, as the tooltip and the simulator's preset say, and do Master Demonologist and Soul Link then work in full?",
+    "The Succubus in a raid: the simulator's preset keeps her out; check her survival and threat on bosses that cleave."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/warlock/dps/presets.ts",
+    "https://warcraftforever.games/talents/warlock"
+   ]
+  },
+  {
+   "id": "destruction-incinerate-raid",
+   "spec": "incinerate-raid",
+   "glob": "cand-incinerate-raid-*",
+   "after": "demonology-pact-raid",
+   "name": "Destruction — Incinerate (raid)",
+   "summary": "Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target with Immolate), with Immolate kept up, Conflagrate while it burns and Incinerate as the filler instead of Shadow Bolt. Talents found by the simulator talent search from a 32-point Destruction start with Incinerate (kept), under its own rotation.",
+   "why": {
+    "Incinerate": "The filler: Fire damage, +25% on an Immolated target.",
+    "Conflagrate": "Instant Fire damage that consumes Immolate; the rotation casts it while Immolate burns.",
+    "Ruin": "+100% crit damage on Destruction spells.",
+    "Bane": "-0.5 s on Incinerate and Immolate.",
+    "Agonizing Flames": "+10% Destruction damage.",
+    "Aftermath": "+50% Immolate initial damage."
+   },
+   "open_questions": [
+    "Incinerate's rank-3 numbers (201-233 Fire, +25% with Immolate) against Shadow Bolt's: a stronger Incinerate would move this build up."
+   ],
+   "sources": [
+    "https://warcraftforever.games/talents/warlock"
+   ]
+  }
+ ],
+ "rogue": [
+  {
+   "id": "assassination-seal-fate-raid",
+   "spec": "assassination-raid",
+   "glob": "cand-assassination-raid-from-ours",
+   "after": "assassination-mutilate-raid",
+   "name": "Assassination/Combat — Seal Fate daggers (raid)",
+   "summary": "Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assassination, Puncturing Wounds, Precision and Dual Wield Specialization from Combat, and Backstab as the combo-point builder. The simulator talent search started from our Mutilate draft and moved Mutilate's point elsewhere: in the simulator Backstab, with Puncturing Wounds, builds combo points better than Mutilate, and the tuned rotation casts Backstab first. The best build that keeps Mutilate is on the survey page.",
+   "why": {
+    "Seal Fate": "Builder crits add a combo point.",
+    "Puncturing Wounds": "+30% Backstab crit and a 45% chance of an extra combo point.",
+    "Cold Blood": "A guaranteed crit on demand.",
+    "Malice": "+5% crit.",
+    "Improved Poisons": "+10% poison application, and applications that keep their charge.",
+    "Precision": "+3% hit.",
+    "Relentless Strikes": "Energy back from finishers.",
+    "Ruthlessness": "Finishers can add a combo point."
+   },
+   "open_questions": [
+    "Mutilate against Backstab in the game: the simulator implements Forever's Mutilate from the client (both weapons, more damage on poisoned targets) and still prefers Backstab with this gear."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/rogue/dps/presets.ts",
+    "https://warcraftforever.games/talents/rogue"
+   ]
+  },
+  {
+   "id": "subtlety-hemo-raid",
+   "spec": "subtlety-raid",
+   "glob": "cand-subtlety-raid-from-*",
+   "after": "assassination-seal-fate-raid",
+   "name": "Subtlety — Hemorrhage (raid)",
+   "summary": "Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35%) and Thousand Cuts (Rupture ticks cut Hemorrhage's energy cost), with Assassination for Malice, Ruthlessness, Relentless Strikes, Improved Slice and Dice and Improved Poisons. From the simulator's Hemorrhage preset, tuned by the simulator talent search.",
+   "why": {
+    "Hemorrhage": "The builder, 145% weapon damage with a dagger.",
+    "Thousand Cuts": "Rupture ticks cut Hemorrhage's energy cost.",
+    "Quietus": "+10% Hemorrhage damage under 35% health.",
+    "Serrated Blades": "Armor penetration and +30% Rupture.",
+    "Malice": "+5% crit."
+   },
+   "open_questions": [
+    "Thousand Cuts and Quietus as the simulator models them (Forever talents)."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/rogue/dps/presets.ts",
+    "https://warcraftforever.games/talents/rogue"
+   ]
+  }
+ ],
+ "priest": [
+  {
+   "id": "smite-discipline-raid",
+   "spec": "smite-dps",
+   "glob": "cand-smite-dps-from-*",
+   "after": null,
+   "name": "Discipline/Holy — Smite (raid)",
+   "summary": "A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: +10% Smite and Penance on targets with Holy Fire; Twin Disciplines on instants; Mental Strength), Holy for Divine Fury, Holy Specialization and Searing Light. From the simulator's Smite preset, tuned by the simulator talent search and its own rotation (Holy Fire up, Penance on cooldown, Smite). For a priest who wants to deal Holy damage; its rank against Shadow is on the survey page.",
+   "why": {
+    "Penance": "Holy damage on a 12 s cooldown, cast on cooldown.",
+    "Power in Light": "+10% Smite and Penance on targets with Holy Fire.",
+    "Divine Fury": "-0.5 s on Smite and Holy Fire.",
+    "Holy Specialization": "+5% Holy crit.",
+    "Searing Light": "+5% Holy damage.",
+    "Power Infusion": "+20% spell damage for 15 s.",
+    "Twin Disciplines": "+5% on instant spells.",
+    "Inner Focus": "A free, +25% crit spell on its cooldown; the rotation opens a strict sequence with it."
+   },
+   "open_questions": [
+    "Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/priest/dps/presets.ts",
+    "https://warcraftforever.games/talents/priest"
+   ]
+  }
+ ],
+ "mage": [
+  {
+   "id": "arcane-blast-raid",
+   "spec": "arcane-dps",
+   "glob": "cand-arcane-dps-from-*",
+   "after": "frostfire-raid",
+   "name": "Arcane — Arcane Blast (raid)",
+   "summary": "Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast, as the core of an Arcane build: Arcane Blast stacks, Arcane Missiles on Missile Barrage procs, Frostbolt while the stacks fall off, Arcane Power and Presence of Mind. Talents from the simulator talent search from the simulator's Arcane presets, keeping Arcane Blast.",
+   "why": {
+    "Arcane Blast": "The build's nuke.",
+    "Missile Barrage": "Procs a fast, free Arcane Missiles.",
+    "Arcane Power": "+damage cooldown.",
+    "Arcane Instability": "+damage and crit.",
+    "Arcane Mind": "Intellect."
+   },
+   "open_questions": [
+    "Arcane Blast's stacking cost against a mage's mana in long fights (the simulator's fights last 120 s)."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/mage/dps/presets.ts",
+    "https://warcraftforever.games/talents/mage"
+   ]
+  }
+ ]
+}

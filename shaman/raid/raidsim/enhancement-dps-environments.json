@@ -1,0 +1,98 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
+  "gear_max": "ui/specs/shaman/enhancement/gear_sets/phase_2.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "enhancement-raid-dps",
+   "split": "11/31/9",
+   "ours": true,
+   "dps": {
+    "dummy": 411.4170535502915,
+    "dummy60": 462.05457743471817,
+    "raid": 767.2182662611427,
+    "max": 764.4576541194951,
+    "max60": 805.8744807822911
+   }
+  },
+  {
+   "label": "opt-enhancement-dps-raid-dps",
+   "split": "11/31/9",
+   "ours": true,
+   "dps": {
+    "dummy": 415.37474636430045,
+    "dummy60": 466.37547698418325,
+    "raid": 773.8829735830363,
+    "max": 771.3038461039284,
+    "max60": 812.3752301367065
+   }
+  },
+  {
+   "label": "opt-enhancement-dps-parse",
+   "split": "10/31/10",
+   "ours": true,
+   "dps": {
+    "dummy": 402.84259752857525,
+    "dummy60": 452.0760382474208,
+    "raid": 773.4057357726717,
+    "max": 770.7142776355862,
+    "max60": 821.1072716133252
+   }
+  },
+  {
+   "label": "sim preset: Level 60",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 399.4653974913403,
+    "dummy60": 460.09078384787074,
+    "raid": 755.7261284798517,
+    "max": 761.1822170891986,
+    "max60": 805.2361397502087
+   }
+  },
+  {
+   "label": "sim preset: Enhancement 16/35/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 371.89965702532595,
+    "dummy60": 430.3693252430115,
+    "raid": 746.4623322764361,
+    "max": 752.0001148820548,
+    "max60": 818.2715050131401
+   }
+  }
+ ]
+}

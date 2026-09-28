@@ -1,0 +1,67 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/hunter/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/hunter/gear_sets/p1.bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "bm-mm-raid",
+   "split": "20/31/0",
+   "ours": true,
+   "dps": {
+    "dummy": 405.0333233792859,
+    "max": 1084.6502610316556,
+    "max60": 1145.9990993044955,
+    "raid": 1048.7283280156116
+   }
+  },
+  {
+   "label": "mm-surv-hit-raid",
+   "split": "0/31/20",
+   "ours": true,
+   "dps": {
+    "dummy": 366.5413746242366,
+    "max": 983.1003535905501,
+    "max60": 1052.1287358676295,
+    "raid": 952.2935411744749
+   }
+  },
+  {
+   "label": "sim preset: Marksmanship",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 405.4862033792858,
+    "max": 1086.539728684989,
+    "max60": 1147.8459224022731,
+    "raid": 1050.6177956689448
+   }
+  }
+ ]
+}

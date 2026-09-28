@@ -1,0 +1,235 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "combat-daggers-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "rogue",
+  "gear": "ui/rogue/gear_sets/combat_backstab_p1_bis.gear.json",
+  "apl": "ui/rogue/apls/combat_backstab.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredRogueThistleTea",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodGrilledSquid",
+   "mainHandImbue": "InstantPoison",
+   "offHandImbue": "DeadlyPoison",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay",
+   "sapperExplosive": "SapperGoblinSapper"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.08744999612854283,
+   "ev_before": 0.08038488834080514,
+   "ev_after": 0.08038488834080514,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Precision",
+   "sim": 0.05980093914862443,
+   "ev_before": 0.05957839230148067,
+   "ev_after": 0.05957839230148067,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Improved Backstab",
+   "sim": 0.056022883180213666,
+   "ev_before": 0.05499792491977871,
+   "ev_after": 0.05499792491977871,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Opportunity",
+   "sim": 0.05440407385195366,
+   "ev_before": 0.05271943998368917,
+   "ev_after": 0.05271943998368917,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Adrenaline Rush",
+   "sim": 0.038838742635338104,
+   "ev_before": 0.03748111327593784,
+   "ev_after": 0.03748111327593784,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Weapon Expertise",
+   "sim": 0.03338312014629457,
+   "ev_before": 0.03217227358501237,
+   "ev_after": 0.03217227358501237,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Relentless Strikes",
+   "sim": 0.03172510158710125,
+   "ev_before": 0.027303011749872926,
+   "ev_after": 0.027303011749872926,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Improved Slice and Dice",
+   "sim": 0.020625162874582454,
+   "ev_before": 0.0206363975026567,
+   "ev_after": 0.0206363975026567,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Ruthlessness",
+   "sim": 0.011074338205249615,
+   "ev_before": 0.010690639096085478,
+   "ev_after": 0.010690639096085478,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Blade Flurry",
+   "sim": 0.01075421892869329,
+   "ev_before": 0.012335678576986269,
+   "ev_after": 0.012335678576986269,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Dagger Specialization",
+   "sim": 0.010205492145458179,
+   "ev_before": 0.010146011301921082,
+   "ev_after": 0.010146011301921082,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Malice",
+   "sim": 0.010205492145458179,
+   "ev_before": 0.009896403011574595,
+   "ev_after": 0.009896403011574595,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Improved Eviscerate",
+   "sim": 0.001416358368536095,
+   "ev_before": 0.0017468647153056085,
+   "ev_after": 0.0017468647153056085,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Aggression",
+   "sim": 0.0011327658143608689,
+   "ev_before": 0.001410455371069875,
+   "ev_after": 0.001410455371069875,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Improved Gouge",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Improved Sprint",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  },
+  {
+   "talent": "Murder",
+   "sim": 0.0,
+   "ev_before": 0.004998999999999719,
+   "ev_after": 0.004998999999999719,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-daggers-raid"
+   ]
+  }
+ ]
+}

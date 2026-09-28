@@ -1,0 +1,2458 @@
+{
+  "_doc": "Hand-entered Warrior effects (Forever). Rage-cost talents are parsed (resource_cost) and converted by the model. Scope tags: tank/shield/threat = tank model sources; offhand/ww-offhand/dw = dual-wield model; weapon:2h = two-handed model.",
+  "Improved Charge": {
+    "note": "+3 rage/rank on Charge: an extra Heroic Strike every other pull while leveling; nothing in raids. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -1.2% time per kill in the simulator (scorer said 0.4% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.012,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.012,
+        "modes": ["leveling-aoe"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.009845,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.009845, 0.019689, 0.029535, 0.039381, 0.049225],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0,
+        "modes": ["leveling-aoe"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Improved Tactical Mastery": {
+    "note": "Retain +3 rage/rank on stance change (base Tactical Mastery is baseline): makes the Overpower/Whirlwind stance dance cheap. Raid: +0.5%/rank; leveling Arms sits in Battle Stance: +0.15%/rank. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, fury-dw-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.2% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP (2026-09-27): high, stun: Keeps up to 25 Rage on a stance change (baseline Tactical Mastery keeps 10): stance dancing for Intercept, Pummel and Berserker Rage (Berserker), Disarm (Defensive), Overpower and Charge (Battle) without dumping rage. Anger Management prerequisite.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0015,
+        "modes": ["leveling"],
+        "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.005,
+        "modes": ["raid"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Anger Management": {
+    "note": "'Generates 1 Rage every 3 seconds' (Icy Veins) in and out of combat: fights open with rage. Leveling +5% yellow damage, raid +4%, tanking +2% threat (rage-starved on pulls). Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.6% time per kill in the simulator (scorer said 2.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.05],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.04],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.02],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.029328],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.04],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "values": [0.054437],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.02],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Deep Wounds": {
+    "note": "Crits apply a bleed of 20%/rank of average weapon damage over 12s (does not stack). With 25-30% crit and ~1.5 attacks/s the bleed is up permanently: ~1.5%/rank of melee damage dual-wield, ~2%/rank two-handed (bigger weapon average). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.8% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.21 to match (2.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.001082,
+        "values": [0.001082, 0.002164, 0.003247, 0.004329, 0.005412],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.001443,
+        "values": [0.001443, 0.002886, 0.004329, 0.005772, 0.007215],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.000722,
+        "values": [0.000722, 0.001443, 0.002164, 0.002886, 0.003607],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.001729,
+        "values": [0.001729, 0.003458, 0.005187, 0.006917, 0.008647],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.002305,
+        "values": [0.002305, 0.004611, 0.006917, 0.009223, 0.011528],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.001153,
+        "values": [0.001153, 0.002305, 0.003458, 0.004611, 0.005764],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.004652,
+        "values": [0.004652, 0.009304, 0.013956, 0.018608, 0.023259],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.006203,
+        "values": [0.006203, 0.012405, 0.018608, 0.02481, 0.031013],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.003101,
+        "values": [0.003101, 0.006203, 0.009304, 0.012405, 0.015506],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "values": [0.006641, 0.013304, 0.019991, 0.026698, 0.033427],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.00886, 0.01776, 0.026698, 0.035675, 0.044692],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.004425, 0.00886, 0.013304, 0.01776, 0.022224],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Spearing Strike": {
+    "note": "40% weapon damage every 20s (+80% vs Giants/Dragonkin/mounted): ~+1.5% melee damage, ~+2.5% vs raid bosses that are Giants/Dragonkin. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs -3.1% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "modes": ["leveling"],
+        "values": [0.003]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.004999],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.025],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "stick",
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Bloodthrill": {
+    "note": "Build 70009: 4%/rank chance per MAIN-HAND melee attack on a Rended target to enable Overpower (5 rage, high crit, ~1 weapon hit), 6s window (was 2%/rank on any attack). A two-hander swings ~1/s -> ~2.4 extra Overpowers/min per rank at max ~6/min: ~+2.4%/rank melee damage while Rend is kept up (leveling always; raid if Rend is allowed). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 4.8% time per kill in the simulator (scorer said 4.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (4.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.024,
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.024,
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.024,
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "modes": ["heal", "tank"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.024,
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "modes": ["heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.024,
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.001665, 0.003331, 0.004998, 0.006667, 0.008337],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.003074, 0.006221, 0.00944, 0.012733, 0.016098],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.009376,
+        "values": [0.009376, 0.018753, 0.02813, 0.037507, 0.046884],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Sweeping Strikes": {
+    "note": "Next 5 attacks hit an extra target, 30s cooldown: AoE/cleave value, Mortal Strike prerequisite. Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.33 to match (0.5%). Other modes unchanged. 2026-09-27 audit: the leveling utility double-counted the aoe damage effect that already carries it. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15],
+        "modes": ["raid", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.049471],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Weaponmaster": {
+    "note": "Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.7% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal", "tank"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.015536, 0.031228, 0.047073, 0.063073, 0.079228],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.012619,
+        "values": [0.012619, 0.025237, 0.037856, 0.050476, 0.063096],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.009013,
+        "values": [0.009013, 0.018027, 0.02704, 0.036054, 0.045067],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.007206,
+        "values": [0.007206, 0.014412, 0.021618, 0.028825, 0.036031],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.006482, 0.012963, 0.019455, 0.025947, 0.032453],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Slam": {
+    "note": "Beta client: Slam has an 18s cooldown (build 70009; 15s in 69893), so it is one weapon+87 hit per 18s (~+4% for a two-hander), not a rage dump. Improved Slam: -0.25s/rank cast, -1.5s/rank cooldown, no swing reset -> ~+1.2%/rank two-handed damage; nothing for dual wield or tanks. Fight lab calibration (2026-09-26, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 2.5% on the same scale); leveling-st/solo-60 values scaled x0.20 to match (0.5%). Other modes unchanged. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.002419,
+        "values": [0.002419, 0.004838, 0.007258, 0.009677, 0.012096],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Improved Hamstring": {
+    "note": "5%/rank root on Hamstring: PvP; tiny leveling utility. 2026-09-27 audit: a root on top of Hamstring's 50% slow: 0.0005/rank while leveling; its value is PvP. PvP (2026-09-27): high, stick: 15% chance per Hamstring to root the target for 5 s on top of the 50% snare: Hamstring spam pins runners and kiters in melee range. Core of the Arms PvP build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "stick"
+      }
+    ]
+  },
+  "Mortal Strike": {
+    "note": "Weapon damage + 85 every 6s for 30 rage: ~25% of an Arms warrior's damage, replacing Heroic Strikes worth ~15% -> ~+10% total damage; healing debuff not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.3% time per kill in the simulator (scorer said 12.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (12.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["heal", "tank"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.009006],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.12],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.021557],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Booming Voice": {
+    "note": "Shout radius: nothing measurable.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0]
+      }
+    ]
+  },
+  "Iron Will": {
+    "note": "-3%/rank stun/fear duration: survivability for tanks and leveling. PvP (2026-09-27): medium, resist: -15% duration of stuns and fears on you (moved to Fury tier 2): the alternative to Unbridled Wrath 5 in a 31/20 build, best against rogues and warlocks.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Unbridled Wrath": {
+    "note": "12%/rank chance per weapon hit for +1 rage (60% at 5/5, Classic 40%): DW at ~2.5 hits/s gains ~1 rage/s (~+18% rage at 5/5) -> +1%/rank yellow damage on dual-wield sources; two-handers hit half as often -> +0.5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.0075,
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.0075,
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.0075,
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.010147,
+        "values": [0.010147, 0.020294, 0.030441, 0.040588, 0.050735],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.005073,
+        "values": [0.005073, 0.010147, 0.01522, 0.020294, 0.025367],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.009769,
+        "values": [0.009769, 0.019538, 0.029307, 0.039076, 0.048845],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.004884,
+        "values": [0.004884, 0.009769, 0.014653, 0.019538, 0.024422],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.010788,
+        "values": [0.010788, 0.021576, 0.032363, 0.043151, 0.053939],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.005394,
+        "values": [0.005394, 0.010788, 0.016182, 0.021576, 0.02697],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dw"],
+        "per_rank": 0.017517,
+        "values": [0.017517, 0.035035, 0.052552, 0.070069, 0.087587],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "per_rank": 0.008759,
+        "values": [0.008759, 0.017517, 0.026276, 0.035035, 0.043793],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Piercing Howl": {
+    "note": "AoE daze: leveling/PvP utility (runners, kiting casters). 2026-09-27 audit: leveling-st/solo-60 0.0015 (a runner costs ~0.9% of time per kill at 60 and Hamstring already slows it; the lab measures 0.0), leveling-aoe keeps 0.006 (the escape from a pack). PvP (2026-09-27): high, stick: Instant 50% daze on every nearby enemy for 6 s, 10 Rage, no stance or weapon swing needed: snares several players (flag carrier, healer) at once. Core PvP point in Fury tier 3.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0015],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stick"
+      }
+    ]
+  },
+  "Blood Craze": {
+    "note": "1%/rank health regen after crits/Bloodthirst/big hits: less bandaging while leveling, small tank sustain. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.0% time per kill in the simulator (scorer said 5.2% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (6.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.355206,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.355206, 0.71041, 1.065587, 1.420823, 1.776026],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.177603,
+        "values": [0.177603, 0.355206, 0.532806, 0.71041, 0.888013],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.499999,
+        "modes": ["leveling-aoe"],
+        "values": [0.499999, 0.999999, 1.5, 1.999999, 2.499999],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.250001,
+        "values": [0.250001, 0.499999, 0.75, 0.999999, 1.249999],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Boundless Rage": {
+    "note": "+10 max rage/rank: avoids rage capping on big pulls; ~0.2%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Dual Wield Specialization": {
+    "note": "+5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 24.3% DPS in the simulator (scorer said 13.8% on the same scale); raid values scaled x1.00, the cap on effect size stops short of the target (13.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["offhand"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["offhand"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["offhand"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.499999],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["offhand"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.119999, 0.159999, 0.2],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.005999,
+        "values": [0.005999, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Raging Blows": {
+    "note": "Whirlwind also hits with the off-hand (~+50% Whirlwind damage) and Cleave costs 2 less: dual-wield only. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.4% DPS in the simulator (scorer said 3.9% on the same scale); already within tolerance, raid effects split off unchanged (3.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ww-offhand"],
+        "values": [0.5],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ww-offhand"],
+        "values": [0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ww-offhand"],
+        "values": [0.590427],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Enrage": {
+    "note": "30% chance for +2%/rank physical damage 12s after taking ANY damage: leveling/tank uptime ~90% -> +1.8%/rank; raid DPS takes little damage -> uptime ~30% -> +0.6%/rank. Flurry prerequisite. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 10.3% time per kill in the simulator (scorer said 11.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (11.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.012,
+        "modes": ["raid-tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.018,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.018, 0.036, 0.054, 0.072, 0.09],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.001,
+        "modes": ["raid"],
+        "values": [0.001, 0.002, 0.003, 0.004, 0.005001],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.006,
+        "modes": ["raid"],
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.018,
+        "modes": ["leveling-aoe"],
+        "values": [0.018, 0.036, 0.054, 0.072, 0.09],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.009812,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.009812, 0.019626, 0.029439, 0.039251, 0.049063],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.023236,
+        "modes": ["leveling-aoe"],
+        "values": [0.023236, 0.046473, 0.069709, 0.092945, 0.116181],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Improved Berserker Rage": {
+    "note": "Berserker Rage gives 5 rage and breaks snares 50%: small. PvP (2026-09-27): high, escape: Berserker Rage (30 s cooldown, Berserker Stance) also removes all movement impairing effects at 2/2 (50% at 1/2): a snare break every 30 s for a melee, on top of its fear immunity. Whether roots count is unverified. Fury builds only (tier 6).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["yellow"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Flurry": {
+    "note": "+5%/rank attack speed for 3 swings after a crit (est. 25% at 5/5, Classic 30%). Raid crit ~30% with ~2 swings/s: uptime ~80% -> haste EV 4/8/12/16/20% on white swings; leveling crit ~8%: uptime ~35% -> 1.7/3.5/5/7/9%. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 12.0% DPS in the simulator (scorer said 12.0% on the same scale); already within tolerance, raid effects split off unchanged (12.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.017, 0.035, 0.05, 0.07, 0.09],
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.017, 0.035, 0.05, 0.07, 0.09],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.017, 0.035, 0.05, 0.07, 0.09],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.043603, 0.089771, 0.128244, 0.179542, 0.23084],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.070393, 0.140786, 0.211179, 0.281572, 0.351964],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.063474, 0.126948, 0.190422, 0.253896, 0.317369],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Bloodthirst": {
+    "note": "35% AP + flat damage every 6s for 30 rage (Classic 45% AP): the best rage-per-damage dump -> ~+12% total damage over Heroic Strike dumping in raid gear, +10% leveling. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 0.1% DPS in the simulator (scorer said 5.1% on the same scale); raid values scaled x0.00 to match (5.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.12],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "move",
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.002587],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Death Wish": {
+    "note": "+20% physical damage for 30s every 3 min (16.7% uptime) = +3.3% average; parser read it as permanent. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 9.5% DPS in the simulator (scorer said 9.5% on the same scale); already within tolerance, raid effects split off unchanged (9.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.033],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.033],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.033],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.041742],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.087321],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:physical"],
+        "values": [0.094933],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Shield Specialization": {
+    "note": "+1%/rank block chance and 20% chance for 5 rage on block: mitigation + tank rage. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.9% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.003553,
+        "values": [0.003553, 0.007101, 0.010654, 0.014203, 0.017755],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.004261,
+        "values": [0.004261, 0.008522, 0.012783, 0.017044, 0.021304],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Bloodrage": {
+    "note": "+25%/rank Bloodrage rage: tank opener rage. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.3% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.47 to match (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.002824,
+        "values": [0.002824, 0.005649, 0.008473, 0.011297, 0.014121],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Last Stand": {
+    "note": "+30% max health for 20s every 3 min: ~6% effective-health equivalent for a tank. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.5% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP (2026-09-27): medium, defensive: +30% maximum health for 20 s on a 3 min cooldown (Classic 10 min): an on-demand emergency button when focused. Protection tier 3.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.06],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.06],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Master of Defense": {
+    "note": "50% chance for 5 rage on dodge/parry with a shield: tank rage while being avoided. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.7% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Vanguard": {
+    "note": "Charge in Defensive Stance: tank opener utility. 2026-09-27 audit: Charge in Defensive Stance only matters to a Defensive-Stance player (the Arms and Fury loops charge in Battle / Berserker Stance). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.003],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "move",
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      }
+    ]
+  },
+  "Concussion Blow": {
+    "note": "5s stun every 45s: dungeon/leveling utility; Shield Slam prerequisite. PvP (2026-09-27): high, stun: 5 s stun on a 45 s cooldown for 10 Rage, any stance: the warrior's longest stun and the reason for Arms/Protection hybrids. Protection tier 5.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Shield Bash": {
+    "note": "50%/rank silence on Shield Bash: utility. PvP (2026-09-27): medium, stun: Shield Bash also silences for 3 s (100% at 2/2) on top of its 6 s school lockout, so a healer cannot switch schools. Needs a shield (or a shield swap).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Shield Slam": {
+    "note": "Shield-block-value slam every 6s for 20 rage: the highest threat ability -> ~+20% threat output for a tank. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 16.1% DPS in the simulator (scorer said 16.5% on the same scale); already within tolerance, raid effects split off unchanged (16.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.2],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.2],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.305317],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Shield Wall": {
+    "note": "Longer Shield Wall on a 30-min cooldown: 'the 5 extra seconds will make or break a kill' (Icy Veins) - boss-kill insurance, small on average. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP (2026-09-27): medium, defensive: Shield Wall cooldown 15 -> 4 min at 2/2: 60% less damage for 12 s every 4 min instead of once a battleground. Shield and Defensive Stance (or a shield swap) only.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "modes": ["tank"],
+        "specs": ["prot-tank"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Revenge": {
+    "note": "+20%/rank Revenge damage (parsed) -> tank threat. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.9% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Revenge"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Revenge"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Revenge"],
+        "per_rank": 0.067961,
+        "values": [0.067961, 0.135922, 0.203884, 0.271845, 0.339806],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Defiance": {
+    "note": "+5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "threat_up",
+        "scope": ["tank"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "threat_up",
+        "scope": ["tank"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "threat_up",
+        "scope": ["tank"],
+        "per_rank": 0.042341,
+        "values": [0.042341, 0.084697, 0.127038, 0.169393, 0.211735],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Bastion": {
+    "note": "+2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["shield"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["shield"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["shield"],
+        "per_rank": 0.011804,
+        "values": [0.011804, 0.023607, 0.035411, 0.047215, 0.059018],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Disarm": {
+    "note": "Disarm cooldown: utility. PvP (2026-09-27): medium, stun: Disarm cooldown 60 -> 40 s (10 s disarm): shuts down warriors, rogues, paladins and shamans more often. Defensive Stance; melee opponents only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Intercept": {
+    "note": "Intercept cooldown -5s/rank: PvP. PvP (2026-09-27): medium, move: Intercept cooldown 30 -> 20 s: the in-combat gap closer and its 3 s stun more often. Berserker Stance; Fury tier 5, so Fury builds only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Precision": {
+    "note": "+1%/rank hit with all attacks (parser scoped it to abilities). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.5% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "per_rank": 0.018973,
+        "values": [0.018973, 0.037944, 0.056917, 0.075889, 0.094862],
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Improved Thunder Clap": {
+    "note": "-2/rank rage on Thunder Clap (parsed) - AoE tank utility. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.0% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Thunder Clap"],
+        "per_rank": 2.0,
+        "values": [2.0, 4.0, 6.0, 8.0, 10.0],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Thunder Clap"],
+        "per_rank": 2.0,
+        "values": [2.0, 4.0, 6.0, 8.0, 10.0],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Thunder Clap"],
+        "per_rank": 2.414245,
+        "values": [2.414245, 4.82849, 7.242736, 9.65698, 12.071225],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Toughness": {
+    "note": "+2%/rank armor from items: a raid tank at ~8000 item armor gains 800 at 5/5 -> physical damage taken 36.4% -> 34.3% (armor DR 63.6% -> 65.7%), i.e. ~-5.8% damage taken -> +1.1%/rank effective health. Icy Veins: 'looks better on paper than what it actually is. Only your armor value from items is increased' - the arithmetic above is item armor only. Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 1.5% on the same scale); raid values scaled x0.22 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.011,
+        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.011,
+        "values": [0.011, 0.022, 0.033, 0.044, 0.055],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.002466,
+        "values": [0.002466, 0.004932, 0.007398, 0.009864, 0.01233],
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Anticipation": {
+    "note": "+4 defense/rank (Forever doubles Classic): each defense point is +0.04% dodge, parry, block and to-be-missed and -0.04% chance to be crit -> +1.6% avoidance and -0.4% crit at 5/5, ~+3% effective health for a tank (~0.6%/rank). Icy Veins: 'not quite as good as it might look... it comes at the cost of 5 precious talent points'. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.5% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.004,
+        "modes": ["leveling"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Rend": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.6% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.12, 0.23, 0.35],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.01731, 0.033178, 0.050488],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.12, 0.23, 0.35],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.12, 0.23, 0.35],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.12, 0.23, 0.35],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.133336, 0.25556, 0.388894],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rend"],
+        "values": [0.12, 0.23, 0.35],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Deflection": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 4.2% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.3% DPS in the simulator (scorer said 3.4% on the same scale); already within tolerance, raid effects split off unchanged (3.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.00764, 0.01528, 0.02292, 0.03056, 0.0382],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.068793, 0.137587, 0.206381, 0.275174, 0.343969],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.02353, 0.04706, 0.070591, 0.094121, 0.117651],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Overpower": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.9% time per kill in the simulator (scorer said 3.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.024855, 0.04971],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.080452, 0.160904],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Overpower"],
+        "values": [0.749999, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Two-Handed Weapon Specialization": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.009474, 0.018948, 0.028421],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.009105, 0.01821, 0.027316],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["weapon:2h"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      }
+    ]
+  },
+  "Impale": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["heal", "tank"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["heal"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.069073, 0.138144],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.121251, 0.242503],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.111777, 0.223554],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["yellow"],
+        "values": [0.043122, 0.086244],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Cruelty": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 12.2% time per kill in the simulator (scorer said 11.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (11.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.5% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.013798, 0.027594, 0.041392, 0.05519, 0.068987],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.026696, 0.053392, 0.080088, 0.106785, 0.133481],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.014604, 0.029207, 0.043811, 0.058414, 0.073019],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.013693, 0.027388, 0.041081, 0.054775, 0.068469],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.006378, 0.012756, 0.019134, 0.025512, 0.031892],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Execute": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 7.0% DPS in the simulator (scorer said 8.1% on the same scale); already within tolerance, raid effects split off unchanged (8.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [3.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [3.0, 5.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [3.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [0.9, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [3.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [1.972609, 3.287682],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Execute"],
+        "values": [2.878858, 4.798097],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      }
+    ]
+  },
+  "Improved Heroic Strike": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.7% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [0.285428, 0.570856, 0.856284],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["fury-dw-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["fury-dw-raid", "prot-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [0.397031, 0.794063, 1.191094],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Heroic Strike"],
+        "values": [0.405909, 0.811818, 1.217727],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Focused Rage": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.8% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["yellow"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["fury-dw-raid", "arms-2h-raid"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["yellow"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["yellow"],
+        "values": [0.322684, 0.645368, 0.968052],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["prot-tank"]
+      }
+    ]
+  },
+  "Improved Cleave": {
+    "note": "2026-09-27 audit: a small raid value (trash and cleave fights; Raging Blows cheapens Cleave) so that it, not a control talent, fills Fury's first rows.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.001
+      }
+    ]
+  }
+}

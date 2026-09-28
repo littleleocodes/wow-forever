@@ -1,0 +1,644 @@
+{
+  "_doc": "Classic Era hand-entered Priest effects for calibration.",
+  "Unbreakable Will": {
+    "note": "+3%/rank stun/fear/silence resist. PvP (2026-09-27): high, resist: +15% chance to resist stuns, fears and silences at 5/5: a resisted Kidney Shot or Fear breaks a kill setup. In every community PvP priest build. Both specs.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Power Word: Shield": {
+    "note": "+5%/rank absorb (Classic 15% at 3/3): healing on the shield source; leveling +1%/rank survivability (every pull opens with a bigger shield). PvP (2026-09-27): medium, defensive: +15% absorb on a shield PvP priests recast every 15 s (Weakened Soul; a Discipline spell, so castable in Shadowform). The absorb already counts as survival, so a nice extra rather than the audit's high. Both specs.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "per_rank": 0.05
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Martyrdom": {
+    "note": "Focused Casting after crits: leveling/PvP. PvP (2026-09-27): medium, resist: Focused Casting for 6 s after a melee or ranged crit: no pushback and +20% resistance to interrupts at 2/2; casting through melee pressure. Missing from the community build (audit). Both specs.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Inner Fire": {
+    "note": "+10%/rank Inner Fire armor.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.008
+      }
+    ]
+  },
+  "Mental Strength": {
+    "note": "+2%/rank maximum mana: sustain.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Divine Spirit": {
+    "note": "+40 Spirit (rank 4) to the raid: for you ~+3% mana regen and a little Spiritual Guidance healing; the raid buff is extra.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.03]
+      }
+    ]
+  },
+  "Force of Will": {
+    "note": "+1%/rank spell damage and offensive crit: Shadow/Smite only. 2026-09-27 audit: spell damage and OFFENSIVE crit: its type:spell scope also reached the healer's heal sources.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Power Infusion": {
+    "note": "+20% for 15s every 3 min: +1.7% self, plus raid-DPS use. PvP (2026-09-27): medium, burst: +20% spell damage and healing for 15 s (3 min cooldown) on yourself or a partner: a burst window. Discipline builds only (tier 7).",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.017]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.017]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Mental Agility": {
+    "note": "-2%/rank mana on instant casts (parser scoped it to all spells).",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Inner Focus": {
+    "note": "One free +25% crit spell every 3 min. PvP (2026-09-27): medium, burst: 3 min cooldown: next spell free with +25% crit, a near-certain crit Mind Blast or a free crit heal: a burst button its average value undercounts.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Power Word: Fortitude": {
+    "note": "+15%/rank Fortitude: raid buff (not your throughput). PvP (2026-09-27): low, defensive: +30% Power Word: Fortitude (about +16 Stamina, some 160 health) for you and your group: small but real in PvP, where the model counts it only as raid-healer utility.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Silent Resolve": {
+    "note": "Threat reduction: not scored. 2026-09-27 audit: Classic: threat reduction for raid healers and Shadow priests: 0.001/rank heal and raid utility. PvP (2026-09-27): zero, defensive: Classic Silent Resolve is threat reduction only (-20% spell threat): nothing in PvP (the Forever version adds the CC-duration cut).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.001
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.001
+      }
+    ]
+  },
+  "Spell Warding": {
+    "note": "-2%/rank spell damage taken.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.015
+      }
+    ]
+  },
+  "Holy Nova": {
+    "note": "Instant AoE: niche. PvP (2026-09-27): low, stealth: Instant 10 yd AoE damage and party heal: pulsing it reveals stealthed rogues and druids before a Sap or Cheap Shot. Holy builds only (tier 3; Shadowform bars Holy spells).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Blessed Recovery": {
+    "note": "Heal after crits.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Inspiration": {
+    "note": "+8%/rank armor on the target after crit heals: ~+1.5%/rank effective tank healing.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.015
+      }
+    ]
+  },
+  "Spirit of Redemption": {
+    "note": "10s of free healing after death. PvP (2026-09-27): low, burst: 10 s of free healing after you die: team value in battlegrounds only. Holy healer only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Spiritual Guidance": {
+    "note": "+5%/rank of Spirit as healing/damage: ~300 Spirit -> +15 healing per rank ~ +1.2%/rank healing.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.012
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.006
+      }
+    ]
+  },
+  "Lightwell": {
+    "note": "Clickable heal: raid utility.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01]
+      }
+    ]
+  },
+  "Healing Focus": {
+    "note": "35%/rank pushback resistance: ~+0.7%/rank raid throughput. PvP (2026-09-27): medium, resist: 70% chance to ignore pushback on healing spells at 2/2: healing while trained. Healer builds only (Shadowform bars Holy-tree heals).",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.007
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Spirit Tap": {
+    "note": "100% Spirit after kills (20%/rank chance): sustain 12/22/30/36/40% while leveling. PvP (2026-09-27): zero, defensive: Procs only after killing a target that yields experience (1.12 tooltip), so honor kills may not count at all; its leveling per-kill mana value (sustain 0.40) would otherwise read as +0.04 PvP score. The community build's 5 points are filler.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.12, 0.22, 0.3, 0.36, 0.4],
+        "modes": ["leveling"]
+      }
+    ]
+  },
+  "Blackout": {
+    "note": "2%/rank chance per Shadow damage spell to stun 3s: ~5 shadow casts per mob while leveling -> ~10%/rank of mobs stunned once (3s without hits) -> +1%/rank survivability, +0.5%/rank damage (free casts); nothing on bosses. PvP (2026-09-27): medium, stun: 10% chance per Shadow damage spell to stun for 3 s; DoT and Mind Flay ticks roll too (community build note), so several random stuns a fight. They cannot be timed, so a nice extra.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Improved Shadow Word: Pain": {
+    "note": "+3s/rank duration.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.05
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Shadow Focus": {
+    "note": "-2%/rank Shadow resist chance = hit.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Mind Flay": {
+    "note": "The Shadow filler: +15% leveling, +10% raid. PvP (2026-09-27): high, kite: 50% snare on the 3 s channel (20 yd): the Shadow priest's kiting and runner-catching tool against melee. Its damage is counted separately.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.15],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.1],
+        "modes": ["raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Shadow Weaving": {
+    "note": "20%/rank chance to apply +3% Shadow vulnerability (5 stacks): 5/8/11/13/15% at full stacks; leveling mobs die before 5 stacks (half).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.11, 0.13, 0.15],
+        "modes": ["raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.025, 0.04, 0.055, 0.065, 0.075],
+        "modes": ["leveling"]
+      }
+    ]
+  },
+  "Silence": {
+    "note": "Caster control. 2026-09-27 audit: the fight lab never gets to use it (0.00 interrupts per kill: casters stand at 30 yd, Silence reaches 20); casters are 9-19% of pulls and one Silence turns 1-2 bolts into melee swings: 0.002. PvP (2026-09-27): high, stun: 5 s silence (45 s cooldown): stops a heal, Polymorph or Fear cast and locks a healer out; the reason PvP priests go deep Shadow. Needs Improved Psychic Scream 2.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.002]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Vampiric Embrace": {
+    "note": "20% of Shadow damage heals the party: leveling sustain and survivability. PvP (2026-09-27): high, defensive: Shadowform bars Holy-tree heals, so VE (party healed for 20% of your Shadow spell damage for 1 min) is the in-form self-heal: about a fifth of your health in a 30 s duel (estimate), far above the 5% survival the model counts. Shadowform prerequisite; audit said medium. Shadow only.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.15],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.05]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Vampiric Embrace": {
+    "note": "+5%/rank Vampiric Embrace healing. PvP (2026-09-27): medium, defensive: Vampiric Embrace 20% -> 30%: half again the in-form self-heal and the party healing. In the community build. Shadow only.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Darkness": {
+    "note": "+2%/rank Shadow damage (parsed).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Shadowform": {
+    "note": "+15% Shadow damage, -15% physical damage taken.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.15]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.15]
+      }
+    ]
+  },
+  "Improved Fade": {
+    "note": "Fade cooldown. 2026-09-27 audit: a solo priest is the only name on the mob's threat list, so Fade does nothing while leveling; it is the raid threat dump: 0.001/rank in raid and heal. PvP (2026-09-27): zero, escape: Fade only lowers NPC threat; players ignore it, so the community build's 1 point is filler.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.001
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.001
+      }
+    ]
+  },
+  "Improved Psychic Scream": {
+    "note": "Scream cooldown. PvP (2026-09-27): medium, stun: Psychic Scream (8 s fear on up to 5 enemies within 8 yd, baseline) every 26 s instead of 30: about 15% more fears, the main peel against melee. The fear is baseline, so medium rather than the audit's high; Silence prerequisite.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Shadow Reach": {
+    "note": "Range. 2026-09-27 audit: range is the one soft kind raid DPS counts (Mind Flay's 20 yd): 0.002/rank raid utility. PvP (2026-09-27): medium, range: +20% range of Shadow damage spells at 3/3: Mind Blast and Shadow Word: Pain 30 -> 36 yd (outranges 30 yd casters), Mind Flay 20 -> 24 yd. Silence is not a damage spell.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.004,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Improved Mana Burn": {
+    "note": "PvP. PvP (2026-09-27): low, antiheal: Mana Burn 3 -> 2.5 s cast: a little easier to land against healers, but only 0.5 s (Forever cuts 1 s), so low rather than the audit's medium. Discipline builds only (tier 4).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Wand Specialization": {
+    "note": "+5%/rank wand damage (parsed).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.05
+      }
+    ]
+  },
+  "Holy Reach": {
+    "note": "Nothing measurable. PvP (2026-09-27): low, range: +20% Smite/Holy Fire range and Holy Nova/Prayer of Healing radius: the Holy Nova stealth sweep grows to 12 yd. Holy builds only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Searing Light": {
+    "note": "Smite/Holy Fire damage: Smite priests only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "per_rank": 0.05
+      }
+    ]
+  },
+  "Holy Specialization": {
+    "note": "+1%/rank Holy crit: crit heals also proc Inspiration on the tank ('provides your tanks with a lot of extra mitigation', Icy Veins) -> +0.3%/rank healer utility on top of the parsed crit.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:holy"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003
+      }
+    ]
+  },
+  "Shadow Affinity": {
+    "note": "2026-09-27 audit: threat reduction on Shadow spells: 0.003/rank raid utility (like Natural Grace and Suppression); the scorer does not read the threat channel. PvP (2026-09-27): zero, defensive: Threat only (-25% Shadow spell threat); players ignore threat.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003
+      }
+    ]
+  }
+}

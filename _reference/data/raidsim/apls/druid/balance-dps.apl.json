@@ -1,0 +1,125 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "activateAura": {
+     "auraId": {
+      "spellId": 24858
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-10s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "30%"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 29166
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "multidot": {
+     "spellId": {
+      "spellId": 24977
+     },
+     "maxDots": 1,
+     "maxOverlap": {
+      "const": {
+       "val": "0ms"
+      }
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "10s"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see balance-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "multidot": {
+     "spellId": {
+      "spellId": 9835
+     },
+     "maxDots": 1,
+     "maxOverlap": {
+      "const": {
+       "val": "0ms"
+      }
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 25298
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 2912,
+      "rank": 1
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "15%"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see balance-dps-rotation-search.json)"
+  }
+ ]
+}

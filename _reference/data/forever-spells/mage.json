@@ -1,0 +1,4078 @@
+{
+ "class": "Mage",
+ "slug": "mage",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 191,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "changed": 123,
+  "new": 14,
+  "note": 2,
+  "same": 52
+ },
+ "tabs": [
+  {
+   "name": "Arcane",
+   "spells": [
+    {
+     "name": "Amplify Magic",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1008,
+       "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 23 and healing spells by up to 45. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 15 and healing spells by up to 30. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8455,
+       "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 45 and healing spells by up to 90. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 30 and healing spells by up to 60. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10169,
+       "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 75 and healing spells by up to 150. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 50 and healing spells by up to 100. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10170,
+       "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 113 and healing spells by up to 225. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "450 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to 75 and healing spells by up to 150. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Blast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 400574,
+       "text": "Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+       "school": "Arcane",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1239696,
+       "text": "Blasts the target with energy, dealing 131 to 151 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+       "school": "Arcane",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1239697,
+       "text": "Blasts the target with energy, dealing 168 to 194 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+       "school": "Arcane",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1239699,
+       "text": "Blasts the target with energy, dealing 269 to 311 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+       "school": "Arcane",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1239700,
+       "text": "Blasts the target with energy, dealing 364 to 424 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast.",
+       "school": "Arcane",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "note"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Brilliance",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 23028,
+       "text": "Infuses the target's party and raid with brilliance, increasing their Intellect by 31 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "3,400 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Arcane Powder",
+       "level": 56,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "changed",
+        "text": "Infuses the target's party with brilliance, increasing their Intellect by 31 for 1 hour.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Explosion",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1449,
+       "text": "Causes an explosion of arcane magic around the caster, causing 32 to 36 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 34 to 38 Arcane damage to all targets within 10 yards.",
+        "coefficient": "11.1% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8437,
+       "text": "Causes an explosion of arcane magic around the caster, causing 55 to 61 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 60 to 66 Arcane damage to all targets within 10 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8438,
+       "text": "Causes an explosion of arcane magic around the caster, causing 94 to 102 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 101 to 109 Arcane damage to all targets within 10 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8439,
+       "text": "Causes an explosion of arcane magic around the caster, causing 133 to 145 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 143 to 155 Arcane damage to all targets within 10 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10201,
+       "text": "Causes an explosion of arcane magic around the caster, causing 180 to 196 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "315 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 191 to 207 Arcane damage to all targets within 10 yards.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10202,
+       "text": "Causes an explosion of arcane magic around the caster, causing 238 to 258 Arcane damage to all targets within 10 yards.",
+       "school": "Arcane",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "390 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of arcane magic around the caster, causing 249 to 269 Arcane damage to all targets within 10 yards.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Intellect",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1459,
+       "text": "Increases the target's Intellect by 2 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the target's Intellect by 2 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1460,
+       "text": "Increases the target's Intellect by 7 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the target's Intellect by 7 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1461,
+       "text": "Increases the target's Intellect by 15 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "520 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the target's Intellect by 15 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10156,
+       "text": "Increases the target's Intellect by 22 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "945 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the target's Intellect by 22 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10157,
+       "text": "Increases the target's Intellect by 31 for 1 hour.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,510 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Increases the target's Intellect by 31 for 30 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Missiles",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 5143,
+       "text": "Launches Arcane Missiles at the enemy, causing 25 Arcane damage each second for 3 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "coefficient": "13.2% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5144,
+       "text": "Launches Arcane Missiles at the enemy, causing 32 Arcane damage each second for 4 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 37 Arcane damage each second for 4 sec.",
+        "coefficient": "20.4% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 5145,
+       "text": "Launches Arcane Missiles at the enemy, causing 46 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "235 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 58 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8416,
+       "text": "Launches Arcane Missiles at the enemy, causing 68 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 85 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8417,
+       "text": "Launches Arcane Missiles at the enemy, causing 97 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "410 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 117 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10211,
+       "text": "Launches Arcane Missiles at the enemy, causing 133 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "500 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 154 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10212,
+       "text": "Launches Arcane Missiles at the enemy, causing 174 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "595 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 195 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 25345,
+       "text": "Launches Arcane Missiles at the enemy, causing 209 Arcane damage each second for 5 sec.",
+       "school": "Arcane",
+       "coefficient": "28.6% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "655 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "changed",
+        "text": "Launches Arcane Missiles at the enemy, causing 230 Arcane damage each second for 5 sec.",
+        "coefficient": "24% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Arcane Power",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12042,
+       "text": "For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blink",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1953,
+       "text": "Teleports the caster 20 yards forward, unless something is in the way. Also frees the caster from Stuns and Immobilizes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Teleports the caster 20 yards forward, unless something is in the way. Also frees the caster from stuns and bonds.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Food",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 587,
+       "text": "Conjures 20 muffins, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 597,
+       "text": "Conjures 20 loaves of bread, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 990,
+       "text": "Conjures 20 loaves of rye, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6129,
+       "text": "Conjures 20 loaves of pumpernickel, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10144,
+       "text": "Conjures 20 loaves of sourdough, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "420 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10145,
+       "text": "Conjures 20 sweet rolls, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "585 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Conjures 18 sweet rolls, providing the mage and his allies with something to eat. Conjured items disappear if logged out for more than 15 minutes.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 28612,
+       "text": "Conjures 10 cinnamon rolls, providing the mage and his allies with something to eat.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "705 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Mana Agate",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 759,
+       "text": "Conjures a mana agate that can be used to instantly restore 375 to 425 mana.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "530 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Mana Citrine",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 10053,
+       "text": "Conjures a mana citrine that can be used to instantly restore 775 to 925 mana.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,130 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Mana Jade",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3552,
+       "text": "Conjures a mana jade that can be used to instantly restore 550 to 650 mana.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "800 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Mana Ruby",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 10054,
+       "text": "Conjures a mana ruby that can be used to instantly restore 1,000 to 1,200 mana.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,470 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Conjure Water",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 5504,
+       "text": "Conjures 20 bottles of water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5505,
+       "text": "Conjures 20 bottles of fresh water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 5506,
+       "text": "Conjures 20 bottles of purified water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6127,
+       "text": "Conjures 20 bottles of spring water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10138,
+       "text": "Conjures 20 bottles of mineral water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "420 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10139,
+       "text": "Conjures 20 bottles of sparkling water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "585 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10140,
+       "text": "Conjures 10 bottles of crystal water, providing the mage and his allies with something to drink.\n\nConjured items disappear if logged out for more than 15 minutes.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "780 Mana",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Counterspell",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2139,
+       "text": "Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for 10 sec. Generates a high amount of threat.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dampen Magic",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 604,
+       "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 15 and healing spells by up to 30. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 10 and healing spells by up to 20. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8450,
+       "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 30 and healing spells by up to 60. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 20 and healing spells by up to 40. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8451,
+       "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 60 and healing spells by up to 120. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "300 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 40 and healing spells by up to 80. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10173,
+       "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 90 and healing spells by up to 180. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "400 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 60 and healing spells by up to 120. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10174,
+       "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 135 and healing spells by up to 270. Lasts 10 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "500 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to 90 and healing spells by up to 180. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Evocation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12051,
+       "text": "While channeling this spell, your mana regeneration is active and increased by 1,500%. Lasts 8 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Channeled",
+       "cooldown": "8 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mage Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6117,
+       "text": "Increases your resistance to all magic by 5 and allows 50% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "270 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Increases your resistance to all magic by 5 and allows 30% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 22782,
+       "text": "Increases your resistance to all magic by 10 and allows 50% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "380 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Increases your resistance to all magic by 10 and allows 30% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 22783,
+       "text": "Increases your resistance to all magic by 15 and allows 50% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "490 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Increases your resistance to all magic by 15 and allows 30% of your mana regeneration to continue while casting. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mana Shield",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1463,
+       "text": "Absorbs 120 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8494,
+       "text": "Absorbs 210 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8495,
+       "text": "Absorbs 300 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10191,
+       "text": "Absorbs 390 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10192,
+       "text": "Absorbs 480 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10193,
+       "text": "Absorbs 570 physical damage, draining mana instead. Drains 2 mana per damage absorbed. Lasts 1 min.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Polymorph",
+     "ranks": [
+      {
+       "rank": "Turtle",
+       "id": 28271,
+       "text": "Transforms the enemy into a turtle, forcing it to wander around for up to 50 sec. While wandering, the turtle cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Pig",
+       "id": 28272,
+       "text": "Transforms the enemy into a pig, forcing it to wander around for up to 50 sec. While wandering, the pig cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 1",
+       "id": 118,
+       "text": "Transforms the enemy into a sheep, forcing it to wander around for up to 20 sec. While wandering, the sheep cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 12824,
+       "text": "Transforms the enemy into a sheep, forcing it to wander around for up to 30 sec. While wandering, the sheep cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 12825,
+       "text": "Transforms the enemy into a sheep, forcing it to wander around for up to 40 sec. While wandering, the sheep cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 12826,
+       "text": "Transforms the enemy into a sheep, forcing it to wander around for up to 50 sec. While wandering, the sheep cannot attack or cast spells but will regenerate very quickly. Any damage will transform the target back into its normal form. Only one target can be polymorphed at a time. Only works on Beasts, Humanoids and Critters.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Darnassus",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11419,
+       "text": "Creates a portal, teleporting group members that use it to Darnassus.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 50,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Ironforge",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11416,
+       "text": "Creates a portal, teleporting group members that use it to Ironforge.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 40,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Orgrimmar",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11417,
+       "text": "Creates a portal, teleporting group members that use it to Orgrimmar.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 40,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Stormwind",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 10059,
+       "text": "Creates a portal, teleporting group members that use it to Stormwind.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 40,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Thunder Bluff",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11420,
+       "text": "Creates a portal, teleporting group members that use it to Thunder Bluff.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 50,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Portal: Undercity",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11418,
+       "text": "Creates a portal, teleporting group members that use it to Undercity.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "850 Mana",
+       "range": "10 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "Reagents: Rune of Portals",
+       "level": 40,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Presence of Mind",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12043,
+       "text": "When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "note"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Remove Lesser Curse",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 475,
+       "text": "Removes 1 Curse or Bane from a friendly target.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Removes 1 Curse from a friendly target.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Slow Fall",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 130,
+       "text": "Slows falling speed for 30 sec.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Light Feather",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Dalaran",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1297659,
+       "text": "Teleports the caster to Dalaran.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 50,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Darnassus",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3565,
+       "text": "Teleports the caster to Darnassus.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 30,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Ironforge",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3562,
+       "text": "Teleports the caster to Ironforge.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 20,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Orgrimmar",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3567,
+       "text": "Teleports the caster to Orgrimmar.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 20,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Stormwind",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3561,
+       "text": "Teleports the caster to Stormwind.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 20,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Thunder Bluff",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3566,
+       "text": "Teleports the caster to Thunder Bluff.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 30,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Teleport: Undercity",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 3563,
+       "text": "Teleports the caster to Undercity.",
+       "school": "Arcane",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Rune of Teleportation",
+       "level": 20,
+       "not_from_class_trainer": "portal trainer",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Fire",
+   "spells": [
+    {
+     "name": "Blast Wave",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 11113,
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
+       "school": "Fire",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "215 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 13018,
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 200 to 238 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
+       "school": "Fire",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "270 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 208 to 248 Fire damage, and dazing them for 6 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 13019,
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 276 to 326 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
+       "school": "Fire",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "355 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 285 to 337 Fire damage, and dazing them for 6 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 13020,
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 365 to 431 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
+       "school": "Fire",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "450 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 374 to 442 Fire damage, and dazing them for 6 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 13021,
+       "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 453 to 533 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec.",
+       "school": "Fire",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "545 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 462 to 544 Fire damage, and dazing them for 6 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Combustion",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11129,
+       "text": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fire Blast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2136,
+       "text": "Blasts the enemy for 27 to 35 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "coefficient": "20.4% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2137,
+       "text": "Blasts the enemy for 57 to 69 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 62 to 76 Fire damage.",
+        "coefficient": "33.2% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 2138,
+       "text": "Blasts the enemy for 96 to 116 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 109 to 133 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8412,
+       "text": "Blasts the enemy for 156 to 186 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "165 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 176 to 210 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8413,
+       "text": "Blasts the enemy for 226 to 268 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "220 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 253 to 301 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10197,
+       "text": "Blasts the enemy for 315 to 371 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "280 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 344 to 406 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10199,
+       "text": "Blasts the enemy for 417 to 489 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "340 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the enemy for 446 to 524 Fire damage.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fire Ward",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 543,
+       "text": "Absorbs 162 Fire damage. Lasts 30 sec.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 165 Fire damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8457,
+       "text": "Absorbs 285 Fire damage. Lasts 30 sec.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 290 Fire damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8458,
+       "text": "Absorbs 463 Fire damage. Lasts 30 sec.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 470 Fire damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10223,
+       "text": "Absorbs 668 Fire damage. Lasts 30 sec.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "255 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 675 Fire damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10225,
+       "text": "Absorbs 913 Fire damage. Lasts 30 sec.",
+       "school": "Fire",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 920 Fire damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fireball",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 133,
+       "text": "Hurls a fiery ball that causes 16 to 24 Fire damage and an additional 2 Fire damage over 4 sec.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "35 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "coefficient": "12.3% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 143,
+       "text": "Hurls a fiery ball that causes 32 to 46 Fire damage and an additional 3 Fire damage over 6 sec.",
+       "school": "Fire",
+       "coefficient": "57.1% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "35 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 34 to 48 Fire damage and an additional 3 Fire damage over 6 sec.",
+        "coefficient": "27.1% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 145,
+       "text": "Hurls a fiery ball that causes 48 to 64 Fire damage and an additional 6 Fire damage over 6 sec.",
+       "school": "Fire",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "35 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 57 to 77 Fire damage and an additional 6 Fire damage over 6 sec.",
+        "coefficient": "50% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 3140,
+       "text": "Hurls a fiery ball that causes 66 to 90 Fire damage and an additional 12 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "85.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "35 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 89 to 121 Fire damage and an additional 12 Fire damage over 8 sec.",
+        "coefficient": "79.3% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8400,
+       "text": "Hurls a fiery ball that causes 98 to 130 Fire damage and an additional 16 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 146 to 194 Fire damage and an additional 20 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 8401,
+       "text": "Hurls a fiery ball that causes 138 to 182 Fire damage and an additional 24 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 207 to 273 Fire damage and an additional 28 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 8402,
+       "text": "Hurls a fiery ball that causes 171 to 221 Fire damage and an additional 24 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "220 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 264 to 344 Fire damage and an additional 32 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10148,
+       "text": "Hurls a fiery ball that causes 212 to 274 Fire damage and an additional 32 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "260 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 328 to 424 Fire damage and an additional 40 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 10149,
+       "text": "Hurls a fiery ball that causes 271 to 347 Fire damage and an additional 40 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 404 to 518 Fire damage and an additional 52 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 10150,
+       "text": "Hurls a fiery ball that causes 338 to 430 Fire damage and an additional 48 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 488 to 622 Fire damage and an additional 60 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 11",
+       "id": 10151,
+       "text": "Hurls a fiery ball that causes 397 to 505 Fire damage and an additional 56 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "395 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 561 to 715 Fire damage and an additional 72 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 12",
+       "id": 25306,
+       "text": "Hurls a fiery ball that causes 425 to 541 Fire damage and an additional 60 Fire damage over 8 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "410 Mana",
+       "range": "35 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a fiery ball that causes 596 to 760 Fire damage and an additional 76 Fire damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Flamestrike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2120,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 55 to 71 Fire damage and an additional 44 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 55 to 71 Fire damage and an additional 48 Fire damage over 8 sec.",
+        "coefficient": "13.4% of spell power (direct), 1.7% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2121,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 100 to 126 Fire damage and an additional 84 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "330 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 100 to 126 Fire damage and an additional 88 Fire damage over 8 sec.",
+        "coefficient": "15.7% of spell power (direct), 2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8422,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 159 to 197 Fire damage and an additional 132 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "490 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 159 to 197 Fire damage and an additional 140 Fire damage over 8 sec.",
+        "coefficient": "15.7% of spell power (direct), 2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8423,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 226 to 278 Fire damage and an additional 188 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "650 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 226 to 278 Fire damage and an additional 196 Fire damage over 8 sec.",
+        "coefficient": "15.7% of spell power (direct), 2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10215,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 298 to 366 Fire damage and an additional 256 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "815 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 298 to 366 Fire damage and an additional 264 Fire damage over 8 sec.",
+        "coefficient": "15.7% of spell power (direct), 2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10216,
+       "text": "Calls down a pillar of fire, burning all enemies within the area for 381 to 465 Fire damage and an additional 332 Fire damage over 8 sec. Only one Flamestrike can be active per Mage at a time.",
+       "school": "Fire",
+       "coefficient": "15.7% of spell power (direct), 3.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "990 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Calls down a pillar of fire, burning all enemies within the area for 381 to 465 Fire damage and an additional 340 Fire damage over 8 sec.",
+        "coefficient": "15.7% of spell power (direct), 2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frostfire Bolt",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 401502,
+       "text": "Launches a bolt of frostfire at the enemy, causing 102 to 118 Frostfire damage, slowing movement speed by 40% and causing an additional 27 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+       "school": "Fire, Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "205 Mana",
+       "range": "35 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1237312,
+       "text": "Launches a bolt of frostfire at the enemy, causing 181 to 209 Frostfire damage, slowing movement speed by 40% and causing an additional 39 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+       "school": "Fire, Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "35 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1237313,
+       "text": "Launches a bolt of frostfire at the enemy, causing 270 to 314 Frostfire damage, slowing movement speed by 40% and causing an additional 57 Frostfire damage over 9 sec. This spell will be checked against the lower of the target's Frost and Fire resists and counts as both Frost and Fire damage.",
+       "school": "Fire, Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "370 Mana",
+       "range": "35 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Pyroblast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 11366,
+       "text": "Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 148 to 194 Fire damage and an additional 56 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 12505,
+       "text": "Hurls an immense fiery boulder that causes 126 to 162 Fire damage and an additional 56 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 193 to 249 Fire damage and an additional 72 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 12522,
+       "text": "Hurls an immense fiery boulder that causes 179 to 227 Fire damage and an additional 76 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 270 to 342 Fire damage and an additional 96 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 12523,
+       "text": "Hurls an immense fiery boulder that causes 230 to 288 Fire damage and an additional 100 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "240 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 347 to 437 Fire damage and an additional 124 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 12524,
+       "text": "Hurls an immense fiery boulder that causes 291 to 363 Fire damage and an additional 124 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 427 to 535 Fire damage and an additional 156 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 12525,
+       "text": "Hurls an immense fiery boulder that causes 368 to 456 Fire damage and an additional 152 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "335 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 525 to 653 Fire damage and an additional 188 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 12526,
+       "text": "Hurls an immense fiery boulder that causes 448 to 554 Fire damage and an additional 184 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "385 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 625 to 775 Fire damage and an additional 228 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 18809,
+       "text": "Hurls an immense fiery boulder that causes 520 to 646 Fire damage and an additional 212 Fire damage over 12 sec.",
+       "school": "Fire",
+       "coefficient": "100% of spell power (direct), 15% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "440 Mana",
+       "range": "35 yd range",
+       "cast": "6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls an immense fiery boulder that causes 716 to 890 Fire damage and an additional 268 Fire damage over 12 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Scorch",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2948,
+       "text": "Scorch the enemy for 38 to 46 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 56 to 68 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8444,
+       "text": "Scorch the enemy for 54 to 64 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 81 to 97 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8445,
+       "text": "Scorch the enemy for 67 to 79 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 105 to 125 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8446,
+       "text": "Scorch the enemy for 89 to 105 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 139 to 165 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10205,
+       "text": "Scorch the enemy for 111 to 131 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 168 to 198 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10206,
+       "text": "Scorch the enemy for 143 to 169 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 207 to 246 Fire damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10207,
+       "text": "Scorch the enemy for 166 to 196 Fire damage.",
+       "school": "Fire",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Scorch the enemy for 237 to 279 Fire damage.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Frost",
+   "spells": [
+    {
+     "name": "Blizzard",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 10,
+       "text": "Ice shards pelt the target area doing 192 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 200 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6141,
+       "text": "Ice shards pelt the target area doing 344 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "520 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 360 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8427,
+       "text": "Ice shards pelt the target area doing 504 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "720 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 528 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10185,
+       "text": "Ice shards pelt the target area doing 704 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "935 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 728 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10186,
+       "text": "Ice shards pelt the target area doing 920 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,160 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 944 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10187,
+       "text": "Ice shards pelt the target area doing 1,168 Frost damage over 8 sec.",
+       "school": "Frost",
+       "coefficient": "4.2% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,400 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Ice shards pelt the target area doing 1,192 Frost damage over 8 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cold Snap",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12472,
+       "text": "Finishes the remaining cooldown on all your other Frost spells.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, this spell finishes the cooldown on all of your Frost spells.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cone of Cold",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 120,
+       "text": "Targets in a cone in front of the caster take 96 to 106 Frost damage and are slowed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 102 to 112 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8492,
+       "text": "Targets in a cone in front of the caster take 142 to 156 Frost damage and are slowed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "290 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 151 to 165 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10159,
+       "text": "Targets in a cone in front of the caster take 200 to 220 Frost damage and are slowed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "380 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 209 to 229 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10160,
+       "text": "Targets in a cone in front of the caster take 260 to 286 Frost damage and are slowed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "465 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 270 to 296 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10161,
+       "text": "Targets in a cone in front of the caster take 328 to 358 Frost damage and are slowed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "12.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "555 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Targets in a cone in front of the caster take 338 to 368 Frost damage and are slowed by 50% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 168,
+       "text": "Increases Armor by 30. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7300,
+       "text": "Increases Armor by 110. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 7301,
+       "text": "Increases Armor by 200. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Nova",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 122,
+       "text": "Blasts enemies near the caster for 21 to 23 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+       "school": "Frost",
+       "coefficient": "2.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "55 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "coefficient": "1.8% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 865,
+       "text": "Blasts enemies near the caster for 34 to 38 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+       "school": "Frost",
+       "coefficient": "2.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts enemies near the caster for 35 to 39 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6131,
+       "text": "Blasts enemies near the caster for 52 to 58 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+       "school": "Frost",
+       "coefficient": "2.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts enemies near the caster for 54 to 60 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10230,
+       "text": "Blasts enemies near the caster for 71 to 79 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+       "school": "Frost",
+       "coefficient": "2.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "145 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "25 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts enemies near the caster for 73 to 81 Frost damage and freezes them in place for up to 8 sec. Damage caused may interrupt the effect.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Ward",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6143,
+       "text": "Absorbs 162 Frost damage. Lasts 30 sec.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 165 Frost damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8461,
+       "text": "Absorbs 284 Frost damage. Lasts 30 sec.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 290 Frost damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8462,
+       "text": "Absorbs 463 Frost damage. Lasts 30 sec.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 470 Frost damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10177,
+       "text": "Absorbs 668 Frost damage. Lasts 30 sec.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "255 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 675 Frost damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 28609,
+       "text": "Absorbs 913 Frost damage. Lasts 30 sec.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "changed",
+        "text": "Absorbs 920 Frost damage. Lasts 30 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frostbolt",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 116,
+       "text": "Launches a bolt of frost at the enemy, causing 20 to 22 Frost damage and slowing movement speed by 40% for 5 sec.",
+       "school": "Frost",
+       "coefficient": "40.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "coefficient": "16.3% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 205,
+       "text": "Launches a bolt of frost at the enemy, causing 33 to 37 Frost damage and slowing movement speed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "48.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "30 yd range",
+       "cast": "1.8 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "coefficient": "26.9% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 837,
+       "text": "Launches a bolt of frost at the enemy, causing 46 to 52 Frost damage and slowing movement speed by 40% for 6 sec.",
+       "school": "Frost",
+       "coefficient": "59.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "2.2 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 54 to 60 Frost damage and slowing movement speed by 40% for 6 sec.",
+        "coefficient": "46.3% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 7322,
+       "text": "Launches a bolt of frost at the enemy, causing 61 to 67 Frost damage and slowing movement speed by 40% for 7 sec.",
+       "school": "Frost",
+       "coefficient": "70.6% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "30 yd range",
+       "cast": "2.6 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 78 to 86 Frost damage and slowing movement speed by 40% for 7 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8406,
+       "text": "Launches a bolt of frost at the enemy, causing 97 to 105 Frost damage and slowing movement speed by 40% for 7 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 132 to 144 Frost damage and slowing movement speed by 40% for 7 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 8407,
+       "text": "Launches a bolt of frost at the enemy, causing 134 to 146 Frost damage and slowing movement speed by 40% for 8 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "130 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 180 to 196 Frost damage and slowing movement speed by 40% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 8408,
+       "text": "Launches a bolt of frost at the enemy, causing 181 to 197 Frost damage and slowing movement speed by 40% for 8 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 235 to 255 Frost damage and slowing movement speed by 40% for 8 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10179,
+       "text": "Launches a bolt of frost at the enemy, causing 243 to 263 Frost damage and slowing movement speed by 40% for 9 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 301 to 325 Frost damage and slowing movement speed by 40% for 9 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 10180,
+       "text": "Launches a bolt of frost at the enemy, causing 305 to 331 Frost damage and slowing movement speed by 40% for 9 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 363 to 393 Frost damage and slowing movement speed by 40% for 9 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 10181,
+       "text": "Launches a bolt of frost at the enemy, causing 382 to 412 Frost damage and slowing movement speed by 40% for 9 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "260 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 440 to 474 Frost damage and slowing movement speed by 40% for 9 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 11",
+       "id": 25304,
+       "text": "Launches a bolt of frost at the enemy, causing 457 to 493 Frost damage and slowing movement speed by 40% for 9 sec.",
+       "school": "Frost",
+       "coefficient": "81.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "290 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "not_from_class_trainer": "tome, quest or drop",
+       "classic": {
+        "status": "changed",
+        "text": "Launches a bolt of frost at the enemy, causing 515 to 555 Frost damage and slowing movement speed by 40% for 9 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Ice Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7302,
+       "text": "Increases Armor by 290 and frost resistance by 6. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "240 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7320,
+       "text": "Increases Armor by 380 and frost resistance by 9. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10219,
+       "text": "Increases Armor by 470 and frost resistance by 12. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "410 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10220,
+       "text": "Increases Armor by 560 and frost resistance by 15. If an enemy strikes the caster, they may have their movement slowed by 30% and the time between their attacks increased by 25% for 5 sec. Only one type of Armor spell can be active on the Mage at any time. Lasts 30 min.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "500 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Ice Barrier",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 11426,
+       "text": "Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Instantly shields you, absorbing 454 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 13031,
+       "text": "Instantly shields you, absorbing 561 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "360 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly shields you, absorbing 568 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 13032,
+       "text": "Instantly shields you, absorbing 692 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "420 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly shields you, absorbing 699 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 13033,
+       "text": "Instantly shields you, absorbing 819 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "480 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly shields you, absorbing 826 damage. Lasts 1 min. While the shield holds, spells will not be interrupted.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Ice Block",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 11958,
+       "text": "You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Ice Lance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1312002,
+       "text": "Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 400640,
+       "text": "Deals 34 to 40 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "55 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1240044,
+       "text": "Deals 44 to 52 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1240045,
+       "text": "Deals 76 to 90 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1240046,
+       "text": "Deals 95 to 111 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 1240047,
+       "text": "Deals 136 to 160 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets.",
+       "school": "Frost",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Shoot",
+   "rank": "",
+   "text": "Attack with an equipped wand.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Comprehend Scroll",
+   "rank": "",
+   "text": "Decipher an untranslated scroll.",
+   "tooltip_source": "beta"
+  },
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: Cloth.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  }
+ ]
+}

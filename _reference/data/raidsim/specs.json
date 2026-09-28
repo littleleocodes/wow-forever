@@ -1,0 +1,1122 @@
+{
+  "_comment": "Our scorer spec ids -> the ElliotWood/Forever simulator's spec folder (ui/specs/<class>/<spec>), gear preset, rotation (APL), player options (protojson fragment of the Player spec oneof), consumables and race, all taken from that folder's presets.ts on 2026-09-26. `builds` are our proposed-builds.json ids raced by default; the sim's own preset talents are added automatically. buffs_off / debuffs_off: proto field names of the sim's full buff set that the spec itself provides through a talent (Trueshot Aura, Leader of the Pack, Moonkin Aura); the bench clears them so the talent's own value is measured instead of duplicated.",
+  "mage": {
+    "frost-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/mage/frost-raid.apl.json",
+      "sim_class": "ClassMage",
+      "sim_spec": "mage/dps",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+      "share_build": "frost-fingers-of-frost-raid",
+      "spec": {
+        "mage": {
+          "options": {
+            "classOptions": {"defaultMageArmor": "MageArmorMageArmor"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 17708,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 25122
+      },
+      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc"],
+      "tune_builds": ["frost-arcane-power-raid"],
+      "rotation_note": "Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
+    },
+    "fire-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/fire-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/mage/fire-raid.apl.json",
+      "sim_class": "ClassMage",
+      "sim_spec": "mage/dps",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/mage/dps/apls/fire.apl.json",
+      "spec": {
+        "mage": {
+          "options": {
+            "classOptions": {"defaultMageArmor": "MageArmorMageArmor"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 25122
+      },
+      "builds": ["fire-raid", "opt-fire-raid-raid-dps"]
+    },
+    "arcane-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/arcane-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/mage/arcane-dps.apl.json",
+      "sim_class": "ClassMage",
+      "sim_spec": "mage/dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/mage/dps/apls/arcane.apl.json",
+      "spec": {
+        "mage": {
+          "options": {
+            "classOptions": {"defaultMageArmor": "MageArmorMageArmor"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 17708,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 25122
+      },
+      "builds": ["arcane-blast-raid"],
+      "rotation_only": true,
+      "preset_names": ["Arcane DPS", "Arcane 35/0/16"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+    },
+    "frostfire-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/mage/frostfire-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/mage/frostfire-raid.apl.json",
+      "sim_class": "ClassMage",
+      "sim_spec": "mage/dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
+      "spec": {
+        "mage": {
+          "options": {
+            "classOptions": {"defaultMageArmor": "MageArmorMageArmor"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 25122
+      },
+      "builds": ["frostfire-raid"],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built on Frostfire Bolt, which counts as both schools. The community simulator ships Frostfire Bolt as a stub: this target runs on our implementation of it (_reference/data/raidsim/patches/), so its numbers are our model of the beta, not the community's."
+    }
+  },
+  "priest": {
+    "shadow-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/priest/shadow-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/priest/shadow-dps.apl.json",
+      "sim_class": "ClassPriest",
+      "sim_spec": "priest/dps",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+      "apl": "ui/specs/priest/dps/apls/shadow.apl.json",
+      "spec": {
+        "dpsPriest": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 9264,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 20749
+      },
+      "builds": ["opt-shadow-dps-raid-dps"],
+      "gear_note": "2026-09-27: was p1.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete p0.bis preset (its DEFAULT_GEAR)."
+    },
+    "smite-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/priest/smite-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/priest/smite-dps.apl.json",
+      "sim_class": "ClassPriest",
+      "sim_spec": "priest/dps",
+      "race": "RaceTroll",
+      "distance": 20,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+      "apl": "ui/specs/priest/dps/apls/smite.apl.json",
+      "spec": {
+        "dpsPriest": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 9264,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "mhImbueId": 20749
+      },
+      "builds": ["smite-discipline-raid"],
+      "rotation_only": true,
+      "preset_names": ["Smite", "Smite 31/17/3"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Holy/Discipline damage (Smite, Holy Fire)."
+    }
+  },
+  "warlock": {
+    "affliction-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/affliction-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warlock/affliction-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "profile": "raid-dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "summon": "Succubus"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 9264,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "alcoholId": 21151,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["affliction-dot-raid", "opt-affliction-raid-raid-dps"]
+    },
+    "fire-destro-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/fire-destro-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warlock/fire-destro-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "profile": "raid-dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 6373,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "alcoholId": 21151,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["destruction-fire-raid", "opt-fire-destro-raid-raid-dps"]
+    },
+    "sb-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/sb-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warlock/sb-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "profile": "raid-dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 9264,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "alcoholId": 21151,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps"]
+    },
+    "demonology-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warlock/demonology-raid.apl.json",
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "summon": "Succubus", "pactSacrifice": "Imp"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 9264,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "alcoholId": 21151,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["demonology-pact-raid"],
+      "rotation_only": true,
+      "preset_names": ["Demonic Pact", "Demonic Pact 2/31/18"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+    },
+    "incinerate-raid": {
+      "sim_class": "ClassWarlock",
+      "sim_spec": "warlock/dps",
+      "race": "RaceGnome",
+      "distance": 25,
+      "profession1": "Enchanting",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+      "spec": {
+        "warlock": {
+          "options": {
+            "classOptions": {"armor": "DemonArmor", "curseOptions": "Elements", "sacrificeSummon": true, "summon": "Imp"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 6373,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "alcoholId": 21151,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["destruction-incinerate-raid"],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Incinerate warlock (2026-09-28, new-builds survey): Incinerate, the Forever Destruction capstone cast by none of the simulator's warlock rotations, as the filler (+25% on an Immolated target) with Immolate kept up and Conflagrate while it burns. Kept as that untuned rotation: the rotation search on destruction-incinerate-raid (2026-09-28) inserted Shadow Bolt ahead of Incinerate in its first round, on the training dummy and in a raid, so a tuned rotation here would no longer be an Incinerate rotation."
+    }
+  },
+  "hunter": {
+    "mm-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/mm-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/hunter/mm-raid.apl.json",
+      "sim_class": "ClassHunter",
+      "sim_spec": "hunter/dps",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 12,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+      "spec": {
+        "hunter": {
+          "options": {
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "Cat", "petAttackSpeed": "OneTwo", "petUptime": 1}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452,
+        "potId": 13444
+      },
+      "builds": ["bm-mm-raid", "bm-mm-full-buffs-raid", "opt-mm-raid-raid-dps"],
+      "buffs_off": ["trueshot_aura"],
+      "self_debuffs": {"hunters_mark": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "mm-lonewolf-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid.apl.json",
+      "sim_class": "ClassHunter",
+      "sim_spec": "hunter/dps",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 12,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+      "spec": {
+        "hunter": {
+          "options": {
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "PetNone", "petUptime": 0}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452,
+        "potId": 13444
+      },
+      "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps"],
+      "buffs_off": ["trueshot_aura"],
+      "self_debuffs": {"hunters_mark": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "bm-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/hunter/bm-raid.apl.json",
+      "sim_class": "ClassHunter",
+      "sim_spec": "hunter/dps",
+      "race": "RaceTroll",
+      "distance": 12,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/hunter/dps/apls/bm.apl.json",
+      "spec": {
+        "hunter": {
+          "options": {
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "Cat", "petAttackSpeed": "OneTwo", "petUptime": 1}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452,
+        "potId": 13444
+      },
+      "self_debuffs": {"hunters_mark": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["mm-hawk-raid"],
+      "rotation_only": true,
+      "preset_names": ["Beast Mastery 35/16/0"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+    },
+    "melee-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
+      "sim_class": "ClassHunter",
+      "sim_spec": "hunter/dps",
+      "race": "RaceTroll",
+      "distance": 5,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+      "apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+      "spec": {
+        "hunter": {
+          "options": {
+            "classOptions": {"ammo": "ThoriumHeadedArrow", "quiverBonus": "Speed15", "petType": "PetNone", "petUptime": 0}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452,
+        "potId": 13444
+      },
+      "self_debuffs": {"hunters_mark": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps"],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk: Aspect of the Beast's melee attack power and Deadly Aspects' melee haste are missing, so these numbers are a lower bound, and the scorer's melee model is not calibrated to them."
+    }
+  },
+  "rogue": {
+    "combat-swords-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/combat-swords-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/rogue/combat-swords-raid.apl.json",
+      "sim_class": "ClassRogue",
+      "sim_spec": "rogue/dps",
+      "profile": "raid-dps",
+      "race": "RaceDwarf",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+      "apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
+      "spec": {
+        "rogue": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "dragonbreathChili": true,
+        "foodId": 13928,
+        "conjuredId": 7676,
+        "mhImbueId": 26891,
+        "ohImbueId": 27186,
+        "goblinSapper": true
+      },
+      "builds": ["combat-swords-raid", "opt-combat-swords-raid-raid-dps"],
+      "not_measured": {"Murder": "+4% against Humanoid and Giant targets only (beta tooltip); the simulator's standard target is neither, so the removal run reads 0. Raid value = 30% of the bonus (assumed share of raid boss fights against those types: Zul'Gurub's trolls, several Molten Core and AQ40 bosses; not Blackwing Lair's dragonkin or Naxxramas's undead)."},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "combat-daggers-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/combat-daggers-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/rogue/combat-daggers-raid.apl.json",
+      "sim_class": "ClassRogue",
+      "sim_spec": "rogue/dps",
+      "profile": "raid-dps",
+      "race": "RaceDwarf",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+      "apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+      "spec": {
+        "rogue": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "dragonbreathChili": true,
+        "foodId": 13928,
+        "conjuredId": 7676,
+        "mhImbueId": 26891,
+        "ohImbueId": 27186,
+        "goblinSapper": true
+      },
+      "builds": ["combat-daggers-raid", "opt-combat-daggers-raid-raid-dps"],
+      "not_measured": {"Murder": "+4% against Humanoid and Giant targets only (beta tooltip); the simulator's standard target is neither, so the removal run reads 0. Raid value = 30% of the bonus (assumed share of raid boss fights against those types: Zul'Gurub's trolls, several Molten Core and AQ40 bosses; not Blackwing Lair's dragonkin or Naxxramas's undead)."},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "assassination-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/assassination-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/rogue/assassination-raid.apl.json",
+      "sim_class": "ClassRogue",
+      "sim_spec": "rogue/dps",
+      "race": "RaceDwarf",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+      "apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+      "spec": {
+        "rogue": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "dragonbreathChili": true,
+        "foodId": 13928,
+        "conjuredId": 7676,
+        "mhImbueId": 26891,
+        "ohImbueId": 27186,
+        "goblinSapper": true
+      },
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["assassination-mutilate-raid", "assassination-seal-fate-raid"],
+      "rotation_only": true,
+      "preset_names": ["Mutilate", "Assassination Mutilate 31/20/0"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there)."
+    },
+    "subtlety-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/rogue/subtlety-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/rogue/subtlety-raid.apl.json",
+      "sim_class": "ClassRogue",
+      "sim_spec": "rogue/dps",
+      "race": "RaceDwarf",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+      "apl": "ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
+      "spec": {
+        "rogue": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "dragonbreathChili": true,
+        "foodId": 13928,
+        "conjuredId": 7676,
+        "mhImbueId": 26891,
+        "ohImbueId": 27186,
+        "goblinSapper": true
+      },
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["subtlety-hemo-raid"],
+      "rotation_only": true,
+      "preset_names": ["Subtlety Hemo 15/0/36"],
+      "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
+    }
+  },
+  "warrior": {
+    "arms-2h-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warrior/arms-2h-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warrior/arms-2h-raid.apl.json",
+      "sim_class": "ClassWarrior",
+      "sim_spec": "warrior/dps",
+      "profile": "raid-dps",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+      "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+      "spec": {
+        "dpsWarrior": {
+          "options": {
+            "classOptions": {"queueDelay": 250, "startingRage": 0, "useBattleShout": true, "defaultStance": "WarriorStanceBerserker"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452
+      },
+      "builds": ["arms-2h-raid", "opt-arms-2h-raid-raid-dps"]
+    },
+    "fury-dw-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warrior/fury-dw-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warrior/fury-dw-raid.apl.json",
+      "sim_class": "ClassWarrior",
+      "sim_spec": "warrior/dps",
+      "profile": "raid-dps",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
+      "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+      "spec": {
+        "dpsWarrior": {
+          "options": {
+            "classOptions": {"queueDelay": 250, "startingRage": 0, "useBattleShout": true, "defaultStance": "WarriorStanceBerserker"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452
+      },
+      "builds": ["fury-dw-raid", "opt-fury-dw-raid-raid-dps"]
+    },
+    "prot-tank": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warrior/prot-tank-raid.apl.json",
+      "sim_class": "ClassWarrior",
+      "sim_spec": "warrior/protection",
+      "profile": "raid-tank",
+      "race": "RaceDwarf",
+      "distance": 5,
+      "profession1": "Engineering",
+      "tank": true,
+      "gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
+      "apl": "ui/specs/warrior/protection/apls/protection.apl.json",
+      "spec": {
+        "protectionWarrior": {
+          "options": {
+            "classOptions": {"queueDelay": 250, "startingRage": 0, "useBattleShout": true, "defaultStance": "WarriorStanceDefensive"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "guardianElixirId": 3825,
+        "defenseElixirId": 13445,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452
+      },
+      "builds": ["prot-raid-tank", "opt-prot-tank-raid-tank"],
+      "gear_note": "2026-09-27: was p1.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete launch preset (its DEFAULT_GEAR)."
+    }
+  },
+  "paladin": {
+    "ret-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/paladin/ret-dps.apl.json",
+      "sim_class": "ClassPaladin",
+      "sim_spec": "paladin/retribution",
+      "profile": "raid-dps",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "apl": "ui/specs/paladin/retribution/apls/default.apl.json",
+      "spec": {
+        "retributionPaladin": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "dragonbreathChili": true,
+        "foodId": 13810,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps"],
+      "self_buffs": {"greater_blessing_of_might": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "prot-tank": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
+      "sim_class": "ClassPaladin",
+      "sim_spec": "paladin/protection",
+      "profile": "raid-tank",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "tank": true,
+      "gear": "ui/specs/paladin/protection/gear_sets/default.gear.json",
+      "apl": "ui/specs/paladin/protection/apls/default.apl.json",
+      "spec": {
+        "protectionPaladin": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "guardianElixirId": 3825,
+        "defenseElixirId": 13445,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "foodId": 20452
+      },
+      "builds": ["prot-tank", "opt-prot-tank-raid-tank"]
+    },
+    "seal-of-fury-raid": {
+      "sim_class": "ClassPaladin",
+      "sim_spec": "paladin/retribution",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "apl": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
+      "spec": {
+        "retributionPaladin": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "dragonbreathChili": true,
+        "foodId": 13810,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "self_buffs": {"greater_blessing_of_might": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": ["ret-raid-dps"],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Seal of Fury Retribution (2026-09-28, new-builds survey): Seal of Fury, a Forever seal (35 Holy damage on every melee hit; a shield turns half of it into an absorb), kept up instead of the Seal of Command / Seal of Righteousness twist of the Retribution rotation. Kept as that untuned swap: the rotation search on this entry (2026-09-28) first added Consecration, then dropped Seal of Fury and went back to the twist within four rounds (the Retribution rotation of ret-dps, which it then matched), so a tuned rotation here would no longer be a Seal of Fury rotation."
+    },
+    "shockadin-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/shockadin-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/paladin/shockadin-raid.apl.json",
+      "sim_class": "ClassPaladin",
+      "sim_spec": "paladin/retribution",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
+      "spec": {
+        "retributionPaladin": {
+          "options": {
+            "classOptions": {}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 21546,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "dragonbreathChili": true,
+        "foodId": 13810,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "self_buffs": {"greater_blessing_of_might": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": [],
+      "rotation_only": true,
+      "preset_names": [],
+      "rotation_note": "Shockadin (2026-09-28, new-builds survey): Holy Shock from the Holy tree on top of the Retribution rotation (21/0/30 and deeper Holy starts with Light's Vigil); none of the simulator's paladin rotations casts Holy Shock or Light's Vigil."
+    }
+  },
+  "shaman": {
+    "elemental-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/shaman/elemental-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/shaman/elemental-dps.apl.json",
+      "sim_class": "ClassShaman",
+      "sim_spec": "shaman/elemental",
+      "profile": "raid-dps",
+      "race": "RaceTroll",
+      "distance": 15,
+      "profession1": "Enchanting",
+      "profession2": "Alchemy",
+      "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+      "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+      "spec": {
+        "elementalShaman": {
+          "options": {
+            "classOptions": {"shieldProcrate": 0}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 6373,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps"],
+      "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "enhancement-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/shaman/enhancement-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/shaman/enhancement-dps.apl.json",
+      "sim_class": "ClassShaman",
+      "sim_spec": "shaman/enhancement",
+      "profile": "raid-dps",
+      "race": "RaceOrc",
+      "distance": 5,
+      "profession1": "Alchemy",
+      "profession2": "Enchanting",
+      "gear": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
+      "apl": "ui/specs/shaman/enhancement/apls/forever.apl.json",
+      "spec": {
+        "enhancementShaman": {
+          "options": {
+            "classOptions": {"shieldProcrate": 0, "imbueMh": "WindfuryWeapon"},
+            "imbueOh": "WindfuryWeapon",
+            "syncType": "Auto"
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "battleElixirId": 13452,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 6373,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "dragonbreathChili": true,
+        "foodId": 13810,
+        "potId": 13444
+      },
+      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps"],
+      "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "stormcaller-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/shaman/stormcaller-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/shaman/stormcaller-dps.apl.json",
+      "sim_class": "ClassShaman",
+      "sim_spec": "shaman/elemental",
+      "race": "RaceTroll",
+      "distance": 15,
+      "profession1": "Enchanting",
+      "profession2": "Alchemy",
+      "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+      "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+      "spec": {
+        "elementalShaman": {
+          "options": {
+            "classOptions": {"shieldProcrate": 0}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "schoolElixirId": 6373,
+        "guardianElixirId": 20007,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "conjuredId": 12662
+      },
+      "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "builds": [],
+      "rotation_only": true,
+      "preset_names": ["Stormcaller 28/23/0"],
+      "rotation_note": "Stormcaller (2026-09-28, new-builds survey): the simulator's Elemental/Enhancement hybrid preset (28/23/0) as a target of its own, so its talents and rotation are tuned rather than raced under the pure Elemental build's."
+    }
+  },
+  "druid": {
+    "balance-dps": {
+      "apl_opt": "_reference/data/raidsim/apls/druid/balance-dps.apl.json",
+      "sim_class": "ClassDruid",
+      "sim_spec": "druid/balance",
+      "profile": "raid-dps",
+      "race": "RaceTauren",
+      "distance": 15,
+      "profession1": "Alchemy",
+      "profession2": "Tailoring",
+      "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
+      "apl": "ui/specs/druid/balance/apls/default.apl.json",
+      "spec": {
+        "balanceDruid": {
+          "options": {
+            "classOptions": {
+              "innervateTarget": {}
+            }
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13512,
+        "spellPowerElixirId": 13454,
+        "guardianElixirId": 20007,
+        "zanzaId": 8423,
+        "foodId": 18254,
+        "potId": 13444,
+        "mhImbueId": 25122
+      },
+      "builds": ["balance-moonkin-raid", "opt-balance-dps-raid-dps"],
+      "buffs_off": ["moonkin_aura"],
+      "self_buffs": {"gift_of_the_wild": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "feral-cat-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/druid/feral-cat-dps-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/druid/feral-cat-dps.apl.json",
+      "sim_class": "ClassDruid",
+      "sim_spec": "druid/feralcat",
+      "profile": "raid-dps",
+      "race": "RaceTauren",
+      "distance": 0,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "gear": "ui/specs/druid/feralcat/gear_sets/launch.gear.json",
+      "apl": "ui/specs/druid/feralcat/apls/default.apl.json",
+      "spec": {
+        "feralCatDruid": {
+          "options": {}
+        }
+      },
+      "consumables": {
+        "flaskId": 13511,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8412,
+        "dragonbreathChili": true,
+        "foodId": 13928,
+        "potId": 13444,
+        "conjuredId": 12662,
+        "goblinSapper": true
+      },
+      "builds": ["feral-cat-dps", "opt-feral-cat-dps-raid-dps"],
+      "buffs_off": ["leader_of_the_pack"],
+      "gear_note": "2026-09-27: was p0.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete launch preset (its DEFAULT_GEAR p0.bis is the incomplete one).",
+      "self_buffs": {"gift_of_the_wild": true},
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+    },
+    "feral-bear-tank": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
+      "sim_class": "ClassDruid",
+      "sim_spec": "druid/feralbear",
+      "profile": "raid-tank",
+      "race": "RaceTauren",
+      "distance": 0,
+      "profession1": "Engineering",
+      "profession2": "Leatherworking",
+      "tank": true,
+      "gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
+      "apl": "ui/specs/druid/feralbear/apls/default.apl.json",
+      "spec": {
+        "feralBearDruid": {
+          "options": {"startingRage": 0}
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "guardianElixirId": 3825,
+        "defenseElixirId": 13445,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452
+      },
+      "builds": ["feral-bear-tank", "opt-feral-bear-tank-raid-tank"],
+      "buffs_off": ["leader_of_the_pack"]
+    }
+  },
+  "_dummy_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+}

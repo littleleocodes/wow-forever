@@ -1,0 +1,112 @@
+{
+ "id": "cand-shockadin-raid-from-21-0-30",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Improved Seals",
+    3
+   ],
+   [
+    "Reverence",
+    3
+   ],
+   [
+    "Infusion of Light",
+    1
+   ]
+  ],
+  "Protection": [],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Twist of Light",
+    1
+   ],
+   [
+    "Instrument of Law",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for shockadin-raid from F:/wow-forever/paladin/raid/raidsim/candidates/start-shockadin-21-0-30.json in the dummy setting: 272.4 -> 338.7 DPS on a third seed.",
+ "search": {
+  "start": "F:/wow-forever/paladin/raid/raidsim/candidates/start-shockadin-21-0-30.json",
+  "setting": "dummy",
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Holy Shock -> Twist of Light",
+    "gain_seed1": 0.12995928643232535,
+    "gain_seed2": 0.12847272191345183,
+    "split": "20/0/31"
+   },
+   {
+    "round": 2,
+    "move": "2 points Purifying Power -> Instrument of Law",
+    "gain_seed1": 0.051571988257242074,
+    "gain_seed2": 0.05126014539111878,
+    "split": "18/0/33"
+   },
+   {
+    "round": 3,
+    "move": "1 point Divine Favor -> Champion of the Light",
+    "gain_seed1": 0.048317840837416304,
+    "gain_seed2": 0.04806858719335372,
+    "split": "17/0/34"
+   }
+  ],
+  "dps_start": 272.3748627044031,
+  "dps_end": 338.6546996756467
+ }
+}

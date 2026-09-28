@@ -1,0 +1,118 @@
+{
+ "dummy": {
+  "class": "mage",
+  "spec": "frost-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid.apl.json",
+  "builds": [
+   {
+    "label": "frost-fingers-of-frost-raid",
+    "talents": "0500250030003-01-055500033100030025"
+   },
+   {
+    "label": "sim preset: Frost DPS",
+    "talents": "0502050030003--055500033100030024"
+   },
+   {
+    "label": "frost-arcane-power-raid",
+    "talents": "230205020102311531--055500032"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "dummy": {
+    "frost-fingers-of-frost-raid": {
+     "before": 566.2098657799438,
+     "after": 566.2098657799438,
+     "base": 566.2098657799438,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Frost DPS": {
+     "before": 557.2061333093216,
+     "after": 557.2061333093216,
+     "base": 557.2061333093216,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "frost-arcane-power-raid": {
+     "before": 548.0966366086882,
+     "after": 548.0966366086882,
+     "base": 548.0966366086882,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ },
+ "raid": {
+  "class": "mage",
+  "spec": "frost-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid-raid.apl.json",
+  "builds": [
+   {
+    "label": "frost-fingers-of-frost-raid",
+    "talents": "0500250030003-01-055500033100030025"
+   },
+   {
+    "label": "sim preset: Frost DPS",
+    "talents": "0502050030003--055500033100030024"
+   },
+   {
+    "label": "frost-arcane-power-raid",
+    "talents": "230205020102311531--055500032"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "frost-fingers-of-frost-raid": {
+     "before": 645.6939678508667,
+     "after": 645.6939678508667,
+     "base": 645.6939678508667,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Frost DPS": {
+     "before": 634.7328184706677,
+     "after": 634.7328184706677,
+     "base": 634.7328184706677,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "frost-arcane-power-raid": {
+     "before": 626.848499826682,
+     "after": 626.848499826682,
+     "base": 626.848499826682,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "date": "2026-09-26",
+ "sims": {
+  "classic-era": "7779ebb",
+  "forever": "40be98e"
+ },
+ "buffs": {
+  "trueshot_aura": {
+   "talent": [
+    "hunter",
+    "Trueshot Aura"
+   ],
+   "beneficiaries": 4,
+   "why": "a party aura: the hunter sits in a melee group of four others",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "warrior/fury-dw-raid": {
+       "build": "fury-dw-raid",
+       "dps_full": 1843.1221827377465,
+       "dps_off": 1793.705711510714,
+       "delta": 0.027549932472151366,
+       "how": "measured"
+      },
+      "rogue/combat-swords-raid": {
+       "build": "combat-swords-raid",
+       "dps_full": 1267.1200936350613,
+       "dps_off": 1230.2098520938064,
+       "delta": 0.03000320756530602,
+       "how": "measured"
+      },
+      "rogue/combat-daggers-raid": {
+       "build": "combat-daggers-raid",
+       "dps_full": 1259.1608707472708,
+       "dps_off": 1224.3566483096808,
+       "delta": 0.028426539346717204,
+       "how": "measured"
+      },
+      "paladin/ret-dps": {
+       "build": "ret-raid-dps",
+       "dps_full": 660.6948708360586,
+       "dps_off": 644.1783507988076,
+       "delta": 0.025639669536813556,
+       "how": "measured"
+      },
+      "shaman/enhancement-dps": {
+       "build": "enhancement-raid-support",
+       "dps_full": 777.4061096212495,
+       "dps_off": 755.37999984141,
+       "delta": 0.029158979301098457,
+       "how": "measured"
+      },
+      "druid/feral-cat-dps": {
+       "build": "feral-cat-dps",
+       "dps_full": 671.2865559292646,
+       "dps_off": 652.0513268334412,
+       "delta": 0.02949956284766041,
+       "how": "measured"
+      }
+     },
+     "beneficiaries": 4,
+     "mean_delta": 0.0283796485116245,
+     "raid_value": 0.113518594046498
+    },
+    "forever": {
+     "receivers": {
+      "(tooltip)": {
+       "build": "-",
+       "delta": 0.02,
+       "how": "beta tooltip: 30 ranged attack power for the party, about 2% of a raid hunter's ranged attack power; one other hunter in the party (the Forever fork has no party-buff switch)"
+      }
+     },
+     "mean_delta": 0.02,
+     "beneficiaries": 1,
+     "raid_value": 0.02,
+     "how": "beta tooltip: 30 ranged attack power for the party, about 2% of a raid hunter's ranged attack power; one other hunter in the party (the Forever fork has no party-buff switch)"
+    }
+   }
+  },
+  "leader_of_the_pack": {
+   "talent": [
+    "druid",
+    "Leader of the Pack"
+   ],
+   "beneficiaries": 4,
+   "why": "a party aura: the feral druid sits in a melee group of four others",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "warrior/fury-dw-raid": {
+       "build": "fury-dw-raid",
+       "dps_full": 1843.1221827377465,
+       "dps_off": 1800.204122251449,
+       "delta": 0.02384066337578509,
+       "how": "measured"
+      },
+      "rogue/combat-swords-raid": {
+       "build": "combat-swords-raid",
+       "dps_full": 1267.1200936350613,
+       "dps_off": 1258.5842128281813,
+       "delta": 0.006782129252756848,
+       "how": "measured"
+      },
+      "rogue/combat-daggers-raid": {
+       "build": "combat-daggers-raid",
+       "dps_full": 1259.1608707472708,
+       "dps_off": 1251.3897090508196,
+       "delta": 0.006210025254519296,
+       "how": "measured"
+      },
+      "paladin/ret-dps": {
+       "build": "ret-raid-dps",
+       "dps_full": 660.6948708360586,
+       "dps_off": 643.4330984770465,
+       "delta": 0.026827610205115763,
+       "how": "measured"
+      },
+      "shaman/enhancement-dps": {
+       "build": "enhancement-raid-support",
+       "dps_full": 777.4061096212495,
+       "dps_off": 753.3284407121992,
+       "delta": 0.03196171498090157,
+       "how": "measured"
+      },
+      "hunter/mm-raid": {
+       "build": "bm-mm-raid",
+       "dps_full": 1048.7283280156116,
+       "dps_off": 1022.1602905643925,
+       "delta": 0.025992046156038177,
+       "how": "measured"
+      }
+     },
+     "beneficiaries": 4,
+     "mean_delta": 0.020269031537519456,
+     "raid_value": 0.08107612615007782
+    },
+    "forever": {
+     "receivers": {
+      "warrior/fury-dw-raid": {
+       "build": "fury-dw-raid",
+       "dps_full": 1843.1221827377465,
+       "dps_off": 1800.204122251449,
+       "delta": 0.02384066337578509,
+       "how": "from classic-era"
+      },
+      "rogue/combat-swords-raid": {
+       "build": "combat-swords-raid",
+       "dps_full": 1267.1200936350613,
+       "dps_off": 1258.5842128281813,
+       "delta": 0.006782129252756848,
+       "how": "from classic-era"
+      },
+      "rogue/combat-daggers-raid": {
+       "build": "combat-daggers-raid",
+       "dps_full": 1259.1608707472708,
+       "dps_off": 1251.3897090508196,
+       "delta": 0.006210025254519296,
+       "how": "from classic-era"
+      },
+      "paladin/ret-dps": {
+       "build": "ret-raid-dps",
+       "dps_full": 660.6948708360586,
+       "dps_off": 643.4330984770465,
+       "delta": 0.026827610205115763,
+       "how": "from classic-era"
+      },
+      "shaman/enhancement-dps": {
+       "build": "enhancement-raid-support",
+       "dps_full": 777.4061096212495,
+       "dps_off": 753.3284407121992,
+       "delta": 0.03196171498090157,
+       "how": "from classic-era"
+      },
+      "hunter/mm-raid": {
+       "build": "bm-mm-raid",
+       "dps_full": 1048.7283280156116,
+       "dps_off": 1022.1602905643925,
+       "delta": 0.025992046156038177,
+       "how": "from classic-era"
+      }
+     },
+     "mean_delta": 0.020269031537519456,
+     "beneficiaries": 4,
+     "raid_value": 0.08107612615007782,
+     "how": "the same +3% party crit in the beta tooltip; the Forever fork's party-buff switch is a no-op, so the Classic measurement is used"
+    }
+   }
+  },
+  "moonkin_aura": {
+   "talent": [
+    "druid",
+    "Moonkin Form"
+   ],
+   "beneficiaries": 4,
+   "why": "a party aura: the moonkin sits in a caster group of four others",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "mage/frost-raid": {
+       "build": "frost-arcane-power-raid",
+       "dps_full": 781.2660628217327,
+       "dps_off": 764.2274667593958,
+       "delta": 0.022295189329672678,
+       "how": "measured"
+      },
+      "mage/fire-raid": {
+       "build": "fire-raid",
+       "dps_full": 1003.0884970455409,
+       "dps_off": 969.922265416033,
+       "delta": 0.03419473169355658,
+       "how": "measured"
+      },
+      "warlock/sb-raid": {
+       "build": "ds-ruin-raid",
+       "dps_full": 948.5032864125101,
+       "dps_off": 929.1621320244443,
+       "delta": 0.020815693754033606,
+       "how": "measured"
+      },
+      "shaman/elemental-dps": {
+       "build": "elemental-raid-dps",
+       "dps_full": 729.903025606699,
+       "dps_off": 715.9769161862822,
+       "delta": 0.019450500575626774,
+       "how": "measured"
+      }
+     },
+     "beneficiaries": 4,
+     "mean_delta": 0.02418902883822241,
+     "raid_value": 0.09675611535288964
+    },
+    "forever": {
+     "receivers": {
+      "mage/frost-raid": {
+       "build": "frost-arcane-power-raid",
+       "dps_full": 781.2660628217327,
+       "dps_off": 764.2274667593958,
+       "delta": 0.022295189329672678,
+       "how": "from classic-era"
+      },
+      "mage/fire-raid": {
+       "build": "fire-raid",
+       "dps_full": 1003.0884970455409,
+       "dps_off": 969.922265416033,
+       "delta": 0.03419473169355658,
+       "how": "from classic-era"
+      },
+      "warlock/sb-raid": {
+       "build": "ds-ruin-raid",
+       "dps_full": 948.5032864125101,
+       "dps_off": 929.1621320244443,
+       "delta": 0.020815693754033606,
+       "how": "from classic-era"
+      },
+      "shaman/elemental-dps": {
+       "build": "elemental-raid-dps",
+       "dps_full": 729.903025606699,
+       "dps_off": 715.9769161862822,
+       "delta": 0.019450500575626774,
+       "how": "from classic-era"
+      }
+     },
+     "mean_delta": 0.02418902883822241,
+     "beneficiaries": 4,
+     "raid_value": 0.09675611535288964,
+     "how": "the same +3% party crit in the beta tooltip; the Forever fork's party-buff switch is a no-op, so the Classic measurement is used"
+    }
+   }
+  },
+  "sanctity_aura": {
+   "talent": [
+    "paladin",
+    "Sanctity Aura"
+   ],
+   "beneficiaries": 1,
+   "why": "a party aura (+10% holy damage): one other retribution paladin in the group (Classic raids field few); computed from the tooltip because the simulator's paladin always runs its own aura option",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "paladin/ret-dps": {
+       "build": "ret-raid-dps",
+       "delta": 0.025580000000000006,
+       "how": "analytic: 10% x holy share 26%"
+      }
+     },
+     "beneficiaries": 1,
+     "mean_delta": 0.025580000000000006,
+     "raid_value": 0.025580000000000006
+    }
+   }
+  },
+  "winters_chill": {
+   "talent": [
+    "mage",
+    "Winter's Chill"
+   ],
+   "beneficiaries": 4,
+   "why": "a target debuff for frost spells: four other frost mages on the same boss (one mage brings it, the rest take Arcane Power)",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "mage/frost-raid": {
+       "build": "frost-arcane-power-raid",
+       "dps_full": 836.1746016189353,
+       "dps_off": 781.2660628217327,
+       "delta": 0.07028148464415186,
+       "how": "measured"
+      }
+     },
+     "beneficiaries": 4,
+     "mean_delta": 0.07028148464415186,
+     "raid_value": 0.28112593857660745
+    }
+   }
+  },
+  "improved_shadow_bolt": {
+   "talent": [
+    "warlock",
+    "Improved Shadow Bolt"
+   ],
+   "beneficiaries": 3,
+   "why": "a target debuff (four charges of +20% shadow damage): three other warlocks share the charges, so the simulator's permanent debuff is an upper bound",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "warlock/sb-raid": {
+       "build": "ds-ruin-raid -Improved Shadow Bolt",
+       "dps_full": 932.6988739282434,
+       "dps_off": 857.9362450536075,
+       "delta": 0.08714240633342678,
+       "how": "measured"
+      }
+     },
+     "beneficiaries": 3,
+     "mean_delta": 0.08714240633342678,
+     "raid_value": 0.2614272190002803
+    }
+   }
+  },
+  "improved_battle_shout": {
+   "talent": [
+    "warrior",
+    "Improved Battle Shout"
+   ],
+   "beneficiaries": 4,
+   "why": "a party shout: four melee in the warrior's group",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "(tooltip)": {
+       "build": "-",
+       "delta": 0.035,
+       "how": "+25% Battle Shout attack power (about 58) for the group: roughly 3.5% DPS to each of four melee; the simulator's Battle Shout buff is a tristate the bench cannot half-switch"
+      }
+     },
+     "mean_delta": 0.035,
+     "beneficiaries": 4,
+     "raid_value": 0.14,
+     "how": "+25% Battle Shout attack power (about 58) for the group: roughly 3.5% DPS to each of four melee; the simulator's Battle Shout buff is a tristate the bench cannot half-switch"
+    }
+   }
+  },
+  "improved_scorch": {
+   "talent": [
+    "mage",
+    "Improved Scorch"
+   ],
+   "beneficiaries": 4,
+   "why": "a target debuff (+15% fire damage): four other fire casters on the boss; computed from the tooltip because the receiver's own rotation keeps the debuff up",
+   "games": {
+    "classic-era": {
+     "receivers": {
+      "mage/fire-raid": {
+       "build": "fire-raid",
+       "delta": 0.15,
+       "how": "analytic: 15% x fire share 100%"
+      }
+     },
+     "beneficiaries": 4,
+     "mean_delta": 0.15,
+     "raid_value": 0.6
+    }
+   }
+  }
+ }
+}

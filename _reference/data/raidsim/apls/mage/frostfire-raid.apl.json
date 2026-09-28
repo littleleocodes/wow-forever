@@ -1,0 +1,263 @@
+{
+ "type": "TypeAPL",
+ "priorityList": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20554
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "auraIsKnown": {
+         "auraId": {
+          "spellId": 22959
+         }
+        }
+       },
+       {
+        "or": {
+         "vals": [
+          {
+           "cmp": {
+            "op": "OpLt",
+            "lhs": {
+             "auraNumStacks": {
+              "auraId": {
+               "spellId": 22959
+              }
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "5"
+             }
+            }
+           }
+          },
+          {
+           "cmp": {
+            "op": "OpLe",
+            "lhs": {
+             "auraRemainingTime": {
+              "auraId": {
+               "spellId": 22959
+              }
+             }
+            },
+            "rhs": {
+             "const": {
+              "val": "6s"
+             }
+            }
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10207
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "80%"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "itemId": 8008
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10%"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "25s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 12051
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpEq",
+      "lhs": {
+       "auraNumStacks": {
+        "auraId": {
+         "spellId": 400625
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "3"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 18809
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 10199
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "10%"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1237313
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsActive": {
+      "auraId": {
+       "spellId": 44404
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25345
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 143,
+      "rank": 2
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 14152
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 2948
+     }
+    }
+   }
+  }
+ ]
+}

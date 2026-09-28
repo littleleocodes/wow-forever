@@ -1,0 +1,3556 @@
+{
+ "class": "Paladin",
+ "slug": "paladin",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 166,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "changed": 101,
+  "same": 44,
+  "new": 21
+ },
+ "tabs": [
+  {
+   "name": "Holy",
+   "spells": [
+    {
+     "name": "Blessing of Light",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19977,
+       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 210 and the effect Flash of Light spells used on the target by up to 60. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 210 and the effect Flash of Light spells used on the target by up to 60. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19978,
+       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 300 and the effect Flash of Light spells used on the target by up to 85. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 300 and the effect Flash of Light spells used on the target by up to 85. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19979,
+       "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blessing of Wisdom",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19742,
+       "text": "Places a Blessing on the friendly target, restoring 12 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 10 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19850,
+       "text": "Places a Blessing on the friendly target, restoring 18 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 15 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19852,
+       "text": "Places a Blessing on the friendly target, restoring 24 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 20 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19853,
+       "text": "Places a Blessing on the friendly target, restoring 30 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 25 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19854,
+       "text": "Places a Blessing on the friendly target, restoring 36 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 30 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 25290,
+       "text": "Places a Blessing on the friendly target, restoring 40 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, restoring 33 mana every 5 seconds for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cleanse",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 4987,
+       "text": "Cleanses a friendly target, removing 1 poison effect, 1 disease effect, and 1 magic effect.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Consecration",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 26573,
+       "text": "Consecrates the land beneath the Paladin, doing 16 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 32 damage over 8 sec.",
+       "school": "Holy",
+       "coefficient": "9.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Consecrates the land beneath Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.",
+        "coefficient": "4.2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20116,
+       "text": "Consecrates the land beneath the Paladin, doing 24 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 56 damage over 8 sec.",
+       "school": "Holy",
+       "coefficient": "9.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "235 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Consecrates the land beneath Paladin, doing 120 Holy damage over 8 sec to enemies who enter the area.",
+        "coefficient": "4.2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20922,
+       "text": "Consecrates the land beneath the Paladin, doing 48 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 88 damage over 8 sec.",
+       "school": "Holy",
+       "coefficient": "9.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "320 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Consecrates the land beneath Paladin, doing 192 Holy damage over 8 sec to enemies who enter the area.",
+        "coefficient": "4.2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20923,
+       "text": "Consecrates the land beneath the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 160 damage over 8 sec.",
+       "school": "Holy",
+       "coefficient": "9.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "435 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Consecrates the land beneath Paladin, doing 280 Holy damage over 8 sec to enemies who enter the area.",
+        "coefficient": "4.2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20924,
+       "text": "Consecrates the land beneath the Paladin, doing 96 Holy damage over 8 sec to enemies who enter the area The first 4 enemies who enter the area will take an additional 216 damage over 8 sec.",
+       "school": "Holy",
+       "coefficient": "9.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "565 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Consecrates the land beneath Paladin, doing 384 Holy damage over 8 sec to enemies who enter the area.",
+        "coefficient": "4.2% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Favor",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20216,
+       "text": "When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "4% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Exorcism",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 879,
+       "text": "Causes 80 to 90 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 90 to 102 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5614,
+       "text": "Causes 140 to 158 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 160 to 180 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 5615,
+       "text": "Causes 200 to 224 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 227 to 255 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10312,
+       "text": "Causes 286 to 320 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "235 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 316 to 354 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10313,
+       "text": "Causes 376 to 418 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 406 to 452 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10314,
+       "text": "Causes 475 to 529 Holy damage to an Undead or Demon target.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "345 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 505 to 563 Holy damage to an Undead or Demon target.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Flash of Light",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19750,
+       "text": "Heals a friendly target for 48 to 54.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 67 to 77.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19939,
+       "text": "Heals a friendly target for 68 to 76.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 102 to 116.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19940,
+       "text": "Heals a friendly target for 103 to 115.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 153 to 171.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19941,
+       "text": "Heals a friendly target for 151 to 169.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 206 to 230.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19942,
+       "text": "Heals a friendly target for 221 to 247.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "115 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 278 to 310.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19943,
+       "text": "Heals a friendly target for 291 to 325.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 348 to 388.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Blessing of Light",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 25890,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "260 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to 400 and the effect Flash of Light spells used on the target by up to 115. Lasts 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Blessing of Wisdom",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 25894,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring 36 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring 30 mana every 5 seconds for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 25918,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring 40 mana every 5 seconds for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring 33 mana every 5 seconds for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hammer of Wrath",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 24275,
+       "text": "Hurls a hammer that strikes an enemy for 286 to 314 Holy damage. Only usable on enemies that have 20% or less health.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "295 Mana",
+       "range": "30 yd range",
+       "cast": "1 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a hammer that strikes an enemy for 316 to 348 Holy damage. Only usable on enemies that have 20% or less health.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 24274,
+       "text": "Hurls a hammer that strikes an enemy for 382 to 420 Holy damage. Only usable on enemies that have 20% or less health.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "360 Mana",
+       "range": "30 yd range",
+       "cast": "1 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a hammer that strikes an enemy for 412 to 454 Holy damage. Only usable on enemies that have 20% or less health.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 24239,
+       "text": "Hurls a hammer that strikes an enemy for 474 to 522 Holy damage. Only usable on enemies that have 20% or less health.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "425 Mana",
+       "range": "30 yd range",
+       "cast": "1 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Hurls a hammer that strikes an enemy for 504 to 556 Holy damage. Only usable on enemies that have 20% or less health.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Light",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 635,
+       "text": "Heals a friendly target for 42 to 50.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 639,
+       "text": "Heals a friendly target for 81 to 95.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 647,
+       "text": "Heals a friendly target for 150 to 176.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 167 to 195.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1026,
+       "text": "Heals a friendly target for 279 to 319.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 322 to 368.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1042,
+       "text": "Heals a friendly target for 440 to 494.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "275 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 506 to 568.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 3472,
+       "text": "Heals a friendly target for 628 to 700.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 716 to 798.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10328,
+       "text": "Heals a friendly target for 872 to 970.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "465 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 967 to 1,075.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10329,
+       "text": "Heals a friendly target for 1,176 to 1,308.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "580 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 1,271 to 1,413.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 25292,
+       "text": "Heals a friendly target for 1,495 to 1,665.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "660 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 1,590 to 1,770.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Shock",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1311606,
+       "text": "Blasts the target with Holy energy, causing 129 to 139 Holy damage to an enemy, or 110 to 118 healing to an ally.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally.",
+        "classic_cost": "225 Mana",
+        "classic_range": "20 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20473,
+       "text": "Blasts the target with Holy energy, causing 175 to 189 Holy damage to an enemy, or 150 to 162 healing to an ally.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally.",
+        "classic_cost": "225 Mana",
+        "classic_range": "20 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20929,
+       "text": "Blasts the target with Holy energy, causing 248 to 268 Holy damage to an enemy, or 221 to 239 healing to an ally.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "275 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target with Holy energy, causing 279 to 301 Holy damage to an enemy, or 279 to 301 healing to an ally.",
+        "classic_cost": "275 Mana",
+        "classic_range": "20 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20930,
+       "text": "Blasts the target with Holy energy, causing 334 to 362 Holy damage to an enemy, or 307 to 333 healing to an ally.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "325 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target with Holy energy, causing 365 to 395 Holy damage to an enemy, or 365 to 395 healing to an ally.",
+        "classic_cost": "325 Mana",
+        "classic_range": "20 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Wrath",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2812,
+       "text": "Sends bolts of holy power in all directions, causing 368 to 434 Holy damage to all Undead and Demon targets within 20 yds and stunning them for 2 sec.",
+       "school": "Holy",
+       "coefficient": "19% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "645 Mana",
+       "range": "",
+       "cast": "2 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Sends bolts of holy power in all directions, causing 368 to 434 Holy damage to all Undead and Demon targets within 20 yds.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10318,
+       "text": "Sends bolts of holy power in all directions, causing 490 to 576 Holy damage to all Undead and Demon targets within 20 yds and stunning them for 2 sec.",
+       "school": "Holy",
+       "coefficient": "19% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "805 Mana",
+       "range": "",
+       "cast": "2 sec cast",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Sends bolts of holy power in all directions, causing 490 to 576 Holy damage to all Undead and Demon targets within 20 yds.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Lay on Hands",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 633,
+       "text": "Heals a friendly target for an amount equal to the Paladin's maximum health. Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "20 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for an amount equal to the Paladin's maximum health. Drains all of the Paladin's remaining mana when used.",
+        "classic_range": "40 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "1 hour cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2800,
+       "text": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores 250 of their mana. Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "20 min cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores 250 of their mana. Drains all of the Paladin's remaining mana when used.",
+        "classic_range": "40 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "1 hour cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10310,
+       "text": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores 550 of their mana. Drains all of the Paladin's remaining Mana when used, but does not interrupt Mana regeneration.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "20 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores 550 of their mana. Drains all of the Paladin's remaining mana when used.",
+        "classic_range": "40 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "1 hour cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Light's Vigil",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1310911,
+       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 175 to 189 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 325 to 343. The Paladin may only have one Light's Vigil active per party.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "730 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1311590,
+       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 268 to 288 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 486 to 514. The Paladin may only have one Light's Vigil active per party.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,000 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1311595,
+       "text": "Applies Light's Vigil to the target for 30 sec. Your next Holy Shock cast on them triggers no cooldown and causes enemy targets to suffer 380 to 410 Holy damage and refund 75% of Light's Vigil's Mana cost, or allied targets to heal their party for 684 to 724. The Paladin may only have one Light's Vigil active per party.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct), 14.3% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,340 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Purify",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1152,
+       "text": "Purifies the friendly target, removing 1 disease effect and 1 poison effect.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Redemption",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7328,
+       "text": "Brings a dead player back to life with 65 health and 120 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10322,
+       "text": "Brings a dead player back to life with 150 health and 260 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10324,
+       "text": "Brings a dead player back to life with 250 health and 420 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20772,
+       "text": "Brings a dead player back to life with 400 health and 600 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20773,
+       "text": "Brings a dead player back to life with 600 health and 800 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Light",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20165,
+       "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 39. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 25. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 39. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 25. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20347,
+       "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 53. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 34. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 53. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 34. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20348,
+       "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 76. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 49. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 76. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 49. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20349,
+       "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 94. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 61. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine light for 30 sec, giving each melee attack a chance to heal the Paladin for 94. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting melee attacks made against the judged enemy a chance of healing the attacker for 61. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Righteousness",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20154,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 2 to 8 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20287,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 3 to 12 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 36 to 38 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "coefficient": "31.2% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20288,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 5 to 19 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 53 to 57 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "coefficient": "46.2% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20289,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 8 to 29 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 73 to 79 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20290,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 11 to 40 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 96 to 104 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 20291,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 15 to 53 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 124 to 134 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 20292,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 19 to 67 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 155 to 167 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 20293,
+       "text": "Fills the Paladin with holy spirit for 30 sec, granting each melee attack an additional 21 to 75 Holy damage. Slower weapons cause more Holy damage per swing. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will cause 170 to 186 Holy damage to an enemy.",
+       "school": "Holy",
+       "coefficient": "50% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Wisdom",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20166,
+       "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 50 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting attacks and spells used against the judged enemy a chance to restore 33 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 50 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting attacks and spells used against the judged enemy a chance to restore 33 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20356,
+       "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 71 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting attacks and spells used against the judged enemy a chance to restore 46 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 71 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting attacks and spells used against the judged enemy a chance to restore 46 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20357,
+       "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 90 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, granting attacks and spells used against the judged enemy a chance to restore 59 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with divine wisdom for 30 sec, giving each melee attack a chance to restore 90 of the Paladin's mana. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, granting attacks and spells used against the judged enemy a chance to restore 59 mana to the attacker. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sense Undead",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5502,
+       "text": "Shows the location of all nearby undead on the minimap until cancelled. Only one type of tracking can be used at a time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Turn Undead",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2878,
+       "text": "The targeted undead enemy will be compelled to flee for up to 10 sec. Damage caused may interrupt the effect. Only one target can be turned at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "20 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5627,
+       "text": "The targeted undead enemy will be compelled to flee for up to 15 sec. Damage caused may interrupt the effect. Only one target can be turned at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "20 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10326,
+       "text": "The targeted undead enemy will be compelled to flee for up to 20 sec. Damage caused may interrupt the effect. Only one target can be turned at a time.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "20 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Voice of Truth",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1310897,
+       "text": "Grants you immunity to Silence and Interrupt effects. Lasts 6 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Protection",
+   "spells": [
+    {
+     "name": "Blessing of Freedom",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1044,
+       "text": "Places a Blessing on the friendly target, granting immunity to movement impairing effects for 10 sec. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blessing of Kings",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20217,
+       "text": "Places a Blessing on the friendly target, increasing total stats by 10% for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing total stats by 10% for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blessing of Protection",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1022,
+       "text": "A targeted party member is protected from all physical attacks for 6 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "A targeted party member is protected from all physical attacks for 6 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5599,
+       "text": "A targeted party member is protected from all physical attacks for 8 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "A targeted party member is protected from all physical attacks for 8 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10278,
+       "text": "A targeted party member is protected from all physical attacks for 10 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "7% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "A targeted party member is protected from all physical attacks for 10 sec, but during that time they cannot attack or use physical abilities. Players may only have one Blessing on them per Paladin at any one time. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blessing of Sacrifice",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6940,
+       "text": "Places a Blessing on the party member, transfering 45 damage taken per hit to the caster. Lasts 30 sec. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20729,
+       "text": "Places a Blessing on the party member, transfering 55 damage taken per hit to the caster. Lasts 30 sec. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blessing of Salvation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1038,
+       "text": "Places a Blessing on the party member, reducing the amount of all threat generated by 30% for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "8% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the party member, reducing the amount of all threat generated by 30% for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Concentration Aura",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19746,
+       "text": "Gives a 35% chance of ignoring spell interruption when damaged to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Devotion Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 465,
+       "text": "Gives 55 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10290,
+       "text": "Gives 160 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 643,
+       "text": "Gives 275 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10291,
+       "text": "Gives 390 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1032,
+       "text": "Gives 505 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10292,
+       "text": "Gives 620 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10293,
+       "text": "Gives 735 additional armor to party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Intervention",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 19752,
+       "text": "The paladin sacrifices himself to remove the targeted party member from harms way. Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for 3 min.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "1 hour cooldown",
+       "requires": "Reagents: Symbol of Divinity",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Protection",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 498,
+       "text": "You are protected from all physical attacks and spells for 6 sec, but during that time you cannot attack or use physical abilities yourself. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "You are protected from all physical attacks and spells for 6 sec, but during that time you cannot attack or use physical abilities yourself. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5573,
+       "text": "You are protected from all physical attacks and spells for 8 sec, but during that time you cannot attack or use physical abilities yourself. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "You are protected from all physical attacks and spells for 8 sec, but during that time you cannot attack or use physical abilities yourself. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Shield",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 642,
+       "text": "Protects the paladin from all damage and spells for 10 sec, but reduces all damage you deal by 50%. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Protects the paladin from all damage and spells for 10 sec, but increases the time between your attacks by 100%. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1020,
+       "text": "Protects the paladin from all damage and spells for 12 sec, but reduces all damage you deal by 50%. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Protects the paladin from all damage and spells for 12 sec, but increases the time between your attacks by 100%. Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for 1 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fire Resistance Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19891,
+       "text": "Gives 30 additional Fire resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 30 additional Fire resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19899,
+       "text": "Gives 45 additional Fire resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 45 additional Fire resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19900,
+       "text": "Gives 60 additional Fire resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 60 additional Fire resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Frost Resistance Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19888,
+       "text": "Gives 30 additional Frost resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 30 additional Frost resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19897,
+       "text": "Gives 45 additional Frost resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 45 additional Frost resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19898,
+       "text": "Gives 60 additional Frost resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 60 additional Frost resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Blessing of Kings",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 25898,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Kings, increasing total stats by 10% for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Kings, increasing total stats by 10% for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Blessing of Salvation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 25895,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salvation, reducing the amount of all threat generated by 30% for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "16% of base mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salvation, reducing the amount of all threat generated by 30% for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hammer of Justice",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 853,
+       "text": "Stuns the target for 3 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5588,
+       "text": "Stuns the target for 4 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 5589,
+       "text": "Stuns the target for 5 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10308,
+       "text": "Stuns the target for 6 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Shield",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20925,
+       "text": "Increases chance to block by 20% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Shields",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20927,
+       "text": "Increases chance to block by 20% for 10 sec, and deals 153 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Shields",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Increases chance to block by 30% for 10 sec, and deals 95 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20928,
+       "text": "Increases chance to block by 20% for 10 sec, and deals 221 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "240 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Shields",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Increases chance to block by 30% for 10 sec, and deals 130 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Righteous Fury",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 25780,
+       "text": "Increases the threat generated by your Holy attacks by 60%. Lasts 30 min.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Fury",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1311649,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 6 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 32 to 34 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1311656,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 9 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 47 to 51 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20163,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 14 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 66 to 72 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 25,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20419,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 19 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 86 to 94 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20421,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 25 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 111 to 121 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 20422,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 32 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 140 to 150 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 20423,
+       "text": "Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. While a shield is equipped, each attack also grants an absorb shield equal to 50% of the Holy damage dealt. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy causes 153 to 167 Holy damage to an enemy and taunts the target to attack you for 4 sec.",
+       "school": "Holy",
+       "coefficient": "45% and 10% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Justice",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20164,
+       "text": "Fills the Paladin with the spirit of justice for 30 sec, giving each melee attack a chance to stun for 2 sec. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 10 sec, preventing them from fleeing. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "13% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadow Resistance Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19876,
+       "text": "Gives 30 additional Shadow resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 30 additional Shadow resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19895,
+       "text": "Gives 45 additional Shadow resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 45 additional Shadow resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19896,
+       "text": "Gives 60 additional Shadow resistance to all party and raid members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Gives 60 additional Shadow resistance to all party members within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Swift Judgement",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1310994,
+       "text": "Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Templar's Bulwark",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1311015,
+       "text": "When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Retribution",
+   "spells": [
+    {
+     "name": "Blessing of Might",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 19740,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 14 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 20 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19834,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 25 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 35 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19835,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 40 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 55 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19836,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 61 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 85 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19837,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 83 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 115 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19838,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 112 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 155 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 25291,
+       "text": "Places a Blessing on the friendly target, increasing melee attack power by 133 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "130 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Places a Blessing on the friendly target, increasing melee attack power by 185 for 5 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Blessing of Might",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 25782,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing melee attack power by 112 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "220 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing melee attack power by 155 for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 25916,
+       "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing melee attack power by 133 for 1 hour. Players may only have one Blessing on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "260 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Symbol of Kings",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing melee attack power by 185 for 15 min. Players may only have one Blessing on them per Paladin at any one time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Strike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 679,
+       "text": "An instant strike that causes 25% weapon damage plus an additional 2 to 4 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 678,
+       "text": "An instant strike that causes 29% weapon damage plus an additional 4 to 6 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "9 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1866,
+       "text": "An instant strike that causes 32% weapon damage plus an additional 5 to 8 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "12 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 680,
+       "text": "An instant strike that causes 36% weapon damage plus an additional 7 to 11 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "14 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 2495,
+       "text": "An instant strike that causes 39% weapon damage plus an additional 12 to 16 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "16 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 5569,
+       "text": "An instant strike that causes 43% weapon damage plus an additional 22 to 29 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "17 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10332,
+       "text": "An instant strike that causes 46% weapon damage plus an additional 33 to 42 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "19 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10333,
+       "text": "An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Judgement",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20271,
+       "text": "Unleash the energy of a Seal spell upon an enemy. Does not consume the Seal. Refer to individual Seals for Judgement effect.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "6% of base mana",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "text": "Unleashes the energy of a Seal spell upon an enemy. Refer to individual Seals for Judgement effect.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Repentance",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20066,
+       "text": "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Retribution Aura",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7294,
+       "text": "Causes 7 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 5 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10298,
+       "text": "Causes 12 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 8 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10299,
+       "text": "Causes 18 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 12 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10300,
+       "text": "Causes 24 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 16 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10301,
+       "text": "Causes 30 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 20 Holy damage to any creature that strikes a party member within 30 yards. Players may only have one Aura on them per Paladin at any one time.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of Command",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20375,
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20915,
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 97 to 104 Holy damage, 194 to 208 if the target is stunned or incapacitated.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20918,
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 124 to 134 Holy damage, 248 to 268 if the target is stunned or incapacitated.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20919,
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 154 to 168 Holy damage, 309 to 335 if the target is stunned or incapacitated.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20920,
+       "text": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 169 to 187 Holy damage, 339 to 373 if the target is stunned or incapacitated.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Seal of the Crusader",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 21082,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 35 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 23. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 35 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 20. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20162,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 59 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 35. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 59 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 30. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20305,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 107 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 58. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 107 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 50. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20306,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 161 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 92. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 161 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 80. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20307,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 238 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 127. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 238 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 110. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 20308,
+       "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 325 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time.\n\nUnleashing this Seal's energy will judge an enemy for 40 sec, increasing Holy damage taken by up to 161. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Fills the Paladin with the spirit of a crusader for 30 sec, granting 325 melee attack power. The Paladin also attacks 40% faster, but deals less damage with each attack. Only one Seal can be active on the Paladin at any one time. Unleashing this Seal's energy will judge an enemy for 10 sec, increasing Holy damage taken by up to 140. Your melee strikes will refresh the spell's duration. Only one Judgement per Paladin can be active at any one time.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: the ones your class can wear.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Block",
+   "rank": "Passive",
+   "text": "Gives a chance to block enemy melee and ranged attacks.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Parry",
+   "rank": "Passive",
+   "text": "Gives a chance to parry enemy melee attacks.",
+   "tooltip_source": "classic"
+  }
+ ]
+}

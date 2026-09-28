@@ -1,0 +1,5093 @@
+{
+ "class": "Priest",
+ "slug": "priest",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 241,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "new": 40,
+  "same": 49,
+  "note": 1,
+  "changed": 151
+ },
+ "tabs": [
+  {
+   "name": "Discipline",
+   "spells": [
+    {
+     "name": "Confounding Flash",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1277455,
+       "text": "Confuses up to 5 enemies within 8 yds for 3 sec. Any damage taken will break the effect.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "3% of base mana",
+       "range": "",
+       "cast": "0.5 sec cast",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Contingency Plan",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1277462,
+       "text": "Place a Holy ward on an ally for 30 sec. The next time this ally takes damage dropping their Health below 35%, they will gain a shield absorbing 155 damage and begin healing for 125 Health over 15 sec. A target may be affected by only one Contingency Plan.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1277634,
+       "text": "Place a Holy ward on an ally for 30 sec. The next time this ally takes damage dropping their Health below 35%, they will gain a shield absorbing 290 damage and begin healing for 200 Health over 15 sec. A target may be affected by only one Contingency Plan.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1277638,
+       "text": "Place a Holy ward on an ally for 30 sec. The next time this ally takes damage dropping their Health below 35%, they will gain a shield absorbing 467 damage and begin healing for 280 Health over 15 sec. A target may be affected by only one Contingency Plan.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1277639,
+       "text": "Place a Holy ward on an ally for 30 sec. The next time this ally takes damage dropping their Health below 35%, they will gain a shield absorbing 596 damage and begin healing for 510 Health over 15 sec. A target may be affected by only one Contingency Plan.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1277640,
+       "text": "Place a Holy ward on an ally for 30 sec. The next time this ally takes damage dropping their Health below 35%, they will gain a shield absorbing 926 damage and begin healing for 670 Health over 15 sec. A target may be affected by only one Contingency Plan.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Dispel Magic",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 527,
+       "text": "Dispels magic on the target, removing 1 harmful spell from a friend or 1 beneficial spell from an enemy.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "18% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 988,
+       "text": "Dispels magic on the target, removing 2 harmful spells from a friend or 2 beneficial spells from an enemy.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "18% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Spirit",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 14752,
+       "text": "Holy power infuses the target, increasing their Spirit by 17 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "285 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "note"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 14818,
+       "text": "Holy power infuses the target, increasing their Spirit by 23 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "420 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Holy power infuses the target, increasing their Spirit by 23 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 14819,
+       "text": "Holy power infuses the target, increasing their Spirit by 33 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "785 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Holy power infuses the target, increasing their Spirit by 33 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 27841,
+       "text": "Holy power infuses the target, increasing their Spirit by 40 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "970 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Holy power infuses the target, increasing their Spirit by 40 for 30 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Elune's Grace",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2651,
+       "text": "Reduces the chance you'll be hit by melee and ranged attacks by 50% for 15 sec or until you are missed 3 times.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "3% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces ranged damage taken by 21 and increases chance to dodge by 10% for 15 sec.",
+        "classic_cost": "60 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "5 min cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Feedback",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13896,
+       "text": "The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 18 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "55 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "140 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19271,
+       "text": "The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 35 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "245 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19273,
+       "text": "The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 54 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "355 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19274,
+       "text": "The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 77 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "470 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19275,
+       "text": "The priest becomes surrounded with anti-magic energy. Any successful spell cast against the priest will burn 105 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "580 Mana",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Inner Fire",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 588,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 315. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7128,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 495. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 602,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 720. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1006,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 945. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "165 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10951,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 1,170. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "235 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10952,
+       "text": "A burst of Holy energy fills the caster, increasing armor by 1,395. Each melee or ranged damage hit against the priest will remove one charge. Lasts 10 min or until 20 charges are used.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "315 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Inner Focus",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14751,
+       "text": "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Levitate",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1706,
+       "text": "Allows the caster to levitate, floating a few feet above the ground. While levitating, you will fall at a reduced speed and travel over water-like surfaces. Mounting or any damage taken will cancel the effect. Lasts 2 min.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Light Feather",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Allows the caster to levitate, floating a few feet above the ground. While levitating, you will fall at a reduced speed and travel over water-like surfaces. Any damage will cancel the effect. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mana Burn",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8129,
+       "text": "Drains 198 to 210 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8131,
+       "text": "Drains 315 to 335 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10874,
+       "text": "Drains 450 to 476 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10875,
+       "text": "Drains 585 to 619 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10876,
+       "text": "Drains 746 to 788 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "270 Mana",
+       "range": "30 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Penance",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 402174,
+       "text": "Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec.",
+       "school": "Holy",
+       "coefficient": "28.5% of spell power (heal), 28.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "40 yd range",
+       "cast": "Channeled",
+       "cooldown": "12 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1240720,
+       "text": "Launches a volley of holy light at the target, causing 113 Holy damage to an enemy, or 291 healing to an ally, instantly and every 1 sec for 2 sec.",
+       "school": "Holy",
+       "coefficient": "28.5% of spell power (direct), 28.5% of spell power (heal), 28.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "40 yd range",
+       "cast": "Channeled",
+       "cooldown": "12 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1240721,
+       "text": "Launches a volley of holy light at the target, causing 180 Holy damage to an enemy, or 482 healing to an ally, instantly and every 1 sec for 2 sec.",
+       "school": "Holy",
+       "coefficient": "28.5% of spell power (direct), 28.5% of spell power (heal), 28.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "270 Mana",
+       "range": "40 yd range",
+       "cast": "Channeled",
+       "cooldown": "12 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1316995,
+       "text": "Launches a volley of holy light at the target, causing 131 Holy damage to an enemy, or 673 healing to an ally, instantly and every 1 sec for 2 sec.",
+       "school": "Holy",
+       "coefficient": "28.5% of spell power (direct), 28.5% of spell power (heal), 28.5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "355 Mana",
+       "range": "40 yd range",
+       "cast": "Channeled",
+       "cooldown": "12 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Power Infusion",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 10060,
+       "text": "Infuses the target with power, increasing their spell damage and healing done by 20% for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Infuses the target with power, increasing their spell damage and healing by 20%. Lasts 15 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Power Word: Fortitude",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1243,
+       "text": "Power infuses the target, increasing their Stamina by 4 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 3 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1244,
+       "text": "Power infuses the target, increasing their Stamina by 10 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 8 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1245,
+       "text": "Power infuses the target, increasing their Stamina by 26 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "400 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 20 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 2791,
+       "text": "Power infuses the target, increasing their Stamina by 42 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "745 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 32 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10937,
+       "text": "Power infuses the target, increasing their Stamina by 56 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,170 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 43 for 30 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10938,
+       "text": "Power infuses the target, increasing their Stamina by 70 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,695 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target, increasing their Stamina by 54 for 30 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Power Word: Shield",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 17,
+       "text": "Draws on the soul of the party member to shield them, absorbing 48 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 592,
+       "text": "Draws on the soul of the party member to shield them, absorbing 92 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 94 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 600,
+       "text": "Draws on the soul of the party member to shield them, absorbing 162 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "130 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 166 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 3747,
+       "text": "Draws on the soul of the party member to shield them, absorbing 236 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "175 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 244 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 6065,
+       "text": "Draws on the soul of the party member to shield them, absorbing 302 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 312 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 6066,
+       "text": "Draws on the soul of the party member to shield them, absorbing 380 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 393 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10898,
+       "text": "Draws on the soul of the party member to shield them, absorbing 485 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "300 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 499 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10899,
+       "text": "Draws on the soul of the party member to shield them, absorbing 608 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "355 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 622 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 10900,
+       "text": "Draws on the soul of the party member to shield them, absorbing 768 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "425 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 782 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 10901,
+       "text": "Draws on the soul of the party member to shield them, absorbing 928 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "500 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "4 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Draws on the soul of the party member to shield them, absorbing 942 damage. Lasts 30 sec. While the shield holds, spellcasting will not be interrupted by damage. Once shielded, the target cannot be shielded again for 15 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prayer of Fortitude",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 21562,
+       "text": "Power infuses all party and raid members, increasing their Stamina by 56 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "2,600 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Holy Candle",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target's party, increasing their Stamina by 43 for 1 hour.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 21564,
+       "text": "Power infuses all party and raid members, increasing their Stamina by 70 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "3,400 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Sacred Candle",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target's party, increasing their Stamina by 54 for 1 hour.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prayer of Spirit",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 27681,
+       "text": "Power infuses all party and raid members, increasing their Spirit by 40 for 1 hour.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,940 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Sacred Candle",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target's party, increasing their Spirit by 40 for 1 hour.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shackle Undead",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 9484,
+       "text": "Shackles the target undead enemy for up to 30 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 9485,
+       "text": "Shackles the target undead enemy for up to 40 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10955,
+       "text": "Shackles the target undead enemy for up to 50 sec. The shackled unit is unable to move, attack or cast spells. Any damage caused will release the target. Only one target can be shackled at a time.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Starshards",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 10797,
+       "text": "Rains starshards down on the enemy target's head, causing 162 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 84 Arcane damage over 6 sec.",
+        "classic_cost": "50 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "coefficient": "10.4% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19296,
+       "text": "Rains starshards down on the enemy target's head, causing 300 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 162 Arcane damage over 6 sec.",
+        "classic_cost": "85 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "coefficient": "15.4% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19299,
+       "text": "Rains starshards down on the enemy target's head, causing 528 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 288 Arcane damage over 6 sec.",
+        "classic_cost": "140 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19302,
+       "text": "Rains starshards down on the enemy target's head, causing 762 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "190 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 414 Arcane damage over 6 sec.",
+        "classic_cost": "190 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19303,
+       "text": "Rains starshards down on the enemy target's head, causing 1,068 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "245 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 570 Arcane damage over 6 sec.",
+        "classic_cost": "245 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19304,
+       "text": "Rains starshards down on the enemy target's head, causing 1,440 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "300 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 756 Arcane damage over 6 sec.",
+        "classic_cost": "300 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 19305,
+       "text": "Rains starshards down on the enemy target's head, causing 1,800 Arcane damage over 6 sec.",
+       "school": "Arcane",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "30 yd range",
+       "cast": "Channeled",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Rains starshards down on the enemy target's head, causing 936 Arcane damage over 6 sec.",
+        "classic_cost": "350 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Channeled",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Holy",
+   "spells": [
+    {
+     "name": "Abolish Disease",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 552,
+       "text": "Attempts to cure 1 disease effect on the target, and 1 more disease effect every 5 seconds for 20 sec.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Binding Heal",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 401937,
+       "text": "Heals a friendly target and the caster for 236 to 284. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1240770,
+       "text": "Heals a friendly target and the caster for 295 to 353. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1240771,
+       "text": "Heals a friendly target and the caster for 362 to 430. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "215 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1240772,
+       "text": "Heals a friendly target and the caster for 479 to 567. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "265 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1240773,
+       "text": "Heals a friendly target and the caster for 607 to 717. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "315 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 1240774,
+       "text": "Heals a friendly target and the caster for 773 to 909. Low threat.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "380 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Chastise",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1277331,
+       "text": "Chastise the target, causing 43 to 49 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat",
+       "school": "Holy",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1277332,
+       "text": "Chastise the target, causing 87 to 99 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat",
+       "school": "Holy",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1277333,
+       "text": "Chastise the target, causing 132 to 148 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat",
+       "school": "Holy",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1277334,
+       "text": "Chastise the target, causing 201 to 227 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat",
+       "school": "Holy",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1277335,
+       "text": "Chastise the target, causing 272 to 306 Holy damage and Immobilizing them for up to 2 sec. Only works against Humanoids. This spell causes very low threat",
+       "school": "Holy",
+       "coefficient": "14.3% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cure Disease",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 528,
+       "text": "Removes 1 disease from the friendly target.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15% of base mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Desperate Prayer",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13908,
+       "text": "Instantly heals the caster for 145 to 181.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 148 to 184.",
+        "coefficient": "26.8% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19236,
+       "text": "Instantly heals the caster for 267 to 325.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 283 to 345.",
+        "coefficient": "39.6% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19238,
+       "text": "Instantly heals the caster for 441 to 529.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 474 to 570.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19240,
+       "text": "Instantly heals the caster for 571 to 681.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 619 to 739.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19241,
+       "text": "Instantly heals the caster for 819 to 969.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 872 to 1,032.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19242,
+       "text": "Instantly heals the caster for 1,090 to 1,284.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 1,145 to 1,349.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 19243,
+       "text": "Instantly heals the caster for 1,285 to 1,513.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly heals the caster for 1,340 to 1,578.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Divine Grace",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1277370,
+       "text": "Instantly heals a friendly target below 50% Health for 145 to 181 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1277371,
+       "text": "Instantly heals a friendly target below 50% Health for 267 to 325 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1277372,
+       "text": "Instantly heals a friendly target below 50% Health for 441 to 529 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1277374,
+       "text": "Instantly heals a friendly target below 50% Health for 571 to 681 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1277376,
+       "text": "Instantly heals a friendly target below 50% Health for 819 to 969 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 1277377,
+       "text": "Instantly heals a friendly target below 50% Health for 1,090 to 1,284 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 1277378,
+       "text": "Instantly heals a friendly target below 50% Health for 1,285 to 1,513 and removes Weakened Soul from that target. Cannot be cast on self.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fear Ward",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 6346,
+       "text": "Wards the friendly target against Fear. The next Fear effect used against the target will fail, using up the ward. Lasts 3 min.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Wards the friendly target against Fear. The next Fear effect used against the target will fail, using up the ward. Lasts 10 min.",
+        "classic_cost": "100 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Flash Heal",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2061,
+       "text": "Heals a friendly target for 183 to 223.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 202 to 246.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 9472,
+       "text": "Heals a friendly target for 236 to 284.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 269 to 325.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 9473,
+       "text": "Heals a friendly target for 295 to 353.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 339 to 405.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 9474,
+       "text": "Heals a friendly target for 362 to 430.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "215 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 413 to 491.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10915,
+       "text": "Heals a friendly target for 479 to 567.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "265 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 534 to 632.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10916,
+       "text": "Heals a friendly target for 607 to 717.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "315 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 662 to 782.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10917,
+       "text": "Heals a friendly target for 773 to 909.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "380 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Heals a friendly target for 828 to 974.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Greater Heal",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2060,
+       "text": "A slow casting spell that heals a single target for 819 to 919.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "370 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "A slow casting spell that heals a single target for 924 to 1,038.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10963,
+       "text": "A slow casting spell that heals a single target for 1,065 to 1,191.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "455 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "A slow casting spell that heals a single target for 1,178 to 1,318.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10964,
+       "text": "A slow casting spell that heals a single target for 1,356 to 1,514.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "545 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "A slow casting spell that heals a single target for 1,469 to 1,641.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10965,
+       "text": "A slow casting spell that heals a single target for 1,700 to 1,894.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "655 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "A slow casting spell that heals a single target for 1,813 to 2,021.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 25314,
+       "text": "A slow casting spell that heals a single target for 1,853 to 2,067.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "710 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "A slow casting spell that heals a single target for 1,966 to 2,194.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Heal",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2054,
+       "text": "Heal your target for 282 to 324.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Heal your target for 307 to 353.",
+        "coefficient": "72.9% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2055,
+       "text": "Heal your target for 394 to 448.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "205 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Heal your target for 445 to 507.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6063,
+       "text": "Heal your target for 510 to 576.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "255 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Heal your target for 586 to 662.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6064,
+       "text": "Heal your target for 633 to 713.",
+       "school": "Holy",
+       "coefficient": "85.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Heal your target for 734 to 826.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Fire",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 14914,
+       "text": "Consumes the enemy in holy flames that cause 56 to 70 Holy damage and an additional 20 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 84 to 104 Holy damage and an additional 30 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 15262,
+       "text": "Consumes the enemy in holy flames that cause 64 to 78 Holy damage and an additional 25 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 106 to 130 Holy damage and an additional 40 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 15263,
+       "text": "Consumes the enemy in holy flames that cause 80 to 98 Holy damage and an additional 30 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 144 to 178 Holy damage and an additional 55 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 15264,
+       "text": "Consumes the enemy in holy flames that cause 90 to 112 Holy damage and an additional 35 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "145 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 178 to 222 Holy damage and an additional 65 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 15265,
+       "text": "Consumes the enemy in holy flames that cause 103 to 127 Holy damage and an additional 65 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 219 to 273 Holy damage and an additional 85 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 15266,
+       "text": "Consumes the enemy in holy flames that cause 133 to 165 Holy damage and an additional 50 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 271 to 339 Holy damage and an additional 100 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 15267,
+       "text": "Consumes the enemy in holy flames that cause 163 to 205 Holy damage and an additional 65 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 323 to 405 Holy damage and an additional 125 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 15261,
+       "text": "Consumes the enemy in holy flames that cause 184 to 232 Holy damage and an additional 75 Holy damage over 10 sec.",
+       "school": "Holy",
+       "coefficient": "75% of spell power (direct), 5% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "255 Mana",
+       "range": "30 yd range",
+       "cast": "3.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Consumes the enemy in holy flames that cause 355 to 449 Holy damage and an additional 145 Holy damage over 10 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Holy Nova",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 15237,
+       "text": "Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 29 to 33 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 54 to 62. These effects cause no threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 15430,
+       "text": "Causes an explosion of holy light around the caster, causing 47 to 55 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 80 to 90. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "290 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 52 to 60 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 89 to 101. These effects cause no threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 15431,
+       "text": "Causes an explosion of holy light around the caster, causing 73 to 83 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 111 to 127. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "400 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 79 to 91 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 124 to 142. These effects cause no threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 27799,
+       "text": "Causes an explosion of holy light around the caster, causing 103 to 117 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 151 to 175. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "520 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 110 to 126 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 165 to 191. These effects cause no threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 27800,
+       "text": "Causes an explosion of holy light around the caster, causing 139 to 159 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 225 to 259. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "635 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 146 to 168 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 239 to 275. These effects cause no threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 27801,
+       "text": "Causes an explosion of holy light around the caster, causing 174 to 200 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 288 to 334. These effects cause no threat.\n\nEach time Holy Fire deals damage, you have a 5% chance for your next Holy Nova to cost no Mana.",
+       "school": "Holy",
+       "coefficient": "10.7% of spell power (direct), 10.7% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "750 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Causes an explosion of holy light around the caster, causing 181 to 209 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 302 to 350. These effects cause no threat.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Lesser Heal",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2050,
+       "text": "Heal your target for 47 to 57.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "40 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "coefficient": "12.3% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2052,
+       "text": "Heal your target for 76 to 90.",
+       "school": "Holy",
+       "coefficient": "57.1% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "40 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "coefficient": "22.9% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 2053,
+       "text": "Heal your target for 138 to 160.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "40 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Heal your target for 143 to 165.",
+        "coefficient": "44.6% of spell power (heal)",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Lightwell",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 724,
+       "text": "Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 800 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 3 min or 5 charges.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "",
+       "cast": "1.5 sec cast",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 27870,
+       "text": "Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 1,165 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 3 min or 5 charges.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "295 Mana",
+       "range": "",
+       "cast": "1.5 sec cast",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 27871,
+       "text": "Creates a holy Lightwell near the priest. Members of your raid or party can click the Lightwell to restore 1,600 health over 10 sec. Being attacked cancels the effect. Lightwell lasts for 3 min or 5 charges.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "",
+       "cast": "1.5 sec cast",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prayer of Healing",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 596,
+       "text": "A powerful prayer that heals the target and their party for 179 to 191. Party members must be within 40 yards of target.",
+       "school": "Holy",
+       "coefficient": "28.6% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "410 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "A powerful prayer heals party members within 30 yards for 312 to 332.",
+        "classic_cost": "410 Mana",
+        "classic_cast": "3 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 996,
+       "text": "A powerful prayer that heals the target and their party for 266 to 282. Party members must be within 40 yards of target.",
+       "school": "Holy",
+       "coefficient": "28.6% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "560 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "A powerful prayer heals party members within 30 yards for 458 to 486.",
+        "classic_cost": "560 Mana",
+        "classic_cast": "3 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10960,
+       "text": "A powerful prayer that heals the target and their party for 401 to 423. Party members must be within 40 yards of target.",
+       "school": "Holy",
+       "coefficient": "28.6% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "770 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "A powerful prayer heals party members within 30 yards for 675 to 713.",
+        "classic_cost": "770 Mana",
+        "classic_cast": "3 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10961,
+       "text": "A powerful prayer that heals the target and their party for 567 to 599. Party members must be within 40 yards of target.",
+       "school": "Holy",
+       "coefficient": "28.6% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,030 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "A powerful prayer heals party members within 30 yards for 939 to 991.",
+        "classic_cost": "1,030 Mana",
+        "classic_cast": "3 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 25316,
+       "text": "A powerful prayer that heals the target and their party for 631 to 667. Party members must be within 40 yards of target.",
+       "school": "Holy",
+       "coefficient": "28.6% of spell power (heal)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,070 Mana",
+       "range": "40 yd range",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "A powerful prayer heals party members within 30 yards for 1,041 to 1,099.",
+        "classic_cost": "1,070 Mana",
+        "classic_cast": "3 sec cast",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prayer of Mending",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 401859,
+       "text": "Places a spell on the target that heals them for 172 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1240826,
+       "text": "Places a spell on the target that heals them for 298 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1240827,
+       "text": "Places a spell on the target that heals them for 413 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "390 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Renew",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 139,
+       "text": "Heals the target of 45 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "changed",
+        "coefficient": "11% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6074,
+       "text": "Heals the target of 75 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 100 damage over 15 sec.",
+        "coefficient": "15.5% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6075,
+       "text": "Heals the target of 125 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 175 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6076,
+       "text": "Heals the target of 160 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 245 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 6077,
+       "text": "Heals the target of 205 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "170 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 315 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 6078,
+       "text": "Heals the target of 270 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "205 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 400 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10927,
+       "text": "Heals the target of 370 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 510 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10928,
+       "text": "Heals the target of 510 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 650 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 10929,
+       "text": "Heals the target of 670 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "365 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 810 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 10",
+       "id": 25315,
+       "text": "Heals the target of 830 damage over 15 sec.",
+       "school": "Holy",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "410 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Heals the target of 970 damage over 15 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Resurrection",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2006,
+       "text": "Brings a dead player back to life with 70 health and 135 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2010,
+       "text": "Brings a dead player back to life with 160 health and 300 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10880,
+       "text": "Brings a dead player back to life with 300 health and 520 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10881,
+       "text": "Brings a dead player back to life with 500 health and 750 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20770,
+       "text": "Brings a dead player back to life with 750 health and 1,000 mana. Cannot be cast when in combat.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75% of base mana",
+       "range": "30 yd range",
+       "cast": "10 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Smite",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 585,
+       "text": "Smite an enemy for 15 to 19 Holy damage.",
+       "school": "Holy",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "coefficient": "12.3% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 591,
+       "text": "Smite an enemy for 28 to 34 Holy damage.",
+       "school": "Holy",
+       "coefficient": "57.1% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Mana",
+       "range": "30 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "coefficient": "27.1% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 598,
+       "text": "Smite an enemy for 47 to 53 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 58 to 66 Holy damage.",
+        "coefficient": "55.4% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 984,
+       "text": "Smite an enemy for 60 to 68 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 97 to 111 Holy damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1004,
+       "text": "Smite an enemy for 81 to 91 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 158 to 178 Holy damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 6060,
+       "text": "Smite an enemy for 93 to 105 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 222 to 250 Holy damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10933,
+       "text": "Smite an enemy for 124 to 138 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 298 to 334 Holy damage.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10934,
+       "text": "Smite an enemy for 166 to 186 Holy damage.",
+       "school": "Holy",
+       "coefficient": "71.4% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "280 Mana",
+       "range": "30 yd range",
+       "cast": "2.5 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Smite an enemy for 384 to 428 Holy damage.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Shadow",
+   "spells": [
+    {
+     "name": "Dark Sacrifice",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1277324,
+       "text": "Cannibalize 440 of your own Health over 15 sec to gain 440 Mana, plus your Spirit.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1277325,
+       "text": "Cannibalize 720 of your own Health over 15 sec to gain 720 Mana, plus your Spirit.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1277326,
+       "text": "Cannibalize 1,020 of your own Health over 15 sec to gain 1,020 Mana, plus your Spirit.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1277327,
+       "text": "Cannibalize 1,330 of your own Health over 15 sec to gain 1,330 Mana, plus your Spirit.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1277328,
+       "text": "Cannibalize 1,600 of your own Health over 15 sec to gain 1,600 Mana, plus your Spirit.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Devouring Plague",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2944,
+       "text": "Afflicts the target with a disease that causes 128 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "215 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 152 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "215 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19276,
+       "text": "Afflicts the target with a disease that causes 232 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 272 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "350 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19277,
+       "text": "Afflicts the target with a disease that causes 344 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "495 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 400 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "495 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19278,
+       "text": "Afflicts the target with a disease that causes 488 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "645 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 544 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "645 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19279,
+       "text": "Afflicts the target with a disease that causes 656 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "810 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 712 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "810 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19280,
+       "text": "Afflicts the target with a disease that causes 848 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+       "school": "Shadow",
+       "coefficient": "10% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "985 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts the target with a disease that causes 904 Shadow damage over 24 sec. Damage caused by the Devouring Plague heals the caster.",
+        "classic_cost": "985 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "3 min cooldown",
+        "coefficient": "6.3% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Fade",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 586,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 9578,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 1).",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 9579,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 2).",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "125 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 9592,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 3).",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "175 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 10941,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 4).",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10942,
+       "text": "Fade out, discouraging enemies from attacking you for 10 sec. More effective than Fade (rank 5).",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "275 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hex of Weakness",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 9035,
+       "text": "Weakens the target enemy, reducing melee attack power by 43 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 2 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19281,
+       "text": "Weakens the target enemy, reducing melee attack power by 57 and reducing the effectiveness of any healing by 20%. Lasts 2 min",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "55 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 4 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19282,
+       "text": "Weakens the target enemy, reducing melee attack power by 85 and reducing the effectiveness of any healing by 20%. Lasts 2 min",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 7 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19283,
+       "text": "Weakens the target enemy, reducing melee attack power by 106 and reducing the effectiveness of any healing by 20%. Lasts 2 min",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "130 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 11 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19284,
+       "text": "Weakens the target enemy, reducing melee attack power by 155 and reducing the effectiveness of any healing by 20%. Lasts 2 min",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 15 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19285,
+       "text": "Weakens the target enemy, reducing melee attack power by 204 and reducing the effectiveness of any healing by 20%. Lasts 2 min",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "240 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Weakens the target enemy, reducing damage caused by 20 and reducing the effectiveness of any healing by 20%. Lasts 2 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind Blast",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8092,
+       "text": "Blasts the target for 40 to 44 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 42 to 46 Shadow damage, but causes a high amount of threat.",
+        "coefficient": "26.8% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8102,
+       "text": "Blasts the target for 69 to 75 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "80 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 76 to 82 Shadow damage, but causes a high amount of threat.",
+        "coefficient": "36.4% of spell power (direct)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8103,
+       "text": "Blasts the target for 103 to 109 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "110 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 117 to 125 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8104,
+       "text": "Blasts the target for 153 to 161 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 173 to 183 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8105,
+       "text": "Blasts the target for 198 to 210 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "185 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 225 to 239 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 8106,
+       "text": "Blasts the target for 259 to 275 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 288 to 306 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10945,
+       "text": "Blasts the target for 325 to 343 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "265 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 356 to 376 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10946,
+       "text": "Blasts the target for 406 to 428 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "310 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 437 to 461 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 10947,
+       "text": "Blasts the target for 477 to 503 Shadow damage, but causes a high amount of threat.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "30 yd range",
+       "cast": "1.5 sec cast",
+       "cooldown": "8 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts the target for 508 to 536 Shadow damage, but causes a high amount of threat.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind Control",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 605,
+       "text": "Controls a humanoid mind up to level 44, but increases the time between its attacks by 25%. Lasts up to 1 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "350 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10911,
+       "text": "Controls a humanoid mind up to level 59, but increases the time between attacks by 25%. Lasts up to 1 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "550 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10912,
+       "text": "Controls a humanoid mind up to level 64, but increases the time between attacks by 25%. Lasts up to 1 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "750 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind Flay",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 15407,
+       "text": "Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 17311,
+       "text": "Assault the target's mind with Shadow energy, causing 102 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 126 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 17312,
+       "text": "Assault the target's mind with Shadow energy, causing 153 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 186 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 17313,
+       "text": "Assault the target's mind with Shadow energy, causing 225 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "135 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 261 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 17314,
+       "text": "Assault the target's mind with Shadow energy, causing 294 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "165 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 330 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 18807,
+       "text": "Assault the target's mind with Shadow energy, causing 390 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+       "school": "Shadow",
+       "coefficient": "16.7% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "205 Mana",
+       "range": "20 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Assault the target's mind with Shadow energy, causing 426 Shadow damage over 3 sec and slowing their movement speed by 50%.",
+        "coefficient": "15% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind Soothe",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 453,
+       "text": "Soothes the target, reducing the range at which it will attack you by 10 yards. Only affects Humanoid targets level 40 or lower. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8192,
+       "text": "Soothes the target, reducing the range at which it will attack you by 10 yards. Only affects Humanoid targets level 55 or lower. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "70 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10953,
+       "text": "Soothes the target, reducing the range at which it will attack you by 10 yards. Only affects Humanoid targets level 70 or lower. Lasts 15 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "90 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind Vision",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2096,
+       "text": "Allows the caster to see through the target's eyes for 1 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Mana",
+       "range": "100 yd range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10909,
+       "text": "Allows the caster to see through the target's eyes for 1 min. Will not work if the target is in another instance or on another continent.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "150 Mana",
+       "range": "Unlimited range",
+       "cast": "Channeled",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Prayer of Shadow Protection",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 27683,
+       "text": "Power infuses all party and raid members, increasing their Shadow resistance by 60 for 20 min.",
+       "school": "Holy",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "1,300 Mana",
+       "range": "40 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Reagents: Sacred Candle",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Power infuses the target's party, increasing their Shadow resistance by 60 for 20 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Psychic Scream",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8122,
+       "text": "The caster lets out a psychic scream, causing 2 enemies within 8 yards to flee for 8 sec. Damage caused may interrupt the effect.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "100 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8124,
+       "text": "The caster lets out a psychic scream, causing 3 enemies within 8 yards to flee for 8 sec. Damage caused may interrupt the effect.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "140 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10888,
+       "text": "The caster lets out a psychic scream, causing 4 enemies within 8 yards to flee for 8 sec. Damage caused may interrupt the effect.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "180 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 10890,
+       "text": "The caster lets out a psychic scream, causing 5 enemies within 8 yards to flee for 8 sec. Damage caused may interrupt the effect.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "210 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadow Protection",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 976,
+       "text": "Increases the target's resistance to Shadow spells by 30 for 10 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 10957,
+       "text": "Increases the target's resistance to Shadow spells by 45 for 10 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "450 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 10958,
+       "text": "Increases the target's resistance to Shadow spells by 60 for 10 min.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "650 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadow Word: Death",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1309595,
+       "text": "A word of dark binding that inflicts 293 to 311 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "175 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1309633,
+       "text": "A word of dark binding that inflicts 368 to 390 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "205 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1309635,
+       "text": "A word of dark binding that inflicts 402 to 426 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1309636,
+       "text": "A word of dark binding that inflicts 444 to 472 Shadow damage to the target. If your target is not killed by Shadow Word: Death, you take backlash damage equal to 10% of your maximum health.",
+       "school": "Shadow",
+       "coefficient": "42.9% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "340 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadow Word: Pain",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 589,
+       "text": "A word of darkness that causes 30 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "changed",
+        "coefficient": "6.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 594,
+       "text": "A word of darkness that causes 60 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 66 Shadow damage over 18 sec.",
+        "coefficient": "10.4% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 970,
+       "text": "A word of darkness that causes 108 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "95 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 132 Shadow damage over 18 sec.",
+        "coefficient": "15.4% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 992,
+       "text": "A word of darkness that causes 180 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "155 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 234 Shadow damage over 18 sec.",
+        "coefficient": "16.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 2767,
+       "text": "A word of darkness that causes 288 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "230 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 366 Shadow damage over 18 sec.",
+        "coefficient": "16.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 10892,
+       "text": "A word of darkness that causes 426 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "305 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 510 Shadow damage over 18 sec.",
+        "coefficient": "16.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 10893,
+       "text": "A word of darkness that causes 582 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "385 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 672 Shadow damage over 18 sec.",
+        "coefficient": "16.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 10894,
+       "text": "A word of darkness that causes 762 Shadow damage over 18 sec.",
+       "school": "Shadow",
+       "coefficient": "20% of spell power (per tick)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "470 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "A word of darkness that causes 852 Shadow damage over 18 sec.",
+        "coefficient": "16.7% of spell power (per tick)",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadowform",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 15473,
+       "text": "Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40% of base mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1.5 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%. However, you may not cast Holy spells while in this form.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shadowguard",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 18137,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 13 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 20 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19308,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 22 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "85 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 35 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19309,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 33 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "120 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 51 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19310,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 50 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "160 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 70 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19311,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 70 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "200 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 90 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19312,
+       "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 96 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+       "school": "Shadow",
+       "coefficient": "26.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "250 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "The caster is surrounded by shadows. When a spell, melee or ranged attack hits the caster, the attacker will be struck for 116 Shadow damage. Attackers can only be damaged once every few seconds. This damage causes no threat. 3 charges. Lasts 10 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Silence",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 15487,
+       "text": "Silences the target, preventing them from casting spells for 5 sec and interrupting their spellcasts for 3 sec.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "225 Mana",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Silences the target, preventing them from casting spells for 5 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Touch of Weakness",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2652,
+       "text": "The next melee attack against the caster will cause 8 Shadow damage and reduce the attacker's melee attack power by 43 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack against the caster will cause 8 Shadow damage and reduce the damage caused by the attacker by 2 for 2 min.",
+        "coefficient": "6.7% of spell power (direct)",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 19261,
+       "text": "The next melee attack against the caster will cause 12 Shadow damage and reduce the attacker's melee attack power by 57 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack against the caster will cause 15 Shadow damage and reduce the damage caused by the attacker by 4 for 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 19262,
+       "text": "The next melee attack against the caster will cause 18 Shadow damage and reduce the attacker's melee attack power by 85 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "75 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack against the caster will cause 24 Shadow damage and reduce the damage caused by the attacker by 7 for 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 19264,
+       "text": "The next melee attack against the caster will cause 28 Shadow damage and reduce the attacker's melee attack power by 106 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "105 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack against the caster will cause 35 Shadow damage and reduce the damage caused by the attacker by 11 for 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 19265,
+       "text": "The next melee attack on the caster will cause 40 Shadow damage and reduce the attacker's melee attack power by the attacker by 155 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "145 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack on the caster will cause 48 Shadow damage and reduce the damage caused by the attacker by 15 for 2 min.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 19266,
+       "text": "The next melee attack on the caster will cause 56 Shadow damage and reduce the attacker's melee attack power by the attacker by 204 for 2 min.",
+       "school": "Shadow",
+       "coefficient": "10.7% of spell power (direct)",
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "195 Mana",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "The next melee attack on the caster will cause 64 Shadow damage and reduce the damage caused by the attacker by 20 for 2 min.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Vampiric Embrace",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 15286,
+       "text": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die.",
+       "school": "Shadow",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Mana",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min.",
+        "classic_cost": "40 Mana",
+        "classic_range": "30 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Shoot",
+   "rank": "",
+   "text": "Attack with an equipped wand.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: Cloth.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  }
+ ]
+}

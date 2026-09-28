@@ -1,0 +1,306 @@
+{
+  "class": "Hunter",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. The raid build is Beast Mastery/Marksmanship (Improved Aspect of the Hawk + Trueshot Aura); Marksmanship/Survival with Surefooted is the low-hit variant. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "bm-mm-raid",
+      "name": "Beast Mastery / Marksmanship (raid DPS, 20/31/0)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "Trueshot Aura for the melee, Lethal/Mortal Shots and Ranged Weapon Specialization for your own damage, Aimed Shot and Improved Hunter's Mark, plus Improved Aspect of the Hawk (ranged haste procs), Unleashed Fury and Ferocity so the pet is real damage. The Icy Veins/Wowhead standard raid build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Improved Aspect of the Hawk", 5],
+          ["Endurance Training", 3],
+          ["Improved Revive Pet", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5]
+        ],
+        "Marksmanship": [
+          ["Efficiency", 5],
+          ["Improved Hunter's Mark", 3],
+          ["Lethal Shots", 5],
+          ["Aimed Shot", 1],
+          ["Hawk Eye", 3],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Trueshot Aura", 1]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Trueshot Aura", "why": "+100 attack power to the whole group — why raids bring hunters."},
+        {"talent": "Improved Aspect of the Hawk", "why": "10% chance per auto-shot for +30% ranged haste for 12s: the best personal DPS talent."},
+        {"talent": "Lethal Shots", "why": "+5% ranged crit."},
+        {"talent": "Mortal Shots", "why": "+30% ranged crit damage."},
+        {"talent": "Ranged Weapon Specialization", "why": "+5% ranged damage."},
+        {"talent": "Aimed Shot", "why": "Big shot for the rotation (weave between Auto Shots)."},
+        {"talent": "Efficiency", "why": "-10% mana on shots and stings."},
+        {"talent": "Unleashed Fury", "why": "+20% pet damage."},
+        {"talent": "Ferocity", "why": "+10% pet crit."},
+        {"talent": "Improved Hunter's Mark", "why": "+attack power on the target for all physical DPS; only one hunter per raid needs it."},
+        {"talent": "Hawk Eye", "why": "+6 yards range — safer positioning."},
+        {"talent": "Barrage", "why": "+15% Multi-Shot/Volley; prerequisite for Trueshot Aura."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Endurance Training 3 + Improved Revive Pet 2",
+          "alternatives": ["Endurance Training 5", "Improved Aspect of the Monkey", "Bestial Swiftness"],
+          "why": "Filler to reach Unleashed Fury; pet-death frequency decides between health and revive time."
+        },
+        {
+          "points": 3,
+          "default": "Improved Hunter's Mark",
+          "alternatives": ["Scatter Shot 1 + Improved Arcane Shot 2", "Improved Concussive Shot"],
+          "why": "If another hunter has Improved Hunter's Mark, take Scatter Shot for PvP/utility instead."
+        },
+        {
+          "points": 5,
+          "default": "Ferocity",
+          "alternatives": ["Monster Slaying/Humanoid Slaying (Survival) in Molten Core"],
+          "why": "Icy Veins notes the slaying talents beat Ferocity in Molten Core if you rebuild the tree that way."
+        }
+      ],
+      "notes": ["Rotation: Auto Shot with Aimed Shot / Multi-Shot woven between shots (shot-timer addon), Serpent Sting only if the debuff slot is free.", "Ranged hit cap vs. level 63 bosses is 9%; gear it before taking the Surefooted variant."],
+      "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents", "https://www.wowhead.com/classic/guide/classes/hunter/dps-talent-builds-pve"]
+    },
+    {
+      "id": "mm-surv-hit-raid",
+      "name": "Marksmanship / Survival — Surefooted (raid DPS, 0/31/20)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "The same Marksmanship core with 20 points in Survival for Surefooted (+3% hit) and the slaying talents. Only worth running while you are below ~6% hit from gear; once hit comes from gear, go back to 20/31/0.",
+      "allocation": {
+        "Beast Mastery": [],
+        "Marksmanship": [
+          ["Efficiency", 5],
+          ["Improved Hunter's Mark", 3],
+          ["Lethal Shots", 5],
+          ["Aimed Shot", 1],
+          ["Hawk Eye", 3],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Trueshot Aura", 1]
+        ],
+        "Survival": [
+          ["Monster Slaying", 3],
+          ["Humanoid Slaying", 3],
+          ["Deflection", 5],
+          ["Survivalist", 5],
+          ["Deterrence", 1],
+          ["Surefooted", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Surefooted", "why": "+3% hit and +15% snare resistance."},
+        {"talent": "Monster Slaying", "why": "+3% damage and crit damage vs. Beasts, Giants, Dragonkin — most raid bosses."},
+        {"talent": "Humanoid Slaying", "why": "+3% vs. Humanoids (many trash packs, some bosses)."},
+        {"talent": "Trueshot Aura", "why": "Group attack power."},
+        {"talent": "Lethal Shots", "why": "Crit."},
+        {"talent": "Mortal Shots", "why": "Crit damage."}
+      ],
+      "flex": [
+        {
+          "points": 10,
+          "default": "Deflection 5 + Survivalist 5",
+          "alternatives": ["Savage Strikes + Improved Wing Clip", "Entrapment"],
+          "why": "Pure filler to unlock Surefooted; Survivalist's +10% health is the least useless."
+        },
+        {
+          "points": 1,
+          "default": "Deterrence",
+          "alternatives": ["Clever Traps"],
+          "why": "Melee/PvP survival button."
+        }
+      ],
+      "notes": ["Loses Improved Aspect of the Hawk and pet damage — roughly a wash at 6% hit, worse above."],
+      "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "bm-solo-farm",
+      "name": "Beast Mastery (solo / farming / pre-raid, 31/20/0)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "situational",
+      "summary": "Bestial Wrath, Frenzy, Ferocity and Unleashed Fury make the pet a monster: Maraudon/DM farming, leveling and pre-raid dungeons. Icy Veins notes it out-damages the raid spec before raid gear, but lacks Trueshot Aura.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Improved Aspect of the Hawk", 5],
+          ["Endurance Training", 5],
+          ["Improved Revive Pet", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Intimidation", 1],
+          ["Bestial Discipline", 1],
+          ["Frenzy", 5],
+          ["Bestial Wrath", 1]
+        ],
+        "Marksmanship": [
+          ["Efficiency", 5],
+          ["Improved Hunter's Mark", 1],
+          ["Lethal Shots", 5],
+          ["Aimed Shot", 1],
+          ["Hawk Eye", 3],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Bestial Wrath", "why": "+50% pet damage and CC immunity for 18s."},
+        {"talent": "Frenzy", "why": "Pet haste after crits (with Ferocity, near-permanent)."},
+        {"talent": "Ferocity", "why": "+10% pet crit."},
+        {"talent": "Unleashed Fury", "why": "+20% pet damage."},
+        {"talent": "Intimidation", "why": "Pet stun — solo utility and threat."},
+        {"talent": "Improved Aspect of the Hawk", "why": "Ranged haste."},
+        {"talent": "Endurance Training", "why": "+15% pet health."},
+        {"talent": "Mortal Shots", "why": "Your own crit damage."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Bestial Swiftness 1 + Bestial Discipline 1",
+          "alternatives": ["Improved Mend Pet", "Spirit Bond"],
+          "why": "Utility points on the way to Frenzy."
+        },
+        {
+          "points": 1,
+          "default": "Improved Hunter's Mark",
+          "alternatives": ["Improved Concussive Shot"],
+          "why": "Filler to reach Mortal Shots."
+        }
+      ],
+      "notes": ["Use a Cat/Wolf/Owl with high-damage attacks; the pet does most of the work in dungeons."],
+      "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-mm-surv",
+      "name": "Marksmanship / Survival (PvP, 0/31/20)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "Scatter Shot, Improved Concussive Shot stuns, Aimed Shot burst and Trueshot Aura from Marksmanship; Improved Wing Clip, Deterrence, Surefooted and Improved Feign Death from Survival for kiting.",
+      "allocation": {
+        "Beast Mastery": [],
+        "Marksmanship": [
+          ["Improved Concussive Shot", 5],
+          ["Efficiency", 2],
+          ["Lethal Shots", 5],
+          ["Aimed Shot", 1],
+          ["Hawk Eye", 3],
+          ["Mortal Shots", 5],
+          ["Scatter Shot", 1],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Trueshot Aura", 1]
+        ],
+        "Survival": [
+          ["Humanoid Slaying", 3],
+          ["Monster Slaying", 2],
+          ["Improved Wing Clip", 5],
+          ["Survivalist", 4],
+          ["Deterrence", 1],
+          ["Surefooted", 3],
+          ["Improved Feign Death", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Scatter Shot", "why": "Instant 4s disorient — trap setup and Aimed Shot window."},
+        {"talent": "Improved Concussive Shot", "why": "20% chance to stun on Concussive Shot."},
+        {"talent": "Improved Wing Clip", "why": "20% root chance on Wing Clip — kite setup."},
+        {"talent": "Aimed Shot", "why": "Big burst shot after Scatter Shot / a Wing Clip root (Classic Aimed Shot has no healing debuff)."},
+        {"talent": "Deterrence", "why": "+25% dodge/parry for 10s."},
+        {"talent": "Surefooted", "why": "+3% hit and snare resistance."},
+        {"talent": "Humanoid Slaying", "why": "+3% vs. players."},
+        {"talent": "Improved Feign Death", "why": "Feign Death resisted less often."}
+      ],
+      "flex": [
+        {
+          "points": 6,
+          "default": "Monster Slaying 2 + Survivalist 4",
+          "alternatives": ["Deflection", "Savage Strikes", "Entrapment"],
+          "why": "Filler to reach tier 2 and tier 4 of Survival; Survivalist's health is the least useless."
+        },
+        {
+          "points": 2,
+          "default": "Efficiency",
+          "alternatives": ["Improved Hunter's Mark"],
+          "why": "Marksmanship filler."
+        }
+      ],
+      "notes": ["Aimed Shot in Classic has no healing debuff (that is later expansions); its role here is burst after Scatter Shot."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/hunter/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-beast-mastery",
+      "name": "Leveling — Beast Mastery",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Pet-first leveling: Improved Aspect of the Hawk and Endurance Training, Unleashed Fury and Ferocity, Bestial Wrath at 40, then Marksmanship for Lethal/Mortal Shots and Aimed Shot. Ends in the 31/20/0 solo build; respec to 20/31/0 for raiding.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Improved Aspect of the Hawk", 5],
+          ["Endurance Training", 5],
+          ["Improved Revive Pet", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Intimidation", 1],
+          ["Bestial Discipline", 1],
+          ["Frenzy", 5],
+          ["Bestial Wrath", 1]
+        ],
+        "Marksmanship": [
+          ["Efficiency", 5],
+          ["Improved Hunter's Mark", 1],
+          ["Lethal Shots", 5],
+          ["Aimed Shot", 1],
+          ["Hawk Eye", 3],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": []
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Improved Aspect of the Hawk", "points": 5},
+        {"levels": "15-19", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 5},
+        {"levels": "20-21", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 2},
+        {"levels": "22-26", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "27", "tree": "Beast Mastery", "talent": "Bestial Swiftness", "points": 1},
+        {"levels": "28-32", "tree": "Beast Mastery", "talent": "Ferocity", "points": 5},
+        {"levels": "33", "tree": "Beast Mastery", "talent": "Intimidation", "points": 1},
+        {"levels": "34", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "35-39", "tree": "Beast Mastery", "talent": "Frenzy", "points": 5},
+        {"levels": "40", "tree": "Beast Mastery", "talent": "Bestial Wrath", "points": 1},
+        {"levels": "41-45", "tree": "Marksmanship", "talent": "Efficiency", "points": 5},
+        {"levels": "46-50", "tree": "Marksmanship", "talent": "Lethal Shots", "points": 5},
+        {"levels": "51", "tree": "Marksmanship", "talent": "Aimed Shot", "points": 1},
+        {"levels": "52-54", "tree": "Marksmanship", "talent": "Hawk Eye", "points": 3},
+        {"levels": "55", "tree": "Marksmanship", "talent": "Improved Hunter's Mark", "points": 1},
+        {"levels": "56-60", "tree": "Marksmanship", "talent": "Mortal Shots", "points": 5}
+      ],
+      "core": [
+        {"talent": "Improved Aspect of the Hawk", "why": "Ranged haste from 10."},
+        {"talent": "Endurance Training", "why": "A pet that survives is a pet that tanks."},
+        {"talent": "Unleashed Fury", "why": "+20% pet damage at 22."},
+        {"talent": "Bestial Wrath", "why": "The 40 milestone."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Bestial Swiftness",
+          "alternatives": ["Improved Mend Pet"],
+          "why": "Pet speed vs. cheaper Mend Pet."
+        }
+      ],
+      "notes": ["Send the pet, Hunter's Mark, Serpent Sting, Auto Shot; Feign Death if the pet loses threat. Keep the pet's Growl trained at every rank."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/hunter/leveling-talents"]
+    }
+  ]
+}

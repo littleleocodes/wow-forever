@@ -1,0 +1,138 @@
+{
+ "class": "paladin",
+ "spec": "holy-heal",
+ "runs": 60,
+ "builds": [
+  "holy-raid-healer",
+  "opt-holy-heal-raid-heal",
+  "cand-holy-r1",
+  "cand-holy-r2"
+ ],
+ "capacity": [
+  3.910710654340107,
+  1.955362974028869,
+  1.3035736167128567,
+  0.9776795752959926,
+  0.782143354362561,
+  11.732131963020318,
+  5.866065981510159,
+  3.910710654340107,
+  2.9330329907550796,
+  2.346426392604064
+ ],
+ "talents": [
+  {
+   "talent": "Illumination",
+   "lab": 0.1275649296248402,
+   "ev_before": 0.13410995627353353,
+   "ev_after": 0.13712429120871636,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Reverence",
+   "lab": 0.11581598457801955,
+   "ev_before": 0.11119263017114925,
+   "ev_after": 0.11363993447595458,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Healing Light",
+   "lab": 0.06672544154621839,
+   "ev_before": 0.08530830669226708,
+   "ev_after": 0.06654658739028785,
+   "scale": 0.7821665150113404,
+   "how": "fitted",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Holy Power",
+   "lab": 0.06366604477611947,
+   "ev_before": 0.04379378328921291,
+   "ev_after": 0.03363403178489572,
+   "scale": 0.782143354362561,
+   "how": "capped",
+   "builds": [
+    "holy-raid-healer"
+   ]
+  },
+  {
+   "talent": "Divine Intellect",
+   "lab": 0.03480786595684171,
+   "ev_before": 0.041526023885238086,
+   "ev_after": 0.04213000680115142,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Infusion of Light",
+   "lab": 0.03440941310665888,
+   "ev_before": 0.02878562092554921,
+   "ev_after": 0.028159262808774378,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Divine Favor",
+   "lab": 0.03363793329067401,
+   "ev_before": 0.04197590087870882,
+   "ev_after": 0.04170124603215637,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "opt-holy-heal-raid-heal",
+    "cand-holy-r1",
+    "cand-holy-r2"
+   ]
+  },
+  {
+   "talent": "Holy Shock",
+   "lab": -0.013838297374970766,
+   "ev_before": 0.0002613056617345766,
+   "ev_after": 0.00022814669620283118,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "holy-raid-healer",
+    "cand-holy-r1"
+   ]
+  }
+ ],
+ "shares": {
+  "Holy Light": 0.5229191947260762,
+  "Flash of Light": 0.43876123983444976,
+  "Lay on Hands": 0.03338872740992422,
+  "Holy Shock": 0.004930838029549842
+ }
+}

@@ -1,0 +1,226 @@
+{
+ "id": "cand-aoe-r2",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Pathfinding",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Improved Concussive Shot",
+    1
+   ],
+   [
+    "Efficiency",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Improved Wing Clip",
+    3
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Entrapment",
+    4
+   ],
+   [
+    "Deterrence",
+    1
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Counterattack",
+    1
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Survival",
+   "talent": "Improved Wing Clip",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Survival",
+   "talent": "Deterrence",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Survival",
+   "talent": "Entrapment",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Survival",
+   "talent": "Counterattack",
+   "points": 1
+  },
+  {
+   "levels": "26-27",
+   "tree": "Survival",
+   "talent": "Survival Tactics",
+   "points": 2
+  },
+  {
+   "levels": "28-29",
+   "tree": "Survival",
+   "talent": "Entrapment",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Survival",
+   "talent": "Strider Kick",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Survival",
+   "talent": "Expose Prey",
+   "points": 2
+  },
+  {
+   "levels": "33-34",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Survival",
+   "talent": "Lacerating Strikes",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "46-48",
+   "tree": "Marksmanship",
+   "talent": "Hawk Eye",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Marksmanship",
+   "talent": "Improved Concussive Shot",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "53-57",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "58-59",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Survival",
+   "talent": "Entrapment",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 2)"
+}

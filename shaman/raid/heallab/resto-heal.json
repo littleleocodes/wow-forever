@@ -1,0 +1,333 @@
+{
+ "class": "shaman",
+ "spec": "resto-heal",
+ "date": "2026-09-28",
+ "runs": 60,
+ "steps": 10,
+ "seconds": 139,
+ "assumptions": {
+  "DURATION": 300.0,
+  "TANK_HP": 9000.0,
+  "RAID_HP": 4500.0,
+  "TANK_ARMOR_MIT": 0.55,
+  "TANK_AVOID": 0.3,
+  "BOSS_SWING": 2.0,
+  "BOSS_DMG": 2600.0,
+  "CRUSH_CHANCE": 0.15,
+  "SPIKE_EVERY": 30.0,
+  "SPIKE_MULT": 2.0,
+  "RAID_PULSE_EVERY": 20.0,
+  "RAID_PULSE_DMG": 700.0,
+  "POTIONS": true,
+  "DOWNRANK": true,
+  "KINGS": 1.1
+ },
+ "gear": {
+  "intellect": 250,
+  "spirit": 150,
+  "healing": 360,
+  "mp5": 20,
+  "crit_gear": 0.02
+ },
+ "results": {
+  "resto-raid-healer": {
+   "split": "0/10/41",
+   "capacity": 0.6947753906250002,
+   "summary": {
+    "multiplier": 0.6947753906250002,
+    "shares": {
+     "Healing Wave": 0.7296950853615891,
+     "Healing Stream Totem": 0.10447937006630767,
+     "Riptide": 0.09696909528129392,
+     "Lesser Healing Wave": 0.05844796565838311,
+     "Chain Heal": 0.010408483632426097
+    },
+    "hps": 396.12000000160225,
+    "overheal_share": 0.10625816106837144,
+    "oom_time": 18.478333333333396,
+    "mana_left": 652.6260999999956,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 332,
+    "healing": 360,
+    "mp5": 53,
+    "mana": 8471,
+    "crit": 0.1203
+   }
+  },
+  "opt-resto-heal-raid-heal": {
+   "split": "0/10/41",
+   "capacity": 0.6947753906250002,
+   "summary": {
+    "multiplier": 0.6947753906250002,
+    "shares": {
+     "Healing Wave": 0.7296950853615891,
+     "Healing Stream Totem": 0.10447937006630767,
+     "Riptide": 0.09696909528129392,
+     "Lesser Healing Wave": 0.05844796565838311,
+     "Chain Heal": 0.010408483632426097
+    },
+    "hps": 396.12000000160225,
+    "overheal_share": 0.10625816106837144,
+    "oom_time": 18.478333333333396,
+    "mana_left": 652.6260999999956,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 332,
+    "healing": 360,
+    "mp5": 53,
+    "mana": 8471,
+    "crit": 0.1203
+   }
+  },
+  "cand-resto-heal-hand-2026-09-26": {
+   "split": "0/5/46",
+   "capacity": 0.6665283203125,
+   "summary": {
+    "multiplier": 0.6665283203125,
+    "shares": {
+     "Healing Wave": 0.7380748199582342,
+     "Healing Stream Totem": 0.10805866849017087,
+     "Riptide": 0.09227596783115798,
+     "Lesser Healing Wave": 0.05511417422264785,
+     "Chain Heal": 0.006476369497789042
+    },
+    "hps": 388.98424166011193,
+    "overheal_share": 0.10393181138050635,
+    "oom_time": 17.046666666666727,
+    "mana_left": 790.2818666666603,
+    "survival": 0.95
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 332,
+    "healing": 360,
+    "mp5": 53,
+    "mana": 8471,
+    "crit": 0.1203
+   }
+  },
+  "cand-resto-r1": {
+   "split": "0/10/41",
+   "capacity": 0.6947753906250002,
+   "summary": {
+    "multiplier": 0.6947753906250002,
+    "shares": {
+     "Healing Wave": 0.7296950853615891,
+     "Healing Stream Totem": 0.10447937006630767,
+     "Riptide": 0.09696909528129392,
+     "Lesser Healing Wave": 0.05844796565838311,
+     "Chain Heal": 0.010408483632426097
+    },
+    "hps": 396.12000000160225,
+    "overheal_share": 0.10625816106837144,
+    "oom_time": 18.478333333333396,
+    "mana_left": 652.6260999999956,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 332,
+    "healing": 360,
+    "mp5": 53,
+    "mana": 8471,
+    "crit": 0.1203
+   }
+  },
+  "cand-resto-r2": {
+   "split": "0/10/41",
+   "capacity": 0.6966796875000001,
+   "summary": {
+    "multiplier": 0.6966796875000001,
+    "shares": {
+     "Healing Wave": 0.7250906375933073,
+     "Healing Stream Totem": 0.10460317728684392,
+     "Riptide": 0.09854268178763322,
+     "Lesser Healing Wave": 0.06319469859641236,
+     "Chain Heal": 0.008568804735803237
+    },
+    "hps": 396.9173824645113,
+    "overheal_share": 0.11495530686044936,
+    "oom_time": 20.06166666666676,
+    "mana_left": 713.554149999994,
+    "survival": 0.8666666666666667
+   },
+   "stats": {
+    "intellect": 463,
+    "spirit": 332,
+    "healing": 360,
+    "mp5": 53,
+    "mana": 8471,
+    "crit": 0.1203
+   }
+  }
+ },
+ "deltas": {
+  "resto-raid-healer": [
+   {
+    "talent": "Ancestral Healing",
+    "ranks": 3,
+    "sim_delta": 0.039409766609445396,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6684326171875,
+    "ev_delta": 0.029328851952126405,
+    "simulated": true
+   },
+   {
+    "talent": "Ancestral Knowledge",
+    "ranks": 5,
+    "sim_delta": 0.03891647196261695,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6687500000000001,
+    "ev_delta": 0.030559095840026192,
+    "simulated": true
+   },
+   {
+    "talent": "Healing Focus",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6947753906250002,
+    "ev_delta": 0.007363968069139627,
+    "simulated": false
+   },
+   {
+    "talent": "Healing Way",
+    "ranks": 3,
+    "sim_delta": 0.14427020506634525,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.607177734375,
+    "ev_delta": 0.13632758113575286,
+    "simulated": true
+   },
+   {
+    "talent": "Mana Tide Totem",
+    "ranks": 1,
+    "sim_delta": 0.0549377224199291,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.65859375,
+    "ev_delta": 0.046557208978828576,
+    "simulated": true
+   },
+   {
+    "talent": "Mindfulness",
+    "ranks": 3,
+    "sim_delta": 0.22084942084942114,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.569091796875,
+    "ev_delta": 0.17253854361218388,
+    "simulated": true
+   },
+   {
+    "talent": "Nature's Swiftness",
+    "ranks": 1,
+    "sim_delta": 0.0036679128165340146,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.692236328125,
+    "ev_delta": 0.003939446903180879,
+    "simulated": true
+   },
+   {
+    "talent": "Purification",
+    "ranks": 5,
+    "sim_delta": 0.0636516538964682,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6531982421875,
+    "ev_delta": 0.060065391087038164,
+    "simulated": true
+   },
+   {
+    "talent": "Restorative Totems",
+    "ranks": 5,
+    "sim_delta": 0.029632041680234648,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6747802734375,
+    "ev_delta": 0.028658544291065197,
+    "simulated": true
+   },
+   {
+    "talent": "Riptide",
+    "ranks": 1,
+    "sim_delta": 0.032059186189889226,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.673193359375,
+    "ev_delta": 0.0330868271481262,
+    "simulated": true
+   },
+   {
+    "talent": "Thundering Strikes",
+    "ranks": 5,
+    "sim_delta": 0.04586549062844566,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.664306640625,
+    "ev_delta": 0.04521946977805848,
+    "simulated": true
+   },
+   {
+    "talent": "Tidal Focus",
+    "ranks": 5,
+    "sim_delta": 0.04987825573673735,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6617675781250001,
+    "ev_delta": 0.045985689117411604,
+    "simulated": true
+   },
+   {
+    "talent": "Tidal Mastery",
+    "ranks": 5,
+    "sim_delta": 0.04586549062844566,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.664306640625,
+    "ev_delta": 0.030487010788964992,
+    "simulated": true
+   },
+   {
+    "talent": "Totemic Focus",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6947753906250002,
+    "ev_delta": 0.003939446903180879,
+    "simulated": false
+   },
+   {
+    "talent": "Water Shield",
+    "ranks": 1,
+    "sim_delta": 0.07832215528020944,
+    "cap_with": 0.6947753906250002,
+    "cap_without": 0.6443115234375,
+    "ev_delta": 0.06422799964699391,
+    "simulated": true
+   }
+  ]
+ },
+ "mechanics": {
+  "Nature's Swiftness": "instant Healing Wave on a tank under 35%, every 3 min",
+  "Mana Tide Totem": "290 mana every 3 s for 12 s when mana is under 50%, every 5 min",
+  "Ancestral Healing": "a critical heal gives the target +25% armor for 15 s (33%/rank chance)",
+  "Water Shield": "a critical heal restores 2% of maximum mana (one globe every 3 s)",
+  "Totemic Focus": "totem mana only: nothing for heals",
+  "Riptide": "instant heal plus a 15 s HoT on a 6 s cooldown: the emergency heal and the tank's HoT",
+  "Healing Stream Totem": "placed at the pull: 11 (+Restorative Totems) every 2 s on the group"
+ },
+ "simulated": [
+  "Ancestral Healing",
+  "Ancestral Knowledge",
+  "Healing Way",
+  "Improved Healing Wave",
+  "Mana Tide Totem",
+  "Mindfulness",
+  "Nature's Swiftness",
+  "Purification",
+  "Restorative Totems",
+  "Riptide",
+  "Thundering Strikes",
+  "Tidal Focus",
+  "Tidal Mastery",
+  "Water Shield"
+ ]
+}

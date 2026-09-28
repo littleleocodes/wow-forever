@@ -1,0 +1,261 @@
+{
+  "class": "Druid",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Druids raid as Restoration healers (Swiftmend build early, Nature's Grace/Improved Regrowth build late), Feral is a strong off-tank/dungeon tank and a powershifting cat, Balance is a one-per-raid Moonkin. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "resto-swiftmend-healer",
+      "name": "Restoration — Swiftmend Healer (5/0/46)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The full Restoration tree: Swiftmend burst, Gift of Nature (+10% healing), Improved Regrowth (+50% Regrowth crit), Nature's Swiftness, Improved Rejuvenation/Healing Touch, Tranquil Spirit and Reflection, with Subtlety for threat. Five leftover points go to Improved Wrath for questing. The first build to run at 60.",
+      "allocation": {
+        "Balance": [["Improved Wrath", 5]],
+        "Feral Combat": [],
+        "Restoration": [["Improved Mark of the Wild", 5], ["Improved Healing Touch", 5], ["Nature's Focus", 5], ["Reflection", 3], ["Insect Swarm", 1], ["Subtlety", 5], ["Tranquil Spirit", 5], ["Improved Rejuvenation", 3], ["Nature's Swiftness", 1], ["Gift of Nature", 5], ["Improved Tranquility", 2], ["Improved Regrowth", 5], ["Swiftmend", 1]]
+      },
+      "core": [
+        {"talent": "Swiftmend", "why": "Consume a Rejuvenation/Regrowth for an instant heal — tank-saving burst."},
+        {"talent": "Gift of Nature", "why": "+10% healing."},
+        {"talent": "Improved Regrowth", "why": "+50% Regrowth crit chance."},
+        {"talent": "Nature's Swiftness", "why": "Instant Healing Touch every 3 minutes."},
+        {"talent": "Improved Healing Touch", "why": "-0.5s Healing Touch cast."},
+        {"talent": "Improved Rejuvenation", "why": "+15% Rejuvenation."},
+        {"talent": "Tranquil Spirit", "why": "-10% Healing Touch/Tranquility mana."},
+        {"talent": "Reflection", "why": "+15% mana regen while casting."},
+        {"talent": "Nature's Focus", "why": "70% pushback resistance."},
+        {"talent": "Subtlety", "why": "-20% healing threat."},
+        {"talent": "Improved Mark of the Wild", "why": "+35% Mark/Gift of the Wild for the raid."},
+        {"talent": "Insect Swarm", "why": "Prerequisite for Gift of Nature; a fine DoT while soloing."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Improved Wrath", "alternatives": ["Nature's Grasp 1 + Improved Nature's Grasp 4", "Furor"], "why": "Icy Veins suggests Improved Wrath for questing; Nature's Grasp is the PvP/dungeon utility choice."},
+        {"points": 2, "default": "Improved Tranquility", "alternatives": ["Furor 2", "Improved Enrage"], "why": "Two spare Restoration points."}
+      ],
+      "notes": [
+        "Rejuvenation + Regrowth on the tank, Swiftmend for emergencies, Healing Touch with Nature's Swiftness; Innervate the priest.",
+        "As gear improves, move to the Nature's Grace / Improved Regrowth build below."
+      ],
+      "sources": [
+        "https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents",
+        "https://www.wowhead.com/classic/guide/classes/druid/healer-talent-builds-pve"
+      ]
+    },
+    {
+      "id": "resto-regrowth-natures-grace",
+      "name": "Restoration — Regrowth / Nature's Grace (21/0/30)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "The endgame Regrowth build: Nature's Grace (-0.5s cast after a crit) chained with Improved Regrowth's +50% crit means near-permanent fast Regrowths, with Gift of Nature and Reflection behind it. Gives up Swiftmend, Nature's Swiftness, Tranquil Spirit and Improved Rejuvenation for 20 points of Balance utility.",
+      "allocation": {
+        "Balance": [["Improved Wrath", 5], ["Nature's Grasp", 1], ["Improved Nature's Grasp", 4], ["Improved Entangling Roots", 2], ["Natural Shapeshifter", 3], ["Improved Thorns", 3], ["Nature's Reach", 2], ["Nature's Grace", 1]],
+        "Feral Combat": [],
+        "Restoration": [["Improved Mark of the Wild", 5], ["Improved Healing Touch", 5], ["Nature's Focus", 5], ["Reflection", 3], ["Insect Swarm", 1], ["Improved Rejuvenation", 1], ["Gift of Nature", 5], ["Improved Regrowth", 5]]
+      },
+      "core": [
+        {"talent": "Nature's Grace", "why": "Every crit makes the next spell 0.5s faster — with Improved Regrowth it is up constantly."},
+        {"talent": "Improved Regrowth", "why": "+50% Regrowth crit chance."},
+        {"talent": "Gift of Nature", "why": "+10% healing."},
+        {"talent": "Reflection", "why": "Mana regen while casting."},
+        {"talent": "Improved Healing Touch", "why": "Healing Touch cast time for the big heals."},
+        {"talent": "Natural Shapeshifter", "why": "-30% shapeshift cost — bear/travel emergencies cost less."},
+        {"talent": "Nature's Reach", "why": "+20% range on Balance spells (Roots, Moonfire, Hibernate)."}
+      ],
+      "flex": [
+        {"points": 20, "default": "Balance utility (Improved Wrath, Nature's Grasp, Improved Entangling Roots, Natural Shapeshifter, Improved Thorns, Nature's Reach)", "alternatives": ["Improved Moonfire", "Natural Weapons + Omen of Clarity (feral off-spec)"], "why": "Icy Veins: the first 20 Balance points are discretionary — only Nature's Grace matters."},
+        {"points": 1, "default": "Improved Rejuvenation", "alternatives": ["Subtlety"], "why": "Twentieth Restoration point to unlock Gift of Nature."}
+      ],
+      "notes": [
+        "Regrowth spam on the tank and raid; Healing Touch when Nature's Grace is up and the tank is low.",
+        "Icy Veins also lists a Moonglow variant (24/0/27) for mana-starved raids: same Balance path plus Moonglow 3/3, dropping Improved Regrowth."
+      ],
+      "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+    },
+    {
+      "id": "feral-cat-dps",
+      "name": "Feral — Cat DPS / Powershift (14/32/5)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "The classic 14/32/5 feral: Heart of the Wild, Leader of the Pack, Blood Frenzy, Improved Shred, Predatory Strikes and Savage Fury in Feral; Natural Weapons, Omen of Clarity and Natural Shapeshifter in Balance; Furor in Restoration for powershifting (shift out and back in for 40 energy with Wolfshead Helm).",
+      "allocation": {
+        "Balance": [["Nature's Grasp", 1], ["Improved Nature's Grasp", 4], ["Natural Weapons", 5], ["Natural Shapeshifter", 3], ["Omen of Clarity", 1]],
+        "Feral Combat": [["Ferocity", 5], ["Thick Hide", 5], ["Feline Swiftness", 2], ["Sharpened Claws", 3], ["Improved Shred", 2], ["Predatory Strikes", 3], ["Blood Frenzy", 2], ["Primal Fury", 2], ["Savage Fury", 2], ["Heart of the Wild", 5], ["Leader of the Pack", 1]],
+        "Restoration": [["Furor", 5]]
+      },
+      "core": [
+        {"talent": "Furor", "why": "40 energy on entering Cat Form — powershifting lives on this."},
+        {"talent": "Heart of the Wild", "why": "+20% Strength in Cat Form (+25% Stamina in Bear)."},
+        {"talent": "Leader of the Pack", "why": "+3% crit for the whole melee group."},
+        {"talent": "Omen of Clarity", "why": "Clearcasting procs on melee hits — free Shreds."},
+        {"talent": "Natural Weapons", "why": "+10% physical damage."},
+        {"talent": "Natural Shapeshifter", "why": "-30% shapeshift mana cost — more powershifts per mana bar."},
+        {"talent": "Improved Shred", "why": "-12 energy on Shred."},
+        {"talent": "Blood Frenzy", "why": "Extra combo point on crits."},
+        {"talent": "Predatory Strikes", "why": "+150 attack power at 60."},
+        {"talent": "Sharpened Claws", "why": "+6% crit in forms."},
+        {"talent": "Savage Fury", "why": "+20% Claw/Rake/Maul/Swipe damage."},
+        {"talent": "Ferocity", "why": "-5 energy on Claw/Rake/Maul/Swipe."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Thick Hide", "alternatives": ["Feral Instinct", "Brutal Impact 2 + Feral Instinct 3"], "why": "Tier-2 Feral filler; Thick Hide also helps when you have to bear up."},
+        {"points": 5, "default": "Nature's Grasp 1 + Improved Nature's Grasp 4", "alternatives": ["Improved Wrath"], "why": "Tier-1 Balance filler on the way to Natural Weapons."},
+        {"points": 2, "default": "Feline Swiftness", "alternatives": ["Feral Charge 1 + Primal Fury (bear variant)"], "why": "Movement speed and dodge in Cat Form."}
+      ],
+      "notes": [
+        "Shred from behind (or Claw if not possible), Rip/Ferocious Bite at 5 points, powershift whenever energy is low and Clearcasting is not up.",
+        "Requires Wolfshead Helm (Leatherworking) and Manual Crowd Pummeler charges to reach rogue-level DPS."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/druid/feral/dps-talent-builds-pve"]
+    },
+    {
+      "id": "feral-bear-tank",
+      "name": "Feral — Bear Tank (14/32/5)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "The tank version of 14/32/5: Feral Instinct (threat), Thick Hide (armor), Feral Charge, Faerie Fire (Feral), Heart of the Wild (+25% Stamina), Leader of the Pack, Savage Fury and Primal Fury, with Natural Weapons/Omen of Clarity/Natural Shapeshifter and Furor. Excellent off-tank and dungeon tank; main-tanks with the right gear.",
+      "allocation": {
+        "Balance": [["Nature's Grasp", 1], ["Improved Nature's Grasp", 4], ["Natural Weapons", 5], ["Natural Shapeshifter", 3], ["Omen of Clarity", 1]],
+        "Feral Combat": [["Ferocity", 5], ["Feral Instinct", 5], ["Thick Hide", 5], ["Feral Charge", 1], ["Sharpened Claws", 3], ["Predatory Strikes", 3], ["Primal Fury", 1], ["Savage Fury", 2], ["Faerie Fire (Feral)", 1], ["Heart of the Wild", 5], ["Leader of the Pack", 1]],
+        "Restoration": [["Furor", 5]]
+      },
+      "core": [
+        {"talent": "Heart of the Wild", "why": "+25% Stamina in Bear Form."},
+        {"talent": "Thick Hide", "why": "+10% armor — Dire Bear multiplies it."},
+        {"talent": "Feral Instinct", "why": "+15% threat in bear forms."},
+        {"talent": "Natural Weapons", "why": "+10% damage = threat."},
+        {"talent": "Omen of Clarity", "why": "Free Mauls/Swipes."},
+        {"talent": "Furor", "why": "10 rage on shifting into Bear Form — instant Maul/Growl on the pull."},
+        {"talent": "Savage Fury", "why": "+20% Maul/Swipe."},
+        {"talent": "Faerie Fire (Feral)", "why": "Armor debuff without leaving form."},
+        {"talent": "Feral Charge", "why": "Charge + interrupt in Bear Form."},
+        {"talent": "Leader of the Pack", "why": "Group crit."},
+        {"talent": "Sharpened Claws", "why": "Crit in forms."},
+        {"talent": "Ferocity", "why": "Cheaper Maul/Swipe."}
+      ],
+      "flex": [
+        {"points": 1, "default": "Primal Fury", "alternatives": ["Primal Fury 2 by dropping Feral Charge", "Brutal Impact"], "why": "Rage on crit; one rank is the compromise to fit Feral Charge and Faerie Fire."},
+        {"points": 3, "default": "Predatory Strikes", "alternatives": ["Improved Shred (hybrid cat/bear)"], "why": "Attack power in forms; prerequisite for Heart of the Wild."}
+      ],
+      "notes": [
+        "Maul is the rotation (queue it on every swing), Swipe on packs, Demoralizing Roar and Faerie Fire on the pull; Feral Charge to open.",
+        "Icy Veins: prioritize tank talents over cat talents in a hybrid build — losing threat wipes raids, losing a little DPS does not."
+      ],
+      "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-tank-pve-spec-builds-talents"]
+    },
+    {
+      "id": "balance-moonkin-raid",
+      "name": "Balance — Moonkin (raid DPS, 35/0/16)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "situational",
+      "summary": "One Moonkin per raid for the +3% spell crit aura: Moonkin Form, Moonfury, Nature's Grace, Vengeance, Improved Starfire/Wrath/Moonfire and Moonglow for mana, with Improved Mark of the Wild, Reflection and Insect Swarm from Restoration. Mana-limited in Classic; damage is below mages and warlocks.",
+      "allocation": {
+        "Balance": [["Improved Wrath", 5], ["Improved Moonfire", 5], ["Improved Thorns", 3], ["Nature's Reach", 2], ["Vengeance", 5], ["Improved Starfire", 5], ["Nature's Grace", 1], ["Moonglow", 3], ["Moonfury", 5], ["Moonkin Form", 1]],
+        "Feral Combat": [],
+        "Restoration": [["Improved Mark of the Wild", 5], ["Nature's Focus", 5], ["Reflection", 3], ["Insect Swarm", 1], ["Subtlety", 2]]
+      },
+      "core": [
+        {"talent": "Moonkin Form", "why": "+3% spell crit to the group, +360% armor."},
+        {"talent": "Moonfury", "why": "+10% Starfire/Moonfire/Wrath damage."},
+        {"talent": "Vengeance", "why": "+100% crit damage on Starfire/Moonfire/Wrath."},
+        {"talent": "Nature's Grace", "why": "-0.5s cast after a crit."},
+        {"talent": "Improved Starfire", "why": "-0.5s Starfire cast."},
+        {"talent": "Moonglow", "why": "-9% mana on Moonfire/Starfire/Wrath — mana is the limiting factor."},
+        {"talent": "Improved Moonfire", "why": "+10% Moonfire damage/crit; prerequisite for Vengeance."},
+        {"talent": "Reflection", "why": "Mana regen while casting."},
+        {"talent": "Insect Swarm", "why": "DoT and -2% hit debuff on the boss."},
+        {"talent": "Improved Wrath", "why": "-0.5s Wrath cast."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Improved Thorns 3 + Nature's Reach 2", "alternatives": ["Natural Shapeshifter", "Improved Entangling Roots"], "why": "Tier-3 Balance filler to unlock Vengeance/Improved Starfire."},
+        {"points": 7, "default": "Nature's Focus 5 + Subtlety 2", "alternatives": ["Improved Healing Touch", "Furor"], "why": "Restoration filler to reach Reflection and Insect Swarm."}
+      ],
+      "notes": [
+        "Starfire spam with Moonfire/Insect Swarm if debuff slots allow; Innervate yourself or the priest.",
+        "Bring one for the crit aura; a second Moonkin is rarely worth a raid slot in Classic Era."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/druid/balance/dps-talent-builds-pve"]
+    },
+    {
+      "id": "pvp-resto-feral-hybrid",
+      "name": "Restoration / Balance — PvP Healer (14/0/37)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The flag-carrier / battleground healer: Nature's Swiftness, Swiftmend, Gift of Nature, Improved Regrowth and Furor from Restoration; Nature's Grasp, Improved Entangling Roots, Natural Shapeshifter and Nature's Reach from Balance. Shift, root, run.",
+      "allocation": {
+        "Balance": [["Nature's Grasp", 1], ["Improved Nature's Grasp", 4], ["Improved Entangling Roots", 2], ["Natural Shapeshifter", 3], ["Improved Thorns", 2], ["Nature's Reach", 2]],
+        "Feral Combat": [],
+        "Restoration": [["Furor", 5], ["Improved Healing Touch", 5], ["Nature's Focus", 5], ["Reflection", 3], ["Insect Swarm", 1], ["Tranquil Spirit", 5], ["Improved Rejuvenation", 1], ["Nature's Swiftness", 1], ["Gift of Nature", 5], ["Improved Regrowth", 5], ["Swiftmend", 1]]
+      },
+      "core": [
+        {"talent": "Nature's Swiftness", "why": "Instant full Healing Touch."},
+        {"talent": "Swiftmend", "why": "Instant heal from a HoT."},
+        {"talent": "Natural Shapeshifter", "why": "Shift out of snares cheaply."},
+        {"talent": "Furor", "why": "Instant Bash/Maul or a full energy bar when you shift."},
+        {"talent": "Nature's Grasp", "why": "Roots on melee hit."},
+        {"talent": "Improved Entangling Roots", "why": "Roots resist damage-breaks."},
+        {"talent": "Nature's Focus", "why": "Heal through melee damage."},
+        {"talent": "Improved Regrowth", "why": "Big Regrowth crits."}
+      ],
+      "flex": [
+        {"points": 2, "default": "Improved Thorns", "alternatives": ["Improved Moonfire", "Improved Wrath"], "why": "Filler to reach 10 Balance points for Nature's Reach."},
+        {"points": 5, "default": "Tranquil Spirit", "alternatives": ["Subtlety", "Improved Rejuvenation 3 + Subtlety 2 (no Swiftmend)"], "why": "Prerequisite for Swiftmend."}
+      ],
+      "notes": [
+        "Feral 14/32/5 with Feral Charge is the other common Classic PvP druid; this build is the healer/flag-carrier."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/druid/healer-pvp-arena"]
+    },
+    {
+      "id": "leveling-feral",
+      "name": "Leveling — Feral (Cat)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Cat Form from 20: Ferocity and Thick Hide early, Sharpened Claws, Predatory Strikes, Blood Frenzy/Primal Fury, Heart of the Wild at 40, Leader of the Pack at 41, then Furor and the Balance utility. Ends in the exact 14/32/5 cat build.",
+      "allocation": {
+        "Balance": [["Nature's Grasp", 1], ["Improved Nature's Grasp", 4], ["Natural Weapons", 5], ["Natural Shapeshifter", 3], ["Omen of Clarity", 1]],
+        "Feral Combat": [["Ferocity", 5], ["Thick Hide", 5], ["Feline Swiftness", 2], ["Sharpened Claws", 3], ["Improved Shred", 2], ["Predatory Strikes", 3], ["Blood Frenzy", 2], ["Primal Fury", 2], ["Savage Fury", 2], ["Heart of the Wild", 5], ["Leader of the Pack", 1]],
+        "Restoration": [["Furor", 5]]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Feral Combat", "talent": "Ferocity", "points": 5},
+        {"levels": "15-19", "tree": "Feral Combat", "talent": "Thick Hide", "points": 5},
+        {"levels": "20-22", "tree": "Feral Combat", "talent": "Sharpened Claws", "points": 3},
+        {"levels": "23-24", "tree": "Feral Combat", "talent": "Feline Swiftness", "points": 2},
+        {"levels": "25-27", "tree": "Feral Combat", "talent": "Predatory Strikes", "points": 3},
+        {"levels": "28-29", "tree": "Feral Combat", "talent": "Blood Frenzy", "points": 2},
+        {"levels": "30-31", "tree": "Feral Combat", "talent": "Primal Fury", "points": 2},
+        {"levels": "32-33", "tree": "Feral Combat", "talent": "Savage Fury", "points": 2},
+        {"levels": "34-35", "tree": "Feral Combat", "talent": "Improved Shred", "points": 2},
+        {"levels": "36-40", "tree": "Feral Combat", "talent": "Heart of the Wild", "points": 5},
+        {"levels": "41", "tree": "Feral Combat", "talent": "Leader of the Pack", "points": 1},
+        {"levels": "42-46", "tree": "Restoration", "talent": "Furor", "points": 5},
+        {"levels": "47", "tree": "Balance", "talent": "Nature's Grasp", "points": 1},
+        {"levels": "48-51", "tree": "Balance", "talent": "Improved Nature's Grasp", "points": 4},
+        {"levels": "52-56", "tree": "Balance", "talent": "Natural Weapons", "points": 5},
+        {"levels": "57-59", "tree": "Balance", "talent": "Natural Shapeshifter", "points": 3},
+        {"levels": "60", "tree": "Balance", "talent": "Omen of Clarity", "points": 1}
+      ],
+      "core": [
+        {"talent": "Ferocity", "why": "Cheaper Claw from the moment you get Cat Form."},
+        {"talent": "Sharpened Claws", "why": "+6% crit at 20."},
+        {"talent": "Heart of the Wild", "why": "+20% Strength at 40."},
+        {"talent": "Leader of the Pack", "why": "Crit aura at 41."},
+        {"talent": "Furor", "why": "Powershifting from 46."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Furor at 42-46", "alternatives": ["Furor at 10-14 (Bear Form rage) and Ferocity later"], "why": "Many take Furor first for instant bear rage at 10; this order maximizes cat damage."}
+      ],
+      "notes": [
+        "Claw/Rake -> Rip; Bear Form for elites and multi-pulls; Moonfire pulls until 20."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/druid/leveling-talents"]
+    }
+  ]
+}

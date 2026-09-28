@@ -1,0 +1,56 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/balance_druid/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/balance_druid/gear_sets/p5.bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "balance-moonkin-raid",
+   "split": "35/0/16",
+   "ours": true,
+   "dps": {
+    "dummy": 224.35697540925582,
+    "max": 739.7229732928239,
+    "max60": 745.877558133596,
+    "raid": 566.9241458043488
+   }
+  },
+  {
+   "label": "sim preset: Balance",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 212.35030891761733,
+    "max": 740.806675921185,
+    "max60": 745.634370279172,
+    "raid": 564.6805141335097
+   }
+  }
+ ]
+}

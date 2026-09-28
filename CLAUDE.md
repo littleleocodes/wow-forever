@@ -1,0 +1,332 @@
+# CLAUDE.md — conventions for this project
+
+This folder is a knowledge base for optimizing every class in **World of Warcraft: Forever**
+(Classic+ release, launches 2026-11-04). It is organized by class, and each class by scenario. Read `README.md` first.
+
+**New session, e.g. a Claude Code cloud session?** Read `HANDOFF.md` first: the state of the work, the open items and the setup
+(`python _reference/data/cloud_setup.py` builds the raid simulator; commit and push before a cloud session ends).
+
+## Structure rules
+
+- **One folder per class**, lowercase: `druid hunter mage paladin priest rogue shaman warlock warrior`.
+  Every class folder has the same shape (2026-09-27 layout; `_reference/data/paths.py` is the single place that knows it,
+  and every script takes its paths from there):
+  - `README.md`: class overview, roles and Forever changes (hand-written) + a generated "Where to find things" section.
+  - `leveling/` (leveling and solo play): `README.md`, `guide.md`, `rotation.md`, `respec-plan.md`, `builds/`, `fightlab/`, `optimizer/`.
+  - `raid/` (training dummy, raid setting, parse): `README.md`, `rotation.md`, `gear.md`, `consumables.md`, `builds/`, `raidsim/`,
+    `heallab/`, `optimizer/`.
+  - `pvp/`: `README.md`, `builds/` (no rotation page: PvP play depends on the fight).
+  - `spells/README.md`; `talents/forever/` (proposed-builds.json, talent-trees.md, baseline-audit.md, adaptation notes) and
+    `talents/classic-baseline/` (the Classic Era reference builds and their reports).
+  A build's scenario folder comes from its `content`: leveling and solo -> `leveling/`, raid and dungeon -> `raid/`, pvp -> `pvp/`.
+  Scenario READMEs are assembled from generated sections (`readme_sections.py`: each renderer replaces only its own `## ` section).
+  Rotations are per build (`render_rotations.py`, 2026-09-27): `raid/rotation.md` shows, for every raid build of ours and every
+  community-simulator build, the simulator's priority list filtered to the lines that build casts (with the reason a line is skipped:
+  a talent the build lacks, or a condition that never held), casts per minute and damage shares from the simulator runs;
+  `leveling/rotation.md` the fight lab's priority and casts per kill by level for every simulated leveling build. The raid README's
+  "DPS ranking" and the class README's "Raid DPS ranking" rank our builds against the simulator's own (training dummy, raid column
+  next to it; tanks by tank value), and every build page carries its rank and its own rotation.
+  If you add an optimization category, add it with the same name and layout to every class, even if some are only a stub.
+- Folders that are *not* classes start with an underscore: `_reference/` (facts, data, scripts), `_templates/`.
+- File names: lowercase kebab-case. Build ids: `<spec>-<variant>-<content>` (e.g. `fury-dw-raid`, `pvp-frost`, `leveling-arms`).
+- Never put class-specific content in `_reference/`; never put cross-class facts inside a class folder.
+
+## Talent data and builds
+
+- **Source of truth is JSON**: `<class>/talents/classic-baseline/builds.json` (Classic Era) and
+  `<class>/talents/forever/proposed-builds.json` (Forever). The `.md` build pages (Forever: `<class>/<scenario>/builds/`), the
+  scenario `README.md`s, `talent-trees.md` and `baseline-audit.md` are **generated** — do not hand-edit them (they end with a
+  "generated" footer or say so in their header; the renderer deletes and rewrites them).
+- After editing any builds JSON run, from the project root:
+  `python _reference/data/validate_builds.py && python _reference/data/render_builds.py`
+  The validator must print `all builds valid`. It checks talent names, rank caps, tier gating
+  (5 points per tier), prerequisites, the 51-point total and leveling orders.
+- Keep JSON compact with `python _reference/data/fmt_json.py <file>` (talent pairs stay on one line).
+- Talent names must match the dataset spelling exactly (`Improved Power Word: Shield`, `Faerie Fire (Feral)`,
+  `Nature's Grasp` with a straight apostrophe).
+- Build schema (see `_templates/build-schema.md`): `id, name, role, content, tier, summary, allocation,
+  core[], flex[], notes[], sources[]`, optional `order[]` (leveling), `based_on`, `open_questions[]`.
+
+## Forever-specific rules
+
+- Forever tree data is a **beta-client snapshot** (`_reference/data/forever-talents/`, build 1.60.1.70009, merged
+  2026-09-25 by `refresh_forever_talents.py` from three datamines archived under `_reference/data/raw/`). Always name
+  the build when quoting it. Every rank's tooltip is the client's level-60 text; `ranks_prev` keeps the previous
+  build's text where it changed. Spell numbers: `_reference/data/forever-spells/<class>.json` (build_forever_spells.py)
+  rendered to `<class>/spells/README.md`. The demo snapshot (2026-09-13) is archived in `raw/2026-09-13-demo/`.
+- Proposed Forever builds are **hypotheses**: validated for point math only. Mark performance claims as
+  unverified and list `open_questions` to check at launch; `python _reference/data/build_launch_checklist.py`
+  aggregates them into `_reference/launch-checklist.md`; `build_beta_checklist.py` writes the level-30 beta subset to
+  `_reference/beta-checklist.md`.
+- When a new beta build lands, run `refresh_forever_talents.py --fetch --raw <date>-beta-<build>` (then
+  `build_forever_spells.py`, `effects.py`, the optimizer runs, `render_trees.py`, `validate_builds.py`,
+  `render_builds.py`), read `forever-talents/README.md` for what moved, and revisit the manual effects it lists.
+
+## Stats model (`_reference/data/scorer/`)
+
+- Prefer the scorer over hand ranking when deciding talents. Inputs: `effects/<game>/<class>.manual.json`
+  (hand-entered numbers, each with its derivation in `note`), `specs/<class>.json` (damage sources, shares, base
+  stats), `profiles.json` (use-cases). Never edit `*.parsed.json` (generated by `effects.py`).
+- After changing inputs: `python _reference/data/scorer/run.py <class> --spec <model> --profile <profile> --write --export`,
+  then `validate_builds.py` + `render_builds.py`. Re-run the Classic calibration cases (`python _reference/data/scorer/classic_check.py`) when the
+  model code or a shared encoding changes; they must still reproduce the community builds (the spec models' shares, time
+  splits and fight coupling are shared by both games and are fitted to the Forever simulators, so Classic scores move when
+  they move; the check compares the optimized builds, not the scores).
+- Adding a class: parse (`effects.py <class>`), write `specs/<class>.json`, fill the unparsed talents in a manual
+  file, calibrate against the Classic baseline builds, then run the Forever profiles. All nine classes are done;
+  healers use `raid-heal` (`heal` sources), tanks `raid-tank` (`threat` sources).
+- After a batch of runs also refresh the derived reports: `compare_effects.py` (buff/nerf + builds-that-changed),
+  `respec.py <class> --write` (respec plans) and `render_optimizer_sections.py` (the Optimizer sections of the scenario READMEs).
+- Talents the community takes for structural reasons (loop enablers, control, safety, tier fillers) are documented
+  in `scorer/loops/<class>.json` with sources; `loop_audit.py` flags community-taken talents the model still
+  under-values. When a build disagrees with a community build, check the audit before changing numbers, and put
+  any new reason in the loops file *and* both games' manual effect files.
+- Scores are relative to each spec model's own talentless baseline: compare builds within a model; across models
+  only via `abs_dps_factor`. Say so whenever quoting a cross-spec number.
+- Talent-created abilities are sources with `enabled_by` (the talent, a list, or `{game: talent}` when it is a talent in
+  one game only): off without the talent, `enabled_ranks` scales the share with the rank (Ignite), `displaces` names the
+  sources that get the share back when it is off (Bloodthirst's rage goes to Heroic Strike), `scales_with_crit` ties a
+  burn's size to the crit chance. The talent's own manual effect is then only the net gain the simulators measure.
+- A new spec model starts from the tooltips: a talent whose fitted manual effects are tagged for other models only falls back to
+  its parsed effects for the new model (`effects_for`), so adding a model (the hunter's `melee-dps`, 2026-09-27) never scores
+  fitted talents at zero. Fits later tag the new model's own values. The fallback also fires when a model is merely left out of a
+  talent's `specs`: to take a talent away from a model, give it an explicit zero (`splitfx`-style split, see the 2026-09-27 edits).
+- **Scenario and playstyle weights** (2026-09-27): soft effects (`utility`, `surv`, `sustain`) carry a *kind* from
+  `scorer/kinds.json` (kite, stun, stick, move, range, stealth, avoid, resist, escape; surv:parry/dodge/block/armor/defense scopes are
+  avoid by default; an effect's own `kind` wins). Each profile's `kind_weights` says how much each kind counts in that scenario (raid
+  DPS and healing: range only; tanks: stun, move, avoid, a fifth of resist; leveling: all, resist a quarter, escape a fifth); each spec
+  model's `kind_weights` / `kind_weights_by_profile` says which tools the playstyle uses, with the evidence in `kind_note` (melee:
+  no kite, no range; pet-tank hunters and the Voidwalker warlock: no kite single-target; the cat: no stun). `needs_pet` (true or a
+  pet's name, matched against a pet source tagged `ability:<name>`) zeroes a talent while that pet is not out (Lone Wolf, Demonic
+  Sacrifice). Add a kinds.json entry whenever a talent gets a control, mobility, avoidance or crowd-control-resistance value, and
+  never give a playstyle weight 0 to a kind the fight lab measures for it (the calibration prints a WARNING when that happens).
+- **Leveling time model**: time per kill = fight / DPS + drink / sustain + eat / survival + other (loot, travel) + death / survival,
+  the last three scaled by `fight_coupling`; the fight-lab calibration writes this five-part split from the lab's drink, eat and
+  self-heal time (older fight / downtime / death splits still work). `pet_tank` (spec model) multiplies eating when the pet is gone.
+- **Calibration bookkeeping**: all three calibrations split an entry with `scorer/splitfx.py` (the fitted model keeps its other modes,
+  other models keep theirs, copies are merged, never duplicated). A talent the fight lab simulates (its MECHANICS text is not "not
+  used" / "not modelled" / travel) is fitted to what the lab measures, zero included, utility included; the noise rule and the 0.5%
+  floor stay for talents the lab cannot see. Raid sim and healer lab: no floor; noise only when both simulator and scorer say ~0.
+  A fit scales values (0 x k = 0): when a lab measures a talent above noise but every fitted value is zero (an earlier fit in another
+  setting zeroed it: Frost Channeling, Arcane Meditation, Arcane Concentration, Inner Focus, Moonkin Form after the fully buffed raid
+  fit), the calibration re-seeds it from the talent's own values for that model in its other modes, else its parsed tooltip
+  (`splitfx.reseed_zero`, 2026-09-27) and fits from there; the note says "re-seeded". "dead" is left for kind-weight zeros.
+- **PvP** (`profiles.json` "pvp", mode pvp): burst x damage (or healing) + survival x survival + mana x sustain + PvP utility, with
+  effects as in solo-60 (`effects_as`) plus explicit PvP values (utility tagged `modes: ["pvp"]`, tiers from the class audits:
+  control, escape, crowd-control resistance, burst cooldowns, anti-healing, dispels); worthless-in-PvP talents are suppressed per
+  class. `scorer/pvp_check.py` tunes the weights on the Classic community PvP builds and checks the Forever PvP drafts
+  (`_reference/pvp-check.md`). PvP numbers are assumptions: no simulator plays PvP. A manual entry that holds only PvP effects keeps
+  the talent's parsed effects for every other mode (`effects.load_effects`); any other manual entry replaces them, so add PvP values
+  to a talent without a manual entry only through that rule.
+- `scorer/scenario_audit.py --write` scores every build (both games) in its own scenario and lists dead talents (worth nothing there)
+  and fillers (worth nothing but needed for tier gating) in `_reference/scenario-audit.md` (generated). Run it after changing inputs.
+
+## Fight lab (`_reference/data/fightlab/`)
+
+- A Monte Carlo fight simulator for leveling/solo play (fights against same-level mobs with rolled hits, crits, procs,
+  pushback, the Forever attack table for melee, rage/energy/combo points, pets that hold by threat, heals, drinking,
+  bandages and deaths). Spell ranks come from `forever-spells/`, talent numbers from the beta tooltips, class base stats
+  and combat rules from the Forever client via the ElliotWood/Forever simulator, mob health / damage / armor / caster share
+  by level from the Classic 1.12 creature database (`fightlab/mob_stats.json`, built by `mob_stats.py` from the cmangos
+  classic-db dump archived as a CSV under `raw/2026-09-26-cmangos-classic-db-z2815/`; Classic data, a Forever assumption),
+  everything else from `fightlab/tables.py` (assumptions with sensitivity knobs: `MOB_HP_MULT`, `MOB_DMG_MULT`,
+  `MOB_CASTER_SHARE`, `RUNNER_SHARE` (mobs that flee at 20% health; default 0, a sensitivity row), `MOBS_PER_PULL` (pulls of
+  several mobs: the first is the target, adds stay on the player, area spells and channels hit every mob in range, a kill is one
+  mob; the mage's AoE grinding variant runs 4), `WEAPON_DPS_MULT`,
+  `GEAR_STAT_MULT`). Gear by level comes from the Classic 1.12 item database
+  (`fightlab/gear_stats.json` by `gear_stats.py`: tiers greens / blues, `GEAR_TIER`, `run.py --gear`; spell power and healing
+  from the items' on-equip spells in the same dump).
+  A data-driven share of pulls are caster mobs that stand at range and cast until interrupted (`Spell.interrupt` = lockout
+  seconds parsed from the tooltip; the `interrupt_bonus` hook adds silence talents). One module per class (`mage.py`,
+  `priest.py`, `warlock.py`, `hunter.py`, `warrior.py`, `rogue.py`, `paladin.py`, `shaman.py`, `druid.py`: the druid plays
+  Bear Form at 10-19 and Cat Form from 20) subclasses `engine.BaseModule` and holds the mechanics, the priority list and the
+  pipeline metadata (`FIT`, `SHARE_SOURCE`, `NEW_SOURCES`, `KEY_TALENTS`, `PIPELINE`; `PIPELINE["variants"]` runs a spec model under
+  table overrides through calibrate ↔ optimize, race, report and sensitivity (`rebuild.py --steps variants`; the mage's `frost-aoe`
+  with `MOBS_PER_PULL=4` and the `leveling-aoe` profile; every other class except the druid runs its main model as an AoE
+  variant with `MOBS_PER_PULL=3` (the rogue 2), reported as `<spec>-aoe.md`). Pulls of several mobs use the module's `AOE` dict
+  through `engine.BaseModule.decide_aoe` (area attacks when enough mobs stand in reach, then dots spread over the pull, else the
+  single-target priority); `tables.AOE_SPELLS` gives every area spell its reach, target cap and chain falloff; cleaving attacks
+  (Whirlwind, Cleave, Swipe, Blade Flurry via `extra_targets`) roll the attack table per extra mob. `PIPELINE["extra_reports"]` runs a second
+  spec through the same module — Fury dual-wield, daggers, Marksmanship, Fire as rough checks with the main spec's priority
+  list; Elemental (`decide_elemental`) and Balance (`decide_balance`, Moonkin armor, Eclipse, Nature's Grace) with their own).
+  A compared `opt-<spec>-<profile>` build plays under its own spec model (`run.py`'s `spec_of_build`), so spec-versus-spec
+  comparisons are fair, and the extra spec's `abs_dps_factor` is written from that comparison (rebuild.py's report step) so
+  `respec.py` compares models on measured speed. Run `fightlab/run.py <class> --spec
+  <scorer model id> --build <id> [--compare <ids or candidate .json files>] [--deltas 30,60] [--gear-tiers] --write`; reports
+  land in `<class>/leveling/fightlab/<spec>.md` (generated). Never write a buff into the player's stats (read it from
+  `p.buffs` in a hook); after any engine change the mage regression (500 fights, seed 1, levels 30/60, opt vs
+  `leveling-frost`) must stay bit-identical unless a table or mechanic was meant to change.
+- **Leveling rotations are tuned** (2026-09-27): `fightlab/rotation_opt.py` adds rules on top of each class module's hand-written
+  priority: spell vetoes in `engine.Fight.can_afford` (never cast X; X only above a mana share; X only while the mob has more / less
+  than a health share), the drink / eat thresholds and the module's `ROTATION_KNOBS` (the priest's wand-below and shield-below);
+  local search with common random numbers on the pipeline's builds and levels, confirmed on a second seed, scored on level-weighted
+  time per kill. Rules live in `fightlab/rotations/<class>-<spec>.json` and `run.make_module` applies them to every fight-lab run of
+  that spec model; `WOW_FL_ROTATION=default` runs the hand-written rotation alone (the mage regression does). Healers:
+  `heallab/rotation_opt.py` tunes the heal-choice settings of `heallab/tables.py` (downranking, HoT refresh, emergency and raid-heal
+  thresholds, group-heal count, potion timing) on capacity; `heallab/rotations/<class>-<spec>.json`, applied by
+  `tables.apply_rotation` in run.py and calibrate.py (`WOW_HL_ROTATION=default` for the defaults; `--set` still overrides).
+- **One command rebuilds everything**: `python _reference/data/rebuild.py [classes] [--jobs 4] [--refresh <raw name>]`
+  chains (refresh →) effects → calibrate ↔ optimize until the optimizer's leveling build repeats (new builds are saved as
+  `<class>/leveling/fightlab/candidates/cand-<tag>-rN.json`) → race (hand draft vs every candidate) → report
+  (`--deltas`, `--gear-tiers`) → sensitivity → regen (`render_fightlab_sections.py` writes the leveling README "Fight lab"
+  section and the hand draft's "Fight lab (" note, `render_leveling_guides.py` the generated `<class>/leveling/guide.md`, `render_sim_presets.py` the generated `<class>/raid/gear.md`, `consumables.md`, `rotation.md` (the simulator's presets) and `<class>/leveling/rotation.md` (the fight lab's priority list), then validate/render builds, respec, optimizer sections, compare_effects,
+  loop_audit, checklists and `fightlab/summary.py` → `_reference/fightlab-summary.md`). Outcomes go to
+  `fightlab/last-rebuild.json`. `--steps` runs a subset; `--dry-run` prints the commands; the opt-in `adopt` step (`--steps
+  ...,race,adopt,report,...`) moves a race winner into the hand draft when it beats it by more than 2% (level-weighted time per
+  kill), keeps the old draft as a candidate and rebuilds core/flex from the sim's talent values. Do not hand-edit the
+  generated README sections or the "Fight lab (" notes.
+- Variants may be a second spec model with its own rotation (the hunter's `melee-dps`, the shaman's `elemental-dps`, the druid's
+  `balance-dps`: calibrated like the main model, report `<spec>-opt`); a variant whose builds may drop the pet names a `share_build`
+  (a pet build) so the damage split is measured with every source present (`calibrate.py --share-build`). Engine hooks for talents:
+  `dodge_bonus` / `parry_bonus` (buffs such as Deterrence), `dodge_parry_reduction` (Weapon Expertise), `on_parry`.
+- `fightlab/calibrate.py` fits the scorer to the sim: spec shares, the leveling time split, `fight_coupling` and
+  per-talent leveling values written with `specs: [<spec>]` so other models are untouched. Fitted entries say "Fight lab
+  calibration" in their note: re-run the calibration instead of hand-editing them. Values are in-build marginals, so the
+  fit is always joint over the hand draft, the optimizer build and the saved candidates (one-build fits made the optimizer
+  swing between builds); the sim decides the recommended build. Leveling orders: the optimizer compares the receding
+  horizon (`--lookahead`, 12 for mage, 16 otherwise, 20 warrior) with a rush of each deep talent and keeps the best
+  sum of per-level scores (`order_label` in the report). Level-60 raid DPS stays with the scorer and the
+  ElliotWood/Forever simulator.
+
+## Healer lab (`_reference/data/heallab/`)
+
+- Healers are not in any community simulator, so `heallab/` models one raid healer keeping a five-member group (a tank under
+  boss melee, four raid members under periodic raid damage) alive for five minutes: heals from the beta spellbook
+  (downranked to the deficit, HoTs kept up, group heals, cooldowns), mana with spirit regen, the five-second rule and potions,
+  talent numbers from the beta tooltips plus hand-coded mechanics per class module (`priest.py`, `paladin.py`, `shaman.py`,
+  `druid.py`: `ROLES`, `TALENT_SPELLS`, `MECHANICS`, `SIMULATED`, `SHARE_SOURCE`, `PIPELINE`). **Capacity** = the multiplier on
+  all incoming damage the build survives in 90% of runs (per-run bisection, common random numbers, tail mean); a talent's
+  value is the capacity it adds. `run.py <class> --build <id> [--compare ...] [--deltas] --write` writes
+  `<class>/raid/heallab/<spec>.md`; `calibrate.py <class> --write` puts the lab's healing split into the healer
+  model's shares and fits the heal-mode values (`modes: ["heal"]`, `specs: [<model>]`) of the simulated talents only (others
+  keep their manual values and are marked * in the reports); `rebuild.py --steps heal[,adopt]` runs calibrate ↔ optimize
+  (seeded with the hand draft) ↔ race, promotes the best round and adopts a winner over 2%. Every assumption is a knob in
+  `heallab/tables.py` (`run.py --set KEY=VALUE`). Say "healer lab" numbers are a model of stated assumptions.
+
+## Raid sim (`_reference/data/raidsim/`)
+
+- Level-60 raid builds are checked in the community's simulator, the ElliotWood/Forever wowsims fork (Go). `setup.py` puts
+  Go, protoc, a sparse clone and the built tools under `~/.wow-forever-tools` (nothing system-wide; `WOW_FOREVER_SIM` or
+  `--repo` point elsewhere); `run.py <class> --spec <scorer model id> --write` (or `--all`) runs every raid build of that
+  model plus the simulator's preset talents with the simulator's own gear preset and rotation, so the table ranks talents only;
+  `specs.json` holds the per-spec mapping (from each `presets.ts`). **Raid DPS builds are ranked on a training dummy**
+  (2026-09-27, the user's method: raw personal DPS with only your own buffs): Forever DPS specs run on a boss-level (63) dummy with
+  execute phases, the class's self-buffs (what the class code adds itself plus `self_buffs` / `self_debuffs` in specs.json: self-cast
+  buffs the simulator only has as raid switches, such as a druid's Mark of the Wild, a paladin's blessing, a hunter's Hunter's Mark,
+  a shaman's Mana Spring) and the spec's standard consumables; no raid or party buffs and no debuffs from others (`run.py`'s
+  `setting()`; the bench's `"buffs": "self"`). The removal deltas the raid calibration fits, the races and the adopt step all use it,
+  and the Forever `raid-dps` profile counts only your own DPS (`no_utility: ["forever"]`). Tanks (threat and damage taken under boss
+  melee) and the Classic sim keep the raid setting; `--setting raid|dummy` overrides. Specs that live on other players' mana buffs
+  run dry on the dummy (hunter and Enhancement about 70 s of 120, Shadow about 20 s): their mana talents weigh more there than in a
+  raid, and the reports show OOM seconds and the raid column next to the dummy.
+  Reports: `<class>/raid/raidsim/<spec>.md` (generated); `render_raidsim_sections.py` writes the `<class>/raid/README.md`
+  "Raid sim" section and `_reference/raidsim-summary.md` (rebuild.py's regen step runs it). Healers are not simulated.
+  Say "simulator" numbers are the community's model of the beta, never measurements; name the simulator commit.
+- `run.py --deltas <build>` measures every talent of a build (DPS lost when removed) and `calibrate.py <class> --spec <model>
+  --write` fits the scorer's raid-mode values to it (`modes: ["raid"]`, `specs: [<model>]`, notes say "Raid sim calibration") after
+  writing the simulator's damage split into the model's base shares (the bench reports damage per action; `run.py` maps
+  actions onto sources by their `ability:` tags, white attacks and pets). Base shares are the raid split; the fight lab's
+  leveling shares live in each source's `profile_overrides` (leveling-st, solo-60);
+  `rebuild.py --steps raid` runs calibrate ↔ optimize ↔ race for every raid DPS model (candidates under
+  `<class>/raid/raidsim/candidates/`; the exported `opt-*` raid build is the best of the optimizer's rounds in the
+  simulator, so an earlier candidate can be promoted into it; the loop stops when a new build is not 1% better in a quick race;
+  with `--steps raid,adopt` a winner over 2% ahead of the best hand raid draft replaces that draft, old draft kept as a candidate). Talents the model has no channel for come out "capped": add a template by hand.
+  Removal runs that measure a broken rotation are kept out of the fit (2026-09-27): `run.py` flags a talent as rotation-dependent
+  when the APL conditions on its own spell id or on a proc aura the simulator's spell data names after it (`FingersOfFrostTriggered`,
+  `HotStreakTriggered`, `MaelstromWeaponTriggered`, `RedoubtTriggered`: without the talent the aura is unknown and the rotation
+  misreads the condition, e.g. +189% for Fingers of Frost), and a spec entry's `not_measured` ({talent: why}) keeps values the
+  standard target cannot show (Murder's Humanoid/Giant bonus); both keep their hand-entered value, derivation in the note. A spec
+  entry's `share_build` names the build whose damage split becomes the model's shares (Frost: the Fingers of Frost build, the only one
+  that casts Ice Lance). Crit fits stop at +50% per talent (`CHANNEL_MAX`, also in the fight lab and healer lab calibrations): the
+  scorer caps crit at 100%, and a saturated source makes every other crit talent read 0 there.
+  Tanks (`"tank": true`, raid-tank) are measured on threat per second and damage taken per second: `run.py` ranks them by tank value
+  (the profile's threat and mitigation weights, relative to the hand draft), maps threat per action onto the model's threat
+  sources and combines threat and mitigation in the removal deltas; `calibrate.py` then fits the tank-mode values.
+  A talent that duplicates one of the simulator's full raid buffs measures zero unless the spec entry lists the buff in
+  `buffs_off` / `debuffs_off` (proto field names; the bench clears them). Optimizer exports are seeded with the hand drafts
+  (`scorer/run.py --seed`, `--compare` seeds too), so an exported build never scores below them under its own model.
+  **The simulator's presets compete** (2026-09-27): the raid step first saves every preset within 6% of the spec's best build in the
+  last race as `raidsim/candidates/cand-<spec>-preset-<name>.json` (`run.py --preset-candidates`; stale ones are removed). The
+  calibration measures their talents like ours (a preset that beats us holds the talents the model under-values), the optimizer is
+  seeded with them, they race under their own "sim preset: X" label, and `adopt` can adopt a preset that beats the best hand draft
+  by more than 2% (the summary names the preset, `sources` gets its `presets.ts`). Reports count them as the simulator's, never ours;
+  only the optimizer's own rounds (`cand-<spec>-rN`) are promoted into the `opt-*` build.
+  **Running out of mana is lost damage** (2026-09-27): on the dummy nobody brings Blessing of Wisdom or Mana Spring, and every mana
+  user loses 5-30% of its damage to mana (waiting out of mana, Evocation, Life Tap, Innervate, the rotation's mana conditions;
+  out-of-mana seconds alone miss most of it). The calibration runs its builds once more with every mana-only buff on (`run.py`'s
+  `dummy-surplus` setting): the damage gained is each build's deficit. The spec model's `mana_limit` {game: {profiles, loss, cap}}
+  makes the mana-bound damage (every source but white attacks and pets) shrink by min(cap, max(0, loss - (sustain - 1))) in those
+  profiles (raid-dps, raid-dps-extwc; Forever only), replacing the linear `mana_weight` term there. The mana talents' sustain is
+  fitted to their removal runs (unit: the share of the mana-bound damage they save), loss and cap to the builds' deficits, alternating
+  (the talent fit last); the model's damage split comes from the run with every mana buff on. Builds that spend mana at different
+  rates (which the model does not see) show up as the fit's RMS, not as a slope. A mana talent is worth what it saves only while the
+  build runs short; the cap is where the loss stops growing (a Frost mage's one Evocation per fight, about 7%). Specs no build of
+  which loses 1% get no limit.
+- Parsing versus raiding: the scorer's `parse` profile is personal DPS only (no utility, every buff supplied by the raid,
+  the spec's own buff talents suppressed where the buff is shared; game-specific extras in `profiles.json`) and the raid step
+  exports `opt-<spec>-parse` next to the raid build. `run.py --env environments` measures builds on the **training dummy** (the
+  ranking setting above), a **level-60 dummy** (never dies, own buffs; Classic: no buffs), in the **raid** setting (phase-1 gear,
+  full buffs minus the spec's own) and at the **maximum** (best gear preset of the spec's family, everything on, 120 s and 60 s) into
+  `<spec>-environments.md`; the raid README "Raid sim" section and the summary carry the table. Both games.
+- **Rotations are tuned** (2026-09-27, user request "find an optimal rotation for all classes and talent tree specs"):
+  `raidsim/apl_opt.py` searches each raid spec's rotation (the simulator's APL) locally: move, drop, show, insert (from the class's
+  other rotations) an action; drop or loosen a condition; change a threshold; add a mana guard or a fight-time guard; cast a lower
+  spell rank always or below a mana share; two-edit lookahead when no single edit wins. Candidates run with common random numbers on
+  the spec's main builds (our best and the simulator's best preset); a change is kept only when it wins on a second seed and costs no
+  tuning build more than 0.1%. Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
+  `apl_opt_raid` for the raid settings (full buffs); tanks one (`apl_opt_raid`). `run.py apl_path(entry, repo, where)` picks the
+  rotation for a setting (environments included), falling back to the simulator's; a search that finds nothing keeps the
+  simulator's rotation (no copy). Records: `<class>/raid/raidsim/<spec>-rotation-search.json`; rotations:
+  `raidsim/apls/<class>/<spec>[-raid].apl.json`. Talent trees without a scorer spec model are **rotation-only** specs.json entries
+  (`rotation_only`, `preset_names`: arcane mage, smite priest, demonology warlock, beast mastery and melee hunter, assassination and
+  subtlety rogue; since 2026-09-28 also the new-builds survey's frostfire mage, incinerate warlock, Seal of Fury and Shockadin
+  paladin and Stormcaller shaman): raced, ranked and given tuned rotations, never calibrated or optimized. The melee hunter runs our own base
+  rotation and dual-wield gear (`raidsim/gear_sets/forever/`, project paths via `run.py sim_path`); the simulator models only Aspect
+  of the Hawk, so its numbers are a lower bound. After a rotation search re-run `rebuild.py --steps raid,adopt,regen`: talent values
+  depend on the rotation.
+- Rotation search pools (2026-09-28): besides the class's other rotations, the search inserts explicit casts of each cooldown the
+  builds use (`cooldown_pool`: zero-damage actions cast 1-4 times a fight; `use every other cooldown` is all or nothing, and the Beast
+  Mastery dummy rotation had dropped it with the potion and Bestial Wrath because Intimidation wasted mana) and the top rank of every
+  spell the beta spellbook marks new against Classic Era (`new_spell_pool`; the simulator's rotations never cast Primal Bite in Cat
+  Form, Swift Judgement, Venom, Wrack, Sniper Shot...). A later search from our tuned rotation adds a pass to the record (`passes`,
+  each change tagged with its pass; the third-seed check compares the entry's base rotation, run again, with the final one).
+  An entry's `apl` may be our own base rotation (`_reference/.../apls/<class>/<spec>.base.apl.json`, its origin in `rotation_note`),
+  e.g. Frost's adds Arcane Missiles on Missile Barrage guarded by `auraIsKnown` (a condition on an aura the build does not know
+  vanishes in the simulator: guard any line that only some builds can use). `tune_builds` names builds the search must also protect
+  (a draft of another rotation family sharing the entry).
+- The bench registers the configured potion and conjured item (2026-09-28): the simulator builds their cooldowns only from the lists
+  its UI sends (`potions`, `conjuredItems`), which our configs never filled, so until then no run used a potion, a Demonic Rune or
+  Thistle Tea (hunter dummy DPS +8%, warlock +3-4%, Enhancement +4%, combat rogue +2-3%). Raid numbers before that date lack them.
+- **Simulator talent search** (`raidsim/talent_opt.py`, 2026-09-28): for builds no scorer model covers (hybrids, rotation-only
+  trees), a local search over legal 51-point allocations (moves of 1, 2, 3 or 5 points, `validate_builds.check_state`) run in the
+  simulator under the entry's rotation, common random numbers, a move kept only when it wins on a second seed; writes a candidate
+  file with its `search` record. It never takes a talent the rotation conditions on to 0 ranks (`run.py apl_talents`; `--keep`,
+  `--allow-drop`): without it the rotation's condition reads an unknown aura (the Arcane search dropped Arcane Blast and the
+  rotation turned into Frostbolt spam). Tune rotation and talents in turns. Builds raced only in rotation-only entries have no
+  scorer model: the scenario audit leaves them out.
+- **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`): our additions to
+  the community simulator, today Frostfire Bolt (the fork ships a stub). Numbers that depend on a patch are our model: say so.
+- **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched
+  around new spells, each a rotation-only entry with its own rotation and a build, plus notes; no numbers) and
+  `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid
+  README: every spell the spellbook marks new, its measured use in the raid races and the fight lab, and each target's DPS
+  against the class's best. The Frostfire leveling check is a mage fight-lab extra report (`frostfire-leveling`).
+- Classic Era: `setup.py --game classic` builds the upstream wowsims/classic simulator next to the Forever one;
+  `classic_specs.py` maps our Classic raid specs onto its presets (`specs-classic.json`, our gear sets under
+  `raidsim/gear_sets/classic/`); `run.py`/`calibrate.py --game classic-era` race `<class>/talents/classic-baseline/builds.json`
+  and write the Classic split into each source's `game_overrides["classic-era"]` plus raid-mode fits into
+  `effects/classic-era/`, reports under `<class>/talents/classic-baseline/raidsim/`. `rebuild.py --steps classic` does all of
+  it and ends with `scorer/classic_check.py --write`. Quote these as "wowsims/classic" numbers (Classic Era, not Forever).
+- Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
+  (shadow priest and Protection warrior `p1.bis`, feral cat `p0.bis` in 40be98e). `specs.json` names complete ones (`gear_note`
+  says why) and `run.py`'s `best_gear` skips incomplete presets (`gear_complete`).
+- Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
+  A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
+  and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run
+  `rebuild.py --steps raid,regen`.
+
+## Writing style
+
+- Terse, factual, no hype. State the build, the reason for each core talent, the flex points, and what is unknown.
+- Cite sources by URL in the JSON `sources` field; cross-class sources go in `_reference/sources.md`.
+- Dates are absolute (2026-09-15), never "today"/"last week".

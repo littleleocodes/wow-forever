@@ -1,0 +1,204 @@
+{
+ "id": "cand-aoe-r1",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    3
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Wing Clip",
+    3
+   ],
+   [
+    "Survivalist",
+    5
+   ],
+   [
+    "Deterrence",
+    1
+   ],
+   [
+    "Counterattack",
+    1
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Survival",
+   "talent": "Deterrence",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Survival",
+   "talent": "Improved Wing Clip",
+   "points": 3
+  },
+  {
+   "levels": "24-28",
+   "tree": "Survival",
+   "talent": "Survivalist",
+   "points": 5
+  },
+  {
+   "levels": "29",
+   "tree": "Survival",
+   "talent": "Counterattack",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Survival",
+   "talent": "Strider Kick",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Survival",
+   "talent": "Expose Prey",
+   "points": 2
+  },
+  {
+   "levels": "33-34",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Survival",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Survival",
+   "talent": "Lacerating Strikes",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Beast Mastery",
+   "talent": "Improved Revive Pet",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Beast Mastery",
+   "talent": "Summon Hawk",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Swiftness",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 3
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 1)"
+}

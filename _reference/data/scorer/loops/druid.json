@@ -1,0 +1,225 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "feral-cat-dps": {
+    "profiles": ["raid-dps", "leveling-st", "solo-60"],
+    "reference": {"classic-era": "feral-cat-dps / leveling-feral"},
+    "purpose": "Raid: Shred from behind with powershifting (Furor + Wolfshead Helm) for energy; leveling: Claw/Rake from the front, Ferocious Bite, Bear form for hard pulls.",
+    "loop": ["raid: Shred, Shred, Rip/Ferocious Bite, powershift when energy is empty", "leveling: Claw x3-4, Ferocious Bite, Rake on runners, shift to Bear when three mobs come"],
+    "constraints": ["Balance tier 1 (Nature's Grasp + Improved Nature's Grasp or Improved Wrath) is only a path to Natural Weapons and Omen of Clarity", "leveling cats cannot rely on Shred positioning: Claw is the builder (model: profile_overrides), so Savage Fury and Ferocity matter more while leveling than in raids", "Thick Hide / Feline Swiftness / Primal Fury in the raid build are tier fillers (Primal Fury is Bear-only rage in Classic)"],
+    "talents": {
+      "Nature's Grasp": {
+        "role": "filler",
+        "why": "Balance tier-1 path to Natural Weapons/Omen of Clarity; roots on hit while leveling.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Improved Nature's Grasp": {
+        "role": "filler",
+        "why": "Same path; proc chance.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Thick Hide": {
+        "role": "filler",
+        "why": "Cat raid filler; real mitigation for Bear.",
+        "encoded": "surv per rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Feline Swiftness": {
+        "role": "utility",
+        "why": "Outdoor cat speed while leveling; raid filler.",
+        "encoded": "surv + utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Primal Fury": {
+        "role": "filler",
+        "why": "Bear-only rage on crits in Classic: cat raid filler on the way down the tree.",
+        "encoded": "dmg tank only",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Ferocity": {
+        "role": "sustain",
+        "why": "Cheaper Claw/Rake/Maul/Swipe: matters when Claw is the builder (leveling) and for Bear; raid cats Shred.",
+        "encoded": "parsed resource cost with leveling Claw share",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Savage Fury": {
+        "role": "throughput",
+        "why": "Claw/Rake/Maul/Swipe damage: the leveling builder and the Bear rotation.",
+        "encoded": "manual dmg on those abilities",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Furor": {
+        "role": "enabler",
+        "why": "40 energy on cat shift: the powershifting engine with Wolfshead Helm in raids; 10 rage for Bear pulls.",
+        "encoded": "manual dmg cat raid / tank",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Improved Shred": {
+        "role": "throughput",
+        "why": "Cheaper Shred: the raid builder; while leveling Shred is only used on stunned/rooted mobs, so its value is small there.",
+        "encoded": "parsed resource cost (Shred share is lower in leveling profiles)",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Blood Frenzy": {
+        "role": "filler",
+        "why": "Forever name of Primal Fury (renamed Blood Frenzy in beta build 1.60.1.70009). Bear-only rage on crits in Classic: cat raid filler on the way down the tree.",
+        "encoded": "dmg tank only",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      },
+      "Leader of the Pack": {
+        "role": "raid-buff",
+        "why": "Brings leader of the pack to 4 others (a party aura: the feral druid sits in a melee group of four others); worth classic-era: +2.0% per receiver, forever: +2.0% per receiver (buff_value.py).",
+        "encoded": "utility 8.1% (classic-era), 8.1% (forever) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      }
+    }
+  },
+  "feral-bear-tank": {
+    "profiles": ["raid-tank"],
+    "reference": {"classic-era": "feral-bear-tank"},
+    "purpose": "Maul spam with Swipe on packs; armor from Dire Bear form and Thick Hide; rage from being hit, Furor and Primal Fury.",
+    "loop": ["Enrage/Furor on shift", "Maul every swing", "Swipe on packs", "Demoralizing Roar, Faerie Fire (Feral)"],
+    "constraints": ["Balance tier 1 fillers (Nature's Grasp) are the path to Natural Weapons and Omen of Clarity"],
+    "talents": {
+      "Nature's Grasp": {
+        "role": "filler",
+        "why": "Balance tier-1 path.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-tank-pve-spec-builds-talents"]
+      },
+      "Improved Nature's Grasp": {
+        "role": "filler",
+        "why": "Balance tier-1 path.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-tank-pve-spec-builds-talents"]
+      },
+      "Leader of the Pack": {
+        "role": "raid-buff",
+        "why": "Brings leader of the pack to 4 others (a party aura: the feral druid sits in a melee group of four others); worth classic-era: +2.0% per receiver, forever: +2.0% per receiver (buff_value.py).",
+        "encoded": "utility 8.1% (classic-era), 8.1% (forever) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Genesis": {
+        "role": "filler",
+        "why": "+5% periodic damage and healing (beta): the Forever bear draft's Balance tier-1 path; a bear has no periodic damage worth the points.",
+        "encoded": "manual",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/druid.json)"]
+      },
+      "Moonglow": {
+        "role": "filler",
+        "why": "-25% spell mana: the Forever bear draft's Balance tier-2 path (three points); cheaper heals between pulls, nothing while tanking.",
+        "encoded": "parsed mana_cost",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "balance-dps": {
+    "profiles": ["raid-dps", "leveling-st"],
+    "reference": {"classic-era": "balance-moonkin-raid"},
+    "purpose": "Moonkin: Starfire with Nature's Grace, Moonkin Aura for casters; Restoration dip for Nature's Focus/Subtlety threat and Insect Swarm.",
+    "loop": ["Moonfire", "Starfire", "Wrath when moving / low mana", "Innervate on a healer"],
+    "constraints": ["Improved Thorns / Nature's Reach are tier fillers; Nature's Focus / Subtlety are threat and pushback utility"],
+    "talents": {
+      "Improved Thorns": {
+        "role": "filler",
+        "why": "Balance tier-3 filler; small threat on the tank's Thorns.",
+        "encoded": "dmg on the bear Thorns source only",
+        "sources": ["https://www.icy-veins.com/wow-classic/balance-druid-dps-pve-spec-builds-talents"]
+      },
+      "Nature's Reach": {
+        "role": "utility",
+        "why": "Range: preference point.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/balance-druid-dps-pve-spec-builds-talents"]
+      },
+      "Nature's Focus": {
+        "role": "utility",
+        "why": "Pushback on heals: healer-side utility of the dip.",
+        "encoded": "small heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/balance-druid-dps-pve-spec-builds-talents"]
+      },
+      "Subtlety": {
+        "role": "utility",
+        "why": "-20% healing threat for the off-heals.",
+        "encoded": "utility heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/balance-druid-dps-pve-spec-builds-talents"]
+      },
+      "Moonkin Form": {
+        "role": "raid-buff",
+        "why": "Brings moonkin aura to 4 others (a party aura: the moonkin sits in a caster group of four others); worth classic-era: +2.4% per receiver, forever: +2.4% per receiver (buff_value.py).",
+        "encoded": "utility 9.7% (classic-era), 9.7% (forever) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Reflection": {
+        "role": "sustain",
+        "why": "50% of mana regeneration continues while casting: the moonkin's mana talent on the Restoration path to Insect Swarm; the healer lab measures 35% healing capacity for it on a resto druid (2026-09-26), the raid model scores it as regen x regen_share.",
+        "encoded": "parsed regen",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "resto-heal": {
+    "profiles": ["raid-heal"],
+    "reference": {"classic-era": "resto-swiftmend-healer / resto-regrowth-natures-grace"},
+    "purpose": "HoT-based healer: Rejuvenation/Regrowth with Swiftmend, Healing Touch downranked; Innervate.",
+    "loop": ["Rejuvenation / Regrowth on tanks", "Swiftmend", "Healing Touch (downranked) for spot heals", "Innervate a priest"],
+    "constraints": ["Improved Wrath 5 is the leftover-points filler (dungeon damage); Improved Mark of the Wild is a raid buff; Subtlety/Nature's Focus are threat/pushback"],
+    "talents": {
+      "Improved Wrath": {
+        "role": "filler",
+        "why": "Five leftover points: faster Wrath for soloing/dungeons.",
+        "encoded": "0 in raid-heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Subtlety": {
+        "role": "utility",
+        "why": "-20% healing threat.",
+        "encoded": "utility heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Nature's Focus": {
+        "role": "throughput",
+        "why": "Pushback resistance on Healing Touch/Regrowth when hit.",
+        "encoded": "small heal",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Improved Mark of the Wild": {
+        "role": "utility",
+        "why": "Raid-wide stats; tiny for you.",
+        "encoded": "small surv + raid utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Nature's Grace": {
+        "role": "enabler",
+        "why": "The point of the Regrowth build: Improved Regrowth crits proc Nature's Grace, which shortens the next Healing Touch/Regrowth by 0.5s.",
+        "encoded": "heal +3%, +5% more with Improved Regrowth 5 (requires)",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Natural Shapeshifter": {
+        "role": "filler",
+        "why": "Balance tier-2 path to Nature's Grace (21 Balance points); cheaper shifts in dungeons.",
+        "encoded": "mana on shapeshift (healer share 0)",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Improved Entangling Roots": {
+        "role": "filler",
+        "why": "Balance tier-2 path to Nature's Grace.",
+        "encoded": "utility leveling only",
+        "sources": ["https://www.icy-veins.com/wow-classic/restoration-druid-healer-pve-spec-builds-talents"]
+      },
+      "Tranquil Spirit": {
+        "role": "sustain",
+        "why": "-10% Healing Touch and Tranquility mana (beta); the healer lab measures 10% healing capacity (2026-09-26): a mana-bound raid healer's talent.",
+        "encoded": "parsed mana_cost (healer lab)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/druid.json)"]
+      },
+      "Improved Regrowth": {
+        "role": "throughput",
+        "why": "+10%/rank Regrowth crit: Regrowth is the resto druid's fast heal; the healer lab measures 2.2% healing capacity (2026-09-26), the Swiftmend build's Restoration tier-5 path.",
+        "encoded": "parsed crit (healer lab)",
+        "sources": ["https://www.icy-veins.com/wow-classic/feral-druid-dps-pve-spec-builds-talents"]
+      }
+    }
+  }
+}

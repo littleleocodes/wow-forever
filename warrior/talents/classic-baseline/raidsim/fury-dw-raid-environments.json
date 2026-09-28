@@ -1,0 +1,67 @@
+{
+ "class": "warrior",
+ "spec": "fury-dw-raid",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/warrior/gear_sets/phase_1.gear.json",
+  "gear_max": "ui/warrior/gear_sets/phase_6.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "fury-dw-raid",
+   "split": "17/34/0",
+   "ours": true,
+   "dps": {
+    "dummy": 526.542893562206,
+    "max": 2163.155225363637,
+    "max60": 2322.452932287626,
+    "raid": 1843.1221827377465
+   }
+  },
+  {
+   "label": "fury-2h-raid",
+   "split": "17/34/0",
+   "ours": true,
+   "dps": {
+    "dummy": 493.0577201954284,
+    "max": 2061.8629200824184,
+    "max60": 2216.9928245652104,
+    "raid": 1739.6726242363723
+   }
+  },
+  {
+   "label": "sim preset: DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 526.542893562206,
+    "max": 2163.155225363637,
+    "max60": 2322.452932287626,
+    "raid": 1843.1221827377465
+   }
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+  "class": "Warlock",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Raiding is Shadow Bolt spam: DS/Ruin (sacrificed Succubus, +15% shadow damage) is the top damage build, SM/Ruin keeps a pet (Imp for Blood Pact) and is only slightly behind. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "ds-ruin-raid",
+      "name": "DS/Ruin — Demonic Sacrifice + Ruin (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The most popular Classic raiding build: sacrifice the Succubus for +15% Shadow damage, take Ruin for 200% crits, Improved Shadow Bolt for the 20% shadow vulnerability debuff, and Suppression/Improved Life Tap from Affliction for hit on Curses and mana.",
+      "allocation": {
+        "Affliction": [["Suppression", 5], ["Improved Life Tap", 2]],
+        "Demonology": [["Improved Healthstone", 2], ["Demonic Embrace", 5], ["Fel Intellect", 5], ["Fel Domination", 1], ["Fel Stamina", 5], ["Master Summoner", 2], ["Demonic Sacrifice", 1]],
+        "Destruction": [["Improved Shadow Bolt", 5], ["Cataclysm", 4], ["Bane", 5], ["Devastation", 5], ["Shadowburn", 1], ["Destructive Reach", 2], ["Ruin", 1]]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Succubus sacrifice = +15% Shadow damage for 30 minutes."},
+        {"talent": "Ruin", "why": "Shadow Bolt crits deal 200% instead of 150%."},
+        {"talent": "Improved Shadow Bolt", "why": "Crits apply +20% Shadow damage taken (4 charges) — helps every shadow caster."},
+        {"talent": "Bane", "why": "-0.5s Shadow Bolt cast time."},
+        {"talent": "Devastation", "why": "+5% Destruction crit; prerequisite for Ruin."},
+        {"talent": "Improved Life Tap", "why": "+20% mana from Life Tap — your only mana source in a long fight."},
+        {"talent": "Suppression", "why": "+10% hit on Affliction spells (your assigned Curse and Corruption)."},
+        {"talent": "Demonic Embrace", "why": "+15% Stamina; you Life Tap health into mana."},
+        {"talent": "Destructive Reach", "why": "+20% range and -10% threat on Destruction spells."},
+        {"talent": "Fel Domination", "why": "Instant re-summon to sacrifice a Voidwalker for the shield in an emergency."}
+      ],
+      "flex": [
+        {"points": 10, "default": "Fel Intellect 5 + Fel Stamina 5", "alternatives": ["Improved Imp", "Improved Voidwalker", "Improved Health Funnel"], "why": "Nothing in Demonology tiers 2-3 matters after the pet is sacrificed; these are the least useless fillers (mana/health while the pet is out)."},
+        {"points": 4, "default": "Cataclysm", "alternatives": ["Improved Firebolt", "Improved Searing Pain"], "why": "-4% Destruction mana cost."},
+        {"points": 2, "default": "Improved Healthstone", "alternatives": ["Improved Imp"], "why": "Bigger Healthstones for the raid."},
+        {"points": 2, "default": "Master Summoner", "alternatives": ["Unholy Power"], "why": "Faster, cheaper re-summons to sacrifice again after a death."}
+      ],
+      "notes": [
+        "Shadow Bolt spam with your assigned Curse (usually Curse of Recklessness / Elements / Shadow). Corruption is added only if the raid allows the debuff slot.",
+        "Shadowburn is an execute/instant while moving; Curse of Doom on long fights where allowed."
+      ],
+      "sources": [
+        "https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents",
+        "https://www.wowhead.com/classic/guide/classes/warlock/dps-talent-builds-pve"
+      ]
+    },
+    {
+      "id": "sm-ruin-raid",
+      "name": "SM/Ruin — Shadow Mastery + Ruin (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Keeps the pet (Imp with Blood Pact for the tank group) and takes +10% Shadow damage from Shadow Mastery instead of the +15% from Demonic Sacrifice. Slightly less Shadow Bolt damage than DS/Ruin but better DoT damage (Improved Corruption, Nightfall) and much better for solo/PvP.",
+      "allocation": {
+        "Affliction": [["Suppression", 5], ["Improved Corruption", 5], ["Improved Life Tap", 2], ["Improved Drain Soul", 2], ["Improved Curse of Agony", 3], ["Amplify Curse", 1], ["Nightfall", 2], ["Grim Reach", 2], ["Siphon Life", 1], ["Improved Curse of Weakness", 2], ["Shadow Mastery", 5]],
+        "Demonology": [],
+        "Destruction": [["Improved Shadow Bolt", 5], ["Cataclysm", 2], ["Bane", 5], ["Devastation", 5], ["Shadowburn", 1], ["Destructive Reach", 2], ["Ruin", 1]]
+      },
+      "core": [
+        {"talent": "Shadow Mastery", "why": "+10% Shadow damage without sacrificing the pet."},
+        {"talent": "Ruin", "why": "200% crits."},
+        {"talent": "Improved Shadow Bolt", "why": "Shadow vulnerability debuff."},
+        {"talent": "Improved Corruption", "why": "Instant Corruption — free damage between Shadow Bolts."},
+        {"talent": "Nightfall", "why": "Corruption ticks proc an instant Shadow Bolt."},
+        {"talent": "Bane", "why": "Cast time."},
+        {"talent": "Improved Life Tap", "why": "Mana."},
+        {"talent": "Suppression", "why": "Affliction hit."},
+        {"talent": "Siphon Life", "why": "Prerequisite for Shadow Mastery; small self-heal DoT."},
+        {"talent": "Grim Reach", "why": "+20% Affliction range."}
+      ],
+      "flex": [
+        {"points": 4, "default": "Improved Drain Soul 2 + Improved Curse of Weakness 2", "alternatives": ["Fel Concentration", "Improved Drain Life"], "why": "Four filler points are needed to reach 25 for Shadow Mastery; none of the options matter in a raid."},
+        {"points": 3, "default": "Improved Curse of Agony", "alternatives": ["Fel Concentration"], "why": "Only if you are assigned Curse of Agony; otherwise filler."},
+        {"points": 2, "default": "Cataclysm", "alternatives": ["Aftermath", "Intensity"], "why": "Reach 20 points for Ruin."}
+      ],
+      "notes": [
+        "At least one SM/Ruin lock per raid keeps an Imp for Blood Pact in the tank group.",
+        "Improved Firebolt is worth taking instead of Cataclysm if the Imp is out and attacking."
+      ],
+      "sources": ["https://www.icy-veins.com/wow-classic/warlock-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-soul-link",
+      "name": "Soul Link / Nightfall (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The durable PvP warlock: Soul Link splits 30% of damage taken to the pet, Fel Domination + Master Summoner re-summon instantly, Nightfall gives instant Shadow Bolts, Improved Corruption/Curse of Agony/Amplify Curse do the DoT work. Very hard to kill; damage is steady rather than bursty.",
+      "allocation": {
+        "Affliction": [["Suppression", 5], ["Improved Corruption", 5], ["Improved Life Tap", 2], ["Improved Curse of Agony", 3], ["Amplify Curse", 1], ["Nightfall", 2], ["Grim Reach", 2]],
+        "Demonology": [["Improved Healthstone", 2], ["Demonic Embrace", 5], ["Fel Intellect", 5], ["Fel Stamina", 5], ["Fel Domination", 1], ["Unholy Power", 5], ["Master Summoner", 1], ["Demonic Sacrifice", 1], ["Master Demonologist", 5], ["Soul Link", 1]],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Soul Link", "why": "30% of damage redirected to the pet, +3% damage."},
+        {"talent": "Master Demonologist", "why": "Pet-dependent buffs: Voidwalker -10% physical damage taken, Succubus +10% damage, Felhunter resistances."},
+        {"talent": "Fel Domination", "why": "Instant re-summon after the pet dies."},
+        {"talent": "Nightfall", "why": "Instant Shadow Bolt procs from Corruption."},
+        {"talent": "Improved Corruption", "why": "Instant Corruption."},
+        {"talent": "Amplify Curse", "why": "Big Curse of Agony/Exhaustion every 3 minutes."},
+        {"talent": "Demonic Embrace", "why": "+15% Stamina."},
+        {"talent": "Unholy Power", "why": "+20% pet melee damage; prerequisite for Master Demonologist."}
+      ],
+      "flex": [
+        {"points": 10, "default": "Fel Intellect 5 + Fel Stamina 5", "alternatives": ["Improved Voidwalker 3 + Improved Health Funnel 2 + Improved Imp"], "why": "Improved Voidwalker is a fine swap when the Voidwalker is the PvP pet."},
+        {"points": 5, "default": "Suppression", "alternatives": ["Improved Drain Life", "Fel Concentration"], "why": "Hit on DoTs matters in PvP too, but Fel Concentration for Drain Life kiting is popular."}
+      ],
+      "notes": [
+        "Siphon Life is not reachable with Soul Link at 31 Demonology; SM/Ruin (above) is the higher-damage PvP alternative without Soul Link."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/warlock/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-affliction-demo",
+      "name": "Leveling — Affliction / Demonology (Voidwalker)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "DoT-and-drain leveling with a Voidwalker tank: Improved Corruption first, Improved Drain Life and Fel Concentration for drain tanking, Siphon Life at 30 and Shadow Mastery at 39, then Demonology for pet durability and Unholy Power. Ends 30/21/0; respec to DS/Ruin or SM/Ruin for raiding.",
+      "allocation": {
+        "Affliction": [["Suppression", 2], ["Improved Corruption", 5], ["Improved Life Tap", 2], ["Improved Drain Life", 5], ["Improved Curse of Agony", 3], ["Fel Concentration", 2], ["Amplify Curse", 1], ["Nightfall", 2], ["Grim Reach", 2], ["Siphon Life", 1], ["Shadow Mastery", 5]],
+        "Demonology": [["Demonic Embrace", 5], ["Improved Voidwalker", 3], ["Fel Intellect", 2], ["Fel Stamina", 5], ["Fel Domination", 1], ["Unholy Power", 5]],
+        "Destruction": []
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-16", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
+        {"levels": "17-21", "tree": "Affliction", "talent": "Improved Drain Life", "points": 5},
+        {"levels": "22-24", "tree": "Affliction", "talent": "Improved Curse of Agony", "points": 3},
+        {"levels": "25", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "26-27", "tree": "Affliction", "talent": "Fel Concentration", "points": 2},
+        {"levels": "28-29", "tree": "Affliction", "talent": "Nightfall", "points": 2},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31-32", "tree": "Affliction", "talent": "Grim Reach", "points": 2},
+        {"levels": "33-34", "tree": "Affliction", "talent": "Suppression", "points": 2},
+        {"levels": "35-39", "tree": "Affliction", "talent": "Shadow Mastery", "points": 5},
+        {"levels": "40-44", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "45-47", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "48-49", "tree": "Demonology", "talent": "Fel Intellect", "points": 2},
+        {"levels": "50-54", "tree": "Demonology", "talent": "Fel Stamina", "points": 5},
+        {"levels": "55", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+        {"levels": "56-60", "tree": "Demonology", "talent": "Unholy Power", "points": 5}
+      ],
+      "core": [
+        {"talent": "Improved Corruption", "why": "Instant Corruption from 10 — DoT everything, let the Voidwalker tank."},
+        {"talent": "Improved Drain Life", "why": "Drain tanking keeps you full while the Voidwalker holds threat."},
+        {"talent": "Siphon Life", "why": "Another self-healing DoT at 30."},
+        {"talent": "Shadow Mastery", "why": "+10% Shadow damage at 39."},
+        {"talent": "Nightfall", "why": "Instant Shadow Bolts."}
+      ],
+      "flex": [
+        {"points": 2, "default": "Suppression", "alternatives": ["Improved Curse of Weakness", "Improved Drain Soul"], "why": "Two filler points on the way to 25 for Shadow Mastery."}
+      ],
+      "notes": [
+        "Multi-DoT 2-3 mobs while the Voidwalker tanks; Drain Life to refill; Life Tap between pulls.",
+        "Many players go Demonology first (Demonic Embrace, Improved Voidwalker) for an easier 10-30; this order gets Siphon Life earlier."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/warlock/leveling-talents"]
+    }
+  ]
+}

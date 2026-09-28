@@ -1,0 +1,1215 @@
+{
+  "_doc": "Classic Era hand-entered Mage effects for calibration. Same conventions as forever/mage.manual.json.",
+  "Arcane Concentration": {
+    "note": "Clearcasting 2%/rank -> 10% free casts at 5/5. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 1.0% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["all"],
+        "per_rank": 0.006128,
+        "values": [0.006128, 0.012255, 0.018383, 0.02451, 0.030638],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["all"],
+        "per_rank": 0.016398,
+        "values": [0.016398, 0.032795, 0.049193, 0.065591, 0.081988],
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Arcane Instability": {
+    "note": "+1%/rank spell damage and +1%/rank spell crit. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 5.1% DPS in the simulator (scorer said 5.5% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.007685,
+        "values": [0.007685, 0.01537, 0.023055, 0.030739, 0.038424],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "per_rank": 0.007685,
+        "values": [0.007685, 0.01537, 0.023055, 0.030739, 0.038424],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Arcane Subtlety": {
+    "note": "-5/rank target resistance: ~+0.5%/rank damage; threat ignored. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. PvP (2026-09-27): low, kite: -10 target resistances: fewer full resists of Frost Nova and Polymorph against Frost Resistance Aura/Totem and Mark of the Wild; damage part counted, threat part worthless in PvP.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Magic Absorption": {
+    "note": "Resistances + mana on resist. PvP (2026-09-27): low, resist: +10 all resistances: a few % more enemy Fears, Polymorphs and Frost Novas fully resisted, 5% mana back each time; the damage reduction is counted as survival.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Arcane Explosion": {
+    "note": "+2%/rank Arcane Explosion crit (parser missed 'additional').",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Arcane Explosion"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Arcane Resilience": {
+    "note": "Armor from Intellect: 'further decrease your melee damage taken' while gathering packs -> +3% surv in leveling-aoe; nothing in raids.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"]
+      }
+    ]
+  },
+  "Improved Mana Shield": {
+    "note": "Mana Shield efficiency. PvP (2026-09-27): low, defensive: Mana Shield drains 20% less mana per damage absorbed: a cheaper emergency absorb.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Counterspell": {
+    "note": "Silence chance: leveling utility. PvP (2026-09-27): high, stun: Counterspell silences the target for 4 s (100% at 2 ranks): a full lockout on a healer or caster; core of every Classic mage PvP build.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Presence of Mind": {
+    "note": "Instant nuke every 3 min. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 2.9% DPS in the simulator (scorer said 3.0% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged. PvP (2026-09-27): high, burst: Next spell instant (3 min cd): instant Pyroblast or Frostbolt for burst, or an instant Polymorph; the 21/0/30 and PoM/Pyroblast builds are built around it.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0311],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0311],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Arcane Mind": {
+    "note": "+2%/rank maximum mana: sustain. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, frost-raid): removing it costs 0.0% DPS in the simulator (scorer said 1.6% on the same scale); raid values scaled x0.31 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006136,
+        "values": [0.006136, 0.012272, 0.018408, 0.024544, 0.030681],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Arcane Power": {
+    "note": "+30% damage 15s / 3 min = +2.5% average; +30% mana in the window. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 4.0% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged. PvP (2026-09-27): high, burst: +30% damage for 15 s (3 min cd) covers most of a PvP kill window, several times its 2.5% sustained average; deep Arcane only, the AP/PoM/Pyroblast burst build is built around it.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.025],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.025],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [-0.004],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [-0.004],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.042084],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [-0.006733],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Magic Attunement": {
+    "note": "Amplify/Dampen Magic range: nothing. PvP (2026-09-27): low, defensive: Dampen Magic 50% stronger: less damage from every spell hit and DoT tick (warlocks, shadow priests) at the cost of less healing received; solo play only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Arcane Missiles": {
+    "note": "Pushback resistance for Arcane Missiles: nothing for Frost/Fire.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0]
+      }
+    ]
+  },
+  "Impact": {
+    "note": "Stun chance per Fire spell hit (2%/rank): a 2s stun is ~2s of free casting on that fraction of Fire casts -> worth ~0.4%/rank of Fire damage. Scoped to Fire sources so a Frost mage (few Fire casts) gets almost nothing. PvP (2026-09-27): medium, stun: Fire spells have a 10% chance to stun for 2 s: random stuns that open kill windows; Fire PvP only (a Frost build procs it only from Fire Blast).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.004,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Ignite": {
+    "note": "8%/rank of the crit's damage as a burn -> crit_bonus +0.12/rank on Fire. Since 2026-09-26 the burn is the `ignite` damage source of the fire models (share from the simulators' split, rank-scaled): no multiplier here. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 43.8% DPS in the simulator (scorer said 22.7% on the same scale); raid values scaled x64.00, the cap on effect size stops short of the target (22.6%). Other modes unchanged.",
+    "effects": []
+  },
+  "Pyroblast": {
+    "note": "Opener while leveling: ~+3% fire damage; nothing in raids. PvP (2026-09-27): medium, burst: 6 s cast: in PvP an opener from 35 yd or instant with Presence of Mind, the kill shot of the PoM/Pyroblast build; Fire/Arcane PvP only (also Blast Wave's prerequisite).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.03],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Scorch": {
+    "note": "5 stacks of +3% Fire taken: raid 5%/rank, leveling 1.5%/rank. Not fitted to the Classic simulator: its rotation conditions on this talent, so the removal run measures a broken rotation (raidsim/run.py flags it apl_dependent). Raid buff value (2026-09-26, buff_value.py): worth 15.0% DPS to each receiver in the wowsims/classic simulator, x 4 beneficiaries = utility 60.0% in the raid-dps profile if you are the one who brings it.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.05,
+        "modes": ["raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.015,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.2, 0.4, 0.6],
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Improved Fire Ward": {
+    "note": "Nothing measurable. PvP (2026-09-27): low, defensive: Fire Ward reflects 20% of Fire spells back: a small defensive vs warlocks, fire mages and shamans.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0.0, 0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Master of Elements": {
+    "note": "10%/rank refund on crits: leveling 0.8%/rank, raid 2.5%/rank. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 0.6% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.008,
+        "modes": ["leveling"],
+        "values": [0.008, 0.016, 0.024, 0.032, 0.04]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.025,
+        "modes": ["raid"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "frost-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.025,
+        "modes": ["raid"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Blast Wave": {
+    "note": "Instant AoE + daze every 45s. PvP (2026-09-27): medium, kite: Instant AoE with a 6 s daze (45 s cd): peels melee and restarts the kite; the damage is counted; Fire PvP only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "values": [0.1]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.01],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:leveling-aoe"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Combustion": {
+    "note": "Stacking Fire crit until 3 crits, every 3 min: raid +2%, leveling +1%. Not fitted to the Classic simulator: its rotation conditions on this talent, so the removal run measures a broken rotation (raidsim/run.py flags it apl_dependent). PvP (2026-09-27): medium, burst: Burst cooldown (3 min): +10% Fire crit per Fire hit until 3 crits, a crit streak within a few casts; the model counts only its average; deep Fire only (0/31/20 has no Ice Block).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.02],
+        "modes": ["raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.01],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Flame Throwing": {
+    "note": "+3 yd/rank Fire range (leveling only). PvP (2026-09-27): medium, range: +6 yd on Fire spells (Fire Blast 26 yd, Scorch 36, Fireball/Pyroblast 41): Fire Blast from further while kiting, openers from out of range; Fire PvP only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.005,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Burning Soul": {
+    "note": "35%/rank pushback resistance on Fire: ~1%/rank casting time while leveling. PvP (2026-09-27): medium, resist: 70% chance for Fire casts to ignore pushback from damage: Fireball and Pyroblast finish under melee pressure; the threat part is worthless in PvP; Fire PvP only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "per_rank": 0.01,
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Frost Warding": {
+    "note": "Frost/Ice Armor +15%/rank; AoE: armor 'when getting mobs in the perfect Frost Nova position' -> +2%/rank surv in leveling-aoe. PvP (2026-09-27): low, defensive: Frost Ward reflects 20% of Frost spells and effects back (frost mages, shamans); the Frost/Ice Armor armor part is counted as survival.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Frostbite": {
+    "note": "5%/rank freeze on chill; Shatter-crit on the next cast -> ~1.2%/rank frost damage; freezes also protect. Raid: 0 (bosses are immune to freezes). AoE grinding: 'Do NOT put points into this talent' - random freezes scatter the clump out of Blizzard: -6%/rank AoE damage, -3%/rank survivability in leveling-aoe. PvP (2026-09-27): high, kite: 15% of chills freeze the target for 5 s: free roots while kiting and extra Shatter windows; the damage part is counted.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:frost"],
+        "per_rank": 0.012,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "per_rank": -0.06,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": -0.03,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Permafrost": {
+    "note": "+1s/rank chill duration, +4%/rank slow. AoE loop enabler: 'of critical importance in order to make Improved Blizzard last enough for a second one to hit before the effect wears off' -> dmg Blizzard +8%/rank, surv +5%/rank in leveling-aoe; single target kiting 0.6%/rank utility + 1%/rank surv. PvP (2026-09-27): high, kite: Chills (Frostbolt, Cone of Cold, Blizzard) last 3 s longer and slow 10% more: the Frost mage's kite.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:leveling-st", "profile:solo-60"],
+        "per_rank": 0.006
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Blizzard"],
+        "per_rank": 0.08,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.05,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Cold Snap": {
+    "note": "Resets Frost cooldowns every 10 min: a second Ice Block/Nova on a bad pull. AoE: 'a second shot at fixing a pull that is going wrong' -> surv +8%. PvP (2026-09-27): high, defensive: Resets every Frost cooldown: a second Ice Block, Frost Nova, Ice Barrier and Cone of Cold in the same fight.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.012]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.01]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.07],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Blizzard": {
+    "note": "Blizzard chill 30/50/65% (Classic): 'the essential talent for this build' - Blizzard kills the pack while the snare keeps it off you. Enabler: dmg Blizzard +25%/rank, surv +10%/rank in leveling-aoe; single target: a chilled runner, 1%/rank surv. PvP (2026-09-27): low, kite: Blizzard chills 65% for 1.5 s (4.5 s with Permafrost) and each tick can proc Frostbite: battleground AoE control; rarely channeled in duels.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Blizzard"],
+        "per_rank": 0.25,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.1,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Arctic Reach": {
+    "note": "+10%/rank Frostbolt/Blizzard range and Nova/Cone radius: single target one more cast before melee (0.5%/rank); AoE 'hit enemies from further away, reducing your melee damage taken' and a bigger Nova/Cone catches stragglers -> dmg aoe +3%/rank, surv +4%/rank. PvP (2026-09-27): medium, range: Frostbolt 36 yd, Frost Nova and Cone of Cold radius 12 yd: the root and slows catch targets further away.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Frostbolt"],
+        "per_rank": 0.005,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["aoe"],
+        "per_rank": 0.03,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.04,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Ice Block": {
+    "note": "10s immunity every 5 min: removes most deaths on bad pulls (~4% effective health) plus an escape; AoE: pull-and-block gathering and the emergency button -> surv +15%, utility +2%. PvP (2026-09-27): high, defensive: 10 s immunity to all attacks and spells (5 min cd): waits out enemy burst and cooldowns.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.11],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:leveling-aoe"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Shatter": {
+    "note": "+10%/rank crit vs Frozen (50% at 5/5) Value = rank crit x share of casts on Frozen targets: single target ~30% (Nova once per fight); AoE grinding only the Nova's 8s before the run to range -> ~17% of Blizzard ticks (Icy Veins' AoE build skips Shatter entirely) -> 1.7%/rank; raid 0 (bosses cannot be frozen). PvP (2026-09-27): high, burst: +50% crit on Frozen targets: every Frost Nova or Frostbite freeze becomes a burst window (Frostbolt into Cone of Cold/Fire Blast); the sustained model only averages it.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "per_rank": 0.03,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "per_rank": 0.017,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Winter's Chill": {
+    "note": "20%/rank chance per Frost spell to apply +2% Frost crit, 5 stacks: raid = 10% crit at 5/5 (values scale with application chance); leveling mobs die before stacks -> a quarter of that. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 6.9% DPS in the simulator (scorer said 17.0% on the same scale); raid values scaled x0.00 to match (17.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.0562, 0.1125, 0.1687, 0.2249, 0.2811],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Ice Barrier": {
+    "note": "455-damage shield every 30s, no pushback while it holds; AoE: gather on the mount without being dazed off it and an escape when running -> surv +12%, utility +3% in leveling-aoe. PvP (2026-09-27): high, defensive: Instant absorb every 30 s; spells are not interrupted while it holds, so Frostbolt and Polymorph finish under melee pressure.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.08]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.02],
+        "modes": ["leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:leveling-aoe"],
+        "values": [0.03]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Improved Frost Nova": {
+    "note": "-2s/rank Frost Nova cooldown (25s -> 21s). AoE loop (loops/mage.json frost-aoe): the cycle Nova 8s + run 2s + two 8s Blizzards + Cone is ~24s, so a 25s cooldown leaves the pack closing on you before the second Nova and a 21s one does not -> fewer melee hits (surv +10%/rank) and fewer cut Blizzards (+2%/rank Blizzard). Single target: a second Nova per multi-mob pull or runner (surv +3%/rank) plus the parsed cooldown cut on the Nova source. PvP (2026-09-27): high, kite: Frost Nova every 21 s instead of 25 s: more roots to kite from and more Shatter windows; Shatter's prerequisite.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Frost Nova"],
+        "per_rank": 2.0
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.1,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Blizzard"],
+        "per_rank": 0.02,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Elemental Precision": {
+    "note": "+2%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 8.6% DPS in the simulator (scorer said 7.2% on the same scale); already within tolerance, raid effects split off unchanged (7.2%). Other modes unchanged. PvP (2026-09-27): medium, kite: Frost Nova, Frostbolt and Cone of Cold resisted less often against players (96% base hit): the root and slows land more often; 2 ranks reach the 99% cap; the damage part is counted.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "modes": ["leveling-aoe"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:frost", "school:fire"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:frost", "school:fire"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:frost", "school:fire"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:frost", "school:fire"],
+        "per_rank": 0.025856,
+        "values": [0.025856, 0.051712, 0.077568, 0.103425, 0.129281],
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Frost Channeling": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-26, wowsims/classic 7779ebb, frost-raid): removing it costs -0.0% DPS in the simulator (scorer said 2.4% on the same scale); raid values scaled x0.20 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["school:frost"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["school:frost"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "threat",
+        "scope": ["school:frost"],
+        "values": [0.1, 0.2, 0.3],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "threat",
+        "scope": ["school:frost"],
+        "values": [0.1, 0.2, 0.3],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["school:frost"],
+        "values": [0.009919, 0.019838, 0.029758],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "threat",
+        "scope": ["school:frost"],
+        "values": [0.019838, 0.039677, 0.059515],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Ice Shards": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 17.3% DPS in the simulator (scorer said 17.3% on the same scale); already within tolerance, raid effects split off unchanged (17.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["school:frost"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["school:frost"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["school:frost"],
+        "values": [0.257631, 0.515263, 0.772894, 1.030526, 1.288157],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Improved Frostbolt": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 20.2% DPS in the simulator (scorer said 17.9% on the same scale); already within tolerance, raid effects split off unchanged (18.0%). Other modes unchanged. PvP (2026-09-27): low, kite: 2.5 s Frostbolt: more casts per Frost Nova/Frostbite window and less time for interrupts and pushback; the DPS gain is counted.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Frostbolt"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Frostbolt"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Frostbolt"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Piercing Ice": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs 5.8% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:frost"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:frost"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:frost"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Critical Mass": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 7.4% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:fire"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "frost-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:fire"],
+        "values": [0.02, 0.04, 0.06],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:fire"],
+        "values": [0.073873, 0.147746, 0.221619],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Fire Power": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "frost-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "values": [0.025793, 0.051585, 0.077378, 0.103171, 0.128963],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Improved Fireball": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, fire-raid): removing it costs 15.2% DPS in the simulator (scorer said 12.5% on the same scale); already within tolerance, raid effects split off unchanged (12.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Fireball"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "frost-raid"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Fireball"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Fireball"],
+        "values": [0.136611, 0.273224, 0.409834, 0.546445, 0.683056],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
+      }
+    ]
+  },
+  "Arcane Meditation": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, wowsims/classic 7779ebb, frost-raid): removing it costs -0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-leveling", "frost-aoe", "fire-leveling", "fire-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["frost-raid"]
+      }
+    ]
+  },
+  "Arcane Focus": {
+    "note": "PvP (2026-09-27): medium, stun: Polymorph and Counterspell resisted less often against players (96% base hit); 2 ranks reach the 99% cap, the rest adds nothing in PvP.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Wand Specialization": {
+    "note": "PvP (2026-09-27): zero, burst: Wands are not used in PvP; the talent only pays while leveling (wand finishing).",
+    "effects": []
+  }
+}

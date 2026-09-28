@@ -1,0 +1,168 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "fury-dw-raid": {
+    "profiles": ["raid-dps"],
+    "reference": {"classic-era": "fury-dw-raid"},
+    "purpose": "Dual-wield Fury: Bloodthirst, Whirlwind, Heroic Strike rage dump, Flurry from crits, Impale from 17 Arms points.",
+    "loop": ["Bloodthirst on cooldown", "Whirlwind (Berserker Stance)", "Heroic Strike / Hamstring to dump rage", "Overpower swaps to Battle Stance when it procs (Tactical Mastery keeps the rage)"],
+    "constraints": ["rage is the resource: hit count, Unbridled Wrath and Anger Management feed it", "stance swapping needs Tactical Mastery"],
+    "talents": {
+      "Tactical Mastery": {
+        "role": "enabler",
+        "why": "'Required for stance swapping to work. Without points in it, you would struggle to retain any Rage when stance swapping.'",
+        "encoded": "dmg yellow +0.4%/rank raid",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Unbridled Wrath": {
+        "role": "throughput",
+        "why": "'Suits dual wielding well, as the more often you attack, the more often you activate this talent.'",
+        "encoded": "dmg +1%/rank on dual-wield sources, +0.5%/rank two-hander",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Anger Management": {
+        "role": "sustain",
+        "why": "'Generates 1 Rage every 3 seconds' and lets you enter fights with rage.",
+        "encoded": "dmg yellow +4% raid / +5% leveling / +2% tank",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Cruelty": {
+        "role": "throughput",
+        "why": "'Trading one talent point for 1% extra chance to critical strike is usually a good deal.'",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Impale": {
+        "role": "throughput",
+        "why": "'Major damage contributor for Warriors, while only requiring an investment of 17 points into the Arms tree.'",
+        "encoded": "parsed crit bonus",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Improved Overpower": {
+        "role": "throughput",
+        "why": "Makes Overpower 'critical strike much more often' and 'can be useful to activate Flurry'.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Improved Battle Shout": {
+        "role": "raid-buff",
+        "why": "Brings improved battle shout to 4 others (a party shout: four melee in the warrior's group); worth classic-era: +3.5% per receiver (buff_value.py).",
+        "encoded": "utility 14.0% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents", "_reference/raid-buff-values.md"]
+      },
+      "Enrage": {
+        "role": "filler",
+        "why": "Fury tier-3: five points are needed to reach Death Wish and Flurry, and Enrage (+damage after taking a hit) is the best of that tier's options; it rarely triggers for a raid DPS warrior.",
+        "encoded": "manual dmg (small)",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "prot-tank": {
+    "profiles": ["raid-tank"],
+    "reference": {"classic-era": "prot-raid-tank"},
+    "purpose": "Shield tank: Sunder Armor / Revenge / Shield Slam threat, Shield Block against crushing blows, Last Stand and Shield Wall for emergencies.",
+    "loop": ["Bloodrage on the pull", "Sunder Armor x5", "Revenge when it lights up, Shield Slam on cooldown", "Shield Block before boss swings, Heroic Strike with spare rage"],
+    "constraints": ["rage-starved on pulls and low-damage bosses: Anger Management, Improved Bloodrage", "defense/armor talents are priced honestly (Icy Veins is lukewarm on Anticipation and Toughness)"],
+    "talents": {
+      "Anticipation": {
+        "role": "safety",
+        "why": "'Not quite as good as it might look at first glance. While 10 Defense is a strong defensive boost, it comes at the cost of 5 precious talent points.'",
+        "encoded": "surv +0.6%/rank tank (derived from defense -> avoidance and crit)",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Toughness": {
+        "role": "safety",
+        "why": "'Looks better on paper than what it actually is. Only your armor value from items is increased.'",
+        "encoded": "surv +1.1%/rank (item-armor arithmetic)",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Improved Shield Wall": {
+        "role": "safety",
+        "why": "'Taken specifically because, at this point, you should be tanking bosses where the 5 extra seconds will make or break a kill.'",
+        "encoded": "surv + tank utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Anger Management": {
+        "role": "sustain",
+        "why": "'Generates 1 Rage every 3 seconds.'",
+        "encoded": "dmg tank +2%",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Tactical Mastery": {
+        "role": "utility",
+        "why": "'Required for stance swapping' (Charge / Mocking Blow / Berserker Rage swaps).",
+        "encoded": "tank utility 0.2%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Improved Shield Block": {
+        "role": "enabler",
+        "why": "'Your best defensive one pointer' - two blocks per Shield Block removes crushing blows.",
+        "encoded": "manual surv",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Shield Specialization": {
+        "role": "filler",
+        "why": "'Requirement for the specialization-defining Improved Shield Block.'",
+        "encoded": "manual small surv",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-tank-pve-spec-builds-talents"]
+      },
+      "Improved Sunder Armor": {
+        "role": "sustain",
+        "why": "-1 rage/rank on Sunder Armor, the tank's threat filler (35% of the threat split): rage economy the threat model does not carry beyond the ability's cost; a Protection tier-2 point spend.",
+        "encoded": "parsed resource_cost",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      }
+    }
+  },
+  "arms-2h-raid": {
+    "profiles": ["leveling-st"],
+    "reference": {"classic-era": "leveling-arms"},
+    "purpose": "Two-hander leveling: Charge, Rend, Overpower on dodges, Heroic Strike / Mortal Strike, Sweeping Strikes on packs.",
+    "loop": ["Charge (Improved Charge rage)", "Rend", "Heroic Strike / Mortal Strike", "Overpower after a dodge", "Execute"],
+    "constraints": ["rage from Charge and white hits is the limiter; Tactical Mastery lets Charge (Battle) flow into Berserker Stance"],
+    "talents": {
+      "Improved Charge": {
+        "role": "sustain",
+        "why": "Opening rage on every pull.",
+        "encoded": "manual dmg yellow leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Improved Heroic Strike": {
+        "role": "sustain",
+        "why": "Cheaper rage dump: more Heroic Strikes per pull.",
+        "encoded": "parsed resource cost",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Tactical Mastery": {
+        "role": "enabler",
+        "why": "Charge in Battle Stance, fight in Berserker without losing the rage.",
+        "encoded": "dmg yellow +0.3%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Unbridled Wrath": {
+        "role": "throughput",
+        "why": "Extra rage per hit (half as often with a two-hander).",
+        "encoded": "dmg +0.5%/rank two-hander",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Cruelty": {
+        "role": "throughput",
+        "why": "1% crit per point.",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Improved Rend": {
+        "role": "throughput",
+        "why": "Rend is applied every pull; Blood Craze/Enrage synergy.",
+        "encoded": "parsed dmg",
+        "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+      },
+      "Improved Battle Shout": {
+        "role": "raid-buff",
+        "why": "Brings improved battle shout to 4 others (a party shout: four melee in the warrior's group); worth classic-era: +3.5% per receiver (buff_value.py).",
+        "encoded": "utility 14.0% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "_doc": "Usage profiles. mode=leveling scores 'fraction of time per kill saved' with time split into fight / downtime / death (spec models may override the split per profile). mode=raid scores fractional DPS gain (+ mana_weight * sustain gain). miss = base miss chance per source type before hit talents; gear = which base-stat tier of the spec model to use. kind_weights: how much each kind of soft value (scorer/kinds.json: kite, stun, stick, move, range, stealth, avoid) counts in this scenario; multiplied by the spec model's playstyle weights.",
+  "leveling-st": {
+    "mode": "leveling",
+    "gear": "leveling",
+    "time": {"fight": 0.65, "downtime": 0.25, "death": 0.1},
+    "miss": {"type:melee": 0.05, "type:ranged": 0.05, "type:spell": 0.04, "pet": 0.05},
+    "note": "Single-target questing/grinding, mobs of your own level (+0/+1): 5% melee/ranged miss, 4% spell miss.",
+    "kind_weights": {
+      "kite": 1,
+      "stun": 1,
+      "stick": 1,
+      "move": 1,
+      "range": 1,
+      "stealth": 1,
+      "avoid": 1,
+      "resist": 0.25,
+      "escape": 0.2
+    },
+    "kind_note": "Solo play counts every kind; the spec model's playstyle weights decide which tools it actually uses. Resist (shorter stuns and fears on you) counts a quarter: mobs rarely control you. Escape (snare breaks, Vanish) counts a fifth: a bad pull is rare."
+  },
+  "leveling-aoe": {
+    "mode": "leveling",
+    "gear": "leveling",
+    "time": {"fight": 0.45, "downtime": 0.4, "death": 0.15},
+    "miss": {"type:melee": 0.05, "type:ranged": 0.05, "type:spell": 0.04, "pet": 0.05},
+    "note": "Pulling 5-10 mobs and killing them together (mage Blizzard/AE farming). Long drinks after each pack, real death risk.",
+    "kind_weights": {
+      "kite": 1,
+      "stun": 1,
+      "stick": 1,
+      "move": 1,
+      "range": 1,
+      "stealth": 1,
+      "avoid": 1,
+      "resist": 0.25,
+      "escape": 0.3
+    },
+    "kind_note": "Solo play counts every kind; the spec model's playstyle weights decide which tools it actually uses. Resist counts a quarter. Escape counts 0.3: pulls of several mobs go wrong more often."
+  },
+  "solo-60": {
+    "mode": "leveling",
+    "gear": "raid",
+    "time": {"fight": 0.7, "downtime": 0.2, "death": 0.1},
+    "miss": {"type:melee": 0.06, "type:ranged": 0.06, "type:spell": 0.05, "pet": 0.06},
+    "note": "Level-60 farming/questing in decent gear, mobs up to +2 levels.",
+    "kind_weights": {
+      "kite": 1,
+      "stun": 1,
+      "stick": 1,
+      "move": 1,
+      "range": 1,
+      "stealth": 1,
+      "avoid": 1,
+      "resist": 0.25,
+      "escape": 0.3
+    },
+    "kind_note": "Solo play counts every kind; the spec model's playstyle weights decide which tools it actually uses. Resist counts a quarter. Escape counts 0.3."
+  },
+  "raid-dps": {
+    "mode": "raid",
+    "gear": "raid",
+    "miss": {"type:melee": 0.08, "type:ranged": 0.08, "type:spell": 0.16, "pet": 0.08},
+    "mana_weight": 0.2,
+    "surv_weight": 0.001,
+    "note": "Level-63 raid bosses: 8% melee/ranged miss (yellow attacks, 300 weapon skill), 16% spell miss (1% floor ignored). Mana sustain worth 20% of its face value (5-minute fights). Forever (2026-09-27): raid DPS builds are judged on a boss-level training dummy with only your own buffs, the setting the raid-mode values are fitted to (raidsim/run.py), so only your own DPS counts: no utility for buffs brought to the raid (no_utility). Classic Era keeps the raid-team view (utility counts) so the community raid builds stay the calibration cases.",
+    "kind_weights": {
+      "kite": 0,
+      "stun": 0,
+      "stick": 0,
+      "move": 0,
+      "range": 1,
+      "stealth": 0,
+      "avoid": 0,
+      "resist": 0,
+      "escape": 0
+    },
+    "kind_note": "Raid DPS and healing: control, snares, movement, stealth and avoidance count nothing (the boss faces the tank, adds are the tank's); range keeps its raid-scoped positioning value. surv_weight 0.001 is only a tie-breaker between zero-value tier fillers: health beats parry (avoidance counts nothing here), and no real damage talent is ever outweighed.",
+    "no_utility": ["forever"]
+  },
+  "raid-dps-extwc": {
+    "mode": "raid",
+    "gear": "raid",
+    "miss": {"type:melee": 0.08, "type:ranged": 0.08, "type:spell": 0.16, "pet": 0.08},
+    "mana_weight": 0.2,
+    "surv_weight": 0.001,
+    "extra_effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "value": 0.1,
+        "games": ["classic-era"]
+      }
+    ],
+    "suppress_talents": [
+      {
+        "talent": "Winter's Chill",
+        "games": ["classic-era"]
+      }
+    ],
+    "note": "raid-dps with another mage keeping 5 stacks of Winter's Chill on the boss (+10% Frost crit for free); your own Winter's Chill is worthless. Forever: Winter's Chill is personal in the beta (\"your Ice Lance and Frostbolt\"), so this profile equals raid-dps there.",
+    "kind_weights": {
+      "kite": 0,
+      "stun": 0,
+      "stick": 0,
+      "move": 0,
+      "range": 1,
+      "stealth": 0,
+      "avoid": 0,
+      "resist": 0,
+      "escape": 0
+    },
+    "kind_note": "Raid DPS and healing: control, snares, movement, stealth and avoidance count nothing (the boss faces the tank, adds are the tank's); range keeps its raid-scoped positioning value. surv_weight 0.001 is only a tie-breaker between zero-value tier fillers: health beats parry (avoidance counts nothing here), and no real damage talent is ever outweighed."
+  },
+  "raid-heal": {
+    "mode": "heal",
+    "gear": "raid",
+    "miss": {"type:melee": 0.08, "type:ranged": 0.08, "type:spell": 0.0, "pet": 0.08},
+    "hps_weight": 0.6,
+    "mana_weight": 0.5,
+    "surv_weight": 0.001,
+    "note": "Raid healing over 5-minute fights: score = 0.6 x healing-throughput gain + 0.5 x mana-sustain gain. Heals cannot miss in Classic. Mana weighs almost as much as throughput because raid healers are mana-limited.",
+    "kind_weights": {
+      "kite": 0,
+      "stun": 0,
+      "stick": 0,
+      "move": 0,
+      "range": 1,
+      "stealth": 0,
+      "avoid": 0,
+      "resist": 0,
+      "escape": 0
+    },
+    "kind_note": "Raid DPS and healing: control, snares, movement, stealth and avoidance count nothing (the boss faces the tank, adds are the tank's); range keeps its raid-scoped positioning value. surv_weight 0.001 is only a tie-breaker between zero-value tier fillers (health over control)."
+  },
+  "raid-tank": {
+    "mode": "tank",
+    "gear": "raid",
+    "miss": {"type:melee": 0.08, "type:ranged": 0.08, "type:spell": 0.16, "pet": 0.08},
+    "threat_weight": 0.5,
+    "mit_weight": 0.5,
+    "mana_weight": 0.1,
+    "note": "Raid main tank: score = 0.5 x threat gain (damage of tank abilities x threat modifiers) + 0.5 x effective-health/avoidance gain + 0.1 x rage/mana sustain. Threat and mitigation weighted equally: Classic raids were threat-capped and crushing-blow-limited in equal measure.",
+    "kind_weights": {
+      "kite": 0,
+      "stun": 1,
+      "stick": 0,
+      "move": 1,
+      "range": 0,
+      "stealth": 0,
+      "avoid": 1,
+      "resist": 0.2,
+      "escape": 0
+    },
+    "kind_note": "Raid tanking: interrupts and stuns (adds), gap closers and avoidance count; kiting, snares, range and stealth do not. Resist counts a fifth (boss fears and stuns)."
+  },
+  "parse": {
+    "mode": "raid",
+    "gear": "raid",
+    "miss": {"type:melee": 0.08, "type:ranged": 0.08, "type:spell": 0.16, "pet": 0.08},
+    "mana_weight": 0.2,
+    "surv_weight": 0.001,
+    "no_utility": true,
+    "extra_effects": [
+      {
+        "channel": "crit",
+        "scope": ["school:frost"],
+        "value": 0.1,
+        "games": ["classic-era"],
+        "note": "Winter's Chill from another mage (5 stacks)"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:fire"],
+        "value": 0.15,
+        "games": ["classic-era"],
+        "note": "Improved Scorch kept up by another fire mage"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "value": 0.1,
+        "games": ["classic-era"],
+        "note": "Improved Shadow Bolt shared among the warlocks (about half uptime)"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "value": 0.05,
+        "games": ["classic-era"],
+        "note": "Trueshot Aura (+100 attack power) from another hunter"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "value": 0.03,
+        "games": ["classic-era"],
+        "note": "Trueshot Aura's attack power for melee"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "value": 0.01,
+        "games": ["forever"],
+        "note": "Trueshot Aura (+30 ranged attack power in the beta) from another hunter"
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:ranged"],
+        "value": 0.03,
+        "note": "Leader of the Pack from a feral druid"
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "value": 0.03,
+        "note": "Moonkin Aura from a balance druid"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "value": 0.1,
+        "games": ["classic-era"],
+        "note": "Sanctity Aura from another paladin"
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "value": 0.02,
+        "games": ["classic-era"],
+        "note": "Improved Battle Shout from another warrior"
+      }
+    ],
+    "suppress_talents": [
+      {
+        "talent": "Winter's Chill",
+        "games": ["classic-era"]
+      },
+      {
+        "talent": "Improved Scorch",
+        "games": ["classic-era"]
+      },
+      {
+        "talent": "Improved Shadow Bolt",
+        "games": ["classic-era"]
+      },
+      "Trueshot Aura",
+      "Leader of the Pack",
+      {
+        "talent": "Sanctity Aura",
+        "games": ["classic-era"]
+      },
+      {
+        "talent": "Improved Battle Shout",
+        "games": ["classic-era"]
+      }
+    ],
+    "note": "Parsing: personal DPS only. The raid supplies every buff and debuff, including the ones your own spec could bring (those talents are suppressed and their buff is external), no utility term. The Forever beta's Winter's Chill, Improved Scorch and Improved Shadow Bolt are personal effects, so they stay yours there. Raid sim environments: `raidsim/run.py --env environments` measures the same builds on a training dummy, in the raid (phase-1 gear, own buff off) and at the maximum (best gear preset, everything on).",
+    "kind_weights": {
+      "kite": 0,
+      "stun": 0,
+      "stick": 0,
+      "move": 0,
+      "range": 1,
+      "stealth": 0,
+      "avoid": 0,
+      "resist": 0,
+      "escape": 0
+    },
+    "kind_note": "Raid DPS and healing: control, snares, movement, stealth and avoidance count nothing (the boss faces the tank, adds are the tank's); range keeps its raid-scoped positioning value. surv_weight 0.001 is only a tie-breaker between zero-value tier fillers: health beats parry (avoidance counts nothing here), and no real damage talent is ever outweighed."
+  },
+  "pvp": {
+    "mode": "pvp",
+    "gear": "raid",
+    "effects_as": "solo-60",
+    "miss": {"type:melee": 0.05, "type:ranged": 0.05, "type:spell": 0.04, "pet": 0.05},
+    "pvp_weights": {"burst": 0.4, "surv": 0.5, "mana": 0.05, "utility": 1.5},
+    "kind_weights": {
+      "kite": 1,
+      "stun": 1,
+      "stick": 1,
+      "move": 1,
+      "range": 1,
+      "stealth": 1,
+      "avoid": 1,
+      "resist": 1,
+      "escape": 1
+    },
+    "kind_note": "PvP's control, escape, burst-cooldown and anti-healing values are explicit (utility tagged pvp in the manual files, tiers from the 2026-09-27 class audits), so the kind weights stay 1; the spec model's playstyle weights still apply (a melee does not kite).",
+    "note": "PvP at 60 against a player of your level: score = burst x damage (or healing) gain + surv x survival gain + mana x sustain gain + control, escape and stealth (the solo-60 values of those talents times the kind weights, plus values tagged pvp). Effects apply as in solo-60 (effects_as). Weights are assumptions tuned so the optimizer lands near the Classic community PvP builds (scorer/pvp_check.py); PvP builds stay hand drafts checked against it.",
+    "suppress_talents": [
+      {
+        "talent": "Subtlety",
+        "games": ["forever"],
+        "classes": ["druid"]
+      },
+      {
+        "talent": "Improved Tranquility",
+        "games": ["forever"],
+        "classes": ["druid"]
+      },
+      {
+        "talent": "Subtlety",
+        "games": ["classic-era"],
+        "classes": ["druid"]
+      },
+      {
+        "talent": "Improved Tranquility",
+        "games": ["classic-era"],
+        "classes": ["druid"]
+      },
+      {
+        "talent": "Monster Slaying",
+        "games": ["classic-era"],
+        "classes": ["hunter"]
+      },
+      {
+        "talent": "Wand Specialization",
+        "games": ["forever"],
+        "classes": ["mage"]
+      },
+      {
+        "talent": "Wand Specialization",
+        "games": ["classic-era"],
+        "classes": ["mage"]
+      },
+      {
+        "talent": "Improved Blessing of Might",
+        "games": ["classic-era"],
+        "classes": ["paladin"]
+      },
+      {
+        "talent": "Improved Righteous Fury",
+        "games": ["classic-era"],
+        "classes": ["paladin"]
+      },
+      {
+        "talent": "Spirit Tap",
+        "games": ["forever"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Shadow Affinity",
+        "games": ["forever"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Improved Fade",
+        "games": ["forever"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Spirit Tap",
+        "games": ["classic-era"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Shadow Affinity",
+        "games": ["classic-era"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Improved Fade",
+        "games": ["classic-era"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Silent Resolve",
+        "games": ["classic-era"],
+        "classes": ["priest"]
+      },
+      {
+        "talent": "Natural Grace",
+        "games": ["forever"],
+        "classes": ["shaman"]
+      },
+      {
+        "talent": "Improved Weapon Totems",
+        "games": ["classic-era"],
+        "classes": ["shaman"]
+      },
+      {
+        "talent": "Healing Grace",
+        "games": ["classic-era"],
+        "classes": ["shaman"]
+      },
+      {
+        "talent": "Soul Harvesting",
+        "games": ["forever"],
+        "classes": ["warlock"]
+      },
+      {
+        "talent": "Improved Drain Soul",
+        "games": ["classic-era"],
+        "classes": ["warlock"]
+      },
+      {
+        "talent": "Defiance",
+        "games": ["forever"],
+        "classes": ["warrior"]
+      },
+      {
+        "talent": "Improved Slam",
+        "games": ["classic-era"],
+        "classes": ["warrior"]
+      },
+      {
+        "talent": "Defiance",
+        "games": ["classic-era"],
+        "classes": ["warrior"]
+      }
+    ],
+    "pvp_note": "Weights tuned 2026-09-27 by scorer/pvp_check.py --grid on the ten Classic community PvP builds (coarse grid burst 0.4/0.8, surv 0.2/0.5, utility 0.7/1.5, mana 0.05): burst 0.4, surv 0.5, utility 1.5, mana 0.05 gave the best mean overlap (65%). Assumptions, not measurements: no simulator plays PvP."
+  }
+}

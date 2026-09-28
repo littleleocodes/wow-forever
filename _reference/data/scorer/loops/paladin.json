@@ -1,0 +1,168 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "prot-tank": {
+    "profiles": ["raid-tank"],
+    "reference": {"classic-era": "prot-tank"},
+    "purpose": "Shield tank: Consecration / Holy Shield / Seal of Righteousness threat, Blessing of Sanctuary, Reckoning swings; mana is the threat resource.",
+    "loop": ["Consecration", "Holy Shield", "Seal + Judgement of Righteousness (Wisdom for mana)", "Reckoning extra swings"],
+    "constraints": ["mana = threat: Blessing of Sanctuary/Judgement of Wisdom, Reckoning swings with Seal of Wisdom", "defense/armor talents are real mitigation but priced at their arithmetic"],
+    "talents": {
+      "Anticipation": {
+        "role": "safety",
+        "why": "'10 Defense skill, which is the main stat tanks desire... less valuable as your gear improves.'",
+        "encoded": "surv +0.6%/rank tank",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Toughness": {
+        "role": "safety",
+        "why": "'Toughness improves your physical damage mitigation.'",
+        "encoded": "surv +1.1%/rank (item-armor arithmetic)",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Improved Devotion Aura": {
+        "role": "safety",
+        "why": "'Devotion Aura is the most commonly used aura for tanking, so it's worth investing points into' - and the melee group shares it.",
+        "encoded": "surv +0.3%/rank + group utility",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Reckoning": {
+        "role": "throughput",
+        "why": "'Extra swings (especially with Flurry Axe) are always a welcome sight with Seal and Judgement of Wisdom' - threat and mana.",
+        "encoded": "dmg white per rank (tank)",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Divine Intellect": {
+        "role": "sustain",
+        "why": "+10% Intellect: mana for Consecration and Holy Shield, the tank's threat spells; Holy tier-1 path.",
+        "encoded": "parsed stat intellect",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Voice of Truth": {
+        "role": "utility",
+        "why": "6 s immunity to silence and interrupts (beta): spell uptime for a tank under interrupts; one point.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/paladin.json)"]
+      },
+      "Purifying Power": {
+        "role": "utility",
+        "why": "Cheaper Cleanse / Purify and -33% Exorcism / Holy Wrath cooldown (beta): dispels and undead / demon threat; two points on the Holy path.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/paladin.json)"]
+      }
+    }
+  },
+  "holy-heal": {
+    "profiles": ["raid-heal"],
+    "reference": {"classic-era": "holy-raid-healer"},
+    "purpose": "Flash of Light spam with Illumination mana; Blessing of Kings for the raid; the Protection/Retribution dips are raid buffs.",
+    "loop": ["Flash of Light", "Holy Light on big hits", "Holy Shock instant", "Divine Favor + Holy Light"],
+    "constraints": ["raid-buff talents (Improved Devotion Aura, Improved Blessing of Might, Blessing of Kings) are taken for the raid, not the healer's own numbers"],
+    "talents": {
+      "Improved Devotion Aura": {
+        "role": "utility",
+        "why": "The melee group's armor aura.",
+        "encoded": "group utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-healer-pve-spec-builds-talents"]
+      },
+      "Improved Blessing of Might": {
+        "role": "utility",
+        "why": "The raid's attack-power blessing.",
+        "encoded": "raid utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-healer-pve-spec-builds-talents"]
+      },
+      "Unyielding Faith": {
+        "role": "filler",
+        "why": "Holy tier-2 filler: fear/disorient resist.",
+        "encoded": "surv 0.5%/rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-healer-pve-spec-builds-talents"]
+      },
+      "Benediction": {
+        "role": "sustain",
+        "why": "Cheaper Seals/Judgements: small for a healer who rarely judges.",
+        "encoded": "parsed mana",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-healer-pve-spec-builds-talents"]
+      },
+      "Improved Judgement": {
+        "role": "utility",
+        "why": "Judgement cooldown -2 s (beta): keeps Judgement of Light / Wisdom up for the raid when the healer judges; Retribution tier-2 path of the Forever draft.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/paladin.json)"]
+      }
+    }
+  },
+  "ret-dps": {
+    "profiles": ["raid-dps", "leveling-st", "solo-60"],
+    "reference": {"classic-era": "ret-raid-dps / leveling-retribution"},
+    "purpose": "Two-hander with Seal of Command and Judgements; Vengeance after crits; mana limits how often you re-seal.",
+    "loop": ["Seal of Command", "Judgement of the Crusader once, then Judgement of Command", "Consecration when mana allows", "Hammer of Wrath execute"],
+    "constraints": ["Retribution tier 1 offers Improved Blessing of Might / Benediction / Deflection - the filler choice is a raid buff, mana or parry", "Pursuit of Justice and Repentance are leveling/PvP utility"],
+    "talents": {
+      "Deflection": {
+        "role": "filler",
+        "why": "Tier-1 Retribution filler (parry) in the raid build; some leveling survivability.",
+        "encoded": "surv leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Pursuit of Justice": {
+        "role": "utility",
+        "why": "+8% movement: travel while leveling; nothing on a boss.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Improved Retribution Aura": {
+        "role": "filler",
+        "why": "Tier filler; small aura damage.",
+        "encoded": "parsed aura damage (tank source only)",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Repentance": {
+        "role": "utility",
+        "why": "Humanoid CC while leveling / dungeons.",
+        "encoded": "utility leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Benediction": {
+        "role": "sustain",
+        "why": "Cheaper Seals and Judgements: re-sealing after every Judgement is the mana sink.",
+        "encoded": "parsed mana (spec mana_weight 0.4)",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Improved Blessing of Might": {
+        "role": "utility",
+        "why": "Raid attack power; small for you.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Improved Seal of the Crusader": {
+        "role": "throughput",
+        "why": "Judgement of the Crusader debuff feeds every Holy hit.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Conviction": {
+        "role": "throughput",
+        "why": "5% crit; low while leveling, core at 60.",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/paladin-dps-pve-spec-builds-talents"]
+      },
+      "Sanctity Aura": {
+        "role": "raid-buff",
+        "why": "Brings sanctity aura to 1 others (a party aura (+10% holy damage): one other retribution paladin in the group (Classic raids field few); computed from the tooltip because the simulator's paladin always runs its own aura option); worth classic-era: +2.6% per receiver (buff_value.py).",
+        "encoded": "utility 2.6% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Consecration": {
+        "role": "utility",
+        "why": "One point: an area threat and damage tool for trash and farming; the simulator's raid rotation casts it rarely, so the raid value is small.",
+        "encoded": "gated source consecration (Classic) + manual",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      },
+      "Divine Intellect": {
+        "role": "sustain",
+        "why": "+10% Intellect: mana for seals and judgements over a five-minute fight; Holy tier-1 path.",
+        "encoded": "parsed stat intellect",
+        "sources": ["https://www.wowhead.com/classic/guide/lights-bulwark-protection-paladin-tanking"]
+      }
+    }
+  }
+}

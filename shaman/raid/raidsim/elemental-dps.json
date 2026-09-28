@@ -1,0 +1,672 @@
+{
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "game": "forever",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "shaman/elemental",
+  "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+  "apl": "_reference/data/raidsim/apls/shaman/elemental-dps.apl.json",
+  "apl_sim": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus mana_spring_totem and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 6373,
+   "guardianElixirId": 20007,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "conjuredId": 12662
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 20000,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "date": "2026-09-28",
+ "results": [
+  {
+   "label": "elemental-raid-dps",
+   "talents": "550430130010304-255200311000102",
+   "split": "29/22/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10391": 45.85445,
+    "20554": 1.0,
+    "10605": 6.8395,
+    "529": 0.0932,
+    "15208": 1.0,
+    "10438": 2.0,
+    "29228": 10.6772
+   },
+   "casts": {
+    "item 12662": 1.0,
+    "Lightning Bolt": 46.94765,
+    "Berserking": 1.0,
+    "item 18820": 2.0,
+    "item 13444": 1.0,
+    "Chain Lightning": 6.8395,
+    "OtherActionManaGain": 2.0,
+    "Searing Totem": 2.0,
+    "Flame Shock": 10.6772
+   },
+   "dps": 396.3857098821853,
+   "dps_stdev": 26.803143561943468,
+   "threat": 397.54780737315645,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.018987199997399996,
+   "error": null,
+   "scorer": 0.6963489054124437,
+   "shares": {
+    "Lightning Bolt": 0.6905106475126959,
+    "Flame Shock": 0.16579634907890228,
+    "Chain Lightning": 0.08081790860218846,
+    "Attack": 0.06287509480621342
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7368,
+    "flame_shock": 0.1769,
+    "chain_lightning": 0.0862
+   },
+   "unmatched_share": 0.0629
+  },
+  {
+   "label": "opt-elemental-dps-raid-dps",
+   "talents": "5531301300103051-052-05305",
+   "split": "31/7/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "15208": 1.0,
+    "1238300": 9.0318,
+    "529": 1.19305,
+    "20554": 1.0,
+    "10391": 38.63385,
+    "10438": 2.0,
+    "29228": 9.93235,
+    "10605": 3.98035
+   },
+   "casts": {
+    "OtherActionManaGain": 2.0,
+    "item 12662": 1.0,
+    "Lightning Bolt": 40.8269,
+    "Lava Burst": 9.0318,
+    "Berserking": 1.0,
+    "item 18820": 2.0,
+    "item 13444": 1.0,
+    "Searing Totem": 2.0,
+    "Flame Shock": 9.93235,
+    "Chain Lightning": 3.98035
+   },
+   "dps": 396.7150515220294,
+   "dps_stdev": 25.095165502778233,
+   "threat": 399.19055065796226,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0289645999823,
+   "error": null,
+   "scorer": 0.7278029033452575,
+   "shares": {
+    "Lightning Bolt": 0.5834332816451154,
+    "Flame Shock": 0.1558144466974269,
+    "Lava Burst": 0.14958869162797153,
+    "Attack": 0.06571506166026697,
+    "Chain Lightning": 0.045448518369219267
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7435,
+    "flame_shock": 0.1986,
+    "chain_lightning": 0.0579
+   },
+   "unmatched_share": 0.2153
+  },
+  {
+   "label": "cand-elemental-dps-hand-2026-09-26",
+   "talents": "5500301302123051--053150001041",
+   "split": "31/0/20",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "529": 0.13205,
+    "15208": 1.0,
+    "10438": 2.0,
+    "1238300": 9.0806,
+    "10605": 5.77325,
+    "10391": 38.11985,
+    "29228": 10.0983,
+    "20554": 1.0
+   },
+   "casts": {
+    "item 13444": 1.0,
+    "Lightning Bolt": 39.2519,
+    "Searing Totem": 2.0,
+    "Lava Burst": 9.0806,
+    "item 12662": 1.0,
+    "Chain Lightning": 5.77325,
+    "Flame Shock": 10.0983,
+    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
+    "item 18820": 2.0
+   },
+   "dps": 381.5000451505672,
+   "dps_stdev": 23.0570944511144,
+   "threat": 366.0097838487339,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.020855499999999996,
+   "error": null,
+   "scorer": 0.6688439158921556,
+   "shares": {
+    "Lightning Bolt": 0.562947730756533,
+    "Flame Shock": 0.15625111029609995,
+    "Lava Burst": 0.14913834957766978,
+    "Chain Lightning": 0.06634661231222318,
+    "Attack": 0.06531619705747399
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7166,
+    "flame_shock": 0.1989,
+    "chain_lightning": 0.0845
+   },
+   "unmatched_share": 0.2145
+  },
+  {
+   "label": "cand-elemental-dps-r1",
+   "talents": "550430130010304-255200311000102",
+   "split": "29/22/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10391": 45.85445,
+    "15208": 1.0,
+    "20554": 1.0,
+    "10438": 2.0,
+    "29228": 10.6772,
+    "10605": 6.8395,
+    "529": 0.0932
+   },
+   "casts": {
+    "Lightning Bolt": 46.94765,
+    "item 18820": 2.0,
+    "Berserking": 1.0,
+    "item 13444": 1.0,
+    "item 12662": 1.0,
+    "Searing Totem": 2.0,
+    "OtherActionManaGain": 2.0,
+    "Flame Shock": 10.6772,
+    "Chain Lightning": 6.8395
+   },
+   "dps": 396.3857098821853,
+   "dps_stdev": 26.803143561943468,
+   "threat": 397.54780737315645,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.018987199997399996,
+   "error": null,
+   "scorer": 0.6963489054124437,
+   "shares": {
+    "Lightning Bolt": 0.6905106475126959,
+    "Flame Shock": 0.16579634907890228,
+    "Chain Lightning": 0.08081790860218846,
+    "Attack": 0.06287509480621342
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7368,
+    "flame_shock": 0.1769,
+    "chain_lightning": 0.0862
+   },
+   "unmatched_share": 0.0629
+  },
+  {
+   "label": "cand-elemental-dps-r2",
+   "talents": "550430130010304-055230301000102",
+   "split": "29/22/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "20554": 1.0,
+    "10391": 45.85445,
+    "10605": 6.8395,
+    "529": 0.0932,
+    "15208": 1.0,
+    "10438": 2.0,
+    "29228": 10.6772
+   },
+   "casts": {
+    "item 13444": 1.0,
+    "Berserking": 1.0,
+    "Lightning Bolt": 46.94765,
+    "OtherActionManaGain": 2.0,
+    "Chain Lightning": 6.8395,
+    "item 12662": 1.0,
+    "Searing Totem": 2.0,
+    "Flame Shock": 10.6772,
+    "item 18820": 2.0
+   },
+   "dps": 396.3857098821853,
+   "dps_stdev": 26.803143561943468,
+   "threat": 397.54780737315645,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.018987199997399996,
+   "error": null,
+   "scorer": 0.6963489054124437,
+   "shares": {
+    "Lightning Bolt": 0.6905106475126959,
+    "Flame Shock": 0.16579634907890228,
+    "Chain Lightning": 0.08081790860218846,
+    "Attack": 0.06287509480621342
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7368,
+    "flame_shock": 0.1769,
+    "chain_lightning": 0.0862
+   },
+   "unmatched_share": 0.0629
+  },
+  {
+   "label": "cand-elemental-dps-r3",
+   "talents": "553130130010304-055222301000002",
+   "split": "29/22/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10391": 45.8378,
+    "10438": 2.0,
+    "20554": 1.0,
+    "10605": 6.8085,
+    "529": 0.07505,
+    "15208": 1.0,
+    "29228": 10.59715
+   },
+   "casts": {
+    "OtherActionManaGain": 2.0,
+    "item 18820": 2.0,
+    "Lightning Bolt": 46.91285,
+    "Searing Totem": 2.0,
+    "Berserking": 1.0,
+    "Chain Lightning": 6.8085,
+    "Flame Shock": 10.59715,
+    "item 13444": 1.0,
+    "item 12662": 1.0
+   },
+   "dps": 395.452579252303,
+   "dps_stdev": 26.984106426295813,
+   "threat": 396.61813234903036,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.019362599983149993,
+   "error": null,
+   "scorer": 0.6963729054124437,
+   "shares": {
+    "Lightning Bolt": 0.6915148550881297,
+    "Flame Shock": 0.16492022182243557,
+    "Chain Lightning": 0.08050880375679459,
+    "Attack": 0.06305611933264017
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7381,
+    "flame_shock": 0.176,
+    "chain_lightning": 0.0859
+   },
+   "unmatched_share": 0.0631
+  },
+  {
+   "label": "cand-elemental-dps-r4",
+   "talents": "553130130010304-055100301050002",
+   "split": "29/22/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10438": 2.0,
+    "29228": 10.59715,
+    "20554": 1.0,
+    "10391": 45.8378,
+    "15208": 1.0,
+    "529": 0.07505,
+    "10605": 6.8085
+   },
+   "casts": {
+    "OtherActionManaGain": 2.0,
+    "Searing Totem": 2.0,
+    "Flame Shock": 10.59715,
+    "item 12662": 1.0,
+    "Berserking": 1.0,
+    "Lightning Bolt": 46.91285,
+    "item 18820": 2.0,
+    "Chain Lightning": 6.8085,
+    "item 13444": 1.0
+   },
+   "dps": 395.452579252303,
+   "dps_stdev": 26.984106426295813,
+   "threat": 396.61813234903036,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.019362599983149993,
+   "error": null,
+   "scorer": 0.6964729054124437,
+   "shares": {
+    "Lightning Bolt": 0.6915148550881297,
+    "Flame Shock": 0.1649202218224356,
+    "Chain Lightning": 0.0805088037567946,
+    "Attack": 0.06305611933264019
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7381,
+    "flame_shock": 0.176,
+    "chain_lightning": 0.0859
+   },
+   "unmatched_share": 0.0631
+  },
+  {
+   "label": "cand-elemental-dps-r5",
+   "talents": "35003013001-055001301050002-05305",
+   "split": "16/22/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10605": 8.05375,
+    "15208": 1.0,
+    "10438": 2.0,
+    "529": 0.0008,
+    "29228": 10.3527,
+    "10391": 45.41515,
+    "20554": 1.0
+   },
+   "casts": {
+    "item 18820": 2.0,
+    "Chain Lightning": 8.05375,
+    "OtherActionManaGain": 2.0,
+    "Lightning Bolt": 46.415949999999995,
+    "Searing Totem": 2.0,
+    "item 12662": 1.0,
+    "Flame Shock": 10.3527,
+    "Berserking": 1.0,
+    "item 13444": 1.0
+   },
+   "dps": 381.32205623157824,
+   "dps_stdev": 19.14908902383783,
+   "threat": 393.82205623157813,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0006874,
+   "error": null,
+   "scorer": 0.6728143740167304,
+   "shares": {
+    "Lightning Bolt": 0.6732173041243285,
+    "Flame Shock": 0.1659599484135391,
+    "Chain Lightning": 0.09561236039050866,
+    "Attack": 0.06521038707162383
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7202,
+    "flame_shock": 0.1775,
+    "chain_lightning": 0.1023
+   },
+   "unmatched_share": 0.0652
+  },
+  {
+   "label": "cand-elemental-dps-r6",
+   "talents": "553130130010305-055000001-05005",
+   "split": "30/11/10",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10605": 6.9971,
+    "20554": 1.0,
+    "29228": 10.3406,
+    "529": 0.07335,
+    "15208": 1.0,
+    "10438": 2.0,
+    "10391": 45.9557
+   },
+   "casts": {
+    "Chain Lightning": 6.9971,
+    "Berserking": 1.0,
+    "Flame Shock": 10.3406,
+    "OtherActionManaGain": 2.0,
+    "item 18820": 2.0,
+    "Lightning Bolt": 47.02905,
+    "Searing Totem": 2.0,
+    "item 12662": 1.0,
+    "item 13444": 1.0
+   },
+   "dps": 391.77150271859404,
+   "dps_stdev": 24.25090223931303,
+   "threat": 392.39955527774333,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.020191699985399988,
+   "error": null,
+   "scorer": 0.6824316914686623,
+   "shares": {
+    "Lightning Bolt": 0.6889022683658451,
+    "Flame Shock": 0.1623150733140154,
+    "Chain Lightning": 0.08205170512455665,
+    "Attack": 0.06673095319558284
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7382,
+    "flame_shock": 0.1739,
+    "chain_lightning": 0.0879
+   },
+   "unmatched_share": 0.0667
+  },
+  {
+   "label": "cand-elemental-dps-r7",
+   "talents": "5531301300103051-052-05305",
+   "split": "31/7/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "15208": 1.0,
+    "20554": 1.0,
+    "1238300": 9.0318,
+    "29228": 9.93235,
+    "529": 1.19305,
+    "10438": 2.0,
+    "10391": 38.63385,
+    "10605": 3.98035
+   },
+   "casts": {
+    "item 13444": 1.0,
+    "item 12662": 1.0,
+    "Lightning Bolt": 40.8269,
+    "Berserking": 1.0,
+    "Lava Burst": 9.0318,
+    "Flame Shock": 9.93235,
+    "item 18820": 2.0,
+    "Searing Totem": 2.0,
+    "OtherActionManaGain": 2.0,
+    "Chain Lightning": 3.98035
+   },
+   "dps": 396.7150515220294,
+   "dps_stdev": 25.095165502778233,
+   "threat": 399.19055065796226,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.0289645999823,
+   "error": null,
+   "scorer": 0.7278029033452575,
+   "shares": {
+    "Lightning Bolt": 0.5834332816451154,
+    "Flame Shock": 0.1558144466974269,
+    "Lava Burst": 0.14958869162797153,
+    "Attack": 0.06571506166026697,
+    "Chain Lightning": 0.045448518369219267
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7435,
+    "flame_shock": 0.1986,
+    "chain_lightning": 0.0579
+   },
+   "unmatched_share": 0.2153
+  },
+  {
+   "label": "sim preset: Level 60",
+   "talents": "5505301300103051--503352001",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "15208": 1.0,
+    "29228": 9.8888,
+    "20554": 1.0,
+    "529": 2.60005,
+    "10438": 2.0,
+    "1238300": 8.9639,
+    "10605": 3.7596,
+    "10391": 38.06985
+   },
+   "casts": {
+    "Lightning Bolt": 41.669900000000005,
+    "Flame Shock": 9.8888,
+    "Berserking": 1.0,
+    "item 13444": 1.0,
+    "Searing Totem": 2.0,
+    "Lava Burst": 8.9639,
+    "item 12662": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Chain Lightning": 3.7596,
+    "item 18820": 2.0
+   },
+   "dps": 379.3662492993367,
+   "dps_stdev": 23.16171657797064,
+   "threat": 326.7896329840256,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.04584719999980002,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.588469707949743,
+    "Flame Shock": 0.15542474461984768,
+    "Lava Burst": 0.14758284986637835,
+    "Attack": 0.06563816070930745,
+    "Chain Lightning": 0.042884536854723536
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7479,
+    "flame_shock": 0.1975,
+    "chain_lightning": 0.0545
+   },
+   "unmatched_share": 0.2132
+  },
+  {
+   "label": "sim preset: Elemental 31/6/14",
+   "talents": "2505301300123051-0500001-053050001",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "29228": 9.68185,
+    "10391": 35.2313,
+    "10605": 3.4591,
+    "529": 7.137,
+    "1238300": 8.79925,
+    "10438": 2.0,
+    "20554": 1.0,
+    "15208": 1.0
+   },
+   "casts": {
+    "Flame Shock": 9.68185,
+    "Lightning Bolt": 43.3683,
+    "item 12662": 1.0,
+    "Chain Lightning": 3.4591,
+    "item 13444": 1.0,
+    "Lava Burst": 8.79925,
+    "Searing Totem": 2.0,
+    "Berserking": 1.0,
+    "OtherActionManaGain": 2.0,
+    "item 18820": 2.0
+   },
+   "dps": 393.4463646009057,
+   "dps_stdev": 24.83189134246981,
+   "threat": 395.8682398541499,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.15790019999964977,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.5943919344749963,
+    "Flame Shock": 0.15344923048716372,
+    "Lava Burst": 0.14611774374709666,
+    "Attack": 0.06613302403161866,
+    "Chain Lightning": 0.03990806725912471
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7545,
+    "flame_shock": 0.1948,
+    "chain_lightning": 0.0507
+   },
+   "unmatched_share": 0.2123
+  },
+  {
+   "label": "sim preset: Stormcaller 28/23/0",
+   "talents": "150533130010303-055030030004102",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "529": 9.75405,
+    "10605": 3.9859,
+    "10391": 40.7192,
+    "29228": 9.8205,
+    "15208": 1.0,
+    "20554": 1.0,
+    "10438": 2.0
+   },
+   "casts": {
+    "OtherActionManaGain": 2.0,
+    "Lightning Bolt": 51.47325,
+    "Chain Lightning": 3.9859,
+    "item 13444": 1.0,
+    "item 18820": 2.0,
+    "item 12662": 1.0,
+    "Flame Shock": 9.8205,
+    "Berserking": 1.0,
+    "Searing Totem": 2.0
+   },
+   "dps": 380.2457503139887,
+   "dps_stdev": 26.802594133186833,
+   "threat": 381.47111915512124,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 2.2613995999989305,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.7286019369025416,
+    "Flame Shock": 0.15933489451121166,
+    "Attack": 0.06455975807069603,
+    "Chain Lightning": 0.04750341051555065
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7789,
+    "flame_shock": 0.1703,
+    "chain_lightning": 0.0508
+   },
+   "unmatched_share": 0.0646
+  }
+ ],
+ "deltas": {}
+}

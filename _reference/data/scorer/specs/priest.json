@@ -1,0 +1,223 @@
+{
+  "_doc": "Priest spec models. Healing model: sources are heals (tag heal + type:spell + school:holy); 'direct' = direct heals that can crit, 'hot' = Renew, 'instant' = instant casts (Mental Agility/Twin Disciplines). Shadow model: Mind Flay is a talent in both games so its damage arrives as a talent effect; the source represents the channel time it replaces. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
+  "models": {
+    "holy-heal": {
+      "note": "Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4%. Prayer of Mending/Penance/Binding Heal arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Power Word: Shield has a 4s cooldown in the beta client (Weakened Soul still limits one target per 15s) and can always overwrite a shield on a target without Weakened Soul; Renew can crit; Penance ranks at 30/40/50/60, Binding Heal 6 ranks, Prayer of Mending 3 ranks. Healer lab shares (2026-09-28, holy-raid-healer): greater_heal 69%, prayer_of_healing 18%, flash_heal 10%, renew 2%, shield 1%; 3% of the healing came from talent-taught spells the model carries as talent effects.",
+      "sources": [
+        {
+          "id": "greater_heal",
+          "share": 0.6942,
+          "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Greater Heal"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 40
+        },
+        {
+          "id": "flash_heal",
+          "share": 0.0959,
+          "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Flash Heal"],
+          "cast": 1.5,
+          "min_cast": 1.5,
+          "min_level": 20
+        },
+        {
+          "id": "renew",
+          "share": 0.0214,
+          "tags": ["type:spell", "heal", "school:holy", "hot", "instant", "ability:Renew"],
+          "can_crit": false,
+          "min_level": 8
+        },
+        {
+          "id": "prayer_of_healing",
+          "share": 0.1762,
+          "tags": ["type:spell", "heal", "school:holy", "direct", "aoe", "ability:Prayer of Healing"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 30
+        },
+        {
+          "id": "shield",
+          "share": 0.0123,
+          "tags": ["type:spell", "heal", "school:holy", "instant", "absorb", "ability:Power Word: Shield"],
+          "can_crit": false,
+          "cooldown": 4,
+          "min_level": 6
+        },
+        {
+          "id": "heal",
+          "share": 0.0,
+          "tags": ["type:spell", "heal", "school:holy", "direct", "ability:Heal", "ability:Lesser Heal"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 16
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.04, "spirit": 0.0},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.5},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "heal": 1.0,
+        "direct": 0.6,
+        "ability:Greater Heal": 0.4,
+        "ability:Heal": 0.05,
+        "ability:Lesser Heal": 0.02,
+        "ability:Flash Heal": 0.2,
+        "ability:Renew": 0.15,
+        "instant": 0.2,
+        "ability:Prayer of Healing": 0.15,
+        "ability:Power Word: Shield": 0.05,
+        "ability:Penance": 0.05,
+        "ability:Prayer of Mending": 0.05,
+        "ability:Smite": 0.0,
+        "ability:Holy Fire": 0.0
+      },
+      "regen_share": 0.5,
+      "abs_dps_factor": 1.0
+    },
+    "shadow-dps": {
+      "note": "Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20. Priests drink a lot: downtime 35%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Word: Pain rank 8 762 over 18s (Classic 852, 20% per tick), Mind Blast rank 9 477-504, Mind Flay rank 6 390 over 3s (Classic 426), Devouring Plague cooldown 1 min, Vampiric Embrace 1 min cooldown, Smite rank 8 166-187 (Classic 384-429): the Shadow shares stand. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-shadow-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Holy Nova 33%, Shadow Word: Pain 31%, Mind Flay 17%, Mind Blast 9%, Wand 8%, Shadow Word: Death 2%, Devouring Plague 0%) and the leveling time split is fight 37% / drink 0% / eat 0% / other 0% / death 62% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, opt-shadow-dps-raid-dps in the ElliotWood/Forever simulator 40be98e): mind_flay 46%, swp 21%, mind_blast 20%, swd 10%, devouring_plague 2%; 0% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "swp",
+          "share": 0.2124,
+          "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Shadow Word: Pain"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.191},
+            "solo-60": {"share": 0.191},
+            "leveling-aoe": {"share": 0.313}
+          }
+        },
+        {
+          "id": "mind_blast",
+          "share": 0.1993,
+          "tags": ["type:spell", "school:shadow", "ability:Mind Blast"],
+          "cast": 1.5,
+          "min_cast": 1.5,
+          "cooldown": 8,
+          "min_level": 10,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.202},
+            "solo-60": {"share": 0.202},
+            "leveling-aoe": {"share": 0.089}
+          }
+        },
+        {
+          "id": "mind_flay",
+          "share": 0.4608,
+          "min_level": 20,
+          "tags": ["type:spell", "school:shadow", "ability:Mind Flay", "channel"],
+          "can_crit": false,
+          "game_overrides": {
+            "forever": {"can_crit": true}
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.44},
+            "solo-60": {"share": 0.44},
+            "leveling-aoe": {"share": 0.168}
+          },
+          "enabled_by": "Mind Flay",
+          "displaces": ["wand", "smite"],
+          "note": "Without the talent the channel time goes to wanding and Smite (not to the cooldown-bound Mind Blast): 2026-09-26."
+        },
+        {
+          "id": "wand",
+          "share": 0.0,
+          "min_level": 5,
+          "tags": ["ability:Wand", "ability:Wands", "white"],
+          "can_crit": false,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0},
+            "leveling-aoe": {"share": 0.08}
+          }
+        },
+        {
+          "id": "smite",
+          "share": 0.05,
+          "max_level": 19,
+          "tags": ["type:spell", "school:holy", "ability:Smite"],
+          "cast": 2.5,
+          "min_cast": 1.5
+        },
+        {
+          "id": "swd",
+          "share": 0.1042,
+          "min_level": 32,
+          "tags": ["type:spell", "school:shadow", "instant", "ability:Shadow Word: Death"],
+          "cooldown": 15,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.159},
+            "solo-60": {"share": 0.159},
+            "leveling-aoe": {"share": 0.022}
+          }
+        },
+        {
+          "id": "devouring_plague",
+          "share": 0.0233,
+          "min_level": 20,
+          "tags": ["type:spell", "school:shadow", "dot", "instant", "ability:Devouring Plague"],
+          "cooldown": 60,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.002},
+            "leveling-st": {"share": 0.008},
+            "solo-60": {"share": 0.008}
+          }
+        },
+        {
+          "id": "holy_nova",
+          "share": 0.0,
+          "min_level": 20,
+          "tags": ["type:spell", "school:holy", "instant", "aoe", "ability:Holy Nova"],
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.326}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.5},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:shadow": 0.95,
+        "instant": 0.3,
+        "ability:Shadow Word: Pain": 0.3,
+        "ability:Mind Blast": 0.35,
+        "ability:Mind Flay": 0.3,
+        "school:holy": 0.05
+      },
+      "regen_share": 0.3,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-st": {"fight": 0.947, "drink": 0.0, "eat": 0.006, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.947, "drink": 0.0, "eat": 0.006, "other": 0.0, "death": 0.048},
+        "leveling-aoe": {"fight": 0.368, "drink": 0.003, "eat": 0.004, "other": 0.0, "death": 0.625}
+      },
+      "mana_weight": {"raid-dps": 0.4},
+      "fight_coupling": {"leveling-aoe": 1.0}
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+ "id": "cand-aoe-r6",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Malediction",
+    5
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Demonic Energies",
+    1
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Fel Domination",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 5
+  },
+  {
+   "levels": "20-21",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 3
+  },
+  {
+   "levels": "25-26",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 2
+  },
+  {
+   "levels": "27",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  },
+  {
+   "levels": "28-29",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Demonology",
+   "talent": "Fel Domination",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "35",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "36-38",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "39-40",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 2
+  },
+  {
+   "levels": "41-45",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 5
+  },
+  {
+   "levels": "46",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 1
+  },
+  {
+   "levels": "47-51",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 5
+  },
+  {
+   "levels": "52-54",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 3
+  },
+  {
+   "levels": "55-59",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 6)"
+}

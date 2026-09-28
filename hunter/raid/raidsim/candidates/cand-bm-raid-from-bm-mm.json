@@ -1,0 +1,108 @@
+{
+ "id": "cand-bm-raid-from-bm-mm",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Barrage",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for bm-raid from bm-mm-raid in the dummy setting: 311.7 -> 468.5 DPS on a third seed.",
+ "search": {
+  "start": "bm-mm-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Improved Mend Pet -> Summon Hawk",
+    "gain_seed1": 0.47218338190150466,
+    "gain_seed2": 0.4693134145665323,
+    "split": "22/29/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Barrage -> Improved Stings",
+    "gain_seed1": 0.012153966809617556,
+    "gain_seed2": 0.012157838224056805,
+    "split": "22/29/0"
+   },
+   {
+    "round": 3,
+    "move": "1 point Improved Mend Pet -> Ferocity",
+    "gain_seed1": 0.006627408050654093,
+    "gain_seed2": 0.006566483042780069,
+    "split": "22/29/0"
+   },
+   {
+    "round": 4,
+    "move": "1 point Bestial Discipline -> Ferocity",
+    "gain_seed1": 0.003731606888355943,
+    "gain_seed2": 0.004073178203915395,
+    "split": "22/29/0"
+   }
+  ],
+  "dps_start": 311.7017082618579,
+  "dps_end": 468.49986718730753
+ }
+}

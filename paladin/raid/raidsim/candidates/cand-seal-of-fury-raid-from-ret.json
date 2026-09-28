@@ -1,0 +1,90 @@
+{
+ "id": "cand-seal-of-fury-raid-from-ret",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Improved Seals",
+    3
+   ],
+   [
+    "Reverence",
+    3
+   ],
+   [
+    "Divine Favor",
+    1
+   ]
+  ],
+  "Protection": [],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Instrument of Law",
+    2
+   ],
+   [
+    "Twist of Light",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for seal-of-fury-raid from ret-raid-dps in the dummy setting: 285.1 -> 285.1 DPS on a third seed.",
+ "search": {
+  "start": "ret-raid-dps",
+  "setting": "dummy",
+  "moves": [],
+  "dps_start": 285.13017643230995,
+  "dps_end": 285.13017643230995
+ }
+}

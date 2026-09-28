@@ -1,0 +1,56 @@
+{
+ "class": "paladin",
+ "spec": "ret-dps",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/retribution_paladin/gear_sets/p1_plate_2h.gear.json",
+  "gear_max": "ui/retribution_paladin/gear_sets/p1_plate_2h.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "ret-raid-dps",
+   "split": "11/0/40",
+   "ours": true,
+   "dps": {
+    "dummy": 213.00564860029678,
+    "max": 660.6948708360586,
+    "max60": 671.1137105250996,
+    "raid": 660.6948708360586
+   }
+  },
+  {
+   "label": "sim preset: P4/P5 Ret",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 224.3625856985106,
+    "max": 710.1341331677306,
+    "max60": 732.7077589214023,
+    "raid": 710.1341331677306
+   }
+  }
+ ]
+}

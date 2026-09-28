@@ -1,0 +1,88 @@
+{
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "elemental_shaman",
+  "gear": "ui/elemental_shaman/gear_sets/phase_1.gear.json",
+  "apl": "ui/elemental_shaman/apls/default.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfFirepower",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "elemental-raid-dps",
+   "talents": "550031050302151--05105301005",
+   "split": "31/0/20",
+   "ours": true,
+   "dps": 729.903025606699,
+   "dps_stdev": 53.66574599756547,
+   "threat": 709.7839557807287,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 1.878583333333333,
+   "error": null,
+   "scorer": 0.970596038855653,
+   "shares": {
+    "Lightning Bolt": 0.6694780200512498,
+    "Chain Lightning": 0.23657168720028535,
+    "Attack": 0.07375645882246512,
+    "Earth Shock": 0.020193833925999834
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7228,
+    "chain_lightning": 0.2554,
+    "earth_shock": 0.0218
+   },
+   "unmatched_share": 0.0738
+  },
+  {
+   "label": "sim preset: Level 60",
+   "talents": "050331552000151--50105301005",
+   "split": "",
+   "ours": false,
+   "dps": 699.3108227153527,
+   "dps_stdev": 56.05010880256111,
+   "threat": 679.8516464039802,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 4.8670833333333325,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.6765415214360964,
+    "Chain Lightning": 0.22651569080293493,
+    "Attack": 0.07586554999714522,
+    "Earth Shock": 0.021077237763823448
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7321,
+    "chain_lightning": 0.2451,
+    "earth_shock": 0.0228
+   },
+   "unmatched_share": 0.0759
+  }
+ ],
+ "deltas": {}
+}

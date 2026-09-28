@@ -1,0 +1,170 @@
+{
+ "dummy": {
+  "class": "hunter",
+  "spec": "mm-lonewolf-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
+  "builds": [
+   {
+    "label": "mm-lone-wolf-raid",
+    "talents": "5-3053552011523051-5"
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if time to the next auto attack > 1s and time until Aimed Shot is ready \u2265 1 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.032939897200302326,
+    "gain_seed2": 0.03290166960931584,
+    "candidates": 162,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop 'mana % \u2265 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5 and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.024332395496946102,
+    "gain_seed2": 0.02386001789445613,
+    "candidates": 125,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.006760826187320879,
+    "gain_seed2": 0.007212319366884934,
+    "candidates": 121,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5: cast Serpent Sting",
+    "gain_seed1": 0.001896000789810337,
+    "gain_seed2": 0.0015369839809746821,
+    "candidates": 125,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire",
+    "gain_seed1": 0.006229168960944165,
+    "gain_seed2": 0.0054318682355090075,
+    "candidates": 132,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "mm-lone-wolf-raid": {
+     "before": 387.67580522196266,
+     "after": 424.01295889590415,
+     "base": 387.67580522196266,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 12.988527358968698,
+     "oom_after": 13.782800212672207
+    },
+    "sim preset: Marksmanship": {
+     "before": 315.0933228214749,
+     "after": 338.932713720947,
+     "base": 315.0933228214749,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 13.140384196074194,
+     "oom_after": 13.867516359852495
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ },
+ "raid": {
+  "class": "hunter",
+  "spec": "mm-lonewolf-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
+  "builds": [
+   {
+    "label": "mm-lone-wolf-raid",
+    "talents": "5-3053552011523051-5"
+   },
+   {
+    "label": "sim preset: Marksmanship",
+    "talents": "5023000501-0050550501503051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.01699479943681803,
+    "gain_seed2": 0.017292322071878363,
+    "candidates": 162,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire",
+    "gain_seed1": 0.003403745900803612,
+    "gain_seed2": 0.00463175047324782,
+    "candidates": 136,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready \u2265 1 and time until Multi-Shot is ready \u2265 1: cast Sniper Shot",
+    "gain_seed1": 0.004034912093936693,
+    "gain_seed2": 0.0029217743828189313,
+    "candidates": 133,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if time to the next auto attack > 0.5s: cast Multi-Shot",
+    "gain_seed1": 0.001649929497847591,
+    "gain_seed2": 0.0021761482528681597,
+    "candidates": 130,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "mm-lone-wolf-raid": {
+     "before": 741.4989224242884,
+     "after": 761.6916563813287,
+     "base": 741.4989224242884,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Marksmanship": {
+     "before": 602.4444709303774,
+     "after": 618.8114024068801,
+     "base": 602.4444709303774,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 2
+ }
+}

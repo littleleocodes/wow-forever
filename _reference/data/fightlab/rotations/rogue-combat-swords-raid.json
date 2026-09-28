@@ -1,0 +1,121 @@
+{
+ "veto": {
+  "Cheap Shot": {
+   "off": true
+  },
+  "Slice and Dice": {
+   "off": true
+  },
+  "Kidney Shot": {
+   "off": true
+  },
+  "Kick": {
+   "off": true
+  }
+ },
+ "eat_below": 0.4,
+ "class": "rogue",
+ "spec": "combat-swords-raid",
+ "build": "leveling-combat-swords",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-28",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "never cast Cheap Shot",
+   "rule": [
+    "off",
+    "Cheap Shot",
+    true
+   ],
+   "gain_seed1": 0.0865261025071129,
+   "gain_seed2": 0.08877090594781412
+  },
+  {
+   "round": 2,
+   "change": "eat below 40% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.4
+   ],
+   "gain_seed1": 0.047349565606645716,
+   "gain_seed2": 0.04318587236931726
+  },
+  {
+   "round": 3,
+   "change": "never cast Slice and Dice",
+   "rule": [
+    "off",
+    "Slice and Dice",
+    true
+   ],
+   "gain_seed1": 0.010238885575549417,
+   "gain_seed2": 0.015021098715256476
+  },
+  {
+   "round": 4,
+   "change": "never cast Kidney Shot",
+   "rule": [
+    "off",
+    "Kidney Shot",
+    true
+   ],
+   "gain_seed1": 0.010988175975258363,
+   "gain_seed2": 0.011811586667656249
+  },
+  {
+   "round": 5,
+   "change": "never cast Kick",
+   "rule": [
+    "off",
+    "Kick",
+    true
+   ],
+   "gain_seed1": 0.003564278371415819,
+   "gain_seed2": 0.009017277756993902
+  }
+ ],
+ "weighted_before": 30.454204499443648,
+ "weighted_after": 25.61693000864114,
+ "per_level": {
+  "20": {
+   "before": 19.198185893715245,
+   "after": 18.697366666564708,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 26.99891908550654,
+   "after": 22.405666666547923,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 32.531460319755716,
+   "after": 26.63395052204177,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 32.72461042731604,
+   "after": 27.127553757093605,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 32.657011254886626,
+   "after": 27.592215994402416,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

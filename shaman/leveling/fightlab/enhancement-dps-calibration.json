@@ -1,0 +1,396 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "profile": "leveling-aoe",
+ "levels": [
+  40,
+  60
+ ],
+ "fights": 1500,
+ "builds": [
+  "opt-enhancement-dps-leveling-aoe",
+  "F:\\wow-forever\\shaman\\leveling\\fightlab\\candidates\\cand-aoe-r1.json",
+  "F:\\wow-forever\\shaman\\leveling\\fightlab\\candidates\\cand-aoe-r2.json",
+  "F:\\wow-forever\\shaman\\leveling\\fightlab\\candidates\\cand-aoe-r3.json",
+  "F:\\wow-forever\\shaman\\leveling\\fightlab\\candidates\\cand-aoe-r4.json"
+ ],
+ "shares": {
+  "Melee": 0.397324633074112,
+  "Windfury": 0.2519591718024577,
+  "Stormstrike": 0.13267369605774734,
+  "Lightning Shield": 0.0879679547528677,
+  "Searing Totem": 0.08160990563123484,
+  "Chain Lightning": 0.0438172143220122,
+  "Flame Shock": 0.004282926196696968,
+  "Lightning Bolt": 0.0003644981628712165
+ },
+ "time_split": {
+  "fight": 0.659,
+  "drink": 0.008,
+  "eat": 0.01,
+  "other": 0.0,
+  "death": 0.323
+ },
+ "talents": [
+  {
+   "talent": "Stormstrike",
+   "sim": 2.138114583994719,
+   "ev_before": 1.5288160455663216,
+   "ev_after": 1.5506519157352465,
+   "scale": 15.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.3463567955792949,
+     "ev": 1.5299459888938116
+    },
+    {
+     "level": 60,
+     "sim": 3.9298723724101436,
+     "ev": 1.5713578425766812
+    }
+   ]
+  },
+  {
+   "talent": "Totemic Focus",
+   "sim": 0.8259378821980957,
+   "ev_before": 0.0007742441707817593,
+   "ev_after": 0.0012993974288283976,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.03867125274163508,
+     "ev": 0.001416383118139259
+    },
+    {
+     "level": 60,
+     "sim": 1.6905470171378265,
+     "ev": 0.0011824117395175364
+    }
+   ]
+  },
+  {
+   "talent": "Thundering Strikes",
+   "sim": 0.06793237417032977,
+   "ev_before": 0.08368642439453133,
+   "ev_after": 0.08462483534849094,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.04067568490990236,
+     "ev": 0.08306783061481177
+    },
+    {
+     "level": 60,
+     "sim": 0.09518906343075717,
+     "ev": 0.08618184008217011
+    }
+   ]
+  },
+  {
+   "talent": "Mental Dexterity",
+   "sim": 0.065063576277301,
+   "ev_before": 0.09062277415266423,
+   "ev_after": 0.06590252289970511,
+   "scale": 0.7187580508179963,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.052523370913266004,
+     "ev": 0.06499237952714206
+    },
+    {
+     "level": 60,
+     "sim": 0.077603781641336,
+     "ev": 0.06681266627226816
+    }
+   ]
+  },
+  {
+   "talent": "Flurry",
+   "sim": 0.06188928993174816,
+   "ev_before": 0.07425561704804495,
+   "ev_after": 0.0745449519011269,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.049499274932686466,
+     "ev": 0.0713882546812556
+    },
+    {
+     "level": 60,
+     "sim": 0.07427930493080985,
+     "ev": 0.0777016491209982
+    }
+   ]
+  },
+  {
+   "talent": "Rage of the Farseer",
+   "sim": 0.050522420605503916,
+   "ev_before": 0.03982044789003046,
+   "ev_after": 0.05117478560701544,
+   "scale": 1.270058604888618,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03191108798528072,
+     "ev": 0.04920833382266793
+    },
+    {
+     "level": 60,
+     "sim": 0.06913375322572711,
+     "ev": 0.05314123739136294
+    }
+   ]
+  },
+  {
+   "talent": "Spirit Weapons",
+   "sim": 0.04587604289312757,
+   "ev_before": 0.012619839269624664,
+   "ev_after": 0.03826145617235208,
+   "scale": 3.8530424628406763,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.02544010910883401,
+     "ev": 0.037178608159181316
+    },
+    {
+     "level": 60,
+     "sim": 0.06631197667742113,
+     "ev": 0.03934430418552285
+    }
+   ]
+  },
+  {
+   "talent": "Toughness",
+   "sim": 0.033393952266730226,
+   "ev_before": 0.021600637221052266,
+   "ev_after": 0.02994659048031685,
+   "scale": 1.842468029819429,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.033656311238301755,
+     "ev": 0.029099063772060653
+    },
+    {
+     "level": 60,
+     "sim": 0.033131593295158704,
+     "ev": 0.03079411718857305
+    }
+   ]
+  },
+  {
+   "talent": "Anticipation",
+   "sim": 0.03334226365002602,
+   "ev_before": 0.015865895739065314,
+   "ev_after": 0.03307852553857797,
+   "scale": 2.7085758578032255,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03148866880606026,
+     "ev": 0.03214236107330739
+    },
+    {
+     "level": 60,
+     "sim": 0.03519585849399179,
+     "ev": 0.034014690003848554
+    }
+   ]
+  },
+  {
+   "talent": "Improved Reincarnation",
+   "sim": 0.03073791352714323,
+   "ev_before": 0.035527643873903864,
+   "ev_after": 0.03231694875509118,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.030002670815449783,
+     "ev": 0.029670508576356273
+    },
+    {
+     "level": 60,
+     "sim": 0.03147315623883668,
+     "ev": 0.034963388933826084
+    }
+   ]
+  },
+  {
+   "talent": "Elemental Weapons",
+   "sim": 0.03007654718913472,
+   "ev_before": 0.01711876153030098,
+   "ev_after": 0.029998401053793932,
+   "scale": 1.7322990288957953,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.02457914580491158,
+     "ev": 0.02942958742726114
+    },
+    {
+     "level": 60,
+     "sim": 0.03557394857335786,
+     "ev": 0.030567214680326724
+    }
+   ]
+  },
+  {
+   "talent": "Improved Stormstrike",
+   "sim": 0.028500568918329576,
+   "ev_before": 0.037856232690870815,
+   "ev_after": 0.0380852814723788,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.010596822016192903,
+     "ev": 0.03751765687936836
+    },
+    {
+     "level": 60,
+     "sim": 0.046404315820466245,
+     "ev": 0.03865290606538925
+    }
+   ]
+  },
+  {
+   "talent": "Tidal Focus",
+   "sim": 0.02429403932998145,
+   "ev_before": 0.05423502175455325,
+   "ev_after": 0.02429142713026646,
+   "scale": 0.07423041543612882,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.020189924777166697,
+     "ev": 0.023969341704334204
+    },
+    {
+     "level": 60,
+     "sim": 0.028398153882796196,
+     "ev": 0.02461351255619872
+    }
+   ]
+  },
+  {
+   "talent": "Mental Quickness",
+   "sim": 0.011656715033935656,
+   "ev_before": 0.0016808311286743284,
+   "ev_after": 0.0016694383832679474,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.007707418563933623,
+     "ev": 0.001621138199285145
+    },
+    {
+     "level": 60,
+     "sim": 0.01560601150393769,
+     "ev": 0.0017177385672507497
+    }
+   ]
+  },
+  {
+   "talent": "Improved Lightning Shield",
+   "sim": 0.010291718277074547,
+   "ev_before": 0.001554656650532473,
+   "ev_after": 0.0015518913389022404,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.010291718277074547,
+     "ev": 0.0015518913389022404
+    }
+   ]
+  },
+  {
+   "talent": "Improved Healing Wave",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Maelstrom Weapon",
+   "sim": -0.016412070449695282,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": -0.016412070449695282,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Ancestral Knowledge",
+   "sim": -0.03431240830506305,
+   "ev_before": 0.010875137887989519,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": -0.03431240830506305,
+     "ev": 0.0
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+  "class": "Paladin",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Paladins raid as Holy healers (Alliance only in Classic; Forever adds Undead paladins). Retribution DPS and Protection tanking are viable in dungeons and late raids but are not mainstream raid roles in Classic Era. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "holy-raid-healer",
+      "name": "Holy — Raid Healer (31/11/9)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "Holy to Holy Shock for Illumination, Divine Favor, Holy Power and Improved Blessing of Wisdom, then Blessing of Kings from Protection and Improved Blessing of Might from Retribution so the raid's blessings are covered. The Icy Veins/Wowhead standard.",
+      "allocation": {
+        "Holy": [["Divine Intellect", 5], ["Spiritual Focus", 5], ["Healing Light", 3], ["Improved Lay on Hands", 2], ["Unyielding Faith", 2], ["Illumination", 5], ["Improved Blessing of Wisdom", 2], ["Divine Favor", 1], ["Holy Power", 5], ["Holy Shock", 1]],
+        "Protection": [["Improved Devotion Aura", 5], ["Guardian's Favor", 2], ["Toughness", 3], ["Blessing of Kings", 1]],
+        "Retribution": [["Improved Blessing of Might", 5], ["Benediction", 4]]
+      },
+      "core": [
+        {"talent": "Illumination", "why": "Crit heals refund their mana — the engine of paladin healing."},
+        {"talent": "Divine Favor", "why": "Guaranteed crit Holy Light every 2 minutes (with Illumination, a free big heal)."},
+        {"talent": "Holy Power", "why": "+5% Holy crit."},
+        {"talent": "Healing Light", "why": "+12% Holy Light / Flash of Light."},
+        {"talent": "Divine Intellect", "why": "+10% Intellect: mana and crit."},
+        {"talent": "Spiritual Focus", "why": "70% pushback resistance on Flash of Light/Holy Light."},
+        {"talent": "Blessing of Kings", "why": "+10% all stats raid buff; one paladin must have it."},
+        {"talent": "Improved Blessing of Wisdom", "why": "+20% Wisdom for the casters."},
+        {"talent": "Improved Blessing of Might", "why": "+20% Might for the melee."},
+        {"talent": "Guardian's Favor", "why": "Shorter Blessing of Protection cooldown, longer Freedom."},
+        {"talent": "Holy Shock", "why": "Instant emergency heal (weak, but a 1-point instant)."}
+      ],
+      "flex": [
+        {"points": 2, "default": "Unyielding Faith", "alternatives": ["Lasting Judgement", "Consecration 1 + Improved Seal of Righteousness 1"], "why": "Fear/disorient resistance vs. utility; these are the 29th/30th Holy points."},
+        {"points": 2, "default": "Improved Lay on Hands", "alternatives": ["Consecration + Lasting Judgement"], "why": "Makes Lay on Hands a real tank cooldown (armor + shorter cooldown)."},
+        {"points": 4, "default": "Benediction", "alternatives": ["Toughness (to 5) + Deflection"], "why": "Pure filler: cheaper Seals/Judgements."},
+        {"points": 8, "default": "Improved Devotion Aura 5 + Toughness 3", "alternatives": ["Redoubt", "Precision"], "why": "Filler to reach Blessing of Kings."}
+      ],
+      "notes": [
+        "Flash of Light spam with Holy Light (Divine Favor) for big hits; Judgement of Light/Wisdom on the boss if a Ret paladin is not doing it.",
+        "If another paladin covers Kings and Might, move those 11+9 points into Improved Concentration Aura / Improved Hammer of Justice (PvP-friendly variant)."
+      ],
+      "sources": [
+        "https://www.icy-veins.com/wow-classic/holy-paladin-healer-pve-spec-builds-talents",
+        "https://www.wowhead.com/classic/guide/classes/paladin/healer-talent-builds-pve"
+      ]
+    },
+    {
+      "id": "ret-raid-dps",
+      "name": "Retribution — DPS (11/0/40)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Seal of Command two-hander DPS with Vengeance, Sanctity Aura and Repentance, Divine Strength/Intellect and Consecration from Holy. Brings Improved Blessing of Might, Sanctity Aura and Judgements to a melee group; personal DPS is mid-pack in Classic Era.",
+      "allocation": {
+        "Holy": [["Divine Strength", 5], ["Divine Intellect", 5], ["Consecration", 1]],
+        "Protection": [],
+        "Retribution": [["Improved Blessing of Might", 5], ["Benediction", 5], ["Improved Judgement", 2], ["Improved Seal of the Crusader", 3], ["Deflection", 5], ["Conviction", 5], ["Seal of Command", 1], ["Pursuit of Justice", 2], ["Improved Retribution Aura", 2], ["Two-Handed Weapon Specialization", 3], ["Sanctity Aura", 1], ["Vengeance", 5], ["Repentance", 1]]
+      },
+      "core": [
+        {"talent": "Seal of Command", "why": "Proc-based Holy damage on hits — the entire Ret damage model with a slow two-hander."},
+        {"talent": "Vengeance", "why": "+15% damage after a crit."},
+        {"talent": "Sanctity Aura", "why": "+10% Holy damage for the group."},
+        {"talent": "Conviction", "why": "+5% melee crit."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "+3% two-hander damage."},
+        {"talent": "Divine Strength", "why": "+10% Strength."},
+        {"talent": "Improved Seal of the Crusader", "why": "+15% to Judgement of the Crusader — the raid's Holy damage debuff."},
+        {"talent": "Improved Judgement", "why": "8s Judgement cooldown."},
+        {"talent": "Benediction", "why": "-15% Seal/Judgement mana."},
+        {"talent": "Repentance", "why": "Incapacitate on a 1-minute cooldown."},
+        {"talent": "Consecration", "why": "AoE damage/threat and free extra damage on single targets when mana allows."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Deflection", "alternatives": ["Vindication 3 + Eye for an Eye 2"], "why": "Filler; Deflection is survivability, the alternatives are PvP-only (bosses are immune to Vindication)."},
+        {"points": 2, "default": "Improved Retribution Aura", "alternatives": ["Pursuit of Justice (already 2/2)", "Eye for an Eye"], "why": "Reflect damage on the melee group."}
+      ],
+      "notes": [
+        "Seal of Command + Judgement of the Crusader (kept up by one paladin) with Consecration when mana allows; auto-attack does most of the work — a slow 3.6+ two-hander is required.",
+        "Consider 0/8/43 with Precision (+3% hit) only if hit is your problem and you can drop Divine Strength/Intellect."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/paladin/retribution/dps-talent-builds-pve"]
+    },
+    {
+      "id": "prot-tank",
+      "name": "Protection — Dungeon/AoE Tank (11/40/0)",
+      "role": "tank",
+      "content": "dungeon",
+      "tier": "situational",
+      "summary": "Holy Shield, Blessing of Sanctuary, Redoubt/Shield Specialization block chance and Improved Righteous Fury threat, with Consecration from Holy. Excellent AoE dungeon tank; raid tanking is limited by no taunt and mana.",
+      "allocation": {
+        "Holy": [["Divine Strength", 5], ["Divine Intellect", 5], ["Consecration", 1]],
+        "Protection": [["Improved Devotion Aura", 5], ["Redoubt", 5], ["Precision", 3], ["Toughness", 5], ["Improved Righteous Fury", 3], ["Shield Specialization", 3], ["Anticipation", 5], ["Blessing of Kings", 1], ["Blessing of Sanctuary", 1], ["Reckoning", 3], ["One-Handed Weapon Specialization", 5], ["Holy Shield", 1]],
+        "Retribution": []
+      },
+      "core": [
+        {"talent": "Holy Shield", "why": "+30% block chance and Holy damage on each block — threat and mitigation."},
+        {"talent": "Improved Righteous Fury", "why": "Righteous Fury +90% Holy threat instead of +60%."},
+        {"talent": "Blessing of Sanctuary", "why": "Damage reduction and Holy damage on block for the tank."},
+        {"talent": "Redoubt", "why": "+30% block chance after being crit; prerequisite for Shield Specialization."},
+        {"talent": "Shield Specialization", "why": "+30% block value."},
+        {"talent": "Anticipation", "why": "+10 Defense."},
+        {"talent": "Toughness", "why": "+10% armor."},
+        {"talent": "Consecration", "why": "AoE threat."},
+        {"talent": "Precision", "why": "+3% hit for threat."},
+        {"talent": "One-Handed Weapon Specialization", "why": "+10% one-hander damage."}
+      ],
+      "flex": [
+        {"points": 3, "default": "Reckoning", "alternatives": ["Improved Hammer of Justice", "Improved Concentration Aura"], "why": "Extra attacks after being crit; fun in dungeons."},
+        {"points": 5, "default": "Divine Strength", "alternatives": ["Spiritual Focus"], "why": "Tier-1 Holy filler on the way to Consecration."}
+      ],
+      "notes": [
+        "Consecration + Holy Shield + Retribution Aura/Blessing of Sanctuary reflect damage: pull big, hold everything.",
+        "Raid tanking as a paladin in Classic Era is a niche (no taunt); Warriors and Bears are the raid tanks."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/paladin/protection/tank-talent-builds-pve"]
+    },
+    {
+      "id": "pvp-shockadin",
+      "name": "Shockadin — Holy/Retribution (PvP)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "Holy Shock burst plus Illumination sustain, Unyielding Faith and Consecration, with Retribution for Improved Blessing of Might, Benediction, Improved Judgement, Improved Seal of the Crusader and Conviction. The classic Classic PvP paladin.",
+      "allocation": {
+        "Holy": [["Divine Strength", 3], ["Divine Intellect", 5], ["Spiritual Focus", 5], ["Healing Light", 3], ["Consecration", 1], ["Unyielding Faith", 2], ["Illumination", 5], ["Divine Favor", 1], ["Holy Power", 5], ["Holy Shock", 1]],
+        "Protection": [],
+        "Retribution": [["Improved Blessing of Might", 5], ["Benediction", 5], ["Improved Judgement", 2], ["Improved Seal of the Crusader", 3], ["Conviction", 5]]
+      },
+      "core": [
+        {"talent": "Holy Shock", "why": "Instant Holy damage or heal — the burst finisher."},
+        {"talent": "Divine Favor", "why": "Guaranteed crit Holy Shock/Holy Light."},
+        {"talent": "Holy Power", "why": "+5% Holy crit."},
+        {"talent": "Illumination", "why": "Mana back on crits."},
+        {"talent": "Unyielding Faith", "why": "Fear/disorient resistance."},
+        {"talent": "Improved Judgement", "why": "Judgement every 8s."},
+        {"talent": "Conviction", "why": "+5% melee crit."},
+        {"talent": "Consecration", "why": "Breaks stealth, AoE pressure."}
+      ],
+      "flex": [
+        {"points": 3, "default": "Divine Strength", "alternatives": ["Improved Lay on Hands", "Lasting Judgement"], "why": "Reach 30 points in Holy for Holy Shock."}
+      ],
+      "notes": [
+        "Reckoning-bomb builds (Protection-heavy) are the other classic paladin PvP option; this build is the all-rounder."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/paladin/healer-pvp-arena"]
+    },
+    {
+      "id": "leveling-retribution",
+      "name": "Leveling — Retribution (Seal of Command at 20)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Retribution from 10: Benediction/Improved Judgement early, Seal of Command at 20, Conviction, Two-Handed Weapon Specialization, Sanctity Aura, Vengeance at 39 and Repentance at 40, then Improved Blessing of Might and Holy for Divine Strength/Intellect/Consecration. Ends in the 11/0/40 Ret build.",
+      "allocation": {
+        "Holy": [["Divine Strength", 5], ["Divine Intellect", 5], ["Consecration", 1]],
+        "Protection": [],
+        "Retribution": [["Improved Blessing of Might", 5], ["Benediction", 5], ["Improved Judgement", 2], ["Improved Seal of the Crusader", 3], ["Deflection", 5], ["Conviction", 5], ["Seal of Command", 1], ["Pursuit of Justice", 2], ["Improved Retribution Aura", 2], ["Two-Handed Weapon Specialization", 3], ["Sanctity Aura", 1], ["Vengeance", 5], ["Repentance", 1]]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Retribution", "talent": "Benediction", "points": 5},
+        {"levels": "15-16", "tree": "Retribution", "talent": "Improved Judgement", "points": 2},
+        {"levels": "17-19", "tree": "Retribution", "talent": "Improved Seal of the Crusader", "points": 3},
+        {"levels": "20", "tree": "Retribution", "talent": "Seal of Command", "points": 1},
+        {"levels": "21-25", "tree": "Retribution", "talent": "Conviction", "points": 5},
+        {"levels": "26-27", "tree": "Retribution", "talent": "Pursuit of Justice", "points": 2},
+        {"levels": "28-29", "tree": "Retribution", "talent": "Improved Retribution Aura", "points": 2},
+        {"levels": "30-32", "tree": "Retribution", "talent": "Two-Handed Weapon Specialization", "points": 3},
+        {"levels": "33", "tree": "Retribution", "talent": "Sanctity Aura", "points": 1},
+        {"levels": "34", "tree": "Retribution", "talent": "Improved Blessing of Might", "points": 1},
+        {"levels": "35-39", "tree": "Retribution", "talent": "Vengeance", "points": 5},
+        {"levels": "40", "tree": "Retribution", "talent": "Repentance", "points": 1},
+        {"levels": "41-44", "tree": "Retribution", "talent": "Improved Blessing of Might", "points": 4},
+        {"levels": "45-49", "tree": "Retribution", "talent": "Deflection", "points": 5},
+        {"levels": "50-54", "tree": "Holy", "talent": "Divine Strength", "points": 5},
+        {"levels": "55-59", "tree": "Holy", "talent": "Divine Intellect", "points": 5},
+        {"levels": "60", "tree": "Holy", "talent": "Consecration", "points": 1}
+      ],
+      "core": [
+        {"talent": "Seal of Command", "why": "The leveling damage engine at 20 — get a slow two-hander."},
+        {"talent": "Conviction", "why": "Crit."},
+        {"talent": "Vengeance", "why": "+15% damage after crits at 39."},
+        {"talent": "Benediction", "why": "Mana efficiency for seals/judgements from level 10."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Benediction first", "alternatives": ["Improved Blessing of Might first"], "why": "Benediction keeps mana up early; Might is more damage."}
+      ],
+      "notes": [
+        "Seal of Command -> Judgement on cooldown -> auto-attack; heal with Holy Light between pulls, Consecration at 60 for multi-target."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/paladin/leveling-talents"]
+    }
+  ]
+}

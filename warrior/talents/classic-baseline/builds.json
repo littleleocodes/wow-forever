@@ -1,0 +1,310 @@
+{
+  "class": "Warrior",
+  "game": "classic-era",
+  "notes": "Classic Era (1.12-era talent trees) community-standard builds. Point allocations are validated by _reference/data/validate_builds.py against the Classic tree data. Flex points are marked; everything else is the consensus core.",
+  "builds": [
+    {
+      "id": "fury-dw-raid",
+      "name": "Fury — Dual Wield (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The standard Classic raid DPS build. Everything is bent toward Bloodthirst, Dual Wield Specialization, Flurry and Death Wish, with Arms taken only as far as Impale (crit damage) and Anger Management (sustained rage). Highest sustained damage once hit and weapon skill are handled by gear.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Improved Rend", 3],
+          ["Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Improved Battle Shout", 5],
+          ["Dual Wield Specialization", 5],
+          ["Improved Execute", 2],
+          ["Enrage", 5],
+          ["Death Wish", 1],
+          ["Flurry", 5],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Bloodthirst", "why": "Main rage dump; scales with attack power and heals on hit. The reason to be 34 deep in Fury."},
+        {"talent": "Dual Wield Specialization", "why": "+25% off-hand damage — the single biggest throughput talent for a dual-wielder."},
+        {"talent": "Flurry", "why": "30% haste after a crit; with raid crit levels it is up almost permanently."},
+        {"talent": "Cruelty", "why": "+5% crit feeds Flurry, Deep Wounds and Impale."},
+        {"talent": "Death Wish", "why": "+20% damage cooldown, also a fear break."},
+        {"talent": "Impale", "why": "+20% crit damage on abilities."},
+        {"talent": "Enrage", "why": "+25% damage after being crit; required for Flurry."},
+        {"talent": "Anger Management", "why": "1 rage / 3 sec keeps the rotation alive on low-rage pulls. Requires Tactical Mastery 5/5, which also makes stance dancing for Overpower/Whirlwind free."},
+        {"talent": "Deep Wounds", "why": "Bleed on every crit; requires Improved Rend 3/3 in Classic."},
+        {"talent": "Unbridled Wrath", "why": "Free rage on white hits; dual wield doubles the proc opportunities."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Improved Battle Shout",
+          "alternatives": ["Booming Voice", "Piercing Howl + Improved Cleave"],
+          "why": "Only one warrior per group needs Improved Battle Shout. Others can take Booming Voice or utility."
+        },
+        {
+          "points": 3,
+          "default": "Improved Heroic Strike",
+          "alternatives": ["Improved Overpower", "Improved Charge"],
+          "why": "Heroic Strike is the rage dump when rage-capped; the cost reduction is a real DPS gain in good gear."
+        },
+        {
+          "points": 2,
+          "default": "Improved Execute",
+          "alternatives": ["Improved Berserker Rage"],
+          "why": "Cheaper Executes in the sub-20% phase."
+        }
+      ],
+      "notes": ["Requires roughly 9% hit (with 300 weapon skill) before dual wield out-damages a two-hander; use the 2H variant until then.", "Stance dance: Battle Stance for Overpower after a dodge, Berserker Stance otherwise. Tactical Mastery makes this free."],
+      "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents", "https://www.wowhead.com/classic/guide/classes/warrior/fury/dps-talent-builds-pve"]
+    },
+    {
+      "id": "fury-2h-raid",
+      "name": "Fury — Two-Handed / Improved Slam (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Identical to the dual-wield build except Dual Wield Specialization is swapped for Improved Slam. Better than dual wield until you have the hit and weapon skill to make two weapons connect, and always strong for Horde with Windfury Totem.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Improved Rend", 3],
+          ["Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Improved Battle Shout", 5],
+          ["Improved Execute", 2],
+          ["Enrage", 5],
+          ["Improved Slam", 5],
+          ["Death Wish", 1],
+          ["Flurry", 5],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Improved Slam", "why": "Cuts Slam to a 1.0s cast so it fits between auto-attacks — the entire point of the 2H variant."},
+        {"talent": "Bloodthirst", "why": "Still the primary rage dump."},
+        {"talent": "Flurry", "why": "Haste on crit."},
+        {"talent": "Death Wish", "why": "Burst cooldown."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Improved Battle Shout",
+          "alternatives": ["Booming Voice", "Piercing Howl + Improved Cleave"],
+          "why": "Same as the dual-wield build."
+        }
+      ],
+      "notes": ["Slam must be timed immediately after a white swing so it does not reset the swing timer — a swing-timer addon is mandatory for this build."],
+      "sources": ["https://www.icy-veins.com/wow-classic/warrior-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "prot-raid-tank",
+      "name": "Protection — Raid Tank (11/5/35)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The threat-and-mitigation raid tank. Shield Slam, Defiance and Improved Sunder Armor carry threat; Shield Specialization, Anticipation, Toughness and Last Stand carry survival. Arms is taken to Tactical Mastery and Anger Management for stance dancing, Fury for Cruelty.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Deflection", 2],
+          ["Tactical Mastery", 5],
+          ["Anger Management", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5]
+        ],
+        "Protection": [
+          ["Shield Specialization", 5],
+          ["Anticipation", 5],
+          ["Improved Bloodrage", 2],
+          ["Toughness", 5],
+          ["Last Stand", 1],
+          ["Improved Shield Block", 1],
+          ["Defiance", 5],
+          ["Improved Sunder Armor", 3],
+          ["Improved Shield Wall", 1],
+          ["Concussion Blow", 1],
+          ["One-Handed Weapon Specialization", 5],
+          ["Shield Slam", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Defiance", "why": "+15% threat in Defensive Stance — the biggest single threat talent."},
+        {"talent": "Shield Slam", "why": "Highest-threat ability in the kit."},
+        {"talent": "Shield Specialization", "why": "+5% block and rage on block."},
+        {"talent": "Anticipation", "why": "+10 Defense: reduces crit/crushing exposure and adds avoidance."},
+        {"talent": "Last Stand", "why": "30% max-health emergency button."},
+        {"talent": "Improved Shield Block", "why": "One point is enough for the extra block charge; the duration ranks are marginal."},
+        {"talent": "Improved Sunder Armor", "why": "Cheaper Sunders = more threat per rage."},
+        {"talent": "One-Handed Weapon Specialization", "why": "+10% damage with one-handers — threat."},
+        {"talent": "Tactical Mastery", "why": "Charge/Berserker Rage/Intercept swaps without losing rage; unlocks Anger Management."},
+        {"talent": "Cruelty", "why": "+5% crit = more Heroic Strike/Revenge threat and Deep Wounds if taken."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Deflection",
+          "alternatives": ["Improved Heroic Strike (already 3/3)", "Improved Rend"],
+          "why": "Pure filler to reach Tactical Mastery."
+        },
+        {
+          "points": 2,
+          "default": "Improved Shield Wall + Concussion Blow",
+          "alternatives": ["Improved Revenge", "Improved Taunt", "Improved Disarm"],
+          "why": "Improved Revenge stun is wasted on bosses; take it for dungeon tanking instead."
+        },
+        {
+          "points": 5,
+          "default": "Toughness",
+          "alternatives": ["Iron Will (PvP)", "Improved Revenge 3 + Improved Taunt 2"],
+          "why": "10% armor is solid, but well-geared tanks sometimes move points to threat."
+        }
+      ],
+      "notes": ["In late Classic (AQ40/Naxx gear) many main tanks ran Fury-Prot or even 17/34/0 dual-wield in Defensive Stance for threat; this 11/5/35 build is the safe baseline for progression.", "Improved Shield Wall 1/2 vs 2/2 is a matter of how often Shield Wall is the plan."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/warrior/protection/tank-talent-builds-pve"]
+    },
+    {
+      "id": "arms-pvp",
+      "name": "Arms — Mortal Strike (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The classic Mortal Strike PvP warrior: healing debuff, Sweeping Strikes, Improved Hamstring root procs, Improved Charge/Intercept rage and Enrage/Piercing Howl from Fury.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Improved Rend", 3],
+          ["Improved Charge", 2],
+          ["Tactical Mastery", 5],
+          ["Improved Overpower", 2],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Two-Handed Weapon Specialization", 5],
+          ["Impale", 2],
+          ["Sweeping Strikes", 1],
+          ["Improved Hamstring", 3],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Improved Battle Shout", 1],
+          ["Enrage", 5]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Mortal Strike", "why": "-50% healing on the target and a hard-hitting instant."},
+        {"talent": "Improved Hamstring", "why": "15% chance to root for 5s — the PvP kill-setup talent."},
+        {"talent": "Tactical Mastery", "why": "Stance dance with rage: Charge -> Battle, Intercept -> Berserker, Defensive for Disarm."},
+        {"talent": "Improved Charge", "why": "Opening rage for an immediate Hamstring + Mortal Strike."},
+        {"talent": "Enrage", "why": "+25% damage after being crit — very frequent in PvP."},
+        {"talent": "Piercing Howl", "why": "AoE snare; the anti-kite tool."},
+        {"talent": "Sweeping Strikes", "why": "Cleaves onto pets/second targets; prerequisite for Mortal Strike."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "+5% damage with the two-hander."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Improved Heroic Strike",
+          "alternatives": ["Deflection", "Axe/Sword Specialization"],
+          "why": "Rage dump when rage-rich; Deflection for a more defensive feel."
+        },
+        {
+          "points": 4,
+          "default": "Blood Craze 3 + Improved Battle Shout 1",
+          "alternatives": ["Booming Voice", "Improved Cleave"],
+          "why": "Filler needed to reach tier 4 of Fury for Enrage."
+        }
+      ],
+      "notes": ["Weapon specialization is chosen by the weapon you actually have; Sword Spec (extra attacks) and Axe Spec (crit) are the usual picks and replace Improved Heroic Strike/Improved Overpower."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/warrior/fury/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-arms",
+      "name": "Leveling — Arms (Mortal Strike at 40)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Two-handed Arms is the standard Classic leveling path: Improved Rend/Deep Wounds early, Mortal Strike at 40, then Fury for Cruelty, Unbridled Wrath, Piercing Howl and Enrage. Ends at a full 31/20/0 PvP-ready build with no respec needed.",
+      "allocation": {
+        "Arms": [
+          ["Improved Rend", 3],
+          ["Improved Heroic Strike", 2],
+          ["Improved Charge", 2],
+          ["Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Impale", 2],
+          ["Two-Handed Weapon Specialization", 5],
+          ["Sweeping Strikes", 1],
+          ["Sword Specialization", 5],
+          ["Improved Hamstring", 1],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Piercing Howl", 1],
+          ["Improved Battle Shout", 4],
+          ["Enrage", 5]
+        ],
+        "Protection": []
+      },
+      "order": [
+        {"levels": "10-12", "tree": "Arms", "talent": "Improved Rend", "points": 3},
+        {"levels": "13-14", "tree": "Arms", "talent": "Improved Heroic Strike", "points": 2},
+        {"levels": "15-16", "tree": "Arms", "talent": "Improved Charge", "points": 2},
+        {"levels": "17-21", "tree": "Arms", "talent": "Tactical Mastery", "points": 5},
+        {"levels": "22", "tree": "Arms", "talent": "Anger Management", "points": 1},
+        {"levels": "23-25", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
+        {"levels": "26-27", "tree": "Arms", "talent": "Impale", "points": 2},
+        {"levels": "28-32", "tree": "Arms", "talent": "Two-Handed Weapon Specialization", "points": 5},
+        {"levels": "33", "tree": "Arms", "talent": "Sweeping Strikes", "points": 1},
+        {"levels": "34-38", "tree": "Arms", "talent": "Sword Specialization", "points": 5},
+        {"levels": "39", "tree": "Arms", "talent": "Improved Hamstring", "points": 1},
+        {"levels": "40", "tree": "Arms", "talent": "Mortal Strike", "points": 1},
+        {"levels": "41-45", "tree": "Fury", "talent": "Cruelty", "points": 5},
+        {"levels": "46-50", "tree": "Fury", "talent": "Unbridled Wrath", "points": 5},
+        {"levels": "51", "tree": "Fury", "talent": "Piercing Howl", "points": 1},
+        {"levels": "52-55", "tree": "Fury", "talent": "Improved Battle Shout", "points": 4},
+        {"levels": "56-60", "tree": "Fury", "talent": "Enrage", "points": 5}
+      ],
+      "core": [
+        {"talent": "Mortal Strike", "why": "Big instant hit at 40; the leveling milestone."},
+        {"talent": "Deep Wounds", "why": "Bleed on crit; excellent while Rend is your main opener."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "Flat 5% damage."},
+        {"talent": "Sweeping Strikes", "why": "Cleave on multi-pulls; needed for Mortal Strike."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Sword Specialization",
+          "alternatives": ["Axe Specialization", "Mace Specialization", "Polearm Specialization"],
+          "why": "Match whatever two-hander you are carrying."
+        }
+      ],
+      "notes": ["Rend -> Charge -> Heroic Strike/Overpower until 40; after Mortal Strike, MS on cooldown with Heroic Strike as the dump. Improved Overpower is skipped so Mortal Strike lands exactly at 40.", "Respec to 17/34/0 Fury at 60 for raiding once you have a second one-hander and ~9% hit."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/warrior/leveling-talents"]
+    }
+  ]
+}

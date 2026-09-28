@@ -1,0 +1,303 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value. Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent), avoid (harms the loop). 'encoded' says how the reason is expressed in effects/<game>/mage.manual.json; sources are the guides the reason comes from.",
+  "frost-aoe": {
+    "profiles": ["leveling-aoe"],
+    "reference": {"classic-era": "aoe-grinding-frost"},
+    "purpose": "Kill packs of 5-10 melee mobs at once: two Blizzards per Frost Nova with the pack snared the whole time, never taking melee hits.",
+    "loop": ["gather (mount, Ice Barrier against dazes, or pull and Ice Block until they stack)", "Frost Nova: 8s freeze on the clump", "Blink/run to max range", "Blizzard #1 (8s channel, Improved Blizzard chill snares the pack)", "Blizzard #2 (the Permafrost-extended chill still holds)", "Cone of Cold as they close (snare + damage)", "kite until Frost Nova is back (25s cooldown, 21s with Improved Frost Nova), Nova again, repeat", "Arcane Explosion / wand for the last slivers"],
+    "constraints": ["a single resist on a pack of 8 puts a mob in melee: hit is control, not DPS", "random freezes (Frostbite) scatter the clump and mobs drift out of Blizzard", "the Blizzard chill must outlast the gap between channels or the second Blizzard is cut short", "Improved Blizzard 3/3 (65%) can overwrite Cone of Cold's stronger snare; some guides stop at 2/3", "Frost Nova's 25s cooldown is the cycle clock: a 21s cooldown means the second Nova is up when the pack closes"],
+    "talents": {
+      "Improved Blizzard": {
+        "role": "enabler",
+        "why": "'The essential talent for this build': Blizzard kills the pack while its snare keeps the pack off you.",
+        "encoded": "dmg Blizzard +25%/rank and surv +10%/rank in leveling-aoe (Forever chill 45% vs Classic 65%: x0.7)",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/"]
+      },
+      "Permafrost": {
+        "role": "enabler",
+        "why": "'Of critical importance in order to make Improved Blizzard last enough for a second one to hit before the effect wears off.'",
+        "encoded": "dmg Blizzard +8%/rank and surv +5%/rank in leveling-aoe (Forever +33% duration on a 1.5s chill vs Classic +1s/rank on 2s: x0.6)",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Improved Frost Nova": {
+        "role": "control",
+        "why": "'Helpful to make Frost Nova usable more often, increasing the margin for error / resists.' The cycle (Nova 8s + run 2s + two 8s Blizzards + Cone) is ~24s; a 25s Nova cooldown leaves a gap with the pack closing, a 21s one does not.",
+        "encoded": "surv +10%/rank and dmg Blizzard +2%/rank in leveling-aoe (fewer melee hits, fewer cut Blizzards); leveling-st: surv +3%/rank for a second Nova per kite, plus the parsed cooldown cut",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://noobtoboss.com/wow-classic-mage-aoe-farming-guide/"]
+      },
+      "Elemental Precision": {
+        "role": "control",
+        "why": "'Of paramount importance for this build, as you will need to avoid having even a single resist in a pack of 8+ enemies.'",
+        "encoded": "parsed hit plus surv +3%/rank in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arctic Reach": {
+        "role": "control",
+        "why": "'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers.",
+        "encoded": "dmg aoe +3%/rank and surv +4%/rank in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/"]
+      },
+      "Cold Snap": {
+        "role": "safety",
+        "why": "'A second shot at fixing a pull that is going wrong' - a second Nova and Ice Block.",
+        "encoded": "surv +8% in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Ice Block": {
+        "role": "safety",
+        "why": "'Gather huge amounts of enemies easily by pulling and blocking while enemies gather around you. It can also save your life.'",
+        "encoded": "surv +15% and utility +2% in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Ice Barrier": {
+        "role": "safety",
+        "why": "'Run around gathering mobs on your fresh mount without being in danger of being dazed and dismounted'; an escape when running.",
+        "encoded": "surv +12% and utility +3% in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/"]
+      },
+      "Frost Warding": {
+        "role": "safety",
+        "why": "'Increases your Armor which helps reduce the damage you take when getting mobs in the perfect Frost Nova position.'",
+        "encoded": "surv +2%/rank in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arcane Resilience": {
+        "role": "safety",
+        "why": "'Further decrease your melee damage taken' while gathering.",
+        "encoded": "surv +3% in leveling-aoe",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Improved Cone of Cold": {
+        "role": "throughput",
+        "why": "Cone of Cold is cast every pack as the mobs close.",
+        "encoded": "parsed damage on the Cone of Cold source",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/"]
+      },
+      "Frost Channeling": {
+        "role": "sustain",
+        "why": "'A great Mana efficiency increase' on the Blizzard channel.",
+        "encoded": "parsed mana cost",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arcane Concentration": {
+        "role": "sustain",
+        "why": "Clearcasting saves whole Blizzards.",
+        "encoded": "parsed/manual mana",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arcane Meditation": {
+        "role": "sustain",
+        "why": "'What we are really looking towards': regen while channelling cuts the drink after each pack.",
+        "encoded": "parsed regen",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arcane Focus": {
+        "role": "filler",
+        "why": "Fewer Arcane Explosion resists on the cleanup; 'since you should be fighting enemies around your level 2 points are enough'. Tier-1 path to Arcane Concentration.",
+        "encoded": "parsed hit on Arcane",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Frostbite": {
+        "role": "avoid",
+        "why": "'Do NOT put points into this talent, as it will cause issues with being able to properly clump the mobs together' - random freezes scatter the pack out of Blizzard.",
+        "encoded": "dmg aoe -6%/rank and surv -3%/rank in leveling-aoe (single-target values unchanged)",
+        "sources": ["https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/", "https://noobtoboss.com/wow-classic-mage-aoe-farming-guide/"]
+      },
+      "Shatter": {
+        "role": "optional",
+        "why": "Not in Icy Veins' AoE build (the Frost points go to control); Warcraft Tavern's 7/0/44 takes it. The pack is only Frozen during the Nova's 8s, and Blizzard starts after the run to range, so roughly 15-20% of Blizzard ticks land on Frozen targets, not 50%.",
+        "encoded": "crit vs frozen x ~0.17 frozen share in leveling-aoe (Classic 1.7%/rank, Forever 2.9%/rank); Fingers of Frost keeps its Cone-of-Cold synergy",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/"]
+      },
+      "Arcane Subtlety": {
+        "role": "filler",
+        "why": "'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point.",
+        "encoded": "parsed (resistance reduction ~0)",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Wand Specialization": {
+        "role": "filler",
+        "why": "Arcane tier-1 filler of the Icy Veins AoE build; wands do nothing while farming packs.",
+        "encoded": "parsed wand dmg",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      }
+    }
+  },
+  "frost-leveling": {
+    "profiles": ["leveling-st", "solo-60"],
+    "reference": {"classic-era": "leveling-frost"},
+    "purpose": "Single-target questing: Frostbolt, Frost Nova when the mob reaches you, Frostbolt/Shatter crits while it is frozen, wand the last sliver; Ice Block/Ice Barrier for bad pulls.",
+    "loop": ["Frostbolt from max range", "Frost Nova when the mob arrives, step back", "Frostbolt (Shatter crit on the frozen mob)", "wand / Fire Blast finish"],
+    "constraints": ["Improved Frost Nova gives a second Nova for a two-mob pull or a runner", "Arcane points are mana: Clearcasting and Arcane Meditation decide how often you drink"],
+    "talents": {
+      "Improved Frost Nova": {
+        "role": "control",
+        "why": "Nova every 21s instead of 25s: a second freeze on multi-mob pulls and runners; Icy Veins takes it at 20-21 in the leveling build.",
+        "encoded": "surv +3%/rank in leveling-st/solo-60 plus the parsed cooldown cut",
+        "sources": ["https://www.icy-veins.com/wow-classic/frost-mage-leveling-talent-build-from-1-to-60"]
+      },
+      "Arcane Focus": {
+        "role": "filler",
+        "why": "Tier-1 path to Arcane Concentration; Arcane hit only matters for Arcane Explosion cleanup.",
+        "encoded": "parsed hit on Arcane",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Improved Arcane Explosion": {
+        "role": "utility",
+        "why": "Multi-mob cleanup and dungeon trash.",
+        "encoded": "manual small damage",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Arcane Meditation": {
+        "role": "sustain",
+        "why": "Regen while casting: fewer drinks.",
+        "encoded": "parsed regen",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Improved Frostbolt": {
+        "role": "throughput",
+        "why": "-0.5 s Frostbolt cast (beta). The fight lab's leveling loop casts one Frostbolt per pull before Ice Lance and Fire Blast finish the mob, so the leveling value is small; the raid model fits it at 20% of DPS.",
+        "encoded": "parsed cast_time (fight lab: small while leveling)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/mage.json)"]
+      }
+    }
+  },
+  "frost-raid": {
+    "profiles": ["raid-dps", "raid-dps-extwc"],
+    "reference": {"classic-era": "frost-winters-chill-raid / frost-arcane-power-raid"},
+    "purpose": "Frostbolt spam on fire-immune Molten Core / Blackwing Lair bosses; one mage keeps Winter's Chill up.",
+    "loop": ["Frostbolt", "Frostbolt", "Frostbolt (Arcane Power / Presence of Mind on cooldown in the 31/0/20 variant)"],
+    "constraints": ["'Since you are forced to go deep into the Frost tree anyway, there are a lot of preference points available' - the flagged Frost talents are preference points, not DPS"],
+    "talents": {
+      "Shatter": {
+        "role": "filler",
+        "why": "Bosses cannot be frozen; taken as preference points on the way to Winter's Chill (useful on trash and in PvP).",
+        "encoded": "0 in raid modes",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Improved Frost Nova": {
+        "role": "filler",
+        "why": "Tier-2 preference point; Nova is trash/PvP only in raids.",
+        "encoded": "0 in raid modes",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Ice Block": {
+        "role": "safety",
+        "why": "Survival on fire/AoE mechanics (Ragnaros, Baron Geddon); no DPS.",
+        "encoded": "surv only",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Cold Snap": {
+        "role": "safety",
+        "why": "Second Ice Block.",
+        "encoded": "surv/utility only",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Ice Barrier": {
+        "role": "safety",
+        "why": "Absorb and no pushback: a small casting-uptime gain and survival.",
+        "encoded": "surv + small damage",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Arcane Focus": {
+        "role": "filler",
+        "why": "Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt.",
+        "encoded": "parsed hit on Arcane",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Improved Arcane Explosion": {
+        "role": "utility",
+        "why": "Trash AoE.",
+        "encoded": "manual small damage",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Magic Absorption": {
+        "role": "filler",
+        "why": "Resistances and mana on resists: preference point.",
+        "encoded": "0",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Arcane Resilience": {
+        "role": "filler",
+        "why": "Armor: preference point.",
+        "encoded": "0 in raid modes",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Winter's Chill": {
+        "role": "raid-buff",
+        "why": "Brings winters chill to 4 others (a target debuff for frost spells: four other frost mages on the same boss (one mage brings it, the rest take Arcane Power)); worth classic-era: +7.0% per receiver (buff_value.py).",
+        "encoded": "utility 28.1% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Arcane Mind": {
+        "role": "sustain",
+        "why": "+10% Intellect (beta: also +100% Arcane crit damage): the mana pool behind an Arcane Power rotation; Arcane tier-5 path.",
+        "encoded": "parsed stat intellect",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/mage.json)"]
+      },
+      "Arcane Geometry": {
+        "role": "utility",
+        "why": "+6 yd Arcane spell range (beta): a positioning point; Arcane tier-1 filler on the way to Arcane Power.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/mage.json)"]
+      },
+      "Arcane Blast": {
+        "role": "throughput",
+        "why": "The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The simulator's frost rotation never casts it, so its measured value is nothing here.",
+        "encoded": "manual (not in the sim's rotation)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/mage.json)"]
+      },
+      "Improved Counterspell": {
+        "role": "utility",
+        "why": "Counterspell also silences for 4 s (beta): raid interrupt duty; an Arcane tier-3 filler.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/mage.json)"]
+      }
+    }
+  },
+  "fire-raid": {
+    "profiles": ["raid-dps"],
+    "reference": {"classic-era": "fire-raid"},
+    "purpose": "Fireball/Scorch with Ignite stacking across the raid's mages (AQ40/Naxxramas).",
+    "loop": ["Scorch to 5 stacks", "Fireball", "Fire Blast on the move"],
+    "constraints": ["Ignite is fed by every mage; Fire Power and Critical Mass are the core"],
+    "talents": {
+      "Flame Throwing": {
+        "role": "filler",
+        "why": "Tier filler on the way down Fire; range matters little in raids.",
+        "encoded": "0",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Pyroblast": {
+        "role": "filler",
+        "why": "One-point prerequisite-tier filler; the opener is rarely worth its cast time.",
+        "encoded": "0",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Burning Soul": {
+        "role": "utility",
+        "why": "Threat reduction and pushback resistance: taken with 2-3 points so Fire mages do not pull aggro.",
+        "encoded": "utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Arcane Focus": {
+        "role": "filler",
+        "why": "Tier-1 path to Arcane Concentration.",
+        "encoded": "parsed hit on Arcane",
+        "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+      },
+      "Improved Scorch": {
+        "role": "raid-buff",
+        "why": "Brings improved scorch to 4 others (a target debuff (+15% fire damage): four other fire casters on the boss; computed from the tooltip because the receiver's own rotation keeps the debuff up); worth classic-era: +15.0% per receiver (buff_value.py).",
+        "encoded": "utility 60.0% (classic-era) in raid-dps (buff_value.py)",
+        "sources": ["_reference/raid-buff-values.md"]
+      },
+      "Incinerate": {
+        "role": "throughput",
+        "why": "Classic: +2%/rank Fire Blast and Scorch crit, and Scorch crits feed Ignite; a Fire tier-2 point on the way down the tree.",
+        "encoded": "manual crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60"]
+      }
+    }
+  }
+}

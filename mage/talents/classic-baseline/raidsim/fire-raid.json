@@ -1,0 +1,80 @@
+{
+ "class": "mage",
+ "spec": "fire-raid",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "mage",
+  "gear": "ui/mage/gear_sets/p1.bis.gear.json",
+  "apl": "ui/mage/apls/p1.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own improved_scorch (its talent is under test)",
+  "consumables": {
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "fire-raid",
+   "talents": "230005230002-5052010123033051-003",
+   "split": "17/31/3",
+   "ours": true,
+   "dps": 1003.0884970455409,
+   "dps_stdev": 122.20005647639518,
+   "threat": 720.1802975700563,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.04513333333333334,
+   "error": null,
+   "scorer": 2.2005410715019758,
+   "shares": {
+    "Fireball": 0.6358103451476651,
+    "Ignite": 0.3048706405903448,
+    "Scorch": 0.05916104371243259,
+    "Frostbolt": 0.00015797054955746253
+   },
+   "source_shares": {
+    "fireball": 0.6359,
+    "ignite": 0.3049,
+    "scorch": 0.0592
+   },
+   "unmatched_share": 0.0002
+  },
+  {
+   "label": "sim preset: Frost DPS",
+   "talents": "230205021002--05353203102351001",
+   "split": "",
+   "ours": false,
+   "dps": 751.5659845771645,
+   "dps_stdev": 53.197349017824436,
+   "threat": 537.382691003746,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Frostbolt": 1.0
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  }
+ ],
+ "deltas": {}
+}

@@ -1,0 +1,222 @@
+{
+ "class": "druid",
+ "spec": "feral-cat-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "feral-cat-dps"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "feral_druid",
+  "gear": "ui/feral_druid/gear_sets/p1.bis.gear.json",
+  "apl": "ui/feral_druid/apls/feral.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own leader_of_the_pack (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfDistilledWisdom",
+   "food": "FoodGrilledSquid",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay",
+   "sapperExplosive": "SapperGoblinSapper"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Furor",
+   "sim": 0.3459351697051369,
+   "ev_before": 0.14047107543096257,
+   "ev_after": 0.14047107543096257,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Natural Weapons",
+   "sim": 0.09808487405216068,
+   "ev_before": 0.09390675474600331,
+   "ev_after": 0.09390675474600331,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Sharpened Claws",
+   "sim": 0.05737666254529884,
+   "ev_before": 0.056658275335767026,
+   "ev_after": 0.056658275335767026,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Leader of the Pack",
+   "sim": 0.027650888231275924,
+   "ev_before": 0.05301633330615171,
+   "ev_after": 0.05301633330615171,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Predatory Strikes",
+   "sim": 0.02646330683944308,
+   "ev_before": 0.025619697653780773,
+   "ev_after": 0.025619697653780773,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Improved Shred",
+   "sim": 0.025750951931608482,
+   "ev_before": 0.02391692301358405,
+   "ev_after": 0.02391692301358405,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Omen of Clarity",
+   "sim": 0.02512500200309905,
+   "ev_before": 0.023481402915047137,
+   "ev_after": 0.023481402915047137,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Heart of the Wild",
+   "sim": 0.01998359322668144,
+   "ev_before": 0.019664435640820516,
+   "ev_after": 0.019664435640820516,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Blood Frenzy",
+   "sim": 0.014109810318131797,
+   "ev_before": 0.02083882078607865,
+   "ev_after": 0.02083882078607865,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Natural Shapeshifter",
+   "sim": 0.010939193781808507,
+   "ev_before": 0.011441805608267732,
+   "ev_after": 0.011441805608267732,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Ferocity",
+   "sim": 0.0003407982541237121,
+   "ev_before": 2.315726580594603e-05,
+   "ev_after": 2.315726580594603e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Savage Fury",
+   "sim": 5.1245671020349584e-05,
+   "ev_before": 5.789517555581891e-05,
+   "ev_after": 5.789517555581891e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Feline Swiftness",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Improved Nature's Grasp",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Nature's Grasp",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Primal Fury",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  },
+  {
+   "talent": "Thick Hide",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "feral-cat-dps"
+   ]
+  }
+ ]
+}

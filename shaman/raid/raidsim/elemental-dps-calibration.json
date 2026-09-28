@@ -1,0 +1,605 @@
+{
+ "class": "shaman",
+ "spec": "elemental-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "elemental-raid-dps",
+  "opt-elemental-dps-raid-dps",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-hand-2026-09-26.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-preset-elemental-31-6-14.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r1.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r2.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r3.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r4.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r5.json",
+  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-elemental-dps-r6.json"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "shaman/elemental",
+  "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+  "apl": "_reference/data/raidsim/apls/shaman/elemental-dps.apl.json",
+  "apl_sim": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus mana_spring_totem and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 6373,
+   "guardianElixirId": 20007,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "conjuredId": 12662
+  },
+  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 120.0
+ },
+ "talents": [
+  {
+   "talent": "Elemental Alacrity",
+   "sim": 0.19333408310626082,
+   "ev_before": 0.15258313935716844,
+   "ev_after": 0.20106098261322908,
+   "scale": 1.297007312066853,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Mental Quickness",
+   "sim": 0.08927102452201512,
+   "ev_before": 0.09282881119566384,
+   "ev_after": 0.0898550048646981,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Elemental Fury",
+   "sim": 0.0741916673540261,
+   "ev_before": 0.0838330926562242,
+   "ev_after": 0.0810754509641972,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Tidal Focus",
+   "sim": 0.062476293495028465,
+   "ev_before": 0.0642077362457329,
+   "ev_after": 0.05939349896851859,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Thundering Strikes",
+   "sim": 0.03927320131516582,
+   "ev_before": 0.03770178881481147,
+   "ev_after": 0.03650940300331516,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Concussion",
+   "sim": 0.03669444358008274,
+   "ev_before": 0.04103203573032256,
+   "ev_after": 0.04000473731046006,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Call of Flame",
+   "sim": 0.03472167545608292,
+   "ev_before": 0.03853009175388166,
+   "ev_after": 0.03528137511361762,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Lightning Overload",
+   "sim": 0.031077698957549787,
+   "ev_before": 0.02902970930125173,
+   "ev_after": 0.028402028072151593,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Mindfulness",
+   "sim": 0.023724969198022004,
+   "ev_before": 0.012211881720430105,
+   "ev_after": 0.029798713990008028,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Call of Thunder",
+   "sim": 0.017322758567881708,
+   "ev_before": 0.01860637860232344,
+   "ev_after": 0.018164092023645828,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Lava Burst",
+   "sim": 0.01093186673369153,
+   "ev_before": 0.0007007576133000849,
+   "ev_after": 0.010966988431474093,
+   "scale": 16.352848097682,
+   "how": "fitted",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14"
+   ]
+  },
+  {
+   "talent": "Ancestral Knowledge",
+   "sim": 0.009651832497606783,
+   "ev_before": 0.01739689305387361,
+   "ev_after": 0.00713221559033529,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Shamanistic Focus",
+   "sim": 0.008919691367608569,
+   "ev_before": 0.05787038208327244,
+   "ev_after": 0.008958950925695049,
+   "scale": 0.19811624055728316,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Elemental Focus",
+   "sim": 0.008262668019001166,
+   "ev_before": 0.014043525498169881,
+   "ev_after": 0.005486516644318553,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Mana Tide Totem",
+   "sim": 0.006413453718502056,
+   "ev_before": 0.02648213640312612,
+   "ev_after": 0.007507812466171332,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Convection",
+   "sim": 0.003694026247306412,
+   "ev_before": 0.0233615915749434,
+   "ev_after": 0.0036940919605962116,
+   "scale": 0.47067412780597806,
+   "how": "fitted",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Earth's Grasp",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1"
+   ]
+  },
+  {
+   "talent": "Elemental Weapons",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1"
+   ]
+  },
+  {
+   "talent": "Guardian Totems",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4"
+   ]
+  },
+  {
+   "talent": "Improved Lightning Shield",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Stormstrike",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2"
+   ]
+  },
+  {
+   "talent": "Elemental Reach",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14"
+   ]
+  },
+  {
+   "talent": "Eye of the Storm",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Natural Grace",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Restorative Totems",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Water Shield",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14"
+   ]
+  },
+  {
+   "talent": "Mental Dexterity",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3"
+   ]
+  },
+  {
+   "talent": "Elemental Warding",
+   "sim": 0.0,
+   "ev_before": 1.4413213582558707e-05,
+   "ev_after": 1.4186833897815245e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Improved Ghost Wolf",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Toughness",
+   "sim": 0.0,
+   "ev_before": 6.110200995739572e-05,
+   "ev_after": 5.936618622846226e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r5"
+   ]
+  },
+  {
+   "talent": "Totemic Focus",
+   "sim": -0.00020812777983069845,
+   "ev_before": 0.001631306637987656,
+   "ev_after": 0.0018574903726312371,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-elemental-dps-hand-2026-09-26",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r5",
+    "cand-elemental-dps-r6"
+   ]
+  },
+  {
+   "talent": "Reverberation",
+   "sim": -0.002388535564388291,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "elemental-raid-dps",
+    "opt-elemental-dps-raid-dps",
+    "cand-elemental-dps-preset-elemental-31-6-14",
+    "cand-elemental-dps-r1",
+    "cand-elemental-dps-r2",
+    "cand-elemental-dps-r3",
+    "cand-elemental-dps-r4",
+    "cand-elemental-dps-r6"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": null,
+  "builds": {
+   "elemental-raid-dps": {
+    "dps": 397.52053551484016,
+    "surplus": 397.66644368420816,
+    "oom_seconds": 0.019013333332666665,
+    "deficit": 0.0003669109417838712
+   },
+   "opt-elemental-dps-raid-dps": {
+    "dps": 397.52053551484016,
+    "surplus": 397.66644368420816,
+    "oom_seconds": 0.019013333332666665,
+    "deficit": 0.0003669109417838712
+   },
+   "cand-elemental-dps-hand-2026-09-26": {
+    "dps": 381.559036814729,
+    "surplus": 381.93510271721397,
+    "oom_seconds": 0.01920266666666666,
+    "deficit": 0.0009846329908131946
+   },
+   "cand-elemental-dps-preset-elemental-31-6-14": {
+    "dps": 392.9088262254794,
+    "surplus": 396.85704355550934,
+    "oom_seconds": 0.15540266666599997,
+    "deficit": 0.00994871426410171
+   },
+   "cand-elemental-dps-r1": {
+    "dps": 397.52053551484016,
+    "surplus": 397.66644368420816,
+    "oom_seconds": 0.019013333332666665,
+    "deficit": 0.0003669109417838712
+   },
+   "cand-elemental-dps-r2": {
+    "dps": 397.52053551484016,
+    "surplus": 397.66644368420816,
+    "oom_seconds": 0.019013333332666665,
+    "deficit": 0.0003669109417838712
+   },
+   "cand-elemental-dps-r3": {
+    "dps": 396.3216770170999,
+    "surplus": 397.09890752794263,
+    "oom_seconds": 0.01975733331533333,
+    "deficit": 0.0019572718436352554
+   },
+   "cand-elemental-dps-r4": {
+    "dps": 396.3216770170999,
+    "surplus": 397.09890752794263,
+    "oom_seconds": 0.01975733331533333,
+    "deficit": 0.0019572718436352554
+   },
+   "cand-elemental-dps-r5": {
+    "dps": 381.32846284106716,
+    "surplus": 382.9314229127176,
+    "oom_seconds": 0.00036399999999999996,
+    "deficit": 0.004186023856328491
+   },
+   "cand-elemental-dps-r6": {
+    "dps": 392.5674211792666,
+    "surplus": 393.29217536974227,
+    "oom_seconds": 0.014678666651333331,
+    "deficit": 0.0018427882268298168
+   }
+  },
+  "removals": {}
+ }
+}

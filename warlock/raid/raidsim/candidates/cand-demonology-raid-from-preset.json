@@ -1,0 +1,111 @@
+{
+ "id": "cand-demonology-raid-from-preset",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Improved Sayaad",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Improved Felhunter",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for demonology-raid from sim preset: Demonic Pact 2/31/18 in the dummy setting: 603.8 -> 619.9 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Demonic Pact 2/31/18",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Improved Corruption -> Agonizing Flames",
+    "gain_seed1": 0.019901700706251413,
+    "gain_seed2": 0.020467194633275954,
+    "split": "3/31/17"
+   },
+   {
+    "round": 2,
+    "move": "1 point Suppression -> Agonizing Flames",
+    "gain_seed1": 0.005079318051011361,
+    "gain_seed2": 0.006114971044081763,
+    "split": "2/31/18"
+   }
+  ],
+  "dps_start": 603.7979436747503,
+  "dps_end": 619.9248368102496
+ }
+}

@@ -1,0 +1,250 @@
+{
+ "id": "cand-aoe-r2",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Suppression",
+    1
+   ],
+   [
+    "Malediction",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Improved Sayaad",
+    1
+   ],
+   [
+    "Fel Domination",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    3
+   ],
+   [
+    "Destructive Reach",
+    2
+   ],
+   [
+    "Aftermath",
+    5
+   ],
+   [
+    "Molten Skin",
+    4
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Conflagrate",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 1
+  },
+  {
+   "levels": "16-18",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 3
+  },
+  {
+   "levels": "19",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 2
+  },
+  {
+   "levels": "25-26",
+   "tree": "Destruction",
+   "talent": "Destructive Reach",
+   "points": 2
+  },
+  {
+   "levels": "27-30",
+   "tree": "Destruction",
+   "talent": "Molten Skin",
+   "points": 4
+  },
+  {
+   "levels": "31",
+   "tree": "Destruction",
+   "talent": "Aftermath",
+   "points": 1
+  },
+  {
+   "levels": "32",
+   "tree": "Destruction",
+   "talent": "Shadowburn",
+   "points": 1
+  },
+  {
+   "levels": "33-36",
+   "tree": "Destruction",
+   "talent": "Aftermath",
+   "points": 4
+  },
+  {
+   "levels": "37",
+   "tree": "Destruction",
+   "talent": "Conflagrate",
+   "points": 1
+  },
+  {
+   "levels": "38-40",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 3
+  },
+  {
+   "levels": "41-42",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 2
+  },
+  {
+   "levels": "43-44",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 2
+  },
+  {
+   "levels": "45-46",
+   "tree": "Demonology",
+   "talent": "Master Summoner",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 1
+  },
+  {
+   "levels": "48-49",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Demonology",
+   "talent": "Fel Domination",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Demonology",
+   "talent": "Improved Health Funnel",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Demonology",
+   "talent": "Improved Sayaad",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "56-58",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "59-60",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 2
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-26 (calibration round 2)"
+}

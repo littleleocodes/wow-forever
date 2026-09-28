@@ -1,0 +1,219 @@
+{
+ "id": "cand-aoe-r4",
+ "allocation": {
+  "Discipline": [],
+  "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    5
+   ],
+   [
+    "Holy Nova",
+    1
+   ],
+   [
+    "Blessed Recovery",
+    3
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Spirit Tap",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Holy",
+   "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "13-15",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 3
+  },
+  {
+   "levels": "16-17",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 2
+  },
+  {
+   "levels": "18-19",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "20-22",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "24-25",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "26-27",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 2
+  },
+  {
+   "levels": "28-32",
+   "tree": "Holy",
+   "talent": "Spell Warding",
+   "points": 5
+  },
+  {
+   "levels": "33",
+   "tree": "Holy",
+   "talent": "Holy Nova",
+   "points": 1
+  },
+  {
+   "levels": "34-35",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 2
+  },
+  {
+   "levels": "36-37",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Shadow",
+   "talent": "Devouring Contagion",
+   "points": 1
+  },
+  {
+   "levels": "42-45",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 4
+  },
+  {
+   "levels": "46-50",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 5
+  },
+  {
+   "levels": "51",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Holy",
+   "talent": "Blessed Recovery",
+   "points": 3
+  },
+  {
+   "levels": "55-57",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Shadow",
+   "talent": "Devouring Contagion",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 2
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-28 (calibration round 4)"
+}

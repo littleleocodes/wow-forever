@@ -1,0 +1,66 @@
+{
+ "raid": {
+  "class": "druid",
+  "spec": "feral-bear-tank",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": true,
+  "simulator_apl": "ui/specs/druid/feralbear/apls/default.apl.json",
+  "start": "ui\\specs\\druid\\feralbear\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "feral-bear-tank",
+    "talents": "05002-502003212303220055-054"
+   },
+   {
+    "label": "sim preset: Bear Tank 0/31/20",
+    "talents": "-5003232120132010501-0550325"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "threshold 25 -> 50: if rage \u2265 25: cast Maul",
+    "gain_seed1": 0.010015637643205899,
+    "gain_seed2": 0.008689213879581548,
+    "candidates": 255,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move down below 'if (stacks of Lacerate < 5 or time left on Lacerate \u2264 4.5s): cast Lacerate': cast Primal Bite",
+    "gain_seed1": 0.006484256481842587,
+    "gain_seed2": 0.006221536264368499,
+    "candidates": 258,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "feral-bear-tank": {
+     "before": 380.5005590378446,
+     "after": 383.64588197663926,
+     "base": 380.5005590378446,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Bear Tank 0/31/20": {
+     "before": 367.6514138558848,
+     "after": 363.5956713326937,
+     "base": 367.6514138558848,
+     "before_value": 1.0,
+     "after_value": 1.0,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 2
+ }
+}

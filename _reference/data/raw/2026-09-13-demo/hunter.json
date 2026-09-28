@@ -1,0 +1,1182 @@
+{
+  "slug": "hunter",
+  "name": "Hunter",
+  "source": "Talent trees observed in the WoW: Forever BlizzCon demo (2026-09-12), transcribed from demo footage and screenshots; per-talent evidence screenshots are hosted in the media bucket under talents/evidence/. Rank-1 tooltips only; damage, healing and mana numbers are those of the level-38 demo characters (the level-60 BlizzCon slides show higher values). Layout, names and rank counts cross-checked on 2026-09-14 against Wowhead's Forever calculator, talentsforever.com and wowforevertalents.com: identical on all 470 slots. Demo values may change before release.",
+  "captured": "2026-09-13",
+  "trees": [
+    {
+      "id": "beast-mastery",
+      "name": "Beast Mastery",
+      "icon": "ability_hunter_beasttaming",
+      "background": "HunterBeastMastery",
+      "talents": [
+        {
+          "id": "beast-mastery/deadly-aspects",
+          "row": 0,
+          "col": 1,
+          "name": "Deadly Aspects",
+          "icon": "spell_nature_ravenform",
+          "maxRank": 5,
+          "ranks": [
+            "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec.",
+            "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by 30% for 12 sec.",
+            "While Aspect of the Hawk is active, all normal ranged attacks have a 6% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by 30% for 12 sec.",
+            "While Aspect of the Hawk is active, all normal ranged attacks have a 8% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by 30% for 12 sec.",
+            "While Aspect of the Hawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "new",
+          "evidence": "hunter/01-hunter-beast-mastery-deadly-aspects.jpg"
+        },
+        {
+          "id": "beast-mastery/endurance-training",
+          "row": 0,
+          "col": 2,
+          "name": "Endurance Training",
+          "icon": "spell_nature_reincarnation",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the Health and Armor of your pets by 3%.",
+            "Increases the Health and Armor of your pets by 6%.",
+            "Increases the Health and Armor of your pets by 9%.",
+            "Increases the Health and Armor of your pets by 12%.",
+            "Increases the Health and Armor of your pets by 15%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the Health of your pets by 3%.",
+            "Increases the Health of your pets by 6%.",
+            "Increases the Health of your pets by 9%.",
+            "Increases the Health of your pets by 12%.",
+            "Increases the Health of your pets by 15%."
+          ],
+          "evidence": "hunter/02-hunter-beast-mastery-endurance-training.jpg"
+        },
+        {
+          "id": "beast-mastery/focused-fire",
+          "row": 1,
+          "col": 0,
+          "name": "Focused Fire",
+          "icon": "inv_weapon_crossbow_10",
+          "maxRank": 2,
+          "ranks": [
+            "Increases all damage you deal by 1% while your pet is active.",
+            "Increases all damage you deal by 2% while your pet is active."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/03-hunter-beast-mastery-focused-fire.jpg"
+        },
+        {
+          "id": "beast-mastery/improved-aspect-of-the-monkey",
+          "row": 1,
+          "col": 1,
+          "name": "Improved Aspect of the Monkey",
+          "icon": "ability_hunter_aspectofthemonkey",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 4%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 6%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability."
+          ],
+          "estimated": [
+            2,
+            3
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 5 → 3",
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the Dodge bonus of your Aspect of the Monkey by 1%.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 2%.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 3%.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 4%.",
+            "Increases the Dodge bonus of your Aspect of the Monkey by 5%."
+          ],
+          "evidence": "hunter/04-hunter-beast-mastery-improved-aspect-of-the-monkey.jpg"
+        },
+        {
+          "id": "beast-mastery/pathfinding",
+          "row": 1,
+          "col": 2,
+          "name": "Pathfinding",
+          "icon": "ability_mount_jungletiger",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%.",
+            "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Beast Mastery row 3, col 1"
+          ],
+          "evidence": "hunter/05-hunter-beast-mastery-pathfinding.jpg"
+        },
+        {
+          "id": "beast-mastery/improved-revive-pet",
+          "row": 1,
+          "col": 3,
+          "name": "Improved Revive Pet",
+          "icon": "ability_hunter_beastsoothe",
+          "maxRank": 2,
+          "ranks": [
+            "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%.",
+            "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
+          ],
+          "status": "same",
+          "evidence": "hunter/06-hunter-beast-mastery-improved-revive-pet.jpg"
+        },
+        {
+          "id": "beast-mastery/bestial-swiftness",
+          "row": 2,
+          "col": 1,
+          "name": "Bestial Swiftness",
+          "icon": "ability_druid_dash",
+          "maxRank": 1,
+          "ranks": [
+            "Increases the movement speed of your pets by 30%."
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the outdoor movement speed of your pets by 30%."
+          ],
+          "evidence": "hunter/07-hunter-beast-mastery-bestial-swiftness.jpg"
+        },
+        {
+          "id": "beast-mastery/unleashed-fury",
+          "row": 2,
+          "col": 2,
+          "name": "Unleashed Fury",
+          "icon": "ability_bullrush",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the damage done by your pets and hawks by 3%.",
+            "Increases the damage done by your pets and hawks by 6%.",
+            "Increases the damage done by your pets and hawks by 9%.",
+            "Increases the damage done by your pets and hawks by 12%.",
+            "Increases the damage done by your pets and hawks by 15%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the damage done by your pets by 4%.",
+            "Increases the damage done by your pets by 8%.",
+            "Increases the damage done by your pets by 12%.",
+            "Increases the damage done by your pets by 16%.",
+            "Increases the damage done by your pets by 20%."
+          ],
+          "evidence": "hunter/08-hunter-beast-mastery-unleashed-fury.jpg"
+        },
+        {
+          "id": "beast-mastery/improved-mend-pet",
+          "row": 3,
+          "col": 0,
+          "name": "Improved Mend Pet",
+          "icon": "ability_hunter_mendpet",
+          "maxRank": 2,
+          "ranks": [
+            "Gives your Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 10%.",
+            "Gives your Mend Pet spell a 30% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 10%."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Beast Mastery row 4, col 2"
+          ],
+          "classic": [
+            "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick.",
+            "Gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+          ],
+          "evidence": "hunter/09-hunter-beast-mastery-improved-mend-pet.jpg"
+        },
+        {
+          "id": "beast-mastery/ferocity",
+          "row": 3,
+          "col": 2,
+          "name": "Ferocity",
+          "icon": "inv_misc_monsterclaw_04",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the critical strike chance of your pets and hawks by 2%.",
+            "Increases the critical strike chance of your pets and hawks by 4%.",
+            "Increases the critical strike chance of your pets and hawks by 6%.",
+            "Increases the critical strike chance of your pets and hawks by 8%.",
+            "Increases the critical strike chance of your pets and hawks by 10%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the critical strike chance of your pets by 3%.",
+            "Increases the critical strike chance of your pets by 6%.",
+            "Increases the critical strike chance of your pets by 9%.",
+            "Increases the critical strike chance of your pets by 12%.",
+            "Increases the critical strike chance of your pets by 15%."
+          ],
+          "evidence": "hunter/10-hunter-beast-mastery-ferocity.jpg"
+        },
+        {
+          "id": "beast-mastery/summon-hawk",
+          "row": 3,
+          "col": 3,
+          "name": "Summon Hawk",
+          "icon": "ability_hunter_animalhandler",
+          "maxRank": 1,
+          "ranks": [
+            "Command a hawk to dive-bomb your targeted enemy, dealing 53 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot.\n\n80 Mana\n35 yd range\nInstant\n6 sec cooldown"
+          ],
+          "status": "new",
+          "evidence": "hunter/11-hunter-beast-mastery-summon-hawk.jpg"
+        },
+        {
+          "id": "beast-mastery/spirit-bond",
+          "row": 4,
+          "col": 0,
+          "name": "Spirit Bond",
+          "icon": "classic_ability_druid_demoralizingroar",
+          "maxRank": 2,
+          "ranks": [
+            "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec.",
+            "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec."
+          ],
+          "status": "same",
+          "evidence": "hunter/12-hunter-beast-mastery-spirit-bond.jpg"
+        },
+        {
+          "id": "beast-mastery/intimidation",
+          "row": 4,
+          "col": 1,
+          "name": "Intimidation",
+          "icon": "ability_devour",
+          "maxRank": 1,
+          "ranks": [
+            "Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat.\n\n84 Mana\n100 yd range\nInstant\n1 min cooldown"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
+          ],
+          "evidence": "hunter/13-hunter-beast-mastery-intimidation.jpg",
+          "prereq": {
+            "id": "beast-mastery/bestial-swiftness",
+            "rank": 1
+          }
+        },
+        {
+          "id": "beast-mastery/bestial-discipline",
+          "row": 4,
+          "col": 3,
+          "name": "Bestial Discipline",
+          "icon": "spell_nature_abolishmagic",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting.",
+            "Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the Focus regeneration of your pets by 10%.",
+            "Increases the Focus regeneration of your pets by 20%."
+          ],
+          "evidence": "hunter/14-hunter-beast-mastery-bestial-discipline.jpg"
+        },
+        {
+          "id": "beast-mastery/frenzy",
+          "row": 5,
+          "col": 2,
+          "name": "Frenzy",
+          "icon": "inv_misc_monsterclaw_03",
+          "maxRank": 5,
+          "ranks": [
+            "Gives your pet a 20% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
+            "Gives your pet a 40% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
+            "Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
+            "Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike.",
+            "Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
+          ],
+          "status": "same",
+          "evidence": "hunter/15-hunter-beast-mastery-frenzy.jpg",
+          "prereq": {
+            "id": "beast-mastery/ferocity",
+            "rank": 5
+          }
+        },
+        {
+          "id": "beast-mastery/bestial-wrath",
+          "row": 6,
+          "col": 1,
+          "name": "Bestial Wrath",
+          "icon": "ability_druid_ferociousbite",
+          "maxRank": 1,
+          "ranks": [
+            "Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.\n\n125 Mana\n100 yd range\nInstant\n2 min cooldown"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
+          ],
+          "evidence": "hunter/16-hunter-beast-mastery-bestial-wrath.jpg",
+          "prereq": {
+            "id": "beast-mastery/intimidation",
+            "rank": 1
+          }
+        }
+      ],
+      "removed": [
+        "Improved Aspect of the Hawk",
+        "Improved Eyes of the Beast",
+        "Thick Hide"
+      ]
+    },
+    {
+      "id": "marksmanship",
+      "name": "Marksmanship",
+      "icon": "ability_marksmanship",
+      "background": "HunterMarksmanship",
+      "talents": [
+        {
+          "id": "marksmanship/hawk-eye",
+          "row": 0,
+          "col": 0,
+          "name": "Hawk Eye",
+          "icon": "ability_townwatch",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the range of your ranged weapons by 2 yards.",
+            "Increases the range of your ranged weapons by 4 yards.",
+            "Increases the range of your ranged weapons by 6 yards."
+          ],
+          "status": "moved",
+          "diff": [
+            "was Marksmanship row 3, col 4"
+          ],
+          "evidence": "hunter/17-hunter-marksmanship-hawk-eye.jpg"
+        },
+        {
+          "id": "marksmanship/improved-concussive-shot",
+          "row": 0,
+          "col": 1,
+          "name": "Improved Concussive Shot",
+          "icon": "spell_frost_stun",
+          "maxRank": 5,
+          "ranks": [
+            "Gives your Concussive Shot a 4% chance to stun the target for 3 sec.",
+            "Gives your Concussive Shot a 8% chance to stun the target for 3 sec.",
+            "Gives your Concussive Shot a 12% chance to stun the target for 3 sec.",
+            "Gives your Concussive Shot a 16% chance to stun the target for 3 sec.",
+            "Gives your Concussive Shot a 20% chance to stun the target for 3 sec."
+          ],
+          "status": "same",
+          "evidence": "hunter/18-hunter-marksmanship-improved-concussive-shot.jpg"
+        },
+        {
+          "id": "marksmanship/lethal-attacks",
+          "row": 0,
+          "col": 2,
+          "name": "Lethal Attacks",
+          "icon": "ability_searingarrow",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your critical strike chance with all attacks by 1%.",
+            "Increases your critical strike chance with all attacks by 2%.",
+            "Increases your critical strike chance with all attacks by 3%.",
+            "Increases your critical strike chance with all attacks by 4%.",
+            "Increases your critical strike chance with all attacks by 5%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "new",
+          "evidence": "hunter/19-hunter-marksmanship-lethal-attacks.jpg"
+        },
+        {
+          "id": "marksmanship/improved-stings",
+          "row": 1,
+          "col": 0,
+          "name": "Improved Stings",
+          "icon": "hunter-marksmanship-improved-stings-source-icon.png",
+          "maxRank": 3,
+          "ranks": [
+            "Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec.",
+            "Increased the damage of your Serpent Sting ability by 12%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.",
+            "Increased the damage of your Serpent Sting ability by 18%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
+          ],
+          "estimated": [
+            2,
+            3
+          ],
+          "status": "new",
+          "evidence": "hunter/20-hunter-marksmanship-improved-stings.jpg"
+        },
+        {
+          "id": "marksmanship/efficiency",
+          "row": 1,
+          "col": 1,
+          "name": "Efficiency",
+          "icon": "spell_frost_wizardmark",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the Mana cost of your Shots, Stings, and melee abilities by 3%.",
+            "Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%.",
+            "Reduces the Mana cost of your Shots, Stings, and melee abilities by 9%.",
+            "Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%.",
+            "Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Marksmanship row 1, col 3"
+          ],
+          "classic": [
+            "Reduces the Mana cost of your Shots and Stings by 2%.",
+            "Reduces the Mana cost of your Shots and Stings by 4%.",
+            "Reduces the Mana cost of your Shots and Stings by 6%.",
+            "Reduces the Mana cost of your Shots and Stings by 8%.",
+            "Reduces the Mana cost of your Shots and Stings by 10%."
+          ],
+          "evidence": "hunter/21-hunter-marksmanship-efficiency.jpg"
+        },
+        {
+          "id": "marksmanship/careful-aim",
+          "row": 1,
+          "col": 2,
+          "name": "Careful Aim",
+          "icon": "ability_hunter_zenarchery",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Attack Power by 20% of your Intellect.",
+            "Increases your Attack Power by 40% of your Intellect.",
+            "Increases your Attack Power by 60% of your Intellect.",
+            "Increases your Attack Power by 80% of your Intellect.",
+            "Increases your Attack Power by 100% of your Intellect."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "new",
+          "evidence": "hunter/22-hunter-marksmanship-careful-aim.jpg"
+        },
+        {
+          "id": "marksmanship/rapid-killing",
+          "row": 2,
+          "col": 0,
+          "name": "Rapid Killing",
+          "icon": "ability_hunter_rapidkilling",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cooldown on your Rapid Fire ability by 1 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 10%.",
+            "Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/23-hunter-marksmanship-rapid-killing.jpg"
+        },
+        {
+          "id": "marksmanship/improved-arcane-shot",
+          "row": 2,
+          "col": 1,
+          "name": "Improved Arcane Shot",
+          "icon": "ability_impalingbolt",
+          "maxRank": 5,
+          "ranks": [
+            "Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.",
+            "Reduces the cooldown of your Arcane Shot by 0.6 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.",
+            "Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.",
+            "Reduces the cooldown of your Arcane Shot by 1.2 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.",
+            "Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Reduces the cooldown of your Arcane Shot by 0.2 sec.",
+            "Reduces the cooldown of your Arcane Shot by 0.4 sec.",
+            "Reduces the cooldown of your Arcane Shot by 0.6 sec.",
+            "Reduces the cooldown of your Arcane Shot by 0.8 sec.",
+            "Reduces the cooldown of your Arcane Shot by 1 sec."
+          ],
+          "evidence": "hunter/24-hunter-marksmanship-improved-arcane-shot.jpg"
+        },
+        {
+          "id": "marksmanship/lone-wolf",
+          "row": 2,
+          "col": 3,
+          "name": "Lone Wolf",
+          "icon": "ability_mount_whitedirewolf",
+          "maxRank": 1,
+          "ranks": [
+            "You deal 20% increased damage with all attacks while you do not have an active pet."
+          ],
+          "status": "new",
+          "evidence": "hunter/25-hunter-marksmanship-lone-wolf.jpg"
+        },
+        {
+          "id": "marksmanship/trueshot-aura",
+          "row": 3,
+          "col": 1,
+          "name": "Trueshot Aura",
+          "icon": "ability_trueshot",
+          "maxRank": 1,
+          "ranks": [
+            "Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min.\n\n180 Mana\nInstant"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Marksmanship row 7, col 2"
+          ],
+          "classic": [
+            "Increases the attack power of party members within 0 yards by 50. Lasts 30 min."
+          ],
+          "evidence": "hunter/26-hunter-marksmanship-trueshot-aura.jpg"
+        },
+        {
+          "id": "marksmanship/mortal-shots",
+          "row": 3,
+          "col": 2,
+          "name": "Mortal Shots",
+          "icon": "ability_piercedamage",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the critical strike damage bonus on all ranged abilities by 6%.",
+            "Increases the critical strike damage bonus on all ranged abilities by 12%.",
+            "Increases the critical strike damage bonus on all ranged abilities by 18%.",
+            "Increases the critical strike damage bonus on all ranged abilities by 24%.",
+            "Increases the critical strike damage bonus on all ranged abilities by 30%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases your ranged weapon critical strike damage bonus by 6%.",
+            "Increases your ranged weapon critical strike damage bonus by 12%.",
+            "Increases your ranged weapon critical strike damage bonus by 18%.",
+            "Increases your ranged weapon critical strike damage bonus by 24%.",
+            "Increases your ranged weapon critical strike damage bonus by 30%."
+          ],
+          "evidence": "hunter/27-hunter-marksmanship-mortal-shots.jpg",
+          "prereq": {
+            "id": "marksmanship/careful-aim",
+            "rank": 5
+          }
+        },
+        {
+          "id": "marksmanship/rapid-recuperation",
+          "row": 4,
+          "col": 0,
+          "name": "Rapid Recuperation",
+          "icon": "ability_hunter_rapidregeneration",
+          "maxRank": 2,
+          "ranks": [
+            "Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec.",
+            "Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/28-hunter-marksmanship-rapid-recuperation.jpg",
+          "prereq": {
+            "id": "marksmanship/rapid-killing",
+            "rank": 2
+          }
+        },
+        {
+          "id": "marksmanship/barrage",
+          "row": 4,
+          "col": 2,
+          "name": "Barrage",
+          "icon": "ability_upgrademoonglaive",
+          "maxRank": 3,
+          "ranks": [
+            "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 3%.",
+            "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 6%.",
+            "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 9%."
+          ],
+          "estimated": [
+            2,
+            3
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Marksmanship row 5, col 2"
+          ],
+          "classic": [
+            "Increases the damage done by your Multi-Shot and Volley spells by 5%.",
+            "Increases the damage done by your Multi-Shot and Volley spells by 10%.",
+            "Increases the damage done by your Multi-Shot and Volley spells by 15%."
+          ],
+          "evidence": "hunter/29-hunter-marksmanship-barrage.jpg"
+        },
+        {
+          "id": "marksmanship/scatter-shot",
+          "row": 4,
+          "col": 3,
+          "name": "Scatter Shot",
+          "icon": "ability_golemstormbolt",
+          "maxRank": 1,
+          "ranks": [
+            "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.\n\n84 Mana\n15 yd range\nInstant\n30 sec cooldown"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Marksmanship row 5, col 1"
+          ],
+          "classic": [
+            "A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used."
+          ],
+          "evidence": "hunter/30-hunter-marksmanship-scatter-shot.jpg"
+        },
+        {
+          "id": "marksmanship/ranged-weapon-specialization",
+          "row": 5,
+          "col": 2,
+          "name": "Ranged Weapon Specialization",
+          "icon": "inv_weapon_rifle_06",
+          "maxRank": 5,
+          "ranks": [
+            "Increases the damage you deal with ranged weapons by 1%.",
+            "Increases the damage you deal with ranged weapons by 2%.",
+            "Increases the damage you deal with ranged weapons by 3%.",
+            "Increases the damage you deal with ranged weapons by 4%.",
+            "Increases the damage you deal with ranged weapons by 5%."
+          ],
+          "status": "same",
+          "evidence": "hunter/31-hunter-marksmanship-ranged-weapon-specialization.jpg"
+        },
+        {
+          "id": "marksmanship/sniper-shot",
+          "row": 6,
+          "col": 1,
+          "name": "Sniper Shot",
+          "icon": "hunter-marksmanship-sniper-shot-source-icon.png",
+          "maxRank": 1,
+          "ranks": [
+            "A steady snipe that increases ranged damage by 160.\n\n365 Mana\n8-35 yd range\n4 sec cast\n15 sec cooldown"
+          ],
+          "status": "new",
+          "evidence": "hunter/32-hunter-marksmanship-sniper-shot.jpg",
+          "prereq": {
+            "id": "marksmanship/trueshot-aura",
+            "rank": 1
+          }
+        }
+      ],
+      "removed": [
+        "Improved Hunter's Mark",
+        "Lethal Shots",
+        "Aimed Shot",
+        "Improved Serpent Sting",
+        "Improved Scorpid Sting"
+      ]
+    },
+    {
+      "id": "survival",
+      "name": "Survival",
+      "icon": "ability_hunter_swiftstrike",
+      "background": "HunterSurvival",
+      "talents": [
+        {
+          "id": "survival/improved-tracking",
+          "row": 0,
+          "col": 1,
+          "name": "Improved Tracking",
+          "icon": "inv_misc_head_dragon_black",
+          "maxRank": 5,
+          "ranks": [
+            "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 1%.",
+            "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 2%.",
+            "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 3%.",
+            "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 4%.",
+            "While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "new",
+          "evidence": "hunter/33-hunter-survival-improved-tracking.jpg"
+        },
+        {
+          "id": "survival/deflection",
+          "row": 0,
+          "col": 2,
+          "name": "Deflection",
+          "icon": "ability_parry",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Parry chance by 2%.",
+            "Increases your Parry chance by 4%.",
+            "Increases your Parry chance by 6%.",
+            "Increases your Parry chance by 8%.",
+            "Increases your Parry chance by 10%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases your Parry chance by 1%.",
+            "Increases your Parry chance by 2%.",
+            "Increases your Parry chance by 3%.",
+            "Increases your Parry chance by 4%.",
+            "Increases your Parry chance by 5%."
+          ],
+          "evidence": "hunter/34-hunter-survival-deflection.jpg"
+        },
+        {
+          "id": "survival/entrapment",
+          "row": 1,
+          "col": 0,
+          "name": "Entrapment",
+          "icon": "spell_nature_stranglevines",
+          "maxRank": 5,
+          "ranks": [
+            "When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 1 sec.",
+            null,
+            null,
+            null,
+            null
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec.",
+            "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 10% chance to entrap the target, preventing them from moving for 5 sec.",
+            "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 15% chance to entrap the target, preventing them from moving for 5 sec.",
+            "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 20% chance to entrap the target, preventing them from moving for 5 sec.",
+            "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec."
+          ],
+          "evidence": "hunter/35-hunter-survival-entrapment.jpg"
+        },
+        {
+          "id": "survival/savage-strikes",
+          "row": 1,
+          "col": 1,
+          "name": "Savage Strikes",
+          "icon": "ability_racial_bloodrage",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the critical strike chance of all your melee abilities by 2%.",
+            "Increases the critical strike chance of all your melee abilities by 4%."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 10%.",
+            "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 20%."
+          ],
+          "evidence": "hunter/36-hunter-survival-savage-strikes.jpg"
+        },
+        {
+          "id": "survival/survivalist",
+          "row": 1,
+          "col": 2,
+          "name": "Survivalist",
+          "icon": "spell_shadow_twilight",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your total Health by 2%.",
+            "Increases your total Health by 4%.",
+            "Increases your total Health by 6%.",
+            "Increases your total Health by 8%.",
+            "Increases your total Health by 10%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Survival row 3, col 2"
+          ],
+          "classic": [
+            "Increases total health by 2%.",
+            "Increases total health by 4%.",
+            "Increases total health by 6%.",
+            "Increases total health by 8%.",
+            "Increases total health by 10%."
+          ],
+          "evidence": "hunter/37-hunter-survival-survivalist.jpg"
+        },
+        {
+          "id": "survival/improved-wing-clip",
+          "row": 1,
+          "col": 3,
+          "name": "Improved Wing Clip",
+          "icon": "ability_rogue_trip",
+          "maxRank": 3,
+          "ranks": [
+            "Gives your Wing Clip ability a 7% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 14% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 21% chance to immobilize the target for 5 sec."
+          ],
+          "estimated": [
+            2,
+            3
+          ],
+          "status": "changed",
+          "diff": [
+            "max rank 5 → 3",
+            "tooltip changed",
+            "was Survival row 2, col 3"
+          ],
+          "classic": [
+            "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 8% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 12% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 16% chance to immobilize the target for 5 sec.",
+            "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
+          ],
+          "evidence": "hunter/38-hunter-survival-improved-wing-clip.jpg"
+        },
+        {
+          "id": "survival/clever-traps",
+          "row": 2,
+          "col": 0,
+          "name": "Clever Traps",
+          "icon": "spell_nature_timestop",
+          "maxRank": 2,
+          "ranks": [
+            "Increases the duration of Freezing and Frost trap effects by 15% and the damage of Immolation and Explosive trap effects by 15%.",
+            "Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%."
+          ],
+          "status": "same",
+          "evidence": "hunter/39-hunter-survival-clever-traps.jpg"
+        },
+        {
+          "id": "survival/surefooted",
+          "row": 2,
+          "col": 1,
+          "name": "Surefooted",
+          "icon": "ability_kick",
+          "maxRank": 3,
+          "ranks": [
+            "Increases your hit chance by 1% and reduces the duration of movement impairing effects on you by 10%.",
+            "Increases your hit chance by 2% and reduces the duration of movement impairing effects on you by 20%.",
+            "Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%."
+          ],
+          "estimated": [
+            2,
+            3
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Survival row 4, col 2"
+          ],
+          "classic": [
+            "Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%.",
+            "Increases hit chance by 2% and increases the chance movement impairing effects will be resisted by an additional 10%.",
+            "Increases hit chance by 3% and increases the chance movement impairing effects will be resisted by an additional 15%."
+          ],
+          "evidence": "hunter/40-hunter-survival-surefooted.jpg"
+        },
+        {
+          "id": "survival/deterrence",
+          "row": 2,
+          "col": 2,
+          "name": "Deterrence",
+          "icon": "ability_whirlwind",
+          "maxRank": 1,
+          "ranks": [
+            "When activated, increases your Dodge and Parry chance by 25% for 10 sec.\n\nInstant\n5 min cooldown"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "When activated, increases your Dodge and Parry chance by 25% for 10 sec."
+          ],
+          "evidence": "hunter/41-hunter-survival-deterrence.jpg"
+        },
+        {
+          "id": "survival/survival-tactics",
+          "row": 3,
+          "col": 0,
+          "name": "Survival Tactics",
+          "icon": "hunter-survival-survival-tactics-source-icon.png",
+          "maxRank": 2,
+          "ranks": [
+            "Increases your chance to hit with your Trap and Feign Death abilities by 5%.",
+            "Increases your chance to hit with your Trap and Feign Death abilities by 10%."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/42-hunter-survival-survival-tactics.jpg"
+        },
+        {
+          "id": "survival/predator-s-edge",
+          "row": 3,
+          "col": 1,
+          "name": "Predator's Edge",
+          "icon": "ability_hunter_hatchettoss",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your melee critical strike damage by 6% and your offhand weapon damage by 10%.",
+            "Increases your melee critical strike damage by 12% and your offhand weapon damage by 20%.",
+            "Increases your melee critical strike damage by 18% and your offhand weapon damage by 30%.",
+            "Increases your melee critical strike damage by 24% and your offhand weapon damage by 40%.",
+            "Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "new",
+          "evidence": "hunter/43-hunter-survival-predator-s-edge.jpg"
+        },
+        {
+          "id": "survival/counterattack",
+          "row": 3,
+          "col": 2,
+          "name": "Counterattack",
+          "icon": "ability_warrior_challange",
+          "maxRank": 1,
+          "ranks": [
+            "A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried.\n\n30 Mana\nMelee Range\nInstant\n5 sec cooldown"
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed",
+            "was Survival row 5, col 3"
+          ],
+          "classic": [
+            "A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried."
+          ],
+          "evidence": "hunter/44-hunter-survival-counterattack.jpg",
+          "prereq": {
+            "id": "survival/deterrence",
+            "rank": 1
+          }
+        },
+        {
+          "id": "survival/resourcefulness",
+          "row": 4,
+          "col": 0,
+          "name": "Resourcefulness",
+          "icon": "ability_hunter_resourcefulness",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the mana cost of your Trap abilities and melee abilities by 30%. In addition, your critical strikes have a 30% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec.",
+            "Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/45-hunter-survival-resourcefulness.jpg"
+        },
+        {
+          "id": "survival/expose-prey",
+          "row": 4,
+          "col": 1,
+          "name": "Expose Prey",
+          "icon": "ability_hunter_swiftstrike",
+          "maxRank": 2,
+          "ranks": [
+            "Your attacks against targets with Hunter's Mark have a 5% chance to activate your Mongoose Bite for 5 sec.",
+            "Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/46-hunter-survival-expose-prey.jpg"
+        },
+        {
+          "id": "survival/survivalist-s-discipline",
+          "row": 4,
+          "col": 2,
+          "name": "Survivalist's Discipline",
+          "icon": "ability_hunter_mastertactitian",
+          "maxRank": 2,
+          "ranks": [
+            "Reduces the cooldown of your Trap and Deterrence abilities by 20%.",
+            "Reduces the cooldown of your Trap and Deterrence abilities by 40%."
+          ],
+          "estimated": [
+            2
+          ],
+          "status": "new",
+          "evidence": "hunter/47-hunter-survival-survivalist-s-discipline.jpg"
+        },
+        {
+          "id": "survival/strider-kick",
+          "row": 4,
+          "col": 3,
+          "name": "Strider Kick",
+          "icon": "ability_hunter_pet_tallstrider",
+          "maxRank": 1,
+          "ranks": [
+            "A powerful kick that deals 100% melee weapon damage.\n\n61 Mana\nMelee Range\nInstant\n8 sec cooldown"
+          ],
+          "status": "new",
+          "evidence": "hunter/48-hunter-survival-strider-kick.jpg"
+        },
+        {
+          "id": "survival/lightning-reflexes",
+          "row": 5,
+          "col": 2,
+          "name": "Lightning Reflexes",
+          "icon": "spell_nature_invisibilty",
+          "maxRank": 5,
+          "ranks": [
+            "Increases your Agility by 2%.",
+            "Increases your Agility by 4%.",
+            "Increases your Agility by 6%.",
+            "Increases your Agility by 8%.",
+            "Increases your Agility by 10%."
+          ],
+          "estimated": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "status": "changed",
+          "diff": [
+            "tooltip changed"
+          ],
+          "classic": [
+            "Increases your Agility by 3%.",
+            "Increases your Agility by 6%.",
+            "Increases your Agility by 9%.",
+            "Increases your Agility by 12%.",
+            "Increases your Agility by 15%."
+          ],
+          "evidence": "hunter/49-hunter-survival-lightning-reflexes.jpg"
+        },
+        {
+          "id": "survival/lacerating-strikes",
+          "row": 6,
+          "col": 1,
+          "name": "Lacerating Strikes",
+          "icon": "ability_gouge",
+          "maxRank": 1,
+          "ranks": [
+            "Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite."
+          ],
+          "status": "new",
+          "evidence": "hunter/50-hunter-survival-lacerating-strikes.jpg",
+          "prereq": {
+            "id": "survival/expose-prey",
+            "rank": 2
+          }
+        }
+      ],
+      "removed": [
+        "Monster Slaying",
+        "Humanoid Slaying",
+        "Trap Mastery",
+        "Improved Feign Death",
+        "Killer Instinct",
+        "Wyvern Sting"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "class": "paladin",
+ "spec": "holy-heal",
+ "build": "holy-raid-healer",
+ "date": "2026-09-27",
+ "runs": 60,
+ "confirm": 200,
+ "tables": {
+  "EMERGENCY": 0.25,
+  "RAID_HEAL_AT": 0.5,
+  "POTION_BELOW": 0.8
+ },
+ "defaults": {
+  "DOWNRANK": true,
+  "HOT_REFRESH_DEFICIT": 0.1,
+  "EMERGENCY": 0.35,
+  "RAID_HEAL_AT": 0.7,
+  "GROUP_HEAL_MIN": 3,
+  "POTION_BELOW": 0.65,
+  "POTION_FIRST": 45.0
+ },
+ "changes": [
+  {
+   "round": 1,
+   "change": "POTION_BELOW 0.65 -> 0.8",
+   "gain_seeds1": 0.008308583029437155,
+   "gain_seeds2": 0.0051175153994098554
+  },
+  {
+   "round": 2,
+   "change": "EMERGENCY 0.35 -> 0.25",
+   "gain_seeds1": 0.006301267710663749,
+   "gain_seeds2": 0.006546162568632274
+  },
+  {
+   "round": 3,
+   "change": "RAID_HEAL_AT 0.7 -> 0.5",
+   "gain_seeds1": 0.013968653896031746,
+   "gain_seeds2": 0.010694790829012923
+  }
+ ],
+ "capacity_before": 0.63824951171875,
+ "capacity_after": 0.6601489257812501
+}

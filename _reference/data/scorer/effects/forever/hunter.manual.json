@@ -1,0 +1,2200 @@
+{
+  "_doc": "Hand-entered effects for talents the tooltip parser cannot turn into numbers (procs, actives, conditionals). Every entry says how the number was derived. per_rank = linear per rank; values = cumulative per rank when scaling is not linear. modes restricts an effect to leveling or raid scoring.",
+  "Deadly Aspects": {
+    "note": "Hawk: 2%/rank chance per auto shot for +30% ranged attack speed 12s. ~4.3 auto shots per 12s window at 2.8s -> uptime = 1-(1-p)^4.3: 8/16/23/30/36% -> haste EV = uptime*0.30 on Auto Shot only (instant shots are not sped up). Same numbers as Classic Improved Aspect of the Hawk. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 4.4% DPS in the simulator (scorer said 5.0% on the same scale); already within tolerance, raid effects split off unchanged (4.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.025, 0.048, 0.069, 0.089, 0.108],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.025, 0.048, 0.069, 0.089, 0.108],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "per_rank": 0.0216,
+        "specs": ["melee-dps"],
+        "values": [0.0216, 0.0432, 0.0648, 0.0864, 0.108],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.013327, 0.025587, 0.036781, 0.047442, 0.05757],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.046135, 0.08858, 0.127333, 0.164241, 0.199305],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "per_rank": 0.007166,
+        "specs": ["melee-dps"],
+        "values": [0.007166, 0.014331, 0.021497, 0.028662, 0.035828],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.02319, 0.044524, 0.064004, 0.082556, 0.10018],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "values": [0.017138, 0.032904, 0.047298, 0.061009, 0.074034],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Improved Aspect of the Monkey": {
+    "note": "Dodge only while Aspect of the Monkey is up. A ranged hunter shoots under Aspect of the Hawk and the melee hunter fights under Aspect of the Beast (Deadly Aspects' melee haste and the attack power need it), so nothing wears Monkey while leveling or raiding (fight lab 2026-09-27: 0.0% in the melee loop). Kept for PvP, where Monkey is worn against melee: +2%/rank dodge (+1%/rank in Classic) as survival.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Pathfinding": {
+    "note": "Cheetah/Pack +3%/rank speed: travel time between quests, not combat. Small leveling utility. PvP (2026-09-27): low, move: +6% Aspect of the Cheetah/Pack speed: battleground travel only (the aspect dazes on any hit).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Improved Revive Pet": {
+    "note": "Revive 3s faster/20% cheaper per rank, more pet health on revive. Only matters after a pet death: ~1 death per 20 pulls -> ~2% of downtime per rank. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x1.06), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.021251,
+        "values": [0.021251, 0.042503, 0.063754, 0.085006, 0.106257],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Bestial Swiftness": {
+    "note": "+30% pet speed: pet reaches the mob ~1s sooner per pull (~0.5% of fight time) and holds runners. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005],
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "move",
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Improved Mend Pet": {
+    "note": "Cleanse chance and -10%/rank Mend Pet mana. Minor downtime reduction. PvP (2026-09-27): low, dispel: Mend Pet has a 50% chance per heal to cleanse 1 Curse, Disease, Magic or Poison effect from the pet: frees a feared, slowed or poisoned pet. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Summon Hawk": {
+    "note": "Hawk dive-bombs then attacks for 18s; beta spellbook ranks 1-4 (levels 25/40/50/60) deal 32/47/85/108 plus 5% of ranged attack power per dive bomb, 80-190 mana, cooldown shared with Arcane Shot (6s). Treated as ~15% of pet damage while up, usable on every pull -> +12% of pet damage; raid uptime unknown, same EV. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 17.2% time per kill in the simulator (scorer said 9.9% on the same scale); leveling-st/solo-60 values scaled x2.29 to match (17.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.12],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.12],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.12],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.031329],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.229379],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Spirit Bond": {
+    "note": "1%/rank of health per 10s for hunter and pet: fewer Mend Pets/bandages -> sustain 3%/rank. Fight lab calibration (2026-09-26, levels 40,60): removing it costs -1.7% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Melee model (2026-09-27): 1%/rank health per 5 s for you and the pet while the pet is out: less eating between pulls (the ranged models' 3% at 2/2); nothing with Lone Wolf. PvP (2026-09-27): low, defensive: 1% health every 5 s for hunter and pet during the fight (about 12% a minute); the model counts it as leveling sustain only. Needs a pet. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x1.37), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.004766,
+        "values": [0.004766, 0.009533, 0.014299, 0.019065, 0.023831],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.015,
+        "specs": ["melee-dps"],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Intimidation": {
+    "note": "Pet stun (3s) + high threat + guaranteed pet crit on that hit. Leveling: keeps mobs on the pet; small direct value. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -1.4% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.008],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.008],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.01],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Frenzy": {
+    "note": "20%/rank chance on pet crit for +30% pet attack speed 8s. Pet crit ~12%, ~4 swings per 8s -> P(proc in window) = 1-(1-0.12*p)^4: 9/17/25/33/40% -> haste EV = P*0.30. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 1.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.028, 0.052, 0.075, 0.098, 0.12],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.028, 0.052, 0.075, 0.098, 0.12],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["pet"],
+        "values": [0.012915, 0.023986, 0.034595, 0.045204, 0.055352],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Bestial Wrath": {
+    "note": "+50% pet damage for 18s every 2 min = 15% uptime -> +7.5% average pet damage; CC immunity is extra utility. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-st/solo-60 values scaled x0.67 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.075],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "values": [0.005],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "values": [0.005],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.015232],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["all"],
+        "values": [0.001016],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Improved Concussive Shot": {
+    "note": "4%/rank stun on Concussive Shot: only matters on the minority of pulls where the mob is on you rather than the pet -> ~0.15%/rank of leveling time. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0015,
+        "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0015,
+        "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075],
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0015,
+        "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.008, 0.016, 0.024, 0.032, 0.04]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0015,
+        "values": [0.0015, 0.003, 0.0045, 0.006, 0.0075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Careful Aim": {
+    "note": "AP equal to 20%/rank of Intellect (est. 100% at 5/5 - the demo shows 20% at rank 1). Hunter Intellect ~120 at 60 vs ~900 AP: 100% Int = +13% AP = ~+8% ranged damage if AP is ~60% of shot damage. int_to_ap_dps in the spec model (0.06) scales this. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.1% time per kill in the simulator (scorer said 3.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 4.0% DPS in the simulator (scorer said 4.5% on the same scale); already within tolerance, raid effects split off unchanged (4.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "values": [0.02714, 0.054282, 0.081422, 0.108562, 0.135704],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.2,
+        "specs": ["melee-dps"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.119187,
+        "values": [0.119187, 0.238371, 0.357558, 0.476744, 0.595928],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.126823,
+        "specs": ["melee-dps"],
+        "values": [0.126823, 0.253646, 0.380469, 0.507292, 0.634115],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.130796,
+        "values": [0.130796, 0.261591, 0.392387, 0.523183, 0.653979],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.148481,
+        "values": [0.148481, 0.296962, 0.445443, 0.593924, 0.742404],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Lone Wolf": {
+    "note": "+20% damage with all attacks while no pet is active. Only counts in the lonewolf spec model (sources tagged lonewolf). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 20.0% DPS in the simulator (scorer said 19.0% on the same scale); already within tolerance, raid effects split off unchanged (17.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["lonewolf"],
+        "values": [0.2],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["lonewolf"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "disable",
+        "scope": ["pet"],
+        "values": [1.0],
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.2],
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["lonewolf"],
+        "values": [0.229402],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Focused Fire": {
+    "note": "Beta text: +1%/rank all damage you AND your pet deal while the pet is active. Applies to withpet sources and the pet; a Lone Wolf model gets nothing. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.7% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "specs": ["melee-dps"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.004383,
+        "values": [0.004383, 0.008767, 0.01315, 0.017533, 0.021916],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "values": [0.012711, 0.025451, 0.038192, 0.050962, 0.063763],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "specs": ["melee-dps"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["withpet", "pet"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Trueshot Aura": {
+    "note": "Beta spellbook: +30/40/50/75/50 ranged attack power at levels 25/32/40/50/60 (rank 5's 50 looks like a data slip; +75 assumed at 60). Own damage: +75 AP on ~900 = +8% AP, AP is ~55% of shot damage -> +4% ranged damage; the party value is not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 2.5% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.04],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01866],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.02],
+        "modes": ["raid"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.0277],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.028102],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Rapid Killing": {
+    "note": "Rapid Fire cooldown 5 -> 4 min per rank (2 ranks): +40% haste 15s uptime 5% -> 6.25% -> 7.5%: +0.5%/rank auto-shot haste. Kill-buff (Rapid Killing) text truncated: small leveling utility. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "specs": ["bm-leveling"],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["bm-leveling", "melee-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 1e-06,
+        "values": [1e-06, 2e-06, 3e-06, 4e-06, 5e-06],
+        "specs": ["bm-leveling"],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 1e-06,
+        "values": [1e-06, 3e-06, 4e-06, 5e-06, 6e-06],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.000565,
+        "values": [0.000565, 0.001131, 0.001696, 0.002262, 0.002827],
+        "specs": ["bm-leveling"],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["ability:Auto Shot"],
+        "per_rank": 0.006589,
+        "values": [0.006589, 0.013178, 0.019766, 0.026355, 0.032944],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Rapid Recuperation": {
+    "note": "25% (rank 1) / 50% of mana regen continues while casting for 15s after Serpent Sting: hunters cast constantly, so roughly half the fight -> regen_share * value. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 5.2% time per kill in the simulator (scorer said 2.9% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (3.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.8% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.12, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.12, 0.25],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.12, 0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [2.4e-05, 5e-05],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.72, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Scatter Shot": {
+    "note": "4s disorient: an escape/reset button. PvP talent; small leveling utility. PvP (2026-09-27): high, stun: Instant 4 s disorient, 30 s cooldown, 15 yd: peel a melee, get back to range, set up a trap or Aimed Shot.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Sniper Shot": {
+    "note": "Beta spellbook: 4s cast, 15s cooldown, 365 mana, +160/225/295 ranged damage at levels 40/48/58. Roughly an Aimed Shot (+166 at 60): replaces ~1.5 auto shots with ~2.2 auto shots of damage every 15s -> ~+5% ranged damage; overlaps Aimed Shot's shared cooldown only with Multi-Shot, so both fit. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs -3.2% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Entrapment": {
+    "note": "Traps root for 1s/rank. Kiting utility only. PvP (2026-09-27): high, kite: 1.60.1.70009 rework: every triggered trap roots all affected targets 5 s (Classic: 25% chance), and Forever traps can be laid in combat (30 s cooldown): an on-demand area root, more than the PvP draft's 2-point filler.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Improved Wing Clip": {
+    "note": "7%/rank chance to root on Wing Clip: lets you get back to range. Leveling utility. PvP (2026-09-27): high, kite: 20% chance per Wing Clip (no cooldown) to root 5 s: how a ranged hunter gets out of melee; melee hunter: keeps a runner in reach.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Clever Traps": {
+    "note": "Trap duration/damage +15%/rank: rarely part of a leveling kill. PvP (2026-09-27): low, stun: Freezing Trap freeze and Frost Trap slick last 30% longer: only matters when the freeze runs its course (group fights).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Deterrence": {
+    "note": "+25% dodge/parry for 10s, 5-min cooldown: an emergency button, ~3% effective-health equivalent. Melee model: +25% parry for 10 s every 5 min (3 min with Survivalist's Discipline) is a burst of Counterattacks (assumption). PvP (2026-09-27): high, defensive: +25% dodge and parry for 10 s (5 min cooldown): the hunter's only defensive cooldown against melee burst; prerequisite of Counterattack.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Counterattack"],
+        "values": [0.15],
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Counterattack": {
+    "note": "After a parry: 50% weapon damage + root. Melee-only; small. PvP (2026-09-27): medium, kite: After a parry: a strike that roots 5 s (5 s cooldown). Ranged: walk back out to range; melee hunter: holds the target. Parries come mostly during Deterrence.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.004]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Survival Tactics": {
+    "note": "+5%/rank hit with traps and Feign Death: Feign Death resists are a real leveling death cause -> small survivability. PvP (2026-09-27): medium, escape: +10% hit on traps and Feign Death: Freezing Trap and Feign Death (drop target, cancel casts on you) fail less against players.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "escape"
+      }
+    ]
+  },
+  "Expose Prey": {
+    "note": "5%/rank chance per attack on a Marked target to enable Mongoose Bite: melee source only (2% of a ranged hunter's damage). Ranged models keep the old melee estimate. Melee model: 5%/rank chance per attack against a marked target to activate Mongoose Bite -> with ~1.5 attacks per second a Bite every ~7 s at 2/2 instead of only after dodges: about twice the Bites (assumption, unverified).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.08,
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mongoose Bite"],
+        "values": [0.6, 1.2],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Resourcefulness": {
+    "note": "-30%/rank mana on traps and melee abilities; a crit has a 30%/rank chance to let 50% of mana regen continue while casting for 30 s. Ranged models: 1%/rank sustain (traps and the odd Raptor Strike; the regen overlaps Rapid Recuperation). Melee model (2026-09-27, beta tooltip): melee abilities cost 60% less at 2/2 (mana_cost on type:melee, 70% of its mana goes there) and melee crits every few seconds keep the regen up almost all the time (regen 0.45 / 0.50 of the while-casting share). Fight lab: the hunter module models both parts. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 13.7% time per kill in the simulator (scorer said 6.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (6.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee"],
+        "per_rank": 0.3,
+        "specs": ["melee-dps"],
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.45, 0.5],
+        "specs": ["melee-dps"],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee"],
+        "per_rank": 0.75,
+        "specs": ["melee-dps"],
+        "values": [0.75, 1.5, 2.25, 3.0, 3.75],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [1.125, 1.25],
+        "specs": ["melee-dps"],
+        "modes": ["leveling-st", "solo-60"]
+      }
+    ]
+  },
+  "Survivalist's Discipline": {
+    "note": "Trap/Deterrence cooldown -20%/rank: utility. PvP (2026-09-27): medium, kite: Trap cooldowns 30 -> 18 s (Freezing Trap, Frost Trap, Entrapment roots) and Deterrence 5 -> 3 min.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Strider Kick": {
+    "note": "100% normalized melee weapon damage every 8s (5.8% of base mana) and, since build 70009, +30% movement speed for 3s: roughly +50% of a hunter's melee output (melee source only) plus a little kiting utility. Melee model: the `strider_kick` source carries the kick (100% weapon damage every 8 s). PvP (2026-09-27): medium, move: Melee hunter only: a 30% sprint for 3 s every 8 s keeps a kiting target in reach (out of reach of a 31/20 Marksmanship split).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.5],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.003]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Lacerating Strikes": {
+    "note": "Mongoose Bite bleeds for 40% of its damage over 21s: +40% on Mongoose Bite, i.e. ~+15% of melee output. Melee model: the `lacerate` source carries the bleed (40% of each Mongoose Bite over 21 s).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.15],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Hawk Eye": {
+    "note": "+2 yd/rank ranged range. Leveling: one more shot before the mob reaches you (~+0.5%/rank ranged damage) and a wider kiting/dead-zone margin (+1%/rank survivability); raids: positioning out of cleaves and AoE (utility 0.3%/rank). Community: a preference point in raid builds (Icy Veins). Fight lab calibration (2026-09-28, levels 40,60): removing it costs -3.4% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "per_rank": 0.005,
+        "modes": ["leveling-aoe"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "per_rank": 0.005,
+        "modes": ["leveling-aoe"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "range",
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "modes": ["leveling-aoe"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "modes": ["leveling-aoe"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Improved Stings": {
+    "note": "Beta curve 6/13/20% Serpent Sting damage (parsed); Viper/Scorpid parts are PvP utility (not scored). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 4.2% DPS in the simulator (scorer said 2.4% on the same scale); raid values scaled x1.36 to match (4.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.06, 0.13, 0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.06, 0.13, 0.2],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.025752, 0.056208, 0.087113],
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.032685, 0.070817, 0.108948],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.068966, 0.149426, 0.229886],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Serpent Sting"],
+        "values": [0.068175, 0.147713, 0.227251],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Improved Arcane Shot": {
+    "note": "Arcane Shot cooldown -0.3s/rank on a 6s cooldown: parsed as a cooldown effect (the model converts it to more casts of the Arcane Shot source). Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, mm-lonewolf-raid): removing it costs 0.0% DPS in the simulator (scorer said 2.4% on the same scale); raid values scaled x0.27 to match (0.5%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.087382,
+        "values": [0.087382, 0.174765, 0.262147, 0.349529, 0.436911],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["raid"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.081892,
+        "values": [0.081892, 0.163783, 0.245675, 0.327567, 0.409459],
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Arcane Shot"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Unleashed Fury": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.9% time per kill in the simulator (scorer said 13.5% on the same scale); leveling-st/solo-60 values scaled x0.54 to match (7.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 1.5% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.040036, 0.080072, 0.120108, 0.160144, 0.200181],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.047418, 0.095064, 0.142915, 0.190999, 0.239283],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Ferocity": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 4.7% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-st/solo-60 values scaled x1.37 to match (4.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "heal", "tank"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.054863, 0.109726, 0.164589, 0.219452, 0.274314],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["pet"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Endurance Training": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "pet_surv",
+        "scope": ["pet"],
+        "values": [0.017738, 0.035475, 0.053214, 0.070952, 0.08869],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      }
+    ]
+  },
+  "Bestial Discipline": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 26.3% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x3.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 5.8% on the same scale); raid values scaled x0.30 to match (1.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.059312, 0.118625],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.25, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.75, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["pet"],
+        "values": [0.07816, 0.156321],
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      }
+    ]
+  },
+  "Efficiency": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 5.7% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 7.2% DPS in the simulator (scorer said 5.0% on the same scale); already within tolerance, raid effects split off unchanged (8.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.083101, 0.166193, 0.249294, 0.332384, 0.415484],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.031219, 0.062433, 0.093651, 0.124871, 0.156087],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:melee", "ability:Shots", "ability:Stings"],
+        "values": [0.113678, 0.227356, 0.341034, 0.454717, 0.568394],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Lethal Attacks": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.3% time per kill in the simulator (scorer said 5.0% on the same scale); leveling-st/solo-60 values scaled x1.25 to match (6.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 5.4% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.005101, 0.010203, 0.015304, 0.020405, 0.025506],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.007668, 0.015336, 0.023004, 0.030673, 0.038341],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.02178, 0.043559, 0.065339, 0.087119, 0.108899],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.013141, 0.026282, 0.039423, 0.052564, 0.065706],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["all"],
+        "values": [0.013213, 0.026425, 0.039638, 0.052851, 0.066063],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Mortal Shots": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 4.2% on the same scale); raid values scaled x1.30 to match (5.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:ranged"],
+        "values": [0.059178, 0.118354, 0.177531, 0.236709, 0.295887],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Ranged Weapon Specialization": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-st/solo-60 values scaled x2.12 to match (2.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 5.0% on the same scale); raid values scaled x0.75 to match (3.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.008345, 0.01669, 0.025035, 0.03338, 0.041728],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:ranged"],
+        "values": [0.007539, 0.015078, 0.022617, 0.030156, 0.037695],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Improved Tracking": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.9% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.001037, 0.002073, 0.00311, 0.004146, 0.005183],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.004673, 0.009345, 0.014018, 0.018691, 0.023363],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.005557, 0.01113, 0.01672, 0.022329, 0.027953],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.007557, 0.015115, 0.022672, 0.030229, 0.037786],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Barrage": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, mm-lonewolf-raid, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.03, 0.07, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.03, 0.07, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["mm-raid", "mm-lonewolf-raid", "melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.03, 0.07, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.037447, 0.087377, 0.124822],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.020372, 0.047534, 0.067905],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Multi-Shot", "ability:Aimed Shot", "ability:Volley"],
+        "values": [0.024501, 0.057169, 0.08167],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      }
+    ]
+  },
+  "Surefooted": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, mm-raid, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 3.0% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-lonewolf-raid"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "resist",
+        "values": [0.013333, 0.026666, 0.039999, 0.053332, 0.066665]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["mm-raid"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.021959, 0.043917, 0.065874],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Survivalist": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "values": [0.007511, 0.015023, 0.022534, 0.030045, 0.037557],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "values": [0.000951, 0.001903, 0.002854, 0.003806, 0.004757],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Lightning Reflexes": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:agility"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:agility"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:agility"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:agility"],
+        "values": [0.019221, 0.038441, 0.057662, 0.076883, 0.096103],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:agility"],
+        "values": [0.020437, 0.040875, 0.061312, 0.081749, 0.102187],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      }
+    ]
+  },
+  "Deflection": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "source": "parsed",
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.024, 0.048, 0.072, 0.096, 0.12],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["bm-leveling", "mm-raid", "mm-lonewolf-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Counterattack"],
+        "per_rank": 0.2,
+        "specs": ["melee-dps"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0008,
+        "modes": ["pvp"],
+        "kind": "avoid",
+        "values": [0.0008, 0.0016, 0.0024, 0.0032, 0.004]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.015612, 0.031224, 0.046836, 0.062448, 0.078066],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:parry"],
+        "values": [0.003227, 0.006454, 0.009681, 0.012908, 0.016135],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["melee-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Counterattack"],
+        "per_rank": 0.026892,
+        "specs": ["melee-dps"],
+        "values": [0.026892, 0.053784, 0.080676, 0.107569, 0.13446],
+        "modes": ["leveling-st", "solo-60"]
+      }
+    ]
+  },
+  "Savage Strikes": {
+    "note": "Melee model (2026-09-27): +2%/rank crit on Raptor Strike, Mongoose Bite, Counterattack and Strider Kick (beta tooltip). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.1% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["melee-yellow"],
+        "values": [0.02, 0.04],
+        "specs": ["melee-dps"],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["bm-leveling"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["melee-yellow"],
+        "values": [0.047659, 0.095319],
+        "specs": ["melee-dps"],
+        "modes": ["leveling-st", "solo-60"]
+      }
+    ]
+  },
+  "Predator's Edge": {
+    "note": "Melee model: +10%/rank off-hand weapon damage on top of the parsed +6%/rank melee crit damage (beta tooltip).",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["offhand"],
+        "per_rank": 0.1,
+        "specs": ["melee-dps"]
+      }
+    ]
+  }
+}

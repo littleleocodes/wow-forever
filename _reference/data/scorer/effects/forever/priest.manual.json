@@ -1,0 +1,2408 @@
+{
+  "_doc": "Hand-entered Priest effects (Forever). Healing tags: heal, direct, hot, instant, absorb. Shadow tags: school:shadow, ability:Mind Flay etc.",
+  "Power in Light": {
+    "note": "Smite/Penance damage vs Holy Fire targets: a Smite-priest talent; nothing for healers or Shadow.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0, 0, 0]
+      }
+    ]
+  },
+  "Twin Disciplines": {
+    "note": "+1%/rank damage and healing of instant casts (Renew, Shield, Prayer of Mending, Shadow Word: Pain, Devouring Plague). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.005066,
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"],
+        "values": [0.005066, 0.010131, 0.015197, 0.020263, 0.025328]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.005066,
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"],
+        "values": [0.005066, 0.010131, 0.015197, 0.020263, 0.025328]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["instant"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Power Word: Shield": {
+    "note": "Beta curve 7/14/20% absorb (Classic 15% at 3/3): healing on the shield source; leveling +1%/rank survivability (every pull opens with a bigger shield). Healer lab calibration (2026-09-28, holy-heal): removing it costs 0.9% healing capacity in the lab (scorer said 0.1% on the same scale); already within tolerance, heal effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["raid", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.003544,
+        "modes": ["leveling-aoe"],
+        "values": [0.003544, 0.007089, 0.010633, 0.014178, 0.017722],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.024811, 0.049623, 0.07089],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.07, 0.14, 0.2],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Martyrdom": {
+    "note": "Focused Casting after being crit: casting through melee while leveling/PvP. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "resist",
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Inner Fire": {
+    "note": "+15%/rank Inner Fire armor and more charges: small survivability. PvP (2026-09-27): low, avoid: The armor already counts as survival; the PvP part is +12 charges (Inner Fire lasts 32 melee or ranged hits instead of 20): fewer mid-fight rebuffs against melee. Discipline builds only (tier 4).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"],
+        "kind": "avoid"
+      }
+    ]
+  },
+  "Mental Agility": {
+    "note": "Beta curve 3/7/10% mana on Smite, Holy Fire and instant casts (parser drops the instant part): Renew/Shield/Prayer of Mending/SW:P. Fight lab calibration (2026-09-27, levels 30,60): removing it costs 3.5% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged. Healer lab calibration (2026-09-28, holy-heal): removing it costs 0.7% healing capacity in the lab (scorer said 0.2% on the same scale); already within tolerance, heal effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.03, 0.07, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.03, 0.07, 0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.03, 0.07, 0.1],
+        "modes": ["leveling-aoe", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.03, 0.07, 0.1],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.45, 1.05, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.012, 0.028, 0.04],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["instant"],
+        "values": [0.03, 0.07, 0.1],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Inner Focus": {
+    "note": "One free spell with +25% crit every 3 min (parser read it as 100% cost reduction on everything): ~+1% healing, ~+2% mana. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x0.44 to match (0.4%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged. Healer lab calibration (2026-09-28, holy-heal): removing it costs 2.8% healing capacity in the lab (scorer said 2.1% on the same scale); already within tolerance, heal effects split off unchanged (2.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["heal", "tank"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["heal", "tank"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["heal", "tank"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.003039],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.00152],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.00152],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.007287],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.003662],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.003662],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.017992],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.009265],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.009265],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0201],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0201],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Soul Warding": {
+    "note": "Power Word: Shield -4s cooldown (parsed) and -15% mana. Healer lab calibration (2026-09-28, holy-heal): removing it costs 1.5% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x1.00, the cap on effect size stops short of the target (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [4.0],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [4.0],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.15],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.15],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [1.5],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Power Word: Shield"],
+        "values": [0.05625],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Penance": {
+    "note": "Channelled 3-hit heal every 12s: beta spellbook ranks 1-4 (levels 30/40/50/60) heal 184/291/482/673 per bolt (100/?/?/355 mana), damage 81 to 131 per bolt: very mana-efficient tank heal -> ~+8% healing throughput and ~+3% mana efficiency. Healer lab calibration (2026-09-28, holy-heal): removing it costs 4.8% healing capacity in the lab (scorer said 5.8% on the same scale); already within tolerance, heal effects split off unchanged (5.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.08],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.08],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.102278],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.038355],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Renewed Hope": {
+    "note": "+2%/rank crit on direct heals to Weakened Soul targets (the shielded tank, ~60% of direct heals) -> +1.2%/rank direct-heal crit. PvP (2026-09-27): high, defensive: Each Flash Heal, Heal, Greater Heal, Binding Heal or Penance on a target with Weakened Soul cuts it by 5 s: with Soul Warding the focus target can be reshielded every 5-10 s instead of 15, the core of a Discipline PvP healer. Healer only; unverified (no PvP healer build yet).",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["direct"],
+        "per_rank": 0.012
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Divine Aegis": {
+    "note": "Crit heals shield for 5%/rank of the heal: at ~20% crit that is +1%/rank effective healing.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["direct"],
+        "per_rank": 0.01
+      }
+    ]
+  },
+  "Power Infusion": {
+    "note": "+20% healing/damage for 15s every 3 min (8.3% uptime) on yourself or a caster: +1.7% self; the raid-DPS use is extra value. PvP (2026-09-27): medium, burst: +20% spell damage and healing for 15 s (3 min cooldown) on yourself or a partner: a burst window. Discipline builds only (tier 7).",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.017]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.017]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Spell Warding": {
+    "note": "-2%/rank spell damage taken.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.015
+      }
+    ]
+  },
+  "Holy Nova": {
+    "note": "Instant AoE heal/damage with no threat: niche. PvP (2026-09-27): low, stealth: Instant 10 yd AoE damage and party heal: pulsing it reveals stealthed rogues and druids before a Sap or Cheap Shot. Healer builds only (Shadowform bars healing spells).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.004]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Blessed Recovery": {
+    "note": "Heal 8%/rank of a crit's damage: survivability. PvP (2026-09-27): low, defensive: 1.60.1.70009 adds a trigger on any single hit over 30% of your maximum health: PvP spike hits (crit Pyroblast, Aimed Shot, Ambush) heal back 25% over 6 s. Holy builds only (tier 3).",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Inspiration": {
+    "note": "+8%/rank armor on the target for 15s after a crit heal: on a tank that is ~5%/rank less physical damage while up (~70% uptime at raid crit) -> counted as +1.5%/rank effective healing. Healer lab calibration (2026-09-28, holy-heal): removing it costs 2.2% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x4.55 to match (2.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.015123,
+        "values": [0.015123, 0.030242, 0.045366, 0.060489, 0.075612],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Binding Heal": {
+    "note": "1.5s heal on target and self, low threat: replaces Flash Heals when you are taking damage -> ~+3% throughput. PvP (2026-09-27): low, defensive: Heals you and an ally in one 1.5 s cast: self-healing while keeping a trained teammate up. Healer only.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.03]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Litany of Light": {
+    "note": "5%/rank of base cost refunded when alternating healing spells: ~+2%/rank mana.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.02
+      }
+    ]
+  },
+  "Spirit of Redemption": {
+    "note": "15s of free healing after death: small. PvP (2026-09-27): low, burst: 15 s of free healing after you die: team value in battlegrounds only. Holy healer only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.005]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Prayer of Mending": {
+    "note": "Instant bouncing heal (beta rank 1: 172 per jump, up to 6 targets, ranks 2-3 at 50/60) every 10s for 210 mana: the most mana-efficient raid heal -> ~+8% throughput, ~+3% mana. Healer lab calibration (2026-09-28, holy-heal): removing it costs 2.0% healing capacity in the lab (scorer said 1.3% on the same scale); already within tolerance, heal effects split off unchanged (1.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.08],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.08],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.02249],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.008434],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Holy Precision": {
+    "note": "+6% hit with Holy spells per rank read: heals cannot miss; nothing for Shadow.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0, 0]
+      }
+    ]
+  },
+  "Silent Resolve": {
+    "note": "Threat and -5%/rank stun/fear/silence duration: small survivability. 2026-09-27 audit: Holy threat -10%/rank for a raid healer: 0.002/rank heal utility (the loops file's healer reason). PvP (2026-09-27): high, resist: -15% duration of stuns, fears and silences on you at 3/3 (1.60.1.70009): the only CC-duration talent left in Forever priest trees (Unbreakable Will is gone). The -30% Holy threat part is PvE only. Both specs.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.004
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.002
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Blackout": {
+    "note": "2%/rank chance per Shadow damage spell to stun 3s: ~5 shadow casts per mob while leveling -> ~10%/rank of mobs stunned once (3s without hits) -> +1%/rank survivability, +0.5%/rank damage (free casts); nothing on bosses. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x0.50 to match (2.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "modes": ["leveling-aoe"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.009976,
+        "values": [0.009976, 0.019951, 0.029927, 0.039903, 0.049878],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.002494,
+        "values": [0.002494, 0.004988, 0.007482, 0.009976, 0.01247],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Spirit Tap": {
+    "note": "20%/rank chance for +100% Spirit and 50% regen while casting for 15s after a kill: at 5/5 every kill; priests spend ~35% of leveling drinking -> sustain 12/22/30/36/40%. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.12, 0.22, 0.3, 0.36, 0.4],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.12, 0.22, 0.3, 0.36, 0.4],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.45, 0.825003, 1.125001, 1.350001, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.12, 0.22, 0.3, 0.36, 0.4],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Shadow Word: Pain": {
+    "note": "+3s/rank duration (18 -> 24s): more damage per cast and fewer recasts -> +5%/rank SW:P damage, +1%/rank mana. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 2.2% DPS in the simulator (scorer said 3.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Word: Pain"],
+        "per_rank": 0.06555,
+        "values": [0.06555, 0.131101, 0.196652, 0.262202, 0.327753],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.005244,
+        "values": [0.005244, 0.010488, 0.015732, 0.020976, 0.02622],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Mind Flay": {
+    "note": "The Shadow filler: a channelled snare-nuke replacing wand time -> ~+15% total damage while leveling, +10% in a raid rotation. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 11.5% time per kill in the simulator (scorer said 5.9% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (30.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 76.1% DPS in the simulator (scorer said 96.5% on the same scale); already within tolerance, raid effects split off unchanged (77.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.15],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "kite",
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Mind Flay": {
+    "note": "+10% Mind Flay damage and +5 yards for 2 points (rank 1 read). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 12.7% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x22.01 to match (12.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 8.4% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (8.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.05,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.05,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.05,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "range",
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.092722,
+        "values": [0.092722, 0.185443, 0.278165, 0.370887, 0.463609],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.143257,
+        "values": [0.286536, 0.57305, 0.859585, 1.146121, 1.432657],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Mind Flay"],
+        "per_rank": 0.113134,
+        "values": [0.113134, 0.226268, 0.339403, 0.452537, 0.565671],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Vampiric Embrace": {
+    "note": "Party healed for 20% of your Shadow damage for 30s, but the beta client gives it a 1 min cooldown (Classic: none) -> 50% uptime: leveling self-healing (-8% downtime, +3% EH); raid party utility. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.5% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x0.18 to match (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.08],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.015],
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.015],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.08],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [1.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.027094],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.018062],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Shadow Weaving": {
+    "note": "33%/rank chance per Shadow spell to stack +2% Shadow damage (5 stacks, 15s): at 3/3 five stacks are always up (+10%); at 1/3 ~5%. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.5% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-st/solo-60 values scaled x0.54 to match (3.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 9.1% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (9.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.041683, 0.066691, 0.083365],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.027204, 0.043526, 0.054408],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.05, 0.08, 0.1],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Silence": {
+    "note": "5s silence: caster control while leveling. 2026-09-27 audit: the fight lab never gets to use it (0.00 interrupts per kill: casters stand at 30 yd, Silence reaches 20); casters are 9-19% of pulls and one Silence turns 1-2 bolts into melee swings: 0.002. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.002],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.002],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.002],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Early Demise": {
+    "note": "+15%/rank Shadow Word: Death crit below 20%: the execute (~5% of a fight) -> +0.5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.001244,
+        "values": [0.001244, 0.002487, 0.003731, 0.004975, 0.006219],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.011958,
+        "values": [0.011958, 0.023915, 0.035873, 0.047831, 0.059789],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Shadowform": {
+    "note": "+10% Shadow damage, -50% Shadow mana cost, physical damage reduction (text truncated; assumed 15% like Classic). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 79.5% time per kill in the simulator (scorer said 39.6% on the same scale); leveling-st/solo-60 values scaled x1.87, the cap on effect size stops short of the target (81.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 64.8% DPS in the simulator (scorer said 93.7% on the same scale); raid values scaled x2.78 to match (66.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.25],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.498672],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [1.246683],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.498672],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.599999],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [1.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.599999],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.518266],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [1.054368],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.518266],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Fade": {
+    "note": "Fade cooldown: leveling survivability. 2026-09-27 audit: a solo priest is the only name on the mob's threat list, so Fade does nothing while leveling; it is the raid threat dump: 0.001/rank in raid and heal. PvP (2026-09-27): zero, escape: Fade (-6 s cooldown) only discourages NPCs (tooltip as in Classic); players ignore it, so the shadow-pvp draft's 2 points are wasted.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.001
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.001
+      }
+    ]
+  },
+  "Improved Psychic Scream": {
+    "note": "Psychic Scream cooldown: leveling/PvP utility. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "modes": ["raid", "heal", "tank"],
+        "per_rank": 0.0008,
+        "values": [0.0008, 0.0016, 0.0024, 0.0032, 0.004]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "modes": ["leveling-aoe"],
+        "per_rank": 0.0008,
+        "values": [0.0008, 0.0016, 0.0024, 0.0032, 0.004],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "modes": ["leveling-aoe"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Devouring Contagion": {
+    "note": "Cheaper Devouring Plague (racial) and spreading: small. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-st", "solo-60", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.32,
+        "values": [0.32, 0.64, 0.96, 1.28, 1.6],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.009018,
+        "values": [0.009018, 0.018035, 0.027053, 0.03607, 0.045088],
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Shadow Reach": {
+    "note": "+10%/rank Shadow range: an extra cast before melee while leveling. 2026-09-27 audit: range is the one soft kind raid DPS counts (Mind Flay's 20 yd): 0.002/rank raid utility. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 22.4% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x37.95 to match (23.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.004,
+        "modes": ["leveling-aoe"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.004,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range",
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.012096,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.012096, 0.024199, 0.036295, 0.048391, 0.060487],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.006048,
+        "values": [0.006048, 0.012096, 0.018144, 0.024199, 0.030247],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.151789,
+        "modes": ["leveling-aoe"],
+        "values": [0.151789, 0.303578, 0.455366, 0.607155, 0.758944],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.075894,
+        "values": [0.075894, 0.151789, 0.227683, 0.303578, 0.379472],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Twilight Focus": {
+    "note": "23%/rank chance to ignore pushback: raid healers get hit by raid damage on ~20% of casts -> ~+0.7%/rank throughput; leveling casters ~1%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 36.9% time per kill in the simulator (scorer said 0.7% on the same scale); leveling-st/solo-60 values scaled x49.62 to match (37.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.007,
+        "values": [0.007, 0.014, 0.021, 0.028, 0.035],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.007,
+        "values": [0.007, 0.014, 0.021, 0.028, 0.035],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.01,
+        "modes": ["leveling-aoe"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.0,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "resist",
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.089224,
+        "values": [0.089224, 0.178399, 0.267623, 0.356848, 0.446072],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.127435,
+        "modes": ["leveling-aoe"],
+        "values": [0.127435, 0.25487, 0.382355, 0.509789, 0.637224],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Mana Burn": {
+    "note": "PvP. PvP (2026-09-27): medium, antiheal: Mana Burn 3 -> 2 s cast: a drain of about 750 mana per cast lands between kicks, the priest's tool against healers. Discipline builds only (tier 4).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Wand Specialization": {
+    "note": "+13%/rank wand damage (parsed). Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.13,
+        "values": [0.13, 0.26, 0.39, 0.52, 0.65],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.13,
+        "values": [0.13, 0.26, 0.39, 0.52, 0.65],
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.13,
+        "values": [0.13, 0.26, 0.39, 0.52, 0.65],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.13,
+        "values": [0.13, 0.26, 0.39, 0.52, 0.65],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Wand", "ability:Wands"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Searing Light": {
+    "note": "Beta curve +2/5% Holy damage and free Holy Novas from Holy Fire ticks: Smite priests only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:holy"],
+        "values": [0.02, 0.05]
+      }
+    ]
+  },
+  "Holy Reach": {
+    "note": "Range/radius: nothing measurable. PvP (2026-09-27): low, range: +20% Smite/Holy Fire range and Holy Nova/Prayer of Healing radius: the Holy Nova stealth sweep grows to 12 yd. Holy builds only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["profile:none"],
+        "values": [0, 0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "range"
+      }
+    ]
+  },
+  "Holy Specialization": {
+    "note": "+1%/rank Holy crit: crit heals also proc Inspiration on the tank ('provides your tanks with a lot of extra mitigation', Icy Veins) -> +0.3%/rank healer utility on top of the parsed crit. Healer lab calibration (2026-09-28, holy-heal): removing it costs 1.5% healing capacity in the lab (scorer said 0.5% on the same scale); re-seeded from its tooltip (an earlier fit had left its heal values at zero), already within tolerance, heal effects split off unchanged (1.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:holy"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:holy"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["school:holy"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Shadow Focus": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.0% time per kill in the simulator (scorer said 0.1% on the same scale); leveling-st/solo-60 values scaled x1.78 to match (7.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 3.7% DPS in the simulator (scorer said 4.9% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "per_rank": 0.003577,
+        "values": [0.003577, 0.007154, 0.010731, 0.014308, 0.017885],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.001789,
+        "values": [0.001789, 0.003577, 0.005366, 0.007154, 0.008943],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "per_rank": 0.017824,
+        "values": [0.017824, 0.035648, 0.053473, 0.071297, 0.089121],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "per_rank": 0.008912,
+        "values": [0.008912, 0.017824, 0.026736, 0.035648, 0.04456],
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["school:shadow"],
+        "values": [0.008193, 0.016386, 0.024579, 0.032772, 0.040966],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Improved Mind Blast": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x6.76 to match (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.5, 1.0, 1.5, 2.0, 2.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.5, 1.0, 1.5, 2.0, 2.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.5, 1.0, 1.5, 2.0, 2.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.032009, 0.064018, 0.096027, 0.128036, 0.160044],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.05497, 0.10994, 0.16491, 0.21988, 0.274849],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Mind Blast"],
+        "values": [0.21646, 0.432921, 0.649381, 0.865841, 1.082294],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Darkness": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.7% time per kill in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its values at zero), leveling-st/solo-60 values scaled x0.36 to match (1.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (9.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.01181, 0.02362, 0.03543, 0.04724, 0.05905],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.007138, 0.014275, 0.021413, 0.02855, 0.035688],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:shadow"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Meditation": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.9% time per kill in the simulator (scorer said 0.0% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs -0.1% DPS in the simulator (scorer said 19.9% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.468686, 0.909802, 1.378486],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Mental Strength": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, shadow-dps, training dummy): removing it costs 0.4% DPS in the simulator (scorer said 4.6% on the same scale); raid values scaled x0.62 to match (0.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.010442, 0.020885, 0.031327, 0.04177, 0.052212],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Divine Fury": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, holy-heal): removing it costs -0.1% healing capacity in the lab (scorer said 2.8% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Smite", "ability:Holy Fire", "ability:Heal", "ability:Greater Heal"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Smite", "ability:Holy Fire", "ability:Heal", "ability:Greater Heal"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Smite", "ability:Holy Fire", "ability:Heal", "ability:Greater Heal"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Improved Healing": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, holy-heal): removing it costs 7.5% healing capacity in the lab (scorer said 5.1% on the same scale); heal values scaled x1.46 to match (7.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Lesser Heal", "ability:Heal", "ability:Greater Heal", "ability:Penance", "ability:Prayer of Mending"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Lesser Heal", "ability:Heal", "ability:Greater Heal", "ability:Penance", "ability:Prayer of Mending"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Lesser Heal", "ability:Heal", "ability:Greater Heal", "ability:Penance", "ability:Prayer of Mending"],
+        "values": [0.218995, 0.43799, 0.656984],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Spiritual Guidance": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, holy-heal): removing it costs 3.1% healing capacity in the lab (scorer said 1.7% on the same scale); heal values scaled x1.89 to match (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["all"],
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["all"],
+        "values": [0.01486, 0.029721, 0.044581, 0.059443, 0.074303],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Spiritual Healing": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, holy-heal): removing it costs 6.0% healing capacity in the lab (scorer said 5.7% on the same scale); already within tolerance, heal effects split off unchanged (5.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["type:spell"],
+        "values": [0.03, 0.07, 0.1],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell"],
+        "values": [0.03, 0.07, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell"],
+        "values": [0.037622, 0.087784, 0.125405],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      }
+    ]
+  },
+  "Improved Renew": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-27, holy-heal): removing it costs 0.8% healing capacity in the lab (scorer said 0.8% on the same scale); already within tolerance, heal effects split off unchanged (0.8%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Renew"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["shadow-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Renew"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Renew"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Renew"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Renew"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["shadow-dps"]
+      }
+    ]
+  },
+  "Shadow Affinity": {
+    "note": "2026-09-27 audit: threat reduction on Shadow spells: 0.003/rank raid utility (like Natural Grace and Suppression); the scorer does not read the threat channel. PvP (2026-09-27): zero, defensive: Threat only (-30% Shadow spell threat); players ignore threat.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003
+      }
+    ]
+  }
+}

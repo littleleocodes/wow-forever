@@ -1,0 +1,463 @@
+{
+  "class": "Mage",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Frost is the raid spec while Molten Core and Blackwing Lair are full of fire-immune targets; Fire overtakes it from AQ40/Naxxramas. One mage per raid runs the Winter's Chill support build. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "frost-arcane-power-raid",
+      "name": "Frost — Arcane Power / Frostbolt (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "Highest personal Frostbolt damage in Classic: Arcane Power + Presence of Mind + Arcane Instability from a 31-point Arcane tree, with 20 points in Frost for Improved Frostbolt, Ice Shards, Piercing Ice, Elemental Precision and Frost Channeling. The build to run while fire-immune bosses dominate (MC/BWL).",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
+          ["Magic Absorption", 2],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Arcane Resilience", 1],
+          ["Arcane Meditation", 3],
+          ["Presence of Mind", 1],
+          ["Arcane Mind", 5],
+          ["Arcane Instability", 3],
+          ["Arcane Power", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Piercing Ice", 3],
+          ["Cold Snap", 1],
+          ["Frost Channeling", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Arcane Power", "why": "+30% spell damage for 15s every 3 minutes; stacks with trinkets for huge burst windows."},
+        {"talent": "Presence of Mind", "why": "Instant Frostbolt; combined with Arcane Power for burst."},
+        {"talent": "Arcane Instability", "why": "+3% damage and +3% crit to everything."},
+        {"talent": "Ice Shards", "why": "+100% Frostbolt crit damage."},
+        {"talent": "Improved Frostbolt", "why": "-0.5s cast time on the only spell you cast."},
+        {"talent": "Elemental Precision", "why": "+6% hit for Frost/Fire — the most valuable points in the tree."},
+        {"talent": "Piercing Ice", "why": "+6% Frost damage."},
+        {"talent": "Arcane Concentration", "why": "Clearcasting procs = free Frostbolts and better mana."},
+        {"talent": "Frost Channeling", "why": "-15% Frost mana cost, -30% Frost threat."},
+        {"talent": "Arcane Mind", "why": "+10% Intellect — mana and crit."},
+        {"talent": "Arcane Meditation", "why": "+15% mana regen while casting."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Magic Absorption 2 + Improved Arcane Explosion 3",
+          "alternatives": ["Magic Attunement", "Wand Specialization", "Improved Counterspell"],
+          "why": "Pure filler to reach the tier requirements in Arcane."
+        },
+        {
+          "points": 1,
+          "default": "Cold Snap",
+          "alternatives": ["Arctic Reach", "Frost Warding"],
+          "why": "Twentieth Frost point; Cold Snap is nice for Ice Block if you have it (you don't here), so Arctic Reach is a fair alternative."
+        }
+      ],
+      "notes": ["Frostbolt spam; Arcane Power + Presence of Mind + trinkets on the pull or during burn phases.", "No Ice Block or Ice Barrier — this is a pure damage build."],
+      "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "frost-winters-chill-raid",
+      "name": "Frost — Winter's Chill (raid support)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "One mage per raid runs this: Winter's Chill stacks +10% Frost crit on the boss for every other mage. It also brings Ice Block, Ice Barrier and Shatter, so it is the safest build for progression. Personal damage is a little below the Arcane Power build.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Arcane Meditation", 2]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Piercing Ice", 3],
+          ["Cold Snap", 1],
+          ["Frost Channeling", 3],
+          ["Shatter", 5],
+          ["Ice Block", 1],
+          ["Winter's Chill", 5],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Winter's Chill", "why": "Stacking +2% Frost crit debuff (to 10%) for the whole raid's frost mages."},
+        {"talent": "Ice Shards", "why": "+100% Frostbolt crit damage — with Winter's Chill up you crit often."},
+        {"talent": "Improved Frostbolt", "why": "Cast time."},
+        {"talent": "Elemental Precision", "why": "+6% hit."},
+        {"talent": "Piercing Ice", "why": "+6% Frost damage."},
+        {"talent": "Ice Block", "why": "Immunity; the progression safety button."},
+        {"talent": "Ice Barrier", "why": "Absorb shield, prevents pushback."},
+        {"talent": "Shatter", "why": "+50% crit on Frozen targets — dungeons and AoE packs."},
+        {"talent": "Arcane Concentration", "why": "Clearcasting."},
+        {"talent": "Frost Channeling", "why": "Mana and threat."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Improved Arcane Explosion 3 + Arcane Meditation 2",
+          "alternatives": ["Magic Attunement 2 + Arcane Meditation 3", "Magic Absorption"],
+          "why": "Reach Arcane Meditation any way you like."
+        },
+        {
+          "points": 2,
+          "default": "Improved Frost Nova",
+          "alternatives": ["Permafrost", "Frostbite"],
+          "why": "Improved Frost Nova is the prerequisite for Shatter."
+        }
+      ],
+      "notes": ["Standard 17/0/34; Wowhead/Icy Veins list minor variants (Arctic Reach, Improved Blizzard for AoE farming)."],
+      "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents", "https://www.warcrafttavern.com/wow-classic/guides/pve-frost-mage-talents-builds/"]
+    },
+    {
+      "id": "fire-raid",
+      "name": "Fire (raid DPS, AQ40 / Naxxramas)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Once fire-immune bosses are behind you, Fire is the top damage: Ignite (40% of crit damage as a rolling DoT, shared across all fire mages), Improved Scorch (+15% fire damage taken), Critical Mass, Fire Power and Combustion. Arcane still supplies Clearcasting and Arcane Meditation; Elemental Precision is taken from Frost for hit.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 3],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Magic Attunement", 2],
+          ["Arcane Meditation", 2]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Ignite", 5],
+          ["Flame Throwing", 2],
+          ["Incinerate", 1],
+          ["Pyroblast", 1],
+          ["Burning Soul", 2],
+          ["Improved Scorch", 3],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Ignite", "why": "Crits add a DoT worth 40% of the crit; with several fire mages the Ignite stack is the biggest damage source in the raid."},
+        {"talent": "Improved Scorch", "why": "+15% Fire damage taken on the boss; one mage maintains it."},
+        {"talent": "Fire Power", "why": "+10% Fire damage."},
+        {"talent": "Critical Mass", "why": "+6% Fire crit."},
+        {"talent": "Improved Fireball", "why": "-0.5s Fireball cast."},
+        {"talent": "Elemental Precision", "why": "+6% hit."},
+        {"talent": "Combustion", "why": "Guaranteed crits until three land — the burst cooldown."},
+        {"talent": "Master of Elements", "why": "30% mana back on crits."},
+        {"talent": "Arcane Concentration", "why": "Clearcasting."},
+        {"talent": "Burning Soul", "why": "-20% Fire threat and pushback resistance — fire mages pull threat."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Arcane Focus",
+          "alternatives": ["Improved Arcane Missiles"],
+          "why": "Tier-1 Arcane filler; Arcane Focus only helps Arcane Explosion here."
+        },
+        {
+          "points": 5,
+          "default": "Improved Arcane Explosion 3 + Magic Attunement 2",
+          "alternatives": ["Arcane Resilience + Magic Absorption"],
+          "why": "Reach Arcane Meditation."
+        },
+        {
+          "points": 3,
+          "default": "Flame Throwing 2 + Incinerate 1",
+          "alternatives": ["Improved Fire Blast", "Impact"],
+          "why": "Tier-2/3 Fire filler to unlock Improved Scorch and Master of Elements."
+        },
+        {
+          "points": 2,
+          "default": "Arcane Meditation",
+          "alternatives": ["Burning Soul (if dropped)", "Blast Wave"],
+          "why": "Trade mana regen against threat/AoE as gear improves."
+        }
+      ],
+      "notes": ["Scorch x5 to apply Improved Scorch, then Fireball; keep Fire Blast on cooldown only if movement forces it.", "Not usable in Molten Core; most of Blackwing Lair is fire-resistant as well."],
+      "sources": ["https://www.icy-veins.com/wow-classic/mage-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-frost",
+      "name": "Frost (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The standard Classic PvP mage: Shatter combos, Ice Block, Ice Barrier, Improved Cone of Cold, Permafrost, Cold Snap and Improved Counterspell, with Arcane taken to Arcane Meditation for regen.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Magic Attunement", 2],
+          ["Improved Counterspell", 2],
+          ["Arcane Meditation", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Permafrost", 3],
+          ["Piercing Ice", 3],
+          ["Cold Snap", 1],
+          ["Arctic Reach", 2],
+          ["Shatter", 5],
+          ["Ice Block", 1],
+          ["Improved Cone of Cold", 3],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shatter", "why": "+50% crit against Frozen targets: Frost Nova -> Frostbolt/Cone of Cold crits."},
+        {"talent": "Ice Block", "why": "Immunity."},
+        {"talent": "Ice Barrier", "why": "Shield that stops pushback."},
+        {"talent": "Improved Counterspell", "why": "4s silence on Counterspell."},
+        {"talent": "Cold Snap", "why": "Second Ice Block / Frost Nova."},
+        {"talent": "Permafrost", "why": "Longer, stronger chills."},
+        {"talent": "Improved Cone of Cold", "why": "+35% Cone of Cold damage — the Shatter finisher."},
+        {"talent": "Arctic Reach", "why": "+20% range on Frostbolt/Blizzard and Frost Nova/Cone of Cold radius."},
+        {"talent": "Ice Shards", "why": "Frost crit damage."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Piercing Ice",
+          "alternatives": ["Frostbite"],
+          "why": "Flat damage vs. random freeze procs."
+        },
+        {
+          "points": 6,
+          "default": "Improved Arcane Explosion 3 + Magic Attunement 2 + Arcane Meditation 1",
+          "alternatives": ["Magic Absorption", "Arcane Resilience"],
+          "why": "Filler on the way to Improved Counterspell."
+        }
+      ],
+      "notes": ["Some PvP mages prefer 0/0/51-style deep frost or the PoM/Pyro (Arcane/Fire) burst build; this is the all-round choice."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/mage/dps-pvp-arena"]
+    },
+    {
+      "id": "aoe-grinding-frost",
+      "name": "AoE grinding — Frost (Improved Blizzard)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "The community AoE-farming build (Icy Veins' 1-60 AoE grinding build): control first — Elemental Precision so nothing resists, Improved Frost Nova, Permafrost and Improved Blizzard so a pack stays snared through two Blizzards, Cold Snap/Ice Block/Ice Barrier for bad pulls and for gathering — then damage (Piercing Ice, Ice Shards, Improved Cone of Cold) and Arcane mana talents. No Frostbite (freezes scatter the clump) and no Shatter (mobs are only frozen during the Nova, and the points buy more control elsewhere). Warcraft Tavern's 7/0/44 variant spends the Arcane points in Frost instead.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 3],
+          ["Wand Specialization", 2],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Arcane Resilience", 1],
+          ["Arcane Meditation", 3]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Elemental Precision", 3],
+          ["Frost Warding", 2],
+          ["Improved Frost Nova", 2],
+          ["Permafrost", 3],
+          ["Ice Shards", 5],
+          ["Cold Snap", 1],
+          ["Piercing Ice", 3],
+          ["Improved Blizzard", 3],
+          ["Arctic Reach", 2],
+          ["Frost Channeling", 3],
+          ["Ice Block", 1],
+          ["Improved Cone of Cold", 3],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-12", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
+        {"levels": "13-14", "tree": "Frost", "talent": "Frost Warding", "points": 2},
+        {"levels": "15-16", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
+        {"levels": "17-19", "tree": "Frost", "talent": "Permafrost", "points": 3},
+        {"levels": "20-22", "tree": "Frost", "talent": "Improved Blizzard", "points": 3},
+        {"levels": "23", "tree": "Frost", "talent": "Cold Snap", "points": 1},
+        {"levels": "24-26", "tree": "Frost", "talent": "Piercing Ice", "points": 3},
+        {"levels": "27-29", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
+        {"levels": "30-31", "tree": "Frost", "talent": "Arctic Reach", "points": 2},
+        {"levels": "32", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "33-35", "tree": "Frost", "talent": "Improved Cone of Cold", "points": 3},
+        {"levels": "36-39", "tree": "Frost", "talent": "Ice Shards", "points": 4},
+        {"levels": "40", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
+        {"levels": "41-42", "tree": "Arcane", "talent": "Arcane Focus", "points": 2},
+        {"levels": "43-44", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
+        {"levels": "45", "tree": "Arcane", "talent": "Arcane Focus", "points": 1},
+        {"levels": "46-50", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
+        {"levels": "51", "tree": "Arcane", "talent": "Arcane Resilience", "points": 1},
+        {"levels": "52-54", "tree": "Arcane", "talent": "Improved Arcane Explosion", "points": 3},
+        {"levels": "55", "tree": "Arcane", "talent": "Wand Specialization", "points": 1},
+        {"levels": "56-58", "tree": "Arcane", "talent": "Arcane Meditation", "points": 3},
+        {"levels": "59", "tree": "Frost", "talent": "Ice Shards", "points": 1},
+        {"levels": "60", "tree": "Arcane", "talent": "Wand Specialization", "points": 1}
+      ],
+      "core": [
+        {"talent": "Improved Blizzard", "why": "The essential talent: Blizzard kills the pack while its snare keeps the pack off you."},
+        {"talent": "Permafrost", "why": "Makes the Blizzard chill last long enough for the second Blizzard to land before it wears off."},
+        {"talent": "Improved Frost Nova", "why": "Nova every 21s instead of 25s: a second Nova is up when the pack closes, and there is margin for a resist."},
+        {"talent": "Elemental Precision", "why": "One resist in a pack of 8 means melee damage; hit is control here, not DPS."},
+        {"talent": "Arctic Reach", "why": "Blizzard from further away (less melee damage) and a bigger Nova/Cone of Cold radius."},
+        {"talent": "Cold Snap", "why": "A second Nova and Ice Block when a pull goes wrong."},
+        {"talent": "Ice Block", "why": "Pull-and-block gathering; the emergency button."},
+        {"talent": "Ice Barrier", "why": "Gather on the mount without being dazed off it; an escape when running."},
+        {"talent": "Improved Cone of Cold", "why": "Cone of Cold is cast every pack when the mobs close."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Arcane Focus 3",
+          "alternatives": ["Improved Arcane Missiles 1"],
+          "why": "Fifth Arcane tier-1 point; Icy Veins takes two Arcane Focus, any tier-1 point works."
+        },
+        {
+          "points": 19,
+          "default": "Arcane mana talents",
+          "alternatives": ["7/0/44 (Warcraft Tavern): Shatter and the remaining Frost talents instead of Arcane"],
+          "why": "Arcane Concentration + Arcane Meditation cut drinking; the deep-Frost variant trades that for Shatter crits during the Nova window."
+        }
+      ],
+      "notes": ["Never take Frostbite in this build: random freezes scatter the clump and mobs drift out of Blizzard.", "Warcraft Tavern's guide keeps Improved Blizzard at 2/3 so the Blizzard chill does not overwrite Cone of Cold's stronger snare; Icy Veins takes 3/3.", "Loop: gather (mount / Ice Barrier / pull-and-Ice Block), Frost Nova, Blink to range, two Blizzards, Cone of Cold as they close, kite until Nova is back, repeat; Arcane Explosion / wand for the last slivers."],
+      "sources": ["https://www.icy-veins.com/wow-classic/aoe-grinding-frost-mage-leveling-talent-build-from-1-to-60", "https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/", "https://noobtoboss.com/wow-classic-mage-aoe-farming-guide/"]
+    },
+    {
+      "id": "aoe-grinding-frost-deep",
+      "name": "AoE grinding — deep Frost 7/0/44 (Shatter + Winter's Chill)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "alternative",
+      "based_on": "aoe-grinding-frost",
+      "summary": "Warcraft Tavern's AoE build, decoded from the guide's talent-calculator link (the prose names only a few talents): the same control core as the Icy Veins build (Improved Frost Nova, Permafrost, Improved Blizzard 2/3 so the Cone of Cold snare is not overwritten, Arctic Reach, Cold Snap, Ice Block, Ice Barrier, no Frostbite) but the Arcane mana points go into Frost instead: Shatter 5/5 for crits during the Nova window, Winter's Chill 5/5, Improved Frostbolt 5 as the tier-1 filler.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 3],
+          ["Arcane Concentration", 2]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Permafrost", 3],
+          ["Piercing Ice", 3],
+          ["Cold Snap", 1],
+          ["Improved Blizzard", 2],
+          ["Arctic Reach", 2],
+          ["Frost Channeling", 3],
+          ["Shatter", 5],
+          ["Ice Block", 1],
+          ["Improved Cone of Cold", 3],
+          ["Winter's Chill", 5],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Blizzard", "why": "2/3 on purpose: 'otherwise it will cancel out your snare from Cone of Cold'."},
+        {"talent": "Shatter", "why": "Crits on the Nova-frozen pack (the guide's link takes 5/5; Icy Veins' build does not take it)."},
+        {"talent": "Improved Cone of Cold", "why": "'You will be using Cone of Cold rather frequently and the 35% increase in damage is very helpful.'"},
+        {"talent": "Ice Barrier", "why": "'One of the easiest ways to round up mobs' - run through them shielded until they are grouped for Frost Nova."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Winter's Chill 5",
+          "alternatives": ["Arcane Meditation 3 + Wand Specialization 2 (the Icy Veins split)"],
+          "why": "Winter's Chill stacks slowly on a pack that dies in 30s; the Arcane split trades it for regen."
+        }
+      ],
+      "notes": ["Loop per the guide: Cone of Cold, Frost Nova, Blink to max range, two Blizzards, Cone of Cold again as they close, Nova and repeat.", "Frostbite: 'Do NOT put points into this talent, as it will cause issues with being able to properly clump the mobs together.'"],
+      "sources": ["https://www.warcrafttavern.com/wow-classic/guides/frost-mage-aoe/", "https://www.warcrafttavern.com/tools/talent-calculator/mage?t=A0011166C1111122244444667778889bbccdddeeeeehiiimmmmmp"]
+    },
+    {
+      "id": "leveling-frost",
+      "name": "Leveling — Frost",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Frost from 10 to 60: Improved Frostbolt and Ice Shards early, Shatter at 30, Ice Block at 34, then Winter's Chill and Ice Barrier. Ends in the 17/0/34 Winter's Chill raid build so you can raid immediately.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
+          ["Arcane Concentration", 5],
+          ["Improved Arcane Explosion", 3],
+          ["Arcane Meditation", 2]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 3],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Piercing Ice", 3],
+          ["Cold Snap", 1],
+          ["Frost Channeling", 3],
+          ["Shatter", 5],
+          ["Ice Block", 1],
+          ["Winter's Chill", 5],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Frost", "talent": "Improved Frostbolt", "points": 5},
+        {"levels": "15-19", "tree": "Frost", "talent": "Ice Shards", "points": 5},
+        {"levels": "20-21", "tree": "Frost", "talent": "Improved Frost Nova", "points": 2},
+        {"levels": "22-24", "tree": "Frost", "talent": "Piercing Ice", "points": 3},
+        {"levels": "25", "tree": "Frost", "talent": "Cold Snap", "points": 1},
+        {"levels": "26-30", "tree": "Frost", "talent": "Shatter", "points": 5},
+        {"levels": "31-33", "tree": "Frost", "talent": "Frost Channeling", "points": 3},
+        {"levels": "34", "tree": "Frost", "talent": "Ice Block", "points": 1},
+        {"levels": "35-37", "tree": "Frost", "talent": "Elemental Precision", "points": 3},
+        {"levels": "38-42", "tree": "Frost", "talent": "Winter's Chill", "points": 5},
+        {"levels": "43", "tree": "Frost", "talent": "Ice Barrier", "points": 1},
+        {"levels": "44-45", "tree": "Arcane", "talent": "Arcane Subtlety", "points": 2},
+        {"levels": "46-50", "tree": "Arcane", "talent": "Arcane Focus", "points": 5},
+        {"levels": "51-55", "tree": "Arcane", "talent": "Arcane Concentration", "points": 5},
+        {"levels": "56-58", "tree": "Arcane", "talent": "Improved Arcane Explosion", "points": 3},
+        {"levels": "59-60", "tree": "Arcane", "talent": "Arcane Meditation", "points": 2}
+      ],
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "Faster Frostbolt from level 10."},
+        {"talent": "Shatter", "why": "Frost Nova -> crit at 30 makes every pull a kite."},
+        {"talent": "Ice Block", "why": "The 'oops' button at 34."},
+        {"talent": "Ice Barrier", "why": "Shield at 43; no more pushback."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Winter's Chill",
+          "alternatives": ["Improved Blizzard 3 + Permafrost 2 (AoE farming)"],
+          "why": "If you AoE-grind, take Improved Blizzard/Permafrost while leveling and respec into Winter's Chill at 60."
+        }
+      ],
+      "notes": ["Frostbolt -> Frost Nova -> Frostbolt/Cone of Cold; Blizzard kiting in open areas once you have Improved Blizzard (if taken)."],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/mage/leveling-talents"]
+    }
+  ]
+}

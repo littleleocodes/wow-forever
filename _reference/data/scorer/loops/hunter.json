@@ -1,0 +1,144 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "bm-leveling": {
+    "profiles": ["leveling-st", "solo-60"],
+    "reference": {"classic-era": "leveling-beast-mastery"},
+    "purpose": "The pet tanks, the hunter shoots: 'as Beast Mastery, your pet will take less damage and deal more damage, allowing it to hold threat more easily' (Icy Veins).",
+    "loop": ["send the pet", "Hunter's Mark, Serpent Sting, Auto Shot / Aimed Shot / Multi-Shot", "Mend Pet between pulls", "Feign Death / Concussive Shot if the mob turns"],
+    "constraints": ["pet threat is the safety mechanism: pet damage talents are survivability, not just DPS (model: pet_dmg_to_surv)", "mana and pet health decide the downtime"],
+    "talents": {
+      "Improved Aspect of the Hawk": {
+        "role": "throughput",
+        "why": "'A huge damage gain when it procs, making it a solid choice for both leveling and at Level 60.'",
+        "encoded": "manual haste EV per rank",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Improved Revive Pet": {
+        "role": "safety",
+        "why": "'Hugely important for if your pet ever dies during combat and just to make it easier to cast.'",
+        "encoded": "sustain per rank (downtime after a pet death)",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Endurance Training": {
+        "role": "filler",
+        "why": "Icy Veins prefers Thick Hide (pet armor) over Endurance Training; both are tier-1 paths. The model values pet health at ~0.2%/rank of leveling time.",
+        "encoded": "parsed pet_surv",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Unleashed Fury": {
+        "role": "enabler",
+        "why": "'Solid damage increases for your pet, which will also increase its threat generation.'",
+        "encoded": "parsed pet damage + pet_dmg_to_surv link",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Ferocity": {
+        "role": "throughput",
+        "why": "Same as Unleashed Fury: pet damage and threat.",
+        "encoded": "parsed pet crit + pet_dmg_to_surv link",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Frenzy": {
+        "role": "enabler",
+        "why": "'One of the most powerful talents', increasing the 'pet's damage and threat immensely'.",
+        "encoded": "manual pet haste",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Bestial Wrath": {
+        "role": "throughput",
+        "why": "'An incredible damage cooldown... what makes this spec viable at low gear levels at Level 60.'",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Efficiency": {
+        "role": "sustain",
+        "why": "'If you plan on doing no PvP at all, take Efficiency' (else Improved Concussive Shot).",
+        "encoded": "parsed mana",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Lethal Shots": {
+        "role": "throughput",
+        "why": "'A strong damage increase' - low at leveling crit rates, taken on the way to Aimed Shot.",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Mortal Shots": {
+        "role": "throughput",
+        "why": "'A solid damage increase' at 60; small at 5% crit while leveling.",
+        "encoded": "manual crit bonus",
+        "sources": ["https://www.icy-veins.com/wow-classic/beast-mastery-hunter-leveling-guide-1-60"]
+      },
+      "Hawk Eye": {
+        "role": "control",
+        "why": "Range: one more shot before the mob arrives and a wider kiting / dead-zone margin.",
+        "encoded": "dmg +0.5%/rank, surv +1%/rank in leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+      },
+      "Bestial Discipline": {
+        "role": "sustain",
+        "why": "+20% pet Focus regeneration (more Claw / Bite: pet damage and threat) and 50% of the hunter's regen while casting (beta); one point on the way to Bestial Wrath.",
+        "encoded": "manual pet dmg + regen",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/hunter.json)"]
+      }
+    }
+  },
+  "mm-raid": {
+    "profiles": ["raid-dps"],
+    "reference": {"classic-era": "bm-mm-raid"},
+    "purpose": "Aimed Shot / Multi-Shot / Auto Shot weaving with Trueshot Aura for the melee group; mana lasts the fight.",
+    "loop": ["Auto Shot", "Aimed Shot", "Multi-Shot", "Serpent Sting only on long fights", "Feign Death for threat"],
+    "constraints": ["hunters are mana-bound in long fights: Efficiency is core (model: raid mana weight 0.5 for hunter models)", "one hunter carries Improved Hunter's Mark for all"],
+    "talents": {
+      "Efficiency": {
+        "role": "sustain",
+        "why": "Mana on every shot; hunters run dry on long fights without it.",
+        "encoded": "parsed mana with spec mana_weight 0.5",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+      },
+      "Hawk Eye": {
+        "role": "utility",
+        "why": "Preference point: 'one of you should take all 5 points in Improved Hunter's Mark instead of either Ferocity or Hawk Eye'.",
+        "encoded": "utility 0.3%/rank raid",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+      },
+      "Improved Hunter's Mark": {
+        "role": "utility",
+        "why": "'Only 1 Hunter in the raid needs to use Hunter's Mark for all hunters to benefit from it' - raid attack power, not your own DPS.",
+        "encoded": "manual small dmg + raid utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+      },
+      "Endurance Training": {
+        "role": "filler",
+        "why": "'Improved Revive Pet vs. Endurance Training: personal preference and depends on how often you think your pet will die.'",
+        "encoded": "parsed pet_surv",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents"]
+      },
+      "Trueshot Aura": {
+        "role": "raid-buff",
+        "why": "Brings trueshot aura to 4 others (a party aura: the hunter sits in a melee group of four others); worth classic-era: +2.8% per receiver, forever: +2.0% per receiver (buff_value.py).",
+        "encoded": "utility 11.4% (classic-era), 2.0% (forever) in raid-dps (buff_value.py)",
+        "sources": ["https://www.icy-veins.com/wow-classic/hunter-dps-pve-spec-builds-talents", "_reference/raid-buff-values.md"]
+      }
+    }
+  },
+  "melee-dps": {
+    "profiles": ["raid-dps", "leveling-st", "solo-60"],
+    "reference": {},
+    "purpose": "Forever's melee hunter: Survival's melee talents (Savage Strikes, Predator's Edge with dual wield, Expose Prey, Lacerating Strikes, Counterattack, Strider Kick, Lightning Reflexes) with Marksmanship's Lethal Attacks, Careful Aim and Lone Wolf or Beast Mastery's pet talents.",
+    "loop": ["Hunter's Mark and Serpent Sting from range", "Aspect of the Beast", "Raptor Strike on the next swing", "Mongoose Bite whenever a dodge or Expose Prey activates it", "Strider Kick on cooldown", "Counterattack after a parry", "Deterrence when taking too much"],
+    "constraints": ["No community build exists yet: the model's shares are tooltip assumptions until the fight lab's melee rotation calibrates them", "Counterattack needs Deterrence (1 point); Lacerating Strikes needs Expose Prey 2/2"],
+    "talents": {
+      "Deterrence": {
+        "role": "enabler",
+        "why": "Prerequisite of Counterattack; also the melee hunter's survival cooldown.",
+        "encoded": "surv + Counterattack burst (melee model)",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/hunter.json)"]
+      },
+      "Survivalist's Discipline": {
+        "role": "utility",
+        "why": "-40% Deterrence and trap cooldowns: more Deterrence uptime for a hunter standing in melee.",
+        "encoded": "manual utility",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/hunter.json)"]
+      }
+    }
+  }
+}

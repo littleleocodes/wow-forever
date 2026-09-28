@@ -1,0 +1,84 @@
+{
+  "_doc": "Spec purpose files: what each spec/use-case is meant to do, the loop it runs, and why the community takes each talent the model would otherwise mis-value (from loop_audit.py). Roles: enabler (the loop does not work without it), control (positioning/safety that keeps the loop running), safety (deaths/emergencies), throughput, sustain, utility, filler (cheapest legal path to a deeper talent - the model may legitimately pick a different filler), avoid (harms the loop). 'encoded' says how the reason is expressed in the manual effect files; sources are the guides the reason comes from.",
+  "combat-swords-raid": {
+    "profiles": ["raid-dps", "leveling-st", "solo-60"],
+    "reference": {"classic-era": "combat-swords-raid / leveling-combat-swords"},
+    "purpose": "Sinister Strike builder, Slice and Dice up, Eviscerate/Rupture, Blade Flurry and Adrenaline Rush on cooldown.",
+    "loop": ["Slice and Dice", "Sinister Strike x4-5", "Eviscerate (or refresh Slice and Dice)", "Blade Flurry / Adrenaline Rush on cooldown"],
+    "constraints": ["energy is the resource: 'Improved Sinister Strike nets you a total Energy cost reduction of 5, allowing you to cast more Sinister Strikes'", "'Improved Slice and Dice is a staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff'", "Combat tier fillers (Lightning Reflexes, Endurance, Improved Sprint, Improved Gouge) are chosen because the alternatives do nothing in raids either"],
+    "talents": {
+      "Lightning Reflexes": {
+        "role": "filler",
+        "why": "Raid: tier filler (dodge does nothing on bosses); leveling: 1% dodge per rank.",
+        "encoded": "parsed dodge (leveling value only)",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Endurance": {
+        "role": "safety",
+        "why": "Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler.",
+        "encoded": "surv +1.5%/rank leveling",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Improved Sprint": {
+        "role": "filler",
+        "why": "PvP/utility filler.",
+        "encoded": "utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Improved Gouge": {
+        "role": "filler",
+        "why": "Filler on the daggers path.",
+        "encoded": "utility",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Improved Slice and Dice": {
+        "role": "enabler",
+        "why": "'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.'",
+        "encoded": "manual SnD uptime damage",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Weapon Expertise": {
+        "role": "throughput",
+        "why": "+5 weapon skill: fewer glancing blows and misses on bosses.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Murder": {
+        "role": "throughput",
+        "why": "+2% vs humanoids/giants/beasts/dragonkin - most raid bosses.",
+        "encoded": "manual",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Lethality": {
+        "role": "throughput",
+        "why": "Crit damage on Sinister Strike/Backstab; small at leveling crit rates.",
+        "encoded": "parsed crit bonus",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Improved Eviscerate": {
+        "role": "throughput",
+        "why": "Eviscerate is the leveling finisher.",
+        "encoded": "parsed dmg on the finisher source",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Malice": {
+        "role": "throughput",
+        "why": "+5% crit with all attacks and poisons: Assassination tier-1 on the way to Improved Backstab and Lethality; the model values it 0.3%/point because half of a daggers rogue's damage is white swings.",
+        "encoded": "parsed crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Dagger Specialization": {
+        "role": "throughput",
+        "why": "+1%/rank dagger crit (Classic): the daggers build's Combat tier-3 point spend, the counterpart of Sword Specialization.",
+        "encoded": "manual crit",
+        "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+      },
+      "Deflection": {
+        "role": "filler",
+        "why": "+6% parry (beta): the Combat tier-1 path of the Forever draft; a parry feeds Riposte.",
+        "encoded": "parsed surv",
+        "sources": ["beta client 1.60.1.70009 tooltip (_reference/data/forever-talents/rogue.json)"]
+      }
+    }
+  }
+}

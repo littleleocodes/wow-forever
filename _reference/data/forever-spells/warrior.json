@@ -1,0 +1,2575 @@
+{
+ "class": "Warrior",
+ "slug": "warrior",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 117,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "same": 60,
+  "changed": 54,
+  "new": 2,
+  "note": 1
+ },
+ "tabs": [
+  {
+   "name": "Arms",
+   "spells": [
+    {
+     "name": "Battle Stance",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2457,
+       "text": "A balanced combat stance.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 sec cooldown",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Charge",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 100,
+       "text": "Charge an enemy, generate 9 Rage, and Stun it for 1 sec. Cannot be used in combat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 4,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6178,
+       "text": "Charge an enemy, generate 12 Rage, and Stun it for 1 sec. Cannot be used in combat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11578,
+       "text": "Charge an enemy, generate 15 Rage, and Stun it for 1 sec. Cannot be used in combat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "15 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hamstring",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1715,
+       "text": "Maims the enemy, causing 5 damage and slowing the enemy's movement by 40% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7372,
+       "text": "Maims the enemy, causing 18 damage and slowing the enemy's movement by 45% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 7373,
+       "text": "Maims the enemy, causing 45 damage and slowing the enemy's movement by 50% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Heroic Strike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 78,
+       "text": "A strong attack that increases melee damage by 11 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 284,
+       "text": "A strong attack that increases melee damage by 21 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 285,
+       "text": "A strong attack that increases melee damage by 32 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1608,
+       "text": "A strong attack that increases melee damage by 44 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11564,
+       "text": "A strong attack that increases melee damage by 58 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11565,
+       "text": "A strong attack that increases melee damage by 80 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 11566,
+       "text": "A strong attack that increases melee damage by 111 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 11567,
+       "text": "A strong attack that increases melee damage by 138 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 25286,
+       "text": "A strong attack that increases melee damage by 157 and causes a high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mocking Blow",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 694,
+       "text": "A mocking attack that causes 22 damage, a moderate amount of threat and forces the target to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7400,
+       "text": "A mocking attack that causes 31 damage, a moderate amount of threat and forces the target to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 7402,
+       "text": "A mocking attack that causes 46 damage, a moderate amount of threat and forces the target to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20559,
+       "text": "A mocking attack that causes 71 damage, a moderate amount of threat and forces the target to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20560,
+       "text": "A mocking attack that causes 93 damage, a moderate amount of threat and forces the target to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mortal Strike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 12294,
+       "text": "A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 21551,
+       "text": "A vicious strike that deals weapon damage plus 110 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 21552,
+       "text": "A vicious strike that deals weapon damage plus 135 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 21553,
+       "text": "A vicious strike that deals weapon damage plus 160 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Overpower",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7384,
+       "text": "Instantly overpower the enemy, causing weapon damage plus 5. Only useable after the target dodges. The Overpower cannot be blocked, dodged or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7887,
+       "text": "Instantly overpower the enemy, causing weapon damage plus 15. Only useable after the target dodges. The Overpower cannot be blocked, dodged or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11584,
+       "text": "Instantly overpower the enemy, causing weapon damage plus 25. Only useable after the target dodges. The Overpower cannot be blocked, dodged or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11585,
+       "text": "Instantly overpower the enemy, causing weapon damage plus 35. Only useable after the target dodges. The Overpower cannot be blocked, dodged or parried.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Rend",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 772,
+       "text": "Wounds the target causing them to bleed for 15 damage over 9 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 4,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6546,
+       "text": "Wounds the target causing them to bleed for 28 damage over 12 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6547,
+       "text": "Wounds the target causing them to bleed for 45 damage over 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6548,
+       "text": "Wounds the target causing them to bleed for 66 damage over 18 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11572,
+       "text": "Wounds the target causing them to bleed for 98 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11573,
+       "text": "Wounds the target causing them to bleed for 126 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 11574,
+       "text": "Wounds the target causing them to bleed for 147 damage over 21 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Retaliation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 20230,
+       "text": "Instantly counterattack any enemy that strikes you in melee for 15 sec. Melee attacks made from behind cannot be counterattacked. A maximum of 30 attacks will cause retaliation.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "15 min cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 min cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Spearing Strike",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1310222,
+       "text": "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "Requires Two-Handed Axes, Two-Handed Maces, Polearms, Two-Handed Swords, Staves",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sweeping Strikes",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12292,
+       "text": "Your next 5 melee attacks strike an additional nearby opponent.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "Requires Battle Stance",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Tactical Mastery",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1310185,
+       "text": "You retain up to 10 Rage when you change Stances.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "note"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Thunder Clap",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6343,
+       "text": "Blasts nearby enemies, increasing the time between their attacks by 20% for 10 sec and doing 10 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies increasing the time between their attacks by 10% for 10 sec and doing 10 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8198,
+       "text": "Blasts nearby enemies with thunder increasing, the time between their attacks by 20% for 14 sec and doing 23 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 14 sec and doing 23 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8204,
+       "text": "Blasts nearby enemies with thunder, increasing the time between their attacks by 20% for 18 sec and doing 37 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 18 sec and doing 37 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8205,
+       "text": "Blasts nearby enemies with thunder, increasing the time between their attacks by 20% for 22 sec and doing 55 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 22 sec and doing 55 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11580,
+       "text": "Blasts nearby enemies with thunder, increasing the time between their attacks by 20% for 26 sec and doing 82 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 26 sec and doing 82 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11581,
+       "text": "Blasts nearby enemies with thunder, increasing the time between their attacks by 20% for 30 sec and doing 103 damage to them. Will affect up to 4 targets.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 58,
+       "classic": {
+        "status": "changed",
+        "text": "Blasts nearby enemies with thunder increasing the time between their attacks by 10% for 30 sec and doing 103 damage to them. Will affect up to 4 targets.",
+        "classic_cost": "20 Rage",
+        "classic_cast": "Instant",
+        "classic_cooldown": "4 sec cooldown",
+        "classic_requires": "Requires Battle Stance",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Victory Rush",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 402927,
+       "text": "Instantly attack the target causing 15% of Attack Power damage and healing you for 10% of your maximum health. Only useable within 20 sec after you kill a non-trivial enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Fury",
+   "spells": [
+    {
+     "name": "Battle Shout",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6673,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 12. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 20. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 5242,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 23. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 39. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6192,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 35. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 59. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11549,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 56. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 94. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11550,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 83. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 139. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11551,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 115. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 193. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 25289,
+       "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 139. Lasts 3 min.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior shouts, increasing the melee attack power of all party members within 20 yards by 232. Lasts 2 min.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Berserker Rage",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 18499,
+       "text": "The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage. Lasts 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Berserker Stance",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2458,
+       "text": "An aggressive stance. Critical strike chance increased by 3% and all damage taken is increased by 10%.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "An aggressive stance. Critical hit chance is increased by 3% and all damage taken is increased by 10%.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Bloodthirst",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 23881,
+       "text": "Instantly attack the target causing damage equal to 35% of your Attack Power plus 30 and increasing your movement speed by 10% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 10 health. This effect lasts 8 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 23892,
+       "text": "Instantly attack the target causing damage equal to 35% of your Attack Power plus 37 and increasing your movement speed by 10% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 13 health. This effect lasts 8 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 23893,
+       "text": "Instantly attack the target causing damage equal to 35% of your Attack Power plus 43 and increasing your movement speed by 10% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 17 health. This effect lasts 8 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 23894,
+       "text": "Instantly attack the target causing damage equal to 35% of your Attack Power plus 48 and increasing your movement speed by 10% for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly attack the target causing damage equal to 45% of your attack power. In addition, the next 5 successful melee attacks will restore 20 health. This effect lasts 8 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Challenging Shout",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1161,
+       "text": "Forces all nearby enemies within 10 yards to focus attacks on you for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Forces all nearby enemies to focus attacks on you for 6 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cleave",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 845,
+       "text": "A sweeping attack that does your weapon damage plus 5 to the target and a second nearby enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "A sweeping attack that does your weapon damage plus 5 to the target and his nearest ally.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7369,
+       "text": "A sweeping attack that does your weapon damage plus 10 to the target and a second nearby enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "A sweeping attack that does your weapon damage plus 10 to the target and his nearest ally.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11608,
+       "text": "A sweeping attack that does your weapon damage plus 18 to the target and a second nearby enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "A sweeping attack that does your weapon damage plus 18 to the target and his nearest ally.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11609,
+       "text": "A sweeping attack that does your weapon damage plus 32 to the target and a second nearby enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "A sweeping attack that does your weapon damage plus 32 to the target and his nearest ally.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20569,
+       "text": "A sweeping attack that does your weapon damage plus 50 to the target and a second nearby enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "Next melee",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "A sweeping attack that does your weapon damage plus 50 to the target and his nearest ally.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Death Wish",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12328,
+       "text": "When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%. Lasts 30 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Demoralizing Shout",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1160,
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 62 for 45 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the melee attack power of all enemies within 10 yards by 45 for 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6190,
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 90 for 45 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the melee attack power of all enemies within 10 yards by 65 for 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11554,
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 111 for 45 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the melee attack power of all enemies within 10 yards by 80 for 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11555,
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 160 for 45 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the melee attack power of all enemies within 10 yards by 115 for 30 sec.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11556,
+       "text": "Reduces the melee attack power of all enemies within 10 yards by 204 for 45 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the melee attack power of all enemies within 10 yards by 146 for 30 sec.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Execute",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 5308,
+       "text": "Attempt to finish off a wounded foe, causing 125 damage and converting each extra point of rage into 3 additional damage. Only usable on enemies that have 20% or less health.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20658,
+       "text": "Attempt to finish off a wounded foe, causing 200 damage and converting each extra point of rage into 6 additional damage. Only usable on enemies that have 20% or less health.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20660,
+       "text": "Attempt to finish off a wounded foe, causing 325 damage and converting each extra point of rage into 9 additional damage. Only usable on enemies that have 20% or less health.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 20661,
+       "text": "Attempt to finish off a wounded foe, causing 450 damage and converting each extra point of rage into 12 additional damage. Only usable on enemies that have 20% or less health.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 20662,
+       "text": "Attempt to finish off a wounded foe, causing 600 damage and converting each extra point of rage into 15 additional damage. Only usable on enemies that have 20% or less health.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Battle Stance, Berserker Stance",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Intercept",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 20252,
+       "text": "Charge an enemy, causing 25 damage and stunning it for 3 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 20616,
+       "text": "Charge an enemy, causing 45 damage and stunning it for 3 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 20617,
+       "text": "Charge an enemy, causing 65 damage and stunning it for 3 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "8-25 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Intimidating Shout",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5246,
+       "text": "The warrior shouts, causing the targeted enemy to cower in fear. Up to 5 total nearby enemies will flee in fear. Lasts 8 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Rage",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Piercing Howl",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12323,
+       "text": "Causes all nearby enemies to be Dazed, reducing movement speed by 50% for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Pummel",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6552,
+       "text": "Pummel the target for 20 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6554,
+       "text": "Pummel the target for 50 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 4 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Recklessness",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1719,
+       "text": "The warrior will gain 100% increased critical strike chance and will be immune to Fear effects for the next 15 sec, but all damage taken is increased by 20%.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "30 min cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 50,
+       "classic": {
+        "status": "changed",
+        "text": "The warrior will cause critical hits with most attacks and will be immune to Fear effects for the next 15 sec, but all damage taken is increased by 20%.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Slam",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1240193,
+       "text": "Slams the opponent, causing weapon damage plus 16.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "1.5 sec cast",
+       "cooldown": "18 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Slams the opponent, causing weapon damage plus 32.",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "1.5 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1464,
+       "text": "Slams the opponent, causing weapon damage plus 32.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "1.5 sec cast",
+       "cooldown": "18 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "1.5 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8820,
+       "text": "Slams the opponent, causing weapon damage plus 43.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "1.5 sec cast",
+       "cooldown": "18 sec cooldown",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "1.5 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11604,
+       "text": "Slams the opponent, causing weapon damage plus 68.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "1.5 sec cast",
+       "cooldown": "18 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "1.5 sec cast",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11605,
+       "text": "Slams the opponent, causing weapon damage plus 87.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "1.5 sec cast",
+       "cooldown": "18 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "1.5 sec cast",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Whirlwind",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1680,
+       "text": "In a whirlwind of steel you attack up to 4 enemies within 8 yards, causing weapon damage to each enemy.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "Requires Berserker Stance",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Protection",
+   "spells": [
+    {
+     "name": "Bloodrage",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2687,
+       "text": "Generates 10 rage at the cost of health, and then generates an additional 10 rage over 10 sec. The warrior is considered in combat for the duration.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Concussion Blow",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12809,
+       "text": "Stuns the target for 5 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "45 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Stuns the opponent for 5 sec.",
+        "classic_cost": "15 Rage",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "45 sec cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Defensive Stance",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 71,
+       "text": "A defensive combat stance. Decreases damage taken by 10% and damage caused by 10%. Increases all threat generated by 30%.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "1 sec cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "A defensive combat stance. Decreases damage taken by 10% and damage caused by 10%. Increases threat generated.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Disarm",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 676,
+       "text": "Disarm the enemy's weapon for 10 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "1 min cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Last Stand",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 12975,
+       "text": "When activated, this ability temporarily grants you 30% of your maximum health for 20 sec. After the effect expires, the health is lost.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, this ability temporarily grants you 30% of your maximum hit points for 20 seconds. After the effect expires, the hit points are lost.",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 min cooldown",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Revenge",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6572,
+       "text": "Instantly counterattack an enemy for 20 to 24 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 12 to 14 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6574,
+       "text": "Instantly counterattack an enemy for 31 to 37 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 18 to 22 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 7379,
+       "text": "Instantly counterattack an enemy for 43 to 53 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 25 to 31 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11600,
+       "text": "Instantly counterattack an enemy for 73 to 91 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 43 to 53 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11601,
+       "text": "Instantly counterattack an enemy for 109 to 133 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 64 to 78 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 25288,
+       "text": "Instantly counterattack an enemy for 138 to 168 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "5 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Instantly counterattack an enemy for 81 to 99 damage and a high amount of threat. Revenge must follow a block, dodge or parry.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shield Bash",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 72,
+       "text": "Bashes the target with your shield for 6 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "12 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1671,
+       "text": "Bashes the target with your shield for 18 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "12 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1672,
+       "text": "Bashes the target with your shield for 45 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "12 sec cooldown",
+       "requires": "Requires Battle Stance, Defensive Stance",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shield Block",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2565,
+       "text": "Increases chance to block by 75% for 7 sec, but will only block 2 attacks.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Rage",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 16,
+       "classic": {
+        "status": "changed",
+        "text": "Increases chance to block by 75% for 5 sec, but will only block 1 attack.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shield Slam",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 23922,
+       "text": "Slam the target with your shield, causing 421 to 439 damage, increased by your Block Value, and has a 50% chance of dispelling 1 magic effect on the target. Causes a very high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Slam the target with your shield, causing 225 to 235 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target. Also causes a high amount of threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 23923,
+       "text": "Slam the target with your shield, causing 494 to 516 damage, increased by your Block Value, and has a 50% chance of dispelling 1 magic effect on the target. Causes a very high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Slam the target with your shield, causing 264 to 276 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target. Also causes a high amount of threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 23924,
+       "text": "Slam the target with your shield, causing 567 to 593 damage, increased by your Block Value, and has a 50% chance of dispelling 1 magic effect on the target. Causes a very high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Slam the target with your shield, causing 303 to 317 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target. Also causes a high amount of threat.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 23925,
+       "text": "Slam the target with your shield, causing 640 to 670 damage, increased by your Block Value, and has a 50% chance of dispelling 1 magic effect on the target. Causes a very high amount of threat.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Slam the target with your shield, causing 342 to 358 damage, modified by your shield block value, and has a 50% chance of dispelling 1 magic effect on the target. Also causes a high amount of threat.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Shield Wall",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 871,
+       "text": "Reduces the damage taken from all attacks by 60% for 12 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "15 min cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Reduces the damage taken from melee attacks, ranged attacks and spells by 75% for 10 sec.",
+        "classic_cast": "Instant",
+        "classic_cooldown": "30 min cooldown",
+        "classic_requires": "Requires Defensive Stance",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sunder Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 7386,
+       "text": "Sunders the target's armor, reducing it by 90 per Sunder Armor and causes a high amount of threat. Can be applied up to 5 times. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 7405,
+       "text": "Sunders the target's armor, reducing it by 180 per Sunder Armor and causes a high amount of threat. Can be applied up to 5 times. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8380,
+       "text": "Sunders the target's armor, reducing it by 270 per Sunder Armor and causes a high amount of threat. Can be applied up to 5 times. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11596,
+       "text": "Sunders the target's armor, reducing it by 360 per Sunder Armor and causes a high amount of threat. Can be applied up to 5 times. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11597,
+       "text": "Sunders the target's armor, reducing it by 450 per Sunder Armor and causes a high amount of threat. Can be applied up to 5 times. Lasts 30 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "15 Rage",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Taunt",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 355,
+       "text": "Taunts the target to attack you, but has no effect if the target is already attacking you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "8 sec cooldown",
+       "requires": "Requires Defensive Stance",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "classic_range": "Melee Range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "10 sec cooldown",
+        "classic_requires": "Requires Defensive Stance",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Throw",
+   "rank": "",
+   "text": "Hurl a thrown weapon at the target.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Shoot Bow",
+   "rank": "",
+   "text": "",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Shoot Crossbow",
+   "rank": "",
+   "text": "Attack with an equipped wand.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Shoot Gun",
+   "rank": "",
+   "text": "",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dual Wield",
+   "rank": "Passive",
+   "text": "Allows one-hand and off-hand weapons to be equipped in the off-hand.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: the ones your class can wear.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Block",
+   "rank": "Passive",
+   "text": "Gives a chance to block enemy melee and ranged attacks.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Parry",
+   "rank": "Passive",
+   "text": "Gives a chance to parry enemy melee attacks.",
+   "tooltip_source": "classic"
+  }
+ ]
+}

@@ -1,0 +1,2581 @@
+{
+ "class": "Rogue",
+ "slug": "rogue",
+ "build": "1.60.1.70009",
+ "captured": "2026-09-25",
+ "export_generated": "2026-09-24",
+ "tooltip_level": 60,
+ "source": "talentsforever.com data export (generated 2026-09-24, CC-BY-4.0, Data from talentsforever.com (https://talentsforever.com)): trainer spellbook and level-60 tooltips read from the WoW: Forever beta client build 1.60.1.70009; 'classic' blocks quote Classic Era where the tooltip differs.",
+ "tooltip_sources": {
+  "beta": 121,
+  "demo": 0,
+  "classic": 0
+ },
+ "classic_status_counts": {
+  "same": 70,
+  "changed": 46,
+  "new": 5
+ },
+ "tabs": [
+  {
+   "name": "Assassination",
+   "spells": [
+    {
+     "name": "Ambush",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8676,
+       "text": "Ambush the target, causing 250% weapon damage plus 70 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 18,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8724,
+       "text": "Ambush the target, causing 250% weapon damage plus 100 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8725,
+       "text": "Ambush the target, causing 250% weapon damage plus 125 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11267,
+       "text": "Ambush the target, causing 250% weapon damage plus 185 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11268,
+       "text": "Ambush the target, causing 250% weapon damage plus 230 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11269,
+       "text": "Ambush the target, causing 250% weapon damage plus 290 to the target. Must be stealthed and behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cheap Shot",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1833,
+       "text": "Stuns the target for 4 sec. Must be stealthed. Awards 2 combo points.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Cold Blood",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14177,
+       "text": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "3 min cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Eviscerate",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2098,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 6-10 damage\n 2 points: 11-15 damage\n 3 points: 16-20 damage\n 4 points: 21-25 damage\n 5 points: 26-30 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6760,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 14-22 damage\n 2 points: 25-33 damage\n 3 points: 36-44 damage\n 4 points: 47-55 damage\n 5 points: 58-66 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 6761,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 25-39 damage\n 2 points: 44-58 damage\n 3 points: 63-77 damage\n 4 points: 82-96 damage\n 5 points: 101-115 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 6762,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 41-61 damage\n 2 points: 72-92 damage\n 3 points: 103-123 damage\n 4 points: 134-154 damage\n 5 points: 165-185 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8623,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 60-90 damage\n 2 points: 105-135 damage\n 3 points: 150-180 damage\n 4 points: 195-225 damage\n 5 points: 240-270 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 8624,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 93-137 damage\n 2 points: 164-208 damage\n 3 points: 235-279 damage\n 4 points: 306-350 damage\n 5 points: 377-421 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage per combo point, increased by Attack Power: 1 point : 99-143 damage 2 points: 176-220 damage 3 points: 253-297 damage 4 points: 330-374 damage 5 points: 407-451 damage",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 11299,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 144-212 damage\n 2 points: 254-322 damage\n 3 points: 364-432 damage\n 4 points: 474-542 damage\n 5 points: 584-652 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 48,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 11300,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 199-295 damage\n 2 points: 350-446 damage\n 3 points: 501-597 damage\n 4 points: 652-748 damage\n 5 points: 803-899 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 31016,
+       "text": "Finishing move that causes damage per combo point, increased by Attack Power:\n 1 point : 224-332 damage\n 2 points: 394-502 damage\n 3 points: 564-672 damage\n 4 points: 734-842 damage\n 5 points: 904-1,012 damage",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage per combo point, increased by Attack Power: 1 point : 224-332 damage 2 points: 394-502 damage 3 points: 564-672 damage 4 points: 734-842 damage 5 points: 904-1012 damage",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Expose Armor",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8647,
+       "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 90 armor\n 2 points: 180 armor\n 3 points: 270 armor\n 4 points: 360 armor\n 5 points: 450 armor",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 80 armor 2 points: 160 armor 3 points: 240 armor 4 points: 320 armor 5 points: 400 armor",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8649,
+       "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 180 armor\n 2 points: 360 armor\n 3 points: 540 armor\n 4 points: 720 armor\n 5 points: 900 armor",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 145 armor 2 points: 290 armor 3 points: 435 armor 4 points: 580 armor 5 points: 725 armor",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8650,
+       "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 270 armor\n 2 points: 540 armor\n 3 points: 810 armor\n 4 points: 1,080 armor\n 5 points: 1,350 armor",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 210 armor 2 points: 420 armor 3 points: 630 armor 4 points: 840 armor 5 points: 1050 armor",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11197,
+       "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 360 armor\n 2 points: 720 armor\n 3 points: 1,080 armor\n 4 points: 1,440 armor\n 5 points: 1,800 armor",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 275 armor 2 points: 550 armor 3 points: 825 armor 4 points: 1100 armor 5 points: 1375 armor",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11198,
+       "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point:\n 1 point : 450 armor\n 2 points: 900 armor\n 3 points: 1,350 armor\n 4 points: 1,800 armor\n 5 points: 2,250 armor",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that exposes the target for 30 sec, reducing armor per combo point: 1 point : 340 armor 2 points: 680 armor 3 points: 1020 armor 4 points: 1360 armor 5 points: 1700 armor",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Garrote",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 703,
+       "text": "Garrote the enemy, causing 144 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8631,
+       "text": "Garrote the enemy, causing 204 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8632,
+       "text": "Garrote the enemy, causing 282 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 8633,
+       "text": "Garrote the enemy, causing 354 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11289,
+       "text": "Garrote the enemy, causing 444 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11290,
+       "text": "Garrote the enemy, causing 552 damage over 18 sec, increased by your Attack Power. Must be stealthed and behind the target. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "50 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Kidney Shot",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 408,
+       "text": "Finishing move that stuns the target. Lasts longer per combo point:\n 1 point : 1 second\n 2 points: 2 seconds\n 3 points: 3 seconds\n 4 points: 4 seconds\n 5 points: 5 seconds",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8643,
+       "text": "Finishing move that stuns the target. Lasts longer per combo point:\n 1 point : 2 seconds\n 2 points: 3 seconds\n 3 points: 4 seconds\n 4 points: 5 seconds\n 5 points: 6 seconds",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mutilate",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1310707,
+       "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Daggers",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 399956,
+       "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 19 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Daggers",
+       "level": 40,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1241582,
+       "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 27 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Daggers",
+       "level": 50,
+       "classic": {
+        "status": "new"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1241584,
+       "text": "Instantly attacks with both weapons for 75% weapon damage plus an additional 38 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Daggers",
+       "level": 60,
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Rupture",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1943,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 25 damage over 8 secs\n 2 points: 37 damage over 10 secs\n 3 points: 51 damage over 12 secs\n 4 points: 68 damage over 14 secs\n 5 points: 87 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 40 damage over 8 secs 2 points: 60 damage over 10 secs 3 points: 84 damage over 12 secs 4 points: 112 damage over 14 secs 5 points: 144 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8639,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 35 damage over 8 secs\n 2 points: 53 damage over 10 secs\n 3 points: 74 damage over 12 secs\n 4 points: 99 damage over 14 secs\n 5 points: 127 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 60 damage over 8 secs 2 points: 90 damage over 10 secs 3 points: 126 damage over 12 secs 4 points: 168 damage over 14 secs 5 points: 216 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8640,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 53 damage over 8 secs\n 2 points: 79 damage over 10 secs\n 3 points: 109 damage over 12 secs\n 4 points: 143 damage over 14 secs\n 5 points: 183 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 88 damage over 8 secs 2 points: 130 damage over 10 secs 3 points: 180 damage over 12 secs 4 points: 238 damage over 14 secs 5 points: 304 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11273,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 76 damage over 8 secs\n 2 points: 110 damage over 10 secs\n 3 points: 149 damage over 12 secs\n 4 points: 195 damage over 14 secs\n 5 points: 246 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 128 damage over 8 secs 2 points: 185 damage over 10 secs 3 points: 252 damage over 12 secs 4 points: 329 damage over 14 secs 5 points: 416 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11274,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 105 damage over 8 secs\n 2 points: 151 damage over 10 secs\n 3 points: 207 damage over 12 secs\n 4 points: 270 damage over 14 secs\n 5 points: 342 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 176 damage over 8 secs 2 points: 255 damage over 10 secs 3 points: 348 damage over 12 secs 4 points: 455 damage over 14 secs 5 points: 576 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11275,
+       "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point:\n 1 point : 159 damage over 8 secs\n 2 points: 222 damage over 10 secs\n 3 points: 295 damage over 12 secs\n 4 points: 377 damage over 14 secs\n 5 points: 469 damage over 16 secs",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Finishing move that causes damage over time, increased by your Attack Power. Lasts longer per combo point: 1 point : 272 damage over 8 secs 2 points: 380 damage over 10 secs 3 points: 504 damage over 12 secs 4 points: 644 damage over 14 secs 5 points: 800 damage over 16 secs",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Slice and Dice",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 5171,
+       "text": "Finishing move that increases melee attack speed by 20%. Lasts longer per combo point:\n 1 point : 9 seconds\n 2 points: 12 seconds\n 3 points: 15 seconds\n 4 points: 18 seconds\n 5 points: 21 seconds",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6774,
+       "text": "Finishing move that increases melee attack speed by 30%. Lasts longer per combo point:\n 1 point : 9 seconds\n 2 points: 12 seconds\n 3 points: 15 seconds\n 4 points: 18 seconds\n 5 points: 21 seconds",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Venom",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1310703,
+       "text": "Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:\n 1 point : 9 seconds\n 2 points: 12 seconds\n 3 points: 15 seconds\n 4 points: 18 seconds\n 5 points: 21 seconds",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "100 yd range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "new"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Combat",
+   "spells": [
+    {
+     "name": "Adrenaline Rush",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 13750,
+       "text": "Increases your Energy regeneration rate by 100% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 40,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Backstab",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 53,
+       "text": "Backstab the target, causing 150% weapon damage plus 15 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 4,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2589,
+       "text": "Backstab the target, causing 150% weapon damage plus 30 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 2590,
+       "text": "Backstab the target, causing 150% weapon damage plus 48 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 2591,
+       "text": "Backstab the target, causing 150% weapon damage plus 69 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 8721,
+       "text": "Backstab the target, causing 150% weapon damage plus 90 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 36,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11279,
+       "text": "Backstab the target, causing 150% weapon damage plus 135 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 44,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 11280,
+       "text": "Backstab the target, causing 150% weapon damage plus 165 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 11281,
+       "text": "Backstab the target, causing 150% weapon damage plus 210 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 9",
+       "id": 25300,
+       "text": "Backstab the target, causing 150% weapon damage plus 225 to the target. Must be behind the target. Requires a dagger in the main hand. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "60 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blade Flurry",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 13877,
+       "text": "Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Evasion",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 5277,
+       "text": "The rogue's dodge chance will increase by 50% for 15 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 8,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Feint",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1966,
+       "text": "Performs a feint, causing no damage but lowering your threat by a small amount, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 16,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 6768,
+       "text": "Performs a feint, causing no damage but lowering your threat by a medium amount, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 28,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8637,
+       "text": "Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11303,
+       "text": "Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 52,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 25302,
+       "text": "Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "20 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Gouge",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1776,
+       "text": "Causes 10 damage, stops your attack, and incapacitates the target for 4 sec. The target must be facing you. Any damage taken will break the effect. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 10 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1777,
+       "text": "Causes 20 damage, stops your attack, and incapacitates the target for 4 sec. The target must be facing you. Any damage taken will break the effect. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 18,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 20 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8629,
+       "text": "Causes 32 damage, stops your attack, and incapacitates the target for 4 sec. The target must be facing you. Any damage taken will break the effect. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 32 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11285,
+       "text": "Causes 55 damage, stops your attack, and incapacitates the target for 4 sec. The target must be facing you. Any damage taken will break the effect. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 55 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11286,
+       "text": "Causes 75 damage, stops your attack, and incapacitates the target for 4 sec. The target must be facing you. Any damage taken will break the effect. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Causes 75 damage, incapacitating the opponent for 4 sec, and turns off your attack. Target must be facing you. Any damage caused will revive the target. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Kick",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1766,
+       "text": "A quick kick that injures a single foe for 15 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 5 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 12,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1767,
+       "text": "A quick kick that injures a single foe for 30 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 5 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 26,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1768,
+       "text": "A quick kick that injures a single foe for 45 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 5 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1769,
+       "text": "A quick kick that injures a single foe for 80 damage. It also interrupts spellcasting and prevents any spell in that school from being cast for 5 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "25 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Riposte",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14251,
+       "text": "A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "10 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "6 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sinister Strike",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1752,
+       "text": "An instant strike that causes 3 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1757,
+       "text": "An instant strike that causes 6 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 6,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1758,
+       "text": "An instant strike that causes 10 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 14,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1759,
+       "text": "An instant strike that causes 15 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 1760,
+       "text": "An instant strike that causes 22 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 8621,
+       "text": "An instant strike that causes 33 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 38,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 7",
+       "id": 11293,
+       "text": "An instant strike that causes 52 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 46,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 8",
+       "id": 11294,
+       "text": "An instant strike that causes 68 damage in addition to your normal weapon damage. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "45 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 54,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sprint",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2983,
+       "text": "Increases the rogue's movement speed by 50% for 15 sec. Does not break stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 10,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8696,
+       "text": "Increases the rogue's movement speed by 60% for 15 sec. Does not break stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11305,
+       "text": "Increases the rogue's movement speed by 70% for 15 sec. Does not break stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "",
+       "level": 58,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Subtlety",
+   "spells": [
+    {
+     "name": "Blind",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 2094,
+       "text": "Blinds the target, causing it to wander disoriented for up to 10 sec. Any damage caused will remove the effect.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Energy",
+       "range": "10 yd range",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "Reagents: Blinding Powder",
+       "level": 34,
+       "classic": {
+        "status": "changed",
+        "classic_cost": "30 Energy",
+        "classic_range": "10 yd range",
+        "classic_cast": "Instant",
+        "classic_cooldown": "5 min cooldown",
+        "classic_requires": "ing Powder",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Detect Traps",
+     "ranks": [
+      {
+       "rank": "Passive",
+       "id": 2836,
+       "text": "Greatly increased chance to detect traps.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 24,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Disarm Trap",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1842,
+       "text": "Sneak up on the trap in order to disarm it. Don't get too close or the trap will go off.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "5 yd range",
+       "cast": "2 sec cast",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Distract",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 1725,
+       "text": "Throws a distraction, attracting the attention of all nearby enemies and reducing their Stealth detection as if they were 1 level lower for 10 seconds. Does not break stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "30 Energy",
+       "range": "30 yd range",
+       "cast": "Instant",
+       "cooldown": "30 sec cooldown",
+       "requires": "",
+       "level": 22,
+       "classic": {
+        "status": "changed",
+        "text": "Throws a distraction, attracting the attention of all nearby monsters for 10 seconds. Does not break stealth.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Ghostly Strike",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14278,
+       "text": "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "40 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "20 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Hemorrhage",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 16511,
+       "text": "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "35 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3. Lasts 30 charges or 15 sec. Awards 1 combo point.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Pick Pocket",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 921,
+       "text": "Pick the target's pocket.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 4,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Premeditation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14183,
+       "text": "Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "20 yd range",
+       "cast": "Instant",
+       "cooldown": "2 min cooldown",
+       "requires": "",
+       "level": 25,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "changed",
+        "text": "When used, adds 2 combo points to your target. You must add to or use those combo points within 10 sec or the combo points are lost.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Preparation",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 14185,
+       "text": "When activated, this ability immediately finishes the cooldown on your other Rogue abilities.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 min cooldown",
+       "requires": "",
+       "level": 30,
+       "not_from_class_trainer": "talent-taught",
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Safe Fall",
+     "ranks": [
+      {
+       "rank": "Passive",
+       "id": 1860,
+       "text": "Reduces damage from falling.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "",
+       "cooldown": "",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Sap",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 6770,
+       "text": "Incapacitates the target for up to 25 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 10,
+       "classic": {
+        "status": "changed",
+        "text": "Incapacitates the target for up to 25 sec. Must be stealthed. Only works on Humanoids that are not in combat. Any damage caused will revive the target. Only 1 target may be sapped at a time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2070,
+       "text": "Incapacitates the target for up to 35 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Incapacitates the target for up to 35 sec. Must be stealthed. Only works on Humanoids that are not in combat. Any damage caused will revive the target. Only 1 target may be sapped at a time.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11297,
+       "text": "Incapacitates the target for up to 45 sec. Only works on Humanoids that are not in combat. Any damage taken will break the effect. Only 1 target may be sapped at a time. Does not break Stealth.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "65 Energy",
+       "range": "Melee Range",
+       "cast": "Instant",
+       "cooldown": "",
+       "requires": "Requires Stealth",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Incapacitates the target for up to 45 sec. Must be stealthed. Only works on Humanoids that are not in combat. Any damage caused will revive the target. Only 1 target may be sapped at a time.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Stealth",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1784,
+       "text": "Allows the rogue to sneak around, but reduces your speed by 50%. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 1,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1785,
+       "text": "Allows the rogue to sneak around, but reduces your speed by 40%. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 1786,
+       "text": "Allows the rogue to sneak around, but reduces your speed by 35%. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 40,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 1787,
+       "text": "Allows the rogue to sneak around, but reduces your speed by 30%. Lasts until cancelled.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "10 sec cooldown",
+       "requires": "",
+       "level": 60,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Vanish",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 1856,
+       "text": "Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec. Also breaks movement impairing effects.",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "Reagents: Flash Powder",
+       "level": 22,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 1857,
+       "text": "Allows the rogue to vanish from sight, entering an improved stealth mode for 10 sec. Also breaks movement impairing effects. More effective than Vanish (Rank 1).",
+       "school": "Physical",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "Instant",
+       "cooldown": "5 min cooldown",
+       "requires": "Reagents: Flash Powder",
+       "level": 42,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Poisons",
+   "spells": [
+    {
+     "name": "Crippling Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 3420,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, slowing their movement speed by 50% for 12 sec.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Pain, Empty Vial; Makes: Crippling Poison",
+       "level": 20,
+       "classic": {
+        "status": "same"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 3421,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, slowing their movement speed by 70% for 12 sec.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Agony x3, Crystal Vial; Makes: Crippling Poison II",
+       "level": 50,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Instant Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 8681,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 13 to 17 Nature damage. 60 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Decay, Empty Vial; Makes: Instant Poison",
+       "level": 20,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 19 to 25 Nature damage. 40 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8687,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 20 to 26 Nature damage. 85 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Decay x3, Leaded Vial; Makes: Instant Poison II",
+       "level": 28,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 30 to 38 Nature damage. 55 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 8691,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 29 to 37 Nature damage. 105 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Deterioration, Leaded Vial; Makes: Instant Poison III",
+       "level": 36,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 44 to 56 Nature damage. 70 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11341,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 45 to 57 Nature damage. 130 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Deterioration x2, Crystal Vial; Makes: Instant Poison IV",
+       "level": 44,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 67 to 85 Nature damage. 85 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 11342,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 62 to 80 Nature damage. 150 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Deterioration x3, Crystal Vial; Makes: Instant Poison V",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 92 to 118 Nature damage. 100 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 6",
+       "id": 11343,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 76 to 100 Nature damage. 175 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Deterioration x4, Crystal Vial; Makes: Instant Poison VI",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy which instantly inflicts 112 to 148 Nature damage. 115 charges.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Mind-numbing Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 5763,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 40% for 10 sec. 75 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Decay, Essence of Pain, Empty Vial; Makes: Mind-numbing Poison",
+       "level": 24,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 40% for 10 sec. 50 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 8694,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 50% for 12 sec. 115 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Decay x4, Essence of Pain x4, Leaded Vial; Makes: Mind-numbing Poison II",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 50% for 12 sec. 75 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11400,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 150 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Dust of Deterioration x2, Essence of Agony x2, Crystal Vial; Makes: Mind-numbing Poison III",
+       "level": 52,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 20% chance of poisoning the enemy, increasing their casting time by 60% for 14 sec. 100 charges.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Deadly Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 2835,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 24 Nature damage over 12 sec. Stacks up to 5 times on a single target. 90 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Deathweed, Leaded Vial; Makes: Deadly Poison",
+       "level": 30,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 36 Nature damage over 12 sec. Stacks up to 5 times on a single target. 60 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 2837,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 36 Nature damage over 12 sec. Stacks up to 5 times on a single target. 115 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Deathweed x2, Leaded Vial; Makes: Deadly Poison II",
+       "level": 38,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 52 Nature damage over 12 sec. Stacks up to 5 times on a single target. 75 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 11357,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 56 Nature damage over 12 sec. Stacks up to 5 times on a single target. 135 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Deathweed x3, Crystal Vial; Makes: Deadly Poison III",
+       "level": 46,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 80 Nature damage over 12 sec. Stacks up to 5 times on a single target. 90 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 11358,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 72 Nature damage over 12 sec. Stacks up to 5 times on a single target. 160 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Deathweed x5, Crystal Vial; Makes: Deadly Poison IV",
+       "level": 54,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 108 Nature damage over 12 sec. Stacks up to 5 times on a single target. 105 charges.",
+        "change_kind": "numbers"
+       }
+      },
+      {
+       "rank": "Rank 5",
+       "id": 25347,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 92 Nature damage over 12 sec. Stacks up to 5 times on a single target. 180 charges.",
+       "school": "Nature",
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Deathweed x7, Crystal Vial; Makes: Deadly Poison V",
+       "level": 60,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy for 136 Nature damage over 12 sec. Stacks up to 5 times on a single target. 105 charges.",
+        "change_kind": "numbers"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Wound Poison",
+     "ranks": [
+      {
+       "rank": "Rank 1",
+       "id": 13220,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 67 for 15 sec. Stacks up to 5 times on a single target. 90 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Pain, Deathweed, Leaded Vial; Makes: Wound Poison",
+       "level": 32,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 55 for 15 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 2",
+       "id": 13228,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 92 for 15 sec. Stacks up to 5 times on a single target. 115 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Pain, Deathweed x2, Leaded Vial; Makes: Wound Poison II",
+       "level": 40,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 75 for 15 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 3",
+       "id": 13229,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 128 for 15 sec. Stacks up to 5 times on a single target. 135 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Agony, Deathweed x2, Crystal Vial; Makes: Wound Poison III",
+       "level": 48,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 105 for 15 sec.",
+        "change_kind": "reworded"
+       }
+      },
+      {
+       "rank": "Rank 4",
+       "id": 13230,
+       "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 165 for 15 sec. Stacks up to 5 times on a single target. 160 charges.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Essence of Agony x2, Deathweed x2, Crystal Vial; Makes: Wound Poison IV",
+       "level": 56,
+       "classic": {
+        "status": "changed",
+        "text": "Coats a weapon with poison that lasts for 30 minutes. Each strike has a 30% chance of poisoning the enemy, reducing all healing effects used on them by 135 for 15 sec.",
+        "change_kind": "reworded"
+       }
+      }
+     ]
+    },
+    {
+     "name": "Blinding Powder",
+     "ranks": [
+      {
+       "rank": "",
+       "id": 6510,
+       "text": "Create the reagent for the Blind ability.",
+       "school": null,
+       "coefficient": null,
+       "tooltip_source": "beta",
+       "source": "beta client 1.60.1.70009",
+       "cost": "",
+       "range": "",
+       "cast": "3 sec cast",
+       "cooldown": "",
+       "requires": "Reagents: Fadeleaf; Makes: 3 Blinding Powder",
+       "level": 34,
+       "classic": {
+        "status": "same"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "general": [
+  {
+   "name": "Pick Lock",
+   "rank": "",
+   "text": "Allows opening of locked chests and doors.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Shoot Bow",
+   "rank": "",
+   "text": "",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Shoot Crossbow",
+   "rank": "",
+   "text": "Attack with an equipped wand.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Shoot Gun",
+   "rank": "",
+   "text": "",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Throw",
+   "rank": "",
+   "text": "Hurl a thrown weapon at the target.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dual Wield",
+   "rank": "Passive",
+   "text": "Allows one-hand and off-hand weapons to be equipped in the off-hand.",
+   "tooltip_source": "classic"
+  },
+  {
+   "name": "Armor Proficiency",
+   "rank": "Passive",
+   "text": "You are proficient in the use of the following armor types: Cloth, Leather.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Dodge",
+   "rank": "Passive",
+   "text": "Gives a chance to dodge enemy melee attacks.",
+   "tooltip_source": "demo"
+  },
+  {
+   "name": "Parry",
+   "rank": "Passive",
+   "text": "Gives a chance to parry enemy melee attacks.",
+   "tooltip_source": "classic"
+  }
+ ]
+}

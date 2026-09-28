@@ -1,0 +1,78 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/rogue/gear_sets/combat_backstab_p1_bis.gear.json",
+  "gear_max": "ui/rogue/gear_sets/combat_backstab_p2_bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "combat-daggers-raid",
+   "split": "15/31/5",
+   "ours": true,
+   "dps": {
+    "dummy": 440.3360415422584,
+    "max": 1274.5261210139352,
+    "max60": 1367.4386459492584,
+    "raid": 1259.1608707472708
+   }
+  },
+  {
+   "label": "sim preset: Backstab",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 445.81391280348754,
+    "max": 1297.0865747446296,
+    "max60": 1395.294814887354,
+    "raid": 1285.350702716941
+   }
+  },
+  {
+   "label": "sim preset: Sinister Strike",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 374.3548361964522,
+    "max": 1165.2525384254634,
+    "max60": 1239.9688269141504,
+    "raid": 1149.877894486956
+   }
+  },
+  {
+   "label": "sim preset: Improved Expose Armor (SS)",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 371.8166957760706,
+    "max": 1155.9885639245997,
+    "max60": 1229.107002907153,
+    "raid": 1140.7759328744173
+   }
+  }
+ ]
+}

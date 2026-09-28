@@ -1,0 +1,241 @@
+{
+ "class": "druid",
+ "spec": "resto-heal",
+ "runs": 60,
+ "builds": [
+  "resto-raid-healer",
+  "opt-resto-heal-raid-heal",
+  "cand-resto-r1",
+  "cand-resto-r2"
+ ],
+ "capacity": [],
+ "talents": [
+  {
+   "talent": "Reflection",
+   "lab": 0.37118352875602423,
+   "ev_before": 0.2081708864285706,
+   "ev_after": 0.15822938540711134,
+   "scale": 1.0,
+   "how": "capped",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Moonglow",
+   "lab": 0.3221331536982877,
+   "ev_before": 0.0,
+   "ev_after": 0.30983966624863973,
+   "scale": 5.033278000541031,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Tranquil Spirit",
+   "lab": 0.0830337063209185,
+   "ev_before": 0.0856497413091647,
+   "ev_after": 0.06662982185963001,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Gift of Nature",
+   "lab": 0.06991189271184624,
+   "ev_before": 0.07506997304535531,
+   "ev_after": 0.059331284364174924,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Living Spirit",
+   "lab": 0.055929508572869956,
+   "ev_before": 0.04861008436336497,
+   "ev_after": 0.05499572890673729,
+   "scale": 1.4204307673498988,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Heart of the Wild",
+   "lab": 0.036079669043093836,
+   "ev_before": 0.022045254881265953,
+   "ev_after": 0.036024662917804484,
+   "scale": 1.9939838917925954,
+   "how": "fitted",
+   "builds": [
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Improved Rejuvenation",
+   "lab": 0.020438774195300484,
+   "ev_before": 0.007202545118288816,
+   "ev_after": 0.020700096989970464,
+   "scale": 3.567116668447852,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Genesis",
+   "lab": 0.015732135620887537,
+   "ev_before": 0.016939469929752538,
+   "ev_after": 0.013708196940293717,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Gift of the Earthmother",
+   "lab": 0.015732135620887537,
+   "ev_before": 0.008604922441408123,
+   "ev_after": 0.006973918078466594,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Nature's Splendor",
+   "lab": 0.015571335242936938,
+   "ev_before": 0.012141589517308229,
+   "ev_after": 0.009726685150795162,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Naturalist",
+   "lab": 0.012151134864322838,
+   "ev_before": 0.005845741477737675,
+   "ev_after": 0.004640907571762757,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Nature's Swiftness",
+   "lab": 0.010435372319086252,
+   "ev_before": 0.014640384817562637,
+   "ev_after": 0.011619684775001523,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Nature's Majesty",
+   "lab": 0.007664509270739766,
+   "ev_before": 0.018950899815798557,
+   "ev_after": 0.01610650060081724,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Improved Regrowth",
+   "lab": 0.007118883213010932,
+   "ev_before": 0.029103046738984298,
+   "ev_after": 0.00711889874178783,
+   "scale": 0.22118583337093392,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Swiftmend",
+   "lab": 0.006012227659971227,
+   "ev_before": 0.005394003470432687,
+   "ev_after": 0.004311524011827285,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  },
+  {
+   "talent": "Wild Growth",
+   "lab": 0.0,
+   "ev_before": 0.010315680176120917,
+   "ev_after": 0.008143593790765034,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "resto-raid-healer",
+    "opt-resto-heal-raid-heal",
+    "cand-resto-r1",
+    "cand-resto-r2"
+   ]
+  }
+ ],
+ "shares": {
+  "Healing Touch": 0.66901634004991,
+  "Regrowth": 0.2097773619118194,
+  "Rejuvenation": 0.11152412212471219,
+  "Swiftmend": 0.009682175913558431
+ }
+}

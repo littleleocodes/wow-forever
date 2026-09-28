@@ -1,0 +1,201 @@
+{
+ "type": "TypeAPL",
+ "prepullActions": [
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 25296
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-10s"
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20904
+     }
+    }
+   },
+   "doAtValue": {
+    "const": {
+     "val": "-2.5s"
+    }
+   }
+  }
+ ],
+ "priorityList": [
+  {
+   "action": {
+    "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpLt",
+      "lhs": {
+       "autoTimeToNext": {
+        "autoType": "RangedAuto"
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "0.1"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 3045
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpGt",
+         "lhs": {
+          "autoTimeToNext": {
+           "autoType": "RangedAuto"
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "20s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20904
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGt",
+      "lhs": {
+       "autoTimeToNext": {
+        "autoType": "RangedAuto"
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "1s"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 2643
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 25295
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "1s"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "spellTimeToReady": {
+           "spellId": {
+            "spellId": 20904
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.5"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "spellTimeToReady": {
+           "spellId": {
+            "spellId": 2643
+           }
+          }
+         },
+         "rhs": {
+          "const": {
+           "val": "0.5"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25295
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see mm-raid-rotation-search.json)"
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+ "id": "cand-combat-hand-2026-09-26",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    1
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Improved Sprint",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": []
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 2
+  },
+  {
+   "levels": "12-14",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "15-17",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "18-20",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 3
+  },
+  {
+   "levels": "21",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "22-23",
+   "tree": "Combat",
+   "talent": "Endurance",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Combat",
+   "talent": "Improved Sprint",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "26-30",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 5
+  },
+  {
+   "levels": "31",
+   "tree": "Combat",
+   "talent": "Blade Flurry",
+   "points": 1
+  },
+  {
+   "levels": "32-36",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 5
+  },
+  {
+   "levels": "37-38",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Combat",
+   "talent": "Adrenaline Rush",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 2
+  },
+  {
+   "levels": "43-47",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "48-50",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 3
+  },
+  {
+   "levels": "51-53",
+   "tree": "Assassination",
+   "talent": "Improved Slice and Dice",
+   "points": 3
+  },
+  {
+   "levels": "54",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "55-59",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 1
+  }
+ ],
+ "note": "The hand draft leveling-combat-swords as it was before cand-combat-r6 was adopted on 2026-09-26"
+}

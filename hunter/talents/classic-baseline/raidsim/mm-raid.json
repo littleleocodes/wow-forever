@@ -1,0 +1,135 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "hunter",
+  "gear": "ui/hunter/gear_sets/p1.bis.gear.json",
+  "apl": "ui/hunter/apls/p1.apl.json",
+  "race": "RaceTroll",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own trueshot_aura (its talent is under test)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "alcohol": "AlcoholRumseyRumBlackLabel",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodSmokedDesertDumpling",
+   "healthElixir": "ElixirOfFortitude",
+   "mainHandImbue": "Windfury",
+   "manaRegenElixir": "MagebloodPotion",
+   "offHandImbue": "ElementalSharpeningStone",
+   "petAttackPowerConsumable": 1,
+   "petAgilityConsumable": 1,
+   "petStrengthConsumable": 1,
+   "sapperExplosive": "SapperUnknown",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "bm-mm-raid",
+   "talents": "53000200505-05351030503051",
+   "split": "20/31/0",
+   "ours": true,
+   "dps": 1048.7283280156116,
+   "dps_stdev": 47.947181821648435,
+   "threat": 857.7872496805763,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6640483414160203,
+   "shares": {
+    "Auto Shot": 0.39127179942799856,
+    "Aimed Shot": 0.21268045312909634,
+    "Pet: Auto Attack": 0.1834602442189416,
+    "Multi-Shot": 0.1473409595839372,
+    "Serpent Sting": 0.045041876023997486,
+    "Pet: Claw": 0.020204667616028855
+   },
+   "source_shares": {
+    "auto": 0.3913,
+    "aimed": 0.2127,
+    "pet": 0.2037,
+    "multi": 0.1473,
+    "serpent": 0.045
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "mm-surv-hit-raid",
+   "talents": "-05351030503051-33500005103",
+   "split": "0/31/20",
+   "ours": true,
+   "dps": 952.2935411744749,
+   "dps_stdev": 41.60232822856206,
+   "threat": 821.4149213564641,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.5380917120412438,
+   "shares": {
+    "Auto Shot": 0.39794094296147375,
+    "Aimed Shot": 0.23106422614323402,
+    "Multi-Shot": 0.16098688909048164,
+    "Pet: Auto Attack": 0.14430183094585577,
+    "Serpent Sting": 0.04926432510846541,
+    "Pet: Claw": 0.016441785750489366
+   },
+   "source_shares": {
+    "auto": 0.3979,
+    "aimed": 0.2311,
+    "multi": 0.161,
+    "pet": 0.1607,
+    "serpent": 0.0493
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Marksmanship",
+   "talents": "55000000505-05451002503051",
+   "split": "",
+   "ours": false,
+   "dps": 1050.6177956689448,
+   "dps_stdev": 47.95449515841406,
+   "threat": 859.6767173339094,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Shot": 0.39056812258973406,
+    "Aimed Shot": 0.21229796119117153,
+    "Pet: Auto Attack": 0.18313030292292196,
+    "Multi-Shot": 0.14707597646800996,
+    "Serpent Sting": 0.0467593059904218,
+    "Pet: Claw": 0.020168330837740677
+   },
+   "source_shares": {
+    "auto": 0.3906,
+    "aimed": 0.2123,
+    "pet": 0.2033,
+    "multi": 0.1471,
+    "serpent": 0.0468
+   },
+   "unmatched_share": 0.0
+  }
+ ],
+ "deltas": {}
+}

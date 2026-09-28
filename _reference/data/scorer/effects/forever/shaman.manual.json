@@ -1,0 +1,2749 @@
+{
+  "_doc": "Hand-entered Shaman effects (Forever). Healer tags: heal/direct/hot, ability:Totems; Elemental tags: ability:Lightning Bolt/Chain Lightning/Shock/Flame Shock/Fire Totems; Enhancement tags: white/mainhand/type:melee, ability:Windfury Weapon, ability:Rockbiter Weapon, ability:Lightning Shield. mana_share tag dmgspell = share of mana spent on damage spells per model.",
+  "Elemental Warding": {
+    "note": "-3%/rank Fire/Frost/Nature damage taken: ~30% of incoming damage while leveling is spell damage. PvP (2026-09-27): low, defensive: -10% Fire/Frost/Nature damage taken. The survival term already counts it at ~30% spell damage; mages, shamans, druids, poisons and Destruction warlocks push that share higher in PvP.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.008
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Elemental Devastation": {
+    "note": "+3%/rank melee crit for 10s after an offensive spell crit: Enhancement shocks every 6s at ~15% spell crit -> ~40% uptime -> +1.2%/rank melee crit. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.22 to match (0.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.012,
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.000455,
+        "values": [0.000455, 0.00091, 0.001366, 0.001821, 0.002276],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.009218,
+        "values": [0.009218, 0.018435, 0.027653, 0.03687, 0.046088],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Elemental Focus": {
+    "note": "10% Clearcasting after any damage spell (next damage spell free): ~10% of damage-spell mana. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x1.40 to match (3.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.1],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.019437],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.192972],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.029167],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Eye of the Storm": {
+    "note": "-23%/rank pushback on Lightning Bolt/Chain Lightning/Lava Burst: only matters when being hit (leveling). 2026-09-27 audit: pushback only hits cast Lightning Bolts: Enhancement's bolts are pull shots or instant Maelstrom casts. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "per_rank": 0.015,
+        "modes": ["leveling-aoe"],
+        "specs": ["elemental-dps"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "resist",
+        "values": [0.013333, 0.026666, 0.039999, 0.053332, 0.066665]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "per_rank": 0.003001,
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"],
+        "values": [0.003001, 0.006002, 0.009004, 0.012005, 0.015006]
+      }
+    ]
+  },
+  "Lightning Overload": {
+    "note": "Beta curve 3/7/10% chance for a free half-damage second Lightning Bolt/Chain Lightning: +1.5/3.5/5% on those spells. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.015, 0.035, 0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.015, 0.035, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.015, 0.035, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.011784, 0.027495, 0.039279],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.010577, 0.02468, 0.035257],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Earthbound": {
+    "note": "Earthbind Totem roots on cast: kiting/AoE control while leveling. PvP (2026-09-27): high, kite: Earthbind Totem roots nearby enemies for 5 s when dropped (15 s cooldown): free casts or distance against melee. Unknown: diminishing returns, whether damage breaks it.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.006]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Lava Burst": {
+    "note": "Beta spellbook: ranks at 40/50/60 (150-192 / 179-231 / 192-248 after the 70009 buff), 2.5s cast, 10s cooldown, 165-265 mana, 71.4% coefficient, +20% with Flame Shock. At 60 a Lava Burst is ~1.3x a Lightning Bolt (189-211, 2.5s, 71.4%) in the same cast time and replaces one of every four bolts -> ~+8% on the Lightning Bolt share. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.1% DPS in the simulator (scorer said 0.1% on the same scale); raid values scaled x16.35 to match (1.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt"],
+        "values": [0.08],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt"],
+        "values": [0.08],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt"],
+        "values": [0.015502],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Earth's Grasp": {
+    "note": "Stoneclaw health / Earthbind radius: leveling utility. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (1.9%). Other modes unchanged. 2026-09-27 audit: split: the Stoneclaw half is control of kind stun (taunted mobs hit the totem; biggest in pulls of several mobs), the Earthbind half kite. PvP (2026-09-27): medium, kite: Earthbind Totem radius +20% (10 -> 12 yd), likely also the reach of the Earthbound root. The Stoneclaw +50% health half only taunts pets in PvP.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001,
+        "modes": ["leveling-st", "solo-60"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "modes": ["leveling-aoe"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001,
+        "kind": "kite"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Elemental Reach": {
+    "note": "+3 yd/rank range: fewer steps while leveling. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.8% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range",
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Call of Flame": {
+    "note": "+5%/rank Fire Totems, Flame Shock, Fire Nova and Lava Burst damage (parser dropped Flame Shock). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.038537,
+        "values": [0.038537, 0.077075, 0.115612, 0.15415, 0.192687],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.030508,
+        "values": [0.030508, 0.061016, 0.091524, 0.122031, 0.152539],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.091489,
+        "values": [0.091489, 0.182977, 0.274466, 0.365953, 0.457442],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Fire Totems", "ability:Flame Shock", "ability:Fire Nova", "ability:Lava Burst"],
+        "per_rank": 0.1696,
+        "values": [0.1696, 0.3392, 0.508799, 0.678399, 0.847999],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Thundering Strikes": {
+    "note": "+1%/rank crit with all spells and attacks. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 3.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 5.0% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.010887,
+        "values": [0.010887, 0.021773, 0.03266, 0.043547, 0.054434],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.018923,
+        "values": [0.018923, 0.037844, 0.056767, 0.075689, 0.09461],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.007852,
+        "values": [0.007852, 0.015704, 0.023556, 0.031408, 0.039259],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.051104, 0.102206, 0.15331, 0.204411, 0.255516],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "per_rank": 0.01476,
+        "values": [0.01476, 0.02952, 0.04428, 0.05904, 0.0738],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Mental Dexterity": {
+    "note": "Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 9.1% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (6.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 3.4% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.333,
+        "values": [0.333, 0.666, 0.999, 1.332, 1.665],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.333,
+        "values": [0.333, 0.666, 0.999, 1.332, 1.665],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.333,
+        "values": [0.333, 0.666, 0.999, 1.332, 1.665],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.194429,
+        "values": [0.194429, 0.388859, 0.583286, 0.777716, 0.972145],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.237154,
+        "values": [0.237154, 0.474307, 0.711461, 0.948613, 1.185767],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "ap_from_int",
+        "scope": ["all"],
+        "per_rank": 0.148098,
+        "values": [0.148098, 0.296196, 0.444294, 0.592393, 0.740492],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Improved Lightning Shield": {
+    "note": "+5%/rank Lightning Shield orb damage. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.031388,
+        "values": [0.031388, 0.062776, 0.094164, 0.125553, 0.156941],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Shield"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Elemental Weapons": {
+    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank, Flametongue/Frostbrand +5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.0% time per kill in the simulator (scorer said 1.7% on the same scale); leveling-st/solo-60 values scaled x1.73 to match (3.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.133,
+        "values": [0.133, 0.266, 0.399, 0.532, 0.665],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.067,
+        "values": [0.067, 0.134, 0.201, 0.268, 0.335],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.133,
+        "values": [0.133, 0.266, 0.399, 0.532, 0.665],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.067,
+        "values": [0.067, 0.134, 0.201, 0.268, 0.335],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.133,
+        "values": [0.133, 0.266, 0.399, 0.532, 0.665],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.067,
+        "values": [0.067, 0.134, 0.201, 0.268, 0.335],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.033738,
+        "values": [0.033738, 0.067477, 0.101216, 0.134953, 0.168693],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.016996,
+        "values": [0.016996, 0.033993, 0.050988, 0.067984, 0.08498],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Windfury Weapon"],
+        "per_rank": 0.015115,
+        "values": [0.015115, 0.03023, 0.045344, 0.060459, 0.075574],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Rockbiter Weapon"],
+        "per_rank": 0.007614,
+        "values": [0.007614, 0.015229, 0.022843, 0.030457, 0.038071],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Anticipation": {
+    "note": "+2%/rank dodge (6% at 3/3). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.3% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-st/solo-60 values scaled x2.71 to match (3.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.0425,
+        "values": [0.0425, 0.085001, 0.127503, 0.170006, 0.212507],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Flurry": {
+    "note": "+5%/rank attack speed for 3 swings after a melee crit (25% at 5/5, Classic 30%). Slow two-hander at ~30% raid crit: ~66% of swings hasted -> 3.3/6.6/10/13/16.5% white haste; leveling crit ~13%: ~35% -> 1.7/3.5/5/7/9%. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.2% time per kill in the simulator (scorer said 7.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 9.5% DPS in the simulator (scorer said 10.9% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.017, 0.035, 0.05, 0.07, 0.09],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.033, 0.066, 0.1, 0.13, 0.165],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.017, 0.035, 0.05, 0.07, 0.09],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.015024, 0.030932, 0.044187, 0.061862, 0.079537],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.019355, 0.039846, 0.056922, 0.079692, 0.102459],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["white"],
+        "values": [0.034318, 0.068635, 0.103994, 0.135192, 0.171589],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Stormstrike": {
+    "note": "Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8s nearly every shock is buffed; Maelstrom Lightning Bolts get it about half the time. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 24.0% DPS in the simulator (scorer said 25.1% on the same scale); already within tolerance, raid effects split off unchanged (26.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Earth Shock"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.052717],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Earth Shock"],
+        "values": [0.042174],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.021087],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Earth Shock"],
+        "values": [0.2],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.25],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Earth Shock"],
+        "values": [0.2],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [1.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "values": [0.246175],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Earth Shock"],
+        "values": [0.196942],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.098469],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Spirit Weapons": {
+    "note": "Parry (~5% avoidance) and -30% threat without Rockbiter. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 4.6% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-st/solo-60 values scaled x3.85 to match (3.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.01],
+        "specs": ["enhancement-dps"],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "values": [0.018036],
+        "specs": ["enhancement-dps"],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.145448],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Mental Quickness": {
+    "note": "Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.010729,
+        "values": [0.010729, 0.021458, 0.032188, 0.042917, 0.053646],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.046415,
+        "values": [0.046415, 0.092831, 0.139247, 0.185662, 0.232077],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "per_rank": 0.014431,
+        "values": [0.014431, 0.028861, 0.043292, 0.057723, 0.072154],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Improved Stormstrike": {
+    "note": "50% mana regeneration while casting for 15s after Stormstrike (permanent) and Stormstrike resets on dodge/parry (leveling: extra strikes while being attacked). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.9% time per kill in the simulator (scorer said 3.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.0, 0.0, 0.0]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "per_rank": 0.0,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["mainhand"],
+        "per_rank": 0.039216,
+        "modes": ["leveling-aoe"],
+        "values": [0.039216, 0.078433, 0.117649, 0.156865, 0.196081],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.068628,
+        "values": [0.068628, 0.137257, 0.205885, 0.274514, 0.343142],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Maelstrom Weapon": {
+    "note": "Melee hits stack -20% Lightning Bolt cast time/mana (5 stacks = instant): at 5/5 roughly one instant Lightning Bolt every ~10s -> the Lightning Bolt share grows ~2.5x for Enhancement. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -1.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.019998, 0.049995, 0.079992, 0.109989, 0.149985],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.007999, 0.011999, 0.015998, 0.019998],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.031267,
+        "values": [0.031267, 0.062535, 0.093802, 0.125069, 0.156337],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["enh-lb"],
+        "values": [0.2, 0.5, 0.8, 1.1, 1.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["enh-lb"],
+        "per_rank": 0.04,
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Rage of the Farseer": {
+    "note": "Build 70009: +30% attack speed only (the demo's spell-casting speed is gone) for 25s every 3 min (13.9% uptime): ~+4% melee haste. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 5.1% time per kill in the simulator (scorer said 4.0% on the same scale); leveling-st/solo-60 values scaled x1.27 to match (5.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.04],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.04],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.027682],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.060246],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:melee"],
+        "values": [0.061696],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Ancestral Healing": {
+    "note": "+25% armor on crit-healed targets for 15s (Inspiration): tank mitigation. Healer lab calibration (2026-09-28, resto-heal): removing it costs 3.7% healing capacity in the lab (scorer said 2.9% on the same scale); already within tolerance, heal effects split off unchanged (2.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.005,
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.001333,
+        "modes": ["pvp"],
+        "kind": "avoid",
+        "values": [0.001333, 0.002666, 0.003999, 0.005332, 0.006665]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.015964,
+        "values": [0.015964, 0.031928, 0.047892, 0.063857, 0.079821],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Water Shield": {
+    "note": "3 globes, 2% max mana each when hit or on a crit heal (one every few seconds): a raid healer at 18% crit gets ~4 globes/min = ~8% max mana per minute -> ~+18% mana budget over a fight; leveling (hit often) ~+12%; raid DPS rarely hit ~+2%. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -1.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-28, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 5.8% on the same scale); heal values scaled x1.27 to match (6.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "elemental-dps"],
+        "values": [0.03]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "modes": ["leveling-aoe"],
+        "values": [0.03]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.18],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.307604],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Totemic Focus": {
+    "note": "-5%/rank mana on totems and totem spells. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.39 to match (0.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.20319,
+        "values": [0.20319, 0.406381, 0.609571, 0.812762, 1.015952],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.049702,
+        "values": [0.049702, 0.099404, 0.149106, 0.198808, 0.24851],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "per_rank": 0.025,
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Totems"],
+        "values": [0.039084, 0.078168, 0.117252, 0.156337, 0.195421],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Restorative Totems": {
+    "note": "Mana Spring +5%/rank (~+0.6%/rank of a healer's mana budget) and Healing Stream +10%/rank. Healer lab calibration (2026-09-28, resto-heal): removing it costs 2.9% healing capacity in the lab (scorer said 1.6% on the same scale); heal values scaled x1.99 to match (2.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.007589,
+        "values": [0.007589, 0.015178, 0.022769, 0.030358, 0.037947],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.126491,
+        "values": [0.126491, 0.252982, 0.379473, 0.505964, 0.632453],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Mana Tide Totem": {
+    "note": "352 mana to the group every 5 min (Classic 680): ~+4% of your own mana budget plus group mana. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.166739],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.024872],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Nature's Swiftness": {
+    "note": "Instant Healing Wave/Chain Lightning every 3 min: emergency heal, small damage. Healer lab calibration (2026-09-27, resto-heal): removing it costs 0.4% healing capacity in the lab (scorer said 0.9% on the same scale); heal values scaled x0.00 to match (0.5%). Other modes unchanged. PvP (2026-09-27): high, burst: Next Nature spell instant (3 min cooldown): an unkickable Chain Lightning or Lightning Bolt kill shot, or an instant Healing Wave to survive. The PvP builds of both games are built around it.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.01],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"]
+      }
+    ]
+  },
+  "Riptide": {
+    "note": "New instant heal + 15s HoT every 6s that also buffs Chain Heal on that target by 25%: ~+10% throughput, mana-efficient, castable on the move. Healer lab calibration (2026-09-28, resto-heal): removing it costs 3.3% healing capacity in the lab (scorer said 1.2% on the same scale); heal values scaled x3.63 to match (3.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.1],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.1],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.055326],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.011064],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Tidal Mastery": {
+    "note": "+1%/rank crit on healing spells only (Classic also buffed Lightning spells). Healer lab calibration (2026-09-28, resto-heal): removing it costs 4.1% healing capacity in the lab (scorer said 3.0% on the same scale); already within tolerance, heal effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["heal"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["heal"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["heal"],
+        "per_rank": 0.034947,
+        "values": [0.034947, 0.069893, 0.10484, 0.139787, 0.174732],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Natural Grace": {
+    "note": "-5%/rank spell threat: raid DPS/healer utility. PvP (2026-09-27): zero, defensive: Only -15% spell threat: nothing in PvP (the Forever 30/0/21 draft spends a filler point here).",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.002
+      }
+    ]
+  },
+  "Healing Focus": {
+    "note": "-23%/rank pushback on heals: ~+0.5%/rank raid throughput. PvP (2026-09-27): medium, resist: 70% chance to ignore pushback on heals: healing while being hit. Core for Restoration, a filler for the 30/0/21 hybrid (its Nature's Swiftness heal is instant anyway).",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.005
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Guardian Totems": {
+    "note": "Grounding Totem cooldown: utility. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (1.9%). Other modes unchanged. 2026-09-27 audit: Stoneskin and Windwall only help while you are hit and Grounding is PvP: leveling utility (kind avoid), not raid. PvP (2026-09-27): low, resist: Grounding Totem cooldown 15 -> 13 s (it eats one Polymorph, Fear or nuke); Stoneskin/Windwall +20% is a few points per hit. Grounding itself is baseline.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "resist"
+      }
+    ]
+  },
+  "Improved Ghost Wolf": {
+    "note": "-1s/rank Ghost Wolf cast: travel while leveling. Fight lab calibration (2026-09-26, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (3.6%). Other modes unchanged. 2026-09-27 audit: rank 2 makes Ghost Wolf instant (rank 1 leaves a 2 s cast): ~1.7 s saved of a 40-44 s kill with 6 s of travel at +40% speed -> [0.005, 0.03]; AoE [0.002, 0.01]. The fight lab cannot see travel, so it is no longer fitted. PvP (2026-09-27): high, move: Rank 2 makes Ghost Wolf instant and usable indoors: +40% speed on demand to leave melee, reach line of sight, chase or carry a flag. Does not remove snares.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.005, 0.03],
+        "modes": ["leveling-st", "solo-60"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.002, 0.01],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "move"
+      }
+    ]
+  },
+  "Improved Reincarnation": {
+    "note": "Shorter self-res cooldown: leveling deaths. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x0.39 to match (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.001169,
+        "values": [0.001169, 0.002337, 0.003506, 0.004674, 0.005843],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["surv:health"],
+        "per_rank": 0.00779,
+        "values": [0.00779, 0.01558, 0.02337, 0.03116, 0.03895],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Elemental Fury": {
+    "note": "+20%/rank crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 10.5% time per kill in the simulator (scorer said 9.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 7.4% DPS in the simulator (scorer said 8.4% on the same scale); already within tolerance, raid effects split off unchanged (8.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.252892, 0.505784, 0.758676, 1.011568, 1.264459],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Shock", "ability:Lava Burst", "ability:Fire Totems", "ability:Fire Nova", "ability:Lightning Shield"],
+        "values": [0.098332, 0.196663, 0.294994, 0.393325, 0.491657],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Shamanistic Focus": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.9% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (3.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 8.1% DPS in the simulator (scorer said 5.7% on the same scale); raid values scaled x1.49 to match (8.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.45],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.45],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.45],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.45],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.200277],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Shield"],
+        "values": [0.398743],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Concussion": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Earth Shock"],
+        "values": [0.004324, 0.008649, 0.012973, 0.017298, 0.021622],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Reverberation": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.7% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.052573, 0.105145, 0.157718, 0.210291, 0.262863],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.008, 0.016, 0.024, 0.032, 0.04]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.16869, 0.337386, 0.506076, 0.674773, 0.84347],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "cooldown",
+        "scope": ["ability:Shock"],
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Mindfulness": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.6% time per kill in the simulator (scorer said 2.6% on the same scale); leveling-st/solo-60 values scaled x1.48 to match (3.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.039, 0.078, 0.117, 0.156, 0.195],
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [1.02, 1.98, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.052319, 0.10156, 0.15388],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.25102, 0.487274, 0.738295],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.510001, 0.990001, 1.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.110618, 0.21473, 0.325346],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Tidal Focus": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.5% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-st/solo-60 values scaled x0.36 to match (0.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.005632, 0.011263, 0.016895, 0.022527, 0.028159],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.005632, 0.011263, 0.016895, 0.022527, 0.028159],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.022272, 0.044537, 0.066809, 0.089077, 0.111346],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.022272, 0.044537, 0.066809, 0.089077, 0.111346],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.001278, 0.002555, 0.003833, 0.005111, 0.006388],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.001278, 0.002555, 0.003833, 0.005111, 0.006388],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.044816, 0.08963, 0.134446, 0.17926, 0.224078],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.044816, 0.08963, 0.134446, 0.17926, 0.224078],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.009055, 0.01811, 0.027165, 0.03622, 0.045275],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["all"],
+        "values": [0.00428, 0.00856, 0.01284, 0.01712, 0.0214],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell", "heal"],
+        "values": [0.003346, 0.006691, 0.010037, 0.013382, 0.016728],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Elemental Alacrity": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.9% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 19.3% DPS in the simulator (scorer said 15.3% on the same scale); raid values scaled x1.30 to match (20.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.020685, 0.040153, 0.060838],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.041017, 0.079621, 0.120639],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.044113, 0.085631, 0.129744],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning", "ability:Lava Burst"],
+        "values": [0.171697, 0.333293, 0.504988],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Call of Thunder": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.03],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.03],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.046855],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.013763],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Lightning Bolt", "ability:Chain Lightning"],
+        "values": [0.03],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      }
+    ]
+  },
+  "Convection": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.070894, 0.141788, 0.212682, 0.283576, 0.354471],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.004609, 0.009219, 0.013828, 0.018438, 0.023048],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
+        "values": [0.015634, 0.031267, 0.046901, 0.062535, 0.078168],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Ancestral Knowledge": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["heal", "tank"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.018568, 0.037139, 0.055707, 0.074277, 0.092845],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.036643, 0.073286, 0.109929, 0.146572, 0.183215],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.005547, 0.011094, 0.016641, 0.022188, 0.027735],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.010265, 0.020531, 0.030796, 0.041062, 0.051327],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Toughness": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.3% time per kill in the simulator (scorer said 2.2% on the same scale); leveling-st/solo-60 values scaled x1.84 to match (3.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.001093, 0.002185, 0.003278, 0.004371, 0.005464],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["enhancement-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina"],
+        "values": [0.023283, 0.046565, 0.069848, 0.093131, 0.116414],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Healing Way": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 13.8% healing capacity in the lab (scorer said 8.8% on the same scale); heal values scaled x1.56 to match (13.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.08, 0.17, 0.25],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.08, 0.17, 0.25],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.130475, 0.277261, 0.407734],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Improved Healing Wave": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-27, resto-heal): removing it costs -0.8% healing capacity in the lab (scorer said 0.5% on the same scale); heal values scaled x0.00 to match (0.0%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["resto-heal", "elemental-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Wave"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["enhancement-dps"]
+      }
+    ]
+  },
+  "Purification": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 6.4% healing capacity in the lab (scorer said 5.7% on the same scale); already within tolerance, heal effects split off unchanged (6.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["elemental-dps", "enhancement-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.025874, 0.051747, 0.077621, 0.103495, 0.129368],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  }
+}

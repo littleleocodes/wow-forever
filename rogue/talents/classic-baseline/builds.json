@@ -1,0 +1,192 @@
+{
+  "class": "Rogue",
+  "game": "classic-era",
+  "notes": "Classic Era community-standard builds. Swords and daggers Combat are the raid specs; Assassination-heavy builds only become competitive with Naxxramas gear. Allocations validated against the Classic tree data.",
+  "builds": [
+    {
+      "id": "combat-swords-raid",
+      "name": "Combat Swords (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "primary",
+      "summary": "The default Classic raid rogue: Sinister Strike + Slice and Dice with Sword Specialization extra attacks, Blade Flurry and Adrenaline Rush. Weapon Expertise takes you to 305 sword skill against level-63 bosses, which is why Combat is mandatory. Assassination adds Malice, Ruthlessness, Relentless Strikes and Improved Slice and Dice for the finisher cycle.",
+      "allocation": {
+        "Assassination": [["Improved Eviscerate", 3], ["Malice", 5], ["Ruthlessness", 3], ["Murder", 2], ["Improved Slice and Dice", 3], ["Relentless Strikes", 1], ["Lethality", 2]],
+        "Combat": [["Improved Sinister Strike", 2], ["Lightning Reflexes", 4], ["Precision", 5], ["Endurance", 2], ["Improved Sprint", 2], ["Dual Wield Specialization", 5], ["Blade Flurry", 1], ["Sword Specialization", 5], ["Weapon Expertise", 2], ["Aggression", 3], ["Adrenaline Rush", 1]],
+        "Subtlety": []
+      },
+      "core": [
+        {"talent": "Weapon Expertise", "why": "+5 sword/dagger/fist skill: removes most glancing-blow penalty and adds hit/crit against level 63 bosses. Non-negotiable."},
+        {"talent": "Sword Specialization", "why": "5% chance per hit for an extra attack — scales with every white and yellow hit."},
+        {"talent": "Dual Wield Specialization", "why": "+50% off-hand damage."},
+        {"talent": "Precision", "why": "+5% hit; rogues need a lot of hit for the off-hand."},
+        {"talent": "Blade Flurry", "why": "+20% haste and a cleave for 15s — used every cooldown."},
+        {"talent": "Adrenaline Rush", "why": "Doubled energy regeneration for 15s."},
+        {"talent": "Improved Sinister Strike", "why": "-5 energy on the main builder."},
+        {"talent": "Malice", "why": "+5% crit."},
+        {"talent": "Improved Slice and Dice", "why": "+45% duration; lets you keep SnD up with 1-2 point finishers."},
+        {"talent": "Relentless Strikes", "why": "Energy refund on finishers."},
+        {"talent": "Ruthlessness", "why": "Free combo point after finishers."},
+        {"talent": "Aggression", "why": "+6% Sinister Strike and Eviscerate damage."}
+      ],
+      "flex": [
+        {"points": 4, "default": "Lightning Reflexes", "alternatives": ["Improved Gouge"], "why": "Filler to reach tier 2 of Combat; Improved Gouge is better if you bandage in dungeons."},
+        {"points": 4, "default": "Endurance 2 + Improved Sprint 2", "alternatives": ["Improved Kick", "Riposte (needs Deflection 5)"], "why": "Filler to reach 15 points for Dual Wield Specialization."},
+        {"points": 2, "default": "Lethality", "alternatives": ["Improved Eviscerate (already 3/3)", "Improved Expose Armor"], "why": "Crit damage on Sinister Strike."},
+        {"points": 2, "default": "Murder", "alternatives": ["Remorseless Attacks"], "why": "+2% damage to Humanoids/Giants/Beasts/Dragonkin covers most raid bosses."}
+      ],
+      "notes": [
+        "Rotation: Sinister Strike to 2-3 combo points -> Slice and Dice, then Sinister Strike to 5 -> Eviscerate (or Rupture on non-armored targets late).",
+        "One rogue per raid maintains Expose Armor only if there is no Improved Sunder Armor warrior; otherwise Sunder is better."
+      ],
+      "sources": [
+        "https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents",
+        "https://www.wowhead.com/classic/guide/classes/rogue/dps-talent-builds-pve"
+      ]
+    },
+    {
+      "id": "combat-daggers-raid",
+      "name": "Combat Daggers (raid DPS)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "alternative",
+      "summary": "Same Combat backbone (Precision, Dual Wield Specialization, Blade Flurry, Weapon Expertise, Adrenaline Rush) but Backstab replaces Sinister Strike, so Improved Backstab, Dagger Specialization and Opportunity are taken instead of Sword Specialization and Aggression. Requires standing behind the target; used when your best weapons are daggers.",
+      "allocation": {
+        "Assassination": [["Improved Eviscerate", 1], ["Malice", 5], ["Ruthlessness", 3], ["Murder", 2], ["Improved Slice and Dice", 3], ["Relentless Strikes", 1]],
+        "Combat": [["Improved Gouge", 3], ["Lightning Reflexes", 2], ["Improved Backstab", 3], ["Precision", 5], ["Improved Sprint", 2], ["Dagger Specialization", 5], ["Dual Wield Specialization", 5], ["Blade Flurry", 1], ["Weapon Expertise", 2], ["Aggression", 2], ["Adrenaline Rush", 1]],
+        "Subtlety": [["Opportunity", 5]]
+      },
+      "core": [
+        {"talent": "Improved Backstab", "why": "+30% Backstab crit chance — the whole build revolves around Backstab crits."},
+        {"talent": "Dagger Specialization", "why": "+5% crit with daggers."},
+        {"talent": "Opportunity", "why": "+20% Backstab/Ambush damage."},
+        {"talent": "Weapon Expertise", "why": "+5 dagger skill vs. level 63 bosses."},
+        {"talent": "Dual Wield Specialization", "why": "+50% off-hand damage."},
+        {"talent": "Precision", "why": "+5% hit."},
+        {"talent": "Blade Flurry", "why": "Haste + cleave cooldown."},
+        {"talent": "Adrenaline Rush", "why": "Energy cooldown."},
+        {"talent": "Relentless Strikes", "why": "Energy on finishers."},
+        {"talent": "Improved Slice and Dice", "why": "Longer SnD uptime."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Improved Gouge 3 + Lightning Reflexes 2", "alternatives": ["Improved Sinister Strike + Lightning Reflexes"], "why": "Tier-1 Combat filler; nothing there helps a Backstab rogue."},
+        {"points": 2, "default": "Aggression", "alternatives": ["Aggression 3 with Improved Eviscerate 0", "Improved Kick"], "why": "Aggression only affects Eviscerate for this build, so it is a filler at 2/3."}
+      ],
+      "notes": [
+        "Backstab requires being behind the target; on bosses that turn or cleave, the swords build is safer.",
+        "Slower main-hand dagger (1.8) is best for Backstab; the off-hand should be fast for poison procs."
+      ],
+      "sources": ["https://www.icy-veins.com/wow-classic/rogue-dps-pve-spec-builds-talents"]
+    },
+    {
+      "id": "pvp-seal-fate-daggers",
+      "name": "Seal Fate Daggers (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "primary",
+      "summary": "The burst PvP rogue: Cold Blood + Improved Kidney Shot + Seal Fate from Assassination, Improved Backstab from Combat, and Master of Deception/Opportunity from Subtlety for the Ambush opener. Combo points come fast (Seal Fate) so Kidney Shot -> Cold Blood Eviscerate is always available.",
+      "allocation": {
+        "Assassination": [["Improved Eviscerate", 3], ["Remorseless Attacks", 2], ["Malice", 5], ["Ruthlessness", 3], ["Murder", 2], ["Relentless Strikes", 1], ["Lethality", 5], ["Cold Blood", 1], ["Improved Kidney Shot", 3], ["Seal Fate", 5]],
+        "Combat": [["Improved Sinister Strike", 2], ["Improved Gouge", 3], ["Improved Backstab", 3]],
+        "Subtlety": [["Master of Deception", 5], ["Opportunity", 5], ["Elusiveness", 2], ["Camouflage", 1]]
+      },
+      "core": [
+        {"talent": "Seal Fate", "why": "Extra combo point on crits — with Improved Backstab you build 5 points in two or three globals."},
+        {"talent": "Cold Blood", "why": "Guaranteed crit on the next Eviscerate/Ambush."},
+        {"talent": "Improved Kidney Shot", "why": "+9% damage taken during the stun."},
+        {"talent": "Lethality", "why": "+30% crit damage on Backstab/Sinister Strike."},
+        {"talent": "Improved Backstab", "why": "+30% Backstab crit chance feeds Seal Fate."},
+        {"talent": "Opportunity", "why": "+20% Ambush/Backstab damage."},
+        {"talent": "Master of Deception", "why": "Stealth level; get the opener."},
+        {"talent": "Elusiveness", "why": "Vanish/Blind cooldown reduction."}
+      ],
+      "flex": [
+        {"points": 3, "default": "Improved Gouge", "alternatives": ["Lightning Reflexes"], "why": "Longer Gouge = bandage/reset time."},
+        {"points": 1, "default": "Camouflage", "alternatives": ["Sleight of Hand"], "why": "One-point filler."}
+      ],
+      "notes": [
+        "Opener: Cheap Shot -> Backstab x2 -> Kidney Shot -> Cold Blood Eviscerate; Ambush opener against cloth.",
+        "Preparation is not reachable in this build; the Hemo/Prep build below trades burst for cooldown resets."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/rogue/dps-pvp-arena"]
+    },
+    {
+      "id": "pvp-hemo-prep",
+      "name": "Cold Blood / Hemorrhage / Preparation (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "alternative",
+      "summary": "The control-and-reset PvP rogue: Preparation doubles Vanish/Sprint/Evasion/Cold Blood, Hemorrhage is a cheap builder that works with any weapon, and Improved Ambush + Initiative give a devastating stealth opener. Less sustained damage than Seal Fate, far more outplay potential.",
+      "allocation": {
+        "Assassination": [["Improved Eviscerate", 3], ["Malice", 5], ["Ruthlessness", 3], ["Murder", 2], ["Improved Slice and Dice", 1], ["Relentless Strikes", 1], ["Lethality", 5], ["Cold Blood", 1]],
+        "Combat": [["Improved Gouge", 3]],
+        "Subtlety": [["Master of Deception", 5], ["Opportunity", 5], ["Elusiveness", 2], ["Camouflage", 2], ["Initiative", 3], ["Improved Ambush", 3], ["Serrated Blades", 3], ["Preparation", 1], ["Dirty Deeds", 2], ["Hemorrhage", 1]]
+      },
+      "core": [
+        {"talent": "Preparation", "why": "Resets Vanish, Sprint, Evasion, Cold Blood and Blind."},
+        {"talent": "Hemorrhage", "why": "Cheap 35-energy builder, adds a physical damage debuff; works with a slow sword or mace."},
+        {"talent": "Cold Blood", "why": "Guaranteed crit Ambush or Eviscerate."},
+        {"talent": "Improved Ambush", "why": "+40% Ambush crit chance."},
+        {"talent": "Initiative", "why": "Extra combo point on the opener."},
+        {"talent": "Dirty Deeds", "why": "Cheaper Cheap Shot/Garrote."},
+        {"talent": "Serrated Blades", "why": "Armor penetration and Rupture damage; prerequisite for Hemorrhage."}
+      ],
+      "flex": [
+        {"points": 3, "default": "Improved Gouge", "alternatives": ["Improved Sinister Strike + Lightning Reflexes"], "why": "Three points into Combat for Gouge duration."},
+        {"points": 1, "default": "Improved Slice and Dice", "alternatives": ["Improved Expose Armor", "Remorseless Attacks"], "why": "One filler point needed to reach Cold Blood."}
+      ],
+      "notes": [
+        "Usually played with a dagger main hand for Ambush, swapping to a slow weapon for Hemorrhage spam is optional."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/rogue/dps-pvp-arena"]
+    },
+    {
+      "id": "leveling-combat-swords",
+      "name": "Leveling — Combat Swords",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "primary",
+      "summary": "Combat first for survivability and simple Sinister Strike gameplay (no positioning), Adrenaline Rush at 41, then Assassination. Ends in the exact 19/32/0 raid build so no respec is needed at 60.",
+      "allocation": {
+        "Assassination": [["Improved Eviscerate", 3], ["Malice", 5], ["Ruthlessness", 3], ["Murder", 2], ["Improved Slice and Dice", 3], ["Relentless Strikes", 1], ["Lethality", 2]],
+        "Combat": [["Improved Sinister Strike", 2], ["Lightning Reflexes", 4], ["Precision", 5], ["Endurance", 2], ["Improved Sprint", 2], ["Dual Wield Specialization", 5], ["Blade Flurry", 1], ["Sword Specialization", 5], ["Weapon Expertise", 2], ["Aggression", 3], ["Adrenaline Rush", 1]],
+        "Subtlety": []
+      },
+      "order": [
+        {"levels": "10-11", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 2},
+        {"levels": "12-14", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
+        {"levels": "15-19", "tree": "Combat", "talent": "Precision", "points": 5},
+        {"levels": "20", "tree": "Combat", "talent": "Lightning Reflexes", "points": 1},
+        {"levels": "21-22", "tree": "Combat", "talent": "Improved Sprint", "points": 2},
+        {"levels": "23-24", "tree": "Combat", "talent": "Endurance", "points": 2},
+        {"levels": "25-29", "tree": "Combat", "talent": "Dual Wield Specialization", "points": 5},
+        {"levels": "30", "tree": "Combat", "talent": "Blade Flurry", "points": 1},
+        {"levels": "31-35", "tree": "Combat", "talent": "Sword Specialization", "points": 5},
+        {"levels": "36-37", "tree": "Combat", "talent": "Weapon Expertise", "points": 2},
+        {"levels": "38-40", "tree": "Combat", "talent": "Aggression", "points": 3},
+        {"levels": "41", "tree": "Combat", "talent": "Adrenaline Rush", "points": 1},
+        {"levels": "42-46", "tree": "Assassination", "talent": "Malice", "points": 5},
+        {"levels": "47-49", "tree": "Assassination", "talent": "Ruthlessness", "points": 3},
+        {"levels": "50-51", "tree": "Assassination", "talent": "Murder", "points": 2},
+        {"levels": "52-54", "tree": "Assassination", "talent": "Improved Slice and Dice", "points": 3},
+        {"levels": "55", "tree": "Assassination", "talent": "Relentless Strikes", "points": 1},
+        {"levels": "56-58", "tree": "Assassination", "talent": "Improved Eviscerate", "points": 3},
+        {"levels": "59-60", "tree": "Assassination", "talent": "Lethality", "points": 2}
+      ],
+      "core": [
+        {"talent": "Improved Sinister Strike", "why": "Cheaper builder from level 10."},
+        {"talent": "Precision", "why": "Hit is the biggest early damage stat."},
+        {"talent": "Dual Wield Specialization", "why": "Big off-hand damage at 25."},
+        {"talent": "Blade Flurry", "why": "Multi-target leveling cooldown at 30."},
+        {"talent": "Adrenaline Rush", "why": "Energy burst at 41."}
+      ],
+      "flex": [
+        {"points": 5, "default": "Sword Specialization", "alternatives": ["Dagger Specialization (Backstab leveling)", "Mace Specialization"], "why": "Match the weapons you find while leveling; Sword Spec matches the raid end-state."}
+      ],
+      "notes": [
+        "Riposte (needs Deflection 5) is a popular leveling alternative to Lightning Reflexes + Endurance; it costs a respec at 60."
+      ],
+      "sources": ["https://www.wowhead.com/classic/guide/classes/rogue/leveling-talents"]
+    }
+  ]
+}

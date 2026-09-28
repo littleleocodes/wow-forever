@@ -1,0 +1,130 @@
+{
+ "id": "cand-bm-raid-from-preset",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    3
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-28) for bm-raid from sim preset: Beast Mastery 35/16/0 in the dummy setting: 436.7 -> 467.1 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Beast Mastery 35/16/0",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Frenzy -> Improved Stings",
+    "gain_seed1": 0.0260142811438282,
+    "gain_seed2": 0.026926490455690066,
+    "split": "32/19/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Endurance Training -> Trueshot Aura",
+    "gain_seed1": 0.01586311839333776,
+    "gain_seed2": 0.015868897507494983,
+    "split": "31/20/0"
+   },
+   {
+    "round": 3,
+    "move": "2 points Efficiency -> Mortal Shots",
+    "gain_seed1": 0.011478565931256401,
+    "gain_seed2": 0.011612480838339323,
+    "split": "31/20/0"
+   },
+   {
+    "round": 4,
+    "move": "1 point Rapid Killing -> Mortal Shots",
+    "gain_seed1": 0.0060569414190558835,
+    "gain_seed2": 0.00605678278600319,
+    "split": "31/20/0"
+   },
+   {
+    "round": 5,
+    "move": "2 points Spirit Bond -> Frenzy",
+    "gain_seed1": 0.004060112140825467,
+    "gain_seed2": 0.004863905707338079,
+    "split": "31/20/0"
+   },
+   {
+    "round": 6,
+    "move": "1 point Endurance Training -> Frenzy",
+    "gain_seed1": 0.0033953805195550135,
+    "gain_seed2": 0.0025624308347773628,
+    "split": "31/20/0"
+   }
+  ],
+  "dps_start": 436.73465203913827,
+  "dps_end": 467.1439843024575
+ }
+}

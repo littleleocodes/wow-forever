@@ -1,0 +1,56 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "game": "classic-era",
+ "date": "2026-09-27",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "gear_raid": "ui/enhancement_shaman/gear_sets/phase_1.gear.json",
+  "gear_max": "ui/enhancement_shaman/gear_sets/phase_5.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "no raid buffs, no consumables, a level-60 target that never dies (no execute phase), the spec's phase-1 gear preset, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "the raid-sim setting: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "enhancement-raid-support",
+   "split": "0/31/20",
+   "ours": true,
+   "dps": {
+    "dummy": 222.259484137503,
+    "max": 938.1490666793028,
+    "max60": 957.6630762097819,
+    "raid": 777.4061096212495
+   }
+  },
+  {
+   "label": "sim preset: Level 60",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 222.259484137503,
+    "max": 938.1490666793028,
+    "max60": 957.6630762097819,
+    "raid": 777.4061096212495
+   }
+  }
+ ]
+}

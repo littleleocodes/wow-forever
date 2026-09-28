@@ -1,0 +1,144 @@
+{
+ "dummy": {
+  "class": "mage",
+  "spec": "frostfire-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.apl.json",
+  "builds": [
+   {
+    "label": "frostfire-raid",
+    "talents": "-03552020130133151-005500033"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Fireball",
+    "gain_seed1": 0.0076181545970119835,
+    "gain_seed2": 0.007416479841948709,
+    "candidates": 244,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation",
+    "gain_seed1": 0.00496937718914392,
+    "gain_seed2": 0.0049169462256661856,
+    "candidates": 256,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "only with 3s or more of the fight left: cast Fireball",
+    "gain_seed1": 0.0030759575935959127,
+    "gain_seed2": 0.0031550123208829994,
+    "candidates": 258,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "insert before the filler: cast Robe of the Archmage",
+    "gain_seed1": 0.005013972970422831,
+    "gain_seed2": 0.006370540599845542,
+    "candidates": 271,
+    "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "threshold 5s -> 6s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.0032578878235411945,
+    "gain_seed2": 0.003868485825661905,
+    "candidates": 279,
+    "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "insert at the top: cast Berserking",
+    "gain_seed1": 0.0040508092911197835,
+    "gain_seed2": 0.0015928591115876856,
+    "candidates": 279,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "frostfire-raid": {
+     "before": 502.67438309598174,
+     "after": 513.7757553197893,
+     "base": 502.67438309598174,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.9439904999999915,
+     "oom_after": 0.5994752500000012
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 2
+ },
+ "raid": {
+  "class": "mage",
+  "spec": "frostfire-raid",
+  "date": "2026-09-28",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
+  "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
+  "builds": [
+   {
+    "label": "frostfire-raid",
+    "talents": "-03552020130133151-005500033"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.0019338390042755726,
+    "gain_seed2": 0.002367860024643953,
+    "candidates": 226,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 110 -> 82.5: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.0016969836419360451,
+    "gain_seed2": 0.0023811308832806244,
+    "candidates": 246,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: cast Berserking",
+    "gain_seed1": 0.00472304575348903,
+    "gain_seed2": 0.003466820922335856,
+    "candidates": 263,
+    "pass": 3
+   }
+  ],
+  "final": {
+   "raid": {
+    "frostfire-raid": {
+     "before": 586.1203402546681,
+     "after": 590.3808756522723,
+     "base": 586.1203402546681,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

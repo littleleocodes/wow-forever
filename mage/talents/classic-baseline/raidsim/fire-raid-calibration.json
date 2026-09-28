@@ -1,0 +1,233 @@
+{
+ "class": "mage",
+ "spec": "fire-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "fire-raid"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "mage",
+  "gear": "ui/mage/gear_sets/p1.bis.gear.json",
+  "apl": "ui/mage/apls/p1.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own improved_scorch (its talent is under test)",
+  "consumables": {
+   "defaultConjured": "ConjuredDemonicRune",
+   "defaultPotion": "MajorManaPotion",
+   "firePowerBuff": "ElixirOfGreaterFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "frostPowerBuff": "ElixirOfFrostPower",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Combustion",
+   "sim": 1.025079732296937,
+   "ev_before": 0.01584902870494003,
+   "ev_after": 0.015816202403852543,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Ignite",
+   "sim": 0.438490672882866,
+   "ev_before": 0.22686374013012964,
+   "ev_after": 0.22629650288589576,
+   "scale": 64.0,
+   "how": "capped",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Improved Scorch",
+   "sim": 0.37171315530111515,
+   "ev_before": 0.4080084698841664,
+   "ev_after": 0.4105213573716548,
+   "scale": 1.0,
+   "how": "apl",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Improved Fireball",
+   "sim": 0.15229077515265993,
+   "ev_before": 0.12465244293637927,
+   "ev_after": 0.12436667538043411,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Fire Power",
+   "sim": 0.09998039744661412,
+   "ev_before": 0.09998018569537283,
+   "ev_after": 0.0997559966236305,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Elemental Precision",
+   "sim": 0.08582801525341814,
+   "ev_before": 0.07211566891952385,
+   "ev_after": 0.0719580488238525,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Critical Mass",
+   "sim": 0.07446249870955052,
+   "ev_before": 0.060491798329670415,
+   "ev_after": 0.06036101439214958,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Concentration",
+   "sim": 0.009700878247511917,
+   "ev_before": 0.007683111794623997,
+   "ev_after": 0.007744593355389873,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Master of Elements",
+   "sim": 0.0059436650804600664,
+   "ev_before": 0.0070236654987247005,
+   "ev_after": 0.007079832983205037,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Incinerate",
+   "sim": 0.0025086963969903706,
+   "ev_before": 0.0003584363425274995,
+   "ev_after": 0.0003577052513893805,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Meditation",
+   "sim": 0.0004487264747203978,
+   "ev_before": 0.0037337168893542268,
+   "ev_after": 0.0037634766907196715,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Arcane Subtlety",
+   "sim": 0.0,
+   "ev_before": 0.007940671951162478,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Burning Soul",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Flame Throwing",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Improved Arcane Explosion",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Magic Attunement",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  },
+  {
+   "talent": "Pyroblast",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "fire-raid"
+   ]
+  }
+ ]
+}

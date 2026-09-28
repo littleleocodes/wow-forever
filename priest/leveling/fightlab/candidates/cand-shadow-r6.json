@@ -1,0 +1,215 @@
+{
+ "id": "cand-shadow-r6",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Silent Resolve",
+    2
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Mental Strength",
+    1
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Spirit Tap",
+    5
+   ],
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    5
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Improved Mind Blast",
+    1
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Early Demise",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "25-27",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "28-32",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 5
+  },
+  {
+   "levels": "33",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "35-36",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 2
+  },
+  {
+   "levels": "37-39",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 2
+  },
+  {
+   "levels": "43-47",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "48-50",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "51-52",
+   "tree": "Discipline",
+   "talent": "Silent Resolve",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "54-55",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "56-58",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 1
+  }
+ ],
+ "note": "Optimizer build saved by rebuild.py on 2026-09-27 (calibration round 6)"
+}

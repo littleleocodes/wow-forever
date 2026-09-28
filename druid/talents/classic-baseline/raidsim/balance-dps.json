@@ -1,0 +1,82 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "balance_druid",
+  "gear": "ui/balance_druid/gear_sets/p1.bis.gear.json",
+  "apl": "ui/balance_druid/apls/balance.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults) minus the spec's own moonkin_aura (its talent is under test)",
+  "consumables": {
+   "defaultPotion": "MajorManaPotion",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodRunnTumTuberSurprise",
+   "mainHandImbue": "BrilliantWizardOil",
+   "manaRegenElixir": "MagebloodPotion",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "zanzaBuff": "CerebralCortexCompound"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "balance-moonkin-raid",
+   "talents": "5000500302551351--50050312",
+   "split": "35/0/16",
+   "ours": true,
+   "dps": 566.9241458043488,
+   "dps_stdev": 54.67376033395017,
+   "threat": 579.3622087042277,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.041499999999999995,
+   "error": null,
+   "scorer": 0.7858872638097183,
+   "shares": {
+    "Starfire": 0.7900728688870589,
+    "Moonfire": 0.20199285352532484,
+    "Wrath": 0.00793427758761638
+   },
+   "source_shares": {
+    "starfire": 0.7901,
+    "moonfire_direct": 0.202,
+    "wrath": 0.0079
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Balance",
+   "talents": "5000550012551251--5005031",
+   "split": "",
+   "ours": false,
+   "dps": 564.6805141335097,
+   "dps_stdev": 54.93007455209569,
+   "threat": 577.0987218377255,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.32391666666666663,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Starfire": 0.7914961941507217,
+    "Moonfire": 0.2006846030037569,
+    "Wrath": 0.007819202845521461
+   },
+   "source_shares": {
+    "starfire": 0.7915,
+    "moonfire_direct": 0.2007,
+    "wrath": 0.0078
+   },
+   "unmatched_share": 0.0
+  }
+ ],
+ "deltas": {}
+}

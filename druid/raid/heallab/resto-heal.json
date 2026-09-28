@@ -1,0 +1,324 @@
+{
+ "class": "druid",
+ "spec": "resto-heal",
+ "date": "2026-09-28",
+ "runs": 60,
+ "steps": 10,
+ "seconds": 118,
+ "assumptions": {
+  "DURATION": 300.0,
+  "TANK_HP": 9000.0,
+  "RAID_HP": 4500.0,
+  "TANK_ARMOR_MIT": 0.55,
+  "TANK_AVOID": 0.3,
+  "BOSS_SWING": 2.0,
+  "BOSS_DMG": 2600.0,
+  "CRUSH_CHANCE": 0.15,
+  "SPIKE_EVERY": 30.0,
+  "SPIKE_MULT": 2.0,
+  "RAID_PULSE_EVERY": 20.0,
+  "RAID_PULSE_DMG": 700.0,
+  "POTIONS": true,
+  "DOWNRANK": true,
+  "KINGS": 1.1
+ },
+ "gear": {
+  "intellect": 230,
+  "spirit": 190,
+  "healing": 370,
+  "mp5": 12,
+  "crit_gear": 0.02
+ },
+ "results": {
+  "resto-raid-healer": {
+   "split": "11/0/40",
+   "capacity": 0.7265136718750002,
+   "summary": {
+    "multiplier": 0.7265136718750002,
+    "shares": {
+     "Healing Touch": 0.66901634004991,
+     "Regrowth": 0.2097773619118194,
+     "Rejuvenation": 0.11152412212471219,
+     "Swiftmend": 0.009682175913558431
+    },
+    "hps": 436.73138389053713,
+    "overheal_share": 0.09679153628008434,
+    "oom_time": 13.216666666666693,
+    "mana_left": 664.933100000003,
+    "survival": 0.8
+   },
+   "stats": {
+    "intellect": 410,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 7398,
+    "crit": 0.107
+   }
+  },
+  "opt-resto-heal-raid-heal": {
+   "split": "11/5/35",
+   "capacity": 0.749365234375,
+   "summary": {
+    "multiplier": 0.749365234375,
+    "shares": {
+     "Healing Touch": 0.6722356785319518,
+     "Regrowth": 0.204994617251297,
+     "Rejuvenation": 0.11449306520237613,
+     "Swiftmend": 0.008276639014375111
+    },
+    "hps": 450.6000590121877,
+    "overheal_share": 0.07894256386230876,
+    "oom_time": 13.101666666666688,
+    "mana_left": 646.7516333333388,
+    "survival": 0.8166666666666667
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 8014,
+    "crit": 0.1139
+   }
+  },
+  "cand-resto-r1": {
+   "split": "11/5/35",
+   "capacity": 0.749365234375,
+   "summary": {
+    "multiplier": 0.749365234375,
+    "shares": {
+     "Healing Touch": 0.6722356785319518,
+     "Regrowth": 0.204994617251297,
+     "Rejuvenation": 0.11449306520237613,
+     "Swiftmend": 0.008276639014375111
+    },
+    "hps": 450.6000590121877,
+    "overheal_share": 0.07894256386230876,
+    "oom_time": 13.101666666666688,
+    "mana_left": 646.7516333333388,
+    "survival": 0.8166666666666667
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 8014,
+    "crit": 0.1139
+   }
+  },
+  "cand-resto-r2": {
+   "split": "11/5/35",
+   "capacity": 0.7503173828125002,
+   "summary": {
+    "multiplier": 0.7503173828125002,
+    "shares": {
+     "Healing Touch": 0.6631232802943448,
+     "Regrowth": 0.21227088685331455,
+     "Rejuvenation": 0.11472799090672167,
+     "Swiftmend": 0.009877841945618963
+    },
+    "hps": 453.14698973142134,
+    "overheal_share": 0.08513294440379557,
+    "oom_time": 14.8266666666667,
+    "mana_left": 599.0598666666721,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 8014,
+    "crit": 0.1139
+   }
+  }
+ },
+ "deltas": {
+  "resto-raid-healer": [
+   {
+    "talent": "Genesis",
+    "ranks": 5,
+    "sim_delta": 0.021418274181369035,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.711279296875,
+    "ev_delta": 0.013408675269211441,
+    "simulated": true
+   },
+   {
+    "talent": "Gift of Nature",
+    "ranks": 5,
+    "sim_delta": 0.05873981570427308,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.6862060546875001,
+    "ev_delta": 0.056348565422680956,
+    "simulated": true
+   },
+   {
+    "talent": "Gift of the Earthmother",
+    "ranks": 1,
+    "sim_delta": 0.021418274181369035,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.711279296875,
+    "ev_delta": 0.006823228573871826,
+    "simulated": true
+   },
+   {
+    "talent": "Improved Regrowth",
+    "ranks": 5,
+    "sim_delta": 0.01327976028330155,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7169921875000002,
+    "ev_delta": 0.01119765678730173,
+    "simulated": true
+   },
+   {
+    "talent": "Improved Rejuvenation",
+    "ranks": 3,
+    "sim_delta": 0.009704125950054255,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7195312500000002,
+    "ev_delta": 0.019356176400134283,
+    "simulated": true
+   },
+   {
+    "talent": "Living Spirit",
+    "ranks": 3,
+    "sim_delta": 0.05532307255833746,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.6884277343750002,
+    "ev_delta": 0.05179176407484949,
+    "simulated": true
+   },
+   {
+    "talent": "Moonglow",
+    "ranks": 3,
+    "sim_delta": 0.29540309942538756,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.5608398437500001,
+    "ev_delta": 0.31613505053122715,
+    "simulated": true
+   },
+   {
+    "talent": "Naturalist",
+    "ranks": 5,
+    "sim_delta": 0.0039472352484734895,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7236572265625001,
+    "ev_delta": 0.0043450816721473835,
+    "simulated": true
+   },
+   {
+    "talent": "Nature's Focus",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7265136718750002,
+    "ev_delta": 0.006910851253542744,
+    "simulated": false
+   },
+   {
+    "talent": "Nature's Majesty",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7265136718750002,
+    "ev_delta": 0.015066257962175358,
+    "simulated": true
+   },
+   {
+    "talent": "Nature's Splendor",
+    "ranks": 1,
+    "sim_delta": 0.02416024229074899,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7093750000000001,
+    "ev_delta": 0.009378644169686885,
+    "simulated": true
+   },
+   {
+    "talent": "Nature's Swiftness",
+    "ranks": 1,
+    "sim_delta": 0.0013122917998588599,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7255615234375,
+    "ev_delta": 0.011019704694024319,
+    "simulated": true
+   },
+   {
+    "talent": "Reflection",
+    "ranks": 3,
+    "sim_delta": 0.37641073080481063,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.52783203125,
+    "ev_delta": 0.14790811174604399,
+    "simulated": true
+   },
+   {
+    "talent": "Subtlety",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7265136718750002,
+    "ev_delta": 0.0022959282253437823,
+    "simulated": false
+   },
+   {
+    "talent": "Swiftmend",
+    "ranks": 1,
+    "sim_delta": 0.02416024229074899,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7093750000000001,
+    "ev_delta": 0.004104699191004704,
+    "simulated": true
+   },
+   {
+    "talent": "Tranquil Spirit",
+    "ranks": 5,
+    "sim_delta": 0.09259803201644891,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.6649414062500001,
+    "ev_delta": 0.06269648395754261,
+    "simulated": true
+   },
+   {
+    "talent": "Wild Growth",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "cap_with": 0.7265136718750002,
+    "cap_without": 0.7265136718750002,
+    "ev_delta": 0.007694313799676376,
+    "simulated": true
+   }
+  ]
+ },
+ "mechanics": {
+  "Swiftmend": "instant heal for the full periodic amount of the target's Rejuvenation or Regrowth (consumed), 15 s cooldown",
+  "Nature's Swiftness": "instant Healing Touch on a tank under 35%, every 3 min",
+  "Nature's Grace": "after a critical heal the next cast is 0.5 s faster",
+  "Genesis": "+1%/rank periodic healing",
+  "Gift of the Earthmother": "+5% periodic healing",
+  "Nature's Splendor": "+4% Rejuvenation and Regrowth",
+  "Wild Growth": "679 over 7 s on the group, 6 s cooldown: the group heal",
+  "Innervate": "on yourself under 40% mana (every 6 min)"
+ },
+ "simulated": [
+  "Genesis",
+  "Gift of Nature",
+  "Gift of the Earthmother",
+  "Heart of the Wild",
+  "Improved Regrowth",
+  "Improved Rejuvenation",
+  "Living Spirit",
+  "Moonglow",
+  "Naturalist",
+  "Nature's Grace",
+  "Nature's Majesty",
+  "Nature's Splendor",
+  "Nature's Swiftness",
+  "Reflection",
+  "Swiftmend",
+  "Tranquil Spirit",
+  "Wild Growth"
+ ]
+}

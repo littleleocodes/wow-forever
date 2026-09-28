@@ -1,0 +1,556 @@
+{
+  "_doc": "Mage spec models. See hunter.json for the field meanings. Cast times are the level-60 ranks (Frostbolt 3.0s, Fireball 3.5s, Scorch 1.5s); min_cast is the GCD floor. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check). enabled_by = the talent(s) that create the source (off without them; enabled_ranks scales the share with the rank); displaces = sources that get its share back when it is off.",
+  "models": {
+    "frost-leveling": {
+      "note": "Single-target Frostbolt leveling: Frostbolt ~70%, Fire Blast/Frost Nova instants, wand finishes. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-frost-leveling-leveling-st at level 60, 1500 fights): shares are the measured damage split (Ice Lance 69%, Frostbolt 29%, Frost Nova 1%, Wand 1%) and the leveling time split is fight 74% / drink 19% / eat 0% / other 2% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop.",
+      "sources": [
+        {
+          "id": "frostbolt",
+          "share": 0.193,
+          "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.286},
+            "solo-60": {"share": 0.286}
+          },
+          "game_overrides": {
+            "classic-era": {
+              "share": 0.828,
+              "profile_overrides": {
+                "leveling-st": {"share": 0.828},
+                "solo-60": {"share": 0.828}
+              }
+            }
+          }
+        },
+        {
+          "id": "frost_nova",
+          "share": 0.012,
+          "min_level": 10,
+          "tags": ["type:spell", "school:frost", "ability:Frost Nova"],
+          "cooldown": 25,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.013},
+            "solo-60": {"share": 0.013}
+          }
+        },
+        {
+          "id": "fire_blast",
+          "share": 0.122,
+          "min_level": 6,
+          "tags": ["type:spell", "school:fire", "ability:Fire Blast"],
+          "cooldown": 8,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "cone",
+          "share": 0.037,
+          "min_level": 26,
+          "tags": ["type:spell", "school:frost", "ability:Cone of Cold", "aoe"],
+          "cooldown": 10,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "missiles",
+          "share": 0.0,
+          "min_level": 8,
+          "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.0},
+            "solo-60": {"share": 0.0}
+          }
+        },
+        {
+          "id": "wand",
+          "share": 0.001,
+          "min_level": 5,
+          "tags": ["ability:Wand", "white"],
+          "can_crit": false,
+          "profile_overrides": {
+            "leveling-st": {"share": 0.007},
+            "solo-60": {"share": 0.007}
+          }
+        },
+        {
+          "id": "ice_lance",
+          "share": 0.635,
+          "min_level": 20,
+          "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
+          "profile_overrides": {
+            "leveling-st": {"share": 0.694},
+            "solo-60": {"share": 0.694}
+          },
+          "enabled_by": "Ice Lance",
+          "displaces": ["frostbolt"],
+          "game_overrides": {
+            "classic-era": {
+              "share": 0.0,
+              "profile_overrides": {}
+            }
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:frost": 0.85,
+        "ability:Frostbolt": 0.8,
+        "school:fire": 0.1,
+        "ability:Fire Blast": 0.1,
+        "school:arcane": 0.05,
+        "ability:Arcane Missiles": 0.05
+      },
+      "regen_share": 0.3,
+      "time": {
+        "leveling-st": {"fight": 0.735, "drink": 0.194, "eat": 0.001, "other": 0.023, "death": 0.048},
+        "solo-60": {"fight": 0.735, "drink": 0.194, "eat": 0.001, "other": 0.023, "death": 0.048}
+      },
+      "abs_dps_factor": 1.0,
+      "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0}
+    },
+    "frost-aoe": {
+      "note": "AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs. Blizzard is a channel (cast-time talents do not apply). Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-frost-aoe-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Blizzard 49%, Cone of Cold 14%, Ice Lance 14%, Arcane Explosion 8%, Frostbolt 7%, Frost Nova 3%, Wand 3%, Fire Blast 2%) and the leveling time split is fight 70% / drink 6% / eat 4% / other 0% / death 20% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop.",
+      "sources": [
+        {
+          "id": "blizzard",
+          "share": 0.55,
+          "min_level": 20,
+          "tags": ["type:spell", "school:frost", "ability:Blizzard", "aoe"],
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.468}
+          }
+        },
+        {
+          "id": "cone",
+          "share": 0.12,
+          "min_level": 26,
+          "tags": ["type:spell", "school:frost", "ability:Cone of Cold", "aoe"],
+          "cooldown": 10,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.142}
+          }
+        },
+        {
+          "id": "frost_nova",
+          "share": 0.05,
+          "min_level": 10,
+          "tags": ["type:spell", "school:frost", "ability:Frost Nova", "aoe"],
+          "cooldown": 25,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.031}
+          }
+        },
+        {
+          "id": "explosion",
+          "share": 0.18,
+          "min_level": 14,
+          "tags": ["type:spell", "school:arcane", "ability:Arcane Explosion", "aoe"],
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.154}
+          }
+        },
+        {
+          "id": "frostbolt",
+          "share": 0.1,
+          "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 4,
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.069}
+          },
+          "game_overrides": {
+            "classic-era": {
+              "share": 0.1,
+              "profile_overrides": {
+                "leveling-aoe": {"share": 0.162}
+              }
+            }
+          }
+        },
+        {
+          "id": "ice_lance",
+          "share": 0.0,
+          "min_level": 20,
+          "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
+          "profile_overrides": {
+            "leveling-aoe": {"share": 0.136}
+          },
+          "enabled_by": "Ice Lance",
+          "displaces": ["frostbolt"],
+          "game_overrides": {
+            "classic-era": {
+              "share": 0.0,
+              "profile_overrides": {}
+            }
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.7, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:frost": 0.72,
+        "ability:Blizzard": 0.6,
+        "ability:Cone of Cold": 0.08,
+        "school:arcane": 0.25,
+        "ability:Arcane Explosion": 0.25,
+        "ability:Frostbolt": 0.05
+      },
+      "regen_share": 0.3,
+      "abs_dps_factor": 1.0,
+      "time": {
+        "leveling-aoe": {"fight": 0.703, "drink": 0.058, "eat": 0.038, "other": 0.0, "death": 0.201}
+      },
+      "fight_coupling": {"leveling-aoe": 1.0}
+    },
+    "fire-leveling": {
+      "note": "Single-target Fireball leveling: Fireball ~60%, Fire Blast, Scorch (22+), wand. Fight lab calibration (2026-09-25, beta client 1.60.1.70009, build opt-fire-leveling-leveling-st at level 60, 2000 fights): shares are the measured damage split (Ice Lance 63%, Fire Blast 15%, Fireball 15%, Scorch 4%, Frost Nova 2%, Fireball burn 1%, Wand 0%) and the leveling time split is fight 51% / downtime 44% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length); Ice Lance is a source so Frost crit/damage talents scale with the Frozen-target loop.",
+      "sources": [
+        {
+          "id": "fireball",
+          "share": 0.218,
+          "tags": ["type:spell", "school:fire", "ability:Fireball"],
+          "cast": 3.5,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.803}
+          }
+        },
+        {
+          "id": "fire_blast",
+          "share": 0.139,
+          "min_level": 6,
+          "tags": ["type:spell", "school:fire", "ability:Fire Blast"],
+          "cooldown": 8
+        },
+        {
+          "id": "scorch",
+          "share": 0.037,
+          "min_level": 22,
+          "tags": ["type:spell", "school:fire", "ability:Scorch"],
+          "cast": 1.5,
+          "min_cast": 1.5
+        },
+        {
+          "id": "ignite",
+          "share": 0.1,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Ignite"],
+          "can_crit": false,
+          "enabled_by": "Ignite",
+          "enabled_ranks": 5,
+          "note": "Ignite burn while leveling: 10% of fire damage assumed (fewer crits than a raid); rough model, not calibrated. scales_with_crit: the burn is 40% of every crit, so its size follows the fire crit chance (Critical Mass feeds it).",
+          "scales_with_crit": true
+        },
+        {
+          "id": "pyroblast",
+          "share": 0.05,
+          "tags": ["type:spell", "school:fire", "ability:Pyroblast"],
+          "cast": 6.0,
+          "min_cast": 1.5,
+          "enabled_by": "Pyroblast",
+          "displaces": ["fireball"],
+          "note": "Pyroblast opener on a mob at range: 5% assumed; rough model."
+        },
+        {
+          "id": "frost_nova",
+          "share": 0.016,
+          "min_level": 10,
+          "tags": ["type:spell", "school:frost", "ability:Frost Nova"],
+          "cooldown": 25
+        },
+        {
+          "id": "missiles",
+          "share": 0.0,
+          "min_level": 8,
+          "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"]
+        },
+        {
+          "id": "wand",
+          "share": 0.004,
+          "min_level": 5,
+          "tags": ["ability:Wand", "white"],
+          "can_crit": false
+        },
+        {
+          "id": "ice_lance",
+          "share": 0.585,
+          "min_level": 20,
+          "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
+          "enabled_by": "Ice Lance",
+          "displaces": ["fireball"],
+          "game_overrides": {
+            "classic-era": {
+              "share": 0.0,
+              "profile_overrides": {}
+            }
+          },
+          "profile_overrides": {
+            "leveling-st": {"share": 0.05},
+            "solo-60": {"share": 0.05}
+          },
+          "note": "Fire model (2026-09-27 audit): its leveling share is capped at 5%: fitted from its own Frost-heavy build it was 58.5%, which turned the Fire model into Frost."
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:fire": 0.9,
+        "ability:Fireball": 0.72,
+        "ability:Scorch": 0.1,
+        "ability:Fire Blast": 0.08,
+        "school:arcane": 0.05,
+        "school:frost": 0.03
+      },
+      "regen_share": 0.3,
+      "time": {
+        "leveling-st": {"fight": 0.51, "downtime": 0.44, "death": 0.05},
+        "solo-60": {"fight": 0.51, "downtime": 0.44, "death": 0.05}
+      },
+      "abs_dps_factor": 1.0,
+      "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0}
+    },
+    "frost-raid": {
+      "note": "Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27). Raid sim shares (2026-09-28, frost-fingers-of-frost-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): frostbolt 75%, ice_lance 25%; 0% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "frostbolt",
+          "share": 0.7494,
+          "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
+          "cast": 3.0,
+          "min_cast": 1.5,
+          "min_level": 4,
+          "game_overrides": {
+            "classic-era": {"share": 1.0}
+          }
+        },
+        {
+          "id": "ice_lance",
+          "share": 0.2506,
+          "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
+          "min_level": 20,
+          "enabled_by": "Ice Lance",
+          "displaces": ["frostbolt"],
+          "note": "Ice Lance under Fingers of Frost: the simulator's frost rotation casts it only while a Fingers of Frost charge is up (25% of frost-fingers-of-frost-raid's damage, ElliotWood/Forever 40be98e, 2026-09-27; every such cast counts as Frozen). Without Ice Lance the time goes back to Frostbolt; the extra damage over that Frostbolt time is Fingers of Frost's raid value (damage on Ice Lance) and Shatter's crit on Frozen casts.",
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "fire_blast",
+          "share": 0.0,
+          "tags": ["type:spell", "school:fire", "ability:Fire Blast"],
+          "cooldown": 8,
+          "min_level": 6,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "cone",
+          "share": 0.0,
+          "tags": ["type:spell", "school:frost", "ability:Cone of Cold", "aoe"],
+          "cooldown": 10,
+          "min_level": 26,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "missiles",
+          "share": 0.0,
+          "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
+          "min_level": 8,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:frost": 0.95,
+        "ability:Frostbolt": 0.93,
+        "school:fire": 0.03,
+        "school:arcane": 0.02
+      },
+      "regen_share": 0.4,
+      "abs_dps_factor": 1.0,
+      "mana_weight": {"raid-dps": 0.3, "raid-dps-extwc": 0.3},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.045,
+          "cap": 0.9,
+          "rms": 0.0097,
+          "points": 54,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    },
+    "fire-raid": {
+      "note": "Raid Fireball spam with Scorch upkeep. Ignite is encoded as extra crit damage on Fire sources. Raid sim shares (2026-09-28, fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): fireball 51%, fire_blast 20%, ignite 12%, pyroblast 10%, scorch 7%; 0% of the damage matched no source.",
+      "sources": [
+        {
+          "id": "fireball",
+          "share": 0.5118,
+          "tags": ["type:spell", "school:fire", "ability:Fireball"],
+          "cast": 3.5,
+          "min_cast": 1.5,
+          "game_overrides": {
+            "classic-era": {"share": 0.6358}
+          }
+        },
+        {
+          "id": "scorch",
+          "share": 0.0735,
+          "tags": ["type:spell", "school:fire", "ability:Scorch"],
+          "cast": 1.5,
+          "min_cast": 1.5,
+          "min_level": 22,
+          "game_overrides": {
+            "classic-era": {"share": 0.0591}
+          }
+        },
+        {
+          "id": "fire_blast",
+          "share": 0.2009,
+          "tags": ["type:spell", "school:fire", "ability:Fire Blast"],
+          "cooldown": 8,
+          "min_level": 6,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "ignite",
+          "share": 0.1182,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Ignite"],
+          "can_crit": false,
+          "enabled_by": "Ignite",
+          "enabled_ranks": 5,
+          "note": "The Ignite burn (40% of every fire crit at 5/5, 8%/rank): 12% of a Forever fire mage's raid damage in the ElliotWood/Forever simulator, 30% in wowsims/classic (2026-09-26); grows with the rank, nothing to displace. scales_with_crit: the burn is 40% of every crit, so its size follows the fire crit chance (Critical Mass feeds it).",
+          "game_overrides": {
+            "classic-era": {"share": 0.305}
+          },
+          "scales_with_crit": true
+        },
+        {
+          "id": "pyroblast",
+          "share": 0.0956,
+          "tags": ["type:spell", "school:fire", "ability:Pyroblast"],
+          "cast": 6.0,
+          "min_cast": 1.5,
+          "enabled_by": "Pyroblast",
+          "displaces": ["fireball"],
+          "note": "Pyroblast: 10% of the Forever raid split (Hot Streak procs in the simulator's rotation), none in Classic; without the talent those casts are Fireballs.",
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "fireball_dot",
+          "share": 0.0,
+          "tags": ["type:spell", "school:fire", "dot", "ability:Fireball"],
+          "can_crit": false,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        },
+        {
+          "id": "missiles",
+          "share": 0.0,
+          "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
+          "min_level": 8,
+          "game_overrides": {
+            "classic-era": {"share": 0.0}
+          }
+        }
+      ],
+      "base": {
+        "leveling": {
+          "crit": {"type:spell": 0.05}
+        },
+        "raid": {
+          "crit": {"type:spell": 0.15}
+        }
+      },
+      "stat_to_dps": {"intellect": 0.05},
+      "stat_to_sustain": {"intellect": 0.6, "spirit": 0.4},
+      "stat_to_surv": {"stamina": 1.0},
+      "mana_share": {
+        "all": 1.0,
+        "type:spell": 1.0,
+        "school:fire": 0.97,
+        "ability:Fireball": 0.8,
+        "ability:Scorch": 0.1,
+        "ability:Fire Blast": 0.07,
+        "school:arcane": 0.03
+      },
+      "regen_share": 0.4,
+      "abs_dps_factor": 1.0,
+      "mana_weight": {"raid-dps": 0.3},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.17,
+          "cap": 0.07,
+          "rms": 0.0059,
+          "points": 28,
+          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 3-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
+    }
+  }
+}

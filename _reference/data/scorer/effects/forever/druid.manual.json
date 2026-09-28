@@ -1,0 +1,3667 @@
+{
+  "_doc": "Hand-entered Druid effects (Forever). Tags: cat = Cat Form sources (white/Shred/finishers), tank/bear = Bear Form threat sources, finisher/builder = combo-point abilities, hot/direct = heal parts, form:cat/form:bear for Heart of the Wild stats. mana_share tag shapeshift = mana spent on form changes.",
+  "Genesis": {
+    "note": "+1%/rank periodic damage and healing (Moonfire/Rip/Rake DoTs, Rejuvenation/Regrowth HoTs). Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.4% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.4%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "values": [0.001863, 0.003763, 0.005701, 0.007676, 0.00969],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.001863, 0.003763, 0.005701, 0.007676, 0.00969],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.025066,
+        "values": [0.025066, 0.050132, 0.075198, 0.100264, 0.125329],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.025066,
+        "values": [0.025066, 0.050132, 0.075198, 0.100264, 0.125329],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.0201, 0.0404, 0.0609, 0.0816, 0.1025],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.027405,
+        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.027405,
+        "values": [0.027405, 0.054809, 0.082214, 0.109618, 0.137023],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["dot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Improved Wrath": {
+    "note": "-0.1s/rank Wrath cast (parsed) and -10%/rank Wrath mana. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.1% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.3%). Other modes unchanged. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 6.0% time per kill in the simulator (scorer said 1.9% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (2.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.006898,
+        "values": [0.006898, 0.013795, 0.020693, 0.027591, 0.034488],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.003449,
+        "values": [0.003449, 0.006897, 0.010346, 0.013796, 0.017244],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Wrath"],
+        "per_rank": 0.3,
+        "values": [0.3, 0.6, 0.9, 1.2, 1.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Nature's Reach": {
+    "note": "+2%/rank hit with all spells and attacks (parser kept spells only) and +10%/rank Balance range. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 3.2% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 3.0% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002097,
+        "values": [0.002097, 0.004194, 0.00629, 0.008387, 0.010484],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "values": [0.000436, 0.000873, 0.001309, 0.001745, 0.002182],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.0075,
+        "modes": ["pvp"],
+        "kind": "range",
+        "values": [0.0075, 0.015, 0.0225, 0.03, 0.0375]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002154,
+        "values": [0.002154, 0.004308, 0.006462, 0.008616, 0.010771],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.014361,
+        "values": [0.014361, 0.028722, 0.043083, 0.057444, 0.071805],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.02045,
+        "values": [0.02045, 0.0409, 0.061349, 0.081798, 0.102248],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "hit",
+        "scope": ["type:spell", "type:melee"],
+        "per_rank": 0.013979,
+        "values": [0.013979, 0.027958, 0.041936, 0.055915, 0.069894],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Improved Entangling Roots": {
+    "note": "Roots damage and break threshold: leveling/PvP control. PvP (2026-09-27): high, kite: Roots take 75% more damage before breaking (and deal 75% more): the root holds through DoTs and allies' hits while you kite or heal; core of pvp-resto.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Nature's Splendor": {
+    "note": "+3s Moonfire/Rejuvenation, +6s Regrowth, +2s Insect Swarm: fewer refreshes -> ~+4% HoT throughput, +10% Moonfire, some mana. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 3.9% on the same scale); raid values scaled x3.49 to match (3.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.04],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.1],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.02],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation", "ability:Regrowth"],
+        "values": [0.060349],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.150872],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.026312],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Improved Starfire": {
+    "note": "-0.1s/rank Starfire cast (parsed) and a 3%/rank stun chance (leveling). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 11.7% DPS in the simulator (scorer said 6.2% on the same scale); raid values scaled x1.74 to match (11.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.002,
+        "values": [0.002, 0.004, 0.006, 0.008, 0.01],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "per_rank": 0.109541,
+        "values": [0.109541, 0.219086, 0.328625, 0.438166, 0.547706],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Insect Swarm": {
+    "note": "Instant Nature DoT with a -2% hit debuff: ~+5% caster damage, tank/healer utility. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 9.4% DPS in the simulator (scorer said 9.4% on the same scale); already within tolerance, raid effects split off unchanged (8.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.018083],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.018083],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "kind": "avoid",
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire"],
+        "values": [0.15586],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Eclipse": {
+    "note": "Each Wrath cuts the next 2 Starfires by 0.17s/rank: with one Wrath per two Starfires nearly every Starfire is eclipsed. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, balance-dps): removing it costs 0.0% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.00 to match (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.17, 0.34, 0.5],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.17, 0.34, 0.5],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Starfire"],
+        "values": [0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Nature's Grace": {
+    "note": "+10% casting speed for 3s after any direct spell crit - heals included: ~35% uptime at raid crit -> ~+3.5% spell haste for casters and healers, ~+5% with Improved Regrowth 5/5 feeding crits. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "haste",
+        "scope": ["type:spell"],
+        "values": [0.035],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:spell"],
+        "values": [0.035],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "haste",
+        "scope": ["type:spell"],
+        "values": [0.009744],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.004176],
+        "requires": {"Improved Regrowth": 5},
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Overgrowth": {
+    "note": "More Entangling Roots targets: leveling/PvP. 2026-09-27 audit: two more Entangling Roots targets only matter in pulls of several mobs. PvP (2026-09-27): low, kite: Entangling Roots on up to 3 targets (baseline: 1 rooted target at a time): roots a second melee chaser in battlegrounds; Balance (20 points) only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003,
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.002,
+        "modes": ["pvp"],
+        "kind": "kite"
+      }
+    ]
+  },
+  "Moonkin Form": {
+    "note": "+3% crit for the party (and you), +360% item armor, and (beta) Omen of Clarity triggers twice as often (~+3% mana): caster survivability while leveling. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 3.3% DPS in the simulator (scorer said 7.7% on the same scale); raid values scaled x0.56 to match (3.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.1],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps"],
+        "values": [0.0968],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "kind": "escape",
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:spell"],
+        "values": [0.045482],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "values": [0.151605],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.015],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Brutal Impact": {
+    "note": "Longer Bash/Pounce stuns, shorter Bash cooldown: leveling/PvP. 2026-09-27 audit: Bash is Bear Form, Pounce is a Cat stealth opener: form-locked, feral models only. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "specs": ["feral-bear-tank"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "specs": ["feral-cat-dps"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "heal", "tank", "pvp"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "heal", "tank", "pvp"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.004,
+        "specs": ["feral-cat-dps"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"]
+      }
+    ]
+  },
+  "Feral Swiftness": {
+    "note": "+2%/rank dodge (parsed) and +15%/rank Cat Form speed. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.9% time per kill in the simulator (scorer said 1.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 2.5% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.02,
+        "modes": ["pvp"],
+        "kind": "move",
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.010981,
+        "values": [0.010981, 0.021961, 0.032942, 0.043922, 0.054903],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "per_rank": 0.003294,
+        "values": [0.003294, 0.006589, 0.009883, 0.013177, 0.016471],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.034222,
+        "values": [0.034222, 0.068445, 0.102667, 0.136889, 0.171111],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Thick Hide": {
+    "note": "Extra base armor per level in forms (~60 armor at 60 before form multipliers): ~+0.6%/rank effective health. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 6.4% DPS in the simulator (scorer said 5.8% on the same scale); already within tolerance, raid effects split off unchanged (5.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.045042,
+        "values": [0.045042, 0.090085, 0.135127, 0.18017, 0.225212],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.053301,
+        "values": [0.053301, 0.106602, 0.159904, 0.213205, 0.266506],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Feral Charge": {
+    "note": "Bear charge/interrupt and cat leap: leveling and tanking utility. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["raid", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-bear-tank"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["raid", "heal", "tank"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.01],
+        "modes": ["leveling-aoe"],
+        "specs": ["feral-cat-dps", "feral-bear-tank"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"],
+        "specs": ["balance-dps"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"],
+        "specs": ["resto-heal"],
+        "kind": "stun"
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "kind": "stick",
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:leveling"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:tank"],
+        "values": [0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"],
+        "kind": "stun"
+      }
+    ]
+  },
+  "Savage Fury": {
+    "note": "+5%/rank Claw, Rake, Shred, Maul and Swipe damage. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 3.4% time per kill in the simulator (scorer said 2.5% on the same scale); leveling-st/solo-60 values scaled x1.44 to match (3.4%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.05,
+        "values": [0.05, 0.1, 0.15, 0.2, 0.25],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "values": [0.007325, 0.014677, 0.022054, 0.02946, 0.036892],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.044991,
+        "values": [0.044991, 0.089982, 0.134972, 0.179964, 0.224955],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Claw", "ability:Rake", "ability:Shred", "ability:Maul", "ability:Swipe"],
+        "per_rank": 0.036236,
+        "values": [0.036236, 0.072473, 0.108709, 0.144945, 0.181181],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Sharpened Claws": {
+    "note": "+3%/rank crit in Cat/Bear form. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 4.3% time per kill in the simulator (scorer said 3.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 3.8% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.03,
+        "values": [0.03, 0.06, 0.09, 0.12, 0.15],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.020829,
+        "values": [0.020829, 0.041659, 0.062488, 0.083317, 0.104146],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "per_rank": 0.048636,
+        "values": [0.048636, 0.097273, 0.145911, 0.194549, 0.243186],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.043386, 0.086772, 0.13016, 0.173546, 0.216932],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Primal Bite": {
+    "note": "Primal Bite (renamed from Mangle in build 1.60.1.70009; its signature debuff is gone): bear-only strike every 6s for 20 Rage, 100% weapon damage plus 26/38/59/77 at levels 25/40/50/60 (beta spellbook): ~+15% bear threat. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 0.3% DPS in the simulator (scorer said 0.6% on the same scale); raid values scaled x0.48 to match (0.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.15],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.15],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.005501],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Predatory Strikes": {
+    "note": "+50%/rank of your level as attack power in forms (30 AP per rank at 60): ~+2.5%/rank at raid gear, ~+4%/rank while leveling. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 3.8% time per kill in the simulator (scorer said 3.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 1.7% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.04,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.04,
+        "modes": ["leveling-aoe"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.025,
+        "modes": ["raid", "tank"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.025,
+        "modes": ["tank"],
+        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.01105,
+        "modes": ["leveling-st", "solo-60"],
+        "values": [0.01105, 0.0221, 0.03315, 0.044201, 0.055251],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "per_rank": 0.011017,
+        "modes": ["raid"],
+        "values": [0.011017, 0.022035, 0.033052, 0.04407, 0.055087],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "modes": ["tank"],
+        "values": [0.00906, 0.018164, 0.027306, 0.036491, 0.045715],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Blood Frenzy": {
+    "note": "Blood Frenzy (renamed from Primal Fury in build 1.60.1.70009; same numbers): 50%/rank chance for 5 Rage on bear crits (more Mauls) and 50%/rank chance of an extra combo point on non-periodic cat crits (more finishers). Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 6.8% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.02,
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.06,
+        "values": [0.06, 0.12, 0.18, 0.24, 0.3],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.056863,
+        "values": [0.056863, 0.113727, 0.170589, 0.227452, 0.284316],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "per_rank": 0.170589,
+        "values": [0.170589, 0.34118, 0.51177, 0.682359, 0.852948],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.062868, 0.127653, 0.194356, 0.262974, 0.333508],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["finisher"],
+        "values": [0.194356, 0.405958, 0.63481, 0.880911, 1.144259],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "King of the Jungle": {
+    "note": "Beta text: Tiger's Fury grants 20/40/60 Energy instantly (Tiger's Fury: 30 sec cooldown, free in Forever). 60 Energy per 30 sec = +2 Energy/sec on ~10/sec income (+20%); Energy-bound yellow damage is ~60% of cat damage -> ~+12% yellow, ~+7% total at 3/3. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 5.2% time per kill in the simulator (scorer said 5.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (5.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 8.8% DPS in the simulator (scorer said 9.4% on the same scale); already within tolerance, raid effects split off unchanged (9.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.025, 0.05, 0.07],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.025, 0.05, 0.07],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.025, 0.05, 0.07],
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.02666, 0.053318, 0.074646],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.033617, 0.067235, 0.094128],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Leader of the Pack": {
+    "note": "+3% crit for you (in forms) and the party. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 2.3% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 2.7% on the same scale); already within tolerance, raid effects split off unchanged (2.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.03],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["profile:raid-dps", "profile:raid-tank"],
+        "values": [0.0811],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.021339],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee"],
+        "values": [0.049691],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Natural Reaction": {
+    "note": "+1%/rank dodge in bear (parsed) and 20%/rank chance for 5 rage per dodge. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 5.2% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "surv",
+        "scope": ["all"],
+        "per_rank": 0.012,
+        "modes": ["tank"],
+        "values": [0.012, 0.024, 0.036, 0.048, 0.06],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.01,
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Berserk": {
+    "note": "15s every 3 min: Primal Bite spam (no cooldown, 3 targets) in bear, +100% crit on combo builders in cat (~8% uptime). Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 3.5% time per kill in the simulator (scorer said 2.9% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 4.4% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.05],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.05],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.05],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.05],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.05],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.028806],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.028806],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.036751],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.036751],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Furor": {
+    "note": "Beta text: 20%/rank chance for 10 Rage on a bear shift; cat shifts keep 20%/rank of the Energy you had (100% at 5/5) plus 2/rank Energy per second spent out of forms (max 20/rank). Powershifting loses nothing at 5/5 and every shift-heal returns to a full bar: cat +1.5%/rank, bear +0.6%/rank. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-cat-dps, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.5% on the same scale); already within tolerance, raid effects split off unchanged (0.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.015,
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.006,
+        "values": [0.006, 0.012, 0.018, 0.024, 0.03],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "stun",
+        "values": [0.008, 0.016, 0.024, 0.032, 0.04]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.001014,
+        "values": [0.001014, 0.002028, 0.003042, 0.004056, 0.00507],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["tank"],
+        "per_rank": 0.000406,
+        "values": [0.000406, 0.000811, 0.001217, 0.001622, 0.002028],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Nature's Focus": {
+    "note": "14%/rank pushback resistance on Arcane/Nature spells: ~+0.4%/rank raid healing. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["raid", "leveling-aoe", "heal", "tank", "pvp"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.008,
+        "modes": ["pvp"],
+        "kind": "resist",
+        "values": [0.008, 0.016, 0.024, 0.032, 0.04]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "per_rank": 0.004,
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Natural Shapeshifter": {
+    "note": "-10%/rank shapeshift mana: powershifting and form-swapping while leveling. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 2.8% time per kill in the simulator (scorer said 1.3% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (1.3%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.005,
+        "modes": ["raid"],
+        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.1,
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "values": [0.059186, 0.118374, 0.17756, 0.236748, 0.295934],
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.013333,
+        "modes": ["pvp"],
+        "kind": "escape",
+        "values": [0.013333, 0.026666, 0.039999, 0.053332, 0.066665]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["cat"],
+        "per_rank": 0.0,
+        "modes": ["raid"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["shapeshift"],
+        "per_rank": 0.500002,
+        "values": [0.500002, 1.0, 1.5, 1.999998, 2.5],
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      }
+    ]
+  },
+  "Subtlety": {
+    "note": "-10%/rank Nature/Arcane spell threat: healer/caster utility. PvP (2026-09-27): zero, defensive: Threat reduction on Nature and Arcane spells: PvE aggro only.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.003
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:raid"],
+        "per_rank": 0.002
+      }
+    ]
+  },
+  "Gift of the Earthmother": {
+    "note": "-0.5s GCD on Rejuvenation, Swiftmend and Wild Growth: ~+5% HoT throughput. Healer lab calibration (2026-09-28, resto-heal): removing it costs 1.6% healing capacity in the lab (scorer said 0.9% on the same scale); already within tolerance, heal effects split off unchanged (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.05],
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.05],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.004,
+        "modes": ["pvp"],
+        "values": [0.004, 0.008, 0.012, 0.016, 0.02]
+      },
+      {
+        "channel": "heal",
+        "scope": ["hot"],
+        "values": [0.05],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Swiftmend": {
+    "note": "Instant heal every 15s worth a full Rejuvenation/Regrowth HoT (no longer consumes it): ~+20% throughput, mana-cheap. Raid sim calibration (2026-09-27, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged. Healer lab calibration (2026-09-28, resto-heal): removing it costs 0.6% healing capacity in the lab (scorer said 0.5% on the same scale); already within tolerance, heal effects split off unchanged (0.4%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["raid"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.2],
+        "modes": ["tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.05],
+        "modes": ["tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid", "tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.010371],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.002593],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Improved Tranquility": {
+    "note": "Tranquility threat and cooldown: raid utility. PvP (2026-09-27): zero, burst: Tranquility threat and cooldown: a 10 s channel that any interrupt or stun ends; not taken for PvP.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "per_rank": 0.006
+      }
+    ]
+  },
+  "Nature's Swiftness": {
+    "note": "Instant Healing Touch (or Starfire) every 3 min. Healer lab calibration (2026-09-28, resto-heal): removing it costs 1.0% healing capacity in the lab (scorer said 1.5% on the same scale); already within tolerance, heal effects split off unchanged (1.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.015]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015],
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005],
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.04,
+        "modes": ["pvp"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.015],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:spell"],
+        "values": [0.005],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Wild Growth": {
+    "note": "Party HoT every 6s: ~+15% raid healing plus group coverage. Healer lab calibration (2026-09-28, resto-heal): removing it costs 0.0% healing capacity in the lab (scorer said 1.0% on the same scale); heal values scaled x0.00 to match (0.8%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "utility",
+        "scope": ["mode:heal"],
+        "values": [0.02]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.15],
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.15],
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.015,
+        "modes": ["pvp"],
+        "values": [0.015, 0.03, 0.045, 0.06, 0.075]
+      },
+      {
+        "channel": "heal",
+        "scope": ["heal"],
+        "values": [0.0],
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Vengeance": {
+    "note": "+20%/rank crit damage bonus on Arcane/Nature damage spells (healing crits are unaffected). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 9.9% DPS in the simulator (scorer said 11.2% on the same scale); already within tolerance, raid effects split off unchanged (10.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire", "ability:Insect Swarm", "ability:Hurricane"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire", "ability:Insect Swarm", "ability:Hurricane"],
+        "per_rank": 0.2,
+        "values": [0.2, 0.4, 0.6, 0.8, 1.0],
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["ability:Starfire", "ability:Wrath", "ability:Moonfire", "ability:Insect Swarm", "ability:Hurricane"],
+        "per_rank": 0.104916,
+        "values": [0.104916, 0.209832, 0.314748, 0.419665, 0.524581],
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Ferocity": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 3.5% time per kill in the simulator (scorer said 7.5% on the same scale); leveling-st/solo-60 values scaled x0.58 to match (3.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 1.2% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.0, 2.0, 3.0, 4.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [0.255015, 0.51003, 0.765045, 1.02006, 1.275076],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.0, 2.0, 3.0, 4.0, 5.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.0, 2.0, 3.0, 4.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.0, 2.0, 3.0, 4.0, 5.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [0.833851, 1.667702, 2.501553, 3.335404, 4.169254],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Maul", "ability:Primal Bite", "ability:Swipe", "ability:Claw", "ability:Rake"],
+        "values": [1.88487, 3.769775, 5.654645, 7.539514, 9.424419],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Heart of the Wild": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.38 to match (0.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs -0.7% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.04, 0.08, 0.12, 0.16, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.003,
+        "modes": ["pvp"],
+        "values": [0.003, 0.006, 0.009, 0.012, 0.015]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.004375, 0.008751, 0.013126, 0.017502, 0.021877],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.008751, 0.017502, 0.026252, 0.035003, 0.043754],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.004375, 0.008751, 0.013126, 0.017502, 0.021877],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.01509, 0.030181, 0.045271, 0.060362, 0.075452],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.007545, 0.01509, 0.022636, 0.030181, 0.037726],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.04902, 0.09804, 0.14706, 0.19608, 0.2451],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.09804, 0.19608, 0.294119, 0.392159, 0.490199],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.04902, 0.09804, 0.14706, 0.19608, 0.2451],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.026791, 0.053579, 0.080371, 0.107162, 0.133947],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.053579, 0.107162, 0.160738, 0.214323, 0.2679],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.026791, 0.053579, 0.080371, 0.107162, 0.133947],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.010546, 0.021092, 0.031639, 0.042185, 0.052731],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.005273, 0.010546, 0.015819, 0.021092, 0.026365],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:stamina", "form:bear"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:strength", "form:cat"],
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Predatory Instincts": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 2.2% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 1.8% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.1, 0.2],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.061454, 0.122907],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.074728, 0.149456],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit_bonus",
+        "scope": ["type:melee"],
+        "values": [0.059218, 0.118436],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Rend and Tear": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 3.8% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.005023, 0.010045, 0.015068, 0.020091, 0.025113],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.010477, 0.020956, 0.031433, 0.04191, 0.052387],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "values": [0.013674, 0.027442, 0.0413, 0.055253, 0.069297],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Nature's Majesty": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.3% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 2.5% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.02, 0.04],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.02, 0.04],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.02, 0.04],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.02, 0.04],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.013881, 0.027761],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.011061, 0.022121],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.06, 0.12],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.02, 0.04],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.026757, 0.053513],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["type:melee", "type:spell"],
+        "values": [0.019444, 0.038886],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Naturalist": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 4.1% time per kill in the simulator (scorer said 3.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 2.0% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.008654, 0.01731, 0.025964, 0.034619, 0.043273],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.086548, 0.173095, 0.259643, 0.346191, 0.432738],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.007274, 0.014547, 0.021821, 0.029095, 0.036368],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.072737, 0.145474, 0.218211, 0.290948, 0.363685],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.001458, 0.002919, 0.00438, 0.005844, 0.007308],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.01458, 0.029157, 0.043737, 0.058317, 0.072897],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.029999, 0.039999, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.099998, 0.199997, 0.299995, 0.399993, 0.499991],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["all"],
+        "values": [0.006892, 0.013805, 0.020744, 0.027707, 0.034694],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "cast_time",
+        "scope": ["ability:Healing Touch"],
+        "values": [0.068794, 0.137588, 0.206382, 0.275176, 0.34397],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Moonglow": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 11.0% time per kill in the simulator (scorer said 14.3% on the same scale); leveling-st/solo-60 values scaled x0.67 to match (11.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 14.8% DPS in the simulator (scorer said 25.1% on the same scale); already within tolerance, raid effects split off unchanged (17.6%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.08, 0.17, 0.25],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.08, 0.17, 0.25],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.08, 0.17, 0.25],
+        "source": "parsed",
+        "modes": ["leveling-aoe"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "tank", "pvp"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "heal", "tank", "pvp"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "raid", "heal", "tank", "pvp"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.291743, 0.619955, 0.911698],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.402662, 0.855657, 1.25832],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["type:spell"],
+        "values": [0.165813, 0.352352, 0.518165],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Shredding Attacks": {
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 15,30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 7.3% DPS in the simulator (scorer said 6.5% on the same scale); already within tolerance, raid effects split off unchanged (6.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0, 18.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "balance-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0, 18.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0, 18.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0, 18.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [6.0, 12.0, 18.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal", "tank"],
+        "specs": ["resto-heal", "balance-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["raid", "leveling-aoe", "heal"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.0, 2.0, 3.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [0.5, 1.0, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [0.083333, 0.166667, 0.25],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [10.954397, 21.908794, 32.86319],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.825726, 3.651473, 5.477198],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Shred"],
+        "values": [7.014309, 14.028618, 21.042927],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "resource_cost",
+        "scope": ["ability:Lacerate"],
+        "values": [1.169051, 2.338103, 3.507154],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      }
+    ]
+  },
+  "Improved Moonfire": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 3.3% DPS in the simulator (scorer said 3.6% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.023797, 0.047594],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.023797, 0.047594],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Moonfire"],
+        "values": [0.05, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Moonfury": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 10.0% DPS in the simulator (scorer said 10.0% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["school:arcane", "school:nature"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:arcane", "school:nature"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "heal", "tank"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["school:arcane", "school:nature"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Reflection": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, balance-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 9.6% on the same scale); raid values kept at x1.00: its builds sit where the mana limit is flat, so the removal runs cannot move it (0.0%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["resto-heal", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "heal", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60", "leveling-aoe", "tank"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "tank"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe", "tank"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-aoe"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.17, 0.33, 0.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["resto-heal", "feral-bear-tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.34, 0.66, 1.0],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.0, 0.0, 0.0],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["feral-cat-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["leveling-st", "solo-60"],
+        "specs": ["balance-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.51, 0.99, 1.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.069828, 0.135548, 0.205377],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["balance-dps"]
+      }
+    ]
+  },
+  "Feral Instinct": {
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, feral-bear-tank): removing it costs 0.0% DPS in the simulator (scorer said 4.0% on the same scale); raid values scaled x0.19 to match (0.5%). Other modes unchanged. PvP (2026-09-27): medium, stealth: Prowl detected as if 3 levels higher: more Pounce and Ravage openers land; the Swipe part is PvE; Feral only.",
+    "effects": [
+      {
+        "channel": "dmg",
+        "scope": ["ability:Swipe"],
+        "values": [0.1, 0.2, 0.3],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["resto-heal", "balance-dps", "feral-cat-dps"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Swipe"],
+        "values": [0.1, 0.2, 0.3],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "heal"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Swipe"],
+        "values": [0.018778, 0.037555, 0.056333],
+        "source": "parsed",
+        "modes": ["tank"],
+        "specs": ["feral-bear-tank"]
+      },
+      {
+        "channel": "utility",
+        "scope": ["mode:pvp"],
+        "per_rank": 0.005,
+        "modes": ["pvp"],
+        "kind": "stealth"
+      }
+    ]
+  },
+  "Gift of Nature": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 7.5% on the same scale); already within tolerance, heal effects split off unchanged (5.9%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["type:spell", "heal"],
+        "values": [0.035958, 0.071917, 0.107875, 0.143834, 0.179792],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Improved Regrowth": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 0.7% healing capacity in the lab (scorer said 2.9% on the same scale); heal values scaled x0.22 to match (0.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "crit",
+        "scope": ["ability:Regrowth"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Regrowth"],
+        "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Regrowth"],
+        "values": [0.066356, 0.132712, 0.199067, 0.265423, 0.331779],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Improved Rejuvenation": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 2.0% healing capacity in the lab (scorer said 0.7% on the same scale); heal values scaled x3.57 to match (2.1%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Rejuvenation"],
+        "values": [0.178356, 0.356712, 0.535068],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Living Spirit": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 5.6% healing capacity in the lab (scorer said 4.9% on the same scale); heal values scaled x1.42 to match (5.5%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "stat",
+        "scope": ["stat:spirit"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:spirit"],
+        "values": [0.05, 0.1, 0.15],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:spirit"],
+        "values": [0.171973, 0.343946, 0.515917],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  },
+  "Tranquil Spirit": {
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, resto-heal): removing it costs 8.3% healing capacity in the lab (scorer said 8.6% on the same scale); already within tolerance, heal effects split off unchanged (6.7%). Other modes unchanged.",
+    "effects": [
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Healing Touch", "ability:Tranquility"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["balance-dps", "feral-cat-dps", "feral-bear-tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Healing Touch", "ability:Tranquility"],
+        "values": [0.02, 0.04, 0.06, 0.08, 0.1],
+        "source": "parsed",
+        "modes": ["raid", "leveling-st", "solo-60", "leveling-aoe", "tank"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["ability:Healing Touch", "ability:Tranquility"],
+        "values": [0.17661, 0.353219, 0.529829, 0.706439, 0.883049],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["resto-heal"]
+      }
+    ]
+  }
+}

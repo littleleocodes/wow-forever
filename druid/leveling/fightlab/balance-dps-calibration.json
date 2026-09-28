@@ -1,0 +1,189 @@
+{
+ "class": "druid",
+ "spec": "balance-dps",
+ "profile": "leveling-st",
+ "levels": [
+  30,
+  60
+ ],
+ "fights": 1500,
+ "builds": [
+  "opt-balance-dps-leveling-st",
+  "F:\\wow-forever\\druid\\leveling\\fightlab\\candidates\\cand-bal-r1.json"
+ ],
+ "shares": {
+  "Starfire": 0.6249734645664614,
+  "Moonfire": 0.25401373352514955,
+  "Wrath": 0.12101280190838905,
+  "Wand": 0.0
+ },
+ "time_split": {
+  "fight": 0.548,
+  "drink": 0.358,
+  "eat": 0.048,
+  "other": 0.0,
+  "death": 0.046
+ },
+ "talents": [
+  {
+   "talent": "Moonglow",
+   "sim": 0.11022352064832236,
+   "ev_before": 0.14301957332133747,
+   "ev_after": 0.1106951018184136,
+   "scale": 0.6732608308084309,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.1369808510013756,
+     "ev": 0.13996725336792568
+    },
+    {
+     "level": 60,
+     "sim": 0.08346619029526911,
+     "ev": 0.08142295026890155
+    }
+   ]
+  },
+  {
+   "talent": "Improved Wrath",
+   "sim": 0.05997036746690251,
+   "ev_before": 0.018845265994342535,
+   "ev_after": 0.026044358362927407,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.06095419226791237,
+     "ev": 0.031621966502023986
+    },
+    {
+     "level": 60,
+     "sim": 0.05898654266589265,
+     "ev": 0.020466750223830828
+    }
+   ]
+  },
+  {
+   "talent": "Naturalist",
+   "sim": 0.04112311996220962,
+   "ev_before": 0.03742915808646975,
+   "ev_after": 0.037338892662616904,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.04112311996220962,
+     "ev": 0.037338892662616904
+    }
+   ]
+  },
+  {
+   "talent": "Reflection",
+   "sim": 0.040883610512180146,
+   "ev_before": 0.03414589622562896,
+   "ev_after": 0.046294207383331176,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.040883610512180146,
+     "ev": 0.046294207383331176
+    }
+   ]
+  },
+  {
+   "talent": "Nature's Majesty",
+   "sim": 0.02329592865594949,
+   "ev_before": 0.02026226744961685,
+   "ev_after": 0.020212837388448722,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.016941436094036335,
+     "ev": 0.01034768720607645
+    },
+    {
+     "level": 60,
+     "sim": 0.02965042121786264,
+     "ev": 0.03007798757082099
+    }
+   ]
+  },
+  {
+   "talent": "Improved Moonfire",
+   "sim": 0.020475659688567294,
+   "ev_before": 0.016473500006452688,
+   "ev_after": 0.01643306315188847,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": 0.02342760438212947,
+     "ev": 0.01308706865797418
+    },
+    {
+     "level": 60,
+     "sim": 0.01752371499500512,
+     "ev": 0.019779057645802754
+    }
+   ]
+  },
+  {
+   "talent": "Heart of the Wild",
+   "sim": 0.0013306790954034419,
+   "ev_before": 0.0031902454447041966,
+   "ev_after": 0.001330612703032536,
+   "scale": 0.37726249964907765,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0013306790954034419,
+     "ev": 0.001330612703032536
+    }
+   ]
+  },
+  {
+   "talent": "Nature's Focus",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 30,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  }
+ ]
+}

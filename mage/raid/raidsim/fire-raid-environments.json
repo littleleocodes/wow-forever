@@ -1,0 +1,146 @@
+{
+ "class": "mage",
+ "spec": "fire-raid",
+ "game": "forever",
+ "date": "2026-09-28",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "gear_max": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "fire-raid",
+   "split": "14/32/5",
+   "ours": true,
+   "dps": {
+    "dummy": 533.6714075422099,
+    "dummy60": 636.9605732844768,
+    "raid": 661.9779545042661,
+    "max": 661.9779545042661,
+    "max60": 695.0642272507815
+   }
+  },
+  {
+   "label": "opt-fire-raid-raid-dps",
+   "split": "13/33/5",
+   "ours": true,
+   "dps": {
+    "dummy": 533.541294719372,
+    "dummy60": 636.8821848122707,
+    "raid": 661.9779545042661,
+    "max": 661.9779545042661,
+    "max60": 695.0642272507815
+   }
+  },
+  {
+   "label": "opt-fire-raid-parse",
+   "split": "14/32/5",
+   "ours": true,
+   "dps": {
+    "dummy": 533.6484764836995,
+    "dummy60": 636.9605732844768,
+    "raid": 661.9779545042661,
+    "max": 661.9779545042661,
+    "max60": 695.0642272507815
+   }
+  },
+  {
+   "label": "sim preset: Frost DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 257.40667628421994,
+    "dummy60": 304.5919192654882,
+    "raid": 320.34537747977566,
+    "max": 320.34537747977566,
+    "max60": 320.3549887175187
+   }
+  },
+  {
+   "label": "sim preset: Arcane DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 406.43323680437317,
+    "dummy60": 502.9063239760716,
+    "raid": 471.6839076329682,
+    "max": 471.6839076329682,
+    "max60": 499.6112637190975
+   }
+  },
+  {
+   "label": "sim preset: Fire DPS",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 517.598520451072,
+    "dummy60": 642.2135788522507,
+    "raid": 623.3079323423271,
+    "max": 623.3079323423271,
+    "max60": 655.7448821347342
+   }
+  },
+  {
+   "label": "sim preset: Fire 0/35/16",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 518.8928631170565,
+    "dummy60": 615.9174294407902,
+    "raid": 647.1830121919903,
+    "max": 647.1830121919903,
+    "max60": 682.7552426869471
+   }
+  },
+  {
+   "label": "sim preset: Frost 14/0/37",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 262.1720844348544,
+    "dummy60": 309.9701083518615,
+    "raid": 320.39666264275513,
+    "max": 320.39666264275513,
+    "max60": 320.3549887175187
+   }
+  },
+  {
+   "label": "sim preset: Arcane 35/0/16",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 269.47512168468603,
+    "dummy60": 318.93050733311424,
+    "raid": 335.55335367200655,
+    "max": 335.55335367200655,
+    "max60": 335.5521176511781
+   }
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "enhancement-raid-support"
+ ],
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "enhancement_shaman",
+  "gear": "ui/enhancement_shaman/gear_sets/phase_1.gear.json",
+  "apl": "ui/enhancement_shaman/apls/default.apl.json",
+  "race": "RaceOrc",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultPotion": "MajorManaPotion",
+   "defaultConjured": "ConjuredDemonicRune",
+   "dragonBreathChili": true,
+   "firePowerBuff": "ElixirOfFirepower",
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodBlessSunfruit",
+   "mainHandImbue": "WindfuryWeapon",
+   "manaRegenElixir": "MagebloodPotion",
+   "offHandImbue": "WindfuryWeapon",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "ROIDS"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1
+ },
+ "talents": [
+  {
+   "talent": "Flurry",
+   "sim": 0.22649417781238204,
+   "ev_before": 0.19097300862643496,
+   "ev_after": 0.19788759944362816,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Weapon Mastery",
+   "sim": 0.0936468811882651,
+   "ev_before": 0.09584700852954209,
+   "ev_after": 0.09903096349781021,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Thundering Strikes",
+   "sim": 0.05058726954246877,
+   "ev_before": 0.05058793827745326,
+   "ev_after": 0.05219681359166223,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Elemental Weapons",
+   "sim": 0.02679239907166389,
+   "ev_before": 0.030154422305755886,
+   "ev_after": 0.031094205739069732,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Nature's Guidance",
+   "sim": 0.01614806673111966,
+   "ev_before": 0.012554454260732057,
+   "ev_after": 0.012938833113001829,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Anticipation",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Enhancing Totems",
+   "sim": 0.0,
+   "ev_before": 0.005714861290291518,
+   "ev_after": 0.00341586240499694,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Healing Grace",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Improved Weapon Totems",
+   "sim": 0.0,
+   "ev_before": 0.0060118477413421585,
+   "ev_after": 0.005442415730554908,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Restorative Totems",
+   "sim": 0.0,
+   "ev_before": 0.005917082628266527,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Stormstrike",
+   "sim": 0.0,
+   "ev_before": 0.004968273449247691,
+   "ev_after": 0.0051192124572108635,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Tidal Focus",
+   "sim": 0.0,
+   "ev_before": 0.008901960761088337,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Totemic Mastery",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Two-Handed Axes and Maces",
+   "sim": 0.0,
+   "ev_before": 0.0050029087533179405,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Ancestral Knowledge",
+   "sim": -0.001153558458187908,
+   "ev_before": 0.00990086052030398,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  },
+  {
+   "talent": "Totemic Focus",
+   "sim": -0.006904202856110646,
+   "ev_before": 0.004926044221773675,
+   "ev_after": 0.0,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "enhancement-raid-support"
+   ]
+  }
+ ]
+}
