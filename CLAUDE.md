@@ -311,6 +311,14 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid
   README: every spell the spellbook marks new, its measured use in the raid races and the fight lab, and each target's DPS
   against the class's best. The Frostfire leveling check is a mage fight-lab extra report (`frostfire-leveling`).
+- **Popular builds** (2026-09-28, user request): talentsforever.com publishes its per-class popularity list as a static script
+  (`https://talentsforever.com/popular.js`: the top 5 level-60 builds people made, shared, saved or opened there, with counts).
+  `popular_builds.py [--fetch]` archives it under `raw/<date>-talentsforever-popular/` and decodes it into
+  `_reference/data/popular-builds.json` (generated; site codes ending `-4` map digit by digit onto our dataset's talent order);
+  `popular_race.py [classes]` races them against ours: raid sim in every raid entry of the class (dummy and raid settings, best entry
+  counts), tanks and healers in their own tools, and the fight lab with a scorer leveling order (`Optimizer.order`) under every
+  leveling model; results `_reference/data/popular-race.json`, report `_reference/popular-builds.md` (generated). Popularity is what
+  calculator visitors planned, not performance: never adopt a build because it is popular, only through the usual races.
 - Classic Era: `setup.py --game classic` builds the upstream wowsims/classic simulator next to the Forever one;
   `classic_specs.py` maps our Classic raid specs onto its presets (`specs-classic.json`, our gear sets under
   `raidsim/gear_sets/classic/`); `run.py`/`calibrate.py --game classic-era` race `<class>/talents/classic-baseline/builds.json`

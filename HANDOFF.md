@@ -77,12 +77,11 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
 
 ## Open items
 
-1. **The user's pending question** (2026-09-28): compare our builds with the most popular builds per class on
-   talentsforever.com (the user's example: mage 0/29/22). Not started. The project only used talentsforever.com's `data.json`
-   (talent and spell text) and its beta change notes, never its community builds. Find out whether the site exposes build
-   popularity in a readable form (a JSON endpoint rather than a page that builds it in the browser); this needs network access
-   to talentsforever.com (see Cloud notes). Then race the popular builds in the simulator next to ours (`raidsim/run.py --builds
-   <candidate .json files>`) and in the fight lab for leveling.
+1. **Done 2026-09-28 (cloud session): popular builds on talentsforever.com vs ours.** The site exposes its popularity list as a
+   static script, `https://talentsforever.com/popular.js` (top 5 level-60 builds per class; mage #1 is the user's 0/29/22).
+   `popular_builds.py` archives and decodes it, `popular_race.py` races the 45 builds in the raid sim (dummy and raid), the tank
+   and healer tools and the fight lab; report `_reference/popular-builds.md`. Re-run both after the site's list changes
+   (`popular_builds.py --fetch`, then `popular_race.py`). The cloud session reached talentsforever.com with the default network.
 2. Model caveats to keep in mind: the Summon Hawk builds rest on the simulator's guess of the hawks' follow-up swings (the client
    does not describe them); Frostfire Bolt is our own implementation; talent searches are local and run on the dummy only.
 3. From the notes in `_reference/notes/`: `abs_dps_factor` still 1.0 for most classes; Bastion / Focused Rage (tables vs notes);
