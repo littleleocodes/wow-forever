@@ -96,8 +96,8 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    **Melee hunter traps** (2026-09-29, user question): no rotation had cast Immolation or Explosive Trap (the rotation search only
    inserts new Forever spells and cooldowns; the fight lab does not model traps). Both melee rotations now end with Immolation
    Trap, Explosive Trap: +7.7% dummy / +3.8% raid with the simulator's shared 30 s trap cooldown, +12.6% / +6.4% if the cooldowns
-   are separate (tested with a temporary simulator patch, not kept). To do: check in the beta whether the fire traps share a
-   cooldown (if not, add a `raidsim/patches/` patch); traps in the fight lab's hunter (leveling); a `trap` source in the melee
+   are separate (tested with a temporary simulator patch, not kept). The user reads it as fire traps sharing a cooldown with
+   each other (frost with frost), as the simulator has it: no patch needed. To do: traps in the fight lab's hunter (leveling); a `trap` source in the melee
    scorer model; whether ranged builds can use traps at all (the boss must walk over them).
 2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
    confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
