@@ -33,18 +33,18 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Quietus | Subtlety | 6 | +0.22% | manual |
 | Vile Poisons | Assassination | 4 | +0.15% | manual |
 | Improved Eviscerate | Combat | 1 | +0.15% | manual |
+| Improved Expose Armor | Assassination | 3 | +0.00% | manual |
+| Lightning Reflexes | Combat | 1 | +0.00% | manual |
+| Deflection | Combat | 2 | +0.00% | manual |
+| Riposte | Combat | 3 | +0.00% | manual |
 | Improved Gouge | Assassination | 1 | +0.00% | manual |
 | Remorseless Attacks | Assassination | 1 | +0.00% | manual |
-| Improved Expose Armor | Assassination | 3 | +0.00% | manual |
-| Mutilate | Assassination | 5 | +0.00% | manual |
-| Improved Kidney Shot | Assassination | 5 | +0.00% | manual |
-| Venom | Assassination | 7 | +0.00% | manual |
 
-## Optimized build: 20/31/0  score +65.21%  (dps x1.652, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 20/31/0  score +65.22%  (dps x1.652, sustain x1.000, surv x1.000, utility +0.00%)
 
 ```
   Assassination: Malice 5, Ruthlessness 3, Improved Slice and Dice 3, Murder 2, Relentless Strikes 1, Lethality 1, Improved Poisons 5
-  Combat: Improved Sinister Strike 2, Improved Eviscerate 3, Lightning Reflexes 5, Precision 3, Puncturing Wounds 2, Flawless Execution 1, Dual Wield Specialization 5, Blade Flurry 1, Hack and Slash 3, Weapon Expertise 2, Aggression 3, Adrenaline Rush 1
+  Combat: Improved Sinister Strike 2, Improved Eviscerate 3, Lightning Reflexes 5, Precision 3, Deflection 2, Flawless Execution 1, Dual Wield Specialization 5, Blade Flurry 1, Hack and Slash 3, Weapon Expertise 2, Aggression 3, Adrenaline Rush 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
@@ -60,10 +60,10 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Cold Blood | Assassination 4 | 1/1 | +0.49% | yes |
 | Quietus | Subtlety 6 | 1/5 | +0.45% | no |
 | Vile Poisons | Assassination 4 | 1/5 | +0.40% | yes |
+| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |
+| Deflection | Combat 2 | 3/3 | +0.00% | yes |
+| Riposte | Combat 3 | 1/1 | +0.00% | no |
 | Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |
 | Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |
-| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |
 | Mutilate | Assassination 5 | 1/1 | +0.00% | yes |
-| Improved Kidney Shot | Assassination 5 | 1/2 | +0.00% | yes |
-| Venom | Assassination 7 | 1/1 | +0.00% | no |
 

@@ -26,7 +26,7 @@
    "goblinSapper": true
   },
   "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
-  "iterations": 1500,
+  "iterations": 3000,
   "seed": 1,
   "duration": 180.0
  },
@@ -39,102 +39,102 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "31016": 3.056,
-    "11198": 6.591333333333333,
-    "11294": 53.734,
+    "31016": 3.086,
     "13877": 2.0,
-    "6774": 7.176,
-    "13750": 1.0
+    "13750": 1.0,
+    "6774": 7.1883333333333335,
+    "11294": 53.738,
+    "11198": 6.5873333333333335
    },
    "casts": {
-    "Eviscerate": 3.056,
-    "Expose Armor": 6.591333333333333,
-    "Sinister Strike": 53.734,
+    "Eviscerate": 3.086,
     "Blade Flurry": 2.0,
-    "item 10646": 1.0,
-    "Slice and Dice": 7.176,
-    "Auto Attack": 195.02133333333336,
     "Adrenaline Rush": 1.0,
-    "item 7676": 1.0
+    "item 7676": 1.0,
+    "Slice and Dice": 7.1883333333333335,
+    "Auto Attack": 195.07433333333336,
+    "Sinister Strike": 53.738,
+    "item 10646": 1.0,
+    "Expose Armor": 6.5873333333333335
    },
-   "dps": 388.7693619056384,
-   "dps_stdev": 18.823075769651425,
-   "threat": 276.0262469530034,
-   "dtps": 3.3587021445046807,
+   "dps": 388.70002417294205,
+   "dps_stdev": 18.878322978082647,
+   "threat": 275.9770171627889,
+   "dtps": 3.3299103149403693,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6083646500567307,
    "shares": {
-    "Auto Attack": 0.5285718300906139,
-    "Sinister Strike": 0.3017420398501549,
-    "Eviscerate": 0.057395009134428125,
-    "Deadly Poison": 0.04436886073203414,
-    "Dense Sharpening Stone": 0.03174470673112356,
-    "Dragonbreath Chili": 0.01919424362346994,
-    "item 10646": 0.01698330983817545
+    "Auto Attack": 0.5284596388045905,
+    "Sinister Strike": 0.30174238140142184,
+    "Eviscerate": 0.05775925414852422,
+    "Deadly Poison": 0.04417512779050038,
+    "Dense Sharpening Stone": 0.031770791382486056,
+    "Dragonbreath Chili": 0.01917700006929038,
+    "item 10646": 0.016915806403186705
    },
    "source_shares": {
-    "white_mh": 0.3686,
+    "white_mh": 0.3685,
     "sinister": 0.3237,
-    "white_oh": 0.1985,
-    "eviscerate": 0.0616,
-    "poisons": 0.0476
+    "white_oh": 0.1984,
+    "eviscerate": 0.062,
+    "poisons": 0.0474
    },
    "unmatched_share": 0.0679
   },
   {
    "label": "opt-combat-swords-raid-raid-dps",
-   "talents": "005323101005-32520300001513231",
+   "talents": "005323101005-32502300001513231",
    "split": "20/31/0",
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 8.365333333333334,
-    "13877": 2.0,
+    "6774": 8.359333333333334,
     "13750": 1.0,
-    "11198": 5.839333333333333,
-    "31016": 1.2733333333333334,
-    "11294": 50.41
+    "31016": 1.2713333333333334,
+    "13877": 2.0,
+    "11198": 5.842666666666666,
+    "11294": 50.42
    },
    "casts": {
-    "Slice and Dice": 8.365333333333334,
-    "Blade Flurry": 2.0,
-    "Auto Attack": 191.16466666666668,
+    "Slice and Dice": 8.359333333333334,
+    "item 10646": 1.0,
+    "Auto Attack": 191.19433333333333,
     "Adrenaline Rush": 1.0,
     "item 7676": 1.0,
-    "Expose Armor": 5.839333333333333,
-    "Eviscerate": 1.2733333333333334,
-    "Sinister Strike": 50.41,
-    "item 10646": 1.0
+    "Eviscerate": 1.2713333333333334,
+    "Blade Flurry": 2.0,
+    "Expose Armor": 5.842666666666666,
+    "Sinister Strike": 50.42
    },
-   "dps": 370.0392643104135,
-   "dps_stdev": 18.014657874678285,
-   "threat": 262.7278776603936,
-   "dtps": 3.3745378996178994,
+   "dps": 370.34495566838837,
+   "dps_stdev": 18.110108412217325,
+   "threat": 262.94491852455536,
+   "dtps": 3.348297627932961,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6542161656752856,
+   "scorer": 0.6542361656752856,
    "shares": {
-    "Auto Attack": 0.5397677270598488,
-    "Sinister Strike": 0.2861657188858571,
-    "Deadly Poison": 0.06452063056825663,
-    "Dense Sharpening Stone": 0.047378245970301006,
-    "Eviscerate": 0.0244329443260102,
-    "Dragonbreath Chili": 0.019858509195388195,
-    "item 10646": 0.017876223994338063
+    "Auto Attack": 0.5394542183301549,
+    "Sinister Strike": 0.28625734213424137,
+    "Deadly Poison": 0.06469093317724013,
+    "Dense Sharpening Stone": 0.04730703677828238,
+    "Eviscerate": 0.024599661286971903,
+    "Dragonbreath Chili": 0.019900856248786254,
+    "item 10646": 0.01778995204432308
    },
    "source_shares": {
-    "white_mh": 0.3835,
+    "white_mh": 0.3832,
     "sinister": 0.3128,
-    "white_oh": 0.2065,
-    "poisons": 0.0705,
-    "eviscerate": 0.0267
+    "white_oh": 0.2063,
+    "poisons": 0.0707,
+    "eviscerate": 0.0269
    },
-   "unmatched_share": 0.0851
+   "unmatched_share": 0.085
   },
   {
    "label": "cand-combat-swords-raid-hand-2026-09-28",
@@ -143,158 +143,50 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "31016": 1.2906666666666666,
-    "6774": 8.351333333333335,
-    "13877": 2.0,
+    "6774": 8.349333333333334,
     "13750": 1.0,
-    "11198": 5.862,
-    "11294": 50.392
+    "11198": 5.8533333333333335,
+    "11294": 50.43033333333333,
+    "31016": 1.3006666666666666,
+    "13877": 2.0
    },
    "casts": {
-    "Eviscerate": 1.2906666666666666,
-    "Slice and Dice": 8.351333333333335,
-    "Auto Attack": 193.55466666666666,
-    "Blade Flurry": 2.0,
+    "Slice and Dice": 8.349333333333334,
+    "Auto Attack": 193.59566666666666,
     "Adrenaline Rush": 1.0,
+    "Expose Armor": 5.8533333333333335,
+    "Sinister Strike": 50.43033333333333,
     "item 7676": 1.0,
-    "Expose Armor": 5.862,
-    "Sinister Strike": 50.392,
+    "Eviscerate": 1.3006666666666666,
+    "Blade Flurry": 2.0,
     "item 10646": 1.0
    },
-   "dps": 365.0555263210545,
-   "dps_stdev": 17.575271477348842,
-   "threat": 259.18942368794865,
-   "dtps": 3.367734373158799,
+   "dps": 365.4041480940198,
+   "dps_stdev": 17.86221350051194,
+   "threat": 259.43694514675406,
+   "dtps": 3.335429435158498,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6335788695452285,
    "shares": {
-    "Auto Attack": 0.5556085532613426,
-    "Sinister Strike": 0.30031354705291696,
-    "Deadly Poison": 0.04770118322564152,
-    "Dense Sharpening Stone": 0.03310198399951968,
-    "Eviscerate": 0.025273786651069774,
-    "Dragonbreath Chili": 0.019899384109933284,
-    "item 10646": 0.018101561699576108
+    "Auto Attack": 0.5559118086016003,
+    "Sinister Strike": 0.3002206947149332,
+    "Deadly Poison": 0.04750024086745618,
+    "Dense Sharpening Stone": 0.03279898100078499,
+    "Eviscerate": 0.025430162868673254,
+    "Dragonbreath Chili": 0.020139320762616514,
+    "item 10646": 0.01799879118393561
    },
    "source_shares": {
-    "white_mh": 0.3888,
-    "sinister": 0.3233,
-    "white_oh": 0.2093,
-    "poisons": 0.0514,
-    "eviscerate": 0.0272
+    "white_mh": 0.3889,
+    "sinister": 0.3231,
+    "white_oh": 0.2094,
+    "poisons": 0.0511,
+    "eviscerate": 0.0274
    },
-   "unmatched_share": 0.0711
-  },
-  {
-   "label": "cand-combat-swords-raid-preset-improved-expose-armor-ss",
-   "talents": "005303125-32003311201515131",
-   "split": "19/32",
-   "ours": false,
-   "measured": true,
-   "preset": "Improved Expose Armor (SS)",
-   "spell_casts": {
-    "6774": 7.176,
-    "13750": 1.0,
-    "13877": 2.0,
-    "11198": 6.591333333333333,
-    "31016": 3.056,
-    "11294": 53.734
-   },
-   "casts": {
-    "Slice and Dice": 7.176,
-    "Adrenaline Rush": 1.0,
-    "Blade Flurry": 2.0,
-    "Auto Attack": 195.02133333333336,
-    "item 7676": 1.0,
-    "Expose Armor": 6.591333333333333,
-    "Eviscerate": 3.056,
-    "Sinister Strike": 53.734,
-    "item 10646": 1.0
-   },
-   "dps": 388.7693619056384,
-   "dps_stdev": 18.823075769651425,
-   "threat": 276.0262469530034,
-   "dtps": 3.3587021445046807,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.6083346500567307,
-   "shares": {
-    "Auto Attack": 0.5285718300906139,
-    "Sinister Strike": 0.3017420398501549,
-    "Eviscerate": 0.057395009134428125,
-    "Deadly Poison": 0.04436886073203414,
-    "Dense Sharpening Stone": 0.03174470673112356,
-    "Dragonbreath Chili": 0.01919424362346994,
-    "item 10646": 0.01698330983817545
-   },
-   "source_shares": {
-    "white_mh": 0.3686,
-    "sinister": 0.3237,
-    "white_oh": 0.1985,
-    "eviscerate": 0.0616,
-    "poisons": 0.0476
-   },
-   "unmatched_share": 0.0679
-  },
-  {
-   "label": "cand-combat-swords-raid-preset-sinister-strike",
-   "talents": "00530310501-32003311201515231",
-   "split": "18/33",
-   "ours": false,
-   "measured": true,
-   "preset": "Sinister Strike",
-   "spell_casts": {
-    "13750": 1.0,
-    "31016": 1.29,
-    "6774": 8.354666666666667,
-    "11294": 50.346,
-    "14177": 1.0,
-    "11198": 5.84,
-    "13877": 2.0
-   },
-   "casts": {
-    "Adrenaline Rush": 1.0,
-    "Eviscerate": 1.29,
-    "Slice and Dice": 8.354666666666667,
-    "Auto Attack": 193.61933333333332,
-    "Sinister Strike": 50.346,
-    "Cold Blood": 1.0,
-    "Expose Armor": 5.84,
-    "Blade Flurry": 2.0,
-    "item 7676": 1.0,
-    "item 10646": 1.0
-   },
-   "dps": 366.2818188839054,
-   "dps_stdev": 17.511525590650002,
-   "threat": 260.0600914075727,
-   "dtps": 3.3106350965301257,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.6288942716508972,
-   "shares": {
-    "Auto Attack": 0.5541876794338649,
-    "Sinister Strike": 0.3026271237704772,
-    "Deadly Poison": 0.047119478539530926,
-    "Dense Sharpening Stone": 0.0326976487484389,
-    "Eviscerate": 0.025358963930237757,
-    "Dragonbreath Chili": 0.02010244552814846,
-    "item 10646": 0.017906660049301762
-   },
-   "source_shares": {
-    "white_mh": 0.3876,
-    "sinister": 0.3257,
-    "white_oh": 0.2087,
-    "poisons": 0.0507,
-    "eviscerate": 0.0273
-   },
-   "unmatched_share": 0.0707
+   "unmatched_share": 0.0709
   },
   {
    "label": "cand-combat-swords-raid-r1",
@@ -303,52 +195,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 8.376,
-    "11294": 50.4,
     "13877": 2.0,
+    "31016": 1.2943333333333333,
+    "11294": 50.39966666666667,
+    "11198": 5.818666666666667,
+    "6774": 8.369666666666667,
     "13750": 1.0,
-    "14177": 1.0,
-    "31016": 1.284,
-    "11198": 5.85
+    "14177": 1.0
    },
    "casts": {
-    "Slice and Dice": 8.376,
-    "item 10646": 1.0,
-    "Sinister Strike": 50.4,
     "Blade Flurry": 2.0,
-    "Adrenaline Rush": 1.0,
-    "Cold Blood": 1.0,
+    "Eviscerate": 1.2943333333333333,
+    "Sinister Strike": 50.39966666666667,
     "item 7676": 1.0,
-    "Auto Attack": 191.14733333333334,
-    "Eviscerate": 1.284,
-    "Expose Armor": 5.85
+    "item 10646": 1.0,
+    "Expose Armor": 5.818666666666667,
+    "Slice and Dice": 8.369666666666667,
+    "Adrenaline Rush": 1.0,
+    "Auto Attack": 191.206,
+    "Cold Blood": 1.0
    },
-   "dps": 368.49584372247966,
-   "dps_stdev": 18.43378584174296,
-   "threat": 261.6320490429605,
-   "dtps": 3.351193224486051,
+   "dps": 368.68294042261425,
+   "dps_stdev": 18.121798886783,
+   "threat": 261.764887700056,
+   "dtps": 3.340814763749063,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6467868614577372,
    "shares": {
-    "Auto Attack": 0.541124339071005,
-    "Sinister Strike": 0.2900237965490884,
-    "Deadly Poison": 0.06127030779771099,
-    "Dense Sharpening Stone": 0.04473004866762063,
-    "Eviscerate": 0.02506010206477206,
-    "Dragonbreath Chili": 0.019881681495503362,
-    "item 10646": 0.017909724354299397
+    "Auto Attack": 0.5412056229676535,
+    "Sinister Strike": 0.2899582277664843,
+    "Deadly Poison": 0.06121339676299316,
+    "Dense Sharpening Stone": 0.04458181471246862,
+    "Eviscerate": 0.025277824998375418,
+    "Dragonbreath Chili": 0.019946424282338695,
+    "item 10646": 0.01781668850968645
    },
    "source_shares": {
     "white_mh": 0.3834,
-    "sinister": 0.3161,
+    "sinister": 0.316,
     "white_oh": 0.2064,
-    "poisons": 0.0668,
-    "eviscerate": 0.0273
+    "poisons": 0.0667,
+    "eviscerate": 0.0275
    },
-   "unmatched_share": 0.0825
+   "unmatched_share": 0.0823
   },
   {
    "label": "cand-combat-swords-raid-r2",
@@ -357,52 +249,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "31016": 1.29,
-    "11198": 5.84,
-    "6774": 8.354666666666667,
     "14177": 1.0,
-    "13750": 1.0,
-    "11294": 50.346,
-    "13877": 2.0
+    "11198": 5.827,
+    "11294": 50.399,
+    "6774": 8.352333333333334,
+    "31016": 1.302,
+    "13877": 2.0,
+    "13750": 1.0
    },
    "casts": {
-    "item 7676": 1.0,
-    "Eviscerate": 1.29,
-    "Expose Armor": 5.84,
-    "Slice and Dice": 8.354666666666667,
     "Cold Blood": 1.0,
-    "Adrenaline Rush": 1.0,
-    "Sinister Strike": 50.346,
-    "Auto Attack": 193.61933333333332,
+    "Expose Armor": 5.827,
+    "Auto Attack": 193.619,
+    "Sinister Strike": 50.399,
+    "Slice and Dice": 8.352333333333334,
+    "Eviscerate": 1.302,
+    "item 10646": 1.0,
+    "item 7676": 1.0,
     "Blade Flurry": 2.0,
-    "item 10646": 1.0
+    "Adrenaline Rush": 1.0
    },
-   "dps": 366.2818188839054,
-   "dps_stdev": 17.511525590650002,
-   "threat": 260.0600914075727,
-   "dtps": 3.3106350965301257,
+   "dps": 366.32562016675536,
+   "dps_stdev": 18.070738592695086,
+   "threat": 260.09119031839623,
+   "dtps": 3.3214764729644752,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6289042716508971,
    "shares": {
-    "Auto Attack": 0.5541876794338649,
-    "Sinister Strike": 0.3026271237704772,
-    "Deadly Poison": 0.047119478539530926,
-    "Dense Sharpening Stone": 0.0326976487484389,
-    "Eviscerate": 0.025358963930237757,
-    "Dragonbreath Chili": 0.02010244552814846,
-    "item 10646": 0.017906660049301762
+    "Auto Attack": 0.55391229916776,
+    "Sinister Strike": 0.3027275077851166,
+    "Deadly Poison": 0.047263515539862105,
+    "Dense Sharpening Stone": 0.03249434058788147,
+    "Eviscerate": 0.025546159436701014,
+    "Dragonbreath Chili": 0.020144016249047512,
+    "item 10646": 0.01791216123363143
    },
    "source_shares": {
-    "white_mh": 0.3876,
+    "white_mh": 0.3874,
     "sinister": 0.3257,
-    "white_oh": 0.2087,
-    "poisons": 0.0507,
-    "eviscerate": 0.0273
+    "white_oh": 0.2086,
+    "poisons": 0.0509,
+    "eviscerate": 0.0275
    },
-   "unmatched_share": 0.0707
+   "unmatched_share": 0.0706
   },
   {
    "label": "cand-combat-swords-raid-r3",
@@ -411,52 +303,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 8.350666666666667,
-    "31016": 1.274,
-    "13877": 2.0,
+    "11198": 5.831,
     "14177": 1.0,
-    "11294": 50.402,
-    "13750": 1.0,
-    "11198": 5.852
+    "31016": 1.29,
+    "11294": 50.42033333333333,
+    "6774": 8.349666666666668,
+    "13877": 2.0,
+    "13750": 1.0
    },
    "casts": {
-    "Slice and Dice": 8.350666666666667,
-    "Eviscerate": 1.274,
-    "Blade Flurry": 2.0,
+    "Expose Armor": 5.831,
     "Cold Blood": 1.0,
-    "item 10646": 1.0,
-    "Auto Attack": 193.45866666666666,
+    "Eviscerate": 1.29,
+    "Sinister Strike": 50.42033333333333,
+    "Slice and Dice": 8.349666666666668,
+    "Auto Attack": 193.56366666666668,
     "item 7676": 1.0,
-    "Sinister Strike": 50.402,
-    "Adrenaline Rush": 1.0,
-    "Expose Armor": 5.852
+    "item 10646": 1.0,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0
    },
-   "dps": 369.33059702487844,
-   "dps_stdev": 17.97917684883004,
-   "threat": 262.2247238876638,
-   "dtps": 3.3151181632624986,
+   "dps": 369.35316948493073,
+   "dps_stdev": 18.0759969562008,
+   "threat": 262.24075033430086,
+   "dtps": 3.318504211167224,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6366703555586463,
    "shares": {
-    "Auto Attack": 0.5500553060941099,
-    "Sinister Strike": 0.2943403061962068,
-    "Deadly Poison": 0.05447428349762319,
-    "Dense Sharpening Stone": 0.038519746677326536,
-    "Eviscerate": 0.02475343058150077,
-    "Dragonbreath Chili": 0.020055370760470183,
-    "item 10646": 0.017801556192762732
+    "Auto Attack": 0.5496343771579626,
+    "Sinister Strike": 0.29411967125392463,
+    "Deadly Poison": 0.05479218645950749,
+    "Dense Sharpening Stone": 0.0386664596268628,
+    "Eviscerate": 0.024939116474665544,
+    "Dragonbreath Chili": 0.0200704164453073,
+    "item 10646": 0.017777772581769612
    },
    "source_shares": {
-    "white_mh": 0.3871,
-    "sinister": 0.3187,
-    "white_oh": 0.2084,
-    "poisons": 0.059,
-    "eviscerate": 0.0268
+    "white_mh": 0.3869,
+    "sinister": 0.3185,
+    "white_oh": 0.2083,
+    "poisons": 0.0593,
+    "eviscerate": 0.027
    },
-   "unmatched_share": 0.0764
+   "unmatched_share": 0.0765
   },
   {
    "label": "cand-combat-swords-raid-r4",
@@ -465,52 +357,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14177": 1.0,
-    "11198": 5.852,
-    "6774": 8.350666666666667,
-    "11294": 50.402,
-    "31016": 1.274,
+    "6774": 8.349666666666668,
     "13877": 2.0,
-    "13750": 1.0
+    "11294": 50.42033333333333,
+    "14177": 1.0,
+    "13750": 1.0,
+    "11198": 5.831,
+    "31016": 1.29
    },
    "casts": {
-    "Cold Blood": 1.0,
-    "Expose Armor": 5.852,
-    "item 7676": 1.0,
-    "Slice and Dice": 8.350666666666667,
-    "Auto Attack": 193.45866666666666,
-    "Sinister Strike": 50.402,
-    "item 10646": 1.0,
-    "Eviscerate": 1.274,
+    "Slice and Dice": 8.349666666666668,
+    "Auto Attack": 193.56366666666668,
     "Blade Flurry": 2.0,
-    "Adrenaline Rush": 1.0
+    "Sinister Strike": 50.42033333333333,
+    "Cold Blood": 1.0,
+    "item 7676": 1.0,
+    "item 10646": 1.0,
+    "Adrenaline Rush": 1.0,
+    "Expose Armor": 5.831,
+    "Eviscerate": 1.29
    },
-   "dps": 367.4600120750882,
-   "dps_stdev": 17.83305771628682,
-   "threat": 260.89660857331256,
-   "dtps": 3.3151181632624986,
+   "dps": 367.4875955789656,
+   "dps_stdev": 17.930456255280504,
+   "threat": 260.9161928610655,
+   "dtps": 3.318504211167224,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6395688822327433,
    "shares": {
-    "Auto Attack": 0.5528303713377537,
-    "Sinister Strike": 0.2907802065690972,
-    "Deadly Poison": 0.05474910984532284,
-    "Dense Sharpening Stone": 0.03871408133606706,
-    "Eviscerate": 0.02487831326894442,
-    "Dragonbreath Chili": 0.020156551426721677,
-    "item 10646": 0.017891366216093104
+    "Auto Attack": 0.5523996594778264,
+    "Sinister Strike": 0.29056829514984195,
+    "Deadly Poison": 0.05506785310406239,
+    "Dense Sharpening Stone": 0.038860995634109594,
+    "Eviscerate": 0.02506458842606897,
+    "Dragonbreath Chili": 0.02017139333113364,
+    "item 10646": 0.01786721487695705
    },
    "source_shares": {
-    "white_mh": 0.3892,
-    "sinister": 0.315,
-    "white_oh": 0.2096,
-    "poisons": 0.0593,
-    "eviscerate": 0.0269
+    "white_mh": 0.389,
+    "sinister": 0.3148,
+    "white_oh": 0.2094,
+    "poisons": 0.0597,
+    "eviscerate": 0.0272
    },
-   "unmatched_share": 0.0768
+   "unmatched_share": 0.0769
   },
   {
    "label": "cand-combat-swords-raid-r5",
@@ -519,1818 +411,454 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "6774": 8.359333333333332,
+    "31016": 1.2713333333333334,
+    "11198": 5.842666666666666,
     "13877": 2.0,
-    "6774": 8.365333333333332,
-    "13750": 1.0,
-    "11294": 50.41,
-    "31016": 1.2733333333333334,
-    "11198": 5.839333333333333
+    "11294": 50.42,
+    "13750": 1.0
    },
    "casts": {
+    "Auto Attack": 191.19433333333333,
+    "Slice and Dice": 8.359333333333332,
+    "Eviscerate": 1.2713333333333334,
+    "Expose Armor": 5.842666666666666,
     "Blade Flurry": 2.0,
-    "Slice and Dice": 8.365333333333332,
-    "Auto Attack": 191.16466666666668,
-    "Adrenaline Rush": 1.0,
-    "item 10646": 1.0,
     "item 7676": 1.0,
-    "Sinister Strike": 50.41,
-    "Eviscerate": 1.2733333333333334,
-    "Expose Armor": 5.839333333333333
+    "Sinister Strike": 50.42,
+    "Adrenaline Rush": 1.0,
+    "item 10646": 1.0
    },
-   "dps": 370.0392643104135,
-   "dps_stdev": 18.014657874678285,
-   "threat": 262.7278776603936,
-   "dtps": 3.3745378996178994,
+   "dps": 370.34495566838837,
+   "dps_stdev": 18.110108412217325,
+   "threat": 262.94491852455536,
+   "dtps": 3.348297627932961,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": 0.6542161656752856,
    "shares": {
-    "Auto Attack": 0.5397677270598488,
-    "Sinister Strike": 0.2861657188858571,
-    "Deadly Poison": 0.06452063056825663,
-    "Dense Sharpening Stone": 0.047378245970301006,
-    "Eviscerate": 0.0244329443260102,
-    "Dragonbreath Chili": 0.019858509195388195,
-    "item 10646": 0.017876223994338063
+    "Auto Attack": 0.5394542183301549,
+    "Sinister Strike": 0.28625734213424137,
+    "Deadly Poison": 0.06469093317724013,
+    "Dense Sharpening Stone": 0.04730703677828238,
+    "Eviscerate": 0.024599661286971903,
+    "Dragonbreath Chili": 0.019900856248786254,
+    "item 10646": 0.01778995204432308
    },
    "source_shares": {
-    "white_mh": 0.3835,
+    "white_mh": 0.3832,
     "sinister": 0.3128,
-    "white_oh": 0.2065,
-    "poisons": 0.0705,
-    "eviscerate": 0.0267
+    "white_oh": 0.2063,
+    "poisons": 0.0707,
+    "eviscerate": 0.0269
    },
-   "unmatched_share": 0.0851
+   "unmatched_share": 0.085
+  },
+  {
+   "label": "cand-combat-swords-raid-r6",
+   "talents": "005323101005-32502300001513231",
+   "split": "20/31/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "11294": 50.42,
+    "6774": 8.359333333333334,
+    "11198": 5.842666666666666,
+    "31016": 1.2713333333333334,
+    "13877": 2.0,
+    "13750": 1.0
+   },
+   "casts": {
+    "Sinister Strike": 50.42,
+    "Slice and Dice": 8.359333333333334,
+    "item 10646": 1.0,
+    "Expose Armor": 5.842666666666666,
+    "Auto Attack": 191.19433333333333,
+    "Eviscerate": 1.2713333333333334,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "item 7676": 1.0
+   },
+   "dps": 370.34495566838837,
+   "dps_stdev": 18.110108412217325,
+   "threat": 262.94491852455536,
+   "dtps": 3.348297627932961,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6542361656752856,
+   "shares": {
+    "Auto Attack": 0.5394542183301549,
+    "Sinister Strike": 0.28625734213424137,
+    "Deadly Poison": 0.06469093317724013,
+    "Dense Sharpening Stone": 0.04730703677828238,
+    "Eviscerate": 0.024599661286971903,
+    "Dragonbreath Chili": 0.019900856248786254,
+    "item 10646": 0.01778995204432308
+   },
+   "source_shares": {
+    "white_mh": 0.3832,
+    "sinister": 0.3128,
+    "white_oh": 0.2063,
+    "poisons": 0.0707,
+    "eviscerate": 0.0269
+   },
+   "unmatched_share": 0.085
+  },
+  {
+   "label": "sim preset: Backstab",
+   "talents": "005302005-30230320201515231-102",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "11198": 4.083,
+    "6774": 9.355,
+    "13877": 2.0,
+    "11294": 39.322,
+    "13750": 1.0,
+    "31016": 0.5773333333333334
+   },
+   "casts": {
+    "Expose Armor": 4.083,
+    "Slice and Dice": 9.355,
+    "Blade Flurry": 2.0,
+    "Sinister Strike": 39.322,
+    "Auto Attack": 191.65133333333335,
+    "Adrenaline Rush": 1.0,
+    "item 7676": 1.0,
+    "item 10646": 1.0,
+    "Eviscerate": 0.5773333333333334
+   },
+   "dps": 314.3306023292128,
+   "dps_stdev": 16.559612792457386,
+   "threat": 223.17472765374097,
+   "dtps": 3.332861831085759,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.6013014053916302,
+    "Sinister Strike": 0.2546256819400452,
+    "Deadly Poison": 0.05500459730902129,
+    "Dense Sharpening Stone": 0.03388042865957247,
+    "Dragonbreath Chili": 0.02240492662002732,
+    "item 10646": 0.02096326254817957,
+    "Eviscerate": 0.011819697531523907
+   },
+   "source_shares": {
+    "white_mh": 0.4236,
+    "sinister": 0.2759,
+    "white_oh": 0.2281,
+    "poisons": 0.0596,
+    "eviscerate": 0.0128
+   },
+   "unmatched_share": 0.0772
+  },
+  {
+   "label": "sim preset: Sinister Strike",
+   "talents": "00530310501-32003311201515231",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "6774": 8.352333333333334,
+    "14177": 1.0,
+    "11198": 5.827,
+    "13877": 2.0,
+    "11294": 50.399,
+    "31016": 1.302,
+    "13750": 1.0
+   },
+   "casts": {
+    "Slice and Dice": 8.352333333333334,
+    "Cold Blood": 1.0,
+    "Expose Armor": 5.827,
+    "Auto Attack": 193.619,
+    "Blade Flurry": 2.0,
+    "Sinister Strike": 50.399,
+    "Eviscerate": 1.302,
+    "item 7676": 1.0,
+    "Adrenaline Rush": 1.0,
+    "item 10646": 1.0
+   },
+   "dps": 366.32562016675536,
+   "dps_stdev": 18.070738592695086,
+   "threat": 260.09119031839623,
+   "dtps": 3.3214764729644752,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.55391229916776,
+    "Sinister Strike": 0.3027275077851166,
+    "Deadly Poison": 0.047263515539862105,
+    "Dense Sharpening Stone": 0.03249434058788147,
+    "Eviscerate": 0.025546159436701014,
+    "Dragonbreath Chili": 0.020144016249047512,
+    "item 10646": 0.01791216123363143
+   },
+   "source_shares": {
+    "white_mh": 0.3874,
+    "sinister": 0.3257,
+    "white_oh": 0.2086,
+    "poisons": 0.0509,
+    "eviscerate": 0.0275
+   },
+   "unmatched_share": 0.0706
+  },
+  {
+   "label": "sim preset: Improved Expose Armor (SS)",
+   "talents": "005303125-32003311201515131",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "11198": 6.5873333333333335,
+    "13750": 1.0,
+    "6774": 7.188333333333334,
+    "13877": 2.0,
+    "31016": 3.086,
+    "11294": 53.738
+   },
+   "casts": {
+    "Expose Armor": 6.5873333333333335,
+    "Adrenaline Rush": 1.0,
+    "Slice and Dice": 7.188333333333334,
+    "Blade Flurry": 2.0,
+    "item 7676": 1.0,
+    "Auto Attack": 195.07433333333336,
+    "item 10646": 1.0,
+    "Eviscerate": 3.086,
+    "Sinister Strike": 53.738
+   },
+   "dps": 388.70002417294205,
+   "dps_stdev": 18.878322978082647,
+   "threat": 275.9770171627889,
+   "dtps": 3.3299103149403693,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5284596388045903,
+    "Sinister Strike": 0.3017423814014218,
+    "Eviscerate": 0.0577592541485242,
+    "Deadly Poison": 0.04417512779050037,
+    "Dense Sharpening Stone": 0.03177079138248605,
+    "Dragonbreath Chili": 0.019177000069290375,
+    "item 10646": 0.0169158064031867
+   },
+   "source_shares": {
+    "white_mh": 0.3685,
+    "sinister": 0.3237,
+    "white_oh": 0.1984,
+    "eviscerate": 0.062,
+    "poisons": 0.0474
+   },
+   "unmatched_share": 0.0679
+  },
+  {
+   "label": "sim preset: Mutilate",
+   "talents": "00530310551021051-302303202004",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "14177": 1.0,
+    "6774": 7.955666666666667,
+    "31016": 0.8106666666666666,
+    "11294": 43.464666666666666,
+    "11198": 6.706
+   },
+   "casts": {
+    "Cold Blood": 1.0,
+    "Slice and Dice": 7.955666666666667,
+    "Eviscerate": 0.8106666666666666,
+    "Auto Attack": 181.11633333333333,
+    "Sinister Strike": 43.464666666666666,
+    "item 7676": 1.0,
+    "Expose Armor": 6.706,
+    "item 10646": 1.0
+   },
+   "dps": 324.9865384863282,
+   "dps_stdev": 18.348726914701583,
+   "threat": 230.7404423252931,
+   "dtps": 3.3081925116355695,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5678650032764431,
+    "Sinister Strike": 0.27476518457192733,
+    "Deadly Poison": 0.06056689922633026,
+    "Dense Sharpening Stone": 0.03847084093774247,
+    "Dragonbreath Chili": 0.02157951425049311,
+    "item 10646": 0.020121737057284154,
+    "Eviscerate": 0.01663082067977946
+   },
+   "source_shares": {
+    "white_mh": 0.4013,
+    "sinister": 0.2987,
+    "white_oh": 0.2161,
+    "poisons": 0.0658,
+    "eviscerate": 0.0181
+   },
+   "unmatched_share": 0.0802
+  },
+  {
+   "label": "sim preset: Combat Dual-Wield 15/33/3",
+   "talents": "1053231-22530300001515231-012",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "11198": 5.8533333333333335,
+    "6774": 8.349333333333334,
+    "13750": 1.0,
+    "11294": 50.43033333333333,
+    "31016": 1.3006666666666666,
+    "13877": 2.0
+   },
+   "casts": {
+    "Expose Armor": 5.8533333333333335,
+    "Slice and Dice": 8.349333333333334,
+    "Adrenaline Rush": 1.0,
+    "Sinister Strike": 50.43033333333333,
+    "item 7676": 1.0,
+    "Eviscerate": 1.3006666666666666,
+    "Auto Attack": 193.59566666666666,
+    "item 10646": 1.0,
+    "Blade Flurry": 2.0
+   },
+   "dps": 360.3667068026748,
+   "dps_stdev": 17.411422639690972,
+   "threat": 255.86036182989898,
+   "dtps": 3.335429435158498,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5636114419553203,
+    "Sinister Strike": 0.2919607851609912,
+    "Deadly Poison": 0.04815814097541181,
+    "Dense Sharpening Stone": 0.03325326192120101,
+    "Eviscerate": 0.024350027709294796,
+    "Dragonbreath Chili": 0.020418259586123748,
+    "item 10646": 0.0182480826916571
+   },
+   "source_shares": {
+    "white_mh": 0.3947,
+    "sinister": 0.3146,
+    "white_oh": 0.2126,
+    "poisons": 0.0519,
+    "eviscerate": 0.0262
+   },
+   "unmatched_share": 0.0719
+  },
+  {
+   "label": "sim preset: Assassination Mutilate 31/20/0",
+   "talents": "02532010531201051-225303000005",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "6774": 11.41,
+    "31016": 0.8046666666666666,
+    "11198": 6.517333333333333,
+    "11294": 47.338,
+    "14177": 1.0
+   },
+   "casts": {
+    "Slice and Dice": 11.41,
+    "Eviscerate": 0.8046666666666666,
+    "Auto Attack": 179.49966666666666,
+    "item 10646": 1.0,
+    "Expose Armor": 6.517333333333333,
+    "Sinister Strike": 47.338,
+    "Cold Blood": 1.0,
+    "item 7676": 1.0
+   },
+   "dps": 335.51728569517104,
+   "dps_stdev": 18.677474053147517,
+   "threat": 238.21727284357132,
+   "dtps": 3.333022860588919,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5504123139408198,
+    "Sinister Strike": 0.2884516286187474,
+    "Deadly Poison": 0.06279530130255369,
+    "Dense Sharpening Stone": 0.04286281323951394,
+    "Dragonbreath Chili": 0.020827350663095087,
+    "item 10646": 0.01955708625871611,
+    "Eviscerate": 0.015093505976553985
+   },
+   "source_shares": {
+    "white_mh": 0.3903,
+    "sinister": 0.3146,
+    "white_oh": 0.2101,
+    "poisons": 0.0685,
+    "eviscerate": 0.0165
+   },
+   "unmatched_share": 0.0832
+  },
+  {
+   "label": "sim preset: Subtlety Hemo 15/0/36",
+   "talents": "125320101--5320003310013211551",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "11294": 42.806,
+    "6774": 11.428333333333333,
+    "31016": 0.591,
+    "11198": 3.105
+   },
+   "casts": {
+    "Auto Attack": 179.1653333333333,
+    "item 10646": 1.0,
+    "Sinister Strike": 42.806,
+    "Slice and Dice": 11.428333333333333,
+    "Eviscerate": 0.591,
+    "item 7676": 1.0,
+    "Expose Armor": 3.105
+   },
+   "dps": 266.7895267934432,
+   "dps_stdev": 15.560119089325186,
+   "threat": 189.42056402334467,
+   "dtps": 3.290843906353103,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5616840336327608,
+    "Sinister Strike": 0.29001515535859934,
+    "Deadly Poison": 0.0548724641652535,
+    "Dense Sharpening Stone": 0.034786895078091684,
+    "item 10646": 0.024293011505095805,
+    "Dragonbreath Chili": 0.023850336501636944,
+    "Eviscerate": 0.010498103758561837
+   },
+   "source_shares": {
+    "white_mh": 0.3981,
+    "sinister": 0.3162,
+    "white_oh": 0.2144,
+    "poisons": 0.0598,
+    "eviscerate": 0.0114
+   },
+   "unmatched_share": 0.0829
   }
  ],
- "deltas": {
-  "combat-swords-raid": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04807865892010799,
-    "dps_with": 388.7693619056384,
-    "dps_without": 370.93529058802557,
-    "ev_delta": 0.04661365120557687,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.020391507091122446,
-    "dps_with": 388.7693619056384,
-    "dps_without": 381.00019375300496,
-    "ev_delta": 0.01879805793642809,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.005471006981525368,
-    "dps_with": 388.7693619056384,
-    "dps_without": 386.6539753072976,
-    "ev_delta": 0.0038033478217956228,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deflection",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 1.8652834470062745e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.0415627180711169,
-    "dps_with": 388.7693619056384,
-    "dps_without": 373.25583487243597,
-    "ev_delta": 0.04489569886942472,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.007629916714655074,
-    "dps_with": 388.7693619056384,
-    "dps_without": 385.8255451299108,
-    "ev_delta": 0.013062172682103758,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.024343405255552265,
-    "dps_with": 388.7693619056384,
-    "dps_without": 379.53030195830524,
-    "ev_delta": 0.027656998083161938,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.009274247149148995,
-    "dps_with": 388.7693619056384,
-    "dps_without": 385.1969501884919,
-    "ev_delta": 0.004550830116542806,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Expose Armor",
-    "ranks": 2,
-    "sim_delta": 0.0754737223067752,
-    "dps_with": 388.7693619056384,
-    "dps_without": 361.4866210508333,
-    "ev_delta": 1.2435145663160286e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.07350219015463445,
-    "dps_with": 388.7693619056384,
-    "dps_without": 362.1505065114375,
-    "ev_delta": 0.06363976676729814,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.06449691583487327,
-    "dps_with": 388.7693619056384,
-    "dps_without": 365.2141740596128,
-    "ev_delta": 0.048066259031362094,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 5,
-    "sim_delta": 0.012573242527052586,
-    "dps_with": 388.7693619056384,
-    "dps_without": 383.9419664452093,
-    "ev_delta": 0.02597778913004397,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 1.8652834470062745e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.0503109916673198,
-    "dps_with": 388.7693619056384,
-    "dps_without": 370.14690409788545,
-    "ev_delta": 0.0505502770779449,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.030617864479333356,
-    "dps_with": 388.7693619056384,
-    "dps_without": 377.21970024461405,
-    "ev_delta": 0.03615905372814607,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.09445643306624865,
-    "dps_with": 388.7693619056384,
-    "dps_without": 355.2168456961372,
-    "ev_delta": 0.06675581452320639,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Riposte",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 6.217534173574071e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.0456814638994548,
-    "dps_with": 388.7693619056384,
-    "dps_without": 371.7856491936627,
-    "ev_delta": 0.05026769192020891,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 1,
-    "sim_delta": 0.010036413034808568,
-    "dps_with": 388.7693619056384,
-    "dps_without": 384.90628346508964,
-    "ev_delta": 0.009751055040422384,
-    "apl_dependent": false
-   }
-  ],
-  "opt-combat-swords-raid-raid-dps": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.041428584163365104,
-    "dps_with": 370.0392643104135,
-    "dps_without": 355.3189051438277,
-    "ev_delta": 0.04405333220770163,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.017832278980156924,
-    "dps_with": 370.0392643104135,
-    "dps_without": 363.5562282237539,
-    "ev_delta": 0.017791520146872537,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.002103888101312583,
-    "dps_with": 370.0392643104135,
-    "dps_without": 369.26237758794383,
-    "ev_delta": 0.00373741825457217,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04336330299516914,
-    "dps_with": 370.0392643104135,
-    "dps_without": 354.6600338042815,
-    "ev_delta": 0.044086164776046016,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.0033756220072789092,
-    "dps_with": 370.0392643104135,
-    "dps_without": 368.7943539729821,
-    "ev_delta": 0.012366489579849484,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 3,
-    "sim_delta": 0.012764693730850837,
-    "dps_with": 370.0392643104135,
-    "dps_without": 365.3753597464506,
-    "ev_delta": 0.015963466915041812,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.003928988958952881,
-    "dps_with": 370.0392643104135,
-    "dps_without": 368.59107405010207,
-    "ev_delta": 0.004471885508011766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Poisons",
-    "ranks": 5,
-    "sim_delta": 0.033339757046307164,
-    "dps_with": 370.0392643104135,
-    "dps_without": 358.1002877196284,
-    "ev_delta": 0.03861223065583704,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.06682248315623987,
-    "dps_with": 370.0392643104135,
-    "dps_without": 346.8611415234112,
-    "ev_delta": 0.0596930876143849,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.05579762951948779,
-    "dps_with": 370.0392643104135,
-    "dps_without": 350.48313612791964,
-    "ev_delta": 0.045422690840406586,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 1,
-    "sim_delta": 0.0024311943530522136,
-    "dps_with": 370.0392643104135,
-    "dps_without": 369.1418088293122,
-    "ev_delta": 0.005001440327985509,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 3.022670940653827e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.04806491217550318,
-    "dps_with": 370.0392643104135,
-    "dps_without": 353.06903228189435,
-    "ev_delta": 0.04728608647031156,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Murder",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 0.011999265876404696,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.028691774466322026,
-    "dps_with": 370.0392643104135,
-    "dps_without": 359.7183077529586,
-    "ev_delta": 0.0362145870064786,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07553633709846001,
-    "dps_with": 370.0392643104135,
-    "dps_without": 344.0509181760339,
-    "ev_delta": 0.0630225406956913,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.04908048233976721,
-    "dps_with": 370.0392643104135,
-    "dps_without": 352.72724117897405,
-    "ev_delta": 0.04749756136255604,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.01509404233593823,
-    "dps_with": 370.0392643104135,
-    "dps_without": 364.5369284789395,
-    "ev_delta": 0.0187488724553415,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-hand-2026-09-28": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.047641797477774625,
-    "dps_with": 365.0555263210545,
-    "dps_without": 348.4545263466343,
-    "ev_delta": 0.04662726725547968,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.018714099511416282,
-    "dps_with": 365.0555263210545,
-    "dps_without": 358.3493410920082,
-    "ev_delta": 0.01880340295646955,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.00576606522211567,
-    "dps_with": 365.0555263210545,
-    "dps_without": 362.96265995058684,
-    "ev_delta": 0.0038044133405840627,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deflection",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 365.0555263210545,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 1.224320737555535e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04404201846070052,
-    "dps_with": 365.0555263210545,
-    "dps_without": 349.65597156643156,
-    "ev_delta": 0.04490879156550903,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Endurance",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 365.0555263210545,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.005991152582502425,
-    "dps_with": 365.0555263210545,
-    "dps_without": 362.8814481955555,
-    "ev_delta": 0.013065865850160964,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.025764848512257,
-    "dps_with": 365.0555263210545,
-    "dps_without": 355.8861729864517,
-    "ev_delta": 0.027664414532552754,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.004065180060122,
-    "dps_with": 365.0555263210545,
-    "dps_without": 363.57751824358206,
-    "ev_delta": 0.004552105994279089,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.07197013328321168,
-    "dps_with": 365.0555263210545,
-    "dps_without": 340.54635944284075,
-    "ev_delta": 0.06365865871899147,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.057893280847107105,
-    "dps_with": 365.0555263210545,
-    "dps_without": 345.07783812440573,
-    "ev_delta": 0.04808031888680862,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sprint",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 365.0555263210545,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 5,
-    "sim_delta": 0.012500015181522,
-    "dps_with": 365.0555263210545,
-    "dps_without": 360.5486625653107,
-    "ev_delta": 0.02598522769675483,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 365.0555263210545,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 6.121566213941382e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.05060286063911111,
-    "dps_with": 365.0555263210545,
-    "dps_without": 347.47242749651474,
-    "ev_delta": 0.050556784454306544,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Murder",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 365.0555263210545,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 0.00599963050466099,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.03185711210669758,
-    "dps_with": 365.0555263210545,
-    "dps_without": 353.7849592137196,
-    "ev_delta": 0.03616036531321917,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07890061451773854,
-    "dps_with": 365.0555263210545,
-    "dps_without": 338.3588084100146,
-    "ev_delta": 0.0667756895707726,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.049327163732790086,
-    "dps_with": 365.0555263210545,
-    "dps_without": 347.89485961884,
-    "ev_delta": 0.050282426610468015,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.018936813325823698,
-    "dps_with": 365.0555263210545,
-    "dps_without": 358.271014990133,
-    "ev_delta": 0.019502775679715662,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-preset-improved-expose-armor-ss": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04807865892010799,
-    "dps_with": 388.7693619056384,
-    "dps_without": 370.93529058802557,
-    "ev_delta": 0.046614561212572646,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.020391507091122446,
-    "dps_with": 388.7693619056384,
-    "dps_without": 381.00019375300496,
-    "ev_delta": 0.018798415164912225,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.005471006981525368,
-    "dps_with": 388.7693619056384,
-    "dps_without": 386.6539753072976,
-    "ev_delta": 0.0038034190348397575,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deflection",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 1.8653182404786485e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.0415627180711169,
-    "dps_with": 388.7693619056384,
-    "dps_without": 373.25583487243597,
-    "ev_delta": 0.0448965738992936,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Endurance",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.007629916714655074,
-    "dps_with": 388.7693619056384,
-    "dps_without": 385.8255451299108,
-    "ev_delta": 0.013062419511261995,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.024343405255552265,
-    "dps_with": 388.7693619056384,
-    "dps_without": 379.53030195830524,
-    "ev_delta": 0.027657528232573707,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.009274247149148995,
-    "dps_with": 388.7693619056384,
-    "dps_without": 385.1969501884919,
-    "ev_delta": 0.004550915388732133,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Expose Armor",
-    "ranks": 2,
-    "sim_delta": 0.0754737223067752,
-    "dps_with": 388.7693619056384,
-    "dps_without": 361.4866210508333,
-    "ev_delta": 1.2435377616758347e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.07350219015463445,
-    "dps_with": 388.7693619056384,
-    "dps_without": 362.1505065114375,
-    "ev_delta": 0.0636410293751832,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.06449691583487327,
-    "dps_with": 388.7693619056384,
-    "dps_without": 365.2141740596128,
-    "ev_delta": 0.048067198699038596,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sprint",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 5,
-    "sim_delta": 0.012573242527052586,
-    "dps_with": 388.7693619056384,
-    "dps_without": 383.9419664452093,
-    "ev_delta": 0.02597828627746734,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.0503109916673198,
-    "dps_with": 388.7693619056384,
-    "dps_without": 370.14690409788545,
-    "ev_delta": 0.050551267648986736,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.030617864479333356,
-    "dps_with": 388.7693619056384,
-    "dps_without": 377.21970024461405,
-    "ev_delta": 0.03615975258561638,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.09445643306624865,
-    "dps_with": 388.7693619056384,
-    "dps_without": 355.2168456961372,
-    "ev_delta": 0.06675714283336807,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Riposte",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 388.7693619056384,
-    "dps_without": 388.7693619056384,
-    "ev_delta": 6.217650148930913e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.0456814638994548,
-    "dps_with": 388.7693619056384,
-    "dps_without": 371.7856491936627,
-    "ev_delta": 0.05026867668881296,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 1,
-    "sim_delta": 0.010036413034808568,
-    "dps_with": 388.7693619056384,
-    "dps_without": 384.90628346508964,
-    "ev_delta": 0.009751238698840214,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-preset-sinister-strike": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04797065103951363,
-    "dps_with": 366.2818188839054,
-    "dps_without": 349.5153404540284,
-    "ev_delta": 0.0467441321211891,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.018851970223011615,
-    "dps_with": 366.2818188839054,
-    "dps_without": 359.50445166605675,
-    "ev_delta": 0.018849275187229127,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.005186198329096685,
-    "dps_with": 366.2818188839054,
-    "dps_without": 364.3920096523104,
-    "ev_delta": 0.003792554194520853,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Cold Blood",
-    "ranks": 1,
-    "sim_delta": 0.00335919462775746,
-    "dps_with": 366.2818188839054,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 0.0031085579600818153,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deflection",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 1.8417740828509744e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04380997450805149,
-    "dps_with": 366.2818188839054,
-    "dps_without": 350.9085253343496,
-    "ev_delta": 0.04476308774436456,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Endurance",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.006395084656600122,
-    "dps_with": 366.2818188839054,
-    "dps_without": 363.95430032221117,
-    "ev_delta": 0.013097561008894835,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.024895522332189432,
-    "dps_with": 366.2818188839054,
-    "dps_without": 357.3845439878759,
-    "ev_delta": 0.02766658014235881,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.004078178386382565,
-    "dps_with": 366.2818188839054,
-    "dps_without": 364.7941233744802,
-    "ev_delta": 0.004563055462678221,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.07048992270985081,
-    "dps_with": 366.2818188839054,
-    "dps_without": 342.1627902453255,
-    "ev_delta": 0.06382081337871305,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.056501281422375906,
-    "dps_with": 366.2818188839054,
-    "dps_without": 346.69320835160494,
-    "ev_delta": 0.04820099334921931,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sprint",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 5,
-    "sim_delta": 0.013039237912869645,
-    "dps_with": 366.2818188839054,
-    "dps_without": 361.567257393251,
-    "ev_delta": 0.02604906846778879,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.050184172435731415,
-    "dps_with": 366.2818188839054,
-    "dps_without": 348.778650924032,
-    "ev_delta": 0.05056570144980784,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.03180455519833532,
-    "dps_with": 366.2818188839054,
-    "dps_without": 354.99147298637195,
-    "ev_delta": 0.03614907748298685,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.08036874241575746,
-    "dps_with": 366.2818188839054,
-    "dps_without": 339.0340765180611,
-    "ev_delta": 0.0669462838263478,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Riposte",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 6.139171563078801e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.05168257994195371,
-    "dps_with": 366.2818188839054,
-    "dps_without": 348.28172099619815,
-    "ev_delta": 0.050408893863405115,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.02186046786344629,
-    "dps_with": 366.2818188839054,
-    "dps_without": 358.44602115760927,
-    "ev_delta": 0.019504262560528243,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-r1": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.044899785698552505,
-    "dps_with": 368.49584372247966,
-    "dps_without": 352.6614214741437,
-    "ev_delta": 0.04451592807754188,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.01809141028448493,
-    "dps_with": 368.49584372247966,
-    "dps_without": 361.94769939126684,
-    "ev_delta": 0.017973598153847636,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.005703754564928149,
-    "dps_with": 368.49584372247966,
-    "dps_without": 366.4059540892264,
-    "ev_delta": 0.0037543425223657305,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Cold Blood",
-    "ranks": 1,
-    "sim_delta": 0.0011400537518746056,
-    "dps_with": 368.49584372247966,
-    "dps_without": 368.0762170502557,
-    "ev_delta": 0.0029662732973451916,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04339347435281286,
-    "dps_with": 368.49584372247966,
-    "dps_without": 353.1705466636612,
-    "ev_delta": 0.044293864440470634,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.0053650385589877145,
-    "dps_with": 368.49584372247966,
-    "dps_without": 366.52939936190046,
-    "ev_delta": 0.01249236650141056,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 3,
-    "sim_delta": 0.013999689675258048,
-    "dps_with": 368.49584372247966,
-    "dps_without": 363.4082411213494,
-    "ev_delta": 0.01608772747307998,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.004030145911195844,
-    "dps_with": 368.49584372247966,
-    "dps_without": 367.01671281797576,
-    "ev_delta": 0.004517045713194077,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Poisons",
-    "ranks": 4,
-    "sim_delta": 0.025934241122813877,
-    "dps_with": 368.49584372247966,
-    "dps_without": 359.18076320289936,
-    "ev_delta": 0.03079561458893917,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.06733698253992834,
-    "dps_with": 368.49584372247966,
-    "dps_without": 345.2478924187324,
-    "ev_delta": 0.06032940350341383,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.05376645570787122,
-    "dps_with": 368.49584372247966,
-    "dps_without": 349.6940348845526,
-    "ev_delta": 0.04590029825997673,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 1,
-    "sim_delta": 0.0025572990929393323,
-    "dps_with": 368.49584372247966,
-    "dps_without": 367.55589336976067,
-    "ev_delta": 0.005051975242204321,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 368.49584372247966,
-    "dps_without": 368.49584372247966,
-    "ev_delta": 3.036307813971754e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.04781917416693341,
-    "dps_with": 368.49584372247966,
-    "dps_without": 351.6788514730622,
-    "ev_delta": 0.04741085177725309,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Murder",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 368.49584372247966,
-    "dps_without": 368.49584372247966,
-    "ev_delta": 0.011999262564485944,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.028106429996968964,
-    "dps_with": 368.49584372247966,
-    "dps_without": 358.42188412688563,
-    "ev_delta": 0.03620762388978923,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 368.49584372247966,
-    "dps_without": 368.49584372247966,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07714634093297605,
-    "dps_with": 368.49584372247966,
-    "dps_without": 342.10378824042147,
-    "ev_delta": 0.06369648118625941,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.047880678991974866,
-    "dps_with": 368.49584372247966,
-    "dps_without": 351.65820986122196,
-    "ev_delta": 0.047997987149492244,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.014089029299767688,
-    "dps_with": 368.49584372247966,
-    "dps_without": 363.3762254354802,
-    "ev_delta": 0.018895247972402225,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-r2": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04797065103951363,
-    "dps_with": 366.2818188839054,
-    "dps_without": 349.5153404540284,
-    "ev_delta": 0.0467438317405417,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.018851970223011615,
-    "dps_with": 366.2818188839054,
-    "dps_without": 359.50445166605675,
-    "ev_delta": 0.018849157288538122,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.005186198329096685,
-    "dps_with": 366.2818188839054,
-    "dps_without": 364.3920096523104,
-    "ev_delta": 0.00379253082336492,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Cold Blood",
-    "ranks": 1,
-    "sim_delta": 0.00335919462775746,
-    "dps_with": 366.2818188839054,
-    "dps_without": 365.0555263210545,
-    "ev_delta": 0.0031085388170229663,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04380997450805149,
-    "dps_with": 366.2818188839054,
-    "dps_without": 350.9085253343496,
-    "ev_delta": 0.04476280063842635,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.006395084656600122,
-    "dps_with": 366.2818188839054,
-    "dps_without": 363.95430032221117,
-    "ev_delta": 0.013097479548576528,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.024895522332189432,
-    "dps_with": 366.2818188839054,
-    "dps_without": 357.3845439878759,
-    "ev_delta": 0.027666405595484098,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.004078178386382565,
-    "dps_with": 366.2818188839054,
-    "dps_without": 364.7941233744802,
-    "ev_delta": 0.004563027321817587,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.07048992270985081,
-    "dps_with": 366.2818188839054,
-    "dps_without": 342.1627902453255,
-    "ev_delta": 0.06382039657163495,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.056501281422375906,
-    "dps_with": 366.2818188839054,
-    "dps_without": 346.69320835160494,
-    "ev_delta": 0.048200683175595005,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 5,
-    "sim_delta": 0.013039237912869645,
-    "dps_with": 366.2818188839054,
-    "dps_without": 361.567257393251,
-    "ev_delta": 0.026048904384370096,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 3.069642316701411e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.050184172435731415,
-    "dps_with": 366.2818188839054,
-    "dps_without": 348.778650924032,
-    "ev_delta": 0.05056537532520956,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.03180455519833532,
-    "dps_with": 366.2818188839054,
-    "dps_without": 354.99147298637195,
-    "ev_delta": 0.03614884753807464,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 366.2818188839054,
-    "dps_without": 366.2818188839054,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.08036874241575746,
-    "dps_with": 366.2818188839054,
-    "dps_without": 339.0340765180611,
-    "ev_delta": 0.06694584532262089,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.05168257994195371,
-    "dps_with": 366.2818188839054,
-    "dps_without": 348.28172099619815,
-    "ev_delta": 0.05040856879866694,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.02186046786344629,
-    "dps_with": 366.2818188839054,
-    "dps_without": 358.44602115760927,
-    "ev_delta": 0.019504140486586986,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-r3": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04502120869283701,
-    "dps_with": 369.33059702487844,
-    "dps_without": 353.41923585154314,
-    "ev_delta": 0.04563727356123481,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.01832955995781217,
-    "dps_with": 369.33059702487844,
-    "dps_without": 362.68278124046526,
-    "ev_delta": 0.01841456158806522,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.00548966317239955,
-    "dps_with": 369.33059702487844,
-    "dps_without": 367.3141659752236,
-    "ev_delta": 0.0037744671477429707,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Cold Blood",
-    "ranks": 1,
-    "sim_delta": 0.0037727359842419893,
-    "dps_with": 369.33059702487844,
-    "dps_without": 367.94244731376773,
-    "ev_delta": 0.0030379489203924757,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04352218372668172,
-    "dps_with": 369.33059702487844,
-    "dps_without": 353.92692439551735,
-    "ev_delta": 0.04454093830368978,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.00527221647742061,
-    "dps_with": 369.33059702487844,
-    "dps_without": 367.3936183365851,
-    "ev_delta": 0.01279716311915079,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.022992079239448522,
-    "dps_with": 369.33059702487844,
-    "dps_without": 361.0297719015187,
-    "ev_delta": 0.0272373026780455,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.003980162674113221,
-    "dps_with": 369.33059702487844,
-    "dps_without": 367.8664287959256,
-    "ev_delta": 0.004541277198766566,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Poisons",
-    "ranks": 2,
-    "sim_delta": 0.013541868776250734,
-    "dps_with": 369.33059702487844,
-    "dps_without": 364.39599428764376,
-    "ev_delta": 0.015075803144087388,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.0678218732321112,
-    "dps_with": 369.33059702487844,
-    "dps_without": 345.8728522829177,
-    "ev_delta": 0.06208284729591713,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.05559322148112984,
-    "dps_with": 369.33059702487844,
-    "dps_without": 349.87965961609837,
-    "ev_delta": 0.04705808676408734,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 3,
-    "sim_delta": 0.007655356582077932,
-    "dps_with": 369.33059702487844,
-    "dps_without": 366.52471960019284,
-    "ev_delta": 0.015393643958920065,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 369.33059702487844,
-    "dps_without": 369.33059702487844,
-    "ev_delta": 3.055076263115854e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.0494295846553908,
-    "dps_with": 369.33059702487844,
-    "dps_without": 351.9346151711154,
-    "ev_delta": 0.04898288780942195,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.03175991425303423,
-    "dps_with": 369.33059702487844,
-    "dps_without": 357.9617621530331,
-    "ev_delta": 0.0361782940418522,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 369.33059702487844,
-    "dps_without": 369.33059702487844,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07726188122329543,
-    "dps_with": 369.33059702487844,
-    "dps_without": 342.8419806384325,
-    "ev_delta": 0.06533119991165963,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.0513880043554698,
-    "dps_with": 369.33059702487844,
-    "dps_without": 351.2790668096774,
-    "ev_delta": 0.0492111773223808,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.015996642364793145,
-    "dps_with": 369.33059702487844,
-    "dps_without": 363.51556848184,
-    "ev_delta": 0.019203896439525185,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-r4": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.04483581354427594,
-    "dps_with": 367.4600120750882,
-    "dps_without": 351.691631653203,
-    "ev_delta": 0.04524205810435656,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.018125813052647405,
-    "dps_with": 367.4600120750882,
-    "dps_without": 360.9180784576442,
-    "ev_delta": 0.01825920950378138,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.0057024443931748174,
-    "dps_with": 367.4600120750882,
-    "dps_without": 365.37647305491816,
-    "ev_delta": 0.0038131549169964783,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Cold Blood",
-    "ranks": 1,
-    "sim_delta": 0.0036013873125372614,
-    "dps_with": 367.4600120750882,
-    "dps_without": 366.1413951001797,
-    "ev_delta": 0.0030127034042106066,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04375343064014287,
-    "dps_with": 367.4600120750882,
-    "dps_without": 352.05633944572696,
-    "ev_delta": 0.04501621612417816,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.005288847367981609,
-    "dps_with": 367.4600120750882,
-    "dps_without": 365.5267966387585,
-    "ev_delta": 0.012689791997007208,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 5,
-    "sim_delta": 0.023137345699780626,
-    "dps_with": 367.4600120750882,
-    "dps_without": 359.1502290670094,
-    "ev_delta": 0.027225480763941,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.004000505070130038,
-    "dps_with": 367.4600120750882,
-    "dps_without": 365.9958438461352,
-    "ev_delta": 0.004587860589206589,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Poisons",
-    "ranks": 2,
-    "sim_delta": 0.013654354546577603,
-    "dps_with": 367.4600120750882,
-    "dps_without": 362.51016969138203,
-    "ev_delta": 0.015232085859783617,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.0674338352266501,
-    "dps_with": 367.4600120750882,
-    "dps_without": 344.2461724075523,
-    "ev_delta": 0.061328623222053395,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.05566246677270337,
-    "dps_with": 367.4600120750882,
-    "dps_without": 348.084755914891,
-    "ev_delta": 0.04665001823227933,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 1,
-    "sim_delta": 0.0025517855273596724,
-    "dps_with": 367.4600120750882,
-    "dps_without": 366.52471960019284,
-    "ev_delta": 0.005131219182739329,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 367.4600120750882,
-    "dps_without": 367.4600120750882,
-    "ev_delta": 3.049675154207622e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.04872652882088498,
-    "dps_with": 367.4600120750882,
-    "dps_without": 350.38687586956974,
-    "ev_delta": 0.047663372683454684,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Murder",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 367.4600120750882,
-    "dps_without": 367.4600120750882,
-    "ev_delta": 0.01199911118176494,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.03190825011149651,
-    "dps_with": 367.4600120750882,
-    "dps_without": 356.0975620026146,
-    "ev_delta": 0.03621490001989947,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 367.4600120750882,
-    "dps_without": 367.4600120750882,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07685364941171942,
-    "dps_with": 367.4600120750882,
-    "dps_without": 341.2348672225144,
-    "ev_delta": 0.06475487469023483,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.05144633336298141,
-    "dps_with": 367.4600120750882,
-    "dps_without": 349.4805207031268,
-    "ev_delta": 0.04878356817840282,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.01606917356002841,
-    "dps_with": 367.4600120750882,
-    "dps_without": 361.6486176700045,
-    "ev_delta": 0.019195639728842424,
-    "apl_dependent": false
-   }
-  ],
-  "cand-combat-swords-raid-r5": [
-   {
-    "talent": "Adrenaline Rush",
-    "ranks": 1,
-    "sim_delta": 0.041428584163365104,
-    "dps_with": 370.0392643104135,
-    "dps_without": 355.3189051438277,
-    "ev_delta": 0.04405333220770163,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Aggression",
-    "ranks": 3,
-    "sim_delta": 0.017832278980156924,
-    "dps_with": 370.0392643104135,
-    "dps_without": 363.5562282237539,
-    "ev_delta": 0.017791520146872537,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Blade Flurry",
-    "ranks": 1,
-    "sim_delta": 0.002103888101312583,
-    "dps_with": 370.0392643104135,
-    "dps_without": 369.26237758794383,
-    "ev_delta": 0.00373741825457217,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Dual Wield Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04336330299516914,
-    "dps_with": 370.0392643104135,
-    "dps_without": 354.6600338042815,
-    "ev_delta": 0.044086164776046016,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flawless Execution",
-    "ranks": 1,
-    "sim_delta": 0.0033756220072789092,
-    "dps_with": 370.0392643104135,
-    "dps_without": 368.7943539729821,
-    "ev_delta": 0.012366489579849484,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hack and Slash",
-    "ranks": 3,
-    "sim_delta": 0.012764693730850837,
-    "dps_with": 370.0392643104135,
-    "dps_without": 365.3753597464506,
-    "ev_delta": 0.015963466915041812,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Eviscerate",
-    "ranks": 3,
-    "sim_delta": 0.003928988958952881,
-    "dps_with": 370.0392643104135,
-    "dps_without": 368.59107405010207,
-    "ev_delta": 0.004471885508011766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Poisons",
-    "ranks": 5,
-    "sim_delta": 0.033339757046307164,
-    "dps_with": 370.0392643104135,
-    "dps_without": 358.1002877196284,
-    "ev_delta": 0.03861223065583704,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Sinister Strike",
-    "ranks": 2,
-    "sim_delta": 0.06682248315623987,
-    "dps_with": 370.0392643104135,
-    "dps_without": 346.8611415234112,
-    "ev_delta": 0.0596930876143849,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Slice and Dice",
-    "ranks": 3,
-    "sim_delta": 0.05579762951948779,
-    "dps_with": 370.0392643104135,
-    "dps_without": 350.48313612791964,
-    "ev_delta": 0.045422690840406586,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethality",
-    "ranks": 1,
-    "sim_delta": 0.0024311943530522136,
-    "dps_with": 370.0392643104135,
-    "dps_without": 369.1418088293122,
-    "ev_delta": 0.005001440327985509,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Reflexes",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 3.022670940653827e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Malice",
-    "ranks": 5,
-    "sim_delta": 0.04806491217550318,
-    "dps_with": 370.0392643104135,
-    "dps_without": 353.06903228189435,
-    "ev_delta": 0.04728608647031156,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Murder",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 0.011999265876404696,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Precision",
-    "ranks": 3,
-    "sim_delta": 0.028691774466322026,
-    "dps_with": 370.0392643104135,
-    "dps_without": 359.7183077529586,
-    "ev_delta": 0.0362145870064786,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Puncturing Wounds",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 370.0392643104135,
-    "dps_without": 370.0392643104135,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Relentless Strikes",
-    "ranks": 1,
-    "sim_delta": 0.07553633709846001,
-    "dps_with": 370.0392643104135,
-    "dps_without": 344.0509181760339,
-    "ev_delta": 0.0630225406956913,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ruthlessness",
-    "ranks": 3,
-    "sim_delta": 0.04908048233976721,
-    "dps_with": 370.0392643104135,
-    "dps_without": 352.72724117897405,
-    "ev_delta": 0.04749756136255604,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Weapon Expertise",
-    "ranks": 2,
-    "sim_delta": 0.01509404233593823,
-    "dps_with": 370.0392643104135,
-    "dps_without": 364.5369284789395,
-    "ev_delta": 0.0187488724553415,
-    "apl_dependent": false
-   }
-  ]
- }
+ "deltas": {}
 }

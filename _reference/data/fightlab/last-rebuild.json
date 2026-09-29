@@ -4303,7 +4303,7 @@
    "spec": "combat-swords-raid",
    "hand": "leveling-combat-swords",
    "opt": "opt-combat-swords-raid-leveling-st",
-   "started": "2026-09-29T13:52:25",
+   "started": "2026-09-29T22:28:05",
    "steps": [
     "raid",
     "adopt"
@@ -4313,7 +4313,19 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "cand-combat-swords-raid-preset-improved-expose-armor-ss": 388.8,
+        "opt-combat-swords-raid-raid-dps": 369.3,
+        "cand-combat-swords-raid-r5": 369.3,
+        "cand-combat-swords-raid-r3": 369.0,
+        "cand-combat-swords-raid-r1": 368.4,
+        "cand-combat-swords-raid-r4": 367.1,
+        "cand-combat-swords-raid-preset-sinister-strike": 366.4,
+        "cand-combat-swords-raid-r2": 366.4,
+        "cand-combat-swords-raid-hand-2026-09-28": 364.8
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
@@ -4507,6 +4519,7 @@
        "quick_race": {
         "cand-combat-daggers-raid-r1": 402.1,
         "opt-combat-daggers-raid-raid-dps": 399.5,
+        "cand-combat-daggers-raid-r5": 399.5,
         "cand-combat-daggers-raid-r3": 398.7,
         "cand-combat-daggers-raid-r4": 397.9,
         "cand-combat-daggers-raid-r2": 397.9,
@@ -4529,8 +4542,8 @@
        399.7
       ],
       [
-       "combat-daggers-raid",
-       399.0
+       "cand-combat-daggers-raid-r6",
+       399.7
       ]
      ],
      "promoted": "cand-combat-daggers-raid-r1",
@@ -4699,7 +4712,7 @@
      }
     }
    },
-   "seconds": 485,
+   "seconds": 249,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-swords-raid --preset-candidates",
@@ -4713,20 +4726,20 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py rogue --spec combat-swords-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 59,
+     "seconds": 24,
      "tail": [
       "Flawless Execution              0.6%      1.3%     1.3%   1.00    kept",
       "Improved Eviscerate             0.5%      0.5%     0.5%   1.00    kept",
       "Blade Flurry                    0.5%      0.4%     0.4%   1.00   noise",
-      "Cold Blood                      0.3%      0.6%     0.3%   0.55  fitted",
+      "Cold Blood                      0.3%      0.3%     0.3%   1.00   noise",
       "Deflection                      0.0%      0.0%     0.0%   1.00   noise",
-      "Endurance                       0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Sprint                 0.0%      0.0%     0.0%   1.00   noise",
-      "Riposte                         0.0%      0.0%     0.0%   1.00   noise",
       "Lightning Reflexes              0.0%      0.0%     0.0%   1.00   noise",
+      "Riposte                         0.0%      0.0%     0.0%   1.00   noise",
       "Murder                          0.0%      1.1%     1.1%   1.00 unmeasured",
       "Puncturing Wounds               0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/rogue.manual.json (16 entries, 2 fitted) and rogue/research/raid/raidsim/combat-swords-raid-calibration.json"
+      "Endurance                       0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Sprint                 0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/rogue.manual.json (16 entries, 0 fitted) and rogue/research/raid/raidsim/combat-swords-raid-calibration.json"
      ],
      "stderr": []
     },
@@ -4737,12 +4750,12 @@
      "tail": [
       "| Quietus | Subtlety 6 | 1/5 | +0.45% | no |",
       "| Vile Poisons | Assassination 4 | 1/5 | +0.41% | yes |",
+      "| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |",
+      "| Deflection | Combat 2 | 3/3 | +0.00% | yes |",
+      "| Riposte | Combat 3 | 1/1 | +0.00% | no |",
       "| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |",
       "| Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |",
-      "| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |",
       "| Mutilate | Assassination 5 | 1/1 | +0.00% | yes |",
-      "| Improved Kidney Shot | Assassination 5 | 1/2 | +0.00% | yes |",
-      "| Venom | Assassination 7 | 1/1 | +0.00% | no |",
       "",
       "exported opt-combat-swords-raid-raid-dps -> rogue/research/talents/forever/proposed-builds.json",
       "",
@@ -4751,15 +4764,34 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-swords-raid --builds combat-swords-raid opt-combat-swords-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-hand-2026-09-28.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-improved-expose-armor-ss.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-sinister-strike.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r5.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-swords-raid --builds opt-combat-swords-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-hand-2026-09-28.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-improved-expose-armor-ss.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-sinister-strike.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r5.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 10,
+     "seconds": 1,
+     "tail": [
+      "== rogue combat-swords-raid: 9 builds x 1000 iterations, rogue/dps combat_sinister_strike_p1_bis.gear.json + combat_sinister_strike.apl.json",
+      "  cand-combat-swords-raid-preset-improved-expose-armor-ss    19/32  DPS    388.8 ±  19.1  threat      276  oom   0.0s  scorer +60.8%",
+      "  opt-combat-swords-raid-raid-dps             20/31/0  DPS    369.3 ±  18.1  threat      262  oom   0.0s  scorer +65.4%",
+      "  cand-combat-swords-raid-r5                  20/31/0  DPS    369.3 ±  18.1  threat      262  oom   0.0s  scorer +65.4%",
+      "  cand-combat-swords-raid-r3                  18/33/0  DPS    369.0 ±  17.9  threat      262  oom   0.0s  scorer +63.7%",
+      "  cand-combat-swords-raid-r1                  20/31/0  DPS    368.4 ±  18.7  threat      262  oom   0.0s  scorer +64.7%",
+      "  cand-combat-swords-raid-r4                  18/33/0  DPS    367.1 ±  17.8  threat      261  oom   0.0s  scorer +64.0%",
+      "  cand-combat-swords-raid-preset-sinister-strike    18/33  DPS    366.4 ±  17.5  threat      260  oom   0.0s  scorer +62.9%",
+      "  cand-combat-swords-raid-r2                  18/33/0  DPS    366.4 ±  17.5  threat      260  oom   0.0s  scorer +62.9%",
+      "  cand-combat-swords-raid-hand-2026-09-28     18/33/0  DPS    364.8 ±  17.5  threat      259  oom   0.0s  scorer +63.4%",
+      "  damage shares of opt-combat-swords-raid-raid-dps: Auto Attack 54%, Sinister Strike 29%, Deadly Poison 6%, Dense Sharpening Stone 5%, Eviscerate 2%, Dragonbreath Chili 2%, item 10646 2% | model sources: white_mh 38%, sinister 31%, white_oh 21%, poisons 7%, eviscerate 3% (unmatched 8%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-swords-raid --builds combat-swords-raid opt-combat-swords-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-hand-2026-09-28.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-improved-expose-armor-ss.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-preset-sinister-strike.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r5.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-swords-raid-r6.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 4,
      "tail": [
       "  cand-combat-swords-raid-r1                  20/31/0  DPS    368.7 ±  18.1  threat      262  oom   0.0s  scorer +64.7%",
-      "  cand-combat-swords-raid-r4                  18/33/0  DPS    367.5 ±  17.9  threat      261  oom   0.0s  scorer +63.9%",
+      "  cand-combat-swords-raid-r4                  18/33/0  DPS    367.5 ±  17.9  threat      261  oom   0.0s  scorer +64.0%",
       "  cand-combat-swords-raid-r2                  18/33/0  DPS    366.3 ±  18.1  threat      260  oom   0.0s  scorer +62.9%",
       "  sim preset: Sinister Strike                          DPS    366.3 ±  18.1  threat      260  oom   0.0s",
-      "  cand-combat-swords-raid-hand-2026-09-28     18/33/0  DPS    365.4 ±  17.9  threat      259  oom   0.0s  scorer +63.3%",
+      "  cand-combat-swords-raid-hand-2026-09-28     18/33/0  DPS    365.4 ±  17.9  threat      259  oom   0.0s  scorer +63.4%",
       "  sim preset: Combat Dual-Wield 15/33/3                DPS    360.4 ±  17.4  threat      256  oom   0.0s",
       "  sim preset: Assassination Mutilate 31/20/0           DPS    335.5 ±  18.7  threat      238  oom   0.0s",
       "  sim preset: Mutilate                                 DPS    325.0 ±  18.3  threat      231  oom   0.0s",
@@ -4773,16 +4805,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py rogue --spec combat-swords-raid --profile parse --write --export --seed combat-swords-raid",
      "rc": 0,
-     "seconds": 42,
+     "seconds": 31,
      "tail": [
       "| Quietus | Subtlety 6 | 1/5 | +0.45% | no |",
       "| Vile Poisons | Assassination 4 | 1/5 | +0.40% | yes |",
+      "| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |",
+      "| Deflection | Combat 2 | 3/3 | +0.00% | yes |",
+      "| Riposte | Combat 3 | 1/1 | +0.00% | no |",
       "| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |",
       "| Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |",
-      "| Improved Expose Armor | Assassination 3 | 1/2 | +0.00% | yes |",
       "| Mutilate | Assassination 5 | 1/1 | +0.00% | yes |",
-      "| Improved Kidney Shot | Assassination 5 | 1/2 | +0.00% | yes |",
-      "| Venom | Assassination 7 | 1/1 | +0.00% | no |",
       "",
       "exported opt-combat-swords-raid-parse -> rogue/research/talents/forever/proposed-builds.json",
       "",
@@ -4793,10 +4825,10 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-swords-raid --env environments --builds combat-swords-raid opt-combat-swords-raid-raid-dps opt-combat-swords-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 103,
+     "seconds": 35,
      "tail": [
       "== rogue combat-swords-raid environments (gear raid combat_sinister_strike_p1_bis.gear.json, max combat_sinister_strike_p2_bis.gear.json):",
-      "  combat-swords-raid                            19/32  dummy   388.7  dummy60   460.1  ladder-mana   388.5  ladder-armor   446.6  ladder-physical   597.3  ladder-spell   601.6  raid   679.8  curve60   439.6  curve120   401.4  curve180   388.7  curve240   381.5  curve360   389.0  max   690.8  max60   784.6",
+      "  combat-swords-raid                          19/32/0  dummy   388.7  dummy60   460.1  ladder-mana   388.5  ladder-armor   446.6  ladder-physical   597.3  ladder-spell   601.6  raid   679.8  curve60   439.6  curve120   401.4  curve180   388.7  curve240   381.5  curve360   389.0  max   690.8  max60   784.6",
       "  sim preset: Improved Expose Armor (SS)               dummy   388.7  dummy60   460.1  ladder-mana   388.5  ladder-armor   446.6  ladder-physical   597.3  ladder-spell   601.6  raid   679.8  curve60   439.6  curve120   401.4  curve180   388.7  curve240   381.5  curve360   389.0  max   690.8  max60   784.6",
       "  opt-combat-swords-raid-raid-dps             20/31/0  dummy   370.3  dummy60   440.1  ladder-mana   370.8  ladder-armor   437.4  ladder-physical   581.9  ladder-spell   587.5  raid   688.1  curve60   417.8  curve120   381.2  curve180   370.3  curve240   363.6  curve360   370.8  max   698.7  max60   792.8",
       "  opt-combat-swords-raid-parse                20/31/0  dummy   370.3  dummy60   440.1  ladder-mana   370.8  ladder-armor   437.4  ladder-physical   581.9  ladder-spell   587.5  raid   688.1  curve60   417.8  curve120   381.2  curve180   370.3  curve240   363.6  curve360   370.8  max   698.7  max60   792.8",
@@ -4822,36 +4854,36 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py rogue --spec combat-daggers-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 47,
+     "seconds": 21,
      "tail": [
       "Improved Eviscerate             0.4%      0.3%     0.3%   1.00   noise",
       "Blade Flurry                    0.4%      0.4%     0.4%   1.00   noise",
-      "Flawless Execution              0.4%      1.4%     0.4%   0.29  fitted",
+      "Flawless Execution              0.4%      0.4%     0.4%   1.00   noise",
       "Cold Blood                      0.4%      0.3%     0.3%   1.00   noise",
-      "Endurance                       0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Sprint                 0.0%      0.0%     0.0%   1.00   noise",
+      "Deflection                      0.0%      0.0%     0.0%   1.00   noise",
       "Lightning Reflexes              0.0%      0.0%     0.0%   1.00   noise",
       "Murder                          0.0%      1.2%     1.2%   1.00 unmeasured",
+      "Endurance                       0.0%      0.0%     0.0%   1.00   noise",
       "Improved Sinister Strike        0.0%      0.0%     0.0%   1.00   noise",
       "Improved Gouge                  0.0%      0.0%     0.0%   1.00   noise",
       "Master of Deception             0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/rogue.manual.json (14 entries, 2 fitted) and rogue/research/raid/raidsim/combat-daggers-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/rogue.manual.json (13 entries, 0 fitted) and rogue/research/raid/raidsim/combat-daggers-raid-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py rogue --spec combat-daggers-raid --profile raid-dps --write --export --seed combat-daggers-raid /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json",
      "rc": 0,
-     "seconds": 31,
+     "seconds": 26,
      "tail": [
       "| Improved Expose Armor | Assassination 3 | 1/2 | +0.56% | yes |",
       "| Cutthroat | Subtlety 6 | 1/5 | +0.52% | no |",
       "| Cold Blood | Assassination 4 | 1/1 | +0.49% | yes |",
       "| Vile Poisons | Assassination 4 | 1/5 | +0.24% | yes |",
       "| Vigor | Assassination 5 | 1/2 | +0.20% | no |",
-      "| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |",
-      "| Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |",
-      "| Mutilate | Assassination 5 | 1/1 | +0.00% | no |",
+      "| Deflection | Combat 2 | 2/3 | +0.00% | yes |",
+      "| Riposte | Combat 3 | 1/1 | +0.00% | no |",
+      "| Quietus | Subtlety 6 | 1/5 | +0.00% | no |",
       "",
       "exported opt-combat-daggers-raid-raid-dps -> rogue/research/talents/forever/proposed-builds.json",
       "",
@@ -4860,13 +4892,14 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json --iterations 1000 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r5.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 2,
+     "seconds": 1,
      "tail": [
-      "== rogue combat-daggers-raid: 6 builds x 1000 iterations, rogue/dps combat_backstab_p1_bis.gear.json + combat_backstab.apl.json",
+      "== rogue combat-daggers-raid: 7 builds x 1000 iterations, rogue/dps combat_backstab_p1_bis.gear.json + combat_backstab.apl.json",
       "  cand-combat-daggers-raid-r1                 16/33/2  DPS    402.1 ±  19.2  threat      285  oom   0.0s  scorer +77.2%",
       "  opt-combat-daggers-raid-raid-dps            17/32/2  DPS    399.5 ±  18.8  threat      284  oom   0.0s  scorer +78.1%",
+      "  cand-combat-daggers-raid-r5                 17/32/2  DPS    399.5 ±  18.8  threat      284  oom   0.0s  scorer +78.1%",
       "  cand-combat-daggers-raid-r3                 16/33/2  DPS    398.7 ±  18.3  threat      283  oom   0.0s  scorer +77.9%",
       "  cand-combat-daggers-raid-r4                 17/32/2  DPS    397.9 ±  18.4  threat      282  oom   0.0s  scorer +77.8%",
       "  cand-combat-daggers-raid-r2                 16/33/2  DPS    397.9 ±  18.7  threat      282  oom   0.0s  scorer +77.4%",
@@ -4876,9 +4909,9 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds combat-daggers-raid opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r5.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds combat-daggers-raid opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r5.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r6.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 4,
      "tail": [
       "  cand-combat-daggers-raid-r3                 16/33/2  DPS    399.0 ±  18.6  threat      283  oom   0.0s  scorer +77.9%",
       "  cand-combat-daggers-raid-r2                 16/33/2  DPS    398.3 ±  18.5  threat      283  oom   0.0s  scorer +77.4%",
@@ -4896,9 +4929,9 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds combat-daggers-raid opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r5.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --builds combat-daggers-raid opt-combat-daggers-raid-raid-dps /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-preset-combat-dual-wield-15-33-3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r1.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r2.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r3.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r4.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r5.json /home/user/wow-forever/rogue/research/raid/raidsim/candidates/cand-combat-daggers-raid-r6.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 10,
+     "seconds": 4,
      "tail": [
       "  cand-combat-daggers-raid-r3                 16/33/2  DPS    399.0 ±  18.6  threat      283  oom   0.0s  scorer +77.9%",
       "  cand-combat-daggers-raid-r2                 16/33/2  DPS    398.3 ±  18.5  threat      283  oom   0.0s  scorer +77.4%",
@@ -4918,16 +4951,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py rogue --spec combat-daggers-raid --profile parse --write --export --seed combat-daggers-raid",
      "rc": 0,
-     "seconds": 41,
+     "seconds": 22,
      "tail": [
       "| Improved Expose Armor | Assassination 3 | 1/2 | +0.56% | yes |",
       "| Cutthroat | Subtlety 6 | 1/5 | +0.52% | no |",
       "| Cold Blood | Assassination 4 | 1/1 | +0.48% | yes |",
       "| Vile Poisons | Assassination 4 | 1/5 | +0.23% | yes |",
       "| Vigor | Assassination 5 | 1/2 | +0.20% | no |",
-      "| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |",
-      "| Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |",
-      "| Mutilate | Assassination 5 | 1/1 | +0.00% | no |",
+      "| Deflection | Combat 2 | 2/3 | +0.00% | yes |",
+      "| Riposte | Combat 3 | 1/1 | +0.00% | no |",
+      "| Quietus | Subtlety 6 | 1/5 | +0.00% | no |",
       "",
       "exported opt-combat-daggers-raid-parse -> rogue/research/talents/forever/proposed-builds.json",
       "",
@@ -4938,7 +4971,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py rogue --spec combat-daggers-raid --env environments --builds combat-daggers-raid opt-combat-daggers-raid-raid-dps opt-combat-daggers-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 97,
+     "seconds": 40,
      "tail": [
       "== rogue combat-daggers-raid environments (gear raid combat_backstab_p1_bis.gear.json, max combat_backstab_p2_bis.gear.json):",
       "  opt-combat-daggers-raid-raid-dps            16/33/2  dummy   402.6  dummy60   469.7  ladder-mana   402.1  ladder-armor   480.0  ladder-physical   612.1  ladder-spell   617.4  raid   719.8  curve60   453.0  curve120   414.4  curve180   402.6  curve240   396.7  curve360   404.5  max   729.1  max60   826.5",
@@ -7393,9 +7426,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:28:05",
+  "date": "2026-09-29T22:32:13",
   "classes": [
-   "warrior"
+   "rogue"
   ],
   "steps": [
    "raid",
@@ -7407,7 +7440,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 245,
+  "seconds": 249,
   "refresh": null,
   "regen_log": []
  }

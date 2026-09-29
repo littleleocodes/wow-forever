@@ -36,16 +36,16 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Cold Blood | Assassination | 4 | +0.21% | manual |
 | Improved Eviscerate | Combat | 1 | +0.13% | manual |
 | Vigor | Assassination | 5 | +0.09% | manual |
-| Improved Gouge | Assassination | 1 | +0.00% | manual |
-| Remorseless Attacks | Assassination | 1 | +0.00% | manual |
-| Mutilate | Assassination | 5 | +0.00% | manual |
+| Lightning Reflexes | Combat | 1 | +0.00% | manual |
+| Deflection | Combat | 2 | +0.00% | manual |
+| Riposte | Combat | 3 | +0.00% | manual |
 
-## Optimized build: 17/32/2  score +77.57%  (dps x1.776, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 17/32/2  score +77.58%  (dps x1.776, sustain x1.000, surv x1.000, utility +0.00%)
 Absolute DPS index (character alone, no talents = 1.00): 1.531  — use this to compare models with different pet shares.
 
 ```
   Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 3
-  Combat: Improved Eviscerate 3, Improved Sinister Strike 2, Lightning Reflexes 3, Puncturing Wounds 3, Precision 3, Endurance 1, Dual Wield Specialization 5, Hack and Slash 5, Blade Flurry 1, Aggression 3, Weapon Expertise 2, Adrenaline Rush 1
+  Combat: Improved Eviscerate 3, Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 1, Dual Wield Specialization 5, Hack and Slash 5, Blade Flurry 1, Aggression 3, Weapon Expertise 2, Adrenaline Rush 1
   Subtlety: Opportunity 2
 ```
 
@@ -65,7 +65,7 @@ Absolute DPS index (character alone, no talents = 1.00): 1.531  — use this to 
 | Cold Blood | Assassination 4 | 1/1 | +0.48% | yes |
 | Vile Poisons | Assassination 4 | 1/5 | +0.23% | yes |
 | Vigor | Assassination 5 | 1/2 | +0.20% | no |
-| Improved Gouge | Assassination 1 | 1/3 | +0.00% | yes |
-| Remorseless Attacks | Assassination 1 | 1/2 | +0.00% | yes |
-| Mutilate | Assassination 5 | 1/1 | +0.00% | no |
+| Deflection | Combat 2 | 2/3 | +0.00% | yes |
+| Riposte | Combat 3 | 1/1 | +0.00% | no |
+| Quietus | Subtlety 6 | 1/5 | +0.00% | no |
 

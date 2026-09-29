@@ -4,7 +4,7 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `combat-swords-raid` | 19/32 | 389 | 460 | 680 | 691 | 785 |
+| `combat-swords-raid` | 19/32/0 | 389 | 460 | 680 | 691 | 785 |
 | sim preset: Improved Expose Armor (SS) | - | 389 | 460 | 680 | 691 | 785 |
 | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 370 | 440 | 688 | 699 | 793 |
 | `opt-combat-swords-raid-parse` | 20/31/0 | 370 | 440 | 688 | 699 | 793 |

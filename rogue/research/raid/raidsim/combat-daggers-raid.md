@@ -7,6 +7,7 @@
 | `opt-combat-daggers-raid-raid-dps` | 16/33/2 | 403 | 19 | +0.0% | 286 | 0 | +77.2% |
 | `cand-combat-daggers-raid-r1` | 16/33/2 | 403 | 19 | +0.0% | 286 | 0 | +77.2% |
 | `cand-combat-daggers-raid-r5` | 17/32/2 | 400 | 19 | -0.7% | 284 | 0 | +78.1% |
+| `cand-combat-daggers-raid-r6` | 17/32/2 | 400 | 19 | -0.7% | 284 | 0 | +78.1% |
 | `combat-daggers-raid` | 16/33/2 | 399 | 19 | -0.9% | 283 | 0 | +77.9% |
 | `cand-combat-daggers-raid-r3` | 16/33/2 | 399 | 19 | -0.9% | 283 | 0 | +77.9% |
 | `cand-combat-daggers-raid-r2` | 16/33/2 | 398 | 19 | -1.1% | 283 | 0 | +77.4% |
@@ -39,7 +40,8 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - opt-combat-daggers-raid-raid-dps: `00530310301-32330310001515231-002`
 - cand-combat-daggers-raid-r1: `00530310301-32330310001515231-002`
 - cand-combat-daggers-raid-r5: `005323103-32330310000515231-002`
-- combat-daggers-raid: `005323102-30230320201515231-002`
+- cand-combat-daggers-raid-r6: `005323103-30531300000515231-002`
+- combat-daggers-raid: `005323102-30531300001515231-002`
 - cand-combat-daggers-raid-r3: `005323102-32330310001515231-002`
 - cand-combat-daggers-raid-r2: `00532310101-32330310001515231-002`
 - cand-combat-daggers-raid-r4: `005323103-32330310001415231-002`
