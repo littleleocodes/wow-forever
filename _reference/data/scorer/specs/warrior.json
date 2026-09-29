@@ -124,11 +124,11 @@
       }
     },
     "arms-2h-raid": {
-      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, arms-2h-raid in the ElliotWood/Forever simulator 40be98e): white 53%, execute 20%, whirlwind 12%, bloodthirst 9%, deep_wounds 7%; 1% of the damage matched no source.",
+      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, arms-2h-raid in the ElliotWood/Forever simulator 40be98e): white 53%, execute 20%, whirlwind 11%, bloodthirst 9%, deep_wounds 7%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.5262,
+          "share": 0.5282,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
           "profile_overrides": {
             "leveling-st": {"share": 0.467},
@@ -162,7 +162,7 @@
         },
         {
           "id": "execute",
-          "share": 0.197,
+          "share": 0.1955,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Execute", "weapon:2h"],
           "cost": 15,
           "min_level": 24,
@@ -174,7 +174,7 @@
         },
         {
           "id": "bloodthirst",
-          "share": 0.0869,
+          "share": 0.0921,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Bloodthirst", "weapon:2h"],
           "enabled_by": "Bloodthirst",
           "displaces": ["heroic_strike"],
@@ -187,7 +187,7 @@
         },
         {
           "id": "whirlwind",
-          "share": 0.1197,
+          "share": 0.1143,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Whirlwind", "weapon:2h"],
           "cost": 25,
           "cooldown": 10,
@@ -230,7 +230,7 @@
         },
         {
           "id": "deep_wounds",
-          "share": 0.0702,
+          "share": 0.0699,
           "min_level": 20,
           "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "weapon:2h", "ability:Deep Wound"],
           "can_crit": false,

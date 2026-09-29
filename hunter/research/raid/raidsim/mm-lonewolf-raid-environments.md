@@ -5,7 +5,7 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 420 | 451 | 841 | 841 | 863 |
-| `mm-lone-wolf-raid` | 5/41/5 | 419 | 449 | 877 | 877 | 916 |
+| `mm-lone-wolf-raid` | 11/40/0 | 419 | 449 | 824 | 824 | 862 |
 | `opt-mm-lonewolf-raid-parse` | 5/37/9 | 410 | 440 | 821 | 841 | 863 |
 | sim preset: Marksmanship | - | 342 | 367 | 707 | 707 | 750 |
 | sim preset: Marksmanship 0/39/12 | - | 323 | 346 | 666 | 666 | 716 |
@@ -25,7 +25,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `opt-mm-lonewolf-raid-raid-dps` | 420 | +29% | +40% | +7% | +11% | +13% | 841 |
-| `mm-lone-wolf-raid` | 419 | +25% | +41% | +7% | +7% | +29% | 877 |
+| `mm-lone-wolf-raid` | 419 | +25% | +41% | +7% | +7% | +17% | 824 |
 | `opt-mm-lonewolf-raid-parse` | 410 | +29% | +40% | +7% | +11% | +13% | 821 |
 | sim preset: Marksmanship | 342 | +28% | +41% | +7% | +11% | +20% | 707 |
 | sim preset: Marksmanship 0/39/12 | 323 | +28% | +40% | +7% | +10% | +21% | 666 |

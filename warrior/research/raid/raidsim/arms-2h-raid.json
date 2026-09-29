@@ -23,7 +23,7 @@
    "foodId": 20452
   },
   "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
-  "iterations": 3000,
+  "iterations": 1500,
   "seed": 1,
   "duration": 180.0
  },
@@ -31,60 +31,59 @@
  "results": [
   {
    "label": "arms-2h-raid",
-   "talents": "30305013031-250500030052310051",
+   "talents": "03305013031-550500000052310051",
    "split": "19/32/0",
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "412609": 12.394666666666666,
+    "11597": 16.954666666666668,
+    "1680": 9.802666666666667,
     "2687": 2.0,
-    "7373": 0.0003333333333333333,
-    "20662": 11.839666666666666,
-    "412609": 12.386666666666667,
+    "20662": 11.855333333333334,
+    "12328": 1.0,
     "1719": 1.0,
-    "1680": 10.399333333333333,
     "25289": 1.0,
-    "23894": 8.602666666666666,
-    "11597": 17.346666666666668
+    "23894": 8.888
    },
    "casts": {
+    "Deep Wound": 12.394666666666666,
+    "Sunder Armor": 16.954666666666668,
+    "Whirlwind": 9.802666666666667,
+    "Auto Attack": 53.076,
     "Bloodrage": 2.0,
-    "Hamstring": 0.0003333333333333333,
-    "Execute": 11.839666666666666,
-    "OtherActionRageGain": 110.01766666666667,
-    "Deep Wound": 12.386666666666667,
+    "OtherActionRageGain": 109.862,
+    "Execute": 11.855333333333334,
+    "Death Wish": 1.0,
     "Recklessness": 1.0,
-    "Whirlwind": 10.399333333333333,
     "Battle Shout": 1.0,
-    "Bloodthirst": 8.602666666666666,
-    "Sunder Armor": 17.346666666666668,
-    "Auto Attack": 53.156333333333336
+    "Bloodthirst": 8.888
    },
-   "dps": 167.69102164179722,
-   "dps_stdev": 16.026247221215385,
-   "threat": 162.90987181213205,
+   "dps": 172.6740098947958,
+   "dps_stdev": 16.15749897982584,
+   "threat": 166.6445023471616,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6155372079299926,
+   "scorer": 0.6119286669683763,
    "shares": {
-    "Auto Attack": 0.5224234568735732,
-    "Execute": 0.1951752084256864,
-    "Whirlwind": 0.1188462927576526,
-    "Bloodthirst": 0.0859377419209694,
-    "Deep Wound": 0.0694863840190526,
-    "Dragonbreath Chili": 0.008130512737425998,
-    "Hamstring": 4.032656397411941e-07
+    "Auto Attack": 0.5240272839807906,
+    "Execute": 0.19398832445813982,
+    "Whirlwind": 0.1133934010946862,
+    "Bloodthirst": 0.09133708158811382,
+    "Deep Wound": 0.06936236153910696,
+    "Dragonbreath Chili": 0.007891547339162676
    },
    "source_shares": {
-    "white": 0.5267,
-    "execute": 0.1968,
-    "whirlwind": 0.1198,
-    "bloodthirst": 0.0866,
-    "deep_wounds": 0.0701
+    "white": 0.5282,
+    "execute": 0.1955,
+    "whirlwind": 0.1143,
+    "bloodthirst": 0.0921,
+    "deep_wounds": 0.0699
    },
-   "unmatched_share": 0.0081
+   "unmatched_share": 0.0079
   },
   {
    "label": "opt-arms-2h-raid-raid-dps",
@@ -93,57 +92,54 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20662": 10.909333333333333,
     "25289": 1.0,
-    "23894": 8.602666666666666,
-    "11597": 17.346666666666668,
-    "12328": 0.733,
+    "20662": 11.394,
+    "12328": 1.0,
+    "412609": 12.364666666666666,
+    "1680": 9.802666666666667,
     "1719": 1.0,
-    "7373": 0.0003333333333333333,
-    "1680": 10.399333333333333,
-    "412609": 12.316,
+    "11597": 16.954666666666668,
+    "23894": 8.888,
     "2687": 2.0
    },
    "casts": {
-    "Auto Attack": 53.145,
-    "OtherActionRageGain": 109.987,
-    "Execute": 10.909333333333333,
     "Battle Shout": 1.0,
-    "Bloodthirst": 8.602666666666666,
-    "Sunder Armor": 17.346666666666668,
-    "Death Wish": 0.733,
+    "Execute": 11.394,
+    "Death Wish": 1.0,
+    "Auto Attack": 53.06733333333333,
+    "Deep Wound": 12.364666666666666,
+    "Whirlwind": 9.802666666666667,
     "Recklessness": 1.0,
-    "Hamstring": 0.0003333333333333333,
-    "Whirlwind": 10.399333333333333,
-    "Deep Wound": 12.316,
+    "Sunder Armor": 16.954666666666668,
+    "Bloodthirst": 8.888,
+    "OtherActionRageGain": 109.89066666666666,
     "Bloodrage": 2.0
    },
-   "dps": 169.19023336788248,
-   "dps_stdev": 16.774776797147034,
-   "threat": 164.0737108411529,
+   "dps": 171.40747426396302,
+   "dps_stdev": 16.29081417475675,
+   "threat": 165.33964766611194,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6211035444767485,
+   "scorer": 0.6211435444767486,
    "shares": {
-    "Auto Attack": 0.5255515053446795,
-    "Execute": 0.1905244304424409,
-    "Whirlwind": 0.11971483139530038,
-    "Bloodthirst": 0.08626323549307706,
-    "Deep Wound": 0.06995230984014283,
-    "Dragonbreath Chili": 0.007993287792097088,
-    "Hamstring": 3.9969226222529086e-07
+    "Auto Attack": 0.5277710989119528,
+    "Execute": 0.18504270026842512,
+    "Whirlwind": 0.11605701254356383,
+    "Bloodthirst": 0.09348777101533905,
+    "Deep Wound": 0.06971845991546109,
+    "Dragonbreath Chili": 0.007922957345258214
    },
    "source_shares": {
-    "white": 0.5298,
-    "execute": 0.1921,
-    "whirlwind": 0.1207,
-    "bloodthirst": 0.087,
-    "deep_wounds": 0.0705
+    "white": 0.532,
+    "execute": 0.1865,
+    "whirlwind": 0.117,
+    "bloodthirst": 0.0942,
+    "deep_wounds": 0.0703
    },
-   "unmatched_share": 0.008
+   "unmatched_share": 0.0079
   },
   {
    "label": "cand-arms-2h-raid-hand-2026-09-26",
@@ -152,52 +148,109 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "2687": 2.0,
+    "1680": 9.876,
     "25289": 1.0,
-    "20662": 11.012666666666666,
-    "412609": 14.208666666666666,
+    "11597": 16.474666666666668,
+    "20662": 10.986,
+    "2687": 2.0,
     "1719": 1.0,
-    "11597": 16.504666666666665,
-    "1680": 9.913333333333334,
-    "21553": 6.568666666666667
+    "412609": 14.155333333333333,
+    "21553": 6.614
    },
    "casts": {
-    "Bloodrage": 2.0,
-    "Battle Shout": 1.0,
-    "Execute": 11.012666666666666,
-    "OtherActionRageGain": 106.715,
-    "Deep Wound": 14.208666666666666,
-    "Recklessness": 1.0,
-    "Sunder Armor": 16.504666666666665,
+    "Whirlwind": 9.876,
     "Auto Attack": 48.0,
-    "Whirlwind": 9.913333333333334,
-    "Mortal Strike": 6.568666666666667
+    "Battle Shout": 1.0,
+    "OtherActionRageGain": 106.80133333333333,
+    "Sunder Armor": 16.474666666666668,
+    "Execute": 10.986,
+    "Bloodrage": 2.0,
+    "Recklessness": 1.0,
+    "Deep Wound": 14.155333333333333,
+    "Mortal Strike": 6.614
    },
-   "dps": 163.80052740518803,
-   "dps_stdev": 14.611223688702923,
-   "threat": 158.54125387996814,
+   "dps": 163.6986696953284,
+   "dps_stdev": 14.831406741994998,
+   "threat": 158.4283276856939,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.4202888355276606,
+   "scorer": 0.4204388355276606,
    "shares": {
-    "Auto Attack": 0.4892286851830246,
-    "Execute": 0.198256602471638,
-    "Whirlwind": 0.1200899992555968,
-    "Mortal Strike": 0.10745006289088875,
-    "Deep Wound": 0.07757755604417416,
-    "Dragonbreath Chili": 0.007397094154677726
+    "Auto Attack": 0.4889841996611349,
+    "Execute": 0.19817873985081136,
+    "Whirlwind": 0.11938964788790694,
+    "Mortal Strike": 0.10845226476213723,
+    "Deep Wound": 0.0775736509187522,
+    "Dragonbreath Chili": 0.007421496919257461
    },
    "source_shares": {
-    "white": 0.4929,
+    "white": 0.4926,
     "execute": 0.1997,
-    "whirlwind": 0.121,
-    "mortal_strike": 0.1083,
+    "whirlwind": 0.1203,
+    "mortal_strike": 0.1093,
     "deep_wounds": 0.0782
    },
    "unmatched_share": 0.0074
+  },
+  {
+   "label": "cand-arms-2h-raid-preset-dps",
+   "talents": "30305013-050520035150310051",
+   "split": "15/36",
+   "ours": false,
+   "measured": true,
+   "preset": "DPS",
+   "spell_casts": {
+    "11597": 16.954666666666668,
+    "1680": 9.802666666666667,
+    "25289": 1.0,
+    "20662": 10.683333333333334,
+    "1719": 1.0,
+    "2687": 2.0,
+    "412609": 12.216666666666667,
+    "23894": 8.888,
+    "12328": 1.0
+   },
+   "casts": {
+    "Sunder Armor": 16.954666666666668,
+    "Whirlwind": 9.802666666666667,
+    "Battle Shout": 1.0,
+    "Execute": 10.683333333333334,
+    "Recklessness": 1.0,
+    "Bloodrage": 2.0,
+    "Auto Attack": 53.010666666666665,
+    "Deep Wound": 12.216666666666667,
+    "OtherActionRageGain": 109.80333333333333,
+    "Bloodthirst": 8.888,
+    "Death Wish": 1.0
+   },
+   "dps": 161.567710338521,
+   "dps_stdev": 15.107395631730586,
+   "threat": 156.34802341459113,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.553738856381339,
+   "shares": {
+    "Auto Attack": 0.5422229151789423,
+    "Execute": 0.16915488143688417,
+    "Whirlwind": 0.11577788688467833,
+    "Bloodthirst": 0.09325242104013975,
+    "Deep Wound": 0.07126834531047536,
+    "Dragonbreath Chili": 0.008323550148880051
+   },
+   "source_shares": {
+    "white": 0.5468,
+    "execute": 0.1706,
+    "whirlwind": 0.1167,
+    "bloodthirst": 0.094,
+    "deep_wounds": 0.0719
+   },
+   "unmatched_share": 0.0083
   },
   {
    "label": "cand-arms-2h-raid-r1",
@@ -206,55 +259,54 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "412609": 12.386666666666667,
-    "23894": 8.602666666666666,
     "2687": 2.0,
-    "1680": 10.399333333333333,
-    "1719": 1.0,
+    "20662": 11.855333333333334,
     "25289": 1.0,
-    "7373": 0.0003333333333333333,
-    "11597": 17.346666666666668,
-    "20662": 11.839666666666666
+    "412609": 12.394666666666666,
+    "1680": 9.802666666666667,
+    "12328": 1.0,
+    "23894": 8.888,
+    "11597": 16.954666666666668,
+    "1719": 1.0
    },
    "casts": {
-    "Deep Wound": 12.386666666666667,
-    "Bloodthirst": 8.602666666666666,
     "Bloodrage": 2.0,
-    "Auto Attack": 53.156333333333336,
-    "OtherActionRageGain": 110.01766666666667,
-    "Whirlwind": 10.399333333333333,
-    "Recklessness": 1.0,
+    "Execute": 11.855333333333334,
     "Battle Shout": 1.0,
-    "Hamstring": 0.0003333333333333333,
-    "Sunder Armor": 17.346666666666668,
-    "Execute": 11.839666666666666
+    "Deep Wound": 12.394666666666666,
+    "Whirlwind": 9.802666666666667,
+    "Death Wish": 1.0,
+    "Bloodthirst": 8.888,
+    "Sunder Armor": 16.954666666666668,
+    "OtherActionRageGain": 109.862,
+    "Auto Attack": 53.076,
+    "Recklessness": 1.0
    },
-   "dps": 167.69102164179722,
-   "dps_stdev": 16.026247221215385,
-   "threat": 162.90987181213205,
+   "dps": 172.6740098947958,
+   "dps_stdev": 16.15749897982584,
+   "threat": 166.6445023471616,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6155372079299926,
+   "scorer": 0.6155772079299926,
    "shares": {
-    "Auto Attack": 0.5224234568735733,
-    "Execute": 0.19517520842568645,
-    "Whirlwind": 0.11884629275765263,
-    "Bloodthirst": 0.08593774192096941,
-    "Deep Wound": 0.06948638401905263,
-    "Dragonbreath Chili": 0.008130512737426,
-    "Hamstring": 4.032656397411942e-07
+    "Auto Attack": 0.5240272839807906,
+    "Execute": 0.19398832445813982,
+    "Whirlwind": 0.1133934010946862,
+    "Bloodthirst": 0.09133708158811382,
+    "Deep Wound": 0.06936236153910696,
+    "Dragonbreath Chili": 0.007891547339162676
    },
    "source_shares": {
-    "white": 0.5267,
-    "execute": 0.1968,
-    "whirlwind": 0.1198,
-    "bloodthirst": 0.0866,
-    "deep_wounds": 0.0701
+    "white": 0.5282,
+    "execute": 0.1955,
+    "whirlwind": 0.1143,
+    "bloodthirst": 0.0921,
+    "deep_wounds": 0.0699
    },
-   "unmatched_share": 0.0081
+   "unmatched_share": 0.0079
   },
   {
    "label": "cand-arms-2h-raid-r2",
@@ -263,52 +315,54 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1680": 10.038333333333334,
-    "23894": 6.810333333333333,
+    "23894": 7.306666666666667,
+    "20662": 11.088,
+    "412609": 10.922,
+    "25289": 1.0,
+    "11597": 16.131333333333334,
+    "12328": 1.0,
     "2687": 2.0,
-    "20662": 11.083333333333334,
-    "1719": 1.0,
-    "412609": 11.237333333333334,
-    "11597": 16.423333333333332,
-    "25289": 1.0
+    "1680": 9.226,
+    "1719": 1.0
    },
    "casts": {
-    "Whirlwind": 10.038333333333334,
-    "OtherActionRageGain": 107.279,
-    "Bloodthirst": 6.810333333333333,
-    "Bloodrage": 2.0,
-    "Execute": 11.083333333333334,
-    "Recklessness": 1.0,
+    "Bloodthirst": 7.306666666666667,
     "Auto Attack": 48.0,
-    "Deep Wound": 11.237333333333334,
-    "Sunder Armor": 16.423333333333332,
-    "Battle Shout": 1.0
+    "OtherActionRageGain": 107.34066666666666,
+    "Execute": 11.088,
+    "Deep Wound": 10.922,
+    "Battle Shout": 1.0,
+    "Sunder Armor": 16.131333333333334,
+    "Death Wish": 1.0,
+    "Bloodrage": 2.0,
+    "Whirlwind": 9.226,
+    "Recklessness": 1.0
    },
-   "dps": 153.25318354608885,
-   "dps_stdev": 12.9285509921236,
-   "threat": 150.26226365672278,
+   "dps": 155.86310756327862,
+   "dps_stdev": 12.740667023883464,
+   "threat": 151.77513078248373,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.4683411375095079,
+   "scorer": 0.4683811375095079,
    "shares": {
-    "Auto Attack": 0.5106177594204664,
-    "Execute": 0.20876714101908248,
-    "Whirlwind": 0.12815295093008816,
-    "Bloodthirst": 0.07449705789316341,
-    "Deep Wound": 0.06968607295233163,
-    "Dragonbreath Chili": 0.008279017784867797
+    "Auto Attack": 0.5154555150556464,
+    "Execute": 0.20436498103120254,
+    "Whirlwind": 0.11629532999141799,
+    "Bloodthirst": 0.08503109959181247,
+    "Deep Wound": 0.07071382759082567,
+    "Dragonbreath Chili": 0.008139246739095014
    },
    "source_shares": {
-    "white": 0.5149,
-    "execute": 0.2105,
-    "whirlwind": 0.1292,
-    "bloodthirst": 0.0751,
-    "deep_wounds": 0.0703
+    "white": 0.5197,
+    "execute": 0.206,
+    "whirlwind": 0.1172,
+    "bloodthirst": 0.0857,
+    "deep_wounds": 0.0713
    },
-   "unmatched_share": 0.0083
+   "unmatched_share": 0.0081
   },
   {
    "label": "cand-arms-2h-raid-r3",
@@ -317,55 +371,54 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1719": 1.0,
-    "23894": 8.602666666666666,
-    "20662": 11.839666666666666,
-    "7373": 0.0003333333333333333,
-    "1680": 10.399333333333333,
-    "25289": 1.0,
+    "11597": 16.954666666666668,
     "2687": 2.0,
-    "412609": 12.386666666666667,
-    "11597": 17.346666666666668
+    "20662": 11.855333333333334,
+    "12328": 1.0,
+    "1719": 1.0,
+    "1680": 9.802666666666667,
+    "25289": 1.0,
+    "412609": 12.394666666666666,
+    "23894": 8.888
    },
    "casts": {
-    "Recklessness": 1.0,
-    "Bloodthirst": 8.602666666666666,
-    "OtherActionRageGain": 110.01766666666667,
-    "Execute": 11.839666666666666,
-    "Hamstring": 0.0003333333333333333,
-    "Whirlwind": 10.399333333333333,
-    "Battle Shout": 1.0,
-    "Auto Attack": 53.156333333333336,
+    "Sunder Armor": 16.954666666666668,
+    "Auto Attack": 53.076,
     "Bloodrage": 2.0,
-    "Deep Wound": 12.386666666666667,
-    "Sunder Armor": 17.346666666666668
+    "Execute": 11.855333333333334,
+    "OtherActionRageGain": 109.862,
+    "Death Wish": 1.0,
+    "Recklessness": 1.0,
+    "Whirlwind": 9.802666666666667,
+    "Battle Shout": 1.0,
+    "Deep Wound": 12.394666666666666,
+    "Bloodthirst": 8.888
    },
-   "dps": 167.69102164179722,
-   "dps_stdev": 16.026247221215385,
-   "threat": 162.90987181213205,
+   "dps": 172.6740098947958,
+   "dps_stdev": 16.15749897982584,
+   "threat": 166.6445023471616,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6155372079299926,
+   "scorer": 0.6155772079299926,
    "shares": {
-    "Auto Attack": 0.5224234568735732,
-    "Execute": 0.1951752084256864,
-    "Whirlwind": 0.1188462927576526,
-    "Bloodthirst": 0.0859377419209694,
-    "Deep Wound": 0.0694863840190526,
-    "Dragonbreath Chili": 0.008130512737425998,
-    "Hamstring": 4.032656397411941e-07
+    "Auto Attack": 0.5240272839807906,
+    "Execute": 0.19398832445813985,
+    "Whirlwind": 0.11339340109468621,
+    "Bloodthirst": 0.09133708158811382,
+    "Deep Wound": 0.06936236153910698,
+    "Dragonbreath Chili": 0.007891547339162678
    },
    "source_shares": {
-    "white": 0.5267,
-    "execute": 0.1968,
-    "whirlwind": 0.1198,
-    "bloodthirst": 0.0866,
-    "deep_wounds": 0.0701
+    "white": 0.5282,
+    "execute": 0.1955,
+    "whirlwind": 0.1143,
+    "bloodthirst": 0.0921,
+    "deep_wounds": 0.0699
    },
-   "unmatched_share": 0.0081
+   "unmatched_share": 0.0079
   },
   {
    "label": "cand-arms-2h-raid-r4",
@@ -374,55 +427,54 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1680": 10.399333333333333,
     "2687": 2.0,
-    "25289": 1.0,
-    "11597": 17.346666666666668,
-    "20662": 11.839666666666666,
-    "23894": 8.602666666666666,
-    "7373": 0.0003333333333333333,
-    "412609": 12.386666666666667,
-    "1719": 1.0
+    "20662": 11.855333333333334,
+    "12328": 1.0,
+    "23894": 8.888,
+    "1719": 1.0,
+    "11597": 16.954666666666668,
+    "1680": 9.802666666666667,
+    "412609": 12.394666666666666,
+    "25289": 1.0
    },
    "casts": {
-    "Auto Attack": 53.156333333333336,
-    "Whirlwind": 10.399333333333333,
     "Bloodrage": 2.0,
-    "Battle Shout": 1.0,
-    "Sunder Armor": 17.346666666666668,
-    "Execute": 11.839666666666666,
-    "OtherActionRageGain": 110.01766666666667,
-    "Bloodthirst": 8.602666666666666,
-    "Hamstring": 0.0003333333333333333,
-    "Deep Wound": 12.386666666666667,
-    "Recklessness": 1.0
+    "Execute": 11.855333333333334,
+    "Death Wish": 1.0,
+    "Bloodthirst": 8.888,
+    "Recklessness": 1.0,
+    "OtherActionRageGain": 109.862,
+    "Sunder Armor": 16.954666666666668,
+    "Whirlwind": 9.802666666666667,
+    "Auto Attack": 53.076,
+    "Deep Wound": 12.394666666666666,
+    "Battle Shout": 1.0
    },
-   "dps": 166.91646461903875,
-   "dps_stdev": 16.07749337742782,
-   "threat": 162.31960646877,
+   "dps": 171.90517511877144,
+   "dps_stdev": 16.21734089765376,
+   "threat": 166.05514781786184,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6081911189112528,
+   "scorer": 0.6082311189112528,
    "shares": {
-    "Auto Attack": 0.5197520952094724,
-    "Execute": 0.19619127810651363,
-    "Whirlwind": 0.12016749753741901,
-    "Bloodthirst": 0.08658941434295067,
-    "Deep Wound": 0.06913107213555453,
-    "Dragonbreath Chili": 0.008168241464509776,
-    "Hamstring": 4.0120358001497023e-07
+    "Auto Attack": 0.5212605644212607,
+    "Execute": 0.1949068634384513,
+    "Whirlwind": 0.11459749872182867,
+    "Bloodthirst": 0.09231208424751976,
+    "Deep Wound": 0.0689961473967676,
+    "Dragonbreath Chili": 0.007926841774171967
    },
    "source_shares": {
-    "white": 0.524,
-    "execute": 0.1978,
-    "whirlwind": 0.1212,
-    "bloodthirst": 0.0873,
-    "deep_wounds": 0.0697
+    "white": 0.5254,
+    "execute": 0.1965,
+    "whirlwind": 0.1155,
+    "bloodthirst": 0.093,
+    "deep_wounds": 0.0695
    },
-   "unmatched_share": 0.0082
+   "unmatched_share": 0.0079
   },
   {
    "label": "cand-arms-2h-raid-r5",
@@ -431,227 +483,1469 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25289": 1.0,
+    "12328": 1.0,
     "1719": 1.0,
-    "7373": 0.0003333333333333333,
-    "11597": 17.346666666666668,
-    "412609": 12.316,
-    "23894": 8.602666666666666,
     "2687": 2.0,
-    "12328": 0.733,
-    "20662": 10.909333333333333,
-    "1680": 10.399333333333333
-   },
-   "casts": {
-    "Auto Attack": 53.145,
-    "Battle Shout": 1.0,
-    "Recklessness": 1.0,
-    "Hamstring": 0.0003333333333333333,
-    "Sunder Armor": 17.346666666666668,
-    "Deep Wound": 12.316,
-    "Bloodthirst": 8.602666666666666,
-    "Bloodrage": 2.0,
-    "OtherActionRageGain": 109.987,
-    "Death Wish": 0.733,
-    "Execute": 10.909333333333333,
-    "Whirlwind": 10.399333333333333
-   },
-   "dps": 169.19023336788248,
-   "dps_stdev": 16.774776797147034,
-   "threat": 164.0737108411529,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.6211035444767485,
-   "shares": {
-    "Auto Attack": 0.5255515053446795,
-    "Execute": 0.19052443044244088,
-    "Whirlwind": 0.11971483139530037,
-    "Bloodthirst": 0.08626323549307705,
-    "Deep Wound": 0.06995230984014282,
-    "Dragonbreath Chili": 0.007993287792097086,
-    "Hamstring": 3.996922622252908e-07
-   },
-   "source_shares": {
-    "white": 0.5298,
-    "execute": 0.1921,
-    "whirlwind": 0.1207,
-    "bloodthirst": 0.087,
-    "deep_wounds": 0.0705
-   },
-   "unmatched_share": 0.008
-  },
-  {
-   "label": "sim preset: DPS",
-   "talents": "30305013-050520035150310051",
-   "split": "",
-   "ours": false,
-   "spell_casts": {
-    "20662": 10.337,
-    "23894": 8.602666666666666,
+    "11597": 16.954666666666668,
+    "23894": 8.888,
     "25289": 1.0,
-    "7373": 0.0003333333333333333,
-    "1719": 1.0,
-    "11597": 17.346666666666668,
-    "1680": 10.399333333333333,
-    "412609": 12.292333333333334,
-    "12328": 0.998,
-    "2687": 2.0
+    "412609": 12.364666666666666,
+    "1680": 9.802666666666667,
+    "20662": 11.394
    },
    "casts": {
-    "Execute": 10.337,
-    "Bloodthirst": 8.602666666666666,
-    "Battle Shout": 1.0,
-    "Auto Attack": 53.144666666666666,
-    "Hamstring": 0.0003333333333333333,
+    "Death Wish": 1.0,
     "Recklessness": 1.0,
-    "Sunder Armor": 17.346666666666668,
-    "Whirlwind": 10.399333333333333,
-    "OtherActionRageGain": 109.99733333333333,
-    "Deep Wound": 12.292333333333334,
-    "Death Wish": 0.998,
-    "Bloodrage": 2.0
-   },
-   "dps": 162.15397889832678,
-   "dps_stdev": 15.827171774117373,
-   "threat": 157.58933642003623,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": null,
-   "shares": {
-    "Auto Attack": 0.5375132654809363,
-    "Execute": 0.17993020219500291,
-    "Whirlwind": 0.11737813898567498,
-    "Bloodthirst": 0.08518260052628195,
-    "Deep Wound": 0.07167537865588061,
-    "Dragonbreath Chili": 0.008320009267020529,
-    "Hamstring": 4.0488920290078247e-07
-   },
-   "source_shares": {
-    "white": 0.542,
-    "execute": 0.1814,
-    "whirlwind": 0.1184,
-    "bloodthirst": 0.0859,
-    "deep_wounds": 0.0723
-   },
-   "unmatched_share": 0.0083
-  },
-  {
-   "label": "sim preset: Fury 17/34/0",
-   "talents": "30305213-550501015050010051",
-   "split": "",
-   "ours": false,
-   "spell_casts": {
-    "23894": 8.334,
-    "2687": 2.0,
-    "11597": 17.53,
-    "412609": 12.045333333333334,
-    "25289": 1.0,
-    "1719": 1.0,
-    "1680": 10.307666666666666,
-    "12328": 0.9973333333333333,
-    "20662": 10.27
-   },
-   "casts": {
-    "OtherActionRageGain": 109.30666666666667,
-    "Bloodthirst": 8.334,
+    "Auto Attack": 53.06733333333333,
+    "OtherActionRageGain": 109.89066666666666,
     "Bloodrage": 2.0,
-    "Sunder Armor": 17.53,
-    "Deep Wound": 12.045333333333334,
-    "Auto Attack": 53.173,
+    "Sunder Armor": 16.954666666666668,
+    "Bloodthirst": 8.888,
     "Battle Shout": 1.0,
-    "Recklessness": 1.0,
-    "Whirlwind": 10.307666666666666,
-    "Death Wish": 0.9973333333333333,
-    "Execute": 10.27
+    "Deep Wound": 12.364666666666666,
+    "Whirlwind": 9.802666666666667,
+    "Execute": 11.394
    },
-   "dps": 157.85551667713298,
-   "dps_stdev": 16.232350107387983,
-   "threat": 153.68435217087057,
+   "dps": 171.40747426396302,
+   "dps_stdev": 16.29081417475675,
+   "threat": 165.33964766611194,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": null,
+   "scorer": 0.6211435444767486,
    "shares": {
-    "Auto Attack": 0.5390514885363282,
-    "Execute": 0.180967354927086,
-    "Whirlwind": 0.11613108335605439,
-    "Bloodthirst": 0.08289739859930183,
-    "Deep Wound": 0.07287258730000197,
-    "Dragonbreath Chili": 0.008080087281227654
+    "Auto Attack": 0.5277710989119527,
+    "Execute": 0.1850427002684251,
+    "Whirlwind": 0.1160570125435638,
+    "Bloodthirst": 0.09348777101533902,
+    "Deep Wound": 0.06971845991546108,
+    "Dragonbreath Chili": 0.007922957345258212
    },
    "source_shares": {
-    "white": 0.5434,
-    "execute": 0.1824,
-    "whirlwind": 0.1171,
-    "bloodthirst": 0.0836,
-    "deep_wounds": 0.0735
+    "white": 0.532,
+    "execute": 0.1865,
+    "whirlwind": 0.117,
+    "bloodthirst": 0.0942,
+    "deep_wounds": 0.0703
    },
-   "unmatched_share": 0.0081
-  },
-  {
-   "label": "sim preset: Arms 39/12/0",
-   "talents": "32305213132515201-5502",
-   "split": "",
-   "ours": false,
-   "spell_casts": {
-    "1310222": 6.878333333333333,
-    "21553": 4.804666666666667,
-    "20662": 9.540666666666667,
-    "1719": 1.0,
-    "25289": 1.0,
-    "11597": 14.077333333333334,
-    "2687": 2.0,
-    "1680": 8.601333333333333,
-    "412609": 14.905666666666667
-   },
-   "casts": {
-    "Spearing Strike": 6.878333333333333,
-    "Mortal Strike": 4.804666666666667,
-    "Auto Attack": 48.0,
-    "Execute": 9.540666666666667,
-    "Recklessness": 1.0,
-    "Battle Shout": 1.0,
-    "Sunder Armor": 14.077333333333334,
-    "Bloodrage": 2.0,
-    "Whirlwind": 8.601333333333333,
-    "OtherActionRageGain": 91.85766666666666,
-    "Deep Wound": 14.905666666666667
-   },
-   "dps": 153.33254857469453,
-   "dps_stdev": 13.673262793079617,
-   "threat": 145.4895896809117,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": null,
-   "shares": {
-    "Auto Attack": 0.5164520341984216,
-    "Execute": 0.1668617061939819,
-    "Whirlwind": 0.10828889546784953,
-    "Deep Wound": 0.08431817059994864,
-    "Mortal Strike": 0.08203867393245749,
-    "Spearing Strike": 0.03437360970015351,
-    "Dragonbreath Chili": 0.007666909907187331
-   },
-   "source_shares": {
-    "white": 0.5391,
-    "execute": 0.1742,
-    "whirlwind": 0.113,
-    "deep_wounds": 0.088,
-    "mortal_strike": 0.0856
-   },
-   "unmatched_share": 0.042
+   "unmatched_share": 0.0079
   }
  ],
- "deltas": {}
+ "deltas": {
+  "arms-2h-raid": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.026651292902984798,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.19148925097875,
+    "ev_delta": 0.015091659057279976,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.0009657859194961027,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.50740467235443,
+    "ev_delta": 0.08970241792606555,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 6.204133357925378e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10139560605167232,
+    "dps_with": 172.6740098947958,
+    "dps_without": 156.77746392488763,
+    "ev_delta": 0.08869253243479389,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029639689077779276,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.70333518267472,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07453208281347812,
+    "dps_with": 172.6740098947958,
+    "dps_without": 160.69693279206564,
+    "ev_delta": 0.06675391108737137,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deflection",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 1.8611591792179983e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.005000594658839511,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.11366950131442459,
+    "dps_with": 172.6740098947958,
+    "dps_without": 155.04959926710285,
+    "ev_delta": 0.10544722999051022,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 1,
+    "sim_delta": 0.005257880294016331,
+    "dps_with": 172.6740098947958,
+    "dps_without": 171.77085927870803,
+    "ev_delta": 0.0052199188893597955,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.032584885221624935,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2250023858664,
+    "ev_delta": 0.004246895628603808,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.0266614692206003,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.1898221288882,
+    "ev_delta": 0.03260598005344607,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.029756208903889202,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.68435907620935,
+    "ev_delta": 0.029997507960269378,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.032178556181018926,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2908324444138,
+    "ev_delta": 0.02696776624626191,
+    "apl_dependent": false
+   }
+  ],
+  "opt-arms-2h-raid-raid-dps": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.032669933600107524,
+    "dps_with": 171.40747426396302,
+    "dps_without": 165.9847630756519,
+    "ev_delta": 0.015232071266298865,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.0005726723822237355,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.3093701188798,
+    "ev_delta": 0.09104508556357803,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 2.467454971418929e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.002332017769200515,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10215362314321666,
+    "dps_with": 171.40747426396302,
+    "dps_without": 155.52049248373237,
+    "ev_delta": 0.0900171679630674,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029231664010492906,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.53925472527587,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07494339822020464,
+    "dps_with": 171.40747426396302,
+    "dps_without": 159.45720914028053,
+    "ev_delta": 0.06646853595105512,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0050008759885415,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.1124471049561677,
+    "dps_with": 171.40747426396302,
+    "dps_without": 154.08146014341668,
+    "ev_delta": 0.10478504237102824,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 2,
+    "sim_delta": 0.010423810189784381,
+    "dps_with": 171.40747426396302,
+    "dps_without": 169.63918757196365,
+    "ev_delta": 0.0104498377325442,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 1,
+    "sim_delta": 0.01982361795195036,
+    "dps_with": 171.40747426396302,
+    "dps_without": 168.07560763123942,
+    "ev_delta": 0.002532770467861269,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.026713023119793126,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.94779398348376,
+    "ev_delta": 0.03260786483134455,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.02975523879500901,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.4545785312433,
+    "ev_delta": 0.02999923757579048,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.03227987611707811,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.04748211184008,
+    "ev_delta": 0.026969316596915118,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-hand-2026-09-26": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.037228994513606575,
+    "dps_with": 163.6986696953284,
+    "dps_without": 157.82307529119208,
+    "ev_delta": 0.014614032683732011,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthrill",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0022385506797061535,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.06171621088531349,
+    "dps_with": 163.6986696953284,
+    "dps_without": 154.18307455137003,
+    "ev_delta": 0.0889443430766762,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.08409739270351159,
+    "dps_with": 163.6986696953284,
+    "dps_without": 150.99996623651887,
+    "ev_delta": 0.07731390684919781,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 2,
+    "sim_delta": 0.013814897548321645,
+    "dps_with": 163.6986696953284,
+    "dps_without": 161.46800573871622,
+    "ev_delta": 0.010027753999763757,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Cleave",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.030589617363573823,
+    "dps_with": 163.6986696953284,
+    "dps_without": 158.83982036816735,
+    "ev_delta": 0.005232829340254796,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Slam",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 7.040573523629569e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Mortal Strike",
+    "ranks": 1,
+    "sim_delta": 0.0399590379666054,
+    "dps_with": 163.6986696953284,
+    "dps_without": 157.40876680624126,
+    "ev_delta": 0.03995461168577399,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Piercing Howl",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Sweeping Strikes",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 163.6986696953284,
+    "dps_without": 163.6986696953284,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.02977072679170691,
+    "dps_with": 163.6986696953284,
+    "dps_without": 158.96613239855665,
+    "ev_delta": 0.029996736934248373,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.03980219423080266,
+    "dps_with": 163.6986696953284,
+    "dps_without": 157.43251034051247,
+    "ev_delta": 0.026967075132558548,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Weaponmaster",
+    "ranks": 5,
+    "sim_delta": 0.06171621088531349,
+    "dps_with": 163.6986696953284,
+    "dps_without": 154.18307455137003,
+    "ev_delta": 0.061748760825897774,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-preset-dps": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.030935988383823103,
+    "dps_with": 161.567710338521,
+    "dps_without": 156.71943957627025,
+    "ev_delta": 0.014919025628517461,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": -0.003193661917981364,
+    "dps_with": 161.567710338521,
+    "dps_without": 162.08535616797712,
+    "ev_delta": 0.08966974298177387,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0022846873609851737,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.09729629921432387,
+    "dps_with": 161.567710338521,
+    "dps_without": 147.24164335030133,
+    "ev_delta": 0.08736676921507816,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.02610594280889665,
+    "dps_with": 161.567710338521,
+    "dps_without": 157.45714316422354,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07673728460811435,
+    "dps_with": 161.567710338521,
+    "dps_without": 150.05304696709248,
+    "ev_delta": 0.06712049774926214,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Dual Wield Specialization",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.005001000000000061,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.11321222041586936,
+    "dps_with": 161.567710338521,
+    "dps_without": 145.13648644475282,
+    "ev_delta": 0.10629116614693666,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Cleave",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.025268641519728262,
+    "dps_with": 161.567710338521,
+    "dps_without": 157.5857329441321,
+    "ev_delta": 0.03260869565217396,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Raging Blows",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 161.567710338521,
+    "dps_without": 161.567710338521,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.028445689550050016,
+    "dps_with": 161.567710338521,
+    "dps_without": 157.09892314217163,
+    "ev_delta": 0.02696999999999997,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-r1": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.026651292902984798,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.19148925097875,
+    "ev_delta": 0.015148774567886441,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.00029099193226387893,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.62377776814836,
+    "ev_delta": 0.09006695752267424,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 2.4759565922528327e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.002319426278963648,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10139560605167232,
+    "dps_with": 172.6740098947958,
+    "dps_without": 156.77746392488763,
+    "ev_delta": 0.0887131351664896,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029639689077779276,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.70333518267472,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07453208281347812,
+    "dps_with": 172.6740098947958,
+    "dps_without": 160.69693279206564,
+    "ev_delta": 0.06664121139342095,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0050008755612705085,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.11366950131442459,
+    "dps_with": 172.6740098947958,
+    "dps_without": 155.04959926710285,
+    "ev_delta": 0.10518404489503703,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 1,
+    "sim_delta": 0.005257880294016331,
+    "dps_with": 172.6740098947958,
+    "dps_without": 171.77085927870803,
+    "ev_delta": 0.005239481223636599,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.032584885221624935,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2250023858664,
+    "ev_delta": 0.004262795966212481,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Overpower",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.0266614692206003,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.1898221288882,
+    "ev_delta": 0.03260786196882305,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.029756208903889202,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.68435907620935,
+    "ev_delta": 0.029999234948923342,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.032178556181018926,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2908324444138,
+    "ev_delta": 0.02696931424230856,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-r2": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.028197474458673735,
+    "dps_with": 155.86310756327862,
+    "dps_without": 151.588689366639,
+    "ev_delta": 0.016937970812000366,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.00138086895793318,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.6481778261596,
+    "ev_delta": 0.1015901159944892,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 2.7241625926131542e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0025895046085648117,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.06832082635221645,
+    "dps_with": 155.86310756327862,
+    "dps_without": 145.89541242537928,
+    "ev_delta": 0.0898512455042176,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.018090627781400703,
+    "dps_with": 155.86310756327862,
+    "dps_without": 153.09354914987466,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07609478080094531,
+    "dps_with": 155.86310756327862,
+    "dps_without": 144.84143064727863,
+    "ev_delta": 0.07154044657454695,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Dual Wield Specialization",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0019999454092715953,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 2,
+    "sim_delta": 0.01054887077408025,
+    "dps_with": 155.86310756327862,
+    "dps_without": 154.23609097092702,
+    "ev_delta": 0.01161402921441945,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Berserker Rage",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0017282894617881715,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.03230424736137192,
+    "dps_with": 155.86310756327862,
+    "dps_without": 150.9856304104856,
+    "ev_delta": 0.004760238593029147,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Overpower",
+    "ranks": 1,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 155.86310756327862,
+    "dps_without": 155.86310756327862,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.03085646269216054,
+    "dps_with": 155.86310756327862,
+    "dps_without": 151.1976819316146,
+    "ev_delta": 0.03260777839732983,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.02974855867205173,
+    "dps_with": 155.86310756327862,
+    "dps_without": 151.36035515726027,
+    "ev_delta": 0.02999915825737694,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.023372293931843768,
+    "dps_with": 155.86310756327862,
+    "dps_without": 152.30342709830978,
+    "ev_delta": 0.026969245499417937,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-r3": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.026651292902984798,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.19148925097875,
+    "ev_delta": 0.015148774567886441,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.00029099193226387893,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.62377776814836,
+    "ev_delta": 0.09006695752267424,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 2.4759565922528327e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.002319426278963648,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10139560605167232,
+    "dps_with": 172.6740098947958,
+    "dps_without": 156.77746392488763,
+    "ev_delta": 0.0887131351664896,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029639689077779276,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.70333518267472,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07453208281347812,
+    "dps_with": 172.6740098947958,
+    "dps_without": 160.69693279206564,
+    "ev_delta": 0.06664121139342095,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0050008755612705085,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.11366950131442459,
+    "dps_with": 172.6740098947958,
+    "dps_without": 155.04959926710285,
+    "ev_delta": 0.10518404489503703,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 1,
+    "sim_delta": 0.005257880294016331,
+    "dps_with": 172.6740098947958,
+    "dps_without": 171.77085927870803,
+    "ev_delta": 0.005239481223636599,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.032584885221624935,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2250023858664,
+    "ev_delta": 0.004262795966212481,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 172.6740098947958,
+    "dps_without": 172.6740098947958,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.0266614692206003,
+    "dps_with": 172.6740098947958,
+    "dps_without": 168.1898221288882,
+    "ev_delta": 0.03260786196882305,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.029756208903889202,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.68435907620935,
+    "ev_delta": 0.029999234948923342,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.032178556181018926,
+    "dps_with": 172.6740098947958,
+    "dps_without": 167.2908324444138,
+    "ev_delta": 0.02696931424230856,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-r4": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.0269272791500559,
+    "dps_with": 171.90517511877144,
+    "dps_without": 167.39761286802124,
+    "ev_delta": 0.015274561936465968,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.000878386411482698,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.75430846809945,
+    "ev_delta": 0.0908705108772214,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 2.487266564879431e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 0.0023384401692533047,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10283124589798406,
+    "dps_with": 171.90517511877144,
+    "dps_without": 155.87622835150728,
+    "ev_delta": 0.09003218398562139,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029776956812633332,
+    "dps_with": 171.90517511877144,
+    "dps_without": 166.93437737318624,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07410941125951752,
+    "dps_with": 171.90517511877144,
+    "dps_without": 160.04438031800944,
+    "ev_delta": 0.0663804596734464,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 0.005000874992858572,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.11364819981767418,
+    "dps_with": 171.90517511877144,
+    "dps_without": 154.36219009460586,
+    "ev_delta": 0.10458159660464648,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 2,
+    "sim_delta": 0.010514942789373361,
+    "dps_with": 171.90517511877144,
+    "dps_without": 170.11641079176252,
+    "ev_delta": 0.010478850415202733,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 2,
+    "sim_delta": 0.03273108095276697,
+    "dps_with": 171.90517511877144,
+    "dps_without": 166.45686209054233,
+    "ev_delta": 0.004297809269502284,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.90517511877144,
+    "dps_without": 171.90517511877144,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.026654573962646092,
+    "dps_with": 171.90517511877144,
+    "dps_without": 167.44207786973348,
+    "ev_delta": 0.032607858160721766,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 2,
+    "sim_delta": 0.019838318060350114,
+    "dps_with": 171.90517511877144,
+    "dps_without": 168.56120433454703,
+    "ev_delta": 0.019999492610493375,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.03260834185300007,
+    "dps_with": 171.90517511877144,
+    "dps_without": 166.47664768065906,
+    "ev_delta": 0.02696931110990226,
+    "apl_dependent": false
+   }
+  ],
+  "cand-arms-2h-raid-r5": [
+   {
+    "talent": "Anger Management",
+    "ranks": 1,
+    "sim_delta": 0.032669933600107524,
+    "dps_with": 171.40747426396302,
+    "dps_without": 165.9847630756519,
+    "ev_delta": 0.015232071266298865,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Bloodthirst",
+    "ranks": 1,
+    "sim_delta": 0.0005726723822237355,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.3093701188798,
+    "ev_delta": 0.09104508556357803,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Booming Voice",
+    "ranks": 2,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 2.467454971418929e-05,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Boundless Rage",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.002332017769200515,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Cruelty",
+    "ranks": 5,
+    "sim_delta": 0.10215362314321666,
+    "dps_with": 171.40747426396302,
+    "dps_without": 155.52049248373237,
+    "ev_delta": 0.0900171679630674,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Death Wish",
+    "ranks": 1,
+    "sim_delta": 0.029231664010492906,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.53925472527587,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Deep Wounds",
+    "ranks": 3,
+    "sim_delta": 0.07494339822020464,
+    "dps_with": 171.40747426396302,
+    "dps_without": 159.45720914028053,
+    "ev_delta": 0.06646853595105512,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Enrage",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0050008759885415,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Flurry",
+    "ranks": 5,
+    "sim_delta": 0.1124471049561677,
+    "dps_with": 171.40747426396302,
+    "dps_without": 154.08146014341668,
+    "ev_delta": 0.10478504237102824,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Impale",
+    "ranks": 2,
+    "sim_delta": 0.010423810189784381,
+    "dps_with": 171.40747426396302,
+    "dps_without": 169.63918757196365,
+    "ev_delta": 0.0104498377325442,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Execute",
+    "ranks": 1,
+    "sim_delta": 0.01982361795195036,
+    "dps_with": 171.40747426396302,
+    "dps_without": 168.07560763123942,
+    "ev_delta": 0.002532770467861269,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Heroic Strike",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Rend",
+    "ranks": 3,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Improved Tactical Mastery",
+    "ranks": 5,
+    "sim_delta": 0.0,
+    "dps_with": 171.40747426396302,
+    "dps_without": 171.40747426396302,
+    "ev_delta": 0.0,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Precision",
+    "ranks": 3,
+    "sim_delta": 0.026713023119793126,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.94779398348376,
+    "ev_delta": 0.03260786483134455,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Two-Handed Weapon Specialization",
+    "ranks": 3,
+    "sim_delta": 0.02975523879500901,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.4545785312433,
+    "ev_delta": 0.02999923757579048,
+    "apl_dependent": false
+   },
+   {
+    "talent": "Unbridled Wrath",
+    "ranks": 5,
+    "sim_delta": 0.03227987611707811,
+    "dps_with": 171.40747426396302,
+    "dps_without": 166.04748211184008,
+    "ev_delta": 0.026969316596915118,
+    "apl_dependent": false
+   }
+  ]
+ }
 }

@@ -23,24 +23,24 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Resourcefulness | Survival | 5 | +0.20% | manual |
 | Improved Tracking | Survival | 1 | +0.10% | manual |
 | Improved Arcane Shot | Marksmanship | 3 | +0.10% | manual |
-| Survivalist | Survival | 2 | +0.00% | manual |
+| Intimidation | Beast Mastery | 5 | +0.00% | manual |
 | Rapid Recuperation | Marksmanship | 5 | +0.00% | manual |
+| Survivalist | Survival | 2 | +0.00% | manual |
+| Hawk Eye | Marksmanship | 1 | +0.00% | manual |
 | Endurance Training | Beast Mastery | 1 | +0.00% | manual |
-| Focused Fire | Beast Mastery | 2 | +0.00% | manual |
 | Improved Aspect of the Monkey | Beast Mastery | 2 | +0.00% | manual |
+| Spirit Bond | Beast Mastery | 5 | +0.00% | manual |
+| Deflection | Survival | 1 | +0.00% | manual |
+| Deterrence | Survival | 3 | +0.00% | manual |
+| Counterattack | Survival | 4 | +0.00% | manual |
+| Focused Fire | Beast Mastery | 2 | +0.00% | manual |
 | Pathfinding | Beast Mastery | 2 | +0.00% | manual |
 | Improved Revive Pet | Beast Mastery | 2 | +0.00% | manual |
 | Bestial Swiftness | Beast Mastery | 3 | +0.00% | manual |
 | Unleashed Fury | Beast Mastery | 3 | +0.00% | manual |
 | Improved Mend Pet | Beast Mastery | 4 | +0.00% | manual |
-| Ferocity | Beast Mastery | 4 | +0.00% | manual |
-| Summon Hawk | Beast Mastery | 4 | +0.00% | manual |
-| Spirit Bond | Beast Mastery | 5 | +0.00% | manual |
-| Intimidation | Beast Mastery | 5 | +0.00% | manual |
-| Frenzy | Beast Mastery | 6 | +0.00% | manual |
-| Bestial Wrath | Beast Mastery | 7 | +0.00% | manual |
 
-## Optimized build: 5/37/9  score +64.90%  (dps x1.575, sustain x1.369, surv x1.080, utility +0.00%)
+## Optimized build: 5/37/9  score +64.92%  (dps x1.575, sustain x1.369, surv x1.080, utility +0.00%)
 
 ```
   Beast Mastery: Deadly Aspects 5
@@ -55,16 +55,16 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Lightning Reflexes | Survival 6 | 1/5 | +1.89% | no |
 | Bestial Discipline | Beast Mastery 5 | 1/2 | +1.00% | no |
 | Resourcefulness | Survival 5 | 1/2 | +0.20% | no |
-| Survivalist | Survival 2 | 5/5 | +0.00% | yes |
+| Intimidation | Beast Mastery 5 | 1/1 | +0.00% | no |
 | Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |
+| Survivalist | Survival 2 | 5/5 | +0.00% | yes |
+| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |
 | Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |
-| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |
 | Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |
+| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |
+| Deflection | Survival 1 | 1/5 | +0.00% | yes |
+| Deterrence | Survival 3 | 1/1 | +0.00% | no |
+| Counterattack | Survival 4 | 1/1 | +0.00% | no |
+| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |
 | Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |
-| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |
-| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |
-| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |
-| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |
-| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |
-| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |
 

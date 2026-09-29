@@ -2691,7 +2691,7 @@
    "spec": "bm-leveling",
    "hand": "leveling-beast-mastery",
    "opt": "opt-bm-leveling-leveling-st",
-   "started": "2026-09-29T13:46:05",
+   "started": "2026-09-29T22:20:50",
    "steps": [
     "raid",
     "adopt"
@@ -2710,52 +2710,52 @@
        416.6
       ],
       [
+       "bm-mm-raid",
+       414.9
+      ],
+      [
        "opt-mm-raid-raid-dps",
        414.9
       ],
       [
        "cand-mm-raid-r9",
        414.9
-      ],
-      [
-       "cand-mm-raid-r7",
-       414.6
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "bm-mm-raid": {
-       "dummy": 412.8987334274628,
-       "dummy60": 450.3001710558593,
-       "ladder-mana": 483.24146043990845,
-       "ladder-armor": 649.8678313393807,
-       "ladder-physical": 680.592288711196,
-       "ladder-spell": 705.1162791656756,
-       "raid": 758.1072995621798,
-       "curve60": 497.4163089355856,
-       "curve120": 425.28962563052846,
-       "curve180": 412.8987334274628,
-       "curve240": 382.2680482085277,
-       "curve360": 369.2543591323463,
-       "max": 758.1072995621798,
-       "max60": 795.0137880500504
+       "dummy": 414.93203031936616,
+       "dummy60": 452.360187026017,
+       "ladder-mana": 485.3058203642492,
+       "ladder-armor": 653.0592743910618,
+       "ladder-physical": 684.1045476503891,
+       "ladder-spell": 708.6285381048683,
+       "raid": 761.6091324567099,
+       "curve60": 499.52923454083896,
+       "curve120": 427.3303643347132,
+       "curve180": 414.93203031936616,
+       "curve240": 384.2872467347435,
+       "curve360": 371.2787939900593,
+       "max": 761.6091324567099,
+       "max60": 798.5970409351951
       },
       "bm-mm-full-buffs-raid": {
-       "dummy": 385.696623404662,
-       "dummy60": 419.85072996863147,
-       "ladder-mana": 475.9359632808747,
-       "ladder-armor": 643.9112710246962,
-       "ladder-physical": 675.2372159851332,
-       "ladder-spell": 701.355018109131,
-       "raid": 783.8752469009208,
-       "curve60": 493.1407675375654,
-       "curve120": 394.89304926191693,
-       "curve180": 385.696623404662,
-       "curve240": 363.6619057971333,
-       "curve360": 350.29831680134066,
-       "max": 783.8752469009208,
-       "max60": 835.3431327116718
+       "dummy": 405.60285290459603,
+       "dummy60": 441.82503282995293,
+       "ladder-mana": 484.2890396138571,
+       "ladder-armor": 653.6639781968224,
+       "ladder-physical": 685.7422519237454,
+       "ladder-spell": 709.905141702391,
+       "raid": 761.8176933868651,
+       "curve60": 499.3456759094649,
+       "curve120": 418.98940844569535,
+       "curve180": 405.60285290459603,
+       "curve240": 377.47483165408016,
+       "curve360": 364.79040910825177,
+       "max": 761.8176933868651,
+       "max60": 799.9504376902247
       },
       "opt-mm-raid-raid-dps": {
        "dummy": 414.87340144512103,
@@ -2890,14 +2890,14 @@
        "ladder-armor": 697.7174839659134,
        "ladder-physical": 725.1395163360571,
        "ladder-spell": 753.6945912864753,
-       "raid": 876.7234204177661,
+       "raid": 823.9358028666638,
        "curve60": 541.1478708547405,
        "curve120": 431.864500708389,
        "curve180": 419.0187285344657,
        "curve240": 389.7175601893558,
        "curve360": 372.5134425134013,
-       "max": 876.7234204177661,
-       "max60": 916.0738620918452
+       "max": 823.9358028666638,
+       "max60": 862.0827861921052
       },
       "opt-mm-lonewolf-raid-raid-dps": {
        "dummy": 419.9393534243545,
@@ -2998,7 +2998,7 @@
      }
     }
    },
-   "seconds": 380,
+   "seconds": 190,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --preset-candidates",
@@ -3012,9 +3012,8 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 63,
+     "seconds": 29,
      "tail": [
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
       "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
       "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
       "Summon Hawk                     0.0%      0.0%     0.0%   1.00   noise",
@@ -3022,6 +3021,7 @@
       "Improved Tracking               0.0%      0.0%     0.0%   1.00   noise",
       "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
       "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Mend Pet               0.0%      0.0%     0.0%   1.00   noise",
       "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
       "Rapid Recuperation             -0.0%      0.0%     0.0%   1.00   noise",
       "Improved Arcane Shot           -0.3%      0.2%     0.2%   1.00   noise",
@@ -3032,16 +3032,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
      "rc": 0,
-     "seconds": 36,
+     "seconds": 25,
      "tail": [
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.26% | no |",
       "| Endurance Training | Beast Mastery 1 | 4/5 | +0.26% | yes |",
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.24% | no |",
+      "| Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |",
       "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
+      "| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
+      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |",
+      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-mm-raid-raid-dps -> hunter/research/talents/forever/proposed-builds.json",
       "",
@@ -3052,19 +3052,19 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r8.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 14,
+     "seconds": 4,
      "tail": [
-      "  cand-mm-raid-r8                             19/32/0  DPS    398.5 ±  14.4  threat      367  oom  91.5s  scorer +47.3%",
+      "  bm-mm-full-buffs-raid                       21/30/0  DPS    405.6 ±  14.6  threat      371  oom  84.6s  scorer +50.3%",
+      "  cand-mm-raid-r8                             19/32/0  DPS    398.5 ±  14.4  threat      367  oom  91.5s  scorer +47.2%",
       "  sim preset: Marksmanship                             DPS    388.2 ±  14.5  threat      360  oom  99.4s",
-      "  bm-mm-full-buffs-raid                       20/31/0  DPS    385.7 ±  14.4  threat      353  oom  93.1s  scorer +42.2%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    385.7 ±  14.4  threat      353  oom  93.1s  scorer +42.2%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    374.3 ±  13.8  threat      344  oom 105.3s  scorer +37.7%",
+      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    385.7 ±  14.4  threat      353  oom  93.1s  scorer +42.1%",
+      "  cand-mm-raid-r1                             19/32/0  DPS    374.3 ±  13.8  threat      344  oom 105.3s  scorer +37.6%",
       "  cand-mm-raid-r2                             16/35/0  DPS    371.4 ±  13.7  threat      344  oom 105.3s  scorer +36.9%",
       "  sim preset: Beast Mastery 35/16/0                    DPS    370.4 ±  11.1  threat      323  oom  92.2s",
-      "  cand-mm-raid-r3                             7/31/13  DPS    366.5 ±  13.7  threat      344  oom 105.3s  scorer +35.0%",
+      "  cand-mm-raid-r3                             7/31/13  DPS    366.5 ±  13.7  threat      344  oom 105.3s  scorer +34.8%",
       "  sim preset: Marksmanship 0/39/12                     DPS    355.7 ±  12.3  threat      334  oom  94.3s",
       "  sim preset: Survival 0/15/36                         DPS    335.3 ±   9.4  threat      313  oom  91.3s",
-      "  damage shares of bm-mm-raid: Auto Shot 47%, Arcane Shot 20%, Serpent Sting 13%, Aimed Shot 9%, Pet: Auto Attack 7%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 1% | model sources: auto 47%, arcane 20%, serpent 13%, pet 10%, aimed 9%, multi 1% (unmatched 0%)",
+      "  damage shares of bm-mm-raid: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 12%, Aimed Shot 9%, Pet: Auto Attack 8%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 1% | model sources: auto 46%, arcane 20%, serpent 12%, pet 11%, aimed 9%, multi 1% (unmatched 0%)",
       "wrote hunter/research/raid/raidsim/mm-raid.md"
      ],
      "stderr": []
@@ -3072,16 +3072,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
      "rc": 0,
-     "seconds": 38,
+     "seconds": 20,
      "tail": [
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.18% | no |",
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.19% | no |",
       "| Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |",
+      "| Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |",
       "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
+      "| Hawk Eye | Marksmanship 1 | 1/3 | +0.00% | yes |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
+      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | yes |",
+      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-mm-raid-parse -> hunter/research/talents/forever/proposed-builds.json",
       "",
@@ -3092,14 +3092,14 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps opt-mm-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 79,
+     "seconds": 33,
      "tail": [
       "== hunter mm-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
+      "  bm-mm-raid                                  22/29/0  dummy   414.9  dummy60   452.4  ladder-mana   485.3  ladder-armor   653.1  ladder-physical   684.1  ladder-spell   708.6  raid   761.6  curve60   499.5  curve120   427.3  curve180   414.9  curve240   384.3  curve360   371.3  max   761.6  max60   798.6",
       "  opt-mm-raid-raid-dps                        22/29/0  dummy   414.9  dummy60   452.6  ladder-mana   487.6  ladder-armor   652.1  ladder-physical   682.7  ladder-spell   708.0  raid   761.0  curve60   505.7  curve120   427.6  curve180   414.9  curve240   384.7  curve360   371.7  max   761.0  max60   792.4",
-      "  bm-mm-raid                                  22/29/0  dummy   412.9  dummy60   450.3  ladder-mana   483.2  ladder-armor   649.9  ladder-physical   680.6  ladder-spell   705.1  raid   758.1  curve60   497.4  curve120   425.3  curve180   412.9  curve240   382.3  curve360   369.3  max   758.1  max60   795.0",
       "  opt-mm-raid-parse                           22/29/0  dummy   409.2  dummy60   446.4  ladder-mana   480.1  ladder-armor   643.8  ladder-physical   674.6  ladder-spell   699.3  raid   751.9  curve60   493.6  curve120   421.6  curve180   409.2  curve240   378.3  curve360   365.2  max   768.0  max60   804.9",
+      "  bm-mm-full-buffs-raid                       21/30/0  dummy   405.6  dummy60   441.8  ladder-mana   484.3  ladder-armor   653.7  ladder-physical   685.7  ladder-spell   709.9  raid   761.8  curve60   499.3  curve120   419.0  curve180   405.6  curve240   377.5  curve360   364.8  max   761.8  max60   800.0",
       "  sim preset: Marksmanship                             dummy   388.2  dummy60   423.3  ladder-mana   482.0  ladder-armor   642.5  ladder-physical   674.5  ladder-spell   709.8  raid   788.1  curve60   516.4  curve120   400.3  curve180   388.2  curve240   361.7  curve360   349.7  max   788.1  max60   837.4",
-      "  bm-mm-full-buffs-raid                       20/31/0  dummy   385.7  dummy60   419.9  ladder-mana   475.9  ladder-armor   643.9  ladder-physical   675.2  ladder-spell   701.4  raid   783.9  curve60   493.1  curve120   394.9  curve180   385.7  curve240   363.7  curve360   350.3  max   783.9  max60   835.3",
       "  sim preset: Beast Mastery 35/16/0                    dummy   370.4  dummy60   405.8  ladder-mana   440.5  ladder-armor   596.6  ladder-physical   623.2  ladder-spell   644.6  raid   690.8  curve60   456.0  curve120   381.0  curve180   370.4  curve240   343.3  curve360   332.7  max   705.0  max60   744.1",
       "  sim preset: Marksmanship 0/39/12                     dummy   355.7  dummy60   387.8  ladder-mana   450.4  ladder-armor   598.3  ladder-physical   626.6  ladder-spell   655.7  raid   718.6  curve60   472.3  curve120   367.7  curve180   355.7  curve240   330.3  curve360   316.7  max   718.6  max60   763.9",
       "  sim preset: Survival 0/15/36                         dummy   335.3  dummy60   363.1  ladder-mana   403.8  ladder-armor   540.0  ladder-physical   563.9  ladder-spell   584.7  raid   640.3  curve60   416.5  curve120   342.6  curve180   335.3  curve240   308.9  curve360   298.3  max   653.6  max60   685.0",
@@ -3119,19 +3119,19 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 32,
+     "seconds": 13,
      "tail": [
       "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
       "Rapid Recuperation              0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Tracking               0.0%      0.5%     0.5%   1.00   noise",
       "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
       "Clever Traps                    0.0%      0.0%     0.0%   1.00   noise",
       "Deterrence                      0.0%      0.0%     0.0%   1.00   noise",
       "Entrapment                      0.0%      0.0%     0.0%   1.00   noise",
       "Improved Wing Clip              0.0%      0.0%     0.0%   1.00   noise",
+      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
       "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
       "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
       "wrote _reference/data/scorer/effects/forever/hunter.manual.json (10 entries, 0 fitted) and hunter/research/raid/raidsim/mm-lonewolf-raid-calibration.json"
      ],
      "stderr": []
@@ -3139,16 +3139,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid",
      "rc": 0,
-     "seconds": 34,
+     "seconds": 22,
      "tail": [
+      "| Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
+      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
+      "| Deterrence | Survival 3 | 1/1 | +0.00% | no |",
+      "| Counterattack | Survival 4 | 1/1 | +0.00% | no |",
+      "| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
-      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
-      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
       "",
       "exported opt-mm-lonewolf-raid-raid-dps -> hunter/research/talents/forever/proposed-builds.json",
       "",
@@ -3159,9 +3159,9 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json /home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 5,
+     "seconds": 2,
      "tail": [
-      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    419.0 ±  16.7  threat      429  oom  92.6s  scorer +76.6%",
+      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    419.0 ±  16.7  threat      429  oom  92.6s  scorer +76.7%",
       "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    419.0 ±  16.7  threat      429  oom  92.6s  scorer +77.0%",
       "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    419.0 ±  16.7  threat      429  oom  92.6s  scorer +77.0%",
       "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    419.0 ±  16.7  threat      429  oom  92.6s  scorer +77.0%",
@@ -3179,16 +3179,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid",
      "rc": 0,
-     "seconds": 28,
+     "seconds": 20,
      "tail": [
+      "| Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
+      "| Deflection | Survival 1 | 1/5 | +0.00% | yes |",
+      "| Deterrence | Survival 3 | 1/1 | +0.00% | no |",
+      "| Counterattack | Survival 4 | 1/1 | +0.00% | no |",
+      "| Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
-      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
-      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
       "",
       "exported opt-mm-lonewolf-raid-parse -> hunter/research/talents/forever/proposed-builds.json",
       "",
@@ -3199,11 +3199,11 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps opt-mm-lonewolf-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 52,
+     "seconds": 20,
      "tail": [
       "== hunter mm-lonewolf-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
       "  opt-mm-lonewolf-raid-raid-dps                5/38/8  dummy   419.9  dummy60   450.6  ladder-mana   543.0  ladder-armor   711.9  ladder-physical   739.7  ladder-spell   786.1  raid   840.9  curve60   573.5  curve120   433.5  curve180   419.9  curve240   387.0  curve360   373.2  max   840.9  max60   863.5",
-      "  mm-lone-wolf-raid                            5/41/5  dummy   419.0  dummy60   449.1  ladder-mana   523.9  ladder-armor   697.7  ladder-physical   725.1  ladder-spell   753.7  raid   876.7  curve60   541.1  curve120   431.9  curve180   419.0  curve240   389.7  curve360   372.5  max   876.7  max60   916.1",
+      "  mm-lone-wolf-raid                           11/40/0  dummy   419.0  dummy60   449.1  ladder-mana   523.9  ladder-armor   697.7  ladder-physical   725.1  ladder-spell   753.7  raid   823.9  curve60   541.1  curve120   431.9  curve180   419.0  curve240   389.7  curve360   372.5  max   823.9  max60   862.1",
       "  opt-mm-lonewolf-raid-parse                   5/37/9  dummy   409.7  dummy60   439.8  ladder-mana   530.5  ladder-armor   694.7  ladder-physical   722.0  ladder-spell   767.8  raid   821.4  curve60   560.3  curve120   423.0  curve180   409.7  curve240   377.4  curve360   363.8  max   840.9  max60   863.5",
       "  sim preset: Marksmanship                             dummy   342.4  dummy60   367.1  ladder-mana   439.3  ladder-armor   580.0  ladder-physical   603.8  ladder-spell   640.1  raid   707.4  curve60   463.5  curve120   353.7  curve180   342.4  curve240   316.8  curve360   305.9  max   707.4  max60   750.2",
       "  sim preset: Marksmanship 0/39/12                     dummy   322.6  dummy60   346.2  ladder-mana   414.4  ladder-armor   545.0  ladder-physical   566.2  ladder-spell   599.5  raid   665.7  curve60   441.4  curve120   333.1  curve180   322.6  curve240   298.5  curve360   286.1  max   665.7  max60   716.0",
@@ -7389,9 +7389,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:20:50",
+  "date": "2026-09-29T22:23:59",
   "classes": [
-   "warlock"
+   "hunter"
   ],
   "steps": [
    "raid",
@@ -7403,7 +7403,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 332,
+  "seconds": 190,
   "refresh": null,
   "regen_log": []
  }
