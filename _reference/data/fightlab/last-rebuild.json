@@ -6689,7 +6689,7 @@
    "spec": "feral-cat-dps",
    "hand": "leveling-feral",
    "opt": "opt-feral-cat-dps-leveling-st",
-   "started": "2026-09-29T14:00:30",
+   "started": "2026-09-29T22:38:03",
    "steps": [
     "raid",
     "adopt"
@@ -6704,16 +6704,16 @@
      ],
      "top": [
       [
+       "balance-moonkin-raid",
+       438.4
+      ],
+      [
        "opt-balance-dps-raid-dps",
        438.4
       ],
       [
        "cand-balance-dps-r5",
        438.4
-      ],
-      [
-       "balance-moonkin-raid",
-       434.9
       ],
       [
        "cand-balance-dps-r1",
@@ -6724,20 +6724,20 @@
      "adopted": null,
      "environments": {
       "balance-moonkin-raid": {
-       "dummy": 434.9329055591701,
-       "dummy60": 514.0583391095845,
-       "ladder-mana": 457.4044648478447,
-       "ladder-armor": 457.4044648478447,
-       "ladder-physical": 435.50175812554806,
-       "ladder-spell": 482.1120602529451,
-       "raid": 509.8578349351249,
-       "curve60": 457.2731049801892,
-       "curve120": 460.41016550530264,
-       "curve180": 434.9329055591701,
-       "curve240": 379.74341112891676,
-       "curve360": 340.12237438994816,
-       "max": 509.36719681944203,
-       "max60": 503.32129006933695
+       "dummy": 438.3516188244772,
+       "dummy60": 518.115357813653,
+       "ladder-mana": 458.4204532291632,
+       "ladder-armor": 458.4204532291632,
+       "ladder-physical": 436.32509471952375,
+       "ladder-spell": 483.3103798133761,
+       "raid": 510.9534011014641,
+       "curve60": 458.0988860713003,
+       "curve120": 461.4031443613686,
+       "curve180": 438.3516188244772,
+       "curve240": 382.6299869426818,
+       "curve360": 342.1904286660773,
+       "max": 510.55519662486296,
+       "max60": 503.9509952506558
       },
       "opt-balance-dps-raid-dps": {
        "dummy": 438.3516188244772,
@@ -6809,7 +6809,19 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "opt-feral-cat-dps-raid-dps": 349.7,
+        "cand-feral-cat-dps-preset-feral-cat-9-35-7": 349.7,
+        "cand-feral-cat-dps-r5": 349.7,
+        "cand-feral-cat-dps-r4": 348.5,
+        "cand-feral-cat-dps-r3": 342.4,
+        "cand-feral-cat-dps-preset-feral": 333.9,
+        "cand-feral-cat-dps-hand-2026-09-26": 326.7,
+        "cand-feral-cat-dps-r2": 302.6,
+        "cand-feral-cat-dps-r1": 294.2
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
@@ -6822,12 +6834,12 @@
        350.2
       ],
       [
-       "sim preset: Feral Cat 9/35/7",
+       "cand-feral-cat-dps-r6",
        350.2
       ],
       [
-       "feral-cat-dps",
-       349.0
+       "sim preset: Feral Cat 9/35/7",
+       350.2
       ]
      ],
      "promoted": null,
@@ -6945,7 +6957,7 @@
      "environments": null
     }
    },
-   "seconds": 346,
+   "seconds": 263,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --preset-candidates",
@@ -6959,36 +6971,36 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec balance-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 30,
+     "seconds": 11,
      "tail": [
-      "Genesis                         1.6%      1.5%     1.6%   1.00    kept",
+      "Genesis                         1.6%      1.6%     1.6%   1.00    kept",
       "Nature's Grace                  0.6%      1.0%     1.0%   1.00    kept",
       "Nature's Focus                  0.0%      0.0%     0.0%   1.00   noise",
-      "Subtlety                        0.0%      0.0%     0.0%   1.00   noise",
-      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Wrath                  0.0%      0.1%     0.2%   1.00   noise",
       "Eclipse                         0.0%      0.0%     0.0%   1.00   noise",
       "Improved Entangling Roots       0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Wrath                  0.0%      0.2%     0.2%   1.00   noise",
       "Overgrowth                      0.0%      0.0%     0.0%   1.00   noise",
+      "Subtlety                        0.0%      0.0%     0.0%   1.00   noise",
       "Swiftmend                       0.0%      0.0%     0.0%   1.00   noise",
       "Furor                           0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/druid.manual.json (15 entries, 5 fitted) and druid/research/raid/raidsim/balance-dps-calibration.json"
+      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/druid.manual.json (15 entries, 0 fitted) and druid/research/raid/raidsim/balance-dps-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec balance-dps --profile raid-dps --write --export --seed balance-moonkin-raid",
      "rc": 0,
-     "seconds": 40,
+     "seconds": 24,
      "tail": [
-      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
-      "| Feral Instinct | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Brutal Impact | Feral Combat 2 | 1/2 | +0.00% | yes |",
+      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Tranquil Spirit | Restoration 4 | 1/5 | +0.00% | no |",
       "| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Savage Fury | Feral Combat 3 | 1/2 | +0.00% | no |",
-      "| Feral Charge | Feral Combat 3 | 1/1 | +0.00% | no |",
-      "| Sharpened Claws | Feral Combat 3 | 1/2 | +0.00% | no |",
-      "| Shredding Attacks | Feral Combat 4 | 1/3 | +0.00% | no |",
+      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | no |",
+      "| Overgrowth | Balance 5 | 1/2 | +0.00% | yes |",
+      "| Eclipse | Balance 5 | 1/3 | +0.00% | yes |",
+      "| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |",
+      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-balance-dps-raid-dps -> druid/research/talents/forever/proposed-builds.json",
       "",
@@ -6999,16 +7011,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --builds balance-moonkin-raid opt-balance-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r5.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r6.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r7.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 3,
+     "seconds": 2,
      "tail": [
-      "  balance-moonkin-raid                        33/3/15  DPS    434.9 ±  27.5  threat      358  oom   5.1s  scorer +125.8%",
-      "  cand-balance-dps-r1                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.6%",
-      "  cand-balance-dps-r3                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.6%",
-      "  cand-balance-dps-r2                         33/2/16  DPS    426.3 ±  27.5  threat      351  oom   5.6s  scorer +121.9%",
+      "  cand-balance-dps-r5                         33/5/13  DPS    438.4 ±  27.4  threat      448  oom   4.4s  scorer +128.1%",
+      "  cand-balance-dps-r1                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.7%",
+      "  cand-balance-dps-r3                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.7%",
+      "  cand-balance-dps-r2                         33/2/16  DPS    426.3 ±  27.5  threat      351  oom   5.6s  scorer +122.0%",
       "  cand-balance-dps-r7                         34/6/11  DPS    414.1 ±  28.1  threat      424  oom  13.9s  scorer +115.2%",
-      "  cand-balance-dps-r4                         33/5/13  DPS    410.5 ±  24.9  threat      421  oom   9.3s  scorer +111.4%",
+      "  cand-balance-dps-r4                         33/5/13  DPS    410.5 ±  24.9  threat      421  oom   9.3s  scorer +111.5%",
       "  sim preset: Balance                                  DPS    400.2 ±  25.2  threat      290  oom   2.2s",
-      "  cand-balance-dps-hand-2026-09-26             46/0/5  DPS    370.9 ±  26.6  threat      381  oom  23.4s  scorer +93.7%",
+      "  cand-balance-dps-hand-2026-09-26             46/0/5  DPS    370.9 ±  26.6  threat      381  oom  23.4s  scorer +93.8%",
       "  cand-balance-dps-r6                         35/5/11  DPS    357.4 ±  28.0  threat      367  oom  33.7s  scorer +78.3%",
       "  sim preset: Moonkin 38/0/13                          DPS    353.1 ±  27.6  threat      363  oom  31.3s",
       "  damage shares of balance-moonkin-raid: Starfire 63%, Moonfire 19%, Insect Swarm 18% | model sources: starfire 63%, moonfire_direct 19%, insect_swarm 18% (unmatched 0%)",
@@ -7019,16 +7031,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec balance-dps --profile parse --write --export --seed balance-moonkin-raid",
      "rc": 0,
-     "seconds": 35,
+     "seconds": 21,
      "tail": [
-      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
-      "| Feral Instinct | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Brutal Impact | Feral Combat 2 | 1/2 | +0.00% | yes |",
+      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Tranquil Spirit | Restoration 4 | 1/5 | +0.00% | no |",
       "| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Savage Fury | Feral Combat 3 | 1/2 | +0.00% | no |",
-      "| Feral Charge | Feral Combat 3 | 1/1 | +0.00% | no |",
-      "| Sharpened Claws | Feral Combat 3 | 1/2 | +0.00% | no |",
-      "| Shredding Attacks | Feral Combat 4 | 1/3 | +0.00% | no |",
+      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | no |",
+      "| Overgrowth | Balance 5 | 1/2 | +0.00% | yes |",
+      "| Eclipse | Balance 5 | 1/3 | +0.00% | yes |",
+      "| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |",
+      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-balance-dps-parse -> druid/research/talents/forever/proposed-builds.json",
       "",
@@ -7039,12 +7051,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --env environments --builds balance-moonkin-raid opt-balance-dps-raid-dps opt-balance-dps-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 17,
+     "seconds": 10,
      "tail": [
       "== druid balance-dps environments (gear raid p1.bis.gear.json, max p2.bis.gear.json):",
+      "  balance-moonkin-raid                        33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
       "  opt-balance-dps-raid-dps                    33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
       "  opt-balance-dps-parse                       33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
-      "  balance-moonkin-raid                        33/3/15  dummy   434.9  dummy60   514.1  ladder-mana   457.4  ladder-armor   457.4  ladder-physical   435.5  ladder-spell   482.1  raid   509.9  curve60   457.3  curve120   460.4  curve180   434.9  curve240   379.7  curve360   340.1  max   509.4  max60   503.3",
       "  sim preset: Balance                                  dummy   400.2  dummy60   469.0  ladder-mana   409.0  ladder-armor   409.0  ladder-physical   390.2  ladder-spell   431.5  raid   456.8  curve60   406.2  curve120   411.1  curve180   400.2  curve240   353.2  curve360   313.1  max   455.9  max60   450.1",
       "  sim preset: Moonkin 38/0/13                          dummy   353.1  dummy60   420.7  ladder-mana   446.2  ladder-armor   446.2  ladder-physical   424.9  ladder-spell   473.9  raid   505.6  curve60   450.2  curve120   402.2  curve180   353.1  curve240   304.8  curve360   273.4  max   502.3  max60   502.0",
       "wrote druid/research/raid/raidsim/balance-dps-environments.md"
@@ -7063,14 +7075,14 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec feral-cat-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 36,
+     "seconds": 22,
      "tail": [
-      "Genesis                         1.8%      1.4%     1.4%   1.00    kept",
       "Heart of the Wild               1.7%      1.4%     1.4%   1.00    kept",
       "Furor                           0.5%      0.5%     0.5%   1.00    kept",
-      "Feral Swiftness                 0.0%      0.0%     0.0%   1.00   noise",
-      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
       "Feral Charge                    0.0%      0.0%     0.0%   1.00   noise",
+      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
+      "Thick Hide                      0.0%      0.0%     0.0%   1.00   noise",
+      "Feral Swiftness                 0.0%      0.0%     0.0%   1.00   noise",
       "Feral Instinct                  0.0%      0.0%     0.0%   1.00   noise",
       "Natural Shapeshifter            0.0%      0.0%     0.0%   1.00   noise",
       "Primal Bite                     0.0%      0.0%     0.0%   1.00   noise",
@@ -7083,16 +7095,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-cat-dps --profile raid-dps --write --export --seed feral-cat-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json",
      "rc": 0,
-     "seconds": 62,
+     "seconds": 53,
      "tail": [
+      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
+      "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
+      "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
+      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | yes |",
       "| Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |",
-      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |",
       "| Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |",
       "| Insect Swarm | Balance 4 | 1/1 | +0.00% | no |",
-      "| Vengeance | Balance 4 | 1/5 | +0.00% | no |",
-      "| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |",
-      "| Overgrowth | Balance 5 | 1/2 | +0.00% | no |",
-      "| Nature's Grace | Balance 5 | 1/1 | +0.00% | no |",
       "",
       "exported opt-feral-cat-dps-raid-dps -> druid/research/talents/forever/proposed-builds.json",
       "",
@@ -7101,12 +7113,31 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --builds feral-cat-dps opt-feral-cat-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --builds opt-feral-cat-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json --iterations 1000 --no-presets",
+     "rc": 0,
+     "seconds": 1,
+     "tail": [
+      "== druid feral-cat-dps: 9 builds x 1000 iterations, druid/feralcat launch.gear.json + default.apl.json",
+      "  opt-feral-cat-dps-raid-dps                   9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
+      "  cand-feral-cat-dps-preset-feral-cat-9-35-7   9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
+      "  cand-feral-cat-dps-r5                        9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
+      "  cand-feral-cat-dps-r4                       9/32/10  DPS    348.5 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
+      "  cand-feral-cat-dps-r3                       13/35/3  DPS    342.4 ±  12.8  threat      250  oom   0.0s  scorer +103.7%",
+      "  cand-feral-cat-dps-preset-feral               38/13  DPS    333.9 ±  12.9  threat      244  oom   0.0s  scorer +99.2%",
+      "  cand-feral-cat-dps-hand-2026-09-26          9/32/10  DPS    326.7 ±  13.4  threat      239  oom   0.0s  scorer +93.9%",
+      "  cand-feral-cat-dps-r2                       9/32/10  DPS    302.6 ±  14.4  threat      222  oom   0.0s  scorer +77.7%",
+      "  cand-feral-cat-dps-r1                       9/31/11  DPS    294.2 ±  13.9  threat      216  oom   0.0s  scorer +72.6%",
+      "  damage shares of opt-feral-cat-dps-raid-dps: Rip 37%, Shred 31%, Auto Attack 29%, item 10646 2%, Dragonbreath Chili 1% | model sources: rip 38%, shred 32%, white 30% (unmatched 3%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --builds feral-cat-dps opt-feral-cat-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r6.json --iterations 3000 --write",
      "rc": 0,
      "seconds": 3,
      "tail": [
-      "  opt-feral-cat-dps-raid-dps                   9/35/7  DPS    350.2 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
       "  cand-feral-cat-dps-r5                        9/35/7  DPS    350.2 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
+      "  cand-feral-cat-dps-r6                        9/35/7  DPS    350.2 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
       "  sim preset: Feral Cat 9/35/7                         DPS    350.2 ±  12.6  threat      255  oom   0.0s",
       "  feral-cat-dps                               9/32/10  DPS    349.0 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
       "  cand-feral-cat-dps-r4                       9/32/10  DPS    349.0 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
@@ -7123,16 +7154,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-cat-dps --profile parse --write --export --seed feral-cat-dps",
      "rc": 0,
-     "seconds": 32,
+     "seconds": 31,
      "tail": [
+      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
+      "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
+      "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
+      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | yes |",
       "| Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |",
-      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |",
       "| Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |",
       "| Insect Swarm | Balance 4 | 1/1 | +0.00% | no |",
-      "| Vengeance | Balance 4 | 1/5 | +0.00% | no |",
-      "| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |",
-      "| Overgrowth | Balance 5 | 1/2 | +0.00% | no |",
-      "| Nature's Grace | Balance 5 | 1/1 | +0.00% | no |",
       "",
       "exported opt-feral-cat-dps-parse -> druid/research/talents/forever/proposed-builds.json",
       "",
@@ -7143,7 +7174,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --env environments --builds feral-cat-dps opt-feral-cat-dps-raid-dps opt-feral-cat-dps-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 23,
+     "seconds": 21,
      "tail": [
       "== druid feral-cat-dps environments (gear raid launch.gear.json, max p2.bis.gear.json):",
       "  opt-feral-cat-dps-raid-dps                   9/35/7  dummy   350.2  dummy60   382.1  ladder-mana   350.2  ladder-armor   448.3  ladder-physical   531.8  ladder-spell   532.4  raid   556.3  curve60   373.7  curve120   356.4  curve180   350.2  curve240   351.1  curve360   348.5  max   608.0  max60   693.9",
@@ -7167,7 +7198,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec feral-bear-tank --iterations 1500 --write",
      "rc": 0,
-     "seconds": 38,
+     "seconds": 34,
      "tail": [
       "Furor                           0.0%      0.0%     0.0%   1.00   noise",
       "Nature's Focus                  0.0%      0.0%     0.0%   1.00   noise",
@@ -7187,16 +7218,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-bear-tank --profile raid-tank --write --export --seed feral-bear-tank",
      "rc": 0,
-     "seconds": 23,
+     "seconds": 26,
      "tail": [
-      "| Nature's Swiftness | Restoration 5 | 1/1 | +0.00% | no |",
+      "| Heart of the Wild | Feral Combat 1 | 1/5 | +0.00% | yes |",
+      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |",
+      "| Subtlety | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
       "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
       "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
-      "| Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |",
-      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |",
-      "| Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |",
-      "| Vengeance | Balance 4 | 1/5 | +0.00% | no |",
-      "| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |",
+      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Reflection | Restoration 3 | 1/3 | +0.00% | no |",
       "",
       "exported opt-feral-bear-tank-raid-tank -> druid/research/talents/forever/proposed-builds.json",
       "",
@@ -7209,14 +7240,14 @@
      "rc": 0,
      "seconds": 4,
      "tail": [
-      "  opt-feral-bear-tank-raid-tank                7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.7%",
-      "  cand-feral-bear-tank-r4                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.7%",
-      "  cand-feral-bear-tank-r5                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.7%",
-      "  cand-feral-bear-tank-r6                      7/36/8  DPS    423.8 ±  20.2  threat      781  oom   0.0s  dtps   989.5  tank-value  0.987  scorer +53.6%",
-      "  cand-feral-bear-tank-hand-2026-09-27        13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.3%",
-      "  cand-feral-bear-tank-r1                     13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.3%",
-      "  cand-feral-bear-tank-r2                     0/36/15  DPS    388.8 ±  18.4  threat      679  oom   0.0s  dtps   989.6  tank-value  0.923  scorer +42.2%",
-      "  cand-feral-bear-tank-r3                     0/35/16  DPS    384.6 ±  18.1  threat      679  oom   0.0s  dtps   989.7  tank-value  0.923  scorer +42.2%",
+      "  opt-feral-bear-tank-raid-tank                7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
+      "  cand-feral-bear-tank-r4                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
+      "  cand-feral-bear-tank-r5                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
+      "  cand-feral-bear-tank-r6                      7/36/8  DPS    423.8 ±  20.2  threat      781  oom   0.0s  dtps   989.5  tank-value  0.987  scorer +53.7%",
+      "  cand-feral-bear-tank-hand-2026-09-27        13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.4%",
+      "  cand-feral-bear-tank-r1                     13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.4%",
+      "  cand-feral-bear-tank-r2                     0/36/15  DPS    388.8 ±  18.4  threat      679  oom   0.0s  dtps   989.6  tank-value  0.923  scorer +42.3%",
+      "  cand-feral-bear-tank-r3                     0/35/16  DPS    384.6 ±  18.1  threat      679  oom   0.0s  dtps   989.7  tank-value  0.923  scorer +42.3%",
       "  sim preset: Bear Tank 0/31/20                        DPS    361.8 ±  17.1  threat      614  oom   0.0s  dtps  1040.4  tank-value  0.859",
       "  cand-feral-bear-tank-hand-2026-09-26        9/32/10  DPS    372.5 ±  17.9  threat      630  oom   0.0s  dtps  1063.9  tank-value  0.858  scorer +32.7%",
       "  damage shares of feral-bear-tank: Lacerate 76%, Auto Attack 16%, Maul 4%, OtherActionRageGain 2%, Retribution Aura 1%, Thorns 1%, Dragonbreath Chili 0% | model sources: lacerate 79%, white 17%, maul 4%, thorns 1% (unmatched 3%)",
@@ -7466,9 +7497,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:38:03",
+  "date": "2026-09-29T22:42:26",
   "classes": [
-   "shaman"
+   "druid"
   ],
   "steps": [
    "raid",
@@ -7480,7 +7511,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 176,
+  "seconds": 263,
   "refresh": null,
   "regen_log": []
  }

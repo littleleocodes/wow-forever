@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
+| `balance-moonkin-raid` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
 | `opt-balance-dps-raid-dps` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
 | `opt-balance-dps-parse` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
-| `balance-moonkin-raid` | 33/3/15 | 435 | 514 | 510 | 509 | 503 |
 | sim preset: Balance | - | 400 | 469 | 457 | 456 | 450 |
 | sim preset: Moonkin 38/0/13 | - | 353 | 421 | 506 | 502 | 502 |
 
@@ -22,9 +22,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
+| `balance-moonkin-raid` | 438 | +5% | +0% | -5% | +11% | +6% | 511 |
 | `opt-balance-dps-raid-dps` | 438 | +5% | +0% | -5% | +11% | +6% | 511 |
 | `opt-balance-dps-parse` | 438 | +5% | +0% | -5% | +11% | +6% | 511 |
-| `balance-moonkin-raid` | 435 | +5% | +0% | -5% | +11% | +6% | 510 |
 | sim preset: Balance | 400 | +2% | +0% | -5% | +10% | +6% | 457 |
 | sim preset: Moonkin 38/0/13 | 353 | +26% | +0% | -6% | +14% | +9% | 506 |
 
@@ -36,9 +36,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
+| `balance-moonkin-raid` | 458 | 461 | 438 | 383 | 342 |
 | `opt-balance-dps-raid-dps` | 458 | 461 | 438 | 383 | 342 |
 | `opt-balance-dps-parse` | 458 | 461 | 438 | 383 | 342 |
-| `balance-moonkin-raid` | 457 | 460 | 435 | 380 | 340 |
 | sim preset: Balance | 406 | 411 | 400 | 353 | 313 |
 | sim preset: Moonkin 38/0/13 | 450 | 402 | 353 | 305 | 273 |
 

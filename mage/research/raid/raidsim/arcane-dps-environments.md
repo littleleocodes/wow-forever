@@ -4,7 +4,7 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `arcane-blast-raid` | 31/15/5 | 516 | 613 | 600 | 600 | 658 |
+| `arcane-blast-raid` | 35/11/5 | 516 | 613 | 600 | 600 | 658 |
 | sim preset: Arcane DPS | - | 511 | 612 | 591 | 591 | 648 |
 | sim preset: Arcane 35/0/16 | - | 494 | 582 | 565 | 565 | 603 |
 

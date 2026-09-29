@@ -25,7 +25,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- demonology-pact-raid: `101-0005003221220311351-0550005003`
+- demonology-pact-raid: `101-0035003021220301351-0550005003`
 - sim preset: Demonic Pact 2/31/18: `113-0005003221220311351-0550005`
 - sim preset: Demonic Pact: `203-0055003221201001351-0550005`
 

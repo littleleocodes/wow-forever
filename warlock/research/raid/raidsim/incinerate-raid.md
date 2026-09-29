@@ -23,5 +23,5 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- destruction-incinerate-raid: `153-0025003001-0050245103101351`
+- destruction-incinerate-raid: `153-0050203001-0050245103101351`
 

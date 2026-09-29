@@ -4,7 +4,7 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `smite-discipline-raid` | 31/17/3 | 296 | 9 | +0.0% | 313 | 22 | - |
+| `smite-discipline-raid` | 31/17/3 | 296 | 9 | +0.0% | 270 | 22 | - |
 | sim preset: Smite | - | 294 | 10 | -0.7% | 247 | 22 | - |
 | sim preset: Smite 31/17/3 | - | 294 | 10 | -0.7% | 311 | 22 | - |
 
@@ -23,7 +23,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- smite-discipline-raid: `515030031305001031-00505023002-3`
+- smite-discipline-raid: `505230231305001001-30505101002-3`
 - sim preset: Smite: `515330031305001001-30505113002`
 - sim preset: Smite 31/17/3: `515030031305001031-00505023002-003`
 

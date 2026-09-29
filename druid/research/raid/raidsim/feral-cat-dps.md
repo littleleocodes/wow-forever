@@ -6,6 +6,7 @@
 |---|---|---|---|---|---|---|---|
 | `opt-feral-cat-dps-raid-dps` | 9/35/7 | 350 | 13 | +0.0% | 255 | 0 | +108.2% |
 | `cand-feral-cat-dps-r5` | 9/35/7 | 350 | 13 | +0.0% | 255 | 0 | +108.2% |
+| `cand-feral-cat-dps-r6` | 9/35/7 | 350 | 13 | +0.0% | 255 | 0 | +108.2% |
 | sim preset: Feral Cat 9/35/7 | - | 350 | 13 | +0.0% | 255 | 0 | - |
 | `feral-cat-dps` | 9/32/10 | 349 | 12 | -0.4% | 254 | 0 | +107.9% |
 | `cand-feral-cat-dps-r4` | 9/32/10 | 349 | 12 | -0.4% | 254 | 0 | +107.9% |
@@ -30,10 +31,11 @@ Mapped onto the spec model's sources: `rip` 38%, `shred` 32%, `white` 30%; 3% of
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- opt-feral-cat-dps-raid-dps: `050022-5510002023032213051-052`
+- opt-feral-cat-dps-raid-dps: `050022-2500032123032213051-052`
 - cand-feral-cat-dps-r5: `050022-5510002023032213051-052`
+- cand-feral-cat-dps-r6: `050022-2500032123032213051-052`
 - sim preset: Feral Cat 9/35/7: `050022-5500002123032213051-052`
-- feral-cat-dps: `050022-5510002023032213021-055`
+- feral-cat-dps: `050022-2500032123032213021-055`
 - cand-feral-cat-dps-r4: `050022-5510002023032213021-055`
 - cand-feral-cat-dps-r3: `05302201-5510002023032213051-03`
 - sim preset: Feral: `-5521002023132213051-05503`

@@ -4,23 +4,23 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `frostfire-raid` | 0/35/16 | 463 | 40 | +0.0% | 351 | 0 | - |
+| `frostfire-raid` | 2/33/16 | 473 | 38 | +0.0% | 438 | 0 | - |
 
 ## Damage shares (`frostfire-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Frostfire Bolt | 54.7% |
-| Fire Blast | 18.2% |
-| Ignite | 14.6% |
-| Scorch | 8.0% |
-| Pyroblast | 4.1% |
-| Fireball | 0.5% |
+| Frostfire Bolt | 44.7% |
+| Fire Blast | 24.6% |
+| Ignite | 13.6% |
+| Scorch | 7.6% |
+| Pyroblast | 5.8% |
+| Fireball | 3.8% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- frostfire-raid: `-03552020130133151-005500033`
+- frostfire-raid: `002-23550000130133151-005500033`
 

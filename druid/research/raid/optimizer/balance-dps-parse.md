@@ -12,7 +12,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Insect Swarm | Balance | 4 | +11.32% | manual |
 | Moonkin Form | Balance | 7 | +4.25% | manual |
 | Moonglow | Balance | 2 | +3.56% | manual |
-| Nature's Reach | Balance | 2 | +2.43% | manual |
+| Nature's Reach | Balance | 2 | +2.44% | manual |
 | Moonfury | Balance | 6 | +2.00% | manual |
 | Nature's Splendor | Balance | 3 | +1.80% | manual |
 | Vengeance | Balance | 4 | +1.73% | manual |
@@ -24,23 +24,23 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Reflection | Restoration | 3 | +0.56% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Living Spirit | Restoration | 5 | +0.40% | manual |
-| Heart of the Wild | Feral Combat | 1 | +0.12% | manual |
-| Improved Wrath | Balance | 1 | +0.01% | manual |
+| Heart of the Wild | Feral Combat | 1 | +0.13% | manual |
+| Improved Wrath | Balance | 1 | +0.02% | manual |
+| Improved Entangling Roots | Balance | 3 | +0.01% | manual |
+| Feral Charge | Feral Combat | 3 | +0.01% | manual |
+| Subtlety | Restoration | 2 | +0.00% | manual |
+| Improved Tranquility | Restoration | 5 | +0.00% | manual |
+| Natural Shapeshifter | Restoration | 2 | +0.00% | manual |
+| Tranquil Spirit | Restoration | 4 | +0.00% | manual |
+| Thick Hide | Feral Combat | 2 | +0.00% | manual |
+| Natural Reaction | Feral Combat | 6 | +0.00% | manual |
 | Genesis | Balance | 1 | +0.00% | manual |
-| Improved Entangling Roots | Balance | 3 | +0.00% | manual |
 | Overgrowth | Balance | 5 | +0.00% | manual |
 | Eclipse | Balance | 5 | +0.00% | manual |
 | Ferocity | Feral Combat | 1 | +0.00% | manual |
 | Feral Swiftness | Feral Combat | 2 | +0.00% | manual |
-| Feral Instinct | Feral Combat | 2 | +0.00% | manual |
-| Brutal Impact | Feral Combat | 2 | +0.00% | manual |
-| Thick Hide | Feral Combat | 2 | +0.00% | manual |
-| Savage Fury | Feral Combat | 3 | +0.00% | manual |
-| Feral Charge | Feral Combat | 3 | +0.00% | manual |
-| Sharpened Claws | Feral Combat | 3 | +0.00% | manual |
-| Shredding Attacks | Feral Combat | 4 | +0.00% | manual |
 
-## Optimized build: 33/5/13  score +93.45%  (dps x1.794, sustain x1.702, surv x1.000, utility +0.00%)
+## Optimized build: 33/5/13  score +93.48%  (dps x1.794, sustain x1.702, surv x1.000, utility +0.00%)
 Absolute DPS index (character alone, no talents = 1.00): 0.881  — use this to compare models with different pet shares.
 
 ```
@@ -55,17 +55,17 @@ Absolute DPS index (character alone, no talents = 1.00): 0.881  — use this to 
 |---|---|---|---|---|
 | Nature's Swiftness | Restoration 5 | 1/1 | +0.90% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.40% | no |
-| Improved Wrath | Balance 1 | 1/5 | +0.01% | yes |
-| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |
+| Improved Wrath | Balance 1 | 1/5 | +0.02% | yes |
+| Improved Entangling Roots | Balance 3 | 1/3 | +0.01% | yes |
+| Feral Charge | Feral Combat 3 | 1/1 | +0.01% | no |
+| Subtlety | Restoration 2 | 1/3 | +0.00% | yes |
+| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |
+| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |
+| Tranquil Spirit | Restoration 4 | 1/5 | +0.00% | no |
+| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |
+| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | no |
 | Overgrowth | Balance 5 | 1/2 | +0.00% | yes |
 | Eclipse | Balance 5 | 1/3 | +0.00% | yes |
 | Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |
 | Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |
-| Feral Instinct | Feral Combat 2 | 1/3 | +0.00% | yes |
-| Brutal Impact | Feral Combat 2 | 1/2 | +0.00% | yes |
-| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |
-| Savage Fury | Feral Combat 3 | 1/2 | +0.00% | no |
-| Feral Charge | Feral Combat 3 | 1/1 | +0.00% | no |
-| Sharpened Claws | Feral Combat 3 | 1/2 | +0.00% | no |
-| Shredding Attacks | Feral Combat 4 | 1/3 | +0.00% | no |
 

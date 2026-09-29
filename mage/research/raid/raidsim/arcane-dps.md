@@ -4,7 +4,7 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `arcane-blast-raid` | 31/15/5 | 516 | 32 | +0.0% | 388 | 0 | - |
+| `arcane-blast-raid` | 35/11/5 | 516 | 32 | +0.0% | 412 | 0 | - |
 | sim preset: Arcane DPS | - | 511 | 33 | -1.1% | 385 | 0 | - |
 | sim preset: Arcane 35/0/16 | - | 494 | 29 | -4.4% | 501 | 0 | - |
 
@@ -23,7 +23,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- arcane-blast-raid: `050215003100311531-23050032-005`
+- arcane-blast-raid: `055205003100311531-2305001-005`
 - sim preset: Arcane DPS: `050215003100311531-2305003202003-`
 - sim preset: Arcane 35/0/16: `055005023100311531--005500033`
 

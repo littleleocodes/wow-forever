@@ -28,23 +28,23 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Tranquil Spirit | Restoration | 4 | +0.12% | manual |
 | Furor | Restoration | 1 | +0.10% | manual |
 | Living Spirit | Restoration | 5 | +0.10% | manual |
+| Improved Entangling Roots | Balance | 3 | +0.01% | manual |
+| Feral Charge | Feral Combat | 3 | +0.01% | manual |
+| Subtlety | Restoration | 2 | +0.00% | manual |
+| Improved Tranquility | Restoration | 5 | +0.00% | manual |
 | Improved Wrath | Balance | 1 | +0.00% | manual |
 | Moonglow | Balance | 2 | +0.00% | manual |
+| Natural Shapeshifter | Restoration | 2 | +0.00% | manual |
+| Thick Hide | Feral Combat | 2 | +0.00% | manual |
+| Natural Reaction | Feral Combat | 6 | +0.00% | manual |
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
-| Improved Entangling Roots | Balance | 3 | +0.00% | manual |
 | Nature's Splendor | Balance | 3 | +0.00% | manual |
-| Insect Swarm | Balance | 4 | +0.00% | manual |
-| Vengeance | Balance | 4 | +0.00% | manual |
-| Improved Starfire | Balance | 4 | +0.00% | manual |
-| Overgrowth | Balance | 5 | +0.00% | manual |
-| Nature's Grace | Balance | 5 | +0.00% | manual |
-| Eclipse | Balance | 5 | +0.00% | manual |
 
-## Optimized build: 9/35/7  score +102.67%  (dps x2.025, sustain x1.008, surv x1.000, utility +0.00%)
+## Optimized build: 9/35/7  score +102.68%  (dps x2.025, sustain x1.008, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
-  Feral Combat: Heart of the Wild 5, Ferocity 5, Feral Swiftness 1, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Shredding Attacks 3, Predatory Strikes 3, Leader of the Pack 1, King of the Jungle 3, Predatory Instincts 2, Rend and Tear 5, Berserk 1
+  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Sharpened Claws 2, Savage Fury 2, Feral Charge 1, Blood Frenzy 2, Shredding Attacks 3, Predatory Strikes 3, Leader of the Pack 1, King of the Jungle 3, Predatory Instincts 2, Rend and Tear 5, Berserk 1
   Restoration: Furor 5, Naturalist 2
 ```
 
@@ -57,14 +57,14 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.10% | no |
+| Improved Entangling Roots | Balance 3 | 1/3 | +0.01% | no |
+| Subtlety | Restoration 2 | 1/3 | +0.00% | yes |
+| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |
 | Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |
 | Moonglow | Balance 2 | 1/3 | +0.00% | yes |
+| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |
+| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | yes |
 | Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |
-| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |
 | Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |
 | Insect Swarm | Balance 4 | 1/1 | +0.00% | no |
-| Vengeance | Balance 4 | 1/5 | +0.00% | no |
-| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |
-| Overgrowth | Balance 5 | 1/2 | +0.00% | no |
-| Nature's Grace | Balance 5 | 1/1 | +0.00% | no |
 

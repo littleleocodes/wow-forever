@@ -22,7 +22,7 @@
    "mhImbueId": 25122
   },
   "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
-  "iterations": 1500,
+  "iterations": 3000,
   "seed": 1,
   "duration": 180.0
  },
@@ -35,38 +35,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "2912": 5.39,
-    "9835": 11.647333333333334,
-    "25298": 41.848,
+    "9835": 11.646333333333333,
+    "2912": 5.333666666666667,
+    "24977": 13.043666666666667,
     "29166": 1.0,
-    "24977": 13.013333333333334
+    "25298": 41.903666666666666
    },
    "casts": {
-    "item 18820": 2.0,
-    "Starfire": 47.238,
-    "Moonfire": 11.647333333333334,
-    "Innervate": 1.0,
-    "OtherActionManaGain": 12.0,
     "item 13444": 2.0,
-    "Insect Swarm": 13.013333333333334
+    "OtherActionManaGain": 12.0,
+    "item 18820": 2.0,
+    "Moonfire": 11.646333333333333,
+    "Starfire": 47.23733333333333,
+    "Insect Swarm": 13.043666666666667,
+    "Innervate": 1.0
    },
-   "dps": 438.23010540620317,
-   "dps_stdev": 26.92974799563341,
-   "threat": 448.23066096175864,
+   "dps": 438.3516188244772,
+   "dps_stdev": 27.37594833899247,
+   "threat": 448.35217438003264,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 4.480325333333334,
+   "oom_seconds": 4.417358333333332,
    "error": null,
    "scorer": 1.2810408699233542,
    "shares": {
-    "Starfire": 0.6320747915550601,
-    "Moonfire": 0.18580277975751996,
-    "Insect Swarm": 0.18212242868741993
+    "Starfire": 0.6322781372569043,
+    "Moonfire": 0.18557775822852488,
+    "Insect Swarm": 0.18214410451457086
    },
    "source_shares": {
-    "starfire": 0.6321,
-    "moonfire_direct": 0.1858,
+    "starfire": 0.6323,
+    "moonfire_direct": 0.1856,
     "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
@@ -78,38 +78,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25298": 41.848,
-    "24977": 13.013333333333334,
-    "2912": 5.39,
-    "29166": 1.0,
-    "9835": 11.647333333333334
+    "2912": 5.333666666666667,
+    "9835": 11.646333333333333,
+    "25298": 41.903666666666666,
+    "24977": 13.043666666666667,
+    "29166": 1.0
    },
    "casts": {
-    "OtherActionManaGain": 12.0,
-    "Starfire": 47.238,
-    "Insect Swarm": 13.013333333333334,
+    "Starfire": 47.23733333333333,
+    "Moonfire": 11.646333333333333,
+    "Insect Swarm": 13.043666666666667,
     "Innervate": 1.0,
-    "Moonfire": 11.647333333333334,
-    "item 18820": 2.0,
-    "item 13444": 2.0
+    "item 13444": 2.0,
+    "OtherActionManaGain": 12.0,
+    "item 18820": 2.0
    },
-   "dps": 438.23010540620317,
-   "dps_stdev": 26.92974799563341,
-   "threat": 448.23066096175864,
+   "dps": 438.3516188244772,
+   "dps_stdev": 27.37594833899247,
+   "threat": 448.35217438003264,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 4.480325333333334,
+   "oom_seconds": 4.417358333333332,
    "error": null,
    "scorer": 1.2810408699233542,
    "shares": {
-    "Starfire": 0.6320747915550601,
-    "Moonfire": 0.18580277975751996,
-    "Insect Swarm": 0.18212242868741993
+    "Starfire": 0.6322781372569043,
+    "Moonfire": 0.18557775822852488,
+    "Insect Swarm": 0.18214410451457086
    },
    "source_shares": {
-    "starfire": 0.6321,
-    "moonfire_direct": 0.1858,
+    "starfire": 0.6323,
+    "moonfire_direct": 0.1856,
     "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
@@ -121,38 +121,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25298": 35.181333333333335,
-    "9835": 10.168,
-    "2912": 7.242,
-    "24977": 11.736,
-    "29166": 1.0
+    "29166": 1.0,
+    "24977": 11.751333333333333,
+    "25298": 35.27066666666666,
+    "2912": 7.201333333333333,
+    "9835": 10.172
    },
    "casts": {
-    "Starfire": 42.42333333333333,
-    "Moonfire": 10.168,
-    "item 18820": 2.0006666666666666,
-    "Insect Swarm": 11.736,
+    "item 13444": 2.0,
     "Innervate": 1.0,
-    "OtherActionManaGain": 12.0,
-    "item 13444": 2.0
+    "Insect Swarm": 11.751333333333333,
+    "Starfire": 42.471999999999994,
+    "item 18820": 2.0003333333333333,
+    "Moonfire": 10.172,
+    "OtherActionManaGain": 12.0
    },
-   "dps": 369.5284906018219,
-   "dps_stdev": 25.556441374547806,
-   "threat": 379.5290461573774,
+   "dps": 370.94472741265264,
+   "dps_stdev": 26.61226112503318,
+   "threat": 380.94528296820795,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 23.50205533333333,
+   "oom_seconds": 23.44812833333333,
    "error": null,
    "scorer": 0.9378859597850646,
    "shares": {
-    "Starfire": 0.6289874220703436,
-    "Insect Swarm": 0.18671227183455383,
-    "Moonfire": 0.18430030609510262
+    "Starfire": 0.6291393333619287,
+    "Insect Swarm": 0.18651855457896013,
+    "Moonfire": 0.18434211205911114
    },
    "source_shares": {
-    "starfire": 0.629,
-    "insect_swarm": 0.1867,
+    "starfire": 0.6291,
+    "insect_swarm": 0.1865,
     "moonfire_direct": 0.1843
    },
    "unmatched_share": 0.0
@@ -164,39 +164,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "24977": 12.862,
-    "2912": 6.254666666666667,
-    "25298": 40.794,
+    "9835": 11.485333333333333,
+    "2912": 6.211333333333333,
+    "24977": 12.890666666666666,
     "29166": 1.0,
-    "9835": 11.492666666666667
+    "25298": 40.855666666666664
    },
    "casts": {
-    "Insect Swarm": 12.862,
-    "item 13444": 2.0,
+    "Moonfire": 11.485333333333333,
+    "Starfire": 47.067,
+    "Insect Swarm": 12.890666666666666,
     "OtherActionManaGain": 12.0,
     "item 18820": 2.0,
-    "Starfire": 47.04866666666666,
-    "Innervate": 1.0,
-    "Moonfire": 11.492666666666667
+    "item 13444": 2.0,
+    "Innervate": 1.0
    },
-   "dps": 432.6566454713785,
-   "dps_stdev": 27.34905788911107,
-   "threat": 356.12587193265813,
+   "dps": 432.9082735767964,
+   "dps_stdev": 27.63200306869446,
+   "threat": 356.3271744169924,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 5.764980000000001,
+   "oom_seconds": 5.608750999999998,
    "error": null,
    "scorer": 1.2467543227327678,
    "shares": {
-    "Starfire": 0.6325765327572487,
-    "Moonfire": 0.18533410030075056,
-    "Insect Swarm": 0.18208936694200076
+    "Starfire": 0.6325791190928638,
+    "Moonfire": 0.18516400283580964,
+    "Insect Swarm": 0.18225687807132654
    },
    "source_shares": {
     "starfire": 0.6326,
-    "moonfire_direct": 0.1853,
-    "insect_swarm": 0.1821
+    "moonfire_direct": 0.1852,
+    "insect_swarm": 0.1823
    },
    "unmatched_share": 0.0
   },
@@ -207,39 +207,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "24977": 12.862,
+    "24977": 12.890666666666666,
     "29166": 1.0,
-    "25298": 40.794,
-    "9835": 11.492666666666667,
-    "2912": 6.254666666666667
+    "2912": 6.211333333333333,
+    "25298": 40.855666666666664,
+    "9835": 11.485333333333333
    },
    "casts": {
-    "Insect Swarm": 12.862,
     "item 18820": 2.0,
+    "Insect Swarm": 12.890666666666666,
     "Innervate": 1.0,
-    "Starfire": 47.04866666666666,
+    "item 13444": 2.0,
+    "Starfire": 47.067,
     "OtherActionManaGain": 12.0,
-    "Moonfire": 11.492666666666667,
-    "item 13444": 2.0
+    "Moonfire": 11.485333333333333
    },
-   "dps": 426.0213021582349,
-   "dps_stdev": 27.217381747474587,
-   "threat": 350.81759728214325,
+   "dps": 426.27087909926587,
+   "dps_stdev": 27.49462515869755,
+   "threat": 351.0172588349677,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 5.764980000000001,
+   "oom_seconds": 5.608750999999998,
    "error": null,
    "scorer": 1.2198266264824116,
    "shares": {
-    "Starfire": 0.642429003620603,
-    "Moonfire": 0.1814515343488759,
-    "Insect Swarm": 0.17611946203052112
+    "Starfire": 0.6424289055960849,
+    "Moonfire": 0.18129036082754743,
+    "Insect Swarm": 0.17628073357636767
    },
    "source_shares": {
     "starfire": 0.6424,
-    "moonfire_direct": 0.1815,
-    "insect_swarm": 0.1761
+    "moonfire_direct": 0.1813,
+    "insect_swarm": 0.1763
    },
    "unmatched_share": 0.0
   },
@@ -250,39 +250,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9835": 11.492666666666667,
-    "25298": 40.794,
-    "2912": 6.254666666666667,
-    "24977": 12.862,
-    "29166": 1.0
+    "9835": 11.485333333333333,
+    "2912": 6.211333333333333,
+    "25298": 40.855666666666664,
+    "29166": 1.0,
+    "24977": 12.890666666666666
    },
    "casts": {
-    "Moonfire": 11.492666666666667,
-    "item 13444": 2.0,
-    "Starfire": 47.04866666666666,
+    "Moonfire": 11.485333333333333,
     "OtherActionManaGain": 12.0,
+    "Starfire": 47.067,
+    "Innervate": 1.0,
     "item 18820": 2.0,
-    "Insect Swarm": 12.862,
-    "Innervate": 1.0
+    "Insect Swarm": 12.890666666666666,
+    "item 13444": 2.0
    },
-   "dps": 432.6566454713785,
-   "dps_stdev": 27.34905788911107,
-   "threat": 356.12587193265813,
+   "dps": 432.9082735767964,
+   "dps_stdev": 27.63200306869446,
+   "threat": 356.3271744169924,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 5.764980000000001,
+   "oom_seconds": 5.608750999999998,
    "error": null,
    "scorer": 1.2467543227327678,
    "shares": {
-    "Starfire": 0.6325765327572487,
-    "Moonfire": 0.18533410030075056,
-    "Insect Swarm": 0.18208936694200076
+    "Starfire": 0.6325791190928638,
+    "Moonfire": 0.18516400283580964,
+    "Insect Swarm": 0.18225687807132654
    },
    "source_shares": {
     "starfire": 0.6326,
-    "moonfire_direct": 0.1853,
-    "insect_swarm": 0.1821
+    "moonfire_direct": 0.1852,
+    "insect_swarm": 0.1823
    },
    "unmatched_share": 0.0
   },
@@ -293,38 +293,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25298": 37.76733333333333,
-    "9835": 11.000666666666667,
-    "24977": 12.352,
+    "9835": 10.972666666666667,
     "29166": 1.0,
-    "2912": 8.409333333333333
+    "2912": 8.416666666666666,
+    "24977": 12.373666666666667,
+    "25298": 37.81033333333333
    },
    "casts": {
-    "Starfire": 46.17666666666666,
-    "Moonfire": 11.000666666666667,
-    "Insect Swarm": 12.352,
-    "item 13444": 2.0,
-    "Innervate": 1.0,
     "item 18820": 2.0,
-    "OtherActionManaGain": 12.0
+    "Moonfire": 10.972666666666667,
+    "OtherActionManaGain": 12.0,
+    "Innervate": 1.0,
+    "Starfire": 46.227,
+    "Insect Swarm": 12.373666666666667,
+    "item 13444": 2.0
    },
-   "dps": 409.9654672044729,
-   "dps_stdev": 24.559756282320258,
-   "threat": 419.9660227600285,
+   "dps": 410.52962654501016,
+   "dps_stdev": 24.903362431174113,
+   "threat": 420.5301821005658,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 9.343355999999996,
+   "oom_seconds": 9.263166666666663,
    "error": null,
    "scorer": 1.1147465821891551,
    "shares": {
-    "Starfire": 0.6331835875052103,
-    "Moonfire": 0.1854126360178856,
-    "Insect Swarm": 0.18140377647690414
+    "Starfire": 0.6334547351158492,
+    "Moonfire": 0.18516855372063065,
+    "Insect Swarm": 0.18137671116352028
    },
    "source_shares": {
-    "starfire": 0.6332,
-    "moonfire_direct": 0.1854,
+    "starfire": 0.6335,
+    "moonfire_direct": 0.1852,
     "insect_swarm": 0.1814
    },
    "unmatched_share": 0.0
@@ -336,38 +336,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "24977": 13.013333333333334,
-    "25298": 41.848,
-    "9835": 11.647333333333334,
+    "25298": 41.903666666666666,
+    "24977": 13.043666666666667,
     "29166": 1.0,
-    "2912": 5.39
+    "2912": 5.333666666666667,
+    "9835": 11.646333333333333
    },
    "casts": {
-    "Insect Swarm": 13.013333333333334,
-    "Starfire": 47.238,
-    "Moonfire": 11.647333333333334,
-    "item 13444": 2.0,
     "item 18820": 2.0,
+    "item 13444": 2.0,
+    "Starfire": 47.23733333333333,
+    "OtherActionManaGain": 12.0,
+    "Insect Swarm": 13.043666666666667,
     "Innervate": 1.0,
-    "OtherActionManaGain": 12.0
+    "Moonfire": 11.646333333333333
    },
-   "dps": 438.23010540620317,
-   "dps_stdev": 26.92974799563341,
-   "threat": 448.23066096175864,
+   "dps": 438.3516188244772,
+   "dps_stdev": 27.37594833899247,
+   "threat": 448.35217438003264,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 4.480325333333334,
+   "oom_seconds": 4.417358333333332,
    "error": null,
    "scorer": 1.2810408699233542,
    "shares": {
-    "Starfire": 0.6320747915550601,
-    "Moonfire": 0.18580277975751996,
-    "Insect Swarm": 0.18212242868741993
+    "Starfire": 0.6322781372569043,
+    "Moonfire": 0.18557775822852488,
+    "Insect Swarm": 0.18214410451457086
    },
    "source_shares": {
-    "starfire": 0.6321,
-    "moonfire_direct": 0.1858,
+    "starfire": 0.6323,
+    "moonfire_direct": 0.1856,
     "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
@@ -379,39 +379,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9835": 8.923333333333334,
-    "2912": 9.930666666666667,
-    "24977": 10.715333333333334,
+    "2912": 9.97,
+    "25298": 30.440333333333335,
     "29166": 1.0,
-    "25298": 30.406666666666666
+    "9835": 8.905333333333333,
+    "24977": 10.756666666666666
    },
    "casts": {
-    "item 18820": 2.0006666666666666,
-    "Moonfire": 8.923333333333334,
-    "item 13444": 2.0,
-    "Starfire": 40.33733333333333,
     "OtherActionManaGain": 12.0,
-    "Insect Swarm": 10.715333333333334,
-    "Innervate": 1.0
+    "Starfire": 40.410333333333334,
+    "Innervate": 1.0,
+    "Moonfire": 8.905333333333333,
+    "item 13444": 2.0,
+    "Insect Swarm": 10.756666666666666,
+    "item 18820": 2.0006666666666666
    },
-   "dps": 356.1584912887954,
-   "dps_stdev": 27.736477704070495,
-   "threat": 366.15904684435094,
+   "dps": 357.35537880724837,
+   "dps_stdev": 28.00218990203965,
+   "threat": 367.3559343628042,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 33.843692000000004,
+   "oom_seconds": 33.67018233333334,
    "error": null,
    "scorer": 0.7830248362256466,
    "shares": {
-    "Starfire": 0.6381421669724396,
-    "Insect Swarm": 0.1861746218015422,
-    "Moonfire": 0.17568321122601818
+    "Starfire": 0.6388127839707426,
+    "Insect Swarm": 0.18583353094161087,
+    "Moonfire": 0.17535368508764657
    },
    "source_shares": {
-    "starfire": 0.6381,
-    "insect_swarm": 0.1862,
-    "moonfire_direct": 0.1757
+    "starfire": 0.6388,
+    "insect_swarm": 0.1858,
+    "moonfire_direct": 0.1754
    },
    "unmatched_share": 0.0
   },
@@ -422,1593 +422,126 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "9835": 10.855,
+    "25298": 38.21,
     "29166": 1.0,
-    "25298": 38.16266666666667,
-    "9835": 10.868666666666666,
-    "2912": 6.818666666666667,
-    "24977": 12.289333333333333
+    "24977": 12.317333333333334,
+    "2912": 6.762333333333333
    },
    "casts": {
-    "Innervate": 1.0,
-    "Starfire": 44.98133333333333,
-    "Moonfire": 10.868666666666666,
-    "item 18820": 2.0,
-    "Insect Swarm": 12.289333333333333,
     "item 13444": 2.0,
-    "OtherActionManaGain": 12.0
+    "OtherActionManaGain": 12.0,
+    "Moonfire": 10.855,
+    "Starfire": 44.97233333333333,
+    "Innervate": 1.0,
+    "Insect Swarm": 12.317333333333334,
+    "item 18820": 2.0
    },
-   "dps": 413.28617022577737,
-   "dps_stdev": 28.145671683710216,
-   "threat": 423.28672578133313,
+   "dps": 414.0672730733466,
+   "dps_stdev": 28.06201651317273,
+   "threat": 424.06782862890196,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 13.947245999999996,
+   "oom_seconds": 13.882939000000006,
    "error": null,
    "scorer": 1.1520514448771502,
    "shares": {
-    "Starfire": 0.6308580897315719,
-    "Moonfire": 0.1850891851902237,
-    "Insect Swarm": 0.18405272507820447
+    "Starfire": 0.6312214278619886,
+    "Moonfire": 0.18486363128992997,
+    "Insect Swarm": 0.18391494084808135
    },
    "source_shares": {
-    "starfire": 0.6309,
-    "moonfire_direct": 0.1851,
-    "insect_swarm": 0.1841
+    "starfire": 0.6312,
+    "moonfire_direct": 0.1849,
+    "insect_swarm": 0.1839
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Balance",
+   "talents": "5532220115001351--505302",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "9835": 12.135333333333334,
+    "2912": 2.078666666666667,
+    "25298": 38.654333333333334,
+    "24977": 12.239,
+    "29166": 1.0
+   },
+   "casts": {
+    "item 13444": 2.0,
+    "Moonfire": 12.135333333333334,
+    "Starfire": 40.733000000000004,
+    "Insect Swarm": 12.239,
+    "item 18820": 2.0,
+    "Innervate": 1.0,
+    "OtherActionManaGain": 12.0
+   },
+   "dps": 400.23193428126785,
+   "dps_stdev": 25.219651316913527,
+   "threat": 290.1629095524431,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 2.186959333333334,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Starfire": 0.60732222521688,
+    "Moonfire": 0.20749120530727436,
+    "Insect Swarm": 0.18518656947584577
+   },
+   "source_shares": {
+    "starfire": 0.6073,
+    "moonfire_direct": 0.2075,
+    "insect_swarm": 0.1852
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Moonkin 38/0/13",
+   "talents": "5502220115501351--055003",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "2912": 13.294,
+    "25298": 28.422666666666668,
+    "29166": 1.0,
+    "9835": 8.608333333333333,
+    "24977": 10.557333333333334
+   },
+   "casts": {
+    "item 13444": 2.0,
+    "Starfire": 41.71666666666667,
+    "item 18820": 2.001333333333333,
+    "Innervate": 1.0,
+    "Moonfire": 8.608333333333333,
+    "OtherActionManaGain": 12.0,
+    "Insect Swarm": 10.557333333333334
+   },
+   "dps": 353.14676837965413,
+   "dps_stdev": 27.563396872740704,
+   "threat": 363.1473239352094,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 31.333822333333345,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Starfire": 0.6472183968536368,
+    "Insect Swarm": 0.18345281205754427,
+    "Moonfire": 0.169328791088819
+   },
+   "source_shares": {
+    "starfire": 0.6472,
+    "insect_swarm": 0.1835,
+    "moonfire_direct": 0.1693
    },
    "unmatched_share": 0.0
   }
  ],
- "deltas": {
-  "balance-moonkin-raid": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015589119799235121,
-    "dps_with": 438.23010540620317,
-    "dps_without": 431.50334802014606,
-    "ev_delta": 0.01593833885130791,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.021167039925844563,
-    "dps_with": 438.23010540620317,
-    "dps_without": 429.14634753392227,
-    "ev_delta": 0.025738844367053614,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.03036728050832101,
-    "dps_with": 438.23010540620317,
-    "dps_without": 425.31446183928404,
-    "ev_delta": 0.036551522093015994,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.07292293271373358,
-    "dps_with": 438.23010540620317,
-    "dps_without": 408.4450914827517,
-    "ev_delta": 0.04623777989431442,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09070427899071258,
-    "dps_with": 438.23010540620317,
-    "dps_without": 401.7863630384957,
-    "ev_delta": 0.09865401344962582,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999981,
-    "dps_with": 438.23010540620317,
-    "dps_without": 398.3910049147302,
-    "ev_delta": 0.09998649755805004,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.2148964130096452,
-    "dps_with": 438.23010540620317,
-    "dps_without": 360.71396763826317,
-    "ev_delta": 0.279374222533093,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.06894394885126538,
-    "dps_with": 438.23010540620317,
-    "dps_without": 409.9654672044729,
-    "ev_delta": 0.07944934170821333,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.05000000000000028,
-    "dps_with": 438.23010540620317,
-    "dps_without": 417.3620051487648,
-    "ev_delta": 0.04999355561315328,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 438.23010540620317,
-    "dps_without": 438.23010540620317,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.008520236594219112,
-    "dps_with": 438.23010540620317,
-    "dps_without": 434.5278255259505,
-    "ev_delta": 0.009742792261247309,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.033331959466733944,
-    "dps_with": 438.23010540620317,
-    "dps_without": 424.09421424685075,
-    "ev_delta": 0.028019735571800174,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.04668693852261377,
-    "dps_with": 438.23010540620317,
-    "dps_without": 418.6830744489463,
-    "ev_delta": 0.04870349362069357,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.03819590109654191,
-    "dps_with": 438.23010540620317,
-    "dps_without": 422.1073353722017,
-    "ev_delta": 0.04353320313534584,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.09555855173142348,
-    "dps_with": 438.23010540620317,
-    "dps_without": 400.00610164890156,
-    "ev_delta": 0.09505370931749789,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10117119242869994,
-    "dps_with": 438.23010540620317,
-    "dps_without": 397.96728103616664,
-    "ev_delta": 0.11703864938423045,
-    "apl_dependent": false
-   }
-  ],
-  "opt-balance-dps-raid-dps": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015589119799235121,
-    "dps_with": 438.23010540620317,
-    "dps_without": 431.50334802014606,
-    "ev_delta": 0.01593833885130791,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.021167039925844563,
-    "dps_with": 438.23010540620317,
-    "dps_without": 429.14634753392227,
-    "ev_delta": 0.025738844367053614,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.03036728050832101,
-    "dps_with": 438.23010540620317,
-    "dps_without": 425.31446183928404,
-    "ev_delta": 0.036551522093015994,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.07292293271373358,
-    "dps_with": 438.23010540620317,
-    "dps_without": 408.4450914827517,
-    "ev_delta": 0.04623777989431442,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09070427899071258,
-    "dps_with": 438.23010540620317,
-    "dps_without": 401.7863630384957,
-    "ev_delta": 0.09865401344962582,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999981,
-    "dps_with": 438.23010540620317,
-    "dps_without": 398.3910049147302,
-    "ev_delta": 0.09998649755805004,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.2148964130096452,
-    "dps_with": 438.23010540620317,
-    "dps_without": 360.71396763826317,
-    "ev_delta": 0.279374222533093,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.06894394885126538,
-    "dps_with": 438.23010540620317,
-    "dps_without": 409.9654672044729,
-    "ev_delta": 0.07944934170821333,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.05000000000000028,
-    "dps_with": 438.23010540620317,
-    "dps_without": 417.3620051487648,
-    "ev_delta": 0.04999355561315328,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 438.23010540620317,
-    "dps_without": 438.23010540620317,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.008520236594219112,
-    "dps_with": 438.23010540620317,
-    "dps_without": 434.5278255259505,
-    "ev_delta": 0.009742792261247309,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.033331959466733944,
-    "dps_with": 438.23010540620317,
-    "dps_without": 424.09421424685075,
-    "ev_delta": 0.028019735571800174,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.04668693852261377,
-    "dps_with": 438.23010540620317,
-    "dps_without": 418.6830744489463,
-    "ev_delta": 0.04870349362069357,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.03819590109654191,
-    "dps_with": 438.23010540620317,
-    "dps_without": 422.1073353722017,
-    "ev_delta": 0.04353320313534584,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.09555855173142348,
-    "dps_with": 438.23010540620317,
-    "dps_without": 400.00610164890156,
-    "ev_delta": 0.09505370931749789,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10117119242869994,
-    "dps_with": 438.23010540620317,
-    "dps_without": 397.96728103616664,
-    "ev_delta": 0.11703864938423045,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-hand-2026-09-26": [
-   {
-    "talent": "Eclipse",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.5284906018219,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015789859890913454,
-    "dps_with": 369.5284906018219,
-    "dps_without": 363.78438611457085,
-    "ev_delta": 0.01593664977348744,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Entangling Roots",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.5284906018219,
-    "ev_delta": 7.740992741685074e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.029238272750493597,
-    "dps_with": 369.5284906018219,
-    "dps_without": 359.0310430395377,
-    "ev_delta": 0.036547569931541755,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.009140810051037375,
-    "dps_with": 369.5284906018219,
-    "dps_without": 366.1812969224116,
-    "ev_delta": 0.046232733685093653,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wrath",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.5284906018219,
-    "ev_delta": 0.0041705067433664205,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.0922547648555886,
-    "dps_with": 369.5284906018219,
-    "dps_without": 338.31712389066917,
-    "ev_delta": 0.09864270739157509,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.1,
-    "dps_with": 369.5284906018219,
-    "dps_without": 335.9349914562017,
-    "ev_delta": 0.09997502489718224,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.24226313520417142,
-    "dps_with": 369.5284906018219,
-    "dps_without": 297.463943129157,
-    "ev_delta": 0.14323541622253597,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.08860763286937111,
-    "dps_with": 369.5284906018219,
-    "dps_without": 339.45057837580305,
-    "ev_delta": 0.08151429222391784,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.5284906018219,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": -0.0007933237796878445,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.821879092755,
-    "ev_delta": 0.009741766057163165,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.032886062321536035,
-    "dps_with": 369.5284906018219,
-    "dps_without": 357.76307192224283,
-    "ev_delta": 0.0280167308505322,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.05133374074170777,
-    "dps_with": 369.5284906018219,
-    "dps_without": 351.4854287289614,
-    "ev_delta": 0.04870158280458021,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.04357144999822661,
-    "dps_with": 369.5284906018219,
-    "dps_without": 354.099846831235,
-    "ev_delta": 0.04709231067002866,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Overgrowth",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 369.5284906018219,
-    "dps_without": 369.5284906018219,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.09867585379249713,
-    "dps_with": 369.5284906018219,
-    "dps_without": 336.3398670556506,
-    "ev_delta": 0.11702501196551675,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r1": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015575144434160422,
-    "dps_with": 432.6566454713785,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 0.015937948121075168,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 2,
-    "sim_delta": 0.008179722273364493,
-    "dps_with": 432.6566454713785,
-    "dps_without": 429.14634753392227,
-    "ev_delta": 0.010284519631589724,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.030992505696839468,
-    "dps_with": 432.6566454713785,
-    "dps_without": 419.65062120306044,
-    "ev_delta": 0.036550607847676456,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.065366209040767,
-    "dps_with": 432.6566454713785,
-    "dps_without": 406.11072680907847,
-    "ev_delta": 0.04623661256426578,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.0901905440442318,
-    "dps_with": 432.6566454713785,
-    "dps_without": 396.86332617266265,
-    "ev_delta": 0.09865139802957809,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.10000000000000023,
-    "dps_with": 432.6566454713785,
-    "dps_without": 393.32422315579856,
-    "ev_delta": 0.0999838435976417,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.22014311692763552,
-    "dps_with": 432.6566454713785,
-    "dps_without": 354.5949974793314,
-    "ev_delta": 0.2614961079722915,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.07258523715472492,
-    "dps_with": 432.6566454713785,
-    "dps_without": 403.3774011463165,
-    "ev_delta": 0.07969358454727037,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.04999999999999997,
-    "dps_with": 432.6566454713785,
-    "dps_without": 412.05394806797955,
-    "ev_delta": 0.0499922889331546,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.009183021067084142,
-    "dps_with": 432.6566454713785,
-    "dps_without": 428.7197034031533,
-    "ev_delta": 0.009742554872089233,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.035751351651287414,
-    "dps_with": 432.6566454713785,
-    "dps_without": 417.72250143009575,
-    "ev_delta": 0.02801904049631951,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.047630442481267354,
-    "dps_with": 432.6566454713785,
-    "dps_without": 412.98594230103697,
-    "ev_delta": 0.048702555914628014,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.03852044984173578,
-    "dps_with": 432.6566454713785,
-    "dps_without": 416.60869127547056,
-    "ev_delta": 0.043954870400424895,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.1014213016274742,
-    "dps_with": 432.6566454713785,
-    "dps_without": 392.8166677293053,
-    "ev_delta": 0.09652793215782285,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Subtlety",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 3.5608187261671754e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Swiftmend",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10023889591744062,
-    "dps_with": 432.6566454713785,
-    "dps_without": 393.23882029330116,
-    "ev_delta": 0.11703549464800628,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r2": [
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 2,
-    "sim_delta": 0.008176512779712698,
-    "dps_with": 426.0213021582349,
-    "dps_without": 422.56618435160954,
-    "ev_delta": 0.010248459344247729,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.030384536733382667,
-    "dps_with": 426.0213021582349,
-    "dps_without": 413.45855549118176,
-    "ev_delta": 0.037152210988750156,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.0663180399624508,
-    "dps_with": 426.0213021582349,
-    "dps_without": 399.5255507195928,
-    "ev_delta": 0.04700487164995038,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wrath",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 426.0213021582349,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 0.003761775497563856,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.08161454667851875,
-    "dps_with": 426.0213021582349,
-    "dps_without": 393.8753444713595,
-    "ev_delta": 0.08140994732000088,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999985,
-    "dps_with": 426.0213021582349,
-    "dps_without": 387.2920928711227,
-    "ev_delta": 0.09997621487296209,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.21954583273436,
-    "dps_with": 426.0213021582349,
-    "dps_without": 349.32783231528646,
-    "ev_delta": 0.26613348295657613,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.07246973080442325,
-    "dps_with": 426.0213021582349,
-    "dps_without": 397.2338704969237,
-    "ev_delta": 0.08069666109019186,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.05000000000000024,
-    "dps_with": 426.0213021582349,
-    "dps_without": 405.73457348403315,
-    "ev_delta": 0.04998864788481758,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 426.0213021582349,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.009719321645081228,
-    "dps_with": 426.0213021582349,
-    "dps_without": 421.9205209068807,
-    "ev_delta": 0.009741872498757216,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.03585828880410513,
-    "dps_with": 426.0213021582349,
-    "dps_without": 411.2737299713796,
-    "ev_delta": 0.02847636088800691,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.04816567561533974,
-    "dps_with": 426.0213021582349,
-    "dps_without": 406.44462232378805,
-    "ev_delta": 0.04869925202766333,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.038147286792904966,
-    "dps_with": 426.0213021582349,
-    "dps_without": 410.3669176599407,
-    "ev_delta": 0.044082138790965265,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.10164980706917578,
-    "dps_with": 426.0213021582349,
-    "dps_without": 386.7120925583603,
-    "ev_delta": 0.09613191813881439,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Subtlety",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 426.0213021582349,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 3.6040149378154215e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Swiftmend",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 426.0213021582349,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10008696132945359,
-    "dps_with": 426.0213021582349,
-    "dps_without": 387.26147762299513,
-    "ev_delta": 0.11911406602815772,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r3": [
-   {
-    "talent": "Furor",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015575144434160422,
-    "dps_with": 432.6566454713785,
-    "dps_without": 426.0213021582349,
-    "ev_delta": 0.015937948121075168,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 2,
-    "sim_delta": 0.008179722273364493,
-    "dps_with": 432.6566454713785,
-    "dps_without": 429.14634753392227,
-    "ev_delta": 0.010284519631589724,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.030992505696839468,
-    "dps_with": 432.6566454713785,
-    "dps_without": 419.65062120306044,
-    "ev_delta": 0.036550607847676456,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.065366209040767,
-    "dps_with": 432.6566454713785,
-    "dps_without": 406.11072680907847,
-    "ev_delta": 0.04623661256426578,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.0901905440442318,
-    "dps_with": 432.6566454713785,
-    "dps_without": 396.86332617266265,
-    "ev_delta": 0.09865139802957809,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.10000000000000023,
-    "dps_with": 432.6566454713785,
-    "dps_without": 393.32422315579856,
-    "ev_delta": 0.0999838435976417,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.22014311692763552,
-    "dps_with": 432.6566454713785,
-    "dps_without": 354.5949974793314,
-    "ev_delta": 0.2614961079722915,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.07258523715472492,
-    "dps_with": 432.6566454713785,
-    "dps_without": 403.3774011463165,
-    "ev_delta": 0.07969358454727037,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.04999999999999997,
-    "dps_with": 432.6566454713785,
-    "dps_without": 412.05394806797955,
-    "ev_delta": 0.0499922889331546,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.009183021067084142,
-    "dps_with": 432.6566454713785,
-    "dps_without": 428.7197034031533,
-    "ev_delta": 0.009742554872089233,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.035751351651287414,
-    "dps_with": 432.6566454713785,
-    "dps_without": 417.72250143009575,
-    "ev_delta": 0.02801904049631951,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.047630442481267354,
-    "dps_with": 432.6566454713785,
-    "dps_without": 412.98594230103697,
-    "ev_delta": 0.048702555914628014,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.03852044984173578,
-    "dps_with": 432.6566454713785,
-    "dps_without": 416.60869127547056,
-    "ev_delta": 0.043954870400424895,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.1014213016274742,
-    "dps_with": 432.6566454713785,
-    "dps_without": 392.8166677293053,
-    "ev_delta": 0.09652793215782285,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Subtlety",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 3.5608187261671754e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Swiftmend",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 432.6566454713785,
-    "dps_without": 432.6566454713785,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10023889591744062,
-    "dps_with": 432.6566454713785,
-    "dps_without": 393.23882029330116,
-    "ev_delta": 0.11703549464800628,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r4": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015557248741232864,
-    "dps_with": 409.9654672044729,
-    "dps_without": 403.6852355813703,
-    "ev_delta": 0.016948635813777247,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.02727667621048703,
-    "dps_with": 409.9654672044729,
-    "dps_without": 399.07989414963777,
-    "ev_delta": 0.026115522056379452,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.03276321274720987,
-    "dps_with": 409.9654672044729,
-    "dps_without": 396.9597891794974,
-    "ev_delta": 0.037440134073236236,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.04997893968389401,
-    "dps_with": 409.9654672044729,
-    "dps_without": 390.45113355120895,
-    "ev_delta": 0.045718593682830815,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wrath",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 409.9654672044729,
-    "dps_without": 409.9654672044729,
-    "ev_delta": 0.0007544521113649188,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09856520056983945,
-    "dps_with": 409.9654672044729,
-    "dps_without": 373.1826449552732,
-    "ev_delta": 0.10926963190841472,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.10000000000000005,
-    "dps_with": 409.9654672044729,
-    "dps_without": 372.6958792767935,
-    "ev_delta": 0.09998439551474261,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.24673274517654414,
-    "dps_with": 409.9654672044729,
-    "dps_without": 328.83187578940147,
-    "ev_delta": 0.26003649597764933,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.05000000000000024,
-    "dps_with": 409.9654672044729,
-    "dps_without": 390.4433020994979,
-    "ev_delta": 0.049992552351937766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 409.9654672044729,
-    "dps_without": 409.9654672044729,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.01067914228887675,
-    "dps_with": 409.9654672044729,
-    "dps_without": 405.6336477628572,
-    "ev_delta": 0.009742604239578534,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.036539624283298294,
-    "dps_with": 409.9654672044729,
-    "dps_without": 395.513550664248,
-    "ev_delta": 0.029818323278595845,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.04641447005652259,
-    "dps_with": 409.9654672044729,
-    "dps_without": 391.7811526271501,
-    "ev_delta": 0.04870403434818816,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.046780810469865805,
-    "dps_with": 409.9654672044729,
-    "dps_without": 391.6440415261842,
-    "ev_delta": 0.0439096766354706,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.1152779563526066,
-    "dps_with": 409.9654672044729,
-    "dps_without": 367.59039741556415,
-    "ev_delta": 0.09665452787222202,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.08922388452730728,
-    "dps_with": 409.9654672044729,
-    "dps_without": 376.3831045463958,
-    "ev_delta": 0.08623320269771567,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r5": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015589119799235121,
-    "dps_with": 438.23010540620317,
-    "dps_without": 431.50334802014606,
-    "ev_delta": 0.01593833885130791,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.021167039925844563,
-    "dps_with": 438.23010540620317,
-    "dps_without": 429.14634753392227,
-    "ev_delta": 0.025738844367053614,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.03036728050832101,
-    "dps_with": 438.23010540620317,
-    "dps_without": 425.31446183928404,
-    "ev_delta": 0.036551522093015994,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.07292293271373358,
-    "dps_with": 438.23010540620317,
-    "dps_without": 408.4450914827517,
-    "ev_delta": 0.04623777989431442,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09070427899071258,
-    "dps_with": 438.23010540620317,
-    "dps_without": 401.7863630384957,
-    "ev_delta": 0.09865401344962582,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999981,
-    "dps_with": 438.23010540620317,
-    "dps_without": 398.3910049147302,
-    "ev_delta": 0.09998649755805004,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.2148964130096452,
-    "dps_with": 438.23010540620317,
-    "dps_without": 360.71396763826317,
-    "ev_delta": 0.279374222533093,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.06894394885126538,
-    "dps_with": 438.23010540620317,
-    "dps_without": 409.9654672044729,
-    "ev_delta": 0.07944934170821333,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.05000000000000028,
-    "dps_with": 438.23010540620317,
-    "dps_without": 417.3620051487648,
-    "ev_delta": 0.04999355561315328,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 438.23010540620317,
-    "dps_without": 438.23010540620317,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.008520236594219112,
-    "dps_with": 438.23010540620317,
-    "dps_without": 434.5278255259505,
-    "ev_delta": 0.009742792261247309,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.033331959466733944,
-    "dps_with": 438.23010540620317,
-    "dps_without": 424.09421424685075,
-    "ev_delta": 0.028019735571800174,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.04668693852261377,
-    "dps_with": 438.23010540620317,
-    "dps_without": 418.6830744489463,
-    "ev_delta": 0.04870349362069357,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.03819590109654191,
-    "dps_with": 438.23010540620317,
-    "dps_without": 422.1073353722017,
-    "ev_delta": 0.04353320313534584,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 3,
-    "sim_delta": 0.09555855173142348,
-    "dps_with": 438.23010540620317,
-    "dps_without": 400.00610164890156,
-    "ev_delta": 0.09505370931749789,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10117119242869994,
-    "dps_with": 438.23010540620317,
-    "dps_without": 397.96728103616664,
-    "ev_delta": 0.11703864938423045,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r6": [
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015425654119130676,
-    "dps_with": 356.1584912887954,
-    "dps_without": 350.7479743534336,
-    "ev_delta": 0.01593778361944787,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.027056802628966117,
-    "dps_with": 356.1584912887954,
-    "dps_without": 346.7758456758511,
-    "ev_delta": 0.0018647571346914282,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.027606171719783582,
-    "dps_with": 356.1584912887954,
-    "dps_without": 346.5904556535845,
-    "ev_delta": 0.0365502229408352,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": -0.0036492393198136893,
-    "dps_with": 356.1584912887954,
-    "dps_without": 357.462959174793,
-    "ev_delta": 0.046236121106280816,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wrath",
-    "ranks": 4,
-    "sim_delta": 0.0,
-    "dps_with": 356.1584912887954,
-    "dps_without": 356.1584912887954,
-    "ev_delta": 6.730589180179362e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09065375948045244,
-    "dps_with": 356.1584912887954,
-    "dps_without": 326.5550484678623,
-    "ev_delta": 0.09865029691275348,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999996,
-    "dps_with": 356.1584912887954,
-    "dps_without": 323.78044662617765,
-    "ev_delta": 0.09998272625500793,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 1,
-    "sim_delta": 0.06703988810070272,
-    "dps_with": 356.1584912887954,
-    "dps_without": 333.781796969883,
-    "ev_delta": 1.682562360274713e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.09600337313357446,
-    "dps_with": 356.1584912887954,
-    "dps_without": 324.9611269630544,
-    "ev_delta": 0.062347644862962924,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.04999999999999997,
-    "dps_with": 356.1584912887954,
-    "dps_without": 339.1985631321861,
-    "ev_delta": 0.04999175564788509,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 356.1584912887954,
-    "dps_without": 356.1584912887954,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": -0.004331605199551035,
-    "dps_with": 356.1584912887954,
-    "dps_without": 357.7079408653685,
-    "ev_delta": 0.009742454928681256,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.0313233458459175,
-    "dps_with": 356.1584912887954,
-    "dps_without": 345.341247944567,
-    "ev_delta": 0.028018747862193376,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.0505579483252318,
-    "dps_with": 356.1584912887954,
-    "dps_without": 339.01841574429346,
-    "ev_delta": 0.048707129572242616,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.04703725739062299,
-    "dps_with": 356.1584912887954,
-    "dps_without": 340.158374284022,
-    "ev_delta": 0.014533648352396279,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 1,
-    "sim_delta": 0.03278055919513622,
-    "dps_with": 356.1584912887954,
-    "dps_without": 344.8539848255431,
-    "ev_delta": 1.682562360274713e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10042744810340924,
-    "dps_with": 356.1584912887954,
-    "dps_without": 323.6546779186905,
-    "ev_delta": 0.11703416647475663,
-    "apl_dependent": false
-   }
-  ],
-  "cand-balance-dps-r7": [
-   {
-    "talent": "Ferocity",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 413.28617022577737,
-    "dps_without": 413.28617022577737,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Genesis",
-    "ranks": 5,
-    "sim_delta": 0.015677009378765577,
-    "dps_with": 413.28617022577737,
-    "dps_without": 406.90708405279554,
-    "ev_delta": 0.015938445454763805,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Heart of the Wild",
-    "ranks": 5,
-    "sim_delta": 0.02357604583921132,
-    "dps_with": 413.28617022577737,
-    "dps_without": 403.7669422860825,
-    "ev_delta": 0.027207783935525098,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Moonfire",
-    "ranks": 2,
-    "sim_delta": 0.030294428774873483,
-    "dps_with": 413.28617022577737,
-    "dps_without": 401.13404351532535,
-    "ev_delta": 0.03655177152796178,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Starfire",
-    "ranks": 5,
-    "sim_delta": 0.029523570146528566,
-    "dps_with": 413.28617022577737,
-    "dps_without": 401.4343937428803,
-    "ev_delta": 0.046238098378840464,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wrath",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 413.28617022577737,
-    "dps_without": 413.28617022577737,
-    "ev_delta": 0.0007867555043074138,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Insect Swarm",
-    "ranks": 1,
-    "sim_delta": 0.09419212802280522,
-    "dps_with": 413.28617022577737,
-    "dps_without": 377.70895955226945,
-    "ev_delta": 0.09865472702001417,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonfury",
-    "ranks": 5,
-    "sim_delta": 0.09999999999999953,
-    "dps_with": 413.28617022577737,
-    "dps_without": 375.7147002052523,
-    "ev_delta": 0.09998722164351298,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonglow",
-    "ranks": 3,
-    "sim_delta": 0.23819265753149518,
-    "dps_with": 413.28617022577737,
-    "dps_without": 333.781796969883,
-    "ev_delta": 0.2070478475076523,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Moonkin Form",
-    "ranks": 1,
-    "sim_delta": 0.08432683195436247,
-    "dps_with": 413.28617022577737,
-    "dps_without": 381.14538720846843,
-    "ev_delta": 0.08049259109487739,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Naturalist",
-    "ranks": 5,
-    "sim_delta": 0.049999999999999954,
-    "dps_with": 413.28617022577737,
-    "dps_without": 393.6058764055023,
-    "ev_delta": 0.04999390120352539,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Focus",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 413.28617022577737,
-    "dps_without": 413.28617022577737,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Grace",
-    "ranks": 1,
-    "sim_delta": 0.005004426616062069,
-    "dps_with": 413.28617022577737,
-    "dps_without": 411.22820883222187,
-    "ev_delta": 0.009742857028438722,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Majesty",
-    "ranks": 2,
-    "sim_delta": 0.0346374957532831,
-    "dps_with": 413.28617022577737,
-    "dps_without": 399.4502150967168,
-    "ev_delta": 0.028019925210250582,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Reach",
-    "ranks": 2,
-    "sim_delta": 0.045224044765390395,
-    "dps_with": 413.28617022577737,
-    "dps_without": 395.40438463462925,
-    "ev_delta": 0.048704985690712736,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Nature's Splendor",
-    "ranks": 1,
-    "sim_delta": 0.04239699786157607,
-    "dps_with": 413.28617022577737,
-    "dps_without": 396.47674645419426,
-    "ev_delta": 0.04532419864473128,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reflection",
-    "ranks": 1,
-    "sim_delta": 0.03319966501044066,
-    "dps_with": 413.28617022577737,
-    "dps_without": 400.00610164890156,
-    "ev_delta": 0.03229166315617089,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Vengeance",
-    "ranks": 5,
-    "sim_delta": 0.10079096702110973,
-    "dps_with": 413.28617022577737,
-    "dps_without": 375.44473256733386,
-    "ev_delta": 0.11703951009783725,
-    "apl_dependent": false
-   }
-  ]
- }
+ "deltas": {}
 }

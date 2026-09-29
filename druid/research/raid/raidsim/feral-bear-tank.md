@@ -4,15 +4,15 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `feral-bear-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.7% |
-| `opt-feral-bear-tank-raid-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.7% |
-| `cand-feral-bear-tank-r4` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.7% |
-| `cand-feral-bear-tank-r5` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.7% |
-| `cand-feral-bear-tank-r6` | 7/36/8 | 0.987 | 781 | 990 | 424 | 0 | +53.6% |
-| `cand-feral-bear-tank-hand-2026-09-27` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.3% |
-| `cand-feral-bear-tank-r1` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.3% |
-| `cand-feral-bear-tank-r2` | 0/36/15 | 0.923 | 679 | 990 | 389 | 0 | +42.2% |
-| `cand-feral-bear-tank-r3` | 0/35/16 | 0.923 | 679 | 990 | 385 | 0 | +42.2% |
+| `feral-bear-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `opt-feral-bear-tank-raid-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r4` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r5` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r6` | 7/36/8 | 0.987 | 781 | 990 | 424 | 0 | +53.7% |
+| `cand-feral-bear-tank-hand-2026-09-27` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.4% |
+| `cand-feral-bear-tank-r1` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.4% |
+| `cand-feral-bear-tank-r2` | 0/36/15 | 0.923 | 679 | 990 | 389 | 0 | +42.3% |
+| `cand-feral-bear-tank-r3` | 0/35/16 | 0.923 | 679 | 990 | 385 | 0 | +42.3% |
 | sim preset: Bear Tank 0/31/20 | - | 0.859 | 614 | 1040 | 362 | 0 | - |
 | `cand-feral-bear-tank-hand-2026-09-26` | 9/32/10 | 0.858 | 630 | 1064 | 372 | 0 | +32.7% |
 
