@@ -245,7 +245,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/warlock.md`](../../_reference/data/scorer/changes/warlock.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/warlock.md`](../../../_reference/data/scorer/changes/warlock.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -255,4 +255,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: The Shadow Bolt raid build is 10/11/30: Demonic Sacrifice plus 30 Destruction for Conflagrate → Shadow and Flame (+10% Shadow), so DS/Ruin survives in a new shape. Affliction 31/11/9 is a real DoT spec (Malevolence, Pandemic, Soul Siphon, Drain Hope) with Demonic Sacrifice. Fire Destruction 9/11/31 (Aftermath, Conflagrate, Fire and Brimstone, Incinerate) scores +164% against its own baseline; leveling stays Affliction with a Voidwalker (31/16/4).
 
-Beta hypotheses (model claims without community precedent, unverified): Fire Destruction's +164% is against its own baseline, not comparable to Shadow; Drain Hope and Soul Siphon numbers; Demonic Pact keeping Demonic Sacrifice. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Fire Destruction's +164% is against its own baseline, not comparable to Shadow; Drain Hope and Soul Siphon numbers; Demonic Pact keeping Demonic Sacrifice. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

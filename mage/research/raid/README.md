@@ -208,7 +208,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/mage.md`](../../_reference/data/scorer/changes/mage.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/mage.md`](../../../_reference/data/scorer/changes/mage.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -218,4 +218,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Arcane Meditation (17%/rank) pulls every build 15+ points into Arcane; raid Frost is Shatter + Fingers of Frost with no Winter's Chill; Frost still out-levels Fire (+43% vs +31% time saved). The AoE build now follows the Classic AoE loop (Improved Frost Nova 15-16, Permafrost, Improved Blizzard 20-22, Arctic Reach, Cold Snap, Ice Block, Ice Barrier at 40, no Frostbite) and keeps Shatter/Fingers of Frost because Forever's versions are stronger.
 
-Beta hypotheses (model claims without community precedent, unverified): The AoE build keeping Shatter 3 + Fingers of Frost 2 and dropping Improved Cone of Cold; the ~9 h Frost-over-Fire leveling gap assumes equal talentless baselines; Arcane Meditation at 17%/rank. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): The AoE build keeping Shatter 3 + Fingers of Frost 2 and dropping Improved Cone of Cold; the ~9 h Frost-over-Fire leveling gap assumes equal talentless baselines; Arcane Meditation at 17%/rank. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

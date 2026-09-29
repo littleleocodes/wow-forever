@@ -19,7 +19,7 @@ Before the pull: cast Faerie Fire; cast Tiger's Fury.
 4. If combo points ≥ 3.75 and not Rip is on the target: cast Rip
 5. Cast Shred
 6. If Faerie Fire should be refreshed: cast Faerie Fire
-7. Cast item 10646
+7. Cast Goblin Sapper Charge
 8. If not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune
 9. If not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion
 10. If not Cat Form is up: cast Cat Form

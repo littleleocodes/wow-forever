@@ -35,11 +35,12 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | +0.0% | 504 | +0.0% | 0 s |
-| 2 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.4% | 503 | -0.2% | 0 s |
-| 3 | *Elemental 31/6/14* | community simulator | - | 393 | -1.0% | 498 | -1.3% | 0 s |
-| 4 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.1% | 493 | -2.2% | 2 s |
-| 5 | *Level 60* | community simulator | - | 379 | -4.5% | 477 | -5.4% | 0 s |
+| 1 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 398 | +0.0% | - | - | 0 s |
+| 2 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | -0.1% | 504 | +0.0% | 0 s |
+| 3 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.5% | 503 | -0.2% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 393 | -1.1% | 498 | -1.3% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.2% | 493 | -2.2% | 2 s |
+| 6 | *Level 60* | community simulator | - | 379 | -4.6% | 477 | -5.4% | 0 s |
 
 **enhancement-dps**
 
@@ -89,19 +90,12 @@ The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-rai
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 397 | +0.0% | 0 | +75% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r1` | 29/22/0 | 397 | +0.0% | 0 | +75% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r2` | 29/22/0 | 397 | +0.0% | 0 | +75% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r7` | 31/7/13 | 397 | -0.2% | 0 | +74% |
-| `elemental-dps` | dummy | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | -0.4% | 0 | +75% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r3` | 29/22/0 | 396 | -0.4% | 0 | +75% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r4` | 29/22/0 | 396 | -0.4% | 0 | +75% |
-| `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 393 | -1.0% | 0 | - |
-| `elemental-dps` | dummy | `cand-elemental-dps-r6` | 30/11/10 | 392 | -1.3% | 0 | +72% |
-| `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 382 | -3.9% | 0 | +67% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r5` | 16/22/13 | 382 | -3.9% | 0 | +66% |
-| `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 381 | -4.1% | 2 | - |
-| `elemental-dps` | dummy | sim preset: Level 60 | - | 379 | -4.5% | 0 | - |
+| `elemental-dps` | dummy | `elemental-raid` | 31/7/13 | 398 | +0.0% | 0 | +74% |
+| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 397 | -0.1% | 0 | +75% |
+| `elemental-dps` | dummy | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | -0.5% | 0 | +75% |
+| `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 393 | -1.1% | 0 | - |
+| `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 381 | -4.2% | 2 | - |
+| `elemental-dps` | dummy | sim preset: Level 60 | - | 379 | -4.6% | 0 | - |
 | `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 415 | +0.0% | 7 | +110% |
 | `enhancement-dps` | dummy | `cand-enhancement-dps-r7` | 11/31/9 | 415 | +0.0% | 7 | +110% |
 | `enhancement-dps` | dummy | `enhancement-raid-dps` | 11/31/9 | 411 | -0.9% | 7 | +107% |
@@ -177,7 +171,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/shaman.md`](../../_reference/data/scorer/changes/shaman.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/shaman.md`](../../../_reference/data/scorer/changes/shaman.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -187,4 +181,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Restoration 0/10/41: Water Shield and Riptide are the new core and Enhancement's Thundering Strikes crits heals. Elemental 31/6/14 adds Lava Burst, Lightning Overload and Elemental Alacrity with Tidal Focus/Water Shield for mana. Enhancement 19/32/0 (Stormstrike, Maelstrom Weapon, Flurry, Elemental Weapons) takes Elemental's shock talents; leveling Enhancement goes 0/34/17 for Water Shield.
 
-Beta hypotheses (model claims without community precedent, unverified): Water Shield's globe rate (encoded as ~+18% healer mana); Maelstrom Weapon's stack chance; Enhancement vs Elemental leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Water Shield's globe rate (encoded as ~+18% healer mana); Maelstrom Weapon's stack chance; Enhancement vs Elemental leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

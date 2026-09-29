@@ -55,9 +55,53 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 5. **Lethal Attacks** — The scorer's value in this build: +12.9% of its score (model bm-leveling).
 6. **Frenzy** — The scorer's value in this build: +11.8% of its score (model bm-leveling).
 
-## Rotation
+## Rank among our builds and the community simulator's
 
-Not simulated in the community simulator (no spec model of this playstyle there); see the [raid README](../README.md).
+**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+
+| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 469 | +0.0% | - | - | 10 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 468 | -0.1% | 815 | +0.0% | 0 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.7% | 763 | -6.3% | 0 s |
+
+## Rotation (community simulator, training dummy)
+
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 469 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.2%)):
+  1. drop: use every other cooldown when ready (+3.0%, pass 1)
+  2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
+  3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
+  4. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+2.8%, pass 1)
+  5. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.8%, pass 1)
+  6. move down below 'cast Summon Hawk': if time left on Serpent Sting < 1s: cast Serpent Sting (+0.9%, pass 1)
+  7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
+  8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
+  9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: mm-hawk-raid 792 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 764 DPS (+2.7%)):
+  1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
+  2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
+  3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
+  4. threshold 0.75s -> 0.25s: if time left on Serpent Sting < 0.75s and mana % ≥ 30%: cast Serpent Sting + move to the top: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.3%, pass 3)
+
+Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+
+| # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](beast-mastery-raid.md) casts/min |
+|---|---|---|
+| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.5 |
+| 2 | cast Summon Hawk | 10.0 |
+| 3 | use every other cooldown when ready | as ready |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 |
+
+Damage by ability:
+
+| Ability | [`beast-mastery-raid`](beast-mastery-raid.md) |
+|---|---|
+| Auto Shot | 40% |
+| Summon Hawk | 28% |
+| Serpent Sting | 20% |
+| Pet: Auto Attack | 8% |
+| Pet: Claw | 2% |
+| Pet: Bite | 1% |
 
 ## Notes
 

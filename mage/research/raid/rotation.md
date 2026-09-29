@@ -15,11 +15,11 @@ Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missile
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. if mana % ≤ 80%: cast item 8008
+1. if mana % ≤ 80%: cast Mana Ruby (mana gem)
 2. use every other cooldown when ready
 3. if mana % < 20% and time left in the fight > 25s: cast Evocation
 4. if Fingers of Frost is up: cast Ice Lance
-5. if spell 44404 is known and spell 44404 is up: cast Arcane Missiles
+5. if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles
 6. cast Frostbolt
 
 The tables below are the training-dummy rotation, filtered per build:
@@ -28,10 +28,10 @@ The tables below are the training-dummy rotation, filtered per build:
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-fingers-of-frost-raid`](builds/frost-fingers-of-frost-raid.md) casts/min | [`opt-frost-raid-raid-dps`](builds/opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready |
 | 3 | if Fingers of Frost is up: cast Ice Lance | 4.4 | 4.4 |
-| 4 | if spell 44404 is known and spell 44404 is up: cast Arcane Missiles | 3.6 | 3.6 |
+| 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.6 | 3.6 |
 | 5 | cast Frostbolt | 17.9 | 17.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights).
@@ -48,7 +48,7 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps-extwc`](builds/opt-frost-raid-raid-dps-extwc.md) casts/min | *Frost 14/0/37* casts/min | *Frost DPS* casts/min |
 |---|---|---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready | as ready | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready |
 | 3 | if Fingers of Frost is up: cast Ice Lance | 5.1 | 5.1 | 5.1 |
 | 4 | cast Frostbolt | 21.0 | 20.6 | 21.0 |
@@ -66,9 +66,9 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-arcane-power-raid`](builds/frost-arcane-power-raid.md) casts/min | *Arcane 35/0/16* casts/min | *Arcane DPS* casts/min |
 |---|---|---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready | as ready | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready |
-| 3 | if spell 44404 is known and spell 44404 is up: cast Arcane Missiles | 4.0 | 3.5 | 3.4 |
+| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 4.0 | 3.5 | 3.4 |
 | 4 | cast Frostbolt | 20.1 | 17.3 | 17.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent).
@@ -84,7 +84,7 @@ Damage by ability:
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](builds/frost-winters-chill-raid.md) casts/min | *Fire 0/35/16* casts/min | *Fire DPS* casts/min |
 |---|---|---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready | as ready | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready |
 | 3 | cast Frostbolt | 24.0 | 20.0 | 20.0 |
 
@@ -121,7 +121,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 1. cast Fire Blast
 2. if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 7.5s): cast Scorch
-3. if mana % ≤ 80%: cast item 8008
+3. if mana % ≤ 80%: cast Mana Ruby (mana gem)
 4. use every other cooldown when ready
 5. if stacks of Hot Streak = 3: cast Pyroblast
 6. if mana % ≥ 10% and time left in the fight ≥ 3s: cast Fireball
@@ -134,13 +134,13 @@ The tables below are the training-dummy rotation, filtered per build:
 | # | Priority (the first line whose condition holds is cast) | [`fire-raid`](builds/fire-raid.md) casts/min | [`opt-fire-raid-raid-dps`](builds/opt-fire-raid-raid-dps.md) casts/min | *Fire DPS* casts/min |
 |---|---|---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 5.5 | 5.5 | 5.5 |
-| 2 | if mana % ≤ 80%: cast item 8008 | as ready | as ready | as ready |
+| 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.4 | 0.4 | 0.1 |
 | 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.4 | 1.4 | 1.4 |
 | 6 | cast Fire Blast | 7.2 | 7.2 | 7.3 |
 | 7 | if mana % ≥ 10%: cast Fireball | 11.3 | 11.3 | 11.1 |
-| 8 | if spell 44404 is up: cast Arcane Missiles | 0.1 | 0.1 | 0.2 |
+| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.1 | 0.1 | 0.2 |
 | 9 | cast Scorch | 1.1 | 1.1 | 2.8 |
 
 Damage by ability:
@@ -159,7 +159,7 @@ Damage by ability:
 | # | Priority (the first line whose condition holds is cast) | *Fire 0/35/16* casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 5.9 |
-| 2 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.5 |
 | 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.3 |
@@ -184,11 +184,11 @@ Damage by ability:
 | # | Priority (the first line whose condition holds is cast) | *Arcane DPS* casts/min |
 |---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 9.6 |
-| 2 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Fire Blast | 6.0 |
 | 5 | if mana % ≥ 10%: cast Fireball | 10.4 |
-| 6 | if spell 44404 is up: cast Arcane Missiles | 0.1 |
+| 6 | if Missile Barrage is up: cast Arcane Missiles | 0.1 |
 | 7 | cast Scorch | 0.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Pyroblast (needs the Pyroblast talent).
@@ -208,7 +208,7 @@ Damage by ability:
 | # | Priority (the first line whose condition holds is cast) | *Arcane 35/0/16* casts/min | *Frost 14/0/37* casts/min | *Frost DPS* casts/min |
 |---|---|---|---|---|
 | 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 40.0 | 40.0 | 40.0 |
-| 2 | if mana % ≤ 80%: cast item 8008 | as ready | as ready | as ready |
+| 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation, cast Fire Blast, cast Fireball, cast Arcane Missiles, cast Scorch (its condition never held in these fights); cast Pyroblast (needs the Pyroblast talent).
@@ -243,7 +243,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 1. use every other cooldown when ready
 2. if mana % < 15% and time left in the fight > 20s: cast Evocation
 3. cast Fire Blast
-4. if spell 44404 is up: cast Arcane Missiles
+4. if Missile Barrage is up: cast Arcane Missiles
 5. if (stacks of Arcane Blast ≥ 1.5 or mana % < 40%): cast Frostbolt
 6. cast Arcane Blast
 
@@ -255,7 +255,7 @@ The tables below are the training-dummy rotation, filtered per build:
 |---|---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready | as ready |
 | 2 | cast Fire Blast | 9.5 | 9.5 | 6.8 |
-| 3 | if spell 44404 is up: cast Arcane Missiles | 5.3 | 5.3 | 5.4 |
+| 3 | if Missile Barrage is up: cast Arcane Missiles | 5.3 | 5.3 | 5.4 |
 | 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 | 0.2 | 1.8 |
 | 5 | cast Arcane Blast | 13.2 | 13.2 | 12.6 |
 
@@ -296,13 +296,13 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 1. cast Berserking
 2. if mana ≥ (time left in the fight × 82.5): cast Fire Blast
 3. if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch
-4. if mana % ≤ 80%: cast item 8008
+4. if mana % ≤ 80%: cast Mana Ruby (mana gem)
 5. use every other cooldown when ready
 6. if mana % < 20% and time left in the fight > 25s: cast Evocation
 7. if stacks of Hot Streak = 3: cast Pyroblast
 8. cast Fire Blast
 9. if mana % ≥ 10%: cast Frostfire Bolt
-10. if spell 44404 is up: cast Arcane Missiles
+10. if Missile Barrage is up: cast Arcane Missiles
 11. cast Scorch
 
 The tables below are the training-dummy rotation, filtered per build:
@@ -313,7 +313,7 @@ The tables below are the training-dummy rotation, filtered per build:
 |---|---|---|
 | 1 | cast Berserking | 0.5 |
 | 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 5.1 |
-| 3 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if stacks of Hot Streak = 3: cast Pyroblast | 0.7 |
 | 6 | cast Fire Blast | 5.5 |

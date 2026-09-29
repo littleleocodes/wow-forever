@@ -100,7 +100,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 7. cast Shred
 8. if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form
 9. if Faerie Fire should be refreshed: cast Faerie Fire
-10. if not Cat Form is up: cast item 10646
+10. if not Cat Form is up: cast Goblin Sapper Charge
 11. if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune
 12. if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion
 13. if not Cat Form is up and mana % ≤ 80% and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast spell 23724
@@ -120,7 +120,7 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 | 4.7 | 4.7 | 4.9 |
 | 5 | cast Shred | 17.4 | 17.4 | 17.4 | 17.8 |
 | 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.8 |
-| 7 | cast item 10646 | as ready | as ready | as ready | as ready |
+| 7 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready | as ready | as ready | as ready |
 | 10 | if not Cat Form is up: cast Cat Form | 0.5 | 0.5 | 0.5 | 0.5 |

@@ -199,7 +199,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/rogue.md`](../../_reference/data/scorer/changes/rogue.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/rogue.md`](../../../_reference/data/scorer/changes/rogue.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -208,4 +208,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.
 
-Beta hypotheses (model claims without community precedent, unverified): The Mutilate-over-swords margin (+92% vs +57%) and Restless Blades' cooldown maths; daggers vs swords leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): The Mutilate-over-swords margin (+92% vs +57%) and Restless Blades' cooldown maths; daggers vs swords leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

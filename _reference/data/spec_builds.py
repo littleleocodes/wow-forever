@@ -157,6 +157,23 @@ def generate(cls, tree, mode, a, tmp):
     return b, info
 
 
+def add_to_entry(cls, entry, bid):
+    """Append a build id to a specs.json entry's `builds` by a text edit (the file's hand layout stays)."""
+    sp = HERE / "raidsim" / "specs.json"
+    specs = json.load(open(sp, encoding="utf-8"))
+    if bid in specs[cls][entry].get("builds", []):
+        return
+    t = sp.read_text(encoding="utf-8")
+    c = t.index(f'"{cls}": {{')
+    e = t.index(f'"{entry}": {{', c)
+    b = t.index('"builds": [', e)
+    end = t.index("]", b)
+    inner = t[b + len('"builds": ['):end].strip()
+    t = t[:b] + '"builds": [' + (inner + ", " if inner else "") + f'"{bid}"' + t[end:]
+    sp.write_text(t, encoding="utf-8")
+    assert bid in json.load(open(sp, encoding="utf-8"))[cls][entry]["builds"]
+
+
 def fightlab_numbers(cls, bid, spec):
     """Time per kill at 20-60 in the fight lab, in a fresh process (the fight lab's modules clash with the raid sim's by name)."""
     code = (f"import sys,json; sys.path.insert(0, {str(HERE / 'fightlab')!r}); import run\n"
@@ -192,6 +209,11 @@ def main():
                 res.setdefault(cls, {})[b["id"]] = dict(info, spec=t, mode=m, date=TODAY)
                 print(f"  {b['id']}: {'/'.join(str(sum(r for _, r in v)) for v in b['allocation'].values())}", flush=True)
         bp.write_text(dumps(data) + "\n", encoding="utf-8")
+        # a generated raid build races in its simulator entry, so the rankings and pages carry its numbers (run.py --write afterwards)
+        entries = {info["entry"]: bid for bid, info in res.get(cls, {}).items() if info.get("entry")}
+        if entries and not a.dry_run:
+            for entry, bid in entries.items():
+                add_to_entry(cls, entry, bid)
         for bid, info in res.get(cls, {}).items():
             if info["mode"] == "leveling" and "levels" not in info:
                 info["levels"] = fightlab_numbers(cls, bid, info["model"])

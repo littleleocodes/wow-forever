@@ -177,7 +177,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/druid.md`](../../_reference/data/scorer/changes/druid.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/druid.md`](../../../_reference/data/scorer/changes/druid.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -188,4 +188,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Restoration 11/5/35 keeps Swiftmend and adds Wild Growth, Gift of the Earthmother and Genesis. Cat 9/35/7 (Rend and Tear, King of the Jungle, Berserk, Predatory Instincts) and Bear 9/40/2 (Mangle, Natural Reaction) share Heart of the Wild, Predatory Strikes and Leader of the Pack. Balance 38/0/13 gets Eclipse, Nature's Grace and Vengeance; Cat leveling goes 0/35/16.
 
-Beta hypotheses (model claims without community precedent, unverified): Balance vs Cat leveling assumes equal talentless baselines (Classic favours Cat); King of the Jungle, Berserk and Rend and Tear values; Wild Growth and Gift of the Earthmother throughput. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Balance vs Cat leveling assumes equal talentless baselines (Classic favours Cat); King of the Jungle, Berserk and Rend and Tear values; Wild Growth and Gift of the Earthmother throughput. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

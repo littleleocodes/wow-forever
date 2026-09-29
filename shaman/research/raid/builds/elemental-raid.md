@@ -55,9 +55,54 @@ The best Elemental raid build with at least 30 points in Elemental, generated on
 5. **Concussion** — The scorer's value in this build: +9.4% of its score (model elemental-dps).
 6. **Call of Flame** — The scorer's value in this build: +8.2% of its score (model elemental-dps).
 
-## Rotation
+## Rank among our builds and the community simulator's
 
-Not simulated in the community simulator (no spec model of this playstyle there); see the [raid README](../README.md).
+**1 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+
+| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **[`elemental-raid`](elemental-raid.md)** | ours: hand draft | 31/7/13 | 398 | +0.0% | - | - | 0 s |
+| 2 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | -0.1% | 504 | +0.0% | 0 s |
+| 3 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.5% | 503 | -0.2% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 393 | -1.1% | 498 | -1.3% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.2% | 493 | -2.2% | 2 s |
+| 6 | *Level 60* | community simulator | - | 379 | -4.6% | 477 | -5.4% | 0 s |
+
+## Rotation (community simulator, training dummy)
+
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 387 -> 397 DPS (+2.4%), sim preset: Elemental 31/6/14 378 -> 393 DPS (+4.1%)):
+  1. always rank 2 instead of rank 4: cast Lightning Bolt (+5.2%, pass 1)
+  2. only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
+  3. always rank 8 instead of rank 10: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.3%, pass 1)
+  4. always rank 7 instead of rank 8: if mana ≥ (time left in the fight × 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.2%, pass 1)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 495 -> 497 DPS (+0.3%), sim preset: Elemental 31/6/14 494 -> 497 DPS (+0.5%)):
+  1. only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
+  2. always rank 2 instead of rank 4: cast Lightning Bolt (+0.4%, pass 1)
+  3. threshold 100 -> 200: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+0.2%, pass 2)
+
+Before the pull: at -2s: cast Lightning Bolt.
+
+| # | Priority (the first line whose condition holds is cast) | [`elemental-raid`](elemental-raid.md) casts/min |
+|---|---|---|
+| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 4.9 |
+| 4 | cast Lava Burst | 4.5 |
+| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.0 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 19.5 |
+| 7 | cast Lightning Bolt | 0.5 |
+
+Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
+
+Damage by ability:
+
+| Ability | [`elemental-raid`](elemental-raid.md) |
+|---|---|
+| Lightning Bolt | 59% |
+| Flame Shock | 15% |
+| Lava Burst | 15% |
+| Attack | 7% |
+| Chain Lightning | 5% |
 
 ## Notes
 

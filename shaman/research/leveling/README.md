@@ -55,7 +55,7 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/shaman.md`](../../_reference/data/scorer/changes/shaman.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/shaman.md`](../../../_reference/data/scorer/changes/shaman.md).
 When to respec while leveling, with the best point-by-point path: [respec plan](respec-plan.md) (its level-30/40 plans usually out-level the `opt-*-leveling-st` order, which plays toward the 60 build from level 10).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
@@ -66,4 +66,4 @@ When to respec while leveling, with the best point-by-point path: [respec plan](
 
 Model findings: Restoration 0/10/41: Water Shield and Riptide are the new core and Enhancement's Thundering Strikes crits heals. Elemental 31/6/14 adds Lava Burst, Lightning Overload and Elemental Alacrity with Tidal Focus/Water Shield for mana. Enhancement 19/32/0 (Stormstrike, Maelstrom Weapon, Flurry, Elemental Weapons) takes Elemental's shock talents; leveling Enhancement goes 0/34/17 for Water Shield.
 
-Beta hypotheses (model claims without community precedent, unverified): Water Shield's globe rate (encoded as ~+18% healer mana); Maelstrom Weapon's stack chance; Enhancement vs Elemental leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Water Shield's globe rate (encoded as ~+18% healer mana); Maelstrom Weapon's stack chance; Enhancement vs Elemental leveling assumes equal talentless baselines. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

@@ -54,6 +54,10 @@ class Names:
                 for t in tr["talents"]:
                     if t.get("spellId"):
                         self.spells.setdefault(int(t["spellId"]), t["fancyName"])
+        # ids the simulator's database leaves unnamed (Classic 1.12 item ids; 44404 is the simulator's own Missile Barrage aura, talents_arcane.go)
+        for iid, name in {8008: "Mana Ruby (mana gem)", 10646: "Goblin Sapper Charge", 18641: "Dense Dynamite"}.items():
+            self.consumables.setdefault(iid, name)
+        self.spells.setdefault(44404, "Missile Barrage")
         self.unknown = set()
 
     def spell(self, sid):

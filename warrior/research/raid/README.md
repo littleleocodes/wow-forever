@@ -171,7 +171,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/warrior.md`](../../_reference/data/scorer/changes/warrior.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/warrior.md`](../../../_reference/data/scorer/changes/warrior.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -181,4 +181,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Dual-wield Fury 18/33/0 and two-hander Fury 19/32/0 score within 2% of each other and both beat the Arms draft; Bloodthirst, Flurry, Enrage, Unbridled Wrath and Anger Management are the raid core in every DPS build. Protection 6/5/40 takes the deep Protection rows (Vitality, Focused Rage, Bastion, Shield Slam) plus Anticipation/Improved Shield Wall now that defense and armor are priced from their arithmetic.
 
-Beta hypotheses (model claims without community precedent, unverified): Values of the new talents (Bloodthrill, Spearing Strike, Weaponmaster, Bastion, Vitality); dual-wield vs two-hander leveling assumes equal talentless baselines; Unbridled Wrath at 60%. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Values of the new talents (Bloodthrill, Spearing Strike, Weaponmaster, Bastion, Vitality); dual-wield vs two-hander leveling assumes equal talentless baselines; Unbridled Wrath at 60%. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

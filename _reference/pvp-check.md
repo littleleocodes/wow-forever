@@ -25,12 +25,12 @@ Mean overlap 67%.
 
 ## Forever hand drafts
 
-Mean overlap 62%.
+Mean overlap 61%.
 
 | Class | Model | Build | Build split | Optimum | Overlap | Build lacks | Optimum lacks |
 |---|---|---|---|---|---|---|---|
 | druid | resto-heal | pvp-resto | 14/0/37 | 7/13/31 | 67% | Brutal Impact +2, Feral Charge +1, Feral Instinct +3, Feral Swiftness +2, Heart of the Wild +5, Living Spirit +3, Wild Growth +1 | Improved Entangling Roots +3, Improved Regrowth +5, Improved Rejuvenation +3, Moonglow +1, Nature's Majesty +2, Nature's Splendor +1, Reflection +2 |
-| hunter | mm-raid | pvp-mm-surv | 0/31/20 | 1/21/29 | 55% | Deadly Aspects +1, Deflection +5, Entrapment +3, Hawk Eye +3, Improved Stings +2, Lightning Reflexes +1, Rapid Killing +2, Strider Kick +1, Survivalist +3, Survivalist's Discipline +2 | Barrage +3, Clever Traps +1, Improved Tracking +5, Lethal Attacks +5, Mortal Shots +4, Ranged Weapon Specialization +5 |
+| hunter | mm-raid | pvp-mm-surv | 0/31/20 | 0/21/30 | 49% | Deflection +5, Entrapment +3, Hawk Eye +3, Improved Arcane Shot +5, Improved Stings +2, Lightning Reflexes +2, Strider Kick +1, Survivalist +3, Survivalist's Discipline +2 | Barrage +3, Careful Aim +2, Clever Traps +1, Improved Tracking +5, Lethal Attacks +5, Mortal Shots +5, Ranged Weapon Specialization +5 |
 | mage | frost-leveling | pvp-frost | 20/0/31 | 17/0/34 | 76% | Arcane Focus +2, Arcane Geometry +2, Arctic Reach +1, Elemental Precision +2, Frostbite +3, Magic Absorption +2 | Arcane Blast +1, Arcane Concentration +2, Arcane Meditation +3, Arcane Resilience +1, Improved Cone of Cold +3, Wand Specialization +2 |
 | paladin | holy-heal | pvp-shockadin | 31/0/20 | 22/24/5 | 37% | Anticipation +1, Deflection +5, Divine Precision +1, Guardian's Favor +2, Improved Hammer of Justice +3, Improved Righteous Fury +3, Improved Seal of Fury +1, Precision +2, Purifying Power +2, Reckoning +3, Sacred Duty +2, Swift Judgement +1, Templar's Bulwark +1, Toughness +5 | Benediction +5, Conviction +5, Holy Power +5, Illumination +5, Improved Judgement +2, Light's Vigil +1, Pursuit of Justice +2, Reverence +1, Sanctified Judgement +3, Seal of Command +1, Vindication +2 |
 | priest | shadow-dps | shadow-pvp | 16/0/35 | 18/0/33 | 94% | Improved Mana Burn +2, Soul Warding +1 | Improved Mind Blast +2, Meditation +1 |

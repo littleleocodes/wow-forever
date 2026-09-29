@@ -66,12 +66,13 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 469 | +0.0% | 815 | +0.0% | 0 s |
-| 2 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.8% | 763 | -6.3% | 0 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 469 | +0.0% | - | - | 10 s |
+| 2 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 468 | -0.1% | 815 | +0.0% | 0 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.7% | 763 | -6.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

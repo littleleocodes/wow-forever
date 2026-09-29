@@ -195,6 +195,65 @@ def mode_section(cls, spec, mode, builds, nums, src):
     return o
 
 
+def ranking(cls, g, specs, mode, nums, prefix=""):
+    """One mode's specs, best first, as markdown lines. Leveling: level-weighted seconds per kill (fight lab, the same simulator for every
+    spec, so specs compare). Raid: damage specs by training-dummy DPS, then tanks and healers (other jobs, their own measures). PvP: no
+    simulator plays PvP, so it is a list, not a ranking."""
+    R, L, H = nums
+    rows = []
+    for spec in specs:
+        ranked = rank_builds(cls, mode, g[spec][mode], nums)
+        if ranked:
+            rows.append((spec, ranked[0]))
+    page = lambda spec: f"{prefix}{SM.slug(spec)}.md"   # noqa: E731
+    name = lambda spec, b: f"[{spec}]({page(spec)}) — {rs.display_name(cls, b)}" + (" (generated)" if b.get("generated") else "")   # noqa: E731
+    o = []
+    if mode == "leveling":
+        scored = sorted(((weighted(L.get(b["id"]) or {}), spec, b) for spec, b in rows if weighted(L.get(b["id"]) or {})), key=lambda x: x[0])
+        if not scored:
+            return ["No leveling numbers yet.", ""]
+        best = scored[0][0]
+        o += ["Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):", "",
+              "| # | Spec and build | Seconds per kill | Behind the fastest |", "|---|---|---|---|"]
+        o += [f"| {i} | {name(spec, b)} | {w:.0f} | {'fastest' if i == 1 else f'{w / best - 1:+.0%}'} |" for i, (w, spec, b) in enumerate(scored, 1)]
+        lv = [spec for spec in specs if not g[spec][mode] and SM.LEVEL_AS.get((cls, spec))]
+        if lv:
+            o += ["", "Healing and tanking specs level as a damage spec and switch at 60: "
+                  + ", ".join(f"{spec} levels as {SM.LEVEL_AS[(cls, spec)]}" for spec in lv) + "."]
+        o.append("")
+    elif mode == "raid":
+        dps, tanks, heals = [], [], []
+        for spec, b in rows:
+            if b.get("role") == "healer":
+                heals.append((-(H.get(b["id"], {}).get("capacity") or 0), spec, b))
+            elif (R.get(b["id"]) or {}).get("tank"):
+                tanks.append((spec, b))
+            elif (R.get(b["id"]) or {}).get("dps"):
+                dps.append((-R[b["id"]]["dps"], spec, b))
+        if dps:
+            dps.sort(key=lambda x: x[0])
+            best = -dps[0][0]
+            o += ["**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):", "",
+                  "| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |", "|---|---|---|---|---|"]
+            for i, (d, spec, b) in enumerate(dps, 1):
+                r = R[b["id"]]
+                o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | {r['raid']:.0f} |" if r.get("raid") else f"| {i} | {name(spec, b)} | {-d:.0f} | - |")
+                o[-1] += f" {'best' if i == 1 else f'{-d / best - 1:+.0%}'} |"
+            o.append("")
+        if tanks:
+            o += ["**Tanking**: " + ", ".join(name(spec, b) for spec, b in tanks) + ".", ""]
+        if heals:
+            heals.sort(key=lambda x: x[0])
+            o += ["**Healing**" + (" (ranked by the healer lab's capacity: the raid damage the healer keeps up with)" if len(heals) > 1 else "") + ": "
+                  + ", ".join(name(spec, b) + (f" ({-c:.2f})" if len(heals) > 1 and c else "") for c, spec, b in heals) + ".", ""]
+    else:
+        o += ["Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions "
+              "and the community's PvP builds.", ""]
+        o += [f"- {name(spec, b)}: {rs.split_of(cls, rs.flat(b))}" for spec, b in rows]
+        o.append("")
+    return o
+
+
 def cell(cls, spec, mode, builds, nums, src):
     R, L, H = nums
     ranked = rank_builds(cls, mode, builds, nums)
@@ -234,10 +293,9 @@ def class_pages(cls):
             o += mode_section(cls, spec, mode, g[spec][mode], nums, src)
             o += ["---", FOOT, ""]
             src.write_text("\n".join(o) + "\n", encoding="utf-8")
-        idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../START-HERE.md) > {SM.MODE_TITLE[mode]}", "",
-               "| Spec | Build |", "|---|---|"]
-        idx += [f"| [{spec}]({SM.slug(spec)}.md) | {cell(cls, spec, mode, g[spec][mode], nums, d / 'README.md').replace(f'{mode}/', '')} |" for spec in specs]
-        idx += ["", "---", FOOT, ""]
+        idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../START-HERE.md) > {SM.MODE_TITLE[mode]}", ""]
+        idx += ranking(cls, g, specs, mode, nums)
+        idx += ["Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.", "", "---", FOOT, ""]
         (d / "README.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
     src = ROOT / cls / "START-HERE.md"
     intro = ""
@@ -254,12 +312,16 @@ def class_pages(cls):
           "| Spec | Leveling | Raid (training dummy / parse) | PvP |", "|---|---|---|---|"]
     for spec in specs:
         o.append(f"| **{spec}** | " + " | ".join(cell(cls, spec, m, g[spec][m], nums, src) for m in SM.MODES) + " |")
+    o += ["", "## Which spec is best?", ""]
+    for m in SM.MODES:
+        o += [f"### {SM.MODE_TITLE[m]}", ""] + ranking(cls, g, specs, m, nums, prefix=f"{m}/")
+    o += ["Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.", ""]
     o += ["", "Hybrids spend their points across two trees (no tree reaches 30 points, or the build is made for a spell that needs both).", "",
           f"How the class works and what changed in Forever: [README.md](README.md). Every report, simulation and data file: [research/](research/).", "",
           "---", FOOT, ""]
     src.write_text("\n".join(o) + "\n", encoding="utf-8")
     best_lvl = min(((weighted(nums[1].get(b["id"]) or {}) or 1e9, b) for b in B.values() if SM.mode_of(b) == "leveling"), key=lambda x: x[0], default=(None, None))[1]
-    best_raid = max(((nums[0].get(b["id"]) or {}).get("dps") or 0, b) for b in B.values() if SM.mode_of(b) == "raid" and not (nums[0].get(b["id"]) or {}).get("tank"))
+    best_raid = max((((nums[0].get(b["id"]) or {}).get("dps") or 0, b) for b in B.values() if SM.mode_of(b) == "raid" and not (nums[0].get(b["id"]) or {}).get("tank")), key=lambda x: x[0])
     return {"cls": cls, "lvl": best_lvl, "raid": best_raid}
 
 

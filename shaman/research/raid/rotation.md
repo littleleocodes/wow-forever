@@ -31,6 +31,32 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
+### [`elemental-raid`](builds/elemental-raid.md) (ours: hand draft, 398 DPS), *Elemental 31/6/14* (community simulator, 393 DPS), *Level 60* (community simulator, 379 DPS)
+
+Before the pull: at -2s: cast Lightning Bolt.
+
+| # | Priority (the first line whose condition holds is cast) | [`elemental-raid`](builds/elemental-raid.md) casts/min | *Elemental 31/6/14* casts/min | *Level 60* casts/min |
+|---|---|---|---|---|
+| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 | 1.0 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 4.9 | 4.8 | 4.9 |
+| 4 | cast Lava Burst | 4.5 | 4.4 | 4.5 |
+| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.0 | 1.7 | 1.9 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 19.5 | 17.6 | 19.0 |
+| 7 | cast Lightning Bolt | 0.5 | 3.6 | 1.3 |
+
+Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
+
+Damage by ability:
+
+| Ability | [`elemental-raid`](builds/elemental-raid.md) | *Elemental 31/6/14* | *Level 60* |
+|---|---|---|---|
+| Lightning Bolt | 59% | 59% | 59% |
+| Flame Shock | 15% | 15% | 16% |
+| Lava Burst | 15% | 15% | 15% |
+| Attack | 7% | 7% | 7% |
+| Chain Lightning | 5% | 4% | 4% |
+
 ### [`elemental-raid-dps`](builds/elemental-raid-dps.md) (ours: hand draft, 397 DPS), [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) (ours: optimizer, 396 DPS)
 
 Before the pull: at -2s: cast Lightning Bolt.
@@ -53,32 +79,6 @@ Damage by ability:
 | Flame Shock | 17% | 17% |
 | Chain Lightning | 8% | 8% |
 | Attack | 6% | 6% |
-
-### *Elemental 31/6/14* (community simulator, 393 DPS), *Level 60* (community simulator, 379 DPS)
-
-Before the pull: at -2s: cast Lightning Bolt.
-
-| # | Priority (the first line whose condition holds is cast) | *Elemental 31/6/14* casts/min | *Level 60* casts/min |
-|---|---|---|---|
-| 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 |
-| 2 | use every other cooldown when ready | as ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 4.8 | 4.9 |
-| 4 | cast Lava Burst | 4.4 | 4.5 |
-| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 1.7 | 1.9 |
-| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 17.6 | 19.0 |
-| 7 | cast Lightning Bolt | 3.6 | 1.3 |
-
-Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
-
-Damage by ability:
-
-| Ability | *Elemental 31/6/14* | *Level 60* |
-|---|---|---|
-| Lightning Bolt | 59% | 59% |
-| Flame Shock | 15% | 16% |
-| Lava Burst | 15% | 15% |
-| Attack | 7% | 7% |
-| Chain Lightning | 4% | 4% |
 
 ### *Stormcaller 28/23/0* (community simulator, 381 DPS)
 

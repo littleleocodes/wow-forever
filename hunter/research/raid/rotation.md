@@ -165,7 +165,7 @@ Damage by ability:
 
 ## bm-raid
 
-Our tuned rotation `bm-raid.apl.json` (the simulator's `bm.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `bm-raid.apl.json` (the simulator's `bm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs.
 
@@ -198,27 +198,27 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 469 DPS), *Beast Mastery 35/16/0* (community simulator, 437 DPS)
+### [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 469 DPS), [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 468 DPS), *Beast Mastery 35/16/0* (community simulator, 437 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min |
-|---|---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.5 | 0.5 |
-| 2 | cast Summon Hawk | 10.0 | 10.0 |
-| 3 | use every other cooldown when ready | as ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 | 5.0 |
+| # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min |
+|---|---|---|---|---|
+| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.5 | 0.5 | 0.5 |
+| 2 | cast Summon Hawk | 10.0 | 10.0 | 10.0 |
+| 3 | use every other cooldown when ready | as ready | as ready | as ready |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 | 5.0 | 5.0 |
 
 Damage by ability:
 
-| Ability | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | *Beast Mastery 35/16/0* |
-|---|---|---|
-| Auto Shot | 42% | 40% |
-| Summon Hawk | 28% | 30% |
-| Serpent Sting | 20% | 17% |
-| Pet: Auto Attack | 7% | 9% |
-| Pet: Claw | 2% | 2% |
-| Pet: Bite | 1% | 1% |
+| Ability | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | *Beast Mastery 35/16/0* |
+|---|---|---|---|
+| Auto Shot | 40% | 42% | 40% |
+| Summon Hawk | 28% | 28% | 30% |
+| Serpent Sting | 20% | 20% | 17% |
+| Pet: Auto Attack | 8% | 7% | 9% |
+| Pet: Claw | 2% | 2% | 2% |
+| Pet: Bite | 1% | 1% | 1% |
 
 ## melee-dps
 

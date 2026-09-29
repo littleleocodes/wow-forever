@@ -29,8 +29,8 @@ Our tuned rotation `arms-2h-raid.apl.json` (the simulator's `dps_no_reck.apl.jso
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
-2. cast item 10646
-3. cast item 18641
+2. cast Goblin Sapper Charge
+3. cast Dense Dynamite
 4. if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish
 5. if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion
 6. if (time left in the fight ≤ 20s or time left in the fight ≥ 141.5s): cast Blood Fury
@@ -58,8 +58,8 @@ The tables below are the training-dummy rotation, filtered per build:
 | # | Priority (the first line whose condition holds is cast) | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) casts/min | [`arms-2h-raid`](builds/arms-2h-raid.md) casts/min | *DPS* casts/min | *Fury 17/34/0* casts/min |
 |---|---|---|---|---|---|
 | 1 | if execute phase (E20): cast Execute | 4.6 | 4.6 | 4.1 | 4.1 |
-| 2 | cast item 10646 | as ready | as ready | as ready | as ready |
-| 3 | cast item 18641 | as ready | as ready | as ready | as ready |
+| 2 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
+| 3 | cast Dense Dynamite | as ready | as ready | as ready | as ready |
 | 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 | 0.5 | 0.5 | 0.5 |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready | as ready |
@@ -90,8 +90,8 @@ Damage by ability:
 | # | Priority (the first line whose condition holds is cast) | *Arms 39/12/0* casts/min |
 |---|---|---|
 | 1 | if execute phase (E20): cast Execute | 3.4 |
-| 2 | cast item 10646 | as ready |
-| 3 | cast item 18641 | as ready |
+| 2 | cast Goblin Sapper Charge | as ready |
+| 3 | cast Dense Dynamite | as ready |
 | 4 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 5 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
@@ -150,8 +150,8 @@ Our tuned rotation `fury-dw-raid.apl.json` (the simulator's `dps_no_reck.apl.jso
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
 1. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
-2. cast item 10646
-3. cast item 18641
+2. cast Goblin Sapper Charge
+3. cast Dense Dynamite
 4. if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish
 5. if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion
 6. if (time left in the fight ≤ 20s or time left in the fight ≥ 141.5s): cast Blood Fury
@@ -182,8 +182,8 @@ The tables below are the training-dummy rotation, filtered per build:
 | 2 | if execute phase (E20): cast Execute | 6.5 |
 | 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 |
 | 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 8.5 |
-| 5 | cast item 10646 | as ready |
-| 6 | cast item 18641 | as ready |
+| 5 | cast Goblin Sapper Charge | as ready |
+| 6 | cast Dense Dynamite | as ready |
 | 7 | if false: cast Recklessness | 0.5 |
 | 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
@@ -219,8 +219,8 @@ Damage by ability:
 | 2 | if execute phase (E20): cast Execute | 6.5 | 5.7 | 5.6 |
 | 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 | 0.5 | 0.5 |
 | 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 8.5 | 8.5 | 8.7 |
-| 5 | cast item 10646 | as ready | as ready | as ready |
-| 6 | cast item 18641 | as ready | as ready | as ready |
+| 5 | cast Goblin Sapper Charge | as ready | as ready | as ready |
+| 6 | cast Dense Dynamite | as ready | as ready | as ready |
 | 7 | if false: cast Recklessness | 0.5 | 0.5 | 0.5 |
 | 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready |
@@ -253,8 +253,8 @@ Damage by ability:
 | 1 | if execute phase (E20): cast Execute | 3.7 |
 | 2 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 |
 | 3 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 6.0 |
-| 4 | cast item 10646 | as ready |
-| 5 | cast item 18641 | as ready |
+| 4 | cast Goblin Sapper Charge | as ready |
+| 5 | cast Dense Dynamite | as ready |
 | 6 | if false: cast Recklessness | 0.5 |
 | 7 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
@@ -355,8 +355,8 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 1. cast Overpower
 2. cast Slam
 3. if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor
-4. cast item 10646
-5. cast item 18641
+4. cast Goblin Sapper Charge
+5. cast Dense Dynamite
 6. if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish
 7. if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion
 8. if (time left in the fight ≤ 20s or time left in the fight ≥ 141.5s): cast Blood Fury
@@ -388,8 +388,8 @@ Before the pull: at -1s: cast Battle Stance.
 |---|---|---|
 | 1 | cast Overpower | 5.3 |
 | 2 | if execute phase (E20): cast Execute | 3.6 |
-| 3 | cast item 10646 | as ready |
-| 4 | cast item 18641 | as ready |
+| 3 | cast Goblin Sapper Charge | as ready |
+| 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
@@ -427,8 +427,8 @@ Before the pull: at -1s: cast Battle Stance.
 |---|---|---|
 | 1 | cast Overpower | 4.9 |
 | 2 | if execute phase (E20): cast Execute | 3.0 |
-| 3 | cast item 10646 | as ready |
-| 4 | cast item 18641 | as ready |
+| 3 | cast Goblin Sapper Charge | as ready |
+| 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |

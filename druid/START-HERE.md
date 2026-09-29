@@ -12,6 +12,41 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | **Feral Combat** | [Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat](raid/feral-combat.md)<br>356 DPS | [Feral Combat — PvP](pvp/feral-combat.md) (generated) |
 | **Restoration** | [level as Feral Combat](leveling/restoration.md) | [Restoration](raid/restoration.md)<br>healer | [Restoration / Balance — PvP Healer](pvp/restoration.md) |
 
+## Which spec is best?
+
+### Leveling
+
+Ranked by time per kill in the fight lab (levels 20-60, higher levels count more; lower is faster):
+
+| # | Spec and build | Seconds per kill | Behind the fastest |
+|---|---|---|---|
+| 1 | [Feral Combat](leveling/feral-combat.md) — Leveling — Feral cat | 25 | fastest |
+| 2 | [Balance](leveling/balance.md) — Balance | 53 | +110% |
+
+Healing and tanking specs level as a damage spec and switch at 60: Restoration levels as Feral Combat.
+
+### Raid (training dummy and parse)
+
+**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+
+| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
+|---|---|---|---|---|
+| 1 | [Balance](raid/balance.md) — Balance | 461 | 518 | best |
+| 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat | 356 | 567 | -23% |
+
+**Healing**: [Restoration](raid/restoration.md) — Restoration.
+
+### PvP
+
+Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
+
+- [Balance](pvp/balance.md) — Balance — PvP (generated): 32/11/8
+- [Feral Combat](pvp/feral-combat.md) — Feral Combat — PvP (generated): 0/31/20
+- [Restoration](pvp/restoration.md) — Restoration / Balance — PvP Healer: 14/0/37
+
+Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
+
+
 Hybrids spend their points across two trees (no tree reaches 30 points, or the build is made for a spell that needs both).
 
 How the class works and what changed in Forever: [README.md](README.md). Every report, simulation and data file: [research/](research/).

@@ -165,7 +165,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/paladin.md`](../../_reference/data/scorer/changes/paladin.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/paladin.md`](../../../_reference/data/scorer/changes/paladin.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -175,4 +175,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Retribution raid 10/8/33 matches the hand draft's split (Seal of Command, Vengeance, Champion of the Light, Twist of Light, Two-Handed Weapon Specialization). The healer 23/0/28 spends its second half in Retribution (Champion of the Light, Conviction, Benediction, Sanctified Judgement) rather than Protection. Protection 2/31/18 is Holy Shield, Iron Creed and Templar's Bulwark plus Retribution threat (Conviction, Deflection, Crusade).
 
-Beta hypotheses (model claims without community precedent, unverified): Twist of Light's seal-twisting proc (valued at +6% pending mechanics); Holy Strike and Seal of Fury numbers; whether Forever paladins get a taunt; Champion of the Light's Intellect scaling. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Twist of Light's seal-twisting proc (valued at +6% pending mechanics); Holy Strike and Seal of Fury numbers; whether Forever paladins get a taunt; Champion of the Light's Intellect scaling. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).

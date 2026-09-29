@@ -4,45 +4,32 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `elemental-raid-dps` | 29/22/0 | 397 | 27 | +0.0% | 398 | 0 | +74.7% |
-| `cand-elemental-dps-r1` | 29/22/0 | 397 | 27 | +0.0% | 398 | 0 | +74.7% |
-| `cand-elemental-dps-r2` | 29/22/0 | 397 | 27 | +0.0% | 398 | 0 | +74.7% |
-| `cand-elemental-dps-r7` | 31/7/13 | 397 | 24 | -0.2% | 399 | 0 | +74.1% |
-| `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 28 | -0.4% | 397 | 0 | +74.7% |
-| `cand-elemental-dps-r3` | 29/22/0 | 396 | 28 | -0.4% | 397 | 0 | +74.7% |
-| `cand-elemental-dps-r4` | 29/22/0 | 396 | 28 | -0.4% | 397 | 0 | +74.7% |
-| sim preset: Elemental 31/6/14 | - | 393 | 24 | -1.0% | 396 | 0 | - |
-| `cand-elemental-dps-r6` | 30/11/10 | 392 | 25 | -1.3% | 393 | 0 | +72.4% |
-| `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 382 | 23 | -3.9% | 366 | 0 | +67.0% |
-| `cand-elemental-dps-r5` | 16/22/13 | 382 | 19 | -3.9% | 394 | 0 | +66.5% |
-| sim preset: Stormcaller 28/23/0 | - | 381 | 27 | -4.1% | 382 | 2 | - |
-| sim preset: Level 60 | - | 379 | 23 | -4.5% | 327 | 0 | - |
+| `elemental-raid` | 31/7/13 | 398 | 24 | +0.0% | 400 | 0 | +74.1% |
+| `elemental-raid-dps` | 29/22/0 | 397 | 27 | -0.1% | 398 | 0 | +74.7% |
+| `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 28 | -0.5% | 397 | 0 | +74.7% |
+| sim preset: Elemental 31/6/14 | - | 393 | 24 | -1.1% | 396 | 0 | - |
+| sim preset: Stormcaller 28/23/0 | - | 381 | 27 | -4.2% | 382 | 2 | - |
+| sim preset: Level 60 | - | 379 | 23 | -4.6% | 327 | 0 | - |
 
-## Damage shares (`elemental-raid-dps`, simulator actions)
+## Damage shares (`elemental-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Lightning Bolt | 69.1% |
-| Flame Shock | 16.6% |
-| Chain Lightning | 8.0% |
-| Attack | 6.3% |
+| Lightning Bolt | 58.5% |
+| Flame Shock | 15.4% |
+| Lava Burst | 14.9% |
+| Attack | 6.6% |
+| Chain Lightning | 4.7% |
 
-Mapped onto the spec model's sources: `lightning_bolt` 74%, `flame_shock` 18%, `chain_lightning` 9%; 6% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `lightning_bolt` 74%, `flame_shock` 20%, `chain_lightning` 6%; 21% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- elemental-raid: `5530311300103051-052-05305`
 - elemental-raid-dps: `550430130010304-255200311000102`
-- cand-elemental-dps-r1: `550430130010304-255200311000102`
-- cand-elemental-dps-r2: `550430130010304-055230301000102`
-- cand-elemental-dps-r7: `5531301300103051-052-05305`
 - opt-elemental-dps-raid-dps: `553130130010304-055100301050002`
-- cand-elemental-dps-r3: `553130130010304-055222301000002`
-- cand-elemental-dps-r4: `553130130010304-055100301050002`
 - sim preset: Elemental 31/6/14: `2505301300123051-0500001-053050001`
-- cand-elemental-dps-r6: `553130130010305-055000001-05005`
-- cand-elemental-dps-hand-2026-09-26: `5500301302123051--053150001041`
-- cand-elemental-dps-r5: `35003013001-055001301050002-05305`
 - sim preset: Stormcaller 28/23/0: `150533130010303-055030030004102`
 - sim preset: Level 60: `5505301300103051--503352001`
 

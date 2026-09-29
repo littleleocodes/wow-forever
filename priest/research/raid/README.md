@@ -144,7 +144,7 @@ From the ElliotWood/Forever simulator's presets (the community's model of the be
 
 ## Optimizer (stats model) — builds derived from talent numbers
 
-Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/priest.md`](../../_reference/data/scorer/changes/priest.md).
+Produced by `_reference/data/scorer/` (see its README for the method and Classic calibration). Reports with every talent's marginal value: [`optimizer/`](optimizer/). What changed from Classic (buffs, nerfs, talents each build drops or adds): [`changes/priest.md`](../../../_reference/data/scorer/changes/priest.md).
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
@@ -153,4 +153,4 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 Model findings: Healer 22/29/0: Discipline's Twin Disciplines, Mental Strength and Penance pair with Holy's Divine Fury, Inspiration, Holy Specialization and Spiritual Healing. Shadow raid 20/0/31 leans on Shadow Weaving, Darkness and Devouring Contagion; leveling Shadow 14/0/37 keeps Spirit Tap and Blackout (now priced as a leveling stun).
 
-Beta hypotheses (model claims without community precedent, unverified): Penance, Renewed Hope and Devouring Contagion numbers; Blackout's stun value while leveling; Meditation at its Forever value. Level-30 checks: [`_reference/beta-checklist.md`](../../_reference/beta-checklist.md).
+Beta hypotheses (model claims without community precedent, unverified): Penance, Renewed Hope and Devouring Contagion numbers; Blackout's stun value while leveling; Meditation at its Forever value. Level-30 checks: [`_reference/beta-checklist.md`](../../../_reference/beta-checklist.md).
