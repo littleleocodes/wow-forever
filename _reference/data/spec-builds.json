@@ -82,5 +82,35 @@
    "mode": "pvp",
    "date": "2026-09-29"
   }
+ },
+ "mage": {
+  "arcane-leveling": {
+   "model": "frost-leveling",
+   "profile": "leveling-st",
+   "spec": "Arcane",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 27.06998872395364,
+    "30": 29.78265085950427,
+    "40": 33.63019685749538,
+    "50": 26.56200242441318,
+    "60": 24.90530507233051
+   }
+  },
+  "arcane-pvp": {
+   "model": "frost-leveling",
+   "profile": "pvp",
+   "spec": "Arcane",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "fire-pvp": {
+   "model": "fire-leveling",
+   "profile": "pvp",
+   "spec": "Fire",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
  }
 }
