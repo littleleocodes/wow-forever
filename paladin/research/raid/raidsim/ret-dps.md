@@ -4,17 +4,17 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-ret-dps-raid-dps` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +91.5% |
-| `cand-ret-dps-r3` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +91.5% |
-| `cand-ret-dps-r5` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +91.5% |
-| `ret-raid-dps` | 17/0/34 | 349 | 17 | -0.5% | 296 | 4 | +88.8% |
-| `cand-ret-dps-r1` | 17/0/34 | 349 | 17 | -0.5% | 296 | 4 | +88.8% |
-| `cand-ret-dps-r4` | 17/0/34 | 347 | 17 | -0.9% | 295 | 14 | +89.2% |
-| `ret-full-buffs-raid` | 10/8/33 | 346 | 16 | -1.2% | 298 | 22 | +91.2% |
-| `cand-ret-dps-hand-2026-09-27` | 10/8/33 | 346 | 16 | -1.2% | 298 | 22 | +91.2% |
+| `opt-ret-dps-raid-dps` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +93.3% |
+| `cand-ret-dps-r3` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +93.3% |
+| `cand-ret-dps-r5` | 9/8/34 | 350 | 16 | +0.0% | 302 | 21 | +93.3% |
+| `ret-raid-dps` | 17/0/34 | 349 | 17 | -0.5% | 296 | 4 | +90.6% |
+| `cand-ret-dps-r1` | 17/0/34 | 349 | 17 | -0.5% | 296 | 4 | +90.6% |
+| `cand-ret-dps-r4` | 17/0/34 | 347 | 17 | -0.9% | 295 | 14 | +91.1% |
+| `ret-full-buffs-raid` | 10/8/33 | 346 | 16 | -1.2% | 298 | 22 | +93.1% |
+| `cand-ret-dps-hand-2026-09-27` | 10/8/33 | 346 | 16 | -1.2% | 298 | 22 | +93.1% |
 | sim preset: P4/P5 Ret | - | 341 | 16 | -2.7% | 290 | 11 | - |
 | sim preset: Retribution 9/0/42 | - | 338 | 17 | -3.4% | 292 | 21 | - |
-| `cand-ret-dps-r2` | 11/8/32 | 336 | 16 | -4.1% | 285 | 2 | +87.6% |
+| `cand-ret-dps-r2` | 11/8/32 | 336 | 16 | -4.1% | 285 | 2 | +89.4% |
 
 ## Damage shares (`opt-ret-dps-raid-dps`, simulator actions)
 
@@ -35,7 +35,7 @@ Mapped onto the spec model's sources: `white` 24%, `seal` 21%, `judgement` 18%, 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- opt-ret-dps-raid-dps: `51003-053-05225331001330321`
+- opt-ret-dps-raid-dps: `51003-503-05225331001330321`
 - cand-ret-dps-r3: `51003-503-05225331001330321`
 - cand-ret-dps-r5: `51003-053-05225331001330321`
 - ret-raid-dps: `550030030001--05225331001330321`

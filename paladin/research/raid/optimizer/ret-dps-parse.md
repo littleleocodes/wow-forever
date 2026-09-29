@@ -28,19 +28,19 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Vindication | Retribution | 3 | +0.32% | manual |
 | Sanctified Judgement | Retribution | 3 | +0.31% | manual |
 | Benediction | Retribution | 1 | +0.13% | manual |
-| Reverence | Holy | 3 | +0.08% | manual |
+| Reverence | Holy | 3 | +0.09% | manual |
 | Divine Intellect | Holy | 1 | +0.06% | manual |
 | Illumination | Holy | 4 | +0.05% | manual |
 | Templar's Bulwark | Protection | 5 | +0.01% | manual |
+| Voice of Truth | Holy | 3 | +0.01% | manual |
 | Sacred Duty | Protection | 3 | +0.00% | manual |
-| Healing Light | Holy | 2 | +0.00% | manual |
-| Spiritual Focus | Holy | 2 | +0.00% | manual |
-| Unyielding Faith | Holy | 2 | +0.00% | manual |
-| Voice of Truth | Holy | 3 | +0.00% | manual |
+| Iron Creed | Protection | 6 | +0.00% | manual |
+| Holy Shield | Protection | 7 | +0.00% | manual |
 | Purifying Power | Holy | 3 | +0.00% | manual |
-| Infusion of Light | Holy | 4 | +0.00% | manual |
+| Light's Vigil | Holy | 7 | +0.00% | manual |
+| Improved Seal of Fury | Protection | 3 | +0.00% | manual |
 
-## Optimized build: 9/8/34  score +82.31%  (dps x1.747, sustain x1.381, surv x1.000, utility +0.00%)
+## Optimized build: 9/8/34  score +82.35%  (dps x1.747, sustain x1.381, surv x1.000, utility +0.00%)
 
 ```
   Holy: Divine Strength 5, Divine Intellect 1, Improved Seals 3
@@ -55,16 +55,16 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Swift Judgement | Protection 4 | 1/1 | +5.04% | no |
 | Divine Precision | Holy 5 | 1/3 | +3.08% | no |
 | Holy Power | Holy 6 | 1/5 | +0.92% | no |
-| Reverence | Holy 3 | 1/3 | +0.08% | no |
+| Reverence | Holy 3 | 1/3 | +0.09% | no |
 | Divine Intellect | Holy 1 | 2/5 | +0.07% | yes |
 | Illumination | Holy 4 | 1/5 | +0.05% | no |
 | Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |
-| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |
-| Healing Light | Holy 2 | 1/3 | +0.00% | yes |
-| Spiritual Focus | Holy 2 | 1/2 | +0.00% | yes |
-| Unyielding Faith | Holy 2 | 1/2 | +0.00% | yes |
 | Voice of Truth | Holy 3 | 1/1 | +0.00% | no |
+| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |
+| Iron Creed | Protection 6 | 1/5 | +0.00% | no |
+| Holy Shield | Protection 7 | 1/1 | +0.00% | no |
 | Purifying Power | Holy 3 | 1/2 | +0.00% | no |
-| Infusion of Light | Holy 4 | 1/2 | +0.00% | no |
-| Divine Favor | Holy 4 | 1/1 | +0.00% | no |
+| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |
+| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |
+| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |
 
