@@ -5274,7 +5274,7 @@
    "spec": "ret-dps",
    "hand": "leveling-retribution",
    "opt": "opt-ret-dps-leveling-st",
-   "started": "2026-09-29T13:54:39",
+   "started": "2026-09-29T22:32:14",
    "steps": [
     "raid",
     "adopt"
@@ -5284,18 +5284,7 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": true,
-       "quick_race": {
-        "opt-ret-dps-raid-dps": 349.2,
-        "cand-ret-dps-r3": 349.2,
-        "cand-ret-dps-r1": 348.0,
-        "cand-ret-dps-r4": 346.6,
-        "cand-ret-dps-hand-2026-09-27": 344.9,
-        "cand-ret-dps-preset-p4-p5-ret": 339.7,
-        "cand-ret-dps-preset-retribution-9-0-42": 337.7,
-        "cand-ret-dps-r2": 335.9
-       },
-       "converged_by_noise": true
+       "new_build": false
       }
      ],
      "top": [
@@ -5421,7 +5410,21 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "opt-prot-tank-raid-tank": 1.0,
+        "cand-prot-tank-r8": 0.991,
+        "cand-prot-tank-r3": 0.99,
+        "cand-prot-tank-r2": 0.987,
+        "cand-prot-tank-hand-2026-09-28": 0.979,
+        "cand-prot-tank-r1": 0.979,
+        "cand-prot-tank-r7": 0.977,
+        "cand-prot-tank-r5": 0.973,
+        "cand-prot-tank-r4": 0.971,
+        "cand-prot-tank-r6": 0.971,
+        "cand-prot-tank-hand-2026-09-26": 0.894
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
@@ -5431,15 +5434,15 @@
       ],
       [
        "opt-prot-tank-raid-tank",
-       1.0
+       0.984
+      ],
+      [
+       "cand-prot-tank-r9",
+       0.984
       ],
       [
        "cand-prot-tank-r8",
-       1.0
-      ],
-      [
-       "cand-prot-tank-r3",
-       0.999
+       0.977
       ]
      ],
      "promoted": null,
@@ -5447,7 +5450,7 @@
      "environments": null
     }
    },
-   "seconds": 411,
+   "seconds": 174,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec ret-dps --preset-candidates",
@@ -5461,36 +5464,36 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py paladin --spec ret-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 99,
+     "seconds": 34,
      "tail": [
-      "Reverence                       1.0%      2.6%     0.9%   0.34  fitted",
-      "Divine Intellect                0.8%      1.6%     0.7%   0.41  fitted",
+      "Reverence                       1.0%      0.9%     0.9%   1.00    kept",
+      "Divine Intellect                0.6%      0.6%     0.6%   1.00    kept",
       "Vindication                     0.6%      0.9%     0.9%   1.00    kept",
       "Divine Favor                    0.0%      0.0%     0.0%   1.00   noise",
       "Toughness                       0.0%      0.0%     0.0%   1.00   noise",
-      "Illumination                    0.0%      0.2%     0.2%   1.00   noise",
+      "Redoubt                         0.0%      0.0%     0.0%   1.00   noise",
       "Purifying Power                 0.0%      0.0%     0.0%   1.00   noise",
       "Deflection                      0.0%      0.0%     0.0%   1.00   noise",
       "Pursuit of Justice              0.0%      0.0%     0.0%   1.00   noise",
       "Repentance                      0.0%      0.0%     0.0%   1.00   noise",
-      "Redoubt                         0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/paladin.manual.json (18 entries, 9 fitted) and paladin/research/raid/raidsim/ret-dps-calibration.json"
+      "Illumination                    0.0%      0.2%     0.2%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/paladin.manual.json (18 entries, 0 fitted) and paladin/research/raid/raidsim/ret-dps-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile raid-dps --write --export --seed ret-raid-dps ret-full-buffs-raid /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-p4-p5-ret.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-retribution-9-0-42.json",
      "rc": 0,
-     "seconds": 66,
+     "seconds": 25,
      "tail": [
-      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
-      "| Healing Light | Holy 2 | 1/3 | +0.00% | yes |",
-      "| Spiritual Focus | Holy 2 | 1/2 | +0.00% | yes |",
-      "| Unyielding Faith | Holy 2 | 1/2 | +0.00% | yes |",
       "| Voice of Truth | Holy 3 | 1/1 | +0.00% | no |",
+      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
+      "| Iron Creed | Protection 6 | 1/5 | +0.00% | no |",
+      "| Holy Shield | Protection 7 | 1/1 | +0.00% | no |",
       "| Purifying Power | Holy 3 | 1/2 | +0.00% | no |",
-      "| Infusion of Light | Holy 4 | 1/2 | +0.00% | no |",
-      "| Divine Favor | Holy 4 | 1/1 | +0.00% | no |",
+      "| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |",
+      "| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |",
+      "| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |",
       "",
       "exported opt-ret-dps-raid-dps -> paladin/research/talents/forever/proposed-builds.json",
       "",
@@ -5499,38 +5502,20 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec ret-dps --builds opt-ret-dps-raid-dps /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-hand-2026-09-27.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-p4-p5-ret.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-retribution-9-0-42.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r1.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r2.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r3.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r4.json --iterations 1000 --no-presets",
-     "rc": 0,
-     "seconds": 2,
-     "tail": [
-      "== paladin ret-dps: 8 builds x 1000 iterations, paladin/retribution default.gear.json + default.apl.json",
-      "  opt-ret-dps-raid-dps                         9/8/34  DPS    349.2 ±  16.4  threat      301  oom  21.4s  scorer +91.5%",
-      "  cand-ret-dps-r3                              9/8/34  DPS    349.2 ±  16.4  threat      301  oom  21.4s  scorer +91.5%",
-      "  cand-ret-dps-r1                             17/0/34  DPS    348.0 ±  16.6  threat      295  oom   3.8s  scorer +88.8%",
-      "  cand-ret-dps-r4                             17/0/34  DPS    346.6 ±  17.1  threat      294  oom  14.3s  scorer +89.2%",
-      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    344.9 ±  16.2  threat      297  oom  21.9s  scorer +91.2%",
-      "  cand-ret-dps-preset-p4-p5-ret                 18/33  DPS    339.7 ±  15.9  threat      289  oom  11.4s  scorer +87.5%",
-      "  cand-ret-dps-preset-retribution-9-0-42         9/42  DPS    337.7 ±  16.6  threat      292  oom  21.4s  scorer +85.1%",
-      "  cand-ret-dps-r2                             11/8/32  DPS    335.9 ±  15.8  threat      285  oom   1.5s  scorer +87.6%",
-      "  damage shares of opt-ret-dps-raid-dps: Auto Attack 24%, Consecration 17%, Judgement of Righteousness 16%, Holy Strike 15%, Seal of Righteousness 14%, Seal of Command 6%, Hammer of Wrath 4%, Dragonbreath Chili 2% | model sources: white 24%, seal 21%, judgement 18%, consecration 17%, holy_strike 16%, hammer_of_wrath 4% (unmatched 2%)"
-     ],
-     "stderr": []
-    },
-    {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec ret-dps --builds ret-raid-dps ret-full-buffs-raid opt-ret-dps-raid-dps /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-hand-2026-09-27.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-p4-p5-ret.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-preset-retribution-9-0-42.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r1.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r2.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r3.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r4.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-ret-dps-r5.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 7,
+     "seconds": 3,
      "tail": [
-      "  cand-ret-dps-r3                              9/8/34  DPS    350.3 ±  16.3  threat      302  oom  21.1s  scorer +91.5%",
-      "  cand-ret-dps-r5                              9/8/34  DPS    350.3 ±  16.3  threat      302  oom  21.1s  scorer +91.5%",
-      "  ret-raid-dps                                17/0/34  DPS    348.6 ±  16.8  threat      296  oom   3.8s  scorer +88.8%",
-      "  cand-ret-dps-r1                             17/0/34  DPS    348.6 ±  16.8  threat      296  oom   3.8s  scorer +88.8%",
-      "  cand-ret-dps-r4                             17/0/34  DPS    347.1 ±  17.2  threat      295  oom  14.4s  scorer +89.2%",
-      "  ret-full-buffs-raid                         10/8/33  DPS    346.2 ±  16.2  threat      298  oom  21.9s  scorer +91.2%",
-      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    346.2 ±  16.2  threat      298  oom  21.9s  scorer +91.2%",
+      "  cand-ret-dps-r3                              9/8/34  DPS    350.3 ±  16.3  threat      302  oom  21.1s  scorer +93.3%",
+      "  cand-ret-dps-r5                              9/8/34  DPS    350.3 ±  16.3  threat      302  oom  21.1s  scorer +93.3%",
+      "  ret-raid-dps                                17/0/34  DPS    348.6 ±  16.8  threat      296  oom   3.8s  scorer +90.6%",
+      "  cand-ret-dps-r1                             17/0/34  DPS    348.6 ±  16.8  threat      296  oom   3.8s  scorer +90.6%",
+      "  cand-ret-dps-r4                             17/0/34  DPS    347.1 ±  17.2  threat      295  oom  14.4s  scorer +91.1%",
+      "  ret-full-buffs-raid                         10/8/33  DPS    346.2 ±  16.2  threat      298  oom  21.9s  scorer +93.1%",
+      "  cand-ret-dps-hand-2026-09-27                10/8/33  DPS    346.2 ±  16.2  threat      298  oom  21.9s  scorer +93.1%",
       "  sim preset: P4/P5 Ret                                DPS    340.9 ±  16.4  threat      290  oom  11.4s",
       "  sim preset: Retribution 9/0/42                       DPS    338.4 ±  16.9  threat      292  oom  21.1s",
-      "  cand-ret-dps-r2                             11/8/32  DPS    336.0 ±  15.9  threat      285  oom   1.5s  scorer +87.6%",
+      "  cand-ret-dps-r2                             11/8/32  DPS    336.0 ±  15.9  threat      285  oom   1.5s  scorer +89.4%",
       "  damage shares of ret-raid-dps: Auto Attack 23%, Consecration 18%, Judgement of Righteousness 17%, Holy Strike 16%, Seal of Righteousness 14%, Seal of Command 5%, Hammer of Wrath 3%, Dragonbreath Chili 2% | model sources: white 23%, seal 20%, judgement 19%, consecration 19%, holy_strike 16%, hammer_of_wrath 4% (unmatched 2%)",
       "wrote paladin/research/raid/raidsim/ret-dps.md"
      ],
@@ -5539,16 +5524,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile parse --write --export --seed ret-raid-dps ret-full-buffs-raid",
      "rc": 0,
-     "seconds": 32,
+     "seconds": 22,
      "tail": [
-      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
-      "| Healing Light | Holy 2 | 1/3 | +0.00% | yes |",
-      "| Spiritual Focus | Holy 2 | 1/2 | +0.00% | yes |",
-      "| Unyielding Faith | Holy 2 | 1/2 | +0.00% | yes |",
       "| Voice of Truth | Holy 3 | 1/1 | +0.00% | no |",
+      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
+      "| Iron Creed | Protection 6 | 1/5 | +0.00% | no |",
+      "| Holy Shield | Protection 7 | 1/1 | +0.00% | no |",
       "| Purifying Power | Holy 3 | 1/2 | +0.00% | no |",
-      "| Infusion of Light | Holy 4 | 1/2 | +0.00% | no |",
-      "| Divine Favor | Holy 4 | 1/1 | +0.00% | no |",
+      "| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |",
+      "| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |",
+      "| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |",
       "",
       "exported opt-ret-dps-parse -> paladin/research/talents/forever/proposed-builds.json",
       "",
@@ -5559,7 +5544,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec ret-dps --env environments --builds ret-raid-dps ret-full-buffs-raid opt-ret-dps-raid-dps opt-ret-dps-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 72,
+     "seconds": 28,
      "tail": [
       "== paladin ret-dps environments (gear raid default.gear.json, max default.gear.json):",
       "  opt-ret-dps-raid-dps                         9/8/34  dummy   350.3  dummy60   400.0  ladder-mana   386.3  ladder-armor   431.5  ladder-physical   584.8  ladder-spell   699.1  raid   802.3  curve60   358.4  curve120   353.1  curve180   342.5  curve240   336.2  curve360   323.8  max   802.3  max60   791.0",
@@ -5584,12 +5569,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py paladin --spec prot-tank --iterations 1500 --write",
      "rc": 0,
-     "seconds": 108,
+     "seconds": 42,
      "tail": [
-      "Swift Judgement                 0.5%      0.9%     0.9%   1.00    kept",
       "Redoubt                         0.5%      1.6%     1.6%   1.00     apl",
       "Divine Strength                 0.5%      0.6%     0.6%   1.00    kept",
       "Divine Intellect                0.4%      0.1%     0.1%   1.00   noise",
+      "Eye for an Eye                  0.3%      0.0%     0.0%   1.00   noise",
       "Reckoning                       0.2%      0.2%     0.2%   1.00   noise",
       "Sacred Duty                     0.2%      0.0%     0.0%   1.00   noise",
       "Benediction                     0.1%      0.0%     0.0%   1.00   noise",
@@ -5608,8 +5593,8 @@
      "tail": [
       "| Shield Specialization | Protection 3 | 2/3 | +0.56% | yes |",
       "| Reverence | Holy 3 | 1/3 | +0.40% | no |",
-      "| Holy Power | Holy 6 | 1/5 | +0.33% | no |",
-      "| Instrument of Law | Retribution 6 | 1/2 | +0.32% | yes |",
+      "| Instrument of Law | Retribution 6 | 1/2 | +0.33% | yes |",
+      "| Holy Power | Holy 6 | 1/5 | +0.31% | no |",
       "| Divine Strength | Holy 1 | 1/5 | +0.21% | yes |",
       "| Improved Hammer of Justice | Protection 4 | 1/3 | +0.20% | yes |",
       "| Reckoning | Protection 5 | 1/5 | +0.19% | yes |",
@@ -5622,21 +5607,41 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec prot-tank --builds prot-tank opt-prot-tank-raid-tank /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-28.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r1.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r2.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r3.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r4.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r5.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r6.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r7.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r8.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec prot-tank --builds opt-prot-tank-raid-tank /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-28.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r1.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r2.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r3.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r4.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r5.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r6.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r7.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r8.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 14,
+     "seconds": 2,
      "tail": [
-      "  cand-prot-tank-hand-2026-09-28              8/15/28  DPS    502.5 ±  23.1  threat      547  oom   2.7s  dtps  1039.5  tank-value  0.986  scorer +40.9%",
-      "  cand-prot-tank-r1                           8/15/28  DPS    502.5 ±  23.1  threat      547  oom   2.7s  dtps  1039.5  tank-value  0.986  scorer +40.9%",
-      "  cand-prot-tank-r7                           0/23/28  DPS    497.2 ±  23.2  threat      540  oom   2.3s  dtps  1026.6  tank-value  0.986  scorer +44.5%",
-      "  cand-prot-tank-r4                           0/23/28  DPS    499.2 ±  23.2  threat      538  oom   2.7s  dtps  1031.1  tank-value  0.982  scorer +41.5%",
-      "  cand-prot-tank-r5                           0/23/28  DPS    493.9 ±  23.1  threat      538  oom   2.5s  dtps  1037.2  tank-value  0.980  scorer +42.6%",
-      "  cand-prot-tank-r6                           0/23/28  DPS    490.8 ±  23.7  threat      533  oom   2.9s  dtps  1028.5  tank-value  0.979  scorer +42.7%",
-      "  sim preset: Protection 0/45/6                        DPS    400.2 ±  22.1  threat      459  oom  16.6s  dtps  1027.0  tank-value  0.910",
-      "  cand-prot-tank-hand-2026-09-26              13/38/0  DPS    395.6 ±  21.0  threat      457  oom  20.8s  dtps  1043.9  tank-value  0.901  scorer +32.6%",
-      "  sim preset: P4 Prot                                  DPS    422.1 ±  22.4  threat      472  oom  17.8s  dtps  1099.7  tank-value  0.890",
-      "  sim preset: P5 Prot                                  DPS    416.3 ±  22.0  threat      465  oom  20.2s  dtps  1102.8  tank-value  0.883",
-      "  damage shares of prot-tank: Auto Attack 27%, Seal of Righteousness 16%, Consecration 15%, Judgement of Righteousness 12%, Holy Strike 11%, Lay on Hands 9%, Retribution Aura 5%, OtherActionManaGain 4% | model sources: seal 33%, white 31%, consecration 18%, holy_strike 13%, ret_aura 6% (unmatched 14%)",
+      "  opt-prot-tank-raid-tank                     0/23/28  DPS    501.8 ±  23.6  threat      544  oom   2.1s  dtps   986.6  tank-value  1.000  scorer +47.4%",
+      "  cand-prot-tank-r8                           0/23/28  DPS    497.1 ±  22.6  threat      538  oom   2.1s  dtps   994.4  tank-value  0.991  scorer +47.4%",
+      "  cand-prot-tank-r3                           0/23/28  DPS    497.8 ±  22.2  threat      537  oom   2.2s  dtps   994.5  tank-value  0.990  scorer +44.8%",
+      "  cand-prot-tank-r2                           0/23/28  DPS    498.4 ±  23.0  threat      538  oom   2.2s  dtps  1002.3  tank-value  0.987  scorer +44.4%",
+      "  cand-prot-tank-hand-2026-09-28              8/15/28  DPS    502.2 ±  23.5  threat      546  oom   2.8s  dtps  1036.1  tank-value  0.979  scorer +41.5%",
+      "  cand-prot-tank-r1                           8/15/28  DPS    502.2 ±  23.5  threat      546  oom   2.8s  dtps  1036.1  tank-value  0.979  scorer +41.5%",
+      "  cand-prot-tank-r7                           0/23/28  DPS    497.0 ±  23.1  threat      540  oom   2.2s  dtps  1025.9  tank-value  0.977  scorer +44.9%",
+      "  cand-prot-tank-r5                           0/23/28  DPS    493.9 ±  23.2  threat      538  oom   2.4s  dtps  1032.4  tank-value  0.973  scorer +43.1%",
+      "  cand-prot-tank-r4                           0/23/28  DPS    499.0 ±  22.8  threat      538  oom   2.6s  dtps  1034.2  tank-value  0.971  scorer +42.0%",
+      "  cand-prot-tank-r6                           0/23/28  DPS    490.7 ±  22.7  threat      533  oom   2.9s  dtps  1026.5  tank-value  0.971  scorer +43.1%",
+      "  cand-prot-tank-hand-2026-09-26              13/38/0  DPS    396.5 ±  21.2  threat      458  oom  21.0s  dtps  1043.7  tank-value  0.894  scorer +32.9%",
+      "  damage shares of opt-prot-tank-raid-tank: Auto Attack 26%, Seal of Righteousness 16%, Consecration 15%, Judgement of Righteousness 12%, Holy Strike 11%, Lay on Hands 9%, Retribution Aura 5%, OtherActionManaGain 4% | model sources: seal 33%, white 31%, consecration 18%, holy_strike 13%, ret_aura 6% (unmatched 15%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py paladin --spec prot-tank --builds prot-tank opt-prot-tank-raid-tank /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-28.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r1.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r2.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r3.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r4.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r5.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r6.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r7.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r8.json /home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 6,
+     "tail": [
+      "  cand-prot-tank-r7                           0/23/28  DPS    497.2 ±  23.2  threat      540  oom   2.3s  dtps  1026.6  tank-value  0.963  scorer +44.9%",
+      "  cand-prot-tank-hand-2026-09-28              8/15/28  DPS    502.5 ±  23.1  threat      547  oom   2.7s  dtps  1039.5  tank-value  0.963  scorer +41.5%",
+      "  cand-prot-tank-r1                           8/15/28  DPS    502.5 ±  23.1  threat      547  oom   2.7s  dtps  1039.5  tank-value  0.963  scorer +41.5%",
+      "  cand-prot-tank-r4                           0/23/28  DPS    499.2 ±  23.2  threat      538  oom   2.7s  dtps  1031.1  tank-value  0.959  scorer +42.0%",
+      "  cand-prot-tank-r5                           0/23/28  DPS    493.9 ±  23.1  threat      538  oom   2.5s  dtps  1037.2  tank-value  0.957  scorer +43.1%",
+      "  cand-prot-tank-r6                           0/23/28  DPS    490.8 ±  23.7  threat      533  oom   2.9s  dtps  1028.5  tank-value  0.956  scorer +43.1%",
+      "  sim preset: Protection 0/45/6                        DPS    400.2 ±  22.1  threat      459  oom  16.6s  dtps  1027.0  tank-value  0.891",
+      "  cand-prot-tank-hand-2026-09-26              13/38/0  DPS    395.6 ±  21.0  threat      457  oom  20.8s  dtps  1043.9  tank-value  0.882  scorer +32.9%",
+      "  sim preset: P4 Prot                                  DPS    422.1 ±  22.4  threat      472  oom  17.8s  dtps  1099.7  tank-value  0.871",
+      "  sim preset: P5 Prot                                  DPS    416.3 ±  22.0  threat      465  oom  20.2s  dtps  1102.8  tank-value  0.864",
+      "  damage shares of prot-tank: Auto Attack 26%, Seal of Righteousness 16%, Judgement of Righteousness 15%, Consecration 14%, Holy Strike 10%, Lay on Hands 9%, Retribution Aura 5%, OtherActionManaGain 4% | model sources: seal 36%, white 30%, consecration 17%, holy_strike 12%, ret_aura 6% (unmatched 14%)",
       "wrote paladin/research/raid/raidsim/prot-tank.md"
      ],
      "stderr": []
@@ -7426,9 +7431,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:32:13",
+  "date": "2026-09-29T22:35:07",
   "classes": [
-   "rogue"
+   "paladin"
   ],
   "steps": [
    "raid",
@@ -7440,7 +7445,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 249,
+  "seconds": 174,
   "refresh": null,
   "regen_log": []
  }
