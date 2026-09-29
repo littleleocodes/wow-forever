@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -41,32 +41,32 @@
   "final": {
    "dummy": {
     "opt-sb-raid-raid-dps": {
-     "before": 570.6283500994197,
-     "after": 574.7033944859666,
-     "base": 570.6283500994197,
+     "before": 571.4501395152927,
+     "after": 575.3735308132013,
+     "base": 571.4501395152927,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.1804999999999999,
-     "oom_after": 1.1804999999999999
+     "oom_before": 1.1799250000000001,
+     "oom_after": 1.1799250000000001
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 543.8280894584113,
-     "after": 546.535630268289,
-     "base": 543.8280894584113,
+     "before": 543.6278744637357,
+     "after": 546.131664171005,
+     "base": 543.6278744637357,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0641,
-     "oom_after": 1.0641
+     "oom_before": 1.0751,
+     "oom_after": 1.0751
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -121,26 +121,26 @@
   "final": {
    "raid": {
     "opt-sb-raid-raid-dps": {
-     "before": 683.0089273859779,
-     "after": 689.8903519082462,
-     "base": 683.0089273859779,
+     "before": 682.66359088386,
+     "after": 689.4739907024073,
+     "base": 682.66359088386,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.9353999999999998,
-     "oom_after": 1.67285
+     "oom_before": 1.67105,
+     "oom_after": 1.67105
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 652.8332410032839,
-     "after": 657.8642887796096,
-     "base": 652.8332410032839,
+     "before": 652.756898882293,
+     "after": 658.1738242577683,
+     "base": 652.756898882293,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.4189999999999998,
-     "oom_after": 1.4063750000000004
+     "oom_before": 1.391075,
+     "oom_after": 1.391075
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  }
 }

@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,8 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
-    "label": "affliction-dot-raid",
-    "talents": "2550002013520005--0550035003"
+    "label": "opt-affliction-raid-raid-dps",
+    "talents": "2552002013500005--0550035003"
    },
    {
     "label": "sim preset: Demonic Pact 2/31/18",
@@ -48,33 +48,33 @@
   ],
   "final": {
    "dummy": {
-    "affliction-dot-raid": {
-     "before": 567.9030800435879,
-     "after": 571.8318660820934,
-     "base": 567.9030800435879,
+    "opt-affliction-raid-raid-dps": {
+     "before": 568.0118080732794,
+     "after": 572.397522078494,
+     "base": 568.0118080732794,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.4922999999999997,
-     "oom_after": 2.1282
+     "oom_before": 1.6321999999999999,
+     "oom_after": 1.6321999999999999
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 532.7665716384064,
-     "after": 536.7957223902432,
-     "base": 532.7665716384064,
+     "before": 533.0090873797142,
+     "after": 537.3109268580382,
+     "base": 533.0090873797142,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.638825,
-     "oom_after": 0.36392500000000005
+     "oom_before": 0.369425,
+     "oom_after": 0.369425
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -82,8 +82,8 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
-    "label": "affliction-dot-raid",
-    "talents": "2550002013520005--0550035003"
+    "label": "opt-affliction-raid-raid-dps",
+    "talents": "2552002013500005--0550035003"
    },
    {
     "label": "sim preset: Demonic Pact 2/31/18",
@@ -112,27 +112,27 @@
   ],
   "final": {
    "raid": {
-    "affliction-dot-raid": {
-     "before": 694.2642115398338,
-     "after": 696.9410363709262,
-     "base": 694.2642115398338,
+    "opt-affliction-raid-raid-dps": {
+     "before": 695.7020164412879,
+     "after": 698.4198704657955,
+     "base": 695.7020164412879,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.8839499999999999,
-     "oom_after": 0.8839499999999999
+     "oom_before": 0.72645,
+     "oom_after": 0.72645
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 652.0103972365055,
-     "after": 655.1303414145721,
-     "base": 652.0103972365055,
+     "before": 651.7303803564048,
+     "after": 654.7359586714397,
+     "base": 651.7303803564048,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.588255,
-     "oom_after": 0.588255
+     "oom_before": 0.582085,
+     "oom_after": 0.582085
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  }
 }

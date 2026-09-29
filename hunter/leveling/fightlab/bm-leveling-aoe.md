@@ -40,17 +40,17 @@ Spec model (`_reference/data/scorer/specs`) assumes: auto 40%, multi 13%, arcane
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
 | 30 | opt-bm-leveling-leveling-aoe | 42.6s | - | 36.3s | 13.0 | 5.3s |
-| 30 | cand-aoe-r6 | 42.4s | -0.4% | 36.7s | 12.6 | 5.2s |
 | 30 | cand-aoe-r7 | 42.6s | +0.0% | 36.3s | 13.0 | 5.3s |
+| 30 | cand-aoe-r8 | 42.6s | +0.1% | 36.5s | 13.0 | 5.6s |
 | 40 | opt-bm-leveling-leveling-aoe | 49.6s | - | 47.9s | 17.4 | 7.5s |
-| 40 | cand-aoe-r6 | 52.2s | +5.3% | 47.5s | 18.7 | 7.3s |
 | 40 | cand-aoe-r7 | 49.6s | +0.0% | 47.9s | 17.4 | 7.5s |
+| 40 | cand-aoe-r8 | 48.7s | -1.8% | 47.5s | 17.1 | 7.7s |
 | 50 | opt-bm-leveling-leveling-aoe | 55.1s | - | 55.4s | 21.9 | 6.6s |
-| 50 | cand-aoe-r6 | 58.3s | +5.8% | 56.0s | 24.1 | 6.2s |
 | 50 | cand-aoe-r7 | 55.1s | +0.0% | 55.4s | 21.9 | 6.6s |
+| 50 | cand-aoe-r8 | 58.5s | +6.1% | 55.5s | 25.5 | 6.2s |
 | 60 | opt-bm-leveling-leveling-aoe | 65.0s | - | 64.5s | 33.1 | 3.8s |
-| 60 | cand-aoe-r6 | 66.4s | +2.1% | 65.2s | 34.4 | 3.8s |
 | 60 | cand-aoe-r7 | 65.0s | +0.0% | 64.5s | 33.1 | 3.8s |
+| 60 | cand-aoe-r8 | 69.2s | +6.4% | 63.5s | 38.5 | 3.2s |
 
 ## Talent values at level 40
 
@@ -99,24 +99,24 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 ## Assumptions (edit `tables.py` to change them)
 
 - Mob health Median health of a normal outdoor mob at the level, from the Classic 1.12 creature database (cmangos classic-db z2815, 2,262
-templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
-Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
+    templates weighted by spawn count: 187 at 10, 466 at 20, 1,002 at 30, 1,844 at 40, 2,672 at 50, 3,878 at 60; `mob_stats.json`).
+    Unverified for WoW: Forever (creature stats are server side; the Wowhead Forever tooltips carry level and type only).
 - Mob melee Median melee swing of a normal mob before armor, from the Classic 1.12 creature database (13 at 10, 32 at 20, 48 at 30, 68 at 40,
-95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
+    95 at 50, 117 at 60 per 2.0 s swing; the earlier rule of thumb was 2-2.5x higher). Unverified for WoW: Forever.
 - Caster mobs: the creature database share by level (Share of normal outdoor mob spawns whose unit class is mage or paladin, by level, from the Classic 1.12 creature database
-(5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
+    (5% at 1-5, 14% at 10, 12-23% from 15 to 55, 9% at 60; `mob_stats.json`).); a caster stands at up to 30 yd and casts a bolt every 3.5 s for 1.6x its melee swing (spell damage, no armor) until interrupted or stunned, then runs in and melees until the lockout ends; Median health of a mage-class mob (Classic 1.12 creature database: 75-90% of the all-mob median).
 - Runners: 0% of pulls flee at 20% health for 5 s (roots and stuns hold them; `RUNNER_SHARE`, 0 = not simulated, see sensitivity.md).
 - Spell miss: Classic spell miss vs a mob `level_diff` levels above the caster: 4% at +0, 5% at +1, 6% at +2, 17% at +3. Partial resists cost 2.5% on average.
 - Spell crit: 0.91% base plus Intellect / (Intellect per 1% spell crit: 59.5 at 60 for mages (Forever client: 0.0168% per Intellect at max level), scaling with level (~30 at 30).)
 - Pushback: 0.5s for the first melee hit taken during a cast, 0.5s per further hit; a direct hit breaks a freeze with 20% chance.
 - Gear: Gear stats by level from the Classic 1.12 item database (`gear_stats.json`, built by gear_stats.py): every slot holds a typical
-good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
-with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
-armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
-school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
-11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
+    good pick among the fixed-stat green items (GEAR_TIER "greens", mostly quest rewards) or the blue items ("blues") the class can wear,
+    with required level 2-7 levels below the character (a mage at 40: Int 87, Spirit 66, Stamina 14; a warrior at 40: Str 86, Sta 79,
+    armor 2,369 in plate). Spell power and healing come from the items' on-equip spells (spell_template auras 13 / 135; a
+    school-specific bonus counts half). Classic items: unverified for WoW: Forever. GEAR_STAT_MULT scales the stats (sensitivity). Wand: Wand dps by level from the Classic 1.12 item database (median green wand with required level 2-7 below the character:
+    11 at 10, 17 at 20, 26 at 30, 33 at 40, 41 at 50, 55 at 60; blues 25 / 33 / 38 / 51 / 63 from 20).
 - Regen: Vanilla mage/priest mana regen per 2-second tick while not casting: 13 + Spirit / 4. Drinking: Conjured water, Forever beta tooltips (Wowhead Forever items 5350/2288/2136/3772/8077/8078/8079, read 2026-09-26) at the
-Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
+    Conjure Water rank levels 4/10/20/30/40/50/60: 145/18s, 420/21s, 803/24s, 1293/27s, 1915/30s, 2821/30s, 4038/30s mana.
 - Between fights: loot 2s, travel 6s, drink below 35% mana, eat below 65% health, a death costs 90s.
-- Not modelled yet: runners, adds, traps, kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
+- Not modelled yet: runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
 

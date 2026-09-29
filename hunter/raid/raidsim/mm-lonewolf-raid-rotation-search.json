@@ -90,7 +90,7 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -98,8 +98,8 @@
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
    {
-    "label": "mm-lone-wolf-raid",
-    "talents": "5-3053552011523051-5"
+    "label": "opt-mm-lonewolf-raid-raid-dps",
+    "talents": "5-005355051150305-50003"
    },
    {
     "label": "sim preset: Marksmanship",
@@ -144,27 +144,27 @@
   ],
   "final": {
    "raid": {
-    "mm-lone-wolf-raid": {
-     "before": 741.4989224242884,
-     "after": 761.6916563813287,
-     "base": 741.4989224242884,
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "before": 683.2969715520624,
+     "after": 848.2085284188661,
+     "base": 683.2969715520624,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Marksmanship": {
-     "before": 602.4444709303774,
-     "after": 618.8114024068801,
-     "base": 602.4444709303774,
+     "before": 602.1005335552054,
+     "after": 733.2265510869388,
+     "base": 602.1005335552054,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.0022539206457,
+     "oom_after": 0.0022539206457
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  }
 }

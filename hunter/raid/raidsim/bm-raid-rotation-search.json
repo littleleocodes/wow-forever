@@ -2,7 +2,7 @@
  "dummy": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -97,18 +97,18 @@
   "final": {
    "dummy": {
     "mm-hawk-raid": {
-     "before": 442.32298081696274,
-     "after": 468.49986718730753,
-     "base": 442.32298081696274,
+     "before": 442.47185397821204,
+     "after": 468.61965789497987,
+     "base": 442.47185397821204,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 415.47311747683085,
-     "after": 436.73465203913827,
-     "base": 415.47311747683085,
+     "before": 415.2974886124356,
+     "after": 436.7324456139374,
+     "base": 415.2974886124356,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -117,12 +117,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "hunter",
   "spec": "bm-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -177,18 +177,18 @@
   "final": {
    "raid": {
     "mm-hawk-raid": {
-     "before": 791.3942741383037,
-     "after": 814.5453131484372,
-     "base": 791.3942741383037,
+     "before": 791.7442408324048,
+     "after": 815.0214704499629,
+     "base": 791.7442408324048,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Beast Mastery 35/16/0": {
-     "before": 743.340627141513,
-     "after": 763.440857959361,
-     "base": 743.340627141513,
+     "before": 743.2837109819842,
+     "after": 763.513127498875,
+     "base": 743.2837109819842,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -197,6 +197,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

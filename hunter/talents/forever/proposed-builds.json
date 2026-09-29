@@ -1057,144 +1057,6 @@
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
-      "id": "opt-bm-leveling-leveling-aoe",
-      "name": "Optimizer — Pet-first leveling (leveling-aoe)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +52.3% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Focused Fire", 2],
-          ["Pathfinding", 2],
-          ["Improved Revive Pet", 1],
-          ["Unleashed Fury", 5],
-          ["Summon Hawk", 1],
-          ["Ferocity", 4]
-        ],
-        "Marksmanship": [],
-        "Survival": [
-          ["Deflection", 4],
-          ["Improved Tracking", 5],
-          ["Improved Wing Clip", 3],
-          ["Entrapment", 3],
-          ["Surefooted", 3],
-          ["Deterrence", 1],
-          ["Counterattack", 1],
-          ["Strider Kick", 1],
-          ["Expose Prey", 2],
-          ["Survivalist's Discipline", 2],
-          ["Lightning Reflexes", 5],
-          ["Lacerating Strikes", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Summon Hawk", "why": "Removing it costs 8.9 points of score in this model."},
-        {"talent": "Strider Kick", "why": "Removing it costs 6.8 points of score in this model."},
-        {"talent": "Unleashed Fury", "why": "Removing it costs 3.5 points of score in this model."},
-        {"talent": "Expose Prey", "why": "Removing it costs 2.5 points of score in this model."},
-        {"talent": "Lacerating Strikes", "why": "Removing it costs 2.4 points of score in this model."},
-        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Ferocity", "why": "Removing it costs 2.2 points of score in this model."},
-        {"talent": "Surefooted", "why": "Removing it costs 2.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: hunter/talents/forever/optimizer/bm-leveling-leveling-aoe.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
-        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
-        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
-        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
-        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
-        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
-        {"levels": "30-33", "tree": "Survival", "talent": "Deflection", "points": 4},
-        {"levels": "34", "tree": "Survival", "talent": "Improved Tracking", "points": 1},
-        {"levels": "35-37", "tree": "Survival", "talent": "Improved Wing Clip", "points": 3},
-        {"levels": "38-39", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
-        {"levels": "40-41", "tree": "Survival", "talent": "Surefooted", "points": 2},
-        {"levels": "42", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "43-44", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
-        {"levels": "45", "tree": "Survival", "talent": "Counterattack", "points": 1},
-        {"levels": "46", "tree": "Survival", "talent": "Surefooted", "points": 1},
-        {"levels": "47-49", "tree": "Survival", "talent": "Entrapment", "points": 3},
-        {"levels": "50", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "51-52", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "53-54", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
-        {"levels": "55-59", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
-        {"levels": "60", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1}
-      ]
-    },
-    {
-      "id": "opt-melee-dps-leveling-st",
-      "name": "Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +42.5% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Focused Fire", 2]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Careful Aim", 5]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5],
-          ["Deflection", 4],
-          ["Savage Strikes", 2],
-          ["Surefooted", 3],
-          ["Deterrence", 1],
-          ["Predator's Edge", 5],
-          ["Counterattack", 1],
-          ["Strider Kick", 1],
-          ["Resourcefulness", 2],
-          ["Expose Prey", 2],
-          ["Lightning Reflexes", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Strider Kick", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Predator's Edge", "why": "Removing it costs 4.3 points of score in this model."},
-        {"talent": "Resourcefulness", "why": "Removing it costs 3.9 points of score in this model."},
-        {"talent": "Lethal Attacks", "why": "Removing it costs 3.5 points of score in this model."},
-        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.1 points of score in this model."},
-        {"talent": "Careful Aim", "why": "Removing it costs 2.0 points of score in this model."},
-        {"talent": "Improved Tracking", "why": "Removing it costs 1.7 points of score in this model."},
-        {"talent": "Surefooted", "why": "Removing it costs 1.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: hunter/talents/forever/optimizer/melee-dps-leveling-st.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"],
-      "order": [
-        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
-        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
-        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
-        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
-        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
-        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
-        {"levels": "25-29", "tree": "Survival", "talent": "Predator's Edge", "points": 5},
-        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
-        {"levels": "31-32", "tree": "Survival", "talent": "Resourcefulness", "points": 2},
-        {"levels": "33-35", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 3},
-        {"levels": "36", "tree": "Survival", "talent": "Counterattack", "points": 1},
-        {"levels": "37-38", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 2},
-        {"levels": "39-40", "tree": "Survival", "talent": "Expose Prey", "points": 2},
-        {"levels": "41-43", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
-        {"levels": "44-48", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
-        {"levels": "49-53", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
-        {"levels": "54-58", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
-        {"levels": "59-60", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2}
-      ]
-    },
-    {
       "id": "opt-mm-raid-raid-dps",
       "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
       "role": "dps",
@@ -1363,6 +1225,148 @@
       "notes": ["Report: hunter/talents/forever/optimizer/mm-lonewolf-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-bm-leveling-leveling-aoe",
+      "name": "Optimizer — Pet-first leveling (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +55.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Improved Revive Pet", 1],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 4]
+        ],
+        "Marksmanship": [],
+        "Survival": [
+          ["Deflection", 4],
+          ["Improved Tracking", 5],
+          ["Improved Wing Clip", 3],
+          ["Entrapment", 3],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Counterattack", 1],
+          ["Strider Kick", 1],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "Removing it costs 8.2 points of score in this model."},
+        {"talent": "Strider Kick", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Unleashed Fury", "why": "Removing it costs 4.3 points of score in this model."},
+        {"talent": "Improved Tracking", "why": "Removing it costs 3.4 points of score in this model."},
+        {"talent": "Expose Prey", "why": "Removing it costs 2.4 points of score in this model."},
+        {"talent": "Lacerating Strikes", "why": "Removing it costs 2.3 points of score in this model."},
+        {"talent": "Lightning Reflexes", "why": "Removing it costs 2.2 points of score in this model."},
+        {"talent": "Ferocity", "why": "Removing it costs 2.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation and order taken from cand-aoe-r7 on 2026-09-29: an earlier optimizer round beat the last export in the fight lab (56.3s vs 58.6s per kill, level-weighted).", "Report: hunter/talents/forever/optimizer/bm-leveling-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "19", "tree": "Beast Mastery", "talent": "Improved Revive Pet", "points": 1},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
+        {"levels": "30-33", "tree": "Survival", "talent": "Deflection", "points": 4},
+        {"levels": "34", "tree": "Survival", "talent": "Improved Tracking", "points": 1},
+        {"levels": "35-37", "tree": "Survival", "talent": "Improved Wing Clip", "points": 3},
+        {"levels": "38-39", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
+        {"levels": "40-41", "tree": "Survival", "talent": "Surefooted", "points": 2},
+        {"levels": "42", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "43-44", "tree": "Survival", "talent": "Improved Tracking", "points": 2},
+        {"levels": "45", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "46", "tree": "Survival", "talent": "Surefooted", "points": 1},
+        {"levels": "47-49", "tree": "Survival", "talent": "Entrapment", "points": 3},
+        {"levels": "50", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "51-52", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "53-54", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
+        {"levels": "55-59", "tree": "Survival", "talent": "Lightning Reflexes", "points": 5},
+        {"levels": "60", "tree": "Survival", "talent": "Lacerating Strikes", "points": 1}
+      ]
+    },
+    {
+      "id": "opt-melee-dps-leveling-st",
+      "name": "Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dps` and profile `leveling-st`: score +40.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 4],
+          ["Savage Strikes", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Counterattack", 1],
+          ["Predator's Edge", 5],
+          ["Strider Kick", 1],
+          ["Resourcefulness", 2],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
+          ["Lightning Reflexes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Resourcefulness", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Strider Kick", "why": "Removing it costs 6.0 points of score in this model."},
+        {"talent": "Predator's Edge", "why": "Removing it costs 3.4 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 2.9 points of score in this model."},
+        {"talent": "Savage Strikes", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Expose Prey", "why": "Removing it costs 1.5 points of score in this model."},
+        {"talent": "Improved Tracking", "why": "Removing it costs 1.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/talents/forever/optimizer/melee-dps-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Survival", "talent": "Improved Tracking", "points": 5},
+        {"levels": "15-16", "tree": "Survival", "talent": "Savage Strikes", "points": 2},
+        {"levels": "17-19", "tree": "Survival", "talent": "Deflection", "points": 3},
+        {"levels": "20-22", "tree": "Survival", "talent": "Surefooted", "points": 3},
+        {"levels": "23", "tree": "Survival", "talent": "Deterrence", "points": 1},
+        {"levels": "24", "tree": "Survival", "talent": "Deflection", "points": 1},
+        {"levels": "25", "tree": "Survival", "talent": "Counterattack", "points": 1},
+        {"levels": "26-29", "tree": "Survival", "talent": "Predator's Edge", "points": 4},
+        {"levels": "30", "tree": "Survival", "talent": "Strider Kick", "points": 1},
+        {"levels": "31-32", "tree": "Survival", "talent": "Resourcefulness", "points": 2},
+        {"levels": "33-34", "tree": "Survival", "talent": "Expose Prey", "points": 2},
+        {"levels": "35", "tree": "Survival", "talent": "Predator's Edge", "points": 1},
+        {"levels": "36-40", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "41-43", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "44-48", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "49-50", "tree": "Survival", "talent": "Survivalist's Discipline", "points": 2},
+        {"levels": "51-55", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "56-57", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "58-59", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "60", "tree": "Survival", "talent": "Lightning Reflexes", "points": 1}
+      ]
     }
   ]
 }

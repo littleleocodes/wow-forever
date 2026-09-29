@@ -2268,11 +2268,9 @@
    "spec": "bm-leveling",
    "hand": "leveling-beast-mastery",
    "opt": "opt-bm-leveling-leveling-st",
-   "started": "2026-09-29T03:29:52",
+   "started": "2026-09-29T05:11:52",
    "steps": [
-    "raid",
-    "adopt",
-    "regen"
+    "variants"
    ],
    "raid": {
     "mm-raid": {
@@ -2465,255 +2463,225 @@
      }
     }
    },
-   "seconds": 151,
+   "seconds": 2829,
    "log": [
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/calibrate.py hunter --spec bm-leveling --profile leveling-aoe --builds opt-bm-leveling-leveling-aoe /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json --levels 40,60 --fights 1500 --write --set MOBS_PER_PULL=3",
      "rc": 0,
-     "seconds": 0,
+     "seconds": 1647,
      "tail": [
-      "hunter mm-raid: cand-mm-raid-preset-marksmanship.json"
+      "Lethal Attacks             2.5%      1.7%     1.7%   1.00      kept |    1.9%   2.0% |    3.0%   1.4%",
+      "Deflection                 2.4%      1.7%     1.7%   1.00      kept |   -3.1%   1.7% |    7.9%   1.6%",
+      "Survivalist                1.6%      1.0%     0.9%   1.00      kept |   -0.7%   1.0% |    3.9%   0.9%",
+      "Deadly Aspects             1.5%      4.2%     1.5%   0.36    fitted |    3.7%   1.6% |   -0.6%   1.4%",
+      "Rapid Killing              1.0%      0.4%     0.5%   1.00      kept |   -4.0%   0.5% |    6.0%   0.5%",
+      "Savage Strikes             0.8%      0.0%     0.0%   1.00      dead |    0.6%   0.0% |    1.1%   0.0%",
+      "Bestial Swiftness          0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
+      "Improved Revive Pet        0.0%      0.1%     0.1%   1.00      kept |    0.0%   0.1% |    0.0%   0.1%",
+      "Improved Concussive Shot     0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
+      "Hawk Eye                  -3.4%      0.0%     0.0%   1.00      kept |    2.9%   0.0% |   -9.7%   0.0%",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (17 entries written, 5 fitted)",
+      "wrote hunter/leveling/fightlab/bm-leveling-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec bm-leveling --profile leveling-aoe --write --export --lookahead 16",
      "rc": 0,
-     "seconds": 24,
+     "seconds": 13,
      "tail": [
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Aspect of the Monkey    0.0%      0.0%     0.0%   1.00   noise",
-      "Summon Hawk                     0.0%      0.0%     0.0%   1.00   noise",
-      "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Tracking               0.0%      0.0%     0.0%   1.00   noise",
-      "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
-      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
-      "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
-      "Rapid Recuperation             -0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (14 entries, 1 fitted) and hunter/raid/raidsim/mm-raid-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json",
-     "rc": 0,
-     "seconds": 29,
-     "tail": [
-      "| Endurance Training | Beast Mastery 1 | 4/5 | +0.25% | yes |",
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.24% | no |",
-      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
+      "| 45 | Survival | Counterattack | 1 | +40.7% |",
+      "| 46-47 | Survival | Entrapment | 2 | +41.1% |",
+      "| 48-49 | Survival | Clever Traps | 2 | +41.5% |",
+      "| 50 | Survival | Strider Kick | 1 | +47.5% |",
+      "| 51-52 | Survival | Expose Prey | 2 | +49.9% |",
+      "| 53-54 | Survival | Survivalist's Discipline | 2 | +50.5% |",
+      "| 55-59 | Survival | Lightning Reflexes | 5 | +52.8% |",
+      "| 60 | Survival | Lacerating Strikes | 1 | +55.0% |",
       "",
-      "exported opt-mm-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
+      "exported opt-bm-leveling-leveling-aoe -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter/raid/optimizer/mm-raid-raid-dps.md"
+      "wrote hunter/leveling/optimizer/bm-leveling-leveling-aoe.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds opt-mm-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r8.json --iterations 1000 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json --levels 30,40,50,60 --fights 500 --set MOBS_PER_PULL=3",
      "rc": 0,
-     "seconds": 1,
+     "seconds": 62,
      "tail": [
-      "  cand-mm-raid-r6                             22/29/0  DPS    429.6 ±  17.7  threat      391  oom  43.5s  scorer +54.6%",
-      "  opt-mm-raid-raid-dps                        22/29/0  DPS    427.8 ±  18.4  threat      390  oom  44.7s  scorer +54.6%",
-      "  cand-mm-raid-r7                             22/29/0  DPS    427.6 ±  17.7  threat      391  oom  43.5s  scorer +53.8%",
-      "  cand-mm-raid-r5                             22/29/0  DPS    425.8 ±  17.6  threat      390  oom  43.5s  scorer +53.1%",
-      "  cand-mm-raid-r4                             24/27/0  DPS    419.5 ±  17.3  threat      383  oom  43.5s  scorer +50.6%",
-      "  cand-mm-raid-r8                             19/32/0  DPS    408.8 ±  18.6  threat      374  oom  53.4s  scorer +46.9%",
-      "  cand-mm-raid-preset-marksmanship              16/35  DPS    400.6 ±  17.6  threat      369  oom  59.8s  scorer +44.1%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    395.6 ±  18.2  threat      360  oom  53.8s  scorer +41.9%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    389.9 ±  17.6  threat      356  oom  65.0s  scorer +37.6%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    387.0 ±  17.5  threat      356  oom  65.0s  scorer +36.9%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    382.0 ±  17.5  threat      356  oom  65.0s  scorer +35.0%",
-      "  damage shares of opt-mm-raid-raid-dps: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 14%, Aimed Shot 9%, Pet: Auto Attack 8%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 0% | model sources: auto 46%, arcane 20%, serpent 14%, pet 11%, aimed 9%, multi 0% (unmatched 0%)"
+      "   vs cand-aoe-r5: time/kill 67.6s (+15.2%), fight 58.9s, deaths/100 28.1",
+      "   vs cand-aoe-r6: time/kill 56.4s (-3.8%), fight 56.8s, deaths/100 22.4",
+      "   vs cand-aoe-r7: time/kill 53.4s (-9.0%), fight 55.7s, deaths/100 21.0",
+      "L60: fight 63.3s (median 62.5, p90 74.7), downtime 3.6s, deaths/100 35.5, time/kill 68.6s, 52 kills/h, mana/kill 2734, shares Auto Shot 21%, Cat melee 20%, Serpent Sting 16%, Melee 16%, Volley 11%",
+      "   vs cand-aoe-r1: time/kill 69.2s (+1.0%), fight 69.1s, deaths/100 27.4",
+      "   vs cand-aoe-r2: time/kill 104.1s (+51.8%), fight 66.5s, deaths/100 58.8",
+      "   vs cand-aoe-r3: time/kill 110.2s (+60.7%), fight 63.5s, deaths/100 64.8",
+      "   vs cand-aoe-r4: time/kill 111.3s (+62.3%), fight 66.2s, deaths/100 65.8",
+      "   vs cand-aoe-r5: time/kill 66.9s (-2.4%), fight 63.9s, deaths/100 32.8",
+      "   vs cand-aoe-r6: time/kill 67.0s (-2.3%), fight 65.8s, deaths/100 32.0",
+      "   vs cand-aoe-r7: time/kill 65.5s (-4.5%), fight 65.8s, deaths/100 30.9",
+      "done in 62s"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r8.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r9.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r8.json --levels 30,40,50,60 --fights 1000 --set MOBS_PER_PULL=3",
      "rc": 0,
-     "seconds": 3,
+     "seconds": 144,
      "tail": [
-      "  cand-mm-raid-r8                             19/32/0  DPS    408.0 ±  17.9  threat      373  oom  53.4s  scorer +46.9%",
-      "  sim preset: Marksmanship                             DPS    400.3 ±  17.8  threat      369  oom  59.8s",
-      "  bm-mm-full-buffs-raid                       20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.9%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.9%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    389.7 ±  17.7  threat      356  oom  65.0s  scorer +37.6%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    386.8 ±  17.6  threat      356  oom  65.0s  scorer +36.9%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    381.8 ±  17.6  threat      356  oom  65.0s  scorer +35.0%",
-      "  sim preset: Beast Mastery 35/16/0                    DPS    381.0 ±  13.7  threat      332  oom  53.2s",
-      "  sim preset: Marksmanship 0/39/12                     DPS    367.7 ±  15.3  threat      343  oom  54.4s",
-      "  sim preset: Survival 0/15/36                         DPS    342.6 ±  11.6  threat      318  oom  52.0s",
-      "  damage shares of bm-mm-raid: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 13%, Aimed Shot 10%, Pet: Auto Attack 7%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 0% | model sources: auto 46%, arcane 20%, serpent 13%, pet 10%, aimed 10%, multi 0% (unmatched 0%)",
-      "wrote hunter/raid/raidsim/mm-raid.md"
+      "   vs cand-aoe-r7: time/kill 56.5s (-6.0%), fight 56.2s, deaths/100 20.7",
+      "   vs cand-aoe-r8: time/kill 60.1s (+0.0%), fight 55.8s, deaths/100 22.3",
+      "L60: fight 64.2s (median 64.2, p90 75.9), downtime 3.6s, deaths/100 35.6, time/kill 70.2s, 51 kills/h, mana/kill 2721, shares Cat melee 21%, Auto Shot 20%, Melee 16%, Serpent Sting 16%, Volley 11%",
+      "   vs cand-aoe-r1: time/kill 68.2s (-2.8%), fight 68.6s, deaths/100 26.2",
+      "   vs cand-aoe-r2: time/kill 100.0s (+42.4%), fight 65.7s, deaths/100 59.3",
+      "   vs cand-aoe-r3: time/kill 111.0s (+58.2%), fight 62.6s, deaths/100 69.9",
+      "   vs cand-aoe-r4: time/kill 113.1s (+61.1%), fight 64.8s, deaths/100 72.3",
+      "   vs cand-aoe-r5: time/kill 65.4s (-6.8%), fight 64.9s, deaths/100 30.0",
+      "   vs cand-aoe-r6: time/kill 67.8s (-3.5%), fight 65.7s, deaths/100 33.3",
+      "   vs cand-aoe-r7: time/kill 66.3s (-5.6%), fight 65.6s, deaths/100 30.3",
+      "   vs cand-aoe-r8: time/kill 70.2s (+0.0%), fight 64.2s, deaths/100 35.6",
+      "done in 144s"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r8.json --levels 30,40,50,60 --fights 2000 --deltas 40,60 --write --name bm-leveling-aoe --set MOBS_PER_PULL=3",
      "rc": 0,
-     "seconds": 22,
+     "seconds": 290,
      "tail": [
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.18% | no |",
-      "| Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |",
-      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
+      "   Improved Tracking        5  sim   +6.9% (fight   +1.3% +-1.1)  EV   +1.1%",
+      "   Improved Wing Clip       3  sim   -1.0% (fight   -0.9% +-1.1)  EV   +0.0%",
+      "   Lacerating Strikes       1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
+      "   Lightning Reflexes       5  sim   +5.5% (fight   -0.5% +-1.1)  EV   +4.1%",
+      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Strider Kick             1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.6%",
+      "   Summon Hawk              1  sim  +11.7% (fight   +0.7% +-1.1)  EV   +5.2%",
+      "   Surefooted               3  sim   +5.6% (fight   +0.9% +-1.1)  EV   +1.5%",
+      "   Survivalist's Discipline 2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
+      "   Unleashed Fury           5  sim  +10.7% (fight   +2.3% +-1.6)  EV   +3.2%",
+      "done in 290s",
+      "wrote /home/user/wow-forever/hunter/leveling/fightlab/bm-leveling-aoe.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/calibrate.py hunter --spec melee-dps --profile leveling-st --builds opt-melee-dps-leveling-st /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json --levels 40,60 --fights 1500 --write --share-build /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json",
+     "rc": 0,
+     "seconds": 402,
+     "tail": [
+      "Careful Aim                2.7%      2.8%     2.8%   1.00      kept |    nan%   nan% |    2.7%   2.8%",
+      "Focused Fire               2.2%      1.6%     1.6%   1.00      kept |    nan%   nan% |    2.2%   1.6%",
+      "Improved Stings            2.0%      2.2%     2.2%   1.00      kept |    nan%   nan% |    2.0%   2.2%",
+      "Surefooted                 1.8%      2.0%     2.0%   1.00      kept |    1.8%   2.0% |    1.9%   2.0%",
+      "Deadly Aspects             1.7%      1.8%     1.8%   1.00      kept |    2.0%   1.9% |    1.3%   1.8%",
+      "Lightning Reflexes         0.9%      1.9%     0.9%   0.46    fitted |   -0.7%   0.3% |    2.4%   1.4%",
+      "Deflection                 0.8%      0.4%     0.8%   2.17    fitted |   -0.0%   0.8% |    1.7%   0.8%",
+      "Survivalist                0.1%      0.1%     0.1%   1.00      kept |    0.5%   0.1% |   -0.3%   0.1%",
+      "Bestial Swiftness          0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
+      "Improved Revive Pet        0.0%      0.2%     0.2%   1.00      kept |    nan%   nan% |    0.0%   0.2%",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (14 entries written, 3 fitted)",
+      "wrote hunter/leveling/fightlab/melee-dps-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec melee-dps --profile leveling-st --write --export --lookahead 16 --seed leveling-melee",
+     "rc": 0,
+     "seconds": 26,
+     "tail": [
+      "| 36-40 | Marksmanship | Lethal Attacks | 5 | +34.0% |",
+      "| 41-43 | Marksmanship | Improved Stings | 3 | +35.5% |",
+      "| 44-48 | Marksmanship | Careful Aim | 5 | +37.2% |",
+      "| 49-50 | Survival | Survivalist's Discipline | 2 | +37.8% |",
+      "| 51-55 | Beast Mastery | Deadly Aspects | 5 | +38.9% |",
+      "| 56-57 | Beast Mastery | Focused Fire | 2 | +39.9% |",
+      "| 58-59 | Beast Mastery | Pathfinding | 2 | +40.5% |",
+      "| 60 | Survival | Lightning Reflexes | 1 | +40.7% |",
       "",
-      "exported opt-mm-raid-parse -> hunter/talents/forever/proposed-builds.json",
+      "exported opt-melee-dps-leveling-st -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter/raid/optimizer/mm-raid-parse.md"
+      "wrote hunter/leveling/optimizer/melee-dps-leveling-st.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps opt-mm-raid-parse --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json --levels 20,30,40,50,60 --fights 500",
      "rc": 0,
-     "seconds": 9,
+     "seconds": 18,
      "tail": [
-      "== hunter mm-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
-      "  opt-mm-raid-raid-dps                        22/29/0  dummy   427.6  dummy60   466.3  raid   766.3  max   766.3  max60   792.4",
-      "  bm-mm-raid                                  22/29/0  dummy   425.3  dummy60   463.6  raid   768.7  max   768.7  max60   795.0",
-      "  opt-mm-raid-parse                           22/29/0  dummy   421.6  dummy60   459.7  raid   762.4  max   778.7  max60   804.9",
-      "  sim preset: Marksmanship                             dummy   400.3  dummy60   436.3  raid   815.6  max   815.6  max60   837.4",
-      "  bm-mm-full-buffs-raid                       20/31/0  dummy   394.9  dummy60   429.6  raid   808.5  max   808.5  max60   835.3",
-      "  sim preset: Beast Mastery 35/16/0                    dummy   381.0  dummy60   417.0  raid   698.2  max   712.7  max60   744.1",
-      "  sim preset: Marksmanship 0/39/12                     dummy   367.7  dummy60   400.5  raid   739.6  max   739.6  max60   763.9",
-      "  sim preset: Survival 0/15/36                         dummy   342.6  dummy60   370.9  raid   649.0  max   662.5  max60   685.0",
-      "wrote hunter/raid/raidsim/mm-raid-environments.md"
+      "   vs cand-melee-r3: time/kill 26.3s (+0.0%), fight 15.2s, deaths/100 0.0",
+      "L50: fight 15.5s (median 15.0, p90 18.0), downtime 4.2s, deaths/100 0.0, time/kill 27.6s, 130 kills/h, mana/kill 313, shares Cat melee 14%, Melee 14%, Serpent Sting 13%, Melee (off-hand) 13%, Raptor Strike 10%",
+      "   vs cand-melee-pet: time/kill 29.4s (+6.3%), fight 17.1s, deaths/100 0.0",
+      "   vs cand-melee-r1: time/kill 28.1s (+1.8%), fight 16.2s, deaths/100 0.0",
+      "   vs cand-melee-r2: time/kill 27.8s (+0.8%), fight 16.3s, deaths/100 0.0",
+      "   vs cand-melee-r3: time/kill 27.8s (+0.8%), fight 15.9s, deaths/100 0.0",
+      "L60: fight 16.4s (median 15.5, p90 20.7), downtime 4.9s, deaths/100 0.0, time/kill 29.4s, 123 kills/h, mana/kill 447, shares Serpent Sting 17%, Melee 14%, Cat melee 13%, Melee (off-hand) 12%, Immolation Trap 12%",
+      "   vs cand-melee-pet: time/kill 29.8s (+1.4%), fight 17.2s, deaths/100 0.0",
+      "   vs cand-melee-r1: time/kill 30.5s (+3.9%), fight 17.7s, deaths/100 0.0",
+      "   vs cand-melee-r2: time/kill 29.9s (+1.9%), fight 17.6s, deaths/100 0.0",
+      "   vs cand-melee-r3: time/kill 29.5s (+0.5%), fight 16.9s, deaths/100 0.0",
+      "done in 18s"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r4.json --levels 20,30,40,50,60 --fights 1000",
      "rc": 0,
-     "seconds": 0,
+     "seconds": 45,
      "tail": [
-      "hunter mm-lonewolf-raid: no preset within 6% of the best build"
+      "   vs cand-melee-pet: time/kill 29.1s (+7.2%), fight 17.2s, deaths/100 0.0",
+      "   vs cand-melee-r1: time/kill 27.7s (+2.1%), fight 16.3s, deaths/100 0.0",
+      "   vs cand-melee-r2: time/kill 27.4s (+1.1%), fight 16.3s, deaths/100 0.0",
+      "   vs cand-melee-r3: time/kill 27.4s (+1.0%), fight 16.1s, deaths/100 0.0",
+      "   vs cand-melee-r4: time/kill 27.1s (+0.0%), fight 15.5s, deaths/100 0.0",
+      "L60: fight 16.4s (median 15.7, p90 20.4), downtime 4.6s, deaths/100 0.0, time/kill 29.0s, 124 kills/h, mana/kill 446, shares Serpent Sting 17%, Melee 13%, Cat melee 13%, Immolation Trap 12%, Melee (off-hand) 12%",
+      "   vs cand-melee-pet: time/kill 29.7s (+2.2%), fight 17.3s, deaths/100 0.0",
+      "   vs cand-melee-r1: time/kill 30.4s (+4.6%), fight 17.9s, deaths/100 0.0",
+      "   vs cand-melee-r2: time/kill 30.0s (+3.2%), fight 17.7s, deaths/100 0.0",
+      "   vs cand-melee-r3: time/kill 29.3s (+1.0%), fight 17.1s, deaths/100 0.0",
+      "   vs cand-melee-r4: time/kill 29.0s (+0.0%), fight 16.4s, deaths/100 0.0",
+      "done in 45s"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r4.json --levels 20,30,40,50,60 --fights 2000 --deltas 40,60 --write --name melee-dps-opt",
      "rc": 0,
-     "seconds": 9,
+     "seconds": 140,
      "tail": [
-      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
-      "Rapid Recuperation              0.0%      0.0%     0.0%   1.00   noise",
-      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
-      "Clever Traps                    0.0%      0.0%     0.0%   1.00   noise",
-      "Deterrence                      0.0%      0.0%     0.0%   1.00   noise",
-      "Entrapment                      0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Wing Clip              0.0%      0.0%     0.0%   1.00   noise",
-      "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (10 entries, 1 fitted) and hunter/raid/raidsim/mm-lonewolf-raid-calibration.json"
+      "   Improved Tracking        5  sim   +2.3% (fight   +4.7% +-0.3)  EV   +2.4%",
+      "   Lethal Attacks           5  sim   +2.8% (fight   +4.0% +-0.3)  EV   +4.9%",
+      "   Lightning Reflexes       1  sim   +0.6% (fight   +0.7% +-0.2)  EV   +0.3%",
+      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.0%",
+      "   Predator's Edge          5  sim   +2.2% (fight   +4.1% +-0.3)  EV   +5.7%",
+      "   Resourcefulness          2  sim  +13.9% (fight   +0.1% +-0.3)  EV  +12.0%",
+      "   Savage Strikes           2  sim   +1.5% (fight   +2.0% +-0.2)  EV   +2.9%",
+      "   Strider Kick             1  sim   +0.6% (fight   +6.9% +-0.5)  EV  +10.1%",
+      "   Surefooted               3  sim   +1.0% (fight   +2.8% +-0.3)  EV   +2.0%",
+      "   Survivalist's Discipline 2  sim   +2.7% (fight   +6.8% +-0.4)  EV   +1.0%",
+      "done in 139s",
+      "wrote /home/user/wow-forever/hunter/leveling/fightlab/melee-dps-opt.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/fightlab/sensitivity.py hunter --spec melee-dps --builds opt-melee-dps-leveling-st --levels 40,60 --fights 1000 --write",
      "rc": 0,
-     "seconds": 24,
+     "seconds": 44,
      "tail": [
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
-      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
-      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
-      "",
-      "exported opt-mm-lonewolf-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
-      "",
-      "wrote hunter/raid/optimizer/mm-lonewolf-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json --iterations 1000 --no-presets",
-     "rc": 0,
-     "seconds": 1,
-     "tail": [
-      "== hunter mm-lonewolf-raid: 7 builds x 1000 iterations, hunter/dps p1.bis.gear.json + mm.apl.json",
-      "  opt-mm-lonewolf-raid-raid-dps                5/38/8  DPS    433.7 ±  20.0  threat      441  oom  64.8s  scorer +78.0%",
-      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +75.7%",
-      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    417.4 ±  20.7  threat      425  oom  59.9s  scorer +63.4%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    393.4 ±  17.9  threat      401  oom  58.9s  scorer +54.6%",
-      "  damage shares of opt-mm-lonewolf-raid-raid-dps: Auto Shot 54%, Arcane Shot 24%, Serpent Sting 13%, Aimed Shot 9%, Multi-Shot 0% | model sources: auto 54%, arcane 24%, serpent 13%, aimed 9%, multi 0% (unmatched 0%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 2,
-     "tail": [
-      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +75.7%",
-      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    417.3 ±  21.1  threat      425  oom  59.9s  scorer +63.4%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    392.9 ±  17.9  threat      400  oom  58.9s  scorer +54.6%",
-      "  sim preset: Marksmanship                             DPS    353.7 ±  17.0  threat      361  oom  64.9s",
-      "  sim preset: Marksmanship 0/39/12                     DPS    333.1 ±  15.2  threat      341  oom  57.4s",
-      "  sim preset: Beast Mastery 35/16/0                    DPS    323.3 ±  13.0  threat      331  oom  44.9s",
-      "  sim preset: Survival 0/15/36                         DPS    308.7 ±  11.5  threat      316  oom  52.2s",
-      "  damage shares of mm-lone-wolf-raid: Auto Shot 54%, Arcane Shot 19%, Serpent Sting 15%, Aimed Shot 11%, Multi-Shot 0% | model sources: auto 54%, arcane 19%, serpent 15%, aimed 11%, multi 0% (unmatched 0%)",
-      "wrote hunter/raid/raidsim/mm-lonewolf-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid",
-     "rc": 0,
-     "seconds": 20,
-     "tail": [
-      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
-      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
-      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
-      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
-      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
-      "",
-      "exported opt-mm-lonewolf-raid-parse -> hunter/talents/forever/proposed-builds.json",
-      "",
-      "wrote hunter/raid/optimizer/mm-lonewolf-raid-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps opt-mm-lonewolf-raid-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 5,
-     "tail": [
-      "== hunter mm-lonewolf-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
-      "  opt-mm-lonewolf-raid-raid-dps                5/38/8  dummy   433.5  dummy60   465.6  raid   847.9  max   847.9  max60   863.5",
-      "  mm-lone-wolf-raid                            5/41/5  dummy   431.9  dummy60   462.7  raid   886.9  max   886.9  max60   916.1",
-      "  opt-mm-lonewolf-raid-parse                   5/37/9  dummy   423.0  dummy60   454.4  raid   828.3  max   847.9  max60   863.5",
-      "  sim preset: Marksmanship                             dummy   353.7  dummy60   379.6  raid   732.5  max   732.5  max60   750.2",
-      "  sim preset: Marksmanship 0/39/12                     dummy   333.1  dummy60   357.5  raid   689.0  max   689.0  max60   716.0",
-      "  sim preset: Beast Mastery 35/16/0                    dummy   323.3  dummy60   343.6  raid   589.8  max   603.9  max60   625.7",
-      "  sim preset: Survival 0/15/36                         dummy   308.7  dummy60   328.2  raid   593.5  max   607.0  max60   628.0",
-      "wrote hunter/raid/raidsim/mm-lonewolf-raid-environments.md"
+      "weapons 20% better (blues) 60 {'opt-melee-dps-leveling-st': 28.5} {'opt-melee-dps-leveling-st': {}}",
+      "dungeon blues (item database) 40 {'opt-melee-dps-leveling-st': 23.3} {'opt-melee-dps-leveling-st': {}}",
+      "dungeon blues (item database) 60 {'opt-melee-dps-leveling-st': 27.5} {'opt-melee-dps-leveling-st': {}}",
+      "gear stats 20% better 40 {'opt-melee-dps-leveling-st': 25.1} {'opt-melee-dps-leveling-st': {}}",
+      "gear stats 20% better 60 {'opt-melee-dps-leveling-st': 28.7} {'opt-melee-dps-leveling-st': {}}",
+      "no caster mobs 40 {'opt-melee-dps-leveling-st': 26.7} {'opt-melee-dps-leveling-st': {}}",
+      "no caster mobs 60 {'opt-melee-dps-leveling-st': 29.1} {'opt-melee-dps-leveling-st': {}}",
+      "30% caster mobs 40 {'opt-melee-dps-leveling-st': 25.3} {'opt-melee-dps-leveling-st': {}}",
+      "30% caster mobs 60 {'opt-melee-dps-leveling-st': 28.6} {'opt-melee-dps-leveling-st': {}}",
+      "20% of mobs run at 20% health 40 {'opt-melee-dps-leveling-st': 25.7} {'opt-melee-dps-leveling-st': {}}",
+      "20% of mobs run at 20% health 60 {'opt-melee-dps-leveling-st': 29.1} {'opt-melee-dps-leveling-st': {}}",
+      "wrote /home/user/wow-forever/hunter/leveling/fightlab/sensitivity.md"
      ],
      "stderr": []
     }
@@ -2928,40 +2896,19 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-bm-leveling-leveling-aoe": 62.016666666666666,
+        "opt-bm-leveling-leveling-aoe": 57.183333333333344,
         "cand-aoe-r1": 64.83333333333333,
         "cand-aoe-r2": 75.48333333333333,
         "cand-aoe-r3": 80.22222222222223,
-        "cand-aoe-r4": 78.76111111111112
-       }
-      },
-      {
-       "round": 2,
-       "new_build": true,
-       "quick_race": {
-        "opt-bm-leveling-leveling-aoe": 56.455555555555556,
-        "cand-aoe-r1": 64.83333333333333,
-        "cand-aoe-r2": 75.48333333333333,
-        "cand-aoe-r3": 80.22222222222223,
-        "cand-aoe-r4": 78.76111111111112,
-        "cand-aoe-r5": 62.016666666666666
-       }
-      },
-      {
-       "round": 3,
-       "new_build": true,
-       "quick_race": {
-        "opt-bm-leveling-leveling-aoe": 54.36666666666667,
-        "cand-aoe-r1": 64.83333333333333,
-        "cand-aoe-r2": 75.48333333333333,
-        "cand-aoe-r3": 80.22222222222223,
-        "cand-aoe-r4": 78.76111111111112,
+        "cand-aoe-r4": 78.7611111111111,
         "cand-aoe-r5": 62.016666666666666,
-        "cand-aoe-r6": 56.455555555555556
-       }
+        "cand-aoe-r6": 56.455555555555556,
+        "cand-aoe-r7": 54.36666666666667
+       },
+       "converged_by_noise": true
       }
      ],
-     "promoted": null,
+     "promoted": "cand-aoe-r7",
      "sets": [
       "MOBS_PER_PULL=3"
      ]
@@ -2973,10 +2920,11 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-melee-dps-leveling-st": 27.464999999999996,
-        "cand-melee-pet": 29.134999999999998,
-        "cand-melee-r1": 27.82,
-        "cand-melee-r2": 27.714999999999996
+        "opt-melee-dps-leveling-st": 26.255000000000003,
+        "cand-melee-pet": 26.895000000000003,
+        "cand-melee-r1": 26.655,
+        "cand-melee-r2": 26.369999999999997,
+        "cand-melee-r3": 26.29
        },
        "converged_by_noise": true
       }
@@ -6420,14 +6368,12 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T03:32:58",
+  "date": "2026-09-29T05:59:01",
   "classes": [
    "hunter"
   ],
   "steps": [
-   "raid",
-   "adopt",
-   "regen"
+   "variants"
   ],
   "fights": {
    "calibrate": 1500,
@@ -6435,214 +6381,8 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 187,
+  "seconds": 2829,
   "refresh": null,
-  "regen_log": [
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_fightlab_sections.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "formatted /home/user/wow-forever/hunter/talents/forever/proposed-builds.json",
-     "hunter: README section + leveling-beast-mastery note written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_raidsim_sections.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "hunter: raid sim section written (4 specs)",
-     "wrote _reference/raidsim-summary.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_heallab_sections.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference/heallab-summary.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_leveling_guides.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "hunter: leveling/guide.md written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_sim_presets.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "hunter: raid gear and consumables written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_rotations.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "hunter: raid and leveling rotations, DPS ranking written"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/validate_builds.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "  ok   leveling-feral (9/31/11)",
-     "  ok   opt-feral-cat-dps-leveling-st (9/31/11)",
-     "  ok   opt-feral-cat-dps-solo-60 (9/31/11)",
-     "  ok   opt-balance-dps-leveling-st (36/2/13)",
-     "  ok   opt-resto-heal-raid-heal (11/5/35)",
-     "  ok   opt-balance-dps-raid-dps (33/5/13)",
-     "  ok   opt-balance-dps-parse (33/5/13)",
-     "  ok   opt-feral-cat-dps-raid-dps (9/35/7)",
-     "  ok   opt-feral-cat-dps-parse (9/35/7)",
-     "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
-     "",
-     "all builds valid"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_builds.py",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "rogue/classic-baseline: 5 build pages + README.md",
-     "rogue: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "priest/classic-baseline: 4 build pages + README.md",
-     "priest: 11 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "shaman/classic-baseline: 5 build pages + README.md",
-     "shaman: 14 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "mage/classic-baseline: 7 build pages + README.md",
-     "mage: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "warlock/classic-baseline: 4 build pages + README.md",
-     "warlock: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
-     "druid/classic-baseline: 7 build pages + README.md",
-     "druid: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_new_builds.py hunter",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference/new-builds-survey.md",
-     "wrote the New spells and builds section of 1 raid READMEs"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py hunter --write",
-    "rc": 0,
-    "seconds": 32,
-    "tail": [
-     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
-     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
-     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
-     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
-     "",
-     "## Reading it",
-     "",
-     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
-     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
-     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
-     ""
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/render_optimizer_sections.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "updated hunter/leveling/README.md and hunter/raid/README.md",
-     "updated mage/leveling/README.md and mage/raid/README.md",
-     "updated warrior/leveling/README.md and warrior/raid/README.md",
-     "updated rogue/leveling/README.md and rogue/raid/README.md",
-     "updated priest/leveling/README.md and priest/raid/README.md",
-     "updated paladin/leveling/README.md and paladin/raid/README.md",
-     "updated shaman/leveling/README.md and shaman/raid/README.md",
-     "updated warlock/leveling/README.md and warlock/raid/README.md",
-     "updated druid/leveling/README.md and druid/raid/README.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/scorer/compare_effects.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "druid    buff=9 nerf=19 reworked=0 new=17 removed=13 same=6 unscored=0",
-     "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
-     "mage     buff=8 nerf=16 reworked=1 new=11 removed=6 same=14 unscored=4",
-     "paladin  buff=12 nerf=11 reworked=1 new=19 removed=13 same=7 unscored=0",
-     "priest   buff=10 nerf=14 reworked=1 new=14 removed=8 same=12 unscored=2",
-     "rogue    buff=16 nerf=9 reworked=0 new=10 removed=8 same=18 unscored=0",
-     "shaman   buff=12 nerf=14 reworked=2 new=17 removed=13 same=5 unscored=0",
-     "warlock  buff=6 nerf=18 reworked=1 new=23 removed=21 same=3 unscored=1",
-     "warrior  buff=10 nerf=15 reworked=2 new=11 removed=10 same=15 unscored=0"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/scorer/loop_audit.py",
-    "rc": 0,
-    "seconds": 1,
-    "tail": [
-     "druid    flagged 32/99  open 1",
-     "hunter   flagged 31/58  open 5",
-     "mage     flagged 59/108  open 0",
-     "paladin  flagged 25/71  open 1",
-     "priest   flagged 24/56  open 3",
-     "rogue    flagged 27/66  open 5",
-     "shaman   flagged 30/73  open 3",
-     "warlock  flagged 23/63  open 8",
-     "warrior  flagged 13/68  open 1",
-     "total flagged: 264 -> _reference/data/scorer/loops/audit.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/build_launch_checklist.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference/launch-checklist.md (204 per-build questions)"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/build_beta_checklist.py",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference/beta-checklist.md"
-    ],
-    "stderr": []
-   },
-   {
-    "cmd": "/home/user/wow-forever/_reference/data/fightlab/summary.py --write",
-    "rc": 0,
-    "seconds": 0,
-    "tail": [
-     "wrote _reference/fightlab-summary.md"
-    ],
-    "stderr": []
-   }
-  ]
+  "regen_log": []
  }
 }
