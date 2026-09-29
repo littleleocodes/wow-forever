@@ -80,6 +80,8 @@ def render(cls, reports, classic=()):
          "| Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |", "|---|---|---|---|---|---|---|---|"]
     for r in reports:
         rows = sorted(r["results"], key=lambda x: -(x["dps"] or 0))
+        if not rows:   # an entry without builds or presets (the Shockadin survey target)
+            continue
         best = rows[0]["dps"] or 1.0
         for x in rows:
             setting = "dummy" if r["sim"].get("setting") == "dummy" else "raid"

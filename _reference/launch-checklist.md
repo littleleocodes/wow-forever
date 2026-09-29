@@ -485,6 +485,10 @@
 - [ ] Weaponmaster proc/crit values at max rank; which weapon type wins.
 - [ ] Whether a Bloodthirst dual-wield build still out-damages this — Classic history says DW wins with hit and weapon skill, but Improved Slam's rework may change that.
 
+**Arms — Battle Stance: Overpower, Rend and Slam (raid)** (`warrior/raid/builds/arms-battle-raid.md`)
+- [ ] Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.
+- [ ] Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model).
+
 **Protection — Raid Tank (simulator winner adopted 2026-09-27)** (`warrior/raid/builds/prot-raid-tank.md`)
 - [ ] Is Bastion's +10% damage worth more threat than Anger Management + Improved Tactical Mastery (the Classic Arms dip)?
 - [ ] Does Shield Block still block an extra attack without Improved Shield Block?

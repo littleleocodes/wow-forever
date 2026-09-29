@@ -7,8 +7,8 @@ Frost for Molten Core/Blackwing Lair, Fire once fire immunity ends, one Winter's
 ## In one minute
 
 - **Leveling:** [Leveling — Frost](leveling/builds/leveling-frost.md) (12/0/39) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-4)
-- **Raid damage, training dummy** (your own buffs only): [Frost — Fingers of Frost / Ice Lance / Shatter](raid/builds/frost-fingers-of-frost-raid.md) (22/0/29), 588 DPS — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4)
-- **Raid damage, full raid**: the same build, 667 DPS.
+- **Raid damage, training dummy** (your own buffs only): [Frost — Fingers of Frost / Ice Lance / Shatter](raid/builds/frost-fingers-of-frost-raid.md) (22/0/29), 587 DPS — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4)
+- **Raid damage, full raid**: the same build, 668 DPS.
 - **PvP:** [Frost](pvp/builds/pvp-frost.md) (20/0/31) — [open the talent tree](https://talentsforever.com/mage/60/2302052001023--0505320301011331201-4)
 
 ## Leveling
@@ -59,9 +59,9 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
-| Frost — Fingers of Frost / Ice Lance / Shatter (22/0/29) | 588 | 667 | [tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4) |
+| Frost — Fingers of Frost / Ice Lance / Shatter (22/0/29) | 587 | 668 | [tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4) |
 | Arcane — Arcane Blast (31/15/5) | 542 | 619 | [tree](https://talentsforever.com/mage/60/050215003100311531-23050032-005-4) |
-| Fire — Ignite / Hot Streak (14/32/5) | 534 | 662 | [tree](https://talentsforever.com/mage/60/250025-23550000130133051-005-4) |
+| Fire — Ignite / Hot Streak (14/32/5) | 535 | 662 | [tree](https://talentsforever.com/mage/60/250025-23550000130133051-005-4) |
 | Frostfire — Frostfire Bolt / Hot Streak (0/35/16) | 514 | 590 | [tree](https://talentsforever.com/mage/60/-03552020130133151-005500033-4) |
 
 What to press with the top build, Frost — Fingers of Frost / Ice Lance / Shatter (the first line that is ready is the one you cast):

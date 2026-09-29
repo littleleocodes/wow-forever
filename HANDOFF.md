@@ -47,19 +47,19 @@ Everything below is generated and current as of this date; the pages are the sou
 - **Checks at handoff**: all builds valid; fight-lab mage regression IDENTICAL; Classic check 0 changed cases; 2050 relative
   links, 0 broken (`_reference/data/linkcheck.py`).
 
-Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid, community simulator 40be98e):
+Best raid DPS build per class (training dummy / fully buffed raid, community simulator 40be98e; hunter and warrior rows updated 2026-09-29, the others unchanged by the overnight audit):
 
 | Class | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
 | Druid | `opt-balance-dps-raid-dps` | 462 | `opt-feral-cat-dps-raid-dps` | 566 |
-| Hunter | `mm-hawk-raid` (Summon Hawk; rests on the simulator's hawk model) | 469 | `mm-lone-wolf-raid` (with Arcane Shot, 2026-09-29) | 887 |
+| Hunter | `mm-hawk-raid` (Summon Hawk; rests on the simulator's hawk model) | 469 | `melee-survival-raid` (melee; our Aspect of the Beast patch, traps, Wing Clip) | 986 |
 | Mage | `frost-fingers-of-frost-raid` | 588 | `frost-fingers-of-frost-raid` | 667 |
 | Paladin | `opt-ret-dps-raid-dps` | 368 | `ret-full-buffs-raid` | 805 |
 | Priest | `opt-shadow-dps-raid-dps` | 554 | `opt-shadow-dps-raid-dps` | 636 |
 | Rogue | `opt-combat-daggers-raid-raid-dps` | 414 | `opt-combat-daggers-raid-raid-dps` | 742 |
 | Shaman | `opt-enhancement-dps-raid-dps` | 415 | `opt-enhancement-dps-raid-dps` | 774 |
 | Warlock | `demonology-pact-raid` (Demonic Pact) | 622 | `demonology-pact-raid` | 761 |
-| Warrior | `opt-fury-dw-raid-raid-dps` | 257 | `opt-arms-2h-raid-raid-dps` | 457 |
+| Warrior | `opt-fury-dw-raid-raid-dps` | 256 | Arms in Battle Stance (`arms-battle-raid` 467; the simulator's Arms 39/12/0 preset on our Battle Stance rotation 476) | 476 |
 
 ### What the last local session did (2026-09-27/28)
 
@@ -114,6 +114,17 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    candidates not done: Aspect of the Beast and the melee half of Deadly Aspects (melee hunter), warlock Bane of Doom. Root cause:
    `apl_opt.py`'s insertion pool offers only new Forever spells; widen it to every implemented damaging ability no rotation casts.
    Warrior Overpower and Rend are never castable (Berserker Stance only): part of the open Arms rotation item.
+   **Overnight audit, 2026-09-29** (user request: "a full sweep so we never again miss a spell like the traps or Arcane Shot"; full record
+   `_reference/sim-gaps.md`): the rotation search now offers every combat spell of the spellbook (dot- and aura-guarded variants, an end
+   spot, no point-blank spells for ranged entries); every raid entry was swept (`--insert-only`). Kept: melee hunter Wing Clip (+7.5% /
+   +10.8%), Subtlety Garrote after Vanish (+3.0% / +1.6%), tank cooldowns (Shield Wall, Barkskin), Rend for the Protection warrior;
+   removed by hand: Blast Wave and Cone of Cold for the Fire mage (the simulator does not range-check them). Aspect of the Beast patch
+   (melee hunter +12-13%). New `arms-battle-raid` (Arms in Battle Stance, stance dancing found by the search): best raid warrior. Raid
+   pipeline re-run for all classes: every hand draft stands. Race sweep (`_reference/race-sweep.md`): no race beats ours by more than
+   2.6% except Undead Fury (+4.5-4.9%); the entries keep their races (faction is the player's choice). Fight lab: melee hunter traps
+   (-4.6% to -6.3% time per kill at 40-60), warlock Curse of the Elements (measured, off). New-player `START-HERE.md` pages and the
+   reorganization proposal `_reference/organization-plan.md` (steps 2-6 await the user). Not done: the race sweep of `arms-battle-raid`
+   (its report did not exist yet), Bane of Doom (no spell rows in the simulator), the Shockadin entry has no build.
 2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
    confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
    still won on 17,000 fresh iterations, so the searches are not void, but the final checks were never independent. Worth

@@ -85,14 +85,14 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 6 changes to the base rotation; third-seed check: demonology-pact-raid 614 -> 622 DPS (+1.3%), sim preset: Demonic Pact 2/31/18 596 -> 605 DPS (+1.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: demonology-pact-raid 614 -> 621 DPS (+1.2%), sim preset: Demonic Pact 2/31/18 596 -> 605 DPS (+1.4%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.5%, pass 1)
   2. only with 6s or more of the fight left: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   4. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if mana % < 10% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 1)
   5. threshold 10% -> 15%: if mana % < 10% and time left in the fight ≥ 6s: cast Life Tap (+0.4%, pass 2)
   6. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: demonology-pact-raid 753 -> 761 DPS (+1.2%), sim preset: Demonic Pact 2/31/18 729 -> 737 DPS (+1.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: demonology-pact-raid 752 -> 761 DPS (+1.1%), sim preset: Demonic Pact 2/31/18 728 -> 737 DPS (+1.2%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
 

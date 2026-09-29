@@ -26,7 +26,7 @@
 | Folder | What is in it | Hand drafts |
 |---|---|---|
 | [leveling/](leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (5 builds) | [leveling-arms](leveling/builds/leveling-arms.md) |
-| [raid/](raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (8 builds) | [fury-dw-raid](raid/builds/fury-dw-raid.md), [arms-2h-raid](raid/builds/arms-2h-raid.md), [prot-raid-tank](raid/builds/prot-raid-tank.md) |
+| [raid/](raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (9 builds) | [fury-dw-raid](raid/builds/fury-dw-raid.md), [arms-2h-raid](raid/builds/arms-2h-raid.md), [arms-battle-raid](raid/builds/arms-battle-raid.md), [prot-raid-tank](raid/builds/prot-raid-tank.md) |
 | [pvp/](pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (1 build) | [arms-pvp](pvp/builds/arms-pvp.md) |
 | [spells/](spells/README.md) | Spell ranks and numbers from the beta client | |
 | [talents/forever/](talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |
@@ -40,5 +40,6 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| arms-2h-raid | [`opt-arms-2h-raid-raid-dps`](raid/builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer) | 218 | [`opt-arms-2h-raid-raid-dps`](raid/builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer) | 457 |
-| fury-dw-raid | [`opt-fury-dw-raid-raid-dps`](raid/builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer) | 257 | [`fury-dw-raid`](raid/builds/fury-dw-raid.md) (ours: hand draft) | 455 |
+| arms-2h-raid | [`opt-arms-2h-raid-raid-dps`](raid/builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer) | 218 | [`opt-arms-2h-raid-raid-dps`](raid/builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer) | 456 |
+| fury-dw-raid | [`opt-fury-dw-raid-raid-dps`](raid/builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer) | 256 | [`fury-dw-raid`](raid/builds/fury-dw-raid.md) (ours: hand draft) | 455 |
+| arms-battle-raid | [`arms-battle-raid`](raid/builds/arms-battle-raid.md) (ours: hand draft) | 238 | *Arms 39/12/0* (community simulator) | 476 |

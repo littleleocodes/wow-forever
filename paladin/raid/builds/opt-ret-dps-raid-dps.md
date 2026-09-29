@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +96.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +123.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 25.2 points of score in this model.
-2. **Seal of Command** — Removing it costs 21.6 points of score in this model.
-3. **Sanctified Judgement** — Removing it costs 16.5 points of score in this model.
-4. **Twist of Light** — Removing it costs 13.6 points of score in this model.
-5. **Vengeance** — Removing it costs 13.2 points of score in this model.
-6. **Conviction** — Removing it costs 12.9 points of score in this model.
-7. **Holy Conduit** — Removing it costs 11.6 points of score in this model.
-8. **Improved Seals** — Removing it costs 9.7 points of score in this model.
+1. **Holy Conduit** — Removing it costs 36.5 points of score in this model.
+2. **Champion of the Light** — Removing it costs 29.0 points of score in this model.
+3. **Seal of Command** — Removing it costs 24.5 points of score in this model.
+4. **Twist of Light** — Removing it costs 15.2 points of score in this model.
+5. **Vengeance** — Removing it costs 15.0 points of score in this model.
+6. **Sanctified Judgement** — Removing it costs 14.9 points of score in this model.
+7. **Conviction** — Removing it costs 14.6 points of score in this model.
+8. **Improved Seals** — Removing it costs 11.2 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,15 +64,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 17/0/34 | 368 | +0.0% | 779 | -3.2% | 0 s |
+| 1 | **[`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md)** | ours: optimizer | 17/0/34 | 368 | +0.0% | 778 | -3.3% | 0 s |
 | 2 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 367 | -0.4% | 779 | -3.2% | 0 s |
-| 3 | *P4/P5 Ret* | community simulator | - | 365 | -0.8% | 777 | -3.5% | 0 s |
-| 4 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 365 | -0.8% | 805 | +0.0% | 3 s |
-| 5 | *Retribution 9/0/42* | community simulator | - | 352 | -4.4% | 771 | -4.1% | 5 s |
+| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 365 | -0.8% | 804 | +0.0% | 3 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 365 | -0.8% | 777 | -3.5% | 0 s |
+| 5 | *Retribution 9/0/42* | community simulator | - | 353 | -4.2% | 771 | -4.2% | 5 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 12 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 349 -> 368 DPS (+5.6%), sim preset: P4/P5 Ret 353 -> 365 DPS (+3.6%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 12 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 348 -> 369 DPS (+5.8%), sim preset: P4/P5 Ret 353 -> 366 DPS (+3.7%)):
   1. only above 40% mana: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up: cast Seal of Command (+2.5%, pass 1)
   2. threshold 0.4s -> 0.9s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+1.1%, pass 1)
   3. threshold 70% -> 60%: if mana % ≥ 70%: cast Consecration + threshold 0.4s -> 0.2s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up and mana % ≥ 40%: cast Seal of Command (+0.3%, pass 1)
@@ -85,7 +85,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
   10. threshold 60% -> 70%: if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 60%: cast Seal of Command (+0.6%, pass 2)
   11. threshold 0.9s -> 0.4s: if mana % ≥ 15% and time to the next auto attack < 0.9s and Seal of Command is up: cast Seal of Righteousness (+0.6%, pass 2)
   12. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 6 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 730 -> 779 DPS (+6.8%), sim preset: P4/P5 Ret 728 -> 777 DPS (+6.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 730 -> 779 DPS (+6.8%), sim preset: P4/P5 Ret 727 -> 777 DPS (+6.8%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)

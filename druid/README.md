@@ -41,5 +41,5 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| balance-dps | [`opt-balance-dps-raid-dps`](raid/builds/opt-balance-dps-raid-dps.md) (ours: optimizer) | 462 | [`opt-balance-dps-raid-dps`](raid/builds/opt-balance-dps-raid-dps.md) (ours: optimizer) | 518 |
-| feral-cat-dps | [`opt-feral-cat-dps-raid-dps`](raid/builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer) | 357 | [`opt-feral-cat-dps-raid-dps`](raid/builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer) | 566 |
+| balance-dps | [`opt-balance-dps-raid-dps`](raid/builds/opt-balance-dps-raid-dps.md) (ours: optimizer) | 461 | [`opt-balance-dps-raid-dps`](raid/builds/opt-balance-dps-raid-dps.md) (ours: optimizer) | 518 |
+| feral-cat-dps | [`opt-feral-cat-dps-raid-dps`](raid/builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer) | 356 | [`opt-feral-cat-dps-raid-dps`](raid/builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer) | 567 |

@@ -64,29 +64,31 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/32/5 | 534 | +0.0% | 662 | +0.0% | 1 s |
+| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/32/5 | 535 | +0.0% | 662 | +0.0% | 1 s |
 | 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 13/33/5 | 534 | -0.0% | 662 | +0.0% | 1 s |
-| 3 | *Fire 0/35/16* | community simulator | - | 519 | -2.8% | 647 | -2.2% | 0 s |
-| 4 | *Fire DPS* | community simulator | - | 518 | -3.0% | 623 | -5.8% | 0 s |
-| 5 | *Arcane DPS* | community simulator | - | 406 | -23.8% | 472 | -28.7% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 269 | -49.5% | 336 | -49.3% | 0 s |
-| 7 | *Frost 14/0/37* | community simulator | - | 262 | -50.9% | 320 | -51.6% | 0 s |
-| 8 | *Frost DPS* | community simulator | - | 257 | -51.8% | 320 | -51.6% | 0 s |
+| 3 | *Fire DPS* | community simulator | - | 520 | -2.8% | 624 | -5.8% | 0 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 520 | -2.8% | 648 | -2.1% | 0 s |
+| 5 | *Arcane DPS* | community simulator | - | 407 | -23.9% | 473 | -28.6% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 270 | -49.6% | 336 | -49.3% | 0 s |
+| 7 | *Frost 14/0/37* | community simulator | - | 262 | -50.9% | 321 | -51.6% | 0 s |
+| 8 | *Frost DPS* | community simulator | - | 258 | -51.8% | 321 | -51.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: fire-raid 495 -> 534 DPS (+7.8%), sim preset: Fire DPS 488 -> 518 DPS (+6.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: fire-raid 495 -> 534 DPS (+7.9%), sim preset: Fire 0/35/16 481 -> 520 DPS (+8.0%)):
   1. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+3.1%, pass 1)
   2. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.1%, pass 1)
   3. insert before the filler: if spell 44404 is up: cast Arcane Missiles (+0.2%, pass 1)
   4. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 6 changes to the base rotation; third-seed check: fire-raid 618 -> 662 DPS (+7.0%), sim preset: Fire DPS 581 -> 623 DPS (+7.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 8 changes to the base rotation; third-seed check: fire-raid 619 -> 665 DPS (+7.3%), sim preset: Fire 0/35/16 608 -> 653 DPS (+7.4%)):
   1. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+3.7%, pass 1)
   2. move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.5%, pass 1)
   3. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.2%, pass 1)
   4. only with 3s or more of the fight left: if mana % ≥ 10%: cast Fireball (+0.2%, pass 2)
   5. move to the top: cast Fire Blast (+0.2%, pass 2)
   6. threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.4%, pass 2)
+  7. insert before the filler: cast Blast Wave (+0.3%, pass 3)
+  8. insert before the filler: cast Cone of Cold (+0.3%, pass 3)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|

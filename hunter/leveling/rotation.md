@@ -28,24 +28,6 @@ Report: [fightlab/bm-leveling-aoe.md](fightlab/bm-leveling-aoe.md).
 | Summon Hawk | 0.6 | 0.3 | 0.3 | 0.2 | 0% |
 | Aimed Shot | 0.5 | 0.2 | 0.1 | 0.1 | 1% |
 
-### `cand-aoe-r6`
-
-| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|
-| Claw | 5.0 | 5.5 | 5.6 | 6.6 | 7% |
-| Melee | 3.5 | 4.6 | 4.5 | 5.8 | 18% |
-| Growl | 3.7 | 4.2 | 4.4 | 5.4 | 0% |
-| Auto Shot | 3.5 | 4.2 | 5.5 | 4.5 | 16% |
-| Serpent Sting | 2.0 | 1.7 | 1.7 | 1.7 | 16% |
-| Volley | 0.0 | 1.3 | 1.4 | 1.7 | 11% |
-| Mongoose Bite | 0.7 | 0.9 | 1.0 | 1.3 | 5% |
-| Wing Clip | 0.4 | 0.5 | 0.7 | 0.8 | 0% |
-| Bite | 0.4 | 0.5 | 0.5 | 0.5 | 1% |
-| Raptor Strike | 1.1 | 0.5 | 0.3 | 0.4 | 1% |
-| Hunter's Mark | 0.4 | 0.3 | 0.3 | 0.3 | 0% |
-| Summon Hawk | 0.6 | 0.3 | 0.3 | 0.2 | 0% |
-| Aimed Shot | 0.5 | 0.2 | 0.1 | 0.1 | 1% |
-
 ### `cand-aoe-r7`
 
 | Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
@@ -61,6 +43,24 @@ Report: [fightlab/bm-leveling-aoe.md](fightlab/bm-leveling-aoe.md).
 | Bite | 0.4 | 0.5 | 0.5 | 0.5 | 1% |
 | Raptor Strike | 1.1 | 0.5 | 0.3 | 0.3 | 1% |
 | Hunter's Mark | 0.4 | 0.3 | 0.3 | 0.3 | 0% |
+| Summon Hawk | 0.6 | 0.3 | 0.3 | 0.2 | 0% |
+| Aimed Shot | 0.5 | 0.2 | 0.1 | 0.1 | 1% |
+
+### `cand-aoe-r8`
+
+| Ability | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|
+| Claw | 5.0 | 5.0 | 5.3 | 6.4 | 6% |
+| Melee | 3.4 | 4.0 | 4.2 | 5.5 | 17% |
+| Growl | 3.7 | 3.9 | 4.2 | 5.2 | 0% |
+| Auto Shot | 3.3 | 4.0 | 5.5 | 4.9 | 17% |
+| Serpent Sting | 2.0 | 1.7 | 1.8 | 1.8 | 17% |
+| Volley | 0.0 | 1.3 | 1.5 | 1.7 | 12% |
+| Mongoose Bite | 0.7 | 0.8 | 0.9 | 1.2 | 5% |
+| Wing Clip | 0.4 | 0.5 | 0.7 | 0.8 | 0% |
+| Bite | 0.4 | 0.5 | 0.5 | 0.5 | 1% |
+| Hunter's Mark | 0.4 | 0.3 | 0.3 | 0.3 | 0% |
+| Raptor Strike | 1.2 | 0.4 | 0.3 | 0.3 | 1% |
 | Summon Hawk | 0.6 | 0.3 | 0.3 | 0.2 | 0% |
 | Aimed Shot | 0.5 | 0.2 | 0.1 | 0.1 | 1% |
 
@@ -112,7 +112,7 @@ Report: [fightlab/bm-leveling.md](fightlab/bm-leveling.md).
 
 The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/melee-dps-opt.md](fightlab/melee-dps-opt.md).
 
@@ -120,58 +120,60 @@ Report: [fightlab/melee-dps-opt.md](fightlab/melee-dps-opt.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.3 | 6.2 | 6.6 | 7.6 | 14% |
-| Claw | 3.6 | 4.3 | 5.1 | 5.3 | 5.7 | 6% |
-| Melee | 1.8 | 2.9 | 4.2 | 4.5 | 5.4 | 15% |
-| Growl | 1.9 | 2.5 | 3.4 | 3.7 | 4.0 | 0% |
-| Strider Kick | 0.0 | 1.8 | 2.4 | 2.5 | 2.7 | 10% |
-| Raptor Strike | 1.4 | 1.4 | 2.0 | 2.1 | 2.3 | 12% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 6% |
+| Melee (off-hand) | 3.1 | 4.2 | 5.8 | 5.8 | 6.5 | 11% |
+| Claw | 3.5 | 4.3 | 4.9 | 5.0 | 5.2 | 5% |
+| Melee | 1.9 | 3.0 | 4.0 | 4.2 | 4.8 | 13% |
+| Growl | 1.9 | 2.5 | 3.2 | 3.3 | 3.5 | 0% |
+| Strider Kick | 0.0 | 1.8 | 2.2 | 2.2 | 2.3 | 8% |
+| Raptor Strike | 1.2 | 1.3 | 1.8 | 1.7 | 1.9 | 9% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
 | Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.2 | 0.5 | 2% |
-| Counterattack | 0.0 | 0.0 | 0.1 | 0.2 | 0.4 | 1% |
-| Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-
-### `cand-melee-r2`
-
-| Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
-|---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.3 | 6.2 | 6.9 | 8.0 | 15% |
-| Claw | 3.6 | 4.3 | 5.1 | 5.4 | 5.9 | 6% |
-| Melee | 1.8 | 2.9 | 4.2 | 4.7 | 5.6 | 16% |
-| Growl | 1.9 | 2.5 | 3.4 | 3.7 | 4.1 | 0% |
-| Strider Kick | 0.0 | 1.8 | 2.4 | 2.6 | 2.8 | 10% |
-| Raptor Strike | 1.4 | 1.4 | 2.0 | 2.2 | 2.4 | 12% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 6% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 14% |
-| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.4 | 2% |
-| Counterattack | 0.0 | 0.0 | 0.0 | 0.0 | 0.4 | 1% |
+| Immolation Trap | 0.4 | 0.1 | 0.4 | 0.7 | 0.8 | 12% |
+| Counterattack | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 1% |
+| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 2% |
 | Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### `cand-melee-r3`
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 3.2 | 4.3 | 6.2 | 6.6 | 7.6 | 14% |
-| Claw | 3.6 | 4.3 | 5.1 | 5.3 | 5.7 | 6% |
-| Melee | 1.8 | 2.9 | 4.2 | 4.5 | 5.4 | 15% |
-| Growl | 1.9 | 2.5 | 3.4 | 3.7 | 4.0 | 0% |
-| Strider Kick | 0.0 | 1.8 | 2.4 | 2.5 | 2.7 | 10% |
-| Raptor Strike | 1.4 | 1.4 | 2.0 | 2.1 | 2.3 | 12% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 6% |
+| Melee (off-hand) | 3.1 | 4.2 | 5.8 | 6.0 | 6.8 | 12% |
+| Claw | 3.5 | 4.3 | 4.9 | 5.1 | 5.4 | 6% |
+| Melee | 1.9 | 2.9 | 4.0 | 4.3 | 5.0 | 14% |
+| Growl | 1.9 | 2.5 | 3.2 | 3.4 | 3.6 | 0% |
+| Strider Kick | 0.0 | 1.8 | 2.2 | 2.3 | 2.5 | 9% |
+| Raptor Strike | 1.2 | 1.3 | 1.8 | 1.9 | 2.0 | 10% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 6% |
 | Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
 | Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
-| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.2 | 0.5 | 2% |
-| Counterattack | 0.0 | 0.0 | 0.1 | 0.2 | 0.4 | 1% |
+| Immolation Trap | 0.4 | 0.1 | 0.4 | 0.5 | 0.5 | 7% |
+| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 2% |
+| Counterattack | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 1% |
+
+### `cand-melee-r4`
+
+| Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
+|---|---|---|---|---|---|---|
+| Melee (off-hand) | 3.1 | 4.2 | 5.8 | 5.8 | 6.5 | 11% |
+| Claw | 3.5 | 4.3 | 4.9 | 5.0 | 5.2 | 5% |
+| Melee | 1.9 | 3.0 | 4.0 | 4.2 | 4.8 | 13% |
+| Growl | 1.9 | 2.5 | 3.2 | 3.3 | 3.5 | 0% |
+| Strider Kick | 0.0 | 1.8 | 2.2 | 2.2 | 2.3 | 8% |
+| Raptor Strike | 1.2 | 1.3 | 1.8 | 1.7 | 1.9 | 9% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Bite | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 2% |
+| Immolation Trap | 0.4 | 0.1 | 0.4 | 0.7 | 0.8 | 12% |
+| Counterattack | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 1% |
+| Mongoose Bite | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | 2% |
 | Mend Pet | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## melee-dps
 
 The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 Report: [fightlab/melee-dps.md](fightlab/melee-dps.md).
 

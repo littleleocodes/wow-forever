@@ -2,9 +2,9 @@
  "class": "rogue",
  "spec": "subtlety-raid",
  "game": "forever",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
   "gear_max": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p2_bis.gear.json",
@@ -39,11 +39,11 @@
    "split": "20/0/31",
    "ours": true,
    "dps": {
-    "dummy": 381.9835048626465,
-    "dummy60": 440.8246577182851,
-    "raid": 646.2489808501952,
-    "max": 658.3915429111837,
-    "max60": 692.7084245538709
+    "dummy": 391.7553021340881,
+    "dummy60": 451.1712920955758,
+    "raid": 657.1035801953316,
+    "max": 668.6807494716759,
+    "max60": 712.9816736863928
    }
   },
   {
@@ -51,11 +51,11 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 335.51514950407545,
-    "dummy60": 389.33881684200514,
-    "raid": 611.8785029723276,
-    "max": 622.952530304432,
-    "max60": 658.001115219074
+    "dummy": 347.5811679212553,
+    "dummy60": 402.10102003411674,
+    "raid": 621.9448152298831,
+    "max": 633.1919460378947,
+    "max60": 678.0009717356502
    }
   }
  ]

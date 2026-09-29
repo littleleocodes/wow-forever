@@ -6,17 +6,17 @@
  "builds": [
   "fury-dw-raid",
   "opt-fury-dw-raid-raid-dps",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-hand-2026-09-26.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r1.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r2.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r3.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r4.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r5.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r6.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r7.json"
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r1.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r2.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r3.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r4.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r5.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r6.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r7.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "warrior/dps",
   "gear": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
@@ -43,9 +43,9 @@
  "talents": [
   {
    "talent": "Dual Wield Specialization",
-   "sim": 0.24302391390069372,
-   "ev_before": 0.1378600024848143,
-   "ev_after": 0.1378600024848143,
+   "sim": 0.24302391390069414,
+   "ev_before": 0.1378600024848142,
+   "ev_after": 0.1378600024848142,
    "scale": 1.0,
    "how": "capped",
    "builds": [
@@ -63,9 +63,9 @@
   },
   {
    "talent": "Flurry",
-   "sim": 0.11979755524235215,
-   "ev_before": 0.11987753541103346,
-   "ev_after": 0.11987753541103346,
+   "sim": 0.11979755524235235,
+   "ev_before": 0.11987753541103342,
+   "ev_after": 0.11987753541103342,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -82,9 +82,9 @@
   },
   {
    "talent": "Death Wish",
-   "sim": 0.09530722308145652,
-   "ev_before": 0.0949328907866649,
-   "ev_after": 0.0949328907866649,
+   "sim": 0.09530722308145648,
+   "ev_before": 0.09493289078666482,
+   "ev_after": 0.09493289078666482,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -102,9 +102,9 @@
   },
   {
    "talent": "Improved Execute",
-   "sim": 0.06975003294742525,
-   "ev_before": 0.08134025116822825,
-   "ev_after": 0.08134025116822825,
+   "sim": 0.06975003294742513,
+   "ev_before": 0.08134025116822823,
+   "ev_after": 0.08134025116822823,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -119,9 +119,9 @@
   },
   {
    "talent": "Cruelty",
-   "sim": 0.05515184788217133,
-   "ev_before": 0.05325728784454875,
-   "ev_after": 0.05325728784454875,
+   "sim": 0.05515184788217141,
+   "ev_before": 0.05325728784454877,
+   "ev_after": 0.05325728784454877,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -139,9 +139,9 @@
   },
   {
    "talent": "Unbridled Wrath",
-   "sim": 0.03768529276860882,
-   "ev_before": 0.03666148106674436,
-   "ev_after": 0.03666148106674436,
+   "sim": 0.03768529276860892,
+   "ev_before": 0.036661481066744356,
+   "ev_after": 0.036661481066744356,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -159,9 +159,9 @@
   },
   {
    "talent": "Precision",
-   "sim": 0.03493345924880406,
-   "ev_before": 0.03055982511232159,
-   "ev_after": 0.03055982511232159,
+   "sim": 0.034933459248804116,
+   "ev_before": 0.030559825112321533,
+   "ev_after": 0.030559825112321533,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -178,7 +178,7 @@
   },
   {
    "talent": "Raging Blows",
-   "sim": 0.03374277476844166,
+   "sim": 0.03374277476844176,
    "ev_before": 0.038541159360832425,
    "ev_after": 0.038541159360832425,
    "scale": 1.0,
@@ -198,7 +198,7 @@
   },
   {
    "talent": "Impale",
-   "sim": 0.0329598607500876,
+   "sim": 0.03295986075008815,
    "ev_before": 0.033121679575776886,
    "ev_after": 0.033121679575776886,
    "scale": 1.0,
@@ -210,9 +210,9 @@
   },
   {
    "talent": "Weaponmaster",
-   "sim": 0.029841584104986274,
-   "ev_before": 0.028825000000000253,
-   "ev_after": 0.028825000000000253,
+   "sim": 0.02984158410498698,
+   "ev_before": 0.028825000000000104,
+   "ev_after": 0.028825000000000104,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -221,9 +221,9 @@
   },
   {
    "talent": "Anger Management",
-   "sim": 0.02758784842804527,
-   "ev_before": 0.029447387764865846,
-   "ev_after": 0.029447387764865846,
+   "sim": 0.02758784842804559,
+   "ev_before": 0.029447387764865794,
+   "ev_after": 0.029447387764865794,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -241,9 +241,9 @@
   },
   {
    "talent": "Deep Wounds",
-   "sim": 0.023011022374368712,
-   "ev_before": 0.025155796739254017,
-   "ev_after": 0.025155796739254017,
+   "sim": 0.023011022374369125,
+   "ev_before": 0.02515579673925387,
+   "ev_after": 0.02515579673925387,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -260,9 +260,9 @@
   },
   {
    "talent": "Improved Heroic Strike",
-   "sim": 0.004340928160065679,
-   "ev_before": 0.0015490009365923768,
-   "ev_after": 0.0015490009365923768,
+   "sim": 0.004340928160065724,
+   "ev_before": 0.0015490009365923987,
+   "ev_after": 0.0015490009365923987,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -280,9 +280,9 @@
   },
   {
    "talent": "Boundless Rage",
-   "sim": 1.2311649233167987e-05,
-   "ev_before": 0.0033154654178401445,
-   "ev_after": 0.0033154654178401445,
+   "sim": 1.2311649233167418e-05,
+   "ev_before": 0.0033154654178400903,
+   "ev_after": 0.0033154654178400903,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -444,8 +444,8 @@
   {
    "talent": "Improved Berserker Rage",
    "sim": 0.0,
-   "ev_before": 0.0022704878845310797,
-   "ev_after": 0.0022704878845310797,
+   "ev_before": 0.0022704878845310793,
+   "ev_after": 0.0022704878845310793,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -454,9 +454,9 @@
   },
   {
    "talent": "Bloodthirst",
-   "sim": -2.4219887936434462e-05,
-   "ev_before": 0.002586999999999771,
-   "ev_after": 0.002586999999999771,
+   "sim": -2.4219887936389847e-05,
+   "ev_before": 0.002586999999999888,
+   "ev_after": 0.002586999999999888,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -471,7 +471,7 @@
   },
   {
    "talent": "Spearing Strike",
-   "sim": -0.03060317479232776,
+   "sim": -0.030603174792327104,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -485,62 +485,62 @@
   "limit": null,
   "builds": {
    "fury-dw-raid": {
-    "dps": 254.5730340338878,
-    "surplus": 254.4593108263041,
+    "dps": 254.57303403388778,
+    "surplus": 254.45931082630415,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "opt-fury-dw-raid-raid-dps": {
-    "dps": 256.8478880732461,
-    "surplus": 256.30622818780233,
+    "dps": 256.8478880732463,
+    "surplus": 256.3062281878024,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-hand-2026-09-26": {
     "dps": 240.23790702017334,
-    "surplus": 238.91445564459173,
+    "surplus": 238.91445564459187,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r1": {
-    "dps": 209.47772404170775,
-    "surplus": 209.6182547056484,
+    "dps": 209.47772404170786,
+    "surplus": 209.61825470564844,
     "oom_seconds": 0.0,
-    "deficit": 0.0006704123366449988
+    "deficit": 0.0006704123366446657
    },
    "cand-fury-dw-raid-r2": {
-    "dps": 254.5730340338878,
-    "surplus": 254.4593108263041,
+    "dps": 254.57303403388778,
+    "surplus": 254.45931082630415,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r3": {
-    "dps": 240.0514351905537,
-    "surplus": 239.71825785157912,
+    "dps": 240.05143519055375,
+    "surplus": 239.71825785157915,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r4": {
-    "dps": 251.31110783693148,
-    "surplus": 251.18707958773015,
+    "dps": 251.3111078369315,
+    "surplus": 251.1870795877301,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r5": {
-    "dps": 252.17440895993676,
-    "surplus": 252.60808119714193,
+    "dps": 252.17440895993678,
+    "surplus": 252.60808119714196,
     "oom_seconds": 0.0,
     "deficit": 0.0017167789531907784
    },
    "cand-fury-dw-raid-r6": {
-    "dps": 254.5730340338878,
-    "surplus": 254.4593108263041,
+    "dps": 254.57303403388778,
+    "surplus": 254.45931082630415,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r7": {
-    "dps": 256.8478880732461,
-    "surplus": 256.30622818780233,
+    "dps": 256.8478880732463,
+    "surplus": 256.3062281878024,
     "oom_seconds": 0.0,
     "deficit": 0.0
    }

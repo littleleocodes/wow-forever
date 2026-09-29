@@ -7,8 +7,8 @@ The Classic raid melee DPS king (Fury) and the default raid tank (Protection). F
 ## In one minute
 
 - **Leveling:** [Leveling — Arms two-hander](leveling/builds/leveling-arms.md) (31/20/0) — [open the talent tree](https://talentsforever.com/warrior/60/05320203132513001-05050131005--4)
-- **Raid damage, training dummy** (your own buffs only): [Raid dual-wield Fury](raid/builds/opt-fury-dw-raid-raid-dps.md) (14/37/0), 257 DPS — [open the talent tree](https://talentsforever.com/warrior/60/20305013-05050023515231005--4)
-- **Raid damage, full raid** (every raid buff): [Two-handed Arms/raid or leveling](raid/builds/opt-arms-2h-raid-raid-dps.md) (19/32/0), 457 DPS — [open the talent tree](https://talentsforever.com/warrior/60/30305013022-250500030052310051--4)
+- **Raid damage, training dummy** (your own buffs only): [Raid dual-wield Fury](raid/builds/opt-fury-dw-raid-raid-dps.md) (14/37/0), 256 DPS — [open the talent tree](https://talentsforever.com/warrior/60/20305013-05050023515231005--4)
+- **Raid damage, full raid** (every raid buff): Arms 39/12/0 (the community simulator's build) (0/0/0), 476 DPS — [open the talent tree](https://talentsforever.com/warrior/60/---4)
 - **Tanking:** [Protection — Raid Tank](raid/builds/prot-raid-tank.md) (14/5/32), the best tank value in the simulator — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-550030233001010531-4)
 - **PvP:** [Arms — Mortal Strike](pvp/builds/arms-pvp.md) (31/20/0) — [open the talent tree](https://talentsforever.com/warrior/60/20325013032015031-05050113005--4)
 
@@ -59,8 +59,9 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
-| Raid dual-wield Fury (14/37/0) | 257 | 441 | [tree](https://talentsforever.com/warrior/60/20305013-05050023515231005--4) |
-| Two-handed Arms/raid or leveling (19/32/0) | 218 | 457 | [tree](https://talentsforever.com/warrior/60/30305013022-250500030052310051--4) |
+| Raid dual-wield Fury (14/37/0) | 256 | 442 | [tree](https://talentsforever.com/warrior/60/20305013-05050023515231005--4) |
+| Arms — Battle Stance (34/17/0) | 238 | 467 | [tree](https://talentsforever.com/warrior/60/123052131325051-550500000002--4) |
+| Two-handed Arms/raid or leveling (19/32/0) | 218 | 456 | [tree](https://talentsforever.com/warrior/60/30305013022-250500030052310051--4) |
 
 What to press with the top build, Raid dual-wield Fury (the first line that is ready is the one you cast):
 
@@ -86,11 +87,13 @@ What to press:
 
 Before the pull: cast Battle Shout.
 
-1. Use every other cooldown when ready
-2. Cast Revenge
-3. Cast Shield Slam
-4. Cast Thunder Clap
-5. If rage ≥ 45: cast Heroic Strike
+1. Cast Shield Wall
+2. Use every other cooldown when ready
+3. Cast Revenge
+4. Cast Shield Slam
+5. Cast Thunder Clap
+6. If rage ≥ 45: cast Heroic Strike
+7. If not Rend is on the target: cast Rend
 
 ## PvP
 

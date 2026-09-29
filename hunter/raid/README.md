@@ -67,8 +67,8 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 380 | +0.0% | 792 | +0.0% | 0 s |
-| 2 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 350 | -8.0% | 757 | -4.4% | 0 s |
+| 1 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 459 | +0.0% | 986 | +0.0% | 0 s |
+| 2 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 433 | -5.7% | 961 | -2.6% | 0 s |
 
 ## New spells and builds
 
@@ -78,22 +78,22 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
-| Aspect of the Beast | Beast Mastery | 60 | - | The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. | not cast by any raced build | - | not cast | Melee attack power, and melee haste with Deadly Aspects: not in the simulator (it models only Aspect of the Hawk), so the melee hunter plays without it. |
+| Aspect of the Beast | Beast Mastery | 60 | - | The hunter takes on the aspects of a beast, becoming untrackable and increasing Melee Attack Power by 110. | no damage of its own, 0.5 casts/min: [`melee-survival-raid`](builds/melee-survival-raid.md) (melee-dps) | - | not cast | Melee attack power, and melee haste with Deadly Aspects: not in the simulator (it models only Aspect of the Hawk), so the melee hunter plays without it. |
 | Summon Hawk | Beast Mastery | 60 | 6 sec | Command a hawk to dive-bomb your targeted enemy, dealing 108 Physical damage and continuing its assault for 18 sec. | 28% of the damage, 10.0 casts/min: [`mm-hawk-raid`](builds/mm-hawk-raid.md) (bm-raid) | bm-raid (training dummy): drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.8%); bm-raid (raid): drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%) | 20% of the damage, 1.8 casts a kill: `opt-bm-leveling-leveling-st` at 60 (bm-leveling) |  |
 | Enchanted Flare | Marksmanship | 32 | 30 sec | Exposes all hidden and invisible enemies within 10 yards of the targeted area, and staves off magical darkness for 30 sec. | not cast by any raced build | - | not cast | Reveals stealth: utility. |
 | Sniper Shot | Marksmanship | 58 | 15 sec | A steady snipe that increases ranged damage by 295. | not cast by any raced build | mm-lonewolf-raid (training dummy): drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time (+3.3%); mm-raid (training dummy): drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time (+1.7%); mm-lonewolf-raid (raid): drop 'time to the next auto attack > 1s' from the condition: if time to the next auto atta (+0.3%) | not cast | A new Marksmanship shot (15 s cooldown); the rotation search offers it. |
 | Lacerate | Survival | 60 | - | Wounds the target causing them to bleed for 406 damage over 21 sec. | not cast by any raced build | - | under 1% of the damage, under 0.1 casts a kill: `leveling-melee` at 60 (melee-dps) |  |
-| Strider Kick | Survival | 30 | 8 sec | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. | 11% of the damage, 7.5 casts/min: [`melee-survival-raid`](builds/melee-survival-raid.md) (melee-dps) | - | 10% of the damage, 2.8 casts a kill: `leveling-melee` at 60 (melee-dps) |  |
+| Strider Kick | Survival | 30 | 8 sec | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. | 8% of the damage, 6.7 casts/min: [`melee-survival-raid`](builds/melee-survival-raid.md) (melee-dps) | - | 10% of the damage, 2.8 casts a kill: `leveling-melee` at 60 (melee-dps) |  |
 | Pet family abilities (10) | Pets | - | - | Dismember, Dust Cloud, Mine!, Pinch, Savage Rend, Swipe, Tendon Rip, Thunderstomp, Trickster's Dance, Web | - | - | - | Swipe, Pinch, Dismember, Tendon Rip, Mine!, Savage Rend, Web, Dust Cloud, Thunderstomp, Trickster's Dance: taught to pets; the simulator's pets use Claw, Bite and their family's classic ability. |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 469 | 815 | the class's best raid build on the training dummy; -8.2% in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 380 | 792 | -18.8% on the dummy; -10.7% in a raid | from `melee-survival-raid`, 0 moves | - |
+| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 469 | 815 | the class's best raid build on the training dummy; -17.4% in a raid | from `bm-mm-raid`, 4 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 459 | 986 | -2.1% on the dummy; the best in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`mm-hawk-raid`](builds/mm-hawk-raid.md) (bm-raid), 469 DPS; in a raid: [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) (mm-lonewolf-raid), 887 DPS.
+The class's best raid DPS build on the training dummy: [`mm-hawk-raid`](builds/mm-hawk-raid.md) (bm-raid), 469 DPS; in a raid: [`melee-survival-raid`](builds/melee-survival-raid.md) (melee-dps), 986 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -103,28 +103,28 @@ The class's best raid DPS build on the training dummy: [`mm-hawk-raid`](builds/m
 |---|---|---|---|---|---|---|---|
 | `bm-raid` | dummy | `mm-hawk-raid` | 22/29/0 | 469 | +0.0% | 0 | - |
 | `bm-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 437 | -6.8% | 0 | - |
-| `melee-dps` | dummy | `melee-survival-raid` | 5/11/35 | 380 | +0.0% | 0 | +121% |
-| `melee-dps` | dummy | `opt-melee-dps-raid-dps` | 5/15/31 | 350 | -8.0% | 0 | +124% |
+| `melee-dps` | dummy | `melee-survival-raid` | 5/11/35 | 459 | +0.0% | 0 | +121% |
+| `melee-dps` | dummy | `opt-melee-dps-raid-dps` | 5/15/31 | 433 | -5.7% | 0 | +124% |
 | `mm-lonewolf-raid` | dummy | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | +0.0% | 65 | +78% |
 | `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r6` | 5/38/8 | 434 | +0.0% | 65 | +78% |
-| `mm-lonewolf-raid` | dummy | `mm-lone-wolf-raid` | 5/41/5 | 432 | -0.4% | 56 | +76% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r1` | 7/41/3 | 432 | -0.4% | 56 | +76% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r3` | 5/37/9 | 432 | -0.4% | 56 | +76% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r4` | 7/34/10 | 432 | -0.4% | 56 | +76% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r5` | 5/36/10 | 432 | -0.4% | 56 | +76% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r2` | 7/39/5 | 417 | -3.8% | 60 | +63% |
-| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-hand-2026-09-26` | 0/32/19 | 393 | -9.4% | 59 | +55% |
+| `mm-lonewolf-raid` | dummy | `mm-lone-wolf-raid` | 5/41/5 | 432 | -0.4% | 56 | +77% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r1` | 7/41/3 | 432 | -0.4% | 56 | +77% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r3` | 5/37/9 | 432 | -0.4% | 56 | +77% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r4` | 7/34/10 | 432 | -0.4% | 56 | +77% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r5` | 5/36/10 | 432 | -0.4% | 56 | +77% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r2` | 7/39/5 | 417 | -3.8% | 60 | +64% |
+| `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-hand-2026-09-26` | 0/32/19 | 393 | -9.4% | 59 | +56% |
 | `mm-lonewolf-raid` | dummy | sim preset: Marksmanship | - | 354 | -18.4% | 65 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: Marksmanship 0/39/12 | - | 333 | -23.2% | 57 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: Beast Mastery 35/16/0 | - | 323 | -25.4% | 45 | - |
 | `mm-lonewolf-raid` | dummy | sim preset: Survival 0/15/36 | - | 309 | -28.8% | 52 | - |
-| `mm-raid` | dummy | `cand-mm-raid-r6` | 22/29/0 | 429 | +0.0% | 44 | +55% |
-| `mm-raid` | dummy | `opt-mm-raid-raid-dps` | 22/29/0 | 428 | -0.4% | 45 | +55% |
-| `mm-raid` | dummy | `cand-mm-raid-r9` | 22/29/0 | 428 | -0.4% | 45 | +55% |
+| `mm-raid` | dummy | `cand-mm-raid-r6` | 22/29/0 | 429 | +0.0% | 44 | +54% |
+| `mm-raid` | dummy | `opt-mm-raid-raid-dps` | 22/29/0 | 428 | -0.4% | 45 | +54% |
+| `mm-raid` | dummy | `cand-mm-raid-r9` | 22/29/0 | 428 | -0.4% | 45 | +54% |
 | `mm-raid` | dummy | `cand-mm-raid-r7` | 22/29/0 | 427 | -0.5% | 44 | +54% |
 | `mm-raid` | dummy | `bm-mm-raid` | 22/29/0 | 425 | -0.9% | 44 | +53% |
 | `mm-raid` | dummy | `cand-mm-raid-r5` | 22/29/0 | 425 | -0.9% | 44 | +53% |
-| `mm-raid` | dummy | `cand-mm-raid-r4` | 24/27/0 | 419 | -2.4% | 44 | +51% |
+| `mm-raid` | dummy | `cand-mm-raid-r4` | 24/27/0 | 419 | -2.4% | 44 | +50% |
 | `mm-raid` | dummy | `cand-mm-raid-r8` | 19/32/0 | 408 | -4.9% | 53 | +47% |
 | `mm-raid` | dummy | sim preset: Marksmanship | - | 400 | -6.7% | 60 | - |
 | `mm-raid` | dummy | `bm-mm-full-buffs-raid` | 20/31/0 | 395 | -8.0% | 54 | +42% |
@@ -142,8 +142,8 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `mm-lonewolf-raid` | 18.0-20.9% | 0.71 / 0.46 | 1.2 | Efficiency 6.5% |
-| `mm-raid` | 12.5-21.4% | 0.43 / 0.90 | 1.6 | Efficiency 5.8% |
+| `mm-lonewolf-raid` | 18.0-24.0% | 0.74 / 0.49 | 2.8 | Efficiency 6.6% |
+| `mm-raid` | 12.5-21.4% | 0.42 / 0.90 | 1.3 | Efficiency 6.1% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
@@ -151,8 +151,8 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 |---|---|---|---|---|---|---|---|
 | `bm-raid` | `mm-hawk-raid` | 22/29/0 | 469 | 507 | 815 | 815 | 833 |
 | `bm-raid` | sim preset: Beast Mastery 35/16/0 | - | 437 | 475 | 763 | 763 | 786 |
-| `melee-dps` | `melee-survival-raid` | 5/11/35 | 380 | 443 | 792 | 792 | 826 |
-| `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 350 | 413 | 757 | 757 | 793 |
+| `melee-dps` | `melee-survival-raid` | 5/11/35 | 459 | 537 | 986 | 986 | 1011 |
+| `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 433 | 511 | 961 | 961 | 988 |
 | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | 466 | 848 | 848 | 863 |
 | `mm-lonewolf-raid` | `mm-lone-wolf-raid` | 5/41/5 | 432 | 463 | 887 | 887 | 916 |
 | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-parse` | 5/37/9 | 423 | 454 | 828 | 848 | 863 |
@@ -191,7 +191,7 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS with pet | mm-raid | [22/29/0](builds/opt-mm-raid-raid-dps.md) (+54.6%) | [bm-mm-raid](builds/bm-mm-raid.md) |
+| Raid DPS with pet | mm-raid | [22/29/0](builds/opt-mm-raid-raid-dps.md) (+54.5%) | [bm-mm-raid](builds/bm-mm-raid.md) |
 | Raid DPS, Lone Wolf | mm-lonewolf-raid | [5/38/8](builds/opt-mm-lonewolf-raid-raid-dps.md) (+78.0%) | [mm-lone-wolf-raid](builds/mm-lone-wolf-raid.md) |
 
 Model findings: Improved Tracking beats Ferocity per point everywhere; Endurance Training is worth ~0.2%/rank of leveling time; with the raid mana weight raised for hunters (they run dry on long fights), Efficiency is back in the raid build (12/34/5); Lone Wolf edges the pet build in raids (absolute DPS index 1.96 vs 1.88) if its +20% is real.

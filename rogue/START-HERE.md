@@ -8,7 +8,7 @@ Classic's pure melee DPS: Combat swords or daggers in raids, Seal Fate / Hemorrh
 
 - **Leveling:** [Leveling — Combat swords](leveling/builds/leveling-combat-swords.md) (31/20/0) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--4)
 - **Raid damage, training dummy** (your own buffs only): [Raid daggers](raid/builds/opt-combat-daggers-raid-raid-dps.md) (16/33/2), 414 DPS — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4)
-- **Raid damage, full raid**: the same build, 742 DPS.
+- **Raid damage, full raid**: the same build, 741 DPS.
 - **PvP:** [Hemorrhage / Preparation / Thousand Cuts](pvp/builds/pvp-hemo-prep.md) (20/0/31) — [open the talent tree](https://talentsforever.com/rogue/60/005320105013--0320203311213211501-4)
 
 ## Leveling
@@ -62,10 +62,10 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
-| Raid daggers (16/33/2) | 414 | 742 | [tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
+| Raid daggers (16/33/2) | 414 | 741 | [tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
 | Assassination/Combat — Seal Fate daggers (30/19/2) | 413 | 693 | [tree](https://talentsforever.com/rogue/60/0053031232150005-302303202013-002-4) |
 | Combat Swords (19/32/0) | 401 | 700 | [tree](https://talentsforever.com/rogue/60/005303125-32003311201515131--4) |
-| Subtlety — Hemorrhage (20/0/31) | 382 | 646 | [tree](https://talentsforever.com/rogue/60/005303121014--5320003310013211501-4) |
+| Subtlety — Hemorrhage (20/0/31) | 392 | 657 | [tree](https://talentsforever.com/rogue/60/005303121014--5320003310013211501-4) |
 
 What to press with the top build, Raid daggers (the first line that is ready is the one you cast):
 

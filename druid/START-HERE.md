@@ -7,8 +7,8 @@ Classic's hybrid: Restoration raid healer, Feral off-tank/powershifting cat, one
 ## In one minute
 
 - **Leveling:** [Leveling — Feral cat](leveling/builds/leveling-feral.md) (9/31/11) — [open the talent tree](https://talentsforever.com/druid/60/050022-5520012020030213041-50402-4)
-- **Raid damage, training dummy** (your own buffs only): [Balance](raid/builds/opt-balance-dps-raid-dps.md) (33/5/13), 462 DPS — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-4)
-- **Raid damage, full raid** (every raid buff): [Feral Combat](raid/builds/opt-feral-cat-dps-raid-dps.md) (9/35/7), 566 DPS — [open the talent tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4)
+- **Raid damage, training dummy** (your own buffs only): [Balance](raid/builds/opt-balance-dps-raid-dps.md) (34/6/11), 461 DPS — [open the talent tree](https://talentsforever.com/druid/60/1532220115501051-15-505001-4)
+- **Raid damage, full raid** (every raid buff): [Feral Combat](raid/builds/opt-feral-cat-dps-raid-dps.md) (9/35/7), 567 DPS — [open the talent tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4)
 - **Tanking:** [Feral — Bear Tank](raid/builds/feral-bear-tank.md) (7/35/9), the best tank value in the simulator — [open the talent tree](https://talentsforever.com/druid/60/05002-502003212303220055-054-4)
 - **Healing:** [Restoration](raid/builds/opt-resto-heal-raid-heal.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113201-4)
 - **PvP:** [Restoration / Balance — PvP Healer](pvp/builds/pvp-resto.md) (14/0/37) — [open the talent tree](https://talentsforever.com/druid/60/05102231--555033510311005-4)
@@ -61,8 +61,8 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
-| Balance (33/5/13) | 462 | 518 | [tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-4) |
-| Feral Combat (9/35/7) | 357 | 566 | [tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4) |
+| Balance (34/6/11) | 461 | 518 | [tree](https://talentsforever.com/druid/60/1532220115501051-15-505001-4) |
+| Feral Combat (9/35/7) | 356 | 567 | [tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4) |
 
 What to press with the top build, Balance (the first line that is ready is the one you cast):
 
@@ -73,6 +73,7 @@ Before the pull: activate Moonkin Form.
 3. If time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms)
 4. Keep Moonfire on up to 1 targets (refresh under 0ms)
 5. Cast Starfire
+6. If mana % < 15%: cast Starfire
 
 ## Tanking
 
@@ -83,7 +84,8 @@ What to press:
 1. Use every other cooldown when ready
 2. If (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate
 3. If rage ≥ 50: cast Maul
-4. Cast Lacerate
+4. Cast Barkskin
+5. Cast Lacerate
 
 ## Healing
 

@@ -1,0 +1,99 @@
+{
+ "id": "cand-arms-battle-raid-from-tuned-raid",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    4
+   ],
+   [
+    "Improved Slam",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ],
+   [
+    "Spearing Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for arms-battle-raid from arms-battle-raid in the raid setting: 463.6 -> 465.7 DPS on a third seed.",
+ "search": {
+  "start": "arms-battle-raid",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Weaponmaster -> Spearing Strike",
+    "gain_seed1": 0.006566229654757061,
+    "gain_seed2": 0.005763418406704135,
+    "split": "34/17/0"
+   }
+  ],
+  "dps_start": 463.62650057824607,
+  "dps_end": 465.6837928177864
+ }
+}

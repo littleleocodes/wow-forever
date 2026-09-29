@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +83.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 ## Core talents (priority order)
 
-1. **Ice Shards** — Removing it costs 24.6 points of score in this model.
-2. **Fingers of Frost** — Removing it costs 23.8 points of score in this model.
-3. **Improved Frostbolt** — Removing it costs 21.0 points of score in this model.
-4. **Ice Lance** — Removing it costs 18.4 points of score in this model.
-5. **Winter's Chill** — Removing it costs 13.4 points of score in this model.
-6. **Shatter** — Removing it costs 13.3 points of score in this model.
-7. **Piercing Ice** — Removing it costs 10.4 points of score in this model.
-8. **Elemental Precision** — Removing it costs 10.3 points of score in this model.
+1. **Improved Frostbolt** — Removing it costs 22.8 points of score in this model.
+2. **Ice Shards** — Removing it costs 19.8 points of score in this model.
+3. **Fingers of Frost** — Removing it costs 18.9 points of score in this model.
+4. **Winter's Chill** — Removing it costs 11.5 points of score in this model.
+5. **Ice Lance** — Removing it costs 11.4 points of score in this model.
+6. **Shatter** — Removing it costs 10.8 points of score in this model.
+7. **Piercing Ice** — Removing it costs 8.7 points of score in this model.
+8. **Elemental Precision** — Removing it costs 8.7 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,28 +64,28 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 588 | +0.0% | 667 | +0.0% | 0 s |
-| 2 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 22/0/29 | 588 | +0.0% | 667 | +0.0% | 0 s |
-| 3 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 570 | -2.9% | 649 | -2.7% | 0 s |
+| 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 587 | +0.0% | 668 | +0.0% | 0 s |
+| 2 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 22/0/29 | 587 | +0.0% | 668 | +0.0% | 0 s |
+| 3 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 570 | -3.0% | 649 | -2.8% | 0 s |
 | 4 | *Frost 14/0/37* | community simulator | - | 559 | -4.9% | 644 | -3.5% | 3 s |
-| 5 | *Frost DPS* | community simulator | - | 557 | -5.2% | 635 | -4.9% | 0 s |
+| 5 | *Frost DPS* | community simulator | - | 557 | -5.2% | 636 | -4.7% | 0 s |
 | 6 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 31/0/20 | 548 | -6.7% | 627 | -6.1% | 0 s |
-| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 17/0/34 | 491 | -16.5% | 560 | -16.1% | 0 s |
-| 8 | *Arcane 35/0/16* | community simulator | - | 478 | -18.6% | 547 | -18.0% | 0 s |
-| 9 | *Arcane DPS* | community simulator | - | 418 | -28.8% | 473 | -29.2% | 0 s |
-| 10 | *Fire 0/35/16* | community simulator | - | 377 | -35.8% | 432 | -35.2% | 0 s |
-| 11 | *Fire DPS* | community simulator | - | 318 | -46.0% | 357 | -46.6% | 0 s |
+| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 17/0/34 | 490 | -16.6% | 559 | -16.3% | 0 s |
+| 8 | *Arcane 35/0/16* | community simulator | - | 479 | -18.6% | 547 | -18.0% | 0 s |
+| 9 | *Arcane DPS* | community simulator | - | 418 | -28.8% | 474 | -29.1% | 0 s |
+| 10 | *Fire 0/35/16* | community simulator | - | 378 | -35.7% | 432 | -35.2% | 0 s |
+| 11 | *Fire DPS* | community simulator | - | 318 | -45.9% | 357 | -46.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
-- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
+- **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
+- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if mana % ≤ 80%: cast item 8008 | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Fingers of Frost is up: cast Ice Lance | 4.5 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 4.4 |
 | 4 | if spell 44404 is known and spell 44404 is up: cast Arcane Missiles | 3.6 |
 | 5 | cast Frostbolt | 17.9 |
 
@@ -101,7 +101,7 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-frost-raid-r1 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (588 vs 570 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (587 vs 568 DPS; the calibration moved the model past the better build).
 - Report: mage/talents/forever/optimizer/frost-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

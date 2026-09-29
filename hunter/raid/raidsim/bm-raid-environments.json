@@ -2,9 +2,9 @@
  "class": "hunter",
  "spec": "bm-raid",
  "game": "forever",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
   "gear_max": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
@@ -39,11 +39,11 @@
    "split": "22/29/0",
    "ours": true,
    "dps": {
-    "dummy": 468.5001989091286,
-    "dummy60": 507.2264276889651,
-    "raid": 814.541866889421,
-    "max": 814.541866889421,
-    "max60": 832.6631281959211
+    "dummy": 468.50019890912944,
+    "dummy60": 507.226427688965,
+    "raid": 814.5418668894213,
+    "max": 814.5418668894213,
+    "max60": 832.6631281959212
    }
   },
   {
@@ -51,11 +51,11 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 436.73519538329094,
-    "dummy60": 474.5515824663469,
-    "raid": 763.4366643620675,
-    "max": 763.4366643620675,
-    "max60": 786.3201048520896
+    "dummy": 436.73519538329015,
+    "dummy60": 474.5515824663471,
+    "raid": 763.4366643620673,
+    "max": 763.4366643620673,
+    "max60": 786.3201048520903
    }
   }
  ]

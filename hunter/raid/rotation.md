@@ -10,13 +10,13 @@ Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offe
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 5 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 397 -> 404 DPS (+1.9%), sim preset: Marksmanship 360 -> 386 DPS (+7.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 395 -> 428 DPS (+8.5%), sim preset: Marksmanship 360 -> 399 DPS (+10.9%)):
   1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
   2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
   3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
   4. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   5. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 647 -> 654 DPS (+1.0%), sim preset: Marksmanship 681 -> 695 DPS (+2.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 644 -> 766 DPS (+19.0%), sim preset: Marksmanship 681 -> 817 DPS (+20.0%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
@@ -93,13 +93,13 @@ Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offe
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 5 changes to the base rotation; third-seed check: mm-lone-wolf-raid 388 -> 424 DPS (+9.4%), sim preset: Marksmanship 315 -> 339 DPS (+7.6%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 405 -> 433 DPS (+6.8%), sim preset: Marksmanship 315 -> 353 DPS (+12.3%)):
   1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
   2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
   3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
   4. threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting (+0.2%, pass 1)
   5. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: mm-lone-wolf-raid 741 -> 762 DPS (+2.7%), sim preset: Marksmanship 602 -> 619 DPS (+2.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 683 -> 848 DPS (+24.1%), sim preset: Marksmanship 602 -> 733 DPS (+21.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
@@ -171,7 +171,7 @@ Rotation-only target (2026-09-27): a talent tree none of our scorer spec models 
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 468 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.1%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 469 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.2%)):
   1. drop: use every other cooldown when ready (+3.0%, pass 1)
   2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
   3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
@@ -181,7 +181,7 @@ Rotation-only target (2026-09-27): a talent tree none of our scorer spec models 
   7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
   8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
   9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: mm-hawk-raid 791 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 763 DPS (+2.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: mm-hawk-raid 792 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 764 DPS (+2.7%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
@@ -224,36 +224,42 @@ Damage by ability:
 
 Our rotation `melee-dps.apl.json` (our base rotation `melee-dps.base.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
 
-Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk: Aspect of the Beast's melee attack power and Deadly Aspects' melee haste are missing, so these numbers are a lower bound, and the scorer's melee model is not calibrated to them. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts.
+Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
-- **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
-- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 428 -> 459 DPS (+7.3%)):
+  1. insert before the filler: cast Wing Clip (+7.4%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 893 -> 985 DPS (+10.3%)):
+  1. insert before the filler: cast Wing Clip (+10.3%)
 
 The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring change what mana is worth), top priority first:
 
-1. use every other cooldown when ready
-2. cast Counterattack
-3. cast Mongoose Bite
-4. cast Strider Kick
-5. cast Raptor Strike
-6. cast Immolation Trap
-7. cast Explosive Trap
+1. cast Aspect of the Beast
+2. use every other cooldown when ready
+3. cast Counterattack
+4. cast Mongoose Bite
+5. cast Strider Kick
+6. cast Raptor Strike
+7. cast Immolation Trap
+8. cast Wing Clip
+9. cast Explosive Trap
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 380 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 350 DPS)
+### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 459 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 433 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | cast Mongoose Bite | 10.3 | 10.1 |
-| 3 | cast Strider Kick | 7.5 | 7.5 |
-| 4 | cast Raptor Strike | 20.0 | 20.0 |
-| 5 | cast Immolation Trap | 3.5 | 2.0 |
+| 1 | cast Aspect of the Beast | 0.5 | 0.5 |
+| 2 | use every other cooldown when ready | as ready | as ready |
+| 3 | cast Mongoose Bite | 12.4 | 12.3 |
+| 4 | cast Strider Kick | 6.7 | 6.7 |
+| 5 | cast Raptor Strike | 20.0 | 20.0 |
+| 6 | cast Immolation Trap | 3.5 | 2.0 |
+| 7 | cast Wing Clip | 22.9 | 24.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -261,9 +267,10 @@ Damage by ability:
 
 | Ability | [`melee-survival-raid`](builds/melee-survival-raid.md) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) |
 |---|---|---|
-| Auto Attack | 41% | 44% |
-| Raptor Strike | 18% | 20% |
+| Auto Attack | 42% | 45% |
+| Raptor Strike | 16% | 17% |
 | Mongoose Bite | 14% | 15% |
-| Immolation Trap | 14% | 7% |
-| Strider Kick | 11% | 12% |
+| Immolation Trap | 11% | 6% |
+| Strider Kick | 8% | 9% |
+| Wing Clip | 6% | 6% |
 | Dragonbreath Chili | 3% | 3% |

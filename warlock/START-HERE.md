@@ -68,9 +68,9 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
 | Demonology — Demonic Pact (2/31/18) | 622 | 761 | [tree](https://talentsforever.com/warlock/60/101-0005003221220311351-0550005003-4) |
-| Affliction (22/11/18) | 575 | 690 | [tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550005003-4) |
-| Affliction (30/0/21) | 572 | 698 | [tree](https://talentsforever.com/warlock/60/2552002013500005--0550035003-4) |
-| Destruction — Immolate / Conflagrate / Incinerate (22/11/18) | 558 | 665 | [tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4) |
+| Affliction (22/11/18) | 574 | 690 | [tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550005003-4) |
+| Affliction (30/0/21) | 571 | 697 | [tree](https://talentsforever.com/warlock/60/2552002013500005--0550035003-4) |
+| Destruction — Immolate / Conflagrate / Incinerate (22/11/18) | 559 | 664 | [tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4) |
 | Destruction — Incinerate (9/11/31) | 484 | 560 | [tree](https://talentsforever.com/warlock/60/153-0025003001-0050245103101351-4) |
 
 What to press with the top build, Demonology — Demonic Pact (the first line that is ready is the one you cast):

@@ -15,8 +15,8 @@
 | classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Nature's Grasp** | Balance | 1 | +0.00% | manual | filler | Balance tier-1 path. |
 | classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Improved Nature's Grasp** | Balance | 4 | +0.00% | manual | filler | Balance tier-1 path. |
 | classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Natural Shapeshifter** | Balance | 3 | +0.00% | manual | filler (from resto-heal) | Balance tier-2 path to Nature's Grace (21 Balance points); cheaper shifts in dungeons. |
-| classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Ferocity** | Feral Combat | 5 | +0.14% | parsed | sustain (from feral-cat-dps) | Cheaper Claw/Rake/Maul/Swipe: matters when Claw is the builder (leveling) and for Bear; raid cats Shred. |
-| classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Savage Fury** | Feral Combat | 2 | +0.30% | manual | throughput (from feral-cat-dps) | Claw/Rake/Maul/Swipe damage: the leveling builder and the Bear rotation. |
+| classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Ferocity** | Feral Combat | 5 | +0.18% | parsed | sustain (from feral-cat-dps) | Cheaper Claw/Rake/Maul/Swipe: matters when Claw is the builder (leveling) and for Bear; raid cats Shred. |
+| classic | `feral-bear-tank` | feral-bear-tank / raid-tank | **Savage Fury** | Feral Combat | 2 | +0.38% | manual | throughput (from feral-cat-dps) | Claw/Rake/Maul/Swipe damage: the leveling builder and the Bear rotation. |
 | classic | `feral-cat-dps` | feral-cat-dps / raid-dps | **Nature's Grasp** | Balance | 1 | +0.00% | manual | filler | Balance tier-1 path to Natural Weapons/Omen of Clarity; roots on hit while leveling. |
 | classic | `feral-cat-dps` | feral-cat-dps / raid-dps | **Improved Nature's Grasp** | Balance | 4 | +0.00% | manual | filler | Same path; proc chance. |
 | classic | `feral-cat-dps` | feral-cat-dps / raid-dps | **Thick Hide** | Feral Combat | 5 | +0.00% | manual | filler | Cat raid filler; real mitigation for Bear. |
@@ -75,7 +75,7 @@
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Killing** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 
-## Mage - 59 flagged of 108 taken talents, 0 without a documented reason
+## Mage - 58 flagged of 108 taken talents, 0 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -122,13 +122,12 @@
 | classic | `leveling-frost` | frost-leveling / leveling-st | **Frost Channeling** | Frost | 3 | +0.33% | manual | sustain (from frost-aoe) | 'A great Mana efficiency increase' on the Blizzard channel. |
 | classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Subtlety** | Arcane | 2 | +0.37% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | forever-draft | `fire-raid` | fire-raid / raid-dps | **Arcane Focus** | Arcane | 5 | +0.00% | manual | filler | Tier-1 path to Arcane Concentration. |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 3 | +0.00% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Concentration** | Arcane | 5 | +0.00% | manual | sustain (from frost-aoe) | Clearcasting saves whole Blizzards. |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Geometry** | Arcane | 2 | +0.00% | manual | utility | +6 yd Arcane spell range (beta): a positioning point; Arcane tier-1 filler on the way to Arcane Power. |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Improved Counterspell** | Arcane | 2 | +0.00% | manual | utility | Counterspell also silences for 4 s (beta): raid interrupt duty; an Arcane tier-3 filler. |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Meditation** | Arcane | 3 | +0.00% | manual | sustain (from frost-aoe) | 'What we are really looking towards': regen while channelling cuts the drink after each pack. |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Mind** | Arcane | 5 | +0.25% | manual | sustain | +10% Intellect (beta: also +100% Arcane crit damage): the mana pool behind an Arcane Power rotation; Arcane tier-5 path. |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 3 | +0.28% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Subtlety** | Arcane | 2 | +0.30% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arcane Geometry** | Arcane | 2 | +0.00% | manual | utility | +6 yd Arcane spell range (beta): a positioning point; Arcane tier-1 filler on the way to Arcane Power. |
 | forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
@@ -196,7 +195,7 @@
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Spirit Tap** | Shadow | 5 | +0.00% | manual | sustain | +100% Spirit for 15 s after a kill with 50% regen while casting (beta): the leveling mana loop; nothing in a raid, where nothing dies. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Blackout** | Shadow | 3 | +0.00% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
-| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Mental Agility** | Discipline | 3 | +0.32% | manual | sustain (from holy-heal) | Cheaper instants (Renew, Shield): part of the mana budget. |
+| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Mental Agility** | Discipline | 3 | +0.31% | manual | sustain (from holy-heal) | Cheaper instants (Renew, Shield): part of the mana budget. |
 
 ## Rogue - 27 flagged of 66 taken talents, 5 without a documented reason
 
@@ -230,7 +229,7 @@
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Endurance** | Combat | 1 | +0.00% | manual | safety | Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler. |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.19% | manual | OPEN |  |
 
-## Shaman - 30 flagged of 73 taken talents, 3 without a documented reason
+## Shaman - 30 flagged of 69 taken talents, 3 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|

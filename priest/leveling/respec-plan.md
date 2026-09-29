@@ -17,7 +17,7 @@ Total: **33.7 h** (62.5% faster than talentless), 0 respec(s).
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| shadow-dps -> level-50 build (8/0/33) | 33.7 | -0.0 h |
+| shadow-dps -> level-50 build (8/0/33) | 33.7 | +0.0 h |
 | shadow-dps -> level-20 build (0/0/11) | 33.7 | +0.0 h |
 | shadow-dps -> level-40 build (0/0/31) | 33.7 | +0.0 h |
 | shadow-dps -> level-60 build (7/11/33) | 33.7 | +0.0 h |

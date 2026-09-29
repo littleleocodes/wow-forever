@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.0% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,11 +48,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 ## Core talents (priority order)
 
-1. **Blood Frenzy** — Removing it costs 9.9 points of score in this model.
-2. **Shredding Attacks** — Removing it costs 9.3 points of score in this model.
+1. **Blood Frenzy** — Removing it costs 10.0 points of score in this model.
+2. **Shredding Attacks** — Removing it costs 9.2 points of score in this model.
 3. **Thick Hide** — Removing it costs 8.0 points of score in this model.
 4. **Natural Reaction** — Removing it costs 7.2 points of score in this model.
-5. **Sharpened Claws** — Removing it costs 6.6 points of score in this model.
+5. **Sharpened Claws** — Removing it costs 6.7 points of score in this model.
 6. **Rend and Tear** — Removing it costs 5.7 points of score in this model.
 7. **Feral Swiftness** — Removing it costs 3.4 points of score in this model.
 8. **Nature's Majesty** — Removing it costs 3.0 points of score in this model.
@@ -63,22 +63,24 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 1042 |
-| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 1042 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.857 | -14.3% | 612 | 1096 |
+| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
+| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 607 | 1041 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: feral-bear-tank 381 -> 384 DPS (+0.8%), sim preset: Bear Tank 0/31/20 368 -> 364 DPS (-1.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: feral-bear-tank 381 -> 380 DPS (-0.2%), sim preset: Bear Tank 0/31/20 368 -> 360 DPS (-2.1%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
+  3. insert before the filler: cast Barkskin (+2.2%, pass 3)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.9 |
-| 3 | if rage ≥ 50: cast Maul | 1.1 |
-| 4 | cast Lacerate | 38.9 |
+| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 |
+| 3 | if rage ≥ 50: cast Maul | 1.3 |
+| 4 | cast Barkskin | 1.0 |
+| 5 | cast Lacerate | 38.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Primal Bite (needs the Primal Bite talent).
 
@@ -86,7 +88,7 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
-| Lacerate | 77% |
+| Lacerate | 76% |
 | Auto Attack | 17% |
 | Maul | 3% |
 | OtherActionRageGain | 2% |

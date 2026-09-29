@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +96.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +97.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -50,14 +50,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 24.6 points of score in this model.
+1. **Champion of the Light** — Removing it costs 24.7 points of score in this model.
 2. **Seal of Command** — Removing it costs 20.8 points of score in this model.
 3. **Vengeance** — Removing it costs 12.7 points of score in this model.
 4. **Conviction** — Removing it costs 12.1 points of score in this model.
 5. **Improved Seals** — Removing it costs 9.5 points of score in this model.
-6. **Precision** — Removing it costs 8.1 points of score in this model.
+6. **Precision** — Removing it costs 8.2 points of score in this model.
 7. **Instrument of Law** — Removing it costs 7.1 points of score in this model.
-8. **Improved Judgement** — Removing it costs 4.9 points of score in this model.
+8. **Twist of Light** — Removing it costs 5.1 points of score in this model.
 
 ## Rotation
 

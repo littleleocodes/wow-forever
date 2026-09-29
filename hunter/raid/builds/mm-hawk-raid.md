@@ -75,7 +75,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 468 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.1%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 469 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.2%)):
   1. drop: use every other cooldown when ready (+3.0%, pass 1)
   2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
   3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
@@ -85,7 +85,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
   8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
   9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: mm-hawk-raid 791 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 763 DPS (+2.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: mm-hawk-raid 792 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 764 DPS (+2.7%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)

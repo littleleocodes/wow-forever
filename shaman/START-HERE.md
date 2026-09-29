@@ -58,7 +58,7 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
 | One slow weapon (11/31/9) | 415 | 774 | [tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4) |
-| Elemental (31/7/13) | 397 | 496 | [tree](https://talentsforever.com/shaman/60/5531301300103051-052-05305-4) |
+| Elemental — Lava Burst / Lightning Overload (29/22/0) | 397 | 504 | [tree](https://talentsforever.com/shaman/60/550430130010304-255200311000102--4) |
 | Stormcaller 28/23/0 (the community simulator's build) (0/0/0) | 382 | 494 | [tree](https://talentsforever.com/shaman/60/---4) |
 
 What to press with the top build, One slow weapon (the first line that is ready is the one you cast):

@@ -42,6 +42,6 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| elemental-dps | [`opt-elemental-dps-raid-dps`](raid/builds/opt-elemental-dps-raid-dps.md) (ours: optimizer) | 397 | [`elemental-raid-dps`](raid/builds/elemental-raid-dps.md) (ours: hand draft) | 505 |
+| elemental-dps | [`elemental-raid-dps`](raid/builds/elemental-raid-dps.md) (ours: hand draft) | 397 | [`elemental-raid-dps`](raid/builds/elemental-raid-dps.md) (ours: hand draft) | 504 |
 | enhancement-dps | [`opt-enhancement-dps-raid-dps`](raid/builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer) | 415 | [`opt-enhancement-dps-raid-dps`](raid/builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer) | 774 |
 | stormcaller-dps | *Stormcaller 28/23/0* (community simulator) | 382 | *Stormcaller 28/23/0* (community simulator) | 494 |

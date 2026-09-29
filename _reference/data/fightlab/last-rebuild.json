@@ -1314,7 +1314,7 @@
    "spec": "affliction-leveling",
    "hand": "leveling-affliction",
    "opt": "opt-affliction-leveling-leveling-st",
-   "started": "2026-09-28T16:43:16",
+   "started": "2026-09-29T09:08:00",
    "steps": [
     "raid",
     "adopt"
@@ -1324,113 +1324,99 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": true,
-       "quick_race": {
-        "cand-affliction-raid-r7": 571.6,
-        "cand-affliction-raid-r6": 570.9,
-        "cand-affliction-raid-r8": 566.1,
-        "opt-affliction-raid-raid-dps": 566.0,
-        "cand-affliction-raid-hand-2026-09-27": 542.7,
-        "cand-affliction-raid-r4": 542.7,
-        "cand-affliction-raid-r1": 536.3,
-        "cand-affliction-raid-r5": 533.4,
-        "cand-affliction-raid-hand-2026-09-26": 531.4,
-        "cand-affliction-raid-r2": 527.8,
-        "cand-affliction-raid-r3": 512.1
-       },
-       "converged_by_noise": true
+       "new_build": false
       }
      ],
      "top": [
       [
        "cand-affliction-raid-r7",
-       571.9
+       571.3
       ],
       [
        "affliction-dot-raid",
-       571.8
+       571.0
       ],
       [
        "cand-affliction-raid-r6",
-       571.8
+       571.0
       ],
       [
-       "opt-affliction-raid-raid-dps",
-       567.0
+       "cand-affliction-raid-r8",
+       566.3
       ]
      ],
      "promoted": "cand-affliction-raid-r7",
      "adopted": null,
      "environments": {
       "affliction-dot-raid": {
-       "dummy": 571.8287186243081,
-       "dummy60": 678.7879229273291,
-       "raid": 696.9372810215157,
-       "max": 696.9372810215157,
-       "max60": 721.8677341569551
+       "dummy": 571.0393061714722,
+       "dummy60": 679.031114917235,
+       "raid": 697.0029712243521,
+       "max": 697.0029712243521,
+       "max60": 722.9213841571604
       },
       "opt-affliction-raid-raid-dps": {
-       "dummy": 571.9403738902156,
-       "dummy60": 678.036757921188,
-       "raid": 697.5594280675107,
-       "max": 697.5594280675107,
-       "max60": 721.8100711063587
+       "dummy": 571.3104710119655,
+       "dummy60": 677.8550728196194,
+       "raid": 697.1669997604603,
+       "max": 697.1669997604603,
+       "max60": 722.5372405146782
       },
       "opt-affliction-raid-parse": {
-       "dummy": 571.8287186243081,
-       "dummy60": 678.7879229273291,
-       "raid": 696.9372810215157,
-       "max": 696.9372810215157,
-       "max60": 721.8677341569551
+       "dummy": 571.0393061714722,
+       "dummy60": 679.031114917235,
+       "raid": 697.0029712243521,
+       "max": 697.0029712243521,
+       "max60": 722.9213841571604
       },
       "sim preset: Demonic Pact": {
-       "dummy": 531.6659510067053,
-       "dummy60": 650.710691866177,
-       "raid": 645.629960248217,
-       "max": 645.629960248217,
-       "max60": 658.4512468902697
+       "dummy": 530.5261128197071,
+       "dummy60": 651.4599363635281,
+       "raid": 645.3924410137446,
+       "max": 645.3924410137446,
+       "max60": 657.9788331063905
       },
       "sim preset: Affliction": {
-       "dummy": 506.4073512063821,
-       "dummy60": 601.0368907026011,
-       "raid": 609.0870191785477,
-       "max": 609.0870191785477,
-       "max60": 618.2293538529411
+       "dummy": 506.5530464369231,
+       "dummy60": 600.589424354454,
+       "raid": 609.1673148091443,
+       "max": 609.1673148091443,
+       "max60": 616.6309731499675
       },
       "sim preset: DS/Ruin": {
-       "dummy": 511.92900341930095,
-       "dummy60": 618.2525775329736,
-       "raid": 625.0912311129857,
-       "max": 625.0912311129857,
-       "max60": 637.4695204134874
+       "dummy": 511.3765351402088,
+       "dummy60": 617.8448897476545,
+       "raid": 626.3449632174054,
+       "max": 626.3449632174054,
+       "max60": 638.0061823333965
       },
       "sim preset: Demonic Pact 2/31/18": {
-       "dummy": 536.7949941793684,
-       "dummy60": 645.2333876132512,
-       "raid": 655.1314630438973,
-       "max": 655.1314630438973,
-       "max60": 671.6148065621697
+       "dummy": 536.2858324557635,
+       "dummy60": 645.4318064713786,
+       "raid": 654.9153659608235,
+       "max": 654.9153659608235,
+       "max60": 671.4917110245739
       },
       "sim preset: Deep Affliction 35/0/16": {
-       "dummy": 514.2692794436866,
-       "dummy60": 603.3126052958503,
-       "raid": 617.8023432483405,
-       "max": 617.8023432483405,
-       "max60": 632.8183523110196
+       "dummy": 514.4331590280049,
+       "dummy60": 602.9366918311879,
+       "raid": 618.0693226436613,
+       "max": 618.0693226436613,
+       "max60": 631.9035069235305
       },
       "sim preset: DS/Ruin Pandemic 24/11/16": {
-       "dummy": 520.2231465980551,
-       "dummy60": 616.7058531676228,
-       "raid": 632.9087487661369,
-       "max": 632.9087487661369,
-       "max60": 656.4534592208589
+       "dummy": 520.0722840198179,
+       "dummy60": 616.6925756165549,
+       "raid": 631.9022691800913,
+       "max": 631.9022691800913,
+       "max60": 655.9864132586903
       },
       "sim preset: Shadow and Flame 13/11/27": {
-       "dummy": 495.83040102182264,
-       "dummy60": 585.6298901903695,
-       "raid": 604.5871272440818,
-       "max": 604.5871272440818,
-       "max60": 612.7567354618458
+       "dummy": 496.2183288945332,
+       "dummy60": 585.9653852528934,
+       "raid": 604.9840791206234,
+       "max": 604.9840791206234,
+       "max60": 613.1106988718755
       }
      }
     },
@@ -1444,93 +1430,93 @@
      "top": [
       [
        "destruction-fire-raid",
-       558.5
+       559.1
       ],
       [
        "opt-fire-destro-raid-raid-dps",
-       558.5
+       559.1
       ],
       [
        "cand-fire-destro-raid-r9",
-       558.5
+       559.1
       ],
       [
        "cand-fire-destro-raid-r8",
-       553.0
+       553.4
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "destruction-fire-raid": {
-       "dummy": 558.4961279189881,
-       "dummy60": 662.0210962897386,
-       "raid": 664.5792092990592,
-       "max": 664.5792092990592,
-       "max60": 687.9060578870249
+       "dummy": 559.0917892754966,
+       "dummy60": 661.7477069753713,
+       "raid": 664.021807199299,
+       "max": 664.021807199299,
+       "max60": 686.2553399562573
       },
       "opt-fire-destro-raid-raid-dps": {
-       "dummy": 558.4961279189881,
-       "dummy60": 662.0210962897386,
-       "raid": 664.5792092990592,
-       "max": 664.5792092990592,
-       "max60": 687.9060578870249
+       "dummy": 559.0917892754966,
+       "dummy60": 661.7477069753713,
+       "raid": 664.021807199299,
+       "max": 664.021807199299,
+       "max60": 686.2553399562573
       },
       "opt-fire-destro-raid-parse": {
-       "dummy": 558.1936656518708,
-       "dummy60": 657.7595485827,
-       "raid": 671.9985826499923,
-       "max": 671.9985826499923,
-       "max60": 701.7899722153784
+       "dummy": 558.3012498585484,
+       "dummy60": 657.9227610804471,
+       "raid": 671.2670403689962,
+       "max": 671.2670403689962,
+       "max60": 700.1357097012375
       },
       "sim preset: Demonic Pact": {
-       "dummy": 451.626733790872,
-       "dummy60": 545.2459929100432,
-       "raid": 538.4613371081592,
-       "max": 538.4613371081592,
-       "max60": 547.0839069924101
+       "dummy": 451.97511808046784,
+       "dummy60": 545.0340595498815,
+       "raid": 537.5952326009988,
+       "max": 537.5952326009988,
+       "max60": 546.4310667582768
       },
       "sim preset: Affliction": {
-       "dummy": 453.92226773867424,
-       "dummy60": 535.6890799418118,
-       "raid": 536.2014156255058,
-       "max": 536.2014156255058,
-       "max60": 540.2790466963916
+       "dummy": 454.2807952646482,
+       "dummy60": 536.0347771139808,
+       "raid": 536.8206997934872,
+       "max": 536.8206997934872,
+       "max60": 541.2285184130031
       },
       "sim preset: DS/Ruin": {
-       "dummy": 523.1043760281276,
-       "dummy60": 626.3202357426705,
-       "raid": 626.471243510769,
-       "max": 626.471243510769,
-       "max60": 637.3597090145704
+       "dummy": 523.486016648526,
+       "dummy60": 627.1626647790818,
+       "raid": 625.8591193596347,
+       "max": 625.8591193596347,
+       "max60": 635.9267492751471
       },
       "sim preset: Demonic Pact 2/31/18": {
-       "dummy": 455.4095978745368,
-       "dummy60": 546.242374865056,
-       "raid": 546.9151752979835,
-       "max": 546.9151752979835,
-       "max60": 558.4321626838744
+       "dummy": 455.1856733688255,
+       "dummy60": 546.5293101726069,
+       "raid": 546.2330890428464,
+       "max": 546.2330890428464,
+       "max60": 557.8258195030186
       },
       "sim preset: Deep Affliction 35/0/16": {
-       "dummy": 463.940244535403,
-       "dummy60": 542.7597817467152,
-       "raid": 545.2632298993686,
-       "max": 545.2632298993686,
-       "max60": 555.7241605086892
+       "dummy": 464.08804733240896,
+       "dummy60": 543.2072005004495,
+       "raid": 545.5838134684179,
+       "max": 545.5838134684179,
+       "max60": 556.1942056685759
       },
       "sim preset: DS/Ruin Pandemic 24/11/16": {
-       "dummy": 533.6452668027305,
-       "dummy60": 628.9555097311228,
-       "raid": 635.5033285613185,
-       "max": 635.5033285613185,
-       "max60": 656.5481683356714
+       "dummy": 535.2624564801969,
+       "dummy60": 629.3287123795227,
+       "raid": 635.238917775055,
+       "max": 635.238917775055,
+       "max60": 654.9801508808672
       },
       "sim preset: Shadow and Flame 13/11/27": {
-       "dummy": 501.99361864957314,
-       "dummy60": 592.9730911212278,
-       "raid": 596.9011395627404,
-       "max": 596.9011395627404,
-       "max60": 603.1079903595185
+       "dummy": 502.5107350175893,
+       "dummy60": 592.780587512646,
+       "raid": 596.6753428335073,
+       "max": 596.6753428335073,
+       "max60": 601.8343985661443
       }
      }
     },
@@ -1544,101 +1530,101 @@
      "top": [
       [
        "opt-sb-raid-raid-dps",
-       574.7
+       574.2
       ],
       [
        "cand-sb-raid-r6",
-       574.7
+       574.2
       ],
       [
        "ds-ruin-raid",
-       573.9
+       574.0
       ],
       [
        "cand-sb-raid-r4",
-       573.9
+       574.0
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "ds-ruin-raid": {
-       "dummy": 573.8772869829853,
-       "dummy60": 674.7757493105638,
-       "raid": 693.2049701302875,
-       "max": 693.2049701302875,
-       "max60": 711.5802718353945
+       "dummy": 573.9699245030092,
+       "dummy60": 674.7642860230912,
+       "raid": 693.6717012319349,
+       "max": 693.6717012319349,
+       "max60": 711.161249205902
       },
       "opt-sb-raid-raid-dps": {
-       "dummy": 574.7122187555989,
-       "dummy60": 685.4000890111203,
-       "raid": 689.8886797806343,
-       "max": 689.8886797806343,
-       "max60": 705.4603248683219
+       "dummy": 574.202342708791,
+       "dummy60": 684.9868777677985,
+       "raid": 690.3575036730431,
+       "max": 690.3575036730431,
+       "max60": 705.0418476529342
       },
       "opt-sb-raid-parse": {
-       "dummy": 573.5840991927736,
-       "dummy60": 675.2838315705078,
-       "raid": 695.1332739711463,
-       "max": 695.1332739711463,
-       "max60": 727.4920671790774
+       "dummy": 573.4763898678607,
+       "dummy60": 675.3412929084128,
+       "raid": 695.183062926884,
+       "max": 695.183062926884,
+       "max60": 727.1529616870566
       },
       "sim preset: Demonic Pact": {
-       "dummy": 465.81905110615935,
-       "dummy60": 567.4412282315714,
-       "raid": 556.8611342069353,
-       "max": 556.8611342069353,
-       "max60": 565.8291347256497
+       "dummy": 465.0912280941154,
+       "dummy60": 568.1017543096727,
+       "raid": 559.0297744817835,
+       "max": 559.0297744817835,
+       "max60": 567.0694471243437
       },
       "sim preset: Affliction": {
-       "dummy": 466.985411118937,
-       "dummy60": 552.125380772495,
-       "raid": 552.7868154479008,
-       "max": 552.7868154479008,
-       "max60": 561.3219575546124
+       "dummy": 466.1686145345815,
+       "dummy60": 551.9806135907468,
+       "raid": 553.1815591580968,
+       "max": 553.1815591580968,
+       "max60": 560.8913567144423
       },
       "sim preset: DS/Ruin": {
-       "dummy": 539.2225033797846,
-       "dummy60": 648.8634963016651,
-       "raid": 647.4945068016764,
-       "max": 647.4945068016764,
-       "max60": 659.4184369577854
+       "dummy": 539.3883140519451,
+       "dummy60": 649.9332119431087,
+       "raid": 648.767864796693,
+       "max": 648.767864796693,
+       "max60": 661.6930730625509
       },
       "sim preset: Demonic Pact 2/31/18": {
-       "dummy": 470.54589452512266,
-       "dummy60": 561.9486696851927,
-       "raid": 566.5817269829157,
-       "max": 566.5817269829157,
-       "max60": 578.7824389930388
+       "dummy": 469.844664059978,
+       "dummy60": 562.134091124625,
+       "raid": 567.154132101288,
+       "max": 567.154132101288,
+       "max60": 579.746167073606
       },
       "sim preset: Deep Affliction 35/0/16": {
-       "dummy": 474.0710651615704,
-       "dummy60": 554.747591976461,
-       "raid": 561.9723037335519,
-       "max": 561.9723037335519,
-       "max60": 575.9635241680627
+       "dummy": 472.82114724537877,
+       "dummy60": 554.635849362599,
+       "raid": 561.7726070480978,
+       "max": 561.7726070480978,
+       "max60": 574.4202646311239
       },
       "sim preset: DS/Ruin Pandemic 24/11/16": {
-       "dummy": 546.5348105770474,
-       "dummy60": 645.6302391265044,
-       "raid": 657.8680094147286,
-       "max": 657.8680094147286,
-       "max60": 680.5362167498587
+       "dummy": 547.0322689134298,
+       "dummy60": 646.0680600691397,
+       "raid": 657.1143222180987,
+       "max": 657.1143222180987,
+       "max60": 680.3442935425397
       },
       "sim preset: Shadow and Flame 13/11/27": {
-       "dummy": 515.5568722253333,
-       "dummy60": 604.7668963967003,
-       "raid": 614.9052928384275,
-       "max": 614.9052928384275,
-       "max60": 622.2192634064542
+       "dummy": 515.5422568919344,
+       "dummy60": 605.0019639992956,
+       "raid": 614.2739031852784,
+       "max": 614.2739031852784,
+       "max60": 621.6473713032334
       }
      }
     }
    },
-   "seconds": 605,
+   "seconds": 410,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec affliction-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
@@ -1647,29 +1633,29 @@
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warlock --spec affliction-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec affliction-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 22,
+     "seconds": 60,
      "tail": [
       "Destructive Reach               0.0%      0.0%     0.0%   1.00   noise",
       "Fel Concentration               0.0%      0.0%     0.0%   1.00   noise",
       "Wrack                           0.0%      0.4%     0.4%   1.00   noise",
       "Demonic Embrace                 0.0%      0.0%     0.0%   1.00   noise",
-      "Demonic Sacrifice               0.0%      0.2%     0.4%   1.00   noise",
+      "Demonic Sacrifice               0.0%      0.4%     0.4%   1.00   noise",
       "Improved Imp                    0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Pact                    0.0%      0.0%     0.0%   1.00   noise",
       "Improved Drains                 0.0%      0.0%     0.0%   1.00   noise",
       "Improved Felhunter              0.0%      0.0%     0.0%   1.00   noise",
       "Soul Siphon                     0.0%      0.0%     0.0%   1.00   noise",
       "Bane of Havoc                   0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warlock.manual.json (22 entries, 1 fitted) and warlock\\raid\\raidsim\\affliction-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warlock.manual.json (22 entries, 1 fitted) and warlock/raid/raidsim/affliction-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec affliction-raid --profile raid-dps --write --export --seed affliction-dot-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec affliction-raid --profile raid-dps --write --export --seed affliction-dot-raid",
      "rc": 0,
-     "seconds": 37,
+     "seconds": 31,
      "tail": [
       "| Unholy Power | Demonology 1 | 1/5 | +0.15% | yes |",
       "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
@@ -1680,76 +1666,56 @@
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
       "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
       "",
-      "exported opt-affliction-raid-raid-dps -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-affliction-raid-raid-dps -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\affliction-raid-raid-dps.md"
+      "wrote warlock/raid/optimizer/affliction-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec affliction-raid --builds opt-affliction-raid-raid-dps F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-26.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-27.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r1.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r2.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r3.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r4.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r5.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r6.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r7.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r8.json --iterations 6666 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --builds affliction-dot-raid opt-affliction-raid-raid-dps /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r1.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r2.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r3.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r4.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r5.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r6.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r7.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r8.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 5,
+     "seconds": 11,
      "tail": [
-      "  cand-affliction-raid-r7                     30/0/21  DPS    571.6 ±  39.2  threat      481  oom   1.6s  scorer +57.2%",
-      "  cand-affliction-raid-r6                     30/0/21  DPS    570.9 ±  39.7  threat      481  oom   2.2s  scorer +57.6%",
-      "  cand-affliction-raid-r8                     30/0/21  DPS    566.1 ±  38.6  threat      475  oom   1.1s  scorer +58.0%",
-      "  opt-affliction-raid-raid-dps                30/0/21  DPS    566.0 ±  39.8  threat      475  oom   1.9s  scorer +58.5%",
-      "  cand-affliction-raid-hand-2026-09-27       22/11/18  DPS    542.7 ±  37.4  threat      454  oom   0.5s  scorer +50.7%",
-      "  cand-affliction-raid-r4                    22/11/18  DPS    542.7 ±  37.4  threat      454  oom   0.5s  scorer +50.7%",
-      "  cand-affliction-raid-r1                    10/31/10  DPS    536.3 ±  30.1  threat      440  oom   0.2s  scorer +42.6%",
-      "  cand-affliction-raid-r5                    19/11/21  DPS    533.4 ±  37.1  threat      447  oom   1.1s  scorer +50.1%",
-      "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    531.4 ±  35.3  threat      444  oom   0.6s  scorer +44.1%",
-      "  cand-affliction-raid-r2                    11/30/10  DPS    527.8 ±  29.4  threat      434  oom   0.9s  scorer +45.6%",
-      "  cand-affliction-raid-r3                    23/11/17  DPS    512.1 ±  35.0  threat      429  oom   0.9s  scorer +43.3%",
-      "  damage shares of opt-affliction-raid-raid-dps: Shadow Bolt 45%, Bane of Agony 19%, Corruption 18%, Immolate 11%, Pet: Auto Attack 6%, Searing Pain 1%, Pet: Lash of Pain 1% | model sources: shadow_bolt 46%, agony 19%, corruption 18%, immolate 11%, imp 6% (unmatched 1%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec affliction-raid --builds affliction-dot-raid opt-affliction-raid-raid-dps F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-26.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-27.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r1.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r2.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r3.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r4.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r5.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r6.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r7.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r8.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r9.json --iterations 20000 --write",
-     "rc": 0,
-     "seconds": 22,
-     "tail": [
-      "  cand-affliction-raid-r5                    19/11/21  DPS    533.4 ±  37.2  threat      447  oom   1.1s  scorer +50.1%",
-      "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    531.7 ±  35.6  threat      444  oom   0.6s  scorer +44.1%",
-      "  sim preset: Demonic Pact                             DPS    531.7 ±  38.4  threat      538  oom   0.6s",
-      "  cand-affliction-raid-r2                    11/30/10  DPS    527.7 ±  29.5  threat      434  oom   0.9s  scorer +45.6%",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    520.2 ±  34.2  threat      436  oom   1.2s",
-      "  sim preset: Deep Affliction 35/0/16                  DPS    514.3 ±  33.7  threat      430  oom   1.8s",
-      "  cand-affliction-raid-r3                    23/11/17  DPS    512.2 ±  35.1  threat      429  oom   0.9s  scorer +43.3%",
-      "  sim preset: DS/Ruin                                  DPS    511.9 ±  35.4  threat      468  oom   0.4s",
-      "  sim preset: Affliction                               DPS    506.4 ±  33.8  threat      443  oom   1.4s",
-      "  sim preset: Shadow and Flame 13/11/27                DPS    495.8 ±  31.0  threat      409  oom   0.6s",
+      "  cand-affliction-raid-r5                    19/11/21  DPS    533.6 ±  37.7  threat      448  oom   1.1s  scorer +50.1%",
+      "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    532.2 ±  35.6  threat      445  oom   0.6s  scorer +44.1%",
+      "  sim preset: Demonic Pact                             DPS    530.5 ±  38.8  threat      537  oom   0.6s",
+      "  cand-affliction-raid-r2                    11/30/10  DPS    527.7 ±  30.1  threat      434  oom   0.9s  scorer +45.6%",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    520.1 ±  34.6  threat      436  oom   1.2s",
+      "  sim preset: Deep Affliction 35/0/16                  DPS    514.4 ±  33.8  threat      430  oom   1.8s",
+      "  cand-affliction-raid-r3                    23/11/17  DPS    512.3 ±  35.7  threat      429  oom   0.9s  scorer +43.3%",
+      "  sim preset: DS/Ruin                                  DPS    511.4 ±  35.7  threat      467  oom   0.4s",
+      "  sim preset: Affliction                               DPS    506.6 ±  33.8  threat      443  oom   1.4s",
+      "  sim preset: Shadow and Flame 13/11/27                DPS    496.2 ±  31.2  threat      409  oom   0.6s",
       "  damage shares of affliction-dot-raid: Shadow Bolt 47%, Bane of Agony 18%, Corruption 17%, Immolate 11%, Pet: Auto Attack 6%, Searing Pain 1%, Pet: Lash of Pain 1% | model sources: shadow_bolt 47%, agony 18%, corruption 17%, immolate 11%, imp 6% (unmatched 1%)",
-      "wrote warlock\\raid\\raidsim\\affliction-raid.md"
+      "wrote warlock/raid/raidsim/affliction-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec affliction-raid --builds affliction-dot-raid opt-affliction-raid-raid-dps F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-26.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-hand-2026-09-27.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r1.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r2.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r3.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r4.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r5.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r6.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r7.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r8.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-affliction-raid-r9.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --builds affliction-dot-raid opt-affliction-raid-raid-dps /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r1.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r2.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r3.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r4.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r5.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r6.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r7.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r8.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 23,
+     "seconds": 11,
      "tail": [
-      "  cand-affliction-raid-r5                    19/11/21  DPS    533.4 ±  37.2  threat      447  oom   1.1s  scorer +50.1%",
-      "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    531.7 ±  35.6  threat      444  oom   0.6s  scorer +44.1%",
-      "  sim preset: Demonic Pact                             DPS    531.7 ±  38.4  threat      538  oom   0.6s",
-      "  cand-affliction-raid-r2                    11/30/10  DPS    527.7 ±  29.5  threat      434  oom   0.9s  scorer +45.6%",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    520.2 ±  34.2  threat      436  oom   1.2s",
-      "  sim preset: Deep Affliction 35/0/16                  DPS    514.3 ±  33.7  threat      430  oom   1.8s",
-      "  cand-affliction-raid-r3                    23/11/17  DPS    512.2 ±  35.1  threat      429  oom   0.9s  scorer +43.3%",
-      "  sim preset: DS/Ruin                                  DPS    511.9 ±  35.4  threat      468  oom   0.4s",
-      "  sim preset: Affliction                               DPS    506.4 ±  33.8  threat      443  oom   1.4s",
-      "  sim preset: Shadow and Flame 13/11/27                DPS    495.8 ±  31.0  threat      409  oom   0.6s",
+      "  cand-affliction-raid-r5                    19/11/21  DPS    533.6 ±  37.7  threat      448  oom   1.1s  scorer +50.1%",
+      "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    532.2 ±  35.6  threat      445  oom   0.6s  scorer +44.1%",
+      "  sim preset: Demonic Pact                             DPS    530.5 ±  38.8  threat      537  oom   0.6s",
+      "  cand-affliction-raid-r2                    11/30/10  DPS    527.7 ±  30.1  threat      434  oom   0.9s  scorer +45.6%",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    520.1 ±  34.6  threat      436  oom   1.2s",
+      "  sim preset: Deep Affliction 35/0/16                  DPS    514.4 ±  33.8  threat      430  oom   1.8s",
+      "  cand-affliction-raid-r3                    23/11/17  DPS    512.3 ±  35.7  threat      429  oom   0.9s  scorer +43.3%",
+      "  sim preset: DS/Ruin                                  DPS    511.4 ±  35.7  threat      467  oom   0.4s",
+      "  sim preset: Affliction                               DPS    506.6 ±  33.8  threat      443  oom   1.4s",
+      "  sim preset: Shadow and Flame 13/11/27                DPS    496.2 ±  31.2  threat      409  oom   0.6s",
       "  damage shares of affliction-dot-raid: Shadow Bolt 47%, Bane of Agony 18%, Corruption 17%, Immolate 11%, Pet: Auto Attack 6%, Searing Pain 1%, Pet: Lash of Pain 1% | model sources: shadow_bolt 47%, agony 18%, corruption 17%, immolate 11%, imp 6% (unmatched 1%)",
-      "wrote warlock\\raid\\raidsim\\affliction-raid.md"
+      "wrote warlock/raid/raidsim/affliction-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec affliction-raid --profile parse --write --export --seed affliction-dot-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec affliction-raid --profile parse --write --export --seed affliction-dot-raid",
      "rc": 0,
-     "seconds": 50,
+     "seconds": 34,
      "tail": [
       "| Fel Vitality | Demonology 2 | 1/3 | +0.13% | no |",
       "| Unholy Power | Demonology 1 | 1/5 | +0.13% | yes |",
@@ -1760,43 +1726,43 @@
       "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
       "",
-      "exported opt-affliction-raid-parse -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-affliction-raid-parse -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\affliction-raid-parse.md"
+      "wrote warlock/raid/optimizer/affliction-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec affliction-raid --env environments --builds affliction-dot-raid opt-affliction-raid-raid-dps opt-affliction-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --env environments --builds affliction-dot-raid opt-affliction-raid-raid-dps opt-affliction-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 57,
+     "seconds": 32,
      "tail": [
       "== warlock affliction-raid environments (gear raid mc.gear.json, max mc.gear.json):",
-      "  opt-affliction-raid-raid-dps                30/0/21  dummy   571.9  dummy60   678.0  raid   697.6  max   697.6  max60   721.8",
-      "  affliction-dot-raid                         30/0/21  dummy   571.8  dummy60   678.8  raid   696.9  max   696.9  max60   721.9",
-      "  opt-affliction-raid-parse                   30/0/21  dummy   571.8  dummy60   678.8  raid   696.9  max   696.9  max60   721.9",
-      "  sim preset: Demonic Pact 2/31/18                     dummy   536.8  dummy60   645.2  raid   655.1  max   655.1  max60   671.6",
-      "  sim preset: Demonic Pact                             dummy   531.7  dummy60   650.7  raid   645.6  max   645.6  max60   658.5",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   520.2  dummy60   616.7  raid   632.9  max   632.9  max60   656.5",
-      "  sim preset: Deep Affliction 35/0/16                  dummy   514.3  dummy60   603.3  raid   617.8  max   617.8  max60   632.8",
-      "  sim preset: DS/Ruin                                  dummy   511.9  dummy60   618.3  raid   625.1  max   625.1  max60   637.5",
-      "  sim preset: Affliction                               dummy   506.4  dummy60   601.0  raid   609.1  max   609.1  max60   618.2",
-      "  sim preset: Shadow and Flame 13/11/27                dummy   495.8  dummy60   585.6  raid   604.6  max   604.6  max60   612.8",
-      "wrote warlock\\raid\\raidsim\\affliction-raid-environments.md"
+      "  opt-affliction-raid-raid-dps                30/0/21  dummy   571.3  dummy60   677.9  raid   697.2  max   697.2  max60   722.5",
+      "  affliction-dot-raid                         30/0/21  dummy   571.0  dummy60   679.0  raid   697.0  max   697.0  max60   722.9",
+      "  opt-affliction-raid-parse                   30/0/21  dummy   571.0  dummy60   679.0  raid   697.0  max   697.0  max60   722.9",
+      "  sim preset: Demonic Pact 2/31/18                     dummy   536.3  dummy60   645.4  raid   654.9  max   654.9  max60   671.5",
+      "  sim preset: Demonic Pact                             dummy   530.5  dummy60   651.5  raid   645.4  max   645.4  max60   658.0",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   520.1  dummy60   616.7  raid   631.9  max   631.9  max60   656.0",
+      "  sim preset: Deep Affliction 35/0/16                  dummy   514.4  dummy60   602.9  raid   618.1  max   618.1  max60   631.9",
+      "  sim preset: DS/Ruin                                  dummy   511.4  dummy60   617.8  raid   626.3  max   626.3  max60   638.0",
+      "  sim preset: Affliction                               dummy   506.6  dummy60   600.6  raid   609.2  max   609.2  max60   616.6",
+      "  sim preset: Shadow and Flame 13/11/27                dummy   496.2  dummy60   586.0  raid   605.0  max   605.0  max60   613.1",
+      "wrote warlock/raid/raidsim/affliction-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec fire-destro-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warlock fire-destro-raid: cand-fire-destro-raid-preset-ds-ruin.json, cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json"
+      "warlock fire-destro-raid: cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warlock --spec fire-destro-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec fire-destro-raid --iterations 1500 --write",
      "rc": 0,
      "seconds": 45,
      "tail": [
@@ -1811,14 +1777,14 @@
       "Improved Felhunter              0.0%      0.0%     0.0%   1.00   noise",
       "Master Demonologist             0.0%      0.0%     0.0%   1.00   noise",
       "Soul Link                       0.0%    -13.5%   -13.5%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warlock.manual.json (19 entries, 4 fitted) and warlock\\raid\\raidsim\\fire-destro-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warlock.manual.json (18 entries, 1 fitted) and warlock/raid/raidsim/fire-destro-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec fire-destro-raid --profile raid-dps --write --export --seed destruction-fire-raid F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec fire-destro-raid --profile raid-dps --write --export --seed destruction-fire-raid /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json",
      "rc": 0,
-     "seconds": 70,
+     "seconds": 42,
      "tail": [
       "| Nightfall | Affliction 4 | 1/2 | +0.42% | yes |",
       "| Decimation | Demonology 4 | 1/2 | +0.17% | no |",
@@ -1829,36 +1795,36 @@
       "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
       "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
       "",
-      "exported opt-fire-destro-raid-raid-dps -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-fire-destro-raid-raid-dps -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\fire-destro-raid-raid-dps.md"
+      "wrote warlock/raid/optimizer/fire-destro-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec fire-destro-raid --builds destruction-fire-raid opt-fire-destro-raid-raid-dps F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-26.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-27.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-hand-2026-09-28.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-preset-ds-ruin.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r1.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r2.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r3.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r4.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r5.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r6.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r7.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r8.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-fire-destro-raid-r9.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --builds destruction-fire-raid opt-fire-destro-raid-raid-dps /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-28.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r1.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r2.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r3.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r4.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r5.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r6.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r7.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r8.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-fire-destro-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 16,
+     "seconds": 4,
      "tail": [
-      "  cand-fire-destro-raid-r3                   21/11/19  DPS    529.7 ±  33.8  threat      470  oom   1.6s  scorer +73.5%",
-      "  sim preset: DS/Ruin                                  DPS    523.1 ±  38.8  threat      509  oom   1.4s",
-      "  cand-fire-destro-raid-r2                   21/11/19  DPS    520.5 ±  28.7  threat      462  oom   1.6s  scorer +70.7%",
-      "  sim preset: Shadow and Flame 13/11/27                DPS    502.0 ±  34.7  threat      446  oom   1.4s",
-      "  cand-fire-destro-raid-hand-2026-09-26       5/11/35  DPS    485.2 ±  28.7  threat      430  oom   1.4s  scorer +57.2%",
-      "  sim preset: Deep Affliction 35/0/16                  DPS    463.9 ±  33.0  threat      416  oom   1.7s",
-      "  cand-fire-destro-raid-r1                    12/31/8  DPS    459.9 ±  22.8  threat      413  oom   1.3s  scorer +30.4%",
-      "  sim preset: Demonic Pact 2/31/18                     DPS    455.4 ±  34.6  threat      484  oom   1.9s",
-      "  sim preset: Affliction                               DPS    453.9 ±  32.9  threat      426  oom   1.6s",
-      "  sim preset: Demonic Pact                             DPS    451.6 ±  34.7  threat      501  oom   1.5s",
+      "  cand-fire-destro-raid-r3                   21/11/19  DPS    528.6 ±  33.5  threat      469  oom   1.6s  scorer +73.5%",
+      "  sim preset: DS/Ruin                                  DPS    523.5 ±  38.6  threat      510  oom   1.5s",
+      "  cand-fire-destro-raid-r2                   21/11/19  DPS    519.5 ±  28.6  threat      462  oom   1.6s  scorer +70.7%",
+      "  sim preset: Shadow and Flame 13/11/27                DPS    502.5 ±  34.9  threat      446  oom   1.4s",
+      "  cand-fire-destro-raid-hand-2026-09-26       5/11/35  DPS    485.3 ±  29.2  threat      430  oom   1.4s  scorer +57.2%",
+      "  sim preset: Deep Affliction 35/0/16                  DPS    464.1 ±  33.1  threat      416  oom   1.7s",
+      "  cand-fire-destro-raid-r1                    12/31/8  DPS    460.3 ±  23.0  threat      413  oom   1.3s  scorer +30.4%",
+      "  sim preset: Demonic Pact 2/31/18                     DPS    455.2 ±  34.6  threat      484  oom   1.9s",
+      "  sim preset: Affliction                               DPS    454.3 ±  33.0  threat      427  oom   1.6s",
+      "  sim preset: Demonic Pact                             DPS    452.0 ±  34.8  threat      502  oom   1.5s",
       "  damage shares of destruction-fire-raid: Shadow Bolt 50%, Bane of Agony 20%, Corruption 19%, Immolate 10%, Shadowburn 1%, Searing Pain 0% | model sources: filler 50%, agony 20%, corruption 19%, immolate 10%, searing_pain 0% (unmatched 1%)",
-      "wrote warlock\\raid\\raidsim\\fire-destro-raid.md"
+      "wrote warlock/raid/raidsim/fire-destro-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec fire-destro-raid --profile parse --write --export --seed destruction-fire-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec fire-destro-raid --profile parse --write --export --seed destruction-fire-raid",
      "rc": 0,
-     "seconds": 56,
+     "seconds": 28,
      "tail": [
       "| Cataclysm | Destruction 2 | 1/3 | +0.09% | yes |",
       "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
@@ -1869,45 +1835,45 @@
       "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
       "| Soul Siphon | Affliction 5 | 1/3 | +0.00% | yes |",
       "",
-      "exported opt-fire-destro-raid-parse -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-fire-destro-raid-parse -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\fire-destro-raid-parse.md"
+      "wrote warlock/raid/optimizer/fire-destro-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec fire-destro-raid --env environments --builds destruction-fire-raid opt-fire-destro-raid-raid-dps opt-fire-destro-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --env environments --builds destruction-fire-raid opt-fire-destro-raid-raid-dps opt-fire-destro-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 21,
+     "seconds": 11,
      "tail": [
       "== warlock fire-destro-raid environments (gear raid mc.gear.json, max mc.gear.json):",
-      "  destruction-fire-raid                      22/11/18  dummy   558.5  dummy60   662.0  raid   664.6  max   664.6  max60   687.9",
-      "  opt-fire-destro-raid-raid-dps              22/11/18  dummy   558.5  dummy60   662.0  raid   664.6  max   664.6  max60   687.9",
-      "  opt-fire-destro-raid-parse                 21/11/19  dummy   558.2  dummy60   657.8  raid   672.0  max   672.0  max60   701.8",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   533.6  dummy60   629.0  raid   635.5  max   635.5  max60   656.5",
-      "  sim preset: DS/Ruin                                  dummy   523.1  dummy60   626.3  raid   626.5  max   626.5  max60   637.4",
-      "  sim preset: Shadow and Flame 13/11/27                dummy   502.0  dummy60   593.0  raid   596.9  max   596.9  max60   603.1",
-      "  sim preset: Deep Affliction 35/0/16                  dummy   463.9  dummy60   542.8  raid   545.3  max   545.3  max60   555.7",
-      "  sim preset: Demonic Pact 2/31/18                     dummy   455.4  dummy60   546.2  raid   546.9  max   546.9  max60   558.4",
-      "  sim preset: Affliction                               dummy   453.9  dummy60   535.7  raid   536.2  max   536.2  max60   540.3",
-      "  sim preset: Demonic Pact                             dummy   451.6  dummy60   545.2  raid   538.5  max   538.5  max60   547.1",
-      "wrote warlock\\raid\\raidsim\\fire-destro-raid-environments.md"
+      "  destruction-fire-raid                      22/11/18  dummy   559.1  dummy60   661.7  raid   664.0  max   664.0  max60   686.3",
+      "  opt-fire-destro-raid-raid-dps              22/11/18  dummy   559.1  dummy60   661.7  raid   664.0  max   664.0  max60   686.3",
+      "  opt-fire-destro-raid-parse                 21/11/19  dummy   558.3  dummy60   657.9  raid   671.3  max   671.3  max60   700.1",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   535.3  dummy60   629.3  raid   635.2  max   635.2  max60   655.0",
+      "  sim preset: DS/Ruin                                  dummy   523.5  dummy60   627.2  raid   625.9  max   625.9  max60   635.9",
+      "  sim preset: Shadow and Flame 13/11/27                dummy   502.5  dummy60   592.8  raid   596.7  max   596.7  max60   601.8",
+      "  sim preset: Deep Affliction 35/0/16                  dummy   464.1  dummy60   543.2  raid   545.6  max   545.6  max60   556.2",
+      "  sim preset: Demonic Pact 2/31/18                     dummy   455.2  dummy60   546.5  raid   546.2  max   546.2  max60   557.8",
+      "  sim preset: Affliction                               dummy   454.3  dummy60   536.0  raid   536.8  max   536.8  max60   541.2",
+      "  sim preset: Demonic Pact                             dummy   452.0  dummy60   545.0  raid   537.6  max   537.6  max60   546.4",
+      "wrote warlock/raid/raidsim/fire-destro-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec sb-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warlock sb-raid: cand-sb-raid-preset-ds-ruin.json, cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json"
+      "warlock sb-raid: cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warlock --spec sb-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec sb-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 12,
+     "seconds": 22,
      "tail": [
       "Intensity                       0.0%      0.0%     0.0%   1.00   noise",
       "Shadow and Flame                0.0%      0.0%     0.0%   1.00   noise",
@@ -1920,14 +1886,14 @@
       "Improved Sayaad                 0.0%      0.0%     0.0%   1.00   noise",
       "Master Demonologist             0.0%      0.0%     0.0%   1.00   noise",
       "Soul Link                       0.0%    -13.8%   -13.8%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warlock.manual.json (18 entries, 1 fitted) and warlock\\raid\\raidsim\\sb-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warlock.manual.json (18 entries, 1 fitted) and warlock/raid/raidsim/sb-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec sb-raid --profile raid-dps --write --export --seed ds-ruin-raid F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-preset-ds-ruin.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec sb-raid --profile raid-dps --write --export --seed ds-ruin-raid /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json",
      "rc": 0,
-     "seconds": 70,
+     "seconds": 36,
      "tail": [
       "| Aftermath | Destruction 2 | 1/5 | +0.72% | yes |",
       "| Nightfall | Affliction 4 | 1/2 | +0.26% | yes |",
@@ -1938,36 +1904,36 @@
       "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
       "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
       "",
-      "exported opt-sb-raid-raid-dps -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-sb-raid-raid-dps -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\sb-raid-raid-dps.md"
+      "wrote warlock/raid/optimizer/sb-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec sb-raid --builds ds-ruin-raid opt-sb-raid-raid-dps F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-hand-2026-09-26.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-preset-ds-ruin.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r1.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r2.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r3.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r4.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r5.json F:\\wow-forever\\warlock\\raid\\raidsim\\candidates\\cand-sb-raid-r6.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --builds ds-ruin-raid opt-sb-raid-raid-dps /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r1.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r2.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r3.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r4.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r5.json /home/user/wow-forever/warlock/raid/raidsim/candidates/cand-sb-raid-r6.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 12,
+     "seconds": 3,
      "tail": [
-      "  cand-sb-raid-r2                            22/11/18  DPS    567.9 ±  43.6  threat      504  oom   1.5s  scorer +89.0%",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    546.5 ±  41.2  threat      486  oom   1.1s",
-      "  sim preset: DS/Ruin                                  DPS    539.2 ±  40.6  threat      523  oom   0.5s",
-      "  sim preset: Shadow and Flame 13/11/27                DPS    515.6 ±  35.8  threat      456  oom   0.9s",
-      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    514.5 ±  37.5  threat      455  oom   0.4s  scorer +70.7%",
-      "  cand-sb-raid-r1                             2/31/18  DPS    482.2 ±  38.8  threat      486  oom   0.6s  scorer +37.4%",
-      "  sim preset: Deep Affliction 35/0/16                  DPS    474.1 ±  34.3  threat      423  oom   1.3s",
-      "  sim preset: Demonic Pact 2/31/18                     DPS    470.5 ±  36.6  threat      497  oom   0.5s",
-      "  sim preset: Affliction                               DPS    467.0 ±  34.6  threat      437  oom   0.8s",
-      "  sim preset: Demonic Pact                             DPS    465.8 ±  36.9  threat      516  oom   0.8s",
+      "  cand-sb-raid-r2                            22/11/18  DPS    568.4 ±  44.4  threat      505  oom   1.5s  scorer +89.0%",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    547.0 ±  41.2  threat      487  oom   1.1s",
+      "  sim preset: DS/Ruin                                  DPS    539.4 ±  40.8  threat      523  oom   0.5s",
+      "  sim preset: Shadow and Flame 13/11/27                DPS    515.5 ±  35.9  threat      456  oom   0.9s",
+      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    514.5 ±  37.4  threat      455  oom   0.4s  scorer +70.7%",
+      "  cand-sb-raid-r1                             2/31/18  DPS    482.0 ±  37.9  threat      486  oom   0.6s  scorer +37.4%",
+      "  sim preset: Deep Affliction 35/0/16                  DPS    472.8 ±  34.1  threat      422  oom   1.3s",
+      "  sim preset: Demonic Pact 2/31/18                     DPS    469.8 ±  36.8  threat      496  oom   0.5s",
+      "  sim preset: Affliction                               DPS    466.2 ±  34.3  threat      436  oom   0.8s",
+      "  sim preset: Demonic Pact                             DPS    465.1 ±  37.0  threat      515  oom   0.8s",
       "  damage shares of ds-ruin-raid: Shadow Bolt 51%, Bane of Agony 20%, Corruption 19%, Immolate 10%, Searing Pain 1% | model sources: shadow_bolt 51%, agony 20%, corruption 19%, immolate 10% (unmatched 1%)",
-      "wrote warlock\\raid\\raidsim\\sb-raid.md"
+      "wrote warlock/raid/raidsim/sb-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warlock --spec sb-raid --profile parse --write --export --seed ds-ruin-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec sb-raid --profile parse --write --export --seed ds-ruin-raid",
      "rc": 0,
-     "seconds": 53,
+     "seconds": 28,
      "tail": [
       "| Cataclysm | Destruction 2 | 1/3 | +0.08% | yes |",
       "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
@@ -1978,29 +1944,29 @@
       "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
       "| Soul Siphon | Affliction 5 | 1/3 | +0.00% | yes |",
       "",
-      "exported opt-sb-raid-parse -> warlock\\talents\\forever\\proposed-builds.json",
+      "exported opt-sb-raid-parse -> warlock/talents/forever/proposed-builds.json",
       "",
-      "wrote warlock\\raid\\optimizer\\sb-raid-parse.md"
+      "wrote warlock/raid/optimizer/sb-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warlock --spec sb-raid --env environments --builds ds-ruin-raid opt-sb-raid-raid-dps opt-sb-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --env environments --builds ds-ruin-raid opt-sb-raid-raid-dps opt-sb-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 34,
+     "seconds": 13,
      "tail": [
       "== warlock sb-raid environments (gear raid mc.gear.json, max mc.gear.json):",
-      "  opt-sb-raid-raid-dps                       22/11/18  dummy   574.7  dummy60   685.4  raid   689.9  max   689.9  max60   705.5",
-      "  ds-ruin-raid                               22/11/18  dummy   573.9  dummy60   674.8  raid   693.2  max   693.2  max60   711.6",
-      "  opt-sb-raid-parse                          21/11/19  dummy   573.6  dummy60   675.3  raid   695.1  max   695.1  max60   727.5",
-      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   546.5  dummy60   645.6  raid   657.9  max   657.9  max60   680.5",
-      "  sim preset: DS/Ruin                                  dummy   539.2  dummy60   648.9  raid   647.5  max   647.5  max60   659.4",
-      "  sim preset: Shadow and Flame 13/11/27                dummy   515.6  dummy60   604.8  raid   614.9  max   614.9  max60   622.2",
-      "  sim preset: Deep Affliction 35/0/16                  dummy   474.1  dummy60   554.7  raid   562.0  max   562.0  max60   576.0",
-      "  sim preset: Demonic Pact 2/31/18                     dummy   470.5  dummy60   561.9  raid   566.6  max   566.6  max60   578.8",
-      "  sim preset: Affliction                               dummy   467.0  dummy60   552.1  raid   552.8  max   552.8  max60   561.3",
-      "  sim preset: Demonic Pact                             dummy   465.8  dummy60   567.4  raid   556.9  max   556.9  max60   565.8",
-      "wrote warlock\\raid\\raidsim\\sb-raid-environments.md"
+      "  opt-sb-raid-raid-dps                       22/11/18  dummy   574.2  dummy60   685.0  raid   690.4  max   690.4  max60   705.0",
+      "  ds-ruin-raid                               22/11/18  dummy   574.0  dummy60   674.8  raid   693.7  max   693.7  max60   711.2",
+      "  opt-sb-raid-parse                          21/11/19  dummy   573.5  dummy60   675.3  raid   695.2  max   695.2  max60   727.2",
+      "  sim preset: DS/Ruin Pandemic 24/11/16                dummy   547.0  dummy60   646.1  raid   657.1  max   657.1  max60   680.3",
+      "  sim preset: DS/Ruin                                  dummy   539.4  dummy60   649.9  raid   648.8  max   648.8  max60   661.7",
+      "  sim preset: Shadow and Flame 13/11/27                dummy   515.5  dummy60   605.0  raid   614.3  max   614.3  max60   621.6",
+      "  sim preset: Deep Affliction 35/0/16                  dummy   472.8  dummy60   554.6  raid   561.8  max   561.8  max60   574.4",
+      "  sim preset: Demonic Pact 2/31/18                     dummy   469.8  dummy60   562.1  raid   567.2  max   567.2  max60   579.7",
+      "  sim preset: Affliction                               dummy   466.2  dummy60   552.0  raid   553.2  max   553.2  max60   560.9",
+      "  sim preset: Demonic Pact                             dummy   465.1  dummy60   568.1  raid   559.0  max   559.0  max60   567.1",
+      "wrote warlock/raid/raidsim/sb-raid-environments.md"
      ],
      "stderr": []
     }
@@ -2268,30 +2234,17 @@
    "spec": "bm-leveling",
    "hand": "leveling-beast-mastery",
    "opt": "opt-bm-leveling-leveling-st",
-   "started": "2026-09-29T05:11:52",
+   "started": "2026-09-29T09:15:12",
    "steps": [
-    "variants"
+    "raid",
+    "adopt"
    ],
    "raid": {
     "mm-raid": {
      "rounds": [
       {
        "round": 1,
-       "new_build": true,
-       "quick_race": {
-        "cand-mm-raid-r6": 429.6,
-        "opt-mm-raid-raid-dps": 427.8,
-        "cand-mm-raid-r7": 427.6,
-        "cand-mm-raid-r5": 425.8,
-        "cand-mm-raid-r4": 419.5,
-        "cand-mm-raid-r8": 408.8,
-        "cand-mm-raid-preset-marksmanship": 400.6,
-        "cand-mm-raid-hand-2026-09-27": 395.6,
-        "cand-mm-raid-r1": 389.9,
-        "cand-mm-raid-r2": 387.0,
-        "cand-mm-raid-r3": 382.0
-       },
-       "converged_by_noise": true
+       "new_build": false
       }
      ],
      "top": [
@@ -2377,17 +2330,7 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": true,
-       "quick_race": {
-        "opt-mm-lonewolf-raid-raid-dps": 433.7,
-        "cand-mm-lonewolf-raid-r1": 432.2,
-        "cand-mm-lonewolf-raid-r3": 432.2,
-        "cand-mm-lonewolf-raid-r4": 432.2,
-        "cand-mm-lonewolf-raid-r5": 432.2,
-        "cand-mm-lonewolf-raid-r2": 417.4,
-        "cand-mm-lonewolf-raid-hand-2026-09-26": 393.4
-       },
-       "converged_by_noise": true
+       "new_build": false
       }
      ],
      "top": [
@@ -2463,225 +2406,218 @@
      }
     }
    },
-   "seconds": 2829,
+   "seconds": 258,
    "log": [
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/calibrate.py hunter --spec bm-leveling --profile leveling-aoe --builds opt-bm-leveling-leveling-aoe /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json --levels 40,60 --fights 1500 --write --set MOBS_PER_PULL=3",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --preset-candidates",
      "rc": 0,
-     "seconds": 1647,
+     "seconds": 0,
      "tail": [
-      "Lethal Attacks             2.5%      1.7%     1.7%   1.00      kept |    1.9%   2.0% |    3.0%   1.4%",
-      "Deflection                 2.4%      1.7%     1.7%   1.00      kept |   -3.1%   1.7% |    7.9%   1.6%",
-      "Survivalist                1.6%      1.0%     0.9%   1.00      kept |   -0.7%   1.0% |    3.9%   0.9%",
-      "Deadly Aspects             1.5%      4.2%     1.5%   0.36    fitted |    3.7%   1.6% |   -0.6%   1.4%",
-      "Rapid Killing              1.0%      0.4%     0.5%   1.00      kept |   -4.0%   0.5% |    6.0%   0.5%",
-      "Savage Strikes             0.8%      0.0%     0.0%   1.00      dead |    0.6%   0.0% |    1.1%   0.0%",
-      "Bestial Swiftness          0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
-      "Improved Revive Pet        0.0%      0.1%     0.1%   1.00      kept |    0.0%   0.1% |    0.0%   0.1%",
-      "Improved Concussive Shot     0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
-      "Hawk Eye                  -3.4%      0.0%     0.0%   1.00      kept |    2.9%   0.0% |   -9.7%   0.0%",
-      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (17 entries written, 5 fitted)",
-      "wrote hunter/leveling/fightlab/bm-leveling-calibration.json"
+      "hunter mm-raid: no preset within 6% of the best build"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec bm-leveling --profile leveling-aoe --write --export --lookahead 16",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 13,
+     "seconds": 68,
      "tail": [
-      "| 45 | Survival | Counterattack | 1 | +40.7% |",
-      "| 46-47 | Survival | Entrapment | 2 | +41.1% |",
-      "| 48-49 | Survival | Clever Traps | 2 | +41.5% |",
-      "| 50 | Survival | Strider Kick | 1 | +47.5% |",
-      "| 51-52 | Survival | Expose Prey | 2 | +49.9% |",
-      "| 53-54 | Survival | Survivalist's Discipline | 2 | +50.5% |",
-      "| 55-59 | Survival | Lightning Reflexes | 5 | +52.8% |",
-      "| 60 | Survival | Lacerating Strikes | 1 | +55.0% |",
+      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
+      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
+      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
+      "Summon Hawk                     0.0%      0.0%     0.0%   1.00   noise",
+      "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Tracking               0.0%      0.0%     0.0%   1.00   noise",
+      "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
+      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
+      "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
+      "Rapid Recuperation             -0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Arcane Shot           -0.2%      0.2%     0.2%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (13 entries, 0 fitted) and hunter/raid/raidsim/mm-raid-calibration.json"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
+     "rc": 0,
+     "seconds": 29,
+     "tail": [
+      "| Endurance Training | Beast Mastery 1 | 4/5 | +0.25% | yes |",
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.24% | no |",
+      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
+      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
       "",
-      "exported opt-bm-leveling-leveling-aoe -> hunter/talents/forever/proposed-builds.json",
+      "exported opt-mm-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter/leveling/optimizer/bm-leveling-leveling-aoe.md"
+      "wrote hunter/raid/optimizer/mm-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json --levels 30,40,50,60 --fights 500 --set MOBS_PER_PULL=3",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r8.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 62,
+     "seconds": 10,
      "tail": [
-      "   vs cand-aoe-r5: time/kill 67.6s (+15.2%), fight 58.9s, deaths/100 28.1",
-      "   vs cand-aoe-r6: time/kill 56.4s (-3.8%), fight 56.8s, deaths/100 22.4",
-      "   vs cand-aoe-r7: time/kill 53.4s (-9.0%), fight 55.7s, deaths/100 21.0",
-      "L60: fight 63.3s (median 62.5, p90 74.7), downtime 3.6s, deaths/100 35.5, time/kill 68.6s, 52 kills/h, mana/kill 2734, shares Auto Shot 21%, Cat melee 20%, Serpent Sting 16%, Melee 16%, Volley 11%",
-      "   vs cand-aoe-r1: time/kill 69.2s (+1.0%), fight 69.1s, deaths/100 27.4",
-      "   vs cand-aoe-r2: time/kill 104.1s (+51.8%), fight 66.5s, deaths/100 58.8",
-      "   vs cand-aoe-r3: time/kill 110.2s (+60.7%), fight 63.5s, deaths/100 64.8",
-      "   vs cand-aoe-r4: time/kill 111.3s (+62.3%), fight 66.2s, deaths/100 65.8",
-      "   vs cand-aoe-r5: time/kill 66.9s (-2.4%), fight 63.9s, deaths/100 32.8",
-      "   vs cand-aoe-r6: time/kill 67.0s (-2.3%), fight 65.8s, deaths/100 32.0",
-      "   vs cand-aoe-r7: time/kill 65.5s (-4.5%), fight 65.8s, deaths/100 30.9",
-      "done in 62s"
+      "  cand-mm-raid-r8                             19/32/0  DPS    408.0 ±  17.9  threat      373  oom  53.4s  scorer +46.9%",
+      "  sim preset: Marksmanship                             DPS    400.3 ±  17.8  threat      369  oom  59.8s",
+      "  bm-mm-full-buffs-raid                       20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.8%",
+      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.8%",
+      "  cand-mm-raid-r1                             19/32/0  DPS    389.7 ±  17.7  threat      356  oom  65.0s  scorer +37.6%",
+      "  cand-mm-raid-r2                             16/35/0  DPS    386.8 ±  17.6  threat      356  oom  65.0s  scorer +36.9%",
+      "  cand-mm-raid-r3                             7/31/13  DPS    381.8 ±  17.6  threat      356  oom  65.0s  scorer +35.0%",
+      "  sim preset: Beast Mastery 35/16/0                    DPS    381.0 ±  13.7  threat      332  oom  53.2s",
+      "  sim preset: Marksmanship 0/39/12                     DPS    367.7 ±  15.3  threat      343  oom  54.4s",
+      "  sim preset: Survival 0/15/36                         DPS    342.6 ±  11.6  threat      318  oom  52.0s",
+      "  damage shares of bm-mm-raid: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 13%, Aimed Shot 10%, Pet: Auto Attack 7%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 0% | model sources: auto 46%, arcane 20%, serpent 13%, pet 10%, aimed 10%, multi 0% (unmatched 0%)",
+      "wrote hunter/raid/raidsim/mm-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r8.json --levels 30,40,50,60 --fights 1000 --set MOBS_PER_PULL=3",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
      "rc": 0,
-     "seconds": 144,
+     "seconds": 24,
      "tail": [
-      "   vs cand-aoe-r7: time/kill 56.5s (-6.0%), fight 56.2s, deaths/100 20.7",
-      "   vs cand-aoe-r8: time/kill 60.1s (+0.0%), fight 55.8s, deaths/100 22.3",
-      "L60: fight 64.2s (median 64.2, p90 75.9), downtime 3.6s, deaths/100 35.6, time/kill 70.2s, 51 kills/h, mana/kill 2721, shares Cat melee 21%, Auto Shot 20%, Melee 16%, Serpent Sting 16%, Volley 11%",
-      "   vs cand-aoe-r1: time/kill 68.2s (-2.8%), fight 68.6s, deaths/100 26.2",
-      "   vs cand-aoe-r2: time/kill 100.0s (+42.4%), fight 65.7s, deaths/100 59.3",
-      "   vs cand-aoe-r3: time/kill 111.0s (+58.2%), fight 62.6s, deaths/100 69.9",
-      "   vs cand-aoe-r4: time/kill 113.1s (+61.1%), fight 64.8s, deaths/100 72.3",
-      "   vs cand-aoe-r5: time/kill 65.4s (-6.8%), fight 64.9s, deaths/100 30.0",
-      "   vs cand-aoe-r6: time/kill 67.8s (-3.5%), fight 65.7s, deaths/100 33.3",
-      "   vs cand-aoe-r7: time/kill 66.3s (-5.6%), fight 65.6s, deaths/100 30.3",
-      "   vs cand-aoe-r8: time/kill 70.2s (+0.0%), fight 64.2s, deaths/100 35.6",
-      "done in 144s"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec bm-leveling --build opt-bm-leveling-leveling-aoe --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r8.json --levels 30,40,50,60 --fights 2000 --deltas 40,60 --write --name bm-leveling-aoe --set MOBS_PER_PULL=3",
-     "rc": 0,
-     "seconds": 290,
-     "tail": [
-      "   Improved Tracking        5  sim   +6.9% (fight   +1.3% +-1.1)  EV   +1.1%",
-      "   Improved Wing Clip       3  sim   -1.0% (fight   -0.9% +-1.1)  EV   +0.0%",
-      "   Lacerating Strikes       1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
-      "   Lightning Reflexes       5  sim   +5.5% (fight   -0.5% +-1.1)  EV   +4.1%",
-      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
-      "   Strider Kick             1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.6%",
-      "   Summon Hawk              1  sim  +11.7% (fight   +0.7% +-1.1)  EV   +5.2%",
-      "   Surefooted               3  sim   +5.6% (fight   +0.9% +-1.1)  EV   +1.5%",
-      "   Survivalist's Discipline 2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.8%",
-      "   Unleashed Fury           5  sim  +10.7% (fight   +2.3% +-1.6)  EV   +3.2%",
-      "done in 290s",
-      "wrote /home/user/wow-forever/hunter/leveling/fightlab/bm-leveling-aoe.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/calibrate.py hunter --spec melee-dps --profile leveling-st --builds opt-melee-dps-leveling-st /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json --levels 40,60 --fights 1500 --write --share-build /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json",
-     "rc": 0,
-     "seconds": 402,
-     "tail": [
-      "Careful Aim                2.7%      2.8%     2.8%   1.00      kept |    nan%   nan% |    2.7%   2.8%",
-      "Focused Fire               2.2%      1.6%     1.6%   1.00      kept |    nan%   nan% |    2.2%   1.6%",
-      "Improved Stings            2.0%      2.2%     2.2%   1.00      kept |    nan%   nan% |    2.0%   2.2%",
-      "Surefooted                 1.8%      2.0%     2.0%   1.00      kept |    1.8%   2.0% |    1.9%   2.0%",
-      "Deadly Aspects             1.7%      1.8%     1.8%   1.00      kept |    2.0%   1.9% |    1.3%   1.8%",
-      "Lightning Reflexes         0.9%      1.9%     0.9%   0.46    fitted |   -0.7%   0.3% |    2.4%   1.4%",
-      "Deflection                 0.8%      0.4%     0.8%   2.17    fitted |   -0.0%   0.8% |    1.7%   0.8%",
-      "Survivalist                0.1%      0.1%     0.1%   1.00      kept |    0.5%   0.1% |   -0.3%   0.1%",
-      "Bestial Swiftness          0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
-      "Improved Revive Pet        0.0%      0.2%     0.2%   1.00      kept |    nan%   nan% |    0.0%   0.2%",
-      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (14 entries written, 3 fitted)",
-      "wrote hunter/leveling/fightlab/melee-dps-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec melee-dps --profile leveling-st --write --export --lookahead 16 --seed leveling-melee",
-     "rc": 0,
-     "seconds": 26,
-     "tail": [
-      "| 36-40 | Marksmanship | Lethal Attacks | 5 | +34.0% |",
-      "| 41-43 | Marksmanship | Improved Stings | 3 | +35.5% |",
-      "| 44-48 | Marksmanship | Careful Aim | 5 | +37.2% |",
-      "| 49-50 | Survival | Survivalist's Discipline | 2 | +37.8% |",
-      "| 51-55 | Beast Mastery | Deadly Aspects | 5 | +38.9% |",
-      "| 56-57 | Beast Mastery | Focused Fire | 2 | +39.9% |",
-      "| 58-59 | Beast Mastery | Pathfinding | 2 | +40.5% |",
-      "| 60 | Survival | Lightning Reflexes | 1 | +40.7% |",
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.18% | no |",
+      "| Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |",
+      "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
+      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
       "",
-      "exported opt-melee-dps-leveling-st -> hunter/talents/forever/proposed-builds.json",
+      "exported opt-mm-raid-parse -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter/leveling/optimizer/melee-dps-leveling-st.md"
+      "wrote hunter/raid/optimizer/mm-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json --levels 20,30,40,50,60 --fights 500",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps opt-mm-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 18,
+     "seconds": 29,
      "tail": [
-      "   vs cand-melee-r3: time/kill 26.3s (+0.0%), fight 15.2s, deaths/100 0.0",
-      "L50: fight 15.5s (median 15.0, p90 18.0), downtime 4.2s, deaths/100 0.0, time/kill 27.6s, 130 kills/h, mana/kill 313, shares Cat melee 14%, Melee 14%, Serpent Sting 13%, Melee (off-hand) 13%, Raptor Strike 10%",
-      "   vs cand-melee-pet: time/kill 29.4s (+6.3%), fight 17.1s, deaths/100 0.0",
-      "   vs cand-melee-r1: time/kill 28.1s (+1.8%), fight 16.2s, deaths/100 0.0",
-      "   vs cand-melee-r2: time/kill 27.8s (+0.8%), fight 16.3s, deaths/100 0.0",
-      "   vs cand-melee-r3: time/kill 27.8s (+0.8%), fight 15.9s, deaths/100 0.0",
-      "L60: fight 16.4s (median 15.5, p90 20.7), downtime 4.9s, deaths/100 0.0, time/kill 29.4s, 123 kills/h, mana/kill 447, shares Serpent Sting 17%, Melee 14%, Cat melee 13%, Melee (off-hand) 12%, Immolation Trap 12%",
-      "   vs cand-melee-pet: time/kill 29.8s (+1.4%), fight 17.2s, deaths/100 0.0",
-      "   vs cand-melee-r1: time/kill 30.5s (+3.9%), fight 17.7s, deaths/100 0.0",
-      "   vs cand-melee-r2: time/kill 29.9s (+1.9%), fight 17.6s, deaths/100 0.0",
-      "   vs cand-melee-r3: time/kill 29.5s (+0.5%), fight 16.9s, deaths/100 0.0",
-      "done in 18s"
+      "== hunter mm-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
+      "  opt-mm-raid-raid-dps                        22/29/0  dummy   427.6  dummy60   466.3  raid   766.3  max   766.3  max60   792.4",
+      "  bm-mm-raid                                  22/29/0  dummy   425.3  dummy60   463.6  raid   768.7  max   768.7  max60   795.0",
+      "  opt-mm-raid-parse                           22/29/0  dummy   421.6  dummy60   459.7  raid   762.4  max   778.7  max60   804.9",
+      "  sim preset: Marksmanship                             dummy   400.3  dummy60   436.3  raid   815.6  max   815.6  max60   837.4",
+      "  bm-mm-full-buffs-raid                       20/31/0  dummy   394.9  dummy60   429.6  raid   808.5  max   808.5  max60   835.3",
+      "  sim preset: Beast Mastery 35/16/0                    dummy   381.0  dummy60   417.0  raid   698.2  max   712.7  max60   744.1",
+      "  sim preset: Marksmanship 0/39/12                     dummy   367.7  dummy60   400.5  raid   739.6  max   739.6  max60   763.9",
+      "  sim preset: Survival 0/15/36                         dummy   342.6  dummy60   370.9  raid   649.0  max   662.5  max60   685.0",
+      "wrote hunter/raid/raidsim/mm-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-pet.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r1.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r2.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r4.json --levels 20,30,40,50,60 --fights 1000",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --preset-candidates",
      "rc": 0,
-     "seconds": 45,
+     "seconds": 0,
      "tail": [
-      "   vs cand-melee-pet: time/kill 29.1s (+7.2%), fight 17.2s, deaths/100 0.0",
-      "   vs cand-melee-r1: time/kill 27.7s (+2.1%), fight 16.3s, deaths/100 0.0",
-      "   vs cand-melee-r2: time/kill 27.4s (+1.1%), fight 16.3s, deaths/100 0.0",
-      "   vs cand-melee-r3: time/kill 27.4s (+1.0%), fight 16.1s, deaths/100 0.0",
-      "   vs cand-melee-r4: time/kill 27.1s (+0.0%), fight 15.5s, deaths/100 0.0",
-      "L60: fight 16.4s (median 15.7, p90 20.4), downtime 4.6s, deaths/100 0.0, time/kill 29.0s, 124 kills/h, mana/kill 446, shares Serpent Sting 17%, Melee 13%, Cat melee 13%, Immolation Trap 12%, Melee (off-hand) 12%",
-      "   vs cand-melee-pet: time/kill 29.7s (+2.2%), fight 17.3s, deaths/100 0.0",
-      "   vs cand-melee-r1: time/kill 30.4s (+4.6%), fight 17.9s, deaths/100 0.0",
-      "   vs cand-melee-r2: time/kill 30.0s (+3.2%), fight 17.7s, deaths/100 0.0",
-      "   vs cand-melee-r3: time/kill 29.3s (+1.0%), fight 17.1s, deaths/100 0.0",
-      "   vs cand-melee-r4: time/kill 29.0s (+0.0%), fight 16.4s, deaths/100 0.0",
-      "done in 45s"
+      "hunter mm-lonewolf-raid: no preset within 6% of the best build"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py hunter --spec melee-dps --build opt-melee-dps-leveling-st --compare /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r3.json /home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-melee-r4.json --levels 20,30,40,50,60 --fights 2000 --deltas 40,60 --write --name melee-dps-opt",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 140,
+     "seconds": 29,
      "tail": [
-      "   Improved Tracking        5  sim   +2.3% (fight   +4.7% +-0.3)  EV   +2.4%",
-      "   Lethal Attacks           5  sim   +2.8% (fight   +4.0% +-0.3)  EV   +4.9%",
-      "   Lightning Reflexes       1  sim   +0.6% (fight   +0.7% +-0.2)  EV   +0.3%",
-      "   Pathfinding              2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +1.0%",
-      "   Predator's Edge          5  sim   +2.2% (fight   +4.1% +-0.3)  EV   +5.7%",
-      "   Resourcefulness          2  sim  +13.9% (fight   +0.1% +-0.3)  EV  +12.0%",
-      "   Savage Strikes           2  sim   +1.5% (fight   +2.0% +-0.2)  EV   +2.9%",
-      "   Strider Kick             1  sim   +0.6% (fight   +6.9% +-0.5)  EV  +10.1%",
-      "   Surefooted               3  sim   +1.0% (fight   +2.8% +-0.3)  EV   +2.0%",
-      "   Survivalist's Discipline 2  sim   +2.7% (fight   +6.8% +-0.4)  EV   +1.0%",
-      "done in 139s",
-      "wrote /home/user/wow-forever/hunter/leveling/fightlab/melee-dps-opt.md"
+      "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
+      "Rapid Recuperation              0.0%      0.0%     0.0%   1.00   noise",
+      "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
+      "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
+      "Clever Traps                    0.0%      0.0%     0.0%   1.00   noise",
+      "Deterrence                      0.0%      0.0%     0.0%   1.00   noise",
+      "Entrapment                      0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Wing Clip              0.0%      0.0%     0.0%   1.00   noise",
+      "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
+      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (11 entries, 1 fitted) and hunter/raid/raidsim/mm-lonewolf-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/sensitivity.py hunter --spec melee-dps --builds opt-melee-dps-leveling-st --levels 40,60 --fights 1000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid",
      "rc": 0,
-     "seconds": 44,
+     "seconds": 28,
      "tail": [
-      "weapons 20% better (blues) 60 {'opt-melee-dps-leveling-st': 28.5} {'opt-melee-dps-leveling-st': {}}",
-      "dungeon blues (item database) 40 {'opt-melee-dps-leveling-st': 23.3} {'opt-melee-dps-leveling-st': {}}",
-      "dungeon blues (item database) 60 {'opt-melee-dps-leveling-st': 27.5} {'opt-melee-dps-leveling-st': {}}",
-      "gear stats 20% better 40 {'opt-melee-dps-leveling-st': 25.1} {'opt-melee-dps-leveling-st': {}}",
-      "gear stats 20% better 60 {'opt-melee-dps-leveling-st': 28.7} {'opt-melee-dps-leveling-st': {}}",
-      "no caster mobs 40 {'opt-melee-dps-leveling-st': 26.7} {'opt-melee-dps-leveling-st': {}}",
-      "no caster mobs 60 {'opt-melee-dps-leveling-st': 29.1} {'opt-melee-dps-leveling-st': {}}",
-      "30% caster mobs 40 {'opt-melee-dps-leveling-st': 25.3} {'opt-melee-dps-leveling-st': {}}",
-      "30% caster mobs 60 {'opt-melee-dps-leveling-st': 28.6} {'opt-melee-dps-leveling-st': {}}",
-      "20% of mobs run at 20% health 40 {'opt-melee-dps-leveling-st': 25.7} {'opt-melee-dps-leveling-st': {}}",
-      "20% of mobs run at 20% health 60 {'opt-melee-dps-leveling-st': 29.1} {'opt-melee-dps-leveling-st': {}}",
-      "wrote /home/user/wow-forever/hunter/leveling/fightlab/sensitivity.md"
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
+      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
+      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
+      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
+      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
+      "",
+      "exported opt-mm-lonewolf-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
+      "",
+      "wrote hunter/raid/optimizer/mm-lonewolf-raid-raid-dps.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 5,
+     "tail": [
+      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +77.0%",
+      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +77.4%",
+      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +77.4%",
+      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +77.4%",
+      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    417.3 ±  21.1  threat      425  oom  59.9s  scorer +63.7%",
+      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    392.9 ±  17.9  threat      400  oom  58.9s  scorer +55.6%",
+      "  sim preset: Marksmanship                             DPS    353.7 ±  17.0  threat      361  oom  64.9s",
+      "  sim preset: Marksmanship 0/39/12                     DPS    333.1 ±  15.2  threat      341  oom  57.4s",
+      "  sim preset: Beast Mastery 35/16/0                    DPS    323.3 ±  13.0  threat      331  oom  44.9s",
+      "  sim preset: Survival 0/15/36                         DPS    308.7 ±  11.5  threat      316  oom  52.2s",
+      "  damage shares of mm-lone-wolf-raid: Auto Shot 54%, Arcane Shot 19%, Serpent Sting 15%, Aimed Shot 11%, Multi-Shot 0% | model sources: auto 54%, arcane 19%, serpent 15%, aimed 11%, multi 0% (unmatched 0%)",
+      "wrote hunter/raid/raidsim/mm-lonewolf-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid",
+     "rc": 0,
+     "seconds": 21,
+     "tail": [
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
+      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
+      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
+      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
+      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
+      "",
+      "exported opt-mm-lonewolf-raid-parse -> hunter/talents/forever/proposed-builds.json",
+      "",
+      "wrote hunter/raid/optimizer/mm-lonewolf-raid-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps opt-mm-lonewolf-raid-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 14,
+     "tail": [
+      "== hunter mm-lonewolf-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
+      "  opt-mm-lonewolf-raid-raid-dps                5/38/8  dummy   433.5  dummy60   465.6  raid   847.9  max   847.9  max60   863.5",
+      "  mm-lone-wolf-raid                            5/41/5  dummy   431.9  dummy60   462.7  raid   886.9  max   886.9  max60   916.1",
+      "  opt-mm-lonewolf-raid-parse                   5/37/9  dummy   423.0  dummy60   454.4  raid   828.3  max   847.9  max60   863.5",
+      "  sim preset: Marksmanship                             dummy   353.7  dummy60   379.6  raid   732.5  max   732.5  max60   750.2",
+      "  sim preset: Marksmanship 0/39/12                     dummy   333.1  dummy60   357.5  raid   689.0  max   689.0  max60   716.0",
+      "  sim preset: Beast Mastery 35/16/0                    dummy   323.3  dummy60   343.6  raid   589.8  max   603.9  max60   625.7",
+      "  sim preset: Survival 0/15/36                         dummy   308.7  dummy60   328.2  raid   593.5  max   607.0  max60   628.0",
+      "wrote hunter/raid/raidsim/mm-lonewolf-raid-environments.md"
      ],
      "stderr": []
     }
@@ -2939,7 +2875,7 @@
    "spec": "arms-2h-raid",
    "hand": "leveling-arms",
    "opt": "opt-arms-2h-raid-leveling-st",
-   "started": "2026-09-28T16:48:29",
+   "started": "2026-09-29T09:36:15",
    "steps": [
     "raid",
     "adopt"
@@ -2955,65 +2891,65 @@
      "top": [
       [
        "opt-arms-2h-raid-raid-dps",
-       217.7
+       217.5
       ],
       [
        "cand-arms-2h-raid-r4",
-       217.7
+       217.5
       ],
       [
        "arms-2h-raid",
-       216.3
+       216.1
       ],
       [
        "cand-arms-2h-raid-r1",
-       216.3
+       216.1
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "arms-2h-raid": {
-       "dummy": 216.26917971744732,
-       "dummy60": 204.77161673501212,
-       "raid": 455.1374378895387,
-       "max": 455.1374378895387,
-       "max60": 479.9586004492725
+       "dummy": 216.13783738667465,
+       "dummy60": 204.96209896515256,
+       "raid": 454.9655104664606,
+       "max": 454.9655104664606,
+       "max60": 479.99002392832176
       },
       "opt-arms-2h-raid-raid-dps": {
-       "dummy": 217.6571557696085,
-       "dummy60": 204.2544350454214,
-       "raid": 456.5301088264416,
-       "max": 456.5301088264416,
-       "max60": 480.7074031670291
+       "dummy": 217.5072070125033,
+       "dummy60": 204.44459821310065,
+       "raid": 456.36878223519756,
+       "max": 456.36878223519756,
+       "max60": 480.7278942242309
       },
       "opt-arms-2h-raid-parse": {
-       "dummy": 217.6571557696085,
-       "dummy60": 204.2544350454214,
-       "raid": 456.5301088264416,
-       "max": 456.5301088264416,
-       "max60": 480.7074031670291
+       "dummy": 217.5072070125033,
+       "dummy60": 204.44459821310065,
+       "raid": 456.36878223519756,
+       "max": 456.36878223519756,
+       "max60": 480.7278942242309
       },
       "sim preset: DPS": {
-       "dummy": 195.91047955241947,
-       "dummy60": 197.43164535569178,
-       "raid": 426.70417141159027,
-       "max": 426.70417141159027,
-       "max60": 453.1238346750678
+       "dummy": 195.53817794480528,
+       "dummy60": 197.6118762771159,
+       "raid": 426.61359763351817,
+       "max": 426.61359763351817,
+       "max60": 453.7653235653423
       },
       "sim preset: Fury 17/34/0": {
-       "dummy": 190.21286955940434,
-       "dummy60": 190.96295348656986,
-       "raid": 411.38013163052034,
-       "max": 411.38013163052034,
-       "max60": 436.5512597505671
+       "dummy": 189.79637617467844,
+       "dummy60": 190.79666232376218,
+       "raid": 411.18788680971556,
+       "max": 411.18788680971556,
+       "max60": 436.3067345159794
       },
       "sim preset: Arms 39/12/0": {
-       "dummy": 166.79659925534267,
-       "dummy60": 174.86418494248963,
-       "raid": 376.72826383030406,
-       "max": 376.72826383030406,
-       "max60": 384.4317842394367
+       "dummy": 166.43018333705191,
+       "dummy60": 175.00841511227006,
+       "raid": 375.6377326203451,
+       "max": 375.6377326203451,
+       "max60": 384.69064540695405
       }
      }
     },
@@ -3027,11 +2963,11 @@
      "top": [
       [
        "opt-fury-dw-raid-raid-dps",
-       256.6
+       256.5
       ],
       [
        "cand-fury-dw-raid-r7",
-       256.6
+       256.5
       ],
       [
        "fury-dw-raid",
@@ -3046,46 +2982,46 @@
      "adopted": null,
      "environments": {
       "fury-dw-raid": {
-       "dummy": 254.64749184798796,
-       "dummy60": 210.53907534440475,
-       "raid": 455.4069926160767,
-       "max": 455.4069926160767,
-       "max60": 458.74340328465564
+       "dummy": 254.64460273554153,
+       "dummy60": 210.8078212131297,
+       "raid": 455.1306189622107,
+       "max": 455.1306189622107,
+       "max60": 459.2251371007936
       },
       "opt-fury-dw-raid-raid-dps": {
-       "dummy": 256.58065594658655,
-       "dummy60": 217.2130461237099,
-       "raid": 441.23966747858515,
-       "max": 441.23966747858515,
-       "max60": 436.91385933461527
+       "dummy": 256.4865386258718,
+       "dummy60": 217.49326708664233,
+       "raid": 442.0534189755179,
+       "max": 442.0534189755179,
+       "max60": 437.3487440977109
       },
       "opt-fury-dw-raid-parse": {
-       "dummy": 256.58065594658655,
-       "dummy60": 217.2130461237099,
-       "raid": 441.23966747858515,
-       "max": 441.23966747858515,
-       "max60": 436.91385933461527
+       "dummy": 256.4865386258718,
+       "dummy60": 217.49326708664233,
+       "raid": 442.0534189755179,
+       "max": 442.0534189755179,
+       "max60": 437.3487440977109
       },
       "sim preset: DPS": {
-       "dummy": 240.40410702057852,
-       "dummy60": 213.3202299488166,
-       "raid": 438.79008370776535,
-       "max": 438.79008370776535,
-       "max60": 447.3522477900556
+       "dummy": 240.3355950696938,
+       "dummy60": 213.35663027014388,
+       "raid": 438.6602354539646,
+       "max": 438.6602354539646,
+       "max60": 447.5085572899534
       },
       "sim preset: Fury 17/34/0": {
-       "dummy": 222.80328758973752,
-       "dummy60": 193.2684131042223,
-       "raid": 408.11039766107234,
-       "max": 408.11039766107234,
-       "max60": 412.8582012870699
+       "dummy": 222.8987534966022,
+       "dummy60": 193.36753190042762,
+       "raid": 408.07078120947995,
+       "max": 408.07078120947995,
+       "max60": 413.57630959891867
       },
       "sim preset: Arms 39/12/0": {
-       "dummy": 143.46015089478902,
-       "dummy60": 143.31303340475895,
-       "raid": 274.85960509545635,
-       "max": 274.85960509545635,
-       "max60": 271.93004876554954
+       "dummy": 143.52503966923314,
+       "dummy60": 143.29465201888706,
+       "raid": 274.97796550745545,
+       "max": 274.97796550745545,
+       "max60": 271.9075766686781
       }
      }
     },
@@ -3110,8 +3046,8 @@
        1.0
       ],
       [
-       "sim preset: Protection",
-       0.951
+       "cand-prot-tank-hand-2026-09-26",
+       0.952
       ]
      ],
      "promoted": null,
@@ -3119,10 +3055,10 @@
      "environments": null
     }
    },
-   "seconds": 273,
+   "seconds": 163,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec arms-2h-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
@@ -3131,9 +3067,9 @@
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warrior --spec arms-2h-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec arms-2h-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 7,
+     "seconds": 12,
      "tail": [
       "Improved Heroic Strike          0.0%      0.0%     0.0%   1.00   noise",
       "Improved Rend                   0.0%      0.0%     0.0%   1.00   noise",
@@ -3146,54 +3082,54 @@
       "Improved Overpower              0.0%      0.0%     0.0%   1.00   noise",
       "Dual Wield Specialization       0.0%      0.0%     0.0%   1.00   noise",
       "Improved Berserker Rage         0.0%      0.2%     0.2%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warrior.manual.json (13 entries, 1 fitted) and warrior\\raid\\raidsim\\arms-2h-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warrior.manual.json (13 entries, 1 fitted) and warrior/raid/raidsim/arms-2h-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warrior --spec arms-2h-raid --profile raid-dps --write --export --seed arms-2h-raid",
-     "rc": 0,
-     "seconds": 16,
-     "tail": [
-      "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
-      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
-      "| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | no |",
-      "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
-      "| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |",
-      "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
-      "",
-      "exported opt-arms-2h-raid-raid-dps -> warrior\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote warrior\\raid\\optimizer\\arms-2h-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec arms-2h-raid --builds arms-2h-raid opt-arms-2h-raid-raid-dps F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-hand-2026-09-26.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r1.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r2.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r3.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r4.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec arms-2h-raid --profile raid-dps --write --export --seed arms-2h-raid",
      "rc": 0,
      "seconds": 10,
      "tail": [
-      "  opt-arms-2h-raid-raid-dps                   19/32/0  DPS    217.7 ±  23.3  threat      211  oom   0.0s  scorer +79.1%",
-      "  cand-arms-2h-raid-r4                        19/32/0  DPS    217.7 ±  23.3  threat      211  oom   0.0s  scorer +79.1%",
-      "  arms-2h-raid                                19/32/0  DPS    216.3 ±  23.0  threat      210  oom   0.0s  scorer +78.2%",
-      "  cand-arms-2h-raid-r1                        19/32/0  DPS    216.3 ±  23.0  threat      210  oom   0.0s  scorer +78.2%",
-      "  cand-arms-2h-raid-r3                        19/32/0  DPS    216.3 ±  23.0  threat      210  oom   0.0s  scorer +78.2%",
-      "  sim preset: DPS                                      DPS    195.9 ±  20.9  threat      190  oom   0.0s",
-      "  cand-arms-2h-raid-r2                        20/31/0  DPS    191.5 ±  20.2  threat      187  oom   0.0s  scorer +58.2%",
-      "  sim preset: Fury 17/34/0                             DPS    190.2 ±  21.6  threat      185  oom   0.0s",
-      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    184.2 ±  19.5  threat      179  oom   0.0s  scorer +41.6%",
-      "  sim preset: Arms 39/12/0                             DPS    166.8 ±  17.8  threat      159  oom   0.0s",
-      "  damage shares of arms-2h-raid: Auto Attack 44%, Execute 37%, Whirlwind 8%, Bloodthirst 5%, Deep Wound 5%, Dragonbreath Chili 1%, Hamstring 0% | model sources: white 45%, execute 37%, whirlwind 8%, bloodthirst 5%, deep_wounds 5% (unmatched 1%)",
-      "wrote warrior\\raid\\raidsim\\arms-2h-raid.md"
+      "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
+      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
+      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
+      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
+      "| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | no |",
+      "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
+      "| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |",
+      "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
+      "",
+      "exported opt-arms-2h-raid-raid-dps -> warrior/talents/forever/proposed-builds.json",
+      "",
+      "wrote warrior/raid/optimizer/arms-2h-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warrior --spec arms-2h-raid --profile parse --write --export --seed arms-2h-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --builds arms-2h-raid opt-arms-2h-raid-raid-dps /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r1.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r2.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r3.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r4.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 21,
+     "seconds": 2,
+     "tail": [
+      "  opt-arms-2h-raid-raid-dps                   19/32/0  DPS    217.5 ±  24.0  threat      211  oom   0.0s  scorer +79.1%",
+      "  cand-arms-2h-raid-r4                        19/32/0  DPS    217.5 ±  24.0  threat      211  oom   0.0s  scorer +79.1%",
+      "  arms-2h-raid                                19/32/0  DPS    216.1 ±  23.7  threat      210  oom   0.0s  scorer +78.2%",
+      "  cand-arms-2h-raid-r1                        19/32/0  DPS    216.1 ±  23.7  threat      210  oom   0.0s  scorer +78.2%",
+      "  cand-arms-2h-raid-r3                        19/32/0  DPS    216.1 ±  23.7  threat      210  oom   0.0s  scorer +78.2%",
+      "  sim preset: DPS                                      DPS    195.5 ±  21.3  threat      190  oom   0.0s",
+      "  cand-arms-2h-raid-r2                        20/31/0  DPS    191.0 ±  20.4  threat      187  oom   0.0s  scorer +58.2%",
+      "  sim preset: Fury 17/34/0                             DPS    189.8 ±  21.5  threat      184  oom   0.0s",
+      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    183.3 ±  19.4  threat      178  oom   0.0s  scorer +41.6%",
+      "  sim preset: Arms 39/12/0                             DPS    166.4 ±  17.7  threat      158  oom   0.0s",
+      "  damage shares of arms-2h-raid: Auto Attack 44%, Execute 36%, Whirlwind 8%, Bloodthirst 5%, Deep Wound 5%, Dragonbreath Chili 1% | model sources: white 45%, execute 37%, whirlwind 8%, bloodthirst 5%, deep_wounds 5% (unmatched 1%)",
+      "wrote warrior/raid/raidsim/arms-2h-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec arms-2h-raid --profile parse --write --export --seed arms-2h-raid",
+     "rc": 0,
+     "seconds": 11,
      "tail": [
       "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
       "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
@@ -3204,30 +3140,30 @@
       "| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |",
       "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
       "",
-      "exported opt-arms-2h-raid-parse -> warrior\\talents\\forever\\proposed-builds.json",
+      "exported opt-arms-2h-raid-parse -> warrior/talents/forever/proposed-builds.json",
       "",
-      "wrote warrior\\raid\\optimizer\\arms-2h-raid-parse.md"
+      "wrote warrior/raid/optimizer/arms-2h-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec arms-2h-raid --env environments --builds arms-2h-raid opt-arms-2h-raid-raid-dps opt-arms-2h-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --env environments --builds arms-2h-raid opt-arms-2h-raid-raid-dps opt-arms-2h-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 21,
+     "seconds": 7,
      "tail": [
       "== warrior arms-2h-raid environments (gear raid p1_arms.gear.json, max p1_arms.gear.json):",
-      "  opt-arms-2h-raid-raid-dps                   19/32/0  dummy   217.7  dummy60   204.3  raid   456.5  max   456.5  max60   480.7",
-      "  opt-arms-2h-raid-parse                      19/32/0  dummy   217.7  dummy60   204.3  raid   456.5  max   456.5  max60   480.7",
-      "  arms-2h-raid                                19/32/0  dummy   216.3  dummy60   204.8  raid   455.1  max   455.1  max60   480.0",
-      "  sim preset: DPS                                      dummy   195.9  dummy60   197.4  raid   426.7  max   426.7  max60   453.1",
-      "  sim preset: Fury 17/34/0                             dummy   190.2  dummy60   191.0  raid   411.4  max   411.4  max60   436.6",
-      "  sim preset: Arms 39/12/0                             dummy   166.8  dummy60   174.9  raid   376.7  max   376.7  max60   384.4",
-      "wrote warrior\\raid\\raidsim\\arms-2h-raid-environments.md"
+      "  opt-arms-2h-raid-raid-dps                   19/32/0  dummy   217.5  dummy60   204.4  raid   456.4  max   456.4  max60   480.7",
+      "  opt-arms-2h-raid-parse                      19/32/0  dummy   217.5  dummy60   204.4  raid   456.4  max   456.4  max60   480.7",
+      "  arms-2h-raid                                19/32/0  dummy   216.1  dummy60   205.0  raid   455.0  max   455.0  max60   480.0",
+      "  sim preset: DPS                                      dummy   195.5  dummy60   197.6  raid   426.6  max   426.6  max60   453.8",
+      "  sim preset: Fury 17/34/0                             dummy   189.8  dummy60   190.8  raid   411.2  max   411.2  max60   436.3",
+      "  sim preset: Arms 39/12/0                             dummy   166.4  dummy60   175.0  raid   375.6  max   375.6  max60   384.7",
+      "wrote warrior/raid/raidsim/arms-2h-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec fury-dw-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
@@ -3236,9 +3172,9 @@
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warrior --spec fury-dw-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec fury-dw-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 15,
+     "seconds": 23,
      "tail": [
       "Improved Rend                   0.0%      0.0%     0.0%   1.00   noise",
       "Improved Tactical Mastery       0.0%      0.0%     0.0%   1.00   noise",
@@ -3251,14 +3187,14 @@
       "Improved Berserker Rage         0.0%      0.2%     0.2%   1.00   noise",
       "Bloodthirst                    -0.0%      0.3%     0.3%   1.00   noise",
       "Spearing Strike                -3.1%      0.0%     0.0%   1.00    kept",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warrior.manual.json (13 entries, 0 fitted) and warrior\\raid\\raidsim\\fury-dw-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warrior.manual.json (13 entries, 0 fitted) and warrior/raid/raidsim/fury-dw-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warrior --spec fury-dw-raid --profile raid-dps --write --export --seed fury-dw-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec fury-dw-raid --profile raid-dps --write --export --seed fury-dw-raid",
      "rc": 0,
-     "seconds": 33,
+     "seconds": 19,
      "tail": [
       "| Last Stand | Protection 3 | 1/1 | +0.01% | no |",
       "| Blood Craze | Fury 3 | 3/3 | +0.00% | yes |",
@@ -3269,36 +3205,36 @@
       "| Two-Handed Weapon Specialization | Arms 4 | 1/3 | +0.00% | no |",
       "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
       "",
-      "exported opt-fury-dw-raid-raid-dps -> warrior\\talents\\forever\\proposed-builds.json",
+      "exported opt-fury-dw-raid-raid-dps -> warrior/talents/forever/proposed-builds.json",
       "",
-      "wrote warrior\\raid\\optimizer\\fury-dw-raid-raid-dps.md"
+      "wrote warrior/raid/optimizer/fury-dw-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec fury-dw-raid --builds fury-dw-raid opt-fury-dw-raid-raid-dps F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-hand-2026-09-26.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r1.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r2.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r3.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r4.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r5.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r6.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-fury-dw-raid-r7.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --builds fury-dw-raid opt-fury-dw-raid-raid-dps /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r1.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r2.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r3.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r4.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r5.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r6.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-fury-dw-raid-r7.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 12,
+     "seconds": 3,
      "tail": [
-      "  cand-fury-dw-raid-r2                        13/38/0  DPS    254.6 ±  19.1  threat      264  oom   0.0s  scorer +89.1%",
-      "  cand-fury-dw-raid-r6                        13/38/0  DPS    254.6 ±  19.1  threat      264  oom   0.0s  scorer +89.1%",
-      "  cand-fury-dw-raid-r5                        14/37/0  DPS    252.3 ±  19.5  threat      261  oom   0.0s  scorer +88.7%",
-      "  cand-fury-dw-raid-r4                        11/40/0  DPS    251.0 ±  19.1  threat      262  oom   0.0s  scorer +86.2%",
-      "  sim preset: DPS                                      DPS    240.4 ±  18.4  threat      250  oom   0.0s",
-      "  cand-fury-dw-raid-hand-2026-09-26           17/34/0  DPS    239.7 ±  19.9  threat      249  oom   0.0s  scorer +78.2%",
-      "  cand-fury-dw-raid-r3                        15/36/0  DPS    239.7 ±  18.4  threat      249  oom   0.0s  scorer +76.6%",
-      "  sim preset: Fury 17/34/0                             DPS    222.8 ±  18.8  threat      232  oom   0.0s",
-      "  cand-fury-dw-raid-r1                        29/22/0  DPS    209.5 ±  17.9  threat      215  oom   0.0s  scorer +60.7%",
-      "  sim preset: Arms 39/12/0                             DPS    143.5 ±  11.7  threat      142  oom   0.0s",
+      "  cand-fury-dw-raid-r2                        13/38/0  DPS    254.6 ±  19.4  threat      264  oom   0.0s  scorer +89.1%",
+      "  cand-fury-dw-raid-r6                        13/38/0  DPS    254.6 ±  19.4  threat      264  oom   0.0s  scorer +89.1%",
+      "  cand-fury-dw-raid-r5                        14/37/0  DPS    252.0 ±  19.6  threat      261  oom   0.0s  scorer +88.7%",
+      "  cand-fury-dw-raid-r4                        11/40/0  DPS    251.0 ±  18.9  threat      262  oom   0.0s  scorer +86.2%",
+      "  sim preset: DPS                                      DPS    240.3 ±  18.3  threat      250  oom   0.0s",
+      "  cand-fury-dw-raid-r3                        15/36/0  DPS    240.0 ±  18.1  threat      249  oom   0.0s  scorer +76.6%",
+      "  cand-fury-dw-raid-hand-2026-09-26           17/34/0  DPS    239.7 ±  20.0  threat      249  oom   0.0s  scorer +78.2%",
+      "  sim preset: Fury 17/34/0                             DPS    222.9 ±  18.9  threat      232  oom   0.0s",
+      "  cand-fury-dw-raid-r1                        29/22/0  DPS    209.1 ±  17.8  threat      215  oom   0.0s  scorer +60.7%",
+      "  sim preset: Arms 39/12/0                             DPS    143.5 ±  11.8  threat      143  oom   0.0s",
       "  damage shares of fury-dw-raid: Execute 41%, Auto Attack 40%, Heroic Strike 8%, Whirlwind 8%, Deep Wound 2%, Dragonbreath Chili 1% | model sources: execute 42%, white_mh 26%, white_oh 14%, heroic_strike 8%, whirlwind 8%, deep_wounds 2% (unmatched 1%)",
-      "wrote warrior\\raid\\raidsim\\fury-dw-raid.md"
+      "wrote warrior/raid/raidsim/fury-dw-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warrior --spec fury-dw-raid --profile parse --write --export --seed fury-dw-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec fury-dw-raid --profile parse --write --export --seed fury-dw-raid",
      "rc": 0,
-     "seconds": 26,
+     "seconds": 19,
      "tail": [
       "| Last Stand | Protection 3 | 1/1 | +0.01% | no |",
       "| Blood Craze | Fury 3 | 3/3 | +0.00% | yes |",
@@ -3309,30 +3245,30 @@
       "| Two-Handed Weapon Specialization | Arms 4 | 1/3 | +0.00% | no |",
       "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
       "",
-      "exported opt-fury-dw-raid-parse -> warrior\\talents\\forever\\proposed-builds.json",
+      "exported opt-fury-dw-raid-parse -> warrior/talents/forever/proposed-builds.json",
       "",
-      "wrote warrior\\raid\\optimizer\\fury-dw-raid-parse.md"
+      "wrote warrior/raid/optimizer/fury-dw-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec fury-dw-raid --env environments --builds fury-dw-raid opt-fury-dw-raid-raid-dps opt-fury-dw-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --env environments --builds fury-dw-raid opt-fury-dw-raid-raid-dps opt-fury-dw-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 30,
+     "seconds": 10,
      "tail": [
       "== warrior fury-dw-raid environments (gear raid p1_fury.gear.json, max p1_fury.gear.json):",
-      "  opt-fury-dw-raid-raid-dps                   14/37/0  dummy   256.6  dummy60   217.2  raid   441.2  max   441.2  max60   436.9",
-      "  opt-fury-dw-raid-parse                      14/37/0  dummy   256.6  dummy60   217.2  raid   441.2  max   441.2  max60   436.9",
-      "  fury-dw-raid                                13/38/0  dummy   254.6  dummy60   210.5  raid   455.4  max   455.4  max60   458.7",
-      "  sim preset: DPS                                      dummy   240.4  dummy60   213.3  raid   438.8  max   438.8  max60   447.4",
-      "  sim preset: Fury 17/34/0                             dummy   222.8  dummy60   193.3  raid   408.1  max   408.1  max60   412.9",
-      "  sim preset: Arms 39/12/0                             dummy   143.5  dummy60   143.3  raid   274.9  max   274.9  max60   271.9",
-      "wrote warrior\\raid\\raidsim\\fury-dw-raid-environments.md"
+      "  opt-fury-dw-raid-raid-dps                   14/37/0  dummy   256.5  dummy60   217.5  raid   442.1  max   442.1  max60   437.3",
+      "  opt-fury-dw-raid-parse                      14/37/0  dummy   256.5  dummy60   217.5  raid   442.1  max   442.1  max60   437.3",
+      "  fury-dw-raid                                13/38/0  dummy   254.6  dummy60   210.8  raid   455.1  max   455.1  max60   459.2",
+      "  sim preset: DPS                                      dummy   240.3  dummy60   213.4  raid   438.7  max   438.7  max60   447.5",
+      "  sim preset: Fury 17/34/0                             dummy   222.9  dummy60   193.4  raid   408.1  max   408.1  max60   413.6",
+      "  sim preset: Arms 39/12/0                             dummy   143.5  dummy60   143.3  raid   275.0  max   275.0  max60   271.9",
+      "wrote warrior/raid/raidsim/fury-dw-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec prot-tank --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec prot-tank --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
@@ -3341,10 +3277,12 @@
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py warrior --spec prot-tank --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec prot-tank --iterations 1500 --write",
      "rc": 0,
-     "seconds": 31,
+     "seconds": 24,
      "tail": [
+      "Concussion Blow                 0.0%      0.3%     0.3%   1.00   noise",
+      "Improved Tactical Mastery       0.0%      0.0%     0.0%   1.00   noise",
       "Vanguard                        0.0%      0.7%     0.7%   0.00  fitted",
       "Improved Shield Wall            0.0%      0.0%     0.0%   1.00   noise",
       "Improved Sunder Armor           0.0%      0.0%     0.0%   1.00   noise",
@@ -3352,51 +3290,49 @@
       "Toughness                       0.0%      0.4%     0.4%   1.00   noise",
       "Improved Shield Bash            0.0%      0.4%     0.4%   1.00   noise",
       "Improved Disarm                 0.0%      0.4%     0.4%   1.00   noise",
-      "Bloodthrill                     0.0%      0.4%     0.4%   1.00   noise",
-      "Improved Rend                   0.0%      0.0%     0.0%   1.00   noise",
       "Mortal Strike                   0.0%      0.5%     0.5%   1.00   noise",
       "Sweeping Strikes                0.0%      0.4%     0.4%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\warrior.manual.json (17 entries, 1 fitted) and warrior\\raid\\raidsim\\prot-tank-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warrior.manual.json (18 entries, 2 fitted) and warrior/raid/raidsim/prot-tank-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py warrior --spec prot-tank --profile raid-tank --write --export --seed prot-raid-tank F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-preset-protection.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec prot-tank --profile raid-tank --write --export --seed prot-raid-tank /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-preset-protection.json",
      "rc": 0,
-     "seconds": 35,
+     "seconds": 20,
      "tail": [
-      "| Impale | Arms 4 | 1/2 | +0.38% | no |",
+      "| Impale | Arms 4 | 1/2 | +0.36% | no |",
       "| Improved Shield Bash | Protection 5 | 1/2 | +0.30% | yes |",
-      "| Improved Bloodrage | Protection 2 | 1/2 | +0.28% | yes |",
+      "| Improved Bloodrage | Protection 2 | 1/2 | +0.27% | yes |",
       "| Blood Craze | Fury 3 | 1/3 | +0.25% | no |",
       "| Improved Disarm | Protection 4 | 1/3 | +0.20% | yes |",
-      "| Dual Wield Specialization | Fury 4 | 1/5 | +0.20% | no |",
+      "| Dual Wield Specialization | Fury 4 | 1/5 | +0.19% | no |",
       "| Bloodthrill | Arms 5 | 1/5 | +0.16% | no |",
-      "| Boundless Rage | Fury 3 | 1/3 | +0.13% | no |",
+      "| Improved Rend | Arms 1 | 1/3 | +0.16% | yes |",
       "",
-      "exported opt-prot-tank-raid-tank -> warrior\\talents\\forever\\proposed-builds.json",
+      "exported opt-prot-tank-raid-tank -> warrior/talents/forever/proposed-builds.json",
       "",
-      "wrote warrior\\raid\\optimizer\\prot-tank-raid-tank.md"
+      "wrote warrior/raid/optimizer/prot-tank-raid-tank.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py warrior --spec prot-tank --builds prot-raid-tank opt-prot-tank-raid-tank F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-26.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-27.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-preset-protection.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-r1.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-r2.json F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-prot-tank-r3.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec prot-tank --builds prot-raid-tank opt-prot-tank-raid-tank /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-27.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-preset-protection.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-r1.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-r2.json /home/user/wow-forever/warrior/raid/raidsim/candidates/cand-prot-tank-r3.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 15,
+     "seconds": 3,
      "tail": [
-      "== warrior prot-tank: 9 builds x 20000 iterations, warrior/protection launch.gear.json + protection.apl.json",
-      "  prot-raid-tank                              14/5/32  DPS    416.3 ±  24.5  threat      642  oom   0.0s  dtps  1210.1  tank-value  1.000  scorer +58.9%",
-      "  opt-prot-tank-raid-tank                     14/5/32  DPS    416.3 ±  24.5  threat      642  oom   0.0s  dtps  1210.1  tank-value  1.000  scorer +58.9%",
-      "  cand-prot-tank-r3                           14/5/32  DPS    416.3 ±  24.5  threat      642  oom   0.0s  dtps  1210.1  tank-value  1.000  scorer +58.9%",
-      "  sim preset: Protection                               DPS    394.3 ±  23.0  threat      607  oom   0.0s  dtps  1266.5  tank-value  0.951",
-      "  cand-prot-tank-hand-2026-09-26               5/5/41  DPS    397.5 ±  24.1  threat      600  oom   0.0s  dtps  1253.6  tank-value  0.950  scorer +50.1%",
-      "  sim preset: Protection 1/0/50                        DPS    390.7 ±  22.6  threat      599  oom   0.0s  dtps  1282.6  tank-value  0.939",
-      "  cand-prot-tank-hand-2026-09-27              14/5/32  DPS    382.5 ±  22.3  threat      551  oom   0.0s  dtps  1211.6  tank-value  0.929  scorer +47.6%",
-      "  cand-prot-tank-r2                           14/5/32  DPS    382.5 ±  22.3  threat      551  oom   0.0s  dtps  1211.6  tank-value  0.929  scorer +47.6%",
-      "  cand-prot-tank-r1                           32/3/16  DPS    297.9 ±  22.3  threat      387  oom   0.0s  dtps  1257.6  tank-value  0.783  scorer +21.7%",
-      "  damage shares of prot-raid-tank: Shield Slam 34%, Auto Attack 23%, Heroic Strike 17%, Revenge 14%, Thunder Clap 8%, Retribution Aura 1%, Thorns 1%, OtherActionRageGain 1% | model sources: white 37%, heroic_strike 28%, revenge 23%, thunder_clap 12% (unmatched 38%)",
-      "wrote warrior\\raid\\raidsim\\prot-tank.md"
+      "== warrior prot-tank: 9 builds x 3000 iterations, warrior/protection launch.gear.json + protection.apl.json",
+      "  prot-raid-tank                              14/5/32  DPS    425.8 ±  24.9  threat      649  oom   0.0s  dtps  1139.7  tank-value  1.000  scorer +58.5%",
+      "  opt-prot-tank-raid-tank                     14/5/32  DPS    425.8 ±  24.9  threat      649  oom   0.0s  dtps  1139.7  tank-value  1.000  scorer +58.5%",
+      "  cand-prot-tank-r3                           14/5/32  DPS    425.8 ±  24.9  threat      649  oom   0.0s  dtps  1139.7  tank-value  1.000  scorer +58.5%",
+      "  cand-prot-tank-hand-2026-09-26               5/5/41  DPS    407.0 ±  24.4  threat      607  oom   0.0s  dtps  1177.4  tank-value  0.952  scorer +49.8%",
+      "  sim preset: Protection                               DPS    403.8 ±  23.0  threat      614  oom   0.0s  dtps  1191.5  tank-value  0.952",
+      "  sim preset: Protection 1/0/50                        DPS    400.5 ±  22.4  threat      607  oom   0.0s  dtps  1202.4  tank-value  0.942",
+      "  cand-prot-tank-hand-2026-09-27              14/5/32  DPS    392.4 ±  22.3  threat      558  oom   0.0s  dtps  1136.4  tank-value  0.932  scorer +47.2%",
+      "  cand-prot-tank-r2                           14/5/32  DPS    392.4 ±  22.3  threat      558  oom   0.0s  dtps  1136.4  tank-value  0.932  scorer +47.2%",
+      "  cand-prot-tank-r1                           32/3/16  DPS    312.0 ±  22.9  threat      398  oom   0.0s  dtps  1181.8  tank-value  0.789  scorer +21.8%",
+      "  damage shares of prot-raid-tank: Shield Slam 33%, Auto Attack 24%, Heroic Strike 16%, Revenge 14%, Thunder Clap 7%, Rend 2%, Retribution Aura 1%, Thorns 1% | model sources: white 38%, heroic_strike 25%, revenge 23%, thunder_clap 12%, rend 3% (unmatched 37%)",
+      "wrote warrior/raid/raidsim/prot-tank.md"
      ],
      "stderr": []
     }
@@ -6368,12 +6304,20 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T05:59:01",
+  "date": "2026-09-29T10:15:38",
   "classes": [
-   "hunter"
+   "mage",
+   "priest",
+   "warlock",
+   "hunter",
+   "warrior",
+   "rogue",
+   "paladin",
+   "shaman",
+   "druid"
   ],
   "steps": [
-   "variants"
+   "regen"
   ],
   "fights": {
    "calibrate": 1500,
@@ -6381,8 +6325,443 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 2829,
+  "seconds": 862,
   "refresh": null,
-  "regen_log": []
+  "regen_log": [
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_fightlab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "formatted /home/user/wow-forever/hunter/talents/forever/proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written",
+     "formatted /home/user/wow-forever/warrior/talents/forever/proposed-builds.json",
+     "warrior: README section + leveling-arms note written",
+     "formatted /home/user/wow-forever/rogue/talents/forever/proposed-builds.json",
+     "rogue: README section + leveling-combat-swords note written",
+     "formatted /home/user/wow-forever/paladin/talents/forever/proposed-builds.json",
+     "paladin: README section + leveling-retribution note written",
+     "formatted /home/user/wow-forever/shaman/talents/forever/proposed-builds.json",
+     "shaman: README section + leveling-enhancement note written",
+     "formatted /home/user/wow-forever/druid/talents/forever/proposed-builds.json",
+     "druid: README section + leveling-feral note written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 1,
+    "seconds": 0,
+    "tail": [
+     "mage: raid sim section written (4 specs)",
+     "priest: raid sim section written (2 specs)",
+     "warlock: raid sim section written (5 specs)",
+     "hunter: raid sim section written (4 specs)",
+     "warrior: raid sim section written (4 specs)",
+     "rogue: raid sim section written (4 specs)"
+    ],
+    "stderr": [
+     "    main()",
+     "  File \"/home/user/wow-forever/_reference/data/render_raidsim_sections.py\", line 150, in main",
+     "    text = render(cls, reports, classic)",
+     "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+     "  File \"/home/user/wow-forever/_reference/data/render_raidsim_sections.py\", line 83, in render",
+     "    best = rows[0][\"dps\"] or 1.0",
+     "           ~~~~^^^",
+     "IndexError: list index out of range"
+    ]
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_heallab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "priest: healer lab section written (1 specs)",
+     "paladin: healer lab section written (1 specs)",
+     "shaman: healer lab section written (1 specs)",
+     "druid: healer lab section written (1 specs)",
+     "wrote _reference/heallab-summary.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_leveling_guides.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: leveling/guide.md written",
+     "priest: leveling/guide.md written",
+     "warlock: leveling/guide.md written",
+     "hunter: leveling/guide.md written",
+     "warrior: leveling/guide.md written",
+     "rogue: leveling/guide.md written",
+     "paladin: leveling/guide.md written",
+     "shaman: leveling/guide.md written",
+     "druid: leveling/guide.md written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_sim_presets.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: raid gear and consumables written",
+     "priest: raid gear and consumables written",
+     "warlock: raid gear and consumables written",
+     "hunter: raid gear and consumables written",
+     "warrior: raid gear and consumables written",
+     "rogue: raid gear and consumables written",
+     "paladin: raid gear and consumables written",
+     "shaman: raid gear and consumables written",
+     "druid: raid gear and consumables written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_rotations.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: raid and leveling rotations, DPS ranking written",
+     "priest: raid and leveling rotations, DPS ranking written",
+     "warlock: raid and leveling rotations, DPS ranking written",
+     "hunter: raid and leveling rotations, DPS ranking written",
+     "warrior: raid and leveling rotations, DPS ranking written",
+     "rogue: raid and leveling rotations, DPS ranking written",
+     "paladin: raid and leveling rotations, DPS ranking written",
+     "shaman: raid and leveling rotations, DPS ranking written",
+     "druid: raid and leveling rotations, DPS ranking written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/validate_builds.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "  ok   leveling-feral (9/31/11)",
+     "  ok   opt-feral-cat-dps-leveling-st (9/31/11)",
+     "  ok   opt-feral-cat-dps-solo-60 (9/31/11)",
+     "  ok   opt-balance-dps-leveling-st (36/2/13)",
+     "  ok   opt-resto-heal-raid-heal (11/5/35)",
+     "  ok   opt-balance-dps-raid-dps (34/6/11)",
+     "  ok   opt-balance-dps-parse (33/5/13)",
+     "  ok   opt-feral-cat-dps-raid-dps (9/35/7)",
+     "  ok   opt-feral-cat-dps-parse (9/35/7)",
+     "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
+     "",
+     "all builds valid"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_builds.py",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "rogue/classic-baseline: 5 build pages + README.md",
+     "rogue: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "priest/classic-baseline: 4 build pages + README.md",
+     "priest: 11 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "shaman/classic-baseline: 5 build pages + README.md",
+     "shaman: 14 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "mage/classic-baseline: 7 build pages + README.md",
+     "mage: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "warlock/classic-baseline: 4 build pages + README.md",
+     "warlock: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "druid/classic-baseline: 7 build pages + README.md",
+     "druid: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_new_builds.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/new-builds-survey.md",
+     "wrote the New spells and builds section of 9 raid READMEs"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_start_here.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "druid: START-HERE.md written",
+     "hunter: START-HERE.md written",
+     "mage: START-HERE.md written",
+     "paladin: START-HERE.md written",
+     "priest: START-HERE.md written",
+     "rogue: START-HERE.md written",
+     "shaman: START-HERE.md written",
+     "warlock: START-HERE.md written",
+     "warrior: START-HERE.md written",
+     "wrote START-HERE.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py mage --write",
+    "rc": 0,
+    "seconds": 155,
+    "tail": [
+     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.3% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.4% | +32.1% | +34.1% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-60 build (0/33/18) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.8% | +62.8% | +64.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py priest --write",
+    "rc": 0,
+    "seconds": 41,
+    "tail": [
+     "| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-50 build (8/0/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.5% | +72.6% |",
+     "| shadow-dps -> level-60 build (7/11/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py warlock --write",
+    "rc": 0,
+    "seconds": 83,
+    "tail": [
+     "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-50 build (35/6/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +21.3% | +21.9% | +22.1% | +22.1% | +27.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py hunter --write",
+    "rc": 0,
+    "seconds": 33,
+    "tail": [
+     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
+     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
+     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py warrior --write",
+    "rc": 0,
+    "seconds": 95,
+    "tail": [
+     "| fury-dw-raid -> level-20 build (3/8/0) | +1.0% | +5.4% | +8.7% | +7.4% | +14.3% | +19.8% | +23.9% | +30.0% | +30.8% | +31.9% | +33.3% |",
+     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +3.9% | +7.1% | +9.7% | +17.7% | +21.3% | +28.2% | +30.0% | +30.8% | +31.9% | +33.3% |",
+     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.9% | +21.3% | +28.2% | +30.0% | +30.8% | +31.9% | +33.3% |",
+     "| fury-dw-raid -> level-50 build (3/38/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.8% | +20.7% | +28.2% | +30.0% | +31.2% | +32.1% | +33.4% |",
+     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.8% | +20.7% | +28.2% | +30.0% | +30.9% | +32.1% | +33.4% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py rogue --write",
+    "rc": 0,
+    "seconds": 93,
+    "tail": [
+     "| combat-daggers-raid -> level-20 build (0/9/2) | +1.7% | +4.0% | +13.9% | +16.0% | +18.9% | +22.1% | +23.4% | +29.6% | +33.2% | +34.3% | +36.0% |",
+     "| combat-daggers-raid -> level-30 build (3/16/2) | +1.7% | +5.2% | +8.8% | +16.4% | +20.6% | +23.1% | +26.4% | +27.8% | +33.4% | +34.5% | +36.2% |",
+     "| combat-daggers-raid -> level-40 build (13/16/2) | +1.7% | +4.6% | +8.4% | +11.4% | +15.2% | +22.5% | +26.4% | +27.8% | +33.4% | +34.5% | +36.2% |",
+     "| combat-daggers-raid -> level-50 build (23/16/2) | +1.7% | +4.6% | +8.4% | +11.5% | +12.5% | +18.8% | +22.6% | +29.8% | +33.4% | +34.5% | +36.2% |",
+     "| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.2% | +12.2% | +15.3% | +18.1% | +22.0% | +24.4% | +27.6% | +29.8% | +31.4% | +36.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py paladin --write",
+    "rc": 0,
+    "seconds": 65,
+    "tail": [
+     "| ret-dps -> level-20 build (0/0/11) | +0.9% | +4.8% | +15.5% | +22.9% | +26.3% | +30.2% | +32.5% | +32.9% | +33.6% | +36.1% | +36.6% |",
+     "| ret-dps -> level-30 build (0/0/21) | +0.9% | +3.8% | +13.8% | +22.9% | +26.5% | +30.2% | +32.6% | +32.9% | +33.6% | +36.1% | +36.7% |",
+     "| ret-dps -> level-40 build (0/0/31) | +0.2% | +3.0% | +14.2% | +22.8% | +26.4% | +30.3% | +32.8% | +32.9% | +33.7% | +36.1% | +36.7% |",
+     "| ret-dps -> level-50 build (8/0/33) | +0.2% | +3.0% | +14.2% | +22.8% | +26.4% | +30.3% | +32.6% | +32.7% | +35.3% | +36.1% | +36.5% |",
+     "| ret-dps -> level-60 build (13/0/38) | +0.9% | +3.8% | +14.8% | +22.8% | +26.4% | +30.2% | +32.6% | +32.9% | +33.6% | +36.1% | +36.7% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py shaman --write",
+    "rc": 0,
+    "seconds": 116,
+    "tail": [
+     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.0% | +19.2% | +24.9% | +28.4% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-30 build (14/7/0) | +1.5% | +7.0% | +13.2% | +15.4% | +19.2% | +20.8% | +22.4% | +28.0% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-40 build (17/14/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.3% | +26.5% | +30.0% | +35.9% | +36.9% |",
+     "| elemental-dps -> level-50 build (30/11/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.0% | +26.6% | +33.1% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.1% | +26.7% | +32.1% | +35.6% | +37.9% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py druid --write",
+    "rc": 0,
+    "seconds": 176,
+    "tail": [
+     "| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |",
+     "| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| balance-dps -> level-50 build (35/6/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.7% | +57.5% | +58.5% | +59.4% |",
+     "| balance-dps -> level-60 build (36/2/13) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_optimizer_sections.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "updated hunter/leveling/README.md and hunter/raid/README.md",
+     "updated mage/leveling/README.md and mage/raid/README.md",
+     "updated warrior/leveling/README.md and warrior/raid/README.md",
+     "updated rogue/leveling/README.md and rogue/raid/README.md",
+     "updated priest/leveling/README.md and priest/raid/README.md",
+     "updated paladin/leveling/README.md and paladin/raid/README.md",
+     "updated shaman/leveling/README.md and shaman/raid/README.md",
+     "updated warlock/leveling/README.md and warlock/raid/README.md",
+     "updated druid/leveling/README.md and druid/raid/README.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/compare_effects.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "druid    buff=8 nerf=20 reworked=0 new=17 removed=13 same=6 unscored=0",
+     "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
+     "mage     buff=8 nerf=17 reworked=1 new=11 removed=6 same=13 unscored=4",
+     "paladin  buff=12 nerf=11 reworked=1 new=19 removed=13 same=7 unscored=0",
+     "priest   buff=10 nerf=14 reworked=1 new=14 removed=8 same=12 unscored=2",
+     "rogue    buff=16 nerf=9 reworked=0 new=10 removed=8 same=18 unscored=0",
+     "shaman   buff=12 nerf=14 reworked=2 new=17 removed=13 same=5 unscored=0",
+     "warlock  buff=6 nerf=18 reworked=1 new=23 removed=21 same=3 unscored=1",
+     "warrior  buff=10 nerf=15 reworked=2 new=11 removed=10 same=15 unscored=0"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/loop_audit.py",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "druid    flagged 32/99  open 1",
+     "hunter   flagged 31/58  open 5",
+     "mage     flagged 58/108  open 0",
+     "paladin  flagged 25/71  open 1",
+     "priest   flagged 24/56  open 3",
+     "rogue    flagged 27/66  open 5",
+     "shaman   flagged 30/69  open 3",
+     "warlock  flagged 23/63  open 8",
+     "warrior  flagged 13/68  open 1",
+     "total flagged: 263 -> _reference/data/scorer/loops/audit.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/build_launch_checklist.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/launch-checklist.md (206 per-build questions)"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/build_beta_checklist.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/beta-checklist.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/fightlab/summary.py --write",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/fightlab-summary.md"
+    ],
+    "stderr": []
+   }
+  ]
  }
 }

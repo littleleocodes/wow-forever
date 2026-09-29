@@ -81,7 +81,7 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 11 changes to the base rotation; third-seed check: smite-discipline-raid 223 -> 315 DPS (+41.1%), sim preset: Smite 222 -> 313 DPS (+40.8%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 11 changes to the base rotation; third-seed check: smite-discipline-raid 223 -> 315 DPS (+41.2%), sim preset: Smite 222 -> 313 DPS (+41.0%)):
   1. insert before the filler: cast Smite (+42.9%, pass 1)
   2. drop: if mana % ≥ 20%: cast Smite (+6.8%, pass 1)
   3. insert at the top: strict sequence: cast Inner Focus; cast Devouring Plague (+1.9%, pass 1)
@@ -93,7 +93,7 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
   9. threshold 2.5s -> 1.25s: if time left on Holy Fire < 2.5s: cast Holy Fire (+0.3%, pass 1)
   10. drop the condition: if mana % ≥ 50%: cast Penance (+3.2%, pass 2)
   11. threshold 10 -> 5: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+0.2%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 14 changes to the base rotation; third-seed check: smite-discipline-raid 441 -> 477 DPS (+8.1%), sim preset: Smite 439 -> 471 DPS (+7.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 14 changes to the base rotation; third-seed check: smite-discipline-raid 441 -> 477 DPS (+8.2%), sim preset: Smite 439 -> 471 DPS (+7.3%)):
   1. rank 4 below 50% mana, above: if mana % ≥ 20%: cast Smite (+8.7%, pass 1)
   2. insert at the top: if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain (+2.1%, pass 1)
   3. always rank 2 instead of rank 4: if mana % ≥ 20% and mana % < 50%: cast Smite (+1.2%, pass 1)

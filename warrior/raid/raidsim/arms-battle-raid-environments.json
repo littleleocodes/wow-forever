@@ -1,0 +1,62 @@
+{
+ "class": "warrior",
+ "spec": "arms-battle-raid",
+ "game": "forever",
+ "date": "2026-09-29",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+  "gear_max": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+  "iterations": 20000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  }
+ },
+ "results": [
+  {
+   "label": "arms-battle-raid",
+   "split": "34/17/0",
+   "ours": true,
+   "dps": {
+    "dummy": 237.74533331457104,
+    "dummy60": 237.09591353658578,
+    "raid": 467.34324435651683,
+    "max": 467.34324435651683,
+    "max60": 464.8148308134036
+   }
+  },
+  {
+   "label": "sim preset: Arms 39/12/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 227.24076946030385,
+    "dummy60": 239.04458337472974,
+    "raid": 476.18956761534395,
+    "max": 476.18956761534395,
+    "max60": 474.9848624239399
+   }
+  }
+ ]
+}

@@ -8,7 +8,7 @@ Classic's Alliance raid healer (Holy, with Protection/Retribution dips for raid 
 
 - **Leveling:** [Leveling — Retribution](leveling/builds/leveling-retribution.md) (15/0/36) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--0522533120133132-4)
 - **Raid damage, training dummy** (your own buffs only): [Two-handed Retribution](raid/builds/opt-ret-dps-raid-dps.md) (17/0/34), 368 DPS — [open the talent tree](https://talentsforever.com/paladin/60/55003003001--05225331001330321-4)
-- **Raid damage, full raid** (every raid buff): [Retribution — Seal of Command / Twist of Light](raid/builds/ret-full-buffs-raid.md) (10/8/33), 805 DPS — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-4)
+- **Raid damage, full raid** (every raid buff): [Retribution — Seal of Command / Twist of Light](raid/builds/ret-full-buffs-raid.md) (10/8/33), 804 DPS — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-4)
 - **Tanking:** [Protection — Tank](raid/builds/prot-tank.md) (0/23/28), the best tank value in the simulator — [open the talent tree](https://talentsforever.com/paladin/60/-0530513101301-530253300010303-4)
 - **Healing:** [Holy — Raid Healer](raid/builds/holy-raid-healer.md) (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-4)
 - **PvP:** [Shockadin — Holy/Retribution](pvp/builds/pvp-shockadin.md) (31/0/20) — [open the talent tree](https://talentsforever.com/paladin/60/05320213025101051--052052312-4)
@@ -64,7 +64,7 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
-| Two-handed Retribution (17/0/34) | 368 | 779 | [tree](https://talentsforever.com/paladin/60/55003003001--05225331001330321-4) |
+| Two-handed Retribution (17/0/34) | 368 | 778 | [tree](https://talentsforever.com/paladin/60/55003003001--05225331001330321-4) |
 | Retribution — Seal of Command / Twist of Light (17/0/34) | 285 | 581 | [tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-4) |
 
 What to press with the top build, Two-handed Retribution (the first line that is ready is the one you cast):
@@ -94,6 +94,7 @@ Before the pull: cast Righteous Fury; cast Seal of Righteousness; cast Holy Shie
 4. Cast Consecration
 5. Cast Holy Strike
 6. If health % < 10%: cast Lay on Hands
+7. Cast Retribution Aura
 
 ## Healing
 

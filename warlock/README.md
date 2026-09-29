@@ -42,8 +42,8 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| affliction-raid | [`opt-affliction-raid-raid-dps`](raid/builds/opt-affliction-raid-raid-dps.md) (ours: optimizer) | 572 | [`opt-affliction-raid-raid-dps`](raid/builds/opt-affliction-raid-raid-dps.md) (ours: optimizer) | 698 |
-| fire-destro-raid | [`destruction-fire-raid`](raid/builds/destruction-fire-raid.md) (ours: hand draft) | 558 | [`destruction-fire-raid`](raid/builds/destruction-fire-raid.md) (ours: hand draft) | 665 |
-| sb-raid | [`opt-sb-raid-raid-dps`](raid/builds/opt-sb-raid-raid-dps.md) (ours: optimizer) | 575 | [`ds-ruin-raid`](raid/builds/ds-ruin-raid.md) (ours: hand draft) | 693 |
+| affliction-raid | [`opt-affliction-raid-raid-dps`](raid/builds/opt-affliction-raid-raid-dps.md) (ours: optimizer) | 571 | [`opt-affliction-raid-raid-dps`](raid/builds/opt-affliction-raid-raid-dps.md) (ours: optimizer) | 697 |
+| fire-destro-raid | [`destruction-fire-raid`](raid/builds/destruction-fire-raid.md) (ours: hand draft) | 559 | [`destruction-fire-raid`](raid/builds/destruction-fire-raid.md) (ours: hand draft) | 664 |
+| sb-raid | [`opt-sb-raid-raid-dps`](raid/builds/opt-sb-raid-raid-dps.md) (ours: optimizer) | 574 | [`ds-ruin-raid`](raid/builds/ds-ruin-raid.md) (ours: hand draft) | 694 |
 | demonology-raid | [`demonology-pact-raid`](raid/builds/demonology-pact-raid.md) (ours: hand draft) | 622 | [`demonology-pact-raid`](raid/builds/demonology-pact-raid.md) (ours: hand draft) | 761 |
 | incinerate-raid | [`destruction-incinerate-raid`](raid/builds/destruction-incinerate-raid.md) (ours: hand draft) | 484 | [`destruction-incinerate-raid`](raid/builds/destruction-incinerate-raid.md) (ours: hand draft) | 560 |

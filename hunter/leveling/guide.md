@@ -64,5 +64,5 @@ Time per kill relative to the main spec's optimizer build on the same mobs (posi
 
 ## Not simulated
 
-runners, adds, traps, kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
+runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
 

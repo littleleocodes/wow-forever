@@ -2,9 +2,9 @@
  "class": "mage",
  "spec": "frostfire-raid",
  "game": "forever",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
   "gear_max": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
@@ -39,11 +39,11 @@
    "split": "0/35/16",
    "ours": true,
    "dps": {
-    "dummy": 513.7790204620401,
-    "dummy60": 614.0023410095366,
-    "raid": 590.3790286732509,
-    "max": 590.3790286732509,
-    "max60": 634.7336644907848
+    "dummy": 513.77902046204,
+    "dummy60": 614.0023410095371,
+    "raid": 590.3790286732503,
+    "max": 590.3790286732503,
+    "max60": 634.7336644907847
    }
   }
  ]

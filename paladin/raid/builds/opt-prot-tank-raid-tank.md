@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.7% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +46.9% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 8.8 points of score in this model.
+1. **Champion of the Light** — Removing it costs 8.4 points of score in this model.
 2. **Deflection** — Removing it costs 5.5 points of score in this model.
 3. **Improved Righteous Fury** — Removing it costs 5.0 points of score in this model.
 4. **Vengeance** — Removing it costs 4.7 points of score in this model.
-5. **Vindication** — Removing it costs 3.7 points of score in this model.
-6. **Conviction** — Removing it costs 3.1 points of score in this model.
-7. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
-8. **Anticipation** — Removing it costs 3.0 points of score in this model.
+5. **Vindication** — Removing it costs 3.6 points of score in this model.
+6. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
+7. **Anticipation** — Removing it costs 3.0 points of score in this model.
+8. **Conviction** — Removing it costs 3.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,19 +64,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 558 | 976 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 558 | 976 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.921 | -7.9% | 486 | 1007 |
-| 4 | *P4 Prot* | community simulator | - | 0.897 | -10.3% | 499 | 1083 |
-| 5 | *P5 Prot* | community simulator | - | 0.892 | -10.8% | 492 | 1083 |
+| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 561 | 976 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 561 | 976 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.919 | -8.1% | 490 | 1010 |
+| 4 | *P4 Prot* | community simulator | - | 0.899 | -10.1% | 503 | 1081 |
+| 5 | *P5 Prot* | community simulator | - | 0.893 | -10.7% | 497 | 1083 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: opt-prot-tank-raid-tank 451 -> 494 DPS (+9.5%), sim preset: Protection 0/45/6 371 -> 402 DPS (+8.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: prot-tank 451 -> 496 DPS (+10.0%), sim preset: Protection 0/45/6 371 -> 405 DPS (+9.1%)):
   1. insert before the filler: if health % < 10%: cast Lay on Hands (+7.8%, pass 1)
   2. drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement (+4.3%, pass 1)
   3. insert at the top: cast Holy Shield (+1.3%, pass 1)
   4. insert at the top: cast Templar's Bulwark (+1.4%, pass 2)
+  5. insert before the filler: cast Retribution Aura (+0.2%, pass 3)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
@@ -85,9 +86,10 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 1 | cast Templar's Bulwark | 0.5 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.5 |
-| 4 | cast Consecration | 7.2 |
-| 5 | cast Holy Strike | 6.0 |
+| 4 | cast Consecration | 6.5 |
+| 5 | cast Holy Strike | 5.6 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.5 |
+| 7 | cast Retribution Aura | 25.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -95,14 +97,14 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Auto Attack | 26% |
+| Auto Attack | 25% |
 | Seal of Righteousness | 16% |
-| Consecration | 16% |
+| Consecration | 14% |
 | Lay on Hands | 13% |
 | Judgement of Righteousness | 12% |
-| Holy Strike | 11% |
+| Holy Strike | 10% |
+| Retribution Aura | 5% |
 | OtherActionManaGain | 4% |
-| Retribution Aura | 2% |
 | Thorns | 1% |
 
 ## Notes

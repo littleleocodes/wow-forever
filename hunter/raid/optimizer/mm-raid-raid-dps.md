@@ -9,10 +9,10 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Bestial Discipline | Beast Mastery | 5 | +3.55% | manual |
-| Trueshot Aura | Marksmanship | 4 | +2.47% | manual |
-| Efficiency | Marksmanship | 2 | +1.28% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +1.24% | manual |
+| Bestial Discipline | Beast Mastery | 5 | +3.53% | manual |
+| Trueshot Aura | Marksmanship | 4 | +2.48% | manual |
+| Efficiency | Marksmanship | 2 | +1.27% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +1.23% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
 | Focused Fire | Beast Mastery | 2 | +0.91% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.89% | manual |
@@ -20,12 +20,12 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Lethal Attacks | Marksmanship | 1 | +0.85% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +0.80% | manual |
 | Careful Aim | Marksmanship | 2 | +0.78% | manual |
-| Improved Stings | Marksmanship | 2 | +0.70% | manual |
+| Improved Stings | Marksmanship | 2 | +0.71% | manual |
 | Resourcefulness | Survival | 5 | +0.63% | manual |
 | Unleashed Fury | Beast Mastery | 3 | +0.32% | manual |
 | Frenzy | Beast Mastery | 6 | +0.30% | manual |
-| Improved Arcane Shot | Marksmanship | 3 | +0.22% | manual |
-| Barrage | Marksmanship | 5 | +0.21% | manual |
+| Improved Arcane Shot | Marksmanship | 3 | +0.23% | manual |
+| Barrage | Marksmanship | 5 | +0.22% | manual |
 | Ferocity | Beast Mastery | 4 | +0.19% | manual |
 | Endurance Training | Beast Mastery | 1 | +0.19% | manual |
 | Intimidation | Beast Mastery | 5 | +0.11% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Hawk Eye | Marksmanship | 1 | +0.00% | manual |
 | Improved Concussive Shot | Marksmanship | 1 | +0.00% | manual |
 
-## Optimized build: 22/29/0  score +54.59%  (dps x1.546, sustain x1.110, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.470  — use this to compare models with different pet shares.
+## Optimized build: 22/29/0  score +54.48%  (dps x1.545, sustain x1.110, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.469  — use this to compare models with different pet shares.
 
 ```
   Beast Mastery: Deadly Aspects 5, Endurance Training 3, Focused Fire 2, Unleashed Fury 5, Ferocity 5, Bestial Discipline 2
@@ -52,7 +52,7 @@ Absolute DPS index (character alone, no talents = 1.00): 1.470  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Lightning Reflexes | Survival 6 | 1/5 | +1.86% | no |
+| Lightning Reflexes | Survival 6 | 1/5 | +1.85% | no |
 | Bestial Wrath | Beast Mastery 7 | 1/1 | +1.77% | no |
 | Ranged Weapon Specialization | Marksmanship 6 | 5/5 | +1.26% | yes |
 | Resourcefulness | Survival 5 | 1/2 | +0.82% | no |

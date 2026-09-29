@@ -82,13 +82,13 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 5 changes to the base rotation; third-seed check: arcane-blast-raid 515 -> 541 DPS (+5.2%), sim preset: Arcane DPS 512 -> 534 DPS (+4.1%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: arcane-blast-raid 514 -> 541 DPS (+5.3%), sim preset: Arcane DPS 512 -> 533 DPS (+4.2%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+2.2%, pass 1)
   2. drop 'mana % < 40%' from the condition: if (stacks of Arcane Blast ≥ 1.5 or mana % < 40%): cast Frostbolt (+0.4%, pass 1)
   3. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast + threshold 110 -> 220: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   4. drop the condition: if mana ≥ (time left in the fight × 220): cast Fire Blast (+2.9%, pass 2)
   5. move down below 'use every other cooldown when ready': cast Fire Blast (+0.4%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: arcane-blast-raid 591 -> 619 DPS (+4.7%), sim preset: Arcane DPS 589 -> 609 DPS (+3.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: arcane-blast-raid 591 -> 619 DPS (+4.8%), sim preset: Arcane DPS 589 -> 609 DPS (+3.5%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)

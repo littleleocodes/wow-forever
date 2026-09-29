@@ -82,7 +82,7 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 7 changes to the base rotation; third-seed check: assassination-seal-fate-raid 148 -> 413 DPS (+179.3%), sim preset: Mutilate 335 -> 377 DPS (+12.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 7 changes to the base rotation; third-seed check: assassination-seal-fate-raid 148 -> 413 DPS (+179.2%), sim preset: Mutilate 335 -> 377 DPS (+12.4%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+8.6%, pass 1)
   2. threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.8%, pass 1)
   3. insert at the top: cast Backstab (+1.6%, pass 1)
@@ -90,7 +90,7 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
   5. threshold 6 -> 12: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.2%, pass 1)
   6. threshold 4 -> 5: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood + drop 'combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9' from the condition: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-28, 1 changes to the base rotation; third-seed check: assassination-seal-fate-raid 294 -> 693 DPS (+135.8%), sim preset: Mutilate 652 -> 658 DPS (+0.9%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 1 changes to the base rotation; third-seed check: assassination-seal-fate-raid 294 -> 693 DPS (+135.8%), sim preset: Mutilate 652 -> 659 DPS (+1.1%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) casts/min |

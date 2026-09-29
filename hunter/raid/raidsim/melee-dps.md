@@ -4,21 +4,22 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `melee-survival-raid` | 5/11/35 | 380 | 24 | +0.0% | 388 | 0 | +121.1% |
-| `opt-melee-dps-raid-dps` | 5/15/31 | 350 | 24 | -8.0% | 357 | 0 | +123.7% |
+| `melee-survival-raid` | 5/11/35 | 459 | 27 | +0.0% | 466 | 0 | +121.1% |
+| `opt-melee-dps-raid-dps` | 5/15/31 | 433 | 27 | -5.7% | 440 | 0 | +123.7% |
 
 ## Damage shares (`melee-survival-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Attack | 40.9% |
-| Raptor Strike | 18.3% |
-| Immolation Trap | 14.1% |
-| Mongoose Bite | 13.6% |
-| Strider Kick | 10.6% |
-| Dragonbreath Chili | 2.5% |
+| Auto Attack | 42.0% |
+| Raptor Strike | 16.0% |
+| Mongoose Bite | 14.1% |
+| Immolation Trap | 11.3% |
+| Strider Kick | 8.3% |
+| Wing Clip | 5.5% |
+| Dragonbreath Chili | 2.7% |
 
-Mapped onto the spec model's sources: `melee` 32%, `raptor_strike` 22%, `melee_oh` 17%, `mongoose_bite` 16%, `strider_kick` 13%; 17% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `melee` 34%, `raptor_strike` 20%, `melee_oh` 18%, `mongoose_bite` 18%, `strider_kick` 10%; 20% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:

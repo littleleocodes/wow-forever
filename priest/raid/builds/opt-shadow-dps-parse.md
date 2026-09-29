@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +350.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +337.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Core talents (priority order)
 
-1. **Mind Flay** — Removing it costs 204.6 points of score in this model.
-2. **Shadowform** — Removing it costs 167.1 points of score in this model.
-3. **Shadow Weaving** — Removing it costs 38.9 points of score in this model.
-4. **Darkness** — Removing it costs 38.9 points of score in this model.
-5. **Improved Mind Flay** — Removing it costs 37.8 points of score in this model.
-6. **Shadow Focus** — Removing it costs 19.9 points of score in this model.
-7. **Improved Mind Blast** — Removing it costs 11.3 points of score in this model.
-8. **Improved Shadow Word: Pain** — Removing it costs 10.8 points of score in this model.
+1. **Mind Flay** — Removing it costs 192.0 points of score in this model.
+2. **Shadowform** — Removing it costs 162.5 points of score in this model.
+3. **Shadow Weaving** — Removing it costs 37.7 points of score in this model.
+4. **Darkness** — Removing it costs 37.7 points of score in this model.
+5. **Improved Mind Flay** — Removing it costs 35.4 points of score in this model.
+6. **Shadow Focus** — Removing it costs 19.3 points of score in this model.
+7. **Improved Mind Blast** — Removing it costs 10.7 points of score in this model.
+8. **Improved Shadow Word: Pain** — Removing it costs 10.3 points of score in this model.
 
 ## Rotation
 

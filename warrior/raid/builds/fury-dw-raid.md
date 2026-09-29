@@ -75,15 +75,15 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 257 | +0.0% | 441 | -3.1% | 0 s |
-| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 255 | -0.8% | 455 | +0.0% | 0 s |
+| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 256 | +0.0% | 442 | -2.9% | 0 s |
+| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 255 | -0.7% | 455 | +0.0% | 0 s |
 | 3 | *DPS* | community simulator | - | 240 | -6.3% | 439 | -3.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 223 | -13.2% | 408 | -10.4% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 143 | -44.1% | 275 | -39.6% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 223 | -13.1% | 408 | -10.3% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 144 | -44.0% | 275 | -39.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 15 changes to the base rotation; third-seed check: opt-fury-dw-raid-raid-dps 183 -> 257 DPS (+40.2%), sim preset: DPS 171 -> 240 DPS (+40.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 15 changes to the base rotation; third-seed check: opt-fury-dw-raid-raid-dps 183 -> 256 DPS (+40.2%), sim preset: DPS 171 -> 240 DPS (+40.4%)):
   1. insert at the top: if time left in the fight ≤ 15s: cast Recklessness (+14.7%, pass 1)
   2. insert before the filler: if stacks of Sunder Armor < 5: cast Sunder Armor (+12.1%, pass 1)
   3. threshold 15s -> 22.5s: if time left in the fight ≤ 15s: cast Recklessness (+1.5%, pass 1)
@@ -99,7 +99,7 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
   13. threshold 40 -> 60: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike (+0.2%, pass 1)
   14. drop the condition: if number of targets > 1: cast Whirlwind (+0.4%, pass 1)
   15. threshold 3 -> 4: if stacks of Sunder Armor < 3 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor + move to the top: if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 5 changes to the base rotation; third-seed check: opt-fury-dw-raid-raid-dps 383 -> 441 DPS (+15.3%), sim preset: DPS 377 -> 439 DPS (+16.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: opt-fury-dw-raid-raid-dps 383 -> 441 DPS (+15.2%), sim preset: DPS 378 -> 439 DPS (+16.2%)):
   1. drop: if false: cast Recklessness (+11.1%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+2.5%, pass 1)
   3. threshold 90 -> 45: if rage < 90: cast Bloodrage (+0.7%, pass 1)

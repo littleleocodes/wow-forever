@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered Warlock effects (Forever). Tags: mainschool = the sources a chosen Demonic Sacrifice / Master Demonologist school buff applies to; pet = demon sources (Demonic Sacrifice disables them, Demonic Pact re-enables them); filler = the fire spec's nuke slot that Incinerate replaces; ability:Drains = Drain Life/Drain Soul.",
   "Improved Corruption": {
-    "note": "-0.4s/rank Corruption cast (instant at 5/5) and +2%/rank Corruption damage: a 2s cast every 18s is ~11% of casting time, so each rank frees ~2.2% more filler casting time (Shadow Bolt / Drain Life / Incinerate); instant Corruption is also safer pulling while leveling. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 13.2% time per kill in the simulator (scorer said 26.6% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (13.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 4.4% DPS in the simulator (scorer said 4.4% on the same scale); already within tolerance, raid effects split off unchanged (4.4%). Other modes unchanged.",
+    "note": "-0.4s/rank Corruption cast (instant at 5/5) and +2%/rank Corruption damage: a 2s cast every 18s is ~11% of casting time, so each rank frees ~2.2% more filler casting time (Shadow Bolt / Drain Life / Incinerate); instant Corruption is also safer pulling while leveling. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 13.2% time per kill in the simulator (scorer said 26.6% on the same scale); leveling-st/solo-60 values scaled x0.53 to match (13.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 4.5% DPS in the simulator (scorer said 4.6% on the same scale); already within tolerance, raid effects split off unchanged (4.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -194,7 +194,7 @@
     ]
   },
   "Improved Life Tap": {
-    "note": "+10%/rank Life Tap mana: roughly half of a warlock's mana comes from Life Tap -> +4%/rank mana budget. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "+10%/rank Life Tap mana: roughly half of a warlock's mana comes from Life Tap -> +4%/rank mana budget. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.3%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.5% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -269,7 +269,7 @@
     ]
   },
   "Suppression": {
-    "note": "+1%/rank spell hit and -4%/rank threat (parsed hit kept; threat as raid utility). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 4.0% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.59 to match (4.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 4.7% DPS in the simulator (scorer said 5.4% on the same scale); already within tolerance, raid effects split off unchanged (5.4%). Other modes unchanged.",
+    "note": "+1%/rank spell hit and -4%/rank threat (parsed hit kept; threat as raid utility). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 4.0% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x0.59 to match (4.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 4.8% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -466,7 +466,7 @@
     ]
   },
   "Amplify Curse": {
-    "note": "+50% next Bane of Agony every 3 min: ~+5% Agony damage. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "note": "+50% next Bane of Agony every 3 min: ~+5% Agony damage. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 1.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -564,7 +564,7 @@
     ]
   },
   "Nightfall": {
-    "note": "2%/rank chance per Corruption/drain tick for an instant Shadow Bolt: ~one free cast per 75s at 2/2 in a raid -> +1%/rank Shadow Bolt throughput; +3%/rank while leveling with Drain Life ticking every second. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
+    "note": "2%/rank chance per Corruption/drain tick for an instant Shadow Bolt: ~one free cast per 75s at 2/2 in a raid -> +1%/rank Shadow Bolt throughput; +3%/rank while leveling with Drain Life ticking every second. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -607,18 +607,18 @@
       {
         "channel": "dmg",
         "scope": ["ability:Shadow Bolt"],
-        "per_rank": 0.01,
-        "modes": ["raid"],
-        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
-        "specs": ["affliction-raid"]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["ability:Shadow Bolt"],
         "per_rank": 0.004037,
         "modes": ["raid"],
         "values": [0.004037, 0.008073, 0.01211, 0.016147, 0.020184],
         "specs": ["fire-destro-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["ability:Shadow Bolt"],
+        "per_rank": 0.01,
+        "modes": ["raid"],
+        "values": [0.01, 0.02, 0.03, 0.04, 0.05],
+        "specs": ["affliction-raid"]
       },
       {
         "channel": "dmg",
@@ -1147,7 +1147,7 @@
     ]
   },
   "Fel Vitality": {
-    "note": "+5%/rank your max mana and pet health/mana. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -3.5% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 4.4% on the same scale); raid values scaled x0.00 to match (4.3%). Other modes unchanged.",
+    "note": "+5%/rank your max mana and pet health/mana. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -3.5% time per kill in the simulator (scorer said 0.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.5% DPS in the simulator (scorer said 4.3% on the same scale); raid values scaled x0.00 to match (4.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1361,7 +1361,7 @@
     ]
   },
   "Demonic Sacrifice": {
-    "note": "Raid: sacrifice the Imp (+15% Shadow) or Succubus (+15% Fire) for 2h and lose the pet's damage. Leveling keeps the Voidwalker, so no value there. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 13.2% DPS in the simulator (scorer said 14.7% on the same scale); already within tolerance, raid effects split off unchanged (14.7%). Other modes unchanged.",
+    "note": "Raid: sacrifice the Imp (+15% Shadow) or Succubus (+15% Fire) for 2h and lose the pet's damage. Leveling keeps the Voidwalker, so no value there. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 13.1% DPS in the simulator (scorer said 14.6% on the same scale); already within tolerance, raid effects split off unchanged (14.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "disable",
@@ -1480,7 +1480,7 @@
     ]
   },
   "Decimation": {
-    "note": "-45%/rank Soul Fire cooldown (its 6s cast and shard cost, not the cooldown, limit how often it is worth casting: ~+30%/rank Soul Fire output) and +3%/rank Shadow Bolt/Searing Pain damage under 35% health (~a third of a fight). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "note": "-45%/rank Soul Fire cooldown (its 6s cast and shard cost, not the cooldown, limit how often it is worth casting: ~+30%/rank Soul Fire output) and +3%/rank Shadow Bolt/Searing Pain damage under 35% health (~a third of a fight). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1616,7 +1616,7 @@
     ]
   },
   "Soul Link": {
-    "note": "30% of damage taken goes to the pet and both deal +3% damage (needs a live pet). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 172.7% time per kill in the simulator (scorer said 45.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (43.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 13.8% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x0.00 to match (13.4%). Other modes unchanged.",
+    "note": "30% of damage taken goes to the pet and both deal +3% damage (needs a live pet). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 172.7% time per kill in the simulator (scorer said 45.6% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (43.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 3.0% DPS in the simulator (scorer said 13.4% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), raid values scaled x0.00 to match (13.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1698,7 +1698,7 @@
     ]
   },
   "Demonic Knowledge": {
-    "note": "Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.8% time per kill in the simulator (scorer said 4.5% on the same scale); leveling-st/solo-60 values scaled x1.83 to match (7.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 5.7% DPS in the simulator (scorer said 6.4% on the same scale); already within tolerance, raid effects split off unchanged (6.4%). Other modes unchanged.",
+    "note": "Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.8% time per kill in the simulator (scorer said 4.5% on the same scale); leveling-st/solo-60 values scaled x1.83 to match (7.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 5.7% DPS in the simulator (scorer said 6.4% on the same scale); already within tolerance, raid effects split off unchanged (6.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1813,7 +1813,7 @@
     ]
   },
   "Master Demonologist": {
-    "note": "With the matching pet out: Succubus +2%/rank Shadow or Imp +2%/rank Fire for you and the pet (raid, lost under Demonic Sacrifice), Voidwalker -2%/rank Physical damage taken (leveling). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 8.1% DPS in the simulator (scorer said 8.2% on the same scale); already within tolerance, raid effects split off unchanged (8.2%). Other modes unchanged.",
+    "note": "With the matching pet out: Succubus +2%/rank Shadow or Imp +2%/rank Fire for you and the pet (raid, lost under Demonic Sacrifice), Voidwalker -2%/rank Physical damage taken (leveling). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 8.1% DPS in the simulator (scorer said 8.2% on the same scale); already within tolerance, raid effects split off unchanged (8.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -2075,7 +2075,7 @@
     ]
   },
   "Improved Shadow Bolt": {
-    "note": "Shadow Bolt crits give +4%/rank Shadow damage taken from you for 12s: ~65% uptime at raid crit -> +2.6%/rank Shadow; ~25% while leveling -> +1%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 5.1% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged.",
+    "note": "Shadow Bolt crits give +4%/rank Shadow damage taken from you for 12s: ~65% uptime at raid crit -> +2.6%/rank Shadow; ~25% while leveling -> +1%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 5.1% DPS in the simulator (scorer said 4.7% on the same scale); already within tolerance, raid effects split off unchanged (4.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2144,7 +2144,7 @@
     ]
   },
   "Aftermath": {
-    "note": "+10%/rank Immolate initial damage (about half of Immolate's total) and a Conflagrate daze. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x0.52 to match (0.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, fire-destro-raid, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "note": "+10%/rank Immolate initial damage (about half of Immolate's total) and a Conflagrate daze. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.6% on the same scale); leveling-st/solo-60 values scaled x0.52 to match (0.3%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-destro-raid, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2265,7 +2265,7 @@
     ]
   },
   "Shadowburn": {
-    "note": "Instant Shadow nuke every 15s (a shard each): ~+5% on the Shadow Bolt share, execute utility while leveling. Fight lab calibration (2026-09-27, levels 40,60): removing it costs -0.4% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "Instant Shadow nuke every 15s (a shard each): ~+5% on the Shadow Bolt share, execute utility while leveling. Fight lab calibration (2026-09-27, levels 40,60): removing it costs -0.4% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2388,7 +2388,7 @@
     ]
   },
   "Agonizing Flames": {
-    "note": "Beta curve +3/7/10% Searing Pain crit and +3/7/10% damage on all Destruction spells (parser keeps only the crit). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.5% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x2.74 to match (2.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 6.1% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged.",
+    "note": "Beta curve +3/7/10% Searing Pain crit and +3/7/10% damage on all Destruction spells (parser keeps only the crit). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.5% time per kill in the simulator (scorer said 0.9% on the same scale); leveling-st/solo-60 values scaled x2.74 to match (2.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 6.1% DPS in the simulator (scorer said 6.7% on the same scale); already within tolerance, raid effects split off unchanged (6.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2940,7 +2940,7 @@
     ]
   },
   "Malediction": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.6% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.6% time per kill in the simulator (scorer said 1.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.4%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3009,7 +3009,7 @@
     ]
   },
   "Pandemic": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.3% time per kill in the simulator (scorer said 1.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -3070,7 +3070,7 @@
     ]
   },
   "Malevolence": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-st/solo-60 values scaled x0.48 to match (0.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 5.1% on the same scale); already within tolerance, raid effects split off unchanged (5.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 1.6% on the same scale); leveling-st/solo-60 values scaled x0.48 to match (0.6%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 5.4% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -3139,7 +3139,7 @@
     ]
   },
   "Shadow Mastery": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 3.9% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.7% time per kill in the simulator (scorer said 0.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.6%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 3.9% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3207,7 +3207,7 @@
     ]
   },
   "Improved Bane of Agony": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.5% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.5% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -3337,7 +3337,7 @@
     ]
   },
   "Bane": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 10.6% DPS in the simulator (scorer said 10.1% on the same scale); already within tolerance, raid effects split off unchanged (10.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.3% time per kill in the simulator (scorer said 1.0% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 10.6% DPS in the simulator (scorer said 10.2% on the same scale); already within tolerance, raid effects split off unchanged (10.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -3398,7 +3398,7 @@
     ]
   },
   "Ruin": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 3.6% DPS in the simulator (scorer said 3.7% on the same scale); already within tolerance, raid effects split off unchanged (3.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.0% time per kill in the simulator (scorer said 0.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 3.7% DPS in the simulator (scorer said 3.8% on the same scale); already within tolerance, raid effects split off unchanged (3.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -3474,7 +3474,7 @@
     ]
   },
   "Cataclysm": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-27, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x7.50, the cap on effect size stops short of the target (0.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-27, levels 40,60): removing it costs 0.6% time per kill in the simulator (scorer said 0.2% on the same scale); leveling-st/solo-60 values scaled x7.50, the cap on effect size stops short of the target (0.3%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, sb-raid, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -3550,7 +3550,7 @@
     ]
   },
   "Unholy Power": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.51 to match (0.3%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.51 to match (0.3%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, affliction-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",

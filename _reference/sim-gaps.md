@@ -63,3 +63,14 @@ talent search.
 | Rogue | Ambush | Not added: the leveling rogue plays swords (Ambush needs a dagger) and opens with Cheap Shot / Garrote. |
 | Warrior | Slam | Not added: the module's measured reason stands (a 1.5 s cast on an 18 s cooldown in Forever). |
 | Others | wards, blessings on others, crowd control, curses of weakness, totems of utility | No damage while leveling. |
+
+**Sweep result** (every raid entry, dummy and raid rotations; kept only when an independent second seed confirms): melee hunter Wing
+Clip as a filler (+7.5% dummy, +10.8% raid: an instant melee hit on the GCD that procs Expose Prey and weapon enchants, the Classic
+"Wing Clip weaving"), Subtlety rogue Garrote after Vanish (+3.0% / +1.6%; the simulator enforces stealth), Protection warrior Shield
+Wall on cooldown (+3.2% tank value) and Rend (+0.5%), Bear Barkskin (+2.0% tank value), Protection paladin Retribution Aura (+0.3%).
+Fire mage Blast Wave (+0.3%) and Cone of Cold (+0.3%) were kept by the search and removed by hand: 10-yard spells for a mage 20 yards
+away (no range check in the simulator); the pool now leaves point-blank spells out for entries beyond 8 yards. The other 26 entries
+found nothing to add: every combat spell the simulator implements is either in their rotation or loses there.
+
+**Race sweep** (`_reference/race-sweep.md`): the best race beats the simulated one by 0-2.6% except Undead Fury warriors (+4.5-4.9%);
+rogues gain 2.2-2.6% as Undead in every spec, mages and warlocks ~1% as Human, paladins ~1% as Undead.

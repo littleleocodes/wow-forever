@@ -76,24 +76,24 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 414 | +0.0% | 742 | +0.0% | 0 s |
-| 2 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 410 | -0.9% | 732 | -1.3% | 0 s |
-| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 405 | -2.2% | 721 | -2.8% | 0 s |
-| 4 | *Backstab* | community simulator | - | 382 | -7.6% | 691 | -6.9% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 375 | -9.3% | 658 | -11.3% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 363 | -12.2% | 640 | -13.8% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -14.2% | 634 | -14.6% | 0 s |
-| 8 | *Sinister Strike* | community simulator | - | 344 | -17.0% | 645 | -13.1% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 261 | -36.9% | 505 | -31.9% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 414 | +0.0% | 741 | +0.0% | 0 s |
+| 2 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 410 | -1.1% | 731 | -1.3% | 0 s |
+| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 405 | -2.4% | 720 | -2.9% | 0 s |
+| 4 | *Backstab* | community simulator | - | 383 | -7.6% | 691 | -6.8% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 375 | -9.5% | 659 | -11.1% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 363 | -12.4% | 640 | -13.6% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -14.3% | 634 | -14.4% | 0 s |
+| 8 | *Sinister Strike* | community simulator | - | 343 | -17.2% | 644 | -13.0% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 261 | -37.0% | 505 | -31.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 374 -> 414 DPS (+10.7%), sim preset: Combat Dual-Wield 15/33/3 365 -> 405 DPS (+10.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 374 -> 413 DPS (+10.6%), sim preset: Combat Dual-Wield 15/33/3 365 -> 405 DPS (+10.9%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+9.7%, pass 1)
   2. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.2%, pass 1)
   3. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 730 -> 742 DPS (+1.6%), sim preset: Combat Dual-Wield 15/33/3 714 -> 721 DPS (+1.0%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 731 -> 742 DPS (+1.5%), sim preset: Combat Dual-Wield 15/33/3 714 -> 721 DPS (+0.9%)):
   1. insert at the top: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.9%, pass 1)
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
 

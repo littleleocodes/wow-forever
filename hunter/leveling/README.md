@@ -23,7 +23,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | [opt-melee-dps-solo-60](builds/opt-melee-dps-solo-60.md) | 9/10/32 | solo-60 |
 | [opt-mm-raid-leveling-st](builds/opt-mm-raid-leveling-st.md) | 12/33/6 | leveling-st |
 | [opt-bm-leveling-leveling-aoe](builds/opt-bm-leveling-leveling-aoe.md) | 20/0/31 | leveling-aoe |
-| [opt-melee-dps-leveling-st](builds/opt-melee-dps-leveling-st.md) | 7/13/31 | leveling-st |
+| [opt-melee-dps-leveling-st](builds/opt-melee-dps-leveling-st.md) | 9/13/29 | leveling-st |
 
 Classic Era reference builds: [bm-solo-farm](../talents/classic-baseline/bm-solo-farm.md), [leveling-beast-mastery](../talents/classic-baseline/leveling-beast-mastery.md).
 
@@ -49,13 +49,13 @@ Time per kill = fight + loot, travel, eating, drinking, healing and deaths; a bu
 - **Talents that matter** (time per kill lost when the talent is removed from `opt-bm-leveling-leveling-st` at level 60): Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4% (L30 +4%), Rapid Recuperation +3% (L30 +7%), Careful Aim +2% (L30 +3%), Ranged Weapon Specialization +2%.
 - **Measure about zero** single-target at 60 (kept for other reasons or not simulated): Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot, Trueshot Aura.
 - **Caster mobs:** 16% of pulls at level 30 are casters (creature-database share); 0.00 interrupts per kill at 60.
-- **Race** (hand draft vs every optimizer candidate, 2026-09-28, mean time per kill over levels 20/30/40/50/60): leveling-beast-mastery 27.1s, cand-bm-r2 27.3s, cand-bm-r1 27.5s, cand-bm-r6 27.8s, cand-bm-hand-2026-09-26 28.0s, cand-bm-r5 28.0s, cand-bm-r3 28.3s, cand-bm-r4 28.3s — fastest: **leveling-beast-mastery**.
+- **Race** (hand draft vs every optimizer candidate, 2026-09-29, mean time per kill over levels 20/30/40/50/60): leveling-beast-mastery 27.1s, cand-bm-r2 27.3s, cand-bm-r1 27.5s, cand-bm-r6 27.8s, cand-bm-hand-2026-09-26 28.0s, cand-bm-r5 28.0s, cand-bm-r3 28.3s, cand-bm-r4 28.3s — fastest: **leveling-beast-mastery**.
 - **Calibration:** the scorer's `bm-leveling` leveling values were fitted jointly to the hand draft and every candidate in [`fightlab/candidates/`](fightlab/candidates/) (1 round, converged: the optimizer build repeats).
 - **Other spec, same module:** `mm-raid` with `opt-mm-raid-leveling-st` ([report](fightlab/mm-raid.md)): L30 24.0s (+14% vs `opt-bm-leveling-leveling-st`), L60 33.8s (+13% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **Other spec, same module:** `melee-dps` with `leveling-melee` ([report](fightlab/melee-dps.md)): L30 23.2s (+9% vs `opt-bm-leveling-leveling-st`), L60 32.0s (+7% vs `opt-bm-leveling-leveling-st`). Positive = slower than the main spec's optimizer build on the same mobs; the module's priority list was written for the main spec, so this is a rough spec-versus-spec check.
 - **AoE grinding, 3 mobs per pull:** `bm-leveling` with `opt-bm-leveling-leveling-aoe` ([report](fightlab/bm-leveling-aoe.md)): L40 49.6s per mob in pulls of 3 (single-target build 29.4s), 17.4 deaths/100; L60 65.0s per mob in pulls of 2 (single-target build 30.0s), 33.1 deaths/100.
-- **Melee hunter (dual wield, Survival):** `melee-dps` with `opt-melee-dps-leveling-st` ([report](fightlab/melee-dps-opt.md)): L40 27.0s per mob in pulls of 1 (single-target build 29.4s), 0.0 deaths/100; L60 31.1s per mob in pulls of 1 (single-target build 30.0s), 0.0 deaths/100.
-- **Not simulated:** runners, adds, traps, kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
+- **Melee hunter (dual wield, Survival):** `melee-dps` with `opt-melee-dps-leveling-st` ([report](fightlab/melee-dps-opt.md)): L40 25.7s per mob in pulls of 1 (single-target build 29.4s), 0.0 deaths/100; L60 29.0s per mob in pulls of 1 (single-target build 30.0s), 0.0 deaths/100.
+- **Not simulated:** runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket.
 - **Recommended:** the hand draft `leveling-beast-mastery` (no candidate beats it by more than the 2% margin).
 
 ## Optimizer (stats model) — builds derived from talent numbers

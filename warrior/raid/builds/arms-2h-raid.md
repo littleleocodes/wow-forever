@@ -76,15 +76,15 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 218 | +0.0% | 457 | +0.0% | 0 s |
+| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 218 | +0.0% | 456 | +0.0% | 0 s |
 | 2 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 216 | -0.6% | 455 | -0.3% | 0 s |
-| 3 | *DPS* | community simulator | - | 196 | -10.0% | 427 | -6.5% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 190 | -12.6% | 411 | -9.9% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 167 | -23.4% | 377 | -17.5% | 0 s |
+| 3 | *DPS* | community simulator | - | 196 | -10.1% | 427 | -6.5% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 190 | -12.7% | 411 | -9.9% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 166 | -23.5% | 376 | -17.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 11 changes to the base rotation; third-seed check: opt-arms-2h-raid-raid-dps 154 -> 218 DPS (+41.3%), sim preset: DPS 144 -> 196 DPS (+35.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 11 changes to the base rotation; third-seed check: opt-arms-2h-raid-raid-dps 154 -> 217 DPS (+41.1%), sim preset: DPS 144 -> 195 DPS (+35.8%)):
   1. drop: if false: cast Recklessness (+16.4%, pass 1)
   2. insert before the filler: if stacks of Sunder Armor < 5: cast Sunder Armor (+5.8%, pass 1)
   3. drop: if rage < 90: cast Bloodrage (+1.7%, pass 1)
@@ -96,7 +96,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
   9. threshold 22.5s -> 23.5s: if (time left in the fight ≤ 22.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+0.3%, pass 1)
   10. threshold 23.5s -> 24.5s: if (time left in the fight ≤ 23.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+0.9%, pass 1)
   11. threshold 24.5s -> 25.5s: if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+0.5%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: opt-arms-2h-raid-raid-dps 378 -> 457 DPS (+20.8%), sim preset: DPS 354 -> 427 DPS (+20.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-arms-2h-raid-raid-dps 378 -> 457 DPS (+20.9%), sim preset: DPS 354 -> 427 DPS (+20.7%)):
   1. drop: if false: cast Recklessness (+12.7%, pass 1)
   2. drop: if number of targets = 1 and (rage ≥ 40 or execute phase (E20)): cast Heroic Strike (+5.3%, pass 1)
   3. drop: if not Battle Shout is up: cast Battle Shout (+1.0%, pass 1)
@@ -113,9 +113,9 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | if number of targets > 1: cast Whirlwind | 3.2 |
+| 10 | if number of targets > 1: cast Whirlwind | 3.3 |
 | 11 | cast Bloodthirst | 2.4 |
-| 12 | cast Whirlwind | 3.2 |
+| 12 | cast Whirlwind | 3.3 |
 | 13 | if not Battle Shout is up: cast Battle Shout | 0.5 |
 | 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
 
@@ -126,12 +126,11 @@ Damage by ability:
 | Ability | [`arms-2h-raid`](arms-2h-raid.md) |
 |---|---|
 | Auto Attack | 44% |
-| Execute | 37% |
+| Execute | 36% |
 | Whirlwind | 8% |
 | Bloodthirst | 5% |
 | Deep Wound | 5% |
 | Dragonbreath Chili | 1% |
-| Hamstring | 0% |
 
 ## Notes
 

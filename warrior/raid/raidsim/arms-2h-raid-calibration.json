@@ -6,14 +6,14 @@
  "builds": [
   "arms-2h-raid",
   "opt-arms-2h-raid-raid-dps",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-hand-2026-09-26.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r1.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r2.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r3.json",
-  "F:\\wow-forever\\warrior\\raid\\raidsim\\candidates\\cand-arms-2h-raid-r4.json"
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r1.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r2.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r3.json",
+  "/home/user/wow-forever/warrior/raid/raidsim/candidates/cand-arms-2h-raid-r4.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "warrior/dps",
   "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
@@ -40,9 +40,9 @@
  "talents": [
   {
    "talent": "Flurry",
-   "sim": 0.14638295467083828,
-   "ev_before": 0.14395004602244726,
-   "ev_after": 0.14395004602244726,
+   "sim": 0.14638295467083845,
+   "ev_before": 0.14395004602244724,
+   "ev_after": 0.14395004602244724,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -55,7 +55,7 @@
   },
   {
    "talent": "Death Wish",
-   "sim": 0.08795727799711167,
+   "sim": 0.08795727799711171,
    "ev_before": 0.087321,
    "ev_after": 0.087321,
    "scale": 1.0,
@@ -71,7 +71,7 @@
   },
   {
    "talent": "Cruelty",
-   "sim": 0.0590141329402905,
+   "sim": 0.059014132940290676,
    "ev_before": 0.059147968777574986,
    "ev_after": 0.059147968777574986,
    "scale": 1.0,
@@ -88,7 +88,7 @@
   },
   {
    "talent": "Improved Execute",
-   "sim": 0.05868501399839428,
+   "sim": 0.05868501399839443,
    "ev_before": 0.05005265599403501,
    "ev_after": 0.05005265599403501,
    "scale": 1.0,
@@ -105,7 +105,7 @@
   },
   {
    "talent": "Deep Wounds",
-   "sim": 0.058091462120209346,
+   "sim": 0.058091462120209526,
    "ev_before": 0.05349428398834295,
    "ev_after": 0.05349428398834295,
    "scale": 1.0,
@@ -122,7 +122,7 @@
   },
   {
    "talent": "Weaponmaster",
-   "sim": 0.04506728035167271,
+   "sim": 0.04506728035167322,
    "ev_before": 0.04506699999999974,
    "ev_after": 0.04506699999999974,
    "scale": 1.0,
@@ -133,7 +133,7 @@
   },
   {
    "talent": "Precision",
-   "sim": 0.028247278728504372,
+   "sim": 0.02824727872850445,
    "ev_before": 0.032608695652173926,
    "ev_after": 0.032608695652173926,
    "scale": 1.0,
@@ -149,9 +149,9 @@
   },
   {
    "talent": "Two-Handed Weapon Specialization",
-   "sim": 0.026962242319601943,
-   "ev_before": 0.027142857142856993,
-   "ev_after": 0.027142857142856993,
+   "sim": 0.026962242319601898,
+   "ev_before": 0.02714285714285699,
+   "ev_after": 0.02714285714285699,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -166,7 +166,7 @@
   },
   {
    "talent": "Impale",
-   "sim": 0.025178251231202563,
+   "sim": 0.025178251231202663,
    "ev_before": 0.024617331088375678,
    "ev_after": 0.024617331088375678,
    "scale": 1.0,
@@ -183,7 +183,7 @@
   },
   {
    "talent": "Mortal Strike",
-   "sim": 0.02155735895616162,
+   "sim": 0.021557358956162103,
    "ev_before": 0.02155699999999968,
    "ev_after": 0.02155699999999968,
    "scale": 1.0,
@@ -194,7 +194,7 @@
   },
   {
    "talent": "Unbridled Wrath",
-   "sim": 0.020268922716991555,
+   "sim": 0.02026892271699195,
    "ev_before": 0.02696999999999994,
    "ev_after": 0.02696999999999994,
    "scale": 1.0,
@@ -211,7 +211,7 @@
   },
   {
    "talent": "Anger Management",
-   "sim": 0.020020050254222217,
+   "sim": 0.020020050254222342,
    "ev_before": 0.01971913955303897,
    "ev_after": 0.01971913955303897,
    "scale": 1.0,
@@ -228,9 +228,9 @@
   },
   {
    "talent": "Bloodthirst",
-   "sim": 0.0006132191943755302,
-   "ev_before": 0.05098031968179578,
-   "ev_after": 0.05098031968179578,
+   "sim": 0.0006132191943756563,
+   "ev_before": 0.050980319681795776,
+   "ev_after": 0.050980319681795776,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
@@ -278,8 +278,8 @@
   {
    "talent": "Enrage",
    "sim": 0.0,
-   "ev_before": 0.004500833333333401,
-   "ev_after": 0.004500833333333401,
+   "ev_before": 0.0045008333333334,
+   "ev_after": 0.0045008333333334,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -436,46 +436,46 @@
   "limit": null,
   "builds": {
    "arms-2h-raid": {
-    "dps": 215.86872306391075,
-    "surplus": 215.9393068028508,
+    "dps": 215.86872306391083,
+    "surplus": 215.93930680285075,
     "oom_seconds": 0.0,
-    "deficit": 0.00032686841494999896
+    "deficit": 0.00032686841494933283
    },
    "opt-arms-2h-raid-raid-dps": {
-    "dps": 217.2422450117295,
-    "surplus": 217.32115185613986,
+    "dps": 217.24224501172944,
+    "surplus": 217.32115185613978,
     "oom_seconds": 0.0,
-    "deficit": 0.0003630886535269662
+    "deficit": 0.00036308865352685515
    },
    "cand-arms-2h-raid-hand-2026-09-26": {
-    "dps": 183.1021314769845,
-    "surplus": 184.11215769188968,
+    "dps": 183.10213147698454,
+    "surplus": 184.11215769188962,
     "oom_seconds": 0.0,
-    "deficit": 0.005485928944439555
+    "deficit": 0.005485928944439111
    },
    "cand-arms-2h-raid-r1": {
-    "dps": 215.86872306391075,
-    "surplus": 215.9393068028508,
+    "dps": 215.86872306391083,
+    "surplus": 215.93930680285075,
     "oom_seconds": 0.0,
-    "deficit": 0.00032686841494999896
+    "deficit": 0.00032686841494933283
    },
    "cand-arms-2h-raid-r2": {
-    "dps": 191.27077446560583,
-    "surplus": 191.79438649250142,
+    "dps": 191.2707744656059,
+    "surplus": 191.79438649250136,
     "oom_seconds": 0.0,
-    "deficit": 0.00273006961502531
+    "deficit": 0.002730069615024533
    },
    "cand-arms-2h-raid-r3": {
-    "dps": 215.86872306391075,
-    "surplus": 215.9393068028508,
+    "dps": 215.86872306391083,
+    "surplus": 215.93930680285075,
     "oom_seconds": 0.0,
-    "deficit": 0.00032686841494999896
+    "deficit": 0.00032686841494933283
    },
    "cand-arms-2h-raid-r4": {
-    "dps": 217.2422450117295,
-    "surplus": 217.32115185613986,
+    "dps": 217.24224501172944,
+    "surplus": 217.32115185613978,
     "oom_seconds": 0.0,
-    "deficit": 0.0003630886535269662
+    "deficit": 0.00036308865352685515
    }
   },
   "removals": {}

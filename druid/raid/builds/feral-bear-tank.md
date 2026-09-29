@@ -74,22 +74,24 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 1042 |
-| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 1042 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.857 | -14.3% | 612 | 1096 |
+| 1 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
+| 2 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 607 | 1041 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: feral-bear-tank 381 -> 384 DPS (+0.8%), sim preset: Bear Tank 0/31/20 368 -> 364 DPS (-1.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: feral-bear-tank 381 -> 380 DPS (-0.2%), sim preset: Bear Tank 0/31/20 368 -> 360 DPS (-2.1%)):
   1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
+  3. insert before the filler: cast Barkskin (+2.2%, pass 3)
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](feral-bear-tank.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.9 |
-| 3 | if rage ≥ 50: cast Maul | 1.1 |
-| 4 | cast Lacerate | 38.9 |
+| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 |
+| 3 | if rage ≥ 50: cast Maul | 1.3 |
+| 4 | cast Barkskin | 1.0 |
+| 5 | cast Lacerate | 38.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights); cast Primal Bite (needs the Primal Bite talent).
 
@@ -97,7 +99,7 @@ Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Lacerate | 77% |
+| Lacerate | 76% |
 | Auto Attack | 17% |
 | Maul | 3% |
 | OtherActionRageGain | 2% |

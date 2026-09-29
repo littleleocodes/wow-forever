@@ -40,7 +40,7 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| frost-raid | [`frost-fingers-of-frost-raid`](raid/builds/frost-fingers-of-frost-raid.md) (ours: hand draft) | 588 | [`frost-fingers-of-frost-raid`](raid/builds/frost-fingers-of-frost-raid.md) (ours: hand draft) | 667 |
-| fire-raid | [`fire-raid`](raid/builds/fire-raid.md) (ours: hand draft) | 534 | [`fire-raid`](raid/builds/fire-raid.md) (ours: hand draft) | 662 |
+| frost-raid | [`frost-fingers-of-frost-raid`](raid/builds/frost-fingers-of-frost-raid.md) (ours: hand draft) | 587 | [`frost-fingers-of-frost-raid`](raid/builds/frost-fingers-of-frost-raid.md) (ours: hand draft) | 668 |
+| fire-raid | [`fire-raid`](raid/builds/fire-raid.md) (ours: hand draft) | 535 | [`fire-raid`](raid/builds/fire-raid.md) (ours: hand draft) | 662 |
 | arcane-dps | [`arcane-blast-raid`](raid/builds/arcane-blast-raid.md) (ours: hand draft) | 542 | [`arcane-blast-raid`](raid/builds/arcane-blast-raid.md) (ours: hand draft) | 619 |
 | frostfire-raid | [`frostfire-raid`](raid/builds/frostfire-raid.md) (ours: hand draft) | 514 | [`frostfire-raid`](raid/builds/frostfire-raid.md) (ours: hand draft) | 590 |

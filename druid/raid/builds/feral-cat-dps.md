@@ -75,14 +75,14 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 357 | +0.0% | 566 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 357 | +0.0% | 566 | +0.0% | 0 s |
-| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 355 | -0.3% | 565 | -0.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 341 | -4.3% | 543 | -4.1% | 0 s |
+| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 356 | +0.0% | 567 | +0.0% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 356 | +0.0% | 567 | +0.0% | 0 s |
+| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 355 | -0.3% | 566 | -0.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 341 | -4.4% | 543 | -4.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 7 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 336 -> 357 DPS (+6.1%), sim preset: Feral Cat 9/35/7 336 -> 357 DPS (+6.1%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 7 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 336 -> 356 DPS (+6.0%), sim preset: Feral Cat 9/35/7 336 -> 356 DPS (+6.0%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+2.2%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.6%, pass 1)
   3. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+1.1%, pass 1)
@@ -90,7 +90,7 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
   5. drop the condition: if not Cat Form is up: cast item 10646 (+0.2%, pass 1)
   6. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form (+0.2%, pass 1)
   7. threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 548 -> 566 DPS (+3.2%), sim preset: Feral Cat 9/35/7 548 -> 566 DPS (+3.2%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 549 -> 566 DPS (+3.2%), sim preset: Feral Cat 9/35/7 549 -> 566 DPS (+3.2%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)

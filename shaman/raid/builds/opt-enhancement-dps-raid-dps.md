@@ -64,17 +64,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 415 | +0.0% | 774 | +0.0% | 7 s |
-| 2 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 411 | -1.0% | 767 | -0.9% | 7 s |
-| 3 | *Level 60* | community simulator | - | 399 | -3.8% | 756 | -2.3% | 28 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 372 | -10.5% | 746 | -3.5% | 62 s |
+| 2 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 411 | -0.9% | 767 | -0.8% | 7 s |
+| 3 | *Level 60* | community simulator | - | 400 | -3.6% | 755 | -2.4% | 28 s |
+| 4 | *Enhancement 16/35/0* | community simulator | - | 373 | -10.2% | 746 | -3.6% | 62 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 406 -> 415 DPS (+2.4%), sim preset: Level 60 392 -> 399 DPS (+2.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 406 -> 415 DPS (+2.3%), sim preset: Level 60 392 -> 400 DPS (+2.0%)):
   1. insert before the filler: if not Flame Shock is on the target: cast Flame Shock (+0.6%, pass 1)
   2. only above 60% mana: cast Earth Shock (+1.1%, pass 1)
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 6 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 702 -> 774 DPS (+10.3%), sim preset: Level 60 689 -> 756 DPS (+9.7%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 702 -> 774 DPS (+10.3%), sim preset: Level 60 690 -> 756 DPS (+9.7%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)

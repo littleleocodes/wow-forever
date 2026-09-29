@@ -71,22 +71,22 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 575 | +0.0% | 690 | -0.5% | 1 s |
-| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 574 | -0.1% | 693 | +0.0% | 1 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 547 | -4.9% | 658 | -5.1% | 1 s |
-| 4 | *DS/Ruin* | community simulator | - | 539 | -6.2% | 647 | -6.6% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 516 | -10.3% | 615 | -11.3% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 474 | -17.5% | 562 | -18.9% | 1 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 471 | -18.1% | 567 | -18.3% | 0 s |
-| 8 | *Affliction* | community simulator | - | 467 | -18.7% | 553 | -20.3% | 1 s |
-| 9 | *Demonic Pact* | community simulator | - | 466 | -18.9% | 557 | -19.7% | 1 s |
+| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 574 | +0.0% | 690 | -0.5% | 1 s |
+| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 574 | -0.0% | 694 | +0.0% | 1 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 547 | -4.7% | 657 | -5.3% | 1 s |
+| 4 | *DS/Ruin* | community simulator | - | 539 | -6.1% | 649 | -6.5% | 1 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 516 | -10.2% | 614 | -11.4% | 1 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 473 | -17.7% | 562 | -19.0% | 1 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 470 | -18.2% | 567 | -18.2% | 0 s |
+| 8 | *Affliction* | community simulator | - | 466 | -18.8% | 553 | -20.3% | 1 s |
+| 9 | *Demonic Pact* | community simulator | - | 465 | -19.0% | 559 | -19.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 571 -> 575 DPS (+0.7%), sim preset: DS/Ruin Pandemic 24/11/16 544 -> 547 DPS (+0.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 571 -> 575 DPS (+0.7%), sim preset: DS/Ruin Pandemic 24/11/16 544 -> 546 DPS (+0.5%)):
   1. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   2. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.3%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 683 -> 690 DPS (+1.0%), sim preset: DS/Ruin Pandemic 24/11/16 653 -> 658 DPS (+0.8%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 683 -> 689 DPS (+1.0%), sim preset: DS/Ruin Pandemic 24/11/16 653 -> 658 DPS (+0.8%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)

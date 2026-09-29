@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.9% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.5% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 ## Core talents (priority order)
 
-1. **Shield Slam** — Removing it costs 22.8 points of score in this model.
+1. **Shield Slam** — Removing it costs 22.7 points of score in this model.
 2. **Defiance** — Removing it costs 11.0 points of score in this model.
 3. **Deflection** — Removing it costs 5.9 points of score in this model.
 4. **Bastion** — Removing it costs 5.4 points of score in this model.
 5. **Improved Revenge** — Removing it costs 4.5 points of score in this model.
-6. **Focused Rage** — Removing it costs 4.1 points of score in this model.
-7. **Improved Thunder Clap** — Removing it costs 3.1 points of score in this model.
-8. **Anticipation** — Removing it costs 3.0 points of score in this model.
+6. **Focused Rage** — Removing it costs 3.9 points of score in this model.
+7. **Anticipation** — Removing it costs 3.0 points of score in this model.
+8. **Improved Thunder Clap** — Removing it costs 2.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,25 +63,29 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 642 | 1210 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 642 | 1210 |
-| 3 | *Protection* | community simulator | - | 0.951 | -4.9% | 607 | 1266 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.939 | -6.1% | 599 | 1283 |
+| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 649 | 1140 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 649 | 1140 |
+| 3 | *Protection* | community simulator | - | 0.952 | -4.8% | 614 | 1192 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.942 | -5.8% | 607 | 1202 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 1 changes to the base rotation; third-seed check: prot-raid-tank 416 -> 416 DPS (+0.2%), sim preset: Protection 394 -> 394 DPS (+0.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: prot-raid-tank 416 -> 426 DPS (+2.4%), sim preset: Protection 394 -> 404 DPS (+2.5%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
+  2. insert at the top: cast Shield Wall (+3.2%, pass 3)
+  3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)
 
 Before the pull: at -1s: cast Battle Shout.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | cast Revenge | 6.1 |
-| 3 | cast Shield Slam | 10.0 |
-| 4 | cast Thunder Clap | 9.9 |
-| 5 | if rage ≥ 45: cast Heroic Strike | 8.5 |
+| 1 | cast Shield Wall | 0.5 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | cast Revenge | 6.1 |
+| 4 | cast Shield Slam | 9.9 |
+| 5 | cast Thunder Clap | 9.6 |
+| 6 | if rage ≥ 45: cast Heroic Strike | 7.9 |
+| 7 | if not Rend is on the target: cast Rend | 2.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
 
@@ -89,16 +93,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Shield Slam | 34% |
-| Auto Attack | 23% |
-| Heroic Strike | 17% |
+| Shield Slam | 33% |
+| Auto Attack | 24% |
+| Heroic Strike | 16% |
 | Revenge | 14% |
-| Thunder Clap | 8% |
+| Thunder Clap | 7% |
+| Rend | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |
 | OtherActionRageGain | 1% |
 | Dragonbreath Chili | 0% |
-| spell 16782 | 0% |
 
 ## Notes
 

@@ -80,8 +80,8 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** the simulator's own rotation (no rotation search recorded).
-- **A fully buffed raid:** the simulator's own rotation (no rotation search recorded).
+- **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
+- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-29).
 
 Before the pull: at -1.5s: cast Life Tap.
 

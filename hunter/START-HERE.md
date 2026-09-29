@@ -8,7 +8,7 @@ Classic's ranged physical DPS: Beast Mastery/Marksmanship in raids for Trueshot 
 
 - **Leveling:** [Leveling — Beast Mastery](leveling/builds/leveling-beast-mastery.md) (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/43202005031-3053512001022151--4)
 - **Raid damage, training dummy** (your own buffs only): [Marksmanship — Summon Hawk](raid/builds/mm-hawk-raid.md) (22/29/0), 469 DPS — [open the talent tree](https://talentsforever.com/hunter/60/53200005051001-005355000150104--4)
-- **Raid damage, full raid** (every raid buff): [Marksmanship — Lone Wolf](raid/builds/mm-lone-wolf-raid.md) (5/41/5), 887 DPS — [open the talent tree](https://talentsforever.com/hunter/60/5-3053552011523051-5-4)
+- **Raid damage, full raid** (every raid buff): [Melee Survival — Lone Wolf](raid/builds/melee-survival-raid.md) (5/11/35), 986 DPS — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4)
 - **PvP:** [Marksmanship / Survival](pvp/builds/pvp-mm-surv.md) (0/31/20) — [open the talent tree](https://talentsforever.com/hunter/60/-055105000150315-502023131201-4)
 
 ## Leveling
@@ -60,9 +60,9 @@ Ranked on a boss-level training dummy with only your own buffs (the fairest test
 | Best build of each spec | Training dummy DPS | Full raid DPS | Talents |
 |---|---|---|---|
 | Marksmanship — Summon Hawk (22/29/0) | 469 | 815 | [tree](https://talentsforever.com/hunter/60/53200005051001-005355000150104--4) |
+| Melee Survival — Lone Wolf (5/11/35) | 459 | 986 | [tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4) |
 | Marksmanship without a pet (5/38/8) | 434 | 848 | [tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4) |
 | Marksmanship raid DPS with a pet (22/29/0) | 428 | 766 | [tree](https://talentsforever.com/hunter/60/53200005050002-005355010150004--4) |
-| Melee Survival — Lone Wolf (5/11/35) | 380 | 792 | [tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4) |
 
 What to press with the top build, Marksmanship — Summon Hawk (the first line that is ready is the one you cast):
 

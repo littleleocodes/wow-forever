@@ -2,9 +2,9 @@
  "class": "shaman",
  "spec": "stormcaller-dps",
  "game": "forever",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
   "gear_max": "ui/specs/shaman/elemental/gear_sets/phase_2.gear.json",
@@ -39,11 +39,11 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 382.13684321567706,
-    "dummy60": 472.4550187396148,
-    "raid": 493.66662273780577,
-    "max": 512.1693661373288,
-    "max60": 519.6205794727398
+    "dummy": 382.1368432156774,
+    "dummy60": 472.4550187396153,
+    "raid": 493.6666227378056,
+    "max": 512.1693661373292,
+    "max60": 519.6205794727391
    }
   }
  ]

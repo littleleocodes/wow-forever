@@ -6,15 +6,15 @@ This project works out the best talents and the best way to play every class in 
 
 | Class | Leveling | Best raid damage (training dummy) | Guide |
 |---|---|---|---|
-| Druid | Leveling — Feral cat | Balance, 462 DPS | [druid/START-HERE.md](druid/START-HERE.md) |
+| Druid | Leveling — Feral cat | Balance, 461 DPS | [druid/START-HERE.md](druid/START-HERE.md) |
 | Hunter | Leveling — Beast Mastery | Marksmanship — Summon Hawk, 469 DPS | [hunter/START-HERE.md](hunter/START-HERE.md) |
-| Mage | Leveling — Frost | Frost — Fingers of Frost / Ice Lance / Shatter, 588 DPS | [mage/START-HERE.md](mage/START-HERE.md) |
+| Mage | Leveling — Frost | Frost — Fingers of Frost / Ice Lance / Shatter, 587 DPS | [mage/START-HERE.md](mage/START-HERE.md) |
 | Paladin | Leveling — Retribution | Two-handed Retribution, 368 DPS | [paladin/START-HERE.md](paladin/START-HERE.md) |
 | Priest | Leveling — Shadow | Shadow leveling/raid, 554 DPS | [priest/START-HERE.md](priest/START-HERE.md) |
 | Rogue | Leveling — Combat swords | Raid daggers, 414 DPS | [rogue/START-HERE.md](rogue/START-HERE.md) |
 | Shaman | Leveling — Enhancement | One slow weapon, 415 DPS | [shaman/START-HERE.md](shaman/START-HERE.md) |
 | Warlock | Leveling — Affliction DoTs with a Voidwalker | Demonology — Demonic Pact, 622 DPS | [warlock/START-HERE.md](warlock/START-HERE.md) |
-| Warrior | Leveling — Arms two-hander | Raid dual-wield Fury, 257 DPS | [warrior/START-HERE.md](warrior/START-HERE.md) |
+| Warrior | Leveling — Arms two-hander | Raid dual-wield Fury, 256 DPS | [warrior/START-HERE.md](warrior/START-HERE.md) |
 
 ## How to read the numbers
 

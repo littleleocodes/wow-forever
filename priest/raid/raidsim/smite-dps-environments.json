@@ -2,9 +2,9 @@
  "class": "priest",
  "spec": "smite-dps",
  "game": "forever",
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
   "gear_max": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
@@ -39,11 +39,11 @@
    "split": "31/17/3",
    "ours": true,
    "dps": {
-    "dummy": 315.1144597308102,
-    "dummy60": 342.0148165846864,
-    "raid": 476.69734431328243,
-    "max": 476.69734431328243,
-    "max60": 508.9683260721938
+    "dummy": 315.11445973081027,
+    "dummy60": 342.01481658468646,
+    "raid": 476.6973443132818,
+    "max": 476.6973443132818,
+    "max60": 508.96832607219346
    }
   },
   {
@@ -51,11 +51,11 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 313.16765627598596,
-    "dummy60": 340.98125539621685,
+    "dummy": 313.1676562759859,
+    "dummy60": 340.98125539621714,
     "raid": 471.21048920461624,
     "max": 471.21048920461624,
-    "max60": 503.8468634474631
+    "max60": 503.846863447463
    }
   },
   {
@@ -63,11 +63,11 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 313.16765627598596,
-    "dummy60": 340.98125539621685,
+    "dummy": 313.1676562759859,
+    "dummy60": 340.98125539621714,
     "raid": 471.21048920461624,
     "max": 471.21048920461624,
-    "max60": 503.8468634474631
+    "max60": 503.846863447463
    }
   }
  ]

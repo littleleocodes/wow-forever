@@ -40,7 +40,7 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| combat-swords-raid | [`combat-swords-raid`](raid/builds/combat-swords-raid.md) (ours: hand draft) | 401 | *Sinister Strike* (community simulator) | 710 |
-| combat-daggers-raid | [`opt-combat-daggers-raid-raid-dps`](raid/builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer) | 414 | [`opt-combat-daggers-raid-raid-dps`](raid/builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer) | 742 |
+| combat-swords-raid | [`combat-swords-raid`](raid/builds/combat-swords-raid.md) (ours: hand draft) | 401 | *Sinister Strike* (community simulator) | 708 |
+| combat-daggers-raid | [`opt-combat-daggers-raid-raid-dps`](raid/builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer) | 414 | [`opt-combat-daggers-raid-raid-dps`](raid/builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer) | 741 |
 | assassination-raid | [`assassination-seal-fate-raid`](raid/builds/assassination-seal-fate-raid.md) (ours: hand draft) | 413 | [`assassination-seal-fate-raid`](raid/builds/assassination-seal-fate-raid.md) (ours: hand draft) | 693 |
-| subtlety-raid | [`subtlety-hemo-raid`](raid/builds/subtlety-hemo-raid.md) (ours: hand draft) | 382 | [`subtlety-hemo-raid`](raid/builds/subtlety-hemo-raid.md) (ours: hand draft) | 646 |
+| subtlety-raid | [`subtlety-hemo-raid`](raid/builds/subtlety-hemo-raid.md) (ours: hand draft) | 392 | [`subtlety-hemo-raid`](raid/builds/subtlety-hemo-raid.md) (ours: hand draft) | 657 |

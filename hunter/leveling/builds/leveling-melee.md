@@ -97,7 +97,7 @@ Leveling as a melee hunter with the pet as the tank: Survival's melee package fi
 
 The melee hunter: mark and sting from range, then stand and fight: Counterattack after a parry, Mongoose Bite when a dodge or Expose Prey activates it, Strider Kick on cooldown, Raptor Strike on the next swing; Deterrence when low; Mend Pet for the pet.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-09-28, on top of the priority below): never cast Hunter's Mark; Immolation Trap only while the mob has more than 70% health. Together +3.4% time per kill saved for `leveling-melee` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 

@@ -17,7 +17,7 @@ Total: **63.3 h** (29.7% faster than talentless), 0 respec(s).
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| ret-dps -> level-50 build (8/0/33) | 63.3 | -0.0 h |
+| ret-dps -> level-50 build (8/0/33) | 63.3 | +0.0 h |
 | ret-dps -> level-20 build (0/0/11) | 63.3 | +0.0 h |
 | ret-dps -> level-60 build (13/0/38) | 63.3 | +0.0 h |
 | ret-dps -> level-30 build (0/0/21) | 63.4 | +0.1 h |

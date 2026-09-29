@@ -743,12 +743,18 @@ def git_commit(repo):
 
 def write_report(out):
     cls, spec = out["class"], out["spec"]
+    if not out["results"]:   # an entry with no builds and no presets (the Shockadin survey target): nothing to report
+        print(f"  {cls} {spec}: no builds to report")
+        return
     d = paths.raidsim_dir(cls, GAME)
     d.mkdir(parents=True, exist_ok=True)
     (d / f"{spec}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     sim = out["sim"]
     tank = any(x.get("value") is not None for x in out["results"])
     rows = sorted(out["results"], key=lambda x: -((x.get("value") if tank else x["dps"]) or 0))
+    if not rows:   # an entry with no builds and no presets (the Shockadin survey target): nothing to report
+        print(f"  {cls} {spec}: no builds to report")
+        return
     best = rows[0]["dps"] or 1.0
     simname = "ElliotWood/Forever simulator (wowsims fork" if out.get("game", "forever") == "forever" else "upstream wowsims/classic simulator (Classic Era"
     o = [f"# Raid sim — {cls} {spec}" + (" (Classic Era)" if out.get("game") == "classic-era" else ""), "",

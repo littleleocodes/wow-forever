@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +373.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +359.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Core talents (priority order)
 
-1. **Mind Flay** — Removing it costs 204.6 points of score in this model.
-2. **Shadowform** — Removing it costs 188.2 points of score in this model.
-3. **Shadow Weaving** — Removing it costs 38.9 points of score in this model.
-4. **Darkness** — Removing it costs 38.9 points of score in this model.
-5. **Improved Mind Flay** — Removing it costs 37.8 points of score in this model.
-6. **Shadow Focus** — Removing it costs 19.9 points of score in this model.
-7. **Improved Mind Blast** — Removing it costs 11.3 points of score in this model.
-8. **Improved Shadow Word: Pain** — Removing it costs 11.0 points of score in this model.
+1. **Mind Flay** — Removing it costs 192.0 points of score in this model.
+2. **Shadowform** — Removing it costs 183.6 points of score in this model.
+3. **Shadow Weaving** — Removing it costs 37.7 points of score in this model.
+4. **Darkness** — Removing it costs 37.7 points of score in this model.
+5. **Improved Mind Flay** — Removing it costs 35.4 points of score in this model.
+6. **Shadow Focus** — Removing it costs 19.3 points of score in this model.
+7. **Improved Mind Blast** — Removing it costs 10.7 points of score in this model.
+8. **Improved Shadow Word: Pain** — Removing it costs 10.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,18 +64,18 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 554 | +0.0% | 636 | +0.0% | 0 s |
-| 2 | *Shadow 15/0/36* | community simulator | - | 545 | -1.6% | 626 | -1.7% | 0 s |
-| 3 | *Shadow* | community simulator | - | 545 | -1.7% | 626 | -1.6% | 0 s |
-| 4 | *Smite* | community simulator | - | 205 | -63.1% | 232 | -63.6% | 3 s |
-| 5 | *Smite 31/17/3* | community simulator | - | 205 | -63.1% | 232 | -63.6% | 3 s |
+| 2 | *Shadow 15/0/36* | community simulator | - | 545 | -1.7% | 625 | -1.7% | 0 s |
+| 3 | *Shadow* | community simulator | - | 545 | -1.8% | 625 | -1.7% | 0 s |
+| 4 | *Smite* | community simulator | - | 204 | -63.1% | 232 | -63.5% | 3 s |
+| 5 | *Smite 31/17/3* | community simulator | - | 204 | -63.1% | 232 | -63.5% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 545 -> 546 DPS (+0.2%), sim preset: Shadow 544 -> 545 DPS (+0.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 552 -> 554 DPS (+0.4%), sim preset: Shadow 15/0/36 543 -> 545 DPS (+0.5%)):
   1. always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%, pass 1)
   2. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.3%, pass 1)
   3. insert in the middle: cast Shadow Word: Death (+1.1%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 1 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 626 -> 628 DPS (+0.3%), sim preset: Shadow 624 -> 626 DPS (+0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 1 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 634 -> 636 DPS (+0.3%), sim preset: Shadow 15/0/36 623 -> 625 DPS (+0.3%)):
   1. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.4%, pass 1)
 
 Before the pull: at -1s: cast Shadowform.
@@ -103,7 +103,7 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-shadow-dps-r3 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).
 - Report: priest/talents/forever/optimizer/shadow-dps-raid-dps.md
 
 ## Open questions (verify in the live game)

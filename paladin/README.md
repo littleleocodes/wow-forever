@@ -42,5 +42,5 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 
 | Spec model | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
-| ret-dps | [`opt-ret-dps-raid-dps`](raid/builds/opt-ret-dps-raid-dps.md) (ours: optimizer) | 368 | [`ret-full-buffs-raid`](raid/builds/ret-full-buffs-raid.md) (ours: hand draft) | 805 |
+| ret-dps | [`opt-ret-dps-raid-dps`](raid/builds/opt-ret-dps-raid-dps.md) (ours: optimizer) | 368 | [`ret-full-buffs-raid`](raid/builds/ret-full-buffs-raid.md) (ours: hand draft) | 804 |
 | seal-of-fury-raid | [`ret-raid-dps`](raid/builds/ret-raid-dps.md) (ours: hand draft) | 285 | [`ret-raid-dps`](raid/builds/ret-raid-dps.md) (ours: hand draft) | 581 |

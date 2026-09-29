@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +52.3% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-leveling` and profile `leveling-aoe`: score +55.0% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -77,14 +77,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `bm-level
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — Removing it costs 8.9 points of score in this model.
-2. **Strider Kick** — Removing it costs 6.8 points of score in this model.
-3. **Unleashed Fury** — Removing it costs 3.5 points of score in this model.
-4. **Expose Prey** — Removing it costs 2.5 points of score in this model.
-5. **Lacerating Strikes** — Removing it costs 2.4 points of score in this model.
-6. **Lightning Reflexes** — Removing it costs 2.2 points of score in this model.
-7. **Ferocity** — Removing it costs 2.2 points of score in this model.
-8. **Surefooted** — Removing it costs 2.0 points of score in this model.
+1. **Summon Hawk** — Removing it costs 8.2 points of score in this model.
+2. **Strider Kick** — Removing it costs 6.6 points of score in this model.
+3. **Unleashed Fury** — Removing it costs 4.3 points of score in this model.
+4. **Improved Tracking** — Removing it costs 3.4 points of score in this model.
+5. **Expose Prey** — Removing it costs 2.4 points of score in this model.
+6. **Lacerating Strikes** — Removing it costs 2.3 points of score in this model.
+7. **Lightning Reflexes** — Removing it costs 2.2 points of score in this model.
+8. **Ferocity** — Removing it costs 2.0 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -112,6 +112,7 @@ What this build casts per kill ([report](../fightlab/bm-leveling-aoe.md), all le
 
 ## Notes
 
+- Allocation and order taken from cand-aoe-r7 on 2026-09-29: an earlier optimizer round beat the last export in the fight lab (56.3s vs 58.6s per kill, level-weighted).
 - Report: hunter/talents/forever/optimizer/bm-leveling-leveling-aoe.md
 
 ## Open questions (verify in the live game)

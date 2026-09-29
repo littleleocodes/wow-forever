@@ -62,23 +62,27 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 380 | +0.0% | 792 | +0.0% | 0 s |
-| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 350 | -8.0% | 757 | -4.4% | 0 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 459 | +0.0% | 986 | +0.0% | 0 s |
+| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 433 | -5.7% | 961 | -2.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
-- **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-09-28).
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 428 -> 459 DPS (+7.3%)):
+  1. insert before the filler: cast Wing Clip (+7.4%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 893 -> 985 DPS (+10.3%)):
+  1. insert before the filler: cast Wing Clip (+10.3%)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | cast Mongoose Bite | 10.1 |
-| 3 | cast Strider Kick | 7.5 |
-| 4 | cast Raptor Strike | 20.0 |
-| 5 | cast Immolation Trap | 2.0 |
+| 1 | cast Aspect of the Beast | 0.5 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | cast Mongoose Bite | 12.3 |
+| 4 | cast Strider Kick | 6.7 |
+| 5 | cast Raptor Strike | 20.0 |
+| 6 | cast Immolation Trap | 2.0 |
+| 7 | cast Wing Clip | 24.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -86,11 +90,12 @@ Damage by ability:
 
 | Ability | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 44% |
-| Raptor Strike | 20% |
+| Auto Attack | 45% |
+| Raptor Strike | 17% |
 | Mongoose Bite | 15% |
-| Strider Kick | 12% |
-| Immolation Trap | 7% |
+| Strider Kick | 9% |
+| Wing Clip | 6% |
+| Immolation Trap | 6% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

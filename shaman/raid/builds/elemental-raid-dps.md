@@ -72,24 +72,24 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 397 | +0.0% | 496 | -1.7% | 0 s |
-| 2 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 396 | -0.1% | 505 | +0.0% | 0 s |
-| 3 | *Elemental 31/6/14* | community simulator | - | 393 | -0.8% | 497 | -1.5% | 0 s |
-| 4 | *Stormcaller 28/23/0* | community simulator | - | 380 | -4.2% | 494 | -2.1% | 2 s |
-| 5 | *Level 60* | community simulator | - | 379 | -4.4% | 477 | -5.5% | 0 s |
+| 1 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 397 | +0.0% | 504 | +0.0% | 0 s |
+| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.4% | 503 | -0.2% | 0 s |
+| 3 | *Elemental 31/6/14* | community simulator | - | 393 | -1.0% | 498 | -1.3% | 0 s |
+| 4 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.1% | 493 | -2.2% | 2 s |
+| 5 | *Level 60* | community simulator | - | 379 | -4.5% | 477 | -5.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 4 changes to the base rotation; third-seed check: elemental-raid-dps 393 -> 396 DPS (+1.0%), sim preset: Elemental 31/6/14 378 -> 393 DPS (+4.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 387 -> 397 DPS (+2.4%), sim preset: Elemental 31/6/14 378 -> 393 DPS (+4.1%)):
   1. always rank 2 instead of rank 4: cast Lightning Bolt (+5.2%, pass 1)
   2. only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   3. always rank 8 instead of rank 10: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.3%, pass 1)
   4. always rank 7 instead of rank 8: if mana ≥ (time left in the fight × 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana ≥ (time left in the fight × 35): cast Lightning Bolt (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 2 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: elemental-raid-dps 503 -> 505 DPS (+0.4%), sim preset: Elemental 31/6/14 494 -> 497 DPS (+0.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-elemental-dps-raid-dps 495 -> 497 DPS (+0.3%), sim preset: Elemental 31/6/14 494 -> 497 DPS (+0.5%)):
   1. only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.5%, pass 1)
   2. always rank 2 instead of rank 4: cast Lightning Bolt (+0.4%, pass 1)
   3. threshold 100 -> 200: if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning (+0.2%, pass 2)

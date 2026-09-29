@@ -69,23 +69,23 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 572 | +0.0% | 698 | +0.0% | 2 s |
-| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 572 | -0.0% | 697 | -0.1% | 2 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 537 | -6.1% | 655 | -6.1% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 532 | -7.0% | 646 | -7.4% | 1 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 520 | -9.0% | 633 | -9.3% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 514 | -10.1% | 618 | -11.4% | 2 s |
-| 7 | *DS/Ruin* | community simulator | - | 512 | -10.5% | 625 | -10.4% | 0 s |
-| 8 | *Affliction* | community simulator | - | 506 | -11.5% | 609 | -12.7% | 1 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 496 | -13.3% | 605 | -13.3% | 1 s |
+| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 571 | +0.0% | 697 | +0.0% | 2 s |
+| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 571 | -0.0% | 697 | -0.0% | 2 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 536 | -6.1% | 655 | -6.1% | 0 s |
+| 4 | *Demonic Pact* | community simulator | - | 531 | -7.1% | 645 | -7.4% | 1 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 520 | -9.0% | 632 | -9.4% | 1 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 514 | -10.0% | 618 | -11.3% | 2 s |
+| 7 | *DS/Ruin* | community simulator | - | 511 | -10.5% | 626 | -10.2% | 0 s |
+| 8 | *Affliction* | community simulator | - | 507 | -11.3% | 609 | -12.6% | 1 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 496 | -13.1% | 605 | -13.2% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 3 changes to the base rotation; third-seed check: affliction-dot-raid 568 -> 572 DPS (+0.7%), sim preset: Demonic Pact 2/31/18 533 -> 537 DPS (+0.8%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 568 -> 572 DPS (+0.8%), sim preset: Demonic Pact 2/31/18 533 -> 537 DPS (+0.8%)):
   1. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   2. threshold 75% -> 55%: if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion (+0.2%, pass 2)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 2 passes, the last 2026-09-28, 2 changes to the base rotation; third-seed check: affliction-dot-raid 694 -> 697 DPS (+0.4%), sim preset: Demonic Pact 2/31/18 652 -> 655 DPS (+0.5%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: opt-affliction-raid-raid-dps 696 -> 698 DPS (+0.4%), sim preset: Demonic Pact 2/31/18 652 -> 655 DPS (+0.5%)):
   1. only with 6s or more of the fight left: if mana % < 10%: cast Life Tap (+0.2%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 1)
 
@@ -100,7 +100,7 @@ Before the pull: at -5s: cast Amplify Curse.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.7 |
 | 6 | if mana % < 10%: cast Life Tap | 6.3 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
 | 11 | cast Shadow Bolt | 13.9 |

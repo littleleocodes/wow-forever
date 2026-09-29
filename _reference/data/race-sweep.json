@@ -1,0 +1,979 @@
+{
+ "classes": {
+  "mage": {
+   "frost-raid": {
+    "build": "frost-fingers-of-frost-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 586.9487285615717,
+      "raid": 667.1820466149784
+     },
+     "Undead": {
+      "dummy": 588.7192780504256,
+      "raid": 672.9712210018604
+     },
+     "Troll": {
+      "dummy": 587.4061270771098,
+      "raid": 667.3091409762494
+     },
+     "Human": {
+      "dummy": 591.6153818369643,
+      "raid": 672.2744318085681
+     },
+     "Gnome": {
+      "dummy": 586.7109961057823,
+      "raid": 666.8029662502267
+     },
+     "HighOrderSkyborne": {
+      "dummy": 588.5870328793445,
+      "raid": 668.9912264982283
+     }
+    }
+   },
+   "fire-raid": {
+    "build": "fire-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 535.2592353316031,
+      "raid": 663.0463649038206
+     },
+     "Undead": {
+      "dummy": 534.2665513035529,
+      "raid": 664.0675581881721
+     },
+     "Troll": {
+      "dummy": 533.3291040844383,
+      "raid": 662.4288449027397
+     },
+     "Human": {
+      "dummy": 542.1848140606019,
+      "raid": 670.3131438692656
+     },
+     "Gnome": {
+      "dummy": 538.9381698486998,
+      "raid": 662.1695214809833
+     },
+     "HighOrderSkyborne": {
+      "dummy": 534.8763006603326,
+      "raid": 654.8154798616702
+     }
+    }
+   },
+   "arcane-dps": {
+    "build": "arcane-blast-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 543.8537956029236,
+      "raid": 621.0740534907923
+     },
+     "Undead": {
+      "dummy": 545.8698313962285,
+      "raid": 627.9956385677008
+     },
+     "Troll": {
+      "dummy": 541.7877098964461,
+      "raid": 618.8707650267982
+     },
+     "Human": {
+      "dummy": 547.9893960703594,
+      "raid": 625.4791930645633
+     },
+     "Gnome": {
+      "dummy": 542.4373104893266,
+      "raid": 619.4065240202983
+     },
+     "HighOrderSkyborne": {
+      "dummy": 542.3612077580411,
+      "raid": 619.4358512015526
+     }
+    }
+   },
+   "frostfire-raid": {
+    "build": "frostfire-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 513.4666855197815,
+      "raid": 589.22919932798
+     },
+     "Undead": {
+      "dummy": 513.924071876376,
+      "raid": 591.0302286524688
+     },
+     "Troll": {
+      "dummy": 513.4287571608452,
+      "raid": 590.223301548737
+     },
+     "Human": {
+      "dummy": 517.7543932971744,
+      "raid": 594.6171575348026
+     },
+     "Gnome": {
+      "dummy": 514.9438529631853,
+      "raid": 589.8964896670793
+     },
+     "HighOrderSkyborne": {
+      "dummy": 512.136410848494,
+      "raid": 586.5453752632446
+     }
+    }
+   }
+  },
+  "priest": {
+   "shadow-dps": {
+    "build": "opt-shadow-dps-raid-dps",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Undead": {
+      "dummy": 556.0213741347709,
+      "raid": 639.7818993677886
+     },
+     "Troll": {
+      "dummy": 554.3563795846197,
+      "raid": 636.2494990718388
+     },
+     "Human": {
+      "dummy": 551.5955072246011,
+      "raid": 633.21596777987
+     },
+     "Dwarf": {
+      "dummy": 556.1634946769439,
+      "raid": 638.1598823787983
+     },
+     "NightElf": {
+      "dummy": 556.3283070825162,
+      "raid": 638.4790857273819
+     },
+     "Gnome": {
+      "dummy": 555.9498535479933,
+      "raid": 638.1907623233108
+     }
+    }
+   },
+   "smite-dps": {
+    "build": "smite-discipline-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Undead": {
+      "dummy": 318.8849392259772,
+      "raid": 483.97634552361774
+     },
+     "Troll": {
+      "dummy": 315.13540201594344,
+      "raid": 476.7683828652388
+     },
+     "Human": {
+      "dummy": 312.4756576963286,
+      "raid": 476.06663243767537
+     },
+     "Dwarf": {
+      "dummy": 313.6878693184516,
+      "raid": 477.49797478588357
+     },
+     "NightElf": {
+      "dummy": 314.041646117417,
+      "raid": 478.0233511318789
+     },
+     "Gnome": {
+      "dummy": 316.8375054992188,
+      "raid": 482.0477032749461
+     }
+    }
+   }
+  },
+  "warlock": {
+   "affliction-raid": {
+    "build": "opt-affliction-raid-raid-dps",
+    "current": "Gnome",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 568.9231774539343,
+      "raid": 694.4648440523447
+     },
+     "Undead": {
+      "dummy": 569.6296552393303,
+      "raid": 698.9080213480406
+     },
+     "Troll": {
+      "dummy": 563.1810885287565,
+      "raid": 690.6034376814068
+     },
+     "Human": {
+      "dummy": 577.102242026436,
+      "raid": 703.651222925897
+     },
+     "Gnome": {
+      "dummy": 572.3143725439427,
+      "raid": 697.9474007791513
+     }
+    }
+   },
+   "fire-destro-raid": {
+    "build": "destruction-fire-raid",
+    "current": "Gnome",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 554.2351103309531,
+      "raid": 659.3348457505734
+     },
+     "Undead": {
+      "dummy": 555.717662727681,
+      "raid": 664.1029707676556
+     },
+     "Troll": {
+      "dummy": 549.5155315613586,
+      "raid": 655.7269099771898
+     },
+     "Human": {
+      "dummy": 562.4428069527337,
+      "raid": 668.8285142430484
+     },
+     "Gnome": {
+      "dummy": 558.724255350053,
+      "raid": 665.0526648434682
+     }
+    }
+   },
+   "sb-raid": {
+    "build": "opt-sb-raid-raid-dps",
+    "current": "Gnome",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 569.3551095249193,
+      "raid": 685.0262866869114
+     },
+     "Undead": {
+      "dummy": 569.9063923887913,
+      "raid": 688.3792300236839
+     },
+     "Troll": {
+      "dummy": 564.0170177184641,
+      "raid": 679.7001759059498
+     },
+     "Human": {
+      "dummy": 577.488408879116,
+      "raid": 694.6746390542255
+     },
+     "Gnome": {
+      "dummy": 574.8004093513803,
+      "raid": 690.382557225919
+     }
+    }
+   },
+   "demonology-raid": {
+    "build": "demonology-pact-raid",
+    "current": "Gnome",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 618.7771427716891,
+      "raid": 755.9537847372151
+     },
+     "Undead": {
+      "dummy": 619.0645822040617,
+      "raid": 758.7288618907173
+     },
+     "Troll": {
+      "dummy": 614.9205292084927,
+      "raid": 752.2787829124713
+     },
+     "Human": {
+      "dummy": 627.8953399244635,
+      "raid": 766.2355642672009
+     },
+     "Gnome": {
+      "dummy": 621.3892842705322,
+      "raid": 761.4488399491563
+     }
+    }
+   },
+   "incinerate-raid": {
+    "build": "destruction-incinerate-raid",
+    "current": "Gnome",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 481.4294534920246,
+      "raid": 557.0316452338382
+     },
+     "Undead": {
+      "dummy": 483.3828299781474,
+      "raid": 563.524087931034
+     },
+     "Troll": {
+      "dummy": 477.9659773041379,
+      "raid": 556.6705296052296
+     },
+     "Human": {
+      "dummy": 484.18447698432436,
+      "raid": 560.7054471455676
+     },
+     "Gnome": {
+      "dummy": 484.4280545582547,
+      "raid": 560.1939315245666
+     }
+    }
+   }
+  },
+  "rogue": {
+   "combat-swords-raid": {
+    "build": "combat-swords-raid",
+    "current": "Dwarf",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 404.0538705954857,
+      "raid": 706.9344131726948
+     },
+     "Undead": {
+      "dummy": 410.5416738425258,
+      "raid": 716.4267037483482
+     },
+     "Troll": {
+      "dummy": 404.79668403797257,
+      "raid": 707.3919062619791
+     },
+     "WindshaperSkyborne": {
+      "dummy": 404.09829349852095,
+      "raid": 705.9733926576654
+     },
+     "Human": {
+      "dummy": 409.56643480604805,
+      "raid": 714.6825933449857
+     },
+     "Dwarf": {
+      "dummy": 401.04418402496856,
+      "raid": 699.9232968497151
+     },
+     "NightElf": {
+      "dummy": 408.66817096508896,
+      "raid": 711.6995416974521
+     },
+     "Gnome": {
+      "dummy": 405.47632851864387,
+      "raid": 707.0581192349312
+     },
+     "HighOrderSkyborne": {
+      "dummy": 404.09829349852095,
+      "raid": 705.9733926576654
+     }
+    }
+   },
+   "combat-daggers-raid": {
+    "build": "opt-combat-daggers-raid-raid-dps",
+    "current": "Dwarf",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 416.4967786166344,
+      "raid": 747.9161671094785
+     },
+     "Undead": {
+      "dummy": 424.323793975965,
+      "raid": 760.2715140640555
+     },
+     "Troll": {
+      "dummy": 417.43024197295114,
+      "raid": 748.9146667509281
+     },
+     "WindshaperSkyborne": {
+      "dummy": 416.8716725968942,
+      "raid": 747.7406937685927
+     },
+     "Human": {
+      "dummy": 414.46848191594927,
+      "raid": 743.3614041963586
+     },
+     "Dwarf": {
+      "dummy": 413.71978861023064,
+      "raid": 741.6749586339379
+     },
+     "NightElf": {
+      "dummy": 420.2030013999,
+      "raid": 751.4086137489551
+     },
+     "Gnome": {
+      "dummy": 419.60297384690386,
+      "raid": 752.1648026441884
+     },
+     "HighOrderSkyborne": {
+      "dummy": 416.8716725968942,
+      "raid": 747.7406937685927
+     }
+    }
+   },
+   "assassination-raid": {
+    "build": "assassination-seal-fate-raid",
+    "current": "Dwarf",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 415.2823827000162,
+      "raid": 697.6785479714035
+     },
+     "Undead": {
+      "dummy": 422.97033082697885,
+      "raid": 710.8870420052979
+     },
+     "Troll": {
+      "dummy": 416.34460133006974,
+      "raid": 698.824564002172
+     },
+     "WindshaperSkyborne": {
+      "dummy": 415.84748762671285,
+      "raid": 698.7678725138916
+     },
+     "Human": {
+      "dummy": 413.82519374846015,
+      "raid": 694.9081472884211
+     },
+     "Dwarf": {
+      "dummy": 413.0172630435883,
+      "raid": 693.2179773967052
+     },
+     "NightElf": {
+      "dummy": 420.4274438660364,
+      "raid": 703.6867295002648
+     },
+     "Gnome": {
+      "dummy": 419.05287334421314,
+      "raid": 703.5652621031701
+     },
+     "HighOrderSkyborne": {
+      "dummy": 415.84748762671285,
+      "raid": 698.7678725138916
+     }
+    }
+   },
+   "subtlety-raid": {
+    "build": "subtlety-hemo-raid",
+    "current": "Dwarf",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 394.44455235724604,
+      "raid": 662.6126261788294
+     },
+     "Undead": {
+      "dummy": 400.484398290621,
+      "raid": 672.2013749206593
+     },
+     "Troll": {
+      "dummy": 395.27759429196146,
+      "raid": 662.6072964433408
+     },
+     "WindshaperSkyborne": {
+      "dummy": 394.5448593439636,
+      "raid": 661.6108325307569
+     },
+     "Human": {
+      "dummy": 399.4954747430764,
+      "raid": 663.5008845168074
+     },
+     "Dwarf": {
+      "dummy": 391.8584495146879,
+      "raid": 657.08334086943
+     },
+     "NightElf": {
+      "dummy": 397.38772594616,
+      "raid": 664.0807605816876
+     },
+     "Gnome": {
+      "dummy": 397.15626258607836,
+      "raid": 664.979666262733
+     },
+     "HighOrderSkyborne": {
+      "dummy": 394.5448593439636,
+      "raid": 661.6108325307569
+     }
+    }
+   }
+  },
+  "paladin": {
+   "ret-dps": {
+    "build": "opt-ret-dps-raid-dps",
+    "current": "Human",
+    "tank": false,
+    "races": {
+     "Undead": {
+      "dummy": 372.9352290073663,
+      "raid": 786.8108306044768
+     },
+     "Human": {
+      "dummy": 368.52823172158986,
+      "raid": 779.1850684529197
+     },
+     "Dwarf": {
+      "dummy": 368.6490416130209,
+      "raid": 777.9836100640796
+     }
+    }
+   },
+   "prot-tank": {
+    "build": "prot-tank",
+    "current": "Human",
+    "tank": true,
+    "races": {
+     "Undead": {
+      "raid": 1.0
+     },
+     "Human": {
+      "raid": 1.0
+     },
+     "Dwarf": {
+      "raid": 1.0
+     }
+    }
+   },
+   "seal-of-fury-raid": {
+    "build": "ret-raid-dps",
+    "current": "Human",
+    "tank": false,
+    "races": {
+     "Undead": {
+      "dummy": 288.16310063904984,
+      "raid": 588.0659136273714
+     },
+     "Human": {
+      "dummy": 285.0293302155984,
+      "raid": 580.9207903558955
+     },
+     "Dwarf": {
+      "dummy": 284.3245184486953,
+      "raid": 579.9673434640093
+     }
+    }
+   },
+   "shockadin-raid": null
+  },
+  "shaman": {
+   "elemental-dps": {
+    "build": "elemental-raid-dps",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 397.27109867896394,
+      "raid": 505.4962986690873
+     },
+     "Tauren": {
+      "dummy": 398.26123138425066,
+      "raid": 506.54678420840423
+     },
+     "Troll": {
+      "dummy": 396.2407541170789,
+      "raid": 504.5684473252517
+     },
+     "WindshaperSkyborne": {
+      "dummy": 397.15552362283427,
+      "raid": 506.61658670927613
+     },
+     "Dwarf": {
+      "dummy": 394.0356218888801,
+      "raid": 501.5652002961175
+     }
+    }
+   },
+   "enhancement-dps": {
+    "build": "opt-enhancement-dps-raid-dps",
+    "current": "Orc",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 415.34673892140995,
+      "raid": 773.810818961218
+     },
+     "Tauren": {
+      "dummy": 413.18106370446793,
+      "raid": 770.2931954374175
+     },
+     "Troll": {
+      "dummy": 416.6576934408732,
+      "raid": 772.3722603901391
+     },
+     "WindshaperSkyborne": {
+      "dummy": 416.418994260018,
+      "raid": 773.2784870097616
+     },
+     "Dwarf": {
+      "dummy": 417.4004294212017,
+      "raid": 775.1745379524041
+     }
+    }
+   },
+   "stormcaller-dps": null
+  },
+  "druid": {
+   "balance-dps": {
+    "build": "opt-balance-dps-raid-dps",
+    "current": "Tauren",
+    "tank": false,
+    "races": {
+     "Tauren": {
+      "dummy": 461.1840506191104,
+      "raid": 517.6131305872971
+     },
+     "WindshaperSkyborne": {
+      "dummy": 460.1212094557784,
+      "raid": 516.819574250485
+     },
+     "NightElf": {
+      "dummy": 462.82318309556877,
+      "raid": 519.2441953442765
+     },
+     "HighOrderSkyborne": {
+      "dummy": 460.1212094557784,
+      "raid": 516.819574250485
+     }
+    }
+   },
+   "feral-cat-dps": {
+    "build": "opt-feral-cat-dps-raid-dps",
+    "current": "Tauren",
+    "tank": false,
+    "races": {
+     "Tauren": {
+      "dummy": 356.53471968584876,
+      "raid": 566.0101145598751
+     },
+     "WindshaperSkyborne": {
+      "dummy": 356.31833437007435,
+      "raid": 564.7977198682443
+     },
+     "NightElf": {
+      "dummy": 358.0661789168139,
+      "raid": 567.6572560100523
+     },
+     "HighOrderSkyborne": {
+      "dummy": 356.31833437007435,
+      "raid": 564.7977198682443
+     }
+    }
+   },
+   "feral-bear-tank": {
+    "build": "feral-bear-tank",
+    "current": "Tauren",
+    "tank": true,
+    "races": {
+     "Tauren": {
+      "raid": 1.0
+     },
+     "WindshaperSkyborne": {
+      "raid": 1.0
+     },
+     "NightElf": {
+      "raid": 1.0
+     },
+     "HighOrderSkyborne": {
+      "raid": 1.0
+     }
+    }
+   }
+  },
+  "hunter": {
+   "mm-raid": {
+    "build": "opt-mm-raid-raid-dps",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 428.6911100460311,
+      "raid": 765.6183681030318
+     },
+     "Tauren": {
+      "dummy": 421.620423978617,
+      "raid": 758.4312168577342
+     },
+     "Troll": {
+      "dummy": 427.8825046882173,
+      "raid": 765.5627384914515
+     },
+     "WindshaperSkyborne": {
+      "dummy": 431.0678281766712,
+      "raid": 765.70093812311
+     },
+     "Human": {
+      "dummy": 427.5009525012329,
+      "raid": 762.2416862360117
+     },
+     "Dwarf": {
+      "dummy": 425.1208580160783,
+      "raid": 759.8280834991683
+     },
+     "NightElf": {
+      "dummy": 434.96484959825943,
+      "raid": 774.3583991838689
+     },
+     "HighOrderSkyborne": {
+      "dummy": 431.0678281766712,
+      "raid": 765.70093812311
+     }
+    }
+   },
+   "mm-lonewolf-raid": {
+    "build": "opt-mm-lonewolf-raid-raid-dps",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 433.2735110836192,
+      "raid": 847.7764705715354
+     },
+     "Tauren": {
+      "dummy": 428.90803645275525,
+      "raid": 839.1077852086754
+     },
+     "Troll": {
+      "dummy": 433.35770515510853,
+      "raid": 847.9827149895385
+     },
+     "WindshaperSkyborne": {
+      "dummy": 434.3924524038473,
+      "raid": 848.5559058622579
+     },
+     "Human": {
+      "dummy": 431.45462155644645,
+      "raid": 843.7861815060941
+     },
+     "Dwarf": {
+      "dummy": 429.83190135160123,
+      "raid": 840.8279136622631
+     },
+     "NightElf": {
+      "dummy": 439.73483352287803,
+      "raid": 858.4150901325528
+     },
+     "HighOrderSkyborne": {
+      "dummy": 434.3924524038473,
+      "raid": 848.5559058622579
+     }
+    }
+   },
+   "bm-raid": {
+    "build": "mm-hawk-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 467.9678607287874,
+      "raid": 813.7675379336076
+     },
+     "Tauren": {
+      "dummy": 465.21940755316973,
+      "raid": 808.370901938109
+     },
+     "Troll": {
+      "dummy": 468.5372784136787,
+      "raid": 814.5432849475793
+     },
+     "WindshaperSkyborne": {
+      "dummy": 468.6490960651788,
+      "raid": 814.420552291351
+     },
+     "Human": {
+      "dummy": 466.45763659198803,
+      "raid": 811.0977008199714
+     },
+     "Dwarf": {
+      "dummy": 465.2399647296322,
+      "raid": 808.8143633380832
+     },
+     "NightElf": {
+      "dummy": 472.883454931006,
+      "raid": 823.3615334036867
+     },
+     "HighOrderSkyborne": {
+      "dummy": 468.6490960651788,
+      "raid": 814.420552291351
+     }
+    }
+   },
+   "melee-dps": {
+    "build": "melee-survival-raid",
+    "current": "Troll",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 462.400767429175,
+      "raid": 995.4442969416561
+     },
+     "Tauren": {
+      "dummy": 457.68517341470033,
+      "raid": 985.2001851972063
+     },
+     "Troll": {
+      "dummy": 458.8224894587556,
+      "raid": 985.6111577184071
+     },
+     "WindshaperSkyborne": {
+      "dummy": 458.85719641317587,
+      "raid": 985.9232817637967
+     },
+     "Human": {
+      "dummy": 464.6241645211978,
+      "raid": 999.4298419633099
+     },
+     "Dwarf": {
+      "dummy": 455.1570068218407,
+      "raid": 977.9957561415656
+     },
+     "NightElf": {
+      "dummy": 463.2431763608088,
+      "raid": 993.715682745984
+     },
+     "HighOrderSkyborne": {
+      "dummy": 458.85719641317587,
+      "raid": 985.9232817637967
+     }
+    }
+   }
+  },
+  "warrior": {
+   "arms-2h-raid": {
+    "build": "opt-arms-2h-raid-raid-dps",
+    "current": "Human",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 221.28389704932528,
+      "raid": 464.9565504809906
+     },
+     "Undead": {
+      "dummy": 222.35279792798678,
+      "raid": 464.8719149860844
+     },
+     "Tauren": {
+      "dummy": 220.9768514176136,
+      "raid": 464.84225252438125
+     },
+     "Troll": {
+      "dummy": 218.54567173836588,
+      "raid": 461.2625857365591
+     },
+     "WindshaperSkyborne": {
+      "dummy": 219.3201280879918,
+      "raid": 460.26813695572207
+     },
+     "Human": {
+      "dummy": 217.5660270748255,
+      "raid": 456.2283264563787
+     },
+     "Dwarf": {
+      "dummy": 217.3905352200108,
+      "raid": 456.2445046543721
+     },
+     "NightElf": {
+      "dummy": 217.70937809397458,
+      "raid": 456.8071311964246
+     },
+     "Gnome": {
+      "dummy": 221.01018027045103,
+      "raid": 461.3736973543947
+     },
+     "HighOrderSkyborne": {
+      "dummy": 219.3201280879918,
+      "raid": 460.26813695572207
+     }
+    }
+   },
+   "fury-dw-raid": {
+    "build": "opt-fury-dw-raid-raid-dps",
+    "current": "Human",
+    "tank": false,
+    "races": {
+     "Orc": {
+      "dummy": 260.4643817534561,
+      "raid": 448.3890639923169
+     },
+     "Undead": {
+      "dummy": 268.11192347805195,
+      "raid": 462.8085892917901
+     },
+     "Tauren": {
+      "dummy": 260.9806644235648,
+      "raid": 448.7509611841333
+     },
+     "Troll": {
+      "dummy": 258.0039401899156,
+      "raid": 446.9407946024161
+     },
+     "WindshaperSkyborne": {
+      "dummy": 258.47596857215,
+      "raid": 444.4917009019666
+     },
+     "Human": {
+      "dummy": 256.4885498973556,
+      "raid": 441.1643997029312
+     },
+     "Dwarf": {
+      "dummy": 256.36597861710493,
+      "raid": 440.9450124959401
+     },
+     "NightElf": {
+      "dummy": 259.55468954968853,
+      "raid": 441.625900471719
+     },
+     "Gnome": {
+      "dummy": 256.0484651488565,
+      "raid": 447.3018042320834
+     },
+     "HighOrderSkyborne": {
+      "dummy": 258.47596857215,
+      "raid": 444.4917009019666
+     }
+    }
+   },
+   "prot-tank": {
+    "build": "prot-raid-tank",
+    "current": "Dwarf",
+    "tank": true,
+    "races": {
+     "Orc": {
+      "raid": 1.0
+     },
+     "Undead": {
+      "raid": 1.0
+     },
+     "Tauren": {
+      "raid": 1.0
+     },
+     "Troll": {
+      "raid": 1.0
+     },
+     "WindshaperSkyborne": {
+      "raid": 1.0
+     },
+     "Human": {
+      "raid": 1.0
+     },
+     "Dwarf": {
+      "raid": 1.0
+     },
+     "NightElf": {
+      "raid": 1.0
+     },
+     "Gnome": {
+      "raid": 1.0
+     },
+     "HighOrderSkyborne": {
+      "raid": 1.0
+     }
+    }
+   },
+   "arms-battle-raid": null
+  }
+ },
+ "date": "2026-09-29"
+}
