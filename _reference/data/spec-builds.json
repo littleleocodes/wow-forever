@@ -14,5 +14,73 @@
    "mode": "pvp",
    "date": "2026-09-29"
   }
+ },
+ "hunter": {
+  "beast-mastery-raid": {
+   "model": "bm-leveling",
+   "profile": "raid-dps",
+   "entry": "bm-raid",
+   "search": {
+    "start": "/tmp/tmpbab3akiw/hunter-beast-mastery-start.json",
+    "setting": "dummy",
+    "kept": [],
+    "moves": [
+     {
+      "round": 1,
+      "move": "5 points Improved Arcane Shot -> Careful Aim",
+      "gain_seed1": 0.024846657534732364,
+      "gain_seed2": 0.024846943176632275,
+      "split": "31/15/5"
+     },
+     {
+      "round": 2,
+      "move": "5 points Improved Tracking -> Mortal Shots",
+      "gain_seed1": 0.029616577570082958,
+      "gain_seed2": 0.029543585856807164,
+      "split": "31/20/0"
+     },
+     {
+      "round": 3,
+      "move": "2 points Endurance Training -> Focused Fire",
+      "gain_seed1": 0.020000000000000906,
+      "gain_seed2": 0.01999999999999802,
+      "split": "31/20/0"
+     },
+     {
+      "round": 4,
+      "move": "1 point Bestial Wrath -> Trueshot Aura",
+      "gain_seed1": 0.016742986971092888,
+      "gain_seed2": 0.016435418516633105,
+      "split": "30/21/0"
+     },
+     {
+      "round": 5,
+      "move": "2 points Endurance Training -> Deadly Aspects",
+      "gain_seed1": 0.0162917694269602,
+      "gain_seed2": 0.016146806128475077,
+      "split": "30/21/0"
+     }
+    ],
+    "dps_start": 421.07597762265567,
+    "dps_end": 468.14099093933805
+   },
+   "spec": "Beast Mastery",
+   "mode": "raid",
+   "date": "2026-09-29"
+  },
+  "beast-mastery-pvp": {
+   "model": "bm-leveling",
+   "profile": "pvp",
+   "spec": "Beast Mastery",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "survival-pvp": {
+   "model": "melee-dps",
+   "profile": "pvp",
+   "spec": "Survival",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
  }
 }
