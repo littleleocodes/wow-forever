@@ -90,7 +90,7 @@
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -99,7 +99,7 @@
   "builds": [
    {
     "label": "opt-mm-raid-raid-dps",
-    "talents": "53200005050002-005355000150104"
+    "talents": "53200005050002-005355010150004"
    },
    {
     "label": "sim preset: Marksmanship",
@@ -137,26 +137,26 @@
   "final": {
    "raid": {
     "opt-mm-raid-raid-dps": {
-     "before": 647.3904028588241,
-     "after": 654.1763533587024,
-     "base": 647.3904028588241,
+     "before": 643.6885186496314,
+     "after": 765.8976487079499,
+     "base": 643.6885186496314,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Marksmanship": {
-     "before": 681.0486888371892,
-     "after": 694.9771952017448,
-     "base": 681.0486888371892,
+     "before": 681.1448639275205,
+     "after": 817.137790824437,
+     "base": 681.1448639275205,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.006672922542800001,
+     "oom_after": 0.006672922542800001
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  }
 }

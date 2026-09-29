@@ -170,7 +170,7 @@
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -233,18 +233,18 @@
   "final": {
    "raid": {
     "opt-fury-dw-raid-raid-dps": {
-     "before": 382.7722605355515,
-     "after": 441.24079899824466,
-     "base": 382.7722605355515,
+     "before": 382.7559920189903,
+     "after": 441.09947305076474,
+     "base": 382.7559920189903,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 377.28000580466835,
-     "after": 438.7886446754694,
-     "base": 377.28000580466835,
+     "before": 377.5160049267463,
+     "after": 438.66363829111253,
+     "base": 377.5160049267463,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -253,6 +253,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

@@ -33,3 +33,33 @@ hunter has no aspect and Deadly Aspects measures zero. Warlock Bane of Doom is n
 **Root cause to fix**: `raidsim/apl_opt.py`'s insertion pool (`new_spell_pool`) holds only spells the spellbook marks new; old abilities
 that no rotation casts (Arcane Shot, traps) were never tried. Extending the pool to every implemented damaging ability the entry's
 rotations do not cast would have found both.
+
+## Overnight audit (2026-09-29, second pass, all classes)
+
+**Data**: talentsforever.com's data.json (2026-09-26) matches our talent data exactly (client build 70009; check_beta_build.py: no newer
+build). The site also carries the account-wide **Legacy** perks (16 points at launch; Talented gives talent points from level 5, Thrill of
+Adventure heals 5% on a kill, Field Medicine shortens the bandage debuff, Gourmand doubles food buffs): none changes raid damage, several
+change leveling; the guides assume none (they are earned).
+
+**Rotation search**: `apl_opt.py`'s insertion pool now holds every combat spell of the class spellbook (not only new Forever spells),
+each also guarded by "only while its dot is not ticking" (spells "over N sec") and "only while its aura is not on the target / on you"
+(spells lasting "for N sec/min": a plain Curse of the Elements took a warlock to 0 DPS), plus an insertion spot after everything (the traps
+won there). `--insert-only` sweeps just those insertions; every raid entry was swept (results: the rotation-search records, pass
+"2026-09-29").
+
+**Simulator patch**: Aspect of the Beast and the melee half of Deadly Aspects (`raidsim/patches/`): melee hunter +12.3% dummy, +12.9% raid.
+
+**Warrior stance**: the warrior rotations never leave Berserker Stance, so Overpower and Rend (Battle Stance) were never cast. A Battle
+Stance Arms rotation (Overpower, Rend when not ticking, Slam) lifts the simulator's Arms 39/12/0 preset from 167 to 198 dummy DPS and 377
+to 454 raid; our Berserker builds stay ahead on the dummy (Arms 216, Fury 257). New entry `arms-battle-raid` (rotation-only) with its own
+talent search.
+
+**Fight lab (leveling)**, spells no leveling rotation used, checked one by one:
+
+| Class | Spell | Result |
+|---|---|---|
+| Hunter (melee) | Immolation Trap | Added: the parser read no damage from the trap text (fixed in the hunter module), trap talents now count; cast while the mob is above 70% health: -4.6% to -6.3% time per kill at 40-60. |
+| Warlock | Curse of the Elements | Added and measured: +1.7% to +3.3% time per kill at 50-60 (the mob dies before the curse repays its GCD and mana), so the tuned rules keep it off. A Curse sits beside a Bane in Forever; the raid rotations already cast it. |
+| Rogue | Ambush | Not added: the leveling rogue plays swords (Ambush needs a dagger) and opens with Cheap Shot / Garrote. |
+| Warrior | Slam | Not added: the module's measured reason stands (a 1.5 s cast on an 18 s cooldown in Forever). |
+| Others | wards, blessings on others, crowd control, curses of weakness, totems of utility | No damage while leveling. |
