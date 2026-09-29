@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -81,18 +81,18 @@
   "final": {
    "dummy": {
     "assassination-seal-fate-raid": {
-     "before": 147.98359053106364,
-     "after": 413.3357982641758,
-     "base": 147.98359053106364,
+     "before": 147.9036919029935,
+     "after": 413.00571872965503,
+     "base": 147.9036919029935,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 335.10755420444053,
-     "after": 376.7339444509217,
-     "base": 335.10755420444053,
+     "before": 335.1972699152598,
+     "after": 376.82115237698673,
+     "base": 335.1972699152598,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -101,12 +101,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "rogue",
   "spec": "assassination-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -137,18 +137,18 @@
   "final": {
    "raid": {
     "assassination-seal-fate-raid": {
-     "before": 293.92914026702505,
-     "after": 693.0214900156515,
-     "base": 293.92914026702505,
+     "before": 294.0108112467974,
+     "after": 693.2139125775362,
+     "base": 294.0108112467974,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Mutilate": {
-     "before": 652.1841777935717,
-     "after": 658.242471045153,
-     "base": 652.1841777935717,
+     "before": 651.8474362074176,
+     "after": 658.8968327942696,
+     "base": 651.8474362074176,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -157,6 +157,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

@@ -9,7 +9,6 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Moonglow | Balance | 2 | +15.99% | manual |
 | Insect Swarm | Balance | 4 | +11.49% | manual |
 | Nature's Splendor | Balance | 3 | +2.81% | manual |
 | Improved Starfire | Balance | 4 | +2.63% | manual |
@@ -25,6 +24,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Heart of the Wild | Feral Combat | 1 | +0.13% | manual |
 | Improved Wrath | Balance | 1 | +0.00% | manual |
 | Genesis | Balance | 1 | +0.00% | manual |
+| Moonglow | Balance | 2 | +0.00% | manual |
 | Improved Entangling Roots | Balance | 3 | +0.00% | manual |
 | Overgrowth | Balance | 5 | +0.00% | manual |
 | Eclipse | Balance | 5 | +0.00% | manual |
@@ -40,12 +40,12 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Primal Bite | Feral Combat | 4 | +0.00% | manual |
 | Predatory Strikes | Feral Combat | 4 | +0.00% | manual |
 
-## Optimized build: 35/5/11  score +155.08%  (dps x2.551, sustain x1.318, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.252  — use this to compare models with different pet shares.
+## Optimized build: 34/6/11  score +122.07%  (dps x2.221, sustain x1.668, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.090  — use this to compare models with different pet shares.
 
 ```
-  Balance: Improved Wrath 4, Genesis 5, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Moonglow 1, Nature's Splendor 1, Insect Swarm 1, Improved Starfire 5, Vengeance 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
-  Feral Combat: Heart of the Wild 5
+  Balance: Improved Wrath 1, Genesis 5, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Moonglow 3, Nature's Splendor 1, Insect Swarm 1, Improved Starfire 5, Vengeance 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
+  Feral Combat: Heart of the Wild 5, Ferocity 1
   Restoration: Nature's Focus 5, Naturalist 5, Reflection 1
 ```
 
@@ -53,13 +53,12 @@ Absolute DPS index (character alone, no talents = 1.00): 1.252  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Nature's Swiftness | Restoration 5 | 1/1 | +1.28% | no |
-| Improved Wrath | Balance 1 | 5/5 | +0.00% | yes |
-| Moonglow | Balance 2 | 2/3 | +0.00% | yes |
+| Nature's Swiftness | Restoration 5 | 1/1 | +1.11% | no |
+| Improved Wrath | Balance 1 | 2/5 | +0.00% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |
 | Overgrowth | Balance 5 | 1/2 | +0.00% | yes |
 | Eclipse | Balance 5 | 1/3 | +0.00% | yes |
-| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |
+| Ferocity | Feral Combat 1 | 2/5 | +0.00% | yes |
 | Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |
 | Feral Instinct | Feral Combat 2 | 1/3 | +0.00% | yes |
 | Brutal Impact | Feral Combat 2 | 1/2 | +0.00% | yes |
@@ -68,4 +67,5 @@ Absolute DPS index (character alone, no talents = 1.00): 1.252  — use this to 
 | Feral Charge | Feral Combat 3 | 1/1 | +0.00% | no |
 | Sharpened Claws | Feral Combat 3 | 1/2 | +0.00% | no |
 | Shredding Attacks | Feral Combat 4 | 1/3 | +0.00% | no |
+| Primal Bite | Feral Combat 4 | 1/1 | +0.00% | no |
 

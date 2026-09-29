@@ -351,11 +351,11 @@
       "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0}
     },
     "frost-raid": {
-      "note": "Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27). Raid sim shares (2026-09-28, frost-fingers-of-frost-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): frostbolt 75%, ice_lance 25%; 0% of the damage matched no source.",
+      "note": "Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27). Raid sim shares (2026-09-29, frost-fingers-of-frost-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): frostbolt 61%, ice_lance 20%, missiles 19%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "frostbolt",
-          "share": 0.7494,
+          "share": 0.6125,
           "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -366,7 +366,7 @@
         },
         {
           "id": "ice_lance",
-          "share": 0.2506,
+          "share": 0.2015,
           "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
           "min_level": 20,
           "enabled_by": "Ice Lance",
@@ -398,7 +398,7 @@
         },
         {
           "id": "missiles",
-          "share": 0.0,
+          "share": 0.186,
           "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
           "min_level": 8,
           "game_overrides": {
@@ -433,14 +433,14 @@
           "profiles": ["raid-dps", "raid-dps-extwc"],
           "loss": 0.045,
           "cap": 0.9,
-          "rms": 0.0097,
-          "points": 54,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "rms": 0.0109,
+          "points": 57,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "fire-raid": {
-      "note": "Raid Fireball spam with Scorch upkeep. Ignite is encoded as extra crit damage on Fire sources. Raid sim shares (2026-09-28, fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): fireball 51%, fire_blast 20%, ignite 12%, pyroblast 10%, scorch 7%; 0% of the damage matched no source.",
+      "note": "Raid Fireball spam with Scorch upkeep. Ignite is encoded as extra crit damage on Fire sources. Raid sim shares (2026-09-29, fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): fireball 51%, fire_blast 20%, ignite 12%, pyroblast 10%, scorch 7%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "fireball",
@@ -546,9 +546,9 @@
           "profiles": ["raid-dps", "raid-dps-extwc"],
           "loss": 0.17,
           "cap": 0.07,
-          "rms": 0.0059,
-          "points": 28,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 3-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "rms": 0.0056,
+          "points": 34,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 3-7% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     }

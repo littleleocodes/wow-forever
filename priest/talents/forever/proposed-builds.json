@@ -687,7 +687,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +373.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +359.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
@@ -713,17 +713,17 @@
         ]
       },
       "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 204.6 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 188.2 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 38.9 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 38.9 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 37.8 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 19.9 points of score in this model."},
-        {"talent": "Improved Mind Blast", "why": "Removing it costs 11.3 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 11.0 points of score in this model."}
+        {"talent": "Mind Flay", "why": "Removing it costs 192.0 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 183.6 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 37.7 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 37.7 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 35.4 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 19.3 points of score in this model."},
+        {"talent": "Improved Mind Blast", "why": "Removing it costs 10.7 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 10.5 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).", "Report: priest/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).", "Report: priest/talents/forever/optimizer/shadow-dps-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -733,7 +733,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +350.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +337.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
@@ -760,14 +760,14 @@
         ]
       },
       "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 204.6 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 167.1 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 38.9 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 38.9 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 37.8 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 19.9 points of score in this model."},
-        {"talent": "Improved Mind Blast", "why": "Removing it costs 11.3 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 10.8 points of score in this model."}
+        {"talent": "Mind Flay", "why": "Removing it costs 192.0 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 162.5 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 37.7 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 37.7 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 35.4 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 19.3 points of score in this model."},
+        {"talent": "Improved Mind Blast", "why": "Removing it costs 10.7 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 10.3 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: priest/talents/forever/optimizer/shadow-dps-parse.md"],

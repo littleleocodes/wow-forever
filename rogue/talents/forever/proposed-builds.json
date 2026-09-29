@@ -1086,7 +1086,7 @@
         {"talent": "Precision", "why": "Removing it costs 6.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-combat-daggers-raid-r1 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (414 vs 409 DPS; the calibration moved the model past the better build).", "Report: rogue/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
+      "notes": ["Allocation taken from cand-combat-daggers-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (414 vs 409 DPS; the calibration moved the model past the better build).", "Report: rogue/talents/forever/optimizer/combat-daggers-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/rogue"]
     },

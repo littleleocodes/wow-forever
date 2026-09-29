@@ -263,7 +263,8 @@ def adopt(cls, P, race, a, log):
     winner = race["recommended"]
     cand_path = race["candidate_files"].get(winner)
     if cand_path and not pathlib.Path(cand_path).exists():   # a race stored before the 2026-09-27 layout: same file, new folder
-        moved = paths.fightlab_dir(cls) / "candidates" / pathlib.Path(cand_path).name
+        # the file name by either separator: races stored by the Windows sessions keep "F:\\..." paths, which pathlib on Linux reads as one name
+        moved = paths.fightlab_dir(cls) / "candidates" / pathlib.PureWindowsPath(cand_path).name
         cand_path = str(moved) if moved.exists() else cand_path
     if not cand_path:
         print(f"  adopt: no candidate file for {winner}")

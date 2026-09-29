@@ -3,7 +3,7 @@
  "spec": "balance-dps",
  "game": "forever",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "druid/balance",
   "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
@@ -22,11 +22,11 @@
    "mhImbueId": 25122
   },
   "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
-  "iterations": 20000,
+  "iterations": 3000,
   "seed": 1,
   "duration": 120.0
  },
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "results": [
   {
    "label": "balance-moonkin-raid",
@@ -35,82 +35,82 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "9835": 8.576,
+    "24977": 8.998666666666667,
+    "25298": 31.346333333333334,
     "29166": 1.0,
-    "24977": 8.9981,
-    "25298": 31.36215,
-    "2912": 0.017,
-    "9835": 8.55955
+    "2912": 0.018
    },
    "casts": {
-    "OtherActionManaGain": 10.99675,
-    "Innervate": 1.0,
-    "Insect Swarm": 8.9981,
-    "Starfire": 31.37915,
-    "item 13444": 1.0,
+    "Moonfire": 8.576,
+    "Insect Swarm": 8.998666666666667,
+    "Starfire": 31.364333333333335,
     "item 18820": 2.0,
-    "Moonfire": 8.55955
+    "OtherActionManaGain": 10.997333333333334,
+    "item 13444": 1.0,
+    "Innervate": 1.0
    },
-   "dps": 461.3446527561973,
-   "dps_stdev": 32.89731202686805,
-   "threat": 376.5765552674576,
+   "dps": 460.41016550530264,
+   "dps_stdev": 32.69942834485749,
+   "threat": 375.8289655153529,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.012968200000000003,
+   "oom_seconds": 0.011545000000000001,
    "error": null,
-   "scorer": 1.5440530595228732,
+   "scorer": 1.2148226635846187,
    "shares": {
-    "Starfire": 0.6288114313263345,
-    "Moonfire": 0.18922922307400877,
-    "Insect Swarm": 0.18195934559965662
+    "Starfire": 0.6283810865125973,
+    "Moonfire": 0.18956710814348415,
+    "Insect Swarm": 0.18205180534391857
    },
    "source_shares": {
-    "starfire": 0.6288,
-    "moonfire_direct": 0.1892,
-    "insect_swarm": 0.182
+    "starfire": 0.6284,
+    "moonfire_direct": 0.1896,
+    "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
   },
   {
    "label": "opt-balance-dps-raid-dps",
-   "talents": "0532220115501051-05-505003",
-   "split": "33/5/13",
+   "talents": "1532220115501051-15-505001",
+   "split": "34/6/11",
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "9835": 8.5597,
-    "25298": 31.3799,
     "29166": 1.0,
-    "24977": 8.99995,
-    "2912": 0.0074
+    "24977": 8.977,
+    "9835": 8.473666666666666,
+    "2912": 0.22066666666666668,
+    "25298": 31.143
    },
    "casts": {
-    "Moonfire": 8.5597,
-    "item 18820": 2.0,
-    "Starfire": 31.3873,
+    "item 13444": 1.0,
     "Innervate": 1.0,
-    "Insect Swarm": 8.99995,
-    "OtherActionManaGain": 10.99345,
-    "item 13444": 1.0
+    "Insect Swarm": 8.977,
+    "item 18820": 2.0,
+    "Moonfire": 8.473666666666666,
+    "OtherActionManaGain": 11.0,
+    "Starfire": 31.363666666666667
    },
-   "dps": 462.1949335661351,
-   "dps_stdev": 33.01124508490471,
-   "threat": 469.69576635363524,
+   "dps": 460.77695990656,
+   "dps_stdev": 32.884915665596324,
+   "threat": 468.27779323989313,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.00445265,
+   "oom_seconds": 0.2567226666666667,
    "error": null,
-   "scorer": 1.5508407920163116,
+   "scorer": 1.2207319836377302,
    "shares": {
-    "Starfire": 0.6289935280405917,
-    "Moonfire": 0.1891030620659032,
-    "Insect Swarm": 0.18190340989350512
+    "Starfire": 0.6285732514806457,
+    "Moonfire": 0.18887208780837156,
+    "Insect Swarm": 0.18255466071098284
    },
    "source_shares": {
-    "starfire": 0.629,
-    "moonfire_direct": 0.1891,
-    "insect_swarm": 0.1819
+    "starfire": 0.6286,
+    "moonfire_direct": 0.1889,
+    "insect_swarm": 0.1826
    },
    "unmatched_share": 0.0
   },
@@ -122,38 +122,38 @@
    "measured": true,
    "spell_casts": {
     "29166": 1.0,
-    "25298": 29.82035,
-    "9835": 8.0973,
-    "24977": 8.88935,
-    "2912": 1.09555
+    "2912": 1.1056666666666666,
+    "25298": 29.815,
+    "24977": 8.872666666666667,
+    "9835": 8.085
    },
    "casts": {
+    "item 13444": 1.0,
     "Innervate": 1.0,
+    "Starfire": 30.92066666666667,
     "item 18820": 2.0,
-    "OtherActionManaGain": 11.0,
-    "Starfire": 30.9159,
-    "Moonfire": 8.0973,
-    "Insect Swarm": 8.88935,
-    "item 13444": 1.0
+    "Insect Swarm": 8.872666666666667,
+    "Moonfire": 8.085,
+    "OtherActionManaGain": 11.0
    },
-   "dps": 429.3803337666396,
-   "dps_stdev": 32.86061527142985,
-   "threat": 436.8811670999729,
+   "dps": 429.1221777706005,
+   "dps_stdev": 32.91624235047653,
+   "threat": 436.62301110393395,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 2.6893647499999975,
+   "oom_seconds": 2.6890343333333324,
    "error": null,
-   "scorer": 1.413210070407633,
+   "scorer": 0.9810044079921272,
    "shares": {
-    "Starfire": 0.6272410450143945,
-    "Moonfire": 0.18864651232759144,
-    "Insect Swarm": 0.18411244265801407
+    "Starfire": 0.6270777653987756,
+    "Moonfire": 0.188565784883489,
+    "Insect Swarm": 0.1843564497177354
    },
    "source_shares": {
-    "starfire": 0.6272,
+    "starfire": 0.6271,
     "moonfire_direct": 0.1886,
-    "insect_swarm": 0.1841
+    "insect_swarm": 0.1844
    },
    "unmatched_share": 0.0
   },
@@ -164,39 +164,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "2912": 0.02805,
-    "25298": 31.34545,
-    "24977": 8.9977,
+    "2912": 0.028,
+    "25298": 31.332666666666668,
     "29166": 1.0,
-    "9835": 8.56385
+    "9835": 8.594666666666667,
+    "24977": 8.99
    },
    "casts": {
-    "OtherActionManaGain": 10.9981,
-    "Starfire": 31.3735,
+    "OtherActionManaGain": 10.998,
+    "Starfire": 31.360666666666667,
     "item 18820": 2.0,
-    "Insect Swarm": 8.9977,
     "Innervate": 1.0,
     "item 13444": 1.0,
-    "Moonfire": 8.56385
+    "Moonfire": 8.594666666666667,
+    "Insect Swarm": 8.99
    },
-   "dps": 460.9658083907905,
-   "dps_stdev": 32.87328934033555,
-   "threat": 376.2734798876322,
+   "dps": 460.11307584654656,
+   "dps_stdev": 32.86532353417851,
+   "threat": 375.5912938439039,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0214684,
+   "oom_seconds": 0.021651666666666666,
    "error": null,
-   "scorer": 1.5406586865020389,
+   "scorer": 1.2118675623664807,
    "shares": {
-    "Starfire": 0.6287352186011735,
-    "Moonfire": 0.1892695607568211,
-    "Insect Swarm": 0.18199522064200546
+    "Starfire": 0.6282210993720001,
+    "Moonfire": 0.18970530237844357,
+    "Insect Swarm": 0.1820735982495563
    },
    "source_shares": {
-    "starfire": 0.6287,
-    "moonfire_direct": 0.1893,
-    "insect_swarm": 0.182
+    "starfire": 0.6282,
+    "moonfire_direct": 0.1897,
+    "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
   },
@@ -207,39 +207,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "2912": 0.02805,
-    "29166": 1.0,
-    "25298": 31.34545,
-    "9835": 8.56385,
-    "24977": 8.9977
+    "24977": 8.99,
+    "2912": 0.028,
+    "25298": 31.332666666666668,
+    "9835": 8.594666666666667,
+    "29166": 1.0
    },
    "casts": {
-    "item 13444": 1.0,
-    "Starfire": 31.3735,
-    "Innervate": 1.0,
-    "Moonfire": 8.56385,
-    "OtherActionManaGain": 10.9981,
+    "OtherActionManaGain": 10.998,
     "item 18820": 2.0,
-    "Insect Swarm": 8.9977
+    "Insect Swarm": 8.99,
+    "item 13444": 1.0,
+    "Starfire": 31.360666666666667,
+    "Moonfire": 8.594666666666667,
+    "Innervate": 1.0
    },
-   "dps": 453.87428246414885,
-   "dps_stdev": 32.78995664319337,
-   "threat": 370.6002591463192,
+   "dps": 453.025812280849,
+   "dps_stdev": 32.784257711508175,
+   "threat": 369.92148299134595,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0214684,
+   "oom_seconds": 0.021651666666666666,
    "error": null,
-   "scorer": 1.5023415489991399,
+   "scorer": 1.1785091132463097,
    "shares": {
-    "Starfire": 0.638558846587971,
-    "Moonfire": 0.185404208826463,
-    "Insect Swarm": 0.176036944585566
+    "Starfire": 0.6380491674159937,
+    "Moonfire": 0.18583463356745794,
+    "Insect Swarm": 0.17611619901654832
    },
    "source_shares": {
-    "starfire": 0.6386,
-    "moonfire_direct": 0.1854,
-    "insect_swarm": 0.176
+    "starfire": 0.638,
+    "moonfire_direct": 0.1858,
+    "insect_swarm": 0.1761
    },
    "unmatched_share": 0.0
   },
@@ -250,39 +250,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "9835": 8.594666666666667,
     "29166": 1.0,
-    "25298": 31.34545,
-    "24977": 8.9977,
-    "2912": 0.02805,
-    "9835": 8.56385
+    "24977": 8.99,
+    "2912": 0.028,
+    "25298": 31.332666666666668
    },
    "casts": {
-    "Innervate": 1.0,
     "item 13444": 1.0,
-    "Starfire": 31.3735,
+    "Moonfire": 8.594666666666667,
+    "Innervate": 1.0,
+    "Insect Swarm": 8.99,
     "item 18820": 2.0,
-    "Insect Swarm": 8.9977,
-    "Moonfire": 8.56385,
-    "OtherActionManaGain": 10.9981
+    "Starfire": 31.360666666666667,
+    "OtherActionManaGain": 10.998
    },
-   "dps": 460.9658083907905,
-   "dps_stdev": 32.87328934033555,
-   "threat": 376.2734798876322,
+   "dps": 460.11307584654656,
+   "dps_stdev": 32.86532353417851,
+   "threat": 375.5912938439039,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0214684,
+   "oom_seconds": 0.021651666666666666,
    "error": null,
-   "scorer": 1.5406586865020389,
+   "scorer": 1.2118675623664807,
    "shares": {
-    "Starfire": 0.6287352186011735,
-    "Moonfire": 0.1892695607568211,
-    "Insect Swarm": 0.18199522064200546
+    "Starfire": 0.6282210993720001,
+    "Moonfire": 0.18970530237844357,
+    "Insect Swarm": 0.1820735982495563
    },
    "source_shares": {
-    "starfire": 0.6287,
-    "moonfire_direct": 0.1893,
-    "insect_swarm": 0.182
+    "starfire": 0.6282,
+    "moonfire_direct": 0.1897,
+    "insect_swarm": 0.1821
    },
    "unmatched_share": 0.0
   },
@@ -293,39 +293,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29166": 1.0,
-    "24977": 8.98645,
-    "9835": 8.56495,
-    "2912": 0.13795,
-    "25298": 31.09285
+    "24977": 8.961666666666666,
+    "2912": 0.14966666666666667,
+    "25298": 31.097666666666665,
+    "9835": 8.582,
+    "29166": 1.0
    },
    "casts": {
-    "Innervate": 1.0,
     "item 18820": 2.0,
-    "Insect Swarm": 8.98645,
-    "Moonfire": 8.56495,
+    "Insect Swarm": 8.961666666666666,
+    "Starfire": 31.247333333333334,
+    "Moonfire": 8.582,
     "item 13444": 1.0,
-    "Starfire": 31.2308,
-    "OtherActionManaGain": 11.0
+    "OtherActionManaGain": 11.0,
+    "Innervate": 1.0
    },
-   "dps": 449.4176689979539,
-   "dps_stdev": 31.358406191718352,
-   "threat": 456.9185023312873,
+   "dps": 450.6804801422902,
+   "dps_stdev": 30.787613684279656,
+   "threat": 458.18131347562405,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.08679965000000002,
+   "oom_seconds": 0.08438666666666667,
    "error": null,
-   "scorer": 1.4686860071788916,
+   "scorer": 1.1492089944851527,
    "shares": {
-    "Starfire": 0.6271359885462598,
-    "Moonfire": 0.19078550003159386,
-    "Insect Swarm": 0.18207851142214626
+    "Starfire": 0.6280119116906798,
+    "Moonfire": 0.1905972056084112,
+    "Insect Swarm": 0.18139088270090886
    },
    "source_shares": {
-    "starfire": 0.6271,
-    "moonfire_direct": 0.1908,
-    "insect_swarm": 0.1821
+    "starfire": 0.628,
+    "moonfire_direct": 0.1906,
+    "insect_swarm": 0.1814
    },
    "unmatched_share": 0.0
   },
@@ -336,39 +336,39 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "2912": 0.0074,
-    "24977": 8.99995,
+    "25298": 31.378666666666668,
     "29166": 1.0,
-    "25298": 31.3799,
-    "9835": 8.5597
+    "2912": 0.007,
+    "9835": 8.569666666666667,
+    "24977": 8.993
    },
    "casts": {
-    "Starfire": 31.3873,
-    "item 18820": 2.0,
-    "Insect Swarm": 8.99995,
-    "Innervate": 1.0,
-    "OtherActionManaGain": 10.99345,
     "item 13444": 1.0,
-    "Moonfire": 8.5597
+    "Starfire": 31.38566666666667,
+    "Innervate": 1.0,
+    "OtherActionManaGain": 10.994666666666667,
+    "item 18820": 2.0,
+    "Moonfire": 8.569666666666667,
+    "Insect Swarm": 8.993
    },
-   "dps": 462.1949335661351,
-   "dps_stdev": 33.01124508490471,
-   "threat": 469.69576635363524,
+   "dps": 461.4031443613686,
+   "dps_stdev": 32.88003636071861,
+   "threat": 468.9039772502576,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.00445265,
+   "oom_seconds": 0.0032329999999999998,
    "error": null,
-   "scorer": 1.5508407920163116,
+   "scorer": 1.2207319836377302,
    "shares": {
-    "Starfire": 0.6289935280405917,
-    "Moonfire": 0.1891030620659032,
-    "Insect Swarm": 0.18190340989350512
+    "Starfire": 0.6286635355360463,
+    "Moonfire": 0.1892969877434856,
+    "Insect Swarm": 0.18203947672046808
    },
    "source_shares": {
-    "starfire": 0.629,
-    "moonfire_direct": 0.1891,
-    "insect_swarm": 0.1819
+    "starfire": 0.6287,
+    "moonfire_direct": 0.1893,
+    "insect_swarm": 0.182
    },
    "unmatched_share": 0.0
   },
@@ -379,39 +379,82 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "24977": 8.17115,
     "29166": 1.0,
-    "2912": 3.43855,
-    "9835": 7.2916,
-    "25298": 26.0107
+    "2912": 3.4363333333333332,
+    "25298": 25.998666666666665,
+    "9835": 7.27,
+    "24977": 8.164333333333333
    },
    "casts": {
     "OtherActionManaGain": 11.0,
-    "Insect Swarm": 8.17115,
     "Innervate": 1.0,
-    "item 18820": 2.0,
-    "Starfire": 29.44925,
-    "Moonfire": 7.2916,
-    "item 13444": 1.0
+    "Starfire": 29.435,
+    "Moonfire": 7.27,
+    "item 13444": 1.0,
+    "Insect Swarm": 8.164333333333333,
+    "item 18820": 2.0
    },
-   "dps": 416.94833852223,
-   "dps_stdev": 36.46190588279246,
-   "threat": 424.4491718555636,
+   "dps": 417.2762665759902,
+   "dps_stdev": 36.69741000393608,
+   "threat": 424.7770999093234,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 10.071182750000013,
+   "oom_seconds": 10.167100333333334,
    "error": null,
-   "scorer": 1.5508407920163116,
+   "scorer": 0.8876221860920703,
    "shares": {
-    "Starfire": 0.6316548757927437,
-    "Moonfire": 0.18456097802819282,
-    "Insect Swarm": 0.1837841461790635
+    "Starfire": 0.631623129384242,
+    "Moonfire": 0.18462343291609648,
+    "Insect Swarm": 0.18375343769966163
    },
    "source_shares": {
-    "starfire": 0.6317,
+    "starfire": 0.6316,
     "moonfire_direct": 0.1846,
     "insect_swarm": 0.1838
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "cand-balance-dps-r7",
+   "talents": "1532220115501051-15-505001",
+   "split": "34/6/11",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "29166": 1.0,
+    "2912": 0.22066666666666668,
+    "25298": 31.143,
+    "9835": 8.473666666666666,
+    "24977": 8.977
+   },
+   "casts": {
+    "item 18820": 2.0,
+    "Innervate": 1.0,
+    "Starfire": 31.363666666666667,
+    "Moonfire": 8.473666666666666,
+    "OtherActionManaGain": 11.0,
+    "Insect Swarm": 8.977,
+    "item 13444": 1.0
+   },
+   "dps": 460.77695990656,
+   "dps_stdev": 32.884915665596324,
+   "threat": 468.27779323989313,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.2567226666666667,
+   "error": null,
+   "scorer": 1.2207319836377302,
+   "shares": {
+    "Starfire": 0.6285732514806457,
+    "Moonfire": 0.18887208780837156,
+    "Insect Swarm": 0.18255466071098284
+   },
+   "source_shares": {
+    "starfire": 0.6286,
+    "moonfire_direct": 0.1889,
+    "insect_swarm": 0.1826
    },
    "unmatched_share": 0.0
   },
@@ -421,39 +464,39 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "24977": 7.96485,
-    "25298": 27.1631,
-    "29166": 0.99965,
-    "9835": 8.44525,
-    "2912": 0.00035
+    "24977": 7.968,
+    "29166": 0.9996666666666667,
+    "25298": 27.162666666666667,
+    "2912": 0.0003333333333333333,
+    "9835": 8.453
    },
    "casts": {
-    "Insect Swarm": 7.96485,
-    "Starfire": 27.16345,
     "item 18820": 2.0,
-    "Innervate": 0.99965,
-    "Moonfire": 8.44525,
+    "Insect Swarm": 7.968,
+    "Innervate": 0.9996666666666667,
+    "Starfire": 27.163,
+    "OtherActionManaGain": 10.792333333333334,
     "item 13444": 1.0,
-    "OtherActionManaGain": 10.8078
+    "Moonfire": 8.453
    },
-   "dps": 410.655143775151,
-   "dps_stdev": 29.67075204987926,
-   "threat": 294.9594179592725,
+   "dps": 411.05175315293855,
+   "dps_stdev": 29.236689272194397,
+   "threat": 295.237043234835,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0001313,
+   "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Starfire": 0.6089011480412888,
-    "Moonfire": 0.20989367051244764,
-    "Insect Swarm": 0.18120518144626344
+    "Starfire": 0.6094583306351696,
+    "Moonfire": 0.20972586647628327,
+    "Insect Swarm": 0.18081580288854704
    },
    "source_shares": {
-    "starfire": 0.6089,
-    "moonfire_direct": 0.2099,
-    "insect_swarm": 0.1812
+    "starfire": 0.6095,
+    "moonfire_direct": 0.2097,
+    "insect_swarm": 0.1808
    },
    "unmatched_share": 0.0
   },
@@ -463,38 +506,38 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "24977": 7.868333333333333,
+    "25298": 23.96066666666667,
+    "9835": 6.948666666666667,
     "29166": 1.0,
-    "2912": 5.4439,
-    "25298": 23.9876,
-    "24977": 7.88815,
-    "9835": 6.9532
+    "2912": 5.4703333333333335
    },
    "casts": {
+    "Insect Swarm": 7.868333333333333,
+    "Starfire": 29.431,
+    "OtherActionManaGain": 11.0,
+    "Moonfire": 6.948666666666667,
     "item 18820": 2.0,
     "Innervate": 1.0,
-    "Starfire": 29.4315,
-    "item 13444": 1.0,
-    "Insect Swarm": 7.88815,
-    "OtherActionManaGain": 11.0,
-    "Moonfire": 6.9532
+    "item 13444": 1.0
    },
-   "dps": 402.0715613590137,
-   "dps_stdev": 35.45068536417653,
-   "threat": 409.5723946923472,
+   "dps": 402.2219172898009,
+   "dps_stdev": 35.8606039970009,
+   "threat": 409.7227506231346,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 11.477852949999999,
+   "oom_seconds": 11.556696000000004,
    "error": null,
    "scorer": null,
    "shares": {
-    "Starfire": 0.636962547401504,
-    "Insect Swarm": 0.18285803817222493,
-    "Moonfire": 0.180179414426271
+    "Starfire": 0.6370293285156934,
+    "Insect Swarm": 0.18273320080222882,
+    "Moonfire": 0.18023747068207777
    },
    "source_shares": {
     "starfire": 0.637,
-    "insect_swarm": 0.1829,
+    "insect_swarm": 0.1827,
     "moonfire_direct": 0.1802
    },
    "unmatched_share": 0.0

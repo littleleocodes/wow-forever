@@ -874,7 +874,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +83.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
@@ -901,17 +901,17 @@
         ]
       },
       "core": [
-        {"talent": "Ice Shards", "why": "Removing it costs 24.6 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 23.8 points of score in this model."},
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 21.0 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 18.4 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 13.4 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 13.3 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 10.4 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 10.3 points of score in this model."}
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.8 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 19.8 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 18.9 points of score in this model."},
+        {"talent": "Winter's Chill", "why": "Removing it costs 11.5 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 11.4 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 8.7 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.7 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-09-28: the optimizer's earlier round beat its last export in the community simulator (588 vs 570 DPS; the calibration moved the model past the better build).", "Report: mage/talents/forever/optimizer/frost-raid-raid-dps.md"],
+      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (587 vs 568 DPS; the calibration moved the model past the better build).", "Report: mage/talents/forever/optimizer/frost-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -921,24 +921,24 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +78.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +71.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
           ["Arcane Concentration", 5],
           ["Magic Absorption", 2],
           ["Arcane Impact", 3],
-          ["Arcane Meditation", 3]
+          ["Arcane Meditation", 3],
+          ["Arcane Shielding", 2],
+          ["Presence of Mind", 1]
         ],
-        "Fire": [
-          ["Incineration", 3]
-        ],
+        "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
           ["Elemental Precision", 5],
           ["Ice Shards", 5],
-          ["Ice Lance", 1],
           ["Piercing Ice", 3],
+          ["Ice Lance", 1],
           ["Frost Channeling", 1],
           ["Shatter", 3],
           ["Fingers of Frost", 2],
@@ -946,14 +946,14 @@
         ]
       },
       "core": [
-        {"talent": "Ice Shards", "why": "Removing it costs 25.1 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 22.6 points of score in this model."},
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 20.2 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 17.4 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 12.7 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 12.6 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 10.0 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 9.9 points of score in this model."}
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 21.9 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 20.3 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 18.0 points of score in this model."},
+        {"talent": "Winter's Chill", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.2 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 8.4 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.3 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: mage/talents/forever/optimizer/frost-raid-parse.md"],

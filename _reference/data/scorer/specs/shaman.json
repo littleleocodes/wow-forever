@@ -63,11 +63,11 @@
       "abs_dps_factor": 1.0
     },
     "elemental-dps": {
-      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-09-28, elemental-raid-dps in the ElliotWood/Forever simulator 40be98e): lightning_bolt 74%, flame_shock 18%, chain_lightning 9%; 6% of the damage matched no source.",
+      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-09-29, elemental-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): lightning_bolt 71%, flame_shock 18%, chain_lightning 11%; 6% of the damage matched no source.",
       "sources": [
         {
           "id": "lightning_bolt",
-          "share": 0.7377,
+          "share": 0.7099,
           "tags": ["type:spell", "school:nature", "ability:Lightning Bolt"],
           "cast": 2.5,
           "min_cast": 1.5,
@@ -81,7 +81,7 @@
         },
         {
           "id": "chain_lightning",
-          "share": 0.0851,
+          "share": 0.1127,
           "tags": ["type:spell", "school:nature", "aoe", "ability:Chain Lightning"],
           "cast": 2.0,
           "min_cast": 1.5,
@@ -111,7 +111,7 @@
         },
         {
           "id": "flame_shock",
-          "share": 0.1772,
+          "share": 0.1774,
           "tags": ["type:spell", "school:fire", "dot", "instant", "ability:Flame Shock", "ability:Shock"],
           "can_crit": false,
           "game_overrides": {
@@ -189,10 +189,20 @@
         "solo-60": {"range": 0, "kite": 0.5}
       },
       "kind_note": "Elemental leveling (2026-09-27 audit): the lab's loop bolts while the mob walks in and then fights in melee range, so a longer pull only lengthens the walk-in (Elemental Reach -1.0% in the lab): range 0. Earthbound's root would let it cast unhit, but the loop never casts Earthbind: kite 0.5 until it does. Stun, avoid and move count.",
-      "fight_coupling": {"leveling-st": 0.53, "solo-60": 0.53}
+      "fight_coupling": {"leveling-st": 0.53, "solo-60": 0.53},
+      "mana_limit": {
+        "forever": {
+          "profiles": ["raid-dps", "raid-dps-extwc"],
+          "loss": 0.055,
+          "cap": 0.9,
+          "rms": 0.0121,
+          "points": 62,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-2% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+        }
+      }
     },
     "enhancement-dps": {
-      "note": "One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt casts in 2.5s; Stormstrike is 125 mana on an 8s cooldown and buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%; Windfury Totem gives 95/179/246 attack power (Classic 122/229/315) and Strength of Earth 53 (Classic 77); totems last 5 min on a 1s global cooldown. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-enhancement-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 40%, Windfury 25%, Stormstrike 13%, Lightning Shield 9%, Searing Totem 8%, Chain Lightning 4%, Flame Shock 0%, Lightning Bolt 0%) and the leveling time split is fight 66% / drink 1% / eat 1% / other 0% / death 32% of talent-affected time with fight_coupling 0.8 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, enhancement-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): white 36%, windfury 23%, stormstrike 14%, earth_shock 11%, flame_shock 9%, lightning_bolt 7%; 10% of the damage matched no source.",
+      "note": "One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt casts in 2.5s; Stormstrike is 125 mana on an 8s cooldown and buffs the next Lightning Bolt/Chain Lightning/Earth Shock by 20%; Windfury Totem gives 95/179/246 attack power (Classic 122/229/315) and Strength of Earth 53 (Classic 77); totems last 5 min on a 1s global cooldown. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-enhancement-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 40%, Windfury 25%, Stormstrike 13%, Lightning Shield 9%, Searing Totem 8%, Chain Lightning 4%, Flame Shock 0%, Lightning Bolt 0%) and the leveling time split is fight 66% / drink 1% / eat 1% / other 0% / death 32% of talent-affected time with fight_coupling 0.8 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, enhancement-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): white 36%, windfury 23%, stormstrike 14%, earth_shock 11%, flame_shock 9%, lightning_bolt 7%; 10% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
@@ -386,7 +396,7 @@
           "cap": 0.9,
           "rms": 0.0104,
           "points": 50,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-6% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-6% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     }

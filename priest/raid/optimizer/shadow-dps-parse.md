@@ -9,16 +9,16 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Mind Flay | Shadow | 3 | +85.46% | manual |
+| Mind Flay | Shadow | 3 | +80.18% | manual |
 | Shadowform | Shadow | 7 | +72.91% | manual |
 | Shadow Weaving | Shadow | 4 | +5.00% | manual |
-| Improved Shadow Word: Pain | Shadow | 2 | +2.69% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.57% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
 | Inner Focus | Discipline | 3 | +1.29% | manual |
-| Improved Mind Blast | Shadow | 3 | +1.03% | manual |
+| Improved Mind Blast | Shadow | 3 | +0.98% | manual |
 | Shadow Focus | Shadow | 1 | +0.98% | manual |
-| Twin Disciplines | Discipline | 1 | +0.63% | manual |
+| Twin Disciplines | Discipline | 1 | +0.65% | manual |
 | Penance | Discipline | 5 | +0.60% | manual |
 | Prayer of Mending | Holy | 7 | +0.60% | manual |
 | Litany of Light | Holy | 5 | +0.40% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Renewed Hope | Discipline | 5 | +0.00% | manual |
 | Divine Aegis | Discipline | 6 | +0.00% | manual |
 
-## Optimized build: 18/0/33  score +350.52%  (dps x4.279, sustain x2.132, surv x1.000, utility +0.00%)
+## Optimized build: 18/0/33  score +337.03%  (dps x4.144, sustain x2.132, surv x1.000, utility +0.00%)
 
 ```
   Discipline: Twin Disciplines 5, Power in Light 5, Wand Specialization 1, Inner Focus 1, Mental Agility 3, Mental Strength 3
@@ -51,11 +51,11 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +7.27% | no |
+| Power Infusion | Discipline 7 | 1/1 | +7.04% | no |
 | Penance | Discipline 5 | 1/1 | +0.60% | no |
 | Prayer of Mending | Holy 7 | 1/1 | +0.60% | no |
 | Litany of Light | Holy 5 | 1/2 | +0.40% | no |
-| Mental Strength | Discipline 4 | 4/5 | +0.35% | yes |
+| Mental Strength | Discipline 4 | 4/5 | +0.34% | yes |
 | Spell Warding | Holy 2 | 1/5 | +0.00% | no |
 | Wand Specialization | Discipline 1 | 2/2 | +0.00% | yes |
 | Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |

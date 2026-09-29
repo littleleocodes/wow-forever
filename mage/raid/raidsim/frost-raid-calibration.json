@@ -9,21 +9,23 @@
   "frost-fingers-of-frost-raid",
   "opt-frost-raid-raid-dps",
   "opt-frost-raid-raid-dps-extwc",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-from-arcane-31-0-20.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-from-arcane-power.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-hand-2026-09-27.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-preset-frost-dps.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r1.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r2.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r3.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r4.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r5.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r6.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r7.json",
-  "F:\\wow-forever\\mage\\raid\\raidsim\\candidates\\cand-frost-raid-r8.json"
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-from-arcane-power.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-27.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-28.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-preset-frost-14-0-37.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r1.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r2.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r3.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r4.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r5.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r6.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r7.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r8.json",
+  "/home/user/wow-forever/mage/raid/raidsim/candidates/cand-frost-raid-r9.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "mage/dps",
   "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
@@ -51,9 +53,9 @@
  "talents": [
   {
    "talent": "Fingers of Frost",
-   "sim": 1.8374911350372491,
-   "ev_before": 0.14898623867683242,
-   "ev_after": 0.14898633661837704,
+   "sim": 1.859006215493678,
+   "ev_before": 0.12622681009811693,
+   "ev_after": 0.12281721708578505,
    "scale": 1.0,
    "how": "apl",
    "builds": [
@@ -61,6 +63,8 @@
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -69,25 +73,27 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Improved Frostbolt",
-   "sim": 0.16573350031980308,
-   "ev_before": 0.14763925797794866,
-   "ev_after": 0.14763933921352485,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.16339419933190635,
+   "ev_before": 0.12110989119671763,
+   "ev_after": 0.1610932206550437,
+   "scale": 1.247539279051125,
+   "how": "fitted",
    "builds": [
     "frost-arcane-power-raid",
     "frost-winters-chill-raid",
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -96,14 +102,15 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Ice Shards",
-   "sim": 0.11377373910817767,
-   "ev_before": 0.13439140795016746,
-   "ev_after": 0.13439149183265298,
+   "sim": 0.11694979759113461,
+   "ev_before": 0.11854790558809111,
+   "ev_after": 0.11920388363935047,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -112,9 +119,10 @@
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -123,60 +131,96 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Shatter",
+   "sim": 0.07194424538768002,
+   "ev_before": 0.06426758461092391,
+   "ev_after": 0.06262421354400755,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
+    "opt-frost-raid-raid-dps-extwc",
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
+    "cand-frost-raid-preset-frost-dps",
+    "cand-frost-raid-r1",
+    "cand-frost-raid-r2",
+    "cand-frost-raid-r3",
+    "cand-frost-raid-r4",
+    "cand-frost-raid-r5",
+    "cand-frost-raid-r6",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Winter's Chill",
+   "sim": 0.07006556510063577,
+   "ev_before": 0.0653193433300333,
+   "ev_after": 0.06622067999432033,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
+    "opt-frost-raid-raid-dps-extwc",
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
+    "cand-frost-raid-preset-frost-dps",
+    "cand-frost-raid-r1",
+    "cand-frost-raid-r2",
+    "cand-frost-raid-r4",
+    "cand-frost-raid-r5",
+    "cand-frost-raid-r6",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Missile Barrage",
-   "sim": 0.08504755508909165,
+   "sim": 0.06624809968055986,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
    "how": "apl",
    "builds": [
     "frost-arcane-power-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2"
    ]
   },
   {
-   "talent": "Winter's Chill",
-   "sim": 0.07284055101410176,
-   "ev_before": 0.07657277584225847,
-   "ev_after": 0.07657283000283671,
+   "talent": "Elemental Precision",
+   "sim": 0.06235224565900836,
+   "ev_before": 0.05131021739894791,
+   "ev_after": 0.05208601028946069,
    "scale": 1.0,
    "how": "kept",
    "builds": [
+    "frost-arcane-power-raid",
     "frost-winters-chill-raid",
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
+    "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-preset-frost-dps",
-    "cand-frost-raid-r1",
-    "cand-frost-raid-r2",
-    "cand-frost-raid-r4",
-    "cand-frost-raid-r5",
-    "cand-frost-raid-r6",
-    "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
-   ]
-  },
-  {
-   "talent": "Shatter",
-   "sim": 0.07210938036928716,
-   "ev_before": 0.07407972885850311,
-   "ev_after": 0.07407977459048888,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "frost-winters-chill-raid",
-    "frost-fingers-of-frost-raid",
-    "opt-frost-raid-raid-dps",
-    "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -185,14 +229,15 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Ice Lance",
-   "sim": 0.062015027348106974,
-   "ev_before": 0.1053913361264421,
-   "ev_after": 0.1053914024322136,
+   "sim": 0.05968018438433407,
+   "ev_before": 0.08940465219962634,
+   "ev_after": 0.07511597877737895,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
@@ -200,6 +245,8 @@
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -208,41 +255,15 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
-   ]
-  },
-  {
-   "talent": "Elemental Precision",
-   "sim": 0.06188350236617565,
-   "ev_before": 0.05952209261509136,
-   "ev_after": 0.05952212454952739,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "frost-arcane-power-raid",
-    "frost-winters-chill-raid",
-    "frost-fingers-of-frost-raid",
-    "opt-frost-raid-raid-dps",
-    "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-from-arcane-31-0-20",
-    "cand-frost-raid-from-arcane-power",
-    "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-preset-frost-dps",
-    "cand-frost-raid-r1",
-    "cand-frost-raid-r2",
-    "cand-frost-raid-r3",
-    "cand-frost-raid-r4",
-    "cand-frost-raid-r5",
-    "cand-frost-raid-r6",
-    "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Piercing Ice",
-   "sim": 0.055320630529850666,
-   "ev_before": 0.059998268578255576,
-   "ev_after": 0.05999830078263213,
+   "sim": 0.05557830947852949,
+   "ev_before": 0.051717500673615524,
+   "ev_after": 0.05249975226113172,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -251,9 +272,10 @@
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -262,41 +284,40 @@
     "cand-frost-raid-r5",
     "cand-frost-raid-r6",
     "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Arcane Instability",
-   "sim": 0.049784539978217364,
-   "ev_before": 0.051785839035959666,
-   "ev_after": 0.05178584418483704,
+   "sim": 0.048143832392481926,
+   "ev_before": 0.05277022524814264,
+   "ev_after": 0.05004650946973671,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "frost-arcane-power-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-r3"
    ]
   },
   {
    "talent": "Arcane Power",
-   "sim": 0.03838301572685906,
-   "ev_before": 0.01639349238716951,
-   "ev_after": 0.03838400000000001,
-   "scale": 2.2642461080104113,
-   "how": "fitted",
+   "sim": 0.037811871035573735,
+   "ev_before": 0.038384000000000196,
+   "ev_after": 0.038383999999999974,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "frost-arcane-power-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power"
    ]
   },
   {
    "talent": "Master of Elements",
-   "sim": 0.023527633623122175,
-   "ev_before": 0.0,
-   "ev_after": 0.000511901119554034,
+   "sim": 0.023527633623122254,
+   "ev_before": 0.00051189983369324,
+   "ev_after": 0.0005119003274443821,
    "scale": 1.0,
    "how": "held",
    "builds": [
@@ -306,15 +327,37 @@
    ]
   },
   {
-   "talent": "Arcane Mind",
-   "sim": 0.014885031805324063,
-   "ev_before": 0.013648538896252928,
-   "ev_after": 0.007948104421881408,
-   "scale": 4.070942966089045,
-   "how": "capped",
+   "talent": "Frost Channeling",
+   "sim": 0.016929906844048447,
+   "ev_before": 0.017277406893608037,
+   "ev_after": 0.017277428767446215,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "frost-arcane-power-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
+    "frost-winters-chill-raid",
+    "opt-frost-raid-raid-dps-extwc",
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-dps",
+    "cand-frost-raid-r2",
+    "cand-frost-raid-r4",
+    "cand-frost-raid-r5",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Arcane Mind",
+   "sim": 0.009994623495072437,
+   "ev_before": 0.025316934151571758,
+   "ev_after": 0.009618649124201517,
+   "scale": 0.34175958344712853,
+   "how": "fitted",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -322,37 +365,16 @@
    ]
   },
   {
-   "talent": "Frost Channeling",
-   "sim": 0.010742003960686903,
-   "ev_before": 0.024089240162831996,
-   "ev_after": 0.012456073422442664,
+   "talent": "Presence of Mind",
+   "sim": 0.007915901304104694,
+   "ev_before": 0.009999965823983005,
+   "ev_after": 0.009999966001082375,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "frost-arcane-power-raid",
-    "frost-winters-chill-raid",
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
-    "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-from-arcane-31-0-20",
-    "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-preset-frost-dps",
-    "cand-frost-raid-r2",
-    "cand-frost-raid-r4",
-    "cand-frost-raid-r5",
-    "cand-frost-raid-r7"
-   ]
-  },
-  {
-   "talent": "Presence of Mind",
-   "sim": 0.009374193258553576,
-   "ev_before": 0.009999960933903589,
-   "ev_after": 0.009999961853879896,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "frost-arcane-power-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -361,34 +383,59 @@
   },
   {
    "talent": "Incineration",
-   "sim": 0.00677942345546768,
-   "ev_before": 0.008810361538103719,
-   "ev_after": 0.008810366226396213,
+   "sim": 0.007470636589279215,
+   "ev_before": 0.008522884864336142,
+   "ev_after": 0.008279306595223784,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "opt-frost-raid-raid-dps-extwc",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-r4",
+    "cand-frost-raid-r5",
+    "cand-frost-raid-r6",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Arcane Concentration",
+   "sim": 0.0039868472007383955,
+   "ev_before": 0.0025657728215354135,
+   "ev_after": 0.003657572069312337,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
+    "cand-frost-raid-from-arcane-power",
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
+    "cand-frost-raid-preset-frost-dps",
+    "cand-frost-raid-r1",
+    "cand-frost-raid-r2",
+    "cand-frost-raid-r3",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Arcane Impact",
+   "sim": 0.003790758343168995,
+   "ev_before": 0.0056780745770028075,
+   "ev_after": 0.003914753626453925,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
-    "opt-frost-raid-raid-dps-extwc",
-    "cand-frost-raid-r4",
-    "cand-frost-raid-r5",
-    "cand-frost-raid-r6",
-    "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
-   ]
-  },
-  {
-   "talent": "Arcane Impact",
-   "sim": 0.004523523081149657,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "frost-fingers-of-frost-raid",
-    "opt-frost-raid-raid-dps",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r7"
@@ -396,9 +443,34 @@
   },
   {
    "talent": "Arcane Focus",
-   "sim": 0.003798548664974352,
-   "ev_before": 0.0,
+   "sim": 0.0036311600810119407,
+   "ev_before": 0.006942968014906781,
    "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "builds": [
+    "frost-arcane-power-raid",
+    "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
+    "cand-frost-raid-from-arcane-power",
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-preset-frost-14-0-37",
+    "cand-frost-raid-preset-frost-dps",
+    "cand-frost-raid-r1",
+    "cand-frost-raid-r2",
+    "cand-frost-raid-r3",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Arcane Meditation",
+   "sim": 0.0006454552429793323,
+   "ev_before": 0.0,
+   "ev_after": 0.002678340095840089,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -406,30 +478,7 @@
     "frost-winters-chill-raid",
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
-    "cand-frost-raid-from-arcane-31-0-20",
-    "cand-frost-raid-from-arcane-power",
-    "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-preset-frost-dps",
-    "cand-frost-raid-r1",
-    "cand-frost-raid-r2",
-    "cand-frost-raid-r3",
-    "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
-   ]
-  },
-  {
-   "talent": "Arcane Meditation",
-   "sim": 0.0005499013289242341,
-   "ev_before": 0.043947591133204324,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "frost-arcane-power-raid",
-    "frost-winters-chill-raid",
-    "frost-fingers-of-frost-raid",
-    "opt-frost-raid-raid-dps",
-    "cand-frost-raid-from-arcane-31-0-20",
+    "cand-frost-raid-hand-2026-09-28",
     "cand-frost-raid-preset-frost-dps",
     "cand-frost-raid-r1",
     "cand-frost-raid-r2",
@@ -460,8 +509,8 @@
    "builds": [
     "frost-arcane-power-raid",
     "frost-winters-chill-raid",
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-from-arcane-power",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-r8"
    ]
   },
@@ -475,6 +524,8 @@
    "builds": [
     "frost-arcane-power-raid",
     "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
     "cand-frost-raid-preset-frost-dps",
@@ -505,6 +556,8 @@
    "builds": [
     "frost-arcane-power-raid",
     "frost-winters-chill-raid",
+    "frost-fingers-of-frost-raid",
+    "opt-frost-raid-raid-dps",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-from-arcane-power",
     "cand-frost-raid-hand-2026-09-27",
@@ -512,7 +565,8 @@
     "cand-frost-raid-r2",
     "cand-frost-raid-r3",
     "cand-frost-raid-r6",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
@@ -533,62 +587,65 @@
   {
    "talent": "Cold Snap",
    "sim": 0.0,
-   "ev_before": 5.816876723855618e-06,
-   "ev_after": 5.697525989407901e-06,
+   "ev_before": 6.102045687049134e-06,
+   "ev_after": 5.9249468258863545e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "frost-winters-chill-raid",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-r6",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Ice Barrier",
    "sim": 0.0,
-   "ev_before": 4.65369103326937e-05,
-   "ev_after": 4.55820283082529e-05,
+   "ev_before": 4.881845272353848e-05,
+   "ev_after": 4.7401541971564045e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "frost-winters-chill-raid",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-r6",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Ice Block",
    "sim": 0.0,
-   "ev_before": 2.326791328777836e-05,
-   "ev_after": 2.2790494032932683e-05,
+   "ev_before": 2.4408630000227707e-05,
+   "ev_after": 2.3700208871650123e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "frost-winters-chill-raid",
     "opt-frost-raid-raid-dps-extwc",
     "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-preset-frost-14-0-37",
     "cand-frost-raid-r6",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
-   "talent": "Magic Absorption",
+   "talent": "Improved Cone of Cold",
    "sim": 0.0,
-   "ev_before": 1.1231725260510754e-05,
-   "ev_after": 1.1135523311571061e-05,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "frost-fingers-of-frost-raid",
     "opt-frost-raid-raid-dps",
-    "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-r3",
-    "cand-frost-raid-r7",
-    "cand-frost-raid-r8"
+    "cand-frost-raid-r1"
    ]
   },
   {
@@ -646,6 +703,33 @@
    ]
   },
   {
+   "talent": "Magic Absorption",
+   "sim": 0.0,
+   "ev_before": 1.1933144401734843e-05,
+   "ev_after": 1.1675370124854855e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-frost-raid-hand-2026-09-27",
+    "cand-frost-raid-hand-2026-09-28",
+    "cand-frost-raid-r3",
+    "cand-frost-raid-r7",
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
+   ]
+  },
+  {
+   "talent": "Frostbite",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-frost-raid-preset-frost-14-0-37"
+   ]
+  },
+  {
    "talent": "Improved Channeling",
    "sim": 0.0,
    "ev_before": 0.0,
@@ -653,27 +737,16 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "cand-frost-raid-from-arcane-31-0-20",
     "cand-frost-raid-r2",
-    "cand-frost-raid-r8"
-   ]
-  },
-  {
-   "talent": "Improved Cone of Cold",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-frost-raid-r1"
+    "cand-frost-raid-r8",
+    "cand-frost-raid-r9"
    ]
   },
   {
    "talent": "Arcane Shielding",
    "sim": 0.0,
-   "ev_before": 8.659625361775618e-06,
-   "ev_after": 8.522992053098374e-06,
+   "ev_before": 9.008847117191661e-06,
+   "ev_after": 8.903115596899812e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -691,28 +764,6 @@
    "builds": [
     "cand-frost-raid-r6"
    ]
-  },
-  {
-   "talent": "Arcane Concentration",
-   "sim": -0.001349071589639788,
-   "ev_before": 0.02409112994184776,
-   "ev_after": 0.0001879072248524428,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "frost-arcane-power-raid",
-    "frost-winters-chill-raid",
-    "frost-fingers-of-frost-raid",
-    "opt-frost-raid-raid-dps",
-    "cand-frost-raid-from-arcane-31-0-20",
-    "cand-frost-raid-from-arcane-power",
-    "cand-frost-raid-hand-2026-09-27",
-    "cand-frost-raid-preset-frost-dps",
-    "cand-frost-raid-r1",
-    "cand-frost-raid-r2",
-    "cand-frost-raid-r3",
-    "cand-frost-raid-r7"
-   ]
   }
  ],
  "mana": {
@@ -723,22 +774,22 @@
    ],
    "loss": 0.045,
    "cap": 0.9,
-   "rms": 0.0097,
-   "points": 54
+   "rms": 0.0109,
+   "points": 57
   },
   "builds": {
    "frost-arcane-power-raid": {
     "dps": 547.28784742671,
-    "surplus": 546.6992304424928,
+    "surplus": 546.6992304424929,
     "oom_seconds": 0.0,
     "deficit": 0.0,
-    "sustain": 1.2077,
+    "sustain": 1.1484,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "frost-winters-chill-raid": {
-    "dps": 490.56737316526596,
-    "surplus": 489.4164544244478,
+    "dps": 490.56737316526585,
+    "surplus": 489.41645442444786,
     "oom_seconds": 0.0,
     "deficit": 0.0,
     "sustain": 1.1123,
@@ -746,98 +797,107 @@
     "model_deficit": 0.0
    },
    "frost-fingers-of-frost-raid": {
-    "dps": 566.5305869392183,
-    "surplus": 568.0705242112388,
+    "dps": 587.5299944074301,
+    "surplus": 585.7714110797024,
     "oom_seconds": 0.0,
-    "deficit": 0.0027108205872125035,
-    "sustain": 1.1327,
+    "deficit": 0.0,
+    "sustain": 1.0962,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "opt-frost-raid-raid-dps": {
-    "dps": 566.5305869392183,
-    "surplus": 568.0705242112388,
+    "dps": 587.5299944074301,
+    "surplus": 585.7714110797024,
     "oom_seconds": 0.0,
-    "deficit": 0.0027108205872125035,
-    "sustain": 1.1327,
+    "deficit": 0.0,
+    "sustain": 1.0962,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "opt-frost-raid-raid-dps-extwc": {
-    "dps": 570.1240580316081,
-    "surplus": 571.071029227115,
+    "dps": 570.1240580316082,
+    "surplus": 571.0710292271151,
     "oom_seconds": 0.0,
     "deficit": 0.0016582371492185333,
     "sustain": 1.0428,
     "bound_share": 1.0,
     "model_deficit": 0.0022
    },
-   "cand-frost-raid-from-arcane-31-0-20": {
-    "dps": 557.3743637855399,
-    "surplus": 557.1210189846149,
-    "oom_seconds": 0.0,
-    "deficit": 0.0,
-    "sustain": 1.2077,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
    "cand-frost-raid-from-arcane-power": {
-    "dps": 556.9244717401849,
+    "dps": 556.924471740185,
     "surplus": 556.9012970892242,
     "oom_seconds": 0.0024073333333333334,
     "deficit": 0.0,
-    "sustain": 1.1192,
+    "sustain": 1.0599,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-hand-2026-09-27": {
-    "dps": 564.4583380615384,
+    "dps": 564.458338061538,
     "surplus": 566.0055608832616,
     "oom_seconds": 0.0,
-    "deficit": 0.002733582368535048,
+    "deficit": 0.002733582368535603,
     "sustain": 1.0728,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
+   "cand-frost-raid-hand-2026-09-28": {
+    "dps": 566.5305869392181,
+    "surplus": 568.070524211239,
+    "oom_seconds": 0.0,
+    "deficit": 0.0027108205872132807,
+    "sustain": 1.1327,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-frost-raid-preset-frost-14-0-37": {
+    "dps": 559.2219460946227,
+    "surplus": 567.4681518837513,
+    "oom_seconds": 2.5955019999999953,
+    "deficit": 0.014531574612169362,
+    "sustain": 1.03,
+    "bound_share": 1.0,
+    "model_deficit": 0.015
+   },
    "cand-frost-raid-preset-frost-dps": {
     "dps": 557.281864890994,
-    "surplus": 557.8049020417118,
+    "surplus": 557.8049020417119,
     "oom_seconds": 0.0,
-    "deficit": 0.0009376704091400567,
+    "deficit": 0.0009376704091401677,
     "sustain": 1.1327,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r1": {
-    "dps": 587.5299944074302,
-    "surplus": 585.7714110797021,
+    "dps": 587.5299944074301,
+    "surplus": 585.7714110797024,
     "oom_seconds": 0.0,
     "deficit": 0.0,
-    "sustain": 1.108,
+    "sustain": 1.0962,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r2": {
-    "dps": 582.4867847642178,
-    "surplus": 582.0760087807633,
+    "dps": 582.4867847642176,
+    "surplus": 582.0760087807635,
     "oom_seconds": 0.0,
     "deficit": 0.0,
-    "sustain": 1.1222,
+    "sustain": 1.1104,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r3": {
-    "dps": 549.4614669069097,
-    "surplus": 551.4164488914853,
+    "dps": 549.4614669069094,
+    "surplus": 551.4164488914851,
     "oom_seconds": 0.0,
     "deficit": 0.003545382058343982,
-    "sustain": 1.162,
+    "sustain": 1.1146,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r4": {
     "dps": 571.3020143004007,
-    "surplus": 570.9848717804819,
+    "surplus": 570.9848717804817,
     "oom_seconds": 0.0,
     "deficit": 0.0,
     "sustain": 1.0433,
@@ -845,7 +905,7 @@
     "model_deficit": 0.0017
    },
    "cand-frost-raid-r5": {
-    "dps": 571.0001539794017,
+    "dps": 571.0001539794018,
     "surplus": 570.9350245717017,
     "oom_seconds": 0.0,
     "deficit": 0.0,
@@ -854,49 +914,58 @@
     "model_deficit": 0.0019
    },
    "cand-frost-raid-r6": {
-    "dps": 564.5186218266697,
-    "surplus": 570.6558472441388,
-    "oom_seconds": 2.7877353333333312,
-    "deficit": 0.01075468769330512,
+    "dps": 564.5186218266699,
+    "surplus": 570.6558472441387,
+    "oom_seconds": 2.7877353333333263,
+    "deficit": 0.010754687693304565,
     "sustain": 1.0006,
     "bound_share": 1.0,
     "model_deficit": 0.0444
    },
    "cand-frost-raid-r7": {
-    "dps": 566.5305869392183,
-    "surplus": 568.0705242112388,
+    "dps": 566.5305869392181,
+    "surplus": 568.070524211239,
     "oom_seconds": 0.0,
-    "deficit": 0.0027108205872125035,
+    "deficit": 0.0027108205872132807,
     "sustain": 1.1327,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r8": {
     "dps": 529.0807485166439,
-    "surplus": 570.9101253395005,
-    "oom_seconds": 10.84998133333333,
-    "deficit": 0.07326788397382533,
+    "surplus": 570.9101253395007,
+    "oom_seconds": 10.849981333333371,
+    "deficit": 0.07326788397382566,
     "sustain": 1.0,
     "bound_share": 1.0,
     "model_deficit": 0.045
+   },
+   "cand-frost-raid-r9": {
+    "dps": 569.9843966080541,
+    "surplus": 570.8623913145929,
+    "oom_seconds": 0.0,
+    "deficit": 0.001538014624709927,
+    "sustain": 1.0488,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
    }
   },
   "removals": {
    "frost-arcane-power-raid -Arcane Concentration": {
     "deficit": 0.0,
-    "sustain": 1.1777,
+    "sustain": 1.1184,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "frost-arcane-power-raid -Arcane Meditation": {
     "deficit": 0.0,
-    "sustain": 1.1477,
+    "sustain": 1.0884,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "frost-arcane-power-raid -Frost Channeling": {
     "deficit": 0.0,
-    "sustain": 1.1792,
+    "sustain": 1.1199,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
@@ -919,40 +988,28 @@
     "model_deficit": 0.0
    },
    "frost-fingers-of-frost-raid -Arcane Concentration": {
-    "deficit": 0.0011,
-    "sustain": 1.1027,
+    "deficit": 0.0,
+    "sustain": 1.0662,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "frost-fingers-of-frost-raid -Arcane Meditation": {
-    "deficit": 0.0037,
-    "sustain": 1.0728,
+    "deficit": 0.0,
+    "sustain": 1.0362,
     "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "frost-fingers-of-frost-raid -Frost Channeling": {
-    "deficit": 0.0043,
-    "sustain": 1.09,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "model_deficit": 0.0088
    },
    "opt-frost-raid-raid-dps -Arcane Concentration": {
-    "deficit": 0.0011,
-    "sustain": 1.1027,
+    "deficit": 0.0,
+    "sustain": 1.0662,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "opt-frost-raid-raid-dps -Arcane Meditation": {
-    "deficit": 0.0037,
-    "sustain": 1.0728,
+    "deficit": 0.0,
+    "sustain": 1.0362,
     "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "opt-frost-raid-raid-dps -Frost Channeling": {
-    "deficit": 0.0043,
-    "sustain": 1.09,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
+    "model_deficit": 0.0088
    },
    "opt-frost-raid-raid-dps-extwc -Frost Channeling": {
     "deficit": 0.0735,
@@ -960,29 +1017,11 @@
     "bound_share": 1.0,
     "model_deficit": 0.045
    },
-   "cand-frost-raid-from-arcane-31-0-20 -Arcane Concentration": {
-    "deficit": 0.0,
-    "sustain": 1.1777,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-frost-raid-from-arcane-31-0-20 -Arcane Meditation": {
-    "deficit": 0.0,
-    "sustain": 1.1477,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
-   "cand-frost-raid-from-arcane-31-0-20 -Frost Channeling": {
-    "deficit": 0.0,
-    "sustain": 1.1792,
-    "bound_share": 1.0,
-    "model_deficit": 0.0
-   },
    "cand-frost-raid-from-arcane-power -Arcane Concentration": {
     "deficit": 0.0,
-    "sustain": 1.0892,
+    "sustain": 1.0299,
     "bound_share": 1.0,
-    "model_deficit": 0.0
+    "model_deficit": 0.0151
    },
    "cand-frost-raid-hand-2026-09-27 -Arcane Concentration": {
     "deficit": 0.0017,
@@ -995,6 +1034,30 @@
     "sustain": 1.03,
     "bound_share": 1.0,
     "model_deficit": 0.015
+   },
+   "cand-frost-raid-hand-2026-09-28 -Arcane Concentration": {
+    "deficit": 0.0011,
+    "sustain": 1.1027,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-frost-raid-hand-2026-09-28 -Arcane Meditation": {
+    "deficit": 0.0037,
+    "sustain": 1.0728,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-frost-raid-hand-2026-09-28 -Frost Channeling": {
+    "deficit": 0.0043,
+    "sustain": 1.09,
+    "bound_share": 1.0,
+    "model_deficit": 0.0
+   },
+   "cand-frost-raid-preset-frost-14-0-37 -Arcane Concentration": {
+    "deficit": 0.0759,
+    "sustain": 1.0,
+    "bound_share": 1.0,
+    "model_deficit": 0.045
    },
    "cand-frost-raid-preset-frost-dps -Arcane Concentration": {
     "deficit": 0.0052,
@@ -1016,43 +1079,43 @@
    },
    "cand-frost-raid-r1 -Arcane Concentration": {
     "deficit": 0.0,
-    "sustain": 1.078,
+    "sustain": 1.0662,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r1 -Arcane Meditation": {
     "deficit": 0.0,
-    "sustain": 1.048,
+    "sustain": 1.0362,
     "bound_share": 1.0,
-    "model_deficit": 0.0
+    "model_deficit": 0.0088
    },
    "cand-frost-raid-r2 -Arcane Concentration": {
     "deficit": 0.0,
-    "sustain": 1.0922,
+    "sustain": 1.0804,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r2 -Arcane Meditation": {
     "deficit": 0.0,
-    "sustain": 1.0622,
+    "sustain": 1.0504,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r2 -Frost Channeling": {
     "deficit": 0.0,
-    "sustain": 1.108,
+    "sustain": 1.0962,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r3 -Arcane Concentration": {
     "deficit": 0.0008,
-    "sustain": 1.132,
+    "sustain": 1.0846,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-frost-raid-r3 -Arcane Meditation": {
     "deficit": 0.0067,
-    "sustain": 1.102,
+    "sustain": 1.0546,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
@@ -1103,6 +1166,18 @@
     "sustain": 1.09,
     "bound_share": 1.0,
     "model_deficit": 0.0
+   },
+   "cand-frost-raid-r9 -Arcane Concentration": {
+    "deficit": 0.0013,
+    "sustain": 1.0428,
+    "bound_share": 1.0,
+    "model_deficit": 0.0022
+   },
+   "cand-frost-raid-r9 -Frost Channeling": {
+    "deficit": 0.0572,
+    "sustain": 1.006,
+    "bound_share": 1.0,
+    "model_deficit": 0.039
    }
   }
  }

@@ -65,7 +65,7 @@
       "abs_dps_factor": 1.0
     },
     "balance-dps": {
-      "note": "Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Wrath rank 8 92-102 in 2s for 120 mana (57.1% coefficient; +50% base in build 70009), Starfire rank 7 350-412 in 3.5s for 340 mana (100%): Starfire still leads per cast-second, Wrath per mana, so the 55/20 split stands; Moonfire rank 10 128-151 plus 240 over 12s. Raid sim shares (2026-09-28, balance-moonkin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): starfire 63%, moonfire_direct 19%, insect_swarm 18%; 0% of the damage matched no source.",
+      "note": "Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Wrath rank 8 92-102 in 2s for 120 mana (57.1% coefficient; +50% base in build 70009), Starfire rank 7 350-412 in 3.5s for 340 mana (100%): Starfire still leads per cast-second, Wrath per mana, so the 55/20 split stands; Moonfire rank 10 128-151 plus 240 over 12s. Raid sim shares (2026-09-29, balance-moonkin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): starfire 63%, moonfire_direct 19%, insect_swarm 18%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "starfire",
@@ -179,16 +179,16 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.3075,
-          "cap": 0.26,
-          "rms": 0.0257,
-          "points": 23,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-3% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "loss": 0.62,
+          "cap": 0.15,
+          "rms": 0.0246,
+          "points": 26,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-11% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "feral-cat-dps": {
-      "note": "White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5%. Leveling: Claw/Rake replace most Shreds (no reliable positioning), see profile_overrides. Levels 10-19 (before Cat Form): Bear Form Maul with Moonfire/Wrath pulls (the *_early sources). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shred is 155% weapon damage plus 54-180 (Classic 225%), Claw 110% plus 29-126, Rake learned at 24 (Claw 20), Tiger's Fury one rank at 24 (15% for 6s, 30s cooldown, free); Shred still edges Claw per Energy at 60, so the shares stand. Cat Mangle does not exist; Primal Bite is bear-only. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-feral-cat-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 30%, Claw 24%, Ferocious Bite 20%, Ravage 15%, Rake 6%, Rip 3%) and the leveling time split is fight 82% / drink 5% / eat 9% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, feral-cat-dps in the ElliotWood/Forever simulator 40be98e): rip 36%, shred 33%, white 31%; 4% of the damage matched no source.",
+      "note": "White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5%. Leveling: Claw/Rake replace most Shreds (no reliable positioning), see profile_overrides. Levels 10-19 (before Cat Form): Bear Form Maul with Moonfire/Wrath pulls (the *_early sources). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shred is 155% weapon damage plus 54-180 (Classic 225%), Claw 110% plus 29-126, Rake learned at 24 (Claw 20), Tiger's Fury one rank at 24 (15% for 6s, 30s cooldown, free); Shred still edges Claw per Energy at 60, so the shares stand. Cat Mangle does not exist; Primal Bite is bear-only. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-feral-cat-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 30%, Claw 24%, Ferocious Bite 20%, Ravage 15%, Rake 6%, Rip 3%) and the leveling time split is fight 82% / drink 5% / eat 9% / other 0% / death 5% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, feral-cat-dps in the ElliotWood/Forever simulator 40be98e): rip 36%, shred 33%, white 31%; 4% of the damage matched no source.",
       "form": "cat",
       "sources": [
         {
@@ -327,18 +327,18 @@
       }
     },
     "feral-bear-tank": {
-      "note": "Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Primal Bite (renamed Mangle) is bear-only, 20 Rage, 6s cooldown, ranks at 25/40/50/60 (+26/38/59/77) and arrives as a talent effect; Lacerate (42/50/58) is not modelled; Faerie Fire is learned at 18 and Demoralizing Roar at 10. Raid sim shares (2026-09-28, feral-bear-tank in the ElliotWood/Forever simulator 40be98e): lacerate 79%, white 17%, maul 3%, thorns 1%; 3% of the damage matched no source.",
+      "note": "Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Primal Bite (renamed Mangle) is bear-only, 20 Rage, 6s cooldown, ranks at 25/40/50/60 (+26/38/59/77) and arrives as a talent effect; Lacerate (42/50/58) is not modelled; Faerie Fire is learned at 18 and Demoralizing Roar at 10. Raid sim shares (2026-09-29, feral-bear-tank in the ElliotWood/Forever simulator 40be98e): lacerate 79%, white 17%, maul 3%, thorns 1%; 3% of the damage matched no source.",
       "form": "bear",
       "sources": [
         {
           "id": "maul",
-          "share": 0.0264,
+          "share": 0.0338,
           "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "tank", "threat", "ability:Maul"],
           "cost": 15
         },
         {
           "id": "white",
-          "share": 0.1744,
+          "share": 0.1727,
           "tags": ["type:melee", "white", "school:physical", "bear", "form:bear", "tank", "threat", "mainhand"]
         },
         {
@@ -350,7 +350,7 @@
         },
         {
           "id": "thorns",
-          "share": 0.0072,
+          "share": 0.0073,
           "tags": ["type:spell", "school:nature", "bear", "tank", "threat", "ability:Thorns"],
           "can_crit": false,
           "min_level": 6
@@ -364,7 +364,7 @@
         },
         {
           "id": "lacerate",
-          "share": 0.7921,
+          "share": 0.7862,
           "tags": ["type:melee", "yellow", "school:physical", "bear", "form:bear", "tank", "threat", "dot", "bleed", "ability:Lacerate"],
           "cost": 15,
           "note": "2026-09-27 audit: Lacerate is 54.6% of the simulator's bear threat and had no source (Genesis, Shredding Attacks and Rend and Tear scored 0); the raid calibration writes its measured share."

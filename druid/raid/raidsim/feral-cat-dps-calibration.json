@@ -6,17 +6,17 @@
  "builds": [
   "feral-cat-dps",
   "opt-feral-cat-dps-raid-dps",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-hand-2026-09-26.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-preset-feral-cat-9-35-7.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-preset-feral.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r1.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r2.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r3.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r4.json",
-  "F:\\wow-forever\\druid\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r5.json"
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-r1.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-r2.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-r3.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-r4.json",
+  "/home/user/wow-forever/druid/raid/raidsim/candidates/cand-feral-cat-dps-r5.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "druid/feralcat",
   "gear": "ui/specs/druid/feralcat/gear_sets/launch.gear.json",
@@ -45,9 +45,9 @@
  "talents": [
   {
    "talent": "Shredding Attacks",
-   "sim": 0.19417038539091425,
-   "ev_before": 0.21264881590329268,
-   "ev_after": 0.21264881590329268,
+   "sim": 0.19417038539091397,
+   "ev_before": 0.2126488159032927,
+   "ev_after": 0.2126488159032927,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -63,7 +63,7 @@
   },
   {
    "talent": "King of the Jungle",
-   "sim": 0.08796327631509598,
+   "sim": 0.08796327631509616,
    "ev_before": 0.09404616261725487,
    "ev_after": 0.09404616261725487,
    "scale": 1.0,
@@ -82,9 +82,9 @@
   },
   {
    "talent": "Blood Frenzy",
-   "sim": 0.08260879175273969,
-   "ev_before": 0.08002256580178715,
-   "ev_after": 0.08002256580178715,
+   "sim": 0.08260879175273957,
+   "ev_before": 0.08002256580178714,
+   "ev_after": 0.08002256580178714,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -102,7 +102,7 @@
   },
   {
    "talent": "Sharpened Claws",
-   "sim": 0.0557001152510076,
+   "sim": 0.055700115251007654,
    "ev_before": 0.05528842272103744,
    "ev_after": 0.05528842272103744,
    "scale": 1.0,
@@ -122,7 +122,7 @@
   },
   {
    "talent": "Rend and Tear",
-   "sim": 0.044532198384226084,
+   "sim": 0.04453219838422612,
    "ev_before": 0.04396858539434592,
    "ev_after": 0.04396858539434592,
    "scale": 1.0,
@@ -142,9 +142,9 @@
   },
   {
    "talent": "Berserk",
-   "sim": 0.043886762189422494,
-   "ev_before": 0.036720657745973655,
-   "ev_after": 0.036720657745973655,
+   "sim": 0.043886762189422515,
+   "ev_before": 0.03672065774597366,
+   "ev_after": 0.03672065774597366,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -162,7 +162,7 @@
   },
   {
    "talent": "Naturalist",
-   "sim": 0.03777777777777767,
+   "sim": 0.03777777777777761,
    "ev_before": 0.037746120298693696,
    "ev_after": 0.037746120298693696,
    "scale": 1.0,
@@ -181,7 +181,7 @@
   },
   {
    "talent": "Predatory Instincts",
-   "sim": 0.03697298747935764,
+   "sim": 0.03697298747935777,
    "ev_before": 0.03215178651133249,
    "ev_after": 0.03215178651133249,
    "scale": 1.0,
@@ -201,7 +201,7 @@
   },
   {
    "talent": "Nature's Majesty",
-   "sim": 0.03672269151032285,
+   "sim": 0.0367226915103229,
    "ev_before": 0.02948236890350066,
    "ev_after": 0.02948236890350066,
    "scale": 1.0,
@@ -220,7 +220,7 @@
   },
   {
    "talent": "Predatory Strikes",
-   "sim": 0.032757039198582104,
+   "sim": 0.032757039198582236,
    "ev_before": 0.03302480898440542,
    "ev_after": 0.03302480898440542,
    "scale": 1.0,
@@ -240,7 +240,7 @@
   },
   {
    "talent": "Savage Fury",
-   "sim": 0.02908907767416264,
+   "sim": 0.02908907767416266,
    "ev_before": 0.030811944717519378,
    "ev_after": 0.030811944717519378,
    "scale": 1.0,
@@ -260,7 +260,7 @@
   },
   {
    "talent": "Leader of the Pack",
-   "sim": 0.027395538820721523,
+   "sim": 0.027395538820721745,
    "ev_before": 0.027498705642449585,
    "ev_after": 0.027498705642449585,
    "scale": 1.0,
@@ -280,7 +280,7 @@
   },
   {
    "talent": "Nature's Reach",
-   "sim": 0.021375971334813473,
+   "sim": 0.02137597133481375,
    "ev_before": 0.03036417320617255,
    "ev_after": 0.03036417320617255,
    "scale": 1.0,
@@ -299,7 +299,7 @@
   },
   {
    "talent": "Genesis",
-   "sim": 0.017333423102227904,
+   "sim": 0.017333423102227557,
    "ev_before": 0.014130365727539387,
    "ev_after": 0.014130365727539387,
    "scale": 1.0,
@@ -318,9 +318,9 @@
   },
   {
    "talent": "Heart of the Wild",
-   "sim": 0.01722168903061064,
-   "ev_before": 0.013990018405693277,
-   "ev_after": 0.013990018405693277,
+   "sim": 0.017221689030610617,
+   "ev_before": 0.013990018405693281,
+   "ev_after": 0.013990018405693281,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -338,7 +338,7 @@
   },
   {
    "talent": "Furor",
-   "sim": 0.007008019302163647,
+   "sim": 0.0070080193021636065,
    "ev_before": 0.004863299891577816,
    "ev_after": 0.004863299891577816,
    "scale": 1.0,
@@ -468,63 +468,63 @@
   "builds": {
    "feral-cat-dps": {
     "dps": 355.0827996096515,
-    "surplus": 355.2221563082063,
+    "surplus": 355.2221563082064,
     "oom_seconds": 0.0,
-    "deficit": 0.00039230857670347064
+    "deficit": 0.0003923085767038037
    },
    "opt-feral-cat-dps-raid-dps": {
     "dps": 356.24799404230146,
-    "surplus": 356.4049152774749,
+    "surplus": 356.4049152774751,
     "oom_seconds": 0.0,
-    "deficit": 0.00044028920042049613
+    "deficit": 0.0004402892004209402
    },
    "cand-feral-cat-dps-hand-2026-09-26": {
-    "dps": 333.29813616302556,
+    "dps": 333.2981361630257,
     "surplus": 333.2202954010451,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-feral-cat-dps-preset-feral-cat-9-35-7": {
     "dps": 356.24799404230146,
-    "surplus": 356.4049152774749,
+    "surplus": 356.4049152774751,
     "oom_seconds": 0.0,
-    "deficit": 0.00044028920042049613
+    "deficit": 0.0004402892004209402
    },
    "cand-feral-cat-dps-preset-feral": {
-    "dps": 340.4715549162722,
-    "surplus": 340.67725309864863,
+    "dps": 340.47155491627217,
+    "surplus": 340.6772530986487,
     "oom_seconds": 0.0,
-    "deficit": 0.0006037919482603238
+    "deficit": 0.0006037919482606569
    },
    "cand-feral-cat-dps-r1": {
     "dps": 297.98348001084946,
-    "surplus": 299.57427030398435,
+    "surplus": 299.57427030398424,
     "oom_seconds": 0.0,
-    "deficit": 0.005310169967269518
+    "deficit": 0.005310169967269074
    },
    "cand-feral-cat-dps-r2": {
-    "dps": 306.41694617139063,
-    "surplus": 308.0684028864539,
+    "dps": 306.4169461713908,
+    "surplus": 308.0684028864538,
     "oom_seconds": 0.0,
-    "deficit": 0.005360681912165988
+    "deficit": 0.0053606819121649885
    },
    "cand-feral-cat-dps-r3": {
     "dps": 348.1592178233732,
-    "surplus": 348.0739004743615,
+    "surplus": 348.07390047436144,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-feral-cat-dps-r4": {
     "dps": 355.0827996096515,
-    "surplus": 355.2221563082063,
+    "surplus": 355.2221563082064,
     "oom_seconds": 0.0,
-    "deficit": 0.00039230857670347064
+    "deficit": 0.0003923085767038037
    },
    "cand-feral-cat-dps-r5": {
     "dps": 356.24799404230146,
-    "surplus": 356.4049152774749,
+    "surplus": 356.4049152774751,
     "oom_seconds": 0.0,
-    "deficit": 0.00044028920042049613
+    "deficit": 0.0004402892004209402
    }
   },
   "removals": {}

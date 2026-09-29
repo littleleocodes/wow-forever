@@ -14,7 +14,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Thick Hide | Feral Combat | 2 | +2.67% | manual |
 | Sharpened Claws | Feral Combat | 3 | +1.93% | manual |
 | Feral Swiftness | Feral Combat | 2 | +1.71% | manual |
-| Shredding Attacks | Feral Combat | 4 | +1.68% | manual |
+| Shredding Attacks | Feral Combat | 4 | +1.66% | manual |
 | Natural Reaction | Feral Combat | 6 | +1.10% | manual |
 | Insect Swarm | Balance | 4 | +1.00% | manual |
 | Feral Charge | Feral Combat | 3 | +1.00% | manual |
@@ -24,11 +24,11 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Naturalist | Restoration | 2 | +0.34% | manual |
 | Predatory Instincts | Feral Combat | 5 | +0.32% | manual |
 | Primal Bite | Feral Combat | 4 | +0.28% | manual |
-| Ferocity | Feral Combat | 1 | +0.09% | manual |
+| Ferocity | Feral Combat | 1 | +0.12% | manual |
 | Genesis | Balance | 1 | +0.07% | manual |
 | Nature's Reach | Balance | 2 | +0.02% | manual |
-| Nature's Grace | Balance | 5 | +0.01% | manual |
 | Savage Fury | Feral Combat | 3 | +0.01% | manual |
+| Nature's Grace | Balance | 5 | +0.01% | manual |
 | Moonfury | Balance | 6 | +0.01% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.00% | manual |
 | Improved Wrath | Balance | 1 | +0.00% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Improved Starfire | Balance | 4 | +0.00% | manual |
 | Overgrowth | Balance | 5 | +0.00% | manual |
 
-## Optimized build: 7/35/9  score +53.03%  (dps x1.752, sustain x1.000, surv x1.288, utility +1.00%)
+## Optimized build: 7/35/9  score +53.45%  (dps x1.761, sustain x1.000, surv x1.288, utility +1.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2

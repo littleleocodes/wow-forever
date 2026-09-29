@@ -10,18 +10,18 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
 | Shadowform | Shadow | 7 | +94.00% | manual |
-| Mind Flay | Shadow | 3 | +85.46% | manual |
+| Mind Flay | Shadow | 3 | +80.18% | manual |
 | Shadow Weaving | Shadow | 4 | +5.00% | manual |
-| Improved Shadow Word: Pain | Shadow | 2 | +2.79% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.68% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
 | Inner Focus | Discipline | 3 | +1.65% | manual |
 | Penance | Discipline | 5 | +1.20% | manual |
 | Prayer of Mending | Holy | 7 | +1.20% | manual |
-| Improved Mind Blast | Shadow | 3 | +1.03% | manual |
+| Improved Mind Blast | Shadow | 3 | +0.98% | manual |
 | Shadow Focus | Shadow | 1 | +0.98% | manual |
 | Litany of Light | Holy | 5 | +0.80% | manual |
-| Twin Disciplines | Discipline | 1 | +0.63% | manual |
+| Twin Disciplines | Discipline | 1 | +0.65% | manual |
 | Devouring Contagion | Shadow | 5 | +0.36% | manual |
 | Mental Strength | Discipline | 4 | +0.30% | manual |
 | Mental Agility | Discipline | 3 | +0.14% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Renewed Hope | Discipline | 5 | +0.00% | manual |
 | Divine Aegis | Discipline | 6 | +0.00% | manual |
 
-## Optimized build: 18/0/33  score +373.15%  (dps x4.279, sustain x2.132, surv x1.000, utility +0.00%)
+## Optimized build: 18/0/33  score +359.66%  (dps x4.144, sustain x2.132, surv x1.000, utility +0.00%)
 
 ```
   Discipline: Twin Disciplines 5, Power in Light 5, Wand Specialization 1, Inner Focus 1, Mental Agility 3, Mental Strength 3
@@ -51,7 +51,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +7.27% | no |
+| Power Infusion | Discipline 7 | 1/1 | +7.04% | no |
 | Penance | Discipline 5 | 1/1 | +1.20% | no |
 | Prayer of Mending | Holy 7 | 1/1 | +1.20% | no |
 | Litany of Light | Holy 5 | 1/2 | +0.80% | no |

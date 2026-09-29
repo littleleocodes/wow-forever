@@ -11,19 +11,19 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 |---|---|---|---|---|
 | Seal of Command | Retribution | 3 | +12.05% | manual |
 | Champion of the Light | Retribution | 6 | +4.89% | manual |
-| Twist of Light | Retribution | 7 | +3.05% | manual |
+| Twist of Light | Retribution | 7 | +3.20% | manual |
 | Swift Judgement | Protection | 4 | +2.50% | manual |
 | Vengeance | Retribution | 5 | +2.40% | manual |
 | Sacred Arbiter | Retribution | 4 | +2.17% | manual |
+| Holy Conduit | Retribution | 2 | +1.98% | manual |
 | Instrument of Law | Retribution | 6 | +1.87% | manual |
 | Divine Precision | Holy | 5 | +1.74% | manual |
 | Improved Seals | Holy | 2 | +1.61% | manual |
 | Precision | Protection | 2 | +1.50% | manual |
-| Sanctified Judgement | Retribution | 3 | +1.44% | manual |
 | Conviction | Retribution | 2 | +1.40% | manual |
 | Improved Judgement | Retribution | 2 | +1.13% | manual |
-| Holy Conduit | Retribution | 2 | +0.68% | manual |
 | Two-Handed Weapon Specialization | Retribution | 5 | +0.64% | manual |
+| Sanctified Judgement | Retribution | 3 | +0.54% | manual |
 | Holy Power | Holy | 6 | +0.53% | manual |
 | Divine Strength | Holy | 1 | +0.38% | manual |
 | Vindication | Retribution | 3 | +0.33% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Purifying Power | Holy | 3 | +0.00% | manual |
 | Infusion of Light | Holy | 4 | +0.00% | manual |
 
-## Optimized build: 9/8/34  score +96.84%  (dps x1.889, sustain x1.397, surv x1.000, utility +0.00%)
+## Optimized build: 9/8/34  score +97.03%  (dps x1.892, sustain x1.391, surv x1.000, utility +0.00%)
 
 ```
   Holy: Divine Strength 5, Divine Intellect 1, Improved Seals 3
@@ -52,11 +52,11 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Swift Judgement | Protection 4 | 1/1 | +5.34% | no |
-| Divine Precision | Holy 5 | 1/3 | +3.31% | no |
+| Swift Judgement | Protection 4 | 1/1 | +5.35% | no |
+| Divine Precision | Holy 5 | 1/3 | +3.32% | no |
 | Holy Power | Holy 6 | 1/5 | +1.00% | no |
 | Reverence | Holy 3 | 1/3 | +0.25% | no |
-| Divine Intellect | Holy 1 | 2/5 | +0.18% | yes |
+| Divine Intellect | Holy 1 | 2/5 | +0.19% | yes |
 | Illumination | Holy 4 | 1/5 | +0.05% | no |
 | Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |
 | Sacred Duty | Protection 3 | 1/2 | +0.00% | no |

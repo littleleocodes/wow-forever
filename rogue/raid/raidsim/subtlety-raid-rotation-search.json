@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -108,23 +108,31 @@
     "gain_seed2": 0.0017669771747401697,
     "candidates": 395,
     "pass": 3
+   },
+   {
+    "round": 12,
+    "change": "insert in the middle: cast Garrote",
+    "gain_seed1": 0.030338670019025127,
+    "gain_seed2": 0.03042442134692447,
+    "candidates": 84,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
     "subtlety-hemo-raid": {
-     "before": 330.419382475699,
-     "after": 381.98415078813764,
-     "base": 330.419382475699,
+     "before": 330.5273333371424,
+     "after": 391.7721387695834,
+     "base": 330.5273333371424,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 306.4813185811408,
-     "after": 335.51316970652726,
-     "base": 306.4813185811408,
+     "before": 306.37758895685045,
+     "after": 347.23373197207104,
+     "base": 306.37758895685045,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -133,12 +141,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -196,23 +204,31 @@
     "gain_seed2": 0.0020295319581942195,
     "candidates": 315,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "insert in the middle: if not Garrote is on the target: cast Garrote",
+    "gain_seed1": 0.01560055958198836,
+    "gain_seed2": 0.016656244057246417,
+    "candidates": 84,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
     "subtlety-hemo-raid": {
-     "before": 635.7628381549973,
-     "after": 646.2508659625493,
-     "base": 635.7628381549973,
+     "before": 636.0142320259401,
+     "after": 656.7470123477495,
+     "base": 636.0142320259401,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 600.1543238050283,
-     "after": 611.8826993934193,
-     "base": 600.1543238050283,
+     "before": 600.1158494945938,
+     "after": 621.9625735152335,
+     "base": 600.1158494945938,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -221,6 +237,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

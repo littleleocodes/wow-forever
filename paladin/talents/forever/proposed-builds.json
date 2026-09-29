@@ -734,7 +734,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +96.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +123.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -761,14 +761,14 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 25.2 points of score in this model."},
-        {"talent": "Seal of Command", "why": "Removing it costs 21.6 points of score in this model."},
-        {"talent": "Sanctified Judgement", "why": "Removing it costs 16.5 points of score in this model."},
-        {"talent": "Twist of Light", "why": "Removing it costs 13.6 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 13.2 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 12.9 points of score in this model."},
-        {"talent": "Holy Conduit", "why": "Removing it costs 11.6 points of score in this model."},
-        {"talent": "Improved Seals", "why": "Removing it costs 9.7 points of score in this model."}
+        {"talent": "Holy Conduit", "why": "Removing it costs 36.5 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 29.0 points of score in this model."},
+        {"talent": "Seal of Command", "why": "Removing it costs 24.5 points of score in this model."},
+        {"talent": "Twist of Light", "why": "Removing it costs 15.2 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 15.0 points of score in this model."},
+        {"talent": "Sanctified Judgement", "why": "Removing it costs 14.9 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 14.6 points of score in this model."},
+        {"talent": "Improved Seals", "why": "Removing it costs 11.2 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: paladin/talents/forever/optimizer/ret-dps-raid-dps.md"],
@@ -781,7 +781,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +96.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +97.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [
           ["Divine Strength", 5],
@@ -809,14 +809,14 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 24.6 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 24.7 points of score in this model."},
         {"talent": "Seal of Command", "why": "Removing it costs 20.8 points of score in this model."},
         {"talent": "Vengeance", "why": "Removing it costs 12.7 points of score in this model."},
         {"talent": "Conviction", "why": "Removing it costs 12.1 points of score in this model."},
         {"talent": "Improved Seals", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 8.2 points of score in this model."},
         {"talent": "Instrument of Law", "why": "Removing it costs 7.1 points of score in this model."},
-        {"talent": "Improved Judgement", "why": "Removing it costs 4.9 points of score in this model."}
+        {"talent": "Twist of Light", "why": "Removing it costs 5.1 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: paladin/talents/forever/optimizer/ret-dps-parse.md"],
@@ -829,7 +829,7 @@
       "role": "tank",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.7% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +46.9% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Holy": [],
         "Protection": [
@@ -856,14 +856,14 @@
         ]
       },
       "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 8.8 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 8.4 points of score in this model."},
         {"talent": "Deflection", "why": "Removing it costs 5.5 points of score in this model."},
         {"talent": "Improved Righteous Fury", "why": "Removing it costs 5.0 points of score in this model."},
         {"talent": "Vengeance", "why": "Removing it costs 4.7 points of score in this model."},
-        {"talent": "Vindication", "why": "Removing it costs 3.7 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 3.1 points of score in this model."},
+        {"talent": "Vindication", "why": "Removing it costs 3.6 points of score in this model."},
         {"talent": "Templar's Bulwark", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."}
+        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 3.0 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: paladin/talents/forever/optimizer/prot-tank-raid-tank.md"],

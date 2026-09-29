@@ -6,18 +6,18 @@
  "builds": [
   "enhancement-raid-dps",
   "opt-enhancement-dps-raid-dps",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-hand-2026-09-27.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-preset-level-60.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r1.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r2.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r3.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r4.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r5.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r6.json",
-  "F:\\wow-forever\\shaman\\raid\\raidsim\\candidates\\cand-enhancement-dps-r7.json"
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-hand-2026-09-27.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-preset-level-60.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r1.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r2.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r3.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r4.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r5.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r6.json",
+  "/home/user/wow-forever/shaman/raid/raidsim/candidates/cand-enhancement-dps-r7.json"
  ],
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "shaman/enhancement",
   "gear": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
@@ -47,9 +47,9 @@
  "talents": [
   {
    "talent": "Maelstrom Weapon",
-   "sim": 0.5584774863687231,
-   "ev_before": 0.060071753681936985,
-   "ev_after": 0.07019979091231968,
+   "sim": 0.558477486368723,
+   "ev_before": 0.07019979091231963,
+   "ev_after": 0.07019979091231963,
    "scale": 1.0,
    "how": "apl",
    "builds": [
@@ -68,8 +68,8 @@
   },
   {
    "talent": "Stormstrike",
-   "sim": 0.2397926419015832,
-   "ev_before": 0.25089150174410096,
+   "sim": 0.23979264190158334,
+   "ev_before": 0.2692776036617553,
    "ev_after": 0.2692776036617553,
    "scale": 1.0,
    "how": "kept",
@@ -90,8 +90,8 @@
   {
    "talent": "Flurry",
    "sim": 0.09527366745804736,
-   "ev_before": 0.10892878808029453,
-   "ev_after": 0.10013669180499997,
+   "ev_before": 0.10013669180499987,
+   "ev_after": 0.10013669180499987,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -110,11 +110,11 @@
   },
   {
    "talent": "Shamanistic Focus",
-   "sim": 0.08050682485523604,
-   "ev_before": 0.05711267609261203,
-   "ev_after": 0.08225184133825275,
-   "scale": 1.4934884710237384,
-   "how": "fitted",
+   "sim": 0.0805068248552361,
+   "ev_before": 0.08225184133825274,
+   "ev_after": 0.08225184133825274,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "enhancement-raid-dps",
     "opt-enhancement-dps-raid-dps",
@@ -131,9 +131,9 @@
   },
   {
    "talent": "Thundering Strikes",
-   "sim": 0.05006866568405059,
-   "ev_before": 0.05310931647619387,
-   "ev_after": 0.052212541770045,
+   "sim": 0.05006866568405057,
+   "ev_before": 0.052212541770045126,
+   "ev_after": 0.052212541770045126,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -152,9 +152,9 @@
   },
   {
    "talent": "Mental Dexterity",
-   "sim": 0.03417231520419753,
-   "ev_before": 0.039986429297915786,
-   "ev_after": 0.03998643037827163,
+   "sim": 0.034172315204197556,
+   "ev_before": 0.039986430378271536,
+   "ev_after": 0.039986430378271536,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -173,9 +173,9 @@
   },
   {
    "talent": "Rage of the Farseer",
-   "sim": 0.03184486491732147,
-   "ev_before": 0.04235333191334315,
-   "ev_after": 0.04045106984432246,
+   "sim": 0.03184486491732144,
+   "ev_before": 0.04045106984432252,
+   "ev_after": 0.04045106984432252,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -194,9 +194,9 @@
   },
   {
    "talent": "Tidal Focus",
-   "sim": 0.0255520775297561,
-   "ev_before": 0.02565446665976284,
-   "ev_after": 0.025363177209300664,
+   "sim": 0.025552077529755916,
+   "ev_before": 0.02536317720930074,
+   "ev_after": 0.02536317720930074,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -211,9 +211,9 @@
   },
   {
    "talent": "Convection",
-   "sim": 0.023730924300065907,
-   "ev_before": 0.016090415831344886,
-   "ev_after": 0.015150433430763683,
+   "sim": 0.02373092430006577,
+   "ev_before": 0.015150433430763648,
+   "ev_after": 0.015150433430763648,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -228,9 +228,9 @@
   },
   {
    "talent": "Call of Flame",
-   "sim": 0.01900484794726648,
-   "ev_before": 0.02162216517442368,
-   "ev_after": 0.02497543593020878,
+   "sim": 0.019004847947266427,
+   "ev_before": 0.024975435930208626,
+   "ev_after": 0.024975435930208626,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -241,9 +241,9 @@
   },
   {
    "talent": "Elemental Devastation",
-   "sim": 0.01829297242965313,
-   "ev_before": 0.014978497529223986,
-   "ev_after": 0.014280099341650684,
+   "sim": 0.018292972429653144,
+   "ev_before": 0.014280099341650749,
+   "ev_after": 0.014280099341650749,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -261,9 +261,9 @@
   },
   {
    "talent": "Elemental Focus",
-   "sim": 0.01441809584290875,
-   "ev_before": 0.008932573011063955,
-   "ev_after": 0.008419689459346373,
+   "sim": 0.01441809584290847,
+   "ev_before": 0.00841968945934631,
+   "ev_after": 0.00841968945934631,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -280,9 +280,9 @@
   },
   {
    "talent": "Mental Quickness",
-   "sim": 0.013869096564924487,
-   "ev_before": 0.005714492783545729,
-   "ev_after": 0.006776516512967342,
+   "sim": 0.013869096564924159,
+   "ev_before": 0.006776516512967154,
+   "ev_after": 0.006776516512967154,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -301,9 +301,9 @@
   },
   {
    "talent": "Elemental Weapons",
-   "sim": 0.010408852730224464,
-   "ev_before": 0.010869211834647412,
-   "ev_after": 0.010072339688939556,
+   "sim": 0.010408852730224434,
+   "ev_before": 0.010072339688939521,
+   "ev_after": 0.010072339688939521,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -321,9 +321,9 @@
   },
   {
    "talent": "Ancestral Knowledge",
-   "sim": 0.010002999758465874,
-   "ev_before": 0.014636975367547399,
-   "ev_after": 0.013916692861046798,
+   "sim": 0.01000299975846582,
+   "ev_before": 0.013916692861046685,
+   "ev_after": 0.013916692861046685,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -342,9 +342,9 @@
   },
   {
    "talent": "Totemic Focus",
-   "sim": 0.007871739045030635,
-   "ev_before": 0.007936913888777666,
-   "ev_after": 0.007404377654852541,
+   "sim": 0.007871739045030557,
+   "ev_before": 0.0074043776548525396,
+   "ev_after": 0.0074043776548525396,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -359,9 +359,9 @@
   },
   {
    "talent": "Concussion",
-   "sim": 0.005721882224040461,
-   "ev_before": 0.0024846841223430016,
-   "ev_after": 0.0029950780613213716,
+   "sim": 0.005721882224040416,
+   "ev_before": 0.002995078061321273,
+   "ev_after": 0.002995078061321273,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -378,9 +378,9 @@
   },
   {
    "talent": "Reverberation",
-   "sim": 0.005170797824014228,
-   "ev_before": 0.0,
-   "ev_after": 0.012302616065450142,
+   "sim": 0.005170797824014142,
+   "ev_before": 0.012302616065450075,
+   "ev_after": 0.012302616065450075,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -393,7 +393,7 @@
   },
   {
    "talent": "Improved Stormstrike",
-   "sim": 0.0010762546462459376,
+   "sim": 0.0010762546462458659,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -458,8 +458,8 @@
   {
    "talent": "Elemental Warding",
    "sim": 0.0,
-   "ev_before": 8.121262847322476e-06,
-   "ev_after": 7.835486655088749e-06,
+   "ev_before": 7.835486655088746e-06,
+   "ev_after": 7.835486655088746e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -480,100 +480,100 @@
   },
   "builds": {
    "enhancement-raid-dps": {
-    "dps": 410.4623256241933,
-    "surplus": 415.1653181346692,
-    "oom_seconds": 6.945238800088667,
-    "deficit": 0.011327999486099527,
+    "dps": 410.4623256241932,
+    "surplus": 415.1653181346693,
+    "oom_seconds": 6.945238800088665,
+    "deficit": 0.011327999486099971,
     "sustain": 1.3227,
     "bound_share": 0.3585,
     "model_deficit": 0.0223
    },
    "opt-enhancement-dps-raid-dps": {
-    "dps": 413.92425215944917,
-    "surplus": 419.01074123731564,
-    "oom_seconds": 7.0128056916806685,
-    "deficit": 0.012139280875822833,
+    "dps": 413.9242521594492,
+    "surplus": 419.01074123731587,
+    "oom_seconds": 7.012805691680663,
+    "deficit": 0.012139280875823166,
     "sustain": 1.3227,
     "bound_share": 0.375,
     "model_deficit": 0.0234
    },
    "cand-enhancement-dps-hand-2026-09-27": {
-    "dps": 395.1873868804662,
-    "surplus": 422.0884962088741,
-    "oom_seconds": 36.504809478672655,
-    "deficit": 0.06373333926422786,
+    "dps": 395.18738688046597,
+    "surplus": 422.08849620887423,
+    "oom_seconds": 36.50480947867267,
+    "deficit": 0.06373333926422864,
     "sustain": 1.2648,
     "bound_share": 0.3647,
     "model_deficit": 0.0438
    },
    "cand-enhancement-dps-preset-level-60": {
-    "dps": 400.2450775037007,
-    "surplus": 416.5875474791198,
-    "oom_seconds": 27.625036720416002,
-    "deficit": 0.039229377052462655,
+    "dps": 400.2450775037008,
+    "surplus": 416.58754747911996,
+    "oom_seconds": 27.625036720416,
+    "deficit": 0.039229377052462766,
     "sustain": 1.2788,
     "bound_share": 0.3887,
     "model_deficit": 0.0413
    },
    "cand-enhancement-dps-r1": {
-    "dps": 392.3800583389249,
-    "surplus": 418.4895180801765,
-    "oom_seconds": 39.185435803426,
-    "deficit": 0.06238975795864343,
+    "dps": 392.38005833892504,
+    "surplus": 418.48951808017665,
+    "oom_seconds": 39.185435803425996,
+    "deficit": 0.062389757958643544,
     "sustain": 1.252,
     "bound_share": 0.3694,
     "model_deficit": 0.0491
    },
    "cand-enhancement-dps-r2": {
-    "dps": 397.97246024836664,
-    "surplus": 413.55782251272166,
-    "oom_seconds": 25.750422382378673,
+    "dps": 397.9724602483666,
+    "surplus": 413.5578225127216,
+    "oom_seconds": 25.750422382378684,
     "deficit": 0.037686053596231006,
     "sustain": 1.2911,
     "bound_share": 0.3724,
     "model_deficit": 0.035
    },
    "cand-enhancement-dps-r3": {
-    "dps": 400.2022795483757,
-    "surplus": 415.56891260593716,
-    "oom_seconds": 25.750422382378673,
-    "deficit": 0.03697734019900767,
+    "dps": 400.2022795483758,
+    "surplus": 415.56891260593744,
+    "oom_seconds": 25.750422382378684,
+    "deficit": 0.03697734019900811,
     "sustain": 1.2911,
     "bound_share": 0.3672,
     "model_deficit": 0.0345
    },
    "cand-enhancement-dps-r4": {
-    "dps": 398.93380260962476,
-    "surplus": 417.55274537131754,
-    "oom_seconds": 30.403570450087997,
-    "deficit": 0.04459063667545882,
+    "dps": 398.93380260962493,
+    "surplus": 417.5527453713176,
+    "oom_seconds": 30.403570450088004,
+    "deficit": 0.044590636675458484,
     "sustain": 1.2648,
     "bound_share": 0.3601,
     "model_deficit": 0.0433
    },
    "cand-enhancement-dps-r5": {
-    "dps": 403.27577110006587,
-    "surplus": 417.1433774098481,
-    "oom_seconds": 21.759244279502003,
-    "deficit": 0.03324422023882967,
+    "dps": 403.2757711000657,
+    "surplus": 417.14337740984814,
+    "oom_seconds": 21.759244279502006,
+    "deficit": 0.033244220238830224,
     "sustain": 1.2836,
     "bound_share": 0.3601,
     "model_deficit": 0.0365
    },
    "cand-enhancement-dps-r6": {
-    "dps": 410.4623256241933,
-    "surplus": 415.1653181346692,
-    "oom_seconds": 6.945238800088667,
-    "deficit": 0.011327999486099527,
+    "dps": 410.4623256241932,
+    "surplus": 415.1653181346693,
+    "oom_seconds": 6.945238800088665,
+    "deficit": 0.011327999486099971,
     "sustain": 1.3227,
     "bound_share": 0.3585,
     "model_deficit": 0.0223
    },
    "cand-enhancement-dps-r7": {
-    "dps": 413.92425215944917,
-    "surplus": 419.01074123731564,
-    "oom_seconds": 7.0128056916806685,
-    "deficit": 0.012139280875822833,
+    "dps": 413.9242521594492,
+    "surplus": 419.01074123731587,
+    "oom_seconds": 7.012805691680663,
+    "deficit": 0.012139280875823166,
     "sustain": 1.3227,
     "bound_share": 0.375,
     "model_deficit": 0.0234
