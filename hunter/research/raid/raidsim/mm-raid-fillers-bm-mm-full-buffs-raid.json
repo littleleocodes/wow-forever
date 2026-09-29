@@ -1,0 +1,211 @@
+{
+ "class": "hunter",
+ "spec": "mm-raid",
+ "build": "bm-mm-full-buffs-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Barrage": 0.008408855567476725,
+  "Careful Aim": 0.03429673783998621,
+  "Deadly Aspects": 0.0537217163399798,
+  "Efficiency": 0.04134546927511251,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.012622974249105634,
+  "Focused Fire": 0.01960784313725461,
+  "Improved Revive Pet": -0.0,
+  "Lethal Attacks": 0.04496966615632203,
+  "Mortal Shots": 0.043708615575954624,
+  "Ranged Weapon Specialization": 0.03753435582870679,
+  "Rapid Killing": -0.0,
+  "Sniper Shot": -0.0,
+  "Trueshot Aura": 0.021985088358965843,
+  "Unleashed Fury": 0.014361646445866794
+ },
+ "free": [
+  "Endurance Training",
+  "Improved Revive Pet",
+  "Rapid Killing",
+  "Sniper Shot"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "gain",
+   "from": "Sniper Shot",
+   "to": "Bestial Discipline",
+   "seed1": 0.03459441520909534,
+   "seed2": 0.03602655466608118,
+   "utility": "mana"
+  },
+  {
+   "round": 2,
+   "kind": "gain",
+   "from": "Rapid Killing",
+   "to": "Efficiency",
+   "seed1": 0.009558341016544958,
+   "seed2": 0.008074539808130332,
+   "utility": "mana"
+  },
+  {
+   "round": 3,
+   "kind": "gain",
+   "from": "Rapid Killing",
+   "to": "Improved Stings",
+   "seed1": 0.006824124625894434,
+   "seed2": 0.006812772325364813,
+   "utility": null
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Improved Revive Pet",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Revive Pet",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.05253415828641739,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Improved Stings",
+    1
+   ]
+  ],
+  "Survival": []
+ }
+}

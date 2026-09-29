@@ -1,0 +1,177 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "build": "mm-hawk-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Barrage": -0.0,
+  "Bestial Discipline": 0.017092731245007098,
+  "Careful Aim": 0.025626246967378474,
+  "Deadly Aspects": 0.04399629276766348,
+  "Efficiency": 0.031427602364843876,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.03307061231611286,
+  "Focused Fire": 0.01960784313725461,
+  "Improved Stings": 0.030959431266451953,
+  "Lethal Attacks": 0.04205931680796504,
+  "Mortal Shots": 0.03004280399614434,
+  "Ranged Weapon Specialization": 0.01653664597597959,
+  "Summon Hawk": 0.3001407207479574,
+  "Trueshot Aura": 0.0164270813893449,
+  "Unleashed Fury": 0.05012486309031927
+ },
+ "free": [
+  "Barrage",
+  "Endurance Training"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Barrage",
+   "to": "Hawk Eye",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Barrage",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ]
+  ],
+  "Survival": []
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ],
+   [
+    "Hawk Eye",
+    1
+   ]
+  ],
+  "Survival": []
+ }
+}

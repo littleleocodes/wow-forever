@@ -160,8 +160,7 @@
         ],
         "Feral Combat": [
           ["Heart of the Wild", 5],
-          ["Ferocity", 5],
-          ["Feral Swiftness", 1],
+          ["Ferocity", 2],
           ["Sharpened Claws", 2],
           ["Savage Fury", 2],
           ["Shredding Attacks", 3],
@@ -171,7 +170,9 @@
           ["King of the Jungle", 3],
           ["Predatory Instincts", 2],
           ["Rend and Tear", 2],
-          ["Berserk", 1]
+          ["Berserk", 1],
+          ["Feral Charge", 1],
+          ["Thick Hide", 3]
         ],
         "Restoration": [
           ["Furor", 5],
@@ -203,8 +204,8 @@
         },
         {
           "points": 1,
-          "default": "Feral Swiftness",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Feral Charge",
+          "alternatives": ["Feral Swiftness", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -214,7 +215,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-feral-cat-dps-raid-dps beat the previous draft by +7.9% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Powershifting: with Furor retaining energy on shift and Omen of Clarity baseline, the Wolfshead Helm loop may not exist — the rotation must be re-learned.", "Mangle in the demo requires Bear Form; cats keep Shred/Claw."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-feral-cat-dps-raid-dps beat the previous draft by +7.9% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Powershifting: with Furor retaining energy on shift and Omen of Clarity baseline, the Wolfshead Helm loop may not exist — the rotation must be re-learned.", "Mangle in the demo requires Bear Form; cats keep Shred/Claw.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Feral Swiftness -> Feral Charge (interrupt); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival). Net +0.00% on a third seed."],
       "open_questions": ["Furor's cat effect at 5/5 (100% energy retained?) and whether shifting still resets energy to 40 with Wolfshead Helm.", "Is there a cat Mangle rank? The demo talent is bear-only.", "Rend and Tear rank scaling."],
       "sources": ["https://warcraftforever.games/talents/druid"]
     },
@@ -320,12 +321,11 @@
           ["Moonkin Form", 1]
         ],
         "Feral Combat": [
-          ["Heart of the Wild", 3]
+          ["Heart of the Wild", 5]
         ],
         "Restoration": [
           ["Nature's Focus", 5],
           ["Naturalist", 5],
-          ["Subtlety", 2],
           ["Reflection", 3]
         ]
       },
@@ -366,12 +366,12 @@
         },
         {
           "points": 2,
-          "default": "Subtlety",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Heart of the Wild",
+          "alternatives": ["Subtlety", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-balance-dps-raid-dps beat the previous draft by +6.3% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Insect Swarm + Moonfire up, then Wrath -> Starfire x2 (Eclipse) alternating Nature/Arcane for Balance of Nature.", "Beta client 1.60.1.69893 removed Balance of Nature (5 points): re-spent as Improved Entangling Roots 3 + Overgrowth 2 (control utility; the optimizer build says where the model would put them).", "2026-09-27 scenario audit: Swiftmend 1 -> Heart of the Wild 1. Swiftmend is an instant heal that consumes a Rejuvenation or Regrowth: a Moonkin in a raid casts neither. Heart of the Wild's Intellect is mana and spell crit (scorer +0.2 points; the simulator does not separate a single rank)."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-balance-dps-raid-dps beat the previous draft by +6.3% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Insect Swarm + Moonfire up, then Wrath -> Starfire x2 (Eclipse) alternating Nature/Arcane for Balance of Nature.", "Beta client 1.60.1.69893 removed Balance of Nature (5 points): re-spent as Improved Entangling Roots 3 + Overgrowth 2 (control utility; the optimizer build says where the model would put them).", "2026-09-27 scenario audit: Swiftmend 1 -> Heart of the Wild 1. Swiftmend is an instant heal that consumes a Rejuvenation or Regrowth: a Moonkin in a raid casts neither. Heart of the Wild's Intellect is mana and spell crit (scorer +0.2 points; the simulator does not separate a single rank).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Subtlety -> Heart of the Wild (+0.4% DPS); Subtlety -> Heart of the Wild (+0.4% DPS). Net +0.84% on a third seed."],
       "open_questions": ["Moonfury per-rank value; Eclipse charge behaviour; whether Moonkin's crit aura stacks with Leader of the Pack (demo says exclusive)."],
       "sources": ["https://warcraftforever.games/talents/druid"]
     },

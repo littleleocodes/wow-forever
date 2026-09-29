@@ -25,17 +25,17 @@
           ["Improved Sinister Strike", 2],
           ["Deflection", 3],
           ["Precision", 3],
-          ["Endurance", 1],
           ["Riposte", 1],
-          ["Improved Sprint", 2],
           ["Flawless Execution", 1],
           ["Dual Wield Specialization", 5],
           ["Blade Flurry", 1],
           ["Hack and Slash", 5],
           ["Weapon Expertise", 1],
           ["Aggression", 3],
-          ["Adrenaline Rush", 1]
-        ]
+          ["Adrenaline Rush", 1],
+          ["Lightning Reflexes", 3]
+        ],
+        "Subtlety": []
       },
       "core": [
         {"talent": "Relentless Strikes", "why": "Energy on finishers. Raid sim (2026-09-28): removing it costs +10% DPS."},
@@ -62,8 +62,8 @@
         },
         {
           "points": 1,
-          "default": "Endurance",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Lightning Reflexes",
+          "alternatives": ["Endurance", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -74,12 +74,12 @@
         },
         {
           "points": 2,
-          "default": "Improved Sprint",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Lightning Reflexes",
+          "alternatives": ["Improved Sprint", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: the community simulator's own preset 'Improved Expose Armor (SS)' beat the previous draft by +4.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weapon skill mattered in Classic because of glancing blows; whether glancing blows exist in Forever decides how valuable Weapon Expertise's new dodge/parry reduction is."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: the community simulator's own preset 'Improved Expose Armor (SS)' beat the previous draft by +4.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weapon skill mattered in Classic because of glancing blows; whether glancing blows exist in Forever decides how valuable Weapon Expertise's new dodge/parry reduction is.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival). Net +0.00% on a third seed."],
       "open_questions": ["Does Forever keep Classic glancing-blow penalties? (Weapon Expertise no longer gives weapon skill.)", "Restless Blades value: with 5-point finishers every ~10s, Adrenaline Rush could be up every ~2 minutes.", "Whether the Assassination Mutilate build (below) overtakes Combat swords with daggers."],
       "sources": ["https://warcraftforever.games/talents/rogue", "https://github.com/ElliotWood/Forever/blob/master/ui/specs/rogue/dps/presets.ts"]
     },
@@ -102,18 +102,17 @@
         ],
         "Combat": [
           ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 2],
+          ["Lightning Reflexes", 5],
           ["Puncturing Wounds", 3],
           ["Precision", 3],
-          ["Endurance", 2],
-          ["Improved Sprint", 2],
           ["Flawless Execution", 1],
           ["Dual Wield Specialization", 5],
           ["Blade Flurry", 1],
           ["Hack and Slash", 5],
           ["Weapon Expertise", 2],
           ["Aggression", 3],
-          ["Adrenaline Rush", 1]
+          ["Adrenaline Rush", 1],
+          ["Deflection", 1]
         ],
         "Subtlety": [
           ["Opportunity", 2]
@@ -144,7 +143,7 @@
           "why": "Tier-1 Combat filler."
         }
       ],
-      "notes": ["Backstab requires being behind the target; Mutilate does not — one reason the Assassination build may win."],
+      "notes": ["Backstab requires being behind the target; Mutilate does not — one reason the Assassination build may win.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed."],
       "open_questions": ["Hack and Slash dagger rank scaling (only rank 1 = 1% crit was read; ranks 2-5 are extrapolated)."],
       "sources": ["https://warcraftforever.games/talents/rogue"]
     },
@@ -159,7 +158,6 @@
         "Assassination": [
           ["Malice", 5],
           ["Ruthlessness", 3],
-          ["Murder", 2],
           ["Improved Slice and Dice", 3],
           ["Relentless Strikes", 1],
           ["Lethality", 5],
@@ -168,16 +166,16 @@
           ["Vigor", 2],
           ["Mutilate", 1],
           ["Seal Fate", 5],
-          ["Venom", 1]
+          ["Improved Expose Armor", 2]
         ],
         "Combat": [
           ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 2],
+          ["Lightning Reflexes", 5],
           ["Puncturing Wounds", 3],
           ["Precision", 3],
-          ["Endurance", 2],
-          ["Improved Sprint", 2],
-          ["Dual Wield Specialization", 5]
+          ["Dual Wield Specialization", 5],
+          ["Flawless Execution", 1],
+          ["Deflection", 1]
         ],
         "Subtlety": []
       },
@@ -208,7 +206,7 @@
           "why": "Tier-3 Combat filler on the way to Dual Wield Specialization."
         }
       ],
-      "notes": ["Rotation hypothesis: Slice and Dice -> Mutilate to 4-5 points -> Venom (keep up) -> Eviscerate/Rupture; poisons on both weapons.", "Gives up Blade Flurry, Adrenaline Rush, Hack and Slash and Restless Blades — the comparison with Combat daggers is the key launch test.", "Mutilate in the simulator (new-builds survey, 2026-09-28): the tuned Assassination rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), so this draft plays as a Backstab build there; the simulator talent search's version is assassination-seal-fate-raid (Mutilate's point moved to Improved Poisons)."],
+      "notes": ["Rotation hypothesis: Slice and Dice -> Mutilate to 4-5 points -> Venom (keep up) -> Eviscerate/Rupture; poisons on both weapons.", "Gives up Blade Flurry, Adrenaline Rush, Hack and Slash and Restless Blades — the comparison with Combat daggers is the key launch test.", "Mutilate in the simulator (new-builds survey, 2026-09-28): the tuned Assassination rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), so this draft plays as a Backstab build there; the simulator talent search's version is assassination-seal-fate-raid (Mutilate's point moved to Improved Poisons).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Murder -> Improved Expose Armor (+1.9% DPS); Murder -> Improved Expose Armor (+1.9% DPS); Venom -> Flawless Execution (+2.1% DPS); Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +5.97% on a third seed."],
       "open_questions": ["Mutilate damage at level 60 (demo shows level-38 numbers) and whether Venom's poison bonus makes poison builds the top damage.", "Whether poisons still consume charges / how Improved Poisons interacts with Windfury Totem for Horde."],
       "sources": ["https://warcraftforever.games/talents/rogue"]
     },
@@ -234,13 +232,12 @@
         ],
         "Combat": [
           ["Improved Eviscerate", 3],
-          ["Lightning Reflexes", 2],
+          ["Lightning Reflexes", 5],
           ["Puncturing Wounds", 3],
           ["Precision", 3],
-          ["Endurance", 2],
-          ["Improved Sprint", 2],
           ["Dual Wield Specialization", 3],
-          ["Flawless Execution", 1]
+          ["Flawless Execution", 1],
+          ["Deflection", 1]
         ],
         "Subtlety": [
           ["Opportunity", 2]
@@ -266,18 +263,18 @@
         },
         {
           "points": 2,
-          "default": "Endurance",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Lightning Reflexes",
+          "alternatives": ["Endurance", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
           "points": 2,
-          "default": "Improved Sprint",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Deflection",
+          "alternatives": ["Improved Sprint", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `assassination-mutilate-raid`: 2 points Murder -> Improved Expose Armor, 1 point Venom -> Flawless Execution, 2 points Dual Wield Specialization -> Opportunity, 2 points Vigor -> Improved Poisons, 1 point Mutilate -> Improved Poisons, 2 points Lethality -> Improved Poisons.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `assassination-mutilate-raid`: 2 points Murder -> Improved Expose Armor, 1 point Venom -> Flawless Execution, 2 points Dual Wield Specialization -> Opportunity, 2 points Vigor -> Improved Poisons, 1 point Mutilate -> Improved Poisons, 2 points Lethality -> Improved Poisons.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed."],
       "open_questions": ["Mutilate against Backstab in the game: the simulator implements Forever's Mutilate from the client (both weapons, more damage on poisoned targets) and still prefers Backstab with this gear."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/rogue/dps/presets.ts", "https://warcraftforever.games/talents/rogue"]
     },

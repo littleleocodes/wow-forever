@@ -13,27 +13,24 @@
       "summary": "The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Presence of Mind, Arcane Instability and a stronger Arcane Mind (+10% Intellect and +100% Arcane crit damage) with Arcane Concentration and Arcane Meditation, plus Improved Frostbolt, Ice Shards, Piercing Ice and Elemental Precision — which is now 5 ranks, so Frost Channeling drops to 2.",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 3],
-          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
           ["Arcane Concentration", 5],
-          ["Arcane Geometry", 2],
           ["Arcane Blast", 1],
-          ["Improved Counterspell", 2],
           ["Arcane Meditation", 3],
           ["Missile Barrage", 1],
           ["Presence of Mind", 1],
           ["Arcane Mind", 5],
           ["Arcane Instability", 3],
-          ["Arcane Power", 1]
+          ["Arcane Power", 1],
+          ["Arcane Impact", 3],
+          ["Improved Channeling", 5]
         ],
         "Fire": [],
         "Frost": [
           ["Improved Frostbolt", 5],
           ["Elemental Precision", 5],
           ["Ice Shards", 5],
-          ["Piercing Ice", 3],
-          ["Frost Channeling", 2]
+          ["Piercing Ice", 3]
         ]
       },
       "core": [
@@ -69,12 +66,12 @@
         },
         {
           "points": 2,
-          "default": "Frost Channeling",
-          "alternatives": ["Frost Channeling 3 with Elemental Precision 4"],
+          "default": "Improved Channeling",
+          "alternatives": ["Frost Channeling", "Frost Channeling 3 with Elemental Precision 4"],
           "why": "Mana/threat vs. the fifth point of hit."
         }
       ],
-      "notes": ["Missile Barrage (Frostbolt 20% chance to make the next Arcane Missiles fast and free) could add a filler cast; treat it as a curiosity until tested."],
+      "notes": ["Missile Barrage (Frostbolt 20% chance to make the next Arcane Missiles fast and free) could add a filler cast; treat it as a curiosity until tested.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt). Net +1.80% on a third seed."],
       "open_questions": ["Is Arcane Instability's crit 'with all attacks' also spell crit? Demo wording is ambiguous.", "Whether the deep Frost Fingers of Frost build out-damages this — see frost-fingers-of-frost-raid."],
       "sources": ["https://warcraftforever.games/talents/mage"],
       "spec": "Hybrid Arcane/Frost"
@@ -89,13 +86,13 @@
       "summary": "Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks once — likely a transcription artefact; Classic stacked to 5), Ice Block moved to tier 4 and Cold Snap to tier 5, Shatter is 3 ranks. The 17/0/34 shape still fits with Elemental Precision at 5 ranks.",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 3],
-          ["Arcane Subtlety", 2],
+          ["Arcane Focus", 5],
           ["Arcane Concentration", 5],
-          ["Arcane Geometry", 2],
           ["Arcane Blast", 1],
-          ["Arcane Meditation", 2]
+          ["Arcane Meditation", 2],
+          ["Missile Barrage", 1],
+          ["Arcane Impact", 3],
+          ["Improved Channeling", 3]
         ],
         "Fire": [],
         "Frost": [
@@ -104,12 +101,11 @@
           ["Ice Shards", 5],
           ["Piercing Ice", 3],
           ["Frost Channeling", 3],
-          ["Shatter", 3],
           ["Ice Block", 1],
-          ["Arctic Reach", 2],
           ["Cold Snap", 1],
           ["Winter's Chill", 5],
-          ["Ice Barrier", 1]
+          ["Ice Barrier", 1],
+          ["Arctic Reach", 2]
         ]
       },
       "core": [
@@ -132,7 +128,7 @@
           "why": "Regen vs. filler."
         }
       ],
-      "notes": ["Ice Lance + Fingers of Frost are not taken here; they need 3 more Frost points (see the Fingers of Frost build).", "2026-09-27 scenario audit: Improved Frost Nova 2 -> Arctic Reach 2. Improved Frost Nova shortens a root's cooldown: control a raid boss ignores (simulator 0.0%). Arctic Reach 2/2 adds range. This draft is superseded in Forever: the beta Winter's Chill raises only your own Frostbolt and Ice Lance crit, so the raid-support reason for skipping Fingers of Frost is gone, and frost-fingers-of-frost-raid simulates about 14% higher (645 vs 559 DPS)."],
+      "notes": ["Ice Lance + Fingers of Frost are not taken here; they need 3 more Frost points (see the Fingers of Frost build).", "2026-09-27 scenario audit: Improved Frost Nova 2 -> Arctic Reach 2. Improved Frost Nova shortens a root's cooldown: control a raid boss ignores (simulator 0.0%). Arctic Reach 2/2 adds range. This draft is superseded in Forever: the beta Winter's Chill raises only your own Frostbolt and Ice Lance crit, so the raid-support reason for skipping Fingers of Frost is gone, and frost-fingers-of-frost-raid simulates about 14% higher (645 vs 559 DPS).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arctic Reach -> Missile Barrage (+7.6% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arctic Reach -> Arcane Impact (+0.2% DPS); Shatter -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Shatter -> Arctic Reach (range); Shatter -> Arctic Reach (range). Net +8.80% on a third seed."],
       "open_questions": ["Winter's Chill stack count (demo says 1; Classic was 5) — decides whether one dedicated WC mage is still worth it."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -146,14 +142,13 @@
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
-          ["Arcane Subtlety", 2],
           ["Arcane Concentration", 5],
           ["Arcane Impact", 3],
           ["Missile Barrage", 1],
           ["Arcane Meditation", 3],
           ["Presence of Mind", 1],
           ["Arcane Mind", 1],
-          ["Improved Channeling", 1]
+          ["Improved Channeling", 3]
         ],
         "Fire": [],
         "Frost": [
@@ -205,8 +200,8 @@
         },
         {
           "points": 2,
-          "default": "Arcane Subtlety",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Improved Channeling",
+          "alternatives": ["Arcane Subtlety", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -228,7 +223,7 @@
           "why": "Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.", "2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers)."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.", "2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt). Net +0.00% on a third seed."],
       "open_questions": ["Do Fingers of Frost procs apply to bosses (they only need a chill, not a freeze)?", "Fingers of Frost rank-2 value (extrapolated) and whether Winter's Chill stacks.", "Mana: no Arcane Meditation — is Frost Channeling + Clearcasting enough for a 5-minute fight?"],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -242,10 +237,9 @@
       "summary": "Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the community simulator (+2.7% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Ignite (40% at max), Improved Scorch (100% chance, 5 stacks of 3%), Critical Mass, Fire Power, Master of Elements and Combustion all survive; Incinerate and Improved Fire Blast are gone; Hot Streak (crits shorten Pyroblast up to 75%) is the new 16-point talent. Elemental Precision is taken to 5 for hit, so Arcane stops at Arcane Concentration and Magic Absorption/Arcane Resilience fillers.",
       "allocation": {
         "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 5],
           ["Arcane Concentration", 5],
-          ["Magic Absorption", 2]
+          ["Improved Channeling", 5],
+          ["Arcane Subtlety", 2]
         ],
         "Fire": [
           ["Improved Fireball", 5],
@@ -258,7 +252,8 @@
           ["Master of Elements", 3],
           ["Critical Mass", 3],
           ["Fire Power", 5],
-          ["Combustion", 1]
+          ["Combustion", 1],
+          ["Burning Soul", 2]
         ],
         "Frost": [
           ["Elemental Precision", 5]
@@ -283,24 +278,24 @@
         },
         {
           "points": 5,
-          "default": "Arcane Focus",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Burning Soul",
+          "alternatives": ["Arcane Focus", "any utility talent legal at that tier"],
           "why": "Measures +0.1% DPS in the community simulator (noise): these points are free to move."
         },
         {
           "points": 2,
-          "default": "Wand Specialization",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Improved Channeling",
+          "alternatives": ["Wand Specialization", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
           "points": 2,
-          "default": "Magic Absorption",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Improved Channeling",
+          "alternatives": ["Magic Absorption", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `cand-fire-raid-r5` beat the previous draft by +2.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.", "Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.", "2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed."],
       "open_questions": ["Does a 3-stack Hot Streak Pyroblast (1.5s cast) beat Fireball per cast time? If yes, Pyroblast enters the rotation.", "Incineration (Scorch/Fire Blast/Arcane Blast crit) vs. Flame Throwing.", "Whether Arcane Meditation 3/3 (est. 51% regen while casting) is worth 5 Arcane filler points and 2 hit."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
@@ -313,13 +308,13 @@
       "based_on": "fire-raid",
       "summary": "A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 and 60; it counts as both Fire and Frost, so Fire Power and Piercing Ice, Critical Mass and Ice Shards all apply to it, and Improved Fireball and Hot Streak name it). Deep Fire for Improved Fireball, Ignite, Improved Scorch, Hot Streak and Critical Mass, and 16 Frost points for Elemental Precision, Ice Shards, Piercing Ice and Frost Channeling. Found by the simulator talent search (raidsim/talent_opt.py) from four starts, on our implementation of Frostfire Bolt (the community simulator ships the spell as a stub: raidsim/patches/). Best Frostfire build found, not a recommendation: Frostfire Bolt rank 3 hits for 270-314 plus 57 over 9 s, against Frostbolt rank 11's 457-493 and Fireball rank 12's 425-541, and the two trees' talents on one spell do not close that gap (see the rank table).",
       "allocation": {
-        "Arcane": [],
+        "Arcane": [
+          ["Improved Channeling", 2]
+        ],
         "Fire": [
           ["Incineration", 3],
           ["Improved Fireball", 5],
           ["Ignite", 5],
-          ["Flame Throwing", 2],
-          ["Burning Soul", 2],
           ["Pyroblast", 1],
           ["Improved Scorch", 3],
           ["Hot Streak", 1],
@@ -327,7 +322,8 @@
           ["Critical Mass", 3],
           ["Blast Wave", 1],
           ["Fire Power", 5],
-          ["Combustion", 1]
+          ["Combustion", 1],
+          ["Wake of Fire", 2]
         ],
         "Frost": [
           ["Elemental Precision", 5],
@@ -360,7 +356,7 @@
           "why": "Tier fillers on the way to the Fire capstones."
         }
       ],
-      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%)."],
+      "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed."],
       "open_questions": ["Does Frostfire Bolt take both schools' bonuses in the live game (Fire Power and Piercing Ice, Critical Mass and Ice Shards)? The tooltip says it counts as both Frost and Fire damage.", "Are the rank-3 numbers (270-314 + 57 over 9 s, 370 mana) final? A stronger Frostfire Bolt would move this build up the ranking.", "Frostfire Bolt's slow: the tooltip gives 40% without a duration (9 s assumed in the fight lab)."],
       "sources": ["https://warcraftforever.games/talents/mage", "_reference/data/raidsim/patches/README.md"],
       "spec": "Hybrid Fire/Frost"
@@ -375,8 +371,6 @@
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
-          ["Arcane Subtlety", 2],
-          ["Magic Absorption", 1],
           ["Arcane Concentration", 5],
           ["Arcane Impact", 3],
           ["Arcane Blast", 1],
@@ -385,14 +379,15 @@
           ["Presence of Mind", 1],
           ["Arcane Mind", 5],
           ["Arcane Instability", 3],
-          ["Arcane Power", 1]
+          ["Arcane Power", 1],
+          ["Improved Channeling", 5],
+          ["Arcane Subtlety", 2]
         ],
         "Fire": [
           ["Wake of Fire", 2],
           ["Incineration", 3],
           ["Ignite", 5],
-          ["Burning Soul", 3],
-          ["Improved Flamestrike", 2]
+          ["Burning Soul", 1]
         ],
         "Frost": [
           ["Elemental Precision", 5]
@@ -424,8 +419,8 @@
         },
         {
           "points": 1,
-          "default": "Magic Absorption",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Burning Soul",
+          "alternatives": ["Magic Absorption", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
@@ -436,12 +431,12 @@
         },
         {
           "points": 2,
-          "default": "Improved Flamestrike",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Arcane Subtlety",
+          "alternatives": ["Improved Flamestrike", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Arcane DPS`: 3 points Master of Elements -> Elemental Precision, 2 points Improved Scorch -> Elemental Precision.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Arcane DPS`: 3 points Master of Elements -> Elemental Precision, 2 points Improved Scorch -> Elemental Precision.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Improved Flamestrike -> Arcane Subtlety (threat); Improved Flamestrike -> Arcane Subtlety (threat); Magic Absorption -> Burning Soul (threat). Net +0.00% on a third seed."],
       "open_questions": ["Arcane Blast's stacking cost against a mage's mana in long fights (the simulator's fights last 120 s)."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/mage/dps/presets.ts", "https://warcraftforever.games/talents/mage"]
     },

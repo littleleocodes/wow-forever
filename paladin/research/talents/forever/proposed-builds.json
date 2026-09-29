@@ -233,14 +233,15 @@
         ],
         "Retribution": [
           ["Deflection", 5],
-          ["Benediction", 3],
           ["Holy Conduit", 2],
           ["Conviction", 5],
           ["Vindication", 3],
           ["Sanctified Judgement", 3],
           ["Sacred Arbiter", 1],
           ["Vengeance", 3],
-          ["Champion of the Light", 3]
+          ["Champion of the Light", 3],
+          ["Improved Judgement", 2],
+          ["Eye for an Eye", 1]
         ]
       },
       "core": [
@@ -280,8 +281,8 @@
         },
         {
           "points": 3,
-          "default": "Benediction",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Eye for an Eye",
+          "alternatives": ["Benediction", "any utility talent legal at that tier"],
           "why": "Measures +0.1% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -291,7 +292,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-prot-tank-raid-tank` beat the previous draft by +2.9% tank value; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: cand-prot-tank-r1 beat the previous draft by +9.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Seal of Fury (a new baseline tank seal with an absorb shield) replaces Blessing of Sanctuary's role.", "Consecration is baseline; AoE threat no longer needs Holy points.", "Build 1.60.1.70009 removed Improved Holy Strike (Holy Strike's cooldown is 10 sec baseline now): the 2 points go to Divine Strength."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-prot-tank-raid-tank` beat the previous draft by +2.9% tank value; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: cand-prot-tank-r1 beat the previous draft by +9.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Seal of Fury (a new baseline tank seal with an absorb shield) replaces Blessing of Sanctuary's role.", "Consecration is baseline; AoE threat no longer needs Holy points.", "Build 1.60.1.70009 removed Improved Holy Strike (Holy Strike's cooldown is 10 sec baseline now): the 2 points go to Divine Strength.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Benediction -> Improved Judgement (+1.2% DPS); Benediction -> Improved Judgement (+1.0% DPS); Benediction -> Eye for an Eye (+0.3% DPS). Net +2.42% on a third seed."],
       "open_questions": ["Does Forever give paladins a taunt? (Classic's lack of one kept them out of raid tanking.)", "Seal of Fury and Holy Strike numbers — the entire threat model is new.", "Reckoning's reworked proc (8% on block, 20% on being crit) vs. Iron Creed for threat."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },

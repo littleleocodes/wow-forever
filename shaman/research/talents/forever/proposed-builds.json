@@ -97,12 +97,11 @@
           ["Thundering Strikes", 5],
           ["Ancestral Knowledge", 5],
           ["Earth's Grasp", 2],
-          ["Improved Lightning Shield", 3],
-          ["Guardian Totems", 2],
-          ["Elemental Weapons", 1],
           ["Shamanistic Focus", 1],
           ["Stormstrike", 1],
-          ["Mental Quickness", 2]
+          ["Mental Quickness", 2],
+          ["Anticipation", 3],
+          ["Toughness", 3]
         ],
         "Restoration": []
       },
@@ -125,20 +124,20 @@
         },
         {
           "points": 3,
-          "default": "Improved Lightning Shield",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Toughness",
+          "alternatives": ["Improved Lightning Shield", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
           "points": 2,
-          "default": "Guardian Totems",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Anticipation",
+          "alternatives": ["Guardian Totems", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
           "points": 1,
-          "default": "Elemental Weapons",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Anticipation",
+          "alternatives": ["Elemental Weapons", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -154,7 +153,7 @@
           "why": "Measures -0.7% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: cand-elemental-dps-r1 beat the previous draft by +5.4% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Flame Shock -> Lava Burst on cooldown -> Lightning Bolt filler; Chain Lightning on 2+ targets.", "Thundering Strikes (Enhancement tier 1) is now +5% crit with all spells — a 5/31/15 variant that drops Mana Tide for it is plausible.", "Beta client: Tidal Mastery moved to Restoration tier 4 and Totemic Focus to tier 1, so the 20 Restoration points are now Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Natural Grace 1, Water Shield 1, Restorative Totems 4, Mana Tide Totem 1 (Restorative Totems replaces Tidal Mastery as the filler)."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: cand-elemental-dps-r1 beat the previous draft by +5.4% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Flame Shock -> Lava Burst on cooldown -> Lightning Bolt filler; Chain Lightning on 2+ targets.", "Thundering Strikes (Enhancement tier 1) is now +5% crit with all spells — a 5/31/15 variant that drops Mana Tide for it is plausible.", "Beta client: Tidal Mastery moved to Restoration tier 4 and Totemic Focus to tier 1, so the 20 Restoration points are now Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Natural Grace 1, Water Shield 1, Restorative Totems 4, Mana Tide Totem 1 (Restorative Totems replaces Tidal Mastery as the filler).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Weapons -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival). Net +0.00% on a third seed."],
       "open_questions": ["Elemental Alacrity total (0.5s vs. Classic Lightning Mastery's 1.0s) — Lightning Bolt may be a 2.5s cast.", "Lava Burst damage at 60 and whether it can crit for Elemental Fury.", "Whether Water Shield procs on spell crits (text says healing crits)."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
     },
@@ -694,15 +693,15 @@
         "Elemental": [
           ["Convection", 5],
           ["Concussion", 5],
-          ["Elemental Warding", 3],
           ["Call of Flame", 3],
-          ["Elemental Devastation", 1],
           ["Elemental Focus", 1],
           ["Elemental Alacrity", 3],
           ["Call of Thunder", 1],
           ["Lightning Overload", 3],
           ["Elemental Fury", 5],
-          ["Lava Burst", 1]
+          ["Lava Burst", 1],
+          ["Eye of the Storm", 3],
+          ["Elemental Reach", 1]
         ],
         "Enhancement": [
           ["Thundering Strikes", 5],
@@ -723,7 +722,7 @@
         {"talent": "Call of Flame", "why": "The scorer's value in this build: +8.2% of its score (model elemental-dps)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model elemental-dps, profile raid-dps."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model elemental-dps, profile raid-dps.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Devastation -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Eye of the Storm (interrupt); Elemental Warding -> Elemental Reach (range). Net +0.00% on a third seed."],
       "open_questions": ["A generated Elemental build: check it against the community's Elemental builds at launch."],
       "sources": ["https://talentsforever.com/shaman"]
     },

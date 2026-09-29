@@ -612,7 +612,6 @@
       "allocation": {
         "Discipline": [
           ["Power in Light", 5],
-          ["Wand Specialization", 1],
           ["Twin Disciplines", 5],
           ["Holy Precision", 3],
           ["Mental Agility", 3],
@@ -620,15 +619,17 @@
           ["Meditation", 3],
           ["Mental Strength", 5],
           ["Penance", 1],
-          ["Divine Aegis", 3],
-          ["Power Infusion", 1]
+          ["Power Infusion", 1],
+          ["Martyrdom", 2],
+          ["Silent Resolve", 2]
         ],
         "Holy": [
           ["Holy Specialization", 5],
           ["Divine Fury", 5],
-          ["Blessed Recovery", 2],
-          ["Inspiration", 3],
-          ["Searing Light", 2]
+          ["Inspiration", 1],
+          ["Searing Light", 2],
+          ["Twilight Focus", 3],
+          ["Holy Nova", 1]
         ],
         "Shadow": [
           ["Shadow Focus", 3]
@@ -654,20 +655,20 @@
         },
         {
           "points": 1,
-          "default": "Wand Specialization",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Silent Resolve",
+          "alternatives": ["Wand Specialization", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
           "points": 3,
-          "default": "Divine Aegis",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Silent Resolve",
+          "alternatives": ["Divine Aegis", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
           "points": 2,
-          "default": "Blessed Recovery",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Twilight Focus",
+          "alternatives": ["Blessed Recovery", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
@@ -677,7 +678,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Smite 31/17/3`: 3 points Spirit Tap -> Shadow Focus.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Smite 31/17/3`: 3 points Spirit Tap -> Shadow Focus.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Blessed Recovery -> Twilight Focus (interrupt); Blessed Recovery -> Twilight Focus (interrupt); Divine Aegis -> Martyrdom (interrupt); Divine Aegis -> Martyrdom (interrupt); Inspiration -> Twilight Focus (interrupt); Divine Aegis -> Silent Resolve (threat); Inspiration -> Holy Nova (threat); Wand Specialization -> Silent Resolve (threat). Net +0.00% on a third seed."],
       "open_questions": ["Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/priest/dps/presets.ts", "https://warcraftforever.games/talents/priest"],
       "spec": "Hybrid Discipline/Holy"

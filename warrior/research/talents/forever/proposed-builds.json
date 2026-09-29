@@ -21,9 +21,8 @@
         ],
         "Fury": [
           ["Cruelty", 5],
-          ["Booming Voice", 2],
+          ["Booming Voice", 5],
           ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
           ["Raging Blows", 1],
           ["Dual Wield Specialization", 5],
           ["Improved Execute", 2],
@@ -72,8 +71,8 @@
         },
         {
           "points": 3,
-          "default": "Boundless Rage",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Booming Voice",
+          "alternatives": ["Boundless Rage", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -83,7 +82,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.", "Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed."],
       "open_questions": ["Enrage uptime for a DPS warrior who rarely takes damage — is 5/5 still the best path to Flurry?", "Real max-rank values for Flurry, Unbridled Wrath and Dual Wield Specialization (demo shows rank 1 only).", "Does Raging Blows' off-hand Whirlwind beat 2 more points of Precision?"],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -98,18 +97,17 @@
       "allocation": {
         "Arms": [
           ["Improved Rend", 3],
-          ["Improved Heroic Strike", 3],
           ["Improved Tactical Mastery", 5],
           ["Anger Management", 1],
           ["Deep Wounds", 3],
           ["Two-Handed Weapon Specialization", 3],
-          ["Impale", 1]
+          ["Impale", 1],
+          ["Deflection", 3]
         ],
         "Fury": [
           ["Cruelty", 5],
-          ["Booming Voice", 2],
+          ["Booming Voice", 5],
           ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
           ["Improved Execute", 2],
           ["Enrage", 5],
           ["Death Wish", 1],
@@ -138,8 +136,8 @@
         },
         {
           "points": 3,
-          "default": "Improved Heroic Strike",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Deflection",
+          "alternatives": ["Improved Heroic Strike", "any utility talent legal at that tier"],
           "why": "Measures +0.4% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -162,8 +160,8 @@
         },
         {
           "points": 3,
-          "default": "Boundless Rage",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Booming Voice",
+          "alternatives": ["Boundless Rage", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -173,7 +171,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-arms-2h-raid-raid-dps beat the previous draft by +8.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.", "This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed."],
       "open_questions": ["Does Improved Slam really remove the swing reset at rank 1 (demo text says so)? If yes Slam may be the primary filler.", "Weaponmaster proc/crit values at max rank; which weapon type wins.", "Whether a Bloodthirst dual-wield build still out-damages this — Classic history says DW wins with hit and weapon skill, but Improved Slam's rework may change that."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
@@ -196,9 +194,8 @@
           ["Impale", 2],
           ["Bloodthrill", 5],
           ["Weaponmaster", 5],
-          ["Improved Slam", 1],
-          ["Spearing Strike", 1],
-          ["Improved Heroic Strike", 1]
+          ["Improved Slam", 2],
+          ["Spearing Strike", 1]
         ],
         "Fury": [
           ["Booming Voice", 5],
@@ -228,8 +225,8 @@
         },
         {
           "points": 1,
-          "default": "Improved Heroic Strike",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Deflection",
+          "alternatives": ["Improved Heroic Strike", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
@@ -239,7 +236,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed."],
       "open_questions": ["Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.", "Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model)."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warrior/dps/presets.ts", "https://warcraftforever.games/talents/warrior"]
     },
@@ -268,11 +265,11 @@
           ["Defiance", 3],
           ["Improved Revenge", 3],
           ["Master of Defense", 2],
-          ["Vanguard", 1],
           ["Concussion Blow", 1],
           ["Bastion", 5],
           ["Focused Rage", 3],
-          ["Shield Slam", 1]
+          ["Shield Slam", 1],
+          ["Improved Bloodrage", 1]
         ]
       },
       "core": [
@@ -306,8 +303,8 @@
         },
         {
           "points": 1,
-          "default": "Vanguard",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Improved Bloodrage",
+          "alternatives": ["Vanguard", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -317,7 +314,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-27: opt-prot-tank-raid-tank beat the previous draft by +8.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-prot-tank-raid-tank beat the previous draft by +9.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Shield Block is gone: check whether Shield Block itself gained the extra charge baseline.", "Improved Thunder Clap moved into Protection (tier 2) — a dungeon/AoE tank can take it over Improved Bloodrage's partner Toughness.", "Beta client 1.60.1.69893 removed Vitality (5 points): re-spent as Focused Rage 3 (-3 Rage on offensive abilities) and Improved Revenge 2."],
+      "notes": ["Adopted from the community simulator on 2026-09-27: opt-prot-tank-raid-tank beat the previous draft by +8.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-prot-tank-raid-tank beat the previous draft by +9.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Shield Block is gone: check whether Shield Block itself gained the extra charge baseline.", "Improved Thunder Clap moved into Protection (tier 2) — a dungeon/AoE tank can take it over Improved Bloodrage's partner Toughness.", "Beta client 1.60.1.69893 removed Vitality (5 points): re-spent as Focused Rage 3 (-3 Rage on offensive abilities) and Improved Revenge 2.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Vanguard -> Improved Bloodrage (+0.2% DPS). Net +0.19% on a third seed."],
       "open_questions": ["Is Bastion's +10% damage worth more threat than Anger Management + Improved Tactical Mastery (the Classic Arms dip)?", "Does Shield Block still block an extra attack without Improved Shield Block?", "Vitality max rank (only rank 1 seen)."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },

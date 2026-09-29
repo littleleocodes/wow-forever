@@ -17,8 +17,7 @@
           ["Endurance Training", 3],
           ["Focused Fire", 2],
           ["Unleashed Fury", 5],
-          ["Improved Mend Pet", 2],
-          ["Ferocity", 3],
+          ["Ferocity", 5],
           ["Bestial Discipline", 2]
         ],
         "Marksmanship": [
@@ -58,12 +57,12 @@
         },
         {
           "points": 2,
-          "default": "Improved Mend Pet",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Ferocity",
+          "alternatives": ["Improved Mend Pet", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "notes": ["Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Ferocity (+0.2% DPS); Improved Mend Pet -> Ferocity (+0.2% DPS). Net +0.49% on a third seed."],
       "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -78,22 +77,21 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
+          ["Endurance Training", 3],
           ["Focused Fire", 2],
-          ["Improved Revive Pet", 2],
           ["Unleashed Fury", 5],
-          ["Ferocity", 5]
+          ["Ferocity", 5],
+          ["Bestial Discipline", 1]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
-          ["Efficiency", 4],
+          ["Efficiency", 5],
           ["Careful Aim", 5],
-          ["Rapid Killing", 2],
           ["Trueshot Aura", 1],
           ["Mortal Shots", 5],
           ["Barrage", 3],
           ["Ranged Weapon Specialization", 5],
-          ["Sniper Shot", 1]
+          ["Improved Stings", 1]
         ],
         "Survival": []
       },
@@ -114,8 +112,8 @@
       "flex": [
         {
           "points": 2,
-          "default": "Rapid Killing",
-          "alternatives": ["Improved Arcane Shot", "Improved Stings"],
+          "default": "Improved Stings",
+          "alternatives": ["Improved Arcane Shot", "Improved Stings", "Rapid Killing"],
           "why": "Tier-3 Marksmanship filler; Rapid Killing (-1 min Rapid Fire) also unlocks Rapid Recuperation if you find 2 more points."
         },
         {
@@ -131,7 +129,7 @@
           "why": "Mana vs. Rapid Fire uptime."
         }
       ],
-      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `bm-mm-raid` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `bm-mm-raid` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Sniper Shot -> Bestial Discipline (+3.6% DPS); Rapid Killing -> Efficiency (+0.8% DPS); Rapid Killing -> Improved Stings (+0.7% DPS); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +5.25% on a third seed."],
       "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -144,7 +142,9 @@
       "summary": "Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best build in the community simulator (+13.8% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Lone Wolf (+20% damage with no pet) plus the full Marksmanship core, with Survival for Improved Tracking (+5% vs. the tracked creature type), Surefooted (+3% hit) and Deterrence. The petless alternative to the BM/MM build; no Classic baseline.",
       "allocation": {
         "Beast Mastery": [
-          ["Deadly Aspects", 5]
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 5],
+          ["Improved Aspect of the Monkey", 1]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
@@ -158,12 +158,9 @@
           ["Mortal Shots", 5],
           ["Barrage", 3],
           ["Rapid Recuperation", 2],
-          ["Ranged Weapon Specialization", 5],
-          ["Sniper Shot", 1]
+          ["Ranged Weapon Specialization", 5]
         ],
-        "Survival": [
-          ["Improved Tracking", 5]
-        ]
+        "Survival": []
       },
       "core": [
         {"talent": "Lone Wolf", "why": "+20% damage with all attacks while no pet is active. Raid sim (2026-09-26): removing it costs +20% DPS."},
@@ -208,12 +205,12 @@
         },
         {
           "points": 5,
-          "default": "Improved Tracking",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Endurance Training",
+          "alternatives": ["Improved Tracking", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.", "2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-mm-lonewolf-raid-raid-dps beat the previous draft by +13.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.", "2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Sniper Shot -> Improved Aspect of the Monkey (survival). Net +0.00% on a third seed."],
       "open_questions": ["Lone Wolf +20% vs. a Ferocity/Unleashed Fury pet: needs a sim or parse comparison at 60."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -241,8 +238,8 @@
           ["Improved Stings", 3],
           ["Mortal Shots", 5],
           ["Trueshot Aura", 1],
-          ["Barrage", 1],
-          ["Ranged Weapon Specialization", 4]
+          ["Ranged Weapon Specialization", 4],
+          ["Hawk Eye", 1]
         ],
         "Survival": []
       },
@@ -272,12 +269,12 @@
         },
         {
           "points": 1,
-          "default": "Barrage",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Hawk Eye",
+          "alternatives": ["Barrage", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `bm-mm-raid`: 1 point Improved Mend Pet -> Summon Hawk, 1 point Barrage -> Improved Stings, 1 point Improved Mend Pet -> Ferocity, 1 point Bestial Discipline -> Ferocity.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `bm-mm-raid`: 1 point Improved Mend Pet -> Summon Hawk, 1 point Barrage -> Improved Stings, 1 point Improved Mend Pet -> Ferocity, 1 point Bestial Discipline -> Ferocity.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Barrage -> Hawk Eye (range). Net +0.00% on a third seed."],
       "open_questions": ["How hard do the hawks hit after the dive bomb? The client does not describe the hawk's swings; the simulator (and the fight lab, which follows it) assumes the dive bomb's base damage (108 at rank 4) every 3 s for 18 s, two hawks at once. Those follow-up attacks are 22% of this build's damage on the training dummy and 13% in a raid (2026-09-28): at half that, the build only matches the best builds without the hawk.", "Do Unleashed Fury, Ferocity and Focused Fire apply to hawks in the game? The first two tooltips name hawks; the simulator applies all three.", "Summon Hawk shares its cooldown with Arcane Shot: the rotation gives up Arcane Shot for it."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/hunter/dps/presets.ts", "https://github.com/ElliotWood/Forever/blob/master/sim/hunter/summon_hawk.go", "https://warcraftforever.games/talents/hunter"]
     },
@@ -590,7 +587,6 @@
           ["Lone Wolf", 1]
         ],
         "Survival": [
-          ["Improved Tracking", 5],
           ["Savage Strikes", 2],
           ["Survivalist", 3],
           ["Clever Traps", 2],
@@ -602,7 +598,8 @@
           ["Survivalist's Discipline", 2],
           ["Strider Kick", 1],
           ["Lightning Reflexes", 5],
-          ["Lacerating Strikes", 1]
+          ["Lacerating Strikes", 1],
+          ["Deflection", 5]
         ]
       },
       "core": [
@@ -636,7 +633,7 @@
           "why": "+3% hit against a level-63 boss."
         }
       ],
-      "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero."],
+      "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival). Net +0.00% on a third seed."],
       "open_questions": ["Whether traps can be placed in combat and trigger at once under a boss, as the simulator assumes.", "Fire traps sharing one cooldown (the user's reading, and the simulator's model): with separate cooldowns Explosive Trap adds about 5% more on the dummy.", "Survival Tactics' +10% trap hit: whether traps can miss a boss at all.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
       "sources": ["https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4", "https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/raidsim/melee-dps.md"]
     },
@@ -1210,9 +1207,8 @@
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
+          ["Endurance Training", 3],
           ["Focused Fire", 2],
-          ["Improved Revive Pet", 2],
           ["Bestial Swiftness", 1],
           ["Unleashed Fury", 5],
           ["Ferocity", 5],
@@ -1240,7 +1236,7 @@
         {"talent": "Frenzy", "why": "The scorer's value in this build: +11.8% of its score (model bm-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed."],
       "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
       "sources": ["https://talentsforever.com/hunter"]
     },

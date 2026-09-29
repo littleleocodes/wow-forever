@@ -23,9 +23,9 @@
         ],
         "Demonology": [
           ["Demonic Embrace", 5],
-          ["Improved Health Funnel", 2],
           ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
+          ["Demonic Sacrifice", 1],
+          ["Demonic Aegis", 2]
         ],
         "Destruction": [
           ["Bane", 5],
@@ -59,12 +59,12 @@
         },
         {
           "points": 2,
-          "default": "Improved Health Funnel",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Demonic Aegis",
+          "alternatives": ["Improved Health Funnel", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.", "Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.", "2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points)."],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.", "Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.", "2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Aegis (survival). Net +0.00% on a third seed."],
       "open_questions": ["Demonic Sacrifice values per pet in Forever (Classic: Succubus +15% Shadow, Imp +15% Fire).", "Ruin rank scaling (only rank 1 = 20% was read).", "Whether Conflagrate uptime for Shadow and Flame is worth the Immolate casts versus more Shadow Bolts."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
@@ -149,11 +149,10 @@
           ["Malevolence", 5]
         ],
         "Demonology": [
-          ["Improved Health Funnel", 2],
-          ["Improved Imp", 3],
           ["Fel Vitality", 3],
           ["Demonic Aegis", 2],
-          ["Demonic Sacrifice", 1]
+          ["Demonic Sacrifice", 1],
+          ["Demonic Embrace", 5]
         ],
         "Destruction": [
           ["Bane", 5],
@@ -188,14 +187,14 @@
         },
         {
           "points": 2,
-          "default": "Improved Health Funnel",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Health Funnel", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
           "points": 3,
-          "default": "Improved Imp",
-          "alternatives": ["any utility talent legal at that tier"],
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Imp", "any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
@@ -205,7 +204,7 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.", "No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.", "No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Embrace (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival). Net +0.00% on a third seed."],
       "open_questions": ["Incinerate/Conflagrate damage at level 60 vs. Shadow Bolt with Ruin + Improved Shadow Bolt.", "Does Conflagrate still consume Immolate (demo says yes) — that makes Immolate uptime the rotation's pacing problem.", "Fire resistance/immunity of the new raid bosses."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
@@ -224,17 +223,16 @@
         "Demonology": [
           ["Unholy Power", 5],
           ["Fel Vitality", 3],
-          ["Demonic Energies", 2],
           ["Improved Sayaad", 2],
           ["Demonic Sacrifice", 1],
           ["Master Summoner", 2],
           ["Decimation", 2],
           ["Demonic Brand", 3],
-          ["Improved Felhunter", 1],
           ["Soul Link", 1],
           ["Demonic Knowledge", 3],
           ["Master Demonologist", 5],
-          ["Demonic Pact", 1]
+          ["Demonic Pact", 1],
+          ["Demonic Embrace", 3]
         ],
         "Destruction": [
           ["Improved Shadow Bolt", 5],
@@ -275,8 +273,8 @@
         },
         {
           "points": 2,
-          "default": "Demonic Energies",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Demonic Embrace",
+          "alternatives": ["Demonic Energies", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
@@ -293,12 +291,12 @@
         },
         {
           "points": 1,
-          "default": "Improved Felhunter",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Felhunter", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Demonic Pact 2/31/18`: 2 points Improved Corruption -> Agonizing Flames, 1 point Suppression -> Agonizing Flames.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Demonic Pact 2/31/18`: 2 points Improved Corruption -> Agonizing Flames, 1 point Suppression -> Agonizing Flames.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Demonic Energies -> Demonic Embrace (survival); Demonic Energies -> Demonic Embrace (survival); Improved Felhunter -> Demonic Embrace (survival). Net +0.00% on a third seed."],
       "open_questions": ["Demonic Pact in the game: does a demon summoned after Demonic Sacrifice leave the sacrifice's effect in place, as the tooltip and the simulator's preset say, and do Master Demonologist and Soul Link then work in full?", "The Succubus in a raid: the simulator's preset keeps her out; check her survival and threat on bosses that cleave."],
       "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warlock/dps/presets.ts", "https://warcraftforever.games/talents/warlock"]
     },
@@ -316,10 +314,10 @@
           ["Improved Life Tap", 1]
         ],
         "Demonology": [
-          ["Demonic Embrace", 2],
-          ["Unholy Power", 5],
+          ["Demonic Embrace", 5],
           ["Fel Vitality", 3],
-          ["Demonic Sacrifice", 1]
+          ["Demonic Sacrifice", 1],
+          ["Demonic Aegis", 2]
         ],
         "Destruction": [
           ["Bane", 5],
@@ -367,8 +365,8 @@
         },
         {
           "points": 5,
-          "default": "Unholy Power",
-          "alternatives": ["any talent legal at that tier"],
+          "default": "Demonic Aegis",
+          "alternatives": ["Unholy Power", "any talent legal at that tier"],
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         },
         {
@@ -378,7 +376,7 @@
           "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
         }
       ],
-      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `start-incinerate-8-11-32`: 2 points Improved Corruption -> Suppression, 1 point Aftermath -> Improved Life Tap.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `start-incinerate-8-11-32`: 2 points Improved Corruption -> Suppression, 1 point Aftermath -> Improved Life Tap.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net +0.00% on a third seed."],
       "open_questions": ["Incinerate's rank-3 numbers (201-233 Fire, +25% with Immolate) against Shadow Bolt's: a stronger Incinerate would move this build up."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
