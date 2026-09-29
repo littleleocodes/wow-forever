@@ -13,7 +13,7 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Agonizing Flames | Destruction | 4 | +1.75% | manual |
 | Bane | Destruction | 1 | +1.65% | manual |
 | Master Demonologist | Demonology | 6 | +1.63% | manual |
-| Suppression | Affliction | 1 | +0.91% | manual |
+| Suppression | Affliction | 1 | +0.92% | manual |
 | Shadow Mastery | Affliction | 6 | +0.83% | manual |
 | Improved Bane of Agony | Affliction | 3 | +0.81% | manual |
 | Improved Shadow Bolt | Destruction | 1 | +0.80% | manual |
@@ -21,26 +21,26 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Improved Corruption | Affliction | 1 | +0.77% | manual |
 | Ruin | Destruction | 3 | +0.56% | manual |
 | Aftermath | Destruction | 2 | +0.52% | manual |
-| Nightfall | Affliction | 4 | +0.51% | manual |
 | Decimation | Demonology | 4 | +0.51% | manual |
+| Nightfall | Affliction | 4 | +0.51% | manual |
 | Malevolence | Affliction | 4 | +0.50% | manual |
 | Amplify Curse | Affliction | 3 | +0.44% | manual |
 | Malediction | Affliction | 2 | +0.42% | manual |
 | Wrack | Affliction | 7 | +0.41% | manual |
 | Unholy Power | Demonology | 1 | +0.14% | manual |
-| Demonic Sacrifice | Demonology | 3 | +0.07% | manual |
+| Demonic Sacrifice | Demonology | 3 | +0.08% | manual |
+| Fel Concentration | Affliction | 3 | +0.01% | manual |
+| Intensity | Destruction | 4 | +0.01% | manual |
+| Demonic Brand | Demonology | 4 | +0.00% | manual |
 | Molten Skin | Destruction | 2 | +0.00% | manual |
-| Demonic Aegis | Demonology | 2 | +0.00% | manual |
-| Improved Life Tap | Affliction | 1 | +0.00% | manual |
 | Soul Harvesting | Affliction | 2 | +0.00% | manual |
+| Master Summoner | Demonology | 3 | +0.00% | manual |
+| Cataclysm | Destruction | 2 | +0.00% | manual |
+| Demonic Aegis | Demonology | 2 | +0.00% | manual |
+| Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
-| Fel Concentration | Affliction | 3 | +0.00% | manual |
-| Curse of Exhaustion | Affliction | 4 | +0.00% | manual |
-| Siphon Life | Affliction | 5 | +0.00% | manual |
-| Soul Siphon | Affliction | 5 | +0.00% | manual |
-| Improved Health Funnel | Demonology | 1 | +0.00% | manual |
 
-## Optimized build: 30/0/21  score +58.42%  (dps x1.584, sustain x1.072, surv x1.000, utility +0.00%)
+## Optimized build: 30/0/21  score +58.45%  (dps x1.584, sustain x1.072, surv x1.000, utility +0.00%)
 
 ```
   Affliction: Suppression 5, Improved Corruption 5, Improved Life Tap 2, Pandemic 3, Improved Bane of Agony 2, Amplify Curse 1, Malevolence 5, Nightfall 2, Shadow Mastery 5
@@ -51,7 +51,7 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology 3 | 1/1 | +4.17% | no |
+| Demonic Sacrifice | Demonology 3 | 1/1 | +4.18% | no |
 | Demonic Knowledge | Demonology 5 | 1/3 | +3.32% | no |
 | Master Demonologist | Demonology 6 | 1/5 | +2.55% | no |
 | Fel Vitality | Demonology 2 | 1/3 | +1.12% | no |
@@ -59,11 +59,11 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Aftermath | Destruction 2 | 4/5 | +0.77% | yes |
 | Malediction | Affliction 2 | 1/5 | +0.63% | yes |
 | Wrack | Affliction 7 | 1/1 | +0.63% | no |
-| Cataclysm | Destruction 2 | 1/3 | +0.30% | yes |
+| Cataclysm | Destruction 2 | 1/3 | +0.31% | yes |
 | Unholy Power | Demonology 1 | 1/5 | +0.15% | yes |
-| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
-| Demonic Aegis | Demonology 2 | 1/2 | +0.00% | no |
-| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
-| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
+| Intensity | Destruction 4 | 1/3 | +0.00% | yes |
+| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
+| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
+| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
 

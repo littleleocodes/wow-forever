@@ -4,11 +4,11 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
+| `bm-mm-raid` | 22/29/0 | 415 | 452 | 762 | 762 | 799 |
 | `opt-mm-raid-raid-dps` | 22/29/0 | 415 | 453 | 761 | 761 | 792 |
-| `bm-mm-raid` | 22/29/0 | 413 | 450 | 758 | 758 | 795 |
 | `opt-mm-raid-parse` | 22/29/0 | 409 | 446 | 752 | 768 | 805 |
+| `bm-mm-full-buffs-raid` | 21/30/0 | 406 | 442 | 762 | 762 | 800 |
 | sim preset: Marksmanship | - | 388 | 423 | 788 | 788 | 837 |
-| `bm-mm-full-buffs-raid` | 20/31/0 | 386 | 420 | 784 | 784 | 835 |
 | sim preset: Beast Mastery 35/16/0 | - | 370 | 406 | 691 | 705 | 744 |
 | sim preset: Marksmanship 0/39/12 | - | 356 | 388 | 719 | 719 | 764 |
 | sim preset: Survival 0/15/36 | - | 335 | 363 | 640 | 654 | 685 |
@@ -25,11 +25,11 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
+| `bm-mm-raid` | 415 | +17% | +40% | +7% | +6% | +13% | 762 |
 | `opt-mm-raid-raid-dps` | 415 | +18% | +40% | +7% | +6% | +13% | 761 |
-| `bm-mm-raid` | 413 | +17% | +40% | +7% | +6% | +13% | 758 |
 | `opt-mm-raid-parse` | 409 | +17% | +40% | +8% | +6% | +13% | 752 |
+| `bm-mm-full-buffs-raid` | 406 | +19% | +42% | +8% | +6% | +13% | 762 |
 | sim preset: Marksmanship | 388 | +24% | +41% | +8% | +9% | +20% | 788 |
-| `bm-mm-full-buffs-raid` | 386 | +23% | +44% | +8% | +7% | +21% | 784 |
 | sim preset: Beast Mastery 35/16/0 | 370 | +19% | +42% | +7% | +6% | +12% | 691 |
 | sim preset: Marksmanship 0/39/12 | 356 | +27% | +42% | +8% | +8% | +18% | 719 |
 | sim preset: Survival 0/15/36 | 335 | +20% | +41% | +7% | +6% | +17% | 640 |
@@ -42,11 +42,11 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
+| `bm-mm-raid` | 500 | 427 | 415 | 384 | 371 |
 | `opt-mm-raid-raid-dps` | 506 | 428 | 415 | 385 | 372 |
-| `bm-mm-raid` | 497 | 425 | 413 | 382 | 369 |
 | `opt-mm-raid-parse` | 494 | 422 | 409 | 378 | 365 |
+| `bm-mm-full-buffs-raid` | 499 | 419 | 406 | 377 | 365 |
 | sim preset: Marksmanship | 516 | 400 | 388 | 362 | 350 |
-| `bm-mm-full-buffs-raid` | 493 | 395 | 386 | 364 | 350 |
 | sim preset: Beast Mastery 35/16/0 | 456 | 381 | 370 | 343 | 333 |
 | sim preset: Marksmanship 0/39/12 | 472 | 368 | 356 | 330 | 317 |
 | sim preset: Survival 0/15/36 | 417 | 343 | 335 | 309 | 298 |

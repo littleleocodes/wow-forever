@@ -4,51 +4,54 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `frost-fingers-of-frost-raid` | 22/0/29 | 582 | 37 | +0.0% | 478 | 0 | +69.4% |
-| `opt-frost-raid-raid-dps` | 22/0/29 | 582 | 37 | +0.0% | 478 | 0 | +69.4% |
-| `cand-frost-raid-r1` | 22/0/29 | 582 | 37 | +0.0% | 478 | 0 | +69.4% |
-| `cand-frost-raid-r2` | 22/0/29 | 579 | 37 | -0.5% | 437 | 0 | +71.2% |
-| `cand-frost-raid-hand-2026-09-28` | 18/1/32 | 562 | 39 | -3.4% | 338 | 0 | +75.4% |
-| `cand-frost-raid-r7` | 18/1/32 | 562 | 39 | -3.4% | 338 | 0 | +75.4% |
-| sim preset: Frost DPS | - | 553 | 40 | -5.0% | 333 | 0 | - |
-| `cand-frost-raid-r5` | 0/17/34 | 542 | 40 | -6.8% | 329 | 0 | +66.1% |
-| `cand-frost-raid-r4` | 0/18/33 | 542 | 39 | -6.8% | 330 | 0 | +66.1% |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 541 | 39 | -6.9% | 330 | 0 | +66.1% |
-| `cand-frost-raid-r9` | 13/3/35 | 541 | 39 | -6.9% | 329 | 0 | +67.2% |
-| `cand-frost-raid-r6` | 1/18/32 | 541 | 39 | -6.9% | 465 | 0 | +66.1% |
-| `cand-frost-raid-r10` | 21/0/30 | 540 | 39 | -7.1% | 460 | 0 | +70.1% |
-| `cand-frost-raid-r8` | 16/3/32 | 539 | 39 | -7.3% | 459 | 0 | +67.2% |
-| `cand-frost-raid-hand-2026-09-27` | 14/0/37 | 538 | 39 | -7.5% | 326 | 0 | +67.8% |
-| `cand-frost-raid-from-arcane-power` | 33/0/18 | 537 | 34 | -7.6% | 518 | 0 | +60.9% |
+| `frost-fingers-of-frost-raid` | 22/0/29 | 582 | 37 | +0.0% | 472 | 0 | +77.0% |
+| `opt-frost-raid-raid-dps` | 22/0/29 | 582 | 37 | -0.1% | 478 | 0 | +75.6% |
+| `cand-frost-raid-r1` | 22/0/29 | 582 | 37 | -0.1% | 478 | 0 | +75.6% |
+| `cand-frost-raid-r2` | 22/0/29 | 579 | 37 | -0.6% | 437 | 0 | +76.3% |
+| `cand-frost-raid-hand-2026-09-28` | 18/1/32 | 562 | 39 | -3.5% | 338 | 0 | +78.9% |
+| `cand-frost-raid-r7` | 18/1/32 | 562 | 39 | -3.5% | 338 | 0 | +78.9% |
+| `cand-frost-raid-r11` | 17/2/32 | 555 | 42 | -4.6% | 333 | 0 | +79.5% |
+| sim preset: Frost DPS | - | 553 | 40 | -5.1% | 333 | 0 | - |
+| `frost-arcane-power-raid` | 33/0/18 | 545 | 30 | -6.3% | 564 | 0 | +70.6% |
+| `cand-frost-raid-r5` | 0/17/34 | 542 | 40 | -6.9% | 329 | 0 | +70.6% |
+| `cand-frost-raid-r4` | 0/18/33 | 542 | 39 | -6.9% | 330 | 0 | +70.6% |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 541 | 39 | -7.0% | 330 | 0 | +70.6% |
+| `cand-frost-raid-r9` | 13/3/35 | 541 | 39 | -7.0% | 329 | 0 | +72.8% |
+| `cand-frost-raid-r6` | 1/18/32 | 541 | 39 | -7.0% | 465 | 0 | +66.4% |
+| `cand-frost-raid-r10` | 21/0/30 | 540 | 39 | -7.2% | 460 | 0 | +77.0% |
+| `cand-frost-raid-r8` | 16/3/32 | 539 | 39 | -7.4% | 459 | 0 | +67.4% |
+| `cand-frost-raid-hand-2026-09-27` | 14/0/37 | 538 | 39 | -7.6% | 326 | 0 | +74.9% |
+| `cand-frost-raid-from-arcane-power` | 33/0/18 | 537 | 34 | -7.7% | 518 | 0 | +67.0% |
 | sim preset: Frost 14/0/37 | - | 537 | 38 | -7.7% | 460 | 0 | - |
-| `frost-arcane-power-raid` | 31/0/20 | 536 | 30 | -7.8% | 434 | 0 | +67.2% |
-| `cand-frost-raid-r3` | 27/0/24 | 522 | 38 | -10.3% | 444 | 0 | +69.7% |
-| `frost-winters-chill-raid` | 17/0/34 | 475 | 32 | -18.3% | 351 | 0 | +61.1% |
+| `cand-frost-raid-r3` | 27/0/24 | 522 | 38 | -10.4% | 444 | 0 | +73.7% |
+| `frost-winters-chill-raid` | 20/0/31 | 517 | 29 | -11.2% | 413 | 0 | +66.6% |
 | sim preset: Arcane 35/0/16 | - | 468 | 30 | -19.6% | 378 | 0 | - |
 | sim preset: Arcane DPS | - | 409 | 28 | -29.8% | 392 | 0 | - |
 | sim preset: Fire 0/35/16 | - | 373 | 23 | -35.8% | 281 | 0 | - |
-| sim preset: Fire DPS | - | 314 | 19 | -45.9% | 334 | 0 | - |
+| sim preset: Fire DPS | - | 314 | 19 | -46.0% | 334 | 0 | - |
 
 ## Damage shares (`frost-fingers-of-frost-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Frostbolt | 61.0% |
-| Ice Lance | 20.5% |
-| Arcane Missiles | 18.4% |
+| Frostbolt | 61.1% |
+| Ice Lance | 20.4% |
+| Arcane Missiles | 18.6% |
 
-Mapped onto the spec model's sources: `frostbolt` 61%, `ice_lance` 21%, `missiles` 18%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `frostbolt` 61%, `ice_lance` 20%, `missiles` 19%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- frost-fingers-of-frost-raid: `1502050030003111--055500030100031024`
+- frost-fingers-of-frost-raid: `0530050030003111--055500031100030024`
 - opt-frost-raid-raid-dps: `1502050030003111--055500030100031024`
 - cand-frost-raid-r1: `1502050030003111--055500030100031024`
 - cand-frost-raid-r2: `2522050000003111--055500031100030024`
 - cand-frost-raid-hand-2026-09-28: `0500250030003-01-055500033100030025`
 - cand-frost-raid-r7: `0500250030003-01-055500033100030025`
+- cand-frost-raid-r11: `0520050030002-02-055500033100030025`
 - sim preset: Frost DPS: `0502050030003--055500033100030024`
+- frost-arcane-power-raid: `055005003100311531--05550003`
 - cand-frost-raid-r5: `-2350203000002-055500033102030025`
 - cand-frost-raid-r4: `-2350203000003-055500033101030025`
 - opt-frost-raid-raid-dps-extwc: `1-2330203-0555000331021301251`
@@ -59,9 +62,8 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - cand-frost-raid-hand-2026-09-27: `230225--0555000331021301251`
 - cand-frost-raid-from-arcane-power: `250205023102011531--05550003`
 - sim preset: Frost 14/0/37: `050005013--0555003301001301251`
-- frost-arcane-power-raid: `230205020102311531--055500032`
 - cand-frost-raid-r3: `24022500002030142--05550003010003002`
-- frost-winters-chill-raid: `2302050201002--0555000330021301051`
+- frost-winters-chill-raid: `05300500310021--0555000330021001051`
 - sim preset: Arcane 35/0/16: `055005023100311531--005500033`
 - sim preset: Arcane DPS: `050215003100311531-2305003202003-`
 - sim preset: Fire 0/35/16: `-03552020130133151-005500033`

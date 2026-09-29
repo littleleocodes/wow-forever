@@ -790,7 +790,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +571.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +567.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
@@ -816,17 +816,17 @@
         ]
       },
       "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 317.8 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 304.6 points of score in this model."},
-        {"talent": "Meditation", "why": "Removing it costs 62.6 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 61.0 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 61.0 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 58.6 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 31.2 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 16.5 points of score in this model."}
+        {"talent": "Mind Flay", "why": "Removing it costs 316.0 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 299.4 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 60.7 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 60.7 points of score in this model."},
+        {"talent": "Meditation", "why": "Removing it costs 58.4 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 58.3 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 31.0 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 16.4 points of score in this model."}
       ],
       "flex": [],
-      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (556 vs 540 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (556 vs 542 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/priest"]
     },
@@ -836,11 +836,12 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +213.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +213.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Discipline": [
           ["Twin Disciplines", 5],
-          ["Power in Light", 5],
+          ["Martyrdom", 2],
+          ["Silent Resolve", 3],
           ["Inner Focus", 1],
           ["Meditation", 3],
           ["Mental Agility", 1],
@@ -849,14 +850,15 @@
         "Holy": [],
         "Shadow": [
           ["Shadow Focus", 5],
-          ["Blackout", 4],
           ["Improved Shadow Word: Pain", 2],
+          ["Shadow Affinity", 3],
           ["Mind Flay", 1],
           ["Improved Mind Flay", 2],
           ["Improved Mind Blast", 5],
           ["Vampiric Embrace", 1],
           ["Shadow Weaving", 3],
           ["Devouring Contagion", 2],
+          ["Silence", 1],
           ["Darkness", 5],
           ["Early Demise", 2],
           ["Shadowform", 1]

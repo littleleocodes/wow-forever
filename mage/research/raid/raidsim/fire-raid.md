@@ -4,13 +4,14 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `fire-raid` | 14/32/5 | 511 | 39 | +0.0% | 539 | 1 | +210.5% |
 | `cand-fire-raid-r5` | 14/32/5 | 511 | 39 | +0.0% | 539 | 1 | +210.5% |
-| `opt-fire-raid-raid-dps` | 14/32/5 | 511 | 39 | -0.0% | 539 | 1 | +210.5% |
 | `cand-fire-raid-r1` | 14/32/5 | 511 | 39 | -0.0% | 536 | 1 | +210.5% |
 | `cand-fire-raid-r4` | 14/32/5 | 511 | 39 | -0.0% | 539 | 1 | +210.5% |
 | `cand-fire-raid-r2` | 11/35/5 | 510 | 39 | -0.0% | 403 | 1 | +210.5% |
+| `fire-raid` | 12/34/5 | 510 | 39 | -0.1% | 447 | 1 | +210.6% |
+| `opt-fire-raid-raid-dps` | 14/32/5 | 510 | 39 | -0.1% | 536 | 1 | +210.6% |
 | `cand-fire-raid-r6` | 13/33/5 | 510 | 39 | -0.1% | 538 | 1 | +210.5% |
+| `cand-fire-raid-r7` | 14/32/5 | 510 | 39 | -0.1% | 536 | 1 | +210.6% |
 | `cand-fire-raid-hand-2026-09-28` | 12/34/5 | 496 | 38 | -2.9% | 390 | 1 | +202.6% |
 | sim preset: Fire DPS | - | 492 | 40 | -3.6% | 519 | 0 | - |
 | sim preset: Fire 0/35/16 | - | 483 | 36 | -5.5% | 425 | 3 | - |
@@ -20,7 +21,7 @@
 | sim preset: Frost DPS | - | 258 | 10 | -49.5% | 271 | 0 | - |
 | sim preset: Frost 14/0/37 | - | 250 | 10 | -51.0% | 263 | 2 | - |
 
-## Damage shares (`fire-raid`, simulator actions)
+## Damage shares (`cand-fire-raid-r5`, simulator actions)
 
 | Action | Share |
 |---|---|
@@ -36,13 +37,14 @@ Mapped onto the spec model's sources: `fireball` 46%, `fire_blast` 21%, `ignite`
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- fire-raid: `250025-23550000130133051-005`
 - cand-fire-raid-r5: `250025-23550000130133051-005`
-- opt-fire-raid-raid-dps: `24002501-23550000130133051-005`
 - cand-fire-raid-r1: `24020501-23550000130133051-005`
 - cand-fire-raid-r4: `24002501-23550000130133051-005`
 - cand-fire-raid-r2: `230105-23550030130133051-005`
+- fire-raid: `005205-23550020130133051-005`
+- opt-fire-raid-raid-dps: `005225-23550000130133051-005`
 - cand-fire-raid-r6: `105025-23551000130133051-005`
+- cand-fire-raid-r7: `005225-23550000130133051-005`
 - cand-fire-raid-hand-2026-09-28: `230205-20552030130133051-005`
 - sim preset: Fire DPS: `0502252000003-23550000130133051-`
 - sim preset: Fire 0/35/16: `-03552020130133151-005500033`

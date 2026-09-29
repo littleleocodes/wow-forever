@@ -13,7 +13,7 @@
 | `cand-affliction-raid-hand-2026-09-27` | 22/11/18 | 536 | 31 | -5.4% | 455 | 1 | +49.9% |
 | `cand-affliction-raid-r4` | 22/11/18 | 536 | 31 | -5.4% | 455 | 1 | +49.9% |
 | sim preset: Demonic Pact 2/31/18 | - | 533 | 30 | -5.9% | 522 | 0 | - |
-| `cand-affliction-raid-r1` | 10/31/10 | 532 | 24 | -6.2% | 444 | 1 | +42.5% |
+| `cand-affliction-raid-r1` | 10/31/10 | 532 | 24 | -6.2% | 444 | 1 | +42.6% |
 | `cand-affliction-raid-hand-2026-09-26` | 31/0/20 | 529 | 29 | -6.7% | 448 | 1 | +44.6% |
 | sim preset: Demonic Pact | - | 528 | 30 | -7.0% | 539 | 0 | - |
 | `cand-affliction-raid-r5` | 19/11/21 | 527 | 29 | -7.1% | 449 | 1 | +50.8% |

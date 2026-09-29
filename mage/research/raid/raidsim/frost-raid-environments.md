@@ -7,11 +7,11 @@
 | `frost-fingers-of-frost-raid` | 22/0/29 | 582 | 662 | 662 | 662 | 666 |
 | `opt-frost-raid-raid-dps` | 22/0/29 | 582 | 662 | 662 | 662 | 666 |
 | sim preset: Frost DPS | - | 553 | 623 | 632 | 632 | 627 |
-| `opt-frost-raid-parse` | 21/0/30 | 543 | 614 | 644 | 644 | 648 |
+| `opt-frost-raid-parse` | 16/3/32 | 546 | 620 | 646 | 646 | 641 |
+| `frost-arcane-power-raid` | 33/0/18 | 545 | 616 | 624 | 624 | 663 |
 | `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 541 | 612 | 646 | 646 | 641 |
 | sim preset: Frost 14/0/37 | - | 537 | 606 | 641 | 641 | 636 |
-| `frost-arcane-power-raid` | 31/0/20 | 536 | 609 | 612 | 612 | 652 |
-| `frost-winters-chill-raid` | 17/0/34 | 475 | 531 | 555 | 555 | 558 |
+| `frost-winters-chill-raid` | 20/0/31 | 517 | 582 | 587 | 587 | 586 |
 | sim preset: Arcane 35/0/16 | - | 468 | 529 | 535 | 535 | 572 |
 | sim preset: Arcane DPS | - | 409 | 476 | 462 | 462 | 495 |
 | sim preset: Fire 0/35/16 | - | 373 | 416 | 428 | 428 | 434 |
@@ -29,14 +29,14 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `frost-fingers-of-frost-raid` | 582 | +0% | +0% | -1% | +10% | +5% | 662 |
+| `frost-fingers-of-frost-raid` | 582 | -0% | +0% | -1% | +10% | +5% | 662 |
 | `opt-frost-raid-raid-dps` | 582 | +0% | +0% | -1% | +10% | +5% | 662 |
 | sim preset: Frost DPS | 553 | +0% | +0% | -1% | +10% | +5% | 632 |
-| `opt-frost-raid-parse` | 543 | +4% | +0% | -1% | +10% | +5% | 644 |
+| `opt-frost-raid-parse` | 546 | +4% | +0% | -1% | +10% | +5% | 646 |
+| `frost-arcane-power-raid` | 545 | -0% | +0% | -1% | +10% | +6% | 624 |
 | `opt-frost-raid-raid-dps-extwc` | 541 | +5% | +0% | -1% | +10% | +5% | 646 |
 | sim preset: Frost 14/0/37 | 537 | +5% | +0% | -1% | +10% | +5% | 641 |
-| `frost-arcane-power-raid` | 536 | -0% | +0% | -1% | +10% | +6% | 612 |
-| `frost-winters-chill-raid` | 475 | +2% | +0% | -1% | +10% | +6% | 555 |
+| `frost-winters-chill-raid` | 517 | -0% | +0% | -1% | +10% | +5% | 587 |
 | sim preset: Arcane 35/0/16 | 468 | -0% | +0% | -1% | +10% | +6% | 535 |
 | sim preset: Arcane DPS | 409 | +0% | +0% | -2% | +10% | +5% | 462 |
 | sim preset: Fire 0/35/16 | 373 | +0% | +0% | -1% | +10% | +6% | 428 |
@@ -50,14 +50,14 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `frost-fingers-of-frost-raid` | 587 | 587 | 582 | 582 | 573 |
+| `frost-fingers-of-frost-raid` | 587 | 587 | 582 | 586 | 575 |
 | `opt-frost-raid-raid-dps` | 587 | 587 | 582 | 582 | 573 |
 | sim preset: Frost DPS | 549 | 557 | 553 | 545 | 544 |
-| `opt-frost-raid-parse` | 567 | 568 | 543 | 553 | 512 |
+| `opt-frost-raid-parse` | 560 | 568 | 546 | 553 | 524 |
+| `frost-arcane-power-raid` | 580 | 558 | 545 | 549 | 535 |
 | `opt-frost-raid-raid-dps-extwc` | 561 | 570 | 541 | 533 | 460 |
 | sim preset: Frost 14/0/37 | 556 | 559 | 537 | 495 | 429 |
-| `frost-arcane-power-raid` | 570 | 548 | 536 | 546 | 531 |
-| `frost-winters-chill-raid` | 488 | 490 | 475 | 474 | 462 |
+| `frost-winters-chill-raid` | 516 | 521 | 517 | 525 | 517 |
 | sim preset: Arcane 35/0/16 | 500 | 479 | 468 | 480 | 471 |
 | sim preset: Arcane DPS | 437 | 418 | 409 | 419 | 411 |
 | sim preset: Fire 0/35/16 | 378 | 378 | 373 | 359 | 362 |

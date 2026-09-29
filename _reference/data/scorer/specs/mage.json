@@ -355,7 +355,7 @@
       "sources": [
         {
           "id": "frostbolt",
-          "share": 0.6107,
+          "share": 0.6102,
           "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -366,7 +366,7 @@
         },
         {
           "id": "ice_lance",
-          "share": 0.2032,
+          "share": 0.2047,
           "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
           "min_level": 20,
           "enabled_by": "Ice Lance",
@@ -398,7 +398,7 @@
         },
         {
           "id": "missiles",
-          "share": 0.1861,
+          "share": 0.1851,
           "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
           "min_level": 8,
           "game_overrides": {
@@ -431,10 +431,10 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.1075,
-          "cap": 0.05,
-          "rms": 0.0162,
-          "points": 60,
+          "loss": 0.0675,
+          "cap": 0.9,
+          "rms": 0.0177,
+          "points": 58,
           "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-5% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }

@@ -46,8 +46,8 @@
   {
    "talent": "Lone Wolf",
    "sim": 0.2000000000000005,
-   "ev_before": 0.1974931427022179,
-   "ev_after": 0.19832190696232072,
+   "ev_before": 0.19829053327385557,
+   "ev_after": 0.19829053327385557,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -65,8 +65,8 @@
   {
    "talent": "Efficiency",
    "sim": 0.06711617454887063,
-   "ev_before": 0.07044343747759668,
-   "ev_after": 0.06668831737791912,
+   "ev_before": 0.0667709987463455,
+   "ev_after": 0.0667709987463455,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -84,8 +84,8 @@
   {
    "talent": "Deadly Aspects",
    "sim": 0.05569543225332172,
-   "ev_before": 0.05672120694436248,
-   "ev_after": 0.057776474463683516,
+   "ev_before": 0.05776828581084598,
+   "ev_after": 0.05776828581084598,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -102,8 +102,8 @@
   {
    "talent": "Lethal Attacks",
    "sim": 0.05387556290048326,
-   "ev_before": 0.05723634381487898,
-   "ev_after": 0.0574833735260316,
+   "ev_before": 0.057475351918347,
+   "ev_after": 0.057475351918347,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -121,8 +121,8 @@
   {
    "talent": "Mortal Shots",
    "sim": 0.05148307182516033,
-   "ev_before": 0.056552663871889744,
-   "ev_after": 0.056796584449587684,
+   "ev_before": 0.056788663823133384,
+   "ev_after": 0.056788663823133384,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -140,8 +140,8 @@
   {
    "talent": "Ranged Weapon Specialization",
    "sim": 0.0426211010832441,
-   "ev_before": 0.037693742440819626,
-   "ev_after": 0.037693738499442686,
+   "ev_before": 0.03768857423246105,
+   "ev_after": 0.03768857423246105,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -159,8 +159,8 @@
   {
    "talent": "Careful Aim",
    "sim": 0.03943669872903989,
-   "ev_before": 0.04454274413224617,
-   "ev_after": 0.04454273944397651,
+   "ev_before": 0.0445365965499654,
+   "ev_after": 0.0445365965499654,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -178,8 +178,8 @@
   {
    "talent": "Trueshot Aura",
    "sim": 0.02492704507717041,
-   "ev_before": 0.02810107114353906,
-   "ev_after": 0.02810106823236373,
+   "ev_before": 0.028097253803969966,
+   "ev_after": 0.028097253803969966,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -197,8 +197,8 @@
   {
    "talent": "Improved Stings",
    "sim": 0.02423109232299968,
-   "ev_before": 0.02577024739229009,
-   "ev_after": 0.025080260409722523,
+   "ev_before": 0.025076811585553607,
+   "ev_after": 0.025076811585553607,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -215,8 +215,8 @@
   {
    "talent": "Barrage",
    "sim": 0.009839335566003072,
-   "ev_before": 0.0088458018295463,
-   "ev_after": 0.008607967049084968,
+   "ev_before": 0.008606820107555832,
+   "ev_after": 0.008606820107555832,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -234,8 +234,8 @@
   {
    "talent": "Improved Arcane Shot",
    "sim": 0.0012620363737904621,
-   "ev_before": 0.0036427389727641656,
-   "ev_after": 0.0035472414716552336,
+   "ev_before": 0.0035468808034433926,
+   "ev_after": 0.0035468808034433926,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -244,10 +244,22 @@
    ]
   },
   {
+   "talent": "Endurance Training",
+   "sim": 0.0,
+   "ev_before": 1.9842847614813787e-05,
+   "ev_after": 1.9842847614813787e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "cand-mm-lonewolf-raid-r4"
+   ]
+  },
+  {
    "talent": "Hawk Eye",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 3.2233340877479944e-05,
+   "ev_after": 3.2233340877479944e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -259,22 +271,14 @@
    ]
   },
   {
-   "talent": "Improved Tracking",
+   "talent": "Improved Aspect of the Monkey",
    "sim": 0.0,
-   "ev_before": 0.0049524991715978635,
-   "ev_after": 0.0049524986466426245,
+   "ev_before": 5.6776269758238935e-06,
+   "ev_after": 5.6776269758238935e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "mm-lone-wolf-raid",
-    "opt-mm-lonewolf-raid-raid-dps",
-    "cand-mm-lonewolf-raid-hand-2026-09-26",
-    "cand-mm-lonewolf-raid-r1",
-    "cand-mm-lonewolf-raid-r2",
-    "cand-mm-lonewolf-raid-r3",
-    "cand-mm-lonewolf-raid-r4",
-    "cand-mm-lonewolf-raid-r5",
-    "cand-mm-lonewolf-raid-r6"
+    "mm-lone-wolf-raid"
    ]
   },
   {
@@ -294,8 +298,8 @@
   {
    "talent": "Rapid Recuperation",
    "sim": 0.0,
-   "ev_before": 4.306827573414219e-06,
-   "ev_after": 4.384725125552946e-06,
+   "ev_before": 3.927812820449171e-05,
+   "ev_after": 3.927812820449171e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -305,27 +309,28 @@
    ]
   },
   {
-   "talent": "Sniper Shot",
+   "talent": "Improved Tracking",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 0.004923074107434463,
+   "ev_after": 0.004923074107434463,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
     "cand-mm-lonewolf-raid-hand-2026-09-26",
     "cand-mm-lonewolf-raid-r1",
     "cand-mm-lonewolf-raid-r2",
     "cand-mm-lonewolf-raid-r3",
     "cand-mm-lonewolf-raid-r4",
-    "cand-mm-lonewolf-raid-r5"
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
    ]
   },
   {
    "talent": "Survivalist",
    "sim": 0.0,
-   "ev_before": 4.82268873892603e-05,
-   "ev_after": 4.837804597541908e-05,
+   "ev_before": 7.25600772777576e-05,
+   "ev_after": 7.25600772777576e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -351,8 +356,8 @@
   {
    "talent": "Deterrence",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 6.452006525999602e-06,
+   "ev_after": 6.452006525999602e-06,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -382,6 +387,22 @@
    ]
   },
   {
+   "talent": "Sniper Shot",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5"
+   ]
+  },
+  {
    "talent": "Surefooted",
    "sim": 0.0,
    "ev_before": 0.0,
@@ -402,17 +423,6 @@
    "builds": [
     "cand-mm-lonewolf-raid-r1",
     "cand-mm-lonewolf-raid-r2"
-   ]
-  },
-  {
-   "talent": "Endurance Training",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-mm-lonewolf-raid-r4"
    ]
   }
  ],

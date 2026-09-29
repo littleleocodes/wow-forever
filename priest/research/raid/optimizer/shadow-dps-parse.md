@@ -15,7 +15,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Improved Shadow Word: Pain | Shadow | 2 | +2.51% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
-| Meditation | Discipline | 3 | +1.22% | manual |
+| Meditation | Discipline | 3 | +1.23% | manual |
 | Inner Focus | Discipline | 3 | +1.07% | manual |
 | Shadow Focus | Shadow | 1 | +0.98% | manual |
 | Twin Disciplines | Discipline | 1 | +0.64% | manual |
@@ -24,27 +24,27 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Improved Mind Blast | Shadow | 3 | +0.52% | manual |
 | Litany of Light | Holy | 5 | +0.40% | manual |
 | Mental Strength | Discipline | 4 | +0.18% | manual |
-| Early Demise | Shadow | 6 | +0.12% | manual |
-| Devouring Contagion | Shadow | 5 | +0.07% | manual |
+| Early Demise | Shadow | 6 | +0.13% | manual |
+| Devouring Contagion | Shadow | 5 | +0.08% | manual |
 | Mental Agility | Discipline | 3 | +0.03% | manual |
-| Spell Warding | Holy | 2 | +0.00% | manual |
-| Power in Light | Discipline | 1 | +0.00% | manual |
-| Wand Specialization | Discipline | 1 | +0.00% | manual |
+| Martyrdom | Discipline | 2 | +0.01% | manual |
+| Twilight Focus | Holy | 1 | +0.01% | manual |
+| Silence | Shadow | 5 | +0.01% | manual |
 | Silent Resolve | Discipline | 2 | +0.00% | manual |
-| Holy Precision | Discipline | 2 | +0.00% | manual |
-| Improved Power Word: Shield | Discipline | 2 | +0.00% | manual |
-| Martyrdom | Discipline | 2 | +0.00% | manual |
-| Improved Inner Fire | Discipline | 4 | +0.00% | manual |
+| Holy Nova | Holy | 3 | +0.00% | manual |
+| Binding Heal | Holy | 4 | +0.00% | manual |
+| Shadow Affinity | Shadow | 2 | +0.00% | manual |
 | Soul Warding | Discipline | 4 | +0.00% | manual |
-| Improved Mana Burn | Discipline | 4 | +0.00% | manual |
-| Renewed Hope | Discipline | 5 | +0.00% | manual |
-| Divine Aegis | Discipline | 6 | +0.00% | manual |
+| Improved Healing | Holy | 4 | +0.00% | manual |
+| Spell Warding | Holy | 2 | +0.00% | manual |
+| Holy Reach | Holy | 4 | +0.00% | manual |
+| Shadow Reach | Shadow | 2 | +0.00% | manual |
 
-## Optimized build: 18/0/33  score +213.12%  (dps x3.003, sustain x1.641, surv x1.000, utility +0.00%)
+## Optimized build: 18/0/33  score +213.18%  (dps x3.003, sustain x1.641, surv x1.000, utility +0.00%)
 
 ```
-  Discipline: Twin Disciplines 5, Power in Light 5, Inner Focus 1, Meditation 3, Mental Agility 1, Mental Strength 3
-  Shadow: Shadow Focus 5, Blackout 4, Improved Shadow Word: Pain 2, Mind Flay 1, Improved Mind Flay 2, Improved Mind Blast 5, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Darkness 5, Early Demise 2, Shadowform 1
+  Discipline: Twin Disciplines 5, Martyrdom 2, Silent Resolve 3, Inner Focus 1, Meditation 3, Mental Agility 1, Mental Strength 3
+  Shadow: Shadow Focus 5, Improved Shadow Word: Pain 2, Shadow Affinity 3, Mind Flay 1, Improved Mind Flay 2, Improved Mind Blast 5, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Silence 1, Darkness 5, Early Demise 2, Shadowform 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
@@ -57,13 +57,13 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Litany of Light | Holy 5 | 1/2 | +0.40% | no |
 | Mental Strength | Discipline 4 | 4/5 | +0.28% | yes |
 | Mental Agility | Discipline 3 | 2/3 | +0.04% | yes |
-| Spell Warding | Holy 2 | 1/5 | +0.00% | no |
-| Wand Specialization | Discipline 1 | 1/2 | +0.00% | yes |
-| Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |
-| Holy Precision | Discipline 2 | 1/3 | +0.00% | yes |
-| Improved Power Word: Shield | Discipline 2 | 1/3 | +0.00% | yes |
-| Martyrdom | Discipline 2 | 1/2 | +0.00% | yes |
-| Improved Inner Fire | Discipline 4 | 1/3 | +0.00% | yes |
+| Twilight Focus | Holy 1 | 1/3 | +0.00% | yes |
+| Holy Nova | Holy 3 | 1/1 | +0.00% | no |
+| Binding Heal | Holy 4 | 1/1 | +0.00% | no |
 | Soul Warding | Discipline 4 | 1/1 | +0.00% | no |
-| Improved Mana Burn | Discipline 4 | 1/2 | +0.00% | yes |
+| Improved Healing | Holy 4 | 1/3 | +0.00% | no |
+| Spell Warding | Holy 2 | 1/5 | +0.00% | no |
+| Holy Reach | Holy 4 | 1/2 | +0.00% | no |
+| Shadow Reach | Shadow 2 | 1/2 | +0.00% | yes |
+| Improved Inner Fire | Discipline 4 | 1/3 | +0.00% | yes |
 

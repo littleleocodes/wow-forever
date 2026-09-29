@@ -150,7 +150,7 @@
       "sources": [
         {
           "id": "auto",
-          "share": 0.3991,
+          "share": 0.3974,
           "tags": ["type:ranged", "white", "school:physical", "ability:Auto Shot", "withpet"],
           "game_overrides": {
             "classic-era": {"share": 0.3911}
@@ -168,7 +168,7 @@
         },
         {
           "id": "aimed",
-          "share": 0.1268,
+          "share": 0.1263,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Sniper Shot", "ability:Shots"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -181,7 +181,7 @@
         },
         {
           "id": "arcane",
-          "share": 0.2002,
+          "share": 0.1994,
           "tags": ["type:ranged", "yellow", "school:arcane", "ability:Arcane Shot", "ability:Shots", "withpet"],
           "cooldown": 6,
           "min_level": 6,
@@ -191,7 +191,7 @@
         },
         {
           "id": "serpent",
-          "share": 0.1685,
+          "share": 0.1677,
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "withpet"],
           "can_crit": false,
           "min_level": 4,
@@ -209,7 +209,7 @@
         },
         {
           "id": "pet",
-          "share": 0.0896,
+          "share": 0.0934,
           "tags": ["pet", "withpet"],
           "min_level": 10,
           "game_overrides": {
@@ -244,8 +244,8 @@
           "profiles": ["raid-dps", "raid-dps-extwc"],
           "loss": 0.46,
           "cap": 0.9,
-          "rms": 0.0129,
-          "points": 35,
+          "rms": 0.0122,
+          "points": 33,
           "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 14-24% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }

@@ -49,9 +49,9 @@
  "talents": [
   {
    "talent": "Efficiency",
-   "sim": 0.06256165282134497,
-   "ev_before": 0.05621142246850129,
-   "ev_after": 0.05745585615287781,
+   "sim": 0.06471846963079633,
+   "ev_before": 0.058193664396461044,
+   "ev_after": 0.058193664396461044,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -69,13 +69,14 @@
   },
   {
    "talent": "Bestial Discipline",
-   "sim": 0.05898623634458557,
-   "ev_before": 0.06395920804401242,
-   "ev_after": 0.06536001834015599,
+   "sim": 0.05539917031102012,
+   "ev_before": 0.06419926323993301,
+   "ev_after": 0.06419926323993301,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "bm-mm-raid",
+    "bm-mm-full-buffs-raid",
     "opt-mm-raid-raid-dps",
     "cand-mm-raid-r4",
     "cand-mm-raid-r5",
@@ -86,9 +87,9 @@
   },
   {
    "talent": "Deadly Aspects",
-   "sim": 0.05231872050551372,
-   "ev_before": 0.04812765408226934,
-   "ev_after": 0.049224230152986,
+   "sim": 0.05241373663384105,
+   "ev_before": 0.04866742974399763,
+   "ev_after": 0.04866742974399763,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -109,9 +110,9 @@
   },
   {
    "talent": "Lethal Attacks",
-   "sim": 0.04777198981107131,
-   "ev_before": 0.050100080421876296,
-   "ev_after": 0.05019119330279601,
+   "sim": 0.047779903352410565,
+   "ev_before": 0.04968407851624708,
+   "ev_after": 0.04968407851624708,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -132,9 +133,9 @@
   },
   {
    "talent": "Mortal Shots",
-   "sim": 0.04590269040297828,
-   "ev_before": 0.050281205162134905,
-   "ev_after": 0.05037266378562481,
+   "sim": 0.04588202473289252,
+   "ev_before": 0.04986362779367038,
+   "ev_after": 0.04986362779367038,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -155,9 +156,9 @@
   },
   {
    "talent": "Careful Aim",
-   "sim": 0.03521053433646344,
-   "ev_before": 0.039238507529350874,
-   "ev_after": 0.03923850757079714,
+   "sim": 0.03516057894329676,
+   "ev_before": 0.03923330216729304,
+   "ev_after": 0.03923330216729304,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -178,9 +179,9 @@
   },
   {
    "talent": "Ranged Weapon Specialization",
-   "sim": 0.03316899348817307,
-   "ev_before": 0.03766038620735698,
-   "ev_after": 0.03754437960341176,
+   "sim": 0.033089557030893064,
+   "ev_before": 0.037192455083691005,
+   "ev_after": 0.037192455083691005,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -201,9 +202,9 @@
   },
   {
    "talent": "Trueshot Aura",
-   "sim": 0.022289046342234223,
-   "ev_before": 0.0241464393948815,
-   "ev_after": 0.02407080446532336,
+   "sim": 0.022257816823713136,
+   "ev_before": 0.02385215566806094,
+   "ev_after": 0.02385215566806094,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -224,9 +225,9 @@
   },
   {
    "talent": "Focused Fire",
-   "sim": 0.019999999999999938,
-   "ev_before": 0.018004551813879274,
-   "ev_after": 0.018077786944163978,
+   "sim": 0.019999999999999893,
+   "ev_before": 0.018089381566924946,
+   "ev_after": 0.018089381566924946,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -247,13 +248,14 @@
   },
   {
    "talent": "Improved Stings",
-   "sim": 0.018911797801254345,
-   "ev_before": 0.01944805146571444,
-   "ev_after": 0.018714231526797073,
+   "sim": 0.017897303354735144,
+   "ev_before": 0.01756206111994183,
+   "ev_after": 0.01756206111994183,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "bm-mm-raid",
+    "bm-mm-full-buffs-raid",
     "opt-mm-raid-raid-dps",
     "cand-mm-raid-r1",
     "cand-mm-raid-r2",
@@ -268,9 +270,9 @@
   },
   {
    "talent": "Unleashed Fury",
-   "sim": 0.014128108097798119,
-   "ev_before": 0.017090837401761073,
-   "ev_after": 0.017459799070212403,
+   "sim": 0.01416432784231403,
+   "ev_before": 0.018532728856024812,
+   "ev_after": 0.018532728856024812,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -290,9 +292,9 @@
   },
   {
    "talent": "Ferocity",
-   "sim": 0.010070651560931823,
-   "ev_before": 0.008931951215694497,
-   "ev_after": 0.009121596216442028,
+   "sim": 0.010494866548059254,
+   "ev_before": 0.010201998309523173,
+   "ev_after": 0.010201998309523173,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -311,9 +313,9 @@
   },
   {
    "talent": "Barrage",
-   "sim": 0.0065878020682942715,
-   "ev_before": 0.00572428121332392,
-   "ev_after": 0.005507929533681053,
+   "sim": 0.006604329767904366,
+   "ev_before": 0.005469578537868173,
+   "ev_after": 0.005469578537868173,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -333,8 +335,8 @@
   {
    "talent": "Endurance Training",
    "sim": 0.0,
-   "ev_before": 0.0038637521114488088,
-   "ev_after": 0.003945574026779111,
+   "ev_before": 0.004207697309107164,
+   "ev_after": 0.004207697309107164,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -353,20 +355,6 @@
    ]
   },
   {
-   "talent": "Improved Mend Pet",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "bm-mm-raid",
-    "cand-mm-raid-r4",
-    "cand-mm-raid-r5",
-    "cand-mm-raid-r7"
-   ]
-  },
-  {
    "talent": "Improved Revive Pet",
    "sim": 0.0,
    "ev_before": 0.0,
@@ -374,7 +362,6 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "bm-mm-full-buffs-raid",
     "cand-mm-raid-hand-2026-09-27",
     "cand-mm-raid-r1",
     "cand-mm-raid-r2"
@@ -388,7 +375,6 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "bm-mm-full-buffs-raid",
     "cand-mm-raid-hand-2026-09-27",
     "cand-mm-raid-r1",
     "cand-mm-raid-r2",
@@ -403,7 +389,6 @@
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "bm-mm-full-buffs-raid",
     "cand-mm-raid-hand-2026-09-27",
     "cand-mm-raid-r1",
     "cand-mm-raid-r2",
@@ -425,8 +410,8 @@
   {
    "talent": "Hawk Eye",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 4.383564959922157e-05,
+   "ev_after": 4.383564959922157e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -458,8 +443,8 @@
   {
    "talent": "Survivalist",
    "sim": 0.0,
-   "ev_before": 7.411643982974278e-05,
-   "ev_after": 7.41032248923026e-05,
+   "ev_before": 0.00011127427312736127,
+   "ev_after": 0.00011127427312736127,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -467,10 +452,23 @@
    ]
   },
   {
-   "talent": "Spirit Bond",
+   "talent": "Improved Mend Pet",
    "sim": 0.0,
    "ev_before": 0.0,
    "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-raid-r4",
+    "cand-mm-raid-r5",
+    "cand-mm-raid-r7"
+   ]
+  },
+  {
+   "talent": "Spirit Bond",
+   "sim": 0.0,
+   "ev_before": 1.320250489038293e-05,
+   "ev_after": 1.320250489038293e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -480,8 +478,8 @@
   {
    "talent": "Rapid Recuperation",
    "sim": -0.0002622961616743673,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 3.656171598899018e-05,
+   "ev_after": 3.656171598899018e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -493,8 +491,8 @@
   {
    "talent": "Improved Arcane Shot",
    "sim": -0.0026275668696388887,
-   "ev_before": 0.002218608637513982,
-   "ev_after": 0.002140672258699808,
+   "ev_before": 0.0021252309458861486,
+   "ev_after": 0.0021252309458861486,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -511,27 +509,27 @@
    ],
    "loss": 0.46,
    "cap": 0.9,
-   "rms": 0.0129,
-   "points": 35
+   "rms": 0.0122,
+   "points": 33
   },
   "builds": {
    "bm-mm-raid": {
-    "dps": 413.0863768168449,
-    "surplus": 482.97985261749545,
+    "dps": 415.1194394926684,
+    "surplus": 485.05057689515354,
     "oom_seconds": 76.42961905713332,
-    "deficit": 0.14471302565079036,
+    "deficit": 0.1441728774968577,
     "sustain": 1.1105,
-    "bound_share": 0.4593,
-    "model_deficit": 0.1605
+    "bound_share": 0.4545,
+    "model_deficit": 0.1589
    },
    "bm-mm-full-buffs-raid": {
-    "dps": 385.79446577559634,
-    "surplus": 478.3312630744472,
-    "oom_seconds": 93.04498951041069,
-    "deficit": 0.1934575563890092,
-    "sustain": 1.0842,
-    "bound_share": 0.4749,
-    "model_deficit": 0.1785
+    "dps": 405.7761072634758,
+    "surplus": 483.9768573716972,
+    "oom_seconds": 84.58855099003131,
+    "deficit": 0.16157952372537254,
+    "sustain": 1.1105,
+    "bound_share": 0.4642,
+    "model_deficit": 0.1623
    },
    "opt-mm-raid-raid-dps": {
     "dps": 414.5893467913005,
@@ -539,8 +537,8 @@
     "oom_seconds": 78.02597844898335,
     "deficit": 0.14922685336374897,
     "sustain": 1.1105,
-    "bound_share": 0.4604,
-    "model_deficit": 0.1609
+    "bound_share": 0.4577,
+    "model_deficit": 0.16
    },
    "cand-mm-raid-hand-2026-09-27": {
     "dps": 385.79446577559634,
@@ -548,8 +546,8 @@
     "oom_seconds": 93.04498951041069,
     "deficit": 0.1934575563890092,
     "sustain": 1.0842,
-    "bound_share": 0.4749,
-    "model_deficit": 0.1785
+    "bound_share": 0.4731,
+    "model_deficit": 0.1778
    },
    "cand-mm-raid-r1": {
     "dps": 374.2475614823094,
@@ -557,8 +555,8 @@
     "oom_seconds": 105.26945841089332,
     "deficit": 0.2364477944558101,
     "sustain": 1.003,
-    "bound_share": 0.4907,
-    "model_deficit": 0.2243
+    "bound_share": 0.489,
+    "model_deficit": 0.2235
    },
    "cand-mm-raid-r2": {
     "dps": 371.3400222971971,
@@ -566,8 +564,8 @@
     "oom_seconds": 105.26945841089332,
     "deficit": 0.2378562788147104,
     "sustain": 1.003,
-    "bound_share": 0.4928,
-    "model_deficit": 0.2252
+    "bound_share": 0.4911,
+    "model_deficit": 0.2244
    },
    "cand-mm-raid-r3": {
     "dps": 366.43709596698557,
@@ -575,8 +573,8 @@
     "oom_seconds": 105.26945841089332,
     "deficit": 0.24041747644342604,
     "sustain": 1.0,
-    "bound_share": 0.4976,
-    "model_deficit": 0.2289
+    "bound_share": 0.4962,
+    "model_deficit": 0.2282
    },
    "cand-mm-raid-r4": {
     "dps": 406.9683562126495,
@@ -584,8 +582,8 @@
     "oom_seconds": 76.42961905713332,
     "deficit": 0.14518319222920495,
     "sustain": 1.1105,
-    "bound_share": 0.4582,
-    "model_deficit": 0.1601
+    "bound_share": 0.4554,
+    "model_deficit": 0.1592
    },
    "cand-mm-raid-r5": {
     "dps": 413.0863768168449,
@@ -593,8 +591,8 @@
     "oom_seconds": 76.42961905713332,
     "deficit": 0.14471302565079036,
     "sustain": 1.1105,
-    "bound_share": 0.4593,
-    "model_deficit": 0.1605
+    "bound_share": 0.4566,
+    "model_deficit": 0.1596
    },
    "cand-mm-raid-r6": {
     "dps": 416.8110574624266,
@@ -602,8 +600,8 @@
     "oom_seconds": 76.42961905713332,
     "deficit": 0.14509195698167277,
     "sustain": 1.1105,
-    "bound_share": 0.4604,
-    "model_deficit": 0.1609
+    "bound_share": 0.4576,
+    "model_deficit": 0.16
    },
    "cand-mm-raid-r7": {
     "dps": 414.7779947866035,
@@ -611,8 +609,8 @@
     "oom_seconds": 76.42961905713332,
     "deficit": 0.1456332435889779,
     "sustain": 1.1105,
-    "bound_share": 0.4624,
-    "model_deficit": 0.1616
+    "bound_share": 0.4597,
+    "model_deficit": 0.1607
    },
    "cand-mm-raid-r8": {
     "dps": 398.63271055907376,
@@ -620,8 +618,8 @@
     "oom_seconds": 91.48332597987265,
     "deficit": 0.1891261169634335,
     "sustain": 1.1105,
-    "bound_share": 0.4901,
-    "model_deficit": 0.1713
+    "bound_share": 0.4883,
+    "model_deficit": 0.1707
    },
    "cand-mm-raid-r9": {
     "dps": 414.5893467913005,
@@ -629,142 +627,130 @@
     "oom_seconds": 78.02597844898335,
     "deficit": 0.14922685336374897,
     "sustain": 1.1105,
-    "bound_share": 0.4604,
-    "model_deficit": 0.1609
+    "bound_share": 0.4577,
+    "model_deficit": 0.16
    }
   },
   "removals": {
    "bm-mm-raid -Efficiency": {
-    "deficit": 0.1998,
+    "deficit": 0.199,
     "sustain": 1.009,
-    "bound_share": 0.4593,
-    "model_deficit": 0.2071
-   },
-   "bm-mm-raid -Improved Mend Pet": {
-    "deficit": 0.1447,
-    "sustain": 1.1105,
-    "bound_share": 0.4593,
-    "model_deficit": 0.1605
+    "bound_share": 0.4545,
+    "model_deficit": 0.205
    },
    "bm-mm-full-buffs-raid -Efficiency": {
-    "deficit": 0.2269,
-    "sustain": 1.003,
-    "bound_share": 0.4749,
-    "model_deficit": 0.217
-   },
-   "bm-mm-full-buffs-raid -Improved Revive Pet": {
-    "deficit": 0.1935,
-    "sustain": 1.0842,
-    "bound_share": 0.4749,
-    "model_deficit": 0.1785
+    "deficit": 0.2129,
+    "sustain": 1.009,
+    "bound_share": 0.4642,
+    "model_deficit": 0.2093
    },
    "opt-mm-raid-raid-dps -Efficiency": {
     "deficit": 0.202,
     "sustain": 1.009,
-    "bound_share": 0.4604,
-    "model_deficit": 0.2076
+    "bound_share": 0.4577,
+    "model_deficit": 0.2064
    },
    "cand-mm-raid-hand-2026-09-27 -Efficiency": {
     "deficit": 0.2269,
     "sustain": 1.003,
-    "bound_share": 0.4749,
-    "model_deficit": 0.217
+    "bound_share": 0.4731,
+    "model_deficit": 0.2162
    },
    "cand-mm-raid-hand-2026-09-27 -Improved Revive Pet": {
     "deficit": 0.1935,
     "sustain": 1.0842,
-    "bound_share": 0.4749,
-    "model_deficit": 0.1785
+    "bound_share": 0.4731,
+    "model_deficit": 0.1778
    },
    "cand-mm-raid-r1 -Improved Revive Pet": {
     "deficit": 0.2364,
     "sustain": 1.003,
-    "bound_share": 0.4907,
-    "model_deficit": 0.2243
+    "bound_share": 0.489,
+    "model_deficit": 0.2235
    },
    "cand-mm-raid-r1 -Rapid Recuperation": {
     "deficit": 0.2362,
     "sustain": 1.003,
-    "bound_share": 0.4907,
-    "model_deficit": 0.2243
+    "bound_share": 0.489,
+    "model_deficit": 0.2235
    },
    "cand-mm-raid-r2 -Improved Revive Pet": {
     "deficit": 0.2379,
     "sustain": 1.003,
-    "bound_share": 0.4928,
-    "model_deficit": 0.2252
+    "bound_share": 0.4911,
+    "model_deficit": 0.2244
    },
    "cand-mm-raid-r2 -Rapid Recuperation": {
     "deficit": 0.2377,
     "sustain": 1.003,
-    "bound_share": 0.4928,
-    "model_deficit": 0.2252
+    "bound_share": 0.4911,
+    "model_deficit": 0.2244
    },
    "cand-mm-raid-r3 -Rapid Recuperation": {
     "deficit": 0.2402,
     "sustain": 1.0,
-    "bound_share": 0.4976,
-    "model_deficit": 0.2289
+    "bound_share": 0.4962,
+    "model_deficit": 0.2282
    },
    "cand-mm-raid-r4 -Efficiency": {
     "deficit": 0.2003,
     "sustain": 1.009,
-    "bound_share": 0.4582,
-    "model_deficit": 0.2066
+    "bound_share": 0.4554,
+    "model_deficit": 0.2054
    },
    "cand-mm-raid-r4 -Improved Mend Pet": {
     "deficit": 0.1452,
     "sustain": 1.1105,
-    "bound_share": 0.4582,
-    "model_deficit": 0.1601
+    "bound_share": 0.4554,
+    "model_deficit": 0.1592
    },
    "cand-mm-raid-r4 -Spirit Bond": {
     "deficit": 0.1452,
     "sustain": 1.1105,
-    "bound_share": 0.4582,
-    "model_deficit": 0.1601
+    "bound_share": 0.4554,
+    "model_deficit": 0.1592
    },
    "cand-mm-raid-r5 -Efficiency": {
     "deficit": 0.1998,
     "sustain": 1.009,
-    "bound_share": 0.4593,
-    "model_deficit": 0.2071
+    "bound_share": 0.4566,
+    "model_deficit": 0.2059
    },
    "cand-mm-raid-r5 -Improved Mend Pet": {
     "deficit": 0.1447,
     "sustain": 1.1105,
-    "bound_share": 0.4593,
-    "model_deficit": 0.1605
+    "bound_share": 0.4566,
+    "model_deficit": 0.1596
    },
    "cand-mm-raid-r6 -Efficiency": {
     "deficit": 0.2001,
     "sustain": 1.009,
-    "bound_share": 0.4604,
-    "model_deficit": 0.2076
+    "bound_share": 0.4576,
+    "model_deficit": 0.2064
    },
    "cand-mm-raid-r7 -Efficiency": {
     "deficit": 0.2009,
     "sustain": 1.009,
-    "bound_share": 0.4624,
-    "model_deficit": 0.2085
+    "bound_share": 0.4597,
+    "model_deficit": 0.2073
    },
    "cand-mm-raid-r7 -Improved Mend Pet": {
     "deficit": 0.1456,
     "sustain": 1.1105,
-    "bound_share": 0.4624,
-    "model_deficit": 0.1616
+    "bound_share": 0.4597,
+    "model_deficit": 0.1607
    },
    "cand-mm-raid-r8 -Efficiency": {
     "deficit": 0.2366,
     "sustain": 1.009,
-    "bound_share": 0.4901,
-    "model_deficit": 0.221
+    "bound_share": 0.4883,
+    "model_deficit": 0.2202
    },
    "cand-mm-raid-r9 -Efficiency": {
     "deficit": 0.202,
     "sustain": 1.009,
-    "bound_share": 0.4604,
-    "model_deficit": 0.2076
+    "bound_share": 0.4577,
+    "model_deficit": 0.2064
    }
   }
  }
