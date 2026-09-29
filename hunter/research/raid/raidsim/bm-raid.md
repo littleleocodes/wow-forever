@@ -24,7 +24,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- mm-hawk-raid: `53200005051001-005355000150104`
-- beast-mastery-raid: `512002150510125-00532500015`
+- mm-hawk-raid: `53200005051001-105355000150004`
+- beast-mastery-raid: `532000150510125-00532500015`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`
 

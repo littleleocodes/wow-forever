@@ -4,7 +4,7 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `mm-hawk-raid` | 22/29/0 | 448 | 485 | 809 | 809 | 832 |
+| `mm-hawk-raid` | 22/29/0 | 448 | 485 | 806 | 806 | 829 |
 | `beast-mastery-raid` | 30/21/0 | 438 | 477 | 802 | 802 | 824 |
 | sim preset: Beast Mastery 35/16/0 | - | 416 | 452 | 761 | 761 | 787 |
 
@@ -20,7 +20,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `mm-hawk-raid` | 448 | +4% | +32% | +8% | +3% | +33% | 809 |
+| `mm-hawk-raid` | 448 | +4% | +32% | +8% | +3% | +32% | 806 |
 | `beast-mastery-raid` | 438 | +7% | +33% | +8% | +3% | +32% | 802 |
 | sim preset: Beast Mastery 35/16/0 | 416 | +5% | +34% | +10% | +3% | +31% | 761 |
 

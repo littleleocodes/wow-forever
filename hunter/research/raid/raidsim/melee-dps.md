@@ -5,7 +5,7 @@
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
 | `opt-melee-dps-raid-dps` | 5/15/31 | 424 | 22 | +0.0% | 432 | 13 | +123.7% |
-| `melee-survival-raid` | 5/11/35 | 424 | 22 | -0.1% | 434 | 37 | +121.1% |
+| `melee-survival-raid` | 5/11/35 | 424 | 22 | -0.1% | 434 | 37 | +111.4% |
 
 ## Damage shares (`opt-melee-dps-raid-dps`, simulator actions)
 
@@ -25,5 +25,5 @@ Mapped onto the spec model's sources: `melee` 34%, `raptor_strike` 20%, `melee_o
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-melee-dps-raid-dps: `5-005045001-500250030050220151`
-- melee-survival-raid: `5-005005001-500230230250222151`
+- melee-survival-raid: `5-005005001-050230230250222151`
 
