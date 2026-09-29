@@ -1,0 +1,18 @@
+{
+ "druid": {
+  "balance-pvp": {
+   "model": "balance-dps",
+   "profile": "pvp",
+   "spec": "Balance",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "feral-combat-pvp": {
+   "model": "feral-cat-dps",
+   "profile": "pvp",
+   "spec": "Feral Combat",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ }
+}

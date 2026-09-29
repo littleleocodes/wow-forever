@@ -1004,6 +1004,104 @@
       "notes": ["Report: druid/talents/forever/optimizer/feral-bear-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/druid"]
+    },
+    {
+      "id": "balance-pvp",
+      "name": "Balance — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Balance",
+      "generated": "2026-09-29",
+      "summary": "The best Balance pvp build with at least 30 points in Balance, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (balance-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Balance": [
+          ["Improved Wrath", 5],
+          ["Moonglow", 3],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Improved Entangling Roots", 3],
+          ["Nature's Splendor", 1],
+          ["Vengeance", 5],
+          ["Improved Starfire", 5],
+          ["Nature's Grace", 1],
+          ["Eclipse", 3],
+          ["Moonfury", 1],
+          ["Moonkin Form", 1]
+        ],
+        "Feral Combat": [
+          ["Heart of the Wild", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 1],
+          ["Brutal Impact", 2],
+          ["Feral Charge", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Natural Shapeshifter", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Starfire", "why": "The scorer's value in this build: +13.5% of its score (model balance-dps)."},
+        {"talent": "Vengeance", "why": "The scorer's value in this build: +12.9% of its score (model balance-dps)."},
+        {"talent": "Moonkin Form", "why": "The scorer's value in this build: +11.1% of its score (model balance-dps)."},
+        {"talent": "Eclipse", "why": "The scorer's value in this build: +10.9% of its score (model balance-dps)."},
+        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.1% of its score (model balance-dps)."},
+        {"talent": "Nature's Focus", "why": "The scorer's value in this build: +6.8% of its score (model balance-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model balance-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Balance build: check it against the community's Balance builds at launch."],
+      "sources": ["https://talentsforever.com/druid"]
+    },
+    {
+      "id": "feral-combat-pvp",
+      "name": "Feral Combat — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Feral Combat",
+      "generated": "2026-09-29",
+      "summary": "The best Feral Combat pvp build with at least 30 points in Feral Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (feral-cat-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Balance": [],
+        "Feral Combat": [
+          ["Heart of the Wild", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 3],
+          ["Brutal Impact", 2],
+          ["Thick Hide", 3],
+          ["Savage Fury", 2],
+          ["Feral Charge", 1],
+          ["Sharpened Claws", 2],
+          ["Predatory Strikes", 3],
+          ["Predatory Instincts", 2],
+          ["Leader of the Pack", 1],
+          ["King of the Jungle", 3],
+          ["Rend and Tear", 1],
+          ["Berserk", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Furor", 5],
+          ["Naturalist", 5],
+          ["Natural Shapeshifter", 3],
+          ["Gift of the Earthmother", 1],
+          ["Swiftmend", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Natural Shapeshifter", "why": "The scorer's value in this build: +11.7% of its score (model feral-cat-dps)."},
+        {"talent": "Berserk", "why": "The scorer's value in this build: +9.8% of its score (model feral-cat-dps)."},
+        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.3% of its score (model feral-cat-dps)."},
+        {"talent": "Thick Hide", "why": "The scorer's value in this build: +8.8% of its score (model feral-cat-dps)."},
+        {"talent": "Feral Charge", "why": "The scorer's value in this build: +7.8% of its score (model feral-cat-dps)."},
+        {"talent": "Brutal Impact", "why": "The scorer's value in this build: +7.8% of its score (model feral-cat-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model feral-cat-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Feral Combat build: check it against the community's Feral Combat builds at launch."],
+      "sources": ["https://talentsforever.com/druid"]
     }
   ]
 }
