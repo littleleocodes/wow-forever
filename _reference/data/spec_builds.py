@@ -33,6 +33,16 @@ from fmt_json import dumps  # noqa: E402
 OUT = HERE / "spec-builds.json"
 TODAY = datetime.date.today().isoformat()
 LEVELS = [20, 30, 40, 50, 60]
+# Protection PvP builds are scored on a damage model (the tank model's "burst" would be threat, meaningless in PvP), 30+ points kept in
+# Protection. Trees without a scorer model of their own borrow the nearest one: their own spells are under-valued, and the build says so.
+ROUGH = {("mage", "Arcane"): "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents "
+                             "that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list).",
+         ("rogue", "Subtlety"): "Scored with the Combat swords model (no Subtlety leveling model): Subtlety's openers and Hemorrhage are under-valued.",
+         ("warlock", "Demonology"): "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share.",
+         ("warlock", "Destruction"): "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued.",
+         ("hunter", "Survival"): "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled.",
+         ("paladin", "Protection"): "Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection.",
+         ("warrior", "Protection"): "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."}
 # the scorer model (and, for raid, the simulator entry) nearest to each tree, per mode
 MODEL = {
     ("druid", "Balance"): {"leveling": "balance-dps", "raid": ("balance-dps", "balance-dps"), "pvp": "balance-dps"},
@@ -45,7 +55,7 @@ MODEL = {
     ("mage", "Fire"): {"leveling": "fire-leveling", "raid": ("fire-raid", "fire-raid"), "pvp": "fire-leveling"},
     ("mage", "Frost"): {"leveling": "frost-leveling", "raid": ("frost-raid", "frost-raid"), "pvp": "frost-leveling"},
     ("paladin", "Holy"): {"raid": ("holy-heal", None), "pvp": "holy-heal"},
-    ("paladin", "Protection"): {"raid": ("prot-tank", None), "pvp": "prot-tank"},
+    ("paladin", "Protection"): {"raid": ("prot-tank", None), "pvp": "ret-dps"},
     ("paladin", "Retribution"): {"leveling": "ret-dps", "raid": ("ret-dps", "ret-dps"), "pvp": "ret-dps"},
     ("priest", "Discipline"): {"raid": ("holy-heal", None), "pvp": "holy-heal"},
     ("priest", "Holy"): {"raid": ("holy-heal", None), "pvp": "holy-heal"},
@@ -61,7 +71,7 @@ MODEL = {
     ("warlock", "Destruction"): {"leveling": "affliction-leveling", "raid": ("fire-destro-raid", "fire-destro-raid"), "pvp": "affliction-leveling"},
     ("warrior", "Arms"): {"leveling": "arms-2h-raid", "raid": ("arms-2h-raid", "arms-battle-raid"), "pvp": "arms-2h-raid"},
     ("warrior", "Fury"): {"leveling": "fury-dw-raid", "raid": ("fury-dw-raid", "fury-dw-raid"), "pvp": "fury-dw-raid"},
-    ("warrior", "Protection"): {"raid": ("prot-tank", None), "pvp": "prot-tank"},
+    ("warrior", "Protection"): {"raid": ("prot-tank", None), "pvp": "arms-2h-raid"},
 }
 LOOKAHEAD = {"mage": 12, "warrior": 20}
 ROLE = {"heal": "healer", "tank": "tank"}
@@ -134,7 +144,8 @@ def generate(cls, tree, mode, a, tmp):
                      + ". No hand draft exists for this spec and mode yet; treat it as a starting point."),
          "allocation": to_allocation(cls, flat), "core": core_of(cls, model, profile, flat), "flex": [],
          "notes": [f"Generated {TODAY} (spec_builds.py) so every spec has a {title.lower()} build; model {model}, profile {profile}."
-                   + (" PvP values are assumptions: no simulator plays PvP." if mode == "pvp" else "")],
+                   + (" PvP values are assumptions: no simulator plays PvP." if mode == "pvp" else "")]
+                  + ([ROUGH[(cls, tree)]] if (cls, tree) in ROUGH and not (mode == "raid" and info.get("entry")) else []),
          "open_questions": [f"A generated {tree} build: check it against the community's {tree} builds at launch."],
          "sources": ["https://talentsforever.com/" + cls]}
     if mode == "leveling":
