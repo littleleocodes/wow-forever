@@ -17,6 +17,7 @@ search record to `<class>/raid/raidsim/<spec>-rotation-search.json`, and specs.j
 races, calibrations and rotation pages use it from then on (run.py `apl_path`).
 """
 import argparse
+import contextlib
 import copy
 import datetime
 import functools
@@ -621,6 +622,28 @@ def write(cls, spec, rec, base, cur, N):
     rep.write_text(json.dumps(allrec, indent=1), encoding="utf-8")
     # specs.json: point the spec at our rotation for this kind of setting (text edit keeps the file's layout)
     sp = HERE / "specs.json"
+    with specs_lock():   # several searches may run at once (one per class): read and write specs.json under a lock
+        _point_specs(sp, cls, spec, k, out)
+    print(f"  wrote {out.relative_to(ROOT)} and {rep.relative_to(ROOT)}", flush=True)
+
+
+@contextlib.contextmanager
+def specs_lock():
+    """An exclusive lock on specs.json.lock where the platform has fcntl (Linux, the cloud sessions); a no-op elsewhere."""
+    try:
+        import fcntl
+    except ImportError:
+        yield
+        return
+    with open(HERE / "specs.json.lock", "w") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(fh, fcntl.LOCK_UN)
+
+
+def _point_specs(sp, cls, spec, k, out):
     s = sp.read_text(encoding="utf-8")
     rel = out.relative_to(ROOT).as_posix()
     data = json.loads(s)
@@ -640,7 +663,6 @@ def write(cls, spec, rec, base, cur, N):
         json.loads(s)
         sp.write_text(s, encoding="utf-8")
         R.SPECS[cls][spec][k] = rel
-    print(f"  wrote {out.relative_to(ROOT)} and {rep.relative_to(ROOT)}", flush=True)
 
 
 def main():
