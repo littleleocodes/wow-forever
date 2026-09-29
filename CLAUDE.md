@@ -319,6 +319,17 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   counts), tanks and healers in their own tools, and the fight lab with a scorer leveling order (`Optimizer.order`) under every
   leveling model; results `_reference/data/popular-race.json`, report `_reference/popular-builds.md` (generated). Popularity is what
   calculator visitors planned, not performance: never adopt a build because it is popular, only through the usual races.
+  The same file has per-talent **pick rates** by lead tree (`pickBy`, the site's pick-rate tick box): `popular_picks.py --write`
+  screens every build of ours against them (consensus talents we skip, ours that few take, scorer values) and `popular_swaps.py`
+  races each consensus talent swapped into our ranked builds (legal swap, points taken back where the scorer loses least; raid sim
+  or fight lab); results `_reference/data/popular-swaps.json`, both in `_reference/popular-picks.md` (generated). A swap that wins
+  is a lead for calibrate/optimize/race/adopt; the calibrations only measure talents some raced build holds, so a consensus talent
+  none of our builds takes is never measured until a swap or a candidate holds it.
+- **Seeds in the raid sim** (fixed 2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so our seeds 1, 2 and 3 used
+  to share almost every iteration. `run.sim_seed(k)` maps seed k to 1 + (k - 1) * 1,000,000 (seed 1 unchanged, the others disjoint)
+  in every bench config (run.py, apl_opt.py and through it talent_opt.py). Seed-2 confirmations and third-seed checks recorded
+  before that date were not independent of seed 1 (the confirmation runs were about 85% fresh iterations; the third seed repeated the
+  second): treat small kept gains in those records as unconfirmed.
 - Classic Era: `setup.py --game classic` builds the upstream wowsims/classic simulator next to the Forever one;
   `classic_specs.py` maps our Classic raid specs onto its presets (`specs-classic.json`, our gear sets under
   `raidsim/gear_sets/classic/`); `run.py`/`calibrate.py --game classic-era` race `<class>/talents/classic-baseline/builds.json`

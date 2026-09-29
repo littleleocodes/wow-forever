@@ -85,13 +85,25 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    Outcome: no popular build beats our best of its class on the training dummy; in the raid setting only the popular Enhancement
    18/33/0 (+1.7%, Elemental damage talents instead of our Restoration mana talents; it loses 4.6% on the dummy, where mana runs
    short). The popular Marksmanship build is our `mm-lone-wolf-raid`. Nothing was adopted.
-2. Model caveats to keep in mind: the Summon Hawk builds rest on the simulator's guess of the hawks' follow-up swings (the client
+   **Pick rates** (2026-09-29): `popular_picks.py` + `popular_swaps.py`, report `_reference/popular-picks.md`. Consensus talents
+   swapped into our ranked builds mostly tie or lose; three wins held on three independent seeds, all under the 2% adopt margin:
+   Improved Judgement for Benediction in the Protection paladin (+1.8% tank value), Improved Stormstrike in the Enhancement
+   leveling build (about -1% time per kill, levels 50-60), Arcane Impact in the older `frost-arcane-power-raid` (+1.2%; the best
+   Frost builds already take it). Not testable with a one-talent swap (need a multi-point respec, e.g. `talent_opt.py` from our
+   build): Improved Seals (Protection paladin), Berserk (Bear), Shadow Mastery (Shadow Bolt warlocks), Anger Management (Arms
+   leveling), Last Stand (Protection warrior): the list is in the report. Lesson: the calibrations measure only talents a raced build
+   holds, so consensus talents none of our builds take were never measured.
+2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
+   confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
+   still won on 17,000 fresh iterations, so the searches are not void, but the final checks were never independent. Worth
+   re-running the third-seed check of each `*-rotation-search.json` and talent-search candidate with the fix (not done).
+3. Model caveats to keep in mind: the Summon Hawk builds rest on the simulator's guess of the hawks' follow-up swings (the client
    does not describe them); Frostfire Bolt is our own implementation; talent searches are local and run on the dummy only.
-3. From the notes in `_reference/notes/`: `abs_dps_factor` still 1.0 for most classes; Bastion / Focused Rage (tables vs notes);
+4. From the notes in `_reference/notes/`: `abs_dps_factor` still 1.0 for most classes; Bastion / Focused Rage (tables vs notes);
    a druid AoE variant; healer gear from the item database; `professions/` not started; Improved Voidwalker needs a hand template
    in the warlock AoE model; Penance's healer sustain leaks into Shadow's mana limit; the heal-lab refit with the crit cap;
    enhancement leveling calibration; warlock `calibrate_levels`; Mutilate with swords; Arms APL; moonkin Wrath weaving.
-4. Beta: the beta runs 2026-09-17 to 2026-10-21 (level cap 20, 30 later). When a new client build appears
+5. Beta: the beta runs 2026-09-17 to 2026-10-21 (level cap 20, 30 later). When a new client build appears
    (`check_beta_build.py`), follow CLAUDE.md's "When a new beta build lands".
 
 ## Notes from the local sessions

@@ -363,6 +363,13 @@ def scorer_scores(cls, spec, profile, allocs):
 SETTING_OVERRIDE = None   # --setting dummy|raid
 
 
+def sim_seed(seed):
+    """The bench's RandomSeed for our seed k (2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so seeds 1, 2 and 3
+    over 20,000 iterations shared all but one iteration and a "second seed" re-ran the first one's random numbers. Seed k starts at
+    1 + (k - 1) * 1,000,000: seed 1 is unchanged (every earlier seed-1 number stands) and the others are disjoint below a million iterations."""
+    return 1 + (int(seed) - 1) * 1_000_000
+
+
 def setting(entry):
     """The setting of a spec's main runs (the table, the removal deltas the calibration fits, the races): Forever DPS specs on a
     boss-level training dummy with only the class's own buffs (2026-09-27: raw personal DPS decides the raid DPS builds); tanks, whose
@@ -442,7 +449,7 @@ def run_spec(cls, spec, a, repo):
            **setting_cfg(entry, setting(entry)),
            "profession1": entry.get("profession1", "Engineering"),
            "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False),
-           "reactionTimeMs": 200, "iterations": a.iterations, "duration": a.duration, "seed": a.seed, "isTank": entry.get("tank", False),
+           "reactionTimeMs": 200, "iterations": a.iterations, "duration": a.duration, "seed": sim_seed(a.seed), "isTank": entry.get("tank", False),
            "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
     bench_dir = repo / "bench"
     bench_dir.mkdir(exist_ok=True)
@@ -651,7 +658,7 @@ def run_environments(cls, spec, a, repo):
     gear_max = sim_path(best_gear(repo, entry))
     base_cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "apl": str(apl_path(entry, repo)), "spec": entry.get("spec", {}), "profession1": entry.get("profession1", "Engineering"),
                 "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
-                "iterations": a.iterations, "seed": a.seed, "isTank": entry.get("tank", False), "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
+                "iterations": a.iterations, "seed": sim_seed(a.seed), "isTank": entry.get("tank", False), "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
     envs = {}
     dummy_apl, raid_apl = str(apl_path(entry, repo, "dummy")), str(apl_path(entry, repo, "raid"))   # each setting runs its own rotation
     if GAME == "forever":
