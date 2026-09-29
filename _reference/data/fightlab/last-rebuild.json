@@ -6414,9 +6414,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-28T17:20:13",
+  "date": "2026-09-29T02:46:51",
   "classes": [
-   "warlock"
+   "hunter"
   ],
   "steps": [
    "regen"
@@ -6427,67 +6427,67 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 92,
+  "seconds": 35,
   "refresh": null,
   "regen_log": [
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_fightlab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "formatted F:\\wow-forever\\warlock\\talents\\forever\\proposed-builds.json",
-     "warlock: README section + leveling-affliction note written"
+     "formatted /home/user/wow-forever/hunter/talents/forever/proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_raidsim_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid sim section written (5 specs)",
-     "wrote _reference\\raidsim-summary.md"
+     "hunter: raid sim section written (4 specs)",
+     "wrote _reference/raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_heallab_sections.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\heallab-summary.md"
+     "wrote _reference/heallab-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_leveling_guides.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: leveling/guide.md written"
+     "hunter: leveling/guide.md written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_sim_presets.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid gear and consumables written"
+     "hunter: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_rotations.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid and leveling rotations, DPS ranking written"
+     "hunter: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\validate_builds.py",
+    "cmd": "/home/user/wow-forever/_reference/data/validate_builds.py",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -6507,9 +6507,9 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_builds.py",
+    "cmd": "/home/user/wow-forever/_reference/data/render_builds.py",
     "rc": 0,
-    "seconds": 2,
+    "seconds": 1,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
      "rogue: 16 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
@@ -6527,25 +6527,25 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warlock",
+    "cmd": "/home/user/wow-forever/_reference/data/render_new_builds.py hunter",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\new-builds-survey.md",
+     "wrote _reference/new-builds-survey.md",
      "wrote the New spells and builds section of 1 raid READMEs"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py hunter --write",
     "rc": 0,
-    "seconds": 87,
+    "seconds": 32,
     "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
-     "| affliction-leveling -> level-50 build (35/6/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +21.3% | +21.9% | +22.1% | +22.1% | +27.6% |",
+     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
+     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
+     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
      "",
      "## Reading it",
      "",
@@ -6557,7 +6557,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
+    "cmd": "/home/user/wow-forever/_reference/data/render_optimizer_sections.py",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -6574,7 +6574,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\compare_effects.py",
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/compare_effects.py",
     "rc": 0,
     "seconds": 0,
     "tail": [
@@ -6591,7 +6591,7 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/loop_audit.py",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -6604,34 +6604,34 @@
      "shaman   flagged 30/73  open 3",
      "warlock  flagged 23/63  open 8",
      "warrior  flagged 13/68  open 1",
-     "total flagged: 262 -> _reference\\data\\scorer\\loops\\audit.md"
+     "total flagged: 262 -> _reference/data/scorer/loops/audit.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\build_launch_checklist.py",
+    "cmd": "/home/user/wow-forever/_reference/data/build_launch_checklist.py",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (202 per-build questions)"
+     "wrote _reference/launch-checklist.md (202 per-build questions)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\build_beta_checklist.py",
+    "cmd": "/home/user/wow-forever/_reference/data/build_beta_checklist.py",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\beta-checklist.md"
+     "wrote _reference/beta-checklist.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
+    "cmd": "/home/user/wow-forever/_reference/data/fightlab/summary.py --write",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\fightlab-summary.md"
+     "wrote _reference/fightlab-summary.md"
     ],
     "stderr": []
    }

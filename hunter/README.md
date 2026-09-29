@@ -43,4 +43,4 @@ The top build of every raid spec on the training dummy and in a fully buffed rai
 | mm-raid | [`opt-mm-raid-raid-dps`](raid/builds/opt-mm-raid-raid-dps.md) (ours: optimizer) | 404 | [`bm-mm-full-buffs-raid`](raid/builds/bm-mm-full-buffs-raid.md) (ours: hand draft) | 702 |
 | mm-lonewolf-raid | [`mm-lone-wolf-raid`](raid/builds/mm-lone-wolf-raid.md) (ours: hand draft) | 424 | [`mm-lone-wolf-raid`](raid/builds/mm-lone-wolf-raid.md) (ours: hand draft) | 762 |
 | bm-raid | [`mm-hawk-raid`](raid/builds/mm-hawk-raid.md) (ours: hand draft) | 469 | [`mm-hawk-raid`](raid/builds/mm-hawk-raid.md) (ours: hand draft) | 815 |
-| melee-dps | [`melee-survival-raid`](raid/builds/melee-survival-raid.md) (ours: hand draft) | 325 | [`melee-survival-raid`](raid/builds/melee-survival-raid.md) (ours: hand draft) | 729 |
+| melee-dps | [`melee-survival-raid`](raid/builds/melee-survival-raid.md) (ours: hand draft) | 350 | [`melee-survival-raid`](raid/builds/melee-survival-raid.md) (ours: hand draft) | 757 |

@@ -3,7 +3,7 @@
  "spec": "melee-dps",
  "game": "forever",
  "sim": {
-  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
+  "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "hunter/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 120.0
  },
- "date": "2026-09-28",
+ "date": "2026-09-29",
  "results": [
   {
    "label": "melee-survival-raid",
@@ -39,46 +39,49 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14271": 19.7573,
     "20554": 1.0,
-    "1317257": 15.0,
+    "14271": 20.17555,
+    "14266": 39.9645,
     "3045": 1.0,
-    "14266": 39.9869
+    "1317257": 14.9997,
+    "14305": 4.0
    },
    "casts": {
-    "Mongoose Bite": 19.7573,
+    "OtherActionManaGain": 1.0,
     "Berserking": 1.0,
-    "item 13444": 0.81825,
-    "Auto Attack": 95.9748,
-    "Strider Kick": 15.0,
+    "Mongoose Bite": 20.17555,
+    "Raptor Strike": 39.9645,
     "Rapid Fire": 1.0,
-    "OtherActionManaGain": 0.81825,
-    "Raptor Strike": 39.9869
+    "Auto Attack": 95.97935,
+    "item 13444": 1.0,
+    "Strider Kick": 14.9997,
+    "Immolation Trap": 4.0
    },
-   "dps": 324.9597286038089,
-   "dps_stdev": 24.243257539594502,
-   "threat": 331.096603603809,
+   "dps": 349.85435399981225,
+   "dps_stdev": 24.464357003177568,
+   "threat": 357.3543539998122,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 1.2366857927694677,
+   "scorer": 1.2366857927694672,
    "shares": {
-    "Auto Attack": 0.4784084957192007,
-    "Raptor Strike": 0.21416757770523753,
-    "Mongoose Bite": 0.15376851429213456,
-    "Strider Kick": 0.12435349797101712,
-    "Dragonbreath Chili": 0.029301914312410013
+    "Auto Attack": 0.4443297281947401,
+    "Raptor Strike": 0.19909567777312412,
+    "Mongoose Bite": 0.14554917823945523,
+    "Strider Kick": 0.11544218278004836,
+    "Immolation Trap": 0.06818031268524045,
+    "Dragonbreath Chili": 0.02740292032739185
    },
    "source_shares": {
-    "melee": 0.3204,
-    "raptor_strike": 0.2206,
-    "melee_oh": 0.1725,
-    "mongoose_bite": 0.1584,
-    "strider_kick": 0.1281
+    "melee": 0.3193,
+    "raptor_strike": 0.2201,
+    "melee_oh": 0.172,
+    "mongoose_bite": 0.1609,
+    "strider_kick": 0.1276
    },
-   "unmatched_share": 0.0293
+   "unmatched_share": 0.0956
   },
   {
    "label": "opt-melee-dps-raid-dps",
@@ -87,46 +90,49 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "14266": 39.9645,
+    "14305": 4.0,
+    "1317257": 14.9997,
     "20554": 1.0,
-    "3045": 1.0,
-    "14271": 19.7573,
-    "1317257": 15.0,
-    "14266": 39.9869
+    "14271": 20.17555,
+    "3045": 1.0
    },
    "casts": {
+    "OtherActionManaGain": 1.0,
+    "item 13444": 1.0,
+    "Raptor Strike": 39.9645,
+    "Immolation Trap": 4.0,
+    "Strider Kick": 14.9997,
     "Berserking": 1.0,
+    "Mongoose Bite": 20.17555,
     "Rapid Fire": 1.0,
-    "Mongoose Bite": 19.7573,
-    "Strider Kick": 15.0,
-    "Auto Attack": 95.9748,
-    "OtherActionManaGain": 0.81825,
-    "item 13444": 0.81825,
-    "Raptor Strike": 39.9869
+    "Auto Attack": 95.97935
    },
-   "dps": 324.9597286038089,
-   "dps_stdev": 24.243257539594502,
-   "threat": 331.096603603809,
+   "dps": 349.85435399981225,
+   "dps_stdev": 24.464357003177568,
+   "threat": 357.3543539998122,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 1.2366857927694677,
+   "scorer": 1.2366857927694672,
    "shares": {
-    "Auto Attack": 0.4784084957192007,
-    "Raptor Strike": 0.21416757770523753,
-    "Mongoose Bite": 0.15376851429213456,
-    "Strider Kick": 0.12435349797101712,
-    "Dragonbreath Chili": 0.029301914312410013
+    "Auto Attack": 0.44432972819474,
+    "Raptor Strike": 0.1990956777731241,
+    "Mongoose Bite": 0.1455491782394552,
+    "Strider Kick": 0.11544218278004834,
+    "Immolation Trap": 0.06818031268524044,
+    "Dragonbreath Chili": 0.027402920327391847
    },
    "source_shares": {
-    "melee": 0.3204,
-    "raptor_strike": 0.2206,
-    "melee_oh": 0.1725,
-    "mongoose_bite": 0.1584,
-    "strider_kick": 0.1281
+    "melee": 0.3193,
+    "raptor_strike": 0.2201,
+    "melee_oh": 0.172,
+    "mongoose_bite": 0.1609,
+    "strider_kick": 0.1276
    },
-   "unmatched_share": 0.0293
+   "unmatched_share": 0.0956
   }
  ],
  "deltas": {}

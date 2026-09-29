@@ -62,8 +62,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/15/31 | 325 | +0.0% | 729 | +0.0% | 0 s |
-| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 325 | +0.0% | 729 | +0.0% | 0 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/15/31 | 350 | +0.0% | 757 | +0.0% | 0 s |
+| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 350 | +0.0% | 757 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,20 +75,22 @@ Before the pull: at -3s: cast Hunter's Mark.
 | # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Mongoose Bite | 9.9 |
+| 2 | cast Mongoose Bite | 10.1 |
 | 3 | cast Strider Kick | 7.5 |
 | 4 | cast Raptor Strike | 20.0 |
+| 5 | cast Immolation Trap | 2.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent).
+Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 48% |
-| Raptor Strike | 21% |
+| Auto Attack | 44% |
+| Raptor Strike | 20% |
 | Mongoose Bite | 15% |
 | Strider Kick | 12% |
+| Immolation Trap | 7% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

@@ -17,7 +17,7 @@ Total: **46.4 h** (48.4% faster than talentless), 0 respec(s).
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| bm-leveling -> level-50 build (16/25/0) | 46.4 | -0.0 h |
+| bm-leveling -> level-50 build (16/25/0) | 46.4 | +0.0 h |
 | bm-leveling -> level-40 build (16/15/0) | 46.4 | +0.0 h |
 | bm-leveling -> level-60 build (19/32/0) | 46.7 | +0.3 h |
 | bm-leveling -> level-30 build (21/0/0) | 46.9 | +0.5 h |

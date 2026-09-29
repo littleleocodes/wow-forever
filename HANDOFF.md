@@ -93,6 +93,12 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    build): Improved Seals (Protection paladin), Berserk (Bear), Shadow Mastery (Shadow Bolt warlocks), Anger Management (Arms
    leveling), Last Stand (Protection warrior): the list is in the report. Lesson: the calibrations measure only talents a raced build
    holds, so consensus talents none of our builds take were never measured.
+   **Melee hunter traps** (2026-09-29, user question): no rotation had cast Immolation or Explosive Trap (the rotation search only
+   inserts new Forever spells and cooldowns; the fight lab does not model traps). Both melee rotations now end with Immolation
+   Trap, Explosive Trap: +7.7% dummy / +3.8% raid with the simulator's shared 30 s trap cooldown, +12.6% / +6.4% if the cooldowns
+   are separate (tested with a temporary simulator patch, not kept). To do: check in the beta whether the fire traps share a
+   cooldown (if not, add a `raidsim/patches/` patch); traps in the fight lab's hunter (leveling); a `trap` source in the melee
+   scorer model; whether ranged builds can use traps at all (the boss must walk over them).
 2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
    confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
    still won on 17,000 fresh iterations, so the searches are not void, but the final checks were never independent. Worth
