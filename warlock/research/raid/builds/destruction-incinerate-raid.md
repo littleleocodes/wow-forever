@@ -27,10 +27,10 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Demonic Embrace** | 2/5 | changed | Increases your total Stamina by 6%. |
-| **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
+| **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
+| **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 
 ### Destruction (31)
 
@@ -67,7 +67,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 | 1 | Improved Life Tap | any talent legal at that tier | Worth 0.8% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 2 | Cataclysm | any talent legal at that tier | Worth 0.8% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 2 | Demonic Embrace | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 5 | Unholy Power | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 5 | Demonic Aegis | Unholy Power, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 1 | Bane of Havoc | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
@@ -116,6 +116,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `start-incinerate-8-11-32`: 2 points Improved Corruption -> Suppression, 1 point Aftermath -> Improved Life Tap.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

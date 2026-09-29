@@ -6,7 +6,7 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Balance](balance.md) — Balance (optimized) | 438 | 511 | 342 | best |
+| 1 | [Balance](balance.md) — Balance — Moonkin / Eclipse | 438 | 511 | 342 | best |
 | 2 | [Feral Combat](feral-combat.md) — Feral Combat (optimized) | 350 | 556 | 348 | -20% |
 
 **Healing**: [Restoration](restoration.md) — Restoration (optimized).

@@ -32,11 +32,9 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
-| **Lightning Reflexes** | 2/5 | unchanged | Increases your Dodge chance by 2%. |
+| **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Endurance** | 2/2 | changed | Reduces the cooldown of your Sprint and Evasion abilities by 60%. |
-| **Improved Sprint** | 2/2 | unchanged | Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
 | **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
@@ -44,6 +42,7 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
 | **Aggression** | 3/3 | changed | Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 6%. |
 | **Adrenaline Rush** | 1/1 | unchanged | Increases your Energy regeneration rate by 100% for 15 sec. |
+| **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
 
 ### Subtlety (2)
 
@@ -121,6 +120,7 @@ Damage by ability:
 ## Notes
 
 - Backstab requires being behind the target; Mutilate does not — one reason the Assassination build may win.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -24,8 +24,7 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 | **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
-| **Improved Mend Pet** | 2/2 | changed | Gives your Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 20%. |
-| **Ferocity** | 3/5 | changed | Increases the critical strike chance of your pets and hawks by 6%. |
+| **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 
 ### Marksmanship (29)
@@ -62,18 +61,18 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 |---|---|---|---|
 | 3 | Ferocity | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Endurance Training | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Improved Mend Pet | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Ferocity | Improved Mend Pet, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | +0.0% | 761 | -3.4% | 78 s |
-| 2 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 413 | -0.5% | 758 | -3.8% | 76 s |
-| 3 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
-| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 20/31/0 | 386 | -7.0% | 784 | -0.5% | 93 s |
+| 1 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 415 | +0.0% | 762 | -3.4% | 76 s |
+| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | -0.0% | 761 | -3.4% | 78 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 406 | -2.2% | 762 | -3.3% | 85 s |
+| 4 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
 | 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -10.7% | 691 | -12.4% | 92 s |
 | 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -14.3% | 719 | -8.8% | 94 s |
 | 7 | *Survival 0/15/36* | community simulator | - | 335 | -19.2% | 640 | -18.8% | 91 s |
@@ -106,11 +105,11 @@ Damage by ability:
 
 | Ability | [`bm-mm-raid`](bm-mm-raid.md) |
 |---|---|
-| Auto Shot | 47% |
+| Auto Shot | 46% |
 | Arcane Shot | 20% |
-| Serpent Sting | 13% |
+| Serpent Sting | 12% |
 | Aimed Shot | 9% |
-| Pet: Auto Attack | 7% |
+| Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 | Multi-Shot | 1% |
@@ -122,6 +121,7 @@ Damage by ability:
 - Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.
 - Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).
 - Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Ferocity (+0.2% DPS); Improved Mend Pet -> Ferocity (+0.2% DPS). Net +0.49% on a third seed.
 
 ## Open questions (verify in the live game)
 

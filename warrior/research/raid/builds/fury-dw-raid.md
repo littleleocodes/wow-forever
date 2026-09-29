@@ -31,9 +31,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Booming Voice** | 2/5 | changed | Increases the radius of your Battle Shout and Demoralizing Shout abilities by 20%. |
+| **Booming Voice** | 5/5 | changed | Increases the radius of your Battle Shout and Demoralizing Shout abilities by 50%. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. |
-| **Boundless Rage** | 3/3 | **NEW** | Increases your maximum Rage by 30. |
 | **Raging Blows** | 1/1 | **NEW** | Causes your Whirlwind to also strike with your off-hand weapon, and reduces the Rage cost of your Cleave ability by 2. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases your off-hand weapon damage by 25%, off-hand Rage generation by 100%, and chance to hit with off-hand attacks by 10%. |
 | **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
@@ -66,20 +65,20 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 3 | Improved Rend | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Improved Tactical Mastery | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Booming Voice | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Boundless Rage | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Booming Voice | Boundless Rage, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Enrage | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 5** for `fury-dw-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 218 | +0.0% | 375 | -6.6% | 0 s |
-| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 216 | -0.9% | 402 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 208 | -4.9% | 391 | -2.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 192 | -12.0% | 364 | -9.4% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 136 | -37.8% | 264 | -34.3% | 0 s |
+| 1 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 221 | +0.0% | 401 | -0.1% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 13/38/0 | 221 | +0.0% | 402 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 212 | -4.4% | 391 | -2.6% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 197 | -10.9% | 364 | -9.4% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 136 | -38.6% | 264 | -34.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -109,22 +108,23 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](fury-dw-raid.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 5.9 |
-| 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
-| 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 |
-| 5 | cast Goblin Sapper Charge | as ready |
-| 6 | cast Dense Dynamite | as ready |
-| 7 | if false: cast Recklessness | 0.3 |
-| 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
-| 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 2 | if execute phase (E20): cast Execute | 5.8 |
+| 3 | cast Bloodthirst | 4.6 |
+| 4 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
+| 5 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 |
+| 6 | cast Goblin Sapper Charge | as ready |
+| 7 | cast Dense Dynamite | as ready |
+| 8 | if false: cast Recklessness | 0.3 |
+| 9 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 12 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 4.2 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
-| 15 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 5.4 |
-| 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 |
+| 12 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 13 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
+| 14 | cast Whirlwind | 3.3 |
+| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 3.3 |
+| 16 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 0.3 |
+| 17 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -132,18 +132,21 @@ Damage by ability:
 
 | Ability | [`fury-dw-raid`](fury-dw-raid.md) |
 |---|---|
-| Auto Attack | 43% |
+| Auto Attack | 46% |
 | Execute | 33% |
-| Heroic Strike | 12% |
-| Whirlwind | 9% |
+| Bloodthirst | 10% |
+| Whirlwind | 7% |
 | Deep Wound | 2% |
 | Dragonbreath Chili | 1% |
+| Heroic Strike | 1% |
+| Hamstring | 0% |
 
 ## Notes
 
 - Adopted from the community simulator on 2026-09-26: opt-fury-dw-raid-raid-dps beat the previous draft by +5.5% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Weaponmaster (the Sword/Axe Specialization replacement) sits at Arms tier 5 (20 points) — unreachable without dropping Bloodthirst, exactly like Classic.
 - Improved Battle Shout and Improved Demoralizing Shout are gone: raid Battle Shout is no longer a talent responsibility.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

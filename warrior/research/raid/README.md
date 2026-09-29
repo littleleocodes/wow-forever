@@ -19,10 +19,10 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-arms-2h-raid-raid-dps](builds/opt-arms-2h-raid-raid-dps.md) | 20/31/0 | raid-dps |
-| [opt-arms-2h-raid-parse](builds/opt-arms-2h-raid-parse.md) | 20/31/0 | parse |
-| [opt-fury-dw-raid-raid-dps](builds/opt-fury-dw-raid-raid-dps.md) | 14/37/0 | raid-dps |
-| [opt-fury-dw-raid-parse](builds/opt-fury-dw-raid-parse.md) | 14/37/0 | parse |
+| [opt-arms-2h-raid-raid-dps](builds/opt-arms-2h-raid-raid-dps.md) | 19/32/0 | raid-dps |
+| [opt-arms-2h-raid-parse](builds/opt-arms-2h-raid-parse.md) | 19/32/0 | parse |
+| [opt-fury-dw-raid-raid-dps](builds/opt-fury-dw-raid-raid-dps.md) | 13/38/0 | raid-dps |
+| [opt-fury-dw-raid-parse](builds/opt-fury-dw-raid-parse.md) | 13/38/0 | parse |
 | [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 14/5/32 | raid-tank |
 
 Classic Era reference builds: [fury-dw-raid](../talents/classic-baseline/fury-dw-raid.md), [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md), [prot-raid-tank](../talents/classic-baseline/prot-raid-tank.md).
@@ -35,37 +35,37 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 169 | +0.0% | 407 | -0.3% | 0 s |
-| 2 | [`arms-2h-raid`](builds/arms-2h-raid.md) | ours: hand draft | 19/32/0 | 168 | -0.9% | 408 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 162 | -4.2% | 385 | -5.7% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 158 | -6.7% | 372 | -8.9% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 153 | -9.4% | 365 | -10.6% | 0 s |
+| 1 | [`arms-2h-raid`](builds/arms-2h-raid.md) | ours: hand draft | 19/32/0 | 173 | +0.0% | 406 | -0.6% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 173 | +0.0% | 408 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 162 | -6.4% | 385 | -5.7% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 157 | -9.0% | 372 | -8.9% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 153 | -11.4% | 365 | -10.6% | 0 s |
 
 **fury-dw-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 218 | +0.0% | 375 | -6.6% | 0 s |
-| 2 | [`fury-dw-raid`](builds/fury-dw-raid.md) | ours: hand draft | 13/38/0 | 216 | -0.9% | 402 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 208 | -4.9% | 391 | -2.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 192 | -12.0% | 364 | -9.4% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 136 | -37.8% | 264 | -34.3% | 0 s |
+| 1 | [`fury-dw-raid`](builds/fury-dw-raid.md) | ours: hand draft | 13/38/0 | 221 | +0.0% | 401 | -0.1% | 0 s |
+| 2 | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 13/38/0 | 221 | +0.0% | 402 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 212 | -4.4% | 391 | -2.6% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 197 | -10.9% | 364 | -9.4% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 136 | -38.6% | 264 | -34.3% | 0 s |
 
 **prot-tank** (tank)
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-raid-tank`](builds/prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
-| 2 | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
-| 3 | *Protection* | community simulator | - | 0.952 | -4.8% | 615 | 1217 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.941 | -5.9% | 608 | 1229 |
+| 1 | [`prot-raid-tank`](builds/prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 652 | 1161 |
+| 2 | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) | ours: optimizer | 14/5/32 | 0.997 | -0.3% | 650 | 1164 |
+| 3 | *Protection* | community simulator | - | 0.949 | -5.1% | 615 | 1217 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.938 | -6.2% | 608 | 1229 |
 
 **arms-battle-raid**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](builds/arms-battle-raid.md) | ours: hand draft | 34/17/0 | 220 | +0.0% | 458 | -3.6% | 0 s |
-| 2 | *Arms 39/12/0* | community simulator | - | 215 | -2.3% | 475 | +0.0% | 0 s |
+| 1 | [`arms-battle-raid`](builds/arms-battle-raid.md) | ours: hand draft | 34/17/0 | 221 | +0.0% | 463 | -2.6% | 0 s |
+| 2 | *Arms 39/12/0* | community simulator | - | 215 | -2.8% | 475 | +0.0% | 0 s |
 
 ## New spells and builds
 
@@ -82,7 +82,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`arms-battle-raid`](builds/arms-battle-raid.md) (arms-battle-raid), 220 DPS; in a raid: *Arms 39/12/0* (arms-battle-raid), 475 DPS.
+The class's best raid DPS build on the training dummy: [`fury-dw-raid`](builds/fury-dw-raid.md) (fury-dw-raid), 221 DPS; in a raid: *Arms 39/12/0* (arms-battle-raid), 475 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -90,41 +90,42 @@ The class's best raid DPS build on the training dummy: [`arms-battle-raid`](buil
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `arms-2h-raid` | dummy | `opt-arms-2h-raid-raid-dps` | 20/31/0 | 169 | +0.0% | 0 | +62% |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r5` | 20/31/0 | 169 | +0.0% | 0 | +62% |
-| `arms-2h-raid` | dummy | `arms-2h-raid` | 19/32/0 | 168 | -0.9% | 0 | +62% |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r1` | 19/32/0 | 168 | -0.9% | 0 | +62% |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r3` | 19/32/0 | 168 | -0.9% | 0 | +62% |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r4` | 19/32/0 | 167 | -1.3% | 0 | +61% |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-hand-2026-09-26` | 34/17/0 | 164 | -3.2% | 0 | +42% |
-| `arms-2h-raid` | dummy | sim preset: DPS | - | 162 | -4.2% | 0 | - |
-| `arms-2h-raid` | dummy | sim preset: Fury 17/34/0 | - | 158 | -6.7% | 0 | - |
-| `arms-2h-raid` | dummy | sim preset: Arms 39/12/0 | - | 153 | -9.4% | 0 | - |
-| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r2` | 20/31/0 | 153 | -9.4% | 0 | +47% |
-| `arms-battle-raid` | dummy | `arms-battle-raid` | 34/17/0 | 220 | +0.0% | 0 | - |
-| `arms-battle-raid` | dummy | sim preset: Arms 39/12/0 | - | 215 | -2.3% | 0 | - |
-| `fury-dw-raid` | dummy | `opt-fury-dw-raid-raid-dps` | 14/37/0 | 218 | +0.0% | 0 | +88% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r7` | 14/37/0 | 218 | +0.0% | 0 | +88% |
-| `fury-dw-raid` | dummy | `fury-dw-raid` | 13/38/0 | 216 | -0.9% | 0 | +87% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r2` | 13/38/0 | 216 | -0.9% | 0 | +87% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r6` | 13/38/0 | 216 | -0.9% | 0 | +87% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r5` | 14/37/0 | 215 | -1.4% | 0 | +87% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r4` | 11/40/0 | 213 | -2.5% | 0 | +84% |
-| `fury-dw-raid` | dummy | sim preset: DPS | - | 208 | -4.9% | 0 | - |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r3` | 15/36/0 | 207 | -5.3% | 0 | +77% |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-hand-2026-09-26` | 17/34/0 | 207 | -5.4% | 0 | +79% |
-| `fury-dw-raid` | dummy | sim preset: Fury 17/34/0 | - | 192 | -12.0% | 0 | - |
-| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r1` | 29/22/0 | 191 | -12.5% | 0 | +61% |
-| `fury-dw-raid` | dummy | sim preset: Arms 39/12/0 | - | 136 | -37.8% | 0 | - |
-| `prot-tank` | raid | `prot-raid-tank` | 14/5/32 | 426 | +0.0% | 0 | +59% |
-| `prot-tank` | raid | `opt-prot-tank-raid-tank` | 14/5/32 | 426 | +0.0% | 0 | +59% |
-| `prot-tank` | raid | `cand-prot-tank-r3` | 14/5/32 | 426 | +0.0% | 0 | +59% |
-| `prot-tank` | raid | `cand-prot-tank-hand-2026-09-26` | 5/5/41 | 406 | -4.6% | 0 | +50% |
-| `prot-tank` | raid | sim preset: Protection | - | 404 | -5.1% | 0 | - |
-| `prot-tank` | raid | sim preset: Protection 1/0/50 | - | 400 | -6.0% | 0 | - |
-| `prot-tank` | raid | `cand-prot-tank-hand-2026-09-27` | 14/5/32 | 392 | -7.9% | 0 | +47% |
-| `prot-tank` | raid | `cand-prot-tank-r2` | 14/5/32 | 392 | -7.9% | 0 | +47% |
-| `prot-tank` | raid | `cand-prot-tank-r1` | 32/3/16 | 312 | -26.6% | 0 | +22% |
+| `arms-2h-raid` | dummy | `arms-2h-raid` | 19/32/0 | 173 | +0.0% | 0 | +74% |
+| `arms-2h-raid` | dummy | `opt-arms-2h-raid-raid-dps` | 19/32/0 | 173 | +0.0% | 0 | +75% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r1` | 19/32/0 | 173 | +0.0% | 0 | +75% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r3` | 19/32/0 | 173 | +0.0% | 0 | +75% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r6` | 19/32/0 | 173 | +0.0% | 0 | +75% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r4` | 19/32/0 | 172 | -0.4% | 0 | +74% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r5` | 20/31/0 | 172 | -0.7% | 0 | +73% |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-hand-2026-09-26` | 34/17/0 | 164 | -5.4% | 0 | +49% |
+| `arms-2h-raid` | dummy | sim preset: DPS | - | 162 | -6.4% | 0 | - |
+| `arms-2h-raid` | dummy | sim preset: Fury 17/34/0 | - | 157 | -9.0% | 0 | - |
+| `arms-2h-raid` | dummy | `cand-arms-2h-raid-r2` | 20/31/0 | 156 | -9.8% | 0 | +60% |
+| `arms-2h-raid` | dummy | sim preset: Arms 39/12/0 | - | 153 | -11.4% | 0 | - |
+| `arms-battle-raid` | dummy | `arms-battle-raid` | 34/17/0 | 221 | +0.0% | 0 | - |
+| `arms-battle-raid` | dummy | sim preset: Arms 39/12/0 | - | 215 | -2.8% | 0 | - |
+| `fury-dw-raid` | dummy | `fury-dw-raid` | 13/38/0 | 221 | +0.0% | 0 | +87% |
+| `fury-dw-raid` | dummy | `opt-fury-dw-raid-raid-dps` | 13/38/0 | 221 | +0.0% | 0 | +88% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r2` | 13/38/0 | 221 | +0.0% | 0 | +88% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r6` | 13/38/0 | 221 | +0.0% | 0 | +88% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r5` | 14/37/0 | 220 | -0.5% | 0 | +88% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r7` | 14/37/0 | 218 | -1.3% | 0 | +86% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r4` | 11/40/0 | 217 | -2.1% | 0 | +84% |
+| `fury-dw-raid` | dummy | sim preset: DPS | - | 212 | -4.4% | 0 | - |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r3` | 15/36/0 | 211 | -4.5% | 0 | +78% |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-hand-2026-09-26` | 17/34/0 | 211 | -4.8% | 0 | +79% |
+| `fury-dw-raid` | dummy | sim preset: Fury 17/34/0 | - | 197 | -10.9% | 0 | - |
+| `fury-dw-raid` | dummy | `cand-fury-dw-raid-r1` | 29/22/0 | 191 | -13.6% | 0 | +60% |
+| `fury-dw-raid` | dummy | sim preset: Arms 39/12/0 | - | 136 | -38.6% | 0 | - |
+| `prot-tank` | raid | `prot-raid-tank` | 14/5/32 | 427 | +0.0% | 0 | +58% |
+| `prot-tank` | raid | `opt-prot-tank-raid-tank` | 14/5/32 | 426 | -0.2% | 0 | +59% |
+| `prot-tank` | raid | `cand-prot-tank-r3` | 14/5/32 | 426 | -0.2% | 0 | +59% |
+| `prot-tank` | raid | `cand-prot-tank-hand-2026-09-26` | 5/5/41 | 406 | -4.7% | 0 | +50% |
+| `prot-tank` | raid | sim preset: Protection | - | 404 | -5.3% | 0 | - |
+| `prot-tank` | raid | sim preset: Protection 1/0/50 | - | 400 | -6.2% | 0 | - |
+| `prot-tank` | raid | `cand-prot-tank-hand-2026-09-27` | 14/5/32 | 392 | -8.1% | 0 | +47% |
+| `prot-tank` | raid | `cand-prot-tank-r2` | 14/5/32 | 392 | -8.1% | 0 | +47% |
+| `prot-tank` | raid | `cand-prot-tank-r1` | 32/3/16 | 312 | -26.7% | 0 | +22% |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -132,26 +133,26 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `arms-2h-raid` | 0.2-0.4% | no limit (under 1% for every build) | - | - |
-| `fury-dw-raid` | 0.0-0.2% | no limit (under 1% for every build) | - | - |
+| `arms-2h-raid` | 0.0-0.7% | no limit (under 1% for every build) | - | - |
+| `fury-dw-raid` | 0.0-0.0% | no limit (under 1% for every build) | - | - |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 20/31/0 | 169 | 193 | 407 | 407 | 482 |
-| `arms-2h-raid` | `opt-arms-2h-raid-parse` | 20/31/0 | 169 | 193 | 407 | 407 | 482 |
-| `arms-2h-raid` | `arms-2h-raid` | 19/32/0 | 168 | 192 | 408 | 408 | 480 |
+| `arms-2h-raid` | `arms-2h-raid` | 19/32/0 | 173 | 193 | 406 | 406 | 480 |
+| `arms-2h-raid` | `opt-arms-2h-raid-raid-dps` | 19/32/0 | 173 | 193 | 408 | 408 | 480 |
+| `arms-2h-raid` | `opt-arms-2h-raid-parse` | 19/32/0 | 173 | 193 | 408 | 408 | 480 |
 | `arms-2h-raid` | sim preset: DPS | - | 162 | 186 | 385 | 385 | 454 |
-| `arms-2h-raid` | sim preset: Fury 17/34/0 | - | 158 | 179 | 372 | 372 | 436 |
+| `arms-2h-raid` | sim preset: Fury 17/34/0 | - | 157 | 180 | 372 | 372 | 436 |
 | `arms-2h-raid` | sim preset: Arms 39/12/0 | - | 153 | 171 | 365 | 365 | 385 |
-| `arms-battle-raid` | `arms-battle-raid` | 34/17/0 | 220 | 238 | 458 | 458 | 464 |
+| `arms-battle-raid` | `arms-battle-raid` | 34/17/0 | 221 | 240 | 463 | 463 | 467 |
 | `arms-battle-raid` | sim preset: Arms 39/12/0 | - | 215 | 240 | 475 | 475 | 475 |
-| `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
-| `fury-dw-raid` | `opt-fury-dw-raid-parse` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
-| `fury-dw-raid` | `fury-dw-raid` | 13/38/0 | 216 | 206 | 402 | 402 | 459 |
-| `fury-dw-raid` | sim preset: DPS | - | 208 | 209 | 391 | 391 | 448 |
-| `fury-dw-raid` | sim preset: Fury 17/34/0 | - | 192 | 189 | 364 | 364 | 414 |
+| `fury-dw-raid` | `fury-dw-raid` | 13/38/0 | 221 | 219 | 401 | 401 | 459 |
+| `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 13/38/0 | 221 | 219 | 402 | 402 | 459 |
+| `fury-dw-raid` | `opt-fury-dw-raid-parse` | 13/38/0 | 221 | 219 | 402 | 402 | 459 |
+| `fury-dw-raid` | sim preset: DPS | - | 212 | 222 | 391 | 391 | 448 |
+| `fury-dw-raid` | sim preset: Fury 17/34/0 | - | 197 | 203 | 364 | 364 | 414 |
 | `fury-dw-raid` | sim preset: Arms 39/12/0 | - | 136 | 145 | 264 | 264 | 272 |
 | `prot-tank` | `prot-raid-tank` | 14/5/32 | 232 | 260 | 426 | 321 | 316 |
 | `prot-tank` | `opt-prot-tank-raid-tank` | 14/5/32 | 232 | 260 | 426 | 321 | 316 |

@@ -28,17 +28,16 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 |---|---|---|---|
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
-| **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Improved Sayaad** | 2/3 | unchanged | Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss spells by 20%, and increases the duration of your Succubus' and Incubus' Seduction and Lesser Invisibility spells by 20%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
 | **Master Summoner** | 2/2 | moved | Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%. |
 | **Decimation** | 2/2 | **NEW** | Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below 35% health, they deal 6% increased damage, and for the next 10 sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards. |
 | **Demonic Brand** | 3/3 | **NEW** | Your Searing Pain generates 50% less threat and brands the target for 10 sec. Your pet's next 6 attacks against the target generate high threat and deal 65 to 68 Fire or Shadow damage based on the pet. |
-| **Improved Felhunter** | 1/3 | **NEW** | Increases the Attack Power reduction of your Felhunter's Tainted Blood, the healing of its Devour Magic, and the detection level of its Paranoia by 10%, and reduces the cooldown of its Spell Lock by 2 sec. |
 | **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
 | **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
 | **Master Demonologist** | 5/5 | changed | Grants both the Warlock and the summoned demon an effect as long as that demon is active.  Imp - Increases Fire damage done by 10%.  Voidwalker - Reduces Physical damage taken by 10%.  Succubus/Incubus - Increases Shadow damage done by 10%.  Felhunter - Reduces Magic damage taken by 10%. |
 | **Demonic Pact** | 1/1 | **NEW** | Your Demonic Sacrifice effect is no longer cancelled by summoning a different Demon pet. Resummoning the sacrificed pet will still cancel the effect. |
+| **Demonic Embrace** | 3/5 | changed | Increases your total Stamina by 9%. |
 
 ### Destruction (18)
 
@@ -68,10 +67,10 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 | 2 | Decimation | any talent legal at that tier | Worth 0.9% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 5 | Unholy Power | any talent legal at that tier | Worth 0.7% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 2 | Improved Sayaad | any talent legal at that tier | Worth 0.2% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 2 | Demonic Energies | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 2 | Demonic Embrace | Demonic Energies, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 2 | Master Summoner | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 3 | Demonic Brand | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 1 | Improved Felhunter | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 1 | Demonic Embrace | Improved Felhunter, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
 
@@ -124,6 +123,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Demonic Pact 2/31/18`: 2 points Improved Corruption -> Agonizing Flames, 1 point Suppression -> Agonizing Flames.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Demonic Energies -> Demonic Embrace (survival); Demonic Energies -> Demonic Embrace (survival); Improved Felhunter -> Demonic Embrace (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best warrior spec here, or within 3% of it).
 
-**[Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md)** (34/17/0) — [open the talent tree](https://talentsforever.com/warrior/60/123052131325051-550500000002--4)
+**[Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md)** (34/17/0) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-550500000002--4)
 
 ## How to play
 
@@ -37,12 +37,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 220 |
-| Parse (a full raid: every raid buff and debuff) | 458 |
+| Training dummy, 3-minute fight (only your own buffs) | 221 |
+| Parse (a full raid: every raid buff and debuff) | 463 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 220 → mana -0% → armor +20% → physical +50% → spell +0% → everything else +40% → raid 458
+Dummy 221 → mana +0% → armor +21% → physical +50% → spell +0% → everything else +39% → raid 463
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -50,7 +50,7 @@ Dummy 220 → mana -0% → armor +20% → physical +50% → spell +0% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 202 | 203 | 205 | 205 | 205 |
+| 202 | 204 | 206 | 207 | 207 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

@@ -1,10 +1,10 @@
-# Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26) — 5/41/5
+# Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26) — 11/40/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 5/41/5 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 11/40/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,13 +15,15 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Point allocation
 
-### Beast Mastery (5)
+### Beast Mastery (11)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+| **Endurance Training** | 5/5 | changed | Increases the Health and Armor of your pets by 15%. |
+| **Improved Aspect of the Monkey** | 1/3 | changed | Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability. |
 
-### Marksmanship (41)
+### Marksmanship (40)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -37,13 +39,10 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Rapid Recuperation** | 2/2 | **NEW** | Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
-| **Sniper Shot** | 1/1 | **NEW** | A steady snipe that increases ranged damage by 160. |
 
-### Survival (5)
+### Survival (0)
 
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
+*No points.*
 
 ## Core talents (priority order)
 
@@ -65,7 +64,7 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 | 2 | Rapid Killing | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Trueshot Aura | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Rapid Recuperation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Improved Tracking | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 5 | Endurance Training | Improved Tracking, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -73,12 +72,12 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 420 | +0.0% | 841 | -4.1% | 107 s |
-| 2 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 419 | -0.2% | 877 | +0.0% | 93 s |
-| 3 | *Marksmanship* | community simulator | - | 342 | -18.5% | 707 | -19.3% | 107 s |
-| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.2% | 666 | -24.1% | 98 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -25.1% | 583 | -33.5% | 79 s |
-| 6 | *Survival 0/15/36* | community simulator | - | 299 | -28.8% | 585 | -33.2% | 87 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 420 | +0.0% | 841 | +0.0% | 107 s |
+| 2 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 11/40/0 | 419 | -0.2% | 824 | -2.0% | 93 s |
+| 3 | *Marksmanship* | community simulator | - | 342 | -18.5% | 707 | -15.9% | 107 s |
+| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.2% | 666 | -20.8% | 98 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -25.1% | 583 | -30.7% | 79 s |
+| 6 | *Survival 0/15/36* | community simulator | - | 299 | -28.8% | 585 | -30.4% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -122,6 +121,7 @@ Damage by ability:
 - No pet means no Focused Fire, no pet damage, but also no pet management, no Growl pulls and no dead-pet downtime.
 - 2026-09-27 scenario audit: Improved Revive Pet 2 -> Efficiency 2. Improved Revive Pet speeds up reviving a pet this build never has out (Lone Wolf). Efficiency's cheaper shots and stings are mana over a long fight (scorer +0.4 points; the simulator's 120 s fight shows no mana shortage).
 - Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Improved Tracking -> Endurance Training (survival); Sniper Shot -> Improved Aspect of the Monkey (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

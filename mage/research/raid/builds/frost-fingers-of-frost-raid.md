@@ -20,14 +20,13 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Missile Barrage** | 1/1 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Mind** | 1/5 | changed | Increases your Intellect by 2% and increases the critical strike damage bonus of your Arcane spells by 20%. |
-| **Improved Channeling** | 1/5 | **NEW** | Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast. |
+| **Improved Channeling** | 3/5 | **NEW** | Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast. |
 
 ### Fire (0)
 
@@ -66,7 +65,7 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | 1 | Presence of Mind | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Arcane Mind | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Improved Channeling | Wand Specialization, Magic Absorption | A free point (worth 0 in the simulator, which models no pushback): Improved Channeling keeps Arcane Missiles from being interrupted by damage 20% of the time, which matters when a boss or its adds hit you. |
-| 2 | Arcane Subtlety | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Improved Channeling | Arcane Subtlety, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Arcane Concentration | any utility talent legal at that tier | Measures -0.0% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Arcane Meditation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Frost Channeling | Arctic Reach (range), Improved Cone of Cold | Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice. |
@@ -78,16 +77,16 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md)** | ours: hand draft | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 3 | *Frost DPS* | community simulator | - | 553 | -5.0% | 632 | -4.5% | 0 s |
-| 4 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -6.9% | 646 | -2.3% | 0 s |
-| 5 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
-| 6 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 31/0/20 | 536 | -7.8% | 612 | -7.4% | 0 s |
-| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 17/0/34 | 475 | -18.3% | 555 | -16.1% | 0 s |
+| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 582 | -0.1% | 662 | -0.1% | 0 s |
+| 3 | *Frost DPS* | community simulator | - | 553 | -5.1% | 632 | -4.6% | 0 s |
+| 4 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 33/0/18 | 545 | -6.3% | 624 | -5.8% | 0 s |
+| 5 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -7.0% | 646 | -2.4% | 0 s |
+| 6 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
+| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 20/0/31 | 517 | -11.2% | 587 | -11.3% | 0 s |
 | 8 | *Arcane 35/0/16* | community simulator | - | 468 | -19.6% | 535 | -19.2% | 0 s |
-| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.1% | 0 s |
+| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.2% | 0 s |
 | 10 | *Fire 0/35/16* | community simulator | - | 373 | -35.8% | 428 | -35.4% | 0 s |
-| 11 | *Fire DPS* | community simulator | - | 314 | -45.9% | 353 | -46.6% | 0 s |
+| 11 | *Fire DPS* | community simulator | - | 314 | -46.0% | 353 | -46.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -98,9 +97,9 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 |---|---|---|
 | 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Fingers of Frost is up: cast Ice Lance | 4.5 |
-| 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.5 |
-| 5 | cast Frostbolt | 17.8 |
+| 3 | if Fingers of Frost is up: cast Ice Lance | 4.4 |
+| 4 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 3.6 |
+| 5 | cast Frostbolt | 17.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights).
 
@@ -109,8 +108,8 @@ Damage by ability:
 | Ability | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) |
 |---|---|
 | Frostbolt | 61% |
-| Ice Lance | 21% |
-| Arcane Missiles | 18% |
+| Ice Lance | 20% |
+| Arcane Missiles | 19% |
 
 ## Notes
 
@@ -120,6 +119,7 @@ Damage by ability:
 - Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).
 - 2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.
 - 2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers).
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -4,7 +4,7 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**[Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md)** (0/35/16) — [open the talent tree](https://talentsforever.com/mage/60/-03552020130133151-005500033-4)
+**[Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md)** (2/33/16) — [open the talent tree](https://talentsforever.com/mage/60/002-23550000130133151-005500033-4)
 
 ## How to play
 
@@ -21,7 +21,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Ignite**: part of the rotation (about 19 times a fight)
+- **Ignite**: part of the rotation (about 20 times a fight)
 - **Combustion**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
@@ -31,12 +31,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 463 |
-| Parse (a full raid: every raid buff and debuff) | 556 |
+| Training dummy, 3-minute fight (only your own buffs) | 473 |
+| Parse (a full raid: every raid buff and debuff) | 566 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 463 → mana +4% → armor +0% → physical -1% → spell +10% → everything else +8% → raid 556
+Dummy 473 → mana +1% → armor +0% → physical -1% → spell +10% → everything else +11% → raid 566
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -44,7 +44,7 @@ Dummy 463 → mana +4% → armor +0% → physical -1% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 574 | 515 | 463 | 425 | 382 |
+| 581 | 496 | 473 | 422 | 377 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

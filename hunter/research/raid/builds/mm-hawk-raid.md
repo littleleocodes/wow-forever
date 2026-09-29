@@ -37,8 +37,8 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 | **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
-| **Barrage** | 1/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 3%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
+| **Hawk Eye** | 1/3 | moved | Increases the range of your ranged weapons by 2 yards. |
 
 ### Survival (0)
 
@@ -62,7 +62,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 |---|---|---|---|
 | 1 | Bestial Discipline | any talent legal at that tier | Worth 0.7% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 3 | Endurance Training | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 1 | Barrage | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 1 | Hawk Eye | Barrage, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
 
@@ -70,9 +70,9 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 448 | +0.0% | 809 | +0.0% | 37 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.8% | 42 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.9% | 30 s |
+| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
+| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.4% | 42 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,6 +116,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `bm-mm-raid`: 1 point Improved Mend Pet -> Summon Hawk, 1 point Barrage -> Improved Stings, 1 point Improved Mend Pet -> Ferocity, 1 point Bestial Discipline -> Ferocity.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Barrage -> Hawk Eye (range). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

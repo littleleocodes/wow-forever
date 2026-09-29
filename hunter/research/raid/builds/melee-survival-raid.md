@@ -33,7 +33,6 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Survivalist** | 3/5 | changed | Increases your total Health by 6%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
@@ -46,6 +45,7 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
 | **Lightning Reflexes** | 5/5 | changed | Increases your Agility by 15%. |
 | **Lacerating Strikes** | 1/1 | **NEW** | Your Mongoose Bite also causes the target to Bleed for damage over 21 sec equal to 40% of the damage done by Mongoose Bite. |
+| **Deflection** | 5/5 | changed | Increases your Parry chance by 10%. |
 
 ## Core talents (priority order)
 
@@ -120,6 +120,7 @@ Damage by ability:
 - Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).
 - No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.
 - The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival); Improved Tracking -> Deflection (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

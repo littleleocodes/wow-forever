@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +55.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +55.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -35,8 +35,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
 ### Survival (0)
@@ -45,25 +45,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Core talents (priority order)
 
-1. **Bestial Discipline** — Removing it costs 9.6 points of score in this model.
+1. **Bestial Discipline** — Removing it costs 10.0 points of score in this model.
 2. **Efficiency** — Removing it costs 8.6 points of score in this model.
 3. **Mortal Shots** — Removing it costs 7.1 points of score in this model.
 4. **Lethal Attacks** — Removing it costs 7.1 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 6.9 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 6.8 points of score in this model.
 6. **Careful Aim** — Removing it costs 5.9 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 5.0 points of score in this model.
 8. **Trueshot Aura** — Removing it costs 3.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 415 | +0.0% | 761 | -3.4% | 78 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 413 | -0.5% | 758 | -3.8% | 76 s |
-| 3 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
-| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 20/31/0 | 386 | -7.0% | 784 | -0.5% | 93 s |
+| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 415 | +0.0% | 762 | -3.4% | 76 s |
+| 2 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 415 | -0.0% | 761 | -3.4% | 78 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 406 | -2.2% | 762 | -3.3% | 85 s |
+| 4 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
 | 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -10.7% | 691 | -12.4% | 92 s |
 | 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -14.3% | 719 | -8.8% | 94 s |
 | 7 | *Survival 0/15/36* | community simulator | - | 335 | -19.2% | 640 | -18.8% | 91 s |

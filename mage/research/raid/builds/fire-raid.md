@@ -1,10 +1,10 @@
-# Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28) — 14/32/5
+# Fire — Ignite / Hot Streak (simulator winner adopted 2026-09-28) — 12/34/5
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 14/32/5 (Arcane / Fire / Frost) |
+| **Build** | 12/34/5 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,16 +16,15 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 ## Point allocation
 
-### Arcane (14)
+### Arcane (12)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
+| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 
-### Fire (32)
+### Fire (34)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -40,6 +39,7 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 5/5 | unchanged | Increases the damage done by your Fire spells by 10%. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells. |
+| **Burning Soul** | 2/3 | changed | Gives your Fire spells a 47% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 20%. |
 
 ### Frost (5)
 
@@ -63,9 +63,9 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 2 | Wake of Fire | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
-| 5 | Arcane Focus | any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Wand Specialization | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Magic Absorption | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 5 | Burning Soul | Arcane Focus, any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Improved Channeling | Wand Specialization, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Improved Channeling | Magic Absorption, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -73,10 +73,10 @@ Allocation adopted on 2026-09-28 from `cand-fire-raid-r5`, the best build in the
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 14/32/5 | 511 | +0.0% | 636 | +0.0% | 1 s |
-| 2 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 14/32/5 | 511 | -0.0% | 636 | +0.0% | 1 s |
+| 1 | **[`fire-raid`](fire-raid.md)** | ours: hand draft | 12/34/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
+| 2 | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) | ours: optimizer | 14/32/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
 | 3 | *Fire DPS* | community simulator | - | 492 | -3.6% | 607 | -4.5% | 0 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.5% | 609 | -4.3% | 3 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.4% | 609 | -4.3% | 3 s |
 | 5 | *Arcane DPS* | community simulator | - | 378 | -26.0% | 462 | -27.3% | 0 s |
 | 6 | *Arcane 35/0/16* | community simulator | - | 273 | -46.5% | 338 | -46.8% | 1 s |
 | 7 | *Frost DPS* | community simulator | - | 258 | -49.5% | 322 | -49.3% | 0 s |
@@ -128,6 +128,7 @@ Damage by ability:
 - Rotation hypothesis: Scorch to 5 stacks -> Fireball -> Pyroblast at 3 Hot Streak stacks (if a 1.5s Pyroblast beats a Fireball) -> Fire Blast on the move.
 - Fire immunity in the new raids is unknown; in Classic this build was AQ40/Naxx only.
 - 2026-09-27 scenario audit: Magic Absorption 2, Arcane Resilience 1 -> Burning Soul 1, Wake of Fire 2. Arcane Resilience (armor) and Magic Absorption (resistances) only matter when you are hit; a raid caster is not. Wake of Fire measures +0.9% in the simulator on the optimizer build (ElliotWood/Forever 40be98e) and Burning Soul's third rank lowers Fire threat further.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Magic Absorption -> Improved Channeling (interrupt); Magic Absorption -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Arcane Focus -> Improved Channeling (interrupt); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Arcane Subtlety (threat); Arcane Focus -> Burning Soul (threat); Arcane Focus -> Burning Soul (threat). Net -0.10% on a third seed.
 
 ## Open questions (verify in the live game)
 

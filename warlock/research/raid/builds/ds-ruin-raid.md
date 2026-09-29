@@ -33,9 +33,9 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
-| **Improved Health Funnel** | 2/2 | changed | Increases the amount of health transferred by your Health Funnel spell by 40%, reduces its health cost by 30%, and reduces all threat your Health Funnel generates by 100%. Allows Health Funnel to be used regardless of your demon's health. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
+| **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 
 ### Destruction (18)
 
@@ -63,7 +63,7 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 |---|---|---|---|
 | 1 | Amplify Curse | any utility talent legal at that tier | Measures +0.7% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Demonic Embrace | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Improved Health Funnel | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Demonic Aegis | Improved Health Funnel, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
@@ -126,6 +126,7 @@ Damage by ability:
 - Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.
 - Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.
 - 2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points).
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Aegis (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

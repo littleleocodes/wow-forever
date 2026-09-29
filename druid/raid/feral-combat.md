@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [Raid (training dummy and parse)](README.md) > Feral Combat
 
-**[Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md)** (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4)
+**[Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md)** (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/050022-2500032123032213051-052-4)
 
 ## How to play
 
@@ -47,11 +47,11 @@ Dummy 350 → mana +0% → armor +28% → physical +24% → spell +0% → everyt
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-parse.md) (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/050022-5510002023032213051-052-4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-parse.md) (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/050022-2500032123032213051-052-4).
 
 ## Other builds of this spec
 
-- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 349 DPS on the dummy) — [open the talent tree](https://talentsforever.com/druid/60/050022-5510002023032213021-055-4)
+- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 349 DPS on the dummy) — [open the talent tree](https://talentsforever.com/druid/60/050022-2500032123032213021-055-4)
 - [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-502003212303220055-054-4)
 - [Feral Combat (optimized)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-502003212303220055-504-4)
 

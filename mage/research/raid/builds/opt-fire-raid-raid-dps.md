@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -19,11 +19,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 4/5 | changed | Improves your chance to hit with Arcane spells by 4%. |
-| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
+| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
-| **Arcane Geometry** | 1/2 | **NEW** | Increases the range of your Arcane spells by 3 yards. |
+| **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 
 ### Fire (32)
 
@@ -64,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/32/5 | 511 | +0.0% | 636 | +0.0% | 1 s |
-| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 511 | -0.0% | 636 | +0.0% | 1 s |
+| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
+| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
 | 3 | *Fire DPS* | community simulator | - | 492 | -3.6% | 607 | -4.5% | 0 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.5% | 609 | -4.3% | 3 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.4% | 609 | -4.3% | 3 s |
 | 5 | *Arcane DPS* | community simulator | - | 378 | -26.0% | 462 | -27.3% | 0 s |
 | 6 | *Arcane 35/0/16* | community simulator | - | 273 | -46.5% | 338 | -46.8% | 1 s |
 | 7 | *Frost DPS* | community simulator | - | 258 | -49.5% | 322 | -49.3% | 0 s |

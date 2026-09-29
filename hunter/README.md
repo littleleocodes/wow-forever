@@ -40,7 +40,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Beast-Marks](raid/beast-marks.md) — Marksmanship — Summon Hawk | 448 | 809 | 423 | best |
+| 1 | [Beast-Marks](raid/beast-marks.md) — Marksmanship — Summon Hawk | 448 | 806 | 423 | best |
 | 2 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Raid ⚗ | 438 | 802 | 409 | -2% |
 | 3 | [Survival](raid/survival.md) — Melee hunter | 424 | 951 | 406 | -5% |
 | 4 | [Marksmanship](raid/marksmanship.md) — Marksmanship without a pet | 420 | 841 | 373 | -6% |

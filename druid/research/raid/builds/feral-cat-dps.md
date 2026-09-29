@@ -29,8 +29,7 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Heart of the Wild** | 5/5 | changed | Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%. |
-| **Ferocity** | 5/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 5 Rage or Energy. |
-| **Feral Swiftness** | 1/2 | **NEW** | Increases your movement speed while in Cat Form by 15%, and increases your chance to Dodge by 2%. |
+| **Ferocity** | 2/5 | changed | Reduces the cost of your Maul, Primal Bite, Swipe, Claw, and Rake abilities by 2 Rage or Energy. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
@@ -41,6 +40,8 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 | **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
 | **Rend and Tear** | 2/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 4%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
+| **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. |
+| **Thick Hide** | 3/3 | changed | While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 3 additional base Armor per level and another 2.00 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms. |
 
 ### Restoration (10)
 
@@ -66,7 +67,7 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 |---|---|---|---|
 | 5 | Furor | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Ferocity | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Feral Swiftness | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Feral Charge | Feral Swiftness, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Leader of the Pack | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
@@ -128,6 +129,7 @@ Damage by ability:
 - Adopted from the community simulator on 2026-09-26: opt-feral-cat-dps-raid-dps beat the previous draft by +7.9% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Powershifting: with Furor retaining energy on shift and Omen of Clarity baseline, the Wolfshead Helm loop may not exist — the rotation must be re-learned.
 - Mangle in the demo requires Bear Form; cats keep Shred/Claw.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Feral Swiftness -> Feral Charge (interrupt); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival); Ferocity -> Thick Hide (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

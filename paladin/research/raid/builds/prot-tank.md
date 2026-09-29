@@ -39,7 +39,6 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
-| **Benediction** | 3/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 6%. |
 | **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
@@ -47,6 +46,8 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
+| **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
+| **Eye for an Eye** | 1/2 | changed | All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 
 ## Core talents (priority order)
 
@@ -67,7 +68,7 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 | 1 | Sacred Arbiter | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Shield Specialization | any utility talent legal at that tier | Measures +0.3% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Redoubt | any utility talent legal at that tier | Measures +0.2% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Benediction | any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Eye for an Eye | Benediction, any utility talent legal at that tier | Measures +0.1% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Improved Seal of Fury | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
@@ -76,11 +77,11 @@ Allocation adopted on 2026-09-28 from `opt-prot-tank-raid-tank`, the best build 
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
-| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.910 | -9.0% | 459 | 1027 |
-| 4 | *P4 Prot* | community simulator | - | 0.890 | -11.0% | 472 | 1100 |
-| 5 | *P5 Prot* | community simulator | - | 0.883 | -11.7% | 465 | 1103 |
+| 1 | **[`prot-tank`](prot-tank.md)** | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 564 | 995 |
+| 2 | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) | ours: optimizer | 0/23/28 | 0.984 | -1.6% | 544 | 990 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.891 | -10.9% | 459 | 1027 |
+| 4 | *P4 Prot* | community simulator | - | 0.871 | -12.9% | 472 | 1100 |
+| 5 | *P5 Prot* | community simulator | - | 0.864 | -13.6% | 465 | 1103 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -101,7 +102,7 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 4 | cast Consecration | 6.6 |
 | 5 | cast Holy Strike | 5.7 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.3 |
-| 7 | cast Retribution Aura | 25.4 |
+| 7 | cast Retribution Aura | 25.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -109,15 +110,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](prot-tank.md) |
 |---|---|
-| Auto Attack | 27% |
+| Auto Attack | 26% |
 | Seal of Righteousness | 16% |
-| Consecration | 15% |
-| Judgement of Righteousness | 12% |
-| Holy Strike | 11% |
+| Judgement of Righteousness | 15% |
+| Consecration | 14% |
+| Holy Strike | 10% |
 | Lay on Hands | 9% |
 | Retribution Aura | 5% |
 | OtherActionManaGain | 4% |
 | Thorns | 1% |
+| Eye for an Eye | 1% |
 
 ## Notes
 
@@ -126,6 +128,7 @@ Damage by ability (threat for tanks):
 - Seal of Fury (a new baseline tank seal with an absorb shield) replaces Blessing of Sanctuary's role.
 - Consecration is baseline; AoE threat no longer needs Holy points.
 - Build 1.60.1.70009 removed Improved Holy Strike (Holy Strike's cooldown is 10 sec baseline now): the 2 points go to Divine Strength.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Benediction -> Improved Judgement (+1.2% DPS); Benediction -> Improved Judgement (+1.0% DPS); Benediction -> Eye for an Eye (+0.3% DPS). Net +2.42% on a third seed.
 
 ## Open questions (verify in the live game)
 

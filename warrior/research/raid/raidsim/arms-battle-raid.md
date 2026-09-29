@@ -4,18 +4,18 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `arms-battle-raid` | 34/17/0 | 220 | 17 | +0.0% | 198 | 0 | - |
-| sim preset: Arms 39/12/0 | - | 215 | 17 | -2.3% | 189 | 0 | - |
+| `arms-battle-raid` | 34/17/0 | 221 | 17 | +0.0% | 199 | 0 | - |
+| sim preset: Arms 39/12/0 | - | 215 | 17 | -2.8% | 189 | 0 | - |
 
 ## Damage shares (`arms-battle-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Attack | 38.2% |
-| Overpower | 24.5% |
-| Execute | 14.5% |
-| Slam | 8.9% |
-| Deep Wound | 7.0% |
+| Auto Attack | 38.0% |
+| Overpower | 24.4% |
+| Execute | 14.4% |
+| Slam | 9.4% |
+| Deep Wound | 6.9% |
 | Rend | 4.3% |
 | Spearing Strike | 1.8% |
 | Dragonbreath Chili | 0.7% |
@@ -25,6 +25,6 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- arms-battle-raid: `123052131325051-550500000002`
+- arms-battle-raid: `023052131325052-550500000002`
 - sim preset: Arms 39/12/0: `32305213132515201-5502`
 

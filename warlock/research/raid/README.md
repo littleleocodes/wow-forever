@@ -142,6 +142,7 @@ The class's best raid DPS build on the training dummy: [`demonology-pact-raid`](
 | `demonology-raid` | dummy | sim preset: Demonic Pact | - | 589 | -4.5% | 1 | - |
 | `fire-destro-raid` | dummy | `destruction-fire-raid` | 22/11/18 | 546 | +0.0% | 3 | +82% |
 | `fire-destro-raid` | dummy | `opt-fire-destro-raid-raid-dps` | 22/11/18 | 546 | +0.0% | 3 | +82% |
+| `fire-destro-raid` | dummy | `cand-fire-destro-raid-r10` | 22/11/18 | 546 | +0.0% | 3 | +82% |
 | `fire-destro-raid` | dummy | `cand-fire-destro-raid-r9` | 22/11/18 | 546 | +0.0% | 3 | +82% |
 | `fire-destro-raid` | dummy | `cand-fire-destro-raid-r8` | 20/11/20 | 543 | -0.4% | 2 | +82% |
 | `fire-destro-raid` | dummy | `cand-fire-destro-raid-r7` | 19/11/21 | 533 | -2.3% | 2 | +78% |
@@ -165,9 +166,10 @@ The class's best raid DPS build on the training dummy: [`demonology-pact-raid`](
 | `sb-raid` | dummy | `opt-sb-raid-raid-dps` | 22/11/18 | 566 | +0.0% | 1 | +92% |
 | `sb-raid` | dummy | `cand-sb-raid-r6` | 22/11/18 | 566 | +0.0% | 1 | +92% |
 | `sb-raid` | dummy | `cand-sb-raid-r7` | 22/11/18 | 566 | +0.0% | 1 | +92% |
+| `sb-raid` | dummy | `cand-sb-raid-r8` | 22/11/18 | 566 | +0.0% | 1 | +92% |
 | `sb-raid` | dummy | `ds-ruin-raid` | 22/11/18 | 566 | -0.1% | 1 | +90% |
 | `sb-raid` | dummy | `cand-sb-raid-r4` | 22/11/18 | 566 | -0.1% | 1 | +90% |
-| `sb-raid` | dummy | `cand-sb-raid-r5` | 22/11/18 | 563 | -0.5% | 1 | +89% |
+| `sb-raid` | dummy | `cand-sb-raid-r5` | 22/11/18 | 563 | -0.5% | 1 | +90% |
 | `sb-raid` | dummy | `cand-sb-raid-r2` | 22/11/18 | 562 | -0.8% | 1 | +89% |
 | `sb-raid` | dummy | `cand-sb-raid-r3` | 22/11/18 | 560 | -1.0% | 2 | +88% |
 | `sb-raid` | dummy | sim preset: DS/Ruin Pandemic 24/11/16 | - | 540 | -4.6% | 1 | - |
@@ -186,9 +188,9 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `affliction-raid` | 11.1-14.3% | 0.20 / 0.14 | 0.8 | Improved Life Tap 1.7%, Cataclysm 1.5% |
+| `affliction-raid` | 11.1-14.3% | 0.20 / 0.14 | 0.9 | Improved Life Tap 1.7%, Cataclysm 1.5% |
 | `fire-destro-raid` | 10.4-12.3% | 0.17 / 0.90 | 0.5 | Improved Life Tap 2.0%, Cataclysm 1.3% |
-| `sb-raid` | 11.2-14.2% | 0.18 / 0.90 | 0.4 | Improved Life Tap 1.9%, Cataclysm 1.8% |
+| `sb-raid` | 11.2-14.2% | 0.18 / 0.90 | 0.4 | Improved Life Tap 1.9%, Cataclysm 1.3% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 

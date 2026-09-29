@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +46.9% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -38,25 +38,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
-| **Benediction** | 3/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 6%. |
+| **Benediction** | 1/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 2%. |
 | **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
+| **Eye for an Eye** | 2/2 | changed | All critical strikes against you cause 10% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
 
 ## Core talents (priority order)
 
-1. **Champion of the Light** — Removing it costs 8.4 points of score in this model.
+1. **Champion of the Light** — Removing it costs 8.6 points of score in this model.
 2. **Deflection** — Removing it costs 5.5 points of score in this model.
 3. **Improved Righteous Fury** — Removing it costs 5.0 points of score in this model.
 4. **Vengeance** — Removing it costs 4.7 points of score in this model.
-5. **Vindication** — Removing it costs 3.6 points of score in this model.
-6. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
-7. **Anticipation** — Removing it costs 3.0 points of score in this model.
-8. **Conviction** — Removing it costs 3.0 points of score in this model.
+5. **Vindication** — Removing it costs 3.7 points of score in this model.
+6. **Conviction** — Removing it costs 3.0 points of score in this model.
+7. **Templar's Bulwark** — Removing it costs 3.0 points of score in this model.
+8. **Anticipation** — Removing it costs 3.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,11 +65,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.910 | -9.0% | 459 | 1027 |
-| 4 | *P4 Prot* | community simulator | - | 0.890 | -11.0% | 472 | 1100 |
-| 5 | *P5 Prot* | community simulator | - | 0.883 | -11.7% | 465 | 1103 |
+| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 564 | 995 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 0.984 | -1.6% | 544 | 990 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.891 | -10.9% | 459 | 1027 |
+| 4 | *P4 Prot* | community simulator | - | 0.871 | -12.9% | 472 | 1100 |
+| 5 | *P5 Prot* | community simulator | - | 0.864 | -13.6% | 465 | 1103 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -89,7 +90,7 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 4 | cast Consecration | 6.6 |
 | 5 | cast Holy Strike | 5.7 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.3 |
-| 7 | cast Retribution Aura | 25.4 |
+| 7 | cast Retribution Aura | 25.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -97,7 +98,7 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Auto Attack | 27% |
+| Auto Attack | 26% |
 | Seal of Righteousness | 16% |
 | Consecration | 15% |
 | Judgement of Righteousness | 12% |
@@ -105,6 +106,7 @@ Damage by ability (threat for tanks):
 | Lay on Hands | 9% |
 | Retribution Aura | 5% |
 | OtherActionManaGain | 4% |
+| Eye for an Eye | 1% |
 | Thorns | 1% |
 
 ## Notes

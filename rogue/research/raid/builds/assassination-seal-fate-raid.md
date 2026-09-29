@@ -35,13 +35,12 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
-| **Lightning Reflexes** | 2/5 | unchanged | Increases your Dodge chance by 2%. |
+| **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Endurance** | 2/2 | changed | Reduces the cooldown of your Sprint and Evasion abilities by 60%. |
-| **Improved Sprint** | 2/2 | unchanged | Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability. |
 | **Dual Wield Specialization** | 3/5 | changed | Increases the damage done by your off-hand weapon by 15%. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
+| **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
 
 ### Subtlety (2)
 
@@ -66,8 +65,8 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 2 | Lightning Reflexes | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 2 | Endurance | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 2 | Improved Sprint | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 2 | Lightning Reflexes | Endurance, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 2 | Deflection | Improved Sprint, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
 
@@ -76,8 +75,8 @@ Seal Fate daggers: Malice, Cold Blood, Seal Fate and Improved Poisons from Assas
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`assassination-seal-fate-raid`](assassination-seal-fate-raid.md)** | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | +0.0% | 0 s |
-| 2 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
-| 3 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 31/20/0 | 369 | -9.2% | 647 | -5.1% | 0 s |
+| 2 | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) | ours: hand draft | 30/21/0 | 392 | -3.7% | 665 | -2.6% | 0 s |
+| 3 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
 | 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -7.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
@@ -121,6 +120,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `assassination-mutilate-raid`: 2 points Murder -> Improved Expose Armor, 1 point Venom -> Flawless Execution, 2 points Dual Wield Specialization -> Opportunity, 2 points Vigor -> Improved Poisons, 1 point Mutilate -> Improved Poisons, 2 points Lethality -> Improved Poisons.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

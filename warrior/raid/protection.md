@@ -2,7 +2,7 @@
 
 [Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Protection
 
-**[Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-550030233001010531-4)
+**[Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-551030233000010531-4)
 
 ## How to play
 

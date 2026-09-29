@@ -1,10 +1,10 @@
-# Arcane — Arcane Blast (raid) — 31/15/5
+# Arcane — Arcane Blast (raid) — 35/11/5
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/15/5 (Arcane / Fire / Frost) |
+| **Build** | 35/11/5 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,13 +15,11 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 ## Point allocation
 
-### Arcane (31)
+### Arcane (35)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
-| **Magic Absorption** | 1/2 | changed | Increases all your resistances by 5 and causes all spells you fully resist to restore 1% of your total mana. Cannot trigger more often than 1 time per sec. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast. |
@@ -31,16 +29,17 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 | **Arcane Power** | 1/1 | changed | For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
+| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 
-### Fire (15)
+### Fire (11)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Wake of Fire** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%. |
 | **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
-| **Improved Flamestrike** | 2/3 | unchanged | Increases the critical strike chance of your Flamestrike spell by 10%. |
+| **Burning Soul** | 1/3 | changed | Gives your Fire spells a 23% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 10%. |
 
 ### Frost (5)
 
@@ -66,9 +65,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 |---|---|---|---|
 | 3 | Arcane Meditation | any talent legal at that tier | Worth 0.5% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 2 | Arcane Subtlety | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 1 | Magic Absorption | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 1 | Burning Soul | Magic Absorption, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 3 | Burning Soul | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 2 | Improved Flamestrike | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 2 | Arcane Subtlety | Improved Flamestrike, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
 
@@ -76,7 +75,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 31/15/5 | 516 | +0.0% | 600 | +0.0% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 516 | +0.0% | 600 | +0.0% | 0 s |
 | 2 | *Arcane DPS* | community simulator | - | 511 | -1.1% | 591 | -1.4% | 0 s |
 | 3 | *Arcane 35/0/16* | community simulator | - | 494 | -4.4% | 565 | -5.8% | 0 s |
 
@@ -116,6 +115,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Arcane DPS`: 3 points Master of Elements -> Elemental Precision, 2 points Improved Scorch -> Elemental Precision.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Subtlety -> Improved Channeling (interrupt); Arcane Subtlety -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Burning Soul -> Improved Channeling (interrupt); Improved Flamestrike -> Arcane Subtlety (threat); Improved Flamestrike -> Arcane Subtlety (threat); Magic Absorption -> Burning Soul (threat). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

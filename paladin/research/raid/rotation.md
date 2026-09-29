@@ -86,7 +86,7 @@ Our tuned rotation `prot-tank-raid.apl.json` (the simulator's `default.apl.json`
   4. insert at the top: cast Templar's Bulwark (+1.4%, pass 2)
   5. insert before the filler: cast Retribution Aura (+0.2%, pass 3)
 
-### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 496 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 496 DPS)
+### [`prot-tank`](builds/prot-tank.md) (ours: hand draft, 518 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 502 DPS)
 
 Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousness; at -2s: cast Holy Shield.
 
@@ -98,7 +98,7 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 | 4 | cast Consecration | 6.6 | 6.6 |
 | 5 | cast Holy Strike | 5.7 | 5.7 |
 | 6 | if health % < 10%: cast Lay on Hands | 0.3 | 0.3 |
-| 7 | cast Retribution Aura | 25.4 | 25.4 |
+| 7 | cast Retribution Aura | 25.5 | 25.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -106,14 +106,15 @@ Damage by ability (threat for tanks):
 
 | Ability | [`prot-tank`](builds/prot-tank.md) | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) |
 |---|---|---|
-| Auto Attack | 27% | 27% |
+| Auto Attack | 26% | 26% |
 | Seal of Righteousness | 16% | 16% |
-| Consecration | 15% | 15% |
-| Judgement of Righteousness | 12% | 12% |
-| Holy Strike | 11% | 11% |
+| Consecration | 14% | 15% |
+| Judgement of Righteousness | 15% | 12% |
+| Holy Strike | 10% | 11% |
 | Lay on Hands | 9% | 9% |
 | Retribution Aura | 5% | 5% |
 | OtherActionManaGain | 4% | 4% |
+| Eye for an Eye | 1% | 1% |
 | Thorns | 1% | 1% |
 
 ### *Protection 0/45/6* (community simulator, 400 DPS), *P4 Prot* (community simulator, 422 DPS), *P5 Prot* (community simulator, 416 DPS)

@@ -11,10 +11,10 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
 | **Arcane** | [Arcane — Leveling](leveling/arcane.md) ⚗<br>28 s/kill | [Arcane — Arcane Blast](raid/arcane.md)<br>516 DPS | [Arcane — PvP](pvp/arcane.md) ⚗ |
-| **Fire** | [Single-target Fireball leveling](leveling/fire.md)<br>37 s/kill | [Fire — Ignite / Hot Streak](raid/fire.md)<br>511 DPS | [Fire — PvP](pvp/fire.md) ⚗ |
+| **Fire** | [Single-target Fireball leveling](leveling/fire.md)<br>37 s/kill | [Fire — Ignite / Hot Streak](raid/fire.md)<br>510 DPS | [Fire — PvP](pvp/fire.md) ⚗ |
 | **Frost** | **✅ Recommended**<br>[Leveling — Frost](leveling/frost.md)<br>26 s/kill | [Raid Frostbolt with Ice Lance on Fingers of Frost charges](raid/frost.md)<br>541 DPS | [Frost](pvp/frost.md) |
 | **Arcane-Frost** | - | **✅ Recommended**<br>[Frost — Fingers of Frost / Ice Lance / Shatter](raid/arcane-frost.md)<br>582 DPS | - |
-| **Frostfire** | - | [Frostfire — Frostfire Bolt / Hot Streak](raid/frostfire.md)<br>463 DPS | - |
+| **Frostfire** | - | [Frostfire — Frostfire Bolt / Hot Streak](raid/frostfire.md)<br>473 DPS | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -40,11 +40,11 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Arcane-Frost](raid/arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 582 | 662 | 573 | best |
+| 1 | [Arcane-Frost](raid/arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 582 | 662 | 575 | best |
 | 2 | [Frost](raid/frost.md) — Raid Frostbolt with Ice Lance on Fingers of Frost charges | 541 | 646 | 460 | -7% |
 | 3 | [Arcane](raid/arcane.md) — Arcane — Arcane Blast | 516 | 600 | 488 | -11% |
-| 4 | [Fire](raid/fire.md) — Fire — Ignite / Hot Streak | 511 | 636 | 423 | -12% |
-| 5 | [Frostfire](raid/frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 463 | 556 | 382 | -20% |
+| 4 | [Fire](raid/fire.md) — Fire — Ignite / Hot Streak | 510 | 636 | 422 | -12% |
+| 5 | [Frostfire](raid/frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 473 | 566 | 377 | -19% |
 
 ### PvP
 

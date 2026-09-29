@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +70.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +71.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,12 +49,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 ## Core talents (priority order)
 
-1. **Elemental Alacrity** — Removing it costs 29.6 points of score in this model.
-2. **Elemental Fury** — Removing it costs 15.4 points of score in this model.
+1. **Elemental Alacrity** — Removing it costs 29.7 points of score in this model.
+2. **Elemental Fury** — Removing it costs 15.5 points of score in this model.
 3. **Tidal Focus** — Removing it costs 10.8 points of score in this model.
 4. **Thundering Strikes** — Removing it costs 6.9 points of score in this model.
 5. **Concussion** — Removing it costs 6.8 points of score in this model.
-6. **Mindfulness** — Removing it costs 6.2 points of score in this model.
+6. **Mindfulness** — Removing it costs 6.7 points of score in this model.
 7. **Call of Flame** — Removing it costs 5.9 points of score in this model.
 8. **Lightning Overload** — Removing it costs 4.9 points of score in this model.
 

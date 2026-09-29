@@ -26,22 +26,22 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 438 DPS), [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 435 DPS), *Balance* (community simulator, 400 DPS), *Moonkin 38/0/13* (community simulator, 353 DPS)
+### [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 438 DPS), [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 438 DPS), *Balance* (community simulator, 400 DPS), *Moonkin 38/0/13* (community simulator, 353 DPS)
 
 Before the pull: at -10s: activate Moonkin Form.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) casts/min | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) casts/min | *Balance* casts/min | *Moonkin 38/0/13* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) casts/min | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) casts/min | *Balance* casts/min | *Moonkin 38/0/13* casts/min |
 |---|---|---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 | 0.3 | 0.3 | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 | 4.3 | 4.1 | 3.5 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 | 3.9 | 4.0 | 2.9 |
-| 5 | cast Starfire | 14.0 | 13.7 | 12.9 | 9.5 |
-| 6 | if mana % < 15%: cast Starfire | 1.8 | 2.0 | 0.7 | 4.4 |
+| 5 | cast Starfire | 14.0 | 14.0 | 12.9 | 9.5 |
+| 6 | if mana % < 15%: cast Starfire | 1.8 | 1.8 | 0.7 | 4.4 |
 
 Damage by ability:
 
-| Ability | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | *Balance* | *Moonkin 38/0/13* |
+| Ability | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | *Balance* | *Moonkin 38/0/13* |
 |---|---|---|---|---|
 | Starfire | 63% | 63% | 61% | 65% |
 | Moonfire | 19% | 19% | 21% | 17% |

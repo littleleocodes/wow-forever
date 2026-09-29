@@ -59,12 +59,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `balance-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
-| 2 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/3/15 | 435 | -0.8% | 510 | -0.2% | 5 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
 | 3 | *Balance* | community simulator | - | 400 | -8.7% | 457 | -10.6% | 2 s |
 | 4 | *Moonkin 38/0/13* | community simulator | - | 353 | -19.4% | 506 | -1.0% | 31 s |
 

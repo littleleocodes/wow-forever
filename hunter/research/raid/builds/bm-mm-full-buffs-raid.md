@@ -1,10 +1,10 @@
-# Beast Mastery / Marksmanship (full raid buffs, 20/31/0) — 20/31/0
+# Beast Mastery / Marksmanship (full raid buffs, 20/31/0) — 21/30/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 20/31/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 21/30/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,30 +16,29 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 ## Point allocation
 
-### Beast Mastery (20)
+### Beast Mastery (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
+| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
+| **Bestial Discipline** | 1/2 | changed | Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting. |
 
-### Marksmanship (31)
+### Marksmanship (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
+| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Rapid Killing** | 2/2 | **NEW** | Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
 | **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
-| **Sniper Shot** | 1/1 | **NEW** | A steady snipe that increases ranged damage by 160. |
+| **Improved Stings** | 1/3 | **NEW** | Increased the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec. |
 
 ### Survival (0)
 
@@ -64,20 +63,20 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 2 | Rapid Killing | Improved Arcane Shot, Improved Stings | Tier-3 Marksmanship filler; Rapid Killing (-1 min Rapid Fire) also unlocks Rapid Recuperation if you find 2 more points. |
+| 2 | Improved Stings | Improved Arcane Shot, Improved Stings, Rapid Killing | Tier-3 Marksmanship filler; Rapid Killing (-1 min Rapid Fire) also unlocks Rapid Recuperation if you find 2 more points. |
 | 3 | Endurance Training 1 + Improved Revive Pet 2 | Improved Aspect of the Monkey, Pathfinding | Beast Mastery gating fillers. |
 | 4 | Efficiency 4 | Efficiency 5 with Rapid Killing 1 | Mana vs. Rapid Fire uptime. |
 
 ## Rank among our builds and the community simulator's
 
-**4 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | +0.0% | 761 | -3.4% | 78 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 413 | -0.5% | 758 | -3.8% | 76 s |
-| 3 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
-| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 20/31/0 | 386 | -7.0% | 784 | -0.5% | 93 s |
+| 1 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 415 | +0.0% | 762 | -3.4% | 76 s |
+| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | -0.0% | 761 | -3.4% | 78 s |
+| 3 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 21/30/0 | 406 | -2.2% | 762 | -3.3% | 85 s |
+| 4 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
 | 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -10.7% | 691 | -12.4% | 92 s |
 | 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -14.3% | 719 | -8.8% | 94 s |
 | 7 | *Survival 0/15/36* | community simulator | - | 335 | -19.2% | 640 | -18.8% | 91 s |
@@ -99,25 +98,25 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 7.4 |
+| 1 | cast Arcane Shot | 8.0 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 3.9 |
-| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.1 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 3.8 |
+| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.6 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
 
 Damage by ability:
 
 | Ability | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) |
 |---|---|
-| Auto Shot | 50% |
-| Arcane Shot | 19% |
-| Serpent Sting | 10% |
-| Aimed Shot | 9% |
+| Auto Shot | 48% |
+| Arcane Shot | 20% |
+| Serpent Sting | 12% |
+| Aimed Shot | 8% |
 | Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
-| Pet: Bite | 0% |
-| Multi-Shot | 0% |
+| Pet: Bite | 1% |
+| Multi-Shot | 1% |
 
 ## Notes
 
@@ -125,6 +124,7 @@ Damage by ability:
 - Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.
 - Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.
 - Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Sniper Shot -> Bestial Discipline (+3.6% DPS); Rapid Killing -> Efficiency (+0.8% DPS); Rapid Killing -> Improved Stings (+0.7% DPS); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +5.25% on a third seed.
 
 ## Open questions (verify in the live game)
 

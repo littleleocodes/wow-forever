@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best paladin spec here, or within 3% of it).
 
-**[Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md)** (9/8/34) — [open the talent tree](https://talentsforever.com/paladin/60/51003-053-05225331001330321-4)
+**[Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md)** (9/8/34) — [open the talent tree](https://talentsforever.com/paladin/60/51003-503-05225331001330321-4)
 
 ## How to play
 

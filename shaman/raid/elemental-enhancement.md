@@ -6,7 +6,7 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550430130010304-255200311000102--4)
+**[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550430130010304-255000001330102--4)
 
 ## How to play
 
@@ -45,7 +45,7 @@ Dummy 387 → mana +1% → armor +0% → physical +2% → spell +12% → everyth
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Elemental-Enhancement (optimized)](../research/raid/builds/opt-elemental-dps-parse.md) (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/553130130010304-055001301050002--4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Elemental-Enhancement (optimized)](../research/raid/builds/opt-elemental-dps-parse.md) (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550030130311304-255000001250002--4).
 
 ## Other builds of this spec
 

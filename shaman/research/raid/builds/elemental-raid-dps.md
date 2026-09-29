@@ -37,12 +37,11 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
-| **Improved Lightning Shield** | 3/3 | unchanged | Increases the damage done by your Lightning Shield orbs by 15%. |
-| **Guardian Totems** | 2/2 | unchanged | Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec. |
-| **Elemental Weapons** | 1/3 | moved | Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
 | **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
+| **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
+| **Toughness** | 3/5 | changed | Increases your Stamina by 6%. |
 
 ### Restoration (0)
 
@@ -64,9 +63,9 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 2 | Earth's Grasp | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Improved Lightning Shield | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Guardian Totems | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Elemental Weapons | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Toughness | Improved Lightning Shield, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Anticipation | Guardian Totems, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Anticipation | Elemental Weapons, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Stormstrike | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 4 | Reverberation | any utility talent legal at that tier | Measures -0.7% DPS in the community simulator (noise): these points are free to move. |
 
@@ -123,6 +122,7 @@ Damage by ability:
 - Rotation hypothesis: Flame Shock -> Lava Burst on cooldown -> Lightning Bolt filler; Chain Lightning on 2+ targets.
 - Thundering Strikes (Enhancement tier 1) is now +5% crit with all spells — a 5/31/15 variant that drops Mana Tide for it is plausible.
 - Beta client: Tidal Mastery moved to Restoration tier 4 and Totemic Focus to tier 1, so the 20 Restoration points are now Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Natural Grace 1, Water Shield 1, Restorative Totems 4, Mana Tide Totem 1 (Restorative Totems replaces Tidal Mastery as the filler).
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Weapons -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

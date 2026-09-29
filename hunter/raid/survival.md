@@ -50,7 +50,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 ## Other builds of this spec
 
-- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4)
+- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---

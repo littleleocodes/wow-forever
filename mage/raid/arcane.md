@@ -2,7 +2,7 @@
 
 [Mage](../README.md) > [Raid (training dummy and parse)](README.md) > Arcane
 
-**[Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md)** (31/15/5) — [open the talent tree](https://talentsforever.com/mage/60/050215003100311531-23050032-005-4)
+**[Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md)** (35/11/5) — [open the talent tree](https://talentsforever.com/mage/60/055205003100311531-2305001-005-4)
 
 ## How to play
 

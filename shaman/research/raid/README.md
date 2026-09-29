@@ -98,12 +98,13 @@ The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-rai
 | `elemental-dps` | dummy | `cand-elemental-dps-r4` | 29/22/0 | 386 | -0.4% | 0 | +69% |
 | `elemental-dps` | dummy | `cand-elemental-dps-r6` | 30/11/10 | 382 | -1.5% | 0 | +69% |
 | `elemental-dps` | dummy | `elemental-raid` | 31/7/13 | 381 | -1.6% | 0 | +71% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r8` | 31/7/13 | 381 | -1.6% | 0 | +71% |
 | `elemental-dps` | dummy | `cand-elemental-dps-spec-elemental` | 31/7/13 | 381 | -1.6% | 0 | +71% |
 | `elemental-dps` | dummy | `cand-elemental-dps-r7` | 31/7/13 | 381 | -1.8% | 0 | +71% |
 | `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 376 | -2.9% | 0 | - |
 | `elemental-dps` | dummy | `cand-elemental-dps-r5` | 16/22/13 | 374 | -3.5% | 0 | +65% |
 | `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 369 | -4.7% | 1 | - |
-| `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 367 | -5.3% | 0 | +64% |
+| `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 367 | -5.3% | 0 | +65% |
 | `elemental-dps` | dummy | sim preset: Level 60 | - | 362 | -6.5% | 0 | - |
 | `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | +0.0% | 42 | +100% |
 | `enhancement-dps` | dummy | `cand-enhancement-dps-r7` | 11/31/9 | 394 | +0.0% | 42 | +100% |
@@ -125,7 +126,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `elemental-dps` | 0.1-3.6% | 0.14 / 0.05 | 1.6 | Mindfulness 3.1%, Shamanistic Focus 2.3%, Elemental Focus 1.7%, Mana Tide Totem 1.1%, Convection 1.1% |
+| `elemental-dps` | 0.1-3.6% | 0.14 / 0.05 | 1.7 | Mindfulness 3.1%, Shamanistic Focus 2.3%, Elemental Focus 1.7%, Mana Tide Totem 1.1%, Convection 1.1% |
 | `enhancement-dps` | 4.5-8.2% | 0.38 / 0.90 | 1.0 | Shamanistic Focus 5.6%, Convection 1.3%, Elemental Focus 1.2%, Totemic Focus 0.3% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
@@ -134,14 +135,14 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 |---|---|---|---|---|---|---|---|
 | `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
 | `elemental-dps` | `opt-elemental-dps-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
-| `elemental-dps` | `opt-elemental-dps-parse` | 29/22/0 | 386 | 478 | 493 | 509 | 527 |
+| `elemental-dps` | `opt-elemental-dps-parse` | 29/22/0 | 387 | 478 | 495 | 511 | 529 |
 | `elemental-dps` | `elemental-raid` | 31/7/13 | 381 | 459 | 485 | 510 | 531 |
 | `elemental-dps` | sim preset: Elemental 31/6/14 | - | 376 | 452 | 479 | 505 | 531 |
 | `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 369 | 456 | 475 | 490 | 518 |
 | `elemental-dps` | sim preset: Level 60 | - | 362 | 436 | 461 | 487 | 509 |
 | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 444 | 757 | 755 | 812 |
 | `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 391 | 440 | 751 | 749 | 806 |
-| `enhancement-dps` | `opt-enhancement-dps-parse` | 10/31/10 | 390 | 437 | 752 | 749 | 823 |
+| `enhancement-dps` | `opt-enhancement-dps-parse` | 10/31/10 | 390 | 438 | 758 | 757 | 818 |
 | `enhancement-dps` | sim preset: Level 60 | - | 384 | 443 | 749 | 753 | 804 |
 | `enhancement-dps` | sim preset: Enhancement 16/35/0 | - | 365 | 423 | 726 | 733 | 814 |
 | `stormcaller-dps` | sim preset: Stormcaller 28/23/0 | - | 382 | 472 | 494 | 512 | 520 |

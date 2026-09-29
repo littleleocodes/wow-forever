@@ -1,10 +1,10 @@
-# Frost — Arcane Power / Frostbolt (raid DPS) — 31/0/20
+# Frost — Arcane Power / Frostbolt (raid DPS) — 33/0/18
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/0/20 (Arcane / Fire / Frost) |
+| **Build** | 33/0/18 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,29 +16,27 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 
 ## Point allocation
 
-### Arcane (31)
+### Arcane (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
-| **Arcane Focus** | 3/5 | changed | Improves your chance to hit with Arcane spells by 3%. |
-| **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
+| **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Geometry** | 2/2 | **NEW** | Increases the range of your Arcane spells by 6 yards. |
 | **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast. |
-| **Improved Counterspell** | 2/2 | changed | Your Counterspell also Silences the target for 4 sec. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Missile Barrage** | 1/1 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Mind** | 5/5 | changed | Increases your Intellect by 10% and increases the critical strike damage bonus of your Arcane spells by 100%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 | **Arcane Power** | 1/1 | changed | For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast. |
+| **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
+| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
 
 ### Fire (0)
 
 *No points.*
 
-### Frost (20)
+### Frost (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -46,7 +44,6 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 | **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
-| **Frost Channeling** | 2/3 | moved | Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%. |
 
 ## Core talents (priority order)
 
@@ -68,25 +65,25 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 | 5 | Wand Specialization 2 + Arcane Focus 3 | Improved Channeling | Tier-1 Arcane is all filler for a Frost mage (Arcane Focus is Arcane-only hit now). |
 | 3 | Arcane Geometry 2 + Arcane Blast 1 | Arcane Impact | Tier-3 Arcane filler to reach 15 points; Improved Arcane Explosion no longer exists. |
 | 3 | Improved Counterspell 2 + Missile Barrage 1 | Magic Absorption 2, Arcane Shielding | Gating fillers to reach 20 and 30 points. |
-| 2 | Frost Channeling | Frost Channeling 3 with Elemental Precision 4 | Mana/threat vs. the fifth point of hit. |
+| 2 | Improved Channeling | Frost Channeling, Frost Channeling 3 with Elemental Precision 4 | Mana/threat vs. the fifth point of hit. |
 
 ## Rank among our builds and the community simulator's
 
-**6 of 11** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 11** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 3 | *Frost DPS* | community simulator | - | 553 | -5.0% | 632 | -4.5% | 0 s |
-| 4 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -6.9% | 646 | -2.3% | 0 s |
-| 5 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
-| 6 | **[`frost-arcane-power-raid`](frost-arcane-power-raid.md)** | ours: hand draft | 31/0/20 | 536 | -7.8% | 612 | -7.4% | 0 s |
-| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 17/0/34 | 475 | -18.3% | 555 | -16.1% | 0 s |
+| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 582 | -0.1% | 662 | -0.1% | 0 s |
+| 3 | *Frost DPS* | community simulator | - | 553 | -5.1% | 632 | -4.6% | 0 s |
+| 4 | **[`frost-arcane-power-raid`](frost-arcane-power-raid.md)** | ours: hand draft | 33/0/18 | 545 | -6.3% | 624 | -5.8% | 0 s |
+| 5 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -7.0% | 646 | -2.4% | 0 s |
+| 6 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
+| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 20/0/31 | 517 | -11.2% | 587 | -11.3% | 0 s |
 | 8 | *Arcane 35/0/16* | community simulator | - | 468 | -19.6% | 535 | -19.2% | 0 s |
-| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.1% | 0 s |
+| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.2% | 0 s |
 | 10 | *Fire 0/35/16* | community simulator | - | 373 | -35.8% | 428 | -35.4% | 0 s |
-| 11 | *Fire DPS* | community simulator | - | 314 | -45.9% | 353 | -46.6% | 0 s |
+| 11 | *Fire DPS* | community simulator | - | 314 | -46.0% | 353 | -46.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -106,12 +103,13 @@ Damage by ability:
 
 | Ability | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) |
 |---|---|
-| Frostbolt | 76% |
-| Arcane Missiles | 24% |
+| Frostbolt | 75% |
+| Arcane Missiles | 25% |
 
 ## Notes
 
 - Missile Barrage (Frostbolt 20% chance to make the next Arcane Missiles fast and free) could add a filler cast; treat it as a curiosity until tested.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Geometry -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Impact (+0.4% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Arcane Focus (+0.3% DPS); Improved Counterspell -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt); Frost Channeling -> Improved Channeling (interrupt). Net +1.80% on a third seed.
 
 ## Open questions (verify in the live game)
 

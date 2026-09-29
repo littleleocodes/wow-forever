@@ -78,17 +78,18 @@ The class's best raid DPS build on the training dummy: [`opt-shadow-dps-raid-dps
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `shadow-dps` | dummy | `opt-shadow-dps-raid-dps` | 20/0/31 | 556 | +0.0% | 0 | +564% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r3` | 20/0/31 | 556 | +0.0% | 0 | +564% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r1` | 18/0/33 | 545 | -2.0% | 0 | +571% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r5` | 20/0/31 | 544 | -2.0% | 0 | +570% |
+| `shadow-dps` | dummy | `opt-shadow-dps-raid-dps` | 20/0/31 | 556 | +0.0% | 0 | +560% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r3` | 20/0/31 | 556 | +0.0% | 0 | +560% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r1` | 18/0/33 | 545 | -2.0% | 0 | +567% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r5` | 20/0/31 | 544 | -2.0% | 0 | +566% |
 | `shadow-dps` | dummy | sim preset: Shadow | - | 543 | -2.2% | 0 | - |
-| `shadow-dps` | dummy | `cand-shadow-dps-r4` | 20/0/31 | 542 | -2.4% | 0 | +555% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r8` | 18/0/33 | 540 | -2.8% | 5 | +571% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r6` | 20/0/31 | 530 | -4.6% | 0 | +561% |
-| `shadow-dps` | dummy | `cand-shadow-dps-r2` | 18/0/33 | 523 | -5.8% | 16 | +553% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r4` | 20/0/31 | 542 | -2.4% | 0 | +552% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r9` | 18/0/33 | 542 | -2.4% | 3 | +567% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r8` | 18/0/33 | 540 | -2.8% | 5 | +567% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r6` | 20/0/31 | 530 | -4.6% | 0 | +558% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r2` | 18/0/33 | 523 | -5.8% | 16 | +551% |
 | `shadow-dps` | dummy | sim preset: Shadow 15/0/36 | - | 511 | -8.0% | 23 | - |
-| `shadow-dps` | dummy | `cand-shadow-dps-r7` | 18/0/33 | 498 | -10.3% | 26 | +512% |
+| `shadow-dps` | dummy | `cand-shadow-dps-r7` | 18/0/33 | 498 | -10.3% | 26 | +510% |
 | `shadow-dps` | dummy | sim preset: Smite | - | 191 | -65.7% | 29 | - |
 | `shadow-dps` | dummy | sim preset: Smite 31/17/3 | - | 191 | -65.7% | 29 | - |
 | `smite-dps` | dummy | `smite-discipline-raid` | 31/17/3 | 296 | +0.0% | 22 | - |
@@ -101,7 +102,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `shadow-dps` | 0.0-8.5% | 0.55 / 0.90 | 1.0 | Meditation 7.8%, Mental Agility 0.5%, Devouring Contagion 0.3% |
+| `shadow-dps` | 0.0-8.5% | 0.55 / 0.90 | 0.9 | Meditation 8.2%, Mental Agility 0.3%, Devouring Contagion 0.3% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 

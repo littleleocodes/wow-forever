@@ -178,29 +178,29 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 407 DPS), *Mutilate* (community simulator, 371 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 369 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS)
+### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 407 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 392 DPS), *Mutilate* (community simulator, 371 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS)
 
-| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | *Mutilate* casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Assassination Mutilate 31/20/0* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|---|---|
 | 1 | if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea | as ready | as ready | as ready | as ready |
-| 2 | cast Backstab | 11.5 | 10.9 | 10.9 | 10.7 |
+| 2 | cast Backstab | 11.5 | 11.5 | 10.9 | 10.7 |
 | 3 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 | 1.8 | 1.8 | 1.8 |
 | 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 | 2.8 | 2.8 | 3.9 |
 | 5 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 | 0.3 | 0.3 | 0.3 |
-| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 | 1.9 | 1.9 | 1.4 |
+| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 | 2.7 | 1.9 | 1.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
-| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | *Mutilate* | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Assassination Mutilate 31/20/0* |
+| Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|
-| Auto Attack | 40% | 44% | 45% | 46% |
-| Backstab | 31% | 30% | 31% | 31% |
-| Eviscerate | 12% | 9% | 9% | 6% |
-| Deadly Poison | 8% | 8% | 7% | 8% |
-| Dense Sharpening Stone | 5% | 4% | 4% | 4% |
+| Auto Attack | 40% | 43% | 44% | 46% |
+| Backstab | 31% | 31% | 30% | 31% |
+| Eviscerate | 12% | 13% | 9% | 6% |
+| Deadly Poison | 8% | 7% | 8% | 8% |
+| Dense Sharpening Stone | 5% | 3% | 4% | 4% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% |
 | item 10646 | 2% | 2% | 2% | 2% |
 

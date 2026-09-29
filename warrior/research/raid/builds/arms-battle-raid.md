@@ -29,9 +29,8 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
 | **Bloodthrill** | 5/5 | **NEW** | Your Main Hand melee attacks against enemies afflicted by your Rend have a 20% chance to allow the use of your Overpower ability on the target. Lasts 6 sec. |
 | **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 1/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 1.5 sec. |
+| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 3 sec. |
 | **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
-| **Improved Heroic Strike** | 1/3 | changed | Reduces the cost of your Heroic Strike ability by 1 Rage. |
 
 ### Fury (17)
 
@@ -63,7 +62,7 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
 | 2 | Deflection | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
-| 1 | Improved Heroic Strike | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
+| 1 | Deflection | Improved Heroic Strike, any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 | 5 | Booming Voice | any talent legal at that tier | Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise). |
 
 ## Rank among our builds and the community simulator's
@@ -72,8 +71,8 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 220 | +0.0% | 458 | -3.6% | 0 s |
-| 2 | *Arms 39/12/0* | community simulator | - | 215 | -2.3% | 475 | +0.0% | 0 s |
+| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 221 | +0.0% | 463 | -2.6% | 0 s |
+| 2 | *Arms 39/12/0* | community simulator | - | 215 | -2.8% | 475 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,7 +99,7 @@ Before the pull: at -1s: cast Battle Stance.
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](arms-battle-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Overpower | 5.4 |
-| 2 | if execute phase (E20): cast Execute | 3.5 |
+| 2 | if execute phase (E20): cast Execute | 3.4 |
 | 3 | cast Goblin Sapper Charge | as ready |
 | 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -109,13 +108,13 @@ Before the pull: at -1s: cast Battle Stance.
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
 | 10 | if not Rend is on the target: cast Rend | 2.5 |
-| 11 | cast Slam | 2.5 |
+| 11 | cast Slam | 2.7 |
 | 12 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.0 |
-| 14 | if not Berserker Stance is up: cast Berserker Stance | 24.8 |
-| 15 | if not Battle Stance is up: cast Battle Stance | 25.0 |
+| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.9 |
+| 14 | if not Berserker Stance is up: cast Berserker Stance | 25.1 |
+| 15 | if not Battle Stance is up: cast Battle Stance | 25.2 |
 | 16 | cast Spearing Strike | 1.7 |
-| 17 | cast Sunder Armor | 8.0 |
+| 17 | cast Sunder Armor | 7.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast spell 24427, cast spell 29602, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -124,7 +123,7 @@ Damage by ability:
 | Ability | [`arms-battle-raid`](arms-battle-raid.md) |
 |---|---|
 | Auto Attack | 38% |
-| Overpower | 25% |
+| Overpower | 24% |
 | Execute | 14% |
 | Slam | 9% |
 | Deep Wound | 7% |
@@ -136,6 +135,7 @@ Damage by ability:
 
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `arms-battle-raid`: 1 point Mortal Strike -> Spearing Strike, 1 point Sweeping Strikes -> Improved Heroic Strike.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Deflection -> Improved Slam (+0.6% DPS); Improved Heroic Strike -> Deflection (survival). Net +0.68% on a third seed.
 
 ## Open questions (verify in the live game)
 

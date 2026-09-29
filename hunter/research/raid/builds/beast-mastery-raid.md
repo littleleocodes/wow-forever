@@ -20,9 +20,8 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
+| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
-| **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
@@ -61,9 +60,9 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 448 | +0.0% | 809 | +0.0% | 37 s |
-| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.8% | 42 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.9% | 30 s |
+| 1 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
+| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.4% | 42 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -106,6 +105,7 @@ Damage by ability:
 ## Notes
 
 - Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

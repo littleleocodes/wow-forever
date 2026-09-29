@@ -31,11 +31,10 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Health Funnel** | 2/2 | changed | Increases the amount of health transferred by your Health Funnel spell by 40%, reduces its health cost by 30%, and reduces all threat your Health Funnel generates by 100%. Allows Health Funnel to be used regardless of your demon's health. |
-| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
+| **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
 
 ### Destruction (18)
 
@@ -64,8 +63,8 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 |---|---|---|---|
 | 1 | Shadowburn | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Amplify Curse | any utility talent legal at that tier | Measures +0.7% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Improved Health Funnel | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 3 | Improved Imp | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 2 | Demonic Embrace | Improved Health Funnel, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 3 | Demonic Embrace | Improved Imp, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Demonic Aegis | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
@@ -132,6 +131,7 @@ Damage by ability:
 - Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.
 - No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff.
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Embrace (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival). Net +0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -1,10 +1,10 @@
-# Assassination — Mutilate / Venom (raid DPS) — 31/20/0
+# Assassination — Mutilate / Venom (raid DPS) — 30/21/0
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 31/20/0 (Assassination / Combat / Subtlety) |
+| **Build** | 30/21/0 (Assassination / Combat / Subtlety) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,13 +15,12 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 
 ## Point allocation
 
-### Assassination (31)
+### Assassination (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
 | **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
-| **Murder** | 2/2 | changed | Increases all damage dealt by 4% against Humanoid and Giant targets. |
 | **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
 | **Lethality** | 5/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 20%. |
@@ -30,19 +29,19 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
 | **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 | **Seal Fate** | 5/5 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
-| **Venom** | 1/1 | **NEW** | Finishing move that increases the damage of your Poisons by 30% and your chance to apply Poisons by 10%. Lasts longer per combo point:  1 point : 9 seconds  2 points: 12 seconds  3 points: 15 seconds  4 points: 18 seconds  5 points: 21 seconds |
+| **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
 
-### Combat (20)
+### Combat (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
-| **Lightning Reflexes** | 2/5 | unchanged | Increases your Dodge chance by 2%. |
+| **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Endurance** | 2/2 | changed | Reduces the cooldown of your Sprint and Evasion abilities by 60%. |
-| **Improved Sprint** | 2/2 | unchanged | Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
+| **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
+| **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
 
 ### Subtlety (0)
 
@@ -71,13 +70,13 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 
 ## Rank among our builds and the community simulator's
 
-**3 of 4** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 4** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | +0.0% | 0 s |
-| 2 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
-| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 31/20/0 | 369 | -9.2% | 647 | -5.1% | 0 s |
+| 2 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 392 | -3.7% | 665 | -2.6% | 0 s |
+| 3 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
 | 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -7.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
@@ -96,12 +95,12 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) casts/min |
 |---|---|---|
 | 1 | if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea | as ready |
-| 2 | cast Backstab | 10.9 |
+| 2 | cast Backstab | 11.5 |
 | 3 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 |
 | 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 |
 | 5 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
-| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.9 |
+| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (its condition never held in these fights).
 
@@ -109,11 +108,11 @@ Damage by ability:
 
 | Ability | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) |
 |---|---|
-| Auto Attack | 45% |
+| Auto Attack | 43% |
 | Backstab | 31% |
-| Eviscerate | 9% |
+| Eviscerate | 13% |
 | Deadly Poison | 7% |
-| Dense Sharpening Stone | 4% |
+| Dense Sharpening Stone | 3% |
 | Dragonbreath Chili | 2% |
 | item 10646 | 2% |
 
@@ -122,6 +121,7 @@ Damage by ability:
 - Rotation hypothesis: Slice and Dice -> Mutilate to 4-5 points -> Venom (keep up) -> Eviscerate/Rupture; poisons on both weapons.
 - Gives up Blade Flurry, Adrenaline Rush, Hack and Slash and Restless Blades — the comparison with Combat daggers is the key launch test.
 - Mutilate in the simulator (new-builds survey, 2026-09-28): the tuned Assassination rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), so this draft plays as a Backstab build there; the simulator talent search's version is assassination-seal-fate-raid (Mutilate's point moved to Improved Poisons).
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Murder -> Improved Expose Armor (+1.9% DPS); Murder -> Improved Expose Armor (+1.9% DPS); Venom -> Flawless Execution (+2.1% DPS); Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +5.97% on a third seed.
 
 ## Open questions (verify in the live game)
 

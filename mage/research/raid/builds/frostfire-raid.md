@@ -1,10 +1,10 @@
-# Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid) — 0/35/16
+# Frostfire — Frostfire Bolt / Hot Streak (Fire/Frost hybrid, raid) — 2/33/16
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/35/16 (Arcane / Fire / Frost) |
+| **Build** | 2/33/16 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,19 +16,19 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Point allocation
 
-### Arcane (0)
+### Arcane (2)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Channeling** | 2/5 | **NEW** | Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 28% chance while casting Arcane Blast. |
 
-### Fire (35)
+### Fire (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 | **Improved Fireball** | 5/5 | changed | Reduces the casting time of your Fireball and Frostfire Bolt spells by 0.5 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Flame Throwing** | 2/2 | unchanged | Increases the range of your Fire spells by 6 yards. |
-| **Burning Soul** | 2/3 | changed | Gives your Fire spells a 47% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 20%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
 | **Hot Streak** | 1/1 | **NEW** | Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times. |
@@ -37,6 +37,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | **Blast Wave** | 1/1 | changed | A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 154 to 184 Fire damage, and Dazing them for 50% reduced movement speed for 6 sec. |
 | **Fire Power** | 5/5 | unchanged | Increases the damage done by your Fire spells by 10%. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 4 non-periodic critical strikes with Fire spells. |
+| **Wake of Fire** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%. |
 
 ### Frost (16)
 
@@ -71,7 +72,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 0/35/16 | 463 | +0.0% | 556 | +0.0% | 0 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 2/33/16 | 473 | +0.0% | 566 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,34 +91,36 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserking | 0.3 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.3 |
+| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.2 |
 | 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.5 |
-| 7 | cast Fire Blast | 5.6 |
-| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 13.7 |
-| 9 | if time left in the fight ≥ 3s: cast Fireball | 0.3 |
+| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.8 |
+| 7 | cast Fire Blast | 7.9 |
+| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 11.4 |
+| 9 | if time left in the fight ≥ 3s: cast Fireball | 2.5 |
 | 10 | cast Robe of the Archmage | as ready |
+| 11 | cast Scorch | 0.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Scorch (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Frostfire Bolt | 55% |
-| Fire Blast | 18% |
-| Ignite | 15% |
+| Frostfire Bolt | 45% |
+| Fire Blast | 25% |
+| Ignite | 14% |
 | Scorch | 8% |
-| Pyroblast | 4% |
-| Fireball | 0% |
+| Pyroblast | 6% |
+| Fireball | 4% |
 
 ## Notes
 
 - New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.
 - The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).
 - Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%).
+- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Burning Soul -> Wake of Fire (+1.6% DPS); Burning Soul -> Wake of Fire (+1.0% DPS); Flame Throwing -> Improved Channeling (interrupt); Flame Throwing -> Improved Channeling (interrupt). Net +2.45% on a third seed.
 
 ## Open questions (verify in the live game)
 

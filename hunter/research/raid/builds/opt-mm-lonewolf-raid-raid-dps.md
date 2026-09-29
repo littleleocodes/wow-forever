@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,7 +46,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 ## Core talents (priority order)
 
 1. **Lone Wolf** — Removing it costs 29.4 points of score in this model.
-2. **Efficiency** — Removing it costs 13.4 points of score in this model.
+2. **Efficiency** — Removing it costs 13.5 points of score in this model.
 3. **Lethal Attacks** — Removing it costs 9.6 points of score in this model.
 4. **Deadly Aspects** — Removing it costs 9.6 points of score in this model.
 5. **Mortal Shots** — Removing it costs 9.5 points of score in this model.
@@ -60,12 +60,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 420 | +0.0% | 841 | -4.1% | 107 s |
-| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 419 | -0.2% | 877 | +0.0% | 93 s |
-| 3 | *Marksmanship* | community simulator | - | 342 | -18.5% | 707 | -19.3% | 107 s |
-| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.2% | 666 | -24.1% | 98 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -25.1% | 583 | -33.5% | 79 s |
-| 6 | *Survival 0/15/36* | community simulator | - | 299 | -28.8% | 585 | -33.2% | 87 s |
+| 1 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 420 | +0.0% | 841 | +0.0% | 107 s |
+| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 419 | -0.2% | 824 | -2.0% | 93 s |
+| 3 | *Marksmanship* | community simulator | - | 342 | -18.5% | 707 | -15.9% | 107 s |
+| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.2% | 666 | -20.8% | 98 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -25.1% | 583 | -30.7% | 79 s |
+| 6 | *Survival 0/15/36* | community simulator | - | 299 | -28.8% | 585 | -30.4% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 

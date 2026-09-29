@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +79.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 ## Core talents (priority order)
 
-1. **Improved Frostbolt** — Removing it costs 22.6 points of score in this model.
-2. **Ice Shards** — Removing it costs 20.1 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 19.1 points of score in this model.
-4. **Ice Lance** — Removing it costs 12.0 points of score in this model.
-5. **Winter's Chill** — Removing it costs 11.4 points of score in this model.
-6. **Shatter** — Removing it costs 10.9 points of score in this model.
-7. **Piercing Ice** — Removing it costs 8.7 points of score in this model.
-8. **Elemental Precision** — Removing it costs 8.7 points of score in this model.
+1. **Improved Frostbolt** — Removing it costs 23.0 points of score in this model.
+2. **Ice Shards** — Removing it costs 20.8 points of score in this model.
+3. **Fingers of Frost** — Removing it costs 19.7 points of score in this model.
+4. **Ice Lance** — Removing it costs 13.0 points of score in this model.
+5. **Winter's Chill** — Removing it costs 11.7 points of score in this model.
+6. **Shatter** — Removing it costs 11.2 points of score in this model.
+7. **Piercing Ice** — Removing it costs 8.9 points of score in this model.
+8. **Elemental Precision** — Removing it costs 8.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -65,16 +65,16 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 2 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 3 | *Frost DPS* | community simulator | - | 553 | -5.0% | 632 | -4.5% | 0 s |
-| 4 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -6.9% | 646 | -2.3% | 0 s |
-| 5 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
-| 6 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 31/0/20 | 536 | -7.8% | 612 | -7.4% | 0 s |
-| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 17/0/34 | 475 | -18.3% | 555 | -16.1% | 0 s |
+| 2 | **[`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md)** | ours: optimizer | 22/0/29 | 582 | -0.1% | 662 | -0.1% | 0 s |
+| 3 | *Frost DPS* | community simulator | - | 553 | -5.1% | 632 | -4.6% | 0 s |
+| 4 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 33/0/18 | 545 | -6.3% | 624 | -5.8% | 0 s |
+| 5 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -7.0% | 646 | -2.4% | 0 s |
+| 6 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
+| 7 | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) | ours: hand draft | 20/0/31 | 517 | -11.2% | 587 | -11.3% | 0 s |
 | 8 | *Arcane 35/0/16* | community simulator | - | 468 | -19.6% | 535 | -19.2% | 0 s |
-| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.1% | 0 s |
+| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.2% | 0 s |
 | 10 | *Fire 0/35/16* | community simulator | - | 373 | -35.8% | 428 | -35.4% | 0 s |
-| 11 | *Fire DPS* | community simulator | - | 314 | -45.9% | 353 | -46.6% | 0 s |
+| 11 | *Fire DPS* | community simulator | - | 314 | -46.0% | 353 | -46.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,7 +101,7 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (582 vs 562 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (582 vs 555 DPS; the calibration moved the model past the better build).
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

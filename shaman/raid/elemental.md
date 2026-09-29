@@ -2,7 +2,7 @@
 
 [Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Elemental
 
-**[Elemental — Raid](../research/raid/builds/elemental-raid.md)** (31/7/13) — [open the talent tree](https://talentsforever.com/shaman/60/5530311300103051-052-05305-4)
+**[Elemental — Raid](../research/raid/builds/elemental-raid.md)** (31/7/13) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303113051-052-05305-4)
 
 > ⚗ Generated build: no hand-made Elemental build exists for this mode yet, so this is the stats model's best Elemental build, refined in the raid simulator. A starting point, not a proven build.
 

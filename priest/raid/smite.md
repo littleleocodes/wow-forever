@@ -4,7 +4,7 @@
 
 *Damage from Smite and Holy Fire, carried by Discipline talents.* (a hybrid: Discipline/Holy).
 
-**[Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/priest/60/515030031305001031-00505023002-3-4)
+**[Discipline/Holy — Smite](../research/raid/builds/smite-discipline-raid.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/priest/60/505230231305001001-30505101002-3-4)
 
 ## How to play
 

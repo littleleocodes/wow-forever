@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +95.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +95.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -19,7 +19,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
+| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
 | **Elemental Devastation** | 2/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec. |
 
@@ -47,11 +47,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 40.6 points of score in this model.
+1. **Stormstrike** — Removing it costs 40.5 points of score in this model.
 2. **Flurry** — Removing it costs 16.9 points of score in this model.
-3. **Maelstrom Weapon** — Removing it costs 13.6 points of score in this model.
+3. **Maelstrom Weapon** — Removing it costs 13.3 points of score in this model.
 4. **Thundering Strikes** — Removing it costs 9.2 points of score in this model.
-5. **Mental Dexterity** — Removing it costs 7.4 points of score in this model.
+5. **Mental Dexterity** — Removing it costs 7.3 points of score in this model.
 6. **Call of Flame** — Removing it costs 5.0 points of score in this model.
 7. **Tidal Focus** — Removing it costs 4.8 points of score in this model.
 8. **Rage of the Farseer** — Removing it costs 3.7 points of score in this model.

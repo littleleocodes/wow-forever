@@ -10,8 +10,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Battle Stance](raid/arms.md)<br>220 DPS | [Arms — Mortal Strike](pvp/arms.md) |
-| **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | **✅ Recommended**<br>[Raid dual-wield Fury](raid/fury.md)<br>218 DPS | [Fury — PvP](pvp/fury.md) ⚗ |
+| **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Battle Stance](raid/arms.md)<br>221 DPS | [Arms — Mortal Strike](pvp/arms.md) |
+| **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | **✅ Recommended**<br>[Fury — Dual Wield](raid/fury.md)<br>221 DPS | [Fury — PvP](pvp/fury.md) ⚗ |
 | **Protection** | [level as Arms](leveling/protection.md) | [Protection — Raid Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) ⚗ |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -37,8 +37,8 @@ Healing and tanking specs level as a damage spec and switch at 60: Protection le
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Arms](raid/arms.md) — Arms — Battle Stance | 220 | 458 | 205 | best |
-| 2 | [Fury](raid/fury.md) — Raid dual-wield Fury | 218 | 375 | 162 | -1% |
+| 1 | [Fury](raid/fury.md) — Fury — Dual Wield | 221 | 401 | 165 | best |
+| 2 | [Arms](raid/arms.md) — Arms — Battle Stance | 221 | 463 | 207 | -0% |
 
 **Tanking**: [Protection](raid/protection.md) — Protection — Raid Tank.
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.5% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.6% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -52,10 +52,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 2. **Defiance** — Removing it costs 11.0 points of score in this model.
 3. **Deflection** — Removing it costs 5.9 points of score in this model.
 4. **Bastion** — Removing it costs 5.4 points of score in this model.
-5. **Improved Revenge** — Removing it costs 4.5 points of score in this model.
+5. **Improved Revenge** — Removing it costs 4.4 points of score in this model.
 6. **Focused Rage** — Removing it costs 4.0 points of score in this model.
 7. **Anticipation** — Removing it costs 3.0 points of score in this model.
-8. **Improved Thunder Clap** — Removing it costs 2.9 points of score in this model.
+8. **Shield Specialization** — Removing it costs 2.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
-| 3 | *Protection* | community simulator | - | 0.952 | -4.8% | 615 | 1217 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.941 | -5.9% | 608 | 1229 |
+| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 652 | 1161 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 0.997 | -0.3% | 650 | 1164 |
+| 3 | *Protection* | community simulator | - | 0.949 | -5.1% | 615 | 1217 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.938 | -6.2% | 608 | 1229 |
 
 ## Rotation (community simulator, raid setting)
 

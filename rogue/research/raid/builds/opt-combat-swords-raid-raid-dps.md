@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 | **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
 | **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Puncturing Wounds** | 2/3 | **NEW** | Increases the critical strike chance of your Backstab by 20% and your Mutilate by 10%, and gives Backstab a 30% chance to add an additional Combo Point. |
+| **Deflection** | 2/3 | changed | Increases your Parry chance by 4%. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
 | **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
@@ -65,7 +65,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32 | 389 | +0.0% | 680 | -1.2% | 0 s |
+| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 389 | +0.0% | 680 | -1.2% | 0 s |
 | 2 | *Improved Expose Armor (SS)* | community simulator | - | 389 | +0.0% | 680 | -1.2% | 0 s |
 | 3 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 370 | -4.7% | 688 | +0.0% | 0 s |
 | 4 | *Sinister Strike* | community simulator | - | 366 | -5.8% | 686 | -0.2% | 0 s |

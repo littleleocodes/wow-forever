@@ -10,7 +10,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance (optimized)](raid/balance.md)<br>438 DPS | [Balance — PvP](pvp/balance.md) ⚗ |
+| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance — Moonkin / Eclipse](raid/balance.md)<br>438 DPS | [Balance — PvP](pvp/balance.md) ⚗ |
 | **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>350 DPS | [Feral Combat — PvP](pvp/feral-combat.md) ⚗ |
 | **Restoration** | [level as Feral Combat](leveling/restoration.md) | [Restoration (optimized)](raid/restoration.md)<br>healer | [Restoration / Balance — PvP Healer](pvp/restoration.md) |
 
@@ -37,7 +37,7 @@ Healing and tanking specs level as a damage spec and switch at 60: Restoration l
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Balance](raid/balance.md) — Balance (optimized) | 438 | 511 | 342 | best |
+| 1 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 438 | 511 | 342 | best |
 | 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 350 | 556 | 348 | -20% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration (optimized).
