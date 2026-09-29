@@ -5,8 +5,8 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 30/19/2 | 407 | 476 | 682 | 690 | 733 |
+| `assassination-mutilate-raid` | 30/21/0 | 392 | 461 | 665 | 674 | 719 |
 | sim preset: Mutilate | - | 371 | 438 | 648 | 658 | 699 |
-| `assassination-mutilate-raid` | 31/20/0 | 369 | 436 | 647 | 657 | 699 |
 | sim preset: Assassination Mutilate 31/20/0 | - | 359 | 425 | 630 | 637 | 678 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
@@ -22,8 +22,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 407 | +0% | +20% | +31% | +2% | +15% | 682 |
+| `assassination-mutilate-raid` | 392 | -0% | +20% | +32% | +1% | +16% | 665 |
 | sim preset: Mutilate | 371 | +0% | +20% | +32% | +2% | +21% | 648 |
-| `assassination-mutilate-raid` | 369 | +0% | +20% | +33% | +1% | +21% | 647 |
 | sim preset: Assassination Mutilate 31/20/0 | 359 | -0% | +22% | +33% | +2% | +19% | 630 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
@@ -35,8 +35,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 434 | 414 | 407 | 405 | 407 |
+| `assassination-mutilate-raid` | 420 | 399 | 392 | 389 | 391 |
 | sim preset: Mutilate | 394 | 377 | 371 | 369 | 371 |
-| `assassination-mutilate-raid` | 392 | 375 | 369 | 367 | 369 |
 | sim preset: Assassination Mutilate 31/20/0 | 379 | 364 | 359 | 357 | 359 |
 
 Gear presets: raid `combat_backstab_p1_bis.gear.json`, maximum `combat_backstab_p2_bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
