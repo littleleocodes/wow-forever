@@ -85,7 +85,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if Fingers of Frost is up: cast Ice Lance | 5.1 |
 | 4 | cast Frostbolt | 21.0 |

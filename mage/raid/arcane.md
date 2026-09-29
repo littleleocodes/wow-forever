@@ -1,6 +1,6 @@
 # Arcane Mage — Raid (training dummy and parse)
 
-[Mage](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Arcane
+[Mage](../README.md) > [Raid (training dummy and parse)](README.md) > Arcane
 
 **[Arcane — Arcane Blast](../research/raid/builds/arcane-blast-raid.md)** (31/15/5) — [open the talent tree](https://talentsforever.com/mage/60/050215003100311531-23050032-005-4)
 

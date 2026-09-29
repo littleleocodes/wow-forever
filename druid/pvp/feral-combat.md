@@ -1,10 +1,10 @@
 # Feral Combat Druid — PvP
 
-[Druid](../START-HERE.md) > [PvP](README.md) > Feral Combat
+[Druid](../README.md) > [PvP](README.md) > Feral Combat
 
 **[Feral Combat — PvP](../research/pvp/builds/feral-combat-pvp.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/druid/60/-0523232120030213011-55503001001-4)
 
-> Generated build: no hand-made Feral Combat build exists for this mode yet, so this is the stats model's best Feral Combat build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Feral Combat build exists for this mode yet, so this is the stats model's best Feral Combat build. A starting point, not a proven build.
 
 The best Feral Combat pvp build with at least 30 points in Feral Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (feral-cat-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

@@ -97,7 +97,7 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | cast Fire Blast | 9.5 |
-| 3 | if spell 44404 is up: cast Arcane Missiles | 5.3 |
+| 3 | if Missile Barrage is up: cast Arcane Missiles | 5.3 |
 | 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.2 |
 | 5 | cast Arcane Blast | 13.2 |
 

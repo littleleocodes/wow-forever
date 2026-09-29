@@ -1,6 +1,6 @@
 # Fire Mage — Raid (training dummy and parse)
 
-[Mage](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Fire
+[Mage](../README.md) > [Raid (training dummy and parse)](README.md) > Fire
 
 **[Fire — Ignite / Hot Streak](../research/raid/builds/fire-raid.md)** (14/32/5) — [open the talent tree](https://talentsforever.com/mage/60/250025-23550000130133051-005-4)
 

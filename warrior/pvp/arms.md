@@ -1,6 +1,6 @@
 # Arms Warrior — PvP
 
-[Warrior](../START-HERE.md) > [PvP](README.md) > Arms
+[Warrior](../README.md) > [PvP](README.md) > Arms
 
 **[Arms — Mortal Strike](../research/pvp/builds/arms-pvp.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/warrior/60/20325013032015031-05050113005--4)
 

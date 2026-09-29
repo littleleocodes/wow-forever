@@ -1,10 +1,10 @@
 # Arcane Mage — Leveling
 
-[Mage](../START-HERE.md) > [Leveling](README.md) > Arcane
+[Mage](../README.md) > [Leveling](README.md) > Arcane
 
 **[Arcane — Leveling](../research/leveling/builds/arcane-leveling.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/mage/60/23022510001230153--05050032010013001-4)
 
-> Generated build: no hand-made Arcane build exists for this mode yet, so this is the stats model's best Arcane build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Arcane build exists for this mode yet, so this is the stats model's best Arcane build. A starting point, not a proven build.
 
 Talent order (one point per level from 10):
 

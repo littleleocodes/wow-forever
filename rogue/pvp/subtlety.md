@@ -1,6 +1,6 @@
 # Subtlety Rogue — PvP
 
-[Rogue](../START-HERE.md) > [PvP](README.md) > Subtlety
+[Rogue](../README.md) > [PvP](README.md) > Subtlety
 
 **[Hemorrhage / Preparation / Thousand Cuts](../research/pvp/builds/pvp-hemo-prep.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/rogue/60/005320105013--0320203311213211501-4)
 

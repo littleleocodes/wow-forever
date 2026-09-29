@@ -1,6 +1,8 @@
 # Survival Hunter — Raid (training dummy and parse)
 
-[Hunter](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Survival
+[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Survival
+
+**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
 
 **[Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md)** (5/11/35) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4)
 

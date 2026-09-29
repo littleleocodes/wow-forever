@@ -1,6 +1,8 @@
 # Shadow Priest — Leveling
 
-[Priest](../START-HERE.md) > [Leveling](README.md) > Shadow
+[Priest](../README.md) > [Leveling](README.md) > Shadow
+
+**✅ Recommended** for leveling (the best priest spec here, or within 3% of it).
 
 **[Leveling — Shadow](../research/leveling/builds/leveling-shadow.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/005003231301--535022001201310251-4)
 

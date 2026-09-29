@@ -1,6 +1,6 @@
 # Restoration Druid — Leveling
 
-[Druid](../START-HERE.md) > [Leveling](README.md) > Restoration
+[Druid](../README.md) > [Leveling](README.md) > Restoration
 
 Restoration is a healing spec: level as **Feral Combat** ([Feral Combat leveling](../leveling/feral-combat.md)) and switch your talents to Restoration at 60 (a respec at a class trainer).
 

@@ -1,6 +1,6 @@
 # Elemental Shaman — PvP
 
-[Shaman](../START-HERE.md) > [PvP](README.md) > Elemental
+[Shaman](../README.md) > [PvP](README.md) > Elemental
 
 **[Elemental / Nature's Swiftness](../research/pvp/builds/pvp-elemental-ns.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/shaman/60/550500130110315--05315000150001-4)
 

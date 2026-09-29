@@ -1,6 +1,6 @@
 # Affliction Warlock — PvP
 
-[Warlock](../START-HERE.md) > [PvP](README.md) > Affliction
+[Warlock](../README.md) > [PvP](README.md) > Affliction
 
 **[Soul Link / Shadow Mastery](../research/pvp/builds/pvp-soul-link.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/warlock/60/2505002013321105-0051233201201001--4)
 

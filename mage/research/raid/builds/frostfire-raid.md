@@ -91,7 +91,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 |---|---|---|
 | 1 | cast Berserking | 0.5 |
 | 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 5.1 |
-| 3 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if stacks of Hot Streak = 3: cast Pyroblast | 0.7 |
 | 6 | cast Fire Blast | 5.5 |

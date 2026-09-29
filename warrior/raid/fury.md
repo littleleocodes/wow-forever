@@ -1,6 +1,8 @@
 # Fury Warrior — Raid (training dummy and parse)
 
-[Warrior](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Fury
+[Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Fury
+
+**✅ Recommended** for raid (the best warrior spec here, or within 3% of it).
 
 **[Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md)** (14/37/0) — [open the talent tree](https://talentsforever.com/warrior/60/20305013-05050023515231005--4)
 

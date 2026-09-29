@@ -1,8 +1,8 @@
 # Affliction Warlock — Raid (training dummy and parse)
 
-[Warlock](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Affliction
+[Warlock](../README.md) > [Raid (training dummy and parse)](README.md) > Affliction
 
-**[Affliction](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2552002013500005--0550035003-4)
+**[Affliction (optimized)](../research/raid/builds/opt-affliction-raid-raid-dps.md)** (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2552002013500005--0550035003-4)
 
 | Setting | DPS |
 |---|---|
@@ -25,7 +25,7 @@ Before the pull: cast Amplify Curse.
 10. If time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate
 11. Cast Shadow Bolt
 
-Parse build (personal damage in a full raid, where the raid brings the buffs): [Affliction](../research/raid/builds/opt-affliction-raid-parse.md) (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550035003-4).
+Parse build (personal damage in a full raid, where the raid brings the buffs): [Affliction (optimized)](../research/raid/builds/opt-affliction-raid-parse.md) (30/0/21) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013520005--0550035003-4).
 
 Other builds of this spec:
 

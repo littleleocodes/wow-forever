@@ -1,8 +1,10 @@
-# Organization plan (proposal, 2026-09-29)
+# Organization plan (2026-09-29, done)
 
 Hand-written proposal (user request: "a better organization of the files and folders, basic to understand, uniform, a new player can
-follow them, fewer unneeded links"). **Step 1 is done; steps 2-6 wait for approval**, because every script finds its files through
-`_reference/data/paths.py` and a half-finished move would break the pipeline.
+follow them, fewer unneeded links"). **Done 2026-09-29** in a revised form the user chose: per class, player pages by mode and spec (`leveling/`, `raid/`, `pvp/`,
+`<spec>.md`, hybrids named), the class README as the class page, the top-level README as the player index, and everything else
+under `<class>/research/` (see `_reference/README.md` "Folder layout"). Not done from the proposal below: `docs/` and `reports/`
+(the cross-class pages stay in `_reference/`), readable build-page slugs, and pruning candidates (they are calibration inputs).
 
 ## The problem
 

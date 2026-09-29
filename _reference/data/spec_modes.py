@@ -29,6 +29,33 @@ LEVEL_AS = {("druid", "Restoration"): "Feral Combat", ("paladin", "Holy"): "Retr
             ("warrior", "Protection"): "Arms"}
 
 
+# player names for the hybrids (hand-kept, 2026-09-29: "name the hybrids the way players do"): (name, page slug, one line on what it is)
+HYBRID_NAMES = {
+    ("hunter", "Hybrid Beast Mastery/Marksmanship"): ("Beast-Marks", "beast-marks", "Marksmanship's shots with Beast Mastery's pet talents: the classic raid hunter split."),
+    ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
+    ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", "A Frostbolt caster with Arcane's mana and cooldown talents (Arcane Power, Presence of Mind)."),
+    ("mage", "Hybrid Fire/Frost"): ("Frostfire", "frostfire", "Built around Frostfire Bolt, a new Forever spell that uses both trees."),
+    ("paladin", "Hybrid Holy/Retribution"): ("Shockadin", "shockadin", "Holy Shock burst and heals with Retribution's melee talents."),
+    ("priest", "Hybrid Discipline/Holy"): ("Smite", "smite", "Damage from Smite and Holy Fire, carried by Discipline talents."),
+    ("rogue", "Hybrid Assassination/Combat"): ("Daggers (split)", "daggers-split", "Daggers with points split between Assassination and Combat."),
+    ("shaman", "Hybrid Elemental/Enhancement"): ("Elemental-Enhancement", "elemental-enhancement", "A Lightning Bolt caster that dips Enhancement for its passive bonuses."),
+    ("warlock", "Hybrid Affliction/Destruction"): ("Shadow Bolt hybrid", "shadow-bolt-hybrid", "Shadow Bolt and fire casters mixing Affliction's curses with Destruction's Ruin (DS/Ruin)."),
+    ("warlock", "Hybrid Affliction/Demonology"): ("Affliction-Demonology", "affliction-demonology", "Dots with a Voidwalker tanking: the classic warlock leveling split."),
+}
+
+
+def spec_name(cls, spec):
+    """What a player calls the spec: the tree name, or the hybrid's name."""
+    if (cls, spec) in HYBRID_NAMES:
+        return HYBRID_NAMES[(cls, spec)][0]
+    return spec.replace("Hybrid ", "") + " hybrid" if spec.startswith("Hybrid") else spec
+
+
+def spec_slug(cls, spec):
+    """The spec's page name in the mode folders."""
+    return HYBRID_NAMES[(cls, spec)][1] if (cls, spec) in HYBRID_NAMES else slug(spec)
+
+
 def trees(cls):
     return [t["name"] for t in json.load(open(HERE / "forever-talents" / f"{cls}.json", encoding="utf-8"))["trees"]]
 

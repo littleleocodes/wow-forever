@@ -101,8 +101,8 @@ Before the pull: at -1s: cast Battle Stance.
 |---|---|---|
 | 1 | cast Overpower | 5.3 |
 | 2 | if execute phase (E20): cast Execute | 3.6 |
-| 3 | cast item 10646 | as ready |
-| 4 | cast item 18641 | as ready |
+| 3 | cast Goblin Sapper Charge | as ready |
+| 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |

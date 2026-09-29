@@ -1,10 +1,10 @@
 # Holy Priest — PvP
 
-[Priest](../START-HERE.md) > [PvP](README.md) > Holy
+[Priest](../README.md) > [PvP](README.md) > Holy
 
 **[Holy — PvP](../research/pvp/builds/holy-pvp.md)** (0/35/16) — [open the talent tree](https://talentsforever.com/priest/60/-30455133000101531-150022021201-4)
 
-> Generated build: no hand-made Holy build exists for this mode yet, so this is the stats model's best Holy build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Holy build exists for this mode yet, so this is the stats model's best Holy build. A starting point, not a proven build.
 
 The best Holy pvp build with at least 30 points in Holy, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (holy-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

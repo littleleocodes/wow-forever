@@ -1,6 +1,6 @@
 # Combat Rogue — Leveling
 
-[Rogue](../START-HERE.md) > [Leveling](README.md) > Combat
+[Rogue](../README.md) > [Leveling](README.md) > Combat
 
 **[Raid Combat swords](../research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md)** (11/32/8) — [open the talent tree](https://talentsforever.com/rogue/60/1250201-32103321001415231-0323-4)
 

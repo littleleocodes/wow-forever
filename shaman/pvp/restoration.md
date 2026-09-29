@@ -1,10 +1,10 @@
 # Restoration Shaman — PvP
 
-[Shaman](../START-HERE.md) > [PvP](README.md) > Restoration
+[Shaman](../README.md) > [PvP](README.md) > Restoration
 
 **[Restoration — PvP](../research/pvp/builds/restoration-pvp.md)** (0/20/31) — [open the talent tree](https://talentsforever.com/shaman/60/-2502020013401-5000422300503151-4)
 
-> Generated build: no hand-made Restoration build exists for this mode yet, so this is the stats model's best Restoration build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Restoration build exists for this mode yet, so this is the stats model's best Restoration build. A starting point, not a proven build.
 
 The best Restoration pvp build with at least 30 points in Restoration, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (resto-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

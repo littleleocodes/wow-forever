@@ -1,10 +1,10 @@
 # Balance Druid — PvP
 
-[Druid](../START-HERE.md) > [PvP](README.md) > Balance
+[Druid](../README.md) > [PvP](README.md) > Balance
 
 **[Balance — PvP](../research/pvp/builds/balance-pvp.md)** (32/11/8) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501311-05212001-50003-4)
 
-> Generated build: no hand-made Balance build exists for this mode yet, so this is the stats model's best Balance build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Balance build exists for this mode yet, so this is the stats model's best Balance build. A starting point, not a proven build.
 
 The best Balance pvp build with at least 30 points in Balance, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (balance-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

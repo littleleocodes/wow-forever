@@ -1,10 +1,10 @@
 # Fire Mage — PvP
 
-[Mage](../START-HERE.md) > [PvP](README.md) > Fire
+[Mage](../README.md) > [PvP](README.md) > Fire
 
 **[Fire — PvP](../research/pvp/builds/fire-pvp.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/mage/60/-00552330110103151-10503230010113-4)
 
-> Generated build: no hand-made Fire build exists for this mode yet, so this is the stats model's best Fire build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Fire build exists for this mode yet, so this is the stats model's best Fire build. A starting point, not a proven build.
 
 The best Fire pvp build with at least 30 points in Fire, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (fire-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

@@ -1,6 +1,6 @@
 # Holy Priest — Leveling
 
-[Priest](../START-HERE.md) > [Leveling](README.md) > Holy
+[Priest](../README.md) > [Leveling](README.md) > Holy
 
 Holy is a healing spec: level as **Shadow** ([Shadow leveling](../leveling/shadow.md)) and switch your talents to Holy at 60 (a respec at a class trainer).
 

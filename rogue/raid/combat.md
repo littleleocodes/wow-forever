@@ -1,6 +1,8 @@
 # Combat Rogue — Raid (training dummy and parse)
 
-[Rogue](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Combat
+[Rogue](../README.md) > [Raid (training dummy and parse)](README.md) > Combat
+
+**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
 **[Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4)
 

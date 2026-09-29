@@ -1,6 +1,6 @@
 # Marksmanship Hunter — Raid (training dummy and parse)
 
-[Hunter](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Marksmanship
+[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Marksmanship
 
 **[Marksmanship without a pet](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md)** (5/38/8) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4)
 

@@ -1,8 +1,8 @@
 # Elemental Shaman — Leveling
 
-[Shaman](../START-HERE.md) > [Leveling](README.md) > Elemental
+[Shaman](../README.md) > [Leveling](README.md) > Elemental
 
-**[Elemental](../research/leveling/builds/opt-elemental-dps-leveling-st.md)** (31/12/8) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303103151-1502020011-053-4)
+**[Elemental (optimized)](../research/leveling/builds/opt-elemental-dps-leveling-st.md)** (31/12/8) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303103151-1502020011-053-4)
 
 Talent order (one point per level from 10):
 

@@ -1,6 +1,8 @@
 # Enhancement Shaman — Raid (training dummy and parse)
 
-[Shaman](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Enhancement
+[Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Enhancement
+
+**✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
 **[One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md)** (11/31/9) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
 

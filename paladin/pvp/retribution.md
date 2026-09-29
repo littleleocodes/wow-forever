@@ -1,10 +1,10 @@
 # Retribution Paladin — PvP
 
-[Paladin](../START-HERE.md) > [PvP](README.md) > Retribution
+[Paladin](../README.md) > [PvP](README.md) > Retribution
 
 **[Retribution — PvP](../research/pvp/builds/retribution-pvp.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/paladin/60/50023213210101--5022233120130132-4)
 
-> Generated build: no hand-made Retribution build exists for this mode yet, so this is the stats model's best Retribution build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Retribution build exists for this mode yet, so this is the stats model's best Retribution build. A starting point, not a proven build.
 
 The best Retribution pvp build with at least 30 points in Retribution, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (ret-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

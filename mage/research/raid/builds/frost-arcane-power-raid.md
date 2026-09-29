@@ -95,9 +95,9 @@ The Classic 31/0/20 survives: Arcane Power (+30% damage, now +30% mana cost), Pr
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if spell 44404 is known and spell 44404 is up: cast Arcane Missiles | 4.0 |
+| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 4.0 |
 | 4 | cast Frostbolt | 20.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Evocation (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent).

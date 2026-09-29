@@ -1,6 +1,6 @@
 # Fire Mage — Leveling
 
-[Mage](../START-HERE.md) > [Leveling](README.md) > Fire
+[Mage](../README.md) > [Leveling](README.md) > Fire
 
 **[Single-target Fireball leveling](../research/leveling/builds/opt-fire-leveling-leveling-st.md)** (0/33/18) — [open the talent tree](https://talentsforever.com/mage/60/-00552330130103151-00551030010012-4)
 

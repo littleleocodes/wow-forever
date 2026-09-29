@@ -1,6 +1,6 @@
 # Frost Mage — PvP
 
-[Mage](../START-HERE.md) > [PvP](README.md) > Frost
+[Mage](../README.md) > [PvP](README.md) > Frost
 
 **[Frost](../research/pvp/builds/pvp-frost.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/mage/60/2302052001023--0505320301011331201-4)
 

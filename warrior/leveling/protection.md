@@ -1,6 +1,6 @@
 # Protection Warrior — Leveling
 
-[Warrior](../START-HERE.md) > [Leveling](README.md) > Protection
+[Warrior](../README.md) > [Leveling](README.md) > Protection
 
 Protection is a tanking spec: level as **Arms** ([Arms leveling](../leveling/arms.md)) and switch your talents to Protection at 60 (a respec at a class trainer).
 

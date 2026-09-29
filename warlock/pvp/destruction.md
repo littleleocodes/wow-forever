@@ -1,10 +1,10 @@
 # Destruction Warlock — PvP
 
-[Warlock](../START-HERE.md) > [PvP](README.md) > Destruction
+[Warlock](../README.md) > [PvP](README.md) > Destruction
 
 **[Destruction — PvP](../research/pvp/builds/destruction-pvp.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/05500003130211--203535513012-4)
 
-> Generated build: no hand-made Destruction build exists for this mode yet, so this is the stats model's best Destruction build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Destruction build exists for this mode yet, so this is the stats model's best Destruction build. A starting point, not a proven build.
 
 The best Destruction pvp build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

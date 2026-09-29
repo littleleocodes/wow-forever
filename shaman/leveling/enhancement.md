@@ -1,6 +1,8 @@
 # Enhancement Shaman — Leveling
 
-[Shaman](../START-HERE.md) > [Leveling](README.md) > Enhancement
+[Shaman](../README.md) > [Leveling](README.md) > Enhancement
+
+**✅ Recommended** for leveling (the best shaman spec here, or within 3% of it).
 
 **[Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md)** (7/34/10) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030031005112251-05005-4)
 

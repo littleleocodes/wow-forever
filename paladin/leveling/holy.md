@@ -1,6 +1,6 @@
 # Holy Paladin — Leveling
 
-[Paladin](../START-HERE.md) > [Leveling](README.md) > Holy
+[Paladin](../README.md) > [Leveling](README.md) > Holy
 
 Holy is a healing spec: level as **Retribution** ([Retribution leveling](../leveling/retribution.md)) and switch your talents to Holy at 60 (a respec at a class trainer).
 

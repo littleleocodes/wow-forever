@@ -1,10 +1,10 @@
 # Beast Mastery Hunter — PvP
 
-[Hunter](../START-HERE.md) > [PvP](README.md) > Beast Mastery
+[Hunter](../README.md) > [PvP](README.md) > Beast Mastery
 
 **[Beast Mastery — PvP](../research/pvp/builds/beast-mastery-pvp.md)** (31/2/18) — [open the talent tree](https://talentsforever.com/hunter/60/5023201525121011-02-053003031201-4)
 
-> Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build. A starting point, not a proven build.
 
 The best Beast Mastery pvp build with at least 30 points in Beast Mastery, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (bm-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

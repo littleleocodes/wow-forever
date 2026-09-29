@@ -1,6 +1,6 @@
 # Beast Mastery Hunter — Leveling
 
-[Hunter](../START-HERE.md) > [Leveling](README.md) > Beast Mastery
+[Hunter](../README.md) > [Leveling](README.md) > Beast Mastery
 
 **[Beast Mastery](../research/leveling/builds/bm-solo-farm.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/hunter/60/5520001505101051-00505500005--4)
 

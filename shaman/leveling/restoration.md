@@ -1,6 +1,6 @@
 # Restoration Shaman — Leveling
 
-[Shaman](../START-HERE.md) > [Leveling](README.md) > Restoration
+[Shaman](../README.md) > [Leveling](README.md) > Restoration
 
 Restoration is a healing spec: level as **Enhancement** ([Enhancement leveling](../leveling/enhancement.md)) and switch your talents to Restoration at 60 (a respec at a class trainer).
 

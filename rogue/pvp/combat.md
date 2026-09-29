@@ -1,10 +1,10 @@
 # Combat Rogue — PvP
 
-[Rogue](../START-HERE.md) > [PvP](README.md) > Combat
+[Rogue](../README.md) > [PvP](README.md) > Combat
 
 **[Combat — PvP](../research/pvp/builds/combat-pvp.md)** (3/31/17) — [open the talent tree](https://talentsforever.com/rogue/60/3-32503321221310201-032222031011-4)
 
-> Generated build: no hand-made Combat build exists for this mode yet, so this is the stats model's best Combat build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Combat build exists for this mode yet, so this is the stats model's best Combat build. A starting point, not a proven build.
 
 The best Combat pvp build with at least 30 points in Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

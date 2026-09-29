@@ -1,8 +1,8 @@
 # Balance Druid — Leveling
 
-[Druid](../START-HERE.md) > [Leveling](README.md) > Balance
+[Druid](../README.md) > [Leveling](README.md) > Balance
 
-**[Balance](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/2/13) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501351-02-505003-4)
+**[Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/2/13) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501351-02-505003-4)
 
 Talent order (one point per level from 10):
 

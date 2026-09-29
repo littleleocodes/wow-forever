@@ -1,10 +1,10 @@
 # Fury Warrior — PvP
 
-[Warrior](../START-HERE.md) > [PvP](README.md) > Fury
+[Warrior](../README.md) > [PvP](README.md) > Fury
 
 **[Fury — PvP](../research/pvp/builds/fury-pvp.md)** (18/33/0) — [open the talent tree](https://talentsforever.com/warrior/60/25025010102-055101301152312201--4)
 
-> Generated build: no hand-made Fury build exists for this mode yet, so this is the stats model's best Fury build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Fury build exists for this mode yet, so this is the stats model's best Fury build. A starting point, not a proven build.
 
 The best Fury pvp build with at least 30 points in Fury, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (fury-dw-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

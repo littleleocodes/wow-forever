@@ -1,10 +1,10 @@
 # Arcane Mage — PvP
 
-[Mage](../START-HERE.md) > [PvP](README.md) > Arcane
+[Mage](../README.md) > [PvP](README.md) > Arcane
 
 **[Arcane — PvP](../research/pvp/builds/arcane-pvp.md)** (31/0/20) — [open the talent tree](https://talentsforever.com/mage/60/050225120022301231--05050230010013-4)
 
-> Generated build: no hand-made Arcane build exists for this mode yet, so this is the stats model's best Arcane build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Arcane build exists for this mode yet, so this is the stats model's best Arcane build. A starting point, not a proven build.
 
 The best Arcane pvp build with at least 30 points in Arcane, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (frost-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

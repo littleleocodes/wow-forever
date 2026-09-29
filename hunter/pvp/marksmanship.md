@@ -1,6 +1,6 @@
 # Marksmanship Hunter — PvP
 
-[Hunter](../START-HERE.md) > [PvP](README.md) > Marksmanship
+[Hunter](../README.md) > [PvP](README.md) > Marksmanship
 
 **[Marksmanship / Survival](../research/pvp/builds/pvp-mm-surv.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/hunter/60/-055105000150315-502023131201-4)
 

@@ -1,6 +1,8 @@
 # Demonology Warlock — Raid (training dummy and parse)
 
-[Warlock](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Demonology
+[Warlock](../README.md) > [Raid (training dummy and parse)](README.md) > Demonology
+
+**✅ Recommended** for raid (the best warlock spec here, or within 3% of it).
 
 **[Demonology — Demonic Pact](../research/raid/builds/demonology-pact-raid.md)** (2/31/18) — [open the talent tree](https://talentsforever.com/warlock/60/101-0005003221220311351-0550005003-4)
 

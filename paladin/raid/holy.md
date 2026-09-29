@@ -1,6 +1,6 @@
 # Holy Paladin — Raid (training dummy and parse)
 
-[Paladin](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Holy
+[Paladin](../README.md) > [Raid (training dummy and parse)](README.md) > Holy
 
 **[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-4)
 

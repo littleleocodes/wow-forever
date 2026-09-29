@@ -1,6 +1,8 @@
 # Assassination Rogue — Leveling
 
-[Rogue](../START-HERE.md) > [Leveling](README.md) > Assassination
+[Rogue](../README.md) > [Leveling](README.md) > Assassination
+
+**✅ Recommended** for leveling (the best rogue spec here, or within 3% of it).
 
 **[Raid Combat swords](../research/leveling/builds/opt-combat-swords-raid-leveling-st.md)** (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-4)
 

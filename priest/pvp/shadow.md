@@ -1,6 +1,6 @@
 # Shadow Priest — PvP
 
-[Priest](../START-HERE.md) > [PvP](README.md) > Shadow
+[Priest](../README.md) > [PvP](README.md) > Shadow
 
 **[Shadow](../research/pvp/builds/shadow-pvp.md)** (16/0/35) — [open the talent tree](https://talentsforever.com/priest/60/0053032012--550002521201310251-4)
 

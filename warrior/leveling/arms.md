@@ -1,6 +1,8 @@
 # Arms Warrior — Leveling
 
-[Warrior](../START-HERE.md) > [Leveling](README.md) > Arms
+[Warrior](../README.md) > [Leveling](README.md) > Arms
+
+**✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
 **[Two-handed Arms/raid or leveling](../research/leveling/builds/opt-arms-2h-raid-leveling-st.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/warrior/60/02323203032415001-05050032005--4)
 

@@ -1,10 +1,10 @@
 # Enhancement Shaman — PvP
 
-[Shaman](../START-HERE.md) > [PvP](README.md) > Enhancement
+[Shaman](../README.md) > [PvP](README.md) > Enhancement
 
 **[Enhancement — PvP](../research/pvp/builds/enhancement-pvp.md)** (18/33/0) — [open the talent tree](https://talentsforever.com/shaman/60/0535200003-050132001353112051--4)
 
-> Generated build: no hand-made Enhancement build exists for this mode yet, so this is the stats model's best Enhancement build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Enhancement build exists for this mode yet, so this is the stats model's best Enhancement build. A starting point, not a proven build.
 
 The best Enhancement pvp build with at least 30 points in Enhancement, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (enhancement-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

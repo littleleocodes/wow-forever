@@ -112,8 +112,8 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 | 2 | if execute phase (E20): cast Execute | 6.5 |
 | 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 |
 | 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 8.5 |
-| 5 | cast item 10646 | as ready |
-| 6 | cast item 18641 | as ready |
+| 5 | cast Goblin Sapper Charge | as ready |
+| 6 | cast Dense Dynamite | as ready |
 | 7 | if false: cast Recklessness | 0.5 |
 | 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |

@@ -528,9 +528,8 @@ def main():
         lp.parent.mkdir(parents=True, exist_ok=True)
         lp.write_text(leveling_rotation_page(cls), encoding="utf-8")
         rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## DPS ranking", ranking_section(cls))
-        cr = class_ranking_section(cls)
-        if cr:
-            rs.splice_ordered(ROOT / cls / "README.md", "class", "## Raid DPS ranking", cr)
+        # the class README's ranking is render_modes.py's "Which spec is best?" since 2026-09-29
+        rs.drop(ROOT / cls / "README.md", "## Raid DPS ranking")
         print(f"{cls}: raid and leveling rotations, DPS ranking written")
 
 

@@ -1,10 +1,10 @@
 # Affliction Warlock — Leveling
 
-[Warlock](../START-HERE.md) > [Leveling](README.md) > Affliction
+[Warlock](../README.md) > [Leveling](README.md) > Affliction
 
 **[Affliction — Leveling](../research/leveling/builds/affliction-leveling.md)** (35/6/10) — [open the talent tree](https://talentsforever.com/warlock/60/0555002013500135-00051-0055-4)
 
-> Generated build: no hand-made Affliction build exists for this mode yet, so this is the stats model's best Affliction build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Affliction build exists for this mode yet, so this is the stats model's best Affliction build. A starting point, not a proven build.
 
 Talent order (one point per level from 10):
 

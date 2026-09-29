@@ -1,6 +1,6 @@
 # Survival Hunter — Leveling
 
-[Hunter](../START-HERE.md) > [Leveling](README.md) > Survival
+[Hunter](../README.md) > [Leveling](README.md) > Survival
 
 **[Melee Survival leveling](../research/leveling/builds/leveling-melee.md)** (9/10/32) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005005-540200031051220151-4)
 

@@ -92,7 +92,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≤ 80%: cast item 8008 | as ready |
+| 1 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Frostbolt | 24.0 |
 

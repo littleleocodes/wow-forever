@@ -1,10 +1,10 @@
 # Discipline Priest — PvP
 
-[Priest](../START-HERE.md) > [PvP](README.md) > Discipline
+[Priest](../README.md) > [PvP](README.md) > Discipline
 
 **[Discipline — PvP](../research/pvp/builds/discipline-pvp.md)** (32/3/16) — [open the talent tree](https://talentsforever.com/priest/60/005303201230121531-3-150022021201-4)
 
-> Generated build: no hand-made Discipline build exists for this mode yet, so this is the stats model's best Discipline build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Discipline build exists for this mode yet, so this is the stats model's best Discipline build. A starting point, not a proven build.
 
 The best Discipline pvp build with at least 30 points in Discipline, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (holy-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

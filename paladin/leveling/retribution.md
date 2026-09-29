@@ -1,6 +1,8 @@
 # Retribution Paladin — Leveling
 
-[Paladin](../START-HERE.md) > [Leveling](README.md) > Retribution
+[Paladin](../README.md) > [Leveling](README.md) > Retribution
+
+**✅ Recommended** for leveling (the best paladin spec here, or within 3% of it).
 
 **[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (15/0/36) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--0522533120133132-4)
 

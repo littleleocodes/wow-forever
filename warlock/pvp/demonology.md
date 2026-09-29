@@ -1,10 +1,10 @@
 # Demonology Warlock — PvP
 
-[Warlock](../START-HERE.md) > [PvP](README.md) > Demonology
+[Warlock](../README.md) > [PvP](README.md) > Demonology
 
 **[Demonology — PvP](../research/pvp/builds/demonology-pvp.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/05500003130211-005520320120100135--4)
 
-> Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.
 
 The best Demonology pvp build with at least 30 points in Demonology, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

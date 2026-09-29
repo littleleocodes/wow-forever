@@ -1,6 +1,6 @@
 # Protection Paladin — Leveling
 
-[Paladin](../START-HERE.md) > [Leveling](README.md) > Protection
+[Paladin](../README.md) > [Leveling](README.md) > Protection
 
 Protection is a tanking spec: level as **Retribution** ([Retribution leveling](../leveling/retribution.md)) and switch your talents to Protection at 60 (a respec at a class trainer).
 

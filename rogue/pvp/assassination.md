@@ -1,6 +1,6 @@
 # Assassination Rogue — PvP
 
-[Rogue](../START-HERE.md) > [PvP](README.md) > Assassination
+[Rogue](../README.md) > [PvP](README.md) > Assassination
 
 **[Seal Fate / Mutilate Daggers](../research/pvp/builds/pvp-seal-fate-daggers.md)** (30/8/13) — [open the talent tree](https://talentsforever.com/rogue/60/0253201050112125-3023-03202033-4)
 

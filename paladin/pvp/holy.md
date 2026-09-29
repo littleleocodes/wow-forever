@@ -1,10 +1,10 @@
 # Holy Paladin — PvP
 
-[Paladin](../START-HERE.md) > [PvP](README.md) > Holy
+[Paladin](../README.md) > [PvP](README.md) > Holy
 
 **[Holy — PvP](../research/pvp/builds/holy-pvp.md)** (31/18/2) — [open the talent tree](https://talentsforever.com/paladin/60/05320213221121051-500230302003-2-4)
 
-> Generated build: no hand-made Holy build exists for this mode yet, so this is the stats model's best Holy build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Holy build exists for this mode yet, so this is the stats model's best Holy build. A starting point, not a proven build.
 
 The best Holy pvp build with at least 30 points in Holy, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (holy-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

@@ -1,6 +1,6 @@
 # Discipline Priest — Raid (training dummy and parse)
 
-[Priest](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Discipline
+[Priest](../README.md) > [Raid (training dummy and parse)](README.md) > Discipline
 
 **[Discipline — Penance / Divine Aegis / Power Infusion](../research/raid/builds/disc-penance-healer.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/priest/60/005203031303101531-215050030301--4)
 

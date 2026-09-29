@@ -1,10 +1,12 @@
 # Beast Mastery Hunter — Raid (training dummy and parse)
 
-[Hunter](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Beast Mastery
+[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Beast Mastery
+
+**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
 
 **[Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/512002150510125-00532500015--4)
 
-> Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build, refined in the raid simulator. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build, refined in the raid simulator. A starting point, not a proven build.
 
 | Setting | DPS |
 |---|---|

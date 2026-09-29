@@ -1,8 +1,10 @@
 # Balance Druid — Raid (training dummy and parse)
 
-[Druid](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Balance
+[Druid](../README.md) > [Raid (training dummy and parse)](README.md) > Balance
 
-**[Balance](../research/raid/builds/opt-balance-dps-raid-dps.md)** (34/6/11) — [open the talent tree](https://talentsforever.com/druid/60/1532220115501051-15-505001-4)
+**✅ Recommended** for raid (the best druid spec here, or within 3% of it).
+
+**[Balance (optimized)](../research/raid/builds/opt-balance-dps-raid-dps.md)** (34/6/11) — [open the talent tree](https://talentsforever.com/druid/60/1532220115501051-15-505001-4)
 
 | Setting | DPS |
 |---|---|
@@ -20,7 +22,7 @@ Before the pull: activate Moonkin Form.
 5. Cast Starfire
 6. If mana % < 15%: cast Starfire
 
-Parse build (personal damage in a full raid, where the raid brings the buffs): [Balance](../research/raid/builds/opt-balance-dps-parse.md) (33/5/13) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-4).
+Parse build (personal damage in a full raid, where the raid brings the buffs): [Balance (optimized)](../research/raid/builds/opt-balance-dps-parse.md) (33/5/13) — [open the talent tree](https://talentsforever.com/druid/60/0532220115501051-05-505003-4).
 
 Other builds of this spec:
 

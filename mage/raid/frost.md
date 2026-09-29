@@ -1,6 +1,6 @@
 # Frost Mage — Raid (training dummy and parse)
 
-[Mage](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Frost
+[Mage](../README.md) > [Raid (training dummy and parse)](README.md) > Frost
 
 **[Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md)** (1/13/37) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-4)
 

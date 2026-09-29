@@ -1,6 +1,6 @@
 # Arms Warrior — Raid (training dummy and parse)
 
-[Warrior](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Arms
+[Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Arms
 
 **[Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md)** (34/17/0) — [open the talent tree](https://talentsforever.com/warrior/60/123052131325051-550500000002--4)
 

@@ -1,6 +1,6 @@
 # Protection Paladin — Raid (training dummy and parse)
 
-[Paladin](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Protection
+[Paladin](../README.md) > [Raid (training dummy and parse)](README.md) > Protection
 
 **[Protection — Tank](../research/raid/builds/prot-tank.md)** (0/23/28) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513101301-530253300010303-4)
 

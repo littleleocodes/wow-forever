@@ -1,6 +1,6 @@
 # Subtlety Rogue — Raid (training dummy and parse)
 
-[Rogue](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Subtlety
+[Rogue](../README.md) > [Raid (training dummy and parse)](README.md) > Subtlety
 
 **[Subtlety — Hemorrhage](../research/raid/builds/subtlety-hemo-raid.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/rogue/60/005303121014--5320003310013211501-4)
 

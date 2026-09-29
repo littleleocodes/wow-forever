@@ -1,6 +1,6 @@
 # Holy Priest — Raid (training dummy and parse)
 
-[Priest](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Holy
+[Priest](../README.md) > [Raid (training dummy and parse)](README.md) > Holy
 
 **[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205003011305101-3350110303012043--4)
 

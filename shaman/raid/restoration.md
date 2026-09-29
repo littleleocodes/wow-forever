@@ -1,6 +1,6 @@
 # Restoration Shaman — Raid (training dummy and parse)
 
-[Shaman](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Restoration
+[Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Restoration
 
 **[Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-4)
 

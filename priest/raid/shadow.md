@@ -1,6 +1,8 @@
 # Shadow Priest — Raid (training dummy and parse)
 
-[Priest](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Shadow
+[Priest](../README.md) > [Raid (training dummy and parse)](README.md) > Shadow
+
+**✅ Recommended** for raid (the best priest spec here, or within 3% of it).
 
 **[Shadow leveling/raid](../research/raid/builds/opt-shadow-dps-raid-dps.md)** (20/0/31) — [open the talent tree](https://talentsforever.com/priest/60/525000000305--500321501201302051-4)
 

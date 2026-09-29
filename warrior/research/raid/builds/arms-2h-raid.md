@@ -105,8 +105,8 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](arms-2h-raid.md) casts/min |
 |---|---|---|
 | 1 | if execute phase (E20): cast Execute | 4.6 |
-| 2 | cast item 10646 | as ready |
-| 3 | cast item 18641 | as ready |
+| 2 | cast Goblin Sapper Charge | as ready |
+| 3 | cast Dense Dynamite | as ready |
 | 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |

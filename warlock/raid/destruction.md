@@ -1,6 +1,6 @@
 # Destruction Warlock — Raid (training dummy and parse)
 
-[Warlock](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Destruction
+[Warlock](../README.md) > [Raid (training dummy and parse)](README.md) > Destruction
 
 **[Destruction — Incinerate](../research/raid/builds/destruction-incinerate-raid.md)** (9/11/31) — [open the talent tree](https://talentsforever.com/warlock/60/153-0025003001-0050245103101351-4)
 

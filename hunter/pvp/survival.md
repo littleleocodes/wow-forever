@@ -1,10 +1,10 @@
 # Survival Hunter — PvP
 
-[Hunter](../START-HERE.md) > [PvP](README.md) > Survival
+[Hunter](../README.md) > [PvP](README.md) > Survival
 
 **[Survival — PvP](../research/pvp/builds/survival-pvp.md)** (0/21/30) — [open the talent tree](https://talentsforever.com/hunter/60/-05530510100001-55020003125122011-4)
 
-> Generated build: no hand-made Survival build exists for this mode yet, so this is the stats model's best Survival build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Survival build exists for this mode yet, so this is the stats model's best Survival build. A starting point, not a proven build.
 
 The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

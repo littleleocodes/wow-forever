@@ -1,10 +1,10 @@
 # Subtlety Rogue — Leveling
 
-[Rogue](../START-HERE.md) > [Leveling](README.md) > Subtlety
+[Rogue](../README.md) > [Leveling](README.md) > Subtlety
 
 **[Subtlety — Leveling](../research/leveling/builds/subtlety-leveling.md)** (5/16/30) — [open the talent tree](https://talentsforever.com/rogue/60/023-32303301001-23232003102132105-4)
 
-> Generated build: no hand-made Subtlety build exists for this mode yet, so this is the stats model's best Subtlety build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Subtlety build exists for this mode yet, so this is the stats model's best Subtlety build. A starting point, not a proven build.
 
 Talent order (one point per level from 10):
 

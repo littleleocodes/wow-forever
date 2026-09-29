@@ -1,10 +1,10 @@
 # Protection Paladin — PvP
 
-[Paladin](../START-HERE.md) > [PvP](README.md) > Protection
+[Paladin](../README.md) > [PvP](README.md) > Protection
 
 **[Protection — PvP](../research/pvp/builds/protection-pvp.md)** (0/30/21) — [open the talent tree](https://talentsforever.com/paladin/60/-50225130210315-51220331201001-4)
 
-> Generated build: no hand-made Protection build exists for this mode yet, so this is the stats model's best Protection build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Protection build exists for this mode yet, so this is the stats model's best Protection build. A starting point, not a proven build.
 
 The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (ret-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 

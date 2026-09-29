@@ -1,6 +1,6 @@
 # Discipline Priest — Leveling
 
-[Priest](../START-HERE.md) > [Leveling](README.md) > Discipline
+[Priest](../README.md) > [Leveling](README.md) > Discipline
 
 Discipline is a healing spec: level as **Shadow** ([Shadow leveling](../leveling/shadow.md)) and switch your talents to Discipline at 60 (a respec at a class trainer).
 

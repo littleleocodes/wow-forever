@@ -1,6 +1,8 @@
 # Retribution Paladin — Raid (training dummy and parse)
 
-[Paladin](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Retribution
+[Paladin](../README.md) > [Raid (training dummy and parse)](README.md) > Retribution
+
+**✅ Recommended** for raid (the best paladin spec here, or within 3% of it).
 
 **[Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md)** (17/0/34) — [open the talent tree](https://talentsforever.com/paladin/60/55003003001--05225331001330321-4)
 

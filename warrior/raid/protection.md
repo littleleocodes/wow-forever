@@ -1,6 +1,6 @@
 # Protection Warrior — Raid (training dummy and parse)
 
-[Warrior](../START-HERE.md) > [Raid (training dummy and parse)](README.md) > Protection
+[Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Protection
 
 **[Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-550030233001010531-4)
 

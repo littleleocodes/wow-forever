@@ -1,6 +1,8 @@
 # Frost Mage — Leveling
 
-[Mage](../START-HERE.md) > [Leveling](README.md) > Frost
+[Mage](../README.md) > [Leveling](README.md) > Frost
+
+**✅ Recommended** for leveling (the best mage spec here, or within 3% of it).
 
 **[Leveling — Frost](../research/leveling/builds/leveling-frost.md)** (12/0/39) — [open the talent tree](https://talentsforever.com/mage/60/230205--0555003331011301251-4)
 

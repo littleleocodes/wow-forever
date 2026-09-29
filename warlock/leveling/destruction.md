@@ -1,10 +1,10 @@
 # Destruction Warlock — Leveling
 
-[Warlock](../START-HERE.md) > [Leveling](README.md) > Destruction
+[Warlock](../README.md) > [Leveling](README.md) > Destruction
 
 **[Destruction — Leveling](../research/leveling/builds/destruction-leveling.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/warlock/60/00550020134001--20550551331-4)
 
-> Generated build: no hand-made Destruction build exists for this mode yet, so this is the stats model's best Destruction build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Destruction build exists for this mode yet, so this is the stats model's best Destruction build. A starting point, not a proven build.
 
 Talent order (one point per level from 10):
 

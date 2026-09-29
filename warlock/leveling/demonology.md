@@ -1,10 +1,10 @@
 # Demonology Warlock — Leveling
 
-[Warlock](../START-HERE.md) > [Leveling](README.md) > Demonology
+[Warlock](../README.md) > [Leveling](README.md) > Demonology
 
 **[Demonology — Leveling](../research/leveling/builds/demonology-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/00550020134001-235523000100000135--4)
 
-> Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.
+> ⚗ Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.
 
 Talent order (one point per level from 10):
 

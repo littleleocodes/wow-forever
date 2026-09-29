@@ -1,6 +1,8 @@
 # Fury Warrior — Leveling
 
-[Warrior](../START-HERE.md) > [Leveling](README.md) > Fury
+[Warrior](../README.md) > [Leveling](README.md) > Fury
+
+**✅ Recommended** for leveling (the best warrior spec here, or within 3% of it).
 
 **[Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-050500325152310051--4)
 
