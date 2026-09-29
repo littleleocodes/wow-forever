@@ -104,6 +104,10 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    +4.6% raid (792), two independent seeds; `talent_opt.py` from both builds in both settings agrees (candidates
    `hunter/raid/raidsim/candidates/cand-melee-dps-traps-*`). The scorer's `opt-melee-dps-*` builds still lack the trap talents
    because the melee model has no trap source; the fight lab has no traps, so `leveling-melee` is not re-optimized.
+   **Lone Wolf vs pet, melee hunter** (2026-09-29, user question): leveling, the pet wins at every level. The fight lab's best
+   Lone Wolf build (optimizer, Lone Wolf forced) is 19-47% slower per kill than the best pet build at 20-60 (longer fights and more
+   downtime: the pet tanks), so `leveling-melee` keeps its pet. Raid: Lone Wolf wins, +6.8% dummy (380 vs 356) and +8.1% raid (792
+   vs 733) against the best pet build the simulator's talent search found (Cat pet, temporary entry, not kept).
    **Simulator gaps audit** (2026-09-29, `_reference/sim-gaps.md`): abilities the simulator implements but no rotation cast, and
    talents it leaves unimplemented, for all nine classes. Found: hunter Arcane Shot (now in the mm-raid and mm-lonewolf-raid
    rotations: +1.8-4.8% dummy, +16.5-16.8% raid; `mm-lone-wolf-raid` is the best raid hunter at 887) and the melee traps. Patch
