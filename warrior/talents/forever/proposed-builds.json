@@ -1025,48 +1025,47 @@
     {
       "id": "protection-pvp",
       "name": "Protection — PvP (generated)",
-      "role": "tank",
+      "role": "dps",
       "content": "pvp",
       "tier": "draft",
       "spec": "Protection",
       "generated": "2026-09-29",
-      "summary": "The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (prot-tank, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "summary": "The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (arms-2h-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
       "allocation": {
         "Arms": [],
         "Fury": [
           ["Cruelty", 5],
           ["Iron Will", 5],
+          ["Unbridled Wrath", 1],
           ["Piercing Howl", 1],
           ["Blood Craze", 3],
-          ["Boundless Rage", 1],
-          ["Enrage", 5]
+          ["Enrage", 5],
+          ["Death Wish", 1]
         ],
         "Protection": [
           ["Shield Specialization", 5],
+          ["Anticipation", 5],
           ["Improved Bloodrage", 2],
-          ["Improved Thunder Clap", 3],
+          ["Toughness", 5],
           ["Last Stand", 1],
-          ["Master of Defense", 2],
-          ["Improved Revenge", 3],
           ["Improved Disarm", 3],
           ["Vanguard", 1],
-          ["Improved Shield Wall", 1],
+          ["Improved Shield Wall", 2],
           ["Concussion Blow", 1],
-          ["Bastion", 5],
-          ["Focused Rage", 3],
-          ["Shield Slam", 1]
+          ["Improved Shield Bash", 2],
+          ["Focused Rage", 3]
         ]
       },
       "core": [
-        {"talent": "Focused Rage", "why": "The scorer's value in this build: +23.1% of its score (model prot-tank)."},
-        {"talent": "Shield Slam", "why": "The scorer's value in this build: +20.4% of its score (model prot-tank)."},
-        {"talent": "Improved Revenge", "why": "The scorer's value in this build: +17.4% of its score (model prot-tank)."},
-        {"talent": "Enrage", "why": "The scorer's value in this build: +11.4% of its score (model prot-tank)."},
-        {"talent": "Bastion", "why": "The scorer's value in this build: +9.7% of its score (model prot-tank)."},
-        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +6.7% of its score (model prot-tank)."}
+        {"talent": "Blood Craze", "why": "The scorer's value in this build: +40.6% of its score (model arms-2h-raid)."},
+        {"talent": "Death Wish", "why": "The scorer's value in this build: +9.0% of its score (model arms-2h-raid)."},
+        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +7.1% of its score (model arms-2h-raid)."},
+        {"talent": "Concussion Blow", "why": "The scorer's value in this build: +7.1% of its score (model arms-2h-raid)."},
+        {"talent": "Last Stand", "why": "The scorer's value in this build: +6.2% of its score (model arms-2h-raid)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +5.5% of its score (model arms-2h-raid)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model prot-tank, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model arms-2h-raid, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
       "open_questions": ["A generated Protection build: check it against the community's Protection builds at launch."],
       "sources": ["https://talentsforever.com/warrior"]
     }

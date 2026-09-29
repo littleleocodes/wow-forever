@@ -1169,7 +1169,7 @@
         {"talent": "Malediction", "why": "The scorer's value in this build: +5.8% of its score (model affliction-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
       "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
       "sources": ["https://talentsforever.com/warlock"],
       "order": [
@@ -1237,7 +1237,7 @@
         {"talent": "Master Demonologist", "why": "The scorer's value in this build: +7.2% of its score (model affliction-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
       "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
       "sources": ["https://talentsforever.com/warlock"]
     },
@@ -1282,7 +1282,7 @@
         {"talent": "Amplify Curse", "why": "The scorer's value in this build: +5.4% of its score (model affliction-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
       "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
       "sources": ["https://talentsforever.com/warlock"],
       "order": [
@@ -1347,7 +1347,7 @@
         {"talent": "Suppression", "why": "The scorer's value in this build: +5.7% of its score (model affliction-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
       "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
       "sources": ["https://talentsforever.com/warlock"]
     }
