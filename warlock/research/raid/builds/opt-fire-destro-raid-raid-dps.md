@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +82.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +82.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,13 +49,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 22.6 points of score in this model.
-2. **Bane** — Removing it costs 16.1 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 22.7 points of score in this model.
+2. **Bane** — Removing it costs 16.4 points of score in this model.
 3. **Suppression** — Removing it costs 10.2 points of score in this model.
 4. **Malevolence** — Removing it costs 9.4 points of score in this model.
 5. **Agonizing Flames** — Removing it costs 9.2 points of score in this model.
-6. **Improved Shadow Bolt** — Removing it costs 8.4 points of score in this model.
-7. **Improved Corruption** — Removing it costs 7.9 points of score in this model.
+6. **Improved Shadow Bolt** — Removing it costs 8.3 points of score in this model.
+7. **Improved Corruption** — Removing it costs 7.8 points of score in this model.
 8. **Pandemic** — Removing it costs 7.2 points of score in this model.
 
 ## Rank among our builds and the community simulator's
@@ -64,15 +64,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 559 | +0.0% | 664 | +0.0% | 2 s |
-| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 559 | +0.0% | 664 | +0.0% | 2 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 535 | -4.3% | 635 | -4.3% | 2 s |
-| 4 | *DS/Ruin* | community simulator | - | 523 | -6.4% | 626 | -5.7% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 503 | -10.1% | 597 | -10.1% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 464 | -17.0% | 546 | -17.8% | 2 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 455 | -18.6% | 546 | -17.7% | 2 s |
-| 8 | *Affliction* | community simulator | - | 454 | -18.7% | 537 | -19.2% | 2 s |
-| 9 | *Demonic Pact* | community simulator | - | 452 | -19.2% | 538 | -19.0% | 1 s |
+| 1 | [`destruction-fire-raid`](destruction-fire-raid.md) | ours: hand draft | 22/11/18 | 546 | +0.0% | 647 | +0.0% | 3 s |
+| 2 | **[`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 546 | +0.0% | 647 | +0.0% | 3 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 523 | -4.3% | 619 | -4.4% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 514 | -5.9% | 611 | -5.5% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 492 | -9.9% | 581 | -10.2% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 458 | -16.1% | 537 | -17.0% | 3 s |
+| 7 | *Affliction* | community simulator | - | 450 | -17.5% | 529 | -18.2% | 3 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 449 | -17.8% | 535 | -17.3% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 446 | -18.3% | 528 | -18.4% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,14 +95,14 @@ Before the pull: at -1.5s: cast Life Tap.
 | 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.5 |
+| 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.3 |
 | 5 | if time left in the fight ≤ 3.5 and mana % ≥ 10%: cast Searing Pain | 0.4 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
-| 7 | if mana % < 10%: cast Life Tap | 6.5 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.6 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 |
+| 7 | if mana % < 10%: cast Life Tap | 6.7 |
+| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 11 | cast Shadow Bolt | 14.0 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | cast Shadow Bolt | 13.8 |
 
 Damage by ability:
 
@@ -111,13 +111,13 @@ Damage by ability:
 | Shadow Bolt | 50% |
 | Bane of Agony | 20% |
 | Corruption | 19% |
-| Immolate | 10% |
+| Immolate | 11% |
 | Shadowburn | 1% |
 | Searing Pain | 0% |
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/fire-destro-raid-raid-dps.md
+- Report: warlock/research/talents/forever/optimizer/fire-destro-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

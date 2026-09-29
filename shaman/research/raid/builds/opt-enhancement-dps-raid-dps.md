@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +110.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +100.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 44.3 points of score in this model.
+1. **Stormstrike** — Removing it costs 40.9 points of score in this model.
 2. **Flurry** — Removing it costs 18.7 points of score in this model.
-3. **Shamanistic Focus** — Removing it costs 16.1 points of score in this model.
-4. **Maelstrom Weapon** — Removing it costs 13.8 points of score in this model.
-5. **Thundering Strikes** — Removing it costs 10.4 points of score in this model.
-6. **Mental Dexterity** — Removing it costs 8.1 points of score in this model.
-7. **Rage of the Farseer** — Removing it costs 8.0 points of score in this model.
-8. **Call of Flame** — Removing it costs 5.2 points of score in this model.
+3. **Maelstrom Weapon** — Removing it costs 12.8 points of score in this model.
+4. **Shamanistic Focus** — Removing it costs 10.7 points of score in this model.
+5. **Thundering Strikes** — Removing it costs 9.9 points of score in this model.
+6. **Mental Dexterity** — Removing it costs 7.7 points of score in this model.
+7. **Call of Flame** — Removing it costs 4.8 points of score in this model.
+8. **Tidal Focus** — Removing it costs 4.7 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 415 | +0.0% | 774 | +0.0% | 7 s |
-| 2 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 411 | -0.9% | 767 | -0.8% | 7 s |
-| 3 | *Level 60* | community simulator | - | 400 | -3.6% | 755 | -2.4% | 28 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 373 | -10.2% | 746 | -3.6% | 62 s |
+| 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 394 | +0.0% | 757 | +0.0% | 42 s |
+| 2 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -0.9% | 751 | -0.8% | 42 s |
+| 3 | *Level 60* | community simulator | - | 384 | -2.7% | 749 | -1.2% | 52 s |
+| 4 | *Enhancement 16/35/0* | community simulator | - | 365 | -7.4% | 726 | -4.1% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,32 +86,32 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.5 |
-| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.5 |
+| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
+| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.3 |
+| 4 | cast Stormstrike | 13.9 |
 | 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.9 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
-| 8 | cast Earth Shock | 5.0 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.6 |
+| 8 | cast Earth Shock | 3.9 |
 
 Damage by ability:
 
 | Ability | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 32% |
+| Auto Attack | 33% |
 | Windfury Weapon | 21% |
 | Stormstrike | 13% |
-| Earth Shock | 9% |
-| Flame Shock | 9% |
-| Lightning Bolt | 6% |
+| Flame Shock | 8% |
+| Earth Shock | 8% |
+| Lightning Bolt | 7% |
 | Attack | 6% |
 | Elemental Sharpening Stone | 3% |
 | Dragonbreath Chili | 2% |
 
 ## Notes
 
-- Report: shaman/talents/forever/optimizer/enhancement-dps-raid-dps.md
+- Report: shaman/research/talents/forever/optimizer/enhancement-dps-raid-dps.md
 
 ## Open questions (verify in the live game)
 

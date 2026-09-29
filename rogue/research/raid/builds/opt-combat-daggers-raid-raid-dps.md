@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +87.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `raid-dps`: score +78.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -52,14 +52,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Core talents (priority order)
 
-1. **Puncturing Wounds** — Removing it costs 25.9 points of score in this model.
-2. **Adrenaline Rush** — Removing it costs 13.8 points of score in this model.
-3. **Relentless Strikes** — Removing it costs 13.5 points of score in this model.
-4. **Improved Slice and Dice** — Removing it costs 9.5 points of score in this model.
-5. **Malice** — Removing it costs 7.9 points of score in this model.
-6. **Hack and Slash** — Removing it costs 7.5 points of score in this model.
-7. **Ruthlessness** — Removing it costs 7.4 points of score in this model.
-8. **Precision** — Removing it costs 6.4 points of score in this model.
+1. **Puncturing Wounds** — Removing it costs 23.5 points of score in this model.
+2. **Relentless Strikes** — Removing it costs 12.1 points of score in this model.
+3. **Improved Slice and Dice** — Removing it costs 8.5 points of score in this model.
+4. **Adrenaline Rush** — Removing it costs 7.9 points of score in this model.
+5. **Malice** — Removing it costs 7.6 points of score in this model.
+6. **Hack and Slash** — Removing it costs 7.2 points of score in this model.
+7. **Ruthlessness** — Removing it costs 6.6 points of score in this model.
+8. **Precision** — Removing it costs 6.1 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -67,15 +67,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 16/33/2 | 414 | +0.0% | 741 | +0.0% | 0 s |
-| 2 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 410 | -1.1% | 731 | -1.3% | 0 s |
-| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 405 | -2.4% | 720 | -2.9% | 0 s |
-| 4 | *Backstab* | community simulator | - | 383 | -7.6% | 691 | -6.8% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 375 | -9.5% | 659 | -11.1% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 363 | -12.4% | 640 | -13.6% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -14.3% | 634 | -14.4% | 0 s |
-| 8 | *Sinister Strike* | community simulator | - | 343 | -17.2% | 644 | -13.0% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 261 | -37.0% | 505 | -31.8% | 0 s |
+| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 16/33/2 | 403 | +0.0% | 720 | +0.0% | 0 s |
+| 2 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 399 | -0.9% | 712 | -1.1% | 0 s |
+| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -2.1% | 702 | -2.5% | 0 s |
+| 4 | *Backstab* | community simulator | - | 371 | -7.8% | 672 | -6.6% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 371 | -7.9% | 648 | -10.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -10.8% | 630 | -12.5% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -13.8% | 620 | -13.8% | 0 s |
+| 8 | *Sinister Strike* | community simulator | - | 334 | -17.0% | 629 | -12.6% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -35.9% | 500 | -30.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,28 +91,28 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.6 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.5 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.7 |
-| 6 | cast Backstab | 12.7 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 |
+| 6 | cast Backstab | 11.8 |
 
 Damage by ability:
 
 | Ability | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 45% |
-| Backstab | 38% |
+| Auto Attack | 47% |
+| Backstab | 37% |
 | Deadly Poison | 6% |
-| Eviscerate | 4% |
 | Dense Sharpening Stone | 3% |
-| item 10646 | 2% |
+| Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
+| item 10646 | 2% |
 
 ## Notes
 
-- Allocation taken from cand-combat-daggers-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (414 vs 409 DPS; the calibration moved the model past the better build).
-- Report: rogue/talents/forever/optimizer/combat-daggers-raid-raid-dps.md
+- Allocation taken from cand-combat-daggers-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (403 vs 400 DPS; the calibration moved the model past the better build).
+- Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

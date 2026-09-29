@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +71.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +70.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -38,8 +38,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 | **Improved Frostbolt** | 5/5 | changed | Reduces the casting time of your Frostbolt spell by 0.5 sec. |
 | **Elemental Precision** | 5/5 | changed | Improves your chance to hit with Frost and Fire spells by 5%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
-| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
+| **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Frost Channeling** | 1/3 | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
@@ -49,10 +49,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 1. **Improved Frostbolt** — Removing it costs 21.9 points of score in this model.
 2. **Ice Shards** — Removing it costs 20.3 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 18.0 points of score in this model.
-4. **Winter's Chill** — Removing it costs 10.8 points of score in this model.
-5. **Ice Lance** — Removing it costs 10.8 points of score in this model.
-6. **Shatter** — Removing it costs 10.2 points of score in this model.
+3. **Fingers of Frost** — Removing it costs 18.1 points of score in this model.
+4. **Ice Lance** — Removing it costs 10.9 points of score in this model.
+5. **Winter's Chill** — Removing it costs 10.8 points of score in this model.
+6. **Shatter** — Removing it costs 10.3 points of score in this model.
 7. **Piercing Ice** — Removing it costs 8.4 points of score in this model.
 8. **Elemental Precision** — Removing it costs 8.3 points of score in this model.
 
@@ -62,7 +62,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: mage/talents/forever/optimizer/frost-raid-parse.md
+- Report: mage/research/talents/forever/optimizer/frost-raid-parse.md
 
 ## Open questions (verify in the live game)
 

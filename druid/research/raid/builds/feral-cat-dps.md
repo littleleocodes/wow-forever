@@ -75,10 +75,10 @@ Allocation adopted on 2026-09-26 from `opt-feral-cat-dps-raid-dps`, the best bui
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 356 | +0.0% | 567 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 356 | +0.0% | 567 | +0.0% | 0 s |
-| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 355 | -0.3% | 566 | -0.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 341 | -4.4% | 543 | -4.3% | 0 s |
+| 1 | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 350 | +0.0% | 556 | +0.0% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 350 | +0.0% | 556 | +0.0% | 0 s |
+| 3 | **[`feral-cat-dps`](feral-cat-dps.md)** | ours: hand draft | 9/32/10 | 349 | -0.4% | 555 | -0.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 335 | -4.5% | 533 | -4.2% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,16 +100,16 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-cat-dps`](feral-cat-dps.md) casts/min |
 |---|---|---|
-| 1 | cast Tiger's Fury | 2.5 |
+| 1 | cast Tiger's Fury | 2.3 |
 | 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 |
-| 5 | cast Shred | 17.4 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.6 |
+| 5 | cast Shred | 17.1 |
 | 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
-| 10 | if not Cat Form is up: cast Cat Form | 0.5 |
+| 10 | if not Cat Form is up: cast Cat Form | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast spell 13494, cast spell 23724, cast Innervate (its condition never held in these fights).
 
@@ -117,10 +117,10 @@ Damage by ability:
 
 | Ability | [`feral-cat-dps`](feral-cat-dps.md) |
 |---|---|
-| Rip | 35% |
+| Rip | 36% |
 | Shred | 31% |
 | Auto Attack | 30% |
-| item 10646 | 3% |
+| item 10646 | 2% |
 | Dragonbreath Chili | 1% |
 
 ## Notes

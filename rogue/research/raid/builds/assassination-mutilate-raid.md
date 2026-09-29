@@ -75,10 +75,10 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 413 | +0.0% | 693 | +0.0% | 0 s |
-| 2 | *Mutilate* | community simulator | - | 377 | -8.9% | 658 | -5.0% | 0 s |
-| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 31/20/0 | 375 | -9.3% | 657 | -5.1% | 0 s |
-| 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 364 | -11.9% | 639 | -7.8% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | +0.0% | 0 s |
+| 2 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
+| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 31/20/0 | 369 | -9.2% | 647 | -5.1% | 0 s |
+| 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -7.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -96,12 +96,12 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) casts/min |
 |---|---|---|
 | 1 | if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea | as ready |
-| 2 | cast Backstab | 11.3 |
+| 2 | cast Backstab | 10.9 |
 | 3 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 |
 | 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 |
 | 5 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.5 |
-| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.0 |
+| 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
+| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (its condition never held in these fights).
 
@@ -109,13 +109,13 @@ Damage by ability:
 
 | Ability | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) |
 |---|---|
-| Auto Attack | 44% |
+| Auto Attack | 45% |
 | Backstab | 31% |
-| Eviscerate | 10% |
+| Eviscerate | 9% |
 | Deadly Poison | 7% |
 | Dense Sharpening Stone | 4% |
-| item 10646 | 3% |
 | Dragonbreath Chili | 2% |
+| item 10646 | 2% |
 
 ## Notes
 

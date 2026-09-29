@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +78.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,9 +46,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 ## Core talents (priority order)
 
 1. **Lone Wolf** — Removing it costs 29.4 points of score in this model.
-2. **Efficiency** — Removing it costs 13.8 points of score in this model.
+2. **Efficiency** — Removing it costs 13.4 points of score in this model.
 3. **Lethal Attacks** — Removing it costs 9.6 points of score in this model.
-4. **Deadly Aspects** — Removing it costs 9.5 points of score in this model.
+4. **Deadly Aspects** — Removing it costs 9.6 points of score in this model.
 5. **Mortal Shots** — Removing it costs 9.5 points of score in this model.
 6. **Careful Aim** — Removing it costs 7.6 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 6.5 points of score in this model.
@@ -60,12 +60,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 434 | +0.0% | 848 | -4.4% | 65 s |
-| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 432 | -0.4% | 887 | +0.0% | 56 s |
-| 3 | *Marksmanship* | community simulator | - | 354 | -18.4% | 732 | -17.4% | 65 s |
-| 4 | *Marksmanship 0/39/12* | community simulator | - | 333 | -23.2% | 689 | -22.3% | 57 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 323 | -25.4% | 590 | -33.5% | 45 s |
-| 6 | *Survival 0/15/36* | community simulator | - | 309 | -28.8% | 594 | -33.1% | 52 s |
+| 1 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 420 | +0.0% | 841 | -4.1% | 107 s |
+| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 5/41/5 | 419 | -0.2% | 877 | +0.0% | 93 s |
+| 3 | *Marksmanship* | community simulator | - | 342 | -18.5% | 707 | -19.3% | 107 s |
+| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.2% | 666 | -24.1% | 98 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 315 | -25.1% | 583 | -33.5% | 79 s |
+| 6 | *Survival 0/15/36* | community simulator | - | 299 | -28.8% | 585 | -33.2% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,9 +86,9 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.0 |
-| 4 | cast Arcane Shot | 9.0 |
+| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
+| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 3.7 |
+| 4 | cast Arcane Shot | 8.4 |
 | 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
@@ -98,14 +98,14 @@ Damage by ability:
 | Ability | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) |
 |---|---|
 | Auto Shot | 54% |
-| Arcane Shot | 24% |
+| Arcane Shot | 23% |
 | Serpent Sting | 13% |
 | Aimed Shot | 9% |
 | Multi-Shot | 0% |
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md
+- Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

@@ -76,7 +76,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 484 | +0.0% | 560 | +0.0% | 1 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 478 | +0.0% | 550 | +0.0% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -90,24 +90,24 @@ Before the pull: at -1.5s: cast Life Tap.
 | 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.4 |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.6 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
-| 7 | if mana % < 10%: cast Life Tap | 6.6 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.6 |
+| 4 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 |
+| 7 | if mana % < 10%: cast Life Tap | 7.1 |
+| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.6 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 11 | if Immolate is on the target: cast Conflagrate | 4.4 |
-| 12 | cast Incinerate | 13.8 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 |
+| 11 | if Immolate is on the target: cast Conflagrate | 4.6 |
+| 12 | cast Incinerate | 13.1 |
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
-| Incinerate | 35% |
-| Corruption | 19% |
+| Incinerate | 34% |
+| Corruption | 20% |
 | Bane of Agony | 19% |
-| Immolate | 13% |
+| Immolate | 14% |
 | Conflagrate | 11% |
 | Shadowburn | 1% |
 | Searing Pain | 1% |

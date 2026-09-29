@@ -53,7 +53,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 3. **Deflection** — Removing it costs 5.9 points of score in this model.
 4. **Bastion** — Removing it costs 5.4 points of score in this model.
 5. **Improved Revenge** — Removing it costs 4.5 points of score in this model.
-6. **Focused Rage** — Removing it costs 3.9 points of score in this model.
+6. **Focused Rage** — Removing it costs 4.0 points of score in this model.
 7. **Anticipation** — Removing it costs 3.0 points of score in this model.
 8. **Improved Thunder Clap** — Removing it costs 2.9 points of score in this model.
 
@@ -63,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 649 | 1140 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 649 | 1140 |
-| 3 | *Protection* | community simulator | - | 0.952 | -4.8% | 614 | 1192 |
-| 4 | *Protection 1/0/50* | community simulator | - | 0.942 | -5.8% | 607 | 1202 |
+| 1 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 14/5/32 | 1.000 | +0.0% | 650 | 1164 |
+| 3 | *Protection* | community simulator | - | 0.952 | -4.8% | 615 | 1217 |
+| 4 | *Protection 1/0/50* | community simulator | - | 0.941 | -5.9% | 608 | 1229 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -79,12 +79,12 @@ Before the pull: at -1s: cast Battle Shout.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) casts/min |
 |---|---|---|
-| 1 | cast Shield Wall | 0.5 |
+| 1 | cast Shield Wall | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Revenge | 6.1 |
 | 4 | cast Shield Slam | 9.9 |
-| 5 | cast Thunder Clap | 9.6 |
-| 6 | if rage ≥ 45: cast Heroic Strike | 7.9 |
+| 5 | cast Thunder Clap | 9.7 |
+| 6 | if rage ≥ 45: cast Heroic Strike | 8.2 |
 | 7 | if not Rend is on the target: cast Rend | 2.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Sunder Armor (its condition never held in these fights).
@@ -94,7 +94,7 @@ Damage by ability (threat for tanks):
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
 | Shield Slam | 33% |
-| Auto Attack | 24% |
+| Auto Attack | 23% |
 | Heroic Strike | 16% |
 | Revenge | 14% |
 | Thunder Clap | 7% |
@@ -106,7 +106,7 @@ Damage by ability (threat for tanks):
 
 ## Notes
 
-- Report: warrior/talents/forever/optimizer/prot-tank-raid-tank.md
+- Report: warrior/research/talents/forever/optimizer/prot-tank-raid-tank.md
 
 ## Open questions (verify in the live game)
 

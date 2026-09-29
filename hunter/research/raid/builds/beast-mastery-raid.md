@@ -57,13 +57,13 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 469 | +0.0% | - | - | 10 s |
-| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 468 | -0.1% | 815 | +0.0% | 0 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.7% | 763 | -6.3% | 0 s |
+| 1 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 448 | +0.0% | 809 | +0.0% | 37 s |
+| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.8% | 42 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.9% | 30 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -87,19 +87,19 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](beast-mastery-raid.md) casts/min |
 |---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.5 |
-| 2 | cast Summon Hawk | 10.0 |
+| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
+| 2 | cast Summon Hawk | 9.0 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
 
 Damage by ability:
 
 | Ability | [`beast-mastery-raid`](beast-mastery-raid.md) |
 |---|---|
-| Auto Shot | 40% |
+| Auto Shot | 42% |
 | Summon Hawk | 28% |
-| Serpent Sting | 20% |
-| Pet: Auto Attack | 8% |
+| Serpent Sting | 18% |
+| Pet: Auto Attack | 9% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 

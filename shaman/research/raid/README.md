@@ -35,21 +35,21 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 398 | +0.0% | 499 | -1.1% | 0 s |
-| 2 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | -0.1% | 504 | +0.0% | 0 s |
-| 3 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.5% | 503 | -0.2% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 393 | -1.1% | 498 | -1.3% | 0 s |
-| 5 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.2% | 493 | -2.2% | 2 s |
-| 6 | *Level 60* | community simulator | - | 379 | -4.6% | 477 | -5.4% | 0 s |
+| 1 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 387 | +0.0% | 495 | +0.0% | 0 s |
+| 2 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 387 | +0.0% | 495 | +0.0% | 0 s |
+| 3 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 381 | -1.6% | 485 | -2.0% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 376 | -2.9% | 479 | -3.1% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 369 | -4.7% | 475 | -4.0% | 1 s |
+| 6 | *Level 60* | community simulator | - | 362 | -6.5% | 461 | -6.7% | 0 s |
 
 **enhancement-dps**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 415 | +0.0% | 774 | +0.0% | 7 s |
-| 2 | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 411 | -0.9% | 767 | -0.8% | 7 s |
-| 3 | *Level 60* | community simulator | - | 400 | -3.6% | 755 | -2.4% | 28 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 373 | -10.2% | 746 | -3.6% | 62 s |
+| 1 | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 394 | +0.0% | 757 | +0.0% | 42 s |
+| 2 | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -0.9% | 751 | -0.8% | 42 s |
+| 3 | *Level 60* | community simulator | - | 384 | -2.7% | 749 | -1.2% | 52 s |
+| 4 | *Enhancement 16/35/0* | community simulator | - | 365 | -7.4% | 726 | -4.1% | 99 s |
 
 **stormcaller-dps**
 
@@ -69,9 +69,9 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Call of the Elements | Elemental | 20 | - | Simultaneously places up to 4 totems specified in the Totem Bar. | not cast by any raced build | - | not cast | Drops several totems at once: utility. |
 | Call of the Spirits | Elemental | 40 | - | Simultaneously places up to 4 totems specified in the Totem Bar. | not cast by any raced build | - | not cast | Drops several totems at once: utility. |
 | Fire Nova | Elemental | 52 | 10 sec | Instantly inflicts 413 to 459 fire damage to enemies within 10 yd of your active Fire totem. | not cast by any raced build | enhancement-dps (raid): insert before the filler: cast Fire Nova (+7.3%); enhancement-dps (raid): move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight le (+0.2%) | no damage of its own, 0.5 casts a kill: `opt-enhancement-dps-leveling-aoe` at 60 (enhancement-dps-aoe) | Now a spell with a 10 s cooldown instead of a totem: area damage around the fire totem. |
-| Lava Burst | Elemental | 60 | 10 sec | You hurl molten lava at the target, dealing 192 to 248 Fire damage. | 15% of the damage, 4.4 casts/min: *Elemental 31/6/14* (elemental-dps) | - | 14% of the damage, 1.1 casts a kill: `opt-elemental-dps-leveling-st` at 60 (elemental-dps-opt) | A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it. |
+| Lava Burst | Elemental | 60 | 10 sec | You hurl molten lava at the target, dealing 192 to 248 Fire damage. | 16% of the damage, 4.7 casts/min: [`elemental-raid`](builds/elemental-raid.md) (elemental-dps) | - | 14% of the damage, 1.1 casts a kill: `opt-elemental-dps-leveling-st` at 60 (elemental-dps-opt) | A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it. |
 | Totemic Recall | Elemental | 20 | - | Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall. | not cast by any raced build | - | not cast | Utility. |
-| Rage of the Farseer | Enhancement | 40 | 3 min | Increases your attack speed by 30% for 25 sec. | no damage of its own, 0.5 casts/min: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps) | - | not cast | Enhancement cooldown: 30% attack speed for 25 s. |
+| Rage of the Farseer | Enhancement | 40 | 3 min | Increases your attack speed by 30% for 25 sec. | no damage of its own, 0.3 casts/min: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps) | - | not cast | Enhancement cooldown: 30% attack speed for 25 s. |
 | Totemic Projection | Enhancement | 22 | 1 min | Relocates your active totems to the specified location. | not cast by any raced build | - | not cast | Utility. |
 | Riptide | Restoration | 60 | 6 sec | Heals a friendly target for 799 to 883, an additional 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that targ… | not cast by any raced build | - | not cast | Healing. |
 | Water Shield | Restoration | 20 | 15 sec | The caster is surrounded by 3 globes of water. | not cast by any raced build | - | not cast | Mana on being hit. |
@@ -80,9 +80,9 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| The simulator's Elemental/Enhancement hybrid preset (Stormcaller) tuned as a target of its own | *Stormcaller 28/23/0* | - | 382 | 494 | -7.9% on the dummy; -36.2% in a raid. The talent search from the preset ended on our Elemental draft's talents (29/22/0): the hybrid is the Elemental build. | from `sim preset: Stormcaller 28/23/0`, 4 moves | - |
+| The simulator's Elemental/Enhancement hybrid preset (Stormcaller) tuned as a target of its own | *Stormcaller 28/23/0* | - | 382 | 494 | -3.1% on the dummy; -34.8% in a raid. The talent search from the preset ended on our Elemental draft's talents (29/22/0): the hybrid is the Elemental build. | from `sim preset: Stormcaller 28/23/0`, 4 moves | - |
 
-The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 415 DPS; in a raid: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 774 DPS.
+The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 394 DPS; in a raid: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 757 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -90,24 +90,33 @@ The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-rai
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `elemental-dps` | dummy | `elemental-raid` | 31/7/13 | 398 | +0.0% | 0 | +74% |
-| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 397 | -0.1% | 0 | +75% |
-| `elemental-dps` | dummy | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | -0.5% | 0 | +75% |
-| `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 393 | -1.1% | 0 | - |
-| `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 381 | -4.2% | 2 | - |
-| `elemental-dps` | dummy | sim preset: Level 60 | - | 379 | -4.6% | 0 | - |
-| `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 415 | +0.0% | 7 | +110% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r7` | 11/31/9 | 415 | +0.0% | 7 | +110% |
-| `enhancement-dps` | dummy | `enhancement-raid-dps` | 11/31/9 | 411 | -0.9% | 7 | +107% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r6` | 11/31/9 | 411 | -0.9% | 7 | +107% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r5` | 11/31/9 | 403 | -2.8% | 22 | +104% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r3` | 15/36/0 | 400 | -3.5% | 26 | +103% |
-| `enhancement-dps` | dummy | sim preset: Level 60 | - | 400 | -3.6% | 28 | - |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r4` | 8/32/11 | 399 | -3.8% | 30 | +104% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r2` | 18/33/0 | 398 | -4.1% | 26 | +102% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 395 | -4.8% | 36 | +104% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r1` | 14/37/0 | 392 | -5.5% | 39 | +101% |
-| `enhancement-dps` | dummy | sim preset: Enhancement 16/35/0 | - | 373 | -10.2% | 62 | - |
+| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 387 | +0.0% | 0 | +69% |
+| `elemental-dps` | dummy | `opt-elemental-dps-raid-dps` | 29/22/0 | 387 | +0.0% | 0 | +69% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r1` | 29/22/0 | 387 | +0.0% | 0 | +69% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r2` | 29/22/0 | 387 | +0.0% | 0 | +69% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r3` | 29/22/0 | 386 | -0.4% | 0 | +69% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r4` | 29/22/0 | 386 | -0.4% | 0 | +69% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r6` | 30/11/10 | 382 | -1.5% | 0 | +69% |
+| `elemental-dps` | dummy | `elemental-raid` | 31/7/13 | 381 | -1.6% | 0 | +71% |
+| `elemental-dps` | dummy | `cand-elemental-dps-spec-elemental` | 31/7/13 | 381 | -1.6% | 0 | +71% |
+| `elemental-dps` | dummy | `cand-elemental-dps-r7` | 31/7/13 | 381 | -1.8% | 0 | +71% |
+| `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 376 | -2.9% | 0 | - |
+| `elemental-dps` | dummy | `cand-elemental-dps-r5` | 16/22/13 | 374 | -3.5% | 0 | +65% |
+| `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 369 | -4.7% | 1 | - |
+| `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 367 | -5.3% | 0 | +64% |
+| `elemental-dps` | dummy | sim preset: Level 60 | - | 362 | -6.5% | 0 | - |
+| `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | +0.0% | 42 | +100% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r7` | 11/31/9 | 394 | +0.0% | 42 | +100% |
+| `enhancement-dps` | dummy | `enhancement-raid-dps` | 11/31/9 | 391 | -0.9% | 42 | +97% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r6` | 11/31/9 | 391 | -0.9% | 42 | +97% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r5` | 11/31/9 | 387 | -1.8% | 52 | +94% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r4` | 8/32/11 | 386 | -2.1% | 58 | +94% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r3` | 15/36/0 | 384 | -2.5% | 51 | +94% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 384 | -2.5% | 63 | +94% |
+| `enhancement-dps` | dummy | sim preset: Level 60 | - | 384 | -2.7% | 52 | - |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r2` | 18/33/0 | 382 | -3.1% | 51 | +93% |
+| `enhancement-dps` | dummy | `cand-enhancement-dps-r1` | 14/37/0 | 382 | -3.1% | 64 | +92% |
+| `enhancement-dps` | dummy | sim preset: Enhancement 16/35/0 | - | 365 | -7.4% | 99 | - |
 | `stormcaller-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 382 | +0.0% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
@@ -116,24 +125,25 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `elemental-dps` | 0.0-2.3% | 0.06 / 0.90 | 1.2 | Mindfulness 2.9%, Elemental Focus 1.3%, Shamanistic Focus 0.9%, Mana Tide Totem 0.6%, Convection 0.5% |
-| `enhancement-dps` | 1.1-6.4% | 0.39 / 0.90 | 1.0 | Shamanistic Focus 8.1%, Convection 2.4%, Elemental Focus 1.4%, Totemic Focus 0.8%, Improved Stormstrike 0.1% |
+| `elemental-dps` | 0.1-3.6% | 0.14 / 0.05 | 1.6 | Mindfulness 3.1%, Shamanistic Focus 2.3%, Elemental Focus 1.7%, Mana Tide Totem 1.1%, Convection 1.1% |
+| `enhancement-dps` | 4.5-8.2% | 0.38 / 0.90 | 1.0 | Shamanistic Focus 5.6%, Convection 1.3%, Elemental Focus 1.2%, Totemic Focus 0.3% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `elemental-dps` | `elemental-raid` | 31/7/13 | 398 | 479 | 499 | 528 | 531 |
-| `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 397 | 490 | 504 | 524 | 527 |
-| `elemental-dps` | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
-| `elemental-dps` | sim preset: Elemental 31/6/14 | - | 393 | 474 | 498 | 527 | 531 |
-| `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 381 | 471 | 493 | 512 | 518 |
-| `elemental-dps` | sim preset: Level 60 | - | 379 | 457 | 477 | 506 | 509 |
-| `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 11/31/9 | 415 | 466 | 774 | 771 | 812 |
-| `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 411 | 462 | 767 | 764 | 806 |
-| `enhancement-dps` | `opt-enhancement-dps-parse` | 10/31/10 | 404 | 452 | 775 | 773 | 823 |
-| `enhancement-dps` | sim preset: Level 60 | - | 400 | 460 | 755 | 760 | 804 |
-| `enhancement-dps` | sim preset: Enhancement 16/35/0 | - | 373 | 431 | 746 | 751 | 814 |
+| `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
+| `elemental-dps` | `opt-elemental-dps-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
+| `elemental-dps` | `opt-elemental-dps-parse` | 29/22/0 | 386 | 478 | 493 | 509 | 527 |
+| `elemental-dps` | `elemental-raid` | 31/7/13 | 381 | 459 | 485 | 510 | 531 |
+| `elemental-dps` | sim preset: Elemental 31/6/14 | - | 376 | 452 | 479 | 505 | 531 |
+| `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 369 | 456 | 475 | 490 | 518 |
+| `elemental-dps` | sim preset: Level 60 | - | 362 | 436 | 461 | 487 | 509 |
+| `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 444 | 757 | 755 | 812 |
+| `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 391 | 440 | 751 | 749 | 806 |
+| `enhancement-dps` | `opt-enhancement-dps-parse` | 10/31/10 | 390 | 437 | 752 | 749 | 823 |
+| `enhancement-dps` | sim preset: Level 60 | - | 384 | 443 | 749 | 753 | 804 |
+| `enhancement-dps` | sim preset: Enhancement 16/35/0 | - | 365 | 423 | 726 | 733 | 814 |
 | `stormcaller-dps` | sim preset: Stormcaller 28/23/0 | - | 382 | 472 | 494 | 512 | 520 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.

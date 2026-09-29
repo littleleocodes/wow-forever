@@ -21,7 +21,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 | Build | Split | Profile |
 |---|---|---|
 | [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 11/5/35 | raid-heal |
-| [opt-balance-dps-raid-dps](builds/opt-balance-dps-raid-dps.md) | 34/6/11 | raid-dps |
+| [opt-balance-dps-raid-dps](builds/opt-balance-dps-raid-dps.md) | 33/5/13 | raid-dps |
 | [opt-balance-dps-parse](builds/opt-balance-dps-parse.md) | 33/5/13 | parse |
 | [opt-feral-cat-dps-raid-dps](builds/opt-feral-cat-dps-raid-dps.md) | 9/35/7 | raid-dps |
 | [opt-feral-cat-dps-parse](builds/opt-feral-cat-dps-parse.md) | 9/35/7 | parse |
@@ -37,27 +37,27 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | ours: optimizer | 34/6/11 | 461 | +0.0% | 518 | +0.0% | 0 s |
-| 2 | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | ours: hand draft | 33/3/15 | 460 | -0.1% | 516 | -0.2% | 0 s |
-| 3 | *Balance* | community simulator | - | 411 | -10.8% | 464 | -10.5% | 0 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 402 | -12.7% | 510 | -1.4% | 12 s |
+| 1 | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | ours: optimizer | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
+| 2 | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | ours: hand draft | 33/3/15 | 435 | -0.8% | 510 | -0.2% | 5 s |
+| 3 | *Balance* | community simulator | - | 400 | -8.7% | 457 | -10.6% | 2 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 353 | -19.4% | 506 | -1.0% | 31 s |
 
 **feral-cat-dps**
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 356 | +0.0% | 567 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 356 | +0.0% | 567 | +0.0% | 0 s |
-| 3 | [`feral-cat-dps`](builds/feral-cat-dps.md) | ours: hand draft | 9/32/10 | 355 | -0.3% | 566 | -0.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 341 | -4.4% | 543 | -4.3% | 0 s |
+| 1 | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) | ours: optimizer | 9/35/7 | 350 | +0.0% | 556 | +0.0% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 350 | +0.0% | 556 | +0.0% | 0 s |
+| 3 | [`feral-cat-dps`](builds/feral-cat-dps.md) | ours: hand draft | 9/32/10 | 349 | -0.4% | 555 | -0.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 335 | -4.5% | 533 | -4.2% | 0 s |
 
 **feral-bear-tank** (tank)
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-bear-tank`](builds/feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
-| 2 | [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 607 | 1041 |
+| 1 | [`feral-bear-tank`](builds/feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
+| 2 | [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 614 | 1040 |
 
 ## New spells and builds
 
@@ -67,9 +67,9 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Spell | Tree | Level | Cooldown | What it does (beta tooltip) | Raid: the best raced build casting it (training dummy) | Rotation search: kept changes naming it | Leveling at the fight lab's top level | Note |
 |---|---|---|---|---|---|---|---|---|
-| Berserk | Feral Combat | 40 | 3 min | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generat… | no damage of its own, 0.5 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | - | not cast | Feral capstone (3 min): Primal Bite hits up to 3 targets without a cooldown, and combo-point builders get +100% crit for 15 s; the Cat drafts take it for the crit. |
+| Berserk | Feral Combat | 40 | 3 min | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generat… | no damage of its own, 0.3 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | - | not cast | Feral capstone (3 min): Primal Bite hits up to 3 targets without a cooldown, and combo-point builders get +100% crit for 15 s; the Cat drafts take it for the crit. |
 | Lacerate | Feral Combat | 58 | - | Lacerates the enemy target, making them bleed for 75 damage over 15 sec plus 10% weapon damage per existing application of Lacerate on the target. | 76% of the damage, 38.0 casts/min: [`feral-bear-tank`](builds/feral-bear-tank.md) (feral-bear-tank) | - | not cast | Bear bleed; the simulator's Bear rotation casts it. |
-| Primal Bite | Feral Combat | 60 | 6 sec | Bite the target for 100% normal damage plus 77. | 18% of the damage, 9.6 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | feral-bear-tank (raid): move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerat (+0.6%) | not cast | Forever's Mangle, a Feral talent. Bear and Dire Bear only (the client's shapeshift mask, which the simulator follows), so no Cat build can use it; the simulator's Bear rotation casts it. |
+| Primal Bite | Feral Combat | 60 | 6 sec | Bite the target for 100% normal damage plus 77. | 18% of the damage, 9.4 casts/min: *Bear Tank 0/31/20* (feral-bear-tank) | feral-bear-tank (raid): move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerat (+0.6%) | not cast | Forever's Mangle, a Feral talent. Bear and Dire Bear only (the client's shapeshift mask, which the simulator follows), so no Cat build can use it; the simulator's Bear rotation casts it. |
 | Revive | Restoration | 60 | - | Brings a dead player back to life with 750 health and 1,000 mana. | not cast by any raced build | - | not cast | Out-of-combat resurrection. |
 | Wild Growth | Restoration | 60 | 6 sec | Heals the target and their party for 679 over 7 sec. | not cast by any raced build | - | not cast | A party heal (the healer lab's druid heals with it). |
 
@@ -77,7 +77,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (balance-dps), 461 DPS; in a raid: [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (feral-cat-dps), 567 DPS.
+The class's best raid DPS build on the training dummy: [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (balance-dps), 438 DPS; in a raid: [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (feral-cat-dps), 556 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -85,39 +85,39 @@ The class's best raid DPS build on the training dummy: [`opt-balance-dps-raid-dp
 
 | Spec model | Setting | Build | Split | DPS | vs best | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `balance-dps` | dummy | `cand-balance-dps-r5` | 33/5/13 | 461 | +0.0% | 0 | +122% |
-| `balance-dps` | dummy | `opt-balance-dps-raid-dps` | 34/6/11 | 461 | -0.1% | 0 | +122% |
-| `balance-dps` | dummy | `cand-balance-dps-r7` | 34/6/11 | 461 | -0.1% | 0 | +122% |
-| `balance-dps` | dummy | `balance-moonkin-raid` | 33/3/15 | 460 | -0.2% | 0 | +121% |
-| `balance-dps` | dummy | `cand-balance-dps-r1` | 33/2/16 | 460 | -0.3% | 0 | +121% |
-| `balance-dps` | dummy | `cand-balance-dps-r3` | 33/2/16 | 460 | -0.3% | 0 | +121% |
-| `balance-dps` | dummy | `cand-balance-dps-r2` | 33/2/16 | 453 | -1.8% | 0 | +118% |
-| `balance-dps` | dummy | `cand-balance-dps-r4` | 33/5/13 | 451 | -2.3% | 0 | +115% |
-| `balance-dps` | dummy | `cand-balance-dps-hand-2026-09-26` | 46/0/5 | 429 | -7.0% | 3 | +98% |
-| `balance-dps` | dummy | `cand-balance-dps-r6` | 35/5/11 | 417 | -9.6% | 10 | +89% |
-| `balance-dps` | dummy | sim preset: Balance | - | 411 | -10.9% | 0 | - |
-| `balance-dps` | dummy | sim preset: Moonkin 38/0/13 | - | 402 | -12.8% | 12 | - |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r6` | 7/36/8 | 420 | +0.0% | 0 | +53% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-hand-2026-09-27` | 13/38/0 | 388 | -7.7% | 0 | +42% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r1` | 13/38/0 | 388 | -7.7% | 0 | +42% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r2` | 0/36/15 | 387 | -7.9% | 0 | +42% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r3` | 0/35/16 | 380 | -9.5% | 0 | +42% |
-| `feral-bear-tank` | raid | `feral-bear-tank` | 7/35/9 | 380 | -9.6% | 0 | +53% |
-| `feral-bear-tank` | raid | `opt-feral-bear-tank-raid-tank` | 7/35/9 | 380 | -9.6% | 0 | +53% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r4` | 7/35/9 | 380 | -9.6% | 0 | +53% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-r5` | 7/35/9 | 380 | -9.6% | 0 | +53% |
-| `feral-bear-tank` | raid | `cand-feral-bear-tank-hand-2026-09-26` | 9/32/10 | 370 | -11.8% | 0 | +32% |
-| `feral-bear-tank` | raid | sim preset: Bear Tank 0/31/20 | - | 360 | -14.3% | 0 | - |
-| `feral-cat-dps` | dummy | `opt-feral-cat-dps-raid-dps` | 9/35/7 | 356 | +0.0% | 0 | +109% |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r5` | 9/35/7 | 356 | +0.0% | 0 | +109% |
-| `feral-cat-dps` | dummy | sim preset: Feral Cat 9/35/7 | - | 356 | +0.0% | 0 | - |
-| `feral-cat-dps` | dummy | `feral-cat-dps` | 9/32/10 | 355 | -0.3% | 0 | +109% |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r4` | 9/32/10 | 355 | -0.3% | 0 | +109% |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r3` | 13/35/3 | 348 | -2.3% | 0 | +105% |
-| `feral-cat-dps` | dummy | sim preset: Feral | - | 341 | -4.4% | 0 | - |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-hand-2026-09-26` | 9/32/10 | 333 | -6.4% | 0 | +95% |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r2` | 9/32/10 | 307 | -13.8% | 0 | +78% |
-| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r1` | 9/31/11 | 299 | -16.2% | 0 | +73% |
+| `balance-dps` | dummy | `opt-balance-dps-raid-dps` | 33/5/13 | 438 | +0.0% | 4 | +128% |
+| `balance-dps` | dummy | `cand-balance-dps-r5` | 33/5/13 | 438 | +0.0% | 4 | +128% |
+| `balance-dps` | dummy | `balance-moonkin-raid` | 33/3/15 | 435 | -0.8% | 5 | +126% |
+| `balance-dps` | dummy | `cand-balance-dps-r1` | 33/2/16 | 433 | -1.2% | 6 | +125% |
+| `balance-dps` | dummy | `cand-balance-dps-r3` | 33/2/16 | 433 | -1.2% | 6 | +125% |
+| `balance-dps` | dummy | `cand-balance-dps-r2` | 33/2/16 | 426 | -2.8% | 6 | +122% |
+| `balance-dps` | dummy | `cand-balance-dps-r7` | 34/6/11 | 414 | -5.5% | 14 | +115% |
+| `balance-dps` | dummy | `cand-balance-dps-r4` | 33/5/13 | 411 | -6.3% | 9 | +111% |
+| `balance-dps` | dummy | sim preset: Balance | - | 400 | -8.7% | 2 | - |
+| `balance-dps` | dummy | `cand-balance-dps-hand-2026-09-26` | 46/0/5 | 371 | -15.4% | 23 | +94% |
+| `balance-dps` | dummy | `cand-balance-dps-r6` | 35/5/11 | 357 | -18.5% | 34 | +78% |
+| `balance-dps` | dummy | sim preset: Moonkin 38/0/13 | - | 353 | -19.4% | 31 | - |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r6` | 7/36/8 | 424 | +0.0% | 0 | +54% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-hand-2026-09-27` | 13/38/0 | 389 | -8.2% | 0 | +42% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r1` | 13/38/0 | 389 | -8.2% | 0 | +42% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r2` | 0/36/15 | 389 | -8.3% | 0 | +42% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r3` | 0/35/16 | 385 | -9.3% | 0 | +42% |
+| `feral-bear-tank` | raid | `feral-bear-tank` | 7/35/9 | 383 | -9.5% | 0 | +54% |
+| `feral-bear-tank` | raid | `opt-feral-bear-tank-raid-tank` | 7/35/9 | 383 | -9.5% | 0 | +54% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r4` | 7/35/9 | 383 | -9.5% | 0 | +54% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-r5` | 7/35/9 | 383 | -9.5% | 0 | +54% |
+| `feral-bear-tank` | raid | `cand-feral-bear-tank-hand-2026-09-26` | 9/32/10 | 372 | -12.1% | 0 | +33% |
+| `feral-bear-tank` | raid | sim preset: Bear Tank 0/31/20 | - | 362 | -14.6% | 0 | - |
+| `feral-cat-dps` | dummy | `opt-feral-cat-dps-raid-dps` | 9/35/7 | 350 | +0.0% | 0 | +108% |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r5` | 9/35/7 | 350 | +0.0% | 0 | +108% |
+| `feral-cat-dps` | dummy | sim preset: Feral Cat 9/35/7 | - | 350 | +0.0% | 0 | - |
+| `feral-cat-dps` | dummy | `feral-cat-dps` | 9/32/10 | 349 | -0.4% | 0 | +108% |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r4` | 9/32/10 | 349 | -0.4% | 0 | +108% |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r3` | 13/35/3 | 342 | -2.2% | 0 | +104% |
+| `feral-cat-dps` | dummy | sim preset: Feral | - | 335 | -4.5% | 0 | - |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-hand-2026-09-26` | 9/32/10 | 327 | -6.7% | 0 | +94% |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r2` | 9/32/10 | 303 | -13.4% | 0 | +78% |
+| `feral-cat-dps` | dummy | `cand-feral-cat-dps-r1` | 9/31/11 | 295 | -15.8% | 0 | +73% |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -125,23 +125,26 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `balance-dps` | 1.0-10.9% | 0.62 / 0.15 | 2.5 | Moonglow 14.0%, Reflection 1.9% |
-| `feral-cat-dps` | 0.0-0.5% | no limit (under 1% for every build) | - | - |
+| `balance-dps` | 5.0-22.3% | 0.76 / 0.26 | 2.1 | Moonglow 21.2%, Reflection 8.0% |
+| `feral-cat-dps` | 0.0-0.4% | no limit (under 1% for every build) | - | - |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `balance-dps` | `opt-balance-dps-parse` | 33/5/13 | 461 | 539 | 517 | 517 | 504 |
-| `balance-dps` | `opt-balance-dps-raid-dps` | 34/6/11 | 461 | 539 | 518 | 517 | 504 |
-| `balance-dps` | `balance-moonkin-raid` | 33/3/15 | 460 | 538 | 516 | 516 | 503 |
-| `balance-dps` | sim preset: Balance | - | 411 | 477 | 464 | 463 | 450 |
-| `balance-dps` | sim preset: Moonkin 38/0/13 | - | 402 | 479 | 510 | 509 | 502 |
-| `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 9/35/7 | 356 | 388 | 567 | 633 | 694 |
-| `feral-cat-dps` | `opt-feral-cat-dps-parse` | 9/35/7 | 356 | 388 | 567 | 633 | 694 |
-| `feral-cat-dps` | sim preset: Feral Cat 9/35/7 | - | 356 | 388 | 567 | 633 | 694 |
-| `feral-cat-dps` | `feral-cat-dps` | 9/32/10 | 355 | 387 | 566 | 631 | 693 |
-| `feral-cat-dps` | sim preset: Feral | - | 341 | 379 | 543 | 627 | 684 |
+| `balance-dps` | `opt-balance-dps-raid-dps` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
+| `balance-dps` | `opt-balance-dps-parse` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
+| `balance-dps` | `balance-moonkin-raid` | 33/3/15 | 435 | 514 | 510 | 509 | 503 |
+| `balance-dps` | sim preset: Balance | - | 400 | 469 | 457 | 456 | 450 |
+| `balance-dps` | sim preset: Moonkin 38/0/13 | - | 353 | 421 | 506 | 502 | 502 |
+| `feral-bear-tank` | `feral-bear-tank` | 7/35/9 | 201 | 223 | 383 | 383 | 373 |
+| `feral-bear-tank` | `opt-feral-bear-tank-raid-tank` | 7/35/9 | 201 | 223 | 383 | 383 | 373 |
+| `feral-bear-tank` | sim preset: Bear Tank 0/31/20 | - | 196 | 217 | 362 | 362 | 359 |
+| `feral-cat-dps` | `opt-feral-cat-dps-raid-dps` | 9/35/7 | 350 | 382 | 556 | 608 | 694 |
+| `feral-cat-dps` | `opt-feral-cat-dps-parse` | 9/35/7 | 350 | 382 | 556 | 608 | 694 |
+| `feral-cat-dps` | sim preset: Feral Cat 9/35/7 | - | 350 | 382 | 556 | 608 | 694 |
+| `feral-cat-dps` | `feral-cat-dps` | 9/32/10 | 349 | 381 | 555 | 606 | 693 |
+| `feral-cat-dps` | sim preset: Feral | - | 335 | 372 | 533 | 609 | 684 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

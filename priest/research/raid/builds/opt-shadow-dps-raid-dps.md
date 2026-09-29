@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +359.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +571.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Core talents (priority order)
 
-1. **Mind Flay** — Removing it costs 192.0 points of score in this model.
-2. **Shadowform** — Removing it costs 183.6 points of score in this model.
-3. **Shadow Weaving** — Removing it costs 37.7 points of score in this model.
-4. **Darkness** — Removing it costs 37.7 points of score in this model.
-5. **Improved Mind Flay** — Removing it costs 35.4 points of score in this model.
-6. **Shadow Focus** — Removing it costs 19.3 points of score in this model.
-7. **Improved Mind Blast** — Removing it costs 10.7 points of score in this model.
-8. **Improved Shadow Word: Pain** — Removing it costs 10.5 points of score in this model.
+1. **Mind Flay** — Removing it costs 317.8 points of score in this model.
+2. **Shadowform** — Removing it costs 304.6 points of score in this model.
+3. **Meditation** — Removing it costs 62.6 points of score in this model.
+4. **Shadow Weaving** — Removing it costs 61.0 points of score in this model.
+5. **Darkness** — Removing it costs 61.0 points of score in this model.
+6. **Improved Mind Flay** — Removing it costs 58.6 points of score in this model.
+7. **Shadow Focus** — Removing it costs 31.2 points of score in this model.
+8. **Improved Shadow Word: Pain** — Removing it costs 16.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,11 +63,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 554 | +0.0% | 636 | +0.0% | 0 s |
-| 2 | *Shadow 15/0/36* | community simulator | - | 545 | -1.7% | 625 | -1.7% | 0 s |
-| 3 | *Shadow* | community simulator | - | 545 | -1.8% | 625 | -1.7% | 0 s |
-| 4 | *Smite* | community simulator | - | 204 | -63.1% | 232 | -63.5% | 3 s |
-| 5 | *Smite 31/17/3* | community simulator | - | 204 | -63.1% | 232 | -63.5% | 3 s |
+| 1 | **[`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md)** | ours: optimizer | 20/0/31 | 556 | +0.0% | 638 | +0.0% | 0 s |
+| 2 | *Shadow* | community simulator | - | 543 | -2.2% | 624 | -2.2% | 0 s |
+| 3 | *Shadow 15/0/36* | community simulator | - | 511 | -8.0% | 623 | -2.4% | 23 s |
+| 4 | *Smite* | community simulator | - | 191 | -65.7% | 229 | -64.1% | 29 s |
+| 5 | *Smite 31/17/3* | community simulator | - | 191 | -65.7% | 229 | -64.1% | 29 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -83,11 +83,11 @@ Before the pull: at -1s: cast Shadowform.
 | # | Priority (the first line whose condition holds is cast) | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.8 |
+| 2 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 10: cast Shadow Word: Pain | 2.6 |
 | 3 | strict sequence: cast Inner Focus; cast Devouring Plague | 1.0 |
-| 4 | cast Shadow Word: Death | 4.0 |
+| 4 | cast Shadow Word: Death | 3.8 |
 | 5 | cast Mind Blast | 6.9 |
-| 6 | channelSpell | as ready |
+| 6 | channel Mind Flay | as ready |
 
 Lines of the simulator's rotation these builds never cast: Death (its condition never held in these fights).
 
@@ -95,7 +95,7 @@ Damage by ability:
 
 | Ability | [`opt-shadow-dps-raid-dps`](opt-shadow-dps-raid-dps.md) |
 |---|---|
-| Mind Flay | 44% |
+| Mind Flay | 45% |
 | Shadow Word: Pain | 21% |
 | Mind Blast | 20% |
 | Shadow Word: Death | 10% |
@@ -103,8 +103,8 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (554 vs 547 DPS; the calibration moved the model past the better build).
-- Report: priest/talents/forever/optimizer/shadow-dps-raid-dps.md
+- Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (556 vs 540 DPS; the calibration moved the model past the better build).
+- Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md
 
 ## Open questions (verify in the live game)
 

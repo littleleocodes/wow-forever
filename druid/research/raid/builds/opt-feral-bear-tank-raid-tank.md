@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-bear-tank` and profile `raid-tank`: score +53.7% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -63,9 +63,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
-| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 793 | 990 |
-| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 607 | 1041 |
+| 1 | [`feral-bear-tank`](feral-bear-tank.md) | ours: hand draft | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
+| 2 | **[`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md)** | ours: optimizer | 7/35/9 | 1.000 | +0.0% | 802 | 990 |
+| 3 | *Bear Tank 0/31/20* | community simulator | - | 0.859 | -14.1% | 614 | 1040 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -78,7 +78,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-be
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 |
-| 3 | if rage ≥ 50: cast Maul | 1.3 |
+| 3 | if rage ≥ 50: cast Maul | 1.5 |
 | 4 | cast Barkskin | 1.0 |
 | 5 | cast Lacerate | 38.0 |
 
@@ -89,8 +89,8 @@ Damage by ability (threat for tanks):
 | Ability | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) |
 |---|---|
 | Lacerate | 76% |
-| Auto Attack | 17% |
-| Maul | 3% |
+| Auto Attack | 16% |
+| Maul | 4% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |
@@ -98,7 +98,7 @@ Damage by ability (threat for tanks):
 
 ## Notes
 
-- Report: druid/talents/forever/optimizer/feral-bear-tank-raid-tank.md
+- Report: druid/research/talents/forever/optimizer/feral-bear-tank-raid-tank.md
 
 ## Open questions (verify in the live game)
 

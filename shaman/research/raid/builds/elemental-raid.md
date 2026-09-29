@@ -57,16 +57,16 @@ The best Elemental raid build with at least 30 points in Elemental, generated on
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`elemental-raid`](elemental-raid.md)** | ours: hand draft | 31/7/13 | 398 | +0.0% | - | - | 0 s |
-| 2 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | -0.1% | 504 | +0.0% | 0 s |
-| 3 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.5% | 503 | -0.2% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 393 | -1.1% | 498 | -1.3% | 0 s |
-| 5 | *Stormcaller 28/23/0* | community simulator | - | 381 | -4.2% | 493 | -2.2% | 2 s |
-| 6 | *Level 60* | community simulator | - | 379 | -4.6% | 477 | -5.4% | 0 s |
+| 1 | [`elemental-raid-dps`](elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 387 | +0.0% | 495 | +0.0% | 0 s |
+| 2 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 387 | +0.0% | 495 | +0.0% | 0 s |
+| 3 | **[`elemental-raid`](elemental-raid.md)** | ours: hand draft | 31/7/13 | 381 | -1.6% | 485 | -2.0% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 376 | -2.9% | 479 | -3.1% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 369 | -4.7% | 475 | -4.0% | 1 s |
+| 6 | *Level 60* | community simulator | - | 362 | -6.5% | 461 | -6.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,11 +86,11 @@ Before the pull: at -2s: cast Lightning Bolt.
 |---|---|---|
 | 1 | if number of targets = 1 and not Searing Totem is on the target and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock | 4.9 |
-| 4 | cast Lava Burst | 4.5 |
-| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.0 |
-| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 19.5 |
-| 7 | cast Lightning Bolt | 0.5 |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 5.0 |
+| 4 | cast Lava Burst | 4.7 |
+| 5 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.3 |
+| 6 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt | 11.8 |
+| 7 | cast Lightning Bolt | 10.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Magma Totem (its condition never held in these fights).
 
@@ -98,9 +98,9 @@ Damage by ability:
 
 | Ability | [`elemental-raid`](elemental-raid.md) |
 |---|---|
-| Lightning Bolt | 59% |
-| Flame Shock | 15% |
-| Lava Burst | 15% |
+| Lightning Bolt | 56% |
+| Flame Shock | 16% |
+| Lava Burst | 16% |
 | Attack | 7% |
 | Chain Lightning | 5% |
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +77.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +77.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,8 +48,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 21.9 points of score in this model.
-2. **Bane** — Removing it costs 15.6 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 22.0 points of score in this model.
+2. **Bane** — Removing it costs 15.8 points of score in this model.
 3. **Suppression** — Removing it costs 9.9 points of score in this model.
 4. **Agonizing Flames** — Removing it costs 8.9 points of score in this model.
 5. **Malevolence** — Removing it costs 8.8 points of score in this model.
@@ -63,7 +63,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/fire-destro-raid-parse.md
+- Report: warlock/research/talents/forever/optimizer/fire-destro-raid-parse.md
 
 ## Open questions (verify in the live game)
 

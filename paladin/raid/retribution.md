@@ -14,7 +14,7 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Hammer of Wrath**
+1. **Hammer of Wrath** when the target is below 20% health
 2. **Holy Strike**
 3. **Consecration**
 

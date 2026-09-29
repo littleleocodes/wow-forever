@@ -71,7 +71,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 0/35/16 | 514 | +0.0% | 590 | +0.0% | 1 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 0/35/16 | 463 | +0.0% | 556 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -89,29 +89,29 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Berserking | 0.5 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 5.1 |
+| 1 | cast Berserking | 0.3 |
+| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.3 |
 | 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if stacks of Hot Streak = 3: cast Pyroblast | 0.7 |
-| 6 | cast Fire Blast | 5.5 |
-| 7 | if mana % ≥ 10%: cast Frostfire Bolt | 12.3 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball | 3.8 |
-| 9 | cast Robe of the Archmage | as ready |
-| 10 | cast Scorch | 0.2 |
+| 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
+| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.5 |
+| 7 | cast Fire Blast | 5.6 |
+| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 13.7 |
+| 9 | if time left in the fight ≥ 3s: cast Fireball | 0.3 |
+| 10 | cast Robe of the Archmage | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Evocation, cast Arcane Missiles (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Arcane Missiles, cast Scorch (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Frostfire Bolt | 47% |
-| Fire Blast | 17% |
-| Ignite | 16% |
-| Scorch | 9% |
-| Fireball | 6% |
-| Pyroblast | 5% |
+| Frostfire Bolt | 55% |
+| Fire Blast | 18% |
+| Ignite | 15% |
+| Scorch | 8% |
+| Pyroblast | 4% |
+| Fireball | 0% |
 
 ## Notes
 

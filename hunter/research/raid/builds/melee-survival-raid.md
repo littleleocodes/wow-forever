@@ -74,12 +74,12 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 2** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 459 | +0.0% | 986 | +0.0% | 0 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 433 | -5.7% | 961 | -2.6% | 0 s |
+| 1 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 424 | +0.0% | 951 | -2.9% | 13 s |
+| 2 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 424 | -0.1% | 980 | +0.0% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,13 +92,13 @@ Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Aspect of the Beast | 0.5 |
+| 1 | cast Aspect of the Beast | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | cast Mongoose Bite | 12.4 |
-| 4 | cast Strider Kick | 6.7 |
-| 5 | cast Raptor Strike | 20.0 |
-| 6 | cast Immolation Trap | 3.5 |
-| 7 | cast Wing Clip | 22.9 |
+| 3 | cast Mongoose Bite | 11.3 |
+| 4 | cast Strider Kick | 5.7 |
+| 5 | cast Raptor Strike | 18.4 |
+| 6 | cast Immolation Trap | 2.7 |
+| 7 | cast Wing Clip | 19.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -106,12 +106,12 @@ Damage by ability:
 
 | Ability | [`melee-survival-raid`](melee-survival-raid.md) |
 |---|---|
-| Auto Attack | 42% |
+| Auto Attack | 45% |
 | Raptor Strike | 16% |
 | Mongoose Bite | 14% |
-| Immolation Trap | 11% |
+| Immolation Trap | 10% |
 | Strider Kick | 8% |
-| Wing Clip | 6% |
+| Wing Clip | 5% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

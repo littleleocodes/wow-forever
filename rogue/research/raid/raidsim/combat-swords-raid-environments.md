@@ -40,22 +40,22 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `combat-swords-raid` | 440 | 363 | 363 | 360 | 404 |
-| sim preset: Improved Expose Armor (SS) | 440 | 363 | 363 | 360 | 404 |
-| `opt-combat-swords-raid-raid-dps` | 418 | 345 | 349 | 343 | 385 |
-| `opt-combat-swords-raid-parse` | 418 | 345 | 349 | 343 | 385 |
-| sim preset: Sinister Strike | 416 | 341 | 342 | 343 | 379 |
-| sim preset: Combat Dual-Wield 15/33/3 | 405 | 337 | 339 | 335 | 374 |
-| sim preset: Assassination Mutilate 31/20/0 | 356 | 326 | 324 | 333 | 339 |
-| sim preset: Mutilate | 346 | 314 | 315 | 322 | 328 |
-| sim preset: Backstab | 357 | 293 | 293 | 292 | 324 |
-| sim preset: Subtlety Hemo 15/0/36 | 282 | 256 | 255 | 256 | 270 |
+| `combat-swords-raid` | 440 | 401 | 389 | 382 | 389 |
+| sim preset: Improved Expose Armor (SS) | 440 | 401 | 389 | 382 | 389 |
+| `opt-combat-swords-raid-raid-dps` | 418 | 381 | 370 | 364 | 371 |
+| `opt-combat-swords-raid-parse` | 418 | 381 | 370 | 364 | 371 |
+| sim preset: Sinister Strike | 416 | 379 | 366 | 361 | 367 |
+| sim preset: Combat Dual-Wield 15/33/3 | 405 | 371 | 360 | 354 | 361 |
+| sim preset: Assassination Mutilate 31/20/0 | 356 | 341 | 336 | 335 | 336 |
+| sim preset: Mutilate | 346 | 330 | 325 | 324 | 326 |
+| sim preset: Backstab | 357 | 325 | 314 | 309 | 314 |
+| sim preset: Subtlety Hemo 15/0/36 | 282 | 269 | 264 | 262 | 265 |
 
 Gear presets: raid `combat_sinister_strike_p1_bis.gear.json`, maximum `combat_sinister_strike_p2_bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

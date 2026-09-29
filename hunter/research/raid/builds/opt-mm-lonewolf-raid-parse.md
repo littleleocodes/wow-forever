@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +65.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +64.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -44,14 +44,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — Removing it costs 25.1 points of score in this model.
+1. **Lone Wolf** — Removing it costs 25.0 points of score in this model.
 2. **Mortal Shots** — Removing it costs 8.7 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 8.0 points of score in this model.
+3. **Lethal Attacks** — Removing it costs 7.9 points of score in this model.
 4. **Efficiency** — Removing it costs 7.4 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 6.9 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 6.8 points of score in this model.
 6. **Careful Aim** — Removing it costs 6.7 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 5.7 points of score in this model.
-8. **Improved Stings** — Removing it costs 4.9 points of score in this model.
+8. **Improved Stings** — Removing it costs 5.0 points of score in this model.
 
 ## Rotation
 
@@ -59,7 +59,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/mm-lonewolf-raid-parse.md
+- Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-parse.md
 
 ## Open questions (verify in the live game)
 

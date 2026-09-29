@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +86.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-daggers-raid` and profile `parse`: score +77.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -36,8 +36,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Endurance** | 1/2 | changed | Reduces the cooldown of your Sprint and Evasion abilities by 30%. |
-| **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
-| **Dual Wield Specialization** | 4/5 | changed | Increases the damage done by your off-hand weapon by 20%. |
+| **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
 | **Hack and Slash** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 5% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 5%.   Mace: Your attacks ignore 15% of  your target's armor. |
 | **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
 | **Aggression** | 3/3 | changed | Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 6%. |
@@ -52,14 +51,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Core talents (priority order)
 
-1. **Puncturing Wounds** — Removing it costs 25.5 points of score in this model.
-2. **Adrenaline Rush** — Removing it costs 13.8 points of score in this model.
-3. **Relentless Strikes** — Removing it costs 13.5 points of score in this model.
-4. **Improved Slice and Dice** — Removing it costs 9.4 points of score in this model.
-5. **Malice** — Removing it costs 7.8 points of score in this model.
-6. **Hack and Slash** — Removing it costs 7.4 points of score in this model.
-7. **Ruthlessness** — Removing it costs 7.3 points of score in this model.
-8. **Precision** — Removing it costs 6.4 points of score in this model.
+1. **Puncturing Wounds** — Removing it costs 23.1 points of score in this model.
+2. **Relentless Strikes** — Removing it costs 12.0 points of score in this model.
+3. **Improved Slice and Dice** — Removing it costs 8.4 points of score in this model.
+4. **Adrenaline Rush** — Removing it costs 7.9 points of score in this model.
+5. **Malice** — Removing it costs 7.4 points of score in this model.
+6. **Hack and Slash** — Removing it costs 7.0 points of score in this model.
+7. **Ruthlessness** — Removing it costs 6.6 points of score in this model.
+8. **Precision** — Removing it costs 6.1 points of score in this model.
 
 ## Rotation
 
@@ -67,7 +66,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: rogue/talents/forever/optimizer/combat-daggers-raid-parse.md
+- Report: rogue/research/talents/forever/optimizer/combat-daggers-raid-parse.md
 
 ## Open questions (verify in the live game)
 

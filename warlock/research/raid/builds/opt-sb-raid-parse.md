@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +82.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +82.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,11 +48,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 25.4 points of score in this model.
-2. **Bane** — Removing it costs 16.7 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 25.2 points of score in this model.
+2. **Bane** — Removing it costs 16.8 points of score in this model.
 3. **Agonizing Flames** — Removing it costs 11.3 points of score in this model.
 4. **Suppression** — Removing it costs 10.2 points of score in this model.
-5. **Malevolence** — Removing it costs 9.4 points of score in this model.
+5. **Malevolence** — Removing it costs 9.3 points of score in this model.
 6. **Improved Corruption** — Removing it costs 8.5 points of score in this model.
 7. **Ruin** — Removing it costs 8.3 points of score in this model.
 8. **Improved Shadow Bolt** — Removing it costs 8.1 points of score in this model.
@@ -63,7 +63,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/sb-raid-parse.md
+- Report: warlock/research/talents/forever/optimizer/sb-raid-parse.md
 
 ## Open questions (verify in the live game)
 

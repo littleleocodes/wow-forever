@@ -11,7 +11,7 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Shield Wall**
-2. **Revenge**
+2. **Revenge** after you block, dodge or parry
 3. **Shield Slam**
 4. **Thunder Clap**
 5. **Heroic Strike** when you have 45+ rage to spare

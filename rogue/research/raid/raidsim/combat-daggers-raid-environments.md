@@ -40,22 +40,22 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-combat-daggers-raid-raid-dps` | 453 | 376 | 379 | 379 | 420 |
-| `opt-combat-daggers-raid-parse` | 446 | 375 | 379 | 374 | 418 |
-| `combat-daggers-raid` | 447 | 373 | 377 | 373 | 418 |
-| sim preset: Combat Dual-Wield 15/33/3 | 440 | 369 | 373 | 369 | 412 |
-| sim preset: Backstab | 420 | 346 | 347 | 343 | 385 |
-| sim preset: Mutilate | 389 | 361 | 362 | 367 | 377 |
-| sim preset: Assassination Mutilate 31/20/0 | 374 | 352 | 351 | 356 | 366 |
-| sim preset: Improved Expose Armor (SS) | 381 | 329 | 331 | 329 | 362 |
-| sim preset: Sinister Strike | 377 | 309 | 317 | 317 | 348 |
-| sim preset: Subtlety Hemo 15/0/36 | 271 | 251 | 252 | 251 | 264 |
+| `opt-combat-daggers-raid-raid-dps` | 453 | 414 | 403 | 397 | 405 |
+| `opt-combat-daggers-raid-parse` | 446 | 410 | 400 | 393 | 401 |
+| `combat-daggers-raid` | 447 | 410 | 399 | 392 | 401 |
+| sim preset: Combat Dual-Wield 15/33/3 | 440 | 405 | 394 | 388 | 396 |
+| sim preset: Backstab | 420 | 383 | 371 | 364 | 371 |
+| sim preset: Mutilate | 389 | 375 | 371 | 370 | 372 |
+| sim preset: Assassination Mutilate 31/20/0 | 374 | 363 | 359 | 358 | 361 |
+| sim preset: Improved Expose Armor (SS) | 381 | 355 | 347 | 342 | 349 |
+| sim preset: Sinister Strike | 377 | 343 | 334 | 330 | 336 |
+| sim preset: Subtlety Hemo 15/0/36 | 271 | 261 | 258 | 256 | 259 |
 
 Gear presets: raid `combat_backstab_p1_bis.gear.json`, maximum `combat_backstab_p2_bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

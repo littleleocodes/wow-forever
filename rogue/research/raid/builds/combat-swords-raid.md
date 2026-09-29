@@ -77,15 +77,15 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32 | 401 | +0.0% | 700 | -1.1% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 401 | +0.0% | 700 | -1.1% | 0 s |
-| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 381 | -5.0% | 708 | -0.1% | 0 s |
-| 4 | *Sinister Strike* | community simulator | - | 379 | -5.7% | 708 | +0.0% | 0 s |
-| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 371 | -7.6% | 694 | -2.1% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 341 | -15.0% | 623 | -12.1% | 0 s |
-| 7 | *Mutilate* | community simulator | - | 330 | -17.8% | 611 | -13.7% | 0 s |
-| 8 | *Backstab* | community simulator | - | 325 | -19.0% | 631 | -10.9% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 271 | -32.4% | 521 | -26.5% | 0 s |
+| 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32 | 389 | +0.0% | 680 | -1.2% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 389 | +0.0% | 680 | -1.2% | 0 s |
+| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 370 | -4.7% | 688 | +0.0% | 0 s |
+| 4 | *Sinister Strike* | community simulator | - | 366 | -5.8% | 686 | -0.2% | 0 s |
+| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 360 | -7.3% | 674 | -2.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 336 | -13.7% | 612 | -11.1% | 0 s |
+| 7 | *Mutilate* | community simulator | - | 325 | -16.4% | 600 | -12.8% | 0 s |
+| 8 | *Backstab* | community simulator | - | 314 | -19.1% | 614 | -10.7% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 267 | -31.4% | 512 | -25.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -102,22 +102,22 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 |---|---|---|
 | 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.2 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.5 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.3 |
-| 6 | cast Sinister Strike | 19.2 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.0 |
+| 6 | cast Sinister Strike | 17.9 |
 
 Damage by ability:
 
 | Ability | [`combat-swords-raid`](combat-swords-raid.md) |
 |---|---|
-| Auto Attack | 50% |
-| Sinister Strike | 31% |
-| Eviscerate | 7% |
+| Auto Attack | 53% |
+| Sinister Strike | 30% |
+| Eviscerate | 6% |
 | Deadly Poison | 4% |
 | Dense Sharpening Stone | 3% |
-| item 10646 | 2% |
 | Dragonbreath Chili | 2% |
+| item 10646 | 2% |
 
 ## Notes
 

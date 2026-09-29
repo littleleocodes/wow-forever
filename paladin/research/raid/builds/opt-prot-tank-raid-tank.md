@@ -64,11 +64,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 561 | 976 |
-| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 561 | 976 |
-| 3 | *Protection 0/45/6* | community simulator | - | 0.919 | -8.1% | 490 | 1010 |
-| 4 | *P4 Prot* | community simulator | - | 0.899 | -10.1% | 503 | 1081 |
-| 5 | *P5 Prot* | community simulator | - | 0.893 | -10.7% | 497 | 1083 |
+| 1 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
+| 2 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 0/23/28 | 1.000 | +0.0% | 537 | 993 |
+| 3 | *Protection 0/45/6* | community simulator | - | 0.910 | -9.0% | 459 | 1027 |
+| 4 | *P4 Prot* | community simulator | - | 0.890 | -11.0% | 472 | 1100 |
+| 5 | *P5 Prot* | community simulator | - | 0.883 | -11.7% | 465 | 1103 |
 
 ## Rotation (community simulator, raid setting)
 
@@ -83,13 +83,13 @@ Before the pull: at -30s: cast Righteous Fury; at -3.5s: cast Seal of Righteousn
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) casts/min |
 |---|---|---|
-| 1 | cast Templar's Bulwark | 0.5 |
+| 1 | cast Templar's Bulwark | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.5 |
-| 4 | cast Consecration | 6.5 |
-| 5 | cast Holy Strike | 5.6 |
-| 6 | if health % < 10%: cast Lay on Hands | 0.5 |
-| 7 | cast Retribution Aura | 25.3 |
+| 3 | if time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness | 2.3 |
+| 4 | cast Consecration | 6.6 |
+| 5 | cast Holy Strike | 5.7 |
+| 6 | if health % < 10%: cast Lay on Hands | 0.3 |
+| 7 | cast Retribution Aura | 25.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Holy Shield (needs the Holy Shield talent); cast Judgement (its condition never held in these fights).
 
@@ -97,19 +97,19 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Auto Attack | 25% |
+| Auto Attack | 27% |
 | Seal of Righteousness | 16% |
-| Consecration | 14% |
-| Lay on Hands | 13% |
+| Consecration | 15% |
 | Judgement of Righteousness | 12% |
-| Holy Strike | 10% |
+| Holy Strike | 11% |
+| Lay on Hands | 9% |
 | Retribution Aura | 5% |
 | OtherActionManaGain | 4% |
 | Thorns | 1% |
 
 ## Notes
 
-- Report: paladin/talents/forever/optimizer/prot-tank-raid-tank.md
+- Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md
 
 ## Open questions (verify in the live game)
 

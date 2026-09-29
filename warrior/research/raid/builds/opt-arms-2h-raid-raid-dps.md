@@ -1,21 +1,21 @@
-# Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps) — 19/32/0
+# Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps) — 20/31/0
 
 *[Warrior](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 19/32/0 (Arms / Fury / Protection) |
+| **Build** | 20/31/0 (Arms / Fury / Protection) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +79.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +62.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Arms (19)
+### Arms (20)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -24,10 +24,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
+| **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
 | **Impale** | 2/2 | changed | Increases the critical strike damage bonus of your abilities by 20%. |
-| **Two-Handed Weapon Specialization** | 2/3 | changed | Increases the damage you deal with two-handed melee weapons by 2%. |
 
-### Fury (32)
+### Fury (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -35,7 +35,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | **Booming Voice** | 2/5 | changed | Increases the radius of your Battle Shout and Demoralizing Shout abilities by 20%. |
 | **Unbridled Wrath** | 5/5 | changed | Gives you a 60% chance to generate 1 additional Rage when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons. |
 | **Boundless Rage** | 3/3 | **NEW** | Increases your maximum Rage by 30. |
-| **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
+| **Improved Execute** | 1/2 | changed | Reduces the Rage cost of your Execute ability by 3. |
 | **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
 | **Death Wish** | 1/1 | changed | When activated, increases your Physical damage done by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec. |
 | **Precision** | 3/3 | **NEW** | Improves your chance to hit by 3%. |
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 ## Core talents (priority order)
 
-1. **Flurry** — Removing it costs 22.3 points of score in this model.
-2. **Death Wish** — Removing it costs 14.4 points of score in this model.
-3. **Cruelty** — Removing it costs 10.2 points of score in this model.
-4. **Deep Wounds** — Removing it costs 8.8 points of score in this model.
-5. **Bloodthirst** — Removing it costs 8.5 points of score in this model.
-6. **Improved Execute** — Removing it costs 8.2 points of score in this model.
-7. **Precision** — Removing it costs 5.7 points of score in this model.
-8. **Impale** — Removing it costs 5.2 points of score in this model.
+1. **Flurry** — Removing it costs 15.4 points of score in this model.
+2. **Bloodthirst** — Removing it costs 13.5 points of score in this model.
+3. **Cruelty** — Removing it costs 13.4 points of score in this model.
+4. **Deep Wounds** — Removing it costs 10.1 points of score in this model.
+5. **Precision** — Removing it costs 5.1 points of score in this model.
+6. **Two-Handed Weapon Specialization** — Removing it costs 4.7 points of score in this model.
+7. **Unbridled Wrath** — Removing it costs 4.3 points of score in this model.
+8. **Anger Management** — Removing it costs 2.4 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,11 +63,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 218 | +0.0% | 456 | +0.0% | 0 s |
-| 2 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 216 | -0.6% | 455 | -0.3% | 0 s |
-| 3 | *DPS* | community simulator | - | 196 | -10.1% | 427 | -6.5% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 190 | -12.7% | 411 | -9.9% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 166 | -23.5% | 376 | -17.7% | 0 s |
+| 1 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 169 | +0.0% | 407 | -0.3% | 0 s |
+| 2 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 168 | -0.9% | 408 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 162 | -4.2% | 385 | -5.7% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 158 | -6.7% | 372 | -8.9% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 153 | -9.4% | 365 | -10.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,20 +91,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if execute phase (E20): cast Execute | 4.6 |
+| 1 | if execute phase (E20): cast Execute | 3.6 |
 | 2 | cast Goblin Sapper Charge | as ready |
 | 3 | cast Dense Dynamite | as ready |
-| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 |
+| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.2 |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | if number of targets > 1: cast Whirlwind | 3.3 |
-| 11 | cast Bloodthirst | 2.4 |
-| 12 | cast Whirlwind | 3.3 |
-| 13 | if not Battle Shout is up: cast Battle Shout | 0.5 |
-| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
+| 10 | if number of targets > 1: cast Whirlwind | 3.5 |
+| 11 | cast Bloodthirst | 2.9 |
+| 12 | cast Whirlwind | 3.5 |
+| 13 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -112,16 +112,17 @@ Damage by ability:
 
 | Ability | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 44% |
-| Execute | 37% |
-| Whirlwind | 8% |
-| Bloodthirst | 5% |
-| Deep Wound | 5% |
+| Auto Attack | 53% |
+| Execute | 19% |
+| Whirlwind | 12% |
+| Bloodthirst | 9% |
+| Deep Wound | 7% |
 | Dragonbreath Chili | 1% |
+| Hamstring | 0% |
 
 ## Notes
 
-- Report: warrior/talents/forever/optimizer/arms-2h-raid-raid-dps.md
+- Report: warrior/research/talents/forever/optimizer/arms-2h-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

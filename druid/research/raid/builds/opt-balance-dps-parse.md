@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `parse`: score +104.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `parse`: score +93.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -26,8 +26,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
 | **Nature's Splendor** | 1/1 | **NEW** | Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec. |
 | **Insect Swarm** | 1/1 | changed | The enemy target is swarmed by insects, decreasing their chance to hit with attacks by 2% and causing 48 Nature damage over 12 sec. |
-| **Improved Starfire** | 5/5 | changed | Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec. |
 | **Vengeance** | 5/5 | changed | Increases the critical strike damage bonus of your Arcane and Nature spells by 100%. |
+| **Improved Starfire** | 5/5 | changed | Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec. |
 | **Nature's Grace** | 1/1 | changed | All non-periodic spell criticals grace you with a blessing of nature, increasing your spellcasting speed and reducing your global cooldown by 10% for 3 sec. |
 | **Moonfury** | 5/5 | changed | Increases the damage done by your Arcane and Nature spells by 10%. |
 | **Moonkin Form** | 1/1 | changed | Transforms the Druid into Moonkin Form. While in this form, the armor contribution from items is increased by 360%, Omen of Clarity gains 100% increased chance to trigger, and all party members within 45 yards have their critical strike chance increased by 3%, exclusive with Leader of the Pack. The Moonkin cannot cast healing spells while shapeshifted.  The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects. |
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Core talents (priority order)
 
-1. **Vengeance** — Removing it costs 19.5 points of score in this model.
-2. **Improved Starfire** — Removing it costs 19.5 points of score in this model.
-3. **Moonfury** — Removing it costs 17.3 points of score in this model.
-4. **Insect Swarm** — Removing it costs 14.9 points of score in this model.
-5. **Moonglow** — Removing it costs 10.4 points of score in this model.
-6. **Naturalist** — Removing it costs 9.1 points of score in this model.
-7. **Nature's Reach** — Removing it costs 8.8 points of score in this model.
-8. **Improved Moonfire** — Removing it costs 6.7 points of score in this model.
+1. **Vengeance** — Removing it costs 20.3 points of score in this model.
+2. **Moonfury** — Removing it costs 16.3 points of score in this model.
+3. **Insect Swarm** — Removing it costs 15.6 points of score in this model.
+4. **Moonglow** — Removing it costs 11.1 points of score in this model.
+5. **Moonkin Form** — Removing it costs 10.6 points of score in this model.
+6. **Naturalist** — Removing it costs 8.5 points of score in this model.
+7. **Nature's Reach** — Removing it costs 8.3 points of score in this model.
+8. **Improved Starfire** — Removing it costs 8.0 points of score in this model.
 
 ## Rotation
 
@@ -63,7 +63,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: druid/talents/forever/optimizer/balance-dps-parse.md
+- Report: druid/research/talents/forever/optimizer/balance-dps-parse.md
 
 ## Open questions (verify in the live game)
 

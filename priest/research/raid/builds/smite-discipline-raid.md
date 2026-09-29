@@ -75,9 +75,9 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 315 | +0.0% | 477 | +0.0% | 3 s |
-| 2 | *Smite* | community simulator | - | 313 | -0.6% | 471 | -1.2% | 3 s |
-| 3 | *Smite 31/17/3* | community simulator | - | 313 | -0.6% | 471 | -1.2% | 3 s |
+| 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 296 | +0.0% | 457 | +0.0% | 22 s |
+| 2 | *Smite* | community simulator | - | 294 | -0.7% | 451 | -1.2% | 22 s |
+| 3 | *Smite 31/17/3* | community simulator | - | 294 | -0.7% | 451 | -1.2% | 22 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -114,13 +114,13 @@ Before the pull: at -3s: cast Holy Fire.
 | # | Priority (the first line whose condition holds is cast) | [`smite-discipline-raid`](smite-discipline-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | strict sequence: cast Inner Focus; cast Devouring Plague | 1.0 |
-| 3 | if time left on Holy Fire < 1.25s: cast Holy Fire | 5.0 |
-| 4 | strict sequence: cast Inner Focus; cast Smite | 0.5 |
-| 5 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.6 |
-| 6 | cast Penance | 4.9 |
-| 7 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.6 |
-| 8 | cast Smite | 20.1 |
+| 2 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
+| 3 | if time left on Holy Fire < 1.25s: cast Holy Fire | 4.9 |
+| 4 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
+| 5 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.2 |
+| 6 | cast Penance | 4.2 |
+| 7 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.2 |
+| 8 | cast Smite | 21.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Smite (its condition never held in these fights).
 
@@ -128,11 +128,11 @@ Damage by ability:
 
 | Ability | [`smite-discipline-raid`](smite-discipline-raid.md) |
 |---|---|
-| Smite | 30% |
-| Shadow Word: Pain | 27% |
-| Penance | 22% |
-| Holy Fire | 18% |
-| Devouring Plague | 4% |
+| Smite | 34% |
+| Shadow Word: Pain | 26% |
+| Penance | 19% |
+| Holy Fire | 19% |
+| Devouring Plague | 3% |
 
 ## Notes
 

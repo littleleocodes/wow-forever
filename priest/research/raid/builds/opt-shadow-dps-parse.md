@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +337.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +213.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -21,9 +21,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 |---|---|---|---|
 | **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
 | **Power in Light** | 5/5 | **NEW** | Your Smite and Penance spells deal 10% increased damage to targets afflicted with your Holy Fire. |
-| **Wand Specialization** | 1/2 | changed | Increases your damage with Wands by 13%. |
 | **Inner Focus** | 1/1 | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect. |
-| **Mental Agility** | 3/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 10%. |
+| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
 | **Mental Strength** | 3/5 | changed | Increases your total Intellect by 9%. |
 
 ### Holy (0)
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Core talents (priority order)
 
-1. **Mind Flay** — Removing it costs 192.0 points of score in this model.
-2. **Shadowform** — Removing it costs 162.5 points of score in this model.
-3. **Shadow Weaving** — Removing it costs 37.7 points of score in this model.
-4. **Darkness** — Removing it costs 37.7 points of score in this model.
-5. **Improved Mind Flay** — Removing it costs 35.4 points of score in this model.
-6. **Shadow Focus** — Removing it costs 19.3 points of score in this model.
-7. **Improved Mind Blast** — Removing it costs 10.7 points of score in this model.
-8. **Improved Shadow Word: Pain** — Removing it costs 10.3 points of score in this model.
+1. **Mind Flay** — Removing it costs 142.2 points of score in this model.
+2. **Shadowform** — Removing it costs 37.1 points of score in this model.
+3. **Shadow Weaving** — Removing it costs 27.3 points of score in this model.
+4. **Darkness** — Removing it costs 27.3 points of score in this model.
+5. **Improved Mind Flay** — Removing it costs 26.2 points of score in this model.
+6. **Shadow Focus** — Removing it costs 14.0 points of score in this model.
+7. **Improved Shadow Word: Pain** — Removing it costs 7.5 points of score in this model.
+8. **Twin Disciplines** — Removing it costs 4.9 points of score in this model.
 
 ## Rotation
 
@@ -64,7 +64,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: priest/talents/forever/optimizer/shadow-dps-parse.md
+- Report: priest/research/talents/forever/optimizer/shadow-dps-parse.md
 
 ## Open questions (verify in the live game)
 

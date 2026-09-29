@@ -40,22 +40,22 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-sb-raid-raid-dps` | 628 | 520 | 550 | 508 | 527 |
-| `ds-ruin-raid` | 634 | 514 | 549 | 503 | 522 |
-| `opt-sb-raid-parse` | 645 | 502 | 539 | 497 | 514 |
-| sim preset: DS/Ruin Pandemic 24/11/16 | 602 | 493 | 527 | 485 | 500 |
-| sim preset: DS/Ruin | 589 | 490 | 520 | 485 | 499 |
-| sim preset: Shadow and Flame 13/11/27 | 564 | 467 | 497 | 456 | 473 |
-| sim preset: Deep Affliction 35/0/16 | 511 | 435 | 467 | 438 | 445 |
-| sim preset: Demonic Pact 2/31/18 | 511 | 422 | 453 | 412 | 432 |
-| sim preset: Affliction | 500 | 432 | 461 | 434 | 441 |
-| sim preset: Demonic Pact | 505 | 425 | 454 | 415 | 433 |
+| `opt-sb-raid-raid-dps` | 628 | 574 | 566 | 552 | 543 |
+| `ds-ruin-raid` | 634 | 574 | 566 | 550 | 541 |
+| `opt-sb-raid-parse` | 645 | 573 | 562 | 546 | 535 |
+| sim preset: DS/Ruin Pandemic 24/11/16 | 602 | 547 | 540 | 526 | 518 |
+| sim preset: DS/Ruin | 589 | 539 | 533 | 521 | 513 |
+| sim preset: Shadow and Flame 13/11/27 | 564 | 516 | 509 | 496 | 488 |
+| sim preset: Deep Affliction 35/0/16 | 511 | 473 | 471 | 462 | 457 |
+| sim preset: Demonic Pact 2/31/18 | 511 | 466 | 462 | 449 | 444 |
+| sim preset: Affliction | 500 | 466 | 464 | 457 | 452 |
+| sim preset: Demonic Pact | 505 | 465 | 461 | 450 | 444 |
 
 Gear presets: raid `mc.gear.json`, maximum `mc.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

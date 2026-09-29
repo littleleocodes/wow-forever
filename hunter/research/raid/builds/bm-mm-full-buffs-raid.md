@@ -74,13 +74,13 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `bm-mm-raid
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 428 | +0.0% | 766 | -6.1% | 45 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 425 | -0.5% | 769 | -5.8% | 44 s |
-| 3 | *Marksmanship* | community simulator | - | 400 | -6.4% | 816 | +0.0% | 60 s |
-| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 20/31/0 | 395 | -7.6% | 809 | -0.9% | 54 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 381 | -10.9% | 698 | -14.4% | 53 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 368 | -14.0% | 740 | -9.3% | 54 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 343 | -19.9% | 649 | -20.4% | 52 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | +0.0% | 761 | -3.4% | 78 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 413 | -0.5% | 758 | -3.8% | 76 s |
+| 3 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
+| 4 | **[`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md)** | ours: hand draft | 20/31/0 | 386 | -7.0% | 784 | -0.5% | 93 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -10.7% | 691 | -12.4% | 92 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -14.3% | 719 | -8.8% | 94 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 335 | -19.2% | 640 | -18.8% | 91 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,10 +99,10 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 7.6 |
+| 1 | cast Arcane Shot | 7.4 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.3 |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 3.9 |
 | 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.1 |
 | 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 |
 
@@ -113,7 +113,7 @@ Damage by ability:
 | Auto Shot | 50% |
 | Arcane Shot | 19% |
 | Serpent Sting | 10% |
-| Aimed Shot | 10% |
+| Aimed Shot | 9% |
 | Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 0% |

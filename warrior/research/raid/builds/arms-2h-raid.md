@@ -76,11 +76,11 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 218 | +0.0% | 456 | +0.0% | 0 s |
-| 2 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 216 | -0.6% | 455 | -0.3% | 0 s |
-| 3 | *DPS* | community simulator | - | 196 | -10.1% | 427 | -6.5% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 190 | -12.7% | 411 | -9.9% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 166 | -23.5% | 376 | -17.7% | 0 s |
+| 1 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 169 | +0.0% | 407 | -0.3% | 0 s |
+| 2 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 168 | -0.9% | 408 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 162 | -4.2% | 385 | -5.7% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 158 | -6.7% | 372 | -8.9% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 153 | -9.4% | 365 | -10.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -104,33 +104,33 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](arms-2h-raid.md) casts/min |
 |---|---|---|
-| 1 | if execute phase (E20): cast Execute | 4.6 |
+| 1 | if execute phase (E20): cast Execute | 3.9 |
 | 2 | cast Goblin Sapper Charge | as ready |
 | 3 | cast Dense Dynamite | as ready |
-| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 |
-| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 4 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 5 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | if number of targets > 1: cast Whirlwind | 3.3 |
-| 11 | cast Bloodthirst | 2.4 |
-| 12 | cast Whirlwind | 3.3 |
-| 13 | if not Battle Shout is up: cast Battle Shout | 0.5 |
-| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
+| 8 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
+| 9 | if number of targets > 1: cast Whirlwind | 3.5 |
+| 10 | cast Bloodthirst | 2.9 |
+| 11 | cast Whirlwind | 3.5 |
+| 12 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Death Wish, cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
 | Ability | [`arms-2h-raid`](arms-2h-raid.md) |
 |---|---|
-| Auto Attack | 44% |
-| Execute | 36% |
-| Whirlwind | 8% |
-| Bloodthirst | 5% |
-| Deep Wound | 5% |
+| Auto Attack | 52% |
+| Execute | 20% |
+| Whirlwind | 12% |
+| Bloodthirst | 9% |
+| Deep Wound | 7% |
 | Dragonbreath Chili | 1% |
+| Hamstring | 0% |
 
 ## Notes
 

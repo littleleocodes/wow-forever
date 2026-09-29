@@ -70,10 +70,10 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 415 | +0.0% | 774 | +0.0% | 7 s |
-| 2 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 411 | -0.9% | 767 | -0.8% | 7 s |
-| 3 | *Level 60* | community simulator | - | 400 | -3.6% | 755 | -2.4% | 28 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 373 | -10.2% | 746 | -3.6% | 62 s |
+| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 394 | +0.0% | 757 | +0.0% | 42 s |
+| 2 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 391 | -0.9% | 751 | -0.8% | 42 s |
+| 3 | *Level 60* | community simulator | - | 384 | -2.7% | 749 | -1.2% | 52 s |
+| 4 | *Enhancement 16/35/0* | community simulator | - | 365 | -7.4% | 726 | -4.1% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -93,24 +93,24 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 
 | # | Priority (the first line whose condition holds is cast) | [`enhancement-raid-dps`](enhancement-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.5 |
-| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.5 |
+| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
+| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 14.3 |
+| 4 | cast Stormstrike | 13.9 |
 | 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.9 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
-| 8 | cast Earth Shock | 5.0 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.6 |
+| 8 | cast Earth Shock | 3.9 |
 
 Damage by ability:
 
 | Ability | [`enhancement-raid-dps`](enhancement-raid-dps.md) |
 |---|---|
-| Auto Attack | 33% |
-| Windfury Weapon | 21% |
+| Auto Attack | 34% |
+| Windfury Weapon | 22% |
 | Stormstrike | 13% |
-| Earth Shock | 9% |
-| Flame Shock | 8% |
+| Earth Shock | 8% |
+| Flame Shock | 7% |
 | Lightning Bolt | 7% |
 | Attack | 5% |
 | Elemental Sharpening Stone | 3% |

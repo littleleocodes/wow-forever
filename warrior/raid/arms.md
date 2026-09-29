@@ -14,7 +14,7 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Overpower**
+1. **Overpower** when it lights up (after the target dodges)
 2. **Execute** when the target is below 20% health
 3. **Rend**: keep it on the target
 4. **Slam**

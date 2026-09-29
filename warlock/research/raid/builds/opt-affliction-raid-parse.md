@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +60.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +59.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -45,14 +45,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 ## Core talents (priority order)
 
-1. **Bane** — Removing it costs 13.7 points of score in this model.
-2. **Agonizing Flames** — Removing it costs 9.1 points of score in this model.
+1. **Bane** — Removing it costs 13.9 points of score in this model.
+2. **Agonizing Flames** — Removing it costs 9.2 points of score in this model.
 3. **Suppression** — Removing it costs 6.9 points of score in this model.
-4. **Ruin** — Removing it costs 6.7 points of score in this model.
-5. **Malevolence** — Removing it costs 6.6 points of score in this model.
-6. **Shadow Mastery** — Removing it costs 6.5 points of score in this model.
-7. **Improved Shadow Bolt** — Removing it costs 6.3 points of score in this model.
-8. **Improved Corruption** — Removing it costs 6.1 points of score in this model.
+4. **Ruin** — Removing it costs 6.8 points of score in this model.
+5. **Malevolence** — Removing it costs 6.5 points of score in this model.
+6. **Shadow Mastery** — Removing it costs 6.4 points of score in this model.
+7. **Improved Shadow Bolt** — Removing it costs 6.2 points of score in this model.
+8. **Improved Corruption** — Removing it costs 6.0 points of score in this model.
 
 ## Rotation
 
@@ -60,7 +60,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/affliction-raid-parse.md
+- Report: warlock/research/talents/forever/optimizer/affliction-raid-parse.md
 
 ## Open questions (verify in the live game)
 

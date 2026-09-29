@@ -36,20 +36,20 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 506 | 349 | 389 | 294 | 346 |
-| `bm-mm-raid` | 497 | 353 | 388 | 290 | 343 |
-| `opt-mm-raid-parse` | 494 | 349 | 384 | 286 | 339 |
-| sim preset: Marksmanship | 516 | 284 | 364 | 282 | 326 |
-| `bm-mm-full-buffs-raid` | 493 | 297 | 367 | 298 | 324 |
-| sim preset: Beast Mastery 35/16/0 | 456 | 306 | 349 | 262 | 312 |
-| sim preset: Marksmanship 0/39/12 | 472 | 263 | 332 | 254 | 290 |
-| sim preset: Survival 0/15/36 | 417 | 269 | 321 | 230 | 277 |
+| `opt-mm-raid-raid-dps` | 506 | 428 | 415 | 385 | 372 |
+| `bm-mm-raid` | 497 | 425 | 413 | 382 | 369 |
+| `opt-mm-raid-parse` | 494 | 422 | 409 | 378 | 365 |
+| sim preset: Marksmanship | 516 | 400 | 388 | 362 | 350 |
+| `bm-mm-full-buffs-raid` | 493 | 395 | 386 | 364 | 350 |
+| sim preset: Beast Mastery 35/16/0 | 456 | 381 | 370 | 343 | 333 |
+| sim preset: Marksmanship 0/39/12 | 472 | 368 | 356 | 330 | 317 |
+| sim preset: Survival 0/15/36 | 417 | 343 | 335 | 309 | 298 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p1.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

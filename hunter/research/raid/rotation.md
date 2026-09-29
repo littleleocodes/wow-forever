@@ -4,7 +4,7 @@
 
 ## mm-raid
 
-Our tuned rotation `mm-raid.apl.json` (the simulator's `mm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `mm-raid.apl.json` (the simulator's `mm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+4.8% dummy, +16.8% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing.
 
@@ -32,62 +32,62 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) (ours: optimizer, 428 DPS), [`bm-mm-raid`](builds/bm-mm-raid.md) (ours: hand draft, 425 DPS), *Beast Mastery 35/16/0* (community simulator, 381 DPS), *Survival 0/15/36* (community simulator, 343 DPS)
+### [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) (ours: optimizer, 415 DPS), [`bm-mm-raid`](builds/bm-mm-raid.md) (ours: hand draft, 413 DPS), *Marksmanship* (community simulator, 388 DPS), [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) (ours: hand draft, 386 DPS), *Marksmanship 0/39/12* (community simulator, 356 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) casts/min | [`bm-mm-raid`](builds/bm-mm-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min | *Survival 0/15/36* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) casts/min | [`bm-mm-raid`](builds/bm-mm-raid.md) casts/min | *Marksmanship* casts/min | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) casts/min | *Marksmanship 0/39/12* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | cast Arcane Shot | 8.6 | 8.6 | 8.7 | 7.4 | 8.0 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.0 | 4.1 | 3.2 | 3.9 | 3.7 |
+| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.6 | 0.6 | 0.2 | 0.1 | 0.3 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 | 2.3 | 2.0 | 2.0 | 2.0 |
+
+Damage by ability:
+
+| Ability | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | [`bm-mm-raid`](builds/bm-mm-raid.md) | *Marksmanship* | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | *Marksmanship 0/39/12* |
 |---|---|---|---|---|---|
-| 1 | cast Arcane Shot | 8.8 | 8.8 | 8.3 | 7.5 |
-| 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 | 0.5 | 0.5 | 0.5 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 5.0 | 5.0 | 4.5 | 4.5 |
-| 5 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 | 2.5 | 2.5 | 2.5 |
+| Auto Shot | 46% | 47% | 50% | 50% | 48% |
+| Arcane Shot | 20% | 20% | 22% | 19% | 22% |
+| Serpent Sting | 13% | 13% | 10% | 10% | 11% |
+| Aimed Shot | 8% | 9% | 7% | 9% | 9% |
+| Pet: Auto Attack | 8% | 7% | 7% | 8% | 7% |
+| Pet: Claw | 2% | 2% | 2% | 2% | 2% |
+| Pet: Bite | 1% | 1% | 0% | 0% | 0% |
+| Multi-Shot | 1% | 1% | 0% | 0% | 1% |
+
+### *Beast Mastery 35/16/0* (community simulator, 370 DPS), *Survival 0/15/36* (community simulator, 335 DPS)
+
+Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
+
+| # | Priority (the first line whose condition holds is cast) | *Beast Mastery 35/16/0* casts/min | *Survival 0/15/36* casts/min |
+|---|---|---|---|
+| 1 | cast Arcane Shot | 8.0 | 7.7 |
+| 2 | use every other cooldown when ready | as ready | as ready |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 | 0.3 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.0 | 4.0 |
+| 5 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 | 2.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`opt-mm-raid-raid-dps`](builds/opt-mm-raid-raid-dps.md) | [`bm-mm-raid`](builds/bm-mm-raid.md) | *Beast Mastery 35/16/0* | *Survival 0/15/36* |
-|---|---|---|---|---|
-| Auto Shot | 46% | 46% | 46% | 48% |
-| Arcane Shot | 20% | 20% | 19% | 20% |
-| Serpent Sting | 14% | 13% | 12% | 14% |
-| Pet: Auto Attack | 8% | 7% | 11% | 7% |
-| Aimed Shot | 9% | 10% | 8% | 10% |
-| Pet: Claw | 2% | 2% | 2% | 2% |
-| Pet: Bite | 1% | 1% | 2% | 0% |
-| Multi-Shot | 0% | 0% | 0% | 0% |
-
-### *Marksmanship* (community simulator, 400 DPS), [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) (ours: hand draft, 395 DPS), *Marksmanship 0/39/12* (community simulator, 368 DPS)
-
-Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
-
-| # | Priority (the first line whose condition holds is cast) | *Marksmanship* casts/min | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) casts/min | *Marksmanship 0/39/12* casts/min |
-|---|---|---|---|---|
-| 1 | cast Arcane Shot | 9.2 | 7.6 | 8.5 |
-| 2 | use every other cooldown when ready | as ready | as ready | as ready |
-| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 | 0.5 | 0.5 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 3.5 | 4.3 | 4.0 |
-| 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.3 | 0.1 | 0.5 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.1 | 2.0 | 2.0 |
-
-Damage by ability:
-
-| Ability | *Marksmanship* | [`bm-mm-full-buffs-raid`](builds/bm-mm-full-buffs-raid.md) | *Marksmanship 0/39/12* |
-|---|---|---|---|
-| Auto Shot | 50% | 50% | 47% |
-| Arcane Shot | 23% | 19% | 22% |
-| Serpent Sting | 10% | 10% | 11% |
-| Aimed Shot | 8% | 10% | 9% |
-| Pet: Auto Attack | 7% | 8% | 7% |
-| Pet: Claw | 2% | 2% | 2% |
-| Multi-Shot | 1% | 0% | 1% |
-| Pet: Bite | 0% | 0% | 0% |
+| Ability | *Beast Mastery 35/16/0* | *Survival 0/15/36* |
+|---|---|---|
+| Auto Shot | 46% | 48% |
+| Arcane Shot | 19% | 21% |
+| Serpent Sting | 12% | 13% |
+| Pet: Auto Attack | 11% | 7% |
+| Aimed Shot | 8% | 9% |
+| Pet: Claw | 2% | 2% |
+| Pet: Bite | 2% | 0% |
+| Multi-Shot | 0% | 0% |
 
 ## mm-lonewolf-raid
 
-Our tuned rotation `mm-lonewolf-raid.apl.json` (the simulator's `mm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `mm-lonewolf-raid.apl.json` (the simulator's `mm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+1.8% dummy, +16.5% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing.
 
@@ -116,56 +116,56 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) (ours: optimizer, 434 DPS), [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) (ours: hand draft, 432 DPS), *Marksmanship* (community simulator, 354 DPS), *Survival 0/15/36* (community simulator, 309 DPS)
+### [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) (ours: optimizer, 420 DPS), [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) (ours: hand draft, 419 DPS), *Marksmanship* (community simulator, 342 DPS), *Beast Mastery 35/16/0* (community simulator, 315 DPS), *Survival 0/15/36* (community simulator, 299 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) casts/min | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) casts/min | *Marksmanship* casts/min | *Survival 0/15/36* casts/min |
-|---|---|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 | 0.5 | 0.5 | 0.5 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.0 | 4.7 | 4.0 | 4.5 |
-| 4 | cast Arcane Shot | 9.0 | 7.2 | 9.0 | 7.5 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 | 2.5 | 2.0 | 2.5 |
+| # | Priority (the first line whose condition holds is cast) | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) casts/min | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) casts/min | *Marksmanship* casts/min | *Beast Mastery 35/16/0* casts/min | *Survival 0/15/36* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 3.7 | 4.2 | 3.7 | 4.9 | 4.3 |
+| 4 | cast Arcane Shot | 8.4 | 7.1 | 8.4 | 7.9 | 7.0 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 | 2.3 | 2.0 | 2.5 | 2.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) | *Marksmanship* | *Survival 0/15/36* |
-|---|---|---|---|---|
-| Auto Shot | 54% | 54% | 55% | 53% |
-| Arcane Shot | 24% | 19% | 25% | 22% |
-| Serpent Sting | 13% | 15% | 11% | 14% |
-| Aimed Shot | 9% | 11% | 10% | 11% |
-| Multi-Shot | 0% | 0% | 0% | 0% |
+| Ability | [`opt-mm-lonewolf-raid-raid-dps`](builds/opt-mm-lonewolf-raid-raid-dps.md) | [`mm-lone-wolf-raid`](builds/mm-lone-wolf-raid.md) | *Marksmanship* | *Beast Mastery 35/16/0* | *Survival 0/15/36* |
+|---|---|---|---|---|---|
+| Auto Shot | 54% | 55% | 56% | 53% | 54% |
+| Arcane Shot | 23% | 20% | 24% | 22% | 21% |
+| Serpent Sting | 13% | 15% | 11% | 14% | 14% |
+| Aimed Shot | 9% | 11% | 9% | 12% | 11% |
+| Multi-Shot | 0% | 0% | 0% | 0% | 0% |
 
-### *Marksmanship 0/39/12* (community simulator, 333 DPS), *Beast Mastery 35/16/0* (community simulator, 323 DPS)
+### *Marksmanship 0/39/12* (community simulator, 323 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | *Marksmanship 0/39/12* casts/min | *Beast Mastery 35/16/0* casts/min |
-|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 | 0.5 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.0 | 5.4 |
-| 4 | cast Arcane Shot | 8.5 | 7.8 |
-| 5 | if time to the next auto attack > 0.5s: cast Multi-Shot | 0.5 | 0.1 |
-| 6 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 | 2.7 |
+| # | Priority (the first line whose condition holds is cast) | *Marksmanship 0/39/12* casts/min |
+|---|---|---|
+| 1 | use every other cooldown when ready | as ready |
+| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
+| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 3.7 |
+| 4 | cast Arcane Shot | 8.0 |
+| 5 | if time to the next auto attack > 0.5s: cast Multi-Shot | 0.3 |
+| 6 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.0 |
 
 Damage by ability:
 
-| Ability | *Marksmanship 0/39/12* | *Beast Mastery 35/16/0* |
-|---|---|---|
-| Auto Shot | 52% | 53% |
-| Arcane Shot | 25% | 21% |
-| Serpent Sting | 11% | 14% |
-| Aimed Shot | 10% | 12% |
-| Multi-Shot | 1% | 0% |
+| Ability | *Marksmanship 0/39/12* |
+|---|---|
+| Auto Shot | 53% |
+| Arcane Shot | 24% |
+| Serpent Sting | 12% |
+| Aimed Shot | 10% |
+| Multi-Shot | 1% |
 
 ## bm-raid
 
-Our tuned rotation `bm-raid.apl.json` (the simulator's `bm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `bm-raid.apl.json` (the simulator's `bm.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs.
 
@@ -198,31 +198,31 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 469 DPS), [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 468 DPS), *Beast Mastery 35/16/0* (community simulator, 437 DPS)
+### [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 448 DPS), [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 438 DPS), *Beast Mastery 35/16/0* (community simulator, 416 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
-| # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min |
 |---|---|---|---|---|
-| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.5 | 0.5 | 0.5 |
-| 2 | cast Summon Hawk | 10.0 | 10.0 | 10.0 |
+| 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 | 0.3 | 0.3 |
+| 2 | cast Summon Hawk | 9.3 | 9.0 | 9.3 |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 | 5.0 | 5.0 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 | 4.3 | 4.4 |
 
 Damage by ability:
 
-| Ability | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | *Beast Mastery 35/16/0* |
+| Ability | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | *Beast Mastery 35/16/0* |
 |---|---|---|---|
-| Auto Shot | 40% | 42% | 40% |
-| Summon Hawk | 28% | 28% | 30% |
-| Serpent Sting | 20% | 20% | 17% |
-| Pet: Auto Attack | 8% | 7% | 9% |
+| Auto Shot | 43% | 42% | 41% |
+| Summon Hawk | 29% | 28% | 30% |
+| Serpent Sting | 19% | 18% | 15% |
+| Pet: Auto Attack | 7% | 9% | 10% |
 | Pet: Claw | 2% | 2% | 2% |
-| Pet: Bite | 1% | 1% | 1% |
+| Pet: Bite | 1% | 1% | 2% |
 
 ## melee-dps
 
-Our rotation `melee-dps.apl.json` (our base rotation `melee-dps.base.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our rotation `melee-dps.apl.json` (our base rotation `melee-dps.base.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model).
 
@@ -247,30 +247,30 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 459 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 433 DPS)
+### [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 424 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 424 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
-| # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min |
 |---|---|---|---|
-| 1 | cast Aspect of the Beast | 0.5 | 0.5 |
+| 1 | cast Aspect of the Beast | 0.3 | 0.3 |
 | 2 | use every other cooldown when ready | as ready | as ready |
-| 3 | cast Mongoose Bite | 12.4 | 12.3 |
-| 4 | cast Strider Kick | 6.7 | 6.7 |
-| 5 | cast Raptor Strike | 20.0 | 20.0 |
-| 6 | cast Immolation Trap | 3.5 | 2.0 |
-| 7 | cast Wing Clip | 22.9 | 24.4 |
+| 3 | cast Mongoose Bite | 12.1 | 11.3 |
+| 4 | cast Strider Kick | 6.5 | 5.7 |
+| 5 | cast Raptor Strike | 19.6 | 18.4 |
+| 6 | cast Immolation Trap | 2.0 | 2.7 |
+| 7 | cast Wing Clip | 23.7 | 19.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`melee-survival-raid`](builds/melee-survival-raid.md) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) |
+| Ability | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | [`melee-survival-raid`](builds/melee-survival-raid.md) |
 |---|---|---|
-| Auto Attack | 42% | 45% |
-| Raptor Strike | 16% | 17% |
-| Mongoose Bite | 14% | 15% |
-| Immolation Trap | 11% | 6% |
-| Strider Kick | 8% | 9% |
-| Wing Clip | 6% | 6% |
+| Auto Attack | 45% | 45% |
+| Raptor Strike | 17% | 16% |
+| Mongoose Bite | 15% | 14% |
+| Immolation Trap | 6% | 10% |
+| Strider Kick | 9% | 8% |
+| Wing Clip | 6% | 5% |
 | Dragonbreath Chili | 3% | 3% |

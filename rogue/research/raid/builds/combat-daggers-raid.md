@@ -76,15 +76,15 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 414 | +0.0% | 741 | +0.0% | 0 s |
-| 2 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 410 | -1.1% | 731 | -1.3% | 0 s |
-| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 405 | -2.4% | 720 | -2.9% | 0 s |
-| 4 | *Backstab* | community simulator | - | 383 | -7.6% | 691 | -6.8% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 375 | -9.5% | 659 | -11.1% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 363 | -12.4% | 640 | -13.6% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 355 | -14.3% | 634 | -14.4% | 0 s |
-| 8 | *Sinister Strike* | community simulator | - | 343 | -17.2% | 644 | -13.0% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 261 | -37.0% | 505 | -31.8% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 403 | +0.0% | 720 | +0.0% | 0 s |
+| 2 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -0.9% | 712 | -1.1% | 0 s |
+| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -2.1% | 702 | -2.5% | 0 s |
+| 4 | *Backstab* | community simulator | - | 371 | -7.8% | 672 | -6.6% | 0 s |
+| 5 | *Mutilate* | community simulator | - | 371 | -7.9% | 648 | -10.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -10.8% | 630 | -12.5% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -13.8% | 620 | -13.8% | 0 s |
+| 8 | *Sinister Strike* | community simulator | - | 334 | -17.0% | 629 | -12.6% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -35.9% | 500 | -30.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,23 +100,23 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 | # | Priority (the first line whose condition holds is cast) | [`combat-daggers-raid`](combat-daggers-raid.md) casts/min |
 |---|---|---|
 | 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.6 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.5 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.7 |
-| 6 | cast Backstab | 12.7 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 |
+| 6 | cast Backstab | 11.9 |
 
 Damage by ability:
 
 | Ability | [`combat-daggers-raid`](combat-daggers-raid.md) |
 |---|---|
-| Auto Attack | 45% |
-| Backstab | 38% |
+| Auto Attack | 47% |
+| Backstab | 37% |
 | Deadly Poison | 6% |
-| Eviscerate | 4% |
 | Dense Sharpening Stone | 3% |
-| item 10646 | 2% |
+| Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
+| item 10646 | 2% |
 
 ## Notes
 

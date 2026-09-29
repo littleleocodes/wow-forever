@@ -12,7 +12,7 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Mongoose Bite**
+1. **Mongoose Bite** when it lights up (after the target dodges)
 2. **Strider Kick**
 3. **Raptor Strike**
 4. **Immolation Trap**

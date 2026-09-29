@@ -75,10 +75,10 @@ Allocation adopted on 2026-09-26 from `opt-balance-dps-raid-dps`, the best build
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 34/6/11 | 461 | +0.0% | 518 | +0.0% | 0 s |
-| 2 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/3/15 | 460 | -0.1% | 516 | -0.2% | 0 s |
-| 3 | *Balance* | community simulator | - | 411 | -10.8% | 464 | -10.5% | 0 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 402 | -12.7% | 510 | -1.4% | 12 s |
+| 1 | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) | ours: optimizer | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
+| 2 | **[`balance-moonkin-raid`](balance-moonkin-raid.md)** | ours: hand draft | 33/3/15 | 435 | -0.8% | 510 | -0.2% | 5 s |
+| 3 | *Balance* | community simulator | - | 400 | -8.7% | 457 | -10.6% | 2 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 353 | -19.4% | 506 | -1.0% | 31 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,12 +95,11 @@ Before the pull: at -10s: activate Moonkin Form.
 | # | Priority (the first line whose condition holds is cast) | [`balance-moonkin-raid`](balance-moonkin-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if mana % ≤ 30%: cast Innervate | 0.5 |
-| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.5 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.3 |
-| 5 | cast Starfire | 15.7 |
-
-Lines of the simulator's rotation these builds never cast: cast Starfire (its condition never held in these fights).
+| 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
+| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 |
+| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
+| 5 | cast Starfire | 13.7 |
+| 6 | if mana % < 15%: cast Starfire | 2.0 |
 
 Damage by ability:
 

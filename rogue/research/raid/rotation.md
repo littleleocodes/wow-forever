@@ -4,7 +4,7 @@
 
 ## combat-swords-raid
 
-Our tuned rotation `combat-swords-raid.apl.json` (the simulator's `combat_sinister_strike.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `combat-swords-raid.apl.json` (the simulator's `combat_sinister_strike.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -27,38 +27,38 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 401 DPS), *Improved Expose Armor (SS)* (community simulator, 401 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 381 DPS), *Sinister Strike* (community simulator, 379 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 371 DPS), *Backstab* (community simulator, 325 DPS)
+### [`combat-swords-raid`](builds/combat-swords-raid.md) (ours: hand draft, 389 DPS), *Improved Expose Armor (SS)* (community simulator, 389 DPS), [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) (ours: optimizer, 370 DPS), *Sinister Strike* (community simulator, 366 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 360 DPS), *Backstab* (community simulator, 314 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-swords-raid`](builds/combat-swords-raid.md) casts/min | *Improved Expose Armor (SS)* casts/min | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) casts/min | *Sinister Strike* casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min |
 |---|---|---|---|---|---|---|---|
-| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.2 | 2.2 | 2.0 | 2.0 | 2.0 | 1.5 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 | 2.4 | 2.7 | 2.7 | 2.7 | 3.1 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 |
+| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.2 | 2.2 | 1.9 | 1.9 | 2.0 | 1.4 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.4 | 2.4 | 2.8 | 2.8 | 2.8 | 3.1 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.3 | 1.3 | 0.7 | 0.7 | 0.7 | 0.3 |
-| 6 | cast Sinister Strike | 19.2 | 19.2 | 18.2 | 18.2 | 18.2 | 14.2 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.0 | 1.0 | 0.4 | 0.4 | 0.4 | 0.2 |
+| 6 | cast Sinister Strike | 17.9 | 17.9 | 16.8 | 16.8 | 16.8 | 13.1 |
 
 Damage by ability:
 
 | Ability | [`combat-swords-raid`](builds/combat-swords-raid.md) | *Improved Expose Armor (SS)* | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | *Sinister Strike* | *Combat Dual-Wield 15/33/3* | *Backstab* |
 |---|---|---|---|---|---|---|
-| Auto Attack | 50% | 50% | 51% | 53% | 54% | 58% |
-| Sinister Strike | 31% | 31% | 30% | 31% | 30% | 27% |
-| Eviscerate | 7% | 7% | 4% | 4% | 4% | 2% |
-| Deadly Poison | 4% | 4% | 6% | 4% | 4% | 5% |
+| Auto Attack | 53% | 53% | 54% | 55% | 56% | 60% |
+| Sinister Strike | 30% | 30% | 29% | 30% | 29% | 25% |
+| Deadly Poison | 4% | 4% | 6% | 5% | 5% | 6% |
+| Eviscerate | 6% | 6% | 2% | 3% | 2% | 1% |
 | Dense Sharpening Stone | 3% | 3% | 5% | 3% | 3% | 3% |
-| item 10646 | 2% | 2% | 3% | 3% | 3% | 3% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% |
+| item 10646 | 2% | 2% | 2% | 2% | 2% | 2% |
 
-### *Assassination Mutilate 31/20/0* (community simulator, 341 DPS), *Mutilate* (community simulator, 330 DPS), *Subtlety Hemo 15/0/36* (community simulator, 271 DPS)
+### *Assassination Mutilate 31/20/0* (community simulator, 336 DPS), *Mutilate* (community simulator, 325 DPS), *Subtlety Hemo 15/0/36* (community simulator, 267 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Assassination Mutilate 31/20/0* casts/min | *Mutilate* casts/min | *Subtlety Hemo 15/0/36* casts/min |
 |---|---|---|---|---|
-| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.2 | 2.2 | 1.1 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 3.7 | 2.6 | 3.7 |
+| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.2 | 2.2 | 1.0 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 3.8 | 2.7 | 3.8 |
 | 3 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready |
-| 4 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 | 0.4 | 0.3 |
-| 5 | cast Sinister Strike | 16.4 | 15.1 | 14.8 |
+| 4 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.3 | 0.3 | 0.2 |
+| 5 | cast Sinister Strike | 15.8 | 14.5 | 14.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent).
 
@@ -66,17 +66,17 @@ Damage by ability:
 
 | Ability | *Assassination Mutilate 31/20/0* | *Mutilate* | *Subtlety Hemo 15/0/36* |
 |---|---|---|---|
-| Auto Attack | 53% | 55% | 55% |
-| Sinister Strike | 29% | 28% | 29% |
+| Auto Attack | 55% | 57% | 56% |
+| Sinister Strike | 29% | 27% | 29% |
 | Deadly Poison | 6% | 6% | 5% |
 | Dense Sharpening Stone | 4% | 4% | 3% |
-| item 10646 | 3% | 3% | 4% |
+| item 10646 | 2% | 2% | 2% |
 | Dragonbreath Chili | 2% | 2% | 2% |
-| Eviscerate | 2% | 2% | 2% |
+| Eviscerate | 2% | 2% | 1% |
 
 ## combat-daggers-raid
 
-Our tuned rotation `combat-daggers-raid.apl.json` (the simulator's `combat_backstab.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `combat-daggers-raid.apl.json` (the simulator's `combat_backstab.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -101,38 +101,38 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 414 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 410 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 405 DPS), *Backstab* (community simulator, 383 DPS), *Improved Expose Armor (SS)* (community simulator, 355 DPS), *Sinister Strike* (community simulator, 343 DPS)
+### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 403 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 399 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 394 DPS), *Backstab* (community simulator, 371 DPS), *Improved Expose Armor (SS)* (community simulator, 347 DPS), *Sinister Strike* (community simulator, 334 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) casts/min | [`combat-daggers-raid`](builds/combat-daggers-raid.md) casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min | *Improved Expose Armor (SS)* casts/min | *Sinister Strike* casts/min |
 |---|---|---|---|---|---|---|---|
-| 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 | 1.7 | 1.7 | 1.6 | 1.4 | 1.2 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.6 | 2.6 | 2.6 | 3.0 | 2.6 | 2.8 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 |
+| 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 | 1.7 | 1.7 | 1.5 | 1.4 | 1.1 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 | 2.7 | 2.7 | 3.1 | 2.5 | 2.8 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.7 | 0.7 | 0.7 | 0.4 | 0.5 | 0.2 |
-| 6 | cast Backstab | 12.7 | 12.7 | 12.7 | 11.1 | 13.1 | 12.6 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 | 0.5 | 0.5 | 0.3 | 0.4 | 0.2 |
+| 6 | cast Backstab | 11.8 | 11.9 | 11.9 | 10.4 | 12.3 | 11.7 |
 
 Damage by ability:
 
 | Ability | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | *Combat Dual-Wield 15/33/3* | *Backstab* | *Improved Expose Armor (SS)* | *Sinister Strike* |
 |---|---|---|---|---|---|---|
-| Auto Attack | 45% | 45% | 46% | 47% | 50% | 51% |
-| Backstab | 38% | 38% | 37% | 36% | 32% | 32% |
-| Deadly Poison | 6% | 6% | 6% | 6% | 7% | 7% |
-| Eviscerate | 4% | 4% | 3% | 2% | 3% | 1% |
+| Auto Attack | 47% | 47% | 48% | 50% | 52% | 53% |
+| Backstab | 37% | 37% | 36% | 35% | 31% | 31% |
+| Deadly Poison | 6% | 6% | 6% | 7% | 7% | 8% |
 | Dense Sharpening Stone | 3% | 3% | 3% | 3% | 4% | 4% |
-| item 10646 | 2% | 2% | 2% | 3% | 3% | 3% |
+| Eviscerate | 3% | 3% | 3% | 2% | 2% | 1% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% |
+| item 10646 | 2% | 2% | 2% | 2% | 2% | 2% |
 
-### *Mutilate* (community simulator, 375 DPS), *Assassination Mutilate 31/20/0* (community simulator, 363 DPS), *Subtlety Hemo 15/0/36* (community simulator, 261 DPS)
+### *Mutilate* (community simulator, 371 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS), *Subtlety Hemo 15/0/36* (community simulator, 258 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min | *Subtlety Hemo 15/0/36* casts/min |
 |---|---|---|---|---|
 | 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 | 1.9 | 0.1 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 | 3.5 | 3.6 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 | 3.6 | 3.7 |
 | 3 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready |
-| 4 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.0 | 0.7 | 0.3 |
-| 5 | cast Backstab | 11.8 | 11.5 | 11.8 |
+| 4 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.9 | 0.5 | 0.2 |
+| 5 | cast Backstab | 11.5 | 11.2 | 11.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Adrenaline Rush (needs the Adrenaline Rush talent).
 
@@ -140,17 +140,17 @@ Damage by ability:
 
 | Ability | *Mutilate* | *Assassination Mutilate 31/20/0* | *Subtlety Hemo 15/0/36* |
 |---|---|---|---|
-| Auto Attack | 45% | 46% | 48% |
-| Backstab | 34% | 33% | 32% |
-| Deadly Poison | 7% | 8% | 8% |
+| Auto Attack | 46% | 47% | 49% |
+| Backstab | 33% | 33% | 32% |
+| Deadly Poison | 8% | 8% | 9% |
 | Eviscerate | 5% | 3% | 1% |
 | Dense Sharpening Stone | 4% | 4% | 4% |
-| item 10646 | 3% | 3% | 4% |
 | Dragonbreath Chili | 2% | 2% | 3% |
+| item 10646 | 2% | 2% | 3% |
 
 ## assassination-raid
 
-Our tuned rotation `assassination-raid.apl.json` (the simulator's `forever_mutilate.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `assassination-raid.apl.json` (the simulator's `forever_mutilate.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there).
 
@@ -178,17 +178,17 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 413 DPS), *Mutilate* (community simulator, 377 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 375 DPS), *Assassination Mutilate 31/20/0* (community simulator, 364 DPS)
+### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 407 DPS), *Mutilate* (community simulator, 371 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 369 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | *Mutilate* casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|---|---|
 | 1 | if energy ≤ 43.5 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea | as ready | as ready | as ready | as ready |
-| 2 | cast Backstab | 11.8 | 11.3 | 11.3 | 11.1 |
+| 2 | cast Backstab | 11.5 | 10.9 | 10.9 | 10.7 |
 | 3 | if time left on Expose Armor < 3 and combo points ≥ 3.75 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.8 | 1.8 | 1.8 | 1.8 |
-| 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 | 2.8 | 2.8 | 3.8 |
+| 4 | if combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12: cast Slice and Dice | 2.8 | 2.8 | 2.8 | 3.9 |
 | 5 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.5 | 0.5 | 0.5 | 0.5 |
-| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.8 | 2.0 | 2.0 | 1.5 |
+| 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 | 0.3 | 0.3 | 0.3 |
+| 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 | 1.9 | 1.9 | 1.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
 
@@ -196,17 +196,17 @@ Damage by ability:
 
 | Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | *Mutilate* | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|
-| Auto Attack | 39% | 43% | 44% | 45% |
-| Backstab | 32% | 31% | 31% | 31% |
-| Eviscerate | 13% | 10% | 10% | 7% |
-| Deadly Poison | 8% | 7% | 7% | 8% |
+| Auto Attack | 40% | 44% | 45% | 46% |
+| Backstab | 31% | 30% | 31% | 31% |
+| Eviscerate | 12% | 9% | 9% | 6% |
+| Deadly Poison | 8% | 8% | 7% | 8% |
 | Dense Sharpening Stone | 5% | 4% | 4% | 4% |
-| item 10646 | 2% | 3% | 3% | 3% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% |
+| item 10646 | 2% | 2% | 2% | 2% |
 
 ## subtlety-raid
 
-Our tuned rotation `subtlety-raid.apl.json` (the simulator's `forever_hemorrhage.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `subtlety-raid.apl.json` (the simulator's `forever_hemorrhage.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs.
 
@@ -248,20 +248,20 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) (ours: hand draft, 392 DPS), *Subtlety Hemo 15/0/36* (community simulator, 348 DPS)
+### [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) (ours: hand draft, 374 DPS), *Subtlety Hemo 15/0/36* (community simulator, 331 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) casts/min | *Subtlety Hemo 15/0/36* casts/min |
 |---|---|---|---|
 | 1 | if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea | as ready | as ready |
-| 2 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 | 1.7 |
-| 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 80s: cast Slice and Dice | 1.2 | 1.8 |
-| 4 | if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 1.0 | 0.9 |
-| 5 | cast Premeditation | 1.0 | 0.9 |
-| 6 | cast Garrote | 1.0 | 0.9 |
-| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.5 | 4.9 |
+| 2 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.6 | 1.2 |
+| 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 80s: cast Slice and Dice | 1.8 | 2.7 |
+| 4 | if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.6 | 0.6 |
+| 5 | cast Premeditation | 0.6 | 0.6 |
+| 6 | cast Garrote | 0.6 | 0.6 |
+| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.9 | 5.2 |
 | 8 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready |
-| 9 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.8 | 0.4 |
-| 10 | cast Hemorrhage | 20.7 | 19.3 |
+| 9 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 | 0.2 |
+| 10 | cast Hemorrhage | 19.7 | 18.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights).
 
@@ -269,12 +269,12 @@ Damage by ability:
 
 | Ability | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | *Subtlety Hemo 15/0/36* |
 |---|---|---|
-| Auto Attack | 38% | 41% |
-| Hemorrhage | 27% | 27% |
-| Rupture | 16% | 16% |
-| Eviscerate | 5% | 2% |
+| Auto Attack | 40% | 43% |
+| Hemorrhage | 26% | 26% |
+| Rupture | 17% | 17% |
+| Deadly Poison | 5% | 4% |
 | Dense Sharpening Stone | 4% | 3% |
-| Deadly Poison | 4% | 3% |
-| Garrote | 2% | 3% |
-| item 10646 | 3% | 3% |
+| Eviscerate | 3% | 1% |
 | Dragonbreath Chili | 2% | 2% |
+| Garrote | 2% | 2% |
+| item 10646 | 2% | 2% |

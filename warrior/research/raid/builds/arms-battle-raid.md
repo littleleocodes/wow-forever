@@ -72,8 +72,8 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 238 | +0.0% | 467 | -1.9% | 0 s |
-| 2 | *Arms 39/12/0* | community simulator | - | 227 | -4.4% | 476 | +0.0% | 0 s |
+| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 220 | +0.0% | 458 | -3.6% | 0 s |
+| 2 | *Arms 39/12/0* | community simulator | - | 215 | -2.3% | 475 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -99,8 +99,8 @@ Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](arms-battle-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Overpower | 5.3 |
-| 2 | if execute phase (E20): cast Execute | 3.6 |
+| 1 | cast Overpower | 5.4 |
+| 2 | if execute phase (E20): cast Execute | 3.5 |
 | 3 | cast Goblin Sapper Charge | as ready |
 | 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -109,13 +109,13 @@ Before the pull: at -1s: cast Battle Stance.
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
 | 10 | if not Rend is on the target: cast Rend | 2.5 |
-| 11 | cast Slam | 2.6 |
-| 12 | if not Battle Shout is up: cast Battle Shout | 0.5 |
-| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.8 |
-| 14 | if not Berserker Stance is up: cast Berserker Stance | 25.1 |
-| 15 | if not Battle Stance is up: cast Battle Stance | 25.3 |
-| 16 | cast Spearing Strike | 1.5 |
-| 17 | cast Sunder Armor | 7.8 |
+| 11 | cast Slam | 2.5 |
+| 12 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.0 |
+| 14 | if not Berserker Stance is up: cast Berserker Stance | 24.8 |
+| 15 | if not Battle Stance is up: cast Battle Stance | 25.0 |
+| 16 | cast Spearing Strike | 1.7 |
+| 17 | cast Sunder Armor | 8.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast spell 24427, cast spell 29602, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -123,13 +123,13 @@ Damage by ability:
 
 | Ability | [`arms-battle-raid`](arms-battle-raid.md) |
 |---|---|
-| Auto Attack | 36% |
-| Execute | 23% |
-| Overpower | 22% |
-| Slam | 8% |
-| Deep Wound | 6% |
+| Auto Attack | 38% |
+| Overpower | 25% |
+| Execute | 14% |
+| Slam | 9% |
+| Deep Wound | 7% |
 | Rend | 4% |
-| Spearing Strike | 1% |
+| Spearing Strike | 2% |
 | Dragonbreath Chili | 1% |
 
 ## Notes

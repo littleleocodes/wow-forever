@@ -78,11 +78,11 @@ The build for a raid that brings Blessing of Wisdom and Mana Spring: `ret-raid-d
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/0/34 | 368 | +0.0% | 778 | -3.3% | 0 s |
-| 2 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 367 | -0.4% | 779 | -3.2% | 0 s |
-| 3 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 10/8/33 | 365 | -0.8% | 804 | +0.0% | 3 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 365 | -0.8% | 777 | -3.5% | 0 s |
-| 5 | *Retribution 9/0/42* | community simulator | - | 353 | -4.2% | 771 | -4.2% | 5 s |
+| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 9/8/34 | 350 | +0.0% | 802 | +0.0% | 21 s |
+| 2 | [`ret-raid-dps`](ret-raid-dps.md) | ours: hand draft | 17/0/34 | 349 | -0.5% | 779 | -2.9% | 4 s |
+| 3 | **[`ret-full-buffs-raid`](ret-full-buffs-raid.md)** | ours: hand draft | 10/8/33 | 346 | -1.2% | 802 | -0.0% | 22 s |
+| 4 | *P4/P5 Ret* | community simulator | - | 341 | -2.7% | 776 | -3.2% | 11 s |
+| 5 | *Retribution 9/0/42* | community simulator | - | 338 | -3.4% | 768 | -4.3% | 21 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -111,14 +111,14 @@ Before the pull: at -1.5s: cast Seal of Command.
 
 | # | Priority (the first line whose condition holds is cast) | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 3.2 |
+| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 2.7 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 3.5 |
-| 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 3.5 |
-| 5 | cast Hammer of Wrath | 1.3 |
-| 6 | cast Holy Strike | 6.0 |
-| 7 | cast Consecration | 6.5 |
-| 8 | cast Consecration | 0.5 |
+| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 3.0 |
+| 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 3.0 |
+| 5 | cast Hammer of Wrath | 1.0 |
+| 6 | cast Holy Strike | 5.8 |
+| 7 | cast Consecration | 5.8 |
+| 8 | cast Consecration | 0.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
 
@@ -126,12 +126,12 @@ Damage by ability:
 
 | Ability | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) |
 |---|---|
-| Auto Attack | 22% |
-| Consecration | 18% |
-| Holy Strike | 15% |
+| Auto Attack | 24% |
+| Consecration | 17% |
+| Holy Strike | 16% |
 | Judgement of Righteousness | 15% |
-| Seal of Righteousness | 13% |
-| Seal of Command | 8% |
+| Seal of Righteousness | 14% |
+| Seal of Command | 6% |
 | Hammer of Wrath | 4% |
 | Dragonbreath Chili | 2% |
 | Judgement of Command | 2% |

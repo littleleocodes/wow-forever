@@ -4,7 +4,7 @@
 
 ## balance-dps
 
-Our tuned rotation `balance-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `balance-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -26,52 +26,30 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 461 DPS), *Moonkin 38/0/13* (community simulator, 402 DPS)
+### [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 438 DPS), [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 435 DPS), *Balance* (community simulator, 400 DPS), *Moonkin 38/0/13* (community simulator, 353 DPS)
 
 Before the pull: at -10s: activate Moonkin Form.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) casts/min | *Moonkin 38/0/13* casts/min |
-|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | if mana % ≤ 30%: cast Innervate | 0.5 | 0.5 |
-| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.5 | 3.9 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.2 | 3.5 |
-| 5 | cast Starfire | 15.6 | 12.0 |
-| 6 | if mana % < 15%: cast Starfire | 0.1 | 2.7 |
+| # | Priority (the first line whose condition holds is cast) | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) casts/min | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) casts/min | *Balance* casts/min | *Moonkin 38/0/13* casts/min |
+|---|---|---|---|---|---|
+| 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
+| 2 | if mana % ≤ 30%: cast Innervate | 0.3 | 0.3 | 0.3 | 0.3 |
+| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 | 4.3 | 4.1 | 3.5 |
+| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 | 3.9 | 4.0 | 2.9 |
+| 5 | cast Starfire | 14.0 | 13.7 | 12.9 | 9.5 |
+| 6 | if mana % < 15%: cast Starfire | 1.8 | 2.0 | 0.7 | 4.4 |
 
 Damage by ability:
 
-| Ability | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | *Moonkin 38/0/13* |
-|---|---|---|
-| Starfire | 63% | 64% |
-| Moonfire | 19% | 18% |
-| Insect Swarm | 18% | 18% |
-
-### [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 460 DPS), *Balance* (community simulator, 411 DPS)
-
-Before the pull: at -10s: activate Moonkin Form.
-
-| # | Priority (the first line whose condition holds is cast) | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) casts/min | *Balance* casts/min |
-|---|---|---|---|
-| 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | if mana % ≤ 30%: cast Innervate | 0.5 | 0.5 |
-| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.5 | 4.0 |
-| 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.3 | 4.2 |
-| 5 | cast Starfire | 15.7 | 13.6 |
-
-Lines of the simulator's rotation these builds never cast: cast Starfire (its condition never held in these fights).
-
-Damage by ability:
-
-| Ability | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | *Balance* |
-|---|---|---|
-| Starfire | 63% | 61% |
-| Moonfire | 19% | 21% |
-| Insect Swarm | 18% | 18% |
+| Ability | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | *Balance* | *Moonkin 38/0/13* |
+|---|---|---|---|---|
+| Starfire | 63% | 63% | 61% | 65% |
+| Moonfire | 19% | 19% | 21% | 17% |
+| Insect Swarm | 18% | 18% | 19% | 18% |
 
 ## feral-cat-dps
 
-Our tuned rotation `feral-cat-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
+Our tuned rotation `feral-cat-dps.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build on the training dummy. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -108,22 +86,22 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 356 DPS), *Feral Cat 9/35/7* (community simulator, 356 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 355 DPS), *Feral* (community simulator, 341 DPS)
+### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 350 DPS), *Feral Cat 9/35/7* (community simulator, 350 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 349 DPS), *Feral* (community simulator, 335 DPS)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) casts/min | *Feral Cat 9/35/7* casts/min | [`feral-cat-dps`](builds/feral-cat-dps.md) casts/min | *Feral* casts/min |
 |---|---|---|---|---|---|
-| 1 | cast Tiger's Fury | 2.5 | 2.5 | 2.5 | 2.5 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.8 |
+| 1 | cast Tiger's Fury | 2.3 | 2.3 | 2.3 | 2.3 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.7 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.7 | 4.7 | 4.7 | 4.9 |
-| 5 | cast Shred | 17.4 | 17.4 | 17.4 | 17.8 |
-| 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.8 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.6 | 4.6 | 4.6 | 4.8 |
+| 5 | cast Shred | 17.1 | 17.1 | 17.1 | 17.5 |
+| 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.7 |
 | 7 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready | as ready | as ready | as ready |
-| 10 | if not Cat Form is up: cast Cat Form | 0.5 | 0.5 | 0.5 | 0.5 |
+| 10 | if not Cat Form is up: cast Cat Form | 0.3 | 0.3 | 0.3 | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast spell 13494, cast spell 23724, cast Innervate (its condition never held in these fights).
 
@@ -131,15 +109,15 @@ Damage by ability:
 
 | Ability | [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) | *Feral Cat 9/35/7* | [`feral-cat-dps`](builds/feral-cat-dps.md) | *Feral* |
 |---|---|---|---|---|
-| Rip | 36% | 36% | 35% | 35% |
-| Shred | 32% | 32% | 31% | 33% |
-| Auto Attack | 29% | 29% | 30% | 29% |
-| item 10646 | 3% | 3% | 3% | 3% |
+| Rip | 37% | 37% | 36% | 36% |
+| Shred | 31% | 31% | 31% | 32% |
+| Auto Attack | 29% | 29% | 30% | 30% |
+| item 10646 | 2% | 2% | 2% | 2% |
 | Dragonbreath Chili | 1% | 1% | 1% | 1% |
 
 ## feral-bear-tank (tank)
 
-Our tuned rotation `feral-bear-tank-raid.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 120 s per build in the raid setting. Ranking: [raid README](README.md).
+Our tuned rotation `feral-bear-tank-raid.apl.json` (the simulator's `default.apl.json` with the changes below) (commit 40be98e), 3000 fights of 180 s per build in the raid setting. Ranking: [raid README](README.md).
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -148,13 +126,13 @@ Our tuned rotation `feral-bear-tank-raid.apl.json` (the simulator's `default.apl
   2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
   3. insert before the filler: cast Barkskin (+2.2%, pass 3)
 
-### [`feral-bear-tank`](builds/feral-bear-tank.md) (ours: hand draft, 380 DPS), [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) (ours: optimizer, 380 DPS)
+### [`feral-bear-tank`](builds/feral-bear-tank.md) (ours: hand draft, 383 DPS), [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) (ours: optimizer, 383 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](builds/feral-bear-tank.md) casts/min | [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) casts/min |
 |---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready |
 | 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 38.0 | 38.0 |
-| 3 | if rage ≥ 50: cast Maul | 1.3 | 1.3 |
+| 3 | if rage ≥ 50: cast Maul | 1.5 | 1.5 |
 | 4 | cast Barkskin | 1.0 | 1.0 |
 | 5 | cast Lacerate | 38.0 | 38.0 |
 
@@ -165,23 +143,23 @@ Damage by ability (threat for tanks):
 | Ability | [`feral-bear-tank`](builds/feral-bear-tank.md) | [`opt-feral-bear-tank-raid-tank`](builds/opt-feral-bear-tank-raid-tank.md) |
 |---|---|---|
 | Lacerate | 76% | 76% |
-| Auto Attack | 17% | 17% |
-| Maul | 3% | 3% |
+| Auto Attack | 16% | 16% |
+| Maul | 4% | 4% |
 | OtherActionRageGain | 2% | 2% |
 | Retribution Aura | 1% | 1% |
 | Thorns | 1% | 1% |
 | Dragonbreath Chili | 0% | 0% |
 
-### *Bear Tank 0/31/20* (community simulator, 360 DPS)
+### *Bear Tank 0/31/20* (community simulator, 362 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Bear Tank 0/31/20* casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 21.6 |
-| 3 | cast Primal Bite | 9.6 |
-| 4 | if rage ≥ 50: cast Maul | 0.1 |
+| 2 | if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate | 21.8 |
+| 3 | cast Primal Bite | 9.4 |
+| 4 | if rage ≥ 50: cast Maul | 0.2 |
 | 5 | cast Barkskin | 1.0 |
-| 6 | cast Lacerate | 21.6 |
+| 6 | cast Lacerate | 21.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Faerie Fire, cast Demoralizing Roar (its condition never held in these fights).
 
@@ -189,11 +167,11 @@ Damage by ability (threat for tanks):
 
 | Ability | *Bear Tank 0/31/20* |
 |---|---|
-| Lacerate | 54% |
+| Lacerate | 55% |
 | Auto Attack | 22% |
 | Primal Bite | 18% |
 | OtherActionRageGain | 2% |
 | Retribution Aura | 1% |
 | Thorns | 1% |
-| Dragonbreath Chili | 1% |
+| Dragonbreath Chili | 0% |
 | Maul | 0% |

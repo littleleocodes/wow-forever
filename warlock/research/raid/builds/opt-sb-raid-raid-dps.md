@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +91.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +91.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -19,9 +19,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
+| **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
 | **Improved Bane of Agony** | 1/2 | **NEW** | Increases the damage done by your Bane of Agony by 5%. |
@@ -31,8 +31,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Health Funnel** | 2/2 | changed | Increases the amount of health transferred by your Health Funnel spell by 40%, reduces its health cost by 30%, and reduces all threat your Health Funnel generates by 100%. Allows Health Funnel to be used regardless of your demon's health. |
-| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
+| **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
@@ -48,13 +47,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 26.7 points of score in this model.
-2. **Bane** — Removing it costs 17.7 points of score in this model.
-3. **Agonizing Flames** — Removing it costs 11.9 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 26.5 points of score in this model.
+2. **Bane** — Removing it costs 17.8 points of score in this model.
+3. **Agonizing Flames** — Removing it costs 12.0 points of score in this model.
 4. **Suppression** — Removing it costs 10.8 points of score in this model.
-5. **Malevolence** — Removing it costs 10.1 points of score in this model.
-6. **Improved Corruption** — Removing it costs 9.1 points of score in this model.
-7. **Improved Shadow Bolt** — Removing it costs 8.6 points of score in this model.
+5. **Malevolence** — Removing it costs 10.0 points of score in this model.
+6. **Improved Corruption** — Removing it costs 9.0 points of score in this model.
+7. **Improved Shadow Bolt** — Removing it costs 8.5 points of score in this model.
 8. **Ruin** — Removing it costs 7.9 points of score in this model.
 
 ## Rank among our builds and the community simulator's
@@ -63,15 +62,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 574 | +0.0% | 690 | -0.5% | 1 s |
-| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 574 | -0.0% | 694 | +0.0% | 1 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 547 | -4.7% | 657 | -5.3% | 1 s |
-| 4 | *DS/Ruin* | community simulator | - | 539 | -6.1% | 649 | -6.5% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 516 | -10.2% | 614 | -11.4% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 473 | -17.7% | 562 | -19.0% | 1 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 470 | -18.2% | 567 | -18.2% | 0 s |
-| 8 | *Affliction* | community simulator | - | 466 | -18.8% | 553 | -20.3% | 1 s |
-| 9 | *Demonic Pact* | community simulator | - | 465 | -19.0% | 559 | -19.4% | 1 s |
+| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 566 | +0.0% | 675 | -0.4% | 1 s |
+| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 566 | -0.1% | 678 | +0.0% | 1 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 540 | -4.6% | 643 | -5.2% | 1 s |
+| 4 | *DS/Ruin* | community simulator | - | 533 | -5.9% | 635 | -6.3% | 1 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 509 | -10.0% | 601 | -11.3% | 1 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 471 | -16.9% | 553 | -18.4% | 1 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 466 | -17.7% | 557 | -17.8% | 0 s |
+| 8 | *Affliction* | community simulator | - | 464 | -18.0% | 545 | -19.5% | 1 s |
+| 9 | *Demonic Pact* | community simulator | - | 461 | -18.5% | 549 | -19.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,17 +87,17 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.6 |
+| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.7 |
-| 6 | if mana % < 10%: cast Life Tap | 6.2 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
+| 6 | if mana % < 10%: cast Life Tap | 6.7 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 11 | cast Shadow Bolt | 14.0 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | cast Shadow Bolt | 13.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent).
 
@@ -114,7 +113,7 @@ Damage by ability:
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/sb-raid-raid-dps.md
+- Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

@@ -65,19 +65,19 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 571 | +0.0% | 697 | +0.0% | 2 s |
-| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 571 | -0.0% | 697 | -0.0% | 2 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 536 | -6.1% | 655 | -6.1% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 531 | -7.1% | 645 | -7.4% | 1 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 520 | -9.0% | 632 | -9.4% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 514 | -10.0% | 618 | -11.3% | 2 s |
-| 7 | *DS/Ruin* | community simulator | - | 511 | -10.5% | 626 | -10.2% | 0 s |
-| 8 | *Affliction* | community simulator | - | 507 | -11.3% | 609 | -12.6% | 1 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 496 | -13.1% | 605 | -13.2% | 1 s |
+| 1 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 567 | +0.0% | 687 | +0.0% | 3 s |
+| 2 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 567 | +0.0% | 687 | +0.0% | 3 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 533 | -5.9% | 645 | -6.0% | 0 s |
+| 4 | *Demonic Pact* | community simulator | - | 528 | -7.0% | 637 | -7.2% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 515 | -9.2% | 622 | -9.4% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 512 | -9.7% | 612 | -10.8% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 506 | -10.8% | 614 | -10.5% | 1 s |
+| 8 | *Affliction* | community simulator | - | 505 | -10.9% | 605 | -11.9% | 2 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 491 | -13.5% | 594 | -13.5% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -93,16 +93,16 @@ Before the pull: at -5s: cast Amplify Curse.
 
 | # | Priority (the first line whose condition holds is cast) | [`affliction-dot-raid`](affliction-dot-raid.md) casts/min |
 |---|---|---|
-| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.6 |
+| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.7 |
-| 6 | if mana % < 10%: cast Life Tap | 6.3 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
+| 6 | if mana % < 10%: cast Life Tap | 6.7 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | cast Shadow Bolt | 13.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
@@ -111,13 +111,13 @@ Damage by ability:
 
 | Ability | [`affliction-dot-raid`](affliction-dot-raid.md) |
 |---|---|
-| Shadow Bolt | 47% |
+| Shadow Bolt | 46% |
 | Bane of Agony | 18% |
 | Corruption | 17% |
 | Immolate | 11% |
 | Pet: Auto Attack | 6% |
-| Searing Pain | 1% |
 | Pet: Lash of Pain | 1% |
+| Searing Pain | 1% |
 
 ## Notes
 

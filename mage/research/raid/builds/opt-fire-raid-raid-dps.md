@@ -1,30 +1,31 @@
-# Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps) — 13/33/5
+# Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps) — 14/32/5
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 13/33/5 (Arcane / Fire / Frost) |
+| **Build** | 14/32/5 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +197.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Arcane (13)
+### Arcane (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Channeling** | 5/5 | **NEW** | Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 70% chance while casting Arcane Blast. |
-| **Wand Specialization** | 1/2 | moved | Increases your damage with Wands by 13%. |
+| **Wand Specialization** | 2/2 | moved | Increases your damage with Wands by 25%. |
+| **Arcane Focus** | 4/5 | changed | Improves your chance to hit with Arcane spells by 4%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Magic Absorption** | 2/2 | changed | Increases all your resistances by 10 and causes all spells you fully resist to restore 2% of your total mana. Cannot trigger more often than 1 time per sec. |
+| **Arcane Geometry** | 1/2 | **NEW** | Increases the range of your Arcane spells by 3 yards. |
 
-### Fire (33)
+### Fire (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -32,7 +33,6 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 | **Incineration** | 3/3 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 6%. |
 | **Wake of Fire** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec. Killing a non-trivial target increases the critical strike chance of your next Fire Blast cast within 30 sec by 50%. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Flame Throwing** | 1/2 | unchanged | Increases the range of your Fire spells by 3 yards. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
 | **Improved Scorch** | 3/3 | changed | Your Scorch spell has a 100% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
 | **Hot Streak** | 1/1 | **NEW** | Your non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch grant Hot Streak for 20 sec. Hot Streak reduces the cast time of Pyroblast by 25%, stacking up to 3 times. |
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Core talents (priority order)
 
-1. **Improved Scorch** — Removing it costs 101.7 points of score in this model.
-2. **Ignite** — Removing it costs 27.8 points of score in this model.
-3. **Fire Power** — Removing it costs 27.0 points of score in this model.
-4. **Combustion** — Removing it costs 26.8 points of score in this model.
-5. **Hot Streak** — Removing it costs 19.4 points of score in this model.
-6. **Improved Fireball** — Removing it costs 18.3 points of score in this model.
-7. **Critical Mass** — Removing it costs 17.4 points of score in this model.
-8. **Elemental Precision** — Removing it costs 16.7 points of score in this model.
+1. **Improved Scorch** — Removing it costs 106.2 points of score in this model.
+2. **Fire Power** — Removing it costs 28.2 points of score in this model.
+3. **Ignite** — Removing it costs 27.3 points of score in this model.
+4. **Hot Streak** — Removing it costs 20.3 points of score in this model.
+5. **Improved Fireball** — Removing it costs 19.6 points of score in this model.
+6. **Combustion** — Removing it costs 18.5 points of score in this model.
+7. **Critical Mass** — Removing it costs 18.3 points of score in this model.
+8. **Arcane Concentration** — Removing it costs 17.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -64,14 +64,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/32/5 | 535 | +0.0% | 662 | +0.0% | 1 s |
-| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 13/33/5 | 534 | -0.0% | 662 | +0.0% | 1 s |
-| 3 | *Fire DPS* | community simulator | - | 520 | -2.8% | 624 | -5.8% | 0 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 520 | -2.8% | 648 | -2.1% | 0 s |
-| 5 | *Arcane DPS* | community simulator | - | 407 | -23.9% | 473 | -28.6% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 270 | -49.6% | 336 | -49.3% | 0 s |
-| 7 | *Frost 14/0/37* | community simulator | - | 262 | -50.9% | 321 | -51.6% | 0 s |
-| 8 | *Frost DPS* | community simulator | - | 258 | -51.8% | 321 | -51.6% | 0 s |
+| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 14/32/5 | 511 | +0.0% | 636 | +0.0% | 1 s |
+| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 511 | -0.0% | 636 | +0.0% | 1 s |
+| 3 | *Fire DPS* | community simulator | - | 492 | -3.6% | 607 | -4.5% | 0 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.5% | 609 | -4.3% | 3 s |
+| 5 | *Arcane DPS* | community simulator | - | 378 | -26.0% | 462 | -27.3% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 273 | -46.5% | 338 | -46.8% | 1 s |
+| 7 | *Frost DPS* | community simulator | - | 258 | -49.5% | 322 | -49.3% | 0 s |
+| 8 | *Frost 14/0/37* | community simulator | - | 250 | -51.0% | 324 | -49.1% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,30 +92,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 5.5 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.1 |
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.4 |
+| 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.4 |
-| 6 | cast Fire Blast | 7.2 |
-| 7 | if mana % ≥ 10%: cast Fireball | 11.3 |
-| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.1 |
-| 9 | cast Scorch | 1.1 |
+| 6 | cast Fire Blast | 7.4 |
+| 7 | if mana % ≥ 10%: cast Fireball | 10.5 |
+| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.3 |
+| 9 | cast Scorch | 3.3 |
 
 Damage by ability:
 
 | Ability | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) |
 |---|---|
-| Fireball | 48% |
-| Fire Blast | 20% |
-| Ignite | 12% |
+| Fireball | 46% |
+| Fire Blast | 21% |
+| Ignite | 11% |
 | Scorch | 10% |
 | Pyroblast | 10% |
-| Arcane Missiles | 0% |
+| Arcane Missiles | 1% |
 
 ## Notes
 
-- Report: mage/talents/forever/optimizer/fire-raid-raid-dps.md
+- Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

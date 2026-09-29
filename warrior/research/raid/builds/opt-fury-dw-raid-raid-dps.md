@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +90.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +88.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,13 +47,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 ## Core talents (priority order)
 
-1. **Dual Wield Specialization** — Removing it costs 23.0 points of score in this model.
-2. **Flurry** — Removing it costs 20.2 points of score in this model.
-3. **Death Wish** — Removing it costs 16.5 points of score in this model.
-4. **Improved Execute** — Removing it costs 14.2 points of score in this model.
-5. **Cruelty** — Removing it costs 9.4 points of score in this model.
-6. **Unbridled Wrath** — Removing it costs 6.7 points of score in this model.
-7. **Raging Blows** — Removing it costs 6.7 points of score in this model.
+1. **Dual Wield Specialization** — Removing it costs 23.9 points of score in this model.
+2. **Flurry** — Removing it costs 21.3 points of score in this model.
+3. **Cruelty** — Removing it costs 12.1 points of score in this model.
+4. **Improved Execute** — Removing it costs 11.2 points of score in this model.
+5. **Death Wish** — Removing it costs 9.5 points of score in this model.
+6. **Raging Blows** — Removing it costs 8.1 points of score in this model.
+7. **Unbridled Wrath** — Removing it costs 7.1 points of score in this model.
 8. **Precision** — Removing it costs 6.3 points of score in this model.
 
 ## Rank among our builds and the community simulator's
@@ -62,11 +62,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 14/37/0 | 256 | +0.0% | 442 | -2.9% | 0 s |
-| 2 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 255 | -0.7% | 455 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 240 | -6.3% | 439 | -3.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 223 | -13.1% | 408 | -10.3% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 144 | -44.0% | 275 | -39.6% | 0 s |
+| 1 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 14/37/0 | 218 | +0.0% | 375 | -6.6% | 0 s |
+| 2 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 216 | -0.9% | 402 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 208 | -4.9% | 391 | -2.6% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 192 | -12.0% | 364 | -9.4% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 136 | -37.8% | 264 | -34.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,24 +95,24 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 |
-| 2 | if execute phase (E20): cast Execute | 6.5 |
-| 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 |
-| 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 8.5 |
+| 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
+| 2 | if execute phase (E20): cast Execute | 5.9 |
+| 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
+| 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
-| 7 | if false: cast Recklessness | 0.5 |
+| 7 | if false: cast Recklessness | 0.3 |
 | 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 4.0 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.0 |
-| 15 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 4.5 |
+| 13 | cast Whirlwind | 4.2 |
+| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
+| 15 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 5.4 |
 | 16 | if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring | 0.1 |
-| 17 | if not Battle Shout is up: cast Battle Shout | 0.5 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.5 |
+| 17 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -120,17 +120,17 @@ Damage by ability:
 
 | Ability | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) |
 |---|---|
-| Execute | 41% |
-| Auto Attack | 40% |
-| Heroic Strike | 8% |
-| Whirlwind | 8% |
-| Deep Wound | 2% |
+| Auto Attack | 42% |
+| Execute | 33% |
+| Heroic Strike | 12% |
+| Whirlwind | 9% |
+| Deep Wound | 3% |
 | Dragonbreath Chili | 1% |
 | Hamstring | 0% |
 
 ## Notes
 
-- Report: warrior/talents/forever/optimizer/fury-dw-raid-raid-dps.md
+- Report: warrior/research/talents/forever/optimizer/fury-dw-raid-raid-dps.md
 
 ## Open questions (verify in the live game)
 

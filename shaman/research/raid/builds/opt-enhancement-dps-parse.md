@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +100.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +95.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,14 +47,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 41.7 points of score in this model.
+1. **Stormstrike** — Removing it costs 40.6 points of score in this model.
 2. **Flurry** — Removing it costs 16.9 points of score in this model.
-3. **Maelstrom Weapon** — Removing it costs 13.5 points of score in this model.
-4. **Thundering Strikes** — Removing it costs 9.4 points of score in this model.
-5. **Mental Dexterity** — Removing it costs 7.5 points of score in this model.
-6. **Rage of the Farseer** — Removing it costs 7.4 points of score in this model.
-7. **Call of Flame** — Removing it costs 5.0 points of score in this model.
-8. **Tidal Focus** — Removing it costs 4.8 points of score in this model.
+3. **Maelstrom Weapon** — Removing it costs 13.6 points of score in this model.
+4. **Thundering Strikes** — Removing it costs 9.2 points of score in this model.
+5. **Mental Dexterity** — Removing it costs 7.4 points of score in this model.
+6. **Call of Flame** — Removing it costs 5.0 points of score in this model.
+7. **Tidal Focus** — Removing it costs 4.8 points of score in this model.
+8. **Rage of the Farseer** — Removing it costs 3.7 points of score in this model.
 
 ## Rotation
 
@@ -62,7 +62,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: shaman/talents/forever/optimizer/enhancement-dps-parse.md
+- Report: shaman/research/talents/forever/optimizer/enhancement-dps-parse.md
 
 ## Open questions (verify in the live game)
 

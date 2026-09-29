@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +41.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +41.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,10 +47,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 1. **Bestial Discipline** — Removing it costs 7.2 points of score in this model.
 2. **Mortal Shots** — Removing it costs 6.9 points of score in this model.
 3. **Lethal Attacks** — Removing it costs 6.2 points of score in this model.
-4. **Deadly Aspects** — Removing it costs 5.3 points of score in this model.
-5. **Careful Aim** — Removing it costs 5.3 points of score in this model.
+4. **Careful Aim** — Removing it costs 5.3 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 5.2 points of score in this model.
 6. **Ranged Weapon Specialization** — Removing it costs 4.7 points of score in this model.
-7. **Improved Stings** — Removing it costs 3.5 points of score in this model.
+7. **Improved Stings** — Removing it costs 3.6 points of score in this model.
 8. **Focused Fire** — Removing it costs 2.4 points of score in this model.
 
 ## Rotation
@@ -59,7 +59,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: hunter/talents/forever/optimizer/mm-raid-parse.md
+- Report: hunter/research/talents/forever/optimizer/mm-raid-parse.md
 
 ## Open questions (verify in the live game)
 

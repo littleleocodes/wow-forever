@@ -75,11 +75,11 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 256 | +0.0% | 442 | -2.9% | 0 s |
-| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 255 | -0.7% | 455 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 240 | -6.3% | 439 | -3.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 223 | -13.1% | 408 | -10.3% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 144 | -44.0% | 275 | -39.6% | 0 s |
+| 1 | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) | ours: optimizer | 14/37/0 | 218 | +0.0% | 375 | -6.6% | 0 s |
+| 2 | **[`fury-dw-raid`](fury-dw-raid.md)** | ours: hand draft | 13/38/0 | 216 | -0.9% | 402 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 208 | -4.9% | 391 | -2.6% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 192 | -12.0% | 364 | -9.4% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 136 | -37.8% | 264 | -34.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -108,23 +108,23 @@ Allocation adopted on 2026-09-26 from `opt-fury-dw-raid-raid-dps`, the best buil
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](fury-dw-raid.md) casts/min |
 |---|---|---|
-| 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.5 |
-| 2 | if execute phase (E20): cast Execute | 6.5 |
-| 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.5 |
-| 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 8.5 |
+| 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
+| 2 | if execute phase (E20): cast Execute | 5.9 |
+| 3 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
+| 4 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 |
 | 5 | cast Goblin Sapper Charge | as ready |
 | 6 | cast Dense Dynamite | as ready |
-| 7 | if false: cast Recklessness | 0.5 |
+| 7 | if false: cast Recklessness | 0.3 |
 | 8 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 13 | cast Whirlwind | 4.0 |
-| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.0 |
-| 15 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 4.5 |
-| 16 | if not Battle Shout is up: cast Battle Shout | 0.5 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.5 |
+| 13 | cast Whirlwind | 4.2 |
+| 14 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
+| 15 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 5.4 |
+| 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast spell 24427, cast spell 29602, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -132,10 +132,10 @@ Damage by ability:
 
 | Ability | [`fury-dw-raid`](fury-dw-raid.md) |
 |---|---|
-| Execute | 41% |
-| Auto Attack | 40% |
-| Heroic Strike | 8% |
-| Whirlwind | 8% |
+| Auto Attack | 43% |
+| Execute | 33% |
+| Heroic Strike | 12% |
+| Whirlwind | 9% |
 | Deep Wound | 2% |
 | Dragonbreath Chili | 1% |
 

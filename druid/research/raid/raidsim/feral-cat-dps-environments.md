@@ -30,17 +30,17 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-feral-cat-dps-raid-dps` | 374 | 339 | 338 | 354 | 343 |
-| `opt-feral-cat-dps-parse` | 374 | 339 | 338 | 354 | 343 |
-| sim preset: Feral Cat 9/35/7 | 374 | 339 | 338 | 354 | 343 |
-| `feral-cat-dps` | 373 | 338 | 336 | 352 | 342 |
-| sim preset: Feral | 358 | 323 | 322 | 339 | 327 |
+| `opt-feral-cat-dps-raid-dps` | 374 | 356 | 350 | 351 | 348 |
+| `opt-feral-cat-dps-parse` | 374 | 356 | 350 | 351 | 348 |
+| sim preset: Feral Cat 9/35/7 | 374 | 356 | 350 | 351 | 348 |
+| `feral-cat-dps` | 373 | 355 | 349 | 350 | 347 |
+| sim preset: Feral | 358 | 341 | 335 | 336 | 333 |
 
 Gear presets: raid `launch.gear.json`, maximum `p2.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +68.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +69.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,9 +48,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 
 ## Core talents (priority order)
 
-1. **Elemental Alacrity** — Removing it costs 29.2 points of score in this model.
+1. **Elemental Alacrity** — Removing it costs 28.9 points of score in this model.
 2. **Mental Quickness** — Removing it costs 14.2 points of score in this model.
-3. **Elemental Fury** — Removing it costs 13.7 points of score in this model.
+3. **Elemental Fury** — Removing it costs 13.6 points of score in this model.
 4. **Concussion** — Removing it costs 6.7 points of score in this model.
 5. **Thundering Strikes** — Removing it costs 6.1 points of score in this model.
 6. **Call of Flame** — Removing it costs 5.9 points of score in this model.
@@ -63,7 +63,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: shaman/talents/forever/optimizer/elemental-dps-parse.md
+- Report: shaman/research/talents/forever/optimizer/elemental-dps-parse.md
 
 ## Open questions (verify in the live game)
 

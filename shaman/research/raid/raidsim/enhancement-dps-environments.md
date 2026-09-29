@@ -30,17 +30,17 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
-## DPS over the fight
+## DPS by fight length
 
-Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
 
-| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-enhancement-dps-raid-dps` | 439 | 391 | 353 | 388 | 344 |
-| `enhancement-raid-dps` | 434 | 388 | 350 | 385 | 342 |
-| `opt-enhancement-dps-parse` | 445 | 364 | 363 | 359 | 338 |
-| sim preset: Level 60 | 438 | 362 | 352 | 348 | 327 |
-| sim preset: Enhancement 16/35/0 | 429 | 316 | 351 | 330 | 318 |
+| `opt-enhancement-dps-raid-dps` | 439 | 415 | 394 | 393 | 377 |
+| `enhancement-raid-dps` | 434 | 411 | 391 | 389 | 373 |
+| `opt-enhancement-dps-parse` | 445 | 404 | 390 | 383 | 368 |
+| sim preset: Level 60 | 438 | 400 | 384 | 375 | 359 |
+| sim preset: Enhancement 16/35/0 | 429 | 373 | 365 | 356 | 343 |
 
 Gear presets: raid `phase_1.gear.json`, maximum `phase_2.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

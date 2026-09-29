@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +103.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +102.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -20,8 +20,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Genesis** | 5/5 | **NEW** | Increases the periodic damage and healing done by your spells and abilities by 5%. |
-| **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
+| **Nature's Reach** | 2/2 | changed | Increases the range of your offensive Balance spells by 20% and improves your chance to hit by 4%. |
 
 ### Feral Combat (35)
 
@@ -50,14 +50,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Core talents (priority order)
 
-1. **Shredding Attacks** — Removing it costs 35.6 points of score in this model.
-2. **King of the Jungle** — Removing it costs 17.5 points of score in this model.
-3. **Blood Frenzy** — Removing it costs 14.6 points of score in this model.
-4. **Sharpened Claws** — Removing it costs 10.9 points of score in this model.
+1. **Shredding Attacks** — Removing it costs 34.5 points of score in this model.
+2. **King of the Jungle** — Removing it costs 17.4 points of score in this model.
+3. **Blood Frenzy** — Removing it costs 14.9 points of score in this model.
+4. **Sharpened Claws** — Removing it costs 10.8 points of score in this model.
 5. **Rend and Tear** — Removing it costs 10.1 points of score in this model.
 6. **Berserk** — Removing it costs 7.2 points of score in this model.
 7. **Predatory Strikes** — Removing it costs 6.5 points of score in this model.
-8. **Savage Fury** — Removing it costs 6.4 points of score in this model.
+8. **Predatory Instincts** — Removing it costs 6.2 points of score in this model.
 
 ## Rotation
 
@@ -65,7 +65,7 @@ Not simulated in the community simulator (no spec model of this playstyle there)
 
 ## Notes
 
-- Report: druid/talents/forever/optimizer/feral-cat-dps-parse.md
+- Report: druid/research/talents/forever/optimizer/feral-cat-dps-parse.md
 
 ## Open questions (verify in the live game)
 
