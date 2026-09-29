@@ -58,9 +58,15 @@ def by_tree(trees, flat):
 def valid(trees, flat):
     if sum(flat.values()) != VB.TOTAL_POINTS:
         return False
+    for tname, need in MIN_TREE.items():   # --min-tree: keep the build a spec of that tree (2026-09-29, the spec pages)
+        if sum(flat.get(n, 0) for n in trees[tname]["talents"]) < need:
+            return False
     errors = []
     VB.check_state(trees, by_tree(trees, flat), "candidate", errors)
     return not errors
+
+
+MIN_TREE = {}   # tree name -> minimum points (--min-tree "Beast Mastery=30")
 
 
 def neighbors(trees, flat, protect=()):
@@ -122,8 +128,12 @@ def main():
     ap.add_argument("--repo")
     ap.add_argument("--write", help="candidate file to write the result to")
     ap.add_argument("--keep", default="", help="comma-separated talents that must keep at least one rank")
+    ap.add_argument("--min-tree", default="", help='keep at least N points in a tree, e.g. "Beast Mastery=30" (a spec build of that tree)')
     ap.add_argument("--allow-drop", action="store_true", help="let moves remove talents the rotation conditions on")
     a = ap.parse_args()
+    for part in filter(None, (x.strip() for x in a.min_tree.split(","))):
+        tname, need = part.rsplit("=", 1)
+        MIN_TREE[tname.strip()] = int(need)
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=a.repo))
     entry = R.SPECS[a.cls][a.spec]
