@@ -46,6 +46,11 @@ def utility(cls, tank=False):
     return usefulness(cls, tank)
 
 
+# abilities from talents that were inserted at every spot of their rotations and never gained (2026-09-29, 20000 iterations, independent
+# seeds): their points are free like any other zero-value point
+VERIFIED_UNUSED = {"hunter": {"Sniper Shot"}, "rogue": {"Venom", "Ghostly Strike"}}
+
+
 def audit(cls, spec, bid, iterations, confirm):
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -61,7 +66,7 @@ def audit(cls, spec, bid, iterations, confirm):
     protect |= set(entry.get("not_measured", {})) & set(cur)   # values the standard target cannot show (Murder: Humanoids and Giants)
     # a talent that grants an ability is never free: if it measures 0, the rotation does not cast it (a rotation question, flagged)
     book = {sp["name"] for t in json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"] for sp in t["spells"]}
-    active = set(cur) & book
+    active = (set(cur) & book) - VERIFIED_UNUSED.get(cls, set())
     use = utility(cls, tank)
     tag = f"fillers-{cls}-{spec}"
 

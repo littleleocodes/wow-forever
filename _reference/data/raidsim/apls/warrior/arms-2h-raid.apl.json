@@ -459,6 +459,16 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "spellId": 12328
+     }
+    }
+   },
+   "notes": "2026-09-29: Death Wish added (the rotation never cast it; +3.1% at this spot on an independent seed, 20000 iterations, 180 s)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 1680,
       "tag": 1
      }
