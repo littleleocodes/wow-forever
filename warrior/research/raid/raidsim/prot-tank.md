@@ -4,15 +4,15 @@
 
 | Build | Split | Tank value | Threat/s | Damage taken/s | DPS | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `prot-raid-tank` | 14/5/32 | 1.000 | 650 | 1164 | 426 | 0 | +58.5% |
-| `opt-prot-tank-raid-tank` | 14/5/32 | 1.000 | 650 | 1164 | 426 | 0 | +58.5% |
-| `cand-prot-tank-r3` | 14/5/32 | 1.000 | 650 | 1164 | 426 | 0 | +58.5% |
-| sim preset: Protection | - | 0.952 | 615 | 1217 | 404 | 0 | - |
-| `cand-prot-tank-hand-2026-09-26` | 5/5/41 | 0.951 | 607 | 1203 | 406 | 0 | +49.9% |
-| sim preset: Protection 1/0/50 | - | 0.941 | 608 | 1229 | 400 | 0 | - |
-| `cand-prot-tank-hand-2026-09-27` | 14/5/32 | 0.932 | 559 | 1160 | 392 | 0 | +47.3% |
-| `cand-prot-tank-r2` | 14/5/32 | 0.932 | 559 | 1160 | 392 | 0 | +47.3% |
-| `cand-prot-tank-r1` | 32/3/16 | 0.790 | 399 | 1206 | 312 | 0 | +21.8% |
+| `prot-raid-tank` | 14/5/32 | 1.000 | 652 | 1161 | 427 | 0 | +57.9% |
+| `opt-prot-tank-raid-tank` | 14/5/32 | 0.997 | 650 | 1164 | 426 | 0 | +58.6% |
+| `cand-prot-tank-r3` | 14/5/32 | 0.997 | 650 | 1164 | 426 | 0 | +58.6% |
+| sim preset: Protection | - | 0.949 | 615 | 1217 | 404 | 0 | - |
+| `cand-prot-tank-hand-2026-09-26` | 5/5/41 | 0.948 | 607 | 1203 | 406 | 0 | +50.0% |
+| sim preset: Protection 1/0/50 | - | 0.938 | 608 | 1229 | 400 | 0 | - |
+| `cand-prot-tank-hand-2026-09-27` | 14/5/32 | 0.929 | 559 | 1160 | 392 | 0 | +47.3% |
+| `cand-prot-tank-r2` | 14/5/32 | 0.929 | 559 | 1160 | 392 | 0 | +47.3% |
+| `cand-prot-tank-r1` | 32/3/16 | 0.787 | 399 | 1206 | 312 | 0 | +21.9% |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -20,10 +20,10 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 
 | Action | Share |
 |---|---|
-| Shield Slam | 33.0% |
-| Auto Attack | 23.2% |
-| Heroic Strike | 16.4% |
-| Revenge | 14.3% |
+| Shield Slam | 32.9% |
+| Auto Attack | 22.9% |
+| Heroic Strike | 16.9% |
+| Revenge | 14.2% |
 | Thunder Clap | 7.5% |
 | Rend | 1.6% |
 | Retribution Aura | 1.4% |
@@ -32,12 +32,12 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 | Dragonbreath Chili | 0.4% |
 | spell 16782 | 0.1% |
 
-Mapped onto the spec model's sources: `white` 37%, `heroic_strike` 26%, `revenge` 23%, `thunder_clap` 12%, `rend` 3%; 37% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `white` 36%, `heroic_strike` 27%, `revenge` 23%, `thunder_clap` 12%, `rend` 3%; 37% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- prot-raid-tank: `3500501-05-550030233001010531`
+- prot-raid-tank: `3500501-05-551030233000010531`
 - opt-prot-tank-raid-tank: `3500501-05-550030233001010531`
 - cand-prot-tank-r3: `3500501-05-550030233001010531`
 - sim preset: Protection: `31--552531233330012531`

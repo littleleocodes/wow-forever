@@ -4,11 +4,11 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-fury-dw-raid-raid-dps` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
-| `opt-fury-dw-raid-parse` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
-| `fury-dw-raid` | 13/38/0 | 216 | 206 | 402 | 402 | 459 |
-| sim preset: DPS | - | 208 | 209 | 391 | 391 | 448 |
-| sim preset: Fury 17/34/0 | - | 192 | 189 | 364 | 364 | 414 |
+| `fury-dw-raid` | 13/38/0 | 221 | 219 | 401 | 401 | 459 |
+| `opt-fury-dw-raid-raid-dps` | 13/38/0 | 221 | 219 | 402 | 402 | 459 |
+| `opt-fury-dw-raid-parse` | 13/38/0 | 221 | 219 | 402 | 402 | 459 |
+| sim preset: DPS | - | 212 | 222 | 391 | 391 | 448 |
+| sim preset: Fury 17/34/0 | - | 197 | 203 | 364 | 364 | 414 |
 | sim preset: Arms 39/12/0 | - | 136 | 145 | 264 | 264 | 272 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
@@ -23,11 +23,11 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-fury-dw-raid-raid-dps` | 218 | +0% | +39% | +39% | +0% | -6% | 375 |
-| `opt-fury-dw-raid-parse` | 218 | +0% | +39% | +39% | +0% | -6% | 375 |
-| `fury-dw-raid` | 216 | +0% | +39% | +39% | +0% | +7% | 402 |
-| sim preset: DPS | 208 | +0% | +39% | +41% | +0% | +8% | 391 |
-| sim preset: Fury 17/34/0 | 192 | +0% | +39% | +42% | +0% | +9% | 364 |
+| `fury-dw-raid` | 221 | -0% | +37% | +44% | +0% | +1% | 401 |
+| `opt-fury-dw-raid-raid-dps` | 221 | -0% | +37% | +44% | +0% | +1% | 402 |
+| `opt-fury-dw-raid-parse` | 221 | -0% | +37% | +44% | +0% | +1% | 402 |
+| sim preset: DPS | 212 | -0% | +36% | +46% | +0% | +3% | 391 |
+| sim preset: Fury 17/34/0 | 197 | +0% | +35% | +46% | +0% | +3% | 364 |
 | sim preset: Arms 39/12/0 | 136 | -0% | +41% | +49% | +0% | +4% | 264 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
@@ -38,11 +38,11 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-fury-dw-raid-raid-dps` | 160 | 166 | 161 | 164 | 162 |
-| `opt-fury-dw-raid-parse` | 160 | 166 | 161 | 164 | 162 |
-| `fury-dw-raid` | 156 | 160 | 157 | 160 | 159 |
-| sim preset: DPS | 158 | 162 | 160 | 163 | 162 |
-| sim preset: Fury 17/34/0 | 139 | 144 | 143 | 146 | 145 |
+| `fury-dw-raid` | 181 | 176 | 167 | 169 | 165 |
+| `opt-fury-dw-raid-raid-dps` | 181 | 176 | 167 | 169 | 165 |
+| `opt-fury-dw-raid-parse` | 181 | 176 | 167 | 169 | 165 |
+| sim preset: DPS | 183 | 178 | 169 | 171 | 167 |
+| sim preset: Fury 17/34/0 | 166 | 161 | 154 | 155 | 152 |
 | sim preset: Arms 39/12/0 | 118 | 110 | 111 | 112 | 111 |
 
 Gear presets: raid `p1_fury.gear.json`, maximum `p1_fury.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.

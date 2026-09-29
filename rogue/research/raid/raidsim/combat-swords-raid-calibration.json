@@ -47,8 +47,8 @@
   {
    "talent": "Relentless Strikes",
    "sim": 0.08108855112466617,
-   "ev_before": 0.06647498292422442,
-   "ev_after": 0.06540571813995705,
+   "ev_before": 0.06540084132558521,
+   "ev_after": 0.06540084132558521,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -67,10 +67,10 @@
   {
    "talent": "Improved Expose Armor",
    "sim": 0.0754737223067752,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "dead",
+   "ev_before": 1.2435261639959317e-05,
+   "ev_after": 1.2435261639959317e-05,
+   "scale": 64.0,
+   "how": "capped",
    "builds": [
     "combat-swords-raid",
     "cand-combat-swords-raid-preset-improved-expose-armor-ss"
@@ -79,8 +79,8 @@
   {
    "talent": "Improved Sinister Strike",
    "sim": 0.06961920163233518,
-   "ev_before": 0.06318861364286579,
-   "ev_after": 0.06217539433023509,
+   "ev_before": 0.06217077140619749,
+   "ev_after": 0.06217077140619749,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -99,8 +99,8 @@
   {
    "talent": "Improved Slice and Dice",
    "sim": 0.05765070783622854,
-   "ev_before": 0.047867112526789414,
-   "ev_after": 0.047110375903618495,
+   "ev_before": 0.04710692380791802,
+   "ev_after": 0.04710692380791802,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -119,8 +119,8 @@
   {
    "talent": "Malice",
    "sim": 0.04936983008394291,
-   "ev_before": 0.04918922572705521,
-   "ev_after": 0.04914547861055475,
+   "ev_before": 0.049141869116700834,
+   "ev_after": 0.049141869116700834,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -139,8 +139,8 @@
   {
    "talent": "Ruthlessness",
    "sim": 0.04929312328055676,
-   "ev_before": 0.050059046538319565,
-   "ev_after": 0.049266028843613134,
+   "ev_before": 0.04926241132569499,
+   "ev_after": 0.04926241132569499,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -159,10 +159,10 @@
   {
    "talent": "Adrenaline Rush",
    "sim": 0.045735439365941356,
-   "ev_before": 0.06462052551842395,
-   "ev_after": 0.04568788006221891,
-   "scale": 0.7077573058195412,
-   "how": "fitted",
+   "ev_before": 0.04568453676938965,
+   "ev_after": 0.04568453676938965,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "combat-swords-raid",
     "opt-combat-swords-raid-raid-dps",
@@ -179,8 +179,8 @@
   {
    "talent": "Dual Wield Specialization",
    "sim": 0.0432183098329013,
-   "ev_before": 0.043745512473913395,
-   "ev_after": 0.04462828830426237,
+   "ev_before": 0.04462503011374489,
+   "ev_after": 0.04462503011374489,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -199,8 +199,8 @@
   {
    "talent": "Precision",
    "sim": 0.030586009475617876,
-   "ev_before": 0.0361153789002459,
-   "ev_after": 0.03618332730060883,
+   "ev_before": 0.03618070886125412,
+   "ev_after": 0.03618070886125412,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -219,8 +219,8 @@
   {
    "talent": "Improved Poisons",
    "sim": 0.02396199570765131,
-   "ev_before": 0.02714446998701624,
-   "ev_after": 0.02766739911170073,
+   "ev_before": 0.027665592980896853,
+   "ev_after": 0.027665592980896853,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -234,8 +234,8 @@
   {
    "talent": "Hack and Slash",
    "sim": 0.020990120576392924,
-   "ev_before": 0.02406947181000053,
-   "ev_after": 0.02405234536896336,
+   "ev_before": 0.02407893713312814,
+   "ev_after": 0.02407893713312814,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -254,8 +254,8 @@
   {
    "talent": "Aggression",
    "sim": 0.018741239539494275,
-   "ev_before": 0.018722062339153325,
-   "ev_after": 0.0184341854621902,
+   "ev_before": 0.018432871807301642,
+   "ev_after": 0.018432871807301642,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -274,8 +274,8 @@
   {
    "talent": "Weapon Expertise",
    "sim": 0.01590735050187991,
-   "ev_before": 0.01728409707611903,
-   "ev_after": 0.017270402205129973,
+   "ev_before": 0.017280600151754633,
+   "ev_after": 0.017280600151754633,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -294,8 +294,8 @@
   {
    "talent": "Lethality",
    "sim": 0.008135180596984783,
-   "ev_before": 0.016817697363559835,
-   "ev_after": 0.016563131574679035,
+   "ev_before": 0.016561899499625974,
+   "ev_after": 0.016561899499625974,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -314,8 +314,8 @@
   {
    "talent": "Flawless Execution",
    "sim": 0.0056718501743960575,
-   "ev_before": 0.013009624159640795,
-   "ev_after": 0.012810687790609291,
+   "ev_before": 0.01280977993782656,
+   "ev_after": 0.01280977993782656,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -334,8 +334,8 @@
   {
    "talent": "Improved Eviscerate",
    "sim": 0.005063882270452998,
-   "ev_before": 0.004607223834858752,
-   "ev_after": 0.004537307406295165,
+   "ev_before": 0.00453698888012406,
+   "ev_after": 0.00453698888012406,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -354,8 +354,8 @@
   {
    "talent": "Blade Flurry",
    "sim": 0.004818411417648746,
-   "ev_before": 0.0037096402712793798,
-   "ev_after": 0.003781571905401937,
+   "ev_before": 0.003781306631135474,
+   "ev_after": 0.003781306631135474,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -374,10 +374,10 @@
   {
    "talent": "Cold Blood",
    "sim": 0.0030465132608337555,
-   "ev_before": 0.005602226147270387,
-   "ev_after": 0.0030470176010466386,
-   "scale": 0.5516500002704561,
-   "how": "fitted",
+   "ev_before": 0.003046804479810611,
+   "ev_after": 0.003046804479810611,
+   "scale": 1.0,
+   "how": "noise",
    "builds": [
     "cand-combat-swords-raid-preset-sinister-strike",
     "cand-combat-swords-raid-r1",
@@ -389,54 +389,13 @@
   {
    "talent": "Deflection",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.699174126972858e-05,
+   "ev_after": 1.699174126972858e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "combat-swords-raid",
     "cand-combat-swords-raid-hand-2026-09-28",
-    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
-    "cand-combat-swords-raid-preset-sinister-strike"
-   ]
-  },
-  {
-   "talent": "Endurance",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "combat-swords-raid",
-    "cand-combat-swords-raid-hand-2026-09-28",
-    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
-    "cand-combat-swords-raid-preset-sinister-strike"
-   ]
-  },
-  {
-   "talent": "Improved Sprint",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "combat-swords-raid",
-    "cand-combat-swords-raid-hand-2026-09-28",
-    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
-    "cand-combat-swords-raid-preset-sinister-strike"
-   ]
-  },
-  {
-   "talent": "Riposte",
-   "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "combat-swords-raid",
     "cand-combat-swords-raid-preset-improved-expose-armor-ss",
     "cand-combat-swords-raid-preset-sinister-strike"
    ]
@@ -444,11 +403,12 @@
   {
    "talent": "Lightning Reflexes",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 2.591685437213088e-05,
+   "ev_after": 2.591685437213088e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
+    "combat-swords-raid",
     "opt-combat-swords-raid-raid-dps",
     "cand-combat-swords-raid-hand-2026-09-28",
     "cand-combat-swords-raid-r1",
@@ -459,10 +419,23 @@
    ]
   },
   {
+   "talent": "Riposte",
+   "sim": 0.0,
+   "ev_before": 6.191451961861262e-06,
+   "ev_after": 6.191451961861262e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "combat-swords-raid",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
    "talent": "Murder",
    "sim": 0.0,
-   "ev_before": 0.010800000000000094,
-   "ev_after": 0.01079999999999995,
+   "ev_before": 0.010799307200744252,
+   "ev_after": 0.010799307200744252,
    "scale": 1.0,
    "how": "unmeasured",
    "builds": [
@@ -487,6 +460,32 @@
     "cand-combat-swords-raid-r3",
     "cand-combat-swords-raid-r4",
     "cand-combat-swords-raid-r5"
+   ]
+  },
+  {
+   "talent": "Endurance",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
+   ]
+  },
+  {
+   "talent": "Improved Sprint",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-combat-swords-raid-hand-2026-09-28",
+    "cand-combat-swords-raid-preset-improved-expose-armor-ss",
+    "cand-combat-swords-raid-preset-sinister-strike"
    ]
   }
  ],

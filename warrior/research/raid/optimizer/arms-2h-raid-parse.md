@@ -9,61 +9,61 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Bloodthirst | Fury | 7 | +10.31% | manual |
+| Bloodthirst | Fury | 7 | +10.99% | manual |
 | Mortal Strike | Arms | 7 | +4.00% | manual |
-| Deep Wounds | Arms | 3 | +2.75% | manual |
-| Flurry | Fury | 6 | +2.52% | manual |
+| Death Wish | Fury | 5 | +3.30% | manual |
+| Anger Management | Arms | 3 | +2.90% | manual |
+| Deep Wounds | Arms | 3 | +2.76% | manual |
+| Flurry | Fury | 6 | +2.54% | manual |
+| Improved Execute | Fury | 4 | +2.03% | manual |
 | Cruelty | Fury | 1 | +1.80% | manual |
-| Anger Management | Arms | 3 | +1.50% | manual |
-| Weaponmaster | Arms | 5 | +1.23% | manual |
-| Focused Rage | Protection | 6 | +1.13% | manual |
+| Weaponmaster | Arms | 5 | +1.24% | manual |
+| Focused Rage | Protection | 6 | +1.12% | manual |
 | Precision | Fury | 5 | +1.09% | manual |
 | Two-Handed Weapon Specialization | Arms | 4 | +1.00% | manual |
 | Unbridled Wrath | Fury | 2 | +0.54% | manual |
 | Spearing Strike | Arms | 4 | +0.50% | manual |
-| Impale | Arms | 4 | +0.43% | manual |
-| Improved Execute | Fury | 4 | +0.31% | manual |
+| Impale | Arms | 4 | +0.42% | manual |
 | Enrage | Fury | 4 | +0.10% | manual |
-| Boundless Rage | Fury | 3 | +0.08% | manual |
-| Improved Berserker Rage | Fury | 6 | +0.08% | manual |
+| Boundless Rage | Fury | 3 | +0.07% | manual |
+| Improved Berserker Rage | Fury | 6 | +0.07% | manual |
 | Last Stand | Protection | 3 | +0.01% | manual |
-| Improved Heroic Strike | Arms | 1 | +0.00% | manual |
-| Deflection | Arms | 1 | +0.00% | manual |
-| Improved Rend | Arms | 1 | +0.00% | manual |
-| Improved Charge | Arms | 2 | +0.00% | manual |
-| Improved Tactical Mastery | Arms | 2 | +0.00% | manual |
-| Improved Overpower | Arms | 2 | +0.00% | manual |
-| Bloodthrill | Arms | 5 | +0.00% | manual |
-| Sweeping Strikes | Arms | 5 | +0.00% | manual |
-| Improved Slam | Arms | 6 | +0.00% | manual |
-| Improved Hamstring | Arms | 6 | +0.00% | manual |
+| Improved Slam | Arms | 6 | +0.01% | manual |
+| Defiance | Protection | 3 | +0.00% | manual |
+| Shield Slam | Protection | 7 | +0.00% | manual |
 | Booming Voice | Fury | 1 | +0.00% | manual |
-| Iron Will | Fury | 2 | +0.00% | manual |
+| Deflection | Arms | 1 | +0.00% | manual |
+| Blood Craze | Fury | 3 | +0.00% | manual |
+| Shield Specialization | Protection | 1 | +0.00% | manual |
+| Toughness | Protection | 2 | +0.00% | manual |
+| Master of Defense | Protection | 3 | +0.00% | manual |
+| Improved Sunder Armor | Protection | 4 | +0.00% | parsed |
+| Improved Heroic Strike | Arms | 1 | +0.00% | manual |
 
-## Optimized build: 20/31/0  score +61.73%  (dps x1.617, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 19/32/0  score +74.47%  (dps x1.745, sustain x1.000, surv x1.000, utility +0.00%)
 
 ```
-  Arms: Improved Rend 3, Improved Heroic Strike 3, Improved Tactical Mastery 5, Anger Management 1, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2
-  Fury: Cruelty 5, Booming Voice 2, Unbridled Wrath 5, Boundless Rage 3, Improved Execute 1, Enrage 5, Death Wish 1, Precision 3, Flurry 5, Bloodthirst 1
+  Arms: Improved Rend 3, Deflection 3, Improved Tactical Mastery 5, Deep Wounds 3, Anger Management 1, Two-Handed Weapon Specialization 3, Impale 1
+  Fury: Cruelty 5, Booming Voice 2, Unbridled Wrath 5, Boundless Rage 3, Improved Execute 2, Enrage 5, Death Wish 1, Precision 3, Flurry 5, Bloodthirst 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mortal Strike | Arms 7 | 1/1 | +6.46% | no |
-| Weaponmaster | Arms 5 | 1/5 | +2.00% | yes |
-| Focused Rage | Protection 6 | 1/3 | +1.50% | no |
-| Spearing Strike | Arms 4 | 1/1 | +0.81% | yes |
-| Improved Execute | Fury 4 | 2/2 | +0.29% | yes |
-| Improved Berserker Rage | Fury 6 | 1/2 | +0.13% | yes |
+| Mortal Strike | Arms 7 | 1/1 | +6.97% | no |
+| Weaponmaster | Arms 5 | 1/5 | +2.15% | no |
+| Focused Rage | Protection 6 | 1/3 | +1.74% | no |
+| Impale | Arms 4 | 2/2 | +1.01% | yes |
+| Spearing Strike | Arms 4 | 1/1 | +0.87% | yes |
+| Improved Berserker Rage | Fury 6 | 1/2 | +0.14% | yes |
 | Last Stand | Protection 3 | 1/1 | +0.01% | no |
-| Deflection | Arms 1 | 1/5 | +0.00% | yes |
-| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |
-| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |
-| Bloodthrill | Arms 5 | 1/5 | +0.00% | yes |
-| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | yes |
 | Improved Slam | Arms 6 | 1/2 | +0.00% | no |
-| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |
+| Defiance | Protection 3 | 1/3 | +0.00% | no |
+| Shield Slam | Protection 7 | 1/1 | +0.00% | no |
 | Booming Voice | Fury 1 | 3/5 | +0.00% | yes |
+| Deflection | Arms 1 | 4/5 | +0.00% | yes |
+| Blood Craze | Fury 3 | 1/3 | +0.00% | yes |
+| Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |
+| Toughness | Protection 2 | 1/5 | +0.00% | no |
 

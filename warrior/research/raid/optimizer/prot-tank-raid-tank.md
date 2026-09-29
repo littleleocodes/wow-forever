@@ -13,34 +13,34 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Defiance | Protection | 3 | +2.12% | manual |
 | Death Wish | Fury | 5 | +1.65% | manual |
 | Deflection | Arms | 1 | +1.18% | manual |
-| Vanguard | Protection | 4 | +1.00% | manual |
 | Anger Management | Arms | 3 | +1.00% | manual |
-| Improved Revenge | Protection | 3 | +0.78% | manual |
+| Vanguard | Protection | 4 | +1.00% | manual |
+| Improved Revenge | Protection | 3 | +0.77% | manual |
+| Master of Defense | Protection | 3 | +0.60% | manual |
 | Anticipation | Protection | 1 | +0.60% | manual |
 | Enrage | Fury | 4 | +0.60% | manual |
-| Master of Defense | Protection | 3 | +0.60% | manual |
 | Bastion | Protection | 5 | +0.59% | manual |
 | Focused Rage | Protection | 6 | +0.59% | manual |
 | Precision | Fury | 5 | +0.54% | manual |
 | Concussion Blow | Protection | 5 | +0.50% | manual |
 | Mortal Strike | Arms | 7 | +0.45% | manual |
-| Improved Thunder Clap | Protection | 2 | +0.41% | manual |
-| Shield Specialization | Protection | 1 | +0.39% | manual |
-| Weaponmaster | Arms | 5 | +0.32% | manual |
+| Improved Thunder Clap | Protection | 2 | +0.40% | manual |
+| Shield Specialization | Protection | 1 | +0.40% | manual |
+| Weaponmaster | Arms | 5 | +0.33% | manual |
 | Improved Shield Bash | Protection | 5 | +0.30% | manual |
 | Sweeping Strikes | Arms | 5 | +0.29% | manual |
 | Cruelty | Fury | 1 | +0.28% | manual |
 | Blood Craze | Fury | 3 | +0.25% | manual |
 | Deep Wounds | Arms | 3 | +0.22% | manual |
 | Improved Disarm | Protection | 4 | +0.20% | manual |
-| Improved Heroic Strike | Arms | 1 | +0.18% | manual |
-| Improved Bloodrage | Protection | 2 | +0.14% | manual |
+| Improved Heroic Strike | Arms | 1 | +0.19% | manual |
 | Impale | Arms | 4 | +0.14% | manual |
-| Toughness | Protection | 2 | +0.12% | manual |
+| Improved Bloodrage | Protection | 2 | +0.14% | manual |
+| Toughness | Protection | 2 | +0.13% | manual |
 | Improved Rend | Arms | 1 | +0.09% | manual |
 | Dual Wield Specialization | Fury | 4 | +0.09% | manual |
 
-## Optimized build: 14/5/32  score +58.52%  (dps x1.945, sustain x1.000, surv x1.195, utility +1.50%)
+## Optimized build: 14/5/32  score +58.58%  (dps x1.945, sustain x1.000, surv x1.195, utility +1.50%)
 
 ```
   Arms: Deflection 5, Improved Heroic Strike 3, Improved Tactical Mastery 5, Anger Management 1
@@ -57,12 +57,12 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Precision | Fury 5 | 1/3 | +1.06% | no |
 | Mortal Strike | Arms 7 | 1/1 | +0.88% | no |
 | Sweeping Strikes | Arms 5 | 1/1 | +0.66% | no |
-| Weaponmaster | Arms 5 | 1/5 | +0.63% | no |
+| Weaponmaster | Arms 5 | 1/5 | +0.64% | no |
 | Deep Wounds | Arms 3 | 1/3 | +0.43% | no |
 | Impale | Arms 4 | 1/2 | +0.36% | no |
 | Improved Shield Bash | Protection 5 | 1/2 | +0.30% | yes |
 | Improved Bloodrage | Protection 2 | 1/2 | +0.27% | yes |
-| Blood Craze | Fury 3 | 1/3 | +0.25% | no |
+| Blood Craze | Fury 3 | 1/3 | +0.26% | no |
 | Improved Disarm | Protection 4 | 1/3 | +0.20% | yes |
 | Dual Wield Specialization | Fury 4 | 1/5 | +0.19% | no |
 | Bloodthrill | Arms 5 | 1/5 | +0.16% | no |

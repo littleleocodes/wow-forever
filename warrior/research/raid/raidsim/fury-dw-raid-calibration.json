@@ -7,6 +7,7 @@
   "fury-dw-raid",
   "opt-fury-dw-raid-raid-dps",
   "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-preset-dps.json",
   "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r1.json",
   "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r2.json",
   "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r3.json",
@@ -43,15 +44,16 @@
  "talents": [
   {
    "talent": "Dual Wield Specialization",
-   "sim": 0.22215214230301705,
-   "ev_before": 0.14527847776421304,
-   "ev_after": 0.14526823406447403,
+   "sim": 0.23068642707232193,
+   "ev_before": 0.15755214834737716,
+   "ev_after": 0.15433459127892313,
    "scale": 1.0,
    "how": "capped",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -63,15 +65,16 @@
   },
   {
    "talent": "Flurry",
-   "sim": 0.1119953012958223,
-   "ev_before": 0.12835183343090997,
-   "ev_after": 0.12834989623789894,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.113085082565513,
+   "ev_before": 0.14205623530211658,
+   "ev_after": 0.11308498317610136,
+   "scale": 0.7960591609589756,
+   "how": "fitted",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
     "cand-fury-dw-raid-r4",
@@ -82,15 +85,16 @@
   },
   {
    "talent": "Cruelty",
-   "sim": 0.07016596109748302,
-   "ev_before": 0.05312859295960276,
-   "ev_after": 0.07016537140993706,
-   "scale": 1.3206779705360532,
-   "how": "fitted",
+   "sim": 0.06971601806321442,
+   "ev_before": 0.0699611449974575,
+   "ev_after": 0.06995968618999533,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -102,9 +106,9 @@
   },
   {
    "talent": "Improved Execute",
-   "sim": 0.05842397912019478,
-   "ev_before": 0.06408828350295569,
-   "ev_after": 0.06409606616629189,
+   "sim": 0.05759052099818137,
+   "ev_before": 0.06416428215608388,
+   "ev_after": 0.0659133060868243,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -119,55 +123,16 @@
   },
   {
    "talent": "Death Wish",
-   "sim": 0.05332413511686925,
-   "ev_before": 0.09493289208141842,
-   "ev_after": 0.05332494032852002,
-   "scale": 0.561706677544862,
-   "how": "fitted",
-   "builds": [
-    "fury-dw-raid",
-    "opt-fury-dw-raid-raid-dps",
-    "cand-fury-dw-raid-hand-2026-09-26",
-    "cand-fury-dw-raid-r1",
-    "cand-fury-dw-raid-r2",
-    "cand-fury-dw-raid-r3",
-    "cand-fury-dw-raid-r4",
-    "cand-fury-dw-raid-r5",
-    "cand-fury-dw-raid-r6",
-    "cand-fury-dw-raid-r7"
-   ]
-  },
-  {
-   "talent": "Raging Blows",
-   "sim": 0.04161107286769121,
-   "ev_before": 0.04704194508383233,
-   "ev_after": 0.04706091760850605,
+   "sim": 0.055617322150424385,
+   "ev_before": 0.05332381600375007,
+   "ev_after": 0.053323808209491744,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
-    "cand-fury-dw-raid-r1",
-    "cand-fury-dw-raid-r2",
-    "cand-fury-dw-raid-r3",
-    "cand-fury-dw-raid-r4",
-    "cand-fury-dw-raid-r5",
-    "cand-fury-dw-raid-r6",
-    "cand-fury-dw-raid-r7"
-   ]
-  },
-  {
-   "talent": "Unbridled Wrath",
-   "sim": 0.03698958713637376,
-   "ev_before": 0.03902926179960656,
-   "ev_after": 0.039024469986196735,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "fury-dw-raid",
-    "opt-fury-dw-raid-raid-dps",
-    "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -180,8 +145,8 @@
   {
    "talent": "Weaponmaster",
    "sim": 0.03537499204227116,
-   "ev_before": 0.028825000000000232,
-   "ev_after": 0.028825000000000114,
+   "ev_before": 0.028849974609579054,
+   "ev_after": 0.028849974609579054,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -189,16 +154,59 @@
    ]
   },
   {
-   "talent": "Precision",
-   "sim": 0.031313396964436975,
-   "ev_before": 0.03066007317020229,
-   "ev_after": 0.030660189708769065,
+   "talent": "Unbridled Wrath",
+   "sim": 0.034863301947622764,
+   "ev_before": 0.042902718454409745,
+   "ev_after": 0.04190119105563667,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
+    "cand-fury-dw-raid-r1",
+    "cand-fury-dw-raid-r2",
+    "cand-fury-dw-raid-r3",
+    "cand-fury-dw-raid-r4",
+    "cand-fury-dw-raid-r5",
+    "cand-fury-dw-raid-r6",
+    "cand-fury-dw-raid-r7"
+   ]
+  },
+  {
+   "talent": "Raging Blows",
+   "sim": 0.03452026464688498,
+   "ev_before": 0.036100402636115046,
+   "ev_after": 0.036967925934597926,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "opt-fury-dw-raid-raid-dps",
+    "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
+    "cand-fury-dw-raid-r1",
+    "cand-fury-dw-raid-r2",
+    "cand-fury-dw-raid-r3",
+    "cand-fury-dw-raid-r4",
+    "cand-fury-dw-raid-r5",
+    "cand-fury-dw-raid-r6",
+    "cand-fury-dw-raid-r7"
+   ]
+  },
+  {
+   "talent": "Precision",
+   "sim": 0.03160015639265442,
+   "ev_before": 0.031203424401269296,
+   "ev_after": 0.03115806618320106,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "fury-dw-raid",
+    "opt-fury-dw-raid-raid-dps",
+    "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
     "cand-fury-dw-raid-r4",
@@ -209,15 +217,16 @@
   },
   {
    "talent": "Deep Wounds",
-   "sim": 0.028080554152018457,
-   "ev_before": 0.028060913743027723,
-   "ev_after": 0.02789992354622412,
+   "sim": 0.02812499698346103,
+   "ev_before": 0.029947603448123205,
+   "ev_after": 0.029708064812652153,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -228,9 +237,9 @@
   },
   {
    "talent": "Impale",
-   "sim": 0.025161749439317344,
-   "ev_before": 0.03162840347511905,
-   "ev_after": 0.03298987190327853,
+   "sim": 0.025468223431380714,
+   "ev_before": 0.030311445528784675,
+   "ev_after": 0.030695902787462752,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -240,15 +249,16 @@
   },
   {
    "talent": "Anger Management",
-   "sim": 0.02472526930885801,
-   "ev_before": 0.027871444181547834,
-   "ev_after": 0.02788179938533667,
+   "sim": 0.023007762275445067,
+   "ev_before": 0.025460244225079268,
+   "ev_after": 0.026070816168864672,
    "scale": 1.0,
    "how": "kept",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -259,23 +269,21 @@
    ]
   },
   {
-   "talent": "Improved Heroic Strike",
-   "sim": 0.007838202819388657,
-   "ev_before": 0.0021890374415102698,
-   "ev_after": 0.0021900414109605358,
-   "scale": 1.0,
-   "how": "kept",
+   "talent": "Bloodthirst",
+   "sim": 0.02169108110995155,
+   "ev_before": 0.0007846083021375442,
+   "ev_after": 0.02169037091477942,
+   "scale": 9.114611513912678,
+   "how": "fitted",
    "builds": [
     "fury-dw-raid",
-    "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
-    "cand-fury-dw-raid-r1",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
     "cand-fury-dw-raid-r4",
     "cand-fury-dw-raid-r5",
-    "cand-fury-dw-raid-r6",
-    "cand-fury-dw-raid-r7"
+    "cand-fury-dw-raid-r6"
    ]
   },
   {
@@ -290,33 +298,37 @@
    ]
   },
   {
-   "talent": "Bloodthirst",
-   "sim": 0.0006483414245668608,
-   "ev_before": 0.002586999999999957,
-   "ev_after": 0.0025869999999998594,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "fury-dw-raid",
-    "cand-fury-dw-raid-hand-2026-09-26",
-    "cand-fury-dw-raid-r2",
-    "cand-fury-dw-raid-r3",
-    "cand-fury-dw-raid-r4",
-    "cand-fury-dw-raid-r5",
-    "cand-fury-dw-raid-r6"
-   ]
-  },
-  {
-   "talent": "Boundless Rage",
-   "sim": 1.932040137117604e-06,
-   "ev_before": 0.003142294755040223,
-   "ev_after": 0.003143433173990659,
+   "talent": "Improved Heroic Strike",
+   "sim": 0.003349210131154822,
+   "ev_before": 0.0006272133441372555,
+   "ev_after": 0.0006364596850396497,
    "scale": 1.0,
    "how": "noise",
    "builds": [
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
+    "cand-fury-dw-raid-r1",
+    "cand-fury-dw-raid-r2",
+    "cand-fury-dw-raid-r3",
+    "cand-fury-dw-raid-r4",
+    "cand-fury-dw-raid-r5",
+    "cand-fury-dw-raid-r6",
+    "cand-fury-dw-raid-r7"
+   ]
+  },
+  {
+   "talent": "Boundless Rage",
+   "sim": 1.1051863673952283e-07,
+   "ev_before": 0.0028742800039477804,
+   "ev_after": 0.0029410292569945844,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-fury-dw-raid-raid-dps",
+    "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -329,8 +341,8 @@
   {
    "talent": "Booming Voice",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 2.7425914964244194e-05,
+   "ev_after": 2.7537974048337838e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -353,6 +365,7 @@
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
     "cand-fury-dw-raid-r4",
@@ -372,6 +385,7 @@
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -391,6 +405,7 @@
     "fury-dw-raid",
     "opt-fury-dw-raid-raid-dps",
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r1",
     "cand-fury-dw-raid-r2",
     "cand-fury-dw-raid-r3",
@@ -403,8 +418,8 @@
   {
    "talent": "Blood Craze",
    "sim": 0.0,
-   "ev_before": 5.191154455656793e-06,
-   "ev_after": 5.311852277672711e-06,
+   "ev_before": 1.575736353047135e-05,
+   "ev_after": 1.6161280581544533e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -421,6 +436,7 @@
    "how": "noise",
    "builds": [
     "cand-fury-dw-raid-hand-2026-09-26",
+    "cand-fury-dw-raid-preset-dps",
     "cand-fury-dw-raid-r6"
    ]
   },
@@ -461,8 +477,8 @@
   {
    "talent": "Deflection",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 1.0814158723248898e-05,
+   "ev_after": 1.0860466237449653e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -472,8 +488,8 @@
   {
    "talent": "Improved Berserker Rage",
    "sim": 0.0,
-   "ev_before": 0.0021512700546122846,
-   "ev_after": 0.002151270054612407,
+   "ev_before": 0.0019862612623405365,
+   "ev_after": 0.0020366350526111036,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -485,8 +501,8 @@
   "limit": null,
   "builds": {
    "fury-dw-raid": {
-    "dps": 216.6278980194496,
-    "surplus": 216.1941591847953,
+    "dps": 221.66216290403864,
+    "surplus": 220.79993090210695,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
@@ -497,8 +513,14 @@
     "deficit": 0.0
    },
    "cand-fury-dw-raid-hand-2026-09-26": {
-    "dps": 206.78721184288062,
-    "surplus": 206.25896210533773,
+    "dps": 210.4400163982271,
+    "surplus": 210.4433258849116,
+    "oom_seconds": 0.0,
+    "deficit": 1.5726261075599268e-05
+   },
+   "cand-fury-dw-raid-preset-dps": {
+    "dps": 211.35144946303214,
+    "surplus": 210.92344006433825,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
@@ -509,32 +531,32 @@
     "deficit": 0.0004571558739079329
    },
    "cand-fury-dw-raid-r2": {
-    "dps": 216.6278980194496,
-    "surplus": 216.1941591847953,
+    "dps": 221.66216290403864,
+    "surplus": 220.79993090210695,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r3": {
-    "dps": 206.5985615195971,
-    "surplus": 206.95586875470275,
+    "dps": 211.59662333603666,
+    "surplus": 210.66413445642436,
     "oom_seconds": 0.0,
-    "deficit": 0.0017264899867572847
+    "deficit": 0.0
    },
    "cand-fury-dw-raid-r4": {
-    "dps": 212.99643343393944,
-    "surplus": 212.87939561893793,
+    "dps": 216.74288802471625,
+    "surplus": 216.27806180319692,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r5": {
-    "dps": 215.58809249528875,
-    "surplus": 214.7184567519091,
+    "dps": 220.2937859528103,
+    "surplus": 219.82358049154843,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },
    "cand-fury-dw-raid-r6": {
-    "dps": 216.6278980194496,
-    "surplus": 216.1941591847953,
+    "dps": 221.66216290403864,
+    "surplus": 220.79993090210695,
     "oom_seconds": 0.0,
     "deficit": 0.0
    },

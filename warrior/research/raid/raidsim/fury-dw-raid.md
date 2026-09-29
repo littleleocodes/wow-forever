@@ -4,43 +4,44 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-fury-dw-raid-raid-dps` | 14/37/0 | 218 | 13 | +0.0% | 228 | 0 | +88.3% |
-| `cand-fury-dw-raid-r7` | 14/37/0 | 218 | 13 | +0.0% | 228 | 0 | +88.3% |
-| `fury-dw-raid` | 13/38/0 | 216 | 13 | -0.9% | 227 | 0 | +86.8% |
-| `cand-fury-dw-raid-r2` | 13/38/0 | 216 | 13 | -0.9% | 227 | 0 | +86.8% |
-| `cand-fury-dw-raid-r6` | 13/38/0 | 216 | 13 | -0.9% | 227 | 0 | +86.8% |
-| `cand-fury-dw-raid-r5` | 14/37/0 | 215 | 13 | -1.4% | 225 | 0 | +86.6% |
-| `cand-fury-dw-raid-r4` | 11/40/0 | 213 | 14 | -2.5% | 225 | 0 | +83.6% |
-| sim preset: DPS | - | 208 | 13 | -4.9% | 218 | 0 | - |
-| `cand-fury-dw-raid-r3` | 15/36/0 | 207 | 13 | -5.3% | 217 | 0 | +77.5% |
-| `cand-fury-dw-raid-hand-2026-09-26` | 17/34/0 | 207 | 14 | -5.4% | 217 | 0 | +79.1% |
-| sim preset: Fury 17/34/0 | - | 192 | 13 | -12.0% | 202 | 0 | - |
-| `cand-fury-dw-raid-r1` | 29/22/0 | 191 | 13 | -12.5% | 198 | 0 | +60.5% |
-| sim preset: Arms 39/12/0 | - | 136 | 9 | -37.8% | 135 | 0 | - |
+| `fury-dw-raid` | 13/38/0 | 221 | 14 | +0.0% | 220 | 0 | +87.2% |
+| `opt-fury-dw-raid-raid-dps` | 13/38/0 | 221 | 14 | +0.0% | 220 | 0 | +87.7% |
+| `cand-fury-dw-raid-r2` | 13/38/0 | 221 | 14 | +0.0% | 220 | 0 | +87.7% |
+| `cand-fury-dw-raid-r6` | 13/38/0 | 221 | 14 | +0.0% | 220 | 0 | +87.7% |
+| `cand-fury-dw-raid-r5` | 14/37/0 | 220 | 14 | -0.5% | 218 | 0 | +87.6% |
+| `cand-fury-dw-raid-r7` | 14/37/0 | 218 | 13 | -1.3% | 228 | 0 | +85.6% |
+| `cand-fury-dw-raid-r4` | 11/40/0 | 217 | 14 | -2.1% | 216 | 0 | +84.2% |
+| sim preset: DPS | - | 212 | 13 | -4.4% | 209 | 0 | - |
+| `cand-fury-dw-raid-r3` | 15/36/0 | 211 | 13 | -4.5% | 209 | 0 | +78.1% |
+| `cand-fury-dw-raid-hand-2026-09-26` | 17/34/0 | 211 | 14 | -4.8% | 209 | 0 | +79.2% |
+| sim preset: Fury 17/34/0 | - | 197 | 13 | -10.9% | 196 | 0 | - |
+| `cand-fury-dw-raid-r1` | 29/22/0 | 191 | 13 | -13.6% | 198 | 0 | +60.0% |
+| sim preset: Arms 39/12/0 | - | 136 | 9 | -38.6% | 135 | 0 | - |
 
-## Damage shares (`opt-fury-dw-raid-raid-dps`, simulator actions)
+## Damage shares (`fury-dw-raid`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Attack | 42.2% |
-| Execute | 32.7% |
-| Heroic Strike | 11.6% |
-| Whirlwind | 9.4% |
-| Deep Wound | 2.9% |
+| Auto Attack | 46.4% |
+| Execute | 33.0% |
+| Bloodthirst | 9.5% |
+| Whirlwind | 7.4% |
+| Deep Wound | 1.9% |
 | Dragonbreath Chili | 1.2% |
+| Heroic Strike | 0.6% |
 | Hamstring | 0.0% |
 
-Mapped onto the spec model's sources: `execute` 33%, `white_mh` 28%, `white_oh` 15%, `heroic_strike` 12%, `whirlwind` 10%, `deep_wounds` 3%; 1% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `execute` 33%, `white_mh` 30%, `white_oh` 16%, `bloodthirst` 10%, `whirlwind` 7%, `deep_wounds` 2%, `heroic_strike` 1%; 1% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- opt-fury-dw-raid-raid-dps: `20305013-05050023515231005`
-- cand-fury-dw-raid-r7: `20305013-05050023515231005`
-- fury-dw-raid: `20305012-250500035152310051`
+- fury-dw-raid: `20305012-550500005152310051`
+- opt-fury-dw-raid-raid-dps: `20305012-250500035152310051`
 - cand-fury-dw-raid-r2: `20305012-250500035152310051`
 - cand-fury-dw-raid-r6: `20305012-050520035152310051`
 - cand-fury-dw-raid-r5: `20305013-250500035152210051`
+- cand-fury-dw-raid-r7: `20305013-05050023515231005`
 - cand-fury-dw-raid-r4: `3200501-250500035152310251`
 - sim preset: DPS: `30305013-050520035150310051`
 - cand-fury-dw-raid-r3: `20305113-250500035150310051`

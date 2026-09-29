@@ -3467,7 +3467,7 @@
    "spec": "arms-2h-raid",
    "hand": "leveling-arms",
    "opt": "opt-arms-2h-raid-leveling-st",
-   "started": "2026-09-29T13:50:35",
+   "started": "2026-09-29T22:24:00",
    "steps": [
     "raid",
     "adopt"
@@ -3479,114 +3479,116 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-arms-2h-raid-raid-dps": 169.0,
-        "cand-arms-2h-raid-r1": 167.7,
-        "cand-arms-2h-raid-r3": 167.7,
-        "cand-arms-2h-raid-r4": 166.9,
+        "opt-arms-2h-raid-raid-dps": 172.5,
+        "cand-arms-2h-raid-r1": 172.5,
+        "cand-arms-2h-raid-r3": 172.5,
+        "cand-arms-2h-raid-r4": 171.7,
+        "cand-arms-2h-raid-r5": 171.3,
         "cand-arms-2h-raid-hand-2026-09-26": 163.5,
-        "cand-arms-2h-raid-r2": 152.7
+        "cand-arms-2h-raid-preset-dps": 161.5,
+        "cand-arms-2h-raid-r2": 155.7
        },
        "converged_by_noise": true
       }
      ],
      "top": [
       [
-       "opt-arms-2h-raid-raid-dps",
-       169.2
-      ],
-      [
-       "cand-arms-2h-raid-r5",
-       169.2
-      ],
-      [
        "arms-2h-raid",
-       167.7
+       173.1
+      ],
+      [
+       "opt-arms-2h-raid-raid-dps",
+       173.1
       ],
       [
        "cand-arms-2h-raid-r1",
-       167.7
+       173.1
+      ],
+      [
+       "cand-arms-2h-raid-r3",
+       173.1
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "arms-2h-raid": {
-       "dummy": 167.69102164179722,
-       "dummy60": 191.92327148936738,
-       "ladder-mana": 168.36920723193842,
-       "ladder-armor": 236.581516555574,
-       "ladder-physical": 367.51885933355504,
-       "ladder-spell": 367.67899550291946,
+       "dummy": 173.11301631943468,
+       "dummy60": 192.63139654395155,
+       "ladder-mana": 172.7527052849534,
+       "ladder-armor": 243.4756040884169,
+       "ladder-physical": 376.2208888064289,
+       "ladder-spell": 376.3780314619018,
+       "raid": 405.7348803329509,
+       "curve60": 176.16717858612108,
+       "curve120": 155.39452359454663,
+       "curve180": 149.70526166744358,
+       "curve240": 149.85866561842073,
+       "curve360": 147.39441351246046,
+       "max": 405.7348803329509,
+       "max60": 479.6837862292131
+      },
+      "opt-arms-2h-raid-raid-dps": {
+       "dummy": 173.11301631943468,
+       "dummy60": 192.63139654395155,
+       "ladder-mana": 172.7527052849534,
+       "ladder-armor": 243.4756040884169,
+       "ladder-physical": 377.33184267061233,
+       "ladder-spell": 377.4900940086254,
        "raid": 408.15509061511415,
-       "curve60": 187.78146247527468,
-       "curve120": 161.16493897020393,
-       "curve180": 148.781363545124,
-       "curve240": 149.58524877270344,
-       "curve360": 147.37283013424283,
+       "curve60": 176.16717858612108,
+       "curve120": 155.39452359454663,
+       "curve180": 149.70526166744358,
+       "curve240": 149.85866561842073,
+       "curve360": 147.39441351246046,
        "max": 408.15509061511415,
        "max60": 479.99002392832176
       },
-      "opt-arms-2h-raid-raid-dps": {
-       "dummy": 169.19023336788248,
-       "dummy60": 192.79106750779283,
-       "ladder-mana": 169.5201279674797,
-       "ladder-armor": 238.98301279705848,
-       "ladder-physical": 373.7479775402604,
-       "ladder-spell": 373.9075162125595,
-       "raid": 406.9914870177888,
-       "curve60": 189.88725686362523,
-       "curve120": 162.3641203476787,
-       "curve180": 149.38873378584856,
-       "curve240": 150.18071726734195,
-       "curve360": 147.9268976845051,
-       "max": 406.9914870177888,
-       "max60": 481.8019683903285
-      },
       "opt-arms-2h-raid-parse": {
-       "dummy": 169.19023336788248,
-       "dummy60": 192.79106750779283,
-       "ladder-mana": 169.5201279674797,
-       "ladder-armor": 238.98301279705848,
-       "ladder-physical": 373.7479775402604,
-       "ladder-spell": 373.9075162125595,
-       "raid": 406.9914870177888,
-       "curve60": 189.88725686362523,
-       "curve120": 162.3641203476787,
-       "curve180": 149.38873378584856,
-       "curve240": 150.18071726734195,
-       "curve360": 147.9268976845051,
-       "max": 406.9914870177888,
-       "max60": 481.8019683903285
+       "dummy": 173.11301631943468,
+       "dummy60": 192.63139654395155,
+       "ladder-mana": 172.7527052849534,
+       "ladder-armor": 243.4756040884169,
+       "ladder-physical": 377.33184267061233,
+       "ladder-spell": 377.4900940086254,
+       "raid": 408.15509061511415,
+       "curve60": 176.16717858612108,
+       "curve120": 155.39452359454663,
+       "curve180": 149.70526166744358,
+       "curve240": 149.85866561842073,
+       "curve360": 147.39441351246046,
+       "max": 408.15509061511415,
+       "max60": 479.99002392832176
       },
       "sim preset: DPS": {
-       "dummy": 162.15397889832678,
-       "dummy60": 185.53819169191627,
-       "ladder-mana": 162.3241027415828,
-       "ladder-armor": 228.36755759875265,
-       "ladder-physical": 357.02197352542305,
-       "ladder-spell": 357.18137091161606,
+       "dummy": 162.08082474592567,
+       "dummy60": 186.13905485764374,
+       "ladder-mana": 161.78979851839964,
+       "ladder-armor": 228.51214103853366,
+       "ladder-physical": 355.6793775681107,
+       "ladder-spell": 355.83648865878206,
        "raid": 384.9165473367167,
-       "curve60": 180.29739088225566,
-       "curve120": 155.33862680017722,
-       "curve180": 143.8941192067394,
-       "curve240": 144.68698049149577,
-       "curve360": 142.5763303582511,
+       "curve60": 169.2862438417545,
+       "curve120": 149.85658805584922,
+       "curve180": 144.731709029757,
+       "curve240": 144.94582637278882,
+       "curve360": 142.5988955386085,
        "max": 384.9165473367167,
        "max60": 453.7653235653423
       },
       "sim preset: Fury 17/34/0": {
-       "dummy": 157.85551667713298,
-       "dummy60": 178.90614869980476,
-       "ladder-mana": 157.6142572512725,
-       "ladder-armor": 221.85133101324823,
-       "ladder-physical": 345.8585373570735,
-       "ladder-spell": 346.00651578802734,
+       "dummy": 157.49058623600365,
+       "dummy60": 179.84951450766258,
+       "ladder-mana": 157.15223572501162,
+       "ladder-armor": 222.1854344821792,
+       "ladder-physical": 343.2223299505927,
+       "ladder-spell": 343.36851870572616,
        "raid": 371.9626960672921,
-       "curve60": 173.87892896226975,
-       "curve120": 150.57090175439825,
-       "curve180": 139.95420266092515,
-       "curve240": 140.54040811599407,
-       "curve360": 138.6157789622516,
+       "curve60": 163.91682332066523,
+       "curve120": 145.5420567957521,
+       "curve180": 140.6432096002661,
+       "curve240": 140.74120773426034,
+       "curve360": 138.7906950436055,
        "max": 371.9626960672921,
        "max60": 436.3067345159794
       },
@@ -3617,102 +3619,102 @@
      ],
      "top": [
       [
-       "opt-fury-dw-raid-raid-dps",
-       218.4
-      ],
-      [
-       "cand-fury-dw-raid-r7",
-       218.4
-      ],
-      [
        "fury-dw-raid",
-       216.4
+       221.4
+      ],
+      [
+       "opt-fury-dw-raid-raid-dps",
+       221.4
       ],
       [
        "cand-fury-dw-raid-r2",
-       216.4
+       221.4
+      ],
+      [
+       "cand-fury-dw-raid-r6",
+       221.4
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "fury-dw-raid": {
-       "dummy": 216.4486529893424,
-       "dummy60": 206.0623011483379,
-       "ladder-mana": 216.63033461521877,
-       "ladder-armor": 301.84825037798174,
-       "ladder-physical": 386.78750867446456,
-       "ladder-spell": 387.05337975489795,
+       "dummy": 221.3573807978682,
+       "dummy60": 219.47329938091337,
+       "ladder-mana": 221.2379780980293,
+       "ladder-armor": 302.1348740155667,
+       "ladder-physical": 398.99834032415157,
+       "ladder-spell": 399.27114227668375,
+       "raid": 401.38807473081687,
+       "curve60": 181.18528741856719,
+       "curve120": 175.74301102947118,
+       "curve180": 166.65086301170325,
+       "curve240": 168.5500540946015,
+       "curve360": 164.94421652541922,
+       "max": 401.38807473081687,
+       "max60": 458.99148855918133
+      },
+      "opt-fury-dw-raid-raid-dps": {
+       "dummy": 221.3573807978682,
+       "dummy60": 219.47329938091337,
+       "ladder-mana": 221.2379780980293,
+       "ladder-armor": 302.1348740155667,
+       "ladder-physical": 398.99834032415157,
+       "ladder-spell": 399.27114227668375,
        "raid": 401.74278460187327,
-       "curve60": 155.60550988866785,
-       "curve120": 159.6914907416577,
-       "curve180": 157.28309707341825,
-       "curve240": 160.13960146147994,
-       "curve360": 158.99965508824675,
+       "curve60": 181.1809095742064,
+       "curve120": 175.74138953454326,
+       "curve180": 166.65064940214106,
+       "curve240": 168.55101217119102,
+       "curve360": 164.944149860006,
        "max": 401.74278460187327,
        "max60": 459.2251371007936
       },
-      "opt-fury-dw-raid-raid-dps": {
-       "dummy": 218.4280138712613,
-       "dummy60": 210.3731018857852,
-       "ladder-mana": 218.43917919166654,
-       "ladder-armor": 303.70243446169525,
-       "ladder-physical": 388.6399981070518,
-       "ladder-spell": 388.90738454636113,
-       "raid": 375.2748346150963,
-       "curve60": 160.44507892380537,
-       "curve120": 165.73799968927753,
-       "curve180": 160.68813706312423,
-       "curve240": 164.16857208711932,
-       "curve360": 162.1646179828848,
-       "max": 375.2748346150963,
-       "max60": 437.3487440977109
-      },
       "opt-fury-dw-raid-parse": {
-       "dummy": 218.4280138712613,
-       "dummy60": 210.3731018857852,
-       "ladder-mana": 218.43917919166654,
-       "ladder-armor": 303.70243446169525,
-       "ladder-physical": 388.6399981070518,
-       "ladder-spell": 388.90738454636113,
-       "raid": 375.2748346150963,
-       "curve60": 160.44507892380537,
-       "curve120": 165.73799968927753,
-       "curve180": 160.68813706312423,
-       "curve240": 164.16857208711932,
-       "curve360": 162.1646179828848,
-       "max": 375.2748346150963,
-       "max60": 437.3487440977109
+       "dummy": 221.3573807978682,
+       "dummy60": 219.47329938091337,
+       "ladder-mana": 221.2379780980293,
+       "ladder-armor": 302.1348740155667,
+       "ladder-physical": 398.99834032415157,
+       "ladder-spell": 399.27114227668375,
+       "raid": 401.74278460187327,
+       "curve60": 181.1809095742064,
+       "curve120": 175.74138953454326,
+       "curve180": 166.65064940214106,
+       "curve240": 168.55101217119102,
+       "curve360": 164.944149860006,
+       "max": 401.74278460187327,
+       "max60": 459.2251371007936
       },
       "sim preset: DPS": {
-       "dummy": 207.6357569927918,
-       "dummy60": 209.0840390920963,
-       "ladder-mana": 208.23397851141226,
-       "ladder-armor": 289.21278771547816,
-       "ladder-physical": 374.7977151002503,
-       "ladder-spell": 375.0597347768595,
+       "dummy": 211.55920425455696,
+       "dummy60": 221.5908650628964,
+       "ladder-mana": 211.40845526706906,
+       "ladder-armor": 287.3011688956326,
+       "ladder-physical": 385.48592828225344,
+       "ladder-spell": 385.75547600207926,
        "raid": 391.4706028302371,
-       "curve60": 157.71620450965702,
-       "curve120": 162.2900302825458,
-       "curve180": 160.26789532040993,
-       "curve240": 163.49877180031518,
-       "curve360": 162.48242720991956,
+       "curve60": 183.19608650756123,
+       "curve120": 177.89868699045644,
+       "curve180": 168.89073405913342,
+       "curve240": 171.06727630779926,
+       "curve360": 167.43684950815785,
        "max": 391.4706028302371,
        "max60": 447.5085572899534
       },
       "sim preset: Fury 17/34/0": {
-       "dummy": 192.2462921497785,
-       "dummy60": 188.8928977109413,
-       "ladder-mana": 192.6055326982666,
-       "ladder-armor": 266.8187035925989,
-       "ladder-physical": 347.1634393750535,
-       "ladder-spell": 347.39808107149696,
+       "dummy": 197.29088988866755,
+       "dummy60": 202.89707464753707,
+       "ladder-mana": 197.73495383776543,
+       "ladder-armor": 267.34689116722177,
+       "ladder-physical": 357.6093087647908,
+       "ladder-spell": 357.8556679986785,
        "raid": 363.9713237642269,
-       "curve60": 139.4320592642108,
-       "curve120": 144.3905704994137,
-       "curve180": 142.5942426462818,
-       "curve240": 145.84064293259107,
-       "curve360": 145.28496082431047,
+       "curve60": 165.9440869491325,
+       "curve120": 160.89695777102972,
+       "curve180": 153.55382924076054,
+       "curve240": 155.06540369508392,
+       "curve360": 151.85208632843762,
        "max": 363.9713237642269,
        "max60": 413.57630959891867
       },
@@ -3748,15 +3750,15 @@
       ],
       [
        "opt-prot-tank-raid-tank",
-       1.0
+       0.997
       ],
       [
        "cand-prot-tank-r3",
-       1.0
+       0.997
       ],
       [
        "sim preset: Protection",
-       0.952
+       0.949
       ]
      ],
      "promoted": null,
@@ -3764,50 +3766,50 @@
      "environments": null
     }
    },
-   "seconds": 446,
+   "seconds": 245,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warrior arms-2h-raid: no preset within 6% of the best build"
+      "warrior arms-2h-raid: cand-arms-2h-raid-preset-dps.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec arms-2h-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 27,
+     "seconds": 19,
      "tail": [
-      "Improved Rend                   0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Tactical Mastery       0.0%      0.0%     0.0%   1.00   noise",
+      "Boundless Rage                  0.0%      0.2%     0.2%   1.00   noise",
+      "Improved Heroic Strike          0.0%      0.0%     0.0%   1.00   noise",
       "Bloodthrill                     0.0%      0.0%     0.0%   1.00   noise",
       "Improved Cleave                 0.0%      0.0%     0.0%   1.00   noise",
       "Improved Slam                   0.0%      0.0%     0.0%   1.00   noise",
       "Piercing Howl                   0.0%      0.0%     0.0%   1.00   noise",
       "Sweeping Strikes                0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Overpower              0.0%      0.0%     0.0%   1.00   noise",
       "Dual Wield Specialization       0.0%      0.0%     0.0%   1.00   noise",
+      "Raging Blows                    0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Overpower              0.0%      0.0%     0.0%   1.00   noise",
       "Improved Berserker Rage         0.0%      0.2%     0.2%   1.00   noise",
-      "Bloodthirst                    -0.2%      8.6%     9.2%   0.00  fitted",
-      "wrote _reference/data/scorer/effects/forever/warrior.manual.json (13 entries, 8 fitted) and warrior/research/raid/raidsim/arms-2h-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warrior.manual.json (13 entries, 3 fitted) and warrior/research/raid/raidsim/arms-2h-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec arms-2h-raid --profile raid-dps --write --export --seed arms-2h-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec arms-2h-raid --profile raid-dps --write --export --seed arms-2h-raid /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-preset-dps.json",
      "rc": 0,
-     "seconds": 15,
+     "seconds": 13,
      "tail": [
-      "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
-      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | yes |",
-      "| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | yes |",
       "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
-      "| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |",
+      "| Defiance | Protection 3 | 1/3 | +0.00% | no |",
+      "| Shield Slam | Protection 7 | 1/1 | +0.00% | no |",
       "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
+      "| Deflection | Arms 1 | 4/5 | +0.00% | yes |",
+      "| Blood Craze | Fury 3 | 1/3 | +0.00% | yes |",
+      "| Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |",
+      "| Toughness | Protection 2 | 1/5 | +0.00% | no |",
       "",
       "exported opt-arms-2h-raid-raid-dps -> warrior/research/talents/forever/proposed-builds.json",
       "",
@@ -3816,37 +3818,39 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --builds opt-arms-2h-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r4.json --iterations 1000 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --builds opt-arms-2h-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-preset-dps.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r4.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r5.json --iterations 1000 --no-presets",
      "rc": 0,
      "seconds": 1,
      "tail": [
-      "== warrior arms-2h-raid: 6 builds x 1000 iterations, warrior/dps p1_arms.gear.json + dps_no_reck.apl.json",
-      "  opt-arms-2h-raid-raid-dps                   20/31/0  DPS    169.0 ±  16.6  threat      164  oom   0.0s  scorer +62.1%",
-      "  cand-arms-2h-raid-r1                        19/32/0  DPS    167.7 ±  15.9  threat      163  oom   0.0s  scorer +61.6%",
-      "  cand-arms-2h-raid-r3                        19/32/0  DPS    167.7 ±  15.9  threat      163  oom   0.0s  scorer +61.6%",
-      "  cand-arms-2h-raid-r4                        19/32/0  DPS    166.9 ±  15.9  threat      162  oom   0.0s  scorer +60.8%",
-      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    163.5 ±  14.8  threat      158  oom   0.0s  scorer +42.0%",
-      "  cand-arms-2h-raid-r2                        20/31/0  DPS    152.7 ±  12.8  threat      150  oom   0.0s  scorer +46.8%",
-      "  damage shares of opt-arms-2h-raid-raid-dps: Auto Attack 53%, Execute 19%, Whirlwind 12%, Bloodthirst 9%, Deep Wound 7%, Dragonbreath Chili 1%, Hamstring 0% | model sources: white 53%, execute 19%, whirlwind 12%, bloodthirst 9%, deep_wounds 7% (unmatched 1%)"
+      "== warrior arms-2h-raid: 8 builds x 1000 iterations, warrior/dps p1_arms.gear.json + dps_no_reck.apl.json",
+      "  opt-arms-2h-raid-raid-dps                   19/32/0  DPS    172.5 ±  16.5  threat      166  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r1                        19/32/0  DPS    172.5 ±  16.5  threat      166  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r3                        19/32/0  DPS    172.5 ±  16.5  threat      166  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r4                        19/32/0  DPS    171.7 ±  16.6  threat      166  oom   0.0s  scorer +74.2%",
+      "  cand-arms-2h-raid-r5                        20/31/0  DPS    171.3 ±  16.7  threat      165  oom   0.0s  scorer +73.3%",
+      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    163.5 ±  14.8  threat      158  oom   0.0s  scorer +48.7%",
+      "  cand-arms-2h-raid-preset-dps                  15/36  DPS    161.5 ±  15.6  threat      156  oom   0.0s  scorer +63.8%",
+      "  cand-arms-2h-raid-r2                        20/31/0  DPS    155.7 ±  12.6  threat      152  oom   0.0s  scorer +59.7%",
+      "  damage shares of opt-arms-2h-raid-raid-dps: Auto Attack 52%, Execute 19%, Whirlwind 11%, Bloodthirst 9%, Deep Wound 7%, Dragonbreath Chili 1% | model sources: white 53%, execute 19%, whirlwind 11%, bloodthirst 9%, deep_wounds 7% (unmatched 1%)"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --builds arms-2h-raid opt-arms-2h-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r4.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r5.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --builds arms-2h-raid opt-arms-2h-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-preset-dps.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r4.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r5.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r6.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 5,
+     "seconds": 3,
      "tail": [
-      "  cand-arms-2h-raid-r5                        20/31/0  DPS    169.2 ±  16.8  threat      164  oom   0.0s  scorer +62.1%",
-      "  arms-2h-raid                                19/32/0  DPS    167.7 ±  16.0  threat      163  oom   0.0s  scorer +61.6%",
-      "  cand-arms-2h-raid-r1                        19/32/0  DPS    167.7 ±  16.0  threat      163  oom   0.0s  scorer +61.6%",
-      "  cand-arms-2h-raid-r3                        19/32/0  DPS    167.7 ±  16.0  threat      163  oom   0.0s  scorer +61.6%",
-      "  cand-arms-2h-raid-r4                        19/32/0  DPS    166.9 ±  16.1  threat      162  oom   0.0s  scorer +60.8%",
-      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    163.8 ±  14.6  threat      159  oom   0.0s  scorer +42.0%",
-      "  sim preset: DPS                                      DPS    162.2 ±  15.8  threat      158  oom   0.0s",
-      "  sim preset: Fury 17/34/0                             DPS    157.9 ±  16.2  threat      154  oom   0.0s",
+      "  cand-arms-2h-raid-r1                        19/32/0  DPS    173.1 ±  16.3  threat      167  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r3                        19/32/0  DPS    173.1 ±  16.3  threat      167  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r6                        19/32/0  DPS    173.1 ±  16.3  threat      167  oom   0.0s  scorer +74.9%",
+      "  cand-arms-2h-raid-r4                        19/32/0  DPS    172.4 ±  16.4  threat      166  oom   0.0s  scorer +74.2%",
+      "  cand-arms-2h-raid-r5                        20/31/0  DPS    171.9 ±  16.5  threat      166  oom   0.0s  scorer +73.3%",
+      "  cand-arms-2h-raid-hand-2026-09-26           34/17/0  DPS    163.8 ±  14.6  threat      159  oom   0.0s  scorer +48.7%",
+      "  sim preset: DPS                                      DPS    162.1 ±  15.4  threat      157  oom   0.0s",
+      "  sim preset: Fury 17/34/0                             DPS    157.5 ±  15.9  threat      153  oom   0.0s",
+      "  cand-arms-2h-raid-r2                        20/31/0  DPS    156.1 ±  13.0  threat      152  oom   0.0s  scorer +59.7%",
       "  sim preset: Arms 39/12/0                             DPS    153.3 ±  13.7  threat      145  oom   0.0s",
-      "  cand-arms-2h-raid-r2                        20/31/0  DPS    153.3 ±  12.9  threat      150  oom   0.0s  scorer +46.8%",
-      "  damage shares of arms-2h-raid: Auto Attack 52%, Execute 20%, Whirlwind 12%, Bloodthirst 9%, Deep Wound 7%, Dragonbreath Chili 1%, Hamstring 0% | model sources: white 53%, execute 20%, whirlwind 12%, bloodthirst 9%, deep_wounds 7% (unmatched 1%)",
+      "  damage shares of arms-2h-raid: Auto Attack 52%, Execute 19%, Whirlwind 11%, Bloodthirst 9%, Deep Wound 7%, Dragonbreath Chili 1% | model sources: white 53%, execute 20%, whirlwind 11%, bloodthirst 9%, deep_wounds 7% (unmatched 1%)",
       "wrote warrior/research/raid/raidsim/arms-2h-raid.md"
      ],
      "stderr": []
@@ -3854,16 +3858,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec arms-2h-raid --profile parse --write --export --seed arms-2h-raid",
      "rc": 0,
-     "seconds": 14,
+     "seconds": 12,
      "tail": [
-      "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
-      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | yes |",
-      "| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | yes |",
       "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
-      "| Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |",
+      "| Defiance | Protection 3 | 1/3 | +0.00% | no |",
+      "| Shield Slam | Protection 7 | 1/1 | +0.00% | no |",
       "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
+      "| Deflection | Arms 1 | 4/5 | +0.00% | yes |",
+      "| Blood Craze | Fury 3 | 1/3 | +0.00% | yes |",
+      "| Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |",
+      "| Toughness | Protection 2 | 1/5 | +0.00% | no |",
       "",
       "exported opt-arms-2h-raid-parse -> warrior/research/talents/forever/proposed-builds.json",
       "",
@@ -3874,14 +3878,14 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec arms-2h-raid --env environments --builds arms-2h-raid opt-arms-2h-raid-raid-dps opt-arms-2h-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 52,
+     "seconds": 21,
      "tail": [
       "== warrior arms-2h-raid environments (gear raid p1_arms.gear.json, max p1_arms.gear.json):",
-      "  opt-arms-2h-raid-raid-dps                   20/31/0  dummy   169.2  dummy60   192.8  ladder-mana   169.5  ladder-armor   239.0  ladder-physical   373.7  ladder-spell   373.9  raid   407.0  curve60   189.9  curve120   162.4  curve180   149.4  curve240   150.2  curve360   147.9  max   407.0  max60   481.8",
-      "  opt-arms-2h-raid-parse                      20/31/0  dummy   169.2  dummy60   192.8  ladder-mana   169.5  ladder-armor   239.0  ladder-physical   373.7  ladder-spell   373.9  raid   407.0  curve60   189.9  curve120   162.4  curve180   149.4  curve240   150.2  curve360   147.9  max   407.0  max60   481.8",
-      "  arms-2h-raid                                19/32/0  dummy   167.7  dummy60   191.9  ladder-mana   168.4  ladder-armor   236.6  ladder-physical   367.5  ladder-spell   367.7  raid   408.2  curve60   187.8  curve120   161.2  curve180   148.8  curve240   149.6  curve360   147.4  max   408.2  max60   480.0",
-      "  sim preset: DPS                                      dummy   162.2  dummy60   185.5  ladder-mana   162.3  ladder-armor   228.4  ladder-physical   357.0  ladder-spell   357.2  raid   384.9  curve60   180.3  curve120   155.3  curve180   143.9  curve240   144.7  curve360   142.6  max   384.9  max60   453.8",
-      "  sim preset: Fury 17/34/0                             dummy   157.9  dummy60   178.9  ladder-mana   157.6  ladder-armor   221.9  ladder-physical   345.9  ladder-spell   346.0  raid   372.0  curve60   173.9  curve120   150.6  curve180   140.0  curve240   140.5  curve360   138.6  max   372.0  max60   436.3",
+      "  arms-2h-raid                                19/32/0  dummy   173.1  dummy60   192.6  ladder-mana   172.8  ladder-armor   243.5  ladder-physical   376.2  ladder-spell   376.4  raid   405.7  curve60   176.2  curve120   155.4  curve180   149.7  curve240   149.9  curve360   147.4  max   405.7  max60   479.7",
+      "  opt-arms-2h-raid-raid-dps                   19/32/0  dummy   173.1  dummy60   192.6  ladder-mana   172.8  ladder-armor   243.5  ladder-physical   377.3  ladder-spell   377.5  raid   408.2  curve60   176.2  curve120   155.4  curve180   149.7  curve240   149.9  curve360   147.4  max   408.2  max60   480.0",
+      "  opt-arms-2h-raid-parse                      19/32/0  dummy   173.1  dummy60   192.6  ladder-mana   172.8  ladder-armor   243.5  ladder-physical   377.3  ladder-spell   377.5  raid   408.2  curve60   176.2  curve120   155.4  curve180   149.7  curve240   149.9  curve360   147.4  max   408.2  max60   480.0",
+      "  sim preset: DPS                                      dummy   162.1  dummy60   186.1  ladder-mana   161.8  ladder-armor   228.5  ladder-physical   355.7  ladder-spell   355.8  raid   384.9  curve60   169.3  curve120   149.9  curve180   144.7  curve240   144.9  curve360   142.6  max   384.9  max60   453.8",
+      "  sim preset: Fury 17/34/0                             dummy   157.5  dummy60   179.8  ladder-mana   157.2  ladder-armor   222.2  ladder-physical   343.2  ladder-spell   343.4  raid   372.0  curve60   163.9  curve120   145.5  curve180   140.6  curve240   140.7  curve360   138.8  max   372.0  max60   436.3",
       "  sim preset: Arms 39/12/0                             dummy   153.3  dummy60   171.5  ladder-mana   152.9  ladder-armor   222.5  ladder-physical   337.8  ladder-spell   337.9  raid   364.8  curve60   149.2  curve120   142.0  curve180   139.9  curve240   139.4  curve360   139.3  max   364.8  max60   384.7",
       "wrote warrior/research/raid/raidsim/arms-2h-raid-environments.md"
      ],
@@ -3892,14 +3896,14 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warrior fury-dw-raid: no preset within 6% of the best build"
+      "warrior fury-dw-raid: cand-fury-dw-raid-preset-dps.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec fury-dw-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 67,
+     "seconds": 33,
      "tail": [
       "Booming Voice                   0.0%      0.0%     0.0%   1.00   noise",
       "Enrage                          0.0%      0.0%     0.0%   1.00   noise",
@@ -3917,18 +3921,18 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec fury-dw-raid --profile raid-dps --write --export --seed fury-dw-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec fury-dw-raid --profile raid-dps --write --export --seed fury-dw-raid /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-preset-dps.json",
      "rc": 0,
-     "seconds": 21,
+     "seconds": 24,
      "tail": [
       "| Last Stand | Protection 3 | 1/1 | +0.01% | no |",
-      "| Blood Craze | Fury 3 | 3/3 | +0.00% | yes |",
+      "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
+      "| Defiance | Protection 3 | 1/3 | +0.00% | no |",
+      "| Shield Slam | Protection 7 | 1/1 | +0.00% | no |",
+      "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
+      "| Blood Craze | Fury 3 | 1/3 | +0.00% | yes |",
       "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
-      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Spearing Strike | Arms 4 | 1/1 | +0.00% | no |",
-      "| Two-Handed Weapon Specialization | Arms 4 | 1/3 | +0.00% | no |",
-      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
+      "| Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-fury-dw-raid-raid-dps -> warrior/research/talents/forever/proposed-builds.json",
       "",
@@ -3937,21 +3941,21 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --builds fury-dw-raid opt-fury-dw-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r4.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r5.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r6.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r7.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --builds fury-dw-raid opt-fury-dw-raid-raid-dps /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-preset-dps.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r3.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r4.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r5.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r6.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-fury-dw-raid-r7.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 11,
+     "seconds": 4,
      "tail": [
-      "  cand-fury-dw-raid-r2                        13/38/0  DPS    216.4 ±  13.5  threat      227  oom   0.0s  scorer +86.8%",
-      "  cand-fury-dw-raid-r6                        13/38/0  DPS    216.4 ±  13.5  threat      227  oom   0.0s  scorer +86.8%",
-      "  cand-fury-dw-raid-r5                        14/37/0  DPS    215.4 ±  13.4  threat      225  oom   0.0s  scorer +86.6%",
-      "  cand-fury-dw-raid-r4                        11/40/0  DPS    213.0 ±  13.6  threat      225  oom   0.0s  scorer +83.6%",
-      "  sim preset: DPS                                      DPS    207.6 ±  13.0  threat      218  oom   0.0s",
-      "  cand-fury-dw-raid-r3                        15/36/0  DPS    206.9 ±  12.9  threat      217  oom   0.0s  scorer +77.5%",
-      "  cand-fury-dw-raid-hand-2026-09-26           17/34/0  DPS    206.6 ±  13.6  threat      217  oom   0.0s  scorer +79.1%",
-      "  sim preset: Fury 17/34/0                             DPS    192.2 ±  13.2  threat      202  oom   0.0s",
-      "  cand-fury-dw-raid-r1                        29/22/0  DPS    191.2 ±  12.8  threat      198  oom   0.0s  scorer +60.5%",
+      "  cand-fury-dw-raid-r6                        13/38/0  DPS    221.4 ±  13.7  threat      220  oom   0.0s  scorer +87.7%",
+      "  cand-fury-dw-raid-r5                        14/37/0  DPS    220.2 ±  14.2  threat      218  oom   0.0s  scorer +87.6%",
+      "  cand-fury-dw-raid-r7                        14/37/0  DPS    218.4 ±  13.3  threat      228  oom   0.0s  scorer +85.6%",
+      "  cand-fury-dw-raid-r4                        11/40/0  DPS    216.8 ±  13.9  threat      216  oom   0.0s  scorer +84.2%",
+      "  sim preset: DPS                                      DPS    211.6 ±  13.1  threat      209  oom   0.0s",
+      "  cand-fury-dw-raid-r3                        15/36/0  DPS    211.5 ±  13.1  threat      209  oom   0.0s  scorer +78.1%",
+      "  cand-fury-dw-raid-hand-2026-09-26           17/34/0  DPS    210.7 ±  13.9  threat      209  oom   0.0s  scorer +79.2%",
+      "  sim preset: Fury 17/34/0                             DPS    197.3 ±  13.3  threat      196  oom   0.0s",
+      "  cand-fury-dw-raid-r1                        29/22/0  DPS    191.2 ±  12.8  threat      198  oom   0.0s  scorer +60.0%",
       "  sim preset: Arms 39/12/0                             DPS    135.8 ±   9.4  threat      135  oom   0.0s",
-      "  damage shares of fury-dw-raid: Auto Attack 43%, Execute 33%, Heroic Strike 12%, Whirlwind 9%, Deep Wound 2%, Dragonbreath Chili 1% | model sources: execute 33%, white_mh 28%, white_oh 15%, heroic_strike 12%, whirlwind 10%, deep_wounds 2% (unmatched 1%)",
+      "  damage shares of fury-dw-raid: Auto Attack 46%, Execute 33%, Bloodthirst 10%, Whirlwind 7%, Deep Wound 2%, Dragonbreath Chili 1%, Heroic Strike 1%, Hamstring 0% | model sources: execute 33%, white_mh 30%, white_oh 16%, bloodthirst 10%, whirlwind 7%, deep_wounds 2%, heroic_strike 1% (unmatched 1%)",
       "wrote warrior/research/raid/raidsim/fury-dw-raid.md"
      ],
      "stderr": []
@@ -3959,16 +3963,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec fury-dw-raid --profile parse --write --export --seed fury-dw-raid",
      "rc": 0,
-     "seconds": 25,
+     "seconds": 20,
      "tail": [
       "| Last Stand | Protection 3 | 1/1 | +0.01% | no |",
-      "| Blood Craze | Fury 3 | 3/3 | +0.00% | yes |",
+      "| Improved Slam | Arms 6 | 1/2 | +0.00% | no |",
+      "| Defiance | Protection 3 | 1/3 | +0.00% | no |",
+      "| Shield Slam | Protection 7 | 1/1 | +0.00% | no |",
+      "| Booming Voice | Fury 1 | 3/5 | +0.00% | yes |",
+      "| Blood Craze | Fury 3 | 1/3 | +0.00% | yes |",
       "| Deflection | Arms 1 | 1/5 | +0.00% | yes |",
-      "| Improved Charge | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |",
-      "| Spearing Strike | Arms 4 | 1/1 | +0.00% | no |",
-      "| Two-Handed Weapon Specialization | Arms 4 | 1/3 | +0.00% | no |",
-      "| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |",
+      "| Shield Specialization | Protection 1 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-fury-dw-raid-parse -> warrior/research/talents/forever/proposed-builds.json",
       "",
@@ -3979,14 +3983,14 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec fury-dw-raid --env environments --builds fury-dw-raid opt-fury-dw-raid-raid-dps opt-fury-dw-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 90,
+     "seconds": 32,
      "tail": [
       "== warrior fury-dw-raid environments (gear raid p1_fury.gear.json, max p1_fury.gear.json):",
-      "  opt-fury-dw-raid-raid-dps                   14/37/0  dummy   218.4  dummy60   210.4  ladder-mana   218.4  ladder-armor   303.7  ladder-physical   388.6  ladder-spell   388.9  raid   375.3  curve60   160.4  curve120   165.7  curve180   160.7  curve240   164.2  curve360   162.2  max   375.3  max60   437.3",
-      "  opt-fury-dw-raid-parse                      14/37/0  dummy   218.4  dummy60   210.4  ladder-mana   218.4  ladder-armor   303.7  ladder-physical   388.6  ladder-spell   388.9  raid   375.3  curve60   160.4  curve120   165.7  curve180   160.7  curve240   164.2  curve360   162.2  max   375.3  max60   437.3",
-      "  fury-dw-raid                                13/38/0  dummy   216.4  dummy60   206.1  ladder-mana   216.6  ladder-armor   301.8  ladder-physical   386.8  ladder-spell   387.1  raid   401.7  curve60   155.6  curve120   159.7  curve180   157.3  curve240   160.1  curve360   159.0  max   401.7  max60   459.2",
-      "  sim preset: DPS                                      dummy   207.6  dummy60   209.1  ladder-mana   208.2  ladder-armor   289.2  ladder-physical   374.8  ladder-spell   375.1  raid   391.5  curve60   157.7  curve120   162.3  curve180   160.3  curve240   163.5  curve360   162.5  max   391.5  max60   447.5",
-      "  sim preset: Fury 17/34/0                             dummy   192.2  dummy60   188.9  ladder-mana   192.6  ladder-armor   266.8  ladder-physical   347.2  ladder-spell   347.4  raid   364.0  curve60   139.4  curve120   144.4  curve180   142.6  curve240   145.8  curve360   145.3  max   364.0  max60   413.6",
+      "  fury-dw-raid                                13/38/0  dummy   221.4  dummy60   219.5  ladder-mana   221.2  ladder-armor   302.1  ladder-physical   399.0  ladder-spell   399.3  raid   401.4  curve60   181.2  curve120   175.7  curve180   166.7  curve240   168.6  curve360   164.9  max   401.4  max60   459.0",
+      "  opt-fury-dw-raid-raid-dps                   13/38/0  dummy   221.4  dummy60   219.5  ladder-mana   221.2  ladder-armor   302.1  ladder-physical   399.0  ladder-spell   399.3  raid   401.7  curve60   181.2  curve120   175.7  curve180   166.7  curve240   168.6  curve360   164.9  max   401.7  max60   459.2",
+      "  opt-fury-dw-raid-parse                      13/38/0  dummy   221.4  dummy60   219.5  ladder-mana   221.2  ladder-armor   302.1  ladder-physical   399.0  ladder-spell   399.3  raid   401.7  curve60   181.2  curve120   175.7  curve180   166.7  curve240   168.6  curve360   164.9  max   401.7  max60   459.2",
+      "  sim preset: DPS                                      dummy   211.6  dummy60   221.6  ladder-mana   211.4  ladder-armor   287.3  ladder-physical   385.5  ladder-spell   385.8  raid   391.5  curve60   183.2  curve120   177.9  curve180   168.9  curve240   171.1  curve360   167.4  max   391.5  max60   447.5",
+      "  sim preset: Fury 17/34/0                             dummy   197.3  dummy60   202.9  ladder-mana   197.7  ladder-armor   267.3  ladder-physical   357.6  ladder-spell   357.9  raid   364.0  curve60   165.9  curve120   160.9  curve180   153.6  curve240   155.1  curve360   151.9  max   364.0  max60   413.6",
       "  sim preset: Arms 39/12/0                             dummy   135.8  dummy60   145.4  ladder-mana   135.4  ladder-armor   190.6  ladder-physical   257.5  ladder-spell   257.7  raid   263.8  curve60   117.9  curve120   110.2  curve180   111.5  curve240   112.5  curve360   111.4  max   263.8  max60   271.9",
       "wrote warrior/research/raid/raidsim/fury-dw-raid-environments.md"
      ],
@@ -4004,7 +4008,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warrior --spec prot-tank --iterations 1500 --write",
      "rc": 0,
-     "seconds": 82,
+     "seconds": 32,
      "tail": [
       "Concussion Blow                 0.0%      0.3%     0.3%   1.00   noise",
       "Improved Tactical Mastery       0.0%      0.0%     0.0%   1.00   noise",
@@ -4024,12 +4028,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warrior --spec prot-tank --profile raid-tank --write --export --seed prot-raid-tank /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-preset-protection-1-0-50.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-preset-protection.json",
      "rc": 0,
-     "seconds": 28,
+     "seconds": 27,
      "tail": [
       "| Impale | Arms 4 | 1/2 | +0.36% | no |",
       "| Improved Shield Bash | Protection 5 | 1/2 | +0.30% | yes |",
       "| Improved Bloodrage | Protection 2 | 1/2 | +0.27% | yes |",
-      "| Blood Craze | Fury 3 | 1/3 | +0.25% | no |",
+      "| Blood Craze | Fury 3 | 1/3 | +0.26% | no |",
       "| Improved Disarm | Protection 4 | 1/3 | +0.20% | yes |",
       "| Dual Wield Specialization | Fury 4 | 1/5 | +0.19% | no |",
       "| Bloodthrill | Arms 5 | 1/5 | +0.16% | no |",
@@ -4044,19 +4048,19 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warrior --spec prot-tank --builds prot-raid-tank opt-prot-tank-raid-tank /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-27.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-preset-protection-1-0-50.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-preset-protection.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r1.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r2.json /home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r3.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 4,
      "tail": [
       "== warrior prot-tank: 9 builds x 3000 iterations, warrior/protection launch.gear.json + protection.apl.json",
-      "  prot-raid-tank                              14/5/32  DPS    425.7 ±  20.3  threat      650  oom   0.0s  dtps  1163.9  tank-value  1.000  scorer +58.5%",
-      "  opt-prot-tank-raid-tank                     14/5/32  DPS    425.7 ±  20.3  threat      650  oom   0.0s  dtps  1163.9  tank-value  1.000  scorer +58.5%",
-      "  cand-prot-tank-r3                           14/5/32  DPS    425.7 ±  20.3  threat      650  oom   0.0s  dtps  1163.9  tank-value  1.000  scorer +58.5%",
-      "  sim preset: Protection                               DPS    403.9 ±  18.7  threat      615  oom   0.0s  dtps  1216.8  tank-value  0.952",
-      "  cand-prot-tank-hand-2026-09-26               5/5/41  DPS    406.3 ±  19.6  threat      607  oom   0.0s  dtps  1202.7  tank-value  0.951  scorer +49.9%",
-      "  sim preset: Protection 1/0/50                        DPS    400.3 ±  18.5  threat      608  oom   0.0s  dtps  1229.0  tank-value  0.941",
-      "  cand-prot-tank-hand-2026-09-27              14/5/32  DPS    392.2 ±  18.1  threat      559  oom   0.0s  dtps  1160.2  tank-value  0.932  scorer +47.3%",
-      "  cand-prot-tank-r2                           14/5/32  DPS    392.2 ±  18.1  threat      559  oom   0.0s  dtps  1160.2  tank-value  0.932  scorer +47.3%",
-      "  cand-prot-tank-r1                           32/3/16  DPS    312.5 ±  18.8  threat      399  oom   0.0s  dtps  1206.3  tank-value  0.790  scorer +21.8%",
-      "  damage shares of prot-raid-tank: Shield Slam 33%, Auto Attack 23%, Heroic Strike 16%, Revenge 14%, Thunder Clap 7%, Rend 2%, Retribution Aura 1%, Thorns 1% | model sources: white 37%, heroic_strike 26%, revenge 23%, thunder_clap 12%, rend 3% (unmatched 37%)",
+      "  prot-raid-tank                              14/5/32  DPS    426.6 ±  20.4  threat      652  oom   0.0s  dtps  1160.7  tank-value  1.000  scorer +57.9%",
+      "  opt-prot-tank-raid-tank                     14/5/32  DPS    425.7 ±  20.3  threat      650  oom   0.0s  dtps  1163.9  tank-value  0.997  scorer +58.6%",
+      "  cand-prot-tank-r3                           14/5/32  DPS    425.7 ±  20.3  threat      650  oom   0.0s  dtps  1163.9  tank-value  0.997  scorer +58.6%",
+      "  sim preset: Protection                               DPS    403.9 ±  18.7  threat      615  oom   0.0s  dtps  1216.8  tank-value  0.949",
+      "  cand-prot-tank-hand-2026-09-26               5/5/41  DPS    406.3 ±  19.6  threat      607  oom   0.0s  dtps  1202.7  tank-value  0.948  scorer +50.0%",
+      "  sim preset: Protection 1/0/50                        DPS    400.3 ±  18.5  threat      608  oom   0.0s  dtps  1229.0  tank-value  0.938",
+      "  cand-prot-tank-hand-2026-09-27              14/5/32  DPS    392.2 ±  18.1  threat      559  oom   0.0s  dtps  1160.2  tank-value  0.929  scorer +47.3%",
+      "  cand-prot-tank-r2                           14/5/32  DPS    392.2 ±  18.1  threat      559  oom   0.0s  dtps  1160.2  tank-value  0.929  scorer +47.3%",
+      "  cand-prot-tank-r1                           32/3/16  DPS    312.5 ±  18.8  threat      399  oom   0.0s  dtps  1206.3  tank-value  0.787  scorer +21.9%",
+      "  damage shares of prot-raid-tank: Shield Slam 33%, Auto Attack 23%, Heroic Strike 17%, Revenge 14%, Thunder Clap 7%, Rend 2%, Retribution Aura 1%, Thorns 1% | model sources: white 36%, heroic_strike 27%, revenge 23%, thunder_clap 12%, rend 3% (unmatched 37%)",
       "wrote warrior/research/raid/raidsim/prot-tank.md"
      ],
      "stderr": []
@@ -7389,9 +7393,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:23:59",
+  "date": "2026-09-29T22:28:05",
   "classes": [
-   "hunter"
+   "warrior"
   ],
   "steps": [
    "raid",
@@ -7403,7 +7407,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 190,
+  "seconds": 245,
   "refresh": null,
   "regen_log": []
  }
