@@ -112,5 +112,21 @@
    "mode": "pvp",
    "date": "2026-09-29"
   }
+ },
+ "paladin": {
+  "protection-pvp": {
+   "model": "prot-tank",
+   "profile": "pvp",
+   "spec": "Protection",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "retribution-pvp": {
+   "model": "ret-dps",
+   "profile": "pvp",
+   "spec": "Retribution",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
  }
 }
