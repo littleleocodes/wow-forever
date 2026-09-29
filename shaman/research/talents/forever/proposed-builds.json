@@ -826,7 +826,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +70.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `raid-dps`: score +71.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Elemental": [
           ["Concussion", 5],
@@ -853,12 +853,12 @@
         "Restoration": []
       },
       "core": [
-        {"talent": "Elemental Alacrity", "why": "Removing it costs 29.6 points of score in this model."},
-        {"talent": "Elemental Fury", "why": "Removing it costs 15.4 points of score in this model."},
+        {"talent": "Elemental Alacrity", "why": "Removing it costs 29.7 points of score in this model."},
+        {"talent": "Elemental Fury", "why": "Removing it costs 15.5 points of score in this model."},
         {"talent": "Tidal Focus", "why": "Removing it costs 10.8 points of score in this model."},
         {"talent": "Thundering Strikes", "why": "Removing it costs 6.9 points of score in this model."},
         {"talent": "Concussion", "why": "Removing it costs 6.8 points of score in this model."},
-        {"talent": "Mindfulness", "why": "Removing it costs 6.2 points of score in this model."},
+        {"talent": "Mindfulness", "why": "Removing it costs 6.7 points of score in this model."},
         {"talent": "Call of Flame", "why": "Removing it costs 5.9 points of score in this model."},
         {"talent": "Lightning Overload", "why": "Removing it costs 4.9 points of score in this model."}
       ],
@@ -873,26 +873,26 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +69.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +69.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Elemental": [
           ["Concussion", 5],
           ["Convection", 5],
           ["Call of Flame", 3],
-          ["Elemental Warding", 3],
-          ["Reverberation", 1],
           ["Elemental Alacrity", 3],
           ["Elemental Focus", 1],
           ["Call of Thunder", 1],
+          ["Eye of the Storm", 3],
           ["Lightning Overload", 3],
+          ["Elemental Reach", 1],
           ["Elemental Fury", 4]
         ],
         "Enhancement": [
           ["Thundering Strikes", 5],
           ["Ancestral Knowledge", 5],
-          ["Improved Ghost Wolf", 1],
-          ["Improved Lightning Shield", 3],
+          ["Earth's Grasp", 2],
           ["Shamanistic Focus", 1],
+          ["Anticipation", 2],
           ["Toughness", 5],
           ["Mental Quickness", 2]
         ],
@@ -919,7 +919,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +100.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +100.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Elemental": [
           ["Convection", 5],
@@ -965,10 +965,10 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +95.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +95.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Elemental": [
-          ["Concussion", 5],
+          ["Convection", 5],
           ["Call of Flame", 3],
           ["Elemental Devastation", 2]
         ],
@@ -990,11 +990,11 @@
         ]
       },
       "core": [
-        {"talent": "Stormstrike", "why": "Removing it costs 40.6 points of score in this model."},
+        {"talent": "Stormstrike", "why": "Removing it costs 40.5 points of score in this model."},
         {"talent": "Flurry", "why": "Removing it costs 16.9 points of score in this model."},
-        {"talent": "Maelstrom Weapon", "why": "Removing it costs 13.6 points of score in this model."},
+        {"talent": "Maelstrom Weapon", "why": "Removing it costs 13.3 points of score in this model."},
         {"talent": "Thundering Strikes", "why": "Removing it costs 9.2 points of score in this model."},
-        {"talent": "Mental Dexterity", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Mental Dexterity", "why": "Removing it costs 7.3 points of score in this model."},
         {"talent": "Call of Flame", "why": "Removing it costs 5.0 points of score in this model."},
         {"talent": "Tidal Focus", "why": "Removing it costs 4.8 points of score in this model."},
         {"talent": "Rage of the Farseer", "why": "Removing it costs 3.7 points of score in this model."}

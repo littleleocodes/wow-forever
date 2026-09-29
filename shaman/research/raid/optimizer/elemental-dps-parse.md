@@ -17,35 +17,35 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 | Lava Burst | Elemental | 7 | +1.15% | manual |
 | Call of Thunder | Elemental | 4 | +1.13% | manual |
 | Tidal Focus | Restoration | 2 | +1.13% | manual |
-| Lightning Overload | Elemental | 5 | +0.87% | manual |
+| Lightning Overload | Elemental | 5 | +0.88% | manual |
 | Concussion | Elemental | 1 | +0.82% | manual |
 | Mindfulness | Restoration | 2 | +0.59% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Thundering Strikes | Enhancement | 1 | +0.46% | manual |
 | Mana Tide Totem | Restoration | 4 | +0.25% | manual |
-| Elemental Focus | Elemental | 3 | +0.18% | manual |
+| Elemental Focus | Elemental | 3 | +0.19% | manual |
 | Ancestral Knowledge | Enhancement | 1 | +0.11% | manual |
 | Convection | Elemental | 1 | +0.03% | manual |
-| Totemic Focus | Restoration | 1 | +0.01% | manual |
+| Totemic Focus | Restoration | 1 | +0.02% | manual |
+| Eye of the Storm | Elemental | 4 | +0.01% | manual |
+| Healing Focus | Restoration | 3 | +0.01% | manual |
+| Spirit Weapons | Enhancement | 5 | +0.00% | manual |
+| Natural Grace | Restoration | 2 | +0.00% | manual |
 | Toughness | Enhancement | 4 | +0.00% | manual |
 | Improved Reincarnation | Restoration | 2 | +0.00% | manual |
-| Elemental Warding | Elemental | 2 | +0.00% | manual |
-| Reverberation | Elemental | 2 | +0.00% | manual |
-| Elemental Devastation | Elemental | 2 | +0.00% | manual |
-| Improved Fire Nova | Elemental | 4 | +0.00% | parsed |
-| Eye of the Storm | Elemental | 4 | +0.00% | manual |
+| Improved Stormstrike | Enhancement | 5 | +0.00% | manual |
+| Maelstrom Weapon | Enhancement | 6 | +0.00% | manual |
 | Elemental Reach | Elemental | 5 | +0.00% | manual |
-| Earthbound | Elemental | 5 | +0.00% | manual |
 | Earth's Grasp | Enhancement | 1 | +0.00% | manual |
-| Guardian Totems | Enhancement | 2 | +0.00% | manual |
-| Mental Dexterity | Enhancement | 2 | +0.00% | manual |
+| Elemental Warding | Elemental | 2 | +0.00% | manual |
+| Anticipation | Enhancement | 3 | +0.00% | manual |
 
-## Optimized build: 29/22/0  score +69.09%  (dps x1.669, sustain x1.109, surv x1.124, utility +0.00%)
+## Optimized build: 29/22/0  score +69.15%  (dps x1.669, sustain x1.109, surv x1.100, utility +0.00%)
 Absolute DPS index (character alone, no talents = 1.00): 1.449  — use this to compare models with different pet shares.
 
 ```
-  Elemental: Concussion 5, Convection 5, Call of Flame 3, Elemental Warding 3, Reverberation 1, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Lightning Overload 3, Elemental Fury 4
-  Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Improved Ghost Wolf 1, Improved Lightning Shield 3, Shamanistic Focus 1, Toughness 5, Mental Quickness 2
+  Elemental: Concussion 5, Convection 5, Call of Flame 3, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Eye of the Storm 3, Lightning Overload 3, Elemental Reach 1, Elemental Fury 4
+  Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Earth's Grasp 2, Shamanistic Focus 1, Anticipation 2, Toughness 5, Mental Quickness 2
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
@@ -58,13 +58,13 @@ Absolute DPS index (character alone, no talents = 1.00): 1.449  — use this to 
 | Nature's Swiftness | Restoration 5 | 1/1 | +0.83% | no |
 | Mindfulness | Restoration 2 | 1/3 | +0.59% | no |
 | Mana Tide Totem | Restoration 4 | 1/1 | +0.25% | no |
-| Totemic Focus | Restoration 1 | 1/5 | +0.01% | yes |
+| Totemic Focus | Restoration 1 | 1/5 | +0.02% | yes |
+| Healing Focus | Restoration 3 | 1/3 | +0.00% | no |
+| Spirit Weapons | Enhancement 5 | 1/1 | +0.00% | yes |
+| Natural Grace | Restoration 2 | 1/3 | +0.00% | no |
+| Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |
+| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |
 | Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | no |
-| Reverberation | Elemental 2 | 2/5 | +0.00% | yes |
-| Elemental Devastation | Elemental 2 | 1/3 | +0.00% | yes |
-| Improved Fire Nova | Elemental 4 | 1/2 | +0.00% | yes |
-| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | yes |
-| Elemental Reach | Elemental 5 | 1/2 | +0.00% | yes |
-| Earthbound | Elemental 5 | 1/1 | +0.00% | yes |
-| Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |
+| Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |
+| Elemental Warding | Elemental 2 | 1/3 | +0.00% | yes |
 

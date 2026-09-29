@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|
 | `elemental-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
 | `opt-elemental-dps-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
-| `opt-elemental-dps-parse` | 29/22/0 | 386 | 478 | 493 | 509 | 527 |
+| `opt-elemental-dps-parse` | 29/22/0 | 387 | 478 | 495 | 511 | 529 |
 | `elemental-raid` | 31/7/13 | 381 | 459 | 485 | 510 | 531 |
 | sim preset: Elemental 31/6/14 | - | 376 | 452 | 479 | 505 | 531 |
 | sim preset: Stormcaller 28/23/0 | - | 369 | 456 | 475 | 490 | 518 |
@@ -26,7 +26,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `elemental-raid-dps` | 387 | +1% | +0% | +2% | +12% | +13% | 495 |
 | `opt-elemental-dps-raid-dps` | 387 | +1% | +0% | +2% | +12% | +13% | 495 |
-| `opt-elemental-dps-parse` | 386 | +1% | +0% | +2% | +12% | +13% | 493 |
+| `opt-elemental-dps-parse` | 387 | +1% | +0% | +2% | +12% | +13% | 495 |
 | `elemental-raid` | 381 | +3% | +0% | +2% | +11% | +11% | 485 |
 | sim preset: Elemental 31/6/14 | 376 | +3% | +0% | +3% | +11% | +10% | 479 |
 | sim preset: Stormcaller 28/23/0 | 369 | +4% | +0% | +2% | +12% | +11% | 475 |
@@ -42,7 +42,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `elemental-raid-dps` | 403 | 397 | 387 | 380 | 371 |
 | `opt-elemental-dps-raid-dps` | 403 | 397 | 387 | 380 | 371 |
-| `opt-elemental-dps-parse` | 404 | 396 | 386 | 379 | 371 |
+| `opt-elemental-dps-parse` | 406 | 397 | 387 | 379 | 371 |
 | `elemental-raid` | 409 | 398 | 381 | 375 | 366 |
 | sim preset: Elemental 31/6/14 | 408 | 393 | 376 | 370 | 362 |
 | sim preset: Stormcaller 28/23/0 | 395 | 381 | 369 | 358 | 346 |

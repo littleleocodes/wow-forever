@@ -5904,7 +5904,7 @@
    "spec": "enhancement-dps",
    "hand": "leveling-enhancement",
    "opt": "opt-enhancement-dps-leveling-st",
-   "started": "2026-09-29T13:58:00",
+   "started": "2026-09-29T22:35:07",
    "steps": [
     "raid",
     "adopt"
@@ -5914,7 +5914,22 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "cand-elemental-dps-r1": 387.2,
+        "cand-elemental-dps-r2": 387.2,
+        "cand-elemental-dps-r3": 386.1,
+        "cand-elemental-dps-r4": 386.1,
+        "cand-elemental-dps-r6": 381.4,
+        "opt-elemental-dps-raid-dps": 381.0,
+        "cand-elemental-dps-spec-elemental": 381.0,
+        "cand-elemental-dps-r7": 380.0,
+        "cand-elemental-dps-preset-elemental-31-6-14": 375.9,
+        "cand-elemental-dps-r5": 373.6,
+        "cand-elemental-dps-preset-stormcaller-28-23-0": 369.2,
+        "cand-elemental-dps-hand-2026-09-26": 365.4
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
@@ -5987,20 +6002,20 @@
        "max60": 531.4985305414681
       },
       "opt-elemental-dps-parse": {
-       "dummy": 386.0287812336958,
-       "dummy60": 477.53127471867,
-       "ladder-mana": 388.8182932849869,
-       "ladder-armor": 388.8182932849869,
-       "ladder-physical": 397.43279704999395,
-       "ladder-spell": 443.4409097911267,
-       "raid": 493.35727849333375,
-       "curve60": 404.4780794228763,
-       "curve120": 395.6815773247995,
-       "curve180": 386.0287812336958,
-       "curve240": 379.0555672792781,
-       "curve360": 370.9448203086038,
-       "max": 508.95118995107,
-       "max60": 527.2825172134673
+       "dummy": 386.7729190404684,
+       "dummy60": 477.68576884760716,
+       "ladder-mana": 390.06871030374634,
+       "ladder-armor": 390.06871030374634,
+       "ladder-physical": 398.71033711147294,
+       "ladder-spell": 444.5148911294652,
+       "raid": 495.1771528498705,
+       "curve60": 405.5761075798999,
+       "curve120": 397.4584574574749,
+       "curve180": 386.7729190404684,
+       "curve240": 379.358094077205,
+       "curve360": 371.3386972928305,
+       "max": 510.6192195518669,
+       "max60": 529.3856363417915
       },
       "sim preset: Level 60": {
        "dummy": 362.1079406741892,
@@ -6113,20 +6128,20 @@
        "max60": 811.5447806081495
       },
       "opt-enhancement-dps-parse": {
-       "dummy": 390.468066509188,
-       "dummy60": 437.4142637455761,
-       "ladder-mana": 416.9120854707917,
-       "ladder-armor": 562.1503830997599,
-       "ladder-physical": 634.3113902490601,
-       "ladder-spell": 658.5976394511424,
-       "raid": 751.9296806286143,
-       "curve60": 444.9827544396554,
-       "curve120": 404.26420570675293,
-       "curve180": 390.468066509188,
-       "curve240": 382.5567041408633,
-       "curve360": 367.5828414910586,
-       "max": 749.2111387558584,
-       "max60": 823.2850733650005
+       "dummy": 389.8157750219125,
+       "dummy60": 437.8724909076075,
+       "ladder-mana": 413.6617262982372,
+       "ladder-armor": 558.952275924688,
+       "ladder-physical": 631.2901298121973,
+       "ladder-spell": 655.1688947383008,
+       "raid": 757.5992904688339,
+       "curve60": 441.57686080542953,
+       "curve120": 411.6337583826355,
+       "curve180": 389.8157750219125,
+       "curve240": 385.59726610132935,
+       "curve360": 370.47400390372434,
+       "max": 756.599885104334,
+       "max60": 818.4320339140315
       },
       "sim preset: Level 60": {
        "dummy": 383.7867029160524,
@@ -6163,50 +6178,50 @@
      }
     }
    },
-   "seconds": 346,
+   "seconds": 176,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "shaman elemental-dps: cand-elemental-dps-preset-level-60.json, cand-elemental-dps-preset-elemental-31-6-14.json, cand-elemental-dps-preset-stormcaller-28-23-0.json"
+      "shaman elemental-dps: cand-elemental-dps-preset-elemental-31-6-14.json, cand-elemental-dps-preset-stormcaller-28-23-0.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py shaman --spec elemental-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 64,
+     "seconds": 23,
      "tail": [
       "Elemental Reach                 0.0%      0.0%     0.0%   1.00   noise",
       "Eye of the Storm                0.0%      0.0%     0.0%   1.00   noise",
       "Natural Grace                   0.0%      0.0%     0.0%   1.00   noise",
       "Restorative Totems              0.0%      0.0%     0.0%   1.00   noise",
       "Water Shield                    0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Healing Wave           0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Reincarnation          0.0%      0.0%     0.0%   1.00   noise",
+      "Elemental Devastation           0.0%      0.0%     0.0%   1.00   noise",
       "Flurry                          0.0%      0.0%     0.0%   1.00   noise",
       "Mental Dexterity                0.0%      0.0%     0.0%   1.00   noise",
+      "Elemental Warding               0.0%      0.0%     0.0%   1.00   noise",
       "Improved Ghost Wolf             0.0%      0.0%     0.0%   1.00   noise",
-      "Reverberation                  -0.1%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (15 entries, 2 fitted) and shaman/research/raid/raidsim/elemental-dps-calibration.json"
+      "Reverberation                  -0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (15 entries, 0 fitted) and shaman/research/raid/raidsim/elemental-dps-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec elemental-dps --profile raid-dps --write --export --seed elemental-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-level-60.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec elemental-dps --profile raid-dps --write --export --seed elemental-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json",
      "rc": 0,
-     "seconds": 72,
+     "seconds": 27,
      "tail": [
-      "| Reverberation | Elemental 2 | 2/5 | +0.00% | yes |",
-      "| Elemental Devastation | Elemental 2 | 1/3 | +0.00% | yes |",
-      "| Improved Fire Nova | Elemental 4 | 1/2 | +0.00% | yes |",
-      "| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | yes |",
-      "| Elemental Reach | Elemental 5 | 1/2 | +0.00% | yes |",
-      "| Earthbound | Elemental 5 | 1/1 | +0.00% | yes |",
+      "| Natural Grace | Restoration 2 | 1/3 | +0.00% | yes |",
+      "| Toughness | Enhancement 4 | 1/5 | +0.00% | no |",
+      "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |",
+      "| Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |",
+      "| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |",
+      "| Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |",
       "| Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |",
-      "| Guardian Totems | Enhancement 2 | 1/2 | +0.00% | yes |",
+      "| Elemental Warding | Elemental 2 | 1/3 | +0.00% | yes |",
       "",
       "exported opt-elemental-dps-raid-dps -> shaman/research/talents/forever/proposed-builds.json",
       "",
@@ -6215,19 +6230,39 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-level-60.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds opt-elemental-dps-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 1,
      "tail": [
-      "  cand-elemental-dps-r6                      30/11/10  DPS    381.5 ±  19.5  threat      386  oom   0.0s  scorer +68.6%",
-      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +70.5%",
-      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +70.5%",
-      "  opt-elemental-dps-raid-dps                  31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +70.5%",
-      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +70.5%",
+      "  cand-elemental-dps-r2                       29/22/0  DPS    387.2 ±  21.0  threat      393  oom   0.0s  scorer +69.4%",
+      "  cand-elemental-dps-r3                       29/22/0  DPS    386.1 ±  21.5  threat      391  oom   0.0s  scorer +69.4%",
+      "  cand-elemental-dps-r4                       29/22/0  DPS    386.1 ±  21.5  threat      391  oom   0.0s  scorer +69.4%",
+      "  cand-elemental-dps-r6                      30/11/10  DPS    381.4 ±  19.0  threat      386  oom   0.0s  scorer +69.1%",
+      "  opt-elemental-dps-raid-dps                  31/7/13  DPS    381.0 ±  19.9  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.0 ±  19.9  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-r7                       31/7/13  DPS    380.0 ±  19.9  threat      387  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-preset-elemental-31-6-14  31/6/14  DPS    375.9 ±  18.2  threat      383  oom   0.2s  scorer +68.9%",
+      "  cand-elemental-dps-r5                      16/22/13  DPS    373.6 ±  15.5  threat      389  oom   0.0s  scorer +65.3%",
+      "  cand-elemental-dps-preset-stormcaller-28-23-0    28/23  DPS    369.2 ±  18.6  threat      375  oom   0.7s  scorer +62.5%",
+      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    365.4 ±  18.0  threat      350  oom   0.1s  scorer +64.8%",
+      "  damage shares of opt-elemental-dps-raid-dps: Lightning Bolt 56%, Flame Shock 16%, Lava Burst 16%, Attack 7%, Chain Lightning 5% | model sources: lightning_bolt 72%, flame_shock 21%, chain_lightning 7% (unmatched 23%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r8.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 2,
+     "tail": [
+      "  opt-elemental-dps-raid-dps                  31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-r8                       31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +71.1%",
       "  sim preset: Elemental 31/6/14                        DPS    376.1 ±  18.6  threat      384  oom   0.2s",
       "  cand-elemental-dps-r5                      16/22/13  DPS    374.0 ±  15.6  threat      389  oom   0.0s  scorer +65.3%",
       "  sim preset: Stormcaller 28/23/0                      DPS    369.1 ±  19.2  threat      375  oom   0.7s",
-      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.3%",
+      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.8%",
       "  sim preset: Level 60                                 DPS    362.1 ±  17.8  threat      317  oom   0.2s",
       "  damage shares of elemental-raid-dps: Lightning Bolt 71%, Flame Shock 17%, Attack 6%, Chain Lightning 6% | model sources: lightning_bolt 76%, flame_shock 18%, chain_lightning 6% (unmatched 6%)",
       "wrote shaman/research/raid/raidsim/elemental-dps.md"
@@ -6235,19 +6270,19 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-level-60.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r8.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 3,
      "tail": [
-      "  cand-elemental-dps-r4                       29/22/0  DPS    386.0 ±  22.0  threat      391  oom   0.0s  scorer +68.9%",
-      "  cand-elemental-dps-r6                      30/11/10  DPS    381.5 ±  19.5  threat      386  oom   0.0s  scorer +68.6%",
-      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +70.5%",
-      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +70.5%",
-      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +70.5%",
+      "  cand-elemental-dps-r6                      30/11/10  DPS    381.5 ±  19.5  threat      386  oom   0.0s  scorer +69.1%",
+      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-r8                       31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
+      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +71.1%",
       "  sim preset: Elemental 31/6/14                        DPS    376.1 ±  18.6  threat      384  oom   0.2s",
       "  cand-elemental-dps-r5                      16/22/13  DPS    374.0 ±  15.6  threat      389  oom   0.0s  scorer +65.3%",
       "  sim preset: Stormcaller 28/23/0                      DPS    369.1 ±  19.2  threat      375  oom   0.7s",
-      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.3%",
+      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.8%",
       "  sim preset: Level 60                                 DPS    362.1 ±  17.8  threat      317  oom   0.2s",
       "  damage shares of elemental-raid-dps: Lightning Bolt 71%, Flame Shock 17%, Attack 6%, Chain Lightning 6% | model sources: lightning_bolt 76%, flame_shock 18%, chain_lightning 6% (unmatched 6%)",
       "wrote shaman/research/raid/raidsim/elemental-dps.md"
@@ -6257,16 +6292,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec elemental-dps --profile parse --write --export --seed elemental-raid-dps elemental-raid",
      "rc": 0,
-     "seconds": 36,
+     "seconds": 20,
      "tail": [
+      "| Healing Focus | Restoration 3 | 1/3 | +0.00% | no |",
+      "| Spirit Weapons | Enhancement 5 | 1/1 | +0.00% | yes |",
+      "| Natural Grace | Restoration 2 | 1/3 | +0.00% | no |",
+      "| Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |",
+      "| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |",
       "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | no |",
-      "| Reverberation | Elemental 2 | 2/5 | +0.00% | yes |",
-      "| Elemental Devastation | Elemental 2 | 1/3 | +0.00% | yes |",
-      "| Improved Fire Nova | Elemental 4 | 1/2 | +0.00% | yes |",
-      "| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | yes |",
-      "| Elemental Reach | Elemental 5 | 1/2 | +0.00% | yes |",
-      "| Earthbound | Elemental 5 | 1/1 | +0.00% | yes |",
-      "| Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |",
+      "| Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |",
+      "| Elemental Warding | Elemental 2 | 1/3 | +0.00% | yes |",
       "",
       "exported opt-elemental-dps-parse -> shaman/research/talents/forever/proposed-builds.json",
       "",
@@ -6277,12 +6312,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --env environments --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid opt-elemental-dps-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 35,
+     "seconds": 18,
      "tail": [
       "== shaman elemental-dps environments (gear raid phase_1.gear.json, max phase_2.gear.json):",
       "  elemental-raid-dps                          29/22/0  dummy   387.4  dummy60   478.1  ladder-mana   389.7  ladder-armor   389.7  ladder-physical   398.4  ladder-spell   444.7  raid   494.6  curve60   402.8  curve120   397.2  curve180   387.4  curve240   379.9  curve360   371.4  max   510.9  max60   527.2",
       "  opt-elemental-dps-raid-dps                  29/22/0  dummy   387.4  dummy60   478.1  ladder-mana   389.7  ladder-armor   389.7  ladder-physical   398.4  ladder-spell   444.7  raid   494.6  curve60   402.8  curve120   397.2  curve180   387.4  curve240   379.9  curve360   371.4  max   510.9  max60   527.2",
-      "  opt-elemental-dps-parse                     29/22/0  dummy   386.0  dummy60   477.5  ladder-mana   388.8  ladder-armor   388.8  ladder-physical   397.4  ladder-spell   443.4  raid   493.4  curve60   404.5  curve120   395.7  curve180   386.0  curve240   379.1  curve360   370.9  max   509.0  max60   527.3",
+      "  opt-elemental-dps-parse                     29/22/0  dummy   386.8  dummy60   477.7  ladder-mana   390.1  ladder-armor   390.1  ladder-physical   398.7  ladder-spell   444.5  raid   495.2  curve60   405.6  curve120   397.5  curve180   386.8  curve240   379.4  curve360   371.3  max   510.6  max60   529.4",
       "  elemental-raid                              31/7/13  dummy   381.1  dummy60   458.7  ladder-mana   391.9  ladder-armor   391.9  ladder-physical   401.1  ladder-spell   443.9  raid   484.9  curve60   409.5  curve120   397.6  curve180   381.1  curve240   374.9  curve360   365.9  max   509.5  max60   531.5",
       "  sim preset: Elemental 31/6/14                        dummy   376.1  dummy60   452.4  ladder-mana   389.2  ladder-armor   389.2  ladder-physical   399.2  ladder-spell   442.2  raid   479.4  curve60   408.3  curve120   393.4  curve180   376.1  curve240   369.8  curve360   362.5  max   505.3  max60   530.6",
       "  sim preset: Stormcaller 28/23/0                      dummy   369.1  dummy60   456.0  ladder-mana   382.4  ladder-armor   382.4  ladder-physical   390.5  ladder-spell   435.9  raid   474.9  curve60   395.5  curve120   380.8  curve180   369.1  curve240   358.3  curve360   346.3  max   489.7  max60   518.1",
@@ -6303,27 +6338,27 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py shaman --spec enhancement-dps --iterations 1500 --write",
      "rc": 0,
-     "seconds": 47,
+     "seconds": 28,
      "tail": [
       "Elemental Weapons               1.1%      1.0%     1.0%   1.00    kept",
       "Reverberation                   1.0%      1.2%     1.2%   1.00    kept",
       "Ancestral Knowledge             0.9%      1.4%     1.4%   1.00    kept",
       "Concussion                      0.6%      0.3%     0.3%   1.00    kept",
-      "Totemic Focus                   0.3%      0.7%     0.3%   0.35  fitted",
+      "Totemic Focus                   0.3%      0.3%     0.3%   1.00   noise",
       "Improved Stormstrike            0.0%      0.0%     0.0%   1.00   noise",
       "Spirit Weapons                  0.0%      0.0%     0.0%   1.00   noise",
       "Improved Lightning Shield       0.0%      0.0%     0.0%   1.00   noise",
       "Guardian Totems                 0.0%      0.0%     0.0%   1.00   noise",
       "Water Shield                    0.0%      0.0%     0.0%   1.00   noise",
       "Elemental Warding               0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (17 entries, 3 fitted) and shaman/research/raid/raidsim/enhancement-dps-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (16 entries, 0 fitted) and shaman/research/raid/raidsim/enhancement-dps-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec enhancement-dps --profile raid-dps --write --export --seed enhancement-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-preset-level-60.json",
      "rc": 0,
-     "seconds": 17,
+     "seconds": 16,
      "tail": [
       "| Reverberation | Elemental 2 | 1/5 | +0.47% | yes |",
       "| Lightning Overload | Elemental 5 | 1/3 | +0.32% | no |",
@@ -6331,8 +6366,8 @@
       "| Nature's Swiftness | Restoration 5 | 1/1 | +0.25% | no |",
       "| Elemental Alacrity | Elemental 3 | 1/3 | +0.18% | yes |",
       "| Concussion | Elemental 1 | 1/5 | +0.15% | yes |",
-      "| Toughness | Enhancement 4 | 1/5 | +0.00% | yes |",
-      "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |",
+      "| Eye of the Storm | Elemental 4 | 1/3 | +0.01% | no |",
+      "| Healing Focus | Restoration 3 | 1/3 | +0.01% | no |",
       "",
       "exported opt-enhancement-dps-raid-dps -> shaman/research/talents/forever/proposed-builds.json",
       "",
@@ -6343,14 +6378,14 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec enhancement-dps --builds enhancement-raid-dps opt-enhancement-dps-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-hand-2026-09-27.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-preset-level-60.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r7.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 8,
+     "seconds": 3,
      "tail": [
-      "  enhancement-raid-dps                        11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.8%",
-      "  cand-enhancement-dps-r6                     11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.8%",
-      "  cand-enhancement-dps-r5                     11/31/9  DPS    387.2 ±  29.4  threat      397  oom  51.6s  scorer +94.3%",
+      "  enhancement-raid-dps                        11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.9%",
+      "  cand-enhancement-dps-r6                     11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.9%",
+      "  cand-enhancement-dps-r5                     11/31/9  DPS    387.2 ±  29.4  threat      397  oom  51.6s  scorer +94.4%",
       "  cand-enhancement-dps-r4                     8/32/11  DPS    385.9 ±  30.1  threat      280  oom  57.9s  scorer +93.8%",
       "  cand-enhancement-dps-r3                     15/36/0  DPS    384.4 ±  29.9  threat      279  oom  50.5s  scorer +94.3%",
-      "  cand-enhancement-dps-hand-2026-09-27        9/32/10  DPS    384.4 ±  29.2  threat      279  oom  63.1s  scorer +93.7%",
+      "  cand-enhancement-dps-hand-2026-09-27        9/32/10  DPS    384.4 ±  29.2  threat      279  oom  63.1s  scorer +93.8%",
       "  sim preset: Level 60                                 DPS    383.8 ±  29.9  threat      279  oom  52.5s",
       "  cand-enhancement-dps-r2                     18/33/0  DPS    382.1 ±  29.1  threat      277  oom  50.5s  scorer +92.8%",
       "  cand-enhancement-dps-r1                     14/37/0  DPS    382.0 ±  29.8  threat      277  oom  64.5s  scorer +91.9%",
@@ -6363,16 +6398,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec enhancement-dps --profile parse --write --export --seed enhancement-raid-dps",
      "rc": 0,
-     "seconds": 17,
+     "seconds": 12,
      "tail": [
       "| Call of Thunder | Elemental 4 | 1/1 | +0.30% | no |",
       "| Nature's Swiftness | Restoration 5 | 1/1 | +0.26% | no |",
       "| Elemental Alacrity | Elemental 3 | 1/3 | +0.19% | yes |",
-      "| Convection | Elemental 1 | 1/5 | +0.16% | yes |",
       "| Mindfulness | Restoration 2 | 1/3 | +0.16% | yes |",
+      "| Concussion | Elemental 1 | 1/5 | +0.16% | yes |",
       "| Restorative Totems | Restoration 4 | 1/5 | +0.12% | no |",
-      "| Toughness | Enhancement 4 | 1/5 | +0.00% | yes |",
-      "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |",
+      "| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | no |",
+      "| Healing Focus | Restoration 3 | 1/3 | +0.00% | yes |",
       "",
       "exported opt-enhancement-dps-parse -> shaman/research/talents/forever/proposed-builds.json",
       "",
@@ -6383,12 +6418,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec enhancement-dps --env environments --builds enhancement-raid-dps opt-enhancement-dps-raid-dps opt-enhancement-dps-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 34,
+     "seconds": 23,
      "tail": [
       "== shaman enhancement-dps environments (gear raid phase_1.gear.json, max phase_2.gear.json):",
       "  opt-enhancement-dps-raid-dps                11/31/9  dummy   394.3  dummy60   443.7  ladder-mana   412.5  ladder-armor   557.9  ladder-physical   629.6  ladder-spell   653.3  raid   757.4  curve60   438.7  curve120   415.1  curve180   394.3  curve240   392.8  curve360   376.7  max   755.2  max60   811.5",
       "  enhancement-raid-dps                        11/31/9  dummy   390.9  dummy60   439.6  ladder-mana   409.1  ladder-armor   556.2  ladder-physical   628.6  ladder-spell   651.7  raid   751.2  curve60   434.5  curve120   411.3  curve180   390.9  curve240   389.5  curve360   373.5  max   748.9  max60   805.9",
-      "  opt-enhancement-dps-parse                  10/31/10  dummy   390.5  dummy60   437.4  ladder-mana   416.9  ladder-armor   562.2  ladder-physical   634.3  ladder-spell   658.6  raid   751.9  curve60   445.0  curve120   404.3  curve180   390.5  curve240   382.6  curve360   367.6  max   749.2  max60   823.3",
+      "  opt-enhancement-dps-parse                  10/31/10  dummy   389.8  dummy60   437.9  ladder-mana   413.7  ladder-armor   559.0  ladder-physical   631.3  ladder-spell   655.2  raid   757.6  curve60   441.6  curve120   411.6  curve180   389.8  curve240   385.6  curve360   370.5  max   756.6  max60   818.4",
       "  sim preset: Level 60                                 dummy   383.8  dummy60   442.9  ladder-mana   414.5  ladder-armor   557.1  ladder-physical   625.3  ladder-spell   649.2  raid   748.5  curve60   438.2  curve120   399.9  curve180   383.8  curve240   374.8  curve360   358.9  max   753.2  max60   803.9",
       "  sim preset: Enhancement 16/35/0                      dummy   365.3  dummy60   422.6  ladder-mana   411.5  ladder-armor   556.6  ladder-physical   628.1  ladder-spell   653.1  raid   726.2  curve60   429.0  curve120   372.6  curve180   365.3  curve240   356.5  curve360   343.5  max   732.6  max60   814.4",
       "wrote shaman/research/raid/raidsim/enhancement-dps-environments.md"
@@ -7431,9 +7466,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:35:07",
+  "date": "2026-09-29T22:38:03",
   "classes": [
-   "paladin"
+   "shaman"
   ],
   "steps": [
    "raid",
@@ -7445,7 +7480,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 174,
+  "seconds": 176,
   "refresh": null,
   "regen_log": []
  }

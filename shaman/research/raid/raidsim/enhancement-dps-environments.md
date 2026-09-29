@@ -6,7 +6,7 @@
 |---|---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 444 | 757 | 755 | 812 |
 | `enhancement-raid-dps` | 11/31/9 | 391 | 440 | 751 | 749 | 806 |
-| `opt-enhancement-dps-parse` | 10/31/10 | 390 | 437 | 752 | 749 | 823 |
+| `opt-enhancement-dps-parse` | 10/31/10 | 390 | 438 | 758 | 757 | 818 |
 | sim preset: Level 60 | - | 384 | 443 | 749 | 753 | 804 |
 | sim preset: Enhancement 16/35/0 | - | 365 | 423 | 726 | 733 | 814 |
 
@@ -24,7 +24,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 394 | +5% | +37% | +18% | +6% | +26% | 757 |
 | `enhancement-raid-dps` | 391 | +5% | +38% | +19% | +6% | +25% | 751 |
-| `opt-enhancement-dps-parse` | 390 | +7% | +37% | +18% | +6% | +24% | 752 |
+| `opt-enhancement-dps-parse` | 390 | +6% | +37% | +19% | +6% | +26% | 758 |
 | sim preset: Level 60 | 384 | +8% | +37% | +18% | +6% | +26% | 749 |
 | sim preset: Enhancement 16/35/0 | 365 | +13% | +40% | +20% | +7% | +20% | 726 |
 
@@ -38,7 +38,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 439 | 415 | 394 | 393 | 377 |
 | `enhancement-raid-dps` | 434 | 411 | 391 | 389 | 373 |
-| `opt-enhancement-dps-parse` | 445 | 404 | 390 | 383 | 368 |
+| `opt-enhancement-dps-parse` | 442 | 412 | 390 | 386 | 370 |
 | sim preset: Level 60 | 438 | 400 | 384 | 375 | 359 |
 | sim preset: Enhancement 16/35/0 | 429 | 373 | 365 | 356 | 343 |
 

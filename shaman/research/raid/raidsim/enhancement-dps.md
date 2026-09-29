@@ -4,14 +4,14 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 30 | +0.0% | 404 | 42 | +100.3% |
-| `cand-enhancement-dps-r7` | 11/31/9 | 394 | 30 | +0.0% | 404 | 42 | +100.3% |
-| `enhancement-raid-dps` | 11/31/9 | 391 | 29 | -0.9% | 401 | 42 | +96.8% |
-| `cand-enhancement-dps-r6` | 11/31/9 | 391 | 29 | -0.9% | 401 | 42 | +96.8% |
-| `cand-enhancement-dps-r5` | 11/31/9 | 387 | 29 | -1.8% | 397 | 52 | +94.3% |
+| `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 30 | +0.0% | 404 | 42 | +100.4% |
+| `cand-enhancement-dps-r7` | 11/31/9 | 394 | 30 | +0.0% | 404 | 42 | +100.4% |
+| `enhancement-raid-dps` | 11/31/9 | 391 | 29 | -0.9% | 401 | 42 | +96.9% |
+| `cand-enhancement-dps-r6` | 11/31/9 | 391 | 29 | -0.9% | 401 | 42 | +96.9% |
+| `cand-enhancement-dps-r5` | 11/31/9 | 387 | 29 | -1.8% | 397 | 52 | +94.4% |
 | `cand-enhancement-dps-r4` | 8/32/11 | 386 | 30 | -2.1% | 280 | 58 | +93.8% |
 | `cand-enhancement-dps-r3` | 15/36/0 | 384 | 30 | -2.5% | 279 | 51 | +94.3% |
-| `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 384 | 29 | -2.5% | 279 | 63 | +93.7% |
+| `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 384 | 29 | -2.5% | 279 | 63 | +93.8% |
 | sim preset: Level 60 | - | 384 | 30 | -2.7% | 279 | 52 | - |
 | `cand-enhancement-dps-r2` | 18/33/0 | 382 | 29 | -3.1% | 277 | 51 | +92.8% |
 | `cand-enhancement-dps-r1` | 14/37/0 | 382 | 30 | -3.1% | 277 | 64 | +91.9% |

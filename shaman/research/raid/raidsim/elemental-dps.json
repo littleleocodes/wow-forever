@@ -25,7 +25,7 @@
    "conjuredId": 12662
   },
   "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
-  "iterations": 1500,
+  "iterations": 3000,
   "seed": 1,
   "duration": 180.0
  },
@@ -38,46 +38,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10605": 7.49,
-    "20554": 1.0,
-    "10391": 63.87466666666667,
+    "29228": 15.846333333333334,
+    "10391": 63.916,
+    "10605": 7.470666666666666,
+    "15208": 1.0,
     "10438": 3.0,
-    "529": 9.694666666666667,
-    "29228": 15.873333333333333,
-    "15208": 1.0
+    "20554": 1.0,
+    "529": 9.675333333333333
    },
    "casts": {
-    "item 18820": 2.0,
-    "Chain Lightning": 7.49,
+    "Flame Shock": 15.846333333333334,
+    "Lightning Bolt": 74.59133333333332,
+    "Chain Lightning": 7.470666666666666,
+    "Searing Totem": 3.0,
     "Berserking": 1.0,
     "item 13444": 1.996,
-    "Lightning Bolt": 74.56933333333333,
-    "Searing Totem": 3.0,
-    "item 12662": 2.0,
     "OtherActionManaGain": 3.996,
-    "Flame Shock": 15.873333333333333
+    "item 18820": 2.0,
+    "item 12662": 2.0
    },
-   "dps": 387.7451580503337,
-   "dps_stdev": 21.302783769285767,
-   "threat": 393.1507324151082,
+   "dps": 387.4109771121373,
+   "dps_stdev": 21.38633211275256,
+   "threat": 392.84475892314316,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.004333333333333333,
+   "oom_seconds": 0.004712,
    "error": null,
-   "scorer": 0.6894709663837398,
+   "scorer": 0.6938269504007445,
    "shares": {
-    "Lightning Bolt": 0.7114208547729746,
-    "Flame Shock": 0.1664127133870557,
-    "Attack": 0.06405410072442622,
-    "Chain Lightning": 0.05811233111554334
+    "Lightning Bolt": 0.7113232933580439,
+    "Flame Shock": 0.1666050052890521,
+    "Attack": 0.06401437212457292,
+    "Chain Lightning": 0.05805732922833123
    },
    "source_shares": {
-    "lightning_bolt": 0.7601,
-    "flame_shock": 0.1778,
-    "chain_lightning": 0.0621
+    "lightning_bolt": 0.76,
+    "flame_shock": 0.178,
+    "chain_lightning": 0.062
    },
-   "unmatched_share": 0.0641
+   "unmatched_share": 0.064
   },
   {
    "label": "opt-elemental-dps-raid-dps",
@@ -86,46 +86,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "15208": 1.0,
-    "10391": 63.87466666666667,
+    "10605": 7.470666666666666,
+    "10391": 63.916,
     "10438": 3.0,
-    "20554": 1.0,
-    "529": 9.694666666666667,
-    "10605": 7.49,
-    "29228": 15.873333333333333
+    "15208": 1.0,
+    "29228": 15.846333333333334,
+    "529": 9.675333333333333,
+    "20554": 1.0
    },
    "casts": {
-    "item 18820": 2.0,
-    "item 13444": 1.996,
-    "Lightning Bolt": 74.56933333333333,
     "OtherActionManaGain": 3.996,
+    "Chain Lightning": 7.470666666666666,
+    "Lightning Bolt": 74.59133333333332,
     "Searing Totem": 3.0,
-    "Berserking": 1.0,
     "item 12662": 2.0,
-    "Chain Lightning": 7.49,
-    "Flame Shock": 15.873333333333333
+    "Flame Shock": 15.846333333333334,
+    "item 13444": 1.996,
+    "item 18820": 2.0,
+    "Berserking": 1.0
    },
-   "dps": 387.7451580503337,
-   "dps_stdev": 21.302783769285767,
-   "threat": 393.1507324151082,
+   "dps": 387.4109771121373,
+   "dps_stdev": 21.38633211275256,
+   "threat": 392.84475892314316,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.004333333333333333,
+   "oom_seconds": 0.004712,
    "error": null,
-   "scorer": 0.6893509663837398,
+   "scorer": 0.6937069504007445,
    "shares": {
-    "Lightning Bolt": 0.7114208547729746,
-    "Flame Shock": 0.1664127133870557,
-    "Attack": 0.06405410072442622,
-    "Chain Lightning": 0.05811233111554334
+    "Lightning Bolt": 0.7113232933580437,
+    "Flame Shock": 0.16660500528905206,
+    "Attack": 0.06401437212457291,
+    "Chain Lightning": 0.05805732922833121
    },
    "source_shares": {
-    "lightning_bolt": 0.7601,
-    "flame_shock": 0.1778,
-    "chain_lightning": 0.0621
+    "lightning_bolt": 0.76,
+    "flame_shock": 0.178,
+    "chain_lightning": 0.062
    },
-   "unmatched_share": 0.0641
+   "unmatched_share": 0.064
   },
   {
    "label": "elemental-raid",
@@ -134,47 +134,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29228": 15.121333333333334,
-    "1238300": 13.954,
     "15208": 1.0,
-    "10438": 3.0,
-    "529": 30.441333333333333,
-    "10391": 35.31,
+    "1238300": 13.954,
+    "10391": 35.34733333333333,
     "20554": 1.0,
-    "10605": 6.850666666666666
+    "29228": 15.113666666666667,
+    "10438": 3.0,
+    "10605": 6.874666666666666,
+    "529": 30.382666666666665
    },
    "casts": {
-    "Flame Shock": 15.121333333333334,
-    "OtherActionManaGain": 3.9913333333333334,
+    "Lightning Bolt": 66.72999999999999,
+    "Lava Burst": 13.954,
+    "item 13444": 1.9893333333333334,
+    "Berserking": 1.0,
+    "Flame Shock": 15.113666666666667,
     "item 18820": 2.0,
     "item 12662": 2.0,
-    "Lava Burst": 13.954,
-    "Lightning Bolt": 66.75133333333333,
     "Searing Totem": 3.0,
-    "Berserking": 1.0,
-    "item 13444": 1.9913333333333334,
-    "Chain Lightning": 6.850666666666666
+    "OtherActionManaGain": 3.989333333333333,
+    "Chain Lightning": 6.874666666666666
    },
-   "dps": 381.1300451517873,
-   "dps_stdev": 19.425462986038387,
-   "threat": 388.4555083843715,
+   "dps": 381.11508606647834,
+   "dps_stdev": 19.333811802701113,
+   "threat": 388.39426705880305,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.11743866666600002,
+   "oom_seconds": 0.11999933333299999,
    "error": null,
-   "scorer": 0.7063029124824142,
+   "scorer": 0.710627216999108,
    "shares": {
-    "Lightning Bolt": 0.5588033341341283,
-    "Flame Shock": 0.16103216791174632,
-    "Lava Burst": 0.15818305366049262,
-    "Attack": 0.06809209785707945,
-    "Chain Lightning": 0.05388934643655324
+    "Lightning Bolt": 0.558647841265183,
+    "Flame Shock": 0.16129152068102737,
+    "Lava Burst": 0.15831468929180623,
+    "Attack": 0.06802343351715741,
+    "Chain Lightning": 0.05372251524482588
    },
    "source_shares": {
-    "lightning_bolt": 0.7222,
-    "flame_shock": 0.2081,
-    "chain_lightning": 0.0696
+    "lightning_bolt": 0.7221,
+    "flame_shock": 0.2085,
+    "chain_lightning": 0.0694
    },
    "unmatched_share": 0.2263
   },
@@ -185,150 +185,49 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "529": 20.390666666666668,
     "10438": 3.0,
-    "1238300": 13.473333333333333,
-    "10605": 5.42,
-    "29228": 14.464,
-    "10391": 44.85066666666667,
-    "15208": 1.0
+    "29228": 14.462333333333333,
+    "10391": 45.009,
+    "20554": 1.0,
+    "10605": 5.462,
+    "15208": 1.0,
+    "529": 20.140333333333334,
+    "1238300": 13.484333333333334
    },
    "casts": {
-    "Berserking": 1.0,
-    "Lightning Bolt": 66.24133333333333,
+    "item 13444": 1.0373333333333334,
     "item 18820": 2.0,
+    "OtherActionManaGain": 3.037333333333333,
     "Searing Totem": 3.0,
-    "OtherActionManaGain": 3.034,
-    "Lava Burst": 13.473333333333333,
-    "Chain Lightning": 5.42,
-    "item 13444": 1.034,
+    "Flame Shock": 14.462333333333333,
+    "Lightning Bolt": 66.14933333333333,
+    "Berserking": 1.0,
     "item 12662": 2.0,
-    "Flame Shock": 14.464
+    "Chain Lightning": 5.462,
+    "Lava Burst": 13.484333333333334
    },
-   "dps": 366.43449159409204,
-   "dps_stdev": 18.324567831364984,
-   "threat": 351.15320589049867,
+   "dps": 366.9129646893345,
+   "dps_stdev": 18.3483876985709,
+   "threat": 351.68490278150546,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.13543066666533335,
+   "oom_seconds": 0.13195066666466665,
    "error": null,
-   "scorer": 0.6440515867296551,
+   "scorer": 0.6481983042676113,
    "shares": {
-    "Lightning Bolt": 0.5843632494911242,
-    "Flame Shock": 0.1545753872500724,
-    "Lava Burst": 0.1508563404974346,
-    "Attack": 0.06782585107982847,
-    "Chain Lightning": 0.04237917168154034
+    "Lightning Bolt": 0.5842052366130778,
+    "Flame Shock": 0.15463298597166292,
+    "Lava Burst": 0.15098928136364836,
+    "Attack": 0.0676781503580515,
+    "Chain Lightning": 0.04249434569355945
    },
    "source_shares": {
-    "lightning_bolt": 0.7479,
-    "flame_shock": 0.1978,
-    "chain_lightning": 0.0542
+    "lightning_bolt": 0.7477,
+    "flame_shock": 0.1979,
+    "chain_lightning": 0.0544
    },
    "unmatched_share": 0.2187
-  },
-  {
-   "label": "cand-elemental-dps-preset-elemental-31-6-14",
-   "talents": "2505301300123051-0500001-053050001",
-   "split": "31/6/14",
-   "ours": false,
-   "measured": true,
-   "preset": "Elemental 31/6/14",
-   "spell_casts": {
-    "10391": 26.826666666666668,
-    "15208": 1.0,
-    "20554": 1.0,
-    "10605": 6.692666666666667,
-    "1238300": 13.811333333333334,
-    "10438": 3.0,
-    "29228": 15.052666666666667,
-    "529": 42.093333333333334
-   },
-   "casts": {
-    "item 18820": 2.0,
-    "Lightning Bolt": 69.92,
-    "Berserking": 1.0,
-    "item 13444": 1.9946666666666666,
-    "OtherActionManaGain": 3.994666666666667,
-    "Chain Lightning": 6.692666666666667,
-    "Lava Burst": 13.811333333333334,
-    "Searing Totem": 3.0,
-    "Flame Shock": 15.052666666666667,
-    "item 12662": 2.0
-   },
-   "dps": 375.80834283948604,
-   "dps_stdev": 18.812609365382457,
-   "threat": 383.2785528418823,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.20588133333333333,
-   "error": null,
-   "scorer": 0.684539564012056,
-   "shares": {
-    "Lightning Bolt": 0.5583243799847112,
-    "Flame Shock": 0.16255737229723208,
-    "Lava Burst": 0.15729429428767477,
-    "Attack": 0.06896293777401291,
-    "Chain Lightning": 0.052861015656369005
-   },
-   "source_shares": {
-    "lightning_bolt": 0.7216,
-    "flame_shock": 0.2101,
-    "chain_lightning": 0.0683
-   },
-   "unmatched_share": 0.2263
-  },
-  {
-   "label": "cand-elemental-dps-preset-stormcaller-28-23-0",
-   "talents": "150533130010303-055030030004102",
-   "split": "28/23",
-   "ours": false,
-   "measured": true,
-   "preset": "Stormcaller 28/23/0",
-   "spell_casts": {
-    "10391": 36.97,
-    "10438": 3.0,
-    "20554": 1.0,
-    "15208": 1.0,
-    "529": 45.382,
-    "10605": 7.6193333333333335,
-    "29228": 15.672
-   },
-   "casts": {
-    "Lightning Bolt": 83.352,
-    "Searing Totem": 3.0,
-    "Berserking": 1.0,
-    "item 18820": 2.0,
-    "item 12662": 2.0,
-    "OtherActionManaGain": 4.0,
-    "item 13444": 2.0,
-    "Chain Lightning": 7.6193333333333335,
-    "Flame Shock": 15.672
-   },
-   "dps": 368.9611976730218,
-   "dps_stdev": 19.155467284991268,
-   "threat": 375.0543220347678,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.6804746666659998,
-   "error": null,
-   "scorer": 0.6249581947456065,
-   "shares": {
-    "Lightning Bolt": 0.7003978164196327,
-    "Flame Shock": 0.17154929285640966,
-    "Attack": 0.06651649595140027,
-    "Chain Lightning": 0.06153639477255748
-   },
-   "source_shares": {
-    "lightning_bolt": 0.7503,
-    "flame_shock": 0.1838,
-    "chain_lightning": 0.0659
-   },
-   "unmatched_share": 0.0665
   },
   {
    "label": "cand-elemental-dps-r1",
@@ -337,46 +236,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29228": 15.873333333333333,
-    "15208": 1.0,
-    "529": 9.694666666666667,
-    "10391": 63.87466666666667,
-    "10605": 7.49,
+    "10605": 7.470666666666666,
     "20554": 1.0,
-    "10438": 3.0
+    "529": 9.675333333333333,
+    "10391": 63.916,
+    "10438": 3.0,
+    "29228": 15.846333333333334,
+    "15208": 1.0
    },
    "casts": {
-    "Flame Shock": 15.873333333333333,
-    "Lightning Bolt": 74.56933333333333,
-    "OtherActionManaGain": 3.996,
-    "item 13444": 1.996,
-    "Chain Lightning": 7.49,
+    "Chain Lightning": 7.470666666666666,
     "Berserking": 1.0,
+    "OtherActionManaGain": 3.996,
+    "Lightning Bolt": 74.59133333333332,
     "item 18820": 2.0,
+    "item 12662": 2.0,
     "Searing Totem": 3.0,
-    "item 12662": 2.0
+    "Flame Shock": 15.846333333333334,
+    "item 13444": 1.996
    },
-   "dps": 387.7451580503337,
-   "dps_stdev": 21.302783769285767,
-   "threat": 393.1507324151082,
+   "dps": 387.4109771121373,
+   "dps_stdev": 21.38633211275256,
+   "threat": 392.84475892314316,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.004333333333333333,
+   "oom_seconds": 0.004712,
    "error": null,
-   "scorer": 0.6893509663837398,
+   "scorer": 0.6937069504007445,
    "shares": {
-    "Lightning Bolt": 0.7114208547729746,
-    "Flame Shock": 0.16641271338705568,
-    "Attack": 0.0640541007244262,
-    "Chain Lightning": 0.058112331115543335
+    "Lightning Bolt": 0.7113232933580439,
+    "Flame Shock": 0.1666050052890521,
+    "Attack": 0.06401437212457292,
+    "Chain Lightning": 0.05805732922833123
    },
    "source_shares": {
-    "lightning_bolt": 0.7601,
-    "flame_shock": 0.1778,
-    "chain_lightning": 0.0621
+    "lightning_bolt": 0.76,
+    "flame_shock": 0.178,
+    "chain_lightning": 0.062
    },
-   "unmatched_share": 0.0641
+   "unmatched_share": 0.064
   },
   {
    "label": "cand-elemental-dps-r2",
@@ -385,46 +284,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "15208": 1.0,
-    "10605": 7.49,
-    "10438": 3.0,
-    "29228": 15.873333333333333,
-    "529": 9.694666666666667,
+    "10605": 7.470666666666666,
+    "10391": 63.916,
     "20554": 1.0,
-    "10391": 63.87466666666667
+    "529": 9.675333333333333,
+    "15208": 1.0,
+    "10438": 3.0,
+    "29228": 15.846333333333334
    },
    "casts": {
-    "Lightning Bolt": 74.56933333333333,
-    "Chain Lightning": 7.49,
-    "OtherActionManaGain": 3.996,
-    "item 12662": 2.0,
-    "item 13444": 1.996,
+    "Chain Lightning": 7.470666666666666,
+    "Lightning Bolt": 74.59133333333332,
+    "Berserking": 1.0,
     "Searing Totem": 3.0,
-    "Flame Shock": 15.873333333333333,
+    "Flame Shock": 15.846333333333334,
+    "item 13444": 1.996,
+    "OtherActionManaGain": 3.996,
     "item 18820": 2.0,
-    "Berserking": 1.0
+    "item 12662": 2.0
    },
-   "dps": 387.7451580503337,
-   "dps_stdev": 21.302783769285767,
-   "threat": 393.1507324151082,
+   "dps": 387.4109771121373,
+   "dps_stdev": 21.38633211275256,
+   "threat": 392.84475892314316,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.004333333333333333,
+   "oom_seconds": 0.004712,
    "error": null,
-   "scorer": 0.6893109663837399,
+   "scorer": 0.6936669504007446,
    "shares": {
-    "Lightning Bolt": 0.7114208547729746,
-    "Flame Shock": 0.1664127133870557,
-    "Attack": 0.06405410072442622,
-    "Chain Lightning": 0.05811233111554334
+    "Lightning Bolt": 0.7113232933580437,
+    "Flame Shock": 0.16660500528905206,
+    "Attack": 0.06401437212457291,
+    "Chain Lightning": 0.05805732922833121
    },
    "source_shares": {
-    "lightning_bolt": 0.7601,
-    "flame_shock": 0.1778,
-    "chain_lightning": 0.0621
+    "lightning_bolt": 0.76,
+    "flame_shock": 0.178,
+    "chain_lightning": 0.062
    },
-   "unmatched_share": 0.0641
+   "unmatched_share": 0.064
   },
   {
    "label": "cand-elemental-dps-r3",
@@ -433,44 +332,44 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "15208": 1.0,
-    "29228": 15.66,
-    "529": 9.309333333333333,
     "20554": 1.0,
-    "10605": 7.408666666666667,
-    "10391": 64.10266666666666,
+    "529": 9.327666666666667,
+    "10605": 7.399,
+    "29228": 15.645333333333333,
+    "15208": 1.0,
+    "10391": 64.11266666666667,
     "10438": 3.0
    },
    "casts": {
-    "OtherActionManaGain": 3.996,
-    "Lightning Bolt": 74.41199999999999,
-    "Flame Shock": 15.66,
-    "item 13444": 1.996,
-    "item 18820": 2.0,
-    "item 12662": 2.0,
     "Berserking": 1.0,
-    "Chain Lightning": 7.408666666666667,
+    "item 13444": 1.9953333333333334,
+    "Lightning Bolt": 74.44033333333334,
+    "Chain Lightning": 7.399,
+    "item 12662": 2.0,
+    "Flame Shock": 15.645333333333333,
+    "OtherActionManaGain": 3.9953333333333334,
+    "item 18820": 2.0,
     "Searing Totem": 3.0
    },
-   "dps": 386.33052744508257,
-   "dps_stdev": 21.954720423203938,
-   "threat": 391.5721538978418,
+   "dps": 386.0287812336958,
+   "dps_stdev": 22.040562589178688,
+   "threat": 391.4096025045137,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0054666666666666665,
+   "oom_seconds": 0.006966666666666667,
    "error": null,
-   "scorer": 0.6893649663837399,
+   "scorer": 0.6937209504007446,
    "shares": {
-    "Lightning Bolt": 0.7125596799191429,
-    "Flame Shock": 0.16522061735932325,
-    "Attack": 0.06428543953753288,
-    "Chain Lightning": 0.057934263184000946
+    "Lightning Bolt": 0.7124937600680368,
+    "Flame Shock": 0.16545351151616053,
+    "Attack": 0.06427174383989945,
+    "Chain Lightning": 0.05778098457590333
    },
    "source_shares": {
-    "lightning_bolt": 0.7615,
-    "flame_shock": 0.1766,
-    "chain_lightning": 0.0619
+    "lightning_bolt": 0.7614,
+    "flame_shock": 0.1768,
+    "chain_lightning": 0.0617
    },
    "unmatched_share": 0.0643
   },
@@ -481,44 +380,44 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10605": 7.408666666666667,
-    "529": 9.309333333333333,
+    "10605": 7.399,
     "10438": 3.0,
-    "29228": 15.66,
-    "10391": 64.10266666666666,
     "15208": 1.0,
-    "20554": 1.0
+    "29228": 15.645333333333333,
+    "10391": 64.11266666666667,
+    "20554": 1.0,
+    "529": 9.327666666666667
    },
    "casts": {
-    "item 12662": 2.0,
-    "Chain Lightning": 7.408666666666667,
-    "Lightning Bolt": 74.41199999999999,
+    "OtherActionManaGain": 3.9953333333333334,
+    "Chain Lightning": 7.399,
+    "item 13444": 1.9953333333333334,
     "Searing Totem": 3.0,
-    "Flame Shock": 15.66,
-    "item 18820": 2.0,
-    "item 13444": 1.996,
-    "OtherActionManaGain": 3.996,
-    "Berserking": 1.0
+    "item 12662": 2.0,
+    "Lightning Bolt": 74.44033333333334,
+    "Flame Shock": 15.645333333333333,
+    "Berserking": 1.0,
+    "item 18820": 2.0
    },
-   "dps": 386.33052744508257,
-   "dps_stdev": 21.954720423203938,
-   "threat": 391.5721538978418,
+   "dps": 386.0287812336958,
+   "dps_stdev": 22.040562589178688,
+   "threat": 391.4096025045137,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0054666666666666665,
+   "oom_seconds": 0.006966666666666667,
    "error": null,
-   "scorer": 0.6895149663837399,
+   "scorer": 0.6938709504007445,
    "shares": {
-    "Lightning Bolt": 0.7125596799191428,
-    "Flame Shock": 0.16522061735932325,
-    "Attack": 0.06428543953753288,
-    "Chain Lightning": 0.057934263184000946
+    "Lightning Bolt": 0.7124937600680367,
+    "Flame Shock": 0.1654535115161605,
+    "Attack": 0.06427174383989943,
+    "Chain Lightning": 0.05778098457590332
    },
    "source_shares": {
-    "lightning_bolt": 0.7615,
-    "flame_shock": 0.1766,
-    "chain_lightning": 0.0619
+    "lightning_bolt": 0.7614,
+    "flame_shock": 0.1768,
+    "chain_lightning": 0.0617
    },
    "unmatched_share": 0.0643
   },
@@ -529,44 +428,44 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29228": 15.054666666666666,
     "15208": 1.0,
     "20554": 1.0,
-    "10391": 71.748,
+    "10391": 71.75133333333333,
+    "10605": 7.589666666666667,
+    "529": 0.086,
     "10438": 3.0,
-    "10605": 7.568666666666667,
-    "529": 0.09266666666666666
+    "29228": 15.05
    },
    "casts": {
     "item 18820": 2.0,
-    "Flame Shock": 15.054666666666666,
-    "OtherActionManaGain": 3.698,
-    "Lightning Bolt": 72.84066666666668,
+    "Lightning Bolt": 72.83733333333333,
     "Berserking": 1.0,
-    "item 12662": 2.0,
-    "item 13444": 1.698,
+    "OtherActionManaGain": 3.7016666666666667,
+    "item 13444": 1.7016666666666667,
+    "Chain Lightning": 7.589666666666667,
     "Searing Totem": 3.0,
-    "Chain Lightning": 7.568666666666667
+    "Flame Shock": 15.05,
+    "item 12662": 2.0
    },
-   "dps": 374.0986956782373,
-   "dps_stdev": 15.522903735574367,
-   "threat": 389.25536234490386,
+   "dps": 373.98989041086645,
+   "dps_stdev": 15.550249072394754,
+   "threat": 389.1648904108665,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.009705333333333333,
+   "oom_seconds": 0.010038,
    "error": null,
    "scorer": 0.6532437059432511,
    "shares": {
-    "Lightning Bolt": 0.7110152467308136,
-    "Flame Shock": 0.16311298628967322,
-    "Attack": 0.06620346402565086,
-    "Chain Lightning": 0.0596683029538624
+    "Lightning Bolt": 0.7109236693179372,
+    "Flame Shock": 0.16309270349539687,
+    "Attack": 0.06618027882320228,
+    "Chain Lightning": 0.05980334836346371
    },
    "source_shares": {
-    "lightning_bolt": 0.7614,
+    "lightning_bolt": 0.7613,
     "flame_shock": 0.1747,
-    "chain_lightning": 0.0639
+    "chain_lightning": 0.064
    },
    "unmatched_share": 0.0662
   },
@@ -577,46 +476,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10438": 3.0,
+    "10391": 65.86466666666666,
+    "10605": 7.292333333333334,
+    "529": 7.659666666666666,
     "20554": 1.0,
     "15208": 1.0,
-    "29228": 15.175333333333333,
-    "10605": 7.294,
-    "10391": 65.91466666666666,
-    "529": 7.625333333333334
+    "10438": 3.0,
+    "29228": 15.187333333333333
    },
    "casts": {
-    "item 13444": 1.99,
-    "Searing Totem": 3.0,
-    "Berserking": 1.0,
+    "Lightning Bolt": 74.52433333333333,
+    "OtherActionManaGain": 3.9886666666666666,
+    "item 13444": 1.9886666666666666,
+    "item 18820": 2.0,
     "item 12662": 2.0,
-    "Lightning Bolt": 74.53999999999999,
-    "Flame Shock": 15.175333333333333,
-    "Chain Lightning": 7.294,
-    "OtherActionManaGain": 3.99,
-    "item 18820": 2.0
+    "Chain Lightning": 7.292333333333334,
+    "Berserking": 1.0,
+    "Searing Totem": 3.0,
+    "Flame Shock": 15.187333333333333
    },
-   "dps": 381.7869365885194,
-   "dps_stdev": 19.015870970703077,
-   "threat": 386.64117947548783,
+   "dps": 381.529009533063,
+   "dps_stdev": 19.476828534744246,
+   "threat": 386.38704064585573,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0034666666666666665,
+   "oom_seconds": 0.004733333333,
    "error": null,
-   "scorer": 0.6862421064921879,
+   "scorer": 0.6905203019668537,
    "shares": {
-    "Lightning Bolt": 0.7130410149415787,
-    "Flame Shock": 0.16251331417580941,
-    "Attack": 0.06810849682918689,
-    "Chain Lightning": 0.05633717405342509
+    "Lightning Bolt": 0.712977574890193,
+    "Flame Shock": 0.16246851736865378,
+    "Attack": 0.06816344092765506,
+    "Chain Lightning": 0.056390466813497984
    },
    "source_shares": {
-    "lightning_bolt": 0.7652,
+    "lightning_bolt": 0.7651,
     "flame_shock": 0.1744,
     "chain_lightning": 0.0605
    },
-   "unmatched_share": 0.0681
+   "unmatched_share": 0.0682
   },
   {
    "label": "cand-elemental-dps-r7",
@@ -625,49 +524,100 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10391": 34.95466666666667,
-    "20554": 1.0,
-    "1238300": 13.968666666666667,
-    "10605": 6.808,
+    "29228": 15.230333333333334,
     "15208": 1.0,
+    "10391": 34.949333333333335,
     "10438": 3.0,
-    "29228": 15.219333333333333,
-    "529": 30.71
+    "1238300": 13.977333333333334,
+    "10605": 6.835,
+    "529": 30.661333333333335,
+    "20554": 1.0
    },
    "casts": {
-    "item 12662": 2.0,
-    "Lightning Bolt": 66.66466666666668,
-    "Berserking": 1.0,
-    "Lava Burst": 13.968666666666667,
-    "item 13444": 1.9933333333333334,
-    "Chain Lightning": 6.808,
-    "OtherActionManaGain": 3.993333333333333,
+    "item 13444": 1.9916666666666667,
+    "Flame Shock": 15.230333333333334,
     "item 18820": 2.0,
+    "Lightning Bolt": 66.61066666666667,
     "Searing Totem": 3.0,
-    "Flame Shock": 15.219333333333333
+    "OtherActionManaGain": 3.9916666666666667,
+    "Lava Burst": 13.977333333333334,
+    "item 12662": 2.0,
+    "Chain Lightning": 6.835,
+    "Berserking": 1.0
    },
-   "dps": 380.4291706139796,
-   "dps_stdev": 19.637323062677243,
-   "threat": 387.8423041053668,
+   "dps": 380.530491992516,
+   "dps_stdev": 19.444477789419143,
+   "threat": 387.927865630642,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.12435999999866668,
+   "oom_seconds": 0.12913533333066665,
    "error": null,
-   "scorer": 0.7061869124824143,
+   "scorer": 0.7105112169991081,
    "shares": {
-    "Lightning Bolt": 0.5578591925631745,
-    "Flame Shock": 0.16231243782110238,
-    "Lava Burst": 0.15825346147287286,
-    "Attack": 0.06810945417785412,
-    "Chain Lightning": 0.05346545396499602
+    "Lightning Bolt": 0.5573653245610357,
+    "Flame Shock": 0.1625040580143764,
+    "Lava Burst": 0.15849343660566495,
+    "Attack": 0.06811209162532461,
+    "Chain Lightning": 0.05352508919359821
    },
    "source_shares": {
-    "lightning_bolt": 0.7211,
-    "flame_shock": 0.2098,
-    "chain_lightning": 0.0691
+    "lightning_bolt": 0.7207,
+    "flame_shock": 0.2101,
+    "chain_lightning": 0.0692
    },
-   "unmatched_share": 0.2264
+   "unmatched_share": 0.2266
+  },
+  {
+   "label": "cand-elemental-dps-r8",
+   "talents": "5500301303113051-052-05305",
+   "split": "31/7/13",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "10605": 6.874666666666666,
+    "15208": 1.0,
+    "529": 30.382666666666665,
+    "20554": 1.0,
+    "10391": 35.34733333333333,
+    "1238300": 13.954,
+    "10438": 3.0,
+    "29228": 15.113666666666667
+   },
+   "casts": {
+    "Chain Lightning": 6.874666666666666,
+    "Lightning Bolt": 66.72999999999999,
+    "OtherActionManaGain": 3.989333333333333,
+    "item 13444": 1.9893333333333334,
+    "item 12662": 2.0,
+    "Berserking": 1.0,
+    "Lava Burst": 13.954,
+    "item 18820": 2.0,
+    "Searing Totem": 3.0,
+    "Flame Shock": 15.113666666666667
+   },
+   "dps": 381.11508606647834,
+   "dps_stdev": 19.333811802701113,
+   "threat": 388.39426705880305,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.11999933333299999,
+   "error": null,
+   "scorer": 0.710627216999108,
+   "shares": {
+    "Lightning Bolt": 0.5586478412651831,
+    "Flame Shock": 0.16129152068102742,
+    "Lava Burst": 0.15831468929180625,
+    "Attack": 0.06802343351715742,
+    "Chain Lightning": 0.053722515244825894
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7221,
+    "flame_shock": 0.2085,
+    "chain_lightning": 0.0694
+   },
+   "unmatched_share": 0.2263
   },
   {
    "label": "cand-elemental-dps-spec-elemental",
@@ -676,2203 +626,197 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10438": 3.0,
+    "29228": 15.113666666666667,
+    "10391": 35.34733333333333,
     "20554": 1.0,
-    "10391": 35.31,
-    "10605": 6.850666666666666,
+    "1238300": 13.954,
+    "529": 30.382666666666665,
     "15208": 1.0,
-    "529": 30.441333333333333,
-    "29228": 15.121333333333334,
-    "1238300": 13.954
+    "10605": 6.874666666666666,
+    "10438": 3.0
    },
    "casts": {
-    "Searing Totem": 3.0,
-    "OtherActionManaGain": 3.9913333333333334,
+    "Flame Shock": 15.113666666666667,
+    "Lightning Bolt": 66.72999999999999,
     "Berserking": 1.0,
-    "item 12662": 2.0,
-    "Lightning Bolt": 66.75133333333333,
-    "Chain Lightning": 6.850666666666666,
-    "item 13444": 1.9913333333333334,
-    "Flame Shock": 15.121333333333334,
+    "OtherActionManaGain": 3.989333333333333,
     "item 18820": 2.0,
-    "Lava Burst": 13.954
+    "Lava Burst": 13.954,
+    "item 12662": 2.0,
+    "item 13444": 1.9893333333333334,
+    "Chain Lightning": 6.874666666666666,
+    "Searing Totem": 3.0
    },
-   "dps": 381.1300451517873,
-   "dps_stdev": 19.425462986038387,
-   "threat": 388.4555083843715,
+   "dps": 381.11508606647834,
+   "dps_stdev": 19.333811802701113,
+   "threat": 388.39426705880305,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.11743866666600002,
+   "oom_seconds": 0.11999933333299999,
    "error": null,
-   "scorer": 0.7061869124824143,
+   "scorer": 0.7105112169991081,
    "shares": {
-    "Lightning Bolt": 0.5588033341341283,
-    "Flame Shock": 0.16103216791174632,
-    "Lava Burst": 0.15818305366049262,
-    "Attack": 0.06809209785707945,
-    "Chain Lightning": 0.05388934643655324
+    "Lightning Bolt": 0.5586478412651831,
+    "Flame Shock": 0.16129152068102742,
+    "Lava Burst": 0.15831468929180625,
+    "Attack": 0.06802343351715742,
+    "Chain Lightning": 0.053722515244825894
    },
    "source_shares": {
-    "lightning_bolt": 0.7222,
-    "flame_shock": 0.2081,
-    "chain_lightning": 0.0696
+    "lightning_bolt": 0.7221,
+    "flame_shock": 0.2085,
+    "chain_lightning": 0.0694
    },
    "unmatched_share": 0.2263
+  },
+  {
+   "label": "sim preset: Level 60",
+   "talents": "5505301300103051--503352001",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "29228": 15.192,
+    "20554": 1.0,
+    "10605": 6.662333333333334,
+    "529": 35.846333333333334,
+    "10391": 31.366,
+    "10438": 3.0,
+    "15208": 1.0,
+    "1238300": 13.895
+   },
+   "casts": {
+    "item 13444": 1.979,
+    "Flame Shock": 15.192,
+    "Berserking": 1.0,
+    "Chain Lightning": 6.662333333333334,
+    "Lightning Bolt": 68.21233333333333,
+    "Searing Totem": 3.0,
+    "OtherActionManaGain": 3.979,
+    "item 18820": 2.0,
+    "item 12662": 2.0,
+    "Lava Burst": 13.895
+   },
+   "dps": 362.1079406741892,
+   "dps_stdev": 17.811238134891635,
+   "threat": 316.8247602246723,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.19061333333299993,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.5594236703564269,
+    "Flame Shock": 0.1630961074161472,
+    "Lava Burst": 0.1567909700657025,
+    "Attack": 0.06837851106574402,
+    "Chain Lightning": 0.05231074109597939
+   },
+   "source_shares": {
+    "lightning_bolt": 0.722,
+    "flame_shock": 0.2105,
+    "chain_lightning": 0.0675
+   },
+   "unmatched_share": 0.2252
+  },
+  {
+   "label": "sim preset: Elemental 31/6/14",
+   "talents": "2505301300123051-0500001-053050001",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "15208": 1.0,
+    "29228": 15.054,
+    "20554": 1.0,
+    "10438": 3.0,
+    "1238300": 13.820333333333334,
+    "529": 42.103,
+    "10391": 26.779,
+    "10605": 6.737666666666667
+   },
+   "casts": {
+    "Lightning Bolt": 69.882,
+    "Flame Shock": 15.054,
+    "OtherActionManaGain": 3.992,
+    "Berserking": 1.0,
+    "item 18820": 2.0,
+    "item 13444": 1.992,
+    "Searing Totem": 3.0,
+    "Lava Burst": 13.820333333333334,
+    "Chain Lightning": 6.737666666666667,
+    "item 12662": 2.0
+   },
+   "dps": 376.09465048625304,
+   "dps_stdev": 18.642337429485526,
+   "threat": 383.52752644674183,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.20591266666666658,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.5577797322981105,
+    "Flame Shock": 0.16249294098690634,
+    "Lava Burst": 0.15750745635142124,
+    "Attack": 0.06884515598387538,
+    "Chain Lightning": 0.053374714379686515
+   },
+   "source_shares": {
+    "lightning_bolt": 0.721,
+    "flame_shock": 0.21,
+    "chain_lightning": 0.069
+   },
+   "unmatched_share": 0.2264
+  },
+  {
+   "label": "sim preset: Stormcaller 28/23/0",
+   "talents": "150533130010303-055030030004102",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "10438": 3.0,
+    "29228": 15.644,
+    "10391": 36.99733333333333,
+    "20554": 1.0,
+    "10605": 7.574666666666666,
+    "529": 45.39533333333333,
+    "15208": 1.0
+   },
+   "casts": {
+    "Searing Totem": 3.0,
+    "item 18820": 2.0,
+    "Flame Shock": 15.644,
+    "Lightning Bolt": 83.39266666666666,
+    "OtherActionManaGain": 4.0,
+    "item 12662": 2.0,
+    "Berserking": 1.0,
+    "item 13444": 2.0,
+    "Chain Lightning": 7.574666666666666
+   },
+   "dps": 369.07049654440164,
+   "dps_stdev": 19.21396038808888,
+   "threat": 375.1815376162312,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.7044706666663336,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Lightning Bolt": 0.7009792844139637,
+    "Flame Shock": 0.17152177366235208,
+    "Attack": 0.06632443370731594,
+    "Chain Lightning": 0.061174508216368356
+   },
+   "source_shares": {
+    "lightning_bolt": 0.7508,
+    "flame_shock": 0.1837,
+    "chain_lightning": 0.0655
+   },
+   "unmatched_share": 0.0663
   }
  ],
- "deltas": {
-  "elemental-raid-dps": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019238623501629255,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.4262800777917,
-    "ev_delta": 0.02177195607826979,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Anticipation",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 1.775735322927603e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03099255247050532,
-    "dps_with": 387.7451580503337,
-    "dps_without": 376.0891939725494,
-    "ev_delta": 0.03631856268209497,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018238435232829708,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.79996259586505,
-    "ev_delta": 0.01896038459353743,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.0380383306504698,
-    "dps_with": 387.7451580503337,
-    "dps_without": 373.53645486998494,
-    "ev_delta": 0.04151050085293829,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.012603681896082453,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.91896917092754,
-    "ev_delta": 0.007272282888139981,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Earth's Grasp",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 2.3676611116973183e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18461898746613128,
-    "dps_with": 387.7451580503337,
-    "dps_without": 327.3163457220202,
-    "ev_delta": 0.20961203921534233,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013845479137353994,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.44995517487797,
-    "ev_delta": 0.00963092223646166,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07140791974532996,
-    "dps_with": 387.7451580503337,
-    "dps_without": 361.902456482214,
-    "ev_delta": 0.0795315885582123,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034114367713556755,
-    "dps_with": 387.7451580503337,
-    "dps_without": 374.9538447160776,
-    "ev_delta": 0.02941592592233737,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09204737010983963,
-    "dps_with": 387.7451580503337,
-    "dps_without": 355.06258122423185,
-    "ev_delta": 0.09280157749202175,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 4,
-    "sim_delta": 0.001699960159293635,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.024372108087660962,
-    "dps_with": 387.7451580503337,
-    "dps_without": 378.519831796467,
-    "ev_delta": 0.02037588249102232,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Stormstrike",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04021054982353117,
-    "dps_with": 387.7451580503337,
-    "dps_without": 372.75641755038305,
-    "ev_delta": 0.03861518378588158,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Toughness",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 5.327395169645303e-05,
-    "apl_dependent": false
-   }
-  ],
-  "opt-elemental-dps-raid-dps": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019238623501629255,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.4262800777917,
-    "ev_delta": 0.021773536283377897,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03099255247050532,
-    "dps_with": 387.7451580503337,
-    "dps_without": 376.0891939725494,
-    "ev_delta": 0.036321236208095777,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018238435232829708,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.79996259586505,
-    "ev_delta": 0.01896175694828306,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.0380383306504698,
-    "dps_with": 387.7451580503337,
-    "dps_without": 373.53645486998494,
-    "ev_delta": 0.041513571884420154,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.012603681896082453,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.91896917092754,
-    "ev_delta": 0.007272803218580395,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Earth's Grasp",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 2.3678292982112017e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18461898746613128,
-    "dps_with": 387.7451580503337,
-    "dps_without": 327.3163457220202,
-    "ev_delta": 0.2096300498970657,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013845479137353994,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.44995517487797,
-    "ev_delta": 0.009631612940790903,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07140791974532996,
-    "dps_with": 387.7451580503337,
-    "dps_without": 361.902456482214,
-    "ev_delta": 0.07953768728006842,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Weapons",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Guardian Totems",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034114367713556755,
-    "dps_with": 387.7451580503337,
-    "dps_without": 374.9538447160776,
-    "ev_delta": 0.02941807689888368,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09204737010983963,
-    "dps_with": 387.7451580503337,
-    "dps_without": 355.06258122423185,
-    "ev_delta": 0.09280878127956985,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 4,
-    "sim_delta": 0.001699960159293635,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.024372108087660962,
-    "dps_with": 387.7451580503337,
-    "dps_without": 378.519831796467,
-    "ev_delta": 0.020377359348555186,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Stormstrike",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04021054982353117,
-    "dps_with": 387.7451580503337,
-    "dps_without": 372.75641755038305,
-    "ev_delta": 0.03861803267355594,
-    "apl_dependent": false
-   }
-  ],
-  "elemental-raid": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 2,
-    "sim_delta": 0.007626393519490419,
-    "dps_with": 381.1300451517873,
-    "dps_without": 378.2453969080308,
-    "ev_delta": 0.008493668568217675,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.05320623710880638,
-    "dps_with": 381.1300451517873,
-    "dps_without": 361.8759856550421,
-    "ev_delta": 0.03581509494217423,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.01592743980464448,
-    "dps_with": 381.1300451517873,
-    "dps_without": 375.1547898195129,
-    "ev_delta": 0.020744559723843675,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03005265339708491,
-    "dps_with": 381.1300451517873,
-    "dps_without": 370.010255198927,
-    "ev_delta": 0.041611955355290615,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.013498038905190865,
-    "dps_with": 381.1300451517873,
-    "dps_without": 376.05405291508475,
-    "ev_delta": 0.007147939463316743,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.17655216091645665,
-    "dps_with": 381.1300451517873,
-    "dps_without": 323.9380775561298,
-    "ev_delta": 0.21012244107182665,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.018816144488252497,
-    "dps_with": 381.1300451517873,
-    "dps_without": 374.0910930923925,
-    "ev_delta": 0.009465140699893376,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.0858738973664976,
-    "dps_with": 381.1300451517873,
-    "dps_without": 350.9892318768489,
-    "ev_delta": 0.09941326724630689,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Reach",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.1300451517873,
-    "ev_delta": 1.1721385623514607e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Eye of the Storm",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.1300451517873,
-    "ev_delta": 8.791709049204554e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lava Burst",
-    "ranks": 1,
-    "sim_delta": 0.007983102667296163,
-    "dps_with": 381.1300451517873,
-    "dps_without": 378.1115418931645,
-    "ev_delta": 0.011612312297467849,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.025555853661340288,
-    "dps_with": 381.1300451517873,
-    "dps_without": 371.6326553947439,
-    "ev_delta": 0.029486064334579114,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.028121821822624564,
-    "dps_with": 381.1300451517873,
-    "dps_without": 370.70514122162194,
-    "ev_delta": 0.0378935398578543,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04440309297279271,
-    "dps_with": 381.1300451517873,
-    "dps_without": 364.92619345557216,
-    "ev_delta": 0.04222558899657498,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.061964876921065934,
-    "dps_with": 381.1300451517873,
-    "dps_without": 358.89138467252343,
-    "ev_delta": 0.06749554674389895,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": -6.30875264583406e-05,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.15409122060186,
-    "ev_delta": 0.003266434636461401,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-hand-2026-09-26": [
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.05117738143191335,
-    "dps_with": 366.43449159409204,
-    "dps_without": 348.5943457943655,
-    "ev_delta": 0.035780956395775027,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.016529492232358944,
-    "dps_with": 366.43449159409204,
-    "dps_without": 360.4760062488499,
-    "ev_delta": 0.02163897654596872,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03076299500694492,
-    "dps_with": 366.43449159409204,
-    "dps_without": 355.49829919109885,
-    "ev_delta": 0.04161734595881985,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.01713388523384984,
-    "dps_with": 366.43449159409204,
-    "dps_without": 360.2618071364763,
-    "ev_delta": 0.007117491007109231,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.17488046304406138,
-    "dps_with": 366.43449159409204,
-    "dps_without": 311.8908715569898,
-    "ev_delta": 0.21015406560807254,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.025356501815039557,
-    "dps_with": 366.43449159409204,
-    "dps_without": 357.37276834490865,
-    "ev_delta": 0.009420448855328669,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.06338075913302793,
-    "dps_with": 366.43449159409204,
-    "dps_without": 344.5938704898566,
-    "ev_delta": 0.07910409340676608,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Reach",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.43449159409204,
-    "ev_delta": 2.433072876305567e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Eye of the Storm",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.43449159409204,
-    "ev_delta": 6.08290419299518e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lava Burst",
-    "ranks": 1,
-    "sim_delta": 0.006455683275885571,
-    "dps_with": 366.43449159409204,
-    "dps_without": 364.08408008725655,
-    "ev_delta": 0.011613773278254833,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.027145982096406084,
-    "dps_with": 366.43449159409204,
-    "dps_without": 356.7501581870562,
-    "ev_delta": 0.029492652653957233,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mana Tide Totem",
-    "ranks": 1,
-    "sim_delta": 0.011452280416821255,
-    "dps_with": 366.43449159409204,
-    "dps_without": 362.2854964972581,
-    "ev_delta": 0.012724840518289308,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.042335138620369854,
-    "dps_with": 366.43449159409204,
-    "dps_without": 351.5515096987933,
-    "ev_delta": 0.042807637037953386,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Natural Grace",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.43449159409204,
-    "ev_delta": 2.433072876305567e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Restorative Totems",
-    "ranks": 4,
-    "sim_delta": 0.0,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.43449159409204,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.060807087943829025,
-    "dps_with": 366.43449159409204,
-    "dps_without": 345.4299049833415,
-    "ev_delta": 0.06743162821376304,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": 0.0007821903568775822,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.1480940857091,
-    "ev_delta": 0.00325461507391529,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Water Shield",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 366.43449159409204,
-    "dps_without": 366.43449159409204,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-preset-elemental-31-6-14": [
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.05342436216484817,
-    "dps_with": 375.80834283948604,
-    "dps_without": 356.74924212610586,
-    "ev_delta": 0.03581970067402475,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.015695369158822248,
-    "dps_with": 375.80834283948604,
-    "dps_without": 370.00103992865763,
-    "ev_delta": 0.02074718860401198,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.029976504642423487,
-    "dps_with": 375.80834283948604,
-    "dps_without": 364.8707918536018,
-    "ev_delta": 0.04161733650034829,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 2,
-    "sim_delta": 0.00407856807493745,
-    "dps_with": 375.80834283948604,
-    "dps_without": 374.2818090022596,
-    "ev_delta": 0.0028818980485477465,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18079699015026474,
-    "dps_with": 375.80834283948604,
-    "dps_without": 318.26668426014686,
-    "ev_delta": 0.2101540101178049,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.019712715045545136,
-    "dps_with": 375.80834283948604,
-    "dps_without": 368.5433527448961,
-    "ev_delta": 0.009583241056814634,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.08507398986663393,
-    "dps_with": 375.80834283948604,
-    "dps_without": 346.34351790671576,
-    "ev_delta": 0.09942683659668966,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Reach",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 375.80834283948604,
-    "dps_without": 375.80834283948604,
-    "ev_delta": 2.374592481618636e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 375.80834283948604,
-    "dps_without": 375.80834283948604,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lava Burst",
-    "ranks": 1,
-    "sim_delta": 0.0077582550152805055,
-    "dps_with": 375.80834283948604,
-    "dps_without": 372.9151718373051,
-    "ev_delta": 0.011613770714795286,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.0254381674424949,
-    "dps_with": 375.80834283948604,
-    "dps_without": 366.4856202658956,
-    "ev_delta": 0.029490786716393682,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.04656814724658691,
-    "dps_with": 375.80834283948604,
-    "dps_without": 359.08635651505267,
-    "ev_delta": 0.025360938793831157,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 5,
-    "sim_delta": -0.0008490231605562354,
-    "dps_with": 375.80834283948604,
-    "dps_without": 376.1276839544898,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04385369916735144,
-    "dps_with": 375.80834283948604,
-    "dps_without": 360.0201284329943,
-    "ev_delta": 0.04223105271236923,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.062225626327071085,
-    "dps_with": 375.80834283948604,
-    "dps_without": 353.79333121433325,
-    "ev_delta": 0.06767342237642084,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": -0.0005100973776666217,
-    "dps_with": 375.80834283948604,
-    "dps_without": 376.00013952465986,
-    "ev_delta": 0.0033069841207882503,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Water Shield",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 375.80834283948604,
-    "dps_without": 375.80834283948604,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-preset-stormcaller-28-23-0": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.020066316286801316,
-    "dps_with": 368.9611976730218,
-    "dps_without": 361.7031479052239,
-    "ev_delta": 0.001386596173818028,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03204719067857998,
-    "dps_with": 368.9611976730218,
-    "dps_without": 357.5041926429998,
-    "ev_delta": 0.03639197929947988,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.016127007795859277,
-    "dps_with": 368.9611976730218,
-    "dps_without": 363.10539415083275,
-    "ev_delta": 0.017162807708091966,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03764856874877651,
-    "dps_with": 368.9611976730218,
-    "dps_without": 355.5743329535208,
-    "ev_delta": 0.041503364956802735,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 1,
-    "sim_delta": 0.003554260764442039,
-    "dps_with": 368.9611976730218,
-    "dps_without": 367.6544578585828,
-    "ev_delta": 1.8462354273242944e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.1863532756297642,
-    "dps_with": 368.9611976730218,
-    "dps_without": 311.00449187630244,
-    "ev_delta": 0.20957019097823282,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Devastation",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 368.9611976730218,
-    "dps_without": 368.9611976730218,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.02851373820479096,
-    "dps_with": 368.9611976730218,
-    "dps_without": 358.73239604657243,
-    "ev_delta": 1.8462354273242944e-05,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 3,
-    "sim_delta": 0.053165477426959935,
-    "dps_with": 368.9611976730218,
-    "dps_without": 350.33544640529703,
-    "ev_delta": 0.059660419928787775,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Weapons",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 368.9611976730218,
-    "dps_without": 368.9611976730218,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Flurry",
-    "ranks": 4,
-    "sim_delta": 0.0,
-    "dps_with": 368.9611976730218,
-    "dps_without": 368.9611976730218,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.031507538939399324,
-    "dps_with": 368.9611976730218,
-    "dps_without": 357.6912273975131,
-    "ev_delta": 0.029413928510981423,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Dexterity",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 368.9611976730218,
-    "dps_without": 368.9611976730218,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09685724932901335,
-    "dps_with": 368.9611976730218,
-    "dps_without": 336.3803246946934,
-    "ev_delta": 0.09281976244367052,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 5,
-    "sim_delta": -0.0007187898407386625,
-    "dps_with": 368.9611976730218,
-    "dps_without": 369.2265939977179,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Stormstrike",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 368.9611976730218,
-    "dps_without": 368.9611976730218,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.0362661834161999,
-    "dps_with": 368.9611976730218,
-    "dps_without": 356.0486712561519,
-    "ev_delta": 0.03489038925759398,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r1": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019238623501629255,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.4262800777917,
-    "ev_delta": 0.021773536283377897,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03099255247050532,
-    "dps_with": 387.7451580503337,
-    "dps_without": 376.0891939725494,
-    "ev_delta": 0.036321236208095777,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018238435232829708,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.79996259586505,
-    "ev_delta": 0.01896175694828306,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.0380383306504698,
-    "dps_with": 387.7451580503337,
-    "dps_without": 373.53645486998494,
-    "ev_delta": 0.041513571884420154,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.012603681896082453,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.91896917092754,
-    "ev_delta": 0.007272803218580395,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Earth's Grasp",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 2.3678292982112017e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18461898746613128,
-    "dps_with": 387.7451580503337,
-    "dps_without": 327.3163457220202,
-    "ev_delta": 0.2096300498970657,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013845479137353994,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.44995517487797,
-    "ev_delta": 0.009631612940790903,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07140791974532996,
-    "dps_with": 387.7451580503337,
-    "dps_without": 361.902456482214,
-    "ev_delta": 0.07953768728006842,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Weapons",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Guardian Totems",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034114367713556755,
-    "dps_with": 387.7451580503337,
-    "dps_without": 374.9538447160776,
-    "ev_delta": 0.02941807689888368,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09204737010983963,
-    "dps_with": 387.7451580503337,
-    "dps_without": 355.06258122423185,
-    "ev_delta": 0.09280878127956985,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 4,
-    "sim_delta": 0.001699960159293635,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.024372108087660962,
-    "dps_with": 387.7451580503337,
-    "dps_without": 378.519831796467,
-    "ev_delta": 0.020377359348555186,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Stormstrike",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04021054982353117,
-    "dps_with": 387.7451580503337,
-    "dps_without": 372.75641755038305,
-    "ev_delta": 0.03861803267355594,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r2": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019238623501629255,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.4262800777917,
-    "ev_delta": 0.021774063069388956,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03099255247050532,
-    "dps_with": 387.7451580503337,
-    "dps_without": 376.0891939725494,
-    "ev_delta": 0.03632212747090122,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018238435232829708,
-    "dps_with": 387.7451580503337,
-    "dps_without": 380.79996259586505,
-    "ev_delta": 0.018962214444013192,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.0380383306504698,
-    "dps_with": 387.7451580503337,
-    "dps_without": 373.53645486998494,
-    "ev_delta": 0.041514595662561556,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.012603681896082453,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.91896917092754,
-    "ev_delta": 0.0072729766786074805,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18461898746613128,
-    "dps_with": 387.7451580503337,
-    "dps_without": 327.3163457220202,
-    "ev_delta": 0.20963605414545894,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013845479137353994,
-    "dps_with": 387.7451580503337,
-    "dps_without": 382.44995517487797,
-    "ev_delta": 0.009631843197583706,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07140791974532996,
-    "dps_with": 387.7451580503337,
-    "dps_without": 361.902456482214,
-    "ev_delta": 0.0795397203952117,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Guardian Totems",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034114367713556755,
-    "dps_with": 387.7451580503337,
-    "dps_without": 374.9538447160776,
-    "ev_delta": 0.029418793960972175,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Dexterity",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09204737010983963,
-    "dps_with": 387.7451580503337,
-    "dps_without": 355.06258122423185,
-    "ev_delta": 0.09281118279062522,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 4,
-    "sim_delta": 0.001699960159293635,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.024372108087660962,
-    "dps_with": 387.7451580503337,
-    "dps_without": 378.519831796467,
-    "ev_delta": 0.020377851681975655,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Stormstrike",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 387.7451580503337,
-    "dps_without": 387.7451580503337,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04021054982353117,
-    "dps_with": 387.7451580503337,
-    "dps_without": 372.75641755038305,
-    "ev_delta": 0.0386189823961966,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r3": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019078789347788224,
-    "dps_with": 386.33052744508257,
-    "dps_without": 379.0978003696207,
-    "ev_delta": 0.021773351914295833,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.030859365413645184,
-    "dps_with": 386.33052744508257,
-    "dps_without": 374.7655018781952,
-    "ev_delta": 0.03632092427644715,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018162895866636355,
-    "dps_with": 386.33052744508257,
-    "dps_without": 379.43881967555603,
-    "ev_delta": 0.018961596829992856,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03808763006551322,
-    "dps_with": 386.33052744508257,
-    "dps_without": 372.15598785306923,
-    "ev_delta": 0.04151321357399979,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.010979184292349505,
-    "dps_with": 386.33052744508257,
-    "dps_without": 382.1349968896744,
-    "ev_delta": 0.00727274250952566,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18054722386635624,
-    "dps_with": 386.33052744508257,
-    "dps_without": 327.2469915941432,
-    "ev_delta": 0.20962794849138286,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013820253276035475,
-    "dps_with": 386.33052744508257,
-    "dps_without": 381.0641247269454,
-    "ev_delta": 0.009631532353514284,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07113198201136106,
-    "dps_with": 386.33052744508257,
-    "dps_without": 360.67499984421613,
-    "ev_delta": 0.07953697571432314,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Warding",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 3.196569552590709e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Guardian Totems",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Ghost Wolf",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034312849130858844,
-    "dps_with": 386.33052744508257,
-    "dps_without": 373.5141913490866,
-    "ev_delta": 0.02941782593541093,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Dexterity",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09198739152042565,
-    "dps_with": 386.33052744508257,
-    "dps_without": 353.7866191908831,
-    "ev_delta": 0.09280794078006119,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 1,
-    "sim_delta": -0.0019545933315748307,
-    "dps_with": 386.33052744508257,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.023112500653294538,
-    "dps_with": 386.33052744508257,
-    "dps_without": 377.60317384295126,
-    "ev_delta": 0.02037718703747833,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.03953376535330541,
-    "dps_with": 386.33052744508257,
-    "dps_without": 371.6382673859379,
-    "ev_delta": 0.03861770028166717,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r4": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.019078789347788224,
-    "dps_with": 386.33052744508257,
-    "dps_without": 379.0978003696207,
-    "ev_delta": 0.021771376727197398,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.030859365413645184,
-    "dps_with": 386.33052744508257,
-    "dps_without": 374.7655018781952,
-    "ev_delta": 0.03631758248784017,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.018162895866636355,
-    "dps_with": 386.33052744508257,
-    "dps_without": 379.43881967555603,
-    "ev_delta": 0.01895988144656841,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03808763006551322,
-    "dps_with": 386.33052744508257,
-    "dps_without": 372.15598785306923,
-    "ev_delta": 0.04150937492190312,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.010979184292349505,
-    "dps_with": 386.33052744508257,
-    "dps_without": 382.1349968896744,
-    "ev_delta": 0.007272092118966052,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18054722386635624,
-    "dps_with": 386.33052744508257,
-    "dps_without": 327.2469915941432,
-    "ev_delta": 0.20960543607411278,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.013820253276035475,
-    "dps_with": 386.33052744508257,
-    "dps_without": 381.0641247269454,
-    "ev_delta": 0.009630669003027866,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 4,
-    "sim_delta": 0.07113198201136106,
-    "dps_with": 386.33052744508257,
-    "dps_without": 360.67499984421613,
-    "ev_delta": 0.07952935259452765,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Warding",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 3.196285742877179e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Guardian Totems",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.034312849130858844,
-    "dps_with": 386.33052744508257,
-    "dps_without": 373.5141913490866,
-    "ev_delta": 0.02941513730974672,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09198739152042565,
-    "dps_with": 386.33052744508257,
-    "dps_without": 353.7866191908831,
-    "ev_delta": 0.09279893638344526,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 1,
-    "sim_delta": -0.0019545933315748307,
-    "dps_with": 386.33052744508257,
-    "dps_without": 387.08712535904783,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.023112500653294538,
-    "dps_with": 386.33052744508257,
-    "dps_without": 377.60317384295126,
-    "ev_delta": 0.020375341030228943,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.03953376535330541,
-    "dps_with": 386.33052744508257,
-    "dps_without": 371.6382673859379,
-    "ev_delta": 0.03861413929904751,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Toughness",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 386.33052744508257,
-    "dps_without": 386.33052744508257,
-    "ev_delta": 8.879076042465469e-05,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r5": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.015267165041610145,
-    "dps_with": 374.0986956782373,
-    "dps_without": 368.47315520432994,
-    "ev_delta": 0.0013861704218869693,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.030833084854759166,
-    "dps_with": 374.0986956782373,
-    "dps_without": 362.9090889442557,
-    "ev_delta": 0.03770922734649834,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.010800667125468373,
-    "dps_with": 374.0986956782373,
-    "dps_without": 370.1013541493847,
-    "ev_delta": 0.011303632584917397,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.038097359917104605,
-    "dps_with": 374.0986956782373,
-    "dps_without": 360.36956659644164,
-    "ev_delta": 0.04119384901394503,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 3,
-    "sim_delta": 0.0034987494439199943,
-    "dps_with": 374.0986956782373,
-    "dps_without": 372.7943815431168,
-    "ev_delta": 5.4441398689350905e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.1928660963425956,
-    "dps_with": 374.0986956782373,
-    "dps_without": 313.61331906845874,
-    "ev_delta": 0.20775727660238436,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.010822360267227252,
-    "dps_with": 374.0986956782373,
-    "dps_without": 370.09341144703035,
-    "ev_delta": 1.814647428346707e-05,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Improved Ghost Wolf",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 374.0986956782373,
-    "dps_without": 374.0986956782373,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Lightning Shield",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 374.0986956782373,
-    "dps_without": 374.0986956782373,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mental Quickness",
-    "ranks": 2,
-    "sim_delta": 0.09057815505479781,
-    "dps_with": 374.0986956782373,
-    "dps_without": 343.0278645728422,
-    "ev_delta": 0.09278866091954037,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.012656014598437211,
-    "dps_with": 374.0986956782373,
-    "dps_without": 369.4232693878621,
-    "ev_delta": 0.018166908995541506,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.013549405441719137,
-    "dps_with": 374.0986956782373,
-    "dps_without": 369.09764207813805,
-    "ev_delta": 0.0051964588203585425,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.023447308173021104,
-    "dps_with": 374.0986956782373,
-    "dps_without": 365.5280469163081,
-    "ev_delta": 0.022979974541471306,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.06050006936359808,
-    "dps_with": 374.0986956782373,
-    "dps_without": 352.7568799714765,
-    "ev_delta": 0.05397588227322311,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": -1.8271352347418483e-05,
-    "dps_with": 374.0986956782373,
-    "dps_without": 374.105531092211,
-    "ev_delta": 9.073895778605839e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Toughness",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 374.0986956782373,
-    "dps_without": 374.0986956782373,
-    "ev_delta": 9.073895778605839e-05,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r6": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 5,
-    "sim_delta": 0.014486823883757419,
-    "dps_with": 381.7869365885194,
-    "dps_without": 376.33503718355394,
-    "ev_delta": 0.021512788755902523,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.03101404247573915,
-    "dps_with": 381.7869365885194,
-    "dps_without": 370.3023633623334,
-    "ev_delta": 0.036249982507736665,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.01911274278856047,
-    "dps_with": 381.7869365885194,
-    "dps_without": 374.6267910887366,
-    "ev_delta": 0.020699559408656826,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.0380303777205942,
-    "dps_with": 381.7869365885194,
-    "dps_without": 367.79938697640375,
-    "ev_delta": 0.041519846988770766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.009774220264628469,
-    "dps_with": 381.7869365885194,
-    "dps_without": 378.0913880812541,
-    "ev_delta": 0.0071568719671584674,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.18356898163035545,
-    "dps_with": 381.7869365885194,
-    "dps_without": 322.5726109031781,
-    "ev_delta": 0.2096668528458932,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.01290289390611915,
-    "dps_with": 381.7869365885194,
-    "dps_without": 376.92353224129033,
-    "ev_delta": 0.009475912509700792,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.08858417859617297,
-    "dps_with": 381.7869365885194,
-    "dps_without": 350.71879979081444,
-    "ev_delta": 0.09940142516630848,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Warding",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 381.7869365885194,
-    "dps_without": 381.7869365885194,
-    "ev_delta": 3.202489674318473e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.03407243912239504,
-    "dps_with": 381.7869365885194,
-    "dps_without": 369.20714849777585,
-    "ev_delta": 0.02942259988001238,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 1,
-    "sim_delta": -0.0020585258331138863,
-    "dps_with": 381.7869365885194,
-    "dps_without": 382.5744760305182,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Shamanistic Focus",
-    "ranks": 1,
-    "sim_delta": 0.025509982612337022,
-    "dps_with": 381.7869365885194,
-    "dps_without": 372.28982951094525,
-    "ev_delta": 0.0368144330172503,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04359025895815586,
-    "dps_with": 381.7869365885194,
-    "dps_without": 365.83988142019217,
-    "ev_delta": 0.042231951836059205,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.05968499183822969,
-    "dps_with": 381.7869365885194,
-    "dps_without": 360.2834234032471,
-    "ev_delta": 0.06751764161236332,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": 0.00173515603986881,
-    "dps_with": 381.7869365885194,
-    "dps_without": 381.1256241598097,
-    "ev_delta": 0.0032710175724185286,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-r7": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 2,
-    "sim_delta": 0.0060411443154558785,
-    "dps_with": 380.4291706139796,
-    "dps_without": 378.14474364548613,
-    "ev_delta": 0.008494250939726623,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.053404206840309276,
-    "dps_with": 380.4291706139796,
-    "dps_without": 361.1426346540599,
-    "ev_delta": 0.03581761714950066,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.01568687777699227,
-    "dps_with": 380.4291706139796,
-    "dps_without": 374.55359416143597,
-    "ev_delta": 0.020745999361809618,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.02998353919172467,
-    "dps_with": 380.4291706139796,
-    "dps_without": 369.3546121256654,
-    "ev_delta": 0.04161490219620757,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.013335920952385746,
-    "dps_with": 380.4291706139796,
-    "dps_without": 375.4225649638794,
-    "ev_delta": 0.0071484289103814535,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.17565778016293265,
-    "dps_with": 380.4291706139796,
-    "dps_without": 323.5883579669387,
-    "ev_delta": 0.21013972885629661,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.019075465966521512,
-    "dps_with": 380.4291706139796,
-    "dps_without": 373.3081438214875,
-    "ev_delta": 0.0094657903059462,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.08542882694351943,
-    "dps_with": 380.4291706139796,
-    "dps_without": 350.48743977551953,
-    "ev_delta": 0.09942069811588738,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Warding",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 380.4291706139796,
-    "dps_without": 380.4291706139796,
-    "ev_delta": 3.1650523593463654e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lava Burst",
-    "ranks": 1,
-    "sim_delta": 0.0064649908304033514,
-    "dps_with": 380.4291706139796,
-    "dps_without": 377.98549783644154,
-    "ev_delta": 0.011613110962259377,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.024998489015265836,
-    "dps_with": 380.4291706139796,
-    "dps_without": 371.1509574804004,
-    "ev_delta": 0.029488128143733257,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.02779276827633671,
-    "dps_with": 380.4291706139796,
-    "dps_without": 370.1419024887474,
-    "ev_delta": 0.03789621379064914,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Reverberation",
-    "ranks": 1,
-    "sim_delta": -0.0018389380389272774,
-    "dps_with": 380.4291706139796,
-    "dps_without": 381.1300451517873,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.043984919652638,
-    "dps_with": 380.4291706139796,
-    "dps_without": 364.4010209846313,
-    "ev_delta": 0.04222858105505598,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.06149149981391542,
-    "dps_with": 380.4291706139796,
-    "dps_without": 358.3911606269769,
-    "ev_delta": 0.067500445373105,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": 0.0016477527763343945,
-    "dps_with": 380.4291706139796,
-    "dps_without": 379.8033485918762,
-    "ev_delta": 0.003266657439820534,
-    "apl_dependent": false
-   }
-  ],
-  "cand-elemental-dps-spec-elemental": [
-   {
-    "talent": "Ancestral Knowledge",
-    "ranks": 2,
-    "sim_delta": 0.007626393519490419,
-    "dps_with": 381.1300451517873,
-    "dps_without": 378.2453969080308,
-    "ev_delta": 0.008494250939726623,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Flame",
-    "ranks": 3,
-    "sim_delta": 0.05320623710880638,
-    "dps_with": 381.1300451517873,
-    "dps_without": 361.8759856550421,
-    "ev_delta": 0.03581761714950066,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Call of Thunder",
-    "ranks": 1,
-    "sim_delta": 0.01592743980464448,
-    "dps_with": 381.1300451517873,
-    "dps_without": 375.1547898195129,
-    "ev_delta": 0.020745999361809618,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Concussion",
-    "ranks": 5,
-    "sim_delta": 0.03005265339708491,
-    "dps_with": 381.1300451517873,
-    "dps_without": 370.010255198927,
-    "ev_delta": 0.04161490219620757,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Convection",
-    "ranks": 5,
-    "sim_delta": 0.013498038905190865,
-    "dps_with": 381.1300451517873,
-    "dps_without": 376.05405291508475,
-    "ev_delta": 0.0071484289103814535,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Alacrity",
-    "ranks": 3,
-    "sim_delta": 0.17655216091645665,
-    "dps_with": 381.1300451517873,
-    "dps_without": 323.9380775561298,
-    "ev_delta": 0.21013972885629661,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Devastation",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.1300451517873,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Focus",
-    "ranks": 1,
-    "sim_delta": 0.018816144488252497,
-    "dps_with": 381.1300451517873,
-    "dps_without": 374.0910930923925,
-    "ev_delta": 0.0094657903059462,
-    "apl_dependent": true
-   },
-   {
-    "talent": "Elemental Fury",
-    "ranks": 5,
-    "sim_delta": 0.0858738973664976,
-    "dps_with": 381.1300451517873,
-    "dps_without": 350.9892318768489,
-    "ev_delta": 0.09942069811588738,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Elemental Warding",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.1300451517873,
-    "ev_delta": 3.1650523593463654e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lava Burst",
-    "ranks": 1,
-    "sim_delta": 0.007983102667296163,
-    "dps_with": 381.1300451517873,
-    "dps_without": 378.1115418931645,
-    "ev_delta": 0.011613110962259377,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lightning Overload",
-    "ranks": 3,
-    "sim_delta": 0.025555853661340288,
-    "dps_with": 381.1300451517873,
-    "dps_without": 371.6326553947439,
-    "ev_delta": 0.029488128143733257,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mindfulness",
-    "ranks": 3,
-    "sim_delta": 0.028121821822624564,
-    "dps_with": 381.1300451517873,
-    "dps_without": 370.70514122162194,
-    "ev_delta": 0.03789621379064914,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Thundering Strikes",
-    "ranks": 5,
-    "sim_delta": 0.04440309297279271,
-    "dps_with": 381.1300451517873,
-    "dps_without": 364.92619345557216,
-    "ev_delta": 0.04222858105505598,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Tidal Focus",
-    "ranks": 5,
-    "sim_delta": 0.061964876921065934,
-    "dps_with": 381.1300451517873,
-    "dps_without": 358.89138467252343,
-    "ev_delta": 0.067500445373105,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Totemic Focus",
-    "ranks": 5,
-    "sim_delta": -6.30875264583406e-05,
-    "dps_with": 381.1300451517873,
-    "dps_without": 381.15409122060186,
-    "ev_delta": 0.003266657439820534,
-    "apl_dependent": false
-   }
-  ]
- }
+ "deltas": {}
 }

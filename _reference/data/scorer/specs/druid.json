@@ -181,7 +181,7 @@
           "profiles": ["raid-dps", "raid-dps-extwc"],
           "loss": 0.755,
           "cap": 0.26,
-          "rms": 0.0213,
+          "rms": 0.0227,
           "points": 29,
           "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 5-22% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
