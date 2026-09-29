@@ -7,14 +7,15 @@
 | `opt-sb-raid-raid-dps` | 22/11/18 | 566 | 35 | +0.0% | 509 | 1 | +91.6% |
 | `cand-sb-raid-r6` | 22/11/18 | 566 | 35 | +0.0% | 509 | 1 | +91.6% |
 | `cand-sb-raid-r7` | 22/11/18 | 566 | 35 | +0.0% | 509 | 1 | +91.6% |
+| `cand-sb-raid-r8` | 22/11/18 | 566 | 35 | +0.0% | 509 | 1 | +91.6% |
 | `ds-ruin-raid` | 22/11/18 | 566 | 34 | -0.1% | 507 | 1 | +90.4% |
 | `cand-sb-raid-r4` | 22/11/18 | 566 | 34 | -0.1% | 507 | 1 | +90.4% |
 | `cand-sb-raid-r5` | 22/11/18 | 563 | 30 | -0.5% | 502 | 1 | +89.5% |
-| `cand-sb-raid-r2` | 22/11/18 | 562 | 35 | -0.8% | 505 | 1 | +88.9% |
+| `cand-sb-raid-r2` | 22/11/18 | 562 | 35 | -0.8% | 505 | 1 | +89.0% |
 | `cand-sb-raid-r3` | 22/11/18 | 560 | 34 | -1.0% | 502 | 2 | +87.8% |
 | sim preset: DS/Ruin Pandemic 24/11/16 | - | 540 | 33 | -4.6% | 488 | 1 | - |
 | sim preset: DS/Ruin | - | 533 | 32 | -5.9% | 524 | 1 | - |
-| `cand-sb-raid-hand-2026-09-26` | 7/11/33 | 512 | 30 | -9.6% | 458 | 1 | +70.8% |
+| `cand-sb-raid-hand-2026-09-26` | 7/11/33 | 512 | 30 | -9.6% | 458 | 1 | +70.9% |
 | sim preset: Shadow and Flame 13/11/27 | - | 509 | 29 | -10.0% | 458 | 1 | - |
 | `cand-sb-raid-r1` | 2/31/18 | 478 | 30 | -15.6% | 489 | 1 | +37.6% |
 | sim preset: Deep Affliction 35/0/16 | - | 471 | 28 | -16.9% | 426 | 1 | - |
@@ -37,10 +38,11 @@ Mapped onto the spec model's sources: `shadow_bolt` 52%, `agony` 19%, `corruptio
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- opt-sb-raid-raid-dps: `25500010135-0005203001-0550005003`
+- opt-sb-raid-raid-dps: `25500010135-0050203001-0550005003`
 - cand-sb-raid-r6: `25500010135-2300203001-0550005003`
 - cand-sb-raid-r7: `25500010135-0005203001-0550005003`
-- ds-ruin-raid: `15500020135-2050003001-0550005003`
+- cand-sb-raid-r8: `25500010135-0050203001-0550005003`
+- ds-ruin-raid: `15500020135-0050203001-0550005003`
 - cand-sb-raid-r4: `15500020135-2300203001-0550005003`
 - cand-sb-raid-r5: `25500020134-0005203001-0550302003`
 - cand-sb-raid-r2: `25500000035101-0250003001-0550005003`

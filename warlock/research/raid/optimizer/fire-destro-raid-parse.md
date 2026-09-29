@@ -28,23 +28,23 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Improved Life Tap | Affliction | 1 | +0.24% | manual |
 | Nightfall | Affliction | 4 | +0.22% | manual |
 | Fel Vitality | Demonology | 2 | +0.13% | manual |
-| Cataclysm | Destruction | 2 | +0.09% | manual |
+| Cataclysm | Destruction | 2 | +0.10% | manual |
 | Decimation | Demonology | 4 | +0.09% | manual |
+| Fel Concentration | Affliction | 3 | +0.01% | manual |
+| Intensity | Destruction | 4 | +0.01% | manual |
+| Demonic Brand | Demonology | 4 | +0.00% | manual |
 | Molten Skin | Destruction | 2 | +0.00% | manual |
-| Demonic Aegis | Demonology | 2 | +0.00% | manual |
 | Soul Harvesting | Affliction | 2 | +0.00% | manual |
+| Master Summoner | Demonology | 3 | +0.00% | manual |
+| Demonic Aegis | Demonology | 2 | +0.00% | manual |
+| Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
-| Fel Concentration | Affliction | 3 | +0.00% | manual |
-| Curse of Exhaustion | Affliction | 4 | +0.00% | manual |
-| Siphon Life | Affliction | 5 | +0.00% | manual |
-| Soul Siphon | Affliction | 5 | +0.00% | manual |
-| Improved Health Funnel | Demonology | 1 | +0.00% | manual |
 
-## Optimized build: 21/11/19  score +77.12%  (dps x1.767, sustain x1.020, surv x1.020, utility +0.00%)
+## Optimized build: 21/11/19  score +77.15%  (dps x1.767, sustain x1.020, surv x1.020, utility +0.00%)
 
 ```
   Affliction: Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Amplify Curse 1, Pandemic 3, Malevolence 5
-  Demonology: Improved Health Funnel 2, Improved Imp 3, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
+  Demonology: Demonic Embrace 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
   Destruction: Bane 5, Improved Shadow Bolt 5, Ruin 5, Shadowburn 1, Agonizing Flames 3
 ```
 
@@ -59,12 +59,12 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Nightfall | Affliction 4 | 1/2 | +0.40% | yes |
 | Improved Life Tap | Affliction 1 | 1/2 | +0.24% | yes |
 | Decimation | Demonology 4 | 1/2 | +0.16% | no |
-| Cataclysm | Destruction 2 | 1/3 | +0.09% | yes |
-| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
-| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
-| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |
+| Cataclysm | Destruction 2 | 1/3 | +0.10% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
-| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |
-| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |
-| Soul Siphon | Affliction 5 | 1/3 | +0.00% | yes |
+| Intensity | Destruction 4 | 1/3 | +0.00% | yes |
+| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
+| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
+| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |
+| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
+| Destructive Reach | Destruction 1 | 1/2 | +0.00% | yes |
 

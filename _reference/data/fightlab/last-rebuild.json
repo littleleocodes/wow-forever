@@ -1451,7 +1451,7 @@
    "spec": "affliction-leveling",
    "hand": "leveling-affliction",
    "opt": "opt-affliction-leveling-leveling-st",
-   "started": "2026-09-29T13:44:21",
+   "started": "2026-09-29T22:15:18",
    "steps": [
     "raid",
     "adopt"
@@ -1651,7 +1651,23 @@
      "rounds": [
       {
        "round": 1,
-       "new_build": false
+       "new_build": true,
+       "quick_race": {
+        "opt-fire-destro-raid-raid-dps": 546.1,
+        "cand-fire-destro-raid-r9": 546.1,
+        "cand-fire-destro-raid-r8": 544.1,
+        "cand-fire-destro-raid-r7": 533.4,
+        "cand-fire-destro-raid-hand-2026-09-28": 532.5,
+        "cand-fire-destro-raid-r6": 532.5,
+        "cand-fire-destro-raid-r5": 528.6,
+        "cand-fire-destro-raid-hand-2026-09-27": 523.7,
+        "cand-fire-destro-raid-r4": 523.7,
+        "cand-fire-destro-raid-r3": 520.8,
+        "cand-fire-destro-raid-r2": 512.1,
+        "cand-fire-destro-raid-hand-2026-09-26": 474.3,
+        "cand-fire-destro-raid-r1": 452.7
+       },
+       "converged_by_noise": true
       }
      ],
      "top": [
@@ -1664,12 +1680,12 @@
        545.9
       ],
       [
-       "cand-fire-destro-raid-r9",
+       "cand-fire-destro-raid-r10",
        545.9
       ],
       [
-       "cand-fire-destro-raid-r8",
-       543.5
+       "cand-fire-destro-raid-r9",
+       545.9
       ]
      ],
      "promoted": null,
@@ -1845,11 +1861,13 @@
        "quick_race": {
         "opt-sb-raid-raid-dps": 566.3,
         "cand-sb-raid-r6": 566.3,
+        "cand-sb-raid-r7": 566.3,
         "cand-sb-raid-r4": 565.3,
         "cand-sb-raid-r5": 563.0,
         "cand-sb-raid-r2": 561.1,
         "cand-sb-raid-r3": 559.6,
         "cand-sb-raid-preset-ds-ruin-pandemic-24-11-16": 539.4,
+        "cand-sb-raid-preset-ds-ruin": 533.0,
         "cand-sb-raid-hand-2026-09-26": 511.2,
         "cand-sb-raid-r1": 478.0
        },
@@ -1870,8 +1888,8 @@
        566.1
       ],
       [
-       "ds-ruin-raid",
-       565.5
+       "cand-sb-raid-r8",
+       566.1
       ]
      ],
      "promoted": null,
@@ -2040,7 +2058,7 @@
      }
     }
    },
-   "seconds": 618,
+   "seconds": 331,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --preset-candidates",
@@ -2054,7 +2072,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec affliction-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 65,
+     "seconds": 30,
      "tail": [
       "Destructive Reach               0.0%      0.0%     0.0%   1.00   noise",
       "Fel Concentration               0.0%      0.0%     0.0%   1.00   noise",
@@ -2067,23 +2085,23 @@
       "Improved Felhunter              0.0%      0.0%     0.0%   1.00   noise",
       "Soul Siphon                     0.0%      0.0%     0.0%   1.00   noise",
       "Bane of Havoc                   0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/warlock.manual.json (22 entries, 2 fitted) and warlock/research/raid/raidsim/affliction-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/warlock.manual.json (21 entries, 1 fitted) and warlock/research/raid/raidsim/affliction-raid-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec affliction-raid --profile raid-dps --write --export --seed affliction-dot-raid",
      "rc": 0,
-     "seconds": 35,
+     "seconds": 29,
      "tail": [
       "| Wrack | Affliction 7 | 1/1 | +0.63% | no |",
-      "| Cataclysm | Destruction 2 | 1/3 | +0.30% | yes |",
+      "| Cataclysm | Destruction 2 | 1/3 | +0.31% | yes |",
       "| Unholy Power | Demonology 1 | 1/5 | +0.15% | yes |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Demonic Aegis | Demonology 2 | 1/2 | +0.00% | no |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-affliction-raid-raid-dps -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2094,7 +2112,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --builds affliction-dot-raid opt-affliction-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r7.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r8.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 11,
+     "seconds": 5,
      "tail": [
       "  cand-affliction-raid-hand-2026-09-26        31/0/20  DPS    529.2 ±  28.6  threat      448  oom   1.2s  scorer +44.6%",
       "  sim preset: Demonic Pact                             DPS    527.6 ±  30.4  threat      539  oom   0.3s",
@@ -2114,16 +2132,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec affliction-raid --profile parse --write --export --seed affliction-dot-raid",
      "rc": 0,
-     "seconds": 41,
+     "seconds": 31,
      "tail": [
-      "| Unholy Power | Demonology 1 | 1/5 | +0.13% | yes |",
       "| Fel Vitality | Demonology 2 | 1/3 | +0.13% | no |",
-      "| Cataclysm | Destruction 2 | 1/3 | +0.03% | yes |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Demonic Aegis | Demonology 2 | 1/2 | +0.00% | no |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
+      "| Unholy Power | Demonology 1 | 1/5 | +0.13% | yes |",
+      "| Cataclysm | Destruction 2 | 1/3 | +0.04% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-affliction-raid-parse -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2134,7 +2152,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec affliction-raid --env environments --builds affliction-dot-raid opt-affliction-raid-raid-dps opt-affliction-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 82,
+     "seconds": 37,
      "tail": [
       "== warlock affliction-raid environments (gear raid mc.gear.json, max mc.gear.json):",
       "  affliction-dot-raid                         30/0/21  dummy   567.0  dummy60   672.1  ladder-mana   593.5  ladder-armor   610.9  ladder-physical   633.2  ladder-spell   640.5  raid   686.6  curve60   617.6  curve120   571.0  curve180   567.0  curve240   555.6  curve360   549.0  max   686.6  max60   722.9",
@@ -2156,43 +2174,43 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warlock fire-destro-raid: cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json"
+      "warlock fire-destro-raid: no preset within 6% of the best build"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec fire-destro-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 58,
+     "seconds": 21,
      "tail": [
       "Fire and Brimstone              0.0%      0.2%     0.2%   1.00   noise",
       "Incinerate                      0.0%      0.0%     0.0%   1.00   noise",
       "Shadow and Flame                0.0%      0.0%     0.0%   1.00   noise",
       "Siphon Life                     0.0%      0.0%     0.0%   1.00   noise",
-      "Unholy Power                    0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Brand                   0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Knowledge               0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Pact                    0.0%      0.0%     0.0%   1.00   noise",
       "Improved Felhunter              0.0%      0.0%     0.0%   1.00   noise",
       "Master Demonologist             0.0%      0.0%     0.0%   1.00   noise",
       "Soul Link                       0.0%    -13.6%   -13.6%   1.00   noise",
+      "Unholy Power                    0.0%      0.0%     0.0%   1.00   noise",
       "wrote _reference/data/scorer/effects/forever/warlock.manual.json (19 entries, 1 fitted) and warlock/research/raid/raidsim/fire-destro-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec fire-destro-raid --profile raid-dps --write --export --seed destruction-fire-raid /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec fire-destro-raid --profile raid-dps --write --export --seed destruction-fire-raid",
      "rc": 0,
-     "seconds": 57,
+     "seconds": 33,
      "tail": [
       "| Nightfall | Affliction 4 | 1/2 | +0.42% | yes |",
-      "| Decimation | Demonology 4 | 1/2 | +0.16% | no |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
+      "| Decimation | Demonology 4 | 1/2 | +0.17% | no |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
-      "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
-      "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
+      "| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-fire-destro-raid-raid-dps -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2201,9 +2219,29 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --builds destruction-fire-raid opt-fire-destro-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-28.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r7.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r8.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r9.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --builds opt-fire-destro-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-28.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r7.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r8.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r9.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 7,
+     "seconds": 1,
+     "tail": [
+      "  cand-fire-destro-raid-r8                   20/11/20  DPS    544.1 ±  33.8  threat      487  oom   2.3s  scorer +82.4%",
+      "  cand-fire-destro-raid-r7                   19/11/21  DPS    533.4 ±  30.4  threat      478  oom   2.3s  scorer +78.0%",
+      "  cand-fire-destro-raid-hand-2026-09-28      19/11/21  DPS    532.5 ±  30.7  threat      478  oom   2.6s  scorer +77.7%",
+      "  cand-fire-destro-raid-r6                   19/11/21  DPS    532.5 ±  30.7  threat      478  oom   2.6s  scorer +77.7%",
+      "  cand-fire-destro-raid-r5                   21/11/19  DPS    528.6 ±  28.9  threat      478  oom   3.4s  scorer +76.0%",
+      "  cand-fire-destro-raid-hand-2026-09-27      21/11/19  DPS    523.7 ±  28.8  threat      474  oom   3.4s  scorer +74.7%",
+      "  cand-fire-destro-raid-r4                   21/11/19  DPS    523.7 ±  28.8  threat      474  oom   3.4s  scorer +74.7%",
+      "  cand-fire-destro-raid-r3                   21/11/19  DPS    520.8 ±  26.8  threat      469  oom   2.8s  scorer +74.0%",
+      "  cand-fire-destro-raid-r2                   21/11/19  DPS    512.1 ±  22.7  threat      462  oom   2.8s  scorer +71.4%",
+      "  cand-fire-destro-raid-hand-2026-09-26       5/11/35  DPS    474.3 ±  22.7  threat      427  oom   2.6s  scorer +57.8%",
+      "  cand-fire-destro-raid-r1                    12/31/8  DPS    452.7 ±  18.1  threat      413  oom   2.3s  scorer +30.7%",
+      "  damage shares of opt-fire-destro-raid-raid-dps: Shadow Bolt 50%, Bane of Agony 20%, Corruption 19%, Immolate 11%, Shadowburn 1%, Searing Pain 0% | model sources: filler 50%, agony 20%, corruption 19%, immolate 11%, searing_pain 0% (unmatched 1%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --builds destruction-fire-raid opt-fire-destro-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-27.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-hand-2026-09-28.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r10.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r7.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r8.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-fire-destro-raid-r9.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 3,
      "tail": [
       "  cand-fire-destro-raid-r3                   21/11/19  DPS    520.6 ±  27.2  threat      469  oom   2.8s  scorer +74.0%",
       "  sim preset: DS/Ruin                                  DPS    513.7 ±  30.8  threat      507  oom   2.6s",
@@ -2223,16 +2261,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec fire-destro-raid --profile parse --write --export --seed destruction-fire-raid",
      "rc": 0,
-     "seconds": 34,
+     "seconds": 24,
      "tail": [
-      "| Cataclysm | Destruction 2 | 1/3 | +0.09% | yes |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
+      "| Cataclysm | Destruction 2 | 1/3 | +0.10% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
-      "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
-      "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
-      "| Soul Siphon | Affliction 5 | 1/3 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
+      "| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
+      "| Destructive Reach | Destruction 1 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-fire-destro-raid-parse -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2243,7 +2281,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec fire-destro-raid --env environments --builds destruction-fire-raid opt-fire-destro-raid-raid-dps opt-fire-destro-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 40,
+     "seconds": 20,
      "tail": [
       "== warlock fire-destro-raid environments (gear raid mc.gear.json, max mc.gear.json):",
       "  destruction-fire-raid                      22/11/18  dummy   545.9  dummy60   643.4  ladder-mana   573.5  ladder-armor   573.5  ladder-physical   592.0  ladder-spell   597.2  raid   646.9  curve60   613.1  curve120   559.1  curve180   545.9  curve240   534.5  curve360   523.3  max   646.9  max60   686.3",
@@ -2265,19 +2303,18 @@
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "warlock sb-raid: cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json"
+      "warlock sb-raid: cand-sb-raid-preset-ds-ruin.json, cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py warlock --spec sb-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 40,
+     "seconds": 18,
      "tail": [
-      "Intensity                       0.0%      0.0%     0.0%   1.00   noise",
       "Shadow and Flame                0.0%      0.0%     0.0%   1.00   noise",
       "Siphon Life                     0.0%      0.0%     0.0%   1.00   noise",
-      "Unholy Power                    0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Imp                    0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Brand                   0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Knowledge               0.0%      0.0%     0.0%   1.00   noise",
       "Demonic Pact                    0.0%      0.0%     0.0%   1.00   noise",
@@ -2285,23 +2322,24 @@
       "Improved Sayaad                 0.0%      0.0%     0.0%   1.00   noise",
       "Master Demonologist             0.0%      0.0%     0.0%   1.00   noise",
       "Soul Link                       0.0%    -13.7%   -13.7%   1.00   noise",
+      "Improved Health Funnel          0.0%      0.0%     0.0%   1.00   noise",
       "wrote _reference/data/scorer/effects/forever/warlock.manual.json (18 entries, 1 fitted) and warlock/research/raid/raidsim/sb-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec sb-raid --profile raid-dps --write --export --seed ds-ruin-raid /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec sb-raid --profile raid-dps --write --export --seed ds-ruin-raid /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin.json",
      "rc": 0,
-     "seconds": 63,
+     "seconds": 36,
      "tail": [
       "| Malediction | Affliction 2 | 1/5 | +0.75% | yes |",
       "| Nightfall | Affliction 4 | 1/2 | +0.25% | yes |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
-      "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
-      "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
       "",
       "exported opt-sb-raid-raid-dps -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2310,33 +2348,34 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --builds opt-sb-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r6.json --iterations 1000 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --builds opt-sb-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r7.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 2,
+     "seconds": 1,
      "tail": [
-      "== warlock sb-raid: 9 builds x 1000 iterations, warlock/dps mc.gear.json + ds_ruin.apl.json",
       "  opt-sb-raid-raid-dps                       22/11/18  DPS    566.3 ±  34.4  threat      509  oom   1.1s  scorer +91.6%",
       "  cand-sb-raid-r6                            22/11/18  DPS    566.3 ±  34.4  threat      509  oom   1.1s  scorer +91.6%",
+      "  cand-sb-raid-r7                            22/11/18  DPS    566.3 ±  34.4  threat      509  oom   1.1s  scorer +91.6%",
       "  cand-sb-raid-r4                            22/11/18  DPS    565.3 ±  34.9  threat      507  oom   1.1s  scorer +90.4%",
       "  cand-sb-raid-r5                            22/11/18  DPS    563.0 ±  30.4  threat      502  oom   0.8s  scorer +89.5%",
-      "  cand-sb-raid-r2                            22/11/18  DPS    561.1 ±  35.4  threat      505  oom   1.3s  scorer +88.9%",
+      "  cand-sb-raid-r2                            22/11/18  DPS    561.1 ±  35.4  threat      505  oom   1.3s  scorer +89.0%",
       "  cand-sb-raid-r3                            22/11/18  DPS    559.6 ±  34.5  threat      501  oom   1.9s  scorer +87.8%",
       "  cand-sb-raid-preset-ds-ruin-pandemic-24-11-16 24/11/16  DPS    539.4 ±  32.9  threat      487  oom   1.2s  scorer +77.2%",
-      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    511.2 ±  29.6  threat      458  oom   0.5s  scorer +70.8%",
+      "  cand-sb-raid-preset-ds-ruin                24/11/16  DPS    533.0 ±  32.4  threat      524  oom   0.7s  scorer +74.9%",
+      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    511.2 ±  29.6  threat      458  oom   0.5s  scorer +70.9%",
       "  cand-sb-raid-r1                             2/31/18  DPS    478.0 ±  29.6  threat      489  oom   0.7s  scorer +37.6%",
       "  damage shares of opt-sb-raid-raid-dps: Shadow Bolt 51%, Bane of Agony 19%, Corruption 19%, Immolate 10%, Searing Pain 1% | model sources: shadow_bolt 52%, agony 19%, corruption 19%, immolate 10% (unmatched 1%)"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --builds ds-ruin-raid opt-sb-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r7.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --builds ds-ruin-raid opt-sb-raid-raid-dps /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-hand-2026-09-26.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin-pandemic-24-11-16.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-preset-ds-ruin.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r1.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r2.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r3.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r4.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r5.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r6.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r7.json /home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-sb-raid-r8.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 7,
+     "seconds": 2,
      "tail": [
       "  cand-sb-raid-r3                            22/11/18  DPS    560.3 ±  34.0  threat      502  oom   1.8s  scorer +87.8%",
       "  sim preset: DS/Ruin Pandemic 24/11/16                DPS    540.2 ±  32.8  threat      488  oom   1.1s",
       "  sim preset: DS/Ruin                                  DPS    532.8 ±  32.3  threat      524  oom   0.7s",
-      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    511.5 ±  29.7  threat      458  oom   0.5s  scorer +70.8%",
+      "  cand-sb-raid-hand-2026-09-26                7/11/33  DPS    511.5 ±  29.7  threat      458  oom   0.5s  scorer +70.9%",
       "  sim preset: Shadow and Flame 13/11/27                DPS    509.5 ±  28.6  threat      458  oom   1.1s",
       "  cand-sb-raid-r1                             2/31/18  DPS    477.8 ±  30.0  threat      489  oom   0.7s  scorer +37.6%",
       "  sim preset: Deep Affliction 35/0/16                  DPS    470.7 ±  27.7  threat      426  oom   1.4s",
@@ -2351,16 +2390,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py warlock --spec sb-raid --profile parse --write --export --seed ds-ruin-raid",
      "rc": 0,
-     "seconds": 31,
+     "seconds": 22,
      "tail": [
       "| Cataclysm | Destruction 2 | 1/3 | +0.08% | yes |",
-      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
-      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
-      "| Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |",
       "| Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |",
-      "| Curse of Exhaustion | Affliction 4 | 1/1 | +0.00% | yes |",
-      "| Siphon Life | Affliction 5 | 1/1 | +0.00% | yes |",
-      "| Soul Siphon | Affliction 5 | 1/3 | +0.00% | yes |",
+      "| Intensity | Destruction 4 | 1/3 | +0.00% | yes |",
+      "| Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |",
+      "| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |",
+      "| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |",
+      "| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |",
+      "| Destructive Reach | Destruction 1 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-sb-raid-parse -> warlock/research/talents/forever/proposed-builds.json",
       "",
@@ -2371,7 +2410,7 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py warlock --spec sb-raid --env environments --builds ds-ruin-raid opt-sb-raid-raid-dps opt-sb-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 45,
+     "seconds": 20,
      "tail": [
       "== warlock sb-raid environments (gear raid mc.gear.json, max mc.gear.json):",
       "  opt-sb-raid-raid-dps                       22/11/18  dummy   566.1  dummy60   666.4  ladder-mana   594.7  ladder-armor   594.7  ladder-physical   615.1  ladder-spell   620.9  raid   675.2  curve60   628.2  curve120   574.2  curve180   566.1  curve240   551.5  curve360   543.4  max   675.2  max60   705.0",
@@ -7350,9 +7389,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T21:25:30",
+  "date": "2026-09-29T22:20:50",
   "classes": [
-   "mage"
+   "warlock"
   ],
   "steps": [
    "raid",
@@ -7364,7 +7403,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 239,
+  "seconds": 332,
   "refresh": null,
   "regen_log": []
  }
