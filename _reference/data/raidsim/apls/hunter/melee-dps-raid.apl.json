@@ -19,6 +19,15 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1299447
+     }
+    }
+   }
+  },
+  {
+   "action": {
     "autocastOtherCooldowns": {}
    }
   },

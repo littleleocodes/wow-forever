@@ -313,14 +313,15 @@ def neighbors(apl, pool, N):
             with_list(new, f"show the hidden: {text(new_it, N)}")
     # insert an action from the class's other rotations
     have = {key(x) for x in lst}
-    spots = sorted({vis[0] if vis else 0, vis[len(vis) // 2] if vis else 0, vis[-1] if vis else 0})
+    # top, middle, before the filler and (2026-09-29) after everything: a spell used only when nothing else is ready (the traps won there)
+    spots = sorted({vis[0] if vis else 0, vis[len(vis) // 2] if vis else 0, vis[-1] if vis else 0, len(lst)})
     for cand in pool:
         if key(cand) in have:
             continue
         for s in spots:
             new = list(lst)
             new.insert(s, copy.deepcopy(cand))
-            where = "at the top" if s == (vis[0] if vis else 0) else ("before the filler" if vis and s == vis[-1] else "in the middle")
+            where = "at the top" if s == (vis[0] if vis else 0) else ("before the filler" if vis and s == vis[-1] else ("at the end" if s == len(lst) else "in the middle"))
             with_list(new, f"insert {where}: {text(cand, N)}")
     seen, uniq = set(), []
     for d, a in out:
@@ -350,10 +351,12 @@ NOT_COMBAT = ("Teleport", "Revive", "Call of the", "Totemic Recall", "Totemic Pr
 
 
 def new_spell_pool(cls):
-    """Casts of the class's new Forever spells, the top rank of each (the beta spellbook marks a rank "new" against Classic Era;
-    pet abilities and travel or utility spells left out). The simulator's rotations never cast some of them (Shadow Word: Death,
-    Primal Bite, Wrack, Sniper Shot, Swift Judgement, Venom...), so without these the search could not try them (2026-09-28). A
-    spell the simulator does not know is dropped from the rotation by its validator, so such a candidate changes nothing."""
+    """Casts of the class's spellbook, the top rank of each: every spell that could deal damage or raise it (2026-09-29, user request
+    "make sure we are not missing a spell in a rotation"; until then only the spells the beta spellbook marks new against Classic Era,
+    which left Arcane Shot and the hunter's traps untried). Pet abilities, travel, utility and crowd control are left out
+    (NOT_COMBAT_SPELLS, and a tooltip must speak of damage, attack power, speed, crit, spell power, armor or mana). A spell with a
+    duration ("over N sec") also comes guarded by "only while its dot is not ticking", so a bleed or a dot is not re-cast on every
+    GCD. A spell the simulator does not know is dropped from the rotation by its validator, so such a candidate changes nothing."""
     p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
     if not p.exists():
         return []
@@ -363,13 +366,28 @@ def new_spell_pool(cls):
             continue
         for sp in tab.get("spells", []):
             ranks = [r for r in sp.get("ranks", []) if r.get("id")]
-            if not ranks or not any((r.get("classic") or {}).get("status") == "new" for r in ranks):
+            if not ranks or any(sp.get("name", "").startswith(x) for x in NOT_COMBAT + NOT_COMBAT_SPELLS) or "Passive" in (ranks[-1].get("rank") or ""):
                 continue
-            if any(sp.get("name", "").startswith(x) for x in NOT_COMBAT) or "Passive" in (ranks[-1].get("rank") or ""):
+            text_all = " ".join(str(r.get("text", "")) for r in ranks)
+            if not COMBAT_TEXT.search(text_all):
                 continue
             top = max(ranks, key=lambda r: (r.get("level") or 0, int(re.search(r"\d+", r.get("rank") or "0").group() or 0) if re.search(r"\d+", r.get("rank") or "") else 0))
-            out.append({"action": {"castSpell": {"spellId": {"spellId": int(top["id"])}}}})
+            sid = int(top["id"])
+            out.append({"action": {"castSpell": {"spellId": {"spellId": sid}}}})
+            if re.search(r"over \d+ sec", str(top.get("text", ""))):
+                out.append({"action": {"condition": {"not": {"val": {"dotIsActive": {"spellId": {"spellId": sid}}}}},
+                                       "castSpell": {"spellId": {"spellId": sid}}}})
     return out
+
+
+# spells no damage rotation should try (travel, summons, crowd control, stealth, resurrection, pet care)
+NOT_COMBAT_SPELLS = ("Summon", "Conjure", "Create", "Track", "Find ", "Portal", "Resurrect", "Redemption", "Ancestral Spirit", "Rebirth", "Travel Form",
+                     "Aquatic Form", "Ghost Wolf", "Water Walking", "Water Breathing", "Levitate", "Slow Fall", "Unending Breath", "Detect", "Sense",
+                     "Eye of", "Far Sight", "Mind Vision", "Beast Lore", "Tame", "Feed Pet", "Dismiss", "Revive Pet", "Mend Pet", "Eyes of the Beast",
+                     "Disenchant", "Pick Lock", "Sap", "Distract", "Stealth", "Vanish", "Prowl", "Shadowmeld", "Fade", "Feign Death", "Soulstone",
+                     "Ritual", "Enslave", "Banish", "Fear", "Hibernate", "Polymorph", "Shackle", "Mind Control", "Scare", "Turn Undead",
+                     "Psychic Scream", "Howl of Terror", "Seduction", "Blind", "Gouge", "Freezing Trap", "Frost Trap", "Scatter Shot", "Repentance")
+COMBAT_TEXT = re.compile(r"damage|attack power|attack speed|haste|critical|spell power|chance to hit|armor by|mana regen|restores? \d+ mana|increas\w+ (your|all)", re.I)
 
 
 def class_pool(repo, entry):
@@ -475,7 +493,7 @@ def search(cls, spec, a, repo, N, where=None):
     have_ids = explicit_ids({"priorityList": pool}) | explicit_ids(base)
     news = [c for c in new_spell_pool(cls) if ("spellId", c["action"]["castSpell"]["spellId"]["spellId"]) not in have_ids]
     pool += news
-    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} new spells), builds "
+    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), builds "
           + ", ".join(b["label"] for b in builds) + f" ({setting}{', tank value' if tank else ''})", flush=True)
 
     def run_set(apls, iterations, seed):
