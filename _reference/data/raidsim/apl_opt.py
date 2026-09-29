@@ -391,6 +391,20 @@ def new_spell_pool(cls):
     return out
 
 
+def point_blank_ids(cls):
+    """Spell ids whose tooltip reaches only enemies near the caster ("within 10 yards", "nearby", "in a cone", "in front of the caster"):
+    the spellbook sweep of 2026-09-29 kept Blast Wave and Cone of Cold for a mage standing 20 yards away, where they cannot reach."""
+    p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
+    out = set()
+    for tab in (json.load(open(p, encoding="utf-8")).get("tabs", []) if p.exists() else []):
+        for sp in tab.get("spells", []):
+            text = " ".join(str(r.get("text", "")) for r in sp.get("ranks", []))
+            if re.search(r"radiates? outward from the caster|enemies within \d+ yards(?! of the (?:target|totem))|in a cone|in front of the caster|"
+                         r"around the caster|nearby enemies(?! of the target)(?!.*(?:jump|bounc|chain))", text, re.I) and "Totem" not in sp.get("name", ""):
+                out |= {int(r["id"]) for r in sp.get("ranks", []) if r.get("id")}
+    return out
+
+
 # spells no damage rotation should try (travel, summons, crowd control, stealth, resurrection, pet care)
 NOT_COMBAT_SPELLS = ("Summon", "Conjure", "Create", "Track", "Find ", "Portal", "Resurrect", "Redemption", "Ancestral Spirit", "Rebirth", "Travel Form",
                      "Aquatic Form", "Ghost Wolf", "Water Walking", "Water Breathing", "Levitate", "Slow Fall", "Unending Breath", "Detect", "Sense",
@@ -503,6 +517,9 @@ def search(cls, spec, a, repo, N, where=None):
     pool += [c for c in cds if key(c) not in {key(x) for x in pool}]
     have_ids = explicit_ids({"priorityList": pool}) | explicit_ids(base)
     news = [c for c in new_spell_pool(cls) if ("spellId", c["action"]["castSpell"]["spellId"]["spellId"]) not in have_ids]
+    if entry.get("distance", 5) > 8:   # a caster at range: no point-blank spells (the simulator does not range-check Blast Wave or Cone of Cold)
+        pb = point_blank_ids(cls)
+        news = [c for c in news if c["action"]["castSpell"]["spellId"]["spellId"] not in pb]
     pool += news
     if INSERT_ONLY[0]:
         pool = news

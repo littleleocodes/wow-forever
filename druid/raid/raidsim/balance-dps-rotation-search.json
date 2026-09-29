@@ -2,7 +2,7 @@
  "dummy": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -65,37 +65,37 @@
   "final": {
    "dummy": {
     "opt-balance-dps-raid-dps": {
-     "before": 457.81565791260334,
-     "after": 462.19010401651286,
-     "base": 457.81565791260334,
+     "before": 457.88433743928687,
+     "after": 462.3616113408301,
+     "base": 457.88433743928687,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.005591749999999999,
-     "oom_after": 0.00445265
+     "oom_before": 0.00423835,
+     "oom_after": 0.00423835
     },
     "sim preset: Balance": {
-     "before": 411.56547641145204,
-     "after": 410.65650010339704,
-     "base": 411.56547641145204,
+     "before": 411.45869627632237,
+     "after": 410.8905739041697,
+     "base": 411.45869627632237,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0005332000000000001,
-     "oom_after": 0.0001313
+     "oom_before": 0.0006493,
+     "oom_after": 0.0006493
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
-  "start": "ui\\specs\\druid\\balance\\apls\\default.apl.json",
+  "start": "ui/specs/druid/balance/apls/default.apl.json",
   "builds": [
    {
     "label": "opt-balance-dps-raid-dps",
@@ -112,18 +112,18 @@
   "final": {
    "raid": {
     "opt-balance-dps-raid-dps": {
-     "before": 517.5895629471574,
-     "after": 517.5895629471574,
-     "base": 517.5895629471574,
+     "before": 517.5722261362412,
+     "after": 517.5722261362412,
+     "base": 517.5722261362412,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Balance": {
-     "before": 463.6656688549594,
-     "after": 463.6656688549594,
-     "base": 463.6656688549594,
+     "before": 463.8452073512482,
+     "after": 463.8452073512482,
+     "base": 463.8452073512482,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,

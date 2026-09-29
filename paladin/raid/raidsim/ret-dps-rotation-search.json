@@ -2,7 +2,7 @@
  "dummy": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -121,18 +121,18 @@
   "final": {
    "dummy": {
     "opt-ret-dps-raid-dps": {
-     "before": 348.9248707348883,
-     "after": 368.441594858708,
-     "base": 348.9248707348883,
+     "before": 348.3465854663899,
+     "after": 368.65873125855876,
+     "base": 348.3465854663899,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 352.7957069381285,
-     "after": 365.45559109828446,
-     "base": 352.7957069381285,
+     "before": 352.5332300606761,
+     "after": 365.6705199712005,
+     "base": 352.5332300606761,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -141,12 +141,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -217,18 +217,18 @@
   "final": {
    "raid": {
     "opt-ret-dps-raid-dps": {
-     "before": 729.7315475184903,
-     "after": 779.0935770427159,
-     "base": 729.7315475184903,
+     "before": 729.6436606966244,
+     "after": 779.1291332179237,
+     "base": 729.6436606966244,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 727.5626502922806,
-     "after": 776.9197528704486,
-     "base": 727.5626502922806,
+     "before": 727.3323289757651,
+     "after": 776.9306800263338,
+     "base": 727.3323289757651,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -237,6 +237,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

@@ -1,0 +1,97 @@
+{
+ "dummy": {
+  "class": "warrior",
+  "spec": "arms-battle-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
+  "start": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
+  "builds": [
+   {
+    "label": "arms-battle-raid",
+    "talents": "02305213032515101-550500000002"
+   },
+   {
+    "label": "sim preset: Arms 39/12/0",
+    "talents": "32305213132515201-5502"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: if not Berserker Stance is up: cast Berserker Stance",
+    "gain_seed1": 0.061468456969331564,
+    "gain_seed2": 0.060090819424131414,
+    "candidates": 738
+   },
+   {
+    "round": 2,
+    "change": "insert at the end: cast Sunder Armor",
+    "gain_seed1": 0.032045504831360594,
+    "gain_seed2": 0.033855079080714834,
+    "candidates": 746
+   },
+   {
+    "round": 3,
+    "change": "drop: cast Whirlwind",
+    "gain_seed1": 0.017510175956476193,
+    "gain_seed2": 0.01495933813281769,
+    "candidates": 765
+   },
+   {
+    "round": 4,
+    "change": "move to the top: cast Overpower",
+    "gain_seed1": 0.008397210725700877,
+    "gain_seed2": 0.007694653698565368,
+    "candidates": 754
+   },
+   {
+    "round": 5,
+    "change": "drop: cast Spearing Strike",
+    "gain_seed1": 0.007347247877895757,
+    "gain_seed2": 0.007728501511174546,
+    "candidates": 754
+   },
+   {
+    "round": 6,
+    "change": "threshold 25.5s -> 24.5s: if (time left in the fight \u2264 25.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.0031970196835100495,
+    "gain_seed2": 0.003906274038178337,
+    "candidates": 747
+   },
+   {
+    "round": 7,
+    "change": "insert before the filler: cast Spearing Strike",
+    "gain_seed1": 0.002561105108195294,
+    "gain_seed2": 0.0030258348678036118,
+    "candidates": 747
+   }
+  ],
+  "final": {
+   "dummy": {
+    "arms-battle-raid": {
+     "before": 209.65313404454963,
+     "after": 236.3769917198394,
+     "base": 209.65313404454963,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Arms 39/12/0": {
+     "before": 197.8252033210953,
+     "after": 227.4799962109501,
+     "base": 197.8252033210953,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ }
+}

@@ -2,7 +2,7 @@
  "dummy": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -113,32 +113,32 @@
   "final": {
    "dummy": {
     "smite-discipline-raid": {
-     "before": 223.32433459316283,
-     "after": 315.11441811171454,
-     "base": 223.32433459316283,
+     "before": 223.14104469627884,
+     "after": 315.1810783683562,
+     "base": 223.14104469627884,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.4260484498255597,
-     "oom_after": 2.5043456998200617
+     "oom_before": 2.5209121998181994,
+     "oom_after": 2.5209121998181994
     },
     "sim preset: Smite": {
-     "before": 222.374027180493,
-     "after": 313.16854308053894,
-     "base": 222.374027180493,
+     "before": 222.17323902832925,
+     "after": 313.1828631434102,
+     "base": 222.17323902832925,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.207454099774054,
-     "oom_after": 3.2723621997692565
+     "oom_before": 3.3175111497663528,
+     "oom_after": 3.3175111497663528
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -273,26 +273,26 @@
   "final": {
    "raid": {
     "smite-discipline-raid": {
-     "before": 440.8098836711682,
-     "after": 476.69967854560025,
-     "base": 440.8098836711682,
+     "before": 440.6893827237076,
+     "after": 476.7184005137158,
+     "base": 440.6893827237076,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.033118799983001,
-     "oom_after": 2.033118799983001
+     "oom_before": 2.0413340499851533,
+     "oom_after": 2.0413340499851533
     },
     "sim preset: Smite": {
-     "before": 439.3617013643111,
-     "after": 471.2115289704887,
-     "base": 439.3617013643111,
+     "before": 439.1640460310499,
+     "after": 471.1355875235472,
+     "base": 439.1640460310499,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.3997440499782554,
-     "oom_after": 2.3997440499782554
+     "oom_before": 2.432809299980831,
+     "oom_after": 2.432809299980831
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

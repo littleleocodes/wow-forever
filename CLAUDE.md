@@ -325,6 +325,19 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   or fight lab); results `_reference/data/popular-swaps.json`, both in `_reference/popular-picks.md` (generated). A swap that wins
   is a lead for calibrate/optimize/race/adopt; the calibrations only measure talents some raced build holds, so a consensus talent
   none of our builds takes is never measured until a swap or a candidate holds it.
+- **Overnight audit** (2026-09-29, user request "make sure we never again miss a spell like the traps or Arcane Shot"; record:
+  `_reference/sim-gaps.md`): `apl_opt.py`'s insertion pool (`new_spell_pool`) now holds every combat spell of the class spellbook (not only
+  the spells new in Forever), each also guarded by "only while its dot is not ticking" (spells "over N sec") and "only while its aura is not
+  on the target / on you" (spells lasting "for N sec/min"; a plain cast of a curse re-casts it every GCD), plus an insertion spot after
+  every line. `--insert-only` runs just those insertions (the sweep of every entry that night); a full search still does everything.
+  `specs.json` writes are locked, so searches may run in parallel (one class per process). `raidsim/race_sweep.py` races each spec's best
+  build under every race its class can be (Forever racials, `_reference/race-sweep.md`). New entry `warrior/arms-battle-raid` (Arms in
+  Battle Stance: the other warrior rotations never leave Berserker Stance, so Overpower and Rend were never cast). Patch: Aspect of the
+  Beast and the melee half of Deadly Aspects (`raidsim/patches/`). Fight lab: the melee hunter's Immolation Trap (the spellbook parser
+  misses the trap wording; the hunter module fills it in) and the warlock's Curse of the Elements (measured, switched off by the tuned rules).
+- **Player pages**: `render_start_here.py` (regen step) writes `START-HERE.md` and `<class>/START-HERE.md` for new players (what to level
+  with, what to raid with, what to press, talentsforever.com links from `tf_link`, readable names from `display_name`); generated, never
+  hand-edit. `_reference/organization-plan.md` is the proposed reorganization (steps 2-6 wait for the user's approval).
 - **Seeds in the raid sim** (fixed 2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so our seeds 1, 2 and 3 used
   to share almost every iteration. `run.sim_seed(k)` maps seed k to 1 + (k - 1) * 1,000,000 (seed 1 unchanged, the others disjoint)
   in every bench config (run.py, apl_opt.py and through it talent_opt.py). Seed-2 confirmations and third-seed checks recorded

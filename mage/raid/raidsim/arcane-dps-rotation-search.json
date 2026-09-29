@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -65,32 +65,32 @@
   "final": {
    "dummy": {
     "arcane-blast-raid": {
-     "before": 514.9289963518148,
-     "after": 541.4970785994279,
-     "base": 514.9289963518148,
+     "before": 514.31469046039,
+     "after": 541.4337133010331,
+     "base": 514.31469046039,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.10231820000000001,
-     "oom_after": 0.10231820000000001
+     "oom_before": 0.10421020000000003,
+     "oom_after": 0.10421020000000003
     },
     "sim preset: Arcane DPS": {
-     "before": 512.3814431762961,
-     "after": 533.5922464310306,
-     "base": 512.3814431762961,
+     "before": 511.6826710172626,
+     "after": 533.3722264711977,
+     "base": 511.6826710172626,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.056647649999999994,
-     "oom_after": 0.056647649999999994
+     "oom_before": 0.0516926,
+     "oom_after": 0.0516926
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -137,18 +137,18 @@
   "final": {
    "raid": {
     "arcane-blast-raid": {
-     "before": 591.0901485181663,
-     "after": 618.7968112988207,
-     "base": 591.0901485181663,
+     "before": 590.9426858598165,
+     "after": 619.1043352581207,
+     "base": 590.9426858598165,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Arcane DPS": {
-     "before": 588.5835197213886,
-     "after": 609.42584958302,
-     "base": 588.5835197213886,
+     "before": 588.5896968012763,
+     "after": 609.4476361156346,
+     "base": 588.5896968012763,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -157,6 +157,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

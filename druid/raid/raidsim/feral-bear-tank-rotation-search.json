@@ -2,7 +2,7 @@
  "raid": {
   "class": "druid",
   "spec": "feral-bear-tank",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": true,
@@ -36,31 +36,39 @@
     "gain_seed2": 0.006221536264368499,
     "candidates": 258,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert before the filler: cast Barkskin",
+    "gain_seed1": 0.019984295229706017,
+    "gain_seed2": 0.0215269208295652,
+    "candidates": 84,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
     "feral-bear-tank": {
-     "before": 380.5005590378446,
-     "after": 383.64588197663926,
-     "base": 380.5005590378446,
+     "before": 380.64162527725057,
+     "after": 379.95882777567,
+     "base": 380.64162527725057,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.0200072761818904,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Bear Tank 0/31/20": {
-     "before": 367.6514138558848,
-     "after": 363.5956713326937,
-     "base": 367.6514138558848,
+     "before": 367.68309669750755,
+     "after": 360.06546543884775,
+     "base": 367.68309669750755,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.02230434290593,
      "oom_before": 0,
      "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

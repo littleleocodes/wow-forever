@@ -2,7 +2,7 @@
  "dummy": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,8 @@
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "elemental-raid-dps",
-    "talents": "550430130010304-255200311000102"
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5531301300103051-052-05305"
    },
    {
     "label": "sim preset: Elemental 31/6/14",
@@ -56,33 +56,33 @@
   ],
   "final": {
    "dummy": {
-    "elemental-raid-dps": {
-     "before": 392.61772238778667,
-     "after": 396.3835015495196,
-     "base": 392.61772238778667,
+    "opt-elemental-dps-raid-dps": {
+     "before": 387.355715954412,
+     "after": 396.71382040939454,
+     "base": 387.355715954412,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.018987199997399996,
-     "oom_after": 0.018987199997399996
+     "oom_before": 0.02665629998545003,
+     "oom_after": 0.02665629998545003
     },
     "sim preset: Elemental 31/6/14": {
-     "before": 378.1972248237065,
-     "after": 393.44599013470065,
-     "base": 378.1972248237065,
+     "before": 378.01084810643346,
+     "after": 393.4564082380146,
+     "base": 378.01084810643346,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.15782519999964978,
-     "oom_after": 0.15782519999964978
+     "oom_before": 0.14780289999950072,
+     "oom_after": 0.14780289999950072
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -90,8 +90,8 @@
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "elemental-raid-dps",
-    "talents": "550430130010304-255200311000102"
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5531301300103051-052-05305"
    },
    {
     "label": "sim preset: Elemental 31/6/14",
@@ -128,27 +128,27 @@
   ],
   "final": {
    "raid": {
-    "elemental-raid-dps": {
-     "before": 502.8494070338817,
-     "after": 504.60941540958703,
-     "base": 502.8494070338817,
+    "opt-elemental-dps-raid-dps": {
+     "before": 494.9874668256873,
+     "after": 496.7195340378478,
+     "base": 494.9874668256873,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0007824999995499999,
+     "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Elemental 31/6/14": {
-     "before": 494.22698512892055,
-     "after": 496.80099106702994,
-     "base": 494.22698512892055,
+     "before": 494.0429507185119,
+     "after": 496.6690194484936,
+     "base": 494.0429507185119,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.016783499999949998,
-     "oom_after": 0.00026149999999999996
+     "oom_before": 0.00019779999995,
+     "oom_after": 0.00019779999995
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

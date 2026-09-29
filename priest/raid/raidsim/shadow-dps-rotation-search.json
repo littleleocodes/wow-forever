@@ -2,7 +2,7 @@
  "dummy": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -11,11 +11,11 @@
   "builds": [
    {
     "label": "opt-shadow-dps-raid-dps",
-    "talents": "005300211305--504020501201302051"
+    "talents": "525000000305--500321501201302051"
    },
    {
-    "label": "sim preset: Shadow",
-    "talents": "005300231303--505120501201300051"
+    "label": "sim preset: Shadow 15/0/36",
+    "talents": "0253000311--550022501201302251"
    }
   ],
   "iterations": 3000,
@@ -49,32 +49,32 @@
   "final": {
    "dummy": {
     "opt-shadow-dps-raid-dps": {
-     "before": 544.6680802419768,
-     "after": 545.9143699760796,
-     "base": 544.6680802419768,
+     "before": 552.3605387610696,
+     "after": 554.3518069279892,
+     "base": 552.3605387610696,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Shadow": {
-     "before": 543.5193098014483,
-     "after": 544.8152059095938,
-     "base": 543.5193098014483,
+    "sim preset: Shadow 15/0/36": {
+     "before": 542.7242956977854,
+     "after": 545.2588274846576,
+     "base": 542.7242956977854,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.00027859999985000003,
+     "oom_after": 0.00027859999985000003
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -83,11 +83,11 @@
   "builds": [
    {
     "label": "opt-shadow-dps-raid-dps",
-    "talents": "005300211305--504020501201302051"
+    "talents": "525000000305--500321501201302051"
    },
    {
-    "label": "sim preset: Shadow",
-    "talents": "005300231303--505120501201300051"
+    "label": "sim preset: Shadow 15/0/36",
+    "talents": "0253000311--550022501201302251"
    }
   ],
   "iterations": 3000,
@@ -105,18 +105,18 @@
   "final": {
    "raid": {
     "opt-shadow-dps-raid-dps": {
-     "before": 625.7137455746255,
-     "after": 627.7142482377382,
-     "base": 625.7137455746255,
+     "before": 634.1346186322886,
+     "after": 636.1792040535333,
+     "base": 634.1346186322886,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Shadow": {
-     "before": 623.990400650287,
-     "after": 626.0119056041094,
-     "base": 623.990400650287,
+    "sim preset: Shadow 15/0/36": {
+     "before": 623.3604929134717,
+     "after": 625.2148216058592,
+     "base": 623.3604929134717,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -125,6 +125,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  }
 }

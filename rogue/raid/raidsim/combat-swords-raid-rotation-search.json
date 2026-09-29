@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -61,9 +61,9 @@
   "final": {
    "dummy": {
     "combat-swords-raid": {
-     "before": 337.366483685201,
-     "after": 401.3489771496346,
-     "base": 337.366483685201,
+     "before": 337.16222616192726,
+     "after": 401.02640730657777,
+     "base": 337.16222616192726,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -72,12 +72,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -104,9 +104,9 @@
   "final": {
    "raid": {
     "combat-swords-raid": {
-     "before": 697.8340620839266,
-     "after": 699.8084533181719,
-     "base": 697.8340620839266,
+     "before": 697.9122186070203,
+     "after": 700.0724500816631,
+     "base": 697.9122186070203,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -115,6 +115,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

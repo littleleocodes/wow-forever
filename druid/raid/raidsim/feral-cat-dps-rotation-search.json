@@ -2,7 +2,7 @@
  "dummy": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -81,18 +81,18 @@
   "final": {
    "dummy": {
     "opt-feral-cat-dps-raid-dps": {
-     "before": 336.171023784152,
-     "after": 356.522177033777,
-     "base": 336.171023784152,
+     "before": 336.3097731878436,
+     "after": 356.42429425825105,
+     "base": 336.3097731878436,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 336.171023784152,
-     "after": 356.522177033777,
-     "base": 336.171023784152,
+     "before": 336.3097731878436,
+     "after": 356.42429425825105,
+     "base": 336.3097731878436,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -101,12 +101,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -161,18 +161,18 @@
   "final": {
    "raid": {
     "opt-feral-cat-dps-raid-dps": {
-     "before": 548.3589744191788,
-     "after": 566.1137262396682,
-     "base": 548.3589744191788,
+     "before": 548.5288119189955,
+     "after": 565.9624298865533,
+     "base": 548.5288119189955,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 548.3589744191788,
-     "after": 566.1137262396682,
-     "base": 548.3589744191788,
+     "before": 548.5288119189955,
+     "after": 565.9624298865533,
+     "base": 548.5288119189955,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -181,6 +181,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }

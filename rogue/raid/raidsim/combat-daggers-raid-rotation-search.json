@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -57,18 +57,18 @@
   "final": {
    "dummy": {
     "opt-combat-daggers-raid-raid-dps": {
-     "before": 373.763461657055,
-     "after": 413.7166999995745,
-     "base": 373.763461657055,
+     "before": 373.69179578155865,
+     "after": 413.47478444004867,
+     "base": 373.69179578155865,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 364.86659632186684,
-     "after": 404.76259718219035,
-     "base": 364.86659632186684,
+     "before": 364.8325699694361,
+     "after": 404.7470251348269,
+     "base": 364.8325699694361,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -77,7 +77,7 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "rogue",

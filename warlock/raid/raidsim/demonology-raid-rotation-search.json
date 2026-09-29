@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -73,32 +73,32 @@
   "final": {
    "dummy": {
     "demonology-pact-raid": {
-     "before": 613.7660048376266,
-     "after": 621.5042926076734,
-     "base": 613.7660048376266,
+     "before": 613.7483958219423,
+     "after": 621.0638680468401,
+     "base": 613.7483958219423,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.30402499999999977,
-     "oom_after": 0.2906949999999998
+     "oom_before": 0.30105000000000065,
+     "oom_after": 0.30105000000000065
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 595.921068309905,
-     "after": 604.6312036282152,
-     "base": 595.921068309905,
+     "before": 596.1909094907617,
+     "after": 604.7498798296059,
+     "base": 596.1909094907617,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.28717499999999996,
-     "oom_after": 0.30165000000000003
+     "oom_before": 0.30695,
+     "oom_after": 0.30695
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "warlock",
   "spec": "demonology-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -137,26 +137,26 @@
   "final": {
    "raid": {
     "demonology-pact-raid": {
-     "before": 752.5147204326206,
-     "after": 761.4185557592384,
-     "base": 752.5147204326206,
+     "before": 752.3505664527651,
+     "after": 760.7914166218467,
+     "base": 752.3505664527651,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7189799999999997,
-     "oom_after": 0.7189799999999997
+     "oom_before": 0.7131550000000014,
+     "oom_after": 0.7131550000000014
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 728.5229494721875,
-     "after": 736.8000917547148,
-     "base": 728.5229494721875,
+     "before": 728.2084420882592,
+     "after": 736.863422969152,
+     "base": 728.2084420882592,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.8021499999999999,
-     "oom_after": 0.8021499999999999
+     "oom_before": 0.8016000000000001,
+     "oom_after": 0.8016000000000001
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

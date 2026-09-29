@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -14,8 +14,8 @@
     "talents": "250025-23550000130133051-005"
    },
    {
-    "label": "sim preset: Fire DPS",
-    "talents": "0502252000003-23550000130133051-"
+    "label": "sim preset: Fire 0/35/16",
+    "talents": "-03552020130133151-005500033"
    }
   ],
   "iterations": 3000,
@@ -57,32 +57,32 @@
   "final": {
    "dummy": {
     "fire-raid": {
-     "before": 494.85215305377477,
-     "after": 533.6731542005564,
-     "base": 494.85215305377477,
+     "before": 494.9125501774345,
+     "after": 533.8537766560491,
+     "base": 494.9125501774345,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.13526684999845,
-     "oom_after": 0.7084733999948994
+     "oom_before": 0.6885887999954463,
+     "oom_after": 0.6885887999954463
     },
-    "sim preset: Fire DPS": {
-     "before": 488.3572792219715,
-     "after": 517.5930943795554,
-     "base": 488.3572792219715,
+    "sim preset: Fire 0/35/16": {
+     "before": 481.36372396994483,
+     "after": 519.6505219560045,
+     "base": 481.36372396994483,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.16645144999870004,
-     "oom_after": 0.3367826499982499
+     "oom_before": 0.007986249999999997,
+     "oom_after": 0.007986249999999997
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -94,8 +94,8 @@
     "talents": "250025-23550000130133051-005"
    },
    {
-    "label": "sim preset: Fire DPS",
-    "talents": "0502252000003-23550000130133051-"
+    "label": "sim preset: Fire 0/35/16",
+    "talents": "-03552020130133151-005500033"
    }
   ],
   "iterations": 3000,
@@ -148,23 +148,39 @@
     "gain_seed2": 0.0043896998297348055,
     "candidates": 209,
     "pass": 2
+   },
+   {
+    "round": 7,
+    "change": "insert before the filler: cast Blast Wave",
+    "gain_seed1": 0.003330396042932726,
+    "gain_seed2": 0.0033183724958774086,
+    "candidates": 112,
+    "pass": 3
+   },
+   {
+    "round": 8,
+    "change": "insert before the filler: cast Cone of Cold",
+    "gain_seed1": 0.002581263588945504,
+    "gain_seed2": 0.0025322809894774423,
+    "candidates": 108,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
     "fire-raid": {
-     "before": 618.4423661441168,
-     "after": 661.9797548132989,
-     "base": 618.4423661441168,
+     "before": 619.4162422787845,
+     "after": 664.5904035513712,
+     "base": 619.4162422787845,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.0001091
     },
-    "sim preset: Fire DPS": {
-     "before": 581.4422100148827,
-     "after": 623.2992247760401,
-     "base": 581.4422100148827,
+    "sim preset: Fire 0/35/16": {
+     "before": 608.4132814204198,
+     "after": 653.2360461745377,
+     "base": 608.4132814204198,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -173,6 +189,7 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 2
- }
+  "passes": 3
+ },
+ "note_2026_09_29": "The spellbook sweep kept Blast Wave (+0.33%) and Cone of Cold (+0.26%) in the raid rotation; both reach 10 yards and the entry stands the mage 20 yards away, so the simulator's missing range check made them artifacts: removed by hand the same night."
 }

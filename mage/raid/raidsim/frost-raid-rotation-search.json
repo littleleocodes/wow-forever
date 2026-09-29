@@ -60,20 +60,20 @@
  "raid": {
   "class": "mage",
   "spec": "frost-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
-  "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid-raid.apl.json",
+  "start": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
   "builds": [
    {
     "label": "frost-fingers-of-frost-raid",
-    "talents": "0500250030003-01-055500033100030025"
+    "talents": "1502050030003111--055500030100031024"
    },
    {
-    "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024"
+    "label": "sim preset: Frost 14/0/37",
+    "talents": "050005013--0555003301001301251"
    },
    {
     "label": "frost-arcane-power-raid",
@@ -86,27 +86,27 @@
   "final": {
    "raid": {
     "frost-fingers-of-frost-raid": {
-     "before": 645.6939678508667,
-     "after": 645.6939678508667,
-     "base": 645.6939678508667,
+     "before": 666.9114291222388,
+     "after": 666.9114291222388,
+     "base": 666.9114291222388,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Frost DPS": {
-     "before": 634.7328184706677,
-     "after": 634.7328184706677,
-     "base": 634.7328184706677,
+    "sim preset: Frost 14/0/37": {
+     "before": 643.3797357863838,
+     "after": 643.3797357863838,
+     "base": 643.3797357863838,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "frost-arcane-power-raid": {
-     "before": 626.848499826682,
-     "after": 626.848499826682,
-     "base": 626.848499826682,
+     "before": 626.7226330358327,
+     "after": 626.7226330358327,
+     "base": 626.7226330358327,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
