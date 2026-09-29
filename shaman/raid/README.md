@@ -2,13 +2,13 @@
 
 [Shaman](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Enhancement](enhancement.md) — One slow weapon | 415 | 774 | best |
-| 2 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 398 | 499 | -4% |
-| 3 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 397 | 504 | -4% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Enhancement](enhancement.md) — One slow weapon | 394 | 757 | 377 | best |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 387 | 495 | 371 | -2% |
+| 3 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 381 | 485 | 366 | -3% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

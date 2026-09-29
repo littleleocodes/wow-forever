@@ -2,15 +2,15 @@
 
 [Mage](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 587 | 668 | best |
-| 2 | [Frost](frost.md) — Raid Frostbolt with Ice Lance on Fingers of Frost charges | 570 | 649 | -3% |
-| 3 | [Arcane](arcane.md) — Arcane — Arcane Blast | 542 | 619 | -8% |
-| 4 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 535 | 662 | -9% |
-| 5 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 514 | 590 | -13% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 582 | 662 | 573 | best |
+| 2 | [Frost](frost.md) — Raid Frostbolt with Ice Lance on Fingers of Frost charges | 541 | 646 | 460 | -7% |
+| 3 | [Arcane](arcane.md) — Arcane — Arcane Blast | 516 | 600 | 488 | -11% |
+| 4 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 511 | 636 | 423 | -12% |
+| 5 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 463 | 556 | 382 | -20% |
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

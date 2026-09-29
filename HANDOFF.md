@@ -48,6 +48,10 @@ Each class folder now opens with player pages and keeps the research below:
 - `spec_builds.py` filled the 25 empty spec x mode slots with generated builds (tier draft, `generated`, ⚗ on the pages): PvP builds for
   every spec, Arcane / Subtlety / Affliction / Demonology / Destruction leveling, Beast Mastery raid (30/21/0, 469 dummy DPS, ties the
   22/29/0 Hawk build) and Elemental raid (31/7/13, 398, ties the 29/22/0 hybrid). Numbers in `_reference/data/spec-builds.json`.
+- **Fair dummy vs raid comparison** (same day): the standard fight is now 180 s; the environments run adds a buff ladder (where each
+  spec's raid gain comes from: mana, armor, physical, spell, rest) and DPS by fight length (1-6 minutes); the raid pipeline was re-run
+  at 180 s (every hand draft stands). Player rotations are simplified to class spells in plain words (`simple_rotation.py`), leveling
+  pages use hand-kept steps (`leveling-steps.json`). Open: re-run the rotation searches at 180 s (they were tuned at 120 s).
 - Candidates were not pruned: the fight-lab calibration fits jointly over every saved candidate (the fix for the optimizer's swings),
   so deleting them would change future fits. They sit under `research/`, out of a player's way.
 

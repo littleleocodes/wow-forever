@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | **✅ Recommended**<br>[Assassination/Combat — Seal Fate daggers](raid/assassination.md)<br>413 DPS | [Seal Fate / Mutilate Daggers](pvp/assassination.md) |
-| **Combat** | [Raid Combat swords](leveling/combat.md) | **✅ Recommended**<br>[Raid daggers](raid/combat.md)<br>414 DPS | [Combat — PvP](pvp/combat.md) ⚗ |
-| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) ⚗<br>26 s/kill | [Subtlety — Hemorrhage](raid/subtlety.md)<br>392 DPS | [Hemorrhage / Preparation / Thousand Cuts](pvp/subtlety.md) |
+| **Assassination** | **✅ Recommended**<br>[Raid Combat swords](leveling/assassination.md)<br>25 s/kill | **✅ Recommended**<br>[Assassination/Combat — Seal Fate daggers](raid/assassination.md)<br>407 DPS | [Seal Fate / Mutilate Daggers](pvp/assassination.md) |
+| **Combat** | [Raid Combat swords](leveling/combat.md) | **✅ Recommended**<br>[Raid daggers](raid/combat.md)<br>403 DPS | [Combat — PvP](pvp/combat.md) ⚗ |
+| **Subtlety** | [Subtlety — Leveling](leveling/subtlety.md) ⚗<br>26 s/kill | [Subtlety — Hemorrhage](raid/subtlety.md)<br>374 DPS | [Hemorrhage / Preparation / Thousand Cuts](pvp/subtlety.md) |
 | **Daggers (split)** | [Raid daggers](leveling/daggers-split.md)<br>30 s/kill | - | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -35,13 +35,13 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Combat](raid/combat.md) — Raid daggers | 414 | 741 | best |
-| 2 | [Assassination](raid/assassination.md) — Assassination/Combat — Seal Fate daggers | 413 | 693 | -0% |
-| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 392 | 657 | -5% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Assassination](raid/assassination.md) — Assassination/Combat — Seal Fate daggers | 407 | 682 | 407 | best |
+| 2 | [Combat](raid/combat.md) — Raid daggers | 403 | 720 | 405 | -1% |
+| 3 | [Subtlety](raid/subtlety.md) — Subtlety — Hemorrhage | 374 | 642 | 353 | -8% |
 
 ### PvP
 

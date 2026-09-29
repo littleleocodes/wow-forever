@@ -14,23 +14,59 @@
  "environments": {
   "dummy": {
    "label": "training dummy",
-   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
   },
   "dummy60": {
    "label": "level-60 dummy",
-   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
   },
   "raid": {
    "label": "raid",
-   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
   },
   "max": {
    "label": "maximum",
-   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
   },
   "max60": {
    "label": "maximum, 60 s",
    "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
   }
  },
  "results": [
@@ -39,10 +75,19 @@
    "split": "11/31/9",
    "ours": true,
    "dps": {
-    "dummy": 411.30340743456645,
-    "dummy60": 461.62036965683404,
-    "raid": 767.1471008900515,
-    "max": 763.8198491106705,
+    "dummy": 390.85330577761806,
+    "dummy60": 439.62558522117195,
+    "ladder-mana": 409.11559011451055,
+    "ladder-armor": 556.2238549930137,
+    "ladder-physical": 628.5509601600228,
+    "ladder-spell": 651.719884948047,
+    "raid": 751.2347514500757,
+    "curve60": 434.4728911639713,
+    "curve120": 411.30340743456645,
+    "curve180": 390.85330577761806,
+    "curve240": 389.4586292324316,
+    "curve360": 373.47657581896453,
+    "max": 748.9069555190091,
     "max60": 805.9372838844259
    }
   },
@@ -51,10 +96,19 @@
    "split": "11/31/9",
    "ours": true,
    "dps": {
-    "dummy": 415.05871472440015,
-    "dummy60": 466.1784025733027,
-    "raid": 773.6130857908138,
-    "max": 770.6026017027496,
+    "dummy": 394.25910511200203,
+    "dummy60": 443.67054326761394,
+    "ladder-mana": 412.52475430474135,
+    "ladder-armor": 557.9370042309856,
+    "ladder-physical": 629.6100908691928,
+    "ladder-spell": 653.3300223762412,
+    "raid": 757.4291475126714,
+    "curve60": 438.7344182125163,
+    "curve120": 415.05871472440015,
+    "curve180": 394.25910511200203,
+    "curve240": 392.8082075986166,
+    "curve360": 376.6721015578772,
+    "max": 755.1797807029836,
     "max60": 811.5447806081495
    }
   },
@@ -63,10 +117,19 @@
    "split": "10/31/10",
    "ours": true,
    "dps": {
-    "dummy": 404.26420570675293,
-    "dummy60": 451.9789197482502,
-    "raid": 774.8676878134622,
-    "max": 772.5918907550746,
+    "dummy": 390.468066509188,
+    "dummy60": 437.4142637455761,
+    "ladder-mana": 416.9120854707917,
+    "ladder-armor": 562.1503830997599,
+    "ladder-physical": 634.3113902490601,
+    "ladder-spell": 658.5976394511424,
+    "raid": 751.9296806286143,
+    "curve60": 444.9827544396554,
+    "curve120": 404.26420570675293,
+    "curve180": 390.468066509188,
+    "curve240": 382.5567041408633,
+    "curve360": 367.5828414910586,
+    "max": 749.2111387558584,
     "max60": 823.2850733650005
    }
   },
@@ -75,10 +138,19 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 399.9174432087254,
-    "dummy60": 460.296311091287,
-    "raid": 755.3408446714344,
-    "max": 759.9973524096595,
+    "dummy": 383.7867029160524,
+    "dummy60": 442.91323477122677,
+    "ladder-mana": 414.48435937332755,
+    "ladder-armor": 557.0941028735712,
+    "ladder-physical": 625.345327425694,
+    "ladder-spell": 649.1755929180672,
+    "raid": 748.5284889729412,
+    "curve60": 438.1984546307297,
+    "curve120": 399.9174432087254,
+    "curve180": 383.7867029160524,
+    "curve240": 374.82545663555413,
+    "curve360": 358.9438009329073,
+    "max": 753.1804380085839,
     "max60": 803.9155777474006
    }
   },
@@ -87,10 +159,19 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 372.594723963981,
-    "dummy60": 430.8024339029292,
-    "raid": 745.8633212893246,
-    "max": 750.8071843552302,
+    "dummy": 365.25161150446456,
+    "dummy60": 422.6088009794679,
+    "ladder-mana": 411.5003061026038,
+    "ladder-armor": 556.6357380865746,
+    "ladder-physical": 628.0713798963079,
+    "ladder-spell": 653.0768746222883,
+    "raid": 726.2410491924575,
+    "curve60": 429.02986829788176,
+    "curve120": 372.594723963981,
+    "curve180": 365.25161150446456,
+    "curve240": 356.48606337705377,
+    "curve360": 343.4991147744524,
+    "max": 732.6471831558033,
     "max60": 814.4259344997353
    }
   }

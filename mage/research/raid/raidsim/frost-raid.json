@@ -23,10 +23,10 @@
    "conjuredId": 12662,
    "mhImbueId": 25122
   },
-  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 3000,
   "seed": 1,
-  "duration": 120.0
+  "duration": 180.0
  },
  "date": "2026-09-29",
  "results": [
@@ -37,42 +37,43 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "12043": 1.0,
-    "20554": 1.0,
     "12042": 1.0,
-    "25345": 8.042,
-    "25346": 39.79966666666667,
-    "25304": 40.120666666666665
+    "20554": 1.0,
+    "25346": 59.76533333333333,
+    "25304": 60.11566666666667,
+    "25345": 12.050666666666666,
+    "12043": 1.0
    },
    "casts": {
-    "Presence of Mind": 1.0,
-    "Berserking": 1.0,
-    "item 18820": 2.0,
-    "Arcane Power": 1.0,
-    "Arcane Missiles": 47.84166666666667,
-    "item 14152": 1.0,
-    "item 13444": 0.9433333333333334,
-    "Frostbolt": 40.120666666666665,
     "item 8008": 1.0,
-    "item 12662": 1.0,
-    "OtherActionManaGain": 3.9433333333333334
+    "Arcane Power": 1.0,
+    "OtherActionManaGain": 5.774333333333334,
+    "item 18820": 2.0,
+    "item 12662": 1.8426666666666667,
+    "Berserking": 1.0,
+    "Arcane Missiles": 71.816,
+    "Frostbolt": 60.11566666666667,
+    "item 14152": 1.0,
+    "item 13444": 1.0043333333333333,
+    "item 8007": 0.9273333333333333,
+    "Presence of Mind": 1.0
    },
-   "dps": 548.2364936910594,
-   "dps_stdev": 37.27613674528727,
-   "threat": 444.2740248673484,
+   "dps": 536.0729593519612,
+   "dps_stdev": 30.064341863196155,
+   "threat": 433.85307181115576,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6847333208706059,
+   "scorer": 0.6715943326023197,
    "shares": {
-    "Frostbolt": 0.761732230683222,
-    "Arcane Missiles": 0.2382677693167779
+    "Frostbolt": 0.7610944478749677,
+    "Arcane Missiles": 0.23890555212503234
    },
    "source_shares": {
-    "frostbolt": 0.7617,
-    "missiles": 0.2383
+    "frostbolt": 0.7611,
+    "missiles": 0.2389
    },
    "unmatched_share": 0.0
   },
@@ -83,30 +84,33 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 48.0,
+    "25304": 70.70933333333333,
     "12472": 1.0,
-    "20554": 1.0
+    "20554": 1.0,
+    "12051": 0.43
    },
    "casts": {
-    "Frostbolt": 48.0,
-    "OtherActionManaGain": 4.0,
-    "Cold Snap": 1.0,
+    "item 12662": 1.9983333333333333,
+    "Frostbolt": 70.70933333333333,
+    "item 8007": 1.0,
     "item 18820": 2.0,
-    "item 8008": 1.0,
     "item 13444": 1.0,
+    "Cold Snap": 1.0,
+    "OtherActionManaGain": 5.998333333333333,
     "Berserking": 1.0,
     "item 14152": 1.0,
-    "item 12662": 1.0
+    "Evocation": 0.43,
+    "item 8008": 1.0
    },
-   "dps": 489.9614175950945,
-   "dps_stdev": 35.62755898439246,
-   "threat": 362.13777939166187,
+   "dps": 474.9320491188266,
+   "dps_stdev": 32.29904170491561,
+   "threat": 350.91784798879735,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.0017333333333333335,
    "error": null,
-   "scorer": 0.614904826079423,
+   "scorer": 0.6106485638519636,
    "shares": {
     "Frostbolt": 1.0
    },
@@ -122,44 +126,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 35.877,
-    "20554": 1.0,
-    "25345": 7.142,
-    "1240047": 8.858,
     "12043": 1.0,
-    "25346": 35.29066666666667
+    "20554": 1.0,
+    "25345": 10.630333333333333,
+    "25346": 52.707,
+    "1240047": 13.364333333333333,
+    "25304": 53.44233333333333,
+    "12051": 0.06333333333333334
    },
    "casts": {
-    "Frostbolt": 35.877,
-    "item 8008": 1.0,
-    "Berserking": 1.0,
-    "Arcane Missiles": 42.43266666666667,
-    "item 12662": 1.0,
-    "item 18820": 2.0,
-    "Ice Lance": 8.858,
-    "OtherActionManaGain": 3.9836666666666667,
     "Presence of Mind": 1.0,
+    "OtherActionManaGain": 5.792666666666666,
+    "Berserking": 1.0,
     "item 14152": 1.0,
-    "item 13444": 0.9836666666666667
+    "Arcane Missiles": 63.33733333333333,
+    "item 8007": 0.993,
+    "item 13444": 1.0106666666666666,
+    "Ice Lance": 13.364333333333333,
+    "item 8008": 1.0,
+    "item 12662": 1.789,
+    "Frostbolt": 53.44233333333333,
+    "Evocation": 0.06333333333333334,
+    "item 18820": 2.0
    },
-   "dps": 587.4902231341634,
-   "dps_stdev": 46.220673306709614,
-   "threat": 484.39165947399374,
+   "dps": 581.5435235506326,
+   "dps_stdev": 37.09301049476864,
+   "threat": 477.62688987788323,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.002585333333333333,
    "error": null,
-   "scorer": 0.7377289378727636,
+   "scorer": 0.6944062090655341,
    "shares": {
-    "Frostbolt": 0.6120699138659885,
-    "Ice Lance": 0.2033853238164001,
-    "Arcane Missiles": 0.18454476231761144
+    "Frostbolt": 0.6102832379738177,
+    "Ice Lance": 0.20531474417503115,
+    "Arcane Missiles": 0.18440201785115104
    },
    "source_shares": {
-    "frostbolt": 0.6121,
-    "ice_lance": 0.2034,
-    "missiles": 0.1845
+    "frostbolt": 0.6103,
+    "ice_lance": 0.2053,
+    "missiles": 0.1844
    },
    "unmatched_share": 0.0
   },
@@ -170,44 +177,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
+    "1240047": 13.364333333333333,
     "12043": 1.0,
-    "1240047": 8.858,
-    "25345": 7.142,
-    "25304": 35.877,
-    "25346": 35.29066666666667
+    "25304": 53.44233333333333,
+    "20554": 1.0,
+    "25346": 52.707,
+    "25345": 10.630333333333333,
+    "12051": 0.06333333333333334
    },
    "casts": {
-    "Berserking": 1.0,
-    "Presence of Mind": 1.0,
-    "item 14152": 1.0,
-    "item 18820": 2.0,
-    "item 13444": 0.9836666666666667,
-    "Ice Lance": 8.858,
+    "Ice Lance": 13.364333333333333,
     "item 8008": 1.0,
-    "Arcane Missiles": 42.43266666666667,
-    "Frostbolt": 35.877,
-    "item 12662": 1.0,
-    "OtherActionManaGain": 3.9836666666666667
+    "Presence of Mind": 1.0,
+    "item 8007": 0.993,
+    "item 18820": 2.0,
+    "item 12662": 1.789,
+    "Frostbolt": 53.44233333333333,
+    "OtherActionManaGain": 5.792666666666666,
+    "Berserking": 1.0,
+    "item 14152": 1.0,
+    "Arcane Missiles": 63.33733333333333,
+    "Evocation": 0.06333333333333334,
+    "item 13444": 1.0106666666666666
    },
-   "dps": 587.4902231341634,
-   "dps_stdev": 46.220673306709614,
-   "threat": 484.39165947399374,
+   "dps": 581.5435235506326,
+   "dps_stdev": 37.09301049476864,
+   "threat": 477.62688987788323,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.002585333333333333,
    "error": null,
-   "scorer": 0.7377289378727636,
+   "scorer": 0.6944062090655341,
    "shares": {
-    "Frostbolt": 0.6120699138659885,
-    "Ice Lance": 0.2033853238164001,
-    "Arcane Missiles": 0.18454476231761144
+    "Frostbolt": 0.6102832379738178,
+    "Ice Lance": 0.20531474417503118,
+    "Arcane Missiles": 0.18440201785115107
    },
    "source_shares": {
-    "frostbolt": 0.6121,
-    "ice_lance": 0.2034,
-    "missiles": 0.1845
+    "frostbolt": 0.6103,
+    "ice_lance": 0.2053,
+    "missiles": 0.1844
    },
    "unmatched_share": 0.0
   },
@@ -218,39 +228,42 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 41.926,
+    "12051": 1.0,
     "12472": 1.0,
-    "1240047": 10.268,
-    "20554": 1.0
+    "20554": 1.0,
+    "1240047": 14.787666666666667,
+    "25304": 60.019666666666666
    },
    "casts": {
-    "Frostbolt": 41.926,
+    "Evocation": 1.0,
     "item 18820": 2.0,
-    "item 12662": 1.0,
-    "item 13444": 1.0,
     "Cold Snap": 1.0,
-    "item 14152": 1.0,
     "item 8008": 1.0,
-    "Ice Lance": 10.268,
     "Berserking": 1.0,
-    "OtherActionManaGain": 4.0
+    "item 14152": 1.0,
+    "OtherActionManaGain": 6.982666666666667,
+    "Ice Lance": 14.787666666666667,
+    "Frostbolt": 60.019666666666666,
+    "item 8007": 1.0,
+    "item 12662": 2.0,
+    "item 13444": 1.9826666666666666
    },
-   "dps": 569.7351699347047,
-   "dps_stdev": 49.63630517393887,
-   "threat": 341.88957161909957,
+   "dps": 541.4674285453253,
+   "dps_stdev": 39.18629119915432,
+   "threat": 329.81093031559857,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7342274567880731,
+   "scorer": 0.660910775971705,
    "shares": {
-    "Frostbolt": 0.7456013388584074,
-    "Ice Lance": 0.2543986611415925
+    "Frostbolt": 0.7445989155274538,
+    "Ice Lance": 0.2554010844725462
    },
    "source_shares": {
-    "frostbolt": 0.7456,
-    "ice_lance": 0.2544
+    "frostbolt": 0.7446,
+    "ice_lance": 0.2554
    },
    "unmatched_share": 0.0
   },
@@ -261,42 +274,45 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "25345": 11.829333333333333,
     "12043": 1.0,
-    "25345": 7.995333333333333,
-    "12042": 1.0,
+    "25304": 59.29366666666667,
+    "25346": 58.559666666666665,
     "20554": 1.0,
-    "25304": 40.169,
-    "25346": 39.568
+    "12051": 0.3496666666666667,
+    "12042": 1.0
    },
    "casts": {
-    "Presence of Mind": 1.0,
-    "Arcane Missiles": 47.56333333333333,
-    "item 13444": 0.9996666666666667,
     "item 18820": 2.0,
-    "Arcane Power": 1.0,
-    "item 8008": 1.0,
+    "Arcane Missiles": 70.389,
+    "Presence of Mind": 1.0,
+    "Frostbolt": 59.29366666666667,
+    "OtherActionManaGain": 6.456333333333333,
+    "item 12662": 1.996,
     "Berserking": 1.0,
-    "Frostbolt": 40.169,
-    "OtherActionManaGain": 3.9996666666666667,
+    "item 8008": 1.0,
+    "Evocation": 0.3496666666666667,
+    "item 8007": 0.9926666666666667,
     "item 14152": 1.0,
-    "item 12662": 1.0
+    "item 13444": 1.4676666666666667,
+    "Arcane Power": 1.0
    },
-   "dps": 558.1798677015925,
-   "dps_stdev": 37.61460447017183,
-   "threat": 535.4480797133833,
+   "dps": 537.4175836630551,
+   "dps_stdev": 34.30273527200781,
+   "threat": 517.6793293970871,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.0025926666666666667,
+   "oom_seconds": 0.028457,
    "error": null,
-   "scorer": 0.7028878648797601,
+   "scorer": 0.6092677329859377,
    "shares": {
-    "Frostbolt": 0.7497593748829114,
-    "Arcane Missiles": 0.2502406251170886
+    "Frostbolt": 0.7486536709817128,
+    "Arcane Missiles": 0.2513463290182872
    },
    "source_shares": {
-    "frostbolt": 0.7498,
-    "missiles": 0.2502
+    "frostbolt": 0.7487,
+    "missiles": 0.2513
    },
    "unmatched_share": 0.0
   },
@@ -307,39 +323,42 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1240047": 10.246,
+    "12051": 0.961,
+    "25304": 60.14966666666667,
     "20554": 1.0,
-    "25304": 41.92633333333333,
+    "1240047": 14.776333333333334,
     "12472": 1.0
    },
    "casts": {
-    "Ice Lance": 10.246,
     "item 18820": 2.0,
-    "item 14152": 1.0,
+    "item 12662": 2.0,
+    "item 8007": 1.0,
+    "Evocation": 0.961,
+    "OtherActionManaGain": 6.224333333333333,
+    "Frostbolt": 60.14966666666667,
     "Berserking": 1.0,
-    "OtherActionManaGain": 4.0,
-    "Frostbolt": 41.92633333333333,
-    "item 13444": 1.0,
-    "item 8008": 1.0,
+    "item 13444": 1.2243333333333333,
+    "Ice Lance": 14.776333333333334,
+    "item 14152": 1.0,
     "Cold Snap": 1.0,
-    "item 12662": 1.0
+    "item 8008": 1.0
    },
-   "dps": 563.7528959857066,
-   "dps_stdev": 48.405286405658956,
-   "threat": 340.68877917004323,
+   "dps": 537.6905344266663,
+   "dps_stdev": 39.033454520435015,
+   "threat": 325.9747007855879,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.0015333333333333334,
    "error": null,
-   "scorer": 0.7280100984673318,
+   "scorer": 0.6776074969392395,
    "shares": {
-    "Frostbolt": 0.7529914050357713,
-    "Ice Lance": 0.24700859496422875
+    "Frostbolt": 0.7520114118073192,
+    "Ice Lance": 0.2479885881926808
    },
    "source_shares": {
-    "frostbolt": 0.753,
-    "ice_lance": 0.247
+    "frostbolt": 0.752,
+    "ice_lance": 0.248
    },
    "unmatched_share": 0.0
   },
@@ -351,36 +370,39 @@
    "measured": true,
    "spell_casts": {
     "20554": 1.0,
-    "1240047": 10.256666666666666,
-    "25304": 41.927
+    "1240047": 15.433666666666667,
+    "12051": 0.04833333333333333,
+    "25304": 62.69566666666667
    },
    "casts": {
-    "item 8008": 1.0,
-    "OtherActionManaGain": 4.0,
-    "item 13444": 1.0,
-    "item 18820": 2.0,
+    "item 8007": 1.0,
+    "OtherActionManaGain": 5.979,
+    "item 12662": 1.979,
     "Berserking": 1.0,
-    "Ice Lance": 10.256666666666666,
-    "Frostbolt": 41.927,
     "item 14152": 1.0,
-    "item 12662": 1.0
+    "item 18820": 2.0,
+    "Ice Lance": 15.433666666666667,
+    "Evocation": 0.04833333333333333,
+    "item 8008": 1.0,
+    "item 13444": 1.0,
+    "Frostbolt": 62.69566666666667
    },
-   "dps": 565.4282998339572,
-   "dps_stdev": 48.875804889826924,
-   "threat": 341.0982466837319,
+   "dps": 561.5892140627809,
+   "dps_stdev": 39.369727541891386,
+   "threat": 337.8053072702543,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7439774096655317,
+   "scorer": 0.7541037102898179,
    "shares": {
-    "Frostbolt": 0.7511903748987336,
-    "Ice Lance": 0.2488096251012663
+    "Frostbolt": 0.7500179930584384,
+    "Ice Lance": 0.2499820069415616
    },
    "source_shares": {
-    "frostbolt": 0.7512,
-    "ice_lance": 0.2488
+    "frostbolt": 0.75,
+    "ice_lance": 0.25
    },
    "unmatched_share": 0.0
   },
@@ -391,44 +413,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "25304": 35.877,
+    "25345": 10.630333333333333,
+    "25304": 53.44233333333333,
     "12043": 1.0,
-    "25346": 35.29066666666667,
-    "25345": 7.142,
-    "1240047": 8.858
+    "1240047": 13.364333333333333,
+    "12051": 0.06333333333333334,
+    "20554": 1.0,
+    "25346": 52.707
    },
    "casts": {
-    "Berserking": 1.0,
-    "Frostbolt": 35.877,
-    "item 8008": 1.0,
-    "Presence of Mind": 1.0,
-    "item 13444": 0.9836666666666667,
-    "Arcane Missiles": 42.43266666666667,
-    "OtherActionManaGain": 3.9836666666666667,
-    "item 14152": 1.0,
+    "Arcane Missiles": 63.33733333333333,
     "item 18820": 2.0,
-    "Ice Lance": 8.858,
-    "item 12662": 1.0
+    "Frostbolt": 53.44233333333333,
+    "Presence of Mind": 1.0,
+    "item 8007": 0.993,
+    "OtherActionManaGain": 5.792666666666666,
+    "Ice Lance": 13.364333333333333,
+    "item 8008": 1.0,
+    "item 12662": 1.789,
+    "Evocation": 0.06333333333333334,
+    "Berserking": 1.0,
+    "item 14152": 1.0,
+    "item 13444": 1.0106666666666666
    },
-   "dps": 587.4902231341634,
-   "dps_stdev": 46.220673306709614,
-   "threat": 484.39165947399374,
+   "dps": 581.5435235506326,
+   "dps_stdev": 37.09301049476864,
+   "threat": 477.62688987788323,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.002585333333333333,
    "error": null,
-   "scorer": 0.7377289378727636,
+   "scorer": 0.6944062090655341,
    "shares": {
-    "Frostbolt": 0.6120699138659885,
-    "Ice Lance": 0.2033853238164001,
-    "Arcane Missiles": 0.18454476231761144
+    "Frostbolt": 0.6102832379738177,
+    "Ice Lance": 0.20531474417503115,
+    "Arcane Missiles": 0.18440201785115104
    },
    "source_shares": {
-    "frostbolt": 0.6121,
-    "ice_lance": 0.2034,
-    "missiles": 0.1845
+    "frostbolt": 0.6103,
+    "ice_lance": 0.2053,
+    "missiles": 0.1844
    },
    "unmatched_share": 0.0
   },
@@ -439,35 +464,38 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 42.29533333333333,
-    "20554": 1.0,
-    "1240047": 10.355666666666666,
-    "12043": 1.0
+    "12051": 0.985,
+    "25304": 60.314,
+    "12043": 1.0,
+    "1240047": 14.848,
+    "20554": 1.0
    },
    "casts": {
-    "Frostbolt": 42.29533333333333,
-    "item 8008": 1.0,
-    "OtherActionManaGain": 4.0,
-    "item 12662": 1.0,
     "item 14152": 1.0,
-    "Berserking": 1.0,
-    "Ice Lance": 10.355666666666666,
     "item 18820": 2.0,
-    "item 13444": 1.0,
-    "Presence of Mind": 1.0
+    "Evocation": 0.985,
+    "item 13444": 1.423,
+    "item 12662": 2.0,
+    "item 8007": 1.0,
+    "OtherActionManaGain": 6.423,
+    "Frostbolt": 60.314,
+    "Presence of Mind": 1.0,
+    "Ice Lance": 14.848,
+    "Berserking": 1.0,
+    "item 8008": 1.0
    },
-   "dps": 568.4890747340796,
-   "dps_stdev": 49.221926007444225,
-   "threat": 481.9664435568431,
+   "dps": 540.30033309648,
+   "dps_stdev": 38.96092934062138,
+   "threat": 460.43593887054413,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.00019600000000000002,
+   "oom_seconds": 1.4666666666666666e-05,
    "error": null,
-   "scorer": 0.75571872206424,
+   "scorer": 0.7010740554056042,
    "shares": {
-    "Frostbolt": 0.7521046976783186,
-    "Ice Lance": 0.24789530232168144
+    "Frostbolt": 0.7521009114803486,
+    "Ice Lance": 0.24789908851965145
    },
    "source_shares": {
     "frostbolt": 0.7521,
@@ -482,44 +510,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25346": 35.126666666666665,
-    "1240047": 8.909333333333333,
+    "12051": 0.007666666666666666,
+    "25345": 10.704666666666666,
+    "25346": 53.037333333333336,
     "12043": 1.0,
-    "25345": 7.114333333333334,
     "20554": 1.0,
-    "25304": 35.88466666666667
+    "25304": 53.56366666666667,
+    "1240047": 13.343666666666667
    },
    "casts": {
-    "OtherActionManaGain": 3.9566666666666666,
-    "item 14152": 1.0,
-    "Arcane Missiles": 42.241,
-    "Ice Lance": 8.909333333333333,
-    "item 8008": 1.0,
-    "Presence of Mind": 1.0,
-    "Berserking": 1.0,
-    "item 12662": 1.0,
-    "item 13444": 0.9566666666666667,
+    "item 8007": 0.984,
+    "OtherActionManaGain": 5.644666666666667,
+    "Evocation": 0.007666666666666666,
     "item 18820": 2.0,
-    "Frostbolt": 35.88466666666667
+    "item 12662": 1.6593333333333333,
+    "Arcane Missiles": 63.742000000000004,
+    "Presence of Mind": 1.0,
+    "item 13444": 1.0013333333333334,
+    "item 14152": 1.0,
+    "Berserking": 1.0,
+    "Frostbolt": 53.56366666666667,
+    "Ice Lance": 13.343666666666667,
+    "item 8008": 1.0
    },
-   "dps": 583.5745251898082,
-   "dps_stdev": 46.18102073021162,
-   "threat": 442.3758015863438,
+   "dps": 578.5727718785126,
+   "dps_stdev": 36.74029452249655,
+   "threat": 437.09725616272397,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7307162542006027,
+   "scorer": 0.7123737197442324,
    "shares": {
-    "Frostbolt": 0.615557702931892,
-    "Ice Lance": 0.20497121865928153,
-    "Arcane Missiles": 0.17947107840882637
+    "Frostbolt": 0.6144249479452331,
+    "Ice Lance": 0.20489747875478395,
+    "Arcane Missiles": 0.18067757329998307
    },
    "source_shares": {
-    "frostbolt": 0.6156,
-    "ice_lance": 0.205,
-    "missiles": 0.1795
+    "frostbolt": 0.6144,
+    "ice_lance": 0.2049,
+    "missiles": 0.1807
    },
    "unmatched_share": 0.0
   },
@@ -531,38 +562,41 @@
    "measured": true,
    "spell_casts": {
     "20554": 1.0,
-    "1240047": 10.371666666666666,
+    "1240047": 14.883,
+    "12051": 0.9533333333333334,
     "12043": 1.0,
-    "25304": 42.287
+    "25304": 60.400333333333336
    },
    "casts": {
-    "item 8008": 1.0,
+    "item 13444": 1.4266666666666667,
     "Berserking": 1.0,
-    "item 13444": 1.0,
-    "item 18820": 2.0,
+    "item 8007": 1.0,
+    "Ice Lance": 14.883,
+    "OtherActionManaGain": 6.426666666666667,
     "item 14152": 1.0,
-    "Ice Lance": 10.371666666666666,
+    "item 8008": 1.0,
+    "item 18820": 2.0,
+    "item 12662": 2.0,
+    "Evocation": 0.9533333333333334,
     "Presence of Mind": 1.0,
-    "item 12662": 1.0,
-    "OtherActionManaGain": 4.0,
-    "Frostbolt": 42.287
+    "Frostbolt": 60.400333333333336
    },
-   "dps": 549.176227389431,
-   "dps_stdev": 47.08953515753637,
-   "threat": 465.0400314780271,
+   "dps": 521.6461248994046,
+   "dps_stdev": 38.04844181088696,
+   "threat": 444.07574936291286,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.0027366666666666668,
    "error": null,
-   "scorer": 0.7078168070106188,
+   "scorer": 0.6969836907492382,
    "shares": {
-    "Frostbolt": 0.7491809541451193,
-    "Ice Lance": 0.25081904585488074
+    "Frostbolt": 0.7490526494656811,
+    "Ice Lance": 0.2509473505343189
    },
    "source_shares": {
-    "frostbolt": 0.7492,
-    "ice_lance": 0.2508
+    "frostbolt": 0.7491,
+    "ice_lance": 0.2509
    },
    "unmatched_share": 0.0
   },
@@ -573,33 +607,36 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 41.882,
-    "1240047": 10.337666666666667,
+    "25304": 59.99666666666667,
+    "12051": 0.9986666666666667,
+    "1240047": 14.818666666666667,
     "20554": 1.0
    },
    "casts": {
-    "item 13444": 1.0,
-    "Frostbolt": 41.882,
-    "OtherActionManaGain": 19.16,
-    "item 18820": 2.0,
-    "item 12662": 1.0,
-    "Ice Lance": 10.337666666666667,
     "item 14152": 1.0,
+    "item 18820": 2.0,
+    "item 13444": 1.1136666666666666,
+    "item 12662": 2.0,
+    "OtherActionManaGain": 27.964333333333332,
     "item 8008": 1.0,
-    "Berserking": 1.0
+    "Frostbolt": 59.99666666666667,
+    "Evocation": 0.9986666666666667,
+    "Ice Lance": 14.818666666666667,
+    "Berserking": 1.0,
+    "item 8007": 1.0
    },
-   "dps": 570.5400511365274,
-   "dps_stdev": 49.4796331547857,
-   "threat": 346.3452029334056,
+   "dps": 541.7264659675776,
+   "dps_stdev": 38.996647524794355,
+   "threat": 329.7457628865284,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.735079431293796,
+   "scorer": 0.660780775971705,
    "shares": {
-    "Frostbolt": 0.7444926815145521,
-    "Ice Lance": 0.2555073184854479
+    "Frostbolt": 0.7444771971715798,
+    "Ice Lance": 0.25552280282842027
    },
    "source_shares": {
     "frostbolt": 0.7445,
@@ -614,37 +651,40 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 41.894333333333336,
-    "20554": 1.0,
-    "1240047": 10.32
+    "25304": 60.002,
+    "12051": 1.0,
+    "1240047": 14.815333333333333,
+    "20554": 1.0
    },
    "casts": {
-    "item 13444": 1.0,
-    "OtherActionManaGain": 19.146,
-    "Frostbolt": 41.894333333333336,
+    "item 12662": 2.0,
+    "Frostbolt": 60.002,
+    "item 8008": 1.0,
+    "Evocation": 1.0,
+    "Ice Lance": 14.815333333333333,
     "Berserking": 1.0,
-    "item 12662": 1.0,
     "item 14152": 1.0,
-    "item 18820": 2.0,
-    "Ice Lance": 10.32,
-    "item 8008": 1.0
+    "item 13444": 1.286,
+    "item 8007": 1.0,
+    "OtherActionManaGain": 28.123666666666665,
+    "item 18820": 2.0
    },
-   "dps": 570.5364341530515,
-   "dps_stdev": 49.884806930540826,
-   "threat": 345.0018289095664,
+   "dps": 541.8361430491079,
+   "dps_stdev": 39.597511119705544,
+   "threat": 329.2587885369588,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7347526857945466,
+   "scorer": 0.660780775971705,
    "shares": {
-    "Frostbolt": 0.7448370291129826,
-    "Ice Lance": 0.25516297088701745
+    "Frostbolt": 0.7444071779914534,
+    "Ice Lance": 0.2555928220085467
    },
    "source_shares": {
-    "frostbolt": 0.7448,
-    "ice_lance": 0.2552
+    "frostbolt": 0.7444,
+    "ice_lance": 0.2556
    },
    "unmatched_share": 0.0
   },
@@ -655,39 +695,42 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 41.33833333333333,
     "12472": 1.0,
+    "12051": 1.0,
     "20554": 1.0,
-    "1240047": 10.118333333333334
+    "1240047": 14.764333333333333,
+    "25304": 60.02333333333333
    },
    "casts": {
-    "Frostbolt": 41.33833333333333,
+    "item 12662": 2.0,
     "Cold Snap": 1.0,
+    "OtherActionManaGain": 28.784,
+    "item 13444": 1.9993333333333334,
+    "item 18820": 2.0,
+    "Evocation": 1.0,
+    "item 8008": 1.0,
+    "item 8007": 1.0,
     "Berserking": 1.0,
     "item 14152": 1.0,
-    "item 18820": 2.0,
-    "item 12662": 1.0,
-    "item 13444": 1.0,
-    "Ice Lance": 10.118333333333334,
-    "item 8008": 1.0,
-    "OtherActionManaGain": 18.929333333333332
+    "Ice Lance": 14.764333333333333,
+    "Frostbolt": 60.02333333333333
    },
-   "dps": 564.3920687500632,
-   "dps_stdev": 53.76961903934495,
-   "threat": 480.5341461772785,
+   "dps": 541.1532796442797,
+   "dps_stdev": 39.211808865781684,
+   "threat": 465.4804242602013,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 2.804906000000002,
+   "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6609095903740365,
+   "scorer": 0.660910775971705,
    "shares": {
-    "Frostbolt": 0.7465259336334444,
-    "Ice Lance": 0.25347406636655545
+    "Frostbolt": 0.7454875958027702,
+    "Ice Lance": 0.2545124041972298
    },
    "source_shares": {
-    "frostbolt": 0.7465,
-    "ice_lance": 0.2535
+    "frostbolt": 0.7455,
+    "ice_lance": 0.2545
    },
    "unmatched_share": 0.0
   },
@@ -698,37 +741,40 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1240047": 10.256666666666666,
     "20554": 1.0,
-    "25304": 41.927
+    "25304": 62.69566666666667,
+    "12051": 0.04833333333333333,
+    "1240047": 15.433666666666667
    },
    "casts": {
-    "item 18820": 2.0,
-    "item 12662": 1.0,
-    "Ice Lance": 10.256666666666666,
-    "item 14152": 1.0,
-    "item 13444": 1.0,
+    "item 8007": 1.0,
     "Berserking": 1.0,
-    "item 8008": 1.0,
-    "OtherActionManaGain": 4.0,
-    "Frostbolt": 41.927
+    "item 14152": 1.0,
+    "item 12662": 1.979,
+    "item 13444": 1.0,
+    "Frostbolt": 62.69566666666667,
+    "item 18820": 2.0,
+    "Evocation": 0.04833333333333333,
+    "OtherActionManaGain": 5.979,
+    "Ice Lance": 15.433666666666667,
+    "item 8008": 1.0
    },
-   "dps": 565.4282998339572,
-   "dps_stdev": 48.875804889826924,
-   "threat": 341.0982466837319,
+   "dps": 561.5892140627809,
+   "dps_stdev": 39.369727541891386,
+   "threat": 337.8053072702543,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7439774096655317,
+   "scorer": 0.7541037102898179,
    "shares": {
-    "Frostbolt": 0.7511903748987336,
-    "Ice Lance": 0.2488096251012663
+    "Frostbolt": 0.7500179930584384,
+    "Ice Lance": 0.2499820069415616
    },
    "source_shares": {
-    "frostbolt": 0.7512,
-    "ice_lance": 0.2488
+    "frostbolt": 0.75,
+    "ice_lance": 0.25
    },
    "unmatched_share": 0.0
   },
@@ -739,41 +785,42 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "12472": 1.0,
+    "1240047": 14.846333333333334,
     "20554": 1.0,
-    "1240047": 9.529333333333334,
-    "12051": 0.026,
-    "25304": 38.543
+    "25304": 59.99366666666667,
+    "12472": 1.0,
+    "12051": 1.0
    },
    "casts": {
-    "OtherActionManaGain": 4.0,
+    "item 13444": 2.0,
+    "Ice Lance": 14.846333333333334,
     "item 8008": 1.0,
-    "Cold Snap": 1.0,
-    "Berserking": 1.0,
-    "item 12662": 1.0,
-    "Ice Lance": 9.529333333333334,
-    "item 18820": 2.0,
-    "Evocation": 0.026,
-    "item 13444": 1.0,
+    "item 12662": 2.0,
+    "item 8007": 1.0,
     "item 14152": 1.0,
-    "Frostbolt": 38.543
+    "item 18820": 2.0,
+    "Berserking": 1.0,
+    "Frostbolt": 59.99366666666667,
+    "OtherActionManaGain": 7.0,
+    "Cold Snap": 1.0,
+    "Evocation": 1.0
    },
-   "dps": 529.3253734300396,
-   "dps_stdev": 47.92960316112045,
-   "threat": 447.4384283391488,
+   "dps": 538.973644761679,
+   "dps_stdev": 38.824195714496625,
+   "threat": 459.0235126810849,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 10.820140666666767,
+   "oom_seconds": 0.0005,
    "error": null,
-   "scorer": 0.6710290444397421,
+   "scorer": 0.6720181569240858,
    "shares": {
-    "Frostbolt": 0.7454556975666916,
-    "Ice Lance": 0.25454430243330833
+    "Frostbolt": 0.7441515993148836,
+    "Ice Lance": 0.25584840068511644
    },
    "source_shares": {
-    "frostbolt": 0.7455,
-    "ice_lance": 0.2545
+    "frostbolt": 0.7442,
+    "ice_lance": 0.2558
    },
    "unmatched_share": 0.0
   },
@@ -784,39 +831,42 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 41.949666666666666,
+    "1240047": 14.708666666666666,
     "12472": 1.0,
+    "25304": 60.059333333333335,
     "20554": 1.0,
-    "1240047": 10.229666666666667
+    "12051": 1.0
    },
    "casts": {
-    "item 13444": 1.0,
-    "Frostbolt": 41.949666666666666,
-    "item 14152": 1.0,
+    "Ice Lance": 14.708666666666666,
     "item 8008": 1.0,
     "Cold Snap": 1.0,
-    "OtherActionManaGain": 4.0,
+    "item 13444": 1.7716666666666667,
+    "Frostbolt": 60.059333333333335,
     "Berserking": 1.0,
-    "Ice Lance": 10.229666666666667,
-    "item 12662": 1.0,
-    "item 18820": 2.0
+    "item 12662": 2.0,
+    "item 18820": 2.0,
+    "Evocation": 1.0,
+    "item 14152": 1.0,
+    "OtherActionManaGain": 6.7716666666666665,
+    "item 8007": 1.0
    },
-   "dps": 568.6650834175367,
-   "dps_stdev": 49.83763218735732,
-   "threat": 341.81956081135587,
+   "dps": 541.2645381321435,
+   "dps_stdev": 39.29156858999294,
+   "threat": 329.16930654666527,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.7497510936541799,
+   "scorer": 0.6720081569240858,
    "shares": {
-    "Frostbolt": 0.7473970257540148,
-    "Ice Lance": 0.25260297424598516
+    "Frostbolt": 0.7464576160713304,
+    "Ice Lance": 0.2535423839286695
    },
    "source_shares": {
-    "frostbolt": 0.7474,
-    "ice_lance": 0.2526
+    "frostbolt": 0.7465,
+    "ice_lance": 0.2535
    },
    "unmatched_share": 0.0
   },
@@ -826,24 +876,27 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25304": 41.90133333333333,
-    "20554": 1.0,
-    "1240047": 10.299
+    "1240047": 15.479666666666667,
+    "12051": 0.04666666666666667,
+    "25304": 62.67,
+    "20554": 1.0
    },
    "casts": {
-    "item 12662": 1.0,
-    "Frostbolt": 41.90133333333333,
+    "item 8007": 1.0,
+    "item 12662": 1.9773333333333334,
     "item 8008": 1.0,
-    "Berserking": 1.0,
+    "Ice Lance": 15.479666666666667,
+    "Evocation": 0.04666666666666667,
+    "OtherActionManaGain": 5.977333333333333,
+    "Frostbolt": 62.67,
     "item 18820": 2.0,
-    "Ice Lance": 10.299,
-    "item 14152": 1.0,
     "item 13444": 1.0,
-    "OtherActionManaGain": 4.0
+    "Berserking": 1.0,
+    "item 14152": 1.0
    },
-   "dps": 557.0185791127544,
-   "dps_stdev": 48.26257693935086,
-   "threat": 336.2474543146692,
+   "dps": 552.5617500240456,
+   "dps_stdev": 39.90358529444876,
+   "threat": 332.6745317797705,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -851,12 +904,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7509280341562411,
-    "Ice Lance": 0.24907196584375893
+    "Frostbolt": 0.7500171744775029,
+    "Ice Lance": 0.24998282552249707
    },
    "source_shares": {
-    "frostbolt": 0.7509,
-    "ice_lance": 0.2491
+    "frostbolt": 0.75,
+    "ice_lance": 0.25
    },
    "unmatched_share": 0.0
   },
@@ -866,29 +919,30 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25345": 6.868,
-    "25304": 34.602333333333334,
-    "12042": 1.0,
-    "20554": 1.0,
     "12043": 1.0,
-    "25346": 33.970333333333336
+    "20554": 1.0,
+    "25345": 10.284666666666666,
+    "25304": 51.78033333333333,
+    "25346": 50.939,
+    "12042": 1.0
    },
    "casts": {
-    "Arcane Missiles": 40.83833333333334,
-    "Frostbolt": 34.602333333333334,
-    "Arcane Power": 1.0,
-    "OtherActionManaGain": 8.398333333333333,
-    "Berserking": 1.0,
-    "item 12662": 0.999,
-    "item 8008": 0.9996666666666667,
     "Presence of Mind": 1.0,
-    "item 13444": 0.771,
+    "Berserking": 1.0,
+    "item 8007": 0.851,
+    "item 14152": 1.0,
+    "OtherActionManaGain": 12.357,
     "item 18820": 2.0,
-    "item 14152": 1.0
+    "Arcane Missiles": 61.22366666666667,
+    "item 13444": 0.987,
+    "Frostbolt": 51.78033333333333,
+    "item 12662": 1.608,
+    "Arcane Power": 1.0,
+    "item 8008": 1.0
    },
-   "dps": 418.3316807453863,
-   "dps_stdev": 33.79456924980871,
-   "threat": 401.4556798928747,
+   "dps": 408.5267272289667,
+   "dps_stdev": 27.519746305634836,
+   "threat": 391.6669723725521,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -896,12 +950,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7132760842385505,
-    "Arcane Missiles": 0.28672391576144957
+    "Frostbolt": 0.7122345788224692,
+    "Arcane Missiles": 0.2877654211775307
    },
    "source_shares": {
-    "frostbolt": 0.7133,
-    "missiles": 0.2867
+    "frostbolt": 0.7122,
+    "missiles": 0.2878
    },
    "unmatched_share": 0.0
   },
@@ -911,24 +965,27 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "25304": 59.995,
     "11129": 1.0,
     "20554": 1.0,
-    "25304": 40.0
+    "12051": 0.0016666666666666668
    },
    "casts": {
-    "item 14152": 1.0,
-    "item 13444": 0.9996666666666667,
-    "item 12662": 1.0,
-    "Combustion": 1.0,
-    "OtherActionManaGain": 8.09,
-    "Berserking": 1.0,
+    "OtherActionManaGain": 12.081,
+    "item 8007": 1.0,
     "item 18820": 2.0,
-    "Frostbolt": 40.0,
+    "Frostbolt": 59.995,
+    "item 13444": 1.0,
+    "item 14152": 1.0,
+    "Combustion": 1.0,
+    "Berserking": 1.0,
+    "Evocation": 0.0016666666666666668,
+    "item 12662": 1.9313333333333333,
     "item 8008": 1.0
    },
-   "dps": 317.87646559513183,
-   "dps_stdev": 23.306630547164435,
-   "threat": 338.5224821756012,
+   "dps": 314.4961113167036,
+   "dps_stdev": 18.910591546579145,
+   "threat": 334.22493625923863,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -949,24 +1006,27 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "25304": 59.992,
+    "12051": 0.0026666666666666666,
     "11129": 1.0,
-    "25304": 40.0,
     "20554": 1.0
    },
    "casts": {
-    "Combustion": 1.0,
-    "item 13444": 1.0,
-    "item 8008": 1.0,
-    "OtherActionManaGain": 8.390666666666666,
-    "Frostbolt": 40.0,
-    "Berserking": 1.0,
+    "Frostbolt": 59.992,
+    "item 8007": 1.0,
+    "item 14152": 1.0,
     "item 18820": 2.0,
-    "item 12662": 1.0,
-    "item 14152": 1.0
+    "Evocation": 0.0026666666666666666,
+    "item 12662": 2.0,
+    "item 8008": 1.0,
+    "OtherActionManaGain": 12.567333333333334,
+    "item 13444": 1.0,
+    "Combustion": 1.0,
+    "Berserking": 1.0
    },
-   "dps": 377.71697495821786,
-   "dps_stdev": 28.540022859701843,
-   "threat": 285.15347754569024,
+   "dps": 373.45100535778005,
+   "dps_stdev": 22.953746947743902,
+   "threat": 281.47057268929336,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -987,41 +1047,42 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12051": 0.001,
-    "20554": 1.0,
+    "1240047": 14.805,
     "12472": 1.0,
-    "25304": 41.291,
-    "1240047": 10.154666666666667
+    "20554": 1.0,
+    "25304": 59.995333333333335,
+    "12051": 1.0
    },
    "casts": {
-    "OtherActionManaGain": 4.0,
-    "Evocation": 0.001,
-    "Berserking": 1.0,
-    "item 12662": 1.0,
-    "Cold Snap": 1.0,
     "item 14152": 1.0,
+    "Ice Lance": 14.805,
+    "item 13444": 1.9423333333333332,
+    "Cold Snap": 1.0,
+    "item 12662": 2.0,
     "item 18820": 2.0,
-    "Frostbolt": 41.291,
-    "Ice Lance": 10.154666666666667,
-    "item 13444": 1.0,
-    "item 8008": 1.0
+    "item 8008": 1.0,
+    "Berserking": 1.0,
+    "item 8007": 1.0,
+    "Frostbolt": 59.995333333333335,
+    "Evocation": 1.0,
+    "OtherActionManaGain": 6.942333333333333
    },
-   "dps": 558.8331777289536,
-   "dps_stdev": 49.929904254615806,
-   "threat": 474.1456882587772,
+   "dps": 537.0055238671063,
+   "dps_stdev": 38.37462711738708,
+   "threat": 460.0942062108776,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 2.6138496666666677,
+   "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7521959470236478,
-    "Ice Lance": 0.2478040529763522
+    "Frostbolt": 0.7514621080679855,
+    "Ice Lance": 0.2485378919320145
    },
    "source_shares": {
-    "frostbolt": 0.7522,
-    "ice_lance": 0.2478
+    "frostbolt": 0.7515,
+    "ice_lance": 0.2485
    },
    "unmatched_share": 0.0
   },
@@ -1031,29 +1092,30 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25345": 6.915333333333334,
-    "25304": 34.571666666666665,
-    "25346": 34.193,
+    "25346": 51.187333333333335,
+    "25345": 10.325,
+    "25304": 51.723333333333336,
     "12043": 1.0,
     "12042": 1.0,
     "20554": 1.0
    },
    "casts": {
-    "item 12662": 0.986,
-    "OtherActionManaGain": 3.291,
-    "Arcane Missiles": 41.108333333333334,
-    "item 14152": 1.0,
     "item 18820": 2.0,
-    "item 8008": 0.9953333333333333,
-    "Frostbolt": 34.571666666666665,
-    "item 13444": 0.30966666666666665,
+    "item 8007": 0.628,
+    "item 14152": 1.0,
+    "Arcane Missiles": 61.51233333333333,
+    "OtherActionManaGain": 4.798666666666667,
+    "Frostbolt": 51.723333333333336,
     "Presence of Mind": 1.0,
+    "item 12662": 1.2736666666666667,
+    "item 8008": 1.0,
     "Arcane Power": 1.0,
-    "Berserking": 1.0
+    "Berserking": 1.0,
+    "item 13444": 0.897
    },
-   "dps": 478.5044753526835,
-   "dps_stdev": 36.71792143601505,
-   "threat": 385.1055328086582,
+   "dps": 467.8419426577161,
+   "dps_stdev": 29.698059303789492,
+   "threat": 377.56006814957505,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -1061,12 +1123,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7474459952375767,
-    "Arcane Missiles": 0.25255400476242323
+    "Frostbolt": 0.7476866764709683,
+    "Arcane Missiles": 0.25231332352903174
    },
    "source_shares": {
-    "frostbolt": 0.7474,
-    "missiles": 0.2526
+    "frostbolt": 0.7477,
+    "missiles": 0.2523
    },
    "unmatched_share": 0.0
   }

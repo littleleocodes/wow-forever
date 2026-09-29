@@ -4,9 +4,11 @@
 
 **[Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-4)
 
+## The numbers
+
 Healing capacity 0.69 (the raid damage it heals through in this project's healer lab), 396 healing per second. Healers are not in the community simulator.
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Raid healing](../research/raid/builds/opt-resto-heal-raid-heal.md) (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-4)
 

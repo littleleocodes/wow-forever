@@ -9,19 +9,19 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Elemental Alacrity | Elemental | 3 | +6.29% | manual |
+| Elemental Alacrity | Elemental | 3 | +6.24% | manual |
 | Mental Quickness | Enhancement | 5 | +4.64% | manual |
 | Elemental Fury | Elemental | 6 | +1.62% | manual |
-| Call of Flame | Elemental | 2 | +1.62% | manual |
+| Call of Flame | Elemental | 2 | +1.61% | manual |
+| Shamanistic Focus | Enhancement | 3 | +1.48% | manual |
+| Lava Burst | Elemental | 7 | +1.15% | manual |
 | Call of Thunder | Elemental | 4 | +1.13% | manual |
 | Tidal Focus | Restoration | 2 | +1.13% | manual |
-| Lava Burst | Elemental | 7 | +1.10% | manual |
 | Lightning Overload | Elemental | 5 | +0.87% | manual |
 | Concussion | Elemental | 1 | +0.82% | manual |
+| Mindfulness | Restoration | 2 | +0.59% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Thundering Strikes | Enhancement | 1 | +0.46% | manual |
-| Mindfulness | Restoration | 2 | +0.33% | manual |
-| Shamanistic Focus | Enhancement | 3 | +0.30% | manual |
 | Mana Tide Totem | Restoration | 4 | +0.25% | manual |
 | Elemental Focus | Elemental | 3 | +0.18% | manual |
 | Ancestral Knowledge | Enhancement | 1 | +0.11% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 | Guardian Totems | Enhancement | 2 | +0.00% | manual |
 | Mental Dexterity | Enhancement | 2 | +0.00% | manual |
 
-## Optimized build: 29/22/0  score +68.23%  (dps x1.672, sustain x1.051, surv x1.124, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.451  — use this to compare models with different pet shares.
+## Optimized build: 29/22/0  score +69.09%  (dps x1.669, sustain x1.109, surv x1.124, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.449  — use this to compare models with different pet shares.
 
 ```
   Elemental: Concussion 5, Convection 5, Call of Flame 3, Elemental Warding 3, Reverberation 1, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Lightning Overload 3, Elemental Fury 4
@@ -53,10 +53,10 @@ Absolute DPS index (character alone, no talents = 1.00): 1.451  — use this to 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
 | Elemental Fury | Elemental 6 | 5/5 | +3.41% | yes |
-| Lava Burst | Elemental 7 | 1/1 | +1.85% | no |
+| Lava Burst | Elemental 7 | 1/1 | +1.94% | no |
 | Tidal Focus | Restoration 2 | 1/5 | +1.85% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.84% | no |
-| Mindfulness | Restoration 2 | 1/3 | +0.33% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.83% | no |
+| Mindfulness | Restoration 2 | 1/3 | +0.59% | no |
 | Mana Tide Totem | Restoration 4 | 1/1 | +0.25% | no |
 | Totemic Focus | Restoration 1 | 1/5 | +0.01% | yes |
 | Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | no |

@@ -6,7 +6,24 @@
 
 **[Leveling — Shadow](../research/leveling/builds/leveling-shadow.md)** (18/0/33) — [open the talent tree](https://talentsforever.com/priest/60/005003231301--535022001201310251-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it. **Power Word: Shield** on yourself before the pull.
+
+**In the fight**, top to bottom:
+
+1. **Mind Blast** to pull.
+2. **Shadow Word: Pain**.
+3. **Vampiric Embrace** and **Devouring Plague** (they heal you).
+4. **Mind Blast** whenever ready, **Mind Flay** in between (it slows the mob).
+5. **Shadow Word: Death** when the mob is below 20% health.
+6. Finish a nearly dead mob with your wand; **Psychic Scream** if your health gets low.
+
+**Between fights:** Drink below a third of your mana, eat below two thirds of your health (**Renew** outside Shadowform).
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -36,7 +53,7 @@ Talent order (one point per level from 10):
 | 59 | Mental Agility (Discipline) | 1 |
 | 60 | Mental Strength (Discipline) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level: Power Word: Shield and Inner Fire before the pull, Mind Blast at 30 yd, Shadow Word: Pain, Mind Flay channels (50% slow) and Mind Blast on cooldown while the mob walks in and once it is on you (the shield stops pushback while it holds), Vampiric Embrace and Devouring Plague heal, Shadow Word: Death below 20%, wand to finish without overkill; Psychic Scream and Desperate Prayer when health runs low. Between fights: 2 s loot, 6 s travel, Renew (not in Shadowform), conjured water below 35% mana, food below 65% health; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -46,7 +63,7 @@ Talent order (one point per level from 10):
 | 50 | 23 |
 | 60 | 21 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Shadow leveling/raid](../research/leveling/builds/opt-shadow-dps-leveling-st.md) (7/11/33, 30 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-4)
 - [Shadow leveling/raid](../research/leveling/builds/opt-shadow-dps-solo-60.md) (7/11/33) — [open the talent tree](https://talentsforever.com/priest/60/005002-320501-551002501201300251-4)

@@ -4,15 +4,37 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `beast-mastery-raid` | 30/21/0 | 469 | 510 | 808 | 808 | 824 |
-| `mm-hawk-raid` | 22/29/0 | 468 | 507 | 814 | 814 | 832 |
-| sim preset: Beast Mastery 35/16/0 | - | 437 | 474 | 764 | 764 | 787 |
+| `mm-hawk-raid` | 22/29/0 | 448 | 485 | 809 | 809 | 832 |
+| `beast-mastery-raid` | 30/21/0 | 438 | 477 | 802 | 802 | 824 |
+| sim preset: Beast Mastery 35/16/0 | - | 416 | 452 | 761 | 761 | 787 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `mm-hawk-raid` | 448 | +4% | +32% | +8% | +3% | +33% | 809 |
+| `beast-mastery-raid` | 438 | +7% | +33% | +8% | +3% | +32% | 802 |
+| sim preset: Beast Mastery 35/16/0 | 416 | +5% | +34% | +10% | +3% | +31% | 761 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `mm-hawk-raid` | 474 | 462 | 407 | 405 | 396 |
+| `beast-mastery-raid` | 474 | 464 | 377 | 381 | 380 |
+| sim preset: Beast Mastery 35/16/0 | 446 | 429 | 373 | 368 | 367 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p1.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -9,22 +9,22 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology | 3 | +14.85% | manual |
-| Bane | Destruction | 1 | +1.78% | manual |
-| Agonizing Flames | Destruction | 4 | +1.59% | manual |
+| Demonic Sacrifice | Demonology | 3 | +14.93% | manual |
+| Bane | Destruction | 1 | +1.80% | manual |
+| Agonizing Flames | Destruction | 4 | +1.60% | manual |
 | Suppression | Affliction | 1 | +1.19% | manual |
-| Improved Shadow Bolt | Destruction | 1 | +1.12% | manual |
-| Improved Corruption | Affliction | 1 | +0.88% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.82% | manual |
-| Amplify Curse | Affliction | 3 | +0.82% | manual |
-| Ruin | Destruction | 3 | +0.70% | manual |
-| Malevolence | Affliction | 4 | +0.61% | manual |
+| Improved Shadow Bolt | Destruction | 1 | +1.11% | manual |
+| Improved Corruption | Affliction | 1 | +0.87% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.81% | manual |
+| Amplify Curse | Affliction | 3 | +0.81% | manual |
+| Ruin | Destruction | 3 | +0.71% | manual |
+| Malevolence | Affliction | 4 | +0.60% | manual |
 | Pandemic | Affliction | 3 | +0.59% | manual |
 | Shadowburn | Destruction | 3 | +0.59% | manual |
-| Wrack | Affliction | 7 | +0.45% | manual |
+| Wrack | Affliction | 7 | +0.44% | manual |
 | Malediction | Affliction | 2 | +0.44% | manual |
 | Shadow Mastery | Affliction | 6 | +0.34% | manual |
-| Aftermath | Destruction | 2 | +0.26% | manual |
+| Aftermath | Destruction | 2 | +0.27% | manual |
 | Improved Life Tap | Affliction | 1 | +0.24% | manual |
 | Nightfall | Affliction | 4 | +0.22% | manual |
 | Fel Vitality | Demonology | 2 | +0.13% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Soul Siphon | Affliction | 5 | +0.00% | manual |
 | Improved Health Funnel | Demonology | 1 | +0.00% | manual |
 
-## Optimized build: 21/11/19  score +76.95%  (dps x1.766, sustain x1.020, surv x1.020, utility +0.00%)
+## Optimized build: 21/11/19  score +77.12%  (dps x1.767, sustain x1.020, surv x1.020, utility +0.00%)
 
 ```
   Affliction: Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Amplify Curse 1, Pandemic 3, Malevolence 5
@@ -52,11 +52,11 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Wrack | Affliction 7 | 1/1 | +0.77% | no |
-| Malediction | Affliction 2 | 1/5 | +0.75% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.76% | no |
+| Malediction | Affliction 2 | 1/5 | +0.76% | yes |
 | Shadow Mastery | Affliction 6 | 1/5 | +0.57% | no |
-| Aftermath | Destruction 2 | 1/5 | +0.46% | yes |
-| Nightfall | Affliction 4 | 1/2 | +0.41% | yes |
+| Aftermath | Destruction 2 | 1/5 | +0.50% | yes |
+| Nightfall | Affliction 4 | 1/2 | +0.40% | yes |
 | Improved Life Tap | Affliction 1 | 1/2 | +0.24% | yes |
 | Decimation | Demonology 4 | 1/2 | +0.16% | no |
 | Cataclysm | Destruction 2 | 1/3 | +0.09% | yes |

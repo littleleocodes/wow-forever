@@ -9,21 +9,21 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.28% | manual |
-| Shredding Attacks | Feral Combat | 4 | +3.97% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.38% | manual |
+| Shredding Attacks | Feral Combat | 4 | +3.85% | manual |
 | Berserk | Feral Combat | 7 | +3.68% | manual |
 | King of the Jungle | Feral Combat | 5 | +3.36% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.62% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.60% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
-| Nature's Majesty | Balance | 2 | +1.44% | manual |
-| Savage Fury | Feral Combat | 3 | +1.29% | manual |
-| Predatory Instincts | Feral Combat | 5 | +1.13% | manual |
+| Nature's Majesty | Balance | 2 | +1.43% | manual |
+| Savage Fury | Feral Combat | 3 | +1.25% | manual |
+| Predatory Instincts | Feral Combat | 5 | +1.12% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Reflection | Restoration | 3 | +0.68% | manual |
 | Moonkin Form | Balance | 7 | +0.60% | manual |
-| Genesis | Balance | 1 | +0.31% | manual |
+| Genesis | Balance | 1 | +0.32% | manual |
 | Heart of the Wild | Feral Combat | 1 | +0.30% | manual |
 | Tranquil Spirit | Restoration | 4 | +0.12% | manual |
 | Furor | Restoration | 1 | +0.10% | manual |
@@ -40,10 +40,10 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Nature's Grace | Balance | 5 | +0.00% | manual |
 | Eclipse | Balance | 5 | +0.00% | manual |
 
-## Optimized build: 9/35/7  score +103.66%  (dps x2.035, sustain x1.008, surv x1.000, utility +0.00%)
+## Optimized build: 9/35/7  score +102.67%  (dps x2.025, sustain x1.008, surv x1.000, utility +0.00%)
 
 ```
-  Balance: Genesis 5, Nature's Reach 2, Nature's Majesty 2
+  Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
   Feral Combat: Heart of the Wild 5, Ferocity 5, Feral Swiftness 1, Sharpened Claws 2, Savage Fury 2, Blood Frenzy 2, Shredding Attacks 3, Predatory Strikes 3, Leader of the Pack 1, King of the Jungle 3, Predatory Instincts 2, Rend and Tear 5, Berserk 1
   Restoration: Furor 5, Naturalist 2
 ```
@@ -52,7 +52,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Naturalist | Restoration 2 | 3/5 | +2.00% | yes |
+| Naturalist | Restoration 2 | 3/5 | +1.99% | yes |
 | Reflection | Restoration 3 | 1/3 | +0.68% | no |
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |

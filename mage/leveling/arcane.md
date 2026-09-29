@@ -6,7 +6,23 @@
 
 > ⚗ Generated build: no hand-made Arcane build exists for this mode yet, so this is the stats model's best Arcane build. A starting point, not a proven build.
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can.
+
+**In the fight**, top to bottom:
+
+1. **Frostbolt** while the mob walks in (it slows it).
+2. **Frost Nova** when it reaches you, then step back.
+3. **Ice Lance** (or **Frostbolt**) while it is frozen.
+4. Finish a nearly dead mob with **Fire Blast** or your wand.
+5. **Counterspell** a mob that casts spells.
+
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -35,7 +51,7 @@ Talent order (one point per level from 10):
 | 59 | Arcane Mind (Arcane) | 1 |
 | 60 | Arcane Shielding (Arcane) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|

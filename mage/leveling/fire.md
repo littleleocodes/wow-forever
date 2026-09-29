@@ -4,7 +4,23 @@
 
 **[Single-target Fireball leveling](../research/leveling/builds/opt-fire-leveling-leveling-st.md)** (0/33/18) — [open the talent tree](https://talentsforever.com/mage/60/-00552330130103151-00551030010012-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up. Pull from as far away as you can.
+
+**In the fight**, top to bottom:
+
+1. **Fireball** while the mob has more than a fifth of its health.
+2. **Frost Nova** when it reaches you, then step back.
+3. **Fire Blast** whenever ready; **Scorch** only when you have plenty of mana.
+4. Finish a nearly dead mob with your wand.
+5. **Counterspell** a mob that casts spells.
+
+**Between fights:** Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -33,7 +49,7 @@ Talent order (one point per level from 10):
 | 59 | Pyroblast (Fire) | 1 |
 | 60 | Hot Streak (Fire) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level: pull at max range, the mob walks in at 7 yd/s (slowed by chills), swings every 2 s once in melee (pushing casts back), Frost Nova when it arrives, a 2-second step back, Ice Lance/Frostbolt into the freeze, Fire Blast and wand to finish without overkill. Between fights: 2 s loot, 6 s travel, Evocation when low, conjured water below 35% mana, food below 65% health; a death costs 90 s. Every hit, miss, crit, partial resist, chill, freeze, proc and pushback is rolled.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|

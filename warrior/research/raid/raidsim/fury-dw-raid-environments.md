@@ -4,18 +4,46 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-fury-dw-raid-raid-dps` | 14/37/0 | 256 | 217 | 442 | 442 | 437 |
-| `opt-fury-dw-raid-parse` | 14/37/0 | 256 | 217 | 442 | 442 | 437 |
-| `fury-dw-raid` | 13/38/0 | 255 | 211 | 455 | 455 | 459 |
-| sim preset: DPS | - | 240 | 213 | 439 | 439 | 448 |
-| sim preset: Fury 17/34/0 | - | 223 | 193 | 408 | 408 | 414 |
-| sim preset: Arms 39/12/0 | - | 144 | 143 | 275 | 275 | 272 |
+| `opt-fury-dw-raid-raid-dps` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
+| `opt-fury-dw-raid-parse` | 14/37/0 | 218 | 210 | 375 | 375 | 437 |
+| `fury-dw-raid` | 13/38/0 | 216 | 206 | 402 | 402 | 459 |
+| sim preset: DPS | - | 208 | 209 | 391 | 391 | 448 |
+| sim preset: Fury 17/34/0 | - | 192 | 189 | 364 | 364 | 414 |
+| sim preset: Arms 39/12/0 | - | 136 | 145 | 264 | 264 | 272 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `opt-fury-dw-raid-raid-dps` | 218 | +0% | +39% | +39% | +0% | -6% | 375 |
+| `opt-fury-dw-raid-parse` | 218 | +0% | +39% | +39% | +0% | -6% | 375 |
+| `fury-dw-raid` | 216 | +0% | +39% | +39% | +0% | +7% | 402 |
+| sim preset: DPS | 208 | +0% | +39% | +41% | +0% | +8% | 391 |
+| sim preset: Fury 17/34/0 | 192 | +0% | +39% | +42% | +0% | +9% | 364 |
+| sim preset: Arms 39/12/0 | 136 | -0% | +41% | +49% | +0% | +4% | 264 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `opt-fury-dw-raid-raid-dps` | 160 | 171 | 151 | 175 | 158 |
+| `opt-fury-dw-raid-parse` | 160 | 171 | 151 | 175 | 158 |
+| `fury-dw-raid` | 156 | 164 | 152 | 169 | 157 |
+| sim preset: DPS | 158 | 167 | 156 | 173 | 160 |
+| sim preset: Fury 17/34/0 | 139 | 149 | 139 | 156 | 144 |
+| sim preset: Arms 39/12/0 | 118 | 103 | 114 | 115 | 109 |
 
 Gear presets: raid `p1_fury.gear.json`, maximum `p1_fury.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

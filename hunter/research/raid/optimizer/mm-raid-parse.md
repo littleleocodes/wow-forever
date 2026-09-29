@@ -9,13 +9,13 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Bestial Discipline | Beast Mastery | 5 | +2.72% | manual |
+| Bestial Discipline | Beast Mastery | 5 | +2.71% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +0.98% | manual |
-| Improved Stings | Marksmanship | 2 | +0.95% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.94% | manual |
+| Improved Stings | Marksmanship | 2 | +0.97% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +0.97% | manual |
+| Mortal Shots | Marksmanship | 4 | +0.93% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.92% | manual |
-| Focused Fire | Beast Mastery | 2 | +0.88% | manual |
+| Focused Fire | Beast Mastery | 2 | +0.87% | manual |
 | Lethal Attacks | Marksmanship | 1 | +0.82% | manual |
 | Careful Aim | Marksmanship | 2 | +0.78% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +0.61% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Improved Concussive Shot | Marksmanship | 1 | +0.00% | manual |
 | Rapid Killing | Marksmanship | 3 | +0.00% | manual |
 
-## Optimized build: 22/29/0  score +41.90%  (dps x1.397, sustain x1.110, surv x1.000, utility +0.00%)
+## Optimized build: 22/29/0  score +41.85%  (dps x1.396, sustain x1.110, surv x1.000, utility +0.00%)
 Absolute DPS index (character alone, no talents = 1.00): 1.328  — use this to compare models with different pet shares.
 
 ```
@@ -57,7 +57,7 @@ Absolute DPS index (character alone, no talents = 1.00): 1.328  — use this to 
 | Ranged Weapon Specialization | Marksmanship 6 | 5/5 | +1.17% | yes |
 | Frenzy | Beast Mastery 6 | 1/5 | +0.51% | no |
 | Improved Arcane Shot | Marksmanship 3 | 1/5 | +0.39% | yes |
-| Barrage | Marksmanship 5 | 3/3 | +0.36% | yes |
+| Barrage | Marksmanship 5 | 3/3 | +0.37% | yes |
 | Resourcefulness | Survival 5 | 1/2 | +0.20% | no |
 | Intimidation | Beast Mastery 5 | 1/1 | +0.18% | no |
 | Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |

@@ -2,14 +2,14 @@
 
 [Warlock](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 622 | 761 | best |
-| 2 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 574 | 690 | -8% |
-| 3 | [Affliction](affliction.md) — Affliction (optimized) | 571 | 697 | -8% |
-| 4 | [Destruction](destruction.md) — Destruction — Incinerate | 484 | 560 | -22% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 616 | 750 | 586 | best |
+| 2 | [Affliction](affliction.md) — Affliction — DoT / Drain Hope | 567 | 687 | 549 | -8% |
+| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 566 | 675 | 543 | -8% |
+| 4 | [Destruction](destruction.md) — Destruction — Incinerate | 478 | 550 | 464 | -22% |
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

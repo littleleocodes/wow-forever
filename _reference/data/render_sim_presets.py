@@ -180,6 +180,8 @@ def action(a, N, depth=0):
     k, x = next(iter(body.items()))
     if k == "castSpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)}" + (f" on {x['target'].get('type', '').lower()}" if x.get("target") and x["target"].get("type") not in (None, "Target", "Unknown") else "")
+    elif k == "channelSpell":   # a channel (Mind Flay, Drain Soul): named like a cast (it printed as "channelSpell" until 2026-09-29)
+        txt = f"channel {spell_ref(x.get('spellId'), N)}" + (" (interrupt it when a higher line is ready)" if x.get("interruptIf") else "")
     elif k == "castFriendlySpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)} on a friendly target"
     elif k == "multidot":

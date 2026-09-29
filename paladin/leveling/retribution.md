@@ -6,7 +6,23 @@
 
 **[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (15/0/36) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--0522533120133132-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Blessing of Might** and **Devotion Aura** up, a two-handed weapon. Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it).
+
+**In the fight**, top to bottom:
+
+1. **Judgement** and **Holy Strike** whenever ready.
+2. **Consecration** while your mana lasts.
+3. **Hammer of Justice** when you are hurt (or to set up a big Judgement).
+4. **Hammer of Wrath** when the mob is below 20% health.
+5. Low on health: **Divine Protection** and **Holy Light**; **Lay on Hands** in an emergency.
+
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a third of your mana.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -35,7 +51,7 @@ Talent order (one point per level from 10):
 | 57-58 | Vengeance (Retribution) | 2 |
 | 59-60 | Pursuit of Justice (Retribution) | 2 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -45,7 +61,7 @@ Talent order (one point per level from 10):
 | 50 | 29 |
 | 60 | 32 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Two-handed Retribution](../research/leveling/builds/opt-ret-dps-leveling-st.md) (15/0/36, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--5022533120133132-4)
 - [Two-handed Retribution](../research/leveling/builds/opt-ret-dps-solo-60.md) (15/0/36) — [open the talent tree](https://talentsforever.com/paladin/60/520030032--5022533120133132-4)

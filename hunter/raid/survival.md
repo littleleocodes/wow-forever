@@ -2,30 +2,48 @@
 
 [Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Survival
 
-**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
+**[Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md)** (5/15/31) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
 
-**[Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md)** (5/11/35) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4)
+## How to play
+
+**Before the pull:** **Hunter's Mark**.
+
+**Keep up all fight:** **Aspect of the Beast**.
+
+**Then press the first one that is ready**, top to bottom:
+
+1. **Mongoose Bite**
+2. **Strider Kick**
+3. **Raptor Strike**
+4. **Immolation Trap**
+5. **Wing Clip**
+
+**Wing Clip** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+
+## The numbers
 
 | Setting | DPS |
 |---|---|
-| Training dummy (only your own buffs) | 459 |
-| Parse (a full raid: every raid buff and debuff) | 986 |
+| Training dummy, 3-minute fight (only your own buffs) | 424 |
+| Parse (a full raid: every raid buff and debuff) | 951 |
 
-**What to press** (top to bottom: cast the first line that is ready):
+**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Before the pull: cast Hunter's Mark.
+Dummy 424 → mana +1% → armor +50% → physical +55% → spell +3% → everything else +14% → raid 951
 
-1. Cast Aspect of the Beast
-2. Use every other cooldown when ready
-3. Cast Mongoose Bite
-4. Cast Strider Kick
-5. Cast Raptor Strike
-6. Cast Immolation Trap
-7. Cast Wing Clip
+(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
-Other builds of this spec:
+**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
 
-- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 433 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
+| 1 min | 2 min | 3 min | 4 min | 6 min |
+|---|---|---|---|---|
+| 446 | 433 | 424 | 424 | 406 |
+
+Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
+
+## Other builds of this spec
+
+- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---

@@ -4,21 +4,26 @@
 
 **[Protection — Tank](../research/raid/builds/prot-tank.md)** (0/23/28) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513101301-530253300010303-4)
 
+## How to play
+
+**Before the pull:** **Righteous Fury**, **Seal of Righteousness**, **Holy Shield**.
+
+**Keep up all fight:** **Seal of Righteousness**, **Retribution Aura**.
+
+**Then press the first one that is ready**, top to bottom:
+
+1. **Templar's Bulwark**
+2. **Consecration**
+3. **Holy Strike**
+4. **Lay on Hands** when your health is below 10%
+
+This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+
+## The numbers
+
 Tank value 1.000 (threat and damage taken under a boss, relative to our reference tank build).
 
-**What to press** (top to bottom: cast the first line that is ready):
-
-Before the pull: cast Righteous Fury; cast Seal of Righteousness; cast Holy Shield.
-
-1. Cast Templar's Bulwark
-2. Use every other cooldown when ready
-3. If time left on Seal of Righteousness ≤ 1s: cast Seal of Righteousness
-4. Cast Consecration
-5. Cast Holy Strike
-6. If health % < 10%: cast Lay on Hands
-7. Cast Retribution Aura
-
-Other builds of this spec:
+## Other builds of this spec
 
 - [Shield tank](../research/raid/builds/opt-prot-tank-raid-tank.md) (0/23/28) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513101301-530253300010303-4)
 

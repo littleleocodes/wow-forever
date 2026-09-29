@@ -10,11 +10,11 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Affliction** | [Affliction — Leveling](leveling/affliction.md) ⚗<br>37 s/kill | [Affliction (optimized)](raid/affliction.md)<br>571 DPS | [Soul Link / Shadow Mastery](pvp/affliction.md) |
-| **Demonology** | [Demonology — Leveling](leveling/demonology.md) ⚗<br>37 s/kill | **✅ Recommended**<br>[Demonology — Demonic Pact](raid/demonology.md)<br>622 DPS | [Demonology — PvP](pvp/demonology.md) ⚗ |
-| **Destruction** | [Destruction — Leveling](leveling/destruction.md) ⚗<br>39 s/kill | [Destruction — Incinerate](raid/destruction.md)<br>484 DPS | [Destruction — PvP](pvp/destruction.md) ⚗ |
+| **Affliction** | [Affliction — Leveling](leveling/affliction.md) ⚗<br>37 s/kill | [Affliction — DoT / Drain Hope](raid/affliction.md)<br>567 DPS | [Soul Link / Shadow Mastery](pvp/affliction.md) |
+| **Demonology** | [Demonology — Leveling](leveling/demonology.md) ⚗<br>37 s/kill | **✅ Recommended**<br>[Demonology — Demonic Pact](raid/demonology.md)<br>616 DPS | [Demonology — PvP](pvp/demonology.md) ⚗ |
+| **Destruction** | [Destruction — Leveling](leveling/destruction.md) ⚗<br>39 s/kill | [Destruction — Incinerate](raid/destruction.md)<br>478 DPS | [Destruction — PvP](pvp/destruction.md) ⚗ |
 | **Affliction-Demonology** | **✅ Recommended**<br>[Leveling — Affliction DoTs with a Voidwalker](leveling/affliction-demonology.md)<br>36 s/kill | - | - |
-| **Shadow Bolt hybrid** | - | [Shadow Bolt hybrid (optimized)](raid/shadow-bolt-hybrid.md)<br>574 DPS | - |
+| **Shadow Bolt hybrid** | - | [Shadow Bolt hybrid (optimized)](raid/shadow-bolt-hybrid.md)<br>566 DPS | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -37,14 +37,14 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Demonology](raid/demonology.md) — Demonology — Demonic Pact | 622 | 761 | best |
-| 2 | [Shadow Bolt hybrid](raid/shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 574 | 690 | -8% |
-| 3 | [Affliction](raid/affliction.md) — Affliction (optimized) | 571 | 697 | -8% |
-| 4 | [Destruction](raid/destruction.md) — Destruction — Incinerate | 484 | 560 | -22% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Demonology](raid/demonology.md) — Demonology — Demonic Pact | 616 | 750 | 586 | best |
+| 2 | [Affliction](raid/affliction.md) — Affliction — DoT / Drain Hope | 567 | 687 | 549 | -8% |
+| 3 | [Shadow Bolt hybrid](raid/shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 566 | 675 | 543 | -8% |
+| 4 | [Destruction](raid/destruction.md) — Destruction — Incinerate | 478 | 550 | 464 | -22% |
 
 ### PvP
 

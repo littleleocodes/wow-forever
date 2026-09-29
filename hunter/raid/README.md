@@ -2,14 +2,14 @@
 
 [Hunter](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid ⚗ | 469 | 808 | best |
-| 2 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 468 | 814 | -0% |
-| 3 | [Survival](survival.md) — Melee Survival — Lone Wolf | 459 | 986 | -2% |
-| 4 | [Marksmanship](marksmanship.md) — Marksmanship without a pet | 434 | 848 | -8% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 448 | 809 | 423 | best |
+| 2 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid ⚗ | 438 | 802 | 409 | -2% |
+| 3 | [Survival](survival.md) — Melee hunter | 424 | 951 | 406 | -5% |
+| 4 | [Marksmanship](marksmanship.md) — Marksmanship without a pet | 420 | 841 | 373 | -6% |
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

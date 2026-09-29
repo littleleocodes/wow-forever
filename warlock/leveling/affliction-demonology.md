@@ -8,7 +8,23 @@
 
 **[Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md)** (23/26/2) — [open the talent tree](https://talentsforever.com/warlock/60/20530020135011-20050302312110213-2-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
+
+**In the fight**, top to bottom:
+
+1. **Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.
+2. **Wrack** once the damage-over-time spells are up.
+3. **Shadow Bolt** while you have plenty of mana, your wand otherwise.
+4. **Drain Life** when you are hurt, **Life Tap** when you are low on mana.
+5. If a mob reaches you: **Fear** it or **Death Coil**.
+
+**Between fights:** **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -42,7 +58,7 @@ Talent order (one point per level from 10):
 | 57-58 | Destructive Reach (Destruction) | 2 |
 | 59-60 | Improved Felhunter (Demonology) | 2 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 35% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -52,7 +68,7 @@ Talent order (one point per level from 10):
 | 50 | 39 |
 | 60 | 37 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Voidwalker tank](../research/leveling/builds/opt-affliction-leveling-leveling-st.md) (27/24/0, 37 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warlock/60/0355002013500102-03552310010000013--4)
 - [Voidwalker tank](../research/leveling/builds/opt-affliction-leveling-solo-60.md) (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/0355002013500102-03552310010000013--4)

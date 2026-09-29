@@ -4,18 +4,46 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-ret-dps-raid-dps` | 17/0/34 | 368 | 419 | 778 | 778 | 761 |
-| `ret-raid-dps` | 17/0/34 | 367 | 416 | 779 | 779 | 762 |
-| `ret-full-buffs-raid` | 10/8/33 | 365 | 412 | 804 | 804 | 790 |
-| sim preset: P4/P5 Ret | - | 365 | 415 | 777 | 777 | 760 |
-| `opt-ret-dps-parse` | 9/8/34 | 365 | 412 | 805 | 805 | 791 |
-| sim preset: Retribution 9/0/42 | - | 353 | 411 | 771 | 771 | 756 |
+| `opt-ret-dps-raid-dps` | 9/8/34 | 350 | 400 | 802 | 802 | 791 |
+| `opt-ret-dps-parse` | 9/8/34 | 350 | 400 | 802 | 802 | 791 |
+| `ret-raid-dps` | 17/0/34 | 349 | 413 | 779 | 779 | 762 |
+| `ret-full-buffs-raid` | 10/8/33 | 346 | 400 | 802 | 802 | 790 |
+| sim preset: P4/P5 Ret | - | 341 | 410 | 776 | 776 | 760 |
+| sim preset: Retribution 9/0/42 | - | 338 | 399 | 768 | 768 | 756 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `opt-ret-dps-raid-dps` | 350 | +10% | +13% | +44% | +33% | +29% | 802 |
+| `opt-ret-dps-parse` | 350 | +10% | +13% | +44% | +33% | +29% | 802 |
+| `ret-raid-dps` | 349 | +8% | +12% | +43% | +32% | +29% | 779 |
+| `ret-full-buffs-raid` | 346 | +12% | +13% | +44% | +33% | +30% | 802 |
+| sim preset: P4/P5 Ret | 341 | +10% | +13% | +43% | +32% | +29% | 776 |
+| sim preset: Retribution 9/0/42 | 338 | +10% | +13% | +44% | +32% | +28% | 768 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `opt-ret-dps-raid-dps` | 358 | 348 | 321 | 317 | 299 |
+| `opt-ret-dps-parse` | 358 | 348 | 321 | 317 | 299 |
+| `ret-raid-dps` | 346 | 344 | 340 | 330 | 299 |
+| `ret-full-buffs-raid` | 359 | 348 | 319 | 322 | 294 |
+| sim preset: P4/P5 Ret | 345 | 343 | 333 | 319 | 291 |
+| sim preset: Retribution 9/0/42 | 346 | 336 | 310 | 307 | 288 |
 
 Gear presets: raid `default.gear.json`, maximum `default.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

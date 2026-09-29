@@ -63,11 +63,11 @@
       "abs_dps_factor": 1.0
     },
     "elemental-dps": {
-      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-09-29, elemental-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): lightning_bolt 71%, flame_shock 18%, chain_lightning 11%; 6% of the damage matched no source.",
+      "note": "Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Lightning Bolt rank 10 189-211 in 2.5s for 220 mana (71.4% coefficient; Classic 428-477 in 3s at 85.7%), Chain Lightning rank 4 119-133 in 2s (57.1%), Earth Shock rank 7 293-309, Flame Shock rank 6 166 plus 176, Lava Burst ranks at 40/50/60 (2.5s, 10s cooldown): the shocks are relatively stronger, so Lightning Bolt 60 -> 52%, Chain Lightning 15 -> 11%, Earth Shock 10 -> 16%, Flame Shock 8 -> 12%. Fire Nova is a spell now (10s cooldown), still counted with the fire totem. Raid sim shares (2026-09-29, elemental-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): lightning_bolt 74%, flame_shock 18%, chain_lightning 8%; 6% of the damage matched no source.",
       "sources": [
         {
           "id": "lightning_bolt",
-          "share": 0.7099,
+          "share": 0.7419,
           "tags": ["type:spell", "school:nature", "ability:Lightning Bolt"],
           "cast": 2.5,
           "min_cast": 1.5,
@@ -81,7 +81,7 @@
         },
         {
           "id": "chain_lightning",
-          "share": 0.1127,
+          "share": 0.0819,
           "tags": ["type:spell", "school:nature", "aoe", "ability:Chain Lightning"],
           "cast": 2.0,
           "min_cast": 1.5,
@@ -111,7 +111,7 @@
         },
         {
           "id": "flame_shock",
-          "share": 0.1774,
+          "share": 0.1762,
           "tags": ["type:spell", "school:fire", "dot", "instant", "ability:Flame Shock", "ability:Shock"],
           "can_crit": false,
           "game_overrides": {
@@ -193,11 +193,11 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.055,
-          "cap": 0.9,
-          "rms": 0.0121,
-          "points": 62,
-          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-2% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "loss": 0.14,
+          "cap": 0.05,
+          "rms": 0.0164,
+          "points": 71,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-4% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
@@ -206,7 +206,7 @@
       "sources": [
         {
           "id": "white",
-          "share": 0.3586,
+          "share": 0.3576,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
           "profile_overrides": {
             "leveling-st": {"share": 0.269},
@@ -219,7 +219,7 @@
         },
         {
           "id": "windfury",
-          "share": 0.2314,
+          "share": 0.2303,
           "tags": ["type:melee", "white", "school:physical", "ability:Windfury Weapon", "weapon:2h"],
           "min_level": 30,
           "profile_overrides": {
@@ -233,7 +233,7 @@
         },
         {
           "id": "earth_shock",
-          "share": 0.1071,
+          "share": 0.1081,
           "tags": ["type:spell", "school:nature", "instant", "ability:Earth Shock", "ability:Shock", "enh-nature"],
           "cooldown": 6,
           "min_level": 4,
@@ -248,7 +248,7 @@
         },
         {
           "id": "lightning_bolt",
-          "share": 0.0723,
+          "share": 0.0729,
           "tags": ["type:spell", "school:nature", "ability:Lightning Bolt", "enh-nature", "enh-lb"],
           "cast": 2.5,
           "min_cast": 1.5,
@@ -263,7 +263,7 @@
         },
         {
           "id": "flame_shock",
-          "share": 0.0881,
+          "share": 0.0892,
           "tags": ["type:spell", "school:fire", "dot", "instant", "ability:Flame Shock", "ability:Shock"],
           "can_crit": false,
           "game_overrides": {
@@ -307,7 +307,7 @@
         },
         {
           "id": "stormstrike",
-          "share": 0.1425,
+          "share": 0.1419,
           "min_level": 25,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Stormstrike", "weapon:2h"],
           "cooldown": 8,
@@ -392,11 +392,11 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.385,
+          "loss": 0.3825,
           "cap": 0.9,
-          "rms": 0.0104,
+          "rms": 0.01,
           "points": 50,
-          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-6% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 4-8% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     }

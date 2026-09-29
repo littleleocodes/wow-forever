@@ -6,7 +6,23 @@
 
 **[Leveling — Enhancement](../research/leveling/builds/leveling-enhancement.md)** (7/34/10) — [open the talent tree](https://talentsforever.com/shaman/60/0502-055030031005112251-05005-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon. Drop **Searing Totem** as you pull.
+
+**In the fight**, top to bottom:
+
+1. **Lightning Bolt** while the mob walks in.
+2. **Stormstrike** whenever ready, then **Earth Shock**.
+3. **Flame Shock** while your mana allows.
+4. **Lightning Bolt** when Maelstrom Weapon reaches 5 stacks (it is instant).
+5. Low on health: **Stoneclaw Totem** and **Lesser Healing Wave**.
+
+**Between fights:** Heal back to 80% health, drink below a third of your mana.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -29,7 +45,7 @@ Talent order (one point per level from 10):
 | 51-55 | Totemic Focus (Restoration) | 5 |
 | 56-60 | Tidal Focus (Restoration) | 5 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -39,7 +55,7 @@ Talent order (one point per level from 10):
 | 50 | 36 |
 | 60 | 37 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [One slow weapon](../research/leveling/builds/opt-enhancement-dps-leveling-st.md) (10/31/10, 33 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/shaman/60/05023-052232301305112001-05005-4)
 - [One slow weapon](../research/leveling/builds/opt-enhancement-dps-solo-60.md) (0/41/10) — [open the talent tree](https://talentsforever.com/shaman/60/-255232301355112001-05005-4)

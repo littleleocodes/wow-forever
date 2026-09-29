@@ -9,25 +9,25 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology | 3 | +16.16% | manual |
-| Agonizing Flames | Destruction | 4 | +1.94% | manual |
-| Bane | Destruction | 1 | +1.82% | manual |
-| Improved Life Tap | Affliction | 1 | +1.45% | manual |
-| Fel Vitality | Demonology | 2 | +1.45% | manual |
+| Demonic Sacrifice | Demonology | 3 | +16.02% | manual |
+| Agonizing Flames | Destruction | 4 | +1.96% | manual |
+| Bane | Destruction | 1 | +1.84% | manual |
+| Improved Life Tap | Affliction | 1 | +1.47% | manual |
+| Fel Vitality | Demonology | 2 | +1.47% | manual |
 | Suppression | Affliction | 1 | +1.19% | manual |
 | Improved Corruption | Affliction | 1 | +0.96% | manual |
 | Improved Shadow Bolt | Destruction | 1 | +0.92% | manual |
-| Shadow Mastery | Affliction | 6 | +0.91% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.90% | manual |
-| Amplify Curse | Affliction | 3 | +0.90% | manual |
-| Pandemic | Affliction | 3 | +0.68% | manual |
+| Shadow Mastery | Affliction | 6 | +0.90% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.89% | manual |
+| Amplify Curse | Affliction | 3 | +0.89% | manual |
+| Pandemic | Affliction | 3 | +0.67% | manual |
 | Malevolence | Affliction | 4 | +0.67% | manual |
 | Ruin | Destruction | 3 | +0.58% | manual |
-| Decimation | Demonology | 4 | +0.56% | manual |
+| Decimation | Demonology | 4 | +0.55% | manual |
 | Cataclysm | Destruction | 2 | +0.49% | manual |
+| Aftermath | Destruction | 2 | +0.49% | manual |
 | Wrack | Affliction | 7 | +0.45% | manual |
-| Aftermath | Destruction | 2 | +0.45% | manual |
-| Malediction | Affliction | 2 | +0.44% | manual |
+| Malediction | Affliction | 2 | +0.45% | manual |
 | Shadowburn | Destruction | 3 | +0.39% | manual |
 | Nightfall | Affliction | 4 | +0.12% | manual |
 | Molten Skin | Destruction | 2 | +0.00% | manual |
@@ -40,11 +40,11 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Soul Siphon | Affliction | 5 | +0.00% | manual |
 | Improved Health Funnel | Demonology | 1 | +0.00% | manual |
 
-## Optimized build: 22/11/18  score +91.69%  (dps x1.917, sustain x1.060, surv x1.020, utility +0.00%)
+## Optimized build: 22/11/18  score +91.56%  (dps x1.916, sustain x1.060, surv x1.020, utility +0.00%)
 
 ```
-  Affliction: Improved Life Tap 2, Suppression 5, Improved Corruption 5, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 1, Malevolence 5
-  Demonology: Improved Health Funnel 2, Improved Imp 3, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
+  Affliction: Suppression 5, Improved Corruption 5, Improved Life Tap 2, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 1, Malevolence 5
+  Demonology: Unholy Power 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
   Destruction: Bane 5, Improved Shadow Bolt 5, Ruin 5, Agonizing Flames 3
 ```
 
@@ -52,15 +52,15 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Shadow Mastery | Affliction 6 | 1/5 | +1.77% | no |
-| Improved Bane of Agony | Affliction 3 | 2/2 | +1.50% | yes |
-| Decimation | Demonology 4 | 1/2 | +1.17% | no |
+| Shadow Mastery | Affliction 6 | 1/5 | +1.76% | no |
+| Improved Bane of Agony | Affliction 3 | 2/2 | +1.48% | yes |
+| Decimation | Demonology 4 | 1/2 | +1.16% | no |
 | Cataclysm | Destruction 2 | 1/3 | +0.88% | yes |
-| Wrack | Affliction 7 | 1/1 | +0.82% | no |
-| Shadowburn | Destruction 3 | 1/1 | +0.82% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.81% | no |
+| Shadowburn | Destruction 3 | 1/1 | +0.81% | yes |
+| Aftermath | Destruction 2 | 1/5 | +0.79% | yes |
 | Malediction | Affliction 2 | 1/5 | +0.75% | yes |
-| Aftermath | Destruction 2 | 1/5 | +0.72% | yes |
-| Nightfall | Affliction 4 | 1/2 | +0.26% | yes |
+| Nightfall | Affliction 4 | 1/2 | +0.25% | yes |
 | Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
 | Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
 | Improved Drains | Affliction 2 | 1/3 | +0.00% | yes |

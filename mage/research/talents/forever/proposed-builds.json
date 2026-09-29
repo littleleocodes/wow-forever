@@ -871,192 +871,6 @@
       ]
     },
     {
-      "id": "opt-frost-raid-raid-dps",
-      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Wand Specialization", 1],
-          ["Arcane Subtlety", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Impact", 3],
-          ["Missile Barrage", 1],
-          ["Arcane Meditation", 3],
-          ["Presence of Mind", 1],
-          ["Arcane Mind", 1]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Improved Frostbolt", 5],
-          ["Elemental Precision", 5],
-          ["Ice Shards", 5],
-          ["Ice Lance", 1],
-          ["Piercing Ice", 3],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Improved Cone of Cold", 1],
-          ["Winter's Chill", 4]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.8 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 19.8 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 18.9 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 11.5 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 11.4 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 10.8 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 8.7 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 8.7 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (587 vs 568 DPS; the calibration moved the model past the better build).", "Report: mage/talents/forever/optimizer/frost-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-frost-raid-parse",
-      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +71.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Arcane Concentration", 5],
-          ["Magic Absorption", 2],
-          ["Arcane Impact", 3],
-          ["Arcane Meditation", 3],
-          ["Arcane Shielding", 2],
-          ["Presence of Mind", 1]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Improved Frostbolt", 5],
-          ["Elemental Precision", 5],
-          ["Ice Shards", 5],
-          ["Piercing Ice", 3],
-          ["Ice Lance", 1],
-          ["Frost Channeling", 1],
-          ["Shatter", 3],
-          ["Fingers of Frost", 2],
-          ["Winter's Chill", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Frostbolt", "why": "Removing it costs 21.9 points of score in this model."},
-        {"talent": "Ice Shards", "why": "Removing it costs 20.3 points of score in this model."},
-        {"talent": "Fingers of Frost", "why": "Removing it costs 18.0 points of score in this model."},
-        {"talent": "Winter's Chill", "why": "Removing it costs 10.8 points of score in this model."},
-        {"talent": "Ice Lance", "why": "Removing it costs 10.8 points of score in this model."},
-        {"talent": "Shatter", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Piercing Ice", "why": "Removing it costs 8.4 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 8.3 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/talents/forever/optimizer/frost-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-fire-raid-raid-dps",
-      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +197.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 5],
-          ["Wand Specialization", 1],
-          ["Arcane Concentration", 5],
-          ["Magic Absorption", 2]
-        ],
-        "Fire": [
-          ["Improved Fireball", 5],
-          ["Incineration", 3],
-          ["Wake of Fire", 2],
-          ["Ignite", 5],
-          ["Flame Throwing", 1],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 3],
-          ["Hot Streak", 1],
-          ["Master of Elements", 3],
-          ["Critical Mass", 3],
-          ["Fire Power", 5],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 101.7 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 27.8 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 27.0 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 26.8 points of score in this model."},
-        {"talent": "Hot Streak", "why": "Removing it costs 19.4 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 18.3 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 17.4 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 16.7 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/talents/forever/optimizer/fire-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-fire-raid-parse",
-      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +196.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Wand Specialization", 2],
-          ["Arcane Focus", 4],
-          ["Arcane Concentration", 5],
-          ["Magic Absorption", 2],
-          ["Arcane Geometry", 1]
-        ],
-        "Fire": [
-          ["Improved Fireball", 5],
-          ["Incineration", 3],
-          ["Wake of Fire", 2],
-          ["Ignite", 5],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 3],
-          ["Hot Streak", 1],
-          ["Master of Elements", 3],
-          ["Critical Mass", 3],
-          ["Fire Power", 5],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 100.8 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 27.3 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 26.8 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 26.6 points of score in this model."},
-        {"talent": "Hot Streak", "why": "Removing it costs 19.3 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 18.1 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 17.1 points of score in this model."},
-        {"talent": "Elemental Precision", "why": "Removing it costs 16.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/talents/forever/optimizer/fire-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
       "id": "arcane-leveling",
       "name": "Arcane — Leveling (generated)",
       "role": "dps",
@@ -1229,6 +1043,192 @@
       "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model fire-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
       "open_questions": ["A generated Fire build: check it against the community's Fire builds at launch."],
       "sources": ["https://talentsforever.com/mage"]
+    },
+    {
+      "id": "opt-frost-raid-raid-dps",
+      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Wand Specialization", 1],
+          ["Arcane Subtlety", 2],
+          ["Arcane Concentration", 5],
+          ["Arcane Impact", 3],
+          ["Missile Barrage", 1],
+          ["Arcane Meditation", 3],
+          ["Presence of Mind", 1],
+          ["Arcane Mind", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 5],
+          ["Ice Shards", 5],
+          ["Ice Lance", 1],
+          ["Piercing Ice", 3],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2],
+          ["Improved Cone of Cold", 1],
+          ["Winter's Chill", 4]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 22.6 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 20.1 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 19.1 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 12.0 points of score in this model."},
+        {"talent": "Winter's Chill", "why": "Removing it costs 11.4 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.9 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 8.7 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.7 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (582 vs 562 DPS; the calibration moved the model past the better build).", "Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-frost-raid-parse",
+      "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +70.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Arcane Concentration", 5],
+          ["Magic Absorption", 2],
+          ["Arcane Impact", 3],
+          ["Arcane Meditation", 3],
+          ["Arcane Shielding", 2],
+          ["Presence of Mind", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Elemental Precision", 5],
+          ["Ice Shards", 5],
+          ["Ice Lance", 1],
+          ["Piercing Ice", 3],
+          ["Frost Channeling", 1],
+          ["Shatter", 3],
+          ["Fingers of Frost", 2],
+          ["Winter's Chill", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Frostbolt", "why": "Removing it costs 21.9 points of score in this model."},
+        {"talent": "Ice Shards", "why": "Removing it costs 20.3 points of score in this model."},
+        {"talent": "Fingers of Frost", "why": "Removing it costs 18.1 points of score in this model."},
+        {"talent": "Ice Lance", "why": "Removing it costs 10.9 points of score in this model."},
+        {"talent": "Winter's Chill", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Shatter", "why": "Removing it costs 10.3 points of score in this model."},
+        {"talent": "Piercing Ice", "why": "Removing it costs 8.4 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 8.3 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-fire-raid-raid-dps",
+      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Wand Specialization", 2],
+          ["Arcane Focus", 4],
+          ["Arcane Concentration", 5],
+          ["Magic Absorption", 2],
+          ["Arcane Geometry", 1]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Incineration", 3],
+          ["Wake of Fire", 2],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Hot Streak", 1],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Scorch", "why": "Removing it costs 106.2 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 28.2 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 27.3 points of score in this model."},
+        {"talent": "Hot Streak", "why": "Removing it costs 20.3 points of score in this model."},
+        {"talent": "Improved Fireball", "why": "Removing it costs 19.6 points of score in this model."},
+        {"talent": "Combustion", "why": "Removing it costs 18.5 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 18.3 points of score in this model."},
+        {"talent": "Arcane Concentration", "why": "Removing it costs 17.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "opt-fire-raid-parse",
+      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +185.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Wand Specialization", 2],
+          ["Arcane Focus", 4],
+          ["Arcane Concentration", 5],
+          ["Magic Absorption", 2],
+          ["Arcane Geometry", 1]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Incineration", 3],
+          ["Wake of Fire", 2],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Hot Streak", 1],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Scorch", "why": "Removing it costs 97.1 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 25.8 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 24.7 points of score in this model."},
+        {"talent": "Hot Streak", "why": "Removing it costs 18.6 points of score in this model."},
+        {"talent": "Improved Fireball", "why": "Removing it costs 17.9 points of score in this model."},
+        {"talent": "Combustion", "why": "Removing it costs 16.9 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 16.6 points of score in this model."},
+        {"talent": "Elemental Precision", "why": "Removing it costs 15.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
     }
   ]
 }

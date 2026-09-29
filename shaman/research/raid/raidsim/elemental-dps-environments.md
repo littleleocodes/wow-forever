@@ -4,18 +4,49 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `elemental-raid` | 31/7/13 | 398 | 479 | 499 | 528 | 531 |
-| `elemental-raid-dps` | 29/22/0 | 397 | 490 | 504 | 524 | 527 |
-| `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
-| sim preset: Elemental 31/6/14 | - | 393 | 474 | 498 | 527 | 531 |
-| sim preset: Stormcaller 28/23/0 | - | 381 | 471 | 493 | 512 | 518 |
-| sim preset: Level 60 | - | 379 | 457 | 477 | 506 | 509 |
+| `elemental-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
+| `opt-elemental-dps-raid-dps` | 29/22/0 | 387 | 478 | 495 | 511 | 527 |
+| `opt-elemental-dps-parse` | 29/22/0 | 386 | 478 | 493 | 509 | 527 |
+| `elemental-raid` | 31/7/13 | 381 | 459 | 485 | 510 | 531 |
+| sim preset: Elemental 31/6/14 | - | 376 | 452 | 479 | 505 | 531 |
+| sim preset: Stormcaller 28/23/0 | - | 369 | 456 | 475 | 490 | 518 |
+| sim preset: Level 60 | - | 362 | 436 | 461 | 487 | 509 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `elemental-raid-dps` | 387 | +1% | +0% | +2% | +12% | +13% | 495 |
+| `opt-elemental-dps-raid-dps` | 387 | +1% | +0% | +2% | +12% | +13% | 495 |
+| `opt-elemental-dps-parse` | 386 | +1% | +0% | +2% | +12% | +13% | 493 |
+| `elemental-raid` | 381 | +3% | +0% | +2% | +11% | +11% | 485 |
+| sim preset: Elemental 31/6/14 | 376 | +3% | +0% | +3% | +11% | +10% | 479 |
+| sim preset: Stormcaller 28/23/0 | 369 | +4% | +0% | +2% | +12% | +11% | 475 |
+| sim preset: Level 60 | 362 | +3% | +0% | +3% | +11% | +10% | 461 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `elemental-raid-dps` | 403 | 392 | 368 | 357 | 354 |
+| `opt-elemental-dps-raid-dps` | 403 | 392 | 368 | 357 | 354 |
+| `opt-elemental-dps-parse` | 404 | 387 | 367 | 358 | 355 |
+| `elemental-raid` | 409 | 386 | 348 | 356 | 348 |
+| sim preset: Elemental 31/6/14 | 408 | 378 | 342 | 351 | 348 |
+| sim preset: Stormcaller 28/23/0 | 395 | 366 | 346 | 326 | 322 |
+| sim preset: Level 60 | 389 | 369 | 328 | 340 | 334 |
 
 Gear presets: raid `phase_1.gear.json`, maximum `phase_2.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

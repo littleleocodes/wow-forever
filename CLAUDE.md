@@ -353,9 +353,23 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   Battle Stance: the other warrior rotations never leave Berserker Stance, so Overpower and Rend were never cast). Patch: Aspect of the
   Beast and the melee half of Deadly Aspects (`raidsim/patches/`). Fight lab: the melee hunter's Immolation Trap (the spellbook parser
   misses the trap wording; the hunter module fills it in) and the warlock's Curse of the Elements (measured, switched off by the tuned rules).
+- **Player rotations are simplified** (2026-09-29, user request: "just the class, no racials or item usage, noob friendly"): raid pages
+  run the simulator's rotation through `simple_rotation.py` (only the class's own spells and talents; conditions in plain words; items,
+  racials, trinkets, "every other cooldown", fight and swing timers, seal twisting dropped; self-buffs and totems in a "keep up all
+  fight" line; at most 8 lines; a link to the exact list). Leveling pages print the hand-kept steps in `leveling-steps.json` (per class
+  and fight-lab spec model, written from the module's priority and checked against its casts per kill; every bold name must be a
+  spell or talent of the class). Edit that file when a fight-lab priority changes.
 - **Player pages**: `render_modes.py` (regen step; see Structure rules) writes the top-level README, the class README's two player
   sections and `<class>/leveling|raid|pvp/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
   `_reference/organization-plan.md` records the reorganization (done 2026-09-29).
+- **Fight length, buff ladder, fight-length curve** (2026-09-29, user request "compare dummy and raid DPS fairly"): every bench config
+  takes its duration from `run.FIGHT` = **180 s** (was 120 s: a test from 60 to 360 s moved the Lone Wolf hunter -31% and the Frost mage
+  -3%, so 120 s flattered front-loaded cooldowns and specs that run dry late). The environments run (`run.py --env environments`,
+  rebuild.py's raid step) adds, for DPS specs: the **buff ladder** (`LADDER`: the dummy plus the raid's mana, then armor, physical and
+  spell buffs, cumulative; "rest" = the other raid buffs and the raid rotation; `ladder_steps`) and **DPS by fight length** (`CURVE`:
+  dummy fights of 60-360 s without execute phases; `curve_windows`). Window DPS from differences between lengths was tried and dropped
+  (±7% noise at 3000 iterations). A player's raid page and the class ranking show both (the ranking's "6-minute fight" column).
+  Rotations were tuned at 120 s (apl_opt searches before 2026-09-29): a re-search at 180 s is open.
 - **Seeds in the raid sim** (fixed 2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so our seeds 1, 2 and 3 used
   to share almost every iteration. `run.sim_seed(k)` maps seed k to 1 + (k - 1) * 1,000,000 (seed 1 unchanged, the others disjoint)
   in every bench config (run.py, apl_opt.py and through it talent_opt.py). Seed-2 confirmations and third-seed checks recorded

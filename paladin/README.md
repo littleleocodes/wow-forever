@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Holy** | [level as Retribution](leveling/holy.md) | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) ⚗ |
 | **Protection** | [level as Retribution](leveling/protection.md) | [Protection — Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) ⚗ |
-| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>368 DPS | [Retribution — PvP](pvp/retribution.md) ⚗ |
+| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>350 DPS | [Retribution — PvP](pvp/retribution.md) ⚗ |
 | **Shockadin** | - | - | [Shockadin — Holy/Retribution](pvp/shockadin.md) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -35,11 +35,11 @@ Healing and tanking specs level as a damage spec and switch at 60: Holy levels a
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Retribution](raid/retribution.md) — Two-handed Retribution | 368 | 778 | best |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Retribution](raid/retribution.md) — Two-handed Retribution | 350 | 802 | 324 | best |
 
 **Tanking**: [Protection](raid/protection.md) — Protection — Tank.
 

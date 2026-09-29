@@ -24,7 +24,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Naturalist | Restoration | 2 | +0.34% | manual |
 | Predatory Instincts | Feral Combat | 5 | +0.32% | manual |
 | Primal Bite | Feral Combat | 4 | +0.28% | manual |
-| Ferocity | Feral Combat | 1 | +0.12% | manual |
+| Ferocity | Feral Combat | 1 | +0.14% | manual |
 | Genesis | Balance | 1 | +0.07% | manual |
 | Nature's Reach | Balance | 2 | +0.02% | manual |
 | Savage Fury | Feral Combat | 3 | +0.01% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Improved Starfire | Balance | 4 | +0.00% | manual |
 | Overgrowth | Balance | 5 | +0.00% | manual |
 
-## Optimized build: 7/35/9  score +53.45%  (dps x1.761, sustain x1.000, surv x1.288, utility +1.00%)
+## Optimized build: 7/35/9  score +53.73%  (dps x1.766, sustain x1.000, surv x1.288, utility +1.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2
@@ -55,7 +55,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Moonkin Form | Balance 7 | 1/1 | +5.00% | no |
 | Insect Swarm | Balance 4 | 1/1 | +1.00% | no |
 | Naturalist | Restoration 2 | 5/5 | +0.60% | yes |
-| Primal Bite | Feral Combat 4 | 1/1 | +0.48% | yes |
+| Primal Bite | Feral Combat 4 | 1/1 | +0.49% | yes |
 | Nature's Reach | Balance 2 | 1/2 | +0.04% | yes |
 | Nature's Grace | Balance 5 | 1/1 | +0.01% | no |
 | Moonfury | Balance 6 | 1/5 | +0.01% | no |

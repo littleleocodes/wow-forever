@@ -2,12 +2,12 @@
 
 [Priest](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Shadow](shadow.md) — Shadow leveling/raid | 554 | 636 | best |
-| 2 | [Smite](smite.md) — Discipline/Holy — Smite | 315 | 477 | -43% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Shadow](shadow.md) — Shadow leveling/raid | 556 | 638 | 482 | best |
+| 2 | [Smite](smite.md) — Discipline/Holy — Smite | 296 | 457 | 255 | -47% |
 
 **Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](holy.md) — Holy — Raid Healer (0.62), [Discipline](discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion.
 

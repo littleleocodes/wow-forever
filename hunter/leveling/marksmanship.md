@@ -4,7 +4,24 @@
 
 **[Leveling — Beast Mastery](../research/leveling/builds/leveling-beast-mastery.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/43202005031-3053512001022151--4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** Pet out (a cat), **Aspect of the Hawk** up. Send the pet in first and let it hold the mob.
+
+**In the fight**, top to bottom:
+
+1. **Hunter's Mark** and **Serpent Sting**.
+2. **Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.
+3. **Aimed Shot** or **Multi-Shot** whenever ready (they share a cooldown), **Arcane Shot** or **Summon Hawk** in between.
+4. **Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.
+5. **Mend Pet** when the pet drops below a third of its health.
+6. If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**.
+
+**Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -30,7 +47,7 @@ Talent order (one point per level from 10):
 | 57-59 | Ferocity (Beast Mastery) | 3 |
 | 60 | Deadly Aspects (Beast Mastery) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -40,7 +57,7 @@ Talent order (one point per level from 10):
 | 50 | 29 |
 | 60 | 30 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Pet-first leveling](../research/leveling/builds/opt-bm-leveling-leveling-st.md) (19/32/0, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/hunter/60/51202005031-0053552001022151--4)
 - [Marksmanship raid DPS with a pet](../research/leveling/builds/opt-mm-raid-leveling-st.md) (12/33/6, 29 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/hunter/60/5020221-0053552001023151-51-4)

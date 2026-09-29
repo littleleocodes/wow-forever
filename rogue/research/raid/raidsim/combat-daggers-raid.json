@@ -25,10 +25,10 @@
    "ohImbueId": 27186,
    "goblinSapper": true
   },
-  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 3000,
   "seed": 1,
-  "duration": 120.0
+  "duration": 180.0
  },
  "date": "2026-09-29",
  "results": [
@@ -39,50 +39,50 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 5.291333333333333,
-    "13877": 1.0,
-    "25300": 25.371666666666666,
-    "11198": 3.407,
+    "13877": 2.0,
+    "25300": 35.562666666666665,
+    "11198": 5.055666666666666,
     "13750": 1.0,
-    "31016": 1.398
+    "6774": 8.095666666666666,
+    "31016": 1.5856666666666666
    },
    "casts": {
-    "Slice and Dice": 5.291333333333333,
-    "Auto Attack": 185.34733333333332,
-    "Blade Flurry": 1.0,
-    "Backstab": 25.371666666666666,
-    "Expose Armor": 3.407,
-    "item 7676": 1.0,
-    "item 10646": 1.0,
+    "Blade Flurry": 2.0,
+    "Backstab": 35.562666666666665,
+    "Expose Armor": 5.055666666666666,
+    "Auto Attack": 281.7026666666667,
     "Adrenaline Rush": 1.0,
-    "Eviscerate": 1.398
+    "item 10646": 1.0,
+    "Slice and Dice": 8.095666666666666,
+    "Eviscerate": 1.5856666666666666,
+    "item 7676": 1.0
    },
-   "dps": 409.92865580668007,
-   "dps_stdev": 23.054757681448823,
-   "threat": 291.04934562274275,
-   "dtps": 4.975131067413681,
+   "dps": 398.99405529290914,
+   "dps_stdev": 18.56874272255865,
+   "threat": 283.2857792579656,
+   "dtps": 3.3167540449424533,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8722776409850066,
+   "scorer": 0.7789573043307287,
    "shares": {
-    "Auto Attack": 0.4518525398230879,
-    "Backstab": 0.3765803046730451,
-    "Deadly Poison": 0.05968942818828005,
-    "Eviscerate": 0.03644131151668645,
-    "Dense Sharpening Stone": 0.031433875901318624,
-    "item 10646": 0.02374466296107153,
-    "Dragonbreath Chili": 0.020257876936510332
+    "Auto Attack": 0.47337185812459914,
+    "Backstab": 0.3653075086358112,
+    "Deadly Poison": 0.06408144352332676,
+    "Dense Sharpening Stone": 0.031926644194222906,
+    "Eviscerate": 0.02822734129833339,
+    "Dragonbreath Chili": 0.02075993140489227,
+    "item 10646": 0.016325272818814292
    },
    "source_shares": {
-    "backstab": 0.4073,
-    "white_mh": 0.3177,
-    "white_oh": 0.1711,
-    "poisons": 0.0646,
-    "eviscerate": 0.0394
+    "backstab": 0.3924,
+    "white_mh": 0.3305,
+    "white_oh": 0.178,
+    "poisons": 0.0688,
+    "eviscerate": 0.0303
    },
-   "unmatched_share": 0.0754
+   "unmatched_share": 0.069
   },
   {
    "label": "opt-combat-daggers-raid-raid-dps",
@@ -91,52 +91,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "31016": 1.3926666666666667,
-    "6774": 5.281333333333333,
-    "11198": 3.426,
-    "25300": 25.374333333333333,
+    "6774": 8.079666666666668,
+    "13877": 2.0,
     "13750": 1.0,
-    "13877": 1.0,
-    "14177": 1.0
+    "25300": 35.54333333333334,
+    "31016": 1.5876666666666666,
+    "14177": 1.0,
+    "11198": 5.0713333333333335
    },
    "casts": {
     "item 10646": 1.0,
-    "Eviscerate": 1.3926666666666667,
-    "Slice and Dice": 5.281333333333333,
-    "Expose Armor": 3.426,
-    "Backstab": 25.374333333333333,
-    "item 7676": 1.0,
-    "Auto Attack": 185.35133333333334,
+    "Slice and Dice": 8.079666666666668,
+    "Auto Attack": 281.65566666666666,
+    "Blade Flurry": 2.0,
     "Adrenaline Rush": 1.0,
-    "Blade Flurry": 1.0,
-    "Cold Blood": 1.0
+    "Backstab": 35.54333333333334,
+    "Eviscerate": 1.5876666666666666,
+    "Cold Blood": 1.0,
+    "item 7676": 1.0,
+    "Expose Armor": 5.0713333333333335
    },
-   "dps": 414.420001701704,
-   "dps_stdev": 23.76542392301737,
-   "threat": 294.2382012082095,
-   "dtps": 4.9721947915999465,
+   "dps": 402.58728906762616,
+   "dps_stdev": 18.911417924361285,
+   "threat": 285.83697523801465,
+   "dtps": 3.3147965277332974,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8659887410964711,
+   "scorer": 0.7723140422597314,
    "shares": {
-    "Auto Attack": 0.4483515321028357,
-    "Backstab": 0.3820121470287967,
-    "Deadly Poison": 0.059311288752278556,
-    "Eviscerate": 0.03570532293718825,
-    "Dense Sharpening Stone": 0.0310629758626631,
-    "item 10646": 0.02350580315535028,
-    "Dragonbreath Chili": 0.020050930160887423
+    "Auto Attack": 0.4705177749399148,
+    "Backstab": 0.36948489551950825,
+    "Deadly Poison": 0.06378720829101754,
+    "Dense Sharpening Stone": 0.031488357687473406,
+    "Eviscerate": 0.027960771033495296,
+    "Dragonbreath Chili": 0.02056964858053471,
+    "item 10646": 0.016191343948055964
    },
    "source_shares": {
-    "backstab": 0.4128,
-    "white_mh": 0.3149,
-    "white_oh": 0.1696,
-    "poisons": 0.0641,
-    "eviscerate": 0.0386
+    "backstab": 0.3965,
+    "white_mh": 0.3282,
+    "white_oh": 0.1767,
+    "poisons": 0.0685,
+    "eviscerate": 0.03
    },
-   "unmatched_share": 0.0746
+   "unmatched_share": 0.0682
   },
   {
    "label": "cand-combat-daggers-raid-r1",
@@ -145,52 +145,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "6774": 8.079666666666666,
+    "13877": 2.0,
+    "25300": 35.54333333333334,
     "13750": 1.0,
-    "6774": 5.281333333333333,
-    "31016": 1.3926666666666667,
     "14177": 1.0,
-    "25300": 25.374333333333333,
-    "13877": 1.0,
-    "11198": 3.426
+    "31016": 1.5876666666666666,
+    "11198": 5.0713333333333335
    },
    "casts": {
-    "Adrenaline Rush": 1.0,
-    "Slice and Dice": 5.281333333333333,
-    "Auto Attack": 185.35133333333334,
+    "Slice and Dice": 8.079666666666666,
+    "Auto Attack": 281.65566666666666,
+    "Blade Flurry": 2.0,
     "item 10646": 1.0,
-    "Eviscerate": 1.3926666666666667,
+    "Backstab": 35.54333333333334,
+    "Adrenaline Rush": 1.0,
     "Cold Blood": 1.0,
-    "item 7676": 1.0,
-    "Backstab": 25.374333333333333,
-    "Blade Flurry": 1.0,
-    "Expose Armor": 3.426
+    "Eviscerate": 1.5876666666666666,
+    "Expose Armor": 5.0713333333333335,
+    "item 7676": 1.0
    },
-   "dps": 414.420001701704,
-   "dps_stdev": 23.76542392301737,
-   "threat": 294.2382012082095,
-   "dtps": 4.9721947915999465,
+   "dps": 402.58728906762616,
+   "dps_stdev": 18.911417924361285,
+   "threat": 285.83697523801465,
+   "dtps": 3.3147965277332974,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8659887410964711,
+   "scorer": 0.7723140422597314,
    "shares": {
-    "Auto Attack": 0.4483515321028357,
-    "Backstab": 0.3820121470287967,
-    "Deadly Poison": 0.059311288752278556,
-    "Eviscerate": 0.03570532293718825,
-    "Dense Sharpening Stone": 0.0310629758626631,
-    "item 10646": 0.02350580315535028,
-    "Dragonbreath Chili": 0.020050930160887423
+    "Auto Attack": 0.4705177749399148,
+    "Backstab": 0.36948489551950825,
+    "Deadly Poison": 0.06378720829101754,
+    "Dense Sharpening Stone": 0.031488357687473406,
+    "Eviscerate": 0.027960771033495296,
+    "Dragonbreath Chili": 0.02056964858053471,
+    "item 10646": 0.016191343948055964
    },
    "source_shares": {
-    "backstab": 0.4128,
-    "white_mh": 0.3149,
-    "white_oh": 0.1696,
-    "poisons": 0.0641,
-    "eviscerate": 0.0386
+    "backstab": 0.3965,
+    "white_mh": 0.3282,
+    "white_oh": 0.1767,
+    "poisons": 0.0685,
+    "eviscerate": 0.03
    },
-   "unmatched_share": 0.0746
+   "unmatched_share": 0.0682
   },
   {
    "label": "cand-combat-daggers-raid-r2",
@@ -199,52 +199,52 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "6774": 8.079666666666666,
+    "11198": 5.0713333333333335,
+    "14177": 1.0,
+    "13877": 2.0,
     "13750": 1.0,
-    "11198": 3.426,
-    "13877": 1.0,
-    "6774": 5.281333333333333,
-    "31016": 1.3926666666666667,
-    "25300": 25.374333333333333,
-    "14177": 1.0
+    "31016": 1.5876666666666666,
+    "25300": 35.54333333333334
    },
    "casts": {
-    "Adrenaline Rush": 1.0,
+    "Slice and Dice": 8.079666666666666,
+    "Expose Armor": 5.0713333333333335,
     "item 10646": 1.0,
-    "Expose Armor": 3.426,
-    "Blade Flurry": 1.0,
-    "Slice and Dice": 5.281333333333333,
-    "Auto Attack": 185.35133333333334,
-    "Eviscerate": 1.3926666666666667,
-    "item 7676": 1.0,
-    "Backstab": 25.374333333333333,
-    "Cold Blood": 1.0
+    "Auto Attack": 281.65566666666666,
+    "Cold Blood": 1.0,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Eviscerate": 1.5876666666666666,
+    "Backstab": 35.54333333333334,
+    "item 7676": 1.0
    },
-   "dps": 409.85466457721,
-   "dps_stdev": 23.30241228830826,
-   "threat": 290.99681184981876,
-   "dtps": 4.9721947915999465,
+   "dps": 398.3296198113239,
+   "dps_stdev": 18.544412840052853,
+   "threat": 282.8140300660399,
+   "dtps": 3.3147965277332974,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8669632200366466,
+   "scorer": 0.7740277203294692,
    "shares": {
-    "Auto Attack": 0.4532858217904591,
-    "Backstab": 0.3752109411185804,
-    "Deadly Poison": 0.05996403343919288,
-    "Eviscerate": 0.03609827443650826,
-    "Dense Sharpening Stone": 0.031404836457511874,
-    "item 10646": 0.02376449401242122,
-    "Dragonbreath Chili": 0.020271598745326278
+    "Auto Attack": 0.47550554268523915,
+    "Backstab": 0.3628010610958902,
+    "Deadly Poison": 0.06446339056727449,
+    "Dense Sharpening Stone": 0.03182215297256518,
+    "Eviscerate": 0.028257171805842477,
+    "Dragonbreath Chili": 0.020787699067013672,
+    "item 10646": 0.016362981806174882
    },
    "source_shares": {
-    "backstab": 0.4058,
-    "white_mh": 0.3187,
-    "white_oh": 0.1716,
-    "poisons": 0.0649,
-    "eviscerate": 0.039
+    "backstab": 0.3897,
+    "white_mh": 0.332,
+    "white_oh": 0.1788,
+    "poisons": 0.0692,
+    "eviscerate": 0.0304
    },
-   "unmatched_share": 0.0754
+   "unmatched_share": 0.069
   },
   {
    "label": "cand-combat-daggers-raid-r3",
@@ -253,50 +253,50 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "6774": 5.291333333333334,
-    "13877": 1.0,
-    "11198": 3.407,
+    "13877": 2.0,
+    "25300": 35.562666666666665,
+    "6774": 8.095666666666666,
+    "11198": 5.055666666666666,
     "13750": 1.0,
-    "25300": 25.371666666666666,
-    "31016": 1.398
+    "31016": 1.5856666666666666
    },
    "casts": {
-    "Slice and Dice": 5.291333333333334,
-    "Blade Flurry": 1.0,
-    "Expose Armor": 3.407,
-    "Auto Attack": 185.34733333333332,
+    "Blade Flurry": 2.0,
+    "Auto Attack": 281.7026666666667,
     "item 10646": 1.0,
+    "Backstab": 35.562666666666665,
+    "Slice and Dice": 8.095666666666666,
+    "Expose Armor": 5.055666666666666,
     "Adrenaline Rush": 1.0,
-    "Backstab": 25.371666666666666,
     "item 7676": 1.0,
-    "Eviscerate": 1.398
+    "Eviscerate": 1.5856666666666666
    },
-   "dps": 409.92865580668007,
-   "dps_stdev": 23.054757681448823,
-   "threat": 291.04934562274275,
-   "dtps": 4.975131067413681,
+   "dps": 398.99405529290914,
+   "dps_stdev": 18.56874272255865,
+   "threat": 283.2857792579656,
+   "dtps": 3.3167540449424533,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8722776409850068,
+   "scorer": 0.7789573043307287,
    "shares": {
-    "Auto Attack": 0.4518525398230879,
-    "Backstab": 0.3765803046730451,
-    "Deadly Poison": 0.05968942818828005,
-    "Eviscerate": 0.03644131151668645,
-    "Dense Sharpening Stone": 0.031433875901318624,
-    "item 10646": 0.02374466296107153,
-    "Dragonbreath Chili": 0.020257876936510332
+    "Auto Attack": 0.47337185812459914,
+    "Backstab": 0.3653075086358112,
+    "Deadly Poison": 0.06408144352332676,
+    "Dense Sharpening Stone": 0.031926644194222906,
+    "Eviscerate": 0.02822734129833339,
+    "Dragonbreath Chili": 0.02075993140489227,
+    "item 10646": 0.016325272818814292
    },
    "source_shares": {
-    "backstab": 0.4073,
-    "white_mh": 0.3177,
-    "white_oh": 0.1711,
-    "poisons": 0.0646,
-    "eviscerate": 0.0394
+    "backstab": 0.3924,
+    "white_mh": 0.3305,
+    "white_oh": 0.178,
+    "poisons": 0.0688,
+    "eviscerate": 0.0303
    },
-   "unmatched_share": 0.0754
+   "unmatched_share": 0.069
   },
   {
    "label": "cand-combat-daggers-raid-r4",
@@ -305,50 +305,102 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
+    "31016": 1.5856666666666666,
+    "11198": 5.055666666666666,
     "13750": 1.0,
-    "6774": 5.291333333333333,
-    "13877": 1.0,
-    "31016": 1.398,
-    "11198": 3.407,
-    "25300": 25.371666666666666
+    "13877": 2.0,
+    "25300": 35.562666666666665,
+    "6774": 8.095666666666666
    },
    "casts": {
+    "Eviscerate": 1.5856666666666666,
+    "Auto Attack": 281.7026666666667,
+    "Expose Armor": 5.055666666666666,
     "Adrenaline Rush": 1.0,
-    "Slice and Dice": 5.291333333333333,
-    "Blade Flurry": 1.0,
-    "Eviscerate": 1.398,
-    "Expose Armor": 3.407,
-    "Auto Attack": 185.34733333333332,
+    "Blade Flurry": 2.0,
     "item 7676": 1.0,
-    "item 10646": 1.0,
-    "Backstab": 25.371666666666666
+    "Backstab": 35.562666666666665,
+    "Slice and Dice": 8.095666666666666,
+    "item 10646": 1.0
    },
-   "dps": 409.25960720447847,
-   "dps_stdev": 23.19640484318148,
-   "threat": 290.57432111517966,
-   "dtps": 4.975131067413681,
+   "dps": 398.14581278735284,
+   "dps_stdev": 18.667902720169703,
+   "threat": 282.68352707902056,
+   "dtps": 3.3167540449424533,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.8726859323740159,
+   "scorer": 0.777937154481223,
    "shares": {
-    "Auto Attack": 0.44559260604390294,
-    "Backstab": 0.38256313285251037,
-    "Deadly Poison": 0.05978583518848042,
-    "Eviscerate": 0.0365001694691468,
-    "Dense Sharpening Stone": 0.03148464612600159,
-    "item 10646": 0.023783014002392033,
-    "Dragonbreath Chili": 0.020290596317565836
+    "Auto Attack": 0.46703444112654346,
+    "Backstab": 0.3713040743828605,
+    "Deadly Poison": 0.06421683996798853,
+    "Dense Sharpening Stone": 0.03199410138426429,
+    "Eviscerate": 0.028286982302716472,
+    "Dragonbreath Chili": 0.02080379466310089,
+    "item 10646": 0.016359766172525908
    },
    "source_shares": {
-    "backstab": 0.4138,
-    "white_mh": 0.3133,
-    "white_oh": 0.1687,
-    "poisons": 0.0647,
-    "eviscerate": 0.0395
+    "backstab": 0.3989,
+    "white_mh": 0.3261,
+    "white_oh": 0.1756,
+    "poisons": 0.069,
+    "eviscerate": 0.0304
    },
-   "unmatched_share": 0.0756
+   "unmatched_share": 0.0692
+  },
+  {
+   "label": "cand-combat-daggers-raid-r5",
+   "talents": "005323103-32330310000515231-002",
+   "split": "17/32/2",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "13877": 2.0,
+    "31016": 1.3456666666666666,
+    "6774": 8.051666666666666,
+    "11198": 5.151666666666666,
+    "13750": 1.0,
+    "25300": 35.40233333333333
+   },
+   "casts": {
+    "Blade Flurry": 2.0,
+    "Eviscerate": 1.3456666666666666,
+    "item 10646": 1.0,
+    "Slice and Dice": 8.051666666666666,
+    "Auto Attack": 281.769,
+    "item 7676": 1.0,
+    "Expose Armor": 5.151666666666666,
+    "Adrenaline Rush": 1.0,
+    "Backstab": 35.40233333333333
+   },
+   "dps": 399.68099693612,
+   "dps_stdev": 18.8027135206454,
+   "threat": 283.7735078246452,
+   "dtps": 3.3167540449424533,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.7813388388681666,
+   "shares": {
+    "Auto Attack": 0.4743038125774329,
+    "Backstab": 0.36877064753602734,
+    "Deadly Poison": 0.06408857565328087,
+    "Dense Sharpening Stone": 0.0318047504346676,
+    "Eviscerate": 0.024116189119714724,
+    "Dragonbreath Chili": 0.020618579582943393,
+    "item 10646": 0.01629744509593316
+   },
+   "source_shares": {
+    "backstab": 0.396,
+    "white_mh": 0.331,
+    "white_oh": 0.1783,
+    "poisons": 0.0688,
+    "eviscerate": 0.0259
+   },
+   "unmatched_share": 0.0687
   },
   {
    "label": "sim preset: Backstab",
@@ -356,50 +408,50 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 5.9479999999999995,
-    "25300": 22.294,
-    "31016": 0.8926666666666667,
-    "11198": 3.1166666666666667,
+    "6774": 9.161333333333333,
+    "13877": 2.0,
+    "31016": 0.899,
+    "25300": 31.063666666666666,
     "13750": 1.0,
-    "13877": 1.0
+    "11198": 4.511
    },
    "casts": {
-    "Slice and Dice": 5.9479999999999995,
-    "Auto Attack": 183.66333333333333,
-    "Backstab": 22.294,
+    "Slice and Dice": 9.161333333333333,
+    "Blade Flurry": 2.0,
     "item 10646": 1.0,
-    "Eviscerate": 0.8926666666666667,
-    "item 7676": 1.0,
-    "Expose Armor": 3.1166666666666667,
+    "Eviscerate": 0.899,
+    "Backstab": 31.063666666666666,
+    "Auto Attack": 279.30600000000004,
     "Adrenaline Rush": 1.0,
-    "Blade Flurry": 1.0
+    "item 7676": 1.0,
+    "Expose Armor": 4.511
    },
-   "dps": 382.80854154454255,
-   "dps_stdev": 21.904830029863323,
-   "threat": 271.794064496625,
-   "dtps": 5.009658509923842,
+   "dps": 371.01678538420646,
+   "dps_stdev": 17.645419210708713,
+   "threat": 263.42191762278657,
+   "dtps": 3.3397723399492283,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.47276395639788366,
-    "Backstab": 0.3615917780925831,
-    "Deadly Poison": 0.06297871262563749,
-    "Dense Sharpening Stone": 0.03208538357138876,
-    "item 10646": 0.025581183135044695,
-    "Eviscerate": 0.0237043967325065,
-    "Dragonbreath Chili": 0.02129458944495577
+    "Auto Attack": 0.49528415931184966,
+    "Backstab": 0.3472678108030719,
+    "Deadly Poison": 0.06843456453656285,
+    "Dense Sharpening Stone": 0.03280460861065082,
+    "Dragonbreath Chili": 0.021860742331955226,
+    "item 10646": 0.01766737832154636,
+    "Eviscerate": 0.016680736084363216
    },
    "source_shares": {
-    "backstab": 0.3926,
-    "white_mh": 0.3336,
-    "white_oh": 0.1797,
-    "poisons": 0.0684,
-    "eviscerate": 0.0257
+    "backstab": 0.3743,
+    "white_mh": 0.347,
+    "white_oh": 0.1869,
+    "poisons": 0.0738,
+    "eviscerate": 0.018
    },
-   "unmatched_share": 0.079
+   "unmatched_share": 0.0723
   },
   {
    "label": "sim preset: Sinister Strike",
@@ -407,52 +459,52 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "11198": 2.384,
-    "6774": 5.675333333333333,
+    "11198": 3.361666666666667,
+    "6774": 8.548333333333332,
+    "13877": 2.0,
     "13750": 1.0,
-    "25300": 25.130666666666666,
+    "25300": 35.236,
     "14177": 1.0,
-    "31016": 0.474,
-    "13877": 1.0
+    "31016": 0.4673333333333333
    },
    "casts": {
-    "Expose Armor": 2.384,
-    "Slice and Dice": 5.675333333333333,
-    "Adrenaline Rush": 1.0,
-    "Backstab": 25.130666666666666,
+    "Expose Armor": 3.361666666666667,
     "item 7676": 1.0,
-    "Auto Attack": 184.88933333333335,
-    "Cold Blood": 1.0,
     "item 10646": 1.0,
-    "Eviscerate": 0.474,
-    "Blade Flurry": 1.0
+    "Slice and Dice": 8.548333333333332,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Backstab": 35.236,
+    "Auto Attack": 281.11400000000003,
+    "Cold Blood": 1.0,
+    "Eviscerate": 0.4673333333333333
    },
-   "dps": 342.998870264261,
-   "dps_stdev": 20.50759813115429,
-   "threat": 243.52919788762534,
-   "dtps": 4.991655536649352,
+   "dps": 334.2184834812776,
+   "dps_stdev": 16.315428587997268,
+   "threat": 237.29512327170704,
+   "dtps": 3.327770357766236,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.5065234714592617,
-    "Backstab": 0.32256390193023027,
-    "Deadly Poison": 0.07048485714818797,
-    "Dense Sharpening Stone": 0.03618874261344553,
-    "item 10646": 0.02840961042485984,
-    "Dragonbreath Chili": 0.023803630579930745,
-    "Eviscerate": 0.012025785844083842
+    "Auto Attack": 0.5268016027925781,
+    "Backstab": 0.3077930273321793,
+    "Deadly Poison": 0.07610510420987716,
+    "Dense Sharpening Stone": 0.03702086401744279,
+    "Dragonbreath Chili": 0.02440516931240881,
+    "item 10646": 0.01952576900124666,
+    "Eviscerate": 0.008348463334267175
    },
    "source_shares": {
-    "white_mh": 0.3612,
-    "backstab": 0.3538,
-    "white_oh": 0.1945,
-    "poisons": 0.0773,
-    "eviscerate": 0.0132
+    "white_mh": 0.3726,
+    "backstab": 0.3349,
+    "white_oh": 0.2006,
+    "poisons": 0.0828,
+    "eviscerate": 0.0091
    },
-   "unmatched_share": 0.0884
+   "unmatched_share": 0.081
   },
   {
    "label": "sim preset: Improved Expose Armor (SS)",
@@ -460,50 +512,50 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 5.115333333333334,
-    "11198": 2.732666666666667,
-    "13877": 1.0,
+    "6774": 7.585666666666667,
     "13750": 1.0,
-    "31016": 1.087,
-    "25300": 26.173666666666666
+    "11198": 4.080333333333333,
+    "25300": 36.863,
+    "13877": 2.0,
+    "31016": 1.092
    },
    "casts": {
-    "item 7676": 1.0,
-    "Slice and Dice": 5.115333333333334,
-    "Expose Armor": 2.732666666666667,
-    "Blade Flurry": 1.0,
+    "Slice and Dice": 7.585666666666667,
+    "Auto Attack": 282.818,
     "Adrenaline Rush": 1.0,
-    "Eviscerate": 1.087,
-    "Auto Attack": 186.22133333333335,
-    "Backstab": 26.173666666666666,
+    "Expose Armor": 4.080333333333333,
+    "item 7676": 1.0,
+    "Backstab": 36.863,
+    "Blade Flurry": 2.0,
+    "Eviscerate": 1.092,
     "item 10646": 1.0
    },
-   "dps": 355.0646288070097,
-   "dps_stdev": 22.09636187345201,
-   "threat": 252.09588645297686,
-   "dtps": 4.982054250687757,
+   "dps": 347.09810406146175,
+   "dps_stdev": 18.21329672256005,
+   "threat": 246.43965388363813,
+   "dtps": 3.321369500458504,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.49590304634194216,
-    "Backstab": 0.3189677610180924,
-    "Deadly Poison": 0.0678104823207012,
-    "Dense Sharpening Stone": 0.03555106332635005,
-    "Eviscerate": 0.031028428708884045,
-    "item 10646": 0.02741134036848426,
-    "Dragonbreath Chili": 0.023327877915545848
+    "Auto Attack": 0.5173981280287262,
+    "Backstab": 0.30930970715786626,
+    "Deadly Poison": 0.0730407935809608,
+    "Dense Sharpening Stone": 0.03604659886105618,
+    "Dragonbreath Chili": 0.02381901915891925,
+    "Eviscerate": 0.02160947140842095,
+    "item 10646": 0.018776281804050235
    },
    "source_shares": {
-    "white_mh": 0.3528,
-    "backstab": 0.3491,
-    "white_oh": 0.19,
-    "poisons": 0.0742,
-    "eviscerate": 0.034
+    "white_mh": 0.365,
+    "backstab": 0.3357,
+    "white_oh": 0.1965,
+    "poisons": 0.0793,
+    "eviscerate": 0.0235
    },
-   "unmatched_share": 0.0863
+   "unmatched_share": 0.0786
   },
   {
    "label": "sim preset: Mutilate",
@@ -511,48 +563,48 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 4.915333333333334,
+    "11198": 6.031333333333333,
+    "6774": 7.475666666666667,
     "14177": 1.0,
-    "31016": 1.9443333333333332,
-    "11198": 4.041666666666667,
-    "25300": 23.675333333333334
+    "31016": 2.6176666666666666,
+    "25300": 34.41266666666667
    },
    "casts": {
-    "Slice and Dice": 4.915333333333334,
-    "Cold Blood": 1.0,
-    "Eviscerate": 1.9443333333333332,
-    "Expose Armor": 4.041666666666667,
-    "item 10646": 1.0,
-    "Auto Attack": 181.10899999999998,
     "item 7676": 1.0,
-    "Backstab": 23.675333333333334
+    "Expose Armor": 6.031333333333333,
+    "Slice and Dice": 7.475666666666667,
+    "item 10646": 1.0,
+    "Auto Attack": 273.356,
+    "Cold Blood": 1.0,
+    "Eviscerate": 2.6176666666666666,
+    "Backstab": 34.41266666666667
    },
-   "dps": 375.0488506839936,
-   "dps_stdev": 24.214319348379842,
-   "threat": 266.28468398563564,
-   "dtps": 4.98666133879817,
+   "dps": 370.728505040444,
+   "dps_stdev": 19.070175025448535,
+   "threat": 263.21723857871507,
+   "dtps": 3.324440892532113,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.4511569550214641,
-    "Backstab": 0.3367479588557593,
-    "Deadly Poison": 0.07440952101068574,
-    "Eviscerate": 0.050510859051236374,
-    "Dense Sharpening Stone": 0.03932758545346411,
-    "item 10646": 0.026083546345187048,
-    "Dragonbreath Chili": 0.021763574262203288
+    "Auto Attack": 0.4623472321537642,
+    "Backstab": 0.33379470885493473,
+    "Deadly Poison": 0.07860649003399428,
+    "Eviscerate": 0.04607393292665653,
+    "Dense Sharpening Stone": 0.039633841362503114,
+    "Dragonbreath Chili": 0.021876645318583243,
+    "item 10646": 0.017667149349563958
    },
    "source_shares": {
-    "backstab": 0.3689,
-    "white_mh": 0.3213,
-    "white_oh": 0.173,
-    "poisons": 0.0815,
-    "eviscerate": 0.0553
+    "backstab": 0.3625,
+    "white_mh": 0.3264,
+    "white_oh": 0.1757,
+    "poisons": 0.0854,
+    "eviscerate": 0.05
    },
-   "unmatched_share": 0.0872
+   "unmatched_share": 0.0792
   },
   {
    "label": "sim preset: Combat Dual-Wield 15/33/3",
@@ -560,50 +612,50 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 5.291333333333334,
-    "13877": 1.0,
+    "6774": 8.095666666666666,
+    "13877": 2.0,
+    "11198": 5.055666666666666,
     "13750": 1.0,
-    "11198": 3.407,
-    "31016": 1.398,
-    "25300": 25.371666666666666
+    "31016": 1.5856666666666666,
+    "25300": 35.562666666666665
    },
    "casts": {
-    "Slice and Dice": 5.291333333333334,
-    "Auto Attack": 185.34733333333332,
-    "Blade Flurry": 1.0,
+    "Slice and Dice": 8.095666666666666,
+    "Blade Flurry": 2.0,
+    "Auto Attack": 281.7026666666667,
+    "Expose Armor": 5.055666666666666,
     "Adrenaline Rush": 1.0,
-    "Expose Armor": 3.407,
-    "Eviscerate": 1.398,
-    "item 7676": 1.0,
     "item 10646": 1.0,
-    "Backstab": 25.371666666666666
+    "Eviscerate": 1.5856666666666666,
+    "item 7676": 1.0,
+    "Backstab": 35.562666666666665
    },
-   "dps": 404.635986432452,
-   "dps_stdev": 22.384977438693074,
-   "threat": 287.29155036704077,
-   "dtps": 4.975131067413681,
+   "dps": 394.16810262271235,
+   "dps_stdev": 18.086617570806325,
+   "threat": 279.8593528621259,
+   "dtps": 3.3167540449424533,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.4576910192906031,
-    "Backstab": 0.37057564726357745,
-    "Deadly Poison": 0.060460687548781686,
-    "Eviscerate": 0.03486150067663789,
-    "Dense Sharpening Stone": 0.03184003946765848,
-    "item 10646": 0.024051472627817153,
-    "Dragonbreath Chili": 0.02051963312492431
+    "Auto Attack": 0.479119171876032,
+    "Backstab": 0.35918879026556605,
+    "Deadly Poison": 0.06485947068157903,
+    "Dense Sharpening Stone": 0.03231427273205259,
+    "Eviscerate": 0.026982830450544337,
+    "Dragonbreath Chili": 0.02101198238171805,
+    "item 10646": 0.016523481612508082
    },
    "source_shares": {
-    "backstab": 0.4012,
-    "white_mh": 0.3221,
-    "white_oh": 0.1734,
-    "poisons": 0.0655,
-    "eviscerate": 0.0377
+    "backstab": 0.3862,
+    "white_mh": 0.3348,
+    "white_oh": 0.1803,
+    "poisons": 0.0697,
+    "eviscerate": 0.029
    },
-   "unmatched_share": 0.0764
+   "unmatched_share": 0.0698
   },
   {
    "label": "sim preset: Assassination Mutilate 31/20/0",
@@ -611,48 +663,48 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 7.073,
-    "31016": 1.3006666666666666,
+    "25300": 33.593,
+    "31016": 1.6266666666666667,
+    "6774": 10.91,
     "14177": 1.0,
-    "11198": 3.777,
-    "25300": 23.088666666666665
+    "11198": 5.62
    },
    "casts": {
-    "Slice and Dice": 7.073,
-    "Eviscerate": 1.3006666666666666,
-    "Auto Attack": 179.168,
-    "Cold Blood": 1.0,
-    "Expose Armor": 3.777,
     "item 7676": 1.0,
+    "Backstab": 33.593,
+    "Eviscerate": 1.6266666666666667,
+    "Slice and Dice": 10.91,
+    "Auto Attack": 270.48699999999997,
+    "Cold Blood": 1.0,
     "item 10646": 1.0,
-    "Backstab": 23.088666666666665
+    "Expose Armor": 5.62
    },
-   "dps": 363.228578137367,
-   "dps_stdev": 23.280656462369322,
-   "threat": 257.89229047753054,
-   "dtps": 4.991261034341344,
+   "dps": 359.065973569945,
+   "dps_stdev": 18.979416461336054,
+   "threat": 254.93684123466087,
+   "dtps": 3.3275073562275628,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.46100778555200134,
-    "Backstab": 0.33419644517234914,
-    "Deadly Poison": 0.07967037454035691,
-    "Dense Sharpening Stone": 0.04404857764187925,
-    "Eviscerate": 0.03202966426169877,
-    "item 10646": 0.026916847426403462,
-    "Dragonbreath Chili": 0.022130305405311065
+    "Auto Attack": 0.47283019296719003,
+    "Backstab": 0.33094441293229254,
+    "Deadly Poison": 0.08406871007618394,
+    "Dense Sharpening Stone": 0.04442393724961719,
+    "Eviscerate": 0.02730586435808112,
+    "Dragonbreath Chili": 0.02219381485881697,
+    "item 10646": 0.018233067557818172
    },
    "source_shares": {
-    "backstab": 0.3685,
-    "white_mh": 0.3304,
-    "white_oh": 0.1779,
-    "poisons": 0.0878,
-    "eviscerate": 0.0353
+    "backstab": 0.3616,
+    "white_mh": 0.3358,
+    "white_oh": 0.1808,
+    "poisons": 0.0919,
+    "eviscerate": 0.0298
    },
-   "unmatched_share": 0.0931
+   "unmatched_share": 0.0849
   },
   {
    "label": "sim preset: Subtlety Hemo 15/0/36",
@@ -660,46 +712,46 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "31016": 0.511,
-    "6774": 7.219666666666667,
-    "25300": 23.676333333333332,
-    "11198": 0.25266666666666665
+    "6774": 11.016666666666667,
+    "11198": 0.37866666666666665,
+    "25300": 34.47366666666667,
+    "31016": 0.5233333333333333
    },
    "casts": {
-    "Eviscerate": 0.511,
-    "Slice and Dice": 7.219666666666667,
-    "item 7676": 1.0,
-    "Auto Attack": 179.95466666666664,
+    "Slice and Dice": 11.016666666666667,
+    "Auto Attack": 271.77700000000004,
     "item 10646": 1.0,
-    "Backstab": 23.676333333333332,
-    "Expose Armor": 0.25266666666666665
+    "item 7676": 1.0,
+    "Expose Armor": 0.37866666666666665,
+    "Backstab": 34.47366666666667,
+    "Eviscerate": 0.5233333333333333
    },
-   "dps": 261.28955625956274,
-   "dps_stdev": 15.868593629079516,
-   "threat": 185.51558494428969,
-   "dtps": 4.9769470214803455,
+   "dps": 258.13774913219703,
+   "dps_stdev": 12.934214810695234,
+   "threat": 183.27780188385992,
+   "dtps": 3.3179646809868966,
    "tmi": 0,
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.47503283225229953,
-    "Backstab": 0.32427249995392216,
-    "Deadly Poison": 0.08239323277909671,
-    "Dense Sharpening Stone": 0.040941338665385005,
-    "item 10646": 0.037018005798817075,
-    "Dragonbreath Chili": 0.02819846750895647,
-    "Eviscerate": 0.01214362304152312
+    "Auto Attack": 0.487701608387844,
+    "Backstab": 0.3210767696290407,
+    "Deadly Poison": 0.08725973834416735,
+    "Dense Sharpening Stone": 0.04156476980140715,
+    "Dragonbreath Chili": 0.028694945212297703,
+    "item 10646": 0.02513275847939895,
+    "Eviscerate": 0.008569410145844256
    },
    "source_shares": {
-    "backstab": 0.3628,
-    "white_mh": 0.3454,
-    "white_oh": 0.186,
-    "poisons": 0.0922,
-    "eviscerate": 0.0136
+    "backstab": 0.3549,
+    "white_mh": 0.3504,
+    "white_oh": 0.1887,
+    "poisons": 0.0965,
+    "eviscerate": 0.0095
    },
-   "unmatched_share": 0.1062
+   "unmatched_share": 0.0954
   }
  ],
  "deltas": {}

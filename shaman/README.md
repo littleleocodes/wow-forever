@@ -11,10 +11,10 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | [Elemental — Raid](raid/elemental.md) ⚗<br>398 DPS | [Elemental / Nature's Swiftness](pvp/elemental.md) |
-| **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>33 s/kill | **✅ Recommended**<br>[One slow weapon](raid/enhancement.md)<br>415 DPS | [Enhancement — PvP](pvp/enhancement.md) ⚗ |
+| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | [Elemental — Raid](raid/elemental.md) ⚗<br>381 DPS | [Elemental / Nature's Swiftness](pvp/elemental.md) |
+| **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>33 s/kill | **✅ Recommended**<br>[One slow weapon](raid/enhancement.md)<br>394 DPS | [Enhancement — PvP](pvp/enhancement.md) ⚗ |
 | **Restoration** | [level as Enhancement](leveling/restoration.md) | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) ⚗ |
-| **Elemental-Enhancement** | - | [Elemental — Lava Burst / Lightning Overload](raid/elemental-enhancement.md)<br>397 DPS | - |
+| **Elemental-Enhancement** | - | **✅ Recommended**<br>[Elemental — Lava Burst / Lightning Overload](raid/elemental-enhancement.md)<br>387 DPS | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -37,13 +37,13 @@ Healing and tanking specs level as a damage spec and switch at 60: Restoration l
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Enhancement](raid/enhancement.md) — One slow weapon | 415 | 774 | best |
-| 2 | [Elemental](raid/elemental.md) — Elemental — Raid ⚗ | 398 | 499 | -4% |
-| 3 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 397 | 504 | -4% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Enhancement](raid/enhancement.md) — One slow weapon | 394 | 757 | 377 | best |
+| 2 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 387 | 495 | 371 | -2% |
+| 3 | [Elemental](raid/elemental.md) — Elemental — Raid ⚗ | 381 | 485 | 366 | -3% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.
 

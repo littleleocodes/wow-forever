@@ -4,9 +4,11 @@
 
 **[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (33/0/18) — [open the talent tree](https://talentsforever.com/paladin/60/05320213225101051--352030302-4)
 
+## The numbers
+
 Healing capacity 0.67 (the raid damage it heals through in this project's healer lab), 380 healing per second. Healers are not in the community simulator.
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Raid healing](../research/raid/builds/opt-holy-heal-raid-heal.md) (23/0/28) — [open the talent tree](https://talentsforever.com/paladin/60/053200032251--550253311000003-4)
 

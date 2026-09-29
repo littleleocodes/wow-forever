@@ -4,9 +4,11 @@
 
 **[Restoration (optimized)](../research/raid/builds/opt-resto-heal-raid-heal.md)** (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113201-4)
 
+## The numbers
+
 Healing capacity 0.75 (the raid damage it heals through in this project's healer lab), 451 healing per second. Healers are not in the community simulator.
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Restoration — Raid Healer](../research/raid/builds/resto-raid-healer.md) (11/5/35) — [open the talent tree](https://talentsforever.com/druid/60/05302001-05-5050035153113021-4)
 - [Restoration / Balance — Regrowth / Nature's Grace](../research/raid/builds/resto-regrowth-natures-grace.md) (21/0/30) — [open the talent tree](https://talentsforever.com/druid/60/1532223110001--505003510311105-4)

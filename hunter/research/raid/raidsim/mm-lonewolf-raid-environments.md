@@ -4,19 +4,49 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | 466 | 848 | 848 | 863 |
-| `mm-lone-wolf-raid` | 5/41/5 | 432 | 463 | 887 | 887 | 916 |
-| `opt-mm-lonewolf-raid-parse` | 5/37/9 | 423 | 454 | 828 | 848 | 863 |
-| sim preset: Marksmanship | - | 354 | 380 | 732 | 732 | 750 |
-| sim preset: Marksmanship 0/39/12 | - | 333 | 357 | 689 | 689 | 716 |
-| sim preset: Beast Mastery 35/16/0 | - | 323 | 344 | 590 | 604 | 626 |
-| sim preset: Survival 0/15/36 | - | 309 | 328 | 594 | 607 | 628 |
+| `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 420 | 451 | 841 | 841 | 863 |
+| `mm-lone-wolf-raid` | 5/41/5 | 419 | 449 | 877 | 877 | 916 |
+| `opt-mm-lonewolf-raid-parse` | 5/37/9 | 410 | 440 | 821 | 841 | 863 |
+| sim preset: Marksmanship | - | 342 | 367 | 707 | 707 | 750 |
+| sim preset: Marksmanship 0/39/12 | - | 323 | 346 | 666 | 666 | 716 |
+| sim preset: Beast Mastery 35/16/0 | - | 315 | 334 | 583 | 597 | 626 |
+| sim preset: Survival 0/15/36 | - | 299 | 318 | 585 | 599 | 628 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `opt-mm-lonewolf-raid-raid-dps` | 420 | +29% | +40% | +7% | +11% | +13% | 841 |
+| `mm-lone-wolf-raid` | 419 | +25% | +41% | +7% | +7% | +29% | 877 |
+| `opt-mm-lonewolf-raid-parse` | 410 | +29% | +40% | +7% | +11% | +13% | 821 |
+| sim preset: Marksmanship | 342 | +28% | +41% | +7% | +11% | +20% | 707 |
+| sim preset: Marksmanship 0/39/12 | 323 | +28% | +40% | +7% | +10% | +21% | 666 |
+| sim preset: Beast Mastery 35/16/0 | 315 | +18% | +39% | +6% | +6% | +16% | 583 |
+| sim preset: Survival 0/15/36 | 299 | +23% | +40% | +6% | +7% | +20% | 585 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `opt-mm-lonewolf-raid-raid-dps` | 573 | 294 | 393 | 288 | 345 |
+| `mm-lone-wolf-raid` | 541 | 323 | 393 | 302 | 338 |
+| `opt-mm-lonewolf-raid-parse` | 560 | 286 | 383 | 280 | 337 |
+| sim preset: Marksmanship | 464 | 244 | 320 | 240 | 284 |
+| sim preset: Marksmanship 0/39/12 | 441 | 225 | 302 | 226 | 261 |
+| sim preset: Beast Mastery 35/16/0 | 384 | 263 | 297 | 215 | 262 |
+| sim preset: Survival 0/15/36 | 378 | 240 | 280 | 198 | 246 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p1.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -25,6 +25,7 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 import paths  # noqa: E402
 import readme_sections  # noqa: E402
+import simple_rotation  # noqa: E402
 import render_rotations as rr  # noqa: E402
 import render_start_here as rs  # noqa: E402
 import spec_modes as SM  # noqa: E402
@@ -68,11 +69,17 @@ def leveling_numbers(cls):
             continue
         per = {int(L): r["time_per_kill"] for L, r in rep["levels"].items() if isinstance(r, dict) and "time_per_kill" in r}
         out.setdefault(rep["build"], per)
+        LEVEL_MODEL.setdefault((cls, rep["build"]), rep.get("spec"))
         for bid, lv in (rep.get("compare") or {}).items():
             out.setdefault(bid, {int(L): r["time_per_kill"] for L, r in lv.items() if isinstance(r, dict) and "time_per_kill" in r})
+            # an optimizer build plays under its own model (fightlab/run.py spec_of_build): opt-<model>-<profile>
+            own = next((m for m in STEPS.get(cls, {}) if bid.startswith(f"opt-{m}-")), None)
+            LEVEL_MODEL.setdefault((cls, bid), own or rep.get("spec"))
     for bid, info in (GEN.get(cls) or {}).items():
         if info.get("levels"):
             out.setdefault(bid, {int(L): v for L, v in info["levels"].items()})
+        if info.get("model"):
+            LEVEL_MODEL[(cls, bid)] = info["model"]
     return out
 
 
@@ -91,8 +98,12 @@ def env_info(cls, entry, label):
 
 
 def late_dps(cls, r):
-    """DPS in the last window of the curve (minutes 4-6) for a raid_numbers row, or None."""
+    """Average DPS over a 6-minute fight (the curve's longest) for a raid_numbers row, or None."""
     return (list((env_info(cls, r["entry"], r["row"]["label"])[1] or {}).values()) or [None])[-1] if r else None
+
+
+LEVEL_MODEL = {}   # (class, build id) -> the fight-lab spec model the build plays
+STEPS = {k: v for k, v in json.load(open(HERE / "leveling-steps.json", encoding="utf-8")).items() if not k.startswith("_")}
 
 
 def healer_numbers(cls):
@@ -186,64 +197,83 @@ def mode_section(cls, spec, mode, builds, nums, src):
         o += [f"> {GEN_MARK} Generated build: no hand-made {spec} build exists for this mode yet, so this is the stats model's best {spec} build"
               + (", refined in the raid simulator" if mode == "raid" and (GEN.get(cls, {}).get(top["id"], {}).get("entry")) else "")
               + ". A starting point, not a proven build.", ""]
+    play, talents, numbers = [], [], []   # the page reads: build, how to play, talents while leveling, the numbers, other builds
     if mode == "leveling":
         if top.get("order"):
-            o += ["Talent order (one point per level from 10):", "", "| Levels | Talent | Points |", "|---|---|---|"]
-            o += [f"| {s['levels']} | {s['talent']} ({s['tree']}) | {s['points']} |" for s in top["order"]]
-            o.append("")
-        spec_model = (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
-        try:
-            desc = rr.fl_description(cls, spec_model)
-        except Exception:   # noqa: BLE001
-            desc = ""
-        if desc:
-            o += ["**What to press:** " + " ".join(desc.split()), ""]
+            talents += ["## Talents while leveling", "", "One point per level from 10, in this order:", "", "| Levels | Talent | Points |", "|---|---|---|"]
+            talents += [f"| {s['levels']} | {s['talent']} ({s['tree']}) | {s['points']} |" for s in top["order"]] + [""]
+        spec_model = LEVEL_MODEL.get((cls, top["id"])) or (GEN.get(cls, {}).get(top["id"], {}) or {}).get("model") or rs.leveling_pick(cls)[1]
+        st = STEPS.get(cls, {}).get(spec_model)
+        if st:
+            play += ["## How to play", ""]
+            if st.get("before"):
+                play += ["**Before the fight:** " + " ".join(st["before"]), ""]
+            play += ["**In the fight**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(st["steps"], 1)] + [""]
+            if st.get("between"):
+                play += ["**Between fights:** " + " ".join(st["between"]), ""]
+        else:
+            try:
+                desc = rr.fl_description(cls, spec_model)
+            except Exception:   # noqa: BLE001
+                desc = ""
+            if desc:
+                play += ["## How to play", "", " ".join(desc.split()), ""]
         per = L.get(top["id"])
         if per:
-            o += ["| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
-            o += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())]
-            o.append("")
+            numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
+            numbers += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())] + [""]
     elif mode == "raid":
+        r = R.get(top["id"]) if top.get("role") != "healer" else None
         if top.get("role") == "healer":
             h = H.get(top["id"])
             if h:
-                o += [f"Healing capacity {h['capacity']:.2f} (the raid damage it heals through in this project's healer lab), {h['hps']:.0f} "
-                      "healing per second. Healers are not in the community simulator.", ""]
-        else:
-            r = R.get(top["id"])
-            if r and r.get("tank"):
-                o += [f"Tank value {r['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build).", ""]
-            elif r:
-                o += ["| Setting | DPS |", "|---|---|", f"| Training dummy (only your own buffs) | {r['dps']:.0f} |"]
-                if r.get("raid"):
-                    o.append(f"| Parse (a full raid: every raid buff and debuff) | {r['raid']:.0f} |")
-                o.append("")
-            if r and not r.get("tank"):
-                lad, cur = env_info(cls, r["entry"], top["id"])
-                if lad:
-                    o += ["**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):", "",
-                          f"Dummy {lad['dummy']:.0f} → " + " → ".join(f"{k if k != 'rest' else 'everything else'} {v:+.0%}" for k, v in lad["steps"].items())
-                          + f" → raid {lad['raid']:.0f}", "",
-                          "(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, "
-                          "Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; "
-                          "*everything else*: Kings, stamina, spirit, auras and the raid rotation.)", ""]
-                if cur:
-                    o += ["**DPS over the fight** (training dummy; damage per second inside each stretch of the fight):", "",
-                          "| " + " | ".join(cur) + " |", "|" + "---|" * len(cur), "| " + " | ".join(f"{v:.0f}" for v in cur.values()) + " |", "",
-                          "A falling row means cooldowns spent at the pull or mana running out; each stretch is about ±3%.", ""]
-            if r:
-                o += ["**What to press** (top to bottom: cast the first line that is ready):", ""] + rs.rotation_lines(r["d"], r["row"]) + [""]
+                numbers += ["## The numbers", "", f"Healing capacity {h['capacity']:.2f} (the raid damage it heals through in this project's healer lab), "
+                            f"{h['hps']:.0f} healing per second. Healers are not in the community simulator.", ""]
+        elif r and r.get("tank"):
+            numbers += ["## The numbers", "", f"Tank value {r['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build).", ""]
+        elif r:
+            numbers += ["## The numbers", "", "| Setting | DPS |", "|---|---|", f"| Training dummy, 3-minute fight (only your own buffs) | {r['dps']:.0f} |"]
+            if r.get("raid"):
+                numbers.append(f"| Parse (a full raid: every raid buff and debuff) | {r['raid']:.0f} |")
+            numbers.append("")
+            lad, cur = env_info(cls, r["entry"], top["id"])
+            if lad:
+                numbers += ["**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):", "",
+                            f"Dummy {lad['dummy']:.0f} → " + " → ".join(f"{k if k != 'rest' else 'everything else'} {v:+.0%}" for k, v in lad["steps"].items())
+                            + f" → raid {lad['raid']:.0f}", "",
+                            "(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, "
+                            "Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; "
+                            "*everything else*: Kings, stamina, spirit, auras and the raid rotation.)", ""]
+            if cur:
+                numbers += ["**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):", "",
+                            "| " + " | ".join(cur) + " |", "|" + "---|" * len(cur), "| " + " | ".join(f"{v:.0f}" for v in cur.values()) + " |", "",
+                            "Falling numbers mean cooldowns used at the pull, or mana running out in long fights.", ""]
+        if r:
+            texts = [ln["text"] for ln, pl in zip(r["d"]["lines"], r["row"]["lines"]) if pl["used"]]
+            keep, prio = simple_rotation.simplify(cls, texts)
+            pre = simple_rotation.pre_pull(cls, r["d"]["pre"])
+            play += ["## How to play", ""]
+            if pre:
+                play += ["**Before the pull:** " + ", ".join(f"**{x}**" for x in pre) + ".", ""]
+            if keep:
+                play += ["**Keep up all fight:** " + ", ".join(f"**{x}**" for x in keep) + ".", ""]
+            if prio:
+                play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
+                filler = prio[-1].count("**") == 2 and prio[-1].endswith("**")   # a plain last line: the filler
+                play += ["", (f"{prio[-1]} is your filler: cast it whenever nothing above is ready. " if filler else "")
+                         + f"This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); "
+                         f"the exact list: [research rotation page]({paths.rel(src, paths.rotation_page(cls, 'raid'))}).", ""]
         parse = next((b for b in ranked if b["id"].endswith("-parse")), None)
         if parse:
-            o += [f"Parse build (personal damage in a full raid, where the raid brings the buffs): {link(cls, parse, src)} "
-                  f"({rs.split_of(cls, rs.flat(parse))}) — {tree_link(cls, parse)}.", ""]
+            numbers += [f"**Parse build** (personal damage in a full raid, where the raid brings the buffs): {link(cls, parse, src)} "
+                        f"({rs.split_of(cls, rs.flat(parse))}) — {tree_link(cls, parse)}.", ""]
     else:
-        o += [rs.short(top.get("summary"), 400), "",
-              "PvP has no fixed rotation (it depends on the fight), and no simulator plays PvP: these builds rest on the talents' descriptions "
-              "and the Classic community's PvP builds.", ""]
+        play += ["## How to play", "", "PvP has no fixed rotation: it depends on who you fight. No simulator plays PvP, so this build rests on the talents' "
+                 "descriptions and the community's PvP builds.", "", "**Why these talents:** " + rs.short(top.get("summary"), 400), ""]
+    o += play + talents + numbers
     alts = [b for b in ranked[1:] if not b["id"].endswith("-parse")]
     if alts:
-        o += ["Other builds of this spec:", ""]
+        o += ["## Other builds of this spec", ""]
         for b in alts:
             extra = ""
             if mode == "raid" and (R.get(b["id"]) or {}).get("dps") and not (R.get(b["id"]) or {}).get("tank"):
@@ -294,8 +324,8 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
             dps.sort(key=lambda x: x[0])
             best = -dps[0][0]
             o += ["**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. "
-                  "*Minutes 4-6*: its DPS late in a long fight (dummy, no execute phase), where cooldowns are spent and mana runs short.", "",
-                  "| # | Spec and build | Dummy DPS | Parse DPS | Minutes 4-6 | Behind the best |", "|---|---|---|---|---|---|"]
+                  "*6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.", "",
+                  "| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |", "|---|---|---|---|---|---|"]
             for i, (d, spec, b) in enumerate(dps, 1):
                 r = R[b["id"]]
                 late = late_dps(cls, r)

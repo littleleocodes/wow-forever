@@ -4,17 +4,43 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-balance-dps-parse` | 33/5/13 | 461 | 539 | 517 | 517 | 504 |
-| `opt-balance-dps-raid-dps` | 34/6/11 | 461 | 539 | 518 | 517 | 504 |
-| `balance-moonkin-raid` | 33/3/15 | 460 | 538 | 516 | 516 | 503 |
-| sim preset: Balance | - | 411 | 477 | 464 | 463 | 450 |
-| sim preset: Moonkin 38/0/13 | - | 402 | 479 | 510 | 509 | 502 |
+| `opt-balance-dps-raid-dps` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
+| `opt-balance-dps-parse` | 33/5/13 | 438 | 518 | 511 | 511 | 504 |
+| `balance-moonkin-raid` | 33/3/15 | 435 | 514 | 510 | 509 | 503 |
+| sim preset: Balance | - | 400 | 469 | 457 | 456 | 450 |
+| sim preset: Moonkin 38/0/13 | - | 353 | 421 | 506 | 502 | 502 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `opt-balance-dps-raid-dps` | 438 | +5% | +0% | -5% | +11% | +6% | 511 |
+| `opt-balance-dps-parse` | 438 | +5% | +0% | -5% | +11% | +6% | 511 |
+| `balance-moonkin-raid` | 435 | +5% | +0% | -5% | +11% | +6% | 510 |
+| sim preset: Balance | 400 | +2% | +0% | -5% | +10% | +6% | 457 |
+| sim preset: Moonkin 38/0/13 | 353 | +26% | +0% | -6% | +14% | +9% | 506 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `opt-balance-dps-raid-dps` | 458 | 465 | 392 | 215 | 261 |
+| `opt-balance-dps-parse` | 458 | 465 | 392 | 215 | 261 |
+| `balance-moonkin-raid` | 457 | 464 | 384 | 214 | 261 |
+| sim preset: Balance | 406 | 416 | 379 | 212 | 233 |
+| sim preset: Moonkin 38/0/13 | 450 | 354 | 255 | 160 | 211 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p2.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

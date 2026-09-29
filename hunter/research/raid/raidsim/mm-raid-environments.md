@@ -4,20 +4,52 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 22/29/0 | 428 | 466 | 766 | 766 | 792 |
-| `bm-mm-raid` | 22/29/0 | 425 | 464 | 769 | 769 | 795 |
-| `opt-mm-raid-parse` | 22/29/0 | 422 | 460 | 762 | 779 | 805 |
-| sim preset: Marksmanship | - | 400 | 436 | 816 | 816 | 837 |
-| `bm-mm-full-buffs-raid` | 20/31/0 | 395 | 430 | 809 | 809 | 835 |
-| sim preset: Beast Mastery 35/16/0 | - | 381 | 417 | 698 | 713 | 744 |
-| sim preset: Marksmanship 0/39/12 | - | 368 | 401 | 740 | 740 | 764 |
-| sim preset: Survival 0/15/36 | - | 343 | 371 | 649 | 662 | 685 |
+| `opt-mm-raid-raid-dps` | 22/29/0 | 415 | 453 | 761 | 761 | 792 |
+| `bm-mm-raid` | 22/29/0 | 413 | 450 | 758 | 758 | 795 |
+| `opt-mm-raid-parse` | 22/29/0 | 409 | 446 | 752 | 768 | 805 |
+| sim preset: Marksmanship | - | 388 | 423 | 788 | 788 | 837 |
+| `bm-mm-full-buffs-raid` | 20/31/0 | 386 | 420 | 784 | 784 | 835 |
+| sim preset: Beast Mastery 35/16/0 | - | 370 | 406 | 691 | 705 | 744 |
+| sim preset: Marksmanship 0/39/12 | - | 356 | 388 | 719 | 719 | 764 |
+| sim preset: Survival 0/15/36 | - | 335 | 363 | 640 | 654 | 685 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `opt-mm-raid-raid-dps` | 415 | +18% | +40% | +7% | +6% | +13% | 761 |
+| `bm-mm-raid` | 413 | +17% | +40% | +7% | +6% | +13% | 758 |
+| `opt-mm-raid-parse` | 409 | +17% | +40% | +8% | +6% | +13% | 752 |
+| sim preset: Marksmanship | 388 | +24% | +41% | +8% | +9% | +20% | 788 |
+| `bm-mm-full-buffs-raid` | 386 | +23% | +44% | +8% | +7% | +21% | 784 |
+| sim preset: Beast Mastery 35/16/0 | 370 | +19% | +42% | +7% | +6% | +12% | 691 |
+| sim preset: Marksmanship 0/39/12 | 356 | +27% | +42% | +8% | +8% | +18% | 719 |
+| sim preset: Survival 0/15/36 | 335 | +20% | +41% | +7% | +6% | +17% | 640 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `opt-mm-raid-raid-dps` | 506 | 349 | 389 | 294 | 346 |
+| `bm-mm-raid` | 497 | 353 | 388 | 290 | 343 |
+| `opt-mm-raid-parse` | 494 | 349 | 384 | 286 | 339 |
+| sim preset: Marksmanship | 516 | 284 | 364 | 282 | 326 |
+| `bm-mm-full-buffs-raid` | 493 | 297 | 367 | 298 | 324 |
+| sim preset: Beast Mastery 35/16/0 | 456 | 306 | 349 | 262 | 312 |
+| sim preset: Marksmanship 0/39/12 | 472 | 263 | 332 | 254 | 290 |
+| sim preset: Survival 0/15/36 | 417 | 269 | 321 | 230 | 277 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p1.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -9,22 +9,22 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Insect Swarm | Balance | 4 | +11.26% | manual |
-| Nature's Splendor | Balance | 3 | +3.34% | manual |
-| Moonglow | Balance | 2 | +3.32% | manual |
-| Improved Starfire | Balance | 4 | +2.63% | manual |
+| Insect Swarm | Balance | 4 | +11.32% | manual |
+| Moonkin Form | Balance | 7 | +4.25% | manual |
+| Moonglow | Balance | 2 | +3.56% | manual |
 | Nature's Reach | Balance | 2 | +2.43% | manual |
-| Moonkin Form | Balance | 7 | +2.39% | manual |
 | Moonfury | Balance | 6 | +2.00% | manual |
+| Nature's Splendor | Balance | 3 | +1.80% | manual |
 | Vengeance | Balance | 4 | +1.73% | manual |
-| Improved Moonfire | Balance | 2 | +1.38% | manual |
+| Improved Moonfire | Balance | 2 | +1.37% | manual |
+| Improved Starfire | Balance | 4 | +1.13% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Nature's Grace | Balance | 5 | +0.97% | manual |
 | Nature's Majesty | Balance | 2 | +0.92% | manual |
 | Reflection | Restoration | 3 | +0.56% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
-| Heart of the Wild | Feral Combat | 1 | +0.46% | manual |
 | Living Spirit | Restoration | 5 | +0.40% | manual |
+| Heart of the Wild | Feral Combat | 1 | +0.12% | manual |
 | Improved Wrath | Balance | 1 | +0.01% | manual |
 | Genesis | Balance | 1 | +0.00% | manual |
 | Improved Entangling Roots | Balance | 3 | +0.00% | manual |
@@ -40,11 +40,11 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Sharpened Claws | Feral Combat | 3 | +0.00% | manual |
 | Shredding Attacks | Feral Combat | 4 | +0.00% | manual |
 
-## Optimized build: 33/5/13  score +104.56%  (dps x1.901, sustain x1.722, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 0.933  — use this to compare models with different pet shares.
+## Optimized build: 33/5/13  score +93.45%  (dps x1.794, sustain x1.702, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 0.881  — use this to compare models with different pet shares.
 
 ```
-  Balance: Genesis 5, Moonglow 3, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Insect Swarm 1, Improved Starfire 5, Vengeance 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
+  Balance: Genesis 5, Moonglow 3, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Insect Swarm 1, Vengeance 5, Improved Starfire 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
   Feral Combat: Heart of the Wild 5
   Restoration: Nature's Focus 5, Naturalist 5, Reflection 3
 ```
@@ -53,7 +53,7 @@ Absolute DPS index (character alone, no talents = 1.00): 0.933  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.95% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.90% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.40% | no |
 | Improved Wrath | Balance 1 | 1/5 | +0.01% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |

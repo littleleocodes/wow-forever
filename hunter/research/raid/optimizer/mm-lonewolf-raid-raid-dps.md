@@ -20,7 +20,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.75% | manual |
 | Barrage | Marksmanship | 5 | +0.30% | manual |
 | Improved Tracking | Survival | 1 | +0.10% | manual |
-| Improved Arcane Shot | Marksmanship | 3 | +0.07% | manual |
+| Improved Arcane Shot | Marksmanship | 3 | +0.06% | manual |
 | Survivalist | Survival | 2 | +0.00% | manual |
 | Endurance Training | Beast Mastery | 1 | +0.00% | manual |
 | Focused Fire | Beast Mastery | 2 | +0.00% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Hawk Eye | Marksmanship | 1 | +0.00% | manual |
 | Improved Concussive Shot | Marksmanship | 1 | +0.00% | manual |
 
-## Optimized build: 5/38/8  score +78.02%  (dps x1.780, sustain x1.369, surv x1.060, utility +0.00%)
+## Optimized build: 5/38/8  score +77.64%  (dps x1.776, sustain x1.369, surv x1.060, utility +0.00%)
 
 ```
   Beast Mastery: Deadly Aspects 5
@@ -52,9 +52,9 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Bestial Discipline | Beast Mastery 5 | 1/2 | +5.68% | no |
-| Lightning Reflexes | Survival 6 | 1/5 | +2.14% | no |
-| Resourcefulness | Survival 5 | 1/2 | +1.14% | no |
+| Bestial Discipline | Beast Mastery 5 | 1/2 | +5.87% | no |
+| Lightning Reflexes | Survival 6 | 1/5 | +2.13% | no |
+| Resourcefulness | Survival 5 | 1/2 | +1.17% | no |
 | Survivalist | Survival 2 | 4/5 | +0.00% | yes |
 | Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |
 | Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |

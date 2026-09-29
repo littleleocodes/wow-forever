@@ -6,7 +6,24 @@
 
 **[Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-050500325152310051--4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Battle Stance**, a weapon in each hand.
+
+**In the fight**, top to bottom:
+
+1. **Bloodrage**, then **Charge** in.
+2. **Battle Shout**: keep it up.
+3. **Bloodthirst** whenever ready.
+4. **Overpower** when it lights up (after a dodge).
+5. **Execute** when the mob is below 20% health.
+6. **Heroic Strike** with spare rage; **Victory Rush** after a kill.
+
+**Between fights:** Bandage below 60% health, eat below half.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -31,7 +48,7 @@ Talent order (one point per level from 10):
 | 55-59 | Improved Tactical Mastery (Arms) | 5 |
 | 60 | Anger Management (Arms) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Classic's formula (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -41,7 +58,7 @@ Talent order (one point per level from 10):
 | 50 | 29 |
 | 60 | 33 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Raid dual-wield Fury](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/3202501-050500325152310051--4)
 - [Two-handed Arms/raid or leveling](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/0530220313-050501310052310051--4)

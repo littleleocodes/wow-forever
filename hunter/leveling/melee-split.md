@@ -8,7 +8,24 @@
 
 **[Melee hunter](../research/leveling/builds/opt-melee-dps-leveling-st.md)** (9/13/29) — [open the talent tree](https://talentsforever.com/hunter/60/50202-005305-54020003105122211-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it). **Hunter's Mark** and **Serpent Sting** from range, then walk in.
+
+**In the fight**, top to bottom:
+
+1. **Immolation Trap** at your feet while the mob has most of its health.
+2. **Mongoose Bite** when it lights up (after a dodge).
+3. **Counterattack** after you parry.
+4. **Strider Kick** on cooldown.
+5. **Raptor Strike** on every swing it is ready.
+6. Low on health: **Deterrence**; **Mend Pet** for the pet.
+
+**Between fights:** Mend the pet, drink below a third of your mana, eat below two thirds of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -33,7 +50,7 @@ Talent order (one point per level from 10):
 | 58-59 | Pathfinding (Beast Mastery) | 2 |
 | 60 | Lightning Reflexes (Survival) | 1 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a cat: the pet runs in and meets the mob halfway, Growls every 5 s and holds it until your threat passes 130% of its own. You shoot from 35 yd: Hunter's Mark, Serpent Sting, Summon Hawk or Arcane Shot, Multi-Shot / Aimed Shot on their shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|

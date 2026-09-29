@@ -6,17 +6,17 @@
  "builds": [
   "affliction-dot-raid",
   "opt-affliction-raid-raid-dps",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-26.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-27.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r1.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r2.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r3.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r4.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r5.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r6.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r7.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r8.json",
-  "/home/user/wow-forever/warlock/raid/raidsim/candidates/cand-affliction-raid-r9.json"
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-hand-2026-09-27.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r1.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r2.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r3.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r4.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r5.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r6.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r7.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r8.json",
+  "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/cand-affliction-raid-r9.json"
  ],
  "sim": {
   "repo": "/root/.wow-forever-tools/forever-repo",
@@ -39,17 +39,17 @@
    "potId": 13444,
    "conjuredId": 12662
   },
-  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
   "iterations": 1500,
   "seed": 1,
-  "duration": 120.0
+  "duration": 180.0
  },
  "talents": [
   {
    "talent": "Bane",
-   "sim": 0.09489315157245025,
-   "ev_before": 0.09389214698418676,
-   "ev_after": 0.09389214698418676,
+   "sim": 0.09190852685501433,
+   "ev_before": 0.09495632181694691,
+   "ev_after": 0.09521145109854302,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -70,9 +70,9 @@
   },
   {
    "talent": "Master Demonologist",
-   "sim": 0.08149726993069753,
-   "ev_before": 0.08183805718296436,
-   "ev_after": 0.08183805718296436,
+   "sim": 0.08094177009937893,
+   "ev_before": 0.08110527740605082,
+   "ev_after": 0.08111241724179374,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -82,9 +82,9 @@
   },
   {
    "talent": "Demonic Knowledge",
-   "sim": 0.05653247437121776,
-   "ev_before": 0.0638983114435678,
-   "ev_after": 0.0638983114435678,
+   "sim": 0.057057816474430936,
+   "ev_before": 0.06391442685396978,
+   "ev_after": 0.06395710753611039,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -94,9 +94,9 @@
   },
   {
    "talent": "Agonizing Flames",
-   "sim": 0.053070288733149604,
-   "ev_before": 0.0596101410515625,
-   "ev_after": 0.0596101410515625,
+   "sim": 0.05282958521718277,
+   "ev_before": 0.059922701862557416,
+   "ev_after": 0.060115703925373076,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -114,9 +114,9 @@
   },
   {
    "talent": "Malevolence",
-   "sim": 0.04794579289673485,
-   "ev_before": 0.04280750684895868,
-   "ev_after": 0.04280750684895868,
+   "sim": 0.04788912781921179,
+   "ev_before": 0.042369508822000065,
+   "ev_after": 0.042320921278308055,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -135,9 +135,9 @@
   },
   {
    "talent": "Suppression",
-   "sim": 0.04766132134545601,
-   "ev_before": 0.04571207027972968,
-   "ev_after": 0.04571207027972968,
+   "sim": 0.04652639671796536,
+   "ev_before": 0.04571158096249439,
+   "ev_after": 0.045710280836495226,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -158,9 +158,9 @@
   },
   {
    "talent": "Improved Shadow Bolt",
-   "sim": 0.04570163596309151,
-   "ev_before": 0.041856198317117926,
-   "ev_after": 0.041856198317117926,
+   "sim": 0.04577513893238934,
+   "ev_before": 0.041435936080496366,
+   "ev_after": 0.041406187062084945,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -181,9 +181,9 @@
   },
   {
    "talent": "Improved Corruption",
-   "sim": 0.041171544188517796,
-   "ev_before": 0.039896432326946125,
-   "ev_after": 0.039896432326946125,
+   "sim": 0.03889483506186975,
+   "ev_before": 0.039517998481499436,
+   "ev_after": 0.039615785966600425,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -203,9 +203,9 @@
   },
   {
    "talent": "Shadow Mastery",
-   "sim": 0.03895488454296514,
-   "ev_before": 0.04223299568308226,
-   "ev_after": 0.04223299568308226,
+   "sim": 0.03874649450790109,
+   "ev_before": 0.04178587646344788,
+   "ev_after": 0.04174660881409594,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -220,9 +220,9 @@
   },
   {
    "talent": "Ruin",
-   "sim": 0.03699197677620328,
-   "ev_before": 0.03904409658716507,
-   "ev_after": 0.03904409658716507,
+   "sim": 0.03700244223683433,
+   "ev_before": 0.03911446595204218,
+   "ev_after": 0.03923734521715462,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -241,9 +241,9 @@
   },
   {
    "talent": "Soul Link",
-   "sim": 0.02999999999999971,
-   "ev_before": 0.1344638794794151,
-   "ev_after": 0.1344638794794151,
+   "sim": 0.03000000000000066,
+   "ev_before": 0.13473372076047377,
+   "ev_after": 0.13555953703167378,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
@@ -252,9 +252,9 @@
   },
   {
    "talent": "Pandemic",
-   "sim": 0.02264564544696276,
-   "ev_before": 0.02832121445811738,
-   "ev_after": 0.02832121445811738,
+   "sim": 0.022595362017153415,
+   "ev_before": 0.02799759850508048,
+   "ev_after": 0.027787346452903195,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -273,9 +273,9 @@
   },
   {
    "talent": "Improved Bane of Agony",
-   "sim": 0.017202423609405364,
-   "ev_before": 0.015168038730407679,
-   "ev_after": 0.015168038730407679,
+   "sim": 0.01707692372607892,
+   "ev_before": 0.014981784476255044,
+   "ev_after": 0.014704581574031617,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -293,9 +293,9 @@
   },
   {
    "talent": "Improved Life Tap",
-   "sim": 0.015305524225644096,
-   "ev_before": 0.005555934612120387,
-   "ev_after": 0.005555934612120387,
+   "sim": 0.017019354955234774,
+   "ev_before": 0.005555494411860821,
+   "ev_after": 0.011897473670328508,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -310,10 +310,21 @@
    ]
   },
   {
+   "talent": "Cataclysm",
+   "sim": 0.015202479515025846,
+   "ev_before": 0.0063310573402814195,
+   "ev_after": 0.0063469842630253515,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-affliction-raid-hand-2026-09-26"
+   ]
+  },
+  {
    "talent": "Malediction",
-   "sim": 0.013492940915739382,
-   "ev_before": 0.012194810504826908,
-   "ev_after": 0.012194810504826908,
+   "sim": 0.013606921496476512,
+   "ev_before": 0.01233885687083218,
+   "ev_after": 0.012272804531033627,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -325,21 +336,10 @@
    ]
   },
   {
-   "talent": "Cataclysm",
-   "sim": 0.012456176086111732,
-   "ev_before": 0.006332417960677172,
-   "ev_after": 0.006332417960677172,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "cand-affliction-raid-hand-2026-09-26"
-   ]
-  },
-  {
    "talent": "Fel Vitality",
-   "sim": 0.012447747149426132,
-   "ev_before": 0.003694809499519518,
-   "ev_after": 0.003694809499519518,
+   "sim": 0.009026542401823533,
+   "ev_before": 0.003694809499519482,
+   "ev_after": 0.00370542804974546,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -352,23 +352,22 @@
    ]
   },
   {
-   "talent": "Nightfall",
-   "sim": 0.00802584025416755,
-   "ev_before": 0.01100889639001198,
-   "ev_after": 0.01100889639001198,
+   "talent": "Decimation",
+   "sim": 0.008792405826857655,
+   "ev_before": 0.01089395229995457,
+   "ev_after": 0.010885636693218678,
    "scale": 1.0,
    "how": "kept",
    "builds": [
-    "affliction-dot-raid",
-    "cand-affliction-raid-r6",
-    "cand-affliction-raid-r9"
+    "cand-affliction-raid-r1",
+    "cand-affliction-raid-r2"
    ]
   },
   {
    "talent": "Aftermath",
-   "sim": 0.007860388517288834,
-   "ev_before": 0.013141982504239744,
-   "ev_after": 0.013141982504239744,
+   "sim": 0.008306476625337187,
+   "ev_before": 0.014246856723981549,
+   "ev_after": 0.014292617111754008,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -382,35 +381,36 @@
    ]
   },
   {
-   "talent": "Decimation",
-   "sim": 0.007292111516711133,
-   "ev_before": 0.010988453454387951,
-   "ev_after": 0.010988453454387951,
+   "talent": "Unholy Power",
+   "sim": 0.007311114375360068,
+   "ev_before": 0.006166208494687272,
+   "ev_after": 0.006233439211391096,
    "scale": 1.0,
    "how": "kept",
    "builds": [
-    "cand-affliction-raid-r1",
     "cand-affliction-raid-r2"
    ]
   },
   {
-   "talent": "Unholy Power",
-   "sim": 0.0072539874384541635,
-   "ev_before": 0.006140406152816478,
-   "ev_after": 0.006140406152816478,
+   "talent": "Nightfall",
+   "sim": 0.007127647457474687,
+   "ev_before": 0.010904112353858547,
+   "ev_after": 0.010938365883046447,
    "scale": 1.0,
    "how": "kept",
    "builds": [
-    "cand-affliction-raid-r2"
+    "affliction-dot-raid",
+    "cand-affliction-raid-r6",
+    "cand-affliction-raid-r9"
    ]
   },
   {
    "talent": "Amplify Curse",
-   "sim": 0.0066650708308968855,
-   "ev_before": 0.007888051130135323,
-   "ev_after": 0.007888051130135323,
-   "scale": 1.0,
-   "how": "kept",
+   "sim": 0.004273105240155585,
+   "ev_before": 0.007791876082802877,
+   "ev_after": 0.004273100332053579,
+   "scale": 0.5485099996440113,
+   "how": "fitted",
    "builds": [
     "affliction-dot-raid",
     "opt-affliction-raid-raid-dps",
@@ -426,7 +426,7 @@
   },
   {
    "talent": "Improved Sayaad",
-   "sim": 0.0034127838463591156,
+   "sim": 0.0034517528733478612,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -436,19 +436,8 @@
    ]
   },
   {
-   "talent": "Siphon Life",
-   "sim": 0.0010489264333734289,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "cand-affliction-raid-hand-2026-09-26"
-   ]
-  },
-  {
    "talent": "Demonic Brand",
-   "sim": 0.0002900815329502153,
+   "sim": 0.0003010084031922397,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -456,6 +445,17 @@
    "builds": [
     "cand-affliction-raid-r1",
     "cand-affliction-raid-r2"
+   ]
+  },
+  {
+   "talent": "Siphon Life",
+   "sim": 0.00024392741072476104,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-affliction-raid-hand-2026-09-26"
    ]
   },
   {
@@ -483,8 +483,8 @@
   {
    "talent": "Wrack",
    "sim": 0.0,
-   "ev_before": 0.004312088975549395,
-   "ev_after": 0.004312088975549395,
+   "ev_before": 0.00428590268279072,
+   "ev_after": 0.004266236031540694,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -510,8 +510,8 @@
   {
    "talent": "Demonic Sacrifice",
    "sim": 0.0,
-   "ev_before": 0.0036617359402593684,
-   "ev_after": 0.0036617359402593684,
+   "ev_before": 0.0030601538920742737,
+   "ev_after": 0.002544846672555877,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -602,184 +602,184 @@
     "raid-dps",
     "raid-dps-extwc"
    ],
-   "loss": 0.2,
-   "cap": 0.13,
-   "rms": 0.0093,
+   "loss": 0.2025,
+   "cap": 0.14,
+   "rms": 0.0084,
    "points": 22
   },
   "builds": {
    "affliction-dot-raid": {
-    "dps": 569.9534900953206,
-    "surplus": 651.1207124296851,
-    "oom_seconds": 2.2093333333333334,
-    "deficit": 0.12465771827697736,
+    "dps": 566.2434633429717,
+    "surplus": 647.2650514042955,
+    "oom_seconds": 2.9290000000000003,
+    "deficit": 0.1251752862070039,
     "sustain": 1.0724,
-    "bound_share": 0.9596,
-    "model_deficit": 0.1225
+    "bound_share": 0.9594,
+    "model_deficit": 0.1248
    },
    "opt-affliction-raid-raid-dps": {
-    "dps": 570.3081435555664,
-    "surplus": 649.8199407611896,
-    "oom_seconds": 1.6543333333333334,
-    "deficit": 0.12235973724118754,
+    "dps": 566.5725770563076,
+    "surplus": 647.9138832922902,
+    "oom_seconds": 2.342,
+    "deficit": 0.12554339138815374,
     "sustain": 1.0724,
-    "bound_share": 0.9595,
-    "model_deficit": 0.1224
+    "bound_share": 0.9592,
+    "model_deficit": 0.1248
    },
    "cand-affliction-raid-hand-2026-09-26": {
-    "dps": 532.6459696119962,
-    "surplus": 597.1378885273976,
-    "oom_seconds": 0.613,
-    "deficit": 0.1080017197944767,
+    "dps": 529.5298237125156,
+    "surplus": 595.9661806370907,
+    "oom_seconds": 1.157,
+    "deficit": 0.11147672314820667,
     "sustain": 1.0782,
-    "bound_share": 0.9555,
-    "model_deficit": 0.1164
+    "bound_share": 0.9552,
+    "model_deficit": 0.1187
    },
    "cand-affliction-raid-hand-2026-09-27": {
-    "dps": 542.3826308971288,
-    "surplus": 612.5398772887562,
-    "oom_seconds": 0.5443333333333333,
-    "deficit": 0.11453498619903679,
+    "dps": 536.7703335209335,
+    "surplus": 611.5938677104768,
+    "oom_seconds": 0.8026666666666666,
+    "deficit": 0.12234186465872832,
     "sustain": 1.0555,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r1": {
-    "dps": 536.5510098456563,
-    "surplus": 610.9315063957171,
-    "oom_seconds": 0.23866666666666667,
-    "deficit": 0.12174932176747566,
+    "dps": 532.1665160020126,
+    "surplus": 609.0882287970736,
+    "oom_seconds": 0.854,
+    "deficit": 0.12628993495240992,
     "sustain": 1.0193,
-    "bound_share": 0.9453,
-    "model_deficit": 0.1229
+    "bound_share": 0.9451,
+    "model_deficit": 0.1323
    },
    "cand-affliction-raid-r2": {
-    "dps": 527.7317466064274,
-    "surplus": 600.7261297276387,
-    "oom_seconds": 0.8683333333333333,
-    "deficit": 0.12151025152560968,
+    "dps": 523.5755528221238,
+    "surplus": 599.4722138394405,
+    "oom_seconds": 1.7716666666666665,
+    "deficit": 0.12660580301332292,
     "sustain": 1.0193,
-    "bound_share": 0.9411,
-    "model_deficit": 0.1223
+    "bound_share": 0.9408,
+    "model_deficit": 0.1317
    },
    "cand-affliction-raid-r3": {
-    "dps": 512.3764998024742,
-    "surplus": 583.667615611875,
-    "oom_seconds": 0.8683333333333333,
-    "deficit": 0.12214334649124636,
+    "dps": 507.1630535142875,
+    "surplus": 582.9424112787985,
+    "oom_seconds": 1.7716666666666665,
+    "deficit": 0.12999458659779806,
     "sustain": 1.0193,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r4": {
-    "dps": 542.3826308971288,
-    "surplus": 612.5398772887562,
-    "oom_seconds": 0.5443333333333333,
-    "deficit": 0.11453498619903679,
+    "dps": 536.7703335209335,
+    "surplus": 611.5938677104768,
+    "oom_seconds": 0.8026666666666666,
+    "deficit": 0.12234186465872832,
     "sustain": 1.0555,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r5": {
-    "dps": 532.8345816069306,
-    "surplus": 596.9665309764465,
-    "oom_seconds": 1.1456666666666666,
-    "deficit": 0.10742972351333768,
+    "dps": 526.5223717490372,
+    "surplus": 595.502021698032,
+    "oom_seconds": 1.1706666666666665,
+    "deficit": 0.11583445132949188,
     "sustain": 1.0917,
     "bound_share": 1.0,
-    "model_deficit": 0.1083
+    "model_deficit": 0.1108
    },
    "cand-affliction-raid-r6": {
-    "dps": 569.9534900953206,
-    "surplus": 651.1207124296851,
-    "oom_seconds": 2.2093333333333334,
-    "deficit": 0.12465771827697736,
+    "dps": 566.2434633429717,
+    "surplus": 647.2650514042955,
+    "oom_seconds": 2.9290000000000003,
+    "deficit": 0.1251752862070039,
     "sustain": 1.0724,
-    "bound_share": 0.9596,
-    "model_deficit": 0.1225
+    "bound_share": 0.9594,
+    "model_deficit": 0.1248
    },
    "cand-affliction-raid-r7": {
-    "dps": 570.3081435555664,
-    "surplus": 649.8199407611896,
-    "oom_seconds": 1.6543333333333334,
-    "deficit": 0.12235973724118754,
+    "dps": 566.5725770563076,
+    "surplus": 647.9138832922902,
+    "oom_seconds": 2.342,
+    "deficit": 0.12554339138815374,
     "sustain": 1.0724,
-    "bound_share": 0.9595,
-    "model_deficit": 0.1224
+    "bound_share": 0.9592,
+    "model_deficit": 0.1248
    },
    "cand-affliction-raid-r8": {
-    "dps": 565.4151553185898,
-    "surplus": 654.8194825188625,
-    "oom_seconds": 1.131,
-    "deficit": 0.13653278435816452,
+    "dps": 560.8995097898373,
+    "surplus": 652.7321289311908,
+    "oom_seconds": 2.5896666666666666,
+    "deficit": 0.140689595426724,
     "sustain": 1.0,
-    "bound_share": 0.9598,
-    "model_deficit": 0.1248
+    "bound_share": 0.9596,
+    "model_deficit": 0.1343
    },
    "cand-affliction-raid-r9": {
-    "dps": 565.218056478054,
-    "surplus": 656.1205768004106,
-    "oom_seconds": 1.8980000000000001,
-    "deficit": 0.13854544962702608,
+    "dps": 559.0912875136102,
+    "surplus": 652.188106152224,
+    "oom_seconds": 3.1339999999999995,
+    "deficit": 0.14274534871214684,
     "sustain": 1.0,
-    "bound_share": 0.9599,
-    "model_deficit": 0.1248
+    "bound_share": 0.9597,
+    "model_deficit": 0.1344
    }
   },
   "removals": {
    "affliction-dot-raid -Improved Life Tap": {
-    "deficit": 0.1394,
+    "deficit": 0.1437,
     "sustain": 1.0,
-    "bound_share": 0.9596,
-    "model_deficit": 0.1248
+    "bound_share": 0.9594,
+    "model_deficit": 0.1343
    },
    "opt-affliction-raid-raid-dps -Improved Life Tap": {
-    "deficit": 0.1373,
+    "deficit": 0.1417,
     "sustain": 1.0,
-    "bound_share": 0.9595,
-    "model_deficit": 0.1247
+    "bound_share": 0.9592,
+    "model_deficit": 0.1343
    },
    "cand-affliction-raid-hand-2026-09-26 -Cataclysm": {
-    "deficit": 0.119,
+    "deficit": 0.1248,
     "sustain": 1.0724,
-    "bound_share": 0.9555,
-    "model_deficit": 0.1219
+    "bound_share": 0.9552,
+    "model_deficit": 0.1243
    },
    "cand-affliction-raid-hand-2026-09-26 -Improved Life Tap": {
-    "deficit": 0.1264,
+    "deficit": 0.1274,
     "sustain": 1.0058,
-    "bound_share": 0.9555,
-    "model_deficit": 0.1242
+    "bound_share": 0.9552,
+    "model_deficit": 0.1337
    },
    "cand-affliction-raid-hand-2026-09-27 -Improved Life Tap": {
-    "deficit": 0.1214,
+    "deficit": 0.1311,
     "sustain": 1.0193,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r4 -Improved Life Tap": {
-    "deficit": 0.1214,
+    "deficit": 0.1311,
     "sustain": 1.0193,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r5 -Improved Life Tap": {
-    "deficit": 0.1222,
+    "deficit": 0.1305,
     "sustain": 1.0193,
     "bound_share": 1.0,
-    "model_deficit": 0.13
+    "model_deficit": 0.14
    },
    "cand-affliction-raid-r6 -Improved Life Tap": {
-    "deficit": 0.1394,
+    "deficit": 0.1437,
     "sustain": 1.0,
-    "bound_share": 0.9596,
-    "model_deficit": 0.1248
+    "bound_share": 0.9594,
+    "model_deficit": 0.1343
    },
    "cand-affliction-raid-r7 -Improved Life Tap": {
-    "deficit": 0.1373,
+    "deficit": 0.1417,
     "sustain": 1.0,
-    "bound_share": 0.9595,
-    "model_deficit": 0.1247
+    "bound_share": 0.9592,
+    "model_deficit": 0.1343
    }
   }
  }

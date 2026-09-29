@@ -2,13 +2,13 @@
 
 [Rogue](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Combat](combat.md) — Raid daggers | 414 | 741 | best |
-| 2 | [Assassination](assassination.md) — Assassination/Combat — Seal Fate daggers | 413 | 693 | -0% |
-| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 392 | 657 | -5% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Assassination](assassination.md) — Assassination/Combat — Seal Fate daggers | 407 | 682 | 407 | best |
+| 2 | [Combat](combat.md) — Raid daggers | 403 | 720 | 405 | -1% |
+| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 374 | 642 | 353 | -8% |
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

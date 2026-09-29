@@ -10,23 +10,23 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
 | Mortal Strike | Arms | 7 | +10.00% | manual |
-| Death Wish | Fury | 5 | +9.49% | manual |
-| Improved Execute | Fury | 4 | +5.52% | manual |
-| Raging Blows | Fury | 4 | +5.17% | manual |
-| Anger Management | Arms | 3 | +3.51% | manual |
-| Dual Wield Specialization | Fury | 4 | +2.38% | manual |
-| Flurry | Fury | 6 | +2.25% | manual |
-| Focused Rage | Protection | 6 | +2.17% | manual |
-| Impale | Arms | 4 | +1.79% | manual |
-| Precision | Fury | 5 | +1.19% | manual |
-| Cruelty | Fury | 1 | +1.03% | manual |
-| Deep Wounds | Arms | 3 | +0.98% | manual |
+| Raging Blows | Fury | 4 | +6.36% | manual |
+| Death Wish | Fury | 5 | +5.33% | manual |
+| Improved Execute | Fury | 4 | +4.47% | manual |
+| Anger Management | Arms | 3 | +3.36% | manual |
+| Dual Wield Specialization | Fury | 4 | +2.52% | manual |
+| Flurry | Fury | 6 | +2.43% | manual |
+| Focused Rage | Protection | 6 | +2.04% | manual |
+| Impale | Arms | 4 | +1.71% | manual |
+| Cruelty | Fury | 1 | +1.36% | manual |
+| Precision | Fury | 5 | +1.20% | manual |
+| Deep Wounds | Arms | 3 | +1.14% | manual |
 | Weaponmaster | Arms | 5 | +0.72% | manual |
-| Unbridled Wrath | Fury | 2 | +0.62% | manual |
+| Unbridled Wrath | Fury | 2 | +0.67% | manual |
 | Bloodthirst | Fury | 7 | +0.26% | manual |
-| Boundless Rage | Fury | 3 | +0.13% | manual |
-| Improved Berserker Rage | Fury | 6 | +0.13% | manual |
-| Improved Heroic Strike | Arms | 1 | +0.09% | manual |
+| Improved Heroic Strike | Arms | 1 | +0.13% | manual |
+| Boundless Rage | Fury | 3 | +0.12% | manual |
+| Improved Berserker Rage | Fury | 6 | +0.12% | manual |
 | Last Stand | Protection | 3 | +0.01% | manual |
 | Blood Craze | Fury | 3 | +0.00% | manual |
 | Deflection | Arms | 1 | +0.00% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Sweeping Strikes | Arms | 5 | +0.00% | manual |
 | Improved Slam | Arms | 6 | +0.00% | manual |
 
-## Optimized build: 14/37/0  score +90.10%  (dps x1.901, sustain x1.000, surv x1.010, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.874  — use this to compare models with different pet shares.
+## Optimized build: 14/37/0  score +87.94%  (dps x1.879, sustain x1.000, surv x1.010, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.853  — use this to compare models with different pet shares.
 
 ```
   Arms: Improved Rend 3, Improved Heroic Strike 2, Improved Tactical Mastery 5, Anger Management 1, Deep Wounds 3
@@ -52,13 +52,13 @@ Absolute DPS index (character alone, no talents = 1.00): 1.874  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mortal Strike | Arms 7 | 1/1 | +19.01% | no |
-| Focused Rage | Protection 6 | 1/3 | +3.48% | no |
-| Impale | Arms 4 | 1/2 | +3.34% | no |
-| Weaponmaster | Arms 5 | 1/5 | +1.37% | no |
+| Mortal Strike | Arms 7 | 1/1 | +18.79% | no |
+| Impale | Arms 4 | 1/2 | +3.24% | no |
+| Focused Rage | Protection 6 | 1/3 | +3.18% | no |
+| Weaponmaster | Arms 5 | 1/5 | +1.35% | no |
 | Bloodthirst | Fury 7 | 1/1 | +0.49% | yes |
-| Improved Berserker Rage | Fury 6 | 1/2 | +0.21% | yes |
-| Improved Heroic Strike | Arms 1 | 3/3 | +0.13% | yes |
+| Improved Berserker Rage | Fury 6 | 1/2 | +0.20% | yes |
+| Improved Heroic Strike | Arms 1 | 3/3 | +0.18% | yes |
 | Last Stand | Protection 3 | 1/1 | +0.01% | no |
 | Blood Craze | Fury 3 | 3/3 | +0.00% | yes |
 | Deflection | Arms 1 | 1/5 | +0.00% | yes |

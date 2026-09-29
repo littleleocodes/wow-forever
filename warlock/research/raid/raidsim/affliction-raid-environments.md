@@ -4,22 +4,58 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-affliction-raid-raid-dps` | 30/0/21 | 571 | 678 | 697 | 697 | 723 |
-| `affliction-dot-raid` | 30/0/21 | 571 | 679 | 697 | 697 | 723 |
-| `opt-affliction-raid-parse` | 30/0/21 | 571 | 679 | 697 | 697 | 723 |
-| sim preset: Demonic Pact 2/31/18 | - | 536 | 645 | 655 | 655 | 671 |
-| sim preset: Demonic Pact | - | 531 | 651 | 645 | 645 | 658 |
-| sim preset: DS/Ruin Pandemic 24/11/16 | - | 520 | 617 | 632 | 632 | 656 |
-| sim preset: Deep Affliction 35/0/16 | - | 514 | 603 | 618 | 618 | 632 |
-| sim preset: DS/Ruin | - | 511 | 618 | 626 | 626 | 638 |
-| sim preset: Affliction | - | 507 | 601 | 609 | 609 | 617 |
-| sim preset: Shadow and Flame 13/11/27 | - | 496 | 586 | 605 | 605 | 613 |
+| `affliction-dot-raid` | 30/0/21 | 567 | 672 | 687 | 687 | 723 |
+| `opt-affliction-raid-raid-dps` | 30/0/21 | 567 | 672 | 687 | 687 | 723 |
+| `opt-affliction-raid-parse` | 30/0/21 | 567 | 672 | 687 | 687 | 723 |
+| sim preset: Demonic Pact 2/31/18 | - | 533 | 640 | 645 | 645 | 671 |
+| sim preset: Demonic Pact | - | 528 | 641 | 637 | 637 | 658 |
+| sim preset: DS/Ruin Pandemic 24/11/16 | - | 515 | 608 | 622 | 622 | 656 |
+| sim preset: Deep Affliction 35/0/16 | - | 512 | 600 | 612 | 612 | 632 |
+| sim preset: DS/Ruin | - | 506 | 608 | 614 | 614 | 638 |
+| sim preset: Affliction | - | 505 | 597 | 605 | 605 | 617 |
+| sim preset: Shadow and Flame 13/11/27 | - | 491 | 579 | 594 | 594 | 613 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `affliction-dot-raid` | 567 | +5% | +3% | +4% | +1% | +8% | 687 |
+| `opt-affliction-raid-raid-dps` | 567 | +5% | +3% | +4% | +1% | +8% | 687 |
+| `opt-affliction-raid-parse` | 567 | +5% | +3% | +4% | +1% | +8% | 687 |
+| sim preset: Demonic Pact 2/31/18 | 533 | +5% | +4% | +4% | +1% | +8% | 645 |
+| sim preset: Demonic Pact | 528 | +5% | +4% | +4% | +1% | +8% | 637 |
+| sim preset: DS/Ruin Pandemic 24/11/16 | 515 | +5% | +4% | +4% | +1% | +8% | 622 |
+| sim preset: Deep Affliction 35/0/16 | 512 | +4% | +3% | +4% | +1% | +8% | 612 |
+| sim preset: DS/Ruin | 506 | +4% | +3% | +4% | +1% | +8% | 614 |
+| sim preset: Affliction | 505 | +4% | +3% | +3% | +1% | +8% | 605 |
+| sim preset: Shadow and Flame 13/11/27 | 491 | +5% | +4% | +4% | +1% | +8% | 594 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS over the fight
+
+Damage per second within each window of the fight (training dummy, no execute phase), from fights of 60, 120, 180, 240, 360 s: the damage of the longer fight minus the shorter one, over the seconds between. A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about ±3% at 3000 iterations).
+
+| Build | 0-60 s | 60-120 s | 120-180 s | 180-240 s | 240-360 s |
+|---|---|---|---|---|---|
+| `affliction-dot-raid` | 618 | 524 | 559 | 521 | 536 |
+| `opt-affliction-raid-raid-dps` | 618 | 524 | 559 | 521 | 536 |
+| `opt-affliction-raid-parse` | 618 | 524 | 559 | 521 | 536 |
+| sim preset: Demonic Pact 2/31/18 | 580 | 484 | 521 | 474 | 497 |
+| sim preset: Demonic Pact | 574 | 488 | 522 | 480 | 498 |
+| sim preset: DS/Ruin Pandemic 24/11/16 | 567 | 473 | 504 | 475 | 487 |
+| sim preset: Deep Affliction 35/0/16 | 550 | 478 | 506 | 480 | 488 |
+| sim preset: DS/Ruin | 553 | 469 | 495 | 467 | 477 |
+| sim preset: Affliction | 539 | 474 | 503 | 476 | 485 |
+| sim preset: Shadow and Flame 13/11/27 | 538 | 455 | 479 | 445 | 461 |
 
 Gear presets: raid `mc.gear.json`, maximum `mc.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

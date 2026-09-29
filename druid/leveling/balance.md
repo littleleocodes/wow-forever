@@ -4,7 +4,22 @@
 
 **[Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md)** (36/2/13) — [open the talent tree](https://talentsforever.com/druid/60/5032203105501351-02-505003-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** Moonkin Form once you have it.
+
+**In the fight**, top to bottom:
+
+1. **Moonfire** and **Insect Swarm** on the mob.
+2. **Wrath** while the mob walks in.
+3. **Starfire** when Eclipse lights up or the mob is rooted or stunned, **Wrath** otherwise.
+4. Low on health: **Entangling Roots** on the mob, then **Regrowth**.
+
+**Between fights:** Drink when your mana is below a third.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -30,7 +45,7 @@ Talent order (one point per level from 10):
 | 56-58 | Reflection (Restoration) | 3 |
 | 59-60 | Heart of the Wild (Feral Combat) | 2 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage (Pounce before 32, Claw before that), Tiger's Fury, Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Rip on a healthy mob or Ferocious Bite, Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana with Furor keeping the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt then Cat Form again, water below 35% mana.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|

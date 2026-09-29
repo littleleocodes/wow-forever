@@ -9,22 +9,23 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Shadowform | Shadow | 7 | +94.00% | manual |
-| Mind Flay | Shadow | 3 | +80.18% | manual |
+| Shadowform | Shadow | 7 | +114.76% | manual |
+| Mind Flay | Shadow | 3 | +81.57% | manual |
+| Meditation | Discipline | 3 | +13.68% | manual |
+| Penance | Discipline | 5 | +6.70% | manual |
+| Prayer of Mending | Holy | 7 | +6.70% | manual |
 | Shadow Weaving | Shadow | 4 | +5.00% | manual |
-| Improved Shadow Word: Pain | Shadow | 2 | +2.68% | manual |
+| Litany of Light | Holy | 5 | +4.47% | manual |
+| Improved Shadow Word: Pain | Shadow | 2 | +2.95% | manual |
+| Inner Focus | Discipline | 3 | +2.55% | manual |
 | Darkness | Shadow | 6 | +2.00% | manual |
 | Power Infusion | Discipline | 7 | +1.70% | manual |
-| Inner Focus | Discipline | 3 | +1.65% | manual |
-| Penance | Discipline | 5 | +1.20% | manual |
-| Prayer of Mending | Holy | 7 | +1.20% | manual |
-| Improved Mind Blast | Shadow | 3 | +0.98% | manual |
+| Mental Strength | Discipline | 4 | +1.45% | manual |
 | Shadow Focus | Shadow | 1 | +0.98% | manual |
-| Litany of Light | Holy | 5 | +0.80% | manual |
-| Twin Disciplines | Discipline | 1 | +0.65% | manual |
-| Devouring Contagion | Shadow | 5 | +0.36% | manual |
-| Mental Strength | Discipline | 4 | +0.30% | manual |
-| Mental Agility | Discipline | 3 | +0.14% | manual |
+| Devouring Contagion | Shadow | 5 | +0.81% | manual |
+| Twin Disciplines | Discipline | 1 | +0.64% | manual |
+| Improved Mind Blast | Shadow | 3 | +0.52% | manual |
+| Mental Agility | Discipline | 3 | +0.32% | manual |
 | Early Demise | Shadow | 6 | +0.12% | manual |
 | Spell Warding | Holy | 2 | +0.00% | manual |
 | Power in Light | Discipline | 1 | +0.00% | manual |
@@ -33,17 +34,16 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Holy Precision | Discipline | 2 | +0.00% | manual |
 | Improved Power Word: Shield | Discipline | 2 | +0.00% | manual |
 | Martyrdom | Discipline | 2 | +0.00% | manual |
-| Meditation | Discipline | 3 | +0.00% | manual |
 | Improved Inner Fire | Discipline | 4 | +0.00% | manual |
 | Soul Warding | Discipline | 4 | +0.00% | manual |
 | Improved Mana Burn | Discipline | 4 | +0.00% | manual |
 | Renewed Hope | Discipline | 5 | +0.00% | manual |
 | Divine Aegis | Discipline | 6 | +0.00% | manual |
 
-## Optimized build: 18/0/33  score +359.66%  (dps x4.144, sustain x2.132, surv x1.000, utility +0.00%)
+## Optimized build: 18/0/33  score +571.07%  (dps x6.711, sustain x1.578, surv x1.000, utility +0.00%)
 
 ```
-  Discipline: Twin Disciplines 5, Power in Light 5, Wand Specialization 1, Inner Focus 1, Mental Agility 3, Mental Strength 3
+  Discipline: Twin Disciplines 5, Power in Light 5, Wand Specialization 2, Meditation 2, Inner Focus 1, Mental Strength 3
   Shadow: Shadow Focus 5, Blackout 4, Improved Shadow Word: Pain 2, Mind Flay 1, Improved Mind Flay 2, Improved Mind Blast 5, Vampiric Embrace 1, Shadow Weaving 3, Devouring Contagion 2, Darkness 5, Early Demise 2, Shadowform 1
 ```
 
@@ -51,19 +51,19 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Power Infusion | Discipline 7 | 1/1 | +7.04% | no |
-| Penance | Discipline 5 | 1/1 | +1.20% | no |
-| Prayer of Mending | Holy 7 | 1/1 | +1.20% | no |
-| Litany of Light | Holy 5 | 1/2 | +0.80% | no |
-| Mental Strength | Discipline 4 | 4/5 | +0.47% | yes |
+| Power Infusion | Discipline 7 | 1/1 | +11.41% | no |
+| Mental Strength | Discipline 4 | 4/5 | +0.35% | yes |
 | Spell Warding | Holy 2 | 1/5 | +0.00% | no |
-| Wand Specialization | Discipline 1 | 2/2 | +0.00% | yes |
 | Silent Resolve | Discipline 2 | 1/3 | +0.00% | yes |
 | Holy Precision | Discipline 2 | 1/3 | +0.00% | yes |
 | Improved Power Word: Shield | Discipline 2 | 1/3 | +0.00% | yes |
 | Martyrdom | Discipline 2 | 1/2 | +0.00% | yes |
-| Meditation | Discipline 3 | 1/3 | +0.00% | yes |
+| Mental Agility | Discipline 3 | 1/3 | +0.00% | yes |
+| Meditation | Discipline 3 | 3/3 | +0.00% | yes |
 | Improved Inner Fire | Discipline 4 | 1/3 | +0.00% | yes |
 | Soul Warding | Discipline 4 | 1/1 | +0.00% | no |
 | Improved Mana Burn | Discipline 4 | 1/2 | +0.00% | yes |
+| Penance | Discipline 5 | 1/1 | +0.00% | no |
+| Renewed Hope | Discipline 5 | 1/5 | +0.00% | no |
+| Divine Aegis | Discipline 6 | 1/3 | +0.00% | no |
 

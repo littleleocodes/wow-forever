@@ -2,11 +2,11 @@
 
 [Paladin](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Retribution](retribution.md) — Two-handed Retribution | 368 | 778 | best |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Retribution](retribution.md) — Two-handed Retribution | 350 | 802 | 324 | best |
 
 **Tanking**: [Protection](protection.md) — Protection — Tank.
 

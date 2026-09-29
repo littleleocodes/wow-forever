@@ -9,21 +9,17 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Arcane Power | Arcane | 7 | +3.75% | manual |
 | Improved Frostbolt | Frost | 1 | +3.60% | manual |
-| Arcane Meditation | Arcane | 4 | +2.14% | manual |
+| Arcane Power | Arcane | 7 | +2.49% | manual |
 | Piercing Ice | Frost | 3 | +1.63% | manual |
-| Frost Channeling | Frost | 3 | +1.49% | manual |
 | Arcane Instability | Arcane | 6 | +1.47% | manual |
 | Ice Shards | Frost | 2 | +1.14% | manual |
 | Presence of Mind | Arcane | 5 | +1.00% | manual |
 | Elemental Precision | Frost | 1 | +0.97% | manual |
-| Arcane Mind | Arcane | 5 | +0.96% | manual |
 | Winter's Chill | Frost | 6 | +0.76% | manual |
-| Arcane Concentration | Arcane | 2 | +0.63% | manual |
+| Arcane Mind | Arcane | 5 | +0.32% | manual |
 | Arcane Focus | Arcane | 1 | +0.22% | manual |
 | Arcane Impact | Arcane | 3 | +0.17% | manual |
-| Master of Elements | Fire | 4 | +0.02% | manual |
 | Ice Barrier | Frost | 7 | +0.01% | manual |
 | Ice Block | Frost | 4 | +0.00% | manual |
 | Magic Absorption | Arcane | 2 | +0.00% | manual |
@@ -32,30 +28,38 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Wand Specialization | Arcane | 1 | +0.00% | manual |
 | Improved Channeling | Arcane | 1 | +0.00% | manual |
 | Arcane Subtlety | Arcane | 2 | +0.00% | manual |
+| Arcane Concentration | Arcane | 2 | +0.00% | manual |
 | Arcane Resilience | Arcane | 2 | +0.00% | manual |
 | Arcane Geometry | Arcane | 3 | +0.00% | manual |
 | Arcane Blast | Arcane | 3 | +0.00% | manual |
 | Improved Counterspell | Arcane | 4 | +0.00% | manual |
+| Arcane Meditation | Arcane | 4 | +0.00% | manual |
 | Missile Barrage | Arcane | 4 | +0.00% | manual |
 | Wake of Fire | Fire | 1 | +0.00% | manual |
 | Incineration | Fire | 1 | +0.00% | manual |
+| Improved Fireball | Fire | 1 | +0.00% | manual |
+| Ignite | Fire | 2 | +0.00% | manual |
 
-## Optimized build: 21/0/30  score +75.57%  (dps x1.756, sustain x1.090, surv x1.080, utility +0.00%)
+## Optimized build: 18/1/32  score +75.41%  (dps x1.754, sustain x1.114, surv x1.020, utility +0.00%)
 
 ```
-  Arcane: Arcane Focus 5, Arcane Concentration 5, Magic Absorption 2, Arcane Impact 3, Arcane Meditation 3, Arcane Shielding 2, Presence of Mind 1
-  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Ice Lance 1, Piercing Ice 3, Shatter 3, Ice Block 1, Fingers of Frost 2, Winter's Chill 5
+  Arcane: Arcane Focus 5, Arcane Concentration 5, Magic Absorption 2, Arcane Impact 3, Arcane Meditation 3
+  Fire: Incineration 1
+  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Piercing Ice 3, Frost Channeling 3, Ice Lance 1, Shatter 3, Fingers of Frost 2, Winter's Chill 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +6.74% | no |
+| Arcane Power | Arcane 7 | 1/1 | +4.37% | no |
 | Arcane Instability | Arcane 6 | 1/3 | +3.01% | no |
-| Incineration | Fire 1 | 1/3 | +0.58% | yes |
-| Arcane Mind | Arcane 5 | 1/5 | +0.51% | yes |
+| Presence of Mind | Arcane 5 | 1/1 | +1.75% | no |
+| Incineration | Fire 1 | 2/3 | +0.58% | yes |
+| Arcane Mind | Arcane 5 | 1/5 | +0.51% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
+| Ice Block | Frost 4 | 1/1 | +0.00% | yes |
+| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | yes |
 | Cold Snap | Frost 5 | 1/1 | +0.00% | yes |
 | Wand Specialization | Arcane 1 | 1/2 | +0.00% | yes |
 | Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |
@@ -63,7 +67,4 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |
 | Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |
 | Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |
-| Improved Counterspell | Arcane 4 | 1/2 | +0.00% | yes |
-| Missile Barrage | Arcane 4 | 1/1 | +0.00% | yes |
-| Wake of Fire | Fire 1 | 1/2 | +0.00% | yes |
 

@@ -9,24 +9,23 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Death Wish | Fury | 5 | +8.73% | manual |
-| Bloodthirst | Fury | 7 | +6.04% | manual |
-| Flurry | Fury | 6 | +3.51% | manual |
-| Improved Execute | Fury | 4 | +3.12% | manual |
-| Deep Wounds | Arms | 3 | +2.18% | manual |
-| Mortal Strike | Arms | 7 | +2.16% | manual |
-| Anger Management | Arms | 3 | +2.00% | manual |
-| Focused Rage | Protection | 6 | +1.66% | manual |
-| Impale | Arms | 4 | +1.33% | manual |
-| Cruelty | Fury | 1 | +1.14% | manual |
+| Bloodthirst | Fury | 7 | +10.31% | manual |
+| Mortal Strike | Arms | 7 | +4.00% | manual |
+| Deep Wounds | Arms | 3 | +2.80% | manual |
+| Flurry | Fury | 6 | +2.52% | manual |
+| Cruelty | Fury | 1 | +1.84% | manual |
+| Anger Management | Arms | 3 | +1.50% | manual |
+| Weaponmaster | Arms | 5 | +1.23% | manual |
+| Focused Rage | Protection | 6 | +1.13% | manual |
 | Precision | Fury | 5 | +1.09% | manual |
 | Two-Handed Weapon Specialization | Arms | 4 | +1.00% | manual |
-| Weaponmaster | Arms | 5 | +0.90% | manual |
 | Unbridled Wrath | Fury | 2 | +0.54% | manual |
 | Spearing Strike | Arms | 4 | +0.50% | manual |
-| Boundless Rage | Fury | 3 | +0.10% | manual |
-| Improved Berserker Rage | Fury | 6 | +0.10% | manual |
+| Impale | Arms | 4 | +0.39% | manual |
+| Improved Execute | Fury | 4 | +0.31% | manual |
 | Enrage | Fury | 4 | +0.10% | manual |
+| Boundless Rage | Fury | 3 | +0.08% | manual |
+| Improved Berserker Rage | Fury | 6 | +0.08% | manual |
 | Last Stand | Protection | 3 | +0.01% | manual |
 | Improved Heroic Strike | Arms | 1 | +0.00% | manual |
 | Deflection | Arms | 1 | +0.00% | manual |
@@ -39,30 +38,31 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Improved Slam | Arms | 6 | +0.00% | manual |
 | Improved Hamstring | Arms | 6 | +0.00% | manual |
 | Booming Voice | Fury | 1 | +0.00% | manual |
+| Iron Will | Fury | 2 | +0.00% | manual |
 
-## Optimized build: 19/32/0  score +79.12%  (dps x1.791, sustain x1.000, surv x1.000, utility +0.00%)
+## Optimized build: 20/31/0  score +62.11%  (dps x1.621, sustain x1.000, surv x1.000, utility +0.00%)
 
 ```
-  Arms: Improved Rend 3, Improved Heroic Strike 3, Improved Tactical Mastery 5, Anger Management 1, Deep Wounds 3, Impale 2, Two-Handed Weapon Specialization 2
-  Fury: Cruelty 5, Booming Voice 2, Unbridled Wrath 5, Boundless Rage 3, Improved Execute 2, Enrage 5, Death Wish 1, Precision 3, Flurry 5, Bloodthirst 1
+  Arms: Improved Rend 3, Improved Heroic Strike 3, Improved Tactical Mastery 5, Anger Management 1, Deep Wounds 3, Two-Handed Weapon Specialization 3, Impale 2
+  Fury: Cruelty 5, Booming Voice 2, Unbridled Wrath 5, Boundless Rage 3, Improved Execute 1, Enrage 5, Death Wish 1, Precision 3, Flurry 5, Bloodthirst 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Mortal Strike | Arms 7 | 1/1 | +3.86% | no |
-| Focused Rage | Protection 6 | 1/3 | +2.64% | no |
-| Two-Handed Weapon Specialization | Arms 4 | 3/3 | +1.76% | yes |
-| Weaponmaster | Arms 5 | 1/5 | +1.61% | no |
-| Spearing Strike | Arms 4 | 1/1 | +0.90% | yes |
-| Improved Berserker Rage | Fury 6 | 1/2 | +0.18% | yes |
+| Mortal Strike | Arms 7 | 1/1 | +6.48% | no |
+| Weaponmaster | Arms 5 | 1/5 | +2.00% | yes |
+| Focused Rage | Protection 6 | 1/3 | +1.50% | no |
+| Spearing Strike | Arms 4 | 1/1 | +0.81% | yes |
+| Improved Execute | Fury 4 | 2/2 | +0.29% | yes |
+| Improved Berserker Rage | Fury 6 | 1/2 | +0.13% | yes |
 | Last Stand | Protection 3 | 1/1 | +0.01% | no |
 | Deflection | Arms 1 | 1/5 | +0.00% | yes |
 | Improved Charge | Arms 2 | 1/2 | +0.00% | yes |
 | Improved Overpower | Arms 2 | 1/2 | +0.00% | yes |
-| Bloodthrill | Arms 5 | 1/5 | +0.00% | no |
-| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | no |
+| Bloodthrill | Arms 5 | 1/5 | +0.00% | yes |
+| Sweeping Strikes | Arms 5 | 1/1 | +0.00% | yes |
 | Improved Slam | Arms 6 | 1/2 | +0.00% | no |
 | Improved Hamstring | Arms 6 | 1/3 | +0.00% | no |
 | Booming Voice | Fury 1 | 3/5 | +0.00% | yes |

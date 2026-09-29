@@ -6,7 +6,24 @@
 
 **[Raid Combat swords](../research/leveling/builds/opt-combat-swords-raid-leveling-st.md)** (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Instant Poison** on your main hand, **Deadly Poison** on your off hand. Stealth up behind the mob.
+
+**In the fight**, top to bottom:
+
+1. Open with **Cheap Shot** (**Garrote** before level 26).
+2. **Slice and Dice** at 1-2 combo points when it is not up.
+3. **Sinister Strike** until you have 5 combo points.
+4. At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).
+5. **Riposte** after you parry.
+6. **Blade Flurry** and **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low.
+
+**Between fights:** Bandage below 60% health, eat below half.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -35,7 +52,7 @@ Talent order (one point per level from 10):
 | 56-57 | Opportunity (Subtlety) | 2 |
 | 58-60 | Vile Poisons (Assassination) | 3 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with two swords: open from stealth behind the mob with Cheap Shot (Garrote before 26; the mob turns to face you after the opener, so it can parry from then on), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (Kidney Shot instead when below 50% health), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull, Evasion when low; white swings with both hands (19% extra miss on white dual-wield hits), Instant Poison on the main hand and Deadly Poison on the off hand. Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -45,7 +62,7 @@ Talent order (one point per level from 10):
 | 50 | 27 |
 | 60 | 28 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Leveling — Combat swords](../research/leveling/builds/leveling-combat-swords.md) (31/20/0, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--4)
 - [Raid Combat swords](../research/leveling/builds/opt-combat-swords-raid-solo-60.md) (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-4)

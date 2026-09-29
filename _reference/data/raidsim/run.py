@@ -675,17 +675,13 @@ def ladder_steps(rows):
 
 
 def curve_windows(rows):
-    """{label: {"0-60 s": dps, ...}}: DPS inside each window, from the cumulative averages of fights of CURVE lengths."""
+    """{label: {"1 min": dps, ...}}: average DPS by fight length (training dummy, no execute phase). Differences between lengths
+    (the DPS inside each stretch) were tried and dropped: subtracting two noisy totals swung the stretches by 7% at 3000 iterations."""
     out = {}
     for x in rows:
         d = x["dps"]
-        if not all(d.get(f"curve{n}") for n in CURVE):
-            continue
-        w, prev = {}, 0
-        for n in CURVE:
-            w[f"{prev}-{n} s"] = (d[f"curve{n}"] * n - (d[f"curve{prev}"] * prev if prev else 0)) / (n - prev)
-            prev = n
-        out[x["label"]] = w
+        if all(d.get(f"curve{n}") for n in CURVE):
+            out[x["label"]] = {(f"{n // 60} min" if n % 60 == 0 else f"{n} s"): d[f"curve{n}"] for n in CURVE}
     return out
 
 
@@ -695,7 +691,7 @@ def run_environments(cls, spec, a, repo):
     trees = load_trees(repo, cls)
     data = json.load(open(ROOT / cls / GAMES[GAME]["builds"], encoding="utf-8"))
     by_id = {b["id"]: b for b in data["builds"]}
-    ids = a.builds or entry["builds"]
+    ids = a.builds or (entry["builds"] + [f"opt-{spec}-parse"] * (f"opt-{spec}-parse" in by_id))   # the parse build as rebuild.py passes it
     builds = []
     for bid in ids:
         if bid.endswith(".json"):
@@ -788,11 +784,9 @@ def run_environments(cls, spec, a, repo):
                   "(the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.", ""]
         cur = curve_windows(rows)
         if cur:
-            o += ["## DPS over the fight", "",
-                  "Damage per second within each window of the fight (training dummy, no execute phase), from fights of "
-                  + ", ".join(f"{n}" for n in CURVE) + " s: the damage of the longer fight minus the shorter one, over the seconds between. "
-                  "A falling row is a spec that front-loads cooldowns or runs out of mana. Windows are noisier than whole-fight numbers (about "
-                  "±3% at 3000 iterations).", "",
+            o += ["## DPS by fight length", "",
+                  "Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that "
+                  "front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.", "",
                   "| Build | " + " | ".join(w for w in next(iter(cur.values()))) + " |", "|---|" + "---|" * len(next(iter(cur.values())))]
             for x in sorted(rows, key=lambda x: -(x["dps"].get(key) or 0)):
                 c = cur.get(x["label"])

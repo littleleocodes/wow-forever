@@ -6,7 +6,23 @@
 
 **[Leveling — Feral cat](../research/leveling/builds/leveling-feral.md)** (9/31/11) — [open the talent tree](https://talentsforever.com/druid/60/050022-5520012020030213041-50402-4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** Levels 10-19: Bear Form. From 20: Cat Form, then Prowl (stealth) up behind the mob.
+
+**In the fight**, top to bottom:
+
+1. Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage.
+2. From 20 (cat), open from Prowl with **Ravage** (**Pounce** before 32, **Claw** before that), then **Tiger's Fury**.
+3. **Rake** once.
+4. **Claw** until you have 5 combo points.
+5. At 5 points: **Rip** on a mob with plenty of health, **Ferocious Bite** on one that is nearly dead.
+
+**Between fights:** Low on health: leave Cat Form and cast **Regrowth** or **Rejuvenation**, then shift back. Drink when your mana is below a third.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -31,7 +47,7 @@ Talent order (one point per level from 10):
 | 55-56 | Natural Shapeshifter (Restoration) | 2 |
 | 57-60 | Naturalist (Restoration) | 4 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage (Pounce before 32, Claw before that), Tiger's Fury, Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Rip on a healthy mob or Ferocious Bite, Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana with Furor keeping the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt then Cat Form again, water below 35% mana.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -42,7 +58,7 @@ Talent order (one point per level from 10):
 | 50 | 26 |
 | 60 | 28 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/31/11, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/druid/60/050022-5320032020030213041-50501-4)
 - [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/31/11) — [open the talent tree](https://talentsforever.com/druid/60/050022-5320032020030213041-50501-4)

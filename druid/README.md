@@ -10,8 +10,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance (optimized)](raid/balance.md)<br>461 DPS | [Balance — PvP](pvp/balance.md) ⚗ |
-| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>356 DPS | [Feral Combat — PvP](pvp/feral-combat.md) ⚗ |
+| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance (optimized)](raid/balance.md)<br>438 DPS | [Balance — PvP](pvp/balance.md) ⚗ |
+| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>350 DPS | [Feral Combat — PvP](pvp/feral-combat.md) ⚗ |
 | **Restoration** | [level as Feral Combat](leveling/restoration.md) | [Restoration (optimized)](raid/restoration.md)<br>healer | [Restoration / Balance — PvP Healer](pvp/restoration.md) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -33,12 +33,12 @@ Healing and tanking specs level as a damage spec and switch at 60: Restoration l
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Balance](raid/balance.md) — Balance (optimized) | 461 | 518 | best |
-| 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 356 | 567 | -23% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Balance](raid/balance.md) — Balance (optimized) | 438 | 511 | 342 | best |
+| 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 350 | 556 | 348 | -20% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration (optimized).
 

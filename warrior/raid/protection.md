@@ -4,21 +4,26 @@
 
 **[Protection — Raid Tank](../research/raid/builds/prot-raid-tank.md)** (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-550030233001010531-4)
 
+## How to play
+
+**Before the pull:** **Battle Shout**.
+
+**Then press the first one that is ready**, top to bottom:
+
+1. **Shield Wall**
+2. **Revenge**
+3. **Shield Slam**
+4. **Thunder Clap**
+5. **Heroic Strike** when you have 45+ rage to spare
+6. **Rend**: keep it on the target
+
+This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+
+## The numbers
+
 Tank value 1.000 (threat and damage taken under a boss, relative to our reference tank build).
 
-**What to press** (top to bottom: cast the first line that is ready):
-
-Before the pull: cast Battle Shout.
-
-1. Cast Shield Wall
-2. Use every other cooldown when ready
-3. Cast Revenge
-4. Cast Shield Slam
-5. Cast Thunder Clap
-6. If rage ≥ 45: cast Heroic Strike
-7. If not Rend is on the target: cast Rend
-
-Other builds of this spec:
+## Other builds of this spec
 
 - [Raid tank in Defensive Stance with a shield](../research/raid/builds/opt-prot-tank-raid-tank.md) (14/5/32) — [open the talent tree](https://talentsforever.com/warrior/60/3500501-05-550030233001010531-4)
 

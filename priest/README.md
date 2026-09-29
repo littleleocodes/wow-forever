@@ -12,8 +12,8 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Discipline** | [level as Shadow](leveling/discipline.md) | [Discipline — Penance / Divine Aegis / Power Infusion](raid/discipline.md)<br>healer | [Discipline — PvP](pvp/discipline.md) ⚗ |
 | **Holy** | [level as Shadow](leveling/holy.md) | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) ⚗ |
-| **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow leveling/raid](raid/shadow.md)<br>554 DPS | [Shadow](pvp/shadow.md) |
-| **Smite** | - | [Discipline/Holy — Smite](raid/smite.md)<br>315 DPS | - |
+| **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow leveling/raid](raid/shadow.md)<br>556 DPS | [Shadow](pvp/shadow.md) |
+| **Smite** | - | [Discipline/Holy — Smite](raid/smite.md)<br>296 DPS | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -35,12 +35,12 @@ Healing and tanking specs level as a damage spec and switch at 60: Discipline le
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Shadow](raid/shadow.md) — Shadow leveling/raid | 554 | 636 | best |
-| 2 | [Smite](raid/smite.md) — Discipline/Holy — Smite | 315 | 477 | -43% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Shadow](raid/shadow.md) — Shadow leveling/raid | 556 | 638 | 482 | best |
+| 2 | [Smite](raid/smite.md) — Discipline/Holy — Smite | 296 | 457 | 255 | -47% |
 
 **Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](raid/holy.md) — Holy — Raid Healer (0.62), [Discipline](raid/discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion.
 

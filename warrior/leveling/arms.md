@@ -6,7 +6,25 @@
 
 **[Two-handed Arms/raid or leveling](../research/leveling/builds/opt-arms-2h-raid-leveling-st.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/warrior/60/02323203032415001-05050032005--4)
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Battle Stance**, a two-handed weapon.
+
+**In the fight**, top to bottom:
+
+1. **Bloodrage**, then **Charge** in.
+2. **Battle Shout**: keep it up.
+3. **Mortal Strike** whenever ready.
+4. **Overpower** when it lights up (after a dodge).
+5. **Rend** once.
+6. **Execute** when the mob is below 20% health.
+7. **Heroic Strike** with spare rage; **Victory Rush** after a kill.
+
+**Between fights:** Bandage below 60% health, eat below half.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -29,7 +47,7 @@ Talent order (one point per level from 10):
 | 54-55 | Boundless Rage (Fury) | 2 |
 | 56-60 | Enrage (Fury) | 5 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% with all the rage, Heroic Strike with spare rage, white swings that generate rage by Classic's formula (the mob dodges 5%, parries 5%, 10% of swings glance for 95%). Between fights: 2 s loot, 6 s travel, a bandage below 60% health (First Aid, 60 s cooldown), food below 50%, rage decays; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
@@ -39,7 +57,7 @@ Talent order (one point per level from 10):
 | 50 | 28 |
 | 60 | 31 |
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Leveling — Arms two-hander](../research/leveling/builds/leveling-arms.md) (31/20/0, 28 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/warrior/60/05320203132513001-05050131005--4)
 

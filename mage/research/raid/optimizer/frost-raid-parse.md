@@ -9,8 +9,8 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Arcane Power | Arcane | 7 | +3.82% | manual |
 | Improved Frostbolt | Frost | 1 | +3.60% | manual |
+| Arcane Power | Arcane | 7 | +2.48% | manual |
 | Piercing Ice | Frost | 3 | +1.63% | manual |
 | Arcane Instability | Arcane | 6 | +1.46% | manual |
 | Ice Shards | Frost | 2 | +1.35% | manual |
@@ -18,8 +18,8 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Elemental Precision | Frost | 1 | +0.97% | manual |
 | Winter's Chill | Frost | 6 | +0.75% | manual |
 | Arcane Mind | Arcane | 5 | +0.49% | manual |
-| Arcane Meditation | Arcane | 4 | +0.41% | manual |
 | Frost Channeling | Frost | 3 | +0.29% | manual |
+| Arcane Meditation | Arcane | 4 | +0.28% | manual |
 | Arcane Focus | Arcane | 1 | +0.22% | manual |
 | Arcane Impact | Arcane | 3 | +0.17% | manual |
 | Arcane Concentration | Arcane | 2 | +0.12% | manual |
@@ -40,21 +40,21 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Wake of Fire | Fire | 1 | +0.00% | manual |
 | Incineration | Fire | 1 | +0.00% | manual |
 
-## Optimized build: 21/0/30  score +70.96%  (dps x1.689, sustain x1.104, surv x1.040, utility +0.00%)
+## Optimized build: 21/0/30  score +70.67%  (dps x1.690, sustain x1.085, surv x1.040, utility +0.00%)
 
 ```
   Arcane: Arcane Focus 5, Arcane Concentration 5, Magic Absorption 2, Arcane Impact 3, Arcane Meditation 3, Arcane Shielding 2, Presence of Mind 1
-  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Piercing Ice 3, Ice Lance 1, Frost Channeling 1, Shatter 3, Fingers of Frost 2, Winter's Chill 5
+  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Ice Lance 1, Piercing Ice 3, Frost Channeling 1, Shatter 3, Fingers of Frost 2, Winter's Chill 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +6.47% | no |
+| Arcane Power | Arcane 7 | 1/1 | +4.19% | no |
 | Arcane Instability | Arcane 6 | 1/3 | +2.87% | no |
 | Arcane Mind | Arcane 5 | 1/5 | +0.66% | yes |
-| Incineration | Fire 1 | 1/3 | +0.54% | yes |
+| Incineration | Fire 1 | 1/3 | +0.55% | yes |
 | Frost Channeling | Frost 3 | 2/3 | +0.29% | yes |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
 | Ice Block | Frost 4 | 1/1 | +0.00% | yes |

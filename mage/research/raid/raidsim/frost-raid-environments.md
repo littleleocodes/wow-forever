@@ -4,24 +4,64 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `frost-fingers-of-frost-raid` | 22/0/29 | 587 | 668 | 668 | 668 | 666 |
-| `opt-frost-raid-raid-dps` | 22/0/29 | 587 | 668 | 668 | 668 | 666 |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 570 | 644 | 649 | 649 | 641 |
-| `opt-frost-raid-parse` | 21/0/30 | 568 | 642 | 649 | 649 | 648 |
-| sim preset: Frost 14/0/37 | - | 559 | 632 | 644 | 644 | 636 |
-| sim preset: Frost DPS | - | 557 | 628 | 636 | 636 | 627 |
-| `frost-arcane-power-raid` | 31/0/20 | 548 | 623 | 627 | 627 | 652 |
-| `frost-winters-chill-raid` | 17/0/34 | 490 | 546 | 559 | 559 | 558 |
-| sim preset: Arcane 35/0/16 | - | 479 | 541 | 547 | 547 | 572 |
-| sim preset: Arcane DPS | - | 418 | 487 | 474 | 474 | 495 |
-| sim preset: Fire 0/35/16 | - | 378 | 420 | 432 | 432 | 434 |
-| sim preset: Fire DPS | - | 318 | 367 | 357 | 357 | 358 |
+| `frost-fingers-of-frost-raid` | 22/0/29 | 582 | 662 | 662 | 662 | 666 |
+| `opt-frost-raid-raid-dps` | 22/0/29 | 582 | 662 | 662 | 662 | 666 |
+| sim preset: Frost DPS | - | 553 | 623 | 632 | 632 | 627 |
+| `opt-frost-raid-parse` | 21/0/30 | 543 | 614 | 644 | 644 | 648 |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 541 | 612 | 646 | 646 | 641 |
+| sim preset: Frost 14/0/37 | - | 537 | 606 | 641 | 641 | 636 |
+| `frost-arcane-power-raid` | 31/0/20 | 536 | 609 | 612 | 612 | 652 |
+| `frost-winters-chill-raid` | 17/0/34 | 475 | 531 | 555 | 555 | 558 |
+| sim preset: Arcane 35/0/16 | - | 468 | 529 | 535 | 535 | 572 |
+| sim preset: Arcane DPS | - | 409 | 476 | 462 | 462 | 495 |
+| sim preset: Fire 0/35/16 | - | 373 | 416 | 428 | 428 | 434 |
+| sim preset: Fire DPS | - | 314 | 363 | 353 | 353 | 358 |
 
-- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)
-- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s
-- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s
-- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s
+- **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
+- **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
+- **raid**: phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s
+- **maximum**: the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s
 - **maximum, 60 s**: as maximum with a 60 s fight: cooldowns weigh more
+
+## Where the raid gain comes from
+
+Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "rest" is every other raid buff plus the raid rotation). Percent of the dummy DPS.
+
+| Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
+|---|---|---|---|---|---|---|---|
+| `frost-fingers-of-frost-raid` | 582 | +0% | +0% | -1% | +10% | +5% | 662 |
+| `opt-frost-raid-raid-dps` | 582 | +0% | +0% | -1% | +10% | +5% | 662 |
+| sim preset: Frost DPS | 553 | +0% | +0% | -1% | +10% | +5% | 632 |
+| `opt-frost-raid-parse` | 543 | +4% | +0% | -1% | +10% | +5% | 644 |
+| `opt-frost-raid-raid-dps-extwc` | 541 | +5% | +0% | -1% | +10% | +5% | 646 |
+| sim preset: Frost 14/0/37 | 537 | +5% | +0% | -1% | +10% | +5% | 641 |
+| `frost-arcane-power-raid` | 536 | -0% | +0% | -1% | +10% | +6% | 612 |
+| `frost-winters-chill-raid` | 475 | +2% | +0% | -1% | +10% | +6% | 555 |
+| sim preset: Arcane 35/0/16 | 468 | -0% | +0% | -1% | +10% | +6% | 535 |
+| sim preset: Arcane DPS | 409 | +0% | +0% | -2% | +10% | +5% | 462 |
+| sim preset: Fire 0/35/16 | 373 | +0% | +0% | -1% | +10% | +6% | 428 |
+| sim preset: Fire DPS | 314 | -0% | +0% | -2% | +10% | +4% | 353 |
+
+Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
+
+## DPS by fight length
+
+Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.
+
+| Build | 1 min | 2 min | 3 min | 4 min | 6 min |
+|---|---|---|---|---|---|
+| `frost-fingers-of-frost-raid` | 587 | 587 | 582 | 582 | 573 |
+| `opt-frost-raid-raid-dps` | 587 | 587 | 582 | 582 | 573 |
+| sim preset: Frost DPS | 549 | 557 | 553 | 545 | 544 |
+| `opt-frost-raid-parse` | 567 | 568 | 543 | 553 | 512 |
+| `opt-frost-raid-raid-dps-extwc` | 561 | 570 | 541 | 533 | 460 |
+| sim preset: Frost 14/0/37 | 556 | 559 | 537 | 495 | 429 |
+| `frost-arcane-power-raid` | 570 | 548 | 536 | 546 | 531 |
+| `frost-winters-chill-raid` | 488 | 490 | 475 | 474 | 462 |
+| sim preset: Arcane 35/0/16 | 500 | 479 | 468 | 480 | 471 |
+| sim preset: Arcane DPS | 437 | 418 | 409 | 419 | 411 |
+| sim preset: Fire 0/35/16 | 378 | 378 | 373 | 359 | 362 |
+| sim preset: Fire DPS | 318 | 318 | 314 | 310 | 307 |
 
 Gear presets: raid `p1.bis.gear.json`, maximum `p1.bis.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

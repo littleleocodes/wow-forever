@@ -20,7 +20,7 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Enrage | Fury | 4 | +0.60% | manual |
 | Master of Defense | Protection | 3 | +0.60% | manual |
 | Bastion | Protection | 5 | +0.59% | manual |
-| Focused Rage | Protection | 6 | +0.58% | manual |
+| Focused Rage | Protection | 6 | +0.59% | manual |
 | Precision | Fury | 5 | +0.54% | manual |
 | Concussion Blow | Protection | 5 | +0.50% | manual |
 | Mortal Strike | Arms | 7 | +0.45% | manual |
@@ -33,14 +33,14 @@ Effect coverage: 1 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Blood Craze | Fury | 3 | +0.25% | manual |
 | Deep Wounds | Arms | 3 | +0.22% | manual |
 | Improved Disarm | Protection | 4 | +0.20% | manual |
-| Improved Heroic Strike | Arms | 1 | +0.17% | manual |
+| Improved Heroic Strike | Arms | 1 | +0.18% | manual |
 | Improved Bloodrage | Protection | 2 | +0.14% | manual |
 | Impale | Arms | 4 | +0.14% | manual |
 | Toughness | Protection | 2 | +0.12% | manual |
 | Improved Rend | Arms | 1 | +0.09% | manual |
 | Dual Wield Specialization | Fury | 4 | +0.09% | manual |
 
-## Optimized build: 14/5/32  score +58.47%  (dps x1.944, sustain x1.000, surv x1.195, utility +1.50%)
+## Optimized build: 14/5/32  score +58.52%  (dps x1.945, sustain x1.000, surv x1.195, utility +1.50%)
 
 ```
   Arms: Deflection 5, Improved Heroic Strike 3, Improved Tactical Mastery 5, Anger Management 1

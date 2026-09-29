@@ -10,10 +10,10 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Beast Mastery** | [Beast Mastery](leveling/beast-mastery.md) | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) ⚗<br>469 DPS | [Beast Mastery — PvP](pvp/beast-mastery.md) ⚗ |
-| **Marksmanship** | [Leveling — Beast Mastery](leveling/marksmanship.md)<br>27 s/kill | [Marksmanship without a pet](raid/marksmanship.md)<br>434 DPS | [Marksmanship / Survival](pvp/marksmanship.md) |
-| **Survival** | [Melee Survival leveling](leveling/survival.md)<br>27 s/kill | **✅ Recommended**<br>[Melee Survival — Lone Wolf](raid/survival.md)<br>459 DPS | [Survival — PvP](pvp/survival.md) ⚗ |
-| **Beast-Marks** | - | **✅ Recommended**<br>[Marksmanship — Summon Hawk](raid/beast-marks.md)<br>468 DPS | - |
+| **Beast Mastery** | [Beast Mastery](leveling/beast-mastery.md) | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) ⚗<br>438 DPS | [Beast Mastery — PvP](pvp/beast-mastery.md) ⚗ |
+| **Marksmanship** | [Leveling — Beast Mastery](leveling/marksmanship.md)<br>27 s/kill | [Marksmanship without a pet](raid/marksmanship.md)<br>420 DPS | [Marksmanship / Survival](pvp/marksmanship.md) |
+| **Survival** | [Melee Survival leveling](leveling/survival.md)<br>27 s/kill | [Melee hunter](raid/survival.md)<br>424 DPS | [Survival — PvP](pvp/survival.md) ⚗ |
+| **Beast-Marks** | - | **✅ Recommended**<br>[Marksmanship — Summon Hawk](raid/beast-marks.md)<br>448 DPS | - |
 | **Melee (split)** | **✅ Recommended**<br>[Melee hunter](leveling/melee-split.md)<br>26 s/kill | - | - |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
@@ -36,14 +36,14 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 ### Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Raid ⚗ | 469 | 808 | best |
-| 2 | [Beast-Marks](raid/beast-marks.md) — Marksmanship — Summon Hawk | 468 | 814 | -0% |
-| 3 | [Survival](raid/survival.md) — Melee Survival — Lone Wolf | 459 | 986 | -2% |
-| 4 | [Marksmanship](raid/marksmanship.md) — Marksmanship without a pet | 434 | 848 | -8% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Beast-Marks](raid/beast-marks.md) — Marksmanship — Summon Hawk | 448 | 809 | 423 | best |
+| 2 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Raid ⚗ | 438 | 802 | 409 | -2% |
+| 3 | [Survival](raid/survival.md) — Melee hunter | 424 | 951 | 406 | -5% |
+| 4 | [Marksmanship](raid/marksmanship.md) — Marksmanship without a pet | 420 | 841 | 373 | -6% |
 
 ### PvP
 

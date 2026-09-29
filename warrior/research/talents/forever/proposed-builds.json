@@ -745,234 +745,6 @@
       ]
     },
     {
-      "id": "opt-arms-2h-raid-raid-dps",
-      "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +79.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arms": [
-          ["Improved Rend", 3],
-          ["Improved Heroic Strike", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3],
-          ["Impale", 2],
-          ["Two-Handed Weapon Specialization", 2]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Booming Voice", 2],
-          ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
-          ["Improved Execute", 2],
-          ["Enrage", 5],
-          ["Death Wish", 1],
-          ["Precision", 3],
-          ["Flurry", 5],
-          ["Bloodthirst", 1]
-        ],
-        "Protection": []
-      },
-      "core": [
-        {"talent": "Flurry", "why": "Removing it costs 22.3 points of score in this model."},
-        {"talent": "Death Wish", "why": "Removing it costs 14.4 points of score in this model."},
-        {"talent": "Cruelty", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Deep Wounds", "why": "Removing it costs 8.8 points of score in this model."},
-        {"talent": "Bloodthirst", "why": "Removing it costs 8.5 points of score in this model."},
-        {"talent": "Improved Execute", "why": "Removing it costs 8.2 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 5.7 points of score in this model."},
-        {"talent": "Impale", "why": "Removing it costs 5.2 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warrior/talents/forever/optimizer/arms-2h-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"]
-    },
-    {
-      "id": "opt-arms-2h-raid-parse",
-      "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `parse`: score +79.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arms": [
-          ["Improved Rend", 3],
-          ["Improved Heroic Strike", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3],
-          ["Impale", 2],
-          ["Two-Handed Weapon Specialization", 2]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Booming Voice", 2],
-          ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
-          ["Improved Execute", 2],
-          ["Enrage", 5],
-          ["Death Wish", 1],
-          ["Precision", 3],
-          ["Flurry", 5],
-          ["Bloodthirst", 1]
-        ],
-        "Protection": []
-      },
-      "core": [
-        {"talent": "Flurry", "why": "Removing it costs 22.3 points of score in this model."},
-        {"talent": "Death Wish", "why": "Removing it costs 14.4 points of score in this model."},
-        {"talent": "Cruelty", "why": "Removing it costs 9.9 points of score in this model."},
-        {"talent": "Deep Wounds", "why": "Removing it costs 8.7 points of score in this model."},
-        {"talent": "Bloodthirst", "why": "Removing it costs 8.6 points of score in this model."},
-        {"talent": "Improved Execute", "why": "Removing it costs 8.2 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 5.7 points of score in this model."},
-        {"talent": "Impale", "why": "Removing it costs 5.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warrior/talents/forever/optimizer/arms-2h-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"]
-    },
-    {
-      "id": "opt-fury-dw-raid-raid-dps",
-      "name": "Optimizer — Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +90.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arms": [
-          ["Improved Rend", 3],
-          ["Improved Heroic Strike", 2],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
-          ["Blood Craze", 2],
-          ["Raging Blows", 1],
-          ["Dual Wield Specialization", 5],
-          ["Improved Execute", 2],
-          ["Enrage", 5],
-          ["Precision", 3],
-          ["Death Wish", 1],
-          ["Flurry", 5]
-        ],
-        "Protection": []
-      },
-      "core": [
-        {"talent": "Dual Wield Specialization", "why": "Removing it costs 23.0 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 20.2 points of score in this model."},
-        {"talent": "Death Wish", "why": "Removing it costs 16.5 points of score in this model."},
-        {"talent": "Improved Execute", "why": "Removing it costs 14.2 points of score in this model."},
-        {"talent": "Cruelty", "why": "Removing it costs 9.4 points of score in this model."},
-        {"talent": "Unbridled Wrath", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Raging Blows", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 6.3 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warrior/talents/forever/optimizer/fury-dw-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"]
-    },
-    {
-      "id": "opt-fury-dw-raid-parse",
-      "name": "Optimizer — Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `parse`: score +90.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arms": [
-          ["Improved Rend", 3],
-          ["Improved Heroic Strike", 2],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Deep Wounds", 3]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Unbridled Wrath", 5],
-          ["Boundless Rage", 3],
-          ["Blood Craze", 2],
-          ["Raging Blows", 1],
-          ["Dual Wield Specialization", 5],
-          ["Improved Execute", 2],
-          ["Enrage", 5],
-          ["Precision", 3],
-          ["Death Wish", 1],
-          ["Flurry", 5]
-        ],
-        "Protection": []
-      },
-      "core": [
-        {"talent": "Dual Wield Specialization", "why": "Removing it costs 23.0 points of score in this model."},
-        {"talent": "Flurry", "why": "Removing it costs 20.1 points of score in this model."},
-        {"talent": "Death Wish", "why": "Removing it costs 16.5 points of score in this model."},
-        {"talent": "Improved Execute", "why": "Removing it costs 14.2 points of score in this model."},
-        {"talent": "Cruelty", "why": "Removing it costs 9.2 points of score in this model."},
-        {"talent": "Unbridled Wrath", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Raging Blows", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 6.3 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warrior/talents/forever/optimizer/fury-dw-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"]
-    },
-    {
-      "id": "opt-prot-tank-raid-tank",
-      "name": "Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)",
-      "role": "tank",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.5% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arms": [
-          ["Deflection", 5],
-          ["Improved Heroic Strike", 3],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1]
-        ],
-        "Fury": [
-          ["Cruelty", 5]
-        ],
-        "Protection": [
-          ["Anticipation", 5],
-          ["Shield Specialization", 5],
-          ["Improved Thunder Clap", 3],
-          ["Defiance", 3],
-          ["Improved Revenge", 3],
-          ["Master of Defense", 2],
-          ["Vanguard", 1],
-          ["Concussion Blow", 1],
-          ["Bastion", 5],
-          ["Focused Rage", 3],
-          ["Shield Slam", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Shield Slam", "why": "Removing it costs 22.7 points of score in this model."},
-        {"talent": "Defiance", "why": "Removing it costs 11.0 points of score in this model."},
-        {"talent": "Deflection", "why": "Removing it costs 5.9 points of score in this model."},
-        {"talent": "Bastion", "why": "Removing it costs 5.4 points of score in this model."},
-        {"talent": "Improved Revenge", "why": "Removing it costs 4.5 points of score in this model."},
-        {"talent": "Focused Rage", "why": "Removing it costs 3.9 points of score in this model."},
-        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Improved Thunder Clap", "why": "Removing it costs 2.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: warrior/talents/forever/optimizer/prot-tank-raid-tank.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/warrior"]
-    },
-    {
       "id": "fury-pvp",
       "name": "Fury — PvP (generated)",
       "role": "dps",
@@ -1068,6 +840,234 @@
       "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model arms-2h-raid, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
       "open_questions": ["A generated Protection build: check it against the community's Protection builds at launch."],
       "sources": ["https://talentsforever.com/warrior"]
+    },
+    {
+      "id": "opt-arms-2h-raid-raid-dps",
+      "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +62.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arms": [
+          ["Improved Rend", 3],
+          ["Improved Heroic Strike", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Booming Voice", 2],
+          ["Unbridled Wrath", 5],
+          ["Boundless Rage", 3],
+          ["Improved Execute", 1],
+          ["Enrage", 5],
+          ["Death Wish", 1],
+          ["Precision", 3],
+          ["Flurry", 5],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Flurry", "why": "Removing it costs 15.4 points of score in this model."},
+        {"talent": "Bloodthirst", "why": "Removing it costs 13.5 points of score in this model."},
+        {"talent": "Cruelty", "why": "Removing it costs 13.4 points of score in this model."},
+        {"talent": "Deep Wounds", "why": "Removing it costs 10.1 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 5.1 points of score in this model."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "Removing it costs 4.7 points of score in this model."},
+        {"talent": "Unbridled Wrath", "why": "Removing it costs 4.3 points of score in this model."},
+        {"talent": "Anger Management", "why": "Removing it costs 2.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "opt-arms-2h-raid-parse",
+      "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `parse`: score +61.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arms": [
+          ["Improved Rend", 3],
+          ["Improved Heroic Strike", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Booming Voice", 2],
+          ["Unbridled Wrath", 5],
+          ["Boundless Rage", 3],
+          ["Improved Execute", 1],
+          ["Enrage", 5],
+          ["Death Wish", 1],
+          ["Precision", 3],
+          ["Flurry", 5],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Flurry", "why": "Removing it costs 15.3 points of score in this model."},
+        {"talent": "Bloodthirst", "why": "Removing it costs 13.5 points of score in this model."},
+        {"talent": "Cruelty", "why": "Removing it costs 13.1 points of score in this model."},
+        {"talent": "Deep Wounds", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 5.1 points of score in this model."},
+        {"talent": "Two-Handed Weapon Specialization", "why": "Removing it costs 4.7 points of score in this model."},
+        {"talent": "Unbridled Wrath", "why": "Removing it costs 4.2 points of score in this model."},
+        {"talent": "Anger Management", "why": "Removing it costs 2.4 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/arms-2h-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "opt-fury-dw-raid-raid-dps",
+      "name": "Optimizer — Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +88.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arms": [
+          ["Improved Rend", 3],
+          ["Improved Heroic Strike", 2],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Boundless Rage", 3],
+          ["Blood Craze", 2],
+          ["Raging Blows", 1],
+          ["Dual Wield Specialization", 5],
+          ["Improved Execute", 2],
+          ["Enrage", 5],
+          ["Precision", 3],
+          ["Death Wish", 1],
+          ["Flurry", 5]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Dual Wield Specialization", "why": "Removing it costs 23.9 points of score in this model."},
+        {"talent": "Flurry", "why": "Removing it costs 21.3 points of score in this model."},
+        {"talent": "Cruelty", "why": "Removing it costs 12.1 points of score in this model."},
+        {"talent": "Improved Execute", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Death Wish", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Raging Blows", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Unbridled Wrath", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 6.3 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "opt-fury-dw-raid-parse",
+      "name": "Optimizer — Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `parse`: score +87.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arms": [
+          ["Improved Rend", 3],
+          ["Improved Heroic Strike", 2],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Boundless Rage", 3],
+          ["Blood Craze", 2],
+          ["Raging Blows", 1],
+          ["Dual Wield Specialization", 5],
+          ["Improved Execute", 2],
+          ["Enrage", 5],
+          ["Precision", 3],
+          ["Death Wish", 1],
+          ["Flurry", 5]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Dual Wield Specialization", "why": "Removing it costs 23.9 points of score in this model."},
+        {"talent": "Flurry", "why": "Removing it costs 21.2 points of score in this model."},
+        {"talent": "Cruelty", "why": "Removing it costs 11.8 points of score in this model."},
+        {"talent": "Improved Execute", "why": "Removing it costs 11.2 points of score in this model."},
+        {"talent": "Death Wish", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Raging Blows", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Unbridled Wrath", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Precision", "why": "Removing it costs 6.3 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/fury-dw-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "opt-prot-tank-raid-tank",
+      "name": "Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +58.5% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 5],
+          ["Improved Heroic Strike", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5]
+        ],
+        "Protection": [
+          ["Anticipation", 5],
+          ["Shield Specialization", 5],
+          ["Improved Thunder Clap", 3],
+          ["Defiance", 3],
+          ["Improved Revenge", 3],
+          ["Master of Defense", 2],
+          ["Vanguard", 1],
+          ["Concussion Blow", 1],
+          ["Bastion", 5],
+          ["Focused Rage", 3],
+          ["Shield Slam", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Shield Slam", "why": "Removing it costs 22.7 points of score in this model."},
+        {"talent": "Defiance", "why": "Removing it costs 11.0 points of score in this model."},
+        {"talent": "Deflection", "why": "Removing it costs 5.9 points of score in this model."},
+        {"talent": "Bastion", "why": "Removing it costs 5.4 points of score in this model."},
+        {"talent": "Improved Revenge", "why": "Removing it costs 4.5 points of score in this model."},
+        {"talent": "Focused Rage", "why": "Removing it costs 4.0 points of score in this model."},
+        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Improved Thunder Clap", "why": "Removing it costs 2.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warrior/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warrior"]
     }
   ]
 }

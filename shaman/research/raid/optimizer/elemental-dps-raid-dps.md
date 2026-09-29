@@ -9,29 +9,25 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Elemental Alacrity | Elemental | 3 | +6.29% | manual |
+| Elemental Alacrity | Elemental | 3 | +6.24% | manual |
 | Mental Quickness | Enhancement | 5 | +4.64% | manual |
-| Mindfulness | Restoration | 2 | +1.76% | manual |
-| Call of Flame | Elemental | 2 | +1.62% | manual |
-| Shamanistic Focus | Enhancement | 3 | +1.59% | manual |
+| Call of Flame | Elemental | 2 | +1.61% | manual |
 | Elemental Fury | Elemental | 6 | +1.37% | manual |
-| Tidal Focus | Restoration | 2 | +1.35% | manual |
-| Mana Tide Totem | Restoration | 4 | +1.32% | manual |
+| Lava Burst | Elemental | 7 | +1.15% | manual |
 | Call of Thunder | Elemental | 4 | +1.15% | manual |
-| Lava Burst | Elemental | 7 | +1.10% | manual |
-| Elemental Focus | Elemental | 3 | +0.98% | manual |
+| Tidal Focus | Restoration | 2 | +1.08% | manual |
 | Lightning Overload | Elemental | 5 | +0.87% | manual |
 | Concussion | Elemental | 1 | +0.82% | manual |
 | Nature's Swiftness | Restoration | 5 | +0.50% | manual |
 | Thundering Strikes | Enhancement | 1 | +0.47% | manual |
-| Ancestral Knowledge | Enhancement | 1 | +0.44% | manual |
-| Convection | Elemental | 1 | +0.15% | manual |
-| Totemic Focus | Restoration | 1 | +0.07% | manual |
+| Ancestral Knowledge | Enhancement | 1 | +0.03% | manual |
 | Toughness | Enhancement | 4 | +0.00% | manual |
 | Improved Reincarnation | Restoration | 2 | +0.00% | manual |
 | Elemental Warding | Elemental | 2 | +0.00% | manual |
+| Convection | Elemental | 1 | +0.00% | manual |
 | Reverberation | Elemental | 2 | +0.00% | manual |
 | Elemental Devastation | Elemental | 2 | +0.00% | manual |
+| Elemental Focus | Elemental | 3 | +0.00% | manual |
 | Improved Fire Nova | Elemental | 4 | +0.00% | parsed |
 | Eye of the Storm | Elemental | 4 | +0.00% | manual |
 | Elemental Reach | Elemental | 5 | +0.00% | manual |
@@ -39,27 +35,31 @@ Effect coverage: 1 parsed from tooltips, 49 hand-entered, 0 missing (scored as 0
 | Earth's Grasp | Enhancement | 1 | +0.00% | manual |
 | Guardian Totems | Enhancement | 2 | +0.00% | manual |
 | Mental Dexterity | Enhancement | 2 | +0.00% | manual |
+| Improved Ghost Wolf | Enhancement | 2 | +0.00% | manual |
+| Improved Lightning Shield | Enhancement | 2 | +0.00% | manual |
+| Elemental Weapons | Enhancement | 3 | +0.00% | manual |
+| Shamanistic Focus | Enhancement | 3 | +0.00% | manual |
 
-## Optimized build: 29/22/0  score +74.73%  (dps x1.747, sustain x1.051, surv x1.124, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.517  — use this to compare models with different pet shares.
+## Optimized build: 31/7/13  score +70.55%  (dps x1.705, sustain x1.126, surv x1.024, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.480  — use this to compare models with different pet shares.
 
 ```
-  Elemental: Concussion 5, Convection 5, Call of Flame 3, Reverberation 1, Elemental Warding 3, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Lightning Overload 3, Elemental Fury 4
-  Enhancement: Thundering Strikes 5, Ancestral Knowledge 5, Improved Lightning Shield 3, Guardian Totems 1, Shamanistic Focus 1, Toughness 5, Mental Quickness 2
+  Elemental: Concussion 5, Convection 5, Call of Flame 3, Elemental Warding 3, Reverberation 1, Elemental Alacrity 3, Elemental Focus 1, Call of Thunder 1, Lightning Overload 3, Elemental Fury 5, Lava Burst 1
+  Enhancement: Thundering Strikes 5, Ancestral Knowledge 2
+  Restoration: Totemic Focus 5, Mindfulness 3, Tidal Focus 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Elemental Fury | Elemental 6 | 5/5 | +3.22% | yes |
-| Tidal Focus | Restoration 2 | 1/5 | +2.33% | no |
-| Lava Burst | Elemental 7 | 1/1 | +1.94% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.87% | no |
-| Mindfulness | Restoration 2 | 1/3 | +0.78% | no |
-| Mana Tide Totem | Restoration 4 | 1/1 | +0.78% | no |
-| Totemic Focus | Restoration 1 | 1/5 | +0.11% | yes |
-| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | no |
+| Mental Quickness | Enhancement 5 | 1/2 | +7.92% | no |
+| Shamanistic Focus | Enhancement 3 | 1/1 | +2.43% | no |
+| Mana Tide Totem | Restoration 4 | 1/1 | +2.15% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.85% | no |
+| Ancestral Knowledge | Enhancement 1 | 3/5 | +0.72% | yes |
+| Toughness | Enhancement 4 | 1/5 | +0.00% | no |
+| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |
 | Reverberation | Elemental 2 | 2/5 | +0.00% | yes |
 | Elemental Devastation | Elemental 2 | 1/3 | +0.00% | yes |
 | Improved Fire Nova | Elemental 4 | 1/2 | +0.00% | yes |
@@ -67,4 +67,5 @@ Absolute DPS index (character alone, no talents = 1.00): 1.517  — use this to 
 | Elemental Reach | Elemental 5 | 1/2 | +0.00% | yes |
 | Earthbound | Elemental 5 | 1/1 | +0.00% | yes |
 | Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |
+| Guardian Totems | Enhancement 2 | 1/2 | +0.00% | yes |
 

@@ -4,9 +4,11 @@
 
 **[Holy — Raid Healer](../research/raid/builds/holy-raid-healer.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205003011305101-3350110303012043--4)
 
+## The numbers
+
 Healing capacity 0.62 (the raid damage it heals through in this project's healer lab), 346 healing per second. Healers are not in the community simulator.
 
-Other builds of this spec:
+## Other builds of this spec
 
 - [Raid healing mix](../research/raid/builds/opt-holy-heal-raid-heal.md) (22/29/0) — [open the talent tree](https://talentsforever.com/priest/60/205003011305101-3350110303012043--4)
 

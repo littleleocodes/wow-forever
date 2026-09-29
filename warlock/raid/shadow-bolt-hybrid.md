@@ -4,36 +4,52 @@
 
 *Shadow Bolt and fire casters mixing Affliction's curses with Destruction's Ruin (DS/Ruin).* (a hybrid: Affliction/Destruction).
 
-**[Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-sb-raid-raid-dps.md)** (22/11/18) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550005003-4)
+**[Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-sb-raid-raid-dps.md)** (22/11/18) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-0005203001-0550005003-4)
+
+## How to play
+
+**Before the pull:** **Amplify Curse**, **Life Tap**.
+
+**Then press the first one that is ready**, top to bottom:
+
+1. **Curse of the Elements**: keep it on the target
+2. **Life Tap** when your mana is below 10%
+3. **Amplify Curse**
+4. **Bane of Agony**: keep it on the target
+5. **Corruption**: keep it on the target
+6. **Immolate**: keep it on the target
+7. **Shadow Bolt**
+
+**Shadow Bolt** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+
+## The numbers
 
 | Setting | DPS |
 |---|---|
-| Training dummy (only your own buffs) | 574 |
-| Parse (a full raid: every raid buff and debuff) | 690 |
+| Training dummy, 3-minute fight (only your own buffs) | 566 |
+| Parse (a full raid: every raid buff and debuff) | 675 |
 
-**What to press** (top to bottom: cast the first line that is ready):
+**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Before the pull: cast Amplify Curse; cast Life Tap.
+Dummy 566 → mana +5% → armor +0% → physical +4% → spell +1% → everything else +10% → raid 675
 
-1. If not Curse of the Elements is up: cast Curse of the Elements
-2. If time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion
-3. If time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune
-4. Use every other cooldown when ready
-5. If time left in the fight ≤ 3.5: cast Searing Pain
-6. If mana % < 10%: cast Life Tap
-7. Cast Amplify Curse
-8. If time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony
-9. If time left on Corruption ≤ cast time of Corruption: cast Corruption
-10. If time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate
-11. Cast Shadow Bolt
+(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
-Parse build (personal damage in a full raid, where the raid brings the buffs): [Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-fire-destro-raid-parse.md) (21/11/19) — [open the talent tree](https://talentsforever.com/warlock/60/05500020135-2300203001-0550005103-4).
+**DPS by fight length** (training dummy; your average DPS if the fight lasts this long):
 
-Other builds of this spec:
+| 1 min | 2 min | 3 min | 4 min | 6 min |
+|---|---|---|---|---|
+| 628 | 574 | 566 | 552 | 543 |
 
-- [DS/Ruin — Demonic Sacrifice + Ruin](../research/raid/builds/ds-ruin-raid.md) (22/11/18, 574 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/15500020135-2050003001-0550005003-4)
-- [Destruction — Immolate / Conflagrate / Incinerate](../research/raid/builds/destruction-fire-raid.md) (22/11/18, 559 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4)
-- [Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (22/11/18, 559 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4)
+Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
+
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-fire-destro-raid-parse.md) (21/11/19) — [open the talent tree](https://talentsforever.com/warlock/60/05500020135-2300203001-0550005103-4).
+
+## Other builds of this spec
+
+- [DS/Ruin — Demonic Sacrifice + Ruin](../research/raid/builds/ds-ruin-raid.md) (22/11/18, 566 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/15500020135-2050003001-0550005003-4)
+- [Destruction — Immolate / Conflagrate / Incinerate](../research/raid/builds/destruction-fire-raid.md) (22/11/18, 546 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4)
+- [Shadow Bolt hybrid (optimized)](../research/raid/builds/opt-fire-destro-raid-raid-dps.md) (22/11/18, 546 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warlock/60/25500010135-2300203001-0550004103-4)
 
 ---
 *Generated by `_reference/data/render_modes.py` on 2026-09-29 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*

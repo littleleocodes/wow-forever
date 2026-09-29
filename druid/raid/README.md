@@ -2,12 +2,12 @@
 
 [Druid](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Balance](balance.md) — Balance (optimized) | 461 | 518 | best |
-| 2 | [Feral Combat](feral-combat.md) — Feral Combat (optimized) | 356 | 567 | -23% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Balance](balance.md) — Balance (optimized) | 438 | 511 | 342 | best |
+| 2 | [Feral Combat](feral-combat.md) — Feral Combat (optimized) | 350 | 556 | 348 | -20% |
 
 **Healing**: [Restoration](restoration.md) — Restoration (optimized).
 

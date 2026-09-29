@@ -2,12 +2,12 @@
 
 [Warrior](../README.md) > Raid (training dummy and parse)
 
-**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):
+**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. *6-minute fight*: its average DPS if the fight lasts 6 minutes (dummy, no execute phase): lower for specs that run out of mana.
 
-| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
-|---|---|---|---|---|
-| 1 | [Fury](fury.md) — Raid dual-wield Fury | 256 | 442 | best |
-| 2 | [Arms](arms.md) — Arms — Battle Stance | 238 | 467 | -7% |
+| # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
+|---|---|---|---|---|---|
+| 1 | [Arms](arms.md) — Arms — Battle Stance | 220 | 458 | 205 | best |
+| 2 | [Fury](fury.md) — Raid dual-wield Fury | 218 | 375 | 162 | -1% |
 
 **Tanking**: [Protection](protection.md) — Protection — Raid Tank.
 

@@ -6,7 +6,23 @@
 
 > ⚗ Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.
 
-Talent order (one point per level from 10):
+## How to play
+
+**Before the fight:** **Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**. Send the Voidwalker in first and let it hold the mob.
+
+**In the fight**, top to bottom:
+
+1. **Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.
+2. **Wrack** once the damage-over-time spells are up.
+3. **Shadow Bolt** while you have plenty of mana, your wand otherwise.
+4. **Drain Life** when you are hurt, **Life Tap** when you are low on mana.
+5. If a mob reaches you: **Fear** it or **Death Coil**.
+
+**Between fights:** **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health.
+
+## Talents while leveling
+
+One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
@@ -29,7 +45,7 @@ Talent order (one point per level from 10):
 | 55 | Improved Voidwalker (Demonology) | 1 |
 | 56-60 | Master Demonologist (Demonology) | 5 |
 
-**What to press:** Single-target leveling fights against normal mobs of your level with a Voidwalker: the pet runs in and meets the mob halfway, Torments it every 5 s, and holds it until your threat passes 130% of its own (it takes the mob back once its threat passes yours by 10%). You cast Corruption, Bane of Agony, Siphon Life and Immolate, channel Wrack once the DoTs are up, fill with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Life when hurt, Life Tap when low on mana, Fear or Death Coil a mob that reaches you. Between fights: 2 s loot, 6 s travel, Life Tap back to 70% mana, Consume Shadows or Health Funnel for the pet, food only below 35% health, a 10-12 s re-summon after a pet death; a death costs 90 s.
+## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
