@@ -199,6 +199,9 @@ def key(item):
     return json.dumps({k: v for k, v in item.items() if k != "notes"}, sort_keys=True)
 
 
+INSERT_ONLY = [False]   # set by --insert-only (2026-09-29): the spellbook sweep tries only insertions of spells no rotation casts
+
+
 def neighbors(apl, pool, N):
     """[(description, new apl)] one edit away."""
     out = []
@@ -210,7 +213,7 @@ def neighbors(apl, pool, N):
         a["priorityList"] = new
         out.append((desc, a))
 
-    for pos, i in enumerate(vis):
+    for pos, i in (() if INSERT_ONLY[0] else enumerate(vis)):   # --insert-only: skip every edit but the insertions below
         it = lst[i]
         t = text(it, N)
         # drop
@@ -257,7 +260,7 @@ def neighbors(apl, pool, N):
                 new[i] = new_it
                 with_list(new, f"threshold {s} -> {v}: {t}")
     # guards: only with enough mana, only with enough fight left
-    for i in vis:
+    for i in (() if INSERT_ONLY[0] else vis):
         it = lst[i]
         kind = next((k for k in it.get("action", {}) if k != "condition"), None)
         if kind not in CASTS + ("sequence", "strictSequence"):
@@ -276,7 +279,7 @@ def neighbors(apl, pool, N):
             new[i] = new_it
             with_list(new, f"only with {x}s or more of the fight left: {t}")
     # lower spell ranks: always, or while mana is low (inserted just above the item)
-    for i in vis:
+    for i in (() if INSERT_ONLY[0] else vis):
         it = lst[i]
         kind = next((k for k in it.get("action", {}) if k != "condition"), None)
         if kind not in ("castSpell", "channelSpell"):
@@ -305,7 +308,7 @@ def neighbors(apl, pool, N):
                 new.insert(i, guard)
                 with_list(new, f"rank {r} below {x}% mana, above: {text(it, N)}")
     # show a hidden item
-    for i, it in enumerate(lst):
+    for i, it in (() if INSERT_ONLY[0] else enumerate(lst)):
         if it.get("hide"):
             new_it = copy.deepcopy(it)
             new_it.pop("hide", None)
@@ -494,6 +497,8 @@ def search(cls, spec, a, repo, N, where=None):
     have_ids = explicit_ids({"priorityList": pool}) | explicit_ids(base)
     news = [c for c in new_spell_pool(cls) if ("spellId", c["action"]["castSpell"]["spellId"]["spellId"]) not in have_ids]
     pool += news
+    if INSERT_ONLY[0]:
+        pool = news
     print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), builds "
           + ", ".join(b["label"] for b in builds) + f" ({setting}{', tank value' if tank else ''})", flush=True)
 
@@ -682,7 +687,9 @@ def main():
     ap.add_argument("--setting", choices=["dummy", "raid"], help="search only this kind of setting (default: the dummy and the raid for DPS specs, the raid for tanks)")
     ap.add_argument("--repo")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--insert-only", action="store_true", help="try only insertions of spellbook spells the rotation does not cast (the sweep of 2026-09-29)")
     a = ap.parse_args()
+    INSERT_ONLY[0] = a.insert_only
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=a.repo))
     N = RSP().Names(repo)

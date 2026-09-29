@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warrior",
   "spec": "arms-2h-raid",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -113,18 +113,18 @@
   "final": {
    "dummy": {
     "opt-arms-2h-raid-raid-dps": {
-     "before": 154.0428772599245,
-     "after": 217.6564952653407,
-     "base": 154.0428772599245,
+     "before": 153.94437233691337,
+     "after": 217.18862483395907,
+     "base": 153.94437233691337,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 144.11385284677615,
-     "after": 195.90886760811492,
-     "base": 144.11385284677615,
+     "before": 143.95084007015492,
+     "after": 195.44554392000674,
+     "base": 143.95084007015492,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -133,7 +133,7 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  },
  "raid": {
   "class": "warrior",

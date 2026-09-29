@@ -732,7 +732,7 @@ def classic_step(cls, a, log, result):
 
 
 def regen(a, classes, log):
-    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
+    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_start_here.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
                  [HERE / "render_optimizer_sections.py"], [HERE / "scorer/compare_effects.py"], [HERE / "scorer/loop_audit.py"],
                  [HERE / "build_launch_checklist.py"], [HERE / "build_beta_checklist.py"], [FL / "summary.py", "--write"]):
         sh(args, a.dry_run, log)
