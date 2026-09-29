@@ -1509,7 +1509,7 @@
         {"talent": "Improved Concussive Shot", "why": "The scorer's value in this build: +7.5% of its score (model melee-dps)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
       "open_questions": ["A generated Survival build: check it against the community's Survival builds at launch."],
       "sources": ["https://talentsforever.com/hunter"]
     }

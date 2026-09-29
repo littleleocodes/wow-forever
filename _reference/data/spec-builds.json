@@ -115,7 +115,7 @@
  },
  "paladin": {
   "protection-pvp": {
-   "model": "prot-tank",
+   "model": "ret-dps",
    "profile": "pvp",
    "spec": "Protection",
    "mode": "pvp",
@@ -125,6 +125,13 @@
    "model": "ret-dps",
    "profile": "pvp",
    "spec": "Retribution",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "holy-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Holy",
    "mode": "pvp",
    "date": "2026-09-29"
   }
@@ -271,6 +278,22 @@
    "model": "affliction-leveling",
    "profile": "pvp",
    "spec": "Destruction",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "warrior": {
+  "fury-pvp": {
+   "model": "fury-dw-raid",
+   "profile": "pvp",
+   "spec": "Fury",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "protection-pvp": {
+   "model": "prot-tank",
+   "profile": "pvp",
+   "spec": "Protection",
    "mode": "pvp",
    "date": "2026-09-29"
   }

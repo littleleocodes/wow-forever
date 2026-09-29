@@ -361,7 +361,8 @@
       ],
       "notes": ["New-builds survey (2026-09-28, user request): the Frostfire Bolt mage asked for by name. Frostfire Bolt is implemented by this project in the local build of the community simulator (patches/forever/sim/mage/frostfire_bolt.go, from the client's spell data like the simulator's Fireball); its numbers are our model, not the community's.", "The fight lab plays a Frostfire leveling rotation (fightlab/mage.py decide_frostfire: Frostbolt until 40, then Frostfire Bolt, which also slows the mob 40% like Frostbolt).", "Second talent search (2026-09-28, after the bench's potion fix and the rotation's second pass): 1 point Wake of Fire -> Improved Fireball (+0.5%)."],
       "open_questions": ["Does Frostfire Bolt take both schools' bonuses in the live game (Fire Power and Piercing Ice, Critical Mass and Ice Shards)? The tooltip says it counts as both Frost and Fire damage.", "Are the rank-3 numbers (270-314 + 57 over 9 s, 370 mana) final? A stronger Frostfire Bolt would move this build up the ranking.", "Frostfire Bolt's slow: the tooltip gives 40% without a duration (9 s assumed in the fight lab)."],
-      "sources": ["https://warcraftforever.games/talents/mage", "_reference/data/raidsim/patches/README.md"]
+      "sources": ["https://warcraftforever.games/talents/mage", "_reference/data/raidsim/patches/README.md"],
+      "spec": "Hybrid Fire/Frost"
     },
     {
       "id": "arcane-blast-raid",
@@ -1099,7 +1100,7 @@
         {"talent": "Fingers of Frost", "why": "The scorer's value in this build: +2.7% of its score (model frost-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model frost-leveling, profile leveling-st."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model frost-leveling, profile leveling-st.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list)."],
       "open_questions": ["A generated Arcane build: check it against the community's Arcane builds at launch."],
       "sources": ["https://talentsforever.com/mage"],
       "order": [
@@ -1174,7 +1175,7 @@
         {"talent": "Ice Block", "why": "The scorer's value in this build: +6.3% of its score (model frost-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model frost-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model frost-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list)."],
       "open_questions": ["A generated Arcane build: check it against the community's Arcane builds at launch."],
       "sources": ["https://talentsforever.com/mage"]
     },

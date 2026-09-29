@@ -679,7 +679,8 @@
       ],
       "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Smite 31/17/3`: 3 points Spirit Tap -> Shadow Focus.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
       "open_questions": ["Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts."],
-      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/priest/dps/presets.ts", "https://warcraftforever.games/talents/priest"]
+      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/priest/dps/presets.ts", "https://warcraftforever.games/talents/priest"],
+      "spec": "Hybrid Discipline/Holy"
     },
     {
       "id": "opt-shadow-dps-raid-dps",

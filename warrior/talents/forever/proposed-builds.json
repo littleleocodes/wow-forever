@@ -971,6 +971,104 @@
       "notes": ["Report: warrior/talents/forever/optimizer/prot-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "fury-pvp",
+      "name": "Fury — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Fury",
+      "generated": "2026-09-29",
+      "summary": "The best Fury pvp build with at least 30 points in Fury, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (fury-dw-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 2],
+          ["Deflection", 5],
+          ["Improved Charge", 2],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1],
+          ["Spearing Strike", 1],
+          ["Impale", 2]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Iron Will", 5],
+          ["Unbridled Wrath", 1],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Dual Wield Specialization", 1],
+          ["Raging Blows", 1],
+          ["Enrage", 5],
+          ["Improved Execute", 2],
+          ["Precision", 3],
+          ["Death Wish", 1],
+          ["Improved Intercept", 2],
+          ["Improved Berserker Rage", 2],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Bloodthirst", "why": "The scorer's value in this build: +11.8% of its score (model fury-dw-raid)."},
+        {"talent": "Death Wish", "why": "The scorer's value in this build: +11.3% of its score (model fury-dw-raid)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +11.0% of its score (model fury-dw-raid)."},
+        {"talent": "Improved Execute", "why": "The scorer's value in this build: +9.7% of its score (model fury-dw-raid)."},
+        {"talent": "Improved Tactical Mastery", "why": "The scorer's value in this build: +8.7% of its score (model fury-dw-raid)."},
+        {"talent": "Improved Berserker Rage", "why": "The scorer's value in this build: +8.5% of its score (model fury-dw-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model fury-dw-raid, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Fury build: check it against the community's Fury builds at launch."],
+      "sources": ["https://talentsforever.com/warrior"]
+    },
+    {
+      "id": "protection-pvp",
+      "name": "Protection — PvP (generated)",
+      "role": "tank",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-09-29",
+      "summary": "The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (prot-tank, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Arms": [],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Iron Will", 5],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Boundless Rage", 1],
+          ["Enrage", 5]
+        ],
+        "Protection": [
+          ["Shield Specialization", 5],
+          ["Improved Bloodrage", 2],
+          ["Improved Thunder Clap", 3],
+          ["Last Stand", 1],
+          ["Master of Defense", 2],
+          ["Improved Revenge", 3],
+          ["Improved Disarm", 3],
+          ["Vanguard", 1],
+          ["Improved Shield Wall", 1],
+          ["Concussion Blow", 1],
+          ["Bastion", 5],
+          ["Focused Rage", 3],
+          ["Shield Slam", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Focused Rage", "why": "The scorer's value in this build: +23.1% of its score (model prot-tank)."},
+        {"talent": "Shield Slam", "why": "The scorer's value in this build: +20.4% of its score (model prot-tank)."},
+        {"talent": "Improved Revenge", "why": "The scorer's value in this build: +17.4% of its score (model prot-tank)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +11.4% of its score (model prot-tank)."},
+        {"talent": "Bastion", "why": "The scorer's value in this build: +9.7% of its score (model prot-tank)."},
+        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +6.7% of its score (model prot-tank)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model prot-tank, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Protection build: check it against the community's Protection builds at launch."],
+      "sources": ["https://talentsforever.com/warrior"]
     }
   ]
 }

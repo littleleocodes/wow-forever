@@ -1,7 +1,7 @@
 """Fill every empty spec x mode slot with a generated build (2026-09-29, user request: "each class's 3 specs get a build for each of
 the 3 modes").
 
-    python _reference/data/spec_builds.py [classes] [--dry-run]
+    python _reference/data/spec_builds.py [classes] [--dry-run] [--fresh]
 
 For every (class, tree, mode) with no build (spec_modes.grid; healer and tank trees level as another spec, spec_modes.LEVEL_AS, so they
 get no leveling build) this writes a build `<tree>-<mode>` into proposed-builds.json:
@@ -127,9 +127,10 @@ def generate(cls, tree, mode, a, tmp):
         start = pathlib.Path(tmp) / f"{cls}-{SM.slug(tree)}-start.json"
         start.write_text(json.dumps({"id": "start", "allocation": to_allocation(cls, flat)}), encoding="utf-8")
         cand = paths.raidsim_dir(cls) / "candidates" / f"cand-{entry}-spec-{SM.slug(tree)}.json"
-        r = subprocess.run([sys.executable, str(HERE / "raidsim/talent_opt.py"), cls, "--spec", entry, "--start", str(start), "--setting", "dummy",
-                            "--min-tree", f"{tree}={SM.SPEC_POINTS}", "--write", str(cand)], capture_output=True, text=True)
-        print(r.stdout[-600:], r.stderr[-400:], flush=True)
+        if a.fresh or not cand.exists():   # the search takes 20-40 minutes: a re-run reuses its candidate unless --fresh
+            r = subprocess.run([sys.executable, str(HERE / "raidsim/talent_opt.py"), cls, "--spec", entry, "--start", str(start), "--setting", "dummy",
+                                "--min-tree", f"{tree}={SM.SPEC_POINTS}", "--write", str(cand)], capture_output=True, text=True)
+            print(r.stdout[-600:], r.stderr[-400:], flush=True)
         if cand.exists():
             c = json.load(open(cand, encoding="utf-8"))
             flat = {n: v for items in c["allocation"].values() for n, v in items if v}
@@ -169,6 +170,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--fresh", action="store_true", help="re-run the simulator talent searches instead of reusing their candidates")
     a = ap.parse_args()
     res = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
     for cls in a.classes or SM.CLASSES:
