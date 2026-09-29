@@ -25,26 +25,26 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Wake of Fire | Fire | 1 | +0.89% | manual |
 | Arcane Mind | Arcane | 5 | +0.34% | manual |
 | Arcane Concentration | Arcane | 2 | +0.21% | manual |
-| Arcane Meditation | Arcane | 4 | +0.19% | manual |
+| Arcane Meditation | Arcane | 4 | +0.20% | manual |
 | Master of Elements | Fire | 4 | +0.17% | manual |
 | Ice Barrier | Frost | 7 | +0.01% | manual |
-| Ice Block | Frost | 4 | +0.00% | manual |
+| Ice Block | Frost | 4 | +0.01% | manual |
+| Improved Channeling | Arcane | 1 | +0.01% | manual |
 | Magic Absorption | Arcane | 2 | +0.00% | manual |
-| Arcane Shielding | Arcane | 4 | +0.00% | manual |
-| Cold Snap | Frost | 5 | +0.00% | manual |
-| Wand Specialization | Arcane | 1 | +0.00% | manual |
-| Arcane Focus | Arcane | 1 | +0.00% | manual |
-| Improved Channeling | Arcane | 1 | +0.00% | manual |
 | Arcane Subtlety | Arcane | 2 | +0.00% | manual |
-| Arcane Resilience | Arcane | 2 | +0.00% | manual |
+| Burning Soul | Fire | 3 | +0.00% | manual |
+| Frost Channeling | Frost | 3 | +0.00% | manual |
+| Arcane Blast | Arcane | 3 | +0.00% | manual |
+| Missile Barrage | Arcane | 4 | +0.00% | manual |
+| Arcane Shielding | Arcane | 4 | +0.00% | manual |
 | Arcane Geometry | Arcane | 3 | +0.00% | manual |
-| Arcane Impact | Arcane | 3 | +0.00% | manual |
+| Flame Throwing | Fire | 2 | +0.00% | manual |
 
-## Optimized build: 14/32/5  score +185.26%  (dps x2.837, sustain x1.078, surv x1.020, utility +0.00%)
+## Optimized build: 13/33/5  score +185.32%  (dps x2.837, sustain x1.078, surv x1.010, utility +0.00%)
 
 ```
-  Arcane: Wand Specialization 2, Arcane Focus 4, Arcane Concentration 5, Magic Absorption 2, Arcane Geometry 1
-  Fire: Improved Fireball 5, Incineration 3, Wake of Fire 2, Ignite 5, Pyroblast 1, Improved Scorch 3, Hot Streak 1, Master of Elements 3, Critical Mass 3, Fire Power 5, Combustion 1
+  Arcane: Improved Channeling 5, Magic Absorption 1, Arcane Subtlety 2, Arcane Concentration 5
+  Fire: Improved Fireball 5, Incineration 3, Wake of Fire 2, Ignite 5, Pyroblast 1, Burning Soul 1, Improved Scorch 3, Hot Streak 1, Master of Elements 3, Critical Mass 3, Fire Power 5, Combustion 1
   Frost: Elemental Precision 5
 ```
 
@@ -56,15 +56,15 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Instability | Arcane 6 | 1/3 | +3.93% | no |
 | Presence of Mind | Arcane 5 | 1/1 | +2.84% | no |
 | Arcane Mind | Arcane 5 | 1/5 | +0.52% | no |
-| Arcane Meditation | Arcane 4 | 1/3 | +0.19% | no |
+| Arcane Meditation | Arcane 4 | 1/3 | +0.20% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
-| Ice Block | Frost 4 | 1/1 | +0.00% | no |
-| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | no |
-| Cold Snap | Frost 5 | 1/1 | +0.00% | no |
-| Arcane Focus | Arcane 1 | 5/5 | +0.00% | yes |
-| Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |
-| Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |
-| Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |
-| Arcane Geometry | Arcane 3 | 2/2 | +0.00% | yes |
-| Arcane Impact | Arcane 3 | 1/3 | +0.00% | yes |
+| Ice Block | Frost 4 | 1/1 | +0.01% | no |
+| Burning Soul | Fire 3 | 2/3 | +0.00% | yes |
+| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |
+| Magic Absorption | Arcane 2 | 2/2 | +0.00% | yes |
+| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |
+| Missile Barrage | Arcane 4 | 1/1 | +0.00% | no |
+| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |
+| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |
+| Arctic Reach | Frost 4 | 1/2 | +0.00% | no |
 

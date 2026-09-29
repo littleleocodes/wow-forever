@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `fire-raid` | 14/32/5 | 511 | 609 | 636 | 636 | 695 |
-| `opt-fire-raid-raid-dps` | 14/32/5 | 511 | 609 | 636 | 636 | 695 |
-| `opt-fire-raid-parse` | 14/32/5 | 511 | 609 | 636 | 636 | 695 |
+| `fire-raid` | 12/34/5 | 510 | 609 | 636 | 636 | 695 |
+| `opt-fire-raid-raid-dps` | 14/32/5 | 510 | 609 | 636 | 636 | 695 |
+| `opt-fire-raid-parse` | 13/33/5 | 510 | 609 | 636 | 636 | 695 |
 | sim preset: Fire DPS | - | 492 | 609 | 607 | 607 | 657 |
 | sim preset: Fire 0/35/16 | - | 483 | 574 | 609 | 609 | 682 |
 | sim preset: Arcane DPS | - | 378 | 468 | 462 | 462 | 501 |
@@ -26,9 +26,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `fire-raid` | 511 | +4% | +0% | -1% | +10% | +11% | 636 |
-| `opt-fire-raid-raid-dps` | 511 | +4% | +0% | -1% | +10% | +11% | 636 |
-| `opt-fire-raid-parse` | 511 | +4% | +0% | -1% | +10% | +11% | 636 |
+| `fire-raid` | 510 | +4% | +0% | -1% | +10% | +11% | 636 |
+| `opt-fire-raid-raid-dps` | 510 | +4% | +0% | -1% | +10% | +11% | 636 |
+| `opt-fire-raid-parse` | 510 | +4% | +0% | -1% | +10% | +11% | 636 |
 | sim preset: Fire DPS | 492 | +3% | +0% | -1% | +10% | +11% | 607 |
 | sim preset: Fire 0/35/16 | 483 | +7% | +0% | -1% | +11% | +9% | 609 |
 | sim preset: Arcane DPS | 378 | +5% | +0% | -1% | +10% | +9% | 462 |
@@ -44,9 +44,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `fire-raid` | 602 | 535 | 511 | 460 | 423 |
-| `opt-fire-raid-raid-dps` | 602 | 535 | 511 | 460 | 422 |
-| `opt-fire-raid-parse` | 602 | 535 | 511 | 460 | 422 |
+| `fire-raid` | 602 | 534 | 510 | 459 | 422 |
+| `opt-fire-raid-raid-dps` | 602 | 534 | 510 | 459 | 422 |
+| `opt-fire-raid-parse` | 602 | 534 | 510 | 459 | 422 |
 | sim preset: Fire DPS | 569 | 520 | 492 | 468 | 441 |
 | sim preset: Fire 0/35/16 | 593 | 520 | 483 | 408 | 364 |
 | sim preset: Arcane DPS | 426 | 407 | 378 | 382 | 361 |

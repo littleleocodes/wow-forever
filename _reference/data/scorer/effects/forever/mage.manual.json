@@ -1,7 +1,7 @@
 {
   "_doc": "Hand-entered Mage effects (Forever). See hunter.manual.json for the format. 'frozen share' = fraction of your casts that land on a Frozen target: single-target leveling ~30% (Nova once per fight), AoE grinding ~50% (Nova -> Blizzard), raid 0% unless Fingers of Frost provides it.",
   "Arcane Concentration": {
-    "note": "Clearcasting: 2%/rank chance per damaging spell that the next damage spell is free -> 10% of casts free at 5/5 = -10% mana on everything. (Parser mis-read the '100%' of the free cast.) Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.2% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, frost-raid, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 2.8% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Clearcasting: 2%/rank chance per damaging spell that the next damage spell is free -> 10% of casts free at 5/5 = -10% mana on everything. (Parser mis-read the '100%' of the free cast.) Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.2% time per kill in the simulator (scorer said 0.8% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (0.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -53,18 +53,18 @@
       {
         "channel": "mana_cost",
         "scope": ["all"],
-        "per_rank": 0.010398,
-        "values": [0.010398, 0.020795, 0.031193, 0.041591, 0.051987],
-        "modes": ["raid"],
-        "specs": ["fire-raid"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["all"],
         "per_rank": 0.006,
         "values": [0.006, 0.012, 0.018, 0.024, 0.03],
         "modes": ["raid"],
         "specs": ["frost-raid"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["all"],
+        "per_rank": 0.010398,
+        "values": [0.010398, 0.020795, 0.031193, 0.041591, 0.051987],
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
       }
     ]
   },
@@ -671,7 +671,7 @@
     ]
   },
   "Improved Scorch": {
-    "note": "Scorch applies +3% Fire damage taken per stack, 5 stacks, 33%/rank chance (100% at 3/3). Raid: kept at 5 stacks = +15% -> 5%/rank. Leveling: a mob dies before the stacks are worth the Scorches -> 1.5%/rank. Fight lab calibration (2026-09-25, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (1.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 52.5% DPS in the simulator (scorer said 52.0% on the same scale); already within tolerance, raid effects split off unchanged (52.0%). Other modes unchanged.",
+    "note": "Scorch applies +3% Fire damage taken per stack, 5 stacks, 33%/rank chance (100% at 3/3). Raid: kept at 5 stacks = +15% -> 5%/rank. Leveling: a mob dies before the stacks are worth the Scorches -> 1.5%/rank. Fight lab calibration (2026-09-25, levels 30,60): removing it costs 1.1% time per kill in the simulator (scorer said 3.8% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (1.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 52.6% DPS in the simulator (scorer said 52.0% on the same scale); already within tolerance, raid effects split off unchanged (52.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1865,7 +1865,7 @@
     ]
   },
   "Elemental Precision": {
-    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.2% time per kill in the simulator (scorer said 7.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, frost-raid, training dummy): removing it costs 6.1% DPS in the simulator (scorer said 5.2% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "note": "+1%/rank Frost/Fire hit (parsed). AoE grinding: 'you will need to avoid having even a single resist in a pack of 8+ enemies' - a resisted mob is a mob in melee -> +3%/rank surv in leveling-aoe. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 7.2% time per kill in the simulator (scorer said 7.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 6.8% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -1961,7 +1961,7 @@
         "per_rank": 0.01,
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "modes": ["raid"],
-        "specs": ["fire-raid"]
+        "specs": ["frost-raid"]
       },
       {
         "channel": "hit",
@@ -1969,7 +1969,7 @@
         "per_rank": 0.01,
         "values": [0.01, 0.02, 0.03, 0.04, 0.05],
         "modes": ["raid"],
-        "specs": ["frost-raid"]
+        "specs": ["fire-raid"]
       }
     ]
   },
@@ -2356,7 +2356,7 @@
     ]
   },
   "Improved Fireball": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-25, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 6.5% on the same scale); leveling-st/solo-60 values scaled x0.28 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 7.0% DPS in the simulator (scorer said 6.8% on the same scale); already within tolerance, raid effects split off unchanged (6.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-25, levels 30,60): removing it costs 1.6% time per kill in the simulator (scorer said 6.5% on the same scale); leveling-st/solo-60 values scaled x0.28 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 7.1% DPS in the simulator (scorer said 6.8% on the same scale); already within tolerance, raid effects split off unchanged (6.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -2488,7 +2488,7 @@
     ]
   },
   "Incineration": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.4% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, frost-raid, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.4% time per kill in the simulator (scorer said 1.3% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (1.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2549,23 +2549,23 @@
       {
         "channel": "crit",
         "scope": ["ability:Fire Blast", "ability:Ice Lance", "ability:Arcane Blast", "ability:Scorch"],
-        "values": [0.074692, 0.149383, 0.224075],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["fire-raid"]
-      },
-      {
-        "channel": "crit",
-        "scope": ["ability:Fire Blast", "ability:Ice Lance", "ability:Arcane Blast", "ability:Scorch"],
         "values": [0.02, 0.04, 0.06],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["frost-raid"]
+      },
+      {
+        "channel": "crit",
+        "scope": ["ability:Fire Blast", "ability:Ice Lance", "ability:Arcane Blast", "ability:Scorch"],
+        "values": [0.074692, 0.149383, 0.224075],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
       }
     ]
   },
   "Arcane Meditation": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 4.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x1.39, the cap on effect size stops short of the target (1.9%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, frost-raid, training dummy): removing it costs 2.0% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 4.6% time per kill in the simulator (scorer said 2.1% on the same scale); leveling-st/solo-60 values scaled x1.39, the cap on effect size stops short of the target (1.9%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fire-raid, training dummy): removing it costs 2.8% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2626,18 +2626,18 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.024132, 0.046846, 0.070978],
-        "source": "parsed",
-        "modes": ["raid"],
-        "specs": ["fire-raid"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.017461, 0.033894, 0.051355],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["frost-raid"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.024132, 0.046846, 0.070978],
+        "source": "parsed",
+        "modes": ["raid"],
+        "specs": ["fire-raid"]
       }
     ]
   },

@@ -5,7 +5,7 @@
    "spec": "frost-leveling",
    "hand": "leveling-frost",
    "opt": "opt-frost-leveling-leveling-st",
-   "started": "2026-09-29T13:44:21",
+   "started": "2026-09-29T21:21:31",
    "steps": [
     "raid",
     "adopt"
@@ -21,7 +21,7 @@
      "top": [
       [
        "frost-fingers-of-frost-raid",
-       581.5
+       582.0
       ],
       [
        "cand-frost-raid-r1",
@@ -32,7 +32,7 @@
        578.6
       ],
       [
-       "opt-frost-raid-raid-dps",
+       "cand-frost-raid-hand-2026-09-28",
        561.6
       ]
      ],
@@ -40,52 +40,52 @@
      "adopted": null,
      "environments": {
       "frost-arcane-power-raid": {
-       "dummy": 536.0729593519612,
-       "dummy60": 608.5211800028108,
-       "ladder-mana": 535.3907062143321,
-       "ladder-armor": 535.3907062143321,
-       "ladder-physical": 529.2889528314447,
-       "ladder-spell": 582.21784811459,
-       "raid": 612.4821710930328,
-       "curve60": 570.3686886937671,
-       "curve120": 548.2364936910594,
-       "curve180": 536.0729593519612,
-       "curve240": 545.524994832595,
-       "curve360": 530.9347191688928,
-       "max": 612.4821710930328,
-       "max60": 651.8648003053253
+       "dummy": 545.1823702476637,
+       "dummy60": 615.8442902834315,
+       "ladder-mana": 544.9364152652015,
+       "ladder-armor": 544.9364152652015,
+       "ladder-physical": 538.6903792799626,
+       "ladder-spell": 592.5594172079595,
+       "raid": 623.5245293891248,
+       "curve60": 580.2660632465562,
+       "curve120": 558.2523861697946,
+       "curve180": 545.1823702476637,
+       "curve240": 548.6703571576018,
+       "curve360": 534.7199530458569,
+       "max": 623.5245293891248,
+       "max60": 662.7554899503893
       },
       "frost-winters-chill-raid": {
-       "dummy": 474.9320491188266,
-       "dummy60": 531.1860681405583,
-       "ladder-mana": 486.00828364028587,
-       "ladder-armor": 486.00828364028587,
-       "ladder-physical": 480.94363736677263,
-       "ladder-spell": 529.0380011034524,
-       "raid": 555.4038174152155,
-       "curve60": 487.95062423388686,
-       "curve120": 489.9614175950945,
-       "curve180": 474.9320491188266,
-       "curve240": 473.8165639674126,
-       "curve360": 462.49104149133615,
-       "max": 555.4038174152155,
-       "max60": 557.9825456385511
+       "dummy": 517.0695358391538,
+       "dummy60": 582.3741021788545,
+       "ladder-mana": 516.0566936905007,
+       "ladder-armor": 516.0566936905007,
+       "ladder-physical": 509.6707846282667,
+       "ladder-spell": 560.6378630910947,
+       "raid": 587.1098172144247,
+       "curve60": 515.6165741623446,
+       "curve120": 520.6555271276724,
+       "curve180": 517.0695358391538,
+       "curve240": 524.589922856283,
+       "curve360": 517.3873069678427,
+       "max": 587.1098172144247,
+       "max60": 586.1235347981051
       },
       "frost-fingers-of-frost-raid": {
-       "dummy": 581.5435235506326,
-       "dummy60": 661.5066402419565,
-       "ladder-mana": 581.5564498133607,
-       "ladder-armor": 581.5564498133607,
-       "ladder-physical": 574.5822827447994,
-       "ladder-spell": 632.0405110192801,
-       "raid": 661.7529108216929,
-       "curve60": 587.1267023673385,
-       "curve120": 587.4902231341634,
-       "curve180": 581.5435235506326,
-       "curve240": 582.076378179037,
-       "curve360": 573.0765917969261,
-       "max": 661.7529108216929,
-       "max60": 665.6981702368465
+       "dummy": 582.0370824727061,
+       "dummy60": 662.1149852119662,
+       "ladder-mana": 581.2195646376257,
+       "ladder-armor": 581.2195646376257,
+       "ladder-physical": 575.1677609413762,
+       "ladder-spell": 632.6845370355142,
+       "raid": 662.1057077836815,
+       "curve60": 586.917623027572,
+       "curve120": 586.9816679770826,
+       "curve180": 582.0370824727061,
+       "curve240": 585.7748093586379,
+       "curve360": 574.6894434352623,
+       "max": 662.1057077836815,
+       "max60": 665.9781397258062
       },
       "opt-frost-raid-raid-dps": {
        "dummy": 581.5435235506326,
@@ -120,20 +120,20 @@
        "max60": 640.833507406775
       },
       "opt-frost-raid-parse": {
-       "dummy": 542.5828321092754,
-       "dummy60": 614.3566433573855,
-       "ladder-mana": 565.7531719296873,
-       "ladder-armor": 565.7531719296873,
-       "ladder-physical": 559.8702622731885,
-       "ladder-spell": 615.8572885005076,
-       "raid": 643.6252638914,
-       "curve60": 566.9084076102708,
-       "curve120": 568.4556982481065,
-       "curve180": 542.5828321092754,
-       "curve240": 552.9444075047002,
-       "curve360": 511.62044924088013,
-       "max": 643.6252638914,
-       "max60": 647.9018485439294
+       "dummy": 546.2646129416519,
+       "dummy60": 619.648223663009,
+       "ladder-mana": 567.3147391597658,
+       "ladder-armor": 567.3147391597658,
+       "ladder-physical": 561.1162458990248,
+       "ladder-spell": 617.2278704889279,
+       "raid": 645.5741326150986,
+       "curve60": 559.8420247792344,
+       "curve120": 568.4084205180992,
+       "curve180": 546.2646129416519,
+       "curve240": 553.3391821650937,
+       "curve360": 524.285272966405,
+       "max": 645.5741326150986,
+       "max60": 640.8234827982885
       },
       "sim preset: Frost DPS": {
        "dummy": 552.5617500240456,
@@ -242,70 +242,70 @@
      ],
      "top": [
       [
-       "fire-raid",
-       510.7
-      ],
-      [
        "cand-fire-raid-r5",
        510.7
       ],
       [
-       "opt-fire-raid-raid-dps",
+       "cand-fire-raid-r1",
        510.6
       ],
       [
-       "cand-fire-raid-r1",
+       "cand-fire-raid-r4",
        510.6
+      ],
+      [
+       "cand-fire-raid-r2",
+       510.5
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "fire-raid": {
-       "dummy": 510.6731593442115,
-       "dummy60": 609.3537535946115,
-       "ladder-mana": 529.1549248493752,
-       "ladder-armor": 529.1549248493752,
-       "ladder-physical": 525.4898119954474,
-       "ladder-spell": 578.0387931949923,
+       "dummy": 510.269216213846,
+       "dummy60": 609.0879379402137,
+       "ladder-mana": 529.1442670930834,
+       "ladder-armor": 529.1442670930834,
+       "ladder-physical": 525.486509487477,
+       "ladder-spell": 578.0351604362248,
        "raid": 636.0111047140947,
        "curve60": 602.3122197825601,
-       "curve120": 534.5264201053753,
-       "curve180": 510.6731593442115,
-       "curve240": 460.38162122881425,
-       "curve360": 422.5259000873158,
+       "curve120": 534.4024471501177,
+       "curve180": 510.269216213846,
+       "curve240": 459.45120273195914,
+       "curve360": 421.55582322954626,
        "max": 636.0111047140947,
        "max60": 695.0019434009275
       },
       "opt-fire-raid-raid-dps": {
-       "dummy": 510.64013920755156,
-       "dummy60": 609.3537535946115,
-       "ladder-mana": 529.1512936728845,
-       "ladder-armor": 529.1512936728845,
-       "ladder-physical": 525.4886083063456,
-       "ladder-spell": 578.0374691369802,
+       "dummy": 510.269216213846,
+       "dummy60": 609.0879379402137,
+       "ladder-mana": 529.1442670930834,
+       "ladder-armor": 529.1442670930834,
+       "ladder-physical": 525.486509487477,
+       "ladder-spell": 578.0351604362248,
        "raid": 636.0111047140947,
        "curve60": 602.3122197825601,
-       "curve120": 534.5207905764753,
-       "curve180": 510.64013920755156,
-       "curve240": 460.2521952335982,
-       "curve360": 422.3685393453977,
+       "curve120": 534.4024471501177,
+       "curve180": 510.269216213846,
+       "curve240": 459.45120273195914,
+       "curve360": 421.55582322954626,
        "max": 636.0111047140947,
        "max60": 695.0019434009275
       },
       "opt-fire-raid-parse": {
-       "dummy": 510.64013920755156,
-       "dummy60": 609.3537535946115,
-       "ladder-mana": 529.1512936728845,
-       "ladder-armor": 529.1512936728845,
-       "ladder-physical": 525.4886083063456,
-       "ladder-spell": 578.0374691369802,
+       "dummy": 510.269216213846,
+       "dummy60": 609.0879379402137,
+       "ladder-mana": 529.1442670930834,
+       "ladder-armor": 529.1442670930834,
+       "ladder-physical": 525.486509487477,
+       "ladder-spell": 578.0351604362248,
        "raid": 636.0111047140947,
        "curve60": 602.3122197825601,
-       "curve120": 534.5207905764753,
-       "curve180": 510.64013920755156,
-       "curve240": 460.2521952335982,
-       "curve360": 422.3685393453977,
+       "curve120": 534.4024471501177,
+       "curve180": 510.269216213846,
+       "curve240": 459.45120273195914,
+       "curve360": 421.55582322954626,
        "max": 636.0111047140947,
        "max60": 695.0019434009275
       },
@@ -408,50 +408,50 @@
      }
     }
    },
-   "seconds": 374,
+   "seconds": 239,
    "log": [
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "mage frost-raid: cand-frost-raid-preset-frost-dps.json, cand-frost-raid-preset-frost-14-0-37.json"
+      "mage frost-raid: cand-frost-raid-preset-frost-dps.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py mage --spec frost-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 57,
+     "seconds": 23,
      "tail": [
-      "Ice Block                       0.0%      0.0%     0.0%   1.00   noise",
       "Improved Cone of Cold           0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
       "Burning Soul                    0.0%      0.0%     0.0%   1.00   noise",
       "Flame Throwing                  0.0%      0.0%     0.0%   1.00   noise",
       "Improved Fireball               0.0%      0.0%     0.0%   1.00   noise",
       "Wake of Fire                    0.0%      0.0%     0.0%   1.00   noise",
+      "Arcane Geometry                 0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Counterspell           0.0%      0.0%     0.0%   1.00   noise",
       "Magic Absorption                0.0%      0.0%     0.0%   1.00   noise",
-      "Frostbite                       0.0%      0.0%     0.0%   1.00   noise",
       "Arcane Shielding                0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Channeling             0.0%      0.0%     0.0%   1.00   noise",
       "Ignite                          0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/mage.manual.json (15 entries, 3 fitted) and mage/research/raid/raidsim/frost-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/mage.manual.json (16 entries, 1 fitted) and mage/research/raid/raidsim/frost-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py mage --spec frost-raid --profile raid-dps --write --export --seed frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-14-0-37.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py mage --spec frost-raid --profile raid-dps --write --export --seed frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json",
      "rc": 0,
-     "seconds": 62,
+     "seconds": 64,
      "tail": [
-      "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | yes |",
-      "| Cold Snap | Frost 5 | 1/1 | +0.00% | yes |",
-      "| Wand Specialization | Arcane 1 | 1/2 | +0.00% | yes |",
-      "| Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |",
+      "| Master of Elements | Fire 4 | 1/3 | +0.01% | no |",
+      "| Improved Channeling | Arcane 1 | 3/5 | +0.00% | yes |",
+      "| Ice Block | Frost 4 | 1/1 | +0.00% | yes |",
       "| Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Magic Absorption | Arcane 2 | 1/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | no |",
       "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Missile Barrage | Arcane 4 | 1/1 | +0.00% | yes |",
       "",
       "exported opt-frost-raid-raid-dps -> mage/research/talents/forever/proposed-builds.json",
       "",
@@ -460,41 +460,41 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-from-arcane-power.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-27.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-14-0-37.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r10.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r6.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r7.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r8.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r9.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-from-arcane-power.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-27.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r10.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r11.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r6.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r7.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r8.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 6,
+     "seconds": 3,
      "tail": [
-      "  cand-frost-raid-hand-2026-09-27             14/0/37  DPS    537.7 ±  39.0  threat      326  oom   0.0s  scorer +67.8%",
-      "  cand-frost-raid-from-arcane-power           33/0/18  DPS    537.4 ±  34.3  threat      518  oom   0.0s  scorer +60.9%",
+      "  cand-frost-raid-r8                          16/3/32  DPS    539.0 ±  38.8  threat      459  oom   0.0s  scorer +67.4%",
+      "  cand-frost-raid-hand-2026-09-27             14/0/37  DPS    537.7 ±  39.0  threat      326  oom   0.0s  scorer +74.9%",
+      "  cand-frost-raid-from-arcane-power           33/0/18  DPS    537.4 ±  34.3  threat      518  oom   0.0s  scorer +67.0%",
       "  sim preset: Frost 14/0/37                            DPS    537.0 ±  38.4  threat      460  oom   0.0s",
-      "  frost-arcane-power-raid                     31/0/20  DPS    536.1 ±  30.1  threat      434  oom   0.0s  scorer +67.2%",
-      "  cand-frost-raid-r3                          27/0/24  DPS    521.6 ±  38.0  threat      444  oom   0.0s  scorer +69.7%",
-      "  frost-winters-chill-raid                    17/0/34  DPS    474.9 ±  32.3  threat      351  oom   0.0s  scorer +61.1%",
+      "  cand-frost-raid-r3                          27/0/24  DPS    521.6 ±  38.0  threat      444  oom   0.0s  scorer +73.7%",
+      "  frost-winters-chill-raid                    20/0/31  DPS    517.1 ±  28.7  threat      413  oom   0.0s  scorer +66.6%",
       "  sim preset: Arcane 35/0/16                           DPS    467.8 ±  29.7  threat      378  oom   0.0s",
       "  sim preset: Arcane DPS                               DPS    408.5 ±  27.5  threat      392  oom   0.0s",
       "  sim preset: Fire 0/35/16                             DPS    373.5 ±  23.0  threat      281  oom   0.0s",
       "  sim preset: Fire DPS                                 DPS    314.5 ±  18.9  threat      334  oom   0.0s",
-      "  damage shares of frost-arcane-power-raid: Frostbolt 76%, Arcane Missiles 24% | model sources: frostbolt 76%, missiles 24% (unmatched 0%)",
+      "  damage shares of frost-arcane-power-raid: Frostbolt 75%, Arcane Missiles 25% | model sources: frostbolt 75%, missiles 25% (unmatched 0%)",
       "wrote mage/research/raid/raidsim/frost-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-from-arcane-power.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-27.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-14-0-37.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r10.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r6.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r7.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r8.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r9.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-from-arcane-power.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-27.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-preset-frost-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r10.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r11.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r6.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r7.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r8.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-frost-raid-r9.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 6,
+     "seconds": 3,
      "tail": [
-      "  cand-frost-raid-hand-2026-09-27             14/0/37  DPS    537.7 ±  39.0  threat      326  oom   0.0s  scorer +67.8%",
-      "  cand-frost-raid-from-arcane-power           33/0/18  DPS    537.4 ±  34.3  threat      518  oom   0.0s  scorer +60.9%",
+      "  cand-frost-raid-r8                          16/3/32  DPS    539.0 ±  38.8  threat      459  oom   0.0s  scorer +67.4%",
+      "  cand-frost-raid-hand-2026-09-27             14/0/37  DPS    537.7 ±  39.0  threat      326  oom   0.0s  scorer +74.9%",
+      "  cand-frost-raid-from-arcane-power           33/0/18  DPS    537.4 ±  34.3  threat      518  oom   0.0s  scorer +67.0%",
       "  sim preset: Frost 14/0/37                            DPS    537.0 ±  38.4  threat      460  oom   0.0s",
-      "  frost-arcane-power-raid                     31/0/20  DPS    536.1 ±  30.1  threat      434  oom   0.0s  scorer +67.2%",
-      "  cand-frost-raid-r3                          27/0/24  DPS    521.6 ±  38.0  threat      444  oom   0.0s  scorer +69.7%",
-      "  frost-winters-chill-raid                    17/0/34  DPS    474.9 ±  32.3  threat      351  oom   0.0s  scorer +61.1%",
+      "  cand-frost-raid-r3                          27/0/24  DPS    521.6 ±  38.0  threat      444  oom   0.0s  scorer +73.7%",
+      "  frost-winters-chill-raid                    20/0/31  DPS    517.1 ±  28.7  threat      413  oom   0.0s  scorer +66.6%",
       "  sim preset: Arcane 35/0/16                           DPS    467.8 ±  29.7  threat      378  oom   0.0s",
       "  sim preset: Arcane DPS                               DPS    408.5 ±  27.5  threat      392  oom   0.0s",
       "  sim preset: Fire 0/35/16                             DPS    373.5 ±  23.0  threat      281  oom   0.0s",
       "  sim preset: Fire DPS                                 DPS    314.5 ±  18.9  threat      334  oom   0.0s",
-      "  damage shares of frost-arcane-power-raid: Frostbolt 76%, Arcane Missiles 24% | model sources: frostbolt 76%, missiles 24% (unmatched 0%)",
+      "  damage shares of frost-arcane-power-raid: Frostbolt 75%, Arcane Missiles 25% | model sources: frostbolt 75%, missiles 25% (unmatched 0%)",
       "wrote mage/research/raid/raidsim/frost-raid.md"
      ],
      "stderr": []
@@ -502,16 +502,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py mage --spec frost-raid --profile parse --write --export --seed frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid",
      "rc": 0,
-     "seconds": 67,
+     "seconds": 49,
      "tail": [
-      "| Master of Elements | Fire 4 | 1/3 | +0.00% | no |",
-      "| Cold Snap | Frost 5 | 1/1 | +0.00% | yes |",
-      "| Wand Specialization | Arcane 1 | 1/2 | +0.00% | yes |",
-      "| Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |",
+      "| Ice Block | Frost 4 | 1/1 | +0.01% | yes |",
+      "| Improved Channeling | Arcane 1 | 3/5 | +0.00% | yes |",
       "| Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Magic Absorption | Arcane 2 | 1/2 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | no |",
       "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Missile Barrage | Arcane 4 | 1/1 | +0.00% | yes |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
       "",
       "exported opt-frost-raid-parse -> mage/research/talents/forever/proposed-builds.json",
       "",
@@ -522,15 +522,15 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec frost-raid --env environments --builds frost-arcane-power-raid frost-winters-chill-raid frost-fingers-of-frost-raid opt-frost-raid-raid-dps opt-frost-raid-raid-dps-extwc opt-frost-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 52,
+     "seconds": 20,
      "tail": [
       "  opt-frost-raid-raid-dps                     22/0/29  dummy   581.5  dummy60   661.5  ladder-mana   581.6  ladder-armor   581.6  ladder-physical   574.6  ladder-spell   632.0  raid   661.8  curve60   587.1  curve120   587.5  curve180   581.5  curve240   582.1  curve360   573.1  max   661.8  max60   665.7",
       "  sim preset: Frost DPS                                dummy   552.6  dummy60   623.3  ladder-mana   554.7  ladder-armor   554.7  ladder-physical   548.5  ladder-spell   603.3  raid   631.7  curve60   549.2  curve120   557.0  curve180   552.6  curve240   544.6  curve360   544.2  max   631.7  max60   626.8",
-      "  opt-frost-raid-parse                        21/0/30  dummy   542.6  dummy60   614.4  ladder-mana   565.8  ladder-armor   565.8  ladder-physical   559.9  ladder-spell   615.9  raid   643.6  curve60   566.9  curve120   568.5  curve180   542.6  curve240   552.9  curve360   511.6  max   643.6  max60   647.9",
+      "  opt-frost-raid-parse                        16/3/32  dummy   546.3  dummy60   619.6  ladder-mana   567.3  ladder-armor   567.3  ladder-physical   561.1  ladder-spell   617.2  raid   645.6  curve60   559.8  curve120   568.4  curve180   546.3  curve240   553.3  curve360   524.3  max   645.6  max60   640.8",
+      "  frost-arcane-power-raid                     33/0/18  dummy   545.2  dummy60   615.8  ladder-mana   544.9  ladder-armor   544.9  ladder-physical   538.7  ladder-spell   592.6  raid   623.5  curve60   580.3  curve120   558.3  curve180   545.2  curve240   548.7  curve360   534.7  max   623.5  max60   662.8",
       "  opt-frost-raid-raid-dps-extwc               1/13/37  dummy   541.5  dummy60   611.6  ladder-mana   567.4  ladder-armor   567.4  ladder-physical   560.6  ladder-spell   616.7  raid   646.3  curve60   561.4  curve120   569.7  curve180   541.5  curve240   532.8  curve360   460.3  max   646.3  max60   640.8",
       "  sim preset: Frost 14/0/37                            dummy   537.0  dummy60   605.7  ladder-mana   562.1  ladder-armor   562.1  ladder-physical   556.8  ladder-spell   612.4  raid   640.6  curve60   556.3  curve120   558.8  curve180   537.0  curve240   495.4  curve360   428.6  max   640.6  max60   635.7",
-      "  frost-arcane-power-raid                     31/0/20  dummy   536.1  dummy60   608.5  ladder-mana   535.4  ladder-armor   535.4  ladder-physical   529.3  ladder-spell   582.2  raid   612.5  curve60   570.4  curve120   548.2  curve180   536.1  curve240   545.5  curve360   530.9  max   612.5  max60   651.9",
-      "  frost-winters-chill-raid                    17/0/34  dummy   474.9  dummy60   531.2  ladder-mana   486.0  ladder-armor   486.0  ladder-physical   480.9  ladder-spell   529.0  raid   555.4  curve60   488.0  curve120   490.0  curve180   474.9  curve240   473.8  curve360   462.5  max   555.4  max60   558.0",
+      "  frost-winters-chill-raid                    20/0/31  dummy   517.1  dummy60   582.4  ladder-mana   516.1  ladder-armor   516.1  ladder-physical   509.7  ladder-spell   560.6  raid   587.1  curve60   515.6  curve120   520.7  curve180   517.1  curve240   524.6  curve360   517.4  max   587.1  max60   586.1",
       "  sim preset: Arcane 35/0/16                           dummy   467.8  dummy60   528.6  ladder-mana   467.8  ladder-armor   467.8  ladder-physical   462.7  ladder-spell   509.0  raid   534.8  curve60   500.2  curve120   478.5  curve180   467.8  curve240   479.9  curve360   470.8  max   534.8  max60   571.8",
       "  sim preset: Arcane DPS                               dummy   408.5  dummy60   475.9  ladder-mana   408.9  ladder-armor   408.9  ladder-physical   402.7  ladder-spell   443.0  raid   462.3  curve60   437.4  curve120   418.3  curve180   408.5  curve240   419.4  curve360   410.7  max   462.3  max60   495.4",
       "  sim preset: Fire 0/35/16                             dummy   373.5  dummy60   415.5  ladder-mana   373.6  ladder-armor   373.6  ladder-physical   370.0  ladder-spell   407.1  raid   427.7  curve60   378.3  curve120   377.7  curve180   373.5  curve240   359.5  curve360   361.8  max   427.7  max60   434.2",
@@ -551,11 +551,11 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py mage --spec fire-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 41,
+     "seconds": 16,
      "tail": [
-      "Improved Channeling             0.0%      0.0%     0.0%   1.00   noise",
-      "Arcane Subtlety                 0.0%      0.0%     0.0%   1.00   noise",
-      "Burning Soul                    0.0%      0.0%     0.0%   1.00   noise",
+      "Magic Absorption                0.0%      0.0%     0.0%   1.00   noise",
+      "Flame Throwing                  0.0%      0.0%     0.0%   1.00   noise",
+      "Wand Specialization             0.0%      0.0%     0.0%   1.00   noise",
       "Blast Wave                      0.0%      0.0%     0.0%   1.00   noise",
       "Frost Channeling                0.0%      0.0%     0.0%   1.00   noise",
       "Ice Shards                      0.0%      0.0%     0.0%   1.00   noise",
@@ -564,23 +564,23 @@
       "Arcane Geometry                 0.0%      0.0%     0.0%   1.00   noise",
       "Permafrost                      0.0%      0.0%     0.0%   1.00   noise",
       "Shatter                         0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/mage.manual.json (13 entries, 3 fitted) and mage/research/raid/raidsim/fire-raid-calibration.json"
+      "wrote _reference/data/scorer/effects/forever/mage.manual.json (13 entries, 0 fitted) and mage/research/raid/raidsim/fire-raid-calibration.json"
      ],
      "stderr": []
     },
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py mage --spec fire-raid --profile raid-dps --write --export --seed fire-raid /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-0-35-16.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-dps.json",
      "rc": 0,
-     "seconds": 20,
+     "seconds": 23,
      "tail": [
+      "| Burning Soul | Fire 3 | 1/3 | +0.00% | yes |",
+      "| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Missile Barrage | Arcane 4 | 1/1 | +0.00% | no |",
       "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | no |",
-      "| Cold Snap | Frost 5 | 1/1 | +0.00% | no |",
-      "| Arcane Focus | Arcane 1 | 5/5 | +0.00% | yes |",
-      "| Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |",
-      "| Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Geometry | Arcane 3 | 2/2 | +0.00% | yes |",
-      "| Arcane Impact | Arcane 3 | 1/3 | +0.00% | yes |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |",
+      "| Arctic Reach | Frost 4 | 1/2 | +0.00% | no |",
       "",
       "exported opt-fire-raid-raid-dps -> mage/research/talents/forever/proposed-builds.json",
       "",
@@ -589,12 +589,12 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec fire-raid --builds fire-raid opt-fire-raid-raid-dps /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-0-35-16.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r6.json --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec fire-raid --builds fire-raid opt-fire-raid-raid-dps /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-hand-2026-09-28.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-0-35-16.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-preset-fire-dps.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r1.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r2.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r3.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r4.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r5.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r6.json /home/user/wow-forever/mage/research/raid/raidsim/candidates/cand-fire-raid-r7.json --iterations 3000 --write",
      "rc": 0,
-     "seconds": 5,
+     "seconds": 2,
      "tail": [
-      "  cand-fire-raid-r2                           11/35/5  DPS    510.5 ±  38.6  threat      403  oom   1.3s  scorer +210.5%",
       "  cand-fire-raid-r6                           13/33/5  DPS    510.3 ±  38.8  threat      538  oom   1.2s  scorer +210.5%",
+      "  cand-fire-raid-r7                           14/32/5  DPS    510.3 ±  38.8  threat      536  oom   1.2s  scorer +210.6%",
       "  cand-fire-raid-hand-2026-09-28              12/34/5  DPS    496.0 ±  38.0  threat      390  oom   1.3s  scorer +202.6%",
       "  sim preset: Fire DPS                                 DPS    492.1 ±  40.0  threat      519  oom   0.2s",
       "  sim preset: Fire 0/35/16                             DPS    482.6 ±  36.3  threat      425  oom   2.8s",
@@ -611,16 +611,16 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py mage --spec fire-raid --profile parse --write --export --seed fire-raid",
      "rc": 0,
-     "seconds": 14,
+     "seconds": 18,
      "tail": [
-      "| Arcane Shielding | Arcane 4 | 1/2 | +0.00% | no |",
-      "| Cold Snap | Frost 5 | 1/1 | +0.00% | no |",
-      "| Arcane Focus | Arcane 1 | 5/5 | +0.00% | yes |",
-      "| Improved Channeling | Arcane 1 | 1/5 | +0.00% | yes |",
-      "| Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Resilience | Arcane 2 | 1/2 | +0.00% | yes |",
-      "| Arcane Geometry | Arcane 3 | 2/2 | +0.00% | yes |",
-      "| Arcane Impact | Arcane 3 | 1/3 | +0.00% | yes |",
+      "| Burning Soul | Fire 3 | 2/3 | +0.00% | yes |",
+      "| Frost Channeling | Frost 3 | 1/3 | +0.00% | no |",
+      "| Magic Absorption | Arcane 2 | 2/2 | +0.00% | yes |",
+      "| Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |",
+      "| Missile Barrage | Arcane 4 | 1/1 | +0.00% | no |",
+      "| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |",
+      "| Flame Throwing | Fire 2 | 1/2 | +0.00% | yes |",
+      "| Arctic Reach | Frost 4 | 1/2 | +0.00% | no |",
       "",
       "exported opt-fire-raid-parse -> mage/research/talents/forever/proposed-builds.json",
       "",
@@ -631,12 +631,12 @@
     {
      "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py mage --spec fire-raid --env environments --builds fire-raid opt-fire-raid-raid-dps opt-fire-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 42,
+     "seconds": 19,
      "tail": [
       "== mage fire-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
-      "  fire-raid                                   14/32/5  dummy   510.7  dummy60   609.4  ladder-mana   529.2  ladder-armor   529.2  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.5  curve180   510.7  curve240   460.4  curve360   422.5  max   636.0  max60   695.0",
-      "  opt-fire-raid-raid-dps                      14/32/5  dummy   510.6  dummy60   609.4  ladder-mana   529.2  ladder-armor   529.2  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.5  curve180   510.6  curve240   460.3  curve360   422.4  max   636.0  max60   695.0",
-      "  opt-fire-raid-parse                         14/32/5  dummy   510.6  dummy60   609.4  ladder-mana   529.2  ladder-armor   529.2  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.5  curve180   510.6  curve240   460.3  curve360   422.4  max   636.0  max60   695.0",
+      "  fire-raid                                   12/34/5  dummy   510.3  dummy60   609.1  ladder-mana   529.1  ladder-armor   529.1  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.4  curve180   510.3  curve240   459.5  curve360   421.6  max   636.0  max60   695.0",
+      "  opt-fire-raid-raid-dps                      14/32/5  dummy   510.3  dummy60   609.1  ladder-mana   529.1  ladder-armor   529.1  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.4  curve180   510.3  curve240   459.5  curve360   421.6  max   636.0  max60   695.0",
+      "  opt-fire-raid-parse                         13/33/5  dummy   510.3  dummy60   609.1  ladder-mana   529.1  ladder-armor   529.1  ladder-physical   525.5  ladder-spell   578.0  raid   636.0  curve60   602.3  curve120   534.4  curve180   510.3  curve240   459.5  curve360   421.6  max   636.0  max60   695.0",
       "  sim preset: Fire DPS                                 dummy   492.1  dummy60   609.0  ladder-mana   505.9  ladder-armor   505.9  ladder-physical   502.5  ladder-spell   552.7  raid   607.4  curve60   568.7  curve120   519.7  curve180   492.1  curve240   468.4  curve360   440.6  max   607.4  max60   656.5",
       "  sim preset: Fire 0/35/16                             dummy   482.6  dummy60   574.0  ladder-mana   515.9  ladder-armor   515.9  ladder-physical   512.6  ladder-spell   563.9  raid   609.0  curve60   593.3  curve120   519.5  curve180   482.6  curve240   407.6  curve360   364.4  max   609.0  max60   681.8",
       "  sim preset: Arcane DPS                               dummy   377.8  dummy60   468.2  ladder-mana   395.0  ladder-armor   395.0  ladder-physical   389.9  ladder-spell   428.9  raid   462.2  curve60   425.9  curve120   406.6  curve180   377.8  curve240   381.8  curve360   361.4  max   462.2  max60   500.6",
@@ -7350,17 +7350,9 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T14:06:16",
+  "date": "2026-09-29T21:25:30",
   "classes": [
-   "mage",
-   "priest",
-   "warlock",
-   "hunter",
-   "warrior",
-   "rogue",
-   "paladin",
-   "shaman",
-   "druid"
+   "mage"
   ],
   "steps": [
    "raid",
@@ -7372,7 +7364,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 1315,
+  "seconds": 239,
   "refresh": null,
   "regen_log": []
  }
