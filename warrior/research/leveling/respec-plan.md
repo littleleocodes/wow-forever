@@ -28,10 +28,10 @@ Total: **66.3 h** (26.3% faster than talentless), 0 respec(s).
 
 - **Levels 10-60: fury-dw-raid -> level-30 build (0/21/0)**
   - at level 10: **Fury**: Cruelty 1
-  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 2, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Precision 3, Bloodthirst 1, Improved Intercept 2, Flurry 3; **Arms**: Improved Heroic Strike 3, Deflection 2, Improved Charge 2, Improved Tactical Mastery 5, Anger Management 1
-  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23-24 Boundless Rage x2, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-32 Enrage x2, 33-35 Dual Wield Specialization x3, 36 Raging Blows, 37-38 Dual Wield Specialization x2, 39 Precision, 40 Bloodthirst, 41-42 Precision x2, 43-45 Improved Heroic Strike x3, 46-47 Improved Intercept x2, 48 Flurry, 49-50 Deflection x2, 51-52 Flurry x2, 53-54 Improved Charge x2, 55-59 Improved Tactical Mastery x5, 60 Anger Management
+  - at level 60: **Fury**: Cruelty 5, Unbridled Wrath 5, Blood Craze 3, Boundless Rage 2, Improved Execute 2, Enrage 5, Death Wish 1, Dual Wield Specialization 5, Raging Blows 1, Precision 3, Bloodthirst 1, Flurry 5, Improved Intercept 2; **Arms**: Deflection 5, Improved Tactical Mastery 5, Anger Management 1
+  - order: 10-14 Cruelty x5, 15-19 Unbridled Wrath x5, 20-22 Blood Craze x3, 23-24 Boundless Rage x2, 25-26 Improved Execute x2, 27-29 Enrage x3, 30 Death Wish, 31-32 Enrage x2, 33-35 Dual Wield Specialization x3, 36 Raging Blows, 37-38 Dual Wield Specialization x2, 39 Precision, 40 Bloodthirst, 41-42 Precision x2, 43-47 Flurry x5, 48-49 Improved Intercept x2, 50-54 Deflection x5, 55-59 Improved Tactical Mastery x5, 60 Anger Management
 
-Total: **69.1 h** (23.3% faster than talentless), 0 respec(s).
+Total: **69.4 h** (22.9% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **69.1 h** (23.3% faster than talentless), 0 respec(s).
 | arms-2h-raid -> level-50 build (9/32/0) | 66.4 | +0.1 h |
 | arms-2h-raid -> level-60 build (31/20/0) | 67.0 | +0.7 h |
 | arms-2h-raid -> level-20 build (7/4/0) | 67.1 | +0.9 h |
-| fury-dw-raid -> level-30 build (0/21/0) | 69.1 | +2.8 h |
-| fury-dw-raid -> level-40 build (0/31/0) | 69.1 | +2.8 h |
-| fury-dw-raid -> level-50 build (3/38/0) | 69.1 | +2.8 h |
-| fury-dw-raid -> level-60 build (13/38/0) | 69.1 | +2.8 h |
-| fury-dw-raid -> level-20 build (3/8/0) | 69.7 | +3.4 h |
+| fury-dw-raid -> level-30 build (0/21/0) | 69.4 | +3.1 h |
+| fury-dw-raid -> level-60 build (13/38/0) | 69.4 | +3.1 h |
+| fury-dw-raid -> level-40 build (0/31/0) | 69.4 | +3.1 h |
+| fury-dw-raid -> level-50 build (1/40/0) | 69.4 | +3.1 h |
+| fury-dw-raid -> level-20 build (3/8/0) | 70.0 | +3.7 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
@@ -57,11 +57,11 @@ Total: **69.1 h** (23.3% faster than talentless), 0 respec(s).
 | arms-2h-raid -> level-40 build (0/31/0) | +1.1% | +6.0% | +8.7% | +10.9% | +16.7% | +20.2% | +29.4% | +31.4% | +33.6% | +35.7% | +38.0% |
 | arms-2h-raid -> level-50 build (9/32/0) | +1.1% | +6.0% | +8.7% | +10.9% | +16.7% | +20.2% | +29.4% | +31.4% | +33.8% | +35.9% | +37.9% |
 | arms-2h-raid -> level-60 build (31/20/0) | +1.3% | +5.3% | +8.0% | +10.0% | +12.7% | +17.5% | +28.1% | +31.9% | +33.4% | +35.7% | +38.5% |
-| fury-dw-raid -> level-20 build (3/8/0) | +1.0% | +5.4% | +8.7% | +7.4% | +14.3% | +19.8% | +23.9% | +30.0% | +30.8% | +31.9% | +33.3% |
-| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +3.9% | +7.1% | +9.7% | +17.7% | +21.3% | +28.2% | +30.0% | +30.8% | +31.9% | +33.3% |
-| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.9% | +21.3% | +28.2% | +30.0% | +30.8% | +31.9% | +33.3% |
-| fury-dw-raid -> level-50 build (3/38/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.8% | +20.7% | +28.2% | +30.0% | +31.2% | +32.1% | +33.4% |
-| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +3.9% | +7.1% | +9.7% | +16.8% | +20.7% | +28.2% | +30.0% | +30.9% | +32.1% | +33.4% |
+| fury-dw-raid -> level-20 build (3/8/0) | +1.1% | +5.6% | +8.8% | +8.1% | +14.8% | +20.1% | +23.7% | +28.9% | +30.4% | +31.1% | +32.3% |
+| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.9% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |
+| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |
+| fury-dw-raid -> level-50 build (1/40/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |
+| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.7% | +31.5% | +32.7% |
 
 ## Reading it
 
