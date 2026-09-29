@@ -128,5 +128,21 @@
    "mode": "pvp",
    "date": "2026-09-29"
   }
+ },
+ "priest": {
+  "discipline-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Discipline",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "holy-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Holy",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
  }
 }
