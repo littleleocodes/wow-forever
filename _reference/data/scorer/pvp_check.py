@@ -37,7 +37,7 @@ KIND_KEYS = ("kite", "stun", "stick", "move", "range", "stealth", "avoid")
 
 
 def builds_path(game, cls):
-    return ROOT / cls / ("talents/classic-baseline/builds.json" if game == "classic-era" else "talents/forever/proposed-builds.json")
+    return ROOT / cls / ("research/talents/classic-baseline/builds.json" if game == "classic-era" else "research/talents/forever/proposed-builds.json")
 
 
 def reference(game, cls, bid):
@@ -145,7 +145,7 @@ def write_page(rows_c, rows_f):
     lines += ["---", "*Generated file — do not edit by hand.*", ""]
     (ROOT / "_reference" / "pvp-check.md").write_text("\n".join(lines), encoding="utf-8")
     print("wrote _reference/pvp-check.md")
-    # the same rows per class, in <class>/pvp/README.md
+    # the same rows per class, in <class>/research/pvp/README.md
     sys.path.append(str(ROOT / "_reference/data"))
     import paths
     import readme_sections as rs
@@ -165,7 +165,7 @@ def write_page(rows_c, rows_f):
                 sec.append(f"| {game} | {r['ref']} | {r['spec']} | {r['ref_split']} | {r['split']} | {r['overlap']:.0%} | "
                            + ", ".join(f"{n} +{d}" for n, d in r["extra"]) + " | " + ", ".join(f"{n} +{d}" for n, d in r["missing"]) + " |")
         rs.splice_ordered(readme, "pvp", "## PvP check", "\n".join(sec))
-    print("wrote the PvP check section of every <class>/pvp/README.md")
+    print("wrote the PvP check section of every <class>/research/pvp/README.md")
 
 
 if __name__ == "__main__":

@@ -92,8 +92,8 @@ def removal_values(opt, alloc, level=60):
 
 def audit_class(cls, threshold):
     rows = []
-    cb = load_builds(ROOT / cls / "talents" / "classic-baseline" / "builds.json")
-    fb = load_builds(ROOT / cls / "talents" / "forever" / "proposed-builds.json")
+    cb = load_builds(ROOT / cls / "research" / "talents" / "classic-baseline" / "builds.json")
+    fb = load_builds(ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json")
     opts = {}
 
     def optimizer(game, spec, prof):

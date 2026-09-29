@@ -297,15 +297,9 @@ def root_page(infos):
 
 
 def main():
-    classes = [c for c in sys.argv[1:] if c in CLASSES] or CLASSES
-    infos = []
-    for cls in CLASSES:
-        if cls in classes:
-            infos.append(class_page(cls))
-            print(f"{cls}: START-HERE.md written")
-    if classes == CLASSES:
-        root_page(infos)
-        print("wrote START-HERE.md")
+    """Superseded by render_modes.py (2026-09-29: the spec x mode layout); this file stays as its helper library."""
+    import render_modes
+    render_modes.main()
 
 
 if __name__ == "__main__":

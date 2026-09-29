@@ -101,7 +101,7 @@ def swaps_for(cls, bid, high, scen=None):
     import scenario_audit as sa
     import validate_builds as vb
     from optimize import Optimizer
-    data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
     b = next(x for x in data["builds"] if x["id"] == bid)
     models = list(json.load(open(HERE / "scorer/specs" / f"{cls}.json", encoding="utf-8"))["models"])
     model, profile = scen or sa.model_profile(cls, b, models)

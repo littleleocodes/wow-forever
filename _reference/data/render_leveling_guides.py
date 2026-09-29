@@ -1,10 +1,10 @@
-"""Write `<class>/leveling/guide.md` for every class (and the "Guide, rotation and respec plan" section of leveling/README.md): the leveling guide the fight lab and the scorer imply (generated).
+"""Write `<class>/research/leveling/guide.md` for every class (and the "Guide, rotation and respec plan" section of leveling/README.md): the leveling guide the fight lab and the scorer imply (generated).
 
     python _reference/data/render_leveling_guides.py [classes...]
 
-Sources: the class module's PIPELINE (spec model, hand draft, extra specs), `<class>/leveling/fightlab/<spec>.json`
+Sources: the class module's PIPELINE (spec model, hand draft, extra specs), `<class>/research/leveling/fightlab/<spec>.json`
 (kill times, deaths, downtime, talent values, gear tiers, caster share), the hand draft's `order` in `proposed-builds.json`,
-`<class>/leveling/respec-plan.md` (the recommended schedule line) and the module's DESCRIPTION / NOT_MODELLED.
+`<class>/research/leveling/respec-plan.md` (the recommended schedule line) and the module's DESCRIPTION / NOT_MODELLED.
 Every number is a simulation of stated assumptions (Classic 1.12 creature and item data, beta-client abilities), not a
 measurement. `rebuild.py --steps regen` runs this after the fight-lab sections.
 """
@@ -119,7 +119,7 @@ def main():
             print(f"{cls}: no report")
             continue
         r = json.load(open(rp, encoding="utf-8"))
-        data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+        data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
         build = next((b for b in data["builds"] if b["id"] == P["hand"]), {})
         respec_line = ""
         rpath = paths.respec_plan(cls)

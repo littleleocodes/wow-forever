@@ -54,7 +54,7 @@ def analyse(cls, pop, a, opt_cache):
                 tree_of[t["name"]] = (tr["name"], t["maxRank"])
     models = list(json.load(open(HERE / "scorer/specs" / f"{cls}.json", encoding="utf-8"))["models"])
     rows = []
-    for b in json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]:
+    for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]:
         lead = lead_tree(b)
         if lead not in rate:
             continue

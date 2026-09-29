@@ -219,8 +219,8 @@ def report(cls):
             out.append(f"| {n} | {tn} | {x['row'] + 1} | {x['max']} | {fmt_effects(cx[n]) if n in cx else '-'} |")
 
     # ---- builds that changed
-    fb = load_builds(ROOT / cls / "talents" / "forever" / "proposed-builds.json")
-    cb = load_builds(ROOT / cls / "talents" / "classic-baseline" / "builds.json")
+    fb = load_builds(ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json")
+    cb = load_builds(ROOT / cls / "research" / "talents" / "classic-baseline" / "builds.json")
     out += ["", "## Builds that changed (Classic reference vs Forever optimizer)", "",
             "For each Forever `opt-<spec>-<profile>` build: the Classic community build it was calibrated against, the Classic core talents the Forever build no longer takes "
             "(only those that still exist in Forever), and the talents the Forever build adds. A long 'drops' list means the spec had to be rebuilt.", ""]

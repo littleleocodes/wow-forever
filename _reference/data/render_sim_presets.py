@@ -1,4 +1,4 @@
-"""Write `<class>/raid/gear.md`, `<class>/raid/consumables.md`, `<class>/raid/rotation.md` and `<class>/leveling/rotation.md` from the ElliotWood/Forever
+"""Write `<class>/research/raid/gear.md`, `<class>/research/raid/consumables.md`, `<class>/research/raid/rotation.md` and `<class>/research/leveling/rotation.md` from the ElliotWood/Forever
 simulator's presets (generated): the community's gear sets per spec and phase, its standard raid consumables, and its rotations
 (APL files) translated into readable priority lists, next to the fight lab's leveling priority.
 

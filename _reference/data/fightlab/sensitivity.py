@@ -5,7 +5,7 @@
 
 For each variation of an unverified table constant (root-break chance, mob health, mob damage), re-runs the builds and
 reports time per kill and the build ranking, plus the value of the loop-defining talents (Ice Lance, Shatter) when
-removed, so the reader can see which conclusions survive. Writes <class>/leveling/fightlab/sensitivity.md.
+removed, so the reader can see which conclusions survive. Writes <class>/research/leveling/fightlab/sensitivity.md.
 """
 import argparse
 import pathlib

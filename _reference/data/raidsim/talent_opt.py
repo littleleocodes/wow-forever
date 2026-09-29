@@ -103,7 +103,7 @@ def start_alloc(cls, entry, repo, start):
     """An allocation from a build id, a candidate file, a simulator preset label or a raw talent string."""
     if start.endswith(".json"):
         return R.alloc_of(json.load(open(start, encoding="utf-8")))
-    data = {b["id"]: b for b in json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
     if start in data:
         return R.alloc_of(data[start])
     sim_trees = R.load_trees(repo, cls)

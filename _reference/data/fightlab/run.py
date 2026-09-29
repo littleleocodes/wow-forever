@@ -4,7 +4,7 @@
         [--compare leveling-frost ...] [--levels 20,30,40,50,60] [--fights 800] [--deltas 30,60] [--seed 1]
         [--mob-level +0] [--log] [--write]
 
-Outputs (with --write): <class>/leveling/fightlab/<spec>.md and .json. For every level: the distribution of
+Outputs (with --write): <class>/research/leveling/fightlab/<spec>.md and .json. For every level: the distribution of
 fight times, mana per kill, downtime, deaths and kills per hour, plus the measured damage shares (to compare with the
 spec model's assumed shares). With --deltas: the value of every talent in the build at those levels, measured as the
 change in time per kill when the talent is removed (common random numbers), next to the expected-value scorer's
@@ -43,7 +43,7 @@ def load_build(cls, build_id):
         b = json.load(open(build_id, encoding="utf-8"))
         b.setdefault("id", pathlib.Path(build_id).stem)
         return b
-    data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
     for b in data["builds"]:
         if b["id"] == build_id:
             return b

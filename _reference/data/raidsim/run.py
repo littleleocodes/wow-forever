@@ -8,7 +8,7 @@ Needs the simulator checkout with the bench tool built (`setup.py`; default loca
 gear preset, rotation (APL), player options and consumables; the sim's own preset talent builds are raced alongside ours.
 Talent strings are built from `<repo>/ui/sim/talents/trees/<class>.json` (same beta client as our data, names match).
 
-Outputs (--write): `<class>/raid/raidsim/<spec>.md` and `.json` (generated). The simulator is the community's model of
+Outputs (--write): `<class>/research/raid/raidsim/<spec>.md` and `.json` (generated). The simulator is the community's model of
 the Forever beta (its own tests and presets); its numbers are simulations of that model, not measurements.
 """
 import argparse
@@ -26,10 +26,10 @@ sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
-GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "talents/forever/proposed-builds.json",
-                     "trees": "ui/sim/talents/trees", "reports": "raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
-         "classic-era": {"specs": "specs-classic.json", "env": "WOW_FOREVER_CLASSIC_SIM", "repo": "classic-repo", "bench": "classicbench", "builds": "talents/classic-baseline/builds.json",
-                         "trees": "ui/core/talents/trees", "reports": "talents/classic-baseline/raidsim", "name_key": "fieldName", "ui": "ui"}}
+GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
+                     "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
+         "classic-era": {"specs": "specs-classic.json", "env": "WOW_FOREVER_CLASSIC_SIM", "repo": "classic-repo", "bench": "classicbench", "builds": "research/talents/classic-baseline/builds.json",
+                         "trees": "ui/core/talents/trees", "reports": "research/talents/classic-baseline/raidsim", "name_key": "fieldName", "ui": "ui"}}
 SPECS = json.load(open(HERE / "specs.json", encoding="utf-8"))
 
 

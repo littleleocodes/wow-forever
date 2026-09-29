@@ -13,7 +13,7 @@ score is the tank value). The best candidates are run again on seed 2 with `--co
 it wins there by more than `--min-gain`. The loop stops when no change wins.
 
 With --write: the rotation goes to `_reference/data/raidsim/apls/<class>/<spec>.apl.json` (changed items carry a note), the
-search record to `<class>/raid/raidsim/<spec>-rotation-search.json`, and specs.json gets `apl_opt` pointing at the file, so the
+search record to `<class>/research/raid/raidsim/<spec>-rotation-search.json`, and specs.json gets `apl_opt` pointing at the file, so the
 races, calibrations and rotation pages use it from then on (run.py `apl_path`).
 """
 import argparse
@@ -487,7 +487,7 @@ def main_builds(cls, spec, entry, repo, trees):
         for x in ours[:1] + theirs[:1]:
             if x.get("talents") and x["talents"] not in {b["talents"] for b in out}:
                 out.append({"label": x["label"], "talents": x["talents"]})
-    data = {b["id"]: b for b in json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
     if not out:
         for bid in entry["builds"][:1]:
             out.append({"label": bid, "talents": R.talents_string(trees, R.alloc_of(data[bid]))})

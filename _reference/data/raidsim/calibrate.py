@@ -9,7 +9,7 @@
    (`modes: ["raid"]`, tagged `specs: [<spec>]` so other models keep theirs) until the scorer's value of the same removal, on
    the same scale ((score_with - score_without) / (1 + score_without)), matches the sim (bisection, three passes). Talents the
    scorer already has within tolerance keep their values; a fit that cannot reach the target keeps the cap.
-3. With --write, saves the manual file with notes naming the fit and `<class>/raid/raidsim/<spec>-calibration.json`.
+3. With --write, saves the manual file with notes naming the fit and `<class>/research/raid/raidsim/<spec>-calibration.json`.
 
 DPS profiles only (tanks and healers are not calibrated: the sim's tank numbers are DPS and threat, not the tank score).
 Caveat: with the simulator's full raid buffs, talents that duplicate a buff someone else brings (Leader of the Pack, Trueshot

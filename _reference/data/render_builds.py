@@ -5,7 +5,7 @@ Usage (from the project root):
     python _reference/data/render_builds.py warrior    # one class
 
 Writes, per class (layout in paths.py):
-    <class>/talents/classic-baseline/<build-id>.md   (+ README.md index)
+    <class>/research/talents/classic-baseline/<build-id>.md   (+ README.md index)
     <class>/<scenario>/builds/<build-id>.md          Forever builds by scenario (leveling, raid, pvp), plus the title and the
                                                      "Builds" section of <class>/<scenario>/README.md and the "Where to find
                                                      things" section of <class>/README.md

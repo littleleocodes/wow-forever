@@ -2,7 +2,7 @@
 
 Usage (from anywhere): python _reference/data/render_trees.py [class ...]
 Reads  _reference/data/forever-talents/<class>.json
-Writes <class>/talents/forever/talent-trees.md
+Writes <class>/research/talents/forever/talent-trees.md
 """
 import json, sys, pathlib, collections
 
@@ -100,7 +100,7 @@ def render(cls: str) -> str:
 
 
 for cls in [c for c in CLASSES if not sys.argv[1:] or c in sys.argv[1:]]:
-    dest = root / cls / "talents" / "forever" / "talent-trees.md"
+    dest = root / cls / "research" / "talents" / "forever" / "talent-trees.md"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(render(cls), encoding="utf-8")
     print("wrote", dest)

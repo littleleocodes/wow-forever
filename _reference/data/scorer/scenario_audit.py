@@ -131,7 +131,7 @@ def main():
     for game in games:
         for cls in (a.classes or CLASSES):
             models = list(json.load(open(HERE / "specs" / f"{cls}.json", encoding="utf-8"))["models"])
-            path = ROOT / cls / ("talents/forever/proposed-builds.json" if game == "forever" else "talents/classic-baseline/builds.json")
+            path = ROOT / cls / ("research/talents/forever/proposed-builds.json" if game == "forever" else "research/talents/classic-baseline/builds.json")
             cache = {}
             for b in json.load(open(path, encoding="utf-8"))["builds"]:
                 model, profile = model_profile(cls, b, models)

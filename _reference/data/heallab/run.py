@@ -6,7 +6,7 @@
 Capacity = the multiplier on the encounter's damage at which the build keeps the group alive in 90% of runs (bisection with
 common random numbers, `tables.DEATH_RUNS_OK`); the healing split, overheal and mana are reported at that multiplier.
 `--deltas` removes every talent of the build in turn and re-measures the capacity (the value of the talent, on the scale
-`scorer/run.py` uses for its raid-heal score); `--write` saves `<class>/raid/heallab/<spec>.md` and `.json`.
+`scorer/run.py` uses for its raid-heal score); `--write` saves `<class>/research/raid/heallab/<spec>.md` and `.json`.
 """
 import argparse
 import datetime
@@ -42,7 +42,7 @@ def load_build(cls, ref):
         b = json.load(open(ref, encoding="utf-8"))
         b.setdefault("id", pathlib.Path(ref).stem)
         return b
-    data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
     return next(b for b in data["builds"] if b["id"] == ref)
 
 

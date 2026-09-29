@@ -10,7 +10,7 @@
 Per class (its module's PIPELINE dict names the scorer model, the hand draft, the optimizer build, the levels and the lookahead):
   effects     scorer/effects.py <class>: re-parse the talent tooltips (cheap, always safe)
   calibrate   fightlab/calibrate.py over the hand draft, the optimizer build and every saved candidate
-              (`<class>/leveling/fightlab/candidates/cand-<tag>-*.json`), then scorer/run.py for every spec/profile
+              (`<class>/research/leveling/fightlab/candidates/cand-<tag>-*.json`), then scorer/run.py for every spec/profile
               pair in `<class>/<scenario>/optimizer/`; if the optimizer's leveling build is new it is saved as the next
               candidate and the pair runs again, up to --rounds times (in-build marginals: one-build fits oscillate)
   race        fightlab/run.py: the hand draft against every candidate at every level (the sim decides; printed and logged)
@@ -31,7 +31,7 @@ Per class (its module's PIPELINE dict names the scorer model, the hand draft, th
               the last export in the race is promoted into the opt-* build (the export is the best of its rounds); needs raidsim/setup.py once
   classic     our Classic-era raid builds through the upstream wowsims/classic simulator (raidsim/specs-classic.json from the clone's
               presets; needs raidsim/setup.py --game classic once): the Classic damage split and raid-mode effect fits go into the
-              scorer's classic-era game, reports under <class>/talents/classic-baseline/raidsim/, then (once) scorer/classic_check.py
+              scorer's classic-era game, reports under <class>/research/talents/classic-baseline/raidsim/, then (once) scorer/classic_check.py
               --write asks whether the Classic models still reproduce the community builds
   regen       (once) render_fightlab_sections, render_raidsim_sections, validate_builds, render_builds, render_new_builds, respec, render_optimizer_sections,
               compare_effects, loop_audit, the launch / beta checklists and fightlab/summary.py (the cross-class page)
@@ -270,7 +270,7 @@ def adopt(cls, P, race, a, log):
         print(f"  adopt: no candidate file for {winner}")
         return None
     win = json.load(open(cand_path, encoding="utf-8"))
-    bp = ROOT / cls / "talents/forever/proposed-builds.json"
+    bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
     data = json.load(open(bp, encoding="utf-8"))
     b = next(x for x in data["builds"] if x["id"] == hand)
     if alloc_of(win) == alloc_of(b):   # a stored race whose winner is already the hand draft: nothing to adopt
@@ -386,7 +386,7 @@ def run_variant(cls, V, a, log, result):
             best = min(means, key=means.get)
             if best != opt and means[best] < means[opt] * (1 - RACE_NOISE):
                 cand = json.load(open(paths.fightlab_dir(cls) / "candidates" / f"{best}.json", encoding="utf-8"))
-                bp = ROOT / cls / "talents/forever/proposed-builds.json"
+                bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
                 data = json.load(open(bp, encoding="utf-8"))
                 for b in data["builds"]:
                     if b["id"] == opt:
@@ -477,7 +477,7 @@ def raid_step(cls, a, log, result):
             if mine and opt_row and mine[0]["label"] != opt_id and key(mine[0]) > key(opt_row) * 1.005:
                 win = mine[0]["label"]
                 cand = json.load(open(folder / f"{win}.json", encoding="utf-8"))
-                bp = ROOT / cls / "talents/forever/proposed-builds.json"
+                bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
                 data = json.load(open(bp, encoding="utf-8"))
                 for b in data["builds"]:
                     if b["id"] == opt_id:
@@ -530,7 +530,7 @@ def adopt_raid(cls, spec, entry, opt_id, folder, a, log):
     if gain < RACE_MARGIN:
         print(f"  {spec}: the hand draft {hand} stands ({win} is only {gain:+.1%} ahead)")
         return None
-    bp = ROOT / cls / "talents/forever/proposed-builds.json"
+    bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
     data = json.load(open(bp, encoding="utf-8"))
     b = next(x for x in data["builds"] if x["id"] == hand)
     win_file = preset_files.get(win) or (folder / f"{win}.json")
@@ -669,7 +669,7 @@ def heal_step(cls, a, log, result):
         if ours:
             win = max(ours, key=lambda k: caps[k])
             if win != opt and caps[win] > caps.get(opt, 0) * (1 + RACE_NOISE):   # an earlier round's build beats the last export: promote it
-                bp = ROOT / cls / "talents/forever/proposed-builds.json"
+                bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
                 data = json.load(open(bp, encoding="utf-8"))
                 b = next(x for x in data["builds"] if x["id"] == opt)
                 b["allocation"] = json.load(open(folder / f"{win}.json", encoding="utf-8"))["allocation"]
@@ -690,7 +690,7 @@ def heal_step(cls, a, log, result):
 
 def adopt_heal(cls, spec, hand, win, opt, folder, caps, gain, log):
     """The hand healer draft takes the winner's allocation (old draft kept as a candidate; core from the lab's removal values)."""
-    bp = ROOT / cls / "talents/forever/proposed-builds.json"
+    bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
     data = json.load(open(bp, encoding="utf-8"))
     b = next(x for x in data["builds"] if x["id"] == hand)
     src = next(x for x in data["builds"] if x["id"] == opt) if win == opt else json.load(open(folder / f"{win}.json", encoding="utf-8"))
@@ -733,7 +733,7 @@ def classic_step(cls, a, log, result):
 
 
 def regen(a, classes, log):
-    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_start_here.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
+    for args in ([HERE / "render_fightlab_sections.py", *classes], [HERE / "render_raidsim_sections.py", *classes], [HERE / "render_heallab_sections.py", *classes], [HERE / "render_leveling_guides.py", *classes], [HERE / "render_sim_presets.py", *classes], [HERE / "render_rotations.py", *classes], [HERE / "validate_builds.py"], [HERE / "render_builds.py"], [HERE / "render_new_builds.py", *classes], [HERE / "render_modes.py"], *[[HERE / "scorer/respec.py", c, "--write"] for c in classes],
                  [HERE / "render_optimizer_sections.py"], [HERE / "scorer/compare_effects.py"], [HERE / "scorer/loop_audit.py"],
                  [HERE / "build_launch_checklist.py"], [HERE / "build_beta_checklist.py"], [FL / "summary.py", "--write"]):
         sh(args, a.dry_run, log)

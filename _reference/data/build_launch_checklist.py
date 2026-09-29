@@ -48,7 +48,7 @@ def main():
     lines.append("## Per-build open questions\n")
     total = 0
     for cls in CLASSES:
-        path = ROOT / cls / "talents" / "forever" / "proposed-builds.json"
+        path = ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json"
         if not path.exists():
             continue
         data = json.load(open(path, encoding="utf-8"))

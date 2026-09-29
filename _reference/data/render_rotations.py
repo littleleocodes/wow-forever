@@ -3,12 +3,12 @@
     python _reference/data/render_rotations.py [classes...]
 
 Writes, per class (paths.py):
-  <class>/raid/rotation.md       per raid spec model: the community simulator's rotation (its APL) filtered to what each build
+  <class>/research/raid/rotation.md       per raid spec model: the community simulator's rotation (its APL) filtered to what each build
                                  casts, builds that cast the same lines grouped, with the casts per minute the simulator measured
                                  on the training dummy (tanks: the raid setting). Our builds and the simulator's own builds.
-  <class>/leveling/rotation.md   per fight-lab report: the priority the fight lab plays and what each leveling build casts per
+  <class>/research/leveling/rotation.md   per fight-lab report: the priority the fight lab plays and what each leveling build casts per
                                  kill at every level bracket, with damage shares.
-  "## DPS ranking" of <class>/raid/README.md and "## Raid DPS ranking" of <class>/README.md: our builds and the simulator's own
+  "## DPS ranking" of <class>/research/raid/README.md and "## Raid DPS ranking" of <class>/README.md: our builds and the simulator's own
                                  builds per spec model, by training-dummy DPS with the raid-setting DPS next to it (tanks: tank value).
 It also gives render_builds.py the rotation and rank sections of the build pages (build_sections()). Reads the raid-sim reports
 (`raidsim/run.py --write`: casts per build), the environments reports and the fight-lab reports; changes nothing else.

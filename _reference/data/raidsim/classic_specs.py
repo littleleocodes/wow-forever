@@ -5,7 +5,7 @@
 
 The upstream simulator's Player message uses enum-based `consumes` and per-spec option messages without a classOptions
 nesting, so the fragments differ from the Forever ones; TS enum references (`Flask.FlaskOfSupremePower`) become the enum
-value name. Builds are our `<class>/talents/classic-baseline/builds.json` raid DPS ids. Edit the SPECS table to add a model.
+value name. Builds are our `<class>/research/talents/classic-baseline/builds.json` raid DPS ids. Edit the SPECS table to add a model.
 Gear sets the upstream sim lacks live under `raidsim/gear_sets/classic/<sim folder>/` and are copied into the clone.
 """
 import json

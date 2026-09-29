@@ -122,7 +122,7 @@ def part_level(cls, a, tmp):
     # every single-target leveling model the class's fight lab plays: the main one, the extra reports, the leveling-st variants
     models = [pipe["spec"]] + [x["spec"] for x in pipe.get("extra_reports", [])] + [v["spec"] for v in pipe.get("variants", []) if v.get("profile") == "leveling-st"]
     models = [m for i, m in enumerate(models) if m in models_known and m not in models[:i] and "frostfire" not in m]
-    data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
     by_id = {b["id"]: b for b in data["builds"]}
     ours = [(pipe["hand"], pipe["spec"])] + [(f"opt-{m}-leveling-st", m) for m in models if f"opt-{m}-leveling-st" in by_id]
     ours += [(x["build"], x["spec"]) for x in pipe.get("extra_reports", []) if x["build"] in by_id and x["spec"] in models and (x["build"], x["spec"]) not in ours]
@@ -251,7 +251,7 @@ def render(res):
               "build in that same entry (same rotation and gear: the talents alone differ). Leveling is time per kill, so + means slower.", "",
               "| # | Lead | Split | Popularity (shared / saved / opened) | Dummy DPS (entry) | vs best | vs same | Raid DPS (entry) | vs best | vs same | Leveling s/kill (played as) | vs best | vs same |",
               "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
-        mine = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]
+        mine = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]
         for p in pc["top"]:
             d, r_, l_ = bd.get(p["id"]), br.get(p["id"]), best_l.get(p["id"])
             short = "" if p["valid"] else f" ({sum(int(x) for x in p['split'].split('/'))} pts)"
