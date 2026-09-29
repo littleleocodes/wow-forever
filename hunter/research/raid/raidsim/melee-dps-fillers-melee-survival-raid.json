@@ -1,0 +1,232 @@
+{
+ "class": "hunter",
+ "spec": "melee-dps",
+ "build": "melee-survival-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Careful Aim": 0.043258489000360334,
+  "Clever Traps": 0.0233101157445067,
+  "Deadly Aspects": 0.06889383684643235,
+  "Expose Prey": 0.12021409654158521,
+  "Improved Tracking": -0.0,
+  "Lacerating Strikes": 0.006097514924747638,
+  "Lethal Attacks": 0.04807310759840311,
+  "Lightning Reflexes": 0.037530391724219014,
+  "Lone Wolf": 0.16666666666666619,
+  "Predator's Edge": 0.13311373057062137,
+  "Resourcefulness": 0.17889664411972617,
+  "Savage Strikes": 0.016438288077020524,
+  "Strider Kick": 0.016345954729397483,
+  "Surefooted": 0.03715084396221979,
+  "Survival Tactics": 0.006797499765482273,
+  "Survivalist": -0.0,
+  "Survivalist's Discipline": 0.02573754961828678
+ },
+ "free": [
+  "Improved Tracking",
+  "Survivalist"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    3
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    3
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ],
+   [
+    "Deflection",
+    5
+   ]
+  ]
+ }
+}

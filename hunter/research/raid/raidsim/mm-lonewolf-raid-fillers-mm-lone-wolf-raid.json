@@ -1,0 +1,247 @@
+{
+ "class": "hunter",
+ "spec": "mm-lonewolf-raid",
+ "build": "mm-lone-wolf-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Barrage": 0.01002837442842297,
+  "Careful Aim": 0.03790697518017461,
+  "Deadly Aspects": 0.05272104622896634,
+  "Efficiency": 0.06677470216409687,
+  "Hawk Eye": -0.0,
+  "Improved Stings": 0.024650491822786225,
+  "Improved Tracking": -0.0,
+  "Lethal Attacks": 0.050985298464442996,
+  "Lone Wolf": 0.16666666666666663,
+  "Mortal Shots": 0.04901293569116927,
+  "Ranged Weapon Specialization": 0.0405760499553941,
+  "Rapid Killing": -0.0,
+  "Rapid Recuperation": -0.0,
+  "Sniper Shot": -0.0,
+  "Trueshot Aura": 0.024299343064214662
+ },
+ "free": [
+  "Hawk Eye",
+  "Improved Tracking",
+  "Rapid Killing",
+  "Rapid Recuperation",
+  "Sniper Shot"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Hawk Eye",
+   "to": "Improved Revive Pet",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Hawk Eye",
+   "to": "Improved Revive Pet",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Hawk Eye",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Hawk Eye",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Scatter Shot",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Improved Tracking",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 8,
+   "kind": "utility",
+   "from": "Sniper Shot",
+   "to": "Endurance Training",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Endurance Training",
+    3
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Scatter Shot",
+    1
+   ]
+  ],
+  "Survival": []
+ }
+}

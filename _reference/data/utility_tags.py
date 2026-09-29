@@ -17,6 +17,10 @@ TAGS = [("interrupt", r"interrupt|pushback|casting time lost|lose .* casting tim
         ("range", r"\brange\b|radius"),
         ("survival", r"stamina|armor|damage taken|resistances?|dodge|parry|block|health")]
 NONE = len(TAGS)
+# talents whose tag is true but useless in a raid (a pet's revive or healing, crowd control, distraction): no raid usefulness
+NO_RAID = {"Improved Revive Pet", "Improved Mend Pet", "Improved Health Funnel", "Fel Domination", "Improved Distract", "Scatter Shot",
+           "Nature's Focus", "Improved Sprint", "Endurance", "Camouflage", "Master of Deception", "Improved Ghost Wolf", "Pathfinding",
+           "Feral Swiftness", "Improved Concussive Shot", "Entrapment", "Improved Hamstring", "Piercing Howl"}
 TIE_BREAK = 1e-5   # score per point per step of usefulness in the raid profiles
 RAID_PROFILES = {"raid-dps", "raid-dps-extwc", "parse", "raid-tank"}
 
@@ -33,7 +37,7 @@ def usefulness(cls, tank=False):
             ranks = t.get("ranks") or []
             txt = str(ranks[-1] if ranks else "").lower()
             tags = [tag for tag, rx in TAGS if re.search(rx, txt)]
-            out[t["name"]] = min((order.index(g) for g in tags), default=NONE)
+            out[t["name"]] = NONE if t["name"] in NO_RAID else min((order.index(g) for g in tags), default=NONE)
     return out
 
 

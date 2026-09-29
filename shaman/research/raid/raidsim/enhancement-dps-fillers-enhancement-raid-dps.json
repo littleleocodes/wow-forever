@@ -1,0 +1,176 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "build": "enhancement-raid-dps",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Ancestral Knowledge": 0.009821894670442588,
+  "Concussion": 0.0028715378588589635,
+  "Convection": 0.01347515257466747,
+  "Elemental Devastation": 0.019486514445705705,
+  "Elemental Focus": 0.014468657951026698,
+  "Elemental Weapons": 0.010523588514165794,
+  "Flurry": 0.09307393757929128,
+  "Maelstrom Weapon": 0.3454966117589331,
+  "Mental Dexterity": 0.03377480128745791,
+  "Mental Quickness": 0.013319129624620452,
+  "Rage of the Farseer": 0.019961544518823593,
+  "Shamanistic Focus": 0.045487556090272996,
+  "Stormstrike": 0.18807290406887223,
+  "Thundering Strikes": 0.05178162787151497,
+  "Tidal Focus": 0.02289161942019724,
+  "Totemic Focus": 0.00239292574807215
+ },
+ "free": [],
+ "kept_for_rotation": [
+  "Maelstrom Weapon"
+ ],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    2
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Tidal Focus",
+    4
+   ]
+  ]
+ },
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    2
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Tidal Focus",
+    4
+   ]
+  ]
+ }
+}

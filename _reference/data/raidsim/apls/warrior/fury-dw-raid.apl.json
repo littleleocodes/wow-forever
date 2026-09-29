@@ -59,6 +59,17 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 23894,
+      "rank": 4
+     }
+    }
+   },
+   "notes": "2026-09-29: Bloodthirst restored (an earlier search dropped it on seeds that shared most iterations and 120 s fights; back at this spot it is +2.3% on an independent seed at 180 s, 20000 iterations)"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpLe",

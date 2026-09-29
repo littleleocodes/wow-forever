@@ -1,0 +1,234 @@
+{
+ "class": "warlock",
+ "spec": "demonology-raid",
+ "build": "demonology-pact-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Agonizing Flames": 0.05239342361844246,
+  "Bane": 0.07851877053449408,
+  "Decimation": 0.010112426868953528,
+  "Demonic Brand": 9.149854780554634e-05,
+  "Demonic Energies": -0.0,
+  "Demonic Knowledge": 0.05443710896380105,
+  "Demonic Pact": 0.12040425309462244,
+  "Demonic Sacrifice": 0.12040425309462244,
+  "Fel Vitality": 0.008437935675162267,
+  "Improved Corruption": 0.021492957397794443,
+  "Improved Felhunter": -0.0,
+  "Improved Life Tap": 0.009255428857765868,
+  "Improved Sayaad": 0.00218084558499243,
+  "Improved Shadow Bolt": 0.041659118068029466,
+  "Master Demonologist": 0.08511492721963232,
+  "Master Summoner": -0.0,
+  "Ruin": 0.02756403697091836,
+  "Soul Link": 0.02912621359223211,
+  "Unholy Power": 0.006530067959145125
+ },
+ "free": [
+  "Demonic Brand",
+  "Demonic Energies",
+  "Improved Felhunter",
+  "Master Summoner"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Demonic Energies",
+   "to": "Improved Health Funnel",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Demonic Energies",
+   "to": "Improved Health Funnel",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Improved Felhunter",
+   "to": "Fel Domination",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "mana"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Energies",
+    2
+   ],
+   [
+    "Improved Sayaad",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Improved Felhunter",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Sayaad",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ],
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Fel Domination",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ }
+}

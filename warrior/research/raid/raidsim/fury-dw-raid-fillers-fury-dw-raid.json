@@ -1,0 +1,217 @@
+{
+ "class": "warrior",
+ "spec": "fury-dw-raid",
+ "build": "fury-dw-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Anger Management": 0.02394856667758316,
+  "Bloodthirst": 0.0007626340100174156,
+  "Booming Voice": -0.0,
+  "Boundless Rage": 3.301891922369293e-05,
+  "Cruelty": 0.06752487781141914,
+  "Death Wish": 0.051169801491932065,
+  "Deep Wounds": 0.019847619216443624,
+  "Dual Wield Specialization": 0.17157371311770253,
+  "Enrage": -0.0,
+  "Flurry": 0.0987886109838042,
+  "Improved Execute": 0.05419954313914799,
+  "Improved Heroic Strike": 0.006934267142816752,
+  "Improved Rend": -0.0,
+  "Improved Tactical Mastery": -0.0,
+  "Precision": 0.0357704978385982,
+  "Raging Blows": 0.039664191117811165,
+  "Unbridled Wrath": 0.03047935013566261
+ },
+ "free": [
+  "Bloodthirst",
+  "Booming Voice",
+  "Boundless Rage",
+  "Enrage",
+  "Improved Rend",
+  "Improved Tactical Mastery"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "gain",
+   "from": "Bloodthirst",
+   "to": "Deep Wounds",
+   "seed1": 0.009144713328460119,
+   "seed2": 0.009227218974891205,
+   "utility": null
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": -2.765306637009246e-07,
+   "seed2": -6.075776992631177e-08,
+   "utility": "range"
+  }
+ ],
+ "final_seed3": 0.008831482772010846,
+ "start": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Heroic Strike",
+    2
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Heroic Strike",
+    2
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ]
+  ],
+  "Protection": []
+ }
+}

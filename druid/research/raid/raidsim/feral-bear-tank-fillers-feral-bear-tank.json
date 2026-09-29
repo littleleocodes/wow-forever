@@ -1,0 +1,224 @@
+{
+ "class": "druid",
+ "spec": "feral-bear-tank",
+ "build": "feral-bear-tank",
+ "setting": "raid",
+ "date": "2026-09-29",
+ "tank": true,
+ "removal": {
+  "Blood Frenzy": 0.06101138500158643,
+  "Feral Charge": -0.0,
+  "Feral Swiftness": 0.022549712122357457,
+  "Ferocity": 0.002677012686768121,
+  "Furor": -0.0,
+  "Genesis": 0.0035721595315933996,
+  "Natural Reaction": 0.04918956183476919,
+  "Naturalist": 0.018041738848886713,
+  "Nature's Majesty": 0.02459732088146449,
+  "Predatory Instincts": 0.017867671528888462,
+  "Predatory Strikes": 0.01686183995482704,
+  "Rend and Tear": 0.036273882932733814,
+  "Savage Fury": 0.0016411761925778645,
+  "Sharpened Claws": 0.03518589567547248,
+  "Shredding Attacks": 0.057285558315957275,
+  "Thick Hide": 0.05673207262060864
+ },
+ "free": [
+  "Feral Charge",
+  "Furor",
+  "Savage Fury"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Nature's Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Nature's Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Nature's Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Nature's Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Furor",
+   "to": "Nature's Focus",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Shredding Attacks",
+    3
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Predatory Instincts",
+    2
+   ],
+   [
+    "Natural Reaction",
+    5
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Naturalist",
+    4
+   ]
+  ]
+ },
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Shredding Attacks",
+    3
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Predatory Instincts",
+    2
+   ],
+   [
+    "Natural Reaction",
+    5
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Naturalist",
+    4
+   ],
+   [
+    "Nature's Focus",
+    5
+   ]
+  ]
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "build": "combat-daggers-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Adrenaline Rush": 0.04540776362557708,
+  "Aggression": 0.020407620760867107,
+  "Blade Flurry": 0.0029060269060097177,
+  "Dual Wield Specialization": 0.03691495884517526,
+  "Endurance": -0.0,
+  "Flawless Execution": 0.003517499439707028,
+  "Hack and Slash": 0.039604536181035876,
+  "Improved Eviscerate": 0.004517776075656732,
+  "Improved Slice and Dice": 0.05222311583528749,
+  "Improved Sprint": -0.0,
+  "Lethality": 0.010514078055751663,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.04252969180528121,
+  "Murder": -0.0,
+  "Opportunity": 0.031753813230283257,
+  "Precision": 0.02800552335598072,
+  "Puncturing Wounds": 0.14920691638861416,
+  "Relentless Strikes": 0.07304550770744944,
+  "Ruthlessness": 0.04052976928593244,
+  "Weapon Expertise": 0.017247465449822474
+ },
+ "free": [
+  "Endurance",
+  "Improved Sprint",
+  "Lightning Reflexes",
+  "Murder"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "gain",
+   "from": "Murder",
+   "to": "Improved Expose Armor",
+   "seed1": 0.028125942076172583,
+   "seed2": 0.027661519219458697,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "gain",
+   "from": "Murder",
+   "to": "Improved Expose Armor",
+   "seed1": 0.026928504442381485,
+   "seed2": 0.024994140332125214,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Sprint",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Improved Sprint",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.054232846445858574,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    2
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Improved Sprint",
+    2
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    2
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ],
+   [
+    "Deflection",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ }
+}

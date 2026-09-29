@@ -1,0 +1,269 @@
+{
+ "class": "mage",
+ "spec": "arcane-dps",
+ "build": "arcane-blast-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Arcane Blast": 0.15142053550879497,
+  "Arcane Concentration": 0.025865422670112492,
+  "Arcane Focus": 0.04310770460305846,
+  "Arcane Impact": 0.03482528199564572,
+  "Arcane Instability": 0.05122653514331155,
+  "Arcane Meditation": 0.01833883782153134,
+  "Arcane Mind": 0.0825918566214704,
+  "Arcane Power": 0.02525174317115042,
+  "Arcane Subtlety": -0.0,
+  "Burning Soul": -0.0,
+  "Elemental Precision": 0.013654413423760614,
+  "Ignite": 0.02733685564201893,
+  "Improved Flamestrike": -0.0,
+  "Incineration": 0.03163014192180824,
+  "Magic Absorption": -0.0,
+  "Missile Barrage": 0.1866458443424076,
+  "Presence of Mind": 0.007838279487072941,
+  "Wake of Fire": 0.013815735364304915
+ },
+ "free": [
+  "Arcane Subtlety",
+  "Burning Soul",
+  "Improved Flamestrike",
+  "Magic Absorption"
+ ],
+ "kept_for_rotation": [
+  "Arcane Blast",
+  "Missile Barrage"
+ ],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Arcane Subtlety",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Arcane Subtlety",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Burning Soul",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Burning Soul",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Burning Soul",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Improved Flamestrike",
+   "to": "Arcane Subtlety",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Improved Flamestrike",
+   "to": "Arcane Subtlety",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 8,
+   "kind": "utility",
+   "from": "Magic Absorption",
+   "to": "Burning Soul",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ],
+   [
+    "Magic Absorption",
+    1
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Improved Flamestrike",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ }
+}

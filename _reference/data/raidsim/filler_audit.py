@@ -58,6 +58,10 @@ def audit(cls, spec, bid, iterations, confirm):
     cur = R.alloc_of(data[bid])
     names = {(t.get("fancyName") or t.get("fieldName")): (R.talent_key(t) or t.get("fieldName")) for tr in sim_trees for t in tr["talents"]}
     protect = {names.get(n, n) for n in R.apl_talents(repo, entry, sim_trees, where)} & set(cur)
+    protect |= set(entry.get("not_measured", {})) & set(cur)   # values the standard target cannot show (Murder: Humanoids and Giants)
+    # a talent that grants an ability is never free: if it measures 0, the rotation does not cast it (a rotation question, flagged)
+    book = {sp["name"] for t in json.load(open(ROOT / "_reference/data/forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"] for sp in t["spells"]}
+    active = set(cur) & book
     use = utility(cls, tank)
     tag = f"fillers-{cls}-{spec}"
 
@@ -74,7 +78,8 @@ def audit(cls, spec, bid, iterations, confirm):
     rows = run([cur] + [{k: v for k, v in cur.items() if k != n} for n in held], iterations, 1)
     base = rows[0]
     effect = {n: -val(r, base) for n, r in zip(held, rows[1:])}   # DPS lost when the talent goes
-    free = {n for n, e in effect.items() if abs(e) < ZERO and n not in protect}
+    free = {n for n, e in effect.items() if abs(e) < ZERO and n not in protect and n not in active}
+    flags = sorted(n for n, e in effect.items() if abs(e) < ZERO and n in active)
     print(f"== {cls} {spec} {bid} ({where}): {base['dps']:.1f} DPS; free: " + (", ".join(f"{n} {cur[n]}" for n in sorted(free)) or "none"), flush=True)
     start = dict(cur)
     moves = []
@@ -124,7 +129,7 @@ def audit(cls, spec, bid, iterations, confirm):
     total = val(fin[1], fin[0])
     print(f"  final (seed 3): {total:+.2%}", flush=True)
     return {"class": cls, "spec": spec, "build": bid, "setting": where, "date": datetime.date.today().isoformat(), "tank": tank,
-            "removal": effect, "free": sorted(free), "kept_for_rotation": sorted(protect), "moves": moves, "final_seed3": total,
+            "removal": effect, "free": sorted(free), "kept_for_rotation": sorted(protect), "active_never_worth": flags, "moves": moves, "final_seed3": total,
             "start": {t: [[n, r] for n, r in T.by_tree(trees, start)[t].items()] for t in trees},
             "allocation": {t: [[n, r] for n, r in T.by_tree(trees, cur)[t].items()] for t in trees}}
 

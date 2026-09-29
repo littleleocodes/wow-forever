@@ -1,0 +1,260 @@
+{
+ "class": "warlock",
+ "spec": "incinerate-raid",
+ "build": "destruction-incinerate-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Aftermath": 0.014038774709071,
+  "Agonizing Flames": 0.05478087890886274,
+  "Bane": 0.07090696634989413,
+  "Bane of Havoc": -0.0,
+  "Cataclysm": 0.010340249568294824,
+  "Conflagrate": 0.05354147196714487,
+  "Demonic Embrace": -0.0,
+  "Demonic Sacrifice": 0.05156632426149255,
+  "Fel Vitality": 0.011595567390648376,
+  "Fire and Brimstone": 0.02122829761048528,
+  "Improved Corruption": 0.03168397808036416,
+  "Improved Life Tap": 0.011324712976613305,
+  "Incinerate": 0.29293234113206224,
+  "Ruin": 0.03847956263167873,
+  "Shadow and Flame": 0.08376104062593526,
+  "Shadowburn": 0.005573169338392914,
+  "Suppression": 0.0447616043955128,
+  "Unholy Power": -0.0
+ },
+ "free": [
+  "Bane of Havoc",
+  "Demonic Embrace",
+  "Unholy Power"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Demonic Embrace",
+   "to": "Improved Health Funnel",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Demonic Embrace",
+   "to": "Improved Health Funnel",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "threat"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Unholy Power",
+   "to": "Demonic Embrace",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Aftermath",
+    4
+   ],
+   [
+    "Cataclysm",
+    2
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Demonic Embrace",
+    5
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Aftermath",
+    4
+   ],
+   [
+    "Cataclysm",
+    2
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ }
+}

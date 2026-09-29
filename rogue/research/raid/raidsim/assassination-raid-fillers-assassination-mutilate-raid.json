@@ -1,0 +1,275 @@
+{
+ "class": "rogue",
+ "spec": "assassination-raid",
+ "build": "assassination-mutilate-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Cold Blood": 0.008418809843188102,
+  "Dual Wield Specialization": 0.03540027690616776,
+  "Endurance": -0.0,
+  "Improved Eviscerate": 0.01584580918031875,
+  "Improved Slice and Dice": 0.038765074673259625,
+  "Improved Sprint": -0.0,
+  "Lethality": 0.020209556936898077,
+  "Lightning Reflexes": -0.0,
+  "Malice": 0.04924458958829947,
+  "Murder": -0.0,
+  "Mutilate": -0.0,
+  "Precision": 0.03163239876580859,
+  "Puncturing Wounds": 0.16181968670574776,
+  "Relentless Strikes": 0.08958659743434372,
+  "Ruthlessness": 0.0378037619145255,
+  "Seal Fate": 0.06624329739243962,
+  "Venom": -0.0,
+  "Vigor": 0.00439690445362606,
+  "Vile Poisons": 0.007993837533151416
+ },
+ "free": [
+  "Endurance",
+  "Improved Sprint",
+  "Lightning Reflexes",
+  "Murder",
+  "Mutilate",
+  "Venom"
+ ],
+ "kept_for_rotation": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "gain",
+   "from": "Murder",
+   "to": "Improved Expose Armor",
+   "seed1": 0.019450732760568412,
+   "seed2": 0.019009669745344793,
+   "utility": "survival"
+  },
+  {
+   "round": 2,
+   "kind": "gain",
+   "from": "Murder",
+   "to": "Improved Expose Armor",
+   "seed1": 0.01807515645705071,
+   "seed2": 0.018968820803894948,
+   "utility": "survival"
+  },
+  {
+   "round": 3,
+   "kind": "gain",
+   "from": "Venom",
+   "to": "Flawless Execution",
+   "seed1": 0.022161556593388587,
+   "seed2": 0.020927581023540975,
+   "utility": null
+  },
+  {
+   "round": 4,
+   "kind": "gain",
+   "from": "Mutilate",
+   "to": "Improved Poisons",
+   "seed1": 0.00606622115267208,
+   "seed2": 0.008211184655347648,
+   "utility": null
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Endurance",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Improved Sprint",
+   "to": "Lightning Reflexes",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 8,
+   "kind": "utility",
+   "from": "Improved Sprint",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.06673418589251323,
+ "start": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Mutilate",
+    1
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Venom",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    2
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Improved Sprint",
+    2
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ]
+  ],
+  "Subtlety": []
+ },
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Deflection",
+    1
+   ]
+  ],
+  "Subtlety": []
+ }
+}

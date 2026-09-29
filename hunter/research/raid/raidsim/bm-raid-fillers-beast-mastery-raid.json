@@ -1,0 +1,185 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "build": "beast-mastery-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Bestial Discipline": 0.04047528509902787,
+  "Bestial Swiftness": -0.0,
+  "Careful Aim": 0.02515817389227981,
+  "Deadly Aspects": 0.045473344815217476,
+  "Efficiency": 0.008849545376296342,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.044913798675119465,
+  "Focused Fire": 0.019607843137255276,
+  "Frenzy": 0.014471732483324229,
+  "Improved Revive Pet": -0.0,
+  "Improved Stings": 0.029867787781483468,
+  "Intimidation": -0.013138944312931056,
+  "Lethal Attacks": 0.04174725326087736,
+  "Mortal Shots": 0.029514466142002926,
+  "Summon Hawk": 0.28509036850969627,
+  "Trueshot Aura": 0.01612703454633302,
+  "Unleashed Fury": 0.051856464321502815
+ },
+ "free": [
+  "Bestial Swiftness",
+  "Endurance Training",
+  "Improved Revive Pet"
+ ],
+ "kept_for_rotation": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ]
+  ],
+  "Survival": []
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ]
+  ],
+  "Survival": []
+ }
+}
