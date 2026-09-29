@@ -207,16 +207,16 @@
       }
     },
     "prot-tank": {
-      "note": "Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike rank 8 is 50% weapon damage plus 40-53 every 10s (share 20 -> 18%); Consecration rank 5 deals 12 a tick to everyone plus 27 a tick to the first 4 enemies, 8s cooldown (share 25 -> 27%); Righteous Fury's Holy threat bonus is +60% in build 70009 (was 90%); Holy Shield rank 3 221 per block at 0.08, rank 1 trains at 40. Raid sim shares (2026-09-29, prot-tank in the ElliotWood/Forever simulator 40be98e): seal 33%, white 31%, consecration 18%, holy_strike 13%, ret_aura 6%; 14% of the damage matched no source.",
+      "note": "Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike rank 8 is 50% weapon damage plus 40-53 every 10s (share 20 -> 18%); Consecration rank 5 deals 12 a tick to everyone plus 27 a tick to the first 4 enemies, 8s cooldown (share 25 -> 27%); Righteous Fury's Holy threat bonus is +60% in build 70009 (was 90%); Holy Shield rank 3 221 per block at 0.08, rank 1 trains at 40. Raid sim shares (2026-09-29, prot-tank in the ElliotWood/Forever simulator 40be98e): seal 36%, white 30%, consecration 17%, holy_strike 12%, ret_aura 6%; 14% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.3073,
+          "share": 0.2973,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:1h", "tank", "shield", "threat"]
         },
         {
           "id": "consecration",
-          "share": 0.1769,
+          "share": 0.1677,
           "tags": ["type:spell", "school:holy", "instant", "aoe", "ability:Consecration", "tank", "shield", "threat"],
           "can_crit": false,
           "game_overrides": {
@@ -228,7 +228,7 @@
         },
         {
           "id": "holy_strike",
-          "share": 0.1273,
+          "share": 0.1217,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Holy Strike", "weapon:1h", "tank", "shield", "threat"],
           "cooldown": 10,
           "game_overrides": {
@@ -238,7 +238,7 @@
         },
         {
           "id": "seal",
-          "share": 0.3282,
+          "share": 0.3557,
           "tags": ["type:melee", "yellow", "school:holy", "ability:Seals", "ability:Seal", "ability:Seal of Righteousness", "ability:Judgement of Righteousness", "ability:Judgements", "ability:Judgement", "weapon:1h", "tank", "shield", "threat"],
           "game_overrides": {
             "classic-era": {"share": 0.35}
@@ -246,7 +246,7 @@
         },
         {
           "id": "ret_aura",
-          "share": 0.0604,
+          "share": 0.0575,
           "tags": ["type:spell", "school:holy", "ability:Retribution Aura", "tank", "shield", "threat"],
           "can_crit": false,
           "min_level": 16

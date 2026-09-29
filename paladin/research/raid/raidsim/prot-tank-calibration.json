@@ -48,9 +48,9 @@
  "talents": [
   {
    "talent": "Champion of the Light",
-   "sim": 0.07536421974102868,
-   "ev_before": 0.06270464394935736,
-   "ev_after": 0.06270464394935736,
+   "sim": 0.07541939711466762,
+   "ev_before": 0.06386330453136274,
+   "ev_after": 0.06386330453136274,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -70,8 +70,8 @@
   {
    "talent": "Holy Shield",
    "sim": 0.047975142180925516,
-   "ev_before": 0.04109366763182864,
-   "ev_after": 0.04109366763182864,
+   "ev_before": 0.04110234859224269,
+   "ev_after": 0.04110234859224269,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -81,8 +81,8 @@
   {
    "talent": "Iron Creed",
    "sim": 0.03697042583257517,
-   "ev_before": 0.040282856375146274,
-   "ev_after": 0.040282856375146274,
+   "ev_before": 0.03985297124957583,
+   "ev_after": 0.03985297124957583,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -91,9 +91,9 @@
   },
   {
    "talent": "Vengeance",
-   "sim": 0.0349751452161253,
-   "ev_before": 0.03360370979752744,
-   "ev_after": 0.03360370979752744,
+   "sim": 0.03496740047093211,
+   "ev_before": 0.03367521222035548,
+   "ev_after": 0.03367521222035548,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -112,9 +112,9 @@
   },
   {
    "talent": "Deflection",
-   "sim": 0.03452230129171183,
-   "ev_before": 0.03990581988406075,
-   "ev_after": 0.03990581988406075,
+   "sim": 0.0345935887659553,
+   "ev_before": 0.03994799711403625,
+   "ev_after": 0.03994799711403625,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -133,9 +133,9 @@
   },
   {
    "talent": "Improved Righteous Fury",
-   "sim": 0.03251914403218832,
-   "ev_before": 0.03647618947298372,
-   "ev_after": 0.03647618947298372,
+   "sim": 0.032559322830753405,
+   "ev_before": 0.036459117381435834,
+   "ev_after": 0.036459117381435834,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -155,9 +155,9 @@
   },
   {
    "talent": "Vindication",
-   "sim": 0.029273238805113264,
-   "ev_before": 0.02575799046299356,
-   "ev_after": 0.02575799046299356,
+   "sim": 0.029323818438401515,
+   "ev_before": 0.026166335639418992,
+   "ev_after": 0.026166335639418992,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -175,10 +175,21 @@
    ]
   },
   {
+   "talent": "Improved Judgement",
+   "sim": 0.02062860834992015,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "builds": [
+    "prot-tank"
+   ]
+  },
+  {
    "talent": "Conviction",
-   "sim": 0.020399972290437322,
-   "ev_before": 0.021043338526874452,
-   "ev_after": 0.021043338526874452,
+   "sim": 0.02038416769929427,
+   "ev_before": 0.02137538255021426,
+   "ev_after": 0.02137538255021426,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -197,9 +208,9 @@
   },
   {
    "talent": "Anticipation",
-   "sim": 0.02036561933501361,
-   "ev_before": 0.02000172097146784,
-   "ev_after": 0.02000172097146784,
+   "sim": 0.020088652135751266,
+   "ev_before": 0.01993235251920732,
+   "ev_after": 0.01993235251920732,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -220,8 +231,8 @@
   {
    "talent": "Improved Seals",
    "sim": 0.01985449788337236,
-   "ev_before": 0.021136840420008993,
-   "ev_after": 0.021136840420008993,
+   "ev_before": 0.022820057953088706,
+   "ev_after": 0.022820057953088706,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -232,9 +243,9 @@
   },
   {
    "talent": "Templar's Bulwark",
-   "sim": 0.018118338520539398,
-   "ev_before": 0.021370933525136377,
-   "ev_after": 0.021370933525136377,
+   "sim": 0.018088832131004876,
+   "ev_before": 0.021337483955708867,
+   "ev_after": 0.021337483955708867,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -248,9 +259,9 @@
   },
   {
    "talent": "Precision",
-   "sim": 0.01682419267794419,
-   "ev_before": 0.019287043640785585,
-   "ev_after": 0.019287043640785585,
+   "sim": 0.016887017215639698,
+   "ev_before": 0.019306650001947492,
+   "ev_after": 0.019306650001947492,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -270,9 +281,9 @@
   },
   {
    "talent": "Holy Conduit",
-   "sim": 0.014971973236311205,
-   "ev_before": 0.012655819945952771,
-   "ev_after": 0.012655819945952771,
+   "sim": 0.015228170974386977,
+   "ev_before": 0.012639115353855984,
+   "ev_after": 0.012639115353855984,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -289,9 +300,9 @@
   },
   {
    "talent": "Shield Specialization",
-   "sim": 0.012539195716505221,
-   "ev_before": 0.007370965128660434,
-   "ev_after": 0.007370965128660434,
+   "sim": 0.012617937042882726,
+   "ev_before": 0.007413799988043085,
+   "ev_after": 0.007413799988043085,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -306,9 +317,9 @@
   },
   {
    "talent": "One-Handed Weapon Specialization",
-   "sim": 0.012165233674203735,
-   "ev_before": 0.015050291758418594,
-   "ev_after": 0.015050291758418594,
+   "sim": 0.012117383273689632,
+   "ev_before": 0.015280963752770082,
+   "ev_after": 0.015280963752770082,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -326,9 +337,9 @@
   },
   {
    "talent": "Sanctified Judgement",
-   "sim": 0.010623472740296623,
-   "ev_before": 0.013580129524518408,
-   "ev_after": 0.013580129524518408,
+   "sim": 0.011152211022997892,
+   "ev_before": 0.013574691359794567,
+   "ev_after": 0.013574691359794567,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -347,9 +358,9 @@
   },
   {
    "talent": "Sacred Arbiter",
-   "sim": 0.009329558828976132,
-   "ev_before": 0.012617156531027046,
-   "ev_after": 0.012617156531027046,
+   "sim": 0.009286899496954083,
+   "ev_before": 0.012924795678604096,
+   "ev_after": 0.012924795678604096,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -368,9 +379,9 @@
   },
   {
    "talent": "Swift Judgement",
-   "sim": 0.005177730684922521,
-   "ev_before": 0.008704069108233497,
-   "ev_after": 0.008704069108233497,
+   "sim": 0.005368849855285978,
+   "ev_before": 0.009372451580920418,
+   "ev_after": 0.009372451580920418,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -388,9 +399,9 @@
   },
   {
    "talent": "Redoubt",
-   "sim": 0.004982597076061861,
-   "ev_before": 0.015972521898042047,
-   "ev_after": 0.015972521898042047,
+   "sim": 0.005256744736479823,
+   "ev_before": 0.01609957903405199,
+   "ev_after": 0.01609957903405199,
    "scale": 1.0,
    "how": "apl",
    "builds": [
@@ -406,8 +417,8 @@
   {
    "talent": "Divine Strength",
    "sim": 0.00468427055326072,
-   "ev_before": 0.0057646248468025615,
-   "ev_after": 0.0057646248468025615,
+   "ev_before": 0.005778719716647791,
+   "ev_after": 0.005778719716647791,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -419,8 +430,8 @@
   {
    "talent": "Divine Intellect",
    "sim": 0.0038890579852288746,
-   "ev_before": 0.000877081701922417,
-   "ev_after": 0.000877081701922417,
+   "ev_before": 0.0008761932439838924,
+   "ev_after": 0.0008761932439838924,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -428,10 +439,21 @@
    ]
   },
   {
+   "talent": "Eye for an Eye",
+   "sim": 0.003175433677351353,
+   "ev_before": 3.392672676071408e-05,
+   "ev_after": 3.392672676071408e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "prot-tank"
+   ]
+  },
+  {
    "talent": "Reckoning",
    "sim": 0.002164306417192385,
-   "ev_before": 0.0022634585800265688,
-   "ev_after": 0.0022634585800265688,
+   "ev_before": 0.0022369405893085284,
+   "ev_after": 0.0022369405893085284,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -443,8 +465,8 @@
   {
    "talent": "Sacred Duty",
    "sim": 0.0016637922450686137,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 7.522777973129932e-05,
+   "ev_after": 7.522777973129932e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -453,13 +475,12 @@
   },
   {
    "talent": "Benediction",
-   "sim": 0.0010352199204119584,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "sim": 0.001275271633214421,
+   "ev_before": 4.726660662506598e-05,
+   "ev_after": 4.726660662506598e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
-    "prot-tank",
     "opt-prot-tank-raid-tank",
     "cand-prot-tank-hand-2026-09-28",
     "cand-prot-tank-r1",
@@ -475,8 +496,8 @@
   {
    "talent": "Improved Seal of Fury",
    "sim": 0.0,
-   "ev_before": 0.0021001909752955705,
-   "ev_after": 0.0021001909752955705,
+   "ev_before": 0.002107297187061715,
+   "ev_after": 0.002107297187061715,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -495,8 +516,8 @@
   {
    "talent": "Purifying Power",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 3.0089753741291407e-05,
+   "ev_after": 3.0089753741291407e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -506,8 +527,8 @@
   {
    "talent": "Toughness",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 0.00017726356310345976,
+   "ev_after": 0.00017726356310345976,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -522,8 +543,8 @@
   {
    "talent": "Voice of Truth",
    "sim": 0.0,
-   "ev_before": 0.0,
-   "ev_after": 0.0,
+   "ev_before": 3.0089753741291407e-05,
+   "ev_after": 3.0089753741291407e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
