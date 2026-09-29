@@ -167,5 +167,54 @@
     "60": 29.619666666505633
    }
   }
+ },
+ "shaman": {
+  "elemental-raid": {
+   "model": "elemental-dps",
+   "profile": "raid-dps",
+   "entry": "elemental-dps",
+   "search": {
+    "start": "/tmp/tmpmsxkdnjc/shaman-elemental-start.json",
+    "setting": "dummy",
+    "kept": [
+     "Elemental Focus"
+    ],
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Ancestral Knowledge -> Mindfulness",
+      "gain_seed1": 0.006619486991874535,
+      "gain_seed2": 0.007835326686815858,
+      "split": "31/7/13"
+     },
+     {
+      "round": 2,
+      "move": "1 point Reverberation -> Elemental Devastation",
+      "gain_seed1": 0.0025613530116463945,
+      "gain_seed2": 0.0025864640886952284,
+      "split": "31/7/13"
+     }
+    ],
+    "dps_start": 393.68369055771126,
+    "dps_end": 397.58692226665994
+   },
+   "spec": "Elemental",
+   "mode": "raid",
+   "date": "2026-09-29"
+  },
+  "enhancement-pvp": {
+   "model": "enhancement-dps",
+   "profile": "pvp",
+   "spec": "Enhancement",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "restoration-pvp": {
+   "model": "resto-heal",
+   "profile": "pvp",
+   "spec": "Restoration",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
  }
 }

@@ -863,6 +863,146 @@
       "notes": ["Report: shaman/talents/forever/optimizer/enhancement-dps-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "elemental-raid",
+      "name": "Elemental — Raid (generated)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Elemental",
+      "generated": "2026-09-29",
+      "summary": "The best Elemental raid build with at least 30 points in Elemental, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (elemental-dps, profile raid-dps), refined in the community simulator's talent search (elemental-dps). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Concussion", 5],
+          ["Elemental Warding", 3],
+          ["Call of Flame", 3],
+          ["Elemental Devastation", 1],
+          ["Elemental Focus", 1],
+          ["Elemental Alacrity", 3],
+          ["Call of Thunder", 1],
+          ["Lightning Overload", 3],
+          ["Elemental Fury", 5],
+          ["Lava Burst", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 2]
+        ],
+        "Restoration": [
+          ["Totemic Focus", 5],
+          ["Mindfulness", 3],
+          ["Tidal Focus", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Elemental Alacrity", "why": "The scorer's value in this build: +41.1% of its score (model elemental-dps)."},
+        {"talent": "Elemental Fury", "why": "The scorer's value in this build: +21.2% of its score (model elemental-dps)."},
+        {"talent": "Tidal Focus", "why": "The scorer's value in this build: +12.0% of its score (model elemental-dps)."},
+        {"talent": "Thundering Strikes", "why": "The scorer's value in this build: +9.5% of its score (model elemental-dps)."},
+        {"talent": "Concussion", "why": "The scorer's value in this build: +9.4% of its score (model elemental-dps)."},
+        {"talent": "Call of Flame", "why": "The scorer's value in this build: +8.2% of its score (model elemental-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model elemental-dps, profile raid-dps."],
+      "open_questions": ["A generated Elemental build: check it against the community's Elemental builds at launch."],
+      "sources": ["https://talentsforever.com/shaman"]
+    },
+    {
+      "id": "enhancement-pvp",
+      "name": "Enhancement — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-09-29",
+      "summary": "The best Enhancement pvp build with at least 30 points in Enhancement, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (enhancement-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Elemental Warding", 3],
+          ["Reverberation", 5],
+          ["Call of Flame", 2],
+          ["Eye of the Storm", 3]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Guardian Totems", 1],
+          ["Mental Dexterity", 3],
+          ["Improved Ghost Wolf", 2],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 3],
+          ["Toughness", 5],
+          ["Flurry", 3],
+          ["Stormstrike", 1],
+          ["Spirit Weapons", 1],
+          ["Mental Quickness", 2],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": []
+      },
+      "core": [
+        {"talent": "Stormstrike", "why": "The scorer's value in this build: +15.1% of its score (model enhancement-dps)."},
+        {"talent": "Rage of the Farseer", "why": "The scorer's value in this build: +11.1% of its score (model enhancement-dps)."},
+        {"talent": "Reverberation", "why": "The scorer's value in this build: +11.0% of its score (model enhancement-dps)."},
+        {"talent": "Shamanistic Focus", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."},
+        {"talent": "Eye of the Storm", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model enhancement-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Enhancement build: check it against the community's Enhancement builds at launch."],
+      "sources": ["https://talentsforever.com/shaman"]
+    },
+    {
+      "id": "restoration-pvp",
+      "name": "Restoration — PvP (generated)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-09-29",
+      "summary": "The best Restoration pvp build with at least 30 points in Restoration, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (resto-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Earth's Grasp", 2],
+          ["Thundering Strikes", 5],
+          ["Guardian Totems", 2],
+          ["Improved Ghost Wolf", 2],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 3],
+          ["Toughness", 4],
+          ["Stormstrike", 1]
+        ],
+        "Restoration": [
+          ["Improved Healing Wave", 5],
+          ["Tidal Focus", 4],
+          ["Improved Reincarnation", 2],
+          ["Ancestral Healing", 2],
+          ["Healing Focus", 3],
+          ["Restorative Totems", 5],
+          ["Healing Way", 3],
+          ["Nature's Swiftness", 1],
+          ["Purification", 5],
+          ["Riptide", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Riptide", "why": "The scorer's value in this build: +16.9% of its score (model resto-heal)."},
+        {"talent": "Healing Way", "why": "The scorer's value in this build: +16.8% of its score (model resto-heal)."},
+        {"talent": "Improved Healing Wave", "why": "The scorer's value in this build: +14.0% of its score (model resto-heal)."},
+        {"talent": "Purification", "why": "The scorer's value in this build: +9.1% of its score (model resto-heal)."},
+        {"talent": "Nature's Swiftness", "why": "The scorer's value in this build: +8.7% of its score (model resto-heal)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +7.7% of its score (model resto-heal)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model resto-heal, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Restoration build: check it against the community's Restoration builds at launch."],
+      "sources": ["https://talentsforever.com/shaman"]
     }
   ]
 }
