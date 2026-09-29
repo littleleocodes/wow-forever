@@ -1087,6 +1087,52 @@
       "sources": ["https://warcraftforever.games/talents/mage"]
     },
     {
+      "id": "opt-fire-raid-raid-dps",
+      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Arcane": [
+          ["Improved Channeling", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 2],
+          ["Arcane Concentration", 5]
+        ],
+        "Fire": [
+          ["Improved Fireball", 5],
+          ["Incineration", 3],
+          ["Wake of Fire", 2],
+          ["Ignite", 5],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 3],
+          ["Hot Streak", 1],
+          ["Master of Elements", 3],
+          ["Critical Mass", 3],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Scorch", "why": "Removing it costs 106.2 points of score in this model."},
+        {"talent": "Fire Power", "why": "Removing it costs 28.2 points of score in this model."},
+        {"talent": "Ignite", "why": "Removing it costs 27.3 points of score in this model."},
+        {"talent": "Hot Streak", "why": "Removing it costs 20.3 points of score in this model."},
+        {"talent": "Improved Fireball", "why": "Removing it costs 19.6 points of score in this model."},
+        {"talent": "Combustion", "why": "Removing it costs 18.5 points of score in this model."},
+        {"talent": "Critical Mass", "why": "Removing it costs 18.3 points of score in this model."},
+        {"talent": "Arcane Concentration", "why": "Removing it costs 17.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
       "id": "opt-frost-raid-raid-dps",
       "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
       "role": "dps",
@@ -1175,52 +1221,6 @@
       ],
       "flex": [],
       "notes": ["Report: mage/research/talents/forever/optimizer/frost-raid-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/mage"]
-    },
-    {
-      "id": "opt-fire-raid-raid-dps",
-      "name": "Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Arcane": [
-          ["Improved Channeling", 5],
-          ["Arcane Subtlety", 2],
-          ["Magic Absorption", 2],
-          ["Arcane Concentration", 5]
-        ],
-        "Fire": [
-          ["Improved Fireball", 5],
-          ["Incineration", 3],
-          ["Wake of Fire", 2],
-          ["Ignite", 5],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 3],
-          ["Hot Streak", 1],
-          ["Master of Elements", 3],
-          ["Critical Mass", 3],
-          ["Fire Power", 5],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Elemental Precision", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Scorch", "why": "Removing it costs 106.2 points of score in this model."},
-        {"talent": "Fire Power", "why": "Removing it costs 28.2 points of score in this model."},
-        {"talent": "Ignite", "why": "Removing it costs 27.3 points of score in this model."},
-        {"talent": "Hot Streak", "why": "Removing it costs 20.3 points of score in this model."},
-        {"talent": "Improved Fireball", "why": "Removing it costs 19.6 points of score in this model."},
-        {"talent": "Combustion", "why": "Removing it costs 18.5 points of score in this model."},
-        {"talent": "Critical Mass", "why": "Removing it costs 18.3 points of score in this model."},
-        {"talent": "Arcane Concentration", "why": "Removing it costs 17.5 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
     }

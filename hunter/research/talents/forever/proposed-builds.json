@@ -1340,49 +1340,6 @@
       "sources": ["https://talentsforever.com/hunter"]
     },
     {
-      "id": "opt-mm-lonewolf-raid-raid-dps",
-      "name": "Optimizer — Marksmanship without a pet (Forever Lone Wolf) (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Careful Aim", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 5],
-          ["Lone Wolf", 1],
-          ["Improved Arcane Shot", 5],
-          ["Mortal Shots", 5],
-          ["Trueshot Aura", 1],
-          ["Barrage", 3],
-          ["Ranged Weapon Specialization", 5]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5],
-          ["Survivalist", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Lone Wolf", "why": "Removing it costs 29.4 points of score in this model."},
-        {"talent": "Efficiency", "why": "Removing it costs 13.4 points of score in this model."},
-        {"talent": "Lethal Attacks", "why": "Removing it costs 9.6 points of score in this model."},
-        {"talent": "Deadly Aspects", "why": "Removing it costs 9.6 points of score in this model."},
-        {"talent": "Mortal Shots", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Careful Aim", "why": "Removing it costs 7.6 points of score in this model."},
-        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 6.5 points of score in this model."},
-        {"talent": "Trueshot Aura", "why": "Removing it costs 4.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/hunter"]
-    },
-    {
       "id": "opt-mm-lonewolf-raid-parse",
       "name": "Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)",
       "role": "dps",
@@ -1506,6 +1463,49 @@
       ],
       "flex": [],
       "notes": ["Report: hunter/research/talents/forever/optimizer/mm-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "opt-mm-lonewolf-raid-raid-dps",
+      "name": "Optimizer — Marksmanship without a pet (Forever Lone Wolf) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Lone Wolf", 1],
+          ["Improved Arcane Shot", 5],
+          ["Mortal Shots", 5],
+          ["Trueshot Aura", 1],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Survivalist", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Lone Wolf", "why": "Removing it costs 29.4 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 13.5 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 9.6 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 9.6 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 9.5 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Trueshot Aura", "why": "Removing it costs 4.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     }

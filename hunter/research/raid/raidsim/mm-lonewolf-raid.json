@@ -26,7 +26,7 @@
    "potId": 13444
   },
   "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
-  "iterations": 1500,
+  "iterations": 3000,
   "seed": 1,
   "duration": 180.0
  },
@@ -39,48 +39,48 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25296": 1.0,
-    "2643": 0.09066666666666667,
     "3045": 1.0,
+    "25296": 1.0,
     "14287": 21.207333333333334,
-    "20904": 12.751333333333333,
-    "25295": 6.996666666666667,
-    "20554": 1.0
+    "2643": 0.09933333333333333,
+    "25295": 6.997333333333334,
+    "20554": 1.0,
+    "20904": 12.737666666666666
    },
    "casts": {
-    "Auto Shot": 83.706,
-    "Aspect of the Hawk": 1.0,
-    "Multi-Shot": 0.09066666666666667,
     "OtherActionManaGain": 2.0,
     "Rapid Fire": 1.0,
-    "item 13444": 2.0,
+    "Auto Shot": 83.693,
+    "Aspect of the Hawk": 1.0,
     "Arcane Shot": 21.207333333333334,
-    "Aimed Shot": 12.751333333333333,
-    "Serpent Sting": 6.996666666666667,
-    "Berserking": 1.0
+    "Multi-Shot": 0.09933333333333333,
+    "Serpent Sting": 6.997333333333334,
+    "Berserking": 1.0,
+    "item 13444": 2.0,
+    "Aimed Shot": 12.737666666666666
    },
-   "dps": 418.96702433649983,
-   "dps_stdev": 16.504918483810858,
-   "threat": 428.9670243364998,
+   "dps": 419.0187285344657,
+   "dps_stdev": 16.693522975216926,
+   "threat": 429.01872853446577,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 92.59117504344796,
+   "oom_seconds": 92.561159056815,
    "error": null,
    "scorer": 0.7613092263575735,
    "shares": {
-    "Auto Shot": 0.5459082092249672,
-    "Arcane Shot": 0.1961378003053363,
-    "Serpent Sting": 0.14788753513188796,
-    "Aimed Shot": 0.1093649964606594,
-    "Multi-Shot": 0.0007014588771491261
+    "Auto Shot": 0.5456476125125609,
+    "Arcane Shot": 0.19604657833061076,
+    "Serpent Sting": 0.1479029509367202,
+    "Aimed Shot": 0.10964669565798645,
+    "Multi-Shot": 0.0007561625621216971
    },
    "source_shares": {
-    "auto": 0.5459,
-    "arcane": 0.1961,
+    "auto": 0.5456,
+    "arcane": 0.196,
     "serpent": 0.1479,
-    "aimed": 0.1094,
-    "multi": 0.0007
+    "aimed": 0.1096,
+    "multi": 0.0008
    },
    "unmatched_share": 0.0
   },
@@ -91,47 +91,47 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14287": 25.184,
-    "2643": 0.038,
-    "25295": 5.946666666666666,
     "3045": 1.0,
     "20554": 1.0,
+    "14287": 25.181,
+    "20904": 10.966333333333333,
+    "25295": 5.949333333333334,
     "25296": 1.0,
-    "20904": 10.962
+    "2643": 0.033666666666666664
    },
    "casts": {
-    "item 13444": 2.0,
-    "Arcane Shot": 25.184,
-    "Multi-Shot": 0.038,
-    "Serpent Sting": 5.946666666666666,
-    "Rapid Fire": 1.0,
     "OtherActionManaGain": 2.0,
+    "Auto Shot": 83.671,
+    "item 13444": 2.0,
+    "Rapid Fire": 1.0,
     "Berserking": 1.0,
+    "Arcane Shot": 25.181,
+    "Aimed Shot": 10.966333333333333,
+    "Serpent Sting": 5.949333333333334,
     "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 10.962,
-    "Auto Shot": 83.64133333333334
+    "Multi-Shot": 0.033666666666666664
    },
-   "dps": 419.49577596063125,
-   "dps_stdev": 16.750141133447944,
-   "threat": 429.49577596063125,
+   "dps": 419.9393534243545,
+   "dps_stdev": 16.50086237350309,
+   "threat": 429.9393534243545,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 106.79685640198932,
+   "oom_seconds": 106.83401043201228,
    "error": null,
    "scorer": 0.7766139059230904,
    "shares": {
-    "Auto Shot": 0.5444082012834254,
-    "Arcane Shot": 0.23234347746403494,
-    "Serpent Sting": 0.13026246493233268,
-    "Aimed Shot": 0.09268131320222532,
-    "Multi-Shot": 0.0003045431179817181
+    "Auto Shot": 0.5442683411037352,
+    "Arcane Shot": 0.23242572636651873,
+    "Serpent Sting": 0.13018927290377943,
+    "Aimed Shot": 0.09285915977423612,
+    "Multi-Shot": 0.00025749985173060413
    },
    "source_shares": {
-    "auto": 0.5444,
-    "arcane": 0.2323,
-    "serpent": 0.1303,
-    "aimed": 0.0927,
+    "auto": 0.5443,
+    "arcane": 0.2324,
+    "serpent": 0.1302,
+    "aimed": 0.0929,
     "multi": 0.0003
    },
    "unmatched_share": 0.0
@@ -143,44 +143,44 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "14287": 20.0,
-    "20904": 13.0,
     "3045": 1.0,
     "25296": 1.0,
-    "25295": 7.0
+    "20904": 13.0,
+    "25295": 7.0,
+    "20554": 1.0,
+    "14287": 20.0
    },
    "casts": {
-    "Berserking": 1.0,
-    "Arcane Shot": 20.0,
-    "Aimed Shot": 13.0,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 75.0,
-    "OtherActionManaGain": 2.0,
     "item 13444": 2.0,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Serpent Sting": 7.0
+    "Aimed Shot": 13.0,
+    "Serpent Sting": 7.0,
+    "Auto Shot": 75.0,
+    "Berserking": 1.0,
+    "Arcane Shot": 20.0
    },
-   "dps": 382.4450538174877,
-   "dps_stdev": 14.70304704815127,
-   "threat": 392.44505381748763,
+   "dps": 382.6268509965077,
+   "dps_stdev": 14.346790325914082,
+   "threat": 392.62685099650764,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 93.5252399909996,
+   "oom_seconds": 93.52523999100046,
    "error": null,
    "scorer": 0.5499154378909205,
    "shares": {
-    "Auto Shot": 0.5360274475385532,
-    "Arcane Shot": 0.2027151404575748,
-    "Serpent Sting": 0.13843892577322908,
-    "Aimed Shot": 0.12281848623064291
+    "Auto Shot": 0.5362637184659278,
+    "Arcane Shot": 0.20288365097753414,
+    "Serpent Sting": 0.13824886102190828,
+    "Aimed Shot": 0.1226037695346298
    },
    "source_shares": {
-    "auto": 0.536,
-    "arcane": 0.2027,
-    "serpent": 0.1384,
-    "aimed": 0.1228
+    "auto": 0.5363,
+    "arcane": 0.2029,
+    "serpent": 0.1382,
+    "aimed": 0.1226
    },
    "unmatched_share": 0.0
   },
@@ -192,47 +192,47 @@
    "measured": true,
    "spell_casts": {
     "25296": 1.0,
-    "14287": 21.207333333333334,
-    "25295": 6.996666666666667,
-    "3045": 1.0,
-    "20904": 12.751333333333333,
+    "20904": 12.737666666666666,
     "20554": 1.0,
-    "2643": 0.09066666666666667
+    "2643": 0.09933333333333333,
+    "25295": 6.997333333333334,
+    "3045": 1.0,
+    "14287": 21.207333333333334
    },
    "casts": {
-    "OtherActionManaGain": 2.0,
-    "item 13444": 2.0,
+    "Auto Shot": 83.693,
     "Aspect of the Hawk": 1.0,
-    "Arcane Shot": 21.207333333333334,
-    "Serpent Sting": 6.996666666666667,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 83.706,
-    "Aimed Shot": 12.751333333333333,
+    "Aimed Shot": 12.737666666666666,
     "Berserking": 1.0,
-    "Multi-Shot": 0.09066666666666667
+    "Multi-Shot": 0.09933333333333333,
+    "Serpent Sting": 6.997333333333334,
+    "Rapid Fire": 1.0,
+    "Arcane Shot": 21.207333333333334,
+    "OtherActionManaGain": 2.0,
+    "item 13444": 2.0
    },
-   "dps": 418.96702433649983,
-   "dps_stdev": 16.504918483810858,
-   "threat": 428.9670243364998,
+   "dps": 419.0187285344657,
+   "dps_stdev": 16.693522975216926,
+   "threat": 429.01872853446577,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 92.59117504344796,
+   "oom_seconds": 92.561159056815,
    "error": null,
    "scorer": 0.7667258717515448,
    "shares": {
-    "Auto Shot": 0.5459082092249671,
-    "Arcane Shot": 0.19613780030533629,
-    "Serpent Sting": 0.1478875351318879,
-    "Aimed Shot": 0.10936499646065939,
-    "Multi-Shot": 0.000701458877149126
+    "Auto Shot": 0.5456476125125609,
+    "Arcane Shot": 0.19604657833061076,
+    "Serpent Sting": 0.1479029509367202,
+    "Aimed Shot": 0.10964669565798645,
+    "Multi-Shot": 0.0007561625621216971
    },
    "source_shares": {
-    "auto": 0.5459,
-    "arcane": 0.1961,
+    "auto": 0.5456,
+    "arcane": 0.196,
     "serpent": 0.1479,
-    "aimed": 0.1094,
-    "multi": 0.0007
+    "aimed": 0.1096,
+    "multi": 0.0008
    },
    "unmatched_share": 0.0
   },
@@ -243,46 +243,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25296": 1.0,
     "20554": 1.0,
-    "20904": 11.956,
-    "14287": 20.730666666666668,
-    "2643": 0.028,
+    "14287": 20.735,
     "3045": 1.0,
-    "25295": 6.252
+    "20904": 11.961333333333334,
+    "25295": 6.237666666666667,
+    "25296": 1.0,
+    "2643": 0.029333333333333333
    },
    "casts": {
+    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
+    "Arcane Shot": 20.735,
+    "Rapid Fire": 1.0,
+    "Aimed Shot": 11.961333333333334,
+    "Serpent Sting": 6.237666666666667,
     "item 13444": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Berserking": 1.0,
-    "Aimed Shot": 11.956,
-    "Arcane Shot": 20.730666666666668,
-    "Multi-Shot": 0.028,
-    "Rapid Fire": 1.0,
-    "Auto Shot": 83.73,
-    "OtherActionManaGain": 2.0,
-    "Serpent Sting": 6.252
+    "Auto Shot": 83.72933333333333,
+    "Multi-Shot": 0.029333333333333333
    },
-   "dps": 406.63407453381296,
-   "dps_stdev": 16.65669473197485,
-   "threat": 416.63407453381285,
+   "dps": 407.0303737096421,
+   "dps_stdev": 16.485449673003405,
+   "threat": 417.03037370964205,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 100.47138336353396,
+   "oom_seconds": 100.40740085902695,
    "error": null,
    "scorer": 0.6370541660430706,
    "shares": {
-    "Auto Shot": 0.5620463504131232,
-    "Arcane Shot": 0.19648640850851676,
-    "Serpent Sting": 0.13552988199324492,
-    "Aimed Shot": 0.10572007879340128,
-    "Multi-Shot": 0.00021728029171377914
+    "Auto Shot": 0.5617326136389146,
+    "Arcane Shot": 0.19715788998760284,
+    "Serpent Sting": 0.13513000258117355,
+    "Aimed Shot": 0.10574286878644763,
+    "Multi-Shot": 0.0002366250058612909
    },
    "source_shares": {
-    "auto": 0.562,
-    "arcane": 0.1965,
-    "serpent": 0.1355,
+    "auto": 0.5617,
+    "arcane": 0.1972,
+    "serpent": 0.1351,
     "aimed": 0.1057,
     "multi": 0.0002
    },
@@ -295,48 +295,48 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25295": 6.996666666666667,
-    "20554": 1.0,
+    "3045": 1.0,
     "25296": 1.0,
-    "20904": 12.751333333333333,
     "14287": 21.207333333333334,
-    "2643": 0.09066666666666667,
-    "3045": 1.0
+    "20904": 12.737666666666666,
+    "25295": 6.997333333333334,
+    "20554": 1.0,
+    "2643": 0.09933333333333333
    },
    "casts": {
-    "Serpent Sting": 6.996666666666667,
-    "Auto Shot": 83.706,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.693,
     "OtherActionManaGain": 2.0,
-    "Berserking": 1.0,
     "Aspect of the Hawk": 1.0,
-    "Aimed Shot": 12.751333333333333,
-    "item 13444": 2.0,
     "Arcane Shot": 21.207333333333334,
-    "Multi-Shot": 0.09066666666666667,
-    "Rapid Fire": 1.0
+    "Aimed Shot": 12.737666666666666,
+    "Serpent Sting": 6.997333333333334,
+    "Berserking": 1.0,
+    "item 13444": 2.0,
+    "Multi-Shot": 0.09933333333333333
    },
-   "dps": 418.96702433649983,
-   "dps_stdev": 16.504918483810858,
-   "threat": 428.9670243364998,
+   "dps": 419.0187285344657,
+   "dps_stdev": 16.693522975216926,
+   "threat": 429.01872853446577,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 92.59117504344796,
+   "oom_seconds": 92.561159056815,
    "error": null,
    "scorer": 0.7704247396194652,
    "shares": {
-    "Auto Shot": 0.5459082092249671,
-    "Arcane Shot": 0.19613780030533629,
-    "Serpent Sting": 0.1478875351318879,
-    "Aimed Shot": 0.10936499646065939,
-    "Multi-Shot": 0.000701458877149126
+    "Auto Shot": 0.5456476125125609,
+    "Arcane Shot": 0.19604657833061076,
+    "Serpent Sting": 0.1479029509367202,
+    "Aimed Shot": 0.10964669565798645,
+    "Multi-Shot": 0.0007561625621216971
    },
    "source_shares": {
-    "auto": 0.5459,
-    "arcane": 0.1961,
+    "auto": 0.5456,
+    "arcane": 0.196,
     "serpent": 0.1479,
-    "aimed": 0.1094,
-    "multi": 0.0007
+    "aimed": 0.1096,
+    "multi": 0.0008
    },
    "unmatched_share": 0.0
   },
@@ -347,48 +347,48 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25296": 1.0,
+    "25295": 6.997333333333334,
     "14287": 21.207333333333334,
-    "20904": 12.751333333333333,
-    "2643": 0.09066666666666667,
-    "25295": 6.996666666666667,
-    "3045": 1.0,
-    "20554": 1.0
+    "25296": 1.0,
+    "2643": 0.09933333333333333,
+    "20554": 1.0,
+    "20904": 12.737666666666666,
+    "3045": 1.0
    },
    "casts": {
-    "Auto Shot": 83.706,
-    "Aspect of the Hawk": 1.0,
-    "Arcane Shot": 21.207333333333334,
-    "Aimed Shot": 12.751333333333333,
-    "Multi-Shot": 0.09066666666666667,
-    "Serpent Sting": 6.996666666666667,
-    "Rapid Fire": 1.0,
-    "OtherActionManaGain": 2.0,
     "item 13444": 2.0,
-    "Berserking": 1.0
+    "Serpent Sting": 6.997333333333334,
+    "Arcane Shot": 21.207333333333334,
+    "Aspect of the Hawk": 1.0,
+    "Multi-Shot": 0.09933333333333333,
+    "Auto Shot": 83.693,
+    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
+    "Aimed Shot": 12.737666666666666,
+    "Rapid Fire": 1.0
    },
-   "dps": 418.96702433649983,
-   "dps_stdev": 16.504918483810858,
-   "threat": 428.9670243364998,
+   "dps": 419.0187285344657,
+   "dps_stdev": 16.693522975216926,
+   "threat": 429.01872853446577,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 92.59117504344796,
+   "oom_seconds": 92.561159056815,
    "error": null,
    "scorer": 0.7704147396194653,
    "shares": {
-    "Auto Shot": 0.5459082092249672,
-    "Arcane Shot": 0.1961378003053363,
-    "Serpent Sting": 0.14788753513188796,
-    "Aimed Shot": 0.1093649964606594,
-    "Multi-Shot": 0.0007014588771491261
+    "Auto Shot": 0.5456476125125609,
+    "Arcane Shot": 0.19604657833061076,
+    "Serpent Sting": 0.1479029509367202,
+    "Aimed Shot": 0.10964669565798645,
+    "Multi-Shot": 0.0007561625621216971
    },
    "source_shares": {
-    "auto": 0.5459,
-    "arcane": 0.1961,
+    "auto": 0.5456,
+    "arcane": 0.196,
     "serpent": 0.1479,
-    "aimed": 0.1094,
-    "multi": 0.0007
+    "aimed": 0.1096,
+    "multi": 0.0008
    },
    "unmatched_share": 0.0
   },
@@ -401,46 +401,46 @@
    "spell_casts": {
     "25296": 1.0,
     "3045": 1.0,
+    "25295": 6.997333333333334,
     "20554": 1.0,
-    "25295": 6.996666666666667,
+    "2643": 0.09933333333333333,
     "14287": 21.207333333333334,
-    "20904": 12.751333333333333,
-    "2643": 0.09066666666666667
+    "20904": 12.737666666666666
    },
    "casts": {
-    "Auto Shot": 83.706,
-    "item 13444": 2.0,
+    "Auto Shot": 83.693,
     "Aspect of the Hawk": 1.0,
     "Rapid Fire": 1.0,
-    "Berserking": 1.0,
-    "Serpent Sting": 6.996666666666667,
     "OtherActionManaGain": 2.0,
+    "Serpent Sting": 6.997333333333334,
+    "Berserking": 1.0,
+    "item 13444": 2.0,
+    "Multi-Shot": 0.09933333333333333,
     "Arcane Shot": 21.207333333333334,
-    "Aimed Shot": 12.751333333333333,
-    "Multi-Shot": 0.09066666666666667
+    "Aimed Shot": 12.737666666666666
    },
-   "dps": 418.96702433649983,
-   "dps_stdev": 16.504918483810858,
-   "threat": 428.9670243364998,
+   "dps": 419.0187285344657,
+   "dps_stdev": 16.693522975216926,
+   "threat": 429.01872853446577,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 92.59117504344796,
+   "oom_seconds": 92.561159056815,
    "error": null,
    "scorer": 0.7704347396194653,
    "shares": {
-    "Auto Shot": 0.5459082092249671,
-    "Arcane Shot": 0.19613780030533629,
-    "Serpent Sting": 0.1478875351318879,
-    "Aimed Shot": 0.10936499646065939,
-    "Multi-Shot": 0.000701458877149126
+    "Auto Shot": 0.5456476125125609,
+    "Arcane Shot": 0.19604657833061076,
+    "Serpent Sting": 0.1479029509367202,
+    "Aimed Shot": 0.10964669565798645,
+    "Multi-Shot": 0.0007561625621216971
    },
    "source_shares": {
-    "auto": 0.5459,
-    "arcane": 0.1961,
+    "auto": 0.5456,
+    "arcane": 0.196,
     "serpent": 0.1479,
-    "aimed": 0.1094,
-    "multi": 0.0007
+    "aimed": 0.1096,
+    "multi": 0.0008
    },
    "unmatched_share": 0.0
   },
@@ -451,1258 +451,251 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14287": 25.184,
-    "20904": 10.962,
-    "2643": 0.038,
-    "25295": 5.946666666666666,
     "3045": 1.0,
+    "2643": 0.033666666666666664,
     "25296": 1.0,
-    "20554": 1.0
+    "14287": 25.181,
+    "20904": 10.966333333333333,
+    "20554": 1.0,
+    "25295": 5.949333333333334
    },
    "casts": {
-    "Arcane Shot": 25.184,
-    "Aimed Shot": 10.962,
-    "OtherActionManaGain": 2.0,
-    "item 13444": 2.0,
-    "Multi-Shot": 0.038,
-    "Serpent Sting": 5.946666666666666,
     "Rapid Fire": 1.0,
+    "Multi-Shot": 0.033666666666666664,
+    "Auto Shot": 83.671,
+    "OtherActionManaGain": 2.0,
     "Aspect of the Hawk": 1.0,
-    "Auto Shot": 83.64133333333334,
-    "Berserking": 1.0
+    "Arcane Shot": 25.181,
+    "Aimed Shot": 10.966333333333333,
+    "Berserking": 1.0,
+    "item 13444": 2.0,
+    "Serpent Sting": 5.949333333333334
    },
-   "dps": 419.49577596063125,
-   "dps_stdev": 16.750141133447944,
-   "threat": 429.49577596063125,
+   "dps": 419.9393534243545,
+   "dps_stdev": 16.50086237350309,
+   "threat": 429.9393534243545,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 106.79685640198932,
+   "oom_seconds": 106.83401043201228,
    "error": null,
    "scorer": 0.7766139059230904,
    "shares": {
-    "Auto Shot": 0.5444082012834254,
-    "Arcane Shot": 0.23234347746403494,
-    "Serpent Sting": 0.13026246493233268,
-    "Aimed Shot": 0.09268131320222532,
-    "Multi-Shot": 0.0003045431179817181
+    "Auto Shot": 0.5442683411037351,
+    "Arcane Shot": 0.23242572636651868,
+    "Serpent Sting": 0.1301892729037794,
+    "Aimed Shot": 0.0928591597742361,
+    "Multi-Shot": 0.0002574998517306041
    },
    "source_shares": {
-    "auto": 0.5444,
-    "arcane": 0.2323,
-    "serpent": 0.1303,
-    "aimed": 0.0927,
+    "auto": 0.5443,
+    "arcane": 0.2324,
+    "serpent": 0.1302,
+    "aimed": 0.0929,
     "multi": 0.0003
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Marksmanship",
+   "talents": "5023000501-0050550501503051",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "14287": 25.181,
+    "20904": 10.966333333333333,
+    "20554": 1.0,
+    "25296": 1.0,
+    "2643": 0.033666666666666664,
+    "3045": 1.0,
+    "25295": 5.949333333333334
+   },
+   "casts": {
+    "OtherActionManaGain": 2.0,
+    "item 13444": 2.0,
+    "Arcane Shot": 25.181,
+    "Aimed Shot": 10.966333333333333,
+    "Berserking": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Multi-Shot": 0.033666666666666664,
+    "Auto Shot": 83.671,
+    "Rapid Fire": 1.0,
+    "Serpent Sting": 5.949333333333334
+   },
+   "dps": 342.3561835361284,
+   "dps_stdev": 13.590160489521786,
+   "threat": 352.35618353612836,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 106.83401043201228,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Shot": 0.5563399227759939,
+    "Arcane Shot": 0.23758080507801868,
+    "Serpent Sting": 0.11089733464726541,
+    "Aimed Shot": 0.09491872643754558,
+    "Multi-Shot": 0.00026321106117640206
+   },
+   "source_shares": {
+    "auto": 0.5563,
+    "arcane": 0.2376,
+    "serpent": 0.1109,
+    "aimed": 0.0949,
+    "multi": 0.0003
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Beast Mastery 35/16/0",
+   "talents": "5520001505121251-0050551",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "20554": 1.0,
+    "20904": 14.843333333333334,
+    "25295": 7.368666666666667,
+    "14287": 23.553333333333335,
+    "3045": 1.0,
+    "2643": 0.14066666666666666,
+    "25296": 1.0
+   },
+   "casts": {
+    "Berserking": 1.0,
+    "Aimed Shot": 14.843333333333334,
+    "Serpent Sting": 7.368666666666667,
+    "OtherActionManaGain": 2.0,
+    "item 13444": 2.0,
+    "Arcane Shot": 23.553333333333335,
+    "Rapid Fire": 1.0,
+    "Multi-Shot": 0.14066666666666666,
+    "Auto Shot": 83.672,
+    "Aspect of the Hawk": 1.0
+   },
+   "dps": 314.55598155999735,
+   "dps_stdev": 10.526158402372745,
+   "threat": 324.5559815599974,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 79.46647751714099,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Shot": 0.531692089907985,
+    "Arcane Shot": 0.21526559136810924,
+    "Serpent Sting": 0.1363963334102219,
+    "Aimed Shot": 0.11564077348782087,
+    "Multi-Shot": 0.0010052118258629126
+   },
+   "source_shares": {
+    "auto": 0.5317,
+    "arcane": 0.2153,
+    "serpent": 0.1364,
+    "aimed": 0.1156,
+    "multi": 0.001
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Marksmanship 0/39/12",
+   "talents": "-3050552301503151-50024001",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "3045": 1.0,
+    "20554": 1.0,
+    "25295": 6.0,
+    "25296": 1.0,
+    "14287": 24.0,
+    "20904": 11.0,
+    "2643": 1.0
+   },
+   "casts": {
+    "Rapid Fire": 1.0,
+    "Berserking": 1.0,
+    "Serpent Sting": 6.0,
+    "Auto Shot": 75.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 24.0,
+    "OtherActionManaGain": 2.0,
+    "item 13444": 2.0,
+    "Aimed Shot": 11.0,
+    "Multi-Shot": 1.0
+   },
+   "dps": 322.6178545694765,
+   "dps_stdev": 12.244132301280192,
+   "threat": 332.61785456947655,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 97.72089215699938,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Shot": 0.5301078106610199,
+    "Arcane Shot": 0.239754961199539,
+    "Serpent Sting": 0.12022568356626238,
+    "Aimed Shot": 0.1012291297964204,
+    "Multi-Shot": 0.008682414776758188
+   },
+   "source_shares": {
+    "auto": 0.5301,
+    "arcane": 0.2398,
+    "serpent": 0.1202,
+    "aimed": 0.1012,
+    "multi": 0.0087
+   },
+   "unmatched_share": 0.0
+  },
+  {
+   "label": "sim preset: Survival 0/15/36",
+   "talents": "-005055-550230031051220151",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "20904": 13.0,
+    "25295": 7.0,
+    "20554": 1.0,
+    "25296": 1.0,
+    "14287": 21.0,
+    "3045": 1.0
+   },
+   "casts": {
+    "Aimed Shot": 13.0,
+    "Serpent Sting": 7.0,
+    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 21.0,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 75.0,
+    "item 13444": 2.0
+   },
+   "dps": 299.0292903939759,
+   "dps_stdev": 9.306556135573524,
+   "threat": 309.0292903939759,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 87.0382834710017,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Shot": 0.5356970431667322,
+    "Arcane Shot": 0.21060634687444652,
+    "Serpent Sting": 0.14271678930705856,
+    "Aimed Shot": 0.11097982065176276
+   },
+   "source_shares": {
+    "auto": 0.5357,
+    "arcane": 0.2106,
+    "serpent": 0.1427,
+    "aimed": 0.111
    },
    "unmatched_share": 0.0
   }
  ],
- "deltas": {
-  "mm-lone-wolf-raid": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.010099366511894301,
-    "dps_with": 418.96702433649983,
-    "dps_without": 414.77802900054223,
-    "ev_delta": 0.00873163200323932,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03940177410232474,
-    "dps_with": 418.96702433649983,
-    "dps_without": 403.08476931198146,
-    "ev_delta": 0.04453552247709106,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.05605366311582158,
-    "dps_with": 418.96702433649983,
-    "dps_without": 396.7289153662545,
-    "ev_delta": 0.0572016044890502,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07221731599071089,
-    "dps_with": 418.96702433649983,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 0.08149721905766193,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Endurance Training",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 2.8388779602596922e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hawk Eye",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 3.4066728945650446e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Aspect of the Monkey",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 5.6776269758238935e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.025270795122222682,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.64035758138874,
-    "ev_delta": 0.025501481263190077,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.053623554701042256,
-    "dps_with": 418.96702433649983,
-    "dps_without": 397.6439426274772,
-    "ev_delta": 0.0571469555733367,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000015,
-    "dps_with": 418.96702433649983,
-    "dps_without": 349.13918694708315,
-    "ev_delta": 0.19784759766349702,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150313946012405,
-    "dps_with": 418.96702433649983,
-    "dps_without": 398.4458140102284,
-    "ev_delta": 0.05646440460887762,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04229289365360409,
-    "dps_with": 418.96702433649983,
-    "dps_without": 401.96668986955547,
-    "ev_delta": 0.037687671269791695,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Killing",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Recuperation",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 4.0643032383518403e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.024905281555610264,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.78609162847516,
-    "ev_delta": 0.02809658685729289,
-    "apl_dependent": false
-   }
-  ],
-  "opt-mm-lonewolf-raid-raid-dps": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.00852194729791099,
-    "dps_with": 419.49577596063125,
-    "dps_without": 415.95106292388385,
-    "ev_delta": 0.008700870060005864,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.039378441650035116,
-    "dps_with": 419.49577596063125,
-    "dps_without": 403.6025370072838,
-    "ev_delta": 0.044537954584917085,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.051986554977222564,
-    "dps_with": 419.49577596063125,
-    "dps_without": 398.76533970504414,
-    "ev_delta": 0.056991429605033665,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07438645786093921,
-    "dps_with": 419.49577596063125,
-    "dps_without": 390.4514738540457,
-    "ev_delta": 0.08196562868749696,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Arcane Shot",
-    "ranks": 5,
-    "sim_delta": 0.0012620363737904621,
-    "dps_with": 419.49577596063125,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0035468808034433926,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.02219221288074783,
-    "dps_with": 419.49577596063125,
-    "dps_without": 410.38835032640867,
-    "ev_delta": 0.025410150104730845,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 419.49577596063125,
-    "dps_without": 419.49577596063125,
-    "ev_delta": 0.005182296208164392,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.054324882491346996,
-    "dps_with": 419.49577596063125,
-    "dps_without": 397.88094061611423,
-    "ev_delta": 0.05718334434315748,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000118,
-    "dps_with": 419.49577596063125,
-    "dps_without": 349.5798133005257,
-    "ev_delta": 0.19796880989895815,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150444658229255,
-    "dps_with": 419.49577596063125,
-    "dps_without": 398.9481711885474,
-    "ev_delta": 0.05650033553034048,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04320547417515291,
-    "dps_with": 419.49577596063125,
-    "dps_without": 402.1219082389501,
-    "ev_delta": 0.03768971591926017,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 419.49577596063125,
-    "dps_without": 419.49577596063125,
-    "ev_delta": 5.066073116148642e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.02489073902690586,
-    "dps_with": 419.49577596063125,
-    "dps_without": 409.3078022725879,
-    "ev_delta": 0.028098097077124774,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-hand-2026-09-26": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.011291388865320502,
-    "dps_with": 382.4450538174877,
-    "dps_without": 378.1749335832821,
-    "ev_delta": 0.008754788156232885,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.039365020550107085,
-    "dps_with": 382.4450538174877,
-    "dps_without": 367.9602894612233,
-    "ev_delta": 0.04453583447344462,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Clever Traps",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deterrence",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 6.452006525999602e-06,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 4,
-    "sim_delta": 0.053531153370522645,
-    "dps_with": 382.4450538174877,
-    "dps_without": 363.01257214268946,
-    "ev_delta": 0.02948654115099635,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Entrapment",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.00518205881290307,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Wing Clip",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.05394356617863003,
-    "dps_with": 382.4450538174877,
-    "dps_without": 362.870523707593,
-    "ev_delta": 0.05886586012836225,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000032,
-    "dps_with": 382.4450538174877,
-    "dps_without": 318.704211514573,
-    "ev_delta": 0.19776870371524796,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05149170841708928,
-    "dps_with": 382.4450538174877,
-    "dps_without": 363.7166615352761,
-    "ev_delta": 0.05816164941399807,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.042781919562005194,
-    "dps_with": 382.4450538174877,
-    "dps_without": 366.75458851273936,
-    "ev_delta": 0.03768793356218266,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Killing",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Surefooted",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 382.4450538174877,
-    "dps_without": 382.4450538174877,
-    "ev_delta": 9.678884064166436e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.02488237388518306,
-    "dps_with": 382.4450538174877,
-    "dps_without": 373.15994846090774,
-    "ev_delta": 0.02809678059189152,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r1": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.010099366511894301,
-    "dps_with": 418.96702433649983,
-    "dps_without": 414.77802900054223,
-    "ev_delta": 0.008731936245168,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03940177410232474,
-    "dps_with": 418.96702433649983,
-    "dps_without": 403.08476931198146,
-    "ev_delta": 0.04453712933807052,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.05605366311582158,
-    "dps_with": 418.96702433649983,
-    "dps_without": 396.7289153662545,
-    "ev_delta": 0.05720369337511764,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07221731599071089,
-    "dps_with": 418.96702433649983,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 0.08149995472538345,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hawk Eye",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 3.396227943230857e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Revive Pet",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.025270795122222682,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.64035758138874,
-    "ev_delta": 0.025502384600510006,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.003109523236128043,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.053623554701042256,
-    "dps_with": 418.96702433649983,
-    "dps_without": 397.6439426274772,
-    "ev_delta": 0.05714904235585766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000015,
-    "dps_with": 418.96702433649983,
-    "dps_without": 349.13918694708315,
-    "ev_delta": 0.19785578387924466,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150313946012405,
-    "dps_with": 418.96702433649983,
-    "dps_without": 398.4458140102284,
-    "ev_delta": 0.056466465136021125,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04229289365360409,
-    "dps_with": 418.96702433649983,
-    "dps_without": 401.96668986955547,
-    "ev_delta": 0.037689022142401524,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Killing",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Recuperation",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 4.053880865670043e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.024905281555610264,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.78609162847516,
-    "ev_delta": 0.028097584639545606,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r2": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.009721904073413652,
-    "dps_with": 406.63407453381296,
-    "dps_without": 402.7188802118409,
-    "ev_delta": 0.007646626290488974,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03979951419955796,
-    "dps_with": 406.63407453381296,
-    "dps_without": 391.06969082096714,
-    "ev_delta": 0.044538271404380395,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.06132203249302074,
-    "dps_with": 406.63407453381296,
-    "dps_without": 383.13920005847706,
-    "ev_delta": 0.062151947673121696,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 3,
-    "sim_delta": 0.040654921893880154,
-    "dps_with": 406.63407453381296,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 5.497982293502843e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hawk Eye",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 3.6652543573256306e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Revive Pet",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.023110337211388342,
-    "dps_with": 406.63407453381296,
-    "dps_without": 397.4488965111462,
-    "ev_delta": 0.022286589051805007,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 0.005182331683319849,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.05416896143781413,
-    "dps_with": 406.63407453381296,
-    "dps_without": 385.7389938508453,
-    "ev_delta": 0.05830829865896735,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000107,
-    "dps_with": 406.63407453381296,
-    "dps_without": 338.86172877817717,
-    "ev_delta": 0.20166069765994354,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.051331347544148295,
-    "dps_with": 406.63407453381296,
-    "dps_without": 386.78012929385926,
-    "ev_delta": 0.05761112094619433,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.042932573568865436,
-    "dps_with": 406.63407453381296,
-    "dps_without": 389.8948837529646,
-    "ev_delta": 0.03768998226620353,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Killing",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Rapid Recuperation",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 3.6652543573256306e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 406.63407453381296,
-    "dps_without": 406.63407453381296,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.025153145977487617,
-    "dps_with": 406.63407453381296,
-    "dps_without": 396.656905487117,
-    "ev_delta": 0.02809829380630241,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r3": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.010099366511894301,
-    "dps_with": 418.96702433649983,
-    "dps_without": 414.77802900054223,
-    "ev_delta": 0.008731552717431552,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03940177410232474,
-    "dps_with": 418.96702433649983,
-    "dps_without": 403.08476931198146,
-    "ev_delta": 0.044535567361255766,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.05605366311582158,
-    "dps_with": 418.96702433649983,
-    "dps_without": 396.7289153662545,
-    "ev_delta": 0.05720206057844384,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07221731599071089,
-    "dps_with": 418.96702433649983,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 0.08148967885968574,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hawk Eye",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 3.389132118212307e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.025270795122222682,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.64035758138874,
-    "ev_delta": 0.025501245852583614,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.005182028903487289,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.053623554701042256,
-    "dps_with": 418.96702433649983,
-    "dps_without": 397.6439426274772,
-    "ev_delta": 0.05714710728606966,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000015,
-    "dps_with": 418.96702433649983,
-    "dps_without": 349.13918694708315,
-    "ev_delta": 0.197848132243579,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150313946012405,
-    "dps_with": 418.96702433649983,
-    "dps_without": 398.4458140102284,
-    "ev_delta": 0.05646455441280237,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04229289365360409,
-    "dps_with": 418.96702433649983,
-    "dps_without": 401.96668986955547,
-    "ev_delta": 0.03768770900348678,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 4,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 6.778493968540833e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.024905281555610264,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.78609162847516,
-    "ev_delta": 0.028096614728184244,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r4": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.010099366511894301,
-    "dps_with": 418.96702433649983,
-    "dps_without": 414.77802900054223,
-    "ev_delta": 0.008731602467317653,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03940177410232474,
-    "dps_with": 418.96702433649983,
-    "dps_without": 403.08476931198146,
-    "ev_delta": 0.04453583011887285,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.05605366311582158,
-    "dps_with": 418.96702433649983,
-    "dps_without": 396.7289153662545,
-    "ev_delta": 0.05720240216030316,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07221731599071089,
-    "dps_with": 418.96702433649983,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 0.08149017665427145,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Endurance Training",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 1.1296915627030654e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.025270795122222682,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.64035758138874,
-    "ev_delta": 0.02550139356691616,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.005182058325307855,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.053623554701042256,
-    "dps_with": 418.96702433649983,
-    "dps_without": 397.6439426274772,
-    "ev_delta": 0.057147448522037174,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000015,
-    "dps_with": 418.96702433649983,
-    "dps_without": 349.13918694708315,
-    "ev_delta": 0.1978494708693553,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150313946012405,
-    "dps_with": 418.96702433649983,
-    "dps_without": 398.4458140102284,
-    "ev_delta": 0.05646489135542948,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04229289365360409,
-    "dps_with": 418.96702433649983,
-    "dps_without": 401.96668986955547,
-    "ev_delta": 0.037687929901335536,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 8.473308914926892e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.024905281555610264,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.78609162847516,
-    "ev_delta": 0.028096777887914134,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r5": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.010099366511894301,
-    "dps_with": 418.96702433649983,
-    "dps_without": 414.77802900054223,
-    "ev_delta": 0.008731502968112365,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.03940177410232474,
-    "dps_with": 418.96702433649983,
-    "dps_without": 403.08476931198146,
-    "ev_delta": 0.04453530460673916,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.05605366311582158,
-    "dps_with": 418.96702433649983,
-    "dps_without": 396.7289153662545,
-    "ev_delta": 0.05720171900066399,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07221731599071089,
-    "dps_with": 418.96702433649983,
-    "dps_without": 390.7482355378502,
-    "ev_delta": 0.08148918107118168,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Hawk Eye",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 2.2593831254061307e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.025270795122222682,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.64035758138874,
-    "ev_delta": 0.0255010981399623,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.005181999482000815,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.053623554701042256,
-    "dps_with": 418.96702433649983,
-    "dps_without": 397.6439426274772,
-    "ev_delta": 0.057146766054177255,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000015,
-    "dps_with": 418.96702433649983,
-    "dps_without": 349.13918694708315,
-    "ev_delta": 0.19784679363591656,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150313946012405,
-    "dps_with": 418.96702433649983,
-    "dps_without": 398.4458140102284,
-    "ev_delta": 0.05646421747419651,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04229289365360409,
-    "dps_with": 418.96702433649983,
-    "dps_without": 401.96668986955547,
-    "ev_delta": 0.03768748810822748,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Sniper Shot",
-    "ranks": 1,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 418.96702433649983,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 8.473213186723114e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.024905281555610264,
-    "dps_with": 418.96702433649983,
-    "dps_without": 408.78609162847516,
-    "ev_delta": 0.028096451570349297,
-    "apl_dependent": false
-   }
-  ],
-  "cand-mm-lonewolf-raid-r6": [
-   {
-    "talent": "Barrage",
-    "ranks": 3,
-    "sim_delta": 0.00852194729791099,
-    "dps_with": 419.49577596063125,
-    "dps_without": 415.95106292388385,
-    "ev_delta": 0.008700870060005864,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Careful Aim",
-    "ranks": 5,
-    "sim_delta": 0.039378441650035116,
-    "dps_with": 419.49577596063125,
-    "dps_without": 403.6025370072838,
-    "ev_delta": 0.044537954584917085,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Deadly Aspects",
-    "ranks": 5,
-    "sim_delta": 0.051986554977222564,
-    "dps_with": 419.49577596063125,
-    "dps_without": 398.76533970504414,
-    "ev_delta": 0.056991429605033665,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Efficiency",
-    "ranks": 5,
-    "sim_delta": 0.07438645786093921,
-    "dps_with": 419.49577596063125,
-    "dps_without": 390.4514738540457,
-    "ev_delta": 0.08196562868749696,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Arcane Shot",
-    "ranks": 5,
-    "sim_delta": 0.0012620363737904621,
-    "dps_with": 419.49577596063125,
-    "dps_without": 418.96702433649983,
-    "ev_delta": 0.0035468808034433926,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Stings",
-    "ranks": 3,
-    "sim_delta": 0.02219221288074783,
-    "dps_with": 419.49577596063125,
-    "dps_without": 410.38835032640867,
-    "ev_delta": 0.025410150104730845,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Improved Tracking",
-    "ranks": 5,
-    "sim_delta": 0.0,
-    "dps_with": 419.49577596063125,
-    "dps_without": 419.49577596063125,
-    "ev_delta": 0.005182296208164392,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lethal Attacks",
-    "ranks": 5,
-    "sim_delta": 0.054324882491346996,
-    "dps_with": 419.49577596063125,
-    "dps_without": 397.88094061611423,
-    "ev_delta": 0.05718334434315748,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Lone Wolf",
-    "ranks": 1,
-    "sim_delta": 0.20000000000000118,
-    "dps_with": 419.49577596063125,
-    "dps_without": 349.5798133005257,
-    "ev_delta": 0.19796880989895815,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Mortal Shots",
-    "ranks": 5,
-    "sim_delta": 0.05150444658229255,
-    "dps_with": 419.49577596063125,
-    "dps_without": 398.9481711885474,
-    "ev_delta": 0.05650033553034048,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Ranged Weapon Specialization",
-    "ranks": 5,
-    "sim_delta": 0.04320547417515291,
-    "dps_with": 419.49577596063125,
-    "dps_without": 402.1219082389501,
-    "ev_delta": 0.03768971591926017,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Survivalist",
-    "ranks": 3,
-    "sim_delta": 0.0,
-    "dps_with": 419.49577596063125,
-    "dps_without": 419.49577596063125,
-    "ev_delta": 5.066073116148642e-05,
-    "apl_dependent": false
-   },
-   {
-    "talent": "Trueshot Aura",
-    "ranks": 1,
-    "sim_delta": 0.02489073902690586,
-    "dps_with": 419.49577596063125,
-    "dps_without": 409.3078022725879,
-    "ev_delta": 0.028098097077124774,
-    "apl_dependent": false
-   }
-  ]
- }
+ "deltas": {}
 }

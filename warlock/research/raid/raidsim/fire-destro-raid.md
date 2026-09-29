@@ -14,9 +14,7 @@
 | `cand-fire-destro-raid-r5` | 21/11/19 | 529 | 29 | -3.2% | 478 | 3 | +76.0% |
 | `cand-fire-destro-raid-hand-2026-09-27` | 21/11/19 | 524 | 29 | -4.1% | 474 | 3 | +74.7% |
 | `cand-fire-destro-raid-r4` | 21/11/19 | 524 | 29 | -4.1% | 474 | 3 | +74.7% |
-| cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16 | 24/11/16 | 523 | 31 | -4.3% | 474 | 3 | +72.1% |
 | `cand-fire-destro-raid-r3` | 21/11/19 | 521 | 27 | -4.6% | 469 | 3 | +74.0% |
-| cand-fire-destro-raid-preset-ds-ruin | 24/11/16 | 514 | 31 | -5.8% | 508 | 3 | +69.2% |
 | `cand-fire-destro-raid-r2` | 21/11/19 | 512 | 23 | -6.2% | 462 | 3 | +71.4% |
 | `cand-fire-destro-raid-hand-2026-09-26` | 5/11/35 | 475 | 23 | -13.0% | 428 | 3 | +57.8% |
 | `cand-fire-destro-raid-r1` | 12/31/8 | 453 | 18 | -17.1% | 413 | 2 | +30.7% |
@@ -142,51 +140,6 @@ Mapped onto the spec model's sources: `filler` 50%, `agony` 20%, `corruption` 19
 | Demonic Aegis | 2 | +0.0% | +0.0% | 532 | 532 |
 | Improved Health Funnel | 2 | +0.0% | +0.0% | 532 | 532 |
 | Improved Imp | 3 | +0.0% | +0.0% | 532 | 532 |
-
-## Talent values in `cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16` (DPS lost when the talent is removed, relative to the build without it)
-
-| Talent | Ranks | Sim | Scorer | DPS with | without |
-|---|---|---|---|---|---|
-| Demonic Sacrifice | 1 | +13.2% | +13.8% | 523 | 462 |
-| Bane | 5 | +9.5% | +9.6% | 523 | 477 |
-| Malevolence | 5 | +5.7% | +5.7% | 523 | 494 |
-| Improved Shadow Bolt | 5 | +5.6% | +5.1% | 523 | 495 |
-| Suppression | 5 | +5.0% | +6.0% | 523 | 498 |
-| Ruin | 5 | +4.0% | +2.9% | 523 | 503 |
-| Improved Corruption | 2 | +2.9% | +1.8% | 523 | 508 |
-| Pandemic | 3 | +2.7% | +4.3% | 523 | 509 |
-| Improved Life Tap | 2 | +2.1% | +2.8% | 523 | 512 |
-| Fel Vitality | 3 | +1.0% | +2.3% | 523 | 517 |
-| Improved Bane of Agony | 1 | +1.0% | +0.7% | 523 | 517 |
-| Malediction | 2 | +0.9% | +0.9% | 523 | 518 |
-| Nightfall | 2 | +0.8% | +0.4% | 523 | 518 |
-| Shadowburn | 1 | +0.8% | +0.6% | 523 | 519 |
-| Amplify Curse | 1 | +0.5% | +0.7% | 523 | 520 |
-| Demonic Embrace | 2 | +0.0% | +0.0% | 523 | 523 |
-| Siphon Life | 1 | +0.0% | +0.0% | 523 | 523 |
-| Unholy Power | 5 | +0.0% | +0.0% | 523 | 523 |
-
-## Talent values in `cand-fire-destro-raid-preset-ds-ruin` (DPS lost when the talent is removed, relative to the build without it)
-
-| Talent | Ranks | Sim | Scorer | DPS with | without |
-|---|---|---|---|---|---|
-| Demonic Sacrifice | 1 | +13.1% | +13.8% | 514 | 455 |
-| Bane | 5 | +9.0% | +9.6% | 514 | 472 |
-| Improved Shadow Bolt | 5 | +4.8% | +5.0% | 514 | 491 |
-| Malevolence | 3 | +3.5% | +3.5% | 514 | 497 |
-| Improved Corruption | 3 | +3.5% | +2.6% | 514 | 497 |
-| Ruin | 5 | +3.4% | +2.9% | 514 | 498 |
-| Suppression | 3 | +3.0% | +3.6% | 514 | 499 |
-| Pandemic | 3 | +2.5% | +3.2% | 514 | 502 |
-| Malediction | 5 | +2.4% | +2.2% | 514 | 502 |
-| Improved Life Tap | 2 | +2.2% | +2.8% | 514 | 503 |
-| Improved Bane of Agony | 2 | +2.1% | +1.4% | 514 | 504 |
-| Nightfall | 2 | +1.0% | +0.4% | 514 | 509 |
-| Fel Vitality | 3 | +0.7% | +2.3% | 514 | 511 |
-| Amplify Curse | 1 | +0.5% | +0.7% | 514 | 512 |
-| Cataclysm | 1 | +0.5% | +0.5% | 514 | 512 |
-| Demonic Embrace | 4 | +0.0% | +0.0% | 514 | 514 |
-| Improved Imp | 3 | +0.0% | +0.0% | 514 | 514 |
 
 ## Talent values in `cand-fire-destro-raid-r1` (DPS lost when the talent is removed, relative to the build without it)
 
@@ -393,9 +346,7 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - cand-fire-destro-raid-r5: `25500020130201-2050003001-0550105003`
 - cand-fire-destro-raid-hand-2026-09-27: `25530000030201-2050003001-0550105003`
 - cand-fire-destro-raid-r4: `25530000030201-2050003001-0550105003`
-- cand-fire-destro-raid-preset-ds-ruin-pandemic-24-11-16: `25220010135201-0025003001-05500051`
 - cand-fire-destro-raid-r3: `25530000030201-2050003001-0350305003`
-- cand-fire-destro-raid-preset-ds-ruin: `233500201332-0340003001-0550105`
 - cand-fire-destro-raid-r2: `25550000010201-0250003001-0050335003`
 - cand-fire-destro-raid-hand-2026-09-26: `05-0050203001-2050355103101351`
 - cand-fire-destro-raid-r1: `255-0355003001020111351-00503`
