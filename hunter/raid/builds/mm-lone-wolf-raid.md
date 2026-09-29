@@ -69,16 +69,16 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 6** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 424 | +0.0% | 762 | +0.0% | 14 s |
-| 2 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/36/10 | 424 | -0.0% | 762 | -0.0% | 14 s |
-| 3 | *Marksmanship* | community simulator | - | 339 | -20.1% | 619 | -18.8% | 14 s |
-| 4 | *Marksmanship 0/39/12* | community simulator | - | 323 | -23.8% | 584 | -23.3% | 11 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 299 | -29.5% | 483 | -36.6% | 0 s |
-| 6 | *Survival 0/15/36* | community simulator | - | 299 | -29.5% | 481 | -36.8% | 11 s |
+| 1 | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) | ours: optimizer | 5/38/8 | 434 | +0.0% | 848 | -4.4% | 65 s |
+| 2 | **[`mm-lone-wolf-raid`](mm-lone-wolf-raid.md)** | ours: hand draft | 5/41/5 | 432 | -0.4% | 887 | +0.0% | 56 s |
+| 3 | *Marksmanship* | community simulator | - | 354 | -18.4% | 732 | -17.4% | 65 s |
+| 4 | *Marksmanship 0/39/12* | community simulator | - | 333 | -23.2% | 689 | -22.3% | 57 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 323 | -25.4% | 590 | -33.5% | 45 s |
+| 6 | *Survival 0/15/36* | community simulator | - | 309 | -28.8% | 594 | -33.1% | 52 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,18 +100,21 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 7.5 |
-| 4 | if time to the next auto attack > 0.5s: cast Multi-Shot | 0.5 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 4.0 |
+| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.7 |
+| 4 | cast Arcane Shot | 7.2 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
+
+Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) |
 |---|---|
-| Auto Shot | 55% |
-| Serpent Sting | 24% |
-| Aimed Shot | 19% |
-| Multi-Shot | 1% |
+| Auto Shot | 54% |
+| Arcane Shot | 19% |
+| Serpent Sting | 15% |
+| Aimed Shot | 11% |
+| Multi-Shot | 0% |
 
 ## Notes
 

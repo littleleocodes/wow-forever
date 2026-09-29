@@ -39,7 +39,7 @@
 | classic | `resto-swiftmend-healer` | resto-heal / raid-heal | **Nature's Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance on Healing Touch/Regrowth when hit. |
 | forever-draft | `balance-moonkin-raid` | balance-dps / raid-dps | **Subtlety** | Restoration | 2 | +0.00% | manual | utility | -20% healing threat for the off-heals. |
 
-## Hunter - 29 flagged of 56 taken talents, 4 without a documented reason
+## Hunter - 31 flagged of 58 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -70,6 +70,8 @@
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Frenzy** | Beast Mastery | 5 | +0.23% | manual | enabler | 'One of the most powerful talents', increasing the 'pet's damage and threat immensely'. |
 | forever-draft | `bm-solo-farm` | bm-leveling / solo-60 | **Bestial Wrath** | Beast Mastery | 1 | +0.36% | manual | throughput | 'An incredible damage cooldown... what makes this spec viable at low gear levels at Level 60.' |
 | forever-draft | `leveling-beast-mastery` | bm-leveling / leveling-st | **Hawk Eye** | Marksmanship | 3 | +0.00% | manual | control | Range: one more shot before the mob arrives and a wider kiting / dead-zone margin. |
+| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Hawk Eye** | Marksmanship | 3 | +0.00% | manual | control (from bm-leveling) | Range: one more shot before the mob arrives and a wider kiting / dead-zone margin. |
+| forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Sniper Shot** | Marksmanship | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Killing** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 

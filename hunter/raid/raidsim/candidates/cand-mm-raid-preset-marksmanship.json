@@ -1,0 +1,68 @@
+{
+ "id": "cand-mm-raid-preset-marksmanship",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Aspect of the Monkey",
+    3
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ]
+ },
+ "preset": "Marksmanship",
+ "talents": "5023000501-0050550501503051",
+ "note": "The community simulator's preset 'Marksmanship' (hunter/dps/presets.ts), a raid candidate since it ran within 6% of the best build of mm-raid (386 vs 404.1 in the race of 2026-09-28)."
+}

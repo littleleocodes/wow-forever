@@ -2268,10 +2268,11 @@
    "spec": "bm-leveling",
    "hand": "leveling-beast-mastery",
    "opt": "opt-bm-leveling-leveling-st",
-   "started": "2026-09-28T16:44:33",
+   "started": "2026-09-29T03:29:52",
    "steps": [
     "raid",
-    "adopt"
+    "adopt",
+    "regen"
    ],
    "raid": {
     "mm-raid": {
@@ -2280,15 +2281,17 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "cand-mm-raid-r6": 404.1,
-        "opt-mm-raid-raid-dps": 404.0,
-        "cand-mm-raid-r7": 402.0,
-        "cand-mm-raid-r5": 399.4,
-        "cand-mm-raid-r4": 394.2,
-        "cand-mm-raid-hand-2026-09-27": 383.3,
-        "cand-mm-raid-r1": 376.0,
-        "cand-mm-raid-r2": 373.0,
-        "cand-mm-raid-r3": 368.1
+        "cand-mm-raid-r6": 429.6,
+        "opt-mm-raid-raid-dps": 427.8,
+        "cand-mm-raid-r7": 427.6,
+        "cand-mm-raid-r5": 425.8,
+        "cand-mm-raid-r4": 419.5,
+        "cand-mm-raid-r8": 408.8,
+        "cand-mm-raid-preset-marksmanship": 400.6,
+        "cand-mm-raid-hand-2026-09-27": 395.6,
+        "cand-mm-raid-r1": 389.9,
+        "cand-mm-raid-r2": 387.0,
+        "cand-mm-raid-r3": 382.0
        },
        "converged_by_noise": true
       }
@@ -2296,79 +2299,79 @@
      "top": [
       [
        "cand-mm-raid-r6",
-       404.1
+       429.1
       ],
       [
        "opt-mm-raid-raid-dps",
-       404.0
+       427.6
       ],
       [
-       "cand-mm-raid-r8",
-       404.0
+       "cand-mm-raid-r9",
+       427.6
       ],
       [
        "cand-mm-raid-r7",
-       402.1
+       427.1
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "bm-mm-raid": {
-       "dummy": 399.53552362909096,
-       "dummy60": 432.8892807295333,
-       "raid": 648.7757497957109,
-       "max": 648.7757497957109,
-       "max60": 669.8118793636849
+       "dummy": 425.28962563052846,
+       "dummy60": 463.6161513276375,
+       "raid": 768.732634040942,
+       "max": 768.732634040942,
+       "max60": 795.0137880500504
       },
       "bm-mm-full-buffs-raid": {
-       "dummy": 383.33744874265153,
-       "dummy60": 414.76609972804556,
-       "raid": 701.8047899094613,
-       "max": 701.8047899094613,
-       "max60": 718.4166510603291
+       "dummy": 394.89304926191693,
+       "dummy60": 429.62329315487534,
+       "raid": 808.534899821374,
+       "max": 808.534899821374,
+       "max60": 835.3431327116718
       },
       "opt-mm-raid-raid-dps": {
-       "dummy": 404.0186521249162,
-       "dummy60": 437.8054864824314,
-       "raid": 660.1385233186259,
-       "max": 660.1385233186259,
-       "max60": 681.7061448340852
+       "dummy": 427.5740133222306,
+       "dummy60": 466.2694734795115,
+       "raid": 766.2525640096687,
+       "max": 766.2525640096687,
+       "max60": 792.3811613783249
       },
       "opt-mm-raid-parse": {
-       "dummy": 400.62110770931747,
-       "dummy60": 434.0614994006989,
-       "raid": 649.9794285005449,
-       "max": 664.5541237350045,
-       "max60": 686.1363365791359
+       "dummy": 421.5520954321924,
+       "dummy60": 459.7093034340279,
+       "raid": 762.3845306849196,
+       "max": 778.7112837354034,
+       "max60": 804.8740833173825
       },
       "sim preset: Marksmanship": {
-       "dummy": 386.0207533526511,
-       "dummy60": 418.0688604346258,
-       "raid": 694.9814305981109,
-       "max": 694.9814305981109,
-       "max60": 711.4366108795658
+       "dummy": 400.2858925082703,
+       "dummy60": 436.3284224873028,
+       "raid": 815.6375526732681,
+       "max": 815.6375526732681,
+       "max60": 837.3933402477537
       },
       "sim preset: Beast Mastery 35/16/0": {
-       "dummy": 363.87796038156546,
-       "dummy60": 395.9853939550153,
-       "raid": 590.795517902376,
-       "max": 603.4783469660076,
-       "max60": 629.7785230688012
+       "dummy": 380.9930938953812,
+       "dummy60": 417.01820649508085,
+       "raid": 698.2378974531963,
+       "max": 712.7203640024251,
+       "max60": 744.1090666118455
       },
       "sim preset: Marksmanship 0/39/12": {
-       "dummy": 352.95350962978773,
-       "dummy60": 382.14635707616407,
-       "raid": 631.9486020838752,
-       "max": 631.9486020838752,
-       "max60": 649.6069577674843
+       "dummy": 367.6656293329523,
+       "dummy60": 400.5314006174279,
+       "raid": 739.6239608309362,
+       "max": 739.6239608309362,
+       "max60": 763.8948529308699
       },
       "sim preset: Survival 0/15/36": {
-       "dummy": 328.7860922298467,
-       "dummy60": 353.5793715501896,
-       "raid": 537.900960121014,
-       "max": 549.5715578162905,
-       "max60": 569.2104152868316
+       "dummy": 342.60427518402184,
+       "dummy60": 370.85326054068463,
+       "raid": 649.0295048031393,
+       "max": 662.4747287441098,
+       "max60": 685.0236195571488
       }
      }
     },
@@ -2378,184 +2381,187 @@
        "round": 1,
        "new_build": true,
        "quick_race": {
-        "opt-mm-lonewolf-raid-raid-dps": 423.7,
-        "cand-mm-lonewolf-raid-r3": 423.7,
-        "cand-mm-lonewolf-raid-r4": 423.7,
-        "cand-mm-lonewolf-raid-r1": 423.7,
-        "cand-mm-lonewolf-raid-r2": 408.0,
-        "cand-mm-lonewolf-raid-hand-2026-09-26": 378.1
+        "opt-mm-lonewolf-raid-raid-dps": 433.7,
+        "cand-mm-lonewolf-raid-r1": 432.2,
+        "cand-mm-lonewolf-raid-r3": 432.2,
+        "cand-mm-lonewolf-raid-r4": 432.2,
+        "cand-mm-lonewolf-raid-r5": 432.2,
+        "cand-mm-lonewolf-raid-r2": 417.4,
+        "cand-mm-lonewolf-raid-hand-2026-09-26": 393.4
        },
        "converged_by_noise": true
       }
      ],
      "top": [
       [
+       "opt-mm-lonewolf-raid-raid-dps",
+       433.5
+      ],
+      [
+       "cand-mm-lonewolf-raid-r6",
+       433.5
+      ],
+      [
        "mm-lone-wolf-raid",
-       424.0
+       431.9
       ],
       [
        "cand-mm-lonewolf-raid-r1",
-       424.0
-      ],
-      [
-       "opt-mm-lonewolf-raid-raid-dps",
-       424.0
-      ],
-      [
-       "cand-mm-lonewolf-raid-r3",
-       424.0
+       431.9
       ]
      ],
      "promoted": null,
      "adopted": null,
      "environments": {
       "mm-lone-wolf-raid": {
-       "dummy": 424.01316848957066,
-       "dummy60": 451.8466314485846,
-       "raid": 761.6901023242222,
-       "max": 761.6901023242222,
-       "max60": 775.8176054743119
+       "dummy": 431.864500708389,
+       "dummy60": 462.681047788985,
+       "raid": 886.9443724023179,
+       "max": 886.9443724023179,
+       "max60": 916.0738620918452
       },
       "opt-mm-lonewolf-raid-raid-dps": {
-       "dummy": 423.99411715806605,
-       "dummy60": 451.8350112371158,
-       "raid": 761.6556535798076,
-       "max": 761.6556535798076,
-       "max60": 775.8176054743119
+       "dummy": 433.52556284556033,
+       "dummy60": 465.6035914456412,
+       "raid": 847.9437657365844,
+       "max": 847.9437657365844,
+       "max60": 863.496659827706
       },
       "opt-mm-lonewolf-raid-parse": {
-       "dummy": 413.6630395909493,
-       "dummy60": 440.89701057713603,
-       "raid": 670.2251239369102,
-       "max": 687.3303947009695,
-       "max60": 712.0309248317018
+       "dummy": 423.0181635656313,
+       "dummy60": 454.4064858839987,
+       "raid": 828.2503345367668,
+       "max": 847.9437657365844,
+       "max60": 863.496659827706
       },
       "sim preset: Marksmanship": {
-       "dummy": 338.9345302504509,
-       "dummy60": 360.4542563365965,
-       "raid": 618.8100846797672,
-       "max": 618.8100846797672,
-       "max60": 630.7234226700309
+       "dummy": 353.70316597046667,
+       "dummy60": 379.5541137874794,
+       "raid": 732.4987277987374,
+       "max": 732.4987277987374,
+       "max60": 750.1672799896862
       },
       "sim preset: Beast Mastery 35/16/0": {
-       "dummy": 299.1208081132955,
-       "dummy60": 315.51598804891006,
-       "raid": 482.99214554553237,
-       "max": 495.40457421370655,
-       "max60": 513.9574441917622
+       "dummy": 323.3240145684811,
+       "dummy60": 343.5901148122441,
+       "raid": 589.7569451841013,
+       "max": 603.9356768697851,
+       "max60": 625.686753912361
       },
       "sim preset: Marksmanship 0/39/12": {
-       "dummy": 323.14710501363646,
-       "dummy60": 344.1141430814687,
-       "raid": 583.9706396607734,
-       "max": 583.9706396607734,
-       "max60": 591.1008633798332
+       "dummy": 333.12706665763375,
+       "dummy60": 357.4651634259617,
+       "raid": 688.9710858289259,
+       "max": 688.9710858289259,
+       "max60": 716.0456741003859
       },
       "sim preset: Survival 0/15/36": {
-       "dummy": 298.76573489462373,
-       "dummy60": 315.4317549343475,
-       "raid": 481.18508300100183,
-       "max": 492.85296694754487,
-       "max60": 510.1531635345898
+       "dummy": 308.7473369558202,
+       "dummy60": 328.2252059332261,
+       "raid": 593.5305899282148,
+       "max": 606.9949910318102,
+       "max60": 627.9889479965526
       }
      }
     }
    },
-   "seconds": 279,
+   "seconds": 151,
    "log": [
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
-      "hunter mm-raid: no preset within 6% of the best build"
+      "hunter mm-raid: cand-mm-raid-preset-marksmanship.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py hunter --spec mm-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 38,
+     "seconds": 24,
      "tail": [
-      "Improved Mend Pet               0.0%      0.0%     0.0%   1.00   noise",
       "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
       "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
       "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Rapid Recuperation              0.0%      0.0%     0.0%   1.00   noise",
+      "Improved Aspect of the Monkey    0.0%      0.0%     0.0%   1.00   noise",
       "Summon Hawk                     0.0%      0.0%     0.0%   1.00   noise",
       "Hawk Eye                        0.0%      0.0%     0.0%   1.00   noise",
       "Improved Tracking               0.0%      0.0%     0.0%   1.00   noise",
       "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
       "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
       "Spirit Bond                     0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\hunter.manual.json (13 entries, 2 fitted) and hunter\\raid\\raidsim\\mm-raid-calibration.json"
+      "Rapid Recuperation             -0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (14 entries, 1 fitted) and hunter/raid/raidsim/mm-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile raid-dps --write --export --seed bm-mm-raid bm-mm-full-buffs-raid /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json",
      "rc": 0,
-     "seconds": 22,
+     "seconds": 29,
      "tail": [
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.14% | no |",
+      "| Endurance Training | Beast Mastery 1 | 4/5 | +0.25% | yes |",
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.24% | no |",
       "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
       "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
       "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | yes |",
       "",
-      "exported opt-mm-raid-raid-dps -> hunter\\talents\\forever\\proposed-builds.json",
+      "exported opt-mm-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter\\raid\\optimizer\\mm-raid-raid-dps.md"
+      "wrote hunter/raid/optimizer/mm-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --builds opt-mm-raid-raid-dps F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-09-27.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r1.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r2.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r3.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r4.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r5.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r6.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r7.json --iterations 6666 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds opt-mm-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r8.json --iterations 1000 --no-presets",
+     "rc": 0,
+     "seconds": 1,
+     "tail": [
+      "  cand-mm-raid-r6                             22/29/0  DPS    429.6 ±  17.7  threat      391  oom  43.5s  scorer +54.6%",
+      "  opt-mm-raid-raid-dps                        22/29/0  DPS    427.8 ±  18.4  threat      390  oom  44.7s  scorer +54.6%",
+      "  cand-mm-raid-r7                             22/29/0  DPS    427.6 ±  17.7  threat      391  oom  43.5s  scorer +53.8%",
+      "  cand-mm-raid-r5                             22/29/0  DPS    425.8 ±  17.6  threat      390  oom  43.5s  scorer +53.1%",
+      "  cand-mm-raid-r4                             24/27/0  DPS    419.5 ±  17.3  threat      383  oom  43.5s  scorer +50.6%",
+      "  cand-mm-raid-r8                             19/32/0  DPS    408.8 ±  18.6  threat      374  oom  53.4s  scorer +46.9%",
+      "  cand-mm-raid-preset-marksmanship              16/35  DPS    400.6 ±  17.6  threat      369  oom  59.8s  scorer +44.1%",
+      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    395.6 ±  18.2  threat      360  oom  53.8s  scorer +41.9%",
+      "  cand-mm-raid-r1                             19/32/0  DPS    389.9 ±  17.6  threat      356  oom  65.0s  scorer +37.6%",
+      "  cand-mm-raid-r2                             16/35/0  DPS    387.0 ±  17.5  threat      356  oom  65.0s  scorer +36.9%",
+      "  cand-mm-raid-r3                             7/31/13  DPS    382.0 ±  17.5  threat      356  oom  65.0s  scorer +35.0%",
+      "  damage shares of opt-mm-raid-raid-dps: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 14%, Aimed Shot 9%, Pet: Auto Attack 8%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 0% | model sources: auto 46%, arcane 20%, serpent 14%, pet 11%, aimed 9%, multi 0% (unmatched 0%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-hand-2026-09-27.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-preset-marksmanship.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r6.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r7.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r8.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-raid-r9.json --iterations 3000 --write",
      "rc": 0,
      "seconds": 3,
      "tail": [
-      "== hunter mm-raid: 9 builds x 6666 iterations, hunter/dps p1.bis.gear.json + mm.apl.json",
-      "  cand-mm-raid-r6                             22/29/0  DPS    404.1 ±  16.8  threat      366  oom   0.0s  scorer +45.2%",
-      "  opt-mm-raid-raid-dps                        19/32/0  DPS    404.0 ±  17.0  threat      369  oom  10.6s  scorer +45.1%",
-      "  cand-mm-raid-r7                             22/29/0  DPS    402.0 ±  16.7  threat      366  oom   0.0s  scorer +44.6%",
-      "  cand-mm-raid-r5                             22/29/0  DPS    399.4 ±  16.7  threat      363  oom   0.0s  scorer +43.6%",
-      "  cand-mm-raid-r4                             24/27/0  DPS    394.2 ±  16.4  threat      358  oom   0.0s  scorer +41.2%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    383.3 ±  16.5  threat      348  oom  12.4s  scorer +39.1%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    376.0 ±  16.4  threat      342  oom  26.0s  scorer +38.9%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    373.0 ±  16.4  threat      342  oom  26.0s  scorer +38.2%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    368.1 ±  16.4  threat      342  oom  26.0s  scorer +36.3%",
-      "  damage shares of opt-mm-raid-raid-dps: Auto Shot 49%, Serpent Sting 22%, Aimed Shot 16%, Pet: Auto Attack 8%, Pet: Claw 2%, Multi-Shot 2%, Pet: Bite 0% | model sources: auto 49%, serpent 22%, aimed 16%, pet 10%, multi 2% (unmatched 0%)"
+      "  cand-mm-raid-r8                             19/32/0  DPS    408.0 ±  17.9  threat      373  oom  53.4s  scorer +46.9%",
+      "  sim preset: Marksmanship                             DPS    400.3 ±  17.8  threat      369  oom  59.8s",
+      "  bm-mm-full-buffs-raid                       20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.9%",
+      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    394.9 ±  18.1  threat      359  oom  53.8s  scorer +41.9%",
+      "  cand-mm-raid-r1                             19/32/0  DPS    389.7 ±  17.7  threat      356  oom  65.0s  scorer +37.6%",
+      "  cand-mm-raid-r2                             16/35/0  DPS    386.8 ±  17.6  threat      356  oom  65.0s  scorer +36.9%",
+      "  cand-mm-raid-r3                             7/31/13  DPS    381.8 ±  17.6  threat      356  oom  65.0s  scorer +35.0%",
+      "  sim preset: Beast Mastery 35/16/0                    DPS    381.0 ±  13.7  threat      332  oom  53.2s",
+      "  sim preset: Marksmanship 0/39/12                     DPS    367.7 ±  15.3  threat      343  oom  54.4s",
+      "  sim preset: Survival 0/15/36                         DPS    342.6 ±  11.6  threat      318  oom  52.0s",
+      "  damage shares of bm-mm-raid: Auto Shot 46%, Arcane Shot 20%, Serpent Sting 13%, Aimed Shot 10%, Pet: Auto Attack 7%, Pet: Claw 2%, Pet: Bite 1%, Multi-Shot 0% | model sources: auto 46%, arcane 20%, serpent 13%, pet 10%, aimed 10%, multi 0% (unmatched 0%)",
+      "wrote hunter/raid/raidsim/mm-raid.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-hand-2026-09-27.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r1.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r2.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r3.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r4.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r5.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r6.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r7.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-raid-r8.json --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
      "rc": 0,
-     "seconds": 13,
+     "seconds": 22,
      "tail": [
-      "  cand-mm-raid-r4                             24/27/0  DPS    394.3 ±  16.5  threat      358  oom   0.0s  scorer +41.2%",
-      "  sim preset: Marksmanship                             DPS    386.0 ±  16.6  threat      354  oom  10.6s",
-      "  bm-mm-full-buffs-raid                       20/31/0  DPS    383.3 ±  16.5  threat      348  oom  12.4s  scorer +39.1%",
-      "  cand-mm-raid-hand-2026-09-27                20/31/0  DPS    383.3 ±  16.5  threat      348  oom  12.4s  scorer +39.1%",
-      "  cand-mm-raid-r1                             19/32/0  DPS    376.0 ±  16.6  threat      342  oom  26.0s  scorer +38.9%",
-      "  cand-mm-raid-r2                             16/35/0  DPS    373.1 ±  16.6  threat      342  oom  26.0s  scorer +38.2%",
-      "  cand-mm-raid-r3                             7/31/13  DPS    368.1 ±  16.5  threat      342  oom  26.0s  scorer +36.3%",
-      "  sim preset: Beast Mastery 35/16/0                    DPS    363.9 ±  13.1  threat      314  oom   0.7s",
-      "  sim preset: Marksmanship 0/39/12                     DPS    353.0 ±  13.8  threat      328  oom   6.1s",
-      "  sim preset: Survival 0/15/36                         DPS    328.8 ±  10.5  threat      304  oom   6.1s",
-      "  damage shares of bm-mm-raid: Auto Shot 49%, Serpent Sting 21%, Aimed Shot 16%, Pet: Auto Attack 8%, Multi-Shot 3%, Pet: Claw 2%, Pet: Bite 2% | model sources: auto 49%, serpent 21%, aimed 16%, pet 11%, multi 3% (unmatched 0%)",
-      "wrote hunter\\raid\\raidsim\\mm-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-raid --profile parse --write --export --seed bm-mm-raid bm-mm-full-buffs-raid",
-     "rc": 0,
-     "seconds": 44,
-     "tail": [
+      "| Intimidation | Beast Mastery 5 | 1/1 | +0.18% | no |",
       "| Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |",
       "| Survivalist | Survival 2 | 1/5 | +0.00% | no |",
       "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
@@ -2563,34 +2569,33 @@
       "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | yes |",
       "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | yes |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | yes |",
       "",
-      "exported opt-mm-raid-parse -> hunter\\talents\\forever\\proposed-builds.json",
+      "exported opt-mm-raid-parse -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter\\raid\\optimizer\\mm-raid-parse.md"
+      "wrote hunter/raid/optimizer/mm-raid-parse.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps opt-mm-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-raid --env environments --builds bm-mm-raid bm-mm-full-buffs-raid opt-mm-raid-raid-dps opt-mm-raid-parse --iterations 3000 --write",
      "rc": 0,
-     "seconds": 59,
+     "seconds": 9,
      "tail": [
       "== hunter mm-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
-      "  opt-mm-raid-raid-dps                        19/32/0  dummy   404.0  dummy60   437.8  raid   660.1  max   660.1  max60   681.7",
-      "  opt-mm-raid-parse                           21/30/0  dummy   400.6  dummy60   434.1  raid   650.0  max   664.6  max60   686.1",
-      "  bm-mm-raid                                  22/29/0  dummy   399.5  dummy60   432.9  raid   648.8  max   648.8  max60   669.8",
-      "  sim preset: Marksmanship                             dummy   386.0  dummy60   418.1  raid   695.0  max   695.0  max60   711.4",
-      "  bm-mm-full-buffs-raid                       20/31/0  dummy   383.3  dummy60   414.8  raid   701.8  max   701.8  max60   718.4",
-      "  sim preset: Beast Mastery 35/16/0                    dummy   363.9  dummy60   396.0  raid   590.8  max   603.5  max60   629.8",
-      "  sim preset: Marksmanship 0/39/12                     dummy   353.0  dummy60   382.1  raid   631.9  max   631.9  max60   649.6",
-      "  sim preset: Survival 0/15/36                         dummy   328.8  dummy60   353.6  raid   537.9  max   549.6  max60   569.2",
-      "wrote hunter\\raid\\raidsim\\mm-raid-environments.md"
+      "  opt-mm-raid-raid-dps                        22/29/0  dummy   427.6  dummy60   466.3  raid   766.3  max   766.3  max60   792.4",
+      "  bm-mm-raid                                  22/29/0  dummy   425.3  dummy60   463.6  raid   768.7  max   768.7  max60   795.0",
+      "  opt-mm-raid-parse                           22/29/0  dummy   421.6  dummy60   459.7  raid   762.4  max   778.7  max60   804.9",
+      "  sim preset: Marksmanship                             dummy   400.3  dummy60   436.3  raid   815.6  max   815.6  max60   837.4",
+      "  bm-mm-full-buffs-raid                       20/31/0  dummy   394.9  dummy60   429.6  raid   808.5  max   808.5  max60   835.3",
+      "  sim preset: Beast Mastery 35/16/0                    dummy   381.0  dummy60   417.0  raid   698.2  max   712.7  max60   744.1",
+      "  sim preset: Marksmanship 0/39/12                     dummy   367.7  dummy60   400.5  raid   739.6  max   739.6  max60   763.9",
+      "  sim preset: Survival 0/15/36                         dummy   342.6  dummy60   370.9  raid   649.0  max   662.5  max60   685.0",
+      "wrote hunter/raid/raidsim/mm-raid-environments.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --preset-candidates",
      "rc": 0,
      "seconds": 0,
      "tail": [
@@ -2599,14 +2604,13 @@
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py hunter --spec mm-lonewolf-raid --iterations 1500 --write",
      "rc": 0,
-     "seconds": 6,
+     "seconds": 9,
      "tail": [
-      "Improved Tracking               0.0%      0.5%     0.5%   1.00   noise",
       "Rapid Killing                   0.0%      0.0%     0.0%   1.00   noise",
+      "Rapid Recuperation              0.0%      0.0%     0.0%   1.00   noise",
       "Sniper Shot                     0.0%      0.0%     0.0%   1.00   noise",
-      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
       "Survivalist                     0.0%      0.0%     0.0%   1.00   noise",
       "Clever Traps                    0.0%      0.0%     0.0%   1.00   noise",
       "Deterrence                      0.0%      0.0%     0.0%   1.00   noise",
@@ -2614,100 +2618,102 @@
       "Improved Wing Clip              0.0%      0.0%     0.0%   1.00   noise",
       "Surefooted                      0.0%      0.0%     0.0%   1.00   noise",
       "Improved Revive Pet             0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference\\data\\scorer\\effects\\forever\\hunter.manual.json (10 entries, 3 fitted) and hunter\\raid\\raidsim\\mm-lonewolf-raid-calibration.json"
+      "Endurance Training              0.0%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/hunter.manual.json (10 entries, 1 fitted) and hunter/raid/raidsim/mm-lonewolf-raid-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile raid-dps --write --export --seed mm-lone-wolf-raid",
      "rc": 0,
-     "seconds": 22,
+     "seconds": 24,
      "tail": [
-      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
-      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
-      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
-      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.00% | no |",
-      "| Bestial Discipline | Beast Mastery 5 | 1/2 | +0.00% | no |",
-      "| Frenzy | Beast Mastery 6 | 1/5 | +0.00% | no |",
-      "",
-      "exported opt-mm-lonewolf-raid-raid-dps -> hunter\\talents\\forever\\proposed-builds.json",
-      "",
-      "wrote hunter\\raid\\optimizer\\mm-lonewolf-raid-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --builds opt-mm-lonewolf-raid-raid-dps F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-hand-2026-09-26.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r1.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r2.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r3.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r4.json --iterations 6666 --no-presets",
-     "rc": 0,
-     "seconds": 1,
-     "tail": [
-      "== hunter mm-lonewolf-raid: 6 builds x 6666 iterations, hunter/dps p1.bis.gear.json + mm.apl.json",
-      "  opt-mm-lonewolf-raid-raid-dps               5/36/10  DPS    423.7 ±  19.6  threat      431  oom  13.8s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    423.7 ±  19.6  threat      431  oom  13.8s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    423.7 ±  19.6  threat      431  oom  13.8s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    423.7 ±  19.7  threat      431  oom  13.7s  scorer +76.4%",
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    408.0 ±  19.3  threat      416  oom  20.2s  scorer +68.3%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    378.1 ±  16.8  threat      386  oom  11.7s  scorer +59.5%",
-      "  damage shares of opt-mm-lonewolf-raid-raid-dps: Auto Shot 55%, Serpent Sting 24%, Aimed Shot 19%, Multi-Shot 1% | model sources: auto 55%, serpent 24%, aimed 19%, multi 1% (unmatched 0%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-hand-2026-09-26.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r1.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r2.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r3.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r4.json F:\\wow-forever\\hunter\\raid\\raidsim\\candidates\\cand-mm-lonewolf-raid-r5.json --iterations 20000 --write",
-     "rc": 0,
-     "seconds": 6,
-     "tail": [
-      "  opt-mm-lonewolf-raid-raid-dps               5/36/10  DPS    424.0 ±  19.7  threat      431  oom  13.9s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    424.0 ±  19.7  threat      431  oom  13.9s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    424.0 ±  19.7  threat      431  oom  13.9s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    424.0 ±  19.7  threat      431  oom  13.9s  scorer +76.8%",
-      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    408.3 ±  19.4  threat      416  oom  20.2s  scorer +68.3%",
-      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    378.2 ±  16.5  threat      386  oom  11.7s  scorer +59.5%",
-      "  sim preset: Marksmanship                             DPS    338.9 ±  16.1  threat      346  oom  13.9s",
-      "  sim preset: Marksmanship 0/39/12                     DPS    323.1 ±  13.9  threat      331  oom  11.3s",
-      "  sim preset: Beast Mastery 35/16/0                    DPS    299.1 ±  12.6  threat      307  oom   0.0s",
-      "  sim preset: Survival 0/15/36                         DPS    298.8 ±  10.5  threat      306  oom  11.3s",
-      "  damage shares of mm-lone-wolf-raid: Auto Shot 55%, Serpent Sting 24%, Aimed Shot 19%, Multi-Shot 1% | model sources: auto 55%, serpent 24%, aimed 19%, multi 1% (unmatched 0%)",
-      "wrote hunter\\raid\\raidsim\\mm-lonewolf-raid.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid",
-     "rc": 0,
-     "seconds": 36,
-     "tail": [
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
       "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
       "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
       "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
       "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
       "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
-      "| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |",
-      "| Intimidation | Beast Mastery 5 | 1/1 | +0.00% | no |",
       "",
-      "exported opt-mm-lonewolf-raid-parse -> hunter\\talents\\forever\\proposed-builds.json",
+      "exported opt-mm-lonewolf-raid-raid-dps -> hunter/talents/forever/proposed-builds.json",
       "",
-      "wrote hunter\\raid\\optimizer\\mm-lonewolf-raid-parse.md"
+      "wrote hunter/raid/optimizer/mm-lonewolf-raid-raid-dps.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "F:\\wow-forever\\_reference\\data\\raidsim\\run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps opt-mm-lonewolf-raid-parse --iterations 20000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json --iterations 1000 --no-presets",
      "rc": 0,
-     "seconds": 28,
+     "seconds": 1,
+     "tail": [
+      "== hunter mm-lonewolf-raid: 7 builds x 1000 iterations, hunter/dps p1.bis.gear.json + mm.apl.json",
+      "  opt-mm-lonewolf-raid-raid-dps                5/38/8  DPS    433.7 ±  20.0  threat      441  oom  64.8s  scorer +78.0%",
+      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +75.7%",
+      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    432.2 ±  19.9  threat      440  oom  55.5s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    417.4 ±  20.7  threat      425  oom  59.9s  scorer +63.4%",
+      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    393.4 ±  17.9  threat      401  oom  58.9s  scorer +54.6%",
+      "  damage shares of opt-mm-lonewolf-raid-raid-dps: Auto Shot 54%, Arcane Shot 24%, Serpent Sting 13%, Aimed Shot 9%, Multi-Shot 0% | model sources: auto 54%, arcane 24%, serpent 13%, aimed 9%, multi 0% (unmatched 0%)"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json /home/user/wow-forever/hunter/raid/raidsim/candidates/cand-mm-lonewolf-raid-r6.json --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 2,
+     "tail": [
+      "  cand-mm-lonewolf-raid-r1                     7/41/3  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +75.7%",
+      "  cand-mm-lonewolf-raid-r3                     5/37/9  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r4                    7/34/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r5                    5/36/10  DPS    431.9 ±  20.4  threat      439  oom  55.6s  scorer +76.0%",
+      "  cand-mm-lonewolf-raid-r2                     7/39/5  DPS    417.3 ±  21.1  threat      425  oom  59.9s  scorer +63.4%",
+      "  cand-mm-lonewolf-raid-hand-2026-09-26       0/32/19  DPS    392.9 ±  17.9  threat      400  oom  58.9s  scorer +54.6%",
+      "  sim preset: Marksmanship                             DPS    353.7 ±  17.0  threat      361  oom  64.9s",
+      "  sim preset: Marksmanship 0/39/12                     DPS    333.1 ±  15.2  threat      341  oom  57.4s",
+      "  sim preset: Beast Mastery 35/16/0                    DPS    323.3 ±  13.0  threat      331  oom  44.9s",
+      "  sim preset: Survival 0/15/36                         DPS    308.7 ±  11.5  threat      316  oom  52.2s",
+      "  damage shares of mm-lone-wolf-raid: Auto Shot 54%, Arcane Shot 19%, Serpent Sting 15%, Aimed Shot 11%, Multi-Shot 0% | model sources: auto 54%, arcane 19%, serpent 15%, aimed 11%, multi 0% (unmatched 0%)",
+      "wrote hunter/raid/raidsim/mm-lonewolf-raid.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py hunter --spec mm-lonewolf-raid --profile parse --write --export --seed mm-lone-wolf-raid",
+     "rc": 0,
+     "seconds": 20,
+     "tail": [
+      "| Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |",
+      "| Pathfinding | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Improved Revive Pet | Beast Mastery 2 | 1/2 | +0.00% | yes |",
+      "| Bestial Swiftness | Beast Mastery 3 | 1/1 | +0.00% | no |",
+      "| Unleashed Fury | Beast Mastery 3 | 1/5 | +0.00% | no |",
+      "| Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |",
+      "| Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |",
+      "| Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |",
+      "",
+      "exported opt-mm-lonewolf-raid-parse -> hunter/talents/forever/proposed-builds.json",
+      "",
+      "wrote hunter/raid/optimizer/mm-lonewolf-raid-parse.md"
+     ],
+     "stderr": []
+    },
+    {
+     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py hunter --spec mm-lonewolf-raid --env environments --builds mm-lone-wolf-raid opt-mm-lonewolf-raid-raid-dps opt-mm-lonewolf-raid-parse --iterations 3000 --write",
+     "rc": 0,
+     "seconds": 5,
      "tail": [
       "== hunter mm-lonewolf-raid environments (gear raid p1.bis.gear.json, max p1.bis.gear.json):",
-      "  mm-lone-wolf-raid                            5/41/5  dummy   424.0  dummy60   451.8  raid   761.7  max   761.7  max60   775.8",
-      "  opt-mm-lonewolf-raid-raid-dps               5/36/10  dummy   424.0  dummy60   451.8  raid   761.7  max   761.7  max60   775.8",
-      "  opt-mm-lonewolf-raid-parse                  5/36/10  dummy   413.7  dummy60   440.9  raid   670.2  max   687.3  max60   712.0",
-      "  sim preset: Marksmanship                             dummy   338.9  dummy60   360.5  raid   618.8  max   618.8  max60   630.7",
-      "  sim preset: Marksmanship 0/39/12                     dummy   323.1  dummy60   344.1  raid   584.0  max   584.0  max60   591.1",
-      "  sim preset: Beast Mastery 35/16/0                    dummy   299.1  dummy60   315.5  raid   483.0  max   495.4  max60   514.0",
-      "  sim preset: Survival 0/15/36                         dummy   298.8  dummy60   315.4  raid   481.2  max   492.9  max60   510.2",
-      "wrote hunter\\raid\\raidsim\\mm-lonewolf-raid-environments.md"
+      "  opt-mm-lonewolf-raid-raid-dps                5/38/8  dummy   433.5  dummy60   465.6  raid   847.9  max   847.9  max60   863.5",
+      "  mm-lone-wolf-raid                            5/41/5  dummy   431.9  dummy60   462.7  raid   886.9  max   886.9  max60   916.1",
+      "  opt-mm-lonewolf-raid-parse                   5/37/9  dummy   423.0  dummy60   454.4  raid   828.3  max   847.9  max60   863.5",
+      "  sim preset: Marksmanship                             dummy   353.7  dummy60   379.6  raid   732.5  max   732.5  max60   750.2",
+      "  sim preset: Marksmanship 0/39/12                     dummy   333.1  dummy60   357.5  raid   689.0  max   689.0  max60   716.0",
+      "  sim preset: Beast Mastery 35/16/0                    dummy   323.3  dummy60   343.6  raid   589.8  max   603.9  max60   625.7",
+      "  sim preset: Survival 0/15/36                         dummy   308.7  dummy60   328.2  raid   593.5  max   607.0  max60   628.0",
+      "wrote hunter/raid/raidsim/mm-lonewolf-raid-environments.md"
      ],
      "stderr": []
     }
@@ -6414,11 +6420,13 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T03:08:39",
+  "date": "2026-09-29T03:32:58",
   "classes": [
    "hunter"
   ],
   "steps": [
+   "raid",
+   "adopt",
    "regen"
   ],
   "fights": {
@@ -6427,7 +6435,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 35,
+  "seconds": 187,
   "refresh": null,
   "regen_log": [
    {
@@ -6579,7 +6587,7 @@
     "seconds": 0,
     "tail": [
      "druid    buff=9 nerf=19 reworked=0 new=17 removed=13 same=6 unscored=0",
-     "hunter   buff=5 nerf=16 reworked=0 new=18 removed=14 same=11 unscored=0",
+     "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
      "mage     buff=8 nerf=16 reworked=1 new=11 removed=6 same=14 unscored=4",
      "paladin  buff=12 nerf=11 reworked=1 new=19 removed=13 same=7 unscored=0",
      "priest   buff=10 nerf=14 reworked=1 new=14 removed=8 same=12 unscored=2",
@@ -6596,7 +6604,7 @@
     "seconds": 1,
     "tail": [
      "druid    flagged 32/99  open 1",
-     "hunter   flagged 29/56  open 4",
+     "hunter   flagged 31/58  open 5",
      "mage     flagged 59/108  open 0",
      "paladin  flagged 25/71  open 1",
      "priest   flagged 24/56  open 3",
@@ -6604,7 +6612,7 @@
      "shaman   flagged 30/73  open 3",
      "warlock  flagged 23/63  open 8",
      "warrior  flagged 13/68  open 1",
-     "total flagged: 262 -> _reference/data/scorer/loops/audit.md"
+     "total flagged: 264 -> _reference/data/scorer/loops/audit.md"
     ],
     "stderr": []
    },

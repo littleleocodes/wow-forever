@@ -52,7 +52,7 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
 | Class | Best on the training dummy | DPS | Best in a raid | DPS |
 |---|---|---|---|---|
 | Druid | `opt-balance-dps-raid-dps` | 462 | `opt-feral-cat-dps-raid-dps` | 566 |
-| Hunter | `mm-hawk-raid` (Summon Hawk; rests on the simulator's hawk model) | 469 | `mm-hawk-raid` | 815 |
+| Hunter | `mm-hawk-raid` (Summon Hawk; rests on the simulator's hawk model) | 469 | `mm-lone-wolf-raid` (with Arcane Shot, 2026-09-29) | 887 |
 | Mage | `frost-fingers-of-frost-raid` | 588 | `frost-fingers-of-frost-raid` | 667 |
 | Paladin | `opt-ret-dps-raid-dps` | 368 | `ret-full-buffs-raid` | 805 |
 | Priest | `opt-shadow-dps-raid-dps` | 554 | `opt-shadow-dps-raid-dps` | 636 |
@@ -104,6 +104,12 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    +4.6% raid (792), two independent seeds; `talent_opt.py` from both builds in both settings agrees (candidates
    `hunter/raid/raidsim/candidates/cand-melee-dps-traps-*`). The scorer's `opt-melee-dps-*` builds still lack the trap talents
    because the melee model has no trap source; the fight lab has no traps, so `leveling-melee` is not re-optimized.
+   **Simulator gaps audit** (2026-09-29, `_reference/sim-gaps.md`): abilities the simulator implements but no rotation cast, and
+   talents it leaves unimplemented, for all nine classes. Found: hunter Arcane Shot (now in the mm-raid and mm-lonewolf-raid
+   rotations: +1.8-4.8% dummy, +16.5-16.8% raid; `mm-lone-wolf-raid` is the best raid hunter at 887) and the melee traps. Patch
+   candidates not done: Aspect of the Beast and the melee half of Deadly Aspects (melee hunter), warlock Bane of Doom. Root cause:
+   `apl_opt.py`'s insertion pool offers only new Forever spells; widen it to every implemented damaging ability no rotation casts.
+   Warrior Overpower and Rend are never castable (Berserker Stance only): part of the open Arms rotation item.
 2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
    confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
    still won on 17,000 fresh iterations, so the searches are not void, but the final checks were never independent. Worth

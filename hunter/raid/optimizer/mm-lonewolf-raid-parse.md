@@ -9,17 +9,18 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Lone Wolf | Marksmanship | 3 | +17.84% | manual |
+| Lone Wolf | Marksmanship | 3 | +18.93% | manual |
 | Efficiency | Marksmanship | 2 | +1.48% | manual |
-| Improved Stings | Marksmanship | 2 | +1.39% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
+| Improved Stings | Marksmanship | 2 | +1.10% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +1.05% | manual |
 | Bestial Discipline | Beast Mastery | 5 | +1.00% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +0.98% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.94% | manual |
+| Mortal Shots | Marksmanship | 4 | +0.99% | manual |
 | Careful Aim | Marksmanship | 2 | +0.89% | manual |
-| Lethal Attacks | Marksmanship | 1 | +0.84% | manual |
+| Lethal Attacks | Marksmanship | 1 | +0.89% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.75% | manual |
-| Barrage | Marksmanship | 5 | +0.55% | manual |
+| Barrage | Marksmanship | 5 | +0.43% | manual |
+| Improved Arcane Shot | Marksmanship | 3 | +0.28% | manual |
 | Resourcefulness | Survival | 5 | +0.20% | manual |
 | Improved Tracking | Survival | 1 | +0.10% | manual |
 | Survivalist | Survival | 2 | +0.00% | manual |
@@ -38,23 +39,24 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Intimidation | Beast Mastery | 5 | +0.00% | manual |
 | Frenzy | Beast Mastery | 6 | +0.00% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +0.00% | manual |
-| Hawk Eye | Marksmanship | 1 | +0.00% | manual |
 
-## Optimized build: 5/36/10  score +63.54%  (dps x1.561, sustain x1.369, surv x1.100, utility +0.00%)
+## Optimized build: 5/37/9  score +66.54%  (dps x1.591, sustain x1.369, surv x1.080, utility +0.00%)
 
 ```
   Beast Mastery: Deadly Aspects 5
-  Marksmanship: Lethal Attacks 5, Efficiency 5, Improved Stings 3, Careful Aim 5, Lone Wolf 1, Rapid Killing 2, Mortal Shots 5, Barrage 3, Rapid Recuperation 2, Ranged Weapon Specialization 5
-  Survival: Improved Tracking 5, Survivalist 5
+  Marksmanship: Lethal Attacks 5, Efficiency 5, Improved Stings 3, Careful Aim 5, Lone Wolf 1, Improved Arcane Shot 5, Mortal Shots 5, Barrage 3, Ranged Weapon Specialization 5
+  Survival: Improved Tracking 5, Survivalist 4
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Lightning Reflexes | Survival 6 | 1/5 | +1.87% | no |
+| Lightning Reflexes | Survival 6 | 1/5 | +1.91% | no |
 | Bestial Discipline | Beast Mastery 5 | 1/2 | +1.00% | no |
 | Resourcefulness | Survival 5 | 1/2 | +0.20% | no |
+| Survivalist | Survival 2 | 5/5 | +0.00% | yes |
+| Rapid Recuperation | Marksmanship 5 | 1/2 | +0.00% | no |
 | Endurance Training | Beast Mastery 1 | 1/5 | +0.00% | yes |
 | Focused Fire | Beast Mastery 2 | 1/2 | +0.00% | yes |
 | Improved Aspect of the Monkey | Beast Mastery 2 | 1/3 | +0.00% | yes |
@@ -65,6 +67,4 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Improved Mend Pet | Beast Mastery 4 | 1/2 | +0.00% | no |
 | Ferocity | Beast Mastery 4 | 1/5 | +0.00% | no |
 | Summon Hawk | Beast Mastery 4 | 1/1 | +0.00% | no |
-| Spirit Bond | Beast Mastery 5 | 1/2 | +0.00% | no |
-| Intimidation | Beast Mastery 5 | 1/1 | +0.00% | no |
 

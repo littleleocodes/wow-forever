@@ -406,7 +406,8 @@
       "builds": ["bm-mm-raid", "bm-mm-full-buffs-raid", "opt-mm-raid-raid-dps"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "rotation_note": "Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+4.8% dummy, +16.8% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing."
     },
     "mm-lonewolf-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid-raid.apl.json",
@@ -443,7 +444,8 @@
       "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "rotation_note": "Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+1.8% dummy, +16.5% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing."
     },
     "bm-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",

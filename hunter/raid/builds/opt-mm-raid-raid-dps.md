@@ -1,21 +1,21 @@
-# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps) — 19/32/0
+# Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps) — 22/29/0
 
 *[Hunter](../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 19/32/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 22/29/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +45.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +54.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Beast Mastery (19)
+### Beast Mastery (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -23,20 +23,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
-| **Ferocity** | 4/5 | changed | Increases the critical strike chance of your pets and hawks by 8%. |
+| **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
+| **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 
-### Marksmanship (32)
+### Marksmanship (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
+| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
-| **Ranged Weapon Specialization** | 5/5 | unchanged | Increases the damage you deal with ranged weapons by 5%. |
+| **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
 ### Survival (0)
 
@@ -44,13 +45,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Core talents (priority order)
 
-1. **Deadly Aspects** — Removing it costs 7.0 points of score in this model.
-2. **Mortal Shots** — Removing it costs 6.5 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 6.5 points of score in this model.
-4. **Ranged Weapon Specialization** — Removing it costs 6.2 points of score in this model.
-5. **Efficiency** — Removing it costs 5.6 points of score in this model.
-6. **Careful Aim** — Removing it costs 5.5 points of score in this model.
-7. **Improved Stings** — Removing it costs 4.9 points of score in this model.
+1. **Bestial Discipline** — Removing it costs 9.4 points of score in this model.
+2. **Efficiency** — Removing it costs 8.3 points of score in this model.
+3. **Mortal Shots** — Removing it costs 7.1 points of score in this model.
+4. **Lethal Attacks** — Removing it costs 7.1 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 6.8 points of score in this model.
+6. **Careful Aim** — Removing it costs 5.8 points of score in this model.
+7. **Ranged Weapon Specialization** — Removing it costs 5.0 points of score in this model.
 8. **Trueshot Aura** — Removing it costs 3.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
@@ -59,13 +60,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 404 | +0.0% | 660 | -5.9% | 11 s |
-| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 400 | -1.1% | 649 | -7.6% | 0 s |
-| 3 | *Marksmanship* | community simulator | - | 386 | -4.5% | 695 | -1.0% | 11 s |
-| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 20/31/0 | 383 | -5.1% | 702 | +0.0% | 12 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 364 | -9.9% | 591 | -15.8% | 1 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 353 | -12.6% | 632 | -10.0% | 6 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 329 | -18.6% | 538 | -23.4% | 6 s |
+| 1 | **[`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md)** | ours: optimizer | 22/29/0 | 428 | +0.0% | 766 | -6.1% | 45 s |
+| 2 | [`bm-mm-raid`](bm-mm-raid.md) | ours: hand draft | 22/29/0 | 425 | -0.5% | 769 | -5.8% | 44 s |
+| 3 | *Marksmanship* | community simulator | - | 400 | -6.4% | 816 | +0.0% | 60 s |
+| 4 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 20/31/0 | 395 | -7.6% | 809 | -0.9% | 54 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 381 | -10.9% | 698 | -14.4% | 53 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 368 | -14.0% | 740 | -9.3% | 54 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 343 | -19.9% | 649 | -20.4% | 52 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,23 +85,26 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | use every other cooldown when ready | as ready |
-| 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 |
-| 3 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 7.0 |
-| 4 | if time to the next auto attack > 1s: cast Multi-Shot | 1.0 |
-| 5 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 4.0 |
+| 1 | cast Arcane Shot | 8.8 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.5 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 5.0 |
+| 5 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.5 |
+
+Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 49% |
-| Serpent Sting | 22% |
-| Aimed Shot | 16% |
+| Auto Shot | 46% |
+| Arcane Shot | 20% |
+| Serpent Sting | 14% |
+| Aimed Shot | 9% |
 | Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
-| Multi-Shot | 2% |
-| Pet: Bite | 0% |
+| Pet: Bite | 1% |
+| Multi-Shot | 0% |
 
 ## Notes
 

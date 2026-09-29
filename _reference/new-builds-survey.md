@@ -8,8 +8,8 @@ Every spell the Forever beta spellbook (build 1.60.1.70009) marks new against Cl
 
 | Class | Idea | Build | Dummy DPS | Raid DPS | Against the class's best |
 |---|---|---|---|---|---|
-| Hunter | Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) | 469 | 815 | the class's best raid build on the training dummy; the best in a raid |
-| Hunter | A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/raid/builds/melee-survival-raid.md) | 380 | 792 | -18.8% on the dummy; -2.8% in a raid |
+| Hunter | Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) | 469 | 815 | the class's best raid build on the training dummy; -8.2% in a raid |
+| Hunter | A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/raid/builds/melee-survival-raid.md) | 380 | 792 | -18.8% on the dummy; -10.7% in a raid |
 | Mage | Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](../mage/raid/builds/frostfire-raid.md) | 514 | 590 | -12.6% on the dummy; -11.5% in a raid |
 | Mage | Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](../mage/raid/builds/arcane-blast-raid.md) | 542 | 619 | -7.9% on the dummy; -7.3% in a raid |
 | Mage | Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](../mage/raid/builds/frost-arcane-power-raid.md) | 548 | 627 | -6.7% on the dummy; -6.1% in a raid |
@@ -58,10 +58,10 @@ The class's best raid DPS build on the training dummy: [`opt-balance-dps-raid-dp
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) | 22/29/0 | 469 | 815 | the class's best raid build on the training dummy; the best in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/raid/builds/melee-survival-raid.md) | 5/11/35 | 380 | 792 | -18.8% on the dummy; -2.8% in a raid | from `melee-survival-raid`, 0 moves | - |
+| Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) | 22/29/0 | 469 | 815 | the class's best raid build on the training dummy; -8.2% in a raid | from `bm-mm-raid`, 4 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/raid/builds/melee-survival-raid.md) | 5/11/35 | 380 | 792 | -18.8% on the dummy; -10.7% in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) (bm-raid), 469 DPS; in a raid: [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) (bm-raid), 815 DPS.
+The class's best raid DPS build on the training dummy: [`mm-hawk-raid`](../hunter/raid/builds/mm-hawk-raid.md) (bm-raid), 469 DPS; in a raid: [`mm-lone-wolf-raid`](../hunter/raid/builds/mm-lone-wolf-raid.md) (mm-lonewolf-raid), 887 DPS.
 
 ## Mage
 
