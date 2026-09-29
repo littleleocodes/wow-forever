@@ -381,6 +381,13 @@ def new_spell_pool(cls):
             if re.search(r"over \d+ sec", str(top.get("text", ""))):
                 out.append({"action": {"condition": {"not": {"val": {"dotIsActive": {"spellId": {"spellId": sid}}}}},
                                        "castSpell": {"spellId": {"spellId": sid}}}})
+            # a lasting debuff or buff ("for 5 min", "for 30 sec": curses, Sunder Armor, marks, armors): a plain cast recasts it on every
+            # GCD, so it also comes guarded by "only while its aura is not on the target" and "... not on you" (2026-09-29: a plain Curse
+            # of the Elements took a warlock to 0 DPS)
+            if re.search(r"for \d+ (sec|min)", str(top.get("text", ""))):
+                for unit in ("CurrentTarget", "Self"):
+                    out.append({"action": {"condition": {"auraIsInactive": {"sourceUnit": {"type": unit}, "auraId": {"spellId": sid}}},
+                                           "castSpell": {"spellId": {"spellId": sid}}}})
     return out
 
 

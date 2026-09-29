@@ -11,6 +11,9 @@
   },
   "Corruption": {
    "min_hp": 0.35
+  },
+  "Curse of the Elements": {
+   "off": true
   }
  },
  "class": "warlock",
@@ -70,6 +73,11 @@
    ],
    "gain_seed1": 0.008952727535178395,
    "gain_seed2": 0.008991095037684915
+  },
+  {
+   "change": "Curse of the Elements off",
+   "date": "2026-09-29",
+   "note": "the curse (+10% magic damage taken, a Curse beside the Bane) was added to the fight lab's warlock on 2026-09-29; leveling-affliction, 3000 fights, two seeds: +3.3% time per kill at 50, +2.4% at 55, +1.7% at 60 (the mob dies before it repays the GCD and mana), so it stays off; the raid rotations already cast it"
   }
  ],
  "weighted_before": 44.607005040095785,
