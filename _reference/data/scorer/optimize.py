@@ -22,6 +22,8 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from effects import load_tree, load_effects  # noqa: E402
 from model import Evaluator, effects_for, load_profiles, load_specs, profile_modes  # noqa: E402
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+import utility_tags  # noqa: E402
 
 TOTAL = 51
 
@@ -113,6 +115,10 @@ class Optimizer:
         v = self._cache.get(key)
         if v is None:
             v = self.evaluator(level).score(effects_for(a, self.effects, *ctx), allocation=a)
+            if self.profile["id"] in utility_tags.RAID_PROFILES and self.tree.game == "forever":
+                # tie-break between talents the simulators measure alike (a zero-value filler): prefer interrupt protection, threat,
+                # mana, range, survival (utility_tags.py, 2026-09-29); far below any measured effect
+                v += utility_tags.tie_break(self.tree.cls, a, tank=self.profile["id"] == "raid-tank")
             self._cache[key] = v
         return v
 
