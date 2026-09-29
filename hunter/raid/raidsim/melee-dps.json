@@ -34,28 +34,79 @@
  "results": [
   {
    "label": "melee-survival-raid",
+   "talents": "5-005005001-500230230250222151",
+   "split": "5/11/35",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "3045": 1.0,
+    "14266": 39.9757,
+    "1317257": 14.99785,
+    "14271": 20.573999999999998,
+    "20554": 1.0,
+    "14305": 7.0
+   },
+   "casts": {
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 1.0,
+    "Raptor Strike": 39.9757,
+    "Strider Kick": 14.99785,
+    "Auto Attack": 95.9815,
+    "item 13444": 1.0,
+    "Mongoose Bite": 20.573999999999998,
+    "Berserking": 1.0,
+    "Immolation Trap": 7.0
+   },
+   "dps": 380.45761759517984,
+   "dps_stdev": 24.347256187825742,
+   "threat": 387.9576175951797,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 1.211445792769467,
+   "shares": {
+    "Auto Attack": 0.4087532116196165,
+    "Raptor Strike": 0.18321621292576792,
+    "Immolation Trap": 0.14056347501471803,
+    "Mongoose Bite": 0.13645251571583292,
+    "Strider Kick": 0.10598641053070532,
+    "Dragonbreath Chili": 0.02502817419335929
+   },
+   "source_shares": {
+    "melee": 0.3184,
+    "raptor_strike": 0.2196,
+    "melee_oh": 0.1715,
+    "mongoose_bite": 0.1635,
+    "strider_kick": 0.127
+   },
+   "unmatched_share": 0.1656
+  },
+  {
+   "label": "opt-melee-dps-raid-dps",
    "talents": "5-005045001-500250030050220151",
    "split": "5/15/31",
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
     "14271": 20.17555,
+    "20554": 1.0,
+    "14305": 4.0,
     "14266": 39.9645,
-    "3045": 1.0,
     "1317257": 14.9997,
-    "14305": 4.0
+    "3045": 1.0
    },
    "casts": {
-    "OtherActionManaGain": 1.0,
-    "Berserking": 1.0,
     "Mongoose Bite": 20.17555,
-    "Raptor Strike": 39.9645,
-    "Rapid Fire": 1.0,
     "Auto Attack": 95.97935,
-    "item 13444": 1.0,
+    "Berserking": 1.0,
+    "Immolation Trap": 4.0,
+    "Raptor Strike": 39.9645,
     "Strider Kick": 14.9997,
-    "Immolation Trap": 4.0
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 1.0,
+    "item 13444": 1.0
    },
    "dps": 349.85435399981225,
    "dps_stdev": 24.464357003177568,
@@ -73,57 +124,6 @@
     "Strider Kick": 0.11544218278004836,
     "Immolation Trap": 0.06818031268524045,
     "Dragonbreath Chili": 0.02740292032739185
-   },
-   "source_shares": {
-    "melee": 0.3193,
-    "raptor_strike": 0.2201,
-    "melee_oh": 0.172,
-    "mongoose_bite": 0.1609,
-    "strider_kick": 0.1276
-   },
-   "unmatched_share": 0.0956
-  },
-  {
-   "label": "opt-melee-dps-raid-dps",
-   "talents": "5-005045001-500250030050220151",
-   "split": "5/15/31",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "14266": 39.9645,
-    "14305": 4.0,
-    "1317257": 14.9997,
-    "20554": 1.0,
-    "14271": 20.17555,
-    "3045": 1.0
-   },
-   "casts": {
-    "OtherActionManaGain": 1.0,
-    "item 13444": 1.0,
-    "Raptor Strike": 39.9645,
-    "Immolation Trap": 4.0,
-    "Strider Kick": 14.9997,
-    "Berserking": 1.0,
-    "Mongoose Bite": 20.17555,
-    "Rapid Fire": 1.0,
-    "Auto Attack": 95.97935
-   },
-   "dps": 349.85435399981225,
-   "dps_stdev": 24.464357003177568,
-   "threat": 357.3543539998122,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 1.2366857927694672,
-   "shares": {
-    "Auto Attack": 0.44432972819474,
-    "Raptor Strike": 0.1990956777731241,
-    "Mongoose Bite": 0.1455491782394552,
-    "Strider Kick": 0.11544218278004834,
-    "Immolation Trap": 0.06818031268524044,
-    "Dragonbreath Chili": 0.027402920327391847
    },
    "source_shares": {
     "melee": 0.3193,

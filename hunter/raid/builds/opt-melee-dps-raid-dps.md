@@ -62,8 +62,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/15/31 | 350 | +0.0% | 757 | +0.0% | 0 s |
-| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 350 | +0.0% | 757 | +0.0% | 0 s |
+| 1 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 380 | +0.0% | 792 | +0.0% | 0 s |
+| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 350 | -8.0% | 757 | -4.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

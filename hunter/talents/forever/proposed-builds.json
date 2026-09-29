@@ -579,7 +579,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Forever's melee hunter for raids: Survival's melee package (Predator's Edge with dual wield, Savage Strikes, Expose Prey, Lacerating Strikes, Strider Kick, Lightning Reflexes, Improved Tracking, Surefooted, Resourcefulness) with Marksmanship's Lethal Attacks, Careful Aim, Efficiency and Lone Wolf, and Deadly Aspects for the Aspect of the Beast haste proc. No parry or dodge talents: a raid melee stands behind the boss and is never attacked. The scorer's optimum for the melee-dps model under the raid profile (2026-09-27); the model's damage split is a tooltip assumption until a melee rotation exists in a simulator.",
+      "summary": "Forever's melee hunter for raids, built around traps: Survival's melee package (Predator's Edge with dual wield, Savage Strikes, Expose Prey, Lacerating Strikes, Strider Kick, Lightning Reflexes, Improved Tracking, Surefooted, Resourcefulness) plus the trap talents (Survivalist's Discipline, Clever Traps, Survival Tactics) for an Immolation Trap every 18 s under the boss, with Marksmanship's Lethal Attacks, Careful Aim and Lone Wolf, and Deadly Aspects for the Aspect of the Beast haste proc. The most popular hunter build on talentsforever.com (2026-09-28); the simulator's talent search from our previous draft found the same trap talents and nothing better.",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5]
@@ -587,17 +587,19 @@
         "Marksmanship": [
           ["Lethal Attacks", 5],
           ["Careful Aim", 5],
-          ["Efficiency", 4],
           ["Lone Wolf", 1]
         ],
         "Survival": [
           ["Improved Tracking", 5],
           ["Savage Strikes", 2],
-          ["Survivalist", 5],
+          ["Survivalist", 3],
+          ["Clever Traps", 2],
           ["Surefooted", 3],
+          ["Survival Tactics", 2],
           ["Predator's Edge", 5],
-          ["Expose Prey", 2],
           ["Resourcefulness", 2],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
           ["Strider Kick", 1],
           ["Lightning Reflexes", 5],
           ["Lacerating Strikes", 1]
@@ -607,23 +609,25 @@
         {"talent": "Predator's Edge", "why": "+30% melee critical damage and +50% off-hand weapon damage: the reason to dual-wield; the biggest single multiplier of the build."},
         {"talent": "Lone Wolf", "why": "+20% on every attack with no pet; a melee hunter fights beside the mob anyway, so the pet's threat matters less than the damage."},
         {"talent": "Expose Prey", "why": "Attacks against a marked target activate Mongoose Bite (10% chance at 2/2): Mongoose Bite every few seconds instead of only after a dodge, and Lacerating Strikes needs it."},
+        {"talent": "Survivalist's Discipline", "why": "-40% trap cooldown: Immolation Trap every 18 s instead of 30 s. The largest single move of the talent search (+4.3% on the dummy)."},
+        {"talent": "Clever Traps", "why": "+30% Immolation and Explosive Trap damage (+3.1% on the dummy in the talent search)."},
+        {"talent": "Survival Tactics", "why": "+10% chance to hit with traps: a trap that misses a level-63 boss is 18 s of nothing (+1.1% on the dummy)."},
         {"talent": "Lacerating Strikes", "why": "Every Mongoose Bite also bleeds for 40% of its damage over 21 s: the 31-point capstone of the melee tree."},
         {"talent": "Lethal Attacks", "why": "+5% critical strike chance with all attacks, doubled in value by Predator's Edge's crit damage."},
         {"talent": "Savage Strikes", "why": "+4% crit on Raptor Strike, Mongoose Bite, Counterattack and Strider Kick."},
         {"talent": "Deadly Aspects", "why": "Under Aspect of the Beast every melee swing has a 10% chance of +30% attack speed for 12 s."},
         {"talent": "Strider Kick", "why": "100% weapon damage every 8 s for a trivial mana cost, plus a sprint."},
         {"talent": "Improved Tracking", "why": "+5% damage against the tracked creature type: every raid boss is a beast, demon, dragon, elemental, giant, humanoid or undead."},
-        {"talent": "Efficiency", "why": "-15% mana on melee abilities and stings: a melee hunter's mana goes to Raptor Strike and Mongoose Bite."},
         {"talent": "Lightning Reflexes", "why": "+15% Agility: attack power and crit."},
-        {"talent": "Resourcefulness", "why": "-60% mana on melee abilities and regen on crits: a raid melee hunter's mana goes to Raptor Strike and Mongoose Bite."},
+        {"talent": "Resourcefulness", "why": "-60% mana on traps and melee abilities and regen on crits: the build never runs out of mana, which is why Efficiency measures zero."},
         {"talent": "Careful Aim", "why": "Attack power from Intellect."}
       ],
       "flex": [
         {
-          "points": 5,
+          "points": 3,
           "default": "Survivalist",
-          "alternatives": ["Deflection"],
-          "why": "Survival points on the way to Lacerating Strikes: +10% health against raid damage. Deflection, Deterrence and Counterattack need the boss to attack you, which it does not behind its back."
+          "alternatives": ["Deflection", "Efficiency"],
+          "why": "Survival points on the way to the deeper talents: +6% health. Efficiency measures zero here (Resourcefulness already covers the mana), Deflection needs the boss to attack you."
         },
         {
           "points": 3,
@@ -632,9 +636,9 @@
           "why": "+3% hit against a level-63 boss."
         }
       ],
-      "notes": ["Dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing.", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "2026-09-27 scenario audit: Deflection 5, Deterrence 1, Counterattack 1, Hawk Eye 1 and Improved Stings 3 -> Survivalist 5, Resourcefulness 2, Careful Aim 5 (Efficiency 5 -> 4). Parry and dodge only matter when the boss attacks you, Hawk Eye extends shots a melee does not fire, and Serpent Sting is one cast per pull.", "The fight lab's melee rotation (hunter module, spec model melee-dps) plays this loop for the leveling comparison; the community simulator has no melee hunter, so this build has no raid-sim DPS yet."],
-      "open_questions": ["Melee hunter numbers are the scorer's assumptions and the fight lab's rotation, not measurements: the community simulator has no melee hunter rotation, so the raid build has no simulator DPS.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
-      "sources": ["https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/optimizer/melee-dps-raid-dps.md", "hunter/leveling/optimizer/melee-dps-leveling-st.md"]
+      "notes": ["Adopted 2026-09-29 (user request): the talentsforever.com #1 hunter build (5/11/35) beat the previous draft by +8.7% on the training dummy (380.1 vs 349.9) and +4.6% in the raid setting (791.7 vs 757.2) with the trap rotation, on two independent seeds (community simulator 40be98e). raidsim/talent_opt.py from both builds, dummy and raid: from the old draft it took exactly Survivalist's Discipline, Clever Traps and Survival Tactics (it paid with Deadly Aspects, which the simulator scores at zero because it lacks the melee haste proc); from this build no move wins. The old draft is kept as raidsim/candidates/cand-melee-dps-hand-2026-09-29.json.", "Rotation: dual wield two fast one-handers; Aspect of the Beast on; Hunter's Mark and Serpent Sting from range on the pull, then Mongoose Bite when active, Strider Kick on cooldown, Raptor Strike on the next swing, and Immolation Trap under the boss whenever it is off cooldown (fire traps share a cooldown; Explosive Trap instead on packs).", "No pet: Lone Wolf's +20% beats the pet's damage once the hunter melees (the model's raid pet share is 12%, the break-even 16.7%). Beast Mastery's pet talents are absent for that reason.", "The community simulator plays this build on our own melee rotation (raidsim/specs.json melee-dps); it models only Aspect of the Hawk, so Aspect of the Beast's attack power and Deadly Aspects' haste are missing and the DPS is a lower bound. The fight lab's melee rotation has no traps yet, so the leveling numbers leave the trap talents at zero."],
+      "open_questions": ["Whether traps can be placed in combat and trigger at once under a boss, as the simulator assumes.", "Fire traps sharing one cooldown (the user's reading, and the simulator's model): with separate cooldowns Explosive Trap adds about 5% more on the dummy.", "Survival Tactics' +10% trap hit: whether traps can miss a boss at all.", "Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.", "Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.", "Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack."],
+      "sources": ["https://talentsforever.com/hunter/60/5-005005001-500230230250222151-4", "https://warcraftforever.games/talents/hunter", "beta client 1.60.1.70009 tooltips (_reference/data/forever-talents/hunter.json)", "hunter/raid/raidsim/melee-dps.md"]
     },
     {
       "id": "leveling-melee",

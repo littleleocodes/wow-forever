@@ -117,7 +117,9 @@
 - [ ] Deadly Aspects rank scaling (extrapolated from 2%).
 
 **Melee Survival — Lone Wolf (dual wield, raid)** (`hunter/raid/builds/melee-survival-raid.md`)
-- [ ] Melee hunter numbers are the scorer's assumptions and the fight lab's rotation, not measurements: the community simulator has no melee hunter rotation, so the raid build has no simulator DPS.
+- [ ] Whether traps can be placed in combat and trigger at once under a boss, as the simulator assumes.
+- [ ] Fire traps sharing one cooldown (the user's reading, and the simulator's model): with separate cooldowns Explosive Trap adds about 5% more on the dummy.
+- [ ] Survival Tactics' +10% trap hit: whether traps can miss a boss at all.
 - [ ] Expose Prey's proc rate against a marked target (5%/rank per attack assumed) decides how often Mongoose Bite is available; check the actual rate in the beta.
 - [ ] Whether Aspect of the Beast (+110 melee attack power) and the Deadly Aspects melee haste proc work as the tooltips read.
 - [ ] Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack.

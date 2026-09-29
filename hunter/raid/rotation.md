@@ -184,7 +184,7 @@ Damage by ability:
 
 Our rotation `melee-dps.apl.json` (our base rotation `melee-dps.base.apl.json` with the changes below) (commit 40be98e), 20000 fights of 120 s per build on the training dummy. Ranking: [raid README](README.md).
 
-Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk: Aspect of the Beast's melee attack power and Deadly Aspects' melee haste are missing, so these numbers are a lower bound, and the scorer's melee model is not calibrated to them. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. Unverified in the beta: whether the cooldowns are shared.
+Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk: Aspect of the Beast's melee attack power and Deadly Aspects' melee haste are missing, so these numbers are a lower bound, and the scorer's melee model is not calibrated to them. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts.
 
 **Rotation search** (every change kept had to win on two random seeds and cost none of the tuning builds more than 0.1%):
 
@@ -203,17 +203,17 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 350 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 350 DPS)
+### [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 380 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 350 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min |
 |---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready |
-| 2 | cast Mongoose Bite | 10.1 | 10.1 |
+| 2 | cast Mongoose Bite | 10.3 | 10.1 |
 | 3 | cast Strider Kick | 7.5 | 7.5 |
 | 4 | cast Raptor Strike | 20.0 | 20.0 |
-| 5 | cast Immolation Trap | 2.0 | 2.0 |
+| 5 | cast Immolation Trap | 3.5 | 2.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -221,9 +221,9 @@ Damage by ability:
 
 | Ability | [`melee-survival-raid`](builds/melee-survival-raid.md) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) |
 |---|---|---|
-| Auto Attack | 44% | 44% |
-| Raptor Strike | 20% | 20% |
-| Mongoose Bite | 15% | 15% |
-| Strider Kick | 12% | 12% |
-| Immolation Trap | 7% | 7% |
+| Auto Attack | 41% | 44% |
+| Raptor Strike | 18% | 20% |
+| Mongoose Bite | 14% | 15% |
+| Immolation Trap | 14% | 7% |
+| Strider Kick | 11% | 12% |
 | Dragonbreath Chili | 3% | 3% |

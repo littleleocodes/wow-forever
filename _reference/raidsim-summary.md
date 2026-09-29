@@ -5,7 +5,7 @@
 | Class | Spec model | Best of our builds | DPS | Best sim preset | DPS | Our optimizer build | DPS |
 |---|---|---|---|---|---|---|---|
 | hunter | `bm-raid` | `mm-hawk-raid` | 469 | - | - | - | - |
-| hunter | `melee-dps` | `melee-survival-raid` | 350 | - | - | - | - |
+| hunter | `melee-dps` | `melee-survival-raid` | 380 | - | - | - | - |
 | hunter | `mm-lonewolf-raid` | `mm-lone-wolf-raid` | 424 | Marksmanship | 339 | `opt-mm-lonewolf-raid-raid-dps` | 424 |
 | hunter | `mm-raid` | `cand-mm-raid-r6` | 404 | Marksmanship | 386 | `opt-mm-raid-raid-dps` | 404 |
 
@@ -16,7 +16,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | Class | Game | Spec model | Best build | Dummy | Dummy 60 | Raid | Maximum | Max 60 s | Parse build (max) | Best preset (max) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | hunter | Forever | `bm-raid` | `mm-hawk-raid` (22/29/0) | 469 | 507 | 815 | 815 | 833 | - | Beast Mastery 35/16/0 763 |
-| hunter | Forever | `melee-dps` | `melee-survival-raid` (5/15/31) | 350 | 413 | 757 | 757 | 793 | - | - |
+| hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 380 | 443 | 792 | 792 | 826 | - | - |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 424 | 452 | 762 | 762 | 776 | `opt-mm-lonewolf-raid-parse` 687 | Marksmanship 619 |
 | hunter | Forever | `mm-raid` | `bm-mm-full-buffs-raid` (20/31/0) | 383 | 415 | 702 | 702 | 718 | `opt-mm-raid-parse` 665 | Marksmanship 695 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |

@@ -4,7 +4,7 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `melee-survival-raid` | 5/15/31 | 350 | 413 | 757 | 757 | 793 |
+| `melee-survival-raid` | 5/11/35 | 380 | 443 | 792 | 792 | 826 |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 350 | 413 | 757 | 757 | 793 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)

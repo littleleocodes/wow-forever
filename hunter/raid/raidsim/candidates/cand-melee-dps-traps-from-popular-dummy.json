@@ -1,0 +1,88 @@
+{
+ "id": "cand-melee-dps-traps-from-popular-dummy",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    3
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for melee-dps from /tmp/claude-0/-home-user-wow-forever/1ee2b2a1-594c-5647-a50d-3568e2cad8dc/scratchpad/tf-popular-1-hunter.json in the dummy setting: 380.1 -> 380.1 DPS on a third seed.",
+ "search": {
+  "start": "/tmp/claude-0/-home-user-wow-forever/1ee2b2a1-594c-5647-a50d-3568e2cad8dc/scratchpad/tf-popular-1-hunter.json",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 380.1064018113272,
+  "dps_end": 380.1064018113272
+ }
+}

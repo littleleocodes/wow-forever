@@ -99,6 +99,11 @@ Best raid DPS build per class on 2026-09-28 (training dummy / fully buffed raid,
    are separate (tested with a temporary simulator patch, not kept). The user reads it as fire traps sharing a cooldown with
    each other (frost with frost), as the simulator has it: no patch needed. To do: traps in the fight lab's hunter (leveling); a `trap` source in the melee
    scorer model; whether ranged builds can use traps at all (the boss must walk over them).
+   **Melee hunter talents for the trap rotation** (2026-09-29): `melee-survival-raid` adopted the talentsforever.com #1 hunter build
+   (5/11/35: Survivalist's Discipline, Clever Traps, Survival Tactics instead of Efficiency 4 and Survivalist 2): +8.7% dummy (380),
+   +4.6% raid (792), two independent seeds; `talent_opt.py` from both builds in both settings agrees (candidates
+   `hunter/raid/raidsim/candidates/cand-melee-dps-traps-*`). The scorer's `opt-melee-dps-*` builds still lack the trap talents
+   because the melee model has no trap source; the fight lab has no traps, so `leveling-melee` is not re-optimized.
 2. **Raid-sim seed bug, fixed 2026-09-29** (see CLAUDE.md "Seeds in the raid sim"): the rotation and talent searches' seed-2
    confirmations shared about 15% of their iterations with seed 1 and the third-seed checks repeated seed 2. Every kept change
    still won on 17,000 fresh iterations, so the searches are not void, but the final checks were never independent. Worth
