@@ -17,7 +17,7 @@
 3. **Cold Blood** when you have 5 combo points and Dice is active
 4. **Eviscerate** when you have 4 combo points and Slice and Dice is active
 
-This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

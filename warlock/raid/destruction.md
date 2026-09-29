@@ -18,7 +18,15 @@
 6. **Conflagrate**
 7. **Incinerate**
 
-**Incinerate** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Incinerate** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Searing Pain**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Shadowburn**: now and then (in about 7 of 10 fights)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

@@ -18,7 +18,7 @@
 2. **Summon Hawk**
 3. **Serpent Sting**: keep it on the target
 
-This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

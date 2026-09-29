@@ -18,7 +18,12 @@
 2. **Summon Hawk**
 3. **Serpent Sting**: keep it on the target
 
-This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Intimidation**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

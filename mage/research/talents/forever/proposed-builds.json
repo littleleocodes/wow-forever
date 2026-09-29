@@ -146,14 +146,14 @@
       "allocation": {
         "Arcane": [
           ["Arcane Focus", 5],
-          ["Wand Specialization", 1],
           ["Arcane Subtlety", 2],
           ["Arcane Concentration", 5],
           ["Arcane Impact", 3],
           ["Missile Barrage", 1],
           ["Arcane Meditation", 3],
           ["Presence of Mind", 1],
-          ["Arcane Mind", 1]
+          ["Arcane Mind", 1],
+          ["Improved Channeling", 1]
         ],
         "Fire": [],
         "Frost": [
@@ -164,8 +164,8 @@
           ["Piercing Ice", 3],
           ["Shatter", 3],
           ["Fingers of Frost", 2],
-          ["Improved Cone of Cold", 1],
-          ["Winter's Chill", 4]
+          ["Winter's Chill", 4],
+          ["Frost Channeling", 1]
         ]
       },
       "core": [
@@ -199,9 +199,9 @@
         },
         {
           "points": 1,
-          "default": "Wand Specialization",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+          "default": "Improved Channeling",
+          "alternatives": ["Wand Specialization", "Magic Absorption"],
+          "why": "A free point (worth 0 in the simulator, which models no pushback): Improved Channeling keeps Arcane Missiles from being interrupted by damage 20% of the time, which matters when a boss or its adds hit you."
         },
         {
           "points": 2,
@@ -223,12 +223,12 @@
         },
         {
           "points": 1,
-          "default": "Improved Cone of Cold",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+          "default": "Frost Channeling",
+          "alternatives": ["Arctic Reach (range)", "Improved Cone of Cold"],
+          "why": "Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler."],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-frost-raid-raid-dps` beat the previous draft by +3.8% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: `opt-frost-raid-raid-dps` beat the previous draft by +6.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.", "Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).", "2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.", "2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers)."],
       "open_questions": ["Do Fingers of Frost procs apply to bosses (they only need a chill, not a freeze)?", "Fingers of Frost rank-2 value (extrapolated) and whether Winter's Chill stacks.", "Mana: no Arcane Meditation — is Frost Channeling + Clearcasting enough for a 5-minute fight?"],
       "sources": ["https://warcraftforever.games/talents/mage"]
     },

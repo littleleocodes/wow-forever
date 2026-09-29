@@ -19,7 +19,9 @@
 3. **Chain Lightning** when Clearcasting is active
 4. **Lightning Bolt**
 
-**Lightning Bolt** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Lightning Bolt** is your filler: cast it whenever nothing above is ready.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

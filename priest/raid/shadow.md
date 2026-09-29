@@ -18,7 +18,9 @@
 4. **Mind Blast**
 5. **Mind Flay**
 
-**Mind Flay** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Mind Flay** is your filler: cast it whenever nothing above is ready.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

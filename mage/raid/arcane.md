@@ -14,7 +14,16 @@
 4. **Frostbolt** when Arcane Blast has 2 stacks
 5. **Arcane Blast**
 
-**Arcane Blast** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Arcane Blast** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Ignite**: a cooldown, use it at the start of the fight and again whenever it is ready (about 5 times a fight)
+- **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

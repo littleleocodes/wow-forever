@@ -6,7 +6,7 @@
 
 **✅ Recommended** for raid (the best mage spec here, or within 3% of it).
 
-**[Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md)** (22/0/29) — [open the talent tree](https://talentsforever.com/mage/60/1502050030003111--055500030100031024-4)
+**[Frost — Fingers of Frost / Ice Lance / Shatter](../research/raid/builds/frost-fingers-of-frost-raid.md)** (22/0/29) — [open the talent tree](https://talentsforever.com/mage/60/0512050030003111--055500031100030024-4)
 
 ## How to play
 
@@ -16,7 +16,15 @@
 2. **Arcane Missiles** when Missile Barrage is active
 3. **Frostbolt**
 
-**Frostbolt** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Frostbolt** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Evocation**: when you run out of mana (needed in about 1 of 10 fights)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

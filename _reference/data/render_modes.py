@@ -17,6 +17,7 @@ Everything technical stays in <class>/research/. Generated: never hand-edit (reb
 """
 import datetime
 import json
+import re
 import pathlib
 import sys
 
@@ -95,6 +96,17 @@ def env_info(cls, entry, label):
         _ENV[(cls, entry)] = (R.ladder_steps(rows), R.curve_windows(rows))
     lad, cur = _ENV[(cls, entry)]
     return lad.get(label), cur.get(label)
+
+
+_CASTS = {}
+
+
+def casts_of(cls, entry, label):
+    """Casts per fight of a build in its entry's race report ({} when missing)."""
+    if (cls, entry) not in _CASTS:
+        f = paths.raidsim_dir(cls) / f"{entry}.json"
+        _CASTS[(cls, entry)] = {x["label"]: x.get("casts") or {} for x in json.load(open(f, encoding="utf-8"))["results"]} if f.exists() else {}
+    return _CASTS[(cls, entry)].get(label, {})
 
 
 def late_dps(cls, r):
@@ -260,9 +272,14 @@ def mode_section(cls, spec, mode, builds, nums, src):
             if prio:
                 play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
                 filler = prio[-1].count("**") == 2 and prio[-1].endswith("**")   # a plain last line: the filler
-                play += ["", (f"{prio[-1]} is your filler: cast it whenever nothing above is ready. " if filler else "")
-                         + f"This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); "
-                         f"the exact list: [research rotation page]({paths.rel(src, paths.rotation_page(cls, 'raid'))}).", ""]
+                shown = set(pre) | set(keep) | {m for x in prio for m in re.findall(r"\*\*(.+?)\*\*", x)}
+                extra = simple_rotation.advanced(cls, casts_of(cls, r["entry"], top["id"]), shown)
+                play += [""] + ([f"{prio[-1]} is your filler: cast it whenever nothing above is ready.", ""] if filler else [])
+                if extra:
+                    play += ["**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:", ""] + [f"- {x}" for x in extra]
+                    play += ["- Use your trinkets, your racial and a potion together with your big cooldowns.", ""]
+                play += [f"*The simulator's full rotation for this build, with every condition: [research rotation page]"
+                         f"({paths.rel(src, paths.rotation_page(cls, 'raid'))}).*", ""]
         parse = next((b for b in ranked if b["id"].endswith("-parse")), None)
         if parse:
             numbers += [f"**Parse build** (personal damage in a full raid, where the raid brings the buffs): {link(cls, parse, src)} "

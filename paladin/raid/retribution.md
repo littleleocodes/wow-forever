@@ -18,7 +18,14 @@
 2. **Holy Strike**
 3. **Consecration**
 
-**Consecration** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Consecration** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Seal of Righteousness**: part of the rotation (about 9 times a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 

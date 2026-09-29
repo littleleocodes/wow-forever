@@ -213,3 +213,26 @@ def pre_pull(cls, pre):
     ok = class_spells(cls)
     names = [m.group(1).strip() for _, a in pre for m in [re.match(r"^(?:cast|channel) (.+)$", a)] if m]
     return [n for n in names if n in ok]
+
+
+MANA_TOOLS = {"Evocation", "Life Tap", "Innervate", "Mana Tide Totem", "Dark Pact", "Shadowfiend", "Aspect of the Viper"}
+
+
+def advanced(cls, casts, shown):
+    """The advanced extras: the class's own spells a build casts in the simulator that the simple list leaves out (cooldowns such as
+    Presence of Mind, Bestial Wrath, Death Wish, mana tools such as Evocation), with how often per fight. `casts` is the report's casts
+    per fight for the build; `shown` the spells already in the simple list."""
+    ok = class_spells(cls)
+    out = []
+    for sp, n in sorted(casts.items(), key=lambda kv: -kv[1]):
+        if sp not in ok or sp in shown or n < 0.05 or sp in ("Auto Shot", "Attack", "Shoot"):   # automatic attacks
+            continue
+        if n >= 8:   # a regular spell the short list had no room for
+            out.append(f"**{sp}**: part of the rotation (about {n:.0f} times a fight)")
+        elif n >= 0.95:
+            out.append(f"**{sp}**: a cooldown, use it at the start of the fight and again whenever it is ready (about {round(n)} time{'s' if round(n) != 1 else ''} a fight)")
+        elif sp in MANA_TOOLS:
+            out.append(f"**{sp}**: when you run out of mana (needed in about {round(n * 10)} of 10 fights)")
+        else:
+            out.append(f"**{sp}**: now and then (in about {round(n * 10)} of 10 fights)")
+    return out

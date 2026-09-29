@@ -20,7 +20,6 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
-| **Wand Specialization** | 1/2 | moved | Increases your damage with Wands by 13%. |
 | **Arcane Subtlety** | 2/2 | changed | Reduces your target's resistance to all your spells by 15 and reduces the threat caused by your Arcane spells by 30%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
@@ -28,6 +27,7 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 | **Arcane Mind** | 1/5 | changed | Increases your Intellect by 2% and increases the critical strike damage bonus of your Arcane spells by 20%. |
+| **Improved Channeling** | 1/5 | **NEW** | Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 14% chance while casting Arcane Blast. |
 
 ### Fire (0)
 
@@ -44,8 +44,8 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | **Piercing Ice** | 3/3 | unchanged | Increases the damage done by your Frost spells by 6%. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 | **Fingers of Frost** | 2/2 | **NEW** | Gives your Chill effects a 15% chance to grant you the Fingers of Frost effect, which treats your next 2 spells cast as if the target were Frozen. Lasts 15 sec. |
-| **Improved Cone of Cold** | 1/3 | changed | Increases the damage dealt by your Cone of Cold spell by 12%. |
 | **Winter's Chill** | 4/5 | changed | Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 4 times. |
+| **Frost Channeling** | 1/3 | moved | Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%. |
 
 ## Core talents (priority order)
 
@@ -65,11 +65,11 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
 | 3 | Arcane Impact | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Presence of Mind | any utility talent legal at that tier | Measures +0.6% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Arcane Mind | any utility talent legal at that tier | Measures +0.5% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Wand Specialization | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Improved Channeling | Wand Specialization, Magic Absorption | A free point (worth 0 in the simulator, which models no pushback): Improved Channeling keeps Arcane Missiles from being interrupted by damage 20% of the time, which matters when a boss or its adds hit you. |
 | 2 | Arcane Subtlety | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 5 | Arcane Concentration | any utility talent legal at that tier | Measures -0.0% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Arcane Meditation | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Improved Cone of Cold | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Frost Channeling | Arctic Reach (range), Improved Cone of Cold | Cone of Cold is never cast. Frost Channeling makes Frost spells cheaper (+0.2% DPS in 3-minute fights, +0.4% in 6-minute ones); Arctic Reach (longer Frostbolt range) is the other useful choice. |
 
 ## Rank among our builds and the community simulator's
 
@@ -119,6 +119,7 @@ Damage by ability:
 - Loses Arcane Power, Presence of Mind, Arcane Instability, Arcane Mind and Arcane Meditation versus the 31/0/20 build; the trade is burst cooldowns for a Shatter-crit rotation.
 - Rotation hypothesis: Frostbolt; on Fingers of Frost proc cast Frostbolt (or Ice Lance while moving).
 - 2026-09-27 scenario audit: Frostbite 3 -> Arctic Reach 1, Magic Absorption 2. Frostbite's freeze procs do nothing on a boss, which cannot be frozen (simulator 0.0%, ElliotWood/Forever 40be98e). Arctic Reach 2/2 adds range, the one soft value a raid caster keeps; Magic Absorption's resistances matter on the resistance fights and are otherwise a free filler.
+- 2026-09-29 (user question: zero-value fillers): Wand Specialization -> Improved Channeling (Arcane Missiles cannot be interrupted by damage 20% of the time; the simulator does not model pushback, so it measures the same as Wand Specialization, 0) and Improved Cone of Cold -> Frost Channeling (Cone of Cold is never cast; Frost Channeling measured +0.2% on the 3-minute dummy, +0.4% over 6 minutes, +0.2% in the raid setting, 6000 iterations, common random numbers).
 
 ## Open questions (verify in the live game)
 

@@ -17,7 +17,14 @@
 3. **Rip**: keep it on the target, when you have 4 combo points
 4. **Shred**
 
-**Shred** is your filler: cast it whenever nothing above is ready. This is the simulator's rotation for this build, simplified (potions, trinkets, racials and fine timing left out); the exact list: [research rotation page](../research/raid/rotation.md).
+**Shred** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Berserk**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
+
+*The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
 ## The numbers
 
