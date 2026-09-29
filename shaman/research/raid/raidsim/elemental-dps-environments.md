@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
+| `elemental-raid` | 31/7/13 | 398 | 479 | 499 | 528 | 531 |
 | `elemental-raid-dps` | 29/22/0 | 397 | 490 | 504 | 524 | 527 |
 | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
-| `opt-elemental-dps-parse` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
 | sim preset: Elemental 31/6/14 | - | 393 | 474 | 498 | 527 | 531 |
 | sim preset: Stormcaller 28/23/0 | - | 381 | 471 | 493 | 512 | 518 |
 | sim preset: Level 60 | - | 379 | 457 | 477 | 506 | 509 |
