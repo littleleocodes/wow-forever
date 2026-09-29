@@ -178,6 +178,78 @@
       "sources": ["https://warcraftforever.games/talents/warrior"]
     },
     {
+      "id": "arms-battle-raid",
+      "name": "Arms — Battle Stance: Overpower, Rend and Slam (raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill opens Overpower, Mortal Strike on cooldown, Overpower whenever it lights up, Slam (with Improved Slam) as the filler, Execute under 20%. The warrior rotations had never left Berserker Stance, so Overpower and Rend were never cast. Talents from the simulator talent search from the simulator's Arms 39/12/0 preset. Ties the best raid warrior builds in a full raid; behind Fury on the training dummy.",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 2],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Improved Overpower", 2],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2],
+          ["Bloodthrill", 5],
+          ["Sweeping Strikes", 1],
+          ["Weaponmaster", 5],
+          ["Improved Slam", 1],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Booming Voice", 5],
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Improved Execute", 2]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Bloodthrill", "why": "Main-hand hits on a Rended target open Overpower: the reason to stay in Battle Stance. Simulator removal run (2026-09-29): the build loses 16.7% of its DPS on the training dummy without it."},
+        {"talent": "Improved Overpower", "why": "+50% Overpower crit. Simulator removal run (2026-09-29): the build loses 10.2% of its DPS on the training dummy without it."},
+        {"talent": "Improved Slam", "why": "A faster Slam that does not reset the swing: the filler. Simulator removal run (2026-09-29): the build loses 8.9% of its DPS on the training dummy without it."},
+        {"talent": "Deep Wounds", "why": "A bleed on every crit. Simulator removal run (2026-09-29): the build loses 7.4% of its DPS on the training dummy without it."},
+        {"talent": "Weaponmaster", "why": "Crit, armor or extra attacks by weapon type. Simulator removal run (2026-09-29): the build loses 5.6% of its DPS on the training dummy without it."},
+        {"talent": "Cruelty", "why": "Simulator removal run (2026-09-29): the build loses 5.6% of its DPS on the training dummy without it."},
+        {"talent": "Anger Management", "why": "Simulator removal run (2026-09-29): the build loses 4.4% of its DPS on the training dummy without it."},
+        {"talent": "Unbridled Wrath", "why": "Rage from weapon hits: the talent search's biggest move. Simulator removal run (2026-09-29): the build loses 3.7% of its DPS on the training dummy without it."},
+        {"talent": "Mortal Strike", "why": "The Arms capstone and the rotation's main strike. Simulator removal run (2026-09-29): the build loses 3.1% of its DPS on the training dummy without it."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Deflection",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 5,
+          "default": "Improved Tactical Mastery",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 5,
+          "default": "Booming Voice",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 1,
+          "default": "Sweeping Strikes",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth -0.6% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        }
+      ],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-29) from `sim preset: Arms 39/12/0`: 1 point Spearing Strike -> Unbridled Wrath, 2 points Improved Heroic Strike -> Unbridled Wrath, 1 point Improved Heroic Strike -> Improved Execute, 1 point Improved Slam -> Improved Execute.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited."],
+      "open_questions": ["Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.", "Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model)."],
+      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warrior/dps/presets.ts", "https://warcraftforever.games/talents/warrior"]
+    },
+    {
       "id": "prot-raid-tank",
       "name": "Protection — Raid Tank (simulator winner adopted 2026-09-27)",
       "role": "tank",

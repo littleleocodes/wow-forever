@@ -791,7 +791,7 @@
       },
       "rotation_only": true,
       "preset_names": ["Arms 39/12/0"],
-      "builds": [],
+      "builds": ["arms-battle-raid"],
       "rotation_note": "Arms in Battle Stance (2026-09-29, the overnight audit): the warrior rotations never left Berserker Stance, so Overpower and Rend (Battle Stance abilities; Forever's Bloodthrill makes Rend open Overpower) were never cast. Our base: the arms-2h-raid rotation with Battle Stance instead of Berserker Stance, Overpower and Rend (only when not ticking) after Mortal Strike, Slam before the shout. With the simulator's Arms 39/12/0 preset: 167 -> 198 dummy DPS, 377 -> 454 raid."
     }
   },

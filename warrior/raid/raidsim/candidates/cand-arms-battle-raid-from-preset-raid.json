@@ -1,0 +1,113 @@
+{
+ "id": "cand-arms-battle-raid-from-preset-raid",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    2
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    1
+   ],
+   [
+    "Boundless Rage",
+    3
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for arms-battle-raid from sim preset: Arms 39/12/0 in the raid setting: 447.0 -> 456.7 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Arms 39/12/0",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Improved Heroic Strike -> Unbridled Wrath",
+    "gain_seed1": 0.009330547043181925,
+    "gain_seed2": 0.01361262525193152,
+    "split": "36/15/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Spearing Strike -> Improved Execute",
+    "gain_seed1": 0.007202595291060376,
+    "gain_seed2": 0.003589183248702277,
+    "split": "35/16/0"
+   },
+   {
+    "round": 3,
+    "move": "3 points Booming Voice -> Boundless Rage",
+    "gain_seed1": 0.002169621153233603,
+    "gain_seed2": 0.0022734549461598252,
+    "split": "35/16/0"
+   }
+  ],
+  "dps_start": 447.0493927725913,
+  "dps_end": 456.6781626259796
+ }
+}

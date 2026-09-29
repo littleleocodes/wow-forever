@@ -2,7 +2,7 @@
  "raid": {
   "class": "warrior",
   "spec": "prot-tank",
-  "date": "2026-09-28",
+  "date": "2026-09-29",
   "commit": "40be98e",
   "setting": "raid",
   "tank": true,
@@ -28,31 +28,47 @@
     "gain_seed2": 0.0017632100844537923,
     "candidates": 244,
     "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert at the top: cast Shield Wall",
+    "gain_seed1": 0.03215613844688825,
+    "gain_seed2": 0.03236863633939269,
+    "candidates": 92,
+    "pass": 3
+   },
+   {
+    "round": 3,
+    "change": "insert before the filler: if not Rend is on the target: cast Rend",
+    "gain_seed1": 0.004230181055768112,
+    "gain_seed2": 0.0050177155094,
+    "candidates": 88,
+    "pass": 3
    }
   ],
   "final": {
    "raid": {
     "prot-raid-tank": {
-     "before": 415.57097833490826,
-     "after": 416.34579052895697,
-     "base": 415.57097833490826,
+     "before": 415.58195749747506,
+     "after": 425.5936851500254,
+     "base": 415.58195749747506,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.0371933785188912,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Protection": {
-     "before": 393.88632679200754,
-     "after": 394.31638052024573,
-     "base": 393.88632679200754,
+     "before": 393.88994395152224,
+     "after": 403.82427582567595,
+     "base": 393.88994395152224,
      "before_value": 1.0,
-     "after_value": 1.0,
+     "after_value": 1.0377714930345538,
      "oom_before": 0,
      "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 2
+  "passes": 3
  }
 }
