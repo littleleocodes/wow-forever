@@ -186,9 +186,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Raid healer | resto-heal | [11/5/35](builds/opt-resto-heal-raid-heal.md) (+168.1%) | [resto-raid-healer](builds/resto-raid-healer.md) |
-| Raid DPS, Cat | feral-cat-dps | [9/35/7](builds/opt-feral-cat-dps-raid-dps.md) (+109.3%) | [feral-cat-dps](builds/feral-cat-dps.md) |
-| Raid main tank, Bear | feral-bear-tank | [7/35/9](builds/opt-feral-bear-tank-raid-tank.md) (+53.4%) | [feral-bear-tank](builds/feral-bear-tank.md) |
-| Raid DPS, Balance | balance-dps | [34/6/11](builds/opt-balance-dps-raid-dps.md) (+122.1%) | [balance-moonkin-raid](builds/balance-moonkin-raid.md) |
+| Raid DPS, Cat | feral-cat-dps | [9/35/7](builds/opt-feral-cat-dps-raid-dps.md) (+108.2%) | [feral-cat-dps](builds/feral-cat-dps.md) |
+| Raid main tank, Bear | feral-bear-tank | [7/35/9](builds/opt-feral-bear-tank-raid-tank.md) (+53.8%) | [feral-bear-tank](builds/feral-bear-tank.md) |
+| Raid DPS, Balance | balance-dps | [33/5/13](builds/opt-balance-dps-raid-dps.md) (+128.1%) | [balance-moonkin-raid](builds/balance-moonkin-raid.md) |
 
 Model findings: Restoration 11/5/35 keeps Swiftmend and adds Wild Growth, Gift of the Earthmother and Genesis. Cat 9/35/7 (Rend and Tear, King of the Jungle, Berserk, Predatory Instincts) and Bear 9/40/2 (Mangle, Natural Reaction) share Heart of the Wild, Predatory Strikes and Leader of the Pack. Balance 38/0/13 gets Eclipse, Nature's Grace and Vengeance; Cat leveling goes 0/35/16.
 

@@ -187,8 +187,8 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Raid healer | resto-heal | [0/10/41](builds/opt-resto-heal-raid-heal.md) (+154.8%) | [resto-raid-healer](builds/resto-raid-healer.md) |
-| Raid DPS, Elemental | elemental-dps | [29/22/0](builds/opt-elemental-dps-raid-dps.md) (+74.7%) | [elemental-raid-dps](builds/elemental-raid-dps.md) |
-| Raid DPS, Enhancement | enhancement-dps | [11/31/9](builds/opt-enhancement-dps-raid-dps.md) (+110.5%) | [enhancement-raid-dps](builds/enhancement-raid-dps.md) |
+| Raid DPS, Elemental | elemental-dps | [29/22/0](builds/opt-elemental-dps-raid-dps.md) (+71.1%) | [elemental-raid-dps](builds/elemental-raid-dps.md) |
+| Raid DPS, Enhancement | enhancement-dps | [11/31/9](builds/opt-enhancement-dps-raid-dps.md) (+100.4%) | [enhancement-raid-dps](builds/enhancement-raid-dps.md) |
 
 Model findings: Restoration 0/10/41: Water Shield and Riptide are the new core and Enhancement's Thundering Strikes crits heals. Elemental 31/6/14 adds Lava Burst, Lightning Overload and Elemental Alacrity with Tidal Focus/Water Shield for mana. Enhancement 19/32/0 (Stormstrike, Maelstrom Weapon, Flurry, Elemental Weapons) takes Elemental's shock talents; leveling Enhancement goes 0/34/17 for Water Shield.
 

@@ -181,9 +181,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, dual wield Fury | fury-dw-raid | [14/37/0](builds/opt-fury-dw-raid-raid-dps.md) (+90.4%) | [fury-dw-raid](builds/fury-dw-raid.md) |
-| Raid DPS, two-hander | arms-2h-raid | [19/32/0](builds/opt-arms-2h-raid-raid-dps.md) (+79.1%) | [arms-2h-raid](builds/arms-2h-raid.md) |
-| Raid main tank | prot-tank | [14/5/32](builds/opt-prot-tank-raid-tank.md) (+58.5%) | [prot-raid-tank](builds/prot-raid-tank.md) |
+| Raid DPS, dual wield Fury | fury-dw-raid | [13/38/0](builds/opt-fury-dw-raid-raid-dps.md) (+87.7%) | [fury-dw-raid](builds/fury-dw-raid.md) |
+| Raid DPS, two-hander | arms-2h-raid | [19/32/0](builds/opt-arms-2h-raid-raid-dps.md) (+74.9%) | [arms-2h-raid](builds/arms-2h-raid.md) |
+| Raid main tank | prot-tank | [14/5/32](builds/opt-prot-tank-raid-tank.md) (+58.6%) | [prot-raid-tank](builds/prot-raid-tank.md) |
 
 Model findings: Dual-wield Fury 18/33/0 and two-hander Fury 19/32/0 score within 2% of each other and both beat the Arms draft; Bloodthirst, Flurry, Enrage, Unbridled Wrath and Anger Management are the raid core in every DPS build. Protection 6/5/40 takes the deep Protection rows (Vitality, Focused Rage, Bastion, Shield Slam) plus Anticipation/Improved Shield Wall now that defense and armor are priced from their arithmetic.
 

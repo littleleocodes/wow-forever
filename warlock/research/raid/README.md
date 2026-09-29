@@ -252,9 +252,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, Shadow Bolt | sb-raid | [22/11/18](builds/opt-sb-raid-raid-dps.md) (+91.7%) | [ds-ruin-raid](builds/ds-ruin-raid.md) |
-| Raid DPS, Affliction DoTs | affliction-raid | [30/0/21](builds/opt-affliction-raid-raid-dps.md) (+58.5%) | [affliction-dot-raid](builds/affliction-dot-raid.md) |
-| Raid DPS, Fire Destruction | fire-destro-raid | [22/11/18](builds/opt-fire-destro-raid-raid-dps.md) (+82.1%) | [destruction-fire-raid](builds/destruction-fire-raid.md) |
+| Raid DPS, Shadow Bolt | sb-raid | [22/11/18](builds/opt-sb-raid-raid-dps.md) (+91.6%) | [ds-ruin-raid](builds/ds-ruin-raid.md) |
+| Raid DPS, Affliction DoTs | affliction-raid | [30/0/21](builds/opt-affliction-raid-raid-dps.md) (+58.4%) | [affliction-dot-raid](builds/affliction-dot-raid.md) |
+| Raid DPS, Fire Destruction | fire-destro-raid | [22/11/18](builds/opt-fire-destro-raid-raid-dps.md) (+82.5%) | [destruction-fire-raid](builds/destruction-fire-raid.md) |
 
 Model findings: The Shadow Bolt raid build is 10/11/30: Demonic Sacrifice plus 30 Destruction for Conflagrate → Shadow and Flame (+10% Shadow), so DS/Ruin survives in a new shape. Affliction 31/11/9 is a real DoT spec (Malevolence, Pandemic, Soul Siphon, Drain Hope) with Demonic Sacrifice. Fire Destruction 9/11/31 (Aftermath, Conflagrate, Fire and Brimstone, Incinerate) scores +164% against its own baseline; leveling stays Affliction with a Voidwalker (31/16/4).
 

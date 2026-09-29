@@ -28,10 +28,10 @@ Total: **71.8 h** (20.2% faster than talentless), 0 respec(s).
 
 - **Levels 10-60: combat-daggers-raid -> level-20 build (0/9/2)**
   - at level 10: **Subtlety**: Opportunity 1
-  - at level 60: **Subtlety**: Opportunity 2, Camouflage 5, Improved Ambush 3, Ghostly Strike 1; **Combat**: Improved Eviscerate 3, Lightning Reflexes 2, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Endurance 2; **Assassination**: Malice 5, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Improved Poisons 3, Mutilate 1, Vigor 1
-  - order: 10-11 Opportunity x2, 12-14 Improved Eviscerate x3, 15-16 Lightning Reflexes x2, 17-19 Puncturing Wounds x3, 20 Precision, 21-25 Malice x5, 26-28 Ruthlessness x3, 29-30 Murder x2, 31 Relentless Strikes, 32-36 Lethality x5, 37 Cold Blood, 38-40 Improved Poisons x3, 41 Mutilate, 42-43 Precision x2, 44-46 Deflection x3, 47 Riposte, 48 Flawless Execution, 49 Vigor, 50-51 Endurance x2, 52-54 Camouflage x3, 55-57 Improved Ambush x3, 58-59 Camouflage x2, 60 Ghostly Strike
+  - at level 60: **Subtlety**: Opportunity 2; **Combat**: Improved Eviscerate 1, Lightning Reflexes 4, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Endurance 2, Dual Wield Specialization 2, Hack and Slash 5, Aggression 3; **Assassination**: Malice 5, Ruthlessness 3, Murder 2, Relentless Strikes 1, Lethality 5, Cold Blood 1, Improved Poisons 3, Mutilate 1
+  - order: 10-11 Opportunity x2, 12 Improved Eviscerate, 13-16 Lightning Reflexes x4, 17-19 Puncturing Wounds x3, 20 Precision, 21-25 Malice x5, 26-28 Ruthlessness x3, 29-30 Murder x2, 31 Relentless Strikes, 32-36 Lethality x5, 37 Cold Blood, 38-40 Improved Poisons x3, 41 Mutilate, 42-43 Precision x2, 44-46 Deflection x3, 47 Riposte, 48 Flawless Execution, 49-50 Endurance x2, 51-52 Dual Wield Specialization x2, 53-57 Hack and Slash x5, 58-60 Aggression x3
 
-Total: **77.0 h** (14.4% faster than talentless), 0 respec(s).
+Total: **77.4 h** (14.0% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **77.0 h** (14.4% faster than talentless), 0 respec(s).
 | combat-swords-raid -> level-50 build (23/16/2) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-20 build (0/11/0) | 72.1 | +0.2 h |
 | combat-swords-raid -> level-40 build (11/18/2) | 72.3 | +0.5 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 77.0 | +5.2 h |
-| combat-daggers-raid -> level-30 build (3/16/2) | 77.2 | +5.3 h |
-| combat-daggers-raid -> level-40 build (13/16/2) | 78.0 | +6.2 h |
-| combat-daggers-raid -> level-50 build (23/16/2) | 78.7 | +6.8 h |
-| combat-daggers-raid -> level-60 build (21/28/2) | 79.0 | +7.1 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 77.4 | +5.5 h |
+| combat-daggers-raid -> level-30 build (3/16/2) | 77.7 | +5.9 h |
+| combat-daggers-raid -> level-40 build (13/16/2) | 78.6 | +6.7 h |
+| combat-daggers-raid -> level-50 build (23/16/2) | 79.1 | +7.3 h |
+| combat-daggers-raid -> level-60 build (21/28/2) | 79.4 | +7.5 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
@@ -57,11 +57,11 @@ Total: **77.0 h** (14.4% faster than talentless), 0 respec(s).
 | combat-swords-raid -> level-40 build (11/18/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.9% | +22.3% | +23.8% | +25.4% | +27.7% |
 | combat-swords-raid -> level-50 build (23/16/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.5% | +22.5% | +24.1% | +26.4% | +27.8% |
 | combat-swords-raid -> level-60 build (33/16/2) | +1.5% | +5.7% | +7.6% | +12.5% | +14.7% | +17.3% | +19.5% | +22.5% | +24.1% | +26.4% | +28.3% |
-| combat-daggers-raid -> level-20 build (0/9/2) | +1.7% | +4.0% | +13.9% | +16.0% | +18.9% | +22.1% | +23.4% | +29.6% | +33.2% | +34.3% | +36.0% |
-| combat-daggers-raid -> level-30 build (3/16/2) | +1.7% | +5.2% | +8.8% | +16.4% | +20.6% | +23.1% | +26.4% | +27.8% | +33.4% | +34.5% | +36.2% |
-| combat-daggers-raid -> level-40 build (13/16/2) | +1.7% | +4.6% | +8.4% | +11.4% | +15.2% | +22.5% | +26.4% | +27.8% | +33.4% | +34.5% | +36.2% |
-| combat-daggers-raid -> level-50 build (23/16/2) | +1.7% | +4.6% | +8.4% | +11.5% | +12.5% | +18.8% | +22.6% | +29.8% | +33.4% | +34.5% | +36.2% |
-| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.2% | +12.2% | +15.3% | +18.1% | +22.0% | +24.4% | +27.6% | +29.8% | +31.4% | +36.6% |
+| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.7% | +13.5% | +15.6% | +18.5% | +21.6% | +23.0% | +29.2% | +32.7% | +34.0% | +35.9% |
+| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.1% | +8.4% | +16.1% | +20.2% | +22.6% | +25.9% | +27.3% | +32.7% | +33.8% | +35.5% |
+| combat-daggers-raid -> level-40 build (13/16/2) | +1.6% | +4.6% | +8.3% | +11.1% | +14.7% | +22.0% | +25.9% | +27.3% | +32.7% | +33.8% | +35.5% |
+| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.3% | +11.3% | +12.2% | +18.4% | +22.1% | +29.3% | +32.9% | +34.0% | +35.7% |
+| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.1% | +11.9% | +15.0% | +17.8% | +21.7% | +24.1% | +27.2% | +29.4% | +31.0% | +36.1% |
 
 ## Reading it
 

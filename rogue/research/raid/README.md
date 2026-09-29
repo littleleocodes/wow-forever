@@ -206,8 +206,8 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, swords | combat-swords-raid | [20/31](builds/opt-combat-swords-raid-raid-dps.md) (+69.8%) | [combat-swords-raid](builds/combat-swords-raid.md) |
-| Raid DPS, daggers | combat-daggers-raid | [16/33](builds/opt-combat-daggers-raid-raid-dps.md) (+87.3%) | [combat-daggers-raid](builds/combat-daggers-raid.md) |
+| Raid DPS, swords | combat-swords-raid | [20/31/0](builds/opt-combat-swords-raid-raid-dps.md) (+65.4%) | [combat-swords-raid](builds/combat-swords-raid.md) |
+| Raid DPS, daggers | combat-daggers-raid | [16/33/2](builds/opt-combat-daggers-raid-raid-dps.md) (+78.1%) | [combat-daggers-raid](builds/combat-daggers-raid.md) |
 
 Model findings: Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.
 

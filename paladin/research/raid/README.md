@@ -177,8 +177,8 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Raid healer | holy-heal | [23/0/28](builds/opt-holy-heal-raid-heal.md) (+101.9%) | [holy-raid-healer](builds/holy-raid-healer.md) |
-| Raid DPS, Retribution | ret-dps | [17/0/34](builds/opt-ret-dps-raid-dps.md) (+123.0%) | [ret-raid-dps](builds/ret-raid-dps.md) |
-| Raid main tank | prot-tank | [0/23/28](builds/opt-prot-tank-raid-tank.md) (+46.9%) | [prot-tank](builds/prot-tank.md) |
+| Raid DPS, Retribution | ret-dps | [9/8/34](builds/opt-ret-dps-raid-dps.md) (+93.3%) | [ret-raid-dps](builds/ret-raid-dps.md) |
+| Raid main tank | prot-tank | [0/23/28](builds/opt-prot-tank-raid-tank.md) (+47.4%) | [prot-tank](builds/prot-tank.md) |
 
 Model findings: Retribution raid 10/8/33 matches the hand draft's split (Seal of Command, Vengeance, Champion of the Light, Twist of Light, Two-Handed Weapon Specialization). The healer 23/0/28 spends its second half in Retribution (Champion of the Light, Conviction, Benediction, Sanctified Judgement) rather than Protection. Protection 2/31/18 is Holy Shield, Iron Creed and Templar's Bulwark plus Retribution threat (Conviction, Deflection, Crusade).
 

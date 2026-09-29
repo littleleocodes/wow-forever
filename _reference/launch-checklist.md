@@ -68,6 +68,12 @@
 **Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)** (`druid/research/raid/builds/opt-resto-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Balance — PvP (generated)** (`druid/research/pvp/builds/balance-pvp.md`)
+- [ ] A generated Balance build: check it against the community's Balance builds at launch.
+
+**Feral Combat — PvP (generated)** (`druid/research/pvp/builds/feral-combat-pvp.md`)
+- [ ] A generated Feral Combat build: check it against the community's Feral Combat builds at launch.
+
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -82,12 +88,6 @@
 
 **Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Balance — PvP (generated)** (`druid/research/pvp/builds/balance-pvp.md`)
-- [ ] A generated Balance build: check it against the community's Balance builds at launch.
-
-**Feral Combat — PvP (generated)** (`druid/research/pvp/builds/feral-combat-pvp.md`)
-- [ ] A generated Feral Combat build: check it against the community's Feral Combat builds at launch.
 
 ### Hunter
 
@@ -159,6 +159,15 @@
 **Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)** (`hunter/research/leveling/builds/opt-melee-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Beast Mastery — Raid (generated)** (`hunter/research/raid/builds/beast-mastery-raid.md`)
+- [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
+
+**Beast Mastery — PvP (generated)** (`hunter/research/pvp/builds/beast-mastery-pvp.md`)
+- [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
+
+**Survival — PvP (generated)** (`hunter/research/pvp/builds/survival-pvp.md`)
+- [ ] A generated Survival build: check it against the community's Survival builds at launch.
+
 **Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)** (`hunter/research/raid/builds/opt-mm-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -170,15 +179,6 @@
 
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Beast Mastery — Raid (generated)** (`hunter/research/raid/builds/beast-mastery-raid.md`)
-- [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
-
-**Beast Mastery — PvP (generated)** (`hunter/research/pvp/builds/beast-mastery-pvp.md`)
-- [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
-
-**Survival — PvP (generated)** (`hunter/research/pvp/builds/survival-pvp.md`)
-- [ ] A generated Survival build: check it against the community's Survival builds at launch.
 
 ### Mage
 
@@ -227,6 +227,15 @@
 **Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Arcane — Leveling (generated)** (`mage/research/leveling/builds/arcane-leveling.md`)
+- [ ] A generated Arcane build: check it against the community's Arcane builds at launch.
+
+**Arcane — PvP (generated)** (`mage/research/pvp/builds/arcane-pvp.md`)
+- [ ] A generated Arcane build: check it against the community's Arcane builds at launch.
+
+**Fire — PvP (generated)** (`mage/research/pvp/builds/fire-pvp.md`)
+- [ ] A generated Fire build: check it against the community's Fire builds at launch.
+
 **Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -238,15 +247,6 @@
 
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Arcane — Leveling (generated)** (`mage/research/leveling/builds/arcane-leveling.md`)
-- [ ] A generated Arcane build: check it against the community's Arcane builds at launch.
-
-**Arcane — PvP (generated)** (`mage/research/pvp/builds/arcane-pvp.md`)
-- [ ] A generated Arcane build: check it against the community's Arcane builds at launch.
-
-**Fire — PvP (generated)** (`mage/research/pvp/builds/fire-pvp.md`)
-- [ ] A generated Fire build: check it against the community's Fire builds at launch.
 
 ### Paladin
 
@@ -289,15 +289,6 @@
 **Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)** (`paladin/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)** (`paladin/research/raid/builds/opt-ret-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)** (`paladin/research/raid/builds/opt-ret-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Holy — PvP (generated)** (`paladin/research/pvp/builds/holy-pvp.md`)
 - [ ] A generated Holy build: check it against the community's Holy builds at launch.
 
@@ -306,6 +297,15 @@
 
 **Retribution — PvP (generated)** (`paladin/research/pvp/builds/retribution-pvp.md`)
 - [ ] A generated Retribution build: check it against the community's Retribution builds at launch.
+
+**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)** (`paladin/research/raid/builds/opt-ret-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)** (`paladin/research/raid/builds/opt-ret-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Priest
 
@@ -339,17 +339,17 @@
 **Discipline/Holy — Smite (raid)** (`priest/research/raid/builds/smite-discipline-raid.md`)
 - [ ] Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts.
 
-**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Discipline — PvP (generated)** (`priest/research/pvp/builds/discipline-pvp.md`)
 - [ ] A generated Discipline build: check it against the community's Discipline builds at launch.
 
 **Holy — PvP (generated)** (`priest/research/pvp/builds/holy-pvp.md`)
 - [ ] A generated Holy build: check it against the community's Holy builds at launch.
+
+**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Rogue
 
@@ -393,6 +393,12 @@
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)** (`rogue/research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Combat — PvP (generated)** (`rogue/research/pvp/builds/combat-pvp.md`)
+- [ ] A generated Combat build: check it against the community's Combat builds at launch.
+
+**Subtlety — Leveling (generated)** (`rogue/research/leveling/builds/subtlety-leveling.md`)
+- [ ] A generated Subtlety build: check it against the community's Subtlety builds at launch.
+
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-swords-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -404,12 +410,6 @@
 
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Combat — PvP (generated)** (`rogue/research/pvp/builds/combat-pvp.md`)
-- [ ] A generated Combat build: check it against the community's Combat builds at launch.
-
-**Subtlety — Leveling (generated)** (`rogue/research/leveling/builds/subtlety-leveling.md`)
-- [ ] A generated Subtlety build: check it against the community's Subtlety builds at launch.
 
 ### Shaman
 
@@ -448,6 +448,15 @@
 **Optimizer — Raid healing: Chain Heal 45%, Healing Wave 35%, Lesser Healing Wave 15%, Healing Stream Totem 5% (raid-heal)** (`shaman/research/raid/builds/opt-resto-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Elemental — Raid (generated)** (`shaman/research/raid/builds/elemental-raid.md`)
+- [ ] A generated Elemental build: check it against the community's Elemental builds at launch.
+
+**Enhancement — PvP (generated)** (`shaman/research/pvp/builds/enhancement-pvp.md`)
+- [ ] A generated Enhancement build: check it against the community's Enhancement builds at launch.
+
+**Restoration — PvP (generated)** (`shaman/research/pvp/builds/restoration-pvp.md`)
+- [ ] A generated Restoration build: check it against the community's Restoration builds at launch.
+
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -459,15 +468,6 @@
 
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Elemental — Raid (generated)** (`shaman/research/raid/builds/elemental-raid.md`)
-- [ ] A generated Elemental build: check it against the community's Elemental builds at launch.
-
-**Enhancement — PvP (generated)** (`shaman/research/pvp/builds/enhancement-pvp.md`)
-- [ ] A generated Enhancement build: check it against the community's Enhancement builds at launch.
-
-**Restoration — PvP (generated)** (`shaman/research/pvp/builds/restoration-pvp.md`)
-- [ ] A generated Restoration build: check it against the community's Restoration builds at launch.
 
 ### Warlock
 
@@ -509,6 +509,21 @@
 **Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)** (`warlock/research/leveling/builds/opt-affliction-leveling-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Affliction — Leveling (generated)** (`warlock/research/leveling/builds/affliction-leveling.md`)
+- [ ] A generated Affliction build: check it against the community's Affliction builds at launch.
+
+**Demonology — Leveling (generated)** (`warlock/research/leveling/builds/demonology-leveling.md`)
+- [ ] A generated Demonology build: check it against the community's Demonology builds at launch.
+
+**Demonology — PvP (generated)** (`warlock/research/pvp/builds/demonology-pvp.md`)
+- [ ] A generated Demonology build: check it against the community's Demonology builds at launch.
+
+**Destruction — Leveling (generated)** (`warlock/research/leveling/builds/destruction-leveling.md`)
+- [ ] A generated Destruction build: check it against the community's Destruction builds at launch.
+
+**Destruction — PvP (generated)** (`warlock/research/pvp/builds/destruction-pvp.md`)
+- [ ] A generated Destruction build: check it against the community's Destruction builds at launch.
+
 **Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-affliction-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -526,21 +541,6 @@
 
 **Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Affliction — Leveling (generated)** (`warlock/research/leveling/builds/affliction-leveling.md`)
-- [ ] A generated Affliction build: check it against the community's Affliction builds at launch.
-
-**Demonology — Leveling (generated)** (`warlock/research/leveling/builds/demonology-leveling.md`)
-- [ ] A generated Demonology build: check it against the community's Demonology builds at launch.
-
-**Demonology — PvP (generated)** (`warlock/research/pvp/builds/demonology-pvp.md`)
-- [ ] A generated Demonology build: check it against the community's Demonology builds at launch.
-
-**Destruction — Leveling (generated)** (`warlock/research/leveling/builds/destruction-leveling.md`)
-- [ ] A generated Destruction build: check it against the community's Destruction builds at launch.
-
-**Destruction — PvP (generated)** (`warlock/research/pvp/builds/destruction-pvp.md`)
-- [ ] A generated Destruction build: check it against the community's Destruction builds at launch.
 
 ### Warrior
 
@@ -583,6 +583,12 @@
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Fury — PvP (generated)** (`warrior/research/pvp/builds/fury-pvp.md`)
+- [ ] A generated Fury build: check it against the community's Fury builds at launch.
+
+**Protection — PvP (generated)** (`warrior/research/pvp/builds/protection-pvp.md`)
+- [ ] A generated Protection build: check it against the community's Protection builds at launch.
+
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)** (`warrior/research/raid/builds/opt-arms-2h-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -597,10 +603,4 @@
 
 **Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)** (`warrior/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Fury — PvP (generated)** (`warrior/research/pvp/builds/fury-pvp.md`)
-- [ ] A generated Fury build: check it against the community's Fury builds at launch.
-
-**Protection — PvP (generated)** (`warrior/research/pvp/builds/protection-pvp.md`)
-- [ ] A generated Protection build: check it against the community's Protection builds at launch.
 

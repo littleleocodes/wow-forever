@@ -52,6 +52,11 @@ Each class folder now opens with player pages and keeps the research below:
   spec's raid gain comes from: mana, armor, physical, spell, rest) and DPS by fight length (1-6 minutes); the raid pipeline was re-run
   at 180 s (every hand draft stands). Player rotations are simplified to class spells in plain words (`simple_rotation.py`), leveling
   pages use hand-kept steps (`leveling-steps.json`). Open: re-run the rotation searches at 180 s (they were tuned at 120 s).
+- **Filler audit** (same day): 30 raid builds moved zero-value points into useful talents or DPS gains (Frost Winter's Chill mage
+  +8.8%, Mutilate rogue +6.0%, full-buffs hunter +5.3%, Frostfire +2.5%, Protection paladin +2.4%); rotation bugs fixed on the way
+  (Fury dummy rotation had dropped Bloodthirst: +2.3%; Arms two-hander never cast Death Wish: +3.1%). Raid pipeline re-run at 180 s:
+  every hand draft stands. Cloud note: the container is reclaimed when the session idles, which kills background jobs; long runs need
+  resumable scripts (done markers) and scheduled check-ins (send_later) to keep the session awake.
 - Candidates were not pruned: the fight-lab calibration fits jointly over every saved candidate (the fix for the optimizer's swings),
   so deleting them would change future fits. They sit under `research/`, out of a player's way.
 

@@ -370,6 +370,16 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   dummy fights of 60-360 s without execute phases; `curve_windows`). Window DPS from differences between lengths was tried and dropped
   (±7% noise at 3000 iterations). A player's raid page and the class ranking show both (the ranking's "6-minute fight" column).
   Rotations were tuned at 120 s (apl_opt searches before 2026-09-29): a re-search at 180 s is open.
+- **Filler audit** (2026-09-29, user question "why Wand Specialization as a filler when Improved Channeling protects Arcane
+  Missiles?"): `raidsim/filler_audit.py` measures every talent of our raid builds by removal (180 s, the entry's setting); a talent
+  under 0.2% is a free point, except talents the rotation conditions on, a spec's `not_measured` talents and talents that grant an
+  ability (flagged instead; `VERIFIED_UNUSED` lists abilities tested at every rotation spot and never worth casting). One point at a
+  time moves to a DPS gain (confirmed on seed 2) or, at no loss, to a more useful talent by `utility_tags.py` (beta tooltip tags:
+  interrupt/pushback, threat, mana, range, survival; tanks survival first; `NO_RAID` for pet revives, distractions, travel). The same
+  tags break ties in the scorer's raid profiles (`TIE_BREAK` per point). Records: `research/raid/raidsim/<entry>-fillers-<build>.json`;
+  `--all --apply` writes the builds with a note. The utility order is our judgment: the simulator models no pushback, range or threat.
+  Raid pages list the class's own spells a build casts that the simple rotation leaves out as "Advanced" (cooldowns, mana tools,
+  with casts per fight from the race report; `simple_rotation.advanced`).
 - **Seeds in the raid sim** (fixed 2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so our seeds 1, 2 and 3 used
   to share almost every iteration. `run.sim_seed(k)` maps seed k to 1 + (k - 1) * 1,000,000 (seed 1 unchanged, the others disjoint)
   in every bench config (run.py, apl_opt.py and through it talent_opt.py). Seed-2 confirmations and third-seed checks recorded

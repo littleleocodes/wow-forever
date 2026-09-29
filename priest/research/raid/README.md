@@ -151,7 +151,7 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Raid healer | holy-heal | [22/29/0](builds/opt-holy-heal-raid-heal.md) (+93.7%) | [holy-raid-healer](builds/holy-raid-healer.md) |
-| Raid DPS, Shadow | shadow-dps | [20/0/31](builds/opt-shadow-dps-raid-dps.md) (+359.7%) | [leveling-shadow](../leveling/builds/leveling-shadow.md) |
+| Raid DPS, Shadow | shadow-dps | [20/0/31](builds/opt-shadow-dps-raid-dps.md) (+567.4%) | [leveling-shadow](../leveling/builds/leveling-shadow.md) |
 
 Model findings: Healer 22/29/0: Discipline's Twin Disciplines, Mental Strength and Penance pair with Holy's Divine Fury, Inspiration, Holy Specialization and Spiritual Healing. Shadow raid 20/0/31 leans on Shadow Weaving, Darkness and Devouring Contagion; leveling Shadow 14/0/37 keeps Spirit Tap and Blackout (now priced as a leveling stun).
 

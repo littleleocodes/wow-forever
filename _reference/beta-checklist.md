@@ -366,7 +366,7 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 | Talent | What the model assumes |
 |---|---|
 | Bastion | +2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scal |
-| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); al |
+| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.2% DPS in the simulator (scorer said 6.2% on the same scale); al |
 | Dual Wield Specialization | +5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-0 |
 | Weaponmaster | Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight la |
 

@@ -7497,13 +7497,20 @@
   }
  },
  "last_run": {
-  "date": "2026-09-29T22:42:26",
+  "date": "2026-09-29T22:56:56",
   "classes": [
+   "mage",
+   "priest",
+   "warlock",
+   "hunter",
+   "warrior",
+   "rogue",
+   "paladin",
+   "shaman",
    "druid"
   ],
   "steps": [
-   "raid",
-   "adopt"
+   "regen"
   ],
   "fights": {
    "calibrate": 1500,
@@ -7511,8 +7518,438 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 263,
+  "seconds": 746,
   "refresh": null,
-  "regen_log": []
+  "regen_log": [
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_fightlab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "formatted /home/user/wow-forever/hunter/research/talents/forever/proposed-builds.json",
+     "hunter: README section + leveling-beast-mastery note written",
+     "formatted /home/user/wow-forever/warrior/research/talents/forever/proposed-builds.json",
+     "warrior: README section + leveling-arms note written",
+     "formatted /home/user/wow-forever/rogue/research/talents/forever/proposed-builds.json",
+     "rogue: README section + leveling-combat-swords note written",
+     "formatted /home/user/wow-forever/paladin/research/talents/forever/proposed-builds.json",
+     "paladin: README section + leveling-retribution note written",
+     "formatted /home/user/wow-forever/shaman/research/talents/forever/proposed-builds.json",
+     "shaman: README section + leveling-enhancement note written",
+     "formatted /home/user/wow-forever/druid/research/talents/forever/proposed-builds.json",
+     "druid: README section + leveling-feral note written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: raid sim section written (4 specs)",
+     "priest: raid sim section written (2 specs)",
+     "warlock: raid sim section written (5 specs)",
+     "hunter: raid sim section written (4 specs)",
+     "warrior: raid sim section written (4 specs)",
+     "rogue: raid sim section written (4 specs)",
+     "paladin: raid sim section written (3 specs)",
+     "shaman: raid sim section written (3 specs)",
+     "druid: raid sim section written (3 specs)",
+     "wrote _reference/raidsim-summary.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_heallab_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "priest: healer lab section written (1 specs)",
+     "paladin: healer lab section written (1 specs)",
+     "shaman: healer lab section written (1 specs)",
+     "druid: healer lab section written (1 specs)",
+     "wrote _reference/heallab-summary.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_leveling_guides.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: leveling/guide.md written",
+     "priest: leveling/guide.md written",
+     "warlock: leveling/guide.md written",
+     "hunter: leveling/guide.md written",
+     "warrior: leveling/guide.md written",
+     "rogue: leveling/guide.md written",
+     "paladin: leveling/guide.md written",
+     "shaman: leveling/guide.md written",
+     "druid: leveling/guide.md written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_sim_presets.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: raid gear and consumables written",
+     "priest: raid gear and consumables written",
+     "warlock: raid gear and consumables written",
+     "hunter: raid gear and consumables written",
+     "warrior: raid gear and consumables written",
+     "rogue: raid gear and consumables written",
+     "paladin: raid gear and consumables written",
+     "shaman: raid gear and consumables written",
+     "druid: raid gear and consumables written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_rotations.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "mage: raid and leveling rotations, DPS ranking written",
+     "priest: raid and leveling rotations, DPS ranking written",
+     "warlock: raid and leveling rotations, DPS ranking written",
+     "hunter: raid and leveling rotations, DPS ranking written",
+     "warrior: raid and leveling rotations, DPS ranking written",
+     "rogue: raid and leveling rotations, DPS ranking written",
+     "paladin: raid and leveling rotations, DPS ranking written",
+     "shaman: raid and leveling rotations, DPS ranking written",
+     "druid: raid and leveling rotations, DPS ranking written"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/validate_builds.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "  ok   opt-feral-cat-dps-solo-60 (9/31/11)",
+     "  ok   opt-balance-dps-leveling-st (36/2/13)",
+     "  ok   opt-resto-heal-raid-heal (11/5/35)",
+     "  ok   balance-pvp (32/11/8)",
+     "  ok   feral-combat-pvp (0/31/20)",
+     "  ok   opt-balance-dps-raid-dps (33/5/13)",
+     "  ok   opt-balance-dps-parse (33/5/13)",
+     "  ok   opt-feral-cat-dps-raid-dps (9/35/7)",
+     "  ok   opt-feral-cat-dps-parse (9/35/7)",
+     "  ok   opt-feral-bear-tank-raid-tank (7/35/9)",
+     "",
+     "all builds valid"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_builds.py",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "rogue/classic-baseline: 5 build pages + README.md",
+     "rogue: 18 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "priest/classic-baseline: 4 build pages + README.md",
+     "priest: 13 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "shaman/classic-baseline: 5 build pages + README.md",
+     "shaman: 17 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "mage/classic-baseline: 7 build pages + README.md",
+     "mage: 19 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "warlock/classic-baseline: 4 build pages + README.md",
+     "warlock: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "druid/classic-baseline: 7 build pages + README.md",
+     "druid: 18 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_new_builds.py mage priest warlock hunter warrior rogue paladin shaman druid",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/new-builds-survey.md",
+     "wrote the New spells and builds section of 9 raid READMEs"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_modes.py",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "druid: README.md sections and 3 mode folders written",
+     "hunter: README.md sections and 3 mode folders written",
+     "mage: README.md sections and 3 mode folders written",
+     "paladin: README.md sections and 3 mode folders written",
+     "priest: README.md sections and 3 mode folders written",
+     "rogue: README.md sections and 3 mode folders written",
+     "shaman: README.md sections and 3 mode folders written",
+     "warlock: README.md sections and 3 mode folders written",
+     "warrior: README.md sections and 3 mode folders written",
+     "wrote README.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py mage --write",
+    "rc": 0,
+    "seconds": 138,
+    "tail": [
+     "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-40 build (0/15/16) | +0.7% | +3.6% | +14.9% | +21.7% | +24.0% | +54.5% | +55.8% | +56.8% | +57.8% | +61.4% | +64.3% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.4% | +32.1% | +34.1% | +60.1% | +63.0% | +64.3% |",
+     "| fire-leveling -> level-60 build (0/33/18) | +0.5% | +6.7% | +19.6% | +21.6% | +23.8% | +26.3% | +36.0% | +38.0% | +38.8% | +62.8% | +64.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py priest --write",
+    "rc": 0,
+    "seconds": 35,
+    "tail": [
+     "| shadow-dps -> level-20 build (0/0/11) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-30 build (2/0/19) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +55.8% | +57.7% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-40 build (0/0/31) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "| shadow-dps -> level-50 build (8/0/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.5% | +72.6% |",
+     "| shadow-dps -> level-60 build (7/11/33) | +0.4% | +3.4% | +52.8% | +59.3% | +62.3% | +56.1% | +71.6% | +72.3% | +72.4% | +72.4% | +72.9% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py warlock --write",
+    "rc": 0,
+    "seconds": 75,
+    "tail": [
+     "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-50 build (35/6/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |",
+     "| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +21.3% | +21.9% | +22.1% | +22.1% | +27.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py hunter --write",
+    "rc": 0,
+    "seconds": 31,
+    "tail": [
+     "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
+     "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
+     "| bm-leveling -> level-40 build (16/15/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-50 build (16/25/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.5% | +16.0% | +18.0% | +19.2% | +23.4% | +24.7% | +27.6% |",
+     "| bm-leveling -> level-60 build (19/32/0) | +0.4% | +2.2% | +3.6% | +10.7% | +11.9% | +14.4% | +17.7% | +19.6% | +23.0% | +24.8% | +27.6% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py warrior --write",
+    "rc": 0,
+    "seconds": 78,
+    "tail": [
+     "| fury-dw-raid -> level-20 build (3/8/0) | +1.1% | +5.6% | +8.8% | +8.1% | +14.8% | +20.1% | +23.7% | +28.9% | +30.4% | +31.1% | +32.3% |",
+     "| fury-dw-raid -> level-30 build (0/21/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.9% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |",
+     "| fury-dw-raid -> level-40 build (0/31/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |",
+     "| fury-dw-raid -> level-50 build (1/40/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.9% | +31.4% | +32.6% |",
+     "| fury-dw-raid -> level-60 build (13/38/0) | +0.6% | +3.9% | +7.1% | +9.3% | +16.0% | +20.7% | +27.9% | +29.7% | +30.7% | +31.5% | +32.7% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py rogue --write",
+    "rc": 0,
+    "seconds": 83,
+    "tail": [
+     "| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.7% | +13.5% | +15.6% | +18.5% | +21.6% | +23.0% | +29.2% | +32.7% | +34.0% | +35.9% |",
+     "| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.1% | +8.4% | +16.1% | +20.2% | +22.6% | +25.9% | +27.3% | +32.7% | +33.8% | +35.5% |",
+     "| combat-daggers-raid -> level-40 build (13/16/2) | +1.6% | +4.6% | +8.3% | +11.1% | +14.7% | +22.0% | +25.9% | +27.3% | +32.7% | +33.8% | +35.5% |",
+     "| combat-daggers-raid -> level-50 build (23/16/2) | +1.6% | +4.6% | +8.3% | +11.3% | +12.2% | +18.4% | +22.1% | +29.3% | +32.9% | +34.0% | +35.7% |",
+     "| combat-daggers-raid -> level-60 build (21/28/2) | +0.1% | +4.1% | +11.9% | +15.0% | +17.8% | +21.7% | +24.1% | +27.2% | +29.4% | +31.0% | +36.1% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py paladin --write",
+    "rc": 0,
+    "seconds": 54,
+    "tail": [
+     "| ret-dps -> level-20 build (0/0/11) | +0.9% | +4.8% | +15.5% | +22.9% | +26.3% | +30.2% | +32.5% | +32.9% | +33.6% | +36.1% | +36.6% |",
+     "| ret-dps -> level-30 build (0/0/21) | +0.9% | +3.8% | +13.8% | +22.9% | +26.5% | +30.2% | +32.6% | +32.9% | +33.6% | +36.1% | +36.7% |",
+     "| ret-dps -> level-40 build (0/0/31) | +0.2% | +3.0% | +14.2% | +22.8% | +26.4% | +30.3% | +32.8% | +32.9% | +33.7% | +36.1% | +36.7% |",
+     "| ret-dps -> level-50 build (8/0/33) | +0.2% | +3.0% | +14.2% | +22.8% | +26.4% | +30.3% | +32.6% | +32.7% | +35.3% | +36.1% | +36.5% |",
+     "| ret-dps -> level-60 build (13/0/38) | +0.9% | +3.8% | +14.8% | +22.8% | +26.4% | +30.2% | +32.6% | +32.9% | +33.6% | +36.1% | +36.7% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py shaman --write",
+    "rc": 0,
+    "seconds": 94,
+    "tail": [
+     "| elemental-dps -> level-20 build (11/0/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.0% | +19.2% | +24.9% | +28.4% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-30 build (14/7/0) | +1.5% | +7.0% | +13.2% | +15.4% | +19.2% | +20.8% | +22.4% | +28.0% | +32.2% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-40 build (17/14/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.3% | +26.5% | +30.0% | +35.9% | +36.9% |",
+     "| elemental-dps -> level-50 build (30/11/0) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.0% | +26.6% | +33.1% | +35.9% | +36.8% |",
+     "| elemental-dps -> level-60 build (31/12/8) | +1.5% | +7.0% | +13.2% | +15.8% | +17.2% | +21.1% | +25.1% | +26.7% | +32.1% | +35.6% | +37.9% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/respec.py druid --write",
+    "rc": 0,
+    "seconds": 154,
+    "tail": [
+     "| balance-dps -> level-20 build (11/0/0) | +2.0% | +13.3% | +23.6% | +27.8% | +36.0% | +45.4% | +51.5% | +55.7% | +56.1% | +57.0% | +59.5% |",
+     "| balance-dps -> level-30 build (21/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| balance-dps -> level-40 build (31/0/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.2% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "| balance-dps -> level-50 build (35/6/0) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.7% | +57.5% | +58.5% | +59.4% |",
+     "| balance-dps -> level-60 build (36/2/13) | +2.0% | +13.3% | +20.9% | +27.1% | +37.2% | +46.7% | +53.1% | +56.9% | +57.0% | +57.9% | +60.4% |",
+     "",
+     "## Reading it",
+     "",
+     "- A respec only pays when the level-optimal build differs from the 60-build's path *and* the gap, summed over the levels until the next switch, beats the respec fee in hours. Small gaps (a few %) rarely do before 40; large ones (a different tree, e.g. Fire vs Frost, or a two-hander build vs a dual-wield build) can.",
+     "- 'Extended greedily' plans (target < 60) show what happens if you stop planning after the target level; if the schedule ends on one, the 60-build path was not worth its early sacrifices.",
+     "- Everything downstream of the effect encodings inherits their uncertainty; treat differences under ~1 h as noise.",
+     ""
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/render_optimizer_sections.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "updated hunter/leveling/README.md and hunter/raid/README.md",
+     "updated mage/leveling/README.md and mage/raid/README.md",
+     "updated warrior/leveling/README.md and warrior/raid/README.md",
+     "updated rogue/leveling/README.md and rogue/raid/README.md",
+     "updated priest/leveling/README.md and priest/raid/README.md",
+     "updated paladin/leveling/README.md and paladin/raid/README.md",
+     "updated shaman/leveling/README.md and shaman/raid/README.md",
+     "updated warlock/leveling/README.md and warlock/raid/README.md",
+     "updated druid/leveling/README.md and druid/raid/README.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/compare_effects.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "druid    buff=8 nerf=20 reworked=0 new=17 removed=13 same=6 unscored=0",
+     "hunter   buff=5 nerf=17 reworked=0 new=18 removed=14 same=10 unscored=0",
+     "mage     buff=9 nerf=18 reworked=1 new=11 removed=6 same=11 unscored=4",
+     "paladin  buff=12 nerf=11 reworked=1 new=19 removed=13 same=7 unscored=0",
+     "priest   buff=12 nerf=13 reworked=1 new=14 removed=8 same=11 unscored=2",
+     "rogue    buff=15 nerf=9 reworked=0 new=10 removed=8 same=19 unscored=0",
+     "shaman   buff=12 nerf=14 reworked=2 new=17 removed=13 same=5 unscored=0",
+     "warlock  buff=6 nerf=18 reworked=1 new=23 removed=21 same=3 unscored=1",
+     "warrior  buff=9 nerf=15 reworked=2 new=11 removed=10 same=16 unscored=0"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/scorer/loop_audit.py",
+    "rc": 0,
+    "seconds": 1,
+    "tail": [
+     "druid    flagged 30/98  open 1",
+     "hunter   flagged 32/58  open 5",
+     "mage     flagged 54/107  open 3",
+     "paladin  flagged 25/73  open 1",
+     "priest   flagged 24/56  open 3",
+     "rogue    flagged 24/63  open 5",
+     "shaman   flagged 31/68  open 3",
+     "warlock  flagged 22/61  open 8",
+     "warrior  flagged 14/67  open 1",
+     "total flagged: 256 -> _reference/data/scorer/loops/audit.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/build_launch_checklist.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/launch-checklist.md (231 per-build questions)"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/build_beta_checklist.py",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/beta-checklist.md"
+    ],
+    "stderr": []
+   },
+   {
+    "cmd": "/home/user/wow-forever/_reference/data/fightlab/summary.py --write",
+    "rc": 0,
+    "seconds": 0,
+    "tail": [
+     "wrote _reference/fightlab-summary.md"
+    ],
+    "stderr": []
+   }
+  ]
  }
 }

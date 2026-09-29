@@ -195,8 +195,8 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS with pet | mm-raid | [22/29/0](builds/opt-mm-raid-raid-dps.md) (+54.5%) | [bm-mm-raid](builds/bm-mm-raid.md) |
-| Raid DPS, Lone Wolf | mm-lonewolf-raid | [5/38/8](builds/opt-mm-lonewolf-raid-raid-dps.md) (+78.0%) | [mm-lone-wolf-raid](builds/mm-lone-wolf-raid.md) |
+| Raid DPS with pet | mm-raid | [22/29/0](builds/opt-mm-raid-raid-dps.md) (+55.5%) | [bm-mm-raid](builds/bm-mm-raid.md) |
+| Raid DPS, Lone Wolf | mm-lonewolf-raid | [5/38/8](builds/opt-mm-lonewolf-raid-raid-dps.md) (+77.7%) | [mm-lone-wolf-raid](builds/mm-lone-wolf-raid.md) |
 
 Model findings: Improved Tracking beats Ferocity per point everywhere; Endurance Training is worth ~0.2%/rank of leveling time; with the raid mana weight raised for hunters (they run dry on long fights), Efficiency is back in the raid build (12/34/5); Lone Wolf edges the pet build in raids (absolute DPS index 1.96 vs 1.88) if its +20% is real.
 

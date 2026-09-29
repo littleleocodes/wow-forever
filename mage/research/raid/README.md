@@ -214,9 +214,9 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, Frost (lone frost mage) | frost-raid | [22/0/29](builds/opt-frost-raid-raid-dps.md) (+75.6%) | [frost-winters-chill-raid](builds/frost-winters-chill-raid.md) |
+| Raid DPS, Frost (lone frost mage) | frost-raid | [22/0/29](builds/opt-frost-raid-raid-dps.md) (+79.5%) | [frost-winters-chill-raid](builds/frost-winters-chill-raid.md) |
 | Raid DPS, Frost (another mage keeps Winter's Chill) | frost-raid | [1/13/37](builds/opt-frost-raid-raid-dps-extwc.md) (+73.2%) | [frost-arcane-power-raid](builds/frost-arcane-power-raid.md) |
-| Raid DPS, Fire | fire-raid | [13/33/5](builds/opt-fire-raid-raid-dps.md) (+197.3%) | [fire-raid](builds/fire-raid.md) |
+| Raid DPS, Fire | fire-raid | [14/32/5](builds/opt-fire-raid-raid-dps.md) (+210.6%) | [fire-raid](builds/fire-raid.md) |
 
 Model findings: Arcane Meditation (17%/rank) pulls every build 15+ points into Arcane; raid Frost is Shatter + Fingers of Frost with no Winter's Chill; Frost still out-levels Fire (+43% vs +31% time saved). The AoE build now follows the Classic AoE loop (Improved Frost Nova 15-16, Permafrost, Improved Blizzard 20-22, Arctic Reach, Cold Snap, Ice Block, Ice Barrier at 40, no Frostbite) and keeps Shatter/Fingers of Frost because Forever's versions are stronger.
 

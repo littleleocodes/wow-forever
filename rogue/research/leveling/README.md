@@ -60,9 +60,9 @@ When to respec while leveling, with the best point-by-point path: [respec plan](
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Leveling, swords | combat-swords-raid | [33/16 with order](builds/opt-combat-swords-raid-leveling-st.md) (+32.5%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
-| Leveling, daggers | combat-daggers-raid | [21/28 with order](builds/opt-combat-daggers-raid-leveling-st.md) (+36.0%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
-| Solo / farming at 60 | combat-swords-raid | [33/16 with order](builds/opt-combat-swords-raid-solo-60.md) (+32.2%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
+| Leveling, swords | combat-swords-raid | [33/16/2 with order](builds/opt-combat-swords-raid-leveling-st.md) (+32.5%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
+| Leveling, daggers | combat-daggers-raid | [21/28/2 with order](builds/opt-combat-daggers-raid-leveling-st.md) (+36.0%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
+| Solo / farming at 60 | combat-swords-raid | [33/16/2 with order](builds/opt-combat-swords-raid-solo-60.md) (+32.2%) | [leveling-combat-swords](builds/leveling-combat-swords.md) |
 
 Model findings: Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.
 
