@@ -63,7 +63,7 @@ def sweep(cls, spec, a, repo):
             run.SETTING_OVERRIDE = setting
             vals = []
             for seed in (1, 2):
-                r = run.run_spec(cls, spec, argparse.Namespace(builds=[bid], iterations=a.iterations, duration=120.0, seed=seed, no_presets=True,
+                r = run.run_spec(cls, spec, argparse.Namespace(builds=[bid], iterations=a.iterations, duration=run.FIGHT, seed=seed, no_presets=True,
                                                                deltas=None, write=False), repo)["results"][0]
                 vals.append(r.get("value") if tank else r["dps"])
             out["races"].setdefault(race, {})[setting] = sum(vals) / len(vals)

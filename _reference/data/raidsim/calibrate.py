@@ -155,7 +155,7 @@ def main():
     cands = sorted(str(p) for p in (paths.raidsim_dir(a.cls, game) / "candidates").glob(f"cand-{a.spec}-*.json"))
     ids = a.builds or (entry["builds"] + cands)
     # ---- 1. simulate with removals
-    args = argparse.Namespace(builds=ids, iterations=a.iterations, duration=120.0, seed=1, repo=a.repo, no_presets=True, write=a.write, deltas=[] if a.shares_only else ["all"])
+    args = argparse.Namespace(builds=ids, iterations=a.iterations, duration=raidrun.FIGHT, seed=1, repo=a.repo, no_presets=True, write=a.write, deltas=[] if a.shares_only else ["all"])
     out = raidrun.run_spec(a.cls, a.spec, args, repo)
     sim = out["deltas"]   # build -> [{talent, ranks, sim_delta, ...}]
     per_talent = collections.defaultdict(list)
@@ -172,7 +172,7 @@ def main():
         prev = raidrun.SETTING_OVERRIDE
         raidrun.SETTING_OVERRIDE = "dummy-surplus"
         try:
-            out_s = raidrun.run_spec(a.cls, a.spec, argparse.Namespace(builds=ids, iterations=a.iterations, duration=120.0, seed=1, repo=a.repo,
+            out_s = raidrun.run_spec(a.cls, a.spec, argparse.Namespace(builds=ids, iterations=a.iterations, duration=raidrun.FIGHT, seed=1, repo=a.repo,
                                                                      no_presets=True, write=False, deltas=[]), repo)
         finally:
             raidrun.SETTING_OVERRIDE = prev

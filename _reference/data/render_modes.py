@@ -76,6 +76,25 @@ def leveling_numbers(cls):
     return out
 
 
+_ENV = {}
+
+
+def env_info(cls, entry, label):
+    """(ladder steps, DPS-over-time windows) of a build in its entry's environments report, or (None, None)."""
+    if (cls, entry) not in _ENV:
+        f = paths.raidsim_dir(cls) / f"{entry}-environments.json"
+        rows = json.load(open(f, encoding="utf-8"))["results"] if f.exists() else []
+        R = rr.raidrun()
+        _ENV[(cls, entry)] = (R.ladder_steps(rows), R.curve_windows(rows))
+    lad, cur = _ENV[(cls, entry)]
+    return lad.get(label), cur.get(label)
+
+
+def late_dps(cls, r):
+    """DPS in the last window of the curve (minutes 4-6) for a raid_numbers row, or None."""
+    return (list((env_info(cls, r["entry"], r["row"]["label"])[1] or {}).values()) or [None])[-1] if r else None
+
+
 def healer_numbers(cls):
     return {r["id"]: r for r in rs.healer_rows(cls)}
 
@@ -199,6 +218,19 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 if r.get("raid"):
                     o.append(f"| Parse (a full raid: every raid buff and debuff) | {r['raid']:.0f} |")
                 o.append("")
+            if r and not r.get("tank"):
+                lad, cur = env_info(cls, r["entry"], top["id"])
+                if lad:
+                    o += ["**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):", "",
+                          f"Dummy {lad['dummy']:.0f} → " + " → ".join(f"{k if k != 'rest' else 'everything else'} {v:+.0%}" for k, v in lad["steps"].items())
+                          + f" → raid {lad['raid']:.0f}", "",
+                          "(*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, "
+                          "Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; "
+                          "*everything else*: Kings, stamina, spirit, auras and the raid rotation.)", ""]
+                if cur:
+                    o += ["**DPS over the fight** (training dummy; damage per second inside each stretch of the fight):", "",
+                          "| " + " | ".join(cur) + " |", "|" + "---|" * len(cur), "| " + " | ".join(f"{v:.0f}" for v in cur.values()) + " |", "",
+                          "A falling row means cooldowns spent at the pull or mana running out; each stretch is about ±3%.", ""]
             if r:
                 o += ["**What to press** (top to bottom: cast the first line that is ready):", ""] + rs.rotation_lines(r["d"], r["row"]) + [""]
         parse = next((b for b in ranked if b["id"].endswith("-parse")), None)
@@ -261,12 +293,14 @@ def ranking(cls, g, specs, mode, nums, prefix=""):
         if dps:
             dps.sort(key=lambda x: x[0])
             best = -dps[0][0]
-            o += ["**Damage**, ranked by training-dummy DPS (only your own buffs; the parse column is the same build in a full raid):", "",
-                  "| # | Spec and build | Dummy DPS | Parse DPS | Behind the best |", "|---|---|---|---|---|"]
+            o += ["**Damage**, ranked by training-dummy DPS over a 3-minute fight (only your own buffs). *Parse*: the same build in a full raid. "
+                  "*Minutes 4-6*: its DPS late in a long fight (dummy, no execute phase), where cooldowns are spent and mana runs short.", "",
+                  "| # | Spec and build | Dummy DPS | Parse DPS | Minutes 4-6 | Behind the best |", "|---|---|---|---|---|---|"]
             for i, (d, spec, b) in enumerate(dps, 1):
                 r = R[b["id"]]
-                o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | {r['raid']:.0f} |" if r.get("raid") else f"| {i} | {name(spec, b)} | {-d:.0f} | - |")
-                o[-1] += f" {'best' if i == 1 else f'{-d / best - 1:+.0%}'} |"
+                late = late_dps(cls, r)
+                o.append(f"| {i} | {name(spec, b)} | {-d:.0f} | " + (f"{r['raid']:.0f}" if r.get("raid") else "-") + " | "
+                         + (f"{late:.0f}" if late else "-") + f" | {'best' if i == 1 else f'{-d / best - 1:+.0%}'} |")
             o.append("")
         if tanks:
             o += ["**Tanking**: " + ", ".join(name(spec, b) for spec, b in tanks) + ".", ""]
@@ -384,8 +418,9 @@ def root_page(infos):
           "numbers: the training dummy ranks builds within a class fairly, but classes that live on raid buffs (warriors' rage, hunters' and "
           "shamans' mana) look far weaker alone than they are in a raid.", "",
           "## How to read the numbers", "",
-          "- **Training dummy DPS**: your own damage against a raid boss with only the buffs you bring yourself; it ranks builds fairly.",
-          "- **Parse DPS**: the same build in a full raid, with every raid buff and debuff: your personal damage in a real raid.",
+          "- **Training dummy DPS**: your own damage against a raid boss over a 3-minute fight, with only the buffs you bring yourself; it ranks builds within a class fairly.",
+          "- **Parse DPS**: the same build in a full raid, with every raid buff and debuff: your personal damage in a real raid. Each spec's raid page "
+          "shows where its raid gain comes from (mana, armor debuffs, physical buffs, spell buffs) and its DPS minute by minute.",
           "- **Seconds per kill** (leveling): a whole kill cycle against same-level mobs, including eating and drinking.",
           f"- **{BADGE}**: the best spec for that mode in its class, or within 3% of it. **{GEN_MARK}**: a generated build (a starting point).",
           "- Everything is a simulation of the beta, not a measurement in the game. Treat differences under 2-3% as a tie.", "",

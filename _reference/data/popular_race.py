@@ -76,7 +76,7 @@ def part_raid(cls, a, tmp):
             continue
         for setting in (["raid"] if tank else ["dummy", "raid"]):
             run.SETTING_OVERRIDE = setting
-            ns = argparse.Namespace(builds=list(entry["builds"]) + pops, iterations=a.iterations, duration=120.0, seed=1, no_presets=False,
+            ns = argparse.Namespace(builds=list(entry["builds"]) + pops, iterations=a.iterations, duration=run.FIGHT, seed=1, no_presets=False,
                                     deltas=None, write=False)
             out = run.run_spec(cls, name, ns, repo)
             for x in out["results"]:

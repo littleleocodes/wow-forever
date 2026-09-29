@@ -61,7 +61,7 @@ def bench(entry, repo, builds, iterations, seed, setting, tag):
            "spec": entry.get("spec", {}), **R.setting_cfg(entry, setting),
            "profession1": entry.get("profession1", "Engineering"), "profession2": entry.get("profession2", ""),
            "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
-           "iterations": iterations, "duration": 120.0, "seed": R.sim_seed(seed), "isTank": entry.get("tank", False), "builds": builds}
+           "iterations": iterations, "duration": R.FIGHT, "seed": R.sim_seed(seed), "isTank": entry.get("tank", False), "builds": builds}
     d = repo / "bench"
     d.mkdir(exist_ok=True)
     p = d / f"aplopt-{tag}-{os.getpid()}.json"

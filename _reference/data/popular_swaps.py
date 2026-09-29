@@ -144,7 +144,7 @@ def part_raid(cls, a, tmp):
             if files:
                 for setting in (["raid"] if tank else ["dummy", "raid"]):
                     run.SETTING_OVERRIDE = setting
-                    ns = argparse.Namespace(builds=[bid] + files, iterations=a.iterations, duration=120.0, seed=1, no_presets=True, deltas=None, write=False)
+                    ns = argparse.Namespace(builds=[bid] + files, iterations=a.iterations, duration=run.FIGHT, seed=1, no_presets=True, deltas=None, write=False)
                     out = run.run_spec(cls, name, ns, repo)
                     res[setting] = {x["label"]: (x.get("value") if tank else x["dps"]) for x in out["results"]}
             for n, p, s, why in sw:
