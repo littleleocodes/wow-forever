@@ -6,8 +6,8 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
 |---|---|---|---|---|
-| 1 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid ⚗ | 469 | - | best |
-| 2 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 468 | 815 | -0% |
+| 1 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid ⚗ | 469 | 808 | best |
+| 2 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 468 | 814 | -0% |
 | 3 | [Survival](survival.md) — Melee Survival — Lone Wolf | 459 | 986 | -2% |
 | 4 | [Marksmanship](marksmanship.md) — Marksmanship without a pet | 434 | 848 | -8% |
 

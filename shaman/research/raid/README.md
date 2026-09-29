@@ -35,7 +35,7 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 398 | +0.0% | - | - | 0 s |
+| 1 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 398 | +0.0% | 499 | -1.1% | 0 s |
 | 2 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 397 | -0.1% | 504 | +0.0% | 0 s |
 | 3 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 396 | -0.5% | 503 | -0.2% | 0 s |
 | 4 | *Elemental 31/6/14* | community simulator | - | 393 | -1.1% | 498 | -1.3% | 0 s |
@@ -123,9 +123,9 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
+| `elemental-dps` | `elemental-raid` | 31/7/13 | 398 | 479 | 499 | 528 | 531 |
 | `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 397 | 490 | 504 | 524 | 527 |
 | `elemental-dps` | `opt-elemental-dps-raid-dps` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
-| `elemental-dps` | `opt-elemental-dps-parse` | 29/22/0 | 396 | 489 | 503 | 523 | 527 |
 | `elemental-dps` | sim preset: Elemental 31/6/14 | - | 393 | 474 | 498 | 527 | 531 |
 | `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 381 | 471 | 493 | 512 | 518 |
 | `elemental-dps` | sim preset: Level 60 | - | 379 | 457 | 477 | 506 | 509 |

@@ -42,7 +42,7 @@ Healing and tanking specs level as a damage spec and switch at 60: Restoration l
 | # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
 |---|---|---|---|---|
 | 1 | [Enhancement](raid/enhancement.md) — One slow weapon | 415 | 774 | best |
-| 2 | [Elemental](raid/elemental.md) — Elemental — Raid ⚗ | 398 | - | -4% |
+| 2 | [Elemental](raid/elemental.md) — Elemental — Raid ⚗ | 398 | 499 | -4% |
 | 3 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 397 | 504 | -4% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.

@@ -7,7 +7,7 @@
 | # | Spec and build | Dummy DPS | Parse DPS | Behind the best |
 |---|---|---|---|---|
 | 1 | [Enhancement](enhancement.md) — One slow weapon | 415 | 774 | best |
-| 2 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 398 | - | -4% |
+| 2 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 398 | 499 | -4% |
 | 3 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 397 | 504 | -4% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.

@@ -11,6 +11,7 @@
 | Setting | DPS |
 |---|---|
 | Training dummy (only your own buffs) | 469 |
+| Parse (a full raid: every raid buff and debuff) | 808 |
 
 **What to press** (top to bottom: cast the first line that is ready):
 

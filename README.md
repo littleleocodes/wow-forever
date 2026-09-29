@@ -7,7 +7,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | Class | Roles | Fastest leveling | Most raid damage (DPS: training dummy / parse) |
 |---|---|---|---|
 | [**Druid**](druid/README.md) | damage, tank, healer | [Feral Combat](druid/leveling/feral-combat.md) (25 s/kill) | [Balance](druid/raid/balance.md) (461 dummy / 518 parse) |
-| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Beast Mastery](hunter/raid/beast-mastery.md) (469 dummy), [Beast-Marks](hunter/raid/beast-marks.md) (468 dummy / 815 parse), [Survival](hunter/raid/survival.md) (459 dummy / 986 parse) |
+| [**Hunter**](hunter/README.md) | damage | [Melee (split)](hunter/leveling/melee-split.md) (26 s/kill) | [Beast Mastery](hunter/raid/beast-mastery.md) (469 dummy / 808 parse), [Beast-Marks](hunter/raid/beast-marks.md) (468 dummy / 814 parse), [Survival](hunter/raid/survival.md) (459 dummy / 986 parse) |
 | [**Mage**](mage/README.md) | damage | [Frost](mage/leveling/frost.md) (26 s/kill) | [Arcane-Frost](mage/raid/arcane-frost.md) (587 dummy / 668 parse) |
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (368 dummy / 778 parse) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (554 dummy / 636 parse) |

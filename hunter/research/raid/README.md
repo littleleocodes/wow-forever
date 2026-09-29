@@ -61,9 +61,9 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 469 | +0.0% | - | - | 10 s |
-| 2 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 468 | -0.1% | 815 | +0.0% | 0 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.7% | 763 | -6.3% | 0 s |
+| 1 | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 469 | +0.0% | 808 | -0.8% | 10 s |
+| 2 | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 468 | -0.1% | 814 | +0.0% | 0 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 437 | -6.7% | 764 | -6.2% | 0 s |
 
 **melee-dps**
 
@@ -152,8 +152,9 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `bm-raid` | `mm-hawk-raid` | 22/29/0 | 469 | 507 | 815 | 815 | 833 |
-| `bm-raid` | sim preset: Beast Mastery 35/16/0 | - | 437 | 475 | 763 | 763 | 786 |
+| `bm-raid` | `beast-mastery-raid` | 30/21/0 | 469 | 510 | 808 | 808 | 824 |
+| `bm-raid` | `mm-hawk-raid` | 22/29/0 | 468 | 507 | 814 | 814 | 832 |
+| `bm-raid` | sim preset: Beast Mastery 35/16/0 | - | 437 | 474 | 764 | 764 | 787 |
 | `melee-dps` | `melee-survival-raid` | 5/11/35 | 459 | 537 | 986 | 986 | 1011 |
 | `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 433 | 511 | 961 | 961 | 988 |
 | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | 466 | 848 | 848 | 863 |

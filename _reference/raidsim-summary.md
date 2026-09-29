@@ -57,7 +57,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | warlock | Forever | `incinerate-raid` | `destruction-incinerate-raid` (9/11/31) | 484 | 563 | 560 | 560 | 560 | - | - |
 | warlock | Forever | `sb-raid` | `opt-sb-raid-parse` (21/11/19) | 573 | 675 | 695 | 695 | 727 | `opt-sb-raid-parse` 695 | DS/Ruin Pandemic 24/11/16 657 |
 | warlock | Classic | `sb-raid` | `sm-ruin-raid` (30/0/21) | 599 | - | 1092 | 1105 | 1153 | - | - |
-| hunter | Forever | `bm-raid` | `mm-hawk-raid` (22/29/0) | 469 | 507 | 815 | 815 | 833 | - | Beast Mastery 35/16/0 763 |
+| hunter | Forever | `bm-raid` | `mm-hawk-raid` (22/29/0) | 468 | 507 | 814 | 814 | 832 | - | Beast Mastery 35/16/0 764 |
 | hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 459 | 537 | 986 | 986 | 1011 | - | - |
 | hunter | Forever | `mm-lonewolf-raid` | `mm-lone-wolf-raid` (5/41/5) | 432 | 463 | 887 | 887 | 916 | `opt-mm-lonewolf-raid-parse` 848 | Marksmanship 732 |
 | hunter | Forever | `mm-raid` | `bm-mm-full-buffs-raid` (20/31/0) | 395 | 430 | 809 | 809 | 835 | `opt-mm-raid-parse` 779 | Marksmanship 816 |
@@ -75,7 +75,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | paladin | Forever | `ret-dps` | `opt-ret-dps-parse` (9/8/34) | 365 | 412 | 805 | 805 | 791 | `opt-ret-dps-parse` 805 | P4/P5 Ret 777 |
 | paladin | Forever | `seal-of-fury-raid` | `ret-raid-dps` (17/0/34) | 285 | 315 | 581 | 581 | 587 | - | - |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
-| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 397 | 490 | 504 | 524 | 527 | `opt-elemental-dps-parse` 523 | Elemental 31/6/14 527 |
+| shaman | Forever | `elemental-dps` | `elemental-raid` (31/7/13) | 398 | 479 | 499 | 528 | 531 | - | Elemental 31/6/14 527 |
 | shaman | Forever | `enhancement-dps` | `opt-enhancement-dps-parse` (10/31/10) | 404 | 452 | 775 | 773 | 823 | `opt-enhancement-dps-parse` 773 | Level 60 760 |
 | shaman | Classic | `elemental-dps` | `elemental-raid-dps` (31/0/20) | 298 | - | 730 | 1051 | 1184 | - | Level 60 1014 |
 | shaman | Classic | `enhancement-dps` | `enhancement-raid-support` (0/31/20) | 222 | - | 777 | 938 | 958 | - | Level 60 938 |
