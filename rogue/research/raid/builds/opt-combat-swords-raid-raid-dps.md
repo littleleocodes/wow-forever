@@ -65,15 +65,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 389 | +0.0% | 680 | -1.2% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 389 | +0.0% | 680 | -1.2% | 0 s |
-| 3 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 370 | -4.7% | 688 | +0.0% | 0 s |
-| 4 | *Sinister Strike* | community simulator | - | 366 | -5.8% | 686 | -0.2% | 0 s |
-| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 360 | -7.3% | 674 | -2.0% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 336 | -13.7% | 612 | -11.1% | 0 s |
-| 7 | *Mutilate* | community simulator | - | 325 | -16.4% | 600 | -12.8% | 0 s |
-| 8 | *Backstab* | community simulator | - | 314 | -19.1% | 614 | -10.7% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 267 | -31.4% | 512 | -25.6% | 0 s |
+| 1 | [`combat-swords-raid`](combat-swords-raid.md) | ours: hand draft | 19/32/0 | 394 | +0.0% | 687 | -1.3% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 394 | +0.0% | 687 | -1.3% | 0 s |
+| 3 | **[`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md)** | ours: optimizer | 20/31/0 | 376 | -4.6% | 696 | -0.0% | 0 s |
+| 4 | *Sinister Strike* | community simulator | - | 371 | -5.7% | 696 | +0.0% | 0 s |
+| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 365 | -7.4% | 682 | -2.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |
+| 7 | *Mutilate* | community simulator | - | 330 | -16.3% | 608 | -12.6% | 0 s |
+| 8 | *Backstab* | community simulator | - | 319 | -19.0% | 621 | -10.7% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 271 | -31.2% | 520 | -25.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,10 +100,10 @@ Damage by ability:
 | Ability | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) |
 |---|---|
 | Auto Attack | 54% |
-| Sinister Strike | 29% |
-| Deadly Poison | 6% |
+| Sinister Strike | 28% |
+| Deadly Poison | 7% |
 | Dense Sharpening Stone | 5% |
-| Eviscerate | 2% |
+| Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
 | Goblin Sapper Charge | 2% |
 

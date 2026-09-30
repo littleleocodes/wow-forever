@@ -35,12 +35,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 438 |
-| Parse (a full raid: every raid buff and debuff) | 953 |
+| Training dummy, 3-minute fight (only your own buffs) | 445 |
+| Parse (a full raid: every raid buff and debuff) | 967 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 438 → mana +1% → armor +48% → physical +52% → spell +4% → everything else +13% → raid 953
+Dummy 445 → mana +1% → armor +47% → physical +52% → spell +4% → everything else +13% → raid 967
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -48,14 +48,14 @@ Dummy 438 → mana +1% → armor +48% → physical +52% → spell +4% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 458 | 448 | 438 | 438 | 418 |
+| 465 | 454 | 445 | 445 | 424 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
 ## Other builds of this spec
 
-- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
-- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
+- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 429 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
+- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 428 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---

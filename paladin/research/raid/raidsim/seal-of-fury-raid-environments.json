@@ -2,12 +2,12 @@
  "class": "paladin",
  "spec": "seal-of-fury-raid",
  "game": "forever",
- "date": "2026-09-29",
+ "date": "2026-09-30",
  "sim": {
   "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
-  "gear_raid": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
-  "gear_max": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
+  "gear_max": "/home/user/wow-forever/_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
   "iterations": 3000,
   "seed": 1
  },
@@ -75,20 +75,20 @@
    "split": "17/0/34",
    "ours": true,
    "dps": {
-    "dummy": 286.72793525304365,
-    "dummy60": 317.728883037112,
-    "ladder-mana": 287.6207684190456,
-    "ladder-armor": 331.10563759786993,
-    "ladder-physical": 454.7350901069203,
-    "ladder-spell": 538.9521205490084,
-    "raid": 585.0637958587708,
-    "curve60": 263.49616743511694,
-    "curve120": 260.9204432154891,
-    "curve180": 263.0421368482669,
-    "curve240": 262.37384435520687,
-    "curve360": 260.41028648146994,
-    "max": 585.0637958587708,
-    "max60": 587.6081728175333
+    "dummy": 444.31548791151596,
+    "dummy60": 467.05594308870786,
+    "ladder-mana": 444.7918772362975,
+    "ladder-armor": 489.19643338314654,
+    "ladder-physical": 636.3397637139337,
+    "ladder-spell": 743.0026420827761,
+    "raid": 794.6537732323446,
+    "curve60": 415.00863149989993,
+    "curve120": 411.0201127340781,
+    "curve180": 412.0321739469177,
+    "curve240": 411.68546509712075,
+    "curve360": 409.92728189242246,
+    "max": 794.6537732323446,
+    "max60": 804.5038647738752
    }
   }
  ]

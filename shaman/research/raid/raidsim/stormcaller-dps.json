@@ -6,7 +6,7 @@
   "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "shaman/elemental",
-  "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+  "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/shaman/stormcaller-dps.apl.json",
   "apl_sim": "ui/specs/shaman/elemental/apls/forever.apl.json",
   "race": "RaceTroll",
@@ -24,12 +24,12 @@
    "potId": 13444,
    "conjuredId": 12662
   },
-  "encounter": "a boss-level training dummy (level 63), 120.0s, execute phases 20/25/35/45/90%",
-  "iterations": 20000,
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
   "seed": 1,
-  "duration": 120.0
+  "duration": 180.0
  },
- "date": "2026-09-29",
+ "date": "2026-09-30",
  "results": [
   {
    "label": "sim preset: Stormcaller 28/23/0",
@@ -37,39 +37,39 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "20554": 1.0,
     "15208": 1.0,
-    "529": 25.2615,
-    "29228": 10.3339,
-    "10605": 4.50065,
-    "10392": 29.124,
-    "10438": 2.0,
-    "20554": 1.0
+    "10392": 23.405333333333335,
+    "29228": 15.781,
+    "10605": 7.504666666666667,
+    "10438": 2.1353333333333335,
+    "529": 64.44333333333333
    },
    "casts": {
-    "Lightning Bolt": 55.3855,
-    "OtherActionManaGain": 2.0,
+    "Berserking": 1.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Flame Shock": 10.3339,
-    "Major Mana Potion": 1.0,
-    "Demonic Rune": 1.0,
-    "Chain Lightning": 4.50065,
-    "Searing Totem": 2.0,
-    "Berserking": 1.0
+    "Demonic Rune": 2.0,
+    "Major Mana Potion": 1.4586666666666666,
+    "Lightning Bolt": 88.84866666666666,
+    "Flame Shock": 15.781,
+    "Chain Lightning": 7.504666666666667,
+    "Searing Totem": 2.1353333333333335,
+    "OtherActionManaGain": 3.458666666666667
    },
-   "dps": 382.1368432156774,
-   "dps_stdev": 24.612496143720392,
-   "threat": 383.4900126234706,
+   "dps": 409.12700720418854,
+   "dps_stdev": 20.005019796045385,
+   "threat": 411.0374840951948,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.3020559999981465,
+   "oom_seconds": 0.1251559999989999,
    "error": null,
    "scorer": null,
    "shares": {
-    "Lightning Bolt": 0.7156426022869427,
-    "Flame Shock": 0.1663573024825275,
-    "Attack": 0.06428902961059929,
-    "Chain Lightning": 0.05371106561993052
+    "Lightning Bolt": 0.7079412351519895,
+    "Flame Shock": 0.18502331132657074,
+    "Chain Lightning": 0.060894606225119385,
+    "Attack": 0.04614084729632039
    },
    "source_shares": {},
    "unmatched_share": 1.0

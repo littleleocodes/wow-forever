@@ -36,15 +36,15 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-swords-raid`](builds/combat-swords-raid.md) | ours: hand draft | 19/32/0 | 389 | +0.0% | 680 | -1.2% | 0 s |
-| 2 | *Improved Expose Armor (SS)* | community simulator | - | 389 | +0.0% | 680 | -1.2% | 0 s |
-| 3 | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 370 | -4.7% | 688 | +0.0% | 0 s |
-| 4 | *Sinister Strike* | community simulator | - | 366 | -5.8% | 686 | -0.2% | 0 s |
-| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 360 | -7.3% | 674 | -2.0% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 336 | -13.7% | 612 | -11.1% | 0 s |
-| 7 | *Mutilate* | community simulator | - | 325 | -16.4% | 600 | -12.8% | 0 s |
-| 8 | *Backstab* | community simulator | - | 314 | -19.1% | 614 | -10.7% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 267 | -31.4% | 512 | -25.6% | 0 s |
+| 1 | [`combat-swords-raid`](builds/combat-swords-raid.md) | ours: hand draft | 19/32/0 | 394 | +0.0% | 687 | -1.3% | 0 s |
+| 2 | *Improved Expose Armor (SS)* | community simulator | - | 394 | +0.0% | 687 | -1.3% | 0 s |
+| 3 | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.6% | 696 | -0.0% | 0 s |
+| 4 | *Sinister Strike* | community simulator | - | 371 | -5.7% | 696 | +0.0% | 0 s |
+| 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 365 | -7.4% | 682 | -2.0% | 0 s |
+| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |
+| 7 | *Mutilate* | community simulator | - | 330 | -16.3% | 608 | -12.6% | 0 s |
+| 8 | *Backstab* | community simulator | - | 319 | -19.0% | 621 | -10.7% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 271 | -31.2% | 520 | -25.3% | 0 s |
 
 **combat-daggers-raid**
 
@@ -74,8 +74,8 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | ours: hand draft | 20/0/31 | 374 | +0.0% | 642 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 331 | -11.5% | 607 | -5.5% | 0 s |
+| 1 | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | ours: hand draft | 20/0/31 | 380 | +0.0% | 652 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 335 | -11.9% | 616 | -5.5% | 0 s |
 
 ## New spells and builds
 
@@ -93,7 +93,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
 | Mutilate and Venom, the Forever Assassination talents, starting from our Mutilate draft: the tuned rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), and the talent search dropped Venom, then Mutilate | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | 30/19/2 | 407 | 682 | -3.5% on the dummy; -5.2% in a raid. Kept Mutilate (the search told to keep it), the build loses under half a percent: the rotation never casts it. | from `assassination-mutilate-raid`, 6 moves | - |
-| Subtlety with Hemorrhage from the simulator's Hemorrhage preset | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | 20/0/31 | 374 | 642 | -11.4% on the dummy; -10.8% in a raid | from `sim preset: Subtlety Hemo 15/0/36`, 6 moves | - |
+| Subtlety with Hemorrhage from the simulator's Hemorrhage preset | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | 20/0/31 | 380 | 652 | -9.9% on the dummy; -9.4% in a raid | from `sim preset: Subtlety Hemo 15/0/36`, 6 moves | - |
 
 The class's best raid DPS build on the training dummy: [`combat-raid`](builds/combat-raid.md) (combat-daggers-raid), 422 DPS; in a raid: [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (combat-daggers-raid), 720 DPS.
 
@@ -117,24 +117,17 @@ The class's best raid DPS build on the training dummy: [`combat-raid`](builds/co
 | `combat-daggers-raid` | dummy | sim preset: Improved Expose Armor (SS) | - | 347 | -17.7% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Sinister Strike | - | 334 | -20.7% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 258 | -38.8% | 0 | - |
-| `combat-swords-raid` | dummy | `combat-swords-raid` | 19/32/0 | 389 | +0.0% | 0 | +61% |
-| `combat-swords-raid` | dummy | sim preset: Improved Expose Armor (SS) | - | 389 | +0.0% | 0 | - |
-| `combat-swords-raid` | dummy | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 370 | -4.7% | 0 | +65% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r5` | 20/31/0 | 370 | -4.7% | 0 | +65% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r6` | 20/31/0 | 370 | -4.7% | 0 | +65% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r3` | 18/33/0 | 369 | -5.0% | 0 | +64% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r1` | 20/31/0 | 369 | -5.1% | 0 | +65% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r4` | 18/33/0 | 367 | -5.5% | 0 | +64% |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r2` | 18/33/0 | 366 | -5.8% | 0 | +63% |
-| `combat-swords-raid` | dummy | sim preset: Sinister Strike | - | 366 | -5.8% | 0 | - |
-| `combat-swords-raid` | dummy | `cand-combat-swords-raid-hand-2026-09-28` | 18/33/0 | 365 | -6.0% | 0 | +63% |
-| `combat-swords-raid` | dummy | sim preset: Combat Dual-Wield 15/33/3 | - | 360 | -7.3% | 0 | - |
-| `combat-swords-raid` | dummy | sim preset: Assassination Mutilate 31/20/0 | - | 336 | -13.7% | 0 | - |
-| `combat-swords-raid` | dummy | sim preset: Mutilate | - | 325 | -16.4% | 0 | - |
-| `combat-swords-raid` | dummy | sim preset: Backstab | - | 314 | -19.1% | 0 | - |
-| `combat-swords-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 267 | -31.4% | 0 | - |
-| `subtlety-raid` | dummy | `subtlety-hemo-raid` | 20/0/31 | 374 | +0.0% | 0 | - |
-| `subtlety-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 331 | -11.5% | 0 | - |
+| `combat-swords-raid` | dummy | `combat-swords-raid` | 19/32/0 | 394 | +0.0% | 0 | +61% |
+| `combat-swords-raid` | dummy | sim preset: Improved Expose Armor (SS) | - | 394 | +0.0% | 0 | - |
+| `combat-swords-raid` | dummy | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | -4.6% | 0 | +65% |
+| `combat-swords-raid` | dummy | sim preset: Sinister Strike | - | 371 | -5.7% | 0 | - |
+| `combat-swords-raid` | dummy | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | -7.4% | 0 | - |
+| `combat-swords-raid` | dummy | sim preset: Assassination Mutilate 31/20/0 | - | 340 | -13.6% | 0 | - |
+| `combat-swords-raid` | dummy | sim preset: Mutilate | - | 330 | -16.3% | 0 | - |
+| `combat-swords-raid` | dummy | sim preset: Backstab | - | 319 | -19.0% | 0 | - |
+| `combat-swords-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 271 | -31.2% | 0 | - |
+| `subtlety-raid` | dummy | `subtlety-hemo-raid` | 20/0/31 | 380 | +0.0% | 0 | - |
+| `subtlety-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 335 | -11.9% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -164,18 +157,18 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `combat-daggers-raid` | sim preset: Improved Expose Armor (SS) | - | 347 | 413 | 620 | 629 | 694 |
 | `combat-daggers-raid` | sim preset: Sinister Strike | - | 334 | 398 | 629 | 637 | 712 |
 | `combat-daggers-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 258 | 312 | 500 | 507 | 531 |
-| `combat-swords-raid` | `combat-swords-raid` | 19/32/0 | 389 | 460 | 680 | 691 | 785 |
-| `combat-swords-raid` | sim preset: Improved Expose Armor (SS) | - | 389 | 460 | 680 | 691 | 785 |
-| `combat-swords-raid` | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 370 | 440 | 688 | 699 | 793 |
-| `combat-swords-raid` | `opt-combat-swords-raid-parse` | 20/31/0 | 370 | 440 | 688 | 699 | 793 |
-| `combat-swords-raid` | sim preset: Sinister Strike | - | 366 | 435 | 686 | 699 | 796 |
-| `combat-swords-raid` | sim preset: Combat Dual-Wield 15/33/3 | - | 360 | 427 | 674 | 686 | 776 |
-| `combat-swords-raid` | sim preset: Assassination Mutilate 31/20/0 | - | 336 | 404 | 612 | 622 | 667 |
-| `combat-swords-raid` | sim preset: Mutilate | - | 325 | 391 | 600 | 610 | 655 |
-| `combat-swords-raid` | sim preset: Backstab | - | 314 | 378 | 614 | 625 | 706 |
-| `combat-swords-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 267 | 320 | 512 | 522 | 554 |
-| `subtlety-raid` | `subtlety-hemo-raid` | 20/0/31 | 374 | 434 | 642 | 654 | 713 |
-| `subtlety-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 331 | 384 | 607 | 618 | 679 |
+| `combat-swords-raid` | `combat-swords-raid` | 19/32/0 | 394 | 463 | 687 | 687 | 782 |
+| `combat-swords-raid` | sim preset: Improved Expose Armor (SS) | - | 394 | 463 | 687 | 687 | 782 |
+| `combat-swords-raid` | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
+| `combat-swords-raid` | `opt-combat-swords-raid-parse` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
+| `combat-swords-raid` | sim preset: Sinister Strike | - | 371 | 438 | 696 | 696 | 794 |
+| `combat-swords-raid` | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | 431 | 682 | 682 | 773 |
+| `combat-swords-raid` | sim preset: Assassination Mutilate 31/20/0 | - | 340 | 406 | 618 | 618 | 662 |
+| `combat-swords-raid` | sim preset: Mutilate | - | 330 | 394 | 608 | 608 | 653 |
+| `combat-swords-raid` | sim preset: Backstab | - | 319 | 381 | 621 | 621 | 701 |
+| `combat-swords-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 271 | 322 | 520 | 520 | 553 |
+| `subtlety-raid` | `subtlety-hemo-raid` | 20/0/31 | 380 | 436 | 652 | 652 | 711 |
+| `subtlety-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 335 | 386 | 616 | 616 | 676 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 

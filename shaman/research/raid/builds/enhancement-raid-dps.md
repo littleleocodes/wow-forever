@@ -66,15 +66,15 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**3 of 5** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`enhancement-raid`](enhancement-raid.md) | ours: hand draft | 11/31/9 | 403 | +0.0% | 754 | -0.4% | 18 s |
-| 2 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 394 | -2.1% | 757 | +0.0% | 42 s |
-| 3 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 391 | -2.9% | 751 | -0.8% | 42 s |
-| 4 | *Level 60* | community simulator | - | 384 | -4.7% | 749 | -1.2% | 52 s |
-| 5 | *Enhancement 16/35/0* | community simulator | - | 365 | -9.3% | 726 | -4.1% | 99 s |
+| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 426 | +0.0% | 780 | +0.0% | 9 s |
+| 2 | [`enhancement-raid`](enhancement-raid.md) | ours: hand draft | 11/31/9 | 424 | -0.4% | 770 | -1.2% | 0 s |
+| 3 | *Level 60* | community simulator | - | 421 | -1.1% | 775 | -0.6% | 26 s |
+| 4 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 420 | -1.3% | 770 | -1.3% | 9 s |
+| 5 | *Enhancement 16/35/0* | community simulator | - | 388 | -8.9% | 761 | -2.3% | 81 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,25 +97,25 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | cast Stormstrike | 13.9 |
-| 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.9 |
+| 4 | cast Stormstrike | 14.1 |
+| 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.8 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.6 |
-| 8 | cast Earth Shock | 3.9 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
+| 8 | cast Earth Shock | 5.0 |
 
 Damage by ability:
 
 | Ability | [`enhancement-raid-dps`](enhancement-raid-dps.md) |
 |---|---|
-| Auto Attack | 34% |
-| Windfury Weapon | 22% |
-| Stormstrike | 13% |
-| Earth Shock | 8% |
-| Flame Shock | 7% |
-| Lightning Bolt | 7% |
+| Auto Attack | 29% |
+| Windfury Weapon | 19% |
+| Stormstrike | 12% |
+| Earth Shock | 11% |
+| Flame Shock | 10% |
+| Lightning Bolt | 9% |
 | Attack | 5% |
 | Elemental Sharpening Stone | 3% |
-| Dragonbreath Chili | 2% |
+| Dragonbreath Chili | 3% |
 
 ## Notes
 

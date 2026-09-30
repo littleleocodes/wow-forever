@@ -419,6 +419,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
   (shadow priest and Protection warrior `p1.bis`, feral cat `p0.bis` in 40be98e). `specs.json` names complete ones (`gear_note`
   says why) and `run.py`'s `best_gear` skips incomplete presets (`gear_complete`).
+- **Equal-tier raid gear** (2026-09-30, user request: the cross-spec ranking mixed gear levels): `raidsim/gear_opt.py` gives every
+  group of damage entries sharing a gear set the best set of one common pool (5-man dungeons, Molten Core, Onyxia, world, crafted,
+  quest; items with no listed source only when a community phase-1/launch/pre-raid preset uses them, which admits the Forever launch
+  items; no BWL, ZG, AQ, Naxxramas, world bosses or legendaries), chosen per slot by the simulator's own stat weights (bench
+  `statweights`; weapon DPS as pseudo-stats), trinkets raced, kept only when it beats the current set on a second seed. Sets:
+  `raidsim/gear_sets/forever/<class>-<spec folder>-<preset>.p1opt.gear.json`, record `raidsim/gear-opt.json`, `--apply` points
+  specs.json at them. Result: warrior DPS +71-76% (its "p1" presets held caster and tank pieces), paladin +51%, Shadow +31%, casters
+  +13-22% (launch items), others 0-5%. Tanks keep their sets; healers are not simulated. Talent searches ran in the old gear: re-run
+  them (`rebuild.py --steps raid,adopt`, `derive_raid.py --fresh`) when talent values matter. The bench also takes `gear_json` per build.
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

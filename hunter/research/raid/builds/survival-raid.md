@@ -52,9 +52,9 @@ The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the commu
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`survival-raid`](survival-raid.md)** | ours: hand draft | 5/16/30 | 438 | +0.0% | 953 | -2.8% | 12 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 424 | -3.2% | 951 | -2.9% | 13 s |
-| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 424 | -3.3% | 980 | +0.0% | 37 s |
+| 1 | **[`survival-raid`](survival-raid.md)** | ours: hand draft | 5/16/30 | 445 | +0.0% | 967 | -2.4% | 12 s |
+| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 429 | -3.5% | 965 | -2.6% | 13 s |
+| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 428 | -3.8% | 991 | +0.0% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -69,11 +69,11 @@ Before the pull: at -3s: cast Hunter's Mark.
 |---|---|---|
 | 1 | cast Aspect of the Beast | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | cast Mongoose Bite | 6.2 |
+| 3 | cast Mongoose Bite | 6.4 |
 | 4 | cast Strider Kick | 6.4 |
-| 5 | cast Raptor Strike | 19.4 |
+| 5 | cast Raptor Strike | 19.5 |
 | 6 | cast Immolation Trap | 3.2 |
-| 7 | cast Wing Clip | 22.6 |
+| 7 | cast Wing Clip | 22.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -81,12 +81,12 @@ Damage by ability:
 
 | Ability | [`survival-raid`](survival-raid.md) |
 |---|---|
-| Auto Attack | 42% |
+| Auto Attack | 43% |
 | Raptor Strike | 16% |
 | Mongoose Bite | 14% |
 | Immolation Trap | 11% |
 | Strider Kick | 8% |
-| Wing Clip | 6% |
+| Wing Clip | 5% |
 | Dragonbreath Chili | 3% |
 
 ## Notes

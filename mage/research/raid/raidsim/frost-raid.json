@@ -6,7 +6,7 @@
   "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
   "spec_folder": "mage/dps",
-  "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
   "apl": "_reference/data/raidsim/apls/mage/frost-raid.apl.json",
   "apl_sim": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
   "race": "RaceTroll",
@@ -28,7 +28,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-09-29",
+ "date": "2026-09-30",
  "results": [
   {
    "label": "frost-arcane-power-raid",
@@ -37,45 +37,44 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "12042": 1.0,
     "12043": 1.0,
-    "25346": 59.358333333333334,
-    "25304": 60.135666666666665,
-    "25345": 11.967666666666666,
-    "12051": 0.019333333333333334
+    "25345": 12.043666666666667,
+    "25304": 59.919,
+    "12051": 0.065,
+    "25346": 59.74433333333333,
+    "20554": 1.0,
+    "12042": 1.0
    },
    "casts": {
-    "Berserking": 1.0,
-    "Arcane Power": 1.0,
-    "Robe of the Archmage": 1.0,
-    "Mana Citrine": 0.977,
     "Presence of Mind": 1.0,
-    "Arcane Missiles": 71.326,
-    "Major Mana Potion": 1.104,
-    "OtherActionManaGain": 6.026666666666666,
-    "Demonic Rune": 1.9456666666666667,
-    "Frostbolt": 60.135666666666665,
+    "Arcane Missiles": 71.788,
+    "OtherActionManaGain": 5.3133333333333335,
+    "Mana Citrine": 1.0,
+    "Frostbolt": 59.919,
+    "Evocation": 0.065,
     "Talisman of Ephemeral Power": 2.0,
     "Mana Ruby": 1.0,
-    "Evocation": 0.019333333333333334
+    "Demonic Rune": 1.9863333333333333,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.327,
+    "Arcane Power": 1.0
    },
-   "dps": 545.1823702476637,
-   "dps_stdev": 30.466622975400107,
-   "threat": 563.9436420564572,
+   "dps": 600.2889587307211,
+   "dps_stdev": 33.59901065582168,
+   "threat": 618.9617365084988,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.00013333333333333334,
+   "oom_seconds": 0.005485,
    "error": null,
    "scorer": 0.7055592791961238,
    "shares": {
-    "Frostbolt": 0.748674622775372,
-    "Arcane Missiles": 0.25132537722462794
+    "Frostbolt": 0.7356478392782647,
+    "Arcane Missiles": 0.2643521607217353
    },
    "source_shares": {
-    "frostbolt": 0.7487,
-    "missiles": 0.2513
+    "frostbolt": 0.7356,
+    "missiles": 0.2644
    },
    "unmatched_share": 0.0
   },
@@ -86,30 +85,29 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "12051": 0.001,
-    "20554": 1.0,
+    "25346": 59.325,
     "12472": 1.0,
-    "25304": 60.044666666666664,
-    "25345": 12.062333333333333,
-    "25346": 59.602333333333334
+    "12051": 0.0013333333333333333,
+    "25304": 60.09866666666667,
+    "25345": 12.017,
+    "20554": 1.0
    },
    "casts": {
-    "Demonic Rune": 1.47,
-    "Evocation": 0.001,
-    "Robe of the Archmage": 1.0,
     "Mana Ruby": 1.0,
-    "Berserking": 1.0,
+    "Major Mana Potion": 1.0056666666666667,
+    "OtherActionManaGain": 4.7683333333333335,
+    "Arcane Missiles": 71.342,
     "Cold Snap": 1.0,
+    "Mana Citrine": 0.9966666666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Frostbolt": 60.044666666666664,
-    "OtherActionManaGain": 5.429,
-    "Arcane Missiles": 71.66466666666666,
-    "Mana Citrine": 0.962,
-    "Major Mana Potion": 0.997
+    "Evocation": 0.0013333333333333333,
+    "Frostbolt": 60.09866666666667,
+    "Demonic Rune": 1.766,
+    "Berserking": 1.0
    },
-   "dps": 517.0695358391538,
-   "dps_stdev": 28.74589576668017,
-   "threat": 413.3922510282476,
+   "dps": 568.5548305142536,
+   "dps_stdev": 28.191105333659365,
+   "threat": 454.01449903128787,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -117,12 +115,12 @@
    "error": null,
    "scorer": 0.6656674054757941,
    "shares": {
-    "Frostbolt": 0.7753517726567224,
-    "Arcane Missiles": 0.22464822734327755
+    "Frostbolt": 0.7672325268429369,
+    "Arcane Missiles": 0.23276747315706317
    },
    "source_shares": {
-    "frostbolt": 0.7754,
-    "missiles": 0.2246
+    "frostbolt": 0.7672,
+    "missiles": 0.2328
    },
    "unmatched_share": 0.0
   },
@@ -133,47 +131,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "1240047": 13.343666666666667,
-    "25304": 53.56366666666667,
-    "25345": 10.704666666666666,
     "12043": 1.0,
-    "25346": 53.037333333333336,
-    "20554": 1.0,
-    "12051": 0.007666666666666666
+    "1240047": 13.713,
+    "25345": 10.715333333333334,
+    "25304": 53.275666666666666,
+    "25346": 53.108666666666664,
+    "12051": 0.024666666666666667,
+    "20554": 1.0
    },
    "casts": {
-    "Ice Lance": 13.343666666666667,
-    "Mana Citrine": 0.984,
-    "Frostbolt": 53.56366666666667,
-    "Major Mana Potion": 1.0013333333333334,
-    "Robe of the Archmage": 1.0,
-    "Mana Ruby": 1.0,
-    "Arcane Missiles": 63.742000000000004,
     "Presence of Mind": 1.0,
-    "OtherActionManaGain": 5.644666666666667,
-    "Berserking": 1.0,
-    "Demonic Rune": 1.6593333333333333,
+    "Ice Lance": 13.713,
+    "Mana Ruby": 1.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Evocation": 0.007666666666666666
+    "Arcane Missiles": 63.824,
+    "Major Mana Potion": 1.0306666666666666,
+    "Demonic Rune": 1.8826666666666667,
+    "OtherActionManaGain": 4.911333333333333,
+    "Frostbolt": 53.275666666666666,
+    "Evocation": 0.024666666666666667,
+    "Mana Citrine": 0.998,
+    "Berserking": 1.0
    },
-   "dps": 582.0370824727061,
-   "dps_stdev": 36.80379357136704,
-   "threat": 471.9221040770535,
+   "dps": 639.9185838465003,
+   "dps_stdev": 38.26049355388601,
+   "threat": 516.4818203784207,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.00032066666666666664,
    "error": null,
    "scorer": 0.7698565060974868,
    "shares": {
-    "Frostbolt": 0.6107678633356741,
-    "Ice Lance": 0.20367791985080805,
-    "Arcane Missiles": 0.18555421681351777
+    "Frostbolt": 0.6009650826896881,
+    "Ice Lance": 0.20530983644579254,
+    "Arcane Missiles": 0.1937250808645193
    },
    "source_shares": {
-    "frostbolt": 0.6108,
-    "ice_lance": 0.2037,
-    "missiles": 0.1856
+    "frostbolt": 0.601,
+    "ice_lance": 0.2053,
+    "missiles": 0.1937
    },
    "unmatched_share": 0.0
   },
@@ -184,47 +181,46 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 53.44233333333333,
-    "12051": 0.06333333333333334,
-    "25345": 10.630333333333333,
-    "25346": 52.707,
-    "1240047": 13.364333333333333,
+    "12051": 0.132,
+    "20554": 1.0,
     "12043": 1.0,
-    "20554": 1.0
+    "25304": 53.074333333333335,
+    "25345": 10.631,
+    "1240047": 13.585666666666667,
+    "25346": 52.739666666666665
    },
    "casts": {
-    "Frostbolt": 53.44233333333333,
-    "Evocation": 0.06333333333333334,
-    "Arcane Missiles": 63.33733333333333,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Ice Lance": 13.364333333333333,
-    "OtherActionManaGain": 5.792666666666666,
-    "Mana Citrine": 0.993,
-    "Demonic Rune": 1.789,
-    "Presence of Mind": 1.0,
+    "Evocation": 0.132,
     "Berserking": 1.0,
-    "Major Mana Potion": 1.0106666666666666,
-    "Mana Ruby": 1.0
+    "Mana Ruby": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Presence of Mind": 1.0,
+    "Major Mana Potion": 1.0966666666666667,
+    "Frostbolt": 53.074333333333335,
+    "OtherActionManaGain": 5.028666666666667,
+    "Arcane Missiles": 63.370666666666665,
+    "Ice Lance": 13.585666666666667,
+    "Mana Citrine": 0.9986666666666667,
+    "Demonic Rune": 1.9333333333333333
    },
-   "dps": 581.5435235506326,
-   "dps_stdev": 37.09301049476864,
-   "threat": 477.62688987788323,
+   "dps": 636.5621996892016,
+   "dps_stdev": 39.850888252796445,
+   "threat": 519.8075172537378,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.002585333333333333,
+   "oom_seconds": 0.007526333333333333,
    "error": null,
    "scorer": 0.7555572057681225,
    "shares": {
-    "Frostbolt": 0.6102832379738177,
-    "Ice Lance": 0.20531474417503115,
-    "Arcane Missiles": 0.18440201785115104
+    "Frostbolt": 0.6030746642524012,
+    "Ice Lance": 0.20350871292864703,
+    "Arcane Missiles": 0.19341662281895178
    },
    "source_shares": {
-    "frostbolt": 0.6103,
-    "ice_lance": 0.2053,
-    "missiles": 0.1844
+    "frostbolt": 0.6031,
+    "ice_lance": 0.2035,
+    "missiles": 0.1934
    },
    "unmatched_share": 0.0
   },
@@ -235,29 +231,28 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "25304": 60.019666666666666,
-    "1240047": 14.787666666666667,
-    "12472": 1.0,
+    "25304": 59.737,
     "12051": 1.0,
-    "20554": 1.0
+    "1240047": 15.246333333333334,
+    "20554": 1.0,
+    "12472": 1.0
    },
    "casts": {
+    "Major Mana Potion": 2.0,
+    "OtherActionManaGain": 6.0,
     "Talisman of Ephemeral Power": 2.0,
-    "Frostbolt": 60.019666666666666,
-    "Ice Lance": 14.787666666666667,
-    "Robe of the Archmage": 1.0,
-    "Major Mana Potion": 1.9826666666666666,
-    "Mana Ruby": 1.0,
-    "Cold Snap": 1.0,
+    "Frostbolt": 59.737,
     "Evocation": 1.0,
-    "Berserking": 1.0,
-    "Demonic Rune": 2.0,
     "Mana Citrine": 1.0,
-    "OtherActionManaGain": 6.982666666666667
+    "Ice Lance": 15.246333333333334,
+    "Berserking": 1.0,
+    "Mana Ruby": 1.0,
+    "Demonic Rune": 2.0,
+    "Cold Snap": 1.0
    },
-   "dps": 541.4674285453253,
-   "dps_stdev": 39.18629119915432,
-   "threat": 329.81093031559857,
+   "dps": 590.8001428202903,
+   "dps_stdev": 39.14965762535725,
+   "threat": 355.2171007444256,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -265,659 +260,12 @@
    "error": null,
    "scorer": 0.7055180092633688,
    "shares": {
-    "Frostbolt": 0.7445989155274538,
-    "Ice Lance": 0.2554010844725462
+    "Frostbolt": 0.7407024756720071,
+    "Ice Lance": 0.25929752432799297
    },
    "source_shares": {
-    "frostbolt": 0.7446,
-    "ice_lance": 0.2554
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-from-arcane-power",
-   "talents": "250205023102011531--05550003",
-   "split": "33/0/18",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "25304": 59.29366666666667,
-    "25346": 58.559666666666665,
-    "12042": 1.0,
-    "20554": 1.0,
-    "12051": 0.3496666666666667,
-    "25345": 11.829333333333333,
-    "12043": 1.0
-   },
-   "casts": {
-    "Frostbolt": 59.29366666666667,
-    "Arcane Missiles": 70.389,
-    "Arcane Power": 1.0,
-    "Demonic Rune": 1.996,
-    "Robe of the Archmage": 1.0,
-    "Berserking": 1.0,
-    "Mana Citrine": 0.9926666666666667,
-    "Major Mana Potion": 1.4676666666666667,
-    "Evocation": 0.3496666666666667,
-    "Mana Ruby": 1.0,
-    "OtherActionManaGain": 6.456333333333333,
-    "Presence of Mind": 1.0,
-    "Talisman of Ephemeral Power": 2.0
-   },
-   "dps": 537.4175836630551,
-   "dps_stdev": 34.30273527200781,
-   "threat": 517.6793293970871,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.028457,
-   "error": null,
-   "scorer": 0.670262784759155,
-   "shares": {
-    "Frostbolt": 0.7486536709817128,
-    "Arcane Missiles": 0.2513463290182872
-   },
-   "source_shares": {
-    "frostbolt": 0.7487,
-    "missiles": 0.2513
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-hand-2026-09-27",
-   "talents": "230225--0555000331021301251",
-   "split": "14/0/37",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "12051": 0.961,
-    "20554": 1.0,
-    "25304": 60.14966666666667,
-    "12472": 1.0,
-    "1240047": 14.776333333333334
-   },
-   "casts": {
-    "Evocation": 0.961,
-    "Robe of the Archmage": 1.0,
-    "Major Mana Potion": 1.2243333333333333,
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 6.224333333333333,
-    "Mana Ruby": 1.0,
-    "Mana Citrine": 1.0,
-    "Berserking": 1.0,
-    "Frostbolt": 60.14966666666667,
-    "Cold Snap": 1.0,
-    "Demonic Rune": 2.0,
-    "Ice Lance": 14.776333333333334
-   },
-   "dps": 537.6905344266663,
-   "dps_stdev": 39.033454520435015,
-   "threat": 325.9747007855879,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.0015333333333333334,
-   "error": null,
-   "scorer": 0.7485888838614513,
-   "shares": {
-    "Frostbolt": 0.7520114118073192,
-    "Ice Lance": 0.2479885881926808
-   },
-   "source_shares": {
-    "frostbolt": 0.752,
-    "ice_lance": 0.248
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-hand-2026-09-28",
-   "talents": "0500250030003-01-055500033100030025",
-   "split": "18/1/32",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "1240047": 15.433666666666667,
-    "25304": 62.69566666666667,
-    "20554": 1.0,
-    "12051": 0.04833333333333333
-   },
-   "casts": {
-    "Ice Lance": 15.433666666666667,
-    "OtherActionManaGain": 5.979,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Mana Citrine": 1.0,
-    "Major Mana Potion": 1.0,
-    "Frostbolt": 62.69566666666667,
-    "Berserking": 1.0,
-    "Evocation": 0.04833333333333333,
-    "Mana Ruby": 1.0,
-    "Demonic Rune": 1.979
-   },
-   "dps": 561.5892140627809,
-   "dps_stdev": 39.369727541891386,
-   "threat": 337.8053072702543,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.788957672655229,
-   "shares": {
-    "Frostbolt": 0.7500179930584384,
-    "Ice Lance": 0.2499820069415616
-   },
-   "source_shares": {
-    "frostbolt": 0.75,
-    "ice_lance": 0.25
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r1",
-   "talents": "1502050030003111--055500030100031024",
-   "split": "22/0/29",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "12043": 1.0,
-    "20554": 1.0,
-    "25304": 53.44233333333333,
-    "25345": 10.630333333333333,
-    "1240047": 13.364333333333333,
-    "25346": 52.707,
-    "12051": 0.06333333333333334
-   },
-   "casts": {
-    "Presence of Mind": 1.0,
-    "Berserking": 1.0,
-    "Major Mana Potion": 1.0106666666666666,
-    "Frostbolt": 53.44233333333333,
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 1.789,
-    "Arcane Missiles": 63.33733333333333,
-    "Ice Lance": 13.364333333333333,
-    "Mana Citrine": 0.993,
-    "Talisman of Ephemeral Power": 2.0,
-    "Mana Ruby": 1.0,
-    "OtherActionManaGain": 5.792666666666666,
-    "Evocation": 0.06333333333333334
-   },
-   "dps": 581.5435235506326,
-   "dps_stdev": 37.09301049476864,
-   "threat": 477.62688987788323,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.002585333333333333,
-   "error": null,
-   "scorer": 0.7555572057681225,
-   "shares": {
-    "Frostbolt": 0.6102832379738177,
-    "Ice Lance": 0.20531474417503115,
-    "Arcane Missiles": 0.18440201785115104
-   },
-   "source_shares": {
-    "frostbolt": 0.6103,
-    "ice_lance": 0.2053,
-    "missiles": 0.1844
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r10",
-   "talents": "050025003020301--055500030100130025",
-   "split": "21/0/30",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "1240047": 14.848,
-    "20554": 1.0,
-    "25304": 60.314,
-    "12051": 0.985,
-    "12043": 1.0
-   },
-   "casts": {
-    "Robe of the Archmage": 1.0,
-    "Ice Lance": 14.848,
-    "Mana Ruby": 1.0,
-    "Demonic Rune": 2.0,
-    "Berserking": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.423,
-    "Frostbolt": 60.314,
-    "Evocation": 0.985,
-    "Mana Citrine": 1.0,
-    "Presence of Mind": 1.0,
-    "OtherActionManaGain": 6.423
-   },
-   "dps": 540.30033309648,
-   "dps_stdev": 38.96092934062138,
-   "threat": 460.43593887054413,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 1.4666666666666666e-05,
-   "error": null,
-   "scorer": 0.7702906089529296,
-   "shares": {
-    "Frostbolt": 0.7521009114803486,
-    "Ice Lance": 0.24789908851965145
-   },
-   "source_shares": {
-    "frostbolt": 0.7521,
-    "ice_lance": 0.2479
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r11",
-   "talents": "0520050030002-02-055500033100030025",
-   "split": "17/2/32",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "25304": 61.74166666666667,
-    "20554": 1.0,
-    "12051": 0.385,
-    "1240047": 15.202
-   },
-   "casts": {
-    "Mana Ruby": 1.0,
-    "Demonic Rune": 1.996,
-    "Frostbolt": 61.74166666666667,
-    "Major Mana Potion": 1.0,
-    "Berserking": 1.0,
-    "Evocation": 0.385,
-    "Ice Lance": 15.202,
-    "OtherActionManaGain": 5.996,
-    "Talisman of Ephemeral Power": 2.0,
-    "Mana Citrine": 1.0,
-    "Robe of the Archmage": 1.0
-   },
-   "dps": 555.087768050927,
-   "dps_stdev": 41.9753105764191,
-   "threat": 333.4461956898848,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.7948408098657854,
-   "shares": {
-    "Frostbolt": 0.7475211307782984,
-    "Ice Lance": 0.2524788692217016
-   },
-   "source_shares": {
-    "frostbolt": 0.7475,
-    "ice_lance": 0.2525
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r2",
-   "talents": "2522050000003111--055500031100030024",
-   "split": "22/0/29",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "25346": 53.037333333333336,
-    "25345": 10.704666666666666,
-    "12043": 1.0,
-    "20554": 1.0,
-    "25304": 53.56366666666667,
-    "12051": 0.007666666666666666,
-    "1240047": 13.343666666666667
-   },
-   "casts": {
-    "Arcane Missiles": 63.742000000000004,
-    "Robe of the Archmage": 1.0,
-    "Mana Ruby": 1.0,
-    "Presence of Mind": 1.0,
-    "Berserking": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Frostbolt": 53.56366666666667,
-    "OtherActionManaGain": 5.644666666666667,
-    "Major Mana Potion": 1.0013333333333334,
-    "Evocation": 0.007666666666666666,
-    "Mana Citrine": 0.984,
-    "Demonic Rune": 1.6593333333333333,
-    "Ice Lance": 13.343666666666667
-   },
-   "dps": 578.5727718785126,
-   "dps_stdev": 36.74029452249655,
-   "threat": 437.09725616272397,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.763350932252468,
-   "shares": {
-    "Frostbolt": 0.6144249479452331,
-    "Ice Lance": 0.20489747875478395,
-    "Arcane Missiles": 0.18067757329998307
-   },
-   "source_shares": {
-    "frostbolt": 0.6144,
-    "ice_lance": 0.2049,
-    "missiles": 0.1807
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r3",
-   "talents": "24022500002030142--05550003010003002",
-   "split": "27/0/24",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "20554": 1.0,
-    "12051": 0.9533333333333334,
-    "1240047": 14.883,
-    "12043": 1.0,
-    "25304": 60.400333333333336
-   },
-   "casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 6.426666666666667,
-    "Robe of the Archmage": 1.0,
-    "Berserking": 1.0,
-    "Evocation": 0.9533333333333334,
-    "Mana Ruby": 1.0,
-    "Major Mana Potion": 1.4266666666666667,
-    "Mana Citrine": 1.0,
-    "Ice Lance": 14.883,
-    "Presence of Mind": 1.0,
-    "Demonic Rune": 2.0,
-    "Frostbolt": 60.400333333333336
-   },
-   "dps": 521.6461248994046,
-   "dps_stdev": 38.04844181088696,
-   "threat": 444.07574936291286,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.0027366666666666668,
-   "error": null,
-   "scorer": 0.7366554964617349,
-   "shares": {
-    "Frostbolt": 0.7490526494656811,
-    "Ice Lance": 0.2509473505343189
-   },
-   "source_shares": {
-    "frostbolt": 0.7491,
-    "ice_lance": 0.2509
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r4",
-   "talents": "-2350203000003-055500033101030025",
-   "split": "0/18/33",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "12051": 0.9986666666666667,
-    "20554": 1.0,
-    "1240047": 14.818666666666667,
-    "25304": 59.99666666666667
-   },
-   "casts": {
-    "Evocation": 0.9986666666666667,
-    "OtherActionManaGain": 27.964333333333332,
-    "Major Mana Potion": 1.1136666666666666,
-    "Demonic Rune": 2.0,
-    "Berserking": 1.0,
-    "Ice Lance": 14.818666666666667,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Mana Citrine": 1.0,
-    "Mana Ruby": 1.0,
-    "Frostbolt": 59.99666666666667
-   },
-   "dps": 541.7264659675776,
-   "dps_stdev": 38.996647524794355,
-   "threat": 329.7457628865284,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.7064052325732227,
-   "shares": {
-    "Frostbolt": 0.7444771971715798,
-    "Ice Lance": 0.25552280282842027
-   },
-   "source_shares": {
-    "frostbolt": 0.7445,
-    "ice_lance": 0.2555
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r5",
-   "talents": "-2350203000002-055500033102030025",
-   "split": "0/17/34",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "25304": 60.002,
-    "12051": 1.0,
-    "20554": 1.0,
-    "1240047": 14.815333333333333
-   },
-   "casts": {
-    "Robe of the Archmage": 1.0,
-    "Frostbolt": 60.002,
-    "Evocation": 1.0,
-    "Mana Citrine": 1.0,
-    "Mana Ruby": 1.0,
-    "Demonic Rune": 2.0,
-    "Berserking": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 1.286,
-    "OtherActionManaGain": 28.123666666666665,
-    "Ice Lance": 14.815333333333333
-   },
-   "dps": 541.8361430491079,
-   "dps_stdev": 39.597511119705544,
-   "threat": 329.2587885369588,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.706060085701979,
-   "shares": {
-    "Frostbolt": 0.7444071779914534,
-    "Ice Lance": 0.2555928220085467
-   },
-   "source_shares": {
-    "frostbolt": 0.7444,
-    "ice_lance": 0.2556
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r6",
-   "talents": "1-2355000000003-0555000301001301251",
-   "split": "1/18/32",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "12051": 1.0,
-    "25304": 60.02333333333333,
-    "1240047": 14.764333333333333,
-    "20554": 1.0,
-    "12472": 1.0
-   },
-   "casts": {
-    "Mana Ruby": 1.0,
-    "Major Mana Potion": 1.9993333333333334,
-    "Robe of the Archmage": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "OtherActionManaGain": 28.784,
-    "Evocation": 1.0,
-    "Frostbolt": 60.02333333333333,
-    "Mana Citrine": 1.0,
-    "Ice Lance": 14.764333333333333,
-    "Berserking": 1.0,
-    "Demonic Rune": 2.0,
-    "Cold Snap": 1.0
-   },
-   "dps": 541.1532796442797,
-   "dps_stdev": 39.211808865781684,
-   "threat": 465.4804242602013,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.6636513585997431,
-   "shares": {
-    "Frostbolt": 0.7454875958027702,
-    "Ice Lance": 0.2545124041972298
-   },
-   "source_shares": {
-    "frostbolt": 0.7455,
-    "ice_lance": 0.2545
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r7",
-   "talents": "0500250030003-01-055500033100030025",
-   "split": "18/1/32",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "1240047": 15.433666666666667,
-    "12051": 0.04833333333333333,
-    "25304": 62.69566666666667,
-    "20554": 1.0
-   },
-   "casts": {
-    "Major Mana Potion": 1.0,
-    "Ice Lance": 15.433666666666667,
-    "Robe of the Archmage": 1.0,
-    "Evocation": 0.04833333333333333,
-    "OtherActionManaGain": 5.979,
-    "Mana Ruby": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 1.979,
-    "Frostbolt": 62.69566666666667,
-    "Berserking": 1.0,
-    "Mana Citrine": 1.0
-   },
-   "dps": 561.5892140627809,
-   "dps_stdev": 39.369727541891386,
-   "threat": 337.8053072702543,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.788957672655229,
-   "shares": {
-    "Frostbolt": 0.7500179930584384,
-    "Ice Lance": 0.2499820069415616
-   },
-   "source_shares": {
-    "frostbolt": 0.75,
-    "ice_lance": 0.25
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r8",
-   "talents": "25502001001-03-0555000301001301251",
-   "split": "16/3/32",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "1240047": 14.846333333333334,
-    "12051": 1.0,
-    "20554": 1.0,
-    "12472": 1.0,
-    "25304": 59.99366666666667
-   },
-   "casts": {
-    "Demonic Rune": 2.0,
-    "Ice Lance": 14.846333333333334,
-    "Talisman of Ephemeral Power": 2.0,
-    "Evocation": 1.0,
-    "Robe of the Archmage": 1.0,
-    "OtherActionManaGain": 7.0,
-    "Mana Citrine": 1.0,
-    "Mana Ruby": 1.0,
-    "Berserking": 1.0,
-    "Cold Snap": 1.0,
-    "Frostbolt": 59.99366666666667,
-    "Major Mana Potion": 2.0
-   },
-   "dps": 538.973644761679,
-   "dps_stdev": 38.824195714496625,
-   "threat": 459.0235126810849,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0.0005,
-   "error": null,
-   "scorer": 0.6739419924327464,
-   "shares": {
-    "Frostbolt": 0.7441515993148836,
-    "Ice Lance": 0.25584840068511644
-   },
-   "source_shares": {
-    "frostbolt": 0.7442,
-    "ice_lance": 0.2558
-   },
-   "unmatched_share": 0.0
-  },
-  {
-   "label": "cand-frost-raid-r9",
-   "talents": "253021-03-0555000331001301251",
-   "split": "13/3/35",
-   "ours": true,
-   "measured": true,
-   "spell_casts": {
-    "12472": 1.0,
-    "20554": 1.0,
-    "1240047": 14.708666666666666,
-    "25304": 60.059333333333335,
-    "12051": 1.0
-   },
-   "casts": {
-    "Mana Ruby": 1.0,
-    "Cold Snap": 1.0,
-    "Demonic Rune": 2.0,
-    "OtherActionManaGain": 6.7716666666666665,
-    "Berserking": 1.0,
-    "Ice Lance": 14.708666666666666,
-    "Major Mana Potion": 1.7716666666666667,
-    "Frostbolt": 60.059333333333335,
-    "Mana Citrine": 1.0,
-    "Evocation": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Robe of the Archmage": 1.0
-   },
-   "dps": 541.2645381321435,
-   "dps_stdev": 39.29156858999294,
-   "threat": 329.16930654666527,
-   "dtps": 0,
-   "tmi": 0,
-   "hps": 0,
-   "oom_seconds": 0,
-   "error": null,
-   "scorer": 0.7276455716237173,
-   "shares": {
-    "Frostbolt": 0.7464576160713304,
-    "Ice Lance": 0.2535423839286695
-   },
-   "source_shares": {
-    "frostbolt": 0.7465,
-    "ice_lance": 0.2535
+    "frostbolt": 0.7407,
+    "ice_lance": 0.2593
    },
    "unmatched_share": 0.0
   },
@@ -927,27 +275,26 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12051": 0.04666666666666667,
-    "1240047": 15.479666666666667,
+    "1240047": 15.772333333333334,
+    "12051": 0.23966666666666667,
     "20554": 1.0,
-    "25304": 62.67
+    "25304": 61.882666666666665
    },
    "casts": {
-    "Evocation": 0.04666666666666667,
-    "Ice Lance": 15.479666666666667,
-    "Berserking": 1.0,
-    "Demonic Rune": 1.9773333333333334,
-    "Robe of the Archmage": 1.0,
-    "OtherActionManaGain": 5.977333333333333,
+    "Demonic Rune": 1.9996666666666667,
+    "Ice Lance": 15.772333333333334,
+    "Evocation": 0.23966666666666667,
+    "OtherActionManaGain": 5.026,
     "Mana Citrine": 1.0,
-    "Major Mana Potion": 1.0,
+    "Major Mana Potion": 1.0263333333333333,
+    "Berserking": 1.0,
     "Mana Ruby": 1.0,
-    "Frostbolt": 62.67,
-    "Talisman of Ephemeral Power": 2.0
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 61.882666666666665
    },
-   "dps": 552.5617500240456,
-   "dps_stdev": 39.90358529444876,
-   "threat": 332.6745317797705,
+   "dps": 596.5819458358619,
+   "dps_stdev": 41.63289141182195,
+   "threat": 355.5961193531594,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -955,12 +302,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7500171744775029,
-    "Ice Lance": 0.24998282552249707
+    "Frostbolt": 0.7470506547098399,
+    "Ice Lance": 0.25294934529016017
    },
    "source_shares": {
-    "frostbolt": 0.75,
-    "ice_lance": 0.25
+    "frostbolt": 0.7471,
+    "ice_lance": 0.2529
    },
    "unmatched_share": 0.0
   },
@@ -970,30 +317,29 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12042": 1.0,
-    "20554": 1.0,
     "12043": 1.0,
-    "25304": 51.78033333333333,
-    "25345": 10.284666666666666,
-    "25346": 50.939
+    "12042": 1.0,
+    "25346": 51.27133333333333,
+    "25304": 51.71933333333333,
+    "25345": 10.354,
+    "20554": 1.0
    },
    "casts": {
-    "Arcane Power": 1.0,
-    "OtherActionManaGain": 12.357,
-    "Talisman of Ephemeral Power": 2.0,
-    "Major Mana Potion": 0.987,
-    "Mana Citrine": 0.851,
-    "Berserking": 1.0,
     "Presence of Mind": 1.0,
-    "Demonic Rune": 1.608,
-    "Frostbolt": 51.78033333333333,
-    "Mana Ruby": 1.0,
-    "Arcane Missiles": 61.22366666666667,
-    "Robe of the Archmage": 1.0
+    "Major Mana Potion": 1.0016666666666667,
+    "Arcane Power": 1.0,
+    "Arcane Missiles": 61.62533333333333,
+    "Frostbolt": 51.71933333333333,
+    "Mana Citrine": 0.9946666666666667,
+    "Berserking": 1.0,
+    "Demonic Rune": 1.7903333333333333,
+    "OtherActionManaGain": 12.696,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Ruby": 1.0
    },
-   "dps": 408.5267272289667,
-   "dps_stdev": 27.519746305634836,
-   "threat": 391.6669723725521,
+   "dps": 451.3341210190895,
+   "dps_stdev": 28.527271399957826,
+   "threat": 428.8178980464232,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -1001,12 +347,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7122345788224692,
-    "Arcane Missiles": 0.2877654211775307
+    "Frostbolt": 0.6986820749830679,
+    "Arcane Missiles": 0.30131792501693205
    },
    "source_shares": {
-    "frostbolt": 0.7122,
-    "missiles": 0.2878
+    "frostbolt": 0.6987,
+    "missiles": 0.3013
    },
    "unmatched_share": 0.0
   },
@@ -1016,27 +362,26 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "12051": 0.0016666666666666668,
+    "12051": 0.049666666666666665,
     "20554": 1.0,
-    "11129": 1.0,
-    "25304": 59.995
+    "25304": 59.851,
+    "11129": 1.0
    },
    "casts": {
-    "Talisman of Ephemeral Power": 2.0,
-    "Evocation": 0.0016666666666666668,
-    "Major Mana Potion": 1.0,
+    "Demonic Rune": 1.996,
+    "Evocation": 0.049666666666666665,
     "Mana Ruby": 1.0,
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 1.9313333333333333,
     "Berserking": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 59.851,
     "Mana Citrine": 1.0,
-    "Combustion": 1.0,
-    "Frostbolt": 59.995,
-    "OtherActionManaGain": 12.081
+    "OtherActionManaGain": 12.277666666666667,
+    "Major Mana Potion": 1.0,
+    "Combustion": 1.0
    },
-   "dps": 314.4961113167036,
-   "dps_stdev": 18.910591546579145,
-   "threat": 334.22493625923863,
+   "dps": 339.7693222727361,
+   "dps_stdev": 19.720297343494984,
+   "threat": 358.59736403199554,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -1057,27 +402,26 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25304": 59.992,
-    "12051": 0.0026666666666666666,
+    "12051": 0.314,
+    "25304": 59.058,
     "11129": 1.0,
     "20554": 1.0
    },
    "casts": {
     "Demonic Rune": 2.0,
-    "Mana Citrine": 1.0,
-    "OtherActionManaGain": 12.567333333333334,
     "Major Mana Potion": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Frostbolt": 59.992,
-    "Evocation": 0.0026666666666666666,
-    "Robe of the Archmage": 1.0,
+    "Evocation": 0.314,
+    "OtherActionManaGain": 12.686666666666667,
+    "Frostbolt": 59.058,
     "Combustion": 1.0,
-    "Mana Ruby": 1.0,
-    "Berserking": 1.0
+    "Berserking": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Citrine": 1.0,
+    "Mana Ruby": 1.0
    },
-   "dps": 373.45100535778005,
-   "dps_stdev": 22.953746947743902,
-   "threat": 281.47057268929336,
+   "dps": 401.7899251515883,
+   "dps_stdev": 27.753932401591637,
+   "threat": 300.1923597357417,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -1098,42 +442,41 @@
    "split": "",
    "ours": false,
    "spell_casts": {
+    "20554": 1.0,
     "12051": 1.0,
+    "25304": 59.7,
     "12472": 1.0,
-    "25304": 59.995333333333335,
-    "1240047": 14.805,
-    "20554": 1.0
+    "1240047": 15.307333333333334
    },
    "casts": {
+    "Major Mana Potion": 1.9936666666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Evocation": 1.0,
-    "Cold Snap": 1.0,
-    "Frostbolt": 59.995333333333335,
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 2.0,
-    "Ice Lance": 14.805,
     "Mana Citrine": 1.0,
-    "OtherActionManaGain": 6.942333333333333,
-    "Mana Ruby": 1.0,
     "Berserking": 1.0,
-    "Major Mana Potion": 1.9423333333333332
+    "Demonic Rune": 2.0,
+    "Evocation": 1.0,
+    "OtherActionManaGain": 5.993666666666667,
+    "Frostbolt": 59.7,
+    "Cold Snap": 1.0,
+    "Ice Lance": 15.307333333333334,
+    "Mana Ruby": 1.0
    },
-   "dps": 537.0055238671063,
-   "dps_stdev": 38.37462711738708,
-   "threat": 460.0942062108776,
+   "dps": 584.7199023279156,
+   "dps_stdev": 38.338393158408195,
+   "threat": 495.9967844195828,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0,
+   "oom_seconds": 0.0028979999999999995,
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7514621080679855,
-    "Ice Lance": 0.2485378919320145
+    "Frostbolt": 0.747400914217838,
+    "Ice Lance": 0.25259908578216206
    },
    "source_shares": {
-    "frostbolt": 0.7515,
-    "ice_lance": 0.2485
+    "frostbolt": 0.7474,
+    "ice_lance": 0.2526
    },
    "unmatched_share": 0.0
   },
@@ -1143,30 +486,29 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "25304": 51.723333333333336,
-    "12043": 1.0,
-    "25345": 10.325,
+    "12042": 1.0,
+    "25304": 51.71,
     "20554": 1.0,
-    "25346": 51.187333333333335,
-    "12042": 1.0
+    "25346": 51.32066666666667,
+    "25345": 10.357,
+    "12043": 1.0
    },
    "casts": {
-    "Frostbolt": 51.723333333333336,
-    "Presence of Mind": 1.0,
-    "Arcane Missiles": 61.51233333333333,
-    "Major Mana Potion": 0.897,
-    "OtherActionManaGain": 4.798666666666667,
-    "Robe of the Archmage": 1.0,
-    "Demonic Rune": 1.2736666666666667,
-    "Berserking": 1.0,
-    "Mana Citrine": 0.628,
-    "Talisman of Ephemeral Power": 2.0,
+    "Mana Citrine": 0.9626666666666667,
     "Arcane Power": 1.0,
-    "Mana Ruby": 1.0
+    "Frostbolt": 51.71,
+    "Major Mana Potion": 0.9406666666666667,
+    "OtherActionManaGain": 4.337,
+    "Mana Ruby": 1.0,
+    "Berserking": 1.0,
+    "Arcane Missiles": 61.67766666666667,
+    "Presence of Mind": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Demonic Rune": 1.4336666666666666
    },
-   "dps": 467.8419426577161,
-   "dps_stdev": 29.698059303789492,
-   "threat": 377.56006814957505,
+   "dps": 516.8786039650555,
+   "dps_stdev": 31.103331887046448,
+   "threat": 417.4729954232745,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -1174,12 +516,12 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Frostbolt": 0.7476866764709683,
-    "Arcane Missiles": 0.25231332352903174
+    "Frostbolt": 0.7365775277879612,
+    "Arcane Missiles": 0.26342247221203885
    },
    "source_shares": {
-    "frostbolt": 0.7477,
-    "missiles": 0.2523
+    "frostbolt": 0.7366,
+    "missiles": 0.2634
    },
    "unmatched_share": 0.0
   }

@@ -72,17 +72,17 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 582 | +0.0% | 662 | +0.0% | 0 s |
-| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 582 | -0.1% | 662 | -0.1% | 0 s |
-| 3 | *Frost DPS* | community simulator | - | 553 | -5.1% | 632 | -4.6% | 0 s |
-| 4 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 33/0/18 | 545 | -6.3% | 624 | -5.8% | 0 s |
-| 5 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 541 | -7.0% | 646 | -2.4% | 0 s |
-| 6 | *Frost 14/0/37* | community simulator | - | 537 | -7.7% | 641 | -3.2% | 0 s |
-| 7 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 20/0/31 | 517 | -11.2% | 587 | -11.3% | 0 s |
-| 8 | *Arcane 35/0/16* | community simulator | - | 468 | -19.6% | 535 | -19.2% | 0 s |
-| 9 | *Arcane DPS* | community simulator | - | 409 | -29.8% | 462 | -30.2% | 0 s |
-| 10 | *Fire 0/35/16* | community simulator | - | 373 | -35.8% | 428 | -35.4% | 0 s |
-| 11 | *Fire DPS* | community simulator | - | 314 | -46.0% | 353 | -46.7% | 0 s |
+| 1 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 640 | +0.0% | 728 | +0.0% | 0 s |
+| 2 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 637 | -0.5% | 728 | -0.0% | 0 s |
+| 3 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 33/0/18 | 600 | -6.2% | 690 | -5.3% | 0 s |
+| 4 | *Frost DPS* | community simulator | - | 597 | -6.8% | 688 | -5.5% | 0 s |
+| 5 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 591 | -7.7% | 705 | -3.2% | 0 s |
+| 6 | *Frost 14/0/37* | community simulator | - | 585 | -8.6% | 697 | -4.2% | 0 s |
+| 7 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 20/0/31 | 569 | -11.2% | 647 | -11.1% | 0 s |
+| 8 | *Arcane 35/0/16* | community simulator | - | 517 | -19.2% | 592 | -18.7% | 0 s |
+| 9 | *Arcane DPS* | community simulator | - | 451 | -29.5% | 510 | -30.0% | 0 s |
+| 10 | *Fire 0/35/16* | community simulator | - | 402 | -37.2% | 467 | -35.9% | 0 s |
+| 11 | *Fire DPS* | community simulator | - | 340 | -46.9% | 383 | -47.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -102,8 +102,8 @@ Damage by ability:
 
 | Ability | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) |
 |---|---|
-| Frostbolt | 78% |
-| Arcane Missiles | 22% |
+| Frostbolt | 77% |
+| Arcane Missiles | 23% |
 
 ## Notes
 

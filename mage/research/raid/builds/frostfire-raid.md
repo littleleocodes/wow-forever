@@ -72,7 +72,7 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 2/33/16 | 473 | +0.0% | 566 | +0.0% | 0 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 2/33/16 | 556 | +0.0% | 664 | +0.0% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,16 +91,16 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserking | 0.3 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.2 |
+| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.0 |
 | 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.8 |
-| 7 | cast Fire Blast | 7.9 |
-| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 11.4 |
-| 9 | if time left in the fight ≥ 3s: cast Fireball | 2.5 |
+| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.9 |
+| 7 | cast Fire Blast | 7.8 |
+| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 11.0 |
+| 9 | if time left in the fight ≥ 3s: cast Fireball | 3.3 |
 | 10 | cast Robe of the Archmage | as ready |
-| 11 | cast Scorch | 0.1 |
+| 11 | cast Scorch | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
 
@@ -108,12 +108,12 @@ Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Frostfire Bolt | 45% |
-| Fire Blast | 25% |
+| Frostfire Bolt | 43% |
+| Fire Blast | 23% |
 | Ignite | 14% |
 | Scorch | 8% |
-| Pyroblast | 6% |
-| Fireball | 4% |
+| Pyroblast | 7% |
+| Fireball | 5% |
 
 ## Notes
 

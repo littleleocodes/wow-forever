@@ -75,9 +75,9 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 516 | +0.0% | 600 | +0.0% | 0 s |
-| 2 | *Arcane DPS* | community simulator | - | 511 | -1.1% | 591 | -1.4% | 0 s |
-| 3 | *Arcane 35/0/16* | community simulator | - | 494 | -4.4% | 565 | -5.8% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 592 | +0.0% | 690 | +0.0% | 0 s |
+| 2 | *Arcane DPS* | community simulator | - | 585 | -1.1% | 681 | -1.3% | 0 s |
+| 3 | *Arcane 35/0/16* | community simulator | - | 564 | -4.7% | 649 | -6.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -95,17 +95,17 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 | # | Priority (the first line whose condition holds is cast) | [`arcane-blast-raid`](arcane-blast-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | cast Fire Blast | 9.3 |
-| 3 | if mana % < 15% and time left in the fight > 20s: cast Evocation | 0.1 |
+| 2 | cast Fire Blast | 9.2 |
+| 3 | if mana % < 15% and time left in the fight > 20s: cast Evocation | 0.2 |
 | 4 | if Missile Barrage is up: cast Arcane Missiles | 5.1 |
 | 5 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.1 |
-| 6 | cast Arcane Blast | 12.8 |
+| 6 | cast Arcane Blast | 12.7 |
 
 Damage by ability:
 
 | Ability | [`arcane-blast-raid`](arcane-blast-raid.md) |
 |---|---|
-| Arcane Blast | 39% |
+| Arcane Blast | 40% |
 | Arcane Missiles | 34% |
 | Fire Blast | 23% |
 | Ignite | 3% |

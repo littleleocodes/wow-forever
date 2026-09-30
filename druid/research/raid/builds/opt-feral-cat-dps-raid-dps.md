@@ -66,10 +66,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/35/7 | 350 | +0.0% | 556 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 350 | +0.0% | 556 | +0.0% | 0 s |
-| 3 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 349 | -0.4% | 555 | -0.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 335 | -4.5% | 533 | -4.2% | 0 s |
+| 1 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/35/7 | 366 | +0.0% | 574 | +0.0% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 366 | +0.0% | 574 | +0.0% | 0 s |
+| 3 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 364 | -0.4% | 573 | -0.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 349 | -4.4% | 551 | -4.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,8 +94,8 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | 1 | cast Tiger's Fury | 2.3 |
 | 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.6 |
-| 5 | cast Shred | 17.1 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.9 |
+| 5 | cast Shred | 17.5 |
 | 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |

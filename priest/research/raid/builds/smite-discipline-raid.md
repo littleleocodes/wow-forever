@@ -76,9 +76,9 @@ A Smite damage build: Discipline to Penance and Power Infusion (Power in Light: 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 296 | +0.0% | 457 | +0.0% | 22 s |
-| 2 | *Smite* | community simulator | - | 294 | -0.7% | 451 | -1.2% | 22 s |
-| 3 | *Smite 31/17/3* | community simulator | - | 294 | -0.7% | 451 | -1.2% | 22 s |
+| 1 | **[`smite-discipline-raid`](smite-discipline-raid.md)** | ours: hand draft | 31/17/3 | 440 | +0.0% | 598 | +0.0% | 20 s |
+| 2 | *Smite* | community simulator | - | 437 | -0.6% | 593 | -0.9% | 21 s |
+| 3 | *Smite 31/17/3* | community simulator | - | 437 | -0.6% | 593 | -0.9% | 21 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,12 +116,12 @@ Before the pull: at -3s: cast Holy Fire.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | strict sequence: cast Inner Focus; cast Devouring Plague | 0.7 |
-| 3 | if time left on Holy Fire < 1.25s: cast Holy Fire | 4.9 |
+| 3 | if time left on Holy Fire < 1.25s: cast Holy Fire | 4.8 |
 | 4 | strict sequence: cast Inner Focus; cast Smite | 0.3 |
-| 5 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.2 |
-| 6 | cast Penance | 4.2 |
-| 7 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.2 |
-| 8 | cast Smite | 21.8 |
+| 5 | if not Shadow Word: Pain is on the target and time left in the fight ≥ 5: cast Shadow Word: Pain | 3.3 |
+| 6 | cast Penance | 4.4 |
+| 7 | if not Shadow Word: Pain is on the target and mana % ≥ 30%: cast Shadow Word: Pain | 3.3 |
+| 8 | cast Smite | 21.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Smite (its condition never held in these fights).
 
@@ -129,11 +129,11 @@ Damage by ability:
 
 | Ability | [`smite-discipline-raid`](smite-discipline-raid.md) |
 |---|---|
-| Smite | 34% |
-| Shadow Word: Pain | 26% |
+| Smite | 40% |
+| Shadow Word: Pain | 20% |
 | Penance | 19% |
 | Holy Fire | 19% |
-| Devouring Plague | 3% |
+| Devouring Plague | 2% |
 
 ## Notes
 

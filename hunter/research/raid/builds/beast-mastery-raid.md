@@ -47,13 +47,13 @@ The Beast Mastery raid damage build derived on 2026-09-30 (derive_raid.py): the 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
-| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 448 | -0.0% | 788 | -2.2% | 25 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
+| 1 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 455 | +0.0% | 754 | -1.9% | 13 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 453 | -0.4% | 769 | +0.0% | 21 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.6% | 728 | -5.2% | 17 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -80,15 +80,15 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
 | 2 | cast Summon Hawk | 10.0 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 |
 
 Damage by ability:
 
 | Ability | [`beast-mastery-raid`](beast-mastery-raid.md) |
 |---|---|
-| Auto Shot | 41% |
-| Summon Hawk | 30% |
-| Serpent Sting | 18% |
+| Auto Shot | 37% |
+| Summon Hawk | 28% |
+| Serpent Sting | 23% |
 | Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |

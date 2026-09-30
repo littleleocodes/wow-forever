@@ -2,6 +2,8 @@
 
 [Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Elemental
 
+**✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
+
 **[Elemental — Raid](../research/raid/builds/elemental-raid.md)** (31/7/13) — [open the talent tree](https://talentsforever.com/shaman/60/5500301303113051-052-05305-4)
 
 > ⚗ Generated build: no hand-made Elemental build exists for this mode yet, so this is the stats model's best Elemental build, refined in the raid simulator. A starting point, not a proven build.
@@ -27,12 +29,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 381 |
-| Parse (a full raid: every raid buff and debuff) | 485 |
+| Training dummy, 3-minute fight (only your own buffs) | 440 |
+| Parse (a full raid: every raid buff and debuff) | 553 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 381 → mana +3% → armor +0% → physical +2% → spell +11% → everything else +11% → raid 485
+Dummy 440 → mana +2% → armor +0% → physical +2% → spell +11% → everything else +11% → raid 553
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -40,7 +42,7 @@ Dummy 381 → mana +3% → armor +0% → physical +2% → spell +11% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 409 | 398 | 381 | 375 | 366 |
+| 468 | 454 | 440 | 432 | 422 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

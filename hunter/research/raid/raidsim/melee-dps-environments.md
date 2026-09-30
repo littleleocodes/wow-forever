@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `survival-raid` | 5/16/30 | 438 | 517 | 953 | 953 | 983 |
-| `opt-melee-dps-raid-dps` | 5/15/31 | 424 | 500 | 951 | 951 | 989 |
-| `melee-survival-raid` | 5/11/35 | 424 | 498 | 980 | 980 | 1012 |
+| `survival-raid` | 5/16/30 | 445 | 522 | 967 | 967 | 1000 |
+| `opt-melee-dps-raid-dps` | 5/15/31 | 429 | 504 | 965 | 965 | 1003 |
+| `melee-survival-raid` | 5/11/35 | 428 | 502 | 991 | 991 | 1026 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -20,9 +20,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `survival-raid` | 438 | +1% | +48% | +52% | +4% | +13% | 953 |
-| `opt-melee-dps-raid-dps` | 424 | +1% | +50% | +55% | +3% | +14% | 951 |
-| `melee-survival-raid` | 424 | +8% | +50% | +55% | +4% | +14% | 980 |
+| `survival-raid` | 445 | +1% | +47% | +52% | +4% | +13% | 967 |
+| `opt-melee-dps-raid-dps` | 429 | +1% | +50% | +56% | +3% | +14% | 965 |
+| `melee-survival-raid` | 428 | +7% | +50% | +56% | +4% | +14% | 991 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -32,9 +32,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `survival-raid` | 458 | 448 | 438 | 438 | 418 |
-| `opt-melee-dps-raid-dps` | 446 | 433 | 424 | 424 | 406 |
-| `melee-survival-raid` | 472 | 459 | 424 | 413 | 394 |
+| `survival-raid` | 465 | 454 | 445 | 445 | 424 |
+| `opt-melee-dps-raid-dps` | 452 | 438 | 429 | 429 | 411 |
+| `melee-survival-raid` | 475 | 464 | 428 | 418 | 398 |
 
-Gear presets: raid `hunter_melee_p1.gear.json`, maximum `hunter_melee_p1.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
+Gear presets: raid `hunter-project-hunter_melee_p1.p1opt.gear.json`, maximum `hunter-project-hunter_melee_p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

@@ -26,7 +26,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 438 DPS), [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 438 DPS), *Balance* (community simulator, 400 DPS), *Moonkin 38/0/13* (community simulator, 353 DPS)
+### [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) (ours: hand draft, 534 DPS), [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) (ours: optimizer, 534 DPS), *Balance* (community simulator, 483 DPS), *Moonkin 38/0/13* (community simulator, 434 DPS)
 
 Before the pull: at -10s: activate Moonkin Form.
 
@@ -34,17 +34,17 @@ Before the pull: at -10s: activate Moonkin Form.
 |---|---|---|---|---|---|
 | 1 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 | 0.3 | 0.3 | 0.3 |
-| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 | 4.3 | 4.1 | 3.5 |
+| 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 | 4.3 | 4.0 | 3.5 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 | 3.9 | 4.0 | 2.9 |
-| 5 | cast Starfire | 14.0 | 14.0 | 12.9 | 9.5 |
-| 6 | if mana % < 15%: cast Starfire | 1.8 | 1.8 | 0.7 | 4.4 |
+| 5 | cast Starfire | 14.6 | 14.6 | 13.3 | 9.9 |
+| 6 | if mana % < 15%: cast Starfire | 1.3 | 1.3 | 0.4 | 4.2 |
 
 Damage by ability:
 
 | Ability | [`balance-moonkin-raid`](builds/balance-moonkin-raid.md) | [`opt-balance-dps-raid-dps`](builds/opt-balance-dps-raid-dps.md) | *Balance* | *Moonkin 38/0/13* |
 |---|---|---|---|---|
-| Starfire | 63% | 63% | 61% | 65% |
-| Moonfire | 19% | 19% | 21% | 17% |
+| Starfire | 64% | 64% | 61% | 65% |
+| Moonfire | 18% | 18% | 20% | 16% |
 | Insect Swarm | 18% | 18% | 19% | 18% |
 
 ## feral-cat-dps
@@ -86,7 +86,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 350 DPS), *Feral Cat 9/35/7* (community simulator, 350 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 349 DPS), *Feral* (community simulator, 335 DPS)
+### [`opt-feral-cat-dps-raid-dps`](builds/opt-feral-cat-dps-raid-dps.md) (ours: optimizer, 366 DPS), *Feral Cat 9/35/7* (community simulator, 366 DPS), [`feral-cat-dps`](builds/feral-cat-dps.md) (ours: hand draft, 364 DPS), *Feral* (community simulator, 349 DPS)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
@@ -95,8 +95,8 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | 1 | cast Tiger's Fury | 2.3 | 2.3 | 2.3 | 2.3 |
 | 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.7 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.6 | 4.6 | 4.6 | 4.8 |
-| 5 | cast Shred | 17.1 | 17.1 | 17.1 | 17.5 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.9 | 4.9 | 4.9 | 5.0 |
+| 5 | cast Shred | 17.5 | 17.5 | 17.5 | 17.9 |
 | 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 | 5.5 | 5.5 | 5.7 |
 | 7 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready | as ready | as ready | as ready |

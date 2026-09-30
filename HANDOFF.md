@@ -82,6 +82,12 @@ Each class folder now opens with player pages and keeps the research below:
   - Open: cross-spec raid rankings mix gear tiers (warlock MC set, Shadow pre-raid, paladin default, feral launch vs phase-1 BiS):
     equalize the gear and re-race. The new leveling specs have no PIPELINE entry, calibration or scorer model of their own.
 
+- **Equal-tier raid gear** (2026-09-30, after the derivation): `raidsim/gear_opt.py` (see CLAUDE.md). The simulator's presets were
+  not one tier; with one common phase-1 + Forever-launch pool every damage spec was re-geared and re-raced. Warriors +71-76%
+  (their "p1" presets held caster and tank items), Retribution +51%, Shadow +31%, casters +13-22%, the rest 0-5%. Top of the dummy
+  ranking now: Demonology 679, Frost/Arcane hybrid 640, Affliction 633, Shadow 632, the mages ~590. Open: re-run the raid talent
+  searches in the new gear (`rebuild.py --steps raid,adopt`, `derive_raid.py --fresh`); tank sets were not changed.
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

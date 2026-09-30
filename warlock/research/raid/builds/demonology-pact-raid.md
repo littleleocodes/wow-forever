@@ -78,9 +78,9 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 616 | +0.0% | 750 | +0.0% | 1 s |
-| 2 | *Demonic Pact 2/31/18* | community simulator | - | 597 | -3.1% | 724 | -3.5% | 1 s |
-| 3 | *Demonic Pact* | community simulator | - | 589 | -4.5% | 713 | -5.0% | 1 s |
+| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 679 | +0.0% | 824 | +0.0% | 0 s |
+| 2 | *Demonic Pact 2/31/18* | community simulator | - | 658 | -3.2% | 797 | -3.4% | 1 s |
+| 3 | *Demonic Pact* | community simulator | - | 649 | -4.4% | 782 | -5.1% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -101,20 +101,20 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
 | 6 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 6.0 |
-| 7 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.7 |
+| 7 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | cast Shadow Bolt | 15.7 |
+| 9 | cast Shadow Bolt | 15.8 |
 
 Damage by ability:
 
 | Ability | [`demonology-pact-raid`](demonology-pact-raid.md) |
 |---|---|
-| Shadow Bolt | 58% |
-| Bane of Agony | 18% |
+| Shadow Bolt | 59% |
+| Bane of Agony | 17% |
 | Corruption | 17% |
-| Pet: Auto Attack | 6% |
+| Pet: Auto Attack | 5% |
 | Pet: Lash of Pain | 1% |
 | Searing Pain | 1% |
 | Pet: Demonic Brand | 0% |

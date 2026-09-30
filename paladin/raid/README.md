@@ -6,7 +6,7 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Retribution](retribution.md) — Two-handed Retribution | 350 | 802 | 324 | best |
+| 1 | [Retribution](retribution.md) — Retribution — Seal of Command / Twist of Light | 523 | 975 | 461 | best |
 
 **Tanking**: [Protection](protection.md) — Protection — Tank.
 

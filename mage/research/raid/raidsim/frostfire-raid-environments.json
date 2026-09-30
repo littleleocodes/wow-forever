@@ -2,12 +2,12 @@
  "class": "mage",
  "spec": "frostfire-raid",
  "game": "forever",
- "date": "2026-09-29",
+ "date": "2026-09-30",
  "sim": {
   "repo": "/root/.wow-forever-tools/forever-repo",
   "commit": "40be98e",
-  "gear_raid": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
-  "gear_max": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
+  "gear_max": "/home/user/wow-forever/_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
   "iterations": 3000,
   "seed": 1
  },
@@ -75,20 +75,20 @@
    "split": "2/33/16",
    "ours": true,
    "dps": {
-    "dummy": 472.7608392261359,
-    "dummy60": 566.3669230834087,
-    "ladder-mana": 475.2281881585487,
-    "ladder-armor": 475.2281881585487,
-    "ladder-physical": 468.37652010326815,
-    "ladder-spell": 515.2141721135944,
-    "raid": 565.7616511721875,
-    "curve60": 580.8439178826964,
-    "curve120": 496.4821922452979,
-    "curve180": 472.7608392261359,
-    "curve240": 421.54375296093065,
-    "curve360": 376.6046021738471,
-    "max": 565.7616511721875,
-    "max60": 657.1712327956509
+    "dummy": 556.3222088594854,
+    "dummy60": 654.568489884658,
+    "ladder-mana": 555.2972329123393,
+    "ladder-armor": 555.2972329123393,
+    "ladder-physical": 552.1795450846375,
+    "ladder-spell": 607.3974995931007,
+    "raid": 663.7286906382853,
+    "curve60": 679.6013660243314,
+    "curve120": 573.325365701015,
+    "curve180": 556.3222088594854,
+    "curve240": 483.869403896245,
+    "curve360": 437.73157162027974,
+    "max": 663.7286906382853,
+    "max60": 773.0358167174031
    }
   }
  ]

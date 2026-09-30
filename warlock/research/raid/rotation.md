@@ -34,7 +34,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`affliction-dot-raid`](builds/affliction-dot-raid.md) (ours: hand draft, 567 DPS), [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) (ours: optimizer, 567 DPS), *DS/Ruin* (community simulator, 506 DPS)
+### [`affliction-dot-raid`](builds/affliction-dot-raid.md) (ours: hand draft, 633 DPS), [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) (ours: optimizer, 633 DPS), *DS/Ruin* (community simulator, 564 DPS)
 
 Before the pull: at -5s: cast Amplify Curse.
 
@@ -47,10 +47,10 @@ Before the pull: at -5s: cast Amplify Curse.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 | 0.5 | 0.5 |
 | 6 | if mana % < 10%: cast Life Tap | 6.7 | 6.7 | 6.2 |
 | 7 | cast Amplify Curse | 0.5 | 0.5 | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.7 | 2.8 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 | 3.4 | 3.5 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 | 3.5 | 3.6 |
-| 11 | cast Shadow Bolt | 13.9 | 13.9 | 14.0 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 | 2.6 | 2.7 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 | 3.3 | 3.4 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 | 3.5 | 3.5 |
+| 11 | cast Shadow Bolt | 14.1 | 14.1 | 14.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -58,15 +58,15 @@ Damage by ability:
 
 | Ability | [`affliction-dot-raid`](builds/affliction-dot-raid.md) | [`opt-affliction-raid-raid-dps`](builds/opt-affliction-raid-raid-dps.md) | *DS/Ruin* |
 |---|---|---|---|
-| Shadow Bolt | 46% | 46% | 44% |
-| Bane of Agony | 18% | 18% | 20% |
+| Shadow Bolt | 47% | 47% | 44% |
+| Bane of Agony | 18% | 18% | 19% |
 | Corruption | 17% | 17% | 18% |
-| Immolate | 11% | 11% | 11% |
-| Pet: Auto Attack | 6% | 6% | 6% |
-| Pet: Lash of Pain | 1% | 1% | 1% |
+| Immolate | 12% | 12% | 12% |
+| Pet: Auto Attack | 5% | 5% | 6% |
 | Searing Pain | 1% | 1% | 1% |
+| Pet: Lash of Pain | 1% | 1% | 1% |
 
-### *Demonic Pact 2/31/18* (community simulator, 533 DPS), *Demonic Pact* (community simulator, 528 DPS)
+### *Demonic Pact 2/31/18* (community simulator, 592 DPS), *Demonic Pact* (community simulator, 586 DPS)
 
 Before the pull: at -5s: cast Amplify Curse.
 
@@ -77,11 +77,11 @@ Before the pull: at -5s: cast Amplify Curse.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 | 0.5 |
-| 6 | if mana % < 10%: cast Life Tap | 6.8 | 6.4 |
-| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 | 2.8 |
-| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.6 | 3.6 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.7 | 3.6 |
-| 10 | cast Shadow Bolt | 13.3 | 13.5 |
+| 6 | if mana % < 10%: cast Life Tap | 6.7 | 6.4 |
+| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.8 |
+| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.5 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 | 3.6 |
+| 10 | cast Shadow Bolt | 13.5 | 13.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -89,16 +89,16 @@ Damage by ability:
 
 | Ability | *Demonic Pact 2/31/18* | *Demonic Pact* |
 |---|---|---|
-| Shadow Bolt | 45% | 45% |
-| Corruption | 18% | 18% |
+| Shadow Bolt | 46% | 46% |
+| Corruption | 17% | 17% |
 | Bane of Agony | 17% | 17% |
-| Immolate | 11% | 11% |
-| Pet: Auto Attack | 7% | 7% |
-| Pet: Lash of Pain | 2% | 2% |
+| Immolate | 12% | 12% |
+| Pet: Auto Attack | 6% | 6% |
+| Pet: Lash of Pain | 1% | 1% |
 | Searing Pain | 1% | 1% |
 | Pet: Demonic Brand | 0% | 0% |
 
-### *DS/Ruin Pandemic 24/11/16* (community simulator, 515 DPS), *Deep Affliction 35/0/16* (community simulator, 512 DPS)
+### *DS/Ruin Pandemic 24/11/16* (community simulator, 573 DPS), *Deep Affliction 35/0/16* (community simulator, 568 DPS)
 
 Before the pull: at -5s: cast Amplify Curse.
 
@@ -112,27 +112,27 @@ Before the pull: at -5s: cast Amplify Curse.
 | 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 | 0.3 |
 | 7 | if mana % < 10%: cast Life Tap | 6.8 | 5.9 |
 | 8 | cast Amplify Curse | 0.5 | 0.5 |
-| 9 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.7 |
-| 10 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.4 |
-| 11 | if time left on Siphon Life ≤ cast time of Siphon Life: cast Siphon Life | 2.3 | 2.3 |
-| 12 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 | 3.3 |
-| 13 | cast Shadow Bolt | 12.5 | 10.6 |
+| 9 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 | 2.6 |
+| 10 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 | 3.3 |
+| 11 | if time left on Siphon Life ≤ cast time of Siphon Life: cast Siphon Life | 2.2 | 2.2 |
+| 12 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 | 3.2 |
+| 13 | cast Shadow Bolt | 12.8 | 10.8 |
 
 Damage by ability:
 
 | Ability | *DS/Ruin Pandemic 24/11/16* | *Deep Affliction 35/0/16* |
 |---|---|---|
-| Shadow Bolt | 40% | 35% |
-| Bane of Agony | 18% | 21% |
-| Corruption | 17% | 19% |
-| Immolate | 10% | 12% |
-| Pet: Auto Attack | 7% | 6% |
-| Siphon Life | 6% | 6% |
+| Shadow Bolt | 41% | 36% |
+| Bane of Agony | 18% | 20% |
+| Corruption | 17% | 18% |
+| Immolate | 11% | 13% |
+| Pet: Auto Attack | 6% | 6% |
+| Siphon Life | 5% | 6% |
 | Pet: Lash of Pain | 1% | 1% |
 | Shadowburn | 1% | 1% |
-| Searing Pain | 0% | 0% |
+| Searing Pain | 1% | 0% |
 
-### *Affliction* (community simulator, 505 DPS)
+### *Affliction* (community simulator, 561 DPS)
 
 Before the pull: at -5s: cast Amplify Curse.
 
@@ -145,11 +145,11 @@ Before the pull: at -5s: cast Amplify Curse.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if mana % < 10%: cast Life Tap | 5.9 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
-| 10 | if time left on Siphon Life ≤ cast time of Siphon Life: cast Siphon Life | 2.3 |
-| 11 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
-| 12 | cast Shadow Bolt | 10.5 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
+| 10 | if time left on Siphon Life ≤ cast time of Siphon Life: cast Siphon Life | 2.2 |
+| 11 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.2 |
+| 12 | cast Shadow Bolt | 10.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent).
 
@@ -157,16 +157,16 @@ Damage by ability:
 
 | Ability | *Affliction* |
 |---|---|
-| Shadow Bolt | 35% |
-| Bane of Agony | 21% |
+| Shadow Bolt | 36% |
+| Bane of Agony | 20% |
 | Corruption | 19% |
-| Immolate | 12% |
+| Immolate | 13% |
 | Pet: Auto Attack | 6% |
 | Siphon Life | 6% |
 | Pet: Lash of Pain | 1% |
-| Searing Pain | 0% |
+| Searing Pain | 1% |
 
-### *Shadow and Flame 13/11/27* (community simulator, 491 DPS)
+### *Shadow and Flame 13/11/27* (community simulator, 547 DPS)
 
 Before the pull: at -5s: cast Amplify Curse.
 
@@ -177,12 +177,12 @@ Before the pull: at -5s: cast Amplify Curse.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.3 |
-| 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
 | 7 | if mana % < 10%: cast Life Tap | 5.6 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | cast Shadow Bolt | 14.2 |
+| 11 | cast Shadow Bolt | 14.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Amplify Curse (needs the Amplify Curse talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -190,14 +190,14 @@ Damage by ability:
 
 | Ability | *Shadow and Flame 13/11/27* |
 |---|---|
-| Shadow Bolt | 45% |
-| Corruption | 17% |
-| Bane of Agony | 16% |
-| Immolate | 13% |
-| Pet: Auto Attack | 7% |
+| Shadow Bolt | 46% |
+| Corruption | 16% |
+| Bane of Agony | 15% |
+| Immolate | 14% |
+| Pet: Auto Attack | 6% |
 | Pet: Lash of Pain | 1% |
+| Searing Pain | 1% |
 | Shadowburn | 1% |
-| Searing Pain | 0% |
 
 ## fire-destro-raid
 
@@ -233,7 +233,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`destruction-fire-raid`](builds/destruction-fire-raid.md) (ours: hand draft, 546 DPS), [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) (ours: optimizer, 546 DPS), *DS/Ruin Pandemic 24/11/16* (community simulator, 523 DPS), *Shadow and Flame 13/11/27* (community simulator, 492 DPS), *Deep Affliction 35/0/16* (community simulator, 458 DPS)
+### [`destruction-fire-raid`](builds/destruction-fire-raid.md) (ours: hand draft, 612 DPS), [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) (ours: optimizer, 612 DPS), *DS/Ruin Pandemic 24/11/16* (community simulator, 586 DPS), *Shadow and Flame 13/11/27* (community simulator, 552 DPS), *Deep Affliction 35/0/16* (community simulator, 515 DPS)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -244,25 +244,25 @@ Before the pull: at -1.5s: cast Life Tap.
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
 | 4 | if time left in the fight ≤ 1.125: cast Shadowburn | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
 | 5 | if time left in the fight ≤ 3.5 and mana % ≥ 10%: cast Searing Pain | 0.4 | 0.4 | 0.3 | 0.4 | 0.3 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 | 3.0 | 3.0 | 3.0 | 2.9 |
-| 7 | if mana % < 10%: cast Life Tap | 6.7 | 6.7 | 6.9 | 6.0 | 6.0 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 | 2.9 | 2.9 | 2.9 | 2.8 |
+| 7 | if mana % < 10%: cast Life Tap | 6.7 | 6.7 | 6.9 | 6.0 | 5.9 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 | 0.4 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 | 3.4 | 3.4 | 3.4 | 3.5 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 | 3.4 | 3.4 | 3.4 | 3.3 |
-| 11 | cast Shadow Bolt | 13.8 | 13.8 | 14.0 | 14.1 | 11.7 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 | 3.3 | 3.3 | 3.3 | 3.4 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 | 3.3 | 3.3 | 3.4 | 3.3 |
+| 11 | cast Shadow Bolt | 13.9 | 13.9 | 14.2 | 14.3 | 11.9 |
 
 Damage by ability:
 
 | Ability | [`destruction-fire-raid`](builds/destruction-fire-raid.md) | [`opt-fire-destro-raid-raid-dps`](builds/opt-fire-destro-raid-raid-dps.md) | *DS/Ruin Pandemic 24/11/16* | *Shadow and Flame 13/11/27* | *Deep Affliction 35/0/16* |
 |---|---|---|---|---|---|
-| Shadow Bolt | 50% | 50% | 49% | 49% | 42% |
-| Bane of Agony | 20% | 20% | 21% | 18% | 23% |
-| Corruption | 19% | 19% | 19% | 19% | 20% |
-| Immolate | 11% | 11% | 10% | 13% | 13% |
+| Shadow Bolt | 50% | 50% | 49% | 50% | 42% |
+| Bane of Agony | 19% | 19% | 20% | 18% | 22% |
+| Corruption | 18% | 18% | 18% | 18% | 20% |
+| Immolate | 11% | 11% | 11% | 14% | 15% |
 | Shadowburn | 1% | 1% | 1% | 1% | 1% |
-| Searing Pain | 0% | 0% | 0% | 0% | 0% |
+| Searing Pain | 1% | 1% | 0% | 1% | 0% |
 
-### *DS/Ruin* (community simulator, 514 DPS), *Affliction* (community simulator, 450 DPS), *Demonic Pact 2/31/18* (community simulator, 449 DPS), *Demonic Pact* (community simulator, 446 DPS)
+### *DS/Ruin* (community simulator, 577 DPS), *Affliction* (community simulator, 507 DPS), *Demonic Pact 2/31/18* (community simulator, 505 DPS), *Demonic Pact* (community simulator, 501 DPS)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -271,13 +271,13 @@ Before the pull: at -1.5s: cast Life Tap.
 | 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready | as ready | as ready | as ready |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | if time left in the fight ≤ 3.5 and mana % ≥ 10%: cast Searing Pain | 0.3 | 0.3 | 0.3 | 0.3 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 | 2.9 | 3.1 | 3.1 |
-| 6 | if mana % < 10%: cast Life Tap | 6.7 | 6.1 | 7.3 | 6.8 |
+| 4 | if time left in the fight ≤ 3.5 and mana % ≥ 10%: cast Searing Pain | 0.3 | 0.3 | 0.3 | 0.4 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 | 2.9 | 3.0 | 3.0 |
+| 6 | if mana % < 10%: cast Life Tap | 6.7 | 6.0 | 7.3 | 6.9 |
 | 7 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 | 0.4 |
-| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.5 | 3.6 | 3.6 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 | 3.4 | 3.6 | 3.5 |
-| 10 | cast Shadow Bolt | 14.0 | 11.7 | 13.3 | 13.5 |
+| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 | 3.4 | 3.5 | 3.5 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 | 3.3 | 3.5 | 3.5 |
+| 10 | cast Shadow Bolt | 14.1 | 11.9 | 13.4 | 13.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent).
 
@@ -285,11 +285,11 @@ Damage by ability:
 
 | Ability | *DS/Ruin* | *Affliction* | *Demonic Pact 2/31/18* | *Demonic Pact* |
 |---|---|---|---|---|
-| Shadow Bolt | 47% | 42% | 49% | 49% |
-| Bane of Agony | 22% | 23% | 20% | 20% |
-| Corruption | 20% | 21% | 19% | 19% |
-| Immolate | 11% | 14% | 12% | 12% |
-| Searing Pain | 0% | 0% | 0% | 0% |
+| Shadow Bolt | 48% | 42% | 49% | 49% |
+| Bane of Agony | 22% | 22% | 19% | 19% |
+| Corruption | 19% | 20% | 19% | 19% |
+| Immolate | 11% | 15% | 13% | 13% |
+| Searing Pain | 0% | 0% | 0% | 1% |
 
 ## sb-raid
 
@@ -323,7 +323,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) (ours: optimizer, 566 DPS), [`ds-ruin-raid`](builds/ds-ruin-raid.md) (ours: hand draft, 566 DPS), *DS/Ruin* (community simulator, 533 DPS), *Affliction* (community simulator, 464 DPS)
+### [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) (ours: optimizer, 636 DPS), [`ds-ruin-raid`](builds/ds-ruin-raid.md) (ours: hand draft, 636 DPS), *DS/Ruin* (community simulator, 598 DPS), *Affliction* (community simulator, 523 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -334,12 +334,12 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready | as ready | as ready |
 | 4 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 | 0.5 | 0.5 | 0.4 |
-| 6 | if mana % < 10%: cast Life Tap | 6.7 | 7.0 | 6.6 | 6.0 |
+| 6 | if mana % < 10%: cast Life Tap | 6.7 | 7.0 | 6.6 | 5.9 |
 | 7 | cast Amplify Curse | 0.5 | 0.5 | 0.5 | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.7 | 2.7 | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 | 3.4 | 3.5 | 3.5 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 | 3.5 | 3.5 | 3.4 |
-| 11 | cast Shadow Bolt | 13.9 | 13.6 | 14.1 | 11.7 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 | 2.6 | 2.7 | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 | 3.3 | 3.4 | 3.4 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 | 3.4 | 3.5 | 3.3 |
+| 11 | cast Shadow Bolt | 14.1 | 13.8 | 14.2 | 11.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent).
 
@@ -347,13 +347,13 @@ Damage by ability:
 
 | Ability | [`opt-sb-raid-raid-dps`](builds/opt-sb-raid-raid-dps.md) | [`ds-ruin-raid`](builds/ds-ruin-raid.md) | *DS/Ruin* | *Affliction* |
 |---|---|---|---|---|
-| Shadow Bolt | 51% | 50% | 48% | 43% |
-| Bane of Agony | 19% | 20% | 22% | 23% |
-| Corruption | 19% | 19% | 20% | 21% |
-| Immolate | 10% | 11% | 10% | 13% |
+| Shadow Bolt | 52% | 51% | 48% | 43% |
+| Bane of Agony | 18% | 19% | 21% | 22% |
+| Corruption | 18% | 18% | 19% | 20% |
+| Immolate | 11% | 11% | 11% | 14% |
 | Searing Pain | 1% | 1% | 1% | 1% |
 
-### *DS/Ruin Pandemic 24/11/16* (community simulator, 540 DPS), *Deep Affliction 35/0/16* (community simulator, 471 DPS)
+### *DS/Ruin Pandemic 24/11/16* (community simulator, 605 DPS), *Deep Affliction 35/0/16* (community simulator, 531 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -365,25 +365,25 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 4 | use every other cooldown when ready | as ready | as ready |
 | 5 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 | 0.2 |
 | 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 | 0.3 |
-| 7 | if mana % < 10%: cast Life Tap | 6.8 | 6.0 |
+| 7 | if mana % < 10%: cast Life Tap | 6.8 | 5.9 |
 | 8 | cast Amplify Curse | 0.5 | 0.5 |
-| 9 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.7 |
-| 10 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.4 |
-| 11 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 | 3.4 |
-| 12 | cast Shadow Bolt | 14.1 | 11.8 |
+| 9 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 | 2.6 |
+| 10 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 | 3.4 |
+| 11 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 | 3.3 |
+| 12 | cast Shadow Bolt | 14.2 | 12.0 |
 
 Damage by ability:
 
 | Ability | *DS/Ruin Pandemic 24/11/16* | *Deep Affliction 35/0/16* |
 |---|---|---|
 | Shadow Bolt | 50% | 43% |
-| Bane of Agony | 20% | 23% |
-| Corruption | 19% | 21% |
-| Immolate | 10% | 13% |
+| Bane of Agony | 20% | 22% |
+| Corruption | 18% | 20% |
+| Immolate | 11% | 14% |
 | Shadowburn | 1% | 1% |
 | Searing Pain | 0% | 0% |
 
-### *Shadow and Flame 13/11/27* (community simulator, 509 DPS)
+### *Shadow and Flame 13/11/27* (community simulator, 570 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -397,9 +397,9 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 6 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 7 | if mana % < 10%: cast Life Tap | 6.0 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | cast Shadow Bolt | 14.3 |
+| 11 | cast Shadow Bolt | 14.4 |
 
 Lines of the simulator's rotation these builds never cast: cast Amplify Curse (needs the Amplify Curse talent).
 
@@ -408,13 +408,13 @@ Damage by ability:
 | Ability | *Shadow and Flame 13/11/27* |
 |---|---|
 | Shadow Bolt | 50% |
-| Corruption | 19% |
-| Bane of Agony | 18% |
-| Immolate | 12% |
+| Corruption | 18% |
+| Bane of Agony | 17% |
+| Immolate | 13% |
 | Shadowburn | 1% |
-| Searing Pain | 0% |
+| Searing Pain | 1% |
 
-### *Demonic Pact 2/31/18* (community simulator, 466 DPS), *Demonic Pact* (community simulator, 461 DPS)
+### *Demonic Pact 2/31/18* (community simulator, 525 DPS), *Demonic Pact* (community simulator, 518 DPS)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -426,10 +426,10 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 4 | use every other cooldown when ready | as ready | as ready |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 | 0.5 |
 | 6 | if mana % < 10%: cast Life Tap | 7.1 | 6.7 |
-| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 | 2.8 |
-| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.6 | 3.6 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 | 3.6 |
-| 10 | cast Shadow Bolt | 13.4 | 13.6 |
+| 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 | 2.8 |
+| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.5 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 | 3.5 |
+| 10 | cast Shadow Bolt | 13.5 | 13.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent).
 
@@ -437,10 +437,10 @@ Damage by ability:
 
 | Ability | *Demonic Pact 2/31/18* | *Demonic Pact* |
 |---|---|---|
-| Shadow Bolt | 50% | 49% |
-| Corruption | 19% | 20% |
-| Bane of Agony | 19% | 19% |
-| Immolate | 11% | 11% |
+| Shadow Bolt | 50% | 50% |
+| Corruption | 19% | 19% |
+| Bane of Agony | 18% | 18% |
+| Immolate | 12% | 12% |
 | Searing Pain | 1% | 1% |
 
 ## demonology-raid
@@ -476,28 +476,28 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`demonology-pact-raid`](builds/demonology-pact-raid.md) (ours: hand draft, 616 DPS), *Demonic Pact 2/31/18* (community simulator, 597 DPS), *Demonic Pact* (community simulator, 589 DPS)
+### [`demonology-pact-raid`](builds/demonology-pact-raid.md) (ours: hand draft, 679 DPS), *Demonic Pact 2/31/18* (community simulator, 658 DPS), *Demonic Pact* (community simulator, 649 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`demonology-pact-raid`](builds/demonology-pact-raid.md) casts/min | *Demonic Pact 2/31/18* casts/min | *Demonic Pact* casts/min |
 |---|---|---|---|---|
 | 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready | as ready | as ready |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready | as ready | as ready |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready |
-| 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 | 0.5 | 0.5 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 | 2.9 | 3.0 |
+| 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 | 0.5 | 0.6 |
+| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 | 2.8 | 2.9 |
 | 6 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 6.0 | 6.1 | 5.7 |
-| 7 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.7 | 3.6 | 3.7 |
+| 7 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 | 3.5 | 3.6 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 | 0.4 | 0.4 |
-| 9 | cast Shadow Bolt | 15.7 | 15.8 | 16.0 |
+| 9 | cast Shadow Bolt | 15.8 | 16.0 | 16.1 |
 
 Damage by ability:
 
 | Ability | [`demonology-pact-raid`](builds/demonology-pact-raid.md) | *Demonic Pact 2/31/18* | *Demonic Pact* |
 |---|---|---|---|
-| Shadow Bolt | 58% | 55% | 55% |
-| Corruption | 17% | 18% | 19% |
-| Bane of Agony | 18% | 18% | 19% |
-| Pet: Auto Attack | 6% | 6% | 6% |
+| Shadow Bolt | 59% | 57% | 56% |
+| Corruption | 17% | 18% | 18% |
+| Bane of Agony | 17% | 18% | 18% |
+| Pet: Auto Attack | 5% | 5% | 6% |
 | Pet: Lash of Pain | 1% | 1% | 1% |
 | Searing Pain | 1% | 1% | 1% |
 | Pet: Demonic Brand | 0% | 0% | 0% |
@@ -530,7 +530,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) (ours: hand draft, 478 DPS)
+### [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) (ours: hand draft, 561 DPS)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -541,22 +541,22 @@ Before the pull: at -1.5s: cast Life Tap.
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
 | 7 | if mana % < 10%: cast Life Tap | 7.1 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.6 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.6 |
-| 12 | cast Incinerate | 13.1 |
+| 12 | cast Incinerate | 13.4 |
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](builds/destruction-incinerate-raid.md) |
 |---|---|
-| Incinerate | 34% |
-| Corruption | 20% |
-| Bane of Agony | 19% |
-| Immolate | 14% |
-| Conflagrate | 11% |
-| Shadowburn | 1% |
+| Incinerate | 37% |
+| Corruption | 18% |
+| Bane of Agony | 18% |
+| Immolate | 15% |
+| Conflagrate | 12% |
 | Searing Pain | 1% |
+| Shadowburn | 1% |
