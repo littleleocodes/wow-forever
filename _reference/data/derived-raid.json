@@ -345,5 +345,44 @@
    "gain_vs_hand": 0.030564913672203264,
    "verdict": "replaces"
   }
+ },
+ "warlock": {
+  "Affliction": {
+   "tree": "Affliction",
+   "role": "dps",
+   "entry": "affliction-raid",
+   "start": "affliction-dot-raid",
+   "start_metric": 566.9712061403175,
+   "date": "2026-09-30",
+   "hand": "affliction-dot-raid",
+   "hand_metric": 566.9712061403175,
+   "candidate": "warlock/research/raid/raidsim/candidates/derived-affliction.json",
+   "search_gain": 0.011219889513581549,
+   "moves": [
+    {
+     "round": 1,
+     "move": "3 points Aftermath -> Cataclysm",
+     "gain_seed1": 0.008173861102360958,
+     "gain_seed2": 0.007549435039150509,
+     "split": "30/0/21"
+    },
+    {
+     "round": 2,
+     "move": "3 points Improved Corruption -> Malediction",
+     "gain_seed1": 0.0017114857913176351,
+     "gain_seed2": 0.00235828462728227,
+     "split": "30/0/21"
+    },
+    {
+     "round": 3,
+     "move": "2 points Nightfall -> Malediction",
+     "gain_seed1": 0.0023036572677825884,
+     "gain_seed2": 0.00155573075103832,
+     "split": "30/0/21"
+    }
+   ],
+   "gain_vs_hand": 0.011219889513581549,
+   "verdict": "hand stays"
+  }
  }
 }

@@ -322,5 +322,108 @@
    },
    "keep_incumbent": true
   }
+ },
+ "priest": {
+  "Discipline": {
+   "spec": "discipline-leveling",
+   "model": "shadow-dps",
+   "tree": "Discipline",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "priest/research/leveling/fightlab/candidates/derived-discipline.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "discipline-leveling",
+    "model": "shadow-dps",
+    "tree": "Discipline",
+    "start": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json": 47.849395889638586
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "3 points Power in Light -> Meditation",
+      "gain_seed1": 0.04374592702531255,
+      "gain_seed2": 0.04296628949734105
+     },
+     {
+      "round": 2,
+      "move": "5 points Shadow Focus -> Spirit Tap",
+      "gain_seed1": 0.0437127621402964,
+      "gain_seed2": 0.04238482277900446
+     },
+     {
+      "round": 3,
+      "move": "3 points Silent Resolve -> Mental Agility",
+      "gain_seed1": 0.028365181097779968,
+      "gain_seed2": 0.030096968436794658
+     },
+     {
+      "round": 4,
+      "move": "1 point Power in Light -> Soul Warding",
+      "gain_seed1": 0.015121148985310917,
+      "gain_seed2": 0.013814033332193554
+     },
+     {
+      "round": 5,
+      "move": "3 points Blackout -> Shadow Focus",
+      "gain_seed1": 0.017919412560369774,
+      "gain_seed2": 0.015525672712176752
+     }
+    ],
+    "incumbent": "derived-discipline-scorer",
+    "race": {
+     "incumbent": [
+      51.179710842977656,
+      {
+       "20": 39.09417371055808,
+       "30": 48.34578835773021,
+       "40": 57.61740101938483,
+       "50": 56.75663087408169,
+       "60": 47.68595765288309
+      }
+     ],
+     "search": [
+      45.86707536476293,
+      {
+       "20": 36.55064581512126,
+       "30": 43.927792670323505,
+       "40": 52.92577711644856,
+       "50": 50.79004085942081,
+       "60": 41.133920815191225
+      }
+     ],
+     "gain": 0.10380354618481924,
+     "all": {
+      "derived-discipline-scorer": [
+       51.179710842977656,
+       {
+        "20": 39.09417371055808,
+        "30": 48.34578835773021,
+        "40": 57.61740101938483,
+        "50": 56.75663087408169,
+        "60": 47.68595765288309
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.10380354618481924,
+   "incumbent": "derived-discipline-scorer",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 36.55064581512126,
+    "30": 43.927792670323505,
+    "40": 52.92577711644856,
+    "50": 50.79004085942081,
+    "60": 41.133920815191225
+   }
+  }
  }
 }

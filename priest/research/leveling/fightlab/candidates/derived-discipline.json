@@ -1,0 +1,336 @@
+{
+ "id": "fl-discipline-discipline-leveling",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    1
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    2
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Improved Inner Fire",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Penance",
+    1
+   ],
+   [
+    "Power Infusion",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Soul Warding",
+    1
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Blackout",
+    2
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Improved Mind Blast",
+    1
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Spirit Tap",
+    5
+   ],
+   [
+    "Shadow Focus",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 2
+  },
+  {
+   "levels": "12-14",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 3
+  },
+  {
+   "levels": "15-16",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 3
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23",
+   "tree": "Shadow",
+   "talent": "Improved Mind Blast",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "29-33",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "34-36",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "37",
+   "tree": "Discipline",
+   "talent": "Power in Light",
+   "points": 1
+  },
+  {
+   "levels": "38",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Discipline",
+   "talent": "Holy Precision",
+   "points": 2
+  },
+  {
+   "levels": "43",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 1
+  },
+  {
+   "levels": "44-48",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 5
+  },
+  {
+   "levels": "49-51",
+   "tree": "Discipline",
+   "talent": "Improved Inner Fire",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Discipline",
+   "talent": "Penance",
+   "points": 1
+  },
+  {
+   "levels": "53-54",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 2
+  },
+  {
+   "levels": "55-57",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 3
+  },
+  {
+   "levels": "58",
+   "tree": "Discipline",
+   "talent": "Soul Warding",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Discipline",
+   "talent": "Power Infusion",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "discipline-leveling",
+  "model": "shadow-dps",
+  "tree": "Discipline",
+  "start": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json",
+  "starts": {
+   "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json": 47.849395889638586
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Power in Light -> Meditation",
+    "gain_seed1": 0.04374592702531255,
+    "gain_seed2": 0.04296628949734105
+   },
+   {
+    "round": 2,
+    "move": "5 points Shadow Focus -> Spirit Tap",
+    "gain_seed1": 0.0437127621402964,
+    "gain_seed2": 0.04238482277900446
+   },
+   {
+    "round": 3,
+    "move": "3 points Silent Resolve -> Mental Agility",
+    "gain_seed1": 0.028365181097779968,
+    "gain_seed2": 0.030096968436794658
+   },
+   {
+    "round": 4,
+    "move": "1 point Power in Light -> Soul Warding",
+    "gain_seed1": 0.015121148985310917,
+    "gain_seed2": 0.013814033332193554
+   },
+   {
+    "round": 5,
+    "move": "3 points Blackout -> Shadow Focus",
+    "gain_seed1": 0.017919412560369774,
+    "gain_seed2": 0.015525672712176752
+   }
+  ],
+  "incumbent": "derived-discipline-scorer",
+  "race": {
+   "incumbent": [
+    51.179710842977656,
+    {
+     "20": 39.09417371055808,
+     "30": 48.34578835773021,
+     "40": 57.61740101938483,
+     "50": 56.75663087408169,
+     "60": 47.68595765288309
+    }
+   ],
+   "search": [
+    45.86707536476293,
+    {
+     "20": 36.55064581512126,
+     "30": 43.927792670323505,
+     "40": 52.92577711644856,
+     "50": 50.79004085942081,
+     "60": 41.133920815191225
+    }
+   ],
+   "gain": 0.10380354618481924,
+   "all": {
+    "derived-discipline-scorer": [
+     51.179710842977656,
+     {
+      "20": 39.09417371055808,
+      "30": 48.34578835773021,
+      "40": 57.61740101938483,
+      "50": 56.75663087408169,
+      "60": 47.68595765288309
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
