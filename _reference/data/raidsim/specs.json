@@ -11,7 +11,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
       "share_build": "frost-fingers-of-frost-raid",
       "spec": {
@@ -46,7 +46,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
       "apl": "ui/specs/mage/dps/apls/fire.apl.json",
       "spec": {
         "mage": {
@@ -77,7 +77,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
       "apl": "ui/specs/mage/dps/apls/arcane.apl.json",
       "spec": {
         "mage": {
@@ -111,7 +111,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
       "spec": {
         "mage": {
@@ -148,7 +148,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
       "apl": "ui/specs/priest/dps/apls/shadow.apl.json",
       "spec": {
         "dpsPriest": {
@@ -180,7 +180,7 @@
       "distance": 20,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
       "apl": "ui/specs/priest/dps/apls/smite.apl.json",
       "spec": {
         "dpsPriest": {
@@ -217,7 +217,7 @@
       "distance": 25,
       "profession1": "Enchanting",
       "profession2": "Tailoring",
-      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
       "apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
       "spec": {
         "warlock": {
@@ -249,7 +249,7 @@
       "distance": 25,
       "profession1": "Enchanting",
       "profession2": "Tailoring",
-      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
       "apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
       "spec": {
         "warlock": {
@@ -281,7 +281,7 @@
       "distance": 25,
       "profession1": "Enchanting",
       "profession2": "Tailoring",
-      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
       "apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
       "spec": {
         "warlock": {
@@ -312,7 +312,7 @@
       "distance": 25,
       "profession1": "Enchanting",
       "profession2": "Tailoring",
-      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
       "apl": "ui/specs/warlock/dps/apls/demonic_pact.apl.json",
       "spec": {
         "warlock": {
@@ -346,7 +346,7 @@
       "distance": 25,
       "profession1": "Enchanting",
       "profession2": "Tailoring",
-      "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
       "spec": {
         "warlock": {
@@ -383,7 +383,7 @@
       "distance": 12,
       "profession1": "Engineering",
       "profession2": "Leatherworking",
-      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
       "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
       "spec": {
         "hunter": {
@@ -421,7 +421,7 @@
       "distance": 12,
       "profession1": "Engineering",
       "profession2": "Leatherworking",
-      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
       "apl": "ui/specs/hunter/dps/apls/mm.apl.json",
       "spec": {
         "hunter": {
@@ -458,7 +458,7 @@
       "distance": 12,
       "profession1": "Engineering",
       "profession2": "Leatherworking",
-      "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
       "apl": "ui/specs/hunter/dps/apls/bm.apl.json",
       "spec": {
         "hunter": {
@@ -496,7 +496,7 @@
       "distance": 5,
       "profession1": "Engineering",
       "profession2": "Leatherworking",
-      "gear": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
       "spec": {
         "hunter": {
@@ -536,7 +536,7 @@
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
       "apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
       "spec": {
         "rogue": {
@@ -641,7 +641,7 @@
       "race": "RaceDwarf",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/rogue-dps-combat_sinister_strike_p1_bis.p1opt.gear.json",
       "apl": "ui/specs/rogue/dps/apls/forever_hemorrhage.apl.json",
       "spec": {
         "rogue": {
@@ -680,7 +680,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json",
       "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
       "spec": {
         "dpsWarrior": {
@@ -710,7 +710,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_fury.p1opt.gear.json",
       "apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
       "spec": {
         "dpsWarrior": {
@@ -773,7 +773,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/warrior-dps-p1_arms.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
       "spec": {
         "dpsWarrior": {
@@ -808,7 +808,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
       "apl": "ui/specs/paladin/retribution/apls/default.apl.json",
       "spec": {
         "retributionPaladin": {
@@ -875,7 +875,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.base.apl.json",
       "spec": {
         "retributionPaladin": {
@@ -912,7 +912,7 @@
       "race": "RaceHuman",
       "distance": 5,
       "profession1": "Engineering",
-      "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
       "apl": "_reference/data/raidsim/apls/paladin/shockadin-raid.base.apl.json",
       "spec": {
         "retributionPaladin": {
@@ -953,7 +953,7 @@
       "distance": 15,
       "profession1": "Enchanting",
       "profession2": "Alchemy",
-      "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
       "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
       "spec": {
         "elementalShaman": {
@@ -988,7 +988,7 @@
       "distance": 5,
       "profession1": "Alchemy",
       "profession2": "Enchanting",
-      "gear": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/shaman-enhancement-phase_1.p1opt.gear.json",
       "apl": "ui/specs/shaman/enhancement/apls/forever.apl.json",
       "spec": {
         "enhancementShaman": {
@@ -1025,7 +1025,7 @@
       "distance": 15,
       "profession1": "Enchanting",
       "profession2": "Alchemy",
-      "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
       "apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
       "spec": {
         "elementalShaman": {
@@ -1064,7 +1064,7 @@
       "distance": 15,
       "profession1": "Alchemy",
       "profession2": "Tailoring",
-      "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/druid-balance-p1.p1opt.gear.json",
       "apl": "ui/specs/druid/balance/apls/default.apl.json",
       "spec": {
         "balanceDruid": {
@@ -1099,7 +1099,7 @@
       "distance": 0,
       "profession1": "Engineering",
       "profession2": "Leatherworking",
-      "gear": "ui/specs/druid/feralcat/gear_sets/launch.gear.json",
+      "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
       "apl": "ui/specs/druid/feralcat/apls/default.apl.json",
       "spec": {
         "feralCatDruid": {

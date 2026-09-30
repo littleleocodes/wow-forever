@@ -51,6 +51,7 @@ type build struct {
 	Talents string          `json:"talents"`
 	APL     string          `json:"apl"`      // optional: this build's own rotation (a path, absolute or relative to --root) ...
 	APLJSON json.RawMessage `json:"apl_json"` // ... or the rotation itself inline (raidsim/apl_opt.py scores many variants in one run)
+	GearJSON json.RawMessage `json:"gear_json"` // optional: this build's own gear set inline (raidsim/gear_opt.py races gear sets)
 }
 
 type config struct {
@@ -78,6 +79,9 @@ type config struct {
 	NoExecute          bool            `json:"noExecute"`   // no execute phases (a dummy never dies)
 	Seed               int64           `json:"seed"`
 	IsTank             bool            `json:"isTank"`
+	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
+	// instead of a race row (2026-09-30: raidsim/gear_opt.py builds equal-tier gear sets from them)
+	StatWeights        bool            `json:"statweights"`
 	Builds             []build         `json:"builds"`
 }
 
@@ -284,6 +288,14 @@ func main() {
 		player.Profession1 = prof(cfg.Profession1, proto.Profession_Engineering)
 		player.Profession2 = prof(cfg.Profession2, proto.Profession_ProfessionUnknown)
 		player.Rotation = rotation
+		if len(b.GearJSON) > 0 {
+			own := &proto.EquipmentSpec{}
+			if err := unmarshal.Unmarshal(b.GearJSON, own); err != nil {
+				fmt.Printf("{\"label\": %q, \"error\": %q}\n", b.Label, "bad gear: "+err.Error())
+				continue
+			}
+			player.Equipment = own
+		}
 		if len(b.APLJSON) > 0 || b.APL != "" {
 			own := &proto.APLRotation{}
 			src := []byte(b.APLJSON)
@@ -354,6 +366,52 @@ func main() {
 					}
 				}
 			}
+		}
+		if cfg.StatWeights {
+			pl := raid.Parties[0].Players[0]
+			swr := &proto.StatWeightsRequest{
+				Player: pl, RaidBuffs: raid.Buffs, PartyBuffs: raid.Parties[0].Buffs, Debuffs: raid.Debuffs, Encounter: encounter,
+				SimOptions:   &proto.SimOptions{Iterations: cfg.Iterations, RandomSeed: cfg.Seed},
+				EpReferenceStat: proto.Stat_StatAttackPower, Tanks: raid.Tanks,
+			}
+			for i := 0; i < int(proto.Stat_StatPhysicalDamage); i++ {
+				// damage builds: the offensive stats only (Strength .. Armor Penetration, Spirit, Intellect); tanks: everything
+				if cfg.IsTank || i <= int(proto.Stat_StatArmorPenetration) {
+					if !cfg.IsTank && (i == int(proto.Stat_StatStamina) || i == int(proto.Stat_StatHealingPower)) {
+						continue
+					}
+					swr.StatsToWeigh = append(swr.StatsToWeigh, proto.Stat(i))
+				}
+			}
+			swr.PseudoStatsToWeigh = []proto.PseudoStat{proto.PseudoStat_PseudoStatMainHandDps, proto.PseudoStat_PseudoStatOffHandDps, proto.PseudoStat_PseudoStatRangedDps}
+			t0 := time.Now()
+			res := core.StatWeights(swr)
+			if res.Error != nil {
+				fmt.Printf("{\"label\": %q, \"error\": %q}\n", b.Label, res.Error.Message)
+				continue
+			}
+			pick := res.Dps
+			if cfg.IsTank {
+				pick = res.Tps
+			}
+			w := map[string]float64{}
+			for i, v := range pick.Weights.Stats {
+				w[proto.Stat(i).String()] = v
+			}
+			for i, v := range pick.Weights.PseudoStats {
+				w[proto.PseudoStat(i).String()] = v
+			}
+			out := map[string]interface{}{"label": b.Label, "weights": w, "seconds": time.Since(t0).Seconds()}
+			if cfg.IsTank { // tanks: threat per point, and damage taken per point (lower is better)
+				d := map[string]float64{}
+				for i, v := range res.Dtps.Weights.Stats {
+					d[proto.Stat(i).String()] = v
+				}
+				out["dtps_weights"] = d
+			}
+			line, _ := json.Marshal(out)
+			fmt.Println(string(line))
+			continue
 		}
 		request := &proto.RaidSimRequest{
 			Raid:       raid,
