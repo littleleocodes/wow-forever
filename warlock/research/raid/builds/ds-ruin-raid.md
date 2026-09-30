@@ -71,15 +71,15 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 566 | +0.0% | 675 | -0.4% | 1 s |
-| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 566 | -0.1% | 678 | +0.0% | 1 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 540 | -4.6% | 643 | -5.2% | 1 s |
-| 4 | *DS/Ruin* | community simulator | - | 533 | -5.9% | 635 | -6.3% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 509 | -10.0% | 601 | -11.3% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 471 | -16.9% | 553 | -18.4% | 1 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 466 | -17.7% | 557 | -17.8% | 0 s |
-| 8 | *Affliction* | community simulator | - | 464 | -18.0% | 545 | -19.5% | 1 s |
-| 9 | *Demonic Pact* | community simulator | - | 461 | -18.5% | 549 | -19.0% | 0 s |
+| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | -0.0% | 1 s |
+| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | +0.0% | 1 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 719 | -5.3% | 1 s |
+| 4 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 711 | -6.4% | 1 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 570 | -10.8% | 674 | -11.2% | 1 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 619 | -18.5% | 1 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -17.9% | 1 s |
+| 8 | *Affliction* | community simulator | - | 523 | -18.2% | 610 | -19.6% | 1 s |
+| 9 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 615 | -19.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -103,10 +103,10 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
 | 6 | if mana % < 10%: cast Life Tap | 7.0 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | cast Shadow Bolt | 13.6 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | cast Shadow Bolt | 13.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent).
 
@@ -114,9 +114,9 @@ Damage by ability:
 
 | Ability | [`ds-ruin-raid`](ds-ruin-raid.md) |
 |---|---|
-| Shadow Bolt | 50% |
-| Bane of Agony | 20% |
-| Corruption | 19% |
+| Shadow Bolt | 51% |
+| Bane of Agony | 19% |
+| Corruption | 18% |
 | Immolate | 11% |
 | Searing Pain | 1% |
 

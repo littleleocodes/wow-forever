@@ -64,7 +64,7 @@
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for mm-lonewolf-raid from opt-mm-lonewolf-raid-raid-dps in the dummy setting: 419.4 -> 421.7 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for mm-lonewolf-raid from opt-mm-lonewolf-raid-raid-dps in the dummy setting: 434.8 -> 436.3 DPS on a third seed.",
  "search": {
   "start": "opt-mm-lonewolf-raid-raid-dps",
   "setting": "dummy",
@@ -73,14 +73,14 @@
    {
     "round": 1,
     "move": "1 point Improved Arcane Shot -> Endurance Training",
-    "gain_seed1": 0.0050369468023310215,
-    "gain_seed2": 0.004922973106404438,
+    "gain_seed1": 0.004956228103600413,
+    "gain_seed2": 0.002945442512904073,
     "split": "6/37/8"
    }
   ],
-  "dps_start": 419.4033097750294,
-  "dps_end": 421.7224084200748,
-  "gain": 0.005529519178781417,
+  "dps_start": 434.7911653389044,
+  "dps_end": 436.2925694795948,
+  "gain": 0.0034531615644033398,
   "tank": false
  }
 }

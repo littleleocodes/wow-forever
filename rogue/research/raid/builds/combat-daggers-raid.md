@@ -75,16 +75,16 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -1.1% | 0 s |
-| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 403 | -4.5% | 720 | +0.0% | 0 s |
-| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | -1.1% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -2.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -6.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -10.0% | 0 s |
-| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -12.5% | 0 s |
-| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -13.8% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -12.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -30.5% | 0 s |
+| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -0.0% | 0 s |
+| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 416 | -1.4% | 696 | -2.3% | 0 s |
+| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | +0.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -1.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -5.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -9.0% | 0 s |
+| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -11.6% | 0 s |
+| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -12.9% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -11.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -29.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

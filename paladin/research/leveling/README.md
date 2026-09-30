@@ -11,8 +11,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Retribution (fight-lab winner adopted 2026-09-26)](builds/leveling-retribution.md) | 15/0/36 | DPS | [leveling-retribution](../talents/classic-baseline/leveling-retribution.md) |
-| [Holy — Leveling (derived)](builds/holy-leveling.md) | 30/0/21 | DPS | — |
-| [Protection — Leveling (derived)](builds/protection-leveling.md) | 0/31/20 | DPS | — |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) | 33/0/18 | DPS | — |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) | 0/23/28 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

@@ -6,9 +6,9 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Enhancement](enhancement.md) — Enhancement — Raid 🔬 | 403 | 754 | 391 | best |
-| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 387 | 495 | 371 | -4% |
-| 3 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 381 | 485 | 366 | -5% |
+| 1 | [Elemental](elemental.md) — Elemental (optimized) | 440 | 553 | 422 | best |
+| 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 438 | 556 | 423 | -0% |
+| 3 | [Enhancement](enhancement.md) — One slow weapon | 426 | 780 | 397 | -3% |
 
 **Healing**: [Restoration](restoration.md) — Restoration — Raid Healer.
 

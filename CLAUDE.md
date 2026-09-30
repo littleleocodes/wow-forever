@@ -372,7 +372,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
     numbers, seed-2 confirmation, 30+ points in the tree) and a level-weighted race (20-60, seed 3) against the hand draft. Healer and
     tank trees get their own leveling build (their own rotations: `holy-leveling`/`discipline-leveling` priest, `holy-leveling`/
     `prot-leveling` paladin, `prot-leveling` warrior; Restoration shaman and druid play the Enhancement and Cat rotations), and their
-    page compares it with the damage spec they could level as (`SM.LEVEL_AS`).
+    page compares it with the damage spec they could level as (`SM.LEVEL_AS`). Since 2026-09-30 (user decision: "the healer and tank
+    leveling order should really just be what the raid specs are") `raid_path_leveling.py` replaces those: the build is the spec's
+    raid pick (`raid_path`), the order the fastest of three the fight lab races (the stats model's order, own tree first, own tree
+    last; moving whole trees keeps every tier legal); the page shows all three times.
   - New fight-lab rotations (2026-09-30), each gated on its spec prefix so the old specs stay bit-identical: mage `arcane-leveling`
     (Arcane Blast stacks, Missile Barrage, Arcane Power), rogue `subtlety-leveling` (Premeditation, Ghostly Strike, Hemorrhage, opener
     choice), warlock `demonology-leveling`/`destruction-leveling`, priest `holy-leveling`/`discipline-leveling` (Penance, Holy Fire),
@@ -419,6 +422,15 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - Gear presets must be complete (weapon, rings, trinkets, neck, back): some of the simulator's presets list only the armor slots
   (shadow priest and Protection warrior `p1.bis`, feral cat `p0.bis` in 40be98e). `specs.json` names complete ones (`gear_note`
   says why) and `run.py`'s `best_gear` skips incomplete presets (`gear_complete`).
+- **Equal-tier raid gear** (2026-09-30, user request: the cross-spec ranking mixed gear levels): `raidsim/gear_opt.py` gives every
+  group of damage entries sharing a gear set the best set of one common pool (5-man dungeons, Molten Core, Onyxia, world, crafted,
+  quest; items with no listed source only when a community phase-1/launch/pre-raid preset uses them, which admits the Forever launch
+  items; no BWL, ZG, AQ, Naxxramas, world bosses or legendaries), chosen per slot by the simulator's own stat weights (bench
+  `statweights`; weapon DPS as pseudo-stats), trinkets raced, kept only when it beats the current set on a second seed. Sets:
+  `raidsim/gear_sets/forever/<class>-<spec folder>-<preset>.p1opt.gear.json`, record `raidsim/gear-opt.json`, `--apply` points
+  specs.json at them. Result: warrior DPS +71-76% (its "p1" presets held caster and tank pieces), paladin +51%, Shadow +31%, casters
+  +13-22% (launch items), others 0-5%. Tanks keep their sets; healers are not simulated. Raid talents were re-searched in the new gear
+  the same day (no hand draft lost by 2%). The pages enforce the 2% rule on derived builds (`render_modes.DERIVED_BAR`). The bench also takes `gear_json` per build.
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

@@ -2,11 +2,11 @@
 
 [Paladin](../README.md) > [Leveling](README.md) > Protection
 
-**[Protection — Leveling](../research/leveling/builds/protection-leveling.md)** (0/31/20) — [open the talent tree](https://talentsforever.com/paladin/60/-1530210321331501-05225031101-4)
+**[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (0/23/28) — [open the talent tree](https://talentsforever.com/paladin/60/-0530513101301-502253300110303-4)
 
-> 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([prot-tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree first: 31 s per kill; stats model's order: 33 s per kill; own tree last: 33 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Protection or as Retribution?** This build takes 33 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 17% slower. Its talent order takes damage talents first and puts its first point into Protection at level 30, so it only becomes a real Protection build in the 40s and 50s. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Retribution?** This build takes 31 s per kill (level-weighted, 20-60), [Retribution](../leveling/retribution.md) 28 s: Protection is 11% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Retribution and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -29,41 +29,39 @@ One point per level from 10, in this order:
 
 | Levels | Talent | Points |
 |---|---|---|
-| 10-14 | Benediction (Retribution) | 5 |
-| 15-16 | Holy Conduit (Retribution) | 2 |
-| 17-18 | Improved Judgement (Retribution) | 2 |
-| 19 | Conviction (Retribution) | 1 |
-| 20 | Seal of Command (Retribution) | 1 |
-| 21 | Sanctified Judgement (Retribution) | 1 |
-| 22 | Pursuit of Justice (Retribution) | 1 |
-| 23-24 | Sanctified Judgement (Retribution) | 2 |
-| 25 | Sacred Arbiter (Retribution) | 1 |
-| 26-29 | Conviction (Retribution) | 4 |
-| 30 | Toughness (Protection) | 1 |
-| 31-34 | Redoubt (Protection) | 4 |
-| 35-37 | Precision (Protection) | 3 |
-| 38-39 | Anticipation (Protection) | 2 |
-| 40-41 | Sacred Duty (Protection) | 2 |
-| 42 | Redoubt (Protection) | 1 |
-| 43 | Shield Specialization (Protection) | 1 |
-| 44 | Improved Seal of Fury (Protection) | 1 |
-| 45 | Swift Judgement (Protection) | 1 |
-| 46-48 | Improved Hammer of Justice (Protection) | 3 |
-| 49 | Shield Specialization (Protection) | 1 |
-| 50 | Templar's Bulwark (Protection) | 1 |
-| 51 | Shield Specialization (Protection) | 1 |
-| 52-54 | One-Handed Weapon Specialization (Protection) | 3 |
-| 55-59 | Reckoning (Protection) | 5 |
-| 60 | Holy Shield (Protection) | 1 |
+| 10-14 | Redoubt (Protection) | 5 |
+| 15-17 | Precision (Protection) | 3 |
+| 18-19 | Anticipation (Protection) | 2 |
+| 20 | Shield Specialization (Protection) | 1 |
+| 21-23 | Anticipation (Protection) | 3 |
+| 24 | Improved Seal of Fury (Protection) | 1 |
+| 25 | Swift Judgement (Protection) | 1 |
+| 26-28 | Improved Righteous Fury (Protection) | 3 |
+| 29 | One-Handed Weapon Specialization (Protection) | 1 |
+| 30 | Templar's Bulwark (Protection) | 1 |
+| 31-32 | One-Handed Weapon Specialization (Protection) | 2 |
+| 33-37 | Deflection (Retribution) | 5 |
+| 38-39 | Holy Conduit (Retribution) | 2 |
+| 40-41 | Improved Judgement (Retribution) | 2 |
+| 42 | Conviction (Retribution) | 1 |
+| 43-45 | Sanctified Judgement (Retribution) | 3 |
+| 46-47 | Conviction (Retribution) | 2 |
+| 48 | Sacred Arbiter (Retribution) | 1 |
+| 49-50 | Conviction (Retribution) | 2 |
+| 51-52 | Vindication (Retribution) | 2 |
+| 53-55 | Vengeance (Retribution) | 3 |
+| 56 | Vindication (Retribution) | 1 |
+| 57 | Eye for an Eye (Retribution) | 1 |
+| 58-60 | Champion of the Light (Retribution) | 3 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 25 |
-| 30 | 30 |
-| 40 | 39 |
-| 50 | 32 |
+| 20 | 24 |
+| 30 | 28 |
+| 40 | 34 |
+| 50 | 31 |
 | 60 | 33 |
 
 ---

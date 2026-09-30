@@ -82,8 +82,8 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 374 | +0.0% | 642 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 331 | -11.5% | 607 | -5.5% | 0 s |
+| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 380 | +0.0% | 652 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 335 | -11.9% | 616 | -5.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -116,10 +116,10 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 | 4 | if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.6 |
 | 5 | cast Premeditation | 0.6 |
 | 6 | cast Garrote | 0.6 |
-| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.9 |
+| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.8 |
 | 8 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 9 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 |
-| 10 | cast Hemorrhage | 19.7 |
+| 10 | cast Hemorrhage | 19.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights).
 
@@ -129,9 +129,9 @@ Damage by ability:
 |---|---|
 | Auto Attack | 40% |
 | Hemorrhage | 26% |
-| Rupture | 17% |
+| Rupture | 16% |
 | Deadly Poison | 5% |
-| Dense Sharpening Stone | 4% |
+| Dense Sharpening Stone | 5% |
 | Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
 | Goblin Sapper Charge | 2% |

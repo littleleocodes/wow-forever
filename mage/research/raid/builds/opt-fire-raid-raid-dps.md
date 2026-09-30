@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +215.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Core talents (priority order)
 
-1. **Improved Scorch** — Removing it costs 106.2 points of score in this model.
-2. **Fire Power** — Removing it costs 28.2 points of score in this model.
-3. **Ignite** — Removing it costs 27.3 points of score in this model.
-4. **Hot Streak** — Removing it costs 20.3 points of score in this model.
-5. **Improved Fireball** — Removing it costs 19.6 points of score in this model.
-6. **Combustion** — Removing it costs 18.5 points of score in this model.
-7. **Critical Mass** — Removing it costs 18.3 points of score in this model.
-8. **Arcane Concentration** — Removing it costs 17.5 points of score in this model.
+1. **Improved Scorch** — Removing it costs 107.8 points of score in this model.
+2. **Ignite** — Removing it costs 28.8 points of score in this model.
+3. **Fire Power** — Removing it costs 28.6 points of score in this model.
+4. **Hot Streak** — Removing it costs 20.6 points of score in this model.
+5. **Improved Fireball** — Removing it costs 19.8 points of score in this model.
+6. **Combustion** — Removing it costs 18.8 points of score in this model.
+7. **Critical Mass** — Removing it costs 18.6 points of score in this model.
+8. **Arcane Concentration** — Removing it costs 18.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,14 +63,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
-| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 510 | +0.0% | 636 | +0.0% | 1 s |
-| 3 | *Fire DPS* | community simulator | - | 492 | -3.6% | 607 | -4.5% | 0 s |
-| 4 | *Fire 0/35/16* | community simulator | - | 483 | -5.4% | 609 | -4.3% | 3 s |
-| 5 | *Arcane DPS* | community simulator | - | 378 | -26.0% | 462 | -27.3% | 0 s |
-| 6 | *Arcane 35/0/16* | community simulator | - | 273 | -46.5% | 338 | -46.8% | 1 s |
-| 7 | *Frost DPS* | community simulator | - | 258 | -49.5% | 322 | -49.3% | 0 s |
-| 8 | *Frost 14/0/37* | community simulator | - | 250 | -51.0% | 324 | -49.1% | 2 s |
+| 1 | [`fire-raid`](fire-raid.md) | ours: hand draft | 12/34/5 | 593 | +0.0% | 743 | +0.0% | 2 s |
+| 2 | **[`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md)** | ours: optimizer | 14/32/5 | 593 | +0.0% | 743 | +0.0% | 2 s |
+| 3 | *Fire DPS* | community simulator | - | 576 | -3.0% | 711 | -4.3% | 0 s |
+| 4 | *Fire 0/35/16* | community simulator | - | 559 | -5.9% | 709 | -4.6% | 5 s |
+| 5 | *Arcane DPS* | community simulator | - | 442 | -25.6% | 539 | -27.5% | 0 s |
+| 6 | *Arcane 35/0/16* | community simulator | - | 318 | -46.4% | 394 | -47.0% | 3 s |
+| 7 | *Frost DPS* | community simulator | - | 299 | -49.6% | 376 | -49.4% | 1 s |
+| 8 | *Frost 14/0/37* | community simulator | - | 295 | -50.4% | 379 | -49.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -91,26 +91,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 4.1 |
+| 1 | if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch | 3.8 |
 | 2 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.4 |
-| 6 | cast Fire Blast | 7.4 |
-| 7 | if mana % ≥ 10%: cast Fireball | 10.5 |
-| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.3 |
-| 9 | cast Scorch | 3.3 |
+| 5 | if stacks of Hot Streak = 3: cast Pyroblast | 1.6 |
+| 6 | cast Fire Blast | 7.3 |
+| 7 | if mana % ≥ 10%: cast Fireball | 10.1 |
+| 8 | if Missile Barrage is up: cast Arcane Missiles | 0.4 |
+| 9 | cast Scorch | 4.1 |
 
 Damage by ability:
 
 | Ability | [`opt-fire-raid-raid-dps`](opt-fire-raid-raid-dps.md) |
 |---|---|
-| Fireball | 46% |
-| Fire Blast | 21% |
-| Ignite | 11% |
-| Scorch | 10% |
-| Pyroblast | 10% |
-| Arcane Missiles | 1% |
+| Fireball | 45% |
+| Fire Blast | 20% |
+| Ignite | 12% |
+| Scorch | 11% |
+| Pyroblast | 11% |
+| Arcane Missiles | 2% |
 
 ## Notes
 

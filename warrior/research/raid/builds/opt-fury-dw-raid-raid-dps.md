@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +87.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +94.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 ## Core talents (priority order)
 
-1. **Dual Wield Specialization** — Removing it costs 24.9 points of score in this model.
-2. **Flurry** — Removing it costs 18.7 points of score in this model.
-3. **Cruelty** — Removing it costs 12.1 points of score in this model.
-4. **Improved Execute** — Removing it costs 11.6 points of score in this model.
-5. **Death Wish** — Removing it costs 9.5 points of score in this model.
-6. **Unbridled Wrath** — Removing it costs 7.5 points of score in this model.
-7. **Raging Blows** — Removing it costs 6.5 points of score in this model.
-8. **Precision** — Removing it costs 6.3 points of score in this model.
+1. **Dual Wield Specialization** — Removing it costs 28.5 points of score in this model.
+2. **Flurry** — Removing it costs 27.6 points of score in this model.
+3. **Improved Execute** — Removing it costs 10.8 points of score in this model.
+4. **Cruelty** — Removing it costs 8.9 points of score in this model.
+5. **Death Wish** — Removing it costs 7.6 points of score in this model.
+6. **Raging Blows** — Removing it costs 7.4 points of score in this model.
+7. **Bloodthirst** — Removing it costs 7.4 points of score in this model.
+8. **Precision** — Removing it costs 6.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,11 +63,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 221 | +0.0% | 401 | -0.1% | 0 s |
-| 2 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 13/38/0 | 221 | +0.0% | 402 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 212 | -4.4% | 391 | -2.6% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 197 | -10.9% | 364 | -9.4% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 136 | -38.6% | 264 | -34.3% | 0 s |
+| 1 | [`fury-dw-raid`](fury-dw-raid.md) | ours: hand draft | 13/38/0 | 380 | +0.0% | 681 | -0.5% | 0 s |
+| 2 | **[`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md)** | ours: optimizer | 13/38/0 | 380 | +0.0% | 685 | +0.0% | 0 s |
+| 3 | *DPS* | community simulator | - | 362 | -4.5% | 661 | -3.4% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 338 | -11.0% | 615 | -10.1% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 234 | -38.2% | 444 | -35.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,10 +97,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 | # | Priority (the first line whose condition holds is cast) | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 5.8 |
-| 3 | cast Bloodthirst | 4.6 |
+| 2 | if execute phase (E20): cast Execute | 6.5 |
+| 3 | cast Bloodthirst | 5.7 |
 | 4 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
-| 5 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 |
+| 5 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.1 |
 | 6 | cast Goblin Sapper Charge | as ready |
 | 7 | cast Dense Dynamite | as ready |
 | 8 | if false: cast Recklessness | 0.3 |
@@ -109,11 +109,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 12 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 13 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 14 | cast Whirlwind | 3.3 |
-| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 3.3 |
-| 16 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 0.3 |
+| 14 | cast Whirlwind | 3.5 |
+| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 3.5 |
+| 16 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 0.6 |
 | 17 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -121,13 +121,13 @@ Damage by ability:
 
 | Ability | [`opt-fury-dw-raid-raid-dps`](opt-fury-dw-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 46% |
-| Execute | 33% |
-| Bloodthirst | 10% |
-| Whirlwind | 7% |
+| Auto Attack | 54% |
+| Execute | 23% |
+| Bloodthirst | 12% |
+| Whirlwind | 8% |
 | Deep Wound | 2% |
-| Dragonbreath Chili | 1% |
 | Heroic Strike | 1% |
+| Dragonbreath Chili | 1% |
 | Hamstring | 0% |
 
 ## Notes

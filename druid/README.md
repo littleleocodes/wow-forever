@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance — Moonkin / Eclipse](raid/balance.md)<br>438 DPS | [Balance — PvP](pvp/balance.md) 🔬 |
-| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>350 DPS | [Feral Combat — PvP](pvp/feral-combat.md) 🔬 |
-| **Restoration** | [Restoration — Leveling](leveling/restoration.md) 🔬<br>28 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬 |
+| **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance — Moonkin / Eclipse](raid/balance.md)<br>534 DPS | [Balance — PvP](pvp/balance.md) 🔬 |
+| **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>366 DPS | [Feral Combat — PvP](pvp/feral-combat.md) 🔬 |
+| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>33 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -27,7 +27,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Feral Combat](leveling/feral-combat.md) — Leveling — Feral cat | 25 | fastest |
-| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling 🔬 | 28 | +10% |
+| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 33 | +28% |
 | 3 | [Balance](leveling/balance.md) — Balance (optimized) | 53 | +110% |
 
 ### Raid (training dummy and parse)
@@ -36,8 +36,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 438 | 511 | 342 | best |
-| 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 350 | 556 | 348 | -20% |
+| 1 | [Balance](raid/balance.md) — Balance — Moonkin / Eclipse | 534 | 612 | 419 | best |
+| 2 | [Feral Combat](raid/feral-combat.md) — Feral Combat (optimized) | 366 | 574 | 364 | -32% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.
 

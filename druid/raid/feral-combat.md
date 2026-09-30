@@ -30,12 +30,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 350 |
-| Parse (a full raid: every raid buff and debuff) | 556 |
+| Training dummy, 3-minute fight (only your own buffs) | 366 |
+| Parse (a full raid: every raid buff and debuff) | 574 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 350 → mana +0% → armor +28% → physical +24% → spell +0% → everything else +7% → raid 556
+Dummy 366 → mana +0% → armor +28% → physical +23% → spell +0% → everything else +6% → raid 574
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -43,7 +43,7 @@ Dummy 350 → mana +0% → armor +28% → physical +24% → spell +0% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 374 | 356 | 350 | 351 | 348 |
+| 387 | 371 | 366 | 366 | 364 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
@@ -51,7 +51,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 ## Other builds of this spec
 
-- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 349 DPS on the dummy) — [open the talent tree](https://talentsforever.com/druid/60/050022-2500032123032213021-055-4)
+- [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 364 DPS on the dummy) — [open the talent tree](https://talentsforever.com/druid/60/050022-2500032123032213021-055-4)
 - [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-502003212303220055-054-4)
 - [Feral Combat (optimized)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-502003212303220055-504-4)
 

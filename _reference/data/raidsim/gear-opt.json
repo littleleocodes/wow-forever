@@ -1,0 +1,2055 @@
+{
+ "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json": {
+  "gear": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+  "members": [
+   "hunter/melee-dps"
+  ],
+  "evaluated_on": [
+   "melee-dps: survival-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.4163,
+   "PseudoStatOffHandDps": 0.5316,
+   "StatAgility": 0.214,
+   "StatArmorPenetration": 0.0323,
+   "StatAttackPower": 0.1374,
+   "StatFireDamage": 0.0538,
+   "StatIntellect": 0.1388,
+   "StatMeleeCritRating": 0.2472,
+   "StatMeleeHasteRating": 0.1982,
+   "StatMeleeHitRating": 0.2667,
+   "StatSpellCritRating": 0.0061,
+   "StatSpellDamage": 0.0538,
+   "StatSpellHitRating": 0.0736,
+   "StatStrength": 0.1374
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Hand of Justice"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 0.8808207721983948,
+   "keep-sets-and-effects": 1.0147540400745183
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "keep-sets-and-effects": 1.015055013720092
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.015055013720091992,
+  "ilvl_before": 67.8,
+  "ilvl_after": 67.6,
+  "items": [
+   {
+    "id": 16846,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 16848
+   },
+   {
+    "id": 272414,
+    "enchant": 849
+   },
+   {
+    "id": 16845,
+    "enchant": 1891
+   },
+   {
+    "id": 16850,
+    "enchant": 247
+   },
+   {
+    "id": 16852,
+    "enchant": 1887
+   },
+   {
+    "id": 16851
+   },
+   {
+    "id": 16847,
+    "enchant": 1508
+   },
+   {
+    "id": 16849,
+    "enchant": 1887
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 11815
+   },
+   {
+    "id": 17068,
+    "enchant": 1900
+   },
+   {
+    "id": 18832,
+    "enchant": 1900
+   },
+   {
+    "id": 17069,
+    "enchant": 2523
+   }
+  ],
+  "changed": [
+   {
+    "slot": 3,
+    "from": "Cloak of the Shrouded Mists",
+    "to": "Howler's Furs"
+   },
+   {
+    "slot": 11,
+    "from": "Quick Strike Ring",
+    "to": "Band of Accuria"
+   },
+   {
+    "slot": 16,
+    "from": "Rhok'delar, Longbow of the Ancient Keepers",
+    "to": "Striker's Mark"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/druid/balance/gear_sets/p1.bis.gear.json": {
+  "gear": "ui/specs/druid/balance/gear_sets/p1.bis.gear.json",
+  "members": [
+   "druid/balance-dps"
+  ],
+  "evaluated_on": [
+   "balance-dps: balance-moonkin-raid"
+  ],
+  "weights": {
+   "StatArcaneDamage": 0.3957,
+   "StatIntellect": 0.1899,
+   "StatNatureDamage": 0.1075,
+   "StatSpellCritRating": 0.3275,
+   "StatSpellDamage": 0.5032,
+   "StatSpellHasteRating": 0.4135,
+   "StatSpellHitRating": 0.5705,
+   "StatSpirit": 0.1133
+  },
+  "trinkets": [
+   "Briarwood Reed",
+   "Talisman of Ephemeral Power"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.218029949137864,
+   "keep-sets-and-effects": 1.218029949137864
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.2174648115764388
+  },
+  "chosen": "all-slots",
+  "gain": 0.21746481157643882,
+  "ilvl_before": 66.2,
+  "ilvl_after": 65.3,
+  "items": [
+   {
+    "id": 22267
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 20697
+   },
+   {
+    "id": 19145
+   },
+   {
+    "id": 21186
+   },
+   {
+    "id": 21178
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 252486
+   },
+   {
+    "id": 22064
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 18820
+   },
+   {
+    "id": 18842
+   },
+   {},
+   {}
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Crimson Felt Hat",
+    "to": "Spellweaver's Turban"
+   },
+   {
+    "slot": 2,
+    "from": "Burial Shawl",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Sapphiron Drape",
+    "to": "Crystalline Threaded Cape"
+   },
+   {
+    "slot": 5,
+    "from": "Master's Bracers",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Hands of Power",
+    "to": "Gloves of Earthen Power"
+   },
+   {
+    "slot": 8,
+    "from": "Flarecore Leggings",
+    "to": "Ironfeather Leggings"
+   },
+   {
+    "slot": 9,
+    "from": "Master's Boots",
+    "to": "Sorcerer's Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Ring of Spell Power",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 12,
+    "from": "Eye of the Beast",
+    "to": "Briarwood Reed"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/druid/feralcat/gear_sets/launch.gear.json": {
+  "gear": "ui/specs/druid/feralcat/gear_sets/launch.gear.json",
+  "members": [
+   "druid/feral-cat-dps"
+  ],
+  "evaluated_on": [
+   "feral-cat-dps: opt-feral-cat-dps-raid-dps"
+  ],
+  "weights": {
+   "StatAgility": 0.2749,
+   "StatArmorPenetration": 0.0255,
+   "StatAttackPower": 0.1228,
+   "StatFeralAttackPower": 0.1228,
+   "StatFireDamage": 0.0403,
+   "StatIntellect": 0.0007,
+   "StatMeleeCritRating": 0.2202,
+   "StatMeleeHasteRating": 0.095,
+   "StatMeleeHitRating": 0.1667,
+   "StatSpellCritRating": 0.0019,
+   "StatSpellDamage": 0.0403,
+   "StatSpellHitRating": 0.0087,
+   "StatStrength": 0.2701
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Eye of the Beast"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.0440755872317415,
+   "keep-sets-and-effects": 1.0440755872317415
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.0422593119595884
+  },
+  "chosen": "all-slots",
+  "gain": 0.04225931195958843,
+  "ilvl_before": 61.6,
+  "ilvl_after": 64.1,
+  "items": [
+   {
+    "id": 22005
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 13340
+   },
+   {
+    "id": 252484
+   },
+   {
+    "id": 19587
+   },
+   {
+    "id": 271948
+   },
+   {
+    "id": 227805
+   },
+   {
+    "id": 15065
+   },
+   {
+    "id": 227181
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 13968
+   },
+   {
+    "id": 22397
+   },
+   {
+    "id": 272596
+   },
+   {}
+  ],
+  "changed": [
+   {
+    "slot": 3,
+    "from": "Earthweave Cloak",
+    "to": "Cape of the Black Baron"
+   },
+   {
+    "slot": 10,
+    "from": "Stalwart Watcher's Signet",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 11,
+    "from": "Signet Ring of the Bronze Dragonflight",
+    "to": "Band of Accuria"
+   },
+   {
+    "slot": 12,
+    "from": "Adaptive Combat Assistant",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 13,
+    "from": "Blackhand's Breadth",
+    "to": "Eye of the Beast"
+   },
+   {
+    "slot": 15,
+    "from": "Servomechanic Sledgehammer",
+    "to": "Premier High Warlord's Razor"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json": {
+  "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "members": [
+   "hunter/mm-raid",
+   "hunter/mm-lonewolf-raid",
+   "hunter/bm-raid"
+  ],
+  "evaluated_on": [
+   "mm-raid: bm-mm-raid",
+   "mm-lonewolf-raid: opt-mm-lonewolf-raid-raid-dps",
+   "bm-raid: mm-hawk-raid"
+  ],
+  "weights": {
+   "PseudoStatRangedDps": 1.2239,
+   "StatAgility": 0.3129,
+   "StatArcaneDamage": 0.0763,
+   "StatArmorPenetration": 0.0241,
+   "StatIntellect": 0.3219,
+   "StatMeleeCritRating": 0.2854,
+   "StatMeleeHasteRating": 0.2797,
+   "StatMeleeHitRating": 0.3682,
+   "StatNatureDamage": 0.0578,
+   "StatRangedAttackPower": 0.1166,
+   "StatSpellDamage": 0.1341,
+   "StatSpirit": 0.1369
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Royal Seal of Eldre'Thalas"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.023045147842434,
+   "keep-sets-and-effects": 1.022837767229048
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.0235179528327787
+  },
+  "chosen": "all-slots",
+  "gain": 0.023517952832778688,
+  "ilvl_before": 66.7,
+  "ilvl_after": 66.6,
+  "items": [
+   {
+    "id": 252605,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 16848
+   },
+   {
+    "id": 21187,
+    "enchant": 849
+   },
+   {
+    "id": 252483,
+    "enchant": 1891
+   },
+   {
+    "id": 18812,
+    "enchant": 247
+   },
+   {
+    "id": 16852,
+    "enchant": 1887
+   },
+   {
+    "id": 228190
+   },
+   {
+    "id": 16938,
+    "enchant": 1508
+   },
+   {
+    "id": 19684,
+    "enchant": 1887
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 18473
+   },
+   {
+    "id": 18520,
+    "enchant": 1896
+   },
+   {},
+   {
+    "id": 18713,
+    "enchant": 2523
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Giantstalker's Helmet",
+    "to": "Black Dragonscale Helm"
+   },
+   {
+    "slot": 3,
+    "from": "Cloak of the Shrouded Mists",
+    "to": "Earthweave Cloak"
+   },
+   {
+    "slot": 4,
+    "from": "Giantstalker's Breastplate",
+    "to": "Dawn Armor"
+   },
+   {
+    "slot": 5,
+    "from": "Giantstalker's Bracers",
+    "to": "Wristguards of True Flight"
+   },
+   {
+    "slot": 7,
+    "from": "Giantstalker's Belt",
+    "to": "Knowledge of the Timbermaw"
+   },
+   {
+    "slot": 8,
+    "from": "Giantstalker's Leggings",
+    "to": "Dragonstalker's Legguards"
+   },
+   {
+    "slot": 9,
+    "from": "Giantstalker's Boots",
+    "to": "Bloodvine Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Band of Accuria",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 11,
+    "from": "Quick Strike Ring",
+    "to": "Band of Accuria"
+   },
+   {
+    "slot": 13,
+    "from": "Hand of Justice",
+    "to": "Royal Seal of Eldre'Thalas"
+   },
+   {
+    "slot": 14,
+    "from": "Peacemaker",
+    "to": "Barbarous Blade"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/mage/dps/gear_sets/p1.bis.gear.json": {
+  "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "members": [
+   "mage/frost-raid",
+   "mage/fire-raid",
+   "mage/arcane-dps",
+   "mage/frostfire-raid"
+  ],
+  "evaluated_on": [
+   "frost-raid: frost-fingers-of-frost-raid",
+   "fire-raid: fire-raid",
+   "arcane-dps: arcane-blast-raid",
+   "frostfire-raid: frostfire-raid"
+  ],
+  "weights": {
+   "StatArcaneDamage": 0.0828,
+   "StatFrostDamage": 0.356,
+   "StatIntellect": 0.1138,
+   "StatSpellCritRating": 0.3109,
+   "StatSpellDamage": 0.4388,
+   "StatSpellHasteRating": 0.5207,
+   "StatSpellHitRating": 0.761,
+   "StatSpirit": 0.0638
+  },
+  "trinkets": [
+   "Talisman of Ephemeral Power",
+   "Briarwood Reed"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.1464076338601537,
+   "keep-sets-and-effects": 1.1256606771483
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.147137691357119
+  },
+  "chosen": "all-slots",
+  "gain": 0.14713769135711896,
+  "ilvl_before": 65.3,
+  "ilvl_after": 65.6,
+  "items": [
+   {
+    "id": 22267,
+    "enchant": 1509
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 20697
+   },
+   {
+    "id": 19145,
+    "enchant": 1891
+   },
+   {
+    "id": 21186,
+    "enchant": 1883
+   },
+   {
+    "id": 13253
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 16915,
+    "enchant": 1509
+   },
+   {
+    "id": 22064,
+    "enchant": 911
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 22339
+   },
+   {
+    "id": 18820
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 17103,
+    "enchant": 2504
+   },
+   {
+    "id": 22329
+   },
+   {
+    "id": 13938
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Arcanist Crown",
+    "to": "Spellweaver's Turban"
+   },
+   {
+    "slot": 2,
+    "from": "Boreal Mantle",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Archivist Cape",
+    "to": "Crystalline Threaded Cape"
+   },
+   {
+    "slot": 4,
+    "from": "Robe of the Archmage",
+    "to": "Robe of Volatile Power"
+   },
+   {
+    "slot": 5,
+    "from": "Arcanist Bindings",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 9,
+    "from": "Arcanist Boots",
+    "to": "Sorcerer's Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Ring of Spell Power",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 11,
+    "from": "Ring of Spell Power",
+    "to": "Rune Band of Wizardry"
+   },
+   {
+    "slot": 15,
+    "from": "Drakestone",
+    "to": "Scepter of Interminable Focus"
+   },
+   {
+    "slot": 16,
+    "from": "Lunar Wand",
+    "to": "Bonecreeper Stylus"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/paladin/retribution/gear_sets/default.gear.json": {
+  "gear": "ui/specs/paladin/retribution/gear_sets/default.gear.json",
+  "members": [
+   "paladin/ret-dps",
+   "paladin/seal-of-fury-raid",
+   "paladin/shockadin-raid"
+  ],
+  "evaluated_on": [
+   "ret-dps: opt-ret-dps-raid-dps",
+   "seal-of-fury-raid: ret-raid-dps"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 0.8808,
+   "StatAgility": 0.2422,
+   "StatArmorPenetration": 0.0077,
+   "StatAttackPower": 0.0665,
+   "StatFireDamage": 0.0199,
+   "StatHolyDamage": 0.3122,
+   "StatIntellect": 0.294,
+   "StatMeleeCritRating": 0.3416,
+   "StatMeleeHasteRating": 0.1304,
+   "StatMeleeHitRating": 0.4481,
+   "StatSpellCritRating": 0.0391,
+   "StatSpellDamage": 0.332,
+   "StatSpellHasteRating": 0.1365,
+   "StatSpellHitRating": 0.1257,
+   "StatSpirit": -0.0088,
+   "StatStrength": 0.1463
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Serenity Field"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.5165919846642333,
+   "keep-sets-and-effects": 1.3506570054902227
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.5137670448210967
+  },
+  "chosen": "all-slots",
+  "gain": 0.5137670448210967,
+  "ilvl_before": 61.1,
+  "ilvl_after": 66.9,
+  "items": [
+   {
+    "id": 250599
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 17078
+   },
+   {
+    "id": 19682
+   },
+   {
+    "id": 21186
+   },
+   {
+    "id": 21178
+   },
+   {
+    "id": 228190
+   },
+   {
+    "id": 252486
+   },
+   {
+    "id": 19684
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 272439
+   },
+   {
+    "id": 17076
+   },
+   {},
+   {
+    "id": 272435
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Lightforge Helm",
+    "to": "Stalwart Helm"
+   },
+   {
+    "slot": 1,
+    "from": "Beads of Ogre Might",
+    "to": "Choker of the Fire Lord"
+   },
+   {
+    "slot": 2,
+    "from": "Lightforge Spaulders",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Howler's Furs",
+    "to": "Sapphiron Drape"
+   },
+   {
+    "slot": 4,
+    "from": "Lightforge Breastplate",
+    "to": "Bloodvine Vest"
+   },
+   {
+    "slot": 5,
+    "from": "Lightforge Bracers",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Gloves of the Dawn",
+    "to": "Gloves of Earthen Power"
+   },
+   {
+    "slot": 7,
+    "from": "Girdle of the Dawn",
+    "to": "Knowledge of the Timbermaw"
+   },
+   {
+    "slot": 8,
+    "from": "Lightforge Legplates",
+    "to": "Ironfeather Leggings"
+   },
+   {
+    "slot": 9,
+    "from": "Lightforge Boots",
+    "to": "Bloodvine Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Band of Earthen Might",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 11,
+    "from": "Band of the Cultist",
+    "to": "Band of Accuria"
+   },
+   {
+    "slot": 12,
+    "from": "Frozen Heart of the Mountain",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 13,
+    "from": "Smoking Heart of the Mountain",
+    "to": "Serenity Field"
+   },
+   {
+    "slot": 14,
+    "from": "Arcanite Reaper",
+    "to": "Bonereaver's Edge"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/priest/dps/gear_sets/p0.bis.gear.json": {
+  "gear": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+  "members": [
+   "priest/shadow-dps",
+   "priest/smite-dps"
+  ],
+  "evaluated_on": [
+   "shadow-dps: opt-shadow-dps-raid-dps",
+   "smite-dps: smite-discipline-raid"
+  ],
+  "weights": {
+   "StatIntellect": 0.1044,
+   "StatShadowDamage": 0.3814,
+   "StatSpellCritRating": 0.3715,
+   "StatSpellDamage": 0.3814,
+   "StatSpellHasteRating": 0.1898,
+   "StatSpellHitRating": 0.4541
+  },
+  "trinkets": [
+   "Briarwood Reed",
+   "Weakness Analyzer"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.3118897399736331,
+   "keep-sets-and-effects": 1.3118897399736331
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.312145664117911
+  },
+  "chosen": "all-slots",
+  "gain": 0.312145664117911,
+  "ilvl_before": 60.0,
+  "ilvl_after": 63.1,
+  "items": [
+   {
+    "id": 22267,
+    "enchant": 1509
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 20697
+   },
+   {
+    "id": 19145,
+    "enchant": 1891
+   },
+   {
+    "id": 21186,
+    "enchant": 1883
+   },
+   {
+    "id": 18407
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 19165,
+    "enchant": 1509
+   },
+   {
+    "id": 18735,
+    "enchant": 851
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 272438
+   },
+   {
+    "id": 2816,
+    "enchant": 2504
+   },
+   {
+    "id": 22329
+   },
+   {
+    "id": 13396
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Green Lens",
+    "to": "Spellweaver's Turban"
+   },
+   {
+    "slot": 1,
+    "from": "Dark Advisor's Pendant",
+    "to": "Choker of the Fire Lord"
+   },
+   {
+    "slot": 2,
+    "from": "Felcloth Shoulders",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Archivist Cape",
+    "to": "Crystalline Threaded Cape"
+   },
+   {
+    "slot": 4,
+    "from": "Robe of Winter Night",
+    "to": "Robe of Volatile Power"
+   },
+   {
+    "slot": 5,
+    "from": "Master's Bracers",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 7,
+    "from": "Ban'thok Sash",
+    "to": "Mana Igniting Cord"
+   },
+   {
+    "slot": 8,
+    "from": "Skyshroud Leggings",
+    "to": "Flarecore Leggings"
+   },
+   {
+    "slot": 10,
+    "from": "Maiden's Circle",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 11,
+    "from": "Maiden's Circle",
+    "to": "Ring of Spell Power"
+   },
+   {
+    "slot": 12,
+    "from": "Eye of the Beast",
+    "to": "Briarwood Reed"
+   },
+   {
+    "slot": 13,
+    "from": "Briarwood Reed",
+    "to": "Weakness Analyzer"
+   },
+   {
+    "slot": 14,
+    "from": "Scepter of the Unholy",
+    "to": "Death Speaker Scepter"
+   },
+   {
+    "slot": 15,
+    "from": "Master's Rod",
+    "to": "Scepter of Interminable Focus"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json": {
+  "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+  "members": [
+   "rogue/combat-daggers-raid",
+   "rogue/assassination-raid"
+  ],
+  "evaluated_on": [
+   "combat-daggers-raid: combat-raid",
+   "assassination-raid: assassination-seal-fate-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.6838,
+   "PseudoStatOffHandDps": 0.5711,
+   "StatAgility": 0.2694,
+   "StatArmorPenetration": 0.05,
+   "StatAttackPower": 0.1613,
+   "StatFireDamage": 0.0376,
+   "StatMeleeCritRating": 0.2225,
+   "StatMeleeHasteRating": 0.2247,
+   "StatMeleeHitRating": 0.2748,
+   "StatSpellCritRating": 0.0157,
+   "StatSpellDamage": 0.0376,
+   "StatSpellHitRating": 0.0496,
+   "StatStrength": 0.1613
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Royal Seal of Eldre'Thalas"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.0021022082792586,
+   "keep-sets-and-effects": 0.9748593278532127
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.003782629550777
+  },
+  "chosen": "current",
+  "gain": 0.0,
+  "ilvl_before": 64.7,
+  "ilvl_after": 64.7,
+  "items": [
+   {
+    "id": 16908,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 16708
+   },
+   {
+    "id": 13340,
+    "enchant": 849
+   },
+   {
+    "id": 16721,
+    "enchant": 1891
+   },
+   {
+    "id": 16710,
+    "enchant": 1885
+   },
+   {
+    "id": 18823,
+    "enchant": 1887
+   },
+   {
+    "id": 16713
+   },
+   {
+    "id": 16709,
+    "enchant": 1508
+   },
+   {
+    "id": 16711,
+    "enchant": 1887
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 17713
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 11815
+   },
+   {
+    "id": 18816,
+    "enchant": 1900
+   },
+   {
+    "id": 18805,
+    "enchant": 1900
+   },
+   {
+    "id": 17069
+   }
+  ],
+  "changed": [],
+  "date": "2026-09-30"
+ },
+ "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json": {
+  "gear": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+  "members": [
+   "rogue/combat-swords-raid",
+   "rogue/subtlety-raid"
+  ],
+  "evaluated_on": [
+   "combat-swords-raid: combat-swords-raid",
+   "subtlety-raid: subtlety-hemo-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.5752,
+   "PseudoStatOffHandDps": 0.5813,
+   "StatAgility": 0.2595,
+   "StatArmorPenetration": 0.0451,
+   "StatAttackPower": 0.1549,
+   "StatFireDamage": 0.0389,
+   "StatMeleeCritRating": 0.2202,
+   "StatMeleeHasteRating": 0.2209,
+   "StatMeleeHitRating": 0.2715,
+   "StatSpellCritRating": 0.015,
+   "StatSpellDamage": 0.0389,
+   "StatSpellHitRating": 0.048,
+   "StatStrength": 0.1549
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Royal Seal of Eldre'Thalas"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 0.9940198270922527,
+   "keep-sets-and-effects": 1.0148937822232595
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "keep-sets-and-effects": 1.014287830486468
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.014287830486467978,
+  "ilvl_before": 67.2,
+  "ilvl_after": 68.3,
+  "items": [
+   {
+    "id": 16908,
+    "enchant": 1508
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 16823
+   },
+   {
+    "id": 272414,
+    "enchant": 849
+   },
+   {
+    "id": 16820,
+    "enchant": 1891
+   },
+   {
+    "id": 16825,
+    "enchant": 1885
+   },
+   {
+    "id": 16826,
+    "enchant": 1887
+   },
+   {
+    "id": 16827
+   },
+   {
+    "id": 16909,
+    "enchant": 1508
+   },
+   {
+    "id": 16824,
+    "enchant": 1887
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 18465
+   },
+   {
+    "id": 17075,
+    "enchant": 1900
+   },
+   {
+    "id": 18832,
+    "enchant": 1900
+   },
+   {
+    "id": 17069
+   }
+  ],
+  "changed": [
+   {
+    "slot": 3,
+    "from": "Cape of the Black Baron",
+    "to": "Howler's Furs"
+   },
+   {
+    "slot": 11,
+    "from": "Blackstone Ring",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 13,
+    "from": "Hand of Justice",
+    "to": "Royal Seal of Eldre'Thalas"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json": {
+  "gear": "ui/specs/shaman/elemental/gear_sets/phase_1.gear.json",
+  "members": [
+   "shaman/elemental-dps",
+   "shaman/stormcaller-dps"
+  ],
+  "evaluated_on": [
+   "elemental-dps: elemental-raid-dps"
+  ],
+  "weights": {
+   "StatFireDamage": 0.0628,
+   "StatIntellect": 0.1926,
+   "StatNatureDamage": 0.3215,
+   "StatSpellCritRating": 0.2423,
+   "StatSpellDamage": 0.3844,
+   "StatSpellHasteRating": 0.3876,
+   "StatSpellHitRating": 0.5715,
+   "StatSpirit": -0.0004
+  },
+  "trinkets": [
+   "Talisman of Ephemeral Power",
+   "Briarwood Reed"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.13094856405893,
+   "keep-sets-and-effects": 1.1220136912929364
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.1328367073239494
+  },
+  "chosen": "all-slots",
+  "gain": 0.13283670732394937,
+  "ilvl_before": 66.3,
+  "ilvl_after": 64.7,
+  "items": [
+   {
+    "id": 22267,
+    "enchant": 1509
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 18829
+   },
+   {
+    "id": 17078,
+    "enchant": 256
+   },
+   {
+    "id": 19145,
+    "enchant": 1891
+   },
+   {
+    "id": 21186,
+    "enchant": 1883
+   },
+   {
+    "id": 17721
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 252486,
+    "enchant": 1509
+   },
+   {
+    "id": 22064,
+    "enchant": 911
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 18820
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 18842,
+    "enchant": 2504
+   },
+   {},
+   {}
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Triumphant Skullcap",
+    "to": "Spellweaver's Turban"
+   },
+   {
+    "slot": 3,
+    "from": "Masterwork Cape",
+    "to": "Sapphiron Drape"
+   },
+   {
+    "slot": 5,
+    "from": "Pyremail Wristguards",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Hands of Power",
+    "to": "Gloves of the Greatfather"
+   },
+   {
+    "slot": 8,
+    "from": "Legplates of Ten Storms",
+    "to": "Ironfeather Leggings"
+   },
+   {
+    "slot": 9,
+    "from": "Masterwork Boots",
+    "to": "Sorcerer's Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Ring of Spell Power",
+    "to": "Leafre's Ring of Precise Spell Power"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json": {
+  "gear": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
+  "members": [
+   "shaman/enhancement-dps"
+  ],
+  "evaluated_on": [
+   "enhancement-dps: enhancement-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.3285,
+   "StatAgility": 0.1401,
+   "StatArmorPenetration": 0.0236,
+   "StatAttackPower": 0.0967,
+   "StatFireDamage": 0.0706,
+   "StatIntellect": 0.1758,
+   "StatMeleeCritRating": 0.191,
+   "StatMeleeHasteRating": 0.2126,
+   "StatMeleeHitRating": 0.4028,
+   "StatNatureDamage": 0.0748,
+   "StatSpellCritRating": 0.0792,
+   "StatSpellDamage": 0.1479,
+   "StatSpellHasteRating": 0.007,
+   "StatSpellHitRating": 0.2116,
+   "StatStrength": 0.1933
+  },
+  "trinkets": [
+   "Blackhand's Breadth",
+   "Talisman of Ephemeral Power"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.0507788475941242,
+   "keep-sets-and-effects": 1.0520882001251195
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "keep-sets-and-effects": 1.0505198267082116
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.050519826708211646,
+  "ilvl_before": 64.8,
+  "ilvl_after": 64.7,
+  "items": [
+   {
+    "id": 252605,
+    "enchant": 1506
+   },
+   {
+    "id": 18404
+   },
+   {
+    "id": 12927
+   },
+   {
+    "id": 272414,
+    "enchant": 849
+   },
+   {
+    "id": 11726,
+    "enchant": 1891
+   },
+   {
+    "id": 16840,
+    "enchant": 1885
+   },
+   {
+    "id": 15063,
+    "enchant": 927
+   },
+   {
+    "id": 228190
+   },
+   {
+    "id": 15062,
+    "enchant": 1506
+   },
+   {
+    "id": 22064,
+    "enchant": 911
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 17063
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 18820
+   },
+   {
+    "id": 17182,
+    "enchant": 2563
+   },
+   {},
+   {}
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Crown of Destruction",
+    "to": "Black Dragonscale Helm"
+   },
+   {
+    "slot": 3,
+    "from": "Cape of the Black Baron",
+    "to": "Howler's Furs"
+   },
+   {
+    "slot": 5,
+    "from": "Wristguards of True Flight",
+    "to": "Earthfury Bracers"
+   },
+   {
+    "slot": 7,
+    "from": "Girdle of Beastial Fury",
+    "to": "Knowledge of the Timbermaw"
+   },
+   {
+    "slot": 9,
+    "from": "Pads of the Dread Wolf",
+    "to": "Sorcerer's Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Quick Strike Ring",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 12,
+    "from": "Hand of Justice",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 13,
+    "from": "Blackhand's Breadth",
+    "to": "Talisman of Ephemeral Power"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/warlock/dps/gear_sets/mc.gear.json": {
+  "gear": "ui/specs/warlock/dps/gear_sets/mc.gear.json",
+  "members": [
+   "warlock/affliction-raid",
+   "warlock/fire-destro-raid",
+   "warlock/sb-raid",
+   "warlock/demonology-raid",
+   "warlock/incinerate-raid"
+  ],
+  "evaluated_on": [
+   "affliction-raid: affliction-dot-raid",
+   "fire-destro-raid: destruction-fire-raid",
+   "sb-raid: opt-sb-raid-raid-dps",
+   "demonology-raid: demonology-pact-raid",
+   "incinerate-raid: destruction-incinerate-raid"
+  ],
+  "weights": {
+   "StatFireDamage": 0.0648,
+   "StatIntellect": 0.2004,
+   "StatShadowDamage": 0.4484,
+   "StatSpellCritRating": 0.4713,
+   "StatSpellDamage": 0.5132,
+   "StatSpellHasteRating": 0.4835,
+   "StatSpellHitRating": 0.7037,
+   "StatSpirit": 0.1259
+  },
+  "trinkets": [
+   "Talisman of Ephemeral Power",
+   "Briarwood Reed"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.1272859687288281,
+   "keep-sets-and-effects": 1.0987720973865887
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.1271353857098132
+  },
+  "chosen": "all-slots",
+  "gain": 0.1271353857098132,
+  "ilvl_before": 66.5,
+  "ilvl_after": 65.8,
+  "items": [
+   {
+    "id": 22267
+   },
+   {
+    "id": 18814
+   },
+   {
+    "id": 227808
+   },
+   {
+    "id": 20697,
+    "enchant": 256
+   },
+   {
+    "id": 19145,
+    "enchant": 928
+   },
+   {
+    "id": 21186,
+    "enchant": 1883
+   },
+   {
+    "id": 13253
+   },
+   {
+    "id": 19136
+   },
+   {
+    "id": 16930
+   },
+   {
+    "id": 22064,
+    "enchant": 911
+   },
+   {
+    "id": 276765
+   },
+   {
+    "id": 19147
+   },
+   {
+    "id": 18820
+   },
+   {
+    "id": 12930
+   },
+   {
+    "id": 17103,
+    "enchant": 2504
+   },
+   {
+    "id": 22329
+   },
+   {
+    "id": 13938
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Nemesis Skullcap",
+    "to": "Spellweaver's Turban"
+   },
+   {
+    "slot": 2,
+    "from": "Felcloth Shoulders",
+    "to": "Rugged Mantle of the Timbermaw"
+   },
+   {
+    "slot": 3,
+    "from": "Sapphiron Drape",
+    "to": "Crystalline Threaded Cape"
+   },
+   {
+    "slot": 5,
+    "from": "Felheart Bracers",
+    "to": "Rockfury Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Felcloth Gloves",
+    "to": "Hands of Power"
+   },
+   {
+    "slot": 9,
+    "from": "Maleki's Footwraps",
+    "to": "Sorcerer's Boots"
+   },
+   {
+    "slot": 10,
+    "from": "Ring of Spell Power",
+    "to": "Leafre's Ring of Precise Spell Power"
+   },
+   {
+    "slot": 15,
+    "from": "Drakestone",
+    "to": "Scepter of Interminable Focus"
+   },
+   {
+    "slot": 16,
+    "from": "Skul's Ghastly Touch",
+    "to": "Bonecreeper Stylus"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json": {
+  "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+  "members": [
+   "warrior/arms-2h-raid",
+   "warrior/arms-battle-raid"
+  ],
+  "evaluated_on": [
+   "arms-2h-raid: arms-2h-raid",
+   "arms-battle-raid: arms-battle-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.403,
+   "StatAgility": 0.1641,
+   "StatArmorPenetration": 0.0361,
+   "StatAttackPower": 0.1221,
+   "StatFireDamage": 0.024,
+   "StatMeleeCritRating": 0.2281,
+   "StatMeleeHasteRating": 0.321,
+   "StatSpellCritRating": 0.0004,
+   "StatSpellDamage": 0.024,
+   "StatSpellHasteRating": -0.0001,
+   "StatSpellHitRating": 0.0014,
+   "StatStrength": 0.2443
+  },
+  "trinkets": [
+   "Hand of Justice",
+   "Blackhand's Breadth"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.731363725977978,
+   "keep-sets-and-effects": 1.7524577532562597
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "keep-sets-and-effects": 1.757818333819808
+  },
+  "chosen": "keep-sets-and-effects",
+  "gain": 0.7578183338198079,
+  "ilvl_before": 59.3,
+  "ilvl_after": 65.8,
+  "items": [
+   {
+    "id": 18817
+   },
+   {
+    "id": 15411
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 20068
+   },
+   {
+    "id": 252484
+   },
+   {
+    "id": 21184
+   },
+   {
+    "id": 19143
+   },
+   {
+    "id": 19137
+   },
+   {
+    "id": 22385
+   },
+   {
+    "id": 21995
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 13098
+   },
+   {
+    "id": 11815
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 17076
+   },
+   {},
+   {
+    "id": 272594
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Enchanted Thorium Helm",
+    "to": "Crown of Destruction"
+   },
+   {
+    "slot": 1,
+    "from": "Lady Alizabeth's Pendant",
+    "to": "Mark of Fordring"
+   },
+   {
+    "slot": 2,
+    "from": "Dawnbringer Shoulders",
+    "to": "Theramore Pauldrons"
+   },
+   {
+    "slot": 3,
+    "from": "Mighty Cloak",
+    "to": "Deathguard's Cloak"
+   },
+   {
+    "slot": 4,
+    "from": "Dark Iron Plate",
+    "to": "Timbermaw Tunic"
+   },
+   {
+    "slot": 5,
+    "from": "Knight-Captain's Plate Wristguards",
+    "to": "Deeprock Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Stonegrip Gauntlets",
+    "to": "Flameguard Gauntlets"
+   },
+   {
+    "slot": 7,
+    "from": "Girdle of Uther",
+    "to": "Onslaught Girdle"
+   },
+   {
+    "slot": 8,
+    "from": "Enchanted Thorium Leggings",
+    "to": "Titanic Leggings"
+   },
+   {
+    "slot": 9,
+    "from": "Sapphiron's Scale Boots",
+    "to": "Boots of Heroism"
+   },
+   {
+    "slot": 10,
+    "from": "Band of the Hierophant",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 11,
+    "from": "Ring of Protection",
+    "to": "Painweaver Band"
+   },
+   {
+    "slot": 12,
+    "from": "Shard of the Splithooves",
+    "to": "Hand of Justice"
+   },
+   {
+    "slot": 13,
+    "from": "Demon's Blood",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 14,
+    "from": "Arcanite Reaper",
+    "to": "Bonereaver's Edge"
+   },
+   {
+    "slot": 16,
+    "from": "Gryphonwing Long Bow",
+    "to": "Premier High Warlord's Recurve"
+   }
+  ],
+  "date": "2026-09-30"
+ },
+ "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json": {
+  "gear": "ui/specs/warrior/dps/gear_sets/p1_fury.gear.json",
+  "members": [
+   "warrior/fury-dw-raid"
+  ],
+  "evaluated_on": [
+   "fury-dw-raid: fury-dw-raid"
+  ],
+  "weights": {
+   "PseudoStatMainHandDps": 1.0683,
+   "PseudoStatOffHandDps": 0.6999,
+   "StatAgility": 0.1799,
+   "StatArmorPenetration": 0.0474,
+   "StatAttackPower": 0.1568,
+   "StatFireDamage": 0.0396,
+   "StatMeleeCritRating": 0.2577,
+   "StatMeleeHasteRating": 0.3293,
+   "StatMeleeHitRating": 0.1701,
+   "StatSpellCritRating": 0.0007,
+   "StatSpellDamage": 0.0396,
+   "StatSpellHasteRating": 0.017,
+   "StatStrength": 0.3136
+  },
+  "trinkets": [
+   "Hand of Justice",
+   "Blackhand's Breadth"
+  ],
+  "race_seed1": {
+   "current": 1.0,
+   "all-slots": 1.7150280016699868,
+   "keep-sets-and-effects": 1.7150280016699868
+  },
+  "confirm_seed2": {
+   "current": 1.0,
+   "all-slots": 1.7144887566513807
+  },
+  "chosen": "all-slots",
+  "gain": 0.7144887566513807,
+  "ilvl_before": 58.9,
+  "ilvl_after": 64.8,
+  "items": [
+   {
+    "id": 12640
+   },
+   {
+    "id": 15411
+   },
+   {
+    "id": 271955
+   },
+   {
+    "id": 20068
+   },
+   {
+    "id": 252484
+   },
+   {
+    "id": 21184
+   },
+   {
+    "id": 19143
+   },
+   {
+    "id": 19137
+   },
+   {
+    "id": 22385
+   },
+   {
+    "id": 21995
+   },
+   {
+    "id": 18821
+   },
+   {
+    "id": 19325
+   },
+   {
+    "id": 11815
+   },
+   {
+    "id": 13965
+   },
+   {
+    "id": 18832
+   },
+   {
+    "id": 272452
+   },
+   {
+    "id": 17069
+   }
+  ],
+  "changed": [
+   {
+    "slot": 0,
+    "from": "Enchanted Thorium Helm",
+    "to": "Lionheart Helm"
+   },
+   {
+    "slot": 1,
+    "from": "Lady Alizabeth's Pendant",
+    "to": "Mark of Fordring"
+   },
+   {
+    "slot": 2,
+    "from": "Dawnbringer Shoulders",
+    "to": "Theramore Pauldrons"
+   },
+   {
+    "slot": 3,
+    "from": "Mighty Cloak",
+    "to": "Deathguard's Cloak"
+   },
+   {
+    "slot": 4,
+    "from": "Dark Iron Plate",
+    "to": "Timbermaw Tunic"
+   },
+   {
+    "slot": 5,
+    "from": "Knight-Captain's Plate Wristguards",
+    "to": "Deeprock Bracers"
+   },
+   {
+    "slot": 6,
+    "from": "Stonegrip Gauntlets",
+    "to": "Flameguard Gauntlets"
+   },
+   {
+    "slot": 7,
+    "from": "Girdle of Uther",
+    "to": "Onslaught Girdle"
+   },
+   {
+    "slot": 8,
+    "from": "Enchanted Thorium Leggings",
+    "to": "Titanic Leggings"
+   },
+   {
+    "slot": 9,
+    "from": "Sapphiron's Scale Boots",
+    "to": "Boots of Heroism"
+   },
+   {
+    "slot": 10,
+    "from": "Band of the Hierophant",
+    "to": "Quick Strike Ring"
+   },
+   {
+    "slot": 11,
+    "from": "Ring of Protection",
+    "to": "Don Julio's Band"
+   },
+   {
+    "slot": 12,
+    "from": "Shard of the Splithooves",
+    "to": "Hand of Justice"
+   },
+   {
+    "slot": 13,
+    "from": "Demon's Blood",
+    "to": "Blackhand's Breadth"
+   },
+   {
+    "slot": 14,
+    "from": "Dawn's Edge",
+    "to": "Brutality Blade"
+   },
+   {
+    "slot": 15,
+    "from": "Serathil",
+    "to": "Premier High Warlord's Blade"
+   },
+   {
+    "slot": 16,
+    "from": "Gryphonwing Long Bow",
+    "to": "Striker's Mark"
+   }
+  ],
+  "date": "2026-09-30"
+ }
+}

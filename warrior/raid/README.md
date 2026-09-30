@@ -6,8 +6,8 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Fury](fury.md) — Fury — Dual Wield | 221 | 401 | 165 | best |
-| 2 | [Arms](arms.md) — Arms — Battle Stance | 221 | 463 | 207 | -0% |
+| 1 | [Fury](fury.md) — Fury — Dual Wield | 380 | 681 | 328 | best |
+| 2 | [Arms](arms.md) — Arms — Battle Stance | 378 | 729 | 365 | -1% |
 
 **Tanking**: [Protection](protection.md) — Protection — Raid Tank.
 

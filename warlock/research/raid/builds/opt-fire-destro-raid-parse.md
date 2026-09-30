@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +77.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +77.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -47,14 +47,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-des
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 22.0 points of score in this model.
-2. **Bane** — Removing it costs 15.8 points of score in this model.
-3. **Suppression** — Removing it costs 9.9 points of score in this model.
-4. **Agonizing Flames** — Removing it costs 8.9 points of score in this model.
-5. **Malevolence** — Removing it costs 8.8 points of score in this model.
-6. **Improved Shadow Bolt** — Removing it costs 8.1 points of score in this model.
+1. **Demonic Sacrifice** — Removing it costs 22.4 points of score in this model.
+2. **Bane** — Removing it costs 16.1 points of score in this model.
+3. **Suppression** — Removing it costs 10.0 points of score in this model.
+4. **Agonizing Flames** — Removing it costs 9.1 points of score in this model.
+5. **Malevolence** — Removing it costs 8.5 points of score in this model.
+6. **Improved Shadow Bolt** — Removing it costs 7.8 points of score in this model.
 7. **Improved Corruption** — Removing it costs 7.6 points of score in this model.
-8. **Pandemic** — Removing it costs 7.2 points of score in this model.
+8. **Pandemic** — Removing it costs 7.0 points of score in this model.
 
 ## Rotation
 

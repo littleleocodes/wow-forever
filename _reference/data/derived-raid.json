@@ -5,10 +5,10 @@
    "role": "dps",
    "entry": "balance-dps",
    "start": "balance-moonkin-raid",
-   "start_metric": 438.3516188244772,
+   "start_metric": 533.9253999812784,
    "date": "2026-09-30",
    "hand": "balance-moonkin-raid",
-   "hand_metric": 438.3516188244772,
+   "hand_metric": 533.9253999812784,
    "candidate": "druid/research/raid/raidsim/candidates/derived-balance.json",
    "search_gain": 0.0,
    "moves": [],
@@ -20,14 +20,14 @@
    "role": "dps",
    "entry": "feral-cat-dps",
    "start": "opt-feral-cat-dps-raid-dps",
-   "start_metric": 350.2248013220089,
+   "start_metric": 365.66116510339646,
    "date": "2026-09-30",
    "hand": "feral-cat-dps",
-   "hand_metric": 348.9798886677977,
+   "hand_metric": 364.31310961839694,
    "candidate": "druid/research/raid/raidsim/candidates/derived-feral-combat.json",
    "search_gain": 0.0,
    "moves": [],
-   "gain_vs_hand": 0.0035672905363215435,
+   "gain_vs_hand": 0.0037002661979732565,
    "verdict": "hand stays"
   },
   "Feral Combat (tank)": {
@@ -52,89 +52,52 @@
    "role": "dps",
    "entry": "bm-raid",
    "start": "beast-mastery-raid",
-   "start_metric": 438.0676113148907,
+   "start_metric": 455.2067342915121,
    "date": "2026-09-30",
    "hand": null,
    "hand_metric": null,
    "candidate": "hunter/research/raid/raidsim/candidates/derived-beast-mastery.json",
-   "search_gain": 0.021886067968746037,
-   "moves": [
-    {
-     "round": 1,
-     "move": "1 point Intimidation -> Endurance Training",
-     "gain_seed1": 0.013138944312931056,
-     "gain_seed2": 0.012973317660223582,
-     "split": "30/21/0"
-    },
-    {
-     "round": 2,
-     "move": "2 points Mortal Shots -> Efficiency",
-     "gain_seed1": 0.008422855062806933,
-     "gain_seed2": 0.008673426514614668,
-     "split": "30/21/0"
-    }
-   ],
-   "verdict": "new"
+   "search_gain": 0.0,
+   "moves": [],
+   "verdict": "start stays"
   },
   "Marksmanship": {
    "tree": "Marksmanship",
    "role": "dps",
    "entry": "mm-lonewolf-raid",
    "start": "opt-mm-lonewolf-raid-raid-dps",
-   "start_metric": 419.9393534243545,
+   "start_metric": 434.4962617710067,
    "date": "2026-09-30",
    "hand": "mm-lone-wolf-raid",
-   "hand_metric": 419.0187285344657,
+   "hand_metric": 427.8292519371228,
    "candidate": "hunter/research/raid/raidsim/candidates/derived-marksmanship.json",
-   "search_gain": 0.005529519178781417,
+   "search_gain": 0.0034531615644033398,
    "moves": [
     {
      "round": 1,
      "move": "1 point Improved Arcane Shot -> Endurance Training",
-     "gain_seed1": 0.0050369468023310215,
-     "gain_seed2": 0.004922973106404438,
+     "gain_seed1": 0.004956228103600413,
+     "gain_seed2": 0.002945442512904073,
      "split": "6/37/8"
     }
    ],
-   "gain_vs_hand": 0.007738765305109974,
+   "gain_vs_hand": 0.019090316026611376,
    "verdict": "hand stays"
   },
   "Survival": {
    "tree": "Survival",
    "role": "dps",
    "entry": "melee-dps",
-   "start": "opt-melee-dps-raid-dps",
-   "start_metric": 424.3069559804656,
+   "start": "survival-raid",
+   "start_metric": 444.75187999185033,
    "date": "2026-09-30",
    "hand": "melee-survival-raid",
-   "hand_metric": 423.8727987581186,
+   "hand_metric": 427.92562132282944,
    "candidate": "hunter/research/raid/raidsim/candidates/derived-survival.json",
-   "search_gain": 0.032282227844176115,
-   "moves": [
-    {
-     "round": 1,
-     "move": "2 points Survivalist -> Clever Traps",
-     "gain_seed1": 0.01688154978145029,
-     "gain_seed2": 0.016913043395218486,
-     "split": "5/15/31"
-    },
-    {
-     "round": 2,
-     "move": "1 point Lacerating Strikes -> Efficiency",
-     "gain_seed1": 0.00592560192934477,
-     "gain_seed2": 0.007136034654077639,
-     "split": "5/16/30"
-    },
-    {
-     "round": 3,
-     "move": "2 points Lightning Reflexes -> Survivalist's Discipline",
-     "gain_seed1": 0.00981222203270038,
-     "gain_seed2": 0.008839326743209641,
-     "split": "5/16/30"
-    }
-   ],
-   "gain_vs_hand": 0.033339556330533426,
-   "verdict": "replaces"
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.039320521676188935,
+   "verdict": "hand stays"
   }
  },
  "mage": {
@@ -143,22 +106,22 @@
    "role": "dps",
    "entry": "arcane-dps",
    "start": "arcane-blast-raid",
-   "start_metric": 516.4525609176738,
+   "start_metric": 592.0331786139407,
    "date": "2026-09-30",
    "hand": "arcane-blast-raid",
-   "hand_metric": 516.4525609176738,
+   "hand_metric": 592.0331786139407,
    "candidate": "mage/research/raid/raidsim/candidates/derived-arcane.json",
-   "search_gain": 0.0019040776605094845,
+   "search_gain": 0.002401151952516889,
    "moves": [
     {
      "round": 1,
      "move": "3 points Improved Channeling -> Improved Frostbolt",
-     "gain_seed1": 0.0017844237352711012,
-     "gain_seed2": 0.0017811019973690279,
+     "gain_seed1": 0.002395631570862422,
+     "gain_seed2": 0.002428463730541619,
      "split": "32/11/8"
     }
    ],
-   "gain_vs_hand": 0.0019040776605094845,
+   "gain_vs_hand": 0.002401151952516889,
    "verdict": "hand stays"
   },
   "Fire": {
@@ -166,10 +129,10 @@
    "role": "dps",
    "entry": "fire-raid",
    "start": "fire-raid",
-   "start_metric": 510.269216213846,
+   "start_metric": 593.4872484828787,
    "date": "2026-09-30",
    "hand": "fire-raid",
-   "hand_metric": 510.269216213846,
+   "hand_metric": 593.4872484828787,
    "candidate": "mage/research/raid/raidsim/candidates/derived-fire.json",
    "search_gain": 0.0,
    "moves": [],
@@ -181,14 +144,14 @@
    "role": "dps",
    "entry": "frost-raid",
    "start": "opt-frost-raid-raid-dps-extwc",
-   "start_metric": 541.4674285453253,
+   "start_metric": 590.8001428202903,
    "date": "2026-09-30",
    "hand": "frost-winters-chill-raid",
-   "hand_metric": 517.0695358391538,
+   "hand_metric": 568.5548305142536,
    "candidate": "mage/research/raid/raidsim/candidates/derived-frost.json",
    "search_gain": 0.0,
    "moves": [],
-   "gain_vs_hand": 0.04718493551660541,
+   "gain_vs_hand": 0.03912606333133417,
    "verdict": "hand stays"
   }
  },
@@ -198,22 +161,22 @@
    "role": "dps",
    "entry": "ret-dps",
    "start": "opt-ret-dps-raid-dps",
-   "start_metric": 350.25877945833236,
+   "start_metric": 527.2470261398622,
    "date": "2026-09-30",
-   "hand": "ret-raid-dps",
-   "hand_metric": 348.57421091424044,
+   "hand": "ret-full-buffs-raid",
+   "hand_metric": 522.7645920430244,
    "candidate": "paladin/research/raid/raidsim/candidates/derived-retribution.json",
-   "search_gain": 0.008434929997139129,
+   "search_gain": 0.0020296137514463908,
    "moves": [
     {
      "round": 1,
-     "move": "2 points Vindication -> Divine Intellect",
-     "gain_seed1": 0.007524924214088458,
-     "gain_seed2": 0.00811714115201223,
-     "split": "11/8/32"
+     "move": "2 points Illumination -> Vindication",
+     "gain_seed1": 0.0020305747373938754,
+     "gain_seed2": 0.0020308548276983807,
+     "split": "17/0/34"
     }
    ],
-   "gain_vs_hand": 0.013308433855560464,
+   "gain_vs_hand": 0.010621495786087065,
    "verdict": "hand stays"
   },
   "Protection (tank)": {
@@ -246,7 +209,7 @@
    "role": "dps",
    "entry": "shadow-dps",
    "start": "opt-shadow-dps-raid-dps",
-   "start_metric": 555.6841407031114,
+   "start_metric": 631.6784767975147,
    "date": "2026-09-30",
    "hand": null,
    "hand_metric": null,
@@ -276,41 +239,26 @@
    "tree": "Combat",
    "role": "dps",
    "entry": "combat-daggers-raid",
-   "start": "opt-combat-daggers-raid-raid-dps",
-   "start_metric": 402.58728906762616,
+   "start": "combat-raid",
+   "start_metric": 421.59826767058496,
    "date": "2026-09-30",
    "hand": "combat-daggers-raid",
    "hand_metric": 398.99405529290914,
    "candidate": "rogue/research/raid/raidsim/candidates/derived-combat.json",
-   "search_gain": 0.0473498936846426,
-   "moves": [
-    {
-     "round": 1,
-     "move": "2 points Lethality -> Improved Expose Armor",
-     "gain_seed1": 0.04361511521178851,
-     "gain_seed2": 0.04180617338684178,
-     "split": "16/33/2"
-    },
-    {
-     "round": 2,
-     "move": "1 point Cold Blood -> Improved Poisons",
-     "gain_seed1": 0.0034561485415733895,
-     "gain_seed2": 0.0038907230025382322,
-     "split": "16/33/2"
-    }
-   ],
-   "gain_vs_hand": 0.056782046775673445,
-   "verdict": "replaces"
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.05665300542155105,
+   "verdict": "hand stays"
   },
   "Subtlety": {
    "tree": "Subtlety",
    "role": "dps",
    "entry": "subtlety-raid",
    "start": "subtlety-hemo-raid",
-   "start_metric": 373.72756456771447,
+   "start_metric": 380.02030774203405,
    "date": "2026-09-30",
    "hand": "subtlety-hemo-raid",
-   "hand_metric": 373.72756456771447,
+   "hand_metric": 380.02030774203405,
    "candidate": "rogue/research/raid/raidsim/candidates/derived-subtlety.json",
    "search_gain": 0.0,
    "moves": [],
@@ -324,7 +272,7 @@
    "role": "dps",
    "entry": "elemental-dps",
    "start": "elemental-raid",
-   "start_metric": 381.11508606647834,
+   "start_metric": 439.8319006671127,
    "date": "2026-09-30",
    "hand": null,
    "hand_metric": null,
@@ -338,23 +286,23 @@
    "role": "dps",
    "entry": "enhancement-dps",
    "start": "opt-enhancement-dps-raid-dps",
-   "start_metric": 394.25910511200203,
+   "start_metric": 425.5859052252548,
    "date": "2026-09-30",
    "hand": "enhancement-raid-dps",
-   "hand_metric": 390.85330577761806,
+   "hand_metric": 420.19567445706355,
    "candidate": "shaman/research/raid/raidsim/candidates/derived-enhancement.json",
-   "search_gain": 0.021662399433433288,
+   "search_gain": 0.0020930633245752617,
    "moves": [
     {
      "round": 1,
-     "move": "3 points Tidal Focus -> Mindfulness",
-     "gain_seed1": 0.021463533609866303,
-     "gain_seed2": 0.02145305312055279,
-     "split": "11/31/9"
+     "move": "1 point Elemental Focus -> Mindfulness",
+     "gain_seed1": 0.005078811885133483,
+     "gain_seed2": 0.002050621606498826,
+     "split": "10/31/10"
     }
    ],
-   "gain_vs_hand": 0.030564913672203264,
-   "verdict": "replaces"
+   "gain_vs_hand": 0.014947819312966626,
+   "verdict": "hand stays"
   }
  },
  "warlock": {
@@ -362,37 +310,15 @@
    "tree": "Affliction",
    "role": "dps",
    "entry": "affliction-raid",
-   "start": "affliction-dot-raid",
-   "start_metric": 566.9712061403175,
+   "start": "opt-affliction-raid-raid-dps",
+   "start_metric": 639.2864535920389,
    "date": "2026-09-30",
    "hand": "affliction-dot-raid",
-   "hand_metric": 566.9712061403175,
+   "hand_metric": 633.0389789440865,
    "candidate": "warlock/research/raid/raidsim/candidates/derived-affliction.json",
-   "search_gain": 0.011219889513581549,
-   "moves": [
-    {
-     "round": 1,
-     "move": "3 points Aftermath -> Cataclysm",
-     "gain_seed1": 0.008173861102360958,
-     "gain_seed2": 0.007549435039150509,
-     "split": "30/0/21"
-    },
-    {
-     "round": 2,
-     "move": "3 points Improved Corruption -> Malediction",
-     "gain_seed1": 0.0017114857913176351,
-     "gain_seed2": 0.00235828462728227,
-     "split": "30/0/21"
-    },
-    {
-     "round": 3,
-     "move": "2 points Nightfall -> Malediction",
-     "gain_seed1": 0.0023036572677825884,
-     "gain_seed2": 0.00155573075103832,
-     "split": "30/0/21"
-    }
-   ],
-   "gain_vs_hand": 0.011219889513581549,
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.009869020480181678,
    "verdict": "hand stays"
   },
   "Demonology": {
@@ -400,10 +326,10 @@
    "role": "dps",
    "entry": "demonology-raid",
    "start": "demonology-pact-raid",
-   "start_metric": 616.4348512527268,
+   "start_metric": 679.4888387886073,
    "date": "2026-09-30",
    "hand": "demonology-pact-raid",
-   "hand_metric": 616.4348512527268,
+   "hand_metric": 679.4888387886073,
    "candidate": "warlock/research/raid/raidsim/candidates/derived-demonology.json",
    "search_gain": 0.0,
    "moves": [],
@@ -415,29 +341,29 @@
    "role": "dps",
    "entry": "incinerate-raid",
    "start": "destruction-incinerate-raid",
-   "start_metric": 478.32482180502444,
+   "start_metric": 560.6950390645756,
    "date": "2026-09-30",
    "hand": "destruction-incinerate-raid",
-   "hand_metric": 478.32482180502444,
+   "hand_metric": 560.6950390645756,
    "candidate": "warlock/research/raid/raidsim/candidates/derived-destruction.json",
-   "search_gain": 0.007177399341504298,
+   "search_gain": 0.011105297842582296,
    "moves": [
     {
      "round": 1,
      "move": "1 point Improved Corruption -> Improved Life Tap",
-     "gain_seed1": 0.003886453442553117,
-     "gain_seed2": 0.004313324542457586,
+     "gain_seed1": 0.0033041148146213395,
+     "gain_seed2": 0.004197678166871777,
      "split": "9/11/31"
     },
     {
      "round": 2,
      "move": "1 point Aftermath -> Cataclysm",
-     "gain_seed1": 0.00397729604503394,
-     "gain_seed2": 0.0023932375114557036,
+     "gain_seed1": 0.007449906922924132,
+     "gain_seed2": 0.007180255444912742,
      "split": "9/11/31"
     }
    ],
-   "gain_vs_hand": 0.007177399341504298,
+   "gain_vs_hand": 0.011105297842582296,
    "verdict": "hand stays"
   }
  },
@@ -447,10 +373,10 @@
    "role": "dps",
    "entry": "arms-battle-raid",
    "start": "arms-battle-raid",
-   "start_metric": 220.80526165927716,
+   "start_metric": 377.7071605484765,
    "date": "2026-09-30",
    "hand": "arms-battle-raid",
-   "hand_metric": 220.80526165927716,
+   "hand_metric": 377.7071605484765,
    "candidate": "warrior/research/raid/raidsim/candidates/derived-arms.json",
    "search_gain": 0.0,
    "moves": [],
@@ -462,10 +388,10 @@
    "role": "dps",
    "entry": "fury-dw-raid",
    "start": "fury-dw-raid",
-   "start_metric": 221.3573807978682,
+   "start_metric": 379.6341064446702,
    "date": "2026-09-30",
    "hand": "fury-dw-raid",
-   "hand_metric": 221.3573807978682,
+   "hand_metric": 379.6341064446702,
    "candidate": "warrior/research/raid/raidsim/candidates/derived-fury.json",
    "search_gain": 0.0,
    "moves": [],

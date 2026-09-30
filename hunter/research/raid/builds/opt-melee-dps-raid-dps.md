@@ -62,9 +62,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `melee-dp
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 438 | +0.0% | 953 | -2.8% | 12 s |
-| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 424 | -3.2% | 951 | -2.9% | 13 s |
-| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 424 | -3.3% | 980 | +0.0% | 37 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 445 | +0.0% | 967 | -2.4% | 12 s |
+| 2 | **[`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md)** | ours: optimizer | 5/15/31 | 429 | -3.5% | 965 | -2.6% | 13 s |
+| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 428 | -3.8% | 991 | +0.0% | 37 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -79,11 +79,11 @@ Before the pull: at -3s: cast Hunter's Mark.
 |---|---|---|
 | 1 | cast Aspect of the Beast | 0.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | cast Mongoose Bite | 12.1 |
+| 3 | cast Mongoose Bite | 12.3 |
 | 4 | cast Strider Kick | 6.5 |
 | 5 | cast Raptor Strike | 19.6 |
 | 6 | cast Immolation Trap | 2.0 |
-| 7 | cast Wing Clip | 23.7 |
+| 7 | cast Wing Clip | 23.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -91,10 +91,10 @@ Damage by ability:
 
 | Ability | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) |
 |---|---|
-| Auto Attack | 45% |
+| Auto Attack | 46% |
 | Raptor Strike | 17% |
 | Mongoose Bite | 15% |
-| Strider Kick | 9% |
+| Strider Kick | 8% |
 | Wing Clip | 6% |
 | Immolation Trap | 6% |
 | Dragonbreath Chili | 3% |

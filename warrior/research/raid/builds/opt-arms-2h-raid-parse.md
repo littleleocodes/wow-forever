@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `parse`: score +74.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `parse`: score +77.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -25,7 +25,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
-| **Impale** | 1/2 | changed | Increases the critical strike damage bonus of your abilities by 10%. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
 
 ### Fury (32)
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 ## Core talents (priority order)
 
-1. **Flurry** — Removing it costs 16.0 points of score in this model.
+1. **Flurry** — Removing it costs 28.6 points of score in this model.
 2. **Bloodthirst** — Removing it costs 15.2 points of score in this model.
-3. **Cruelty** — Removing it costs 14.0 points of score in this model.
-4. **Deep Wounds** — Removing it costs 10.4 points of score in this model.
-5. **Death Wish** — Removing it costs 5.6 points of score in this model.
-6. **Precision** — Removing it costs 5.5 points of score in this model.
-7. **Improved Execute** — Removing it costs 5.3 points of score in this model.
-8. **Anger Management** — Removing it costs 5.2 points of score in this model.
+3. **Cruelty** — Removing it costs 8.8 points of score in this model.
+4. **Deep Wounds** — Removing it costs 8.7 points of score in this model.
+5. **Precision** — Removing it costs 5.6 points of score in this model.
+6. **Two-Handed Weapon Specialization** — Removing it costs 5.2 points of score in this model.
+7. **Unbridled Wrath** — Removing it costs 4.7 points of score in this model.
+8. **Anger Management** — Removing it costs 4.5 points of score in this model.
 
 ## Rotation
 

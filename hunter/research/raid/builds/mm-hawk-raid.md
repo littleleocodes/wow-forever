@@ -66,13 +66,13 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 448 | -0.0% | 788 | -2.2% | 25 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 455 | +0.0% | 754 | -1.9% | 13 s |
+| 2 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 453 | -0.4% | 769 | +0.0% | 21 s |
+| 3 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.6% | 728 | -5.2% | 17 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -97,17 +97,17 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 9.3 |
+| 2 | cast Summon Hawk | 10.0 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.7 |
 
 Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 43% |
+| Auto Shot | 40% |
 | Summon Hawk | 29% |
-| Serpent Sting | 19% |
+| Serpent Sting | 22% |
 | Pet: Auto Attack | 7% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |

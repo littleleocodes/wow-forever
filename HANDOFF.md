@@ -82,6 +82,19 @@ Each class folder now opens with player pages and keeps the research below:
   - Open: cross-spec raid rankings mix gear tiers (warlock MC set, Shadow pre-raid, paladin default, feral launch vs phase-1 BiS):
     equalize the gear and re-race. The new leveling specs have no PIPELINE entry, calibration or scorer model of their own.
 
+- **Equal-tier raid gear** (2026-09-30, after the derivation): `raidsim/gear_opt.py` (see CLAUDE.md). The simulator's presets were
+  not one tier; with one common phase-1 + Forever-launch pool every damage spec was re-geared and re-raced. Warriors +71-76%
+  (their "p1" presets held caster and tank items), Retribution +51%, Shadow +31%, casters +13-22%, the rest 0-5%. Top of the dummy
+  ranking now: Demonology 679, Frost/Arcane hybrid 640, Affliction 633, Shadow 632, the mages ~590. Raid talents re-searched in the
+  new gear (same day: `rebuild.py --steps raid,adopt` for every class, then `derive_raid.py --fresh`): no build beat a hand draft by
+  2% (largest +1.6%). The pages now apply the 2% rule themselves (`render_modes.DERIVED_BAR`): a derived build leads its slot only
+  while it is 2%+ ahead of the best other build. Tank sets were not changed.
+
+- **Healer and tank leveling = the raid build** (2026-09-30, user decision): `raid_path_leveling.py` levels each healing and tanking
+  spec into its raid pick, in the fastest of three raced orders. Protection warrior and paladin level fastest own-tree-first (31 s per
+  kill vs 38.5 s and 33 s for the next-best orders); healers differ by only 0-4% between orders. Level-weighted seconds per kill: Holy
+  priest 45, Discipline 44.5, Holy paladin 35.5, Resto shaman 43, Resto druid 33, Protection paladin 31, Protection warrior 31.
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

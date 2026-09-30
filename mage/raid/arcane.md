@@ -18,7 +18,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Ignite**: a cooldown, use it at the start of the fight and again whenever it is ready (about 5 times a fight)
+- **Ignite**: a cooldown, use it at the start of the fight and again whenever it is ready (about 6 times a fight)
 - **Arcane Power**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
@@ -29,12 +29,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 516 |
-| Parse (a full raid: every raid buff and debuff) | 600 |
+| Training dummy, 3-minute fight (only your own buffs) | 592 |
+| Parse (a full raid: every raid buff and debuff) | 690 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 516 → mana +2% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 600
+Dummy 592 → mana +2% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 690
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -42,7 +42,7 @@ Dummy 516 → mana +2% → armor +0% → physical -1% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 576 | 541 | 516 | 520 | 488 |
+| 664 | 622 | 592 | 593 | 545 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

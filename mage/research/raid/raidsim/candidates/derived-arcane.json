@@ -80,7 +80,7 @@
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for arcane-dps from arcane-blast-raid in the dummy setting: 516.1 -> 517.1 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for arcane-dps from arcane-blast-raid in the dummy setting: 592.1 -> 593.5 DPS on a third seed.",
  "search": {
   "start": "arcane-blast-raid",
   "setting": "dummy",
@@ -92,14 +92,14 @@
    {
     "round": 1,
     "move": "3 points Improved Channeling -> Improved Frostbolt",
-    "gain_seed1": 0.0017844237352711012,
-    "gain_seed2": 0.0017811019973690279,
+    "gain_seed1": 0.002395631570862422,
+    "gain_seed2": 0.002428463730541619,
     "split": "32/11/8"
    }
   ],
-  "dps_start": 516.1027390621324,
-  "dps_end": 517.0854387581084,
-  "gain": 0.0019040776605094845,
+  "dps_start": 592.0552938667237,
+  "dps_end": 593.4769085915897,
+  "gain": 0.002401151952516889,
   "tank": false
  }
 }

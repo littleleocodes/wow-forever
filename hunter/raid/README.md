@@ -6,10 +6,10 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 448 | 806 | 423 | best |
-| 2 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid 🔬 | 448 | 788 | 423 | -0% |
-| 3 | [Survival](survival.md) — Survival — Raid 🔬 | 438 | 953 | 418 | -2% |
-| 4 | [Marksmanship](marksmanship.md) — Marksmanship without a pet | 420 | 841 | 373 | -6% |
+| 1 | [Beast Mastery](beast-mastery.md) — Beast Mastery — Raid 🔬 | 455 | 754 | 422 | best |
+| 2 | [Beast-Marks](beast-marks.md) — Marksmanship — Summon Hawk | 453 | 769 | 414 | -0% |
+| 3 | [Survival](survival.md) — Survival — Raid 🔬 | 445 | 967 | 424 | -2% |
+| 4 | [Marksmanship](marksmanship.md) — Marksmanship without a pet | 434 | 817 | 374 | -5% |
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

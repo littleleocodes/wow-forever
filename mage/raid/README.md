@@ -6,11 +6,11 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 582 | 662 | 575 | best |
-| 2 | [Frost](frost.md) — Raid Frostbolt with Ice Lance on Fingers of Frost charges | 541 | 646 | 460 | -7% |
-| 3 | [Arcane](arcane.md) — Arcane — Arcane Blast | 516 | 600 | 488 | -11% |
-| 4 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 510 | 636 | 422 | -12% |
-| 5 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 473 | 566 | 377 | -19% |
+| 1 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 640 | 728 | 630 | best |
+| 2 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 593 | 743 | 486 | -7% |
+| 3 | [Arcane](arcane.md) — Arcane — Arcane Blast | 592 | 690 | 545 | -7% |
+| 4 | [Frost](frost.md) — Raid Frostbolt with Ice Lance on Fingers of Frost charges | 591 | 705 | 479 | -8% |
+| 5 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 556 | 664 | 438 | -13% |
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

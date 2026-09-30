@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `raid-dps`: score +128.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `raid-dps`: score +127.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Core talents (priority order)
 
-1. **Moonglow** — Removing it costs 49.8 points of score in this model.
-2. **Vengeance** — Removing it costs 23.9 points of score in this model.
-3. **Moonfury** — Removing it costs 20.7 points of score in this model.
-4. **Insect Swarm** — Removing it costs 20.5 points of score in this model.
-5. **Reflection** — Removing it costs 19.8 points of score in this model.
-6. **Moonkin Form** — Removing it costs 16.8 points of score in this model.
-7. **Naturalist** — Removing it costs 10.9 points of score in this model.
-8. **Nature's Reach** — Removing it costs 10.6 points of score in this model.
+1. **Moonglow** — Removing it costs 46.2 points of score in this model.
+2. **Vengeance** — Removing it costs 23.7 points of score in this model.
+3. **Moonfury** — Removing it costs 20.6 points of score in this model.
+4. **Insect Swarm** — Removing it costs 19.4 points of score in this model.
+5. **Reflection** — Removing it costs 19.3 points of score in this model.
+6. **Moonkin Form** — Removing it costs 16.7 points of score in this model.
+7. **Improved Starfire** — Removing it costs 13.8 points of score in this model.
+8. **Naturalist** — Removing it costs 10.8 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,10 +63,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
-| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 438 | +0.0% | 511 | +0.0% | 4 s |
-| 3 | *Balance* | community simulator | - | 400 | -8.7% | 457 | -10.6% | 2 s |
-| 4 | *Moonkin 38/0/13* | community simulator | - | 353 | -19.4% | 506 | -1.0% | 31 s |
+| 1 | [`balance-moonkin-raid`](balance-moonkin-raid.md) | ours: hand draft | 33/5/13 | 534 | +0.0% | 612 | +0.0% | 3 s |
+| 2 | **[`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md)** | ours: optimizer | 33/5/13 | 534 | +0.0% | 612 | +0.0% | 3 s |
+| 3 | *Balance* | community simulator | - | 483 | -9.5% | 547 | -10.6% | 1 s |
+| 4 | *Moonkin 38/0/13* | community simulator | - | 434 | -18.7% | 604 | -1.2% | 30 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -86,16 +86,16 @@ Before the pull: at -10s: activate Moonkin Form.
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 4.3 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 3.9 |
-| 5 | cast Starfire | 14.0 |
-| 6 | if mana % < 15%: cast Starfire | 1.8 |
+| 5 | cast Starfire | 14.6 |
+| 6 | if mana % < 15%: cast Starfire | 1.3 |
 
 Damage by ability:
 
 | Ability | [`opt-balance-dps-raid-dps`](opt-balance-dps-raid-dps.md) |
 |---|---|
-| Starfire | 63% |
-| Moonfire | 19% |
+| Starfire | 64% |
 | Insect Swarm | 18% |
+| Moonfire | 18% |
 
 ## Notes
 

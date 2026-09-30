@@ -13,20 +13,20 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Hot Streak | Fire | 4 | +7.00% | manual |
 | Pyroblast | Fire | 3 | +6.45% | manual |
 | Combustion | Fire | 7 | +6.35% | manual |
+| Ignite | Fire | 2 | +2.43% | manual |
 | Critical Mass | Fire | 5 | +2.38% | manual |
-| Ignite | Fire | 2 | +2.33% | manual |
-| Arcane Power | Arcane | 7 | +2.01% | manual |
+| Arcane Power | Arcane | 7 | +2.00% | manual |
 | Fire Power | Fire | 6 | +2.00% | manual |
-| Improved Fireball | Fire | 1 | +1.65% | manual |
-| Arcane Mind | Arcane | 5 | +1.52% | manual |
+| Improved Fireball | Fire | 1 | +1.68% | manual |
+| Arcane Mind | Arcane | 5 | +1.56% | manual |
 | Arcane Instability | Arcane | 6 | +1.47% | manual |
-| Arcane Concentration | Arcane | 2 | +1.23% | manual |
+| Master of Elements | Fire | 4 | +1.41% | manual |
+| Arcane Concentration | Arcane | 2 | +1.26% | manual |
 | Elemental Precision | Frost | 1 | +1.19% | manual |
-| Arcane Meditation | Arcane | 4 | +1.15% | manual |
-| Incineration | Fire | 1 | +1.06% | manual |
-| Master of Elements | Fire | 4 | +1.01% | manual |
+| Arcane Meditation | Arcane | 4 | +1.17% | manual |
+| Incineration | Fire | 1 | +1.03% | manual |
 | Presence of Mind | Arcane | 5 | +1.00% | manual |
-| Wake of Fire | Fire | 1 | +0.89% | manual |
+| Wake of Fire | Fire | 1 | +0.86% | manual |
 | Ice Barrier | Frost | 7 | +0.01% | manual |
 | Ice Block | Frost | 4 | +0.01% | manual |
 | Improved Channeling | Arcane | 1 | +0.01% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Geometry | Arcane | 3 | +0.00% | manual |
 | Flame Throwing | Fire | 2 | +0.00% | manual |
 
-## Optimized build: 14/32/5  score +210.55%  (dps x3.105, sustain x1.078, surv x1.020, utility +0.00%)
+## Optimized build: 14/32/5  score +215.14%  (dps x3.151, sustain x1.087, surv x1.020, utility +0.00%)
 
 ```
   Arcane: Improved Channeling 5, Arcane Subtlety 2, Magic Absorption 2, Arcane Concentration 5
@@ -52,11 +52,11 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +6.38% | no |
-| Arcane Mind | Arcane 5 | 1/5 | +4.35% | no |
-| Arcane Instability | Arcane 6 | 1/3 | +4.31% | no |
-| Arcane Meditation | Arcane 4 | 1/3 | +3.25% | no |
-| Presence of Mind | Arcane 5 | 1/1 | +3.10% | no |
+| Arcane Power | Arcane 7 | 1/1 | +6.46% | no |
+| Arcane Mind | Arcane 5 | 1/5 | +4.47% | no |
+| Arcane Instability | Arcane 6 | 1/3 | +4.37% | no |
+| Arcane Meditation | Arcane 4 | 1/3 | +3.34% | no |
+| Presence of Mind | Arcane 5 | 1/1 | +3.15% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
 | Ice Block | Frost 4 | 1/1 | +0.00% | no |
 | Burning Soul | Fire 3 | 1/3 | +0.00% | yes |

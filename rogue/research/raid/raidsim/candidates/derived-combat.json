@@ -92,30 +92,15 @@
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for combat-daggers-raid from opt-combat-daggers-raid-raid-dps in the dummy setting: 402.2 -> 421.2 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for combat-daggers-raid from combat-raid in the dummy setting: 421.2 -> 421.2 DPS on a third seed.",
  "search": {
-  "start": "opt-combat-daggers-raid-raid-dps",
+  "start": "combat-raid",
   "setting": "dummy",
   "kept": [],
-  "moves": [
-   {
-    "round": 1,
-    "move": "2 points Lethality -> Improved Expose Armor",
-    "gain_seed1": 0.04361511521178851,
-    "gain_seed2": 0.04180617338684178,
-    "split": "16/33/2"
-   },
-   {
-    "round": 2,
-    "move": "1 point Cold Blood -> Improved Poisons",
-    "gain_seed1": 0.0034561485415733895,
-    "gain_seed2": 0.0038907230025382322,
-    "split": "16/33/2"
-   }
-  ],
-  "dps_start": 402.15245538818453,
+  "moves": [],
+  "dps_start": 421.19433139583305,
   "dps_end": 421.19433139583305,
-  "gain": 0.0473498936846426,
+  "gain": 0.0,
   "tank": false
  }
 }

@@ -65,17 +65,17 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 
 ## Rank among our builds and the community simulator's
 
-**1 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 415 | +0.0% | 762 | -3.4% | 76 s |
-| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 415 | -0.0% | 761 | -3.4% | 78 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 406 | -2.2% | 762 | -3.3% | 85 s |
-| 4 | *Marksmanship* | community simulator | - | 388 | -6.4% | 788 | +0.0% | 99 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 370 | -10.7% | 691 | -12.4% | 92 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 356 | -14.3% | 719 | -8.8% | 94 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 335 | -19.2% | 640 | -18.8% | 91 s |
+| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 425 | +0.0% | 737 | -4.8% | 69 s |
+| 2 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 424 | -0.2% | 738 | -4.7% | 67 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 410 | -3.6% | 737 | -4.8% | 72 s |
+| 4 | *Marksmanship* | community simulator | - | 396 | -6.8% | 774 | +0.0% | 89 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 374 | -12.0% | 672 | -13.2% | 77 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 364 | -14.2% | 701 | -9.5% | 85 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 341 | -19.8% | 620 | -20.0% | 76 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -94,20 +94,20 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-raid`](bm-mm-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.6 |
+| 1 | cast Arcane Shot | 8.5 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.1 |
+| 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.4 |
 | 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.6 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
 
 Damage by ability:
 
 | Ability | [`bm-mm-raid`](bm-mm-raid.md) |
 |---|---|
-| Auto Shot | 46% |
-| Arcane Shot | 20% |
-| Serpent Sting | 12% |
+| Auto Shot | 43% |
+| Arcane Shot | 22% |
+| Serpent Sting | 16% |
 | Aimed Shot | 9% |
 | Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |

@@ -76,7 +76,7 @@ Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target w
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 478 | +0.0% | 550 | +0.0% | 2 s |
+| 1 | **[`destruction-incinerate-raid`](destruction-incinerate-raid.md)** | ours: hand draft | 9/11/31 | 561 | +0.0% | 647 | +0.0% | 2 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -92,25 +92,25 @@ Before the pull: at -1.5s: cast Life Tap.
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left in the fight ≤ 1.5: cast Shadowburn | 0.2 |
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 3.0 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
 | 7 | if mana % < 10%: cast Life Tap | 7.1 |
 | 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.6 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.6 |
-| 12 | cast Incinerate | 13.1 |
+| 12 | cast Incinerate | 13.4 |
 
 Damage by ability:
 
 | Ability | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) |
 |---|---|
-| Incinerate | 34% |
-| Corruption | 20% |
-| Bane of Agony | 19% |
-| Immolate | 14% |
-| Conflagrate | 11% |
-| Shadowburn | 1% |
+| Incinerate | 37% |
+| Corruption | 18% |
+| Bane of Agony | 18% |
+| Immolate | 15% |
+| Conflagrate | 12% |
 | Searing Pain | 1% |
+| Shadowburn | 1% |
 
 ## Notes
 

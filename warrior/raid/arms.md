@@ -37,12 +37,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 221 |
-| Parse (a full raid: every raid buff and debuff) | 463 |
+| Training dummy, 3-minute fight (only your own buffs) | 378 |
+| Parse (a full raid: every raid buff and debuff) | 729 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 221 → mana +0% → armor +21% → physical +50% → spell +0% → everything else +39% → raid 463
+Dummy 378 → mana -0% → armor +12% → physical +44% → spell +0% → everything else +37% → raid 729
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -50,7 +50,7 @@ Dummy 221 → mana +0% → armor +21% → physical +50% → spell +0% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 202 | 204 | 206 | 207 | 207 |
+| 346 | 356 | 361 | 364 | 365 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

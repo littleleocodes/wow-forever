@@ -65,19 +65,19 @@ Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 567 | +0.0% | 687 | +0.0% | 3 s |
-| 2 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 567 | +0.0% | 687 | +0.0% | 3 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 533 | -5.9% | 645 | -6.0% | 0 s |
-| 4 | *Demonic Pact* | community simulator | - | 528 | -7.0% | 637 | -7.2% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 515 | -9.2% | 622 | -9.4% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 512 | -9.7% | 612 | -10.8% | 3 s |
-| 7 | *DS/Ruin* | community simulator | - | 506 | -10.8% | 614 | -10.5% | 1 s |
-| 8 | *Affliction* | community simulator | - | 505 | -10.9% | 605 | -11.9% | 2 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 491 | -13.5% | 594 | -13.5% | 1 s |
+| 1 | [`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md) | ours: optimizer | 30/0/21 | 639 | +0.0% | 768 | +0.0% | 2 s |
+| 2 | **[`affliction-dot-raid`](affliction-dot-raid.md)** | ours: hand draft | 30/0/21 | 633 | -1.0% | 763 | -0.6% | 3 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 592 | -7.5% | 714 | -7.0% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 586 | -8.3% | 704 | -8.3% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 573 | -10.4% | 689 | -10.3% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 568 | -11.2% | 676 | -11.9% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 564 | -11.8% | 683 | -11.1% | 1 s |
+| 8 | *Affliction* | community simulator | - | 561 | -12.2% | 668 | -12.9% | 2 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 547 | -14.5% | 657 | -14.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,10 +100,10 @@ Before the pull: at -5s: cast Amplify Curse.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
 | 6 | if mana % < 10%: cast Life Tap | 6.7 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | cast Shadow Bolt | 13.9 |
+| 11 | cast Shadow Bolt | 14.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -111,13 +111,13 @@ Damage by ability:
 
 | Ability | [`affliction-dot-raid`](affliction-dot-raid.md) |
 |---|---|
-| Shadow Bolt | 46% |
+| Shadow Bolt | 47% |
 | Bane of Agony | 18% |
 | Corruption | 17% |
-| Immolate | 11% |
-| Pet: Auto Attack | 6% |
-| Pet: Lash of Pain | 1% |
+| Immolate | 12% |
+| Pet: Auto Attack | 5% |
 | Searing Pain | 1% |
+| Pet: Lash of Pain | 1% |
 
 ## Notes
 

@@ -53,45 +53,80 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`arms-2h-raid`](builds/arms-2h-raid.md) (ours: hand draft, 173 DPS), [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer, 173 DPS), *DPS* (community simulator, 162 DPS), *Fury 17/34/0* (community simulator, 157 DPS)
+### [`arms-2h-raid`](builds/arms-2h-raid.md) (ours: hand draft, 311 DPS), *DPS* (community simulator, 292 DPS), *Fury 17/34/0* (community simulator, 281 DPS)
 
-| # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](builds/arms-2h-raid.md) casts/min | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) casts/min | *DPS* casts/min | *Fury 17/34/0* casts/min |
-|---|---|---|---|---|---|
-| 1 | if execute phase (E20): cast Execute | 4.0 | 4.0 | 3.6 | 3.5 |
-| 2 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
-| 3 | cast Dense Dynamite | as ready | as ready | as ready | as ready |
-| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 | 0.3 | 0.3 | 0.3 |
-| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready | as ready |
-| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready | as ready |
-| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
-| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
-| 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 10 | if number of targets > 1: cast Whirlwind | 3.3 | 3.3 | 3.3 | 3.2 |
-| 11 | cast Bloodthirst | 3.0 | 3.0 | 3.0 | 2.9 |
-| 12 | cast Death Wish | 0.3 | 0.3 | 0.3 | 0.3 |
-| 13 | cast Whirlwind | 3.3 | 3.3 | 3.3 | 3.2 |
-| 14 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 | 0.3 |
-| 15 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.7 | 5.7 | 5.7 | 5.7 |
+| # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](builds/arms-2h-raid.md) casts/min | *DPS* casts/min | *Fury 17/34/0* casts/min |
+|---|---|---|---|---|
+| 1 | if execute phase (E20): cast Execute | 4.7 | 4.3 | 4.2 |
+| 2 | cast Goblin Sapper Charge | as ready | as ready | as ready |
+| 3 | cast Dense Dynamite | as ready | as ready | as ready |
+| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 | 0.3 | 0.3 |
+| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready | as ready |
+| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready | as ready |
+| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready |
+| 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready | as ready | as ready |
+| 10 | if number of targets > 1: cast Whirlwind | 3.6 | 3.6 | 3.5 |
+| 11 | cast Bloodthirst | 3.5 | 3.5 | 3.4 |
+| 12 | cast Death Wish | 0.3 | 0.3 | 0.3 |
+| 13 | cast Whirlwind | 3.6 | 3.6 | 3.5 |
+| 14 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 |
+| 15 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.9 | 5.9 | 6.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
-| Ability | [`arms-2h-raid`](builds/arms-2h-raid.md) | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) | *DPS* | *Fury 17/34/0* |
-|---|---|---|---|---|
-| Auto Attack | 52% | 52% | 54% | 54% |
-| Execute | 19% | 19% | 17% | 17% |
-| Whirlwind | 11% | 11% | 12% | 11% |
-| Bloodthirst | 9% | 9% | 9% | 9% |
-| Deep Wound | 7% | 7% | 7% | 7% |
-| Dragonbreath Chili | 1% | 1% | 1% | 1% |
-| Hamstring | 0% | 0% | 0% | 0% |
+| Ability | [`arms-2h-raid`](builds/arms-2h-raid.md) | *DPS* | *Fury 17/34/0* |
+|---|---|---|---|
+| Auto Attack | 57% | 59% | 59% |
+| Execute | 16% | 13% | 13% |
+| Whirlwind | 12% | 12% | 11% |
+| Bloodthirst | 10% | 10% | 10% |
+| Deep Wound | 5% | 6% | 6% |
+| Dragonbreath Chili | 0% | 0% | 0% |
+| Hamstring | 0% | 0% | 0% |
 
-### *Arms 39/12/0* (community simulator, 153 DPS)
+### [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) (ours: optimizer, 310 DPS)
+
+| # | Priority (the first line whose condition holds is cast) | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) casts/min |
+|---|---|---|
+| 1 | if execute phase (E20): cast Execute | 4.7 |
+| 2 | cast Goblin Sapper Charge | as ready |
+| 3 | cast Dense Dynamite | as ready |
+| 4 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 |
+| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
+| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
+| 10 | if number of targets > 1: cast Whirlwind | 3.4 |
+| 11 | cast Spearing Strike | 2.4 |
+| 12 | cast Bloodthirst | 2.6 |
+| 13 | cast Death Wish | 0.3 |
+| 14 | cast Whirlwind | 3.4 |
+| 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
+
+Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent).
+
+Damage by ability:
+
+| Ability | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) |
+|---|---|
+| Auto Attack | 58% |
+| Execute | 16% |
+| Whirlwind | 11% |
+| Bloodthirst | 7% |
+| Deep Wound | 5% |
+| Spearing Strike | 3% |
+| Dragonbreath Chili | 0% |
+
+### *Arms 39/12/0* (community simulator, 268 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Arms 39/12/0* casts/min |
 |---|---|---|
-| 1 | if execute phase (E20): cast Execute | 3.2 |
+| 1 | if execute phase (E20): cast Execute | 3.7 |
 | 2 | cast Goblin Sapper Charge | as ready |
 | 3 | cast Dense Dynamite | as ready |
 | 4 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -99,12 +134,12 @@ Damage by ability:
 | 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 9 | if number of targets > 1: cast Whirlwind | 2.9 |
-| 10 | cast Mortal Strike | 1.6 |
+| 9 | if number of targets > 1: cast Whirlwind | 2.6 |
+| 10 | cast Mortal Strike | 2.2 |
 | 11 | cast Spearing Strike | 2.3 |
-| 12 | cast Whirlwind | 2.9 |
+| 12 | cast Whirlwind | 2.6 |
 | 13 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 4.7 |
+| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -112,13 +147,13 @@ Damage by ability:
 
 | Ability | *Arms 39/12/0* |
 |---|---|
-| Auto Attack | 52% |
-| Execute | 17% |
-| Whirlwind | 11% |
+| Auto Attack | 56% |
+| Execute | 13% |
+| Mortal Strike | 10% |
+| Whirlwind | 9% |
 | Deep Wound | 8% |
-| Mortal Strike | 8% |
 | Spearing Strike | 3% |
-| Dragonbreath Chili | 1% |
+| Dragonbreath Chili | 0% |
 
 ## fury-dw-raid
 
@@ -176,15 +211,15 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`fury-dw-raid`](builds/fury-dw-raid.md) (ours: hand draft, 221 DPS), [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer, 221 DPS), *DPS* (community simulator, 212 DPS), *Fury 17/34/0* (community simulator, 197 DPS)
+### [`fury-dw-raid`](builds/fury-dw-raid.md) (ours: hand draft, 380 DPS), [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) (ours: optimizer, 380 DPS), *DPS* (community simulator, 362 DPS), *Fury 17/34/0* (community simulator, 338 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`fury-dw-raid`](builds/fury-dw-raid.md) casts/min | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) casts/min | *DPS* casts/min | *Fury 17/34/0* casts/min |
 |---|---|---|---|---|---|
 | 1 | if (time left in the fight ≤ 30s or time left in the fight ≥ 211.5s): cast Death Wish | 0.3 | 0.3 | 0.3 | 0.3 |
-| 2 | if execute phase (E20): cast Execute | 5.8 | 5.8 | 5.1 | 5.0 |
-| 3 | cast Bloodthirst | 4.6 | 4.6 | 4.6 | 4.4 |
+| 2 | if execute phase (E20): cast Execute | 6.5 | 6.5 | 4.8 | 4.7 |
+| 3 | cast Bloodthirst | 5.7 | 5.7 | 5.7 | 5.4 |
 | 4 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 | 0.3 | 0.3 | 0.3 |
-| 5 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.6 | 7.6 | 7.6 | 7.7 |
+| 5 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 7.1 | 7.1 | 7.1 | 7.2 |
 | 6 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 7 | cast Dense Dynamite | as ready | as ready | as ready | as ready |
 | 8 | if false: cast Recklessness | 0.3 | 0.3 | 0.3 | 0.3 |
@@ -193,11 +228,11 @@ The tables below are the training-dummy rotation, filtered per build:
 | 11 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
 | 12 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready | as ready | as ready |
 | 13 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 14 | cast Whirlwind | 3.3 | 3.3 | 3.3 | 3.2 |
-| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 3.3 | 3.3 | 3.3 | 3.2 |
-| 16 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 0.3 | 0.3 | 0.3 | 0.3 |
+| 14 | cast Whirlwind | 3.5 | 3.5 | 3.6 | 3.5 |
+| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 3.5 | 3.5 | 3.6 | 3.5 |
+| 16 | if number of targets = 1 and (rage ≥ 60 or execute phase (E20)) and time left in the fight ≥ 40s: cast Heroic Strike | 0.6 | 0.6 | 0.6 | 0.5 |
 | 17 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 | 0.3 |
-| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.6 | 7.6 | 7.6 | 7.7 |
+| 18 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.1 | 7.1 | 7.1 | 7.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
@@ -205,22 +240,22 @@ Damage by ability:
 
 | Ability | [`fury-dw-raid`](builds/fury-dw-raid.md) | [`opt-fury-dw-raid-raid-dps`](builds/opt-fury-dw-raid-raid-dps.md) | *DPS* | *Fury 17/34/0* |
 |---|---|---|---|---|
-| Auto Attack | 46% | 46% | 49% | 50% |
-| Execute | 33% | 33% | 29% | 30% |
-| Bloodthirst | 10% | 10% | 10% | 10% |
-| Whirlwind | 7% | 7% | 8% | 5% |
-| Deep Wound | 2% | 2% | 3% | 3% |
-| Dragonbreath Chili | 1% | 1% | 1% | 1% |
+| Auto Attack | 54% | 54% | 56% | 58% |
+| Execute | 23% | 23% | 18% | 19% |
+| Bloodthirst | 12% | 12% | 12% | 12% |
+| Whirlwind | 8% | 8% | 9% | 6% |
+| Deep Wound | 2% | 2% | 2% | 3% |
 | Heroic Strike | 1% | 1% | 1% | 1% |
+| Dragonbreath Chili | 1% | 1% | 1% | 1% |
 | Hamstring | 0% | 0% | 0% | 0% |
 
-### *Arms 39/12/0* (community simulator, 136 DPS)
+### *Arms 39/12/0* (community simulator, 234 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | *Arms 39/12/0* casts/min |
 |---|---|---|
-| 1 | if execute phase (E20): cast Execute | 3.4 |
+| 1 | if execute phase (E20): cast Execute | 3.5 |
 | 2 | if time left in the fight ≤ 22.5s: cast Recklessness | 0.3 |
-| 3 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 6.0 |
+| 3 | if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight ≥ 20s: cast Sunder Armor | 6.1 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
 | 6 | if false: cast Recklessness | 0.3 |
@@ -229,12 +264,12 @@ Damage by ability:
 | 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 10 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 11 | if (time left in the fight ≤ 22.5s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
-| 12 | cast Whirlwind | 2.3 |
-| 13 | cast Mortal Strike | 1.2 |
+| 12 | cast Whirlwind | 2.6 |
+| 13 | cast Mortal Strike | 1.7 |
 | 14 | cast Spearing Strike | 2.0 |
-| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 2.3 |
+| 15 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 2.6 |
 | 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.0 |
+| 17 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Bloodthirst (needs the Bloodthirst talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Heroic Strike, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights).
 
@@ -242,13 +277,14 @@ Damage by ability:
 
 | Ability | *Arms 39/12/0* |
 |---|---|
-| Auto Attack | 58% |
-| Execute | 24% |
-| Whirlwind | 5% |
-| Mortal Strike | 5% |
-| Deep Wound | 5% |
+| Auto Attack | 64% |
+| Execute | 17% |
+| Whirlwind | 6% |
+| Mortal Strike | 6% |
+| Deep Wound | 4% |
 | Spearing Strike | 2% |
-| Dragonbreath Chili | 2% |
+| Dragonbreath Chili | 1% |
+| Heroic Strike | 0% |
 
 ## prot-tank (tank)
 
@@ -348,14 +384,14 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`arms-battle-raid`](builds/arms-battle-raid.md) (ours: hand draft, 221 DPS)
+### [`arms-battle-raid`](builds/arms-battle-raid.md) (ours: hand draft, 378 DPS)
 
 Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](builds/arms-battle-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Overpower | 5.4 |
-| 2 | if execute phase (E20): cast Execute | 3.4 |
+| 1 | cast Overpower | 6.1 |
+| 2 | if execute phase (E20): cast Execute | 3.9 |
 | 3 | cast Goblin Sapper Charge | as ready |
 | 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -364,13 +400,13 @@ Before the pull: at -1s: cast Battle Stance.
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
 | 10 | if not Rend is on the target: cast Rend | 2.5 |
-| 11 | cast Slam | 2.7 |
+| 11 | cast Slam | 2.8 |
 | 12 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.9 |
-| 14 | if not Berserker Stance is up: cast Berserker Stance | 25.1 |
+| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 9.0 |
+| 14 | if not Berserker Stance is up: cast Berserker Stance | 25.0 |
 | 15 | if not Battle Stance is up: cast Battle Stance | 25.2 |
-| 16 | cast Spearing Strike | 1.7 |
-| 17 | cast Sunder Armor | 7.9 |
+| 16 | cast Spearing Strike | 1.9 |
+| 17 | cast Sunder Armor | 9.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -378,23 +414,23 @@ Damage by ability:
 
 | Ability | [`arms-battle-raid`](builds/arms-battle-raid.md) |
 |---|---|
-| Auto Attack | 38% |
-| Overpower | 24% |
-| Execute | 14% |
+| Auto Attack | 43% |
+| Overpower | 25% |
+| Execute | 12% |
 | Slam | 9% |
-| Deep Wound | 7% |
-| Rend | 4% |
+| Deep Wound | 5% |
+| Rend | 3% |
 | Spearing Strike | 2% |
-| Dragonbreath Chili | 1% |
+| Dragonbreath Chili | 0% |
 
-### *Arms 39/12/0* (community simulator, 215 DPS)
+### *Arms 39/12/0* (community simulator, 369 DPS)
 
 Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | *Arms 39/12/0* casts/min |
 |---|---|---|
-| 1 | cast Overpower | 5.1 |
-| 2 | if execute phase (E20): cast Execute | 2.9 |
+| 1 | cast Overpower | 6.1 |
+| 2 | if execute phase (E20): cast Execute | 3.3 |
 | 3 | cast Goblin Sapper Charge | as ready |
 | 4 | cast Dense Dynamite | as ready |
 | 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
@@ -402,15 +438,15 @@ Before the pull: at -1s: cast Battle Stance.
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | cast Mortal Strike | 0.8 |
+| 10 | cast Mortal Strike | 0.5 |
 | 11 | if not Rend is on the target: cast Rend | 2.7 |
-| 12 | cast Slam | 2.6 |
+| 12 | cast Slam | 2.8 |
 | 13 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 6.4 |
-| 15 | if not Berserker Stance is up: cast Berserker Stance | 25.4 |
+| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.9 |
+| 15 | if not Berserker Stance is up: cast Berserker Stance | 25.3 |
 | 16 | if not Battle Stance is up: cast Battle Stance | 25.5 |
-| 17 | cast Spearing Strike | 1.5 |
-| 18 | cast Sunder Armor | 6.4 |
+| 17 | cast Spearing Strike | 1.8 |
+| 18 | cast Sunder Armor | 7.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
@@ -418,12 +454,12 @@ Damage by ability:
 
 | Ability | *Arms 39/12/0* |
 |---|---|
-| Auto Attack | 38% |
-| Overpower | 24% |
-| Execute | 12% |
+| Auto Attack | 44% |
+| Overpower | 25% |
+| Execute | 9% |
 | Slam | 9% |
-| Deep Wound | 7% |
-| Rend | 5% |
-| Mortal Strike | 3% |
+| Deep Wound | 6% |
+| Rend | 3% |
 | Spearing Strike | 2% |
-| Dragonbreath Chili | 1% |
+| Mortal Strike | 2% |
+| Dragonbreath Chili | 0% |

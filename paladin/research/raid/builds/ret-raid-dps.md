@@ -68,15 +68,15 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 
 ## Rank among our builds and the community simulator's
 
-**2 of 5** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 5** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 9/8/34 | 350 | +0.0% | 802 | +0.0% | 21 s |
-| 2 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 349 | -0.5% | 779 | -2.9% | 4 s |
-| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 346 | -1.2% | 802 | -0.0% | 22 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 341 | -2.7% | 776 | -3.2% | 11 s |
-| 5 | *Retribution 9/0/42* | community simulator | - | 338 | -3.4% | 768 | -4.3% | 21 s |
+| 1 | *P4/P5 Ret* | community simulator | - | 528 | +0.0% | 990 | -0.3% | 4 s |
+| 2 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 19/0/32 | 527 | -0.1% | 988 | -0.5% | 4 s |
+| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 523 | -0.9% | 975 | -1.7% | 2 s |
+| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 519 | -1.7% | 993 | +0.0% | 14 s |
+| 5 | *Retribution 9/0/42* | community simulator | - | 513 | -2.9% | 971 | -2.2% | 7 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -105,14 +105,14 @@ Before the pull: at -1.5s: cast Seal of Command.
 
 | # | Priority (the first line whose condition holds is cast) | [`ret-raid-dps`](ret-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 2.7 |
+| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 3.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 2.8 |
-| 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 2.8 |
-| 5 | cast Hammer of Wrath | 1.0 |
+| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 3.0 |
+| 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 3.0 |
+| 5 | cast Hammer of Wrath | 1.3 |
 | 6 | cast Holy Strike | 6.0 |
 | 7 | cast Consecration | 6.3 |
-| 8 | cast Consecration | 0.8 |
+| 8 | cast Consecration | 0.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
 
@@ -120,15 +120,15 @@ Damage by ability:
 
 | Ability | [`ret-raid-dps`](ret-raid-dps.md) |
 |---|---|
-| Auto Attack | 23% |
-| Consecration | 18% |
-| Judgement of Righteousness | 17% |
+| Consecration | 20% |
+| Auto Attack | 18% |
+| Seal of Righteousness | 17% |
+| Judgement of Righteousness | 16% |
 | Holy Strike | 16% |
-| Seal of Righteousness | 14% |
-| Seal of Command | 5% |
-| Hammer of Wrath | 3% |
-| Dragonbreath Chili | 2% |
-| Judgement of Command | 1% |
+| Hammer of Wrath | 4% |
+| Seal of Command | 4% |
+| Dragonbreath Chili | 3% |
+| Judgement of Command | 3% |
 
 ## Notes
 

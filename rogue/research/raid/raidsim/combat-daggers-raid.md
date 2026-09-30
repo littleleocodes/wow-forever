@@ -4,9 +4,16 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `combat-raid` | 16/33/2 | 422 | 20 | +0.0% | 299 | 0 | +76.5% |
-| `opt-combat-daggers-raid-raid-dps` | 16/33/2 | 403 | 19 | -4.5% | 286 | 0 | +77.2% |
+| `combat-raid` | 16/33/2 | 422 | 20 | +0.0% | 299 | 0 | +84.9% |
+| `opt-combat-daggers-raid-raid-dps` | 17/32/2 | 416 | 19 | -1.4% | 295 | 0 | +85.7% |
+| `cand-combat-daggers-raid-r7` | 17/32/2 | 416 | 19 | -1.4% | 295 | 0 | +85.7% |
+| `cand-combat-daggers-raid-r1` | 16/33/2 | 403 | 19 | -4.5% | 286 | 0 | +77.2% |
+| `cand-combat-daggers-raid-r5` | 17/32/2 | 400 | 19 | -5.2% | 284 | 0 | +78.1% |
+| `cand-combat-daggers-raid-r6` | 17/32/2 | 400 | 19 | -5.2% | 284 | 0 | +78.1% |
 | `combat-daggers-raid` | 16/33/2 | 399 | 19 | -5.4% | 283 | 0 | +77.9% |
+| `cand-combat-daggers-raid-r3` | 16/33/2 | 399 | 19 | -5.4% | 283 | 0 | +77.9% |
+| `cand-combat-daggers-raid-r2` | 16/33/2 | 398 | 19 | -5.5% | 283 | 0 | +77.4% |
+| `cand-combat-daggers-raid-r4` | 17/32/2 | 398 | 19 | -5.6% | 283 | 0 | +77.8% |
 | sim preset: Combat Dual-Wield 15/33/3 | - | 394 | 18 | -6.5% | 280 | 0 | - |
 | sim preset: Backstab | - | 371 | 18 | -12.0% | 263 | 0 | - |
 | sim preset: Mutilate | - | 371 | 19 | -12.1% | 263 | 0 | - |
@@ -33,8 +40,15 @@ Mapped onto the spec model's sources: `backstab` 38%, `white_mh` 32%, `white_oh`
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - combat-raid: `005303121001-32330310001515231-002`
-- opt-combat-daggers-raid-raid-dps: `00530310301-32330310001515231-002`
+- opt-combat-daggers-raid-raid-dps: `005323121-30531300000515231-002`
+- cand-combat-daggers-raid-r7: `005323121-30531300000515231-002`
+- cand-combat-daggers-raid-r1: `00530310301-32330310001515231-002`
+- cand-combat-daggers-raid-r5: `005323103-32330310000515231-002`
+- cand-combat-daggers-raid-r6: `005323103-30531300000515231-002`
 - combat-daggers-raid: `005323102-30531300001515231-002`
+- cand-combat-daggers-raid-r3: `005323102-32330310001515231-002`
+- cand-combat-daggers-raid-r2: `00532310101-32330310001515231-002`
+- cand-combat-daggers-raid-r4: `005323103-32330310001415231-002`
 - sim preset: Combat Dual-Wield 15/33/3: `1053231-22530300001515231-012`
 - sim preset: Backstab: `005302005-30230320201515231-102`
 - sim preset: Mutilate: `00530310551021051-302303202004`

@@ -19,10 +19,10 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 
 | Build | Split | Profile |
 |---|---|---|
+| [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 23/0/28 | raid-heal |
+| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 19/0/32 | raid-dps |
 | [opt-ret-dps-parse](builds/opt-ret-dps-parse.md) | 9/8/34 | parse |
 | [opt-prot-tank-raid-tank](builds/opt-prot-tank-raid-tank.md) | 0/23/28 | raid-tank |
-| [opt-ret-dps-raid-dps](builds/opt-ret-dps-raid-dps.md) | 17/0/34 | raid-dps |
-| [opt-holy-heal-raid-heal](builds/opt-holy-heal-raid-heal.md) | 23/0/28 | raid-heal |
 
 Classic Era reference builds: [holy-raid-healer](../talents/classic-baseline/holy-raid-healer.md), [ret-raid-dps](../talents/classic-baseline/ret-raid-dps.md), [prot-tank](../talents/classic-baseline/prot-tank.md).
 
@@ -34,11 +34,11 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | ours: optimizer | 9/8/34 | 350 | +0.0% | 802 | +0.0% | 21 s |
-| 2 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 349 | -0.5% | 779 | -2.9% | 4 s |
-| 3 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 346 | -1.2% | 802 | -0.0% | 22 s |
-| 4 | *P4/P5 Ret* | community simulator | - | 341 | -2.7% | 776 | -3.2% | 11 s |
-| 5 | *Retribution 9/0/42* | community simulator | - | 338 | -3.4% | 768 | -4.3% | 21 s |
+| 1 | *P4/P5 Ret* | community simulator | - | 528 | +0.0% | 990 | -0.3% | 4 s |
+| 2 | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | ours: optimizer | 19/0/32 | 527 | -0.1% | 988 | -0.5% | 4 s |
+| 3 | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 523 | -0.9% | 975 | -1.7% | 2 s |
+| 4 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 519 | -1.7% | 993 | +0.0% | 14 s |
+| 5 | *Retribution 9/0/42* | community simulator | - | 513 | -2.9% | 971 | -2.2% | 7 s |
 
 **prot-tank** (tank)
 
@@ -54,7 +54,7 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 287 | +0.0% | 585 | +0.0% | 0 s |
+| 1 | [`ret-raid-dps`](builds/ret-raid-dps.md) | ours: hand draft | 17/0/34 | 444 | +0.0% | 795 | +0.0% | 0 s |
 
 ## New spells and builds
 
@@ -66,19 +66,19 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 |---|---|---|---|---|---|---|---|---|
 | Light's Vigil | Holy | 60 | 6 sec | Applies Light's Vigil to the target for 30 sec. | not cast by any raced build | - | not cast |  |
 | Voice of Truth | Holy | 20 | 3 min | Grants you immunity to Silence and Interrupt effects. | not cast by any raced build | - | not cast | Silence and interrupt immunity: utility. |
-| Seal of Fury | Protection | 58 | - | Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. | 8% of the damage, 2.3 casts/min: [`ret-raid-dps`](builds/ret-raid-dps.md) (seal-of-fury-raid) | - | not cast |  |
+| Seal of Fury | Protection | 58 | - | Fills the Paladin with divine fury for 30 sec, causing melee attacks to deal an additional 35 Holy damage. | 10% of the damage, 2.3 casts/min: [`ret-raid-dps`](builds/ret-raid-dps.md) (seal-of-fury-raid) | - | not cast |  |
 | Swift Judgement | Protection | 25 | 1 min | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. | no damage of its own, 1.0 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | - | not cast | Ends Judgement's cooldown (1 min); the rotation search offers it. |
 | Templar's Bulwark | Protection | 30 | 5 min | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. | no damage of its own, 0.3 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | prot-tank (raid): insert at the top: cast Templar's Bulwark (+1.4%) | not cast | A tank absorb cooldown; the Protection rotation search offers it. |
-| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 10% of the damage, 5.7 casts/min: [`prot-tank`](builds/prot-tank.md) (prot-tank) | ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 18% of the damage, 2.4 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
+| Holy Strike | Retribution | 60 | 10 sec | An instant strike that causes 50% weapon damage plus an additional 40 to 53 as Holy damage. | 15% of the damage, 6.0 casts/min: *P4/P5 Ret* (ret-dps) | ret-dps (raid): move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%) | 18% of the damage, 2.4 casts a kill: `opt-ret-dps-leveling-aoe` at 60 (ret-dps-aoe) | The new baseline Retribution strike; every paladin rotation of the simulator casts it. |
 
 ### Builds searched around them
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist | [`ret-raid-dps`](builds/ret-raid-dps.md) (playing Seal of Fury) | 17/0/34 | 287 | 585 | -18.1% on the dummy; -27.1% in a raid. As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build. | from `ret-raid-dps`, 0 moves | - |
+| Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist | [`ret-raid-dps`](builds/ret-raid-dps.md) (playing Seal of Fury) | 17/0/34 | 444 | 795 | -15.8% on the dummy; the best in a raid. As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build. | from `ret-raid-dps`, 0 moves | - |
 | Holy Shock and Light's Vigil from the Holy tree on a Retribution rotation (a Shockadin) | none | - | - | - | The talent search from a 21/0/30 Holy Shock start moved every point back to the Retribution draft's talents: Holy Shock never paid for its points. | from `start-shockadin-21-0-30`, 3 moves | - |
 
-The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 350 DPS; in a raid: [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ret-dps), 802 DPS.
+The class's best raid DPS build on the training dummy: *P4/P5 Ret* (ret-dps), 528 DPS; in a raid: [`ret-raid-dps`](builds/ret-raid-dps.md) (ret-dps), 993 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -102,18 +102,19 @@ The class's best raid DPS build on the training dummy: [`opt-ret-dps-raid-dps`](
 | `prot-tank` | raid | sim preset: P5 Prot | - | 416 | -19.7% | 20 | - |
 | `prot-tank` | raid | sim preset: Protection 0/45/6 | - | 400 | -22.8% | 17 | - |
 | `prot-tank` | raid | `cand-prot-tank-hand-2026-09-26` | 13/38/0 | 396 | -23.7% | 21 | +33% |
-| `ret-dps` | dummy | `opt-ret-dps-raid-dps` | 9/8/34 | 350 | +0.0% | 21 | +93% |
-| `ret-dps` | dummy | `cand-ret-dps-r3` | 9/8/34 | 350 | +0.0% | 21 | +93% |
-| `ret-dps` | dummy | `cand-ret-dps-r5` | 9/8/34 | 350 | +0.0% | 21 | +93% |
-| `ret-dps` | dummy | `ret-raid-dps` | 17/0/34 | 349 | -0.5% | 4 | +91% |
-| `ret-dps` | dummy | `cand-ret-dps-r1` | 17/0/34 | 349 | -0.5% | 4 | +91% |
-| `ret-dps` | dummy | `cand-ret-dps-r4` | 17/0/34 | 347 | -0.9% | 14 | +91% |
-| `ret-dps` | dummy | `ret-full-buffs-raid` | 10/8/33 | 346 | -1.2% | 22 | +93% |
-| `ret-dps` | dummy | `cand-ret-dps-hand-2026-09-27` | 10/8/33 | 346 | -1.2% | 22 | +93% |
-| `ret-dps` | dummy | sim preset: P4/P5 Ret | - | 341 | -2.7% | 11 | - |
-| `ret-dps` | dummy | sim preset: Retribution 9/0/42 | - | 338 | -3.4% | 21 | - |
-| `ret-dps` | dummy | `cand-ret-dps-r2` | 11/8/32 | 336 | -4.1% | 2 | +89% |
-| `seal-of-fury-raid` | dummy | `ret-raid-dps` | 17/0/34 | 287 | +0.0% | 0 | - |
+| `ret-dps` | dummy | `cand-ret-dps-r4` | 17/0/34 | 529 | +0.0% | 4 | +85% |
+| `ret-dps` | dummy | sim preset: P4/P5 Ret | - | 528 | -0.3% | 4 | - |
+| `ret-dps` | dummy | `opt-ret-dps-raid-dps` | 19/0/32 | 527 | -0.3% | 4 | +86% |
+| `ret-dps` | dummy | `cand-ret-dps-r6` | 19/0/32 | 527 | -0.3% | 4 | +86% |
+| `ret-dps` | dummy | `ret-full-buffs-raid` | 10/8/33 | 523 | -1.2% | 2 | +83% |
+| `ret-dps` | dummy | `cand-ret-dps-hand-2026-09-27` | 10/8/33 | 523 | -1.2% | 2 | +83% |
+| `ret-dps` | dummy | `ret-raid-dps` | 17/0/34 | 519 | -1.9% | 14 | +85% |
+| `ret-dps` | dummy | `cand-ret-dps-r1` | 17/0/34 | 519 | -1.9% | 14 | +85% |
+| `ret-dps` | dummy | `cand-ret-dps-r3` | 9/8/34 | 516 | -2.5% | 7 | +83% |
+| `ret-dps` | dummy | `cand-ret-dps-r5` | 9/8/34 | 516 | -2.5% | 7 | +83% |
+| `ret-dps` | dummy | sim preset: Retribution 9/0/42 | - | 513 | -3.1% | 7 | - |
+| `ret-dps` | dummy | `cand-ret-dps-r2` | 11/8/32 | 496 | -6.3% | 5 | +78% |
+| `seal-of-fury-raid` | dummy | `ret-raid-dps` | 17/0/34 | 444 | +0.0% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
 
@@ -121,24 +122,24 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
-| `ret-dps` | 8.2-11.0% | 0.51 / 0.25 | 1.2 | Holy Conduit 11.4%, Sanctified Judgement 4.7%, Benediction 3.2%, Reverence 1.0% |
+| `ret-dps` | 3.9-6.0% | 0.42 / 0.20 | 2.1 | Holy Conduit 12.1%, Sanctified Judgement 3.0%, Benediction 1.3%, Reverence 1.0% |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
 | Spec model | Build | Split | Dummy | Dummy 60 | Raid | Maximum | Max 60 s |
 |---|---|---|---|---|---|---|---|
-| `prot-tank` | `prot-tank` | 0/23/28 | 151 | 184 | 496 | 496 | 500 |
-| `prot-tank` | `opt-prot-tank-raid-tank` | 0/23/28 | 151 | 184 | 496 | 496 | 500 |
+| `prot-tank` | `opt-prot-tank-raid-tank` | 0/23/28 | 158 | 188 | 502 | 502 | 504 |
+| `prot-tank` | `prot-tank` | 0/23/28 | 153 | 184 | 518 | 518 | 520 |
 | `prot-tank` | sim preset: P4 Prot | - | 134 | 162 | 422 | 422 | 439 |
 | `prot-tank` | sim preset: P5 Prot | - | 131 | 158 | 416 | 416 | 438 |
 | `prot-tank` | sim preset: Protection 0/45/6 | - | 126 | 152 | 400 | 400 | 416 |
-| `ret-dps` | `opt-ret-dps-raid-dps` | 9/8/34 | 350 | 400 | 802 | 802 | 791 |
-| `ret-dps` | `opt-ret-dps-parse` | 9/8/34 | 350 | 400 | 802 | 802 | 791 |
-| `ret-dps` | `ret-raid-dps` | 17/0/34 | 349 | 413 | 779 | 779 | 762 |
-| `ret-dps` | `ret-full-buffs-raid` | 10/8/33 | 346 | 400 | 802 | 802 | 790 |
-| `ret-dps` | sim preset: P4/P5 Ret | - | 341 | 410 | 776 | 776 | 760 |
-| `ret-dps` | sim preset: Retribution 9/0/42 | - | 338 | 399 | 768 | 768 | 756 |
-| `seal-of-fury-raid` | `ret-raid-dps` | 17/0/34 | 287 | 318 | 585 | 585 | 588 |
+| `ret-dps` | sim preset: P4/P5 Ret | - | 528 | 590 | 990 | 990 | 997 |
+| `ret-dps` | `opt-ret-dps-raid-dps` | 19/0/32 | 527 | 584 | 988 | 988 | 994 |
+| `ret-dps` | `ret-full-buffs-raid` | 10/8/33 | 523 | 573 | 975 | 975 | 994 |
+| `ret-dps` | `ret-raid-dps` | 17/0/34 | 519 | 587 | 993 | 993 | 999 |
+| `ret-dps` | `opt-ret-dps-parse` | 9/8/34 | 516 | 572 | 974 | 974 | 994 |
+| `ret-dps` | sim preset: Retribution 9/0/42 | - | 513 | 572 | 971 | 971 | 991 |
+| `seal-of-fury-raid` | `ret-raid-dps` | 17/0/34 | 444 | 467 | 795 | 795 | 805 |
 
 **Classic Era check** — [`../talents/classic-baseline/raidsim/`](../talents/classic-baseline/raidsim/): the same run of our Classic-era community builds through the upstream wowsims/classic simulator (commit 7779ebb, its phase-1 presets), which the scorer's classic-era models are calibrated against. Our builds there are the community's; a preset ahead of them means the simulator's rotation prefers other talents.
 
@@ -177,7 +178,7 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
 | Raid healer | holy-heal | [23/0/28](builds/opt-holy-heal-raid-heal.md) (+101.9%) | [holy-raid-healer](builds/holy-raid-healer.md) |
-| Raid DPS, Retribution | ret-dps | [17/0/34](builds/opt-ret-dps-raid-dps.md) (+91.1%) | [ret-raid-dps](builds/ret-raid-dps.md) |
+| Raid DPS, Retribution | ret-dps | [19/0/32](builds/opt-ret-dps-raid-dps.md) (+86.1%) | [ret-raid-dps](builds/ret-raid-dps.md) |
 | Raid main tank | prot-tank | [0/23/28](builds/opt-prot-tank-raid-tank.md) (+47.4%) | [prot-tank](builds/prot-tank.md) |
 
 Model findings: Retribution raid 10/8/33 matches the hand draft's split (Seal of Command, Vengeance, Champion of the Light, Twist of Light, Two-Handed Weapon Specialization). The healer 23/0/28 spends its second half in Retribution (Champion of the Light, Conviction, Benediction, Sanctified Judgement) rather than Protection. Protection 2/31/18 is Holy Shield, Iron Creed and Templar's Bulwark plus Retribution threat (Conviction, Deflection, Crusade).

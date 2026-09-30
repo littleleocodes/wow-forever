@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `parse`: score +93.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-dps` and profile `parse`: score +96.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `balance-
 
 ## Core talents (priority order)
 
-1. **Vengeance** — Removing it costs 20.3 points of score in this model.
-2. **Moonfury** — Removing it costs 16.3 points of score in this model.
-3. **Insect Swarm** — Removing it costs 15.6 points of score in this model.
+1. **Vengeance** — Removing it costs 20.5 points of score in this model.
+2. **Moonfury** — Removing it costs 16.6 points of score in this model.
+3. **Insect Swarm** — Removing it costs 15.1 points of score in this model.
 4. **Moonglow** — Removing it costs 11.1 points of score in this model.
-5. **Moonkin Form** — Removing it costs 10.6 points of score in this model.
-6. **Naturalist** — Removing it costs 8.5 points of score in this model.
-7. **Nature's Reach** — Removing it costs 8.3 points of score in this model.
-8. **Improved Starfire** — Removing it costs 8.0 points of score in this model.
+5. **Improved Starfire** — Removing it costs 11.1 points of score in this model.
+6. **Moonkin Form** — Removing it costs 10.8 points of score in this model.
+7. **Naturalist** — Removing it costs 8.7 points of score in this model.
+8. **Nature's Reach** — Removing it costs 8.5 points of score in this model.
 
 ## Rotation
 
