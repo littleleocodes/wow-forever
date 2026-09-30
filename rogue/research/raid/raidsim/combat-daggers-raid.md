@@ -30,7 +30,7 @@
 | Dense Sharpening Stone | 3.1% |
 | Eviscerate | 2.8% |
 | Dragonbreath Chili | 2.1% |
-| item 10646 | 1.6% |
+| Goblin Sapper Charge | 1.6% |
 
 Mapped onto the spec model's sources: `backstab` 40%, `white_mh` 33%, `white_oh` 18%, `poisons` 7%, `eviscerate` 3%; 7% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

@@ -17,8 +17,8 @@
 | Execute | 17.8% |
 | Bloodthirst | 13.1% |
 | Whirlwind | 3.4% |
-| spell 21140 | 0.6% |
-| item 10646 | 0.6% |
+| Fatal Wound | 0.6% |
+| Goblin Sapper Charge | 0.6% |
 | Hamstring | 0.5% |
 | Deep Wounds | 0.4% |
 | Dragonbreath Chili | 0.2% |

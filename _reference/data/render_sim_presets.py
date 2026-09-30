@@ -10,6 +10,9 @@ These are the simulator maintainers' presets for the beta, not measurements; `re
 """
 import datetime
 import json
+import sys as _sys
+_sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent / 'raidsim'))
+import id_names  # noqa: E402
 import os
 import pathlib
 import re
@@ -64,13 +67,13 @@ class Names:
         if sid in self.spells:
             return self.spells[sid]
         self.unknown.add(sid)
-        return f"spell {sid}"
+        return id_names.spell(sid)
 
     def item(self, iid):
         it = self.items.get(iid)
         if it:
             return it["name"]
-        return self.consumables.get(iid, f"item {iid}")
+        return self.consumables.get(iid) or id_names.item(iid)
 
 
 # ------------------------------------------------------------------ APL translation

@@ -105,7 +105,7 @@ Damage by ability:
 | Dense Sharpening Stone | 5% |
 | Eviscerate | 2% |
 | Dragonbreath Chili | 2% |
-| item 10646 | 2% |
+| Goblin Sapper Charge | 2% |
 
 ## Notes
 

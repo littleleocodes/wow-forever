@@ -117,7 +117,7 @@ Damage by ability:
 | Pet: Auto Attack | 6% |
 | Pet: Lash of Pain | 1% |
 | Searing Pain | 1% |
-| Pet: spell 1293696 | 0% |
+| Pet: Demonic Brand | 0% |
 
 ## Notes
 

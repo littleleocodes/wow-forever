@@ -14,7 +14,7 @@
 | Shred | 41.5% |
 | Auto Attack | 35.5% |
 | Ferocious Bite | 20.7% |
-| item 10646 | 1.6% |
+| Goblin Sapper Charge | 1.6% |
 | Dragonbreath Chili | 0.7% |
 | Claw | 0.0% |
 

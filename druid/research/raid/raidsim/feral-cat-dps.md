@@ -23,7 +23,7 @@
 | Rip | 36.6% |
 | Shred | 31.3% |
 | Auto Attack | 29.4% |
-| item 10646 | 2.0% |
+| Goblin Sapper Charge | 2.0% |
 | Dragonbreath Chili | 0.7% |
 
 Mapped onto the spec model's sources: `rip` 38%, `shred` 32%, `white` 30%; 3% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).

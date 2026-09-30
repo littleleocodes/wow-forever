@@ -30,7 +30,7 @@ Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's
 | Thorns | 1.0% |
 | OtherActionRageGain | 1.0% |
 | Dragonbreath Chili | 0.4% |
-| spell 16782 | 0.1% |
+| Lightning Bolt | 0.1% |
 
 Mapped onto the spec model's sources: `white` 36%, `heroic_strike` 27%, `revenge` 23%, `thunder_clap` 12%, `rend` 3%; 37% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

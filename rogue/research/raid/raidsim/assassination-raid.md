@@ -19,7 +19,7 @@
 | Deadly Poison | 8.0% |
 | Dense Sharpening Stone | 5.0% |
 | Dragonbreath Chili | 2.0% |
-| item 10646 | 1.6% |
+| Goblin Sapper Charge | 1.6% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

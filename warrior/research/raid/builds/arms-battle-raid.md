@@ -116,7 +116,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 16 | cast Spearing Strike | 1.7 |
 | 17 | cast Sunder Armor | 7.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast spell 24427, cast spell 29602, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
+Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
 Damage by ability:
 

@@ -114,7 +114,7 @@ Damage by ability:
 | Deadly Poison | 8% |
 | Dense Sharpening Stone | 5% |
 | Dragonbreath Chili | 2% |
-| item 10646 | 2% |
+| Goblin Sapper Charge | 2% |
 
 ## Notes
 

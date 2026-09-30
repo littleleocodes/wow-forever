@@ -23,7 +23,7 @@
   "changes": [
    {
     "round": 1,
-    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
     "gain_seed1": 0.034320338780310156,
     "gain_seed2": 0.0305169267447718,
     "candidates": 218,
@@ -31,7 +31,7 @@
    },
    {
     "round": 2,
-    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "change": "drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast",
     "gain_seed1": 0.030151486184799126,
     "gain_seed2": 0.031231982100876632,
     "candidates": 218,
@@ -39,7 +39,7 @@
    },
    {
     "round": 3,
-    "change": "insert before the filler: if spell 44404 is up: cast Arcane Missiles",
+    "change": "insert before the filler: if Missile Barrage is up: cast Arcane Missiles",
     "gain_seed1": 0.0022229707551228994,
     "gain_seed2": 0.0022683575554265367,
     "candidates": 212,
@@ -103,7 +103,7 @@
   "changes": [
    {
     "round": 1,
-    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "change": "drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast",
     "gain_seed1": 0.03827614461840345,
     "gain_seed2": 0.037360124739891365,
     "candidates": 218,
@@ -111,7 +111,7 @@
    },
    {
     "round": 2,
-    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
     "gain_seed1": 0.02606291829981533,
     "gain_seed2": 0.024678490932543262,
     "candidates": 212,
@@ -127,7 +127,7 @@
    },
    {
     "round": 4,
-    "change": "only with 3s or more of the fight left: if mana % \u2265 10%: cast Fireball",
+    "change": "only with 3s or more of the fight left: if mana % ≥ 10%: cast Fireball",
     "gain_seed1": 0.0018996283310339646,
     "gain_seed2": 0.0018078211194869631,
     "candidates": 195,
@@ -143,7 +143,7 @@
    },
    {
     "round": 6,
-    "change": "threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "change": "threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
     "gain_seed1": 0.00427671761768722,
     "gain_seed2": 0.0043896998297348055,
     "candidates": 209,

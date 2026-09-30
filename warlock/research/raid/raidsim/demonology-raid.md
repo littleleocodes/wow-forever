@@ -18,7 +18,7 @@
 | Pet: Auto Attack | 5.9% |
 | Pet: Lash of Pain | 1.3% |
 | Searing Pain | 0.5% |
-| Pet: spell 1293696 | 0.0% |
+| Pet: Demonic Brand | 0.0% |
 
 Mapped onto the spec model's sources: ; 100% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

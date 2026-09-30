@@ -78,7 +78,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.6%, pass 1)
   3. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+1.1%, pass 1)
   4. threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form (+0.4%, pass 1)
-  5. drop the condition: if not Cat Form is up: cast item 10646 (+0.2%, pass 1)
+  5. drop the condition: if not Cat Form is up: cast Goblin Sapper Charge (+0.2%, pass 1)
   6. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form (+0.2%, pass 1)
   7. threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire (+0.2%, pass 1)
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 549 -> 566 DPS (+3.2%), sim preset: Feral Cat 9/35/7 549 -> 566 DPS (+3.2%)):
@@ -102,7 +102,7 @@ Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |
 | 10 | if not Cat Form is up: cast Cat Form | 0.3 |
 
-Lines of the simulator's rotation these builds never cast: cast spell 13494, cast spell 23724, cast Innervate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Haste, cast Metamorphosis Rune, cast Innervate (its condition never held in these fights).
 
 Damage by ability:
 
@@ -111,7 +111,7 @@ Damage by ability:
 | Rip | 37% |
 | Shred | 31% |
 | Auto Attack | 29% |
-| item 10646 | 2% |
+| Goblin Sapper Charge | 2% |
 | Dragonbreath Chili | 1% |
 
 ## Notes

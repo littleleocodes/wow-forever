@@ -25,6 +25,8 @@ ROOT = HERE.parents[2]
 sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import id_names  # noqa: E402  (spell and item names the simulator's lists miss)
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
 GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
                      "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
@@ -239,9 +241,9 @@ def action_shares(actions, names, key="damage"):
     dmg = {}
     for a in actions or []:
         if a.get("spellId"):
-            name = names.get(int(a["spellId"]), f"spell {a['spellId']}")
+            name = names.get(int(a["spellId"])) or id_names.spell(a["spellId"])
         elif a.get("itemId"):
-            name = f"item {a['itemId']}"
+            name = id_names.item(a["itemId"])
         else:
             name = a.get("other", "other")
             if name in ("OtherActionAttack", "OtherActionShoot"):
@@ -263,9 +265,9 @@ def action_casts(actions, names):
             continue
         if a.get("spellId"):
             by_id[str(a["spellId"])] = by_id.get(str(a["spellId"]), 0.0) + c
-            name = names.get(int(a["spellId"]), f"spell {a['spellId']}")
+            name = names.get(int(a["spellId"])) or id_names.spell(a["spellId"])
         elif a.get("itemId"):
-            name = f"item {a['itemId']}"
+            name = id_names.item(a["itemId"])
         else:
             name = {"OtherActionAttack": "Auto Attack", "OtherActionShoot": "Auto Shot"}.get(a.get("other", ""), a.get("other", "other"))
         if a.get("pet"):

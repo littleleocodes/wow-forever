@@ -19,8 +19,8 @@
 | Instant Poison VI | 1.9% |
 | Eviscerate | 1.8% |
 | Dragonbreath Chili | 1.1% |
-| item 10646 | 0.8% |
-| spell 23267 | 0.5% |
+| Goblin Sapper Charge | 0.8% |
+| Firebolt | 0.5% |
 
 Mapped onto the spec model's sources: `white_mh` 38%, `backstab` 34%, `white_oh` 20%, `poisons` 6%, `eviscerate` 2%; 2% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 

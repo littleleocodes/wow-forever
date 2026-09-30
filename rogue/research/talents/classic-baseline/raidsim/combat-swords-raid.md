@@ -19,8 +19,8 @@
 | Deadly Poison | 2.5% |
 | Instant Poison VI | 1.9% |
 | Dragonbreath Chili | 1.0% |
-| item 10646 | 0.8% |
-| spell 21140 | 0.7% |
+| Goblin Sapper Charge | 0.8% |
+| Fatal Wound | 0.7% |
 
 Mapped onto the spec model's sources: `white_mh` 42%, `sinister` 26%, `white_oh` 22%, `eviscerate` 6%, `poisons` 4%; 2% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
