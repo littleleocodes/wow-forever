@@ -1,0 +1,249 @@
+{
+ "id": "fl-arms-arms-2h-raid",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Charge",
+    2
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Improved Tactical Mastery",
+    3
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Bloodthrill",
+    4
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Boundless Rage",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "13-17",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "18-19",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 2
+  },
+  {
+   "levels": "30-32",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "33-34",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 2
+  },
+  {
+   "levels": "35-39",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 5
+  },
+  {
+   "levels": "40-43",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 4
+  },
+  {
+   "levels": "44",
+   "tree": "Arms",
+   "talent": "Sweeping Strikes",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Arms",
+   "talent": "Mortal Strike",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "51-53",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 3
+  },
+  {
+   "levels": "54-55",
+   "tree": "Fury",
+   "talent": "Boundless Rage",
+   "points": 2
+  },
+  {
+   "levels": "56-60",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "arms-2h-raid",
+  "model": "arms-2h-raid",
+  "tree": "Arms",
+  "start": "opt-arms-2h-raid-leveling-st",
+  "starts": {
+   "leveling-arms": 31.306500000223473,
+   "opt-arms-2h-raid-leveling-st": 30.92526666687357,
+   "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-arms-scorer.json": 30.9844666668749
+  },
+  "moves": [],
+  "incumbent": "opt-arms-2h-raid-leveling-st",
+  "race": {
+   "incumbent": [
+    27.894516401512032,
+    {
+     "20": 21.493533333194996,
+     "30": 24.89153156501971,
+     "40": 28.69536666678307,
+     "50": 28.221400000092594,
+     "60": 30.72336666686606
+    }
+   ],
+   "search": [
+    27.894516401512032,
+    {
+     "20": 21.493533333194996,
+     "30": 24.89153156501971,
+     "40": 28.69536666678307,
+     "50": 28.221400000092594,
+     "60": 30.72336666686606
+    }
+   ],
+   "gain": 0.0,
+   "all": {
+    "leveling-arms": [
+     27.954895000088634,
+     {
+      "20": 21.688866666525826,
+      "30": 25.48469999998648,
+      "40": 27.70246666674256,
+      "50": 28.4246000001016,
+      "60": 31.055533333547235
+     }
+    ],
+    "opt-arms-2h-raid-leveling-st": [
+     27.894516401512032,
+     {
+      "20": 21.493533333194996,
+      "30": 24.89153156501971,
+      "40": 28.69536666678307,
+      "50": 28.221400000092594,
+      "60": 30.72336666686606
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

@@ -424,6 +424,311 @@
     "50": 50.79004085942081,
     "60": 41.133920815191225
    }
+  },
+  "Holy": {
+   "spec": "holy-leveling",
+   "model": "shadow-dps",
+   "tree": "Holy",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "priest/research/leveling/fightlab/candidates/derived-holy.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "holy-leveling",
+    "model": "shadow-dps",
+    "tree": "Holy",
+    "start": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json": 58.44374987719289
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Shadow Focus -> Spirit Tap",
+      "gain_seed1": 0.02172970667584706,
+      "gain_seed2": 0.019219566774325347
+     },
+     {
+      "round": 2,
+      "move": "2 points Blackout -> Spirit Tap",
+      "gain_seed1": 0.019704104979334947,
+      "gain_seed2": 0.01563870826065783
+     },
+     {
+      "round": 3,
+      "move": "3 points Twilight Focus -> Spiritual Guidance",
+      "gain_seed1": 0.011202922255625691,
+      "gain_seed2": 0.01817162757544566
+     },
+     {
+      "round": 4,
+      "move": "2 points Twin Disciplines -> Wand Specialization",
+      "gain_seed1": 0.03453327615658919,
+      "gain_seed2": 0.02870873534448737
+     },
+     {
+      "round": 5,
+      "move": "1 point Vampiric Embrace -> Spirit Tap",
+      "gain_seed1": 0.011057823286958923,
+      "gain_seed2": 0.013410950885183848
+     },
+     {
+      "round": 6,
+      "move": "2 points Improved Renew -> Spiritual Guidance",
+      "gain_seed1": 0.005526304684961625,
+      "gain_seed2": 0.010679510923069624
+     },
+     {
+      "round": 7,
+      "move": "2 points Blessed Recovery -> Searing Light",
+      "gain_seed1": 0.010674800530361295,
+      "gain_seed2": 0.009206029319148934
+     }
+    ],
+    "incumbent": "derived-holy-scorer",
+    "race": {
+     "incumbent": [
+      55.43188620747533,
+      {
+       "20": 39.06437629901511,
+       "30": 48.6615463611415,
+       "40": 59.587315930700505,
+       "50": 59.28064471366749,
+       "60": 58.2953075294854
+      }
+     ],
+     "search": [
+      51.93048052293661,
+      {
+       "20": 37.556276825265535,
+       "30": 44.713295011045936,
+       "40": 58.320166639661366,
+       "50": 56.88751420725113,
+       "60": 51.93982236336037
+      }
+     ],
+     "gain": 0.06316591269208027,
+     "all": {
+      "derived-holy-scorer": [
+       55.43188620747533,
+       {
+        "20": 39.06437629901511,
+        "30": 48.6615463611415,
+        "40": 59.587315930700505,
+        "50": 59.28064471366749,
+        "60": 58.2953075294854
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.06316591269208027,
+   "incumbent": "derived-holy-scorer",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 37.556276825265535,
+    "30": 44.713295011045936,
+    "40": 58.320166639661366,
+    "50": 56.88751420725113,
+    "60": 51.93982236336037
+   }
+  },
+  "Shadow": {
+   "spec": "shadow-dps",
+   "model": "shadow-dps",
+   "tree": "Shadow",
+   "hands": [
+    "leveling-shadow",
+    "opt-shadow-dps-leveling-st",
+    "opt-shadow-dps-solo-60",
+    "opt-shadow-dps-leveling-aoe"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "priest/research/leveling/fightlab/candidates/derived-shadow.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "shadow-dps",
+    "model": "shadow-dps",
+    "tree": "Shadow",
+    "start": "leveling-shadow",
+    "starts": {
+     "leveling-shadow": 21.294928599750765,
+     "opt-shadow-dps-leveling-st": 25.648230383409675,
+     "opt-shadow-dps-solo-60": 25.648230383409675,
+     "opt-shadow-dps-leveling-aoe": 23.90744316196748,
+     "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-shadow-scorer.json": 25.648230383409675
+    },
+    "moves": [],
+    "incumbent": "leveling-shadow",
+    "race": {
+     "incumbent": [
+      25.831092031587133,
+      {
+       "20": 35.13221635229154,
+       "30": 37.39106336627944,
+       "40": 23.18248661054199,
+       "50": 22.705746596388522,
+       "60": 21.32092306736846
+      }
+     ],
+     "search": [
+      25.831092031587133,
+      {
+       "20": 35.13221635229154,
+       "30": 37.39106336627944,
+       "40": 23.18248661054199,
+       "50": 22.705746596388522,
+       "60": 21.32092306736846
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "leveling-shadow": [
+       25.831092031587133,
+       {
+        "20": 35.13221635229154,
+        "30": 37.39106336627944,
+        "40": 23.18248661054199,
+        "50": 22.705746596388522,
+        "60": 21.32092306736846
+       }
+      ],
+      "opt-shadow-dps-leveling-st": [
+       29.49302988540986,
+       {
+        "20": 37.27061775715966,
+        "30": 40.31454388727262,
+        "40": 27.292081200350808,
+        "50": 26.33200282232778,
+        "60": 25.591231936502997
+       }
+      ],
+      "opt-shadow-dps-solo-60": [
+       29.49302988540986,
+       {
+        "20": 37.27061775715966,
+        "30": 40.31454388727262,
+        "40": 27.292081200350808,
+        "50": 26.33200282232778,
+        "60": 25.591231936502997
+       }
+      ],
+      "opt-shadow-dps-leveling-aoe": [
+       28.630248437913586,
+       {
+        "20": 37.61108217558297,
+        "30": 39.18025932631472,
+        "40": 26.479374214150866,
+        "50": 26.296412410698757,
+        "60": 23.74041125301074
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "leveling-shadow",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 35.13221635229154,
+    "30": 37.39106336627944,
+    "40": 23.18248661054199,
+    "50": 22.705746596388522,
+    "60": 21.32092306736846
+   }
+  }
+ },
+ "warrior": {
+  "Arms": {
+   "spec": "arms-2h-raid",
+   "model": "arms-2h-raid",
+   "tree": "Arms",
+   "hands": [
+    "leveling-arms",
+    "opt-arms-2h-raid-leveling-st"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "warrior/research/leveling/fightlab/candidates/derived-arms.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "arms-2h-raid",
+    "model": "arms-2h-raid",
+    "tree": "Arms",
+    "start": "opt-arms-2h-raid-leveling-st",
+    "starts": {
+     "leveling-arms": 31.306500000223473,
+     "opt-arms-2h-raid-leveling-st": 30.92526666687357,
+     "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-arms-scorer.json": 30.9844666668749
+    },
+    "moves": [],
+    "incumbent": "opt-arms-2h-raid-leveling-st",
+    "race": {
+     "incumbent": [
+      27.894516401512032,
+      {
+       "20": 21.493533333194996,
+       "30": 24.89153156501971,
+       "40": 28.69536666678307,
+       "50": 28.221400000092594,
+       "60": 30.72336666686606
+      }
+     ],
+     "search": [
+      27.894516401512032,
+      {
+       "20": 21.493533333194996,
+       "30": 24.89153156501971,
+       "40": 28.69536666678307,
+       "50": 28.221400000092594,
+       "60": 30.72336666686606
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "leveling-arms": [
+       27.954895000088634,
+       {
+        "20": 21.688866666525826,
+        "30": 25.48469999998648,
+        "40": 27.70246666674256,
+        "50": 28.4246000001016,
+        "60": 31.055533333547235
+       }
+      ],
+      "opt-arms-2h-raid-leveling-st": [
+       27.894516401512032,
+       {
+        "20": 21.493533333194996,
+        "30": 24.89153156501971,
+        "40": 28.69536666678307,
+        "50": 28.221400000092594,
+        "60": 30.72336666686606
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "opt-arms-2h-raid-leveling-st",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 21.493533333194996,
+    "30": 24.89153156501971,
+    "40": 28.69536666678307,
+    "50": 28.221400000092594,
+    "60": 30.72336666686606
+   }
   }
  }
 }

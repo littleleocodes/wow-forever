@@ -1,0 +1,189 @@
+{
+ "id": "derived-arms-scorer",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    1
+   ],
+   [
+    "Bloodthrill",
+    4
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Boundless Rage",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "13-17",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "18-19",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "22-24",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 3
+  },
+  {
+   "levels": "25-27",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 2
+  },
+  {
+   "levels": "30",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  },
+  {
+   "levels": "31-33",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "34",
+   "tree": "Arms",
+   "talent": "Impale",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Arms",
+   "talent": "Weaponmaster",
+   "points": 5
+  },
+  {
+   "levels": "40-43",
+   "tree": "Arms",
+   "talent": "Bloodthrill",
+   "points": 4
+  },
+  {
+   "levels": "44",
+   "tree": "Arms",
+   "talent": "Sweeping Strikes",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Arms",
+   "talent": "Mortal Strike",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "51-53",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 3
+  },
+  {
+   "levels": "54-55",
+   "tree": "Fury",
+   "talent": "Boundless Rage",
+   "points": 2
+  },
+  {
+   "levels": "56-60",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Arms under arms-2h-raid (leveling-st), 2026-09-30."
+}

@@ -1,0 +1,319 @@
+{
+ "id": "fl-holy-holy-leveling",
+ "allocation": {
+  "Discipline": [
+   [
+    "Wand Specialization",
+    2
+   ]
+  ],
+  "Holy": [
+   [
+    "Improved Renew",
+    1
+   ],
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    5
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Holy Nova",
+    1
+   ],
+   [
+    "Blessed Recovery",
+    1
+   ],
+   [
+    "Inspiration",
+    3
+   ],
+   [
+    "Holy Reach",
+    1
+   ],
+   [
+    "Spirit of Redemption",
+    1
+   ],
+   [
+    "Spiritual Guidance",
+    5
+   ],
+   [
+    "Searing Light",
+    2
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    3
+   ],
+   [
+    "Blackout",
+    3
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Spirit Tap",
+    5
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-12",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 3
+  },
+  {
+   "levels": "13-14",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 2
+  },
+  {
+   "levels": "15-16",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "17",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 2
+  },
+  {
+   "levels": "25-27",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 3
+  },
+  {
+   "levels": "28",
+   "tree": "Holy",
+   "talent": "Improved Renew",
+   "points": 1
+  },
+  {
+   "levels": "29-32",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 4
+  },
+  {
+   "levels": "33-37",
+   "tree": "Holy",
+   "talent": "Spell Warding",
+   "points": 5
+  },
+  {
+   "levels": "38",
+   "tree": "Holy",
+   "talent": "Holy Nova",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Holy",
+   "talent": "Blessed Recovery",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Holy",
+   "talent": "Holy Specialization",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Holy",
+   "talent": "Divine Fury",
+   "points": 5
+  },
+  {
+   "levels": "46-48",
+   "tree": "Holy",
+   "talent": "Inspiration",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Holy",
+   "talent": "Holy Reach",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Holy",
+   "talent": "Spirit of Redemption",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Holy",
+   "talent": "Spiritual Guidance",
+   "points": 5
+  },
+  {
+   "levels": "57-58",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Holy",
+   "talent": "Searing Light",
+   "points": 2
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "holy-leveling",
+  "model": "shadow-dps",
+  "tree": "Holy",
+  "start": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json",
+  "starts": {
+   "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json": 58.44374987719289
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Shadow Focus -> Spirit Tap",
+    "gain_seed1": 0.02172970667584706,
+    "gain_seed2": 0.019219566774325347
+   },
+   {
+    "round": 2,
+    "move": "2 points Blackout -> Spirit Tap",
+    "gain_seed1": 0.019704104979334947,
+    "gain_seed2": 0.01563870826065783
+   },
+   {
+    "round": 3,
+    "move": "3 points Twilight Focus -> Spiritual Guidance",
+    "gain_seed1": 0.011202922255625691,
+    "gain_seed2": 0.01817162757544566
+   },
+   {
+    "round": 4,
+    "move": "2 points Twin Disciplines -> Wand Specialization",
+    "gain_seed1": 0.03453327615658919,
+    "gain_seed2": 0.02870873534448737
+   },
+   {
+    "round": 5,
+    "move": "1 point Vampiric Embrace -> Spirit Tap",
+    "gain_seed1": 0.011057823286958923,
+    "gain_seed2": 0.013410950885183848
+   },
+   {
+    "round": 6,
+    "move": "2 points Improved Renew -> Spiritual Guidance",
+    "gain_seed1": 0.005526304684961625,
+    "gain_seed2": 0.010679510923069624
+   },
+   {
+    "round": 7,
+    "move": "2 points Blessed Recovery -> Searing Light",
+    "gain_seed1": 0.010674800530361295,
+    "gain_seed2": 0.009206029319148934
+   }
+  ],
+  "incumbent": "derived-holy-scorer",
+  "race": {
+   "incumbent": [
+    55.43188620747533,
+    {
+     "20": 39.06437629901511,
+     "30": 48.6615463611415,
+     "40": 59.587315930700505,
+     "50": 59.28064471366749,
+     "60": 58.2953075294854
+    }
+   ],
+   "search": [
+    51.93048052293661,
+    {
+     "20": 37.556276825265535,
+     "30": 44.713295011045936,
+     "40": 58.320166639661366,
+     "50": 56.88751420725113,
+     "60": 51.93982236336037
+    }
+   ],
+   "gain": 0.06316591269208027,
+   "all": {
+    "derived-holy-scorer": [
+     55.43188620747533,
+     {
+      "20": 39.06437629901511,
+      "30": 48.6615463611415,
+      "40": 59.587315930700505,
+      "50": 59.28064471366749,
+      "60": 58.2953075294854
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
