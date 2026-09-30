@@ -1,4 +1,4 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-09-29)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-09-30)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
@@ -59,6 +59,28 @@ Each class folder now opens with player pages and keeps the research below:
   resumable scripts (done markers) and scheduled check-ins (send_later) to keep the session awake.
 - Candidates were not pruned: the fight-lab calibration fits jointly over every saved candidate (the fix for the optimizer's swings),
   so deleting them would change future fits. They sit under `research/`, out of a player's way.
+
+- **Derived builds for every spec x mode** (2026-09-30, user request "each spec to have a leveling, raid and PvP spec that we can
+  best derive from everything"; rule: a derived build replaces a hand draft only when 2%+ better, the hand draft stays as the
+  alternative; see CLAUDE.md "Derived builds"). Records `_reference/data/derived-{leveling,raid,pvp}.json`.
+  - New fight-lab rotations: Arcane, Subtlety, Demonology, Destruction, Holy/Discipline priest, Holy/Protection paladin, Protection
+    warrior (engine shield block). Fixes found on the way: Ret's in-combat seal recast never registered (~0.5% per kill); Pandemic/Ruin
+    crits were x2.5 instead of x2.0 (Affliction ~2.4% slower at 60); warlock and paladin fight-lab calibrations re-run after them.
+  - Leveling: every spec has a leveling build; healer and tank specs get their own, compared on their page with the damage spec
+    they could level as (Holy/Discipline priest about twice as slow as Shadow; Protection warrior +33% vs Arms, Protection paladin
+    +17% and Holy paladin +4% vs Retribution). Their talent orders come from a borrowed damage model, so the healing/tanking points
+    come late in the order: a real gap for players who want to heal or tank dungeons while leveling. Replaced a hand/optimizer build:
+    Fire (+3.0%). Every other hand draft stands (searches found under 2%).
+  - Raid: talent searches from each spec's best build (min 30 points in the tree; tanks keep their own tree points). Winners: Survival
+    melee hunter (+3.3% over the hand draft), Combat daggers rogue (+5.7%), Enhancement (+3.1%); new Beast Mastery build (replaces the
+    generated one). All others stand. Healers (healer lab pipeline, heal,adopt): every hand draft stands (best challenger +0.3%).
+  - PvP: model + talentsforever.com pick rates; derived builds lead in 7 specs whose hand drafts the model scores 59-86% of its optimum
+    (Frost, Arms, Marksmanship, Resto druid, Assassination, Elemental, Affliction); Shadow and Subtlety (borrowed model) keep theirs.
+    This is the model grading itself: no simulator plays PvP.
+  - Cloud: the container was reclaimed twice while the session sat idle between check-ins, killing the runs; the session then
+    stayed in one turn, polling (scratchpad `derive/wait.sh`), and the runs finished.
+  - Open: cross-spec raid rankings mix gear tiers (warlock MC set, Shadow pre-raid, paladin default, feral launch vs phase-1 BiS):
+    equalize the gear and re-race. The new leveling specs have no PIPELINE entry, calibration or scorer model of their own.
 
 ## Where things stand (2026-09-28)
 
