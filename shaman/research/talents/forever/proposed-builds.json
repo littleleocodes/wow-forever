@@ -1060,6 +1060,48 @@
       "notes": ["Report: shaman/research/talents/forever/optimizer/resto-heal-raid-heal.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "enhancement-raid",
+      "name": "Enhancement — Raid (derived)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-09-30",
+      "derived": "raid",
+      "summary": "The Enhancement raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry enhancement-dps, training dummy) from the spec's best build opt-enhancement-dps-raid-dps, 30+ points kept in Enhancement.",
+      "allocation": {
+        "Elemental": [
+          ["Convection", 5],
+          ["Call of Flame", 3],
+          ["Elemental Devastation", 2],
+          ["Elemental Focus", 1]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Ancestral Knowledge", 5],
+          ["Mental Dexterity", 3],
+          ["Shamanistic Focus", 1],
+          ["Elemental Weapons", 3],
+          ["Stormstrike", 1],
+          ["Flurry", 5],
+          ["Mental Quickness", 2],
+          ["Maelstrom Weapon", 5],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": [
+          ["Totemic Focus", 5],
+          ["Tidal Focus", 1],
+          ["Mindfulness", 3]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["About +3.1% over the hand draft enhancement-raid-dps (over the 2% replacement bar): this build is the spec's raid pick, the hand draft stays as the alternative.", "Simulator talent search from opt-enhancement-dps-raid-dps: 3 points Tidal Focus -> Mindfulness (+2.2% DPS on the search's third seed).", "Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements."],
+      "open_questions": ["A derived Enhancement raid build: check it against the community's Enhancement builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"],
+      "replaces": "enhancement-raid-dps"
     }
   ]
 }

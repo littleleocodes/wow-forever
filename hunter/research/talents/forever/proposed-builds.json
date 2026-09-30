@@ -1432,52 +1432,6 @@
       ]
     },
     {
-      "id": "beast-mastery-raid",
-      "name": "Beast Mastery — Raid (generated)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Beast Mastery",
-      "generated": "2026-09-30",
-      "summary": "The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 1],
-          ["Focused Fire", 2],
-          ["Improved Revive Pet", 2],
-          ["Bestial Swiftness", 1],
-          ["Unleashed Fury", 5],
-          ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Intimidation", 1],
-          ["Bestial Discipline", 2],
-          ["Frenzy", 5]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 2],
-          ["Careful Aim", 5],
-          ["Trueshot Aura", 1],
-          ["Mortal Shots", 5]
-        ],
-        "Survival": []
-      },
-      "core": [
-        {"talent": "Summon Hawk", "why": "The scorer's value in this build: +23.5% of its score (model bm-leveling)."},
-        {"talent": "Mortal Shots", "why": "The scorer's value in this build: +15.8% of its score (model bm-leveling)."},
-        {"talent": "Unleashed Fury", "why": "The scorer's value in this build: +14.4% of its score (model bm-leveling)."},
-        {"talent": "Improved Stings", "why": "The scorer's value in this build: +13.7% of its score (model bm-leveling)."},
-        {"talent": "Lethal Attacks", "why": "The scorer's value in this build: +12.9% of its score (model bm-leveling)."},
-        {"talent": "Frenzy", "why": "The scorer's value in this build: +11.8% of its score (model bm-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps."],
-      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
-    },
-    {
       "id": "beast-mastery-pvp",
       "name": "Beast Mastery — PvP (derived)",
       "role": "dps",
@@ -1626,6 +1580,86 @@
       "notes": ["Community tie-break moves: 2 points Improved Tracking -> Clever Traps; 1 point Rapid Killing -> Trueshot Aura.", "Where we disagree with the community: most Survival builds take Lacerating Strikes (81% take it), Deadly Aspects (78% take it), Survivalist's Discipline (73% take it), which the model values below this build's weakest point; this build takes Improved Concussive Shot (10%), Improved Stings (8%), Scatter Shot (7%), Trueshot Aura (7%), which few Survival builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
       "open_questions": ["A derived Survival PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "beast-mastery-raid",
+      "name": "Beast Mastery — Raid (derived)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Beast Mastery",
+      "generated": "2026-09-30",
+      "derived": "raid",
+      "summary": "The Beast Mastery raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry bm-raid, training dummy) from the spec's best build beast-mastery-raid, 30+ points kept in Beast Mastery.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 2],
+          ["Focused Fire", 2],
+          ["Improved Revive Pet", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 4],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 3]
+        ],
+        "Survival": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Simulator talent search from beast-mastery-raid: 1 point Intimidation -> Endurance Training; 2 points Mortal Shots -> Efficiency (+2.2% DPS on the search's third seed).", "Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements."],
+      "open_questions": ["A derived Beast Mastery raid build: check it against the community's Beast Mastery builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "survival-raid",
+      "name": "Survival — Raid (derived)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Survival",
+      "generated": "2026-09-30",
+      "derived": "raid",
+      "summary": "The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry melee-dps, training dummy) from the spec's best build opt-melee-dps-raid-dps, 30+ points kept in Survival.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Efficiency", 5],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 3],
+          ["Surefooted", 3],
+          ["Predator's Edge", 5],
+          ["Expose Prey", 2],
+          ["Resourcefulness", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 3],
+          ["Clever Traps", 2],
+          ["Survivalist's Discipline", 2]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["About +3.3% over the hand draft melee-survival-raid (over the 2% replacement bar): this build is the spec's raid pick, the hand draft stays as the alternative.", "Simulator talent search from opt-melee-dps-raid-dps: 2 points Survivalist -> Clever Traps; 1 point Lacerating Strikes -> Efficiency; 2 points Lightning Reflexes -> Survivalist's Discipline (+3.2% DPS on the search's third seed).", "Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements."],
+      "open_questions": ["A derived Survival raid build: check it against the community's Survival builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"],
+      "replaces": "melee-survival-raid"
     }
   ]
 }

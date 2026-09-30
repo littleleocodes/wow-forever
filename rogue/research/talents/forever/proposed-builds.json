@@ -1404,6 +1404,52 @@
       "notes": ["Community tie-break moves: 3 points Dual Wield Specialization -> Aggression; 1 point Dirty Tricks -> Setup.", "Where we disagree with the community: most Combat builds take Dual Wield Specialization (97% take it), Hack and Slash (97% take it), Malice (92% take it), Lethality (80% take it), Relentless Strikes (77% take it), Ruthlessness (76% take it), Improved Slice and Dice (76% take it), which the model values below this build's weakest point; this build takes Dirty Tricks (4%), Elusiveness (10%), Ghostly Strike (8%), Heightened Senses (3%), Improved Gouge (7%), Improved Kick (11%), Initiative (7%), Master of Deception (11%), Premeditation (5%), Setup (8%), which few Combat builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
       "open_questions": ["A derived Combat PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "combat-raid",
+      "name": "Combat — Raid (derived)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Combat",
+      "generated": "2026-09-30",
+      "derived": "raid",
+      "summary": "The Combat raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry combat-daggers-raid, training dummy) from the spec's best build opt-combat-daggers-raid-raid-dps, 30+ points kept in Combat.",
+      "allocation": {
+        "Assassination": [
+          ["Malice", 5],
+          ["Improved Slice and Dice", 3],
+          ["Ruthlessness", 3],
+          ["Relentless Strikes", 1],
+          ["Lethality", 1],
+          ["Improved Expose Armor", 2],
+          ["Improved Poisons", 1]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Improved Sinister Strike", 2],
+          ["Lightning Reflexes", 3],
+          ["Puncturing Wounds", 3],
+          ["Precision", 3],
+          ["Endurance", 1],
+          ["Flawless Execution", 1],
+          ["Dual Wield Specialization", 5],
+          ["Hack and Slash", 5],
+          ["Blade Flurry", 1],
+          ["Weapon Expertise", 2],
+          ["Aggression", 3],
+          ["Adrenaline Rush", 1]
+        ],
+        "Subtlety": [
+          ["Opportunity", 2]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["About +5.7% over the hand draft combat-daggers-raid (over the 2% replacement bar): this build is the spec's raid pick, the hand draft stays as the alternative.", "Simulator talent search from opt-combat-daggers-raid-raid-dps: 2 points Lethality -> Improved Expose Armor; 1 point Cold Blood -> Improved Poisons (+4.7% DPS on the search's third seed).", "Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements."],
+      "open_questions": ["A derived Combat raid build: check it against the community's Combat builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"],
+      "replaces": "combat-daggers-raid"
     }
   ]
 }
