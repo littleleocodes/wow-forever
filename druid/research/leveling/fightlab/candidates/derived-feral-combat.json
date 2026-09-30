@@ -1,0 +1,284 @@
+{
+ "id": "fl-feral-combat-feral-cat-dps",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Reach",
+    2
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Heart of the Wild",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Thick Hide",
+    1
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "King of the Jungle",
+    3
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Predatory Instincts",
+    2
+   ],
+   [
+    "Rend and Tear",
+    4
+   ],
+   [
+    "Berserk",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Natural Shapeshifter",
+    3
+   ],
+   [
+    "Naturalist",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Feral Combat",
+   "talent": "Ferocity",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Feral Combat",
+   "talent": "Thick Hide",
+   "points": 1
+  },
+  {
+   "levels": "16-17",
+   "tree": "Feral Combat",
+   "talent": "Feral Swiftness",
+   "points": 2
+  },
+  {
+   "levels": "18-19",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Feral Combat",
+   "talent": "Savage Fury",
+   "points": 2
+  },
+  {
+   "levels": "22-23",
+   "tree": "Feral Combat",
+   "talent": "Sharpened Claws",
+   "points": 2
+  },
+  {
+   "levels": "24",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 1
+  },
+  {
+   "levels": "25-27",
+   "tree": "Feral Combat",
+   "talent": "Predatory Strikes",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 2
+  },
+  {
+   "levels": "30-32",
+   "tree": "Feral Combat",
+   "talent": "King of the Jungle",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Feral Combat",
+   "talent": "Leader of the Pack",
+   "points": 1
+  },
+  {
+   "levels": "34-35",
+   "tree": "Feral Combat",
+   "talent": "Predatory Instincts",
+   "points": 2
+  },
+  {
+   "levels": "36-39",
+   "tree": "Feral Combat",
+   "talent": "Rend and Tear",
+   "points": 4
+  },
+  {
+   "levels": "40",
+   "tree": "Feral Combat",
+   "talent": "Berserk",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Balance",
+   "talent": "Nature's Reach",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "50-54",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "55-57",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 3
+  },
+  {
+   "levels": "58-60",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 3
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "feral-cat-dps",
+  "model": "feral-cat-dps",
+  "tree": "Feral Combat",
+  "start": "leveling-feral",
+  "starts": {
+   "leveling-feral": 28.42081322445165,
+   "opt-feral-cat-dps-leveling-st": 28.750361614753963,
+   "opt-feral-cat-dps-solo-60": 28.750361614753963,
+   "/home/user/wow-forever/druid/research/leveling/fightlab/candidates/derived-feral-combat-scorer.json": 28.750361614753963
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Naturalist -> Natural Shapeshifter",
+    "gain_seed1": 0.01140721780864462,
+    "gain_seed2": 0.006880214427269826
+   }
+  ],
+  "incumbent": "leveling-feral",
+  "race": {
+   "incumbent": [
+    25.472754184715537,
+    {
+     "20": 18.499233333237882,
+     "30": 23.243466666577,
+     "40": 25.0289499343284,
+     "50": 26.394359000403966,
+     "60": 28.439770381461766
+    }
+   ],
+   "search": [
+    25.434998206506968,
+    {
+     "20": 18.637399999902936,
+     "30": 23.243466666577,
+     "40": 25.0289499343284,
+     "50": 26.394359000403966,
+     "60": 28.267861565211508
+    }
+   ],
+   "gain": 0.0014822102837714901,
+   "all": {
+    "leveling-feral": [
+     25.472754184715537,
+     {
+      "20": 18.499233333237882,
+      "30": 23.243466666577,
+      "40": 25.0289499343284,
+      "50": 26.394359000403966,
+      "60": 28.439770381461766
+     }
+    ],
+    "opt-feral-cat-dps-leveling-st": [
+     25.613029303816525,
+     {
+      "20": 18.787533333234467,
+      "30": 23.35063333324698,
+      "40": 25.233966666645244,
+      "50": 26.478583416358,
+      "60": 28.550805943624937
+     }
+    ],
+    "opt-feral-cat-dps-solo-60": [
+     25.613029303816525,
+     {
+      "20": 18.787533333234467,
+      "30": 23.35063333324698,
+      "40": 25.233966666645244,
+      "50": 26.478583416358,
+      "60": 28.550805943624937
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

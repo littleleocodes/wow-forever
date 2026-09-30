@@ -1425,6 +1425,120 @@
     "50": 28.715779573415105,
     "60": 30.462764440434754
    }
+  },
+  "Survival": {
+   "spec": "melee-dps",
+   "model": "melee-dps",
+   "tree": "Survival",
+   "hands": [
+    "leveling-melee",
+    "opt-melee-dps-solo-60",
+    "opt-bm-leveling-leveling-aoe"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "hunter/research/leveling/fightlab/candidates/derived-survival.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "melee-dps",
+    "model": "melee-dps",
+    "tree": "Survival",
+    "start": "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-survival-scorer.json",
+    "starts": {
+     "leveling-melee": 29.9445567338779,
+     "opt-melee-dps-solo-60": 29.9445567338779,
+     "opt-bm-leveling-leveling-aoe": 34.29556131770771,
+     "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-survival-scorer.json": 28.96958349397287
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Focused Fire -> Clever Traps",
+      "gain_seed1": 0.014935894409429329,
+      "gain_seed2": 0.008455500419917161
+     },
+     {
+      "round": 2,
+      "move": "2 points Lightning Reflexes -> Focused Fire",
+      "gain_seed1": 0.010061012998308416,
+      "gain_seed2": 0.01290331843415271
+     },
+     {
+      "round": 3,
+      "move": "1 point Strider Kick -> Deflection",
+      "gain_seed1": 0.003409810489411913,
+      "gain_seed2": 0.008148743127512015
+     }
+    ],
+    "incumbent": "opt-melee-dps-solo-60",
+    "race": {
+     "incumbent": [
+      26.07914604364338,
+      {
+       "20": 17.23689914511186,
+       "30": 23.10791844431654,
+       "40": 25.623264556215965,
+       "50": 27.283510015829577,
+       "60": 29.812459824280406
+      }
+     ],
+     "search": [
+      25.788258624989787,
+      {
+       "20": 17.23689914511186,
+       "30": 21.463371641351422,
+       "40": 26.931748632113017,
+       "50": 28.304458994112018,
+       "60": 27.9419949644176
+      }
+     ],
+     "gain": 0.011154023915000644,
+     "all": {
+      "leveling-melee": [
+       26.087118411516496,
+       {
+        "20": 17.23689914511186,
+        "30": 23.10791844431654,
+        "40": 25.623264556215965,
+        "50": 27.315399487322036,
+        "60": 29.812459824280406
+       }
+      ],
+      "opt-melee-dps-solo-60": [
+       26.07914604364338,
+       {
+        "20": 17.23689914511186,
+        "30": 23.10791844431654,
+        "40": 25.623264556215965,
+        "50": 27.283510015829577,
+        "60": 29.812459824280406
+       }
+      ],
+      "opt-bm-leveling-leveling-aoe": [
+       29.898162298988744,
+       {
+        "20": 17.314114443041575,
+        "30": 22.583116953148245,
+        "40": 30.585787968886603,
+        "50": 33.51402144605197,
+        "60": 34.278734521406804
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.011154023915000644,
+   "incumbent": "opt-melee-dps-solo-60",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 17.23689914511186,
+    "30": 23.10791844431654,
+    "40": 25.623264556215965,
+    "50": 27.283510015829577,
+    "60": 29.812459824280406
+   }
   }
  },
  "warlock": {
@@ -1505,6 +1619,181 @@
     "40": 38.727111100000165,
     "50": 40.53739542227831,
     "60": 40.74017554075509
+   }
+  }
+ },
+ "druid": {
+  "Balance": {
+   "spec": "balance-dps",
+   "model": "balance-dps",
+   "tree": "Balance",
+   "hands": [
+    "opt-balance-dps-leveling-st"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "druid/research/leveling/fightlab/candidates/derived-balance.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "balance-dps",
+    "model": "balance-dps",
+    "tree": "Balance",
+    "start": "opt-balance-dps-leveling-st",
+    "starts": {
+     "opt-balance-dps-leveling-st": 51.201267176157494,
+     "/home/user/wow-forever/druid/research/leveling/fightlab/candidates/derived-balance-scorer.json": 51.201267176157494
+    },
+    "moves": [],
+    "incumbent": "opt-balance-dps-leveling-st",
+    "race": {
+     "incumbent": [
+      53.286452907307435,
+      {
+       "20": 42.70898453906171,
+       "30": 51.693385885798854,
+       "40": 60.7168595453166,
+       "50": 55.128342665314044,
+       "60": 51.12029665046534
+      }
+     ],
+     "search": [
+      53.286452907307435,
+      {
+       "20": 42.70898453906171,
+       "30": 51.693385885798854,
+       "40": 60.7168595453166,
+       "50": 55.128342665314044,
+       "60": 51.12029665046534
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "opt-balance-dps-leveling-st": [
+       53.286452907307435,
+       {
+        "20": 42.70898453906171,
+        "30": 51.693385885798854,
+        "40": 60.7168595453166,
+        "50": 55.128342665314044,
+        "60": 51.12029665046534
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "opt-balance-dps-leveling-st",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 42.70898453906171,
+    "30": 51.693385885798854,
+    "40": 60.7168595453166,
+    "50": 55.128342665314044,
+    "60": 51.12029665046534
+   }
+  },
+  "Feral Combat": {
+   "spec": "feral-cat-dps",
+   "model": "feral-cat-dps",
+   "tree": "Feral Combat",
+   "hands": [
+    "leveling-feral",
+    "opt-feral-cat-dps-leveling-st",
+    "opt-feral-cat-dps-solo-60"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "druid/research/leveling/fightlab/candidates/derived-feral-combat.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "feral-cat-dps",
+    "model": "feral-cat-dps",
+    "tree": "Feral Combat",
+    "start": "leveling-feral",
+    "starts": {
+     "leveling-feral": 28.42081322445165,
+     "opt-feral-cat-dps-leveling-st": 28.750361614753963,
+     "opt-feral-cat-dps-solo-60": 28.750361614753963,
+     "/home/user/wow-forever/druid/research/leveling/fightlab/candidates/derived-feral-combat-scorer.json": 28.750361614753963
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "1 point Naturalist -> Natural Shapeshifter",
+      "gain_seed1": 0.01140721780864462,
+      "gain_seed2": 0.006880214427269826
+     }
+    ],
+    "incumbent": "leveling-feral",
+    "race": {
+     "incumbent": [
+      25.472754184715537,
+      {
+       "20": 18.499233333237882,
+       "30": 23.243466666577,
+       "40": 25.0289499343284,
+       "50": 26.394359000403966,
+       "60": 28.439770381461766
+      }
+     ],
+     "search": [
+      25.434998206506968,
+      {
+       "20": 18.637399999902936,
+       "30": 23.243466666577,
+       "40": 25.0289499343284,
+       "50": 26.394359000403966,
+       "60": 28.267861565211508
+      }
+     ],
+     "gain": 0.0014822102837714901,
+     "all": {
+      "leveling-feral": [
+       25.472754184715537,
+       {
+        "20": 18.499233333237882,
+        "30": 23.243466666577,
+        "40": 25.0289499343284,
+        "50": 26.394359000403966,
+        "60": 28.439770381461766
+       }
+      ],
+      "opt-feral-cat-dps-leveling-st": [
+       25.613029303816525,
+       {
+        "20": 18.787533333234467,
+        "30": 23.35063333324698,
+        "40": 25.233966666645244,
+        "50": 26.478583416358,
+        "60": 28.550805943624937
+       }
+      ],
+      "opt-feral-cat-dps-solo-60": [
+       25.613029303816525,
+       {
+        "20": 18.787533333234467,
+        "30": 23.35063333324698,
+        "40": 25.233966666645244,
+        "50": 26.478583416358,
+        "60": 28.550805943624937
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0014822102837714901,
+   "incumbent": "leveling-feral",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 18.499233333237882,
+    "30": 23.243466666577,
+    "40": 25.0289499343284,
+    "50": 26.394359000403966,
+    "60": 28.439770381461766
    }
   }
  }

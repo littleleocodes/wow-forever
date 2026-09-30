@@ -1,0 +1,292 @@
+{
+ "id": "fl-survival-melee-dps",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Pathfinding",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Deterrence",
+    1
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Counterattack",
+    1
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Clever Traps",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Survival",
+   "talent": "Savage Strikes",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 3
+  },
+  {
+   "levels": "20-22",
+   "tree": "Survival",
+   "talent": "Surefooted",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Survival",
+   "talent": "Deterrence",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Survival",
+   "talent": "Counterattack",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Survival",
+   "talent": "Resourcefulness",
+   "points": 2
+  },
+  {
+   "levels": "32-33",
+   "tree": "Survival",
+   "talent": "Expose Prey",
+   "points": 2
+  },
+  {
+   "levels": "34",
+   "tree": "Survival",
+   "talent": "Predator's Edge",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "40-42",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "43-47",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "48-52",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "53-54",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "55",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 1
+  },
+  {
+   "levels": "56-57",
+   "tree": "Survival",
+   "talent": "Survivalist's Discipline",
+   "points": 2
+  },
+  {
+   "levels": "58",
+   "tree": "Survival",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Survival",
+   "talent": "Clever Traps",
+   "points": 2
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "melee-dps",
+  "model": "melee-dps",
+  "tree": "Survival",
+  "start": "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-survival-scorer.json",
+  "starts": {
+   "leveling-melee": 29.9445567338779,
+   "opt-melee-dps-solo-60": 29.9445567338779,
+   "opt-bm-leveling-leveling-aoe": 34.29556131770771,
+   "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-survival-scorer.json": 28.96958349397287
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Focused Fire -> Clever Traps",
+    "gain_seed1": 0.014935894409429329,
+    "gain_seed2": 0.008455500419917161
+   },
+   {
+    "round": 2,
+    "move": "2 points Lightning Reflexes -> Focused Fire",
+    "gain_seed1": 0.010061012998308416,
+    "gain_seed2": 0.01290331843415271
+   },
+   {
+    "round": 3,
+    "move": "1 point Strider Kick -> Deflection",
+    "gain_seed1": 0.003409810489411913,
+    "gain_seed2": 0.008148743127512015
+   }
+  ],
+  "incumbent": "opt-melee-dps-solo-60",
+  "race": {
+   "incumbent": [
+    26.07914604364338,
+    {
+     "20": 17.23689914511186,
+     "30": 23.10791844431654,
+     "40": 25.623264556215965,
+     "50": 27.283510015829577,
+     "60": 29.812459824280406
+    }
+   ],
+   "search": [
+    25.788258624989787,
+    {
+     "20": 17.23689914511186,
+     "30": 21.463371641351422,
+     "40": 26.931748632113017,
+     "50": 28.304458994112018,
+     "60": 27.9419949644176
+    }
+   ],
+   "gain": 0.011154023915000644,
+   "all": {
+    "leveling-melee": [
+     26.087118411516496,
+     {
+      "20": 17.23689914511186,
+      "30": 23.10791844431654,
+      "40": 25.623264556215965,
+      "50": 27.315399487322036,
+      "60": 29.812459824280406
+     }
+    ],
+    "opt-melee-dps-solo-60": [
+     26.07914604364338,
+     {
+      "20": 17.23689914511186,
+      "30": 23.10791844431654,
+      "40": 25.623264556215965,
+      "50": 27.283510015829577,
+      "60": 29.812459824280406
+     }
+    ],
+    "opt-bm-leveling-leveling-aoe": [
+     29.898162298988744,
+     {
+      "20": 17.314114443041575,
+      "30": 22.583116953148245,
+      "40": 30.585787968886603,
+      "50": 33.51402144605197,
+      "60": 34.278734521406804
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
