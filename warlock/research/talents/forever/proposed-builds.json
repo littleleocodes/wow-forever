@@ -586,197 +586,6 @@
       "sources": ["https://warcraftforever.games/talents/warlock"]
     },
     {
-      "id": "affliction-leveling",
-      "name": "Affliction — Leveling (generated)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Affliction",
-      "generated": "2026-09-29",
-      "summary": "The best Affliction leveling build with at least 30 points in Affliction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5],
-          ["Malediction", 5],
-          ["Improved Bane of Agony", 2],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Malevolence", 5],
-          ["Siphon Life", 1],
-          ["Soul Siphon", 3],
-          ["Shadow Mastery", 5]
-        ],
-        "Demonology": [
-          ["Unholy Power", 5],
-          ["Demonic Aegis", 1]
-        ],
-        "Destruction": [
-          ["Bane", 5],
-          ["Molten Skin", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Siphon Life", "why": "The scorer's value in this build: +31.9% of its score (model affliction-leveling)."},
-        {"talent": "Pandemic", "why": "The scorer's value in this build: +10.4% of its score (model affliction-leveling)."},
-        {"talent": "Shadow Mastery", "why": "The scorer's value in this build: +8.1% of its score (model affliction-leveling)."},
-        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +6.9% of its score (model affliction-leveling)."},
-        {"talent": "Malevolence", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
-        {"talent": "Malediction", "why": "The scorer's value in this build: +6.2% of its score (model affliction-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st."],
-      "open_questions": ["A generated Affliction build: check it against the community's Affliction builds at launch."],
-      "sources": ["https://talentsforever.com/warlock"],
-      "order": [
-        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
-        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
-        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
-        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
-        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
-        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
-        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
-        {"levels": "31", "tree": "Affliction", "talent": "Malevolence", "points": 1},
-        {"levels": "32-34", "tree": "Affliction", "talent": "Suppression", "points": 3},
-        {"levels": "35-39", "tree": "Affliction", "talent": "Shadow Mastery", "points": 5},
-        {"levels": "40-41", "tree": "Affliction", "talent": "Suppression", "points": 2},
-        {"levels": "42-46", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
-        {"levels": "47-49", "tree": "Affliction", "talent": "Soul Siphon", "points": 3},
-        {"levels": "50-54", "tree": "Destruction", "talent": "Bane", "points": 5},
-        {"levels": "55-59", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
-        {"levels": "60", "tree": "Demonology", "talent": "Demonic Aegis", "points": 1}
-      ]
-    },
-    {
-      "id": "demonology-leveling",
-      "name": "Demonology — Leveling (generated)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Demonology",
-      "generated": "2026-09-29",
-      "summary": "The best Demonology leveling build with at least 30 points in Demonology, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 5],
-          ["Malediction", 5],
-          ["Improved Bane of Agony", 2],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Malevolence", 4],
-          ["Siphon Life", 1]
-        ],
-        "Demonology": [
-          ["Improved Health Funnel", 2],
-          ["Improved Imp", 3],
-          ["Demonic Embrace", 5],
-          ["Unholy Power", 5],
-          ["Demonic Aegis", 2],
-          ["Improved Voidwalker", 3],
-          ["Demonic Sacrifice", 1],
-          ["Soul Link", 1],
-          ["Demonic Knowledge", 3],
-          ["Master Demonologist", 5]
-        ],
-        "Destruction": []
-      },
-      "core": [
-        {"talent": "Siphon Life", "why": "The scorer's value in this build: +30.4% of its score (model affliction-leveling)."},
-        {"talent": "Demonic Knowledge", "why": "The scorer's value in this build: +14.2% of its score (model affliction-leveling)."},
-        {"talent": "Pandemic", "why": "The scorer's value in this build: +9.2% of its score (model affliction-leveling)."},
-        {"talent": "Soul Link", "why": "The scorer's value in this build: +6.9% of its score (model affliction-leveling)."},
-        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +6.5% of its score (model affliction-leveling)."},
-        {"talent": "Malediction", "why": "The scorer's value in this build: +5.8% of its score (model affliction-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
-      "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
-      "sources": ["https://talentsforever.com/warlock"],
-      "order": [
-        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
-        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
-        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
-        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
-        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
-        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
-        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
-        {"levels": "31-35", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
-        {"levels": "36-37", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
-        {"levels": "38-42", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
-        {"levels": "43", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
-        {"levels": "44-45", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 2},
-        {"levels": "46-48", "tree": "Demonology", "talent": "Improved Imp", "points": 3},
-        {"levels": "49-50", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 2},
-        {"levels": "51", "tree": "Demonology", "talent": "Soul Link", "points": 1},
-        {"levels": "52-54", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
-        {"levels": "55", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 1},
-        {"levels": "56-60", "tree": "Demonology", "talent": "Master Demonologist", "points": 5}
-      ]
-    },
-    {
-      "id": "destruction-leveling",
-      "name": "Destruction — Leveling (generated)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Destruction",
-      "generated": "2026-09-29",
-      "summary": "The best Destruction leveling build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Affliction": [
-          ["Improved Corruption", 5],
-          ["Malediction", 5],
-          ["Improved Bane of Agony", 2],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Malevolence", 4],
-          ["Siphon Life", 1]
-        ],
-        "Demonology": [],
-        "Destruction": [
-          ["Destructive Reach", 2],
-          ["Bane", 5],
-          ["Molten Skin", 5],
-          ["Aftermath", 5],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Intensity", 3],
-          ["Agonizing Flames", 3],
-          ["Conflagrate", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Siphon Life", "why": "The scorer's value in this build: +40.9% of its score (model affliction-leveling)."},
-        {"talent": "Pandemic", "why": "The scorer's value in this build: +12.4% of its score (model affliction-leveling)."},
-        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +8.5% of its score (model affliction-leveling)."},
-        {"talent": "Malediction", "why": "The scorer's value in this build: +8.0% of its score (model affliction-leveling)."},
-        {"talent": "Malevolence", "why": "The scorer's value in this build: +6.6% of its score (model affliction-leveling)."},
-        {"talent": "Amplify Curse", "why": "The scorer's value in this build: +5.4% of its score (model affliction-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
-      "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
-      "sources": ["https://talentsforever.com/warlock"],
-      "order": [
-        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
-        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
-        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
-        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
-        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
-        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
-        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
-        {"levels": "31-35", "tree": "Destruction", "talent": "Bane", "points": 5},
-        {"levels": "36-40", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
-        {"levels": "41-45", "tree": "Destruction", "talent": "Aftermath", "points": 5},
-        {"levels": "46-48", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
-        {"levels": "49-53", "tree": "Destruction", "talent": "Ruin", "points": 5},
-        {"levels": "54-55", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
-        {"levels": "56-58", "tree": "Destruction", "talent": "Intensity", "points": 3},
-        {"levels": "59", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
-        {"levels": "60", "tree": "Destruction", "talent": "Shadowburn", "points": 1}
-      ]
-    },
-    {
       "id": "opt-affliction-raid-parse",
       "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)",
       "role": "dps",
@@ -1404,6 +1213,204 @@
       "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "affliction-leveling",
+      "name": "Affliction — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Affliction",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Affliction leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Affliction build, 30+ points kept in Affliction, playing the affliction-leveling rotation; the talent order is the stats model's (affliction-leveling).",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5],
+          ["Siphon Life", 1],
+          ["Soul Siphon", 3],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Demonic Energies", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Molten Skin", 5]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "23-25", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Suppression", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31", "tree": "Affliction", "talent": "Suppression", "points": 1},
+        {"levels": "32-34", "tree": "Affliction", "talent": "Malevolence", "points": 3},
+        {"levels": "35-39", "tree": "Affliction", "talent": "Shadow Mastery", "points": 5},
+        {"levels": "40-41", "tree": "Affliction", "talent": "Malevolence", "points": 2},
+        {"levels": "42-46", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "47-49", "tree": "Affliction", "talent": "Soul Siphon", "points": 3},
+        {"levels": "50-54", "tree": "Destruction", "talent": "Bane", "points": 5},
+        {"levels": "55-59", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
+        {"levels": "60", "tree": "Demonology", "talent": "Demonic Energies", "points": 1}
+      ],
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +33.8% of its score (model affliction-leveling)."},
+        {"talent": "Shadow Mastery", "why": "The scorer's value in this build: +8.4% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +7.2% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +6.2% of its score (model affliction-leveling)."},
+        {"talent": "Molten Skin", "why": "The scorer's value in this build: +6.2% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +5.9% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-affliction-scorer, moves: 1 point Aftermath -> Demonic Energies. Race against affliction-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.4% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Affliction leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/warlock"]
+    },
+    {
+      "id": "demonology-leveling",
+      "name": "Demonology — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Demonology",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Demonology leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Demonology build, 30+ points kept in Demonology, playing the demonology-leveling rotation; the talent order is the stats model's (affliction-leveling).",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 3],
+          ["Malediction", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 4],
+          ["Siphon Life", 1],
+          ["Improved Life Tap", 2],
+          ["Improved Bane of Agony", 2]
+        ],
+        "Demonology": [
+          ["Improved Imp", 3],
+          ["Demonic Embrace", 2],
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 2],
+          ["Improved Voidwalker", 3],
+          ["Demonic Sacrifice", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3],
+          ["Master Demonologist", 5],
+          ["Demonic Energies", 2],
+          ["Demonic Brand", 3]
+        ],
+        "Destruction": []
+      },
+      "order": [
+        {"levels": "10-12", "tree": "Affliction", "talent": "Improved Corruption", "points": 3},
+        {"levels": "13-14", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "23-25", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31-35", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "36-38", "tree": "Demonology", "talent": "Improved Imp", "points": 3},
+        {"levels": "39-40", "tree": "Demonology", "talent": "Demonic Embrace", "points": 2},
+        {"levels": "41-42", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "43-45", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "46", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "47-48", "tree": "Demonology", "talent": "Demonic Energies", "points": 2},
+        {"levels": "49-50", "tree": "Demonology", "talent": "Demonic Brand", "points": 2},
+        {"levels": "51", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "52-54", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+        {"levels": "55", "tree": "Demonology", "talent": "Demonic Brand", "points": 1},
+        {"levels": "56-60", "tree": "Demonology", "talent": "Master Demonologist", "points": 5}
+      ],
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +35.1% of its score (model affliction-leveling)."},
+        {"talent": "Demonic Knowledge", "why": "The scorer's value in this build: +16.1% of its score (model affliction-leveling)."},
+        {"talent": "Soul Link", "why": "The scorer's value in this build: +6.8% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +5.7% of its score (model affliction-leveling)."},
+        {"talent": "Unholy Power", "why": "The scorer's value in this build: +4.6% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start demonology-leveling, moves: 2 points Improved Health Funnel -> Demonic Energies; 3 points Demonic Embrace -> Demonic Brand; 2 points Improved Bane of Agony -> Improved Life Tap; 2 points Improved Corruption -> Improved Bane of Agony. Race against demonology-leveling over levels 20-60 (seed 3, 3000 fights per level): +5.3% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Demonology leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/warlock"]
+    },
+    {
+      "id": "destruction-leveling",
+      "name": "Destruction — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Destruction leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Destruction build, 30+ points kept in Destruction, playing the destruction-leveling rotation; the talent order is the stats model's (affliction-leveling).",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 4],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Destructive Reach", 2],
+          ["Bane", 5],
+          ["Molten Skin", 5],
+          ["Aftermath", 5],
+          ["Ruin", 5],
+          ["Intensity", 3],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Fire and Brimstone", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "23-25", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31-35", "tree": "Destruction", "talent": "Bane", "points": 5},
+        {"levels": "36-40", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
+        {"levels": "41-45", "tree": "Destruction", "talent": "Aftermath", "points": 5},
+        {"levels": "46-48", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
+        {"levels": "49-53", "tree": "Destruction", "talent": "Ruin", "points": 5},
+        {"levels": "54-55", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
+        {"levels": "56-58", "tree": "Destruction", "talent": "Intensity", "points": 3},
+        {"levels": "59", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
+        {"levels": "60", "tree": "Destruction", "talent": "Fire and Brimstone", "points": 1}
+      ],
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +42.7% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +8.7% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +8.0% of its score (model affliction-leveling)."},
+        {"talent": "Molten Skin", "why": "The scorer's value in this build: +7.9% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +6.9% of its score (model affliction-leveling)."},
+        {"talent": "Malevolence", "why": "The scorer's value in this build: +5.2% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start destruction-leveling, moves: 1 point Shadowburn -> Fire and Brimstone. Race against destruction-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.4% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Destruction leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/warlock"]
     }
   ]
 }

@@ -1887,6 +1887,86 @@
     "50": 38.475534409744526,
     "60": 36.44435112040499
    }
+  },
+  "Destruction": {
+   "spec": "destruction-leveling",
+   "model": "affliction-leveling",
+   "tree": "Destruction",
+   "hands": [],
+   "generated": [
+    "destruction-leveling"
+   ],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "warlock/research/leveling/fightlab/candidates/derived-destruction.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "destruction-leveling",
+    "model": "affliction-leveling",
+    "tree": "Destruction",
+    "start": "destruction-leveling",
+    "starts": {
+     "destruction-leveling": 44.146771154990574,
+     "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-destruction-scorer.json": 44.14924209470653
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "1 point Shadowburn -> Fire and Brimstone",
+      "gain_seed1": 0.009935061265892275,
+      "gain_seed2": 0.011981682811214034
+     }
+    ],
+    "incumbent": "destruction-leveling",
+    "race": {
+     "incumbent": [
+      38.998816141483836,
+      {
+       "20": 25.680566666661285,
+       "30": 32.306100000234565,
+       "40": 39.26821353398241,
+       "50": 42.09334806792605,
+       "60": 44.02621583668177
+      }
+     ],
+     "search": [
+      38.839374091748326,
+      {
+       "20": 25.680566666661285,
+       "30": 32.306100000234565,
+       "40": 39.26821353398241,
+       "50": 42.09334806792605,
+       "60": 43.4947423375634
+      }
+     ],
+     "gain": 0.004088381789772,
+     "all": {
+      "destruction-leveling": [
+       38.998816141483836,
+       {
+        "20": 25.680566666661285,
+        "30": 32.306100000234565,
+        "40": 39.26821353398241,
+        "50": 42.09334806792605,
+        "60": 44.02621583668177
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.004088381789772,
+   "incumbent": "destruction-leveling",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 25.680566666661285,
+    "30": 32.306100000234565,
+    "40": 39.26821353398241,
+    "50": 42.09334806792605,
+    "60": 43.4947423375634
+   }
   }
  },
  "druid": {

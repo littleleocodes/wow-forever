@@ -10,9 +10,9 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Affliction** | **✅ Recommended**<br>[Affliction — Leveling](leveling/affliction.md) ⚗<br>38 s/kill | [Affliction — DoT / Drain Hope](raid/affliction.md)<br>567 DPS | [Affliction — PvP](pvp/affliction.md) 🔬 |
-| **Demonology** | **✅ Recommended**<br>[Demonology — Leveling](leveling/demonology.md) ⚗<br>37 s/kill | **✅ Recommended**<br>[Demonology — Demonic Pact](raid/demonology.md)<br>616 DPS | [Demonology — PvP](pvp/demonology.md) 🔬 |
-| **Destruction** | [Destruction — Leveling](leveling/destruction.md) ⚗<br>39 s/kill | [Destruction — Incinerate](raid/destruction.md)<br>478 DPS | [Destruction — PvP](pvp/destruction.md) 🔬 |
+| **Affliction** | [Affliction — Leveling](leveling/affliction.md) 🔬<br>38 s/kill | [Affliction — DoT / Drain Hope](raid/affliction.md)<br>567 DPS | [Affliction — PvP](pvp/affliction.md) 🔬 |
+| **Demonology** | **✅ Recommended**<br>[Demonology — Leveling](leveling/demonology.md) 🔬<br>36 s/kill | **✅ Recommended**<br>[Demonology — Demonic Pact](raid/demonology.md)<br>616 DPS | [Demonology — PvP](pvp/demonology.md) 🔬 |
+| **Destruction** | [Destruction — Leveling](leveling/destruction.md) 🔬<br>39 s/kill | [Destruction — Incinerate](raid/destruction.md)<br>478 DPS | [Destruction — PvP](pvp/destruction.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -35,10 +35,10 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
-| 1 | [Affliction-Demonology](leveling/affliction-demonology.md) — Leveling — Affliction DoTs with a Voidwalker | 37 | fastest |
-| 2 | [Demonology](leveling/demonology.md) — Demonology — Leveling ⚗ | 37 | +2% |
-| 3 | [Affliction](leveling/affliction.md) — Affliction — Leveling ⚗ | 38 | +3% |
-| 4 | [Destruction](leveling/destruction.md) — Destruction — Leveling ⚗ | 39 | +7% |
+| 1 | [Demonology](leveling/demonology.md) — Demonology — Leveling 🔬 | 36 | fastest |
+| 2 | [Affliction-Demonology](leveling/affliction-demonology.md) — Leveling — Affliction DoTs with a Voidwalker | 37 | +2% |
+| 3 | [Affliction](leveling/affliction.md) — Affliction — Leveling 🔬 | 38 | +5% |
+| 4 | [Destruction](leveling/destruction.md) — Destruction — Leveling 🔬 | 39 | +9% |
 
 ### Raid (training dummy and parse)
 

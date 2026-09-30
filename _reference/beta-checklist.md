@@ -358,10 +358,10 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 - Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.
 - Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3.
-- A generated Affliction build: check it against the community's Affliction builds at launch.
-- A generated Demonology build: check it against the community's Demonology builds at launch.
-- A generated Destruction build: check it against the community's Destruction builds at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Affliction leveling build: check it while leveling at launch.
+- A derived Demonology leveling build: check it while leveling at launch.
+- A derived Destruction leveling build: check it while leveling at launch.
 
 ## Warrior
 

@@ -33,7 +33,7 @@
 | 57-58 | Retribution | Vengeance | 2 |
 | 59-60 | Retribution | Pursuit of Justice | 2 |
 
-Respec plan: **63.3 h** (29.7% faster than talentless), 0 respec(s).
+Respec plan: **61.3 h** (31.9% faster than talentless), 0 respec(s).
 
 ## What each bracket feels like
 

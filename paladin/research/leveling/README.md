@@ -28,7 +28,7 @@ Classic Era reference builds: [leveling-retribution](../talents/classic-baseline
 
 - [Leveling guide](guide.md): the recommended build `leveling-retribution` level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the priority the fight lab plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**63.3 h** (29.7% faster than talentless), 0 respec(s).).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**61.3 h** (31.9% faster than talentless), 0 respec(s).).
 - Recommended build: [leveling-retribution](builds/leveling-retribution.md).
 
 ## Fight lab (Monte Carlo fight simulator)

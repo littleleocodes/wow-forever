@@ -551,15 +551,6 @@
 - [ ] Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.
 - [ ] Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3.
 
-**Affliction — Leveling (generated)** (`warlock/research/leveling/builds/affliction-leveling.md`)
-- [ ] A generated Affliction build: check it against the community's Affliction builds at launch.
-
-**Demonology — Leveling (generated)** (`warlock/research/leveling/builds/demonology-leveling.md`)
-- [ ] A generated Demonology build: check it against the community's Demonology builds at launch.
-
-**Destruction — Leveling (generated)** (`warlock/research/leveling/builds/destruction-leveling.md`)
-- [ ] A generated Destruction build: check it against the community's Destruction builds at launch.
-
 **Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)** (`warlock/research/raid/builds/opt-affliction-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -595,6 +586,15 @@
 
 **Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)** (`warlock/research/raid/builds/opt-sb-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Affliction — Leveling (derived)** (`warlock/research/leveling/builds/affliction-leveling.md`)
+- [ ] A derived Affliction leveling build: check it while leveling at launch.
+
+**Demonology — Leveling (derived)** (`warlock/research/leveling/builds/demonology-leveling.md`)
+- [ ] A derived Demonology leveling build: check it while leveling at launch.
+
+**Destruction — Leveling (derived)** (`warlock/research/leveling/builds/destruction-leveling.md`)
+- [ ] A derived Destruction leveling build: check it while leveling at launch.
 
 ### Warrior
 

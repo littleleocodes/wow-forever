@@ -374,7 +374,7 @@
     "Send the Voidwalker in first and let it hold the mob."
    ],
    "steps": [
-    "**Corruption**, **Bane of Agony** and **Siphon Life** on the mob.",
+    "**Corruption** (not on a mob that is nearly dead), **Bane of Agony** and **Siphon Life** on the mob.",
     "**Searing Pain** to keep Demonic Brand up once you have it.",
     "**Soul Fire** when Decimation lights up (mob below 35% health).",
     "**Shadow Bolt** only when your mana is nearly full; your wand otherwise.",
@@ -391,15 +391,15 @@
     "Send the Voidwalker in first and let it hold the mob."
    ],
    "steps": [
-    "**Corruption** and **Bane of Agony** while the Voidwalker grabs the mob.",
-    "**Immolate**, then **Conflagrate** when Immolate is about to run out.",
+    "**Corruption** (not on a mob that is nearly dead) and **Bane of Agony** while the Voidwalker grabs the mob.",
+    "**Immolate** while you have more than half your mana, then **Conflagrate** when Immolate is about to run out.",
     "**Incinerate** on a burning mob while your mana is nearly full; your wand otherwise.",
     "**Shadowburn** or **Conflagrate** to finish a mob they would kill.",
-    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
-    "If a mob reaches you: **Death Coil** or **Fear**."
+    "**Life Tap** when you are low on mana.",
+    "If a mob reaches you: **Death Coil** (skip Fear and Drain Life: the Voidwalker takes the mob back)."
    ],
    "between": [
-    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health."
+    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat below 40% health."
    ]
   }
  },

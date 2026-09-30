@@ -11,9 +11,9 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Affliction DoTs with a Voidwalker (fight-lab winner adopted 2026-09-28)](builds/leveling-affliction.md) | 23/26/2 | DPS | [leveling-affliction-demo](../talents/classic-baseline/leveling-affliction-demo.md) |
-| [Affliction — Leveling (generated)](builds/affliction-leveling.md) | 35/6/10 | DPS | — |
-| [Demonology — Leveling (generated)](builds/demonology-leveling.md) | 21/30/0 | DPS | — |
-| [Destruction — Leveling (generated)](builds/destruction-leveling.md) | 21/0/30 | DPS | — |
+| [Affliction — Leveling (derived)](builds/affliction-leveling.md) | 35/6/10 | DPS | — |
+| [Demonology — Leveling (derived)](builds/demonology-leveling.md) | 21/30/0 | DPS | — |
+| [Destruction — Leveling (derived)](builds/destruction-leveling.md) | 21/0/30 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
