@@ -742,103 +742,6 @@
       ]
     },
     {
-      "id": "fury-pvp",
-      "name": "Fury — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Fury",
-      "generated": "2026-09-29",
-      "summary": "The best Fury pvp build with at least 30 points in Fury, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (fury-dw-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Arms": [
-          ["Improved Heroic Strike", 2],
-          ["Deflection", 5],
-          ["Improved Charge", 2],
-          ["Improved Tactical Mastery", 5],
-          ["Anger Management", 1],
-          ["Spearing Strike", 1],
-          ["Impale", 2]
-        ],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Iron Will", 5],
-          ["Unbridled Wrath", 1],
-          ["Piercing Howl", 1],
-          ["Blood Craze", 3],
-          ["Dual Wield Specialization", 1],
-          ["Raging Blows", 1],
-          ["Enrage", 5],
-          ["Improved Execute", 2],
-          ["Precision", 3],
-          ["Death Wish", 1],
-          ["Improved Intercept", 2],
-          ["Improved Berserker Rage", 2],
-          ["Bloodthirst", 1]
-        ],
-        "Protection": []
-      },
-      "core": [
-        {"talent": "Bloodthirst", "why": "The scorer's value in this build: +11.8% of its score (model fury-dw-raid)."},
-        {"talent": "Death Wish", "why": "The scorer's value in this build: +11.3% of its score (model fury-dw-raid)."},
-        {"talent": "Enrage", "why": "The scorer's value in this build: +11.0% of its score (model fury-dw-raid)."},
-        {"talent": "Improved Execute", "why": "The scorer's value in this build: +9.7% of its score (model fury-dw-raid)."},
-        {"talent": "Improved Tactical Mastery", "why": "The scorer's value in this build: +8.7% of its score (model fury-dw-raid)."},
-        {"talent": "Improved Berserker Rage", "why": "The scorer's value in this build: +8.5% of its score (model fury-dw-raid)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model fury-dw-raid, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Fury build: check it against the community's Fury builds at launch."],
-      "sources": ["https://talentsforever.com/warrior"]
-    },
-    {
-      "id": "protection-pvp",
-      "name": "Protection — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Protection",
-      "generated": "2026-09-29",
-      "summary": "The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (arms-2h-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Arms": [],
-        "Fury": [
-          ["Cruelty", 5],
-          ["Iron Will", 5],
-          ["Unbridled Wrath", 1],
-          ["Piercing Howl", 1],
-          ["Blood Craze", 3],
-          ["Enrage", 5],
-          ["Death Wish", 1]
-        ],
-        "Protection": [
-          ["Shield Specialization", 5],
-          ["Anticipation", 5],
-          ["Improved Bloodrage", 2],
-          ["Toughness", 5],
-          ["Last Stand", 1],
-          ["Improved Disarm", 3],
-          ["Vanguard", 1],
-          ["Improved Shield Wall", 2],
-          ["Concussion Blow", 1],
-          ["Improved Shield Bash", 2],
-          ["Focused Rage", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Blood Craze", "why": "The scorer's value in this build: +40.6% of its score (model arms-2h-raid)."},
-        {"talent": "Death Wish", "why": "The scorer's value in this build: +9.0% of its score (model arms-2h-raid)."},
-        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +7.1% of its score (model arms-2h-raid)."},
-        {"talent": "Concussion Blow", "why": "The scorer's value in this build: +7.1% of its score (model arms-2h-raid)."},
-        {"talent": "Last Stand", "why": "The scorer's value in this build: +6.2% of its score (model arms-2h-raid)."},
-        {"talent": "Enrage", "why": "The scorer's value in this build: +5.5% of its score (model arms-2h-raid)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model arms-2h-raid, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
-      "open_questions": ["A generated Protection build: check it against the community's Protection builds at launch."],
-      "sources": ["https://talentsforever.com/warrior"]
-    },
-    {
       "id": "opt-arms-2h-raid-raid-dps",
       "name": "Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)",
       "role": "dps",
@@ -1067,6 +970,156 @@
       "notes": ["Report: warrior/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "arms-pvp",
+      "name": "Arms — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Arms",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Arms PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Arms (model arms-2h-raid, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Arms builds agree with (8519 builds).",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 2],
+          ["Improved Rend", 3],
+          ["Improved Charge", 2],
+          ["Improved Tactical Mastery", 5],
+          ["Improved Overpower", 2],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Spearing Strike", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2],
+          ["Sweeping Strikes", 1],
+          ["Weaponmaster", 3],
+          ["Improved Hamstring", 3],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Iron Will", 5],
+          ["Unbridled Wrath", 1],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Enrage", 4]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Blood Craze", "why": "The scorer's value in this build: +38.4% of its score (model arms-2h-raid)."},
+        {"talent": "Mortal Strike", "why": "The scorer's value in this build: +13.9% of its score (model arms-2h-raid)."},
+        {"talent": "Improved Tactical Mastery", "why": "The scorer's value in this build: +7.0% of its score (model arms-2h-raid)."},
+        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +6.7% of its score (model arms-2h-raid)."},
+        {"talent": "Improved Hamstring", "why": "The scorer's value in this build: +6.7% of its score (model arms-2h-raid)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +4.6% of its score (model arms-2h-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +28.0% of the optimum's talent value above the hand draft arms-pvp, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 2 points Weaponmaster -> Impale; 1 point Enrage -> Two-Handed Weapon Specialization.", "Where we disagree with the community: most Arms builds take Bloodthrill (78% take it), which the model values below this build's weakest point; this build takes none, which few Arms builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Arms PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"],
+      "replaces": "arms-pvp"
+    },
+    {
+      "id": "fury-pvp",
+      "name": "Fury — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Fury",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Fury PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Fury (model fury-dw-raid, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Fury builds agree with (9026 builds).",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 5],
+          ["Improved Charge", 2],
+          ["Improved Tactical Mastery", 5],
+          ["Anger Management", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Iron Will", 3],
+          ["Unbridled Wrath", 3],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Dual Wield Specialization", 5],
+          ["Raging Blows", 1],
+          ["Enrage", 5],
+          ["Improved Execute", 2],
+          ["Precision", 3],
+          ["Death Wish", 1],
+          ["Improved Intercept", 2],
+          ["Improved Berserker Rage", 2],
+          ["Flurry", 1],
+          ["Bloodthirst", 1]
+        ],
+        "Protection": []
+      },
+      "core": [
+        {"talent": "Bloodthirst", "why": "The scorer's value in this build: +12.1% of its score (model fury-dw-raid)."},
+        {"talent": "Death Wish", "why": "The scorer's value in this build: +11.7% of its score (model fury-dw-raid)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +11.3% of its score (model fury-dw-raid)."},
+        {"talent": "Improved Tactical Mastery", "why": "The scorer's value in this build: +9.0% of its score (model fury-dw-raid)."},
+        {"talent": "Improved Berserker Rage", "why": "The scorer's value in this build: +8.8% of its score (model fury-dw-raid)."},
+        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +8.5% of its score (model fury-dw-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 2 points Iron Will -> Unbridled Wrath.", "Where we disagree with the community: most Fury builds take Improved Rend (76% take it), Deep Wounds (71% take it), Boundless Rage (71% take it), which the model values below this build's weakest point; this build takes Improved Charge (18%), Improved Execute (20%), Improved Intercept (19%), Iron Will (18%), which few Fury builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Fury PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "protection-pvp",
+      "name": "Protection — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Protection (model arms-2h-raid, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Protection builds agree with (11698 builds).",
+      "allocation": {
+        "Arms": [],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Iron Will", 5],
+          ["Unbridled Wrath", 1],
+          ["Piercing Howl", 1],
+          ["Blood Craze", 3],
+          ["Enrage", 5],
+          ["Death Wish", 1]
+        ],
+        "Protection": [
+          ["Shield Specialization", 5],
+          ["Anticipation", 1],
+          ["Improved Bloodrage", 2],
+          ["Toughness", 5],
+          ["Last Stand", 1],
+          ["Master of Defense", 2],
+          ["Improved Revenge", 2],
+          ["Improved Disarm", 3],
+          ["Vanguard", 1],
+          ["Improved Shield Wall", 2],
+          ["Concussion Blow", 1],
+          ["Improved Shield Bash", 2],
+          ["Focused Rage", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Blood Craze", "why": "The scorer's value in this build: +41.0% of its score (model arms-2h-raid)."},
+        {"talent": "Death Wish", "why": "The scorer's value in this build: +9.1% of its score (model arms-2h-raid)."},
+        {"talent": "Piercing Howl", "why": "The scorer's value in this build: +7.2% of its score (model arms-2h-raid)."},
+        {"talent": "Concussion Blow", "why": "The scorer's value in this build: +7.2% of its score (model arms-2h-raid)."},
+        {"talent": "Last Stand", "why": "The scorer's value in this build: +6.3% of its score (model arms-2h-raid)."},
+        {"talent": "Enrage", "why": "The scorer's value in this build: +5.5% of its score (model arms-2h-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 2 points Anticipation -> Master of Defense; 2 points Anticipation -> Improved Revenge.", "Where we disagree with the community: most Protection builds take Bastion (95% take it), Shield Slam (94% take it), Defiance (83% take it), Deflection (78% take it), which the model values below this build's weakest point; this build takes Blood Craze (15%), Death Wish (1%), Enrage (9%), Improved Disarm (11%), Iron Will (9%), Piercing Howl (11%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
+      "open_questions": ["A derived Protection PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"]
     }
   ]
 }

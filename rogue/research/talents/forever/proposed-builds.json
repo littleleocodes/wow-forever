@@ -1404,63 +1404,6 @@
       "notes": ["Community tie-break moves: 3 points Dual Wield Specialization -> Aggression; 1 point Dirty Tricks -> Setup.", "Where we disagree with the community: most Combat builds take Dual Wield Specialization (97% take it), Hack and Slash (97% take it), Malice (92% take it), Lethality (80% take it), Relentless Strikes (77% take it), Ruthlessness (76% take it), Improved Slice and Dice (76% take it), which the model values below this build's weakest point; this build takes Dirty Tricks (4%), Elusiveness (10%), Ghostly Strike (8%), Heightened Senses (3%), Improved Gouge (7%), Improved Kick (11%), Initiative (7%), Master of Deception (11%), Premeditation (5%), Setup (8%), which few Combat builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
       "open_questions": ["A derived Combat PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/popular.js"]
-    },
-    {
-      "id": "subtlety-pvp",
-      "name": "Subtlety — PvP (derived)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Subtlety",
-      "generated": "2026-09-30",
-      "derived": "pvp",
-      "summary": "The Subtlety PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Subtlety (model combat-swords-raid, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Subtlety builds agree with (10701 builds).",
-      "allocation": {
-        "Assassination": [
-          ["Improved Gouge", 3]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 1],
-          ["Improved Sinister Strike", 1],
-          ["Lightning Reflexes", 5],
-          ["Deflection", 3],
-          ["Endurance", 2],
-          ["Riposte", 1],
-          ["Improved Sprint", 2],
-          ["Improved Kick", 2],
-          ["Flawless Execution", 1]
-        ],
-        "Subtlety": [
-          ["Camouflage", 1],
-          ["Master of Deception", 3],
-          ["Opportunity", 2],
-          ["Setup", 3],
-          ["Elusiveness", 2],
-          ["Dirty Tricks", 2],
-          ["Improved Ambush", 3],
-          ["Initiative", 3],
-          ["Ghostly Strike", 1],
-          ["Heightened Senses", 2],
-          ["Premeditation", 1],
-          ["Serrated Blades", 3],
-          ["Dirty Deeds", 2],
-          ["Preparation", 1],
-          ["Hemorrhage", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Preparation", "why": "The scorer's value in this build: +9.9% of its score (model combat-swords-raid)."},
-        {"talent": "Elusiveness", "why": "The scorer's value in this build: +8.6% of its score (model combat-swords-raid)."},
-        {"talent": "Premeditation", "why": "The scorer's value in this build: +8.3% of its score (model combat-swords-raid)."},
-        {"talent": "Lightning Reflexes", "why": "The scorer's value in this build: +8.0% of its score (model combat-swords-raid)."},
-        {"talent": "Endurance", "why": "The scorer's value in this build: +8.0% of its score (model combat-swords-raid)."},
-        {"talent": "Improved Gouge", "why": "The scorer's value in this build: +8.0% of its score (model combat-swords-raid)."}
-      ],
-      "flex": [],
-      "notes": ["Scores +27.4% of the optimum's talent value above the hand draft pvp-hemo-prep, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Improved Distract -> Hemorrhage; 1 point Improved Distract -> Camouflage; 1 point Improved Sinister Strike -> Improved Eviscerate.", "Where we disagree with the community: most Subtlety builds take Malice (91% take it), Relentless Strikes (74% take it), which the model values below this build's weakest point; this build takes Deflection (16%), Flawless Execution (4%), Improved Kick (4%), Riposte (12%), which few Subtlety builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Combat swords model (no Subtlety leveling model): Subtlety's openers and Hemorrhage are under-valued."],
-      "open_questions": ["A derived Subtlety PvP build: check it in duels and battlegrounds at launch."],
-      "sources": ["https://talentsforever.com/rogue", "https://talentsforever.com/popular.js"],
-      "replaces": "pvp-hemo-prep"
     }
   ]
 }

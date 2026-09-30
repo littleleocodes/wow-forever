@@ -1,0 +1,86 @@
+{
+ "id": "derived-feral-combat-tank",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Shredding Attacks",
+    3
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Predatory Instincts",
+    2
+   ],
+   [
+    "Natural Reaction",
+    5
+   ],
+   [
+    "Rend and Tear",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Furor",
+    5
+   ],
+   [
+    "Naturalist",
+    4
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for feral-bear-tank from feral-bear-tank in the raid setting: 383.3 -> 383.3 DPS on a third seed.",
+ "search": {
+  "start": "feral-bear-tank",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 383.2512351958686,
+  "dps_end": 383.2512351958686,
+  "gain": 0.0,
+  "tank": true
+ }
+}

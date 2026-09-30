@@ -921,54 +921,6 @@
       ]
     },
     {
-      "id": "demonology-pvp",
-      "name": "Demonology — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Demonology",
-      "generated": "2026-09-29",
-      "summary": "The best Demonology pvp build with at least 30 points in Demonology, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5],
-          ["Fel Concentration", 3],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Nightfall", 2],
-          ["Curse of Exhaustion", 1],
-          ["Siphon Life", 1]
-        ],
-        "Demonology": [
-          ["Demonic Embrace", 5],
-          ["Unholy Power", 5],
-          ["Demonic Aegis", 2],
-          ["Fel Vitality", 3],
-          ["Demonic Energies", 2],
-          ["Demonic Sacrifice", 1],
-          ["Master Summoner", 2],
-          ["Fel Domination", 1],
-          ["Soul Link", 1],
-          ["Demonic Knowledge", 3],
-          ["Master Demonologist", 5]
-        ],
-        "Destruction": []
-      },
-      "core": [
-        {"talent": "Siphon Life", "why": "The scorer's value in this build: +17.4% of its score (model affliction-leveling)."},
-        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +9.6% of its score (model affliction-leveling)."},
-        {"talent": "Soul Link", "why": "The scorer's value in this build: +9.1% of its score (model affliction-leveling)."},
-        {"talent": "Fel Domination", "why": "The scorer's value in this build: +8.6% of its score (model affliction-leveling)."},
-        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +8.6% of its score (model affliction-leveling)."},
-        {"talent": "Master Demonologist", "why": "The scorer's value in this build: +7.2% of its score (model affliction-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
-      "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
-      "sources": ["https://talentsforever.com/warlock"]
-    },
-    {
       "id": "destruction-leveling",
       "name": "Destruction — Leveling (generated)",
       "role": "dps",
@@ -1030,53 +982,6 @@
         {"levels": "59", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
         {"levels": "60", "tree": "Destruction", "talent": "Shadowburn", "points": 1}
       ]
-    },
-    {
-      "id": "destruction-pvp",
-      "name": "Destruction — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Destruction",
-      "generated": "2026-09-29",
-      "summary": "The best Destruction pvp build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Affliction": [
-          ["Suppression", 5],
-          ["Improved Corruption", 5],
-          ["Fel Concentration", 3],
-          ["Amplify Curse", 1],
-          ["Pandemic", 3],
-          ["Nightfall", 2],
-          ["Curse of Exhaustion", 1],
-          ["Siphon Life", 1]
-        ],
-        "Demonology": [],
-        "Destruction": [
-          ["Destructive Reach", 2],
-          ["Bane", 3],
-          ["Molten Skin", 5],
-          ["Cataclysm", 3],
-          ["Aftermath", 5],
-          ["Ruin", 5],
-          ["Shadowburn", 1],
-          ["Intensity", 3],
-          ["Conflagrate", 1],
-          ["Pyroclasm", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Siphon Life", "why": "The scorer's value in this build: +21.0% of its score (model affliction-leveling)."},
-        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +12.0% of its score (model affliction-leveling)."},
-        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +10.8% of its score (model affliction-leveling)."},
-        {"talent": "Molten Skin", "why": "The scorer's value in this build: +9.0% of its score (model affliction-leveling)."},
-        {"talent": "Pandemic", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
-        {"talent": "Suppression", "why": "The scorer's value in this build: +5.7% of its score (model affliction-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
-      "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
-      "sources": ["https://talentsforever.com/warlock"]
     },
     {
       "id": "opt-affliction-raid-raid-dps",
@@ -1344,6 +1249,158 @@
       "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "affliction-pvp",
+      "name": "Affliction — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Affliction",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Affliction PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Affliction (model affliction-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Affliction builds agree with (15483 builds).",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 1],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Drains", 3],
+          ["Improved Bane of Agony", 2],
+          ["Fel Concentration", 3],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1],
+          ["Soul Siphon", 3]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 3],
+          ["Demonic Aegis", 2],
+          ["Improved Voidwalker", 1],
+          ["Fel Vitality", 3],
+          ["Demonic Energies", 2],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Fel Domination", 1],
+          ["Soul Link", 1]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +18.2% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +10.4% of its score (model affliction-leveling)."},
+        {"talent": "Soul Link", "why": "The scorer's value in this build: +9.7% of its score (model affliction-leveling)."},
+        {"talent": "Fel Domination", "why": "The scorer's value in this build: +9.3% of its score (model affliction-leveling)."},
+        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +9.3% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +5.7% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +13.8% of the optimum's talent value above the hand draft pvp-soul-link, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 3 points Shadow Mastery -> Improved Drains; 1 point Unholy Power -> Demonic Embrace; 1 point Shadow Mastery -> Improved Life Tap; 1 point Unholy Power -> Improved Voidwalker.", "Where we disagree with the community: most Affliction builds take Malediction (80% take it), Malevolence (80% take it), Shadow Mastery (71% take it), which the model values below this build's weakest point; this build takes Improved Voidwalker (14%), which few Affliction builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Affliction PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/popular.js"],
+      "replaces": "pvp-soul-link"
+    },
+    {
+      "id": "demonology-pvp",
+      "name": "Demonology — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Demonology",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Demonology PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Demonology (model affliction-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Demonology builds agree with (12943 builds).",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Fel Concentration", 3],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 4],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Energies", 2],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Decimation", 1],
+          ["Fel Domination", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3],
+          ["Master Demonologist", 5]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +17.4% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +9.7% of its score (model affliction-leveling)."},
+        {"talent": "Soul Link", "why": "The scorer's value in this build: +9.1% of its score (model affliction-leveling)."},
+        {"talent": "Fel Domination", "why": "The scorer's value in this build: +8.7% of its score (model affliction-leveling)."},
+        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +8.7% of its score (model affliction-leveling)."},
+        {"talent": "Master Demonologist", "why": "The scorer's value in this build: +7.2% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Unholy Power -> Decimation.", "Where we disagree with the community: most Demonology builds take Demonic Pact (78% take it), which the model values below this build's weakest point; this build takes Curse of Exhaustion (16%), Fel Concentration (16%), Siphon Life (13%), which few Demonology builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
+      "open_questions": ["A derived Demonology PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "destruction-pvp",
+      "name": "Destruction — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Destruction PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Destruction (model affliction-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Destruction builds agree with (7592 builds).",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Fel Concentration", 3],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Destructive Reach", 2],
+          ["Bane", 3],
+          ["Molten Skin", 5],
+          ["Aftermath", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Intensity", 3],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Pyroclasm", 1],
+          ["Bane of Havoc", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +21.2% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +12.1% of its score (model affliction-leveling)."},
+        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +10.9% of its score (model affliction-leveling)."},
+        {"talent": "Molten Skin", "why": "The scorer's value in this build: +9.1% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
+        {"talent": "Suppression", "why": "The scorer's value in this build: +5.8% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Pyroclasm -> Bane of Havoc; 3 points Cataclysm -> Agonizing Flames.", "Where we disagree with the community: most Destruction builds take Demonic Embrace (83% take it), Shadow and Flame (83% take it), Fire and Brimstone (82% take it), Demonic Aegis (75% take it), Demonic Sacrifice (74% take it), Fel Vitality (73% take it), which the model values below this build's weakest point; this build takes Amplify Curse (5%), Curse of Exhaustion (2%), Fel Concentration (1%), Nightfall (7%), Pandemic (8%), Pyroclasm (10%), Siphon Life (2%), which few Destruction builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
+      "open_questions": ["A derived Destruction PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/warlock", "https://talentsforever.com/popular.js"]
     }
   ]
 }

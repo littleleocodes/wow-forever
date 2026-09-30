@@ -14,6 +14,36 @@
    "moves": [],
    "gain_vs_hand": 0.0,
    "verdict": "hand stays"
+  },
+  "Feral Combat": {
+   "tree": "Feral Combat",
+   "role": "dps",
+   "entry": "feral-cat-dps",
+   "start": "opt-feral-cat-dps-raid-dps",
+   "start_metric": 350.2248013220089,
+   "date": "2026-09-30",
+   "hand": "feral-cat-dps",
+   "hand_metric": 348.9798886677977,
+   "candidate": "druid/research/raid/raidsim/candidates/derived-feral-combat.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0035672905363215435,
+   "verdict": "hand stays"
+  },
+  "Feral Combat (tank)": {
+   "tree": "Feral Combat",
+   "role": "tank",
+   "entry": "feral-bear-tank",
+   "start": "feral-bear-tank",
+   "start_metric": 1.0,
+   "date": "2026-09-30",
+   "hand": "feral-bear-tank",
+   "hand_metric": 1.0,
+   "candidate": "druid/research/raid/raidsim/candidates/derived-feral-combat-tank.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
   }
  }
 }

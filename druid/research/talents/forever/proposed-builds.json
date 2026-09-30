@@ -770,104 +770,6 @@
       "sources": ["https://warcraftforever.games/talents/druid"]
     },
     {
-      "id": "balance-pvp",
-      "name": "Balance — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Balance",
-      "generated": "2026-09-29",
-      "summary": "The best Balance pvp build with at least 30 points in Balance, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (balance-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Balance": [
-          ["Improved Wrath", 5],
-          ["Moonglow", 3],
-          ["Improved Moonfire", 2],
-          ["Nature's Majesty", 2],
-          ["Improved Entangling Roots", 3],
-          ["Nature's Splendor", 1],
-          ["Vengeance", 5],
-          ["Improved Starfire", 5],
-          ["Nature's Grace", 1],
-          ["Eclipse", 3],
-          ["Moonfury", 1],
-          ["Moonkin Form", 1]
-        ],
-        "Feral Combat": [
-          ["Heart of the Wild", 5],
-          ["Feral Swiftness", 2],
-          ["Feral Instinct", 1],
-          ["Brutal Impact", 2],
-          ["Feral Charge", 1]
-        ],
-        "Restoration": [
-          ["Nature's Focus", 5],
-          ["Natural Shapeshifter", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Improved Starfire", "why": "The scorer's value in this build: +13.5% of its score (model balance-dps)."},
-        {"talent": "Vengeance", "why": "The scorer's value in this build: +12.9% of its score (model balance-dps)."},
-        {"talent": "Moonkin Form", "why": "The scorer's value in this build: +11.1% of its score (model balance-dps)."},
-        {"talent": "Eclipse", "why": "The scorer's value in this build: +10.9% of its score (model balance-dps)."},
-        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.1% of its score (model balance-dps)."},
-        {"talent": "Nature's Focus", "why": "The scorer's value in this build: +6.8% of its score (model balance-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model balance-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Balance build: check it against the community's Balance builds at launch."],
-      "sources": ["https://talentsforever.com/druid"]
-    },
-    {
-      "id": "feral-combat-pvp",
-      "name": "Feral Combat — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Feral Combat",
-      "generated": "2026-09-29",
-      "summary": "The best Feral Combat pvp build with at least 30 points in Feral Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (feral-cat-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Balance": [],
-        "Feral Combat": [
-          ["Heart of the Wild", 5],
-          ["Feral Swiftness", 2],
-          ["Feral Instinct", 3],
-          ["Brutal Impact", 2],
-          ["Thick Hide", 3],
-          ["Savage Fury", 2],
-          ["Feral Charge", 1],
-          ["Sharpened Claws", 2],
-          ["Predatory Strikes", 3],
-          ["Predatory Instincts", 2],
-          ["Leader of the Pack", 1],
-          ["King of the Jungle", 3],
-          ["Rend and Tear", 1],
-          ["Berserk", 1]
-        ],
-        "Restoration": [
-          ["Nature's Focus", 5],
-          ["Furor", 5],
-          ["Naturalist", 5],
-          ["Natural Shapeshifter", 3],
-          ["Gift of the Earthmother", 1],
-          ["Swiftmend", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Natural Shapeshifter", "why": "The scorer's value in this build: +11.7% of its score (model feral-cat-dps)."},
-        {"talent": "Berserk", "why": "The scorer's value in this build: +9.8% of its score (model feral-cat-dps)."},
-        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.3% of its score (model feral-cat-dps)."},
-        {"talent": "Thick Hide", "why": "The scorer's value in this build: +8.8% of its score (model feral-cat-dps)."},
-        {"talent": "Feral Charge", "why": "The scorer's value in this build: +7.8% of its score (model feral-cat-dps)."},
-        {"talent": "Brutal Impact", "why": "The scorer's value in this build: +7.8% of its score (model feral-cat-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model feral-cat-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Feral Combat build: check it against the community's Feral Combat builds at launch."],
-      "sources": ["https://talentsforever.com/druid"]
-    },
-    {
       "id": "opt-balance-dps-raid-dps",
       "name": "Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)",
       "role": "dps",
@@ -1102,6 +1004,157 @@
       "notes": ["Report: druid/research/talents/forever/optimizer/feral-bear-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/druid"]
+    },
+    {
+      "id": "balance-pvp",
+      "name": "Balance — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Balance",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Balance PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Balance (model balance-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Balance builds agree with (2194 builds).",
+      "allocation": {
+        "Balance": [
+          ["Improved Wrath", 5],
+          ["Moonglow", 3],
+          ["Improved Moonfire", 2],
+          ["Nature's Majesty", 2],
+          ["Nature's Reach", 1],
+          ["Improved Entangling Roots", 2],
+          ["Nature's Splendor", 1],
+          ["Vengeance", 5],
+          ["Improved Starfire", 5],
+          ["Nature's Grace", 1],
+          ["Eclipse", 3],
+          ["Moonfury", 1],
+          ["Moonkin Form", 1]
+        ],
+        "Feral Combat": [
+          ["Heart of the Wild", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 1],
+          ["Brutal Impact", 2],
+          ["Feral Charge", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Natural Shapeshifter", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Improved Starfire", "why": "The scorer's value in this build: +13.6% of its score (model balance-dps)."},
+        {"talent": "Vengeance", "why": "The scorer's value in this build: +13.0% of its score (model balance-dps)."},
+        {"talent": "Moonkin Form", "why": "The scorer's value in this build: +11.3% of its score (model balance-dps)."},
+        {"talent": "Eclipse", "why": "The scorer's value in this build: +11.1% of its score (model balance-dps)."},
+        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.2% of its score (model balance-dps)."},
+        {"talent": "Nature's Focus", "why": "The scorer's value in this build: +6.9% of its score (model balance-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Improved Entangling Roots -> Nature's Reach.", "Where we disagree with the community: most Balance builds take Insect Swarm (91% take it), which the model values below this build's weakest point; this build takes Brutal Impact (10%), Feral Charge (9%), Feral Instinct (5%), Feral Swiftness (10%), which few Balance builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Balance PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "feral-combat-pvp",
+      "name": "Feral Combat — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Feral Combat",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Feral Combat (model feral-cat-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Feral Combat builds agree with (3220 builds).",
+      "allocation": {
+        "Balance": [],
+        "Feral Combat": [
+          ["Heart of the Wild", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 3],
+          ["Brutal Impact", 2],
+          ["Thick Hide", 3],
+          ["Savage Fury", 2],
+          ["Feral Charge", 1],
+          ["Sharpened Claws", 2],
+          ["Primal Bite", 1],
+          ["Predatory Strikes", 3],
+          ["Blood Frenzy", 1],
+          ["Predatory Instincts", 2],
+          ["Leader of the Pack", 1],
+          ["King of the Jungle", 3],
+          ["Berserk", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Furor", 5],
+          ["Naturalist", 4],
+          ["Natural Shapeshifter", 3],
+          ["Gift of the Earthmother", 1],
+          ["Swiftmend", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Natural Shapeshifter", "why": "The scorer's value in this build: +11.8% of its score (model feral-cat-dps)."},
+        {"talent": "Berserk", "why": "The scorer's value in this build: +9.9% of its score (model feral-cat-dps)."},
+        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +9.3% of its score (model feral-cat-dps)."},
+        {"talent": "Thick Hide", "why": "The scorer's value in this build: +8.9% of its score (model feral-cat-dps)."},
+        {"talent": "Feral Charge", "why": "The scorer's value in this build: +7.9% of its score (model feral-cat-dps)."},
+        {"talent": "Brutal Impact", "why": "The scorer's value in this build: +7.9% of its score (model feral-cat-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Naturalist -> Primal Bite; 1 point Rend and Tear -> Blood Frenzy.", "Where we disagree with the community: most Feral Combat builds take Rend and Tear (86% take it), Ferocity (83% take it), which the model values below this build's weakest point; this build takes Gift of the Earthmother (8%), Nature's Focus (3%), Swiftmend (9%), which few Feral Combat builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Feral Combat PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "restoration-pvp",
+      "name": "Restoration — PvP (derived)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Restoration PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Restoration (model resto-heal, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Restoration builds agree with (1920 builds).",
+      "allocation": {
+        "Balance": [],
+        "Feral Combat": [
+          ["Heart of the Wild", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 1],
+          ["Brutal Impact", 2],
+          ["Feral Charge", 1]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Furor", 4],
+          ["Naturalist", 5],
+          ["Natural Shapeshifter", 3],
+          ["Reflection", 3],
+          ["Gift of Nature", 5],
+          ["Gift of the Earthmother", 1],
+          ["Improved Rejuvenation", 3],
+          ["Swiftmend", 1],
+          ["Nature's Swiftness", 1],
+          ["Living Spirit", 3],
+          ["Improved Regrowth", 5],
+          ["Wild Growth", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Swiftmend", "why": "The scorer's value in this build: +16.8% of its score (model resto-heal)."},
+        {"talent": "Wild Growth", "why": "The scorer's value in this build: +13.5% of its score (model resto-heal)."},
+        {"talent": "Nature's Focus", "why": "The scorer's value in this build: +9.9% of its score (model resto-heal)."},
+        {"talent": "Feral Swiftness", "why": "The scorer's value in this build: +8.8% of its score (model resto-heal)."},
+        {"talent": "Naturalist", "why": "The scorer's value in this build: +8.0% of its score (model resto-heal)."},
+        {"talent": "Nature's Swiftness", "why": "The scorer's value in this build: +7.8% of its score (model resto-heal)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +22.5% of the optimum's talent value above the hand draft pvp-resto, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 2 points Feral Instinct -> Improved Regrowth; 1 point Furor -> Improved Regrowth.", "Where we disagree with the community: most Restoration builds take Nature's Majesty (89% take it), Genesis (88% take it), Nature's Splendor (83% take it), Moonglow (71% take it), which the model values below this build's weakest point; this build takes Feral Instinct (12%), which few Restoration builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Restoration PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/popular.js"],
+      "replaces": "pvp-resto"
     }
   ]
 }

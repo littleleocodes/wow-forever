@@ -731,159 +731,6 @@
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
-      "id": "holy-pvp",
-      "name": "Holy — PvP (generated)",
-      "role": "healer",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Holy",
-      "generated": "2026-09-29",
-      "summary": "The best Holy pvp build with at least 30 points in Holy, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (holy-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Holy": [
-          ["Divine Intellect", 5],
-          ["Healing Light", 3],
-          ["Spiritual Focus", 2],
-          ["Unyielding Faith", 2],
-          ["Voice of Truth", 1],
-          ["Reverence", 3],
-          ["Purifying Power", 2],
-          ["Infusion of Light", 2],
-          ["Illumination", 1],
-          ["Divine Favor", 1],
-          ["Divine Precision", 2],
-          ["Holy Shock", 1],
-          ["Holy Power", 5],
-          ["Light's Vigil", 1]
-        ],
-        "Protection": [
-          ["Toughness", 5],
-          ["Guardian's Favor", 2],
-          ["Anticipation", 3],
-          ["Improved Righteous Fury", 3],
-          ["Sacred Duty", 2],
-          ["Improved Hammer of Justice", 3]
-        ],
-        "Retribution": [
-          ["Deflection", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Light's Vigil", "why": "The scorer's value in this build: +11.5% of its score (model holy-heal)."},
-        {"talent": "Holy Shock", "why": "The scorer's value in this build: +9.4% of its score (model holy-heal)."},
-        {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +8.7% of its score (model holy-heal)."},
-        {"talent": "Divine Favor", "why": "The scorer's value in this build: +8.1% of its score (model holy-heal)."},
-        {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.0% of its score (model holy-heal)."},
-        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.4% of its score (model holy-heal)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model holy-heal, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Holy build: check it against the community's Holy builds at launch."],
-      "sources": ["https://talentsforever.com/paladin"]
-    },
-    {
-      "id": "protection-pvp",
-      "name": "Protection — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Protection",
-      "generated": "2026-09-29",
-      "summary": "The best Protection pvp build with at least 30 points in Protection, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (ret-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Holy": [],
-        "Protection": [
-          ["Toughness", 5],
-          ["Precision", 2],
-          ["Guardian's Favor", 2],
-          ["Anticipation", 5],
-          ["Improved Seal of Fury", 1],
-          ["Improved Righteous Fury", 3],
-          ["Sacred Duty", 2],
-          ["Swift Judgement", 1],
-          ["Improved Hammer of Justice", 3],
-          ["Templar's Bulwark", 1],
-          ["Reckoning", 5]
-        ],
-        "Retribution": [
-          ["Deflection", 5],
-          ["Benediction", 1],
-          ["Improved Judgement", 2],
-          ["Holy Conduit", 2],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Seal of Command", 1],
-          ["Pursuit of Justice", 2],
-          ["Sacred Arbiter", 1],
-          ["Repentance", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Sanctified Judgement", "why": "The scorer's value in this build: +10.9% of its score (model ret-dps)."},
-        {"talent": "Seal of Command", "why": "The scorer's value in this build: +9.5% of its score (model ret-dps)."},
-        {"talent": "Repentance", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
-        {"talent": "Improved Hammer of Justice", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
-        {"talent": "Guardian's Favor", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
-        {"talent": "Pursuit of Justice", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model ret-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
-      "open_questions": ["A generated Protection build: check it against the community's Protection builds at launch."],
-      "sources": ["https://talentsforever.com/paladin"]
-    },
-    {
-      "id": "retribution-pvp",
-      "name": "Retribution — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Retribution",
-      "generated": "2026-09-29",
-      "summary": "The best Retribution pvp build with at least 30 points in Retribution, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (ret-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Holy": [
-          ["Divine Strength", 5],
-          ["Spiritual Focus", 2],
-          ["Improved Seals", 3],
-          ["Unyielding Faith", 2],
-          ["Voice of Truth", 1],
-          ["Reverence", 3],
-          ["Purifying Power", 2],
-          ["Infusion of Light", 1],
-          ["Divine Favor", 1],
-          ["Holy Shock", 1]
-        ],
-        "Protection": [],
-        "Retribution": [
-          ["Deflection", 5],
-          ["Improved Judgement", 2],
-          ["Holy Conduit", 2],
-          ["Conviction", 2],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Seal of Command", 1],
-          ["Pursuit of Justice", 2],
-          ["Sacred Arbiter", 1],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Repentance", 1],
-          ["Champion of the Light", 3],
-          ["Instrument of Law", 2]
-        ]
-      },
-      "core": [
-        {"talent": "Sanctified Judgement", "why": "The scorer's value in this build: +9.3% of its score (model ret-dps)."},
-        {"talent": "Seal of Command", "why": "The scorer's value in this build: +9.0% of its score (model ret-dps)."},
-        {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.1% of its score (model ret-dps)."},
-        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.4% of its score (model ret-dps)."},
-        {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +7.4% of its score (model ret-dps)."},
-        {"talent": "Repentance", "why": "The scorer's value in this build: +7.4% of its score (model ret-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model ret-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Retribution build: check it against the community's Retribution builds at launch."],
-      "sources": ["https://talentsforever.com/paladin"]
-    },
-    {
       "id": "opt-ret-dps-raid-dps",
       "name": "Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)",
       "role": "dps",
@@ -1026,6 +873,164 @@
       "notes": ["Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
+    },
+    {
+      "id": "holy-pvp",
+      "name": "Holy — PvP (derived)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Holy",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Holy PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Holy (model holy-heal, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Holy builds agree with (2602 builds).",
+      "allocation": {
+        "Holy": [
+          ["Divine Intellect", 5],
+          ["Healing Light", 3],
+          ["Spiritual Focus", 2],
+          ["Unyielding Faith", 2],
+          ["Voice of Truth", 1],
+          ["Reverence", 3],
+          ["Purifying Power", 2],
+          ["Infusion of Light", 2],
+          ["Divine Favor", 1],
+          ["Divine Precision", 3],
+          ["Holy Shock", 1],
+          ["Holy Power", 5],
+          ["Light's Vigil", 1]
+        ],
+        "Protection": [
+          ["Toughness", 5],
+          ["Precision", 3],
+          ["Guardian's Favor", 2],
+          ["Improved Righteous Fury", 3],
+          ["Sacred Duty", 2],
+          ["Improved Hammer of Justice", 3]
+        ],
+        "Retribution": [
+          ["Deflection", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Light's Vigil", "why": "The scorer's value in this build: +11.6% of its score (model holy-heal)."},
+        {"talent": "Holy Shock", "why": "The scorer's value in this build: +9.5% of its score (model holy-heal)."},
+        {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +8.8% of its score (model holy-heal)."},
+        {"talent": "Divine Favor", "why": "The scorer's value in this build: +8.2% of its score (model holy-heal)."},
+        {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.0% of its score (model holy-heal)."},
+        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.4% of its score (model holy-heal)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 3 points Anticipation -> Precision; 1 point Illumination -> Divine Precision.", "Where we disagree with the community: most Holy builds take Illumination (78% take it), Benediction (77% take it), which the model values below this build's weakest point; this build takes Deflection (17%), Improved Hammer of Justice (10%), Improved Righteous Fury (16%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Holy PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "protection-pvp",
+      "name": "Protection — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Protection PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Protection (model ret-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Protection builds agree with (3796 builds).",
+      "allocation": {
+        "Holy": [],
+        "Protection": [
+          ["Redoubt", 5],
+          ["Precision", 3],
+          ["Guardian's Favor", 2],
+          ["Improved Seal of Fury", 1],
+          ["Improved Righteous Fury", 3],
+          ["Shield Specialization", 3],
+          ["Sacred Duty", 2],
+          ["Swift Judgement", 1],
+          ["One-Handed Weapon Specialization", 3],
+          ["Improved Hammer of Justice", 3],
+          ["Templar's Bulwark", 1],
+          ["Reckoning", 3]
+        ],
+        "Retribution": [
+          ["Deflection", 5],
+          ["Benediction", 1],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Vindication", 3],
+          ["Sanctified Judgement", 3],
+          ["Seal of Command", 1],
+          ["Pursuit of Justice", 2],
+          ["Sacred Arbiter", 1],
+          ["Repentance", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Sanctified Judgement", "why": "The scorer's value in this build: +11.0% of its score (model ret-dps)."},
+        {"talent": "Seal of Command", "why": "The scorer's value in this build: +9.6% of its score (model ret-dps)."},
+        {"talent": "Repentance", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
+        {"talent": "Pursuit of Justice", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
+        {"talent": "Improved Hammer of Justice", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."},
+        {"talent": "Guardian's Favor", "why": "The scorer's value in this build: +8.8% of its score (model ret-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 5 points Toughness -> Redoubt; 3 points Anticipation -> Shield Specialization; 3 points Reckoning -> One-Handed Weapon Specialization; 1 point Anticipation -> Precision; 1 point Anticipation -> Reckoning.", "Where we disagree with the community: most Protection builds take Iron Creed (87% take it), Holy Shield (85% take it), Anticipation (75% take it), which the model values below this build's weakest point; this build takes Guardian's Favor (20%), Improved Hammer of Justice (12%), Repentance (4%), Seal of Command (12%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Retribution damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
+      "open_questions": ["A derived Protection PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "retribution-pvp",
+      "name": "Retribution — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Retribution",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Retribution PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Retribution (model ret-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Retribution builds agree with (5070 builds).",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Spiritual Focus", 2],
+          ["Improved Seals", 3],
+          ["Unyielding Faith", 2],
+          ["Voice of Truth", 1],
+          ["Reverence", 3],
+          ["Purifying Power", 2],
+          ["Infusion of Light", 1],
+          ["Divine Favor", 1],
+          ["Holy Shock", 1]
+        ],
+        "Protection": [],
+        "Retribution": [
+          ["Deflection", 3],
+          ["Benediction", 2],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Conviction", 1],
+          ["Vindication", 3],
+          ["Sanctified Judgement", 3],
+          ["Seal of Command", 1],
+          ["Pursuit of Justice", 2],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Vengeance", 1],
+          ["Repentance", 1],
+          ["Champion of the Light", 3],
+          ["Instrument of Law", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Sanctified Judgement", "why": "The scorer's value in this build: +9.4% of its score (model ret-dps)."},
+        {"talent": "Seal of Command", "why": "The scorer's value in this build: +9.0% of its score (model ret-dps)."},
+        {"talent": "Unyielding Faith", "why": "The scorer's value in this build: +8.1% of its score (model ret-dps)."},
+        {"talent": "Voice of Truth", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."},
+        {"talent": "Spiritual Focus", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."},
+        {"talent": "Repentance", "why": "The scorer's value in this build: +7.5% of its score (model ret-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 2 points Deflection -> Benediction; 1 point Conviction -> Vengeance.", "Where we disagree with the community: most Retribution builds take none, which the model values below this build's weakest point; this build takes Deflection (20%), Infusion of Light (15%), which few Retribution builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Retribution PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/paladin", "https://talentsforever.com/popular.js"]
     }
   ]
 }
