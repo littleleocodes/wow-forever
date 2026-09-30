@@ -98,6 +98,83 @@
    ],
    "gain_vs_hand": 0.007738765305109974,
    "verdict": "hand stays"
+  },
+  "Survival": {
+   "tree": "Survival",
+   "role": "dps",
+   "entry": "melee-dps",
+   "start": "opt-melee-dps-raid-dps",
+   "start_metric": 424.3069559804656,
+   "date": "2026-09-30",
+   "hand": "melee-survival-raid",
+   "hand_metric": 423.8727987581186,
+   "candidate": "hunter/research/raid/raidsim/candidates/derived-survival.json",
+   "search_gain": 0.032282227844176115,
+   "moves": [
+    {
+     "round": 1,
+     "move": "2 points Survivalist -> Clever Traps",
+     "gain_seed1": 0.01688154978145029,
+     "gain_seed2": 0.016913043395218486,
+     "split": "5/15/31"
+    },
+    {
+     "round": 2,
+     "move": "1 point Lacerating Strikes -> Efficiency",
+     "gain_seed1": 0.00592560192934477,
+     "gain_seed2": 0.007136034654077639,
+     "split": "5/16/30"
+    },
+    {
+     "round": 3,
+     "move": "2 points Lightning Reflexes -> Survivalist's Discipline",
+     "gain_seed1": 0.00981222203270038,
+     "gain_seed2": 0.008839326743209641,
+     "split": "5/16/30"
+    }
+   ],
+   "gain_vs_hand": 0.033339556330533426,
+   "verdict": "replaces"
+  }
+ },
+ "mage": {
+  "Arcane": {
+   "tree": "Arcane",
+   "role": "dps",
+   "entry": "arcane-dps",
+   "start": "arcane-blast-raid",
+   "start_metric": 516.4525609176738,
+   "date": "2026-09-30",
+   "hand": "arcane-blast-raid",
+   "hand_metric": 516.4525609176738,
+   "candidate": "mage/research/raid/raidsim/candidates/derived-arcane.json",
+   "search_gain": 0.0019040776605094845,
+   "moves": [
+    {
+     "round": 1,
+     "move": "3 points Improved Channeling -> Improved Frostbolt",
+     "gain_seed1": 0.0017844237352711012,
+     "gain_seed2": 0.0017811019973690279,
+     "split": "32/11/8"
+    }
+   ],
+   "gain_vs_hand": 0.0019040776605094845,
+   "verdict": "hand stays"
+  },
+  "Fire": {
+   "tree": "Fire",
+   "role": "dps",
+   "entry": "fire-raid",
+   "start": "fire-raid",
+   "start_metric": 510.269216213846,
+   "date": "2026-09-30",
+   "hand": "fire-raid",
+   "hand_metric": 510.269216213846,
+   "candidate": "mage/research/raid/raidsim/candidates/derived-fire.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
   }
  }
 }

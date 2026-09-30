@@ -1,0 +1,108 @@
+{
+ "id": "derived-survival",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    3
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for melee-dps from opt-melee-dps-raid-dps in the dummy setting: 423.9 -> 437.6 DPS on a third seed.",
+ "search": {
+  "start": "opt-melee-dps-raid-dps",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Survivalist -> Clever Traps",
+    "gain_seed1": 0.01688154978145029,
+    "gain_seed2": 0.016913043395218486,
+    "split": "5/15/31"
+   },
+   {
+    "round": 2,
+    "move": "1 point Lacerating Strikes -> Efficiency",
+    "gain_seed1": 0.00592560192934477,
+    "gain_seed2": 0.007136034654077639,
+    "split": "5/16/30"
+   },
+   {
+    "round": 3,
+    "move": "2 points Lightning Reflexes -> Survivalist's Discipline",
+    "gain_seed1": 0.00981222203270038,
+    "gain_seed2": 0.008839326743209641,
+    "split": "5/16/30"
+   }
+  ],
+  "dps_start": 423.90077994701903,
+  "dps_end": 437.5852415085926,
+  "gain": 0.032282227844176115,
+  "tank": false
+ }
+}

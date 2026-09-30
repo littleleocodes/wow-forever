@@ -1,0 +1,88 @@
+{
+ "id": "derived-fire",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Burning Soul",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for fire-raid from fire-raid in the dummy setting: 509.6 -> 509.6 DPS on a third seed.",
+ "search": {
+  "start": "fire-raid",
+  "setting": "dummy",
+  "kept": [
+   "Hot Streak"
+  ],
+  "moves": [],
+  "dps_start": 509.5621328537767,
+  "dps_end": 509.5621328537767,
+  "gain": 0.0,
+  "tank": false
+ }
+}

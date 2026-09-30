@@ -73,6 +73,191 @@
     "50": 31.981688491482977,
     "60": 28.5802775427001
    }
+  },
+  "Fire": {
+   "spec": "fire-leveling",
+   "model": "fire-leveling",
+   "tree": "Fire",
+   "hands": [
+    "opt-fire-leveling-leveling-st"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "mage/research/leveling/fightlab/candidates/derived-fire.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "fire-leveling",
+    "model": "fire-leveling",
+    "tree": "Fire",
+    "start": "opt-fire-leveling-leveling-st",
+    "starts": {
+     "opt-fire-leveling-leveling-st": 31.8384138480546,
+     "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-fire-scorer.json": 31.8384138480546
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "1 point Flame Throwing -> Shatter",
+      "gain_seed1": 0.04111220066410526,
+      "gain_seed2": 0.04058004982607233
+     },
+     {
+      "round": 2,
+      "move": "3 points Impact -> Master of Elements",
+      "gain_seed1": 0.03629145479170748,
+      "gain_seed2": 0.03481366063948932
+     },
+     {
+      "round": 3,
+      "move": "1 point Flame Throwing -> Impact",
+      "gain_seed1": 0.020655486796866906,
+      "gain_seed2": 0.013326361138099263
+     }
+    ],
+    "incumbent": "opt-fire-leveling-leveling-st",
+    "race": {
+     "incumbent": [
+      36.89391578678487,
+      {
+       "20": 36.722348846836546,
+       "30": 37.94320295973466,
+       "40": 42.72737971983586,
+       "50": 37.696609021149044,
+       "60": 31.86857419628862
+      }
+     ],
+     "search": [
+      35.80693288317953,
+      {
+       "20": 36.722348846836546,
+       "30": 37.94320295973466,
+       "40": 42.72737971983586,
+       "50": 36.39788615024423,
+       "60": 29.327566910024785
+      }
+     ],
+     "gain": 0.02946238913448962,
+     "all": {
+      "opt-fire-leveling-leveling-st": [
+       36.89391578678487,
+       {
+        "20": 36.722348846836546,
+        "30": 37.94320295973466,
+        "40": 42.72737971983586,
+        "50": 37.696609021149044,
+        "60": 31.86857419628862
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.02946238913448962,
+   "incumbent": "opt-fire-leveling-leveling-st",
+   "verdict": "replaces",
+   "levels": {
+    "20": 36.722348846836546,
+    "30": 37.94320295973466,
+    "40": 42.72737971983586,
+    "50": 36.39788615024423,
+    "60": 29.327566910024785
+   }
+  },
+  "Frost": {
+   "spec": "frost-leveling",
+   "model": "frost-leveling",
+   "tree": "Frost",
+   "hands": [
+    "leveling-frost",
+    "opt-frost-leveling-leveling-st",
+    "opt-frost-aoe-leveling-aoe"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "mage/research/leveling/fightlab/candidates/derived-frost.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "frost-leveling",
+    "model": "frost-leveling",
+    "tree": "Frost",
+    "start": "opt-frost-leveling-leveling-st",
+    "starts": {
+     "leveling-frost": 23.392486849862156,
+     "opt-frost-leveling-leveling-st": 22.993221535745743,
+     "opt-frost-aoe-leveling-aoe": 26.23403337075437,
+     "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-frost-scorer.json": 22.993221535745743
+    },
+    "moves": [],
+    "incumbent": "opt-frost-leveling-leveling-st",
+    "race": {
+     "incumbent": [
+      26.26053845766817,
+      {
+       "20": 26.765116920089554,
+       "30": 32.2227168100635,
+       "40": 28.917858437596117,
+       "50": 24.359971202824763,
+       "60": 22.923515853080904
+      }
+     ],
+     "search": [
+      26.26053845766817,
+      {
+       "20": 26.765116920089554,
+       "30": 32.2227168100635,
+       "40": 28.917858437596117,
+       "50": 24.359971202824763,
+       "60": 22.923515853080904
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "leveling-frost": [
+       26.263898179932333,
+       {
+        "20": 27.98975164079378,
+        "30": 29.41910811664722,
+        "40": 29.784003956449897,
+        "50": 24.50282396890898,
+        "60": 23.231833382795486
+       }
+      ],
+      "opt-frost-leveling-leveling-st": [
+       26.26053845766817,
+       {
+        "20": 26.765116920089554,
+        "30": 32.2227168100635,
+        "40": 28.917858437596117,
+        "50": 24.359971202824763,
+        "60": 22.923515853080904
+       }
+      ],
+      "opt-frost-aoe-leveling-aoe": [
+       30.796370576871926,
+       {
+        "20": 32.06170136960915,
+        "30": 37.46721898418198,
+        "40": 35.517633910365205,
+        "50": 27.829821578129504,
+        "60": 26.36378471892765
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "opt-frost-leveling-leveling-st",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 26.765116920089554,
+    "30": 32.2227168100635,
+    "40": 28.917858437596117,
+    "50": 24.359971202824763,
+    "60": 22.923515853080904
+   }
   }
  },
  "rogue": {
