@@ -75,6 +75,29 @@
     }
    ],
    "verdict": "new"
+  },
+  "Marksmanship": {
+   "tree": "Marksmanship",
+   "role": "dps",
+   "entry": "mm-lonewolf-raid",
+   "start": "opt-mm-lonewolf-raid-raid-dps",
+   "start_metric": 419.9393534243545,
+   "date": "2026-09-30",
+   "hand": "mm-lone-wolf-raid",
+   "hand_metric": 419.0187285344657,
+   "candidate": "hunter/research/raid/raidsim/candidates/derived-marksmanship.json",
+   "search_gain": 0.005529519178781417,
+   "moves": [
+    {
+     "round": 1,
+     "move": "1 point Improved Arcane Shot -> Endurance Training",
+     "gain_seed1": 0.0050369468023310215,
+     "gain_seed2": 0.004922973106404438,
+     "split": "6/37/8"
+    }
+   ],
+   "gain_vs_hand": 0.007738765305109974,
+   "verdict": "hand stays"
   }
  }
 }
