@@ -383,6 +383,51 @@
    ],
    "gain_vs_hand": 0.011219889513581549,
    "verdict": "hand stays"
+  },
+  "Demonology": {
+   "tree": "Demonology",
+   "role": "dps",
+   "entry": "demonology-raid",
+   "start": "demonology-pact-raid",
+   "start_metric": 616.4348512527268,
+   "date": "2026-09-30",
+   "hand": "demonology-pact-raid",
+   "hand_metric": 616.4348512527268,
+   "candidate": "warlock/research/raid/raidsim/candidates/derived-demonology.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
+  },
+  "Destruction": {
+   "tree": "Destruction",
+   "role": "dps",
+   "entry": "incinerate-raid",
+   "start": "destruction-incinerate-raid",
+   "start_metric": 478.32482180502444,
+   "date": "2026-09-30",
+   "hand": "destruction-incinerate-raid",
+   "hand_metric": 478.32482180502444,
+   "candidate": "warlock/research/raid/raidsim/candidates/derived-destruction.json",
+   "search_gain": 0.007177399341504298,
+   "moves": [
+    {
+     "round": 1,
+     "move": "1 point Improved Corruption -> Improved Life Tap",
+     "gain_seed1": 0.003886453442553117,
+     "gain_seed2": 0.004313324542457586,
+     "split": "9/11/31"
+    },
+    {
+     "round": 2,
+     "move": "1 point Aftermath -> Cataclysm",
+     "gain_seed1": 0.00397729604503394,
+     "gain_seed2": 0.0023932375114557036,
+     "split": "9/11/31"
+    }
+   ],
+   "gain_vs_hand": 0.007177399341504298,
+   "verdict": "hand stays"
   }
  }
 }
