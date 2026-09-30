@@ -941,105 +941,6 @@
       ]
     },
     {
-      "id": "arcane-pvp",
-      "name": "Arcane — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Arcane",
-      "generated": "2026-09-29",
-      "summary": "The best Arcane pvp build with at least 30 points in Arcane, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (frost-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Arcane": [
-          ["Arcane Focus", 5],
-          ["Arcane Subtlety", 2],
-          ["Magic Absorption", 2],
-          ["Arcane Concentration", 5],
-          ["Arcane Resilience", 1],
-          ["Arcane Geometry", 2],
-          ["Arcane Shielding", 2],
-          ["Improved Counterspell", 2],
-          ["Arcane Meditation", 3],
-          ["Presence of Mind", 1],
-          ["Arcane Mind", 2],
-          ["Arcane Instability", 3],
-          ["Arcane Power", 1]
-        ],
-        "Fire": [],
-        "Frost": [
-          ["Improved Frostbolt", 5],
-          ["Ice Shards", 5],
-          ["Improved Frost Nova", 2],
-          ["Frostbite", 3],
-          ["Ice Lance", 1],
-          ["Ice Block", 1],
-          ["Shatter", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Ice Lance", "why": "The scorer's value in this build: +27.7% of its score (model frost-leveling)."},
-        {"talent": "Shatter", "why": "The scorer's value in this build: +16.7% of its score (model frost-leveling)."},
-        {"talent": "Ice Shards", "why": "The scorer's value in this build: +14.4% of its score (model frost-leveling)."},
-        {"talent": "Frostbite", "why": "The scorer's value in this build: +13.3% of its score (model frost-leveling)."},
-        {"talent": "Arcane Power", "why": "The scorer's value in this build: +6.7% of its score (model frost-leveling)."},
-        {"talent": "Ice Block", "why": "The scorer's value in this build: +6.3% of its score (model frost-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model frost-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list)."],
-      "open_questions": ["A generated Arcane build: check it against the community's Arcane builds at launch."],
-      "sources": ["https://talentsforever.com/mage"]
-    },
-    {
-      "id": "fire-pvp",
-      "name": "Fire — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Fire",
-      "generated": "2026-09-29",
-      "summary": "The best Fire pvp build with at least 30 points in Fire, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (fire-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Arcane": [],
-        "Fire": [
-          ["Improved Fireball", 5],
-          ["Ignite", 5],
-          ["Flame Throwing", 2],
-          ["Impact", 3],
-          ["Burning Soul", 3],
-          ["Pyroblast", 1],
-          ["Improved Scorch", 1],
-          ["Hot Streak", 1],
-          ["Critical Mass", 3],
-          ["Blast Wave", 1],
-          ["Fire Power", 5],
-          ["Combustion", 1]
-        ],
-        "Frost": [
-          ["Frost Warding", 1],
-          ["Elemental Precision", 5],
-          ["Permafrost", 3],
-          ["Improved Frost Nova", 2],
-          ["Frostbite", 3],
-          ["Ice Lance", 1],
-          ["Arctic Reach", 1],
-          ["Ice Block", 1],
-          ["Shatter", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Ice Lance", "why": "The scorer's value in this build: +38.3% of its score (model fire-leveling)."},
-        {"talent": "Ignite", "why": "The scorer's value in this build: +12.8% of its score (model fire-leveling)."},
-        {"talent": "Fire Power", "why": "The scorer's value in this build: +6.9% of its score (model fire-leveling)."},
-        {"talent": "Combustion", "why": "The scorer's value in this build: +6.8% of its score (model fire-leveling)."},
-        {"talent": "Ice Block", "why": "The scorer's value in this build: +6.4% of its score (model fire-leveling)."},
-        {"talent": "Shatter", "why": "The scorer's value in this build: +5.7% of its score (model fire-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model fire-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Fire build: check it against the community's Fire builds at launch."],
-      "sources": ["https://talentsforever.com/mage"]
-    },
-    {
       "id": "opt-frost-raid-raid-dps",
       "name": "Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)",
       "role": "dps",
@@ -1223,6 +1124,162 @@
       "notes": ["Report: mage/research/talents/forever/optimizer/fire-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/mage"]
+    },
+    {
+      "id": "arcane-pvp",
+      "name": "Arcane — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Arcane",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Arcane PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Arcane (model frost-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Arcane builds agree with (5513 builds).",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 2],
+          ["Arcane Concentration", 5],
+          ["Arcane Resilience", 1],
+          ["Arcane Geometry", 2],
+          ["Arcane Impact", 1],
+          ["Arcane Blast", 1],
+          ["Arcane Shielding", 1],
+          ["Improved Counterspell", 2],
+          ["Arcane Meditation", 3],
+          ["Missile Barrage", 1],
+          ["Presence of Mind", 1],
+          ["Arcane Instability", 3],
+          ["Arcane Power", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Ice Shards", 5],
+          ["Improved Frost Nova", 2],
+          ["Frostbite", 3],
+          ["Ice Lance", 1],
+          ["Ice Block", 1],
+          ["Shatter", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Ice Lance", "why": "The scorer's value in this build: +27.9% of its score (model frost-leveling)."},
+        {"talent": "Shatter", "why": "The scorer's value in this build: +16.8% of its score (model frost-leveling)."},
+        {"talent": "Ice Shards", "why": "The scorer's value in this build: +14.5% of its score (model frost-leveling)."},
+        {"talent": "Frostbite", "why": "The scorer's value in this build: +13.4% of its score (model frost-leveling)."},
+        {"talent": "Arcane Power", "why": "The scorer's value in this build: +6.7% of its score (model frost-leveling)."},
+        {"talent": "Ice Block", "why": "The scorer's value in this build: +6.3% of its score (model frost-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Arcane Shielding -> Missile Barrage; 1 point Arcane Mind -> Arcane Blast; 1 point Arcane Mind -> Arcane Impact.", "Where we disagree with the community: most Arcane builds take Arcane Mind (96% take it), Incineration (71% take it), which the model values below this build's weakest point; this build takes Frostbite (15%), Ice Block (20%), Ice Lance (19%), Improved Frost Nova (19%), Shatter (14%), which few Arcane builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list)."],
+      "open_questions": ["A derived Arcane PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "fire-pvp",
+      "name": "Fire — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Fire",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Fire PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Fire (model fire-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Fire builds agree with (6135 builds).",
+      "allocation": {
+        "Arcane": [],
+        "Fire": [
+          ["Wake of Fire", 2],
+          ["Improved Fireball", 3],
+          ["Ignite", 5],
+          ["Flame Throwing", 2],
+          ["Impact", 3],
+          ["Burning Soul", 3],
+          ["Pyroblast", 1],
+          ["Improved Scorch", 2],
+          ["Hot Streak", 1],
+          ["Critical Mass", 3],
+          ["Blast Wave", 1],
+          ["Fire Power", 5],
+          ["Combustion", 1]
+        ],
+        "Frost": [
+          ["Elemental Precision", 5],
+          ["Ice Shards", 1],
+          ["Permafrost", 3],
+          ["Improved Frost Nova", 2],
+          ["Frostbite", 3],
+          ["Ice Lance", 1],
+          ["Ice Block", 1],
+          ["Shatter", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Ice Lance", "why": "The scorer's value in this build: +39.2% of its score (model fire-leveling)."},
+        {"talent": "Ignite", "why": "The scorer's value in this build: +13.0% of its score (model fire-leveling)."},
+        {"talent": "Fire Power", "why": "The scorer's value in this build: +7.0% of its score (model fire-leveling)."},
+        {"talent": "Combustion", "why": "The scorer's value in this build: +6.9% of its score (model fire-leveling)."},
+        {"talent": "Ice Block", "why": "The scorer's value in this build: +6.4% of its score (model fire-leveling)."},
+        {"talent": "Shatter", "why": "The scorer's value in this build: +6.0% of its score (model fire-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Arctic Reach -> Improved Scorch; 1 point Frost Warding -> Ice Shards; 2 points Improved Fireball -> Wake of Fire.", "Where we disagree with the community: most Fire builds take Master of Elements (83% take it), which the model values below this build's weakest point; this build takes Frostbite (11%), Improved Frost Nova (13%), Permafrost (7%), which few Fire builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Fire PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "frost-pvp",
+      "name": "Frost — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Frost",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Frost PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Frost (model frost-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Frost builds agree with (9200 builds).",
+      "allocation": {
+        "Arcane": [
+          ["Arcane Focus", 5],
+          ["Arcane Subtlety", 2],
+          ["Magic Absorption", 2],
+          ["Arcane Concentration", 3],
+          ["Arcane Resilience", 1],
+          ["Arcane Geometry", 2],
+          ["Improved Counterspell", 2],
+          ["Missile Barrage", 1]
+        ],
+        "Fire": [],
+        "Frost": [
+          ["Improved Frostbolt", 5],
+          ["Ice Shards", 5],
+          ["Permafrost", 3],
+          ["Improved Frost Nova", 2],
+          ["Frostbite", 3],
+          ["Piercing Ice", 3],
+          ["Frost Channeling", 1],
+          ["Ice Lance", 1],
+          ["Arctic Reach", 2],
+          ["Ice Block", 1],
+          ["Shatter", 3],
+          ["Cold Snap", 1],
+          ["Fingers of Frost", 2],
+          ["Ice Barrier", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Ice Lance", "why": "The scorer's value in this build: +23.0% of its score (model frost-leveling)."},
+        {"talent": "Shatter", "why": "The scorer's value in this build: +19.3% of its score (model frost-leveling)."},
+        {"talent": "Ice Barrier", "why": "The scorer's value in this build: +14.6% of its score (model frost-leveling)."},
+        {"talent": "Ice Shards", "why": "The scorer's value in this build: +11.9% of its score (model frost-leveling)."},
+        {"talent": "Frostbite", "why": "The scorer's value in this build: +11.0% of its score (model frost-leveling)."},
+        {"talent": "Fingers of Frost", "why": "The scorer's value in this build: +10.0% of its score (model frost-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +13.3% of the optimum's talent value above the hand draft pvp-frost, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Precision -> Missile Barrage; 1 point Elemental Precision -> Frost Channeling.", "Where we disagree with the community: most Frost builds take none, which the model values below this build's weakest point; this build takes none, which few Frost builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Frost PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/mage", "https://talentsforever.com/popular.js"],
+      "replaces": "pvp-frost"
     }
   ]
 }
