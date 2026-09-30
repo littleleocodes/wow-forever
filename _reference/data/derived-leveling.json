@@ -729,6 +729,120 @@
     "50": 28.221400000092594,
     "60": 30.72336666686606
    }
+  },
+  "Fury": {
+   "spec": "fury-dw-raid",
+   "model": "fury-dw-raid",
+   "tree": "Fury",
+   "hands": [
+    "opt-fury-dw-raid-leveling-st",
+    "opt-fury-dw-raid-solo-60",
+    "opt-arms-2h-raid-leveling-aoe"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "warrior/research/leveling/fightlab/candidates/derived-fury.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "fury-dw-raid",
+    "model": "fury-dw-raid",
+    "tree": "Fury",
+    "start": "opt-arms-2h-raid-leveling-aoe",
+    "starts": {
+     "opt-fury-dw-raid-leveling-st": 32.56010000029149,
+     "opt-fury-dw-raid-solo-60": 32.56010000029149,
+     "opt-arms-2h-raid-leveling-aoe": 29.997366666843785,
+     "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-fury-scorer.json": 32.711100000299666
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "1 point Two-Handed Weapon Specialization -> Improved Berserker Rage",
+      "gain_seed1": 0.021608678451498275,
+      "gain_seed2": 0.02802180788818842
+     },
+     {
+      "round": 2,
+      "move": "2 points Improved Tactical Mastery -> Improved Charge",
+      "gain_seed1": 0.012985962731736356,
+      "gain_seed2": 0.0059595799851909215
+     },
+     {
+      "round": 3,
+      "move": "3 points Deflection -> Improved Heroic Strike",
+      "gain_seed1": 0.007783695206828201,
+      "gain_seed2": 0.011666702912202731
+     }
+    ],
+    "incumbent": "opt-arms-2h-raid-leveling-aoe",
+    "race": {
+     "incumbent": [
+      26.657841666715797,
+      {
+       "20": 20.17566666654526,
+       "30": 23.59273333324983,
+       "40": 26.166933333349817,
+       "50": 27.656033333407645,
+       "60": 29.846566666839742
+      }
+     ],
+     "search": [
+      26.433540000038626,
+      {
+       "20": 20.17566666654526,
+       "30": 23.710799999920866,
+       "40": 26.28906666668796,
+       "50": 27.831200000082028,
+       "60": 28.812466666792886
+      }
+     ],
+     "gain": 0.008414097040617796,
+     "all": {
+      "opt-fury-dw-raid-leveling-st": [
+       28.358058333454277,
+       {
+        "20": 20.001933333214136,
+        "30": 24.296666666608296,
+        "40": 28.788166666786864,
+        "50": 28.93716666679524,
+        "60": 32.40480000028478
+       }
+      ],
+      "opt-fury-dw-raid-solo-60": [
+       28.358058333454277,
+       {
+        "20": 20.001933333214136,
+        "30": 24.296666666608296,
+        "40": 28.788166666786864,
+        "50": 28.93716666679524,
+        "60": 32.40480000028478
+       }
+      ],
+      "opt-arms-2h-raid-leveling-aoe": [
+       26.657841666715797,
+       {
+        "20": 20.17566666654526,
+        "30": 23.59273333324983,
+        "40": 26.166933333349817,
+        "50": 27.656033333407645,
+        "60": 29.846566666839742
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.008414097040617796,
+   "incumbent": "opt-arms-2h-raid-leveling-aoe",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 20.17566666654526,
+    "30": 23.59273333324983,
+    "40": 26.166933333349817,
+    "50": 27.656033333407645,
+    "60": 29.846566666839742
+   }
   }
  }
 }

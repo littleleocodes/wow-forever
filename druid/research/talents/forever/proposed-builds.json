@@ -723,53 +723,6 @@
       ]
     },
     {
-      "id": "opt-resto-heal-raid-heal",
-      "name": "Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)",
-      "role": "healer",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `resto-heal` and profile `raid-heal`: score +168.1% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Balance": [
-          ["Genesis", 5],
-          ["Nature's Majesty", 2],
-          ["Moonglow", 3],
-          ["Nature's Splendor", 1]
-        ],
-        "Feral Combat": [
-          ["Heart of the Wild", 5]
-        ],
-        "Restoration": [
-          ["Nature's Focus", 5],
-          ["Naturalist", 5],
-          ["Reflection", 3],
-          ["Gift of Nature", 5],
-          ["Gift of the Earthmother", 1],
-          ["Tranquil Spirit", 5],
-          ["Improved Rejuvenation", 3],
-          ["Swiftmend", 1],
-          ["Living Spirit", 3],
-          ["Nature's Swiftness", 1],
-          ["Improved Tranquility", 2],
-          ["Wild Growth", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Moonglow", "why": "Removing it costs 62.9 points of score in this model."},
-        {"talent": "Reflection", "why": "Removing it costs 33.7 points of score in this model."},
-        {"talent": "Tranquil Spirit", "why": "Removing it costs 15.5 points of score in this model."},
-        {"talent": "Gift of Nature", "why": "Removing it costs 13.7 points of score in this model."},
-        {"talent": "Living Spirit", "why": "Removing it costs 12.9 points of score in this model."},
-        {"talent": "Heart of the Wild", "why": "Removing it costs 8.4 points of score in this model."},
-        {"talent": "Improved Rejuvenation", "why": "Removing it costs 5.0 points of score in this model."},
-        {"talent": "Nature's Majesty", "why": "Removing it costs 3.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: druid/talents/forever/optimizer/resto-heal-raid-heal.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/druid"]
-    },
-    {
       "id": "opt-balance-dps-raid-dps",
       "name": "Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)",
       "role": "dps",
@@ -1155,6 +1108,53 @@
       "open_questions": ["A derived Restoration PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/druid", "https://talentsforever.com/popular.js"],
       "replaces": "pvp-resto"
+    },
+    {
+      "id": "opt-resto-heal-raid-heal",
+      "name": "Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `resto-heal` and profile `raid-heal`: score +190.2% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Balance": [
+          ["Genesis", 5],
+          ["Moonglow", 3],
+          ["Nature's Majesty", 2],
+          ["Nature's Splendor", 1]
+        ],
+        "Feral Combat": [
+          ["Heart of the Wild", 5]
+        ],
+        "Restoration": [
+          ["Nature's Focus", 5],
+          ["Naturalist", 5],
+          ["Reflection", 3],
+          ["Gift of Nature", 5],
+          ["Gift of the Earthmother", 1],
+          ["Improved Rejuvenation", 3],
+          ["Tranquil Spirit", 5],
+          ["Swiftmend", 1],
+          ["Living Spirit", 3],
+          ["Nature's Swiftness", 1],
+          ["Improved Regrowth", 2],
+          ["Wild Growth", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Moonglow", "why": "Removing it costs 62.9 points of score in this model."},
+        {"talent": "Reflection", "why": "Removing it costs 33.7 points of score in this model."},
+        {"talent": "Tranquil Spirit", "why": "Removing it costs 24.4 points of score in this model."},
+        {"talent": "Gift of Nature", "why": "Removing it costs 19.2 points of score in this model."},
+        {"talent": "Living Spirit", "why": "Removing it costs 16.4 points of score in this model."},
+        {"talent": "Heart of the Wild", "why": "Removing it costs 12.7 points of score in this model."},
+        {"talent": "Improved Rejuvenation", "why": "Removing it costs 5.5 points of score in this model."},
+        {"talent": "Nature's Majesty", "why": "Removing it costs 4.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: druid/research/talents/forever/optimizer/resto-heal-raid-heal.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/druid"]
     }
   ]
 }
