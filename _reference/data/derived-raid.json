@@ -260,6 +260,67 @@
    "moves": [],
    "gain_vs_hand": 0.0,
    "verdict": "hand stays"
+  },
+  "Combat": {
+   "tree": "Combat",
+   "role": "dps",
+   "entry": "combat-daggers-raid",
+   "start": "opt-combat-daggers-raid-raid-dps",
+   "start_metric": 402.58728906762616,
+   "date": "2026-09-30",
+   "hand": "combat-daggers-raid",
+   "hand_metric": 398.99405529290914,
+   "candidate": "rogue/research/raid/raidsim/candidates/derived-combat.json",
+   "search_gain": 0.0473498936846426,
+   "moves": [
+    {
+     "round": 1,
+     "move": "2 points Lethality -> Improved Expose Armor",
+     "gain_seed1": 0.04361511521178851,
+     "gain_seed2": 0.04180617338684178,
+     "split": "16/33/2"
+    },
+    {
+     "round": 2,
+     "move": "1 point Cold Blood -> Improved Poisons",
+     "gain_seed1": 0.0034561485415733895,
+     "gain_seed2": 0.0038907230025382322,
+     "split": "16/33/2"
+    }
+   ],
+   "gain_vs_hand": 0.056782046775673445,
+   "verdict": "replaces"
+  },
+  "Subtlety": {
+   "tree": "Subtlety",
+   "role": "dps",
+   "entry": "subtlety-raid",
+   "start": "subtlety-hemo-raid",
+   "start_metric": 373.72756456771447,
+   "date": "2026-09-30",
+   "hand": "subtlety-hemo-raid",
+   "hand_metric": 373.72756456771447,
+   "candidate": "rogue/research/raid/raidsim/candidates/derived-subtlety.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
+  }
+ },
+ "shaman": {
+  "Elemental": {
+   "tree": "Elemental",
+   "role": "dps",
+   "entry": "elemental-dps",
+   "start": "elemental-raid",
+   "start_metric": 381.11508606647834,
+   "date": "2026-09-30",
+   "hand": null,
+   "hand_metric": null,
+   "candidate": "shaman/research/raid/raidsim/candidates/derived-elemental.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "verdict": "start stays"
   }
  }
 }

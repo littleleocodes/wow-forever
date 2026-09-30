@@ -1,0 +1,107 @@
+{
+ "veto": {
+  "Smite": {
+   "min_hp": 0.35
+  },
+  "Holy Fire": {
+   "off": true
+  }
+ },
+ "knobs": {
+  "WAND_BELOW": 0.3
+ },
+ "drink_below": 0.15,
+ "class": "priest",
+ "spec": "discipline-leveling",
+ "build": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-discipline-scorer.json",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-30",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "Smite only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Smite",
+    0.35
+   ],
+   "gain_seed1": 0.05348279051061611,
+   "gain_seed2": 0.04966308284413423
+  },
+  {
+   "round": 2,
+   "change": "never cast Holy Fire",
+   "rule": [
+    "off",
+    "Holy Fire",
+    true
+   ],
+   "gain_seed1": 0.05056712206173852,
+   "gain_seed2": 0.04847998461402425
+  },
+  {
+   "round": 3,
+   "change": "WAND_BELOW = 0.3",
+   "rule": [
+    "knob",
+    "WAND_BELOW",
+    0.3
+   ],
+   "gain_seed1": 0.03356431432157925,
+   "gain_seed2": 0.03489458059789008
+  },
+  {
+   "round": 4,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.029334065912937413,
+   "gain_seed2": 0.0320292091597455
+  }
+ ],
+ "weighted_before": 60.5724675196069,
+ "weighted_after": 51.179710842977656,
+ "per_level": {
+  "20": {
+   "before": 46.65359985836673,
+   "after": 39.09417371055808,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 58.94463808323775,
+   "after": 48.34578835773021,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 72.51142863103435,
+   "after": 57.61740101938483,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 67.10161923833941,
+   "after": 56.75663087408169,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 52.6257376183095,
+   "after": 47.68595765288309,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

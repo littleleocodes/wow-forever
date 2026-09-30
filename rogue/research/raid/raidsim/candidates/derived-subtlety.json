@@ -1,0 +1,105 @@
+{
+ "id": "derived-subtlety",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    1
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Cold Blood",
+    1
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Camouflage",
+    5
+   ],
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ],
+   [
+    "Thousand Cuts",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for subtlety-raid from subtlety-hemo-raid in the dummy setting: 374.2 -> 374.2 DPS on a third seed.",
+ "search": {
+  "start": "subtlety-hemo-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 374.2208779642266,
+  "dps_end": 374.2208779642266,
+  "gain": 0.0,
+  "tank": false
+ }
+}
