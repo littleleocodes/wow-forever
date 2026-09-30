@@ -843,6 +843,119 @@
     "50": 27.656033333407645,
     "60": 29.846566666839742
    }
+  },
+  "Protection": {
+   "spec": "prot-leveling",
+   "model": "arms-2h-raid",
+   "tree": "Protection",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "warrior/research/leveling/fightlab/candidates/derived-protection.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "prot-leveling",
+    "model": "arms-2h-raid",
+    "tree": "Protection",
+    "start": "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-protection-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-protection-scorer.json": 46.64696847569501
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "3 points Improved Thunder Clap -> Bastion",
+      "gain_seed1": 0.044946624388706,
+      "gain_seed2": 0.04529231301192038
+     },
+     {
+      "round": 2,
+      "move": "1 point Master of Defense -> Vanguard",
+      "gain_seed1": 0.02579984772646604,
+      "gain_seed2": 0.02056285641261546
+     },
+     {
+      "round": 3,
+      "move": "2 points Toughness -> Bastion",
+      "gain_seed1": 0.028842751155515267,
+      "gain_seed2": 0.03336270761238058
+     },
+     {
+      "round": 4,
+      "move": "2 points Improved Overpower -> Improved Heroic Strike",
+      "gain_seed1": 0.008476518775368147,
+      "gain_seed2": 0.013539399487732862
+     },
+     {
+      "round": 5,
+      "move": "1 point Unbridled Wrath -> Shield Slam",
+      "gain_seed1": 0.22817872720337895,
+      "gain_seed2": 0.21062157251868052
+     },
+     {
+      "round": 6,
+      "move": "1 point Vanguard -> Toughness",
+      "gain_seed1": 0.008532344786312263,
+      "gain_seed2": 0.024794597593576828
+     },
+     {
+      "round": 7,
+      "move": "2 points Improved Heroic Strike -> Improved Tactical Mastery",
+      "gain_seed1": 0.015770811445369404,
+      "gain_seed2": 0.008157245910271116
+     }
+    ],
+    "incumbent": "derived-protection-scorer",
+    "race": {
+     "incumbent": [
+      42.32968954334309,
+      {
+       "20": 25.48519999998908,
+       "30": 32.9758952421363,
+       "40": 45.41687381918871,
+       "50": 47.332131445503784,
+       "60": 46.39459210603352
+      }
+     ],
+     "search": [
+      37.28797579123294,
+      {
+       "20": 25.373099999985037,
+       "30": 32.884536999728006,
+       "40": 45.045814844339766,
+       "50": 45.201448638057606,
+       "60": 31.694867042976266
+      }
+     ],
+     "gain": 0.11910585233439375,
+     "all": {
+      "derived-protection-scorer": [
+       42.32968954334309,
+       {
+        "20": 25.48519999998908,
+        "30": 32.9758952421363,
+        "40": 45.41687381918871,
+        "50": 47.332131445503784,
+        "60": 46.39459210603352
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.11910585233439375,
+   "incumbent": "derived-protection-scorer",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 25.373099999985037,
+    "30": 32.884536999728006,
+    "40": 45.045814844339766,
+    "50": 45.201448638057606,
+    "60": 31.694867042976266
+   }
   }
  },
  "paladin": {
@@ -1128,6 +1241,270 @@
     "40": 28.1404111517967,
     "50": 28.476082408050623,
     "60": 31.901567932477814
+   }
+  }
+ },
+ "hunter": {
+  "Beast Mastery": {
+   "spec": "bm-leveling",
+   "model": "bm-leveling",
+   "tree": "Beast Mastery",
+   "hands": [
+    "bm-solo-farm"
+   ],
+   "generated": [
+    "beast-mastery-leveling"
+   ],
+   "date": "2026-09-30",
+   "candidate": "hunter/research/leveling/fightlab/candidates/derived-beast-mastery.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "bm-leveling",
+    "model": "bm-leveling",
+    "tree": "Beast Mastery",
+    "start": "beast-mastery-leveling",
+    "starts": {
+     "bm-solo-farm": 31.19291537664551,
+     "beast-mastery-leveling": 29.72177739872503,
+     "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-beast-mastery-scorer.json": 29.72177739872503
+    },
+    "moves": [],
+    "incumbent": "bm-solo-farm",
+    "race": {
+     "incumbent": [
+      26.72801706261152,
+      {
+       "20": 15.667759191111598,
+       "30": 21.811984141368086,
+       "40": 26.93553341023348,
+       "50": 28.675043211235334,
+       "60": 31.111920124798722
+      }
+     ],
+     "search": [
+      26.592720883997185,
+      {
+       "20": 17.74547574413414,
+       "30": 22.722186649974056,
+       "40": 27.39979229448435,
+       "50": 28.196969327330013,
+       "60": 29.60214840452762
+      }
+     ],
+     "gain": 0.005061960948969713,
+     "all": {
+      "bm-solo-farm": [
+       26.72801706261152,
+       {
+        "20": 15.667759191111598,
+        "30": 21.811984141368086,
+        "40": 26.93553341023348,
+        "50": 28.675043211235334,
+        "60": 31.111920124798722
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.005061960948969713,
+   "incumbent": "bm-solo-farm",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 15.667759191111598,
+    "30": 21.811984141368086,
+    "40": 26.93553341023348,
+    "50": 28.675043211235334,
+    "60": 31.111920124798722
+   }
+  },
+  "Marksmanship": {
+   "spec": "mm-raid",
+   "model": "mm-raid",
+   "tree": "Marksmanship",
+   "hands": [
+    "leveling-beast-mastery",
+    "opt-bm-leveling-leveling-st",
+    "opt-bm-leveling-solo-60",
+    "opt-mm-raid-leveling-st"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "hunter/research/leveling/fightlab/candidates/derived-marksmanship.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "mm-raid",
+    "model": "mm-raid",
+    "tree": "Marksmanship",
+    "start": "opt-bm-leveling-leveling-st",
+    "starts": {
+     "leveling-beast-mastery": 30.530809881170697,
+     "opt-bm-leveling-leveling-st": 30.17896202054838,
+     "opt-bm-leveling-solo-60": 30.303503615738027,
+     "opt-mm-raid-leveling-st": 33.75092492574779,
+     "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-marksmanship-scorer.json": 33.8494645409144
+    },
+    "moves": [],
+    "incumbent": "leveling-beast-mastery",
+    "race": {
+     "incumbent": [
+      27.456744711347604,
+      {
+       "20": 19.03416523340587,
+       "30": 23.76073991238409,
+       "40": 28.357214878326005,
+       "50": 28.715779573415105,
+       "60": 30.462764440434754
+      }
+     ],
+     "search": [
+      27.909490304754208,
+      {
+       "20": 18.27977486184825,
+       "30": 22.139805822433207,
+       "40": 29.201089260332864,
+       "50": 31.491935222645274,
+       "60": 30.157800958255045
+      }
+     ],
+     "gain": -0.016489412644008272,
+     "all": {
+      "leveling-beast-mastery": [
+       27.456744711347604,
+       {
+        "20": 19.03416523340587,
+        "30": 23.76073991238409,
+        "40": 28.357214878326005,
+        "50": 28.715779573415105,
+        "60": 30.462764440434754
+       }
+      ],
+      "opt-bm-leveling-leveling-st": [
+       27.909490304754208,
+       {
+        "20": 18.27977486184825,
+        "30": 22.139805822433207,
+        "40": 29.201089260332864,
+        "50": 31.491935222645274,
+        "60": 30.157800958255045
+       }
+      ],
+      "opt-bm-leveling-solo-60": [
+       27.926825919804664,
+       {
+        "20": 18.27977486184825,
+        "30": 22.139805822433207,
+        "40": 29.201089260332864,
+        "50": 31.491935222645274,
+        "60": 30.215586341756563
+       }
+      ],
+      "opt-mm-raid-leveling-st": [
+       29.168510549293718,
+       {
+        "20": 18.96411434725208,
+        "30": 23.92893949711871,
+        "40": 29.071630558333563,
+        "50": 31.090578744781116,
+        "60": 33.65262464046237
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": -0.016489412644008272,
+   "incumbent": "leveling-beast-mastery",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 19.03416523340587,
+    "30": 23.76073991238409,
+    "40": 28.357214878326005,
+    "50": 28.715779573415105,
+    "60": 30.462764440434754
+   }
+  }
+ },
+ "warlock": {
+  "Affliction": {
+   "spec": "affliction-leveling",
+   "model": "affliction-leveling",
+   "tree": "Affliction",
+   "hands": [],
+   "generated": [
+    "affliction-leveling"
+   ],
+   "date": "2026-09-30",
+   "candidate": "warlock/research/leveling/fightlab/candidates/derived-affliction.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "affliction-leveling",
+    "model": "affliction-leveling",
+    "tree": "Affliction",
+    "start": "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-affliction-scorer.json",
+    "starts": {
+     "affliction-leveling": 41.42661111850472,
+     "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-affliction-scorer.json": 41.395857990207745
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "1 point Aftermath -> Demonic Energies",
+      "gain_seed1": 0.014495156447411173,
+      "gain_seed2": 0.012784953902758911
+     }
+    ],
+    "incumbent": "affliction-leveling",
+    "race": {
+     "incumbent": [
+      37.67418594538249,
+      {
+       "20": 25.5967999999917,
+       "30": 32.507698766509776,
+       "40": 38.65560276047234,
+       "50": 40.53739542227831,
+       "60": 41.24293907580938
+      }
+     ],
+     "search": [
+      37.53106700764367,
+      {
+       "20": 25.5967999999917,
+       "30": 32.46375513232241,
+       "40": 38.727111100000165,
+       "50": 40.53739542227831,
+       "60": 40.74017554075509
+      }
+     ],
+     "gain": 0.0037988594616563676,
+     "all": {
+      "affliction-leveling": [
+       37.67418594538249,
+       {
+        "20": 25.5967999999917,
+        "30": 32.507698766509776,
+        "40": 38.65560276047234,
+        "50": 40.53739542227831,
+        "60": 41.24293907580938
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0037988594616563676,
+   "incumbent": "affliction-leveling",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 25.5967999999917,
+    "30": 32.46375513232241,
+    "40": 38.727111100000165,
+    "50": 40.53739542227831,
+    "60": 40.74017554075509
    }
   }
  }

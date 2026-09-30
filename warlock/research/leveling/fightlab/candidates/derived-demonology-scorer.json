@@ -1,0 +1,189 @@
+{
+ "id": "derived-demonology-scorer",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    4
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Malediction",
+    5
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Siphon Life",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Improved Health Funnel",
+    2
+   ],
+   [
+    "Improved Imp",
+    3
+   ],
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Improved Voidwalker",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ]
+  ],
+  "Destruction": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23-25",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 3
+  },
+  {
+   "levels": "26-29",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "36-37",
+   "tree": "Demonology",
+   "talent": "Improved Health Funnel",
+   "points": 2
+  },
+  {
+   "levels": "38-40",
+   "tree": "Demonology",
+   "talent": "Improved Imp",
+   "points": 3
+  },
+  {
+   "levels": "41",
+   "tree": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Demonology",
+   "talent": "Demonic Embrace",
+   "points": 5
+  },
+  {
+   "levels": "47-48",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 2
+  },
+  {
+   "levels": "49-50",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 2
+  },
+  {
+   "levels": "51",
+   "tree": "Demonology",
+   "talent": "Soul Link",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Demonology",
+   "talent": "Demonic Knowledge",
+   "points": 3
+  },
+  {
+   "levels": "55",
+   "tree": "Demonology",
+   "talent": "Improved Voidwalker",
+   "points": 1
+  },
+  {
+   "levels": "56-60",
+   "tree": "Demonology",
+   "talent": "Master Demonologist",
+   "points": 5
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Demonology under affliction-leveling (leveling-st), 2026-09-30."
+}

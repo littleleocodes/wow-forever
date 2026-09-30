@@ -1,0 +1,243 @@
+{
+ "id": "fl-beast-mastery-bm-leveling",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Rapid Recuperation",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 1
+  },
+  {
+   "levels": "20-24",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "25",
+   "tree": "Beast Mastery",
+   "talent": "Summon Hawk",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "36-38",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 3
+  },
+  {
+   "levels": "39-43",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "44",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "48",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "49-50",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "51",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 1
+  },
+  {
+   "levels": "52",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 1
+  },
+  {
+   "levels": "53",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Discipline",
+   "points": 1
+  },
+  {
+   "levels": "54-55",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 2
+  },
+  {
+   "levels": "56-60",
+   "tree": "Beast Mastery",
+   "talent": "Frenzy",
+   "points": 5
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "bm-leveling",
+  "model": "bm-leveling",
+  "tree": "Beast Mastery",
+  "start": "beast-mastery-leveling",
+  "starts": {
+   "bm-solo-farm": 31.19291537664551,
+   "beast-mastery-leveling": 29.72177739872503,
+   "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-beast-mastery-scorer.json": 29.72177739872503
+  },
+  "moves": [],
+  "incumbent": "bm-solo-farm",
+  "race": {
+   "incumbent": [
+    26.72801706261152,
+    {
+     "20": 15.667759191111598,
+     "30": 21.811984141368086,
+     "40": 26.93553341023348,
+     "50": 28.675043211235334,
+     "60": 31.111920124798722
+    }
+   ],
+   "search": [
+    26.592720883997185,
+    {
+     "20": 17.74547574413414,
+     "30": 22.722186649974056,
+     "40": 27.39979229448435,
+     "50": 28.196969327330013,
+     "60": 29.60214840452762
+    }
+   ],
+   "gain": 0.005061960948969713,
+   "all": {
+    "bm-solo-farm": [
+     26.72801706261152,
+     {
+      "20": 15.667759191111598,
+      "30": 21.811984141368086,
+      "40": 26.93553341023348,
+      "50": 28.675043211235334,
+      "60": 31.111920124798722
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
