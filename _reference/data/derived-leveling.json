@@ -844,5 +844,77 @@
     "60": 29.846566666839742
    }
   }
+ },
+ "paladin": {
+  "Holy": {
+   "spec": "holy-leveling",
+   "model": "ret-dps",
+   "tree": "Holy",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "paladin/research/leveling/fightlab/candidates/derived-holy.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "holy-leveling",
+    "model": "ret-dps",
+    "tree": "Holy",
+    "start": "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-holy-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-holy-scorer.json": 35.36674246696437
+    },
+    "moves": [],
+    "incumbent": "derived-holy-scorer",
+    "race": {
+     "incumbent": [
+      29.112607112198013,
+      {
+       "20": 19.45473286393821,
+       "30": 23.22116666657369,
+       "40": 27.81441356382218,
+       "50": 30.440827865652096,
+       "60": 35.036230488802275
+      }
+     ],
+     "search": [
+      29.112607112198013,
+      {
+       "20": 19.45473286393821,
+       "30": 23.22116666657369,
+       "40": 27.81441356382218,
+       "50": 30.440827865652096,
+       "60": 35.036230488802275
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "derived-holy-scorer": [
+       29.112607112198013,
+       {
+        "20": 19.45473286393821,
+        "30": 23.22116666657369,
+        "40": 27.81441356382218,
+        "50": 30.440827865652096,
+        "60": 35.036230488802275
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "derived-holy-scorer",
+   "verdict": "new",
+   "keep_incumbent": true,
+   "levels": {
+    "20": 19.45473286393821,
+    "30": 23.22116666657369,
+    "40": 27.81441356382218,
+    "50": 30.440827865652096,
+    "60": 35.036230488802275
+   }
+  }
  }
 }

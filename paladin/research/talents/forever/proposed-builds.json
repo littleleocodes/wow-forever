@@ -892,52 +892,6 @@
       ]
     },
     {
-      "id": "opt-holy-heal-raid-heal",
-      "name": "Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)",
-      "role": "healer",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +101.9% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Holy": [
-          ["Divine Intellect", 5],
-          ["Healing Light", 3],
-          ["Spiritual Focus", 2],
-          ["Reverence", 3],
-          ["Purifying Power", 2],
-          ["Divine Favor", 1],
-          ["Illumination", 5],
-          ["Infusion of Light", 2]
-        ],
-        "Protection": [],
-        "Retribution": [
-          ["Benediction", 5],
-          ["Deflection", 5],
-          ["Holy Conduit", 2],
-          ["Conviction", 5],
-          ["Sanctified Judgement", 3],
-          ["Vindication", 3],
-          ["Seal of Command", 1],
-          ["Pursuit of Justice", 1],
-          ["Champion of the Light", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Illumination", "why": "Removing it costs 24.0 points of score in this model."},
-        {"talent": "Champion of the Light", "why": "Removing it costs 20.4 points of score in this model."},
-        {"talent": "Reverence", "why": "Removing it costs 20.3 points of score in this model."},
-        {"talent": "Healing Light", "why": "Removing it costs 12.8 points of score in this model."},
-        {"talent": "Divine Favor", "why": "Removing it costs 8.1 points of score in this model."},
-        {"talent": "Divine Intellect", "why": "Removing it costs 8.1 points of score in this model."},
-        {"talent": "Infusion of Light", "why": "Removing it costs 6.4 points of score in this model."},
-        {"talent": "Sanctified Judgement", "why": "Removing it costs 6.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/holy-heal-raid-heal.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
-    },
-    {
       "id": "opt-prot-tank-raid-tank",
       "name": "Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)",
       "role": "tank",
@@ -1029,6 +983,52 @@
       ],
       "flex": [],
       "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/paladin"]
+    },
+    {
+      "id": "opt-holy-heal-raid-heal",
+      "name": "Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +101.9% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Holy": [
+          ["Divine Intellect", 5],
+          ["Healing Light", 3],
+          ["Spiritual Focus", 2],
+          ["Reverence", 3],
+          ["Purifying Power", 2],
+          ["Divine Favor", 1],
+          ["Illumination", 5],
+          ["Infusion of Light", 2]
+        ],
+        "Protection": [],
+        "Retribution": [
+          ["Benediction", 5],
+          ["Deflection", 5],
+          ["Holy Conduit", 2],
+          ["Conviction", 5],
+          ["Sanctified Judgement", 3],
+          ["Vindication", 3],
+          ["Seal of Command", 1],
+          ["Pursuit of Justice", 1],
+          ["Champion of the Light", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Illumination", "why": "Removing it costs 24.0 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 20.4 points of score in this model."},
+        {"talent": "Reverence", "why": "Removing it costs 20.3 points of score in this model."},
+        {"talent": "Healing Light", "why": "Removing it costs 12.8 points of score in this model."},
+        {"talent": "Divine Favor", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Divine Intellect", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Infusion of Light", "why": "Removing it costs 6.4 points of score in this model."},
+        {"talent": "Sanctified Judgement", "why": "Removing it costs 6.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/holy-heal-raid-heal.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/paladin"]
     }

@@ -71,7 +71,7 @@
     ]
   },
   "Infusion of Light": {
-    "note": "Holy Shock/Flash of Light crits cut the next Holy Light by 0.5s/rank: ~30% of Holy Lights get the cut at raid crit -> +6%/rank Holy Light throughput. Healer lab calibration (2026-09-28, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 2.9% on the same scale); already within tolerance, heal effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Holy Shock/Flash of Light crits cut the next Holy Light by 0.5s/rank: ~30% of Holy Lights get the cut at raid crit -> +6%/rank Holy Light throughput. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 2.8% on the same scale); already within tolerance, heal effects split off unchanged (2.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -106,7 +106,7 @@
     ]
   },
   "Illumination": {
-    "note": "20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-28, holy-heal): removing it costs 12.8% healing capacity in the lab (scorer said 13.4% on the same scale); already within tolerance, heal effects split off unchanged (13.7%). Other modes unchanged.",
+    "note": "20%/rank chance for 50% of base mana back on crit heals (est. 100% chance at 5/5): refund = chance x 0.5 x crit (22%) -> +2.2%/rank mana. Half of Classic's Illumination. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-30, holy-heal): removing it costs 12.8% healing capacity in the lab (scorer said 13.7% on the same scale); already within tolerance, heal effects split off unchanged (13.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -188,7 +188,7 @@
     ]
   },
   "Divine Favor": {
-    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Healer lab calibration (2026-09-28, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged.",
+    "note": "Guaranteed crit heal every 2 min: +1% healing, +1% mana. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.4% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",
@@ -256,7 +256,7 @@
     ]
   },
   "Holy Shock": {
-    "note": "Instant heal or damage every 10s: +3% healing (an instant on the move) and +5% Holy damage while leveling. Healer lab calibration (2026-09-28, holy-heal): removing it costs -1.4% healing capacity in the lab (scorer said 0.0% on the same scale); already within tolerance, heal effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "Instant heal or damage every 10s: +3% healing (an instant on the move) and +5% Holy damage while leveling. Healer lab calibration (2026-09-30, holy-heal): removing it costs -1.4% healing capacity in the lab (scorer said 0.0% on the same scale); already within tolerance, heal effects split off unchanged (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1235,7 +1235,7 @@
     ]
   },
   "Holy Power": {
-    "note": "Build 70009: +3%/rank crit on Holy Shock AND Holy Strike, +1%/rank crit on all other spells (parser keeps only the first clause). Healer lab calibration (2026-09-28, holy-heal): removing it costs 6.4% healing capacity in the lab (scorer said 4.4% on the same scale); heal values scaled x0.78, the cap on effect size stops short of the target (3.4%). Other modes unchanged.",
+    "note": "Build 70009: +3%/rank crit on Holy Shock AND Holy Strike, +1%/rank crit on all other spells (parser keeps only the first clause). Healer lab calibration (2026-09-30, holy-heal): removing it costs 6.4% healing capacity in the lab (scorer said 3.4% on the same scale); heal values scaled x1.00, the cap on effect size stops short of the target (3.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -1975,7 +1975,7 @@
     ]
   },
   "Reverence": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-30, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-30, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.7% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.7%). Other modes unchanged. Healer lab calibration (2026-09-30, holy-heal): removing it costs 11.6% healing capacity in the lab (scorer said 11.4% on the same scale); already within tolerance, heal effects split off unchanged (11.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2012,14 +2012,6 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.27061, 0.541222, 0.811832],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["holy-heal"]
-      },
-      {
-        "channel": "regen",
-        "scope": ["all"],
         "values": [0.021132, 0.042264, 0.063395],
         "source": "parsed",
         "modes": ["raid"],
@@ -2032,6 +2024,14 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "regen",
+        "scope": ["all"],
+        "values": [0.27061, 0.541222, 0.811832],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2348,7 +2348,7 @@
     ]
   },
   "Divine Intellect": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, ret-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration (2026-09-30, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, ret-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged. Fight lab calibration (2026-09-30, levels 30,60): removing it costs 0.3% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Healer lab calibration (2026-09-30, holy-heal): removing it costs 3.5% healing capacity in the lab (scorer said 4.2% on the same scale); already within tolerance, heal effects split off unchanged (4.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",
@@ -2385,14 +2385,6 @@
       {
         "channel": "stat",
         "scope": ["stat:intellect"],
-        "values": [0.03945, 0.0789, 0.11835, 0.1578, 0.197249],
-        "source": "parsed",
-        "modes": ["heal"],
-        "specs": ["holy-heal"]
-      },
-      {
-        "channel": "stat",
-        "scope": ["stat:intellect"],
         "values": [0.003579, 0.007159, 0.010737, 0.014317, 0.017896],
         "source": "parsed",
         "modes": ["raid"],
@@ -2405,6 +2397,14 @@
         "source": "parsed",
         "modes": ["leveling-st", "solo-60"],
         "specs": ["ret-dps"]
+      },
+      {
+        "channel": "stat",
+        "scope": ["stat:intellect"],
+        "values": [0.03945, 0.0789, 0.11835, 0.1578, 0.197249],
+        "source": "parsed",
+        "modes": ["heal"],
+        "specs": ["holy-heal"]
       }
     ]
   },
@@ -2505,7 +2505,7 @@
     ]
   },
   "Healing Light": {
-    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-28, holy-heal): removing it costs 6.7% healing capacity in the lab (scorer said 8.5% on the same scale); heal values scaled x0.78 to match (6.7%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; heal values fitted to the healer lab. Healer lab calibration (2026-09-30, holy-heal): removing it costs 6.7% healing capacity in the lab (scorer said 6.7% on the same scale); already within tolerance, heal effects split off unchanged (6.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "heal",

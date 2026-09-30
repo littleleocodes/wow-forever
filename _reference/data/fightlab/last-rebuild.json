@@ -5128,11 +5128,10 @@
    "spec": "ret-dps",
    "hand": "leveling-retribution",
    "opt": "opt-ret-dps-leveling-st",
-   "started": "2026-09-30T07:43:30",
+   "started": "2026-09-30T08:08:01",
    "steps": [
-    "calibrate",
-    "race",
-    "report"
+    "heal",
+    "adopt"
    ],
    "raid": {
     "ret-dps": {
@@ -5305,92 +5304,32 @@
      "environments": null
     }
    },
-   "seconds": 1038,
+   "seconds": 468,
    "log": [
     {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/calibrate.py paladin --spec ret-dps --profile leveling-st --builds opt-ret-dps-leveling-st leveling-retribution /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-hand-2026-09-26.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r1.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r2.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r3.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r4.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r5.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r6.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r7.json --levels 30,60 --fights 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/calibrate.py paladin --runs 60 --write",
      "rc": 0,
-     "seconds": 722,
+     "seconds": 266,
      "tail": [
-      "Vindication                1.0%      0.8%     0.8%   1.00      kept |    0.5%   0.4% |    1.5%   1.1%",
-      "Divine Precision           1.0%      0.5%     1.0%   1.87    fitted |    nan%   nan% |    1.0%   1.0%",
-      "Deflection                 0.7%      0.6%     0.6%   1.00      kept |    1.4%   0.6% |    0.1%   0.6%",
-      "Benediction                0.4%      0.5%     0.5%   1.00      kept |    0.8%   0.5% |    0.0%   0.5%",
-      "Divine Intellect           0.3%      0.2%     0.2%   1.00      kept |    nan%   nan% |    0.3%   0.2%",
-      "Consecrated Ground         0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
-      "Repentance                 0.0%      0.5%     0.5%   1.00     noise |    nan%   nan% |    0.0%   0.5%",
-      "Voice of Truth             0.0%      0.0%     0.0%   1.00      kept |    nan%   nan% |    0.0%   0.0%",
-      "Toughness                 -0.1%      0.0%     0.0%   1.00      kept |    nan%   nan% |   -0.1%   0.0%",
-      "Twist of Light            -0.6%      0.0%     0.0%   1.00      kept |    nan%   nan% |   -0.6%   0.0%",
-      "wrote _reference/data/scorer/effects/forever/paladin.manual.json (23 entries written, 1 fitted)",
-      "wrote paladin/research/leveling/fightlab/ret-dps-calibration.json"
+      "  healing shares -> holy_light 52%, flash 44%, loh 3%, holy_shock 0% (unmatched 0%)",
+      "",
+      "talent                           lab EV before EV after  scale     how",
+      "Illumination                   12.8%     13.7%    13.7%   1.00    kept",
+      "Reverence                      11.6%     11.4%    11.4%   1.00    kept",
+      "Healing Light                   6.7%      6.7%     6.7%   1.00    kept",
+      "Holy Power                      6.4%      3.4%     3.4%   1.00  capped",
+      "Divine Intellect                3.5%      4.2%     4.2%   1.00    kept",
+      "Infusion of Light               3.4%      2.8%     2.8%   1.00    kept",
+      "Divine Favor                    3.4%      4.2%     4.2%   1.00    kept",
+      "Holy Shock                     -1.4%      0.0%     0.0%   1.00    kept",
+      "wrote _reference/data/scorer/effects/forever/paladin.manual.json (8 entries, 0 fitted) and paladin/research/raid/heallab/holy-heal-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile leveling-aoe --write --export --lookahead 16",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec holy-heal --profile raid-heal --write --export --seed holy-raid-healer",
      "rc": 0,
-     "seconds": 33,
-     "tail": [
-      "| 45 | Retribution | Champion of the Light | 1 | +25.1% |",
-      "| 46 | Retribution | Instrument of Law | 1 | +25.9% |",
-      "| 47 | Retribution | Champion of the Light | 1 | +26.7% |",
-      "| 48 | Retribution | Twist of Light | 1 | +27.9% |",
-      "| 49 | Retribution | Sanctified Judgement | 1 | +27.9% |",
-      "| 50-52 | Retribution | Vengeance | 3 | +30.1% |",
-      "| 53-57 | Protection | Toughness | 5 | +30.8% |",
-      "| 58-60 | Protection | Precision | 3 | +33.4% |",
-      "",
-      "exported opt-ret-dps-leveling-aoe -> paladin/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote paladin/research/leveling/optimizer/ret-dps-leveling-aoe.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile leveling-st --write --export --lookahead 16 --seed leveling-retribution",
-     "rc": 0,
-     "seconds": 32,
-     "tail": [
-      "| 38-42 | Holy | Divine Strength | 5 | +34.6% |",
-      "| 43-45 | Holy | Improved Seals | 3 | +36.0% |",
-      "| 46-47 | Retribution | Champion of the Light | 2 | +37.2% |",
-      "| 48-50 | Retribution | Vengeance | 3 | +38.0% |",
-      "| 51-53 | Retribution | Vindication | 3 | +38.7% |",
-      "| 54-55 | Holy | Divine Intellect | 2 | +38.8% |",
-      "| 56-58 | Holy | Reverence | 3 | +39.2% |",
-      "| 59-60 | Holy | Purifying Power | 2 | +39.4% |",
-      "",
-      "exported opt-ret-dps-leveling-st -> paladin/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote paladin/research/leveling/optimizer/ret-dps-leveling-st.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile solo-60 --write --export --lookahead 16",
-     "rc": 0,
-     "seconds": 33,
-     "tail": [
-      "| 43-45 | Holy | Improved Seals | 3 | +35.8% |",
-      "| 46-47 | Retribution | Champion of the Light | 2 | +36.9% |",
-      "| 48 | Retribution | Repentance | 1 | +37.2% |",
-      "| 49-50 | Retribution | Vengeance | 2 | +37.8% |",
-      "| 51-53 | Retribution | Vindication | 3 | +38.5% |",
-      "| 54-55 | Holy | Divine Intellect | 2 | +38.6% |",
-      "| 56-58 | Holy | Reverence | 3 | +39.0% |",
-      "| 59-60 | Holy | Purifying Power | 2 | +39.2% |",
-      "",
-      "exported opt-ret-dps-solo-60 -> paladin/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote paladin/research/leveling/optimizer/ret-dps-solo-60.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec holy-heal --profile raid-heal --write --export --lookahead 16",
-     "rc": 0,
-     "seconds": 13,
+     "seconds": 17,
      "tail": [
       "| Divine Strength | Holy 1 | 1/5 | +0.00% | yes |",
       "| Improved Seals | Holy 2 | 1/3 | +0.00% | yes |",
@@ -5408,82 +5347,22 @@
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec prot-tank --profile raid-tank --write --export --lookahead 16",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/run.py paladin --build holy-raid-healer --compare opt-holy-heal-raid-heal /home/user/wow-forever/paladin/research/raid/heallab/candidates/cand-holy-r1.json /home/user/wow-forever/paladin/research/raid/heallab/candidates/cand-holy-r2.json --deltas --runs 60 --write",
      "rc": 0,
-     "seconds": 13,
+     "seconds": 185,
      "tail": [
-      "| Shield Specialization | Protection 3 | 2/3 | +0.56% | yes |",
-      "| Reverence | Holy 3 | 1/3 | +0.40% | no |",
-      "| Instrument of Law | Retribution 6 | 1/2 | +0.33% | yes |",
-      "| Holy Power | Holy 6 | 1/5 | +0.31% | no |",
-      "| Divine Strength | Holy 1 | 1/5 | +0.21% | yes |",
-      "| Improved Hammer of Justice | Protection 4 | 1/3 | +0.20% | yes |",
-      "| Reckoning | Protection 5 | 1/5 | +0.19% | yes |",
-      "| Unyielding Faith | Holy 2 | 1/2 | +0.05% | no |",
-      "",
-      "exported opt-prot-tank-raid-tank -> paladin/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote paladin/research/raid/optimizer/prot-tank-raid-tank.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py paladin --spec ret-dps --profile raid-dps --write --export --lookahead 16",
-     "rc": 0,
-     "seconds": 21,
-     "tail": [
-      "| Voice of Truth | Holy 3 | 1/1 | +0.01% | yes |",
-      "| Sacred Duty | Protection 3 | 1/2 | +0.00% | no |",
-      "| Iron Creed | Protection 6 | 1/5 | +0.00% | no |",
-      "| Holy Shield | Protection 7 | 1/1 | +0.00% | no |",
-      "| Purifying Power | Holy 3 | 1/2 | +0.00% | yes |",
-      "| Light's Vigil | Holy 7 | 1/1 | +0.00% | no |",
-      "| Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |",
-      "| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |",
-      "",
-      "exported opt-ret-dps-raid-dps -> paladin/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote paladin/research/raid/optimizer/ret-dps-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py paladin --spec ret-dps --build leveling-retribution --compare /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-hand-2026-09-26.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r1.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r2.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r3.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r4.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r5.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r6.json /home/user/wow-forever/paladin/research/leveling/fightlab/candidates/cand-ret-r7.json --levels 20,30,40,50,60 --fights 1000",
-     "rc": 0,
-     "seconds": 56,
-     "tail": [
-      "   vs cand-ret-r6: time/kill 28.9s (+0.2%), fight 16.1s, deaths/100 0.0",
-      "   vs cand-ret-r7: time/kill 29.0s (+0.9%), fight 16.2s, deaths/100 0.0",
-      "L60: fight 19.1s (median 18.7, p90 25.7), downtime 5.0s, deaths/100 0.0, time/kill 32.1s, 112 kills/h, mana/kill 330, shares Melee 33%, Judgement 21%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 14%",
-      "   vs cand-ret-hand-2026-09-26: time/kill 32.8s (+2.2%), fight 18.7s, deaths/100 0.0",
-      "   vs cand-ret-r1: time/kill 34.0s (+6.0%), fight 21.2s, deaths/100 0.0",
-      "   vs cand-ret-r2: time/kill 33.9s (+5.7%), fight 21.1s, deaths/100 0.0",
-      "   vs cand-ret-r3: time/kill 33.5s (+4.2%), fight 20.5s, deaths/100 0.0",
-      "   vs cand-ret-r4: time/kill 33.0s (+2.9%), fight 20.3s, deaths/100 0.0",
-      "   vs cand-ret-r5: time/kill 32.5s (+1.2%), fight 19.4s, deaths/100 0.0",
-      "   vs cand-ret-r6: time/kill 32.1s (+0.1%), fight 19.3s, deaths/100 0.0",
-      "   vs cand-ret-r7: time/kill 32.1s (+0.0%), fight 19.2s, deaths/100 0.0",
-      "done in 56s"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/fightlab/run.py paladin --spec ret-dps --build opt-ret-dps-leveling-st --compare leveling-retribution --levels 20,30,40,50,60 --fights 2000 --deltas 30,60 --gear-tiers --write",
-     "rc": 0,
-     "seconds": 116,
-     "tail": [
-      "   Purifying Power          2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.3%",
-      "   Pursuit of Justice       2  sim   +0.0% (fight   +0.0% +-0.0)  EV   +3.8%",
-      "   Repentance               1  sim   +0.0% (fight   +0.0% +-0.0)  EV   +0.5%",
-      "   Reverence                3  sim   +1.2% (fight   +0.1% +-0.4)  EV   +0.7%",
-      "   Sacred Arbiter           1  sim   +2.3% (fight   +2.8% +-0.4)  EV   +2.2%",
-      "   Sanctified Judgement     3  sim   +8.8% (fight   +1.2% +-0.6)  EV   +5.7%",
-      "   Seal of Command          1  sim   +1.5% (fight   +2.6% +-0.5)  EV   +9.3%",
-      "   Two-Handed Weapon Specialization 3  sim   +5.3% (fight   +7.2% +-0.4)  EV   +5.8%",
-      "   Vengeance                3  sim   +2.4% (fight   +3.1% +-0.4)  EV   +1.4%",
-      "   Vindication              3  sim   +1.2% (fight   +1.6% +-0.6)  EV   +1.1%",
-      "done in 115s",
-      "wrote /home/user/wow-forever/paladin/research/leveling/fightlab/ret-dps.md"
+      "    Deflection                     3  lab   +0.0%   EV   +0.0% *",
+      "    Improved Judgement             2  lab   +0.0%   EV   +0.0% *",
+      "    Light's Vigil                  1  lab   +0.0%   EV   +3.3% *",
+      "    Purifying Power                2  lab   +0.0%   EV   +0.3% *",
+      "    Pursuit of Justice             2  lab   +0.0%   EV   +0.0% *",
+      "    Sanctified Judgement           3  lab   +0.0%   EV   +3.2% *",
+      "    Spiritual Focus                2  lab   +0.0%   EV   +0.9% *",
+      "    Unyielding Faith               2  lab   +0.0%   EV   +0.0% *",
+      "    Voice of Truth                 1  lab   +0.0%   EV   +0.0% *",
+      "    Holy Shock                     1  lab   -1.2%   EV   +0.0%",
+      "wrote paladin/research/raid/heallab/holy-heal.md",
+      "done in 185s"
      ],
      "stderr": []
     }
@@ -5733,9 +5612,9 @@
    "spec": "enhancement-dps",
    "hand": "leveling-enhancement",
    "opt": "opt-enhancement-dps-leveling-st",
-   "started": "2026-09-29T22:35:07",
+   "started": "2026-09-30T07:40:32",
    "steps": [
-    "raid",
+    "heal",
     "adopt"
    ],
    "raid": {
@@ -6007,255 +5886,65 @@
      }
     }
    },
-   "seconds": 176,
+   "seconds": 834,
    "log": [
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/calibrate.py shaman --runs 60 --write",
      "rc": 0,
-     "seconds": 0,
+     "seconds": 632,
      "tail": [
-      "shaman elemental-dps: cand-elemental-dps-preset-elemental-31-6-14.json, cand-elemental-dps-preset-stormcaller-28-23-0.json"
+      "Purification                    6.4%      6.0%     6.0%   1.00    kept",
+      "Mana Tide Totem                 5.0%      4.7%     4.7%   1.00    kept",
+      "Tidal Focus                     4.8%      4.6%     4.6%   1.00    kept",
+      "Thundering Strikes              4.6%      4.5%     4.5%   1.00    kept",
+      "Tidal Mastery                   4.1%      3.1%     3.1%   1.00    kept",
+      "Ancestral Knowledge             3.8%      3.1%     3.1%   1.00    kept",
+      "Ancestral Healing               3.7%      2.9%     2.9%   1.00    kept",
+      "Riptide                         3.3%      3.3%     3.3%   1.00    kept",
+      "Restorative Totems              2.9%      2.9%     2.9%   1.00    kept",
+      "Nature's Swiftness              0.4%      0.4%     0.4%   1.00   noise",
+      "Improved Healing Wave           0.3%      0.0%     0.0%   1.00   noise",
+      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (12 entries, 0 fitted) and shaman/research/raid/heallab/resto-heal-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py shaman --spec elemental-dps --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec resto-heal --profile raid-heal --write --export --seed resto-raid-healer",
      "rc": 0,
      "seconds": 23,
      "tail": [
-      "Elemental Reach                 0.0%      0.0%     0.0%   1.00   noise",
-      "Eye of the Storm                0.0%      0.0%     0.0%   1.00   noise",
-      "Natural Grace                   0.0%      0.0%     0.0%   1.00   noise",
-      "Restorative Totems              0.0%      0.0%     0.0%   1.00   noise",
-      "Water Shield                    0.0%      0.0%     0.0%   1.00   noise",
-      "Elemental Devastation           0.0%      0.0%     0.0%   1.00   noise",
-      "Flurry                          0.0%      0.0%     0.0%   1.00   noise",
-      "Mental Dexterity                0.0%      0.0%     0.0%   1.00   noise",
-      "Elemental Warding               0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Ghost Wolf             0.0%      0.0%     0.0%   1.00   noise",
-      "Reverberation                  -0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (15 entries, 0 fitted) and shaman/research/raid/raidsim/elemental-dps-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec elemental-dps --profile raid-dps --write --export --seed elemental-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json",
-     "rc": 0,
-     "seconds": 27,
-     "tail": [
-      "| Natural Grace | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Toughness | Enhancement 4 | 1/5 | +0.00% | no |",
-      "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | yes |",
-      "| Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |",
-      "| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |",
-      "| Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |",
-      "| Earth's Grasp | Enhancement 1 | 1/2 | +0.00% | yes |",
-      "| Elemental Warding | Elemental 2 | 1/3 | +0.00% | yes |",
-      "",
-      "exported opt-elemental-dps-raid-dps -> shaman/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote shaman/research/raid/optimizer/elemental-dps-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds opt-elemental-dps-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 1000 --no-presets",
-     "rc": 0,
-     "seconds": 1,
-     "tail": [
-      "  cand-elemental-dps-r2                       29/22/0  DPS    387.2 ±  21.0  threat      393  oom   0.0s  scorer +69.4%",
-      "  cand-elemental-dps-r3                       29/22/0  DPS    386.1 ±  21.5  threat      391  oom   0.0s  scorer +69.4%",
-      "  cand-elemental-dps-r4                       29/22/0  DPS    386.1 ±  21.5  threat      391  oom   0.0s  scorer +69.4%",
-      "  cand-elemental-dps-r6                      30/11/10  DPS    381.4 ±  19.0  threat      386  oom   0.0s  scorer +69.1%",
-      "  opt-elemental-dps-raid-dps                  31/7/13  DPS    381.0 ±  19.9  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.0 ±  19.9  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-r7                       31/7/13  DPS    380.0 ±  19.9  threat      387  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-preset-elemental-31-6-14  31/6/14  DPS    375.9 ±  18.2  threat      383  oom   0.2s  scorer +68.9%",
-      "  cand-elemental-dps-r5                      16/22/13  DPS    373.6 ±  15.5  threat      389  oom   0.0s  scorer +65.3%",
-      "  cand-elemental-dps-preset-stormcaller-28-23-0    28/23  DPS    369.2 ±  18.6  threat      375  oom   0.7s  scorer +62.5%",
-      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    365.4 ±  18.0  threat      350  oom   0.1s  scorer +64.8%",
-      "  damage shares of opt-elemental-dps-raid-dps: Lightning Bolt 56%, Flame Shock 16%, Lava Burst 16%, Attack 7%, Chain Lightning 5% | model sources: lightning_bolt 72%, flame_shock 21%, chain_lightning 7% (unmatched 23%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r8.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 2,
-     "tail": [
-      "  opt-elemental-dps-raid-dps                  31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-r8                       31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +71.1%",
-      "  sim preset: Elemental 31/6/14                        DPS    376.1 ±  18.6  threat      384  oom   0.2s",
-      "  cand-elemental-dps-r5                      16/22/13  DPS    374.0 ±  15.6  threat      389  oom   0.0s  scorer +65.3%",
-      "  sim preset: Stormcaller 28/23/0                      DPS    369.1 ±  19.2  threat      375  oom   0.7s",
-      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.8%",
-      "  sim preset: Level 60                                 DPS    362.1 ±  17.8  threat      317  oom   0.2s",
-      "  damage shares of elemental-raid-dps: Lightning Bolt 71%, Flame Shock 17%, Attack 6%, Chain Lightning 6% | model sources: lightning_bolt 76%, flame_shock 18%, chain_lightning 6% (unmatched 6%)",
-      "wrote shaman/research/raid/raidsim/elemental-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-elemental-31-6-14.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-preset-stormcaller-28-23-0.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r7.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-r8.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-elemental-dps-spec-elemental.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 3,
-     "tail": [
-      "  cand-elemental-dps-r6                      30/11/10  DPS    381.5 ±  19.5  threat      386  oom   0.0s  scorer +69.1%",
-      "  elemental-raid                              31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-r8                       31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-spec-elemental           31/7/13  DPS    381.1 ±  19.3  threat      388  oom   0.1s  scorer +71.1%",
-      "  cand-elemental-dps-r7                       31/7/13  DPS    380.5 ±  19.4  threat      388  oom   0.1s  scorer +71.1%",
-      "  sim preset: Elemental 31/6/14                        DPS    376.1 ±  18.6  threat      384  oom   0.2s",
-      "  cand-elemental-dps-r5                      16/22/13  DPS    374.0 ±  15.6  threat      389  oom   0.0s  scorer +65.3%",
-      "  sim preset: Stormcaller 28/23/0                      DPS    369.1 ±  19.2  threat      375  oom   0.7s",
-      "  cand-elemental-dps-hand-2026-09-26          31/0/20  DPS    366.9 ±  18.3  threat      352  oom   0.1s  scorer +64.8%",
-      "  sim preset: Level 60                                 DPS    362.1 ±  17.8  threat      317  oom   0.2s",
-      "  damage shares of elemental-raid-dps: Lightning Bolt 71%, Flame Shock 17%, Attack 6%, Chain Lightning 6% | model sources: lightning_bolt 76%, flame_shock 18%, chain_lightning 6% (unmatched 6%)",
-      "wrote shaman/research/raid/raidsim/elemental-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec elemental-dps --profile parse --write --export --seed elemental-raid-dps elemental-raid",
-     "rc": 0,
-     "seconds": 20,
-     "tail": [
-      "| Healing Focus | Restoration 3 | 1/3 | +0.00% | no |",
-      "| Spirit Weapons | Enhancement 5 | 1/1 | +0.00% | yes |",
-      "| Natural Grace | Restoration 2 | 1/3 | +0.00% | no |",
-      "| Improved Stormstrike | Enhancement 5 | 1/2 | +0.00% | no |",
-      "| Maelstrom Weapon | Enhancement 6 | 1/5 | +0.00% | no |",
-      "| Improved Reincarnation | Restoration 2 | 1/2 | +0.00% | no |",
-      "| Elemental Reach | Elemental 5 | 2/2 | +0.00% | yes |",
-      "| Elemental Warding | Elemental 2 | 1/3 | +0.00% | yes |",
-      "",
-      "exported opt-elemental-dps-parse -> shaman/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote shaman/research/raid/optimizer/elemental-dps-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec elemental-dps --env environments --builds elemental-raid-dps opt-elemental-dps-raid-dps elemental-raid opt-elemental-dps-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 18,
-     "tail": [
-      "== shaman elemental-dps environments (gear raid phase_1.gear.json, max phase_2.gear.json):",
-      "  elemental-raid-dps                          29/22/0  dummy   387.4  dummy60   478.1  ladder-mana   389.7  ladder-armor   389.7  ladder-physical   398.4  ladder-spell   444.7  raid   494.6  curve60   402.8  curve120   397.2  curve180   387.4  curve240   379.9  curve360   371.4  max   510.9  max60   527.2",
-      "  opt-elemental-dps-raid-dps                  29/22/0  dummy   387.4  dummy60   478.1  ladder-mana   389.7  ladder-armor   389.7  ladder-physical   398.4  ladder-spell   444.7  raid   494.6  curve60   402.8  curve120   397.2  curve180   387.4  curve240   379.9  curve360   371.4  max   510.9  max60   527.2",
-      "  opt-elemental-dps-parse                     29/22/0  dummy   386.8  dummy60   477.7  ladder-mana   390.1  ladder-armor   390.1  ladder-physical   398.7  ladder-spell   444.5  raid   495.2  curve60   405.6  curve120   397.5  curve180   386.8  curve240   379.4  curve360   371.3  max   510.6  max60   529.4",
-      "  elemental-raid                              31/7/13  dummy   381.1  dummy60   458.7  ladder-mana   391.9  ladder-armor   391.9  ladder-physical   401.1  ladder-spell   443.9  raid   484.9  curve60   409.5  curve120   397.6  curve180   381.1  curve240   374.9  curve360   365.9  max   509.5  max60   531.5",
-      "  sim preset: Elemental 31/6/14                        dummy   376.1  dummy60   452.4  ladder-mana   389.2  ladder-armor   389.2  ladder-physical   399.2  ladder-spell   442.2  raid   479.4  curve60   408.3  curve120   393.4  curve180   376.1  curve240   369.8  curve360   362.5  max   505.3  max60   530.6",
-      "  sim preset: Stormcaller 28/23/0                      dummy   369.1  dummy60   456.0  ladder-mana   382.4  ladder-armor   382.4  ladder-physical   390.5  ladder-spell   435.9  raid   474.9  curve60   395.5  curve120   380.8  curve180   369.1  curve240   358.3  curve360   346.3  max   489.7  max60   518.1",
-      "  sim preset: Level 60                                 dummy   362.1  dummy60   436.0  ladder-mana   373.4  ladder-armor   373.4  ladder-physical   383.2  ladder-spell   424.6  raid   461.2  curve60   389.4  curve120   379.3  curve180   362.1  curve240   356.7  curve360   349.2  max   486.6  max60   509.0",
-      "wrote shaman/research/raid/raidsim/elemental-dps-environments.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec enhancement-dps --preset-candidates",
-     "rc": 0,
-     "seconds": 0,
-     "tail": [
-      "shaman enhancement-dps: cand-enhancement-dps-preset-level-60.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py shaman --spec enhancement-dps --iterations 1500 --write",
-     "rc": 0,
-     "seconds": 28,
-     "tail": [
-      "Elemental Weapons               1.1%      1.0%     1.0%   1.00    kept",
-      "Reverberation                   1.0%      1.2%     1.2%   1.00    kept",
-      "Ancestral Knowledge             0.9%      1.4%     1.4%   1.00    kept",
-      "Concussion                      0.6%      0.3%     0.3%   1.00    kept",
-      "Totemic Focus                   0.3%      0.3%     0.3%   1.00   noise",
-      "Improved Stormstrike            0.0%      0.0%     0.0%   1.00   noise",
-      "Spirit Weapons                  0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Lightning Shield       0.0%      0.0%     0.0%   1.00   noise",
-      "Guardian Totems                 0.0%      0.0%     0.0%   1.00   noise",
-      "Water Shield                    0.0%      0.0%     0.0%   1.00   noise",
-      "Elemental Warding               0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/shaman.manual.json (16 entries, 0 fitted) and shaman/research/raid/raidsim/enhancement-dps-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec enhancement-dps --profile raid-dps --write --export --seed enhancement-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-preset-level-60.json",
-     "rc": 0,
-     "seconds": 16,
-     "tail": [
-      "| Reverberation | Elemental 2 | 1/5 | +0.47% | yes |",
-      "| Lightning Overload | Elemental 5 | 1/3 | +0.32% | no |",
-      "| Call of Thunder | Elemental 4 | 1/1 | +0.29% | no |",
-      "| Nature's Swiftness | Restoration 5 | 1/1 | +0.25% | no |",
-      "| Elemental Alacrity | Elemental 3 | 1/3 | +0.18% | yes |",
-      "| Concussion | Elemental 1 | 1/5 | +0.15% | yes |",
-      "| Eye of the Storm | Elemental 4 | 1/3 | +0.01% | no |",
-      "| Healing Focus | Restoration 3 | 1/3 | +0.01% | no |",
-      "",
-      "exported opt-enhancement-dps-raid-dps -> shaman/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote shaman/research/raid/optimizer/enhancement-dps-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec enhancement-dps --builds enhancement-raid-dps opt-enhancement-dps-raid-dps /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-hand-2026-09-27.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-preset-level-60.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r1.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r2.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r3.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r4.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r5.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r6.json /home/user/wow-forever/shaman/research/raid/raidsim/candidates/cand-enhancement-dps-r7.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 3,
-     "tail": [
-      "  enhancement-raid-dps                        11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.9%",
-      "  cand-enhancement-dps-r6                     11/31/9  DPS    390.9 ±  29.3  threat      401  oom  41.7s  scorer +96.9%",
-      "  cand-enhancement-dps-r5                     11/31/9  DPS    387.2 ±  29.4  threat      397  oom  51.6s  scorer +94.4%",
-      "  cand-enhancement-dps-r4                     8/32/11  DPS    385.9 ±  30.1  threat      280  oom  57.9s  scorer +93.8%",
-      "  cand-enhancement-dps-r3                     15/36/0  DPS    384.4 ±  29.9  threat      279  oom  50.5s  scorer +94.3%",
-      "  cand-enhancement-dps-hand-2026-09-27        9/32/10  DPS    384.4 ±  29.2  threat      279  oom  63.1s  scorer +93.8%",
-      "  sim preset: Level 60                                 DPS    383.8 ±  29.9  threat      279  oom  52.5s",
-      "  cand-enhancement-dps-r2                     18/33/0  DPS    382.1 ±  29.1  threat      277  oom  50.5s  scorer +92.8%",
-      "  cand-enhancement-dps-r1                     14/37/0  DPS    382.0 ±  29.8  threat      277  oom  64.5s  scorer +91.9%",
-      "  sim preset: Enhancement 16/35/0                      DPS    365.3 ±  30.5  threat      266  oom  98.5s",
-      "  damage shares of enhancement-raid-dps: Auto Attack 34%, Windfury Weapon 22%, Stormstrike 13%, Earth Shock 8%, Flame Shock 7%, Lightning Bolt 7%, Attack 5%, Elemental Sharpening Stone 3% | model sources: white 37%, windfury 24%, stormstrike 15%, earth_shock 9%, flame_shock 8%, lightning_bolt 8% (unmatched 10%)",
-      "wrote shaman/research/raid/raidsim/enhancement-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py shaman --spec enhancement-dps --profile parse --write --export --seed enhancement-raid-dps",
-     "rc": 0,
-     "seconds": 12,
-     "tail": [
-      "| Call of Thunder | Elemental 4 | 1/1 | +0.30% | no |",
-      "| Nature's Swiftness | Restoration 5 | 1/1 | +0.26% | no |",
-      "| Elemental Alacrity | Elemental 3 | 1/3 | +0.19% | yes |",
-      "| Mindfulness | Restoration 2 | 1/3 | +0.16% | yes |",
-      "| Concussion | Elemental 1 | 1/5 | +0.16% | yes |",
-      "| Restorative Totems | Restoration 4 | 1/5 | +0.12% | no |",
+      "| Reverberation | Elemental 2 | 1/5 | +0.00% | no |",
+      "| Call of Flame | Elemental 2 | 1/3 | +0.00% | no |",
+      "| Elemental Devastation | Elemental 2 | 1/3 | +0.00% | no |",
+      "| Elemental Alacrity | Elemental 3 | 1/3 | +0.00% | no |",
+      "| Improved Fire Nova | Elemental 4 | 1/2 | +0.00% | no |",
       "| Eye of the Storm | Elemental 4 | 1/3 | +0.00% | no |",
-      "| Healing Focus | Restoration 3 | 1/3 | +0.00% | yes |",
+      "| Call of Thunder | Elemental 4 | 1/1 | +0.00% | no |",
+      "| Elemental Reach | Elemental 5 | 1/2 | +0.00% | no |",
       "",
-      "exported opt-enhancement-dps-parse -> shaman/research/talents/forever/proposed-builds.json",
+      "exported opt-resto-heal-raid-heal -> shaman/research/talents/forever/proposed-builds.json",
       "",
-      "wrote shaman/research/raid/optimizer/enhancement-dps-parse.md"
+      "wrote shaman/research/raid/optimizer/resto-heal-raid-heal.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py shaman --spec enhancement-dps --env environments --builds enhancement-raid-dps opt-enhancement-dps-raid-dps opt-enhancement-dps-parse --iterations 3000 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/run.py shaman --build resto-raid-healer --compare opt-resto-heal-raid-heal /home/user/wow-forever/shaman/research/raid/heallab/candidates/cand-resto-heal-hand-2026-09-26.json /home/user/wow-forever/shaman/research/raid/heallab/candidates/cand-resto-r1.json /home/user/wow-forever/shaman/research/raid/heallab/candidates/cand-resto-r2.json --deltas --runs 60 --write",
      "rc": 0,
-     "seconds": 23,
+     "seconds": 180,
      "tail": [
-      "== shaman enhancement-dps environments (gear raid phase_1.gear.json, max phase_2.gear.json):",
-      "  opt-enhancement-dps-raid-dps                11/31/9  dummy   394.3  dummy60   443.7  ladder-mana   412.5  ladder-armor   557.9  ladder-physical   629.6  ladder-spell   653.3  raid   757.4  curve60   438.7  curve120   415.1  curve180   394.3  curve240   392.8  curve360   376.7  max   755.2  max60   811.5",
-      "  enhancement-raid-dps                        11/31/9  dummy   390.9  dummy60   439.6  ladder-mana   409.1  ladder-armor   556.2  ladder-physical   628.6  ladder-spell   651.7  raid   751.2  curve60   434.5  curve120   411.3  curve180   390.9  curve240   389.5  curve360   373.5  max   748.9  max60   805.9",
-      "  opt-enhancement-dps-parse                  10/31/10  dummy   389.8  dummy60   437.9  ladder-mana   413.7  ladder-armor   559.0  ladder-physical   631.3  ladder-spell   655.2  raid   757.6  curve60   441.6  curve120   411.6  curve180   389.8  curve240   385.6  curve360   370.5  max   756.6  max60   818.4",
-      "  sim preset: Level 60                                 dummy   383.8  dummy60   442.9  ladder-mana   414.5  ladder-armor   557.1  ladder-physical   625.3  ladder-spell   649.2  raid   748.5  curve60   438.2  curve120   399.9  curve180   383.8  curve240   374.8  curve360   358.9  max   753.2  max60   803.9",
-      "  sim preset: Enhancement 16/35/0                      dummy   365.3  dummy60   422.6  ladder-mana   411.5  ladder-armor   556.6  ladder-physical   628.1  ladder-spell   653.1  raid   726.2  curve60   429.0  curve120   372.6  curve180   365.3  curve240   356.5  curve360   343.5  max   732.6  max60   814.4",
-      "wrote shaman/research/raid/raidsim/enhancement-dps-environments.md"
+      "    Tidal Focus                    5  lab   +5.0%   EV   +4.6%",
+      "    Thundering Strikes             5  lab   +4.6%   EV   +4.5%",
+      "    Tidal Mastery                  5  lab   +4.6%   EV   +3.0%",
+      "    Ancestral Healing              3  lab   +3.9%   EV   +2.9%",
+      "    Ancestral Knowledge            5  lab   +3.9%   EV   +3.1%",
+      "    Riptide                        1  lab   +3.2%   EV   +3.3%",
+      "    Restorative Totems             5  lab   +3.0%   EV   +2.9%",
+      "    Nature's Swiftness             1  lab   +0.4%   EV   +0.4%",
+      "    Healing Focus                  3  lab   +0.0%   EV   +0.7% *",
+      "    Totemic Focus                  5  lab   +0.0%   EV   +0.4% *",
+      "wrote shaman/research/raid/heallab/resto-heal.md",
+      "done in 179s"
      ],
      "stderr": []
     }
@@ -6518,9 +6207,9 @@
    "spec": "feral-cat-dps",
    "hand": "leveling-feral",
    "opt": "opt-feral-cat-dps-leveling-st",
-   "started": "2026-09-29T22:38:03",
+   "started": "2026-09-30T07:54:26",
    "steps": [
-    "raid",
+    "heal",
     "adopt"
    ],
    "raid": {
@@ -6786,301 +6475,65 @@
      "environments": null
     }
    },
-   "seconds": 263,
+   "seconds": 868,
    "log": [
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --preset-candidates",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/calibrate.py druid --runs 60 --write",
      "rc": 0,
-     "seconds": 0,
+     "seconds": 653,
      "tail": [
-      "druid balance-dps: no preset within 6% of the best build"
+      "Heart of the Wild               4.6%      3.3%     4.6%   1.49  fitted",
+      "Improved Rejuvenation           2.1%      2.0%     1.9%   1.00    kept",
+      "Nature's Swiftness              1.4%      1.1%     1.0%   1.00    kept",
+      "Naturalist                      1.2%      0.4%     0.4%   1.00    kept",
+      "Nature's Splendor               1.1%      0.9%     0.9%   1.00    kept",
+      "Nature's Majesty                1.0%      1.5%     1.5%   1.00    kept",
+      "Genesis                         0.8%      1.3%     1.3%   1.00    kept",
+      "Gift of the Earthmother         0.8%      0.7%     0.6%   1.00    kept",
+      "Swiftmend                       0.6%      0.4%     0.4%   1.00    kept",
+      "Improved Regrowth               0.5%      0.7%     0.7%   1.00    kept",
+      "Wild Growth                     0.0%      0.8%     0.7%   0.00  fitted",
+      "wrote _reference/data/scorer/effects/forever/druid.manual.json (16 entries, 5 fitted) and druid/research/raid/heallab/resto-heal-calibration.json"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec balance-dps --iterations 1500 --write",
+     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec resto-heal --profile raid-heal --write --export --seed resto-raid-healer",
      "rc": 0,
-     "seconds": 11,
+     "seconds": 41,
      "tail": [
-      "Genesis                         1.6%      1.6%     1.6%   1.00    kept",
-      "Nature's Grace                  0.6%      1.0%     1.0%   1.00    kept",
-      "Nature's Focus                  0.0%      0.0%     0.0%   1.00   noise",
-      "Eclipse                         0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Entangling Roots       0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Wrath                  0.0%      0.2%     0.2%   1.00   noise",
-      "Overgrowth                      0.0%      0.0%     0.0%   1.00   noise",
-      "Subtlety                        0.0%      0.0%     0.0%   1.00   noise",
-      "Swiftmend                       0.0%      0.0%     0.0%   1.00   noise",
-      "Furor                           0.0%      0.0%     0.0%   1.00   noise",
-      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/druid.manual.json (15 entries, 0 fitted) and druid/research/raid/raidsim/balance-dps-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec balance-dps --profile raid-dps --write --export --seed balance-moonkin-raid",
-     "rc": 0,
-     "seconds": 24,
-     "tail": [
-      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Tranquil Spirit | Restoration 4 | 1/5 | +0.00% | no |",
-      "| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | no |",
-      "| Overgrowth | Balance 5 | 1/2 | +0.00% | yes |",
-      "| Eclipse | Balance 5 | 1/3 | +0.00% | yes |",
-      "| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |",
-      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-balance-dps-raid-dps -> druid/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote druid/research/raid/optimizer/balance-dps-raid-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --builds balance-moonkin-raid opt-balance-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r5.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r6.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-balance-dps-r7.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 2,
-     "tail": [
-      "  cand-balance-dps-r5                         33/5/13  DPS    438.4 ±  27.4  threat      448  oom   4.4s  scorer +128.1%",
-      "  cand-balance-dps-r1                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.7%",
-      "  cand-balance-dps-r3                         33/2/16  DPS    432.9 ±  27.6  threat      356  oom   5.6s  scorer +124.7%",
-      "  cand-balance-dps-r2                         33/2/16  DPS    426.3 ±  27.5  threat      351  oom   5.6s  scorer +122.0%",
-      "  cand-balance-dps-r7                         34/6/11  DPS    414.1 ±  28.1  threat      424  oom  13.9s  scorer +115.2%",
-      "  cand-balance-dps-r4                         33/5/13  DPS    410.5 ±  24.9  threat      421  oom   9.3s  scorer +111.5%",
-      "  sim preset: Balance                                  DPS    400.2 ±  25.2  threat      290  oom   2.2s",
-      "  cand-balance-dps-hand-2026-09-26             46/0/5  DPS    370.9 ±  26.6  threat      381  oom  23.4s  scorer +93.8%",
-      "  cand-balance-dps-r6                         35/5/11  DPS    357.4 ±  28.0  threat      367  oom  33.7s  scorer +78.3%",
-      "  sim preset: Moonkin 38/0/13                          DPS    353.1 ±  27.6  threat      363  oom  31.3s",
-      "  damage shares of balance-moonkin-raid: Starfire 63%, Moonfire 19%, Insect Swarm 18% | model sources: starfire 63%, moonfire_direct 19%, insect_swarm 18% (unmatched 0%)",
-      "wrote druid/research/raid/raidsim/balance-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec balance-dps --profile parse --write --export --seed balance-moonkin-raid",
-     "rc": 0,
-     "seconds": 21,
-     "tail": [
-      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Tranquil Spirit | Restoration 4 | 1/5 | +0.00% | no |",
-      "| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |",
-      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | no |",
-      "| Overgrowth | Balance 5 | 1/2 | +0.00% | yes |",
-      "| Eclipse | Balance 5 | 1/3 | +0.00% | yes |",
-      "| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |",
-      "| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |",
-      "",
-      "exported opt-balance-dps-parse -> druid/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote druid/research/raid/optimizer/balance-dps-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec balance-dps --env environments --builds balance-moonkin-raid opt-balance-dps-raid-dps opt-balance-dps-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 10,
-     "tail": [
-      "== druid balance-dps environments (gear raid p1.bis.gear.json, max p2.bis.gear.json):",
-      "  balance-moonkin-raid                        33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
-      "  opt-balance-dps-raid-dps                    33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
-      "  opt-balance-dps-parse                       33/5/13  dummy   438.4  dummy60   518.1  ladder-mana   458.4  ladder-armor   458.4  ladder-physical   436.3  ladder-spell   483.3  raid   511.0  curve60   458.1  curve120   461.4  curve180   438.4  curve240   382.6  curve360   342.2  max   510.6  max60   504.0",
-      "  sim preset: Balance                                  dummy   400.2  dummy60   469.0  ladder-mana   409.0  ladder-armor   409.0  ladder-physical   390.2  ladder-spell   431.5  raid   456.8  curve60   406.2  curve120   411.1  curve180   400.2  curve240   353.2  curve360   313.1  max   455.9  max60   450.1",
-      "  sim preset: Moonkin 38/0/13                          dummy   353.1  dummy60   420.7  ladder-mana   446.2  ladder-armor   446.2  ladder-physical   424.9  ladder-spell   473.9  raid   505.6  curve60   450.2  curve120   402.2  curve180   353.1  curve240   304.8  curve360   273.4  max   502.3  max60   502.0",
-      "wrote druid/research/raid/raidsim/balance-dps-environments.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --preset-candidates",
-     "rc": 0,
-     "seconds": 0,
-     "tail": [
-      "druid feral-cat-dps: cand-feral-cat-dps-preset-feral.json, cand-feral-cat-dps-preset-feral-cat-9-35-7.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec feral-cat-dps --iterations 1500 --write",
-     "rc": 0,
-     "seconds": 22,
-     "tail": [
-      "Heart of the Wild               1.7%      1.4%     1.4%   1.00    kept",
-      "Furor                           0.5%      0.5%     0.5%   1.00    kept",
-      "Feral Charge                    0.0%      0.0%     0.0%   1.00   noise",
-      "Ferocity                        0.0%      0.0%     0.0%   1.00   noise",
-      "Thick Hide                      0.0%      0.0%     0.0%   1.00   noise",
-      "Feral Swiftness                 0.0%      0.0%     0.0%   1.00   noise",
-      "Feral Instinct                  0.0%      0.0%     0.0%   1.00   noise",
-      "Natural Shapeshifter            0.0%      0.0%     0.0%   1.00   noise",
-      "Primal Bite                     0.0%      0.0%     0.0%   1.00   noise",
-      "Moonglow                        0.0%      0.0%     0.0%   1.00   noise",
-      "Nature's Splendor               0.0%      0.0%     0.0%   1.00   noise",
-      "wrote _reference/data/scorer/effects/forever/druid.manual.json (16 entries, 0 fitted) and druid/research/raid/raidsim/feral-cat-dps-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-cat-dps --profile raid-dps --write --export --seed feral-cat-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json",
-     "rc": 0,
-     "seconds": 53,
-     "tail": [
-      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
-      "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
-      "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
-      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | yes |",
       "| Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |",
-      "| Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |",
-      "| Insect Swarm | Balance 4 | 1/1 | +0.00% | no |",
+      "| Nature's Reach | Balance 2 | 1/2 | +0.00% | yes |",
+      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |",
+      "| Vengeance | Balance 4 | 1/5 | +0.00% | no |",
+      "| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |",
+      "| Overgrowth | Balance 5 | 1/2 | +0.00% | no |",
+      "| Eclipse | Balance 5 | 1/3 | +0.00% | no |",
+      "| Moonfury | Balance 6 | 1/5 | +0.00% | no |",
       "",
-      "exported opt-feral-cat-dps-raid-dps -> druid/research/talents/forever/proposed-builds.json",
+      "exported opt-resto-heal-raid-heal -> druid/research/talents/forever/proposed-builds.json",
       "",
-      "wrote druid/research/raid/optimizer/feral-cat-dps-raid-dps.md"
+      "wrote druid/research/raid/optimizer/resto-heal-raid-heal.md"
      ],
      "stderr": []
     },
     {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --builds opt-feral-cat-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json --iterations 1000 --no-presets",
+     "cmd": "/home/user/wow-forever/_reference/data/heallab/run.py druid --build resto-raid-healer --compare opt-resto-heal-raid-heal /home/user/wow-forever/druid/research/raid/heallab/candidates/cand-resto-heal-hand-2026-09-28.json /home/user/wow-forever/druid/research/raid/heallab/candidates/cand-resto-r1.json /home/user/wow-forever/druid/research/raid/heallab/candidates/cand-resto-r2.json --deltas --runs 60 --write",
      "rc": 0,
-     "seconds": 1,
+     "seconds": 174,
      "tail": [
-      "== druid feral-cat-dps: 9 builds x 1000 iterations, druid/feralcat launch.gear.json + default.apl.json",
-      "  opt-feral-cat-dps-raid-dps                   9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
-      "  cand-feral-cat-dps-preset-feral-cat-9-35-7   9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
-      "  cand-feral-cat-dps-r5                        9/35/7  DPS    349.7 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
-      "  cand-feral-cat-dps-r4                       9/32/10  DPS    348.5 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
-      "  cand-feral-cat-dps-r3                       13/35/3  DPS    342.4 ±  12.8  threat      250  oom   0.0s  scorer +103.7%",
-      "  cand-feral-cat-dps-preset-feral               38/13  DPS    333.9 ±  12.9  threat      244  oom   0.0s  scorer +99.2%",
-      "  cand-feral-cat-dps-hand-2026-09-26          9/32/10  DPS    326.7 ±  13.4  threat      239  oom   0.0s  scorer +93.9%",
-      "  cand-feral-cat-dps-r2                       9/32/10  DPS    302.6 ±  14.4  threat      222  oom   0.0s  scorer +77.7%",
-      "  cand-feral-cat-dps-r1                       9/31/11  DPS    294.2 ±  13.9  threat      216  oom   0.0s  scorer +72.6%",
-      "  damage shares of opt-feral-cat-dps-raid-dps: Rip 37%, Shred 31%, Auto Attack 29%, item 10646 2%, Dragonbreath Chili 1% | model sources: rip 38%, shred 32%, white 30% (unmatched 3%)"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --builds feral-cat-dps opt-feral-cat-dps-raid-dps /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r6.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 3,
-     "tail": [
-      "  cand-feral-cat-dps-r5                        9/35/7  DPS    350.2 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
-      "  cand-feral-cat-dps-r6                        9/35/7  DPS    350.2 ±  12.6  threat      255  oom   0.0s  scorer +108.2%",
-      "  sim preset: Feral Cat 9/35/7                         DPS    350.2 ±  12.6  threat      255  oom   0.0s",
-      "  feral-cat-dps                               9/32/10  DPS    349.0 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
-      "  cand-feral-cat-dps-r4                       9/32/10  DPS    349.0 ±  12.3  threat      254  oom   0.0s  scorer +107.9%",
-      "  cand-feral-cat-dps-r3                       13/35/3  DPS    342.5 ±  12.7  threat      250  oom   0.0s  scorer +103.7%",
-      "  sim preset: Feral                                    DPS    334.6 ±  13.1  threat      244  oom   0.0s",
-      "  cand-feral-cat-dps-hand-2026-09-26          9/32/10  DPS    326.7 ±  13.5  threat      239  oom   0.0s  scorer +93.9%",
-      "  cand-feral-cat-dps-r2                       9/32/10  DPS    303.4 ±  14.5  threat      222  oom   0.0s  scorer +77.7%",
-      "  cand-feral-cat-dps-r1                       9/31/11  DPS    295.0 ±  14.0  threat      216  oom   0.0s  scorer +72.6%",
-      "  damage shares of feral-cat-dps: Rip 36%, Shred 31%, Auto Attack 30%, item 10646 2%, Dragonbreath Chili 1% | model sources: rip 37%, shred 32%, white 31% (unmatched 3%)",
-      "wrote druid/research/raid/raidsim/feral-cat-dps.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-cat-dps --profile parse --write --export --seed feral-cat-dps",
-     "rc": 0,
-     "seconds": 31,
-     "tail": [
-      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
-      "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
-      "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
-      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Natural Reaction | Feral Combat 6 | 1/5 | +0.00% | yes |",
-      "| Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |",
-      "| Nature's Splendor | Balance 3 | 1/1 | +0.00% | no |",
-      "| Insect Swarm | Balance 4 | 1/1 | +0.00% | no |",
-      "",
-      "exported opt-feral-cat-dps-parse -> druid/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote druid/research/raid/optimizer/feral-cat-dps-parse.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-cat-dps --env environments --builds feral-cat-dps opt-feral-cat-dps-raid-dps opt-feral-cat-dps-parse --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 21,
-     "tail": [
-      "== druid feral-cat-dps environments (gear raid launch.gear.json, max p2.bis.gear.json):",
-      "  opt-feral-cat-dps-raid-dps                   9/35/7  dummy   350.2  dummy60   382.1  ladder-mana   350.2  ladder-armor   448.3  ladder-physical   531.8  ladder-spell   532.4  raid   556.3  curve60   373.7  curve120   356.4  curve180   350.2  curve240   351.1  curve360   348.5  max   608.0  max60   693.9",
-      "  opt-feral-cat-dps-parse                      9/35/7  dummy   350.2  dummy60   382.1  ladder-mana   350.2  ladder-armor   448.3  ladder-physical   531.8  ladder-spell   532.4  raid   556.3  curve60   373.7  curve120   356.4  curve180   350.2  curve240   351.1  curve360   348.5  max   608.0  max60   693.9",
-      "  sim preset: Feral Cat 9/35/7                         dummy   350.2  dummy60   382.1  ladder-mana   350.2  ladder-armor   448.3  ladder-physical   531.8  ladder-spell   532.4  raid   556.3  curve60   373.7  curve120   356.4  curve180   350.2  curve240   351.1  curve360   348.5  max   608.0  max60   693.9",
-      "  feral-cat-dps                               9/32/10  dummy   349.0  dummy60   381.1  ladder-mana   349.0  ladder-armor   447.5  ladder-physical   530.9  ladder-spell   531.6  raid   555.3  curve60   372.8  curve120   355.2  curve180   349.0  curve240   349.6  curve360   347.1  max   605.5  max60   692.6",
-      "  sim preset: Feral                                    dummy   334.6  dummy60   372.1  ladder-mana   334.8  ladder-armor   430.0  ladder-physical   509.6  ladder-spell   510.2  raid   532.9  curve60   358.3  curve120   340.8  curve180   334.6  curve240   335.7  curve360   332.9  max   609.3  max60   683.9",
-      "wrote druid/research/raid/raidsim/feral-cat-dps-environments.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-bear-tank --preset-candidates",
-     "rc": 0,
-     "seconds": 0,
-     "tail": [
-      "druid feral-bear-tank: no preset within 6% of the best build"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/calibrate.py druid --spec feral-bear-tank --iterations 1500 --write",
-     "rc": 0,
-     "seconds": 34,
-     "tail": [
-      "Furor                           0.0%      0.0%     0.0%   1.00   noise",
-      "Nature's Focus                  0.0%      0.0%     0.0%   1.00   noise",
-      "Feral Instinct                  0.0%      0.0%     0.0%   1.00   noise",
-      "Leader of the Pack              0.0%      0.0%     0.0%   1.00   noise",
-      "Improved Wrath                  0.0%      0.0%     0.0%   1.00   noise",
-      "Moonglow                        0.0%      0.0%     0.0%   1.00   noise",
-      "Nature's Splendor               0.0%      0.0%     0.0%   1.00   noise",
-      "Natural Shapeshifter            0.0%      0.0%     0.0%   1.00   noise",
-      "Reflection                      0.0%      0.0%     0.0%   1.00   noise",
-      "Swiftmend                       0.0%      0.0%     0.0%   1.00   noise",
-      "Heart of the Wild              -0.6%      0.0%     0.0%   1.00    kept",
-      "wrote _reference/data/scorer/effects/forever/druid.manual.json (14 entries, 1 fitted) and druid/research/raid/raidsim/feral-bear-tank-calibration.json"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/scorer/run.py druid --spec feral-bear-tank --profile raid-tank --write --export --seed feral-bear-tank",
-     "rc": 0,
-     "seconds": 26,
-     "tail": [
-      "| Heart of the Wild | Feral Combat 1 | 1/5 | +0.00% | yes |",
-      "| Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | no |",
-      "| Subtlety | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Improved Tranquility | Restoration 5 | 1/2 | +0.00% | no |",
-      "| Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |",
-      "| Moonglow | Balance 2 | 1/3 | +0.00% | yes |",
-      "| Natural Shapeshifter | Restoration 2 | 1/3 | +0.00% | yes |",
-      "| Reflection | Restoration 3 | 1/3 | +0.00% | no |",
-      "",
-      "exported opt-feral-bear-tank-raid-tank -> druid/research/talents/forever/proposed-builds.json",
-      "",
-      "wrote druid/research/raid/optimizer/feral-bear-tank-raid-tank.md"
-     ],
-     "stderr": []
-    },
-    {
-     "cmd": "/home/user/wow-forever/_reference/data/raidsim/run.py druid --spec feral-bear-tank --builds feral-bear-tank opt-feral-bear-tank-raid-tank /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-hand-2026-09-26.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-hand-2026-09-27.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r1.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r2.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r3.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r4.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r5.json /home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r6.json --iterations 3000 --write",
-     "rc": 0,
-     "seconds": 4,
-     "tail": [
-      "  opt-feral-bear-tank-raid-tank                7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
-      "  cand-feral-bear-tank-r4                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
-      "  cand-feral-bear-tank-r5                      7/35/9  DPS    383.4 ±  17.2  threat      802  oom   0.0s  dtps   990.0  tank-value  1.000  scorer +53.8%",
-      "  cand-feral-bear-tank-r6                      7/36/8  DPS    423.8 ±  20.2  threat      781  oom   0.0s  dtps   989.5  tank-value  0.987  scorer +53.7%",
-      "  cand-feral-bear-tank-hand-2026-09-27        13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.4%",
-      "  cand-feral-bear-tank-r1                     13/38/0  DPS    389.2 ±  19.0  threat      684  oom   0.0s  dtps   988.1  tank-value  0.927  scorer +42.4%",
-      "  cand-feral-bear-tank-r2                     0/36/15  DPS    388.8 ±  18.4  threat      679  oom   0.0s  dtps   989.6  tank-value  0.923  scorer +42.3%",
-      "  cand-feral-bear-tank-r3                     0/35/16  DPS    384.6 ±  18.1  threat      679  oom   0.0s  dtps   989.7  tank-value  0.923  scorer +42.3%",
-      "  sim preset: Bear Tank 0/31/20                        DPS    361.8 ±  17.1  threat      614  oom   0.0s  dtps  1040.4  tank-value  0.859",
-      "  cand-feral-bear-tank-hand-2026-09-26        9/32/10  DPS    372.5 ±  17.9  threat      630  oom   0.0s  dtps  1063.9  tank-value  0.858  scorer +32.7%",
-      "  damage shares of feral-bear-tank: Lacerate 76%, Auto Attack 16%, Maul 4%, OtherActionRageGain 2%, Retribution Aura 1%, Thorns 1%, Dragonbreath Chili 0% | model sources: lacerate 79%, white 17%, maul 4%, thorns 1% (unmatched 3%)",
-      "wrote druid/research/raid/raidsim/feral-bear-tank.md"
+      "    Nature's Swiftness             1  lab   +1.5%   EV   +1.0%",
+      "    Naturalist                     5  lab   +1.2%   EV   +0.4%",
+      "    Nature's Majesty               2  lab   +1.2%   EV   +1.5%",
+      "    Nature's Splendor              1  lab   +0.4%   EV   +0.9%",
+      "    Genesis                        5  lab   +0.3%   EV   +1.3%",
+      "    Gift of the Earthmother        1  lab   +0.3%   EV   +0.6%",
+      "    Swiftmend                      1  lab   +0.3%   EV   +0.4%",
+      "    Improved Regrowth              2  lab   +0.1%   EV   +0.4%",
+      "    Nature's Focus                 5  lab   +0.0%   EV   +0.7% *",
+      "    Wild Growth                    1  lab   +0.0%   EV   +0.7%",
+      "wrote druid/research/raid/heallab/resto-heal.md",
+      "done in 174s"
      ],
      "stderr": []
     }
@@ -7312,29 +6765,23 @@
      }
     ],
     "capacity": {
-     "resto-raid-healer": 0.727,
-     "opt-resto-heal-raid-heal": 0.749,
+     "resto-raid-healer": 0.75,
+     "opt-resto-heal-raid-heal": 0.75,
+     "cand-resto-heal-hand-2026-09-28": 0.727,
      "cand-resto-r1": 0.749,
      "cand-resto-r2": 0.75
-    },
-    "adopted": {
-     "hand": "resto-raid-healer",
-     "winner": "cand-resto-r2",
-     "gain": 0.0316
     }
    }
   }
  },
  "last_run": {
-  "date": "2026-09-30T08:00:48",
+  "date": "2026-09-30T08:15:50",
   "classes": [
-   "warlock",
    "paladin"
   ],
   "steps": [
-   "calibrate",
-   "race",
-   "report"
+   "heal",
+   "adopt"
   ],
   "fights": {
    "calibrate": 1500,
@@ -7342,7 +6789,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 7881,
+  "seconds": 468,
   "refresh": null,
   "regen_log": []
  }
