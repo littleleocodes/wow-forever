@@ -794,12 +794,12 @@
       },
       "rotation_only": true,
       "preset_names": ["Arms 39/12/0"],
-      "builds": ["arms-battle-raid"],
+      "builds": ["arms-battle-raid", "arms-community-parse"],
       "rotation_note": "Arms in Battle Stance (2026-09-29, the overnight audit): the warrior rotations never left Berserker Stance, so Overpower and Rend (Battle Stance abilities; Forever's Bloodthrill makes Rend open Overpower) were never cast. Our base: the arms-2h-raid rotation with Battle Stance instead of Berserker Stance, Overpower and Rend (only when not ticking) after Mortal Strike, Slam before the shout. With the simulator's Arms 39/12/0 preset: 167 -> 198 dummy DPS, 377 -> 454 raid."
     }
   },
   "paladin": {
-    "ret-dps": {
+    "ret-dps": {"numbers_note": "Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.", 
       "apl_opt_raid": "_reference/data/raidsim/apls/paladin/ret-dps-raid.apl.json",
       "apl_opt": "_reference/data/raidsim/apls/paladin/ret-dps.apl.json",
       "sim_class": "ClassPaladin",

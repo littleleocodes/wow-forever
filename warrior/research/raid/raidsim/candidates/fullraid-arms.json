@@ -1,0 +1,93 @@
+{
+ "id": "fullraid-arms",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    2
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Boundless Rage",
+    3
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for arms-battle-raid from /home/user/wow-forever/warrior/research/raid/raidsim/candidates/tf-popular-2-warrior.json in the raid setting: 703.6 -> 703.6 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/tf-popular-2-warrior.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 703.6385267855143,
+  "dps_end": 703.6385267855143,
+  "gain": 0.0,
+  "tank": false
+ }
+}

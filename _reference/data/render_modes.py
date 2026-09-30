@@ -301,9 +301,12 @@ def mode_section(cls, spec, mode, builds, nums, src):
             numbers += ["## The numbers", "", f"Tank value {r['value']:.3f} (threat and damage taken under a boss, relative to our reference tank build).", ""]
         elif r:
             numbers += ["## The numbers", "", "| Setting | DPS |", "|---|---|", f"| Training dummy, 3-minute fight (only your own buffs) | {r['dps']:.0f} |"]
+            nn = (json.load(open(HERE / "raidsim" / "specs.json", encoding="utf-8")).get(cls, {}).get(r["entry"]) or {}).get("numbers_note")
             if r.get("raid"):
                 numbers.append(f"| Parse (a full raid: every raid buff and debuff) | {r['raid']:.0f} |")
             numbers.append("")
+            if nn:
+                numbers += [f"> Note: {nn}", ""]
             lad, cur = env_info(cls, r["entry"], top["id"])
             if lad:
                 numbers += ["**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):", "",
@@ -336,7 +339,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
                     play += ["- Use your trinkets, your racial and a potion together with your big cooldowns.", ""]
                 play += [f"*The simulator's full rotation for this build, with every condition: [research rotation page]"
                          f"({paths.rel(src, paths.rotation_page(cls, 'raid'))}).*", ""]
-        parse = next((b for b in ranked if b["id"].endswith("-parse")), None)
+        # the parse build with the most full-raid DPS (several can exist: the optimizer's, a community build that beat ours)
+        parse = max((b for b in ranked if b["id"].endswith("-parse")), key=lambda b: (R.get(b["id"]) or {}).get("raid") or 0, default=None)
         if parse:
             numbers += [f"**Parse build** (personal damage in a full raid, where the raid brings the buffs): {link(cls, parse, src)} "
                         f"({rs.split_of(cls, rs.flat(parse))}) — {tree_link(cls, parse)}.", ""]

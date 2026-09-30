@@ -95,6 +95,13 @@ Each class folder now opens with player pages and keeps the research below:
   kill vs 38.5 s and 33 s for the next-best orders); healers differ by only 0-4% between orders. Level-weighted seconds per kill: Holy
   priest 45, Discipline 44.5, Holy paladin 35.5, Resto shaman 43, Resto druid 33, Protection paladin 31, Protection warrior 31.
 
+- **Checks after the popular refresh** (2026-09-30): Retribution's #1 full-raid spot is not a bug (caster-geared Ret gains both the
+  physical and the spell raid buffs, and Forever's Curse of the Elements covers Holy: beta tooltip "Magic damage taken"); its page
+  carries a note (specs.json `numbers_note`) that the set leans on Forever launch items. Full-raid talent searches from the popular
+  builds that beat ours: the community's #2 Arms build (37/14/0) does +13.9% in a full raid and ties on the dummy, now Arms's parse
+  build `arms-community-parse`; Marksmanship and Enhancement: no gain (the searches ended on our builds). Open: why our
+  dummy-picked Arms loses 14% in a full raid (raid-mode fit of the talents that pay off on a buffed, debuffed target).
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

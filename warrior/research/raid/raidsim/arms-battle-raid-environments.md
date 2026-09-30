@@ -5,6 +5,7 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `arms-battle-raid` | 34/17/0 | 378 | 425 | 729 | 729 | 747 |
+| `arms-community-parse` | 37/14/0 | 375 | 429 | 786 | 786 | 784 |
 | sim preset: Arms 39/12/0 | - | 369 | 421 | 774 | 774 | 770 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
@@ -20,6 +21,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `arms-battle-raid` | 378 | -0% | +12% | +44% | +0% | +37% | 729 |
+| `arms-community-parse` | 375 | +0% | +25% | +53% | +0% | +31% | 786 |
 | sim preset: Arms 39/12/0 | 369 | -0% | +26% | +54% | +0% | +30% | 774 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
@@ -31,6 +33,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `arms-battle-raid` | 346 | 356 | 361 | 364 | 365 |
+| `arms-community-parse` | 351 | 361 | 365 | 368 | 369 |
 | sim preset: Arms 39/12/0 | 344 | 355 | 360 | 361 | 364 |
 
 Gear presets: raid `warrior-dps-p1_arms.p1opt.gear.json`, maximum `warrior-dps-p1_arms.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.

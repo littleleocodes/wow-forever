@@ -63,7 +63,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (22/29/0) | 401 | 439 | 744 | 759 | 785 | `opt-mm-raid-parse` 759 | Marksmanship 774 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
 | warrior | Forever | `arms-2h-raid` | `arms-2h-raid` (19/32/0) | 311 | 342 | 662 | 662 | 752 | `opt-arms-2h-raid-parse` 661 | DPS 630 |
-| warrior | Forever | `arms-battle-raid` | `arms-battle-raid` (34/17/0) | 378 | 425 | 729 | 729 | 747 | - | Arms 39/12/0 774 |
+| warrior | Forever | `arms-battle-raid` | `arms-community-parse` (37/14/0) | 375 | 429 | 786 | 786 | 784 | `arms-community-parse` 786 | Arms 39/12/0 774 |
 | warrior | Forever | `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` (13/38/0) | 380 | 400 | 685 | 685 | 762 | `opt-fury-dw-raid-parse` 685 | DPS 661 |
 | warrior | Forever | `prot-tank` | `prot-raid-tank` (14/5/32) | 232 | 260 | 427 | 323 | 319 | - | Protection 303 |
 | warrior | Classic | `fury-dw-raid` | `fury-dw-raid` (17/34/0) | 527 | - | 1843 | 2163 | 2322 | - | DPS 2163 |
