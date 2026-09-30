@@ -127,14 +127,15 @@
    },
    "gain": 0.0,
    "incumbent": "subtlety-leveling",
-   "verdict": "generated stays",
+   "verdict": "new",
    "levels": {
     "20": 19.20283333322665,
     "30": 23.275466666576904,
     "40": 27.248900000052945,
     "50": 28.097066666750763,
     "60": 28.7315656673099
-   }
+   },
+   "keep_incumbent": true
   }
  }
 }
