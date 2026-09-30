@@ -74,7 +74,10 @@ def derive(cls, tree, role, rows, a):
     rec = {"tree": tree, "role": role, "entry": entry, "start": b0["id"], "start_metric": m0, "date": TODAY,
            "hand": hands[0][0]["id"] if hands else None, "hand_metric": hands[0][1] if hands else None, "candidate": str(cand.relative_to(ROOT))}
     if a.fresh or not cand.exists():
-        args = [sys.executable, str(HERE / "raidsim/talent_opt.py"), cls, "--spec", entry, "--start", b0["id"], "--min-tree", f"{tree}={SM.SPEC_POINTS}",
+        # a tank build belongs to its tank tree by role, not by 30 points (the Protection paladin tank is 0/23/28): tanks keep at least
+        # the start's own points there
+        need = SM.SPEC_POINTS if role == "dps" else min(SM.SPEC_POINTS, sum(r for _, r in b0["allocation"].get(tree, [])))
+        args = [sys.executable, str(HERE / "raidsim/talent_opt.py"), cls, "--spec", entry, "--start", b0["id"], "--min-tree", f"{tree}={need}",
                 "--write", str(cand)] + (["--setting", "dummy"] if role == "dps" else [])
         r = subprocess.run(args, capture_output=True, text=True)
         print("\n".join("    " + ln for ln in r.stdout.strip().splitlines()[-6:]), flush=True)

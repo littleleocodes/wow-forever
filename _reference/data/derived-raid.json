@@ -193,18 +193,6 @@
   }
  },
  "paladin": {
-  "Protection (tank)": {
-   "tree": "Protection",
-   "role": "tank",
-   "entry": "prot-tank",
-   "start": "prot-tank",
-   "start_metric": 1.0,
-   "date": "2026-09-30",
-   "hand": "prot-tank",
-   "hand_metric": 1.0,
-   "candidate": "paladin/research/raid/raidsim/candidates/derived-protection-tank.json",
-   "error": "search failed"
-  },
   "Retribution": {
    "tree": "Retribution",
    "role": "dps",
@@ -226,6 +214,29 @@
     }
    ],
    "gain_vs_hand": 0.013308433855560464,
+   "verdict": "hand stays"
+  },
+  "Protection (tank)": {
+   "tree": "Protection",
+   "role": "tank",
+   "entry": "prot-tank",
+   "start": "prot-tank",
+   "start_metric": 1.0,
+   "date": "2026-09-30",
+   "hand": "prot-tank",
+   "hand_metric": 1.0,
+   "candidate": "paladin/research/raid/raidsim/candidates/derived-protection-tank.json",
+   "search_gain": 0.0020938476117255966,
+   "moves": [
+    {
+     "round": 1,
+     "move": "1 point Vindication -> Eye for an Eye",
+     "gain_seed1": 0.0021734857828694665,
+     "gain_seed2": 0.0020884916971544154,
+     "split": "0/23/28"
+    }
+   ],
+   "gain_vs_hand": 0.0020938476117255966,
    "verdict": "hand stays"
   }
  },
