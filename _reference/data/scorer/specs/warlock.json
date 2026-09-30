@@ -295,7 +295,7 @@
       }
     },
     "affliction-leveling": {
-      "note": "Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20%. Downtime is mostly the pet's health and Life Tap. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-affliction-leveling-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Rain of Fire 70%, Corruption 9%, Voidwalker melee 8%, Bane of Agony 6%, Immolate 4%, Wand 2%, Drain Life 1%, Death Coil 1%) and the leveling time split is fight 73% / drink 4% / eat 7% / other 0% / death 16% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "note": "Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20%. Downtime is mostly the pet's health and Life Tap. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Fight lab calibration (2026-09-30, beta client 1.60.1.70009, build opt-affliction-leveling-leveling-st at level 60, 1500 fights): shares are the measured damage split (Corruption 26%, Bane of Agony 25%, Wand 16%, Voidwalker melee 15%, Siphon Life 11%, Immolate 5%, Drain Life 2%, Death Coil 0%) and the leveling time split is fight 83% / drink 0% / eat 12% / other 0% / death 5% of talent-affected time with fight_coupling 0.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "corruption",
@@ -307,8 +307,8 @@
           },
           "min_level": 4,
           "profile_overrides": {
-            "leveling-st": {"share": 0.254},
-            "solo-60": {"share": 0.254},
+            "leveling-st": {"share": 0.259},
+            "solo-60": {"share": 0.259},
             "leveling-aoe": {"share": 0.085}
           }
         },
@@ -322,8 +322,8 @@
           },
           "min_level": 8,
           "profile_overrides": {
-            "leveling-st": {"share": 0.243},
-            "solo-60": {"share": 0.243},
+            "leveling-st": {"share": 0.25},
+            "solo-60": {"share": 0.25},
             "leveling-aoe": {"share": 0.061}
           }
         },
@@ -337,8 +337,8 @@
           },
           "min_level": 14,
           "profile_overrides": {
-            "leveling-st": {"share": 0.031},
-            "solo-60": {"share": 0.031},
+            "leveling-st": {"share": 0.024},
+            "solo-60": {"share": 0.024},
             "leveling-aoe": {"share": 0.01}
           }
         },
@@ -361,8 +361,8 @@
           "cast": 2.0,
           "min_cast": 1.5,
           "profile_overrides": {
-            "leveling-st": {"share": 0.056},
-            "solo-60": {"share": 0.056},
+            "leveling-st": {"share": 0.045},
+            "solo-60": {"share": 0.045},
             "leveling-aoe": {"share": 0.04}
           }
         },
@@ -373,8 +373,8 @@
           "can_crit": true,
           "min_level": 5,
           "profile_overrides": {
-            "leveling-st": {"share": 0.16},
-            "solo-60": {"share": 0.16},
+            "leveling-st": {"share": 0.163},
+            "solo-60": {"share": 0.163},
             "leveling-aoe": {"share": 0.018}
           }
         },
@@ -395,8 +395,8 @@
           "min_level": 30,
           "tags": ["type:spell", "school:shadow", "dot", "instant", "mainschool", "ability:Siphon Life", "ability:Affliction", "ability:Warlock"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.11},
-            "solo-60": {"share": 0.11},
+            "leveling-st": {"share": 0.114},
+            "solo-60": {"share": 0.114},
             "leveling-aoe": {"share": 0.0}
           },
           "enabled_by": "Siphon Life"
@@ -409,8 +409,8 @@
           "cooldown": 120,
           "profile_overrides": {
             "leveling-aoe": {"share": 0.006},
-            "leveling-st": {"share": 0.0},
-            "solo-60": {"share": 0.0}
+            "leveling-st": {"share": 0.001},
+            "solo-60": {"share": 0.001}
           }
         },
         {
@@ -457,12 +457,12 @@
       "pet_surv_to_sustain": 0.35,
       "abs_dps_factor": 1.0,
       "time": {
-        "leveling-st": {"fight": 0.883, "drink": 0.0, "eat": 0.07, "other": 0.0, "death": 0.048},
-        "solo-60": {"fight": 0.883, "drink": 0.0, "eat": 0.07, "other": 0.0, "death": 0.048},
+        "leveling-st": {"fight": 0.834, "drink": 0.0, "eat": 0.119, "other": 0.0, "death": 0.048},
+        "solo-60": {"fight": 0.834, "drink": 0.0, "eat": 0.119, "other": 0.0, "death": 0.048},
         "leveling-aoe": {"fight": 0.731, "drink": 0.039, "eat": 0.068, "other": 0.0, "death": 0.162}
       },
       "pet_dmg_to_surv": 0.3,
-      "fight_coupling": {"leveling-aoe": 1.0},
+      "fight_coupling": {"leveling-st": 0.0, "solo-60": 0.0},
       "kind_weights_by_profile": {
         "leveling-st": {"kite": 0, "stun": 0, "range": 0, "avoid": 0.25},
         "solo-60": {"kite": 0, "stun": 0, "range": 0, "avoid": 0.25},

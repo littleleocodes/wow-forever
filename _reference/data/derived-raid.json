@@ -460,6 +460,21 @@
    "moves": [],
    "gain_vs_hand": 0.0,
    "verdict": "hand stays"
+  },
+  "Protection (tank)": {
+   "tree": "Protection",
+   "role": "tank",
+   "entry": "prot-tank",
+   "start": "prot-raid-tank",
+   "start_metric": 1.0,
+   "date": "2026-09-30",
+   "hand": "prot-raid-tank",
+   "hand_metric": 1.0,
+   "candidate": "warrior/research/raid/raidsim/candidates/derived-protection-tank.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
   }
  }
 }
