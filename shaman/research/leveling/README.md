@@ -11,7 +11,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Enhancement (Stormstrike at 25, Rage of the Farseer at 40)](builds/leveling-enhancement.md) | 7/34/10 | DPS | [leveling-enhancement](../talents/classic-baseline/leveling-enhancement.md) |
-| [Restoration — Leveling (derived)](builds/restoration-leveling.md) | 0/21/30 | DPS | — |
+| [Restoration — Leveling into the raid build](builds/restoration-leveling.md) | 0/10/41 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

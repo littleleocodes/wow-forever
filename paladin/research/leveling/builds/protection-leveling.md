@@ -1,17 +1,17 @@
-# Protection — Leveling (derived) — 0/31/20
+# Protection — Leveling into the raid build — 0/23/28
 
 *[Paladin](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/31/20 (Holy / Protection / Retribution) |
+| **Build** | 0/23/28 (Holy / Protection / Retribution) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Protection leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Protection build, 30+ points kept in Protection, playing the prot-leveling rotation; the talent order is the stats model's (ret-dps). Protection is a tanking spec: this is how to level while keeping it, compared with Retribution on the leveling page.
+Level with the talents of the Protection raid build (prot-tank) so you arrive at 60 ready to tank; the order is the fastest of three the fight lab raced (own tree first: 31 s per kill over levels 20-60, the prot-leveling rotation).
 
 ## Point allocation
 
@@ -19,76 +19,74 @@ The Protection leveling build derived on 2026-09-30 (derive_leveling.py): search
 
 *No points.*
 
-### Protection (31)
+### Protection (23)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Toughness** | 1/5 | moved | Increases your armor value from items by 2%. |
 | **Redoubt** | 5/5 | changed | Damaging melee attacks against you have a 10% chance to increase your chance to block by 30%. Lasts 10 sec or 5 blocks. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Anticipation** | 2/5 | changed | Increases your Defense Skill by 8. |
+| **Anticipation** | 5/5 | changed | Increases your Defense Skill by 20. |
 | **Improved Seal of Fury** | 1/1 | **NEW** | When Seal of Fury's shield is fully absorbed, restore 60 Mana, increased by 15% per level the attacker is above you, up to 45%. |
-| **Shield Specialization** | 3/3 | changed | Increases the amount of damage absorbed by your shield by 30%, and gives your blocks a 100% chance to restore 6% of your maximum Mana. May only occur once every 3 sec. |
-| **Sacred Duty** | 2/2 | **NEW** | Increases your total Stamina by 4% and reduces the cooldown of your Divine Shield, Divine Protection, and Templar's Bulwark spells by 60 sec. |
+| **Improved Righteous Fury** | 3/3 | changed | While Righteous Fury is active, all damage taken is reduced by 6%. |
+| **Shield Specialization** | 1/3 | changed | Increases the amount of damage absorbed by your shield by 10%, and gives your blocks a 33% chance to restore 6% of your maximum Mana. May only occur once every 3 sec. |
 | **Swift Judgement** | 1/1 | **NEW** | Finishes the remaining cooldown on your Judgement ability and reduces the Mana cost of your next Judgement by 100%. |
-| **Improved Hammer of Justice** | 3/3 | moved | Decreases the cooldown of your Hammer of Justice spell by 15 sec. |
-| **Templar's Bulwark** | 1/1 | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. |
 | **One-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with one-handed melee weapons by 10%. |
-| **Holy Shield** | 1/1 | changed | Increases chance to block by 20% for 10 sec, and deals 110 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges. |
-| **Reckoning** | 5/5 | changed | Gives you a 40% chance to gain an extra attack after Blocking a melee attack and a 100% chance to gain an extra attack after being the victim of a non-periodic critical strike. |
+| **Templar's Bulwark** | 1/1 | **NEW** | When activated, this ability grants you an absorb shield equal to 100% of your maximum health for 8 sec. Applies Forbearance for 1 min. Cannot be cast while Forbearance is active. |
 
-### Retribution (20)
+### Retribution (28)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
-| **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
+| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
 | **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
+| **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
-| **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
-| **Pursuit of Justice** | 1/2 | changed | Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
+| **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
+| **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
+| **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
+| **Eye for an Eye** | 1/2 | changed | All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 
 ## Leveling order
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-14 | Retribution | Benediction | 5 | 0/0/5 |
-| 15-16 | Retribution | Holy Conduit | 2 | 0/0/7 |
-| 17-18 | Retribution | Improved Judgement | 2 | 0/0/9 |
-| 19 | Retribution | Conviction | 1 | 0/0/10 |
-| 20 | Retribution | Seal of Command | 1 | 0/0/11 |
-| 21 | Retribution | Sanctified Judgement | 1 | 0/0/12 |
-| 22 | Retribution | Pursuit of Justice | 1 | 0/0/13 |
-| 23-24 | Retribution | Sanctified Judgement | 2 | 0/0/15 |
-| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
-| 26-29 | Retribution | Conviction | 4 | 0/0/20 |
-| 30 | Protection | Toughness | 1 | 0/1/20 |
-| 31-34 | Protection | Redoubt | 4 | 0/5/20 |
-| 35-37 | Protection | Precision | 3 | 0/8/20 |
-| 38-39 | Protection | Anticipation | 2 | 0/10/20 |
-| 40-41 | Protection | Sacred Duty | 2 | 0/12/20 |
-| 42 | Protection | Redoubt | 1 | 0/13/20 |
-| 43 | Protection | Shield Specialization | 1 | 0/14/20 |
-| 44 | Protection | Improved Seal of Fury | 1 | 0/15/20 |
-| 45 | Protection | Swift Judgement | 1 | 0/16/20 |
-| 46-48 | Protection | Improved Hammer of Justice | 3 | 0/19/20 |
-| 49 | Protection | Shield Specialization | 1 | 0/20/20 |
-| 50 | Protection | Templar's Bulwark | 1 | 0/21/20 |
-| 51 | Protection | Shield Specialization | 1 | 0/22/20 |
-| 52-54 | Protection | One-Handed Weapon Specialization | 3 | 0/25/20 |
-| 55-59 | Protection | Reckoning | 5 | 0/30/20 |
-| 60 | Protection | Holy Shield | 1 | 0/31/20 |
+| 10-14 | Protection | Redoubt | 5 | 0/5/0 |
+| 15-17 | Protection | Precision | 3 | 0/8/0 |
+| 18-19 | Protection | Anticipation | 2 | 0/10/0 |
+| 20 | Protection | Shield Specialization | 1 | 0/11/0 |
+| 21-23 | Protection | Anticipation | 3 | 0/14/0 |
+| 24 | Protection | Improved Seal of Fury | 1 | 0/15/0 |
+| 25 | Protection | Swift Judgement | 1 | 0/16/0 |
+| 26-28 | Protection | Improved Righteous Fury | 3 | 0/19/0 |
+| 29 | Protection | One-Handed Weapon Specialization | 1 | 0/20/0 |
+| 30 | Protection | Templar's Bulwark | 1 | 0/21/0 |
+| 31-32 | Protection | One-Handed Weapon Specialization | 2 | 0/23/0 |
+| 33-37 | Retribution | Deflection | 5 | 0/23/5 |
+| 38-39 | Retribution | Holy Conduit | 2 | 0/23/7 |
+| 40-41 | Retribution | Improved Judgement | 2 | 0/23/9 |
+| 42 | Retribution | Conviction | 1 | 0/23/10 |
+| 43-45 | Retribution | Sanctified Judgement | 3 | 0/23/13 |
+| 46-47 | Retribution | Conviction | 2 | 0/23/15 |
+| 48 | Retribution | Sacred Arbiter | 1 | 0/23/16 |
+| 49-50 | Retribution | Conviction | 2 | 0/23/18 |
+| 51-52 | Retribution | Vindication | 2 | 0/23/20 |
+| 53-55 | Retribution | Vengeance | 3 | 0/23/23 |
+| 56 | Retribution | Vindication | 1 | 0/23/24 |
+| 57 | Retribution | Eye for an Eye | 1 | 0/23/25 |
+| 58-60 | Retribution | Champion of the Light | 3 | 0/23/28 |
 
 ## Core talents (priority order)
 
-1. **Seal of Command** — The scorer's value in this build: +21.9% of its score (model ret-dps).
-2. **Sanctified Judgement** — The scorer's value in this build: +13.3% of its score (model ret-dps).
-3. **Conviction** — The scorer's value in this build: +7.1% of its score (model ret-dps).
-4. **Swift Judgement** — The scorer's value in this build: +7.1% of its score (model ret-dps).
-5. **Sacred Arbiter** — The scorer's value in this build: +5.2% of its score (model ret-dps).
-6. **Improved Judgement** — The scorer's value in this build: +4.5% of its score (model ret-dps).
+1. **Champion of the Light** — Raid sim (2026-09-26): removing it costs +8% tank value. Raid sim (2026-09-28): removing it costs +7% tank value.
+2. **Deflection** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +4% tank value.
+3. **Improved Righteous Fury** — Reworked: -2%/rank damage taken while Righteous Fury is up (est. 6%). Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
+4. **Vengeance** — Raid sim (2026-09-26): removing it costs +4% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
+5. **Vindication** — Raid sim (2026-09-26): removing it costs +3% tank value. Raid sim (2026-09-28): removing it costs +3% tank value.
+6. **Templar's Bulwark** — Raid sim (2026-09-28): removing it costs +3% tank value.
+7. **Anticipation** — Raid sim (2026-09-28): removing it costs +2% tank value.
+8. **Conviction** — Raid sim (2026-09-26): removing it costs +2% tank value. Raid sim (2026-09-28): removing it costs +2% tank value.
 
 ## Leveling rotation
 
@@ -96,16 +94,16 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-protection-scorer, moves: 3 points Toughness -> One-Handed Weapon Specialization; 1 point Sacred Arbiter -> Holy Conduit; 1 point Two-Handed Weapon Specialization -> Holy Shield; 3 points Anticipation -> Reckoning; 2 points Guardian's Favor -> Reckoning; 1 point Pursuit of Justice -> Sacred Arbiter. Race against derived-protection-scorer over levels 20-60 (seed 3, 3000 fights per level): +6.2% faster per kill.
+- 2026-09-30 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 31 s; stats model's order 33 s; own tree last 33 s. First Protection point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A derived Protection leveling build: check it while leveling at launch.
+- Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Sources
 
-- <https://talentsforever.com/paladin>
+- <https://warcraftforever.games/talents/paladin>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -13,7 +13,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | **✅ Recommended**<br>[Elemental (optimized)](raid/elemental.md)<br>440 DPS | [Elemental — PvP](pvp/elemental.md) 🔬 |
 | **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>33 s/kill | [One slow weapon](raid/enhancement.md)<br>426 DPS | [Enhancement — PvP](pvp/enhancement.md) 🔬 |
-| **Restoration** | **✅ Recommended**<br>[Restoration — Leveling](leveling/restoration.md) 🔬<br>34 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬 |
+| **Restoration** | [Restoration — Leveling into the raid build](leveling/restoration.md) 🔬<br>43 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -36,8 +36,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Enhancement](leveling/enhancement.md) — Leveling — Enhancement | 33 | fastest |
-| 2 | [Restoration](leveling/restoration.md) — Restoration — Leveling 🔬 | 34 | +2% |
-| 3 | [Elemental](leveling/elemental.md) — Elemental (optimized) | 38 | +15% |
+| 2 | [Elemental](leveling/elemental.md) — Elemental (optimized) | 38 | +15% |
+| 3 | [Restoration](leveling/restoration.md) — Restoration — Leveling into the raid build 🔬 | 43 | +30% |
 
 ### Raid (training dummy and parse)
 

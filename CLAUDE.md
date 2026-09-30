@@ -372,7 +372,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
     numbers, seed-2 confirmation, 30+ points in the tree) and a level-weighted race (20-60, seed 3) against the hand draft. Healer and
     tank trees get their own leveling build (their own rotations: `holy-leveling`/`discipline-leveling` priest, `holy-leveling`/
     `prot-leveling` paladin, `prot-leveling` warrior; Restoration shaman and druid play the Enhancement and Cat rotations), and their
-    page compares it with the damage spec they could level as (`SM.LEVEL_AS`).
+    page compares it with the damage spec they could level as (`SM.LEVEL_AS`). Since 2026-09-30 (user decision: "the healer and tank
+    leveling order should really just be what the raid specs are") `raid_path_leveling.py` replaces those: the build is the spec's
+    raid pick (`raid_path`), the order the fastest of three the fight lab races (the stats model's order, own tree first, own tree
+    last; moving whole trees keeps every tier legal); the page shows all three times.
   - New fight-lab rotations (2026-09-30), each gated on its spec prefix so the old specs stay bit-identical: mage `arcane-leveling`
     (Arcane Blast stacks, Missile Barrage, Arcane Power), rogue `subtlety-leveling` (Premeditation, Ghostly Strike, Hemorrhage, opener
     choice), warlock `demonology-leveling`/`destruction-leveling`, priest `holy-leveling`/`discipline-leveling` (Penance, Holy Fire),

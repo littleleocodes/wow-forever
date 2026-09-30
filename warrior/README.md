@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Arms** | **✅ Recommended**<br>[Two-handed Arms/raid or leveling](leveling/arms.md)<br>28 s/kill | **✅ Recommended**<br>[Arms — Battle Stance](raid/arms.md)<br>378 DPS | [Arms — PvP](pvp/arms.md) 🔬 |
 | **Fury** | **✅ Recommended**<br>[Raid dual-wield Fury](leveling/fury.md)<br>29 s/kill | **✅ Recommended**<br>[Fury — Dual Wield](raid/fury.md)<br>380 DPS | [Fury — PvP](pvp/fury.md) 🔬 |
-| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>37 s/kill | [Protection — Raid Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
+| **Protection** | [Protection — Leveling into the raid build](leveling/protection.md) 🔬<br>31 s/kill | [Protection — Raid Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -28,7 +28,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 |---|---|---|---|
 | 1 | [Arms](leveling/arms.md) — Two-handed Arms/raid or leveling | 28 | fastest |
 | 2 | [Fury](leveling/fury.md) — Raid dual-wield Fury | 29 | +1% |
-| 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 37 | +33% |
+| 3 | [Protection](leveling/protection.md) — Protection — Leveling into the raid build 🔬 | 31 | +11% |
 
 ### Raid (training dummy and parse)
 

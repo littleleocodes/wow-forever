@@ -7,8 +7,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Retribution](retribution.md) — Leveling — Retribution | 28 | fastest |
-| 2 | [Holy](holy.md) — Holy — Leveling 🔬 | 29 | +4% |
-| 3 | [Protection](protection.md) — Protection — Leveling 🔬 | 33 | +17% |
+| 2 | [Protection](protection.md) — Protection — Leveling into the raid build 🔬 | 31 | +11% |
+| 3 | [Holy](holy.md) — Holy — Leveling into the raid build 🔬 | 35 | +27% |
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

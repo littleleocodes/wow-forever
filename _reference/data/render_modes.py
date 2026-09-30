@@ -231,7 +231,14 @@ def mode_section(cls, spec, mode, builds, nums, src):
         return ["No build for this spec in this mode yet.", ""]
     top = ranked[0]
     o += [f"**{link(cls, top, src)}** ({rs.split_of(cls, rs.flat(top))}) — {tree_link(cls, top)}", ""]
-    if top.get("derived"):
+    if top.get("raid_path"):   # a healer or tank spec levels straight into its raid build (user decision, 2026-09-30)
+        dv = (DERIVED["leveling"].get(cls) or {}).get(spec) or {}
+        ords = dv.get("orders") or {}
+        o += [f"> {DER_MARK} These are your **raid talents** ([{top['raid_path']}](../raid/{SM.spec_slug(cls, spec)}.md)), taken in the order "
+              f"that levels fastest: the fight lab raced three orders to them"
+              + (" (" + "; ".join(f"{k}: {v['weighted']:.0f} s per kill" for k, v in sorted(ords.items(), key=lambda kv: kv[1]['weighted'])) + ")"
+                 if ords else "") + ". A model of the beta, to check at launch.", ""]
+    elif top.get("derived"):
         o += [f"> {DER_MARK} Derived build: " + {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
                                                "raid": "searched in the community's raid simulator from the spec's best build",
                                                "pvp": "the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike"}[mode]
@@ -276,8 +283,8 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 first = next((st["levels"].split("-")[0] for st in top.get("order", []) if st["talent"] in own), None)
                 o += [f"**Leveling as {spec} or as {other}?** This build takes {wm:.0f} s per kill (level-weighted, 20-60), "
                       f"[{other}](../leveling/{SM.spec_slug(cls, other)}.md) {wo:.0f} s: {spec} is {how}."
-                      + (f" Its talent order takes damage talents first and puts its first point into {spec} at level {first}, so it only "
-                         f"becomes a real {spec} build in the 40s and 50s." if first and int(first) >= 25 else "")
+                      + (f" The fastest order puts its first point into {spec} at level {first}: the damage talents come first." if first and int(first) >= 25
+                         else f" Your first {spec} point comes at level {first}." if first else "")
                       + f" Level this way if you want to {job} dungeons later on the way; otherwise level as {other} and switch at 60 "
                         f"(a respec at a class trainer).", ""]
         if per:

@@ -11,7 +11,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Arms two-hander (Mortal Strike at 40, Enrage last)](builds/leveling-arms.md) | 31/20/0 | DPS | [leveling-arms](../talents/classic-baseline/leveling-arms.md) |
-| [Protection — Leveling (derived)](builds/protection-leveling.md) | 13/7/31 | DPS | — |
+| [Protection — Leveling into the raid build](builds/protection-leveling.md) | 14/5/32 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 

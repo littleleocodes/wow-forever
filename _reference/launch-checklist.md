@@ -77,9 +77,6 @@
 **Optimizer — Healing Touch 35%, Regrowth 30%, Rejuvenation 30%, Tranquility 5% (raid-heal)** (`druid/research/raid/builds/opt-resto-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Restoration — Leveling (derived)** (`druid/research/leveling/builds/restoration-leveling.md`)
-- [ ] A derived Restoration leveling build: check it while leveling at launch.
-
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -94,6 +91,9 @@
 
 **Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Hunter
 
@@ -319,12 +319,6 @@
 **Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)** (`paladin/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Holy — Leveling (derived)** (`paladin/research/leveling/builds/holy-leveling.md`)
-- [ ] A derived Holy leveling build: check it while leveling at launch.
-
-**Protection — Leveling (derived)** (`paladin/research/leveling/builds/protection-leveling.md`)
-- [ ] A derived Protection leveling build: check it while leveling at launch.
-
 **Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)** (`paladin/research/raid/builds/opt-ret-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -333,6 +327,12 @@
 
 **Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Holy — Leveling into the raid build** (`paladin/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
+
+**Protection — Leveling into the raid build** (`paladin/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Priest
 
@@ -372,17 +372,17 @@
 **Optimizer — Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4% (raid-heal)** (`priest/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Discipline — Leveling (derived)** (`priest/research/leveling/builds/discipline-leveling.md`)
-- [ ] A derived Discipline leveling build: check it while leveling at launch.
-
-**Holy — Leveling (derived)** (`priest/research/leveling/builds/holy-leveling.md`)
-- [ ] A derived Holy leveling build: check it while leveling at launch.
-
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 **Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Discipline — Leveling into the raid build** (`priest/research/leveling/builds/discipline-leveling.md`)
+- [ ] Check the Discipline leveling pace at launch; the raid build's talents may cost speed early.
+
+**Holy — Leveling into the raid build** (`priest/research/leveling/builds/holy-leveling.md`)
+- [ ] Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Rogue
 
@@ -505,9 +505,6 @@
 **Enhancement — Raid (derived)** (`shaman/research/raid/builds/enhancement-raid.md`)
 - [ ] A derived Enhancement raid build: check it against the community's Enhancement builds at launch.
 
-**Restoration — Leveling (derived)** (`shaman/research/leveling/builds/restoration-leveling.md`)
-- [ ] A derived Restoration leveling build: check it while leveling at launch.
-
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -519,6 +516,9 @@
 
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
+- [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
 ### Warlock
 
@@ -646,9 +646,6 @@
 **Protection — PvP (derived)** (`warrior/research/pvp/builds/protection-pvp.md`)
 - [ ] A derived Protection PvP build: check it in duels and battlegrounds at launch.
 
-**Protection — Leveling (derived)** (`warrior/research/leveling/builds/protection-leveling.md`)
-- [ ] A derived Protection leveling build: check it while leveling at launch.
-
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)** (`warrior/research/raid/builds/opt-arms-2h-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -663,4 +660,7 @@
 
 **Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)** (`warrior/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
+- [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 

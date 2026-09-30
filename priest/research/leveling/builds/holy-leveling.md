@@ -1,90 +1,90 @@
-# Holy — Leveling (derived) — 2/30/19
+# Holy — Leveling into the raid build — 22/29/0
 
 *[Priest](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 2/30/19 (Discipline / Holy / Shadow) |
+| **Build** | 22/29/0 (Discipline / Holy / Shadow) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Holy leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Holy build, 30+ points kept in Holy, playing the holy-leveling rotation; the talent order is the stats model's (shadow-dps). Holy is a healing spec: this is how to level while keeping it, compared with Shadow on the leveling page.
+Level with the talents of the Holy raid build (holy-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree last: 45 s per kill over levels 20-60, the holy-leveling rotation).
 
 ## Point allocation
 
-### Discipline (2)
+### Discipline (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Wand Specialization** | 2/2 | changed | Increases your damage with Wands by 25%. |
+| **Twin Disciplines** | 5/5 | **NEW** | Increases the damage and healing of your instant cast spells by 5%. |
+| **Power in Light** | 2/5 | **NEW** | Your Smite and Penance spells deal 4% increased damage to targets afflicted with your Holy Fire. |
+| **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
+| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Inner Focus** | 1/1 | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect. |
+| **Mental Agility** | 1/3 | changed | Reduces the mana cost of your Smite, Holy Fire, and instant cast spells by 3%. |
+| **Mental Strength** | 5/5 | changed | Increases your total Intellect by 15%. |
+| **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
+| **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec. |
 
-### Holy (30)
+### Holy (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Renew** | 1/3 | unchanged | Increases the amount healed by your Renew spell by 5%. |
 | **Holy Specialization** | 5/5 | unchanged | Increases the critical effect chance of your Holy spells by 5%. |
-| **Spell Warding** | 5/5 | unchanged | Reduces all spell damage taken by 10%. |
-| **Divine Fury** | 5/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.5 sec. |
-| **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
-| **Blessed Recovery** | 1/3 | changed | After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 8% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing. |
+| **Twilight Focus** | 3/3 | **NEW** | Gives you a 70% chance to avoid interruption caused by damage while casting any spell. |
+| **Improved Renew** | 3/3 | unchanged | Increases the amount healed by your Renew spell by 15%. |
+| **Divine Fury** | 1/5 | changed | Reduces the casting time of your Smite, Holy Fire, Heal, and Greater Heal spells by 0.1 sec. |
 | **Inspiration** | 3/3 | changed | Your non-periodic critical heals increase your target's Armor by 25% for 15 sec. |
-| **Holy Reach** | 1/2 | unchanged | Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 10%. |
-| **Spirit of Redemption** | 1/1 | changed | Upon death, the priest becomes the Spirit of Redemption for 15 sec. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost. When the effect ends, the priest dies. |
-| **Spiritual Guidance** | 5/5 | changed | Increases your spell healing by up to 25% of your total Spirit and your spell damage by up to 8% of your total Spirit. |
-| **Searing Light** | 2/2 | changed | Increases your Holy damage done by 5%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana. |
+| **Holy Nova** | 1/1 | changed | Causes an explosion of holy light around the caster, causing 26 to 30 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 49 to 57. These effects cause no threat. |
+| **Improved Healing** | 3/3 | changed | Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%. |
+| **Binding Heal** | 1/1 | **NEW** | Heals a friendly target and the caster for 236 to 284. Low threat. |
+| **Litany of Light** | 2/2 | **NEW** | When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell. |
+| **Spiritual Guidance** | 4/5 | changed | Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 6% of your total Spirit. |
+| **Spiritual Healing** | 3/3 | changed | Increases the amount healed by your spells by 10%. |
 
-### Shadow (19)
+### Shadow (0)
 
-| Talent | Pts | vs Classic | Effect at this rank |
-|---|---|---|---|
-| **Shadow Focus** | 3/5 | changed | Improves your chance to hit with Shadow spells by 3%. |
-| **Blackout** | 3/5 | moved | Gives your Shadow damage spells a 6% chance to stun the target for 3 sec. |
-| **Shadow Reach** | 2/2 | changed | Increases the range of your offensive Shadow spells by 20%. |
-| **Mind Flay** | 1/1 | changed | Assault the target's mind with Shadow energy, causing 63 Shadow damage over 3 sec and slowing their movement speed by 50%. |
-| **Improved Mind Flay** | 2/2 | **NEW** | Your Mind Flay now deals 20% more damage, gains 10 yards increased range, but slows the target's movement speed by 20%. |
-| **Shadow Weaving** | 3/3 | changed | Your Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times. |
-| **Spirit Tap** | 5/5 | changed | Gives you a 100% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting. |
+*No points.*
 
 ## Leveling order
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-12 | Shadow | Blackout | 3 | 0/0/3 |
-| 13-14 | Shadow | Shadow Focus | 2 | 0/0/5 |
-| 15-16 | Shadow | Shadow Reach | 2 | 0/0/7 |
-| 17 | Shadow | Shadow Focus | 1 | 0/0/8 |
-| 18-19 | Shadow | Spirit Tap | 2 | 0/0/10 |
-| 20 | Shadow | Mind Flay | 1 | 0/0/11 |
-| 21-22 | Shadow | Improved Mind Flay | 2 | 0/0/13 |
-| 23-24 | Shadow | Spirit Tap | 2 | 0/0/15 |
-| 25-27 | Shadow | Shadow Weaving | 3 | 0/0/18 |
-| 28 | Holy | Improved Renew | 1 | 0/1/18 |
-| 29-32 | Holy | Holy Specialization | 4 | 0/5/18 |
-| 33-37 | Holy | Spell Warding | 5 | 0/10/18 |
-| 38 | Holy | Holy Nova | 1 | 0/11/18 |
-| 39 | Holy | Blessed Recovery | 1 | 0/12/18 |
-| 40 | Holy | Holy Specialization | 1 | 0/13/18 |
-| 41-45 | Holy | Divine Fury | 5 | 0/18/18 |
-| 46-48 | Holy | Inspiration | 3 | 0/21/18 |
-| 49 | Holy | Holy Reach | 1 | 0/22/18 |
-| 50 | Holy | Spirit of Redemption | 1 | 0/23/18 |
-| 51 | Shadow | Spirit Tap | 1 | 0/23/19 |
-| 52-56 | Holy | Spiritual Guidance | 5 | 0/28/19 |
-| 57-58 | Discipline | Wand Specialization | 2 | 2/28/19 |
-| 59-60 | Holy | Searing Light | 2 | 2/30/19 |
+| 10-14 | Discipline | Twin Disciplines | 5 | 5/0/0 |
+| 15-17 | Discipline | Improved Power Word: Shield | 3 | 8/0/0 |
+| 18-19 | Discipline | Power in Light | 2 | 10/0/0 |
+| 20 | Discipline | Inner Focus | 1 | 11/0/0 |
+| 21-23 | Discipline | Meditation | 3 | 14/0/0 |
+| 24 | Discipline | Mental Agility | 1 | 15/0/0 |
+| 25-29 | Discipline | Mental Strength | 5 | 20/0/0 |
+| 30 | Discipline | Soul Warding | 1 | 21/0/0 |
+| 31 | Discipline | Penance | 1 | 22/0/0 |
+| 32-36 | Holy | Holy Specialization | 5 | 22/5/0 |
+| 37-39 | Holy | Twilight Focus | 3 | 22/8/0 |
+| 40-41 | Holy | Improved Renew | 2 | 22/10/0 |
+| 42 | Holy | Holy Nova | 1 | 22/11/0 |
+| 43 | Holy | Improved Renew | 1 | 22/12/0 |
+| 44 | Holy | Divine Fury | 1 | 22/13/0 |
+| 45-47 | Holy | Inspiration | 3 | 22/16/0 |
+| 48-50 | Holy | Improved Healing | 3 | 22/19/0 |
+| 51 | Holy | Binding Heal | 1 | 22/20/0 |
+| 52-53 | Holy | Litany of Light | 2 | 22/22/0 |
+| 54-57 | Holy | Spiritual Guidance | 4 | 22/26/0 |
+| 58-60 | Holy | Spiritual Healing | 3 | 22/29/0 |
 
 ## Core talents (priority order)
 
-1. **Mind Flay** — The scorer's value in this build: +75.5% of its score (model shadow-dps).
-2. **Shadow Weaving** — The scorer's value in this build: +6.8% of its score (model shadow-dps).
-3. **Improved Mind Flay** — The scorer's value in this build: +6.6% of its score (model shadow-dps).
-4. **Shadow Reach** — The scorer's value in this build: +2.0% of its score (model shadow-dps).
-5. **Blackout** — The scorer's value in this build: +1.7% of its score (model shadow-dps).
-6. **Shadow Focus** — The scorer's value in this build: +1.3% of its score (model shadow-dps).
+1. **Meditation** — Reworked: 17% regen per rank while casting (est. 51%). Healer lab (2026-09-26): removing it costs +20% healing capacity.
+2. **Improved Healing** — Cheaper Heal/Greater Heal/Penance/Prayer of Mending. Healer lab (2026-09-26): removing it costs +6% healing capacity.
+3. **Spiritual Healing** — Now 3 ranks (3%/rank). Healer lab (2026-09-26): removing it costs +5% healing capacity.
+4. **Inspiration** — Armor on crit heals (8%/rank est. 24%). Healer lab (2026-09-26): removing it costs +2% healing capacity.
+5. **Spiritual Guidance** — Spirit to healing (5%/rank est. 25%). Healer lab (2026-09-26): removing it costs +2% healing capacity.
+6. **Soul Warding** — Power Word: Shield -4s cooldown, -15% mana (requires Improved Power Word: Shield 3). Healer lab (2026-09-26): removing it costs +2% healing capacity.
+7. **Inner Focus** — Free +25% crit spell. Healer lab (2026-09-26): removing it costs +1% healing capacity.
+8. **Mental Agility** — Healer lab (2026-09-26): removing it costs +1% healing capacity.
 
 ## Leveling rotation
 
@@ -92,16 +92,16 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-holy-scorer, moves: 2 points Shadow Focus -> Spirit Tap; 2 points Blackout -> Spirit Tap; 3 points Twilight Focus -> Spiritual Guidance; 2 points Twin Disciplines -> Wand Specialization; 1 point Vampiric Embrace -> Spirit Tap; 2 points Improved Renew -> Spiritual Guidance; 2 points Blessed Recovery -> Searing Light. Race against derived-holy-scorer over levels 20-60 (seed 3, 3000 fights per level): +6.3% faster per kill.
+- 2026-09-30 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 45 s; stats model's order 47 s; own tree first 52 s. First Holy point at level 32.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A derived Holy leveling build: check it while leveling at launch.
+- Check the Holy leveling pace at launch; the raid build's talents may cost speed early.
 
 ## Sources
 
-- <https://talentsforever.com/priest>
+- <https://warcraftforever.games/talents/priest>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

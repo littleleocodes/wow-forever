@@ -90,6 +90,11 @@ Each class folder now opens with player pages and keeps the research below:
   2% (largest +1.6%). The pages now apply the 2% rule themselves (`render_modes.DERIVED_BAR`): a derived build leads its slot only
   while it is 2%+ ahead of the best other build. Tank sets were not changed.
 
+- **Healer and tank leveling = the raid build** (2026-09-30, user decision): `raid_path_leveling.py` levels each healing and tanking
+  spec into its raid pick, in the fastest of three raced orders. Protection warrior and paladin level fastest own-tree-first (31 s per
+  kill vs 38.5 s and 33 s for the next-best orders); healers differ by only 0-4% between orders. Level-weighted seconds per kill: Holy
+  priest 45, Discipline 44.5, Holy paladin 35.5, Resto shaman 43, Resto druid 33, Protection paladin 31, Protection warrior 31.
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

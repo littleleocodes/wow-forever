@@ -11,8 +11,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Leveling — Shadow (fight-lab winner adopted 2026-09-26)](builds/leveling-shadow.md) | 18/0/33 | DPS | [leveling-shadow](../talents/classic-baseline/leveling-shadow.md) |
-| [Discipline — Leveling (derived)](builds/discipline-leveling.md) | 31/0/20 | DPS | — |
-| [Holy — Leveling (derived)](builds/holy-leveling.md) | 2/30/19 | DPS | — |
+| [Discipline — Leveling into the raid build](builds/discipline-leveling.md) | 31/20/0 | DPS | — |
+| [Holy — Leveling into the raid build](builds/holy-leveling.md) | 22/29/0 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
