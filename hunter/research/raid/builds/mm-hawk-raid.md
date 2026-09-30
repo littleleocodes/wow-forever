@@ -71,7 +71,7 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.4% | 42 s |
+| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 448 | -0.0% | 788 | -2.2% | 25 s |
 | 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
 
 ## Rotation (community simulator, training dummy)

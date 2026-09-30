@@ -1,4 +1,4 @@
-# Retribution — PvP (generated) — 21/0/30
+# Retribution — PvP (derived) — 21/0/30
 
 *[Paladin](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Retribution pvp build with at least 30 points in Retribution, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (ret-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Retribution PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Retribution (model ret-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Retribution builds agree with (5070 builds).
 
 ## Point allocation
 
@@ -38,40 +38,45 @@ The best Retribution pvp build with at least 30 points in Retribution, generated
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Deflection** | 5/5 | moved | Increases your Parry chance by 5%. |
+| **Deflection** | 3/5 | moved | Increases your Parry chance by 3%. |
+| **Benediction** | 2/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 4%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
 | **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
-| **Conviction** | 2/5 | changed | Improves your chance to get a critical strike with melee attacks by 2%. |
+| **Conviction** | 1/5 | changed | Improves your chance to get a critical strike with melee attacks by 1%. |
 | **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
+| **Vengeance** | 1/3 | changed | Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
 | **Repentance** | 1/1 | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. |
 | **Champion of the Light** | 3/3 | **NEW** | Increases your spell damage and healing by up to 100% of your Intellect. |
 | **Instrument of Law** | 2/2 | **NEW** | Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active. |
 
 ## Core talents (priority order)
 
-1. **Sanctified Judgement** — The scorer's value in this build: +9.3% of its score (model ret-dps).
+1. **Sanctified Judgement** — The scorer's value in this build: +9.4% of its score (model ret-dps).
 2. **Seal of Command** — The scorer's value in this build: +9.0% of its score (model ret-dps).
 3. **Unyielding Faith** — The scorer's value in this build: +8.1% of its score (model ret-dps).
-4. **Voice of Truth** — The scorer's value in this build: +7.4% of its score (model ret-dps).
-5. **Spiritual Focus** — The scorer's value in this build: +7.4% of its score (model ret-dps).
-6. **Repentance** — The scorer's value in this build: +7.4% of its score (model ret-dps).
+4. **Voice of Truth** — The scorer's value in this build: +7.5% of its score (model ret-dps).
+5. **Spiritual Focus** — The scorer's value in this build: +7.5% of its score (model ret-dps).
+6. **Repentance** — The scorer's value in this build: +7.5% of its score (model ret-dps).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model ret-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 2 points Deflection -> Benediction; 1 point Conviction -> Vengeance.
+- Where we disagree with the community: most Retribution builds take none, which the model values below this build's weakest point; this build takes Deflection (20%), Infusion of Light (15%), which few Retribution builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 
-- A generated Retribution build: check it against the community's Retribution builds at launch.
+- A derived Retribution PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/paladin>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

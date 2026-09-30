@@ -4,7 +4,9 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md)** (11/31/9) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
+**[Enhancement — Raid](../research/raid/builds/enhancement-raid.md)** (11/31/9) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05301-4)
+
+> 🔬 Derived build: searched in the community's raid simulator from the spec's best build; it beat the hand-made build (enhancement-raid-dps) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -32,12 +34,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 394 |
-| Parse (a full raid: every raid buff and debuff) | 757 |
+| Training dummy, 3-minute fight (only your own buffs) | 403 |
+| Parse (a full raid: every raid buff and debuff) | 754 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 394 → mana +5% → armor +37% → physical +18% → spell +6% → everything else +26% → raid 757
+Dummy 403 → mana +1% → armor +36% → physical +18% → spell +6% → everything else +26% → raid 754
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -45,7 +47,7 @@ Dummy 394 → mana +5% → armor +37% → physical +18% → spell +6% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 439 | 415 | 394 | 393 | 377 |
+| 435 | 414 | 403 | 406 | 391 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
@@ -53,6 +55,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 ## Other builds of this spec
 
+- [One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 394 DPS on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
 - [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 391 DPS on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5200031-055030031005102051-05004-4)
 
 ---

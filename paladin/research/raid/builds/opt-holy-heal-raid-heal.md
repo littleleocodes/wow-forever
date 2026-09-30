@@ -63,7 +63,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 ## Notes
 
-- Report: paladin/talents/forever/optimizer/holy-heal-raid-heal.md
+- Report: paladin/research/talents/forever/optimizer/holy-heal-raid-heal.md
 
 ## Open questions (verify in the live game)
 

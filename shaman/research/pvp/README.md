@@ -11,8 +11,9 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Elemental / Nature's Swiftness (PvP, 30/0/21)](builds/pvp-elemental-ns.md) | 30/0/21 | DPS | [pvp-elemental-ns](../talents/classic-baseline/pvp-elemental-ns.md) |
-| [Enhancement — PvP (generated)](builds/enhancement-pvp.md) | 18/33/0 | DPS | — |
-| [Restoration — PvP (generated)](builds/restoration-pvp.md) | 0/20/31 | HEALER | — |
+| [Elemental — PvP (derived)](builds/elemental-pvp.md) | 35/16/0 | DPS | — |
+| [Enhancement — PvP (derived)](builds/enhancement-pvp.md) | 18/33/0 | DPS | — |
+| [Restoration — PvP (derived)](builds/restoration-pvp.md) | 0/20/31 | HEALER | — |
 
 Classic Era reference builds: [pvp-elemental-ns](../talents/classic-baseline/pvp-elemental-ns.md).
 

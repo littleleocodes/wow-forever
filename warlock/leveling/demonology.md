@@ -2,6 +2,8 @@
 
 [Warlock](../README.md) > [Leveling](README.md) > Demonology
 
+**✅ Recommended** for leveling (the best warlock spec here, or within 3% of it).
+
 **[Demonology — Leveling](../research/leveling/builds/demonology-leveling.md)** (21/30/0) — [open the talent tree](https://talentsforever.com/warlock/60/00550020134001-235523000100000135--4)
 
 > ⚗ Generated build: no hand-made Demonology build exists for this mode yet, so this is the stats model's best Demonology build. A starting point, not a proven build.

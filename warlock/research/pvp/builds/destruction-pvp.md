@@ -1,4 +1,4 @@
-# Destruction — PvP (generated) — 21/0/30
+# Destruction — PvP (derived) — 21/0/30
 
 *[Warlock](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Destruction pvp build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Destruction PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Destruction (model affliction-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Destruction builds agree with (7592 builds).
 
 ## Point allocation
 
@@ -39,35 +39,39 @@ The best Destruction pvp build with at least 30 points in Destruction, generated
 | **Destructive Reach** | 2/2 | changed | Increases the range of your damaging spells by 20%. |
 | **Bane** | 3/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.3 sec and your Soul Fire spell by 1.2 sec. |
 | **Molten Skin** | 5/5 | **NEW** | Reduces all damage taken by 10%. |
-| **Cataclysm** | 3/3 | changed | Reduces the Mana cost of your Destruction spells by 10%. |
 | **Aftermath** | 5/5 | changed | Increases the initial damage of your Immolate spell by 50% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
 | **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
 | **Intensity** | 3/3 | changed | Gives you a 70% chance to resist interruption caused by damage while casting or channeling any Destruction spell. |
+| **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
 | **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
-| **Pyroclasm** | 2/2 | changed | Gives your Soul Fire spell a 26% chance to Stun the target for 3 sec, and your Rain of Fire and Hellfire spells a 26% chance over their duration to Stun targets they damage for 3 sec. |
+| **Pyroclasm** | 1/2 | changed | Gives your Soul Fire spell a 13% chance to Stun the target for 3 sec, and your Rain of Fire and Hellfire spells a 13% chance over their duration to Stun targets they damage for 3 sec. |
+| **Bane of Havoc** | 1/1 | **NEW** | Afflicts the target for 5 min, causing 15% of all damage done by the Warlock to other targets to also be dealt to the cursed target. Bane of Havoc is limited to 1 target, and only one Bane per Warlock can be active on any one target. |
 
 ## Core talents (priority order)
 
-1. **Siphon Life** — The scorer's value in this build: +21.0% of its score (model affliction-leveling).
-2. **Improved Corruption** — The scorer's value in this build: +12.0% of its score (model affliction-leveling).
-3. **Curse of Exhaustion** — The scorer's value in this build: +10.8% of its score (model affliction-leveling).
-4. **Molten Skin** — The scorer's value in this build: +9.0% of its score (model affliction-leveling).
+1. **Siphon Life** — The scorer's value in this build: +21.2% of its score (model affliction-leveling).
+2. **Improved Corruption** — The scorer's value in this build: +12.1% of its score (model affliction-leveling).
+3. **Curse of Exhaustion** — The scorer's value in this build: +10.9% of its score (model affliction-leveling).
+4. **Molten Skin** — The scorer's value in this build: +9.1% of its score (model affliction-leveling).
 5. **Pandemic** — The scorer's value in this build: +6.4% of its score (model affliction-leveling).
-6. **Suppression** — The scorer's value in this build: +5.7% of its score (model affliction-leveling).
+6. **Suppression** — The scorer's value in this build: +5.8% of its score (model affliction-leveling).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Pyroclasm -> Bane of Havoc; 3 points Cataclysm -> Agonizing Flames.
+- Where we disagree with the community: most Destruction builds take Demonic Embrace (83% take it), Shadow and Flame (83% take it), Fire and Brimstone (82% take it), Demonic Aegis (75% take it), Demonic Sacrifice (74% take it), Fel Vitality (73% take it), which the model values below this build's weakest point; this build takes Amplify Curse (5%), Curse of Exhaustion (2%), Fel Concentration (1%), Nightfall (7%), Pandemic (8%), Pyroclasm (10%), Siphon Life (2%), which few Destruction builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 - Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued.
 
 ## Open questions (verify in the live game)
 
-- A generated Destruction build: check it against the community's Destruction builds at launch.
+- A derived Destruction PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/warlock>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

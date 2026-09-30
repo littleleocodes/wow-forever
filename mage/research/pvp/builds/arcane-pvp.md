@@ -1,4 +1,4 @@
-# Arcane — PvP (generated) — 31/0/20
+# Arcane — PvP (derived) — 31/0/20
 
 *[Mage](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Arcane pvp build with at least 30 points in Arcane, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (frost-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Arcane PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Arcane (model frost-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Arcane builds agree with (5513 builds).
 
 ## Point allocation
 
@@ -25,11 +25,13 @@ The best Arcane pvp build with at least 30 points in Arcane, generated on 2026-0
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Arcane Resilience** | 1/2 | changed | Increases your Armor by an amount equal to 25% of your Intellect. |
 | **Arcane Geometry** | 2/2 | **NEW** | Increases the range of your Arcane spells by 6 yards. |
-| **Arcane Shielding** | 2/2 | **NEW** | Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by 33% and increases the resistances granted by your Mage Armor spell by 50%. |
+| **Arcane Impact** | 1/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 2%. |
+| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast. |
+| **Arcane Shielding** | 1/2 | **NEW** | Decreases the Mana lost per point of damage taken when your Mana Shield spell is active by 17% and increases the resistances granted by your Mage Armor spell by 25%. |
 | **Improved Counterspell** | 2/2 | changed | Your Counterspell also Silences the target for 4 sec. |
 | **Arcane Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Missile Barrage** | 1/1 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
-| **Arcane Mind** | 2/5 | changed | Increases your Intellect by 4% and increases the critical strike damage bonus of your Arcane spells by 40%. |
 | **Arcane Instability** | 3/3 | changed | Increases the damage done by your spells by 3% and your critical strike chance by 3%. |
 | **Arcane Power** | 1/1 | changed | For the next 15 sec, your spells deal 30% more damage while costing 30% more mana to cast. |
 
@@ -51,25 +53,28 @@ The best Arcane pvp build with at least 30 points in Arcane, generated on 2026-0
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — The scorer's value in this build: +27.7% of its score (model frost-leveling).
-2. **Shatter** — The scorer's value in this build: +16.7% of its score (model frost-leveling).
-3. **Ice Shards** — The scorer's value in this build: +14.4% of its score (model frost-leveling).
-4. **Frostbite** — The scorer's value in this build: +13.3% of its score (model frost-leveling).
+1. **Ice Lance** — The scorer's value in this build: +27.9% of its score (model frost-leveling).
+2. **Shatter** — The scorer's value in this build: +16.8% of its score (model frost-leveling).
+3. **Ice Shards** — The scorer's value in this build: +14.5% of its score (model frost-leveling).
+4. **Frostbite** — The scorer's value in this build: +13.4% of its score (model frost-leveling).
 5. **Arcane Power** — The scorer's value in this build: +6.7% of its score (model frost-leveling).
 6. **Ice Block** — The scorer's value in this build: +6.3% of its score (model frost-leveling).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model frost-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Arcane Shielding -> Missile Barrage; 1 point Arcane Mind -> Arcane Blast; 1 point Arcane Mind -> Arcane Impact.
+- Where we disagree with the community: most Arcane builds take Arcane Mind (96% take it), Incineration (71% take it), which the model values below this build's weakest point; this build takes Frostbite (15%), Ice Block (20%), Ice Lance (19%), Improved Frost Nova (19%), Shatter (14%), which few Arcane builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 - No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents that raise Arcane spells are under-valued (leveling: the fight lab plays Frost's priority list).
 
 ## Open questions (verify in the live game)
 
-- A generated Arcane build: check it against the community's Arcane builds at launch.
+- A derived Arcane PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/mage>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

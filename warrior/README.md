@@ -76,9 +76,9 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (5 builds) | [leveling-arms](research/leveling/builds/leveling-arms.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-arms](research/leveling/builds/leveling-arms.md), [protection-leveling](research/leveling/builds/protection-leveling.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (9 builds) | [fury-dw-raid](research/raid/builds/fury-dw-raid.md), [arms-2h-raid](research/raid/builds/arms-2h-raid.md), [arms-battle-raid](research/raid/builds/arms-battle-raid.md), [prot-raid-tank](research/raid/builds/prot-raid-tank.md) |
-| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (3 builds) | [arms-pvp](research/pvp/builds/arms-pvp.md), [fury-pvp](research/pvp/builds/fury-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md) |
+| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [arms-pvp](research/pvp/builds/arms-pvp.md), [arms-pvp](research/pvp/builds/arms-pvp.md), [fury-pvp](research/pvp/builds/fury-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |
 | [research/talents/classic-baseline/](research/talents/classic-baseline/README.md) | Classic Era community builds used as the baseline | |

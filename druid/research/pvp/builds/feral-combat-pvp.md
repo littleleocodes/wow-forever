@@ -1,17 +1,17 @@
-# Feral Combat — PvP (generated) — 0/31/20
+# Feral Combat — PvP (derived) — 0/32/19
 
 *[Druid](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 0/31/20 (Balance / Feral Combat / Restoration) |
+| **Build** | 0/32/19 (Balance / Feral Combat / Restoration) |
 | **Role** | DPS — PvP |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The best Feral Combat pvp build with at least 30 points in Feral Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (feral-cat-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Feral Combat PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Feral Combat (model feral-cat-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Feral Combat builds agree with (3220 builds).
 
 ## Point allocation
 
@@ -19,7 +19,7 @@ The best Feral Combat pvp build with at least 30 points in Feral Combat, generat
 
 *No points.*
 
-### Feral Combat (31)
+### Feral Combat (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -31,44 +31,48 @@ The best Feral Combat pvp build with at least 30 points in Feral Combat, generat
 | **Savage Fury** | 2/2 | changed | Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%. |
 | **Feral Charge** | 1/1 | changed | Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.  Leap behind an enemy. |
 | **Sharpened Claws** | 2/2 | changed | Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%. |
+| **Primal Bite** | 1/1 | **NEW** | Bite the target for 100% normal damage plus 26. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
+| **Blood Frenzy** | 1/2 | changed | Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point. |
 | **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
 | **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
 | **King of the Jungle** | 3/3 | **NEW** | Tiger's Fury now instantly grants you 60 Energy. |
-| **Rend and Tear** | 1/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 2%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
-### Restoration (20)
+### Restoration (19)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Nature's Focus** | 5/5 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting Arcane and Nature spells. |
 | **Furor** | 5/5 | changed | Gives you a 100% chance to gain 10 Rage when you shapeshift into Bear Form or Dire Bear Form. When you shift into Cat Form, you will regain 100% of the Energy you had when you were last in Cat Form, plus 10 Energy for each second you spent not in Bear Form, Cat Form, or Dire Bear Form, up to a maximum of 100 Energy. |
-| **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.5 sec and increases all damage you deal by 5%. |
+| **Naturalist** | 4/5 | **NEW** | Reduces the cast time of your Healing Touch spell by 0.4 sec and increases all damage you deal by 4%. |
 | **Natural Shapeshifter** | 3/3 | moved | Reduces the mana cost of all shapeshifting by 30%. |
 | **Gift of the Earthmother** | 1/1 | **NEW** | Reduces the global cooldown by 0.5 seconds on your Rejuvenation, Swiftmend, and Wild Growth spells. |
 | **Swiftmend** | 1/1 | changed | Instantly heals a target with an active Rejuvenation or Regrowth effect for an amount equal to the full duration of the periodic effect of one of those spells. |
 
 ## Core talents (priority order)
 
-1. **Natural Shapeshifter** — The scorer's value in this build: +11.7% of its score (model feral-cat-dps).
-2. **Berserk** — The scorer's value in this build: +9.8% of its score (model feral-cat-dps).
+1. **Natural Shapeshifter** — The scorer's value in this build: +11.8% of its score (model feral-cat-dps).
+2. **Berserk** — The scorer's value in this build: +9.9% of its score (model feral-cat-dps).
 3. **Feral Swiftness** — The scorer's value in this build: +9.3% of its score (model feral-cat-dps).
-4. **Thick Hide** — The scorer's value in this build: +8.8% of its score (model feral-cat-dps).
-5. **Feral Charge** — The scorer's value in this build: +7.8% of its score (model feral-cat-dps).
-6. **Brutal Impact** — The scorer's value in this build: +7.8% of its score (model feral-cat-dps).
+4. **Thick Hide** — The scorer's value in this build: +8.9% of its score (model feral-cat-dps).
+5. **Feral Charge** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
+6. **Brutal Impact** — The scorer's value in this build: +7.9% of its score (model feral-cat-dps).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model feral-cat-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Naturalist -> Primal Bite; 1 point Rend and Tear -> Blood Frenzy.
+- Where we disagree with the community: most Feral Combat builds take Rend and Tear (86% take it), Ferocity (83% take it), which the model values below this build's weakest point; this build takes Gift of the Earthmother (8%), Nature's Focus (3%), Swiftmend (9%), which few Feral Combat builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 
-- A generated Feral Combat build: check it against the community's Feral Combat builds at launch.
+- A derived Feral Combat PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/druid>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

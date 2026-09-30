@@ -113,34 +113,34 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 394 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 391 DPS), *Level 60* (community simulator, 384 DPS), *Enhancement 16/35/0* (community simulator, 365 DPS)
+### [`enhancement-raid`](builds/enhancement-raid.md) (ours: hand draft, 403 DPS), [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (ours: optimizer, 394 DPS), [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) (ours: hand draft, 391 DPS), *Level 60* (community simulator, 384 DPS), *Enhancement 16/35/0* (community simulator, 365 DPS)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) casts/min | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) casts/min | *Level 60* casts/min | *Enhancement 16/35/0* casts/min |
-|---|---|---|---|---|---|
-| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 | 0.3 | 0.3 | 0.3 |
-| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 | 0.3 | 0.3 | 0.3 |
-| 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 4 | cast Stormstrike | 13.9 | 13.9 | 14.1 | 13.9 |
-| 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.9 | 3.9 | 3.8 | 3.8 |
-| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 | 1.0 | 0.9 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 3.6 | 3.6 | 3.3 | 2.2 |
-| 8 | cast Earth Shock | 3.9 | 3.9 | 4.7 | 2.5 |
+| # | Priority (the first line whose condition holds is cast) | [`enhancement-raid`](builds/enhancement-raid.md) casts/min | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) casts/min | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) casts/min | *Level 60* casts/min | *Enhancement 16/35/0* casts/min |
+|---|---|---|---|---|---|---|
+| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 3 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
+| 4 | cast Stormstrike | 14.1 | 13.9 | 13.9 | 14.1 | 13.9 |
+| 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.9 | 3.9 | 3.9 | 3.8 | 3.8 |
+| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 | 1.0 | 1.0 | 1.0 | 0.9 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 | 3.6 | 3.6 | 3.3 | 2.2 |
+| 8 | cast Earth Shock | 4.7 | 3.9 | 3.9 | 4.7 | 2.5 |
 
 Damage by ability:
 
-| Ability | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | *Level 60* | *Enhancement 16/35/0* |
-|---|---|---|---|---|
-| Auto Attack | 33% | 34% | 33% | 35% |
-| Windfury Weapon | 21% | 22% | 21% | 22% |
-| Stormstrike | 13% | 13% | 13% | 14% |
-| Earth Shock | 8% | 8% | 9% | 5% |
-| Flame Shock | 8% | 7% | 7% | 5% |
-| Lightning Bolt | 7% | 7% | 7% | 7% |
-| Attack | 6% | 5% | 5% | 6% |
-| Elemental Sharpening Stone | 3% | 3% | 3% | 3% |
-| Dragonbreath Chili | 2% | 2% | 2% | 2% |
+| Ability | [`enhancement-raid`](builds/enhancement-raid.md) | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | *Level 60* | *Enhancement 16/35/0* |
+|---|---|---|---|---|---|
+| Auto Attack | 32% | 33% | 34% | 33% | 35% |
+| Windfury Weapon | 21% | 21% | 22% | 21% | 22% |
+| Stormstrike | 13% | 13% | 13% | 13% | 14% |
+| Earth Shock | 9% | 8% | 8% | 9% | 5% |
+| Flame Shock | 9% | 8% | 7% | 7% | 5% |
+| Lightning Bolt | 6% | 7% | 7% | 7% | 7% |
+| Attack | 6% | 6% | 5% | 5% | 6% |
+| Elemental Sharpening Stone | 3% | 3% | 3% | 3% | 3% |
+| Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% |
 
 ## stormcaller-dps
 

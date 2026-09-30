@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-aoe`: score +56.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-aoe`: score +54.6% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -34,10 +34,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
-| **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
+| **Unholy Power** | 4/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 8%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
-| **Demonic Energies** | 1/2 | **NEW** | You heal your pet for 8% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 50% of the Mana you gain. |
+| **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
 | **Master Summoner** | 2/2 | moved | Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%. |
 | **Fel Domination** | 1/1 | changed | Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%. |
@@ -58,30 +58,30 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | 18-19 | Demonology | Improved Voidwalker | 2 | 0/10/0 |
 | 20 | Demonology | Demonic Sacrifice | 1 | 0/11/0 |
 | 21 | Demonology | Improved Voidwalker | 1 | 0/12/0 |
-| 22-26 | Demonology | Unholy Power | 5 | 0/17/0 |
+| 22 | Demonology | Demonic Energies | 1 | 0/13/0 |
+| 23-26 | Demonology | Unholy Power | 4 | 0/17/0 |
 | 27-28 | Demonology | Master Summoner | 2 | 0/19/0 |
 | 29 | Demonology | Fel Domination | 1 | 0/20/0 |
 | 30 | Demonology | Soul Link | 1 | 0/21/0 |
 | 31-33 | Demonology | Demonic Knowledge | 3 | 0/24/0 |
 | 34-38 | Affliction | Improved Corruption | 5 | 5/24/0 |
 | 39-43 | Affliction | Suppression | 5 | 10/24/0 |
-| 44-48 | Affliction | Malediction | 5 | 15/24/0 |
-| 49-51 | Affliction | Pandemic | 3 | 18/24/0 |
-| 52-53 | Affliction | Improved Bane of Agony | 2 | 20/24/0 |
-| 54 | Affliction | Improved Life Tap | 1 | 21/24/0 |
-| 55 | Affliction | Amplify Curse | 1 | 22/24/0 |
-| 56 | Affliction | Improved Life Tap | 1 | 23/24/0 |
+| 44-45 | Affliction | Improved Life Tap | 2 | 12/24/0 |
+| 46-50 | Affliction | Malediction | 5 | 17/24/0 |
+| 51-53 | Affliction | Pandemic | 3 | 20/24/0 |
+| 54-55 | Affliction | Improved Bane of Agony | 2 | 22/24/0 |
+| 56 | Affliction | Amplify Curse | 1 | 23/24/0 |
 | 57-58 | Affliction | Malevolence | 2 | 25/24/0 |
 | 59-60 | Affliction | Shadow Mastery | 2 | 27/24/0 |
 
 ## Core talents (priority order)
 
-1. **Soul Link** — Removing it costs 18.6 points of score in this model.
-2. **Improved Corruption** — Removing it costs 6.0 points of score in this model.
-3. **Demonic Knowledge** — Removing it costs 3.4 points of score in this model.
-4. **Suppression** — Removing it costs 2.0 points of score in this model.
-5. **Demonic Embrace** — Removing it costs 1.1 points of score in this model.
-6. **Demonic Aegis** — Removing it costs 0.8 points of score in this model.
+1. **Soul Link** — Removing it costs 17.8 points of score in this model.
+2. **Improved Corruption** — Removing it costs 5.8 points of score in this model.
+3. **Demonic Knowledge** — Removing it costs 3.2 points of score in this model.
+4. **Demonic Embrace** — Removing it costs 1.9 points of score in this model.
+5. **Suppression** — Removing it costs 1.8 points of score in this model.
+6. **Demonic Aegis** — Removing it costs 1.3 points of score in this model.
 7. **Malediction** — Removing it costs 0.6 points of score in this model.
 8. **Fel Domination** — Removing it costs 0.5 points of score in this model.
 
@@ -108,7 +108,7 @@ What this build casts per kill ([report](../fightlab/affliction-leveling-aoe.md)
 
 ## Notes
 
-- Report: warlock/talents/forever/optimizer/affliction-leveling-leveling-aoe.md
+- Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-aoe.md
 
 ## Open questions (verify in the live game)
 

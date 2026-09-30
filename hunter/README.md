@@ -10,11 +10,11 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) ⚗<br>27 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) ⚗<br>438 DPS | [Beast Mastery — PvP](pvp/beast-mastery.md) ⚗ |
-| **Marksmanship** | [Leveling — Marksmanship with a pet](leveling/marksmanship.md)<br>27 s/kill | [Marksmanship without a pet](raid/marksmanship.md)<br>420 DPS | [Marksmanship with Survival support](pvp/marksmanship.md) |
-| **Survival** | [Melee Survival leveling](leveling/survival.md)<br>27 s/kill | [Melee hunter](raid/survival.md)<br>424 DPS | [Survival — PvP](pvp/survival.md) ⚗ |
+| **Beast Mastery** | [Beast Mastery — Leveling](leveling/beast-mastery.md) ⚗<br>27 s/kill | **✅ Recommended**<br>[Beast Mastery — Raid](raid/beast-mastery.md) 🔬<br>448 DPS | [Beast Mastery — PvP](pvp/beast-mastery.md) 🔬 |
+| **Marksmanship** | [Leveling — Marksmanship with a pet](leveling/marksmanship.md)<br>27 s/kill | [Marksmanship without a pet](raid/marksmanship.md)<br>420 DPS | [Marksmanship — PvP](pvp/marksmanship.md) 🔬 |
+| **Survival** | [Melee Survival leveling](leveling/survival.md)<br>27 s/kill | **✅ Recommended**<br>[Survival — Raid](raid/survival.md) 🔬<br>438 DPS | [Survival — PvP](pvp/survival.md) 🔬 |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
 ### Hybrid builds
 
@@ -47,17 +47,17 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
 | 1 | [Beast-Marks](raid/beast-marks.md) — Marksmanship — Summon Hawk | 448 | 806 | 423 | best |
-| 2 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Raid ⚗ | 438 | 802 | 409 | -2% |
-| 3 | [Survival](raid/survival.md) — Melee hunter | 424 | 951 | 406 | -5% |
+| 2 | [Beast Mastery](raid/beast-mastery.md) — Beast Mastery — Raid 🔬 | 448 | 788 | 423 | -0% |
+| 3 | [Survival](raid/survival.md) — Survival — Raid 🔬 | 438 | 953 | 418 | -2% |
 | 4 | [Marksmanship](raid/marksmanship.md) — Marksmanship without a pet | 420 | 841 | 373 | -6% |
 
 ### PvP
 
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
-- [Beast Mastery](pvp/beast-mastery.md) — Beast Mastery — PvP ⚗: 31/2/18
-- [Marksmanship](pvp/marksmanship.md) — Marksmanship with Survival support: 0/31/20
-- [Survival](pvp/survival.md) — Survival — PvP ⚗: 0/21/30
+- [Beast Mastery](pvp/beast-mastery.md) — Beast Mastery — PvP 🔬: 31/0/20
+- [Marksmanship](pvp/marksmanship.md) — Marksmanship — PvP 🔬: 0/31/20
+- [Survival](pvp/survival.md) — Survival — PvP 🔬: 0/21/30
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 
@@ -87,8 +87,8 @@ The research behind the pages above: every build, report and simulation.
 | Folder | What is in it | Hand drafts |
 |---|---|---|
 | [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (10 builds) | [bm-solo-farm](research/leveling/builds/bm-solo-farm.md), [leveling-beast-mastery](research/leveling/builds/leveling-beast-mastery.md), [leveling-melee](research/leveling/builds/leveling-melee.md), [beast-mastery-leveling](research/leveling/builds/beast-mastery-leveling.md) |
-| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (12 builds) | [bm-mm-raid](research/raid/builds/bm-mm-raid.md), [bm-mm-full-buffs-raid](research/raid/builds/bm-mm-full-buffs-raid.md), [mm-lone-wolf-raid](research/raid/builds/mm-lone-wolf-raid.md), [mm-hawk-raid](research/raid/builds/mm-hawk-raid.md), [survival-melee](research/raid/builds/survival-melee.md), [melee-survival-raid](research/raid/builds/melee-survival-raid.md), [beast-mastery-raid](research/raid/builds/beast-mastery-raid.md) |
-| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (3 builds) | [pvp-mm-surv](research/pvp/builds/pvp-mm-surv.md), [beast-mastery-pvp](research/pvp/builds/beast-mastery-pvp.md), [survival-pvp](research/pvp/builds/survival-pvp.md) |
+| [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (13 builds) | [bm-mm-raid](research/raid/builds/bm-mm-raid.md), [bm-mm-full-buffs-raid](research/raid/builds/bm-mm-full-buffs-raid.md), [mm-lone-wolf-raid](research/raid/builds/mm-lone-wolf-raid.md), [mm-hawk-raid](research/raid/builds/mm-hawk-raid.md), [survival-melee](research/raid/builds/survival-melee.md), [melee-survival-raid](research/raid/builds/melee-survival-raid.md), [beast-mastery-raid](research/raid/builds/beast-mastery-raid.md), [survival-raid](research/raid/builds/survival-raid.md) |
+| [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-mm-surv](research/pvp/builds/pvp-mm-surv.md), [beast-mastery-pvp](research/pvp/builds/beast-mastery-pvp.md), [marksmanship-pvp](research/pvp/builds/marksmanship-pvp.md), [survival-pvp](research/pvp/builds/survival-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |
 | [research/talents/forever/](research/talents/forever/talent-trees.md) | Talent trees, the baseline audit, [adaptation notes](research/talents/forever/README.md) and `proposed-builds.json` (the source of truth for every build above) | |
 | [research/talents/classic-baseline/](research/talents/classic-baseline/README.md) | Classic Era community builds used as the baseline | |

@@ -78,7 +78,7 @@ Report: [fightlab/ret-dps.md](fightlab/ret-dps.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.6 | 4.5 | 5.5 | 5.1 | 5.9 | 33% |
+| Melee | 3.6 | 4.5 | 5.5 | 5.1 | 5.9 | 34% |
 | Judgement | 1.7 | 2.1 | 2.5 | 2.4 | 2.6 | 21% |
 | Holy Strike | 1.2 | 1.6 | 2.0 | 1.8 | 2.1 | 15% |
 | Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 17% |

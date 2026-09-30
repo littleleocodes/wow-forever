@@ -1,4 +1,4 @@
-# Beast Mastery — Raid (generated) — 30/21/0
+# Beast Mastery — Raid (derived) — 30/21/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Beast Mastery raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry bm-raid, training dummy) from the spec's best build beast-mastery-raid, 30+ points kept in Beast Mastery.
 
 ## Point allocation
 
@@ -20,14 +20,13 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
+| **Endurance Training** | 2/5 | changed | Increases the Health and Armor of your pets by 6%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
-| **Intimidation** | 1/1 | changed | Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 | **Frenzy** | 5/5 | unchanged | Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike. |
 
@@ -37,23 +36,14 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 2/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%. |
+| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
-| **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Mortal Shots** | 3/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 18%. |
 
 ### Survival (0)
 
 *No points.*
-
-## Core talents (priority order)
-
-1. **Summon Hawk** — The scorer's value in this build: +23.5% of its score (model bm-leveling).
-2. **Mortal Shots** — The scorer's value in this build: +15.8% of its score (model bm-leveling).
-3. **Unleashed Fury** — The scorer's value in this build: +14.4% of its score (model bm-leveling).
-4. **Improved Stings** — The scorer's value in this build: +13.7% of its score (model bm-leveling).
-5. **Lethal Attacks** — The scorer's value in this build: +12.9% of its score (model bm-leveling).
-6. **Frenzy** — The scorer's value in this build: +11.8% of its score (model bm-leveling).
 
 ## Rank among our builds and the community simulator's
 
@@ -62,7 +52,7 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 448 | +0.0% | 806 | +0.0% | 37 s |
-| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 438 | -2.2% | 802 | -0.4% | 42 s |
+| 2 | **[`beast-mastery-raid`](beast-mastery-raid.md)** | ours: hand draft | 30/21/0 | 448 | -0.0% | 788 | -2.2% | 25 s |
 | 3 | *Beast Mastery 35/16/0* | community simulator | - | 416 | -7.1% | 761 | -5.5% | 30 s |
 
 ## Rotation (community simulator, training dummy)
@@ -88,7 +78,7 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`beast-mastery-raid`](beast-mastery-raid.md) casts/min |
 |---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 9.0 |
+| 2 | cast Summon Hawk | 10.0 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
 
@@ -96,24 +86,25 @@ Damage by ability:
 
 | Ability | [`beast-mastery-raid`](beast-mastery-raid.md) |
 |---|---|
-| Auto Shot | 42% |
-| Summon Hawk | 28% |
+| Auto Shot | 41% |
+| Summon Hawk | 30% |
 | Serpent Sting | 18% |
-| Pet: Auto Attack | 9% |
+| Pet: Auto Attack | 8% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 
 ## Notes
 
-- Generated 2026-09-30 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.
+- Simulator talent search from beast-mastery-raid: 1 point Intimidation -> Endurance Training; 2 points Mortal Shots -> Efficiency (+2.2% DPS on the search's third seed).
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
+- A derived Beast Mastery raid build: check it against the community's Beast Mastery builds at launch.
 
 ## Sources
 
-- <https://talentsforever.com/hunter>
+- <https://github.com/ElliotWood/Forever>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

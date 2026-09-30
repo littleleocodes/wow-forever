@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `solo-60`: score +38.7% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `solo-60`: score +39.2% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -64,14 +64,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | 26 | Retribution | Pursuit of Justice | 1 | 0/0/17 |
 | 27-29 | Retribution | Conviction | 3 | 0/0/20 |
 | 30-32 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/23 |
-| 33 | Retribution | Repentance | 1 | 0/0/24 |
-| 34 | Retribution | Conviction | 1 | 0/0/25 |
+| 33 | Retribution | Conviction | 1 | 0/0/24 |
+| 34 | Retribution | Vengeance | 1 | 0/0/25 |
 | 35-36 | Retribution | Instrument of Law | 2 | 0/0/27 |
 | 37 | Retribution | Champion of the Light | 1 | 0/0/28 |
 | 38-42 | Holy | Divine Strength | 5 | 5/0/28 |
 | 43-45 | Holy | Improved Seals | 3 | 8/0/28 |
 | 46-47 | Retribution | Champion of the Light | 2 | 8/0/30 |
-| 48-50 | Retribution | Vengeance | 3 | 8/0/33 |
+| 48 | Retribution | Repentance | 1 | 8/0/31 |
+| 49-50 | Retribution | Vengeance | 2 | 8/0/33 |
 | 51-53 | Retribution | Vindication | 3 | 8/0/36 |
 | 54-55 | Holy | Divine Intellect | 2 | 10/0/36 |
 | 56-58 | Holy | Reverence | 3 | 13/0/36 |
@@ -79,13 +80,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Core talents (priority order)
 
-1. **Seal of Command** — Removing it costs 5.7 points of score in this model.
-2. **Sanctified Judgement** — Removing it costs 3.5 points of score in this model.
-3. **Two-Handed Weapon Specialization** — Removing it costs 3.5 points of score in this model.
+1. **Seal of Command** — Removing it costs 5.8 points of score in this model.
+2. **Two-Handed Weapon Specialization** — Removing it costs 3.5 points of score in this model.
+3. **Sanctified Judgement** — Removing it costs 3.5 points of score in this model.
 4. **Improved Seals** — Removing it costs 2.5 points of score in this model.
 5. **Pursuit of Justice** — Removing it costs 2.3 points of score in this model.
 6. **Instrument of Law** — Removing it costs 1.8 points of score in this model.
-7. **Champion of the Light** — Removing it costs 1.6 points of score in this model.
+7. **Champion of the Light** — Removing it costs 1.7 points of score in this model.
 8. **Conviction** — Removing it costs 1.6 points of score in this model.
 
 ## Leveling rotation
@@ -94,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Report: paladin/talents/forever/optimizer/ret-dps-solo-60.md
+- Report: paladin/research/talents/forever/optimizer/ret-dps-solo-60.md
 
 ## Open questions (verify in the live game)
 

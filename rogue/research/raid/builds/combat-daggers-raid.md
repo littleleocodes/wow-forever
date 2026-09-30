@@ -71,19 +71,20 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 403 | +0.0% | 720 | +0.0% | 0 s |
-| 2 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -0.9% | 712 | -1.1% | 0 s |
-| 3 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -2.1% | 702 | -2.5% | 0 s |
-| 4 | *Backstab* | community simulator | - | 371 | -7.8% | 672 | -6.6% | 0 s |
-| 5 | *Mutilate* | community simulator | - | 371 | -7.9% | 648 | -10.0% | 0 s |
-| 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -10.8% | 630 | -12.5% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -13.8% | 620 | -13.8% | 0 s |
-| 8 | *Sinister Strike* | community simulator | - | 334 | -17.0% | 629 | -12.6% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -35.9% | 500 | -30.5% | 0 s |
+| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -1.1% | 0 s |
+| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 403 | -4.5% | 720 | +0.0% | 0 s |
+| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | -1.1% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -2.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -6.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -10.0% | 0 s |
+| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -12.5% | 0 s |
+| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -13.8% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -12.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -30.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

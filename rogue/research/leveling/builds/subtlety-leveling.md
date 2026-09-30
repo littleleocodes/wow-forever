@@ -1,4 +1,4 @@
-# Subtlety — Leveling (generated) — 5/16/30
+# Subtlety — Leveling (derived) — 5/16/30
 
 *[Rogue](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Subtlety leveling build with at least 30 points in Subtlety, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Subtlety leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Subtlety build, 30+ points kept in Subtlety, playing the subtlety-leveling rotation; the talent order is the stats model's (combat-swords-raid).
 
 ## Point allocation
 
@@ -99,12 +99,12 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.
-- Scored with the Combat swords model (no Subtlety leveling model): Subtlety's openers and Hemorrhage are under-valued.
+- Fight-lab talent search (fightlab/fl_talent_opt.py): start subtlety-leveling, moves: none (the start was already the best the search found). Race against subtlety-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.0% faster per kill.
+- Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A generated Subtlety build: check it against the community's Subtlety builds at launch.
+- A derived Subtlety leveling build: check it while leveling at launch.
 
 ## Sources
 

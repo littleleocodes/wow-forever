@@ -88,7 +88,7 @@ The research behind the pages above: every build, report and simulation.
 
 | Folder | What is in it | Hand drafts |
 |---|---|---|
-| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (4 builds) | [leveling-retribution](research/leveling/builds/leveling-retribution.md) |
+| [research/leveling/](research/leveling/README.md) | Leveling and solo builds, the leveling guide, rotation and respec plan, fight-lab reports (6 builds) | [leveling-retribution](research/leveling/builds/leveling-retribution.md), [holy-leveling](research/leveling/builds/holy-leveling.md), [protection-leveling](research/leveling/builds/protection-leveling.md) |
 | [research/raid/](research/raid/README.md) | Raid DPS, tank and healer builds, training-dummy and raid-sim rankings, rotation, gear, consumables (8 builds) | [holy-raid-healer](research/raid/builds/holy-raid-healer.md), [ret-raid-dps](research/raid/builds/ret-raid-dps.md), [ret-full-buffs-raid](research/raid/builds/ret-full-buffs-raid.md), [prot-tank](research/raid/builds/prot-tank.md) |
 | [research/pvp/](research/pvp/README.md) | PvP builds (no rotation: PvP play depends on the fight) (4 builds) | [pvp-shockadin](research/pvp/builds/pvp-shockadin.md), [holy-pvp](research/pvp/builds/holy-pvp.md), [protection-pvp](research/pvp/builds/protection-pvp.md), [retribution-pvp](research/pvp/builds/retribution-pvp.md) |
 | [research/spells/](research/spells/README.md) | Spell ranks and numbers from the beta client | |

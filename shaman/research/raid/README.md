@@ -14,16 +14,17 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Elemental — Lava Burst / Lightning Overload (simulator winner adopted 2026-09-26)](builds/elemental-raid-dps.md) | 29/22/0 | DPS | [elemental-raid-dps](../talents/classic-baseline/elemental-raid-dps.md) |
 | [Enhancement — Stormstrike / Maelstrom Weapon (simulator winner adopted 2026-09-27)](builds/enhancement-raid-dps.md) | 11/31/9 | DPS | [enhancement-raid-support](../talents/classic-baseline/enhancement-raid-support.md) |
 | [Elemental — Raid (generated)](builds/elemental-raid.md) | 31/7/13 | DPS | — |
+| [Enhancement — Raid (derived)](builds/enhancement-raid.md) | 11/31/9 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
 | Build | Split | Profile |
 |---|---|---|
-| [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 0/10/41 | raid-heal |
 | [opt-elemental-dps-raid-dps](builds/opt-elemental-dps-raid-dps.md) | 29/22/0 | raid-dps |
 | [opt-elemental-dps-parse](builds/opt-elemental-dps-parse.md) | 29/22/0 | parse |
 | [opt-enhancement-dps-raid-dps](builds/opt-enhancement-dps-raid-dps.md) | 11/31/9 | raid-dps |
 | [opt-enhancement-dps-parse](builds/opt-enhancement-dps-parse.md) | 10/31/10 | parse |
+| [opt-resto-heal-raid-heal](builds/opt-resto-heal-raid-heal.md) | 0/10/41 | raid-heal |
 
 Classic Era reference builds: [resto-raid-healer](../talents/classic-baseline/resto-raid-healer.md), [elemental-raid-dps](../talents/classic-baseline/elemental-raid-dps.md), [enhancement-raid-support](../talents/classic-baseline/enhancement-raid-support.md).
 
@@ -46,10 +47,11 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 394 | +0.0% | 757 | +0.0% | 42 s |
-| 2 | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -0.9% | 751 | -0.8% | 42 s |
-| 3 | *Level 60* | community simulator | - | 384 | -2.7% | 749 | -1.2% | 52 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 365 | -7.4% | 726 | -4.1% | 99 s |
+| 1 | [`enhancement-raid`](builds/enhancement-raid.md) | ours: hand draft | 11/31/9 | 403 | +0.0% | 754 | -0.4% | 18 s |
+| 2 | [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 394 | -2.1% | 757 | +0.0% | 42 s |
+| 3 | [`enhancement-raid-dps`](builds/enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -2.9% | 751 | -0.8% | 42 s |
+| 4 | *Level 60* | community simulator | - | 384 | -4.7% | 749 | -1.2% | 52 s |
+| 5 | *Enhancement 16/35/0* | community simulator | - | 365 | -9.3% | 726 | -4.1% | 99 s |
 
 **stormcaller-dps**
 
@@ -71,7 +73,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Fire Nova | Elemental | 52 | 10 sec | Instantly inflicts 413 to 459 fire damage to enemies within 10 yd of your active Fire totem. | not cast by any raced build | enhancement-dps (raid): insert before the filler: cast Fire Nova (+7.3%); enhancement-dps (raid): move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight le (+0.2%) | no damage of its own, 0.5 casts a kill: `opt-enhancement-dps-leveling-aoe` at 60 (enhancement-dps-aoe) | Now a spell with a 10 s cooldown instead of a totem: area damage around the fire totem. |
 | Lava Burst | Elemental | 60 | 10 sec | You hurl molten lava at the target, dealing 192 to 248 Fire damage. | 16% of the damage, 4.7 casts/min: [`elemental-raid`](builds/elemental-raid.md) (elemental-dps) | - | 14% of the damage, 1.1 casts a kill: `opt-elemental-dps-leveling-st` at 60 (elemental-dps-opt) | A new Elemental nuke (10 s cooldown, more damage with Flame Shock on the target); the simulator's Elemental rotation casts it. |
 | Totemic Recall | Elemental | 20 | - | Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall. | not cast by any raced build | - | not cast | Utility. |
-| Rage of the Farseer | Enhancement | 40 | 3 min | Increases your attack speed by 30% for 25 sec. | no damage of its own, 0.3 casts/min: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps) | - | not cast | Enhancement cooldown: 30% attack speed for 25 s. |
+| Rage of the Farseer | Enhancement | 40 | 3 min | Increases your attack speed by 30% for 25 sec. | no damage of its own, 0.3 casts/min: [`enhancement-raid`](builds/enhancement-raid.md) (enhancement-dps) | - | not cast | Enhancement cooldown: 30% attack speed for 25 s. |
 | Totemic Projection | Enhancement | 22 | 1 min | Relocates your active totems to the specified location. | not cast by any raced build | - | not cast | Utility. |
 | Riptide | Restoration | 60 | 6 sec | Heals a friendly target for 799 to 883, an additional 805 over 15 sec, and increases the effectiveness of your Chain Heal casts directly on that targ… | not cast by any raced build | - | not cast | Healing. |
 | Water Shield | Restoration | 20 | 15 sec | The caster is surrounded by 3 globes of water. | not cast by any raced build | - | not cast | Mana on being hit. |
@@ -80,9 +82,9 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| The simulator's Elemental/Enhancement hybrid preset (Stormcaller) tuned as a target of its own | *Stormcaller 28/23/0* | - | 382 | 494 | -3.1% on the dummy; -34.8% in a raid. The talent search from the preset ended on our Elemental draft's talents (29/22/0): the hybrid is the Elemental build. | from `sim preset: Stormcaller 28/23/0`, 4 moves | - |
+| The simulator's Elemental/Enhancement hybrid preset (Stormcaller) tuned as a target of its own | *Stormcaller 28/23/0* | - | 382 | 494 | -5.1% on the dummy; -34.8% in a raid. The talent search from the preset ended on our Elemental draft's talents (29/22/0): the hybrid is the Elemental build. | from `sim preset: Stormcaller 28/23/0`, 4 moves | - |
 
-The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 394 DPS; in a raid: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 757 DPS.
+The class's best raid DPS build on the training dummy: [`enhancement-raid`](builds/enhancement-raid.md) (enhancement-dps), 403 DPS; in a raid: [`opt-enhancement-dps-raid-dps`](builds/opt-enhancement-dps-raid-dps.md) (enhancement-dps), 757 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -106,18 +108,11 @@ The class's best raid DPS build on the training dummy: [`opt-enhancement-dps-rai
 | `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 369 | -4.7% | 1 | - |
 | `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 367 | -5.3% | 0 | +65% |
 | `elemental-dps` | dummy | sim preset: Level 60 | - | 362 | -6.5% | 0 | - |
-| `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | +0.0% | 42 | +100% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r7` | 11/31/9 | 394 | +0.0% | 42 | +100% |
-| `enhancement-dps` | dummy | `enhancement-raid-dps` | 11/31/9 | 391 | -0.9% | 42 | +97% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r6` | 11/31/9 | 391 | -0.9% | 42 | +97% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r5` | 11/31/9 | 387 | -1.8% | 52 | +94% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r4` | 8/32/11 | 386 | -2.1% | 58 | +94% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r3` | 15/36/0 | 384 | -2.5% | 51 | +94% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 384 | -2.5% | 63 | +94% |
-| `enhancement-dps` | dummy | sim preset: Level 60 | - | 384 | -2.7% | 52 | - |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r2` | 18/33/0 | 382 | -3.1% | 51 | +93% |
-| `enhancement-dps` | dummy | `cand-enhancement-dps-r1` | 14/37/0 | 382 | -3.1% | 64 | +92% |
-| `enhancement-dps` | dummy | sim preset: Enhancement 16/35/0 | - | 365 | -7.4% | 99 | - |
+| `enhancement-dps` | dummy | `enhancement-raid` | 11/31/9 | 403 | +0.0% | 18 | +99% |
+| `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | -2.1% | 42 | +100% |
+| `enhancement-dps` | dummy | `enhancement-raid-dps` | 11/31/9 | 391 | -2.9% | 42 | +97% |
+| `enhancement-dps` | dummy | sim preset: Level 60 | - | 384 | -4.7% | 52 | - |
+| `enhancement-dps` | dummy | sim preset: Enhancement 16/35/0 | - | 365 | -9.3% | 99 | - |
 | `stormcaller-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 382 | +0.0% | 0 | - |
 
 Scorer = the stats model's own score of the allocation for its raid profile (relative to a talentless character; comparable within a spec model only). Tanks: DPS with the tank flag set (threat and mitigation are in the report JSON). Healers are not simulated (the simulator has no healing rotations for them).
@@ -140,6 +135,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `elemental-dps` | sim preset: Elemental 31/6/14 | - | 376 | 452 | 479 | 505 | 531 |
 | `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 369 | 456 | 475 | 490 | 518 |
 | `elemental-dps` | sim preset: Level 60 | - | 362 | 436 | 461 | 487 | 509 |
+| `enhancement-dps` | `enhancement-raid` | 11/31/9 | 403 | 458 | 754 | 751 | 804 |
 | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 11/31/9 | 394 | 444 | 757 | 755 | 812 |
 | `enhancement-dps` | `enhancement-raid-dps` | 11/31/9 | 391 | 440 | 751 | 749 | 806 |
 | `enhancement-dps` | `opt-enhancement-dps-parse` | 10/31/10 | 390 | 438 | 758 | 757 | 818 |
@@ -158,7 +154,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 
 ## Healer lab (Monte Carlo raid-healing model)
 
-[`heallab/`](heallab/) runs the raid-heal builds through the healer lab (`_reference/data/heallab/`): one healer keeps a tank and four raid members alive for five minutes against boss melee, spikes and raid pulses, with the beta spellbook's heals and the beta tooltips' talent numbers. **Capacity** is the multiplier on all incoming damage the build survives in 90% of runs; a talent's value is the capacity it adds. A model of stated assumptions (`heallab/tables.py`: the group, the boss, the healer's gear, consumables), not a measurement. Section generated by `_reference/data/render_heallab_sections.py` on 2026-09-29 — do not hand-edit.
+[`heallab/`](heallab/) runs the raid-heal builds through the healer lab (`_reference/data/heallab/`): one healer keeps a tank and four raid members alive for five minutes against boss melee, spikes and raid pulses, with the beta spellbook's heals and the beta tooltips' talent numbers. **Capacity** is the multiplier on all incoming damage the build survives in 90% of runs; a talent's value is the capacity it adds. A model of stated assumptions (`heallab/tables.py`: the group, the boss, the healer's gear, consumables), not a measurement. Section generated by `_reference/data/render_heallab_sections.py` on 2026-09-30 — do not hand-edit.
 
 | Spec model | Build | Split | Capacity | Effective HPS | Overheal | Out of mana | Healing split |
 |---|---|---|---|---|---|---|---|

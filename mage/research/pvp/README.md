@@ -11,8 +11,9 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Frost (PvP)](builds/pvp-frost.md) | 20/0/31 | DPS | [pvp-frost](../talents/classic-baseline/pvp-frost.md) |
-| [Arcane — PvP (generated)](builds/arcane-pvp.md) | 31/0/20 | DPS | — |
-| [Fire — PvP (generated)](builds/fire-pvp.md) | 0/31/20 | DPS | — |
+| [Arcane — PvP (derived)](builds/arcane-pvp.md) | 31/0/20 | DPS | — |
+| [Fire — PvP (derived)](builds/fire-pvp.md) | 0/32/19 | DPS | — |
+| [Frost — PvP (derived)](builds/frost-pvp.md) | 18/0/33 | DPS | — |
 
 Classic Era reference builds: [pvp-frost](../talents/classic-baseline/pvp-frost.md).
 

@@ -59,14 +59,15 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Rank among our builds and the community simulator's
 
-**1 of 4** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 5** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 394 | +0.0% | 757 | +0.0% | 42 s |
-| 2 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -0.9% | 751 | -0.8% | 42 s |
-| 3 | *Level 60* | community simulator | - | 384 | -2.7% | 749 | -1.2% | 52 s |
-| 4 | *Enhancement 16/35/0* | community simulator | - | 365 | -7.4% | 726 | -4.1% | 99 s |
+| 1 | [`enhancement-raid`](enhancement-raid.md) | ours: hand draft | 11/31/9 | 403 | +0.0% | 754 | -0.4% | 18 s |
+| 2 | **[`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md)** | ours: optimizer | 11/31/9 | 394 | -2.1% | 757 | +0.0% | 42 s |
+| 3 | [`enhancement-raid-dps`](enhancement-raid-dps.md) | ours: hand draft | 11/31/9 | 391 | -2.9% | 751 | -0.8% | 42 s |
+| 4 | *Level 60* | community simulator | - | 384 | -4.7% | 749 | -1.2% | 52 s |
+| 5 | *Enhancement 16/35/0* | community simulator | - | 365 | -9.3% | 726 | -4.1% | 99 s |
 
 ## Rotation (community simulator, training dummy)
 
