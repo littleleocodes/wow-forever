@@ -1,0 +1,287 @@
+{
+ "id": "fl-enhancement-enhancement-dps",
+ "allocation": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Spirit Weapons",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ],
+   [
+    "Improved Lightning Shield",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Tidal Focus",
+    5
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 2
+  },
+  {
+   "levels": "17",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-24",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 4
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "30-31",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "33",
+   "tree": "Enhancement",
+   "talent": "Spirit Weapons",
+   "points": 1
+  },
+  {
+   "levels": "34-38",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 5
+  },
+  {
+   "levels": "39-43",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "44",
+   "tree": "Enhancement",
+   "talent": "Ancestral Knowledge",
+   "points": 1
+  },
+  {
+   "levels": "45-47",
+   "tree": "Enhancement",
+   "talent": "Elemental Weapons",
+   "points": 3
+  },
+  {
+   "levels": "48-49",
+   "tree": "Enhancement",
+   "talent": "Improved Stormstrike",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Enhancement",
+   "talent": "Rage of the Farseer",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 5
+  },
+  {
+   "levels": "56-60",
+   "tree": "Enhancement",
+   "talent": "Maelstrom Weapon",
+   "points": 5
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "enhancement-dps",
+  "model": "enhancement-dps",
+  "tree": "Enhancement",
+  "start": "leveling-enhancement",
+  "starts": {
+   "leveling-enhancement": 36.90664675615709,
+   "opt-enhancement-dps-leveling-st": 37.11550117073383,
+   "opt-enhancement-dps-solo-60": 37.865978824533734,
+   "opt-enhancement-dps-leveling-aoe": 41.346679835217145,
+   "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-enhancement-scorer.json": 37.14311165393204
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Reverberation -> Improved Lightning Shield",
+    "gain_seed1": 0.004011871692433777,
+    "gain_seed2": 0.015648877473749545
+   }
+  ],
+  "incumbent": "opt-enhancement-dps-leveling-st",
+  "race": {
+   "incumbent": [
+    33.344506665710576,
+    {
+     "20": 20.965788163613162,
+     "30": 29.055227787278877,
+     "40": 34.48705179027442,
+     "50": 35.55482397908482,
+     "60": 37.01175776143779
+    }
+   ],
+   "search": [
+    32.8312600879154,
+    {
+     "20": 20.87463490500038,
+     "30": 28.871680509228334,
+     "40": 34.37899403776486,
+     "50": 34.21055991146603,
+     "60": 36.615352452038785
+    }
+   ],
+   "gain": 0.015392237856167279,
+   "all": {
+    "leveling-enhancement": [
+     33.39107572881598,
+     {
+      "20": 20.97233333320995,
+      "30": 29.3495085513724,
+      "40": 33.49366199219858,
+      "50": 36.23014507986836,
+      "60": 37.11715814794106
+     }
+    ],
+    "opt-enhancement-dps-leveling-st": [
+     33.344506665710576,
+     {
+      "20": 20.965788163613162,
+      "30": 29.055227787278877,
+      "40": 34.48705179027442,
+      "50": 35.55482397908482,
+      "60": 37.01175776143779
+     }
+    ],
+    "opt-enhancement-dps-solo-60": [
+     33.58007412704612,
+     {
+      "20": 20.965788163613162,
+      "30": 29.055227787278877,
+      "40": 34.51434017073525,
+      "50": 35.4487168491921,
+      "60": 37.86721298715964
+     }
+    ],
+    "opt-enhancement-dps-leveling-aoe": [
+     37.14055074275925,
+     {
+      "20": 23.885571842113684,
+      "30": 33.14011667146884,
+      "40": 37.90177932081037,
+      "50": 39.22396228885389,
+      "60": 41.31543207150669
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
