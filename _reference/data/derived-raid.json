@@ -321,6 +321,29 @@
    "search_gain": 0.0,
    "moves": [],
    "verdict": "start stays"
+  },
+  "Enhancement": {
+   "tree": "Enhancement",
+   "role": "dps",
+   "entry": "enhancement-dps",
+   "start": "opt-enhancement-dps-raid-dps",
+   "start_metric": 394.25910511200203,
+   "date": "2026-09-30",
+   "hand": "enhancement-raid-dps",
+   "hand_metric": 390.85330577761806,
+   "candidate": "shaman/research/raid/raidsim/candidates/derived-enhancement.json",
+   "search_gain": 0.021662399433433288,
+   "moves": [
+    {
+     "round": 1,
+     "move": "3 points Tidal Focus -> Mindfulness",
+     "gain_seed1": 0.021463533609866303,
+     "gain_seed2": 0.02145305312055279,
+     "split": "11/31/9"
+    }
+   ],
+   "gain_vs_hand": 0.030564913672203264,
+   "verdict": "replaces"
   }
  }
 }
