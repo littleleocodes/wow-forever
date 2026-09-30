@@ -1,0 +1,85 @@
+{
+ "id": "derived-arms",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    2
+   ],
+   [
+    "Spearing Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for arms-battle-raid from arms-battle-raid in the dummy setting: 221.2 -> 221.2 DPS on a third seed.",
+ "search": {
+  "start": "arms-battle-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 221.1590644056128,
+  "dps_end": 221.1590644056128,
+  "gain": 0.0,
+  "tank": false
+ }
+}

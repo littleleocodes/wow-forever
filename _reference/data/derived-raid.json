@@ -429,5 +429,37 @@
    "gain_vs_hand": 0.007177399341504298,
    "verdict": "hand stays"
   }
+ },
+ "warrior": {
+  "Arms": {
+   "tree": "Arms",
+   "role": "dps",
+   "entry": "arms-battle-raid",
+   "start": "arms-battle-raid",
+   "start_metric": 220.80526165927716,
+   "date": "2026-09-30",
+   "hand": "arms-battle-raid",
+   "hand_metric": 220.80526165927716,
+   "candidate": "warrior/research/raid/raidsim/candidates/derived-arms.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
+  },
+  "Fury": {
+   "tree": "Fury",
+   "role": "dps",
+   "entry": "fury-dw-raid",
+   "start": "fury-dw-raid",
+   "start_metric": 221.3573807978682,
+   "date": "2026-09-30",
+   "hand": "fury-dw-raid",
+   "hand_metric": 221.3573807978682,
+   "candidate": "warrior/research/raid/raidsim/candidates/derived-fury.json",
+   "search_gain": 0.0,
+   "moves": [],
+   "gain_vs_hand": 0.0,
+   "verdict": "hand stays"
+  }
  }
 }

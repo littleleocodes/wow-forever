@@ -1,0 +1,85 @@
+{
+ "id": "derived-fury",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Heroic Strike",
+    2
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for fury-dw-raid from fury-dw-raid in the dummy setting: 221.3 -> 221.3 DPS on a third seed.",
+ "search": {
+  "start": "fury-dw-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 221.34673230131938,
+  "dps_end": 221.34673230131938,
+  "gain": 0.0,
+  "tank": false
+ }
+}
