@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-**Leveling as Holy or as Shadow?** This build takes 52 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Holy is about 2.0 times as slow. Level as Holy if you want to heal dungeons on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+**Leveling as Holy or as Shadow?** This build takes 52 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Holy is about 2.0 times as slow. Its talent order takes damage talents first and puts its first point into Holy at level 28, so it only becomes a real Holy build in the 40s and 50s. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-**Leveling as Discipline or as Shadow?** This build takes 46 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Discipline is about 1.8 times as slow. Level as Discipline if you want to heal dungeons on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
+**Leveling as Discipline or as Shadow?** This build takes 46 s per kill (level-weighted, 20-60), [Shadow](../leveling/shadow.md) 26 s: Discipline is about 1.8 times as slow. Its talent order takes damage talents first and puts its first point into Discipline at level 29, so it only becomes a real Discipline build in the 40s and 50s. Level this way if you want to heal dungeons later on the way; otherwise level as Shadow and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-**Leveling as Protection or as Arms?** This build takes 37 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 28 s: Protection is 33% slower. Level as Protection if you want to tank dungeons on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Arms?** This build takes 37 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 28 s: Protection is 33% slower. Its talent order takes damage talents first and puts its first point into Protection at level 30, so it only becomes a real Protection build in the 40s and 50s. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

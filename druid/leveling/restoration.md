@@ -6,7 +6,7 @@
 
 > 🔬 Derived build: searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one. A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Feral Combat?** This build takes 28 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 25 s: Restoration is 10% slower. Level as Restoration if you want to heal dungeons on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Feral Combat?** This build takes 28 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 25 s: Restoration is 10% slower. Its talent order takes damage talents first and puts its first point into Restoration at level 31, so it only becomes a real Restoration build in the 40s and 50s. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
 
 ## How to play
 

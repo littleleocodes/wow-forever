@@ -257,9 +257,15 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 r = wm / wo
                 how = (f"about {r:.1f} times as slow" if r >= 1.5 else f"{r - 1:.0%} slower" if r > 1 else f"{1 - r:.0%} faster")
                 job = "heal" if spec in SM.HEAL_TREES.get(cls, ()) else "tank"
+                # when the tree's own points arrive in the order (a borrowed damage model orders the talents: damage first)
+                own = {n for n, _ in top["allocation"].get(spec, [])}
+                first = next((st["levels"].split("-")[0] for st in top.get("order", []) if st["talent"] in own), None)
                 o += [f"**Leveling as {spec} or as {other}?** This build takes {wm:.0f} s per kill (level-weighted, 20-60), "
-                      f"[{other}](../leveling/{SM.spec_slug(cls, other)}.md) {wo:.0f} s: {spec} is {how}. Level as {spec} if you want to "
-                      f"{job} dungeons on the way; otherwise level as {other} and switch at 60 (a respec at a class trainer).", ""]
+                      f"[{other}](../leveling/{SM.spec_slug(cls, other)}.md) {wo:.0f} s: {spec} is {how}."
+                      + (f" Its talent order takes damage talents first and puts its first point into {spec} at level {first}, so it only "
+                         f"becomes a real {spec} build in the 40s and 50s." if first and int(first) >= 25 else "")
+                      + f" Level this way if you want to {job} dungeons later on the way; otherwise level as {other} and switch at 60 "
+                        f"(a respec at a class trainer).", ""]
         if per:
             numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
             numbers += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())] + [""]
