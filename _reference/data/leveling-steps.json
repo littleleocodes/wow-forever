@@ -155,7 +155,7 @@
    ],
    "steps": [
     "**Arcane Blast** twice while the mob walks in (each cast makes the next one cost more; stop at two).",
-    "**Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up.",
+    "**Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up (not on a mob that is nearly dead).",
     "**Frost Nova** when the mob reaches you, then step back.",
     "Finish a nearly dead mob with **Fire Blast** or your wand.",
     "Low on mana: **Frostbolt** instead of Arcane Blast."
@@ -191,7 +191,6 @@
     "**Holy Shock** the mob as it walks in (while your mana is high).",
     "**Judgement** and **Holy Strike** whenever ready.",
     "Keep **Seal of Righteousness** up.",
-    "**Hammer of Wrath** when the mob is below 20% health.",
     "Low on health: **Holy Shock** on yourself, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.",
     "**Hammer of Justice** a mob that casts spells."
    ],
@@ -241,15 +240,14 @@
     "**Power Word: Shield** on yourself before the pull."
    ],
    "steps": [
-    "**Holy Fire** to pull (it burns the mob for a while).",
-    "**Shadow Word: Pain**.",
+    "**Shadow Word: Pain** to pull.",
     "**Penance** and **Mind Blast** whenever ready.",
-    "**Smite** in between while your mana is high, your wand when it is not.",
-    "Finish a nearly dead mob with your wand.",
+    "**Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.",
+    "Skip **Holy Fire**: its long cast costs more than it deals while leveling.",
     "Hurt: **Renew**, **Flash Heal** below a third of your health; **Psychic Scream** if a mob is on you and you are low."
    ],
    "between": [
-    "Drink below a third of your mana; **Renew** yourself instead of eating."
+    "Drink only below 15% mana; **Renew** yourself instead of eating."
    ]
   },
   "discipline-leveling": {
@@ -258,15 +256,14 @@
     "**Power Word: Shield** on yourself before the pull; **Power Infusion** on yourself when it is ready."
    ],
    "steps": [
-    "**Holy Fire** to pull.",
-    "**Shadow Word: Pain**.",
+    "**Shadow Word: Pain** to pull.",
     "**Penance** and **Mind Blast** whenever ready.",
-    "**Smite** in between while your mana is high, your wand when it is not.",
-    "Finish a nearly dead mob with your wand.",
+    "**Smite** in between while the mob has more than a third of its health and you have more than 30% mana; your wand otherwise.",
+    "Skip **Holy Fire**: its long cast costs more than it deals while leveling.",
     "Hurt: shield again, **Flash Heal** below a third of your health; **Psychic Scream** if you are in trouble."
    ],
    "between": [
-    "Drink below a third of your mana; **Renew** yourself instead of eating."
+    "Drink only below 15% mana; **Renew** yourself instead of eating."
    ]
   }
  },

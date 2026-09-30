@@ -210,7 +210,8 @@ def write_builds(a):
             c = json.load(open(ROOT / rec["candidate"], encoding="utf-8"))
             if rec.get("keep_incumbent"):   # the old build's talents and order, under the derived id and the spec's rotation
                 inc = rec["incumbent"]
-                src = json.load(open(inc, encoding="utf-8")) if inc.endswith(".json") else next(x for x in data["builds"] if x["id"] == inc)
+                cf = paths.fightlab_dir(cls) / "candidates" / f"{inc}.json"   # the scorer's start is a candidate file, recorded by its id
+                src = next((x for x in data["builds"] if x["id"] == inc), None) or json.load(open(inc if inc.endswith(".json") else cf, encoding="utf-8"))
                 c = dict(c, allocation=src["allocation"], order=src.get("order") or c["order"])
             b = build_of(cls, tree, rec, c)
             # the derived build takes the slot's generated build's place (a generated build is never kept next to it)

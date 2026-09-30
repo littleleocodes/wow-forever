@@ -10,11 +10,11 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Holy** | [level as Retribution](leveling/holy.md) | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) ⚗ |
-| **Protection** | [level as Retribution](leveling/protection.md) | [Protection — Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) ⚗ |
-| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>350 DPS | [Retribution — PvP](pvp/retribution.md) ⚗ |
+| **Holy** | [Holy — Leveling](leveling/holy.md) 🔬<br>29 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) 🔬 |
+| **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>33 s/kill | [Protection — Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
+| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>350 DPS | [Retribution — PvP](pvp/retribution.md) 🔬 |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
 ### Hybrid builds
 
@@ -35,8 +35,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Retribution](leveling/retribution.md) — Leveling — Retribution | 28 | fastest |
-
-Healing and tanking specs level as a damage spec and switch at 60: Holy levels as Retribution, Protection levels as Retribution.
+| 2 | [Holy](leveling/holy.md) — Holy — Leveling 🔬 | 29 | +4% |
+| 3 | [Protection](leveling/protection.md) — Protection — Leveling 🔬 | 33 | +17% |
 
 ### Raid (training dummy and parse)
 
@@ -54,9 +54,9 @@ Healing and tanking specs level as a damage spec and switch at 60: Holy levels a
 
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
-- [Holy](pvp/holy.md) — Holy — PvP ⚗: 31/18/2
-- [Protection](pvp/protection.md) — Protection — PvP ⚗: 0/30/21
-- [Retribution](pvp/retribution.md) — Retribution — PvP ⚗: 21/0/30
+- [Holy](pvp/holy.md) — Holy — PvP 🔬: 31/18/2
+- [Protection](pvp/protection.md) — Protection — PvP 🔬: 0/30/21
+- [Retribution](pvp/retribution.md) — Retribution — PvP 🔬: 21/0/30
 - [Shockadin](pvp/shockadin.md) — Shockadin — Holy/Retribution: 31/0/20
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.

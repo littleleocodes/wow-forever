@@ -10,11 +10,11 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Discipline** | [level as Shadow](leveling/discipline.md) | [Discipline — Penance / Divine Aegis / Power Infusion](raid/discipline.md)<br>healer | [Discipline — PvP](pvp/discipline.md) ⚗ |
-| **Holy** | [level as Shadow](leveling/holy.md) | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) ⚗ |
+| **Discipline** | [Discipline — Leveling](leveling/discipline.md) 🔬<br>46 s/kill | [Discipline — Penance / Divine Aegis / Power Infusion](raid/discipline.md)<br>healer | [Discipline — PvP](pvp/discipline.md) 🔬 |
+| **Holy** | [Holy — Leveling](leveling/holy.md) 🔬<br>52 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) 🔬 |
 | **Shadow** | **✅ Recommended**<br>[Leveling — Shadow](leveling/shadow.md)<br>26 s/kill | **✅ Recommended**<br>[Shadow leveling/raid](raid/shadow.md)<br>556 DPS | [Shadow](pvp/shadow.md) |
 
-**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
+**✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
 ### Hybrid builds
 
@@ -35,8 +35,8 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Seconds per kill | Behind the fastest |
 |---|---|---|---|
 | 1 | [Shadow](leveling/shadow.md) — Leveling — Shadow | 26 | fastest |
-
-Healing and tanking specs level as a damage spec and switch at 60: Discipline levels as Shadow, Holy levels as Shadow.
+| 2 | [Discipline](leveling/discipline.md) — Discipline — Leveling 🔬 | 46 | +78% |
+| 3 | [Holy](leveling/holy.md) — Holy — Leveling 🔬 | 52 | +101% |
 
 ### Raid (training dummy and parse)
 
@@ -53,8 +53,8 @@ Healing and tanking specs level as a damage spec and switch at 60: Discipline le
 
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
-- [Discipline](pvp/discipline.md) — Discipline — PvP ⚗: 32/3/16
-- [Holy](pvp/holy.md) — Holy — PvP ⚗: 0/35/16
+- [Discipline](pvp/discipline.md) — Discipline — PvP 🔬: 32/3/16
+- [Holy](pvp/holy.md) — Holy — PvP 🔬: 0/35/16
 - [Shadow](pvp/shadow.md) — Shadow: 16/0/35
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.

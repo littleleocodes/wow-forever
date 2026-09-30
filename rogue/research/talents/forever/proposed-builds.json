@@ -1216,87 +1216,6 @@
       ]
     },
     {
-      "id": "subtlety-leveling",
-      "name": "Subtlety — Leveling (generated)",
-      "role": "dps",
-      "content": "leveling",
-      "tier": "draft",
-      "spec": "Subtlety",
-      "generated": "2026-09-30",
-      "summary": "The best Subtlety leveling build with at least 30 points in Subtlety, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Assassination": [
-          ["Remorseless Attacks", 2],
-          ["Malice", 3]
-        ],
-        "Combat": [
-          ["Improved Eviscerate", 3],
-          ["Improved Sinister Strike", 2],
-          ["Lightning Reflexes", 3],
-          ["Deflection", 3],
-          ["Precision", 3],
-          ["Riposte", 1],
-          ["Flawless Execution", 1]
-        ],
-        "Subtlety": [
-          ["Camouflage", 2],
-          ["Master of Deception", 3],
-          ["Opportunity", 2],
-          ["Setup", 3],
-          ["Elusiveness", 2],
-          ["Initiative", 3],
-          ["Ghostly Strike", 1],
-          ["Heightened Senses", 2],
-          ["Premeditation", 1],
-          ["Serrated Blades", 3],
-          ["Dirty Deeds", 2],
-          ["Preparation", 1],
-          ["Quietus", 5]
-        ]
-      },
-      "core": [
-        {"talent": "Riposte", "why": "The scorer's value in this build: +11.5% of its score (model combat-swords-raid)."},
-        {"talent": "Improved Sinister Strike", "why": "The scorer's value in this build: +7.6% of its score (model combat-swords-raid)."},
-        {"talent": "Serrated Blades", "why": "The scorer's value in this build: +7.4% of its score (model combat-swords-raid)."},
-        {"talent": "Flawless Execution", "why": "The scorer's value in this build: +7.4% of its score (model combat-swords-raid)."},
-        {"talent": "Precision", "why": "The scorer's value in this build: +7.1% of its score (model combat-swords-raid)."},
-        {"talent": "Remorseless Attacks", "why": "The scorer's value in this build: +7.0% of its score (model combat-swords-raid)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.", "Scored with the Combat swords model (no Subtlety leveling model): Subtlety's openers and Hemorrhage are under-valued."],
-      "open_questions": ["A generated Subtlety build: check it against the community's Subtlety builds at launch."],
-      "sources": ["https://talentsforever.com/rogue"],
-      "order": [
-        {"levels": "10", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
-        {"levels": "11-12", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
-        {"levels": "13", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
-        {"levels": "14-16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
-        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
-        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
-        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
-        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
-        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
-        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
-        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
-        {"levels": "28-30", "tree": "Assassination", "talent": "Malice", "points": 3},
-        {"levels": "31-32", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
-        {"levels": "33-35", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
-        {"levels": "36-38", "tree": "Subtlety", "talent": "Setup", "points": 3},
-        {"levels": "39-40", "tree": "Subtlety", "talent": "Elusiveness", "points": 2},
-        {"levels": "41", "tree": "Subtlety", "talent": "Ghostly Strike", "points": 1},
-        {"levels": "42-44", "tree": "Subtlety", "talent": "Initiative", "points": 3},
-        {"levels": "45", "tree": "Subtlety", "talent": "Camouflage", "points": 1},
-        {"levels": "46-48", "tree": "Subtlety", "talent": "Serrated Blades", "points": 3},
-        {"levels": "49", "tree": "Subtlety", "talent": "Premeditation", "points": 1},
-        {"levels": "50", "tree": "Subtlety", "talent": "Heightened Senses", "points": 1},
-        {"levels": "51", "tree": "Subtlety", "talent": "Preparation", "points": 1},
-        {"levels": "52-53", "tree": "Subtlety", "talent": "Dirty Deeds", "points": 2},
-        {"levels": "54", "tree": "Subtlety", "talent": "Heightened Senses", "points": 1},
-        {"levels": "55", "tree": "Subtlety", "talent": "Camouflage", "points": 1},
-        {"levels": "56-60", "tree": "Subtlety", "talent": "Quietus", "points": 5}
-      ]
-    },
-    {
       "id": "assassination-pvp",
       "name": "Assassination — PvP (derived)",
       "role": "dps",
@@ -1450,6 +1369,88 @@
       "open_questions": ["A derived Combat raid build: check it against the community's Combat builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"],
       "replaces": "combat-daggers-raid"
+    },
+    {
+      "id": "subtlety-leveling",
+      "name": "Subtlety — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Subtlety",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Subtlety leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Subtlety build, 30+ points kept in Subtlety, playing the subtlety-leveling rotation; the talent order is the stats model's (combat-swords-raid).",
+      "allocation": {
+        "Assassination": [
+          ["Remorseless Attacks", 2],
+          ["Malice", 3]
+        ],
+        "Combat": [
+          ["Improved Eviscerate", 3],
+          ["Improved Sinister Strike", 2],
+          ["Lightning Reflexes", 3],
+          ["Deflection", 3],
+          ["Precision", 3],
+          ["Riposte", 1],
+          ["Flawless Execution", 1]
+        ],
+        "Subtlety": [
+          ["Camouflage", 2],
+          ["Master of Deception", 3],
+          ["Opportunity", 2],
+          ["Setup", 3],
+          ["Elusiveness", 2],
+          ["Initiative", 3],
+          ["Ghostly Strike", 1],
+          ["Heightened Senses", 2],
+          ["Premeditation", 1],
+          ["Serrated Blades", 3],
+          ["Dirty Deeds", 2],
+          ["Preparation", 1],
+          ["Quietus", 5]
+        ]
+      },
+      "order": [
+        {"levels": "10", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "11-12", "tree": "Assassination", "talent": "Remorseless Attacks", "points": 2},
+        {"levels": "13", "tree": "Combat", "talent": "Improved Sinister Strike", "points": 1},
+        {"levels": "14-16", "tree": "Combat", "talent": "Improved Eviscerate", "points": 3},
+        {"levels": "17", "tree": "Combat", "talent": "Deflection", "points": 1},
+        {"levels": "18-19", "tree": "Combat", "talent": "Precision", "points": 2},
+        {"levels": "20-21", "tree": "Combat", "talent": "Deflection", "points": 2},
+        {"levels": "22", "tree": "Combat", "talent": "Riposte", "points": 1},
+        {"levels": "23", "tree": "Combat", "talent": "Precision", "points": 1},
+        {"levels": "24-26", "tree": "Combat", "talent": "Lightning Reflexes", "points": 3},
+        {"levels": "27", "tree": "Combat", "talent": "Flawless Execution", "points": 1},
+        {"levels": "28-30", "tree": "Assassination", "talent": "Malice", "points": 3},
+        {"levels": "31-32", "tree": "Subtlety", "talent": "Opportunity", "points": 2},
+        {"levels": "33-35", "tree": "Subtlety", "talent": "Master of Deception", "points": 3},
+        {"levels": "36-38", "tree": "Subtlety", "talent": "Setup", "points": 3},
+        {"levels": "39-40", "tree": "Subtlety", "talent": "Elusiveness", "points": 2},
+        {"levels": "41", "tree": "Subtlety", "talent": "Ghostly Strike", "points": 1},
+        {"levels": "42-44", "tree": "Subtlety", "talent": "Initiative", "points": 3},
+        {"levels": "45", "tree": "Subtlety", "talent": "Camouflage", "points": 1},
+        {"levels": "46-48", "tree": "Subtlety", "talent": "Serrated Blades", "points": 3},
+        {"levels": "49", "tree": "Subtlety", "talent": "Premeditation", "points": 1},
+        {"levels": "50", "tree": "Subtlety", "talent": "Heightened Senses", "points": 1},
+        {"levels": "51", "tree": "Subtlety", "talent": "Preparation", "points": 1},
+        {"levels": "52-53", "tree": "Subtlety", "talent": "Dirty Deeds", "points": 2},
+        {"levels": "54", "tree": "Subtlety", "talent": "Heightened Senses", "points": 1},
+        {"levels": "55", "tree": "Subtlety", "talent": "Camouflage", "points": 1},
+        {"levels": "56-60", "tree": "Subtlety", "talent": "Quietus", "points": 5}
+      ],
+      "core": [
+        {"talent": "Riposte", "why": "The scorer's value in this build: +11.5% of its score (model combat-swords-raid)."},
+        {"talent": "Improved Sinister Strike", "why": "The scorer's value in this build: +7.6% of its score (model combat-swords-raid)."},
+        {"talent": "Serrated Blades", "why": "The scorer's value in this build: +7.4% of its score (model combat-swords-raid)."},
+        {"talent": "Flawless Execution", "why": "The scorer's value in this build: +7.4% of its score (model combat-swords-raid)."},
+        {"talent": "Precision", "why": "The scorer's value in this build: +7.1% of its score (model combat-swords-raid)."},
+        {"talent": "Remorseless Attacks", "why": "The scorer's value in this build: +7.0% of its score (model combat-swords-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start subtlety-leveling, moves: none (the start was already the best the search found). Race against subtlety-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.0% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Subtlety leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/rogue"]
     }
   ]
 }

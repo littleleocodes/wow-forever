@@ -1120,6 +1120,79 @@
       "notes": ["Community tie-break moves: 2 points Anticipation -> Master of Defense; 2 points Anticipation -> Improved Revenge.", "Where we disagree with the community: most Protection builds take Bastion (95% take it), Shield Slam (94% take it), Defiance (83% take it), Deflection (78% take it), which the model values below this build's weakest point; this build takes Blood Craze (15%), Death Wish (1%), Enrage (9%), Improved Disarm (11%), Iron Will (9%), Piercing Howl (11%), which few Protection builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the Arms damage model (PvP values damage, not threat), keeping 30+ points in Protection."],
       "open_questions": ["A derived Protection PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/warrior", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "protection-leveling",
+      "name": "Protection — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Protection",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Protection leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Protection build, 30+ points kept in Protection, playing the prot-leveling rotation; the talent order is the stats model's (arms-2h-raid). Protection is a tanking spec: this is how to level while keeping it, compared with Arms on the leveling page.",
+      "allocation": {
+        "Arms": [
+          ["Deflection", 2],
+          ["Improved Rend", 3],
+          ["Improved Charge", 2],
+          ["Improved Tactical Mastery", 3],
+          ["Deep Wounds", 3]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 2]
+        ],
+        "Protection": [
+          ["Shield Specialization", 5],
+          ["Anticipation", 5],
+          ["Improved Bloodrage", 2],
+          ["Toughness", 4],
+          ["Last Stand", 1],
+          ["Master of Defense", 1],
+          ["Improved Revenge", 3],
+          ["Concussion Blow", 1],
+          ["Focused Rage", 3],
+          ["Bastion", 5],
+          ["Shield Slam", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10", "tree": "Arms", "talent": "Deflection", "points": 1},
+        {"levels": "11-13", "tree": "Arms", "talent": "Improved Rend", "points": 3},
+        {"levels": "14-18", "tree": "Fury", "talent": "Cruelty", "points": 5},
+        {"levels": "19-20", "tree": "Fury", "talent": "Unbridled Wrath", "points": 2},
+        {"levels": "21", "tree": "Arms", "talent": "Deflection", "points": 1},
+        {"levels": "22-23", "tree": "Arms", "talent": "Improved Charge", "points": 2},
+        {"levels": "24-26", "tree": "Arms", "talent": "Improved Tactical Mastery", "points": 3},
+        {"levels": "27-29", "tree": "Arms", "talent": "Deep Wounds", "points": 3},
+        {"levels": "30-34", "tree": "Protection", "talent": "Anticipation", "points": 5},
+        {"levels": "35-36", "tree": "Protection", "talent": "Improved Bloodrage", "points": 2},
+        {"levels": "37-39", "tree": "Protection", "talent": "Toughness", "points": 3},
+        {"levels": "40", "tree": "Protection", "talent": "Last Stand", "points": 1},
+        {"levels": "41", "tree": "Protection", "talent": "Toughness", "points": 1},
+        {"levels": "42-46", "tree": "Protection", "talent": "Shield Specialization", "points": 5},
+        {"levels": "47", "tree": "Protection", "talent": "Master of Defense", "points": 1},
+        {"levels": "48-49", "tree": "Protection", "talent": "Improved Revenge", "points": 2},
+        {"levels": "50", "tree": "Protection", "talent": "Concussion Blow", "points": 1},
+        {"levels": "51", "tree": "Protection", "talent": "Improved Revenge", "points": 1},
+        {"levels": "52-54", "tree": "Protection", "talent": "Bastion", "points": 3},
+        {"levels": "55-57", "tree": "Protection", "talent": "Focused Rage", "points": 3},
+        {"levels": "58-59", "tree": "Protection", "talent": "Bastion", "points": 2},
+        {"levels": "60", "tree": "Protection", "talent": "Shield Slam", "points": 1}
+      ],
+      "core": [
+        {"talent": "Focused Rage", "why": "The scorer's value in this build: +31.3% of its score (model arms-2h-raid)."},
+        {"talent": "Cruelty", "why": "The scorer's value in this build: +22.1% of its score (model arms-2h-raid)."},
+        {"talent": "Deep Wounds", "why": "The scorer's value in this build: +11.8% of its score (model arms-2h-raid)."},
+        {"talent": "Improved Rend", "why": "The scorer's value in this build: +10.4% of its score (model arms-2h-raid)."},
+        {"talent": "Unbridled Wrath", "why": "The scorer's value in this build: +3.6% of its score (model arms-2h-raid)."},
+        {"talent": "Improved Charge", "why": "The scorer's value in this build: +3.2% of its score (model arms-2h-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-protection-scorer, moves: 3 points Improved Thunder Clap -> Bastion; 1 point Master of Defense -> Vanguard; 2 points Toughness -> Bastion; 2 points Improved Overpower -> Improved Heroic Strike; 1 point Unbridled Wrath -> Shield Slam; 1 point Vanguard -> Toughness; 2 points Improved Heroic Strike -> Improved Tactical Mastery. Race against derived-protection-scorer over levels 20-60 (seed 3, 3000 fights per level): +11.9% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Protection leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/warrior"]
     }
   ]
 }

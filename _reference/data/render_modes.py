@@ -254,10 +254,12 @@ def mode_section(cls, spec, mode, builds, nums, src):
             ob = rank_builds(cls, mode, SM.grid(cls, list(rr.builds(cls).values()))[other]["leveling"], nums)
             wo, wm = weighted(L.get(ob[0]["id"]) or {}) if ob else None, weighted(per)
             if wo and wm:
+                r = wm / wo
+                how = (f"about {r:.1f} times as slow" if r >= 1.5 else f"{r - 1:.0%} slower" if r > 1 else f"{1 - r:.0%} faster")
+                job = "heal" if spec in SM.HEAL_TREES.get(cls, ()) else "tank"
                 o += [f"**Leveling as {spec} or as {other}?** This build takes {wm:.0f} s per kill (level-weighted, 20-60), "
-                      f"[{other}](../leveling/{SM.spec_slug(cls, other)}.md) {wo:.0f} s: {spec} is {abs(wm / wo - 1):.0%} "
-                      f"{'slower' if wm > wo else 'faster'}. Level as {spec} if you want to heal or tank dungeons on the way; switch at 60 "
-                      f"otherwise (a respec at a class trainer).", ""]
+                      f"[{other}](../leveling/{SM.spec_slug(cls, other)}.md) {wo:.0f} s: {spec} is {how}. Level as {spec} if you want to "
+                      f"{job} dungeons on the way; otherwise level as {other} and switch at 60 (a respec at a class trainer).", ""]
         if per:
             numbers += ["## The numbers", "", "| Level | Seconds per kill (same-level mobs, eating and drinking included) |", "|---|---|"]
             numbers += [f"| {Lv} | {v:.0f} |" for Lv, v in sorted(per.items())] + [""]

@@ -1102,6 +1102,76 @@
       "open_questions": ["A derived Enhancement raid build: check it against the community's Enhancement builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"],
       "replaces": "enhancement-raid-dps"
+    },
+    {
+      "id": "restoration-leveling",
+      "name": "Restoration — Leveling (derived)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-09-30",
+      "derived": "leveling",
+      "summary": "The Restoration leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Restoration build, 30+ points kept in Restoration, playing the enhancement-dps rotation; the talent order is the stats model's (enhancement-dps). Restoration is a healing spec: this is how to level while keeping it, compared with Enhancement on the leveling page.",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Guardian Totems", 2],
+          ["Mental Dexterity", 3],
+          ["Improved Ghost Wolf", 2],
+          ["Improved Lightning Shield", 2],
+          ["Shamanistic Focus", 1],
+          ["Flurry", 4],
+          ["Stormstrike", 1],
+          ["Mental Quickness", 1]
+        ],
+        "Restoration": [
+          ["Improved Healing Wave", 5],
+          ["Totemic Focus", 5],
+          ["Mindfulness", 3],
+          ["Natural Grace", 2],
+          ["Tidal Focus", 5],
+          ["Restorative Totems", 5],
+          ["Mana Tide Totem", 1],
+          ["Healing Way", 3],
+          ["Nature's Swiftness", 1]
+        ]
+      },
+      "order": [
+        {"levels": "10-14", "tree": "Enhancement", "talent": "Thundering Strikes", "points": 5},
+        {"levels": "15-16", "tree": "Enhancement", "talent": "Improved Ghost Wolf", "points": 2},
+        {"levels": "17-19", "tree": "Enhancement", "talent": "Mental Dexterity", "points": 3},
+        {"levels": "20", "tree": "Enhancement", "talent": "Shamanistic Focus", "points": 1},
+        {"levels": "21-22", "tree": "Enhancement", "talent": "Improved Lightning Shield", "points": 2},
+        {"levels": "23-24", "tree": "Enhancement", "talent": "Guardian Totems", "points": 2},
+        {"levels": "25", "tree": "Enhancement", "talent": "Stormstrike", "points": 1},
+        {"levels": "26-29", "tree": "Enhancement", "talent": "Flurry", "points": 4},
+        {"levels": "30", "tree": "Enhancement", "talent": "Mental Quickness", "points": 1},
+        {"levels": "31-35", "tree": "Restoration", "talent": "Totemic Focus", "points": 5},
+        {"levels": "36-40", "tree": "Restoration", "talent": "Tidal Focus", "points": 5},
+        {"levels": "41-43", "tree": "Restoration", "talent": "Mindfulness", "points": 3},
+        {"levels": "44-45", "tree": "Restoration", "talent": "Improved Healing Wave", "points": 2},
+        {"levels": "46", "tree": "Restoration", "talent": "Mana Tide Totem", "points": 1},
+        {"levels": "47-50", "tree": "Restoration", "talent": "Restorative Totems", "points": 4},
+        {"levels": "51", "tree": "Restoration", "talent": "Nature's Swiftness", "points": 1},
+        {"levels": "52", "tree": "Restoration", "talent": "Restorative Totems", "points": 1},
+        {"levels": "53-55", "tree": "Restoration", "talent": "Improved Healing Wave", "points": 3},
+        {"levels": "56-58", "tree": "Restoration", "talent": "Healing Way", "points": 3},
+        {"levels": "59-60", "tree": "Restoration", "talent": "Natural Grace", "points": 2}
+      ],
+      "core": [
+        {"talent": "Shamanistic Focus", "why": "The scorer's value in this build: +22.0% of its score (model enhancement-dps)."},
+        {"talent": "Stormstrike", "why": "The scorer's value in this build: +20.6% of its score (model enhancement-dps)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +8.9% of its score (model enhancement-dps)."},
+        {"talent": "Mental Dexterity", "why": "The scorer's value in this build: +7.6% of its score (model enhancement-dps)."},
+        {"talent": "Thundering Strikes", "why": "The scorer's value in this build: +5.3% of its score (model enhancement-dps)."},
+        {"talent": "Tidal Focus", "why": "The scorer's value in this build: +4.7% of its score (model enhancement-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-restoration-scorer, moves: none (the start was already the best the search found). Race against derived-restoration-scorer over levels 20-60 (seed 3, 3000 fights per level): +0.0% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
+      "open_questions": ["A derived Restoration leveling build: check it while leveling at launch."],
+      "sources": ["https://talentsforever.com/shaman"]
     }
   ]
 }
