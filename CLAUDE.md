@@ -362,6 +362,31 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
 - **Player pages**: `render_modes.py` (regen step; see Structure rules) writes the top-level README, the class README's two player
   sections and `<class>/leveling|raid|pvp/`; `render_start_here.py` is its helper library (`tf_link`, `display_name`, `rotation_lines`).
   `_reference/organization-plan.md` records the reorganization (done 2026-09-29).
+- **Derived builds** (2026-09-30, user request "each spec to have a leveling, raid and PvP spec that we can best derive from
+  everything"; the user's rule: a derived build replaces a hand draft only when it is 2%+ better, and the hand draft stays as the
+  alternative). Builds carry `derived: leveling|raid|pvp` (shown with 🔬), `replaces: <hand id>` when they beat one; records in
+  `_reference/data/derived-<mode>.json` (generated; each script resumes from its record unless `--fresh`).
+  - Leveling: `derive_leveling.py` (`LEVEL`: per class and tree the fight-lab rotation and the scorer model). Starts = the spec's
+    leveling builds + the scorer's best 30-point build (+ `EXTRA_STARTS`); new rotations are tuned first (`rotation_opt.py --spec
+    --build`); then `fightlab/fl_talent_opt.py` (local search at level 60, scorer-screened moves plus random ones, common random
+    numbers, seed-2 confirmation, 30+ points in the tree) and a level-weighted race (20-60, seed 3) against the hand draft. Healer and
+    tank trees get their own leveling build (their own rotations: `holy-leveling`/`discipline-leveling` priest, `holy-leveling`/
+    `prot-leveling` paladin, `prot-leveling` warrior; Restoration shaman and druid play the Enhancement and Cat rotations), and their
+    page compares it with the damage spec they could level as (`SM.LEVEL_AS`).
+  - New fight-lab rotations (2026-09-30), each gated on its spec prefix so the old specs stay bit-identical: mage `arcane-leveling`
+    (Arcane Blast stacks, Missile Barrage, Arcane Power), rogue `subtlety-leveling` (Premeditation, Ghostly Strike, Hemorrhage, opener
+    choice), warlock `demonology-leveling`/`destruction-leveling`, priest `holy-leveling`/`discipline-leveling` (Penance, Holy Fire),
+    paladin `holy-leveling` (Holy Shock) / `prot-leveling` (Seal of Fury, Holy Shield, a shield), warrior `prot-leveling` (Defensive
+    Stance, Revenge, Shield Slam). The engine has shield block (`Player.block`, hooks `block_bonus`/`on_block`; off at block 0). None of
+    these specs has a `PIPELINE` entry, calibration or scorer model of its own: the derivation screens their moves with a borrowed model.
+  - Raid: `derive_raid.py` runs `raidsim/talent_opt.py --min-tree <tree>=30` from each spec's best raid build (dummy; tanks: the
+    entry's setting, tank value) and estimates the gain over the best hand draft as race ratio x search gain; healers use the healer
+    lab's own pipeline (`rebuild.py --steps heal,adopt`, 2% adopt bar).
+  - PvP: `derive_pvp.py`: the scorer's PvP optimum with 30+ points in the tree, then legal moves that raise the talentsforever.com
+    pick score (pick rates of builds leading in that tree x ranks) while the score stays within 1% of the optimum's gain over a
+    talentless character; disagreements (consensus talents skipped, rarely taken talents kept) go on the PvP page. A spec whose PvP
+    model is borrowed from another tree (`spec_builds.ROUGH`) keeps its hand draft. The comparison with hand drafts is the model
+    grading itself: a PvP "win" is only as good as the pvp profile.
 - **Fight length, buff ladder, fight-length curve** (2026-09-29, user request "compare dummy and raid DPS fairly"): every bench config
   takes its duration from `run.FIGHT` = **180 s** (was 120 s: a test from 60 to 360 s moved the Lone Wolf hunter -31% and the Frost mage
   -3%, so 120 s flattered front-loaded cooldowns and specs that run dry late). The environments run (`run.py --env environments`,

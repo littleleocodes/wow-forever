@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `leveling-st`: score +38.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `leveling-st`: score +39.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -64,8 +64,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | 26 | Retribution | Pursuit of Justice | 1 | 0/0/17 |
 | 27-29 | Retribution | Conviction | 3 | 0/0/20 |
 | 30-32 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/23 |
-| 33 | Retribution | Repentance | 1 | 0/0/24 |
-| 34 | Retribution | Conviction | 1 | 0/0/25 |
+| 33 | Retribution | Conviction | 1 | 0/0/24 |
+| 34 | Retribution | Repentance | 1 | 0/0/25 |
 | 35-36 | Retribution | Instrument of Law | 2 | 0/0/27 |
 | 37 | Retribution | Champion of the Light | 1 | 0/0/28 |
 | 38-42 | Holy | Divine Strength | 5 | 5/0/28 |
@@ -79,10 +79,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 ## Core talents (priority order)
 
-1. **Seal of Command** — Removing it costs 5.5 points of score in this model.
-2. **Sanctified Judgement** — Removing it costs 3.5 points of score in this model.
-3. **Two-Handed Weapon Specialization** — Removing it costs 3.5 points of score in this model.
-4. **Improved Seals** — Removing it costs 2.5 points of score in this model.
+1. **Seal of Command** — Removing it costs 5.6 points of score in this model.
+2. **Two-Handed Weapon Specialization** — Removing it costs 3.5 points of score in this model.
+3. **Sanctified Judgement** — Removing it costs 3.5 points of score in this model.
+4. **Improved Seals** — Removing it costs 2.6 points of score in this model.
 5. **Pursuit of Justice** — Removing it costs 2.3 points of score in this model.
 6. **Instrument of Law** — Removing it costs 1.8 points of score in this model.
 7. **Conviction** — Removing it costs 1.8 points of score in this model.
@@ -107,7 +107,7 @@ What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling b
 
 ## Notes
 
-- Report: paladin/talents/forever/optimizer/ret-dps-leveling-st.md
+- Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-st.md
 
 ## Open questions (verify in the live game)
 

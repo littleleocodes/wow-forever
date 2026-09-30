@@ -520,7 +520,7 @@
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps"],
+      "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps", "survival-raid"],
       "rotation_only": true,
       "preset_names": [],
       "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model)."
@@ -593,7 +593,7 @@
         "ohImbueId": 27186,
         "goblinSapper": true
       },
-      "builds": ["combat-daggers-raid", "opt-combat-daggers-raid-raid-dps"],
+      "builds": ["combat-daggers-raid", "opt-combat-daggers-raid-raid-dps", "combat-raid"],
       "not_measured": {"Murder": "+4% against Humanoid and Giant targets only (beta tooltip); the simulator's standard target is neither, so the removal run reads 0. Raid value = 30% of the bonus (assumed share of raid boss fights against those types: Zul'Gurub's trolls, several Molten Core and AQ40 bosses; not Blackwing Lair's dragonkin or Naxxramas's undead)."},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -1012,7 +1012,7 @@
         "foodId": 13810,
         "potId": 13444
       },
-      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps"],
+      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

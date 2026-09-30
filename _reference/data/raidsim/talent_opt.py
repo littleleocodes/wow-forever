@@ -190,7 +190,8 @@ def main():
         alloc = {t: [[n, r] for n, r in by_tree(trees, cur)[t].items()] for t in trees}
         out.write_text(json.dumps({"id": out.stem, "allocation": alloc, "note": f"Simulator talent search (raidsim/talent_opt.py, {datetime.date.today().isoformat()}) "
                                    f"for {a.spec} from {a.start} in the {where} setting: {fin[0]['dps']:.1f} -> {fin[1]['dps']:.1f} DPS on a third seed.",
-                                   "search": {"start": a.start, "setting": where, "kept": sorted(protect), "moves": log, "dps_start": fin[0]["dps"], "dps_end": fin[1]["dps"]}},
+                                   "search": {"start": a.start, "setting": where, "kept": sorted(protect), "moves": log, "dps_start": fin[0]["dps"], "dps_end": fin[1]["dps"],
+                                              "gain": (value(fin[1], fin[0]) or 1.0) - 1, "tank": tank}},
                                   indent=1, ensure_ascii=False), encoding="utf-8")
         print(f"  wrote {out}", flush=True)
 

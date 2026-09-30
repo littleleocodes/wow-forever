@@ -1,0 +1,100 @@
+{
+ "id": "derived-beast-mastery",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    2
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    3
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for bm-raid from beast-mastery-raid in the dummy setting: 437.8 -> 447.4 DPS on a third seed.",
+ "search": {
+  "start": "beast-mastery-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Intimidation -> Endurance Training",
+    "gain_seed1": 0.013138944312931056,
+    "gain_seed2": 0.012973317660223582,
+    "split": "30/21/0"
+   },
+   {
+    "round": 2,
+    "move": "2 points Mortal Shots -> Efficiency",
+    "gain_seed1": 0.008422855062806933,
+    "gain_seed2": 0.008673426514614668,
+    "split": "30/21/0"
+   }
+  ],
+  "dps_start": 437.79020145172166,
+  "dps_end": 447.3717075567451,
+  "gain": 0.021886067968746037,
+  "tank": false
+ }
+}

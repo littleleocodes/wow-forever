@@ -1,0 +1,94 @@
+{
+ "id": "derived-assassination",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Deflection",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for assassination-raid from assassination-seal-fate-raid in the dummy setting: 406.7 -> 406.7 DPS on a third seed.",
+ "search": {
+  "start": "assassination-seal-fate-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 406.6656391024381,
+  "dps_end": 406.6656391024381,
+  "gain": 0.0,
+  "tank": false
+ }
+}

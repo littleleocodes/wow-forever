@@ -9,63 +9,63 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Soul Link | Demonology | 5 | +37.33% | manual |
+| Soul Link | Demonology | 5 | +33.90% | manual |
 | Demonic Aegis | Demonology | 2 | +8.98% | manual |
 | Demonic Embrace | Demonology | 1 | +5.82% | manual |
-| Wrack | Affliction | 7 | +2.82% | manual |
-| Demonic Knowledge | Demonology | 5 | +2.53% | manual |
-| Bane of Havoc | Destruction | 5 | +1.80% | manual |
-| Improved Corruption | Affliction | 1 | +1.64% | manual |
+| Wrack | Affliction | 7 | +2.06% | manual |
+| Demonic Knowledge | Demonology | 5 | +1.89% | manual |
+| Improved Corruption | Affliction | 1 | +1.35% | manual |
+| Bane of Havoc | Destruction | 5 | +1.32% | manual |
 | Demonic Energies | Demonology | 2 | +1.19% | manual |
 | Improved Life Tap | Affliction | 1 | +1.08% | manual |
-| Suppression | Affliction | 1 | +0.82% | manual |
-| Intensity | Destruction | 4 | +0.73% | manual |
-| Agonizing Flames | Destruction | 4 | +0.71% | manual |
+| Suppression | Affliction | 1 | +0.60% | manual |
 | Improved Voidwalker | Demonology | 2 | +0.58% | manual |
+| Intensity | Destruction | 4 | +0.54% | manual |
+| Agonizing Flames | Destruction | 4 | +0.52% | manual |
 | Fel Domination | Demonology | 4 | +0.50% | manual |
 | Cataclysm | Destruction | 2 | +0.46% | manual |
 | Master Demonologist | Demonology | 6 | +0.45% | manual |
 | Pyroclasm | Destruction | 5 | +0.40% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.23% | manual |
-| Malediction | Affliction | 2 | +0.21% | manual |
-| Shadow Mastery | Affliction | 6 | +0.20% | manual |
-| Pandemic | Affliction | 3 | +0.17% | manual |
-| Amplify Curse | Affliction | 3 | +0.17% | manual |
-| Unholy Power | Demonology | 1 | +0.10% | manual |
-| Ruin | Destruction | 3 | +0.10% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.17% | manual |
+| Malediction | Affliction | 2 | +0.15% | manual |
+| Shadow Mastery | Affliction | 6 | +0.15% | manual |
+| Pandemic | Affliction | 3 | +0.12% | manual |
+| Amplify Curse | Affliction | 3 | +0.12% | manual |
+| Unholy Power | Demonology | 1 | +0.09% | manual |
 | Fel Vitality | Demonology | 2 | +0.07% | manual |
-| Improved Drains | Affliction | 2 | +0.07% | manual |
-| Improved Shadow Bolt | Destruction | 1 | +0.05% | manual |
-| Malevolence | Affliction | 4 | +0.04% | manual |
+| Ruin | Destruction | 3 | +0.07% | manual |
+| Improved Drains | Affliction | 2 | +0.05% | manual |
 | Molten Skin | Destruction | 2 | +0.04% | manual |
-| Fel Concentration | Affliction | 3 | +0.03% | manual |
+| Improved Shadow Bolt | Destruction | 1 | +0.03% | manual |
+| Malevolence | Affliction | 4 | +0.03% | manual |
+| Soul Harvesting | Affliction | 2 | +0.03% | manual |
 
-## Optimized build: 27/24/0  score +56.78%  (dps x1.687, sustain x3.478, surv x5.423, utility +3.28%)
+## Optimized build: 27/24/0  score +54.60%  (dps x1.687, sustain x3.566, surv x5.421, utility +3.28%)
 
 ```
   Affliction: Improved Corruption 5, Suppression 5, Improved Life Tap 2, Malediction 5, Pandemic 3, Improved Bane of Agony 2, Amplify Curse 1, Malevolence 2, Shadow Mastery 2
-  Demonology: Demonic Embrace 5, Unholy Power 5, Demonic Aegis 2, Improved Voidwalker 3, Demonic Energies 1, Demonic Sacrifice 1, Master Summoner 2, Fel Domination 1, Soul Link 1, Demonic Knowledge 3
+  Demonology: Demonic Embrace 5, Unholy Power 4, Demonic Aegis 2, Improved Voidwalker 3, Demonic Energies 2, Demonic Sacrifice 1, Master Summoner 2, Fel Domination 1, Soul Link 1, Demonic Knowledge 3
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Wrack | Affliction 7 | 1/1 | +1.53% | no |
-| Bane of Havoc | Destruction 5 | 1/1 | +0.85% | no |
+| Wrack | Affliction 7 | 1/1 | +1.43% | no |
+| Bane of Havoc | Destruction 5 | 1/1 | +0.79% | no |
 | Pyroclasm | Destruction 5 | 1/2 | +0.40% | no |
-| Intensity | Destruction 4 | 1/3 | +0.31% | no |
-| Agonizing Flames | Destruction 4 | 1/3 | +0.30% | no |
-| Shadow Mastery | Affliction 6 | 3/5 | +0.13% | yes |
-| Improved Drains | Affliction 2 | 1/3 | +0.06% | yes |
-| Malevolence | Affliction 4 | 3/5 | +0.06% | yes |
+| Intensity | Destruction 4 | 1/3 | +0.29% | no |
+| Agonizing Flames | Destruction 4 | 1/3 | +0.28% | no |
+| Shadow Mastery | Affliction 6 | 3/5 | +0.12% | yes |
+| Improved Drains | Affliction 2 | 1/3 | +0.05% | yes |
+| Malevolence | Affliction 4 | 3/5 | +0.05% | yes |
+| Cataclysm | Destruction 2 | 1/3 | +0.04% | no |
 | Ruin | Destruction 3 | 1/5 | +0.04% | no |
 | Improved Shadow Bolt | Destruction 1 | 1/5 | +0.03% | yes |
-| Cataclysm | Destruction 2 | 1/3 | +0.02% | no |
 | Fel Concentration | Affliction 3 | 1/3 | +0.02% | yes |
-| Demonic Energies | Demonology 2 | 2/2 | +0.02% | yes |
-| Master Demonologist | Demonology 6 | 1/5 | +0.01% | no |
-| Fel Vitality | Demonology 2 | 1/3 | +0.00% | yes |
+| Unholy Power | Demonology 1 | 5/5 | +0.02% | yes |
+| Master Demonologist | Demonology 6 | 1/5 | +0.02% | no |
+| Fel Vitality | Demonology 2 | 1/3 | +0.01% | yes |
 
 ## Leveling order (lookahead 16; rush Soul Link (reached at level 30))
 
@@ -77,19 +77,19 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | 18-19 | Demonology | Improved Voidwalker | 2 | +19.3% |
 | 20 | Demonology | Demonic Sacrifice | 1 | +19.3% |
 | 21 | Demonology | Improved Voidwalker | 1 | +19.4% |
-| 22-26 | Demonology | Unholy Power | 5 | +19.6% |
+| 22 | Demonology | Demonic Energies | 1 | +19.4% |
+| 23-26 | Demonology | Unholy Power | 4 | +19.6% |
 | 27-28 | Demonology | Master Summoner | 2 | +19.6% |
 | 29 | Demonology | Fel Domination | 1 | +20.1% |
-| 30 | Demonology | Soul Link | 1 | +43.1% |
-| 31-33 | Demonology | Demonic Knowledge | 3 | +47.0% |
-| 34-38 | Affliction | Improved Corruption | 5 | +53.0% |
-| 39-43 | Affliction | Suppression | 5 | +55.0% |
-| 44-48 | Affliction | Malediction | 5 | +55.6% |
-| 49-51 | Affliction | Pandemic | 3 | +55.9% |
-| 52-53 | Affliction | Improved Bane of Agony | 2 | +56.1% |
-| 54 | Affliction | Improved Life Tap | 1 | +56.2% |
-| 55 | Affliction | Amplify Curse | 1 | +56.3% |
-| 56 | Affliction | Improved Life Tap | 1 | +56.4% |
-| 57-58 | Affliction | Malevolence | 2 | +56.5% |
-| 59-60 | Affliction | Shadow Mastery | 2 | +56.8% |
+| 30 | Demonology | Soul Link | 1 | +41.6% |
+| 31-33 | Demonology | Demonic Knowledge | 3 | +45.2% |
+| 34-38 | Affliction | Improved Corruption | 5 | +50.9% |
+| 39-43 | Affliction | Suppression | 5 | +52.8% |
+| 44-45 | Affliction | Improved Life Tap | 2 | +53.1% |
+| 46-50 | Affliction | Malediction | 5 | +53.7% |
+| 51-53 | Affliction | Pandemic | 3 | +54.0% |
+| 54-55 | Affliction | Improved Bane of Agony | 2 | +54.2% |
+| 56 | Affliction | Amplify Curse | 1 | +54.3% |
+| 57-58 | Affliction | Malevolence | 2 | +54.4% |
+| 59-60 | Affliction | Shadow Mastery | 2 | +54.6% |
 

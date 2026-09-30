@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-09-29",
+ "date": "2026-09-30",
  "results": [
   {
    "label": "melee-survival-raid",
@@ -39,27 +39,27 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14266": 55.27133333333333,
-    "1317257": 16.950666666666667,
-    "20554": 1.0,
-    "1299447": 1.0,
     "14271": 33.75233333333333,
     "14268": 58.368,
     "14305": 8.074,
-    "3045": 1.0
+    "1299447": 1.0,
+    "14266": 55.27133333333333,
+    "3045": 1.0,
+    "1317257": 16.950666666666667,
+    "20554": 1.0
    },
    "casts": {
-    "Raptor Strike": 55.27133333333333,
-    "OtherActionManaGain": 2.0,
-    "Major Mana Potion": 2.0,
-    "Strider Kick": 16.950666666666667,
-    "Berserking": 1.0,
-    "Aspect of the Beast": 1.0,
-    "Auto Attack": 164.07166666666666,
     "Mongoose Bite": 33.75233333333333,
     "Wing Clip": 58.368,
     "Immolation Trap": 8.074,
-    "Rapid Fire": 1.0
+    "Aspect of the Beast": 1.0,
+    "Raptor Strike": 55.27133333333333,
+    "Auto Attack": 164.07166666666666,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 2.0,
+    "Strider Kick": 16.950666666666667,
+    "Berserking": 1.0,
+    "Major Mana Potion": 2.0
    },
    "dps": 423.8727987581186,
    "dps_stdev": 21.52686945929688,
@@ -95,27 +95,27 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "14271": 36.24466666666666,
-    "1317257": 19.402333333333335,
-    "14305": 6.0,
-    "14266": 58.937333333333335,
-    "14268": 71.053,
     "1299447": 1.0,
-    "20554": 1.0,
-    "3045": 1.0
+    "14266": 58.937333333333335,
+    "14305": 6.0,
+    "3045": 1.0,
+    "14271": 36.24466666666666,
+    "14268": 71.053,
+    "1317257": 19.402333333333335,
+    "20554": 1.0
    },
    "casts": {
-    "Mongoose Bite": 36.24466666666666,
-    "Strider Kick": 19.402333333333335,
-    "Immolation Trap": 6.0,
-    "Raptor Strike": 58.937333333333335,
-    "Wing Clip": 71.053,
-    "Major Mana Potion": 1.4956666666666667,
     "Aspect of the Beast": 1.0,
+    "Raptor Strike": 58.937333333333335,
+    "Immolation Trap": 6.0,
+    "Rapid Fire": 1.0,
     "Auto Attack": 164.29933333333332,
     "OtherActionManaGain": 1.4956666666666667,
-    "Berserking": 1.0,
-    "Rapid Fire": 1.0
+    "Mongoose Bite": 36.24466666666666,
+    "Major Mana Potion": 1.4956666666666667,
+    "Wing Clip": 71.053,
+    "Strider Kick": 19.402333333333335,
+    "Berserking": 1.0
    },
    "dps": 424.3069559804656,
    "dps_stdev": 21.850574406891848,
@@ -127,13 +127,13 @@
    "error": null,
    "scorer": 1.2369157927694672,
    "shares": {
-    "Auto Attack": 0.4463883668342041,
-    "Raptor Strike": 0.17104110711153284,
-    "Mongoose Bite": 0.14883276927469544,
-    "Strider Kick": 0.0872636791254117,
-    "Wing Clip": 0.06160221537255155,
-    "Immolation Trap": 0.056271832604835315,
-    "Dragonbreath Chili": 0.028600029676769036
+    "Auto Attack": 0.4463883668342042,
+    "Raptor Strike": 0.17104110711153286,
+    "Mongoose Bite": 0.14883276927469546,
+    "Strider Kick": 0.08726367912541172,
+    "Wing Clip": 0.06160221537255156,
+    "Immolation Trap": 0.05627183260483533,
+    "Dragonbreath Chili": 0.02860002967676904
    },
    "source_shares": {
     "melee": 0.3399,
@@ -143,6 +143,62 @@
     "strider_kick": 0.1022
    },
    "unmatched_share": 0.1465
+  },
+  {
+   "label": "survival-raid",
+   "talents": "5-005055001-50023023005022213",
+   "split": "5/16/30",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "14268": 67.79366666666667,
+    "1299447": 1.0,
+    "14266": 58.334,
+    "14271": 18.688666666666666,
+    "14305": 9.627666666666666,
+    "1317257": 19.14,
+    "20554": 1.0,
+    "3045": 1.0
+   },
+   "casts": {
+    "Wing Clip": 67.79366666666667,
+    "Aspect of the Beast": 1.0,
+    "Raptor Strike": 58.334,
+    "Mongoose Bite": 18.688666666666666,
+    "Immolation Trap": 9.627666666666666,
+    "Strider Kick": 19.14,
+    "Berserking": 1.0,
+    "Rapid Fire": 1.0,
+    "Auto Attack": 164.382,
+    "OtherActionManaGain": 1.125,
+    "Major Mana Potion": 1.125
+   },
+   "dps": 438.28539964146387,
+   "dps_stdev": 21.46120974960174,
+   "threat": 443.91039964146387,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 12.244740545670666,
+   "error": null,
+   "scorer": 1.1212430234603592,
+   "shares": {
+    "Auto Attack": 0.4245059193937689,
+    "Raptor Strike": 0.1610229722179125,
+    "Mongoose Bite": 0.13791502518459922,
+    "Immolation Trap": 0.11063868818430785,
+    "Strider Kick": 0.08198887556170995,
+    "Wing Clip": 0.05659873664241039,
+    "Dragonbreath Chili": 0.02732978281529106
+   },
+   "source_shares": {
+    "melee": 0.3426,
+    "raptor_strike": 0.1999,
+    "melee_oh": 0.1845,
+    "mongoose_bite": 0.1712,
+    "strider_kick": 0.1018
+   },
+   "unmatched_share": 0.1946
   }
  ],
  "deltas": {}

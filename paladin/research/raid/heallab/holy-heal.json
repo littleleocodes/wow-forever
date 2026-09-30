@@ -1,10 +1,10 @@
 {
  "class": "paladin",
  "spec": "holy-heal",
- "date": "2026-09-28",
+ "date": "2026-09-30",
  "runs": 60,
  "steps": 10,
- "seconds": 135,
+ "seconds": 185,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -32,19 +32,19 @@
  "results": {
   "holy-raid-healer": {
    "split": "33/0/18",
-   "capacity": 0.6681152343750001,
+   "capacity": 0.668115234375,
    "summary": {
-    "multiplier": 0.6681152343750001,
+    "multiplier": 0.668115234375,
     "shares": {
      "Holy Light": 0.5229191947260762,
      "Flash of Light": 0.43876123983444976,
-     "Lay on Hands": 0.03338872740992422,
+     "Lay on Hands": 0.03338872740992421,
      "Holy Shock": 0.004930838029549842
     },
     "hps": 379.9199138051489,
-    "overheal_share": 0.0706504648306845,
-    "oom_time": 23.74500000000013,
-    "mana_left": 631.9758333333542,
+    "overheal_share": 0.0706504648306846,
+    "oom_time": 23.745000000000132,
+    "mana_left": 631.975833333354,
     "survival": 0.85
    },
    "stats": {
@@ -68,7 +68,7 @@
     },
     "hps": 361.31534554792967,
     "overheal_share": 0.06893783264291126,
-    "oom_time": 32.82833333333353,
+    "oom_time": 32.82833333333354,
     "mana_left": 500.25123333334625,
     "survival": 0.9166666666666666
    },
@@ -83,19 +83,19 @@
   },
   "cand-holy-r1": {
    "split": "23/0/28",
-   "capacity": 0.6259033203125,
+   "capacity": 0.6259033203124998,
    "summary": {
-    "multiplier": 0.6259033203125,
+    "multiplier": 0.6259033203124998,
     "shares": {
-     "Flash of Light": 0.4859347136955818,
+     "Flash of Light": 0.48593471369558194,
      "Holy Light": 0.46320824200102123,
-     "Lay on Hands": 0.04326210436789542,
-     "Holy Shock": 0.007594939935501511
+     "Lay on Hands": 0.043262104367895404,
+     "Holy Shock": 0.007594939935501512
     },
-    "hps": 351.8141049430004,
-    "overheal_share": 0.05988361327975453,
-    "oom_time": 29.766666666666847,
-    "mana_left": 536.0862666666831,
+    "hps": 351.8141049430003,
+    "overheal_share": 0.05988361327975469,
+    "oom_time": 29.76666666666686,
+    "mana_left": 536.0862666666833,
     "survival": 0.8666666666666667
    },
    "stats": {
@@ -119,7 +119,7 @@
     },
     "hps": 361.31534554792967,
     "overheal_share": 0.06893783264291126,
-    "oom_time": 32.82833333333353,
+    "oom_time": 32.82833333333354,
     "mana_left": 500.25123333334625,
     "survival": 0.9166666666666666
    },
@@ -139,8 +139,8 @@
     "talent": "Benediction",
     "ranks": 5,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.005191423641474102,
     "simulated": false
    },
@@ -148,8 +148,8 @@
     "talent": "Conviction",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    },
@@ -157,16 +157,16 @@
     "talent": "Deflection",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Divine Favor",
     "ranks": 1,
-    "sim_delta": 0.03388869998866609,
-    "cap_with": 0.6681152343750001,
+    "sim_delta": 0.033888699988665914,
+    "cap_with": 0.668115234375,
     "cap_without": 0.6462158203125,
     "ev_delta": 0.041076259579611064,
     "simulated": true
@@ -174,17 +174,17 @@
    {
     "talent": "Divine Intellect",
     "ranks": 5,
-    "sim_delta": 0.042593721426394456,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6408203125,
+    "sim_delta": 0.0425937214263941,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.6408203125000002,
     "ev_delta": 0.04292746666211393,
     "simulated": true
    },
    {
     "talent": "Healing Light",
     "ranks": 3,
-    "sim_delta": 0.06690058479532178,
-    "cap_with": 0.6681152343750001,
+    "sim_delta": 0.0669005847953216,
+    "cap_with": 0.668115234375,
     "cap_without": 0.626220703125,
     "ev_delta": 0.06402891674846263,
     "simulated": true
@@ -192,27 +192,27 @@
    {
     "talent": "Holy Power",
     "ranks": 5,
-    "sim_delta": 0.06366604477611947,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.628125,
+    "sim_delta": 0.06366604477611948,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.6281249999999999,
     "ev_delta": 0.03363403178489572,
     "simulated": true
    },
    {
     "talent": "Holy Shock",
     "ranks": 1,
-    "sim_delta": -0.012200404273750983,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6763671875,
+    "sim_delta": -0.012200404273750985,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.6763671874999999,
     "ev_delta": 0.00045629339240566236,
     "simulated": true
    },
    {
     "talent": "Illumination",
     "ranks": 5,
-    "sim_delta": 0.17008722421754774,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.5709960937499999,
+    "sim_delta": 0.1700872242175471,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.5709960937500002,
     "ev_delta": 0.14138126453696626,
     "simulated": true
    },
@@ -220,16 +220,16 @@
     "talent": "Improved Judgement",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Infusion of Light",
     "ranks": 2,
-    "sim_delta": 0.042593721426394636,
-    "cap_with": 0.6681152343750001,
+    "sim_delta": 0.04259372142639446,
+    "cap_with": 0.668115234375,
     "cap_without": 0.6408203124999999,
     "ev_delta": 0.030905591514020704,
     "simulated": true
@@ -238,8 +238,8 @@
     "talent": "Light's Vigil",
     "ranks": 1,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.03285295089402785,
     "simulated": false
    },
@@ -247,8 +247,8 @@
     "talent": "Purifying Power",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0025889915447804184,
     "simulated": false
    },
@@ -256,16 +256,16 @@
     "talent": "Pursuit of Justice",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    },
    {
     "talent": "Reverence",
     "ranks": 3,
-    "sim_delta": 0.12807617791335185,
-    "cap_with": 0.6681152343750001,
+    "sim_delta": 0.12807617791335166,
+    "cap_with": 0.668115234375,
     "cap_without": 0.5922607421875,
     "ev_delta": 0.11709368308704379,
     "simulated": true
@@ -274,8 +274,8 @@
     "talent": "Sanctified Judgement",
     "ranks": 3,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.03197861452620936,
     "simulated": false
    },
@@ -283,8 +283,8 @@
     "talent": "Spiritual Focus",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.009315372202896641,
     "simulated": false
    },
@@ -292,8 +292,8 @@
     "talent": "Unyielding Faith",
     "ranks": 2,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    },
@@ -301,8 +301,8 @@
     "talent": "Voice of Truth",
     "ranks": 1,
     "sim_delta": 0.0,
-    "cap_with": 0.6681152343750001,
-    "cap_without": 0.6681152343750001,
+    "cap_with": 0.668115234375,
+    "cap_without": 0.668115234375,
     "ev_delta": 0.0,
     "simulated": false
    }

@@ -208,6 +208,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cls", nargs="?")
     ap.add_argument("--spec")
+    ap.add_argument("--build", help="with --spec: tune on this build (a spec model no pipeline names yet, e.g. the healer leveling specs)")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--rounds", type=int, default=12)
     ap.add_argument("--fights", type=int, default=600, help="fights per level and candidate on seed 1")
@@ -223,6 +224,8 @@ def main():
     with multiprocessing.Pool(a.jobs, initializer=_init) as pool:
         for cls in classes:
             tl, levels = targets(cls)
+            if a.build and a.spec:   # a spec string outside the class pipeline (2026-09-30: the new leveling rotations)
+                tl = [(a.spec, a.build)]
             for spec, bid in tl:
                 if a.spec and spec != a.spec:
                     continue

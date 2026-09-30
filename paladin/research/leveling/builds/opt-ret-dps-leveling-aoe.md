@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `leveling-aoe`: score +39.1% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `leveling-aoe`: score +33.4% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -36,11 +36,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 | **Benediction** | 5/5 | changed | Reduces the Mana cost of all instant cast spells and abilities by 10%. |
 | **Conviction** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
 | **Improved Judgement** | 2/2 | changed | Decreases the cooldown of your Judgement ability by 2 sec. |
-| **Holy Conduit** | 1/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 20%. |
-| **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
+| **Holy Conduit** | 2/2 | **NEW** | Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%. |
 | **Sanctified Judgement** | 3/3 | **NEW** | Gives your Judgement ability a 100% chance to return 60% of the Mana cost of the judged seal. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 200, and increase your Attack Power by 3% for 30 sec. |
+| **Pursuit of Justice** | 1/2 | changed | Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 6%. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 3 times. |
@@ -52,41 +52,41 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 | Levels | Tree | Talent | Pts | Running total |
 |---|---|---|---|---|
-| 10-14 | Holy | Divine Strength | 5 | 5/0/0 |
-| 15-17 | Holy | Improved Seals | 3 | 8/0/0 |
-| 18-22 | Retribution | Benediction | 5 | 8/0/5 |
-| 23-24 | Retribution | Improved Judgement | 2 | 8/0/7 |
-| 25-29 | Retribution | Conviction | 5 | 8/0/12 |
-| 30 | Retribution | Seal of Command | 1 | 8/0/13 |
-| 31-32 | Retribution | Vindication | 2 | 8/0/15 |
-| 33 | Retribution | Sacred Arbiter | 1 | 8/0/16 |
-| 34-36 | Retribution | Sanctified Judgement | 3 | 8/0/19 |
-| 37 | Retribution | Vindication | 1 | 8/0/20 |
-| 38-40 | Retribution | Two-Handed Weapon Specialization | 3 | 8/0/23 |
-| 41-42 | Retribution | Vengeance | 2 | 8/0/25 |
+| 10-14 | Retribution | Benediction | 5 | 0/0/5 |
+| 15-19 | Retribution | Conviction | 5 | 0/0/10 |
+| 20-21 | Retribution | Improved Judgement | 2 | 0/0/12 |
+| 22 | Retribution | Seal of Command | 1 | 0/0/13 |
+| 23 | Retribution | Holy Conduit | 1 | 0/0/14 |
+| 24 | Retribution | Vindication | 1 | 0/0/15 |
+| 25 | Retribution | Sacred Arbiter | 1 | 0/0/16 |
+| 26-27 | Retribution | Vindication | 2 | 0/0/18 |
+| 28 | Retribution | Holy Conduit | 1 | 0/0/19 |
+| 29 | Retribution | Pursuit of Justice | 1 | 0/0/20 |
+| 30-32 | Retribution | Two-Handed Weapon Specialization | 3 | 0/0/23 |
+| 33-37 | Holy | Divine Strength | 5 | 5/0/23 |
+| 38-40 | Holy | Improved Seals | 3 | 8/0/23 |
+| 41-42 | Retribution | Sanctified Judgement | 2 | 8/0/25 |
 | 43 | Retribution | Champion of the Light | 1 | 8/0/26 |
 | 44 | Retribution | Instrument of Law | 1 | 8/0/27 |
 | 45 | Retribution | Champion of the Light | 1 | 8/0/28 |
 | 46 | Retribution | Instrument of Law | 1 | 8/0/29 |
 | 47 | Retribution | Champion of the Light | 1 | 8/0/30 |
 | 48 | Retribution | Twist of Light | 1 | 8/0/31 |
-| 49 | Retribution | Vengeance | 1 | 8/0/32 |
-| 50-54 | Protection | Toughness | 5 | 8/5/32 |
-| 55-57 | Protection | Precision | 3 | 8/8/32 |
-| 58 | Retribution | Pursuit of Justice | 1 | 8/8/33 |
-| 59 | Retribution | Holy Conduit | 1 | 8/8/34 |
-| 60 | Retribution | Pursuit of Justice | 1 | 8/8/35 |
+| 49 | Retribution | Sanctified Judgement | 1 | 8/0/32 |
+| 50-52 | Retribution | Vengeance | 3 | 8/0/35 |
+| 53-57 | Protection | Toughness | 5 | 8/5/35 |
+| 58-60 | Protection | Precision | 3 | 8/8/35 |
 
 ## Core talents (priority order)
 
-1. **Two-Handed Weapon Specialization** — Removing it costs 5.2 points of score in this model.
-2. **Improved Seals** — Removing it costs 3.5 points of score in this model.
-3. **Conviction** — Removing it costs 3.2 points of score in this model.
-4. **Precision** — Removing it costs 3.1 points of score in this model.
-5. **Champion of the Light** — Removing it costs 2.5 points of score in this model.
-6. **Vengeance** — Removing it costs 2.5 points of score in this model.
-7. **Sacred Arbiter** — Removing it costs 2.5 points of score in this model.
-8. **Divine Strength** — Removing it costs 1.7 points of score in this model.
+1. **Two-Handed Weapon Specialization** — Removing it costs 4.4 points of score in this model.
+2. **Improved Seals** — Removing it costs 3.0 points of score in this model.
+3. **Conviction** — Removing it costs 2.7 points of score in this model.
+4. **Precision** — Removing it costs 2.6 points of score in this model.
+5. **Champion of the Light** — Removing it costs 2.1 points of score in this model.
+6. **Vengeance** — Removing it costs 2.1 points of score in this model.
+7. **Sacred Arbiter** — Removing it costs 2.1 points of score in this model.
+8. **Divine Strength** — Removing it costs 1.5 points of score in this model.
 
 ## Leveling rotation (fight lab)
 
@@ -111,7 +111,7 @@ What this build casts per kill ([report](../fightlab/ret-dps-aoe.md), all leveli
 
 ## Notes
 
-- Report: paladin/talents/forever/optimizer/ret-dps-leveling-aoe.md
+- Report: paladin/research/talents/forever/optimizer/ret-dps-leveling-aoe.md
 
 ## Open questions (verify in the live game)
 

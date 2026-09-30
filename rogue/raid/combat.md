@@ -4,7 +4,9 @@
 
 **✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
-**[Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4)
+**[Combat — Raid](../research/raid/builds/combat-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/005303121001-32330310001515231-002-4)
+
+> 🔬 Derived build: searched in the community's raid simulator from the spec's best build; it beat the hand-made build (combat-daggers-raid) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -22,7 +24,6 @@
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
 - **Blade Flurry**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
-- **Cold Blood**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -31,12 +32,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 403 |
-| Parse (a full raid: every raid buff and debuff) | 720 |
+| Training dummy, 3-minute fight (only your own buffs) | 422 |
+| Parse (a full raid: every raid buff and debuff) | 712 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 403 → mana -0% → armor +19% → physical +33% → spell +1% → everything else +25% → raid 720
+Dummy 422 → mana -0% → armor +17% → physical +32% → spell +1% → everything else +18% → raid 712
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -44,7 +45,7 @@ Dummy 403 → mana -0% → armor +19% → physical +33% → spell +1% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 453 | 414 | 403 | 397 | 405 |
+| 472 | 433 | 422 | 415 | 423 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
@@ -52,6 +53,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 ## Other builds of this spec
 
+- [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (16/33/2, 403 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4)
 - [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 399 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
 - [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 389 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32303301001515131--4)
 - [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 370 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300001513231--4)

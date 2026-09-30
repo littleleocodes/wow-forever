@@ -4,8 +4,6 @@
 
 *A Lightning Bolt caster that dips Enhancement for its passive bonuses.* (a hybrid: Elemental/Enhancement).
 
-**✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
-
 **[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550430130010304-255000001330102--4)
 
 ## How to play

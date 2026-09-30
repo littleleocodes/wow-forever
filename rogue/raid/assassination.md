@@ -2,9 +2,7 @@
 
 [Rogue](../README.md) > [Raid (training dummy and parse)](README.md) > Assassination
 
-**✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
-
-**[Assassination/Combat — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md)** (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031232150005-305313000013-002-4)
+**[Assassination — Seal Fate daggers](../research/raid/builds/assassination-seal-fate-raid.md)** (30/19/2) — [open the talent tree](https://talentsforever.com/rogue/60/0053031232150005-305313000013-002-4)
 
 ## How to play
 

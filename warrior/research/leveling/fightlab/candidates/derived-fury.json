@@ -1,0 +1,315 @@
+{
+ "id": "fl-fury-fury-dw-raid",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    2
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Improved Charge",
+    2
+   ],
+   [
+    "Improved Heroic Strike",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Piercing Howl",
+    1
+   ],
+   [
+    "Boundless Rage",
+    1
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ],
+   [
+    "Improved Berserker Rage",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Fury",
+   "talent": "Boundless Rage",
+   "points": 1
+  },
+  {
+   "levels": "24",
+   "tree": "Fury",
+   "talent": "Piercing Howl",
+   "points": 1
+  },
+  {
+   "levels": "25-26",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 2
+  },
+  {
+   "levels": "27-29",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 3
+  },
+  {
+   "levels": "30",
+   "tree": "Fury",
+   "talent": "Death Wish",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 2
+  },
+  {
+   "levels": "33-35",
+   "tree": "Fury",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "36-39",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "40",
+   "tree": "Fury",
+   "talent": "Bloodthirst",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "44-46",
+   "tree": "Arms",
+   "talent": "Improved Heroic Strike",
+   "points": 3
+  },
+  {
+   "levels": "47-48",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Arms",
+   "talent": "Improved Rend",
+   "points": 3
+  },
+  {
+   "levels": "52-54",
+   "tree": "Arms",
+   "talent": "Deep Wounds",
+   "points": 3
+  },
+  {
+   "levels": "55",
+   "tree": "Fury",
+   "talent": "Improved Berserker Rage",
+   "points": 1
+  },
+  {
+   "levels": "56-57",
+   "tree": "Arms",
+   "talent": "Improved Overpower",
+   "points": 2
+  },
+  {
+   "levels": "58",
+   "tree": "Arms",
+   "talent": "Spearing Strike",
+   "points": 1
+  },
+  {
+   "levels": "59-60",
+   "tree": "Arms",
+   "talent": "Two-Handed Weapon Specialization",
+   "points": 2
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "fury-dw-raid",
+  "model": "fury-dw-raid",
+  "tree": "Fury",
+  "start": "opt-arms-2h-raid-leveling-aoe",
+  "starts": {
+   "opt-fury-dw-raid-leveling-st": 32.56010000029149,
+   "opt-fury-dw-raid-solo-60": 32.56010000029149,
+   "opt-arms-2h-raid-leveling-aoe": 29.997366666843785,
+   "/home/user/wow-forever/warrior/research/leveling/fightlab/candidates/derived-fury-scorer.json": 32.711100000299666
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Two-Handed Weapon Specialization -> Improved Berserker Rage",
+    "gain_seed1": 0.021608678451498275,
+    "gain_seed2": 0.02802180788818842
+   },
+   {
+    "round": 2,
+    "move": "2 points Improved Tactical Mastery -> Improved Charge",
+    "gain_seed1": 0.012985962731736356,
+    "gain_seed2": 0.0059595799851909215
+   },
+   {
+    "round": 3,
+    "move": "3 points Deflection -> Improved Heroic Strike",
+    "gain_seed1": 0.007783695206828201,
+    "gain_seed2": 0.011666702912202731
+   }
+  ],
+  "incumbent": "opt-arms-2h-raid-leveling-aoe",
+  "race": {
+   "incumbent": [
+    26.657841666715797,
+    {
+     "20": 20.17566666654526,
+     "30": 23.59273333324983,
+     "40": 26.166933333349817,
+     "50": 27.656033333407645,
+     "60": 29.846566666839742
+    }
+   ],
+   "search": [
+    26.433540000038626,
+    {
+     "20": 20.17566666654526,
+     "30": 23.710799999920866,
+     "40": 26.28906666668796,
+     "50": 27.831200000082028,
+     "60": 28.812466666792886
+    }
+   ],
+   "gain": 0.008414097040617796,
+   "all": {
+    "opt-fury-dw-raid-leveling-st": [
+     28.358058333454277,
+     {
+      "20": 20.001933333214136,
+      "30": 24.296666666608296,
+      "40": 28.788166666786864,
+      "50": 28.93716666679524,
+      "60": 32.40480000028478
+     }
+    ],
+    "opt-fury-dw-raid-solo-60": [
+     28.358058333454277,
+     {
+      "20": 20.001933333214136,
+      "30": 24.296666666608296,
+      "40": 28.788166666786864,
+      "50": 28.93716666679524,
+      "60": 32.40480000028478
+     }
+    ],
+    "opt-arms-2h-raid-leveling-aoe": [
+     26.657841666715797,
+     {
+      "20": 20.17566666654526,
+      "30": 23.59273333324983,
+      "40": 26.166933333349817,
+      "50": 27.656033333407645,
+      "60": 29.846566666839742
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

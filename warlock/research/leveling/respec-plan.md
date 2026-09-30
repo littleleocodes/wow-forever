@@ -6,36 +6,32 @@ Talentless baseline: 90 h for levels 10-60 under these assumptions.
 
 ## Recommended schedule
 
-- **Levels 10-57: affliction-leveling -> level-20 build (11/0/0)**
+- **Levels 10-60: affliction-leveling -> level-40 build (31/0/0)**
   - at level 10: **Affliction**: Improved Corruption 1
-  - at level 57: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 2, Malevolence 5, Siphon Life 1, Suppression 5, Shadow Mastery 5, Soul Siphon 3, Improved Drains 2; **Demonology**: Unholy Power 5, Demonic Aegis 2, Demonic Embrace 4
-  - order: 10-14 Improved Corruption x5, 15-19 Malediction x5, 20 Amplify Curse, 21-23 Pandemic x3, 24-25 Improved Bane of Agony x2, 26-29 Malevolence x4, 30 Siphon Life, 31 Malevolence, 32-34 Suppression x3, 35-39 Shadow Mastery x5, 40-41 Suppression x2, 42-46 Unholy Power x5, 47-49 Soul Siphon x3, 50-51 Demonic Aegis x2, 52 Improved Drains, 53-56 Demonic Embrace x4, 57 Improved Drains
-- **Levels 58-60: affliction-leveling -> level-60 build (27/24/0)** (respec here)
-  - at level 58: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 2, Malevolence 5, Siphon Life 1, Suppression 3, Shadow Mastery 2; **Demonology**: Unholy Power 5, Demonic Aegis 2, Demonic Embrace 5, Demonic Sacrifice 1, Improved Imp 3, Improved Voidwalker 3, Fel Vitality 1, Soul Link 1, Demonic Knowledge 1
-  - at level 60: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 2, Malevolence 5, Siphon Life 1, Suppression 3, Shadow Mastery 2; **Demonology**: Unholy Power 5, Demonic Aegis 2, Demonic Embrace 5, Demonic Sacrifice 1, Improved Imp 3, Improved Voidwalker 3, Fel Vitality 1, Soul Link 1, Demonic Knowledge 3
-  - order: 59-60 Demonic Knowledge x2
+  - at level 60: **Affliction**: Improved Corruption 5, Malediction 5, Amplify Curse 1, Improved Bane of Agony 2, Pandemic 3, Suppression 5, Siphon Life 1, Malevolence 5, Shadow Mastery 5, Soul Siphon 3; **Demonology**: Unholy Power 5; **Destruction**: Bane 5, Molten Skin 5, Ruin 1
+  - order: 10-14 Improved Corruption x5, 15-19 Malediction x5, 20 Amplify Curse, 21-22 Improved Bane of Agony x2, 23-25 Pandemic x3, 26-29 Suppression x4, 30 Siphon Life, 31 Suppression, 32-34 Malevolence x3, 35-39 Shadow Mastery x5, 40-41 Malevolence x2, 42-46 Unholy Power x5, 47-49 Soul Siphon x3, 50-54 Bane x5, 55-59 Molten Skin x5, 60 Ruin
 
-Total: **72.7 h** (19.3% faster than talentless), 1 respec(s).
+Total: **74.3 h** (17.5% faster than talentless), 0 respec(s).
 
 ## Never respec: best single plan
 
 | Plan | Hours 10-60 | vs. schedule |
 |---|---|---|
-| affliction-leveling -> level-40 build (31/0/0) | 72.7 | +0.0 h |
-| affliction-leveling -> level-50 build (35/6/0) | 72.7 | +0.0 h |
-| affliction-leveling -> level-20 build (11/0/0) | 72.7 | +0.0 h |
-| affliction-leveling -> level-30 build (21/0/0) | 72.7 | +0.0 h |
-| affliction-leveling -> level-60 build (27/24/0) | 73.2 | +0.5 h |
+| affliction-leveling -> level-40 build (31/0/0) | 74.3 | +0.0 h |
+| affliction-leveling -> level-20 build (11/0/0) | 74.3 | +0.0 h |
+| affliction-leveling -> level-30 build (21/0/0) | 74.3 | +0.0 h |
+| affliction-leveling -> level-50 build (36/5/0) | 74.3 | +0.0 h |
+| affliction-leveling -> level-60 build (27/24/0) | 75.1 | +0.8 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 
 | Plan | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |
-| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |
-| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |
-| affliction-leveling -> level-50 build (35/6/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +22.0% | +23.0% | +23.8% | +24.2% | +24.5% |
-| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.4% | +5.2% | +8.5% | +18.6% | +20.1% | +21.3% | +21.9% | +22.1% | +22.1% | +27.6% |
+| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
+| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
+| affliction-leveling -> level-40 build (31/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |
+| affliction-leveling -> level-50 build (36/5/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.8% | +21.8% | +23.3% |
+| affliction-leveling -> level-60 build (27/24/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.3% | +19.5% | +19.5% | +19.5% | +24.7% |
 
 ## Reading it
 

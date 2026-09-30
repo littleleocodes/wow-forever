@@ -2,7 +2,11 @@
 
 [Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Survival
 
-**[Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md)** (5/15/31) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
+**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
+
+**[Survival — Raid](../research/raid/builds/survival-raid.md)** (5/16/30) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
+
+> 🔬 Derived build: searched in the community's raid simulator from the spec's best build; it beat the hand-made build (melee-survival-raid) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -31,12 +35,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 424 |
-| Parse (a full raid: every raid buff and debuff) | 951 |
+| Training dummy, 3-minute fight (only your own buffs) | 438 |
+| Parse (a full raid: every raid buff and debuff) | 953 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 424 → mana +1% → armor +50% → physical +55% → spell +3% → everything else +14% → raid 951
+Dummy 438 → mana +1% → armor +48% → physical +52% → spell +4% → everything else +13% → raid 953
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -44,12 +48,13 @@ Dummy 424 → mana +1% → armor +50% → physical +55% → spell +3% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 446 | 433 | 424 | 424 | 406 |
+| 458 | 448 | 438 | 438 | 418 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
 ## Other builds of this spec
 
+- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
 - [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 424 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 

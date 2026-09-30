@@ -1,0 +1,99 @@
+{
+ "id": "derived-affliction",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Improved Corruption",
+    2
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Malevolence",
+    5
+   ],
+   [
+    "Shadow Mastery",
+    5
+   ],
+   [
+    "Malediction",
+    5
+   ]
+  ],
+  "Demonology": [],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Cataclysm",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for affliction-raid from affliction-dot-raid in the dummy setting: 567.6 -> 573.9 DPS on a third seed.",
+ "search": {
+  "start": "affliction-dot-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Aftermath -> Cataclysm",
+    "gain_seed1": 0.008173861102360958,
+    "gain_seed2": 0.007549435039150509,
+    "split": "30/0/21"
+   },
+   {
+    "round": 2,
+    "move": "3 points Improved Corruption -> Malediction",
+    "gain_seed1": 0.0017114857913176351,
+    "gain_seed2": 0.00235828462728227,
+    "split": "30/0/21"
+   },
+   {
+    "round": 3,
+    "move": "2 points Nightfall -> Malediction",
+    "gain_seed1": 0.0023036572677825884,
+    "gain_seed2": 0.00155573075103832,
+    "split": "30/0/21"
+   }
+  ],
+  "dps_start": 567.5516900367182,
+  "dps_end": 573.9195572921767,
+  "gain": 0.011219889513581549,
+  "tank": false
+ }
+}

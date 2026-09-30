@@ -1,0 +1,253 @@
+{
+ "id": "fl-restoration-enhancement-dps",
+ "allocation": {
+  "Elemental": [],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Guardian Totems",
+    2
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Improved Lightning Shield",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    4
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Mental Quickness",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Improved Healing Wave",
+    5
+   ],
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ],
+   [
+    "Natural Grace",
+    2
+   ],
+   [
+    "Tidal Focus",
+    5
+   ],
+   [
+    "Restorative Totems",
+    5
+   ],
+   [
+    "Mana Tide Totem",
+    1
+   ],
+   [
+    "Healing Way",
+    3
+   ],
+   [
+    "Nature's Swiftness",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Enhancement",
+   "talent": "Improved Ghost Wolf",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Enhancement",
+   "talent": "Mental Dexterity",
+   "points": 3
+  },
+  {
+   "levels": "20",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Enhancement",
+   "talent": "Guardian Totems",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Enhancement",
+   "talent": "Stormstrike",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Enhancement",
+   "talent": "Flurry",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Enhancement",
+   "talent": "Mental Quickness",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 5
+  },
+  {
+   "levels": "36-40",
+   "tree": "Restoration",
+   "talent": "Tidal Focus",
+   "points": 5
+  },
+  {
+   "levels": "41-43",
+   "tree": "Restoration",
+   "talent": "Mindfulness",
+   "points": 3
+  },
+  {
+   "levels": "44-45",
+   "tree": "Restoration",
+   "talent": "Improved Healing Wave",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Restoration",
+   "talent": "Mana Tide Totem",
+   "points": 1
+  },
+  {
+   "levels": "47-50",
+   "tree": "Restoration",
+   "talent": "Restorative Totems",
+   "points": 4
+  },
+  {
+   "levels": "51",
+   "tree": "Restoration",
+   "talent": "Nature's Swiftness",
+   "points": 1
+  },
+  {
+   "levels": "52",
+   "tree": "Restoration",
+   "talent": "Restorative Totems",
+   "points": 1
+  },
+  {
+   "levels": "53-55",
+   "tree": "Restoration",
+   "talent": "Improved Healing Wave",
+   "points": 3
+  },
+  {
+   "levels": "56-58",
+   "tree": "Restoration",
+   "talent": "Healing Way",
+   "points": 3
+  },
+  {
+   "levels": "59-60",
+   "tree": "Restoration",
+   "talent": "Natural Grace",
+   "points": 2
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "enhancement-dps",
+  "model": "enhancement-dps",
+  "tree": "Restoration",
+  "start": "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-restoration-scorer.json",
+  "starts": {
+   "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-restoration-scorer.json": 38.84228136997456
+  },
+  "moves": [],
+  "incumbent": "derived-restoration-scorer",
+  "race": {
+   "incumbent": [
+    33.836113935591655,
+    {
+     "20": 20.965788163613162,
+     "30": 29.073552800059687,
+     "40": 34.15917300967099,
+     "50": 35.73441663955933,
+     "60": 38.7102114579912
+    }
+   ],
+   "search": [
+    33.836113935591655,
+    {
+     "20": 20.965788163613162,
+     "30": 29.073552800059687,
+     "40": 34.15917300967099,
+     "50": 35.73441663955933,
+     "60": 38.7102114579912
+    }
+   ],
+   "gain": 0.0,
+   "all": {
+    "derived-restoration-scorer": [
+     33.836113935591655,
+     {
+      "20": 20.965788163613162,
+      "30": 29.073552800059687,
+      "40": 34.15917300967099,
+      "50": 35.73441663955933,
+      "60": 38.7102114579912
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

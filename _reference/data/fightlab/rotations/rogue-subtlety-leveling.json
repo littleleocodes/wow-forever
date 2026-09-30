@@ -1,0 +1,93 @@
+{
+ "eat_below": 0.5,
+ "veto": {
+  "Slice and Dice": {
+   "off": true
+  },
+  "Kidney Shot": {
+   "off": true
+  }
+ },
+ "class": "rogue",
+ "spec": "subtlety-leveling",
+ "build": "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-30",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "eat below 50% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.5
+   ],
+   "gain_seed1": 0.04091185235812422,
+   "gain_seed2": 0.03733463990203689
+  },
+  {
+   "round": 2,
+   "change": "never cast Slice and Dice",
+   "rule": [
+    "off",
+    "Slice and Dice",
+    true
+   ],
+   "gain_seed1": 0.031777977075854724,
+   "gain_seed2": 0.031514219657119646
+  },
+  {
+   "round": 3,
+   "change": "never cast Kidney Shot",
+   "rule": [
+    "off",
+    "Kidney Shot",
+    true
+   ],
+   "gain_seed1": 0.01407229492535289,
+   "gain_seed2": 0.009428942253508543
+  }
+ ],
+ "weighted_before": 28.695034845402336,
+ "weighted_after": 26.505119700200453,
+ "per_level": {
+  "20": {
+   "before": 19.70163037859535,
+   "after": 19.20283333322665,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 24.554848523801382,
+   "after": 23.275466666576904,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 29.947723459848188,
+   "after": 27.248900000052945,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 30.49809991649405,
+   "after": 28.097066666750763,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 31.425249526264825,
+   "after": 28.7315656673099,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

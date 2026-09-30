@@ -1,0 +1,325 @@
+{
+ "id": "fl-shadow-shadow-dps",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Improved Power Word: Shield",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Mental Strength",
+    1
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Spirit Tap",
+    5
+   ],
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Blackout",
+    3
+   ],
+   [
+    "Shadow Reach",
+    2
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Silence",
+    1
+   ],
+   [
+    "Early Demise",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Shadow",
+   "talent": "Spirit Tap",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Shadow",
+   "talent": "Shadow Reach",
+   "points": 2
+  },
+  {
+   "levels": "17-19",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 3
+  },
+  {
+   "levels": "20",
+   "tree": "Shadow",
+   "talent": "Mind Flay",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Shadow",
+   "talent": "Improved Mind Flay",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Shadow",
+   "talent": "Shadow Focus",
+   "points": 2
+  },
+  {
+   "levels": "25-26",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 2
+  },
+  {
+   "levels": "27",
+   "tree": "Shadow",
+   "talent": "Vampiric Embrace",
+   "points": 1
+  },
+  {
+   "levels": "28",
+   "tree": "Shadow",
+   "talent": "Shadow Weaving",
+   "points": 1
+  },
+  {
+   "levels": "29",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Shadow",
+   "talent": "Silence",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Shadow",
+   "talent": "Improved Shadow Word: Pain",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Shadow",
+   "talent": "Blackout",
+   "points": 3
+  },
+  {
+   "levels": "35-36",
+   "tree": "Shadow",
+   "talent": "Early Demise",
+   "points": 2
+  },
+  {
+   "levels": "37-39",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Shadow",
+   "talent": "Shadowform",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Shadow",
+   "talent": "Darkness",
+   "points": 2
+  },
+  {
+   "levels": "43-47",
+   "tree": "Discipline",
+   "talent": "Twin Disciplines",
+   "points": 5
+  },
+  {
+   "levels": "48-49",
+   "tree": "Discipline",
+   "talent": "Martyrdom",
+   "points": 2
+  },
+  {
+   "levels": "50-52",
+   "tree": "Discipline",
+   "talent": "Improved Power Word: Shield",
+   "points": 3
+  },
+  {
+   "levels": "53",
+   "tree": "Discipline",
+   "talent": "Inner Focus",
+   "points": 1
+  },
+  {
+   "levels": "54-55",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 2
+  },
+  {
+   "levels": "56-58",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Discipline",
+   "talent": "Mental Agility",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "shadow-dps",
+  "model": "shadow-dps",
+  "tree": "Shadow",
+  "start": "leveling-shadow",
+  "starts": {
+   "leveling-shadow": 21.294928599750765,
+   "opt-shadow-dps-leveling-st": 25.648230383409675,
+   "opt-shadow-dps-solo-60": 25.648230383409675,
+   "opt-shadow-dps-leveling-aoe": 23.90744316196748,
+   "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-shadow-scorer.json": 25.648230383409675
+  },
+  "moves": [],
+  "incumbent": "leveling-shadow",
+  "race": {
+   "incumbent": [
+    25.831092031587133,
+    {
+     "20": 35.13221635229154,
+     "30": 37.39106336627944,
+     "40": 23.18248661054199,
+     "50": 22.705746596388522,
+     "60": 21.32092306736846
+    }
+   ],
+   "search": [
+    25.831092031587133,
+    {
+     "20": 35.13221635229154,
+     "30": 37.39106336627944,
+     "40": 23.18248661054199,
+     "50": 22.705746596388522,
+     "60": 21.32092306736846
+    }
+   ],
+   "gain": 0.0,
+   "all": {
+    "leveling-shadow": [
+     25.831092031587133,
+     {
+      "20": 35.13221635229154,
+      "30": 37.39106336627944,
+      "40": 23.18248661054199,
+      "50": 22.705746596388522,
+      "60": 21.32092306736846
+     }
+    ],
+    "opt-shadow-dps-leveling-st": [
+     29.49302988540986,
+     {
+      "20": 37.27061775715966,
+      "30": 40.31454388727262,
+      "40": 27.292081200350808,
+      "50": 26.33200282232778,
+      "60": 25.591231936502997
+     }
+    ],
+    "opt-shadow-dps-solo-60": [
+     29.49302988540986,
+     {
+      "20": 37.27061775715966,
+      "30": 40.31454388727262,
+      "40": 27.292081200350808,
+      "50": 26.33200282232778,
+      "60": 25.591231936502997
+     }
+    ],
+    "opt-shadow-dps-leveling-aoe": [
+     28.630248437913586,
+     {
+      "20": 37.61108217558297,
+      "30": 39.18025932631472,
+      "40": 26.479374214150866,
+      "50": 26.296412410698757,
+      "60": 23.74041125301074
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

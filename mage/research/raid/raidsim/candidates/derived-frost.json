@@ -1,0 +1,100 @@
+{
+ "id": "derived-frost",
+ "allocation": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Improved Fireball",
+    3
+   ],
+   [
+    "Flame Throwing",
+    2
+   ],
+   [
+    "Burning Soul",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ],
+   [
+    "Cold Snap",
+    1
+   ],
+   [
+    "Winter's Chill",
+    5
+   ],
+   [
+    "Ice Barrier",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for frost-raid from opt-frost-raid-raid-dps-extwc in the dummy setting: 542.1 -> 542.1 DPS on a third seed.",
+ "search": {
+  "start": "opt-frost-raid-raid-dps-extwc",
+  "setting": "dummy",
+  "kept": [
+   "Fingers of Frost"
+  ],
+  "moves": [],
+  "dps_start": 542.088022332339,
+  "dps_end": 542.088022332339,
+  "gain": 0.0,
+  "tank": false
+ }
+}

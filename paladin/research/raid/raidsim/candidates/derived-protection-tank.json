@@ -1,0 +1,107 @@
+{
+ "id": "derived-protection-tank",
+ "allocation": {
+  "Holy": [],
+  "Protection": [
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    5
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Improved Righteous Fury",
+    3
+   ],
+   [
+    "Shield Specialization",
+    1
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "One-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Templar's Bulwark",
+    1
+   ]
+  ],
+  "Retribution": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Vindication",
+    2
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Eye for an Eye",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for prot-tank from prot-tank in the raid setting: 518.4 -> 520.0 DPS on a third seed.",
+ "search": {
+  "start": "prot-tank",
+  "setting": "raid",
+  "kept": [
+   "Redoubt"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Vindication -> Eye for an Eye",
+    "gain_seed1": 0.0021734857828694665,
+    "gain_seed2": 0.0020884916971544154,
+    "split": "0/23/28"
+   }
+  ],
+  "dps_start": 518.4293957056175,
+  "dps_end": 520.021236967323,
+  "gain": 0.0020938476117255966,
+  "tank": true
+ }
+}

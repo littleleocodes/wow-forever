@@ -1,0 +1,100 @@
+{
+ "id": "derived-enhancement",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Devastation",
+    2
+   ],
+   [
+    "Elemental Focus",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Elemental Weapons",
+    3
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Tidal Focus",
+    1
+   ],
+   [
+    "Mindfulness",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for enhancement-dps from opt-enhancement-dps-raid-dps in the dummy setting: 394.6 -> 403.2 DPS on a third seed.",
+ "search": {
+  "start": "opt-enhancement-dps-raid-dps",
+  "setting": "dummy",
+  "kept": [
+   "Maelstrom Weapon"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Tidal Focus -> Mindfulness",
+    "gain_seed1": 0.021463533609866303,
+    "gain_seed2": 0.02145305312055279,
+    "split": "11/31/9"
+   }
+  ],
+  "dps_start": 394.60944913240803,
+  "dps_end": 403.1576366397213,
+  "gain": 0.021662399433433288,
+  "tank": false
+ }
+}

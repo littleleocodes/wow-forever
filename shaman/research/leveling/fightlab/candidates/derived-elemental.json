@@ -1,0 +1,272 @@
+{
+ "id": "fl-elemental-elemental-dps",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Eye of the Storm",
+    3
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Earthbound",
+    1
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lava Burst",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Earth's Grasp",
+    1
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Anticipation",
+    1
+   ],
+   [
+    "Improved Lightning Shield",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Elemental",
+   "talent": "Convection",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Elemental",
+   "talent": "Call of Flame",
+   "points": 3
+  },
+  {
+   "levels": "18-19",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 2
+  },
+  {
+   "levels": "20",
+   "tree": "Elemental",
+   "talent": "Elemental Focus",
+   "points": 1
+  },
+  {
+   "levels": "21-25",
+   "tree": "Enhancement",
+   "talent": "Thundering Strikes",
+   "points": 5
+  },
+  {
+   "levels": "26-27",
+   "tree": "Enhancement",
+   "talent": "Improved Ghost Wolf",
+   "points": 2
+  },
+  {
+   "levels": "28",
+   "tree": "Enhancement",
+   "talent": "Earth's Grasp",
+   "points": 1
+  },
+  {
+   "levels": "29-30",
+   "tree": "Enhancement",
+   "talent": "Improved Lightning Shield",
+   "points": 2
+  },
+  {
+   "levels": "31",
+   "tree": "Enhancement",
+   "talent": "Shamanistic Focus",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Elemental",
+   "talent": "Elemental Alacrity",
+   "points": 3
+  },
+  {
+   "levels": "35-37",
+   "tree": "Elemental",
+   "talent": "Concussion",
+   "points": 3
+  },
+  {
+   "levels": "38",
+   "tree": "Elemental",
+   "talent": "Call of Thunder",
+   "points": 1
+  },
+  {
+   "levels": "39-40",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 2
+  },
+  {
+   "levels": "41-43",
+   "tree": "Elemental",
+   "talent": "Lightning Overload",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Elemental",
+   "talent": "Earthbound",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Elemental",
+   "talent": "Eye of the Storm",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Elemental",
+   "talent": "Elemental Fury",
+   "points": 5
+  },
+  {
+   "levels": "51",
+   "tree": "Elemental",
+   "talent": "Lava Burst",
+   "points": 1
+  },
+  {
+   "levels": "52-56",
+   "tree": "Restoration",
+   "talent": "Totemic Focus",
+   "points": 5
+  },
+  {
+   "levels": "57-59",
+   "tree": "Restoration",
+   "talent": "Mindfulness",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Enhancement",
+   "talent": "Anticipation",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "elemental-dps",
+  "model": "elemental-dps",
+  "tree": "Elemental",
+  "start": "opt-elemental-dps-leveling-st",
+  "starts": {
+   "opt-elemental-dps-leveling-st": 38.17273319392279,
+   "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-elemental-scorer.json": 38.17273319392279
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Guardian Totems -> Improved Lightning Shield",
+    "gain_seed1": 0.012327680160447385,
+    "gain_seed2": 0.00910799196357781
+   }
+  ],
+  "incumbent": "opt-elemental-dps-leveling-st",
+  "race": {
+   "incumbent": [
+    38.03882348479711,
+    {
+     "20": 28.076852756310767,
+     "30": 40.01578004292578,
+     "40": 38.61400742448841,
+     "50": 40.451347050152464,
+     "60": 37.97710985097124
+    }
+   ],
+   "search": [
+    37.712862025705626,
+    {
+     "20": 28.076852756310767,
+     "30": 39.62890648794643,
+     "40": 38.288265066400356,
+     "50": 40.07812661838132,
+     "60": 37.61218703002395
+    }
+   ],
+   "gain": 0.00856917825604575,
+   "all": {
+    "opt-elemental-dps-leveling-st": [
+     38.03882348479711,
+     {
+      "20": 28.076852756310767,
+      "30": 40.01578004292578,
+      "40": 38.61400742448841,
+      "50": 40.451347050152464,
+      "60": 37.97710985097124
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

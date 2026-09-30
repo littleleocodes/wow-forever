@@ -10,9 +10,10 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Restoration / Balance — PvP Healer (14/0/37)](builds/pvp-resto.md) | 14/0/37 | HEALER | [pvp-resto-feral-hybrid](../talents/classic-baseline/pvp-resto-feral-hybrid.md) |
-| [Balance — PvP (generated)](builds/balance-pvp.md) | 32/11/8 | DPS | — |
-| [Feral Combat — PvP (generated)](builds/feral-combat-pvp.md) | 0/31/20 | DPS | — |
+| [Restoration — PvP healer with a Balance dip (14/0/37)](builds/pvp-resto.md) | 14/0/37 | HEALER | [pvp-resto-feral-hybrid](../talents/classic-baseline/pvp-resto-feral-hybrid.md) |
+| [Balance — PvP (derived)](builds/balance-pvp.md) | 32/11/8 | DPS | — |
+| [Feral Combat — PvP (derived)](builds/feral-combat-pvp.md) | 0/32/19 | DPS | — |
+| [Restoration — PvP (derived)](builds/restoration-pvp.md) | 0/11/40 | HEALER | — |
 
 Classic Era reference builds: [pvp-resto-feral-hybrid](../talents/classic-baseline/pvp-resto-feral-hybrid.md).
 

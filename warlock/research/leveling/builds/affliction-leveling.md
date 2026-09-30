@@ -1,4 +1,4 @@
-# Affliction — Leveling (generated) — 35/6/10
+# Affliction — Leveling (derived) — 35/6/10
 
 *[Warlock](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Affliction leveling build with at least 30 points in Affliction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Affliction leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Affliction build, 30+ points kept in Affliction, playing the affliction-leveling rotation; the talent order is the stats model's (affliction-leveling).
 
 ## Point allocation
 
@@ -35,7 +35,7 @@ The best Affliction leveling build with at least 30 points in Affliction, genera
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
-| **Demonic Aegis** | 1/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 15%. |
+| **Demonic Energies** | 1/2 | **NEW** | You heal your pet for 8% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 50% of the Mana you gain. |
 
 ### Destruction (10)
 
@@ -51,28 +51,28 @@ The best Affliction leveling build with at least 30 points in Affliction, genera
 | 10-14 | Affliction | Improved Corruption | 5 | 5/0/0 |
 | 15-19 | Affliction | Malediction | 5 | 10/0/0 |
 | 20 | Affliction | Amplify Curse | 1 | 11/0/0 |
-| 21-23 | Affliction | Pandemic | 3 | 14/0/0 |
-| 24-25 | Affliction | Improved Bane of Agony | 2 | 16/0/0 |
-| 26-29 | Affliction | Malevolence | 4 | 20/0/0 |
+| 21-22 | Affliction | Improved Bane of Agony | 2 | 13/0/0 |
+| 23-25 | Affliction | Pandemic | 3 | 16/0/0 |
+| 26-29 | Affliction | Suppression | 4 | 20/0/0 |
 | 30 | Affliction | Siphon Life | 1 | 21/0/0 |
-| 31 | Affliction | Malevolence | 1 | 22/0/0 |
-| 32-34 | Affliction | Suppression | 3 | 25/0/0 |
+| 31 | Affliction | Suppression | 1 | 22/0/0 |
+| 32-34 | Affliction | Malevolence | 3 | 25/0/0 |
 | 35-39 | Affliction | Shadow Mastery | 5 | 30/0/0 |
-| 40-41 | Affliction | Suppression | 2 | 32/0/0 |
+| 40-41 | Affliction | Malevolence | 2 | 32/0/0 |
 | 42-46 | Demonology | Unholy Power | 5 | 32/5/0 |
 | 47-49 | Affliction | Soul Siphon | 3 | 35/5/0 |
 | 50-54 | Destruction | Bane | 5 | 35/5/5 |
 | 55-59 | Destruction | Molten Skin | 5 | 35/5/10 |
-| 60 | Demonology | Demonic Aegis | 1 | 35/6/10 |
+| 60 | Demonology | Demonic Energies | 1 | 35/6/10 |
 
 ## Core talents (priority order)
 
-1. **Siphon Life** — The scorer's value in this build: +31.9% of its score (model affliction-leveling).
-2. **Pandemic** — The scorer's value in this build: +10.4% of its score (model affliction-leveling).
-3. **Shadow Mastery** — The scorer's value in this build: +8.1% of its score (model affliction-leveling).
-4. **Improved Corruption** — The scorer's value in this build: +6.9% of its score (model affliction-leveling).
-5. **Malevolence** — The scorer's value in this build: +6.4% of its score (model affliction-leveling).
-6. **Malediction** — The scorer's value in this build: +6.2% of its score (model affliction-leveling).
+1. **Siphon Life** — The scorer's value in this build: +33.8% of its score (model affliction-leveling).
+2. **Shadow Mastery** — The scorer's value in this build: +8.4% of its score (model affliction-leveling).
+3. **Improved Corruption** — The scorer's value in this build: +7.2% of its score (model affliction-leveling).
+4. **Malediction** — The scorer's value in this build: +6.2% of its score (model affliction-leveling).
+5. **Molten Skin** — The scorer's value in this build: +6.2% of its score (model affliction-leveling).
+6. **Pandemic** — The scorer's value in this build: +5.9% of its score (model affliction-leveling).
 
 ## Leveling rotation
 
@@ -80,11 +80,12 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.
+- Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-affliction-scorer, moves: 1 point Aftermath -> Demonic Energies. Race against affliction-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.4% faster per kill.
+- Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A generated Affliction build: check it against the community's Affliction builds at launch.
+- A derived Affliction leveling build: check it while leveling at launch.
 
 ## Sources
 

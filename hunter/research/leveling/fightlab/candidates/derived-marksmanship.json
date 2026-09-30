@@ -1,0 +1,281 @@
+{
+ "id": "fl-marksmanship-mm-raid",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Ferocity",
+    3
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Scatter Shot",
+    1
+   ],
+   [
+    "Barrage",
+    2
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 5
+  },
+  {
+   "levels": "20-24",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "25-27",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 3
+  },
+  {
+   "levels": "28-29",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "30-31",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Marksmanship",
+   "talent": "Scatter Shot",
+   "points": 1
+  },
+  {
+   "levels": "33-34",
+   "tree": "Marksmanship",
+   "talent": "Barrage",
+   "points": 2
+  },
+  {
+   "levels": "35-38",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 4
+  },
+  {
+   "levels": "39",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Marksmanship",
+   "talent": "Sniper Shot",
+   "points": 1
+  },
+  {
+   "levels": "41-45",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 5
+  },
+  {
+   "levels": "46-47",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 2
+  },
+  {
+   "levels": "48-49",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "50",
+   "tree": "Beast Mastery",
+   "talent": "Endurance Training",
+   "points": 1
+  },
+  {
+   "levels": "51-55",
+   "tree": "Beast Mastery",
+   "talent": "Unleashed Fury",
+   "points": 5
+  },
+  {
+   "levels": "56",
+   "tree": "Beast Mastery",
+   "talent": "Summon Hawk",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 1
+  },
+  {
+   "levels": "58-60",
+   "tree": "Beast Mastery",
+   "talent": "Ferocity",
+   "points": 3
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "mm-raid",
+  "model": "mm-raid",
+  "tree": "Marksmanship",
+  "start": "opt-bm-leveling-leveling-st",
+  "starts": {
+   "leveling-beast-mastery": 30.530809881170697,
+   "opt-bm-leveling-leveling-st": 30.17896202054838,
+   "opt-bm-leveling-solo-60": 30.303503615738027,
+   "opt-mm-raid-leveling-st": 33.75092492574779,
+   "/home/user/wow-forever/hunter/research/leveling/fightlab/candidates/derived-marksmanship-scorer.json": 33.8494645409144
+  },
+  "moves": [],
+  "incumbent": "leveling-beast-mastery",
+  "race": {
+   "incumbent": [
+    27.456744711347604,
+    {
+     "20": 19.03416523340587,
+     "30": 23.76073991238409,
+     "40": 28.357214878326005,
+     "50": 28.715779573415105,
+     "60": 30.462764440434754
+    }
+   ],
+   "search": [
+    27.909490304754208,
+    {
+     "20": 18.27977486184825,
+     "30": 22.139805822433207,
+     "40": 29.201089260332864,
+     "50": 31.491935222645274,
+     "60": 30.157800958255045
+    }
+   ],
+   "gain": -0.016489412644008272,
+   "all": {
+    "leveling-beast-mastery": [
+     27.456744711347604,
+     {
+      "20": 19.03416523340587,
+      "30": 23.76073991238409,
+      "40": 28.357214878326005,
+      "50": 28.715779573415105,
+      "60": 30.462764440434754
+     }
+    ],
+    "opt-bm-leveling-leveling-st": [
+     27.909490304754208,
+     {
+      "20": 18.27977486184825,
+      "30": 22.139805822433207,
+      "40": 29.201089260332864,
+      "50": 31.491935222645274,
+      "60": 30.157800958255045
+     }
+    ],
+    "opt-bm-leveling-solo-60": [
+     27.926825919804664,
+     {
+      "20": 18.27977486184825,
+      "30": 22.139805822433207,
+      "40": 29.201089260332864,
+      "50": 31.491935222645274,
+      "60": 30.215586341756563
+     }
+    ],
+    "opt-mm-raid-leveling-st": [
+     29.168510549293718,
+     {
+      "20": 18.96411434725208,
+      "30": 23.92893949711871,
+      "40": 29.071630558333563,
+      "50": 31.090578744781116,
+      "60": 33.65262464046237
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

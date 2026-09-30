@@ -9,7 +9,14 @@ Playstyle `ret-dps` (the scorer's model id, used for leveling): Blessing of Migh
 mana allows, Hammer of Justice into a doubled Seal of Command judgement or as a breather, Hammer of Wrath under 20%; Divine
 Protection then Holy Light when low, Lay on Hands in an emergency. Between fights: Holy Light / Flash of Light back to health,
 water below 35% mana.
+
+Playstyles `holy...` and `prot...` (e.g. `holy-leveling`, `holy-shield-leveling`, `prot-leveling`; the `_alt` methods, added
+2026-09-30): paladins who level as Holy (two-hander, Seal of Righteousness, offensive Holy Shock, Divine Favor, heals with crit /
+Illumination / Infusion of Light) or Protection (one-hander and shield with block, Seal of Fury and its absorb, Holy Shield,
+Redoubt, Shield Specialization, Reckoning, Swift Judgement, Templar's Bulwark, Improved Righteous Fury / Iron Creed with Righteous
+Fury assumed up). Every other spec string plays the Retribution path unchanged.
 """
+import copy
 import json
 import pathlib
 import re
@@ -126,6 +133,45 @@ def load_spellbook():
 
 BOOK = load_spellbook()
 
+FURY_HIT = re.compile(r"deal an additional (\d[\d,]*) Holy damage")
+FURY_JUDGE = re.compile(r"Seal's energy causes (\d[\d,]*) to (\d[\d,]*) Holy damage")
+FURY_COEF = re.compile(r"(\d+(?:\.\d+)?)% and (\d+(?:\.\d+)?)% of spell power")
+HSHIELD = re.compile(r"deals (\d[\d,]*) Holy damage for each attack blocked")
+SHOCK_HEAL = re.compile(r"or (\d[\d,]*) to (\d[\d,]*) healing")
+
+
+def _add_extras():
+    """Numbers only the Holy and Protection leveling paths read (new attributes, so the Retribution path never sees them):
+    Seal of Fury's per-hit damage, judgement and coefficients (the parser's seal regexes do not match its wording), Holy Shield's
+    damage per block, Holy Shock's healing half."""
+    for tab in SPELLBOOK["tabs"]:
+        for sp in tab["spells"]:
+            for r in sp["ranks"]:
+                txt = (r.get("text") or "").replace("\n", " ")
+                lvl = int(r.get("level") or 1)
+                match = [s for s in BOOK.get(sp["name"], []) if s.level == lvl and (s.text or "") == txt]
+                if not match:
+                    continue
+                s = match[0]
+                if sp["name"] == "Seal of Fury":
+                    fh, fj, fc = FURY_HIT.search(txt), FURY_JUDGE.search(txt), FURY_COEF.search(r.get("coefficient") or "")
+                    s.fury_hit = _num(fh.group(1)) if fh else 0.0
+                    s.fury_judge = (_num(fj.group(1)), _num(fj.group(2))) if fj else (0.0, 0.0)
+                    # "45% and 10% of spell power (direct)": 45% read as the judgement's, 10% as each melee hit's (assumption)
+                    s.fury_coefs = (float(fc.group(1)) / 100, float(fc.group(2)) / 100) if fc else (0.0, 0.0)
+                elif sp["name"] == "Holy Shield":
+                    hm = HSHIELD.search(txt)
+                    s.hs_dmg = _num(hm.group(1)) if hm else 0.0
+                elif sp["name"] == "Holy Shock":
+                    hm = SHOCK_HEAL.search(txt)
+                    s.shock_heal = (_num(hm.group(1)), _num(hm.group(2))) if hm else (0.0, 0.0)
+                    s.shock_heal_coef = {k: float(v) / 100 for v, k in COEF.findall(r.get("coefficient") or "")}.get("heal", 0.0)
+
+
+_add_extras()
+# the engine rolls shield block itself when it has the block hooks (Player.block > 0); otherwise split_damage_taken rolls it here
+ENGINE_BLOCK = "on_block" in BaseModule.__dict__ and "block_bonus" in BaseModule.__dict__
+
 
 def talent_numbers():
     out = {}
@@ -211,6 +257,50 @@ NOT_MODELLED = "runners, adds, Exorcism / Holy Wrath (Undead and Demons), Repent
 PIPELINE = {"variants": [{'spec': 'ret-dps', 'opt': 'opt-ret-dps-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'}], "spec": "ret-dps", "hand": "leveling-retribution", "opt": "opt-ret-dps-leveling-st", "tag": "ret", "lookahead": 16,
             "levels": "20,30,40,50,60", "calibrate_levels": "30,60"}
 
+# ---------------------------------------------------------------- Holy and Protection leveling (spec strings "holy..." / "prot...")
+# Shield armor by level: gear_stats.pick(pool, "paladin", L, "shield", "other") over the Classic 1.12 greens (item_stats.csv,
+# 2026-09-30; examples Redbeard Crest at 20, Savage Boar's Guard at 40, Dreadguard's Protector at 60). The paladin's gear table
+# assumes a two-hander, so a shield user keeps those armor-slot stats and adds the shield's armor and stamina (the two-hander's
+# own stats are not taken back: small, an assumption).
+SHIELD_ARMOR = [(10, 275.0), (20, 461.0), (30, 611.0), (40, 1257.0), (50, 1663.0), (60, 2113.5)]
+SHIELD_STAMINA = [(10, 0.5), (20, 3.0), (30, 3.0), (40, 7.0), (50, 6.0), (60, 8.0)]
+SHIELD_BLOCK_PER_LEVEL = 0.5   # shield block value ~ half the level (a level-60 green ~30; the item extract has no block column: assumption)
+BASE_BLOCK = 0.05              # player base block chance with a shield (Classic rule)
+DEFENSE_PER_POINT = 0.0004     # +0.04% dodge, parry and block per Defense point (Classic rule; Anticipation)
+HOLY_SHIELD_CHARGES = 4        # rank 1 tooltip says 4 charges; ranks 2-3 do not repeat it (assumed unchanged)
+SOF_SHIELD_TIME = 10.0         # Seal of Fury's absorb: duration not in the tooltip (assumed 10 s, refreshed, not stacked)
+MECHANICS_ALT = dict(MECHANICS, **{
+    "Holy Shock": "offensive Holy Shock (Forever tooltip: damage to an enemy or healing to an ally; 10 s cooldown), a heal when low",
+    "Holy Power": "+3%/rank Holy Shock and Holy Strike crit, +1%/rank other spells",
+    "Divine Favor": "off the global cooldown before the next Holy Shock or heal: 100% crit",
+    "Illumination": "20%/rank on a heal crit: 50% of the spell's base cost back (in-combat heals rolled, between fights the expected value)",
+    "Infusion of Light": "Holy Shock / Flash of Light crit: -0.5 s/rank on the next Holy Light",
+    "Spiritual Focus": "35%/rank chance to ignore pushback on Holy Light / Flash of Light",
+    "Light's Vigil": "not used (1,340 mana at 60 for one free Holy Shock and 75% back: net mana loss for a solo leveler)",
+    "Toughness": "+2%/rank armor from items (shield included)",
+    "Redoubt": "10% of melee hits taken: +6%/rank block for 10 s or 5 blocks",
+    "Anticipation": "+4 Defense/rank: +0.04% dodge, parry and block per point (mob hit and crit chance unchanged)",
+    "Improved Seal of Fury": "60 mana when a Seal of Fury shield is fully absorbed",
+    "Improved Righteous Fury": "-2%/rank damage taken (Righteous Fury assumed always up)",
+    "Shield Specialization": "+10%/rank block value; blocks restore 6% max mana at 33%/rank chance, once per 3 s",
+    "Swift Judgement": "off the global cooldown: resets Judgement and makes it free when it has 3+ s left",
+    "One-Handed Weapon Specialization": "+3/6/10% one-hander damage (white, Holy Strike, seals, Judgement)",
+    "Templar's Bulwark": "emergency absorb of 100% max health for 8 s (Forbearance 1 min)",
+    "Reckoning": "8%/rank extra attack after a block, 20%/rank after a crit taken",
+    "Iron Creed": "Holy Strike: -2%/rank damage taken for 6 s (Righteous Fury assumed up)",
+    "Holy Shield": "+20% block for 10 s or 4 blocks, Holy damage per block, recast when down",
+    "Two-Handed Weapon Specialization": "+2%/rank two-hander damage (weapon, seals, Judgement)",
+})
+
+
+def _interp(pts, level):
+    if level <= pts[0][0]:
+        return pts[0][1]
+    for (l0, v0), (l1, v1) in zip(pts, pts[1:]):
+        if level <= l1:
+            return v0 + (v1 - v0) * (level - l0) / (l1 - l0)
+    return pts[-1][1]
+
 
 class PaladinModule(BaseModule):
     resource = "mana"
@@ -231,6 +321,10 @@ class PaladinModule(BaseModule):
         self._fight = None
         self._base_mana = 0.0
         self.armor_spell_used = "Devotion Aura" if "Devotion Aura" in self.spells else "none"
+        # "holy..." and "prot..." spec strings play the Holy / Protection leveling paths (the _alt methods); everything else is Retribution
+        self.path = "holy" if spec.startswith("holy") else "prot" if spec.startswith("prot") else "ret"
+        if self.path != "ret":
+            self._init_alt(spec)
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -246,6 +340,8 @@ class PaladinModule(BaseModule):
         return 0.0
 
     def not_simulated(self):
+        if self.path != "ret":
+            return sorted(n for n in self.t if n not in MECHANICS_ALT)
         return sorted(n for n in self.t if n not in MECHANICS)
 
     def rank_at(self, name):
@@ -253,10 +349,14 @@ class PaladinModule(BaseModule):
         return ranks[-1] if ranks else None
 
     def seal(self):
+        if self.path != "ret":
+            return self._seal_alt()
         return self.spells.get("Seal of Command") or self.spells.get("Seal of Righteousness")
 
     # ------------------------------------------------------------ character
     def make_player(self, level):
+        if self.path != "ret":
+            return self._make_player_alt(level)
         base = class_base_stats("paladin", level)
         g = gear_stats(level, self.gear, "paladin")
         strength = (base["strength"] + g["strength"]) * (1 + self.tv("Divine Strength", 0) / 100)
@@ -288,6 +388,8 @@ class PaladinModule(BaseModule):
 
     # ------------------------------------------------------------ engine hooks: numbers
     def mana_cost(self, spell):
+        if self.path != "ret" and spell.name == "Judgement" and self._free_judge:
+            return 0.0
         cost = spell.cost
         if "cost_pct" in spell.tags:
             cost = cost / 100 * self._base_mana
@@ -300,6 +402,8 @@ class PaladinModule(BaseModule):
         return cost
 
     def cast_time(self, spell):
+        if self.path != "ret" and spell.name == "Holy Light" and self._fight is not None and self._fight.p.buff("Infusion of Light", self._fight.t):
+            return max(0.0, spell.cast - 0.5 * self.rank("Infusion of Light"))
         c = spell.cast
         if spell.name == "Hammer of Wrath":
             c = max(0.0, c - 0.5 * self.rank("Instrument of Law"))
@@ -311,11 +415,15 @@ class PaladinModule(BaseModule):
         return 0.0
 
     def crit_bonus(self, spell, frozen):
+        if self.path != "ret":
+            return self._crit_bonus_alt(spell)
         if spell.name == "Holy Strike":
             return self.tv("Holy Power", 0) / 100
         return 0.0
 
     def damage_multiplier(self, spell, frozen):
+        if self.path != "ret":
+            return self._damage_multiplier_alt(spell)
         m = 1 + self.tv("Two-Handed Weapon Specialization", 0) / 100
         f = self._fight
         if f:
@@ -337,17 +445,32 @@ class PaladinModule(BaseModule):
         return True
 
     def mana_regen(self, p, t):
+        if self.path != "ret":
+            return class_mana_regen_tick("paladin", p.spirit) + self._wisdom_tick
         return class_mana_regen_tick("paladin", p.spirit)
+
+    def on_regen_tick(self, fight, p, t):
+        if self.path != "ret" and self._wisdom_tick and t < p.fsr_until:   # Blessing of Wisdom ignores the five-second rule
+            p.mana = min(p.mana_max, p.mana + self._wisdom_tick * (1.0 - min(1.0, p.regen_while_casting)))
+
+    def armor_bonus(self):
+        if self.path != "ret":
+            self._melee_pending = True   # only Fight.mob_swing asks for it: the next split_damage_taken is a melee hit (block roll)
+        return 0.0
 
     def health_regen(self, p):
         return class_health_regen_tick("paladin", p.spirit)
 
     def pushback_resisted(self, fight, spell):
+        if self.path != "ret" and getattr(spell, "selfheal", False) and spell.cast > 0 and self.rank("Spiritual Focus"):
+            return fight.rng.random() < self.tv("Spiritual Focus", 0) / 100
         if spell.kind == "heal" and self.rank("Spiritual Focus"):
             return fight.rng.random() < self.tv("Spiritual Focus", 0) / 100
         return False
 
     def split_damage_taken(self, fight, dmg):
+        if self.path != "ret":
+            return self._split_damage_taken_alt(fight, dmg)
         p = fight.p
         if p.buff("Divine Protection", fight.t):
             return 0.0
@@ -355,6 +478,8 @@ class PaladinModule(BaseModule):
 
     # ------------------------------------------------------------ engine hooks: events
     def on_fight_start(self, fight):
+        if self.path != "ret":
+            return self._on_fight_start_alt(fight)
         self._fight = fight
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
@@ -366,6 +491,8 @@ class PaladinModule(BaseModule):
             fight.casts[seal.name] = fight.casts.get(seal.name, 0) + 1
 
     def on_swing(self, fight, spell, outcome, amount, hand):
+        if self.path != "ret":
+            return self._on_swing_alt(fight, spell, outcome, amount, hand)
         p, m, t = fight.p, fight.m, fight.t
         if outcome in ("miss", "dodge", "parry"):
             return
@@ -393,7 +520,12 @@ class PaladinModule(BaseModule):
             p.buffs["Vengeance"] = {"until": t + 30.0, "stacks": stacks}
 
     def on_hit(self, fight, spell, amount, crit, frozen):
+        if self.path != "ret" and self._on_hit_alt(fight, spell, amount, crit):
+            return
         p, m, t = fight.p, fight.m, fight.t
+        if spell.name in SEALS:   # a seal recast in combat (2026-09-30 fix: it never set the buff, so fights over 30 s recast it every GCD)
+            p.buffs["Seal"] = {"until": t + 30.0, "name": spell.name}
+            return
         if spell.name == "Judgement":
             sealb = p.buff("Seal", t)
             seal = self.spells.get(sealb["name"]) if sealb else None
@@ -429,6 +561,8 @@ class PaladinModule(BaseModule):
             fight.deal(Spell("Eye for an Eye", "holy"), min(0.5 * p.hp_max, dmg * self.tv("Eye for an Eye", 0) / 100), False)
 
     def after_cast(self, fight, spell):
+        if self.path != "ret":
+            return self._after_cast_alt(fight, spell)
         p, t = fight.p, fight.t
         cd = spell.cooldown
         if spell.name == "Judgement":
@@ -444,6 +578,8 @@ class PaladinModule(BaseModule):
 
     def after_fight(self, p, t):
         """Holy Light (or Flash of Light) back to 80% health between fights when mana allows; drinking follows the engine's threshold."""
+        if self.path != "ret":
+            return self._after_fight_alt(p, t)
         spent = 0.0
         hl, fl = self.spells.get("Holy Light"), self.spells.get("Flash of Light")
         for _ in range(3):
@@ -461,6 +597,8 @@ class PaladinModule(BaseModule):
 
     # ------------------------------------------------------------ priority list
     def decide(self, fight):
+        if self.path != "ret":
+            return self._decide_alt(fight)
         if fight.others():   # a pull of several mobs: the area priority first (engine.BaseModule.decide_aoe, AOE below)
             r = self.decide_aoe(fight)
             if r is not None:
@@ -505,5 +643,429 @@ class PaladinModule(BaseModule):
         if hs and can(hs):
             return hs
         if cons and can(cons) and p.mana > 0.45 * p.mana_max and hp > 0.3 * m.hp_max and not fight.dot_active("Consecration"):
+            return cons
+        return None
+
+    # ================================================================ Holy and Protection leveling (spec "holy..." / "prot...")
+    def _init_alt(self, spec):
+        """Holy: a two-hander (spec with "shield" in it: one-hander and shield), Seal of Righteousness (Seal of Fury with a shield),
+        offensive Holy Shock, heals in combat. Protection: one-hander and shield, Seal of Fury, Holy Shield, Righteous Fury assumed
+        always up (30 min buff cast between pulls; its mana is not charged)."""
+        self.shield = self.path == "prot" or "shield" in spec
+        self.weapon_kind = "1h" if self.shield else "2h"
+        self.rf = self.path == "prot" and "Righteous Fury" in self.spells
+        # rotation knobs (plain attributes, so run.apply_rotation's "knobs" can set them)
+        # defaults from a hand sweep on the proposed holy-raid-healer / prot-tank builds (levels 30, 45, 60; 500 fights, seed 1; 2026-09-30):
+        # Holy: Consecration never (its mana buys more as Holy Shock and less drinking), Holy Shock only above 70% mana, Blessing of
+        # Wisdom, drink below 25%; Protection: Consecration above 60% mana, Blessing of Might, drink below 15%. Kings / Might / Wisdom
+        # and the heal threshold are within ~2% of each other (in-combat heals almost never trigger against same-level mobs).
+        holy = self.path == "holy"
+        self.heal_below = 0.40 if holy else 0.35       # in-combat heal / emergency threshold (share of health)
+        self.shock_mana = 0.70                         # offensive Holy Shock only above this mana share
+        self.cons_mana = 1.10 if holy else 0.60        # Consecration only above this mana share (above 1 = never)
+        self.blessing = "wisdom" if holy else "might"  # "might", "kings" or "wisdom" (one Blessing on yourself)
+        self.drink_below = 0.25 if holy else 0.15      # rest threshold (a tuned rotation file overrides it)
+        self.seal_pref = "fury" if self.shield else "righteousness"
+        self._free_judge = False
+        self._melee_pending = False
+        self._sof_live = False
+        self._bulwark_until = -1.0
+        self._ss_ready = -1.0
+        self._wisdom_tick = 0.0
+        # heals resolved by this module (crit, Divine Favor, Illumination, Infusion of Light): copies of kind "buff"
+        for name in ("Holy Light", "Flash of Light"):
+            s = self.spells.get(name)
+            if s is not None:
+                c = copy.copy(s)
+                c.kind, c.selfheal = "buff", True
+                self.spells[name] = c
+        shock = self.spells.get("Holy Shock")
+        if shock is not None and getattr(shock, "shock_heal", (0, 0))[1] > 0:
+            c = copy.copy(shock)
+            c.name, c.kind, c.selfheal = "Holy Shock (heal)", "buff", True
+            c.heal_min, c.heal_max = shock.shock_heal
+            c.heal_coef = shock.shock_heal_coef
+            c.dmg_min = c.dmg_max = 0.0
+            self.spells[c.name] = c
+        hsh = self.spells.get("Holy Shield")
+        if hsh is not None:
+            c = copy.copy(hsh)
+            c.kind = "buff"
+            self.spells["Holy Shield"] = c
+
+    def _seal_alt(self):
+        sp = self.spells
+        if self.seal_pref == "fury" and sp.get("Seal of Fury") is not None:
+            return sp["Seal of Fury"]
+        return sp.get("Seal of Command") or sp.get("Seal of Righteousness")
+
+    def _make_player_alt(self, level):
+        base = class_base_stats("paladin", level)
+        g = gear_stats(level, self.gear, "paladin")
+        kings = 1.10 if self.blessing == "kings" and self.book.get("Blessing of Kings") is not None else 1.0
+        sh_armor = _interp(SHIELD_ARMOR, level) if self.shield else 0.0
+        sh_sta = _interp(SHIELD_STAMINA, level) if self.shield else 0.0
+        strength = (base["strength"] + g["strength"]) * (1 + self.tv("Divine Strength", 0) / 100) * kings
+        agility = (base["agility"] + g["agility"]) * kings
+        stamina = (base["stamina"] + g["stamina"] + sh_sta) * (1 + self.tv("Sacred Duty", 0) / 100) * kings
+        intellect = (base["intellect"] + g["intellect"]) * (1 + self.tv("Divine Intellect", 0) / 100) * kings
+        spirit = (base["spirit"] + g["spirit"]) * kings
+        dev = self.book.get("Devotion Aura")
+        armor = (g["armor"] + sh_armor) * (1 + self.tv("Toughness", 0) / 100) + (getattr(dev, "armor", 0.0) if dev else 0.0)
+        bm = class_base_mana("paladin", level)
+        might = self.book.get("Blessing of Might") if self.blessing == "might" else None
+        p = Player(level=level, hp_max=class_base_health("paladin", level) + 10 * stamina, hp=0.0, mana_max=bm + 15 * intellect, mana=0.0, base_mana=bm,
+                   spirit=spirit, intellect=intellect, spell_power=g["spell_power"] + intellect * self.tv("Champion of the Light", 0) / 100, armor=armor,
+                   spell_crit=class_spell_crit("paladin", level, intellect) + self.tv("Holy Power", 1) / 100, dodge=class_dodge("paladin", level, agility), ranged_crit=0.0)
+        p.strength, p.agility, p.stamina = strength, agility, stamina
+        p.attack_power = class_attack_power("paladin", level, strength, agility) + (getattr(might, "ap", 0.0) if might else 0.0)
+        self.base_ap = p.attack_power
+        p.melee_crit = class_melee_crit("paladin", level, agility) + self.tv("Conviction", 0) / 100
+        p.hit_bonus = self.tv("Precision", 0) / 100
+        defense = self.tv("Anticipation", 0) * DEFENSE_PER_POINT
+        p.parry = 0.05 + self.tv("Deflection", 0) / 100 + defense
+        p.dodge += defense
+        kind = self.weapon_kind
+        dps = weapon_dps(level, kind)
+        p.mh = Weapon(dmg_min=dps * WEAPON_SPEED[kind] * 0.8, dmg_max=dps * WEAPON_SPEED[kind] * 1.2, speed=WEAPON_SPEED[kind], kind=kind)
+        if self.shield:
+            p.block = BASE_BLOCK + defense
+            p.block_value = (SHIELD_BLOCK_PER_LEVEL * level + strength / 20.0) * (1 + self.tv("Shield Specialization", 0) / 100)
+        bow = self.book.get("Blessing of Wisdom") if self.blessing == "wisdom" else None
+        mp5 = re.search(r"restoring (\d+) mana every 5 seconds", getattr(bow, "text", "") or "") if bow else None
+        self._wisdom_tick = float(mp5.group(1)) * 2.0 / 5.0 if mp5 else 0.0
+        p.hp, p.mana = p.hp_max, p.mana_max
+        p.regen_while_casting = self.tv("Reverence", 0) / 100
+        return p
+
+    def _crit_bonus_alt(self, spell):
+        b = 0.0
+        if spell.name == "Holy Strike":
+            b += self.tv("Holy Power", 0) / 100
+        if spell.name in ("Holy Shock", "Holy Shock (heal)"):
+            b += (self.tv("Holy Power", 0) - self.tv("Holy Power", 1)) / 100   # 3%/rank instead of the 1%/rank already in spell crit
+        f = self._fight
+        if f is not None and f.p.buff("Divine Favor", f.t) and (spell.name == "Holy Shock" or getattr(spell, "selfheal", False)):
+            b += 1.0
+        return b
+
+    def _damage_multiplier_alt(self, spell):
+        m = 1.0
+        if spell.name in ("Melee", "Holy Strike", "Reckoning", "Judgement") or spell.name in SEALS:
+            spec = "Two-Handed Weapon Specialization" if self.weapon_kind == "2h" else "One-Handed Weapon Specialization"
+            m *= 1 + self.tv(spec, 0) / 100
+        f = self._fight
+        if f:
+            v = f.p.buff("Vengeance", f.t)
+            if v:
+                m *= 1 + 0.01 * self.rank("Vengeance") * v["stacks"]
+        if spell.name in SEALS or spell.name == "Judgement":
+            m *= 1 + self.tv("Improved Seals", 0) / 100
+        if spell.name == "Holy Strike" and self.rank("Sacred Arbiter"):
+            m *= 1.20
+        if spell.name == "Consecration":
+            m *= 1 + self.tv("Consecrated Ground", 0) / 100
+        return m
+
+    # ---------------------------------------------------------------- shield block (engine hooks when the engine has them)
+    def block_bonus(self, fight):
+        if self.path == "ret":
+            return 0.0
+        p, t = fight.p, fight.t
+        b = 0.0
+        hs = p.buff("Holy Shield", t)
+        if hs and hs["charges"] > 0:
+            b += 0.20
+        rd = p.buff("Redoubt", t)
+        if rd and rd["charges"] > 0:
+            b += self.tv("Redoubt", 1) / 100
+        return b
+
+    def on_block(self, fight):
+        if self.path == "ret":
+            return
+        p, t = fight.p, fight.t
+        fight.casts["Shield block"] = fight.casts.get("Shield block", 0) + 1
+        hs = p.buff("Holy Shield", t)
+        if hs and hs["charges"] > 0:
+            hs["charges"] -= 1
+            sp = Spell("Holy Shield", "holy")
+            dmg = hs["dmg"] * self.damage_multiplier(sp, False)
+            fight.deal(sp, dmg, False)
+            fight.note(f"Holy Shield {dmg:.0f} -> mob {max(0, fight.m.hp):.0f}")
+        rd = p.buff("Redoubt", t)
+        if rd and rd["charges"] > 0:
+            rd["charges"] -= 1
+        if self.rank("Shield Specialization") and t >= self._ss_ready and fight.rng.random() < self.tv("Shield Specialization", 1) / 100:
+            p.mana = min(p.mana_max, p.mana + self.tv("Shield Specialization", 2) / 100 * p.mana_max)
+            self._ss_ready = t + 3.0
+        if self.rank("Reckoning") and fight.rng.random() < self.tv("Reckoning", 0) / 100:
+            fight.resolve_attack(Spell("Reckoning", "physical", kind="melee", resource="none"), white=True, hand="mh")
+
+    def _split_damage_taken_alt(self, fight, dmg):
+        p, t = fight.p, fight.t
+        melee, self._melee_pending = self._melee_pending, False
+        if p.buff("Divine Protection", t):
+            return 0.0
+        if melee and self.shield:
+            if not ENGINE_BLOCK and fight.rng.random() < p.block + self.block_bonus(fight):   # older engine: roll the block here
+                blocked = min(dmg, p.block_value)
+                dmg -= blocked
+                fight.note(f"blocked {blocked:.0f}")
+                self.on_block(fight)
+            if self.rank("Redoubt") and fight.rng.random() < 0.10:
+                p.buffs["Redoubt"] = {"until": t + 10.0, "charges": 5}
+        if self.rf:
+            dmg *= 1 - self.tv("Improved Righteous Fury", 0) / 100
+            if p.buff("Iron Creed", t):
+                dmg *= 1 - self.tv("Iron Creed", 1) / 100
+        if self._sof_live:   # Improved Seal of Fury: the seal's shield was used up
+            if t >= p.absorb_until:
+                self._sof_live = False
+            elif p.absorb <= 1e-6:
+                self._sof_live = False
+                if self.rank("Improved Seal of Fury"):
+                    p.mana = min(p.mana_max, p.mana + 60.0)
+        return dmg
+
+    # ---------------------------------------------------------------- events
+    def _on_fight_start_alt(self, fight):
+        self._fight = fight
+        self._base_mana = fight.p.base_mana
+        self._melee_pending = False
+        p, t = fight.p, fight.t
+        seal = self.seal()
+        if seal is not None and p.mana >= self.mana_cost(seal) + 100:
+            p.mana -= self.mana_cost(seal)
+            p.fsr_until = t + 5.0
+            p.buffs["Seal"] = {"until": t + 30.0, "name": seal.name}
+            fight.casts[seal.name] = fight.casts.get(seal.name, 0) + 1
+
+    def _on_swing_alt(self, fight, spell, outcome, amount, hand):
+        p, m, t = fight.p, fight.m, fight.t
+        if outcome in ("miss", "dodge", "parry"):
+            return
+        sealb = p.buff("Seal", t)
+        seal = self.spells.get(sealb["name"]) if sealb else None
+        if seal is not None and spell.name == "Melee":
+            if getattr(seal, "fury_hit", 0.0):
+                dmg = (seal.fury_hit + seal.fury_coefs[1] * p.spell_power) * self.damage_multiplier(seal, False)
+                fight.deal(Spell(seal.name, "holy"), dmg, False)
+                if self.shield:
+                    shield = 0.5 * dmg
+                    if t < self._bulwark_until:
+                        p.absorb += shield
+                    else:
+                        p.absorb, p.absorb_until = shield, t + SOF_SHIELD_TIME
+                        self._sof_live = True
+            elif getattr(seal, "seal_pct", 0.0):
+                if fight.rng.random() < 7.0 * p.mh.speed / 60.0:
+                    dmg = seal.seal_pct * fight.weapon_damage(p.mh) * self.damage_multiplier(seal, False)
+                    crit = fight.rng.random() < p.melee_crit
+                    if crit:
+                        dmg *= 2.0
+                    fight.deal(Spell(seal.name, "holy"), dmg, crit)
+            elif getattr(seal, "seal_max", 0.0):
+                # "slower weapons cause more Holy damage per swing": the tooltip range is read at the two-hander's speed and scaled by swing speed
+                dmg = (fight.rng.uniform(seal.seal_min, seal.seal_max) + seal.coef * p.spell_power) * (p.mh.speed / WEAPON_SPEED["2h"]) * self.damage_multiplier(seal, False)
+                fight.deal(Spell(seal.name, "holy"), dmg, False)
+        if spell.name == "Melee" and self.rank("Vindication") and fight.rng.random() < 0.10 * self.rank("Vindication"):
+            if not p.buff("Vindication", t):
+                p.attack_power = self.base_ap * 1.03
+            p.buffs["Vindication"] = {"until": t + 30.0}
+        if outcome == "crit" and self.rank("Vengeance"):
+            v = p.buffs.get("Vengeance")
+            stacks = min(3, (v["stacks"] if v and v["until"] > t else 0) + 1)
+            p.buffs["Vengeance"] = {"until": t + 30.0, "stacks": stacks}
+
+    def _self_heal(self, fight, spell):
+        p, t = fight.p, fight.t
+        amount = (fight.rng.uniform(spell.heal_min, spell.heal_max) + spell.heal_coef * p.spell_power) * self.heal_multiplier(spell)
+        crit = fight.rng.random() < p.spell_crit + self._crit_bonus_alt(spell)
+        p.buffs.pop("Divine Favor", None)
+        if spell.name == "Holy Light":
+            p.buffs.pop("Infusion of Light", None)
+        if crit:
+            amount *= 1.5
+            if self.rank("Illumination") and fight.rng.random() < self.tv("Illumination", 0) / 100:
+                p.mana = min(p.mana_max, p.mana + 0.5 * spell.cost)
+            if spell.name in ("Flash of Light", "Holy Shock (heal)") and self.rank("Infusion of Light"):
+                p.buffs["Infusion of Light"] = {"until": t + 15.0}
+        got = fight.heal(spell, amount, "player", crit)
+        fight.note(f"{spell.name}{' CRIT' if crit else ''} heals {got:.0f}")
+
+    def _on_hit_alt(self, fight, spell, amount, crit):
+        p, m, t = fight.p, fight.m, fight.t
+        name = spell.name
+        if name in SEALS:   # a seal recast in combat (the Retribution path leaves this to on_fight_start)
+            p.buffs["Seal"] = {"until": t + 30.0, "name": name}
+            return True
+        if name == "Judgement":
+            self._free_judge = False
+            sealb = p.buff("Seal", t)
+            seal = self.spells.get(sealb["name"]) if sealb else None
+            if seal is None:
+                return True
+            if getattr(seal, "fury_hit", 0.0):
+                (lo, hi), coef = seal.fury_judge, seal.fury_coefs[0]
+            elif getattr(seal, "judge", None):
+                lo, hi = seal.judge_stunned if (m.stunned(t) and getattr(seal, "judge_stunned", None)) else seal.judge
+                coef = seal.coef
+            else:
+                return True
+            dmg = (fight.rng.uniform(lo, hi) + coef * p.spell_power) * self.damage_multiplier(spell, False)
+            jcrit = fight.rng.random() < p.spell_crit
+            if jcrit:
+                dmg *= 1.5
+            fight.deal(spell, dmg, jcrit)
+            fight.note(f"Judgement ({seal.name}){' CRIT' if jcrit else ''} {dmg:.0f} -> mob {max(0, m.hp):.0f}")
+            if self.rank("Sanctified Judgement") and fight.rng.random() < 0.33 * self.rank("Sanctified Judgement"):
+                p.mana = min(p.mana_max, p.mana + 0.6 * self.mana_cost(seal))
+            return True
+        if name == "Holy Strike" and self.rf and self.rank("Iron Creed"):
+            p.buffs["Iron Creed"] = {"until": t + 6.0}
+        elif name == "Hammer of Justice":
+            m.stun_until = max(m.stun_until, t + spell.stun)
+        elif name == "Divine Protection":
+            p.buffs["Divine Protection"] = {"until": t + 8.0}
+            p.buffs["Forbearance"] = {"until": t + 60.0}
+        elif name == "Templar's Bulwark":
+            p.absorb, p.absorb_until = p.hp_max, t + 8.0
+            self._bulwark_until = t + 8.0
+            self._sof_live = False
+            p.buffs["Forbearance"] = {"until": t + 60.0}
+        elif name == "Lay on Hands":
+            fight.heal(spell, p.hp_max)
+            p.mana = 0.0
+        elif name == "Holy Shield":
+            p.buffs["Holy Shield"] = {"until": t + 10.0, "charges": HOLY_SHIELD_CHARGES, "dmg": getattr(spell, "hs_dmg", 0.0)}
+        elif name == "Holy Shock":   # the offensive cast (resolve_spell rolled it)
+            p.buffs.pop("Divine Favor", None)
+            if crit and self.rank("Infusion of Light"):
+                p.buffs["Infusion of Light"] = {"until": t + 15.0}
+        elif getattr(spell, "selfheal", False):
+            self._self_heal(fight, spell)
+        return True
+
+    def _after_cast_alt(self, fight, spell):
+        p, t = fight.p, fight.t
+        cd, name = spell.cooldown, spell.name
+        if name == "Holy Shock (heal)":
+            name = "Holy Shock"
+        if name == "Judgement":
+            cd = max(GCD, cd - self.tv("Improved Judgement", 0))
+        if name == "Hammer of Justice":
+            cd = max(10.0, cd - self.tv("Improved Hammer of Justice", 0))
+        if name in ("Divine Protection", "Divine Shield", "Templar's Bulwark"):
+            cd = max(60.0, cd - self.tv("Sacred Duty", 1))
+        if cd > 0:
+            p.cooldowns[name] = t + cd
+
+    def _after_fight_alt(self, p, t):
+        """Holy Light / Flash of Light back to 80% health between fights, with the expected crit and Illumination refund."""
+        spent = 0.0
+        hl, fl = self.spells.get("Holy Light"), self.spells.get("Flash of Light")
+        cc = min(1.0, p.spell_crit)
+        illum = self.tv("Illumination", 0) / 100
+        for _ in range(3):
+            if p.hp >= 0.80 * p.hp_max:
+                break
+            missing = p.hp_max - p.hp
+            heal = fl if (fl is not None and missing < (fl.heal_min + fl.heal_max) / 2 * 1.5) else hl
+            if heal is None or p.mana < self.mana_cost(heal):
+                break
+            p.mana -= self.mana_cost(heal)
+            p.mana = min(p.mana_max, p.mana + cc * illum * 0.5 * heal.cost)
+            amount = ((heal.heal_min + heal.heal_max) / 2 + heal.heal_coef * p.spell_power) * self.heal_multiplier(heal) * (1 + 0.5 * cc)
+            p.hp = min(p.hp_max, p.hp + amount)
+            spent += max(GCD, heal.cast)
+        return spent
+
+    def _off_gcd(self, fight, s):
+        """Divine Favor and Swift Judgement: used off the global cooldown (assumption), paid and counted here."""
+        p, t = fight.p, fight.t
+        cost = self.mana_cost(s)
+        if s is None or not p.ready(s.name, t) or p.mana < cost:
+            return False
+        p.mana -= cost
+        if cost > 0:
+            p.fsr_until = t + 5.0
+        p.cooldowns[s.name] = t + s.cooldown
+        fight.casts[s.name] = fight.casts.get(s.name, 0) + 1
+        return True
+
+    def _favor(self, fight):
+        df = self.spells.get("Divine Favor")
+        if df is not None and self._off_gcd(fight, df):
+            fight.p.buffs["Divine Favor"] = {"until": fight.t + 60.0}
+
+    # ---------------------------------------------------------------- priority list (Holy and Protection)
+    def _decide_alt(self, fight):
+        if fight.others():
+            r = self.decide_aoe(fight)
+            if r is not None:
+                return r
+        p, m, t = fight.p, fight.m, fight.t
+        sp = self.spells
+        in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
+
+        def can(s):
+            return s is not None and p.ready("Holy Shock" if s.name == "Holy Shock (heal)" else s.name, t) and fight.can_afford(s, self.mana_cost(s))
+
+        (judge, hs, cons, how, hoj, dp, loh, hl, fol, shock, shock_h, hshield, bulwark, swift) = (sp.get(n) for n in (
+            "Judgement", "Holy Strike", "Consecration", "Hammer of Wrath", "Hammer of Justice", "Divine Protection", "Lay on Hands", "Holy Light",
+            "Flash of Light", "Holy Shock", "Holy Shock (heal)", "Holy Shield", "Templar's Bulwark", "Swift Judgement"))
+        seal = self.seal()
+        hpf = p.hp / p.hp_max
+        forb = p.buff("Forbearance", t)
+        # emergencies and in-combat heals
+        if loh and can(loh) and hpf < 0.15:
+            return loh
+        if hpf < self.heal_below and m.hp > 0.2 * m.hp_max:
+            if bulwark and can(bulwark) and not forb:
+                return bulwark
+            if shock_h and can(shock_h):
+                self._favor(fight)
+                return shock_h
+            if dp and can(dp) and not forb and hpf < 0.30 and t >= self._bulwark_until:
+                return dp
+            if hoj and can(hoj) and not m.stunned(t) and m.dist <= hoj.range:
+                return hoj
+            safe = m.stunned(t) or p.buff("Divine Protection", t) or t < self._bulwark_until
+            if hl and can(hl) and (safe or self.path == "holy"):
+                self._favor(fight)
+                return hl
+            if fol and can(fol) and hpf < 0.25:
+                self._favor(fight)
+                return fol
+        # a casting mob: Hammer of Justice breaks the cast
+        if m.caster and m.casting(t) and hoj and can(hoj) and m.dist <= hoj.range and not m.stunned(t):
+            return hoj
+        # Holy Shock on the enemy (40 yd: also while the mob walks in)
+        if shock and can(shock) and p.mana > self.shock_mana * p.mana_max and m.hp > 0.10 * m.hp_max:
+            if hpf >= 0.70:
+                self._favor(fight)
+            return shock
+        if not in_melee:
+            return "advance"
+        if seal is not None and not p.buff("Seal", t) and can(seal) and m.hp > 0.15 * m.hp_max:
+            return seal
+        if how and can(how) and m.hp <= 0.2 * m.hp_max:
+            return how
+        if hshield and can(hshield) and m.hp > 0.2 * m.hp_max:
+            hb = p.buff("Holy Shield", t)
+            if not hb or hb["charges"] <= 0:
+                return hshield
+        if hoj and can(hoj) and judge and p.ready("Judgement", t) and seal is not None and getattr(seal, "judge_stunned", None) and m.hp > 0.3 * m.hp_max and not m.stunned(t):
+            return hoj
+        if swift and judge and p.buff("Seal", t) and not p.ready("Judgement", t) and p.cooldowns.get("Judgement", 0.0) - t >= 3.0 and m.hp > 0.25 * m.hp_max:
+            if self._off_gcd(fight, swift):
+                p.cooldowns["Judgement"] = t
+                self._free_judge = True
+        if judge and can(judge) and p.buff("Seal", t):
+            return judge
+        if hs and can(hs):
+            return hs
+        if cons and can(cons) and p.mana > self.cons_mana * p.mana_max and m.hp > 0.3 * m.hp_max and not fight.dot_active("Consecration"):
             return cons
         return None

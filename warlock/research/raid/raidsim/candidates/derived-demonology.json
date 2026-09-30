@@ -1,0 +1,94 @@
+{
+ "id": "derived-demonology",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Sayaad",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ],
+   [
+    "Demonic Embrace",
+    3
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for demonology-raid from demonology-pact-raid in the dummy setting: 615.9 -> 615.9 DPS on a third seed.",
+ "search": {
+  "start": "demonology-pact-raid",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [],
+  "dps_start": 615.8977894896681,
+  "dps_end": 615.8977894896681,
+  "gain": 0.0,
+  "tank": false
+ }
+}

@@ -67,28 +67,28 @@ Report: [fightlab/affliction-leveling.md](fightlab/affliction-leveling.md).
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.8 | 9.1 | 12.0 | 13.2 | 12.1 | 15% |
-| Torment | 3.2 | 4.2 | 4.9 | 5.2 | 5.0 | 0% |
-| Corruption | 1.0 | 1.1 | 1.3 | 1.5 | 1.3 | 26% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 26% |
-| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 12% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.3 | 0.4 | 3% |
-| Immolate | 1.0 | 0.8 | 0.8 | 0.5 | 0.3 | 4% |
-| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wand | 6.8 | 9.2 | 12.5 | 14.0 | 12.9 | 17% |
+| Torment | 3.2 | 4.3 | 5.1 | 5.4 | 5.2 | 0% |
+| Corruption | 1.0 | 1.0 | 1.4 | 1.6 | 1.4 | 26% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
+| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
+| Immolate | 1.0 | 0.9 | 0.9 | 0.6 | 0.4 | 5% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.1 | 0.3 | 2% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ### [`leveling-affliction`](builds/leveling-affliction.md)
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.9 | 8.8 | 12.1 | 13.6 | 12.7 | 16% |
-| Torment | 3.3 | 4.1 | 5.2 | 5.5 | 5.1 | 0% |
-| Corruption | 1.0 | 1.1 | 1.4 | 1.5 | 1.4 | 26% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 25% |
+| Wand | 6.9 | 9.0 | 12.4 | 14.0 | 13.2 | 17% |
+| Torment | 3.3 | 4.2 | 5.4 | 5.7 | 5.3 | 0% |
+| Corruption | 1.0 | 1.1 | 1.4 | 1.6 | 1.5 | 26% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 24% |
 | Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.3 | 3% |
-| Immolate | 1.0 | 0.9 | 0.9 | 0.7 | 0.3 | 4% |
+| Immolate | 1.0 | 1.0 | 0.9 | 0.7 | 0.4 | 5% |
+| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 2% |
 | Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Create Healthstone | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |

@@ -1,0 +1,244 @@
+{
+ "id": "derived-marksmanship-scorer",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Pathfinding",
+    1
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Scatter Shot",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Marksmanship",
+   "talent": "Lethal Attacks",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Marksmanship",
+   "talent": "Careful Aim",
+   "points": 5
+  },
+  {
+   "levels": "20-24",
+   "tree": "Marksmanship",
+   "talent": "Improved Arcane Shot",
+   "points": 5
+  },
+  {
+   "levels": "25",
+   "tree": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 1
+  },
+  {
+   "levels": "27-28",
+   "tree": "Marksmanship",
+   "talent": "Rapid Killing",
+   "points": 2
+  },
+  {
+   "levels": "29",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Marksmanship",
+   "talent": "Scatter Shot",
+   "points": 1
+  },
+  {
+   "levels": "31-32",
+   "tree": "Marksmanship",
+   "talent": "Rapid Recuperation",
+   "points": 2
+  },
+  {
+   "levels": "33",
+   "tree": "Marksmanship",
+   "talent": "Improved Stings",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "35-39",
+   "tree": "Marksmanship",
+   "talent": "Ranged Weapon Specialization",
+   "points": 5
+  },
+  {
+   "levels": "40",
+   "tree": "Marksmanship",
+   "talent": "Sniper Shot",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 2
+  },
+  {
+   "levels": "44",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "45-46",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Survival",
+   "talent": "Improved Tracking",
+   "points": 1
+  },
+  {
+   "levels": "49",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Marksmanship",
+   "talent": "Efficiency",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Beast Mastery",
+   "talent": "Deadly Aspects",
+   "points": 3
+  },
+  {
+   "levels": "55-56",
+   "tree": "Beast Mastery",
+   "talent": "Focused Fire",
+   "points": 2
+  },
+  {
+   "levels": "57-58",
+   "tree": "Beast Mastery",
+   "talent": "Improved Revive Pet",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Beast Mastery",
+   "talent": "Pathfinding",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Beast Mastery",
+   "talent": "Bestial Swiftness",
+   "points": 1
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Marksmanship under mm-raid (leveling-st), 2026-09-30."
+}

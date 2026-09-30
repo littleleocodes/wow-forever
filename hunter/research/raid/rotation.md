@@ -198,14 +198,14 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 448 DPS), [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 438 DPS), *Beast Mastery 35/16/0* (community simulator, 416 DPS)
+### [`mm-hawk-raid`](builds/mm-hawk-raid.md) (ours: hand draft, 448 DPS), [`beast-mastery-raid`](builds/beast-mastery-raid.md) (ours: hand draft, 448 DPS), *Beast Mastery 35/16/0* (community simulator, 416 DPS)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](builds/mm-hawk-raid.md) casts/min | [`beast-mastery-raid`](builds/beast-mastery-raid.md) casts/min | *Beast Mastery 35/16/0* casts/min |
 |---|---|---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 | 0.3 | 0.3 |
-| 2 | cast Summon Hawk | 9.3 | 9.0 | 9.3 |
+| 2 | cast Summon Hawk | 9.3 | 10.0 | 9.3 |
 | 3 | use every other cooldown when ready | as ready | as ready | as ready |
 | 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 | 4.3 | 4.4 |
 
@@ -213,10 +213,10 @@ Damage by ability:
 
 | Ability | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | [`beast-mastery-raid`](builds/beast-mastery-raid.md) | *Beast Mastery 35/16/0* |
 |---|---|---|---|
-| Auto Shot | 43% | 42% | 41% |
-| Summon Hawk | 29% | 28% | 30% |
+| Auto Shot | 43% | 41% | 41% |
+| Summon Hawk | 29% | 30% | 30% |
 | Serpent Sting | 19% | 18% | 15% |
-| Pet: Auto Attack | 7% | 9% | 10% |
+| Pet: Auto Attack | 7% | 8% | 10% |
 | Pet: Claw | 2% | 2% | 2% |
 | Pet: Bite | 1% | 1% | 2% |
 
@@ -247,30 +247,30 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 424 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 424 DPS)
+### [`survival-raid`](builds/survival-raid.md) (ours: hand draft, 438 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 424 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 424 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min |
-|---|---|---|---|
-| 1 | cast Aspect of the Beast | 0.3 | 0.3 |
-| 2 | use every other cooldown when ready | as ready | as ready |
-| 3 | cast Mongoose Bite | 12.1 | 11.3 |
-| 4 | cast Strider Kick | 6.5 | 5.7 |
-| 5 | cast Raptor Strike | 19.6 | 18.4 |
-| 6 | cast Immolation Trap | 2.0 | 2.7 |
-| 7 | cast Wing Clip | 23.7 | 19.5 |
+| # | Priority (the first line whose condition holds is cast) | [`survival-raid`](builds/survival-raid.md) casts/min | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min |
+|---|---|---|---|---|
+| 1 | cast Aspect of the Beast | 0.3 | 0.3 | 0.3 |
+| 2 | use every other cooldown when ready | as ready | as ready | as ready |
+| 3 | cast Mongoose Bite | 6.2 | 12.1 | 11.3 |
+| 4 | cast Strider Kick | 6.4 | 6.5 | 5.7 |
+| 5 | cast Raptor Strike | 19.4 | 19.6 | 18.4 |
+| 6 | cast Immolation Trap | 3.2 | 2.0 | 2.7 |
+| 7 | cast Wing Clip | 22.6 | 23.7 | 19.5 |
 
 Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | [`melee-survival-raid`](builds/melee-survival-raid.md) |
-|---|---|---|
-| Auto Attack | 45% | 45% |
-| Raptor Strike | 17% | 16% |
-| Mongoose Bite | 15% | 14% |
-| Immolation Trap | 6% | 10% |
-| Strider Kick | 9% | 8% |
-| Wing Clip | 6% | 5% |
-| Dragonbreath Chili | 3% | 3% |
+| Ability | [`survival-raid`](builds/survival-raid.md) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | [`melee-survival-raid`](builds/melee-survival-raid.md) |
+|---|---|---|---|
+| Auto Attack | 42% | 45% | 45% |
+| Raptor Strike | 16% | 17% | 16% |
+| Mongoose Bite | 14% | 15% | 14% |
+| Immolation Trap | 11% | 6% | 10% |
+| Strider Kick | 8% | 9% | 8% |
+| Wing Clip | 6% | 6% | 5% |
+| Dragonbreath Chili | 3% | 3% | 3% |

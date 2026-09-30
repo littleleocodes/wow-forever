@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +93.7% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +97.9% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -53,12 +53,12 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-hea
 
 1. **Meditation** — Removing it costs 34.5 points of score in this model.
 2. **Improved Healing** — Removing it costs 13.1 points of score in this model.
-3. **Penance** — Removing it costs 10.5 points of score in this model.
-4. **Spiritual Healing** — Removing it costs 10.3 points of score in this model.
-5. **Spiritual Guidance** — Removing it costs 6.4 points of score in this model.
-6. **Mental Strength** — Removing it costs 5.1 points of score in this model.
-7. **Inspiration** — Removing it costs 4.0 points of score in this model.
-8. **Inner Focus** — Removing it costs 3.8 points of score in this model.
+3. **Penance** — Removing it costs 10.6 points of score in this model.
+4. **Spiritual Healing** — Removing it costs 10.5 points of score in this model.
+5. **Mental Strength** — Removing it costs 7.1 points of score in this model.
+6. **Spiritual Guidance** — Removing it costs 6.5 points of score in this model.
+7. **Inner Focus** — Removing it costs 5.9 points of score in this model.
+8. **Inspiration** — Removing it costs 4.1 points of score in this model.
 
 ## Rotation
 
@@ -66,8 +66,8 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 ## Notes
 
-- Report: priest/talents/forever/optimizer/holy-heal-raid-heal.md
-- Promoted by rebuild.py on 2026-09-28: cand-holy-r1 had the highest healing capacity in the healer lab (0.623 vs 0.608).
+- Report: priest/research/talents/forever/optimizer/holy-heal-raid-heal.md
+- Promoted by rebuild.py on 2026-09-30: cand-holy-r1 had the highest healing capacity in the healer lab (0.623 vs 0.608).
 
 ## Open questions (verify in the live game)
 

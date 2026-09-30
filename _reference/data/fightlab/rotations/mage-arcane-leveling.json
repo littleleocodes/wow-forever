@@ -1,0 +1,95 @@
+{
+ "veto": {
+  "Arcane Missiles": {
+   "min_hp": 0.35
+  },
+  "Frostbolt": {
+   "min_hp": 0.2
+  },
+  "Cone of Cold": {
+   "min_hp": 0.2
+  }
+ },
+ "class": "mage",
+ "spec": "arcane-leveling",
+ "build": "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-arcane-scorer.json",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-30",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "Arcane Missiles only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Arcane Missiles",
+    0.35
+   ],
+   "gain_seed1": 0.011076291458312681,
+   "gain_seed2": 0.009058631585078025
+  },
+  {
+   "round": 2,
+   "change": "Frostbolt only while the mob has more than 20% health",
+   "rule": [
+    "min_hp",
+    "Frostbolt",
+    0.2
+   ],
+   "gain_seed1": 0.008213827309445643,
+   "gain_seed2": 0.0049672887476421845
+  },
+  {
+   "round": 3,
+   "change": "Cone of Cold only while the mob has more than 20% health",
+   "rule": [
+    "min_hp",
+    "Cone of Cold",
+    0.2
+   ],
+   "gain_seed1": 0.005326741336032503,
+   "gain_seed2": 0.005214804311748367
+  }
+ ],
+ "weighted_before": 33.26316903204146,
+ "weighted_after": 32.75974768029838,
+ "per_level": {
+  "20": {
+   "before": 31.879889405379828,
+   "after": 31.230849458172457,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 36.56144573183917,
+   "after": 35.85315568772914,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 38.64778174461155,
+   "after": 37.95658672056091,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 32.41219948769458,
+   "after": 31.995108240330367,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 29.194523369605484,
+   "after": 28.895316590423306,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

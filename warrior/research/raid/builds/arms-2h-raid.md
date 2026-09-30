@@ -1,4 +1,4 @@
-# Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26) — 19/32/0
+# Fury — Two-Handed (Improved Slam / Bloodthrill) — 19/32/0
 
 *[Warrior](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -138,6 +138,7 @@ Damage by ability:
 - Rotation hypothesis: Rend up -> Mortal Strike on cooldown -> Overpower when Bloodthrill procs -> Slam filler -> Heroic Strike when rage-capped.
 - This is a Battle Stance build; Sweeping Strikes is both the cleave and the Mortal Strike prerequisite.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Boundless Rage -> Booming Voice (range); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival); Improved Heroic Strike -> Deflection (survival). Net +0.00% on a third seed.
+- 2026-09-30: renamed from "Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

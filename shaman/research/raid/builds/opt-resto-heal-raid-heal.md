@@ -61,7 +61,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 ## Notes
 
-- Report: shaman/talents/forever/optimizer/resto-heal-raid-heal.md
+- Report: shaman/research/talents/forever/optimizer/resto-heal-raid-heal.md
 
 ## Open questions (verify in the live game)
 

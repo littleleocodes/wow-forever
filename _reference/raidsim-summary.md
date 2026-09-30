@@ -16,7 +16,7 @@
 | warlock | `incinerate-raid` | `destruction-incinerate-raid` | 478 | - | - | - | - |
 | warlock | `sb-raid` | `opt-sb-raid-raid-dps` | 566 | DS/Ruin Pandemic 24/11/16 | 540 | `opt-sb-raid-raid-dps` | 566 |
 | hunter | `bm-raid` | `mm-hawk-raid` | 448 | - | - | - | - |
-| hunter | `melee-dps` | `opt-melee-dps-raid-dps` | 424 | - | - | - | - |
+| hunter | `melee-dps` | `survival-raid` | 438 | - | - | - | - |
 | hunter | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 420 | Marksmanship | 342 | `opt-mm-lonewolf-raid-raid-dps` | 420 |
 | hunter | `mm-raid` | `cand-mm-raid-r6` | 417 | Marksmanship | 388 | `opt-mm-raid-raid-dps` | 415 |
 | warrior | `arms-2h-raid` | `arms-2h-raid` | 173 | DPS | 162 | `opt-arms-2h-raid-raid-dps` | 173 |
@@ -24,14 +24,14 @@
 | warrior | `fury-dw-raid` | `fury-dw-raid` | 221 | DPS | 212 | `opt-fury-dw-raid-raid-dps` | 221 |
 | warrior | `prot-tank` | `prot-raid-tank` | 427 | Protection | 404 | `opt-prot-tank-raid-tank` | 426 |
 | rogue | `assassination-raid` | `assassination-seal-fate-raid` | 407 | - | - | - | - |
-| rogue | `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 403 | Combat Dual-Wield 15/33/3 | 394 | `opt-combat-daggers-raid-raid-dps` | 403 |
+| rogue | `combat-daggers-raid` | `combat-raid` | 422 | Combat Dual-Wield 15/33/3 | 394 | `opt-combat-daggers-raid-raid-dps` | 403 |
 | rogue | `combat-swords-raid` | `combat-swords-raid` | 389 | Improved Expose Armor (SS) | 389 | `opt-combat-swords-raid-raid-dps` | 370 |
 | rogue | `subtlety-raid` | `subtlety-hemo-raid` | 374 | - | - | - | - |
 | paladin | `prot-tank` | `prot-tank` | 518 | P4 Prot | 422 | `opt-prot-tank-raid-tank` | 502 |
 | paladin | `ret-dps` | `opt-ret-dps-raid-dps` | 350 | P4/P5 Ret | 341 | `opt-ret-dps-raid-dps` | 350 |
 | paladin | `seal-of-fury-raid` | `ret-raid-dps` | 287 | - | - | - | - |
 | shaman | `elemental-dps` | `elemental-raid-dps` | 387 | Elemental 31/6/14 | 376 | `opt-elemental-dps-raid-dps` | 387 |
-| shaman | `enhancement-dps` | `opt-enhancement-dps-raid-dps` | 394 | Level 60 | 384 | `opt-enhancement-dps-raid-dps` | 394 |
+| shaman | `enhancement-dps` | `enhancement-raid` | 403 | Level 60 | 384 | `opt-enhancement-dps-raid-dps` | 394 |
 | shaman | `stormcaller-dps` | - | - | - | - | - | - |
 | druid | `balance-dps` | `balance-moonkin-raid` | 438 | Balance | 400 | `opt-balance-dps-raid-dps` | 438 |
 | druid | `feral-bear-tank` | `cand-feral-bear-tank-r6` | 424 | Bear Tank 0/31/20 | 362 | `opt-feral-bear-tank-raid-tank` | 383 |

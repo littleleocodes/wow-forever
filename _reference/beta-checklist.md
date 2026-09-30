@@ -42,6 +42,7 @@ Models: resto-heal, balance-dps, feral-cat-dps, feral-bear-tank. Same mob, same 
 - Furor's cat energy retention at max rank (extrapolated from 20%).
 - Whether a cat Mangle rank exists — if so, Mangle at 25 replaces Predatory Strikes' slot and Berserk becomes much stronger.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Restoration leveling build: check it while leveling at launch.
 
 ## Hunter
 
@@ -92,6 +93,7 @@ Models: bm-leveling, mm-raid, mm-lonewolf-raid, melee-dps. Same mob, same gear, 
 - Lacerating Strikes: 40% of Mongoose Bite over 21 s; whether the bleed can crit or stack.
 - Whether the pet holds melee-hunter threat as well as the fight lab assumes (it Growls every 5 s and loses the mob when your threat passes 130% of its own).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
 ## Mage
 
@@ -136,7 +138,8 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - Ice Lance base damage at each rank (demo shows 28-33 at level 38 — low; its value is the 300% Frozen multiplier).
 - Fight lab (2026-09-25, beta numbers): Ice Lance on a Frozen target (Frost Nova, Frostbite, Fingers of Frost) is 4x damage for an instant, so Nova -> step back -> Ice Lance x2 makes Ice Lance ~40-55% of all leveling damage from 30 on and Shatter/Fingers of Frost/Frostbite the best talents; testable at the level-20 cap now: does Ice Lance rank 1 hit a Frost-Nova'd mob for ~120 (4 x 28-32) and how often do the first two Ice Lances break the root?
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- A generated Arcane build: check it against the community's Arcane builds at launch.
+- A derived Arcane leveling build: check it while leveling at launch.
+- A derived Fire leveling build: check it while leveling at launch.
 
 ## Paladin
 
@@ -163,7 +166,7 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 
 Plan: **ret-dps -> level-50 build (8/0/33)** (from `paladin/leveling/respec-plan.md`)
 
-- 10-14 Deflection x5; 15-16 Holy Conduit x2; 17-18 Improved Judgement x2; 19 Conviction; 20 Seal of Command; 21-22 Sanctified Judgement x2; 23 Pursuit of Justice; 24 Sanctified Judgement; 25 Sacred Arbiter; 26 Pursuit of Justice; 27-29 Conviction x3; 30-32 Two-Handed Weapon Specialization x3
+- 10 Benediction; 11-14 Deflection x4; 15-16 Holy Conduit x2; 17-18 Improved Judgement x2; 19 Conviction; 20 Seal of Command; 21-22 Sanctified Judgement x2; 23 Pursuit of Justice; 24 Sanctified Judgement; 25 Sacred Arbiter; 26 Pursuit of Justice; 27-29 Conviction x3; 30-32 Two-Handed Weapon Specialization x3
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -180,6 +183,8 @@ Models: holy-heal, ret-dps, prot-tank. Same mob, same gear, ~10 kills each, note
 - Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - Improved Seals rank scaling (5% read at rank 1).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Holy leveling build: check it while leveling at launch.
+- A derived Protection leveling build: check it while leveling at launch.
 
 ## Priest
 
@@ -222,6 +227,8 @@ Models: holy-heal, shadow-dps. Same mob, same gear, ~10 kills each, note kill ti
 - Shadow Word: Death availability and level.
 - Whether Shadowform's demo crit bonus (text truncated) changes the value of Blackout/Early Demise.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Discipline leveling build: check it while leveling at launch.
+- A derived Holy leveling build: check it while leveling at launch.
 
 ## Rogue
 
@@ -261,7 +268,8 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - Restless Blades' cooldown reduction per finisher — if it also affects Vanish as written, it changes how often you can reset a bad pull.
 - Hack and Slash dagger/fist crit scaling (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- A generated Subtlety build: check it against the community's Subtlety builds at launch.
+- A generated Combat build: check it against the community's Combat builds at launch.
+- A derived Subtlety leveling build: check it while leveling at launch.
 
 ## Shaman
 
@@ -306,6 +314,7 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 - Two-hander / dual-wield availability for shamans.
 - Mental Dexterity and Mental Quickness scaling at max rank (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Restoration leveling build: check it while leveling at launch.
 
 ## Warlock
 
@@ -318,8 +327,8 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 
 | Talent | What the model assumes |
 |---|---|
-| Demonic Aegis | +15%/rank Demon Armor: ~+1%/rank effective health. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.4% time per kill in the simulator (scorer said 1.9% on the same scale); already within tolerance, l |
-| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-09-28, levels 40,60 |
+| Demonic Aegis | +15%/rank Demon Armor: ~+1%/rank effective health. Fight lab calibration (2026-09-30, levels 30,60): removing it costs -0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values |
+| Demonic Knowledge | Beta text: your spell damage AND your demon's spell damage by up to 33/67/100% of your level with a pet out (~20 spell power per rank at 60): ~+2%/rank for you and the pet. Fight lab calibration (2026-09-30, levels 30,60 |
 | Improved Drains | Beta text (reworked): flat +7/13/20% to Drain Life, Drain Soul and Wrack (the demo's per-effect scaling moved to Soul Siphon). Raid sim calibration (2026-09-26, ElliotWood/Forever 40be98e, affliction-raid): removing it c |
 | Soul Siphon | Beta text (reworked): +4/8/12% Drain Life/Drain Soul/Wrack damage per other Affliction effect on the target, up to 3 effects (12/24/36%). A DoT build keeps ~2.5 effects up -> +10/20/30% on drains; the demo's healing pena |
 
@@ -331,9 +340,9 @@ Models: resto-heal, elemental-dps, enhancement-dps. Same mob, same gear, ~10 kil
 
 ### 4. Play the recommended 10-30 order and time it
 
-Plan: **affliction-leveling -> level-20 build (11/0/0)** (from `warlock/leveling/respec-plan.md`)
+Plan: **affliction-leveling -> level-40 build (31/0/0)** (from `warlock/leveling/respec-plan.md`)
 
-- 10-14 Improved Corruption x5; 15-19 Malediction x5; 20 Amplify Curse; 21-23 Pandemic x3; 24-25 Improved Bane of Agony x2; 26-29 Malevolence x4; 30 Siphon Life
+- 10-14 Improved Corruption x5; 15-19 Malediction x5; 20 Amplify Curse; 21-22 Improved Bane of Agony x2; 23-25 Pandemic x3; 26-29 Suppression x4; 30 Siphon Life
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -350,9 +359,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.
 - Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- A generated Affliction build: check it against the community's Affliction builds at launch.
-- A generated Demonology build: check it against the community's Demonology builds at launch.
-- A generated Destruction build: check it against the community's Destruction builds at launch.
+- A derived Affliction leveling build: check it while leveling at launch.
+- A derived Demonology leveling build: check it while leveling at launch.
+- A derived Destruction leveling build: check it while leveling at launch.
 
 ## Warrior
 
@@ -396,4 +405,5 @@ Models: fury-dw-raid, arms-2h-raid, prot-tank. Same mob, same gear, ~10 kills ea
 - Bloodthrill proc rate at max rank (only rank 1 = 2% read) — if it is 10%, taking it before Weaponmaster may be better.
 - Whether Improved Slam's swing-timer change is real at rank 1; if not, the two Slam points move to Improved Hamstring.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A derived Protection leveling build: check it while leveling at launch.
 

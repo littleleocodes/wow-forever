@@ -2,7 +2,7 @@
   "_doc": "Paladin spec models. Holy: Flash of Light / Holy Light healer. Retribution: two-hander with seal procs and Judgements (Seal of Command is a talent -> damage effect). Protection: shield tank whose threat is Holy Strike (Forever baseline), Consecration, seal/judgement, Retribution Aura and white swings; Holy Shield arrives as a talent effect. Per-game overrides zero out abilities that do not exist in that game. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "holy-heal": {
-      "note": "Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Shock rank 1 is learned at 30 (128-140, 10s cooldown), Flash of Light and Holy Light gained five ranks each, Lay on Hands has a 20 min cooldown. Healer lab shares (2026-09-28, holy-raid-healer): holy_light 52%, flash 44%, loh 3%, holy_shock 0%; 0% of the healing came from talent-taught spells the model carries as talent effects.",
+      "note": "Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5%. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Shock rank 1 is learned at 30 (128-140, 10s cooldown), Flash of Light and Holy Light gained five ranks each, Lay on Hands has a 20 min cooldown. Healer lab shares (2026-09-30, holy-raid-healer): holy_light 52%, flash 44%, loh 3%, holy_shock 0%; 0% of the healing came from talent-taught spells the model carries as talent effects.",
       "sources": [
         {
           "id": "flash",
@@ -67,15 +67,15 @@
       "abs_dps_factor": 1.0
     },
     "ret-dps": {
-      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-ret-dps-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 53%, Holy Strike 19%, Judgement 12%, Seal of Command 9%, Hammer of Wrath 7%) and the leveling time split is fight 82% / drink 4% / eat 5% / other 0% / death 8% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, ret-raid-dps in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): seal 23%, white 21%, consecration 18%, judgement 17%, holy_strike 14%, hammer_of_wrath 6%; 2% of the damage matched no source.",
+      "note": "Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Holy Strike is baseline from level 6 with eight ranks (rank 8: 50% weapon damage plus 40-53 Holy, 20 mana, 10s cooldown since build 70009; Improved Holy Strike was removed); Consecration has an 8s cooldown; Judgement no longer consumes the seal; Exorcism and Hammer of Wrath are ~10% lower than Classic. Fight lab calibration (2026-09-30, beta client 1.60.1.70009, build opt-ret-dps-leveling-st at level 60, 1500 fights): shares are the measured damage split (Melee 33%, Judgement 21%, Seal of Command 17%, Holy Strike 15%, Hammer of Wrath 14%) and the leveling time split is fight 75% / drink 16% / eat 5% / other 0% / death 5% of talent-affected time with fight_coupling 0.6 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "white",
           "share": 0.2141,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.336},
-            "solo-60": {"share": 0.336},
+            "leveling-st": {"share": 0.335},
+            "solo-60": {"share": 0.335},
             "leveling-aoe": {"share": 0.535}
           },
           "game_overrides": {
@@ -150,8 +150,8 @@
           "tags": ["type:spell", "school:holy", "ability:Hammer of Wrath", "weapon:2h"],
           "cooldown": 6,
           "profile_overrides": {
-            "leveling-st": {"share": 0.136},
-            "solo-60": {"share": 0.136},
+            "leveling-st": {"share": 0.138},
+            "solo-60": {"share": 0.138},
             "leveling-aoe": {"share": 0.067}
           },
           "game_overrides": {
@@ -187,12 +187,12 @@
       "regen_share": 0.2,
       "abs_dps_factor": 1.0,
       "time": {
-        "leveling-st": {"fight": 0.752, "drink": 0.151, "eat": 0.049, "other": 0.0, "death": 0.047},
-        "solo-60": {"fight": 0.752, "drink": 0.151, "eat": 0.049, "other": 0.0, "death": 0.047},
+        "leveling-st": {"fight": 0.752, "drink": 0.155, "eat": 0.047, "other": 0.0, "death": 0.047},
+        "solo-60": {"fight": 0.752, "drink": 0.155, "eat": 0.047, "other": 0.0, "death": 0.047},
         "leveling-aoe": {"fight": 0.822, "drink": 0.045, "eat": 0.054, "other": 0.0, "death": 0.079}
       },
       "mana_weight": {"raid-dps": 0.4},
-      "fight_coupling": {"leveling-aoe": 1.0},
+      "fight_coupling": {"leveling-st": 0.6, "solo-60": 0.6},
       "kind_weights": {"kite": 0, "range": 0},
       "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count.",
       "mana_limit": {

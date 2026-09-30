@@ -8,6 +8,12 @@ Playstyle `shadow-dps` (the scorer's model id): Power Word: Shield and Inner Fir
 Shadow Word: Pain, Mind Flay channels (slowing the mob) and Mind Blast on cooldown, Vampiric Embrace and Devouring Plague
 for self-healing, Shadow Word: Death as an execute, wand to finish without overkill; Psychic Scream and Desperate Prayer
 when health runs low; Renew between fights until Shadowform (which forbids heals) replaces it with eating.
+
+Playstyles `holy-leveling` and `discipline-leveling` (any spec string starting with "holy" or "discipline"; 2026-09-30): the
+healing trees leveling on Smite. One priority list for both (`decide_holy`); the talents make the difference: shield before the
+pull, Holy Fire as the opener, Shadow Word: Pain, Penance on cooldown (Forever's Penance damages an enemy), Mind Blast on cooldown,
+Smite as the filler, wand to finish; Power Word: Shield again, Renew and Flash Heal when hurt. Talent effects only these playstyles
+apply: see HOLY_MECHANICS (the Shadow playstyle keeps MECHANICS and its behaviour as it was).
 """
 import json
 import pathlib
@@ -37,6 +43,8 @@ TALENT_SPELLS = {"Mind Flay": "Mind Flay", "Vampiric Embrace": "Vampiric Embrace
                  "Holy Nova": "Holy Nova", "Penance": "Penance", "Binding Heal": "Binding Heal", "Prayer of Mending": "Prayer of Mending",
                  "Inner Focus": "Inner Focus", "Power Infusion": "Power Infusion"}
 CHANNEL_TICKS = {"Mind Flay": 3, "Starshards": 6, "Penance": 3}
+DOT_TICKS = {"Holy Fire": 5}   # Holy Fire's burn ticks every 2 s for 10 s (the tooltip gives only the total and the duration)
+PENANCE = re.compile(r"causing (\d[\d,]*) Holy damage to an enemy")
 SELF_ONLY = {"Renew", "Flash Heal", "Lesser Heal", "Heal", "Greater Heal", "Power Word: Shield", "Desperate Prayer", "Binding Heal"}
 
 
@@ -78,11 +86,15 @@ def load_spellbook():
                 elif bn:
                     s.dot, s.dot_dur = _num(bn.group(1)), float(bn.group(3))
                 if s.dot > 0:
-                    s.dot_ticks = CHANNEL_TICKS.get(sp["name"], max(1, int(round(s.dot_dur / 3.0))))
+                    s.dot_ticks = CHANNEL_TICKS.get(sp["name"], DOT_TICKS.get(sp["name"], max(1, int(round(s.dot_dur / 3.0)))))
                     s.dot_coef = coefs.get("per tick", 0.0)
                 if channel:
                     s.kind = "channel"
                     s.channel = s.dot_dur or 3.0
+                pn = PENANCE.search(txt) if sp["name"] == "Penance" else None
+                if pn:   # "causing N Holy damage to an enemy ... instantly and every 1 sec for 2 sec": three hits over a 2 s channel
+                    s.dot, s.dot_dur, s.dot_ticks = 3 * _num(pn.group(1)), 2.0, 3
+                    s.dot_coef, s.channel = coefs.get("per tick", 0.0), 2.0
                 if ch:
                     s.chill, s.chill_dur = float(ch.group(1)) / 100, s.dot_dur or 3.0
                 if fe:
@@ -162,6 +174,31 @@ MECHANICS = {
     "Searing Light": "+2.5%/rank Holy damage",
     "Spell Warding": "-2%/rank spell damage taken (no caster mobs here)",
 }
+# Talent effects the Holy / Discipline playstyles add (spec strings starting with "holy" or "discipline"); shadow-dps keeps MECHANICS.
+HOLY_MECHANICS = {
+    "Penance": "unlocks Penance: 3 Holy hits over a 2 s channel (tooltip: N Holy damage instantly and every 1 sec for 2 sec, 28.5% of spell "
+               "power per hit), 12 s cooldown; the strongest rank learned is cast (the beta's rank 4 hits for less than rank 3)",
+    "Power in Light": "+2%/rank Smite and Penance damage while your Holy Fire burns on the mob",
+    "Power Infusion": "+20% spell damage and healing for 15 s, cast on yourself as a pull starts (3 min cooldown, 20% of base mana)",
+    "Holy Reach": "+10%/rank Smite and Holy Fire range: longer pulls",
+    "Blessed Recovery": "after a melee crit or a hit above 30% of your health: heal 8/16/25% of that hit over 6 s (the rest carries over)",
+    "Renewed Hope": "+2%/rank crit on Flash Heal, Lesser Heal, Heal, Greater Heal, Binding Heal under Weakened Soul; each such heal "
+                    "shortens Weakened Soul by 1 s/rank (the next Power Word: Shield comes sooner)",
+    "Improved Healing": "-5%/rank mana on Lesser Heal, Heal, Greater Heal and Penance",
+    "Spirit of Redemption": "no effect: the priest still dies",
+    "Holy Nova": "area pulls only (AOE)",
+    "Silent Resolve": "threat only",
+    "Inspiration": "not modelled (armor after a critical non-periodic heal on yourself; rare in leveling fights)",
+    "Divine Aegis": "not modelled (a 5%/rank absorb after a critical heal; rare in leveling fights)",
+    "Litany of Light": "not modelled (mana back when alternating heals; leveling fights cast few heals)",
+    "Binding Heal": "not cast (Flash Heal heals more per mana on yourself)",
+}
+RENEWED_HOPE_HEALS = ("Flash Heal", "Binding Heal", "Lesser Heal", "Heal", "Greater Heal")
+HOLY_DESCRIPTION = ("Holy / Discipline leveling (spec strings holy-leveling, discipline-leveling): Power Word: Shield, Inner Fire and Power "
+                    "Infusion before the pull, Holy Fire as the opener at 30 yd, Shadow Word: Pain, Penance and Mind Blast on cooldown, Smite as the "
+                    "filler (in melee too: the shield stops pushback while it holds), wand to finish without overkill; Power Word: Shield again, "
+                    "Renew and Flash Heal when hurt, Psychic Scream and Desperate Prayer when health runs low. Between fights: Renew, conjured "
+                    "water below 35% mana, food below 65% health.")
 FIT = {
     "Mind Flay": ("replace", [{"channel": "dmg", "scope": ["type:spell"], "values": [0.15]}]),
     "Shadow Focus": ("replace", [{"channel": "hit", "scope": ["school:shadow"], "per_rank": 0.01}, {"channel": "dmg", "scope": ["school:shadow"], "per_rank": 0.005}]),
@@ -204,7 +241,10 @@ class PriestModule(BaseModule):
         self.level = level
         self.spec = spec
         self.gear = gear
+        self.holy = spec.startswith(("holy", "discipline"))
         self.book = {name: self.rank_at(name) for name in BOOK}
+        if self.holy and self.book.get("Penance") is not None:   # the strongest learned rank (beta: rank 4 hits for less than rank 3)
+            self.book["Penance"] = max((s for s in BOOK["Penance"] if s.level <= level), key=lambda s: (s.dot, s.level))
         self.spells = {n: s for n, s in self.book.items() if s is not None}
         for tname, sname in TALENT_SPELLS.items():
             if not self.t.get(tname):
@@ -226,8 +266,12 @@ class PriestModule(BaseModule):
             return nums[r - 1][idx]
         return 0.0
 
+    def is_holy(self):
+        return self.holy
+
     def not_simulated(self):
-        return sorted(n for n in self.t if n not in MECHANICS)
+        known = {**MECHANICS, **HOLY_MECHANICS} if self.holy else MECHANICS
+        return sorted(n for n in self.t if n not in known)
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
@@ -262,6 +306,10 @@ class PriestModule(BaseModule):
         return p
 
     def pull_range(self):
+        if self.holy:   # the Holy Fire / Smite opener, Holy Reach extends it
+            hf = self.spells.get("Holy Fire") or self.spells.get("Smite")
+            base = hf.range if hf and hf.range else 30.0
+            return base * (1 + self.tv("Holy Reach", 0) / 100)
         mb = self.spells.get("Mind Blast") or self.spells.get("Smite")
         base = mb.range if mb and mb.range else 30.0
         return base * (1 + self.tv("Shadow Reach", 0) / 100)
@@ -290,6 +338,8 @@ class PriestModule(BaseModule):
             cost *= 1 - self.tv("Mental Agility", 0) / 100
         if spell.name in ("Heal", "Greater Heal", "Lesser Heal"):
             cost *= 1 - self.tv("Improved Healing", 0) / 100
+        if self.holy and spell.name == "Penance":
+            cost *= 1 - self.tv("Improved Healing", 0) / 100
         return cost
 
     def final_cost(self, fight, spell, cost):
@@ -314,6 +364,8 @@ class PriestModule(BaseModule):
             c += self.tv("Early Demise", 0) / 100
         if f and f.p.buff("Inner Focus", f.t) and spell.dmg_max > 0:
             c += 0.25
+        if self.holy and f and spell.name in RENEWED_HOPE_HEALS and f.p.cooldowns.get("Power Word: Shield", 0.0) > f.t:
+            c += self.tv("Renewed Hope", 0) / 100   # the target (you) is under Weakened Soul
         return c
 
     def crit_damage_bonus(self, spell):
@@ -337,10 +389,18 @@ class PriestModule(BaseModule):
             m *= 1 + 0.10 * self.rank("Improved Mind Flay")
         if spell.cast == 0 and spell.kind != "channel":
             m *= 1 + self.tv("Twin Disciplines", 0) / 100
+        if self.holy and self._fight:
+            f = self._fight
+            if spell.name in ("Smite", "Penance") and f.dot_active("Holy Fire"):
+                m *= 1 + self.tv("Power in Light", 0) / 100
+            if f.p.buff("Power Infusion", f.t):
+                m *= 1.20
         return m
 
     def heal_multiplier(self, spell):
         m = 1 + self.tv("Spiritual Healing", 0) / 100
+        if self.holy and self._fight and self._fight.p.buff("Power Infusion", self._fight.t):
+            m *= 1.20
         if spell.name == "Renew":
             m *= 1 + self.tv("Improved Renew", 0) / 100
         if spell.name == "Power Word: Shield":
@@ -403,6 +463,12 @@ class PriestModule(BaseModule):
         if self.rank("Inner Focus") and p.ready("Inner Focus", t):
             p.buffs["Inner Focus"] = {"until": t + 30.0}
             p.cooldowns["Inner Focus"] = t + 180.0
+        pi = self.spells.get("Power Infusion") if self.holy else None
+        if pi is not None and p.ready("Power Infusion", t) and p.mana >= self.mana_cost(pi) + 300:
+            p.mana -= self.mana_cost(pi)
+            p.buffs["Power Infusion"] = {"until": t + 15.0}
+            p.cooldowns["Power Infusion"] = t + 180.0
+            fight.casts["Power Infusion"] = fight.casts.get("Power Infusion", 0) + 1
 
     def cast_shield(self, fight, pws):
         p, t = fight.p, fight.t
@@ -456,6 +522,8 @@ class PriestModule(BaseModule):
             cd = 15.0
         if cd > 0:
             p.cooldowns[spell.name] = t + cd
+        if self.holy and spell.name in RENEWED_HOPE_HEALS and self.rank("Renewed Hope") and p.cooldowns.get("Power Word: Shield", 0.0) > t:
+            p.cooldowns["Power Word: Shield"] = max(t, p.cooldowns["Power Word: Shield"] - self.tv("Renewed Hope", 1))
 
     def on_hit_taken(self, fight, dmg, crit=False):
         p, t = fight.p, fight.t
@@ -464,6 +532,11 @@ class PriestModule(BaseModule):
             b["charges"] -= 1
         if crit and self.rank("Martyrdom"):
             p.buffs["Focused Casting"] = {"until": t + 6.0}
+        if self.holy and self.rank("Blessed Recovery") and dmg > 0 and (crit or dmg > 0.30 * p.hp_max):
+            left = sum(h[1] * h[2] for h in p.hots if h[0] == "Blessed Recovery")   # refreshing carries over the rest
+            total = left + dmg * self.tv("Blessed Recovery", 0) / 100
+            p.hots = [h for h in p.hots if h[0] != "Blessed Recovery"]
+            p.hots.append(["Blessed Recovery", total / 3, 3, t + 2.0, 2.0, "player"])
 
     def on_kill(self, fight):
         p, t = fight.p, fight.t
@@ -484,6 +557,8 @@ class PriestModule(BaseModule):
 
     # ------------------------------------------------------------ priority list
     def decide(self, fight):
+        if self.holy:
+            return self.decide_holy(fight)
         if fight.others():   # a pull of several mobs: the area priority first (engine.BaseModule.decide_aoe, AOE below)
             r = self.decide_aoe(fight)
             if r is not None:
@@ -541,5 +616,68 @@ class PriestModule(BaseModule):
         if smite and can(smite) and not in_melee and hp > avg(smite):
             return smite
         if smite and can(smite) and flay is None and (p.absorb > 0 and t < p.absorb_until):
+            return smite
+        return "wand"
+
+    def decide_holy(self, fight):
+        """Holy / Discipline leveling: Holy Fire opener, Shadow Word: Pain, Penance and Mind Blast on cooldown, Smite filler, wand finish;
+        shield, Renew and Flash Heal keep the priest up."""
+        if fight.others():
+            r = self.decide_aoe(fight)
+            if r is not None:
+                return r
+        p, m, t = fight.p, fight.m, fight.t
+        sp = self.spells
+        in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
+        shielded = p.absorb > 0 and t < p.absorb_until
+
+        def avg(s):
+            return (s.dmg_min + s.dmg_max) / 2 + s.coef * p.spell_power if s else 0.0
+
+        def can(s):
+            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+
+        swp, blast, smite, hf, pen, scream, pws, renew = (sp.get("Shadow Word: Pain"), sp.get("Mind Blast"), sp.get("Smite"), sp.get("Holy Fire"),
+                                                          sp.get("Penance"), sp.get("Psychic Scream"), sp.get("Power Word: Shield"), sp.get("Renew"))
+        wand_hit = self.wand_damage() * 0.65
+        hp = m.hp
+        # emergencies
+        if p.hp < 0.30 * p.hp_max:
+            dpr = sp.get("Desperate Prayer")
+            if dpr and can(dpr):
+                return dpr
+        if p.hp < 0.40 * p.hp_max and in_melee and scream and can(scream) and hp > 0.25 * m.hp_max and not m.incapacitated(t):
+            return scream
+        if p.hp < 0.50 * p.hp_max and pws and not shielded and can(pws) and hp > 0.15 * m.hp_max:
+            return pws
+        if p.hp < 0.35 * p.hp_max and hp > wand_hit * 2:
+            fh = sp.get("Flash Heal") or sp.get("Lesser Heal")
+            if fh and can(fh):
+                return fh
+        if (p.hp < 0.60 * p.hp_max and renew and can(renew) and hp > 0.25 * m.hp_max
+                and not any(h[0] == "Renew" for h in p.hots)):
+            return renew
+        # a casting mob: Silence it (a Discipline / Holy build rarely has it)
+        sil = sp.get("Silence")
+        if m.caster and m.casting(t) and sil and can(sil) and m.dist <= sil.range:
+            return sil
+        # finishers without overkill
+        if blast and can(blast) and hp <= avg(blast) * 0.9 and hp > wand_hit * 2.5:
+            return blast
+        if hp <= wand_hit * 1.5:
+            return "wand"
+        # a shield in melee (no pushback while it holds) once Weakened Soul is gone
+        if in_melee and pws and not shielded and can(pws) and p.hp < 0.80 * p.hp_max and hp > 0.30 * m.hp_max:
+            return pws
+        # the loop
+        if hf and can(hf) and not fight.dot_active("Holy Fire") and hp > 0.40 * m.hp_max and (not in_melee or shielded):
+            return hf
+        if swp and can(swp) and not fight.dot_active("Shadow Word: Pain") and hp > 0.30 * m.hp_max:
+            return swp
+        if pen and can(pen) and hp > wand_hit * 2 and m.dist <= (pen.range or 30.0):
+            return pen
+        if blast and can(blast):
+            return blast
+        if smite and can(smite) and hp > avg(smite) * 0.6 and p.mana >= self.WAND_BELOW * p.mana_max:
             return smite
         return "wand"

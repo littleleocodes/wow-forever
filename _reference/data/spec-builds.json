@@ -66,21 +66,35 @@
    },
    "spec": "Beast Mastery",
    "mode": "raid",
-   "date": "2026-09-29"
+   "date": "2026-09-30"
   },
   "beast-mastery-pvp": {
    "model": "bm-leveling",
    "profile": "pvp",
    "spec": "Beast Mastery",
    "mode": "pvp",
-   "date": "2026-09-29"
+   "date": "2026-09-30"
   },
   "survival-pvp": {
    "model": "melee-dps",
    "profile": "pvp",
    "spec": "Survival",
    "mode": "pvp",
-   "date": "2026-09-29"
+   "date": "2026-09-30"
+  },
+  "beast-mastery-leveling": {
+   "model": "bm-leveling",
+   "profile": "leveling-st",
+   "spec": "Beast Mastery",
+   "mode": "leveling",
+   "date": "2026-09-30",
+   "levels": {
+    "20": 17.722008127681157,
+    "30": 22.677243718498207,
+    "40": 27.562005916519183,
+    "50": 28.22896802546091,
+    "60": 29.73705021890339
+   }
   }
  },
  "mage": {
@@ -158,20 +172,34 @@
    "profile": "pvp",
    "spec": "Combat",
    "mode": "pvp",
-   "date": "2026-09-29"
+   "date": "2026-09-30"
   },
   "subtlety-leveling": {
    "model": "combat-swords-raid",
    "profile": "leveling-st",
    "spec": "Subtlety",
    "mode": "leveling",
-   "date": "2026-09-29",
+   "date": "2026-09-30",
    "levels": {
     "20": 18.96213333328194,
     "30": 21.911599999918373,
     "40": 26.041933333209567,
     "50": 28.3012772604349,
     "60": 29.619666666505633
+   }
+  },
+  "combat-leveling": {
+   "model": "combat-swords-raid",
+   "profile": "leveling-st",
+   "spec": "Combat",
+   "mode": "leveling",
+   "date": "2026-09-30",
+   "levels": {
+    "20": 18.96213333328194,
+    "30": 21.911599999918373,
+    "40": 26.234399999873713,
+    "50": 27.627265424429954,
+    "60": 27.74399999986006
    }
   }
  },

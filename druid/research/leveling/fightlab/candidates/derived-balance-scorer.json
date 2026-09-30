@@ -1,0 +1,204 @@
+{
+ "id": "derived-balance-scorer",
+ "allocation": {
+  "Balance": [
+   [
+    "Improved Wrath",
+    5
+   ],
+   [
+    "Moonglow",
+    3
+   ],
+   [
+    "Improved Moonfire",
+    2
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Improved Entangling Roots",
+    3
+   ],
+   [
+    "Nature's Splendor",
+    1
+   ],
+   [
+    "Vengeance",
+    5
+   ],
+   [
+    "Improved Starfire",
+    5
+   ],
+   [
+    "Nature's Grace",
+    1
+   ],
+   [
+    "Eclipse",
+    3
+   ],
+   [
+    "Moonfury",
+    5
+   ],
+   [
+    "Moonkin Form",
+    1
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Heart of the Wild",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Reflection",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 3
+  },
+  {
+   "levels": "18",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "19-20",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "21",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Balance",
+   "talent": "Improved Entangling Roots",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Balance",
+   "talent": "Improved Starfire",
+   "points": 5
+  },
+  {
+   "levels": "30-32",
+   "tree": "Balance",
+   "talent": "Eclipse",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Balance",
+   "talent": "Nature's Grace",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "35-38",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 4
+  },
+  {
+   "levels": "39",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Balance",
+   "talent": "Moonkin Form",
+   "points": 1
+  },
+  {
+   "levels": "41-43",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 3
+  },
+  {
+   "levels": "44",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Balance",
+   "talent": "Improved Entangling Roots",
+   "points": 1
+  },
+  {
+   "levels": "46-50",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "51-55",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "56-58",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 3
+  },
+  {
+   "levels": "59-60",
+   "tree": "Feral Combat",
+   "talent": "Heart of the Wild",
+   "points": 2
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Balance under balance-dps (leveling-st), 2026-09-30."
+}

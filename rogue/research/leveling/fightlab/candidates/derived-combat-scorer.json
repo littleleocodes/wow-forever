@@ -1,0 +1,258 @@
+{
+ "id": "derived-combat-scorer",
+ "allocation": {
+  "Assassination": [
+   [
+    "Improved Gouge",
+    1
+   ],
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    4
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    2
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    1
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 2
+  },
+  {
+   "levels": "14-15",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "16",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "28-32",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "33-34",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "35",
+   "tree": "Assassination",
+   "talent": "Improved Gouge",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 4
+  },
+  {
+   "levels": "41",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Combat",
+   "talent": "Dual Wield Specialization",
+   "points": 5
+  },
+  {
+   "levels": "47-48",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 2
+  },
+  {
+   "levels": "49",
+   "tree": "Combat",
+   "talent": "Hack and Slash",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Combat",
+   "talent": "Blade Flurry",
+   "points": 1
+  },
+  {
+   "levels": "51-52",
+   "tree": "Combat",
+   "talent": "Weapon Expertise",
+   "points": 2
+  },
+  {
+   "levels": "53-55",
+   "tree": "Combat",
+   "talent": "Aggression",
+   "points": 3
+  },
+  {
+   "levels": "56",
+   "tree": "Combat",
+   "talent": "Adrenaline Rush",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "59-60",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 2
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Combat under combat-swords-raid (leveling-st), 2026-09-30."
+}

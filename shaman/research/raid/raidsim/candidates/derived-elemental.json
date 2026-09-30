@@ -1,0 +1,88 @@
+{
+ "id": "derived-elemental",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lava Burst",
+    1
+   ],
+   [
+    "Eye of the Storm",
+    3
+   ],
+   [
+    "Elemental Reach",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ],
+   [
+    "Tidal Focus",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for elemental-dps from elemental-raid in the dummy setting: 380.8 -> 380.8 DPS on a third seed.",
+ "search": {
+  "start": "elemental-raid",
+  "setting": "dummy",
+  "kept": [
+   "Elemental Focus"
+  ],
+  "moves": [],
+  "dps_start": 380.82778864463035,
+  "dps_end": 380.82778864463035,
+  "gain": 0.0,
+  "tank": false
+ }
+}

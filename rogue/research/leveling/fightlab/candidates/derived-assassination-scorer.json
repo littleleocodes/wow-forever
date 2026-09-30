@@ -1,0 +1,220 @@
+{
+ "id": "derived-assassination-scorer",
+ "allocation": {
+  "Assassination": [
+   [
+    "Improved Gouge",
+    3
+   ],
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    5
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    5
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Mutilate",
+    1
+   ]
+  ],
+  "Combat": [
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Endurance",
+    2
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Camouflage",
+    1
+   ],
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "12-16",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 5
+  },
+  {
+   "levels": "17-19",
+   "tree": "Combat",
+   "talent": "Puncturing Wounds",
+   "points": 3
+  },
+  {
+   "levels": "20-22",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 3
+  },
+  {
+   "levels": "23",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "28-32",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "33-35",
+   "tree": "Assassination",
+   "talent": "Ruthlessness",
+   "points": 3
+  },
+  {
+   "levels": "36-37",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "38",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "39-42",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 4
+  },
+  {
+   "levels": "43-45",
+   "tree": "Assassination",
+   "talent": "Improved Gouge",
+   "points": 3
+  },
+  {
+   "levels": "46",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 1
+  },
+  {
+   "levels": "47",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Assassination",
+   "talent": "Mutilate",
+   "points": 1
+  },
+  {
+   "levels": "49-50",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 2
+  },
+  {
+   "levels": "51-52",
+   "tree": "Combat",
+   "talent": "Endurance",
+   "points": 2
+  },
+  {
+   "levels": "53",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "54-55",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "56-60",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 5
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Assassination under combat-daggers-raid (leveling-st), 2026-09-30."
+}

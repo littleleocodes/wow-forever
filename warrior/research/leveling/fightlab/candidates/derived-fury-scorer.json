@@ -1,0 +1,185 @@
+{
+ "id": "derived-fury-scorer",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    5
+   ],
+   [
+    "Improved Charge",
+    2
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Blood Craze",
+    3
+   ],
+   [
+    "Boundless Rage",
+    2
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Fury",
+   "talent": "Cruelty",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fury",
+   "talent": "Unbridled Wrath",
+   "points": 5
+  },
+  {
+   "levels": "20-22",
+   "tree": "Fury",
+   "talent": "Blood Craze",
+   "points": 3
+  },
+  {
+   "levels": "23-24",
+   "tree": "Fury",
+   "talent": "Boundless Rage",
+   "points": 2
+  },
+  {
+   "levels": "25-26",
+   "tree": "Fury",
+   "talent": "Improved Execute",
+   "points": 2
+  },
+  {
+   "levels": "27-31",
+   "tree": "Fury",
+   "talent": "Enrage",
+   "points": 5
+  },
+  {
+   "levels": "32",
+   "tree": "Fury",
+   "talent": "Death Wish",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 3
+  },
+  {
+   "levels": "36",
+   "tree": "Fury",
+   "talent": "Raging Blows",
+   "points": 1
+  },
+  {
+   "levels": "37-38",
+   "tree": "Fury",
+   "talent": "Dual Wield Specialization",
+   "points": 2
+  },
+  {
+   "levels": "39",
+   "tree": "Fury",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Fury",
+   "talent": "Bloodthirst",
+   "points": 1
+  },
+  {
+   "levels": "41-42",
+   "tree": "Fury",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "43-47",
+   "tree": "Fury",
+   "talent": "Flurry",
+   "points": 5
+  },
+  {
+   "levels": "48-52",
+   "tree": "Arms",
+   "talent": "Deflection",
+   "points": 5
+  },
+  {
+   "levels": "53-54",
+   "tree": "Arms",
+   "talent": "Improved Charge",
+   "points": 2
+  },
+  {
+   "levels": "55-59",
+   "tree": "Arms",
+   "talent": "Improved Tactical Mastery",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Arms",
+   "talent": "Anger Management",
+   "points": 1
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Fury under fury-dw-raid (leveling-st), 2026-09-30."
+}

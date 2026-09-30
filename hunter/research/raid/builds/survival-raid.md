@@ -1,0 +1,107 @@
+# Survival — Raid (derived) — 5/16/30
+
+*[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
+
+| | |
+|---|---|
+| **Build** | 5/16/30 (Beast Mastery / Marksmanship / Survival) |
+| **Role** | DPS — Raid |
+| **Status** | Draft |
+| **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
+
+## Summary
+
+The Survival raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry melee-dps, training dummy) from the spec's best build opt-melee-dps-raid-dps, 30+ points kept in Survival.
+
+## Point allocation
+
+### Beast Mastery (5)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
+
+### Marksmanship (16)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
+| **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
+| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
+| **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
+
+### Survival (30)
+
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
+| **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
+| **Survivalist** | 3/5 | changed | Increases your total Health by 6%. |
+| **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
+| **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%. |
+| **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
+| **Resourcefulness** | 2/2 | **NEW** | Reduces the mana cost of your Trap abilities and melee abilities by 60%. In addition, your critical strikes have a 60% chance to allow 50% of your Mana regeneration to continue while casting for 30 sec. |
+| **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
+| **Lightning Reflexes** | 3/5 | changed | Increases your Agility by 9%. |
+| **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
+| **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
+
+## Rank among our builds and the community simulator's
+
+**1 of 3** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+
+| Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
+|---|---|---|---|---|---|---|---|---|
+| 1 | **[`survival-raid`](survival-raid.md)** | ours: hand draft | 5/16/30 | 438 | +0.0% | 953 | -2.8% | 12 s |
+| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 424 | -3.2% | 951 | -2.9% | 13 s |
+| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 424 | -3.3% | 980 | +0.0% | 37 s |
+
+## Rotation (community simulator, training dummy)
+
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 428 -> 459 DPS (+7.3%)):
+  1. insert before the filler: cast Wing Clip (+7.4%)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 893 -> 985 DPS (+10.3%)):
+  1. insert before the filler: cast Wing Clip (+10.3%)
+
+Before the pull: at -3s: cast Hunter's Mark.
+
+| # | Priority (the first line whose condition holds is cast) | [`survival-raid`](survival-raid.md) casts/min |
+|---|---|---|
+| 1 | cast Aspect of the Beast | 0.3 |
+| 2 | use every other cooldown when ready | as ready |
+| 3 | cast Mongoose Bite | 6.2 |
+| 4 | cast Strider Kick | 6.4 |
+| 5 | cast Raptor Strike | 19.4 |
+| 6 | cast Immolation Trap | 3.2 |
+| 7 | cast Wing Clip | 22.6 |
+
+Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
+
+Damage by ability:
+
+| Ability | [`survival-raid`](survival-raid.md) |
+|---|---|
+| Auto Attack | 42% |
+| Raptor Strike | 16% |
+| Mongoose Bite | 14% |
+| Immolation Trap | 11% |
+| Strider Kick | 8% |
+| Wing Clip | 6% |
+| Dragonbreath Chili | 3% |
+
+## Notes
+
+- About +3.3% over the hand draft melee-survival-raid (over the 2% replacement bar): this build is the spec's raid pick, the hand draft stays as the alternative.
+- Simulator talent search from opt-melee-dps-raid-dps: 2 points Survivalist -> Clever Traps; 1 point Lacerating Strikes -> Efficiency; 2 points Lightning Reflexes -> Survivalist's Discipline (+3.2% DPS on the search's third seed).
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements.
+
+## Open questions (verify in the live game)
+
+- A derived Survival raid build: check it against the community's Survival builds at launch.
+
+## Sources
+
+- <https://github.com/ElliotWood/Forever>
+
+---
+*Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

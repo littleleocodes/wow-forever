@@ -1,0 +1,119 @@
+{
+ "veto": {
+  "Smite": {
+   "min_hp": 0.35
+  },
+  "Holy Fire": {
+   "off": true
+  }
+ },
+ "knobs": {
+  "WAND_BELOW": 0.3
+ },
+ "drink_below": 0.15,
+ "eat_below": 0.8,
+ "class": "priest",
+ "spec": "holy-leveling",
+ "build": "/home/user/wow-forever/priest/research/leveling/fightlab/candidates/derived-holy-scorer.json",
+ "levels": [
+  20,
+  30,
+  40,
+  50,
+  60
+ ],
+ "date": "2026-09-30",
+ "fights": 600,
+ "confirm": 3000,
+ "changes": [
+  {
+   "round": 1,
+   "change": "Smite only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Smite",
+    0.35
+   ],
+   "gain_seed1": 0.04099018592297199,
+   "gain_seed2": 0.04249208337959931
+  },
+  {
+   "round": 2,
+   "change": "WAND_BELOW = 0.3",
+   "rule": [
+    "knob",
+    "WAND_BELOW",
+    0.3
+   ],
+   "gain_seed1": 0.0363141211819048,
+   "gain_seed2": 0.03556717310666602
+  },
+  {
+   "round": 3,
+   "change": "never cast Holy Fire",
+   "rule": [
+    "off",
+    "Holy Fire",
+    true
+   ],
+   "gain_seed1": 0.043743222885548216,
+   "gain_seed2": 0.040860444978926935
+  },
+  {
+   "round": 4,
+   "change": "drink below 15% mana",
+   "rule": [
+    "drink_below",
+    null,
+    0.15
+   ],
+   "gain_seed1": 0.025138092944960833,
+   "gain_seed2": 0.03046226705064614
+  },
+  {
+   "round": 5,
+   "change": "eat below 80% health",
+   "rule": [
+    "eat_below",
+    null,
+    0.8
+   ],
+   "gain_seed1": 0.009300689050454891,
+   "gain_seed2": 0.00789703053203239
+  }
+ ],
+ "weighted_before": 65.070813655462,
+ "weighted_after": 55.43188620747533,
+ "per_level": {
+  "20": {
+   "before": 46.65359985836673,
+   "after": 39.06437629901511,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "30": {
+   "before": 59.334073430033456,
+   "after": 48.6615463611415,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "40": {
+   "before": 74.52079394430747,
+   "after": 59.587315930700505,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "50": {
+   "before": 70.19899216535478,
+   "after": 59.28064471366749,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "60": {
+   "before": 63.504786083067096,
+   "after": 58.2953075294854,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  }
+ }
+}

@@ -1,0 +1,301 @@
+{
+ "id": "fl-fire-fire-leveling",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Blast Wave",
+    1
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Impact",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Permafrost",
+    1
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Improved Fireball",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 3
+  },
+  {
+   "levels": "18-22",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 5
+  },
+  {
+   "levels": "23",
+   "tree": "Frost",
+   "talent": "Permafrost",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "28",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "29-30",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 2
+  },
+  {
+   "levels": "31-34",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 4
+  },
+  {
+   "levels": "35",
+   "tree": "Frost",
+   "talent": "Ice Block",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 1
+  },
+  {
+   "levels": "37-39",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 3
+  },
+  {
+   "levels": "40",
+   "tree": "Fire",
+   "talent": "Impact",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Fire",
+   "talent": "Hot Streak",
+   "points": 1
+  },
+  {
+   "levels": "43-45",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 3
+  },
+  {
+   "levels": "46",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 1
+  },
+  {
+   "levels": "47",
+   "tree": "Fire",
+   "talent": "Blast Wave",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 1
+  },
+  {
+   "levels": "49-51",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "52-56",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 5
+  },
+  {
+   "levels": "57",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "58-59",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 2
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "fire-leveling",
+  "model": "fire-leveling",
+  "tree": "Fire",
+  "start": "opt-fire-leveling-leveling-st",
+  "starts": {
+   "opt-fire-leveling-leveling-st": 31.8384138480546,
+   "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-fire-scorer.json": 31.8384138480546
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Flame Throwing -> Shatter",
+    "gain_seed1": 0.04111220066410526,
+    "gain_seed2": 0.04058004982607233
+   },
+   {
+    "round": 2,
+    "move": "3 points Impact -> Master of Elements",
+    "gain_seed1": 0.03629145479170748,
+    "gain_seed2": 0.03481366063948932
+   },
+   {
+    "round": 3,
+    "move": "1 point Flame Throwing -> Impact",
+    "gain_seed1": 0.020655486796866906,
+    "gain_seed2": 0.013326361138099263
+   }
+  ],
+  "incumbent": "opt-fire-leveling-leveling-st",
+  "race": {
+   "incumbent": [
+    36.89391578678487,
+    {
+     "20": 36.722348846836546,
+     "30": 37.94320295973466,
+     "40": 42.72737971983586,
+     "50": 37.696609021149044,
+     "60": 31.86857419628862
+    }
+   ],
+   "search": [
+    35.80693288317953,
+    {
+     "20": 36.722348846836546,
+     "30": 37.94320295973466,
+     "40": 42.72737971983586,
+     "50": 36.39788615024423,
+     "60": 29.327566910024785
+    }
+   ],
+   "gain": 0.02946238913448962,
+   "all": {
+    "opt-fire-leveling-leveling-st": [
+     36.89391578678487,
+     {
+      "20": 36.722348846836546,
+      "30": 37.94320295973466,
+      "40": 42.72737971983586,
+      "50": 37.696609021149044,
+      "60": 31.86857419628862
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

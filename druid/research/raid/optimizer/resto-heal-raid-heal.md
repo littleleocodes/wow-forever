@@ -11,23 +11,23 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 |---|---|---|---|---|
 | Moonglow | Balance | 2 | +20.13% | manual |
 | Reflection | Restoration | 3 | +11.48% | manual |
-| Living Spirit | Restoration | 5 | +4.30% | manual |
-| Tranquil Spirit | Restoration | 4 | +3.09% | manual |
+| Living Spirit | Restoration | 5 | +5.48% | manual |
+| Tranquil Spirit | Restoration | 4 | +4.89% | manual |
+| Gift of Nature | Restoration | 3 | +2.96% | manual |
+| Heart of the Wild | Feral Combat | 1 | +2.42% | manual |
 | Nature's Swiftness | Restoration | 5 | +2.40% | manual |
 | Moonkin Form | Balance | 7 | +2.24% | manual |
-| Gift of Nature | Restoration | 3 | +2.16% | manual |
 | Nature's Grace | Balance | 5 | +2.10% | manual |
 | Wild Growth | Restoration | 7 | +2.00% | manual |
-| Nature's Splendor | Balance | 3 | +1.76% | manual |
-| Heart of the Wild | Feral Combat | 1 | +1.62% | manual |
-| Nature's Majesty | Balance | 2 | +1.48% | manual |
-| Improved Rejuvenation | Restoration | 4 | +1.12% | manual |
+| Nature's Splendor | Balance | 3 | +1.78% | manual |
+| Nature's Majesty | Balance | 2 | +1.47% | manual |
+| Improved Rejuvenation | Restoration | 4 | +1.15% | manual |
 | Insect Swarm | Balance | 4 | +1.00% | manual |
-| Gift of the Earthmother | Restoration | 3 | +0.95% | manual |
+| Gift of the Earthmother | Restoration | 3 | +0.97% | manual |
 | Swiftmend | Restoration | 4 | +0.75% | manual |
 | Improved Tranquility | Restoration | 5 | +0.60% | manual |
-| Improved Regrowth | Restoration | 6 | +0.39% | manual |
-| Genesis | Balance | 1 | +0.38% | manual |
+| Improved Regrowth | Restoration | 6 | +0.40% | manual |
+| Genesis | Balance | 1 | +0.39% | manual |
 | Subtlety | Restoration | 2 | +0.30% | manual |
 | Nature's Focus | Restoration | 1 | +0.24% | manual |
 | Naturalist | Restoration | 2 | +0.17% | manual |
@@ -40,31 +40,31 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Overgrowth | Balance | 5 | +0.00% | manual |
 | Eclipse | Balance | 5 | +0.00% | manual |
 
-## Optimized build: 11/5/35  score +168.07%  (dps x1.498, sustain x3.670, surv x1.000, utility +4.70%)
+## Optimized build: 11/5/35  score +190.16%  (dps x1.617, sustain x3.993, surv x1.000, utility +3.50%)
 
 ```
-  Balance: Genesis 5, Nature's Majesty 2, Moonglow 3, Nature's Splendor 1
+  Balance: Genesis 5, Moonglow 3, Nature's Majesty 2, Nature's Splendor 1
   Feral Combat: Heart of the Wild 5
-  Restoration: Nature's Focus 5, Naturalist 5, Reflection 3, Gift of Nature 5, Gift of the Earthmother 1, Tranquil Spirit 5, Improved Rejuvenation 3, Swiftmend 1, Living Spirit 3, Nature's Swiftness 1, Improved Tranquility 2, Wild Growth 1
+  Restoration: Nature's Focus 5, Naturalist 5, Reflection 3, Gift of Nature 5, Gift of the Earthmother 1, Improved Rejuvenation 3, Tranquil Spirit 5, Swiftmend 1, Living Spirit 3, Nature's Swiftness 1, Improved Regrowth 2, Wild Growth 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Nature's Grace | Balance 5 | 1/1 | +3.15% | no |
-| Moonkin Form | Balance 7 | 1/1 | +2.48% | no |
+| Nature's Grace | Balance 5 | 1/1 | +3.39% | no |
+| Moonkin Form | Balance 7 | 1/1 | +2.54% | no |
 | Insect Swarm | Balance 4 | 1/1 | +1.00% | no |
-| Improved Regrowth | Restoration 6 | 1/5 | +0.59% | yes |
+| Improved Regrowth | Restoration 6 | 3/5 | +0.63% | yes |
+| Improved Tranquility | Restoration 5 | 1/2 | +0.60% | yes |
 | Subtlety | Restoration 2 | 1/3 | +0.30% | yes |
-| Ferocity | Feral Combat 1 | 1/5 | +0.00% | yes |
-| Feral Swiftness | Feral Combat 2 | 1/2 | +0.00% | yes |
-| Feral Instinct | Feral Combat 2 | 1/3 | +0.00% | yes |
-| Brutal Impact | Feral Combat 2 | 1/2 | +0.00% | yes |
-| Thick Hide | Feral Combat 2 | 1/3 | +0.00% | yes |
 | Improved Wrath | Balance 1 | 1/5 | +0.00% | yes |
 | Improved Moonfire | Balance 2 | 1/2 | +0.00% | yes |
 | Nature's Reach | Balance 2 | 1/2 | +0.00% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |
 | Vengeance | Balance 4 | 1/5 | +0.00% | no |
+| Improved Starfire | Balance 4 | 1/5 | +0.00% | no |
+| Overgrowth | Balance 5 | 1/2 | +0.00% | no |
+| Eclipse | Balance 5 | 1/3 | +0.00% | no |
+| Moonfury | Balance 6 | 1/5 | +0.00% | no |
 

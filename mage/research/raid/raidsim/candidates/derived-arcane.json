@@ -1,0 +1,105 @@
+{
+ "id": "derived-arcane",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ],
+   [
+    "Improved Channeling",
+    2
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Improved Frostbolt",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for arcane-dps from arcane-blast-raid in the dummy setting: 516.1 -> 517.1 DPS on a third seed.",
+ "search": {
+  "start": "arcane-blast-raid",
+  "setting": "dummy",
+  "kept": [
+   "Arcane Blast",
+   "Missile Barrage"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Improved Channeling -> Improved Frostbolt",
+    "gain_seed1": 0.0017844237352711012,
+    "gain_seed2": 0.0017811019973690279,
+    "split": "32/11/8"
+   }
+  ],
+  "dps_start": 516.1027390621324,
+  "dps_end": 517.0854387581084,
+  "gain": 0.0019040776605094845,
+  "tank": false
+ }
+}

@@ -1,4 +1,4 @@
-# Discipline — PvP (generated) — 32/3/16
+# Discipline — PvP (derived) — 32/3/16
 
 *[Priest](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Discipline pvp build with at least 30 points in Discipline, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (holy-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Discipline PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Discipline (model holy-heal, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Discipline builds agree with (11908 builds).
 
 ## Point allocation
 
@@ -24,8 +24,8 @@ The best Discipline pvp build with at least 30 points in Discipline, generated o
 | **Improved Power Word: Shield** | 3/3 | changed | Increases the damage absorbed by your Power Word: Shield by 20%. |
 | **Martyrdom** | 2/2 | changed | Gives you a 100% chance to gain Focused Casting for 6 sec after being the victim of a melee or ranged critical strike. The Focused Casting effect prevents you from losing casting time when taking damage and increases your resistance to Interrupt effects by 20%. |
 | **Inner Focus** | 1/1 | unchanged | When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect. |
-| **Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
-| **Improved Inner Fire** | 3/3 | changed | Increases the Armor bonus of your Inner Fire spell by 45% and increases its total charges by 12. |
+| **Meditation** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
+| **Improved Inner Fire** | 2/3 | changed | Increases the Armor bonus of your Inner Fire spell by 30% and increases its total charges by 8. |
 | **Soul Warding** | 1/1 | **NEW** | Reduces the cooldown on your Power Word: Shield spell by 4 sec and reduces its mana cost by 15%. |
 | **Improved Mana Burn** | 2/2 | changed | Reduces the casting time of your Mana Burn spell by 1 sec. |
 | **Penance** | 1/1 | **NEW** | Launches a volley of holy light at the target, causing 81 Holy damage to an enemy, or 184 healing to an ally, instantly and every 1 sec for 2 sec. |
@@ -43,8 +43,8 @@ The best Discipline pvp build with at least 30 points in Discipline, generated o
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Shadow Focus** | 1/5 | changed | Improves your chance to hit with Shadow spells by 1%. |
 | **Blackout** | 5/5 | moved | Gives your Shadow damage spells a 10% chance to stun the target for 3 sec. |
+| **Spirit Tap** | 1/5 | changed | Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting. |
 | **Improved Shadow Word: Pain** | 2/2 | moved | Increases the duration of your Shadow Word: Pain spell by 6 sec. |
 | **Shadow Reach** | 2/2 | changed | Increases the range of your offensive Shadow spells by 20%. |
 | **Improved Psychic Scream** | 2/2 | moved | Reduces the cooldown of your Psychic Scream spell by 4 sec. |
@@ -54,24 +54,27 @@ The best Discipline pvp build with at least 30 points in Discipline, generated o
 
 ## Core talents (priority order)
 
-1. **Vampiric Embrace** — The scorer's value in this build: +11.6% of its score (model holy-heal).
+1. **Vampiric Embrace** — The scorer's value in this build: +11.7% of its score (model holy-heal).
 2. **Renewed Hope** — The scorer's value in this build: +10.7% of its score (model holy-heal).
-3. **Silent Resolve** — The scorer's value in this build: +9.7% of its score (model holy-heal).
+3. **Silent Resolve** — The scorer's value in this build: +9.8% of its score (model holy-heal).
 4. **Penance** — The scorer's value in this build: +8.9% of its score (model holy-heal).
-5. **Mind Flay** — The scorer's value in this build: +8.8% of its score (model holy-heal).
+5. **Mind Flay** — The scorer's value in this build: +8.9% of its score (model holy-heal).
 6. **Blackout** — The scorer's value in this build: +7.0% of its score (model holy-heal).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model holy-heal, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Improved Inner Fire -> Meditation; 1 point Shadow Focus -> Spirit Tap.
+- Where we disagree with the community: most Discipline builds take Mental Strength (89% take it), Holy Specialization (85% take it), Mental Agility (79% take it), Divine Fury (79% take it), which the model values below this build's weakest point; this build takes Blackout (12%), Improved Mana Burn (19%), Improved Mind Flay (5%), Improved Psychic Scream (7%), Improved Shadow Word: Pain (10%), Mind Flay (9%), Shadow Reach (8%), Spirit Tap (11%), Vampiric Embrace (7%), which few Discipline builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 
-- A generated Discipline build: check it against the community's Discipline builds at launch.
+- A derived Discipline PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/priest>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

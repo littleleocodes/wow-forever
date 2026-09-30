@@ -1,4 +1,4 @@
-# Balance — PvP (generated) — 32/11/8
+# Balance — PvP (derived) — 32/11/8
 
 *[Druid](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Balance pvp build with at least 30 points in Balance, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (balance-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Balance PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Balance (model balance-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Balance builds agree with (2194 builds).
 
 ## Point allocation
 
@@ -23,7 +23,8 @@ The best Balance pvp build with at least 30 points in Balance, generated on 2026
 | **Moonglow** | 3/3 | changed | Reduces the Mana cost of your damaging spells by 25%. |
 | **Improved Moonfire** | 2/2 | changed | Increases the damage and critical strike chance of your Moonfire spell by 10%. |
 | **Nature's Majesty** | 2/2 | **NEW** | Increases your critical strike chance with spells and melee attacks by 4%. |
-| **Improved Entangling Roots** | 3/3 | changed | Increases the damage done by your Entangling Roots spell by 75%, and its victims can take up to 75% more damage without interrupting the effect. |
+| **Nature's Reach** | 1/2 | changed | Increases the range of your offensive Balance spells by 10% and improves your chance to hit by 2%. |
+| **Improved Entangling Roots** | 2/3 | changed | Increases the damage done by your Entangling Roots spell by 50%, and its victims can take up to 50% more damage without interrupting the effect. |
 | **Nature's Splendor** | 1/1 | **NEW** | Increases the duration of your Moonfire and Rejuvenation spells by 3 sec, your Regrowth spell by 6 sec, and your Insect Swarm spell by 2 sec. |
 | **Vengeance** | 5/5 | changed | Increases the critical strike damage bonus of your Arcane and Nature spells by 100%. |
 | **Improved Starfire** | 5/5 | changed | Reduces the cast time of Starfire by 0.5 sec and Starfire has a 15% chance to stun its target for 3 sec. |
@@ -51,24 +52,27 @@ The best Balance pvp build with at least 30 points in Balance, generated on 2026
 
 ## Core talents (priority order)
 
-1. **Improved Starfire** — The scorer's value in this build: +13.5% of its score (model balance-dps).
-2. **Vengeance** — The scorer's value in this build: +12.9% of its score (model balance-dps).
-3. **Moonkin Form** — The scorer's value in this build: +11.1% of its score (model balance-dps).
-4. **Eclipse** — The scorer's value in this build: +10.9% of its score (model balance-dps).
-5. **Feral Swiftness** — The scorer's value in this build: +9.1% of its score (model balance-dps).
-6. **Nature's Focus** — The scorer's value in this build: +6.8% of its score (model balance-dps).
+1. **Improved Starfire** — The scorer's value in this build: +13.6% of its score (model balance-dps).
+2. **Vengeance** — The scorer's value in this build: +13.0% of its score (model balance-dps).
+3. **Moonkin Form** — The scorer's value in this build: +11.3% of its score (model balance-dps).
+4. **Eclipse** — The scorer's value in this build: +11.1% of its score (model balance-dps).
+5. **Feral Swiftness** — The scorer's value in this build: +9.2% of its score (model balance-dps).
+6. **Nature's Focus** — The scorer's value in this build: +6.9% of its score (model balance-dps).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model balance-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Improved Entangling Roots -> Nature's Reach.
+- Where we disagree with the community: most Balance builds take Insect Swarm (91% take it), which the model values below this build's weakest point; this build takes Brutal Impact (10%), Feral Charge (9%), Feral Instinct (5%), Feral Swiftness (10%), which few Balance builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 
-- A generated Balance build: check it against the community's Balance builds at launch.
+- A derived Balance PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/druid>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

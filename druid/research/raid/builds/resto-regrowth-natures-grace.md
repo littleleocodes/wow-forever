@@ -1,4 +1,4 @@
-# Restoration / Balance — Regrowth / Nature's Grace (21/0/30) — 21/0/30
+# Restoration — Regrowth / Nature's Grace, with a Balance dip (21/0/30) — 21/0/30
 
 *[Druid](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -74,6 +74,7 @@ A healer: not in the community simulator, see the healer lab section of the [rai
 
 - Loses Wild Growth, Living Spirit 3 and Tranquil Spirit versus the deep Restoration build.
 - Beta client 1.60.1.69893 removed Balance of Nature: its 1 gating point moved to Improved Wrath.
+- 2026-09-30: renamed from "Restoration / Balance — Regrowth / Nature's Grace (21/0/30)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

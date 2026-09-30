@@ -1,4 +1,4 @@
-# Destruction — Leveling (generated) — 21/0/30
+# Destruction — Leveling (derived) — 21/0/30
 
 *[Warlock](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Destruction leveling build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Destruction leveling build derived on 2026-09-30 (derive_leveling.py): searched in the fight lab at level 60 from the fastest of the spec's builds and the stats model's best Destruction build, 30+ points kept in Destruction, playing the destruction-leveling rotation; the talent order is the stats model's (affliction-leveling).
 
 ## Point allocation
 
@@ -40,10 +40,10 @@ The best Destruction leveling build with at least 30 points in Destruction, gene
 | **Molten Skin** | 5/5 | **NEW** | Reduces all damage taken by 10%. |
 | **Aftermath** | 5/5 | changed | Increases the initial damage of your Immolate spell by 50% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
-| **Shadowburn** | 1/1 | changed | Instantly blasts the target for 65 to 73 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard. |
 | **Intensity** | 3/3 | changed | Gives you a 70% chance to resist interruption caused by damage while casting or channeling any Destruction spell. |
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
 | **Conflagrate** | 1/1 | changed | Ignites a target that is already afflicted by your Immolate spell, dealing 88 to 110 Fire damage and consuming your Immolate effect. |
+| **Fire and Brimstone** | 1/3 | **NEW** | Increases the critical strike chance of your Conflagrate spell by 8%. |
 
 ## Leveling order
 
@@ -52,8 +52,8 @@ The best Destruction leveling build with at least 30 points in Destruction, gene
 | 10-14 | Affliction | Improved Corruption | 5 | 5/0/0 |
 | 15-19 | Affliction | Malediction | 5 | 10/0/0 |
 | 20 | Affliction | Amplify Curse | 1 | 11/0/0 |
-| 21-23 | Affliction | Pandemic | 3 | 14/0/0 |
-| 24-25 | Affliction | Improved Bane of Agony | 2 | 16/0/0 |
+| 21-22 | Affliction | Improved Bane of Agony | 2 | 13/0/0 |
+| 23-25 | Affliction | Pandemic | 3 | 16/0/0 |
 | 26-29 | Affliction | Malevolence | 4 | 20/0/0 |
 | 30 | Affliction | Siphon Life | 1 | 21/0/0 |
 | 31-35 | Destruction | Bane | 5 | 21/0/5 |
@@ -64,16 +64,16 @@ The best Destruction leveling build with at least 30 points in Destruction, gene
 | 54-55 | Destruction | Destructive Reach | 2 | 21/0/25 |
 | 56-58 | Destruction | Intensity | 3 | 21/0/28 |
 | 59 | Destruction | Conflagrate | 1 | 21/0/29 |
-| 60 | Destruction | Shadowburn | 1 | 21/0/30 |
+| 60 | Destruction | Fire and Brimstone | 1 | 21/0/30 |
 
 ## Core talents (priority order)
 
-1. **Siphon Life** — The scorer's value in this build: +40.9% of its score (model affliction-leveling).
-2. **Pandemic** — The scorer's value in this build: +12.4% of its score (model affliction-leveling).
-3. **Improved Corruption** — The scorer's value in this build: +8.5% of its score (model affliction-leveling).
-4. **Malediction** — The scorer's value in this build: +8.0% of its score (model affliction-leveling).
-5. **Malevolence** — The scorer's value in this build: +6.6% of its score (model affliction-leveling).
-6. **Amplify Curse** — The scorer's value in this build: +5.4% of its score (model affliction-leveling).
+1. **Siphon Life** — The scorer's value in this build: +42.7% of its score (model affliction-leveling).
+2. **Improved Corruption** — The scorer's value in this build: +8.7% of its score (model affliction-leveling).
+3. **Malediction** — The scorer's value in this build: +8.0% of its score (model affliction-leveling).
+4. **Molten Skin** — The scorer's value in this build: +7.9% of its score (model affliction-leveling).
+5. **Pandemic** — The scorer's value in this build: +6.9% of its score (model affliction-leveling).
+6. **Malevolence** — The scorer's value in this build: +5.2% of its score (model affliction-leveling).
 
 ## Leveling rotation
 
@@ -81,12 +81,12 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.
-- Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued.
+- Fight-lab talent search (fightlab/fl_talent_opt.py): start destruction-leveling, moves: 1 point Shadowburn -> Fire and Brimstone. Race against destruction-leveling over levels 20-60 (seed 3, 3000 fights per level): +0.4% faster per kill.
+- Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)
 
-- A generated Destruction build: check it against the community's Destruction builds at launch.
+- A derived Destruction leveling build: check it while leveling at launch.
 
 ## Sources
 

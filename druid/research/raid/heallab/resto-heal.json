@@ -1,10 +1,10 @@
 {
  "class": "druid",
  "spec": "resto-heal",
- "date": "2026-09-28",
+ "date": "2026-09-30",
  "runs": 60,
  "steps": 10,
- "seconds": 118,
+ "seconds": 174,
  "assumptions": {
   "DURATION": 300.0,
   "TANK_HP": 9000.0,
@@ -31,6 +31,58 @@
  },
  "results": {
   "resto-raid-healer": {
+   "split": "11/5/35",
+   "capacity": 0.7503173828125002,
+   "summary": {
+    "multiplier": 0.7503173828125002,
+    "shares": {
+     "Healing Touch": 0.6631232802943449,
+     "Regrowth": 0.2122708868533146,
+     "Rejuvenation": 0.1147279909067217,
+     "Swiftmend": 0.009877841945618965
+    },
+    "hps": 453.14698973142123,
+    "overheal_share": 0.08513294440379558,
+    "oom_time": 14.826666666666695,
+    "mana_left": 599.0598666666721,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 8014,
+    "crit": 0.1139
+   }
+  },
+  "opt-resto-heal-raid-heal": {
+   "split": "11/5/35",
+   "capacity": 0.7503173828125002,
+   "summary": {
+    "multiplier": 0.7503173828125002,
+    "shares": {
+     "Healing Touch": 0.6631232802943449,
+     "Regrowth": 0.2122708868533146,
+     "Rejuvenation": 0.1147279909067217,
+     "Swiftmend": 0.009877841945618965
+    },
+    "hps": 453.14698973142123,
+    "overheal_share": 0.08513294440379558,
+    "oom_time": 14.826666666666695,
+    "mana_left": 599.0598666666721,
+    "survival": 0.8333333333333334
+   },
+   "stats": {
+    "intellect": 451,
+    "spirit": 445,
+    "healing": 370,
+    "mp5": 45,
+    "mana": 8014,
+    "crit": 0.1139
+   }
+  },
+  "cand-resto-heal-hand-2026-09-28": {
    "split": "11/0/40",
    "capacity": 0.7265136718750002,
    "summary": {
@@ -42,9 +94,9 @@
      "Swiftmend": 0.009682175913558431
     },
     "hps": 436.73138389053713,
-    "overheal_share": 0.09679153628008434,
-    "oom_time": 13.216666666666693,
-    "mana_left": 664.933100000003,
+    "overheal_share": 0.09679153628008436,
+    "oom_time": 13.216666666666695,
+    "mana_left": 664.9331000000032,
     "survival": 0.8
    },
    "stats": {
@@ -56,44 +108,18 @@
     "crit": 0.107
    }
   },
-  "opt-resto-heal-raid-heal": {
-   "split": "11/5/35",
-   "capacity": 0.749365234375,
-   "summary": {
-    "multiplier": 0.749365234375,
-    "shares": {
-     "Healing Touch": 0.6722356785319518,
-     "Regrowth": 0.204994617251297,
-     "Rejuvenation": 0.11449306520237613,
-     "Swiftmend": 0.008276639014375111
-    },
-    "hps": 450.6000590121877,
-    "overheal_share": 0.07894256386230876,
-    "oom_time": 13.101666666666688,
-    "mana_left": 646.7516333333388,
-    "survival": 0.8166666666666667
-   },
-   "stats": {
-    "intellect": 451,
-    "spirit": 445,
-    "healing": 370,
-    "mp5": 45,
-    "mana": 8014,
-    "crit": 0.1139
-   }
-  },
   "cand-resto-r1": {
    "split": "11/5/35",
    "capacity": 0.749365234375,
    "summary": {
     "multiplier": 0.749365234375,
     "shares": {
-     "Healing Touch": 0.6722356785319518,
-     "Regrowth": 0.204994617251297,
-     "Rejuvenation": 0.11449306520237613,
-     "Swiftmend": 0.008276639014375111
+     "Healing Touch": 0.6722356785319517,
+     "Regrowth": 0.20499461725129697,
+     "Rejuvenation": 0.11449306520237611,
+     "Swiftmend": 0.00827663901437511
     },
-    "hps": 450.6000590121877,
+    "hps": 450.6000590121878,
     "overheal_share": 0.07894256386230876,
     "oom_time": 13.101666666666688,
     "mana_left": 646.7516333333388,
@@ -114,14 +140,14 @@
    "summary": {
     "multiplier": 0.7503173828125002,
     "shares": {
-     "Healing Touch": 0.6631232802943448,
-     "Regrowth": 0.21227088685331455,
-     "Rejuvenation": 0.11472799090672167,
-     "Swiftmend": 0.009877841945618963
+     "Healing Touch": 0.6631232802943449,
+     "Regrowth": 0.2122708868533146,
+     "Rejuvenation": 0.1147279909067217,
+     "Swiftmend": 0.009877841945618965
     },
-    "hps": 453.14698973142134,
-    "overheal_share": 0.08513294440379557,
-    "oom_time": 14.8266666666667,
+    "hps": 453.14698973142123,
+    "overheal_share": 0.08513294440379558,
+    "oom_time": 14.826666666666695,
     "mana_left": 599.0598666666721,
     "survival": 0.8333333333333334
    },
@@ -140,154 +166,154 @@
    {
     "talent": "Genesis",
     "ranks": 5,
-    "sim_delta": 0.021418274181369035,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.711279296875,
-    "ev_delta": 0.013408675269211441,
+    "sim_delta": 0.0029697800404677485,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7480957031249998,
+    "ev_delta": 0.012643646723349338,
     "simulated": true
    },
    {
     "talent": "Gift of Nature",
     "ranks": 5,
-    "sim_delta": 0.05873981570427308,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.6862060546875001,
-    "ev_delta": 0.056348565422680956,
+    "sim_delta": 0.0760100833274982,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.6973144531250001,
+    "ev_delta": 0.0707283971635032,
     "simulated": true
    },
    {
     "talent": "Gift of the Earthmother",
     "ranks": 1,
-    "sim_delta": 0.021418274181369035,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.711279296875,
-    "ev_delta": 0.006823228573871826,
+    "sim_delta": 0.0029697800404677485,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7480957031249998,
+    "ev_delta": 0.0064363173350891105,
+    "simulated": true
+   },
+   {
+    "talent": "Heart of the Wild",
+    "ranks": 5,
+    "sim_delta": 0.04647916099155543,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7169921875000002,
+    "ev_delta": 0.04585263194556807,
     "simulated": true
    },
    {
     "talent": "Improved Regrowth",
-    "ranks": 5,
-    "sim_delta": 0.01327976028330155,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7169921875000002,
-    "ev_delta": 0.01119765678730173,
+    "ranks": 2,
+    "sim_delta": 0.0012706066332183962,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.749365234375,
+    "ev_delta": 0.0043742364551299295,
     "simulated": true
    },
    {
     "talent": "Improved Rejuvenation",
     "ranks": 3,
-    "sim_delta": 0.009704125950054255,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7195312500000002,
-    "ev_delta": 0.019356176400134283,
+    "sim_delta": 0.023819041908188416,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7328613281250002,
+    "ev_delta": 0.019351657102754678,
     "simulated": true
    },
    {
     "talent": "Living Spirit",
     "ranks": 3,
-    "sim_delta": 0.05532307255833746,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.6884277343750002,
-    "ev_delta": 0.05179176407484949,
+    "sim_delta": 0.06151561204752706,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7068359375000001,
+    "ev_delta": 0.060045690618785126,
     "simulated": true
    },
    {
     "talent": "Moonglow",
     "ranks": 3,
-    "sim_delta": 0.29540309942538756,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.5608398437500001,
-    "ev_delta": 0.31613505053122715,
+    "sim_delta": 0.33181660599757307,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.5633789062500002,
+    "ev_delta": 0.2768707654393438,
     "simulated": true
    },
    {
     "talent": "Naturalist",
     "ranks": 5,
-    "sim_delta": 0.0039472352484734895,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7236572265625001,
-    "ev_delta": 0.0043450816721473835,
+    "sim_delta": 0.012419291079193507,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7411132812500002,
+    "ev_delta": 0.004182865695824572,
     "simulated": true
    },
    {
     "talent": "Nature's Focus",
     "ranks": 5,
     "sim_delta": 0.0,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7265136718750002,
-    "ev_delta": 0.006910851253542744,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7503173828125002,
+    "ev_delta": 0.006598021977667044,
     "simulated": false
    },
    {
     "talent": "Nature's Majesty",
     "ranks": 2,
-    "sim_delta": 0.0,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7265136718750002,
-    "ev_delta": 0.015066257962175358,
+    "sim_delta": 0.011552893160423903,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7417480468750002,
+    "ev_delta": 0.014582131305954104,
     "simulated": true
    },
    {
     "talent": "Nature's Splendor",
     "ranks": 1,
-    "sim_delta": 0.02416024229074899,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7093750000000001,
-    "ev_delta": 0.009378644169686885,
+    "sim_delta": 0.004247949547430288,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7471435546874999,
+    "ev_delta": 0.008686551502136538,
     "simulated": true
    },
    {
     "talent": "Nature's Swiftness",
     "ranks": 1,
-    "sim_delta": 0.0013122917998588599,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7255615234375,
-    "ev_delta": 0.011019704694024319,
+    "sim_delta": 0.015463406575252,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7388916015625001,
+    "ev_delta": 0.010213192096379213,
     "simulated": true
    },
    {
     "talent": "Reflection",
     "ranks": 3,
-    "sim_delta": 0.37641073080481063,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.52783203125,
-    "ev_delta": 0.14790811174604399,
+    "sim_delta": 0.431839358926575,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.5240234375,
+    "ev_delta": 0.1316273940433818,
     "simulated": true
-   },
-   {
-    "talent": "Subtlety",
-    "ranks": 2,
-    "sim_delta": 0.0,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7265136718750002,
-    "ev_delta": 0.0022959282253437823,
-    "simulated": false
    },
    {
     "talent": "Swiftmend",
     "ranks": 1,
-    "sim_delta": 0.02416024229074899,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7093750000000001,
-    "ev_delta": 0.004104699191004704,
+    "sim_delta": 0.002544446256728162,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7484130859375001,
+    "ev_delta": 0.0038932987978302657,
     "simulated": true
    },
    {
     "talent": "Tranquil Spirit",
     "ranks": 5,
-    "sim_delta": 0.09259803201644891,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.6649414062500001,
-    "ev_delta": 0.06269648395754261,
+    "sim_delta": 0.09748955469056884,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.6836669921875002,
+    "ev_delta": 0.09201461860538522,
     "simulated": true
    },
    {
     "talent": "Wild Growth",
     "ranks": 1,
     "sim_delta": 0.0,
-    "cap_with": 0.7265136718750002,
-    "cap_without": 0.7265136718750002,
-    "ev_delta": 0.007694313799676376,
+    "cap_with": 0.7503173828125002,
+    "cap_without": 0.7503173828125002,
+    "ev_delta": 0.0069406947145545525,
     "simulated": true
    }
   ]

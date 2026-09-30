@@ -1,4 +1,4 @@
-# Restoration — PvP (generated) — 0/20/31
+# Restoration — PvP (derived) — 0/20/31
 
 *[Shaman](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Restoration pvp build with at least 30 points in Restoration, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (resto-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The Restoration PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Restoration (model resto-heal, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Restoration builds agree with (1730 builds).
 
 ## Point allocation
 
@@ -37,11 +37,13 @@ The best Restoration pvp build with at least 30 points in Restoration, generated
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Healing Wave** | 5/5 | changed | Reduces the casting time of your Healing Wave spell by 0.5 sec. |
+| **Mindfulness** | 2/3 | **NEW** | Allows 33% of your Mana regeneration to continue while casting. |
 | **Tidal Focus** | 4/5 | changed | Reduces the Mana cost of your healing spells by 4% and improves your chance to hit by 4%. |
 | **Improved Reincarnation** | 2/2 | changed | Reduces the cooldown of your Reincarnation spell by 20 min, increases your maximum health by 4%, and increases the amount of health and Mana you reincarnate with by an additional 20%. |
-| **Ancestral Healing** | 2/3 | moved | Increases your target's armor value by 17% for 15 sec after getting a critical effect from one of your healing spells. |
+| **Ancestral Healing** | 3/3 | moved | Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells. |
 | **Healing Focus** | 3/3 | changed | Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell. |
-| **Restorative Totems** | 5/5 | changed | Increases the effect of your Mana Spring Totem by 25% and increases the effect of your Healing Stream Totem by 50%. |
+| **Restorative Totems** | 1/5 | changed | Increases the effect of your Mana Spring Totem by 5% and increases the effect of your Healing Stream Totem by 10%. |
+| **Mana Tide Totem** | 1/1 | changed | Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 88 mana every 3 seconds to group members within 30 yards. |
 | **Healing Way** | 3/3 | changed | Increases the amount healed by your Healing Wave spell by 25%. |
 | **Nature's Swiftness** | 1/1 | unchanged | When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell. |
 | **Purification** | 5/5 | unchanged | Increases the effectiveness of your healing spells by 10%. |
@@ -49,24 +51,27 @@ The best Restoration pvp build with at least 30 points in Restoration, generated
 
 ## Core talents (priority order)
 
-1. **Riptide** — The scorer's value in this build: +16.9% of its score (model resto-heal).
-2. **Healing Way** — The scorer's value in this build: +16.8% of its score (model resto-heal).
-3. **Improved Healing Wave** — The scorer's value in this build: +14.0% of its score (model resto-heal).
-4. **Purification** — The scorer's value in this build: +9.1% of its score (model resto-heal).
-5. **Nature's Swiftness** — The scorer's value in this build: +8.7% of its score (model resto-heal).
-6. **Improved Ghost Wolf** — The scorer's value in this build: +7.7% of its score (model resto-heal).
+1. **Healing Way** — The scorer's value in this build: +17.0% of its score (model resto-heal).
+2. **Riptide** — The scorer's value in this build: +16.9% of its score (model resto-heal).
+3. **Improved Healing Wave** — The scorer's value in this build: +14.2% of its score (model resto-heal).
+4. **Purification** — The scorer's value in this build: +9.0% of its score (model resto-heal).
+5. **Nature's Swiftness** — The scorer's value in this build: +8.8% of its score (model resto-heal).
+6. **Improved Ghost Wolf** — The scorer's value in this build: +7.8% of its score (model resto-heal).
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model resto-heal, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Community tie-break moves: 1 point Restorative Totems -> Mana Tide Totem; 2 points Restorative Totems -> Mindfulness; 1 point Restorative Totems -> Ancestral Healing.
+- Where we disagree with the community: most Restoration builds take Water Shield (96% take it), Tidal Mastery (88% take it), Ancestral Knowledge (85% take it), which the model values below this build's weakest point; this build takes Anticipation (7%), Earth's Grasp (5%), Guardian Totems (18%), Toughness (8%), which few Restoration builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.
+- PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 
-- A generated Restoration build: check it against the community's Restoration builds at launch.
+- A derived Restoration PvP build: check it in duels and battlegrounds at launch.
 
 ## Sources
 
 - <https://talentsforever.com/shaman>
+- <https://talentsforever.com/popular.js>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

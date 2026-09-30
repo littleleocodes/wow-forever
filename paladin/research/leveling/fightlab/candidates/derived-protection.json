@@ -1,0 +1,338 @@
+{
+ "id": "fl-protection-prot-leveling",
+ "allocation": {
+  "Holy": [],
+  "Protection": [
+   [
+    "Toughness",
+    1
+   ],
+   [
+    "Redoubt",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Anticipation",
+    2
+   ],
+   [
+    "Improved Seal of Fury",
+    1
+   ],
+   [
+    "Shield Specialization",
+    3
+   ],
+   [
+    "Sacred Duty",
+    2
+   ],
+   [
+    "Swift Judgement",
+    1
+   ],
+   [
+    "Improved Hammer of Justice",
+    3
+   ],
+   [
+    "Templar's Bulwark",
+    1
+   ],
+   [
+    "One-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Holy Shield",
+    1
+   ],
+   [
+    "Reckoning",
+    5
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Pursuit of Justice",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Retribution",
+   "talent": "Benediction",
+   "points": 5
+  },
+  {
+   "levels": "15-16",
+   "tree": "Retribution",
+   "talent": "Holy Conduit",
+   "points": 2
+  },
+  {
+   "levels": "17-18",
+   "tree": "Retribution",
+   "talent": "Improved Judgement",
+   "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 1
+  },
+  {
+   "levels": "20",
+   "tree": "Retribution",
+   "talent": "Seal of Command",
+   "points": 1
+  },
+  {
+   "levels": "21",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Retribution",
+   "talent": "Pursuit of Justice",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Retribution",
+   "talent": "Sanctified Judgement",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Retribution",
+   "talent": "Sacred Arbiter",
+   "points": 1
+  },
+  {
+   "levels": "26-29",
+   "tree": "Retribution",
+   "talent": "Conviction",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Protection",
+   "talent": "Toughness",
+   "points": 1
+  },
+  {
+   "levels": "31-34",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 4
+  },
+  {
+   "levels": "35-37",
+   "tree": "Protection",
+   "talent": "Precision",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Protection",
+   "talent": "Anticipation",
+   "points": 2
+  },
+  {
+   "levels": "40-41",
+   "tree": "Protection",
+   "talent": "Sacred Duty",
+   "points": 2
+  },
+  {
+   "levels": "42",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "43",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "44",
+   "tree": "Protection",
+   "talent": "Improved Seal of Fury",
+   "points": 1
+  },
+  {
+   "levels": "45",
+   "tree": "Protection",
+   "talent": "Swift Judgement",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Protection",
+   "talent": "Improved Hammer of Justice",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Protection",
+   "talent": "Templar's Bulwark",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "52-54",
+   "tree": "Protection",
+   "talent": "One-Handed Weapon Specialization",
+   "points": 3
+  },
+  {
+   "levels": "55-59",
+   "tree": "Protection",
+   "talent": "Reckoning",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Protection",
+   "talent": "Holy Shield",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "prot-leveling",
+  "model": "ret-dps",
+  "tree": "Protection",
+  "start": "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-protection-scorer.json",
+  "starts": {
+   "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-protection-scorer.json": 39.41183829401579
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Toughness -> One-Handed Weapon Specialization",
+    "gain_seed1": 0.07082486883120476,
+    "gain_seed2": 0.06427886539754657
+   },
+   {
+    "round": 2,
+    "move": "1 point Sacred Arbiter -> Holy Conduit",
+    "gain_seed1": 0.013968559519146884,
+    "gain_seed2": 0.020513302147811774
+   },
+   {
+    "round": 3,
+    "move": "1 point Two-Handed Weapon Specialization -> Holy Shield",
+    "gain_seed1": 0.039080067230871096,
+    "gain_seed2": 0.04282430008434002
+   },
+   {
+    "round": 4,
+    "move": "3 points Anticipation -> Reckoning",
+    "gain_seed1": 0.020171551602068405,
+    "gain_seed2": 0.018976932911556
+   },
+   {
+    "round": 5,
+    "move": "2 points Guardian's Favor -> Reckoning",
+    "gain_seed1": 0.017459767584948716,
+    "gain_seed2": 0.01572955914543872
+   },
+   {
+    "round": 6,
+    "move": "1 point Pursuit of Justice -> Sacred Arbiter",
+    "gain_seed1": 0.011769588320134083,
+    "gain_seed2": 0.009811688975003507
+   }
+  ],
+  "incumbent": "derived-protection-scorer",
+  "race": {
+   "incumbent": [
+    34.98942216402024,
+    {
+     "20": 24.95899968820134,
+     "30": 30.729266697722423,
+     "40": 39.14157955693404,
+     "50": 32.97948327420873,
+     "60": 39.36981820200918
+    }
+   ],
+   "search": [
+    32.83409700136683,
+    {
+     "20": 25.025684785078294,
+     "30": 30.34707638434113,
+     "40": 38.85651508926663,
+     "50": 32.250685150585845,
+     "60": 33.15164253236013
+    }
+   ],
+   "gain": 0.06159933572351883,
+   "all": {
+    "derived-protection-scorer": [
+     34.98942216402024,
+     {
+      "20": 24.95899968820134,
+      "30": 30.729266697722423,
+      "40": 39.14157955693404,
+      "50": 32.97948327420873,
+      "60": 39.36981820200918
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

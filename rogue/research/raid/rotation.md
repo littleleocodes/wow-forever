@@ -101,28 +101,28 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 403 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 399 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 394 DPS), *Backstab* (community simulator, 371 DPS), *Improved Expose Armor (SS)* (community simulator, 347 DPS), *Sinister Strike* (community simulator, 334 DPS)
+### [`combat-raid`](builds/combat-raid.md) (ours: hand draft, 422 DPS), [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (ours: optimizer, 403 DPS), [`combat-daggers-raid`](builds/combat-daggers-raid.md) (ours: hand draft, 399 DPS), *Combat Dual-Wield 15/33/3* (community simulator, 394 DPS), *Backstab* (community simulator, 371 DPS), *Improved Expose Armor (SS)* (community simulator, 347 DPS), *Sinister Strike* (community simulator, 334 DPS)
 
-| # | Priority (the first line whose condition holds is cast) | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) casts/min | [`combat-daggers-raid`](builds/combat-daggers-raid.md) casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min | *Improved Expose Armor (SS)* casts/min | *Sinister Strike* casts/min |
-|---|---|---|---|---|---|---|---|
-| 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 | 1.7 | 1.7 | 1.5 | 1.4 | 1.1 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 | 2.7 | 2.7 | 3.1 | 2.5 | 2.8 |
-| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
-| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 | 0.5 | 0.5 | 0.3 | 0.4 | 0.2 |
-| 6 | cast Backstab | 11.8 | 11.9 | 11.9 | 10.4 | 12.3 | 11.7 |
+| # | Priority (the first line whose condition holds is cast) | [`combat-raid`](builds/combat-raid.md) casts/min | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) casts/min | [`combat-daggers-raid`](builds/combat-daggers-raid.md) casts/min | *Combat Dual-Wield 15/33/3* casts/min | *Backstab* casts/min | *Improved Expose Armor (SS)* casts/min | *Sinister Strike* casts/min |
+|---|---|---|---|---|---|---|---|---|
+| 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 | 1.7 | 1.7 | 1.7 | 1.5 | 1.4 | 1.1 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 | 2.7 | 2.7 | 2.7 | 3.1 | 2.5 | 2.8 |
+| 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 | 0.3 |
+| 4 | if Slice and Dice is up: use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready | as ready | as ready |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.2 | 0.5 | 0.5 | 0.5 | 0.3 | 0.4 | 0.2 |
+| 6 | cast Backstab | 12.3 | 11.8 | 11.9 | 11.9 | 10.4 | 12.3 | 11.7 |
 
 Damage by ability:
 
-| Ability | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | *Combat Dual-Wield 15/33/3* | *Backstab* | *Improved Expose Armor (SS)* | *Sinister Strike* |
-|---|---|---|---|---|---|---|
-| Auto Attack | 47% | 47% | 48% | 50% | 52% | 53% |
-| Backstab | 37% | 37% | 36% | 35% | 31% | 31% |
-| Deadly Poison | 6% | 6% | 6% | 7% | 7% | 8% |
-| Dense Sharpening Stone | 3% | 3% | 3% | 3% | 4% | 4% |
-| Eviscerate | 3% | 3% | 3% | 2% | 2% | 1% |
-| Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% |
-| Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% | 2% |
+| Ability | [`combat-raid`](builds/combat-raid.md) | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | *Combat Dual-Wield 15/33/3* | *Backstab* | *Improved Expose Armor (SS)* | *Sinister Strike* |
+|---|---|---|---|---|---|---|---|
+| Auto Attack | 45% | 47% | 47% | 48% | 50% | 52% | 53% |
+| Backstab | 35% | 37% | 37% | 36% | 35% | 31% | 31% |
+| Deadly Poison | 6% | 6% | 6% | 6% | 7% | 7% | 8% |
+| Eviscerate | 6% | 3% | 3% | 3% | 2% | 2% | 1% |
+| Dense Sharpening Stone | 3% | 3% | 3% | 3% | 3% | 4% | 4% |
+| Dragonbreath Chili | 2% | 2% | 2% | 2% | 2% | 2% | 2% |
+| Goblin Sapper Charge | 2% | 2% | 2% | 2% | 2% | 2% | 2% |
 
 ### *Mutilate* (community simulator, 371 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS), *Subtlety Hemo 15/0/36* (community simulator, 258 DPS)
 

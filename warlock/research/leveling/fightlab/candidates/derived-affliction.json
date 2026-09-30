@@ -1,0 +1,222 @@
+{
+ "id": "fl-affliction-affliction-leveling",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Malediction",
+    5
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ],
+   [
+    "Siphon Life",
+    1
+   ],
+   [
+    "Soul Siphon",
+    3
+   ],
+   [
+    "Shadow Mastery",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Demonic Energies",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Molten Skin",
+    5
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23-25",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 3
+  },
+  {
+   "levels": "26-29",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "31",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 1
+  },
+  {
+   "levels": "32-34",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 3
+  },
+  {
+   "levels": "35-39",
+   "tree": "Affliction",
+   "talent": "Shadow Mastery",
+   "points": 5
+  },
+  {
+   "levels": "40-41",
+   "tree": "Affliction",
+   "talent": "Malevolence",
+   "points": 2
+  },
+  {
+   "levels": "42-46",
+   "tree": "Demonology",
+   "talent": "Unholy Power",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Affliction",
+   "talent": "Soul Siphon",
+   "points": 3
+  },
+  {
+   "levels": "50-54",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 5
+  },
+  {
+   "levels": "55-59",
+   "tree": "Destruction",
+   "talent": "Molten Skin",
+   "points": 5
+  },
+  {
+   "levels": "60",
+   "tree": "Demonology",
+   "talent": "Demonic Energies",
+   "points": 1
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "affliction-leveling",
+  "model": "affliction-leveling",
+  "tree": "Affliction",
+  "start": "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-affliction-scorer.json",
+  "starts": {
+   "affliction-leveling": 41.42661111850472,
+   "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-affliction-scorer.json": 41.395857990207745
+  },
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Aftermath -> Demonic Energies",
+    "gain_seed1": 0.014495156447411173,
+    "gain_seed2": 0.012784953902758911
+   }
+  ],
+  "incumbent": "affliction-leveling",
+  "race": {
+   "incumbent": [
+    37.67418594538249,
+    {
+     "20": 25.5967999999917,
+     "30": 32.507698766509776,
+     "40": 38.65560276047234,
+     "50": 40.53739542227831,
+     "60": 41.24293907580938
+    }
+   ],
+   "search": [
+    37.53106700764367,
+    {
+     "20": 25.5967999999917,
+     "30": 32.46375513232241,
+     "40": 38.727111100000165,
+     "50": 40.53739542227831,
+     "60": 40.74017554075509
+    }
+   ],
+   "gain": 0.0037988594616563676,
+   "all": {
+    "affliction-leveling": [
+     37.67418594538249,
+     {
+      "20": 25.5967999999917,
+      "30": 32.507698766509776,
+      "40": 38.65560276047234,
+      "50": 40.53739542227831,
+      "60": 41.24293907580938
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}
