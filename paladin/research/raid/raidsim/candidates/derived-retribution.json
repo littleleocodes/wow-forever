@@ -1,0 +1,102 @@
+{
+ "id": "derived-retribution",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    3
+   ],
+   [
+    "Improved Seals",
+    3
+   ]
+  ],
+  "Protection": [
+   [
+    "Toughness",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ]
+  ],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    1
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Instrument of Law",
+    2
+   ],
+   [
+    "Twist of Light",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for ret-dps from opt-ret-dps-raid-dps in the dummy setting: 350.4 -> 353.3 DPS on a third seed.",
+ "search": {
+  "start": "opt-ret-dps-raid-dps",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Vindication -> Divine Intellect",
+    "gain_seed1": 0.007524924214088458,
+    "gain_seed2": 0.00811714115201223,
+    "split": "11/8/32"
+   }
+  ],
+  "dps_start": 350.3646924172071,
+  "dps_end": 353.31999407121543,
+  "gain": 0.008434929997139129,
+  "tank": false
+ }
+}
