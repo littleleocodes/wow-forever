@@ -5,7 +5,7 @@
 Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The builds below rest on the talents' descriptions and the community's PvP builds.
 
 - [Beast Mastery](beast-mastery.md) — Beast Mastery — PvP ⚗: 31/2/18
-- [Marksmanship](marksmanship.md) — Marksmanship / Survival: 0/31/20
+- [Marksmanship](marksmanship.md) — Marksmanship with Survival support: 0/31/20
 - [Survival](survival.md) — Survival — PvP ⚗: 0/21/30
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

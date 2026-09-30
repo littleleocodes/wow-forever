@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.
 
 ## Point allocation
 
@@ -20,8 +20,9 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
-| **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
+| **Endurance Training** | 1/5 | changed | Increases the Health and Armor of your pets by 3%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
+| **Improved Revive Pet** | 2/2 | unchanged | Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%. |
 | **Bestial Swiftness** | 1/1 | changed | Increases the movement speed of your pets by 30%. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
@@ -47,7 +48,7 @@ The best Beast Mastery raid build with at least 30 points in Beast Mastery, gene
 
 ## Core talents (priority order)
 
-1. **Summon Hawk** — The scorer's value in this build: +23.6% of its score (model bm-leveling).
+1. **Summon Hawk** — The scorer's value in this build: +23.5% of its score (model bm-leveling).
 2. **Mortal Shots** — The scorer's value in this build: +15.8% of its score (model bm-leveling).
 3. **Unleashed Fury** — The scorer's value in this build: +14.4% of its score (model bm-leveling).
 4. **Improved Stings** — The scorer's value in this build: +13.7% of its score (model bm-leveling).
@@ -104,8 +105,7 @@ Damage by ability:
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.
-- 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed.
+- Generated 2026-09-30 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.
 
 ## Open questions (verify in the live game)
 

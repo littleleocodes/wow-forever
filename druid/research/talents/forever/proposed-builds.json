@@ -90,7 +90,7 @@
     },
     {
       "id": "resto-regrowth-natures-grace",
-      "name": "Restoration / Balance — Regrowth / Nature's Grace (21/0/30)",
+      "name": "Restoration — Regrowth / Nature's Grace, with a Balance dip (21/0/30)",
       "role": "healer",
       "content": "raid",
       "tier": "draft",
@@ -140,7 +140,7 @@
           "why": "Balance gating fillers between tier 2 and Nature's Grace."
         }
       ],
-      "notes": ["Loses Wild Growth, Living Spirit 3 and Tranquil Spirit versus the deep Restoration build.", "Beta client 1.60.1.69893 removed Balance of Nature: its 1 gating point moved to Improved Wrath."],
+      "notes": ["Loses Wild Growth, Living Spirit 3 and Tranquil Spirit versus the deep Restoration build.", "Beta client 1.60.1.69893 removed Balance of Nature: its 1 gating point moved to Improved Wrath.", "2026-09-30: renamed from \"Restoration / Balance — Regrowth / Nature's Grace (21/0/30)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py)."],
       "open_questions": ["Whether the reworked Nature's Grace (3s haste window) is worth 21 Balance points at all."],
       "sources": ["https://warcraftforever.games/talents/druid"]
     },
@@ -377,7 +377,7 @@
     },
     {
       "id": "pvp-resto",
-      "name": "Restoration / Balance — PvP Healer (14/0/37)",
+      "name": "Restoration — PvP healer with a Balance dip (14/0/37)",
       "role": "healer",
       "content": "pvp",
       "tier": "draft",
@@ -426,7 +426,7 @@
           "why": "Balance tier-2 filler."
         }
       ],
-      "notes": ["Nature's Grasp and Improved Nature's Grasp are not in the demo tree — presumably baseline.", "2026-09-27 scenario audit: Moonglow 1 -> Nature's Splendor 1. Moonglow (beta) only cheapens damaging spells, which a Restoration druid rarely casts in PvP; its first rank stays as the Balance tier filler. Nature's Splendor lengthens Rejuvenation by 3 s and Regrowth by 6 s: more healing per global cooldown under pressure (PvP profile +0.9 points)."],
+      "notes": ["Nature's Grasp and Improved Nature's Grasp are not in the demo tree — presumably baseline.", "2026-09-27 scenario audit: Moonglow 1 -> Nature's Splendor 1. Moonglow (beta) only cheapens damaging spells, which a Restoration druid rarely casts in PvP; its first rank stays as the Balance tier filler. Nature's Splendor lengthens Rejuvenation by 3 s and Regrowth by 6 s: more healing per global cooldown under pressure (PvP profile +0.9 points).", "2026-09-30: renamed from \"Restoration / Balance — PvP Healer (14/0/37)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py)."],
       "open_questions": ["Nature's Grasp availability."],
       "sources": ["https://warcraftforever.games/talents/druid"]
     },

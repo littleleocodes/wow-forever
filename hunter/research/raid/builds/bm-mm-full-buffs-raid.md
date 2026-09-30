@@ -1,4 +1,4 @@
-# Beast Mastery / Marksmanship (full raid buffs, 20/31/0) — 21/30/0
+# Marksmanship with Beast Mastery support (full raid buffs, 20/31/0) — 21/30/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -125,6 +125,7 @@ Damage by ability:
 - Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.
 - Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Sniper Shot -> Bestial Discipline (+3.6% DPS); Rapid Killing -> Efficiency (+0.8% DPS); Rapid Killing -> Improved Stings (+0.7% DPS); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +5.25% on a third seed.
+- 2026-09-30: renamed from "Beast Mastery / Marksmanship (full raid buffs, 20/31/0)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

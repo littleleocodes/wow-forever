@@ -10,7 +10,8 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Leveling — Combat swords (fight-lab winner adopted 2026-09-26)](builds/leveling-combat-swords.md) | 31/20/0 | DPS | [leveling-combat-swords](../talents/classic-baseline/leveling-combat-swords.md) |
+| [Leveling — Assassination with swords (31/20/0)](builds/leveling-combat-swords.md) | 31/20/0 | DPS | [leveling-combat-swords](../talents/classic-baseline/leveling-combat-swords.md) |
+| [Combat — Leveling (generated)](builds/combat-leveling.md) | 18/31/2 | DPS | — |
 | [Subtlety — Leveling (generated)](builds/subtlety-leveling.md) | 5/16/30 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):

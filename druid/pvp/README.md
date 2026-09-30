@@ -6,7 +6,7 @@ Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The bui
 
 - [Balance](balance.md) — Balance — PvP ⚗: 32/11/8
 - [Feral Combat](feral-combat.md) — Feral Combat — PvP ⚗: 0/31/20
-- [Restoration](restoration.md) — Restoration / Balance — PvP Healer: 14/0/37
+- [Restoration](restoration.md) — Restoration — PvP healer with a Balance dip: 14/0/37
 
 ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

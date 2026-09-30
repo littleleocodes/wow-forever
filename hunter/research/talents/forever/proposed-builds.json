@@ -68,7 +68,7 @@
     },
     {
       "id": "bm-mm-full-buffs-raid",
-      "name": "Beast Mastery / Marksmanship (full raid buffs, 20/31/0)",
+      "name": "Marksmanship with Beast Mastery support (full raid buffs, 20/31/0)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
@@ -129,7 +129,7 @@
           "why": "Mana vs. Rapid Fire uptime."
         }
       ],
-      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `bm-mm-raid` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Sniper Shot -> Bestial Discipline (+3.6% DPS); Rapid Killing -> Efficiency (+0.8% DPS); Rapid Killing -> Improved Stings (+0.7% DPS); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +5.25% on a third seed."],
+      "notes": ["Restored 2026-09-27 (user choice: keep both builds). Take `bm-mm-raid` when you bring your own mana (the dummy, small groups, no paladin or shaman in your party) and this one when a raid supplies Blessing of Wisdom and Mana Spring. The reasons under core and flex predate the 2026-09-27 training-dummy calibration.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Sniper Shot -> Bestial Discipline (+3.6% DPS); Rapid Killing -> Efficiency (+0.8% DPS); Rapid Killing -> Improved Stings (+0.7% DPS); Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +5.25% on a third seed.", "2026-09-30: renamed from \"Beast Mastery / Marksmanship (full raid buffs, 20/31/0)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py)."],
       "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -394,7 +394,7 @@
     },
     {
       "id": "pvp-mm-surv",
-      "name": "Marksmanship / Survival (PvP, 0/31/20)",
+      "name": "Marksmanship with Survival support (PvP, 0/31/20)",
       "role": "dps",
       "content": "pvp",
       "tier": "draft",
@@ -450,13 +450,13 @@
           "why": "Thirty-first Marksmanship point."
         }
       ],
-      "notes": ["Sniper Shot's 4s cast is not taken for PvP."],
+      "notes": ["Sniper Shot's 4s cast is not taken for PvP.", "2026-09-30: renamed from \"Marksmanship / Survival (PvP, 0/31/20)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py)."],
       "open_questions": ["Whether Aimed Shot exists baseline for PvP burst."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
     {
       "id": "leveling-beast-mastery",
-      "name": "Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)",
+      "name": "Leveling — Marksmanship with a pet (20/31/0)",
       "role": "dps",
       "content": "leveling",
       "tier": "draft",
@@ -566,7 +566,7 @@
           "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-09-29, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-09-29, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py)."],
       "open_questions": ["Summon Hawk damage at 60 and whether the 'only 2 hawks' text means two can be up at once.", "Deadly Aspects rank scaling (extrapolated from 2%)."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -1196,150 +1196,6 @@
       ]
     },
     {
-      "id": "beast-mastery-raid",
-      "name": "Beast Mastery — Raid (generated)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "spec": "Beast Mastery",
-      "generated": "2026-09-29",
-      "summary": "The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Endurance Training", 3],
-          ["Focused Fire", 2],
-          ["Bestial Swiftness", 1],
-          ["Unleashed Fury", 5],
-          ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Intimidation", 1],
-          ["Bestial Discipline", 2],
-          ["Frenzy", 5]
-        ],
-        "Marksmanship": [
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Efficiency", 2],
-          ["Careful Aim", 5],
-          ["Trueshot Aura", 1],
-          ["Mortal Shots", 5]
-        ],
-        "Survival": []
-      },
-      "core": [
-        {"talent": "Summon Hawk", "why": "The scorer's value in this build: +23.6% of its score (model bm-leveling)."},
-        {"talent": "Mortal Shots", "why": "The scorer's value in this build: +15.8% of its score (model bm-leveling)."},
-        {"talent": "Unleashed Fury", "why": "The scorer's value in this build: +14.4% of its score (model bm-leveling)."},
-        {"talent": "Improved Stings", "why": "The scorer's value in this build: +13.7% of its score (model bm-leveling)."},
-        {"talent": "Lethal Attacks", "why": "The scorer's value in this build: +12.9% of its score (model bm-leveling)."},
-        {"talent": "Frenzy", "why": "The scorer's value in this build: +11.8% of its score (model bm-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Revive Pet -> Endurance Training (survival); Improved Revive Pet -> Endurance Training (survival). Net +0.00% on a third seed."],
-      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
-    },
-    {
-      "id": "beast-mastery-pvp",
-      "name": "Beast Mastery — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Beast Mastery",
-      "generated": "2026-09-29",
-      "summary": "The best Beast Mastery pvp build with at least 30 points in Beast Mastery, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (bm-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Beast Mastery": [
-          ["Deadly Aspects", 5],
-          ["Focused Fire", 2],
-          ["Improved Aspect of the Monkey", 3],
-          ["Pathfinding", 2],
-          ["Bestial Swiftness", 1],
-          ["Unleashed Fury", 5],
-          ["Improved Mend Pet", 2],
-          ["Ferocity", 5],
-          ["Summon Hawk", 1],
-          ["Spirit Bond", 2],
-          ["Intimidation", 1],
-          ["Frenzy", 1],
-          ["Bestial Wrath", 1]
-        ],
-        "Marksmanship": [
-          ["Improved Concussive Shot", 2]
-        ],
-        "Survival": [
-          ["Deflection", 5],
-          ["Entrapment", 3],
-          ["Improved Wing Clip", 3],
-          ["Surefooted", 3],
-          ["Deterrence", 1],
-          ["Survival Tactics", 2],
-          ["Counterattack", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Deterrence", "why": "The scorer's value in this build: +11.3% of its score (model bm-leveling)."},
-        {"talent": "Deflection", "why": "The scorer's value in this build: +10.0% of its score (model bm-leveling)."},
-        {"talent": "Bestial Wrath", "why": "The scorer's value in this build: +9.9% of its score (model bm-leveling)."},
-        {"talent": "Intimidation", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
-        {"talent": "Improved Wing Clip", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
-        {"talent": "Surefooted", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model bm-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
-    },
-    {
-      "id": "survival-pvp",
-      "name": "Survival — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Survival",
-      "generated": "2026-09-29",
-      "summary": "The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Beast Mastery": [],
-        "Marksmanship": [
-          ["Improved Concussive Shot", 5],
-          ["Lethal Attacks", 5],
-          ["Improved Stings", 3],
-          ["Careful Aim", 5],
-          ["Rapid Killing", 1],
-          ["Lone Wolf", 1],
-          ["Scatter Shot", 1]
-        ],
-        "Survival": [
-          ["Improved Tracking", 5],
-          ["Deflection", 5],
-          ["Savage Strikes", 2],
-          ["Surefooted", 3],
-          ["Deterrence", 1],
-          ["Survival Tactics", 2],
-          ["Predator's Edge", 5],
-          ["Counterattack", 1],
-          ["Resourcefulness", 2],
-          ["Expose Prey", 2],
-          ["Strider Kick", 1],
-          ["Lightning Reflexes", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Strider Kick", "why": "The scorer's value in this build: +15.0% of its score (model melee-dps)."},
-        {"talent": "Resourcefulness", "why": "The scorer's value in this build: +11.4% of its score (model melee-dps)."},
-        {"talent": "Surefooted", "why": "The scorer's value in this build: +10.4% of its score (model melee-dps)."},
-        {"talent": "Deterrence", "why": "The scorer's value in this build: +10.1% of its score (model melee-dps)."},
-        {"talent": "Careful Aim", "why": "The scorer's value in this build: +8.5% of its score (model melee-dps)."},
-        {"talent": "Improved Concussive Shot", "why": "The scorer's value in this build: +7.5% of its score (model melee-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
-      "open_questions": ["A generated Survival build: check it against the community's Survival builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
-    },
-    {
       "id": "opt-mm-raid-raid-dps",
       "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
       "role": "dps",
@@ -1508,6 +1364,217 @@
       "notes": ["Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
+    },
+    {
+      "id": "beast-mastery-leveling",
+      "name": "Beast Mastery — Leveling (generated)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Beast Mastery",
+      "generated": "2026-09-30",
+      "summary": "The best Beast Mastery leveling build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Pathfinding", 2],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Rapid Recuperation", 1]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "The scorer's value in this build: +19.4% of its score (model bm-leveling)."},
+        {"talent": "Efficiency", "why": "The scorer's value in this build: +15.2% of its score (model bm-leveling)."},
+        {"talent": "Unleashed Fury", "why": "The scorer's value in this build: +12.8% of its score (model bm-leveling)."},
+        {"talent": "Careful Aim", "why": "The scorer's value in this build: +8.3% of its score (model bm-leveling)."},
+        {"talent": "Rapid Recuperation", "why": "The scorer's value in this build: +6.5% of its score (model bm-leveling)."},
+        {"talent": "Ferocity", "why": "The scorer's value in this build: +5.8% of its score (model bm-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model bm-leveling, profile leveling-st."],
+      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
+      "sources": ["https://talentsforever.com/hunter"],
+      "order": [
+        {"levels": "10-14", "tree": "Beast Mastery", "talent": "Deadly Aspects", "points": 5},
+        {"levels": "15-16", "tree": "Beast Mastery", "talent": "Focused Fire", "points": 2},
+        {"levels": "17-18", "tree": "Beast Mastery", "talent": "Pathfinding", "points": 2},
+        {"levels": "19", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 1},
+        {"levels": "20-24", "tree": "Beast Mastery", "talent": "Unleashed Fury", "points": 5},
+        {"levels": "25", "tree": "Beast Mastery", "talent": "Summon Hawk", "points": 1},
+        {"levels": "26-29", "tree": "Beast Mastery", "talent": "Ferocity", "points": 4},
+        {"levels": "30", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "31-35", "tree": "Marksmanship", "talent": "Lethal Attacks", "points": 5},
+        {"levels": "36-38", "tree": "Marksmanship", "talent": "Efficiency", "points": 3},
+        {"levels": "39-43", "tree": "Marksmanship", "talent": "Careful Aim", "points": 5},
+        {"levels": "44", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
+        {"levels": "45-47", "tree": "Marksmanship", "talent": "Improved Stings", "points": 3},
+        {"levels": "48", "tree": "Marksmanship", "talent": "Efficiency", "points": 1},
+        {"levels": "49-50", "tree": "Marksmanship", "talent": "Rapid Killing", "points": 2},
+        {"levels": "51", "tree": "Marksmanship", "talent": "Rapid Recuperation", "points": 1},
+        {"levels": "52", "tree": "Beast Mastery", "talent": "Ferocity", "points": 1},
+        {"levels": "53", "tree": "Beast Mastery", "talent": "Bestial Discipline", "points": 1},
+        {"levels": "54-55", "tree": "Beast Mastery", "talent": "Endurance Training", "points": 2},
+        {"levels": "56-60", "tree": "Beast Mastery", "talent": "Frenzy", "points": 5}
+      ]
+    },
+    {
+      "id": "beast-mastery-raid",
+      "name": "Beast Mastery — Raid (generated)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Beast Mastery",
+      "generated": "2026-09-30",
+      "summary": "The best Beast Mastery raid build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile raid-dps), refined in the community simulator's talent search (bm-raid). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Focused Fire", 2],
+          ["Improved Revive Pet", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Intimidation", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 2],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": []
+      },
+      "core": [
+        {"talent": "Summon Hawk", "why": "The scorer's value in this build: +23.5% of its score (model bm-leveling)."},
+        {"talent": "Mortal Shots", "why": "The scorer's value in this build: +15.8% of its score (model bm-leveling)."},
+        {"talent": "Unleashed Fury", "why": "The scorer's value in this build: +14.4% of its score (model bm-leveling)."},
+        {"talent": "Improved Stings", "why": "The scorer's value in this build: +13.7% of its score (model bm-leveling)."},
+        {"talent": "Lethal Attacks", "why": "The scorer's value in this build: +12.9% of its score (model bm-leveling)."},
+        {"talent": "Frenzy", "why": "The scorer's value in this build: +11.8% of its score (model bm-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a raid build; model bm-leveling, profile raid-dps."],
+      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
+      "sources": ["https://talentsforever.com/hunter"]
+    },
+    {
+      "id": "beast-mastery-pvp",
+      "name": "Beast Mastery — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Beast Mastery",
+      "generated": "2026-09-30",
+      "summary": "The best Beast Mastery pvp build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Focused Fire", 2],
+          ["Improved Aspect of the Monkey", 3],
+          ["Pathfinding", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Improved Mend Pet", 2],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Spirit Bond", 2],
+          ["Intimidation", 1],
+          ["Frenzy", 1],
+          ["Bestial Wrath", 1]
+        ],
+        "Marksmanship": [
+          ["Improved Concussive Shot", 2]
+        ],
+        "Survival": [
+          ["Deflection", 5],
+          ["Entrapment", 3],
+          ["Improved Wing Clip", 3],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Survival Tactics", 2],
+          ["Counterattack", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Deterrence", "why": "The scorer's value in this build: +11.3% of its score (model bm-leveling)."},
+        {"talent": "Deflection", "why": "The scorer's value in this build: +10.0% of its score (model bm-leveling)."},
+        {"talent": "Bestial Wrath", "why": "The scorer's value in this build: +9.9% of its score (model bm-leveling)."},
+        {"talent": "Intimidation", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
+        {"talent": "Improved Wing Clip", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
+        {"talent": "Surefooted", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model bm-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
+      "sources": ["https://talentsforever.com/hunter"]
+    },
+    {
+      "id": "survival-pvp",
+      "name": "Survival — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Survival",
+      "generated": "2026-09-30",
+      "summary": "The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Beast Mastery": [],
+        "Marksmanship": [
+          ["Improved Concussive Shot", 5],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 1],
+          ["Lone Wolf", 1],
+          ["Scatter Shot", 1]
+        ],
+        "Survival": [
+          ["Improved Tracking", 5],
+          ["Deflection", 5],
+          ["Savage Strikes", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Survival Tactics", 2],
+          ["Predator's Edge", 5],
+          ["Counterattack", 1],
+          ["Resourcefulness", 2],
+          ["Expose Prey", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Strider Kick", "why": "The scorer's value in this build: +15.0% of its score (model melee-dps)."},
+        {"talent": "Resourcefulness", "why": "The scorer's value in this build: +11.4% of its score (model melee-dps)."},
+        {"talent": "Surefooted", "why": "The scorer's value in this build: +10.4% of its score (model melee-dps)."},
+        {"talent": "Deterrence", "why": "The scorer's value in this build: +10.1% of its score (model melee-dps)."},
+        {"talent": "Careful Aim", "why": "The scorer's value in this build: +8.5% of its score (model melee-dps)."},
+        {"talent": "Improved Concussive Shot", "why": "The scorer's value in this build: +7.5% of its score (model melee-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
+      "open_questions": ["A generated Survival build: check it against the community's Survival builds at launch."],
+      "sources": ["https://talentsforever.com/hunter"]
     }
   ]
 }

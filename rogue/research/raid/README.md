@@ -13,7 +13,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Combat Swords (simulator winner adopted 2026-09-28)](builds/combat-swords-raid.md) | 19/32/0 | DPS | [combat-swords-raid](../talents/classic-baseline/combat-swords-raid.md) |
 | [Combat Daggers (raid DPS)](builds/combat-daggers-raid.md) | 16/33/2 | DPS | [combat-daggers-raid](../talents/classic-baseline/combat-daggers-raid.md) |
 | [Assassination — Mutilate / Venom (raid DPS)](builds/assassination-mutilate-raid.md) | 30/21/0 | DPS | — |
-| [Assassination/Combat — Seal Fate daggers (raid)](builds/assassination-seal-fate-raid.md) | 30/19/2 | DPS | — |
+| [Assassination — Seal Fate daggers (raid)](builds/assassination-seal-fate-raid.md) | 30/19/2 | DPS | — |
 | [Subtlety — Hemorrhage (raid)](builds/subtlety-hemo-raid.md) | 20/0/31 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):

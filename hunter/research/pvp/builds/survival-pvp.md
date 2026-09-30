@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 
 ## Point allocation
 
@@ -59,7 +59,7 @@ The best Survival pvp build with at least 30 points in Survival, generated on 20
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.
 - Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled.
 
 ## Open questions (verify in the live game)

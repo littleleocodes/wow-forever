@@ -64,7 +64,7 @@ One point per level from 10, in this order:
 
 ## Other builds of this spec
 
-- [Leveling — Combat swords](../research/leveling/builds/leveling-combat-swords.md) (31/20/0, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--4)
+- [Leveling — Assassination with swords](../research/leveling/builds/leveling-combat-swords.md) (31/20/0, 26 s per kill (level-weighted)) — [open the talent tree](https://talentsforever.com/rogue/60/3250231001152105-320033112014--4)
 - [Raid Combat swords](../research/leveling/builds/opt-combat-swords-raid-solo-60.md) (33/16/2) — [open the talent tree](https://talentsforever.com/rogue/60/1250201045152005-32303301001-002-4)
 
 ---

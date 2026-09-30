@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Subtlety leveling build with at least 30 points in Subtlety, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The best Subtlety leveling build with at least 30 points in Subtlety, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.
 
 ## Point allocation
 
@@ -99,7 +99,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.
+- Generated 2026-09-30 (spec_builds.py) so every spec has a leveling build; model combat-swords-raid, profile leveling-st.
 - Scored with the Combat swords model (no Subtlety leveling model): Subtlety's openers and Hemorrhage are under-valued.
 
 ## Open questions (verify in the live game)

@@ -33,6 +33,10 @@ from fmt_json import dumps  # noqa: E402
 OUT = HERE / "spec-builds.json"
 TODAY = datetime.date.today().isoformat()
 LEVELS = [20, 30, 40, 50, 60]
+# slots that hold a build but no real one for the mode (2026-09-30, user report of cells without numbers): Beast Mastery leveling held
+# only the level-60 farming build (no leveling order, no fight-lab numbers), Combat leveling only the optimizer's 2-mob AoE variant.
+# They get a generated build like an empty slot.
+WEAK = {("hunter", "Beast Mastery", "leveling"), ("rogue", "Combat", "leveling")}
 # Protection PvP builds are scored on a damage model (the tank model's "burst" would be threat, meaningless in PvP), 30+ points kept in
 # Protection. Trees without a scorer model of their own borrow the nearest one: their own spells are under-valued, and the build says so.
 ROUGH = {("mage", "Arcane"): "No Arcane model exists: scored with the Frost leveling model, whose damage is mostly Frostbolt, so talents "
@@ -195,7 +199,8 @@ def main():
         data = json.load(open(bp, encoding="utf-8"))
         data["builds"] = [b for b in data["builds"] if not b.get("generated")]   # re-generate from scratch
         g = SM.grid(cls, data["builds"])
-        todo = [(t, m) for t in SM.trees(cls) for m in SM.MODES if not g[t][m] and not (m == "leveling" and (cls, t) in SM.LEVEL_AS)]
+        todo = [(t, m) for t in SM.trees(cls) for m in SM.MODES
+                if (not g[t][m] or (cls, t, m) in WEAK) and not (m == "leveling" and (cls, t) in SM.LEVEL_AS)]
         print(f"== {cls}: {', '.join(f'{t} {m}' for t, m in todo) or 'nothing to fill'}", flush=True)
         if a.dry_run or not todo:
             continue

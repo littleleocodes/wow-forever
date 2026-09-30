@@ -11,7 +11,7 @@
 
 ## Summary
 
-The best Combat pvp build with at least 30 points in Combat, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
+The best Combat pvp build with at least 30 points in Combat, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (combat-swords-raid, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.
 
 ## Point allocation
 
@@ -65,7 +65,7 @@ The best Combat pvp build with at least 30 points in Combat, generated on 2026-0
 
 ## Notes
 
-- Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model combat-swords-raid, profile pvp. PvP values are assumptions: no simulator plays PvP.
+- Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model combat-swords-raid, profile pvp. PvP values are assumptions: no simulator plays PvP.
 
 ## Open questions (verify in the live game)
 

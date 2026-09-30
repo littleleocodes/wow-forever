@@ -53,7 +53,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 ## Other builds of this spec
 
 - [Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (13/38/0, 221 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-250500035152310051--4)
-- [Arms — Two-Handed / Improved Slam / Bloodthrill](../research/raid/builds/arms-2h-raid.md) (19/32/0, 173 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-550500000052310051--4)
+- [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 173 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-550500000052310051--4)
 - [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (19/32/0, 173 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-250500030052310051--4)
 
 ---

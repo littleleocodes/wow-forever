@@ -11,7 +11,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Beast Mastery / Marksmanship (simulator winner adopted 2026-09-27)](builds/bm-mm-raid.md) | 22/29/0 | DPS | [bm-mm-raid](../talents/classic-baseline/bm-mm-raid.md) |
-| [Beast Mastery / Marksmanship (full raid buffs, 20/31/0)](builds/bm-mm-full-buffs-raid.md) | 21/30/0 | DPS | [bm-mm-raid](../talents/classic-baseline/bm-mm-raid.md) |
+| [Marksmanship with Beast Mastery support (full raid buffs, 20/31/0)](builds/bm-mm-full-buffs-raid.md) | 21/30/0 | DPS | [bm-mm-raid](../talents/classic-baseline/bm-mm-raid.md) |
 | [Marksmanship — Lone Wolf (simulator winner adopted 2026-09-26)](builds/mm-lone-wolf-raid.md) | 11/40/0 | DPS | — |
 | [Marksmanship — Summon Hawk (raid)](builds/mm-hawk-raid.md) | 22/29/0 | DPS | — |
 | [Survival — Melee (Strider Kick / Lacerating Strikes)](builds/survival-melee.md) | 9/11/31 | DPS | — |

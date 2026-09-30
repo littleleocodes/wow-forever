@@ -2,7 +2,7 @@
 
 [Hunter](../README.md) > [Leveling](README.md) > Marksmanship
 
-**[Leveling — Beast Mastery](../research/leveling/builds/leveling-beast-mastery.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/43202005031-3053512001022151--4)
+**[Leveling — Marksmanship with a pet](../research/leveling/builds/leveling-beast-mastery.md)** (20/31/0) — [open the talent tree](https://talentsforever.com/hunter/60/43202005031-3053512001022151--4)
 
 ## How to play
 

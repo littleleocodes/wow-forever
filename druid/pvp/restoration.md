@@ -2,7 +2,7 @@
 
 [Druid](../README.md) > [PvP](README.md) > Restoration
 
-**[Restoration / Balance — PvP Healer](../research/pvp/builds/pvp-resto.md)** (14/0/37) — [open the talent tree](https://talentsforever.com/druid/60/05102231--555033510311005-4)
+**[Restoration — PvP healer with a Balance dip](../research/pvp/builds/pvp-resto.md)** (14/0/37) — [open the talent tree](https://talentsforever.com/druid/60/05102231--555033510311005-4)
 
 ## How to play
 

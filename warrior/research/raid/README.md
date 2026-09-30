@@ -11,7 +11,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Fury — Dual Wield (simulator winner adopted 2026-09-26)](builds/fury-dw-raid.md) | 13/38/0 | DPS | [fury-dw-raid](../talents/classic-baseline/fury-dw-raid.md) |
-| [Arms — Two-Handed / Improved Slam / Bloodthrill (simulator winner adopted 2026-09-26)](builds/arms-2h-raid.md) | 19/32/0 | DPS | [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md) |
+| [Fury — Two-Handed (Improved Slam / Bloodthrill)](builds/arms-2h-raid.md) | 19/32/0 | DPS | [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md) |
 | [Arms — Battle Stance: Overpower, Rend and Slam (raid)](builds/arms-battle-raid.md) | 34/17/0 | DPS | — |
 | [Protection — Raid Tank (simulator winner adopted 2026-09-27)](builds/prot-raid-tank.md) | 14/5/32 | TANK | [prot-raid-tank](../talents/classic-baseline/prot-raid-tank.md) |
 

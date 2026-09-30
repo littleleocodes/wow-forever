@@ -6,7 +6,7 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Assassination](assassination.md) — Assassination/Combat — Seal Fate daggers | 407 | 682 | 407 | best |
+| 1 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 407 | 682 | 407 | best |
 | 2 | [Combat](combat.md) — Raid daggers | 403 | 720 | 405 | -1% |
 | 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 374 | 642 | 353 | -8% |
 

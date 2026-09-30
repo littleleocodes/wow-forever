@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
 
-**[Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/532000150510125-00532500015--4)
+**[Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/512002150510125-00532500015--4)
 
 > ⚗ Generated build: no hand-made Beast Mastery build exists for this mode yet, so this is the stats model's best Beast Mastery build, refined in the raid simulator. A starting point, not a proven build.
 

@@ -1,4 +1,4 @@
-# Assassination/Combat — Seal Fate daggers (raid) — 30/19/2
+# Assassination — Seal Fate daggers (raid) — 30/19/2
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -121,6 +121,7 @@ Damage by ability:
 - Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `assassination-mutilate-raid`: 2 points Murder -> Improved Expose Armor, 1 point Venom -> Flawless Execution, 2 points Dual Wield Specialization -> Opportunity, 2 points Vigor -> Improved Poisons, 1 point Mutilate -> Improved Poisons, 2 points Lethality -> Improved Poisons.
 - New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +0.00% on a third seed.
+- 2026-09-30: renamed from "Assassination/Combat — Seal Fate daggers (raid)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

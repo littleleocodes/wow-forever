@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Balance** | [Balance (optimized)](leveling/balance.md)<br>53 s/kill | **✅ Recommended**<br>[Balance — Moonkin / Eclipse](raid/balance.md)<br>438 DPS | [Balance — PvP](pvp/balance.md) ⚗ |
 | **Feral Combat** | **✅ Recommended**<br>[Leveling — Feral cat](leveling/feral-combat.md)<br>25 s/kill | [Feral Combat (optimized)](raid/feral-combat.md)<br>350 DPS | [Feral Combat — PvP](pvp/feral-combat.md) ⚗ |
-| **Restoration** | [level as Feral Combat](leveling/restoration.md) | [Restoration (optimized)](raid/restoration.md)<br>healer | [Restoration / Balance — PvP Healer](pvp/restoration.md) |
+| **Restoration** | [level as Feral Combat](leveling/restoration.md) | [Restoration (optimized)](raid/restoration.md)<br>healer | [Restoration — PvP healer with a Balance dip](pvp/restoration.md) |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -48,7 +48,7 @@ Not ranked: no simulator plays PvP, so there is nothing fair to rank on. The bui
 
 - [Balance](pvp/balance.md) — Balance — PvP ⚗: 32/11/8
 - [Feral Combat](pvp/feral-combat.md) — Feral Combat — PvP ⚗: 0/31/20
-- [Restoration](pvp/restoration.md) — Restoration / Balance — PvP Healer: 14/0/37
+- [Restoration](pvp/restoration.md) — Restoration — PvP healer with a Balance dip: 14/0/37
 
 Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie. Everything is a simulation of the beta, not a measurement in the game.
 

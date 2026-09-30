@@ -1,4 +1,4 @@
-# Restoration / Balance — PvP Healer (14/0/37) — 14/0/37
+# Restoration — PvP healer with a Balance dip (14/0/37) — 14/0/37
 
 *[Druid](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -69,6 +69,7 @@ Nature's Grasp is gone (likely baseline), so the Balance dip is Genesis, Nature'
 
 - Nature's Grasp and Improved Nature's Grasp are not in the demo tree — presumably baseline.
 - 2026-09-27 scenario audit: Moonglow 1 -> Nature's Splendor 1. Moonglow (beta) only cheapens damaging spells, which a Restoration druid rarely casts in PvP; its first rank stays as the Balance tier filler. Nature's Splendor lengthens Rejuvenation by 3 s and Regrowth by 6 s: more healing per global cooldown under pressure (PvP profile +0.9 points).
+- 2026-09-30: renamed from "Restoration / Balance — PvP Healer (14/0/37)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

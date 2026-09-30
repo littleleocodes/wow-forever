@@ -11,7 +11,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
 | [Restoration — Raid Healer (healer lab winner adopted 2026-09-28)](builds/resto-raid-healer.md) | 11/5/35 | HEALER | [resto-swiftmend-healer](../talents/classic-baseline/resto-swiftmend-healer.md) |
-| [Restoration / Balance — Regrowth / Nature's Grace (21/0/30)](builds/resto-regrowth-natures-grace.md) | 21/0/30 | HEALER | [resto-regrowth-natures-grace](../talents/classic-baseline/resto-regrowth-natures-grace.md) |
+| [Restoration — Regrowth / Nature's Grace, with a Balance dip (21/0/30)](builds/resto-regrowth-natures-grace.md) | 21/0/30 | HEALER | [resto-regrowth-natures-grace](../talents/classic-baseline/resto-regrowth-natures-grace.md) |
 | [Feral — Cat DPS (simulator winner adopted 2026-09-26)](builds/feral-cat-dps.md) | 9/32/10 | DPS | [feral-cat-dps](../talents/classic-baseline/feral-cat-dps.md) |
 | [Feral — Bear Tank (simulator winner adopted 2026-09-27)](builds/feral-bear-tank.md) | 7/35/9 | TANK | [feral-bear-tank](../talents/classic-baseline/feral-bear-tank.md) |
 | [Balance — Moonkin / Eclipse (simulator winner adopted 2026-09-26)](builds/balance-moonkin-raid.md) | 33/5/13 | DPS | [balance-moonkin-raid](../talents/classic-baseline/balance-moonkin-raid.md) |

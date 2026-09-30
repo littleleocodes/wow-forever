@@ -1,4 +1,4 @@
-# Marksmanship / Survival (PvP, 0/31/20) — 0/31/20
+# Marksmanship with Survival support (PvP, 0/31/20) — 0/31/20
 
 *[Hunter](../../../README.md) · [PvP](../README.md) · WoW: Forever — proposed*
 
@@ -70,6 +70,7 @@ Improved Concussive Shot stuns, Scatter Shot, Lethal Attacks and Mortal Shots, T
 ## Notes
 
 - Sniper Shot's 4s cast is not taken for PvP.
+- 2026-09-30: renamed from "Marksmanship / Survival (PvP, 0/31/20)" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).
 
 ## Open questions (verify in the live game)
 

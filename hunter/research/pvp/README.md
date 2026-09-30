@@ -10,7 +10,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 
 | Build | Split | Role | Classic baseline |
 |---|---|---|---|
-| [Marksmanship / Survival (PvP, 0/31/20)](builds/pvp-mm-surv.md) | 0/31/20 | DPS | [pvp-mm-surv](../talents/classic-baseline/pvp-mm-surv.md) |
+| [Marksmanship with Survival support (PvP, 0/31/20)](builds/pvp-mm-surv.md) | 0/31/20 | DPS | [pvp-mm-surv](../talents/classic-baseline/pvp-mm-surv.md) |
 | [Beast Mastery — PvP (generated)](builds/beast-mastery-pvp.md) | 31/2/18 | DPS | — |
 | [Survival — PvP (generated)](builds/survival-pvp.md) | 0/21/30 | DPS | — |
 
