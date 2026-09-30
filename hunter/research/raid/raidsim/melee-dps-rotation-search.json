@@ -1,0 +1,82 @@
+{
+ "dummy": {
+  "class": "hunter",
+  "spec": "melee-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+  "start": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
+  "builds": [
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-500230230250222151"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Wing Clip",
+    "gain_seed1": 0.07489209272199515,
+    "gain_seed2": 0.07397006786231675,
+    "candidates": 116
+   }
+  ],
+  "final": {
+   "dummy": {
+    "melee-survival-raid": {
+     "before": 427.575611319989,
+     "after": 458.87162089918286,
+     "base": 325.01617937611854,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ },
+ "raid": {
+  "class": "hunter",
+  "spec": "melee-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+  "start": "_reference/data/raidsim/apls/hunter/melee-dps-raid.apl.json",
+  "builds": [
+   {
+    "label": "melee-survival-raid",
+    "talents": "5-005005001-500230230250222151"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Wing Clip",
+    "gain_seed1": 0.107595254925412,
+    "gain_seed2": 0.10286844312328203,
+    "candidates": 116
+   }
+  ],
+  "final": {
+   "raid": {
+    "melee-survival-raid": {
+     "before": 893.3694334058703,
+     "after": 985.0364779553878,
+     "base": 728.8413422323197,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ }
+}

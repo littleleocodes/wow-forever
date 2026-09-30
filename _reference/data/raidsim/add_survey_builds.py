@@ -5,7 +5,7 @@
 For each configured build (a JSON config: per class a list of {id, spec (the raid entry), glob (its talent-search candidate files),
 after, name, summary, why {talent: reason}, notes, open_questions, sources}): take the best candidate of its simulator talent searches
 (raidsim/talent_opt.py; third-seed DPS of the search record), measure every talent's removal cost in the simulator under the entry's
-rotation (raidsim/run.py --deltas all), write the build into <class>/talents/forever/proposed-builds.json (core ranked by removal
+rotation (raidsim/run.py --deltas all), write the build into <class>/research/talents/forever/proposed-builds.json (core ranked by removal
 cost with the config's reasons, flex = talents worth under 1%), and register it in the entry's `builds` in raidsim/specs.json.
 An existing build with the same id is replaced (its sources and open questions kept when the config gives none): re-running it
 rewrites hand edits of core, flex, notes and summary. Then run validate_builds.py and render_builds.py.
@@ -29,7 +29,7 @@ TODAY = datetime.date.today().isoformat()
 
 def best_candidate(cls, pattern):
     best = None
-    for f in glob.glob(str(ROOT / cls / "raid/raidsim/candidates" / (pattern + ".json"))):
+    for f in glob.glob(str(ROOT / cls / "research/raid/raidsim/candidates" / (pattern + ".json"))):
         d = json.load(open(f, encoding="utf-8"))
         s = d.get("search")
         if not s:
@@ -92,7 +92,7 @@ def main():
     sp = DATA / "raidsim/specs.json"
     specs = json.load(open(sp, encoding="utf-8"))
     for cls, items in cfgs.items():
-        bp = ROOT / cls / "talents/forever/proposed-builds.json"
+        bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
         data = json.load(open(bp, encoding="utf-8"))
         changed = False
         for cfg in items:

@@ -82,7 +82,7 @@ def bench(repo, cls, entry, label, talents, off_key, field, on, iterations):
     cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "gear": entry["gear"], "apl": str(raidrun.apl_path(entry, repo)) if hasattr(raidrun, "apl_path") else entry["apl"], "spec": entry.get("spec", {}),
            "consumables": entry.get("consumables", {}), "buffs": "full", "buffs_off": list(entry.get("buffs_off", [])), "debuffs_off": list(entry.get("debuffs_off", [])),
            "profession1": entry.get("profession1", "Engineering"), "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5),
-           "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200, "iterations": iterations, "duration": 120.0, "seed": 1, "isTank": entry.get("tank", False),
+           "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200, "iterations": iterations, "duration": raidrun.FIGHT, "seed": 1, "isTank": entry.get("tank", False),
            "builds": [{"label": label, "talents": talents}]}
     cfg[off_key] = [n for n in cfg[off_key] if n != field]
     if not on:

@@ -1,0 +1,116 @@
+{
+ "id": "cand-arms-battle-raid-from-preset-dummy",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for arms-battle-raid from sim preset: Arms 39/12/0 in the dummy setting: 197.8 -> 209.7 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Arms 39/12/0",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Spearing Strike -> Unbridled Wrath",
+    "gain_seed1": 0.03456412146910104,
+    "gain_seed2": 0.032686004531922164,
+    "split": "38/13/0"
+   },
+   {
+    "round": 2,
+    "move": "2 points Improved Heroic Strike -> Unbridled Wrath",
+    "gain_seed1": 0.012431396774680747,
+    "gain_seed2": 0.01304509898989581,
+    "split": "36/15/0"
+   },
+   {
+    "round": 3,
+    "move": "1 point Improved Heroic Strike -> Improved Execute",
+    "gain_seed1": 0.00817825295996788,
+    "gain_seed2": 0.008522758096788152,
+    "split": "35/16/0"
+   },
+   {
+    "round": 4,
+    "move": "1 point Improved Slam -> Improved Execute",
+    "gain_seed1": 0.007441321849115612,
+    "gain_seed2": 0.0044916344844112555,
+    "split": "34/17/0"
+   }
+  ],
+  "dps_start": 197.8252033210953,
+  "dps_end": 209.65313404454963
+ }
+}

@@ -13,7 +13,7 @@ This tool builds *plans* and lets a dynamic programme pick when to switch betwee
     python _reference/data/scorer/respec.py <class> [--game forever|classic-era] [--profile leveling-st]
                                                      [--models m1,m2] [--targets 20,30,40,50,60] [--write]
 
-`--write` saves `<class>/leveling/respec-plan.md` (Forever) or `<class>/talents/classic-baseline/respec-plan.md`.
+`--write` saves `<class>/research/leveling/respec-plan.md` (Forever) or `<class>/research/talents/classic-baseline/respec-plan.md`.
 """
 import pathlib
 import argparse

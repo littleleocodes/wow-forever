@@ -2,7 +2,7 @@
   "_doc": "Hunter spec models. shares = fraction of total damage from each source (Classic parse/spreadsheet intuition, stated so it can be argued with). tags decide which talent effects apply. base = crit per source type by gear tier. stat_to_* convert +1% stat to +dps/sustain/surv fractions. mana_share = fraction of mana spent on sources with that tag (for mana-cost talents). time overrides the profile's fight/downtime/death split. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "bm-leveling": {
-      "note": "Pet-first leveling. Pet ~35-40% of damage in Classic BM leveling, Auto Shot ~40%, the rest instant shots and Serpent Sting. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot is a single rank (learned 18, 0.5s cast, 6s cooldown shared with Aimed Shot, no flat bonus), Aimed Shot 2s cast with +20..166 by rank, Arcane Shot 20..217, Serpent Sting 10..555; Raptor Strike 6s and Mongoose Bite 5s cooldowns. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-bm-leveling-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Cat melee 22%, Melee 18%, Auto Shot 16%, Serpent Sting 16%, Volley 11%, Claw 7%, Mongoose Bite 5%, Raptor Strike 1%, Summon Hawk 2 1%, Bite 1%, Aimed Shot 1%, Wing Clip 0%, Summon Hawk 1 0%, Summon Hawk 0%) and the leveling time split is fight 64% / drink 3% / eat 4% / other 0% / death 29% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
+      "note": "Pet-first leveling. Pet ~35-40% of damage in Classic BM leveling, Auto Shot ~40%, the rest instant shots and Serpent Sting. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot is a single rank (learned 18, 0.5s cast, 6s cooldown shared with Aimed Shot, no flat bonus), Aimed Shot 2s cast with +20..166 by rank, Arcane Shot 20..217, Serpent Sting 10..555; Raptor Strike 6s and Mongoose Bite 5s cooldowns. Fight lab calibration (2026-09-29, beta client 1.60.1.70009, build opt-bm-leveling-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Cat melee 21%, Auto Shot 18%, Melee 18%, Serpent Sting 16%, Volley 11%, Claw 6%, Mongoose Bite 5%, Raptor Strike 1%, Summon Hawk 2 1%, Bite 1%, Aimed Shot 1%, Wing Clip 0%, Summon Hawk 1 0%, Summon Hawk 0%) and the leveling time split is fight 65% / drink 3% / eat 4% / other 0% / death 28% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "auto",
@@ -11,7 +11,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.393},
             "solo-60": {"share": 0.393},
-            "leveling-aoe": {"share": 0.196}
+            "leveling-aoe": {"share": 0.218}
           }
         },
         {
@@ -47,7 +47,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.217},
             "solo-60": {"share": 0.217},
-            "leveling-aoe": {"share": 0.187}
+            "leveling-aoe": {"share": 0.188}
           }
         },
         {
@@ -57,7 +57,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.03},
             "solo-60": {"share": 0.03},
-            "leveling-aoe": {"share": 0.215}
+            "leveling-aoe": {"share": 0.209}
           }
         },
         {
@@ -68,7 +68,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.191},
             "solo-60": {"share": 0.191},
-            "leveling-aoe": {"share": 0.261}
+            "leveling-aoe": {"share": 0.246}
           }
         },
         {
@@ -80,7 +80,7 @@
           "profile_overrides": {
             "leveling-st": {"share": 0.047},
             "solo-60": {"share": 0.047},
-            "leveling-aoe": {"share": 0.004}
+            "leveling-aoe": {"share": 0.003}
           },
           "enabled_by": "Summon Hawk",
           "game_overrides": {
@@ -98,7 +98,7 @@
           "cast": 6.0,
           "min_cast": 6.0,
           "profile_overrides": {
-            "leveling-aoe": {"share": 0.13},
+            "leveling-aoe": {"share": 0.128},
             "leveling-st": {"share": 0.0},
             "solo-60": {"share": 0.0}
           }
@@ -134,7 +134,7 @@
       "time": {
         "leveling-st": {"fight": 0.698, "drink": 0.244, "eat": 0.011, "other": 0.0, "death": 0.047},
         "solo-60": {"fight": 0.698, "drink": 0.244, "eat": 0.011, "other": 0.0, "death": 0.047},
-        "leveling-aoe": {"fight": 0.638, "drink": 0.031, "eat": 0.037, "other": 0.0, "death": 0.293}
+        "leveling-aoe": {"fight": 0.646, "drink": 0.032, "eat": 0.039, "other": 0.0, "death": 0.282}
       },
       "abs_dps_factor": 1.587,
       "pet_dmg_to_surv": 0.3,
@@ -146,11 +146,11 @@
       "kind_note": "Pet-tank playstyle while leveling: the pet holds the mob, so kiting tools add nothing in single-target play (fight lab, 2026-09-27: Improved Wing Clip -0.2% +- 0.3 and Scatter Shot 0.0% in the pet hunter's loop at 60). Pulls of several mobs (leveling-aoe) keep them: adds come to the hunter."
     },
     "mm-raid": {
-      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-09-28, bm-mm-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 49%, serpent 21%, aimed 16%, pet 11%, multi 3%; 0% of the damage matched no source.",
+      "note": "Marksmanship raid DPS with a pet (Classic 20/31/0 style). Auto Shot ~45%, Aimed/Multi ~25%, pet ~18%. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Multi-Shot lost its flat +150 and Aimed Shot's rank 6 is +166 (Classic +600) while Arcane Shot rank 8 rose to 217 (Classic 183): Multi-Shot share 16 -> 12%, Arcane Shot 4 -> 7%, Auto Shot 55 -> 58%, pet 18 -> 16%; Multi-Shot cooldown 6s (shared with Aimed Shot). Raid sim shares (2026-09-29, bm-mm-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 40%, arcane 20%, serpent 17%, aimed 13%, pet 9%, multi 2%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "auto",
-          "share": 0.4916,
+          "share": 0.3974,
           "tags": ["type:ranged", "white", "school:physical", "ability:Auto Shot", "withpet"],
           "game_overrides": {
             "classic-era": {"share": 0.3911}
@@ -158,7 +158,7 @@
         },
         {
           "id": "multi",
-          "share": 0.0299,
+          "share": 0.0158,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Multi-Shot", "ability:Shots", "withpet"],
           "cooldown": 6,
           "min_level": 18,
@@ -168,7 +168,7 @@
         },
         {
           "id": "aimed",
-          "share": 0.1565,
+          "share": 0.1263,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Sniper Shot", "ability:Shots"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -181,7 +181,7 @@
         },
         {
           "id": "arcane",
-          "share": 0.0,
+          "share": 0.1994,
           "tags": ["type:ranged", "yellow", "school:arcane", "ability:Arcane Shot", "ability:Shots", "withpet"],
           "cooldown": 6,
           "min_level": 6,
@@ -191,7 +191,7 @@
         },
         {
           "id": "serpent",
-          "share": 0.2126,
+          "share": 0.1677,
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "withpet"],
           "can_crit": false,
           "min_level": 4,
@@ -209,7 +209,7 @@
         },
         {
           "id": "pet",
-          "share": 0.1094,
+          "share": 0.0934,
           "tags": ["pet", "withpet"],
           "min_level": 10,
           "game_overrides": {
@@ -242,20 +242,20 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.1425,
+          "loss": 0.46,
           "cap": 0.9,
-          "rms": 0.0166,
-          "points": 31,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-8% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "rms": 0.0122,
+          "points": 33,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 14-24% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "mm-lonewolf-raid": {
-      "note": "Marksmanship without a pet (Forever Lone Wolf). Same shot mix, pet share redistributed; sources carry the lonewolf tag so Lone Wolf applies and pet talents/Focused Fire do not. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as mm-raid: Multi-Shot 20 -> 15%, Arcane Shot 5 -> 8%, Auto Shot 67 -> 69%; Multi-Shot cooldown 6s. Raid sim shares (2026-09-28, mm-lone-wolf-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 55%, serpent 24%, aimed 21%; 0% of the damage matched no source.",
+      "note": "Marksmanship without a pet (Forever Lone Wolf). Same shot mix, pet share redistributed; sources carry the lonewolf tag so Lone Wolf applies and pet talents/Focused Fire do not. Aimed Shot/Sniper Shot are modelled as damage effects on the ranged sources, not as a source. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Same beta adjustments as mm-raid: Multi-Shot 20 -> 15%, Arcane Shot 5 -> 8%, Auto Shot 67 -> 69%; Multi-Shot cooldown 6s. Raid sim shares (2026-09-29, mm-lone-wolf-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): auto 44%, serpent 20%, arcane 20%, aimed 17%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "auto",
-          "share": 0.5459,
+          "share": 0.4359,
           "tags": ["type:ranged", "white", "school:physical", "ability:Auto Shot", "lonewolf"]
         },
         {
@@ -267,7 +267,7 @@
         },
         {
           "id": "aimed",
-          "share": 0.2117,
+          "share": 0.1714,
           "tags": ["type:ranged", "yellow", "school:physical", "ability:Aimed Shot", "ability:Sniper Shot", "ability:Shots"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -277,14 +277,14 @@
         },
         {
           "id": "arcane",
-          "share": 0.0,
+          "share": 0.1954,
           "tags": ["type:ranged", "yellow", "school:arcane", "ability:Arcane Shot", "ability:Shots", "lonewolf"],
           "cooldown": 6,
           "min_level": 6
         },
         {
           "id": "serpent",
-          "share": 0.2424,
+          "share": 0.1973,
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "lonewolf"],
           "can_crit": false,
           "min_level": 4
@@ -315,24 +315,24 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.34,
-          "cap": 0.22,
-          "rms": 0.0075,
-          "points": 19,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 1-5% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "loss": 0.765,
+          "cap": 0.51,
+          "rms": 0.0281,
+          "points": 23,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 20-26% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "melee-dps": {
-      "note": "Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf. Shares are 2026-09-27 assumptions from the tooltips (a 1.0 s weapon pair, Raptor Strike every 6 s, Mongoose Bite every ~8 s with Expose Prey, Strider Kick every 8 s) until the fight lab's melee rotation calibrates them. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build cand-melee-pet at level 60, 1500 fights): shares are the measured damage split (Cat melee 17%, Melee 16%, Serpent Sting 15%, Melee (off-hand) 15%, Raptor Strike 12%, Strider Kick 10%, Claw 6%, Auto Shot 5%, Bite 2%, Mongoose Bite 2%, Counterattack 1%, Lacerate 0%) and the leveling time split is fight 78% / drink 9% / eat 8% / other 0% / death 5% of talent-affected time with fight_coupling 0.54 (downtime and deaths scale with fight length).",
+      "note": "Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf. Shares are 2026-09-27 assumptions from the tooltips (a 1.0 s weapon pair, Raptor Strike every 6 s, Mongoose Bite every ~8 s with Expose Prey, Strider Kick every 8 s) until the fight lab's melee rotation calibrates them. Fight lab calibration (2026-09-29, beta client 1.60.1.70009, build cand-melee-pet at level 60, 1500 fights): shares are the measured damage split (Serpent Sting 14%, Cat melee 14%, Melee 13%, Immolation Trap 13%, Melee (off-hand) 12%, Raptor Strike 9%, Strider Kick 8%, Claw 6%, Auto Shot 5%, Mongoose Bite 2%, Bite 2%, Counterattack 1%, Lacerate 0%) and the leveling time split is fight 76% / drink 13% / eat 7% / other 0% / death 5% of talent-affected time with fight_coupling 0.0 (downtime and deaths scale with fight length).",
       "sources": [
         {
           "id": "melee",
           "share": 0.26,
           "tags": ["type:melee", "school:physical", "withpet", "white", "mainhand", "dw", "weapon:1h"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.183},
-            "solo-60": {"share": 0.183}
+            "leveling-st": {"share": 0.18},
+            "solo-60": {"share": 0.18}
           }
         },
         {
@@ -340,8 +340,8 @@
           "share": 0.12,
           "tags": ["type:melee", "school:physical", "withpet", "white", "offhand", "dw", "weapon:1h"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.168},
-            "solo-60": {"share": 0.168}
+            "leveling-st": {"share": 0.159},
+            "solo-60": {"share": 0.159}
           }
         },
         {
@@ -351,8 +351,8 @@
           "cost": 100,
           "cooldown": 6,
           "profile_overrides": {
-            "leveling-st": {"share": 0.138},
-            "solo-60": {"share": 0.138}
+            "leveling-st": {"share": 0.121},
+            "solo-60": {"share": 0.121}
           }
         },
         {
@@ -362,8 +362,8 @@
           "cost": 65,
           "cooldown": 5,
           "profile_overrides": {
-            "leveling-st": {"share": 0.018},
-            "solo-60": {"share": 0.018}
+            "leveling-st": {"share": 0.028},
+            "solo-60": {"share": 0.028}
           }
         },
         {
@@ -390,8 +390,8 @@
             "raid-dps": {"share": 0.0},
             "raid-dps-extwc": {"share": 0.0},
             "parse": {"share": 0.0},
-            "leveling-st": {"share": 0.01},
-            "solo-60": {"share": 0.01}
+            "leveling-st": {"share": 0.018},
+            "solo-60": {"share": 0.018}
           }
         },
         {
@@ -402,8 +402,8 @@
           "enabled_by": "Strider Kick",
           "note": "100% weapon damage every 8 s.",
           "profile_overrides": {
-            "leveling-st": {"share": 0.116},
-            "solo-60": {"share": 0.116}
+            "leveling-st": {"share": 0.114},
+            "solo-60": {"share": 0.114}
           }
         },
         {
@@ -412,8 +412,8 @@
           "tags": ["type:ranged", "dot", "school:nature", "ability:Serpent Sting", "ability:Stings", "withpet"],
           "can_crit": false,
           "profile_overrides": {
-            "leveling-st": {"share": 0.17},
-            "solo-60": {"share": 0.17}
+            "leveling-st": {"share": 0.194},
+            "solo-60": {"share": 0.194}
           }
         },
         {
@@ -421,8 +421,8 @@
           "share": 0.12,
           "tags": ["pet", "withpet", "school:physical"],
           "profile_overrides": {
-            "leveling-st": {"share": 0.196},
-            "solo-60": {"share": 0.196}
+            "leveling-st": {"share": 0.186},
+            "solo-60": {"share": 0.186}
           }
         }
       ],
@@ -444,13 +444,13 @@
       "pet_surv_to_sustain": 0.1,
       "mana_weight": {"raid-dps": 0.3},
       "time": {
-        "leveling-st": {"fight": 0.777, "drink": 0.092, "eat": 0.085, "other": 0.0, "death": 0.046},
-        "solo-60": {"fight": 0.777, "drink": 0.092, "eat": 0.085, "other": 0.0, "death": 0.046}
+        "leveling-st": {"fight": 0.756, "drink": 0.126, "eat": 0.071, "other": 0.0, "death": 0.047},
+        "solo-60": {"fight": 0.756, "drink": 0.126, "eat": 0.071, "other": 0.0, "death": 0.047}
       },
       "abs_dps_factor": 1.018,
       "kind_weights": {"kite": 0, "range": 0},
       "kind_note": "Melee playstyle: it fights in melee range and never kites, so roots and slows used to open distance (kite) and longer spell or shot range (range) are worth nothing to it in any scenario. Snares that stop a runner (stick), stuns and movement still count.",
-      "fight_coupling": {"leveling-st": 0.54, "solo-60": 0.54},
+      "fight_coupling": {"leveling-st": 0.0, "solo-60": 0.0},
       "pet_tank": {
         "leveling-st": {"downtime": 0.55, "death": 0.0},
         "solo-60": {"downtime": 0.55, "death": 0.0},

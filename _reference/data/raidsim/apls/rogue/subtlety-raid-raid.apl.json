@@ -257,6 +257,27 @@
   },
   {
    "action": {
+    "condition": {
+     "not": {
+      "val": {
+       "dotIsActive": {
+        "spellId": {
+         "spellId": 11290
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 11290
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 11269

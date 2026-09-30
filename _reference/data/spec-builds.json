@@ -1,0 +1,301 @@
+{
+ "druid": {
+  "balance-pvp": {
+   "model": "balance-dps",
+   "profile": "pvp",
+   "spec": "Balance",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "feral-combat-pvp": {
+   "model": "feral-cat-dps",
+   "profile": "pvp",
+   "spec": "Feral Combat",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "hunter": {
+  "beast-mastery-raid": {
+   "model": "bm-leveling",
+   "profile": "raid-dps",
+   "entry": "bm-raid",
+   "search": {
+    "start": "/tmp/tmpbab3akiw/hunter-beast-mastery-start.json",
+    "setting": "dummy",
+    "kept": [],
+    "moves": [
+     {
+      "round": 1,
+      "move": "5 points Improved Arcane Shot -> Careful Aim",
+      "gain_seed1": 0.024846657534732364,
+      "gain_seed2": 0.024846943176632275,
+      "split": "31/15/5"
+     },
+     {
+      "round": 2,
+      "move": "5 points Improved Tracking -> Mortal Shots",
+      "gain_seed1": 0.029616577570082958,
+      "gain_seed2": 0.029543585856807164,
+      "split": "31/20/0"
+     },
+     {
+      "round": 3,
+      "move": "2 points Endurance Training -> Focused Fire",
+      "gain_seed1": 0.020000000000000906,
+      "gain_seed2": 0.01999999999999802,
+      "split": "31/20/0"
+     },
+     {
+      "round": 4,
+      "move": "1 point Bestial Wrath -> Trueshot Aura",
+      "gain_seed1": 0.016742986971092888,
+      "gain_seed2": 0.016435418516633105,
+      "split": "30/21/0"
+     },
+     {
+      "round": 5,
+      "move": "2 points Endurance Training -> Deadly Aspects",
+      "gain_seed1": 0.0162917694269602,
+      "gain_seed2": 0.016146806128475077,
+      "split": "30/21/0"
+     }
+    ],
+    "dps_start": 421.07597762265567,
+    "dps_end": 468.14099093933805
+   },
+   "spec": "Beast Mastery",
+   "mode": "raid",
+   "date": "2026-09-29"
+  },
+  "beast-mastery-pvp": {
+   "model": "bm-leveling",
+   "profile": "pvp",
+   "spec": "Beast Mastery",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "survival-pvp": {
+   "model": "melee-dps",
+   "profile": "pvp",
+   "spec": "Survival",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "mage": {
+  "arcane-leveling": {
+   "model": "frost-leveling",
+   "profile": "leveling-st",
+   "spec": "Arcane",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 27.06998872395364,
+    "30": 29.78265085950427,
+    "40": 33.63019685749538,
+    "50": 26.56200242441318,
+    "60": 24.90530507233051
+   }
+  },
+  "arcane-pvp": {
+   "model": "frost-leveling",
+   "profile": "pvp",
+   "spec": "Arcane",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "fire-pvp": {
+   "model": "fire-leveling",
+   "profile": "pvp",
+   "spec": "Fire",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "paladin": {
+  "protection-pvp": {
+   "model": "ret-dps",
+   "profile": "pvp",
+   "spec": "Protection",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "retribution-pvp": {
+   "model": "ret-dps",
+   "profile": "pvp",
+   "spec": "Retribution",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "holy-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Holy",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "priest": {
+  "discipline-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Discipline",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "holy-pvp": {
+   "model": "holy-heal",
+   "profile": "pvp",
+   "spec": "Holy",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "rogue": {
+  "combat-pvp": {
+   "model": "combat-swords-raid",
+   "profile": "pvp",
+   "spec": "Combat",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "subtlety-leveling": {
+   "model": "combat-swords-raid",
+   "profile": "leveling-st",
+   "spec": "Subtlety",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 18.96213333328194,
+    "30": 21.911599999918373,
+    "40": 26.041933333209567,
+    "50": 28.3012772604349,
+    "60": 29.619666666505633
+   }
+  }
+ },
+ "shaman": {
+  "elemental-raid": {
+   "model": "elemental-dps",
+   "profile": "raid-dps",
+   "entry": "elemental-dps",
+   "search": {
+    "start": "/tmp/tmpmsxkdnjc/shaman-elemental-start.json",
+    "setting": "dummy",
+    "kept": [
+     "Elemental Focus"
+    ],
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Ancestral Knowledge -> Mindfulness",
+      "gain_seed1": 0.006619486991874535,
+      "gain_seed2": 0.007835326686815858,
+      "split": "31/7/13"
+     },
+     {
+      "round": 2,
+      "move": "1 point Reverberation -> Elemental Devastation",
+      "gain_seed1": 0.0025613530116463945,
+      "gain_seed2": 0.0025864640886952284,
+      "split": "31/7/13"
+     }
+    ],
+    "dps_start": 393.68369055771126,
+    "dps_end": 397.58692226665994
+   },
+   "spec": "Elemental",
+   "mode": "raid",
+   "date": "2026-09-29"
+  },
+  "enhancement-pvp": {
+   "model": "enhancement-dps",
+   "profile": "pvp",
+   "spec": "Enhancement",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "restoration-pvp": {
+   "model": "resto-heal",
+   "profile": "pvp",
+   "spec": "Restoration",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "warlock": {
+  "affliction-leveling": {
+   "model": "affliction-leveling",
+   "profile": "leveling-st",
+   "spec": "Affliction",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 25.591733333217494,
+    "30": 32.214877687339275,
+    "40": 38.02298894785158,
+    "50": 39.91978768461059,
+    "60": 40.412537207324924
+   }
+  },
+  "demonology-leveling": {
+   "model": "affliction-leveling",
+   "profile": "leveling-st",
+   "spec": "Demonology",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 25.591733333217494,
+    "30": 32.214877687339275,
+    "40": 38.800296890318414,
+    "50": 41.26769490478464,
+    "60": 39.32191892001982
+   }
+  },
+  "demonology-pvp": {
+   "model": "affliction-leveling",
+   "profile": "pvp",
+   "spec": "Demonology",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "destruction-leveling": {
+   "model": "affliction-leveling",
+   "profile": "leveling-st",
+   "spec": "Destruction",
+   "mode": "leveling",
+   "date": "2026-09-29",
+   "levels": {
+    "20": 25.591733333217494,
+    "30": 32.214877687339275,
+    "40": 39.259182767403196,
+    "50": 42.069408157447775,
+    "60": 44.55798130865584
+   }
+  },
+  "destruction-pvp": {
+   "model": "affliction-leveling",
+   "profile": "pvp",
+   "spec": "Destruction",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ },
+ "warrior": {
+  "fury-pvp": {
+   "model": "fury-dw-raid",
+   "profile": "pvp",
+   "spec": "Fury",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  },
+  "protection-pvp": {
+   "model": "arms-2h-raid",
+   "profile": "pvp",
+   "spec": "Protection",
+   "mode": "pvp",
+   "date": "2026-09-29"
+  }
+ }
+}

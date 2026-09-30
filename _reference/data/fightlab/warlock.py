@@ -370,6 +370,10 @@ class WarlockModule(BaseModule):
 
     def damage_multiplier(self, spell, frozen):
         m = 1.0 + (0.03 if self.rank("Soul Link") else 0.0)
+        if self._fight and spell.school not in ("physical", None):   # Curse of the Elements: +10% magic damage taken (2026-09-29)
+            coe = self._fight.m.debuffs.get("Curse of the Elements")
+            if coe and coe["until"] > self._fight.t:
+                m *= 1.10
         if spell.school == "shadow":
             m *= 1 + self.tv("Shadow Mastery", 0) / 100
             if self._fight:
@@ -504,6 +508,8 @@ class WarlockModule(BaseModule):
         self.pet_heal_from_damage(fight, amount)
 
     def after_cast(self, fight, spell):
+        if spell.name == "Curse of the Elements":   # a Curse, not a Bane: it sits beside Bane of Agony (one of each per warlock)
+            fight.m.debuffs["Curse of the Elements"] = {"until": fight.t + 300.0}
         p, t = fight.p, fight.t
         if spell.cooldown > 0:
             p.cooldowns[spell.name] = t + spell.cooldown
@@ -557,6 +563,7 @@ class WarlockModule(BaseModule):
             return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         corr, agony, siphon, immo, wrack, bolt, drain, tap, fear, coil, burn = (sp.get(n) for n in ("Corruption", "Bane of Agony", "Siphon Life", "Immolate", "Wrack", "Shadow Bolt", "Drain Life", "Life Tap", "Fear", "Death Coil", "Shadowburn"))
+        coe = sp.get("Curse of the Elements")
         hp = m.hp
         wand_hit = self.wand_damage() * 0.65
         pet_threat = m.threat_pet + self.pet_threat_bonus(fight)
@@ -585,7 +592,9 @@ class WarlockModule(BaseModule):
         pet_ok = not (on_me and in_melee) and not (pet is not None and pet.alive and m.target == "pet" and pet.hp < 0.3 * pet.hp_max)
         if tap and bolt and pet_ok and p.mana - bolt_cost < reserve and p.hp - tap.cost > 0.60 * p.hp_max and hp > avg(bolt) and not near_aggro:
             return tap
-        # DoTs once each, when the mob will live long enough
+        # DoTs once each, when the mob will live long enough (Curse of the Elements first: it raises every spell after it)
+        if coe and can(coe) and not (m.debuffs.get("Curse of the Elements") or {}).get("until", 0) > t and hp > 0.5 * m.hp_max:
+            return coe
         if corr and can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
             return corr
         if agony and can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:
@@ -610,7 +619,9 @@ class WarlockModule(BaseModule):
         bolt_cost = self.mana_cost(bolt) if bolt else 0.0
         if tap and bolt and p.mana < bolt_cost + 50 and p.hp - tap.cost > 0.50 * p.hp_max and not (on_me and in_melee) and hp > avg(bolt):
             return tap
-        # DoTs once each, when the mob will live long enough
+        # DoTs once each, when the mob will live long enough (Curse of the Elements first: it raises every spell after it)
+        if coe and can(coe) and not (m.debuffs.get("Curse of the Elements") or {}).get("until", 0) > t and hp > 0.5 * m.hp_max:
+            return coe
         if corr and can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
             return corr
         if agony and can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:

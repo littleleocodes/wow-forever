@@ -1,0 +1,610 @@
+{
+ "class": "hunter",
+ "spec": "mm-lonewolf-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "mm-lone-wolf-raid",
+  "opt-mm-lonewolf-raid-raid-dps",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r1.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r2.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r3.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r4.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r5.json",
+  "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/cand-mm-lonewolf-raid-r6.json"
+ ],
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "hunter/dps",
+  "gear": "ui/specs/hunter/dps/gear_sets/p1.bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid.apl.json",
+  "apl_sim": "ui/specs/hunter/dps/apls/mm.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus hunters_mark and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "battleElixirId": 13452,
+   "spellPowerElixirId": 13454,
+   "guardianElixirId": 20007,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8412,
+   "alcoholId": 21151,
+   "dragonbreathChili": true,
+   "foodId": 20452,
+   "potId": 13444
+  },
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "talents": [
+  {
+   "talent": "Lone Wolf",
+   "sim": 0.2000000000000005,
+   "ev_before": 0.19829053327385557,
+   "ev_after": 0.19829053327385557,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Efficiency",
+   "sim": 0.06711617454887063,
+   "ev_before": 0.0667709987463455,
+   "ev_after": 0.0667709987463455,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Deadly Aspects",
+   "sim": 0.05569543225332172,
+   "ev_before": 0.05776828581084598,
+   "ev_after": 0.05776828581084598,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Lethal Attacks",
+   "sim": 0.05387556290048326,
+   "ev_before": 0.057475351918347,
+   "ev_after": 0.057475351918347,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Mortal Shots",
+   "sim": 0.05148307182516033,
+   "ev_before": 0.056788663823133384,
+   "ev_after": 0.056788663823133384,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Ranged Weapon Specialization",
+   "sim": 0.0426211010832441,
+   "ev_before": 0.03768857423246105,
+   "ev_after": 0.03768857423246105,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Careful Aim",
+   "sim": 0.03943669872903989,
+   "ev_before": 0.0445365965499654,
+   "ev_after": 0.0445365965499654,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Trueshot Aura",
+   "sim": 0.02492704507717041,
+   "ev_before": 0.028097253803969966,
+   "ev_after": 0.028097253803969966,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Improved Stings",
+   "sim": 0.02423109232299968,
+   "ev_before": 0.025076811585553607,
+   "ev_after": 0.025076811585553607,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Barrage",
+   "sim": 0.009839335566003072,
+   "ev_before": 0.008606820107555832,
+   "ev_after": 0.008606820107555832,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Improved Arcane Shot",
+   "sim": 0.0012620363737904621,
+   "ev_before": 0.0035468808034433926,
+   "ev_after": 0.0035468808034433926,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Endurance Training",
+   "sim": 0.0,
+   "ev_before": 1.9842847614813787e-05,
+   "ev_after": 1.9842847614813787e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "cand-mm-lonewolf-raid-r4"
+   ]
+  },
+  {
+   "talent": "Hawk Eye",
+   "sim": 0.0,
+   "ev_before": 3.2233340877479944e-05,
+   "ev_after": 3.2233340877479944e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Aspect of the Monkey",
+   "sim": 0.0,
+   "ev_before": 5.6776269758238935e-06,
+   "ev_after": 5.6776269758238935e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid"
+   ]
+  },
+  {
+   "talent": "Rapid Killing",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2"
+   ]
+  },
+  {
+   "talent": "Rapid Recuperation",
+   "sim": 0.0,
+   "ev_before": 3.927812820449171e-05,
+   "ev_after": 3.927812820449171e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "mm-lone-wolf-raid",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2"
+   ]
+  },
+  {
+   "talent": "Improved Tracking",
+   "sim": 0.0,
+   "ev_before": 0.004923074107434463,
+   "ev_after": 0.004923074107434463,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Survivalist",
+   "sim": 0.0,
+   "ev_before": 7.25600772777576e-05,
+   "ev_after": 7.25600772777576e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-mm-lonewolf-raid-raid-dps",
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5",
+    "cand-mm-lonewolf-raid-r6"
+   ]
+  },
+  {
+   "talent": "Clever Traps",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Deterrence",
+   "sim": 0.0,
+   "ev_before": 6.452006525999602e-06,
+   "ev_after": 6.452006525999602e-06,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Entrapment",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Improved Wing Clip",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Sniper Shot",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26",
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2",
+    "cand-mm-lonewolf-raid-r3",
+    "cand-mm-lonewolf-raid-r4",
+    "cand-mm-lonewolf-raid-r5"
+   ]
+  },
+  {
+   "talent": "Surefooted",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Improved Revive Pet",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-mm-lonewolf-raid-r1",
+    "cand-mm-lonewolf-raid-r2"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": {
+   "profiles": [
+    "raid-dps",
+    "raid-dps-extwc"
+   ],
+   "loss": 0.765,
+   "cap": 0.51,
+   "rms": 0.0281,
+   "points": 23
+  },
+  "builds": {
+   "mm-lone-wolf-raid": {
+    "dps": 418.96702433649983,
+    "surplus": 524.0001924113405,
+    "oom_seconds": 92.59117504344796,
+    "deficit": 0.20044490363925205,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "opt-mm-lonewolf-raid-raid-dps": {
+    "dps": 419.49577596063125,
+    "surplus": 565.3248721967605,
+    "oom_seconds": 106.79685640198932,
+    "deficit": 0.2579562715319088,
+    "sustain": 1.3695,
+    "bound_share": 0.5241,
+    "model_deficit": 0.2073
+   },
+   "cand-mm-lonewolf-raid-hand-2026-09-26": {
+    "dps": 382.4450538174877,
+    "surplus": 478.63675394558976,
+    "oom_seconds": 93.5252399909996,
+    "deficit": 0.20097014977465966,
+    "sustain": 1.2956,
+    "bound_share": 0.5293,
+    "model_deficit": 0.2485
+   },
+   "cand-mm-lonewolf-raid-r1": {
+    "dps": 418.96702433649983,
+    "surplus": 524.0001924113405,
+    "oom_seconds": 92.59117504344796,
+    "deficit": 0.20044490363925205,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r2": {
+    "dps": 406.63407453381296,
+    "surplus": 524.0029824338435,
+    "oom_seconds": 100.47138336353396,
+    "deficit": 0.22398519060881228,
+    "sustain": 1.2217,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r3": {
+    "dps": 418.96702433649983,
+    "surplus": 523.923159287803,
+    "oom_seconds": 92.59117504344796,
+    "deficit": 0.200327343982991,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r4": {
+    "dps": 418.96702433649983,
+    "surplus": 523.923159287803,
+    "oom_seconds": 92.59117504344796,
+    "deficit": 0.200327343982991,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r5": {
+    "dps": 418.96702433649983,
+    "surplus": 523.923159287803,
+    "oom_seconds": 92.59117504344796,
+    "deficit": 0.200327343982991,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r6": {
+    "dps": 419.49577596063125,
+    "surplus": 565.3248721967605,
+    "oom_seconds": 106.79685640198932,
+    "deficit": 0.2579562715319088,
+    "sustain": 1.3695,
+    "bound_share": 0.5241,
+    "model_deficit": 0.2073
+   }
+  },
+  "removals": {
+   "mm-lone-wolf-raid -Efficiency": {
+    "deficit": 0.2543,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "mm-lone-wolf-raid -Rapid Recuperation": {
+    "deficit": 0.2004,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "opt-mm-lonewolf-raid-raid-dps -Efficiency": {
+    "deficit": 0.3093,
+    "sustain": 1.0,
+    "bound_share": 0.5241,
+    "model_deficit": 0.2673
+   },
+   "cand-mm-lonewolf-raid-hand-2026-09-26 -Efficiency": {
+    "deficit": 0.2416,
+    "sustain": 1.0,
+    "bound_share": 0.5293,
+    "model_deficit": 0.2699
+   },
+   "cand-mm-lonewolf-raid-r1 -Efficiency": {
+    "deficit": 0.2543,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r1 -Improved Revive Pet": {
+    "deficit": 0.2004,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r1 -Rapid Recuperation": {
+    "deficit": 0.2004,
+    "sustain": 1.3695,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2064
+   },
+   "cand-mm-lonewolf-raid-r2 -Efficiency": {
+    "deficit": 0.2543,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r2 -Improved Revive Pet": {
+    "deficit": 0.224,
+    "sustain": 1.2217,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r2 -Rapid Recuperation": {
+    "deficit": 0.224,
+    "sustain": 1.2217,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r3 -Efficiency": {
+    "deficit": 0.2542,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r4 -Efficiency": {
+    "deficit": 0.2542,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r5 -Efficiency": {
+    "deficit": 0.2542,
+    "sustain": 1.0,
+    "bound_share": 0.5219,
+    "model_deficit": 0.2662
+   },
+   "cand-mm-lonewolf-raid-r6 -Efficiency": {
+    "deficit": 0.3093,
+    "sustain": 1.0,
+    "bound_share": 0.5241,
+    "model_deficit": 0.2673
+   }
+  }
+ }
+}

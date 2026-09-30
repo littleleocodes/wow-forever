@@ -8,7 +8,7 @@
 2. Writes the lab's healing split into the healer model's source shares (`scorer/specs/<class>.json`).
 3. Scales each simulated talent's heal-mode effects (`modes: ["heal"]`, tagged `specs: [<model>]`) until the scorer's removal
    value matches the lab's, within tolerance; talents whose mechanics the lab does not simulate keep their manual values.
-   With --write, saves the manual file (notes name the fit) and `<class>/raid/heallab/<spec>-calibration.json`.
+   With --write, saves the manual file (notes name the fit) and `<class>/research/raid/heallab/<spec>-calibration.json`.
 """
 import argparse
 import collections

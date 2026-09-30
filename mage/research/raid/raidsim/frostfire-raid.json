@@ -1,0 +1,91 @@
+{
+ "class": "mage",
+ "spec": "frostfire-raid",
+ "game": "forever",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "mage/dps",
+  "gear": "ui/specs/mage/dps/gear_sets/p1.bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/mage/frostfire-raid.apl.json",
+  "apl_sim": "_reference/data/raidsim/apls/mage/frostfire-raid.base.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "spellPowerElixirId": 13454,
+   "schoolElixirId": 21546,
+   "guardianElixirId": 20007,
+   "zanzaId": 8423,
+   "foodId": 18254,
+   "potId": 13444,
+   "conjuredId": 12662,
+   "mhImbueId": 25122
+  },
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "date": "2026-09-29",
+ "results": [
+  {
+   "label": "frostfire-raid",
+   "talents": "002-23550000130133151-005500033",
+   "split": "2/33/16",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "143": 7.356,
+    "12051": 1.0,
+    "1237313": 34.330666666666666,
+    "11129": 1.0,
+    "2948": 0.19366666666666665,
+    "412538": 19.658333333333335,
+    "18809": 2.2856666666666667,
+    "20554": 1.0,
+    "10199": 23.592666666666666,
+    "10207": 12.519
+   },
+   "casts": {
+    "Major Mana Potion": 2.0,
+    "Mana Citrine": 1.0,
+    "Fireball": 7.356,
+    "Evocation": 1.0,
+    "Frostfire Bolt": 34.330666666666666,
+    "Combustion": 1.0,
+    "Demonic Rune": 2.0,
+    "Scorch": 12.712666666666667,
+    "Ignite": 19.658333333333335,
+    "Robe of the Archmage": 0.9656666666666667,
+    "OtherActionManaGain": 26.624,
+    "Mana Ruby": 1.0,
+    "Pyroblast": 2.2856666666666667,
+    "Berserking": 1.0,
+    "Fire Blast": 23.592666666666666,
+    "Talisman of Ephemeral Power": 2.0
+   },
+   "dps": 472.7608392261359,
+   "dps_stdev": 37.79963089758156,
+   "threat": 437.860196930789,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0.33264599999966665,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Frostfire Bolt": 0.4465490051118738,
+    "Fire Blast": 0.24633128710432628,
+    "Ignite": 0.1355166705711937,
+    "Scorch": 0.07626831265517228,
+    "Pyroblast": 0.05770015230263597,
+    "Fireball": 0.037634572254797875
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  }
+ ],
+ "deltas": {}
+}

@@ -2,6 +2,9 @@
  "veto": {
   "Hunter's Mark": {
    "off": true
+  },
+  "Immolation Trap": {
+   "min_hp": 0.7
   }
  },
  "class": "hunter",
@@ -28,6 +31,11 @@
    ],
    "gain_seed1": 0.03161045711113575,
    "gain_seed2": 0.03479522770519261
+  },
+  {
+   "change": "Immolation Trap only while the mob has more than 70% health",
+   "date": "2026-09-29",
+   "note": "traps added to the fight lab's melee hunter (2026-09-29): cast always -4.6..-6.9% time per kill at 40-60 but +1.5..1.8% at 20-30 (the 15 s burn outlives short fights); the 70% rule keeps the gain at 40-60 (-4.6/-4.9/-6.3%) and loses 0.7% at 20; 3000 fights, seed 1, leveling-melee"
   }
  ],
  "weighted_before": 28.164024961380523,

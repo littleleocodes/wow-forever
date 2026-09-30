@@ -1,0 +1,135 @@
+{
+ "dummy": {
+  "class": "druid",
+  "spec": "balance-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
+  "start": "ui\\specs\\druid\\balance\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "opt-balance-dps-raid-dps",
+    "talents": "0532220115501051-05-505003"
+   },
+   {
+    "label": "sim preset: Balance",
+    "talents": "5532220115001351--505302"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms)",
+    "gain_seed1": 0.01795328592805978,
+    "gain_seed2": 0.01824015750126229,
+    "candidates": 163,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "rank 3 below 15% mana, above: cast Starfire",
+    "gain_seed1": 0.007281146188190979,
+    "gain_seed2": 0.0074717724037793865,
+    "candidates": 163,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "always rank 1 instead of rank 3: if mana % < 15%: cast Starfire",
+    "gain_seed1": 0.004838916032873675,
+    "gain_seed2": 0.004889624677680171,
+    "candidates": 188,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "move down below 'cast Starfire': if mana % < 15%: cast Starfire",
+    "gain_seed1": 0.0036361873829613423,
+    "gain_seed2": 0.0034429452151767403,
+    "candidates": 180,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms)",
+    "gain_seed1": 0.0017851911373427676,
+    "gain_seed2": 0.001729356611086974,
+    "candidates": 192,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-balance-dps-raid-dps": {
+     "before": 457.88433743928687,
+     "after": 462.3616113408301,
+     "base": 457.88433743928687,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00423835,
+     "oom_after": 0.00423835
+    },
+    "sim preset: Balance": {
+     "before": 411.45869627632237,
+     "after": 410.8905739041697,
+     "base": 411.45869627632237,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0006493,
+     "oom_after": 0.0006493
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ },
+ "raid": {
+  "class": "druid",
+  "spec": "balance-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
+  "start": "ui/specs/druid/balance/apls/default.apl.json",
+  "builds": [
+   {
+    "label": "opt-balance-dps-raid-dps",
+    "talents": "0532220115501051-05-505003"
+   },
+   {
+    "label": "sim preset: Balance",
+    "talents": "5532220115001351--505302"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "opt-balance-dps-raid-dps": {
+     "before": 517.5722261362412,
+     "after": 517.5722261362412,
+     "base": 517.5722261362412,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Balance": {
+     "before": 463.8452073512482,
+     "after": 463.8452073512482,
+     "base": 463.8452073512482,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ }
+}

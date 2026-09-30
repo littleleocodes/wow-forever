@@ -1,8 +1,8 @@
 """Write the "Optimizer (stats model)" section of every class README from the optimizer outputs.
 
-Reads `<class>/talents/forever/proposed-builds.json` (the `opt-*` builds) and the optimizer reports, and writes the
-`## Optimizer (stats model)` section of each scenario README: the leveling and solo rows into `<class>/leveling/README.md`, the
-raid, tank and healer rows into `<class>/raid/README.md` (2026-09-27 layout, paths.py). The use-case rows and the findings
+Reads `<class>/research/talents/forever/proposed-builds.json` (the `opt-*` builds) and the optimizer reports, and writes the
+`## Optimizer (stats model)` section of each scenario README: the leveling and solo rows into `<class>/research/leveling/README.md`, the
+raid, tank and healer rows into `<class>/research/raid/README.md` (2026-09-27 layout, paths.py). The use-case rows and the findings
 prose live in this file (they are editorial); the splits and scores are read from the data.
 
     python _reference/data/render_optimizer_sections.py [class ...]

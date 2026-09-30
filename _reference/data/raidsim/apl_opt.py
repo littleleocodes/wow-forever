@@ -13,10 +13,11 @@ score is the tank value). The best candidates are run again on seed 2 with `--co
 it wins there by more than `--min-gain`. The loop stops when no change wins.
 
 With --write: the rotation goes to `_reference/data/raidsim/apls/<class>/<spec>.apl.json` (changed items carry a note), the
-search record to `<class>/raid/raidsim/<spec>-rotation-search.json`, and specs.json gets `apl_opt` pointing at the file, so the
+search record to `<class>/research/raid/raidsim/<spec>-rotation-search.json`, and specs.json gets `apl_opt` pointing at the file, so the
 races, calibrations and rotation pages use it from then on (run.py `apl_path`).
 """
 import argparse
+import contextlib
 import copy
 import datetime
 import functools
@@ -60,7 +61,7 @@ def bench(entry, repo, builds, iterations, seed, setting, tag):
            "spec": entry.get("spec", {}), **R.setting_cfg(entry, setting),
            "profession1": entry.get("profession1", "Engineering"), "profession2": entry.get("profession2", ""),
            "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
-           "iterations": iterations, "duration": 120.0, "seed": seed, "isTank": entry.get("tank", False), "builds": builds}
+           "iterations": iterations, "duration": R.FIGHT, "seed": R.sim_seed(seed), "isTank": entry.get("tank", False), "builds": builds}
     d = repo / "bench"
     d.mkdir(exist_ok=True)
     p = d / f"aplopt-{tag}-{os.getpid()}.json"
@@ -198,6 +199,9 @@ def key(item):
     return json.dumps({k: v for k, v in item.items() if k != "notes"}, sort_keys=True)
 
 
+INSERT_ONLY = [False]   # set by --insert-only (2026-09-29): the spellbook sweep tries only insertions of spells no rotation casts
+
+
 def neighbors(apl, pool, N):
     """[(description, new apl)] one edit away."""
     out = []
@@ -209,7 +213,7 @@ def neighbors(apl, pool, N):
         a["priorityList"] = new
         out.append((desc, a))
 
-    for pos, i in enumerate(vis):
+    for pos, i in (() if INSERT_ONLY[0] else enumerate(vis)):   # --insert-only: skip every edit but the insertions below
         it = lst[i]
         t = text(it, N)
         # drop
@@ -256,7 +260,7 @@ def neighbors(apl, pool, N):
                 new[i] = new_it
                 with_list(new, f"threshold {s} -> {v}: {t}")
     # guards: only with enough mana, only with enough fight left
-    for i in vis:
+    for i in (() if INSERT_ONLY[0] else vis):
         it = lst[i]
         kind = next((k for k in it.get("action", {}) if k != "condition"), None)
         if kind not in CASTS + ("sequence", "strictSequence"):
@@ -275,7 +279,7 @@ def neighbors(apl, pool, N):
             new[i] = new_it
             with_list(new, f"only with {x}s or more of the fight left: {t}")
     # lower spell ranks: always, or while mana is low (inserted just above the item)
-    for i in vis:
+    for i in (() if INSERT_ONLY[0] else vis):
         it = lst[i]
         kind = next((k for k in it.get("action", {}) if k != "condition"), None)
         if kind not in ("castSpell", "channelSpell"):
@@ -304,7 +308,7 @@ def neighbors(apl, pool, N):
                 new.insert(i, guard)
                 with_list(new, f"rank {r} below {x}% mana, above: {text(it, N)}")
     # show a hidden item
-    for i, it in enumerate(lst):
+    for i, it in (() if INSERT_ONLY[0] else enumerate(lst)):
         if it.get("hide"):
             new_it = copy.deepcopy(it)
             new_it.pop("hide", None)
@@ -313,14 +317,15 @@ def neighbors(apl, pool, N):
             with_list(new, f"show the hidden: {text(new_it, N)}")
     # insert an action from the class's other rotations
     have = {key(x) for x in lst}
-    spots = sorted({vis[0] if vis else 0, vis[len(vis) // 2] if vis else 0, vis[-1] if vis else 0})
+    # top, middle, before the filler and (2026-09-29) after everything: a spell used only when nothing else is ready (the traps won there)
+    spots = sorted({vis[0] if vis else 0, vis[len(vis) // 2] if vis else 0, vis[-1] if vis else 0, len(lst)})
     for cand in pool:
         if key(cand) in have:
             continue
         for s in spots:
             new = list(lst)
             new.insert(s, copy.deepcopy(cand))
-            where = "at the top" if s == (vis[0] if vis else 0) else ("before the filler" if vis and s == vis[-1] else "in the middle")
+            where = "at the top" if s == (vis[0] if vis else 0) else ("before the filler" if vis and s == vis[-1] else ("at the end" if s == len(lst) else "in the middle"))
             with_list(new, f"insert {where}: {text(cand, N)}")
     seen, uniq = set(), []
     for d, a in out:
@@ -350,10 +355,12 @@ NOT_COMBAT = ("Teleport", "Revive", "Call of the", "Totemic Recall", "Totemic Pr
 
 
 def new_spell_pool(cls):
-    """Casts of the class's new Forever spells, the top rank of each (the beta spellbook marks a rank "new" against Classic Era;
-    pet abilities and travel or utility spells left out). The simulator's rotations never cast some of them (Shadow Word: Death,
-    Primal Bite, Wrack, Sniper Shot, Swift Judgement, Venom...), so without these the search could not try them (2026-09-28). A
-    spell the simulator does not know is dropped from the rotation by its validator, so such a candidate changes nothing."""
+    """Casts of the class's spellbook, the top rank of each: every spell that could deal damage or raise it (2026-09-29, user request
+    "make sure we are not missing a spell in a rotation"; until then only the spells the beta spellbook marks new against Classic Era,
+    which left Arcane Shot and the hunter's traps untried). Pet abilities, travel, utility and crowd control are left out
+    (NOT_COMBAT_SPELLS, and a tooltip must speak of damage, attack power, speed, crit, spell power, armor or mana). A spell with a
+    duration ("over N sec") also comes guarded by "only while its dot is not ticking", so a bleed or a dot is not re-cast on every
+    GCD. A spell the simulator does not know is dropped from the rotation by its validator, so such a candidate changes nothing."""
     p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
     if not p.exists():
         return []
@@ -363,13 +370,49 @@ def new_spell_pool(cls):
             continue
         for sp in tab.get("spells", []):
             ranks = [r for r in sp.get("ranks", []) if r.get("id")]
-            if not ranks or not any((r.get("classic") or {}).get("status") == "new" for r in ranks):
+            if not ranks or any(sp.get("name", "").startswith(x) for x in NOT_COMBAT + NOT_COMBAT_SPELLS) or "Passive" in (ranks[-1].get("rank") or ""):
                 continue
-            if any(sp.get("name", "").startswith(x) for x in NOT_COMBAT) or "Passive" in (ranks[-1].get("rank") or ""):
+            text_all = " ".join(str(r.get("text", "")) for r in ranks)
+            if not COMBAT_TEXT.search(text_all):
                 continue
             top = max(ranks, key=lambda r: (r.get("level") or 0, int(re.search(r"\d+", r.get("rank") or "0").group() or 0) if re.search(r"\d+", r.get("rank") or "") else 0))
-            out.append({"action": {"castSpell": {"spellId": {"spellId": int(top["id"])}}}})
+            sid = int(top["id"])
+            out.append({"action": {"castSpell": {"spellId": {"spellId": sid}}}})
+            if re.search(r"over \d+ sec", str(top.get("text", ""))):
+                out.append({"action": {"condition": {"not": {"val": {"dotIsActive": {"spellId": {"spellId": sid}}}}},
+                                       "castSpell": {"spellId": {"spellId": sid}}}})
+            # a lasting debuff or buff ("for 5 min", "for 30 sec": curses, Sunder Armor, marks, armors): a plain cast recasts it on every
+            # GCD, so it also comes guarded by "only while its aura is not on the target" and "... not on you" (2026-09-29: a plain Curse
+            # of the Elements took a warlock to 0 DPS)
+            if re.search(r"for \d+ (sec|min)", str(top.get("text", ""))):
+                for unit in ("CurrentTarget", "Self"):
+                    out.append({"action": {"condition": {"auraIsInactive": {"sourceUnit": {"type": unit}, "auraId": {"spellId": sid}}},
+                                           "castSpell": {"spellId": {"spellId": sid}}}})
     return out
+
+
+def point_blank_ids(cls):
+    """Spell ids whose tooltip reaches only enemies near the caster ("within 10 yards", "nearby", "in a cone", "in front of the caster"):
+    the spellbook sweep of 2026-09-29 kept Blast Wave and Cone of Cold for a mage standing 20 yards away, where they cannot reach."""
+    p = ROOT / "_reference/data/forever-spells" / f"{cls}.json"
+    out = set()
+    for tab in (json.load(open(p, encoding="utf-8")).get("tabs", []) if p.exists() else []):
+        for sp in tab.get("spells", []):
+            text = " ".join(str(r.get("text", "")) for r in sp.get("ranks", []))
+            if re.search(r"radiates? outward from the caster|enemies within \d+ yards(?! of the (?:target|totem))|in a cone|in front of the caster|"
+                         r"around the caster|nearby enemies(?! of the target)(?!.*(?:jump|bounc|chain))", text, re.I) and "Totem" not in sp.get("name", ""):
+                out |= {int(r["id"]) for r in sp.get("ranks", []) if r.get("id")}
+    return out
+
+
+# spells no damage rotation should try (travel, summons, crowd control, stealth, resurrection, pet care)
+NOT_COMBAT_SPELLS = ("Summon", "Conjure", "Create", "Track", "Find ", "Portal", "Resurrect", "Redemption", "Ancestral Spirit", "Rebirth", "Travel Form",
+                     "Aquatic Form", "Ghost Wolf", "Water Walking", "Water Breathing", "Levitate", "Slow Fall", "Unending Breath", "Detect", "Sense",
+                     "Eye of", "Far Sight", "Mind Vision", "Beast Lore", "Tame", "Feed Pet", "Dismiss", "Revive Pet", "Mend Pet", "Eyes of the Beast",
+                     "Disenchant", "Pick Lock", "Sap", "Distract", "Stealth", "Vanish", "Prowl", "Shadowmeld", "Fade", "Feign Death", "Soulstone",
+                     "Ritual", "Enslave", "Banish", "Fear", "Hibernate", "Polymorph", "Shackle", "Mind Control", "Scare", "Turn Undead",
+                     "Psychic Scream", "Howl of Terror", "Seduction", "Blind", "Gouge", "Freezing Trap", "Frost Trap", "Scatter Shot", "Repentance")
+COMBAT_TEXT = re.compile(r"damage|attack power|attack speed|haste|critical|spell power|chance to hit|armor by|mana regen|restores? \d+ mana|increas\w+ (your|all)", re.I)
 
 
 def class_pool(repo, entry):
@@ -444,7 +487,7 @@ def main_builds(cls, spec, entry, repo, trees):
         for x in ours[:1] + theirs[:1]:
             if x.get("talents") and x["talents"] not in {b["talents"] for b in out}:
                 out.append({"label": x["label"], "talents": x["talents"]})
-    data = {b["id"]: b for b in json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
     if not out:
         for bid in entry["builds"][:1]:
             out.append({"label": bid, "talents": R.talents_string(trees, R.alloc_of(data[bid]))})
@@ -474,8 +517,13 @@ def search(cls, spec, a, repo, N, where=None):
     pool += [c for c in cds if key(c) not in {key(x) for x in pool}]
     have_ids = explicit_ids({"priorityList": pool}) | explicit_ids(base)
     news = [c for c in new_spell_pool(cls) if ("spellId", c["action"]["castSpell"]["spellId"]["spellId"]) not in have_ids]
+    if entry.get("distance", 5) > 8:   # a caster at range: no point-blank spells (the simulator does not range-check Blast Wave or Cone of Cold)
+        pb = point_blank_ids(cls)
+        news = [c for c in news if c["action"]["castSpell"]["spellId"]["spellId"] not in pb]
     pool += news
-    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} new spells), builds "
+    if INSERT_ONLY[0]:
+        pool = news
+    print(f"== {cls} {spec}: {len(items(base))} actions from {base_path.name}, {len(pool)} pool actions ({len(cds)} cooldowns, {len(news)} spellbook spells), builds "
           + ", ".join(b["label"] for b in builds) + f" ({setting}{', tank value' if tank else ''})", flush=True)
 
     def run_set(apls, iterations, seed):
@@ -603,6 +651,28 @@ def write(cls, spec, rec, base, cur, N):
     rep.write_text(json.dumps(allrec, indent=1), encoding="utf-8")
     # specs.json: point the spec at our rotation for this kind of setting (text edit keeps the file's layout)
     sp = HERE / "specs.json"
+    with specs_lock():   # several searches may run at once (one per class): read and write specs.json under a lock
+        _point_specs(sp, cls, spec, k, out)
+    print(f"  wrote {out.relative_to(ROOT)} and {rep.relative_to(ROOT)}", flush=True)
+
+
+@contextlib.contextmanager
+def specs_lock():
+    """An exclusive lock on specs.json.lock where the platform has fcntl (Linux, the cloud sessions); a no-op elsewhere."""
+    try:
+        import fcntl
+    except ImportError:
+        yield
+        return
+    with open(HERE / "specs.json.lock", "w") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(fh, fcntl.LOCK_UN)
+
+
+def _point_specs(sp, cls, spec, k, out):
     s = sp.read_text(encoding="utf-8")
     rel = out.relative_to(ROOT).as_posix()
     data = json.loads(s)
@@ -622,7 +692,6 @@ def write(cls, spec, rec, base, cur, N):
         json.loads(s)
         sp.write_text(s, encoding="utf-8")
         R.SPECS[cls][spec][k] = rel
-    print(f"  wrote {out.relative_to(ROOT)} and {rep.relative_to(ROOT)}", flush=True)
 
 
 def main():
@@ -642,7 +711,9 @@ def main():
     ap.add_argument("--setting", choices=["dummy", "raid"], help="search only this kind of setting (default: the dummy and the raid for DPS specs, the raid for tanks)")
     ap.add_argument("--repo")
     ap.add_argument("--write", action="store_true")
+    ap.add_argument("--insert-only", action="store_true", help="try only insertions of spellbook spells the rotation does not cast (the sweep of 2026-09-29)")
     a = ap.parse_args()
+    INSERT_ONLY[0] = a.insert_only
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=a.repo))
     N = RSP().Names(repo)

@@ -17,7 +17,7 @@
     ]
   },
   "Elemental Devastation": {
-    "note": "+3%/rank melee crit for 10s after an offensive spell crit: Enhancement shocks every 6s at ~15% spell crit -> ~40% uptime -> +1.2%/rank melee crit. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.22 to match (0.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "+3%/rank melee crit for 10s after an offensive spell crit: Enhancement shocks every 6s at ~15% spell crit -> ~40% uptime -> +1.2%/rank melee crit. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.1% time per kill in the simulator (scorer said 0.3% on the same scale); leveling-st/solo-60 values scaled x0.22 to match (0.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -61,7 +61,7 @@
     ]
   },
   "Elemental Focus": {
-    "note": "10% Clearcasting after any damage spell (next damage spell free): ~10% of damage-spell mana. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x1.40 to match (3.8%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "note": "10% Clearcasting after any damage spell (next damage spell free): ~10% of damage-spell mana. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.8% time per kill in the simulator (scorer said 2.8% on the same scale); leveling-st/solo-60 values scaled x1.40 to match (3.8%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.2% DPS in the simulator (scorer said 0.9% on the same scale); already within tolerance, raid effects split off unchanged (0.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -86,13 +86,6 @@
       {
         "channel": "mana_cost",
         "scope": ["dmgspell"],
-        "values": [0.019437],
-        "modes": ["raid"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "mana_cost",
-        "scope": ["dmgspell"],
         "values": [0.0],
         "modes": ["leveling-st", "solo-60"],
         "specs": ["enhancement-dps"]
@@ -102,6 +95,13 @@
         "scope": ["dmgspell"],
         "values": [0.192972],
         "modes": ["leveling-st", "solo-60"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "mana_cost",
+        "scope": ["dmgspell"],
+        "values": [0.009718],
+        "modes": ["raid"],
         "specs": ["elemental-dps"]
       },
       {
@@ -143,7 +143,7 @@
     ]
   },
   "Lightning Overload": {
-    "note": "Beta curve 3/7/10% chance for a free half-damage second Lightning Bolt/Chain Lightning: +1.5/3.5/5% on those spells. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.8%). Other modes unchanged.",
+    "note": "Beta curve 3/7/10% chance for a free half-damage second Lightning Bolt/Chain Lightning: +1.5/3.5/5% on those spells. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -199,7 +199,7 @@
     ]
   },
   "Lava Burst": {
-    "note": "Beta spellbook: ranks at 40/50/60 (150-192 / 179-231 / 192-248 after the 70009 buff), 2.5s cast, 10s cooldown, 165-265 mana, 71.4% coefficient, +20% with Flame Shock. At 60 a Lava Burst is ~1.3x a Lightning Bolt (189-211, 2.5s, 71.4%) in the same cast time and replaces one of every four bolts -> ~+8% on the Lightning Bolt share. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.1% DPS in the simulator (scorer said 0.1% on the same scale); raid values scaled x16.35 to match (1.1%). Other modes unchanged.",
+    "note": "Beta spellbook: ranks at 40/50/60 (150-192 / 179-231 / 192-248 after the 70009 buff), 2.5s cast, 10s cooldown, 165-265 mana, 71.4% coefficient, +20% with Flame Shock. At 60 a Lava Burst is ~1.3x a Lightning Bolt (189-211, 2.5s, 71.4%) in the same cast time and replaces one of every four bolts -> ~+8% on the Lightning Bolt share. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 0.7% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -299,7 +299,7 @@
     ]
   },
   "Call of Flame": {
-    "note": "+5%/rank Fire Totems, Flame Shock, Fire Nova and Lava Burst damage (parser dropped Flame Shock). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.9% DPS in the simulator (scorer said 2.2% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "+5%/rank Fire Totems, Flame Shock, Fire Nova and Lava Burst damage (parser dropped Flame Shock). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.8% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -359,7 +359,7 @@
     ]
   },
   "Thundering Strikes": {
-    "note": "+1%/rank crit with all spells and attacks. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 3.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 5.0% DPS in the simulator (scorer said 5.3% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
+    "note": "+1%/rank crit with all spells and attacks. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.9% time per kill in the simulator (scorer said 3.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 5.2% on the same scale); already within tolerance, raid effects split off unchanged (5.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -427,7 +427,7 @@
     ]
   },
   "Mental Dexterity": {
-    "note": "Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 9.1% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (6.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 3.4% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "note": "Beta text: attack power equal to 33%/rank of Intellect (100% at 3/3; the demo read 33% at 3/3). ~150 Intellect -> +50 AP per rank on ~700 AP = ~+5%/rank melee damage; encoded as ap_from_int. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.5% time per kill in the simulator (scorer said 9.1% on the same scale); leveling-st/solo-60 values scaled x0.72 to match (6.6%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 3.5% DPS in the simulator (scorer said 4.0% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "ap_from_int",
@@ -540,7 +540,7 @@
     ]
   },
   "Elemental Weapons": {
-    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank, Flametongue/Frostbrand +5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.0% time per kill in the simulator (scorer said 1.7% on the same scale); leveling-st/solo-60 values scaled x1.73 to match (3.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.1% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
+    "note": "Windfury Weapon +13.3%/rank (40% at 3/3), Rockbiter AP +6.7%/rank, Flametongue/Frostbrand +5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 3.0% time per kill in the simulator (scorer said 1.7% on the same scale); leveling-st/solo-60 values scaled x1.73 to match (3.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.1% DPS in the simulator (scorer said 1.0% on the same scale); already within tolerance, raid effects split off unchanged (1.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -693,7 +693,7 @@
     ]
   },
   "Flurry": {
-    "note": "+5%/rank attack speed for 3 swings after a melee crit (25% at 5/5, Classic 30%). Slow two-hander at ~30% raid crit: ~66% of swings hasted -> 3.3/6.6/10/13/16.5% white haste; leveling crit ~13%: ~35% -> 1.7/3.5/5/7/9%. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.2% time per kill in the simulator (scorer said 7.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 9.5% DPS in the simulator (scorer said 10.9% on the same scale); already within tolerance, raid effects split off unchanged (10.0%). Other modes unchanged.",
+    "note": "+5%/rank attack speed for 3 swings after a melee crit (25% at 5/5, Classic 30%). Slow two-hander at ~30% raid crit: ~66% of swings hasted -> 3.3/6.6/10/13/16.5% white haste; leveling crit ~13%: ~35% -> 1.7/3.5/5/7/9%. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 6.2% time per kill in the simulator (scorer said 7.4% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (7.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 9.9% DPS in the simulator (scorer said 10.5% on the same scale); already within tolerance, raid effects split off unchanged (10.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -740,7 +740,7 @@
     ]
   },
   "Stormstrike": {
-    "note": "Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8s nearly every shock is buffed; Maelstrom Lightning Bolts get it about half the time. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 24.0% DPS in the simulator (scorer said 25.1% on the same scale); already within tolerance, raid effects split off unchanged (26.9%). Other modes unchanged.",
+    "note": "Beta text: instant weapon strike every 8s (+25% main-hand swings) and +20% on the NEXT Lightning Bolt, Chain Lightning or Earth Shock within 12s (one charge; the demo read +20% Nature for 12s). With Earth Shock every 6-8s nearly every shock is buffed; Maelstrom Lightning Bolts get it about half the time. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.0% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 21.9% DPS in the simulator (scorer said 26.0% on the same scale); already within tolerance, raid effects split off unchanged (26.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -931,7 +931,7 @@
     ]
   },
   "Mental Quickness": {
-    "note": "Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.4% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "note": "Beta text: spell damage and healing from 15%/rank of Intellect (30% at 2/2; the demo read 15% at 2/2): ~+22 spell power per rank on shocks/Lightning Shield -> ~+3%/rank spell damage. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.2% time per kill in the simulator (scorer said 0.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.3% DPS in the simulator (scorer said 0.7% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1181,7 +1181,7 @@
     ]
   },
   "Rage of the Farseer": {
-    "note": "Build 70009: +30% attack speed only (the demo's spell-casting speed is gone) for 25s every 3 min (13.9% uptime): ~+4% melee haste. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 5.1% time per kill in the simulator (scorer said 4.0% on the same scale); leveling-st/solo-60 values scaled x1.27 to match (5.1%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.0%). Other modes unchanged.",
+    "note": "Build 70009: +30% attack speed only (the demo's spell-casting speed is gone) for 25s every 3 min (13.9% uptime): ~+4% melee haste. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 5.1% time per kill in the simulator (scorer said 4.0% on the same scale); leveling-st/solo-60 values scaled x1.27 to match (5.1%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.1% DPS in the simulator (scorer said 2.1% on the same scale); already within tolerance, raid effects split off unchanged (2.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -1228,7 +1228,7 @@
       {
         "channel": "haste",
         "scope": ["type:melee"],
-        "values": [0.061696],
+        "values": [0.031249],
         "modes": ["raid"],
         "specs": ["enhancement-dps"]
       }
@@ -1277,7 +1277,7 @@
     ]
   },
   "Water Shield": {
-    "note": "3 globes, 2% max mana each when hit or on a crit heal (one every few seconds): a raid healer at 18% crit gets ~4 globes/min = ~8% max mana per minute -> ~+18% mana budget over a fight; leveling (hit often) ~+12%; raid DPS rarely hit ~+2%. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -1.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-28, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 5.8% on the same scale); heal values scaled x1.27 to match (6.5%). Other modes unchanged.",
+    "note": "3 globes, 2% max mana each when hit or on a crit heal (one every few seconds): a raid healer at 18% crit gets ~4 globes/min = ~8% max mana per minute -> ~+18% mana budget over a fight; leveling (hit often) ~+12%; raid DPS rarely hit ~+2%. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -1.6% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Healer lab calibration (2026-09-28, resto-heal): removing it costs 7.0% healing capacity in the lab (scorer said 5.8% on the same scale); heal values scaled x1.27 to match (6.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1311,13 +1311,6 @@
         "scope": ["all"],
         "values": [0.0],
         "modes": ["raid"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
-        "values": [0.0],
-        "modes": ["raid"],
         "specs": ["enhancement-dps"]
       },
       {
@@ -1333,11 +1326,18 @@
         "values": [0.307604],
         "modes": ["heal"],
         "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "values": [0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
       }
     ]
   },
   "Totemic Focus": {
-    "note": "-5%/rank mana on totems and totem spells. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.39 to match (0.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.8% DPS in the simulator (scorer said 0.8% on the same scale); already within tolerance, raid effects split off unchanged (0.7%). Other modes unchanged.",
+    "note": "-5%/rank mana on totems and totem spells. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.5% on the same scale); leveling-st/solo-60 values scaled x0.39 to match (0.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.3% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.35 to match (0.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1390,22 +1390,22 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Totems"],
-        "per_rank": 0.025,
-        "values": [0.025, 0.05, 0.075, 0.1, 0.125],
+        "per_rank": 0.0125,
+        "values": [0.0125, 0.025, 0.0375, 0.05, 0.0625],
         "modes": ["raid"],
         "specs": ["elemental-dps"]
       },
       {
         "channel": "mana_cost",
         "scope": ["ability:Totems"],
-        "values": [0.039084, 0.078168, 0.117252, 0.156337, 0.195421],
+        "values": [0.013813, 0.027627, 0.04144, 0.055254, 0.069068],
         "modes": ["raid"],
         "specs": ["enhancement-dps"]
       }
     ]
   },
   "Restorative Totems": {
-    "note": "Mana Spring +5%/rank (~+0.6%/rank of a healer's mana budget) and Healing Stream +10%/rank. Healer lab calibration (2026-09-28, resto-heal): removing it costs 2.9% healing capacity in the lab (scorer said 1.6% on the same scale); heal values scaled x1.99 to match (2.9%). Other modes unchanged.",
+    "note": "Mana Spring +5%/rank (~+0.6%/rank of a healer's mana budget) and Healing Stream +10%/rank. Healer lab calibration (2026-09-28, resto-heal): removing it costs 2.9% healing capacity in the lab (scorer said 1.6% on the same scale); heal values scaled x1.99 to match (2.9%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 0.0% DPS in the simulator (scorer said 0.0% on the same scale); mana values moved to the mana limit's unit (x0.50), raid values otherwise unchanged (noise) (0.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1456,22 +1456,6 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["raid"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "heal",
-        "scope": ["ability:Healing Stream Totem"],
-        "per_rank": 0.0,
-        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
-        "modes": ["raid"],
-        "specs": ["elemental-dps"]
-      },
-      {
-        "channel": "sustain",
-        "scope": ["all"],
         "per_rank": 0.007589,
         "values": [0.007589, 0.015178, 0.022769, 0.030358, 0.037947],
         "modes": ["heal"],
@@ -1484,11 +1468,27 @@
         "values": [0.126491, 0.252982, 0.379473, 0.505964, 0.632453],
         "modes": ["heal"],
         "specs": ["resto-heal"]
+      },
+      {
+        "channel": "sustain",
+        "scope": ["all"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
+      },
+      {
+        "channel": "heal",
+        "scope": ["ability:Healing Stream Totem"],
+        "per_rank": 0.0,
+        "values": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "modes": ["raid"],
+        "specs": ["elemental-dps"]
       }
     ]
   },
   "Mana Tide Totem": {
-    "note": "352 mana to the group every 5 min (Classic 680): ~+4% of your own mana budget plus group mana. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (0.8%). Other modes unchanged.",
+    "note": "352 mana to the group every 5 min (Classic 680): ~+4% of your own mana budget plus group mana. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.1% DPS in the simulator (scorer said 1.3% on the same scale); already within tolerance, raid effects split off unchanged (1.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "sustain",
@@ -1540,7 +1540,7 @@
       {
         "channel": "sustain",
         "scope": ["all"],
-        "values": [0.024872],
+        "values": [0.012436],
         "modes": ["raid"],
         "specs": ["elemental-dps"]
       }
@@ -1871,7 +1871,7 @@
     ]
   },
   "Elemental Fury": {
-    "note": "+20%/rank crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 10.5% time per kill in the simulator (scorer said 9.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.9%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 7.4% DPS in the simulator (scorer said 8.4% on the same scale); already within tolerance, raid effects split off unchanged (8.1%). Other modes unchanged.",
+    "note": "+20%/rank crit damage bonus on Fire/Frost/Nature damage spells and fire totems (healing crits are unaffected). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 10.5% time per kill in the simulator (scorer said 9.6% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (9.9%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 7.5% DPS in the simulator (scorer said 8.6% on the same scale); already within tolerance, raid effects split off unchanged (8.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -1917,7 +1917,7 @@
     ]
   },
   "Shamanistic Focus": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.9% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (3.7%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 8.1% DPS in the simulator (scorer said 5.7% on the same scale); raid values scaled x1.49 to match (8.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.9% time per kill in the simulator (scorer said 4.1% on the same scale); leveling-st/solo-60 values scaled x1.00, the cap on effect size stops short of the target (3.7%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 5.6% DPS in the simulator (scorer said 5.6% on the same scale); already within tolerance, raid effects split off unchanged (5.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -1978,7 +1978,7 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Shock", "ability:Lightning Shield"],
-        "values": [0.200277],
+        "values": [0.491895],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["elemental-dps"]
@@ -1986,7 +1986,7 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Shock", "ability:Lightning Shield"],
-        "values": [0.398743],
+        "values": [0.264719],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["enhancement-dps"]
@@ -1994,7 +1994,7 @@
     ]
   },
   "Concussion": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.3%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.2% time per kill in the simulator (scorer said 2.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.6% DPS in the simulator (scorer said 0.3% on the same scale); already within tolerance, raid effects split off unchanged (0.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2054,7 +2054,7 @@
     ]
   },
   "Reverberation": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.7% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.5% DPS in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs -0.7% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cooldown",
@@ -2122,7 +2122,7 @@
     ]
   },
   "Mindfulness": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.6% time per kill in the simulator (scorer said 2.6% on the same scale); leveling-st/solo-60 values scaled x1.48 to match (3.6%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (3.0%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 3.6% time per kill in the simulator (scorer said 2.6% on the same scale); leveling-st/solo-60 values scaled x1.48 to match (3.6%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 3.1% DPS in the simulator (scorer said 3.3% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "regen",
@@ -2182,7 +2182,7 @@
       {
         "channel": "regen",
         "scope": ["all"],
-        "values": [0.110618, 0.21473, 0.325346],
+        "values": [0.09795, 0.190139, 0.288088],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["elemental-dps"]
@@ -2190,7 +2190,7 @@
     ]
   },
   "Tidal Focus": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.5% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-st/solo-60 values scaled x0.36 to match (0.5%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 0.5% time per kill in the simulator (scorer said 1.5% on the same scale); leveling-st/solo-60 values scaled x0.36 to match (0.5%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.5% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -2299,7 +2299,7 @@
       {
         "channel": "mana_cost",
         "scope": ["type:spell", "heal"],
-        "values": [0.005, 0.01, 0.015, 0.02, 0.025],
+        "values": [0.0025, 0.005, 0.0075, 0.01, 0.0125],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["elemental-dps"]
@@ -2323,7 +2323,7 @@
     ]
   },
   "Elemental Alacrity": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.9% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 19.3% DPS in the simulator (scorer said 15.3% on the same scale); raid values scaled x1.30 to match (20.1%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 2.9% time per kill in the simulator (scorer said 2.2% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.2%). Other modes unchanged. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 18.2% DPS in the simulator (scorer said 21.0% on the same scale); already within tolerance, raid effects split off unchanged (21.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "cast_time",
@@ -2383,7 +2383,7 @@
     ]
   },
   "Call of Thunder": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, elemental-dps, training dummy): removing it costs 1.7% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2435,7 +2435,7 @@
     ]
   },
   "Convection": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.3% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "mana_cost",
@@ -2479,7 +2479,7 @@
       {
         "channel": "mana_cost",
         "scope": ["ability:Shock", "ability:Lightning Bolt", "ability:Lava Burst", "ability:Chain Lightning"],
-        "values": [0.004609, 0.009219, 0.013828, 0.018438, 0.023048],
+        "values": [0.002305, 0.004609, 0.006914, 0.009219, 0.011524],
         "source": "parsed",
         "modes": ["raid"],
         "specs": ["elemental-dps"]
@@ -2495,7 +2495,7 @@
     ]
   },
   "Ancestral Knowledge": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 1.5% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, enhancement-dps, training dummy): removing it costs 0.9% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "stat",

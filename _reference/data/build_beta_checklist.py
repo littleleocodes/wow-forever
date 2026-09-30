@@ -113,7 +113,7 @@ def class_section(cls):
         out.append("")
 
     # 7: open questions from leveling builds
-    builds = load_json(ROOT / cls / "talents" / "forever" / "proposed-builds.json")["builds"]
+    builds = load_json(ROOT / cls / "research" / "talents" / "forever" / "proposed-builds.json")["builds"]
     qs = []
     for b in builds:
         if b.get("content") == "leveling":

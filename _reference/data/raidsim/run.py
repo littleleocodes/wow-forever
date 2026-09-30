@@ -1,6 +1,6 @@
 """Level-60 raid builds through the ElliotWood/Forever (wowsims) simulator: DPS per talent build, one report per spec.
 
-    python _reference/data/raidsim/run.py mage --spec frost-raid [--builds id ...] [--iterations 3000] [--duration 120] [--write]
+    python _reference/data/raidsim/run.py mage --spec frost-raid [--builds id ...] [--iterations 3000] [--duration 180] [--write]
     python _reference/data/raidsim/run.py --all --write            # every spec in specs.json
 
 Needs the simulator checkout with the bench tool built (`setup.py`; default location %USERPROFILE%/.wow-forever-tools, or
@@ -8,7 +8,7 @@ Needs the simulator checkout with the bench tool built (`setup.py`; default loca
 gear preset, rotation (APL), player options and consumables; the sim's own preset talent builds are raced alongside ours.
 Talent strings are built from `<repo>/ui/sim/talents/trees/<class>.json` (same beta client as our data, names match).
 
-Outputs (--write): `<class>/raid/raidsim/<spec>.md` and `.json` (generated). The simulator is the community's model of
+Outputs (--write): `<class>/research/raid/raidsim/<spec>.md` and `.json` (generated). The simulator is the community's model of
 the Forever beta (its own tests and presets); its numbers are simulations of that model, not measurements.
 """
 import argparse
@@ -25,11 +25,13 @@ ROOT = HERE.parents[2]
 sys.path.insert(0, str(ROOT / "_reference/data/scorer"))
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))   # _reference/data: paths.py
 import paths  # noqa: E402
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import id_names  # noqa: E402  (spell and item names the simulator's lists miss)
 GAME = "forever"   # or "classic-era": set by main() from --game; every path below follows it
-GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "talents/forever/proposed-builds.json",
-                     "trees": "ui/sim/talents/trees", "reports": "raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
-         "classic-era": {"specs": "specs-classic.json", "env": "WOW_FOREVER_CLASSIC_SIM", "repo": "classic-repo", "bench": "classicbench", "builds": "talents/classic-baseline/builds.json",
-                         "trees": "ui/core/talents/trees", "reports": "talents/classic-baseline/raidsim", "name_key": "fieldName", "ui": "ui"}}
+GAMES = {"forever": {"specs": "specs.json", "env": "WOW_FOREVER_SIM", "repo": "forever-repo", "bench": "foreverbench", "builds": "research/talents/forever/proposed-builds.json",
+                     "trees": "ui/sim/talents/trees", "reports": "research/raid/raidsim", "name_key": "fancyName", "ui": "ui/specs"},
+         "classic-era": {"specs": "specs-classic.json", "env": "WOW_FOREVER_CLASSIC_SIM", "repo": "classic-repo", "bench": "classicbench", "builds": "research/talents/classic-baseline/builds.json",
+                         "trees": "ui/core/talents/trees", "reports": "research/talents/classic-baseline/raidsim", "name_key": "fieldName", "ui": "ui"}}
 SPECS = json.load(open(HERE / "specs.json", encoding="utf-8"))
 
 
@@ -239,9 +241,9 @@ def action_shares(actions, names, key="damage"):
     dmg = {}
     for a in actions or []:
         if a.get("spellId"):
-            name = names.get(int(a["spellId"]), f"spell {a['spellId']}")
+            name = names.get(int(a["spellId"])) or id_names.spell(a["spellId"])
         elif a.get("itemId"):
-            name = f"item {a['itemId']}"
+            name = id_names.item(a["itemId"])
         else:
             name = a.get("other", "other")
             if name in ("OtherActionAttack", "OtherActionShoot"):
@@ -263,9 +265,9 @@ def action_casts(actions, names):
             continue
         if a.get("spellId"):
             by_id[str(a["spellId"])] = by_id.get(str(a["spellId"]), 0.0) + c
-            name = names.get(int(a["spellId"]), f"spell {a['spellId']}")
+            name = names.get(int(a["spellId"])) or id_names.spell(a["spellId"])
         elif a.get("itemId"):
-            name = f"item {a['itemId']}"
+            name = id_names.item(a["itemId"])
         else:
             name = {"OtherActionAttack": "Auto Attack", "OtherActionShoot": "Auto Shot"}.get(a.get("other", ""), a.get("other", "other"))
         if a.get("pet"):
@@ -363,6 +365,13 @@ def scorer_scores(cls, spec, profile, allocs):
 SETTING_OVERRIDE = None   # --setting dummy|raid
 
 
+def sim_seed(seed):
+    """The bench's RandomSeed for our seed k (2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so seeds 1, 2 and 3
+    over 20,000 iterations shared all but one iteration and a "second seed" re-ran the first one's random numbers. Seed k starts at
+    1 + (k - 1) * 1,000,000: seed 1 is unchanged (every earlier seed-1 number stands) and the others are disjoint below a million iterations."""
+    return 1 + (int(seed) - 1) * 1_000_000
+
+
 def setting(entry):
     """The setting of a spec's main runs (the table, the removal deltas the calibration fits, the races): Forever DPS specs on a
     boss-level training dummy with only the class's own buffs (2026-09-27: raw personal DPS decides the raid DPS builds); tanks, whose
@@ -375,17 +384,41 @@ def setting(entry):
 # every mana-only buff the simulator has: the "dummy-surplus" setting (raidsim/calibrate.py) runs the dummy with them on top, and the
 # damage a build gains is what running short of mana costs it on the dummy (waiting out of mana, Evocation, Life Tap, Innervate, the
 # rotation's mana conditions); out-of-mana seconds alone miss most of it (a Frost mage's Evocation, a warlock's Life Taps)
+# The standard fight length (2026-09-29, user request "compare dummy and raid fairly"): 180 s, the middle of a Classic boss fight's
+# 2-4 minutes. At 120 s the ranking flattered front-loaded cooldowns and specs that run out of mana late (the fight-length test:
+# 60 s to 360 s moved the Lone Wolf hunter -31%, the Frost mage -3%). Every bench config takes its duration from here.
+FIGHT = 180.0
+# The buff ladder: from the training dummy to the raid one group at a time (cumulative), so a spec's raid gain splits into mana,
+# armor, physical and spell parts. Groups hold the simulator's full raid buffs (core/test_utils.go FullRaidBuffs, FullPartyBuffs,
+# FullIndividualBuffs, FullDebuffs at 40be98e); what no group names (Kings, stamina, spirit, auras, Atiesh...) arrives in the last step,
+# together with the raid rotation.
+LADDER = [
+    ("mana", {"mana_spring_totem": "TristateEffectImproved", "mana_tide_totems": 1, "greater_blessing_of_wisdom": True}, {"judgement_of_wisdom": True}),
+    ("armor", {}, {"sunder_armor": True, "expose_armor": True, "faerie_fire": True, "curse_of_recklessness": True}),
+    ("physical", {"battle_shout": "TristateEffectRegular", "greater_blessing_of_might": True, "windfury_totem": True, "strength_of_earth_totem": True,
+                  "leader_of_the_pack": True, "trueshot_aura": True}, {"hunters_mark": True, "gift_of_arthas": True}),
+    ("spell", {"arcane_brilliance": True, "moonkin_aura": True}, {"curse_of_elements": True, "judgement_of_the_crusader": True}),
+]
+CURVE = [60, 120, 180, 240, 360]   # fight lengths of the DPS-over-time curve (training dummy without execute phases)
 MANA_SURPLUS = {"buffs": {"mana_spring_totem": "TristateEffectImproved", "mana_tide_totems": 4, "greater_blessing_of_wisdom": True, "innervates": 4},
                 "debuffs": {"judgement_of_wisdom": True}}
 
 
 def setting_cfg(entry, name, level=0, no_execute=False):
     """Bench config fields of a setting: buffs, consumables and the target."""
-    if name in ("dummy", "dummy-surplus"):   # your own buffs include your own consumables (flask, elixirs, food, potions, weapon oils and stones)
+    if name in ("dummy", "dummy-surplus") or name.startswith("ladder-"):   # your own buffs include your own consumables (flask, elixirs, food, potions, weapon oils and stones)
         sb, sd = dict(entry.get("self_buffs", {})), dict(entry.get("self_debuffs", {}))
         if name == "dummy-surplus":
             sb.update(MANA_SURPLUS["buffs"])
             sd.update(MANA_SURPLUS["debuffs"])
+        if name.startswith("ladder-"):   # the dummy plus every ladder group up to and including this one
+            upto = [g for g, _, _ in LADDER].index(name[len("ladder-"):])
+            for _, gb, gd in LADDER[:upto + 1]:
+                sb.update(gb)
+                sd.update(gd)
+            for k in entry.get("buffs_off", []) + entry.get("debuffs_off", []):   # the spec's own buff stays its own (as in the raid setting)
+                sb.pop(k, None)
+                sd.pop(k, None)
         return {"consumables": entry.get("consumables", {}), "buffs": "self", "buffs_on": sb, "debuffs_on": sd,
                 "buffs_off": [], "debuffs_off": [], "targetLevel": level, "noExecute": no_execute}
     if name == "none":
@@ -442,7 +475,7 @@ def run_spec(cls, spec, a, repo):
            **setting_cfg(entry, setting(entry)),
            "profession1": entry.get("profession1", "Engineering"),
            "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False),
-           "reactionTimeMs": 200, "iterations": a.iterations, "duration": a.duration, "seed": a.seed, "isTank": entry.get("tank", False),
+           "reactionTimeMs": 200, "iterations": a.iterations, "duration": a.duration, "seed": sim_seed(a.seed), "isTank": entry.get("tank", False),
            "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
     bench_dir = repo / "bench"
     bench_dir.mkdir(exist_ok=True)
@@ -619,12 +652,39 @@ def best_gear(repo, entry):
 
 
 ENVIRONMENTS = {
-    "dummy": {"label": "training dummy", "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 120 s: the setting that ranks the raid DPS builds (Forever)"},
-    "dummy60": {"label": "level-60 dummy", "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 120 s"},
-    "raid": {"label": "raid", "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 120 s"},
-    "max": {"label": "maximum", "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 120 s"},
+    "dummy": {"label": "training dummy", "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"},
+    "dummy60": {"label": "level-60 dummy", "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"},
+    "raid": {"label": "raid", "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"},
+    "max": {"label": "maximum", "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"},
     "max60": {"label": "maximum, 60 s", "how": "as maximum with a 60 s fight: cooldowns weigh more"},
+    **{f"ladder-{g}": {"label": f"+ {g}", "how": f"the training dummy plus the raid's {g} buffs and debuffs"
+                       + (" (and every group before it)" if i else "") + ": " + ", ".join([*gb, *gd])} for i, (g, gb, gd) in enumerate(LADDER)},
+    **{f"curve{n}": {"label": f"{n} s", "how": f"the training dummy without execute phases, a {n} s fight (the DPS-over-time curve)"} for n in CURVE},
 }
+
+
+def ladder_steps(rows):
+    """{label: {"dummy", "raid", "steps": {group: gain as a share of the dummy DPS}}} from an environments run's rows."""
+    out = {}
+    for x in rows:
+        d = x["dps"]
+        seq = ["dummy"] + [f"ladder-{g}" for g, _, _ in LADDER] + ["raid"]
+        if not all(d.get(k) for k in seq):
+            continue
+        steps = {(k[len("ladder-"):] if k.startswith("ladder-") else "rest"): (d[k] - d[prev]) / d["dummy"] for prev, k in zip(seq, seq[1:])}
+        out[x["label"]] = {"dummy": d["dummy"], "raid": d["raid"], "steps": steps}
+    return out
+
+
+def curve_windows(rows):
+    """{label: {"1 min": dps, ...}}: average DPS by fight length (training dummy, no execute phase). Differences between lengths
+    (the DPS inside each stretch) were tried and dropped: subtracting two noisy totals swung the stretches by 7% at 3000 iterations."""
+    out = {}
+    for x in rows:
+        d = x["dps"]
+        if all(d.get(f"curve{n}") for n in CURVE):
+            out[x["label"]] = {(f"{n // 60} min" if n % 60 == 0 else f"{n} s"): d[f"curve{n}"] for n in CURVE}
+    return out
 
 
 def run_environments(cls, spec, a, repo):
@@ -633,7 +693,7 @@ def run_environments(cls, spec, a, repo):
     trees = load_trees(repo, cls)
     data = json.load(open(ROOT / cls / GAMES[GAME]["builds"], encoding="utf-8"))
     by_id = {b["id"]: b for b in data["builds"]}
-    ids = a.builds or entry["builds"]
+    ids = a.builds or (entry["builds"] + [f"opt-{spec}-parse"] * (f"opt-{spec}-parse" in by_id))   # the parse build as rebuild.py passes it
     builds = []
     for bid in ids:
         if bid.endswith(".json"):
@@ -651,17 +711,23 @@ def run_environments(cls, spec, a, repo):
     gear_max = sim_path(best_gear(repo, entry))
     base_cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "apl": str(apl_path(entry, repo)), "spec": entry.get("spec", {}), "profession1": entry.get("profession1", "Engineering"),
                 "profession2": entry.get("profession2", ""), "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
-                "iterations": a.iterations, "seed": a.seed, "isTank": entry.get("tank", False), "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
+                "iterations": a.iterations, "seed": sim_seed(a.seed), "isTank": entry.get("tank", False), "builds": [{"label": b["label"], "talents": b["talents"]} for b in builds]}
     envs = {}
     dummy_apl, raid_apl = str(apl_path(entry, repo, "dummy")), str(apl_path(entry, repo, "raid"))   # each setting runs its own rotation
     if GAME == "forever":
-        envs["dummy"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=120.0, apl=dummy_apl, **setting_cfg(entry, "dummy"))
-        envs["dummy60"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=120.0, apl=dummy_apl, **setting_cfg(entry, "dummy", level=60, no_execute=True))
+        envs["dummy"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=FIGHT, apl=dummy_apl, **setting_cfg(entry, "dummy"))
+        envs["dummy60"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=FIGHT, apl=dummy_apl, **setting_cfg(entry, "dummy", level=60, no_execute=True))
     else:
-        envs["dummy60"] = dict(base_cfg, gear=entry["gear"], duration=120.0, **setting_cfg(entry, "none", level=60, no_execute=True))
-    envs["raid"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=120.0, apl=raid_apl, **setting_cfg(entry, "raid"))
+        envs["dummy60"] = dict(base_cfg, gear=entry["gear"], duration=FIGHT, **setting_cfg(entry, "none", level=60, no_execute=True))
+    if GAME == "forever" and not entry.get("tank"):
+        for g, _, _ in LADDER:
+            envs[f"ladder-{g}"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=FIGHT, apl=dummy_apl, **setting_cfg(entry, f"ladder-{g}"))
+    envs["raid"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=FIGHT, apl=raid_apl, **setting_cfg(entry, "raid"))
+    if GAME == "forever" and not entry.get("tank"):
+        for n in CURVE:
+            envs[f"curve{n}"] = dict(base_cfg, gear=sim_path(entry["gear"]), duration=float(n), apl=dummy_apl, **setting_cfg(entry, "dummy", no_execute=True))
     envs.update({
-        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=[], debuffs_off=[], duration=120.0, apl=raid_apl),
+        "max": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=[], debuffs_off=[], duration=FIGHT, apl=raid_apl),
         "max60": dict(base_cfg, gear=gear_max, consumables=entry.get("consumables", {}), buffs="full", buffs_off=[], debuffs_off=[], duration=60.0, apl=raid_apl),
     })
     bench = GAMES[GAME]["bench"]
@@ -686,6 +752,7 @@ def run_environments(cls, spec, a, repo):
                                                                                                           "iterations": a.iterations, "seed": a.seed}, "environments": ENVIRONMENTS, "results": rows}
     print(f"== {cls} {spec} environments (gear raid {pathlib.Path(entry['gear']).name}, max {pathlib.Path(gear_max).name}):")
     key = "dummy" if GAME == "forever" else "raid"
+    base = [k for k in envs if not k.startswith(("ladder-", "curve"))]
     for x in sorted(rows, key=lambda x: -(x["dps"].get(key) or 0)):
         print(f"  {x['label']:<42} {x['split']:>8}  " + "  ".join(f"{k} {x['dps'].get(k) or 0:7.1f}" for k in envs))
     if a.write:
@@ -698,12 +765,38 @@ def run_environments(cls, spec, a, repo):
              "Personal DPS of the same builds in every setting: the boss-level training dummy with your own buffs (it ranks the raid DPS builds), an in-game "
              "level-60 dummy, the fully buffed raid, and the theoretical maximum (best gear preset, everything on). Simulations of the community's model, "
              "not measurements. Do not hand-edit.", "",
-             "| Build | Split | " + " | ".join(ENVIRONMENTS[k]["label"].capitalize() for k in envs) + " |", "|---|---|" + "---|" * len(envs)]
+             "| Build | Split | " + " | ".join(ENVIRONMENTS[k]["label"].capitalize() for k in base) + " |", "|---|---|" + "---|" * len(base)]
         for x in sorted(rows, key=lambda x: -(x["dps"].get(key) or 0)):
             name = f"`{x['label']}`" if x["ours"] else x["label"]
             cell = lambda k: (f"{x['dps'][k]:.0f}" if x["dps"].get(k) else "-")   # noqa: E731
-            o.append(f"| {name} | {x['split'] or '-'} | " + " | ".join(cell(k) for k in envs) + " |")
-        o += [""] + [f"- **{ENVIRONMENTS[k]['label']}**: {ENVIRONMENTS[k]['how']}" for k in envs] + ["", f"Gear presets: raid `{pathlib.Path(entry['gear']).name}`, maximum `{pathlib.Path(gear_max).name}`. "
+            o.append(f"| {name} | {x['split'] or '-'} | " + " | ".join(cell(k) for k in base) + " |")
+        o += [""] + [f"- **{ENVIRONMENTS[k]['label']}**: {ENVIRONMENTS[k]['how']}" for k in base] + [""]
+        lad = ladder_steps(rows)
+        if lad:
+            o += ["## Where the raid gain comes from", "",
+                  "Each build from the training dummy to the raid, one group of raid buffs at a time (each step adds to the one before; "
+                  "\"rest\" is every other raid buff plus the raid rotation). Percent of the dummy DPS.", "",
+                  "| Build | Dummy | " + " | ".join(f"+ {g}" for g, _, _ in LADDER) + " | + rest | Raid |", "|---|---|" + "---|" * (len(LADDER) + 2)]
+            for x in sorted(rows, key=lambda x: -(x["dps"].get(key) or 0)):
+                st = lad.get(x["label"])
+                if st:
+                    name = f"`{x['label']}`" if x["ours"] else x["label"]
+                    o.append(f"| {name} | {st['dummy']:.0f} | " + " | ".join(f"{v:+.0%}" for v in st["steps"].values()) + f" | {st['raid']:.0f} |")
+            o += ["", "Groups: " + "; ".join(f"**{g}** " + ", ".join([*gb, *gd]) for g, gb, gd in LADDER) + ". A spec's own raid buff stays its own "
+                  "(the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.", ""]
+        cur = curve_windows(rows)
+        if cur:
+            o += ["## DPS by fight length", "",
+                  "Average DPS on the training dummy (no execute phase) if the fight lasts this long. A row that falls is a spec that "
+                  "front-loads its cooldowns or runs out of mana; about ±1% per cell at 3000 iterations.", "",
+                  "| Build | " + " | ".join(w for w in next(iter(cur.values()))) + " |", "|---|" + "---|" * len(next(iter(cur.values())))]
+            for x in sorted(rows, key=lambda x: -(x["dps"].get(key) or 0)):
+                c = cur.get(x["label"])
+                if c:
+                    name = f"`{x['label']}`" if x["ours"] else x["label"]
+                    o.append(f"| {name} | " + " | ".join(f"{v:.0f}" for v in c.values()) + " |")
+            o.append("")
+        o += [f"Gear presets: raid `{pathlib.Path(entry['gear']).name}`, maximum `{pathlib.Path(gear_max).name}`. "
               "`opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.", ""]
         (d / f"{spec}-environments.md").write_text("\n".join(o) + "\n", encoding="utf-8")
         print(f"wrote {(d / f'{spec}-environments.md').relative_to(ROOT)}")
@@ -736,12 +829,18 @@ def git_commit(repo):
 
 def write_report(out):
     cls, spec = out["class"], out["spec"]
+    if not out["results"]:   # an entry with no builds and no presets (the Shockadin survey target): nothing to report
+        print(f"  {cls} {spec}: no builds to report")
+        return
     d = paths.raidsim_dir(cls, GAME)
     d.mkdir(parents=True, exist_ok=True)
     (d / f"{spec}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     sim = out["sim"]
     tank = any(x.get("value") is not None for x in out["results"])
     rows = sorted(out["results"], key=lambda x: -((x.get("value") if tank else x["dps"]) or 0))
+    if not rows:   # an entry with no builds and no presets (the Shockadin survey target): nothing to report
+        print(f"  {cls} {spec}: no builds to report")
+        return
     best = rows[0]["dps"] or 1.0
     simname = "ElliotWood/Forever simulator (wowsims fork" if out.get("game", "forever") == "forever" else "upstream wowsims/classic simulator (Classic Era"
     o = [f"# Raid sim — {cls} {spec}" + (" (Classic Era)" if out.get("game") == "classic-era" else ""), "",
@@ -797,7 +896,7 @@ def main():
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--builds", nargs="*")
     ap.add_argument("--iterations", type=int, default=3000)
-    ap.add_argument("--duration", type=float, default=120.0)
+    ap.add_argument("--duration", type=float, default=FIGHT)
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--repo")
     ap.add_argument("--no-presets", action="store_true")

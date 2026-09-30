@@ -11,7 +11,7 @@ What it does
    the raid split, fitted by raidsim/calibrate.py) and the leveling time split (fight / downtime / death) from what the first
    build's rotation produced at the highest level.
    Pass several builds (the hand draft, the optimizer's current build and its earlier candidates, saved as
-   `<class>/leveling/fightlab/candidates/*.json`; a build id ending in .json is read from that file): the fit
+   `<class>/research/leveling/fightlab/candidates/*.json`; a build id ending in .json is read from that file): the fit
    then averages each talent's marginal over builds instead of chasing one build's interactions.
 3. For the talents in FIT, scales the manual effect values that apply to the leveling profiles
    (`modes: [leveling-st, solo-60]`) until the scorer's value of the same removal, on the same relative-to-the-build
@@ -20,7 +20,7 @@ What it does
    already within tolerance are restructured but not scaled; talents whose sim value is inside the noise floor are
    left alone; a fit that cannot reach the target (the model's channel saturates, e.g. hit) keeps its values.
 4. Prints sim vs scorer before/after per level and, with --write, saves the spec and manual files with notes naming
-   the fit, plus `<class>/leveling/fightlab/<spec>-calibration.json`.
+   the fit, plus `<class>/research/leveling/fightlab/<spec>-calibration.json`.
 
 Scale: the scorer's score is the fraction of time per kill saved against a talentless character, so its value of a
 removal on the sim's scale is (score_with - score_without) / (1 - score_with).

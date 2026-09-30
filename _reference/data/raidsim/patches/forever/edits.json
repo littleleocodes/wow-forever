@@ -1,4 +1,14 @@
 [
- {"file": "sim/mage/mage.go", "after": "\tmage.registerFireballSpell()\n", "insert": "\tmage.registerFrostfireBolt() // wow-forever patch: Frostfire Bolt (patches/forever/sim/mage/frostfire_bolt.go)\n",
-  "why": "the fork's frostfire_bolt.go is a stub and is not wired into Initialize"}
+ {
+  "file": "sim/mage/mage.go",
+  "after": "\tmage.registerFireballSpell()\n",
+  "insert": "\tmage.registerFrostfireBolt() // wow-forever patch: Frostfire Bolt (patches/forever/sim/mage/frostfire_bolt.go)\n",
+  "why": "the fork's frostfire_bolt.go is a stub and is not wired into Initialize"
+ },
+ {
+  "file": "sim/hunter/aspects.go",
+  "after": "\thunter.registerAspectOfTheHawkSpell()\n",
+  "insert": "\thunter.registerAspectOfTheBeastSpell() // wow-forever patch: Aspect of the Beast + melee Deadly Aspects (patches/forever/sim/hunter/aspect_of_the_beast.go)\n",
+  "why": "the fork models only Aspect of the Hawk and the ranged half of Deadly Aspects"
+ }
 ]

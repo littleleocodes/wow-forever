@@ -1,0 +1,263 @@
+{
+ "class": "mage",
+ "spec": "fire-raid",
+ "build": "fire-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Arcane Concentration": 0.05807874332727625,
+  "Arcane Focus": 0.0007910012950048673,
+  "Combustion": 0.05713152597585425,
+  "Critical Mass": 0.06528417521675645,
+  "Elemental Precision": 0.06168236481385825,
+  "Fire Power": 0.0895914078197112,
+  "Hot Streak": 0.33457007993496246,
+  "Ignite": 0.11201435179193364,
+  "Improved Fireball": 0.07079147388605422,
+  "Improved Scorch": 0.35003112697178373,
+  "Incineration": 0.028192530809449945,
+  "Magic Absorption": -0.0,
+  "Master of Elements": 0.02487803842343972,
+  "Pyroblast": 0.056950995548506134,
+  "Wake of Fire": 0.012848998642416065,
+  "Wand Specialization": -0.0
+ },
+ "free": [
+  "Arcane Focus",
+  "Magic Absorption",
+  "Wand Specialization"
+ ],
+ "kept_for_rotation": [
+  "Hot Streak"
+ ],
+ "active_never_worth": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Magic Absorption",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Magic Absorption",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Wand Specialization",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Wand Specialization",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Arcane Focus",
+   "to": "Improved Channeling",
+   "seed1": -6.466001992810888e-05,
+   "seed2": -0.00024718399541312497,
+   "utility": "interrupt"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Arcane Focus",
+   "to": "Arcane Subtlety",
+   "seed1": -0.0003010886004944924,
+   "seed2": -0.00017505428456787708,
+   "utility": "threat"
+  },
+  {
+   "round": 7,
+   "kind": "utility",
+   "from": "Arcane Focus",
+   "to": "Arcane Subtlety",
+   "seed1": -0.0001907234676861158,
+   "seed2": -0.0002698018891464926,
+   "utility": "threat"
+  },
+  {
+   "round": 8,
+   "kind": "utility",
+   "from": "Arcane Focus",
+   "to": "Burning Soul",
+   "seed1": -0.0001608802628250139,
+   "seed2": -0.0001348147256905463,
+   "utility": "threat"
+  },
+  {
+   "round": 9,
+   "kind": "utility",
+   "from": "Arcane Focus",
+   "to": "Burning Soul",
+   "seed1": -7.388066188163123e-05,
+   "seed2": -0.00013166152818888666,
+   "utility": "threat"
+  }
+ ],
+ "final_seed3": -0.0009544708929665191,
+ "start": {
+  "Arcane": [
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Magic Absorption",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Burning Soul",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ }
+}

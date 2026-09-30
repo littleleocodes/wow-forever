@@ -1,0 +1,149 @@
+{
+ "class": "hunter",
+ "spec": "melee-dps",
+ "game": "forever",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "hunter/dps",
+  "gear": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+  "apl": "_reference/data/raidsim/apls/hunter/melee-dps.apl.json",
+  "apl_sim": "_reference/data/raidsim/apls/hunter/melee-dps.base.apl.json",
+  "race": "RaceTroll",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) plus hunters_mark and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "battleElixirId": 13452,
+   "spellPowerElixirId": 13454,
+   "guardianElixirId": 20007,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8412,
+   "alcoholId": 21151,
+   "dragonbreathChili": true,
+   "foodId": 20452,
+   "potId": 13444
+  },
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "date": "2026-09-29",
+ "results": [
+  {
+   "label": "melee-survival-raid",
+   "talents": "5-005005001-050230230250222151",
+   "split": "5/11/35",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "14266": 55.27133333333333,
+    "1317257": 16.950666666666667,
+    "20554": 1.0,
+    "1299447": 1.0,
+    "14271": 33.75233333333333,
+    "14268": 58.368,
+    "14305": 8.074,
+    "3045": 1.0
+   },
+   "casts": {
+    "Raptor Strike": 55.27133333333333,
+    "OtherActionManaGain": 2.0,
+    "Major Mana Potion": 2.0,
+    "Strider Kick": 16.950666666666667,
+    "Berserking": 1.0,
+    "Aspect of the Beast": 1.0,
+    "Auto Attack": 164.07166666666666,
+    "Mongoose Bite": 33.75233333333333,
+    "Wing Clip": 58.368,
+    "Immolation Trap": 8.074,
+    "Rapid Fire": 1.0
+   },
+   "dps": 423.8727987581186,
+   "dps_stdev": 21.52686945929688,
+   "threat": 433.87279875811873,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 37.26569869466967,
+   "error": null,
+   "scorer": 1.1137124216852066,
+   "shares": {
+    "Auto Attack": 0.44506327293398623,
+    "Raptor Strike": 0.15986816751283367,
+    "Mongoose Bite": 0.1397998496250842,
+    "Immolation Trap": 0.1010105015595318,
+    "Strider Kick": 0.07599185467778669,
+    "Wing Clip": 0.05078159113103558,
+    "Dragonbreath Chili": 0.027484762559741856
+   },
+   "source_shares": {
+    "melee": 0.3525,
+    "raptor_strike": 0.1948,
+    "melee_oh": 0.1898,
+    "mongoose_bite": 0.1703,
+    "strider_kick": 0.0926
+   },
+   "unmatched_share": 0.1793
+  },
+  {
+   "label": "opt-melee-dps-raid-dps",
+   "talents": "5-005045001-500250030050220151",
+   "split": "5/15/31",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "14271": 36.24466666666666,
+    "1317257": 19.402333333333335,
+    "14305": 6.0,
+    "14266": 58.937333333333335,
+    "14268": 71.053,
+    "1299447": 1.0,
+    "20554": 1.0,
+    "3045": 1.0
+   },
+   "casts": {
+    "Mongoose Bite": 36.24466666666666,
+    "Strider Kick": 19.402333333333335,
+    "Immolation Trap": 6.0,
+    "Raptor Strike": 58.937333333333335,
+    "Wing Clip": 71.053,
+    "Major Mana Potion": 1.4956666666666667,
+    "Aspect of the Beast": 1.0,
+    "Auto Attack": 164.29933333333332,
+    "OtherActionManaGain": 1.4956666666666667,
+    "Berserking": 1.0,
+    "Rapid Fire": 1.0
+   },
+   "dps": 424.3069559804656,
+   "dps_stdev": 21.850574406891848,
+   "threat": 431.7852893137989,
+   "dtps": 0,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 13.249534730366003,
+   "error": null,
+   "scorer": 1.2369157927694672,
+   "shares": {
+    "Auto Attack": 0.4463883668342041,
+    "Raptor Strike": 0.17104110711153284,
+    "Mongoose Bite": 0.14883276927469544,
+    "Strider Kick": 0.0872636791254117,
+    "Wing Clip": 0.06160221537255155,
+    "Immolation Trap": 0.056271832604835315,
+    "Dragonbreath Chili": 0.028600029676769036
+   },
+   "source_shares": {
+    "melee": 0.3399,
+    "raptor_strike": 0.2004,
+    "melee_oh": 0.183,
+    "mongoose_bite": 0.1744,
+    "strider_kick": 0.1022
+   },
+   "unmatched_share": 0.1465
+  }
+ ],
+ "deltas": {}
+}

@@ -13,6 +13,7 @@ Raptor Strike when a mob reaches the hunter. Between fights: Mend Pet, food and 
 """
 import json
 import pathlib
+import dataclasses
 import re
 
 from engine import parse_interrupt, BaseModule, Pet, Player, Spell, Weapon
@@ -42,7 +43,9 @@ TALENT_SPELLS = {"Summon Hawk": "Summon Hawk", "Intimidation": "Intimidation", "
                  "Strider Kick": "Strider Kick", "Lacerating Strikes": "Lacerating Strikes"}
 MELEE = {"Raptor Strike", "Mongoose Bite", "Wing Clip", "Counterattack", "Strider Kick"}
 RANGED = {"Arcane Shot", "Multi-Shot", "Aimed Shot", "Serpent Sting", "Concussive Shot", "Scatter Shot", "Sniper Shot", "Summon Hawk", "Scorpid Sting", "Viper Sting"}
-SHARED_CD = {"Multi-Shot": ("Aimed Shot",), "Aimed Shot": ("Multi-Shot",), "Arcane Shot": ("Summon Hawk",), "Summon Hawk": ("Arcane Shot",)}
+SHARED_CD = {"Multi-Shot": ("Aimed Shot",), "Aimed Shot": ("Multi-Shot",), "Arcane Shot": ("Summon Hawk",), "Summon Hawk": ("Arcane Shot",),
+             "Immolation Trap": ("Explosive Trap",), "Explosive Trap": ("Immolation Trap",)}   # fire traps share their cooldown
+TRAPS = ("Immolation Trap", "Explosive Trap")
 
 
 def _num(s):
@@ -172,11 +175,12 @@ MECHANICS = {
     "Predator's Edge": "+6%/rank melee crit damage",
     "Improved Wing Clip": "6.7%/rank root 5s on Wing Clip",
     "Deterrence": "+25% dodge and parry for 10 s; the melee rotation presses it below 40% health (5 min cooldown)",
-    "Survivalist's Discipline": "-20%/rank Deterrence cooldown (traps are not modelled)",
+    "Survivalist's Discipline": "-20%/rank Deterrence and trap cooldown (the melee hunter's Immolation Trap)",
     "Resourcefulness": "-30%/rank mana on melee abilities; a crit has a 30%/rank chance to let 50% of mana regen continue while casting for 30 s",
     "Counterattack": "not used (needs a parry)",
-    "Entrapment": "traps are not modelled",
-    "Clever Traps": "traps are not modelled",
+    "Entrapment": "a root when a trap fires: the melee hunter's mob stands beside it anyway (not used)",
+    "Survival Tactics": "+5%/rank chance to hit with traps (the melee hunter's Immolation Trap)",
+    "Clever Traps": "+15%/rank Immolation and Explosive Trap damage (the melee hunter's Immolation Trap)",
 }
 FIT = {
     "Unleashed Fury": "scale", "Ferocity": "scale", "Endurance Training": "scale", "Focused Fire": "scale", "Bestial Swiftness": "scale",
@@ -199,7 +203,7 @@ DESCRIPTION = ("Single-target leveling fights against normal mobs of your level 
                "shared cooldown, Auto Shot in between (the bow cannot fire inside 8 yd); Bestial Wrath, Intimidation and Rapid Fire on the pull when ready; Mend Pet when "
                "the pet drops below 35%; Feign Death, Wing Clip and Raptor Strike when a mob reaches you. Between fights: 2 s loot, 6 s travel, Mend Pet below 70% pet "
                "health, water below 35% mana, food below 65% health, a 10 s Revive Pet after a pet death; a death costs 90 s.")
-NOT_MODELLED = "runners, adds, traps, kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket."
+NOT_MODELLED = "runners, adds, the ranged hunter's traps (the pet holds the mob away from them), kiting (Concussive Shot / Wing Clip and running), Scatter Shot, Disengage, Volley, pet happiness and feeding, gear upgrades within a level bracket."
 # rebuild.py: which scorer model, hand draft and optimizer build the pipeline calibrates, races and reports for this class
 PIPELINE = {"variants": [{'spec': 'bm-leveling', 'opt': 'opt-bm-leveling-leveling-aoe', 'tag': 'aoe', 'profile': 'leveling-aoe', 'lookahead': 16, 'sets': ['MOBS_PER_PULL=3'], 'levels': '30,40,50,60', 'calibrate_levels': '40,60', 'label': 'AoE grinding, 3 mobs per pull'},
                           {'spec': 'melee-dps', 'opt': 'opt-melee-dps-leveling-st', 'tag': 'melee', 'profile': 'leveling-st', 'lookahead': 16, 'sets': [], 'levels': '20,30,40,50,60',
@@ -244,6 +248,19 @@ class HunterModule(BaseModule):
         self._base_mana = 0.0
         self.hawks = 0
         self.armor_spell_used = "Aspect of the Hawk" if "Aspect of the Hawk" in self.spells else "none"
+        self._fix_traps()
+
+    def _fix_traps(self):
+        """The spellbook parser reads no periodic damage from the traps' wording ("burn the first enemy to approach for 690 Fire damage over
+        15 sec", "and 330 additional Fire damage over 20 sec"): fill it in (2026-09-29). Immolation ticks every 3 s, Explosive every 2 s."""
+        for name, every in (("Immolation Trap", 3.0), ("Explosive Trap", 2.0)):
+            s = self.spells.get(name)
+            if s is None or s.dot > 0:
+                continue
+            m = re.search(r"(\d+) (?:additional )?Fire damage over (\d+) sec", s.text)
+            if m:
+                dur = float(m.group(2))
+                self.spells[name] = dataclasses.replace(s, dot=float(m.group(1)), dot_dur=dur, dot_ticks=max(1, int(round(dur / every))))
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -330,13 +347,15 @@ class HunterModule(BaseModule):
             cost = cost / 100 * self._base_mana
         if spell.kind in ("ranged", "melee") or spell.name in ("Serpent Sting", "Scorpid Sting"):
             cost *= 1 - self.tv("Efficiency", 0) / 100
-        if spell.kind == "melee":
+        if spell.kind == "melee" or spell.name in TRAPS:   # Resourcefulness: "Trap abilities and melee abilities"
             cost *= 1 - self.tv("Resourcefulness", 0) / 100
         if spell.name == "Mend Pet":
             cost *= 1 - self.tv("Improved Mend Pet", 1) / 100
         return cost
 
     def hit_bonus(self, spell):
+        if spell.name in TRAPS:
+            return self.tv("Survival Tactics", 0) / 100
         return 0.0
 
     def crit_bonus(self, spell, frozen):
@@ -361,6 +380,8 @@ class HunterModule(BaseModule):
             m *= 1 + self.tv("Barrage", 0) / 100
         if spell.name == "Serpent Sting":
             m *= 1 + self.tv("Improved Stings", 0) / 100
+        if spell.name in TRAPS:
+            m *= 1 + self.tv("Clever Traps", 1) / 100
         return m
 
     def periodic_can_crit(self, spell):
@@ -507,6 +528,7 @@ class HunterModule(BaseModule):
             return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
 
         mark, sting, raptor, mongoose, counter, kick, deter, mend = (sp.get(n) for n in ("Hunter's Mark", "Serpent Sting", "Raptor Strike", "Mongoose Bite", "Counterattack", "Strider Kick", "Deterrence", "Mend Pet"))
+        trap = sp.get("Immolation Trap")
         hp = m.hp
         if mend and can(mend) and pet is not None and pet.alive and pet.hp < 0.35 * pet.hp_max and m.target == "pet":
             return mend
@@ -525,6 +547,10 @@ class HunterModule(BaseModule):
             return mongoose
         if kick and can(kick):
             return kick
+        # Immolation Trap under the mob while it has health for the 15 s burn (2026-09-29: traps work in combat; the raid rotation's
+        # last line, here before the Raptor Strike queue, which is off the GCD)
+        if trap and can(trap) and hp > 0.4 * m.hp_max and not fight.dot_active("Immolation Trap"):
+            return trap
         if raptor and can(raptor) and fight.queued_swing is None:
             return raptor
         return None
@@ -547,12 +573,12 @@ class HunterModule(BaseModule):
         cd = spell.cooldown
         if spell.name == "Arcane Shot":
             cd = max(GCD, cd - 0.3 * self.rank("Improved Arcane Shot"))
-        if spell.name == "Deterrence":
+        if spell.name == "Deterrence" or spell.name in TRAPS:
             cd *= 1 - self.tv("Survivalist's Discipline", 0) / 100
         if cd > 0:
             p.cooldowns[spell.name] = t + cd
             for other in SHARED_CD.get(spell.name, ()):
-                p.cooldowns[other] = max(p.cooldowns.get(other, 0.0), t + spell.cooldown)
+                p.cooldowns[other] = max(p.cooldowns.get(other, 0.0), t + (cd if spell.name in TRAPS else spell.cooldown))
         if spell.name == "Bestial Wrath":
             pass
 

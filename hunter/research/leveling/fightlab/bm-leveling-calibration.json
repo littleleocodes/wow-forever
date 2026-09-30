@@ -1,0 +1,405 @@
+{
+ "class": "hunter",
+ "spec": "bm-leveling",
+ "profile": "leveling-aoe",
+ "levels": [
+  40,
+  60
+ ],
+ "fights": 1500,
+ "builds": [
+  "opt-bm-leveling-leveling-aoe",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r1.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r2.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r3.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r4.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r5.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r6.json",
+  "/home/user/wow-forever/hunter/leveling/fightlab/candidates/cand-aoe-r7.json"
+ ],
+ "shares": {
+  "Cat melee": 0.20829065875321343,
+  "Auto Shot": 0.18459739112321852,
+  "Melee": 0.17692851184332856,
+  "Serpent Sting": 0.1588934007457272,
+  "Volley": 0.10863798627935797,
+  "Claw": 0.06292941639232146,
+  "Mongoose Bite": 0.04825924274868357,
+  "Raptor Strike": 0.013670288602052485,
+  "Summon Hawk 2": 0.01149189335117682,
+  "Bite": 0.00899590552659662,
+  "Aimed Shot": 0.006048508425977285,
+  "Wing Clip": 0.0047494126506573775,
+  "Summon Hawk 1": 0.0036189124306405147,
+  "Summon Hawk": 0.0028884711270483186
+ },
+ "time_split": {
+  "fight": 0.646,
+  "drink": 0.032,
+  "eat": 0.039,
+  "other": 0.0,
+  "death": 0.282
+ },
+ "talents": [
+  {
+   "talent": "Summon Hawk",
+   "sim": 0.17015273756669907,
+   "ev_before": 0.17733076551604743,
+   "ev_after": 0.16903717459820866,
+   "scale": 2.199764998629689,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.21598121918299842,
+     "ev": 0.15838063178899572
+    },
+    {
+     "level": 60,
+     "sim": 0.12432425595039971,
+     "ev": 0.1796937174074216
+    }
+   ]
+  },
+  {
+   "talent": "Unleashed Fury",
+   "sim": 0.09957800607921163,
+   "ev_before": 0.07396082214921512,
+   "ev_after": 0.0981333398073739,
+   "scale": 1.3387139914557338,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.08281396326413437,
+     "ev": 0.10460622829477552
+    },
+    {
+     "level": 60,
+     "sim": 0.1163420488942889,
+     "ev": 0.0916604513199723
+    }
+   ]
+  },
+  {
+   "talent": "Improved Tracking",
+   "sim": 0.05700237810483838,
+   "ev_before": 0.017960565960736294,
+   "ev_after": 0.05663102027008658,
+   "scale": 3.218277109786868,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0596153449053313,
+     "ev": 0.03934048523906975
+    },
+    {
+     "level": 60,
+     "sim": 0.054389411304345464,
+     "ev": 0.07392155530110342
+    }
+   ]
+  },
+  {
+   "talent": "Efficiency",
+   "sim": 0.05681569586948824,
+   "ev_before": 0.009137312294070488,
+   "ev_after": 0.00914736285114441,
+   "scale": 1.0,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.13236838474129042,
+     "ev": 0.013340335083185743
+    },
+    {
+     "level": 60,
+     "sim": -0.018736993002313948,
+     "ev": 0.0049543906191030765
+    }
+   ]
+  },
+  {
+   "talent": "Surefooted",
+   "sim": 0.046317813522688156,
+   "ev_before": 0.02999644676069172,
+   "ev_after": 0.03987955272010586,
+   "scale": 3.0360992197225007,
+   "how": "capped",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.036020415926331276,
+     "ev": 0.03724988995552519
+    },
+    {
+     "level": 60,
+     "sim": 0.05661521111904503,
+     "ev": 0.04250921548468653
+    }
+   ]
+  },
+  {
+   "talent": "Ferocity",
+   "sim": 0.0435058594040288,
+   "ev_before": 0.04673835816533102,
+   "ev_after": 0.04856637455824763,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03613380549188954,
+     "ev": 0.05259353938394668
+    },
+    {
+     "level": 60,
+     "sim": 0.050877913316168054,
+     "ev": 0.04453920973254858
+    }
+   ]
+  },
+  {
+   "talent": "Focused Fire",
+   "sim": 0.04119712801756378,
+   "ev_before": 0.02617142583608288,
+   "ev_after": 0.04102628465456712,
+   "scale": 1.5689167426899076,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.05029920129541804,
+     "ev": 0.03970133478818828
+    },
+    {
+     "level": 60,
+     "sim": 0.03209505473970953,
+     "ev": 0.04235123452094596
+    }
+   ]
+  },
+  {
+   "talent": "Lightning Reflexes",
+   "sim": 0.03912516165170526,
+   "ev_before": 0.04604054232148316,
+   "ev_after": 0.04607868292447213,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03479381638240803,
+     "ev": 0.04526703246573704
+    },
+    {
+     "level": 60,
+     "sim": 0.04345650692100249,
+     "ev": 0.046890333383207215
+    }
+   ]
+  },
+  {
+   "talent": "Lethal Attacks",
+   "sim": 0.02457376810276868,
+   "ev_before": 0.016982014974341677,
+   "ev_after": 0.016856862034507196,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.019215619189462317,
+     "ev": 0.019780086003846776
+    },
+    {
+     "level": 60,
+     "sim": 0.029931917016075036,
+     "ev": 0.013933638065167613
+    }
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.024149947793168265,
+   "ev_before": 0.017288615228575912,
+   "ev_after": 0.01661092330350867,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.030651374632010172,
+     "ev": 0.016793079548256984
+    },
+    {
+     "level": 60,
+     "sim": 0.0789512702183467,
+     "ev": 0.016428767058760355
+    }
+   ]
+  },
+  {
+   "talent": "Survivalist",
+   "sim": 0.015784371591356955,
+   "ev_before": 0.009578829105213963,
+   "ev_after": 0.009423421746289788,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.007316263952848293,
+     "ev": 0.010024698083350388
+    },
+    {
+     "level": 60,
+     "sim": 0.038885007135562207,
+     "ev": 0.00882214540922919
+    }
+   ]
+  },
+  {
+   "talent": "Deadly Aspects",
+   "sim": 0.01533147053218037,
+   "ev_before": 0.04199418621043127,
+   "ev_after": 0.01533136973162946,
+   "scale": 0.3641178091056645,
+   "how": "fitted",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.03708837819543013,
+     "ev": 0.016292234282291894
+    },
+    {
+     "level": 60,
+     "sim": -0.006425437131069386,
+     "ev": 0.014370505180967027
+    }
+   ]
+  },
+  {
+   "talent": "Rapid Killing",
+   "sim": 0.010254107873184422,
+   "ev_before": 0.004340638504362245,
+   "ev_after": 0.004515011610105689,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": -0.0399519137952614,
+     "ev": 0.004524124100872993
+    },
+    {
+     "level": 60,
+     "sim": 0.06046012954163024,
+     "ev": 0.004505899119338385
+    }
+   ]
+  },
+  {
+   "talent": "Savage Strikes",
+   "sim": 0.008367198020996221,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "dead",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.005737671922180807,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": 0.010996724119811637,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Bestial Swiftness",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Improved Revive Pet",
+   "sim": 0.0,
+   "ev_before": 0.0006968369865040146,
+   "ev_after": 0.0007038357054588681,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.0,
+     "ev": 0.0006817712212504312
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.000725900189667305
+    }
+   ]
+  },
+  {
+   "talent": "Improved Concussive Shot",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": null,
+     "ev": null
+    },
+    {
+     "level": 60,
+     "sim": 0.0,
+     "ev": 0.0
+    }
+   ]
+  },
+  {
+   "talent": "Hawk Eye",
+   "sim": -0.033765757078124,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "kept",
+   "per_level": [
+    {
+     "level": 40,
+     "sim": 0.02947016362827127,
+     "ev": 0.0
+    },
+    {
+     "level": 60,
+     "sim": -0.09700167778451928,
+     "ev": 0.0
+    }
+   ]
+  }
+ ]
+}

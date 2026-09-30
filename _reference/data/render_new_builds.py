@@ -1,11 +1,11 @@
 """Write the new-builds survey: `_reference/new-builds-survey.md` and the "New spells and builds" section of every
-`<class>/raid/README.md` (generated).
+`<class>/research/raid/README.md` (generated).
 
     python _reference/data/render_new_builds.py [classes...]
 
 For each class: the spells the Forever beta spellbook marks new against Classic Era (`forever-spells/<class>.json`), what the
-community simulator measured them doing in the raid races (damage share and casts per minute, `<class>/raid/raidsim/<spec>.json`)
-and what the fight lab measured in leveling at level 60 (`<class>/leveling/fightlab/*.json`); then the builds searched around them
+community simulator measured them doing in the raid races (damage share and casts per minute, `<class>/research/raid/raidsim/<spec>.json`)
+and what the fight lab measured in leveling at level 60 (`<class>/research/leveling/fightlab/*.json`); then the builds searched around them
 (`_reference/data/new-builds.json`, hand-kept: each target is a rotation-only entry of `raidsim/specs.json` with its own rotation,
 its talents found by `raidsim/talent_opt.py`) with their training-dummy and raid DPS against the class's best raid build.
 Numbers come from the last races (`raidsim/run.py --write`); nothing is simulated here. `rebuild.py --steps regen` runs it.

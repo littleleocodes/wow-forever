@@ -1,0 +1,284 @@
+{
+ "class": "rogue",
+ "spec": "combat-swords-raid",
+ "game": "forever",
+ "date": "2026-09-29",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p1_bis.gear.json",
+  "gear_max": "ui/specs/rogue/dps/gear_sets/combat_sinister_strike_p2_bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "combat-swords-raid",
+   "split": "19/32/0",
+   "ours": true,
+   "dps": {
+    "dummy": 388.70002417294205,
+    "dummy60": 460.06472714329027,
+    "ladder-mana": 388.54572399235,
+    "ladder-armor": 446.5522910947623,
+    "ladder-physical": 597.2534271081222,
+    "ladder-spell": 601.6422192304632,
+    "raid": 679.7895358906973,
+    "curve60": 439.62342555907907,
+    "curve120": 401.3765174911924,
+    "curve180": 388.70002417294205,
+    "curve240": 381.5287040453936,
+    "curve360": 388.9823241139751,
+    "max": 690.7814445849988,
+    "max60": 784.5605986769276
+   }
+  },
+  {
+   "label": "opt-combat-swords-raid-raid-dps",
+   "split": "20/31/0",
+   "ours": true,
+   "dps": {
+    "dummy": 370.34495566838837,
+    "dummy60": 440.0636816345839,
+    "ladder-mana": 370.7513128806158,
+    "ladder-armor": 437.4412184355971,
+    "ladder-physical": 581.9221465052254,
+    "ladder-spell": 587.5347299021411,
+    "raid": 688.1222256092217,
+    "curve60": 417.83791530948804,
+    "curve120": 381.2356703517096,
+    "curve180": 370.34495566838837,
+    "curve240": 363.6099373502382,
+    "curve360": 370.7513052893428,
+    "max": 698.7288204806463,
+    "max60": 792.8469578686098
+   }
+  },
+  {
+   "label": "opt-combat-swords-raid-parse",
+   "split": "20/31/0",
+   "ours": true,
+   "dps": {
+    "dummy": 370.34495566838837,
+    "dummy60": 440.0636816345839,
+    "ladder-mana": 370.7513128806158,
+    "ladder-armor": 437.4412184355971,
+    "ladder-physical": 581.9221465052254,
+    "ladder-spell": 587.5347299021411,
+    "raid": 688.1222256092217,
+    "curve60": 417.83791530948804,
+    "curve120": 381.2356703517096,
+    "curve180": 370.34495566838837,
+    "curve240": 363.6099373502382,
+    "curve360": 370.7513052893428,
+    "max": 698.7288204806463,
+    "max60": 792.8469578686098
+   }
+  },
+  {
+   "label": "sim preset: Backstab",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 314.3306023292128,
+    "dummy60": 377.63334275577074,
+    "ladder-mana": 314.3215318048782,
+    "ladder-armor": 396.5606654829307,
+    "ladder-physical": 530.4488945021991,
+    "ladder-spell": 534.5393104630583,
+    "raid": 614.344491986159,
+    "curve60": 356.87182388569494,
+    "curve120": 325.04986737548285,
+    "curve180": 314.3306023292128,
+    "curve240": 308.82723648735896,
+    "curve360": 313.840579988615,
+    "max": 625.1959007619735,
+    "max60": 705.821327323585
+   }
+  },
+  {
+   "label": "sim preset: Sinister Strike",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 366.32562016675536,
+    "dummy60": 434.89371777585745,
+    "ladder-mana": 366.457535946494,
+    "ladder-armor": 435.3217244391004,
+    "ladder-physical": 582.0886638245188,
+    "ladder-spell": 586.4048211481039,
+    "raid": 686.4997569684385,
+    "curve60": 416.34175506791524,
+    "curve120": 378.56305162349156,
+    "curve180": 366.32562016675536,
+    "curve240": 360.5657591332948,
+    "curve360": 366.83438715122895,
+    "max": 698.9526760692595,
+    "max60": 796.1003150099094
+   }
+  },
+  {
+   "label": "sim preset: Improved Expose Armor (SS)",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 388.70002417294205,
+    "dummy60": 460.06472714329027,
+    "ladder-mana": 388.54572399235,
+    "ladder-armor": 446.5522910947623,
+    "ladder-physical": 597.2534271081222,
+    "ladder-spell": 601.6422192304632,
+    "raid": 679.7895358906973,
+    "curve60": 439.62342555907907,
+    "curve120": 401.3765174911924,
+    "curve180": 388.70002417294205,
+    "curve240": 381.5287040453936,
+    "curve360": 388.9823241139751,
+    "max": 690.7814445849988,
+    "max60": 784.5605986769276
+   }
+  },
+  {
+   "label": "sim preset: Mutilate",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 324.9865384863282,
+    "dummy60": 390.7925904744694,
+    "ladder-mana": 324.6184853005567,
+    "ladder-armor": 379.8397971768063,
+    "ladder-physical": 505.0732462795696,
+    "ladder-spell": 509.5928474897875,
+    "raid": 599.938179532222,
+    "curve60": 345.50578827507394,
+    "curve120": 329.7362277384596,
+    "curve180": 324.9865384863282,
+    "curve240": 324.26926369153983,
+    "curve360": 325.52481216991384,
+    "max": 609.7813924431613,
+    "max60": 655.071389930509
+   }
+  },
+  {
+   "label": "sim preset: Combat Dual-Wield 15/33/3",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 360.3667068026748,
+    "dummy60": 427.4058206645703,
+    "ladder-mana": 360.1332729736598,
+    "ladder-armor": 428.2706248084167,
+    "ladder-physical": 572.5123713734075,
+    "ladder-spell": 576.7976062835276,
+    "raid": 674.2536122296793,
+    "curve60": 404.89593073606125,
+    "curve120": 370.8485285301654,
+    "curve180": 360.3667068026748,
+    "curve240": 353.92603956851235,
+    "curve360": 360.65600569676826,
+    "max": 686.0069518183059,
+    "max60": 776.234585634292
+   }
+  },
+  {
+   "label": "sim preset: Assassination Mutilate 31/20/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 335.51728569517104,
+    "dummy60": 403.80720719047144,
+    "ladder-mana": 334.9730650778919,
+    "ladder-armor": 394.596564705217,
+    "ladder-physical": 525.4559179831787,
+    "ladder-spell": 530.3587689486527,
+    "raid": 611.5797628744517,
+    "curve60": 356.35885854105453,
+    "curve120": 341.25855471084765,
+    "curve180": 335.51728569517104,
+    "curve240": 334.7990922441121,
+    "curve360": 336.16735488905346,
+    "max": 622.3089101735802,
+    "max60": 666.8068421064913
+   }
+  },
+  {
+   "label": "sim preset: Subtlety Hemo 15/0/36",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 266.7895267934432,
+    "dummy60": 319.657213977344,
+    "ladder-mana": 266.7762053737823,
+    "ladder-armor": 345.07658850376237,
+    "ladder-physical": 459.7686881979268,
+    "ladder-spell": 463.36139271218946,
+    "raid": 511.95530515522967,
+    "curve60": 281.75064192693685,
+    "curve120": 268.6728941001365,
+    "curve180": 264.26116198596117,
+    "curve240": 262.2078229187142,
+    "curve360": 264.9199836532169,
+    "max": 521.5548314955593,
+    "max60": 554.2429631754537
+   }
+  }
+ ]
+}

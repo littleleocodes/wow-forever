@@ -338,6 +338,8 @@
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
     },
     "incinerate-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/warlock/incinerate-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/warlock/incinerate-raid.apl.json",
       "sim_class": "ClassWarlock",
       "sim_spec": "warlock/dps",
       "race": "RaceGnome",
@@ -406,7 +408,8 @@
       "builds": ["bm-mm-raid", "bm-mm-full-buffs-raid", "opt-mm-raid-raid-dps"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "rotation_note": "Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+4.8% dummy, +16.8% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing."
     },
     "mm-lonewolf-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/hunter/mm-lonewolf-raid-raid.apl.json",
@@ -443,7 +446,8 @@
       "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
-      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
+      "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
+      "rotation_note": "Arcane Shot (2026-09-29): no rotation had cast it (the rotation search only offered new Forever spells and cooldowns); inserted where it won (+1.8% dummy, +16.5% raid, bm-mm and lone-wolf builds, two independent seeds). The Summon Hawk builds share its timer with the hawk and gain nothing."
     },
     "bm-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/hunter/bm-raid-raid.apl.json",
@@ -478,7 +482,7 @@
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["mm-hawk-raid"],
+      "builds": ["mm-hawk-raid", "beast-mastery-raid"],
       "rotation_only": true,
       "preset_names": ["Beast Mastery 35/16/0"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
@@ -519,7 +523,7 @@
       "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps"],
       "rotation_only": true,
       "preset_names": [],
-      "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk: Aspect of the Beast's melee attack power and Deadly Aspects' melee haste are missing, so these numbers are a lower bound, and the scorer's melee model is not calibrated to them."
+      "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model)."
     }
   },
   "rogue": {
@@ -759,6 +763,39 @@
       },
       "builds": ["prot-raid-tank", "opt-prot-tank-raid-tank"],
       "gear_note": "2026-09-27: was p1.bis.gear.json, which fills only the armor slots (no weapon, rings, trinkets, neck or back); now the simulator's complete launch preset (its DEFAULT_GEAR)."
+    },
+    "arms-battle-raid": {
+      "apl_opt": "_reference/data/raidsim/apls/warrior/arms-battle-raid.apl.json",
+      "apl_opt_raid": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
+      "sim_class": "ClassWarrior",
+      "sim_spec": "warrior/dps",
+      "profile": "raid-dps",
+      "race": "RaceHuman",
+      "distance": 5,
+      "profession1": "Engineering",
+      "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+      "apl": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
+      "spec": {
+        "dpsWarrior": {
+          "options": {
+            "classOptions": {"queueDelay": 250, "startingRage": 0, "useBattleShout": true, "defaultStance": "WarriorStanceBerserker"}
+          }
+        }
+      },
+      "consumables": {
+        "flaskId": 13510,
+        "battleElixirId": 13452,
+        "strengthBuffId": 12451,
+        "attackPowerBuffId": 12460,
+        "zanzaId": 8410,
+        "alcoholId": 21151,
+        "dragonbreathChili": true,
+        "foodId": 20452
+      },
+      "rotation_only": true,
+      "preset_names": ["Arms 39/12/0"],
+      "builds": ["arms-battle-raid"],
+      "rotation_note": "Arms in Battle Stance (2026-09-29, the overnight audit): the warrior rotations never left Berserker Stance, so Overpower and Rend (Battle Stance abilities; Forever's Bloodthrill makes Rend open Overpower) were never cast. Our base: the arms-2h-raid rotation with Battle Stance instead of Berserker Stance, Overpower and Rend (only when not ticking) after Mortal Strike, Slam before the shout. With the simulator's Arms 39/12/0 preset: 167 -> 198 dummy DPS, 377 -> 454 raid."
     }
   },
   "paladin": {
@@ -831,6 +868,8 @@
       "builds": ["prot-tank", "opt-prot-tank-raid-tank"]
     },
     "seal-of-fury-raid": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid-raid.apl.json",
+      "apl_opt": "_reference/data/raidsim/apls/paladin/seal-of-fury-raid.apl.json",
       "sim_class": "ClassPaladin",
       "sim_spec": "paladin/retribution",
       "race": "RaceHuman",
@@ -935,7 +974,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps"],
+      "builds": ["elemental-raid-dps", "opt-elemental-dps-raid-dps", "elemental-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

@@ -3,12 +3,12 @@
     python _reference/data/render_rotations.py [classes...]
 
 Writes, per class (paths.py):
-  <class>/raid/rotation.md       per raid spec model: the community simulator's rotation (its APL) filtered to what each build
+  <class>/research/raid/rotation.md       per raid spec model: the community simulator's rotation (its APL) filtered to what each build
                                  casts, builds that cast the same lines grouped, with the casts per minute the simulator measured
                                  on the training dummy (tanks: the raid setting). Our builds and the simulator's own builds.
-  <class>/leveling/rotation.md   per fight-lab report: the priority the fight lab plays and what each leveling build casts per
+  <class>/research/leveling/rotation.md   per fight-lab report: the priority the fight lab plays and what each leveling build casts per
                                  kill at every level bracket, with damage shares.
-  "## DPS ranking" of <class>/raid/README.md and "## Raid DPS ranking" of <class>/README.md: our builds and the simulator's own
+  "## DPS ranking" of <class>/research/raid/README.md and "## Raid DPS ranking" of <class>/README.md: our builds and the simulator's own
                                  builds per spec model, by training-dummy DPS with the raid-setting DPS next to it (tanks: tank value).
 It also gives render_builds.py the rotation and rank sections of the build pages (build_sections()). Reads the raid-sim reports
 (`raidsim/run.py --write`: casts per build), the environments reports and the fight-lab reports; changes nothing else.
@@ -528,9 +528,8 @@ def main():
         lp.parent.mkdir(parents=True, exist_ok=True)
         lp.write_text(leveling_rotation_page(cls), encoding="utf-8")
         rs.splice_ordered(paths.scenario_readme(cls, "raid"), "raid", "## DPS ranking", ranking_section(cls))
-        cr = class_ranking_section(cls)
-        if cr:
-            rs.splice_ordered(ROOT / cls / "README.md", "class", "## Raid DPS ranking", cr)
+        # the class README's ranking is render_modes.py's "Which spec is best?" since 2026-09-29
+        rs.drop(ROOT / cls / "README.md", "## Raid DPS ranking")
         print(f"{cls}: raid and leveling rotations, DPS ranking written")
 
 

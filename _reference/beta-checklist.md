@@ -136,6 +136,7 @@ Models: frost-leveling, frost-aoe, fire-leveling, frost-raid, fire-raid. Same mo
 - Ice Lance base damage at each rank (demo shows 28-33 at level 38 — low; its value is the 300% Frozen multiplier).
 - Fight lab (2026-09-25, beta numbers): Ice Lance on a Frozen target (Frost Nova, Frostbite, Fingers of Frost) is 4x damage for an instant, so Nova -> step back -> Ice Lance x2 makes Ice Lance ~40-55% of all leveling damage from 30 on and Shatter/Fingers of Frost/Frostbite the best talents; testable at the level-20 cap now: does Ice Lance rank 1 hit a Frost-Nova'd mob for ~120 (4 x 28-32) and how often do the first two Ice Lances break the root?
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A generated Arcane build: check it against the community's Arcane builds at launch.
 
 ## Paladin
 
@@ -260,6 +261,7 @@ Models: combat-swords-raid, combat-daggers-raid. Same mob, same gear, ~10 kills 
 - Restless Blades' cooldown reduction per finisher — if it also affects Vanish as written, it changes how often you can reset a bad pull.
 - Hack and Slash dagger/fist crit scaling (only rank 1 read).
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A generated Subtlety build: check it against the community's Subtlety builds at launch.
 
 ## Shaman
 
@@ -348,6 +350,9 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.
 - Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+- A generated Affliction build: check it against the community's Affliction builds at launch.
+- A generated Demonology build: check it against the community's Demonology builds at launch.
+- A generated Destruction build: check it against the community's Destruction builds at launch.
 
 ## Warrior
 
@@ -360,8 +365,8 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 
 | Talent | What the model assumes |
 |---|---|
-| Bastion | +2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scal |
-| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); al |
+| Bastion | +2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scal |
+| Defiance | +5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.2% DPS in the simulator (scorer said 6.2% on the same scale); al |
 | Dual Wield Specialization | +5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-0 |
 | Weaponmaster | Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight la |
 

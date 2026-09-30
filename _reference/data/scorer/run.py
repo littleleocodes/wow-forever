@@ -7,7 +7,7 @@ Prints: marginal value of every talent (next rank) at 60 from an empty tree and 
 the optimized 51-point build, its leveling order, and a comparison with an existing build from
 builds.json / proposed-builds.json. --write saves a markdown report:
     forever     -> <class>/<leveling|raid|pvp>/optimizer/<spec>-<profile>.md (the profile's scenario)
-    classic-era -> <class>/talents/classic-baseline/optimizer/<spec>-<profile>.md
+    classic-era -> <class>/research/talents/classic-baseline/optimizer/<spec>-<profile>.md
 """
 import argparse
 import json
@@ -26,7 +26,7 @@ def load_build(game, cls, build_id):
     if build_id.endswith(".json"):   # a saved candidate file (raidsim/candidates: optimizer rounds, the simulator's presets)
         b = json.load(open(build_id, encoding="utf-8"))
         return {n: p for items in b["allocation"].values() for n, p in items}
-    rel = "talents/classic-baseline/builds.json" if game == "classic-era" else "talents/forever/proposed-builds.json"
+    rel = "research/talents/classic-baseline/builds.json" if game == "classic-era" else "research/talents/forever/proposed-builds.json"
     data = json.load(open(ROOT / cls / rel, encoding="utf-8"))
     for b in data["builds"]:
         if b["id"] == build_id:
@@ -46,7 +46,7 @@ def export_build(a, opt, best, best_s, steps):
     """Insert/replace the optimized build in proposed-builds.json (forever) or builds.json (classic-era)."""
     sys.path.insert(0, str(HERE.parent))
     from fmt_json import dumps
-    rel = "talents/classic-baseline/builds.json" if a.game == "classic-era" else "talents/forever/proposed-builds.json"
+    rel = "research/talents/classic-baseline/builds.json" if a.game == "classic-era" else "research/talents/forever/proposed-builds.json"
     path = ROOT / a.cls / rel
     data = json.load(open(path, encoding="utf-8"))
     bid = f"opt-{a.spec}-{a.profile}"
@@ -72,7 +72,7 @@ def export_build(a, opt, best, best_s, steps):
         "allocation": alloc,
         "core": core,
         "flex": [],
-        "notes": [f"Report: {a.cls}/talents/{'forever' if a.game == 'forever' else 'classic-baseline'}/optimizer/{a.spec}-{a.profile}.md"],
+        "notes": [f"Report: {a.cls}/research/talents/{'forever' if a.game == 'forever' else 'classic-baseline'}/optimizer/{a.spec}-{a.profile}.md"],
         "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
         "sources": ["https://warcraftforever.games/talents/" + a.cls if a.game == "forever" else "_reference/data/classic-era-talents.json"],
     }

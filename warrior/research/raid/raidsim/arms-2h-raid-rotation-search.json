@@ -1,0 +1,218 @@
+{
+ "dummy": {
+  "class": "warrior",
+  "spec": "arms-2h-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+  "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
+  "builds": [
+   {
+    "label": "opt-arms-2h-raid-raid-dps",
+    "talents": "30305013022-250500030052310051"
+   },
+   {
+    "label": "sim preset: DPS",
+    "talents": "30305013-050520035150310051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if false: cast Recklessness",
+    "gain_seed1": 0.1639296723798611,
+    "gain_seed2": 0.16398822126029633,
+    "candidates": 662,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert before the filler: if stacks of Sunder Armor < 5: cast Sunder Armor",
+    "gain_seed1": 0.05673830845497352,
+    "gain_seed2": 0.057743287690495304,
+    "candidates": 653,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if rage < 90: cast Bloodrage",
+    "gain_seed1": 0.020741980729813703,
+    "gain_seed2": 0.0169474850827378,
+    "candidates": 682,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if time until Bloodthirst is ready > 1.5s: cast Whirlwind",
+    "gain_seed1": 0.03072675670948244,
+    "gain_seed2": 0.032130418393399474,
+    "candidates": 665,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop: if stacks of Sunder Armor < 1 and not Expose Armor is up: cast Sunder Armor",
+    "gain_seed1": 0.01947779382060011,
+    "gain_seed2": 0.021660458710972996,
+    "candidates": 658,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "threshold 30s -> 22.5s: if (time left in the fight \u2264 30s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.013331851029710684,
+    "gain_seed2": 0.012990630946320803,
+    "candidates": 629,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "drop: if number of targets = 1 and (rage \u2265 40 or execute phase (E20)): cast Heroic Strike",
+    "gain_seed1": 0.008509996653234264,
+    "gain_seed2": 0.008760492592458036,
+    "candidates": 632,
+    "pass": 1
+   },
+   {
+    "round": 8,
+    "change": "move to the top: if execute phase (E20): cast Execute",
+    "gain_seed1": 0.005963732769156405,
+    "gain_seed2": 0.004315815100146336,
+    "candidates": 595,
+    "pass": 1
+   },
+   {
+    "round": 9,
+    "change": "threshold 22.5s -> 23.5s: if (time left in the fight \u2264 22.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.0031062992030048697,
+    "gain_seed2": 0.0029863572082744483,
+    "candidates": 595,
+    "pass": 1
+   },
+   {
+    "round": 10,
+    "change": "threshold 23.5s -> 24.5s: if (time left in the fight \u2264 23.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.009024826167287614,
+    "gain_seed2": 0.009131134994204926,
+    "candidates": 595,
+    "pass": 1
+   },
+   {
+    "round": 11,
+    "change": "threshold 24.5s -> 25.5s: if (time left in the fight \u2264 24.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.0039979245650783035,
+    "gain_seed2": 0.004881625498395437,
+    "candidates": 595,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-arms-2h-raid-raid-dps": {
+     "before": 153.94437233691337,
+     "after": 217.18862483395907,
+     "base": 153.94437233691337,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: DPS": {
+     "before": 143.95084007015492,
+     "after": 195.44554392000674,
+     "base": 143.95084007015492,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ },
+ "raid": {
+  "class": "warrior",
+  "spec": "arms-2h-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+  "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
+  "builds": [
+   {
+    "label": "opt-arms-2h-raid-raid-dps",
+    "talents": "30305013022-250500030052310051"
+   },
+   {
+    "label": "sim preset: DPS",
+    "talents": "30305013-050520035150310051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if false: cast Recklessness",
+    "gain_seed1": 0.12662339404339962,
+    "gain_seed2": 0.12728688809480748,
+    "candidates": 662,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop: if number of targets = 1 and (rage \u2265 40 or execute phase (E20)): cast Heroic Strike",
+    "gain_seed1": 0.05549011301949225,
+    "gain_seed2": 0.052658821171432946,
+    "candidates": 653,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if not Battle Shout is up: cast Battle Shout",
+    "gain_seed1": 0.008839341402639755,
+    "gain_seed2": 0.009991283682611485,
+    "candidates": 616,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if time until Bloodthirst is ready > 1.5s: cast Whirlwind",
+    "gain_seed1": 0.0041521123543706295,
+    "gain_seed2": 0.004325571203211087,
+    "candidates": 595,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-arms-2h-raid-raid-dps": {
+     "before": 377.7798026615249,
+     "after": 456.74612793390395,
+     "base": 377.7798026615249,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: DPS": {
+     "before": 353.79851388985986,
+     "after": 426.95761218534665,
+     "base": 353.79851388985986,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ }
+}

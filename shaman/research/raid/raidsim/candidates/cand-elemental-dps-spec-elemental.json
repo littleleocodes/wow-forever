@@ -1,0 +1,101 @@
+{
+ "id": "cand-elemental-dps-spec-elemental",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Elemental Warding",
+    3
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lava Burst",
+    1
+   ],
+   [
+    "Elemental Devastation",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    2
+   ]
+  ],
+  "Restoration": [
+   [
+    "Totemic Focus",
+    5
+   ],
+   [
+    "Mindfulness",
+    3
+   ],
+   [
+    "Tidal Focus",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for elemental-dps from /tmp/tmpmsxkdnjc/shaman-elemental-start.json in the dummy setting: 393.7 -> 397.6 DPS on a third seed.",
+ "search": {
+  "start": "/tmp/tmpmsxkdnjc/shaman-elemental-start.json",
+  "setting": "dummy",
+  "kept": [
+   "Elemental Focus"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Ancestral Knowledge -> Mindfulness",
+    "gain_seed1": 0.006619486991874535,
+    "gain_seed2": 0.007835326686815858,
+    "split": "31/7/13"
+   },
+   {
+    "round": 2,
+    "move": "1 point Reverberation -> Elemental Devastation",
+    "gain_seed1": 0.0025613530116463945,
+    "gain_seed2": 0.0025864640886952284,
+    "split": "31/7/13"
+   }
+  ],
+  "dps_start": 393.68369055771126,
+  "dps_end": 397.58692226665994
+ }
+}

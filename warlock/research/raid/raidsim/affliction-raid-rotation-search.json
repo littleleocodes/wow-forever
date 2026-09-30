@@ -1,0 +1,138 @@
+{
+ "dummy": {
+  "class": "warlock",
+  "spec": "affliction-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
+  "builds": [
+   {
+    "label": "opt-affliction-raid-raid-dps",
+    "talents": "2552002013500005--0550035003"
+   },
+   {
+    "label": "sim preset: Demonic Pact 2/31/18",
+    "talents": "113-0005003221220311351-0550005"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.0028972017963668772,
+    "gain_seed2": 0.002860560597288231,
+    "candidates": 292,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 75% -> 55%: if time left in the fight \u2265 15s and mana % \u2264 75%: cast Potion",
+    "gain_seed1": 0.0011480632986573536,
+    "gain_seed2": 0.0022945552442010797,
+    "candidates": 301,
+    "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "only with 20s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.0022267363020900266,
+    "gain_seed2": 0.0020038796375172474,
+    "candidates": 304,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-affliction-raid-raid-dps": {
+     "before": 568.0118080732794,
+     "after": 572.397522078494,
+     "base": 568.0118080732794,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.6321999999999999,
+     "oom_after": 1.6321999999999999
+    },
+    "sim preset: Demonic Pact 2/31/18": {
+     "before": 533.0090873797142,
+     "after": 537.3109268580382,
+     "base": 533.0090873797142,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.369425,
+     "oom_after": 0.369425
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ },
+ "raid": {
+  "class": "warlock",
+  "spec": "affliction-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/affliction.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
+  "builds": [
+   {
+    "label": "opt-affliction-raid-raid-dps",
+    "talents": "2552002013500005--0550035003"
+   },
+   {
+    "label": "sim preset: Demonic Pact 2/31/18",
+    "talents": "113-0005003221220311351-0550005"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "only with 6s or more of the fight left: if mana % < 10%: cast Life Tap",
+    "gain_seed1": 0.0024734551115552783,
+    "gain_seed2": 0.0024798819182767495,
+    "candidates": 292,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move to the top: if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.0022044331288320063,
+    "gain_seed2": 0.0022188738958281995,
+    "candidates": 306,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-affliction-raid-raid-dps": {
+     "before": 695.7020164412879,
+     "after": 698.4198704657955,
+     "base": 695.7020164412879,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.72645,
+     "oom_after": 0.72645
+    },
+    "sim preset: Demonic Pact 2/31/18": {
+     "before": 651.7303803564048,
+     "after": 654.7359586714397,
+     "base": 651.7303803564048,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.582085,
+     "oom_after": 0.582085
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ }
+}

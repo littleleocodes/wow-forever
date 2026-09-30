@@ -2,7 +2,7 @@
 
     python _reference/data/render_fightlab_sections.py [classes...]
 
-Generated text (numbers only, from `<class>/leveling/fightlab/<spec>.json`, `sensitivity.md` and
+Generated text (numbers only, from `<class>/research/leveling/fightlab/<spec>.json`, `sensitivity.md` and
 `fightlab/last-rebuild.json`): time per kill by level for the optimizer build and the hand draft, deaths and downtime,
 the gear-tier effect, the talents that matter and those that measure zero, the race winner and what is not simulated.
 The hand draft's note in `proposed-builds.json` (the one starting "Fight lab (") is rewritten too; run
@@ -184,7 +184,7 @@ def main():
         text = render(cls, P, r, last_cls, cm)
         rs.splice_ordered(paths.scenario_readme(cls, "leveling"), "leveling", "## Fight lab", text)
         rs.drop(ROOT / cls / "README.md", "## Fight lab")   # moved to leveling/README.md (2026-09-27 layout)
-        bp = ROOT / cls / "talents/forever/proposed-builds.json"
+        bp = ROOT / cls / "research/talents/forever/proposed-builds.json"
         data = json.load(open(bp, encoding="utf-8"), object_pairs_hook=collections.OrderedDict)
         for b in data["builds"]:
             if b["id"] == P["hand"]:

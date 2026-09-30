@@ -1,5 +1,5 @@
 """Build _reference/data/forever-spells/<class>.json (trainer spellbooks with beta-client numbers) and render
-<class>/spells/README.md from them.
+<class>/research/spells/README.md from them.
 
 Source: talentsforever.com's data export (`raw/<pull>/talentsforever-com*/data.json`, CC BY 4.0), whose
 `spellbooks` list every trainer spell of every class to level 60 with the level each rank is learned at, and whose
@@ -9,7 +9,7 @@ effect text, spell-power coefficient and school, plus the Classic Era text where
 Usage (from anywhere):
     python _reference/data/build_forever_spells.py [--raw 2026-09-25-beta-70009] [--captured 2026-09-25] [class ...]
 
-Writes the JSON, then `<class>/spells/README.md` (generated; do not hand-edit). The JSON is what the scorer's spec
+Writes the JSON, then `<class>/research/spells/README.md` (generated; do not hand-edit). The JSON is what the scorer's spec
 models should be checked against (learn levels, cast times, cooldowns, costs, relative base damage).
 """
 import argparse
@@ -171,7 +171,7 @@ def main():
     for cls in [c for c in CLASSES if not a.classes or c in a.classes]:
         obj = build_class(cls, data, a.captured)
         (OUT / f"{cls}.json").write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
-        d = ROOT / cls / "spells"
+        d = ROOT / cls / "research" / "spells"
         d.mkdir(exist_ok=True)
         (d / "README.md").write_text(render_class(cls, obj), encoding="utf-8")
         n = sum(len(sp["ranks"]) for tab in obj["tabs"] for sp in tab["spells"])

@@ -4,8 +4,8 @@ Usage (from the project root):
     python _reference/data/validate_builds.py            # validate everything
     python _reference/data/validate_builds.py warrior    # one class
 
-Checks, for every build in <class>/talents/classic-baseline/builds.json
-(against Classic Era data) and <class>/talents/forever/proposed-builds.json
+Checks, for every build in <class>/research/talents/classic-baseline/builds.json
+(against Classic Era data) and <class>/research/talents/forever/proposed-builds.json
 (against the Forever beta-client snapshot):
 
   * every talent exists in the named tree
@@ -16,7 +16,7 @@ Checks, for every build in <class>/talents/classic-baseline/builds.json
   * leveling builds: the `order` is simulated level by level, and its end state
     must equal the allocation
 
-For Classic builds it also writes <class>/talents/forever/baseline-audit.md:
+For Classic builds it also writes <class>/research/talents/forever/baseline-audit.md:
 talent-by-talent, what happened to each point of the Classic build in Forever
 (unchanged / changed / moved / removed).
 
@@ -237,7 +237,7 @@ def write_audit(cls: str, builds: dict, classic_trees: dict, forever_trees: dict
                 lines.append(f"| {tname} | {name} | {pts} | {st_txt} | {detail} |")
         lines.append("")
         lines.append(f"**Orphaned points to re-spend: {orphaned}.** Points in changed/moved talents to re-evaluate: {changed}.\n")
-    out = ROOT / cls / "talents" / "forever" / "baseline-audit.md"
+    out = ROOT / cls / "research" / "talents" / "forever" / "baseline-audit.md"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out
@@ -252,7 +252,7 @@ def main(argv):
     failed = 0
     for cls in classes:
         for game, rel in (("classic-era", "classic-baseline/builds.json"), ("forever", "forever/proposed-builds.json")):
-            path = ROOT / cls / "talents" / rel
+            path = ROOT / cls / "research" / "talents" / rel
             if not path.exists():
                 continue
             data = json.load(open(path, encoding="utf-8"))

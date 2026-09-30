@@ -1,0 +1,146 @@
+{
+ "dummy": {
+  "class": "rogue",
+  "spec": "combat-daggers-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+  "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
+  "builds": [
+   {
+    "label": "opt-combat-daggers-raid-raid-dps",
+    "talents": "00530310301-32330310001515231-002"
+   },
+   {
+    "label": "sim preset: Combat Dual-Wield 15/33/3",
+    "talents": "1053231-22530300001515231-012"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: if time left on Expose Armor < 3 and combo points \u2265 5 and time left in the fight \u2265 3: cast Expose Armor",
+    "gain_seed1": 0.0968282389804016,
+    "gain_seed2": 0.09735416691167509,
+    "candidates": 206,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points \u2265 5 and time left in the fight \u2265 3: cast Expose Armor",
+    "gain_seed1": 0.0017694557576113379,
+    "gain_seed2": 0.0017614917403645514,
+    "candidates": 254,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "only with 20s or more of the fight left: if (combo points \u2265 1 and not Slice and Dice is up and time left in the fight \u2265 6 or combo points \u2265 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice",
+    "gain_seed1": 0.0034821665245807765,
+    "gain_seed2": 0.00288848412318643,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 3 -> 6: if time left on Expose Armor < 3 and combo points \u2265 5 and time left in the fight \u2265 3 and time left in the fight \u2265 10s: cast Expose Armor",
+    "gain_seed1": 0.0013546968837796491,
+    "gain_seed2": 0.001646182988671363,
+    "candidates": 291,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-combat-daggers-raid-raid-dps": {
+     "before": 373.69179578155865,
+     "after": 413.47478444004867,
+     "base": 373.69179578155865,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Combat Dual-Wield 15/33/3": {
+     "before": 364.8325699694361,
+     "after": 404.7470251348269,
+     "base": 364.8325699694361,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ },
+ "raid": {
+  "class": "rogue",
+  "spec": "combat-daggers-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/rogue/dps/apls/combat_backstab.apl.json",
+  "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
+  "builds": [
+   {
+    "label": "opt-combat-daggers-raid-raid-dps",
+    "talents": "00530310301-32330310001515231-002"
+   },
+   {
+    "label": "sim preset: Combat Dual-Wield 15/33/3",
+    "talents": "1053231-22530300001515231-012"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: if combo points \u2265 4 and (Slice and Dice is up or energy \u2265 79 or time left in the fight < 6): cast Eviscerate",
+    "gain_seed1": 0.007263330361583442,
+    "gain_seed2": 0.009063162262316515,
+    "candidates": 206,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert at the top: if combo points \u2265 4 and Slice and Dice is up: cast Cold Blood",
+    "gain_seed1": 0.0017901913415525605,
+    "gain_seed2": 0.002706079932641714,
+    "candidates": 250,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-combat-daggers-raid-raid-dps": {
+     "before": 730.8750154890665,
+     "after": 741.7384110527158,
+     "base": 730.8750154890665,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Combat Dual-Wield 15/33/3": {
+     "before": 714.4787888848302,
+     "after": 720.704615940219,
+     "base": 714.4787888848302,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

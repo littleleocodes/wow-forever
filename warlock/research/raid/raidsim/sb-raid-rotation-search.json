@@ -1,0 +1,146 @@
+{
+ "dummy": {
+  "class": "warlock",
+  "spec": "sb-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
+  "builds": [
+   {
+    "label": "opt-sb-raid-raid-dps",
+    "talents": "25500010135-2300203001-0550005003"
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.003300715141296262,
+    "gain_seed2": 0.0033256401168877403,
+    "candidates": 275,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "only with 20s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.0022465179884034736,
+    "gain_seed2": 0.0031055127021186735,
+    "candidates": 275,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-sb-raid-raid-dps": {
+     "before": 571.4501395152927,
+     "after": 575.3735308132013,
+     "base": 571.4501395152927,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.1799250000000001,
+     "oom_after": 1.1799250000000001
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 543.6278744637357,
+     "after": 546.131664171005,
+     "base": 543.6278744637357,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.0751,
+     "oom_after": 1.0751
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ },
+ "raid": {
+  "class": "warlock",
+  "spec": "sb-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/ds_ruin.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
+  "builds": [
+   {
+    "label": "opt-sb-raid-raid-dps",
+    "talents": "25500010135-2300203001-0550005003"
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "threshold 10% -> 5%: if mana % < 10%: cast Life Tap",
+    "gain_seed1": 0.004512783909167428,
+    "gain_seed2": 0.0044385442752290505,
+    "candidates": 275,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move to the top: if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.00266831474456497,
+    "gain_seed2": 0.0026626910058396014,
+    "candidates": 277,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "only with 20s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.002245532074842238,
+    "gain_seed2": 0.0022906158253173103,
+    "candidates": 277,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "only with 10s or more of the fight left: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.0018896905925933627,
+    "gain_seed2": 0.00191859001599326,
+    "candidates": 300,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-sb-raid-raid-dps": {
+     "before": 682.66359088386,
+     "after": 689.4739907024073,
+     "base": 682.66359088386,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.67105,
+     "oom_after": 1.67105
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 652.756898882293,
+     "after": 658.1738242577683,
+     "base": 652.756898882293,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.391075,
+     "oom_after": 1.391075
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ }
+}

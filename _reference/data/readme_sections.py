@@ -13,7 +13,7 @@ ORDER = {
     "leveling": ["## Builds", "## Guide, rotation and respec plan", "## Fight lab", "## Optimizer"],
     "raid": ["## Builds", "## DPS ranking", "## New spells and builds", "## Raid sim", "## Healer lab", "## Rotation, gear and consumables", "## Optimizer"],
     "pvp": ["## Builds", "## PvP check"],
-    "class": ["## Where to find things", "## Raid DPS ranking"],
+    "class": ["## Pick your spec", "## Which spec is best?", "## Roles and specs", "## Forever headline changes", "## Research files"],
 }
 
 

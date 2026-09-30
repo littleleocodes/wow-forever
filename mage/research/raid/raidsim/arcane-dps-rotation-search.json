@@ -1,0 +1,162 @@
+{
+ "dummy": {
+  "class": "mage",
+  "spec": "arcane-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
+  "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
+  "builds": [
+   {
+    "label": "arcane-blast-raid",
+    "talents": "050215003100311531-23050032-005"
+   },
+   {
+    "label": "sim preset: Arcane DPS",
+    "talents": "050215003100311531-2305003202003-"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "threshold 3 -> 1.5: if (stacks of Arcane Blast \u2265 3 or mana % < 40%): cast Frostbolt",
+    "gain_seed1": 0.023566257012551883,
+    "gain_seed2": 0.02204034300466673,
+    "candidates": 148,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop 'mana % < 40%' from the condition: if (stacks of Arcane Blast \u2265 1.5 or mana % < 40%): cast Frostbolt",
+    "gain_seed1": 0.003298130704012525,
+    "gain_seed2": 0.0035781799792578006,
+    "candidates": 147,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast + threshold 110 -> 220: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.0023182117383040435,
+    "gain_seed2": 0.002423158718829921,
+    "candidates": 139,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 220): cast Fire Blast",
+    "gain_seed1": 0.02651429795668525,
+    "gain_seed2": 0.028598549416468888,
+    "candidates": 186,
+    "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "move down below 'use every other cooldown when ready': cast Fire Blast",
+    "gain_seed1": 0.004842792315341571,
+    "gain_seed2": 0.004156637953215192,
+    "candidates": 177,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "arcane-blast-raid": {
+     "before": 514.31469046039,
+     "after": 541.4337133010331,
+     "base": 514.31469046039,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.10421020000000003,
+     "oom_after": 0.10421020000000003
+    },
+    "sim preset: Arcane DPS": {
+     "before": 511.6826710172626,
+     "after": 533.3722264711977,
+     "base": 511.6826710172626,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0516926,
+     "oom_after": 0.0516926
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ },
+ "raid": {
+  "class": "mage",
+  "spec": "arcane-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/mage/dps/apls/arcane.apl.json",
+  "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
+  "builds": [
+   {
+    "label": "arcane-blast-raid",
+    "talents": "050215003100311531-23050032-005"
+   },
+   {
+    "label": "sim preset: Arcane DPS",
+    "talents": "050215003100311531-2305003202003-"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "threshold 3 -> 1.5: if (stacks of Arcane Blast \u2265 3 or mana % < 40%): cast Frostbolt",
+    "gain_seed1": 0.002770620808835611,
+    "gain_seed2": 0.0018708889685032926,
+    "candidates": 148,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "insert in the middle: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.02233953623037821,
+    "gain_seed2": 0.0226258961718786,
+    "candidates": 171,
+    "pass": 2
+   },
+   {
+    "round": 3,
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
+    "gain_seed1": 0.02445315888835564,
+    "gain_seed2": 0.02413190267225329,
+    "candidates": 191,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "arcane-blast-raid": {
+     "before": 590.9426858598165,
+     "after": 619.1043352581207,
+     "base": 590.9426858598165,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Arcane DPS": {
+     "before": 588.5896968012763,
+     "after": 609.4476361156346,
+     "base": 588.5896968012763,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ }
+}

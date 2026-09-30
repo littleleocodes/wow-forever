@@ -1,0 +1,137 @@
+{
+ "class": "priest",
+ "spec": "smite-dps",
+ "game": "forever",
+ "date": "2026-09-29",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+  "gear_max": "ui/specs/priest/dps/gear_sets/p0.bis.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "smite-discipline-raid",
+   "split": "31/17/3",
+   "ours": true,
+   "dps": {
+    "dummy": 295.8862506335152,
+    "dummy60": 323.5772390937232,
+    "ladder-mana": 309.07810658622367,
+    "ladder-armor": 309.07810658622367,
+    "ladder-physical": 295.2285288007459,
+    "ladder-spell": 395.8329597419626,
+    "raid": 456.54943076764755,
+    "curve60": 334.41581064712415,
+    "curve120": 314.66833506489905,
+    "curve180": 295.8862506335152,
+    "curve240": 273.3608006059967,
+    "curve360": 254.9995268122103,
+    "max": 456.54943076764755,
+    "max60": 509.2585986682343
+   }
+  },
+  {
+   "label": "sim preset: Smite",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 293.92079288350214,
+    "dummy60": 322.0845243327976,
+    "ladder-mana": 307.489149396186,
+    "ladder-armor": 307.489149396186,
+    "ladder-physical": 293.98506582523027,
+    "ladder-spell": 394.30937750134586,
+    "raid": 451.20054420385407,
+    "curve60": 332.841408878355,
+    "curve120": 312.72211554649556,
+    "curve180": 293.92079288350214,
+    "curve240": 271.3598339117354,
+    "curve360": 253.30300296716814,
+    "max": 451.20054420385407,
+    "max60": 503.73467819154945
+   }
+  },
+  {
+   "label": "sim preset: Smite 31/17/3",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 293.92079288350214,
+    "dummy60": 322.0845243327976,
+    "ladder-mana": 307.489149396186,
+    "ladder-armor": 307.489149396186,
+    "ladder-physical": 293.98506582523027,
+    "ladder-spell": 394.30937750134586,
+    "raid": 451.20054420385407,
+    "curve60": 332.841408878355,
+    "curve120": 312.72211554649556,
+    "curve180": 293.92079288350214,
+    "curve240": 271.3598339117354,
+    "curve360": 253.30300296716814,
+    "max": 451.20054420385407,
+    "max60": 503.73467819154945
+   }
+  }
+ ]
+}

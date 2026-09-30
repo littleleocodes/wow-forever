@@ -2,7 +2,7 @@
 
     python _reference/data/scorer/classic_check.py [--write]
 
-Every `<class>/talents/classic-baseline/optimizer/<spec>-<profile>.md` names the community build it was compared with
+Every `<class>/research/talents/classic-baseline/optimizer/<spec>-<profile>.md` names the community build it was compared with
 ("## Comparison with `<id>`: <split> scores +x% vs optimized +y%"). This script re-runs each case (`run.py <class>
 --game classic-era --spec <spec> --profile <profile> --compare <id>`), prints the old and new optimized splits and comparison lines and flags a case whose
 optimized build moved (scores alone moving means shared spec-model inputs such as the calibrated shares changed). Run it after changing the scorer's model code or a shared effect encoding
@@ -25,7 +25,7 @@ SPLIT = re.compile(r"^## Optimized build: (\S+)", re.M)
 def cases():
     out = []
     for cls in CLASSES:
-        for f in sorted((ROOT / cls / "talents/classic-baseline/optimizer").glob("*.md")):
+        for f in sorted((ROOT / cls / "research/talents/classic-baseline/optimizer").glob("*.md")):
             spec, profile = None, None
             for p in PROFILES:
                 if f.stem.endswith("-" + p):

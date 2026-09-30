@@ -1,0 +1,123 @@
+{
+ "id": "cand-bm-raid-spec-beast-mastery",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    2
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-29) for bm-raid from /tmp/tmpbab3akiw/hunter-beast-mastery-start.json in the dummy setting: 421.1 -> 468.1 DPS on a third seed.",
+ "search": {
+  "start": "/tmp/tmpbab3akiw/hunter-beast-mastery-start.json",
+  "setting": "dummy",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 points Improved Arcane Shot -> Careful Aim",
+    "gain_seed1": 0.024846657534732364,
+    "gain_seed2": 0.024846943176632275,
+    "split": "31/15/5"
+   },
+   {
+    "round": 2,
+    "move": "5 points Improved Tracking -> Mortal Shots",
+    "gain_seed1": 0.029616577570082958,
+    "gain_seed2": 0.029543585856807164,
+    "split": "31/20/0"
+   },
+   {
+    "round": 3,
+    "move": "2 points Endurance Training -> Focused Fire",
+    "gain_seed1": 0.020000000000000906,
+    "gain_seed2": 0.01999999999999802,
+    "split": "31/20/0"
+   },
+   {
+    "round": 4,
+    "move": "1 point Bestial Wrath -> Trueshot Aura",
+    "gain_seed1": 0.016742986971092888,
+    "gain_seed2": 0.016435418516633105,
+    "split": "30/21/0"
+   },
+   {
+    "round": 5,
+    "move": "2 points Endurance Training -> Deadly Aspects",
+    "gain_seed1": 0.0162917694269602,
+    "gain_seed2": 0.016146806128475077,
+    "split": "30/21/0"
+   }
+  ],
+  "dps_start": 421.07597762265567,
+  "dps_end": 468.14099093933805
+ }
+}

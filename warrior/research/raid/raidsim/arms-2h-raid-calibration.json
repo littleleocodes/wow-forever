@@ -1,0 +1,549 @@
+{
+ "class": "warrior",
+ "spec": "arms-2h-raid",
+ "profile": "raid-dps",
+ "iterations": 1500,
+ "builds": [
+  "arms-2h-raid",
+  "opt-arms-2h-raid-raid-dps",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-hand-2026-09-26.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-preset-dps.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r1.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r2.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r3.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r4.json",
+  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-arms-2h-raid-r5.json"
+ ],
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "warrior/dps",
+  "gear": "ui/specs/warrior/dps/gear_sets/p1_arms.gear.json",
+  "apl": "_reference/data/raidsim/apls/warrior/arms-2h-raid.apl.json",
+  "apl_sim": "ui/specs/warrior/dps/apls/dps_no_reck.apl.json",
+  "race": "RaceHuman",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13510,
+   "battleElixirId": 13452,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8410,
+   "alcoholId": 21151,
+   "dragonbreathChili": true,
+   "foodId": 20452
+  },
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 1500,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "talents": [
+  {
+   "talent": "Flurry",
+   "sim": 0.11325187629845038,
+   "ev_before": 0.10558469661765593,
+   "ev_after": 0.10176907629767282,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Cruelty",
+   "sim": 0.0931842940879209,
+   "ev_before": 0.08915540099807101,
+   "ev_after": 0.08943257197310986,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Deep Wounds",
+   "sim": 0.07605799047254805,
+   "ev_before": 0.06817747239658845,
+   "ev_after": 0.06631753106874655,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Weaponmaster",
+   "sim": 0.06171621088531349,
+   "ev_before": 0.06174877189058063,
+   "ev_after": 0.06174728902605078,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Mortal Strike",
+   "sim": 0.0399590379666054,
+   "ev_before": 0.03995461020371154,
+   "ev_after": 0.03995480882683125,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Unbridled Wrath",
+   "sim": 0.03170266003810105,
+   "ev_before": 0.026968966407548957,
+   "ev_after": 0.02696902975788932,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Anger Management",
+   "sim": 0.02984260915725875,
+   "ev_before": 0.015200725131359219,
+   "ev_after": 0.030845948241135537,
+   "scale": 1.9632375007495284,
+   "how": "fitted",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Execute",
+   "sim": 0.02912835465581103,
+   "ev_before": 0.003988641724150233,
+   "ev_after": 0.029128361995845228,
+   "scale": 5.7088225446641445,
+   "how": "fitted",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Two-Handed Weapon Specialization",
+   "sim": 0.028517088478224296,
+   "ev_before": 0.02874873520172327,
+   "ev_after": 0.02874881240976371,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Death Wish",
+   "sim": 0.027669490332156793,
+   "ev_before": 0.0,
+   "ev_after": 0.03299908635498151,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Precision",
+   "sim": 0.027023766509490253,
+   "ev_before": 0.03260772665794501,
+   "ev_after": 0.03260779318286476,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Impale",
+   "sim": 0.008937496546674126,
+   "ev_before": 0.008537129219213088,
+   "ev_after": 0.009043411962071804,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Bloodthirst",
+   "sim": 0.0002198384999882307,
+   "ev_before": 0.0977575618668711,
+   "ev_after": 0.09789926944477328,
+   "scale": 4.656612873077393e-10,
+   "how": "fitted",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Booming Voice",
+   "sim": 0.0,
+   "ev_before": 3.0247179742731387e-05,
+   "ev_after": 2.817541031779047e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Deflection",
+   "sim": 0.0,
+   "ev_before": 1.8497405229725395e-05,
+   "ev_after": 1.7193303402794892e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "arms-2h-raid"
+   ]
+  },
+  {
+   "talent": "Enrage",
+   "sim": 0.0,
+   "ev_before": 0.0046257405954989814,
+   "ev_after": 0.00462574975842471,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Rend",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Tactical Mastery",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "arms-2h-raid",
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Boundless Rage",
+   "sim": 0.0,
+   "ev_before": 0.0023306069744747616,
+   "ev_after": 0.002458192434231779,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Improved Heroic Strike",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "opt-arms-2h-raid-raid-dps",
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2",
+    "cand-arms-2h-raid-r3",
+    "cand-arms-2h-raid-r4",
+    "cand-arms-2h-raid-r5"
+   ]
+  },
+  {
+   "talent": "Bloodthrill",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Improved Cleave",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26",
+    "cand-arms-2h-raid-preset-dps"
+   ]
+  },
+  {
+   "talent": "Improved Slam",
+   "sim": 0.0,
+   "ev_before": 7.042951509875187e-05,
+   "ev_after": 6.724259567824624e-05,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Piercing Howl",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Sweeping Strikes",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-hand-2026-09-26"
+   ]
+  },
+  {
+   "talent": "Dual Wield Specialization",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-preset-dps",
+    "cand-arms-2h-raid-r2"
+   ]
+  },
+  {
+   "talent": "Raging Blows",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-preset-dps"
+   ]
+  },
+  {
+   "talent": "Improved Overpower",
+   "sim": 0.0,
+   "ev_before": 0.0,
+   "ev_after": 0.0,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-r1",
+    "cand-arms-2h-raid-r2"
+   ]
+  },
+  {
+   "talent": "Improved Berserker Rage",
+   "sim": 0.0,
+   "ev_before": 0.0017210783337448497,
+   "ev_after": 0.0018221028533558844,
+   "scale": 1.0,
+   "how": "noise",
+   "builds": [
+    "cand-arms-2h-raid-r2"
+   ]
+  }
+ ],
+ "mana": {
+  "limit": null,
+  "builds": {
+   "arms-2h-raid": {
+    "dps": 172.6740098947958,
+    "surplus": 172.5267665819964,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "opt-arms-2h-raid-raid-dps": {
+    "dps": 171.40747426396302,
+    "surplus": 171.26513684473974,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-arms-2h-raid-hand-2026-09-26": {
+    "dps": 163.6986696953284,
+    "surplus": 164.0521866465116,
+    "oom_seconds": 0.0,
+    "deficit": 0.002154905450574285
+   },
+   "cand-arms-2h-raid-preset-dps": {
+    "dps": 161.567710338521,
+    "surplus": 161.76475846787793,
+    "oom_seconds": 0.0,
+    "deficit": 0.0012181153127740485
+   },
+   "cand-arms-2h-raid-r1": {
+    "dps": 172.6740098947958,
+    "surplus": 172.5267665819964,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-arms-2h-raid-r2": {
+    "dps": 155.86310756327862,
+    "surplus": 156.9431685152415,
+    "oom_seconds": 0.0,
+    "deficit": 0.0068818602439391086
+   },
+   "cand-arms-2h-raid-r3": {
+    "dps": 172.6740098947958,
+    "surplus": 172.5267665819964,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-arms-2h-raid-r4": {
+    "dps": 171.90517511877144,
+    "surplus": 171.76870375380028,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   },
+   "cand-arms-2h-raid-r5": {
+    "dps": 171.40747426396302,
+    "surplus": 171.26513684473974,
+    "oom_seconds": 0.0,
+    "deficit": 0.0
+   }
+  },
+  "removals": {}
+ }
+}

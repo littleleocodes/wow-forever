@@ -1,0 +1,66 @@
+{
+ "dummy": {
+  "class": "warlock",
+  "spec": "incinerate-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+  "start": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+  "builds": [
+   {
+    "label": "destruction-incinerate-raid",
+    "talents": "153-0025003001-0050245103101351"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "dummy": {
+    "destruction-incinerate-raid": {
+     "before": 484.17656361839266,
+     "after": 484.17656361839266,
+     "base": 484.17656361839266,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.409475,
+     "oom_after": 1.409475
+    }
+   }
+  }
+ },
+ "raid": {
+  "class": "warlock",
+  "spec": "incinerate-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+  "start": "_reference/data/raidsim/apls/warlock/incinerate-raid.base.apl.json",
+  "builds": [
+   {
+    "label": "destruction-incinerate-raid",
+    "talents": "153-0025003001-0050245103101351"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "destruction-incinerate-raid": {
+     "before": 560.1394290207288,
+     "after": 560.1394290207288,
+     "base": 560.1394290207288,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.20127499999999998,
+     "oom_after": 0.20127499999999998
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,240 @@
+{
+ "class": "warrior",
+ "spec": "arms-2h-raid",
+ "build": "arms-2h-raid",
+ "setting": "dummy",
+ "date": "2026-09-29",
+ "tank": false,
+ "removal": {
+  "Anger Management": 0.027729626232253834,
+  "Bloodthirst": 0.0034664642915762656,
+  "Booming Voice": -0.0,
+  "Boundless Rage": -0.0,
+  "Cruelty": 0.09248216359827077,
+  "Death Wish": 0.03132054881206958,
+  "Deep Wounds": 0.0694538665520501,
+  "Enrage": -0.0,
+  "Flurry": 0.1027646125863888,
+  "Impale": 0.005293676793197144,
+  "Improved Execute": 0.03091770778086178,
+  "Improved Heroic Strike": -0.0,
+  "Improved Rend": -0.0,
+  "Improved Tactical Mastery": -0.0,
+  "Precision": 0.028418505507040392,
+  "Two-Handed Weapon Specialization": 0.028898989845035805,
+  "Unbridled Wrath": 0.03330244424168216
+ },
+ "free": [
+  "Booming Voice",
+  "Boundless Rage",
+  "Enrage",
+  "Improved Heroic Strike",
+  "Improved Rend",
+  "Improved Tactical Mastery"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "moves": [
+  {
+   "round": 1,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 2,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 3,
+   "kind": "utility",
+   "from": "Boundless Rage",
+   "to": "Booming Voice",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "range"
+  },
+  {
+   "round": 4,
+   "kind": "utility",
+   "from": "Improved Heroic Strike",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Heroic Strike",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Improved Heroic Strike",
+   "to": "Deflection",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "survival"
+  }
+ ],
+ "final_seed3": 0.0,
+ "start": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    1
+   ],
+   [
+    "Deflection",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    2
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ }
+}

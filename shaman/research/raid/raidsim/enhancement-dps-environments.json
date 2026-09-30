@@ -1,0 +1,179 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "game": "forever",
+ "date": "2026-09-29",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "ui/specs/shaman/enhancement/gear_sets/phase_1.gear.json",
+  "gear_max": "ui/specs/shaman/enhancement/gear_sets/phase_2.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "enhancement-raid-dps",
+   "split": "11/31/9",
+   "ours": true,
+   "dps": {
+    "dummy": 390.85330577761806,
+    "dummy60": 439.62558522117195,
+    "ladder-mana": 409.11559011451055,
+    "ladder-armor": 556.2238549930137,
+    "ladder-physical": 628.5509601600228,
+    "ladder-spell": 651.719884948047,
+    "raid": 751.2347514500757,
+    "curve60": 434.4728911639713,
+    "curve120": 411.30340743456645,
+    "curve180": 390.85330577761806,
+    "curve240": 389.4586292324316,
+    "curve360": 373.47657581896453,
+    "max": 748.9069555190091,
+    "max60": 805.9372838844259
+   }
+  },
+  {
+   "label": "opt-enhancement-dps-raid-dps",
+   "split": "11/31/9",
+   "ours": true,
+   "dps": {
+    "dummy": 394.25910511200203,
+    "dummy60": 443.67054326761394,
+    "ladder-mana": 412.52475430474135,
+    "ladder-armor": 557.9370042309856,
+    "ladder-physical": 629.6100908691928,
+    "ladder-spell": 653.3300223762412,
+    "raid": 757.4291475126714,
+    "curve60": 438.7344182125163,
+    "curve120": 415.05871472440015,
+    "curve180": 394.25910511200203,
+    "curve240": 392.8082075986166,
+    "curve360": 376.6721015578772,
+    "max": 755.1797807029836,
+    "max60": 811.5447806081495
+   }
+  },
+  {
+   "label": "opt-enhancement-dps-parse",
+   "split": "10/31/10",
+   "ours": true,
+   "dps": {
+    "dummy": 389.8157750219125,
+    "dummy60": 437.8724909076075,
+    "ladder-mana": 413.6617262982372,
+    "ladder-armor": 558.952275924688,
+    "ladder-physical": 631.2901298121973,
+    "ladder-spell": 655.1688947383008,
+    "raid": 757.5992904688339,
+    "curve60": 441.57686080542953,
+    "curve120": 411.6337583826355,
+    "curve180": 389.8157750219125,
+    "curve240": 385.59726610132935,
+    "curve360": 370.47400390372434,
+    "max": 756.599885104334,
+    "max60": 818.4320339140315
+   }
+  },
+  {
+   "label": "sim preset: Level 60",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 383.7867029160524,
+    "dummy60": 442.91323477122677,
+    "ladder-mana": 414.48435937332755,
+    "ladder-armor": 557.0941028735712,
+    "ladder-physical": 625.345327425694,
+    "ladder-spell": 649.1755929180672,
+    "raid": 748.5284889729412,
+    "curve60": 438.1984546307297,
+    "curve120": 399.9174432087254,
+    "curve180": 383.7867029160524,
+    "curve240": 374.82545663555413,
+    "curve360": 358.9438009329073,
+    "max": 753.1804380085839,
+    "max60": 803.9155777474006
+   }
+  },
+  {
+   "label": "sim preset: Enhancement 16/35/0",
+   "split": "",
+   "ours": false,
+   "dps": {
+    "dummy": 365.25161150446456,
+    "dummy60": 422.6088009794679,
+    "ladder-mana": 411.5003061026038,
+    "ladder-armor": 556.6357380865746,
+    "ladder-physical": 628.0713798963079,
+    "ladder-spell": 653.0768746222883,
+    "raid": 726.2410491924575,
+    "curve60": 429.02986829788176,
+    "curve120": 372.594723963981,
+    "curve180": 365.25161150446456,
+    "curve240": 356.48606337705377,
+    "curve360": 343.4991147744524,
+    "max": 732.6471831558033,
+    "max60": 814.4259344997353
+   }
+  }
+ ]
+}

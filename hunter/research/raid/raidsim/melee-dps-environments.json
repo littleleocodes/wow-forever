@@ -1,0 +1,116 @@
+{
+ "class": "hunter",
+ "spec": "melee-dps",
+ "game": "forever",
+ "date": "2026-09-29",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "gear_raid": "_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+  "gear_max": "/home/user/wow-forever/_reference/data/raidsim/gear_sets/forever/hunter_melee_p1.gear.json",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "environments": {
+  "dummy": {
+   "label": "training dummy",
+   "how": "a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)"
+  },
+  "dummy60": {
+   "label": "level-60 dummy",
+   "how": "an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s"
+  },
+  "raid": {
+   "label": "raid",
+   "how": "phase-1 gear, full raid buffs and debuffs minus the buff this spec brings itself, the standard raid consumables, 180 s"
+  },
+  "max": {
+   "label": "maximum",
+   "how": "the best gear preset of the spec, every raid buff and debuff on (own buff supplied by someone else), consumables (and the Classic sim's world buffs), 180 s"
+  },
+  "max60": {
+   "label": "maximum, 60 s",
+   "how": "as maximum with a 60 s fight: cooldowns weigh more"
+  },
+  "ladder-mana": {
+   "label": "+ mana",
+   "how": "the training dummy plus the raid's mana buffs and debuffs: mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom"
+  },
+  "ladder-armor": {
+   "label": "+ armor",
+   "how": "the training dummy plus the raid's armor buffs and debuffs (and every group before it): sunder_armor, expose_armor, faerie_fire, curse_of_recklessness"
+  },
+  "ladder-physical": {
+   "label": "+ physical",
+   "how": "the training dummy plus the raid's physical buffs and debuffs (and every group before it): battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas"
+  },
+  "ladder-spell": {
+   "label": "+ spell",
+   "how": "the training dummy plus the raid's spell buffs and debuffs (and every group before it): arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader"
+  },
+  "curve60": {
+   "label": "60 s",
+   "how": "the training dummy without execute phases, a 60 s fight (the DPS-over-time curve)"
+  },
+  "curve120": {
+   "label": "120 s",
+   "how": "the training dummy without execute phases, a 120 s fight (the DPS-over-time curve)"
+  },
+  "curve180": {
+   "label": "180 s",
+   "how": "the training dummy without execute phases, a 180 s fight (the DPS-over-time curve)"
+  },
+  "curve240": {
+   "label": "240 s",
+   "how": "the training dummy without execute phases, a 240 s fight (the DPS-over-time curve)"
+  },
+  "curve360": {
+   "label": "360 s",
+   "how": "the training dummy without execute phases, a 360 s fight (the DPS-over-time curve)"
+  }
+ },
+ "results": [
+  {
+   "label": "melee-survival-raid",
+   "split": "5/11/35",
+   "ours": true,
+   "dps": {
+    "dummy": 423.8727987581186,
+    "dummy60": 497.9009891508475,
+    "ladder-mana": 455.820414427956,
+    "ladder-armor": 669.0804348329458,
+    "ladder-physical": 903.1461925884278,
+    "ladder-spell": 919.0955935983573,
+    "raid": 979.8086404881668,
+    "curve60": 471.5030649767332,
+    "curve120": 459.40762009517624,
+    "curve180": 423.8727987581186,
+    "curve240": 413.2650552814559,
+    "curve360": 393.53203672497,
+    "max": 979.8086404881668,
+    "max60": 1012.4740843747819
+   }
+  },
+  {
+   "label": "opt-melee-dps-raid-dps",
+   "split": "5/15/31",
+   "ours": true,
+   "dps": {
+    "dummy": 424.3069559804656,
+    "dummy60": 500.49676909914484,
+    "ladder-mana": 428.3673889402529,
+    "ladder-armor": 642.4937539106708,
+    "ladder-physical": 877.315337011071,
+    "ladder-spell": 890.3812408907751,
+    "raid": 951.2116293095119,
+    "curve60": 446.29464335559186,
+    "curve120": 433.0119985086362,
+    "curve180": 424.3069559804656,
+    "curve240": 423.918686037511,
+    "curve360": 406.38285261380497,
+    "max": 951.2116293095119,
+    "max60": 989.3790665691532
+   }
+  }
+ ]
+}

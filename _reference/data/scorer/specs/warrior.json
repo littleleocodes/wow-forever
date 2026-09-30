@@ -2,11 +2,11 @@
   "_doc": "Warrior spec models. Damage shares from Classic Fury/Arms parses. Dual-wield white swings carry a +19% miss penalty (miss_extra) in Classic-style combat; yellow abilities do not. Rage is modelled through resource_cost (cheaper abilities = more uses, at 50% efficiency) and sustain effects. Tank sources carry the tags tank/shield/threat so threat and shield talents apply only there. Bloodthirst/Mortal Strike/Shield Slam are talents, so they are encoded as damage effects on the abilities they replace. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check). enabled_by / displaces / enabled_ranks: see mage.json.",
   "models": {
     "fury-dw-raid": {
-      "note": "Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Bloodthirst rank 4 is 35% attack power plus 48 on a 6s cooldown (Classic 45% attack power); Battle Shout rank 7 gives 139 attack power; Whirlwind, Execute, Heroic Strike and Cleave are unchanged. Raid sim shares (2026-09-28, fury-dw-raid in the ElliotWood/Forever simulator 40be98e): execute 42%, white_mh 26%, white_oh 14%, heroic_strike 8%, whirlwind 8%, deep_wounds 2%; 1% of the damage matched no source.",
+      "note": "Raid dual-wield Fury: white ~50% (MH 35 / OH 15), Heroic Strike dump, Whirlwind, Execute, Overpower; Bloodthirst and Deep Wounds arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Bloodthirst rank 4 is 35% attack power plus 48 on a 6s cooldown (Classic 45% attack power); Battle Shout rank 7 gives 139 attack power; Whirlwind, Execute, Heroic Strike and Cleave are unchanged. Raid sim shares (2026-09-29, fury-dw-raid in the ElliotWood/Forever simulator 40be98e): execute 34%, white_mh 30%, white_oh 16%, bloodthirst 10%, whirlwind 7%, deep_wounds 2%, heroic_strike 1%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "white_mh",
-          "share": 0.2618,
+          "share": 0.3041,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "dw", "weapon:1h"],
           "miss_extra": 0.19,
           "game_overrides": {
@@ -15,7 +15,7 @@
         },
         {
           "id": "white_oh",
-          "share": 0.141,
+          "share": 0.1637,
           "tags": ["type:melee", "white", "school:physical", "offhand", "dw", "weapon:1h"],
           "miss_extra": 0.19,
           "game_overrides": {
@@ -24,7 +24,7 @@
         },
         {
           "id": "heroic_strike",
-          "share": 0.0838,
+          "share": 0.0059,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Heroic Strike", "weapon:1h"],
           "cost": 15,
           "game_overrides": {
@@ -33,7 +33,7 @@
         },
         {
           "id": "whirlwind",
-          "share": 0.0789,
+          "share": 0.0743,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Whirlwind", "ww-offhand", "weapon:1h"],
           "cost": 25,
           "cooldown": 10,
@@ -44,7 +44,7 @@
         },
         {
           "id": "execute",
-          "share": 0.4183,
+          "share": 0.336,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Execute", "weapon:1h"],
           "cost": 15,
           "min_level": 24,
@@ -54,7 +54,7 @@
         },
         {
           "id": "bloodthirst",
-          "share": 0.0,
+          "share": 0.0964,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Bloodthirst", "weapon:1h"],
           "enabled_by": "Bloodthirst",
           "displaces": ["heroic_strike"],
@@ -65,7 +65,7 @@
         },
         {
           "id": "deep_wounds",
-          "share": 0.0162,
+          "share": 0.0196,
           "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "ability:Deep Wound", "weapon:1h"],
           "can_crit": false,
           "enabled_by": "Deep Wounds",
@@ -124,11 +124,11 @@
       }
     },
     "arms-2h-raid": {
-      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-28, arms-2h-raid in the ElliotWood/Forever simulator 40be98e): white 45%, execute 37%, whirlwind 8%, bloodthirst 5%, deep_wounds 5%; 1% of the damage matched no source.",
+      "note": "Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Slam has an 18s cooldown (rank 1 learned at 20) and Mortal Strike rank 4 is weapon plus 160; Battle Shout rank 7 gives 139 attack power (Classic 232) for 3 min; Bloodthrill procs only from main-hand attacks. Fight lab calibration (2026-09-28, beta client 1.60.1.70009, build opt-arms-2h-raid-leveling-aoe at level 60, 1500 fights): shares are the measured damage split (Melee 43%, Whirlwind 14%, Execute 13%, Rend 8%, Thunder Clap 6%, Overpower 5%, Cleave 5%, Deep Wounds 3%, Bloodthirst 2%, Victory Rush 0%, Heroic Strike 0%) and the leveling time split is fight 83% / drink 0% / eat 2% / other 0% / death 15% of talent-affected time with fight_coupling 1.0 (downtime and deaths scale with fight length). Raid sim shares (2026-09-29, arms-2h-raid in the ElliotWood/Forever simulator 40be98e): white 53%, execute 20%, whirlwind 11%, bloodthirst 9%, deep_wounds 7%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.4453,
+          "share": 0.5282,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "weapon:2h"],
           "profile_overrides": {
             "leveling-st": {"share": 0.467},
@@ -162,7 +162,7 @@
         },
         {
           "id": "execute",
-          "share": 0.3674,
+          "share": 0.1955,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Execute", "weapon:2h"],
           "cost": 15,
           "min_level": 24,
@@ -174,7 +174,7 @@
         },
         {
           "id": "bloodthirst",
-          "share": 0.0539,
+          "share": 0.0921,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Bloodthirst", "weapon:2h"],
           "enabled_by": "Bloodthirst",
           "displaces": ["heroic_strike"],
@@ -187,7 +187,7 @@
         },
         {
           "id": "whirlwind",
-          "share": 0.0801,
+          "share": 0.1143,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Whirlwind", "weapon:2h"],
           "cost": 25,
           "cooldown": 10,
@@ -230,7 +230,7 @@
         },
         {
           "id": "deep_wounds",
-          "share": 0.0533,
+          "share": 0.0699,
           "min_level": 20,
           "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "weapon:2h", "ability:Deep Wound"],
           "can_crit": false,
@@ -308,16 +308,16 @@
       }
     },
     "prot-tank": {
-      "note": "Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect. Mitigation is the surv channel (armor, block, dodge/parry, defense, stamina). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Sunder Armor carries an explicit 1013 threat at rank 5 (Classic ~261) and Revenge rank 6 hits for 138-168 (Classic 81-99), Shield Block lasts 7s, Thunder Clap has a 6s cooldown and a 20% slow, Shield Slam rank 4 640-670 plus block value: Sunder 20 -> 35% and Revenge 15 -> 17% of threat, Heroic Strike 28 -> 18%, white 25 -> 20%. Raid sim shares (2026-09-28, prot-raid-tank in the ElliotWood/Forever simulator 40be98e): white 37%, heroic_strike 28%, revenge 23%, thunder_clap 12%; 38% of the damage matched no source.",
+      "note": "Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect. Mitigation is the surv channel (armor, block, dodge/parry, defense, stamina). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Sunder Armor carries an explicit 1013 threat at rank 5 (Classic ~261) and Revenge rank 6 hits for 138-168 (Classic 81-99), Shield Block lasts 7s, Thunder Clap has a 6s cooldown and a 20% slow, Shield Slam rank 4 640-670 plus block value: Sunder 20 -> 35% and Revenge 15 -> 17% of threat, Heroic Strike 28 -> 18%, white 25 -> 20%. Raid sim shares (2026-09-29, prot-raid-tank in the ElliotWood/Forever simulator 40be98e): white 36%, heroic_strike 27%, revenge 23%, thunder_clap 12%, rend 3%; 37% of the damage matched no source.",
       "sources": [
         {
           "id": "white",
-          "share": 0.3676,
+          "share": 0.3626,
           "tags": ["type:melee", "white", "school:physical", "mainhand", "tank", "shield", "threat", "weapon:1h"]
         },
         {
           "id": "heroic_strike",
-          "share": 0.2761,
+          "share": 0.2673,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Heroic Strike", "tank", "shield", "threat", "weapon:1h"],
           "cost": 15
         },
@@ -330,7 +330,7 @@
         },
         {
           "id": "revenge",
-          "share": 0.232,
+          "share": 0.2268,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Revenge", "tank", "shield", "threat", "weapon:1h"],
           "cost": 5,
           "cooldown": 5,
@@ -338,7 +338,7 @@
         },
         {
           "id": "thunder_clap",
-          "share": 0.1242,
+          "share": 0.1179,
           "tags": ["type:melee", "yellow", "school:physical", "ability:Thunder Clap", "tank", "shield", "threat", "aoe", "weapon:1h"],
           "cost": 20,
           "min_level": 6,
@@ -346,7 +346,7 @@
         },
         {
           "id": "rend",
-          "share": 0.0,
+          "share": 0.0255,
           "tags": ["type:melee", "dot", "school:physical", "ability:Rend", "tank", "shield", "threat", "weapon:1h"],
           "can_crit": false,
           "game_overrides": {

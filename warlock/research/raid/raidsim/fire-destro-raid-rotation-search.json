@@ -1,0 +1,170 @@
+{
+ "dummy": {
+  "class": "warlock",
+  "spec": "fire-destro-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
+  "builds": [
+   {
+    "label": "destruction-fire-raid",
+    "talents": "25500010135-2300203001-0550004103"
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: cast Shadowburn",
+    "gain_seed1": 0.005584623125488353,
+    "gain_seed2": 0.005972095840778291,
+    "candidates": 287,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move down below 'if time left on Bane of Agony \u2264 cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.0033017004141955297,
+    "gain_seed2": 0.003943490213210943,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "move down below 'if time left on Bane of Agony \u2264 cast time of Bane of Agony: cast Bane of Agony': if mana % < 10%: cast Life Tap",
+    "gain_seed1": 0.00450092138458813,
+    "gain_seed2": 0.004502839434198158,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "only with 20s or more of the fight left: if time left on Immolate \u2264 cast time of Immolate: cast Immolate",
+    "gain_seed1": 0.002464321711734385,
+    "gain_seed2": 0.0024734406029174316,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "only above 10% mana: if time left in the fight \u2264 3.5: cast Searing Pain",
+    "gain_seed1": 0.0023523886620822054,
+    "gain_seed2": 0.0021817634205019143,
+    "candidates": 290,
+    "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "threshold 1.5 -> 1.125: if time left in the fight \u2264 1.5: cast Shadowburn",
+    "gain_seed1": 0.002259382568960966,
+    "gain_seed2": 0.002167885768376898,
+    "candidates": 300,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "destruction-fire-raid": {
+     "before": 542.5789968465622,
+     "after": 558.6431514985997,
+     "base": 542.5789968465622,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.9496499999999999,
+     "oom_after": 1.9496499999999999
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 518.681730433894,
+     "after": 533.675065609184,
+     "base": 518.681730433894,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.5589750000000002,
+     "oom_after": 1.5589750000000002
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ },
+ "raid": {
+  "class": "warlock",
+  "spec": "fire-destro-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
+  "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
+  "builds": [
+   {
+    "label": "destruction-fire-raid",
+    "talents": "25500010135-2300203001-0550004103"
+   },
+   {
+    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
+    "talents": "25220010135201-0025003001-05500051"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: cast Shadowburn",
+    "gain_seed1": 0.008540560994610313,
+    "gain_seed2": 0.007842161398774028,
+    "candidates": 287,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 10% -> 5%: if mana % < 10%: cast Life Tap",
+    "gain_seed1": 0.002860398916755269,
+    "gain_seed2": 0.003641039239066668,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "move down below 'if time left on Bane of Agony \u2264 cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements",
+    "gain_seed1": 0.001753801596958482,
+    "gain_seed2": 0.0028598406255317954,
+    "candidates": 269,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "destruction-fire-raid": {
+     "before": 650.7736433856717,
+     "after": 664.5072042816607,
+     "base": 650.7736433856717,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.9221000000000001,
+     "oom_after": 1.9221000000000001
+    },
+    "sim preset: DS/Ruin Pandemic 24/11/16": {
+     "before": 622.349528545336,
+     "after": 635.0271445000085,
+     "base": 622.349528545336,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.4922500000000003,
+     "oom_after": 1.4922500000000003
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ }
+}

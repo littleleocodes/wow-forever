@@ -1,0 +1,1349 @@
+{
+  "class": "Warlock",
+  "game": "forever",
+  "notes": "Proposed WoW: Forever builds derived from the Classic baselines and the BlizzCon 2026 demo trees (captured 2026-09-13). Warlock trees changed more than any other class (22 new, 20 removed talents), so these drafts lean on the demo data rather than Classic shapes. Point math is validated; performance is not.",
+  "builds": [
+    {
+      "id": "ds-ruin-raid",
+      "name": "DS/Ruin — Demonic Sacrifice + Ruin (simulator winner adopted 2026-09-26)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "ds-ruin-raid",
+      "summary": "Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in the community simulator (+10.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Both halves of DS/Ruin got cheaper: Demonic Sacrifice is now a tier-3 Demonology talent (11 points) and Ruin a 5-rank tier-3 Destruction talent. That leaves room for Agonizing Flames (+9% Destruction damage), Shadow and Flame (Conflagrate hits buff Shadow damage) and Bane of Havoc, with Suppression now giving 5% hit to all spells plus threat reduction.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Life Tap", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1],
+          ["Demonic Aegis", 2]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Sacrifice the Succubus for the Shadow damage buff (now lasts 2 hours); tier 3 — only 11 Demonology points. Raid sim (2026-09-26): removing it costs +13% DPS."},
+        {"talent": "Bane", "why": "-0.5s Shadow Bolt/Immolate/Incinerate (est.). Raid sim (2026-09-26): removing it costs +11% DPS."},
+        {"talent": "Improved Shadow Bolt", "why": "Shadow Bolt crits apply +20% Shadow damage taken (est. at 5/5) — the raid's shadow debuff. Raid sim (2026-09-26): removing it costs +7% DPS."},
+        {"talent": "Agonizing Flames", "why": "New: +3% Destruction damage per rank (est. 9%) plus Searing Pain crit. Raid sim (2026-09-26): removing it costs +6% DPS."},
+        {"talent": "Suppression", "why": "Reworked: +1% hit with ALL spells per rank and -4% threat per rank — mandatory. Raid sim (2026-09-26): removing it costs +6% DPS."},
+        {"talent": "Ruin", "why": "+100% crit damage on Destruction spells at 5/5 (est.). Raid sim (2026-09-26): removing it costs +6% DPS."},
+        {"talent": "Malevolence", "why": "Raid sim (2026-09-26): removing it costs +5% DPS."},
+        {"talent": "Improved Corruption", "why": "Raid sim (2026-09-26): removing it costs +4% DPS."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Amplify Curse",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.7% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 5,
+          "default": "Demonic Embrace",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Demonic Aegis",
+          "alternatives": ["Improved Health Funnel", "any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the community simulator on 2026-09-26: opt-sb-raid-raid-dps beat the previous draft by +10.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate (Shadow and Flame buff) -> Shadow Bolt spam; refresh Immolate/Conflagrate every 20s; Curse per raid assignment.", "Malevolence (+5% Shadow crit, Affliction tier 4) would need 15 Affliction points — see the Affliction build.", "2026-09-27 scenario audit: Siphon Life 1 -> Improved Life Tap 1. The sacrificed-Succubus Shadow Bolt rotation never casts Siphon Life (simulator 0.0%). Improved Life Tap's +20% mana per tap means fewer taps and more Shadow Bolts in long fights (scorer +1.2 points).", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Aegis (survival); Improved Health Funnel -> Demonic Aegis (survival). Net +0.00% on a third seed."],
+      "open_questions": ["Demonic Sacrifice values per pet in Forever (Classic: Succubus +15% Shadow, Imp +15% Fire).", "Ruin rank scaling (only rank 1 = 20% was read).", "Whether Conflagrate uptime for Shadow and Flame is worth the Immolate casts versus more Shadow Bolts."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "affliction-dot-raid",
+      "name": "Affliction — DoT / Drain Hope (simulator winner adopted 2026-09-27)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "based_on": "sm-ruin-raid",
+      "summary": "Allocation adopted on 2026-09-27 from `opt-affliction-raid-raid-dps`, the best build in the community simulator (+4.7% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-26 from `opt-affliction-raid-raid-dps`, the best build in the community simulator (+3.2% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The SM/Ruin successor is a real DoT spec: Corruption, Bane of Agony and Siphon Life buffed by Malediction, Pandemic (DoT crit damage) and Malevolence (Shadow crit), Shadow Mastery, and the Drain Hope capstone (+10% Shadow DoT damage on the target), with Shadow Bolt as the filler backed by Improved Shadow Bolt and a 5-rank Ruin. Keeps a pet.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Life Tap", 2],
+          ["Improved Corruption", 5],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 3],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Bane", "why": "Shadow Bolt cast time. Raid sim (2026-09-26): removing it costs +11% DPS. Raid sim (2026-09-27): removing it costs +10% DPS."},
+        {"talent": "Improved Shadow Bolt", "why": "Shadow vulnerability debuff for the raid. Raid sim (2026-09-26): removing it costs +7% DPS. Raid sim (2026-09-27): removing it costs +6% DPS."},
+        {"talent": "Agonizing Flames", "why": "Raid sim (2026-09-26): removing it costs +6% DPS. Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Ruin", "why": "Crit damage for the Shadow Bolt filler. Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Suppression", "why": "5% hit, -20% threat. Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Malevolence", "why": "New: +5% Shadow crit (est.) — DoTs crit in Forever. Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +5% DPS."},
+        {"talent": "Shadow Mastery", "why": "Raid sim (2026-09-27): removing it costs +4% DPS."},
+        {"talent": "Improved Corruption", "why": "Raid sim (2026-09-26): removing it costs +4% DPS. Raid sim (2026-09-27): removing it costs +4% DPS."}
+      ],
+      "flex": [
+        {
+          "points": 3,
+          "default": "Aftermath",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Amplify Curse",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.5% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Nightfall",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.3% DPS in the community simulator (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the community simulator on 2026-09-27: opt-affliction-raid-raid-dps beat the previous draft by +4.7% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-affliction-raid-raid-dps beat the previous draft by +3.2% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Improved Corruption now reduces cast time by 0.4s per rank instead of 0.4s total — 5/5 is instant; not taken here because tier-1 Affliction already holds Suppression + Improved Life Tap. Add it by dropping Malediction if Corruption is cast on every target.", "Debuff-slot limits decide this build's value: it wants Corruption, Bane of Agony, Siphon Life and Drain Hope on the boss."],
+      "open_questions": ["Shadow Mastery per-rank value (1% or 2%).", "Does Forever keep a raid debuff cap? Four DoTs per warlock would not fit a Classic-style 16-slot limit.", "Nightfall (Shadow Trance) at 2%/rank — worth 2 points over the fillers?"],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "destruction-fire-raid",
+      "name": "Destruction — Immolate / Conflagrate / Incinerate (simulator winner adopted 2026-09-28)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best build in the community simulator (+2.1% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-27 from `opt-fire-destro-raid-raid-dps`, the best build in the community simulator (+2.1% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-26 from `opt-fire-destro-raid-raid-dps`, the best build in the community simulator (+11.5% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: A fire warlock never existed in Classic raids; the Forever tree builds one: Immolate (Aftermath), Conflagrate at 16 points with Fire and Brimstone crit, Incinerate as the capstone filler (+25% vs. Immolated targets), Shadow and Flame, Agonizing Flames, Ruin and Bane, with an Imp sacrificed for the Fire buff and Suppression for hit.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 1],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1],
+          ["Demonic Embrace", 5]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 4],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Imp sacrifice for the Fire damage buff (Classic value +15%). Raid sim (2026-09-26): removing it costs +13% DPS. Raid sim (2026-09-27): removing it costs +13% DPS. Raid sim (2026-09-28): removing it costs +13% DPS."},
+        {"talent": "Bane", "why": "Faster Immolate/Incinerate. Raid sim (2026-09-26): removing it costs +12% DPS. Raid sim (2026-09-27): removing it costs +12% DPS. Raid sim (2026-09-28): removing it costs +10% DPS."},
+        {"talent": "Agonizing Flames", "why": "+9% Destruction damage (est.). Raid sim (2026-09-26): removing it costs +6% DPS. Raid sim (2026-09-27): removing it costs +6% DPS. Raid sim (2026-09-28): removing it costs +6% DPS."},
+        {"talent": "Malevolence", "why": "Raid sim (2026-09-28): removing it costs +5% DPS."},
+        {"talent": "Suppression", "why": "5% spell hit. Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-09-28): removing it costs +5% DPS."},
+        {"talent": "Improved Shadow Bolt", "why": "Raid sim (2026-09-26): removing it costs +6% DPS. Raid sim (2026-09-27): removing it costs +6% DPS. Raid sim (2026-09-28): removing it costs +5% DPS."},
+        {"talent": "Improved Corruption", "why": "Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-09-28): removing it costs +4% DPS."},
+        {"talent": "Ruin", "why": "Crit damage. Raid sim (2026-09-26): removing it costs +5% DPS. Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-09-28): removing it costs +3% DPS."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Shadowburn",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Amplify Curse",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.7% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Health Funnel", "any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Imp", "any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Demonic Aegis",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the community simulator on 2026-09-28: `opt-fire-destro-raid-raid-dps` beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-fire-destro-raid-raid-dps beat the previous draft by +2.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: opt-fire-destro-raid-raid-dps beat the previous draft by +11.5% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Rotation hypothesis: Immolate -> Conflagrate -> Incinerate x2-3 -> Shadowburn (for the Fire buff) -> repeat; Bane of Havoc on a second target.", "No Improved Shadow Bolt: pair with a shadow warlock for the raid's shadow debuff.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Health Funnel -> Demonic Embrace (survival); Improved Health Funnel -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival); Improved Imp -> Demonic Embrace (survival). Net +0.00% on a third seed."],
+      "open_questions": ["Incinerate/Conflagrate damage at level 60 vs. Shadow Bolt with Ruin + Improved Shadow Bolt.", "Does Conflagrate still consume Immolate (demo says yes) — that makes Immolate uptime the rotation's pacing problem.", "Fire resistance/immunity of the new raid bosses."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "demonology-pact-raid",
+      "name": "Demonology — Demonic Pact (raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effect when another demon is summoned: the Imp is sacrificed before the pull (+15% Shadow damage) and the Succubus stays out for Master Demonologist, Soul Link, Demonic Knowledge and Unholy Power. Destruction for Improved Shadow Bolt, Bane, Ruin and Agonizing Flames; Shadow Bolt is the filler. From the simulator's Demonic Pact preset, tuned by the simulator talent search under the Demonology rotation.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 1],
+          ["Improved Corruption", 1]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Fel Vitality", 3],
+          ["Improved Sayaad", 2],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Decimation", 2],
+          ["Demonic Brand", 3],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3],
+          ["Master Demonologist", 5],
+          ["Demonic Pact", 1],
+          ["Demonic Embrace", 3]
+        ],
+        "Destruction": [
+          ["Improved Shadow Bolt", 5],
+          ["Bane", 5],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "The Imp's sacrifice: +15% Shadow damage. Simulator removal run (2026-09-28): the build loses 13.7% of its DPS on the training dummy without it."},
+        {"talent": "Demonic Pact", "why": "Keeps the sacrificed Imp's +15% Shadow damage with the Succubus summoned. Simulator removal run (2026-09-28): the build loses 13.7% of its DPS on the training dummy without it."},
+        {"talent": "Master Demonologist", "why": "The Succubus's bonus for warlock and demon. Simulator removal run (2026-09-28): the build loses 9.3% of its DPS on the training dummy without it."},
+        {"talent": "Bane", "why": "-0.5 s on Shadow Bolt. Simulator removal run (2026-09-28): the build loses 8.7% of its DPS on the training dummy without it."},
+        {"talent": "Demonic Knowledge", "why": "Spell damage while a demon is out. Simulator removal run (2026-09-28): the build loses 5.7% of its DPS on the training dummy without it."},
+        {"talent": "Agonizing Flames", "why": "+10% Destruction damage. Simulator removal run (2026-09-28): the build loses 5.6% of its DPS on the training dummy without it."},
+        {"talent": "Improved Shadow Bolt", "why": "Shadow Bolt crits raise the Shadow damage the target takes by 20%. Simulator removal run (2026-09-28): the build loses 4.3% of its DPS on the training dummy without it."},
+        {"talent": "Soul Link", "why": "+3% damage for warlock and demon. Simulator removal run (2026-09-28): the build loses 3.0% of its DPS on the training dummy without it."},
+        {"talent": "Ruin", "why": "+100% crit damage on Destruction spells (Shadow Bolt). Simulator removal run (2026-09-28): the build loses 2.9% of its DPS on the training dummy without it."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Decimation",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.9% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 5,
+          "default": "Unholy Power",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.7% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Improved Sayaad",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.2% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Demonic Embrace",
+          "alternatives": ["Demonic Energies", "any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Master Summoner",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 3,
+          "default": "Demonic Brand",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 1,
+          "default": "Demonic Embrace",
+          "alternatives": ["Improved Felhunter", "any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        }
+      ],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `sim preset: Demonic Pact 2/31/18`: 2 points Improved Corruption -> Agonizing Flames, 1 point Suppression -> Agonizing Flames.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Demonic Energies -> Demonic Embrace (survival); Demonic Energies -> Demonic Embrace (survival); Improved Felhunter -> Demonic Embrace (survival). Net +0.00% on a third seed."],
+      "open_questions": ["Demonic Pact in the game: does a demon summoned after Demonic Sacrifice leave the sacrifice's effect in place, as the tooltip and the simulator's preset say, and do Master Demonologist and Soul Link then work in full?", "The Succubus in a raid: the simulator's preset keeps her out; check her survival and threat on bosses that cleave."],
+      "sources": ["https://github.com/ElliotWood/Forever/blob/master/ui/specs/warlock/dps/presets.ts", "https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "destruction-incinerate-raid",
+      "name": "Destruction — Incinerate (raid)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Destruction to Incinerate, the Forever capstone (Fire damage, +25% on a target with Immolate), with Immolate kept up, Conflagrate while it burns and Incinerate as the filler instead of Shadow Bolt. Talents found by the simulator talent search from a 32-point Destruction start with Incinerate (kept), under its own rotation.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 3],
+          ["Suppression", 5],
+          ["Improved Life Tap", 1]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Sacrifice", 1],
+          ["Demonic Aegis", 2]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Aftermath", 4],
+          ["Cataclysm", 2],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1],
+          ["Fire and Brimstone", 3],
+          ["Bane of Havoc", 1],
+          ["Shadow and Flame", 5],
+          ["Incinerate", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Incinerate", "why": "The filler: Fire damage, +25% on an Immolated target. Simulator removal run (2026-09-28): the build loses 41.9% of its DPS on the training dummy without it."},
+        {"talent": "Shadow and Flame", "why": "Simulator removal run (2026-09-28): the build loses 8.9% of its DPS on the training dummy without it."},
+        {"talent": "Bane", "why": "-0.5 s on Incinerate and Immolate. Simulator removal run (2026-09-28): the build loses 8.3% of its DPS on the training dummy without it."},
+        {"talent": "Agonizing Flames", "why": "+10% Destruction damage. Simulator removal run (2026-09-28): the build loses 5.9% of its DPS on the training dummy without it."},
+        {"talent": "Demonic Sacrifice", "why": "Simulator removal run (2026-09-28): the build loses 5.5% of its DPS on the training dummy without it."},
+        {"talent": "Conflagrate", "why": "Instant Fire damage that consumes Immolate; the rotation casts it while Immolate burns. Simulator removal run (2026-09-28): the build loses 5.3% of its DPS on the training dummy without it."},
+        {"talent": "Suppression", "why": "Simulator removal run (2026-09-28): the build loses 4.7% of its DPS on the training dummy without it."},
+        {"talent": "Ruin", "why": "+100% crit damage on Destruction spells. Simulator removal run (2026-09-28): the build loses 4.0% of its DPS on the training dummy without it."},
+        {"talent": "Improved Corruption", "why": "Simulator removal run (2026-09-28): the build loses 3.5% of its DPS on the training dummy without it."}
+      ],
+      "flex": [
+        {
+          "points": 1,
+          "default": "Improved Life Tap",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.8% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Cataclysm",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.8% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 2,
+          "default": "Demonic Embrace",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 5,
+          "default": "Demonic Aegis",
+          "alternatives": ["Unholy Power", "any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        },
+        {
+          "points": 1,
+          "default": "Bane of Havoc",
+          "alternatives": ["any talent legal at that tier"],
+          "why": "Worth 0.0% of the DPS on the training dummy in the simulator: free points (a tier filler, or noise)."
+        }
+      ],
+      "notes": ["Talents from the simulator talent search (raidsim/talent_opt.py, 2026-09-28) from `start-incinerate-8-11-32`: 2 points Improved Corruption -> Suppression, 1 point Aftermath -> Improved Life Tap.", "New-builds survey (2026-09-28, user request): see _reference/new-builds-survey.md. A simulator-searched build: no scorer model covers it, so it is raced and ranked, not optimized or audited.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Embrace (survival); Unholy Power -> Demonic Aegis (survival); Unholy Power -> Demonic Aegis (survival). Net +0.00% on a third seed."],
+      "open_questions": ["Incinerate's rank-3 numbers (201-233 Fire, +25% with Immolate) against Shadow Bolt's: a stronger Incinerate would move this build up."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "pvp-soul-link",
+      "name": "Soul Link / Shadow Mastery (PvP)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "based_on": "pvp-soul-link",
+      "summary": "Soul Link moved to Demonology tier 5 (behind Demonic Sacrifice at tier 3), so a Soul Link warlock can now also reach Shadow Mastery, Siphon Life, Malevolence and Curse of Exhaustion: the Classic 20/31/0 becomes 30/21/0 with far more damage.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 1],
+          ["Improved Voidwalker", 3],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Energies", 2],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Fel Domination", 1],
+          ["Soul Link", 1]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Soul Link", "why": "30% of damage taken goes to the pet; now only 21 Demonology points."},
+        {"talent": "Shadow Mastery", "why": "Shadow damage."},
+        {"talent": "Siphon Life", "why": "Self-healing DoT."},
+        {"talent": "Curse of Exhaustion", "why": "Snare curse (requires Amplify Curse)."},
+        {"talent": "Nightfall", "why": "Instant Shadow Bolt procs."},
+        {"talent": "Fel Domination", "why": "Instant re-summon after the pet dies (requires Master Summoner 2)."},
+        {"talent": "Improved Voidwalker", "why": "Stronger Sacrifice shield and Consume Shadows."},
+        {"talent": "Pandemic", "why": "DoT crit damage."},
+        {"talent": "Malevolence", "why": "Shadow crit (3/5)."},
+        {"talent": "Demonic Embrace", "why": "Stamina."}
+      ],
+      "flex": [
+        {
+          "points": 5,
+          "default": "Fel Vitality 3 + Demonic Aegis 2 + Demonic Energies (2) + Unholy Power 1",
+          "alternatives": ["Improved Health Funnel", "Improved Imp"],
+          "why": "Nine Demonology filler points are needed between tier 1 and Soul Link; pick pet survivability."
+        },
+        {
+          "points": 2,
+          "default": "Nightfall",
+          "alternatives": ["Malevolence 5"],
+          "why": "Procs vs. crit."
+        }
+      ],
+      "notes": ["Demonic Sacrifice is the Soul Link prerequisite in Forever but is not used — sacrificing the pet would remove the Soul Link partner."],
+      "open_questions": ["Whether Soul Link still requires the pet to be alive to work (demo wording implies yes)."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "leveling-affliction",
+      "name": "Leveling — Affliction DoTs with a Voidwalker (fight-lab winner adopted 2026-09-28)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "based_on": "leveling-affliction-demo",
+      "summary": "Allocation and order adopted on 2026-09-28 from `cand-affliction-r4`, the fastest build in the fight-lab race over levels 20/30/40/50/60 (+4.7% vs the previous draft, level-weighted time per kill; the previous draft is kept under leveling/fightlab/candidates/). Core talents are ranked by the sim's removal cost at 60. Previous summary: The Classic Affliction leveling loop (Improved Corruption, Improved Life Tap, Siphon Life at 30, Shadow Mastery) survives with new pieces: Improved Corruption now makes Corruption instant at 5/5 AND adds damage, Malediction/Pandemic buff every DoT, Malevolence adds Shadow crit, and Drain Hope (the capstone) is a channel that also buffs your other DoTs. Improved Drain Life and Dark Pact are gone, so drain-tanking is weaker; the Voidwalker does the tanking. Destruction after 40 for Improved Shadow Bolt, Bane and Ruin. Ends in a 31/0/20 that differs from the Affliction raid draft only by Improved Corruption vs. Suppression.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Improved Corruption", 5],
+          ["Malediction", 3],
+          ["Amplify Curse", 1],
+          ["Improved Bane of Agony", 2],
+          ["Pandemic", 3],
+          ["Malevolence", 5],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Improved Health Funnel", 2],
+          ["Improved Voidwalker", 3],
+          ["Demonic Energies", 2],
+          ["Master Summoner", 2],
+          ["Improved Sayaad", 3],
+          ["Demonic Sacrifice", 1],
+          ["Fel Domination", 1],
+          ["Decimation", 1],
+          ["Demonic Knowledge", 3],
+          ["Soul Link", 1],
+          ["Improved Felhunter", 2]
+        ],
+        "Destruction": [
+          ["Destructive Reach", 2]
+        ]
+      },
+      "order": [
+        {"levels": "10-11", "tree": "Affliction", "talent": "Improved Life Tap", "points": 2},
+        {"levels": "12-16", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "17-19", "tree": "Affliction", "talent": "Malediction", "points": 3},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-22", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "23-24", "tree": "Affliction", "talent": "Pandemic", "points": 2},
+        {"levels": "25-26", "tree": "Affliction", "talent": "Malevolence", "points": 2},
+        {"levels": "27", "tree": "Affliction", "talent": "Pandemic", "points": 1},
+        {"levels": "28-29", "tree": "Affliction", "talent": "Malevolence", "points": 2},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+        {"levels": "32-33", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 2},
+        {"levels": "34-36", "tree": "Demonology", "talent": "Unholy Power", "points": 3},
+        {"levels": "37", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
+        {"levels": "38-40", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "41", "tree": "Demonology", "talent": "Unholy Power", "points": 1},
+        {"levels": "42-43", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
+        {"levels": "44", "tree": "Demonology", "talent": "Unholy Power", "points": 1},
+        {"levels": "45-46", "tree": "Demonology", "talent": "Improved Sayaad", "points": 2},
+        {"levels": "47", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+        {"levels": "48", "tree": "Demonology", "talent": "Improved Sayaad", "points": 1},
+        {"levels": "49", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
+        {"levels": "50", "tree": "Demonology", "talent": "Decimation", "points": 1},
+        {"levels": "51", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "52", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "53-55", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+        {"levels": "56", "tree": "Affliction", "talent": "Curse of Exhaustion", "points": 1},
+        {"levels": "57-58", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
+        {"levels": "59-60", "tree": "Demonology", "talent": "Improved Felhunter", "points": 2}
+      ],
+      "core": [
+        {"talent": "Siphon Life", "why": "Self-healing DoT at 30, same level as Classic; Drain Hope prerequisite. Fight lab (2026-09-28): removing it costs +10% time per kill at 60, -3% at 30."},
+        {"talent": "Demonic Knowledge", "why": "Fight lab (2026-09-28): removing it costs +6% time per kill at 60."},
+        {"talent": "Pandemic", "why": "New: DoT crit damage (33%/rank read); DoTs crit in Forever, so this is estimated as a real damage talent. Fight lab (2026-09-28): removing it costs +5% time per kill at 60, +2% at 30."},
+        {"talent": "Improved Voidwalker", "why": "Fight lab (2026-09-28): removing it costs +4% time per kill at 60."},
+        {"talent": "Demonic Energies", "why": "Fight lab (2026-09-28): removing it costs +4% time per kill at 60."},
+        {"talent": "Malevolence", "why": "New: +5% Shadow crit (est.) — feeds Pandemic. Fight lab (2026-09-28): removing it costs +4% time per kill at 60, +1% at 30."},
+        {"talent": "Improved Corruption", "why": "Instant Corruption at 5/5 plus +10% damage (est.) — DoT-and-move from level 14, same as Classic. Fight lab (2026-09-28): removing it costs +4% time per kill at 60, +3% at 30."},
+        {"talent": "Soul Link", "why": "Fight lab (2026-09-28): removing it costs +2% time per kill at 60."}
+      ],
+      "flex": [
+        {
+          "points": 2,
+          "default": "Destructive Reach",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.3% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Curse of Exhaustion",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Improved Health Funnel",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Master Summoner",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 3,
+          "default": "Improved Sayaad",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Demonic Sacrifice",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Fel Domination",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 1,
+          "default": "Decimation",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        },
+        {
+          "points": 2,
+          "default": "Improved Felhunter",
+          "alternatives": ["any utility talent legal at that tier"],
+          "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
+        }
+      ],
+      "notes": ["Adopted from the fight-lab race on 2026-09-28: cand-affliction-r4 beat the previous draft by +4.7% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: Voidwalker Torment -> Corruption + Bane of Agony (+ Siphon Life) on 2-3 mobs -> wand/Shadow Bolt -> Drain Hope to finish -> Life Tap, Drain Life if needed.", "A Soul Link build is now cheap (Soul Link at Demonology tier 5 = level 30) and would be tankier; not drafted because Classic's proven leveling path is Affliction.", "Fight lab (leveling/fightlab/affliction-leveling.md, 2026-09-29, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 26/32/38/39/37 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-affliction-leveling-leveling-st is +2% at 60 and +1% at 30 (negative = faster); race winner over the leveling: cand-affliction-r4; top talents at 60: Siphon Life +7%, Demonic Knowledge +5%, Pandemic +5%, Malevolence +3%; about zero: Demonic Aegis, Demonic Embrace, Demonic Sacrifice, Improved Imp. See the Fight lab section of leveling/README.md."],
+      "open_questions": ["Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.", "Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-affliction-leveling-leveling-st",
+      "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-st)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-st`: score +28.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Suppression", 3],
+          ["Malediction", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Malevolence", 5],
+          ["Siphon Life", 1],
+          ["Shadow Mastery", 2]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Demonic Embrace", 5],
+          ["Improved Imp", 3],
+          ["Improved Voidwalker", 3],
+          ["Fel Vitality", 1],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "Removing it costs 8.2 points of score in this model."},
+        {"talent": "Demonic Knowledge", "why": "Removing it costs 3.8 points of score in this model."},
+        {"talent": "Pandemic", "why": "Removing it costs 2.7 points of score in this model."},
+        {"talent": "Soul Link", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Malediction", "why": "Removing it costs 1.6 points of score in this model."},
+        {"talent": "Amplify Curse", "why": "Removing it costs 1.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/talents/forever/optimizer/affliction-leveling-leveling-st.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+        {"levels": "32-34", "tree": "Affliction", "talent": "Suppression", "points": 3},
+        {"levels": "35-36", "tree": "Affliction", "talent": "Shadow Mastery", "points": 2},
+        {"levels": "37-41", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "42-43", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "44-48", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "49", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "50-52", "tree": "Demonology", "talent": "Improved Imp", "points": 3},
+        {"levels": "53-55", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "56", "tree": "Demonology", "talent": "Fel Vitality", "points": 1},
+        {"levels": "57", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "58-60", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-affliction-leveling-solo-60",
+      "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (solo-60)",
+      "role": "dps",
+      "content": "solo",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `solo-60`: score +31.9% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Suppression", 3],
+          ["Malediction", 5],
+          ["Pandemic", 3],
+          ["Amplify Curse", 1],
+          ["Improved Bane of Agony", 2],
+          ["Malevolence", 5],
+          ["Siphon Life", 1],
+          ["Shadow Mastery", 2]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Demonic Embrace", 5],
+          ["Improved Imp", 3],
+          ["Improved Voidwalker", 3],
+          ["Fel Vitality", 1],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Pandemic", "why": "Removing it costs 5.7 points of score in this model."},
+        {"talent": "Demonic Knowledge", "why": "Removing it costs 3.7 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Soul Link", "why": "Removing it costs 1.7 points of score in this model."},
+        {"talent": "Malediction", "why": "Removing it costs 1.5 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 1.4 points of score in this model."},
+        {"talent": "Amplify Curse", "why": "Removing it costs 1.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/talents/forever/optimizer/affliction-leveling-solo-60.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20-22", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "23", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+        {"levels": "32-34", "tree": "Affliction", "talent": "Suppression", "points": 3},
+        {"levels": "35-36", "tree": "Affliction", "talent": "Shadow Mastery", "points": 2},
+        {"levels": "37-41", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "42-43", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "44-48", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "49", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "50-52", "tree": "Demonology", "talent": "Improved Imp", "points": 3},
+        {"levels": "53-55", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 3},
+        {"levels": "56", "tree": "Demonology", "talent": "Fel Vitality", "points": 1},
+        {"levels": "57", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "58-60", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3}
+      ]
+    },
+    {
+      "id": "opt-affliction-leveling-leveling-aoe",
+      "name": "Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (leveling-aoe)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-leveling` and profile `leveling-aoe`: score +56.8% (time-per-kill saved vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Suppression", 5],
+          ["Improved Life Tap", 2],
+          ["Malediction", 5],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 2],
+          ["Shadow Mastery", 2]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 2],
+          ["Improved Voidwalker", 3],
+          ["Demonic Energies", 1],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Fel Domination", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Soul Link", "why": "Removing it costs 18.6 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 6.0 points of score in this model."},
+        {"talent": "Demonic Knowledge", "why": "Removing it costs 3.4 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 2.0 points of score in this model."},
+        {"talent": "Demonic Embrace", "why": "Removing it costs 1.1 points of score in this model."},
+        {"talent": "Demonic Aegis", "why": "Removing it costs 0.8 points of score in this model."},
+        {"talent": "Malediction", "why": "Removing it costs 0.6 points of score in this model."},
+        {"talent": "Fel Domination", "why": "Removing it costs 0.5 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/talents/forever/optimizer/affliction-leveling-leveling-aoe.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "15-16", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "17", "tree": "Demonology", "talent": "Demonic Energies", "points": 1},
+        {"levels": "18-19", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 2},
+        {"levels": "20", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "21", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 1},
+        {"levels": "22-26", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "27-28", "tree": "Demonology", "talent": "Master Summoner", "points": 2},
+        {"levels": "29", "tree": "Demonology", "talent": "Fel Domination", "points": 1},
+        {"levels": "30", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "31-33", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+        {"levels": "34-38", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "39-43", "tree": "Affliction", "talent": "Suppression", "points": 5},
+        {"levels": "44-48", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "49-51", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "52-53", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "54", "tree": "Affliction", "talent": "Improved Life Tap", "points": 1},
+        {"levels": "55", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "56", "tree": "Affliction", "talent": "Improved Life Tap", "points": 1},
+        {"levels": "57-58", "tree": "Affliction", "talent": "Malevolence", "points": 2},
+        {"levels": "59-60", "tree": "Affliction", "talent": "Shadow Mastery", "points": 2}
+      ]
+    },
+    {
+      "id": "affliction-leveling",
+      "name": "Affliction — Leveling (generated)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Affliction",
+      "generated": "2026-09-29",
+      "summary": "The best Affliction leveling build with at least 30 points in Affliction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5],
+          ["Siphon Life", 1],
+          ["Soul Siphon", 3],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Molten Skin", 5]
+        ]
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +31.9% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +10.4% of its score (model affliction-leveling)."},
+        {"talent": "Shadow Mastery", "why": "The scorer's value in this build: +8.1% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +6.9% of its score (model affliction-leveling)."},
+        {"talent": "Malevolence", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +6.2% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st."],
+      "open_questions": ["A generated Affliction build: check it against the community's Affliction builds at launch."],
+      "sources": ["https://talentsforever.com/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31", "tree": "Affliction", "talent": "Malevolence", "points": 1},
+        {"levels": "32-34", "tree": "Affliction", "talent": "Suppression", "points": 3},
+        {"levels": "35-39", "tree": "Affliction", "talent": "Shadow Mastery", "points": 5},
+        {"levels": "40-41", "tree": "Affliction", "talent": "Suppression", "points": 2},
+        {"levels": "42-46", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "47-49", "tree": "Affliction", "talent": "Soul Siphon", "points": 3},
+        {"levels": "50-54", "tree": "Destruction", "talent": "Bane", "points": 5},
+        {"levels": "55-59", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
+        {"levels": "60", "tree": "Demonology", "talent": "Demonic Aegis", "points": 1}
+      ]
+    },
+    {
+      "id": "demonology-leveling",
+      "name": "Demonology — Leveling (generated)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Demonology",
+      "generated": "2026-09-29",
+      "summary": "The best Demonology leveling build with at least 30 points in Demonology, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 4],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [
+          ["Improved Health Funnel", 2],
+          ["Improved Imp", 3],
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 2],
+          ["Improved Voidwalker", 3],
+          ["Demonic Sacrifice", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3],
+          ["Master Demonologist", 5]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +30.4% of its score (model affliction-leveling)."},
+        {"talent": "Demonic Knowledge", "why": "The scorer's value in this build: +14.2% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +9.2% of its score (model affliction-leveling)."},
+        {"talent": "Soul Link", "why": "The scorer's value in this build: +6.9% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +6.5% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +5.8% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
+      "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
+      "sources": ["https://talentsforever.com/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31-35", "tree": "Demonology", "talent": "Unholy Power", "points": 5},
+        {"levels": "36-37", "tree": "Demonology", "talent": "Demonic Aegis", "points": 2},
+        {"levels": "38-42", "tree": "Demonology", "talent": "Demonic Embrace", "points": 5},
+        {"levels": "43", "tree": "Demonology", "talent": "Demonic Sacrifice", "points": 1},
+        {"levels": "44-45", "tree": "Demonology", "talent": "Improved Health Funnel", "points": 2},
+        {"levels": "46-48", "tree": "Demonology", "talent": "Improved Imp", "points": 3},
+        {"levels": "49-50", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 2},
+        {"levels": "51", "tree": "Demonology", "talent": "Soul Link", "points": 1},
+        {"levels": "52-54", "tree": "Demonology", "talent": "Demonic Knowledge", "points": 3},
+        {"levels": "55", "tree": "Demonology", "talent": "Improved Voidwalker", "points": 1},
+        {"levels": "56-60", "tree": "Demonology", "talent": "Master Demonologist", "points": 5}
+      ]
+    },
+    {
+      "id": "demonology-pvp",
+      "name": "Demonology — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Demonology",
+      "generated": "2026-09-29",
+      "summary": "The best Demonology pvp build with at least 30 points in Demonology, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Fel Concentration", 3],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Unholy Power", 5],
+          ["Demonic Aegis", 2],
+          ["Fel Vitality", 3],
+          ["Demonic Energies", 2],
+          ["Demonic Sacrifice", 1],
+          ["Master Summoner", 2],
+          ["Fel Domination", 1],
+          ["Soul Link", 1],
+          ["Demonic Knowledge", 3],
+          ["Master Demonologist", 5]
+        ],
+        "Destruction": []
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +17.4% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +9.6% of its score (model affliction-leveling)."},
+        {"talent": "Soul Link", "why": "The scorer's value in this build: +9.1% of its score (model affliction-leveling)."},
+        {"talent": "Fel Domination", "why": "The scorer's value in this build: +8.6% of its score (model affliction-leveling)."},
+        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +8.6% of its score (model affliction-leveling)."},
+        {"talent": "Master Demonologist", "why": "The scorer's value in this build: +7.2% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Demonology leveling model): demon talents count only as far as that model's pet share."],
+      "open_questions": ["A generated Demonology build: check it against the community's Demonology builds at launch."],
+      "sources": ["https://talentsforever.com/warlock"]
+    },
+    {
+      "id": "destruction-leveling",
+      "name": "Destruction — Leveling (generated)",
+      "role": "dps",
+      "content": "leveling",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-09-29",
+      "summary": "The best Destruction leveling build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile leveling-st). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Corruption", 5],
+          ["Malediction", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 4],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Destructive Reach", 2],
+          ["Bane", 5],
+          ["Molten Skin", 5],
+          ["Aftermath", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Intensity", 3],
+          ["Agonizing Flames", 3],
+          ["Conflagrate", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +40.9% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +12.4% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +8.5% of its score (model affliction-leveling)."},
+        {"talent": "Malediction", "why": "The scorer's value in this build: +8.0% of its score (model affliction-leveling)."},
+        {"talent": "Malevolence", "why": "The scorer's value in this build: +6.6% of its score (model affliction-leveling)."},
+        {"talent": "Amplify Curse", "why": "The scorer's value in this build: +5.4% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a leveling build; model affliction-leveling, profile leveling-st.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
+      "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
+      "sources": ["https://talentsforever.com/warlock"],
+      "order": [
+        {"levels": "10-14", "tree": "Affliction", "talent": "Improved Corruption", "points": 5},
+        {"levels": "15-19", "tree": "Affliction", "talent": "Malediction", "points": 5},
+        {"levels": "20", "tree": "Affliction", "talent": "Amplify Curse", "points": 1},
+        {"levels": "21-23", "tree": "Affliction", "talent": "Pandemic", "points": 3},
+        {"levels": "24-25", "tree": "Affliction", "talent": "Improved Bane of Agony", "points": 2},
+        {"levels": "26-29", "tree": "Affliction", "talent": "Malevolence", "points": 4},
+        {"levels": "30", "tree": "Affliction", "talent": "Siphon Life", "points": 1},
+        {"levels": "31-35", "tree": "Destruction", "talent": "Bane", "points": 5},
+        {"levels": "36-40", "tree": "Destruction", "talent": "Molten Skin", "points": 5},
+        {"levels": "41-45", "tree": "Destruction", "talent": "Aftermath", "points": 5},
+        {"levels": "46-48", "tree": "Destruction", "talent": "Agonizing Flames", "points": 3},
+        {"levels": "49-53", "tree": "Destruction", "talent": "Ruin", "points": 5},
+        {"levels": "54-55", "tree": "Destruction", "talent": "Destructive Reach", "points": 2},
+        {"levels": "56-58", "tree": "Destruction", "talent": "Intensity", "points": 3},
+        {"levels": "59", "tree": "Destruction", "talent": "Conflagrate", "points": 1},
+        {"levels": "60", "tree": "Destruction", "talent": "Shadowburn", "points": 1}
+      ]
+    },
+    {
+      "id": "destruction-pvp",
+      "name": "Destruction — PvP (generated)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Destruction",
+      "generated": "2026-09-29",
+      "summary": "The best Destruction pvp build with at least 30 points in Destruction, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (affliction-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Fel Concentration", 3],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Nightfall", 2],
+          ["Curse of Exhaustion", 1],
+          ["Siphon Life", 1]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Destructive Reach", 2],
+          ["Bane", 3],
+          ["Molten Skin", 5],
+          ["Cataclysm", 3],
+          ["Aftermath", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Intensity", 3],
+          ["Conflagrate", 1],
+          ["Pyroclasm", 2]
+        ]
+      },
+      "core": [
+        {"talent": "Siphon Life", "why": "The scorer's value in this build: +21.0% of its score (model affliction-leveling)."},
+        {"talent": "Improved Corruption", "why": "The scorer's value in this build: +12.0% of its score (model affliction-leveling)."},
+        {"talent": "Curse of Exhaustion", "why": "The scorer's value in this build: +10.8% of its score (model affliction-leveling)."},
+        {"talent": "Molten Skin", "why": "The scorer's value in this build: +9.0% of its score (model affliction-leveling)."},
+        {"talent": "Pandemic", "why": "The scorer's value in this build: +6.4% of its score (model affliction-leveling)."},
+        {"talent": "Suppression", "why": "The scorer's value in this build: +5.7% of its score (model affliction-leveling)."}
+      ],
+      "flex": [],
+      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model affliction-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the Affliction leveling model (no Destruction leveling model): fire spells are under-valued."],
+      "open_questions": ["A generated Destruction build: check it against the community's Destruction builds at launch."],
+      "sources": ["https://talentsforever.com/warlock"]
+    },
+    {
+      "id": "opt-affliction-raid-raid-dps",
+      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +58.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Life Tap", 2],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 3],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Bane", "why": "Removing it costs 13.8 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 9.1 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 6.9 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Shadow Mastery", "why": "Removing it costs 6.4 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 6.2 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 6.0 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 6.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-affliction-raid-parse",
+      "name": "Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +59.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Life Tap", 2],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Malevolence", 5],
+          ["Nightfall", 2],
+          ["Shadow Mastery", 5]
+        ],
+        "Demonology": [],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Aftermath", 3],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Bane", "why": "Removing it costs 13.9 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 9.2 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 6.9 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 6.8 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Shadow Mastery", "why": "Removing it costs 6.4 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 6.2 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 6.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/affliction-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-fire-destro-raid-raid-dps",
+      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `raid-dps`: score +82.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 1],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 4],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 22.7 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 16.4 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 10.3 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 9.4 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 9.2 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.3 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 7.8 points of score in this model."},
+        {"talent": "Pandemic", "why": "Removing it costs 7.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/fire-destro-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-fire-destro-raid-parse",
+      "name": "Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-destro-raid` and profile `parse`: score +77.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 22.0 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 15.8 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 8.9 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 8.8 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.1 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 7.6 points of score in this model."},
+        {"talent": "Pandemic", "why": "Removing it costs 7.2 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/fire-destro-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-sb-raid-raid-dps",
+      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +91.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Improved Life Tap", 2],
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Improved Bane of Agony", 1],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 5],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 26.5 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 17.8 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 12.0 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 10.8 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 10.0 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.5 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 7.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    },
+    {
+      "id": "opt-sb-raid-parse",
+      "name": "Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `parse`: score +82.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Affliction": [
+          ["Suppression", 5],
+          ["Improved Corruption", 5],
+          ["Improved Bane of Agony", 2],
+          ["Amplify Curse", 1],
+          ["Pandemic", 3],
+          ["Malevolence", 5]
+        ],
+        "Demonology": [
+          ["Demonic Embrace", 5],
+          ["Fel Vitality", 3],
+          ["Demonic Aegis", 2],
+          ["Demonic Sacrifice", 1]
+        ],
+        "Destruction": [
+          ["Bane", 5],
+          ["Improved Shadow Bolt", 5],
+          ["Ruin", 5],
+          ["Shadowburn", 1],
+          ["Agonizing Flames", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Demonic Sacrifice", "why": "Removing it costs 25.2 points of score in this model."},
+        {"talent": "Bane", "why": "Removing it costs 16.8 points of score in this model."},
+        {"talent": "Agonizing Flames", "why": "Removing it costs 11.3 points of score in this model."},
+        {"talent": "Suppression", "why": "Removing it costs 10.2 points of score in this model."},
+        {"talent": "Malevolence", "why": "Removing it costs 9.3 points of score in this model."},
+        {"talent": "Improved Corruption", "why": "Removing it costs 8.5 points of score in this model."},
+        {"talent": "Ruin", "why": "Removing it costs 8.3 points of score in this model."},
+        {"talent": "Improved Shadow Bolt", "why": "Removing it costs 8.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: warlock/research/talents/forever/optimizer/sb-raid-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/warlock"]
+    }
+  ]
+}

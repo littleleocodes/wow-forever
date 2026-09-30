@@ -1,0 +1,211 @@
+{
+ "class": "rogue",
+ "spec": "assassination-raid",
+ "game": "forever",
+ "sim": {
+  "repo": "/root/.wow-forever-tools/forever-repo",
+  "commit": "40be98e",
+  "spec_folder": "rogue/dps",
+  "gear": "ui/specs/rogue/dps/gear_sets/combat_backstab_p1_bis.gear.json",
+  "apl": "_reference/data/raidsim/apls/rogue/assassination-raid.apl.json",
+  "apl_sim": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+  "race": "RaceDwarf",
+  "setting": "dummy",
+  "buffs": "a boss-level training dummy (level 63, execute phases as a dying boss) with only your own buffs: what the class code adds itself (its talent auras, Arcane Brilliance, the priest buffs, its own shout, curses, totems and weapon imbues in the rotation) and the spec's standard consumables; no raid or party buffs and no debuffs from others",
+  "consumables": {
+   "flaskId": 13512,
+   "battleElixirId": 13452,
+   "strengthBuffId": 12451,
+   "attackPowerBuffId": 12460,
+   "zanzaId": 8412,
+   "dragonbreathChili": true,
+   "foodId": 13928,
+   "conjuredId": 7676,
+   "mhImbueId": 26891,
+   "ohImbueId": 27186,
+   "goblinSapper": true
+  },
+  "encounter": "a boss-level training dummy (level 63), 180.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1,
+  "duration": 180.0
+ },
+ "date": "2026-09-29",
+ "results": [
+  {
+   "label": "assassination-mutilate-raid",
+   "talents": "0053031252102105-305313000015",
+   "split": "30/21/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "11198": 5.473,
+    "31016": 8.102333333333334,
+    "6774": 8.389666666666667,
+    "14177": 0.999,
+    "25300": 34.59433333333333
+   },
+   "casts": {
+    "Expose Armor": 5.473,
+    "Goblin Sapper Charge": 1.0,
+    "Eviscerate": 8.102333333333334,
+    "Slice and Dice": 8.389666666666667,
+    "Auto Attack": 272.63599999999997,
+    "Cold Blood": 0.999,
+    "Thistle Tea": 1.0,
+    "Backstab": 34.59433333333333
+   },
+   "dps": 391.5830482585127,
+   "dps_stdev": 21.8517604249306,
+   "threat": 278.02396426354403,
+   "dtps": 3.333830160465808,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.42779194460107417,
+    "Backstab": 0.30600711602880293,
+    "Eviscerate": 0.1273384962159845,
+    "Deadly Poison": 0.0669424711747887,
+    "Dense Sharpening Stone": 0.03454471754722021,
+    "Dragonbreath Chili": 0.020676552972783563,
+    "Goblin Sapper Charge": 0.016698701459345943
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  },
+  {
+   "label": "assassination-seal-fate-raid",
+   "talents": "0053031232150005-305313000013-002",
+   "split": "30/19/2",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "25300": 34.37466666666667,
+    "6774": 8.466666666666665,
+    "14177": 0.999,
+    "31016": 8.034,
+    "11198": 5.472333333333333
+   },
+   "casts": {
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Backstab": 34.37466666666667,
+    "Slice and Dice": 8.466666666666665,
+    "Cold Blood": 0.999,
+    "Eviscerate": 8.034,
+    "Expose Armor": 5.472333333333333,
+    "Auto Attack": 272.8226666666667
+   },
+   "dps": 406.6584700776802,
+   "dps_stdev": 22.41796970445129,
+   "threat": 288.72751375515315,
+   "dtps": 3.3165161403838606,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.400246400132486,
+    "Backstab": 0.3126053322637802,
+    "Eviscerate": 0.12106608646336817,
+    "Deadly Poison": 0.08005272358871025,
+    "Dense Sharpening Stone": 0.05013049704585876,
+    "Dragonbreath Chili": 0.019833820986124084,
+    "Goblin Sapper Charge": 0.016065139519672617
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  },
+  {
+   "label": "sim preset: Mutilate",
+   "talents": "00530310551021051-302303202004",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "31016": 5.745333333333333,
+    "11198": 5.455,
+    "25300": 32.691,
+    "6774": 8.526,
+    "14177": 0.997
+   },
+   "casts": {
+    "Eviscerate": 5.745333333333333,
+    "Auto Attack": 272.3066666666667,
+    "Goblin Sapper Charge": 1.0,
+    "Thistle Tea": 1.0,
+    "Expose Armor": 5.455,
+    "Backstab": 32.691,
+    "Slice and Dice": 8.526,
+    "Cold Blood": 0.997
+   },
+   "dps": 370.9246780951141,
+   "dps_stdev": 19.989733940626547,
+   "threat": 263.3565214475311,
+   "dtps": 3.3209689280678587,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.4438230729838741,
+    "Backstab": 0.30479527201371637,
+    "Eviscerate": 0.09377070302793111,
+    "Deadly Poison": 0.07873775319306144,
+    "Dense Sharpening Stone": 0.03952502481414502,
+    "Dragonbreath Chili": 0.021808388815396665,
+    "Goblin Sapper Charge": 0.017539785151875296
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  },
+  {
+   "label": "sim preset: Assassination Mutilate 31/20/0",
+   "talents": "02532010531201051-225303000005",
+   "split": "",
+   "ours": false,
+   "spell_casts": {
+    "25300": 32.12866666666667,
+    "6774": 11.715333333333334,
+    "11198": 5.257,
+    "14177": 0.9883333333333333,
+    "31016": 4.203666666666667
+   },
+   "casts": {
+    "Backstab": 32.12866666666667,
+    "Slice and Dice": 11.715333333333334,
+    "Thistle Tea": 1.0,
+    "Expose Armor": 5.257,
+    "Goblin Sapper Charge": 1.0,
+    "Cold Blood": 0.9883333333333333,
+    "Auto Attack": 269.97866666666664,
+    "Eviscerate": 4.203666666666667
+   },
+   "dps": 358.973796496138,
+   "dps_stdev": 19.783411604536536,
+   "threat": 254.8713955122579,
+   "dtps": 3.303055167006965,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.45854977207968084,
+    "Backstab": 0.30826767197899757,
+    "Deadly Poison": 0.08342463099124173,
+    "Eviscerate": 0.06470909713208356,
+    "Dense Sharpening Stone": 0.044829720277371615,
+    "Dragonbreath Chili": 0.022118811409897188,
+    "Goblin Sapper Charge": 0.018100296130727528
+   },
+   "source_shares": {},
+   "unmatched_share": 1.0
+  }
+ ],
+ "deltas": {}
+}

@@ -1,4 +1,4 @@
-"""Write `<class>/raid/gear.md`, `<class>/raid/consumables.md`, `<class>/raid/rotation.md` and `<class>/leveling/rotation.md` from the ElliotWood/Forever
+"""Write `<class>/research/raid/gear.md`, `<class>/research/raid/consumables.md`, `<class>/research/raid/rotation.md` and `<class>/research/leveling/rotation.md` from the ElliotWood/Forever
 simulator's presets (generated): the community's gear sets per spec and phase, its standard raid consumables, and its rotations
 (APL files) translated into readable priority lists, next to the fight lab's leveling priority.
 
@@ -10,6 +10,9 @@ These are the simulator maintainers' presets for the beta, not measurements; `re
 """
 import datetime
 import json
+import sys as _sys
+_sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parent / 'raidsim'))
+import id_names  # noqa: E402
 import os
 import pathlib
 import re
@@ -54,19 +57,23 @@ class Names:
                 for t in tr["talents"]:
                     if t.get("spellId"):
                         self.spells.setdefault(int(t["spellId"]), t["fancyName"])
+        # ids the simulator's database leaves unnamed (Classic 1.12 item ids; 44404 is the simulator's own Missile Barrage aura, talents_arcane.go)
+        for iid, name in {8008: "Mana Ruby (mana gem)", 10646: "Goblin Sapper Charge", 18641: "Dense Dynamite"}.items():
+            self.consumables.setdefault(iid, name)
+        self.spells.setdefault(44404, "Missile Barrage")
         self.unknown = set()
 
     def spell(self, sid):
         if sid in self.spells:
             return self.spells[sid]
         self.unknown.add(sid)
-        return f"spell {sid}"
+        return id_names.spell(sid)
 
     def item(self, iid):
         it = self.items.get(iid)
         if it:
             return it["name"]
-        return self.consumables.get(iid, f"item {iid}")
+        return self.consumables.get(iid) or id_names.item(iid)
 
 
 # ------------------------------------------------------------------ APL translation
@@ -176,6 +183,8 @@ def action(a, N, depth=0):
     k, x = next(iter(body.items()))
     if k == "castSpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)}" + (f" on {x['target'].get('type', '').lower()}" if x.get("target") and x["target"].get("type") not in (None, "Target", "Unknown") else "")
+    elif k == "channelSpell":   # a channel (Mind Flay, Drain Soul): named like a cast (it printed as "channelSpell" until 2026-09-29)
+        txt = f"channel {spell_ref(x.get('spellId'), N)}" + (" (interrupt it when a higher line is ready)" if x.get("interruptIf") else "")
     elif k == "castFriendlySpell":
         txt = f"cast {spell_ref(x.get('spellId'), N)} on a friendly target"
     elif k == "multidot":

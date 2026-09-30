@@ -61,7 +61,7 @@ def alloc_of(build):
 def search(pool, cls, a):
     mod = importlib.import_module(CLASSES[cls])
     P = mod.PIPELINE
-    data = json.load(open(ROOT / cls / "talents/forever/proposed-builds.json", encoding="utf-8"))
+    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
     build = next(b for b in data["builds"] if b["id"] == P["hand"])
     alloc = alloc_of(build)
     rot_path = HERE / "rotations" / f"{cls}-{P['spec']}.json"

@@ -1,0 +1,186 @@
+{
+ "dummy": {
+  "class": "druid",
+  "spec": "feral-cat-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
+  "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "opt-feral-cat-dps-raid-dps",
+    "talents": "050022-5510002023032213051-052"
+   },
+   {
+    "label": "sim preset: Feral Cat 9/35/7",
+    "talents": "050022-5500002123032213051-052"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite",
+    "gain_seed1": 0.020627789547157604,
+    "gain_seed2": 0.021632538581264793,
+    "candidates": 416,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip",
+    "gain_seed1": 0.01769883832679664,
+    "gain_seed2": 0.016306988432532865,
+    "candidates": 380,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form",
+    "gain_seed1": 0.011010857768606996,
+    "gain_seed2": 0.011157215923282227,
+    "candidates": 379,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
+    "gain_seed1": 0.002210003839751007,
+    "gain_seed2": 0.0035093121359617285,
+    "candidates": 346,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop the condition: if not Cat Form is up: cast Goblin Sapper Charge",
+    "gain_seed1": 0.0036249634510894246,
+    "gain_seed2": 0.0022308265909791736,
+    "candidates": 349,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form",
+    "gain_seed1": 0.0010676856700149173,
+    "gain_seed2": 0.001713237646959076,
+    "candidates": 351,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire",
+    "gain_seed1": 0.0017269681327016784,
+    "gain_seed2": 0.0016071808614435135,
+    "candidates": 339,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-feral-cat-dps-raid-dps": {
+     "before": 336.3097731878436,
+     "after": 356.42429425825105,
+     "base": 336.3097731878436,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Feral Cat 9/35/7": {
+     "before": 336.3097731878436,
+     "after": 356.42429425825105,
+     "base": 336.3097731878436,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ },
+ "raid": {
+  "class": "druid",
+  "spec": "feral-cat-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/druid/feralcat/apls/default.apl.json",
+  "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "opt-feral-cat-dps-raid-dps",
+    "talents": "050022-5510002023032213051-052"
+   },
+   {
+    "label": "sim preset: Feral Cat 9/35/7",
+    "talents": "050022-5500002123032213051-052"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite",
+    "gain_seed1": 0.010941617317165697,
+    "gain_seed2": 0.009738442815902637,
+    "candidates": 416,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip",
+    "gain_seed1": 0.011059249207356903,
+    "gain_seed2": 0.013009208079847179,
+    "candidates": 380,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate",
+    "gain_seed1": 0.006728494551307751,
+    "gain_seed2": 0.005304454999722985,
+    "candidates": 379,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
+    "gain_seed1": 0.0012417965825086696,
+    "gain_seed2": 0.0016716670766716568,
+    "candidates": 352,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-feral-cat-dps-raid-dps": {
+     "before": 548.5288119189955,
+     "after": 565.9624298865533,
+     "base": 548.5288119189955,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Feral Cat 9/35/7": {
+     "before": 548.5288119189955,
+     "after": 565.9624298865533,
+     "base": 548.5288119189955,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

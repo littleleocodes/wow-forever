@@ -1,0 +1,154 @@
+{
+ "dummy": {
+  "class": "shaman",
+  "spec": "elemental-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
+  "builds": [
+   {
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5531301300103051-052-05305"
+   },
+   {
+    "label": "sim preset: Elemental 31/6/14",
+    "talents": "2505301300123051-0500001-053050001"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "always rank 2 instead of rank 4: cast Lightning Bolt",
+    "gain_seed1": 0.05163899651550907,
+    "gain_seed2": 0.05238046879047542,
+    "candidates": 210,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "only with 20s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem",
+    "gain_seed1": 0.0053501730785354695,
+    "gain_seed2": 0.0053025588675545965,
+    "candidates": 209,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "always rank 8 instead of rank 10: if mana \u2265 (time left in the fight \u00d7 35): cast Lightning Bolt",
+    "gain_seed1": 0.002958345485033931,
+    "gain_seed2": 0.0027368419211950545,
+    "candidates": 222,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "always rank 7 instead of rank 8: if mana \u2265 (time left in the fight \u00d7 35): cast Lightning Bolt + threshold 35 -> 26.25: if mana \u2265 (time left in the fight \u00d7 35): cast Lightning Bolt",
+    "gain_seed1": 0.002054096409728201,
+    "gain_seed2": 0.0018350544524801116,
+    "candidates": 225,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-elemental-dps-raid-dps": {
+     "before": 387.355715954412,
+     "after": 396.71382040939454,
+     "base": 387.355715954412,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.02665629998545003,
+     "oom_after": 0.02665629998545003
+    },
+    "sim preset: Elemental 31/6/14": {
+     "before": 378.01084810643346,
+     "after": 393.4564082380146,
+     "base": 378.01084810643346,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.14780289999950072,
+     "oom_after": 0.14780289999950072
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ },
+ "raid": {
+  "class": "shaman",
+  "spec": "elemental-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/shaman/elemental/apls/forever.apl.json",
+  "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
+  "builds": [
+   {
+    "label": "opt-elemental-dps-raid-dps",
+    "talents": "5531301300103051-052-05305"
+   },
+   {
+    "label": "sim preset: Elemental 31/6/14",
+    "talents": "2505301300123051-0500001-053050001"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "only with 10s or more of the fight left: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem",
+    "gain_seed1": 0.004719356565832111,
+    "gain_seed2": 0.00508558058812536,
+    "candidates": 210,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "always rank 2 instead of rank 4: cast Lightning Bolt",
+    "gain_seed1": 0.003965001945875013,
+    "gain_seed2": 0.0038999604326839243,
+    "candidates": 223,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "threshold 100 -> 200: if (Clearcasting is up or number of targets \u2265 2 or mana \u2265 (time left in the fight \u00d7 100)): cast Chain Lightning",
+    "gain_seed1": 0.0027721280732482256,
+    "gain_seed2": 0.0017305263475695387,
+    "candidates": 225,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-elemental-dps-raid-dps": {
+     "before": 494.9874668256873,
+     "after": 496.7195340378478,
+     "base": 494.9874668256873,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Elemental 31/6/14": {
+     "before": 494.0429507185119,
+     "after": 496.6690194484936,
+     "base": 494.0429507185119,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00019779999995,
+     "oom_after": 0.00019779999995
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

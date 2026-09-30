@@ -1,0 +1,167 @@
+{
+ "class": "rogue",
+ "spec": "combat-daggers-raid",
+ "game": "classic-era",
+ "sim": {
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\classic-repo",
+  "commit": "7779ebb",
+  "spec_folder": "rogue",
+  "gear": "ui/rogue/gear_sets/combat_backstab_p1_bis.gear.json",
+  "apl": "ui/rogue/apls/combat_backstab.apl.json",
+  "race": "RaceHuman",
+  "buffs": "full raid/party/individual buffs and debuffs (the sim's test defaults)",
+  "consumables": {
+   "agilityElixir": "ElixirOfTheMongoose",
+   "attackPowerBuff": "JujuMight",
+   "defaultConjured": "ConjuredRogueThistleTea",
+   "dragonBreathChili": true,
+   "flask": "FlaskOfSupremePower",
+   "food": "FoodGrilledSquid",
+   "mainHandImbue": "InstantPoison",
+   "offHandImbue": "DeadlyPoison",
+   "spellPowerBuff": "GreaterArcaneElixir",
+   "strengthBuff": "JujuPower",
+   "zanzaBuff": "GroundScorpokAssay",
+   "sapperExplosive": "SapperGoblinSapper"
+  },
+  "encounter": "single level-63 target, 120.0s, execute phases 20/25/35/45/90%",
+  "iterations": 3000,
+  "seed": 1
+ },
+ "date": "2026-09-27",
+ "results": [
+  {
+   "label": "combat-daggers-raid",
+   "talents": "1053231-3023050020550100221-05",
+   "split": "15/31/5",
+   "ours": true,
+   "dps": 1259.1608707472708,
+   "dps_stdev": 52.378775332434785,
+   "threat": 894.0042182305624,
+   "dtps": 4.026749467953197,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.501469728211597,
+   "shares": {
+    "Auto Attack": 0.5800293710291677,
+    "Backstab": 0.30918433295597136,
+    "Deadly Poison": 0.03567899499371186,
+    "Eviscerate": 0.030866749143982686,
+    "Instant Poison VI": 0.019873367297735475,
+    "Dragonbreath Chili": 0.010868877265124876,
+    "Goblin Sapper Charge": 0.008495550974800408,
+    "Firebolt": 0.005002756339505627
+   },
+   "source_shares": {
+    "white_mh": 0.3864,
+    "backstab": 0.3169,
+    "white_oh": 0.2081,
+    "poisons": 0.0569,
+    "eviscerate": 0.0316
+   },
+   "unmatched_share": 0.0244
+  },
+  {
+   "label": "sim preset: Backstab",
+   "talents": "005023104-0233050020550100221-05",
+   "split": "",
+   "ours": false,
+   "dps": 1285.350702716941,
+   "dps_stdev": 55.3911412250097,
+   "threat": 912.5989989290279,
+   "dtps": 4.048892603846494,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.5677310176067192,
+    "Backstab": 0.33589084802974406,
+    "Deadly Poison": 0.0349367992859528,
+    "Instant Poison VI": 0.01934886887841024,
+    "Eviscerate": 0.018095626253605165,
+    "Dragonbreath Chili": 0.01068662385727024,
+    "Goblin Sapper Charge": 0.008393807450228911,
+    "Firebolt": 0.004916408638069391
+   },
+   "source_shares": {
+    "white_mh": 0.3781,
+    "backstab": 0.3441,
+    "white_oh": 0.2036,
+    "poisons": 0.0556,
+    "eviscerate": 0.0185
+   },
+   "unmatched_share": 0.024
+  },
+  {
+   "label": "sim preset: Sinister Strike",
+   "talents": "005323105-0240052020050150231",
+   "split": "",
+   "ours": false,
+   "dps": 1149.877894486956,
+   "dps_stdev": 51.05302299732525,
+   "threat": 816.4133050857388,
+   "dtps": 4.026749467953197,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.6349622775882497,
+    "Backstab": 0.2458105097842481,
+    "Deadly Poison": 0.03905804956578278,
+    "Eviscerate": 0.03173871628650927,
+    "Instant Poison VI": 0.021755516518634017,
+    "Dragonbreath Chili": 0.011898237240720339,
+    "Goblin Sapper Charge": 0.00930014007179488,
+    "Firebolt": 0.005476552944060844
+   },
+   "source_shares": {
+    "white_mh": 0.424,
+    "backstab": 0.2525,
+    "white_oh": 0.2283,
+    "poisons": 0.0625,
+    "eviscerate": 0.0326
+   },
+   "unmatched_share": 0.0267
+  },
+  {
+   "label": "sim preset: Improved Expose Armor (SS)",
+   "talents": "005323123-0240052020050150231",
+   "split": "",
+   "ours": false,
+   "dps": 1140.7759328744173,
+   "dps_stdev": 49.90950555887861,
+   "threat": 809.9509123408366,
+   "dtps": 4.026749467953197,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": null,
+   "shares": {
+    "Auto Attack": 0.6400106604800446,
+    "Backstab": 0.2398141892877955,
+    "Deadly Poison": 0.039368587681470085,
+    "Eviscerate": 0.03199106071383011,
+    "Instant Poison VI": 0.021928487703334935,
+    "Dragonbreath Chili": 0.011992836336522877,
+    "Goblin Sapper Charge": 0.009374082524263198,
+    "Firebolt": 0.005520095272738728
+   },
+   "source_shares": {
+    "white_mh": 0.4275,
+    "backstab": 0.2464,
+    "white_oh": 0.2302,
+    "poisons": 0.063,
+    "eviscerate": 0.0329
+   },
+   "unmatched_share": 0.0269
+  }
+ ],
+ "deltas": {}
+}

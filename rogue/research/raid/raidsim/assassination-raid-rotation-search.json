@@ -1,0 +1,162 @@
+{
+ "dummy": {
+  "class": "rogue",
+  "spec": "assassination-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+  "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
+  "builds": [
+   {
+    "label": "assassination-seal-fate-raid",
+    "talents": "0053031232150005-302303202013-002"
+   },
+   {
+    "label": "sim preset: Mutilate",
+    "talents": "00530310551021051-302303202004"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert at the top: if time left on Expose Armor < 3 and combo points \u2265 5 and time left in the fight \u2265 3: cast Expose Armor",
+    "gain_seed1": 0.08747454231587826,
+    "gain_seed2": 0.08623869846415722,
+    "candidates": 190,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points \u2265 5 and time left in the fight \u2265 3: cast Expose Armor",
+    "gain_seed1": 0.009294442359795818,
+    "gain_seed2": 0.00765648859749124,
+    "candidates": 238,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: cast Backstab",
+    "gain_seed1": 0.014428592607984347,
+    "gain_seed2": 0.016304933944245592,
+    "candidates": 237,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points \u2265 3.75 and time left in the fight \u2265 3: cast Expose Armor",
+    "gain_seed1": 0.0019513293719439773,
+    "gain_seed2": 0.0017544093268431205,
+    "candidates": 257,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "threshold 6 -> 12: if (combo points \u2265 1 and not Slice and Dice is up and time left in the fight \u2265 6 or combo points \u2265 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice",
+    "gain_seed1": 0.0020255897832623937,
+    "gain_seed2": 0.0016456569014819955,
+    "candidates": 267,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "threshold 4 -> 5: if combo points \u2265 4 and Slice and Dice is up: cast Cold Blood + drop 'combo points \u2265 5 and time left on Slice and Dice < 3 and time left in the fight > 9' from the condition: if (combo points \u2265 1 and not Slice and Dice is up and time left in the fight \u2265 12 or combo points \u2265 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice",
+    "gain_seed1": 0.0031806829847487172,
+    "gain_seed2": 0.002715623993355676,
+    "candidates": 270,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "insert at the top: if energy \u2264 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy \u2264 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea",
+    "gain_seed1": 0.0029616803309586714,
+    "gain_seed2": 0.0030663867621600893,
+    "candidates": 259,
+    "pass": 3
+   }
+  ],
+  "final": {
+   "dummy": {
+    "assassination-seal-fate-raid": {
+     "before": 147.9036919029935,
+     "after": 413.00571872965503,
+     "base": 147.9036919029935,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Mutilate": {
+     "before": 335.1972699152598,
+     "after": 376.82115237698673,
+     "base": 335.1972699152598,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ },
+ "raid": {
+  "class": "rogue",
+  "spec": "assassination-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/rogue/dps/apls/forever_mutilate.apl.json",
+  "start": "ui\\specs\\rogue\\dps\\apls\\forever_mutilate.apl.json",
+  "builds": [
+   {
+    "label": "assassination-seal-fate-raid",
+    "talents": "0053031232150005-302303202013-002"
+   },
+   {
+    "label": "sim preset: Mutilate",
+    "talents": "00530310551021051-302303202004"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: cast Backstab",
+    "gain_seed1": 0.009505283743439286,
+    "gain_seed2": 0.007987722959226229,
+    "candidates": 190,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "assassination-seal-fate-raid": {
+     "before": 294.0108112467974,
+     "after": 693.2139125775362,
+     "base": 294.0108112467974,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Mutilate": {
+     "before": 651.8474362074176,
+     "after": 658.8968327942696,
+     "base": 651.8474362074176,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ }
+}

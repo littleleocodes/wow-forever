@@ -1,0 +1,130 @@
+{
+ "dummy": {
+  "class": "priest",
+  "spec": "shadow-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/priest/dps/apls/shadow.apl.json",
+  "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
+  "builds": [
+   {
+    "label": "opt-shadow-dps-raid-dps",
+    "talents": "525000000305--500321501201302051"
+   },
+   {
+    "label": "sim preset: Shadow 15/0/36",
+    "talents": "0253000311--550022501201302251"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "always rank 2 instead of rank 4: cast Shadow Word: Death",
+    "gain_seed1": 0.016710428943684352,
+    "gain_seed2": 0.016968186147800823,
+    "candidates": 134,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "move down below 'cast Shadow Word: Death': cast Mind Blast",
+    "gain_seed1": 0.002957540178730733,
+    "gain_seed2": 0.002517024765481324,
+    "candidates": 133,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert in the middle: cast Shadow Word: Death",
+    "gain_seed1": 0.010602756992348583,
+    "gain_seed2": 0.010848116129360541,
+    "candidates": 145,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "opt-shadow-dps-raid-dps": {
+     "before": 552.3605387610696,
+     "after": 554.3518069279892,
+     "base": 552.3605387610696,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Shadow 15/0/36": {
+     "before": 542.7242956977854,
+     "after": 545.2588274846576,
+     "base": 542.7242956977854,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00027859999985000003,
+     "oom_after": 0.00027859999985000003
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ },
+ "raid": {
+  "class": "priest",
+  "spec": "shadow-dps",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/priest/dps/apls/shadow.apl.json",
+  "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
+  "builds": [
+   {
+    "label": "opt-shadow-dps-raid-dps",
+    "talents": "525000000305--500321501201302051"
+   },
+   {
+    "label": "sim preset: Shadow 15/0/36",
+    "talents": "0253000311--550022501201302251"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move down below 'cast Shadow Word: Death': cast Mind Blast",
+    "gain_seed1": 0.003325872368763916,
+    "gain_seed2": 0.0037996607802521787,
+    "candidates": 134,
+    "pass": 1
+   }
+  ],
+  "final": {
+   "raid": {
+    "opt-shadow-dps-raid-dps": {
+     "before": 634.1346186322886,
+     "after": 636.1792040535333,
+     "base": 634.1346186322886,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Shadow 15/0/36": {
+     "before": 623.3604929134717,
+     "after": 625.2148216058592,
+     "base": 623.3604929134717,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-27",
+  "passes": 3
+ }
+}

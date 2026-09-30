@@ -184,5 +184,35 @@
     "https://warcraftforever.games/talents/mage"
    ]
   }
+ ],
+ "warrior": [
+  {
+   "id": "arms-battle-raid",
+   "spec": "arms-battle-raid",
+   "glob": "cand-arms-battle-raid-from-*-dummy",
+   "after": "arms-2h-raid",
+   "name": "Arms — Battle Stance: Overpower, Rend and Slam (raid)",
+   "summary": "Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill opens Overpower, Mortal Strike on cooldown, Overpower whenever it lights up, Slam (with Improved Slam) as the filler, Execute under 20%. The warrior rotations had never left Berserker Stance, so Overpower and Rend were never cast. Talents from the simulator talent search from the simulator's Arms 39/12/0 preset. Ties the best raid warrior builds in a full raid; behind Fury on the training dummy.",
+   "why": {
+    "Mortal Strike": "The Arms capstone and the rotation's main strike.",
+    "Bloodthrill": "Main-hand hits on a Rended target open Overpower: the reason to stay in Battle Stance.",
+    "Improved Overpower": "+50% Overpower crit.",
+    "Improved Rend": "+35% Rend bleed.",
+    "Improved Slam": "A faster Slam that does not reset the swing: the filler.",
+    "Unbridled Wrath": "Rage from weapon hits: the talent search's biggest move.",
+    "Weaponmaster": "Crit, armor or extra attacks by weapon type.",
+    "Deep Wounds": "A bleed on every crit.",
+    "Impale": "+20% crit damage on abilities.",
+    "Two-Handed Weapon Specialization": "+3% two-hander damage."
+   },
+   "open_questions": [
+    "Whether Battle Stance loses Berserker Stance's 3% crit in Forever as in Classic, and whether stance dancing (Overpower in Battle, Whirlwind in Berserker) beats both.",
+    "Bloodthrill's Overpower chance per main-hand hit on a Rended target (the simulator's model)."
+   ],
+   "sources": [
+    "https://github.com/ElliotWood/Forever/blob/master/ui/specs/warrior/dps/presets.ts",
+    "https://warcraftforever.games/talents/warrior"
+   ]
+  }
  ]
 }

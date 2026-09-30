@@ -2,11 +2,11 @@
   "_doc": "Warlock spec models. sb-raid: Shadow Bolt spam with Corruption/Curse (the DS/Ruin and SM/Ruin family). affliction-raid: DoT-heavy raid spec (Corruption, Agony, Siphon Life via talent, Drain Life filler). fire-destro-raid: Immolate/Searing Pain/Soul Fire with Conflagrate and Incinerate arriving as talent effects; its filler is tagged 'filler' so Incinerate can replace it. affliction-leveling: Voidwalker tank with DoTs and Drain Life. Tags: 'mainschool' marks the sources a Demonic Sacrifice / Master Demonologist school buff applies to; pets are 'pet' sources that Demonic Sacrifice disables. mana_weight per model overrides the raid profile's mana weight for mana-bound specs; pet_dmg_to_surv turns pet damage into pet threat (fewer hits on you); profile_overrides changes a source per profile. min_level/max_level are Classic learn levels (Forever unlock levels are a beta check).",
   "models": {
     "sb-raid": {
-      "note": "Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-28, ds-ruin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 56%, agony 18%, corruption 17%, immolate 9%; 1% of the damage matched no source.",
+      "note": "Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little). Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-29, ds-ruin-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 55%, agony 18%, corruption 17%, immolate 10%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "shadow_bolt",
-          "share": 0.5588,
+          "share": 0.5545,
           "tags": ["type:spell", "school:shadow", "direct", "mainschool", "ability:Shadow Bolt", "ability:Destruction"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -16,7 +16,7 @@
         },
         {
           "id": "corruption",
-          "share": 0.1719,
+          "share": 0.1707,
           "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "game_overrides": {
@@ -27,7 +27,7 @@
         },
         {
           "id": "agony",
-          "share": 0.1799,
+          "share": 0.1775,
           "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "game_overrides": {
@@ -38,7 +38,7 @@
         },
         {
           "id": "immolate",
-          "share": 0.0894,
+          "share": 0.0973,
           "tags": ["type:spell", "school:fire", "dot", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
           "cast": 2.0,
           "min_cast": 1.5,
@@ -90,20 +90,20 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.175,
+          "loss": 0.1825,
           "cap": 0.9,
-          "rms": 0.0054,
-          "points": 23,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 10-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "rms": 0.0044,
+          "points": 25,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 11-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "affliction-raid": {
-      "note": "Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-28, affliction-dot-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 52%, agony 17%, corruption 16%, immolate 10%, imp 5%; 1% of the damage matched no source.",
+      "note": "Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Shadow Bolt rank 10 253-283 in 3s (85.7%; Classic 482-538), Corruption rank 7 438 over 18s (20% a tick; Classic 822), Bane of Agony rank 6 552 over 24s (Classic 1044), Immolate rank 8 158 plus 275, Drain Life rank 6 51 a tick, Siphon Life rank 4 41 every 3s: everything roughly halved together, so the shares stand; Wrack (talent, level 40) is a 6s channel that buffs your other Shadow DoTs by 10%. Raid sim shares (2026-09-29, affliction-dot-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): shadow_bolt 52%, agony 16%, corruption 16%, immolate 11%, imp 6%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "corruption",
-          "share": 0.1582,
+          "share": 0.1566,
           "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "game_overrides": {
@@ -113,7 +113,7 @@
         },
         {
           "id": "agony",
-          "share": 0.1661,
+          "share": 0.1641,
           "tags": ["type:spell", "school:shadow", "dot", "mainschool", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "game_overrides": {
@@ -123,7 +123,7 @@
         },
         {
           "id": "shadow_bolt",
-          "share": 0.5237,
+          "share": 0.519,
           "tags": ["type:spell", "school:shadow", "direct", "mainschool", "ability:Shadow Bolt", "ability:Destruction"],
           "cast": 3.0,
           "min_cast": 1.5
@@ -140,14 +140,14 @@
         },
         {
           "id": "immolate",
-          "share": 0.0971,
+          "share": 0.1052,
           "tags": ["type:spell", "school:fire", "dot", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
           "cast": 2.0,
           "min_cast": 1.5
         },
         {
           "id": "imp",
-          "share": 0.0549,
+          "share": 0.0551,
           "tags": ["pet", "type:spell", "school:fire", "ability:Imp", "ability:Imp's Firebolt", "withpet"],
           "cast": 2.0,
           "min_cast": 1.0
@@ -187,34 +187,34 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.2,
-          "cap": 0.13,
-          "rms": 0.0092,
-          "points": 21,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 11-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "loss": 0.2025,
+          "cap": 0.14,
+          "rms": 0.0085,
+          "points": 22,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 11-14% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "fire-destro-raid": {
-      "note": "Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Incinerate ranks at 40/50/60 (201-233 in 2.5s at 71.4%, +25% with Immolate) replace the 3s Shadow Bolt filler (encoded as the Incinerate talent effect on the filler source); Conflagrate has six ranks from 25; Shadowburn rank 6 259-288; Soul Fire rank 2 390-487. Raid sim shares (2026-09-28, destruction-fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): filler 55%, agony 18%, corruption 17%, immolate 9%, searing_pain 1%; 1% of the damage matched no source.",
+      "note": "Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects. Beta client 1.60.1.70009 (2026-09-25 refresh, see <class>/spells/README.md): Incinerate ranks at 40/50/60 (201-233 in 2.5s at 71.4%, +25% with Immolate) replace the 3s Shadow Bolt filler (encoded as the Incinerate talent effect on the filler source); Conflagrate has six ranks from 25; Shadowburn rank 6 259-288; Soul Fire rank 2 390-487. Raid sim shares (2026-09-29, destruction-fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): filler 55%, agony 17%, corruption 17%, immolate 10%, searing_pain 1%; 1% of the damage matched no source.",
       "sources": [
         {
           "id": "immolate",
-          "share": 0.0941,
+          "share": 0.1013,
           "tags": ["type:spell", "school:fire", "dot", "direct", "mainschool", "ability:Immolate", "ability:Destruction", "ability:Warlock"],
           "cast": 2.0,
           "min_cast": 1.5
         },
         {
           "id": "filler",
-          "share": 0.5487,
+          "share": 0.5473,
           "tags": ["type:spell", "school:fire", "direct", "filler", "mainschool", "ability:Shadow Bolt", "ability:Incinerate", "ability:Destruction"],
           "cast": 3.0,
           "min_cast": 1.5
         },
         {
           "id": "searing_pain",
-          "share": 0.0075,
+          "share": 0.0054,
           "tags": ["type:spell", "school:fire", "direct", "mainschool", "ability:Searing Pain", "ability:Destruction"],
           "cast": 1.5,
           "min_cast": 1.5,
@@ -229,7 +229,7 @@
         },
         {
           "id": "corruption",
-          "share": 0.1728,
+          "share": 0.1723,
           "tags": ["type:spell", "school:shadow", "dot", "ability:Corruption", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "game_overrides": {
@@ -239,7 +239,7 @@
         },
         {
           "id": "agony",
-          "share": 0.1769,
+          "share": 0.1737,
           "tags": ["type:spell", "school:shadow", "dot", "ability:Curse of Agony", "ability:Bane of Agony", "ability:Affliction", "ability:Warlock"],
           "can_crit": false,
           "note": "Bane of Agony: 17% of the Forever raid split of the fire-destro build (2026-09-26); the simulator's warlock rotation is Shadow Bolt + dots for every build."
@@ -286,11 +286,11 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.155,
+          "loss": 0.165,
           "cap": 0.9,
           "rms": 0.0051,
-          "points": 43,
-          "note": "Raid sim calibration (2026-09-28, ElliotWood/Forever 40be98e, training dummy): the builds lose 10-11% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "points": 38,
+          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 10-12% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },

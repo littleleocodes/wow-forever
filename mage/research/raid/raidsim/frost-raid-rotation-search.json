@@ -1,0 +1,118 @@
+{
+ "dummy": {
+  "class": "mage",
+  "spec": "frost-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+  "start": "_reference/data/raidsim/apls/mage/frost-raid.apl.json",
+  "builds": [
+   {
+    "label": "frost-fingers-of-frost-raid",
+    "talents": "1502050030003111--055500030100031024"
+   },
+   {
+    "label": "sim preset: Frost 14/0/37",
+    "talents": "050005013--0555003301001301251"
+   },
+   {
+    "label": "frost-arcane-power-raid",
+    "talents": "230205020102311531--055500032"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "dummy": {
+    "frost-fingers-of-frost-raid": {
+     "before": 587.1340130669748,
+     "after": 587.1340130669748,
+     "base": 587.1340130669748,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Frost 14/0/37": {
+     "before": 558.2332321124052,
+     "after": 558.2332321124052,
+     "base": 558.2332321124052,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.5975247000000774,
+     "oom_after": 2.5975247000000774
+    },
+    "frost-arcane-power-raid": {
+     "before": 547.8133819602666,
+     "after": 547.8133819602666,
+     "base": 547.8133819602666,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ },
+ "raid": {
+  "class": "mage",
+  "spec": "frost-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
+  "start": "_reference/data/raidsim/apls/mage/frost-raid-raid.apl.json",
+  "builds": [
+   {
+    "label": "frost-fingers-of-frost-raid",
+    "talents": "1502050030003111--055500030100031024"
+   },
+   {
+    "label": "sim preset: Frost 14/0/37",
+    "talents": "050005013--0555003301001301251"
+   },
+   {
+    "label": "frost-arcane-power-raid",
+    "talents": "230205020102311531--055500032"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [],
+  "final": {
+   "raid": {
+    "frost-fingers-of-frost-raid": {
+     "before": 666.9114291222388,
+     "after": 666.9114291222388,
+     "base": 666.9114291222388,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Frost 14/0/37": {
+     "before": 643.3797357863838,
+     "after": 643.3797357863838,
+     "base": 643.3797357863838,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "frost-arcane-power-raid": {
+     "before": 626.7226330358327,
+     "after": 626.7226330358327,
+     "base": 626.7226330358327,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  }
+ }
+}

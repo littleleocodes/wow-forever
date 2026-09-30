@@ -1,0 +1,202 @@
+{
+ "dummy": {
+  "class": "hunter",
+  "spec": "bm-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "dummy",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
+  "builds": [
+   {
+    "label": "mm-hawk-raid",
+    "talents": "53200005051001-005355000150104"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "drop: use every other cooldown when ready",
+    "gain_seed1": 0.028914303349429904,
+    "gain_seed2": 0.029631228962047285,
+    "candidates": 122,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.006148431743072669,
+    "gain_seed2": 0.005337402888460296,
+    "candidates": 122,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "drop: if time to the next auto attack > 0.5s: cast Multi-Shot",
+    "gain_seed1": 0.020827529749304796,
+    "gain_seed2": 0.020703930356217093,
+    "candidates": 105,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "drop 'mana % \u2265 30%' from the condition: if time left on Serpent Sting < 1s and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.028243115792944362,
+    "gain_seed2": 0.02842145219389236,
+    "candidates": 90,
+    "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop the condition: if time to the next auto attack > 1s: cast Summon Hawk",
+    "gain_seed1": 0.007265299619866328,
+    "gain_seed2": 0.008270260528430384,
+    "candidates": 85,
+    "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "move down below 'cast Summon Hawk': if time left on Serpent Sting < 1s: cast Serpent Sting",
+    "gain_seed1": 0.009949807620580176,
+    "gain_seed2": 0.008968632492004414,
+    "candidates": 82,
+    "pass": 1
+   },
+   {
+    "round": 7,
+    "change": "insert before the filler: use every other cooldown when ready",
+    "gain_seed1": 0.03860405241044029,
+    "gain_seed2": 0.03775118316063719,
+    "candidates": 103,
+    "pass": 2
+   },
+   {
+    "round": 8,
+    "change": "threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting",
+    "gain_seed1": 0.0037180861032757306,
+    "gain_seed2": 0.004319206766535855,
+    "candidates": 103,
+    "pass": 2
+   },
+   {
+    "round": 9,
+    "change": "threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting",
+    "gain_seed1": 0.013940853454017299,
+    "gain_seed2": 0.01320563991410384,
+    "candidates": 104,
+    "pass": 2
+   }
+  ],
+  "final": {
+   "dummy": {
+    "mm-hawk-raid": {
+     "before": 442.47185397821204,
+     "after": 468.61965789497987,
+     "base": 442.47185397821204,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 415.2974886124356,
+     "after": 436.7324456139374,
+     "base": 415.2974886124356,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ },
+ "raid": {
+  "class": "hunter",
+  "spec": "bm-raid",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": false,
+  "simulator_apl": "ui/specs/hunter/dps/apls/bm.apl.json",
+  "start": "ui\\specs\\hunter\\dps\\apls\\bm.apl.json",
+  "builds": [
+   {
+    "label": "mm-hawk-raid",
+    "talents": "53200005051001-005355000150104"
+   },
+   {
+    "label": "sim preset: Beast Mastery 35/16/0",
+    "talents": "5520001505121251-0050551"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot",
+    "gain_seed1": 0.01895893152064243,
+    "gain_seed2": 0.01891751462012392,
+    "candidates": 122,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop the condition: if time to the next auto attack > 1s: cast Summon Hawk",
+    "gain_seed1": 0.004285250643001337,
+    "gain_seed2": 0.004414820369868844,
+    "candidates": 122,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.001957712884890439,
+    "gain_seed2": 0.001528643436562227,
+    "candidates": 140,
+    "pass": 2
+   },
+   {
+    "round": 4,
+    "change": "threshold 0.75s -> 0.25s: if time left on Serpent Sting < 0.75s and mana % \u2265 30%: cast Serpent Sting + move to the top: if time left on Serpent Sting < 0.25s and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.002837488713772096,
+    "gain_seed2": 0.0028151126998139375,
+    "candidates": 146,
+    "pass": 3
+   }
+  ],
+  "final": {
+   "raid": {
+    "mm-hawk-raid": {
+     "before": 791.7442408324048,
+     "after": 815.0214704499629,
+     "base": 791.7442408324048,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Beast Mastery 35/16/0": {
+     "before": 743.2837109819842,
+     "after": 763.513127498875,
+     "base": 743.2837109819842,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 4
+ }
+}

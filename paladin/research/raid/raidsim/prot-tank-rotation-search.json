@@ -1,0 +1,90 @@
+{
+ "raid": {
+  "class": "paladin",
+  "spec": "prot-tank",
+  "date": "2026-09-29",
+  "commit": "40be98e",
+  "setting": "raid",
+  "tank": true,
+  "simulator_apl": "ui/specs/paladin/protection/apls/default.apl.json",
+  "start": "ui\\specs\\paladin\\protection\\apls\\default.apl.json",
+  "builds": [
+   {
+    "label": "prot-tank",
+    "talents": "-0530513101301-530253300010303"
+   },
+   {
+    "label": "sim preset: Protection 0/45/6",
+    "talents": "-5532513321301551-15"
+   }
+  ],
+  "iterations": 3000,
+  "confirm": 20000,
+  "changes": [
+   {
+    "round": 1,
+    "change": "insert before the filler: if health % < 10%: cast Lay on Hands",
+    "gain_seed1": 0.08021460806009584,
+    "gain_seed2": 0.07829138113781964,
+    "candidates": 119,
+    "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "drop the condition: if time left on Seal of Righteousness < 2s: cast Judgement",
+    "gain_seed1": 0.04232372904862025,
+    "gain_seed2": 0.04293843357434879,
+    "candidates": 135,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "insert at the top: cast Holy Shield",
+    "gain_seed1": 0.013359209105819891,
+    "gain_seed2": 0.013309198719979598,
+    "candidates": 131,
+    "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "insert at the top: cast Templar's Bulwark",
+    "gain_seed1": 0.013472979391766282,
+    "gain_seed2": 0.014453759487776274,
+    "candidates": 153,
+    "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "insert before the filler: cast Retribution Aura",
+    "gain_seed1": 0.003074547399127159,
+    "gain_seed2": 0.0022971924637289476,
+    "candidates": 104,
+    "pass": 3
+   }
+  ],
+  "final": {
+   "raid": {
+    "prot-tank": {
+     "before": 450.78052684455014,
+     "after": 495.74188269252517,
+     "base": 450.78052684455014,
+     "before_value": 1.0,
+     "after_value": 1.0043239565815838,
+     "oom_before": 2.5403570424993167,
+     "oom_after": 2.0710213506532216
+    },
+    "sim preset: Protection 0/45/6": {
+     "before": 371.28685443631707,
+     "after": 405.0766754113414,
+     "base": 371.28685443631707,
+     "before_value": 1.0,
+     "after_value": 1.001211231721744,
+     "oom_before": 11.524190621148982,
+     "oom_after": 8.966609279328095
+    }
+   }
+  },
+  "first_date": "2026-09-28",
+  "passes": 3
+ }
+}

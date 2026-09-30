@@ -1,0 +1,76 @@
+{
+ "id": "cand-arms-2h-raid-preset-dps",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Cleave",
+    2
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ]
+ },
+ "preset": "DPS",
+ "talents": "30305013-050520035150310051",
+ "note": "The community simulator's preset 'DPS' (warrior/dps/presets.ts), a raid candidate since it ran within 6% of the best build of arms-2h-raid (162.2 vs 169.2 in the race of 2026-09-29)."
+}
