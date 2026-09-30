@@ -554,55 +554,6 @@
       ]
     },
     {
-      "id": "opt-holy-heal-raid-heal",
-      "name": "Optimizer — Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4% (raid-heal)",
-      "role": "healer",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +93.7% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Discipline": [
-          ["Twin Disciplines", 5],
-          ["Power in Light", 2],
-          ["Improved Power Word: Shield", 3],
-          ["Meditation", 3],
-          ["Inner Focus", 1],
-          ["Mental Agility", 1],
-          ["Mental Strength", 5],
-          ["Soul Warding", 1],
-          ["Penance", 1]
-        ],
-        "Holy": [
-          ["Holy Specialization", 5],
-          ["Twilight Focus", 3],
-          ["Improved Renew", 3],
-          ["Divine Fury", 1],
-          ["Inspiration", 3],
-          ["Holy Nova", 1],
-          ["Improved Healing", 3],
-          ["Binding Heal", 1],
-          ["Litany of Light", 2],
-          ["Spiritual Guidance", 4],
-          ["Spiritual Healing", 3]
-        ],
-        "Shadow": []
-      },
-      "core": [
-        {"talent": "Meditation", "why": "Removing it costs 34.5 points of score in this model."},
-        {"talent": "Improved Healing", "why": "Removing it costs 13.1 points of score in this model."},
-        {"talent": "Penance", "why": "Removing it costs 10.5 points of score in this model."},
-        {"talent": "Spiritual Healing", "why": "Removing it costs 10.3 points of score in this model."},
-        {"talent": "Spiritual Guidance", "why": "Removing it costs 6.4 points of score in this model."},
-        {"talent": "Mental Strength", "why": "Removing it costs 5.1 points of score in this model."},
-        {"talent": "Inspiration", "why": "Removing it costs 4.0 points of score in this model."},
-        {"talent": "Inner Focus", "why": "Removing it costs 3.8 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: priest/talents/forever/optimizer/holy-heal-raid-heal.md", "Promoted by rebuild.py on 2026-09-28: cand-holy-r1 had the highest healing capacity in the healer lab (0.623 vs 0.608)."],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/priest"]
-    },
-    {
       "id": "smite-discipline-raid",
       "name": "Discipline/Holy — Smite (raid)",
       "role": "dps",
@@ -882,6 +833,55 @@
       "notes": ["Community tie-break moves: 1 point Spell Warding -> Litany of Light; 1 point Holy Specialization -> Holy Reach; 1 point Shadow Focus -> Spirit Tap.", "Where we disagree with the community: most Holy builds take Meditation (91% take it), Twin Disciplines (86% take it), Inner Focus (84% take it), Improved Healing (83% take it), Improved Power Word: Shield (79% take it), Improved Renew (72% take it), which the model values below this build's weakest point; this build takes Blackout (2%), Improved Mind Flay (1%), Improved Psychic Scream (0%), Improved Shadow Word: Pain (2%), Mind Flay (1%), Shadow Reach (1%), Spell Warding (15%), Spirit Tap (13%), Vampiric Embrace (2%), which few Holy builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
       "open_questions": ["A derived Holy PvP build: check it in duels and battlegrounds at launch."],
       "sources": ["https://talentsforever.com/priest", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "opt-holy-heal-raid-heal",
+      "name": "Optimizer — Raid healing mix: Greater Heal 35%, Flash Heal 20%, Renew 20%, Prayer of Healing 15%, Power Word: Shield 6%, Heal 4% (raid-heal)",
+      "role": "healer",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `holy-heal` and profile `raid-heal`: score +97.9% (healing score: 0.6 x HPS gain + 0.5 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 2],
+          ["Improved Power Word: Shield", 3],
+          ["Meditation", 3],
+          ["Inner Focus", 1],
+          ["Mental Agility", 1],
+          ["Mental Strength", 5],
+          ["Soul Warding", 1],
+          ["Penance", 1]
+        ],
+        "Holy": [
+          ["Holy Specialization", 5],
+          ["Twilight Focus", 3],
+          ["Improved Renew", 3],
+          ["Divine Fury", 1],
+          ["Inspiration", 3],
+          ["Holy Nova", 1],
+          ["Improved Healing", 3],
+          ["Binding Heal", 1],
+          ["Litany of Light", 2],
+          ["Spiritual Guidance", 4],
+          ["Spiritual Healing", 3]
+        ],
+        "Shadow": []
+      },
+      "core": [
+        {"talent": "Meditation", "why": "Removing it costs 34.5 points of score in this model."},
+        {"talent": "Improved Healing", "why": "Removing it costs 13.1 points of score in this model."},
+        {"talent": "Penance", "why": "Removing it costs 10.6 points of score in this model."},
+        {"talent": "Spiritual Healing", "why": "Removing it costs 10.5 points of score in this model."},
+        {"talent": "Mental Strength", "why": "Removing it costs 7.1 points of score in this model."},
+        {"talent": "Spiritual Guidance", "why": "Removing it costs 6.5 points of score in this model."},
+        {"talent": "Inner Focus", "why": "Removing it costs 5.9 points of score in this model."},
+        {"talent": "Inspiration", "why": "Removing it costs 4.1 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/research/talents/forever/optimizer/holy-heal-raid-heal.md", "Promoted by rebuild.py on 2026-09-30: cand-holy-r1 had the highest healing capacity in the healer lab (0.623 vs 0.608)."],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
     }
   ]
 }

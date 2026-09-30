@@ -12,15 +12,15 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Shadowform | Shadow | 7 | +25.00% | manual |
 | Meditation | Discipline | 3 | +11.72% | manual |
 | Penance | Discipline | 5 | +8.05% | manual |
+| Inner Focus | Discipline | 3 | +4.93% | manual |
 | Improved Healing | Holy | 4 | +4.38% | manual |
-| Inner Focus | Discipline | 3 | +3.21% | manual |
 | Power Infusion | Discipline | 7 | +3.02% | manual |
 | Spiritual Healing | Holy | 6 | +2.26% | manual |
 | Binding Heal | Holy | 4 | +1.80% | manual |
 | Prayer of Mending | Holy | 7 | +1.77% | manual |
+| Mental Strength | Discipline | 4 | +1.37% | manual |
 | Litany of Light | Holy | 5 | +1.00% | manual |
 | Improved Shadow Word: Pain | Shadow | 2 | +1.00% | manual |
-| Mental Strength | Discipline | 4 | +0.97% | manual |
 | Inspiration | Holy | 3 | +0.91% | manual |
 | Spiritual Guidance | Holy | 5 | +0.89% | manual |
 | Divine Aegis | Discipline | 6 | +0.58% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Vampiric Embrace | Shadow | 4 | +0.00% | manual |
 | Spell Warding | Holy | 2 | +0.00% | manual |
 
-## Optimized build: 21/30/0  score +93.74%  (dps x1.547, sustain x2.166, surv x1.015, utility +2.60%)
+## Optimized build: 21/30/0  score +97.87%  (dps x1.567, sustain x2.225, surv x1.015, utility +2.60%)
 
 ```
   Discipline: Twin Disciplines 5, Silent Resolve 3, Improved Power Word: Shield 2, Meditation 3, Inner Focus 1, Mental Agility 1, Mental Strength 5, Penance 1
@@ -52,11 +52,11 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
 | Shadowform | Shadow 7 | 1/1 | +25.00% | no |
-| Power Infusion | Discipline 7 | 1/1 | +3.58% | no |
-| Prayer of Mending | Holy 7 | 1/1 | +2.51% | no |
+| Power Infusion | Discipline 7 | 1/1 | +3.60% | no |
+| Prayer of Mending | Holy 7 | 1/1 | +2.54% | no |
 | Improved Shadow Word: Pain | Shadow 2 | 1/2 | +1.00% | no |
-| Divine Aegis | Discipline 6 | 1/3 | +0.89% | no |
-| Soul Warding | Discipline 4 | 1/1 | +0.88% | no |
+| Divine Aegis | Discipline 6 | 1/3 | +0.91% | no |
+| Soul Warding | Discipline 4 | 1/1 | +0.89% | no |
 | Spirit of Redemption | Holy 5 | 1/1 | +0.50% | yes |
 | Renewed Hope | Discipline 5 | 1/5 | +0.49% | no |
 | Mental Agility | Discipline 3 | 2/3 | +0.40% | yes |
