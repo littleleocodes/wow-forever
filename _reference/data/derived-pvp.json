@@ -1,0 +1,633 @@
+{
+ "mage": {
+  "Arcane": {
+   "model": "frost-leveling",
+   "tree": "Arcane",
+   "builds_behind_picks": 5513,
+   "score": 1.2616917689242824,
+   "score_best": 1.2729358161621307,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Arcane Focus": 5,
+    "Magic Absorption": 2,
+    "Arcane Resilience": 1,
+    "Arcane Subtlety": 2,
+    "Arcane Geometry": 2,
+    "Arcane Concentration": 5,
+    "Improved Counterspell": 2,
+    "Arcane Shielding": 2,
+    "Presence of Mind": 1,
+    "Arcane Meditation": 3,
+    "Arcane Instability": 3,
+    "Arcane Mind": 2,
+    "Arcane Power": 1,
+    "Improved Frostbolt": 5,
+    "Frostbite": 3,
+    "Ice Lance": 1,
+    "Ice Block": 1,
+    "Shatter": 3,
+    "Ice Shards": 5,
+    "Improved Frost Nova": 2
+   },
+   "allocation": {
+    "Arcane Focus": 5,
+    "Magic Absorption": 2,
+    "Arcane Resilience": 1,
+    "Arcane Subtlety": 2,
+    "Arcane Geometry": 2,
+    "Arcane Concentration": 5,
+    "Improved Counterspell": 2,
+    "Arcane Shielding": 1,
+    "Presence of Mind": 1,
+    "Arcane Meditation": 3,
+    "Arcane Instability": 3,
+    "Arcane Power": 1,
+    "Improved Frostbolt": 5,
+    "Frostbite": 3,
+    "Ice Lance": 1,
+    "Ice Block": 1,
+    "Shatter": 3,
+    "Ice Shards": 5,
+    "Improved Frost Nova": 2,
+    "Missile Barrage": 1,
+    "Arcane Blast": 1,
+    "Arcane Impact": 1
+   },
+   "moves": [
+    {
+     "move": "1 point Arcane Shielding -> Missile Barrage",
+     "pick_gain": 80.0,
+     "score_share": 0.9937
+    },
+    {
+     "move": "1 point Arcane Mind -> Arcane Blast",
+     "pick_gain": 71.8,
+     "score_share": 0.9924
+    },
+    {
+     "move": "1 point Arcane Mind -> Arcane Impact",
+     "pick_gain": 10.8,
+     "score_share": 0.9912
+    }
+   ],
+   "pick_score": 1152.0,
+   "pick_score_optimum": 989.4,
+   "weakest_point": {
+    "talent": "Shatter",
+    "value_per_point": 0.0556
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Arcane Mind",
+     "pick": 96,
+     "value_per_point": 0.0013
+    },
+    {
+     "talent": "Incineration",
+     "pick": 71,
+     "value_per_point": 0.0034
+    }
+   ],
+   "rare": [
+    {
+     "talent": "Frostbite",
+     "pick": 15,
+     "ranks": 3,
+     "value_per_point": 0.0443
+    },
+    {
+     "talent": "Ice Block",
+     "pick": 20,
+     "ranks": 1,
+     "value_per_point": 0.0628
+    },
+    {
+     "talent": "Ice Lance",
+     "pick": 19,
+     "ranks": 1,
+     "value_per_point": 0.2764
+    },
+    {
+     "talent": "Improved Frost Nova",
+     "pick": 19,
+     "ranks": 2,
+     "value_per_point": 0.0283
+    },
+    {
+     "talent": "Shatter",
+     "pick": 14,
+     "ranks": 3,
+     "value_per_point": 0.0556
+    }
+   ],
+   "hand": {},
+   "verdict": "new"
+  },
+  "Fire": {
+   "model": "fire-leveling",
+   "tree": "Fire",
+   "builds_behind_picks": 6135,
+   "score": 1.244060898622652,
+   "score_best": 1.2556272144581673,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Improved Fireball": 5,
+    "Ignite": 5,
+    "Pyroblast": 1,
+    "Flame Throwing": 2,
+    "Burning Soul": 3,
+    "Hot Streak": 1,
+    "Impact": 3,
+    "Critical Mass": 3,
+    "Blast Wave": 1,
+    "Fire Power": 5,
+    "Combustion": 1,
+    "Elemental Precision": 5,
+    "Improved Frost Nova": 2,
+    "Permafrost": 3,
+    "Ice Lance": 1,
+    "Frostbite": 3,
+    "Ice Block": 1,
+    "Arctic Reach": 1,
+    "Improved Scorch": 1,
+    "Shatter": 3,
+    "Frost Warding": 1
+   },
+   "allocation": {
+    "Improved Fireball": 3,
+    "Ignite": 5,
+    "Pyroblast": 1,
+    "Flame Throwing": 2,
+    "Burning Soul": 3,
+    "Hot Streak": 1,
+    "Impact": 3,
+    "Critical Mass": 3,
+    "Blast Wave": 1,
+    "Fire Power": 5,
+    "Combustion": 1,
+    "Elemental Precision": 5,
+    "Improved Frost Nova": 2,
+    "Permafrost": 3,
+    "Ice Lance": 1,
+    "Frostbite": 3,
+    "Ice Block": 1,
+    "Improved Scorch": 2,
+    "Shatter": 3,
+    "Ice Shards": 1,
+    "Wake of Fire": 2
+   },
+   "moves": [
+    {
+     "move": "1 point Arctic Reach -> Improved Scorch",
+     "pick_gain": 28.0,
+     "score_share": 0.9946
+    },
+    {
+     "move": "1 point Frost Warding -> Ice Shards",
+     "pick_gain": 9.0,
+     "score_share": 0.9917
+    },
+    {
+     "move": "2 points Improved Fireball -> Wake of Fire",
+     "pick_gain": 0.8,
+     "score_share": 0.9908
+    }
+   ],
+   "pick_score": 1187.8,
+   "pick_score_optimum": 1150.0,
+   "weakest_point": {
+    "talent": "Shatter",
+    "value_per_point": 0.0197
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Master of Elements",
+     "pick": 83,
+     "value_per_point": 0.0003
+    }
+   ],
+   "rare": [
+    {
+     "talent": "Frostbite",
+     "pick": 11,
+     "ranks": 3,
+     "value_per_point": 0.0176
+    },
+    {
+     "talent": "Improved Frost Nova",
+     "pick": 13,
+     "ranks": 2,
+     "value_per_point": 0.0259
+    },
+    {
+     "talent": "Permafrost",
+     "pick": 7,
+     "ranks": 3,
+     "value_per_point": 0.0175
+    }
+   ],
+   "hand": {},
+   "verdict": "new"
+  },
+  "Frost": {
+   "model": "frost-leveling",
+   "tree": "Frost",
+   "builds_behind_picks": 9200,
+   "score": 1.6364239355641168,
+   "score_best": 1.650950119709919,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Arcane Focus": 5,
+    "Arcane Subtlety": 2,
+    "Arcane Geometry": 2,
+    "Arcane Concentration": 3,
+    "Improved Frostbolt": 5,
+    "Frostbite": 3,
+    "Improved Frost Nova": 2,
+    "Ice Lance": 1,
+    "Permafrost": 3,
+    "Ice Shards": 5,
+    "Ice Block": 1,
+    "Arctic Reach": 2,
+    "Piercing Ice": 3,
+    "Cold Snap": 1,
+    "Fingers of Frost": 2,
+    "Shatter": 3,
+    "Ice Barrier": 1,
+    "Elemental Precision": 2,
+    "Magic Absorption": 2,
+    "Improved Counterspell": 2,
+    "Arcane Resilience": 1
+   },
+   "allocation": {
+    "Arcane Focus": 5,
+    "Arcane Subtlety": 2,
+    "Arcane Geometry": 2,
+    "Arcane Concentration": 3,
+    "Improved Frostbolt": 5,
+    "Frostbite": 3,
+    "Improved Frost Nova": 2,
+    "Ice Lance": 1,
+    "Permafrost": 3,
+    "Ice Shards": 5,
+    "Ice Block": 1,
+    "Arctic Reach": 2,
+    "Piercing Ice": 3,
+    "Cold Snap": 1,
+    "Fingers of Frost": 2,
+    "Shatter": 3,
+    "Ice Barrier": 1,
+    "Magic Absorption": 2,
+    "Improved Counterspell": 2,
+    "Arcane Resilience": 1,
+    "Missile Barrage": 1,
+    "Frost Channeling": 1
+   },
+   "moves": [
+    {
+     "move": "1 point Elemental Precision -> Missile Barrage",
+     "pick_gain": 15.4,
+     "score_share": 0.9929
+    },
+    {
+     "move": "1 point Elemental Precision -> Frost Channeling",
+     "pick_gain": 3.73,
+     "score_share": 0.9912
+    }
+   ],
+   "pick_score": 1301.6,
+   "pick_score_optimum": 1282.5,
+   "weakest_point": {
+    "talent": "Missile Barrage",
+    "value_per_point": 0.0
+   },
+   "skipped_consensus": [],
+   "rare": [],
+   "hand": {
+    "pvp-frost": 0.8584
+   },
+   "verdict": "replaces"
+  }
+ },
+ "warrior": {
+  "Arms": {
+   "model": "arms-2h-raid",
+   "tree": "Arms",
+   "builds_behind_picks": 8519,
+   "score": 0.8910126748042737,
+   "score_best": 0.8994348175139659,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Improved Rend": 3,
+    "Deflection": 2,
+    "Improved Charge": 2,
+    "Improved Tactical Mastery": 5,
+    "Improved Overpower": 2,
+    "Anger Management": 1,
+    "Spearing Strike": 1,
+    "Deep Wounds": 3,
+    "Two-Handed Weapon Specialization": 2,
+    "Sweeping Strikes": 1,
+    "Weaponmaster": 5,
+    "Improved Hamstring": 3,
+    "Mortal Strike": 1,
+    "Cruelty": 5,
+    "Iron Will": 5,
+    "Blood Craze": 3,
+    "Piercing Howl": 1,
+    "Unbridled Wrath": 1,
+    "Enrage": 5
+   },
+   "allocation": {
+    "Improved Rend": 3,
+    "Deflection": 2,
+    "Improved Charge": 2,
+    "Improved Tactical Mastery": 5,
+    "Improved Overpower": 2,
+    "Anger Management": 1,
+    "Spearing Strike": 1,
+    "Deep Wounds": 3,
+    "Two-Handed Weapon Specialization": 3,
+    "Sweeping Strikes": 1,
+    "Weaponmaster": 3,
+    "Improved Hamstring": 3,
+    "Mortal Strike": 1,
+    "Cruelty": 5,
+    "Iron Will": 5,
+    "Blood Craze": 3,
+    "Piercing Howl": 1,
+    "Unbridled Wrath": 1,
+    "Enrage": 4,
+    "Impale": 2
+   },
+   "moves": [
+    {
+     "move": "2 points Weaponmaster -> Impale",
+     "pick_gain": 60.4,
+     "score_share": 0.9957
+    },
+    {
+     "move": "1 point Enrage -> Two-Handed Weapon Specialization",
+     "pick_gain": 22.53,
+     "score_share": 0.9906
+    }
+   ],
+   "pick_score": 1262.4,
+   "pick_score_optimum": 1179.5,
+   "weakest_point": {
+    "talent": "Anger Management",
+    "value_per_point": 0.0084
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Bloodthrill",
+     "pick": 78,
+     "value_per_point": 0.0063
+    }
+   ],
+   "rare": [],
+   "hand": {
+    "arms-pvp": 0.7106
+   },
+   "verdict": "replaces"
+  },
+  "Fury": {
+   "model": "fury-dw-raid",
+   "tree": "Fury",
+   "builds_behind_picks": 9026,
+   "score": 0.7037815473303692,
+   "score_best": 0.7089125184693755,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Cruelty": 5,
+    "Iron Will": 5,
+    "Piercing Howl": 1,
+    "Blood Craze": 3,
+    "Unbridled Wrath": 1,
+    "Improved Execute": 2,
+    "Raging Blows": 1,
+    "Enrage": 5,
+    "Death Wish": 1,
+    "Improved Intercept": 2,
+    "Improved Berserker Rage": 2,
+    "Dual Wield Specialization": 5,
+    "Bloodthirst": 1,
+    "Deflection": 5,
+    "Improved Tactical Mastery": 5,
+    "Anger Management": 1,
+    "Improved Charge": 2,
+    "Precision": 3,
+    "Flurry": 1
+   },
+   "allocation": {
+    "Cruelty": 5,
+    "Iron Will": 3,
+    "Piercing Howl": 1,
+    "Blood Craze": 3,
+    "Unbridled Wrath": 3,
+    "Improved Execute": 2,
+    "Raging Blows": 1,
+    "Enrage": 5,
+    "Death Wish": 1,
+    "Improved Intercept": 2,
+    "Improved Berserker Rage": 2,
+    "Dual Wield Specialization": 5,
+    "Bloodthirst": 1,
+    "Deflection": 5,
+    "Improved Tactical Mastery": 5,
+    "Anger Management": 1,
+    "Improved Charge": 2,
+    "Precision": 3,
+    "Flurry": 1
+   },
+   "moves": [
+    {
+     "move": "2 points Iron Will -> Unbridled Wrath",
+     "pick_gain": 28.8,
+     "score_share": 0.9928
+    }
+   ],
+   "pick_score": 1011.8,
+   "pick_score_optimum": 983.0,
+   "weakest_point": {
+    "talent": "Flurry",
+    "value_per_point": 0.0065
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Improved Rend",
+     "pick": 76,
+     "value_per_point": 0.0
+    },
+    {
+     "talent": "Deep Wounds",
+     "pick": 71,
+     "value_per_point": 0.0099
+    },
+    {
+     "talent": "Boundless Rage",
+     "pick": 71,
+     "value_per_point": 0.0024
+    }
+   ],
+   "rare": [
+    {
+     "talent": "Improved Charge",
+     "pick": 18,
+     "ranks": 2,
+     "value_per_point": 0.0228
+    },
+    {
+     "talent": "Improved Execute",
+     "pick": 20,
+     "ranks": 2,
+     "value_per_point": 0.0391
+    },
+    {
+     "talent": "Improved Intercept",
+     "pick": 19,
+     "ranks": 2,
+     "value_per_point": 0.0159
+    },
+    {
+     "talent": "Iron Will",
+     "pick": 18,
+     "ranks": 3,
+     "value_per_point": 0.0092
+    }
+   ],
+   "hand": {},
+   "verdict": "new"
+  },
+  "Protection": {
+   "model": "arms-2h-raid",
+   "tree": "Protection",
+   "builds_behind_picks": 11698,
+   "score": 0.8343294858798017,
+   "score_best": 0.8423294858798017,
+   "score_talentless": 0.0,
+   "optimum": {
+    "Anticipation": 5,
+    "Toughness": 5,
+    "Shield Specialization": 5,
+    "Improved Disarm": 3,
+    "Improved Bloodrage": 2,
+    "Concussion Blow": 1,
+    "Improved Shield Wall": 2,
+    "Improved Shield Bash": 2,
+    "Focused Rage": 3,
+    "Last Stand": 1,
+    "Cruelty": 5,
+    "Iron Will": 5,
+    "Blood Craze": 3,
+    "Piercing Howl": 1,
+    "Unbridled Wrath": 1,
+    "Enrage": 5,
+    "Vanguard": 1,
+    "Death Wish": 1
+   },
+   "allocation": {
+    "Anticipation": 1,
+    "Toughness": 5,
+    "Shield Specialization": 5,
+    "Improved Disarm": 3,
+    "Improved Bloodrage": 2,
+    "Concussion Blow": 1,
+    "Improved Shield Wall": 2,
+    "Improved Shield Bash": 2,
+    "Focused Rage": 3,
+    "Last Stand": 1,
+    "Cruelty": 5,
+    "Iron Will": 5,
+    "Blood Craze": 3,
+    "Piercing Howl": 1,
+    "Unbridled Wrath": 1,
+    "Enrage": 5,
+    "Vanguard": 1,
+    "Death Wish": 1,
+    "Master of Defense": 2,
+    "Improved Revenge": 2
+   },
+   "moves": [
+    {
+     "move": "2 points Anticipation -> Master of Defense",
+     "pick_gain": 70.6,
+     "score_share": 0.9953
+    },
+    {
+     "move": "2 points Anticipation -> Improved Revenge",
+     "pick_gain": 30.27,
+     "score_share": 0.9905
+    }
+   ],
+   "pick_score": 998.7,
+   "pick_score_optimum": 897.8,
+   "weakest_point": {
+    "talent": "Improved Revenge",
+    "value_per_point": 0.0
+   },
+   "skipped_consensus": [
+    {
+     "talent": "Bastion",
+     "pick": 95,
+     "value_per_point": 0.0
+    },
+    {
+     "talent": "Shield Slam",
+     "pick": 94,
+     "value_per_point": 0.0267
+    },
+    {
+     "talent": "Defiance",
+     "pick": 83,
+     "value_per_point": 0.0
+    },
+    {
+     "talent": "Deflection",
+     "pick": 78,
+     "value_per_point": 0.0045
+    }
+   ],
+   "rare": [
+    {
+     "talent": "Blood Craze",
+     "pick": 15,
+     "ranks": 3,
+     "value_per_point": 0.1354
+    },
+    {
+     "talent": "Death Wish",
+     "pick": 1,
+     "ranks": 1,
+     "value_per_point": 0.0903
+    },
+    {
+     "talent": "Enrage",
+     "pick": 9,
+     "ranks": 5,
+     "value_per_point": 0.0109
+    },
+    {
+     "talent": "Improved Disarm",
+     "pick": 11,
+     "ranks": 3,
+     "value_per_point": 0.0089
+    },
+    {
+     "talent": "Iron Will",
+     "pick": 9,
+     "ranks": 5,
+     "value_per_point": 0.0077
+    },
+    {
+     "talent": "Piercing Howl",
+     "pick": 11,
+     "ranks": 1,
+     "value_per_point": 0.0712
+    }
+   ],
+   "hand": {},
+   "verdict": "new"
+  }
+ }
+}

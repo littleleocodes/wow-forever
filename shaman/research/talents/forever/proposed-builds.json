@@ -727,100 +727,6 @@
       "sources": ["https://talentsforever.com/shaman"]
     },
     {
-      "id": "enhancement-pvp",
-      "name": "Enhancement — PvP (generated)",
-      "role": "dps",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Enhancement",
-      "generated": "2026-09-29",
-      "summary": "The best Enhancement pvp build with at least 30 points in Enhancement, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (enhancement-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Elemental": [
-          ["Concussion", 5],
-          ["Elemental Warding", 3],
-          ["Reverberation", 5],
-          ["Call of Flame", 2],
-          ["Eye of the Storm", 3]
-        ],
-        "Enhancement": [
-          ["Thundering Strikes", 5],
-          ["Guardian Totems", 1],
-          ["Mental Dexterity", 3],
-          ["Improved Ghost Wolf", 2],
-          ["Shamanistic Focus", 1],
-          ["Anticipation", 3],
-          ["Toughness", 5],
-          ["Flurry", 3],
-          ["Stormstrike", 1],
-          ["Spirit Weapons", 1],
-          ["Mental Quickness", 2],
-          ["Maelstrom Weapon", 5],
-          ["Rage of the Farseer", 1]
-        ],
-        "Restoration": []
-      },
-      "core": [
-        {"talent": "Stormstrike", "why": "The scorer's value in this build: +15.1% of its score (model enhancement-dps)."},
-        {"talent": "Rage of the Farseer", "why": "The scorer's value in this build: +11.1% of its score (model enhancement-dps)."},
-        {"talent": "Reverberation", "why": "The scorer's value in this build: +11.0% of its score (model enhancement-dps)."},
-        {"talent": "Shamanistic Focus", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."},
-        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."},
-        {"talent": "Eye of the Storm", "why": "The scorer's value in this build: +9.7% of its score (model enhancement-dps)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model enhancement-dps, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Enhancement build: check it against the community's Enhancement builds at launch."],
-      "sources": ["https://talentsforever.com/shaman"]
-    },
-    {
-      "id": "restoration-pvp",
-      "name": "Restoration — PvP (generated)",
-      "role": "healer",
-      "content": "pvp",
-      "tier": "draft",
-      "spec": "Restoration",
-      "generated": "2026-09-29",
-      "summary": "The best Restoration pvp build with at least 30 points in Restoration, generated on 2026-09-29 by spec_builds.py: the stats model's optimum (resto-heal, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
-      "allocation": {
-        "Elemental": [],
-        "Enhancement": [
-          ["Earth's Grasp", 2],
-          ["Thundering Strikes", 5],
-          ["Guardian Totems", 2],
-          ["Improved Ghost Wolf", 2],
-          ["Shamanistic Focus", 1],
-          ["Anticipation", 3],
-          ["Toughness", 4],
-          ["Stormstrike", 1]
-        ],
-        "Restoration": [
-          ["Improved Healing Wave", 5],
-          ["Tidal Focus", 4],
-          ["Improved Reincarnation", 2],
-          ["Ancestral Healing", 2],
-          ["Healing Focus", 3],
-          ["Restorative Totems", 5],
-          ["Healing Way", 3],
-          ["Nature's Swiftness", 1],
-          ["Purification", 5],
-          ["Riptide", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Riptide", "why": "The scorer's value in this build: +16.9% of its score (model resto-heal)."},
-        {"talent": "Healing Way", "why": "The scorer's value in this build: +16.8% of its score (model resto-heal)."},
-        {"talent": "Improved Healing Wave", "why": "The scorer's value in this build: +14.0% of its score (model resto-heal)."},
-        {"talent": "Purification", "why": "The scorer's value in this build: +9.1% of its score (model resto-heal)."},
-        {"talent": "Nature's Swiftness", "why": "The scorer's value in this build: +8.7% of its score (model resto-heal)."},
-        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +7.7% of its score (model resto-heal)."}
-      ],
-      "flex": [],
-      "notes": ["Generated 2026-09-29 (spec_builds.py) so every spec has a pvp build; model resto-heal, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Restoration build: check it against the community's Restoration builds at launch."],
-      "sources": ["https://talentsforever.com/shaman"]
-    },
-    {
       "id": "opt-elemental-dps-raid-dps",
       "name": "Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)",
       "role": "dps",
@@ -1003,6 +909,157 @@
       "notes": ["Report: shaman/research/talents/forever/optimizer/enhancement-dps-parse.md"],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
       "sources": ["https://warcraftforever.games/talents/shaman"]
+    },
+    {
+      "id": "elemental-pvp",
+      "name": "Elemental — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Elemental",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Elemental PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Elemental (model elemental-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Elemental builds agree with (3007 builds).",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Elemental Warding", 2],
+          ["Reverberation", 5],
+          ["Call of Flame", 2],
+          ["Elemental Focus", 1],
+          ["Elemental Alacrity", 3],
+          ["Improved Fire Nova", 1],
+          ["Eye of the Storm", 3],
+          ["Call of Thunder", 1],
+          ["Elemental Reach", 2],
+          ["Lightning Overload", 3],
+          ["Earthbound", 1],
+          ["Elemental Fury", 5],
+          ["Lava Burst", 1]
+        ],
+        "Enhancement": [
+          ["Earth's Grasp", 2],
+          ["Thundering Strikes", 5],
+          ["Guardian Totems", 2],
+          ["Improved Ghost Wolf", 2],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 3],
+          ["Stormstrike", 1]
+        ],
+        "Restoration": []
+      },
+      "core": [
+        {"talent": "Elemental Fury", "why": "The scorer's value in this build: +17.8% of its score (model elemental-dps)."},
+        {"talent": "Eye of the Storm", "why": "The scorer's value in this build: +10.5% of its score (model elemental-dps)."},
+        {"talent": "Reverberation", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
+        {"talent": "Earthbound", "why": "The scorer's value in this build: +10.0% of its score (model elemental-dps)."},
+        {"talent": "Lava Burst", "why": "The scorer's value in this build: +7.5% of its score (model elemental-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +40.4% of the optimum's talent value above the hand draft pvp-elemental-ns, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Elemental Warding -> Improved Fire Nova.", "Where we disagree with the community: most Elemental builds take Convection (76% take it), which the model values below this build's weakest point; this build takes Anticipation (5%), Earth's Grasp (12%), Guardian Totems (12%), Stormstrike (18%), which few Elemental builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Elemental PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/popular.js"],
+      "replaces": "pvp-elemental-ns"
+    },
+    {
+      "id": "enhancement-pvp",
+      "name": "Enhancement — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Enhancement",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Enhancement PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Enhancement (model enhancement-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Enhancement builds agree with (5577 builds).",
+      "allocation": {
+        "Elemental": [
+          ["Concussion", 5],
+          ["Elemental Warding", 3],
+          ["Reverberation", 5],
+          ["Call of Flame", 2],
+          ["Eye of the Storm", 3]
+        ],
+        "Enhancement": [
+          ["Thundering Strikes", 5],
+          ["Mental Dexterity", 3],
+          ["Improved Ghost Wolf", 2],
+          ["Elemental Weapons", 1],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 3],
+          ["Toughness", 5],
+          ["Flurry", 4],
+          ["Stormstrike", 1],
+          ["Spirit Weapons", 1],
+          ["Mental Quickness", 2],
+          ["Improved Stormstrike", 2],
+          ["Maelstrom Weapon", 2],
+          ["Rage of the Farseer", 1]
+        ],
+        "Restoration": []
+      },
+      "core": [
+        {"talent": "Stormstrike", "why": "The scorer's value in this build: +15.3% of its score (model enhancement-dps)."},
+        {"talent": "Rage of the Farseer", "why": "The scorer's value in this build: +11.3% of its score (model enhancement-dps)."},
+        {"talent": "Reverberation", "why": "The scorer's value in this build: +11.1% of its score (model enhancement-dps)."},
+        {"talent": "Shamanistic Focus", "why": "The scorer's value in this build: +9.8% of its score (model enhancement-dps)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +9.8% of its score (model enhancement-dps)."},
+        {"talent": "Eye of the Storm", "why": "The scorer's value in this build: +9.8% of its score (model enhancement-dps)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 2 points Maelstrom Weapon -> Improved Stormstrike; 1 point Guardian Totems -> Elemental Weapons; 1 point Maelstrom Weapon -> Flurry.", "Where we disagree with the community: most Enhancement builds take Ancestral Knowledge (76% take it), Elemental Devastation (74% take it), which the model values below this build's weakest point; this build takes Elemental Warding (16%), Eye of the Storm (2%), which few Enhancement builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Enhancement PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "restoration-pvp",
+      "name": "Restoration — PvP (derived)",
+      "role": "healer",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Restoration",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Restoration PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Restoration (model resto-heal, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Restoration builds agree with (1730 builds).",
+      "allocation": {
+        "Elemental": [],
+        "Enhancement": [
+          ["Earth's Grasp", 2],
+          ["Thundering Strikes", 5],
+          ["Guardian Totems", 2],
+          ["Improved Ghost Wolf", 2],
+          ["Shamanistic Focus", 1],
+          ["Anticipation", 3],
+          ["Toughness", 4],
+          ["Stormstrike", 1]
+        ],
+        "Restoration": [
+          ["Improved Healing Wave", 5],
+          ["Mindfulness", 2],
+          ["Tidal Focus", 4],
+          ["Improved Reincarnation", 2],
+          ["Ancestral Healing", 3],
+          ["Healing Focus", 3],
+          ["Restorative Totems", 1],
+          ["Mana Tide Totem", 1],
+          ["Healing Way", 3],
+          ["Nature's Swiftness", 1],
+          ["Purification", 5],
+          ["Riptide", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Healing Way", "why": "The scorer's value in this build: +17.0% of its score (model resto-heal)."},
+        {"talent": "Riptide", "why": "The scorer's value in this build: +16.9% of its score (model resto-heal)."},
+        {"talent": "Improved Healing Wave", "why": "The scorer's value in this build: +14.2% of its score (model resto-heal)."},
+        {"talent": "Purification", "why": "The scorer's value in this build: +9.0% of its score (model resto-heal)."},
+        {"talent": "Nature's Swiftness", "why": "The scorer's value in this build: +8.8% of its score (model resto-heal)."},
+        {"talent": "Improved Ghost Wolf", "why": "The scorer's value in this build: +7.8% of its score (model resto-heal)."}
+      ],
+      "flex": [],
+      "notes": ["Community tie-break moves: 1 point Restorative Totems -> Mana Tide Totem; 2 points Restorative Totems -> Mindfulness; 1 point Restorative Totems -> Ancestral Healing.", "Where we disagree with the community: most Restoration builds take Water Shield (96% take it), Tidal Mastery (88% take it), Ancestral Knowledge (85% take it), which the model values below this build's weakest point; this build takes Anticipation (7%), Earth's Grasp (5%), Guardian Totems (18%), Toughness (8%), which few Restoration builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Restoration PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/shaman", "https://talentsforever.com/popular.js"]
     }
   ]
 }

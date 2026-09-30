@@ -1479,13 +1479,14 @@
     },
     {
       "id": "beast-mastery-pvp",
-      "name": "Beast Mastery — PvP (generated)",
+      "name": "Beast Mastery — PvP (derived)",
       "role": "dps",
       "content": "pvp",
       "tier": "draft",
       "spec": "Beast Mastery",
       "generated": "2026-09-30",
-      "summary": "The best Beast Mastery pvp build with at least 30 points in Beast Mastery, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (bm-leveling, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "derived": "pvp",
+      "summary": "The Beast Mastery PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Beast Mastery (model bm-leveling, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Beast Mastery builds agree with (7452 builds).",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
@@ -1494,20 +1495,18 @@
           ["Pathfinding", 2],
           ["Bestial Swiftness", 1],
           ["Unleashed Fury", 5],
-          ["Improved Mend Pet", 2],
           ["Ferocity", 5],
           ["Summon Hawk", 1],
           ["Spirit Bond", 2],
           ["Intimidation", 1],
+          ["Bestial Discipline", 2],
           ["Frenzy", 1],
           ["Bestial Wrath", 1]
         ],
-        "Marksmanship": [
-          ["Improved Concussive Shot", 2]
-        ],
+        "Marksmanship": [],
         "Survival": [
           ["Deflection", 5],
-          ["Entrapment", 3],
+          ["Entrapment", 5],
           ["Improved Wing Clip", 3],
           ["Surefooted", 3],
           ["Deterrence", 1],
@@ -1516,27 +1515,78 @@
         ]
       },
       "core": [
-        {"talent": "Deterrence", "why": "The scorer's value in this build: +11.3% of its score (model bm-leveling)."},
+        {"talent": "Deterrence", "why": "The scorer's value in this build: +11.4% of its score (model bm-leveling)."},
         {"talent": "Deflection", "why": "The scorer's value in this build: +10.0% of its score (model bm-leveling)."},
-        {"talent": "Bestial Wrath", "why": "The scorer's value in this build: +9.9% of its score (model bm-leveling)."},
-        {"talent": "Intimidation", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
-        {"talent": "Improved Wing Clip", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."},
-        {"talent": "Surefooted", "why": "The scorer's value in this build: +9.0% of its score (model bm-leveling)."}
+        {"talent": "Bestial Wrath", "why": "The scorer's value in this build: +10.0% of its score (model bm-leveling)."},
+        {"talent": "Intimidation", "why": "The scorer's value in this build: +9.1% of its score (model bm-leveling)."},
+        {"talent": "Improved Wing Clip", "why": "The scorer's value in this build: +9.1% of its score (model bm-leveling)."},
+        {"talent": "Entrapment", "why": "The scorer's value in this build: +9.1% of its score (model bm-leveling)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model bm-leveling, profile pvp. PvP values are assumptions: no simulator plays PvP."],
-      "open_questions": ["A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
+      "notes": ["Community tie-break moves: 2 points Improved Mend Pet -> Bestial Discipline; 2 points Improved Concussive Shot -> Entrapment.", "Where we disagree with the community: most Beast Mastery builds take Lethal Attacks (78% take it), Endurance Training (75% take it), which the model values below this build's weakest point; this build takes Counterattack (10%), Deflection (19%), Deterrence (17%), Entrapment (15%), Improved Wing Clip (6%), Surefooted (17%), Survival Tactics (3%), which few Beast Mastery builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Beast Mastery PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/popular.js"]
+    },
+    {
+      "id": "marksmanship-pvp",
+      "name": "Marksmanship — PvP (derived)",
+      "role": "dps",
+      "content": "pvp",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-09-30",
+      "derived": "pvp",
+      "summary": "The Marksmanship PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Marksmanship (model mm-raid, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Marksmanship builds agree with (7556 builds).",
+      "allocation": {
+        "Beast Mastery": [],
+        "Marksmanship": [
+          ["Hawk Eye", 3],
+          ["Improved Concussive Shot", 5],
+          ["Improved Stings", 3],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Improved Arcane Shot", 5],
+          ["Lone Wolf", 1],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 2],
+          ["Scatter Shot", 1],
+          ["Ranged Weapon Specialization", 2],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": [
+          ["Deflection", 5],
+          ["Entrapment", 5],
+          ["Improved Wing Clip", 3],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Survival Tactics", 2],
+          ["Counterattack", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Surefooted", "why": "The scorer's value in this build: +11.0% of its score (model mm-raid)."},
+        {"talent": "Deterrence", "why": "The scorer's value in this build: +10.9% of its score (model mm-raid)."},
+        {"talent": "Deflection", "why": "The scorer's value in this build: +9.6% of its score (model mm-raid)."},
+        {"talent": "Scatter Shot", "why": "The scorer's value in this build: +8.7% of its score (model mm-raid)."},
+        {"talent": "Improved Wing Clip", "why": "The scorer's value in this build: +8.7% of its score (model mm-raid)."},
+        {"talent": "Improved Concussive Shot", "why": "The scorer's value in this build: +8.7% of its score (model mm-raid)."}
+      ],
+      "flex": [],
+      "notes": ["Scores +16.4% of the optimum's talent value above the hand draft pvp-mm-surv, over the 2% replacement bar: this build is the spec's PvP pick, the hand draft stays as the alternative.", "Community tie-break moves: 1 point Ranged Weapon Specialization -> Lone Wolf; 2 points Ranged Weapon Specialization -> Rapid Killing.", "Where we disagree with the community: most Marksmanship builds take Lethal Attacks (95% take it), Barrage (78% take it), which the model values below this build's weakest point; this build takes Survival Tactics (10%), which few Marksmanship builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP."],
+      "open_questions": ["A derived Marksmanship PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/popular.js"],
+      "replaces": "pvp-mm-surv"
     },
     {
       "id": "survival-pvp",
-      "name": "Survival — PvP (generated)",
+      "name": "Survival — PvP (derived)",
       "role": "dps",
       "content": "pvp",
       "tier": "draft",
       "spec": "Survival",
       "generated": "2026-09-30",
-      "summary": "The best Survival pvp build with at least 30 points in Survival, generated on 2026-09-30 by spec_builds.py: the stats model's optimum (melee-dps, profile pvp). No hand draft exists for this spec and mode yet; treat it as a starting point.",
+      "derived": "pvp",
+      "summary": "The Survival PvP build derived on 2026-09-30 (derive_pvp.py): the stats model's PvP optimum with 30+ points in Survival (model melee-dps, profile pvp), then, among builds the model scores within 1% of that, the one the most talentsforever.com Survival builds agree with (13808 builds).",
       "allocation": {
         "Beast Mastery": [],
         "Marksmanship": [
@@ -1544,14 +1594,15 @@
           ["Lethal Attacks", 5],
           ["Improved Stings", 3],
           ["Careful Aim", 5],
-          ["Rapid Killing", 1],
           ["Lone Wolf", 1],
+          ["Trueshot Aura", 1],
           ["Scatter Shot", 1]
         ],
         "Survival": [
-          ["Improved Tracking", 5],
+          ["Improved Tracking", 3],
           ["Deflection", 5],
           ["Savage Strikes", 2],
+          ["Clever Traps", 2],
           ["Surefooted", 3],
           ["Deterrence", 1],
           ["Survival Tactics", 2],
@@ -1565,16 +1616,16 @@
       },
       "core": [
         {"talent": "Strider Kick", "why": "The scorer's value in this build: +15.0% of its score (model melee-dps)."},
-        {"talent": "Resourcefulness", "why": "The scorer's value in this build: +11.4% of its score (model melee-dps)."},
+        {"talent": "Resourcefulness", "why": "The scorer's value in this build: +11.5% of its score (model melee-dps)."},
         {"talent": "Surefooted", "why": "The scorer's value in this build: +10.4% of its score (model melee-dps)."},
-        {"talent": "Deterrence", "why": "The scorer's value in this build: +10.1% of its score (model melee-dps)."},
+        {"talent": "Deterrence", "why": "The scorer's value in this build: +10.2% of its score (model melee-dps)."},
         {"talent": "Careful Aim", "why": "The scorer's value in this build: +8.5% of its score (model melee-dps)."},
-        {"talent": "Improved Concussive Shot", "why": "The scorer's value in this build: +7.5% of its score (model melee-dps)."}
+        {"talent": "Scatter Shot", "why": "The scorer's value in this build: +7.6% of its score (model melee-dps)."}
       ],
       "flex": [],
-      "notes": ["Generated 2026-09-30 (spec_builds.py) so every spec has a pvp build; model melee-dps, profile pvp. PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
-      "open_questions": ["A generated Survival build: check it against the community's Survival builds at launch."],
-      "sources": ["https://talentsforever.com/hunter"]
+      "notes": ["Community tie-break moves: 2 points Improved Tracking -> Clever Traps; 1 point Rapid Killing -> Trueshot Aura.", "Where we disagree with the community: most Survival builds take Lacerating Strikes (81% take it), Deadly Aspects (78% take it), Survivalist's Discipline (73% take it), which the model values below this build's weakest point; this build takes Improved Concussive Shot (10%), Improved Stings (8%), Scatter Shot (7%), Trueshot Aura (7%), which few Survival builds take (the model values them). Pick rates cover every level-60 build on the site, not PvP builds only.", "PvP values are assumptions: no simulator plays PvP.", "Scored with the melee hunter model (the only Survival model): a ranged Survival PvP hunter is not modelled."],
+      "open_questions": ["A derived Survival PvP build: check it in duels and battlegrounds at launch."],
+      "sources": ["https://talentsforever.com/hunter", "https://talentsforever.com/popular.js"]
     }
   ]
 }
