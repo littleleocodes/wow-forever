@@ -5,7 +5,7 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `destruction-fire-raid` | 22/11/18 | 612 | 702 | 725 | 725 | 769 |
-| `opt-fire-destro-raid-raid-dps` | 22/11/18 | 612 | 702 | 725 | 725 | 769 |
+| `opt-fire-destro-raid-raid-dps` | 21/11/19 | 612 | 703 | 728 | 728 | 773 |
 | `opt-fire-destro-raid-parse` | 21/11/19 | 611 | 697 | 732 | 732 | 786 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | - | 586 | 670 | 693 | 693 | 735 |
 | sim preset: DS/Ruin | - | 577 | 672 | 686 | 686 | 714 |
@@ -28,7 +28,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `destruction-fire-raid` | 612 | +5% | +0% | +3% | +1% | +9% | 725 |
-| `opt-fire-destro-raid-raid-dps` | 612 | +5% | +0% | +3% | +1% | +9% | 725 |
+| `opt-fire-destro-raid-raid-dps` | 612 | +5% | +0% | +4% | +1% | +9% | 728 |
 | `opt-fire-destro-raid-parse` | 611 | +6% | +0% | +4% | +1% | +9% | 732 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 586 | +5% | +0% | +3% | +1% | +9% | 693 |
 | sim preset: DS/Ruin | 577 | +5% | +0% | +4% | +1% | +9% | 686 |
@@ -47,7 +47,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `destruction-fire-raid` | 688 | 627 | 612 | 600 | 588 |
-| `opt-fire-destro-raid-raid-dps` | 688 | 627 | 612 | 600 | 588 |
+| `opt-fire-destro-raid-raid-dps` | 689 | 627 | 612 | 599 | 587 |
 | `opt-fire-destro-raid-parse` | 700 | 627 | 611 | 596 | 583 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 658 | 600 | 586 | 575 | 563 |
 | sim preset: DS/Ruin | 636 | 588 | 577 | 567 | 558 |

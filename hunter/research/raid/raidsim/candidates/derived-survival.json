@@ -72,37 +72,15 @@
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for melee-dps from opt-melee-dps-raid-dps in the dummy setting: 423.9 -> 437.6 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for melee-dps from survival-raid in the dummy setting: 444.3 -> 444.3 DPS on a third seed.",
  "search": {
-  "start": "opt-melee-dps-raid-dps",
+  "start": "survival-raid",
   "setting": "dummy",
   "kept": [],
-  "moves": [
-   {
-    "round": 1,
-    "move": "2 points Survivalist -> Clever Traps",
-    "gain_seed1": 0.01688154978145029,
-    "gain_seed2": 0.016913043395218486,
-    "split": "5/15/31"
-   },
-   {
-    "round": 2,
-    "move": "1 point Lacerating Strikes -> Efficiency",
-    "gain_seed1": 0.00592560192934477,
-    "gain_seed2": 0.007136034654077639,
-    "split": "5/16/30"
-   },
-   {
-    "round": 3,
-    "move": "2 points Lightning Reflexes -> Survivalist's Discipline",
-    "gain_seed1": 0.00981222203270038,
-    "gain_seed2": 0.008839326743209641,
-    "split": "5/16/30"
-   }
-  ],
-  "dps_start": 423.90077994701903,
-  "dps_end": 437.5852415085926,
-  "gain": 0.032282227844176115,
+  "moves": [],
+  "dps_start": 444.2998667318458,
+  "dps_end": 444.2998667318458,
+  "gain": 0.0,
   "tank": false
  }
 }

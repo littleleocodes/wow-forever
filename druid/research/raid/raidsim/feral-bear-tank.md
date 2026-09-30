@@ -6,7 +6,15 @@
 |---|---|---|---|---|---|---|---|
 | `feral-bear-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
 | `opt-feral-bear-tank-raid-tank` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r4` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r5` | 7/35/9 | 1.000 | 802 | 990 | 383 | 0 | +53.8% |
+| `cand-feral-bear-tank-r6` | 7/36/8 | 0.987 | 781 | 990 | 424 | 0 | +53.7% |
+| `cand-feral-bear-tank-hand-2026-09-27` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.4% |
+| `cand-feral-bear-tank-r1` | 13/38/0 | 0.927 | 684 | 988 | 389 | 0 | +42.4% |
+| `cand-feral-bear-tank-r2` | 0/36/15 | 0.923 | 679 | 990 | 389 | 0 | +42.3% |
+| `cand-feral-bear-tank-r3` | 0/35/16 | 0.923 | 679 | 990 | 385 | 0 | +42.3% |
 | sim preset: Bear Tank 0/31/20 | - | 0.859 | 614 | 1040 | 362 | 0 | - |
+| `cand-feral-bear-tank-hand-2026-09-26` | 9/32/10 | 0.858 | 630 | 1064 | 372 | 0 | +32.7% |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -29,5 +37,13 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - feral-bear-tank: `05002-502003212303220055-054`
 - opt-feral-bear-tank-raid-tank: `05002-502003212303220055-504`
+- cand-feral-bear-tank-r4: `05002-502003212303220055-054`
+- cand-feral-bear-tank-r5: `05002-502003212303220055-504`
+- cand-feral-bear-tank-r6: `05002-502003212313220055-503`
+- cand-feral-bear-tank-hand-2026-09-27: `50302201-5023032120132210551`
+- cand-feral-bear-tank-r1: `50302201-5023032120132210551`
+- cand-feral-bear-tank-r2: `-5021032120132210551-055032`
+- cand-feral-bear-tank-r3: `-502103212013221055-05502300001`
 - sim preset: Bear Tank 0/31/20: `-5003232120132010501-0550325`
+- cand-feral-bear-tank-hand-2026-09-26: `050022-5503032120132010301-055`
 

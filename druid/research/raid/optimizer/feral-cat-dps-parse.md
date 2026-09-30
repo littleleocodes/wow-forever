@@ -9,15 +9,15 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.38% | manual |
-| Shredding Attacks | Feral Combat | 4 | +3.85% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.43% | manual |
+| Shredding Attacks | Feral Combat | 4 | +3.82% | manual |
 | Berserk | Feral Combat | 7 | +3.68% | manual |
 | King of the Jungle | Feral Combat | 5 | +3.36% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.60% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.59% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
-| Nature's Majesty | Balance | 2 | +1.43% | manual |
-| Savage Fury | Feral Combat | 3 | +1.25% | manual |
-| Predatory Instincts | Feral Combat | 5 | +1.12% | manual |
+| Nature's Majesty | Balance | 2 | +1.42% | manual |
+| Savage Fury | Feral Combat | 3 | +1.24% | manual |
+| Predatory Instincts | Feral Combat | 5 | +1.11% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
 | Nature's Splendor | Balance | 3 | +0.00% | manual |
 
-## Optimized build: 9/35/7  score +102.68%  (dps x2.025, sustain x1.008, surv x1.000, utility +0.00%)
+## Optimized build: 9/35/7  score +102.54%  (dps x2.024, sustain x1.008, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
@@ -52,7 +52,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Naturalist | Restoration 2 | 3/5 | +1.99% | yes |
+| Naturalist | Restoration 2 | 3/5 | +1.98% | yes |
 | Reflection | Restoration 3 | 1/3 | +0.68% | no |
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |

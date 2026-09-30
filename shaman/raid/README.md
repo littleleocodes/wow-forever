@@ -6,7 +6,7 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Elemental](elemental.md) — Elemental — Raid ⚗ | 440 | 553 | 422 | best |
+| 1 | [Elemental](elemental.md) — Elemental (optimized) | 440 | 553 | 422 | best |
 | 2 | [Elemental-Enhancement](elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 438 | 556 | 423 | -0% |
 | 3 | [Enhancement](enhancement.md) — One slow weapon | 426 | 780 | 397 | -3% |
 

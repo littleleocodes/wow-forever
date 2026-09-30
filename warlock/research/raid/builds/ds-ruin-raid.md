@@ -71,15 +71,15 @@ Allocation adopted on 2026-09-26 from `opt-sb-raid-raid-dps`, the best build in 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 636 | +0.0% | 755 | -0.5% | 1 s |
-| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 636 | -0.0% | 759 | +0.0% | 1 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -4.9% | 719 | -5.3% | 1 s |
-| 4 | *DS/Ruin* | community simulator | - | 598 | -6.0% | 711 | -6.4% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 570 | -10.4% | 674 | -11.2% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -16.6% | 619 | -18.5% | 1 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.5% | 623 | -17.9% | 1 s |
-| 8 | *Affliction* | community simulator | - | 523 | -17.8% | 610 | -19.6% | 1 s |
-| 9 | *Demonic Pact* | community simulator | - | 518 | -18.5% | 615 | -19.1% | 0 s |
+| 1 | [`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | -0.0% | 1 s |
+| 2 | **[`ds-ruin-raid`](ds-ruin-raid.md)** | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | +0.0% | 1 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 719 | -5.3% | 1 s |
+| 4 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 711 | -6.4% | 1 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 570 | -10.8% | 674 | -11.2% | 1 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 619 | -18.5% | 1 s |
+| 7 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -17.9% | 1 s |
+| 8 | *Affliction* | community simulator | - | 523 | -18.2% | 610 | -19.6% | 1 s |
+| 9 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 615 | -19.1% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

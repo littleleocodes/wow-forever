@@ -4,37 +4,57 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-mm-raid-raid-dps` | 22/29/0 | 425 | 14 | +0.0% | 390 | 69 | +55.5% |
-| `bm-mm-raid` | 22/29/0 | 424 | 14 | -0.2% | 389 | 67 | +54.8% |
-| `bm-mm-full-buffs-raid` | 21/30/0 | 410 | 14 | -3.6% | 376 | 72 | +50.3% |
-| sim preset: Marksmanship | - | 396 | 14 | -6.8% | 368 | 89 | - |
-| sim preset: Beast Mastery 35/16/0 | - | 374 | 11 | -12.0% | 327 | 77 | - |
-| sim preset: Marksmanship 0/39/12 | - | 364 | 12 | -14.2% | 342 | 85 | - |
-| sim preset: Survival 0/15/36 | - | 341 | 9 | -19.8% | 319 | 76 | - |
+| `cand-mm-raid-r6` | 22/29/0 | 427 | 14 | +0.0% | 391 | 67 | +57.0% |
+| `opt-mm-raid-raid-dps` | 22/29/0 | 425 | 14 | -0.4% | 390 | 69 | +57.0% |
+| `cand-mm-raid-r9` | 22/29/0 | 425 | 14 | -0.4% | 390 | 69 | +57.0% |
+| `cand-mm-raid-r7` | 22/29/0 | 425 | 14 | -0.5% | 391 | 67 | +56.1% |
+| `bm-mm-raid` | 22/29/0 | 424 | 14 | -0.6% | 389 | 67 | +56.1% |
+| `cand-mm-raid-r5` | 22/29/0 | 422 | 14 | -1.1% | 389 | 67 | +55.2% |
+| `cand-mm-raid-r4` | 24/27/0 | 416 | 14 | -2.5% | 383 | 67 | +52.7% |
+| `bm-mm-full-buffs-raid` | 21/30/0 | 410 | 14 | -3.9% | 376 | 72 | +51.3% |
+| `cand-mm-raid-r8` | 19/32/0 | 408 | 14 | -4.3% | 377 | 81 | +48.7% |
+| sim preset: Marksmanship | - | 396 | 14 | -7.2% | 368 | 89 | - |
+| `cand-mm-raid-hand-2026-09-27` | 20/31/0 | 393 | 14 | -7.9% | 360 | 85 | +42.9% |
+| `cand-mm-raid-r1` | 19/32/0 | 376 | 13 | -12.0% | 345 | 94 | +38.7% |
+| sim preset: Beast Mastery 35/16/0 | - | 374 | 11 | -12.4% | 327 | 77 | - |
+| `cand-mm-raid-r2` | 16/35/0 | 373 | 13 | -12.7% | 345 | 94 | +37.9% |
+| `cand-mm-raid-r3` | 7/31/13 | 368 | 13 | -13.8% | 345 | 94 | +35.8% |
+| sim preset: Marksmanship 0/39/12 | - | 364 | 12 | -14.6% | 342 | 85 | - |
+| sim preset: Survival 0/15/36 | - | 341 | 9 | -20.1% | 319 | 76 | - |
 
-## Damage shares (`opt-mm-raid-raid-dps`, simulator actions)
+## Damage shares (`cand-mm-raid-r6`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Auto Shot | 42.4% |
-| Arcane Shot | 21.7% |
-| Serpent Sting | 16.3% |
-| Aimed Shot | 8.0% |
-| Pet: Auto Attack | 7.6% |
+| Auto Shot | 42.3% |
+| Arcane Shot | 21.4% |
+| Serpent Sting | 16.4% |
+| Aimed Shot | 8.3% |
+| Pet: Auto Attack | 7.5% |
 | Pet: Claw | 1.7% |
 | Pet: Bite | 1.4% |
-| Multi-Shot | 0.9% |
+| Multi-Shot | 1.0% |
 
-Mapped onto the spec model's sources: `auto` 42%, `arcane` 22%, `serpent` 16%, `pet` 11%, `aimed` 8%, `multi` 1%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `auto` 42%, `arcane` 21%, `serpent` 16%, `pet` 11%, `aimed` 8%, `multi` 1%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- cand-mm-raid-r6: `53200005050002-005355000150104`
 - opt-mm-raid-raid-dps: `53200005050002-005355010150004`
+- cand-mm-raid-r9: `53200005050002-005355010150004`
+- cand-mm-raid-r7: `53200005230002-005355000150104`
 - bm-mm-raid: `53200005050002-005255000150204`
+- cand-mm-raid-r5: `53200005230002-005255000150204`
+- cand-mm-raid-r4: `53200005230202-005255000150202`
 - bm-mm-full-buffs-raid: `53200005050001-005155000150305`
+- cand-mm-raid-r8: `5320000504-005355000150305`
 - sim preset: Marksmanship: `5023000501-0050550501503051`
+- cand-mm-raid-hand-2026-09-27: `5120020505-0050452001503051`
+- cand-mm-raid-r1: `51200205031-0053052001523051`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`
+- cand-mm-raid-r2: `51200205001-3053052001523051`
+- cand-mm-raid-r3: `502-0053052001513051-50005003`
 - sim preset: Marksmanship 0/39/12: `-3050552301503151-50024001`
 - sim preset: Survival 0/15/36: `-005055-550230031051220151`
 

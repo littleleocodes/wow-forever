@@ -4,10 +4,18 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-enhancement-dps-raid-dps` | 11/31/9 | 426 | 30 | +0.0% | 436 | 9 | +100.4% |
-| `enhancement-raid` | 11/31/9 | 424 | 28 | -0.4% | 433 | 0 | +98.7% |
+| `opt-enhancement-dps-raid-dps` | 11/31/9 | 426 | 30 | +0.0% | 436 | 9 | +115.7% |
+| `cand-enhancement-dps-r7` | 11/31/9 | 426 | 30 | +0.0% | 436 | 9 | +115.7% |
+| `enhancement-raid` | 11/31/9 | 424 | 28 | -0.4% | 433 | 0 | +114.1% |
 | sim preset: Level 60 | - | 421 | 29 | -1.1% | 305 | 26 | - |
-| `enhancement-raid-dps` | 11/31/9 | 420 | 30 | -1.3% | 430 | 9 | +96.9% |
+| `enhancement-raid-dps` | 11/31/9 | 420 | 30 | -1.3% | 430 | 9 | +112.5% |
+| `cand-enhancement-dps-r6` | 11/31/9 | 420 | 30 | -1.3% | 430 | 9 | +112.5% |
+| `cand-enhancement-dps-r3` | 15/36/0 | 418 | 30 | -1.7% | 303 | 25 | +110.4% |
+| `cand-enhancement-dps-r2` | 18/33/0 | 417 | 30 | -2.0% | 302 | 25 | +109.2% |
+| `cand-enhancement-dps-r5` | 11/31/9 | 416 | 30 | -2.3% | 426 | 23 | +109.5% |
+| `cand-enhancement-dps-r1` | 14/37/0 | 411 | 30 | -3.4% | 298 | 39 | +107.5% |
+| `cand-enhancement-dps-hand-2026-09-27` | 9/32/10 | 411 | 29 | -3.4% | 298 | 38 | +109.1% |
+| `cand-enhancement-dps-r4` | 8/32/11 | 411 | 30 | -3.5% | 297 | 32 | +108.7% |
 | sim preset: Enhancement 16/35/0 | - | 388 | 29 | -8.9% | 281 | 81 | - |
 
 ## Damage shares (`opt-enhancement-dps-raid-dps`, simulator actions)
@@ -30,8 +38,16 @@ Mapped onto the spec model's sources: `white` 32%, `windfury` 21%, `stormstrike`
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-enhancement-dps-raid-dps: `5000321-055030031005102051-05004`
+- cand-enhancement-dps-r7: `5000321-055030031005102051-05004`
 - enhancement-raid: `5000321-055030031005102051-05301`
 - sim preset: Level 60: `5505301-053030031005112251`
 - enhancement-raid-dps: `5200031-055030031005102051-05004`
+- cand-enhancement-dps-r6: `5200031-055030031005102051-05004`
+- cand-enhancement-dps-r3: `5105031-055230031005112251`
+- cand-enhancement-dps-r2: `5405031-055230001005112251`
+- cand-enhancement-dps-r5: `0520031-055030031005102051-05004`
+- cand-enhancement-dps-r1: `0505031-055030331005112251`
+- cand-enhancement-dps-hand-2026-09-27: `050202-055030031005112051-05005`
+- cand-enhancement-dps-r4: `050003-055030031005112051-050050001`
 - sim preset: Enhancement 16/35/0: `2502331-055030030205112251`
 

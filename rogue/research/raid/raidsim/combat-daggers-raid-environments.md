@@ -5,8 +5,8 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `combat-raid` | 16/33/2 | 422 | 489 | 712 | 722 | 810 |
-| `opt-combat-daggers-raid-raid-dps` | 16/33/2 | 403 | 470 | 720 | 729 | 827 |
-| `opt-combat-daggers-raid-parse` | 17/32/2 | 400 | 467 | 702 | 711 | 795 |
+| `opt-combat-daggers-raid-raid-dps` | 17/32/2 | 416 | 483 | 696 | 704 | 787 |
+| `opt-combat-daggers-raid-parse` | 17/32/2 | 416 | 483 | 696 | 704 | 787 |
 | `combat-daggers-raid` | 16/33/2 | 399 | 466 | 712 | 721 | 809 |
 | sim preset: Combat Dual-Wield 15/33/3 | - | 394 | 461 | 702 | 711 | 796 |
 | sim preset: Backstab | - | 371 | 435 | 672 | 681 | 766 |
@@ -29,8 +29,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `combat-raid` | 422 | -0% | +17% | +32% | +1% | +18% | 712 |
-| `opt-combat-daggers-raid-raid-dps` | 403 | -0% | +19% | +33% | +1% | +25% | 720 |
-| `opt-combat-daggers-raid-parse` | 400 | -0% | +20% | +33% | +1% | +22% | 702 |
+| `opt-combat-daggers-raid-raid-dps` | 416 | -0% | +18% | +32% | +1% | +16% | 696 |
+| `opt-combat-daggers-raid-parse` | 416 | -0% | +18% | +32% | +1% | +16% | 696 |
 | `combat-daggers-raid` | 399 | +0% | +19% | +33% | +1% | +25% | 712 |
 | sim preset: Combat Dual-Wield 15/33/3 | 394 | +0% | +19% | +33% | +1% | +24% | 702 |
 | sim preset: Backstab | 371 | -0% | +23% | +34% | +1% | +23% | 672 |
@@ -49,8 +49,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `combat-raid` | 472 | 433 | 422 | 415 | 423 |
-| `opt-combat-daggers-raid-raid-dps` | 453 | 414 | 403 | 397 | 405 |
-| `opt-combat-daggers-raid-parse` | 446 | 410 | 400 | 393 | 401 |
+| `opt-combat-daggers-raid-raid-dps` | 463 | 426 | 416 | 409 | 417 |
+| `opt-combat-daggers-raid-parse` | 463 | 426 | 416 | 409 | 417 |
 | `combat-daggers-raid` | 447 | 410 | 399 | 392 | 401 |
 | sim preset: Combat Dual-Wield 15/33/3 | 440 | 405 | 394 | 388 | 396 |
 | sim preset: Backstab | 420 | 383 | 371 | 364 | 371 |

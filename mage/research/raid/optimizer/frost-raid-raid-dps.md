@@ -9,20 +9,20 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Improved Frostbolt | Frost | 1 | +3.61% | manual |
+| Improved Frostbolt | Frost | 1 | +3.58% | manual |
 | Arcane Power | Arcane | 7 | +2.40% | manual |
-| Piercing Ice | Frost | 3 | +1.63% | manual |
+| Piercing Ice | Frost | 3 | +1.62% | manual |
 | Arcane Instability | Arcane | 6 | +1.47% | manual |
-| Ice Shards | Frost | 2 | +1.14% | manual |
+| Ice Shards | Frost | 2 | +1.13% | manual |
 | Presence of Mind | Arcane | 5 | +1.00% | manual |
-| Elemental Precision | Frost | 1 | +0.97% | manual |
-| Frost Channeling | Frost | 3 | +0.86% | manual |
-| Winter's Chill | Frost | 6 | +0.76% | manual |
+| Elemental Precision | Frost | 1 | +0.96% | manual |
+| Winter's Chill | Frost | 6 | +0.75% | manual |
 | Arcane Meditation | Arcane | 4 | +0.75% | manual |
-| Arcane Concentration | Arcane | 2 | +0.65% | manual |
 | Arcane Mind | Arcane | 5 | +0.52% | manual |
-| Arcane Focus | Arcane | 1 | +0.22% | manual |
-| Arcane Impact | Arcane | 3 | +0.17% | manual |
+| Frost Channeling | Frost | 3 | +0.44% | manual |
+| Arcane Concentration | Arcane | 2 | +0.40% | manual |
+| Arcane Focus | Arcane | 1 | +0.23% | manual |
+| Arcane Impact | Arcane | 3 | +0.18% | manual |
 | Master of Elements | Fire | 4 | +0.02% | manual |
 | Ice Barrier | Frost | 7 | +0.01% | manual |
 | Ice Block | Frost | 4 | +0.01% | manual |
@@ -40,26 +40,25 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Resilience | Arcane | 2 | +0.00% | manual |
 | Frost Warding | Frost | 1 | +0.00% | manual |
 
-## Optimized build: 17/2/32  score +79.48%  (dps x1.794, sustain x1.067, surv x1.000, utility +0.00%)
+## Optimized build: 18/1/32  score +75.70%  (dps x1.756, sustain x1.051, surv x1.000, utility +0.00%)
 
 ```
-  Arcane: Arcane Focus 5, Improved Channeling 2, Arcane Concentration 5, Arcane Impact 3, Arcane Meditation 2
-  Fire: Incineration 2
-  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Piercing Ice 3, Frost Channeling 3, Ice Lance 1, Shatter 3, Fingers of Frost 2, Winter's Chill 5
+  Arcane: Arcane Focus 5, Improved Channeling 2, Arcane Concentration 5, Arcane Impact 3, Arcane Meditation 3
+  Fire: Incineration 1
+  Frost: Improved Frostbolt 5, Elemental Precision 5, Ice Shards 5, Piercing Ice 3, Ice Lance 1, Frost Channeling 3, Shatter 3, Fingers of Frost 2, Winter's Chill 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +4.32% | no |
-| Arcane Instability | Arcane 6 | 1/3 | +3.07% | no |
-| Presence of Mind | Arcane 5 | 1/1 | +1.79% | no |
-| Incineration | Fire 1 | 3/3 | +0.59% | yes |
-| Arcane Mind | Arcane 5 | 1/5 | +0.28% | no |
+| Arcane Power | Arcane 7 | 1/1 | +4.23% | no |
+| Arcane Instability | Arcane 6 | 1/3 | +3.01% | no |
+| Presence of Mind | Arcane 5 | 1/1 | +1.76% | no |
+| Arcane Mind | Arcane 5 | 1/5 | +0.85% | no |
+| Incineration | Fire 1 | 2/3 | +0.59% | yes |
+| Master of Elements | Fire 4 | 1/3 | +0.04% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
-| Arcane Meditation | Arcane 4 | 3/3 | +0.01% | yes |
-| Master of Elements | Fire 4 | 1/3 | +0.01% | no |
 | Improved Channeling | Arcane 1 | 3/5 | +0.00% | yes |
 | Ice Block | Frost 4 | 1/1 | +0.00% | yes |
 | Arcane Subtlety | Arcane 2 | 1/2 | +0.00% | yes |
@@ -67,4 +66,5 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Burning Soul | Fire 3 | 1/3 | +0.00% | no |
 | Arcane Blast | Arcane 3 | 1/1 | +0.00% | yes |
 | Missile Barrage | Arcane 4 | 1/1 | +0.00% | yes |
+| Arcane Geometry | Arcane 3 | 1/2 | +0.00% | yes |
 

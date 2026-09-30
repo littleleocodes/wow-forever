@@ -71,13 +71,13 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 ## Rank among our builds and the community simulator's
 
-**2 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 6** for `elemental-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
-| 2 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 438 | -0.4% | 556 | +0.0% | 0 s |
-| 3 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 29/22/0 | 438 | -0.4% | 556 | +0.0% | 0 s |
+| 1 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
+| 2 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
+| 3 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 438 | -0.4% | 556 | +0.0% | 0 s |
 | 4 | *Elemental 31/6/14* | community simulator | - | 434 | -1.2% | 549 | -1.3% | 0 s |
 | 5 | *Stormcaller 28/23/0* | community simulator | - | 421 | -4.3% | 537 | -3.4% | 0 s |
 | 6 | *Level 60* | community simulator | - | 419 | -4.7% | 530 | -4.7% | 0 s |

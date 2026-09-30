@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +100.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `raid-dps`: score +115.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 40.9 points of score in this model.
-2. **Flurry** — Removing it costs 18.7 points of score in this model.
-3. **Maelstrom Weapon** — Removing it costs 12.8 points of score in this model.
-4. **Shamanistic Focus** — Removing it costs 10.7 points of score in this model.
-5. **Thundering Strikes** — Removing it costs 9.9 points of score in this model.
-6. **Mental Dexterity** — Removing it costs 7.7 points of score in this model.
-7. **Call of Flame** — Removing it costs 4.8 points of score in this model.
-8. **Tidal Focus** — Removing it costs 4.7 points of score in this model.
+1. **Stormstrike** — Removing it costs 42.8 points of score in this model.
+2. **Maelstrom Weapon** — Removing it costs 21.1 points of score in this model.
+3. **Flurry** — Removing it costs 17.3 points of score in this model.
+4. **Shamanistic Focus** — Removing it costs 17.1 points of score in this model.
+5. **Mental Dexterity** — Removing it costs 11.4 points of score in this model.
+6. **Thundering Strikes** — Removing it costs 10.3 points of score in this model.
+7. **Tidal Focus** — Removing it costs 5.2 points of score in this model.
+8. **Mental Quickness** — Removing it costs 5.1 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 

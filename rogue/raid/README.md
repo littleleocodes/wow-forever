@@ -6,9 +6,9 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Combat](combat.md) — Combat — Raid 🔬 | 422 | 712 | 423 | best |
-| 2 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 407 | 682 | 407 | -4% |
-| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 380 | 652 | 359 | -10% |
+| 1 | [Combat](combat.md) — Raid daggers | 416 | 696 | 417 | best |
+| 2 | [Assassination](assassination.md) — Assassination — Seal Fate daggers | 407 | 682 | 407 | -2% |
+| 3 | [Subtlety](subtlety.md) — Subtlety — Hemorrhage | 380 | 652 | 359 | -9% |
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.
 

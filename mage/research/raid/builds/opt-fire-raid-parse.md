@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +185.3% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `parse`: score +186.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Core talents (priority order)
 
-1. **Improved Scorch** — Removing it costs 97.1 points of score in this model.
-2. **Fire Power** — Removing it costs 25.8 points of score in this model.
-3. **Ignite** — Removing it costs 24.7 points of score in this model.
+1. **Improved Scorch** — Removing it costs 97.3 points of score in this model.
+2. **Fire Power** — Removing it costs 25.9 points of score in this model.
+3. **Ignite** — Removing it costs 25.7 points of score in this model.
 4. **Hot Streak** — Removing it costs 18.6 points of score in this model.
 5. **Improved Fireball** — Removing it costs 17.9 points of score in this model.
-6. **Combustion** — Removing it costs 16.9 points of score in this model.
+6. **Combustion** — Removing it costs 17.0 points of score in this model.
 7. **Critical Mass** — Removing it costs 16.6 points of score in this model.
-8. **Elemental Precision** — Removing it costs 15.9 points of score in this model.
+8. **Elemental Precision** — Removing it costs 16.0 points of score in this model.
 
 ## Rotation
 

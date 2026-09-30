@@ -65,21 +65,6 @@
 **Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (leveling-st)** (`druid/research/leveling/builds/opt-balance-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (parse)** (`druid/research/raid/builds/opt-balance-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (raid-dps)** (`druid/research/raid/builds/opt-feral-cat-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (parse)** (`druid/research/raid/builds/opt-feral-cat-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Balance — PvP (derived)** (`druid/research/pvp/builds/balance-pvp.md`)
 - [ ] A derived Balance PvP build: check it in duels and battlegrounds at launch.
 
@@ -94,6 +79,21 @@
 
 **Restoration — Leveling (derived)** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] A derived Restoration leveling build: check it while leveling at launch.
+
+**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (raid-dps)** (`druid/research/raid/builds/opt-balance-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Starfire 55%, Wrath 20%, Moonfire 20% (8% direct, 12% DoT), Insect Swarm arrives as a talent effect (parse)** (`druid/research/raid/builds/opt-balance-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (raid-dps)** (`druid/research/raid/builds/opt-feral-cat-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (parse)** (`druid/research/raid/builds/opt-feral-cat-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Hunter
 
@@ -165,18 +165,6 @@
 **Optimizer — Melee hunter (Forever): dual-wield white swings under Aspect of the Beast, Raptor Strike on the next swing, Mongoose Bite after dodges and Expose Prey procs, Strider Kick on cooldown, Counterattack after parries, the Lacerating Strikes bleed, one Serpent Sting from the pull (the 8 yd minimum range stops every other shot in melee), and the pet unless Lone Wolf (leveling-st)** (`hunter/research/leveling/builds/opt-melee-dps-leveling-st.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)** (`hunter/research/raid/builds/opt-mm-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (parse)** (`hunter/research/raid/builds/opt-mm-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Marksmanship without a pet (Forever Lone Wolf) (raid-dps)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Beast Mastery — Leveling (generated)** (`hunter/research/leveling/builds/beast-mastery-leveling.md`)
 - [ ] A generated Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
@@ -194,6 +182,18 @@
 
 **Survival — Raid (derived)** (`hunter/research/raid/builds/survival-raid.md`)
 - [ ] A derived Survival raid build: check it against the community's Survival builds at launch.
+
+**Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)** (`hunter/research/raid/builds/opt-mm-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (parse)** (`hunter/research/raid/builds/opt-mm-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Marksmanship without a pet (Forever Lone Wolf) (raid-dps)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Mage
 
@@ -242,18 +242,6 @@
 **Optimizer — AoE grinding: Frost Nova -> Blizzard -> Cone of Cold / Arcane Explosion on 5-10 mobs (leveling-aoe)** (`mage/research/leveling/builds/opt-frost-aoe-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)** (`mage/research/raid/builds/opt-frost-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)** (`mage/research/raid/builds/opt-fire-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Arcane — PvP (derived)** (`mage/research/pvp/builds/arcane-pvp.md`)
 - [ ] A derived Arcane PvP build: check it in duels and battlegrounds at launch.
 
@@ -268,6 +256,18 @@
 
 **Fire — Leveling (derived)** (`mage/research/leveling/builds/fire-leveling.md`)
 - [ ] A derived Fire leveling build: check it while leveling at launch.
+
+**Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (raid-dps)** (`mage/research/raid/builds/opt-frost-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27) (parse)** (`mage/research/raid/builds/opt-frost-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid Fireball spam with Scorch upkeep (raid-dps)** (`mage/research/raid/builds/opt-fire-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Paladin
 
@@ -298,9 +298,6 @@
 - [ ] Holy Strike: level learned, damage and cooldown (Sacred Arbiter and Improved Holy Strike depend on it).
 - [ ] Improved Seals rank scaling (5% read at rank 1).
 
-**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)** (`paladin/research/raid/builds/opt-ret-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Holy — PvP (derived)** (`paladin/research/pvp/builds/holy-pvp.md`)
 - [ ] A derived Holy PvP build: check it in duels and battlegrounds at launch.
 
@@ -319,12 +316,6 @@
 **Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (solo-60)** (`paladin/research/leveling/builds/opt-ret-dps-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)** (`paladin/research/raid/builds/opt-ret-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)** (`paladin/research/raid/builds/opt-holy-heal-raid-heal.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -333,6 +324,15 @@
 
 **Protection — Leveling (derived)** (`paladin/research/leveling/builds/protection-leveling.md`)
 - [ ] A derived Protection leveling build: check it while leveling at launch.
+
+**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)** (`paladin/research/raid/builds/opt-ret-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)** (`paladin/research/raid/builds/opt-ret-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)** (`paladin/research/raid/builds/opt-prot-tank-raid-tank.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Priest
 
@@ -363,12 +363,6 @@
 **Discipline/Holy — Smite (raid)** (`priest/research/raid/builds/smite-discipline-raid.md`)
 - [ ] Penance's damage rank (131 a bolt at rank 4) and whether Power in Light counts Penance's bolts.
 
-**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Discipline — PvP (derived)** (`priest/research/pvp/builds/discipline-pvp.md`)
 - [ ] A derived Discipline PvP build: check it in duels and battlegrounds at launch.
 
@@ -383,6 +377,12 @@
 
 **Holy — Leveling (derived)** (`priest/research/leveling/builds/holy-leveling.md`)
 - [ ] A derived Holy leveling build: check it while leveling at launch.
+
+**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)** (`priest/research/raid/builds/opt-shadow-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)** (`priest/research/raid/builds/opt-shadow-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Rogue
 
@@ -426,18 +426,6 @@
 **Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (leveling-aoe)** (`rogue/research/leveling/builds/opt-combat-swords-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-swords-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-swords-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-daggers-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Combat — Leveling (generated)** (`rogue/research/leveling/builds/combat-leveling.md`)
 - [ ] A generated Combat build: check it against the community's Combat builds at launch.
 
@@ -452,6 +440,18 @@
 
 **Subtlety — Leveling (derived)** (`rogue/research/leveling/builds/subtlety-leveling.md`)
 - [ ] A derived Subtlety leveling build: check it while leveling at launch.
+
+**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-swords-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid Combat swords: white ~43% (MH 30 / OH 13), Sinister Strike ~30%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-swords-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (raid-dps)** (`rogue/research/raid/builds/opt-combat-daggers-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Shaman
 
@@ -490,18 +490,6 @@
 **Elemental — Raid (generated)** (`shaman/research/raid/builds/elemental-raid.md`)
 - [ ] A generated Elemental build: check it against the community's Elemental builds at launch.
 
-**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)** (`shaman/research/raid/builds/opt-elemental-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)** (`shaman/research/raid/builds/opt-enhancement-dps-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Elemental — PvP (derived)** (`shaman/research/pvp/builds/elemental-pvp.md`)
 - [ ] A derived Elemental PvP build: check it in duels and battlegrounds at launch.
 
@@ -519,6 +507,18 @@
 
 **Restoration — Leveling (derived)** (`shaman/research/leveling/builds/restoration-leveling.md`)
 - [ ] A derived Restoration leveling build: check it while leveling at launch.
+
+**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse)** (`shaman/research/raid/builds/opt-elemental-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (raid-dps)** (`shaman/research/raid/builds/opt-enhancement-dps-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Warlock
 
@@ -551,15 +551,6 @@
 - [ ] Whether Improved Corruption really reaches a 0-second cast (0.4s x 5 = 2.0s reduction) — the demo text says 0.4 sec per rank.
 - [ ] Shadow Mastery per-rank value; Pandemic's actual crit-damage bonus at 3/3.
 
-**Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)** (`warlock/research/raid/builds/opt-affliction-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (parse)** (`warlock/research/raid/builds/opt-fire-destro-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Affliction — PvP (derived)** (`warlock/research/pvp/builds/affliction-pvp.md`)
 - [ ] A derived Affliction PvP build: check it in duels and battlegrounds at launch.
 
@@ -578,15 +569,6 @@
 **Optimizer — Voidwalker tank: Corruption 24%, Agony 14%, Drain Life 16%, Shadow Bolt 14%, Immolate 6%, wand 6%, Voidwalker 20% (solo-60)** (`warlock/research/leveling/builds/opt-affliction-leveling-solo-60.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-affliction-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-fire-destro-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)** (`warlock/research/raid/builds/opt-sb-raid-raid-dps.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
 **Affliction — Leveling (derived)** (`warlock/research/leveling/builds/affliction-leveling.md`)
 - [ ] A derived Affliction leveling build: check it while leveling at launch.
 
@@ -595,6 +577,24 @@
 
 **Destruction — Leveling (derived)** (`warlock/research/leveling/builds/destruction-leveling.md`)
 - [ ] A derived Destruction leveling build: check it while leveling at launch.
+
+**Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-affliction-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Corruption 28%, Agony 18%, Shadow Bolt 30%, Drain Life 12%, Immolate 6%, Imp 6%; Siphon Life and Wrack arrive as talent effects (parse)** (`warlock/research/raid/builds/opt-affliction-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (raid-dps)** (`warlock/research/raid/builds/opt-fire-destro-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Immolate 30%, filler nuke 30% (Shadow Bolt until Incinerate replaces it), Searing Pain 12%, Soul Fire 10%, Corruption 8%, Imp 10%; Conflagrate and Shadowburn arrive as talent effects (parse)** (`warlock/research/raid/builds/opt-fire-destro-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (raid-dps)** (`warlock/research/raid/builds/opt-sb-raid-raid-dps.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
 ### Warrior
 
@@ -637,6 +637,18 @@
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (leveling-aoe)** (`warrior/research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
+**Arms — PvP (derived)** (`warrior/research/pvp/builds/arms-pvp.md`)
+- [ ] A derived Arms PvP build: check it in duels and battlegrounds at launch.
+
+**Fury — PvP (derived)** (`warrior/research/pvp/builds/fury-pvp.md`)
+- [ ] A derived Fury PvP build: check it in duels and battlegrounds at launch.
+
+**Protection — PvP (derived)** (`warrior/research/pvp/builds/protection-pvp.md`)
+- [ ] A derived Protection PvP build: check it in duels and battlegrounds at launch.
+
+**Protection — Leveling (derived)** (`warrior/research/leveling/builds/protection-leveling.md`)
+- [ ] A derived Protection leveling build: check it while leveling at launch.
+
 **Optimizer — Two-handed Arms/raid or leveling: white ~45%, Heroic Strike, Overpower, Execute, Rend; Mortal Strike/Slam arrive as talent effects (raid-dps)** (`warrior/research/raid/builds/opt-arms-2h-raid-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -651,16 +663,4 @@
 
 **Optimizer — Raid tank in Defensive Stance with a shield: threat sources are Heroic Strike, Sunder Armor, Revenge, white swings, Thunder Clap; Shield Slam arrives as a talent effect (raid-tank)** (`warrior/research/raid/builds/opt-prot-tank-raid-tank.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Arms — PvP (derived)** (`warrior/research/pvp/builds/arms-pvp.md`)
-- [ ] A derived Arms PvP build: check it in duels and battlegrounds at launch.
-
-**Fury — PvP (derived)** (`warrior/research/pvp/builds/fury-pvp.md`)
-- [ ] A derived Fury PvP build: check it in duels and battlegrounds at launch.
-
-**Protection — PvP (derived)** (`warrior/research/pvp/builds/protection-pvp.md`)
-- [ ] A derived Protection PvP build: check it in duels and battlegrounds at launch.
-
-**Protection — Leveling (derived)** (`warrior/research/leveling/builds/protection-leveling.md`)
-- [ ] A derived Protection leveling build: check it while leveling at launch.
 

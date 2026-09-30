@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +42.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +43.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -31,11 +31,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
-| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Efficiency** | 2/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%. |
+| **Improved Arcane Shot** | 5/5 | changed | Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
 ### Survival (0)
@@ -44,14 +44,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 
 ## Core talents (priority order)
 
-1. **Bestial Discipline** — Removing it costs 7.5 points of score in this model.
+1. **Bestial Discipline** — Removing it costs 7.6 points of score in this model.
 2. **Mortal Shots** — Removing it costs 6.9 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 6.2 points of score in this model.
-4. **Careful Aim** — Removing it costs 5.3 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 5.2 points of score in this model.
+3. **Careful Aim** — Removing it costs 6.7 points of score in this model.
+4. **Lethal Attacks** — Removing it costs 6.2 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 4.9 points of score in this model.
 6. **Ranged Weapon Specialization** — Removing it costs 4.7 points of score in this model.
-7. **Improved Stings** — Removing it costs 3.6 points of score in this model.
-8. **Unleashed Fury** — Removing it costs 2.5 points of score in this model.
+7. **Improved Stings** — Removing it costs 4.0 points of score in this model.
+8. **Focused Fire** — Removing it costs 2.5 points of score in this model.
 
 ## Rotation
 

@@ -351,11 +351,11 @@
       "fight_coupling": {"leveling-st": 1.0, "solo-60": 1.0}
     },
     "frost-raid": {
-      "note": "Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27). Raid sim shares (2026-09-29, frost-fingers-of-frost-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): frostbolt 61%, ice_lance 20%, missiles 19%; 0% of the damage matched no source.",
+      "note": "Raid Frostbolt with Ice Lance on Fingers of Frost charges (the ice_lance source, 2026-09-27). Raid sim shares (2026-09-30, frost-fingers-of-frost-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): frostbolt 60%, ice_lance 21%, missiles 19%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "frostbolt",
-          "share": 0.6102,
+          "share": 0.6016,
           "tags": ["type:spell", "school:frost", "ability:Frostbolt"],
           "cast": 3.0,
           "min_cast": 1.5,
@@ -366,7 +366,7 @@
         },
         {
           "id": "ice_lance",
-          "share": 0.2047,
+          "share": 0.2073,
           "tags": ["type:spell", "school:frost", "instant", "frozen", "ability:Ice Lance"],
           "min_level": 20,
           "enabled_by": "Ice Lance",
@@ -398,7 +398,7 @@
         },
         {
           "id": "missiles",
-          "share": 0.1851,
+          "share": 0.1911,
           "tags": ["type:spell", "school:arcane", "ability:Arcane Missiles"],
           "min_level": 8,
           "game_overrides": {
@@ -431,20 +431,20 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.0675,
+          "loss": 0.06,
           "cap": 0.9,
-          "rms": 0.018,
-          "points": 62,
-          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-5% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "rms": 0.0135,
+          "points": 58,
+          "note": "Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, training dummy): the builds lose 0-5% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     },
     "fire-raid": {
-      "note": "Raid Fireball spam with Scorch upkeep. Ignite is encoded as extra crit damage on Fire sources. Raid sim shares (2026-09-29, fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): fireball 53%, fire_blast 21%, ignite 11%, pyroblast 9%, scorch 7%; 0% of the damage matched no source.",
+      "note": "Raid Fireball spam with Scorch upkeep. Ignite is encoded as extra crit damage on Fire sources. Raid sim shares (2026-09-30, fire-raid in the ElliotWood/Forever simulator 40be98e, every mana-only buff on: the split before the mana limit): fireball 52%, fire_blast 20%, ignite 12%, pyroblast 10%, scorch 6%; 0% of the damage matched no source.",
       "sources": [
         {
           "id": "fireball",
-          "share": 0.527,
+          "share": 0.5241,
           "tags": ["type:spell", "school:fire", "ability:Fireball"],
           "cast": 3.5,
           "min_cast": 1.5,
@@ -454,7 +454,7 @@
         },
         {
           "id": "scorch",
-          "share": 0.0663,
+          "share": 0.0629,
           "tags": ["type:spell", "school:fire", "ability:Scorch"],
           "cast": 1.5,
           "min_cast": 1.5,
@@ -465,7 +465,7 @@
         },
         {
           "id": "fire_blast",
-          "share": 0.2058,
+          "share": 0.1983,
           "tags": ["type:spell", "school:fire", "ability:Fire Blast"],
           "cooldown": 8,
           "min_level": 6,
@@ -475,7 +475,7 @@
         },
         {
           "id": "ignite",
-          "share": 0.1113,
+          "share": 0.1155,
           "tags": ["type:spell", "school:fire", "dot", "ability:Ignite"],
           "can_crit": false,
           "enabled_by": "Ignite",
@@ -488,7 +488,7 @@
         },
         {
           "id": "pyroblast",
-          "share": 0.0896,
+          "share": 0.0991,
           "tags": ["type:spell", "school:fire", "ability:Pyroblast"],
           "cast": 6.0,
           "min_cast": 1.5,
@@ -544,11 +544,11 @@
       "mana_limit": {
         "forever": {
           "profiles": ["raid-dps", "raid-dps-extwc"],
-          "loss": 0.155,
+          "loss": 0.175,
           "cap": 0.9,
-          "rms": 0.0073,
+          "rms": 0.0084,
           "points": 37,
-          "note": "Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, training dummy): the builds lose 6-13% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
+          "note": "Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, training dummy): the builds lose 6-15% of their damage to mana (the same builds gain that much with every mana-only buff on); the mana-bound damage (every source but white attacks and pets) shrinks by min(cap, max(0, loss - (sustain - 1))), loss and cap fitted to those deficits and to the removal runs of the pure mana talents (the same build with less mana), the mana talents' sustain to their removal runs. Re-run the calibration instead of editing."
         }
       }
     }

@@ -4,13 +4,28 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `frost-fingers-of-frost-raid` | 22/0/29 | 640 | 38 | +0.0% | 516 | 0 | +77.0% |
-| `opt-frost-raid-raid-dps` | 22/0/29 | 637 | 40 | -0.5% | 520 | 0 | +75.6% |
-| `frost-arcane-power-raid` | 33/0/18 | 600 | 34 | -6.2% | 619 | 0 | +70.6% |
+| `frost-fingers-of-frost-raid` | 22/0/29 | 640 | 38 | +0.0% | 516 | 0 | +74.0% |
+| `opt-frost-raid-raid-dps` | 22/0/29 | 637 | 40 | -0.5% | 520 | 0 | +73.2% |
+| `cand-frost-raid-r1` | 22/0/29 | 637 | 40 | -0.5% | 520 | 0 | +73.2% |
+| `cand-frost-raid-r2` | 22/0/29 | 636 | 38 | -0.6% | 477 | 0 | +73.3% |
+| `cand-frost-raid-hand-2026-09-28` | 18/1/32 | 607 | 41 | -5.1% | 361 | 0 | +75.7% |
+| `cand-frost-raid-r12` | 18/1/32 | 607 | 41 | -5.1% | 361 | 0 | +75.7% |
+| `cand-frost-raid-r7` | 18/1/32 | 607 | 41 | -5.1% | 361 | 0 | +75.7% |
+| `frost-arcane-power-raid` | 33/0/18 | 600 | 34 | -6.2% | 619 | 0 | +68.2% |
 | sim preset: Frost DPS | - | 597 | 42 | -6.8% | 356 | 0 | - |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 591 | 39 | -7.7% | 355 | 0 | +70.6% |
+| `cand-frost-raid-r11` | 17/2/32 | 596 | 42 | -6.8% | 355 | 0 | +75.0% |
+| `cand-frost-raid-r9` | 13/3/35 | 591 | 39 | -7.6% | 356 | 0 | +70.0% |
+| `cand-frost-raid-r5` | 0/17/34 | 591 | 39 | -7.7% | 358 | 0 | +68.3% |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 591 | 39 | -7.7% | 355 | 0 | +68.2% |
+| `cand-frost-raid-r4` | 0/18/33 | 591 | 39 | -7.7% | 359 | 0 | +68.3% |
+| `cand-frost-raid-from-arcane-power` | 33/0/18 | 589 | 37 | -7.9% | 563 | 0 | +64.7% |
+| `cand-frost-raid-r10` | 21/0/30 | 589 | 38 | -8.0% | 499 | 0 | +74.7% |
+| `cand-frost-raid-r6` | 1/18/32 | 588 | 40 | -8.1% | 501 | 0 | +66.1% |
+| `cand-frost-raid-r8` | 16/3/32 | 587 | 40 | -8.2% | 495 | 1 | +67.2% |
+| `cand-frost-raid-hand-2026-09-27` | 14/0/37 | 586 | 38 | -8.5% | 354 | 0 | +70.4% |
 | sim preset: Frost 14/0/37 | - | 585 | 38 | -8.6% | 496 | 0 | - |
-| `frost-winters-chill-raid` | 20/0/31 | 569 | 28 | -11.2% | 454 | 0 | +66.6% |
+| `frost-winters-chill-raid` | 20/0/31 | 569 | 28 | -11.2% | 454 | 0 | +62.3% |
+| `cand-frost-raid-r3` | 27/0/24 | 569 | 37 | -11.2% | 482 | 0 | +71.4% |
 | sim preset: Arcane 35/0/16 | - | 517 | 31 | -19.2% | 417 | 0 | - |
 | sim preset: Arcane DPS | - | 451 | 29 | -29.5% | 429 | 0 | - |
 | sim preset: Fire 0/35/16 | - | 402 | 28 | -37.2% | 300 | 0 | - |
@@ -31,11 +46,26 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - frost-fingers-of-frost-raid: `0530050030003111--055500031100030024`
 - opt-frost-raid-raid-dps: `1502050030003111--055500030100031024`
+- cand-frost-raid-r1: `1502050030003111--055500030100031024`
+- cand-frost-raid-r2: `2522050000003111--055500031100030024`
+- cand-frost-raid-hand-2026-09-28: `0500250030003-01-055500033100030025`
+- cand-frost-raid-r12: `0520050030003-01-055500033100030025`
+- cand-frost-raid-r7: `0500250030003-01-055500033100030025`
 - frost-arcane-power-raid: `055005003100311531--05550003`
 - sim preset: Frost DPS: `0502050030003--055500033100030024`
+- cand-frost-raid-r11: `0520050030002-02-055500033100030025`
+- cand-frost-raid-r9: `253021-03-0555000331001301251`
+- cand-frost-raid-r5: `-2350203000002-055500033102030025`
 - opt-frost-raid-raid-dps-extwc: `1-2330203-0555000331021301251`
+- cand-frost-raid-r4: `-2350203000003-055500033101030025`
+- cand-frost-raid-from-arcane-power: `250205023102011531--05550003`
+- cand-frost-raid-r10: `050025003020301--055500030100130025`
+- cand-frost-raid-r6: `1-2355000000003-0555000301001301251`
+- cand-frost-raid-r8: `25502001001-03-0555000301001301251`
+- cand-frost-raid-hand-2026-09-27: `230225--0555000331021301251`
 - sim preset: Frost 14/0/37: `050005013--0555003301001301251`
 - frost-winters-chill-raid: `05300500310021--0555000330021001051`
+- cand-frost-raid-r3: `24022500002030142--05550003010003002`
 - sim preset: Arcane 35/0/16: `055005023100311531--005500033`
 - sim preset: Arcane DPS: `050215003100311531-2305003202003-`
 - sim preset: Fire 0/35/16: `-03552020130133151-005500033`

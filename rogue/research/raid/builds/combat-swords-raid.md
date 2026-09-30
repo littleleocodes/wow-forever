@@ -78,7 +78,7 @@ Allocation adopted on 2026-09-28 from the community simulator's own preset 'Impr
 |---|---|---|---|---|---|---|---|---|
 | 1 | **[`combat-swords-raid`](combat-swords-raid.md)** | ours: hand draft | 19/32/0 | 394 | +0.0% | 687 | -1.3% | 0 s |
 | 2 | *Improved Expose Armor (SS)* | community simulator | - | 394 | +0.0% | 687 | -1.3% | 0 s |
-| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.6% | 696 | -0.0% | 0 s |
+| 3 | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.5% | 682 | -2.1% | 0 s |
 | 4 | *Sinister Strike* | community simulator | - | 371 | -5.7% | 696 | +0.0% | 0 s |
 | 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 365 | -7.4% | 682 | -2.0% | 0 s |
 | 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |

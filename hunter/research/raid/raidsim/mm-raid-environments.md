@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|---|
 | `opt-mm-raid-raid-dps` | 22/29/0 | 425 | 465 | 737 | 737 | 768 |
 | `bm-mm-raid` | 22/29/0 | 424 | 464 | 738 | 738 | 774 |
-| `opt-mm-raid-parse` | 22/29/0 | 419 | 459 | 730 | 745 | 781 |
 | `bm-mm-full-buffs-raid` | 21/30/0 | 410 | 448 | 737 | 737 | 774 |
+| `opt-mm-raid-parse` | 22/29/0 | 401 | 439 | 744 | 759 | 785 |
 | sim preset: Marksmanship | - | 396 | 434 | 774 | 774 | 812 |
 | sim preset: Beast Mastery 35/16/0 | - | 374 | 411 | 672 | 686 | 724 |
 | sim preset: Marksmanship 0/39/12 | - | 364 | 399 | 701 | 701 | 741 |
@@ -27,8 +27,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `opt-mm-raid-raid-dps` | 425 | +15% | +37% | +7% | +6% | +8% | 737 |
 | `bm-mm-raid` | 424 | +15% | +37% | +7% | +6% | +9% | 738 |
-| `opt-mm-raid-parse` | 419 | +15% | +37% | +7% | +6% | +9% | 730 |
 | `bm-mm-full-buffs-raid` | 410 | +18% | +39% | +8% | +6% | +9% | 737 |
+| `opt-mm-raid-parse` | 401 | +24% | +37% | +8% | +8% | +9% | 744 |
 | sim preset: Marksmanship | 396 | +25% | +39% | +8% | +8% | +16% | 774 |
 | sim preset: Beast Mastery 35/16/0 | 374 | +18% | +40% | +7% | +6% | +8% | 672 |
 | sim preset: Marksmanship 0/39/12 | 364 | +25% | +38% | +8% | +7% | +13% | 701 |
@@ -44,8 +44,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `opt-mm-raid-raid-dps` | 505 | 447 | 425 | 389 | 372 |
 | `bm-mm-raid` | 497 | 445 | 424 | 388 | 371 |
-| `opt-mm-raid-parse` | 492 | 441 | 419 | 383 | 366 |
 | `bm-mm-full-buffs-raid` | 497 | 428 | 410 | 377 | 362 |
+| `opt-mm-raid-parse` | 520 | 419 | 401 | 368 | 353 |
 | sim preset: Marksmanship | 519 | 416 | 396 | 364 | 348 |
 | sim preset: Beast Mastery 35/16/0 | 457 | 391 | 374 | 344 | 330 |
 | sim preset: Marksmanship 0/39/12 | 474 | 381 | 364 | 336 | 319 |

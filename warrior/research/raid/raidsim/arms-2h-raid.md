@@ -4,11 +4,19 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `arms-2h-raid` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +74.5% |
-| `opt-arms-2h-raid-raid-dps` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +74.9% |
+| `arms-2h-raid` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +77.2% |
+| `cand-arms-2h-raid-r1` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +77.6% |
+| `cand-arms-2h-raid-r3` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +77.6% |
+| `cand-arms-2h-raid-r6` | 19/32/0 | 311 | 25 | +0.0% | 285 | 0 | +77.6% |
+| `cand-arms-2h-raid-r4` | 19/32/0 | 310 | 26 | -0.1% | 285 | 0 | +76.6% |
+| `cand-arms-2h-raid-r5` | 20/31/0 | 310 | 25 | -0.2% | 284 | 0 | +76.4% |
+| `opt-arms-2h-raid-raid-dps` | 19/32/0 | 310 | 24 | -0.2% | 283 | 0 | +77.7% |
+| `cand-arms-2h-raid-r7` | 19/32/0 | 310 | 24 | -0.2% | 283 | 0 | +77.7% |
 | sim preset: DPS | - | 292 | 24 | -6.1% | 268 | 0 | - |
 | sim preset: Fury 17/34/0 | - | 281 | 24 | -9.5% | 258 | 0 | - |
+| `cand-arms-2h-raid-hand-2026-09-26` | 34/17/0 | 280 | 25 | -9.8% | 258 | 0 | +42.1% |
 | sim preset: Arms 39/12/0 | - | 268 | 24 | -13.8% | 243 | 0 | - |
+| `cand-arms-2h-raid-r2` | 20/31/0 | 264 | 20 | -15.1% | 244 | 0 | +49.6% |
 
 ## Damage shares (`arms-2h-raid`, simulator actions)
 
@@ -27,8 +35,16 @@ Mapped onto the spec model's sources: `white` 58%, `execute` 16%, `whirlwind` 12
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - arms-2h-raid: `03305013031-550500000052310051`
-- opt-arms-2h-raid-raid-dps: `03305013031-250500030052310051`
+- cand-arms-2h-raid-r1: `20305113031-250500030052310051`
+- cand-arms-2h-raid-r3: `30305013031-250500030052310051`
+- cand-arms-2h-raid-r6: `03305013031-250500030052310051`
+- cand-arms-2h-raid-r4: `30305013022-250500030052310051`
+- cand-arms-2h-raid-r5: `30305013032-250500030051310051`
+- opt-arms-2h-raid-raid-dps: `0330501313-250500030052310051`
+- cand-arms-2h-raid-r7: `0330501313-250500030052310051`
 - sim preset: DPS: `30305013-050520035150310051`
 - sim preset: Fury 17/34/0: `30305213-550501015050010051`
+- cand-arms-2h-raid-hand-2026-09-26: `30305013032515201-050511030002`
 - sim preset: Arms 39/12/0: `32305213132515201-5502`
+- cand-arms-2h-raid-r2: `20305113032-250500035022310201`
 

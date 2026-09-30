@@ -12,7 +12,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 |---|---|---|---|
 | **Holy** | [Holy — Leveling](leveling/holy.md) 🔬<br>29 s/kill | [Holy — Raid Healer](raid/holy.md)<br>healer | [Holy — PvP](pvp/holy.md) 🔬 |
 | **Protection** | [Protection — Leveling](leveling/protection.md) 🔬<br>33 s/kill | [Protection — Tank](raid/protection.md)<br>tank | [Protection — PvP](pvp/protection.md) 🔬 |
-| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Retribution — Seal of Command / Twist of Light](raid/retribution.md)<br>523 DPS | [Retribution — PvP](pvp/retribution.md) 🔬 |
+| **Retribution** | **✅ Recommended**<br>[Leveling — Retribution](leveling/retribution.md)<br>28 s/kill | **✅ Recommended**<br>[Two-handed Retribution](raid/retribution.md)<br>527 DPS | [Retribution — PvP](pvp/retribution.md) 🔬 |
 
 **✅ Recommended**: the best spec for that column, or within 3% of it (a tie in the simulations). PvP has no recommendation: no simulator plays PvP. 🔬: a derived build (searched in a simulator; PvP: the stats model plus the community's picks). ⚗: a generated build, a starting point until someone drafts that spec by hand.
 
@@ -44,7 +44,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Retribution](raid/retribution.md) — Retribution — Seal of Command / Twist of Light | 523 | 975 | 461 | best |
+| 1 | [Retribution](raid/retribution.md) — Two-handed Retribution | 527 | 988 | 493 | best |
 
 **Tanking**: [Protection](raid/protection.md) — Protection — Tank.
 

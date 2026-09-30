@@ -6,9 +6,9 @@
 |---|---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 11/31/9 | 426 | 476 | 780 | 780 | 837 |
 | `enhancement-raid` | 11/31/9 | 424 | 479 | 770 | 770 | 827 |
-| `opt-enhancement-dps-parse` | 10/31/10 | 423 | 472 | 780 | 780 | 839 |
 | sim preset: Level 60 | - | 421 | 478 | 775 | 775 | 827 |
 | `enhancement-raid-dps` | 11/31/9 | 420 | 470 | 770 | 770 | 828 |
+| `opt-enhancement-dps-parse` | 20/31/0 | 420 | 478 | 792 | 792 | 857 |
 | sim preset: Enhancement 16/35/0 | - | 388 | 443 | 761 | 761 | 841 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
@@ -25,9 +25,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 426 | +1% | +32% | +16% | +6% | +28% | 780 |
 | `enhancement-raid` | 424 | -0% | +32% | +16% | +6% | +28% | 770 |
-| `opt-enhancement-dps-parse` | 423 | +2% | +32% | +17% | +6% | +28% | 780 |
 | sim preset: Level 60 | 421 | +3% | +31% | +16% | +7% | +27% | 775 |
 | `enhancement-raid-dps` | 420 | +1% | +32% | +17% | +6% | +27% | 770 |
+| `opt-enhancement-dps-parse` | 420 | +6% | +33% | +17% | +7% | +26% | 792 |
 | sim preset: Enhancement 16/35/0 | 388 | +12% | +35% | +18% | +7% | +24% | 761 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
@@ -40,9 +40,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `opt-enhancement-dps-raid-dps` | 458 | 438 | 426 | 420 | 397 |
 | `enhancement-raid` | 453 | 432 | 424 | 427 | 416 |
-| `opt-enhancement-dps-parse` | 459 | 439 | 423 | 413 | 391 |
 | sim preset: Level 60 | 463 | 439 | 421 | 407 | 384 |
 | `enhancement-raid-dps` | 453 | 432 | 420 | 415 | 392 |
+| `opt-enhancement-dps-parse` | 473 | 440 | 420 | 402 | 381 |
 | sim preset: Enhancement 16/35/0 | 466 | 403 | 388 | 375 | 358 |
 
 Gear presets: raid `shaman-enhancement-phase_1.p1opt.gear.json`, maximum `shaman-enhancement-phase_1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.

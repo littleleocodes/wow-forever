@@ -190,9 +190,9 @@
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Blackout** | Shadow | 3 | +0.00% | manual | safety | 10% stun chance per Shadow spell: interrupts the mob while it walks to you. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Martyrdom** | Discipline | 2 | +0.00% | manual | utility | Pushback immunity after being crit (beta): a leveling safety point of the leveling build; nothing in a raid. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
-| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Mental Agility** | Discipline | 3 | +0.12% | manual | sustain (from holy-heal) | Cheaper instants (Renew, Shield): part of the mana budget. |
+| forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Mental Agility** | Discipline | 3 | +0.11% | manual | sustain (from holy-heal) | Cheaper instants (Renew, Shield): part of the mana budget. |
 
-## Rogue - 24 flagged of 63 taken talents, 5 without a documented reason
+## Rogue - 23 flagged of 63 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -212,7 +212,6 @@
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lightning Reflexes** | Combat | 4 | +0.16% | parsed | filler | Raid: tier filler (dodge does nothing on bosses); leveling: 1% dodge per rank. |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.17% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Blade Flurry** | Combat | 1 | +0.34% | manual | OPEN |  |
-| forever-draft | `combat-daggers-raid` | combat-daggers-raid / raid-dps | **Deflection** | Combat | 1 | +0.00% | manual | filler (from combat-swords-raid) | +6% parry (beta): the Combat tier-1 path of the Forever draft; a parry feeds Riposte. |
 | forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Riposte** | Combat | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Improved Expose Armor** | Assassination | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.00% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
@@ -221,7 +220,7 @@
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Endurance** | Combat | 1 | +0.00% | manual | safety | Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler. |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.19% | manual | OPEN |  |
 
-## Shaman - 31 flagged of 68 taken talents, 3 without a documented reason
+## Shaman - 33 flagged of 73 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -252,12 +251,14 @@
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Grace** | Restoration | 2 | +0.30% | manual | utility | -15% healing threat. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance when hit. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Tidal Mastery** | Restoration | 5 | +0.37% | manual | throughput | Crit heals (and Lightning). |
+| forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Reverberation** | Elemental | 4 | +0.00% | manual | OPEN |  |
 | forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Anticipation** | Enhancement | 3 | +0.00% | manual | safety (from enhancement-dps) | Dodge for a melee who takes hits; raid filler. |
+| forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Earth's Grasp** | Enhancement | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Elemental Weapons** | Enhancement | 3 | +0.00% | manual | throughput | +40% Windfury Weapon effect (beta): the imbue that is 23-33% of enhancement damage in the simulators; Enhancement tier-3 path. |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Improved Stormstrike** | Enhancement | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Maelstrom Weapon** | Enhancement | 5 | +0.14% | manual | throughput | Melee hits stack -20% cast time and mana on the next Lightning Bolt, five stacks (beta): instant Lightning Bolts inside the melee loop. The  |
 
-## Warlock - 22 flagged of 61 taken talents, 8 without a documented reason
+## Warlock - 22 flagged of 65 taken talents, 8 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -284,12 +285,12 @@
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 
-## Warrior - 14 flagged of 67 taken talents, 1 without a documented reason
+## Warrior - 14 flagged of 68 taken talents, 1 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
 | classic | `fury-2h-raid` | arms-2h-raid / raid-dps | **Improved Heroic Strike** | Arms | 3 | +0.00% | manual | sustain | Cheaper rage dump: more Heroic Strikes per pull. |
-| classic | `fury-2h-raid` | arms-2h-raid / raid-dps | **Tactical Mastery** | Arms | 5 | +0.34% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
+| classic | `fury-2h-raid` | arms-2h-raid / raid-dps | **Tactical Mastery** | Arms | 5 | +0.30% | manual | enabler | Charge in Battle Stance, fight in Berserker without losing the rage. |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Tactical Mastery** | Arms | 5 | +0.00% | manual | enabler | 'Required for stance swapping to work. Without points in it, you would struggle to retain any Rage when stance swapping.' |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Rend** | Arms | 3 | +0.05% | parsed | throughput (from arms-2h-raid) | Rend is applied every pull; Blood Craze/Enrage synergy. |
 | classic | `fury-dw-raid` | fury-dw-raid / raid-dps | **Unbridled Wrath** | Fury | 5 | +0.16% | manual | throughput | 'Suits dual wielding well, as the more often you attack, the more often you activate this talent.' |

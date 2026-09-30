@@ -73,15 +73,15 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.4% | 3 s |
-| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.4% | 3 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 552 | -9.8% | 651 | -10.2% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -16.9% | 3 s |
-| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.0% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.0% | 3 s |
-| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.2% | 3 s |
+| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | -0.4% | 3 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 21/11/19 | 612 | -0.0% | 728 | +0.0% | 3 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.8% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.8% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 552 | -9.8% | 651 | -10.6% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -17.2% | 3 s |
+| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.3% | 3 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.3% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.5% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -41,7 +41,7 @@ Dummy 453 → mana +2% → armor +30% → physical +8% → spell +3% → everyth
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Marksmanship raid DPS with a pet](../research/raid/builds/opt-mm-raid-parse.md) (22/29/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050002-005355000050204--4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Marksmanship raid DPS with a pet](../research/raid/builds/opt-mm-raid-parse.md) (22/29/0) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050002-005325050050004--4).
 
 ## Other builds of this spec
 

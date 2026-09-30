@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
+| `opt-affliction-raid-raid-dps` | 30/0/21 | 639 | 736 | 768 | 768 | 796 |
+| `opt-affliction-raid-parse` | 30/0/21 | 634 | 732 | 764 | 764 | 804 |
 | `affliction-dot-raid` | 30/0/21 | 633 | 730 | 763 | 763 | 803 |
-| `opt-affliction-raid-raid-dps` | 30/0/21 | 633 | 730 | 763 | 763 | 803 |
-| `opt-affliction-raid-parse` | 30/0/21 | 633 | 730 | 763 | 763 | 803 |
 | sim preset: Demonic Pact 2/31/18 | - | 592 | 700 | 714 | 714 | 744 |
 | sim preset: Demonic Pact | - | 586 | 708 | 704 | 704 | 729 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | - | 573 | 658 | 689 | 689 | 725 |
@@ -27,9 +27,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
+| `opt-affliction-raid-raid-dps` | 639 | +4% | +3% | +4% | +1% | +8% | 768 |
+| `opt-affliction-raid-parse` | 634 | +5% | +3% | +4% | +1% | +8% | 764 |
 | `affliction-dot-raid` | 633 | +5% | +3% | +4% | +1% | +8% | 763 |
-| `opt-affliction-raid-raid-dps` | 633 | +5% | +3% | +4% | +1% | +8% | 763 |
-| `opt-affliction-raid-parse` | 633 | +5% | +3% | +4% | +1% | +8% | 763 |
 | sim preset: Demonic Pact 2/31/18 | 592 | +5% | +3% | +4% | +1% | +8% | 714 |
 | sim preset: Demonic Pact | 586 | +4% | +3% | +4% | +1% | +8% | 704 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 573 | +4% | +3% | +4% | +1% | +8% | 689 |
@@ -46,9 +46,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
+| `opt-affliction-raid-raid-dps` | 695 | 646 | 639 | 626 | 617 |
+| `opt-affliction-raid-parse` | 694 | 638 | 634 | 620 | 612 |
 | `affliction-dot-raid` | 691 | 638 | 633 | 620 | 612 |
-| `opt-affliction-raid-raid-dps` | 691 | 638 | 633 | 620 | 612 |
-| `opt-affliction-raid-parse` | 691 | 638 | 633 | 620 | 612 |
 | sim preset: Demonic Pact 2/31/18 | 644 | 591 | 586 | 571 | 564 |
 | sim preset: Demonic Pact | 637 | 590 | 586 | 572 | 566 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 629 | 578 | 573 | 560 | 554 |

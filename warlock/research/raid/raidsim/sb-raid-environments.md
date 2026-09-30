@@ -4,9 +4,9 @@
 
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
-| `opt-sb-raid-raid-dps` | 22/11/18 | 636 | 727 | 755 | 755 | 790 |
+| `opt-sb-raid-raid-dps` | 22/11/18 | 639 | 730 | 759 | 759 | 788 |
 | `ds-ruin-raid` | 22/11/18 | 636 | 725 | 759 | 759 | 797 |
-| `opt-sb-raid-parse` | 21/11/19 | 631 | 719 | 758 | 758 | 814 |
+| `opt-sb-raid-parse` | 20/11/20 | 629 | 721 | 757 | 757 | 792 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | - | 605 | 692 | 719 | 719 | 761 |
 | sim preset: DS/Ruin | - | 598 | 696 | 711 | 711 | 738 |
 | sim preset: Shadow and Flame 13/11/27 | - | 570 | 650 | 674 | 674 | 696 |
@@ -27,9 +27,9 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
-| `opt-sb-raid-raid-dps` | 636 | +5% | +0% | +4% | +1% | +9% | 755 |
+| `opt-sb-raid-raid-dps` | 639 | +5% | +0% | +4% | +1% | +9% | 759 |
 | `ds-ruin-raid` | 636 | +5% | +0% | +4% | +1% | +9% | 759 |
-| `opt-sb-raid-parse` | 631 | +6% | +0% | +4% | +1% | +10% | 758 |
+| `opt-sb-raid-parse` | 629 | +6% | +0% | +4% | +1% | +10% | 757 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 605 | +5% | +0% | +4% | +1% | +9% | 719 |
 | sim preset: DS/Ruin | 598 | +5% | +0% | +3% | +1% | +9% | 711 |
 | sim preset: Shadow and Flame 13/11/27 | 570 | +5% | +0% | +3% | +1% | +9% | 674 |
@@ -46,9 +46,9 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `opt-sb-raid-raid-dps` | 706 | 646 | 636 | 620 | 611 |
+| `opt-sb-raid-raid-dps` | 704 | 647 | 639 | 622 | 613 |
 | `ds-ruin-raid` | 712 | 644 | 636 | 618 | 608 |
-| `opt-sb-raid-parse` | 724 | 644 | 631 | 612 | 601 |
+| `opt-sb-raid-parse` | 707 | 637 | 629 | 610 | 600 |
 | sim preset: DS/Ruin Pandemic 24/11/16 | 674 | 613 | 605 | 591 | 581 |
 | sim preset: DS/Ruin | 662 | 605 | 598 | 584 | 576 |
 | sim preset: Shadow and Flame 13/11/27 | 634 | 577 | 570 | 556 | 547 |

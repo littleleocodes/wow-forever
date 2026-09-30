@@ -4,9 +4,18 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-shadow-dps-raid-dps` | 20/0/31 | 632 | 20 | +0.0% | 457 | 0 | +560.3% |
+| `opt-shadow-dps-raid-dps` | 20/0/31 | 632 | 20 | +0.0% | 457 | 0 | +528.6% |
+| `cand-shadow-dps-r3` | 20/0/31 | 632 | 20 | +0.0% | 457 | 0 | +528.6% |
+| `cand-shadow-dps-r1` | 18/0/33 | 620 | 20 | -1.9% | 632 | 0 | +535.4% |
+| `cand-shadow-dps-r5` | 20/0/31 | 619 | 20 | -1.9% | 631 | 0 | +534.5% |
+| `cand-shadow-dps-r9` | 18/0/33 | 619 | 20 | -2.0% | 448 | 1 | +535.4% |
+| `cand-shadow-dps-r8` | 18/0/33 | 619 | 20 | -2.0% | 634 | 1 | +535.4% |
 | sim preset: Shadow | - | 618 | 20 | -2.2% | 568 | 0 | - |
+| `cand-shadow-dps-r4` | 20/0/31 | 616 | 20 | -2.4% | 628 | 0 | +520.4% |
+| `cand-shadow-dps-r2` | 18/0/33 | 607 | 22 | -3.9% | 624 | 9 | +532.3% |
+| `cand-shadow-dps-r6` | 20/0/31 | 603 | 19 | -4.5% | 615 | 0 | +526.1% |
 | sim preset: Shadow 15/0/36 | - | 590 | 22 | -6.6% | 607 | 18 | - |
+| `cand-shadow-dps-r7` | 18/0/33 | 579 | 21 | -8.3% | 596 | 23 | +493.4% |
 | sim preset: Smite | - | 216 | 12 | -65.8% | 233 | 24 | - |
 | sim preset: Smite 31/17/3 | - | 216 | 12 | -65.8% | 233 | 24 | - |
 
@@ -26,8 +35,17 @@ Mapped onto the spec model's sources: `mind_flay` 45%, `swp` 21%, `mind_blast` 1
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-shadow-dps-raid-dps: `525000000305--500321501201302051`
+- cand-shadow-dps-r3: `525000000305--500321501201302051`
+- cand-shadow-dps-r1: `505000011303--540020501201302251`
+- cand-shadow-dps-r5: `005300211305--504020501201302051`
+- cand-shadow-dps-r9: `005300221203--500320501201312251`
+- cand-shadow-dps-r8: `525000001203--540020501201302251`
 - sim preset: Shadow: `005300231303--505120501201300051`
+- cand-shadow-dps-r4: `525000000305--554020001201302051`
+- cand-shadow-dps-r2: `505000031103--540020501201302251`
+- cand-shadow-dps-r6: `505000011305--554020001201302051`
 - sim preset: Shadow 15/0/36: `0253000311--550022501201302251`
+- cand-shadow-dps-r7: `515000031003--540020501201302251`
 - sim preset: Smite: `515330031305001001-30505113002`
 - sim preset: Smite 31/17/3: `515030031305001031-00505023002-003`
 

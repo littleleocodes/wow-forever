@@ -9,19 +9,19 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Bestial Discipline | Beast Mastery | 5 | +2.83% | manual |
+| Bestial Discipline | Beast Mastery | 5 | +2.84% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
-| Improved Stings | Marksmanship | 2 | +0.97% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +0.97% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.93% | manual |
+| Improved Stings | Marksmanship | 2 | +1.08% | manual |
+| Careful Aim | Marksmanship | 2 | +0.99% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.91% | manual |
+| Mortal Shots | Marksmanship | 4 | +0.91% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +0.90% | manual |
 | Focused Fire | Beast Mastery | 2 | +0.87% | manual |
-| Lethal Attacks | Marksmanship | 1 | +0.81% | manual |
-| Careful Aim | Marksmanship | 2 | +0.78% | manual |
+| Lethal Attacks | Marksmanship | 1 | +0.80% | manual |
 | Bestial Wrath | Beast Mastery | 7 | +0.64% | manual |
 | Efficiency | Marksmanship | 2 | +0.41% | manual |
-| Improved Arcane Shot | Marksmanship | 3 | +0.31% | manual |
-| Barrage | Marksmanship | 5 | +0.30% | manual |
+| Improved Arcane Shot | Marksmanship | 3 | +0.34% | manual |
+| Barrage | Marksmanship | 5 | +0.28% | manual |
 | Unleashed Fury | Beast Mastery | 3 | +0.26% | manual |
 | Frenzy | Beast Mastery | 6 | +0.24% | manual |
 | Resourcefulness | Survival | 5 | +0.20% | manual |
@@ -40,24 +40,24 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Improved Revive Pet | Beast Mastery | 2 | +0.00% | manual |
 | Bestial Swiftness | Beast Mastery | 3 | +0.00% | manual |
 
-## Optimized build: 22/29/0  score +42.18%  (dps x1.399, sustain x1.110, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.331  — use this to compare models with different pet shares.
+## Optimized build: 22/29/0  score +43.59%  (dps x1.426, sustain x1.050, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.356  — use this to compare models with different pet shares.
 
 ```
   Beast Mastery: Deadly Aspects 5, Endurance Training 3, Focused Fire 2, Unleashed Fury 5, Ferocity 5, Bestial Discipline 2
-  Marksmanship: Lethal Attacks 5, Efficiency 5, Careful Aim 5, Improved Stings 3, Mortal Shots 5, Barrage 2, Ranged Weapon Specialization 4
+  Marksmanship: Lethal Attacks 5, Careful Aim 5, Improved Stings 3, Efficiency 2, Improved Arcane Shot 5, Mortal Shots 5, Ranged Weapon Specialization 4
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Lightning Reflexes | Survival 6 | 1/5 | +1.68% | no |
-| Bestial Wrath | Beast Mastery 7 | 1/1 | +1.41% | no |
-| Ranged Weapon Specialization | Marksmanship 6 | 5/5 | +1.16% | yes |
+| Lightning Reflexes | Survival 6 | 1/5 | +1.71% | no |
+| Bestial Wrath | Beast Mastery 7 | 1/1 | +1.43% | no |
+| Ranged Weapon Specialization | Marksmanship 6 | 5/5 | +1.19% | yes |
 | Frenzy | Beast Mastery 6 | 1/5 | +0.53% | no |
-| Improved Arcane Shot | Marksmanship 3 | 1/5 | +0.38% | yes |
-| Barrage | Marksmanship 5 | 3/3 | +0.37% | yes |
+| Efficiency | Marksmanship 2 | 3/5 | +0.41% | yes |
+| Barrage | Marksmanship 5 | 1/3 | +0.35% | yes |
 | Resourcefulness | Survival 5 | 1/2 | +0.20% | no |
 | Intimidation | Beast Mastery 5 | 1/1 | +0.19% | no |
 | Endurance Training | Beast Mastery 1 | 4/5 | +0.06% | yes |

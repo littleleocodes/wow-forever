@@ -11,7 +11,7 @@ Pick what you want to do (the columns) and the spec you want to play (the rows).
 
 | Spec | Leveling | Raid (training dummy / parse) | PvP |
 |---|---|---|---|
-| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | **✅ Recommended**<br>[Elemental — Raid](raid/elemental.md) ⚗<br>440 DPS | [Elemental — PvP](pvp/elemental.md) 🔬 |
+| **Elemental** | [Elemental (optimized)](leveling/elemental.md)<br>38 s/kill | **✅ Recommended**<br>[Elemental (optimized)](raid/elemental.md)<br>440 DPS | [Elemental — PvP](pvp/elemental.md) 🔬 |
 | **Enhancement** | **✅ Recommended**<br>[Leveling — Enhancement](leveling/enhancement.md)<br>33 s/kill | [One slow weapon](raid/enhancement.md)<br>426 DPS | [Enhancement — PvP](pvp/enhancement.md) 🔬 |
 | **Restoration** | **✅ Recommended**<br>[Restoration — Leveling](leveling/restoration.md) 🔬<br>34 s/kill | [Restoration — Raid Healer](raid/restoration.md)<br>healer | [Restoration — PvP](pvp/restoration.md) 🔬 |
 
@@ -45,7 +45,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Elemental](raid/elemental.md) — Elemental — Raid ⚗ | 440 | 553 | 422 | best |
+| 1 | [Elemental](raid/elemental.md) — Elemental (optimized) | 440 | 553 | 422 | best |
 | 2 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 438 | 556 | 423 | -0% |
 | 3 | [Enhancement](raid/enhancement.md) — One slow weapon | 426 | 780 | 397 | -3% |
 

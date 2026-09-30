@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +74.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-raid` and profile `raid-dps`: score +77.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -25,7 +25,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | **Deep Wounds** | 3/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 60% of your melee weapon's average damage over 12 sec. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Two-Handed Weapon Specialization** | 3/3 | changed | Increases the damage you deal with two-handed melee weapons by 3%. |
-| **Impale** | 1/2 | changed | Increases the critical strike damage bonus of your abilities by 10%. |
+| **Spearing Strike** | 1/1 | **NEW** | A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin, and mounted targets. Mounted targets are dismounted. |
 
 ### Fury (32)
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 ## Core talents (priority order)
 
-1. **Flurry** — Removing it costs 16.0 points of score in this model.
+1. **Flurry** — Removing it costs 28.7 points of score in this model.
 2. **Bloodthirst** — Removing it costs 15.2 points of score in this model.
-3. **Cruelty** — Removing it costs 14.3 points of score in this model.
-4. **Deep Wounds** — Removing it costs 10.6 points of score in this model.
-5. **Death Wish** — Removing it costs 5.6 points of score in this model.
-6. **Precision** — Removing it costs 5.5 points of score in this model.
-7. **Improved Execute** — Removing it costs 5.3 points of score in this model.
-8. **Anger Management** — Removing it costs 5.2 points of score in this model.
+3. **Cruelty** — Removing it costs 9.1 points of score in this model.
+4. **Deep Wounds** — Removing it costs 8.8 points of score in this model.
+5. **Precision** — Removing it costs 5.6 points of score in this model.
+6. **Two-Handed Weapon Specialization** — Removing it costs 5.2 points of score in this model.
+7. **Unbridled Wrath** — Removing it costs 4.7 points of score in this model.
+8. **Anger Management** — Removing it costs 4.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -63,11 +63,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 311 | +0.0% | 662 | -0.5% | 0 s |
-| 2 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 311 | +0.0% | 665 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 292 | -6.1% | 630 | -5.3% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 281 | -9.5% | 601 | -9.7% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 268 | -13.8% | 586 | -11.9% | 0 s |
+| 1 | [`arms-2h-raid`](arms-2h-raid.md) | ours: hand draft | 19/32/0 | 311 | +0.0% | 662 | +0.0% | 0 s |
+| 2 | **[`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md)** | ours: optimizer | 19/32/0 | 310 | -0.2% | 661 | -0.2% | 0 s |
+| 3 | *DPS* | community simulator | - | 292 | -6.1% | 630 | -4.9% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 281 | -9.5% | 601 | -9.2% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 268 | -13.8% | 586 | -11.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -100,24 +100,26 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `arms-2h-
 | 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
 | 9 | if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | if number of targets > 1: cast Whirlwind | 3.6 |
-| 11 | cast Bloodthirst | 3.5 |
-| 12 | cast Death Wish | 0.3 |
-| 13 | cast Whirlwind | 3.6 |
-| 14 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 15 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.9 |
+| 10 | if number of targets > 1: cast Whirlwind | 3.4 |
+| 11 | cast Spearing Strike | 2.4 |
+| 12 | cast Bloodthirst | 2.6 |
+| 13 | cast Death Wish | 0.3 |
+| 14 | cast Whirlwind | 3.4 |
+| 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 5.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent).
 
 Damage by ability:
 
 | Ability | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) |
 |---|---|
-| Auto Attack | 57% |
+| Auto Attack | 58% |
 | Execute | 16% |
-| Whirlwind | 12% |
-| Bloodthirst | 10% |
+| Whirlwind | 11% |
+| Bloodthirst | 7% |
 | Deep Wound | 5% |
+| Spearing Strike | 3% |
 | Dragonbreath Chili | 0% |
 
 ## Notes

@@ -635,101 +635,6 @@
       "spec": "Hybrid Discipline/Holy"
     },
     {
-      "id": "opt-shadow-dps-raid-dps",
-      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +567.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Discipline": [
-          ["Twin Disciplines", 5],
-          ["Power in Light", 5],
-          ["Wand Specialization", 2],
-          ["Meditation", 3],
-          ["Mental Strength", 5]
-        ],
-        "Holy": [],
-        "Shadow": [
-          ["Shadow Focus", 5],
-          ["Improved Shadow Word: Pain", 2],
-          ["Shadow Affinity", 3],
-          ["Shadow Reach", 1],
-          ["Mind Flay", 1],
-          ["Improved Mind Flay", 2],
-          ["Improved Mind Blast", 5],
-          ["Vampiric Embrace", 1],
-          ["Shadow Weaving", 3],
-          ["Devouring Contagion", 2],
-          ["Darkness", 5],
-          ["Shadowform", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 316.0 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 299.4 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 60.7 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 60.7 points of score in this model."},
-        {"talent": "Meditation", "why": "Removing it costs 58.4 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 58.3 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 31.0 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 16.4 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (556 vs 542 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/priest"]
-    },
-    {
-      "id": "opt-shadow-dps-parse",
-      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +213.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Discipline": [
-          ["Twin Disciplines", 5],
-          ["Martyrdom", 2],
-          ["Silent Resolve", 3],
-          ["Inner Focus", 1],
-          ["Meditation", 3],
-          ["Mental Agility", 1],
-          ["Mental Strength", 3]
-        ],
-        "Holy": [],
-        "Shadow": [
-          ["Shadow Focus", 5],
-          ["Improved Shadow Word: Pain", 2],
-          ["Shadow Affinity", 3],
-          ["Mind Flay", 1],
-          ["Improved Mind Flay", 2],
-          ["Improved Mind Blast", 5],
-          ["Vampiric Embrace", 1],
-          ["Shadow Weaving", 3],
-          ["Devouring Contagion", 2],
-          ["Silence", 1],
-          ["Darkness", 5],
-          ["Early Demise", 2],
-          ["Shadowform", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Mind Flay", "why": "Removing it costs 142.2 points of score in this model."},
-        {"talent": "Shadowform", "why": "Removing it costs 37.1 points of score in this model."},
-        {"talent": "Shadow Weaving", "why": "Removing it costs 27.3 points of score in this model."},
-        {"talent": "Darkness", "why": "Removing it costs 27.3 points of score in this model."},
-        {"talent": "Improved Mind Flay", "why": "Removing it costs 26.2 points of score in this model."},
-        {"talent": "Shadow Focus", "why": "Removing it costs 14.0 points of score in this model."},
-        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 7.5 points of score in this model."},
-        {"talent": "Twin Disciplines", "why": "Removing it costs 4.9 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: priest/research/talents/forever/optimizer/shadow-dps-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/priest"]
-    },
-    {
       "id": "discipline-pvp",
       "name": "Discipline — PvP (derived)",
       "role": "healer",
@@ -1037,6 +942,101 @@
       "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-holy-scorer, moves: 2 points Shadow Focus -> Spirit Tap; 2 points Blackout -> Spirit Tap; 3 points Twilight Focus -> Spiritual Guidance; 2 points Twin Disciplines -> Wand Specialization; 1 point Vampiric Embrace -> Spirit Tap; 2 points Improved Renew -> Spiritual Guidance; 2 points Blessed Recovery -> Searing Light. Race against derived-holy-scorer over levels 20-60 (seed 3, 3000 fights per level): +6.3% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["A derived Holy leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-raid-dps",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `raid-dps`: score +535.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Power in Light", 5],
+          ["Wand Specialization", 2],
+          ["Meditation", 3],
+          ["Mental Strength", 5]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Shadow Affinity", 3],
+          ["Shadow Reach", 1],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Devouring Contagion", 2],
+          ["Darkness", 5],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 302.6 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 273.6 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 57.8 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 57.8 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 55.8 points of score in this model."},
+        {"talent": "Meditation", "why": "Removing it costs 42.9 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 22.7 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 15.6 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Allocation taken from cand-shadow-dps-r3 on 2026-09-30: the optimizer's earlier round beat its last export in the community simulator (632 vs 619 DPS; the calibration moved the model past the better build).", "Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
+    },
+    {
+      "id": "opt-shadow-dps-parse",
+      "name": "Optimizer — Shadow leveling/raid: Shadow Word: Pain 28%, Mind Blast 27%, Mind Flay channel 30% (talent), wand 10%, Smite 5% before 20 (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-dps` and profile `parse`: score +211.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Discipline": [
+          ["Twin Disciplines", 5],
+          ["Martyrdom", 2],
+          ["Silent Resolve", 3],
+          ["Inner Focus", 1],
+          ["Meditation", 3],
+          ["Mental Agility", 1],
+          ["Mental Strength", 3]
+        ],
+        "Holy": [],
+        "Shadow": [
+          ["Shadow Focus", 5],
+          ["Improved Shadow Word: Pain", 2],
+          ["Shadow Affinity", 3],
+          ["Mind Flay", 1],
+          ["Improved Mind Flay", 2],
+          ["Improved Mind Blast", 5],
+          ["Vampiric Embrace", 1],
+          ["Shadow Weaving", 3],
+          ["Devouring Contagion", 2],
+          ["Silence", 1],
+          ["Darkness", 5],
+          ["Early Demise", 2],
+          ["Shadowform", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Mind Flay", "why": "Removing it costs 142.2 points of score in this model."},
+        {"talent": "Shadowform", "why": "Removing it costs 37.0 points of score in this model."},
+        {"talent": "Shadow Weaving", "why": "Removing it costs 27.1 points of score in this model."},
+        {"talent": "Darkness", "why": "Removing it costs 27.1 points of score in this model."},
+        {"talent": "Improved Mind Flay", "why": "Removing it costs 26.2 points of score in this model."},
+        {"talent": "Shadow Focus", "why": "Removing it costs 10.7 points of score in this model."},
+        {"talent": "Improved Shadow Word: Pain", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Twin Disciplines", "why": "Removing it costs 4.9 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: priest/research/talents/forever/optimizer/shadow-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/priest"]
     }
   ]
 }

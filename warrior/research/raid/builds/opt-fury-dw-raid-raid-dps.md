@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +87.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `raid-dps`: score +94.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 ## Core talents (priority order)
 
-1. **Dual Wield Specialization** — Removing it costs 24.9 points of score in this model.
-2. **Flurry** — Removing it costs 18.7 points of score in this model.
-3. **Cruelty** — Removing it costs 12.1 points of score in this model.
-4. **Improved Execute** — Removing it costs 11.6 points of score in this model.
-5. **Death Wish** — Removing it costs 9.5 points of score in this model.
-6. **Unbridled Wrath** — Removing it costs 7.5 points of score in this model.
-7. **Raging Blows** — Removing it costs 6.5 points of score in this model.
-8. **Precision** — Removing it costs 6.3 points of score in this model.
+1. **Dual Wield Specialization** — Removing it costs 28.5 points of score in this model.
+2. **Flurry** — Removing it costs 27.6 points of score in this model.
+3. **Improved Execute** — Removing it costs 10.8 points of score in this model.
+4. **Cruelty** — Removing it costs 8.9 points of score in this model.
+5. **Death Wish** — Removing it costs 7.6 points of score in this model.
+6. **Raging Blows** — Removing it costs 7.4 points of score in this model.
+7. **Bloodthirst** — Removing it costs 7.4 points of score in this model.
+8. **Precision** — Removing it costs 6.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 

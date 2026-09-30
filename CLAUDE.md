@@ -426,8 +426,8 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `statweights`; weapon DPS as pseudo-stats), trinkets raced, kept only when it beats the current set on a second seed. Sets:
   `raidsim/gear_sets/forever/<class>-<spec folder>-<preset>.p1opt.gear.json`, record `raidsim/gear-opt.json`, `--apply` points
   specs.json at them. Result: warrior DPS +71-76% (its "p1" presets held caster and tank pieces), paladin +51%, Shadow +31%, casters
-  +13-22% (launch items), others 0-5%. Tanks keep their sets; healers are not simulated. Talent searches ran in the old gear: re-run
-  them (`rebuild.py --steps raid,adopt`, `derive_raid.py --fresh`) when talent values matter. The bench also takes `gear_json` per build.
+  +13-22% (launch items), others 0-5%. Tanks keep their sets; healers are not simulated. Raid talents were re-searched in the new gear
+  the same day (no hand draft lost by 2%). The pages enforce the 2% rule on derived builds (`render_modes.DERIVED_BAR`). The bench also takes `gear_json` per build.
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

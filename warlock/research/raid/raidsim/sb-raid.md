@@ -4,23 +4,33 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-sb-raid-raid-dps` | 22/11/18 | 636 | 37 | +0.0% | 565 | 1 | +91.6% |
-| `ds-ruin-raid` | 22/11/18 | 636 | 38 | -0.0% | 564 | 1 | +90.4% |
-| sim preset: DS/Ruin Pandemic 24/11/16 | - | 605 | 35 | -4.9% | 540 | 1 | - |
-| sim preset: DS/Ruin | - | 598 | 35 | -6.0% | 582 | 1 | - |
-| sim preset: Shadow and Flame 13/11/27 | - | 570 | 31 | -10.4% | 507 | 1 | - |
-| sim preset: Deep Affliction 35/0/16 | - | 531 | 29 | -16.6% | 475 | 1 | - |
-| sim preset: Demonic Pact 2/31/18 | - | 525 | 31 | -17.5% | 556 | 1 | - |
-| sim preset: Affliction | - | 523 | 30 | -17.8% | 490 | 1 | - |
-| sim preset: Demonic Pact | - | 518 | 31 | -18.5% | 575 | 0 | - |
+| `opt-sb-raid-raid-dps` | 22/11/18 | 639 | 37 | +0.0% | 568 | 1 | +94.0% |
+| `cand-sb-raid-r9` | 22/11/18 | 639 | 37 | +0.0% | 568 | 1 | +94.0% |
+| `cand-sb-raid-r6` | 22/11/18 | 636 | 37 | -0.4% | 565 | 1 | +93.3% |
+| `cand-sb-raid-r7` | 22/11/18 | 636 | 37 | -0.4% | 565 | 1 | +93.3% |
+| `cand-sb-raid-r8` | 22/11/18 | 636 | 37 | -0.4% | 565 | 1 | +93.3% |
+| `ds-ruin-raid` | 22/11/18 | 636 | 38 | -0.5% | 564 | 1 | +92.1% |
+| `cand-sb-raid-r4` | 22/11/18 | 636 | 38 | -0.5% | 564 | 1 | +92.1% |
+| `cand-sb-raid-r2` | 22/11/18 | 631 | 37 | -1.2% | 561 | 1 | +91.5% |
+| `cand-sb-raid-r5` | 22/11/18 | 628 | 32 | -1.7% | 555 | 0 | +91.0% |
+| `cand-sb-raid-r3` | 22/11/18 | 628 | 37 | -1.7% | 557 | 2 | +89.4% |
+| sim preset: DS/Ruin Pandemic 24/11/16 | - | 605 | 35 | -5.3% | 540 | 1 | - |
+| sim preset: DS/Ruin | - | 598 | 35 | -6.5% | 582 | 1 | - |
+| `cand-sb-raid-hand-2026-09-26` | 7/11/33 | 575 | 32 | -10.1% | 510 | 1 | +73.3% |
+| sim preset: Shadow and Flame 13/11/27 | - | 570 | 31 | -10.8% | 507 | 1 | - |
+| `cand-sb-raid-r1` | 2/31/18 | 537 | 33 | -16.0% | 544 | 1 | +39.7% |
+| sim preset: Deep Affliction 35/0/16 | - | 531 | 29 | -17.0% | 475 | 1 | - |
+| sim preset: Demonic Pact 2/31/18 | - | 525 | 31 | -17.9% | 556 | 1 | - |
+| sim preset: Affliction | - | 523 | 30 | -18.2% | 490 | 1 | - |
+| sim preset: Demonic Pact | - | 518 | 31 | -18.9% | 575 | 0 | - |
 
 ## Damage shares (`opt-sb-raid-raid-dps`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Shadow Bolt | 51.8% |
-| Bane of Agony | 18.4% |
-| Corruption | 18.1% |
+| Shadow Bolt | 51.6% |
+| Bane of Agony | 18.7% |
+| Corruption | 18.0% |
 | Immolate | 11.0% |
 | Searing Pain | 0.7% |
 
@@ -29,11 +39,21 @@ Mapped onto the spec model's sources: `shadow_bolt` 52%, `agony` 19%, `corruptio
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- opt-sb-raid-raid-dps: `25500010135-0050203001-0550005003`
+- opt-sb-raid-raid-dps: `25500020035-0050203001-0550005003`
+- cand-sb-raid-r9: `25500020035-0050203001-0550005003`
+- cand-sb-raid-r6: `25500010135-2300203001-0550005003`
+- cand-sb-raid-r7: `25500010135-0005203001-0550005003`
+- cand-sb-raid-r8: `25500010135-0050203001-0550005003`
 - ds-ruin-raid: `15500020135-0050203001-0550005003`
+- cand-sb-raid-r4: `15500020135-2300203001-0550005003`
+- cand-sb-raid-r2: `25500000035101-0250003001-0550005003`
+- cand-sb-raid-r5: `25500020134-0005203001-0550302003`
+- cand-sb-raid-r3: `05500020135001-2050003001-0550005003`
 - sim preset: DS/Ruin Pandemic 24/11/16: `25220010135201-0025003001-05500051`
 - sim preset: DS/Ruin: `233500201332-0340003001-0550105`
+- cand-sb-raid-hand-2026-09-26: `25-0050203001-255030512310105`
 - sim preset: Shadow and Flame 13/11/27: `25501-0025003001-055035510010002`
+- cand-sb-raid-r1: `02-0350003031020311351-0550005003`
 - sim preset: Deep Affliction 35/0/16: `2535002013521105--05000551`
 - sim preset: Demonic Pact 2/31/18: `113-0005003221220311351-0550005`
 - sim preset: Affliction: `2435002013520135--0500055`

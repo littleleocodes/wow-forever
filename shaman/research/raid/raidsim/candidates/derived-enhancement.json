@@ -13,10 +13,6 @@
    [
     "Elemental Devastation",
     2
-   ],
-   [
-    "Elemental Focus",
-    1
    ]
   ],
   "Enhancement": [
@@ -68,15 +64,15 @@
    ],
    [
     "Tidal Focus",
-    1
+    4
    ],
    [
     "Mindfulness",
-    3
+    1
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for enhancement-dps from opt-enhancement-dps-raid-dps in the dummy setting: 394.6 -> 403.2 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for enhancement-dps from opt-enhancement-dps-raid-dps in the dummy setting: 426.3 -> 427.2 DPS on a third seed.",
  "search": {
   "start": "opt-enhancement-dps-raid-dps",
   "setting": "dummy",
@@ -86,15 +82,15 @@
   "moves": [
    {
     "round": 1,
-    "move": "3 points Tidal Focus -> Mindfulness",
-    "gain_seed1": 0.021463533609866303,
-    "gain_seed2": 0.02145305312055279,
-    "split": "11/31/9"
+    "move": "1 point Elemental Focus -> Mindfulness",
+    "gain_seed1": 0.005078811885133483,
+    "gain_seed2": 0.002050621606498826,
+    "split": "10/31/10"
    }
   ],
-  "dps_start": 394.60944913240803,
-  "dps_end": 403.1576366397213,
-  "gain": 0.021662399433433288,
+  "dps_start": 426.2669580513961,
+  "dps_end": 427.1591617877718,
+  "gain": 0.0020930633245752617,
   "tank": false
  }
 }

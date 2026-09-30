@@ -5,8 +5,8 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `arms-2h-raid` | 19/32/0 | 311 | 342 | 662 | 662 | 752 |
-| `opt-arms-2h-raid-raid-dps` | 19/32/0 | 311 | 342 | 665 | 665 | 754 |
-| `opt-arms-2h-raid-parse` | 19/32/0 | 311 | 342 | 665 | 665 | 754 |
+| `opt-arms-2h-raid-raid-dps` | 19/32/0 | 310 | 338 | 661 | 661 | 741 |
+| `opt-arms-2h-raid-parse` | 19/32/0 | 310 | 338 | 661 | 661 | 741 |
 | sim preset: DPS | - | 292 | 329 | 630 | 630 | 711 |
 | sim preset: Fury 17/34/0 | - | 281 | 326 | 601 | 601 | 675 |
 | sim preset: Arms 39/12/0 | - | 268 | 307 | 586 | 586 | 617 |
@@ -24,8 +24,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `arms-2h-raid` | 311 | +0% | +35% | +65% | +0% | +13% | 662 |
-| `opt-arms-2h-raid-raid-dps` | 311 | +0% | +35% | +65% | +0% | +13% | 665 |
-| `opt-arms-2h-raid-parse` | 311 | +0% | +35% | +65% | +0% | +13% | 665 |
+| `opt-arms-2h-raid-raid-dps` | 310 | +0% | +34% | +66% | +0% | +12% | 661 |
+| `opt-arms-2h-raid-parse` | 310 | +0% | +34% | +66% | +0% | +12% | 661 |
 | sim preset: DPS | 292 | +0% | +35% | +66% | +0% | +14% | 630 |
 | sim preset: Fury 17/34/0 | 281 | +0% | +35% | +64% | +0% | +14% | 601 |
 | sim preset: Arms 39/12/0 | 268 | +0% | +38% | +68% | +0% | +13% | 586 |
@@ -39,8 +39,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `arms-2h-raid` | 309 | 285 | 284 | 287 | 286 |
-| `opt-arms-2h-raid-raid-dps` | 309 | 285 | 284 | 287 | 286 |
-| `opt-arms-2h-raid-parse` | 309 | 285 | 284 | 287 | 286 |
+| `opt-arms-2h-raid-raid-dps` | 311 | 285 | 282 | 286 | 283 |
+| `opt-arms-2h-raid-parse` | 311 | 285 | 282 | 286 | 283 |
 | sim preset: DPS | 297 | 275 | 274 | 277 | 276 |
 | sim preset: Fury 17/34/0 | 284 | 264 | 263 | 266 | 265 |
 | sim preset: Arms 39/12/0 | 270 | 259 | 251 | 253 | 254 |

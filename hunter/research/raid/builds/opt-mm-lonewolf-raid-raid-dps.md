@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +79.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -45,14 +45,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — Removing it costs 29.4 points of score in this model.
-2. **Efficiency** — Removing it costs 13.5 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 9.6 points of score in this model.
-4. **Deadly Aspects** — Removing it costs 9.6 points of score in this model.
-5. **Mortal Shots** — Removing it costs 9.5 points of score in this model.
-6. **Careful Aim** — Removing it costs 7.6 points of score in this model.
+1. **Lone Wolf** — Removing it costs 29.7 points of score in this model.
+2. **Efficiency** — Removing it costs 14.0 points of score in this model.
+3. **Lethal Attacks** — Removing it costs 9.5 points of score in this model.
+4. **Mortal Shots** — Removing it costs 9.4 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 8.8 points of score in this model.
+6. **Careful Aim** — Removing it costs 7.7 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 6.5 points of score in this model.
-8. **Trueshot Aura** — Removing it costs 4.9 points of score in this model.
+8. **Improved Stings** — Removing it costs 5.2 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 

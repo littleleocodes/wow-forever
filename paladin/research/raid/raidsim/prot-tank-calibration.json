@@ -15,7 +15,8 @@
   "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r5.json",
   "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r6.json",
   "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r7.json",
-  "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r8.json"
+  "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r8.json",
+  "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/cand-prot-tank-r9.json"
  ],
  "sim": {
   "repo": "/root/.wow-forever-tools/forever-repo",
@@ -48,9 +49,9 @@
  "talents": [
   {
    "talent": "Champion of the Light",
-   "sim": 0.07541939711466762,
-   "ev_before": 0.06386330453136274,
-   "ev_after": 0.06386330453136274,
+   "sim": 0.07514890857999246,
+   "ev_before": 0.06371800302529744,
+   "ev_after": 0.06371800302529744,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -64,7 +65,8 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
@@ -90,10 +92,10 @@
    ]
   },
   {
-   "talent": "Vengeance",
-   "sim": 0.03496740047093211,
-   "ev_before": 0.03367521222035548,
-   "ev_after": 0.03367521222035548,
+   "talent": "Deflection",
+   "sim": 0.03525816268329828,
+   "ev_before": 0.039874789153582585,
+   "ev_after": 0.039874789153582585,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -107,14 +109,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
-   "talent": "Deflection",
-   "sim": 0.0345935887659553,
-   "ev_before": 0.03994799711403625,
-   "ev_after": 0.03994799711403625,
+   "talent": "Vengeance",
+   "sim": 0.03487047707560393,
+   "ev_before": 0.033604178304332606,
+   "ev_after": 0.033604178304332606,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -128,14 +131,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Improved Righteous Fury",
-   "sim": 0.032559322830753405,
-   "ev_before": 0.036459117381435834,
-   "ev_after": 0.036459117381435834,
+   "sim": 0.03260316387820168,
+   "ev_before": 0.036377552091816354,
+   "ev_after": 0.036377552091816354,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -150,14 +154,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Vindication",
-   "sim": 0.029323818438401515,
-   "ev_before": 0.026166335639418992,
-   "ev_after": 0.026166335639418992,
+   "sim": 0.02941952743261793,
+   "ev_before": 0.026111155020989704,
+   "ev_after": 0.026111155020989704,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -171,7 +176,8 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
@@ -186,31 +192,10 @@
    ]
   },
   {
-   "talent": "Conviction",
-   "sim": 0.02038416769929427,
-   "ev_before": 0.02137538255021426,
-   "ev_after": 0.02137538255021426,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "prot-tank",
-    "opt-prot-tank-raid-tank",
-    "cand-prot-tank-hand-2026-09-28",
-    "cand-prot-tank-r1",
-    "cand-prot-tank-r2",
-    "cand-prot-tank-r3",
-    "cand-prot-tank-r4",
-    "cand-prot-tank-r5",
-    "cand-prot-tank-r6",
-    "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
-   ]
-  },
-  {
    "talent": "Anticipation",
-   "sim": 0.020088652135751266,
-   "ev_before": 0.01993235251920732,
-   "ev_after": 0.01993235251920732,
+   "sim": 0.020332646363930097,
+   "ev_before": 0.01999728110002139,
+   "ev_after": 0.01999728110002139,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -225,7 +210,30 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
+   ]
+  },
+  {
+   "talent": "Conviction",
+   "sim": 0.0203177436340323,
+   "ev_before": 0.021330513420902295,
+   "ev_after": 0.021330513420902295,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "prot-tank",
+    "opt-prot-tank-raid-tank",
+    "cand-prot-tank-hand-2026-09-28",
+    "cand-prot-tank-r1",
+    "cand-prot-tank-r2",
+    "cand-prot-tank-r3",
+    "cand-prot-tank-r4",
+    "cand-prot-tank-r5",
+    "cand-prot-tank-r6",
+    "cand-prot-tank-r7",
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
@@ -243,9 +251,9 @@
   },
   {
    "talent": "Templar's Bulwark",
-   "sim": 0.018088832131004876,
-   "ev_before": 0.021337483955708867,
-   "ev_after": 0.021337483955708867,
+   "sim": 0.0186529788122933,
+   "ev_before": 0.02126238226207075,
+   "ev_after": 0.02126238226207075,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -254,14 +262,15 @@
     "cand-prot-tank-hand-2026-09-26",
     "cand-prot-tank-r2",
     "cand-prot-tank-r3",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Precision",
-   "sim": 0.016887017215639698,
-   "ev_before": 0.019306650001947492,
-   "ev_after": 0.019306650001947492,
+   "sim": 0.017288518625378273,
+   "ev_before": 0.019282273907185125,
+   "ev_after": 0.019282273907185125,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -276,14 +285,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Holy Conduit",
-   "sim": 0.015228170974386977,
-   "ev_before": 0.012639115353855984,
-   "ev_after": 0.012639115353855984,
+   "sim": 0.015871009524604497,
+   "ev_before": 0.012614296214151305,
+   "ev_after": 0.012614296214151305,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -295,14 +305,15 @@
     "cand-prot-tank-r3",
     "cand-prot-tank-r4",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Shield Specialization",
-   "sim": 0.012617937042882726,
-   "ev_before": 0.007413799988043085,
-   "ev_after": 0.007413799988043085,
+   "sim": 0.012128656463702533,
+   "ev_before": 0.006964725318688027,
+   "ev_after": 0.006964725318688027,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -312,14 +323,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "One-Handed Weapon Specialization",
-   "sim": 0.012117383273689632,
-   "ev_before": 0.015280963752770082,
-   "ev_after": 0.015280963752770082,
+   "sim": 0.012092667708405318,
+   "ev_before": 0.015268327810315207,
+   "ev_after": 0.015268327810315207,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -332,14 +344,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Sanctified Judgement",
-   "sim": 0.011152211022997892,
-   "ev_before": 0.013574691359794567,
-   "ev_after": 0.013574691359794567,
+   "sim": 0.011041418745391295,
+   "ev_before": 0.013550438784768389,
+   "ev_after": 0.013550438784768389,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -353,14 +366,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Sacred Arbiter",
-   "sim": 0.009286899496954083,
-   "ev_before": 0.012924795678604096,
-   "ev_after": 0.012924795678604096,
+   "sim": 0.00926828636837017,
+   "ev_before": 0.012898045670728003,
+   "ev_after": 0.012898045670728003,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -374,14 +388,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Swift Judgement",
-   "sim": 0.005368849855285978,
-   "ev_before": 0.009372451580920418,
-   "ev_after": 0.009372451580920418,
+   "sim": 0.005789678898510292,
+   "ev_before": 0.00936811073788518,
+   "ev_after": 0.00936811073788518,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -394,14 +409,28 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
+   ]
+  },
+  {
+   "talent": "Eye for an Eye",
+   "sim": 0.00546105762777874,
+   "ev_before": 5.654393073070013e-05,
+   "ev_after": 5.654393073070013e-05,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "prot-tank",
+    "opt-prot-tank-raid-tank",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Redoubt",
-   "sim": 0.005256744736479823,
-   "ev_before": 0.01609957903405199,
-   "ev_after": 0.01609957903405199,
+   "sim": 0.005310401921600142,
+   "ev_before": 0.016046724464732532,
+   "ev_after": 0.016046724464732532,
    "scale": 1.0,
    "how": "apl",
    "builds": [
@@ -411,7 +440,8 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
@@ -436,17 +466,6 @@
    "how": "noise",
    "builds": [
     "cand-prot-tank-hand-2026-09-26"
-   ]
-  },
-  {
-   "talent": "Eye for an Eye",
-   "sim": 0.003175433677351353,
-   "ev_before": 3.392672676071408e-05,
-   "ev_after": 3.392672676071408e-05,
-   "scale": 1.0,
-   "how": "noise",
-   "builds": [
-    "prot-tank"
    ]
   },
   {
@@ -475,9 +494,9 @@
   },
   {
    "talent": "Benediction",
-   "sim": 0.001275271633214421,
-   "ev_before": 4.726660662506598e-05,
-   "ev_after": 4.726660662506598e-05,
+   "sim": 0.0015326111718981282,
+   "ev_before": 4.173577582135344e-05,
+   "ev_after": 4.173577582135344e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -490,14 +509,15 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {
    "talent": "Improved Seal of Fury",
    "sim": 0.0,
-   "ev_before": 0.002107297187061715,
-   "ev_after": 0.002107297187061715,
+   "ev_before": 0.0021023729655713,
+   "ev_after": 0.0021023729655713,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -510,7 +530,8 @@
     "cand-prot-tank-r5",
     "cand-prot-tank-r6",
     "cand-prot-tank-r7",
-    "cand-prot-tank-r8"
+    "cand-prot-tank-r8",
+    "cand-prot-tank-r9"
    ]
   },
   {

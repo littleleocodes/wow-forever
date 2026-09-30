@@ -42,7 +42,7 @@ Dummy 591 → mana +5% → armor +0% → physical -1% → spell +10% → everyth
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-parse.md) (16/3/32) — [open the talent tree](https://talentsforever.com/mage/60/0520050030001-03-055500033100030025-4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-parse.md) (21/0/30) — [open the talent tree](https://talentsforever.com/mage/60/054005003000301--055500031100030025-4).
 
 ## Other builds of this spec
 

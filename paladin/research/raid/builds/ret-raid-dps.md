@@ -73,8 +73,8 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | *P4/P5 Ret* | community simulator | - | 528 | +0.0% | 990 | -0.3% | 4 s |
-| 2 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 523 | -0.9% | 975 | -1.7% | 2 s |
-| 3 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 17/0/34 | 520 | -1.5% | 990 | -0.3% | 15 s |
+| 2 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 19/0/32 | 527 | -0.1% | 988 | -0.5% | 4 s |
+| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 523 | -0.9% | 975 | -1.7% | 2 s |
 | 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 519 | -1.7% | 993 | +0.0% | 14 s |
 | 5 | *Retribution 9/0/42* | community simulator | - | 513 | -2.9% | 971 | -2.2% | 7 s |
 

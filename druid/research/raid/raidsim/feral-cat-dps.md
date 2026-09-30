@@ -4,10 +4,17 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-feral-cat-dps-raid-dps` | 9/35/7 | 366 | 14 | +0.0% | 266 | 0 | +108.2% |
+| `opt-feral-cat-dps-raid-dps` | 9/35/7 | 366 | 14 | +0.0% | 266 | 0 | +108.0% |
+| `cand-feral-cat-dps-r5` | 9/35/7 | 366 | 14 | +0.0% | 266 | 0 | +108.0% |
+| `cand-feral-cat-dps-r6` | 9/35/7 | 366 | 14 | +0.0% | 266 | 0 | +108.0% |
 | sim preset: Feral Cat 9/35/7 | - | 366 | 14 | +0.0% | 266 | 0 | - |
-| `feral-cat-dps` | 9/32/10 | 364 | 13 | -0.4% | 265 | 0 | +107.9% |
+| `feral-cat-dps` | 9/32/10 | 364 | 13 | -0.4% | 265 | 0 | +107.7% |
+| `cand-feral-cat-dps-r4` | 9/32/10 | 364 | 13 | -0.4% | 265 | 0 | +107.7% |
+| `cand-feral-cat-dps-r3` | 13/35/3 | 358 | 13 | -2.2% | 261 | 0 | +103.5% |
 | sim preset: Feral | - | 349 | 14 | -4.4% | 255 | 0 | - |
+| `cand-feral-cat-dps-hand-2026-09-26` | 9/32/10 | 341 | 15 | -6.8% | 249 | 0 | +93.8% |
+| `cand-feral-cat-dps-r2` | 9/32/10 | 317 | 15 | -13.4% | 231 | 0 | +77.7% |
+| `cand-feral-cat-dps-r1` | 9/31/11 | 308 | 15 | -15.8% | 225 | 0 | +72.6% |
 
 ## Damage shares (`opt-feral-cat-dps-raid-dps`, simulator actions)
 
@@ -25,7 +32,14 @@ Mapped onto the spec model's sources: `rip` 38%, `shred` 32%, `white` 30%; 3% of
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-feral-cat-dps-raid-dps: `050022-2500032123032213051-052`
+- cand-feral-cat-dps-r5: `050022-5510002023032213051-052`
+- cand-feral-cat-dps-r6: `050022-2500032123032213051-052`
 - sim preset: Feral Cat 9/35/7: `050022-5500002123032213051-052`
 - feral-cat-dps: `050022-2500032123032213021-055`
+- cand-feral-cat-dps-r4: `050022-5510002023032213021-055`
+- cand-feral-cat-dps-r3: `05302201-5510002023032213051-03`
 - sim preset: Feral: `-5521002023132213051-05503`
+- cand-feral-cat-dps-hand-2026-09-26: `050022-5520002023032210041-055`
+- cand-feral-cat-dps-r2: `050022-5510002020032213051-055`
+- cand-feral-cat-dps-r1: `050022-5510002020032213041-05303`
 

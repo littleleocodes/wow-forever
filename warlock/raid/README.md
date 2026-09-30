@@ -7,8 +7,8 @@
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
 | 1 | [Demonology](demonology.md) — Demonology — Demonic Pact | 679 | 824 | 644 | best |
-| 2 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 636 | 755 | 611 | -6% |
-| 3 | [Affliction](affliction.md) — Affliction — DoT / Drain Hope | 633 | 763 | 612 | -7% |
+| 2 | [Affliction](affliction.md) — Affliction (optimized) | 639 | 768 | 617 | -6% |
+| 3 | [Shadow Bolt hybrid](shadow-bolt-hybrid.md) — Shadow Bolt hybrid (optimized) | 639 | 759 | 613 | -6% |
 | 4 | [Destruction](destruction.md) — Destruction — Incinerate | 561 | 647 | 544 | -17% |
 
 🔬 = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). ⚗ = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the simulations' noise and assumptions: treat them as a tie.

@@ -4,9 +4,17 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `balance-moonkin-raid` | 33/5/13 | 534 | 30 | +0.0% | 544 | 3 | +128.1% |
-| `opt-balance-dps-raid-dps` | 33/5/13 | 534 | 30 | +0.0% | 544 | 3 | +128.1% |
+| `balance-moonkin-raid` | 33/5/13 | 534 | 30 | +0.0% | 544 | 3 | +127.2% |
+| `opt-balance-dps-raid-dps` | 33/5/13 | 534 | 30 | +0.0% | 544 | 3 | +127.2% |
+| `cand-balance-dps-r5` | 33/5/13 | 534 | 30 | +0.0% | 544 | 3 | +127.2% |
+| `cand-balance-dps-r1` | 33/2/16 | 528 | 30 | -1.2% | 432 | 4 | +123.8% |
+| `cand-balance-dps-r3` | 33/2/16 | 528 | 30 | -1.2% | 432 | 4 | +123.8% |
+| `cand-balance-dps-r2` | 33/2/16 | 520 | 30 | -2.7% | 426 | 4 | +121.1% |
+| `cand-balance-dps-r7` | 34/6/11 | 508 | 32 | -4.8% | 518 | 11 | +114.6% |
+| `cand-balance-dps-r4` | 33/5/13 | 501 | 29 | -6.2% | 511 | 8 | +110.7% |
 | sim preset: Balance | - | 483 | 28 | -9.5% | 348 | 1 | - |
+| `cand-balance-dps-hand-2026-09-26` | 46/0/5 | 455 | 31 | -14.8% | 465 | 21 | +93.5% |
+| `cand-balance-dps-r6` | 35/5/11 | 440 | 33 | -17.5% | 450 | 31 | +80.9% |
 | sim preset: Moonkin 38/0/13 | - | 434 | 32 | -18.7% | 444 | 30 | - |
 
 ## Damage shares (`balance-moonkin-raid`, simulator actions)
@@ -24,6 +32,14 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - balance-moonkin-raid: `0532220115501051-05-505003`
 - opt-balance-dps-raid-dps: `0532220115501051-05-505003`
+- cand-balance-dps-r5: `0532220115501051-05-505003`
+- cand-balance-dps-r1: `0532220115501051-02-50520300001`
+- cand-balance-dps-r3: `0532220115501051-02-05520300001`
+- cand-balance-dps-r2: `5032220115501051-02-50520300001`
+- cand-balance-dps-r7: `1532220115501051-15-505001`
+- cand-balance-dps-r4: `153222011550105-05-505003`
 - sim preset: Balance: `5532220115001351--505302`
+- cand-balance-dps-hand-2026-09-26: `5532223115521351--5`
+- cand-balance-dps-r6: `4512220115501051-05-505001`
 - sim preset: Moonkin 38/0/13: `5502220115501351--055003`
 

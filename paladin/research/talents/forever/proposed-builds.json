@@ -463,54 +463,6 @@
       "sources": ["https://warcraftforever.games/talents/paladin"]
     },
     {
-      "id": "opt-ret-dps-parse",
-      "name": "Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +82.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Holy": [
-          ["Divine Strength", 5],
-          ["Divine Intellect", 1],
-          ["Improved Seals", 3]
-        ],
-        "Protection": [
-          ["Toughness", 5],
-          ["Precision", 3]
-        ],
-        "Retribution": [
-          ["Benediction", 5],
-          ["Holy Conduit", 2],
-          ["Conviction", 5],
-          ["Improved Judgement", 2],
-          ["Seal of Command", 1],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1],
-          ["Vengeance", 3],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Champion of the Light", 3],
-          ["Instrument of Law", 2],
-          ["Twist of Light", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 22.7 points of score in this model."},
-        {"talent": "Seal of Command", "why": "Removing it costs 14.0 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 11.7 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 11.0 points of score in this model."},
-        {"talent": "Improved Seals", "why": "Removing it costs 8.7 points of score in this model."},
-        {"talent": "Precision", "why": "Removing it costs 5.8 points of score in this model."},
-        {"talent": "Holy Conduit", "why": "Removing it costs 4.8 points of score in this model."},
-        {"talent": "Improved Judgement", "why": "Removing it costs 4.6 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-parse.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
-    },
-    {
       "id": "holy-pvp",
       "name": "Holy — PvP (derived)",
       "role": "healer",
@@ -892,101 +844,6 @@
       ]
     },
     {
-      "id": "opt-prot-tank-raid-tank",
-      "name": "Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)",
-      "role": "tank",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Holy": [],
-        "Protection": [
-          ["Redoubt", 5],
-          ["Precision", 3],
-          ["Anticipation", 5],
-          ["Improved Seal of Fury", 1],
-          ["Improved Righteous Fury", 3],
-          ["Shield Specialization", 1],
-          ["Swift Judgement", 1],
-          ["One-Handed Weapon Specialization", 3],
-          ["Templar's Bulwark", 1]
-        ],
-        "Retribution": [
-          ["Deflection", 5],
-          ["Benediction", 1],
-          ["Holy Conduit", 2],
-          ["Conviction", 5],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1],
-          ["Eye for an Eye", 2],
-          ["Vengeance", 3],
-          ["Champion of the Light", 3]
-        ]
-      },
-      "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 8.6 points of score in this model."},
-        {"talent": "Deflection", "why": "Removing it costs 5.5 points of score in this model."},
-        {"talent": "Improved Righteous Fury", "why": "Removing it costs 5.0 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 4.7 points of score in this model."},
-        {"talent": "Vindication", "why": "Removing it costs 3.7 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Templar's Bulwark", "why": "Removing it costs 3.0 points of score in this model."},
-        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
-    },
-    {
-      "id": "opt-ret-dps-raid-dps",
-      "name": "Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)",
-      "role": "dps",
-      "content": "raid",
-      "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +91.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
-      "allocation": {
-        "Holy": [
-          ["Divine Strength", 5],
-          ["Divine Intellect", 4],
-          ["Improved Seals", 3],
-          ["Reverence", 3],
-          ["Illumination", 2]
-        ],
-        "Protection": [],
-        "Retribution": [
-          ["Benediction", 5],
-          ["Conviction", 5],
-          ["Improved Judgement", 2],
-          ["Holy Conduit", 2],
-          ["Seal of Command", 1],
-          ["Vindication", 3],
-          ["Sanctified Judgement", 3],
-          ["Sacred Arbiter", 1],
-          ["Vengeance", 3],
-          ["Two-Handed Weapon Specialization", 3],
-          ["Champion of the Light", 3],
-          ["Instrument of Law", 2],
-          ["Twist of Light", 1]
-        ]
-      },
-      "core": [
-        {"talent": "Champion of the Light", "why": "Removing it costs 24.3 points of score in this model."},
-        {"talent": "Holy Conduit", "why": "Removing it costs 24.1 points of score in this model."},
-        {"talent": "Seal of Command", "why": "Removing it costs 15.4 points of score in this model."},
-        {"talent": "Vengeance", "why": "Removing it costs 12.8 points of score in this model."},
-        {"talent": "Conviction", "why": "Removing it costs 12.4 points of score in this model."},
-        {"talent": "Twist of Light", "why": "Removing it costs 10.2 points of score in this model."},
-        {"talent": "Improved Seals", "why": "Removing it costs 9.2 points of score in this model."},
-        {"talent": "Sanctified Judgement", "why": "Removing it costs 7.8 points of score in this model."}
-      ],
-      "flex": [],
-      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-raid-dps.md"],
-      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/paladin"]
-    },
-    {
       "id": "opt-holy-heal-raid-heal",
       "name": "Optimizer — Raid healing: Flash of Light 55%, Holy Light 35%, Holy Shock 5% (talent/instant), Lay on Hands 5% (raid-heal)",
       "role": "healer",
@@ -1184,6 +1041,149 @@
       "notes": ["Fight-lab talent search (fightlab/fl_talent_opt.py): start derived-protection-scorer, moves: 3 points Toughness -> One-Handed Weapon Specialization; 1 point Sacred Arbiter -> Holy Conduit; 1 point Two-Handed Weapon Specialization -> Holy Shield; 3 points Anticipation -> Reckoning; 2 points Guardian's Favor -> Reckoning; 1 point Pursuit of Justice -> Sacred Arbiter. Race against derived-protection-scorer over levels 20-60 (seed 3, 3000 fights per level): +6.2% faster per kill.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["A derived Protection leveling build: check it while leveling at launch."],
       "sources": ["https://talentsforever.com/paladin"]
+    },
+    {
+      "id": "opt-ret-dps-raid-dps",
+      "name": "Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `raid-dps`: score +86.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Holy": [
+          ["Divine Intellect", 5],
+          ["Divine Strength", 4],
+          ["Improved Seals", 3],
+          ["Reverence", 3],
+          ["Illumination", 4]
+        ],
+        "Protection": [],
+        "Retribution": [
+          ["Benediction", 5],
+          ["Improved Judgement", 2],
+          ["Conviction", 5],
+          ["Holy Conduit", 2],
+          ["Seal of Command", 1],
+          ["Vindication", 1],
+          ["Sanctified Judgement", 3],
+          ["Sacred Arbiter", 1],
+          ["Vengeance", 3],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Champion of the Light", 3],
+          ["Instrument of Law", 2],
+          ["Twist of Light", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Holy Conduit", "why": "Removing it costs 25.9 points of score in this model."},
+        {"talent": "Champion of the Light", "why": "Removing it costs 25.3 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 12.5 points of score in this model."},
+        {"talent": "Seal of Command", "why": "Removing it costs 11.6 points of score in this model."},
+        {"talent": "Improved Seals", "why": "Removing it costs 9.9 points of score in this model."},
+        {"talent": "Twist of Light", "why": "Removing it costs 9.7 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 8.0 points of score in this model."},
+        {"talent": "Improved Judgement", "why": "Removing it costs 5.8 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-raid-dps.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/paladin"]
+    },
+    {
+      "id": "opt-ret-dps-parse",
+      "name": "Optimizer — Two-handed Retribution: white 45%, seal procs 25% (Seal of Command via talent, Seal of Righteousness otherwise), Judgements 15%, Consecration 8%, Holy Strike 7% (Forever baseline ability; absent in Classic) (parse)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps` and profile `parse`: score +70.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Holy": [
+          ["Divine Strength", 5],
+          ["Divine Intellect", 1],
+          ["Improved Seals", 3]
+        ],
+        "Protection": [
+          ["Toughness", 5],
+          ["Precision", 3]
+        ],
+        "Retribution": [
+          ["Benediction", 5],
+          ["Improved Judgement", 2],
+          ["Holy Conduit", 2],
+          ["Conviction", 5],
+          ["Sanctified Judgement", 3],
+          ["Vindication", 3],
+          ["Seal of Command", 1],
+          ["Sacred Arbiter", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Vengeance", 3],
+          ["Champion of the Light", 3],
+          ["Instrument of Law", 2],
+          ["Twist of Light", 1]
+        ]
+      },
+      "core": [
+        {"talent": "Champion of the Light", "why": "Removing it costs 22.3 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 11.0 points of score in this model."},
+        {"talent": "Seal of Command", "why": "Removing it costs 10.2 points of score in this model."},
+        {"talent": "Improved Seals", "why": "Removing it costs 8.7 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 6.9 points of score in this model."},
+        {"talent": "Improved Judgement", "why": "Removing it costs 5.1 points of score in this model."},
+        {"talent": "Holy Conduit", "why": "Removing it costs 4.8 points of score in this model."},
+        {"talent": "Sacred Arbiter", "why": "Removing it costs 4.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/ret-dps-parse.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/paladin"]
+    },
+    {
+      "id": "opt-prot-tank-raid-tank",
+      "name": "Optimizer — Shield tank: Consecration 25%, Holy Strike 20% (Forever; Classic uses Seal/Judgement of Righteousness instead), seal+judgement 15%, Retribution Aura 10%, white 20%, Holy Shield blocks via talent (raid-tank)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tank` and profile `raid-tank`: score +47.4% (tank score: 0.5 x threat gain + 0.5 x mitigation gain + 0.1 x mana gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Holy": [],
+        "Protection": [
+          ["Redoubt", 5],
+          ["Precision", 3],
+          ["Anticipation", 5],
+          ["Improved Seal of Fury", 1],
+          ["Improved Righteous Fury", 3],
+          ["Shield Specialization", 1],
+          ["Swift Judgement", 1],
+          ["One-Handed Weapon Specialization", 3],
+          ["Templar's Bulwark", 1]
+        ],
+        "Retribution": [
+          ["Deflection", 5],
+          ["Benediction", 1],
+          ["Holy Conduit", 2],
+          ["Conviction", 5],
+          ["Vindication", 3],
+          ["Sanctified Judgement", 3],
+          ["Sacred Arbiter", 1],
+          ["Eye for an Eye", 2],
+          ["Vengeance", 3],
+          ["Champion of the Light", 3]
+        ]
+      },
+      "core": [
+        {"talent": "Champion of the Light", "why": "Removing it costs 8.6 points of score in this model."},
+        {"talent": "Deflection", "why": "Removing it costs 5.5 points of score in this model."},
+        {"talent": "Improved Righteous Fury", "why": "Removing it costs 5.0 points of score in this model."},
+        {"talent": "Vengeance", "why": "Removing it costs 4.7 points of score in this model."},
+        {"talent": "Vindication", "why": "Removing it costs 3.7 points of score in this model."},
+        {"talent": "Conviction", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Templar's Bulwark", "why": "Removing it costs 3.0 points of score in this model."},
+        {"talent": "Anticipation", "why": "Removing it costs 3.0 points of score in this model."}
+      ],
+      "flex": [],
+      "notes": ["Report: paladin/research/talents/forever/optimizer/prot-tank-raid-tank.md"],
+      "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
+      "sources": ["https://warcraftforever.games/talents/paladin"]
     }
   ]
 }

@@ -9,15 +9,15 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Insect Swarm | Balance | 4 | +11.32% | manual |
+| Insect Swarm | Balance | 4 | +11.24% | manual |
 | Moonkin Form | Balance | 7 | +4.25% | manual |
 | Moonglow | Balance | 2 | +3.56% | manual |
 | Nature's Reach | Balance | 2 | +2.44% | manual |
 | Moonfury | Balance | 6 | +2.00% | manual |
-| Nature's Splendor | Balance | 3 | +1.80% | manual |
+| Nature's Splendor | Balance | 3 | +1.75% | manual |
 | Vengeance | Balance | 4 | +1.73% | manual |
-| Improved Moonfire | Balance | 2 | +1.37% | manual |
-| Improved Starfire | Balance | 4 | +1.13% | manual |
+| Improved Starfire | Balance | 4 | +1.54% | manual |
+| Improved Moonfire | Balance | 2 | +1.32% | manual |
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Nature's Grace | Balance | 5 | +0.97% | manual |
 | Nature's Majesty | Balance | 2 | +0.92% | manual |
@@ -40,8 +40,8 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Ferocity | Feral Combat | 1 | +0.00% | manual |
 | Feral Swiftness | Feral Combat | 2 | +0.00% | manual |
 
-## Optimized build: 33/5/13  score +93.48%  (dps x1.794, sustain x1.702, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 0.881  — use this to compare models with different pet shares.
+## Optimized build: 33/5/13  score +96.14%  (dps x1.821, sustain x1.702, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 0.894  — use this to compare models with different pet shares.
 
 ```
   Balance: Genesis 5, Moonglow 3, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Nature's Splendor 1, Insect Swarm 1, Vengeance 5, Improved Starfire 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
@@ -53,7 +53,7 @@ Absolute DPS index (character alone, no talents = 1.00): 0.881  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Nature's Swiftness | Restoration 5 | 1/1 | +0.90% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +0.91% | no |
 | Living Spirit | Restoration 5 | 1/3 | +0.40% | no |
 | Improved Wrath | Balance 1 | 1/5 | +0.02% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.01% | yes |

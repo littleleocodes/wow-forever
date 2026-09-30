@@ -42,35 +42,35 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### *P4/P5 Ret* (community simulator, 528 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 523 DPS), [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 520 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 519 DPS), *Retribution 9/0/42* (community simulator, 513 DPS)
+### *P4/P5 Ret* (community simulator, 528 DPS), [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) (ours: optimizer, 527 DPS), [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) (ours: hand draft, 523 DPS), [`ret-raid-dps`](builds/ret-raid-dps.md) (ours: hand draft, 519 DPS), *Retribution 9/0/42* (community simulator, 513 DPS)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
-| # | Priority (the first line whose condition holds is cast) | *P4/P5 Ret* casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min | *Retribution 9/0/42* casts/min |
+| # | Priority (the first line whose condition holds is cast) | *P4/P5 Ret* casts/min | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) casts/min | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) casts/min | [`ret-raid-dps`](builds/ret-raid-dps.md) casts/min | *Retribution 9/0/42* casts/min |
 |---|---|---|---|---|---|---|
-| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 3.5 | 3.0 | 3.3 | 3.0 | 3.3 |
+| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 3.5 | 3.3 | 3.0 | 3.0 | 3.3 |
 | 2 | use every other cooldown when ready | as ready | as ready | as ready | as ready | as ready |
 | 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 3.7 | 3.3 | 3.3 | 3.0 | 3.3 |
 | 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 3.7 | 3.3 | 3.3 | 3.0 | 3.3 |
-| 5 | cast Hammer of Wrath | 1.1 | 1.0 | 1.2 | 1.3 | 1.0 |
+| 5 | cast Hammer of Wrath | 1.1 | 1.2 | 1.0 | 1.3 | 1.0 |
 | 6 | cast Holy Strike | 6.0 | 6.0 | 6.0 | 6.0 | 6.0 |
-| 7 | cast Consecration | 6.3 | 6.0 | 6.1 | 6.3 | 5.7 |
-| 8 | cast Consecration | 0.4 | 1.0 | 0.5 | 0.3 | 1.0 |
+| 7 | cast Consecration | 6.3 | 6.1 | 6.0 | 6.3 | 5.7 |
+| 8 | cast Consecration | 0.4 | 0.9 | 1.0 | 0.3 | 1.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
 
 Damage by ability:
 
-| Ability | *P4/P5 Ret* | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | [`ret-raid-dps`](builds/ret-raid-dps.md) | *Retribution 9/0/42* |
+| Ability | *P4/P5 Ret* | [`opt-ret-dps-raid-dps`](builds/opt-ret-dps-raid-dps.md) | [`ret-full-buffs-raid`](builds/ret-full-buffs-raid.md) | [`ret-raid-dps`](builds/ret-raid-dps.md) | *Retribution 9/0/42* |
 |---|---|---|---|---|---|
-| Consecration | 19% | 20% | 19% | 20% | 19% |
-| Auto Attack | 17% | 17% | 18% | 18% | 18% |
-| Judgement of Righteousness | 18% | 18% | 15% | 16% | 17% |
-| Seal of Righteousness | 16% | 16% | 17% | 17% | 16% |
-| Holy Strike | 15% | 15% | 16% | 16% | 16% |
-| Seal of Command | 5% | 5% | 4% | 4% | 5% |
-| Hammer of Wrath | 4% | 3% | 4% | 4% | 3% |
-| Judgement of Command | 3% | 3% | 4% | 3% | 3% |
+| Consecration | 19% | 19% | 20% | 20% | 19% |
+| Auto Attack | 17% | 17% | 17% | 18% | 18% |
+| Judgement of Righteousness | 18% | 16% | 18% | 16% | 17% |
+| Seal of Righteousness | 16% | 17% | 16% | 17% | 16% |
+| Holy Strike | 15% | 15% | 15% | 16% | 16% |
+| Seal of Command | 5% | 4% | 5% | 4% | 5% |
+| Hammer of Wrath | 4% | 4% | 3% | 4% | 3% |
+| Judgement of Command | 3% | 4% | 3% | 3% | 3% |
 | Dragonbreath Chili | 3% | 3% | 3% | 3% | 3% |
 
 ## prot-tank (tank)

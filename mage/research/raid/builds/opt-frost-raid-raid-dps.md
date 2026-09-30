@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +79.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `raid-dps`: score +75.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -49,14 +49,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 ## Core talents (priority order)
 
-1. **Improved Frostbolt** — Removing it costs 23.0 points of score in this model.
-2. **Ice Shards** — Removing it costs 20.8 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 19.7 points of score in this model.
-4. **Ice Lance** — Removing it costs 13.0 points of score in this model.
-5. **Winter's Chill** — Removing it costs 11.7 points of score in this model.
-6. **Shatter** — Removing it costs 11.2 points of score in this model.
-7. **Piercing Ice** — Removing it costs 8.9 points of score in this model.
-8. **Elemental Precision** — Removing it costs 8.9 points of score in this model.
+1. **Improved Frostbolt** — Removing it costs 22.3 points of score in this model.
+2. **Ice Shards** — Removing it costs 20.1 points of score in this model.
+3. **Fingers of Frost** — Removing it costs 19.5 points of score in this model.
+4. **Ice Lance** — Removing it costs 12.3 points of score in this model.
+5. **Winter's Chill** — Removing it costs 11.4 points of score in this model.
+6. **Shatter** — Removing it costs 11.1 points of score in this model.
+7. **Piercing Ice** — Removing it costs 8.7 points of score in this model.
+8. **Elemental Precision** — Removing it costs 8.6 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -101,7 +101,7 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-frost-raid-r1 on 2026-09-29: the optimizer's earlier round beat its last export in the community simulator (582 vs 555 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-frost-raid-r1 on 2026-09-30: the optimizer's earlier round beat its last export in the community simulator (637 vs 607 DPS; the calibration moved the model past the better build).
 - Report: mage/research/talents/forever/optimizer/frost-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

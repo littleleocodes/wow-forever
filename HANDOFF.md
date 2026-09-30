@@ -85,8 +85,10 @@ Each class folder now opens with player pages and keeps the research below:
 - **Equal-tier raid gear** (2026-09-30, after the derivation): `raidsim/gear_opt.py` (see CLAUDE.md). The simulator's presets were
   not one tier; with one common phase-1 + Forever-launch pool every damage spec was re-geared and re-raced. Warriors +71-76%
   (their "p1" presets held caster and tank items), Retribution +51%, Shadow +31%, casters +13-22%, the rest 0-5%. Top of the dummy
-  ranking now: Demonology 679, Frost/Arcane hybrid 640, Affliction 633, Shadow 632, the mages ~590. Open: re-run the raid talent
-  searches in the new gear (`rebuild.py --steps raid,adopt`, `derive_raid.py --fresh`); tank sets were not changed.
+  ranking now: Demonology 679, Frost/Arcane hybrid 640, Affliction 633, Shadow 632, the mages ~590. Raid talents re-searched in the
+  new gear (same day: `rebuild.py --steps raid,adopt` for every class, then `derive_raid.py --fresh`): no build beat a hand draft by
+  2% (largest +1.6%). The pages now apply the 2% rule themselves (`render_modes.DERIVED_BAR`): a derived build leads its slot only
+  while it is 2%+ ahead of the best other build. Tank sets were not changed.
 
 ## Where things stand (2026-09-28)
 

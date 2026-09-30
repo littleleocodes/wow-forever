@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +58.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `raid-dps`: score +60.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -22,11 +22,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
+| **Malediction** | 2/5 | **NEW** | Increases all periodic damage done by your Warlock spells by 2%. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
 | **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
-| **Nightfall** | 2/2 | changed | Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 4% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%. |
 | **Shadow Mastery** | 5/5 | changed | Increases the damage dealt or life drained by your Shadow spells by 5%. |
 
 ### Demonology (0)
@@ -39,36 +39,36 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 |---|---|---|---|
 | **Bane** | 5/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec. |
 | **Improved Shadow Bolt** | 5/5 | changed | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for 12 sec. |
-| **Aftermath** | 3/5 | changed | Increases the initial damage of your Immolate spell by 30% and your Conflagrate spell has a 60% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec. |
+| **Cataclysm** | 3/3 | changed | Reduces the Mana cost of your Destruction spells by 10%. |
 | **Ruin** | 5/5 | changed | Increases the critical strike damage bonus of your Destruction spells by 100%. |
 | **Agonizing Flames** | 3/3 | **NEW** | Increases the critical strike chance of your Searing Pain spell by 10% and the damage done by all your Destruction spells by 10%. |
 
 ## Core talents (priority order)
 
-1. **Bane** — Removing it costs 13.8 points of score in this model.
-2. **Agonizing Flames** — Removing it costs 9.1 points of score in this model.
-3. **Suppression** — Removing it costs 6.9 points of score in this model.
-4. **Malevolence** — Removing it costs 6.6 points of score in this model.
-5. **Shadow Mastery** — Removing it costs 6.4 points of score in this model.
-6. **Improved Shadow Bolt** — Removing it costs 6.2 points of score in this model.
-7. **Improved Corruption** — Removing it costs 6.0 points of score in this model.
-8. **Ruin** — Removing it costs 6.0 points of score in this model.
+1. **Bane** — Removing it costs 14.0 points of score in this model.
+2. **Agonizing Flames** — Removing it costs 9.3 points of score in this model.
+3. **Improved Shadow Bolt** — Removing it costs 8.1 points of score in this model.
+4. **Suppression** — Removing it costs 7.0 points of score in this model.
+5. **Malevolence** — Removing it costs 6.8 points of score in this model.
+6. **Shadow Mastery** — Removing it costs 6.5 points of score in this model.
+7. **Improved Corruption** — Removing it costs 6.2 points of score in this model.
+8. **Ruin** — Removing it costs 6.1 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**2 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 9** for `affliction-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 633 | +0.0% | 763 | +0.0% | 3 s |
-| 2 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 633 | +0.0% | 763 | +0.0% | 3 s |
-| 3 | *Demonic Pact 2/31/18* | community simulator | - | 592 | -6.5% | 714 | -6.5% | 1 s |
-| 4 | *Demonic Pact* | community simulator | - | 586 | -7.4% | 704 | -7.7% | 0 s |
-| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 573 | -9.5% | 689 | -9.8% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 568 | -10.3% | 676 | -11.4% | 3 s |
-| 7 | *DS/Ruin* | community simulator | - | 564 | -10.9% | 683 | -10.6% | 1 s |
-| 8 | *Affliction* | community simulator | - | 561 | -11.4% | 668 | -12.4% | 2 s |
-| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 547 | -13.6% | 657 | -13.9% | 1 s |
+| 1 | **[`opt-affliction-raid-raid-dps`](opt-affliction-raid-raid-dps.md)** | ours: optimizer | 30/0/21 | 639 | +0.0% | 768 | +0.0% | 2 s |
+| 2 | [`affliction-dot-raid`](affliction-dot-raid.md) | ours: hand draft | 30/0/21 | 633 | -1.0% | 763 | -0.6% | 3 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 592 | -7.5% | 714 | -7.0% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 586 | -8.3% | 704 | -8.3% | 0 s |
+| 5 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 573 | -10.4% | 689 | -10.3% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 568 | -11.2% | 676 | -11.9% | 3 s |
+| 7 | *DS/Ruin* | community simulator | - | 564 | -11.8% | 683 | -11.1% | 1 s |
+| 8 | *Affliction* | community simulator | - | 561 | -12.2% | 668 | -12.9% | 2 s |
+| 9 | *Shadow and Flame 13/11/27* | community simulator | - | 547 | -14.5% | 657 | -14.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -88,13 +88,13 @@ Before the pull: at -5s: cast Amplify Curse.
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 55%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.5 |
-| 6 | if mana % < 10%: cast Life Tap | 6.7 |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.6 |
+| 6 | if mana % < 10%: cast Life Tap | 5.9 |
 | 7 | cast Amplify Curse | 0.5 |
-| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.6 |
-| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
-| 11 | cast Shadow Bolt | 14.1 |
+| 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
+| 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.4 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
+| 11 | cast Shadow Bolt | 14.2 |
 
 Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Siphon Life (needs the Siphon Life talent).
 
@@ -105,7 +105,7 @@ Damage by ability:
 | Shadow Bolt | 47% |
 | Bane of Agony | 18% |
 | Corruption | 17% |
-| Immolate | 12% |
+| Immolate | 11% |
 | Pet: Auto Attack | 5% |
 | Searing Pain | 1% |
 | Pet: Lash of Pain | 1% |

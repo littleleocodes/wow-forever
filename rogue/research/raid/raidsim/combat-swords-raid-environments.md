@@ -6,8 +6,8 @@
 |---|---|---|---|---|---|---|
 | `combat-swords-raid` | 19/32/0 | 394 | 463 | 687 | 687 | 782 |
 | sim preset: Improved Expose Armor (SS) | - | 394 | 463 | 687 | 687 | 782 |
-| `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
-| `opt-combat-swords-raid-parse` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
+| `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 443 | 682 | 682 | 767 |
+| `opt-combat-swords-raid-parse` | 20/31/0 | 376 | 443 | 682 | 682 | 767 |
 | sim preset: Sinister Strike | - | 371 | 438 | 696 | 696 | 794 |
 | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | 431 | 682 | 682 | 773 |
 | sim preset: Assassination Mutilate 31/20/0 | - | 340 | 406 | 618 | 618 | 662 |
@@ -29,8 +29,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 |---|---|---|---|---|---|---|---|
 | `combat-swords-raid` | 394 | -0% | +15% | +39% | +1% | +20% | 687 |
 | sim preset: Improved Expose Armor (SS) | 394 | -0% | +15% | +39% | +1% | +20% | 687 |
-| `opt-combat-swords-raid-raid-dps` | 376 | +0% | +18% | +39% | +2% | +27% | 696 |
-| `opt-combat-swords-raid-parse` | 376 | +0% | +18% | +39% | +2% | +27% | 696 |
+| `opt-combat-swords-raid-raid-dps` | 376 | +0% | +18% | +39% | +2% | +22% | 682 |
+| `opt-combat-swords-raid-parse` | 376 | +0% | +18% | +39% | +2% | +22% | 682 |
 | sim preset: Sinister Strike | 371 | +0% | +19% | +40% | +1% | +28% | 696 |
 | sim preset: Combat Dual-Wield 15/33/3 | 365 | +0% | +19% | +40% | +1% | +27% | 682 |
 | sim preset: Assassination Mutilate 31/20/0 | 340 | +0% | +18% | +39% | +2% | +23% | 618 |
@@ -48,8 +48,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 |---|---|---|---|---|---|
 | `combat-swords-raid` | 444 | 406 | 394 | 387 | 394 |
 | sim preset: Improved Expose Armor (SS) | 444 | 406 | 394 | 387 | 394 |
-| `opt-combat-swords-raid-raid-dps` | 423 | 386 | 376 | 369 | 376 |
-| `opt-combat-swords-raid-parse` | 423 | 386 | 376 | 369 | 376 |
+| `opt-combat-swords-raid-raid-dps` | 419 | 386 | 376 | 370 | 377 |
+| `opt-combat-swords-raid-parse` | 419 | 386 | 376 | 370 | 377 |
 | sim preset: Sinister Strike | 422 | 383 | 371 | 365 | 372 |
 | sim preset: Combat Dual-Wield 15/33/3 | 410 | 376 | 365 | 358 | 366 |
 | sim preset: Assassination Mutilate 31/20/0 | 361 | 345 | 340 | 339 | 341 |

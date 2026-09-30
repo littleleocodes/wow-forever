@@ -4,35 +4,51 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `fire-raid` | 12/34/5 | 593 | 43 | +0.0% | 514 | 2 | +210.6% |
-| `opt-fire-raid-raid-dps` | 14/32/5 | 593 | 43 | +0.0% | 617 | 2 | +210.6% |
-| sim preset: Fire DPS | - | 576 | 45 | -3.0% | 601 | 0 | - |
-| sim preset: Fire 0/35/16 | - | 559 | 40 | -5.9% | 487 | 5 | - |
-| sim preset: Arcane DPS | - | 442 | 33 | -25.6% | 347 | 0 | - |
-| sim preset: Arcane 35/0/16 | - | 318 | 12 | -46.4% | 330 | 3 | - |
-| sim preset: Frost DPS | - | 299 | 11 | -49.6% | 310 | 1 | - |
+| `cand-fire-raid-r5` | 14/32/5 | 594 | 43 | +0.0% | 621 | 2 | +215.1% |
+| `cand-fire-raid-r1` | 14/32/5 | 594 | 43 | -0.0% | 618 | 2 | +215.1% |
+| `cand-fire-raid-r4` | 14/32/5 | 594 | 43 | -0.0% | 621 | 2 | +215.1% |
+| `cand-fire-raid-r2` | 11/35/5 | 594 | 43 | -0.0% | 465 | 2 | +215.1% |
+| `fire-raid` | 12/34/5 | 593 | 43 | -0.1% | 514 | 2 | +215.1% |
+| `opt-fire-raid-raid-dps` | 14/32/5 | 593 | 43 | -0.1% | 617 | 2 | +215.1% |
+| `cand-fire-raid-r6` | 13/33/5 | 593 | 43 | -0.1% | 620 | 2 | +215.1% |
+| `cand-fire-raid-r7` | 14/32/5 | 593 | 43 | -0.1% | 617 | 2 | +215.1% |
+| `cand-fire-raid-hand-2026-09-28` | 12/34/5 | 577 | 43 | -2.9% | 450 | 2 | +207.4% |
+| sim preset: Fire DPS | - | 576 | 45 | -3.2% | 601 | 0 | - |
+| sim preset: Fire 0/35/16 | - | 559 | 40 | -6.0% | 487 | 5 | - |
+| `cand-fire-raid-r3` | 0/33/18 | 544 | 40 | -8.5% | 426 | 7 | +192.3% |
+| sim preset: Arcane DPS | - | 442 | 33 | -25.7% | 347 | 0 | - |
+| sim preset: Arcane 35/0/16 | - | 318 | 12 | -46.5% | 330 | 3 | - |
+| sim preset: Frost DPS | - | 299 | 11 | -49.7% | 310 | 1 | - |
 | sim preset: Frost 14/0/37 | - | 295 | 10 | -50.4% | 306 | 0 | - |
 
-## Damage shares (`fire-raid`, simulator actions)
+## Damage shares (`cand-fire-raid-r5`, simulator actions)
 
 | Action | Share |
 |---|---|
 | Fireball | 44.6% |
-| Fire Blast | 20.1% |
+| Fire Blast | 20.0% |
 | Ignite | 11.6% |
 | Scorch | 11.2% |
 | Pyroblast | 10.8% |
-| Arcane Missiles | 1.6% |
+| Arcane Missiles | 1.7% |
 
 Mapped onto the spec model's sources: `fireball` 45%, `fire_blast` 20%, `ignite` 12%, `scorch` 11%, `pyroblast` 11%, `missiles` 2%; 0% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- cand-fire-raid-r5: `250025-23550000130133051-005`
+- cand-fire-raid-r1: `24020501-23550000130133051-005`
+- cand-fire-raid-r4: `24002501-23550000130133051-005`
+- cand-fire-raid-r2: `230105-23550030130133051-005`
 - fire-raid: `005205-23550020130133051-005`
 - opt-fire-raid-raid-dps: `005225-23550000130133051-005`
+- cand-fire-raid-r6: `105025-23551000130133051-005`
+- cand-fire-raid-r7: `005225-23550000130133051-005`
+- cand-fire-raid-hand-2026-09-28: `230205-20552030130133051-005`
 - sim preset: Fire DPS: `0502252000003-23550000130133051-`
 - sim preset: Fire 0/35/16: `-03552020130133151-005500033`
+- cand-fire-raid-r3: `-21550030130133051-00543000300003`
 - sim preset: Arcane DPS: `050215003100311531-2305003202003-`
 - sim preset: Arcane 35/0/16: `055005023100311531--005500033`
 - sim preset: Frost DPS: `0502050030003--055500033100030024`

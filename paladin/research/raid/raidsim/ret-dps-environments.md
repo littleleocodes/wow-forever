@@ -5,8 +5,8 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | sim preset: P4/P5 Ret | - | 528 | 590 | 990 | 990 | 997 |
+| `opt-ret-dps-raid-dps` | 19/0/32 | 527 | 584 | 988 | 988 | 994 |
 | `ret-full-buffs-raid` | 10/8/33 | 523 | 573 | 975 | 975 | 994 |
-| `opt-ret-dps-raid-dps` | 17/0/34 | 520 | 585 | 990 | 990 | 996 |
 | `ret-raid-dps` | 17/0/34 | 519 | 587 | 993 | 993 | 999 |
 | `opt-ret-dps-parse` | 9/8/34 | 516 | 572 | 974 | 974 | 994 |
 | sim preset: Retribution 9/0/42 | - | 513 | 572 | 971 | 971 | 991 |
@@ -24,8 +24,8 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | sim preset: P4/P5 Ret | 528 | +4% | +8% | +33% | +25% | +18% | 990 |
+| `opt-ret-dps-raid-dps` | 527 | +4% | +8% | +32% | +25% | +18% | 988 |
 | `ret-full-buffs-raid` | 523 | +5% | +8% | +33% | +25% | +15% | 975 |
-| `opt-ret-dps-raid-dps` | 520 | +6% | +8% | +33% | +25% | +18% | 990 |
 | `ret-raid-dps` | 519 | +6% | +8% | +33% | +25% | +18% | 993 |
 | `opt-ret-dps-parse` | 516 | +6% | +9% | +33% | +25% | +15% | 974 |
 | sim preset: Retribution 9/0/42 | 513 | +6% | +9% | +34% | +25% | +16% | 971 |
@@ -39,8 +39,8 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | sim preset: P4/P5 Ret | 521 | 524 | 522 | 503 | 477 |
+| `opt-ret-dps-raid-dps` | 517 | 522 | 516 | 515 | 493 |
 | `ret-full-buffs-raid` | 520 | 517 | 510 | 491 | 461 |
-| `opt-ret-dps-raid-dps` | 517 | 522 | 516 | 515 | 490 |
 | `ret-raid-dps` | 518 | 518 | 518 | 513 | 493 |
 | `opt-ret-dps-parse` | 519 | 517 | 509 | 498 | 471 |
 | sim preset: Retribution 9/0/42 | 516 | 513 | 505 | 494 | 468 |

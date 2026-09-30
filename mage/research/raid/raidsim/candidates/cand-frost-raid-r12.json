@@ -1,5 +1,5 @@
 {
- "id": "cand-frost-raid-preset-frost-dps",
+ "id": "cand-frost-raid-r12",
  "allocation": {
   "Arcane": [
    [
@@ -7,7 +7,7 @@
     5
    ],
    [
-    "Arcane Subtlety",
+    "Improved Channeling",
     2
    ],
    [
@@ -21,6 +21,12 @@
    [
     "Arcane Meditation",
     3
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    1
    ]
   ],
   "Frost": [
@@ -41,12 +47,12 @@
     3
    ],
    [
-    "Frost Channeling",
-    3
-   ],
-   [
     "Ice Lance",
     1
+   ],
+   [
+    "Frost Channeling",
+    3
    ],
    [
     "Shatter",
@@ -58,11 +64,9 @@
    ],
    [
     "Winter's Chill",
-    4
+    5
    ]
   ]
  },
- "preset": "Frost DPS",
- "talents": "0502050030003--055500033100030024",
- "note": "The community simulator's preset 'Frost DPS' (mage/dps/presets.ts), a raid candidate since it ran within 6% of the best build of frost-raid (555.8 vs 565.5 in the race of 2026-09-27)."
+ "note": "Optimizer raid build saved by rebuild.py on 2026-09-30 (raid calibration round 1)"
 }

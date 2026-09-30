@@ -75,11 +75,11 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 311 | +0.0% | 662 | -0.5% | 0 s |
-| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 311 | +0.0% | 665 | +0.0% | 0 s |
-| 3 | *DPS* | community simulator | - | 292 | -6.1% | 630 | -5.3% | 0 s |
-| 4 | *Fury 17/34/0* | community simulator | - | 281 | -9.5% | 601 | -9.7% | 0 s |
-| 5 | *Arms 39/12/0* | community simulator | - | 268 | -13.8% | 586 | -11.9% | 0 s |
+| 1 | **[`arms-2h-raid`](arms-2h-raid.md)** | ours: hand draft | 19/32/0 | 311 | +0.0% | 662 | +0.0% | 0 s |
+| 2 | [`opt-arms-2h-raid-raid-dps`](opt-arms-2h-raid-raid-dps.md) | ours: optimizer | 19/32/0 | 310 | -0.2% | 661 | -0.2% | 0 s |
+| 3 | *DPS* | community simulator | - | 292 | -6.1% | 630 | -4.9% | 0 s |
+| 4 | *Fury 17/34/0* | community simulator | - | 281 | -9.5% | 601 | -9.2% | 0 s |
+| 5 | *Arms 39/12/0* | community simulator | - | 268 | -13.8% | 586 | -11.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

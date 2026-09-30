@@ -1,21 +1,21 @@
-# Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse) — 29/22/0
+# Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (parse) — 31/7/13
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 29/22/0 (Elemental / Enhancement / Restoration) |
+| **Build** | 31/7/13 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +69.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `elemental-dps` and profile `parse`: score +71.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Elemental (29)
+### Elemental (31)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -28,34 +28,34 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `elementa
 | **Eye of the Storm** | 3/3 | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 70%. |
 | **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 | **Elemental Reach** | 1/2 | **NEW** | Increases the range of your Lightning Bolt, Chain Lightning, Fire Nova, and Lava Burst spells by 3 yards, and increases the range of your Flame Shock spell by 8 yards. |
-| **Elemental Fury** | 4/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 80%. |
+| **Elemental Fury** | 5/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 100%. |
+| **Lava Burst** | 1/1 | **NEW** | You hurl molten lava at the target, dealing 150 to 192 Fire damage. If your Flame Shock is on the target, Lava Burst deals 20% increased damage. |
 
-### Enhancement (22)
+### Enhancement (7)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Thundering Strikes** | 5/5 | changed | Improves your chance to get a critical strike with all spells and attacks by 5%. |
-| **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
-| **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
-| **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
-| **Anticipation** | 2/3 | changed | Increases your chance to dodge by an additional 4%. |
-| **Toughness** | 5/5 | changed | Increases your Stamina by 10%. |
-| **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
+| **Ancestral Knowledge** | 2/5 | changed | Increases your Intellect by 4%. |
 
-### Restoration (0)
+### Restoration (13)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
+| **Mindfulness** | 3/3 | **NEW** | Allows 50% of your Mana regeneration to continue while casting. |
+| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 
 ## Core talents (priority order)
 
-1. **Elemental Alacrity** — Removing it costs 28.9 points of score in this model.
-2. **Mental Quickness** — Removing it costs 14.2 points of score in this model.
-3. **Elemental Fury** — Removing it costs 13.6 points of score in this model.
+1. **Elemental Alacrity** — Removing it costs 29.1 points of score in this model.
+2. **Elemental Fury** — Removing it costs 16.8 points of score in this model.
+3. **Tidal Focus** — Removing it costs 8.9 points of score in this model.
 4. **Concussion** — Removing it costs 6.7 points of score in this model.
-5. **Thundering Strikes** — Removing it costs 6.1 points of score in this model.
-6. **Call of Flame** — Removing it costs 5.9 points of score in this model.
+5. **Thundering Strikes** — Removing it costs 6.7 points of score in this model.
+6. **Call of Flame** — Removing it costs 6.0 points of score in this model.
 7. **Lightning Overload** — Removing it costs 4.8 points of score in this model.
-8. **Call of Thunder** — Removing it costs 3.0 points of score in this model.
+8. **Lava Burst** — Removing it costs 4.4 points of score in this model.
 
 ## Rotation
 

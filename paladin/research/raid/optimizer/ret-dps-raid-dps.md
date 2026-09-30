@@ -9,22 +9,21 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Seal of Command | Retribution | 3 | +8.62% | manual |
-| Champion of the Light | Retribution | 6 | +4.53% | manual |
+| Seal of Command | Retribution | 3 | +6.56% | manual |
+| Champion of the Light | Retribution | 6 | +4.95% | manual |
+| Swift Judgement | Protection | 4 | +2.42% | manual |
 | Vengeance | Retribution | 5 | +2.40% | manual |
-| Sacred Arbiter | Retribution | 4 | +2.01% | manual |
-| Swift Judgement | Protection | 4 | +2.01% | manual |
-| Divine Precision | Holy | 5 | +1.61% | manual |
-| Improved Seals | Holy | 2 | +1.47% | manual |
-| Conviction | Retribution | 2 | +1.47% | manual |
-| Precision | Protection | 2 | +1.14% | manual |
-| Improved Judgement | Retribution | 2 | +1.08% | manual |
-| Instrument of Law | Retribution | 6 | +1.01% | manual |
+| Sacred Arbiter | Retribution | 4 | +2.26% | manual |
+| Divine Precision | Holy | 5 | +1.76% | manual |
+| Improved Seals | Holy | 2 | +1.67% | manual |
+| Improved Judgement | Retribution | 2 | +1.31% | manual |
+| Instrument of Law | Retribution | 6 | +1.11% | manual |
+| Conviction | Retribution | 2 | +0.96% | manual |
 | Two-Handed Weapon Specialization | Retribution | 5 | +0.64% | manual |
-| Holy Power | Holy | 6 | +0.50% | manual |
-| Divine Strength | Holy | 1 | +0.38% | manual |
-| Vindication | Retribution | 3 | +0.34% | manual |
-| Twist of Light | Retribution | 7 | +0.12% | manual |
+| Holy Power | Holy | 6 | +0.55% | manual |
+| Precision | Protection | 2 | +0.24% | manual |
+| Vindication | Retribution | 3 | +0.11% | manual |
+| Divine Strength | Holy | 1 | +0.11% | manual |
 | Divine Intellect | Holy | 1 | +0.02% | manual |
 | Templar's Bulwark | Protection | 5 | +0.01% | manual |
 | Voice of Truth | Holy | 3 | +0.01% | manual |
@@ -39,24 +38,26 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Benediction | Retribution | 1 | +0.00% | manual |
 | Holy Conduit | Retribution | 2 | +0.00% | manual |
 | Sanctified Judgement | Retribution | 3 | +0.00% | manual |
+| Twist of Light | Retribution | 7 | +0.00% | manual |
 
-## Optimized build: 17/0/34  score +91.10%  (dps x1.911, sustain x1.405, surv x1.000, utility +0.00%)
+## Optimized build: 19/0/32  score +86.08%  (dps x1.860, sustain x1.380, surv x1.000, utility +0.00%)
 
 ```
-  Holy: Divine Strength 5, Divine Intellect 4, Improved Seals 3, Reverence 3, Illumination 2
-  Retribution: Benediction 5, Conviction 5, Improved Judgement 2, Holy Conduit 2, Seal of Command 1, Vindication 3, Sanctified Judgement 3, Sacred Arbiter 1, Vengeance 3, Two-Handed Weapon Specialization 3, Champion of the Light 3, Instrument of Law 2, Twist of Light 1
+  Holy: Divine Intellect 5, Divine Strength 4, Improved Seals 3, Reverence 3, Illumination 4
+  Retribution: Benediction 5, Improved Judgement 2, Conviction 5, Holy Conduit 2, Seal of Command 1, Vindication 1, Sanctified Judgement 3, Sacred Arbiter 1, Vengeance 3, Two-Handed Weapon Specialization 3, Champion of the Light 3, Instrument of Law 2, Twist of Light 1
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Swift Judgement | Protection 4 | 1/1 | +8.46% | no |
-| Divine Precision | Holy 5 | 1/3 | +3.41% | no |
-| Precision | Protection 2 | 1/3 | +2.19% | no |
-| Holy Power | Holy 6 | 1/5 | +1.01% | no |
-| Illumination | Holy 4 | 3/5 | +0.43% | yes |
-| Divine Intellect | Holy 1 | 5/5 | +0.40% | yes |
+| Swift Judgement | Protection 4 | 1/1 | +9.21% | no |
+| Divine Precision | Holy 5 | 1/3 | +3.57% | no |
+| Holy Power | Holy 6 | 1/5 | +1.06% | no |
+| Precision | Protection 2 | 1/3 | +0.44% | no |
+| Illumination | Holy 4 | 5/5 | +0.42% | yes |
+| Divine Strength | Holy 1 | 5/5 | +0.20% | yes |
+| Vindication | Retribution 3 | 2/3 | +0.19% | yes |
 | Templar's Bulwark | Protection 5 | 1/1 | +0.01% | no |
 | Voice of Truth | Holy 3 | 1/1 | +0.01% | yes |
 | Sacred Duty | Protection 3 | 1/2 | +0.00% | no |
@@ -65,5 +66,4 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Purifying Power | Holy 3 | 1/2 | +0.00% | yes |
 | Light's Vigil | Holy 7 | 1/1 | +0.00% | no |
 | Improved Seal of Fury | Protection 3 | 1/1 | +0.00% | no |
-| Shield Specialization | Protection 3 | 1/3 | +0.00% | no |
 

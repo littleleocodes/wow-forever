@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +210.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-raid` and profile `raid-dps`: score +215.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fire-rai
 
 ## Core talents (priority order)
 
-1. **Improved Scorch** — Removing it costs 106.2 points of score in this model.
-2. **Fire Power** — Removing it costs 28.2 points of score in this model.
-3. **Ignite** — Removing it costs 27.3 points of score in this model.
-4. **Hot Streak** — Removing it costs 20.3 points of score in this model.
-5. **Improved Fireball** — Removing it costs 19.6 points of score in this model.
-6. **Combustion** — Removing it costs 18.5 points of score in this model.
-7. **Critical Mass** — Removing it costs 18.3 points of score in this model.
-8. **Arcane Concentration** — Removing it costs 17.5 points of score in this model.
+1. **Improved Scorch** — Removing it costs 107.8 points of score in this model.
+2. **Ignite** — Removing it costs 28.8 points of score in this model.
+3. **Fire Power** — Removing it costs 28.6 points of score in this model.
+4. **Hot Streak** — Removing it costs 20.6 points of score in this model.
+5. **Improved Fireball** — Removing it costs 19.8 points of score in this model.
+6. **Combustion** — Removing it costs 18.8 points of score in this model.
+7. **Critical Mass** — Removing it costs 18.6 points of score in this model.
+8. **Arcane Concentration** — Removing it costs 18.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 

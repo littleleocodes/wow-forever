@@ -4,14 +4,28 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `destruction-fire-raid` | 22/11/18 | 612 | 34 | +0.0% | 546 | 3 | +82.5% |
-| `opt-fire-destro-raid-raid-dps` | 22/11/18 | 612 | 34 | +0.0% | 546 | 3 | +82.5% |
+| `destruction-fire-raid` | 22/11/18 | 612 | 34 | +0.0% | 546 | 3 | +82.6% |
+| `cand-fire-destro-raid-r10` | 22/11/18 | 612 | 34 | +0.0% | 546 | 3 | +82.6% |
+| `cand-fire-destro-raid-r9` | 22/11/18 | 612 | 34 | +0.0% | 546 | 3 | +82.6% |
+| `opt-fire-destro-raid-raid-dps` | 21/11/19 | 612 | 36 | -0.0% | 546 | 3 | +82.6% |
+| `cand-fire-destro-raid-r11` | 21/11/19 | 612 | 36 | -0.0% | 546 | 3 | +82.6% |
+| `cand-fire-destro-raid-r8` | 20/11/20 | 611 | 35 | -0.2% | 541 | 2 | +82.6% |
+| `cand-fire-destro-raid-r7` | 19/11/21 | 600 | 33 | -2.0% | 532 | 2 | +78.4% |
+| `cand-fire-destro-raid-hand-2026-09-28` | 19/11/21 | 600 | 33 | -2.1% | 532 | 2 | +78.1% |
+| `cand-fire-destro-raid-r6` | 19/11/21 | 600 | 33 | -2.1% | 532 | 2 | +78.1% |
+| `cand-fire-destro-raid-r5` | 21/11/19 | 595 | 33 | -2.8% | 531 | 3 | +76.4% |
+| `cand-fire-destro-raid-hand-2026-09-27` | 21/11/19 | 590 | 32 | -3.7% | 527 | 3 | +75.2% |
+| `cand-fire-destro-raid-r4` | 21/11/19 | 590 | 32 | -3.7% | 527 | 3 | +75.2% |
 | sim preset: DS/Ruin Pandemic 24/11/16 | - | 586 | 34 | -4.3% | 525 | 3 | - |
+| `cand-fire-destro-raid-r3` | 21/11/19 | 586 | 29 | -4.4% | 521 | 2 | +74.7% |
 | sim preset: DS/Ruin | - | 577 | 33 | -5.7% | 563 | 3 | - |
+| `cand-fire-destro-raid-r2` | 21/11/19 | 572 | 24 | -6.5% | 511 | 2 | +72.4% |
 | sim preset: Shadow and Flame 13/11/27 | - | 552 | 30 | -9.8% | 493 | 2 | - |
+| `cand-fire-destro-raid-hand-2026-09-26` | 5/11/35 | 531 | 23 | -13.3% | 472 | 3 | +58.8% |
 | sim preset: Deep Affliction 35/0/16 | - | 515 | 29 | -15.9% | 462 | 3 | - |
 | sim preset: Affliction | - | 507 | 29 | -17.2% | 476 | 3 | - |
 | sim preset: Demonic Pact 2/31/18 | - | 505 | 30 | -17.5% | 538 | 3 | - |
+| `cand-fire-destro-raid-r1` | 12/31/8 | 501 | 18 | -18.1% | 452 | 2 | +31.0% |
 | sim preset: Demonic Pact | - | 501 | 30 | -18.2% | 557 | 3 | - |
 
 ## Damage shares (`destruction-fire-raid`, simulator actions)
@@ -31,12 +45,26 @@ Mapped onto the spec model's sources: `filler` 51%, `agony` 19%, `corruption` 18
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - destruction-fire-raid: `25500010135-0050203001-0550004103`
-- opt-fire-destro-raid-raid-dps: `25500010135-0050203001-0550004103`
+- cand-fire-destro-raid-r10: `25500010135-0050203001-0550004103`
+- cand-fire-destro-raid-r9: `25500010135-2300203001-0550004103`
+- opt-fire-destro-raid-raid-dps: `25500000135-0050203001-0550005103`
+- cand-fire-destro-raid-r11: `25500000135-0050203001-0550005103`
+- cand-fire-destro-raid-r8: `25500000035-2300203001-0550304003`
+- cand-fire-destro-raid-r7: `2551002013-2300203001-0550305003`
+- cand-fire-destro-raid-hand-2026-09-28: `255000201301-2300203001-0550305003`
+- cand-fire-destro-raid-r6: `255000201301-2300203001-0550305003`
+- cand-fire-destro-raid-r5: `25500020130201-2050003001-0550105003`
+- cand-fire-destro-raid-hand-2026-09-27: `25530000030201-2050003001-0550105003`
+- cand-fire-destro-raid-r4: `25530000030201-2050003001-0550105003`
 - sim preset: DS/Ruin Pandemic 24/11/16: `25220010135201-0025003001-05500051`
+- cand-fire-destro-raid-r3: `25530000030201-2050003001-0350305003`
 - sim preset: DS/Ruin: `233500201332-0340003001-0550105`
+- cand-fire-destro-raid-r2: `25550000010201-0250003001-0050335003`
 - sim preset: Shadow and Flame 13/11/27: `25501-0025003001-055035510010002`
+- cand-fire-destro-raid-hand-2026-09-26: `05-0050203001-2050355103101351`
 - sim preset: Deep Affliction 35/0/16: `2535002013521105--05000551`
 - sim preset: Affliction: `2435002013520135--0500055`
 - sim preset: Demonic Pact 2/31/18: `113-0005003221220311351-0550005`
+- cand-fire-destro-raid-r1: `255-0355003001020111351-00503`
 - sim preset: Demonic Pact: `203-0055003221201001351-0550005`
 

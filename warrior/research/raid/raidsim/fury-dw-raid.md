@@ -4,10 +4,18 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `fury-dw-raid` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +87.2% |
-| `opt-fury-dw-raid-raid-dps` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +87.7% |
+| `fury-dw-raid` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +93.6% |
+| `opt-fury-dw-raid-raid-dps` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +94.1% |
+| `cand-fury-dw-raid-r2` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +94.1% |
+| `cand-fury-dw-raid-r6` | 13/38/0 | 380 | 21 | +0.0% | 353 | 0 | +94.1% |
+| `cand-fury-dw-raid-r5` | 14/37/0 | 379 | 21 | -0.1% | 352 | 0 | +94.0% |
+| `cand-fury-dw-raid-r4` | 11/40/0 | 374 | 21 | -1.4% | 348 | 0 | +90.2% |
+| `cand-fury-dw-raid-r7` | 14/37/0 | 367 | 19 | -3.2% | 359 | 0 | +88.7% |
+| `cand-fury-dw-raid-hand-2026-09-26` | 17/34/0 | 364 | 21 | -4.1% | 337 | 0 | +85.4% |
 | sim preset: DPS | - | 362 | 20 | -4.5% | 335 | 0 | - |
+| `cand-fury-dw-raid-r3` | 15/36/0 | 362 | 21 | -4.6% | 335 | 0 | +85.3% |
 | sim preset: Fury 17/34/0 | - | 338 | 20 | -11.0% | 312 | 0 | - |
+| `cand-fury-dw-raid-r1` | 29/22/0 | 309 | 19 | -18.7% | 299 | 0 | +57.4% |
 | sim preset: Arms 39/12/0 | - | 234 | 18 | -38.2% | 218 | 0 | - |
 
 ## Damage shares (`fury-dw-raid`, simulator actions)
@@ -30,7 +38,15 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - fury-dw-raid: `20305012-550500005152310051`
 - opt-fury-dw-raid-raid-dps: `20305012-250500035152310051`
+- cand-fury-dw-raid-r2: `20305012-250500035152310051`
+- cand-fury-dw-raid-r6: `20305012-050520035152310051`
+- cand-fury-dw-raid-r5: `20305013-250500035152210051`
+- cand-fury-dw-raid-r4: `3200501-250500035152310251`
+- cand-fury-dw-raid-r7: `20305013-05050023515231005`
+- cand-fury-dw-raid-hand-2026-09-26: `30305013002-050511035150110051`
 - sim preset: DPS: `30305013-050520035150310051`
+- cand-fury-dw-raid-r3: `20305113-250500035150310051`
 - sim preset: Fury 17/34/0: `30305213-550501015050010051`
+- cand-fury-dw-raid-r1: `30305213102504-25050003510001`
 - sim preset: Arms 39/12/0: `32305213132515201-5502`
 

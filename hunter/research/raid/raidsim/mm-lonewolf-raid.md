@@ -4,8 +4,15 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | 16 | +0.0% | 444 | 97 | +77.7% |
-| `mm-lone-wolf-raid` | 11/40/0 | 428 | 16 | -1.5% | 438 | 82 | +76.1% |
+| `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 434 | 16 | +0.0% | 444 | 97 | +79.7% |
+| `cand-mm-lonewolf-raid-r6` | 5/38/8 | 434 | 16 | +0.0% | 444 | 97 | +79.7% |
+| `mm-lone-wolf-raid` | 11/40/0 | 428 | 16 | -1.5% | 438 | 82 | +75.8% |
+| `cand-mm-lonewolf-raid-r1` | 7/41/3 | 428 | 16 | -1.5% | 438 | 82 | +76.4% |
+| `cand-mm-lonewolf-raid-r3` | 5/37/9 | 428 | 16 | -1.5% | 438 | 82 | +76.7% |
+| `cand-mm-lonewolf-raid-r4` | 7/34/10 | 428 | 16 | -1.5% | 438 | 82 | +76.7% |
+| `cand-mm-lonewolf-raid-r5` | 5/36/10 | 428 | 16 | -1.5% | 438 | 82 | +76.7% |
+| `cand-mm-lonewolf-raid-r2` | 7/39/5 | 416 | 16 | -4.3% | 426 | 89 | +63.2% |
+| `cand-mm-lonewolf-raid-hand-2026-09-26` | 0/32/19 | 388 | 14 | -10.8% | 398 | 85 | +54.4% |
 | sim preset: Marksmanship | - | 352 | 13 | -18.9% | 362 | 97 | - |
 | sim preset: Marksmanship 0/39/12 | - | 332 | 12 | -23.6% | 342 | 90 | - |
 | sim preset: Beast Mastery 35/16/0 | - | 321 | 10 | -26.0% | 331 | 69 | - |
@@ -27,7 +34,14 @@ Mapped onto the spec model's sources: `auto` 49%, `arcane` 25%, `serpent` 16%, `
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - opt-mm-lonewolf-raid-raid-dps: `5-005355051150305-50003`
+- cand-mm-lonewolf-raid-r6: `5-005355051150305-50003`
 - mm-lone-wolf-raid: `5501-305355201152305`
+- cand-mm-lonewolf-raid-r1: `500002-3053552011523051-3`
+- cand-mm-lonewolf-raid-r3: `5-3053550011503051-50004`
+- cand-mm-lonewolf-raid-r4: `52-0053550011503051-50005`
+- cand-mm-lonewolf-raid-r5: `5-2053550011503051-50005`
+- cand-mm-lonewolf-raid-r2: `500002-3053352011523051-5`
+- cand-mm-lonewolf-raid-hand-2026-09-26: `-0050452011503051-501053131`
 - sim preset: Marksmanship: `5023000501-0050550501503051`
 - sim preset: Marksmanship 0/39/12: `-3050552301503151-50024001`
 - sim preset: Beast Mastery 35/16/0: `5520001505121251-0050551`

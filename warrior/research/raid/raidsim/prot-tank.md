@@ -6,8 +6,13 @@
 |---|---|---|---|---|---|---|---|
 | `prot-raid-tank` | 14/5/32 | 1.000 | 652 | 1161 | 427 | 0 | +57.9% |
 | `opt-prot-tank-raid-tank` | 14/5/32 | 0.997 | 650 | 1164 | 426 | 0 | +58.6% |
+| `cand-prot-tank-r3` | 14/5/32 | 0.997 | 650 | 1164 | 426 | 0 | +58.6% |
 | sim preset: Protection | - | 0.949 | 615 | 1217 | 404 | 0 | - |
+| `cand-prot-tank-hand-2026-09-26` | 5/5/41 | 0.948 | 607 | 1203 | 406 | 0 | +50.0% |
 | sim preset: Protection 1/0/50 | - | 0.938 | 608 | 1229 | 400 | 0 | - |
+| `cand-prot-tank-hand-2026-09-27` | 14/5/32 | 0.929 | 559 | 1160 | 392 | 0 | +47.3% |
+| `cand-prot-tank-r2` | 14/5/32 | 0.929 | 559 | 1160 | 392 | 0 | +47.3% |
+| `cand-prot-tank-r1` | 32/3/16 | 0.787 | 399 | 1206 | 312 | 0 | +21.9% |
 
 Tank value = 0.5 x threat per second / the hand draft's + 0.5 x the hand draft's damage taken per second / this build's (the raid-tank profile's weights); the shares below are threat shares.
 
@@ -34,6 +39,11 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - prot-raid-tank: `3500501-05-551030233000010531`
 - opt-prot-tank-raid-tank: `3500501-05-550030233001010531`
+- cand-prot-tank-r3: `3500501-05-550030233001010531`
 - sim preset: Protection: `31--552531233330012531`
+- cand-prot-tank-hand-2026-09-26: `32-05-552501223301210531`
 - sim preset: Protection 1/0/50: `1--552531233331212531`
+- cand-prot-tank-hand-2026-09-27: `3500501-05-552031231001212031`
+- cand-prot-tank-r2: `3500501-05-552031231001212031`
+- cand-prot-tank-r1: `35305011002515001-03-502030230001`
 

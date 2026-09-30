@@ -4,7 +4,7 @@
 
 **✅ Recommended** for raid (the best paladin spec here, or within 3% of it).
 
-**[Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md)** (10/8/33) — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-4)
+**[Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md)** (19/0/32) — [open the talent tree](https://talentsforever.com/paladin/60/45003003004--05225131001330321-4)
 
 ## How to play
 
@@ -22,7 +22,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Seal of Righteousness**: part of the rotation (about 9 times a fight)
+- **Seal of Righteousness**: part of the rotation (about 10 times a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -31,12 +31,12 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 523 |
-| Parse (a full raid: every raid buff and debuff) | 975 |
+| Training dummy, 3-minute fight (only your own buffs) | 527 |
+| Parse (a full raid: every raid buff and debuff) | 988 |
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 523 → mana +5% → armor +8% → physical +33% → spell +25% → everything else +15% → raid 975
+Dummy 527 → mana +4% → armor +8% → physical +32% → spell +25% → everything else +18% → raid 988
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -44,7 +44,7 @@ Dummy 523 → mana +5% → armor +8% → physical +33% → spell +25% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 520 | 517 | 510 | 491 | 461 |
+| 517 | 522 | 516 | 515 | 493 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
@@ -52,7 +52,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 ## Other builds of this spec
 
-- [Two-handed Retribution](../research/raid/builds/opt-ret-dps-raid-dps.md) (17/0/34, 520 DPS on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/54003003002--05225331001330321-4)
+- [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-full-buffs-raid.md) (10/8/33, 523 DPS on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/52003-503-05225231001330321-4)
 - [Retribution — Seal of Command / Twist of Light](../research/raid/builds/ret-raid-dps.md) (17/0/34, 519 DPS on the dummy) — [open the talent tree](https://talentsforever.com/paladin/60/550030030001--05225331001330321-4)
 
 ---

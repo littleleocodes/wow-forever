@@ -40,22 +40,22 @@
    "measured": true,
    "spell_casts": {
     "6774": 7.175666666666666,
-    "11294": 53.827666666666666,
-    "13877": 2.0,
     "31016": 3.0946666666666665,
     "13750": 1.0,
-    "11198": 6.568333333333333
+    "11198": 6.568333333333333,
+    "11294": 53.827666666666666,
+    "13877": 2.0
    },
    "casts": {
     "Slice and Dice": 7.175666666666666,
-    "Auto Attack": 193.95533333333333,
-    "Sinister Strike": 53.827666666666666,
-    "Blade Flurry": 2.0,
     "Thistle Tea": 1.0,
+    "Auto Attack": 193.95533333333333,
     "Eviscerate": 3.0946666666666665,
     "Adrenaline Rush": 1.0,
+    "Expose Armor": 6.568333333333333,
     "Goblin Sapper Charge": 1.0,
-    "Expose Armor": 6.568333333333333
+    "Sinister Strike": 53.827666666666666,
+    "Blade Flurry": 2.0
    },
    "dps": 393.73360501161665,
    "dps_stdev": 18.49297707588792,
@@ -65,15 +65,15 @@
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6083646500567307,
+   "scorer": 0.6359532764865633,
    "shares": {
-    "Auto Attack": 0.528304262153238,
-    "Sinister Strike": 0.29851671252242523,
-    "Eviscerate": 0.05741054487818157,
-    "Deadly Poison": 0.04684692359577113,
-    "Dense Sharpening Stone": 0.032501643395257775,
-    "Dragonbreath Chili": 0.019819441537616715,
-    "Goblin Sapper Charge": 0.016600471917509615
+    "Auto Attack": 0.5283042621532379,
+    "Sinister Strike": 0.2985167125224252,
+    "Eviscerate": 0.057410544878181556,
+    "Deadly Poison": 0.046846923595771126,
+    "Dense Sharpening Stone": 0.03250164339525777,
+    "Dragonbreath Chili": 0.019819441537616708,
+    "Goblin Sapper Charge": 0.016600471917509612
    },
    "source_shares": {
     "white_mh": 0.3688,
@@ -86,28 +86,348 @@
   },
   {
    "label": "opt-combat-swords-raid-raid-dps",
-   "talents": "005323101005-32502300001513231",
+   "talents": "005323101005-32502300000514231",
+   "split": "20/31/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "11294": 50.12466666666667,
+    "6774": 8.319,
+    "11198": 5.886,
+    "13877": 2.0,
+    "13750": 1.0,
+    "31016": 1.1503333333333334
+   },
+   "casts": {
+    "Sinister Strike": 50.12466666666667,
+    "Slice and Dice": 8.319,
+    "Goblin Sapper Charge": 1.0,
+    "Expose Armor": 5.886,
+    "Auto Attack": 191.18633333333332,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Eviscerate": 1.1503333333333334,
+    "Thistle Tea": 1.0
+   },
+   "dps": 376.04670630003204,
+   "dps_stdev": 17.527891701249228,
+   "threat": 266.9931614730227,
+   "dtps": 3.296544097341011,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6861030691234751,
+   "shares": {
+    "Auto Attack": 0.5428622403691777,
+    "Sinister Strike": 0.2806228531007531,
+    "Deadly Poison": 0.06791062572752818,
+    "Dense Sharpening Stone": 0.048752448961123074,
+    "Eviscerate": 0.022230915485039967,
+    "Dragonbreath Chili": 0.02022632848236009,
+    "Goblin Sapper Charge": 0.01739458787401788
+   },
+   "source_shares": {
+    "white_mh": 0.3862,
+    "sinister": 0.3072,
+    "white_oh": 0.208,
+    "poisons": 0.0743,
+    "eviscerate": 0.0243
+   },
+   "unmatched_share": 0.0864
+  },
+  {
+   "label": "cand-combat-swords-raid-hand-2026-09-28",
+   "talents": "005313105-32102320201515231",
+   "split": "18/33/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "13877": 2.0,
+    "11198": 5.832,
+    "13750": 1.0,
+    "31016": 1.3,
+    "11294": 50.446,
+    "6774": 8.323
+   },
+   "casts": {
+    "Blade Flurry": 2.0,
+    "Expose Armor": 5.832,
+    "Thistle Tea": 1.0,
+    "Adrenaline Rush": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Eviscerate": 1.3,
+    "Sinister Strike": 50.446,
+    "Auto Attack": 192.36733333333333,
+    "Slice and Dice": 8.323
+   },
+   "dps": 369.82901714665593,
+   "dps_stdev": 17.993077588526223,
+   "threat": 262.57860217412565,
+   "dtps": 3.306156211425382,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6615810268612794,
+   "shares": {
+    "Auto Attack": 0.5557298406880221,
+    "Sinister Strike": 0.29658463433329835,
+    "Deadly Poison": 0.050164515990046836,
+    "Dense Sharpening Stone": 0.03331285565482749,
+    "Eviscerate": 0.025825252855489696,
+    "Dragonbreath Chili": 0.020717155148084625,
+    "Goblin Sapper Charge": 0.017665745330230825
+   },
+   "source_shares": {
+    "white_mh": 0.3891,
+    "sinister": 0.3195,
+    "white_oh": 0.2095,
+    "poisons": 0.054,
+    "eviscerate": 0.0278
+   },
+   "unmatched_share": 0.0717
+  },
+  {
+   "label": "cand-combat-swords-raid-r1",
+   "talents": "005323101014-32520300001513231",
+   "split": "20/31/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "6774": 8.335333333333333,
+    "14177": 1.0,
+    "11198": 5.835,
+    "31016": 1.3053333333333332,
+    "13877": 2.0,
+    "13750": 1.0,
+    "11294": 50.43833333333333
+   },
+   "casts": {
+    "Slice and Dice": 8.335333333333333,
+    "Auto Attack": 189.88466666666665,
+    "Cold Blood": 1.0,
+    "Expose Armor": 5.835,
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Eviscerate": 1.3053333333333332,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Sinister Strike": 50.43833333333333
+   },
+   "dps": 373.6577127377936,
+   "dps_stdev": 17.358778074085244,
+   "threat": 265.2969760438334,
+   "dtps": 3.356819161511275,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6772438029487471,
+   "shares": {
+    "Auto Attack": 0.5405862970565624,
+    "Sinister Strike": 0.28625046867750076,
+    "Deadly Poison": 0.06435955867974233,
+    "Dense Sharpening Stone": 0.04550514345854599,
+    "Eviscerate": 0.025334708917308553,
+    "Dragonbreath Chili": 0.020319489294992426,
+    "Goblin Sapper Charge": 0.017644333915347605
+   },
+   "source_shares": {
+    "white_mh": 0.3834,
+    "sinister": 0.3123,
+    "white_oh": 0.2064,
+    "poisons": 0.0702,
+    "eviscerate": 0.0276
+   },
+   "unmatched_share": 0.0835
+  },
+  {
+   "label": "cand-combat-swords-raid-r2",
+   "talents": "00530310501-32520300001515231",
+   "split": "18/33/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "6774": 8.334333333333333,
+    "31016": 1.3033333333333332,
+    "11294": 50.413333333333334,
+    "11198": 5.829,
+    "14177": 1.0,
+    "13877": 2.0,
+    "13750": 1.0
+   },
+   "casts": {
+    "Slice and Dice": 8.334333333333333,
+    "Thistle Tea": 1.0,
+    "Eviscerate": 1.3033333333333332,
+    "Auto Attack": 192.349,
+    "Sinister Strike": 50.413333333333334,
+    "Goblin Sapper Charge": 1.0,
+    "Expose Armor": 5.829,
+    "Cold Blood": 1.0,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0
+   },
+   "dps": 371.1629576623767,
+   "dps_stdev": 17.959787947717274,
+   "threat": 263.5256999402872,
+   "dtps": 3.351293842364272,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6568712028179441,
+   "shares": {
+    "Auto Attack": 0.5545575518620935,
+    "Sinister Strike": 0.2981642958789867,
+    "Deadly Poison": 0.050195876981355206,
+    "Dense Sharpening Stone": 0.03314120375364203,
+    "Eviscerate": 0.025610794333079386,
+    "Dragonbreath Chili": 0.020592518506179096,
+    "Goblin Sapper Charge": 0.017737758684663884
+   },
+   "source_shares": {
+    "white_mh": 0.3882,
+    "sinister": 0.3211,
+    "white_oh": 0.209,
+    "poisons": 0.0541,
+    "eviscerate": 0.0276
+   },
+   "unmatched_share": 0.0715
+  },
+  {
+   "label": "cand-combat-swords-raid-r3",
+   "talents": "005303103012-32520300001515231",
+   "split": "18/33/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "6774": 8.346,
+    "11198": 5.857333333333333,
+    "11294": 50.38933333333333,
+    "13877": 2.0,
+    "31016": 1.302,
+    "14177": 1.0,
+    "13750": 1.0
+   },
+   "casts": {
+    "Slice and Dice": 8.346,
+    "Expose Armor": 5.857333333333333,
+    "Auto Attack": 192.40133333333333,
+    "Goblin Sapper Charge": 1.0,
+    "Sinister Strike": 50.38933333333333,
+    "Blade Flurry": 2.0,
+    "Eviscerate": 1.302,
+    "Cold Blood": 1.0,
+    "Adrenaline Rush": 1.0,
+    "Thistle Tea": 1.0
+   },
+   "dps": 373.96350809201226,
+   "dps_stdev": 18.069150009981982,
+   "threat": 265.5140907453287,
+   "dtps": 3.346896462881226,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6658365576719948,
+   "shares": {
+    "Auto Attack": 0.5496372981058519,
+    "Sinister Strike": 0.29094475095969746,
+    "Deadly Poison": 0.0570830549477256,
+    "Dense Sharpening Stone": 0.039385399831793615,
+    "Eviscerate": 0.0250779678361973,
+    "Dragonbreath Chili": 0.0202740902284985,
+    "Goblin Sapper Charge": 0.01759743809023578
+   },
+   "source_shares": {
+    "white_mh": 0.3872,
+    "sinister": 0.3153,
+    "white_oh": 0.2085,
+    "poisons": 0.0619,
+    "eviscerate": 0.0272
+   },
+   "unmatched_share": 0.0773
+  },
+  {
+   "label": "cand-combat-swords-raid-r4",
+   "talents": "005323101012-32520300001515231",
+   "split": "18/33/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "11294": 50.38933333333333,
+    "6774": 8.346,
+    "13877": 2.0,
+    "13750": 1.0,
+    "31016": 1.302,
+    "11198": 5.857333333333333,
+    "14177": 1.0
+   },
+   "casts": {
+    "Sinister Strike": 50.38933333333333,
+    "Slice and Dice": 8.346,
+    "Auto Attack": 192.40133333333333,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Eviscerate": 1.302,
+    "Goblin Sapper Charge": 1.0,
+    "Thistle Tea": 1.0,
+    "Expose Armor": 5.857333333333333,
+    "Cold Blood": 1.0
+   },
+   "dps": 372.06107577936086,
+   "dps_stdev": 17.90744064395872,
+   "threat": 264.163363803346,
+   "dtps": 3.346896462881226,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6686653088106534,
+   "shares": {
+    "Auto Attack": 0.5524226618526833,
+    "Sinister Strike": 0.2873515144890585,
+    "Deadly Poison": 0.057372331298434893,
+    "Dense Sharpening Stone": 0.0395849908443104,
+    "Eviscerate": 0.025205053939516463,
+    "Dragonbreath Chili": 0.02037683201133794,
+    "Goblin Sapper Charge": 0.017686615564658583
+   },
+   "source_shares": {
+    "white_mh": 0.3893,
+    "sinister": 0.3115,
+    "white_oh": 0.2096,
+    "poisons": 0.0622,
+    "eviscerate": 0.0273
+   },
+   "unmatched_share": 0.0776
+  },
+  {
+   "label": "cand-combat-swords-raid-r5",
+   "talents": "005323101005-32520300001513231",
    "split": "20/31/0",
    "ours": true,
    "measured": true,
    "spell_casts": {
     "6774": 8.343333333333334,
-    "13877": 2.0,
     "13750": 1.0,
-    "31016": 1.3363333333333334,
+    "11294": 50.44866666666667,
     "11198": 5.805,
-    "11294": 50.44866666666667
+    "13877": 2.0,
+    "31016": 1.3363333333333334
    },
    "casts": {
     "Slice and Dice": 8.343333333333334,
-    "Auto Attack": 189.88933333333333,
-    "Blade Flurry": 2.0,
     "Adrenaline Rush": 1.0,
-    "Eviscerate": 1.3363333333333334,
+    "Sinister Strike": 50.44866666666667,
+    "Auto Attack": 189.88933333333333,
     "Thistle Tea": 1.0,
     "Expose Armor": 5.805,
     "Goblin Sapper Charge": 1.0,
-    "Sinister Strike": 50.44866666666667
+    "Blade Flurry": 2.0,
+    "Eviscerate": 1.3363333333333334
    },
    "dps": 375.56303443144765,
    "dps_stdev": 17.582698285063323,
@@ -117,15 +437,15 @@
    "hps": 0,
    "oom_seconds": 0,
    "error": null,
-   "scorer": 0.6542361656752856,
+   "scorer": 0.6853624837960866,
    "shares": {
-    "Auto Attack": 0.5387329669461677,
-    "Sinister Strike": 0.28210032239660304,
-    "Deadly Poison": 0.06739303122334175,
-    "Dense Sharpening Stone": 0.048527406290113255,
-    "Eviscerate": 0.025556150845667397,
-    "Dragonbreath Chili": 0.020271997227185538,
-    "Goblin Sapper Charge": 0.017418125070921508
+    "Auto Attack": 0.5387329669461676,
+    "Sinister Strike": 0.282100322396603,
+    "Deadly Poison": 0.06739303122334174,
+    "Dense Sharpening Stone": 0.04852740629011325,
+    "Eviscerate": 0.025556150845667393,
+    "Dragonbreath Chili": 0.020271997227185534,
+    "Goblin Sapper Charge": 0.017418125070921504
    },
    "source_shares": {
     "white_mh": 0.3832,
@@ -137,28 +457,132 @@
    "unmatched_share": 0.0862
   },
   {
+   "label": "cand-combat-swords-raid-r6",
+   "talents": "005323101005-32502300001513231",
+   "split": "20/31/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "6774": 8.343333333333334,
+    "13877": 2.0,
+    "11198": 5.805,
+    "31016": 1.3363333333333334,
+    "11294": 50.44866666666667,
+    "13750": 1.0
+   },
+   "casts": {
+    "Slice and Dice": 8.343333333333334,
+    "Blade Flurry": 2.0,
+    "Expose Armor": 5.805,
+    "Eviscerate": 1.3363333333333334,
+    "Sinister Strike": 50.44866666666667,
+    "Auto Attack": 189.88933333333333,
+    "Adrenaline Rush": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Thistle Tea": 1.0
+   },
+   "dps": 375.56303443144765,
+   "dps_stdev": 17.582698285063323,
+   "threat": 266.64975444632785,
+   "dtps": 3.298937637255886,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6853824837960866,
+   "shares": {
+    "Auto Attack": 0.5387329669461676,
+    "Sinister Strike": 0.282100322396603,
+    "Deadly Poison": 0.06739303122334174,
+    "Dense Sharpening Stone": 0.04852740629011325,
+    "Eviscerate": 0.025556150845667393,
+    "Dragonbreath Chili": 0.020271997227185534,
+    "Goblin Sapper Charge": 0.017418125070921504
+   },
+   "source_shares": {
+    "white_mh": 0.3832,
+    "sinister": 0.3087,
+    "white_oh": 0.2063,
+    "poisons": 0.0738,
+    "eviscerate": 0.028
+   },
+   "unmatched_share": 0.0862
+  },
+  {
+   "label": "cand-combat-swords-raid-r7",
+   "talents": "005323101005-32502300000514231",
+   "split": "20/31/0",
+   "ours": true,
+   "measured": true,
+   "spell_casts": {
+    "6774": 8.318999999999999,
+    "31016": 1.1503333333333334,
+    "11198": 5.886,
+    "13877": 2.0,
+    "13750": 1.0,
+    "11294": 50.12466666666667
+   },
+   "casts": {
+    "Slice and Dice": 8.318999999999999,
+    "Eviscerate": 1.1503333333333334,
+    "Auto Attack": 191.18633333333332,
+    "Expose Armor": 5.886,
+    "Blade Flurry": 2.0,
+    "Adrenaline Rush": 1.0,
+    "Thistle Tea": 1.0,
+    "Goblin Sapper Charge": 1.0,
+    "Sinister Strike": 50.12466666666667
+   },
+   "dps": 376.04670630003204,
+   "dps_stdev": 17.527891701249228,
+   "threat": 266.9931614730227,
+   "dtps": 3.296544097341011,
+   "tmi": 0,
+   "hps": 0,
+   "oom_seconds": 0,
+   "error": null,
+   "scorer": 0.6861030691234751,
+   "shares": {
+    "Auto Attack": 0.5428622403691777,
+    "Sinister Strike": 0.2806228531007531,
+    "Deadly Poison": 0.06791062572752818,
+    "Dense Sharpening Stone": 0.048752448961123074,
+    "Eviscerate": 0.022230915485039967,
+    "Dragonbreath Chili": 0.02022632848236009,
+    "Goblin Sapper Charge": 0.01739458787401788
+   },
+   "source_shares": {
+    "white_mh": 0.3862,
+    "sinister": 0.3072,
+    "white_oh": 0.208,
+    "poisons": 0.0743,
+    "eviscerate": 0.0243
+   },
+   "unmatched_share": 0.0864
+  },
+  {
    "label": "sim preset: Backstab",
    "talents": "005302005-30230320201515231-102",
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 9.354666666666667,
-    "13877": 2.0,
-    "11198": 4.078333333333333,
     "11294": 39.248,
-    "13750": 1.0,
-    "31016": 0.5866666666666667
+    "31016": 0.5866666666666667,
+    "13877": 2.0,
+    "6774": 9.354666666666667,
+    "11198": 4.078333333333333,
+    "13750": 1.0
    },
    "casts": {
-    "Slice and Dice": 9.354666666666667,
+    "Sinister Strike": 39.248,
+    "Eviscerate": 0.5866666666666667,
     "Blade Flurry": 2.0,
+    "Thistle Tea": 1.0,
+    "Slice and Dice": 9.354666666666667,
     "Expose Armor": 4.078333333333333,
     "Auto Attack": 190.48033333333333,
-    "Sinister Strike": 39.248,
-    "Adrenaline Rush": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Eviscerate": 0.5866666666666667,
-    "Thistle Tea": 1.0
+    "Adrenaline Rush": 1.0
    },
    "dps": 318.9021050417432,
    "dps_stdev": 16.466665358129582,
@@ -170,13 +594,13 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.6015379675204992,
+    "Auto Attack": 0.6015379675204993,
     "Sinister Strike": 0.25063095862382984,
-    "Deadly Poison": 0.05771434220792357,
+    "Deadly Poison": 0.057714342207923576,
     "Dense Sharpening Stone": 0.03459310451979527,
-    "Dragonbreath Chili": 0.022845735785672453,
-    "Goblin Sapper Charge": 0.020626572104607034,
-    "Eviscerate": 0.012051319237672619
+    "Dragonbreath Chili": 0.022845735785672457,
+    "Goblin Sapper Charge": 0.020626572104607038,
+    "Eviscerate": 0.01205131923767262
    },
    "source_shares": {
     "white_mh": 0.4241,
@@ -193,25 +617,25 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "31016": 1.3033333333333332,
-    "11198": 5.829,
     "6774": 8.334333333333333,
+    "13750": 1.0,
     "14177": 1.0,
     "13877": 2.0,
-    "13750": 1.0,
-    "11294": 50.413333333333334
+    "11294": 50.413333333333334,
+    "31016": 1.3033333333333332,
+    "11198": 5.829
    },
    "casts": {
-    "Thistle Tea": 1.0,
     "Auto Attack": 192.349,
-    "Eviscerate": 1.3033333333333332,
-    "Expose Armor": 5.829,
-    "Slice and Dice": 8.334333333333333,
-    "Cold Blood": 1.0,
     "Goblin Sapper Charge": 1.0,
-    "Blade Flurry": 2.0,
+    "Slice and Dice": 8.334333333333333,
     "Adrenaline Rush": 1.0,
-    "Sinister Strike": 50.413333333333334
+    "Cold Blood": 1.0,
+    "Blade Flurry": 2.0,
+    "Sinister Strike": 50.413333333333334,
+    "Thistle Tea": 1.0,
+    "Eviscerate": 1.3033333333333332,
+    "Expose Armor": 5.829
    },
    "dps": 371.1629576623767,
    "dps_stdev": 17.959787947717274,
@@ -223,13 +647,13 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Auto Attack": 0.5545575518620938,
-    "Sinister Strike": 0.2981642958789868,
-    "Deadly Poison": 0.05019587698135521,
-    "Dense Sharpening Stone": 0.03314120375364204,
-    "Eviscerate": 0.02561079433307939,
-    "Dragonbreath Chili": 0.0205925185061791,
-    "Goblin Sapper Charge": 0.017737758684663887
+    "Auto Attack": 0.5545575518620935,
+    "Sinister Strike": 0.2981642958789867,
+    "Deadly Poison": 0.050195876981355206,
+    "Dense Sharpening Stone": 0.03314120375364203,
+    "Eviscerate": 0.025610794333079386,
+    "Dragonbreath Chili": 0.020592518506179096,
+    "Goblin Sapper Charge": 0.017737758684663884
    },
    "source_shares": {
     "white_mh": 0.3882,
@@ -246,23 +670,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "31016": 3.0946666666666665,
-    "11198": 6.568333333333333,
     "6774": 7.175666666666666,
+    "11294": 53.827666666666666,
     "13750": 1.0,
+    "31016": 3.0946666666666665,
     "13877": 2.0,
-    "11294": 53.827666666666666
+    "11198": 6.568333333333333
    },
    "casts": {
-    "Eviscerate": 3.0946666666666665,
-    "Expose Armor": 6.568333333333333,
     "Slice and Dice": 7.175666666666666,
+    "Sinister Strike": 53.827666666666666,
     "Auto Attack": 193.95533333333333,
     "Adrenaline Rush": 1.0,
-    "Thistle Tea": 1.0,
+    "Eviscerate": 3.0946666666666665,
     "Blade Flurry": 2.0,
     "Goblin Sapper Charge": 1.0,
-    "Sinister Strike": 53.827666666666666
+    "Thistle Tea": 1.0,
+    "Expose Armor": 6.568333333333333
    },
    "dps": 393.73360501161665,
    "dps_stdev": 18.49297707588792,
@@ -297,21 +721,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "31016": 0.847,
-    "6774": 7.9719999999999995,
     "11198": 6.679333333333333,
+    "6774": 7.972,
     "14177": 1.0,
+    "31016": 0.847,
     "11294": 43.43633333333333
    },
    "casts": {
-    "Auto Attack": 179.88566666666668,
-    "Eviscerate": 0.847,
-    "Slice and Dice": 7.9719999999999995,
     "Thistle Tea": 1.0,
     "Expose Armor": 6.679333333333333,
+    "Slice and Dice": 7.972,
+    "Auto Attack": 179.88566666666668,
     "Cold Blood": 1.0,
-    "Sinister Strike": 43.43633333333333,
-    "Goblin Sapper Charge": 1.0
+    "Goblin Sapper Charge": 1.0,
+    "Eviscerate": 0.847,
+    "Sinister Strike": 43.43633333333333
    },
    "dps": 329.604399005771,
    "dps_stdev": 18.017411736338154,
@@ -346,23 +770,23 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "11198": 5.832,
-    "6774": 8.323,
     "11294": 50.446,
-    "13750": 1.0,
     "13877": 2.0,
-    "31016": 1.3
+    "6774": 8.323,
+    "11198": 5.832,
+    "31016": 1.3,
+    "13750": 1.0
    },
    "casts": {
-    "Expose Armor": 5.832,
+    "Goblin Sapper Charge": 1.0,
+    "Sinister Strike": 50.446,
+    "Blade Flurry": 2.0,
     "Slice and Dice": 8.323,
     "Auto Attack": 192.36733333333333,
-    "Thistle Tea": 1.0,
-    "Sinister Strike": 50.446,
+    "Expose Armor": 5.832,
+    "Eviscerate": 1.3,
     "Adrenaline Rush": 1.0,
-    "Goblin Sapper Charge": 1.0,
-    "Blade Flurry": 2.0,
-    "Eviscerate": 1.3
+    "Thistle Tea": 1.0
    },
    "dps": 364.7080873250879,
    "dps_stdev": 17.52809685885794,
@@ -397,21 +821,21 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "6774": 11.415666666666667,
-    "11294": 47.32966666666667,
     "31016": 0.8296666666666667,
+    "6774": 11.415666666666668,
+    "11198": 6.551666666666667,
     "14177": 1.0,
-    "11198": 6.551666666666667
+    "11294": 47.32966666666667
    },
    "casts": {
-    "Slice and Dice": 11.415666666666667,
-    "Goblin Sapper Charge": 1.0,
-    "Sinister Strike": 47.32966666666667,
-    "Auto Attack": 178.25933333333336,
-    "Thistle Tea": 1.0,
     "Eviscerate": 0.8296666666666667,
+    "Goblin Sapper Charge": 1.0,
+    "Slice and Dice": 11.415666666666668,
+    "Expose Armor": 6.551666666666667,
+    "Thistle Tea": 1.0,
     "Cold Blood": 1.0,
-    "Expose Armor": 6.551666666666667
+    "Sinister Strike": 47.32966666666667,
+    "Auto Attack": 178.25933333333336
    },
    "dps": 340.22925046053354,
    "dps_stdev": 18.679071641116543,
@@ -446,19 +870,19 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "11198": 3.0726666666666667,
     "6774": 11.401666666666667,
-    "11294": 42.089,
-    "31016": 0.5873333333333334
+    "11198": 3.0726666666666667,
+    "31016": 0.5873333333333334,
+    "11294": 42.089
    },
    "casts": {
-    "Expose Armor": 3.0726666666666667,
-    "Slice and Dice": 11.401666666666667,
-    "Sinister Strike": 42.089,
-    "Thistle Tea": 1.0,
     "Goblin Sapper Charge": 1.0,
+    "Slice and Dice": 11.401666666666667,
+    "Auto Attack": 177.86366666666666,
+    "Expose Armor": 3.0726666666666667,
     "Eviscerate": 0.5873333333333334,
-    "Auto Attack": 177.86366666666666
+    "Sinister Strike": 42.089,
+    "Thistle Tea": 1.0
    },
    "dps": 271.0362463769173,
    "dps_stdev": 15.306182288505651,

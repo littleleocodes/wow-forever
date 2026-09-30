@@ -9,26 +9,26 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology | 3 | +14.90% | manual |
-| Bane | Destruction | 1 | +1.80% | manual |
-| Agonizing Flames | Destruction | 4 | +1.59% | manual |
+| Demonic Sacrifice | Demonology | 3 | +15.16% | manual |
+| Bane | Destruction | 1 | +1.83% | manual |
+| Agonizing Flames | Destruction | 4 | +1.62% | manual |
 | Improved Life Tap | Affliction | 1 | +1.44% | manual |
 | Suppression | Affliction | 1 | +1.19% | manual |
-| Improved Shadow Bolt | Destruction | 1 | +1.12% | manual |
+| Improved Shadow Bolt | Destruction | 1 | +1.08% | manual |
 | Improved Corruption | Affliction | 1 | +0.87% | manual |
-| Improved Bane of Agony | Affliction | 3 | +0.82% | manual |
-| Amplify Curse | Affliction | 3 | +0.82% | manual |
+| Improved Bane of Agony | Affliction | 3 | +0.79% | manual |
+| Amplify Curse | Affliction | 3 | +0.79% | manual |
 | Fel Vitality | Demonology | 2 | +0.78% | manual |
-| Malevolence | Affliction | 4 | +0.61% | manual |
-| Ruin | Destruction | 3 | +0.60% | manual |
+| Ruin | Destruction | 3 | +0.61% | manual |
+| Malevolence | Affliction | 4 | +0.59% | manual |
 | Shadowburn | Destruction | 3 | +0.59% | manual |
 | Cataclysm | Destruction | 2 | +0.56% | manual |
-| Pandemic | Affliction | 3 | +0.50% | manual |
+| Pandemic | Affliction | 3 | +0.48% | manual |
 | Wrack | Affliction | 7 | +0.44% | manual |
 | Malediction | Affliction | 2 | +0.44% | manual |
-| Shadow Mastery | Affliction | 6 | +0.34% | manual |
-| Aftermath | Destruction | 2 | +0.27% | manual |
-| Nightfall | Affliction | 4 | +0.22% | manual |
+| Shadow Mastery | Affliction | 6 | +0.33% | manual |
+| Aftermath | Destruction | 2 | +0.29% | manual |
+| Nightfall | Affliction | 4 | +0.23% | manual |
 | Decimation | Demonology | 4 | +0.09% | manual |
 | Fel Concentration | Affliction | 3 | +0.01% | manual |
 | Intensity | Destruction | 4 | +0.01% | manual |
@@ -40,25 +40,24 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
 
-## Optimized build: 22/11/18  score +82.46%  (dps x1.824, sustain x1.044, surv x1.020, utility +0.00%)
+## Optimized build: 21/11/19  score +82.65%  (dps x1.826, sustain x1.044, surv x1.020, utility +0.00%)
 
 ```
-  Affliction: Improved Life Tap 2, Suppression 5, Improved Corruption 5, Amplify Curse 1, Pandemic 3, Improved Bane of Agony 1, Malevolence 5
+  Affliction: Improved Life Tap 2, Suppression 5, Improved Corruption 5, Amplify Curse 1, Pandemic 3, Malevolence 5
   Demonology: Demonic Embrace 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
-  Destruction: Bane 5, Improved Shadow Bolt 5, Ruin 4, Shadowburn 1, Agonizing Flames 3
+  Destruction: Bane 5, Improved Shadow Bolt 5, Ruin 5, Shadowburn 1, Agonizing Flames 3
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Improved Bane of Agony | Affliction 3 | 2/2 | +1.12% | yes |
-| Ruin | Destruction 3 | 5/5 | +1.08% | yes |
+| Improved Bane of Agony | Affliction 3 | 1/2 | +1.07% | yes |
 | Cataclysm | Destruction 2 | 1/3 | +0.97% | yes |
-| Wrack | Affliction 7 | 1/1 | +0.79% | no |
-| Malediction | Affliction 2 | 1/5 | +0.78% | yes |
-| Shadow Mastery | Affliction 6 | 1/5 | +0.59% | no |
-| Aftermath | Destruction 2 | 1/5 | +0.51% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.77% | no |
+| Malediction | Affliction 2 | 1/5 | +0.76% | yes |
+| Shadow Mastery | Affliction 6 | 1/5 | +0.56% | no |
+| Aftermath | Destruction 2 | 1/5 | +0.55% | yes |
 | Nightfall | Affliction 4 | 1/2 | +0.42% | yes |
 | Decimation | Demonology 4 | 1/2 | +0.17% | no |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
@@ -67,4 +66,5 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
 | Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |
 | Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
+| Destructive Reach | Destruction 1 | 1/2 | +0.00% | yes |
 

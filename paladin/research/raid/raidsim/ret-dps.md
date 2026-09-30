@@ -4,34 +4,48 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| sim preset: P4/P5 Ret | - | 528 | 21 | +0.0% | 444 | 4 | - |
-| `ret-full-buffs-raid` | 10/8/33 | 523 | 21 | -0.9% | 440 | 2 | +93.1% |
-| `opt-ret-dps-raid-dps` | 17/0/34 | 520 | 21 | -1.5% | 433 | 15 | +91.1% |
-| `ret-raid-dps` | 17/0/34 | 519 | 21 | -1.7% | 432 | 14 | +90.6% |
-| sim preset: Retribution 9/0/42 | - | 513 | 21 | -2.9% | 432 | 7 | - |
+| `cand-ret-dps-r4` | 17/0/34 | 529 | 21 | +0.0% | 440 | 4 | +85.4% |
+| sim preset: P4/P5 Ret | - | 528 | 21 | -0.3% | 444 | 4 | - |
+| `opt-ret-dps-raid-dps` | 19/0/32 | 527 | 21 | -0.3% | 439 | 4 | +86.1% |
+| `cand-ret-dps-r6` | 19/0/32 | 527 | 21 | -0.3% | 439 | 4 | +86.1% |
+| `ret-full-buffs-raid` | 10/8/33 | 523 | 21 | -1.2% | 440 | 2 | +82.8% |
+| `cand-ret-dps-hand-2026-09-27` | 10/8/33 | 523 | 21 | -1.2% | 440 | 2 | +82.8% |
+| `ret-raid-dps` | 17/0/34 | 519 | 21 | -1.9% | 432 | 14 | +85.0% |
+| `cand-ret-dps-r1` | 17/0/34 | 519 | 21 | -1.9% | 432 | 14 | +85.0% |
+| `cand-ret-dps-r3` | 9/8/34 | 516 | 21 | -2.5% | 435 | 7 | +82.6% |
+| `cand-ret-dps-r5` | 9/8/34 | 516 | 21 | -2.5% | 435 | 7 | +82.6% |
+| sim preset: Retribution 9/0/42 | - | 513 | 21 | -3.1% | 432 | 7 | - |
+| `cand-ret-dps-r2` | 11/8/32 | 496 | 22 | -6.3% | 418 | 5 | +78.0% |
 
-## Damage shares (`sim preset: P4/P5 Ret`, simulator actions)
+## Damage shares (`cand-ret-dps-r4`, simulator actions)
 
 | Action | Share |
 |---|---|
-| Consecration | 19.0% |
-| Judgement of Righteousness | 17.8% |
-| Auto Attack | 17.2% |
-| Seal of Righteousness | 16.5% |
+| Consecration | 19.3% |
+| Auto Attack | 17.3% |
+| Seal of Righteousness | 17.1% |
+| Judgement of Righteousness | 15.7% |
 | Holy Strike | 15.3% |
-| Seal of Command | 4.9% |
-| Hammer of Wrath | 3.5% |
+| Seal of Command | 4.3% |
+| Judgement of Command | 4.0% |
+| Hammer of Wrath | 3.8% |
 | Dragonbreath Chili | 3.2% |
-| Judgement of Command | 2.5% |
 
-Mapped onto the spec model's sources: `seal` 22%, `judgement` 21%, `consecration` 20%, `white` 18%, `holy_strike` 16%, `hammer_of_wrath` 4%; 3% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
+Mapped onto the spec model's sources: `seal` 22%, `judgement` 20%, `consecration` 20%, `white` 18%, `holy_strike` 16%, `hammer_of_wrath` 4%; 3% of the damage matched no source (raidsim/calibrate.py writes the mapped split into the model's base shares).
 
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
+- cand-ret-dps-r4: `55003003001--05225331001330321`
 - sim preset: P4/P5 Ret: `550030022001--05225231001330321`
+- opt-ret-dps-raid-dps: `45003003004--05225131001330321`
+- cand-ret-dps-r6: `45003003004--05225131001330321`
 - ret-full-buffs-raid: `52003-503-05225231001330321`
-- opt-ret-dps-raid-dps: `54003003002--05225331001330321`
+- cand-ret-dps-hand-2026-09-27: `52003-503-05225231001330321`
 - ret-raid-dps: `550030030001--05225331001330321`
+- cand-ret-dps-r1: `550030030001--05225331001330321`
+- cand-ret-dps-r3: `51003-503-05225331001330321`
+- cand-ret-dps-r5: `51003-053-05225331001330321`
 - sim preset: Retribution 9/0/42: `51003--55225331201331321`
+- cand-ret-dps-r2: `52003001-053-05025331001330321`
 

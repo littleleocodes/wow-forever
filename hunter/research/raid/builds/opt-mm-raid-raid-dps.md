@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +55.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +57.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,13 +46,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
 ## Core talents (priority order)
 
 1. **Bestial Discipline** — Removing it costs 10.0 points of score in this model.
-2. **Efficiency** — Removing it costs 8.6 points of score in this model.
-3. **Mortal Shots** — Removing it costs 7.1 points of score in this model.
-4. **Lethal Attacks** — Removing it costs 7.1 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 6.8 points of score in this model.
-6. **Careful Aim** — Removing it costs 5.9 points of score in this model.
-7. **Ranged Weapon Specialization** — Removing it costs 5.0 points of score in this model.
-8. **Trueshot Aura** — Removing it costs 3.5 points of score in this model.
+2. **Efficiency** — Removing it costs 9.0 points of score in this model.
+3. **Careful Aim** — Removing it costs 7.4 points of score in this model.
+4. **Mortal Shots** — Removing it costs 7.0 points of score in this model.
+5. **Lethal Attacks** — Removing it costs 7.0 points of score in this model.
+6. **Deadly Aspects** — Removing it costs 6.4 points of score in this model.
+7. **Ranged Weapon Specialization** — Removing it costs 5.1 points of score in this model.
+8. **Improved Stings** — Removing it costs 3.7 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 

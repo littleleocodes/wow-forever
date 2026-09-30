@@ -23,7 +23,7 @@ Optimizer builds (the stats model's optimum per use-case, see the Optimizer sect
 |---|---|---|
 | [opt-combat-swords-raid-raid-dps](builds/opt-combat-swords-raid-raid-dps.md) | 20/31/0 | raid-dps |
 | [opt-combat-swords-raid-parse](builds/opt-combat-swords-raid-parse.md) | 20/31/0 | parse |
-| [opt-combat-daggers-raid-raid-dps](builds/opt-combat-daggers-raid-raid-dps.md) | 16/33/2 | raid-dps |
+| [opt-combat-daggers-raid-raid-dps](builds/opt-combat-daggers-raid-raid-dps.md) | 17/32/2 | raid-dps |
 | [opt-combat-daggers-raid-parse](builds/opt-combat-daggers-raid-parse.md) | 17/32/2 | parse |
 
 Classic Era reference builds: [combat-swords-raid](../talents/classic-baseline/combat-swords-raid.md), [combat-daggers-raid](../talents/classic-baseline/combat-daggers-raid.md).
@@ -38,7 +38,7 @@ Our builds and the community simulator's own builds, run through the same simula
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`combat-swords-raid`](builds/combat-swords-raid.md) | ours: hand draft | 19/32/0 | 394 | +0.0% | 687 | -1.3% | 0 s |
 | 2 | *Improved Expose Armor (SS)* | community simulator | - | 394 | +0.0% | 687 | -1.3% | 0 s |
-| 3 | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.6% | 696 | -0.0% | 0 s |
+| 3 | [`opt-combat-swords-raid-raid-dps`](builds/opt-combat-swords-raid-raid-dps.md) | ours: optimizer | 20/31/0 | 376 | -4.5% | 682 | -2.1% | 0 s |
 | 4 | *Sinister Strike* | community simulator | - | 371 | -5.7% | 696 | +0.0% | 0 s |
 | 5 | *Combat Dual-Wield 15/33/3* | community simulator | - | 365 | -7.4% | 682 | -2.0% | 0 s |
 | 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |
@@ -50,16 +50,16 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-raid`](builds/combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -1.1% | 0 s |
-| 2 | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 16/33/2 | 403 | -4.5% | 720 | +0.0% | 0 s |
-| 3 | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | -1.1% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -2.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -6.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -10.0% | 0 s |
-| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -12.5% | 0 s |
-| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -13.8% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -12.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -30.5% | 0 s |
+| 1 | [`combat-raid`](builds/combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -0.0% | 0 s |
+| 2 | [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 416 | -1.4% | 696 | -2.3% | 0 s |
+| 3 | [`combat-daggers-raid`](builds/combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | +0.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -1.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -5.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -9.0% | 0 s |
+| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -11.6% | 0 s |
+| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -12.9% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -11.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -29.8% | 0 s |
 
 **assassination-raid**
 
@@ -92,10 +92,10 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Mutilate and Venom, the Forever Assassination talents, starting from our Mutilate draft: the tuned rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), and the talent search dropped Venom, then Mutilate | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | 30/19/2 | 407 | 682 | -3.5% on the dummy; -5.2% in a raid. Kept Mutilate (the search told to keep it), the build loses under half a percent: the rotation never casts it. | from `assassination-mutilate-raid`, 6 moves | - |
-| Subtlety with Hemorrhage from the simulator's Hemorrhage preset | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | 20/0/31 | 380 | 652 | -9.9% on the dummy; -9.4% in a raid | from `sim preset: Subtlety Hemo 15/0/36`, 6 moves | - |
+| Mutilate and Venom, the Forever Assassination talents, starting from our Mutilate draft: the tuned rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), and the talent search dropped Venom, then Mutilate | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | 30/19/2 | 407 | 682 | -3.5% on the dummy; -4.2% in a raid. Kept Mutilate (the search told to keep it), the build loses under half a percent: the rotation never casts it. | from `assassination-mutilate-raid`, 6 moves | - |
+| Subtlety with Hemorrhage from the simulator's Hemorrhage preset | [`subtlety-hemo-raid`](builds/subtlety-hemo-raid.md) | 20/0/31 | 380 | 652 | -9.9% on the dummy; -8.5% in a raid | from `sim preset: Subtlety Hemo 15/0/36`, 6 moves | - |
 
-The class's best raid DPS build on the training dummy: [`combat-raid`](builds/combat-raid.md) (combat-daggers-raid), 422 DPS; in a raid: [`opt-combat-daggers-raid-raid-dps`](builds/opt-combat-daggers-raid-raid-dps.md) (combat-daggers-raid), 720 DPS.
+The class's best raid DPS build on the training dummy: [`combat-raid`](builds/combat-raid.md) (combat-daggers-raid), 422 DPS; in a raid: [`combat-daggers-raid`](builds/combat-daggers-raid.md) (combat-daggers-raid), 712 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -107,9 +107,16 @@ The class's best raid DPS build on the training dummy: [`combat-raid`](builds/co
 | `assassination-raid` | dummy | `assassination-mutilate-raid` | 30/21/0 | 392 | -3.7% | 0 | - |
 | `assassination-raid` | dummy | sim preset: Mutilate | - | 371 | -8.8% | 0 | - |
 | `assassination-raid` | dummy | sim preset: Assassination Mutilate 31/20/0 | - | 359 | -11.7% | 0 | - |
-| `combat-daggers-raid` | dummy | `combat-raid` | 16/33/2 | 422 | +0.0% | 0 | +77% |
-| `combat-daggers-raid` | dummy | `opt-combat-daggers-raid-raid-dps` | 16/33/2 | 403 | -4.5% | 0 | +77% |
+| `combat-daggers-raid` | dummy | `combat-raid` | 16/33/2 | 422 | +0.0% | 0 | +85% |
+| `combat-daggers-raid` | dummy | `opt-combat-daggers-raid-raid-dps` | 17/32/2 | 416 | -1.4% | 0 | +86% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r7` | 17/32/2 | 416 | -1.4% | 0 | +86% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r1` | 16/33/2 | 403 | -4.5% | 0 | +77% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r5` | 17/32/2 | 400 | -5.2% | 0 | +78% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r6` | 17/32/2 | 400 | -5.2% | 0 | +78% |
 | `combat-daggers-raid` | dummy | `combat-daggers-raid` | 16/33/2 | 399 | -5.4% | 0 | +78% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r3` | 16/33/2 | 399 | -5.4% | 0 | +78% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r2` | 16/33/2 | 398 | -5.5% | 0 | +77% |
+| `combat-daggers-raid` | dummy | `cand-combat-daggers-raid-r4` | 17/32/2 | 398 | -5.6% | 0 | +78% |
 | `combat-daggers-raid` | dummy | sim preset: Combat Dual-Wield 15/33/3 | - | 394 | -6.5% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Backstab | - | 371 | -12.0% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Mutilate | - | 371 | -12.1% | 0 | - |
@@ -117,10 +124,18 @@ The class's best raid DPS build on the training dummy: [`combat-raid`](builds/co
 | `combat-daggers-raid` | dummy | sim preset: Improved Expose Armor (SS) | - | 347 | -17.7% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Sinister Strike | - | 334 | -20.7% | 0 | - |
 | `combat-daggers-raid` | dummy | sim preset: Subtlety Hemo 15/0/36 | - | 258 | -38.8% | 0 | - |
-| `combat-swords-raid` | dummy | `combat-swords-raid` | 19/32/0 | 394 | +0.0% | 0 | +61% |
+| `combat-swords-raid` | dummy | `combat-swords-raid` | 19/32/0 | 394 | +0.0% | 0 | +64% |
 | `combat-swords-raid` | dummy | sim preset: Improved Expose Armor (SS) | - | 394 | +0.0% | 0 | - |
-| `combat-swords-raid` | dummy | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | -4.6% | 0 | +65% |
+| `combat-swords-raid` | dummy | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | -4.5% | 0 | +69% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r7` | 20/31/0 | 376 | -4.5% | 0 | +69% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r5` | 20/31/0 | 376 | -4.6% | 0 | +69% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r6` | 20/31/0 | 376 | -4.6% | 0 | +69% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r3` | 18/33/0 | 374 | -5.0% | 0 | +67% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r1` | 20/31/0 | 374 | -5.1% | 0 | +68% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r4` | 18/33/0 | 372 | -5.5% | 0 | +67% |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-r2` | 18/33/0 | 371 | -5.7% | 0 | +66% |
 | `combat-swords-raid` | dummy | sim preset: Sinister Strike | - | 371 | -5.7% | 0 | - |
+| `combat-swords-raid` | dummy | `cand-combat-swords-raid-hand-2026-09-28` | 18/33/0 | 370 | -6.1% | 0 | +66% |
 | `combat-swords-raid` | dummy | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | -7.4% | 0 | - |
 | `combat-swords-raid` | dummy | sim preset: Assassination Mutilate 31/20/0 | - | 340 | -13.6% | 0 | - |
 | `combat-swords-raid` | dummy | sim preset: Mutilate | - | 330 | -16.3% | 0 | - |
@@ -136,7 +151,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | Spec model | Builds lose to mana | Mana limit: loss / cap | Fit error | Mana talents: DPS lost when removed (simulator) |
 |---|---|---|---|---|
 | `combat-daggers-raid` | 0.0-0.1% | no limit (under 1% for every build) | - | - |
-| `combat-swords-raid` | 0.0-0.1% | no limit (under 1% for every build) | - | - |
+| `combat-swords-raid` | 0.0-0.0% | no limit (under 1% for every build) | - | - |
 
 **DPS by environment** ([reports](raidsim/)): the same builds on the boss-level training dummy with your own buffs (the ranking above), on an in-game style level-60 dummy (never dies, own buffs), in a full raid (phase-1 gear, every raid buff and debuff minus the one this spec brings, raid consumables) and at the theoretical maximum (best gear preset, everything on, 120 s and 60 s). A build that wins on the dummy but not in the raid column wins on its own buffs only. `opt-<spec>-parse` is the parse build: personal DPS only, the raid brings every buff. Simulator numbers, not measurements.
 
@@ -147,8 +162,8 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `assassination-raid` | sim preset: Mutilate | - | 371 | 438 | 648 | 658 | 699 |
 | `assassination-raid` | sim preset: Assassination Mutilate 31/20/0 | - | 359 | 425 | 630 | 637 | 678 |
 | `combat-daggers-raid` | `combat-raid` | 16/33/2 | 422 | 489 | 712 | 722 | 810 |
-| `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 16/33/2 | 403 | 470 | 720 | 729 | 827 |
-| `combat-daggers-raid` | `opt-combat-daggers-raid-parse` | 17/32/2 | 400 | 467 | 702 | 711 | 795 |
+| `combat-daggers-raid` | `opt-combat-daggers-raid-raid-dps` | 17/32/2 | 416 | 483 | 696 | 704 | 787 |
+| `combat-daggers-raid` | `opt-combat-daggers-raid-parse` | 17/32/2 | 416 | 483 | 696 | 704 | 787 |
 | `combat-daggers-raid` | `combat-daggers-raid` | 16/33/2 | 399 | 466 | 712 | 721 | 809 |
 | `combat-daggers-raid` | sim preset: Combat Dual-Wield 15/33/3 | - | 394 | 461 | 702 | 711 | 796 |
 | `combat-daggers-raid` | sim preset: Backstab | - | 371 | 435 | 672 | 681 | 766 |
@@ -159,8 +174,8 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `combat-daggers-raid` | sim preset: Subtlety Hemo 15/0/36 | - | 258 | 312 | 500 | 507 | 531 |
 | `combat-swords-raid` | `combat-swords-raid` | 19/32/0 | 394 | 463 | 687 | 687 | 782 |
 | `combat-swords-raid` | sim preset: Improved Expose Armor (SS) | - | 394 | 463 | 687 | 687 | 782 |
-| `combat-swords-raid` | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
-| `combat-swords-raid` | `opt-combat-swords-raid-parse` | 20/31/0 | 376 | 443 | 696 | 696 | 787 |
+| `combat-swords-raid` | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 443 | 682 | 682 | 767 |
+| `combat-swords-raid` | `opt-combat-swords-raid-parse` | 20/31/0 | 376 | 443 | 682 | 682 | 767 |
 | `combat-swords-raid` | sim preset: Sinister Strike | - | 371 | 438 | 696 | 696 | 794 |
 | `combat-swords-raid` | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | 431 | 682 | 682 | 773 |
 | `combat-swords-raid` | sim preset: Assassination Mutilate 31/20/0 | - | 340 | 406 | 618 | 618 | 662 |
@@ -197,8 +212,8 @@ Produced by `_reference/data/scorer/` (see its README for the method and Classic
 
 | Use-case | Spec model | Optimized build | Hand draft it competes with |
 |---|---|---|---|
-| Raid DPS, swords | combat-swords-raid | [20/31/0](builds/opt-combat-swords-raid-raid-dps.md) (+65.4%) | [combat-swords-raid](builds/combat-swords-raid.md) |
-| Raid DPS, daggers | combat-daggers-raid | [16/33/2](builds/opt-combat-daggers-raid-raid-dps.md) (+78.1%) | [combat-daggers-raid](builds/combat-daggers-raid.md) |
+| Raid DPS, swords | combat-swords-raid | [20/31/0](builds/opt-combat-swords-raid-raid-dps.md) (+68.6%) | [combat-swords-raid](builds/combat-swords-raid.md) |
+| Raid DPS, daggers | combat-daggers-raid | [17/32/2](builds/opt-combat-daggers-raid-raid-dps.md) (+85.7%) | [combat-daggers-raid](builds/combat-daggers-raid.md) |
 
 Model findings: Mutilate daggers 33/16/2 (+92%) beat Combat swords 19/32/0 (+57%) by a wide margin: Seal Fate, Lethality, Improved Poisons and Cold Blood all feed Mutilate. Dagger leveling is 21/28/2 (Combat's Hack and Slash, Restless Blades and Riposte); Adrenaline Rush stays core for swords.
 

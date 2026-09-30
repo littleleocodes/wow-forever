@@ -47,7 +47,7 @@ Dummy 426 → mana +1% → armor +32% → physical +16% → spell +6% → everyt
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [One slow weapon](../research/raid/builds/opt-enhancement-dps-parse.md) (10/31/10) — [open the talent tree](https://talentsforever.com/shaman/60/500032-055030031005102051-05005-4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [One slow weapon](../research/raid/builds/opt-enhancement-dps-parse.md) (20/31/0) — [open the talent tree](https://talentsforever.com/shaman/60/05053313-055030031005102051--4).
 
 ## Other builds of this spec
 
