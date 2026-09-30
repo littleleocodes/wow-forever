@@ -1,0 +1,305 @@
+{
+ "id": "fl-assassination-combat-daggers-raid",
+ "allocation": {
+  "Assassination": [
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Improved Gouge",
+    1
+   ],
+   [
+    "Murder",
+    2
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    4
+   ],
+   [
+    "Cold Blood",
+    1
+   ],
+   [
+    "Improved Poisons",
+    5
+   ],
+   [
+    "Vile Poisons",
+    5
+   ],
+   [
+    "Vigor",
+    2
+   ],
+   [
+    "Seal Fate",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-11",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 2
+  },
+  {
+   "levels": "12-13",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 2
+  },
+  {
+   "levels": "14-15",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "16",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "28-32",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 5
+  },
+  {
+   "levels": "33-34",
+   "tree": "Assassination",
+   "talent": "Murder",
+   "points": 2
+  },
+  {
+   "levels": "35",
+   "tree": "Assassination",
+   "talent": "Improved Gouge",
+   "points": 1
+  },
+  {
+   "levels": "36",
+   "tree": "Assassination",
+   "talent": "Relentless Strikes",
+   "points": 1
+  },
+  {
+   "levels": "37-40",
+   "tree": "Assassination",
+   "talent": "Lethality",
+   "points": 4
+  },
+  {
+   "levels": "41",
+   "tree": "Assassination",
+   "talent": "Cold Blood",
+   "points": 1
+  },
+  {
+   "levels": "42-45",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 4
+  },
+  {
+   "levels": "46-47",
+   "tree": "Assassination",
+   "talent": "Vigor",
+   "points": 2
+  },
+  {
+   "levels": "48",
+   "tree": "Assassination",
+   "talent": "Improved Poisons",
+   "points": 1
+  },
+  {
+   "levels": "49-50",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 2
+  },
+  {
+   "levels": "51-55",
+   "tree": "Assassination",
+   "talent": "Seal Fate",
+   "points": 5
+  },
+  {
+   "levels": "56-57",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "58-60",
+   "tree": "Assassination",
+   "talent": "Vile Poisons",
+   "points": 3
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "combat-daggers-raid",
+  "model": "combat-daggers-raid",
+  "tree": "Assassination",
+  "start": "opt-combat-swords-raid-leveling-st",
+  "starts": {
+   "leveling-combat-swords": 28.81563333344411,
+   "opt-combat-swords-raid-leveling-st": 28.48456666676533,
+   "opt-combat-swords-raid-solo-60": 28.48456666676533,
+   "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-assassination-scorer.json": 32.26150000025086
+  },
+  "moves": [],
+  "incumbent": "opt-combat-swords-raid-leveling-st",
+  "race": {
+   "incumbent": [
+    26.906716666713343,
+    {
+     "20": 20.872033333207604,
+     "30": 23.27773333324374,
+     "40": 27.986866666747343,
+     "50": 28.902000000114207,
+     "60": 28.349933333426684
+    }
+   ],
+   "search": [
+    26.906716666713343,
+    {
+     "20": 20.872033333207604,
+     "30": 23.27773333324374,
+     "40": 27.986866666747343,
+     "50": 28.902000000114207,
+     "60": 28.349933333426684
+    }
+   ],
+   "gain": 0.0,
+   "all": {
+    "leveling-combat-swords": [
+     27.138703333389827,
+     {
+      "20": 20.526666666544475,
+      "30": 23.789133333261393,
+      "40": 28.32973333342717,
+      "50": 28.870400000111967,
+      "60": 28.780400000109147
+     }
+    ],
+    "opt-combat-swords-raid-leveling-st": [
+     26.906716666713343,
+     {
+      "20": 20.872033333207604,
+      "30": 23.27773333324374,
+      "40": 27.986866666747343,
+      "50": 28.902000000114207,
+      "60": 28.349933333426684
+     }
+    ],
+    "opt-combat-swords-raid-solo-60": [
+     26.906716666713343,
+     {
+      "20": 20.872033333207604,
+      "30": 23.27773333324374,
+      "40": 27.986866666747343,
+      "50": 28.902000000114207,
+      "60": 28.349933333426684
+     }
+    ]
+   }
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

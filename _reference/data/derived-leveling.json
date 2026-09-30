@@ -321,6 +321,175 @@
     "60": 28.7315656673099
    },
    "keep_incumbent": true
+  },
+  "Assassination": {
+   "spec": "combat-daggers-raid",
+   "model": "combat-daggers-raid",
+   "tree": "Assassination",
+   "hands": [
+    "leveling-combat-swords",
+    "opt-combat-swords-raid-leveling-st",
+    "opt-combat-swords-raid-solo-60"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "rogue/research/leveling/fightlab/candidates/derived-assassination.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "combat-daggers-raid",
+    "model": "combat-daggers-raid",
+    "tree": "Assassination",
+    "start": "opt-combat-swords-raid-leveling-st",
+    "starts": {
+     "leveling-combat-swords": 28.81563333344411,
+     "opt-combat-swords-raid-leveling-st": 28.48456666676533,
+     "opt-combat-swords-raid-solo-60": 28.48456666676533,
+     "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-assassination-scorer.json": 32.26150000025086
+    },
+    "moves": [],
+    "incumbent": "opt-combat-swords-raid-leveling-st",
+    "race": {
+     "incumbent": [
+      26.906716666713343,
+      {
+       "20": 20.872033333207604,
+       "30": 23.27773333324374,
+       "40": 27.986866666747343,
+       "50": 28.902000000114207,
+       "60": 28.349933333426684
+      }
+     ],
+     "search": [
+      26.906716666713343,
+      {
+       "20": 20.872033333207604,
+       "30": 23.27773333324374,
+       "40": 27.986866666747343,
+       "50": 28.902000000114207,
+       "60": 28.349933333426684
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "leveling-combat-swords": [
+       27.138703333389827,
+       {
+        "20": 20.526666666544475,
+        "30": 23.789133333261393,
+        "40": 28.32973333342717,
+        "50": 28.870400000111967,
+        "60": 28.780400000109147
+       }
+      ],
+      "opt-combat-swords-raid-leveling-st": [
+       26.906716666713343,
+       {
+        "20": 20.872033333207604,
+        "30": 23.27773333324374,
+        "40": 27.986866666747343,
+        "50": 28.902000000114207,
+        "60": 28.349933333426684
+       }
+      ],
+      "opt-combat-swords-raid-solo-60": [
+       26.906716666713343,
+       {
+        "20": 20.872033333207604,
+        "30": 23.27773333324374,
+        "40": 27.986866666747343,
+        "50": 28.902000000114207,
+        "60": 28.349933333426684
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "opt-combat-swords-raid-leveling-st",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 20.872033333207604,
+    "30": 23.27773333324374,
+    "40": 27.986866666747343,
+    "50": 28.902000000114207,
+    "60": 28.349933333426684
+   }
+  },
+  "Combat": {
+   "spec": "combat-swords-raid",
+   "model": "combat-swords-raid",
+   "tree": "Combat",
+   "hands": [
+    "opt-combat-swords-raid-leveling-aoe"
+   ],
+   "generated": [
+    "combat-leveling"
+   ],
+   "date": "2026-09-30",
+   "candidate": "rogue/research/leveling/fightlab/candidates/derived-combat.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "combat-swords-raid",
+    "model": "combat-swords-raid",
+    "tree": "Combat",
+    "start": "opt-combat-swords-raid-leveling-aoe",
+    "starts": {
+     "opt-combat-swords-raid-leveling-aoe": 27.14313831912975,
+     "combat-leveling": 27.925300000077293,
+     "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-combat-scorer.json": 27.925300000077293
+    },
+    "moves": [],
+    "incumbent": "opt-combat-swords-raid-leveling-aoe",
+    "race": {
+     "incumbent": [
+      25.560854154556743,
+      {
+       "20": 19.65399999988784,
+       "30": 23.19983542537281,
+       "40": 26.53933333335784,
+       "50": 26.739248696308024,
+       "60": 27.07600000004489
+      }
+     ],
+     "search": [
+      25.560854154556743,
+      {
+       "20": 19.65399999988784,
+       "30": 23.19983542537281,
+       "40": 26.53933333335784,
+       "50": 26.739248696308024,
+       "60": 27.07600000004489
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "opt-combat-swords-raid-leveling-aoe": [
+       25.560854154556743,
+       {
+        "20": 19.65399999988784,
+        "30": 23.19983542537281,
+        "40": 26.53933333335784,
+        "50": 26.739248696308024,
+        "60": 27.07600000004489
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "opt-combat-swords-raid-leveling-aoe",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 19.65399999988784,
+    "30": 23.19983542537281,
+    "40": 26.53933333335784,
+    "50": 26.739248696308024,
+    "60": 27.07600000004489
+   }
   }
  },
  "priest": {
@@ -2070,6 +2239,75 @@
     "40": 34.48705179027442,
     "50": 35.55482397908482,
     "60": 37.01175776143779
+   }
+  },
+  "Restoration": {
+   "spec": "enhancement-dps",
+   "model": "enhancement-dps",
+   "tree": "Restoration",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "shaman/research/leveling/fightlab/candidates/derived-restoration.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "enhancement-dps",
+    "model": "enhancement-dps",
+    "tree": "Restoration",
+    "start": "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-restoration-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/shaman/research/leveling/fightlab/candidates/derived-restoration-scorer.json": 38.84228136997456
+    },
+    "moves": [],
+    "incumbent": "derived-restoration-scorer",
+    "race": {
+     "incumbent": [
+      33.836113935591655,
+      {
+       "20": 20.965788163613162,
+       "30": 29.073552800059687,
+       "40": 34.15917300967099,
+       "50": 35.73441663955933,
+       "60": 38.7102114579912
+      }
+     ],
+     "search": [
+      33.836113935591655,
+      {
+       "20": 20.965788163613162,
+       "30": 29.073552800059687,
+       "40": 34.15917300967099,
+       "50": 35.73441663955933,
+       "60": 38.7102114579912
+      }
+     ],
+     "gain": 0.0,
+     "all": {
+      "derived-restoration-scorer": [
+       33.836113935591655,
+       {
+        "20": 20.965788163613162,
+        "30": 29.073552800059687,
+        "40": 34.15917300967099,
+        "50": 35.73441663955933,
+        "60": 38.7102114579912
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "derived-restoration-scorer",
+   "verdict": "new",
+   "keep_incumbent": true,
+   "levels": {
+    "20": 20.965788163613162,
+    "30": 29.073552800059687,
+    "40": 34.15917300967099,
+    "50": 35.73441663955933,
+    "60": 38.7102114579912
    }
   }
  }
