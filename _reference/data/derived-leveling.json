@@ -915,6 +915,220 @@
     "50": 30.440827865652096,
     "60": 35.036230488802275
    }
+  },
+  "Protection": {
+   "spec": "prot-leveling",
+   "model": "ret-dps",
+   "tree": "Protection",
+   "hands": [],
+   "generated": [],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "paladin/research/leveling/fightlab/candidates/derived-protection.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "prot-leveling",
+    "model": "ret-dps",
+    "tree": "Protection",
+    "start": "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-protection-scorer.json",
+    "starts": {
+     "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-protection-scorer.json": 39.41183829401579
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "3 points Toughness -> One-Handed Weapon Specialization",
+      "gain_seed1": 0.07082486883120476,
+      "gain_seed2": 0.06427886539754657
+     },
+     {
+      "round": 2,
+      "move": "1 point Sacred Arbiter -> Holy Conduit",
+      "gain_seed1": 0.013968559519146884,
+      "gain_seed2": 0.020513302147811774
+     },
+     {
+      "round": 3,
+      "move": "1 point Two-Handed Weapon Specialization -> Holy Shield",
+      "gain_seed1": 0.039080067230871096,
+      "gain_seed2": 0.04282430008434002
+     },
+     {
+      "round": 4,
+      "move": "3 points Anticipation -> Reckoning",
+      "gain_seed1": 0.020171551602068405,
+      "gain_seed2": 0.018976932911556
+     },
+     {
+      "round": 5,
+      "move": "2 points Guardian's Favor -> Reckoning",
+      "gain_seed1": 0.017459767584948716,
+      "gain_seed2": 0.01572955914543872
+     },
+     {
+      "round": 6,
+      "move": "1 point Pursuit of Justice -> Sacred Arbiter",
+      "gain_seed1": 0.011769588320134083,
+      "gain_seed2": 0.009811688975003507
+     }
+    ],
+    "incumbent": "derived-protection-scorer",
+    "race": {
+     "incumbent": [
+      34.98942216402024,
+      {
+       "20": 24.95899968820134,
+       "30": 30.729266697722423,
+       "40": 39.14157955693404,
+       "50": 32.97948327420873,
+       "60": 39.36981820200918
+      }
+     ],
+     "search": [
+      32.83409700136683,
+      {
+       "20": 25.025684785078294,
+       "30": 30.34707638434113,
+       "40": 38.85651508926663,
+       "50": 32.250685150585845,
+       "60": 33.15164253236013
+      }
+     ],
+     "gain": 0.06159933572351883,
+     "all": {
+      "derived-protection-scorer": [
+       34.98942216402024,
+       {
+        "20": 24.95899968820134,
+        "30": 30.729266697722423,
+        "40": 39.14157955693404,
+        "50": 32.97948327420873,
+        "60": 39.36981820200918
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.06159933572351883,
+   "incumbent": "derived-protection-scorer",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 25.025684785078294,
+    "30": 30.34707638434113,
+    "40": 38.85651508926663,
+    "50": 32.250685150585845,
+    "60": 33.15164253236013
+   }
+  },
+  "Retribution": {
+   "spec": "ret-dps",
+   "model": "ret-dps",
+   "tree": "Retribution",
+   "hands": [
+    "leveling-retribution",
+    "opt-ret-dps-leveling-aoe",
+    "opt-ret-dps-leveling-st",
+    "opt-ret-dps-solo-60"
+   ],
+   "generated": [],
+   "date": "2026-09-30",
+   "candidate": "paladin/research/leveling/fightlab/candidates/derived-retribution.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "ret-dps",
+    "model": "ret-dps",
+    "tree": "Retribution",
+    "start": "opt-ret-dps-leveling-aoe",
+    "starts": {
+     "leveling-retribution": 31.87880867568954,
+     "opt-ret-dps-leveling-aoe": 31.873561697552116,
+     "opt-ret-dps-leveling-st": 32.05488547282805,
+     "opt-ret-dps-solo-60": 32.05488547282805,
+     "/home/user/wow-forever/paladin/research/leveling/fightlab/candidates/derived-retribution-scorer.json": 32.05488547282805
+    },
+    "moves": [],
+    "incumbent": "leveling-retribution",
+    "race": {
+     "incumbent": [
+      27.786076679492272,
+      {
+       "20": 19.906726918271765,
+       "30": 23.185538503664997,
+       "40": 28.1404111517967,
+       "50": 28.476082408050623,
+       "60": 31.901567932477814
+      }
+     ],
+     "search": [
+      29.048123473288,
+      {
+       "20": 22.155111940324485,
+       "30": 26.13114148828235,
+       "40": 30.84911568847835,
+       "50": 28.99223541973397,
+       "60": 31.650196877946797
+      }
+     ],
+     "gain": -0.04542011484216446,
+     "all": {
+      "leveling-retribution": [
+       27.786076679492272,
+       {
+        "20": 19.906726918271765,
+        "30": 23.185538503664997,
+        "40": 28.1404111517967,
+        "50": 28.476082408050623,
+        "60": 31.901567932477814
+       }
+      ],
+      "opt-ret-dps-leveling-aoe": [
+       29.048123473288,
+       {
+        "20": 22.155111940324485,
+        "30": 26.13114148828235,
+        "40": 30.84911568847835,
+        "50": 28.99223541973397,
+        "60": 31.650196877946797
+       }
+      ],
+      "opt-ret-dps-leveling-st": [
+       28.167243048075562,
+       {
+        "20": 20.274650800633093,
+        "30": 23.590654267096912,
+        "40": 29.36601276299287,
+        "50": 28.646824723260362,
+        "60": 31.8875703151135
+       }
+      ],
+      "opt-ret-dps-solo-60": [
+       28.108263497122884,
+       {
+        "20": 20.274650800633093,
+        "30": 23.590654267096912,
+        "40": 29.071115008229487,
+        "50": 28.646824723260362,
+        "60": 31.8875703151135
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": -0.04542011484216446,
+   "incumbent": "leveling-retribution",
+   "verdict": "hand stays",
+   "levels": {
+    "20": 19.906726918271765,
+    "30": 23.185538503664997,
+    "40": 28.1404111517967,
+    "50": 28.476082408050623,
+    "60": 31.901567932477814
+   }
   }
  }
 }
