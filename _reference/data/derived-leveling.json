@@ -1789,6 +1789,104 @@
     "50": 40.53739542227831,
     "60": 40.74017554075509
    }
+  },
+  "Demonology": {
+   "spec": "demonology-leveling",
+   "model": "affliction-leveling",
+   "tree": "Demonology",
+   "hands": [],
+   "generated": [
+    "demonology-leveling"
+   ],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "warlock/research/leveling/fightlab/candidates/derived-demonology.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "demonology-leveling",
+    "model": "affliction-leveling",
+    "tree": "Demonology",
+    "start": "demonology-leveling",
+    "starts": {
+     "demonology-leveling": 40.09298888738094,
+     "/home/user/wow-forever/warlock/research/leveling/fightlab/candidates/derived-demonology-scorer.json": 40.27909083783012
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Improved Health Funnel -> Demonic Energies",
+      "gain_seed1": 0.041846369695829444,
+      "gain_seed2": 0.040773683371195246
+     },
+     {
+      "round": 2,
+      "move": "3 points Demonic Embrace -> Demonic Brand",
+      "gain_seed1": 0.03475981363169067,
+      "gain_seed2": 0.029693820902525148
+     },
+     {
+      "round": 3,
+      "move": "2 points Improved Bane of Agony -> Improved Life Tap",
+      "gain_seed1": 0.004661889314683698,
+      "gain_seed2": 0.010020512452794339
+     },
+     {
+      "round": 4,
+      "move": "2 points Improved Corruption -> Improved Bane of Agony",
+      "gain_seed1": 0.01649544024940286,
+      "gain_seed2": 0.011274107761744867
+     }
+    ],
+    "incumbent": "demonology-leveling",
+    "race": {
+     "incumbent": [
+      37.755531990508885,
+      {
+       "20": 25.66879999999332,
+       "30": 32.61968507560182,
+       "40": 39.32052981300036,
+       "50": 41.79512333304246,
+       "60": 39.942708111028644
+      }
+     ],
+     "search": [
+      35.76157729266963,
+      {
+       "20": 25.958000000002226,
+       "30": 32.379769080183344,
+       "40": 38.78311496042139,
+       "50": 38.475534409744526,
+       "60": 36.44435112040499
+      }
+     ],
+     "gain": 0.052812252740618404,
+     "all": {
+      "demonology-leveling": [
+       37.755531990508885,
+       {
+        "20": 25.66879999999332,
+        "30": 32.61968507560182,
+        "40": 39.32052981300036,
+        "50": 41.79512333304246,
+        "60": 39.942708111028644
+       }
+      ]
+     }
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.052812252740618404,
+   "incumbent": "demonology-leveling",
+   "verdict": "new",
+   "keep_incumbent": false,
+   "levels": {
+    "20": 25.958000000002226,
+    "30": 32.379769080183344,
+    "40": 38.78311496042139,
+    "50": 38.475534409744526,
+    "60": 36.44435112040499
+   }
   }
  },
  "druid": {

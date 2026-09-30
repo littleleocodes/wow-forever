@@ -1,0 +1,173 @@
+{
+ "id": "derived-destruction-scorer",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    4
+   ],
+   [
+    "Improved Corruption",
+    5
+   ],
+   [
+    "Malediction",
+    5
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Siphon Life",
+    1
+   ]
+  ],
+  "Demonology": [],
+  "Destruction": [
+   [
+    "Destructive Reach",
+    2
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Molten Skin",
+    5
+   ],
+   [
+    "Aftermath",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Intensity",
+    3
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Affliction",
+   "talent": "Improved Corruption",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Affliction",
+   "talent": "Malediction",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Affliction",
+   "talent": "Amplify Curse",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Affliction",
+   "talent": "Improved Bane of Agony",
+   "points": 2
+  },
+  {
+   "levels": "23-25",
+   "tree": "Affliction",
+   "talent": "Pandemic",
+   "points": 3
+  },
+  {
+   "levels": "26-29",
+   "tree": "Affliction",
+   "talent": "Suppression",
+   "points": 4
+  },
+  {
+   "levels": "30",
+   "tree": "Affliction",
+   "talent": "Siphon Life",
+   "points": 1
+  },
+  {
+   "levels": "31-35",
+   "tree": "Destruction",
+   "talent": "Bane",
+   "points": 5
+  },
+  {
+   "levels": "36-40",
+   "tree": "Destruction",
+   "talent": "Molten Skin",
+   "points": 5
+  },
+  {
+   "levels": "41-45",
+   "tree": "Destruction",
+   "talent": "Aftermath",
+   "points": 5
+  },
+  {
+   "levels": "46-48",
+   "tree": "Destruction",
+   "talent": "Agonizing Flames",
+   "points": 3
+  },
+  {
+   "levels": "49-53",
+   "tree": "Destruction",
+   "talent": "Ruin",
+   "points": 5
+  },
+  {
+   "levels": "54-55",
+   "tree": "Destruction",
+   "talent": "Destructive Reach",
+   "points": 2
+  },
+  {
+   "levels": "56-58",
+   "tree": "Destruction",
+   "talent": "Intensity",
+   "points": 3
+  },
+  {
+   "levels": "59",
+   "tree": "Destruction",
+   "talent": "Conflagrate",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Destruction",
+   "talent": "Shadowburn",
+   "points": 1
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Destruction under affliction-leveling (leveling-st), 2026-09-30."
+}
