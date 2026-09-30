@@ -119,10 +119,12 @@ def derive(cls, tree, a, log):
             "--jobs", str(a.jobs), "--rounds", "8"], log)
         rec["rotation_tuned"] = True
     cand = cdir / f"derived-{SM.slug(tree)}.json"
-    args = [PY, HERE / "fightlab/fl_talent_opt.py", cls, "--spec", spec, "--model", model, "--tree", tree, "--incumbent", incumbent,
+    args = [PY, HERE / "fightlab/fl_talent_opt.py", cls, "--spec", spec, "--model", model, "--tree", tree,
             "--jobs", str(a.jobs), "--write", str(cand)]
     for s in starts:
         args += ["--start", s]
+    for s in (hands or [incumbent]):   # the race bar: the fastest hand draft (every hand draft races), else the generated build
+        args += ["--incumbent", s]
     if not sh(args, log) or not cand.exists():
         rec["error"] = "search failed"
         return rec

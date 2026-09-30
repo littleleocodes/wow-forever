@@ -91,7 +91,7 @@ def main():
     ap.add_argument("--model", required=True, help="scorer model for screening and the leveling order")
     ap.add_argument("--tree", required=True, help="the build keeps 30+ points here")
     ap.add_argument("--start", action="append", required=True)
-    ap.add_argument("--incumbent", help="build the result races at the end (default: the first --start)")
+    ap.add_argument("--incumbent", action="append", default=[], help="builds the result races at the end, the fastest counts (default: the first --start)")
     ap.add_argument("--keep", action="append", default=[])
     ap.add_argument("--fights", type=int, default=800)
     ap.add_argument("--confirm", type=int, default=3000)
@@ -154,13 +154,17 @@ def main():
     # Frost mage's hand draft it was 0.9% slower per kill over 20-60, 2026-09-30), else the scorer's order
     same = [load(cls, s) for s, f in starts if f == cur and load(cls, s).get("order")]
     cand = {"id": f"fl-{a.tree.lower().replace(' ', '-')}-{a.spec}", "allocation": alloc, "order": same[0]["order"] if same else order_of(cls, a.model, cur)}
-    inc = load(cls, a.incumbent or a.start[0])
-    fin = race(pool, cls, a.spec, [inc, cand], a.confirm, 3)
+    incs = [load(cls, x) for x in (a.incumbent or a.start[:1])]
+    res = race(pool, cls, a.spec, incs + [cand], a.confirm, 3)
+    k = min(range(len(incs)), key=lambda i: res[i][0])   # the fastest existing build is the bar (2026-09-30: not the first listed)
+    inc, fin = incs[k], [res[k], res[-1]]
     gain = 1 - fin[1][0] / fin[0][0]
-    print(f"  race (seed 3, levels {LEVELS}): {inc['id']} {fin[0][0]:.2f}s, search {fin[1][0]:.2f}s ({gain:+.2%} faster)", flush=True)
+    print(f"  race (seed 3, levels {LEVELS}): " + ", ".join(f"{b['id']} {r[0]:.2f}s" for b, r in zip(incs, res)) + f", search {fin[1][0]:.2f}s "
+          f"({gain:+.2%} faster than {inc['id']})", flush=True)
     cand["search"] = {"date": datetime.date.today().isoformat(), "spec": a.spec, "model": a.model, "tree": a.tree, "start": name,
                       "starts": {s: t for (s, _), t in zip(starts, t0)}, "moves": log, "incumbent": inc["id"],
-                      "race": {"incumbent": fin[0], "search": fin[1], "gain": gain}, "fights": a.fights, "confirm": a.confirm}
+                      "race": {"incumbent": fin[0], "search": fin[1], "gain": gain,
+                               "all": {b["id"]: r for b, r in zip(incs, res[:-1])}}, "fights": a.fights, "confirm": a.confirm}
     if a.write:
         pathlib.Path(a.write).parent.mkdir(parents=True, exist_ok=True)
         pathlib.Path(a.write).write_text(json.dumps(cand, indent=1) + "\n", encoding="utf-8")
