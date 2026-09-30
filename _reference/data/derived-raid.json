@@ -45,5 +45,36 @@
    "gain_vs_hand": 0.0,
    "verdict": "hand stays"
   }
+ },
+ "hunter": {
+  "Beast Mastery": {
+   "tree": "Beast Mastery",
+   "role": "dps",
+   "entry": "bm-raid",
+   "start": "beast-mastery-raid",
+   "start_metric": 438.0676113148907,
+   "date": "2026-09-30",
+   "hand": null,
+   "hand_metric": null,
+   "candidate": "hunter/research/raid/raidsim/candidates/derived-beast-mastery.json",
+   "search_gain": 0.021886067968746037,
+   "moves": [
+    {
+     "round": 1,
+     "move": "1 point Intimidation -> Endurance Training",
+     "gain_seed1": 0.013138944312931056,
+     "gain_seed2": 0.012973317660223582,
+     "split": "30/21/0"
+    },
+    {
+     "round": 2,
+     "move": "2 points Mortal Shots -> Efficiency",
+     "gain_seed1": 0.008422855062806933,
+     "gain_seed2": 0.008673426514614668,
+     "split": "30/21/0"
+    }
+   ],
+   "verdict": "new"
+  }
  }
 }
