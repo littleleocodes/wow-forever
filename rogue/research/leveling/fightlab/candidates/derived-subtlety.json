@@ -1,0 +1,301 @@
+{
+ "id": "fl-subtlety-subtlety-leveling",
+ "allocation": {
+  "Assassination": [
+   [
+    "Remorseless Attacks",
+    2
+   ],
+   [
+    "Malice",
+    3
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Flawless Execution",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Camouflage",
+    2
+   ],
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Setup",
+    3
+   ],
+   [
+    "Elusiveness",
+    2
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Heightened Senses",
+    2
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 1
+  },
+  {
+   "levels": "11-12",
+   "tree": "Assassination",
+   "talent": "Remorseless Attacks",
+   "points": 2
+  },
+  {
+   "levels": "13",
+   "tree": "Combat",
+   "talent": "Improved Sinister Strike",
+   "points": 1
+  },
+  {
+   "levels": "14-16",
+   "tree": "Combat",
+   "talent": "Improved Eviscerate",
+   "points": 3
+  },
+  {
+   "levels": "17",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 1
+  },
+  {
+   "levels": "18-19",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "20-21",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Combat",
+   "talent": "Riposte",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Combat",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Combat",
+   "talent": "Lightning Reflexes",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Combat",
+   "talent": "Flawless Execution",
+   "points": 1
+  },
+  {
+   "levels": "28-30",
+   "tree": "Assassination",
+   "talent": "Malice",
+   "points": 3
+  },
+  {
+   "levels": "31-32",
+   "tree": "Subtlety",
+   "talent": "Opportunity",
+   "points": 2
+  },
+  {
+   "levels": "33-35",
+   "tree": "Subtlety",
+   "talent": "Master of Deception",
+   "points": 3
+  },
+  {
+   "levels": "36-38",
+   "tree": "Subtlety",
+   "talent": "Setup",
+   "points": 3
+  },
+  {
+   "levels": "39-40",
+   "tree": "Subtlety",
+   "talent": "Elusiveness",
+   "points": 2
+  },
+  {
+   "levels": "41",
+   "tree": "Subtlety",
+   "talent": "Ghostly Strike",
+   "points": 1
+  },
+  {
+   "levels": "42-44",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 3
+  },
+  {
+   "levels": "45",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Subtlety",
+   "talent": "Serrated Blades",
+   "points": 3
+  },
+  {
+   "levels": "49",
+   "tree": "Subtlety",
+   "talent": "Premeditation",
+   "points": 1
+  },
+  {
+   "levels": "50",
+   "tree": "Subtlety",
+   "talent": "Heightened Senses",
+   "points": 1
+  },
+  {
+   "levels": "51",
+   "tree": "Subtlety",
+   "talent": "Preparation",
+   "points": 1
+  },
+  {
+   "levels": "52-53",
+   "tree": "Subtlety",
+   "talent": "Dirty Deeds",
+   "points": 2
+  },
+  {
+   "levels": "54",
+   "tree": "Subtlety",
+   "talent": "Heightened Senses",
+   "points": 1
+  },
+  {
+   "levels": "55",
+   "tree": "Subtlety",
+   "talent": "Camouflage",
+   "points": 1
+  },
+  {
+   "levels": "56-60",
+   "tree": "Subtlety",
+   "talent": "Quietus",
+   "points": 5
+  }
+ ],
+ "search": {
+  "date": "2026-09-30",
+  "spec": "subtlety-leveling",
+  "model": "combat-swords-raid",
+  "tree": "Subtlety",
+  "start": "subtlety-leveling",
+  "starts": {
+   "subtlety-leveling": 28.726800000108845,
+   "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json": 28.726800000108845
+  },
+  "moves": [],
+  "incumbent": "subtlety-leveling",
+  "race": {
+   "incumbent": [
+    26.505119700200453,
+    {
+     "20": 19.20283333322665,
+     "30": 23.275466666576904,
+     "40": 27.248900000052945,
+     "50": 28.097066666750763,
+     "60": 28.7315656673099
+    }
+   ],
+   "search": [
+    26.505119700200453,
+    {
+     "20": 19.20283333322665,
+     "30": 23.275466666576904,
+     "40": 27.248900000052945,
+     "50": 28.097066666750763,
+     "60": 28.7315656673099
+    }
+   ],
+   "gain": 0.0
+  },
+  "fights": 800,
+  "confirm": 3000
+ }
+}

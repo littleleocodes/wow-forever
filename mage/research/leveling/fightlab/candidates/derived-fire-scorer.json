@@ -1,0 +1,233 @@
+{
+ "id": "derived-fire-scorer",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Flame Throwing",
+    2
+   ],
+   [
+    "Impact",
+    3
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Blast Wave",
+    1
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Permafrost",
+    1
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Improved Fireball",
+   "points": 5
+  },
+  {
+   "levels": "15-17",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 3
+  },
+  {
+   "levels": "18-22",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 5
+  },
+  {
+   "levels": "23",
+   "tree": "Frost",
+   "talent": "Permafrost",
+   "points": 1
+  },
+  {
+   "levels": "24-26",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "27",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
+  },
+  {
+   "levels": "28",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "29-30",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 2
+  },
+  {
+   "levels": "31",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 1
+  },
+  {
+   "levels": "32-35",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 4
+  },
+  {
+   "levels": "36",
+   "tree": "Frost",
+   "talent": "Ice Block",
+   "points": 1
+  },
+  {
+   "levels": "37",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 1
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 2
+  },
+  {
+   "levels": "40-42",
+   "tree": "Fire",
+   "talent": "Impact",
+   "points": 3
+  },
+  {
+   "levels": "43-44",
+   "tree": "Fire",
+   "talent": "Flame Throwing",
+   "points": 2
+  },
+  {
+   "levels": "45-46",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 2
+  },
+  {
+   "levels": "47",
+   "tree": "Fire",
+   "talent": "Blast Wave",
+   "points": 1
+  },
+  {
+   "levels": "48",
+   "tree": "Fire",
+   "talent": "Improved Scorch",
+   "points": 1
+  },
+  {
+   "levels": "49-51",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "52-56",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 5
+  },
+  {
+   "levels": "57",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 1
+  },
+  {
+   "levels": "59",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Hot Streak",
+   "points": 1
+  }
+ ],
+ "note": "The scorer's best build with 30+ points in Fire under fire-leveling (leveling-st), 2026-09-30."
+}

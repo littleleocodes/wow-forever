@@ -1,0 +1,140 @@
+{
+ "mage": {
+  "Arcane": {
+   "spec": "arcane-leveling",
+   "model": "frost-leveling",
+   "tree": "Arcane",
+   "hands": [],
+   "generated": [
+    "arcane-leveling"
+   ],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "mage/research/leveling/fightlab/candidates/derived-arcane.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "arcane-leveling",
+    "model": "frost-leveling",
+    "tree": "Arcane",
+    "start": "arcane-leveling",
+    "starts": {
+     "arcane-leveling": 29.018623257581968,
+     "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/derived-arcane-scorer.json": 29.018623257581968,
+     "/home/user/wow-forever/mage/research/leveling/fightlab/candidates/arcane-blast-leveling-start.json": 31.026593046304985
+    },
+    "moves": [
+     {
+      "round": 1,
+      "move": "2 points Improved Counterspell -> Arcane Impact",
+      "gain_seed1": 0.01877674104604954,
+      "gain_seed2": 0.013120787354855667
+     },
+     {
+      "round": 2,
+      "move": "1 point Magic Absorption -> Arcane Impact",
+      "gain_seed1": 0.009069781834154411,
+      "gain_seed2": 0.006470948804712218
+     }
+    ],
+    "incumbent": "arcane-leveling",
+    "race": {
+     "incumbent": [
+      32.75974768029838,
+      {
+       "20": 31.230849458172457,
+       "30": 35.85315568772914,
+       "40": 37.95658672056091,
+       "50": 31.995108240330367,
+       "60": 28.895316590423306
+      }
+     ],
+     "search": [
+      32.66188102876957,
+      {
+       "20": 31.230849458172457,
+       "30": 35.85315568772914,
+       "40": 37.95658672056091,
+       "50": 31.981688491482977,
+       "60": 28.5802775427001
+      }
+     ],
+     "gain": 0.002987405534495835
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.002987405534495835,
+   "incumbent": "arcane-leveling",
+   "verdict": "new",
+   "levels": {
+    "20": 31.230849458172457,
+    "30": 35.85315568772914,
+    "40": 37.95658672056091,
+    "50": 31.981688491482977,
+    "60": 28.5802775427001
+   }
+  }
+ },
+ "rogue": {
+  "Subtlety": {
+   "spec": "subtlety-leveling",
+   "model": "combat-swords-raid",
+   "tree": "Subtlety",
+   "hands": [],
+   "generated": [
+    "subtlety-leveling"
+   ],
+   "date": "2026-09-30",
+   "rotation_tuned": true,
+   "candidate": "rogue/research/leveling/fightlab/candidates/derived-subtlety.json",
+   "search": {
+    "date": "2026-09-30",
+    "spec": "subtlety-leveling",
+    "model": "combat-swords-raid",
+    "tree": "Subtlety",
+    "start": "subtlety-leveling",
+    "starts": {
+     "subtlety-leveling": 28.726800000108845,
+     "/home/user/wow-forever/rogue/research/leveling/fightlab/candidates/derived-subtlety-scorer.json": 28.726800000108845
+    },
+    "moves": [],
+    "incumbent": "subtlety-leveling",
+    "race": {
+     "incumbent": [
+      26.505119700200453,
+      {
+       "20": 19.20283333322665,
+       "30": 23.275466666576904,
+       "40": 27.248900000052945,
+       "50": 28.097066666750763,
+       "60": 28.7315656673099
+      }
+     ],
+     "search": [
+      26.505119700200453,
+      {
+       "20": 19.20283333322665,
+       "30": 23.275466666576904,
+       "40": 27.248900000052945,
+       "50": 28.097066666750763,
+       "60": 28.7315656673099
+      }
+     ],
+     "gain": 0.0
+    },
+    "fights": 800,
+    "confirm": 3000
+   },
+   "gain": 0.0,
+   "incumbent": "subtlety-leveling",
+   "verdict": "generated stays",
+   "levels": {
+    "20": 19.20283333322665,
+    "30": 23.275466666576904,
+    "40": 27.248900000052945,
+    "50": 28.097066666750763,
+    "60": 28.7315656673099
+   }
+  }
+ }
+}
