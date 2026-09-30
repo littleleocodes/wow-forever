@@ -1,0 +1,222 @@
+{
+ "id": "arcane-blast-leveling-start",
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Geometry",
+    2
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Improved Counterspell",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Power",
+    1
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Wake of Fire",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Frost Warding",
+    2
+   ],
+   [
+    "Elemental Precision",
+    3
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ]
+  ]
+ },
+ "order": [
+  {
+   "levels": "10-14",
+   "tree": "Arcane",
+   "talent": "Improved Channeling",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Arcane",
+   "talent": "Arcane Blast",
+   "points": 1
+  },
+  {
+   "levels": "21-23",
+   "tree": "Arcane",
+   "talent": "Arcane Impact",
+   "points": 3
+  },
+  {
+   "levels": "24",
+   "tree": "Arcane",
+   "talent": "Arcane Geometry",
+   "points": 1
+  },
+  {
+   "levels": "25",
+   "tree": "Arcane",
+   "talent": "Missile Barrage",
+   "points": 1
+  },
+  {
+   "levels": "26-28",
+   "tree": "Arcane",
+   "talent": "Arcane Meditation",
+   "points": 3
+  },
+  {
+   "levels": "29",
+   "tree": "Arcane",
+   "talent": "Improved Counterspell",
+   "points": 1
+  },
+  {
+   "levels": "30",
+   "tree": "Arcane",
+   "talent": "Presence of Mind",
+   "points": 1
+  },
+  {
+   "levels": "31-34",
+   "tree": "Arcane",
+   "talent": "Arcane Mind",
+   "points": 4
+  },
+  {
+   "levels": "35-37",
+   "tree": "Arcane",
+   "talent": "Arcane Instability",
+   "points": 3
+  },
+  {
+   "levels": "38",
+   "tree": "Arcane",
+   "talent": "Arcane Mind",
+   "points": 1
+  },
+  {
+   "levels": "39",
+   "tree": "Arcane",
+   "talent": "Arcane Focus",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Arcane",
+   "talent": "Arcane Power",
+   "points": 1
+  },
+  {
+   "levels": "41-44",
+   "tree": "Arcane",
+   "talent": "Arcane Focus",
+   "points": 4
+  },
+  {
+   "levels": "45",
+   "tree": "Arcane",
+   "talent": "Arcane Geometry",
+   "points": 1
+  },
+  {
+   "levels": "46-48",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 3
+  },
+  {
+   "levels": "49-50",
+   "tree": "Fire",
+   "talent": "Wake of Fire",
+   "points": 2
+  },
+  {
+   "levels": "51-52",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "53-55",
+   "tree": "Frost",
+   "talent": "Elemental Precision",
+   "points": 3
+  },
+  {
+   "levels": "56-58",
+   "tree": "Frost",
+   "talent": "Frostbite",
+   "points": 3
+  },
+  {
+   "levels": "59-60",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  }
+ ],
+ "note": "2026-09-30: an Arcane Blast leveling build written with the arcane-leveling fight-lab rotation (Arcane 36 with Blast, Missile Barrage, Presence of Mind, Arcane Power, Improved Channeling 5, Arcane Impact 3; 5 Fire, 10 Frost): a start for derive_leveling.py, whose scorer (the Frost leveling model) under-values Arcane talents."
+}

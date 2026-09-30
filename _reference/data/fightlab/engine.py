@@ -427,6 +427,14 @@ class BaseModule:
         """The player parried the mob's swing (Counterattack)."""
         pass
 
+    def block_bonus(self, fight):
+        """Temporary block chance from buffs (Shield Block); only read when the player has a shield (`Player.block` > 0)."""
+        return 0.0
+
+    def on_block(self, fight):
+        """The player blocked the mob's swing with a shield (Revenge, Shield Specialization's rage)."""
+        pass
+
     def evocation(self, p, t):
         return 0.0
 
@@ -1145,11 +1153,24 @@ class Fight:
             elif parry > 0 and roll > 1.0 - dodge - parry:
                 self.mod.on_parry(self)
             return
+        # shield block (only with a shield: Player.block > 0): the slice of the hit range just below the misses; a blocked hit
+        # cannot crit and loses the block value after armor (Classic attack table). No extra random draw, so shieldless runs are unchanged.
+        blocked = False
+        if p.block > 0:
+            block = p.block + self.mod.block_bonus(self)
+            blocked = roll > MOB_HIT_CHANCE - dodge - parry - block
         pre_armor = m.dmg * self.rng.uniform(1 - MOB_DMG_SPREAD, 1 + MOB_DMG_SPREAD)
         if m.dmg_reduction > 0 and self.t < m.dmg_reduction_until:
             pre_armor = max(0.0, pre_armor - m.dmg_reduction)
         dmg = pre_armor * (1.0 - armor_mitigation(p.armor + self.mod.armor_bonus(), m.level))
         crit_taken = self.rng.random() < MOB_CRIT_CHANCE
+        if blocked:
+            crit_taken = False
+            full = dmg
+            dmg = max(0.0, dmg - p.block_value)
+            pre_armor *= dmg / full if full > 0 else 0.0   # rage from damage taken: only the part that got through
+            self.note(f"blocked {full - dmg:.0f}")
+            self.mod.on_block(self)
         if crit_taken:
             dmg *= 2.0
         absorbed = 0.0

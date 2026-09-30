@@ -9,13 +9,23 @@ Playstyle `combat-swords-raid` (the scorer's model id, used for leveling): open 
 (Garrote before 26), Slice and Dice at 1-2 points when it is down, Sinister Strike to 5 points, Eviscerate (or Kidney
 Shot when hurt), Riposte after a parry, Blade Flurry and Adrenaline Rush on the pull when ready, Evasion when low, Gouge
 to bandage in an emergency. Between fights: a bandage below 60% health (First Aid, 60 s cooldown), food below 50%.
+
+Playstyle `subtlety-leveling` (any spec string starting with "subtlety"; 2026-09-30): a dagger in the main hand (Ambush needs
+one; Hemorrhage 145% and Ghostly Strike 180% weapon damage with a dagger make up for its 1.8 s speed, so the builders lose
+nothing against a 2.6 s sword at equal weapon dps) and in the off hand; "sword" in the spec string gives two swords instead
+(no Ambush). Premeditation (2 points) as the pull starts, then open from stealth behind the mob with Ambush or Garrote, whichever
+the module expects to be worth more (`opener_order`: Ambush in short low-level fights, Garrote once its bleed outlasts the energy
+difference; Cheap Shot without either), Slice and Dice / Eviscerate / Kidney Shot as in the Combat list, Ghostly Strike on
+cooldown, Hemorrhage as the builder (Sinister Strike without it), Riposte after a parry, Evasion when low (Preparation resets
+it when it is on cooldown). Talent effects only this playstyle applies: see SUBTLETY_MECHANICS.
 """
+import dataclasses
 import json
 import pathlib
 import re
 
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
-from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, bandage_heal, class_attack_power, class_base_health, class_base_stats, class_dodge,
+from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, armor_mitigation, bandage_heal, class_attack_power, class_base_health, class_base_stats, class_dodge,
                     class_health_regen_tick, class_melee_crit, gear_stats, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
@@ -181,6 +191,18 @@ MECHANICS = {
     "Cutthroat": "daggers",
     "Thousand Cuts": "daggers / Hemorrhage",
 }
+# Talent effects the Subtlety playstyle adds (spec strings starting with "subtlety"); the Combat playstyles keep MECHANICS as it is.
+SUBTLETY_MECHANICS = {
+    "Hemorrhage": "the builder: 100% weapon damage, 145% with a dagger main hand (the Rupture bonus is unused: no Rupture)",
+    "Ghostly Strike": "on cooldown (20 s): 125% weapon damage, 180% with a dagger main hand, +15% dodge for 7 s",
+    "Premeditation": "2 combo points as the pull starts (2 min cooldown, off the global cooldown during the approach)",
+    "Preparation": "resets Evasion (and Premeditation, Ghostly Strike) when Evasion is wanted but on cooldown (10 min)",
+    "Improved Ambush": "+15%/rank crit on Ambush",
+    "Opportunity": "+5%/rank Backstab, Garrote, Ambush",
+    "Initiative": "33%/rank: an extra combo point on Ambush, Cheap Shot, Garrote",
+    "Serrated Blades": "attacks ignore 3%/rank of the mob's armor (Rupture bonus unused)",
+    "Quietus": "+2%/rank Sinister Strike, Ghostly Strike, Hemorrhage below 35%",
+}
 FIT = {
     "Malice": "scale", "Ruthlessness": "scale", "Murder": "scale", "Improved Slice and Dice": "scale", "Relentless Strikes": "scale", "Lethality": "scale",
     "Improved Eviscerate": "scale", "Improved Sinister Strike": "scale", "Lightning Reflexes": "scale", "Deflection": "scale", "Precision": "scale",
@@ -224,12 +246,23 @@ class RogueModule(BaseModule):
         self.t = {k: v for k, v in talents.items() if v > 0}
         self.level = level
         self.spec = spec
+        self.sub = spec.startswith("subtlety")
         self.gear = gear
         self.book = {name: self.rank_at(name) for name in BOOK}
         self.spells = {n: s for n, s in self.book.items() if s is not None}
         for tname, sname in TALENT_SPELLS.items():
             if not self.t.get(tname):
                 self.spells.pop(sname, None)
+        if self.sub:
+            dagger = "sword" not in spec
+            self.mh_dagger = dagger
+            if not dagger:
+                self.spells.pop("Ambush", None)
+                self.spells.pop("Backstab", None)
+            for sname, pct in (("Hemorrhage", 1.45 if dagger else 1.0), ("Ghostly Strike", 1.80 if dagger else 1.25)):
+                if sname in self.spells:   # copies: BOOK's Spell objects are shared by every module instance
+                    self.spells[sname] = dataclasses.replace(self.spells[sname], weapon_pct=pct)
+                    self.spells[sname].text = self.book[sname].text
         self._fight = None
         self.opened = False
         self.armor_spell_used = "Instant Poison / Deadly Poison" if "Instant Poison" in self.spells else "none"
@@ -270,7 +303,10 @@ class RogueModule(BaseModule):
         p.melee_crit = class_melee_crit("rogue", level, agility) + self.tv("Malice", 0) / 100
         p.hit_bonus = self.tv("Precision", 0) / 100
         p.parry = 0.05 + self.tv("Deflection", 0) / 100
-        kind = "dagger" if "dagger" in self.spec else "1h"   # daggers builds carry two daggers (1.8 s); the priority list is the same (no Backstab from the front)
+        if self.sub:
+            kind = "dagger" if self.mh_dagger else "1h"
+        else:
+            kind = "dagger" if "dagger" in self.spec else "1h"   # daggers builds carry two daggers (1.8 s); the priority list is the same (no Backstab from the front)
         dps = weapon_dps(level, kind)
         p.mh = Weapon(dmg_min=dps * WEAPON_SPEED[kind] * 0.8, dmg_max=dps * WEAPON_SPEED[kind] * 1.2, speed=WEAPON_SPEED[kind], kind=kind)
         p.oh = Weapon(dmg_min=dps * WEAPON_SPEED[kind] * 0.8, dmg_max=dps * WEAPON_SPEED[kind] * 1.2, speed=WEAPON_SPEED[kind], kind=kind)
@@ -303,6 +339,8 @@ class RogueModule(BaseModule):
             c += 1.0
         if f and spell.name == "Sinister Strike" and f.p.buff("Remorseless", f.t):
             c += self.tv("Remorseless Attacks", 0) / 100
+        if self.sub and spell.name == "Ambush":
+            c += self.tv("Improved Ambush", 0) / 100
         return c
 
     def crit_damage_bonus(self, spell):
@@ -326,6 +364,11 @@ class RogueModule(BaseModule):
             m *= avg / ((lo5 + hi5) / 2)
         if spell.name == "Sinister Strike" and f and f.m.hp < 0.35 * f.m.hp_max:
             m *= 1 + self.tv("Quietus", 0) / 100
+        if self.sub:
+            if spell.name in ("Ghostly Strike", "Hemorrhage") and f and f.m.hp < 0.35 * f.m.hp_max:
+                m *= 1 + self.tv("Quietus", 0) / 100
+            if spell.name in ("Ambush", "Garrote", "Backstab"):
+                m *= 1 + self.tv("Opportunity", 0) / 100
         if spell.school == "nature":
             m *= 1 + self.tv("Vile Poisons", 0) / 100
         if spell.name == "Rupture":
@@ -384,6 +427,16 @@ class RogueModule(BaseModule):
         if cb is not None and p.ready("Cold Blood", t):
             p.buffs["Cold Blood"] = {"until": t + 60.0}
             p.cooldowns["Cold Blood"] = t + cb.cooldown
+        if self.sub:
+            ignore = self.tv("Serrated Blades", 0) / 100
+            if ignore:
+                for mob in [m] + list(fight.others()):
+                    mob.armor_debuff = max(mob.armor_debuff, mob.armor * ignore)
+            pm = self.spells.get("Premeditation")
+            if pm is not None and p.ready("Premeditation", t):   # cast on the approach (20 yd), before the opener
+                p.combo = min(5, p.combo + 2)
+                p.cooldowns["Premeditation"] = t + pm.cooldown
+                fight.casts["Premeditation"] = fight.casts.get("Premeditation", 0) + 1
 
     def on_regen_tick(self, fight, p, t):
         if p.buff("Adrenaline Rush", t):
@@ -403,7 +456,7 @@ class RogueModule(BaseModule):
 
     def on_swing(self, fight, spell, outcome, amount, hand):
         p, m, t = fight.p, fight.m, fight.t
-        if spell.name in ("Cheap Shot", "Garrote", "Kidney Shot"):
+        if spell.name in ("Cheap Shot", "Garrote", "Kidney Shot", "Ambush"):
             self.opened = True
         if outcome == "parry" and "Riposte" in self.spells:
             p.buffs["Riposte"] = {"until": t + 5.0}
@@ -428,7 +481,7 @@ class RogueModule(BaseModule):
             fight._extra = False
         if outcome == "crit" and spell.combo > 0 and self.rank("Seal Fate") and fight.rng.random() < self.tv("Seal Fate", 0) / 100:
             p.combo = min(5, p.combo + 1)
-        if spell.name in ("Cheap Shot", "Garrote") and self.rank("Initiative") and fight.rng.random() < self.tv("Initiative", 0) / 100:
+        if spell.name in ("Cheap Shot", "Garrote", "Ambush") and self.rank("Initiative") and fight.rng.random() < self.tv("Initiative", 0) / 100:
             p.combo = min(5, p.combo + 1)
 
     def poison_hit(self, fight, ip):
@@ -466,6 +519,13 @@ class RogueModule(BaseModule):
             p.buffs.pop("Cold Blood", None)
         if spell.name == "Sinister Strike":
             p.buffs.pop("Remorseless", None)
+        if self.sub:
+            if spell.name == "Ghostly Strike":
+                p.buffs["Ghostly Strike"] = {"until": t + 7.0}
+            if spell.name == "Preparation":
+                for n in ("Evasion", "Premeditation", "Ghostly Strike", "Vanish", "Sprint", "Cold Blood", "Kick", "Gouge", "Kidney Shot", "Riposte", "Blind"):
+                    p.cooldowns.pop(n, None)
+                fight.note("Preparation: cooldowns reset")
 
     def on_dodge(self, fight):
         if self.rank("Setup") and fight.rng.random() < self.tv("Setup", 0) / 100:
@@ -488,6 +548,8 @@ class RogueModule(BaseModule):
         p.buffs.pop("Slice and Dice", None)
         p.buffs.pop("Blade Flurry", None)
         p.buffs.pop("Adrenaline Rush", None)
+        if self.sub:
+            p.buffs.pop("Ghostly Strike", None)
         if p.hp < 0.60 * p.hp_max and p.cooldowns.get("Bandage", -1.0) <= t:
             p.hp = min(p.hp_max, p.hp + bandage_heal(p.level))
             p.cooldowns["Bandage"] = t + 60.0
@@ -500,6 +562,8 @@ class RogueModule(BaseModule):
             r = self.decide_aoe(fight)
             if r is not None:
                 return r
+        if self.sub:
+            return self.decide_subtlety(fight)
         p, m, t = fight.p, fight.m, fight.t
         sp = self.spells
 
@@ -538,4 +602,79 @@ class RogueModule(BaseModule):
                 return evis
         if ss and can(ss):
             return ss
+        return None
+
+    def opener_order(self, fight, amb, gar, builder):
+        """Ambush or Garrote first, whichever is worth more: its expected damage minus the energy it costs (valued at the damage
+        per energy of a builder-to-5-points-then-Eviscerate cycle). Garrote's bleed ignores armor and costs less (Dirty Deeds), but
+        it only pays for the ticks the mob lives through, so Ambush wins in short low-level fights. Cheap Shot is the fallback."""
+        if amb is None or gar is None or builder is None:
+            return [amb, gar]
+        p, m = fight.p, fight.m
+        w = (p.mh.dmg_min + p.mh.dmg_max) / 2 + p.attack_power / 14.0 * p.mh.speed
+        armor = 1.0 - armor_mitigation(m.effective_armor(), p.level)
+        crit = p.melee_crit
+        b_dmg = (builder.weapon_pct * w + (builder.dmg_min + builder.dmg_max) / 2) * (1 + crit) * armor
+        b_cost = max(1.0, self.mana_cost(builder))
+        cyc_dmg, cyc_cost = 5 * b_dmg, 5 * b_cost
+        evis = self.spells.get("Eviscerate")
+        if evis is not None:
+            lo5, hi5 = evis.evis
+            cyc_dmg += ((lo5 + hi5) / 2 + 0.15 * p.attack_power) * (1 + self.tv("Improved Eviscerate", 0) / 100) * (1 + crit) * armor
+            cyc_cost += self.mana_cost(evis)
+        dpe = cyc_dmg / cyc_cost
+        opp = 1 + self.tv("Opportunity", 0) / 100
+        v_amb = (amb.weapon_pct * w + (amb.dmg_min + amb.dmg_max) / 2) * (1 + min(1.0, crit + self.tv("Improved Ambush", 0) / 100)) * armor * opp - dpe * self.mana_cost(amb)
+        # expected fight length: white swings (both hands, ~25% missed or avoided), 10 energy a second at the cycle's rate, the bleed
+        white = w / p.mh.speed * (1 + (0.5 if p.oh is not None else 0.0)) * (1 + crit) * armor * 0.75
+        fight_len = m.hp / max(1.0, white + dpe * 10.0 + gar.dot / max(1.0, gar.dot_dur))
+        v_gar = gar.dot * opp * min(1.0, fight_len / max(1.0, gar.dot_dur)) - dpe * self.mana_cost(gar)
+        return [amb, gar] if v_amb >= v_gar else [gar, amb]
+
+    def decide_subtlety(self, fight):
+        """Subtlety leveling: Ambush opener (Premeditation's points already on the mob), Ghostly Strike on cooldown, Hemorrhage builder."""
+        p, m, t = fight.p, fight.m, fight.t
+        sp = self.spells
+
+        def can(s):
+            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+
+        amb, cs, gar, hemo, gs, ss, evis, snd, ks, rip, eva, prep = (sp.get(n) for n in (
+            "Ambush", "Cheap Shot", "Garrote", "Hemorrhage", "Ghostly Strike", "Sinister Strike", "Eviscerate", "Slice and Dice",
+            "Kidney Shot", "Riposte", "Evasion", "Preparation"))
+        hp = m.hp
+        if not self.opened:
+            for s in self.opener_order(fight, amb, gar, hemo or ss) + [cs]:
+                if s is not None and can(s):
+                    return s
+            self.opened = True
+        if eva and p.hp < 0.50 * p.hp_max and hp > 0.3 * m.hp_max and not p.buff("Evasion", t):
+            if can(eva):
+                return eva
+            if prep and can(prep):
+                return prep
+        kick = sp.get("Kick")
+        if m.caster and m.casting(t) and kick and can(kick):
+            return kick
+        if rip and can(rip) and p.buff("Riposte", t):
+            return rip
+        if evis and can(evis) and p.combo >= 1:
+            lo1, hi1 = evis.evis1
+            lo5, hi5 = evis.evis
+            est = ((lo1 + hi1) / 2 + ((lo5 + hi5) / 2 - (lo1 + hi1) / 2) * (p.combo - 1) / 4 + 0.03 * p.combo * p.attack_power) * (1 + self.tv("Improved Eviscerate", 0) / 100) * (1 - 0.35)
+            if hp <= est * 0.95:
+                return evis
+        if snd and can(snd) and p.combo >= 1 and not p.buff("Slice and Dice", t) and hp > 0.5 * m.hp_max and (p.combo <= 2 or hp > 0.8 * m.hp_max):
+            return snd
+        if p.combo >= 5:
+            if ks and can(ks) and p.hp < 0.6 * p.hp_max and not m.stunned(t) and hp > 0.25 * m.hp_max:
+                return ks
+            if evis and can(evis):
+                return evis
+            return None   # pool energy for the finisher rather than waste a builder's point
+        if gs and can(gs):
+            return gs
+        builder = hemo or ss
+        if builder and can(builder):
+            return builder
         return None

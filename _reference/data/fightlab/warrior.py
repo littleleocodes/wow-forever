@@ -8,14 +8,18 @@ Playstyle `arms-2h-raid` (the scorer's model id, used for leveling): Bloodrage a
 Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge (or a Bloodthrill proc), Rend once, Execute
 under 20%, Heroic Strike with spare rage; Battle Stance throughout. Between fights: a bandage below 60% health (First Aid,
 60 s cooldown), food below 50%.
+
+Playstyle `prot-leveling` (any spec string starting with "prot"): sword and board in Defensive Stance, see `decide_prot` and
+PROT_NOTES below. Every other spec string runs exactly as before (the shield code is behind `self.prot`).
 """
 import json
 import pathlib
 import re
 
+import tables
 from engine import parse_interrupt, BaseModule, Player, Spell, Weapon
 from tables import (GCD, MELEE_RANGE, WEAPON_SPEED, bandage_heal, class_attack_power, class_base_health, class_base_stats, class_dodge,
-                    class_health_regen_tick, class_melee_crit, gear_stats, weapon_dps)
+                    class_health_regen_tick, class_melee_crit, gear_stats, interp, weapon_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 SPELLBOOK = json.load(open(ROOT / "_reference/data/forever-spells/warrior.json", encoding="utf-8"))
@@ -188,6 +192,30 @@ NEW_SOURCES = {'cleave': {'id': 'cleave', 'share': 0.0, 'min_level': 20, 'tags':
                "deep_wounds": {"id": "deep_wounds", "share": 0.0, "min_level": 20, "tags": ["type:melee", "dot", "school:physical", "ability:Deep Wounds", "weapon:2h"], "can_crit": False},
                "victory_rush": {"id": "victory_rush", "share": 0.0, "min_level": 20, "tags": ["type:melee", "yellow", "school:physical", "ability:Victory Rush", "weapon:2h"], "cooldown": 30}}
 KEY_TALENTS = ["Mortal Strike", "Deep Wounds", "Cruelty"]
+
+# ---------------------------------------------------------------- Protection leveling (spec "prot-leveling"): sword and board
+# Shield by level: median armor and item level of the green (GEAR_TIER "greens") or blue shields a warrior can wear with required
+# level in the gear_stats.py lag window (Classic 1.12 item database, raw/2026-09-26-cmangos-classic-db-z2815/item_stats.csv, class 4
+# subclass 6; random-property greens included, their armor is fixed). Classic data, a Forever assumption.
+SHIELD_GEAR = {
+    "greens": [(10, 274, 13), (15, 353, 16.5), (20, 428, 21), (25, 528, 27), (30, 611, 32), (35, 678, 36), (40, 1051, 41), (45, 1436, 46),
+               (50, 1578, 51), (55, 1734, 56.5), (60, 1861, 61)],
+    "blues": [(10, 471, 20), (15, 509, 22), (20, 509, 22), (25, 594.5, 26.5), (30, 680, 30), (35, 785.5, 36.5), (40, 1287, 42), (45, 1612, 46),
+              (50, 1851, 52.5), (55, 1994, 58), (60, 2121, 62)],
+}
+SHIELD_BLOCK_PER_ILVL = 0.65   # ASSUMPTION: the archived item CSV has no block column; Classic shields block about 0.65 x item level
+                               # (about 40 at item level 62). Plus Strength / 20 (Classic 1.12 block value per Strength).
+BASE_BLOCK = 0.05              # Classic: 5% block with a shield against a same-level mob
+DEFENSE_PER_POINT = 0.0004     # Classic: +0.04% dodge, parry and block per Defense point (Anticipation); the miss share is left out
+REVENGE_WINDOW = 5.0           # Classic: Revenge is usable for 5 s after a block, dodge or parry (the Forever tooltip gives no window)
+SHIELD_BLOCK_TXT = __import__("re").compile(r"block by (\d+)% for (\d+) sec, but will only block (\d+) attack")
+TC_TXT = __import__("re").compile(r"by (\d+)% for (\d+) sec")
+DEMO_TXT = __import__("re").compile(r"attack power of all enemies within \d+ yards by (\d+) for (\d+) sec")
+SUNDER_TXT = __import__("re").compile(r"reducing it by (\d+) per Sunder Armor")
+PROT_NOTES = ("Protection leveling (sword and board): a one-hander (tables.weapon_dps '1h', 2.6 s) and a shield (SHIELD_GEAR armor, block "
+              "5% + Shield Specialization + Defense, block value 0.65 x item level + Strength / 20), Defensive Stance (-10% damage taken and "
+              "dealt), Charge from Battle Stance (Defensive with Vanguard) then a stance swap keeping Tactical Mastery's rage.")
+
 DESCRIPTION = ("Single-target leveling fights against normal mobs of your level with a two-hander in Battle Stance: Bloodrage and Charge on the pull (the mob is stunned 1 s), "
                "Battle Shout kept up, Victory Rush after a kill, Mortal Strike on cooldown, Overpower after a dodge or a Bloodthrill proc, Rend once, Execute under 20% "
                "with all the rage, Heroic Strike with spare rage, white swings that generate rage by Classic's formula (the mob dodges 5%, parries 5%, 10% of swings "
@@ -220,6 +248,11 @@ class WarriorModule(BaseModule):
         self.execute_extra = 0.0
         self.flurry_swings = 0
         self.armor_spell_used = "Battle Stance"
+        self.prot = spec.startswith("prot")
+        if self.prot:   # sword and board: Defensive Stance; Whirlwind (Berserker Stance) is out of the area priority
+            self.armor_spell_used = "Defensive Stance"
+            self.AOE = {'direct': ['Thunder Clap', 'Cleave'], 'min_near': 2}
+            self.stance = "Defensive Stance"
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -249,7 +282,13 @@ class WarriorModule(BaseModule):
         agility = base["agility"] + g["agility"]
         stamina = base["stamina"] + g["stamina"]
         spirit = base["spirit"] + g["spirit"]
-        armor = g["armor"] * (1 + self.tv("Toughness", 0) / 100)
+        if self.prot:   # Toughness counts the shield's armor too (armor from items)
+            sh = SHIELD_GEAR.get(tables.GEAR_TIER if self.gear == "leveling" else self.gear, SHIELD_GEAR["greens"])
+            sh_armor = interp([(L, a) for L, a, _ in sh], level) * (1 + (tables.GEAR_STAT_MULT - 1) / 2)
+            sh_ilvl = interp([(L, i) for L, _, i in sh], level)
+            armor = (g["armor"] + sh_armor) * (1 + self.tv("Toughness", 0) / 100)
+        else:
+            armor = g["armor"] * (1 + self.tv("Toughness", 0) / 100)
         p = Player(level=level, hp_max=class_base_health("warrior", level) + 10 * stamina, hp=0.0, mana_max=0.0, mana=0.0, base_mana=0.0,
                    spirit=spirit, intellect=base["intellect"], spell_power=0.0, armor=armor, spell_crit=0.0,
                    dodge=class_dodge("warrior", level, agility), ranged_crit=0.0)
@@ -260,7 +299,16 @@ class WarriorModule(BaseModule):
         p.hit_bonus = self.tv("Precision", 0) / 100
         p.parry = 0.05 + self.tv("Deflection", 0) / 100
         p.dodge -= 0.0
-        if self.spec.startswith("fury"):   # Fury: two one-handers (the dual-wield miss penalty and off-hand halving are the engine's)
+        if self.prot:   # sword and board: one one-hander and a shield (Anticipation's Defense adds dodge, parry and block)
+            dps = weapon_dps(level, "1h")
+            p.mh = Weapon(dmg_min=dps * WEAPON_SPEED["1h"] * 0.8, dmg_max=dps * WEAPON_SPEED["1h"] * 1.2, speed=WEAPON_SPEED["1h"], kind="1h")
+            defense = self.tv("Anticipation", 0) * DEFENSE_PER_POINT
+            p.dodge += defense
+            p.parry += defense
+            p.block = BASE_BLOCK + self.tv("Shield Specialization", 0) / 100 + defense
+            p.block_value = SHIELD_BLOCK_PER_ILVL * sh_ilvl + strength / 20.0
+            p.form = "Defensive Stance"
+        elif self.spec.startswith("fury"):   # Fury: two one-handers (the dual-wield miss penalty and off-hand halving are the engine's)
             dps = weapon_dps(level, "1h")
             p.mh = Weapon(dmg_min=dps * WEAPON_SPEED["1h"] * 0.8, dmg_max=dps * WEAPON_SPEED["1h"] * 1.2, speed=WEAPON_SPEED["1h"], kind="1h")
             p.oh = Weapon(dmg_min=dps * WEAPON_SPEED["1h"] * 0.8, dmg_max=dps * WEAPON_SPEED["1h"] * 1.2, speed=WEAPON_SPEED["1h"], kind="1h")
@@ -282,6 +330,11 @@ class WarriorModule(BaseModule):
             cost = max(0.0, cost - self.tv("Improved Heroic Strike", 0))
         if spell.name == "Execute":
             cost = max(0.0, cost - self.tv("Improved Execute", 0))
+        if self.prot:
+            if spell.name == "Thunder Clap":
+                cost = max(0.0, cost - self.tv("Improved Thunder Clap", 0))
+            if spell.name == "Sunder Armor":
+                cost = max(0.0, cost - self.tv("Improved Sunder Armor", 0))
         if spell.resource == "rage" and cost > 0 and spell.kind == "melee":
             cost = max(0.0, cost - self.tv("Focused Rage", 0))
         return cost
@@ -304,7 +357,17 @@ class WarriorModule(BaseModule):
         return 0.0
 
     def damage_multiplier(self, spell, frozen):
-        m = 1 + self.tv("Two-Handed Weapon Specialization", 0) / 100
+        if self.prot:   # no two-hander; Bastion with the shield; Defensive Stance deals 10% less
+            m = 1 + self.tv("Bastion", 0) / 100
+            if self.stance == "Defensive Stance":
+                m *= 0.90
+            if spell.name == "Revenge":
+                m *= 1 + self.tv("Improved Revenge", 0) / 100
+            if spell.name == "Shield Slam" and spell.dmg_max > 0:   # "increased by your Block Value"
+                avg = (spell.dmg_min + spell.dmg_max) / 2
+                m *= (avg + self._fight.p.block_value) / avg if self._fight else 1.0
+        else:
+            m = 1 + self.tv("Two-Handed Weapon Specialization", 0) / 100
         f = self._fight
         if f and f.p.buff("Enrage", f.t):
             m *= 1 + self.tv("Enrage", 1) / 100   # +2%/rank (70009); was a flat +10% at every rank
@@ -318,6 +381,48 @@ class WarriorModule(BaseModule):
 
     def periodic_can_crit(self, spell):
         return True
+
+    def split_damage_taken(self, fight, dmg):
+        if self.prot and self.stance == "Defensive Stance":
+            return dmg * 0.90   # Defensive Stance: "Decreases damage taken by 10%" (melee and spells)
+        return dmg
+
+    def block_bonus(self, fight):
+        b = fight.p.buffs.get("Shield Block") if self.prot else None
+        if b and b["until"] > fight.t and b.get("charges", 0) > 0:
+            return b["chance"]
+        return 0.0
+
+    def _avoided(self, fight):
+        if self.stance == "Defensive Stance" and "Revenge" in self.spells:
+            fight.p.buffs["Revenge"] = {"until": fight.t + REVENGE_WINDOW}
+
+    def on_block(self, fight):
+        if not self.prot:
+            return
+        p = fight.p
+        b = p.buffs.get("Shield Block")
+        if b and b["until"] > fight.t and b.get("charges", 0) > 0:
+            b["charges"] -= 1
+            if b["charges"] <= 0:
+                p.buffs.pop("Shield Block", None)
+        if self.rank("Shield Specialization") and fight.rng.random() < self.tv("Shield Specialization", 1) / 100:
+            p.rage = min(p.rage_max, p.rage + self.tv("Shield Specialization", 2))
+        self._avoided(fight)
+
+    def _master_of_defense(self, fight):
+        if self.rank("Master of Defense") and fight.rng.random() < self.tv("Master of Defense", 0) / 100:
+            fight.p.rage = min(fight.p.rage_max, fight.p.rage + self.tv("Master of Defense", 1))
+
+    def on_dodge(self, fight):
+        if self.prot:
+            self._master_of_defense(fight)
+            self._avoided(fight)
+
+    def on_parry(self, fight):
+        if self.prot:
+            self._master_of_defense(fight)
+            self._avoided(fight)
 
     def health_regen(self, p):
         return class_health_regen_tick("warrior", p.spirit)
@@ -337,6 +442,8 @@ class WarriorModule(BaseModule):
         self._fight = fight
         p, t = fight.p, fight.t
         self.flurry_swings = 0
+        if self.prot:
+            self.prot_fight_start(fight)
         br = self.spells.get("Bloodrage")
         if br is not None and p.ready("Bloodrage", t) and p.hp > 0.45 * p.hp_max:
             gain = 10.0 * (1 + self.tv("Improved Bloodrage", 0) / 100)
@@ -369,6 +476,25 @@ class WarriorModule(BaseModule):
             p.buffs.pop("Victory Rush", None)
         if spell.name == "Berserker Rage" and self.rank("Improved Berserker Rage"):
             p.rage = min(p.rage_max, p.rage + 10.0)
+        if self.prot:
+            if spell.name == "Revenge":
+                p.buffs.pop("Revenge", None)
+            near = [x for x in fight.alive() if x is m or x.in_melee]   # the pull's mobs next to the warrior
+            if spell.name == "Thunder Clap":   # the engine's attack slow is a flat 25% longer swing time (tooltip: 20%)
+                mt = TC_TXT.search(spell.text or "")
+                for x in near[:4]:
+                    x.attack_slow_until = t + (float(mt.group(2)) if mt else 10.0)
+            if spell.name == "Demoralizing Shout":   # attack power / 14 x the mob's 2 s swing off every hit (as the druid's Roar)
+                md = DEMO_TXT.search(spell.text or "")
+                if md:
+                    for x in near:
+                        x.dmg_reduction = float(md.group(1)) / 14.0 * tables.MOB_SWING
+                        x.dmg_reduction_until = t + float(md.group(2))
+            if spell.name == "Sunder Armor":
+                ms = SUNDER_TXT.search(spell.text or "")
+                n = min(5, getattr(m, "sunders", 0) + 1)
+                m.sunders = n
+                m.armor_debuff = n * (float(ms.group(1)) if ms else 0.0)
 
     def on_swing(self, fight, spell, outcome, amount, hand):
         p, m, t = fight.p, fight.m, fight.t
@@ -378,7 +504,7 @@ class WarriorModule(BaseModule):
             return
         weapon_hit = spell.name == "Melee" or spell.weapon_pct > 0
         if weapon_hit and self.rank("Unbridled Wrath") and fight.rng.random() < self.tv("Unbridled Wrath", 0) / 100:
-            p.rage = min(p.rage_max, p.rage + 2.0)
+            p.rage = min(p.rage_max, p.rage + (1.0 if self.prot else 2.0))   # "increased to 2 Rage for two-handed weapons"
         if spell.name == "Melee" and self.rank("Bloodthrill") and fight.dot_active("Rend") and fight.rng.random() < self.tv("Bloodthrill", 0) / 100:
             p.buffs["Overpower"] = {"until": t + 6.0}
         if outcome == "crit":
@@ -423,6 +549,9 @@ class WarriorModule(BaseModule):
         """Bandage below 60% health (First Aid by level, 8 s, 60 s cooldown); Bloodrage's trickle is dropped between fights."""
         p.buffs.pop("Bloodrage", None)
         p.buffs.pop("Enrage", None)
+        if self.prot:
+            p.buffs.pop("Revenge", None)
+            p.buffs.pop("Shield Block", None)
         if p.hp < 0.60 * p.hp_max and p.cooldowns.get("Bandage", -1.0) <= t:
             p.hp = min(p.hp_max, p.hp + bandage_heal(p.level))
             p.cooldowns["Bandage"] = t + 60.0
@@ -431,6 +560,8 @@ class WarriorModule(BaseModule):
 
     # ------------------------------------------------------------ priority list
     def decide(self, fight):
+        if self.prot:
+            return self.decide_prot(fight)
         if fight.others():   # a pull of several mobs: the area priority first (engine.BaseModule.decide_aoe, AOE below)
             r = self.decide_aoe(fight)
             if r is not None:
@@ -477,5 +608,113 @@ class WarriorModule(BaseModule):
             return rend
         reserve = 30.0 if (ms and p.cooldowns.get("Mortal Strike", 0) - t < 3.0) else 0.0
         if hs and fight.queued_swing is None and p.rage >= self.mana_cost(hs) + reserve + (15 if over and p.buff("Overpower", t) is None else 0):
+            return hs
+        return None
+
+    # ------------------------------------------------------------ Protection leveling (spec "prot-leveling")
+    PROT_OPTIONAL = ("Thunder Clap", "Demoralizing Shout", "Rend", "Sunder Armor", "Shield Block")   # rotation pieces a test can switch off
+    # off by default on a single mob (800 fights, seed 1, level 60, prot-raid-tank, 2026-09-30): Thunder Clap +1.2 s and Demoralizing
+    # Shout +1.0 s per kill for no measurable safety (no deaths either way); Sunder Armor never beat Heroic Strike for the rage.
+    # Thunder Clap stays in the area priority (self.AOE) and Demoralizing Shout is used on pulls of 2+ mobs (3 mobs: same time per
+    # kill, deaths 1.1 -> 0.75 per 100). A knob: set `prot_off` on the module (rotation_opt's knobs work too).
+    prot_off = ("Thunder Clap", "Demoralizing Shout", "Sunder Armor")
+    PROT_CB_BELOW = 0.50   # Concussion Blow when the warrior's health is below this share
+
+    def _retain(self):
+        """Rage kept through a stance change: Tactical Mastery's 10 (trained at 14) plus Improved Tactical Mastery's 3 per rank."""
+        if "Tactical Mastery" not in self.spells:
+            return 0.0
+        return 10.0 + self.tv("Improved Tactical Mastery", 0)
+
+    def _set_stance(self, fight, name):
+        """A stance change: off the global cooldown, 1 s stance cooldown, rage above what Tactical Mastery keeps is lost."""
+        p = fight.p
+        if self.stance == name or p.cooldowns.get("Stance", -1.0) > fight.t:
+            return False
+        p.rage = min(p.rage, self._retain())
+        self.stance = p.form = name
+        p.cooldowns["Stance"] = fight.t + 1.0
+        fight.casts[name] = fight.casts.get(name, 0) + 1
+        fight.note(f"{name}: {p.rage:.0f} rage kept")
+        return True
+
+    def prot_fight_start(self, fight):
+        """Charge needs Battle Stance ("Requires Battle Stance"; Vanguard: Defensive Stance too): switch before the pull."""
+        p = fight.p
+        if "Defensive Stance" not in self.spells:   # below level 10: Battle Stance only
+            self.stance = p.form = "Battle Stance"
+            return
+        if "Charge" in self.spells and p.ready("Charge", fight.t) and not self.rank("Vanguard"):
+            self._set_stance(fight, "Battle Stance")
+
+    def decide_prot(self, fight):
+        p, m, t = fight.p, fight.m, fight.t
+        sp = self.spells
+        in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
+        use = set(self.PROT_OPTIONAL) - set(self.prot_off)
+
+        def can(s):
+            return s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+
+        # Bloodrage's trickle: 1 rage per second for 10 s (as in the Arms priority)
+        br = p.buffs.get("Bloodrage")
+        if br and br["until"] > t and br.get("left", 0) > 0 and not hasattr(fight, "_br_tick"):
+            fight._br_tick = t
+        if br and br["until"] > t and br.get("left", 0) > 0 and t - fight._br_tick >= 1.0:
+            fight._br_tick = t
+            br["left"] -= 1
+            p.rage = min(p.rage_max, p.rage + 1.0)
+        charge = sp.get("Charge")
+        if not in_melee:
+            if charge and can(charge) and 8.0 <= m.dist <= 25.0 and fight.swings == 0 and not m.in_melee and (self.stance == "Battle Stance" or self.rank("Vanguard")):
+                return charge
+            return "advance"
+        ss, rev, tc, demo, rend, sunder, hs, sb, bash, shout, vr, cb = (sp.get(n) for n in (
+            "Shield Slam", "Revenge", "Thunder Clap", "Demoralizing Shout", "Rend", "Sunder Armor", "Heroic Strike", "Shield Block", "Shield Bash",
+            "Battle Shout", "Victory Rush", "Concussion Blow"))
+        hp = m.hp
+        # into Defensive Stance once the rage above what Tactical Mastery keeps is spent (Shield Slam, Rend, Thunder Clap work in both)
+        if self.stance != "Defensive Stance" and "Defensive Stance" in sp:
+            if p.rage > self._retain():
+                for s in (ss, rend if "Rend" in use and not fight.dot_active("Rend") else None,
+                          tc if "Thunder Clap" in use and t >= m.attack_slow_until else None):
+                    if can(s):
+                        return s
+            self._set_stance(fight, "Defensive Stance")
+        defensive = self.stance == "Defensive Stance"
+        if fight.others():   # a pull of several mobs: Thunder Clap / Cleave first (engine.BaseModule.decide_aoe, self.AOE)
+            r = self.decide_aoe(fight)
+            if r is not None:
+                return r
+        if bash and can(bash) and m.casting(t):
+            return bash
+        # Shield Block: off the global cooldown, only while the mob swings at the warrior
+        if defensive and "Shield Block" in use and sb and can(sb) and m.target == "player" and not m.stunned(t) and not p.buff("Shield Block", t):
+            mt = SHIELD_BLOCK_TXT.search(sb.text or "")
+            chance, dur, charges = (float(mt.group(1)) / 100, float(mt.group(2)), int(mt.group(3))) if mt else (0.75, 5.0, 1)
+            fight.spend(self.mana_cost(sb), sb)
+            p.buffs["Shield Block"] = {"until": t + dur, "charges": charges, "chance": chance}
+            p.cooldowns["Shield Block"] = t + sb.cooldown
+            fight.casts["Shield Block"] = fight.casts.get("Shield Block", 0) + 1
+        if shout and can(shout) and not p.buff("Battle Shout", t) and hp > 0.3 * m.hp_max:
+            return shout
+        if cb and can(cb) and p.hp < self.PROT_CB_BELOW * p.hp_max and not m.stunned(t):
+            return cb
+        if vr and can(vr) and p.buff("Victory Rush", t) and p.hp < 0.9 * p.hp_max:
+            return vr
+        if defensive and rev and can(rev) and p.buff("Revenge", t):
+            return rev
+        if ss and can(ss):
+            return ss
+        if "Thunder Clap" in use and tc and can(tc) and t >= m.attack_slow_until and hp > 0.4 * m.hp_max:
+            return tc
+        if ("Demoralizing Shout" in use or len(fight.alive()) >= 2) and demo and can(demo) and t >= m.dmg_reduction_until and hp > 0.4 * m.hp_max:
+            return demo
+        if "Rend" in use and rend and can(rend) and not fight.dot_active("Rend") and hp > 0.5 * m.hp_max:
+            return rend
+        reserve = (self.mana_cost(ss) if ss and p.cooldowns.get("Shield Slam", 0) - t < 2.0 else 0.0) + (self.mana_cost(rev) if rev and defensive else 0.0)
+        if "Sunder Armor" in use and sunder and can(sunder) and getattr(m, "sunders", 0) < 5 and hp > 0.5 * m.hp_max and p.rage >= self.mana_cost(sunder) + reserve:
+            return sunder
+        if hs and fight.queued_swing is None and p.rage >= self.mana_cost(hs) + reserve:
             return hs
         return None

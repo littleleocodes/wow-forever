@@ -9,13 +9,18 @@ puts Corruption, Bane of Agony, Siphon Life (talent) and Immolate on it, channel
 with Shadow Bolt while mana is plentiful and the wand otherwise, Drain Lifes when hurt, Life Taps when low on mana, Fears or
 Death Coils a mob that reaches him. Between fights: Life Tap back to 70% mana, Consume Shadows / Health Funnel for the
 Voidwalker, food only below 35% health (Drain Life on the next mob does the rest).
+
+Playstyles `demonology-leveling` and `destruction-leveling` (2026-09-30; `decide_demonology`, `decide_destruction`): the same
+Voidwalker (Forever has no Felguard; the Voidwalker is the only demon that tanks), with their own priority lists and the
+talent effects those trees add (NEW_MECHANICS). Every effect added for them is gated on those two spec strings, so every
+other spec string (the Affliction rotation) plays exactly as before.
 """
 import json
 import pathlib
 import re
 
 from engine import parse_interrupt, BaseModule, Pet, Player, Spell
-from tables import (GCD, MELEE_RANGE, WAND_SPEED, class_base_health, class_base_mana, class_base_stats, class_health_regen_tick,
+from tables import (GCD, MELEE_RANGE, THREAT_SWITCH, WAND_SPEED, class_base_health, class_base_mana, class_base_stats, class_health_regen_tick,
                     class_mana_regen_tick, class_spell_crit, gear_stats, interp, wand_dps)
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
@@ -201,6 +206,27 @@ MECHANICS = {
     "Intensity": "23%/rank chance to ignore pushback on Destruction spells",
     "Agonizing Flames": "+3.3%/rank Destruction damage",
 }
+# talent effects simulated only under the demonology-leveling / destruction-leveling spec strings (2026-09-30)
+NEW_MECHANICS = {
+    "Master Demonologist": "Voidwalker: -2%/rank physical damage taken for you and the pet (as extra armor: exact below the 75% cap)",
+    "Molten Skin": "-2%/rank all damage taken (melee and bolts, before Soul Link's split)",
+    "Demonic Brand": "Searing Pain: -17/33/50% threat; brands the target 10 s: the pet's next 2/4/6 hits deal +65-68 Shadow (level-60 text, "
+                     "scaled by level/60) with extra threat equal to the damage",
+    "Decimation": "Shadow Bolt / Searing Pain on a target below 35%: +3/6% damage, then 10 s of Soul Fire at -20/40% cast time, no shard; "
+                  "Soul Fire cooldown -45/90%",
+    "Conflagrate": "unlocks Conflagrate (instant, 10 s cooldown, needs Immolate, consumes it)",
+    "Incinerate": "unlocks Incinerate (2.5 s cast, +25% on an Immolated target)",
+    "Fire and Brimstone": "+8/17/25% Conflagrate crit",
+    "Shadow and Flame": "Conflagrate: +2%/rank Shadow damage 20 s and 20%/rank chance to keep Immolate; Shadowburn: +2%/rank Fire damage 20 s",
+    "Aftermath": "+10%/rank Immolate direct damage; Conflagrate dazes (50% slow, 5 s) at 20%/rank",
+    "Ruin": "+20%/rank of the 50% crit bonus on Destruction spells (x2.0 crits at 5/5)",
+    "Pandemic": "+33%/rank of the 50% crit bonus on Corruption, Agony, drains, Siphon Life, Wrack (x2.0 crits at 3/3)",
+    "Agonizing Flames": "+3.3%/rank Destruction damage, +3.3%/rank Searing Pain crit",
+    "Intensity": "23%/rank chance to ignore pushback on every Destruction spell (Shadow Bolt and Shadowburn included)",
+    "Bane": "-0.1s/rank Shadow Bolt / Immolate / Incinerate cast, -0.4s/rank Soul Fire",
+    "Improved Health Funnel": "+20%/rank Health Funnel healing, -15%/rank health cost; in-combat Funnel for a dying Voidwalker",
+}
+DESTRUCTION_SPELLS = ("Shadow Bolt", "Immolate", "Searing Pain", "Incinerate", "Conflagrate", "Shadowburn", "Soul Fire", "Rain of Fire", "Hellfire")
 FIT = {
     "Improved Corruption": "scale", "Malediction": "scale", "Improved Drains": "scale", "Fel Concentration": "scale", "Pandemic": "scale",
     "Malevolence": "scale", "Nightfall": "scale",
@@ -269,6 +295,11 @@ class WarlockModule(BaseModule):
         self._base_mana = 0.0
         self.pet_name = "Voidwalker" if level >= 10 else "Imp"
         self.armor_spell_used = "Demon Armor" if "Demon Armor" in self.spells else ("Demon Skin" if "Demon Skin" in self.spells else "none")
+        # 2026-09-30: the Demonology and Destruction leveling rotations; every mechanic added for them is gated on `new_rot`
+        self.demo = str(spec).startswith("demonology")
+        self.destro = str(spec).startswith("destruction")
+        self.new_rot = self.demo or self.destro
+        self._pet_armor = 0.0
 
     # ------------------------------------------------------------ talent helpers
     def rank(self, name):
@@ -284,7 +315,8 @@ class WarlockModule(BaseModule):
         return 0.0
 
     def not_simulated(self):
-        return sorted(n for n in self.t if n not in MECHANICS)
+        known = set(MECHANICS) | (set(NEW_MECHANICS) if self.new_rot else set())
+        return sorted(n for n in self.t if n not in known)
 
     def rank_at(self, name):
         ranks = [s for s in BOOK.get(name, []) if s.level <= self.level]
@@ -324,6 +356,7 @@ class WarlockModule(BaseModule):
                   mana_max=cfg["mana"] * level / 60.0 * (1 + self.tv("Fel Vitality", 0) / 100), mana_regen=(15 + stat["spirit"] / 5) / 2.0,
                   threat_mult=cfg["threat_mult"], caster=cfg["caster"])
         pet.dmg_mult = (1 + self.tv("Unholy Power", 0) / 100) * (1.03 if self.rank("Soul Link") else 1.0)
+        self._pet_armor = pet.armor
         return pet
 
     def pull_range(self):
@@ -339,6 +372,10 @@ class WarlockModule(BaseModule):
             c = max(GCD, c - 0.1 * self.rank("Bane"))
         if spell.name == "Shadow Bolt" and self._fight and self._fight.p.buff("Shadow Trance", self._fight.t):
             return 0.0
+        if self.new_rot and spell.name == "Soul Fire":
+            c = max(GCD, c - self.tv("Bane", 1))
+            if self._fight and self._fight.p.buff("Decimation", self._fight.t):
+                c = max(GCD, c * (1 - self.tv("Decimation", 4) / 100))
         return c
 
     def mana_cost(self, spell):
@@ -358,14 +395,26 @@ class WarlockModule(BaseModule):
         c = 0.0
         if spell.school == "shadow":
             c += self.tv("Malevolence", 0) / 100
+        if self.new_rot:
+            if spell.name == "Searing Pain":
+                c += self.tv("Agonizing Flames", 0) / 100
+            if spell.name == "Conflagrate":
+                c += self.tv("Fire and Brimstone", 0) / 100
         return c
+
+    NUKE_ABOVE = 0.8   # Demonology / Destruction: Shadow Bolt, Incinerate and filler Searing Pain only above this mana share (else the wand)
+    CONFLAG_LEFT = 3.0   # Destruction: Conflagrate (outside the finisher) once Immolate has this many seconds left
+    CRIT_BONUS_OF_BASE = 0.5   # new rotations: "increases the critical strike damage bonus by X%" = X% of the 50% bonus (wowsims)
 
     def crit_damage_bonus(self, spell):
         c = 0.0
+        # "increases the critical strike damage bonus by 100%" = 100% of the 50% bonus: x2.0 crits, as the community simulator reads it
+        # (2026-09-30 fix: the Affliction path added the 100% to the multiplier itself, x2.5 crits)
+        scale = self.CRIT_BONUS_OF_BASE
         if spell.name in ("Corruption", "Bane of Agony", "Bane of Doom", "Drain Soul", "Drain Life", "Siphon Life", "Wrack"):
-            c += self.tv("Pandemic", 0) / 100
+            c += self.tv("Pandemic", 0) / 100 * scale
         if spell.name in ("Shadow Bolt", "Immolate", "Searing Pain", "Incinerate", "Conflagrate", "Shadowburn", "Soul Fire"):
-            c += self.tv("Ruin", 0) / 100
+            c += self.tv("Ruin", 0) / 100 * scale
         return c
 
     def damage_multiplier(self, spell, frozen):
@@ -384,6 +433,16 @@ class WarlockModule(BaseModule):
             m *= 1 + self.tv("Agonizing Flames", 1) / 100
         if spell.name == "Immolate" and spell.dot_ticks and self._fight and self._fight.channel is None:
             m *= 1 + self.tv("Aftermath", 0) / 100   # direct part only (the periodic multiplier below leaves it out)
+        if self.new_rot and self._fight:
+            f, t = self._fight, self._fight.t
+            if spell.school == "shadow" and f.p.buff("Shadow and Flame (Shadow)", t):
+                m *= 1 + self.tv("Shadow and Flame", 0) / 100
+            if spell.school == "fire" and f.p.buff("Shadow and Flame (Fire)", t):
+                m *= 1 + self.tv("Shadow and Flame", 2) / 100
+            if spell.name == "Incinerate" and f.dot_active("Immolate"):
+                m *= 1.25
+            if spell.name in ("Shadow Bolt", "Searing Pain") and self.rank("Decimation") and f.m.hp < 0.35 * f.m.hp_max:
+                m *= 1 + self.tv("Decimation", 2) / 100
         if spell.name == "Corruption":
             m *= 1 + self.tv("Improved Corruption", 1) / 100
         if spell.name == "Bane of Agony":
@@ -413,7 +472,22 @@ class WarlockModule(BaseModule):
         return True
 
     def armor_bonus(self):
-        return 0.0
+        """Master Demonologist (Voidwalker out): -2%/rank physical damage taken, as the armor that gives exactly that cut."""
+        if not (self.new_rot and self.rank("Master Demonologist") and self._fight):
+            return 0.0
+        p = self._fight.p
+        if p.pet is None or not p.pet.alive or p.pet.name != "Voidwalker":
+            return 0.0
+        return self._md_armor(p.armor, self._fight.m.level)
+
+    def _md_armor(self, armor, attacker_level):
+        r = self.tv("Master Demonologist", 1) / 100   # the Voidwalker line is the 2nd number of the tooltip
+        return (armor + 400 + 85 * attacker_level) * r / (1 - r) if r > 0 else 0.0
+
+    def heal_multiplier(self, spell):
+        if self.new_rot and spell.name == "Health Funnel":
+            return 1 + self.tv("Improved Health Funnel", 0) / 100
+        return 1.0
 
     def wand_damage(self):
         return wand_dps(self.level) * WAND_SPEED
@@ -421,11 +495,17 @@ class WarlockModule(BaseModule):
     def pushback_resisted(self, fight, spell):
         if spell.name in ("Drain Life", "Drain Soul", "Drain Mana", "Wrack") and self.rank("Fel Concentration"):
             return fight.rng.random() < self.tv("Fel Concentration", 0) / 100
+        if self.new_rot:   # Forever's Intensity: every Destruction spell, not only Fire ones
+            if spell.name in DESTRUCTION_SPELLS and self.rank("Intensity"):
+                return fight.rng.random() < self.tv("Intensity", 0) / 100
+            return False
         if spell.school == "fire" and self.rank("Intensity"):
             return fight.rng.random() < self.tv("Intensity", 0) / 100
         return False
 
     def split_damage_taken(self, fight, dmg):
+        if self.new_rot and self.rank("Molten Skin"):
+            dmg *= 1 - self.tv("Molten Skin", 0) / 100
         pet = fight.p.pet
         if self.rank("Soul Link") and pet is not None and pet.alive:
             pet.hp -= 0.3 * dmg
@@ -468,6 +548,8 @@ class WarlockModule(BaseModule):
         self._fight = fight
         self._base_mana = fight.p.base_mana
         p, t = fight.p, fight.t
+        if self.new_rot and p.pet is not None and p.pet.name == "Voidwalker" and self.rank("Master Demonologist"):
+            p.pet.armor = self._pet_armor + self._md_armor(self._pet_armor, fight.m.level)
         if self.rank("Amplify Curse") and p.ready("Amplify Curse", t):
             p.buffs["Amplify Curse"] = {"until": t + 30.0}
             p.cooldowns["Amplify Curse"] = t + 180.0
@@ -489,8 +571,46 @@ class WarlockModule(BaseModule):
             m.debuffs["Wrack"] = {"until": t + 6.0, "stacks": 1}
         if spell.name == "Bane of Agony" and p.buff("Amplify Curse", t):
             del p.buffs["Amplify Curse"]
+        if self.new_rot:
+            self.on_hit_new(fight, spell, amount, crit)
         if amount > 0:
             self.pet_heal_from_damage(fight, amount)
+
+    def on_hit_new(self, fight, spell, amount, crit):
+        """Demonology / Destruction effects of a landed spell (2026-09-30)."""
+        p, m, t = fight.p, fight.m, fight.t
+        if spell.name == "Conflagrate":
+            if not (self.rank("Shadow and Flame") and fight.rng.random() < self.tv("Shadow and Flame", 4) / 100):
+                m.dots = [d for d in m.dots if d[0] != "Immolate"]
+                fight.note("Conflagrate consumes Immolate")
+            if self.rank("Shadow and Flame"):
+                p.buffs["Shadow and Flame (Shadow)"] = {"until": t + 20.0}
+            if self.rank("Aftermath") and fight.rng.random() < self.tv("Aftermath", 1) / 100:
+                fight.apply_chill(spell, 0.5, 5.0)
+        if spell.name == "Shadowburn" and self.rank("Shadow and Flame"):
+            p.buffs["Shadow and Flame (Fire)"] = {"until": t + 20.0}
+        if spell.name == "Searing Pain" and amount > 0:
+            # "Causes a high amount of threat": Classic's x2 threat (an assumption); Demonic Brand takes 17/33/50% of it off
+            m.threat_player += amount * (2.0 * (1 - self.tv("Demonic Brand", 0) / 100) - 1.0)
+            if self.rank("Demonic Brand"):
+                m.debuffs["Demonic Brand"] = {"until": t + 10.0, "stacks": int(self.tv("Demonic Brand", 2))}
+        if spell.name in ("Shadow Bolt", "Searing Pain") and self.rank("Decimation") and 0 < m.hp < 0.35 * m.hp_max:
+            p.buffs["Decimation"] = {"until": t + 10.0}
+
+    def on_pet_hit(self, fight, amount, crit):
+        """Demonic Brand: the pet's branded hits add 65-68 Shadow (level-60 tooltip, scaled by level) and high threat."""
+        if not self.new_rot:
+            return
+        m, t = fight.m, fight.t
+        b = m.debuffs.get("Demonic Brand")
+        if not b or b["until"] <= t or b.get("stacks", 0) <= 0 or m.hp <= 0:
+            return
+        b["stacks"] -= 1
+        pet = fight.p.pet
+        dmg = fight.rng.uniform(self.tv("Demonic Brand", 3), self.tv("Demonic Brand", 4)) * self.level / 60.0 * (pet.dmg_mult if pet else 1.0)
+        fight.deal(Spell("Demonic Brand", "shadow"), dmg, False, source="pet")
+        m.threat_pet += dmg   # "high threat": the damage counts twice (assumption)
+        fight.note(f"Demonic Brand {dmg:.0f} -> mob {max(0, m.hp):.0f}")
 
     def pet_heal_from_damage(self, fight, amount):
         pet = fight.p.pet
@@ -515,6 +635,8 @@ class WarlockModule(BaseModule):
             p.cooldowns[spell.name] = t + spell.cooldown
         if spell.name == "Shadow Bolt" and p.buff("Shadow Trance", t):
             del p.buffs["Shadow Trance"]
+        if self.new_rot and spell.name == "Soul Fire" and self.rank("Decimation"):
+            p.cooldowns["Soul Fire"] = t + spell.cooldown * (1 - self.tv("Decimation", 0) / 100)
 
     def on_pet_death(self, fight):
         pass
@@ -551,6 +673,10 @@ class WarlockModule(BaseModule):
             r = self.decide_aoe(fight)
             if r is not None:
                 return r
+        if self.demo:
+            return self.decide_demonology(fight)
+        if self.destro:
+            return self.decide_destruction(fight)
         p, m, t, pet = fight.p, fight.m, fight.t, fight.p.pet
         sp = self.spells
         on_me = m.target == "player" or pet is None or not pet.alive
@@ -639,4 +765,173 @@ class WarlockModule(BaseModule):
             return bolt
         if drain and can(drain) and p.hp < 0.85 * p.hp_max and hp > wand_hit * 4 and m.dist <= drain.range:
             return drain
+        return "wand"
+
+    # ------------------------------------------------------------ Demonology and Destruction (2026-09-30)
+    def _situation(self, fight):
+        """What both new priority lists need: the spells, the threat state, the defensive answer when the mob is on me."""
+        p, m, t, pet = fight.p, fight.m, fight.t, fight.p.pet
+        sp = self.spells
+        c = type("Situation", (), {})()
+        c.p, c.m, c.t, c.pet, c.sp = p, m, t, pet, sp
+        c.on_me = m.target == "player" or pet is None or not pet.alive
+        c.in_melee = m.in_melee and m.dist <= MELEE_RANGE + 0.5
+        c.wand_hit = self.wand_damage() * 0.65
+        pet_threat = m.threat_pet + self.pet_threat_bonus(fight)
+        c.near_aggro = (self.THREAT_CARE > 0 and pet is not None and pet.alive and m.target == "pet"
+                        and m.threat_player > self.THREAT_CARE * pet_threat and m.threat_player > 50)
+        c.can = lambda s: s is not None and p.ready(s.name, t) and fight.can_afford(s, self.mana_cost(s))
+        # would this hit pull the mob off the pet? (the engine turns it at THREAT_SWITCH x the pet's threat; keep a 10% margin)
+        c.safe = lambda s, dmg: (m.target != "pet" or pet is None or not pet.alive
+                                 or m.threat_player + dmg < (THREAT_SWITCH - 0.1) * pet_threat)
+
+        def avg(s):
+            if s is None:
+                return 0.0
+            base = (s.dmg_min + s.dmg_max) / 2 + s.coef * p.spell_power
+            crit = min(1.0, p.spell_crit + self.crit_bonus(s, False))
+            return base * self.damage_multiplier(s, False) * (1 + crit * (0.5 + self.crit_damage_bonus(s)))
+        c.avg = avg
+        # the damage a finisher is sure of (no crit): Shadowburn / Conflagrate that fail to kill hand the mob to me
+        c.hit = lambda s: ((s.dmg_min + s.coef * p.spell_power) * self.damage_multiplier(s, False)) if s is not None else 0.0
+        c.fear, c.drain, c.coil, c.tap, c.stone = (sp.get(n) for n in ("Fear", "Drain Life", "Death Coil", "Life Tap", "Create Healthstone"))
+        c.reserve = (self.mana_cost(c.fear) if c.fear else 0.0) + (self.mana_cost(c.drain) if c.drain else 0.0)
+        c.action = None
+        hp = m.hp
+        # the mob is on me: Healthstone when low, Death Coil when hurt, Fear it; Drain Life while it flees or from range
+        if c.stone and p.hp < 0.35 * p.hp_max and p.ready(c.stone.name, t):
+            c.action = c.stone
+        elif c.on_me and hp > 0.2 * m.hp_max and not m.incapacitated(t) and c.coil and c.can(c.coil) and p.hp < 0.6 * p.hp_max:
+            c.action = c.coil
+        elif c.on_me and hp > 0.2 * m.hp_max and not m.incapacitated(t) and c.fear and c.can(c.fear) and (c.in_melee or m.dist <= c.fear.range):
+            c.action = c.fear
+        elif (c.on_me and c.drain and c.can(c.drain) and p.hp < 0.7 * p.hp_max and hp > c.wand_hit * 4 and m.dist <= c.drain.range
+              and (m.incapacitated(t) or not c.in_melee)):
+            c.action = c.drain
+        return c
+
+    def _mana_and_health(self, fight, c, nuke):
+        """Drain Life when hurt; Life Tap behind a healthy pet when the next nuke would eat into the Fear + Drain reserve."""
+        p, m = c.p, c.m
+        if c.drain and c.can(c.drain) and p.hp < 0.60 * p.hp_max and m.hp > c.wand_hit * 4 and m.dist <= c.drain.range:
+            return c.drain
+        cost = self.mana_cost(nuke) if nuke else 0.0
+        pet_ok = not (c.on_me and c.in_melee) and not (c.pet is not None and c.pet.alive and m.target == "pet" and c.pet.hp < 0.3 * c.pet.hp_max)
+        if (c.tap and nuke and pet_ok and p.mana - cost < c.reserve and p.hp - c.tap.cost > 0.60 * p.hp_max
+                and m.hp > c.avg(nuke) and not c.near_aggro):
+            return c.tap
+        return None
+
+    def _dots(self, fight, c, immolate_mana=0.0):
+        p, m, t, sp = c.p, c.m, c.t, c.sp
+        hp = m.hp
+        corr, agony, siphon, immo = (sp.get(n) for n in ("Corruption", "Bane of Agony", "Siphon Life", "Immolate"))
+        if corr and c.can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
+            return corr
+        if agony and c.can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:
+            return agony
+        if siphon and c.can(siphon) and not fight.dot_active("Siphon Life") and hp > 0.35 * m.hp_max:
+            return siphon
+        if (immo and c.can(immo) and not fight.dot_active("Immolate") and hp > 0.30 * m.hp_max and p.mana > immolate_mana * p.mana_max
+                and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(immo) > c.reserve):
+            return immo
+        return None
+
+    def decide_demonology(self, fight):
+        """Demonology: the Voidwalker is the tank and a damage source (Unholy Power, Soul Link, Master Demonologist, Demonic
+        Knowledge's spell power). The warlock keeps the Affliction DoTs of the 21-point Affliction half up, brands the mob with
+        Searing Pain for the pet (Demonic Brand), keeps the pet alive with an in-combat Health Funnel (Improved Health Funnel),
+        fills with Shadow Bolt while mana and threat allow, Soul Fire under Decimation, wand otherwise."""
+        c = self._situation(fight)
+        if c.action is not None:
+            return c.action
+        p, m, t, pet, sp = c.p, c.m, c.t, c.pet, c.sp
+        hp = m.hp
+        nuke_ok = p.mana >= self.NUKE_ABOVE * p.mana_max
+        bolt, sear, burn, soul, funnel = (sp.get(n) for n in ("Shadow Bolt", "Searing Pain", "Shadowburn", "Soul Fire", "Health Funnel"))
+        # finish without overkill
+        if burn and c.can(burn) and hp <= c.hit(burn):
+            return burn
+        if hp <= c.wand_hit * 1.5:
+            return "wand"
+        # a dying Voidwalker holding a mob that still has a while to live: funnel it (Soul Link keeps 30% of my damage on it)
+        if (funnel and self.rank("Improved Health Funnel") and pet is not None and pet.alive and m.target == "pet"
+                and pet.hp < 0.30 * pet.hp_max and hp > 0.35 * m.hp_max and p.hp > 0.65 * p.hp_max and c.can(funnel)):
+            return funnel
+        r = self._mana_and_health(fight, c, bolt)
+        if r is not None:
+            return r
+        # Demonic Brand: Searing Pain whenever the brand is down and the pet is on the mob (its next 2/4/6 hits add damage and threat)
+        brand = m.debuffs.get("Demonic Brand")
+        if (self.rank("Demonic Brand") and sear and c.can(sear) and not (brand and brand["until"] > t and brand.get("stacks", 0) > 0)
+                and pet is not None and pet.alive and m.pet_in_melee and hp > 0.25 * m.hp_max and not c.near_aggro
+                and p.mana - self.mana_cost(sear) > c.reserve):
+            return sear
+        r = self._dots(fight, c, immolate_mana=0.5)
+        if r is not None:
+            return r
+        if soul and c.can(soul) and p.buff("Decimation", t) and hp > c.avg(soul) * 0.6 and not c.near_aggro:
+            return soul
+        if bolt and c.can(bolt) and p.buff("Shadow Trance", t) and hp > c.avg(bolt) * 0.5:
+            return bolt
+        if bolt and c.can(bolt) and hp > c.avg(bolt) * 0.9 and not (c.on_me and c.in_melee) and not c.near_aggro and nuke_ok and p.mana - self.mana_cost(bolt) > c.reserve:
+            return bolt
+        if sear and c.can(sear) and hp > c.wand_hit * 2 and not (c.on_me and c.in_melee) and not c.near_aggro and nuke_ok and p.mana - self.mana_cost(sear) > c.reserve:
+            return sear   # a small mob left: the 1.5 s Searing Pain beats a 3 s bolt that overkills
+        if c.drain and c.can(c.drain) and p.hp < 0.85 * p.hp_max and hp > c.wand_hit * 4 and m.dist <= c.drain.range and not c.near_aggro:
+            return c.drain
+        return "wand"
+
+    def decide_destruction(self, fight):
+        """Destruction: Immolate first (Aftermath, Conflagrate, Incinerate need it), the cheap instant DoTs of the Affliction half,
+        Conflagrate on cooldown once Immolate has done most of its ticking (or at once when the mob will die first), Shadowburn as
+        the finisher, Incinerate on an Immolated mob (else Shadow Bolt) as the filler, Searing Pain to finish what a bolt would
+        overkill, Soul Fire under Decimation, wand when mana runs short."""
+        c = self._situation(fight)
+        if c.action is not None:
+            return c.action
+        p, m, t, sp = c.p, c.m, c.t, c.sp
+        hp = m.hp
+        nuke_ok = p.mana >= self.NUKE_ABOVE * p.mana_max
+        bolt, sear, burn, conf, inc, soul = (sp.get(n) for n in ("Shadow Bolt", "Searing Pain", "Shadowburn", "Conflagrate", "Incinerate", "Soul Fire"))
+        immolated = fight.dot_active("Immolate")
+        # finishers: Shadowburn, Conflagrate on an Immolated mob, the wand for the last hit
+        if burn and c.can(burn) and hp <= c.hit(burn):
+            return burn
+        if conf and immolated and c.can(conf) and hp <= c.hit(conf):
+            return conf
+        if hp <= c.wand_hit * 1.5:
+            return "wand"
+        filler = inc if (inc and immolated) else bolt
+        r = self._mana_and_health(fight, c, filler)
+        if r is not None:
+            return r
+        immo = sp.get("Immolate")
+        corr, agony = sp.get("Corruption"), sp.get("Bane of Agony")
+        # the instant DoTs first while the Voidwalker builds threat, then Immolate once it cannot pull the mob off the pet
+        if corr and c.can(corr) and not fight.dot_active("Corruption") and hp > 0.25 * m.hp_max:
+            return corr
+        if agony and c.can(agony) and not fight.dot_active("Bane of Agony") and hp > 0.35 * m.hp_max:
+            return agony
+        if (immo and c.can(immo) and not immolated and hp > 0.30 * m.hp_max and not (c.on_me and c.in_melee) and c.safe(immo, c.avg(immo))
+                and p.mana - self.mana_cost(immo) > c.reserve):
+            return immo
+        # Conflagrate once Immolate has CONFLAG_LEFT s or less to run (or when Shadow and Flame keeps it for sure)
+        keeps = self.tv("Shadow and Flame", 4) >= 100
+        if (conf and immolated and c.can(conf) and (fight.dot_remaining("Immolate") <= self.CONFLAG_LEFT or keeps) and c.safe(conf, c.avg(conf))
+                and p.mana - self.mana_cost(conf) > c.reserve):
+            return conf
+        r = self._dots(fight, c, immolate_mana=1.01)   # Siphon Life (Immolate is handled above)
+        if r is not None:
+            return r
+        if soul and c.can(soul) and p.buff("Decimation", t) and hp > c.avg(soul) * 0.6 and not c.near_aggro:
+            return soul
+        if bolt and c.can(bolt) and p.buff("Shadow Trance", t) and hp > c.avg(bolt) * 0.5:
+            return bolt
+        if filler and c.can(filler) and hp > c.avg(filler) * 0.9 and not (c.on_me and c.in_melee) and not c.near_aggro and nuke_ok and p.mana - self.mana_cost(filler) > c.reserve:
+            return filler
+        if sear and c.can(sear) and hp > c.wand_hit * 2 and not (c.on_me and c.in_melee) and not c.near_aggro and nuke_ok and p.mana - self.mana_cost(sear) > c.reserve:
+            return sear
+        if c.drain and c.can(c.drain) and p.hp < 0.85 * p.hp_max and hp > c.wand_hit * 4 and m.dist <= c.drain.range and not c.near_aggro:
+            return c.drain
         return "wand"

@@ -1,111 +1,462 @@
 {
  "_comment": "Hand-kept (2026-09-29, user request: noob-friendly rotations, class spells only). The short leveling rotation a new player follows, per class and fight-lab spec model (the model a leveling build plays in fightlab/run.py). Each list is the fight lab's priority (the module's DESCRIPTION and its casts per kill in research/leveling/rotation.md) in plain words; the exact priority stays on the research pages. Edit when a class module's priority changes. render_modes.py prints them on the leveling player pages.",
  "druid": {
-  "feral-cat-dps": {"before": ["Levels 10-19: Bear Form. From 20: Cat Form, then Prowl (stealth) up behind the mob."],
-                    "steps": ["Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage.",
-                              "From 20 (cat), open from Prowl with **Ravage** (**Pounce** before 32, **Claw** before that), then **Tiger's Fury**.",
-                              "**Rake** once.",
-                              "**Claw** until you have 5 combo points.",
-                              "At 5 points: **Rip** on a mob with plenty of health, **Ferocious Bite** on one that is nearly dead."],
-                    "between": ["Low on health: leave Cat Form and cast **Regrowth** or **Rejuvenation**, then shift back.", "Drink when your mana is below a third."]},
-  "balance-dps": {"before": ["Moonkin Form once you have it."],
-                  "steps": ["**Moonfire** and **Insect Swarm** on the mob.", "**Wrath** while the mob walks in.",
-                            "**Starfire** when Eclipse lights up or the mob is rooted or stunned, **Wrath** otherwise.",
-                            "Low on health: **Entangling Roots** on the mob, then **Regrowth**."],
-                  "between": ["Drink when your mana is below a third."]}
+  "feral-cat-dps": {
+   "before": [
+    "Levels 10-19: Bear Form. From 20: Cat Form, then Prowl (stealth) up behind the mob."
+   ],
+   "steps": [
+    "Levels 10-19 (bear): **Enrage**, **Demoralizing Roar**, then **Maul** whenever you have the rage.",
+    "From 20 (cat), open from Prowl with **Ravage** (**Pounce** before 32, **Claw** before that), then **Tiger's Fury**.",
+    "**Rake** once.",
+    "**Claw** until you have 5 combo points.",
+    "At 5 points: **Rip** on a mob with plenty of health, **Ferocious Bite** on one that is nearly dead."
+   ],
+   "between": [
+    "Low on health: leave Cat Form and cast **Regrowth** or **Rejuvenation**, then shift back.",
+    "Drink when your mana is below a third."
+   ]
+  },
+  "balance-dps": {
+   "before": [
+    "Moonkin Form once you have it."
+   ],
+   "steps": [
+    "**Moonfire** and **Insect Swarm** on the mob.",
+    "**Wrath** while the mob walks in.",
+    "**Starfire** when Eclipse lights up or the mob is rooted or stunned, **Wrath** otherwise.",
+    "Low on health: **Entangling Roots** on the mob, then **Regrowth**."
+   ],
+   "between": [
+    "Drink when your mana is below a third."
+   ]
+  }
  },
  "hunter": {
-  "bm-leveling": {"before": ["Pet out (a cat), **Aspect of the Hawk** up.", "Send the pet in first and let it hold the mob."],
-                  "steps": ["**Hunter's Mark** and **Serpent Sting**.", "**Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.",
-                            "**Aimed Shot** or **Multi-Shot** whenever ready (they share a cooldown), **Arcane Shot** or **Summon Hawk** in between.",
-                            "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
-                            "**Mend Pet** when the pet drops below a third of its health.", "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."],
-                  "between": ["Mend the pet, drink below a third of your mana, eat below two thirds of your health."]},
-  "mm-raid": {"before": ["Pet out (a cat), **Aspect of the Hawk** up.", "Send the pet in first and let it hold the mob."],
-              "steps": ["**Hunter's Mark** and **Serpent Sting**.", "**Rapid Fire** at the start when it is ready.",
-                        "**Aimed Shot** or **Multi-Shot** whenever ready, **Arcane Shot** in between.", "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
-                        "**Mend Pet** when the pet drops below a third of its health.", "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."],
-              "between": ["Mend the pet, drink below a third of your mana, eat below two thirds of your health."]},
-  "melee-dps": {"before": ["Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it).", "**Hunter's Mark** and **Serpent Sting** from range, then walk in."],
-                "steps": ["**Immolation Trap** at your feet while the mob has most of its health.", "**Mongoose Bite** when it lights up (after a dodge).",
-                          "**Counterattack** after you parry.", "**Strider Kick** on cooldown.", "**Raptor Strike** on every swing it is ready.",
-                          "Low on health: **Deterrence**; **Mend Pet** for the pet."],
-                "between": ["Mend the pet, drink below a third of your mana, eat below two thirds of your health."]}
+  "bm-leveling": {
+   "before": [
+    "Pet out (a cat), **Aspect of the Hawk** up.",
+    "Send the pet in first and let it hold the mob."
+   ],
+   "steps": [
+    "**Hunter's Mark** and **Serpent Sting**.",
+    "**Bestial Wrath**, **Intimidation** and **Rapid Fire** at the start when they are ready.",
+    "**Aimed Shot** or **Multi-Shot** whenever ready (they share a cooldown), **Arcane Shot** or **Summon Hawk** in between.",
+    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
+    "**Mend Pet** when the pet drops below a third of its health.",
+    "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."
+   ],
+   "between": [
+    "Mend the pet, drink below a third of your mana, eat below two thirds of your health."
+   ]
+  },
+  "mm-raid": {
+   "before": [
+    "Pet out (a cat), **Aspect of the Hawk** up.",
+    "Send the pet in first and let it hold the mob."
+   ],
+   "steps": [
+    "**Hunter's Mark** and **Serpent Sting**.",
+    "**Rapid Fire** at the start when it is ready.",
+    "**Aimed Shot** or **Multi-Shot** whenever ready, **Arcane Shot** in between.",
+    "**Auto Shot** does the rest. Keep your distance: the bow cannot fire within 8 yards.",
+    "**Mend Pet** when the pet drops below a third of its health.",
+    "If a mob reaches you: **Wing Clip** and **Raptor Strike**, or **Feign Death**."
+   ],
+   "between": [
+    "Mend the pet, drink below a third of your mana, eat below two thirds of your health."
+   ]
+  },
+  "melee-dps": {
+   "before": [
+    "Pet out, **Aspect of the Monkey** (**Aspect of the Beast** once you have it).",
+    "**Hunter's Mark** and **Serpent Sting** from range, then walk in."
+   ],
+   "steps": [
+    "**Immolation Trap** at your feet while the mob has most of its health.",
+    "**Mongoose Bite** when it lights up (after a dodge).",
+    "**Counterattack** after you parry.",
+    "**Strider Kick** on cooldown.",
+    "**Raptor Strike** on every swing it is ready.",
+    "Low on health: **Deterrence**; **Mend Pet** for the pet."
+   ],
+   "between": [
+    "Mend the pet, drink below a third of your mana, eat below two thirds of your health."
+   ]
+  }
  },
  "mage": {
-  "frost-leveling": {"before": ["**Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up.", "Pull from as far away as you can."],
-                     "steps": ["**Frostbolt** while the mob walks in (it slows it).", "**Frost Nova** when it reaches you, then step back.",
-                               "**Ice Lance** (or **Frostbolt**) while it is frozen.", "Finish a nearly dead mob with **Fire Blast** or your wand.",
-                               "**Counterspell** a mob that casts spells."],
-                     "between": ["Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."]},
-  "fire-leveling": {"before": ["**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.", "Pull from as far away as you can."],
-                    "steps": ["**Fireball** while the mob has more than a fifth of its health.", "**Frost Nova** when it reaches you, then step back.",
-                              "**Fire Blast** whenever ready; **Scorch** only when you have plenty of mana.", "Finish a nearly dead mob with your wand.",
-                              "**Counterspell** a mob that casts spells."],
-                    "between": ["Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."]},
-  "frostfire-leveling": {"before": ["**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.", "Pull from as far away as you can."],
-                         "steps": ["**Frostfire Bolt** while the mob walks in.", "**Frost Nova** when it reaches you, then step back.",
-                                   "**Ice Lance** while it is frozen, **Fire Blast** whenever ready.", "Finish a nearly dead mob with your wand."],
-                         "between": ["Drink your conjured water below a third of your mana, eat below two thirds of your health."]},
-  "frost-aoe": {"before": ["**Ice Armor** and **Arcane Intellect** up.", "Gather several mobs (about four) before you fight."],
-                "steps": ["**Frost Nova** when they reach you, then step back out of melee.", "**Blizzard** on the group; **Cone of Cold** when they close in again.",
-                          "**Arcane Explosion** if they are on top of you.", "Single leftovers: **Ice Lance** / **Frostbolt**, wand to finish."],
-                "between": ["Drink your conjured water below a third of your mana, **Evocation** when you are out."]}
+  "frost-leveling": {
+   "before": [
+    "**Frost Armor** (later **Ice Armor** or **Mage Armor**) and **Arcane Intellect** up.",
+    "Pull from as far away as you can."
+   ],
+   "steps": [
+    "**Frostbolt** while the mob walks in (it slows it).",
+    "**Frost Nova** when it reaches you, then step back.",
+    "**Ice Lance** (or **Frostbolt**) while it is frozen.",
+    "Finish a nearly dead mob with **Fire Blast** or your wand.",
+    "**Counterspell** a mob that casts spells."
+   ],
+   "between": [
+    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+   ]
+  },
+  "fire-leveling": {
+   "before": [
+    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
+    "Pull from as far away as you can."
+   ],
+   "steps": [
+    "**Fireball** while the mob has more than a fifth of its health.",
+    "**Frost Nova** when it reaches you, then step back.",
+    "**Fire Blast** whenever ready; **Scorch** only when you have plenty of mana.",
+    "Finish a nearly dead mob with your wand.",
+    "**Counterspell** a mob that casts spells."
+   ],
+   "between": [
+    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+   ]
+  },
+  "frostfire-leveling": {
+   "before": [
+    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
+    "Pull from as far away as you can."
+   ],
+   "steps": [
+    "**Frostfire Bolt** while the mob walks in.",
+    "**Frost Nova** when it reaches you, then step back.",
+    "**Ice Lance** while it is frozen, **Fire Blast** whenever ready.",
+    "Finish a nearly dead mob with your wand."
+   ],
+   "between": [
+    "Drink your conjured water below a third of your mana, eat below two thirds of your health."
+   ]
+  },
+  "frost-aoe": {
+   "before": [
+    "**Ice Armor** and **Arcane Intellect** up.",
+    "Gather several mobs (about four) before you fight."
+   ],
+   "steps": [
+    "**Frost Nova** when they reach you, then step back out of melee.",
+    "**Blizzard** on the group; **Cone of Cold** when they close in again.",
+    "**Arcane Explosion** if they are on top of you.",
+    "Single leftovers: **Ice Lance** / **Frostbolt**, wand to finish."
+   ],
+   "between": [
+    "Drink your conjured water below a third of your mana, **Evocation** when you are out."
+   ]
+  },
+  "arcane-leveling": {
+   "before": [
+    "**Frost Armor** (later **Mage Armor**) and **Arcane Intellect** up.",
+    "Pull from as far away as you can; **Arcane Power** and **Presence of Mind** at the pull when they are ready."
+   ],
+   "steps": [
+    "**Arcane Blast** twice while the mob walks in (each cast makes the next one cost more; stop at two).",
+    "**Arcane Missiles** after the Arcane Blasts, and at once when Missile Barrage lights up.",
+    "**Frost Nova** when the mob reaches you, then step back.",
+    "Finish a nearly dead mob with **Fire Blast** or your wand.",
+    "Low on mana: **Frostbolt** instead of Arcane Blast."
+   ],
+   "between": [
+    "Drink your conjured water below a third of your mana, **Evocation** when you are out, eat below two thirds of your health."
+   ]
+  }
  },
  "paladin": {
-  "ret-dps": {"before": ["**Blessing of Might** and **Devotion Aura** up, a two-handed weapon.", "Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it)."],
-              "steps": ["**Judgement** and **Holy Strike** whenever ready.", "**Consecration** while your mana lasts.",
-                        "**Hammer of Justice** when you are hurt (or to set up a big Judgement).", "**Hammer of Wrath** when the mob is below 20% health.",
-                        "Low on health: **Divine Protection** and **Holy Light**; **Lay on Hands** in an emergency."],
-              "between": ["Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a third of your mana."]}
+  "ret-dps": {
+   "before": [
+    "**Blessing of Might** and **Devotion Aura** up, a two-handed weapon.",
+    "Before each pull: **Seal of Command** (**Seal of Righteousness** before you have it)."
+   ],
+   "steps": [
+    "**Judgement** and **Holy Strike** whenever ready.",
+    "**Consecration** while your mana lasts.",
+    "**Hammer of Justice** when you are hurt (or to set up a big Judgement).",
+    "**Hammer of Wrath** when the mob is below 20% health.",
+    "Low on health: **Divine Protection** and **Holy Light**; **Lay on Hands** in an emergency."
+   ],
+   "between": [
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**, drink below a third of your mana."
+   ]
+  },
+  "holy-leveling": {
+   "before": [
+    "**Blessing of Wisdom** and **Devotion Aura** up, a two-handed weapon.",
+    "**Seal of Righteousness** before each pull."
+   ],
+   "steps": [
+    "**Holy Shock** the mob as it walks in (while your mana is high).",
+    "**Judgement** and **Holy Strike** whenever ready.",
+    "Keep **Seal of Righteousness** up.",
+    "**Hammer of Wrath** when the mob is below 20% health.",
+    "Low on health: **Holy Shock** on yourself, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency.",
+    "**Hammer of Justice** a mob that casts spells."
+   ],
+   "between": [
+    "Heal yourself back up with **Holy Light**, drink below a quarter of your mana."
+   ]
+  },
+  "prot-leveling": {
+   "before": [
+    "**Blessing of Might** and **Devotion Aura** up, a one-handed weapon and a shield.",
+    "**Seal of Fury** before each pull (it also shields you)."
+   ],
+   "steps": [
+    "**Holy Shield** whenever it is down.",
+    "**Judgement** and **Holy Strike** whenever ready (**Swift Judgement** to reset Judgement).",
+    "Keep **Seal of Fury** up.",
+    "**Consecration** while your mana is above 60%.",
+    "**Hammer of Wrath** when the mob is below 20% health.",
+    "Low on health: **Templar's Bulwark**, **Divine Protection**, **Hammer of Justice**, then **Holy Light**; **Lay on Hands** in an emergency."
+   ],
+   "between": [
+    "Drink below a sixth of your mana; you rarely need to eat."
+   ]
+  }
  },
  "priest": {
-  "shadow-dps": {"before": ["**Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it.", "**Power Word: Shield** on yourself before the pull."],
-                 "steps": ["**Mind Blast** to pull.", "**Shadow Word: Pain**.", "**Vampiric Embrace** and **Devouring Plague** (they heal you).",
-                           "**Mind Blast** whenever ready, **Mind Flay** in between (it slows the mob).", "**Shadow Word: Death** when the mob is below 20% health.",
-                           "Finish a nearly dead mob with your wand; **Psychic Scream** if your health gets low."],
-                 "between": ["Drink below a third of your mana, eat below two thirds of your health (**Renew** outside Shadowform)."]}
+  "shadow-dps": {
+   "before": [
+    "**Power Word: Fortitude** and **Inner Fire** up; **Shadowform** once you have it.",
+    "**Power Word: Shield** on yourself before the pull."
+   ],
+   "steps": [
+    "**Mind Blast** to pull.",
+    "**Shadow Word: Pain**.",
+    "**Vampiric Embrace** and **Devouring Plague** (they heal you).",
+    "**Mind Blast** whenever ready, **Mind Flay** in between (it slows the mob).",
+    "**Shadow Word: Death** when the mob is below 20% health.",
+    "Finish a nearly dead mob with your wand; **Psychic Scream** if your health gets low."
+   ],
+   "between": [
+    "Drink below a third of your mana, eat below two thirds of your health (**Renew** outside Shadowform)."
+   ]
+  },
+  "holy-leveling": {
+   "before": [
+    "**Power Word: Fortitude** and **Inner Fire** up.",
+    "**Power Word: Shield** on yourself before the pull."
+   ],
+   "steps": [
+    "**Holy Fire** to pull (it burns the mob for a while).",
+    "**Shadow Word: Pain**.",
+    "**Penance** and **Mind Blast** whenever ready.",
+    "**Smite** in between while your mana is high, your wand when it is not.",
+    "Finish a nearly dead mob with your wand.",
+    "Hurt: **Renew**, **Flash Heal** below a third of your health; **Psychic Scream** if a mob is on you and you are low."
+   ],
+   "between": [
+    "Drink below a third of your mana; **Renew** yourself instead of eating."
+   ]
+  },
+  "discipline-leveling": {
+   "before": [
+    "**Power Word: Fortitude** and **Inner Fire** up.",
+    "**Power Word: Shield** on yourself before the pull; **Power Infusion** on yourself when it is ready."
+   ],
+   "steps": [
+    "**Holy Fire** to pull.",
+    "**Shadow Word: Pain**.",
+    "**Penance** and **Mind Blast** whenever ready.",
+    "**Smite** in between while your mana is high, your wand when it is not.",
+    "Finish a nearly dead mob with your wand.",
+    "Hurt: shield again, **Flash Heal** below a third of your health; **Psychic Scream** if you are in trouble."
+   ],
+   "between": [
+    "Drink below a third of your mana; **Renew** yourself instead of eating."
+   ]
+  }
  },
  "rogue": {
-  "combat-swords-raid": {"before": ["**Instant Poison** on your main hand, **Deadly Poison** on your off hand.", "Stealth up behind the mob."],
-                         "steps": ["Open with **Cheap Shot** (**Garrote** before level 26).", "**Slice and Dice** at 1-2 combo points when it is not up.",
-                                   "**Sinister Strike** until you have 5 combo points.", "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
-                                   "**Riposte** after you parry.", "**Blade Flurry** and **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."],
-                         "between": ["Bandage below 60% health, eat below half."]},
-  "combat-daggers-raid": {"before": ["**Instant Poison** on your main hand, **Deadly Poison** on your off hand.", "Stealth up behind the mob."],
-                          "steps": ["Open with **Cheap Shot** (**Garrote** before level 26).", "**Slice and Dice** at 1-2 combo points when it is not up.",
-                                    "**Sinister Strike** until you have 5 combo points.", "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
-                                    "**Riposte** after you parry.", "**Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."],
-                          "between": ["Bandage below 60% health, eat below half."]}
+  "combat-swords-raid": {
+   "before": [
+    "**Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Stealth up behind the mob."
+   ],
+   "steps": [
+    "Open with **Cheap Shot** (**Garrote** before level 26).",
+    "**Slice and Dice** at 1-2 combo points when it is not up.",
+    "**Sinister Strike** until you have 5 combo points.",
+    "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
+    "**Riposte** after you parry.",
+    "**Blade Flurry** and **Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."
+   ],
+   "between": [
+    "Bandage below 60% health, eat below half."
+   ]
+  },
+  "combat-daggers-raid": {
+   "before": [
+    "**Instant Poison** on your main hand, **Deadly Poison** on your off hand.",
+    "Stealth up behind the mob."
+   ],
+   "steps": [
+    "Open with **Cheap Shot** (**Garrote** before level 26).",
+    "**Slice and Dice** at 1-2 combo points when it is not up.",
+    "**Sinister Strike** until you have 5 combo points.",
+    "At 5 points: **Eviscerate** (**Kidney Shot** instead if you are below half health).",
+    "**Riposte** after you parry.",
+    "**Adrenaline Rush** at the start of a fight; **Evasion** when your health gets low."
+   ],
+   "between": [
+    "Bandage below 60% health, eat below half."
+   ]
+  },
+  "subtlety-leveling": {
+   "before": [
+    "Daggers in both hands, poisons on.",
+    "Stealth up behind the mob; **Premeditation** for two free combo points."
+   ],
+   "steps": [
+    "Open with **Ambush** at low level, **Garrote** once you have it at 30 (it bleeds through armor).",
+    "**Ghostly Strike** whenever ready (it also makes you dodge more).",
+    "**Hemorrhage** (or **Sinister Strike** before you have it) to build combo points.",
+    "At 5 points: **Eviscerate** (or earlier if it would kill the mob).",
+    "**Riposte** after you parry; **Evasion** when your health gets low (**Preparation** resets it)."
+   ],
+   "between": [
+    "Bandage below 60% health, eat below half."
+   ]
+  }
  },
  "shaman": {
-  "enhancement-dps": {"before": ["**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon.", "Drop **Searing Totem** as you pull."],
-                      "steps": ["**Lightning Bolt** while the mob walks in.", "**Stormstrike** whenever ready, then **Earth Shock**.",
-                                "**Flame Shock** while your mana allows.", "**Lightning Bolt** when Maelstrom Weapon reaches 5 stacks (it is instant).",
-                                "Low on health: **Stoneclaw Totem** and **Lesser Healing Wave**."],
-                      "between": ["Heal back to 80% health, drink below a third of your mana."]},
-  "elemental-dps": {"before": ["**Lightning Shield** up.", "Pull from range with **Lightning Bolt**."],
-                    "steps": ["**Lightning Bolt** while the mob walks in.", "**Flame Shock**, **Earth Shock** and **Lava Burst** whenever ready.",
-                              "**Lightning Bolt** in between while your mana lasts."],
-                    "between": ["Heal back to 80% health, drink below a third of your mana."]}
+  "enhancement-dps": {
+   "before": [
+    "**Lightning Shield** up, **Rockbiter Weapon** on your weapon (**Windfury Weapon** from 30), a slow two-handed weapon.",
+    "Drop **Searing Totem** as you pull."
+   ],
+   "steps": [
+    "**Lightning Bolt** while the mob walks in.",
+    "**Stormstrike** whenever ready, then **Earth Shock**.",
+    "**Flame Shock** while your mana allows.",
+    "**Lightning Bolt** when Maelstrom Weapon reaches 5 stacks (it is instant).",
+    "Low on health: **Stoneclaw Totem** and **Lesser Healing Wave**."
+   ],
+   "between": [
+    "Heal back to 80% health, drink below a third of your mana."
+   ]
+  },
+  "elemental-dps": {
+   "before": [
+    "**Lightning Shield** up.",
+    "Pull from range with **Lightning Bolt**."
+   ],
+   "steps": [
+    "**Lightning Bolt** while the mob walks in.",
+    "**Flame Shock**, **Earth Shock** and **Lava Burst** whenever ready.",
+    "**Lightning Bolt** in between while your mana lasts."
+   ],
+   "between": [
+    "Heal back to 80% health, drink below a third of your mana."
+   ]
+  }
  },
  "warlock": {
-  "affliction-leveling": {"before": ["**Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**.", "Send the Voidwalker in first and let it hold the mob."],
-                          "steps": ["**Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.", "**Wrack** once the damage-over-time spells are up.",
-                                    "**Shadow Bolt** while you have plenty of mana, your wand otherwise.", "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
-                                    "If a mob reaches you: **Fear** it or **Death Coil**."],
-                          "between": ["**Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health."]}
+  "affliction-leveling": {
+   "before": [
+    "**Demon Skin** (later **Demon Armor**) up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob."
+   ],
+   "steps": [
+    "**Corruption**, **Bane of Agony**, **Siphon Life** and **Immolate** on the mob.",
+    "**Wrack** once the damage-over-time spells are up.",
+    "**Shadow Bolt** while you have plenty of mana, your wand otherwise.",
+    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
+    "If a mob reaches you: **Fear** it or **Death Coil**."
+   ],
+   "between": [
+    "**Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat only below a third of your health."
+   ]
+  },
+  "demonology-leveling": {
+   "before": [
+    "**Demon Armor** up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob."
+   ],
+   "steps": [
+    "**Corruption**, **Bane of Agony** and **Siphon Life** on the mob.",
+    "**Searing Pain** to keep Demonic Brand up once you have it.",
+    "**Soul Fire** when Decimation lights up (mob below 35% health).",
+    "**Shadow Bolt** only when your mana is nearly full; your wand otherwise.",
+    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
+    "If a mob reaches you: **Death Coil** or **Fear**."
+   ],
+   "between": [
+    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health."
+   ]
+  },
+  "destruction-leveling": {
+   "before": [
+    "**Demon Armor** up, **Summon Voidwalker**.",
+    "Send the Voidwalker in first and let it hold the mob."
+   ],
+   "steps": [
+    "**Corruption** and **Bane of Agony** while the Voidwalker grabs the mob.",
+    "**Immolate**, then **Conflagrate** when Immolate is about to run out.",
+    "**Incinerate** on a burning mob while your mana is nearly full; your wand otherwise.",
+    "**Shadowburn** or **Conflagrate** to finish a mob they would kill.",
+    "**Drain Life** when you are hurt, **Life Tap** when you are low on mana.",
+    "If a mob reaches you: **Death Coil** or **Fear**."
+   ],
+   "between": [
+    "**Life Tap** back up, heal the Voidwalker with **Health Funnel**, eat only below a third of your health."
+   ]
+  }
  },
  "warrior": {
-  "arms-2h-raid": {"before": ["**Battle Stance**, a two-handed weapon."],
-                   "steps": ["**Bloodrage**, then **Charge** in.", "**Battle Shout**: keep it up.", "**Mortal Strike** whenever ready.",
-                             "**Overpower** when it lights up (after a dodge).", "**Rend** once.", "**Execute** when the mob is below 20% health.",
-                             "**Heroic Strike** with spare rage; **Victory Rush** after a kill."],
-                   "between": ["Bandage below 60% health, eat below half."]},
-  "fury-dw-raid": {"before": ["**Battle Stance**, a weapon in each hand."],
-                   "steps": ["**Bloodrage**, then **Charge** in.", "**Battle Shout**: keep it up.", "**Bloodthirst** whenever ready.",
-                             "**Overpower** when it lights up (after a dodge).", "**Execute** when the mob is below 20% health.",
-                             "**Heroic Strike** with spare rage; **Victory Rush** after a kill."],
-                   "between": ["Bandage below 60% health, eat below half."]}
+  "arms-2h-raid": {
+   "before": [
+    "**Battle Stance**, a two-handed weapon."
+   ],
+   "steps": [
+    "**Bloodrage**, then **Charge** in.",
+    "**Battle Shout**: keep it up.",
+    "**Mortal Strike** whenever ready.",
+    "**Overpower** when it lights up (after a dodge).",
+    "**Rend** once.",
+    "**Execute** when the mob is below 20% health.",
+    "**Heroic Strike** with spare rage; **Victory Rush** after a kill."
+   ],
+   "between": [
+    "Bandage below 60% health, eat below half."
+   ]
+  },
+  "fury-dw-raid": {
+   "before": [
+    "**Battle Stance**, a weapon in each hand."
+   ],
+   "steps": [
+    "**Bloodrage**, then **Charge** in.",
+    "**Battle Shout**: keep it up.",
+    "**Bloodthirst** whenever ready.",
+    "**Overpower** when it lights up (after a dodge).",
+    "**Execute** when the mob is below 20% health.",
+    "**Heroic Strike** with spare rage; **Victory Rush** after a kill."
+   ],
+   "between": [
+    "Bandage below 60% health, eat below half."
+   ]
+  },
+  "prot-leveling": {
+   "before": [
+    "A one-handed weapon and a shield, **Defensive Stance**."
+   ],
+   "steps": [
+    "**Battle Stance**, **Charge** in, then back to **Defensive Stance**.",
+    "**Battle Shout**: keep it up.",
+    "**Shield Block** whenever the mob is hitting you.",
+    "**Revenge** whenever it lights up (after a block, dodge or parry).",
+    "**Shield Slam** whenever ready.",
+    "**Rend** once.",
+    "**Shield Bash** a mob that casts spells.",
+    "**Heroic Strike** with spare rage; **Victory Rush** after a kill; **Concussion Blow** when you are hurt."
+   ],
+   "between": [
+    "You rarely need to eat or bandage: the shield soaks most of the damage."
+   ]
+  }
  }
 }
