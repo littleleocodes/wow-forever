@@ -1,0 +1,90 @@
+{
+ "id": "fullraid-melee-dps-popular",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Savage Strikes",
+    2
+   ],
+   [
+    "Survivalist",
+    3
+   ],
+   [
+    "Clever Traps",
+    2
+   ],
+   [
+    "Surefooted",
+    3
+   ],
+   [
+    "Survival Tactics",
+    2
+   ],
+   [
+    "Predator's Edge",
+    5
+   ],
+   [
+    "Resourcefulness",
+    2
+   ],
+   [
+    "Expose Prey",
+    2
+   ],
+   [
+    "Survivalist's Discipline",
+    2
+   ],
+   [
+    "Strider Kick",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Lacerating Strikes",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for melee-dps from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-hunter.json in the raid setting: 990.4 -> 990.4 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-1-hunter.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 990.3516971828176,
+  "dps_end": 990.3516971828176,
+  "gain": 0.0,
+  "tank": false
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "fullraid-mm-raid-ours",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Barrage",
+    2
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Improved Arcane Shot",
+    4
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for mm-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-bm-mm-raid.json in the raid setting: 744.4 -> 778.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-bm-mm-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 points Efficiency -> Improved Arcane Shot",
+    "gain_seed1": 0.03335534396076523,
+    "gain_seed2": 0.03249515978249162,
+    "split": "22/29/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Improved Arcane Shot -> Improved Stings",
+    "gain_seed1": 0.0069113758793619695,
+    "gain_seed2": 0.008594043521131134,
+    "split": "22/29/0"
+   },
+   {
+    "round": 3,
+    "move": "1 point Bestial Discipline -> Ranged Weapon Specialization",
+    "gain_seed1": 0.004848494780243184,
+    "gain_seed2": 0.004493637676772577,
+    "split": "21/30/0"
+   }
+  ],
+  "dps_start": 744.3887564203277,
+  "dps_end": 778.8664383678554,
+  "gain": 0.046316768825642285,
+  "tank": false
+ }
+}

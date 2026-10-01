@@ -34,6 +34,8 @@
 | Training dummy, 3-minute fight (only your own buffs) | 527 |
 | Parse (a full raid: every raid buff and debuff) | 988 |
 
+> Note: Retribution's equal-tier set (raidsim/gear_opt.py, 2026-09-30) is caster gear: the simulator's stat weights value spell damage more than Strength for this spec, and the set leans on Forever launch items (Leafre's Ring of Precise Spell Power, +100 spell damage). In a full raid it also gains from both the physical and the spell buffs, and in Forever Curse of the Elements covers Holy (beta tooltip: 'Magic damage taken'). Check the launch items' availability before trusting the full-raid number.
+
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
 Dummy 527 → mana +4% → armor +8% → physical +32% → spell +25% → everything else +18% → raid 988

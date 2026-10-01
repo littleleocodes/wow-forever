@@ -1,0 +1,2717 @@
+{
+ "mage": {
+  "frost-raid": {
+   "entry": "frost-raid",
+   "dummy_build": "frost-fingers-of-frost-raid",
+   "raid_build": "frost-fingers-of-frost-raid",
+   "builds": {
+    "frost-fingers-of-frost-raid": {
+     "ranks": {
+      "Arcane Focus": 5,
+      "Arcane Concentration": 5,
+      "Arcane Impact": 3,
+      "Missile Barrage": 1,
+      "Arcane Meditation": 3,
+      "Presence of Mind": 1,
+      "Arcane Mind": 1,
+      "Improved Channeling": 3,
+      "Improved Frostbolt": 5,
+      "Elemental Precision": 5,
+      "Ice Shards": 5,
+      "Ice Lance": 1,
+      "Piercing Ice": 3,
+      "Shatter": 3,
+      "Fingers of Frost": 2,
+      "Winter's Chill": 4,
+      "Frost Channeling": 1
+     },
+     "dummy": {
+      "dps": 639.9801836576808,
+      "talents": {
+       "Arcane Focus": 0.01059804336075687,
+       "Arcane Concentration": 0.025081932102163917,
+       "Arcane Impact": 0.00602164936148708,
+       "Missile Barrage": 0.09013787177560417,
+       "Arcane Meditation": 0.018895943682839755,
+       "Presence of Mind": 0.005310879310434391,
+       "Arcane Mind": 0.005352417587954794,
+       "Improved Channeling": 0.0,
+       "Improved Frostbolt": 0.12577708971316548,
+       "Elemental Precision": 0.04955010083653566,
+       "Ice Shards": 0.09660510160745839,
+       "Ice Lance": 0.027620266252297188,
+       "Piercing Ice": 0.0457119341373331,
+       "Shatter": 0.06507204669018707,
+       "Fingers of Frost": 0.6838060459650708,
+       "Winter's Chill": 0.04597238763069489,
+       "Frost Channeling": 0.004954909206355662
+      }
+     },
+     "raid": {
+      "dps": 728.2938324624547,
+      "talents": {
+       "Arcane Focus": 0.010264442281203823,
+       "Arcane Concentration": -0.00026116825946798095,
+       "Arcane Impact": 0.005805375960528214,
+       "Missile Barrage": 0.05000276368696577,
+       "Arcane Meditation": 0.00010887298129091949,
+       "Presence of Mind": 0.0054221498560106385,
+       "Arcane Mind": 0.005763065217784469,
+       "Improved Channeling": 0.0,
+       "Improved Frostbolt": 0.12743655963737333,
+       "Elemental Precision": 0.04923844228134988,
+       "Ice Shards": 0.10792422948554858,
+       "Ice Lance": 0.030497689553025786,
+       "Piercing Ice": 0.045800747562059985,
+       "Shatter": 0.06269645840644134,
+       "Fingers of Frost": 0.6763625736858786,
+       "Winter's Chill": 0.0445406995858999,
+       "Frost Channeling": 0.0003087032867270523
+      }
+     }
+    }
+   }
+  },
+  "fire-raid": {
+   "entry": "fire-raid",
+   "dummy_build": "fire-raid",
+   "raid_build": "fire-raid",
+   "builds": {
+    "fire-raid": {
+     "ranks": {
+      "Arcane Concentration": 5,
+      "Improved Channeling": 5,
+      "Arcane Subtlety": 2,
+      "Improved Fireball": 5,
+      "Wake of Fire": 2,
+      "Incineration": 3,
+      "Ignite": 5,
+      "Pyroblast": 1,
+      "Improved Scorch": 3,
+      "Hot Streak": 1,
+      "Master of Elements": 3,
+      "Critical Mass": 3,
+      "Fire Power": 5,
+      "Combustion": 1,
+      "Burning Soul": 2,
+      "Elemental Precision": 5
+     },
+     "dummy": {
+      "dps": 593.1382313590861,
+      "talents": {
+       "Arcane Concentration": 0.0634619047067565,
+       "Improved Channeling": 0.0,
+       "Arcane Subtlety": 0.0,
+       "Improved Fireball": 0.06404149161245154,
+       "Wake of Fire": 0.007863842934839105,
+       "Incineration": 0.02798649764448624,
+       "Ignite": 0.11671109746200603,
+       "Pyroblast": 0.06124972934586492,
+       "Improved Scorch": 0.33293023223312557,
+       "Hot Streak": 0.3325652851635086,
+       "Master of Elements": 0.035608737140407576,
+       "Critical Mass": 0.06402466062775891,
+       "Fire Power": 0.08940643617071153,
+       "Combustion": 0.05257198917257888,
+       "Burning Soul": 0.0,
+       "Elemental Precision": 0.058620026857287955
+      }
+     },
+     "raid": {
+      "dps": 728.7780432648624,
+      "talents": {
+       "Arcane Concentration": 0.017852700371013386,
+       "Improved Channeling": 0.0,
+       "Arcane Subtlety": 0.0,
+       "Improved Fireball": 0.07204865167779395,
+       "Wake of Fire": 0.00960134444957006,
+       "Incineration": 0.022087449407082627,
+       "Ignite": 0.12989435854422715,
+       "Pyroblast": 0.06769885464761449,
+       "Improved Scorch": 0.37294006024135673,
+       "Hot Streak": 0.3826150588548116,
+       "Master of Elements": 0.01688794038056185,
+       "Critical Mass": 0.06283814084628458,
+       "Fire Power": 0.09074248082771208,
+       "Combustion": 0.042026839460903576,
+       "Burning Soul": 0.0,
+       "Elemental Precision": 0.060475190649529664
+      }
+     }
+    }
+   }
+  },
+  "arcane-dps": {
+   "entry": "arcane-dps",
+   "dummy_build": "arcane-blast-raid",
+   "raid_build": "arcane-blast-raid",
+   "builds": {
+    "arcane-blast-raid": {
+     "ranks": {
+      "Arcane Focus": 5,
+      "Arcane Concentration": 5,
+      "Arcane Impact": 3,
+      "Arcane Blast": 1,
+      "Arcane Meditation": 3,
+      "Missile Barrage": 1,
+      "Presence of Mind": 1,
+      "Arcane Mind": 5,
+      "Arcane Instability": 3,
+      "Arcane Power": 1,
+      "Improved Channeling": 5,
+      "Arcane Subtlety": 2,
+      "Wake of Fire": 2,
+      "Incineration": 3,
+      "Ignite": 5,
+      "Burning Soul": 1,
+      "Elemental Precision": 5
+     },
+     "dummy": {
+      "dps": 591.6285521171459,
+      "talents": {
+       "Arcane Focus": 0.04058468025390072,
+       "Arcane Concentration": 0.02106574056126609,
+       "Arcane Impact": 0.03465284406310498,
+       "Arcane Blast": 0.18348637051308836,
+       "Arcane Meditation": 0.014942250617039798,
+       "Missile Barrage": 0.1910913178256325,
+       "Presence of Mind": 0.006428142023510164,
+       "Arcane Mind": 0.08614326974325026,
+       "Arcane Instability": 0.05113750529708849,
+       "Arcane Power": 0.024646652086318777,
+       "Improved Channeling": 0.0,
+       "Arcane Subtlety": 0.0,
+       "Wake of Fire": 0.015696999951774537,
+       "Incineration": 0.031754016716253,
+       "Ignite": 0.02865346989210682,
+       "Burning Soul": 0.0,
+       "Elemental Precision": 0.014427669945714205
+      }
+     },
+     "raid": {
+      "dps": 690.6180350583641,
+      "talents": {
+       "Arcane Focus": 0.04007712259050067,
+       "Arcane Concentration": -0.0001979008803614235,
+       "Arcane Impact": 0.033688617711626456,
+       "Arcane Blast": 0.18415386075584084,
+       "Arcane Meditation": 0.0001508869113275857,
+       "Missile Barrage": 0.17465939915099715,
+       "Presence of Mind": 0.005932033805010617,
+       "Arcane Mind": 0.09234457956059683,
+       "Arcane Instability": 0.05043232345294235,
+       "Arcane Power": 0.027650221226117377,
+       "Improved Channeling": 0.0,
+       "Arcane Subtlety": 0.0,
+       "Wake of Fire": 0.02772360182514344,
+       "Incineration": 0.030692325946544474,
+       "Ignite": 0.03300244246207895,
+       "Burning Soul": 0.0,
+       "Elemental Precision": 0.01486668915235656
+      }
+     }
+    }
+   }
+  },
+  "frostfire-raid": {
+   "entry": "frostfire-raid",
+   "dummy_build": "frostfire-raid",
+   "raid_build": "frostfire-raid",
+   "builds": {
+    "frostfire-raid": {
+     "ranks": {
+      "Improved Channeling": 2,
+      "Incineration": 3,
+      "Improved Fireball": 5,
+      "Ignite": 5,
+      "Pyroblast": 1,
+      "Improved Scorch": 3,
+      "Hot Streak": 1,
+      "Master of Elements": 3,
+      "Critical Mass": 3,
+      "Blast Wave": 1,
+      "Fire Power": 5,
+      "Combustion": 1,
+      "Wake of Fire": 2,
+      "Elemental Precision": 5,
+      "Ice Shards": 5,
+      "Piercing Ice": 3,
+      "Frost Channeling": 3
+     },
+     "dummy": {
+      "dps": 557.4010086548282,
+      "talents": {
+       "Improved Channeling": 0.0,
+       "Incineration": 0.017640965055990332,
+       "Improved Fireball": 0.015342465668777172,
+       "Ignite": 0.13889701303832358,
+       "Pyroblast": 0.04025951743584688,
+       "Improved Scorch": 0.12625310014747138,
+       "Hot Streak": 0.29478152868723684,
+       "Master of Elements": 0.024355310041055955,
+       "Critical Mass": 0.06074267725245197,
+       "Blast Wave": 0.0,
+       "Fire Power": 0.08852594206400688,
+       "Combustion": 0.09410819149919736,
+       "Wake of Fire": 0.022076696270227236,
+       "Elemental Precision": 0.025526638633587284,
+       "Ice Shards": 0.06676246971588207,
+       "Piercing Ice": 0.02621463729592688,
+       "Frost Channeling": 0.016209177296018007
+      }
+     },
+     "raid": {
+      "dps": 665.9630551825396,
+      "talents": {
+       "Improved Channeling": 0.0,
+       "Incineration": 0.020230205454804695,
+       "Improved Fireball": 0.00039945378855699154,
+       "Ignite": 0.15232488303477787,
+       "Pyroblast": 0.040917032513207,
+       "Improved Scorch": 0.12791040797609798,
+       "Hot Streak": 0.32973075842436605,
+       "Master of Elements": 0.035507041097566305,
+       "Critical Mass": 0.06066371536562276,
+       "Blast Wave": 0.0,
+       "Fire Power": 0.08812307167432543,
+       "Combustion": 0.07894350459090882,
+       "Wake of Fire": 0.019938425014911054,
+       "Elemental Precision": 0.022590291769852056,
+       "Ice Shards": 0.08155614589288351,
+       "Piercing Ice": 0.03020968117649281,
+       "Frost Channeling": 0.03680424890790335
+      }
+     }
+    }
+   }
+  }
+ },
+ "priest": {
+  "shadow-dps": {
+   "entry": "shadow-dps",
+   "dummy_build": "opt-shadow-dps-raid-dps",
+   "raid_build": "opt-shadow-dps-raid-dps",
+   "builds": {
+    "opt-shadow-dps-raid-dps": {
+     "ranks": {
+      "Twin Disciplines": 5,
+      "Power in Light": 5,
+      "Wand Specialization": 2,
+      "Meditation": 3,
+      "Mental Strength": 5,
+      "Shadow Focus": 5,
+      "Improved Shadow Word: Pain": 2,
+      "Shadow Affinity": 3,
+      "Shadow Reach": 1,
+      "Mind Flay": 1,
+      "Improved Mind Flay": 2,
+      "Improved Mind Blast": 5,
+      "Vampiric Embrace": 1,
+      "Shadow Weaving": 3,
+      "Devouring Contagion": 2,
+      "Darkness": 5,
+      "Shadowform": 1
+     },
+     "dummy": {
+      "dps": 631.6985565832848,
+      "talents": {
+       "Twin Disciplines": 0.012095705443580518,
+       "Power in Light": 0.0,
+       "Wand Specialization": 0.0,
+       "Meditation": 0.0764621910574439,
+       "Mental Strength": 0.007665532415338516,
+       "Shadow Focus": 0.03433695661077907,
+       "Improved Shadow Word: Pain": 0.019295233912053678,
+       "Shadow Affinity": 0.0,
+       "Shadow Reach": 0.0,
+       "Mind Flay": 0.4193083962828764,
+       "Improved Mind Flay": 0.07535971382653661,
+       "Improved Mind Blast": 0.02441055098640499,
+       "Vampiric Embrace": 0.0,
+       "Shadow Weaving": 0.08627328674515355,
+       "Devouring Contagion": 0.003368841151614621,
+       "Darkness": 0.09090909090909183,
+       "Shadowform": 0.4471119666553698
+      }
+     },
+     "raid": {
+      "dps": 724.8242668528026,
+      "talents": {
+       "Twin Disciplines": 0.012039792168447971,
+       "Power in Light": 0.0,
+       "Wand Specialization": 0.0,
+       "Meditation": 0.0003041387006992302,
+       "Mental Strength": 0.006519418085751849,
+       "Shadow Focus": 0.03526786970016205,
+       "Improved Shadow Word: Pain": 0.01861285501210941,
+       "Shadow Affinity": 0.0,
+       "Shadow Reach": 0.0,
+       "Mind Flay": 0.4210751151091888,
+       "Improved Mind Flay": 0.075637125133999,
+       "Improved Mind Blast": 0.02443934978350637,
+       "Vampiric Embrace": 0.0,
+       "Shadow Weaving": 0.0863182343101192,
+       "Devouring Contagion": 5.015805618902025e-05,
+       "Darkness": 0.09090909090908994,
+       "Shadowform": 0.20296627769510367
+      }
+     }
+    }
+   }
+  },
+  "smite-dps": {
+   "entry": "smite-dps",
+   "dummy_build": "smite-discipline-raid",
+   "raid_build": "smite-discipline-raid",
+   "builds": {
+    "smite-discipline-raid": {
+     "ranks": {
+      "Power in Light": 5,
+      "Twin Disciplines": 5,
+      "Holy Precision": 3,
+      "Mental Agility": 3,
+      "Inner Focus": 1,
+      "Meditation": 3,
+      "Mental Strength": 5,
+      "Penance": 1,
+      "Power Infusion": 1,
+      "Martyrdom": 2,
+      "Silent Resolve": 2,
+      "Holy Specialization": 5,
+      "Divine Fury": 5,
+      "Inspiration": 1,
+      "Searing Light": 2,
+      "Twilight Focus": 3,
+      "Holy Nova": 1,
+      "Shadow Focus": 3
+     },
+     "dummy": {
+      "dps": 440.33393160443336,
+      "talents": {
+       "Power in Light": 0.05074309950987688,
+       "Twin Disciplines": 0.010582709076972896,
+       "Holy Precision": 0.10868647461439973,
+       "Mental Agility": 0.027265477891674994,
+       "Inner Focus": 0.1779463734501373,
+       "Meditation": 0.09281923159989458,
+       "Mental Strength": 0.01354346318243227,
+       "Penance": 0.06726201961999523,
+       "Power Infusion": 0.024201919167255004,
+       "Martyrdom": 0.0,
+       "Silent Resolve": 0.0,
+       "Holy Specialization": 0.017895482234705162,
+       "Divine Fury": 0.12323756692733534,
+       "Inspiration": 0.0,
+       "Searing Light": 0.03711697837206385,
+       "Twilight Focus": 0.0,
+       "Holy Nova": 0.0,
+       "Shadow Focus": 0.0061340338117612525
+      }
+     },
+     "raid": {
+      "dps": 578.8145394390174,
+      "talents": {
+       "Power in Light": 0.0547464809829914,
+       "Twin Disciplines": 0.00965676358107237,
+       "Holy Precision": 0.10690007737290863,
+       "Mental Agility": 0.00037297266516966854,
+       "Inner Focus": 0.11158386619942318,
+       "Meditation": 6.553590686475541e-05,
+       "Mental Strength": 0.003738070681767791,
+       "Penance": 0.0818271155623641,
+       "Power Infusion": 0.020685189398238935,
+       "Martyrdom": 0.0,
+       "Silent Resolve": 0.0,
+       "Holy Specialization": 0.017886485963238608,
+       "Divine Fury": 0.13861780813981384,
+       "Inspiration": 0.0,
+       "Searing Light": 0.0381543671802923,
+       "Twilight Focus": 0.0,
+       "Holy Nova": 0.0,
+       "Shadow Focus": 0.003889640668407135
+      }
+     }
+    }
+   }
+  }
+ },
+ "warlock": {
+  "affliction-raid": {
+   "entry": "affliction-raid",
+   "dummy_build": "opt-affliction-raid-raid-dps",
+   "raid_build": "opt-affliction-raid-raid-dps",
+   "builds": {
+    "opt-affliction-raid-raid-dps": {
+     "ranks": {
+      "Suppression": 5,
+      "Improved Corruption": 5,
+      "Improved Life Tap": 2,
+      "Malediction": 2,
+      "Pandemic": 3,
+      "Improved Bane of Agony": 2,
+      "Amplify Curse": 1,
+      "Malevolence": 5,
+      "Shadow Mastery": 5,
+      "Bane": 5,
+      "Improved Shadow Bolt": 5,
+      "Cataclysm": 3,
+      "Ruin": 5,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 639.2932938194997,
+      "talents": {
+       "Suppression": 0.04441375613384935,
+       "Improved Corruption": 0.037939965997040415,
+       "Improved Life Tap": 0.019503258340114016,
+       "Malediction": 0.008466536681402181,
+       "Pandemic": 0.02590084750685895,
+       "Improved Bane of Agony": 0.016369557580823257,
+       "Amplify Curse": 0.004553157154525644,
+       "Malevolence": 0.04868790489046726,
+       "Shadow Mastery": 0.037195263616030316,
+       "Bane": 0.09185393814546183,
+       "Improved Shadow Bolt": 0.05562298461176585,
+       "Cataclysm": 0.017895422880947365,
+       "Ruin": 0.041954802799712976,
+       "Agonizing Flames": 0.05277769497926321
+      }
+     },
+     "raid": {
+      "dps": 767.4256957651296,
+      "talents": {
+       "Suppression": 0.04388057972072923,
+       "Improved Corruption": 0.03414722559933947,
+       "Improved Life Tap": 0.00800556340837888,
+       "Malediction": 0.007861901969284046,
+       "Pandemic": 0.030982285870432724,
+       "Improved Bane of Agony": 0.015084266041250682,
+       "Amplify Curse": 0.003639722409745638,
+       "Malevolence": 0.04471628949100881,
+       "Shadow Mastery": 0.036702107156746266,
+       "Bane": 0.10179502629929726,
+       "Improved Shadow Bolt": 0.07426321440021377,
+       "Cataclysm": 0.01381187502012815,
+       "Ruin": 0.05586690643801695,
+       "Agonizing Flames": 0.05339972046176078
+      }
+     }
+    }
+   }
+  },
+  "fire-destro-raid": {
+   "entry": "fire-destro-raid",
+   "dummy_build": "destruction-fire-raid",
+   "raid_build": "opt-fire-destro-raid-parse",
+   "builds": {
+    "destruction-fire-raid": {
+     "ranks": {
+      "Improved Life Tap": 2,
+      "Suppression": 5,
+      "Improved Corruption": 5,
+      "Amplify Curse": 1,
+      "Pandemic": 3,
+      "Improved Bane of Agony": 1,
+      "Malevolence": 5,
+      "Fel Vitality": 3,
+      "Demonic Aegis": 2,
+      "Demonic Sacrifice": 1,
+      "Demonic Embrace": 5,
+      "Bane": 5,
+      "Improved Shadow Bolt": 5,
+      "Ruin": 4,
+      "Shadowburn": 1,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 612.6023284798496,
+      "talents": {
+       "Improved Life Tap": 0.020801134789870446,
+       "Suppression": 0.04703774072216105,
+       "Improved Corruption": 0.036953991483380855,
+       "Amplify Curse": 0.004305135351214018,
+       "Pandemic": 0.027375966378049843,
+       "Improved Bane of Agony": 0.009038360713869875,
+       "Malevolence": 0.0497135311114536,
+       "Fel Vitality": 0.005452365482857213,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.11483652350914197,
+       "Demonic Embrace": 0.0,
+       "Bane": 0.08926059791638019,
+       "Improved Shadow Bolt": 0.05807524145525589,
+       "Ruin": 0.03608439486719539,
+       "Shadowburn": 0.00824771385565981,
+       "Agonizing Flames": 0.05764086625244225
+      }
+     },
+     "raid": {
+      "dps": 724.9094334277031,
+      "talents": {
+       "Improved Life Tap": 0.011022768896048474,
+       "Suppression": 0.04845246635499589,
+       "Improved Corruption": 0.03690060263408357,
+       "Amplify Curse": 0.0038919546885120004,
+       "Pandemic": 0.033561194528629934,
+       "Improved Bane of Agony": 0.008472442579087192,
+       "Malevolence": 0.04678671916535093,
+       "Fel Vitality": 0.006873788885234822,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.11545312990439571,
+       "Demonic Embrace": 0.0,
+       "Bane": 0.10404832397597918,
+       "Improved Shadow Bolt": 0.08005941621595858,
+       "Ruin": 0.04917708910156027,
+       "Shadowburn": 0.007791228754359669,
+       "Agonizing Flames": 0.05933012330906107
+      }
+     }
+    },
+    "opt-fire-destro-raid-parse": {
+     "ranks": {
+      "Suppression": 5,
+      "Improved Corruption": 5,
+      "Improved Bane of Agony": 2,
+      "Amplify Curse": 1,
+      "Pandemic": 3,
+      "Malevolence": 5,
+      "Demonic Embrace": 5,
+      "Fel Vitality": 3,
+      "Demonic Aegis": 2,
+      "Demonic Sacrifice": 1,
+      "Bane": 5,
+      "Improved Shadow Bolt": 5,
+      "Ruin": 5,
+      "Shadowburn": 1,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 610.6869384664255,
+      "talents": {
+       "Suppression": 0.04656510560262861,
+       "Improved Corruption": 0.03734188890695278,
+       "Improved Bane of Agony": 0.018042712960063323,
+       "Amplify Curse": 0.0045242876378760455,
+       "Pandemic": 0.02824094716704051,
+       "Malevolence": 0.05087641954327016,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.006419124025467515,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.11460194503855714,
+       "Bane": 0.08925346158463765,
+       "Improved Shadow Bolt": 0.05623618724684387,
+       "Ruin": 0.04354284240648654,
+       "Shadowburn": 0.008041967619312862,
+       "Agonizing Flames": 0.05645966444502404
+      }
+     },
+     "raid": {
+      "dps": 731.8109086227579,
+      "talents": {
+       "Suppression": 0.04859892520696252,
+       "Improved Corruption": 0.0361098483681791,
+       "Improved Bane of Agony": 0.01676139918044217,
+       "Amplify Curse": 0.004038834282026338,
+       "Pandemic": 0.03393214076607165,
+       "Malevolence": 0.04844228644970583,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.008560626470047739,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.11553986618741896,
+       "Bane": 0.1014896873205442,
+       "Improved Shadow Bolt": 0.07946957540560162,
+       "Ruin": 0.059843990196616126,
+       "Shadowburn": 0.007828480676496441,
+       "Agonizing Flames": 0.058922303710852386
+      }
+     }
+    }
+   }
+  },
+  "sb-raid": {
+   "entry": "sb-raid",
+   "dummy_build": "opt-sb-raid-raid-dps",
+   "raid_build": "ds-ruin-raid",
+   "builds": {
+    "opt-sb-raid-raid-dps": {
+     "ranks": {
+      "Improved Life Tap": 2,
+      "Suppression": 5,
+      "Improved Corruption": 5,
+      "Improved Bane of Agony": 2,
+      "Pandemic": 3,
+      "Malevolence": 5,
+      "Demonic Embrace": 5,
+      "Fel Vitality": 3,
+      "Demonic Aegis": 2,
+      "Demonic Sacrifice": 1,
+      "Bane": 5,
+      "Improved Shadow Bolt": 5,
+      "Ruin": 5,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 638.7786377070206,
+      "talents": {
+       "Improved Life Tap": 0.020548012943578442,
+       "Suppression": 0.0476437586921451,
+       "Improved Corruption": 0.03874796387608159,
+       "Improved Bane of Agony": 0.01703881120242623,
+       "Pandemic": 0.027190073970883244,
+       "Malevolence": 0.05199832538993132,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.007790556628636591,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.1151609969716979,
+       "Bane": 0.09585913438701354,
+       "Improved Shadow Bolt": 0.05888784250496126,
+       "Ruin": 0.044874704698435575,
+       "Agonizing Flames": 0.05799485053046083
+      }
+     },
+     "raid": {
+      "dps": 756.3473329794301,
+      "talents": {
+       "Improved Life Tap": 0.010769920207096106,
+       "Suppression": 0.04866949449698654,
+       "Improved Corruption": 0.03769009303931514,
+       "Improved Bane of Agony": 0.016030328513578662,
+       "Pandemic": 0.03333323747428907,
+       "Malevolence": 0.04859338144278236,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.007448022130786103,
+       "Demonic Aegis": 0.0,
+       "Demonic Sacrifice": 0.11569708494848607,
+       "Bane": 0.10793847821324132,
+       "Improved Shadow Bolt": 0.08026814713170372,
+       "Ruin": 0.060489677357449034,
+       "Agonizing Flames": 0.059721214005263645
+      }
+     }
+    },
+    "ds-ruin-raid": {
+     "ranks": {
+      "Suppression": 5,
+      "Improved Corruption": 5,
+      "Improved Life Tap": 1,
+      "Pandemic": 3,
+      "Improved Bane of Agony": 2,
+      "Amplify Curse": 1,
+      "Malevolence": 5,
+      "Demonic Embrace": 5,
+      "Fel Vitality": 3,
+      "Demonic Sacrifice": 1,
+      "Demonic Aegis": 2,
+      "Bane": 5,
+      "Improved Shadow Bolt": 5,
+      "Ruin": 5,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 635.5408006002215,
+      "talents": {
+       "Suppression": 0.04737520113971172,
+       "Improved Corruption": 0.03784009506906638,
+       "Improved Life Tap": 0.011736526764736688,
+       "Pandemic": 0.027570922856726354,
+       "Improved Bane of Agony": 0.01741349101365086,
+       "Amplify Curse": 0.0035946483237818683,
+       "Malevolence": 0.05167389888228724,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.011927199927897147,
+       "Demonic Sacrifice": 0.11501311673865289,
+       "Demonic Aegis": 0.0,
+       "Bane": 0.09450337989557456,
+       "Improved Shadow Bolt": 0.05782351117935125,
+       "Ruin": 0.044537333753916664,
+       "Agonizing Flames": 0.05756317725505278
+      }
+     },
+     "raid": {
+      "dps": 755.2804422707778,
+      "talents": {
+       "Suppression": 0.04860121449864396,
+       "Improved Corruption": 0.03601634599877079,
+       "Improved Life Tap": 0.005451135048827549,
+       "Pandemic": 0.03364580792168559,
+       "Improved Bane of Agony": 0.016364669997836034,
+       "Amplify Curse": 0.0034345203122811974,
+       "Malevolence": 0.048462337100757424,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.007717150330742606,
+       "Demonic Sacrifice": 0.11567192817955663,
+       "Demonic Aegis": 0.0,
+       "Bane": 0.10753980897529158,
+       "Improved Shadow Bolt": 0.07989864338729968,
+       "Ruin": 0.060240458051037615,
+       "Agonizing Flames": 0.059429707961977774
+      }
+     }
+    }
+   }
+  },
+  "demonology-raid": {
+   "entry": "demonology-raid",
+   "dummy_build": "demonology-pact-raid",
+   "raid_build": "demonology-pact-raid",
+   "builds": {
+    "demonology-pact-raid": {
+     "ranks": {
+      "Improved Life Tap": 1,
+      "Improved Corruption": 1,
+      "Unholy Power": 5,
+      "Fel Vitality": 3,
+      "Improved Sayaad": 2,
+      "Demonic Sacrifice": 1,
+      "Master Summoner": 2,
+      "Decimation": 2,
+      "Demonic Brand": 3,
+      "Soul Link": 1,
+      "Demonic Knowledge": 3,
+      "Master Demonologist": 5,
+      "Demonic Pact": 1,
+      "Demonic Embrace": 3,
+      "Improved Shadow Bolt": 5,
+      "Bane": 5,
+      "Ruin": 5,
+      "Agonizing Flames": 3
+     },
+     "dummy": {
+      "dps": 679.060477549789,
+      "talents": {
+       "Improved Life Tap": 0.00983156343126279,
+       "Improved Corruption": 0.02036713988967176,
+       "Unholy Power": 0.005929938335346274,
+       "Fel Vitality": 0.007855500238738378,
+       "Improved Sayaad": 0.0019774742628596575,
+       "Demonic Sacrifice": 0.12112717354287605,
+       "Master Summoner": 0.0,
+       "Decimation": 0.010464346856697504,
+       "Demonic Brand": 9.022392610613661e-05,
+       "Soul Link": 0.02912621359223333,
+       "Demonic Knowledge": 0.05190789450513422,
+       "Master Demonologist": 0.08550765298670926,
+       "Demonic Pact": 0.12112717354287605,
+       "Demonic Embrace": 0.0,
+       "Improved Shadow Bolt": 0.05011565723385136,
+       "Bane": 0.08156548051868828,
+       "Ruin": 0.03311041919997981,
+       "Agonizing Flames": 0.05382792334629005
+      }
+     },
+     "raid": {
+      "dps": 820.4228916419352,
+      "talents": {
+       "Improved Life Tap": 0.004413881900095951,
+       "Improved Corruption": 0.02056275594478052,
+       "Unholy Power": 0.007102109417880809,
+       "Fel Vitality": 0.008009721677224912,
+       "Improved Sayaad": 0.0016389839357002778,
+       "Demonic Sacrifice": 0.11912207098125538,
+       "Master Summoner": 0.0,
+       "Decimation": 0.010407771113939313,
+       "Demonic Brand": 0.00011159663361026695,
+       "Soul Link": 0.02902461886392138,
+       "Demonic Knowledge": 0.0491749680753828,
+       "Master Demonologist": 0.08392762857102842,
+       "Demonic Pact": 0.11912207098125538,
+       "Demonic Embrace": 0.0,
+       "Improved Shadow Bolt": 0.07395274042982725,
+       "Bane": 0.09592008501874716,
+       "Ruin": 0.04826879087997715,
+       "Agonizing Flames": 0.05507946280876297
+      }
+     }
+    }
+   }
+  },
+  "incinerate-raid": {
+   "entry": "incinerate-raid",
+   "dummy_build": "destruction-incinerate-raid",
+   "raid_build": "destruction-incinerate-raid",
+   "builds": {
+    "destruction-incinerate-raid": {
+     "ranks": {
+      "Improved Corruption": 3,
+      "Suppression": 5,
+      "Improved Life Tap": 1,
+      "Demonic Embrace": 5,
+      "Fel Vitality": 3,
+      "Demonic Sacrifice": 1,
+      "Demonic Aegis": 2,
+      "Bane": 5,
+      "Aftermath": 4,
+      "Cataclysm": 2,
+      "Ruin": 5,
+      "Shadowburn": 1,
+      "Agonizing Flames": 3,
+      "Conflagrate": 1,
+      "Fire and Brimstone": 3,
+      "Bane of Havoc": 1,
+      "Shadow and Flame": 5,
+      "Incinerate": 1
+     },
+     "dummy": {
+      "dps": 560.56238275218,
+      "talents": {
+       "Improved Corruption": 0.028332885354673043,
+       "Suppression": 0.04415927143065701,
+       "Improved Life Tap": 0.012588986019927528,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.010051826929811214,
+       "Demonic Sacrifice": 0.04711802130383402,
+       "Demonic Aegis": 0.0,
+       "Bane": 0.072667167134991,
+       "Aftermath": 0.013753397132655665,
+       "Cataclysm": 0.00902459456368443,
+       "Ruin": 0.04518562251015157,
+       "Shadowburn": 0.005050296230344364,
+       "Agonizing Flames": 0.05791568481787668,
+       "Conflagrate": 0.045695701217133844,
+       "Fire and Brimstone": 0.021447938068534733,
+       "Bane of Havoc": 0.0,
+       "Shadow and Flame": 0.08366047210160676,
+       "Incinerate": 0.319649664441941
+      }
+     },
+     "raid": {
+      "dps": 647.1482536217674,
+      "talents": {
+       "Improved Corruption": 0.03261791900122579,
+       "Suppression": 0.045271818466394054,
+       "Improved Life Tap": 0.005415986170741904,
+       "Demonic Embrace": 0.0,
+       "Fel Vitality": 0.007749643687321006,
+       "Demonic Sacrifice": 0.04354313340352289,
+       "Demonic Aegis": 0.0,
+       "Bane": 0.0878350561116672,
+       "Aftermath": 0.013249536218878477,
+       "Cataclysm": 0.010716103227527696,
+       "Ruin": 0.0616606968890111,
+       "Shadowburn": 0.006508414446739441,
+       "Agonizing Flames": 0.06057078981257835,
+       "Conflagrate": 0.0430945820900388,
+       "Fire and Brimstone": 0.01969976017728481,
+       "Bane of Havoc": 0.0,
+       "Shadow and Flame": 0.08150661890874467,
+       "Incinerate": 0.36465657909977967
+      }
+     }
+    }
+   }
+  }
+ },
+ "hunter": {
+  "mm-raid": {
+   "entry": "mm-raid",
+   "dummy_build": "opt-mm-raid-raid-dps",
+   "raid_build": "opt-mm-raid-parse",
+   "builds": {
+    "opt-mm-raid-raid-dps": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Endurance Training": 3,
+      "Focused Fire": 2,
+      "Unleashed Fury": 5,
+      "Ferocity": 5,
+      "Bestial Discipline": 2,
+      "Lethal Attacks": 5,
+      "Efficiency": 5,
+      "Careful Aim": 5,
+      "Improved Stings": 3,
+      "Improved Arcane Shot": 1,
+      "Mortal Shots": 5,
+      "Trueshot Aura": 1,
+      "Ranged Weapon Specialization": 4
+     },
+     "dummy": {
+      "dps": 425.31391068498635,
+      "talents": {
+       "Deadly Aspects": 0.04377233930766555,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.019607843137256276,
+       "Unleashed Fury": 0.013920820623958052,
+       "Ferocity": 0.012107660254297992,
+       "Bestial Discipline": 0.05714809104868035,
+       "Lethal Attacks": 0.04692063129177859,
+       "Efficiency": 0.07093166786384941,
+       "Careful Aim": 0.04594525202942357,
+       "Improved Stings": 0.027216424695527985,
+       "Improved Arcane Shot": -0.0004290669960769211,
+       "Mortal Shots": 0.03881281962571992,
+       "Trueshot Aura": 0.020634095222795912,
+       "Ranged Weapon Specialization": 0.028075967706787663
+      }
+     },
+     "raid": {
+      "dps": 746.1276765194782,
+      "talents": {
+       "Deadly Aspects": 0.050952927960449146,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.01926141375347401,
+       "Unleashed Fury": 0.012267891227398686,
+       "Ferocity": 0.011786480625628482,
+       "Bestial Discipline": 0.006116734773313981,
+       "Lethal Attacks": 0.04518219860965045,
+       "Efficiency": 0.00021596019840086633,
+       "Careful Aim": 0.061122824917157814,
+       "Improved Stings": 0.02544917563548832,
+       "Improved Arcane Shot": 0.0030734608559233045,
+       "Mortal Shots": 0.04590176337136931,
+       "Trueshot Aura": 0.019507284548029413,
+       "Ranged Weapon Specialization": 0.028291662110418114
+      }
+     }
+    },
+    "opt-mm-raid-parse": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Endurance Training": 3,
+      "Focused Fire": 2,
+      "Unleashed Fury": 5,
+      "Ferocity": 5,
+      "Bestial Discipline": 2,
+      "Lethal Attacks": 5,
+      "Careful Aim": 5,
+      "Improved Stings": 3,
+      "Efficiency": 2,
+      "Improved Arcane Shot": 5,
+      "Mortal Shots": 5,
+      "Ranged Weapon Specialization": 4
+     },
+     "dummy": {
+      "dps": 400.98681096062035,
+      "talents": {
+       "Deadly Aspects": 0.03714268235888163,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.019607843137255165,
+       "Unleashed Fury": 0.014756881461644444,
+       "Ferocity": 0.012783674736393302,
+       "Bestial Discipline": 0.05236176845389473,
+       "Lethal Attacks": 0.04681647262172428,
+       "Careful Aim": 0.0470875969320006,
+       "Improved Stings": 0.022954814985427174,
+       "Efficiency": 0.02823244747691389,
+       "Improved Arcane Shot": 0.006918594162254488,
+       "Mortal Shots": 0.038604069879758285,
+       "Ranged Weapon Specialization": 0.028812885341596095
+      }
+     },
+     "raid": {
+      "dps": 753.969581012101,
+      "talents": {
+       "Deadly Aspects": 0.04363582591339965,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.019266858624927274,
+       "Unleashed Fury": 0.012137051424750078,
+       "Ferocity": 0.011620598883742339,
+       "Bestial Discipline": 0.007153448233088944,
+       "Lethal Attacks": 0.04532708231059823,
+       "Careful Aim": 0.06174197767881218,
+       "Improved Stings": 0.024320577964289547,
+       "Efficiency": -7.318179838944339e-05,
+       "Improved Arcane Shot": 0.03274010802203542,
+       "Mortal Shots": 0.04597418699502398,
+       "Ranged Weapon Specialization": 0.028601369019069067
+      }
+     }
+    }
+   }
+  },
+  "mm-lonewolf-raid": {
+   "entry": "mm-lonewolf-raid",
+   "dummy_build": "opt-mm-lonewolf-raid-raid-dps",
+   "raid_build": "opt-mm-lonewolf-raid-raid-dps",
+   "builds": {
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Lethal Attacks": 5,
+      "Careful Aim": 5,
+      "Improved Stings": 3,
+      "Efficiency": 5,
+      "Lone Wolf": 1,
+      "Improved Arcane Shot": 5,
+      "Mortal Shots": 5,
+      "Trueshot Aura": 1,
+      "Barrage": 3,
+      "Ranged Weapon Specialization": 5,
+      "Improved Tracking": 5,
+      "Survivalist": 3
+     },
+     "dummy": {
+      "dps": 434.75887639445244,
+      "talents": {
+       "Deadly Aspects": 0.03995346725485538,
+       "Lethal Attacks": 0.052673857514407896,
+       "Careful Aim": 0.05192877917795791,
+       "Improved Stings": 0.027214025668177433,
+       "Efficiency": 0.08219956817837548,
+       "Lone Wolf": 0.16666666666666707,
+       "Improved Arcane Shot": 0.016615313470131454,
+       "Mortal Shots": 0.04342949186980438,
+       "Trueshot Aura": 0.023321308014053188,
+       "Barrage": 0.008473304089409939,
+       "Ranged Weapon Specialization": 0.0398436117138552,
+       "Improved Tracking": 0.0,
+       "Survivalist": 0.0
+      }
+     },
+     "raid": {
+      "dps": 851.6793582560227,
+      "talents": {
+       "Deadly Aspects": 0.05409433403573549,
+       "Lethal Attacks": 0.0503718422534607,
+       "Careful Aim": 0.06694897047663384,
+       "Improved Stings": 0.027857698930161545,
+       "Efficiency": 0.0064890233099111905,
+       "Lone Wolf": 0.16548025973252967,
+       "Improved Arcane Shot": 0.06364154202659977,
+       "Mortal Shots": 0.05122488753152166,
+       "Trueshot Aura": 0.021366692705307333,
+       "Barrage": 0.015148435306372221,
+       "Ranged Weapon Specialization": 0.039320731657818686,
+       "Improved Tracking": 0.0,
+       "Survivalist": 0.0
+      }
+     }
+    }
+   }
+  },
+  "bm-raid": {
+   "entry": "bm-raid",
+   "dummy_build": "beast-mastery-raid",
+   "raid_build": "mm-hawk-raid",
+   "builds": {
+    "beast-mastery-raid": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Endurance Training": 2,
+      "Focused Fire": 2,
+      "Improved Revive Pet": 2,
+      "Bestial Swiftness": 1,
+      "Unleashed Fury": 5,
+      "Ferocity": 5,
+      "Summon Hawk": 1,
+      "Bestial Discipline": 2,
+      "Frenzy": 5,
+      "Lethal Attacks": 5,
+      "Improved Stings": 3,
+      "Efficiency": 4,
+      "Careful Aim": 5,
+      "Trueshot Aura": 1,
+      "Mortal Shots": 3
+     },
+     "dummy": {
+      "dps": 455.0265971881312,
+      "talents": {
+       "Deadly Aspects": 0.03896790187533561,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.0196078431372545,
+       "Improved Revive Pet": 0.0,
+       "Bestial Swiftness": 0.0,
+       "Unleashed Fury": 0.051601686842039585,
+       "Ferocity": 0.04571975689907459,
+       "Summon Hawk": 0.3306644778917843,
+       "Bestial Discipline": 0.04488295324345226,
+       "Frenzy": 0.012742970696580258,
+       "Lethal Attacks": 0.040524899790819635,
+       "Improved Stings": 0.038402277430886644,
+       "Efficiency": 0.031148703888999263,
+       "Careful Aim": 0.03441588683975272,
+       "Trueshot Aura": 0.015456236604679319,
+       "Mortal Shots": 0.01603643076897532
+      }
+     },
+     "raid": {
+      "dps": 672.5046126240023,
+      "talents": {
+       "Deadly Aspects": 0.04592045408986434,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.0189894430150348,
+       "Improved Revive Pet": 0.0,
+       "Bestial Swiftness": 0.0,
+       "Unleashed Fury": 0.04463591409982759,
+       "Ferocity": 0.04522778290888729,
+       "Summon Hawk": 0.2762715503849036,
+       "Bestial Discipline": 0.006247077949737778,
+       "Frenzy": 0.014535171221890186,
+       "Lethal Attacks": 0.038612234547335866,
+       "Improved Stings": 0.03142256111456132,
+       "Efficiency": 0.0,
+       "Careful Aim": 0.05004465350683418,
+       "Trueshot Aura": 0.0,
+       "Mortal Shots": 0.01986136788787196
+      }
+     }
+    },
+    "mm-hawk-raid": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Endurance Training": 3,
+      "Focused Fire": 2,
+      "Unleashed Fury": 5,
+      "Ferocity": 5,
+      "Bestial Discipline": 1,
+      "Summon Hawk": 1,
+      "Lethal Attacks": 5,
+      "Efficiency": 5,
+      "Careful Aim": 5,
+      "Improved Stings": 3,
+      "Mortal Shots": 5,
+      "Trueshot Aura": 1,
+      "Ranged Weapon Specialization": 4,
+      "Hawk Eye": 1
+     },
+     "dummy": {
+      "dps": 453.28294224788465,
+      "talents": {
+       "Deadly Aspects": 0.041092796231007256,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.019607843137254277,
+       "Unleashed Fury": 0.05002287599391053,
+       "Ferocity": 0.0334315635298581,
+       "Bestial Discipline": 0.021667778319189535,
+       "Summon Hawk": 0.3179842247442941,
+       "Lethal Attacks": 0.0435572103998334,
+       "Efficiency": 0.028887057092750967,
+       "Careful Aim": 0.035763912092446226,
+       "Improved Stings": 0.03654011305713856,
+       "Mortal Shots": 0.02673747174733243,
+       "Trueshot Aura": 0.01606163716726461,
+       "Ranged Weapon Specialization": 0.015278869450146892,
+       "Hawk Eye": 0.0
+      }
+     },
+     "raid": {
+      "dps": 681.9875434479204,
+      "talents": {
+       "Deadly Aspects": 0.0484010872226468,
+       "Endurance Training": 0.0,
+       "Focused Fire": 0.01902584261456719,
+       "Unleashed Fury": 0.04198663252771895,
+       "Ferocity": 0.030369232540429225,
+       "Bestial Discipline": 0.003999109012917668,
+       "Summon Hawk": 0.2735205099657462,
+       "Lethal Attacks": 0.042008342977822855,
+       "Efficiency": -4.271250818366212e-06,
+       "Careful Aim": 0.0519360698721576,
+       "Improved Stings": 0.031627492178660566,
+       "Mortal Shots": 0.033594190188045214,
+       "Trueshot Aura": 0.0,
+       "Ranged Weapon Specialization": 0.017640596316351842,
+       "Hawk Eye": 0.0
+      }
+     }
+    }
+   }
+  },
+  "melee-dps": {
+   "entry": "melee-dps",
+   "dummy_build": "survival-raid",
+   "raid_build": "melee-survival-raid",
+   "builds": {
+    "survival-raid": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Lethal Attacks": 5,
+      "Careful Aim": 5,
+      "Efficiency": 5,
+      "Lone Wolf": 1,
+      "Improved Tracking": 5,
+      "Savage Strikes": 2,
+      "Survivalist": 3,
+      "Surefooted": 3,
+      "Predator's Edge": 5,
+      "Expose Prey": 2,
+      "Resourcefulness": 2,
+      "Strider Kick": 1,
+      "Lightning Reflexes": 3,
+      "Clever Traps": 2,
+      "Survivalist's Discipline": 2
+     },
+     "dummy": {
+      "dps": 444.31247918710875,
+      "talents": {
+       "Deadly Aspects": 0.06954407424293851,
+       "Lethal Attacks": 0.04739938933299226,
+       "Careful Aim": 0.04260993910217925,
+       "Efficiency": 0.05795779225046194,
+       "Lone Wolf": 0.16666666666666596,
+       "Improved Tracking": 0.0,
+       "Savage Strikes": 0.016883173279698904,
+       "Survivalist": 0.0,
+       "Surefooted": 0.024420466972273958,
+       "Predator's Edge": 0.12818678237545789,
+       "Expose Prey": 0.11633460662400252,
+       "Resourcefulness": 0.18650972865843418,
+       "Strider Kick": 0.05048636161804532,
+       "Lightning Reflexes": 0.02149994518994003,
+       "Clever Traps": 0.02630505690810836,
+       "Survivalist's Discipline": 0.026546437472226958
+      }
+     },
+     "raid": {
+      "dps": 967.9075325835906,
+      "talents": {
+       "Deadly Aspects": 0.07645654088360032,
+       "Lethal Attacks": 0.048937887363063926,
+       "Careful Aim": 0.05700167068270123,
+       "Efficiency": 0.0,
+       "Lone Wolf": 0.16395947817869583,
+       "Improved Tracking": 0.0,
+       "Savage Strikes": 0.015062159139676456,
+       "Survivalist": 0.0,
+       "Surefooted": 0.025558005150269958,
+       "Predator's Edge": 0.12417454391802174,
+       "Expose Prey": 0.11431837131102462,
+       "Resourcefulness": 3.3872689053637828e-06,
+       "Strider Kick": 0.060907377164792,
+       "Lightning Reflexes": 0.022916110583282245,
+       "Clever Traps": 0.01348965557706372,
+       "Survivalist's Discipline": 0.01600690390989168
+      }
+     }
+    },
+    "melee-survival-raid": {
+     "ranks": {
+      "Deadly Aspects": 5,
+      "Lethal Attacks": 5,
+      "Careful Aim": 5,
+      "Lone Wolf": 1,
+      "Savage Strikes": 2,
+      "Survivalist": 3,
+      "Clever Traps": 2,
+      "Surefooted": 3,
+      "Survival Tactics": 2,
+      "Predator's Edge": 5,
+      "Resourcefulness": 2,
+      "Expose Prey": 2,
+      "Survivalist's Discipline": 2,
+      "Strider Kick": 1,
+      "Lightning Reflexes": 5,
+      "Lacerating Strikes": 1,
+      "Deflection": 5
+     },
+     "dummy": {
+      "dps": 428.0982146328457,
+      "talents": {
+       "Deadly Aspects": 0.07224522388698462,
+       "Lethal Attacks": 0.04820107536749596,
+       "Careful Aim": 0.04323914129282114,
+       "Lone Wolf": 0.1666666666666654,
+       "Savage Strikes": 0.016401126644680075,
+       "Survivalist": 0.0,
+       "Clever Traps": 0.02306600965030614,
+       "Surefooted": 0.02167565914497993,
+       "Survival Tactics": 0.0034862356867264577,
+       "Predator's Edge": 0.13188505370495696,
+       "Resourcefulness": 0.175409409855678,
+       "Expose Prey": 0.11705061833587593,
+       "Survivalist's Discipline": 0.024757650894305816,
+       "Strider Kick": 0.013842747446292103,
+       "Lightning Reflexes": 0.03691968522239708,
+       "Lacerating Strikes": 0.0037715887444784713,
+       "Deflection": 0.0
+      }
+     },
+     "raid": {
+      "dps": 990.072243373865,
+      "talents": {
+       "Deadly Aspects": 0.07542509270422126,
+       "Lethal Attacks": 0.04882095832001132,
+       "Careful Aim": 0.05620868455742467,
+       "Lone Wolf": 0.16350852112079417,
+       "Savage Strikes": 0.015078646019221487,
+       "Survivalist": 0.0,
+       "Clever Traps": 0.013596358664827224,
+       "Surefooted": 0.02238196854229968,
+       "Survival Tactics": 0.001978562237640036,
+       "Predator's Edge": 0.12479265408442897,
+       "Resourcefulness": 8.314313482138402e-07,
+       "Expose Prey": 0.11912068112785901,
+       "Survivalist's Discipline": 0.016366079813986856,
+       "Strider Kick": 0.06055044683521582,
+       "Lightning Reflexes": 0.037736361721386724,
+       "Lacerating Strikes": 0.005340907950374563,
+       "Deflection": 0.0
+      }
+     }
+    }
+   }
+  }
+ },
+ "rogue": {
+  "combat-swords-raid": {
+   "entry": "combat-swords-raid",
+   "dummy_build": "combat-swords-raid",
+   "raid_build": "combat-swords-raid",
+   "builds": {
+    "combat-swords-raid": {
+     "ranks": {
+      "Malice": 5,
+      "Ruthlessness": 3,
+      "Improved Slice and Dice": 3,
+      "Relentless Strikes": 1,
+      "Improved Expose Armor": 2,
+      "Lethality": 5,
+      "Improved Eviscerate": 3,
+      "Improved Sinister Strike": 2,
+      "Deflection": 3,
+      "Precision": 3,
+      "Riposte": 1,
+      "Flawless Execution": 1,
+      "Dual Wield Specialization": 5,
+      "Blade Flurry": 1,
+      "Hack and Slash": 5,
+      "Weapon Expertise": 1,
+      "Aggression": 3,
+      "Adrenaline Rush": 1,
+      "Lightning Reflexes": 3
+     },
+     "dummy": {
+      "dps": 393.55376184425245,
+      "talents": {
+       "Malice": 0.04721732643329102,
+       "Ruthlessness": 0.04383153494661707,
+       "Improved Slice and Dice": 0.060729888027785006,
+       "Relentless Strikes": 0.08637370131661726,
+       "Improved Expose Armor": 0.06847587170387537,
+       "Lethality": 0.012428848605359977,
+       "Improved Eviscerate": 0.009202337201081878,
+       "Improved Sinister Strike": 0.06707275185561479,
+       "Deflection": 0.0,
+       "Precision": 0.02526523498949662,
+       "Riposte": 0.0,
+       "Flawless Execution": 0.007075279345772012,
+       "Dual Wield Specialization": 0.04035441883442703,
+       "Blade Flurry": 0.0044452033759821985,
+       "Hack and Slash": 0.02404832411788671,
+       "Weapon Expertise": 0.008674791599899923,
+       "Aggression": 0.019777122025804283,
+       "Adrenaline Rush": 0.04451357300498726,
+       "Lightning Reflexes": 0.0
+      }
+     },
+     "raid": {
+      "dps": 649.0175855092489,
+      "talents": {
+       "Malice": 0.046727249426346096,
+       "Ruthlessness": 0.012293149568393225,
+       "Improved Slice and Dice": 0.017962111494738475,
+       "Relentless Strikes": 0.06602351666222883,
+       "Improved Expose Armor": 0.036340070184260775,
+       "Lethality": 0.013471996368217831,
+       "Improved Eviscerate": 0.002262764575171494,
+       "Improved Sinister Strike": 0.04414222864796857,
+       "Deflection": 0.0,
+       "Precision": 0.026068801455392476,
+       "Riposte": 0.0,
+       "Flawless Execution": 0.002128020967214095,
+       "Dual Wield Specialization": 0.03857082189900363,
+       "Blade Flurry": 0.010510033398115515,
+       "Hack and Slash": 0.028600458536424345,
+       "Weapon Expertise": 0.008561904068774773,
+       "Aggression": 0.016636253093771813,
+       "Adrenaline Rush": 0.028732464538196667,
+       "Lightning Reflexes": 0.0
+      }
+     }
+    }
+   }
+  },
+  "combat-daggers-raid": {
+   "entry": "combat-daggers-raid",
+   "dummy_build": "combat-raid",
+   "raid_build": "combat-daggers-raid",
+   "builds": {
+    "combat-raid": {
+     "ranks": {
+      "Malice": 5,
+      "Improved Slice and Dice": 3,
+      "Ruthlessness": 3,
+      "Relentless Strikes": 1,
+      "Lethality": 1,
+      "Improved Expose Armor": 2,
+      "Improved Poisons": 1,
+      "Improved Eviscerate": 3,
+      "Improved Sinister Strike": 2,
+      "Lightning Reflexes": 3,
+      "Puncturing Wounds": 3,
+      "Precision": 3,
+      "Endurance": 1,
+      "Flawless Execution": 1,
+      "Dual Wield Specialization": 5,
+      "Hack and Slash": 5,
+      "Blade Flurry": 1,
+      "Weapon Expertise": 2,
+      "Aggression": 3,
+      "Adrenaline Rush": 1,
+      "Opportunity": 2
+     },
+     "dummy": {
+      "dps": 421.1321261282123,
+      "talents": {
+       "Malice": 0.042064364348388894,
+       "Improved Slice and Dice": 0.05540986948515225,
+       "Ruthlessness": 0.03837316934352908,
+       "Relentless Strikes": 0.08241121365408444,
+       "Lethality": 0.005175561858766775,
+       "Improved Expose Armor": 0.05111012675410476,
+       "Improved Poisons": 0.006453391648490681,
+       "Improved Eviscerate": 0.009588837414037599,
+       "Improved Sinister Strike": 0.0,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.14576685399280753,
+       "Precision": 0.02794816009074874,
+       "Endurance": 0.0,
+       "Flawless Execution": 0.008255504885098075,
+       "Dual Wield Specialization": 0.03522034960909015,
+       "Hack and Slash": 0.03907296625990775,
+       "Blade Flurry": 0.003516530670574891,
+       "Weapon Expertise": 0.016596550858382964,
+       "Aggression": 0.021367905056997816,
+       "Adrenaline Rush": 0.045766106480293,
+       "Opportunity": 0.030818756387977375
+      }
+     },
+     "raid": {
+      "dps": 668.6934117515156,
+      "talents": {
+       "Malice": 0.04195936000353029,
+       "Improved Slice and Dice": 0.015637629861288027,
+       "Ruthlessness": 0.011123600622057528,
+       "Relentless Strikes": 0.06322496590722693,
+       "Lethality": 0.0052821449621502925,
+       "Improved Expose Armor": 0.0343086455745516,
+       "Improved Poisons": 0.004359352856952103,
+       "Improved Eviscerate": 0.0019390471892769545,
+       "Improved Sinister Strike": 0.0,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.07872568193592422,
+       "Precision": 0.027739685163815864,
+       "Endurance": 0.0,
+       "Flawless Execution": 0.0020879423266531028,
+       "Dual Wield Specialization": 0.03602853928676264,
+       "Hack and Slash": 0.03971680497174901,
+       "Blade Flurry": 0.010201420608484058,
+       "Weapon Expertise": 0.01644512778438001,
+       "Aggression": 0.018327365309183885,
+       "Adrenaline Rush": 0.02785795145817127,
+       "Opportunity": 0.02957608525400235
+      }
+     }
+    },
+    "combat-daggers-raid": {
+     "ranks": {
+      "Malice": 5,
+      "Ruthlessness": 3,
+      "Murder": 2,
+      "Improved Slice and Dice": 3,
+      "Relentless Strikes": 1,
+      "Lethality": 2,
+      "Improved Eviscerate": 3,
+      "Lightning Reflexes": 5,
+      "Puncturing Wounds": 3,
+      "Precision": 3,
+      "Flawless Execution": 1,
+      "Dual Wield Specialization": 5,
+      "Blade Flurry": 1,
+      "Hack and Slash": 5,
+      "Weapon Expertise": 2,
+      "Aggression": 3,
+      "Adrenaline Rush": 1,
+      "Deflection": 1,
+      "Opportunity": 2
+     },
+     "dummy": {
+      "dps": 399.12817235083025,
+      "talents": {
+       "Malice": 0.042597303290699995,
+       "Ruthlessness": 0.04094934110705917,
+       "Murder": 0.0,
+       "Improved Slice and Dice": 0.05244168115886294,
+       "Relentless Strikes": 0.07235878594751799,
+       "Lethality": 0.010508662272153524,
+       "Improved Eviscerate": 0.004474932795651032,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.14878486950621794,
+       "Precision": 0.029021483838550077,
+       "Flawless Execution": 0.003942272127397395,
+       "Dual Wield Specialization": 0.037001128179866116,
+       "Blade Flurry": 0.00463524817149652,
+       "Hack and Slash": 0.03962254488003747,
+       "Weapon Expertise": 0.017767294733774253,
+       "Aggression": 0.02039240633295225,
+       "Adrenaline Rush": 0.04613617674713044,
+       "Deflection": 0.0,
+       "Opportunity": 0.03174987749042746
+      }
+     },
+     "raid": {
+      "dps": 645.7962214693869,
+      "talents": {
+       "Malice": 0.04258252063619239,
+       "Ruthlessness": 0.005268099469537435,
+       "Murder": 0.0,
+       "Improved Slice and Dice": 0.012170226474648493,
+       "Relentless Strikes": 0.04707385295296096,
+       "Lethality": 0.01023391276440655,
+       "Improved Eviscerate": 0.0014267379559655957,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.06914443427412453,
+       "Precision": 0.02842739809884176,
+       "Flawless Execution": 0.0018007518483147411,
+       "Dual Wield Specialization": 0.0369566383724117,
+       "Blade Flurry": 0.01203022956849864,
+       "Hack and Slash": 0.04042732859686493,
+       "Weapon Expertise": 0.017148395480653278,
+       "Aggression": 0.01786278041475553,
+       "Adrenaline Rush": 0.027488316903255594,
+       "Deflection": 0.0,
+       "Opportunity": 0.02905793171327442
+      }
+     }
+    }
+   }
+  },
+  "assassination-raid": {
+   "entry": "assassination-raid",
+   "dummy_build": "assassination-seal-fate-raid",
+   "raid_build": "assassination-seal-fate-raid",
+   "builds": {
+    "assassination-seal-fate-raid": {
+     "ranks": {
+      "Malice": 5,
+      "Ruthlessness": 3,
+      "Improved Slice and Dice": 3,
+      "Relentless Strikes": 1,
+      "Lethality": 3,
+      "Vile Poisons": 2,
+      "Cold Blood": 1,
+      "Seal Fate": 5,
+      "Improved Expose Armor": 2,
+      "Improved Poisons": 5,
+      "Improved Eviscerate": 3,
+      "Lightning Reflexes": 5,
+      "Puncturing Wounds": 3,
+      "Precision": 3,
+      "Dual Wield Specialization": 3,
+      "Flawless Execution": 1,
+      "Deflection": 1,
+      "Opportunity": 2
+     },
+     "dummy": {
+      "dps": 406.9451453189952,
+      "talents": {
+       "Malice": 0.05026136115374191,
+       "Ruthlessness": 0.04505988045456555,
+       "Improved Slice and Dice": 0.04425823503759574,
+       "Relentless Strikes": 0.10274162859761271,
+       "Lethality": 0.01267527219778497,
+       "Vile Poisons": 0.009711734665353022,
+       "Cold Blood": 0.008345071568855333,
+       "Seal Fate": 0.0830245051446944,
+       "Improved Expose Armor": 0.039165800062449074,
+       "Improved Poisons": 0.03280491880324632,
+       "Improved Eviscerate": 0.020312174747284195,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.18627745622759173,
+       "Precision": 0.02915308994423227,
+       "Dual Wield Specialization": 0.01934416638478642,
+       "Flawless Execution": 0.02177965965367956,
+       "Deflection": 0.0,
+       "Opportunity": 0.02868437231323273
+      }
+     },
+     "raid": {
+      "dps": 651.7305489529028,
+      "talents": {
+       "Malice": 0.0455437912285227,
+       "Ruthlessness": 0.02413399589982068,
+       "Improved Slice and Dice": 0.026909941277509453,
+       "Relentless Strikes": 0.08791278007933323,
+       "Lethality": 0.013219299089364811,
+       "Vile Poisons": 0.0072396640888166,
+       "Cold Blood": 0.002563148331501952,
+       "Seal Fate": 0.027709809052341217,
+       "Improved Expose Armor": 0.03809172569451513,
+       "Improved Poisons": 0.024964127003911374,
+       "Improved Eviscerate": 0.013702927814226551,
+       "Lightning Reflexes": 0.0,
+       "Puncturing Wounds": 0.09753428478013015,
+       "Precision": 0.029063349208750866,
+       "Dual Wield Specialization": 0.019848928548766964,
+       "Flawless Execution": 0.01753001483681227,
+       "Deflection": 0.0,
+       "Opportunity": 0.027779031861372427
+      }
+     }
+    }
+   }
+  },
+  "subtlety-raid": {
+   "entry": "subtlety-raid",
+   "dummy_build": "subtlety-hemo-raid",
+   "raid_build": "subtlety-hemo-raid",
+   "builds": {
+    "subtlety-hemo-raid": {
+     "ranks": {
+      "Malice": 5,
+      "Ruthlessness": 3,
+      "Relentless Strikes": 1,
+      "Lethality": 1,
+      "Improved Expose Armor": 2,
+      "Improved Poisons": 4,
+      "Improved Slice and Dice": 3,
+      "Cold Blood": 1,
+      "Camouflage": 5,
+      "Master of Deception": 3,
+      "Opportunity": 2,
+      "Improved Ambush": 3,
+      "Initiative": 3,
+      "Ghostly Strike": 1,
+      "Premeditation": 1,
+      "Serrated Blades": 3,
+      "Dirty Deeds": 2,
+      "Preparation": 1,
+      "Hemorrhage": 1,
+      "Quietus": 5,
+      "Thousand Cuts": 1
+     },
+     "dummy": {
+      "dps": 380.1064488072829,
+      "talents": {
+       "Malice": 0.04363578789558964,
+       "Ruthlessness": 0.09681376481768322,
+       "Relentless Strikes": 0.11627013540542275,
+       "Lethality": 0.002217699714503474,
+       "Improved Expose Armor": 0.05455021201485788,
+       "Improved Poisons": 0.026030199023587608,
+       "Improved Slice and Dice": 0.04036609421947801,
+       "Cold Blood": 0.008705929644936217,
+       "Camouflage": 0.0,
+       "Master of Deception": 0.0,
+       "Opportunity": 0.0015526685563040932,
+       "Improved Ambush": 0.0,
+       "Initiative": 0.008554880772078444,
+       "Ghostly Strike": 0.0,
+       "Premeditation": 0.022643448552926437,
+       "Serrated Blades": 0.054649426299381965,
+       "Dirty Deeds": 0.010138902710270292,
+       "Preparation": 0.012557701296715074,
+       "Hemorrhage": 0.6474585654734992,
+       "Quietus": 0.009272506169196615,
+       "Thousand Cuts": 0.08240607850792503
+      }
+     },
+     "raid": {
+      "dps": 628.7355453896298,
+      "talents": {
+       "Malice": 0.043957346309085876,
+       "Ruthlessness": 0.03567651214955969,
+       "Relentless Strikes": 0.07433432774388793,
+       "Lethality": 0.0024966921379313556,
+       "Improved Expose Armor": 0.03705999899778867,
+       "Improved Poisons": 0.01872280891249367,
+       "Improved Slice and Dice": 0.01692559402623517,
+       "Cold Blood": 0.004158310428796774,
+       "Camouflage": 0.0,
+       "Master of Deception": 0.0,
+       "Opportunity": 0.001085950033640537,
+       "Improved Ambush": 0.0,
+       "Initiative": 0.0012335795707141273,
+       "Ghostly Strike": 0.0,
+       "Premeditation": 0.004555347635215146,
+       "Serrated Blades": 0.032651411181810586,
+       "Dirty Deeds": 0.005406749774371944,
+       "Preparation": 0.001716122028628253,
+       "Hemorrhage": 0.5656667320702666,
+       "Quietus": 0.008570736089187125,
+       "Thousand Cuts": 0.048412528671349375
+      }
+     }
+    }
+   }
+  }
+ },
+ "warrior": {
+  "arms-2h-raid": {
+   "entry": "arms-2h-raid",
+   "dummy_build": "arms-2h-raid",
+   "raid_build": "arms-2h-raid",
+   "builds": {
+    "arms-2h-raid": {
+     "ranks": {
+      "Improved Rend": 3,
+      "Improved Tactical Mastery": 5,
+      "Anger Management": 1,
+      "Deep Wounds": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Impale": 1,
+      "Deflection": 3,
+      "Cruelty": 5,
+      "Booming Voice": 5,
+      "Unbridled Wrath": 5,
+      "Improved Execute": 2,
+      "Enrage": 5,
+      "Death Wish": 1,
+      "Precision": 3,
+      "Flurry": 5,
+      "Bloodthirst": 1
+     },
+     "dummy": {
+      "dps": 311.5517680007937,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.028040559205297133,
+       "Deep Wounds": 0.05336538921540801,
+       "Two-Handed Weapon Specialization": 0.02899096573821769,
+       "Impale": 0.00852587040805175,
+       "Deflection": 0.0,
+       "Cruelty": 0.054786472533803865,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.03701868055595181,
+       "Improved Execute": 0.025328592878373857,
+       "Enrage": 0.0,
+       "Death Wish": 0.019317427695372924,
+       "Precision": 0.04034411302864782,
+       "Flurry": 0.16033032052354945,
+       "Bloodthirst": -0.003335948556453028
+      }
+     },
+     "raid": {
+      "dps": 657.7438028544364,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.015269167524865734,
+       "Deep Wounds": 0.0301455341268555,
+       "Two-Handed Weapon Specialization": 0.02860006540733162,
+       "Impale": 0.010644664944640336,
+       "Deflection": 0.0,
+       "Cruelty": 0.043949047770247995,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.0244557266176203,
+       "Improved Execute": 0.018634758877139945,
+       "Enrage": 0.0,
+       "Death Wish": 0.025751548059839147,
+       "Precision": 0.04382056885618346,
+       "Flurry": 0.14396501615971458,
+       "Bloodthirst": 0.07246387372871332
+      }
+     }
+    }
+   }
+  },
+  "fury-dw-raid": {
+   "entry": "fury-dw-raid",
+   "dummy_build": "fury-dw-raid",
+   "raid_build": "opt-fury-dw-raid-raid-dps",
+   "builds": {
+    "fury-dw-raid": {
+     "ranks": {
+      "Improved Rend": 3,
+      "Improved Heroic Strike": 2,
+      "Improved Tactical Mastery": 5,
+      "Anger Management": 1,
+      "Deep Wounds": 2,
+      "Cruelty": 5,
+      "Booming Voice": 5,
+      "Unbridled Wrath": 5,
+      "Raging Blows": 1,
+      "Dual Wield Specialization": 5,
+      "Improved Execute": 2,
+      "Enrage": 5,
+      "Death Wish": 1,
+      "Precision": 3,
+      "Flurry": 5,
+      "Bloodthirst": 1
+     },
+     "dummy": {
+      "dps": 379.86370778465687,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Heroic Strike": 0.0009018562117218965,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.02157634077819881,
+       "Deep Wounds": 0.015141295567670965,
+       "Cruelty": 0.04944093975937014,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.026157062288955535,
+       "Raging Blows": 0.033799304978745615,
+       "Dual Wield Specialization": 0.16533992124148844,
+       "Improved Execute": 0.05428973913463653,
+       "Enrage": 0.0,
+       "Death Wish": 0.04101578742910683,
+       "Precision": 0.03010793976412507,
+       "Flurry": 0.14662995677858026,
+       "Bloodthirst": 0.039822738135415814
+      }
+     },
+     "raid": {
+      "dps": 702.1696242344119,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Heroic Strike": 0.002850736229487394,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.015218954435642806,
+       "Deep Wounds": 0.009188245172741305,
+       "Cruelty": 0.04392856240875753,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.01987344988633888,
+       "Raging Blows": 0.035889908416112504,
+       "Dual Wield Specialization": 0.13957249105382052,
+       "Improved Execute": 0.04106478190266383,
+       "Enrage": 0.0,
+       "Death Wish": 0.0393069781276747,
+       "Precision": 0.03556145165776625,
+       "Flurry": 0.14060326524319033,
+       "Bloodthirst": 0.06570019344859701
+      }
+     }
+    },
+    "opt-fury-dw-raid-raid-dps": {
+     "ranks": {
+      "Improved Rend": 3,
+      "Improved Heroic Strike": 2,
+      "Improved Tactical Mastery": 5,
+      "Anger Management": 1,
+      "Deep Wounds": 2,
+      "Cruelty": 5,
+      "Booming Voice": 2,
+      "Unbridled Wrath": 5,
+      "Boundless Rage": 3,
+      "Raging Blows": 1,
+      "Dual Wield Specialization": 5,
+      "Improved Execute": 2,
+      "Enrage": 5,
+      "Death Wish": 1,
+      "Precision": 3,
+      "Flurry": 5,
+      "Bloodthirst": 1
+     },
+     "dummy": {
+      "dps": 379.86370778465687,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Heroic Strike": 0.0009018562117218965,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.02157634077819881,
+       "Deep Wounds": 0.015141295567670965,
+       "Cruelty": 0.04944093975937014,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.026157062288955535,
+       "Boundless Rage": 0.0,
+       "Raging Blows": 0.033799304978745615,
+       "Dual Wield Specialization": 0.16533992124148844,
+       "Improved Execute": 0.05428973913463653,
+       "Enrage": 0.0,
+       "Death Wish": 0.04101578742910683,
+       "Precision": 0.03010793976412507,
+       "Flurry": 0.14662995677858026,
+       "Bloodthirst": 0.039822317779242056
+      }
+     },
+     "raid": {
+      "dps": 702.1672018660227,
+      "talents": {
+       "Improved Rend": 0.0,
+       "Improved Heroic Strike": 0.002853998418159698,
+       "Improved Tactical Mastery": 0.0,
+       "Anger Management": 0.01521525564726478,
+       "Deep Wounds": 0.009188280208506927,
+       "Cruelty": 0.04392513561695843,
+       "Booming Voice": 0.0,
+       "Unbridled Wrath": 0.01986989943068762,
+       "Boundless Rage": -3.4498455394604832e-06,
+       "Raging Blows": 0.035886347011459985,
+       "Dual Wield Specialization": 0.13956952271181677,
+       "Improved Execute": 0.041061444759663335,
+       "Enrage": 0.0,
+       "Death Wish": 0.03930574264555242,
+       "Precision": 0.035559383093313524,
+       "Flurry": 0.14060029756025705,
+       "Bloodthirst": 0.06568226003436128
+      }
+     }
+    }
+   }
+  },
+  "arms-battle-raid": {
+   "entry": "arms-battle-raid",
+   "dummy_build": "arms-battle-raid",
+   "raid_build": "arms-community-parse",
+   "builds": {
+    "arms-battle-raid": {
+     "ranks": {
+      "Deflection": 2,
+      "Improved Rend": 3,
+      "Improved Tactical Mastery": 5,
+      "Improved Overpower": 2,
+      "Anger Management": 1,
+      "Deep Wounds": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Impale": 2,
+      "Bloodthrill": 5,
+      "Weaponmaster": 5,
+      "Improved Slam": 2,
+      "Spearing Strike": 1,
+      "Booming Voice": 5,
+      "Cruelty": 5,
+      "Unbridled Wrath": 5,
+      "Improved Execute": 2
+     },
+     "dummy": {
+      "dps": 378.38805716405955,
+      "talents": {
+       "Deflection": 0.0,
+       "Improved Rend": 0.007171212180081432,
+       "Improved Tactical Mastery": 0.10150594684806935,
+       "Improved Overpower": 0.07308759186789537,
+       "Anger Management": 0.025523839681214966,
+       "Deep Wounds": 0.05339550101092949,
+       "Two-Handed Weapon Specialization": 0.02900600524705632,
+       "Impale": 0.03158507681956069,
+       "Bloodthrill": 0.16027889366453485,
+       "Weaponmaster": 0.0749893888139429,
+       "Improved Slam": 0.09614767402381108,
+       "Spearing Strike": 0.017162822399376942,
+       "Booming Voice": 0.0,
+       "Cruelty": 0.03782255066242335,
+       "Unbridled Wrath": 0.02281899535425269,
+       "Improved Execute": 0.013660393923248582
+      }
+     },
+     "raid": {
+      "dps": 617.5424753348049,
+      "talents": {
+       "Deflection": 0.0,
+       "Improved Rend": 0.004861027297821674,
+       "Improved Tactical Mastery": 0.03957982335760368,
+       "Improved Overpower": 0.055711097928971665,
+       "Anger Management": 0.0012676502979507287,
+       "Deep Wounds": 0.0393884947927261,
+       "Two-Handed Weapon Specialization": 0.028439999875022104,
+       "Impale": 0.029495261043815946,
+       "Bloodthrill": 0.1529358122796347,
+       "Weaponmaster": 0.05430029746997045,
+       "Improved Slam": 0.0966850434631139,
+       "Spearing Strike": 0.0464721062859661,
+       "Booming Voice": 0.0,
+       "Cruelty": 0.03622187351277162,
+       "Unbridled Wrath": 0.0021880464792070065,
+       "Improved Execute": 0.009859038573158063
+      }
+     }
+    },
+    "arms-community-parse": {
+     "ranks": {
+      "Improved Heroic Strike": 3,
+      "Improved Rend": 3,
+      "Improved Tactical Mastery": 5,
+      "Improved Overpower": 2,
+      "Anger Management": 1,
+      "Deep Wounds": 3,
+      "Spearing Strike": 1,
+      "Two-Handed Weapon Specialization": 3,
+      "Impale": 2,
+      "Bloodthrill": 5,
+      "Sweeping Strikes": 1,
+      "Weaponmaster": 5,
+      "Improved Slam": 2,
+      "Mortal Strike": 1,
+      "Cruelty": 5,
+      "Unbridled Wrath": 5,
+      "Piercing Howl": 1,
+      "Boundless Rage": 3
+     },
+     "dummy": {
+      "dps": 375.041824509931,
+      "talents": {
+       "Improved Heroic Strike": 0.0,
+       "Improved Rend": 0.007687343141261405,
+       "Improved Tactical Mastery": 0.11522222887817501,
+       "Improved Overpower": 0.07416993103958025,
+       "Anger Management": 0.029765065460555462,
+       "Deep Wounds": 0.054011560429624184,
+       "Spearing Strike": 0.014787189656903399,
+       "Two-Handed Weapon Specialization": 0.02900583706467763,
+       "Impale": 0.03187908637300885,
+       "Bloodthrill": 0.16044839831489988,
+       "Sweeping Strikes": -0.00322748673632689,
+       "Weaponmaster": 0.07849260436604089,
+       "Improved Slam": 0.0963847041018232,
+       "Mortal Strike": 0.007960921504387763,
+       "Cruelty": 0.037725615766823206,
+       "Unbridled Wrath": 0.02579590437428081,
+       "Piercing Howl": 0.0,
+       "Boundless Rage": 0.0
+      }
+     },
+     "raid": {
+      "dps": 703.6493935154676,
+      "talents": {
+       "Improved Heroic Strike": 0.0,
+       "Improved Rend": 0.004467222268838,
+       "Improved Tactical Mastery": 0.15073286614063064,
+       "Improved Overpower": 0.05374306494310199,
+       "Anger Management": 0.010733143689437785,
+       "Deep Wounds": 0.03335046732675728,
+       "Spearing Strike": 0.01639322919144337,
+       "Two-Handed Weapon Specialization": 0.028472588406976973,
+       "Impale": 0.03195829315106191,
+       "Bloodthrill": 0.13299839134117653,
+       "Sweeping Strikes": -0.010695958740599698,
+       "Weaponmaster": 0.05959131090252634,
+       "Improved Slam": 0.0965267589445773,
+       "Mortal Strike": 0.13176751642539153,
+       "Cruelty": 0.03602514444529403,
+       "Unbridled Wrath": 0.012634518620360913,
+       "Piercing Howl": 0.0,
+       "Boundless Rage": 0.0
+      }
+     }
+    }
+   }
+  }
+ },
+ "paladin": {
+  "ret-dps": {
+   "entry": "ret-dps",
+   "dummy_build": "opt-ret-dps-raid-dps",
+   "raid_build": "ret-raid-dps",
+   "builds": {
+    "opt-ret-dps-raid-dps": {
+     "ranks": {
+      "Divine Intellect": 5,
+      "Divine Strength": 4,
+      "Improved Seals": 3,
+      "Reverence": 3,
+      "Illumination": 4,
+      "Benediction": 5,
+      "Improved Judgement": 2,
+      "Conviction": 5,
+      "Holy Conduit": 2,
+      "Seal of Command": 1,
+      "Vindication": 1,
+      "Sanctified Judgement": 3,
+      "Sacred Arbiter": 1,
+      "Vengeance": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Champion of the Light": 3,
+      "Instrument of Law": 2,
+      "Twist of Light": 1
+     },
+     "dummy": {
+      "dps": 526.5387139465129,
+      "talents": {
+       "Divine Intellect": 0.029424032292193814,
+       "Divine Strength": 0.003966520644693161,
+       "Improved Seals": 0.053578076181289624,
+       "Reverence": 0.018413328908960747,
+       "Illumination": 0.0,
+       "Benediction": 0.014215736768389609,
+       "Improved Judgement": 0.039684293629677625,
+       "Conviction": 0.04322334160724195,
+       "Holy Conduit": 0.1120829345299772,
+       "Seal of Command": 0.05668038291634714,
+       "Vindication": 0.0010159090924900527,
+       "Sanctified Judgement": 0.03813868807835641,
+       "Sacred Arbiter": 0.02548692448303036,
+       "Vengeance": 0.07219705853457159,
+       "Two-Handed Weapon Specialization": 0.009707359220769485,
+       "Champion of the Light": 0.13381115726928816,
+       "Instrument of Law": 0.022529901811103148,
+       "Twist of Light": 0.05140265472618344
+      }
+     },
+     "raid": {
+      "dps": 951.7473464242948,
+      "talents": {
+       "Divine Intellect": 0.01199876985514281,
+       "Divine Strength": 0.007222944839358703,
+       "Improved Seals": 0.05082085137924153,
+       "Reverence": -2.8460440717248403e-05,
+       "Illumination": 0.0,
+       "Benediction": 0.0002553958925405331,
+       "Improved Judgement": 0.04260676554024756,
+       "Conviction": 0.039291378403210064,
+       "Holy Conduit": -8.042309204281395e-05,
+       "Seal of Command": 0.046834960171101336,
+       "Vindication": 0.0018363134169856465,
+       "Sanctified Judgement": 0.0003026420213905201,
+       "Sacred Arbiter": 0.02036669170895733,
+       "Vengeance": 0.07622595302287283,
+       "Two-Handed Weapon Specialization": 0.01521780550744245,
+       "Champion of the Light": 0.12723446501679558,
+       "Instrument of Law": 0.036934280443236434,
+       "Twist of Light": 0.09151032485622768
+      }
+     }
+    },
+    "ret-raid-dps": {
+     "ranks": {
+      "Divine Strength": 5,
+      "Divine Intellect": 5,
+      "Improved Seals": 3,
+      "Reverence": 3,
+      "Divine Favor": 1,
+      "Benediction": 5,
+      "Holy Conduit": 2,
+      "Improved Judgement": 2,
+      "Conviction": 5,
+      "Seal of Command": 1,
+      "Sanctified Judgement": 3,
+      "Vindication": 3,
+      "Sacred Arbiter": 1,
+      "Vengeance": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Champion of the Light": 3,
+      "Instrument of Law": 2,
+      "Twist of Light": 1
+     },
+     "dummy": {
+      "dps": 518.3529350886406,
+      "talents": {
+       "Divine Strength": 0.005230175430080308,
+       "Divine Intellect": 0.019814062708545466,
+       "Improved Seals": 0.05165173437976067,
+       "Reverence": 0.004456681613436264,
+       "Divine Favor": -0.01902987277870616,
+       "Benediction": 0.007486609211884376,
+       "Holy Conduit": 0.059082537337777796,
+       "Improved Judgement": 0.029582761449837958,
+       "Conviction": 0.043326484345262095,
+       "Seal of Command": 0.045268185503740566,
+       "Sanctified Judgement": 0.021386037875573694,
+       "Vindication": 0.00309894008285605,
+       "Sacred Arbiter": 0.02601304491581946,
+       "Vengeance": 0.07191991508462325,
+       "Two-Handed Weapon Specialization": 0.009956801454580333,
+       "Champion of the Light": 0.13233152340882992,
+       "Instrument of Law": 0.01470172212665588,
+       "Twist of Light": 0.02718572905831551
+      }
+     },
+     "raid": {
+      "dps": 956.830287865101,
+      "talents": {
+       "Divine Strength": 0.008990251186483667,
+       "Divine Intellect": 0.011939534713852118,
+       "Improved Seals": 0.05064733198020521,
+       "Reverence": -0.00015538844384788142,
+       "Divine Favor": -5.940181290187141e-06,
+       "Benediction": 0.0001326641217552771,
+       "Holy Conduit": -0.00010849978082161371,
+       "Improved Judgement": 0.042235431979584126,
+       "Conviction": 0.039350500142863454,
+       "Seal of Command": 0.04736250967484368,
+       "Sanctified Judgement": 4.302089408703136e-05,
+       "Vindication": 0.005527295596650328,
+       "Sacred Arbiter": 0.020361757229307886,
+       "Vengeance": 0.07623786698525847,
+       "Two-Handed Weapon Specialization": 0.015359464759772568,
+       "Champion of the Light": 0.12656654931479028,
+       "Instrument of Law": 0.03700815803753066,
+       "Twist of Light": 0.09165939683252544
+      }
+     }
+    }
+   }
+  },
+  "seal-of-fury-raid": {
+   "entry": "seal-of-fury-raid",
+   "dummy_build": "ret-raid-dps",
+   "raid_build": "ret-raid-dps",
+   "builds": {
+    "ret-raid-dps": {
+     "ranks": {
+      "Divine Strength": 5,
+      "Divine Intellect": 5,
+      "Improved Seals": 3,
+      "Reverence": 3,
+      "Divine Favor": 1,
+      "Benediction": 5,
+      "Holy Conduit": 2,
+      "Improved Judgement": 2,
+      "Conviction": 5,
+      "Seal of Command": 1,
+      "Sanctified Judgement": 3,
+      "Vindication": 3,
+      "Sacred Arbiter": 1,
+      "Vengeance": 3,
+      "Two-Handed Weapon Specialization": 3,
+      "Champion of the Light": 3,
+      "Instrument of Law": 2,
+      "Twist of Light": 1
+     },
+     "dummy": {
+      "dps": 444.4813411892214,
+      "talents": {
+       "Divine Strength": 0.005496144658550639,
+       "Divine Intellect": 0.012602726803141895,
+       "Improved Seals": 0.04254989997455216,
+       "Reverence": -0.00032816349663256084,
+       "Divine Favor": 6.236888946031804e-05,
+       "Benediction": -0.00045100778264117736,
+       "Holy Conduit": -0.0006446137660371942,
+       "Improved Judgement": 0.05138084476045868,
+       "Conviction": 0.044976755211364905,
+       "Seal of Command": 0.00252312621645423,
+       "Sanctified Judgement": -0.0005667872558112741,
+       "Vindication": 0.003256382639068578,
+       "Sacred Arbiter": 0.030293050491337237,
+       "Vengeance": 0.07138152068816117,
+       "Two-Handed Weapon Specialization": 0.01156950613398633,
+       "Champion of the Light": 0.1401536326028372,
+       "Instrument of Law": 0.04280875315733845,
+       "Twist of Light": 0.0030557326738457347
+      }
+     },
+     "raid": {
+      "dps": 793.9907071195382,
+      "talents": {
+       "Divine Strength": 0.009253847459040121,
+       "Divine Intellect": 0.012474787470835413,
+       "Improved Seals": 0.038115434509197854,
+       "Reverence": -1.7568187038463634e-07,
+       "Divine Favor": 0.0,
+       "Benediction": 0.0,
+       "Holy Conduit": -3.741874803764311e-05,
+       "Improved Judgement": 0.04328885894519896,
+       "Conviction": 0.03913459201229352,
+       "Seal of Command": 0.0022669972747110245,
+       "Sanctified Judgement": 1.5122341910922543e-06,
+       "Vindication": 0.0057134157725406975,
+       "Sacred Arbiter": 0.024535773945522088,
+       "Vengeance": 0.07579528609376751,
+       "Two-Handed Weapon Specialization": 0.018308603141101942,
+       "Champion of the Light": 0.1321130960654776,
+       "Instrument of Law": 0.0467918465681435,
+       "Twist of Light": 0.0022753670233627288
+      }
+     }
+    }
+   }
+  },
+  "shockadin-raid": null
+ },
+ "shaman": {
+  "elemental-dps": {
+   "entry": "elemental-dps",
+   "dummy_build": "opt-elemental-dps-raid-dps",
+   "raid_build": "elemental-raid-dps",
+   "builds": {
+    "opt-elemental-dps-raid-dps": {
+     "ranks": {
+      "Convection": 5,
+      "Concussion": 5,
+      "Call of Flame": 3,
+      "Elemental Focus": 1,
+      "Elemental Alacrity": 3,
+      "Call of Thunder": 1,
+      "Eye of the Storm": 3,
+      "Lightning Overload": 3,
+      "Elemental Reach": 1,
+      "Elemental Fury": 5,
+      "Lava Burst": 1,
+      "Thundering Strikes": 5,
+      "Ancestral Knowledge": 2,
+      "Totemic Focus": 5,
+      "Mindfulness": 3,
+      "Tidal Focus": 5
+     },
+     "dummy": {
+      "dps": 439.6603484506287,
+      "talents": {
+       "Convection": 0.010232263164733135,
+       "Concussion": 0.028560263612871006,
+       "Call of Flame": 0.052204495321272026,
+       "Elemental Focus": 0.01948656050347697,
+       "Elemental Alacrity": 0.15007414593549895,
+       "Call of Thunder": 0.014871117093498865,
+       "Eye of the Storm": 0.0,
+       "Lightning Overload": 0.02507057708599536,
+       "Elemental Reach": 0.0,
+       "Elemental Fury": 0.08105293235381617,
+       "Lava Burst": 0.027839893734394883,
+       "Thundering Strikes": 0.04197446400716276,
+       "Ancestral Knowledge": 0.0034573215275106595,
+       "Totemic Focus": 0.0008938676059890849,
+       "Mindfulness": 0.018649893527489803,
+       "Tidal Focus": 0.057267948692019455
+      }
+     },
+     "raid": {
+      "dps": 534.4798644030218,
+      "talents": {
+       "Convection": 0.0005190228402273123,
+       "Concussion": 0.02899196406412885,
+       "Call of Flame": 0.05102201147651941,
+       "Elemental Focus": 0.005286718614230579,
+       "Elemental Alacrity": 0.1609116131119569,
+       "Call of Thunder": 0.01439088466840821,
+       "Eye of the Storm": 0.0,
+       "Lightning Overload": 0.024033615769788907,
+       "Elemental Reach": 0.0,
+       "Elemental Fury": 0.1024529845846801,
+       "Lava Burst": 0.0365336204670752,
+       "Thundering Strikes": 0.03959413952964297,
+       "Ancestral Knowledge": 0.002196078643832977,
+       "Totemic Focus": -5.329862179248579e-05,
+       "Mindfulness": 0.0009183777780509272,
+       "Tidal Focus": 0.05618637570349361
+      }
+     }
+    },
+    "elemental-raid-dps": {
+     "ranks": {
+      "Concussion": 5,
+      "Convection": 5,
+      "Call of Flame": 3,
+      "Reverberation": 4,
+      "Elemental Alacrity": 3,
+      "Elemental Focus": 1,
+      "Call of Thunder": 1,
+      "Lightning Overload": 3,
+      "Elemental Fury": 4,
+      "Thundering Strikes": 5,
+      "Ancestral Knowledge": 5,
+      "Earth's Grasp": 2,
+      "Shamanistic Focus": 1,
+      "Stormstrike": 1,
+      "Mental Quickness": 2,
+      "Anticipation": 3,
+      "Toughness": 3
+     },
+     "dummy": {
+      "dps": 437.78690193198156,
+      "talents": {
+       "Concussion": 0.03647496573278752,
+       "Convection": 0.007870310075926756,
+       "Call of Flame": 0.030525093862365016,
+       "Reverberation": -0.0003675867089159013,
+       "Elemental Alacrity": 0.15933862362290319,
+       "Elemental Focus": 0.009371914138392445,
+       "Call of Thunder": 0.017330806723089398,
+       "Lightning Overload": 0.029658540870734718,
+       "Elemental Fury": 0.06813863458132996,
+       "Thundering Strikes": 0.03797458797132891,
+       "Ancestral Knowledge": 0.01537914908210436,
+       "Earth's Grasp": 0.0,
+       "Shamanistic Focus": 0.015587941954423812,
+       "Stormstrike": 0.0,
+       "Mental Quickness": 0.08681902048599277,
+       "Anticipation": 0.0,
+       "Toughness": 0.0
+      }
+     },
+     "raid": {
+      "dps": 533.5874366825155,
+      "talents": {
+       "Concussion": 0.0365980957922305,
+       "Convection": -0.00010066887182924589,
+       "Call of Flame": 0.030187824569116728,
+       "Reverberation": 0.0005442297152405962,
+       "Elemental Alacrity": 0.16171873875008402,
+       "Elemental Focus": 0.0019272772768940127,
+       "Call of Thunder": 0.016743092929829895,
+       "Lightning Overload": 0.029174870231266414,
+       "Elemental Fury": 0.08603905800810974,
+       "Thundering Strikes": 0.03641329087283207,
+       "Ancestral Knowledge": 0.014173672704125395,
+       "Earth's Grasp": 0.0,
+       "Shamanistic Focus": 0.0003780972635331059,
+       "Stormstrike": 0.0,
+       "Mental Quickness": 0.10442580157099624,
+       "Anticipation": 0.0,
+       "Toughness": 0.0
+      }
+     }
+    }
+   }
+  },
+  "enhancement-dps": {
+   "entry": "enhancement-dps",
+   "dummy_build": "opt-enhancement-dps-raid-dps",
+   "raid_build": "opt-enhancement-dps-parse",
+   "builds": {
+    "opt-enhancement-dps-raid-dps": {
+     "ranks": {
+      "Convection": 5,
+      "Call of Flame": 3,
+      "Elemental Devastation": 2,
+      "Elemental Focus": 1,
+      "Thundering Strikes": 5,
+      "Ancestral Knowledge": 5,
+      "Mental Dexterity": 3,
+      "Shamanistic Focus": 1,
+      "Elemental Weapons": 3,
+      "Stormstrike": 1,
+      "Flurry": 5,
+      "Mental Quickness": 2,
+      "Maelstrom Weapon": 5,
+      "Rage of the Farseer": 1,
+      "Totemic Focus": 5,
+      "Tidal Focus": 4
+     },
+     "dummy": {
+      "dps": 426.3961155359484,
+      "talents": {
+       "Convection": 0.01782031257564609,
+       "Call of Flame": 0.022463342443194034,
+       "Elemental Devastation": 0.012718795943583272,
+       "Elemental Focus": 0.011816465208534521,
+       "Thundering Strikes": 0.04737224888721736,
+       "Ancestral Knowledge": 0.014427443062495215,
+       "Mental Dexterity": 0.051786165272152074,
+       "Shamanistic Focus": 0.07546119176860466,
+       "Elemental Weapons": 0.009331518090660906,
+       "Stormstrike": 0.20901090360783803,
+       "Flurry": 0.07547422202407705,
+       "Mental Quickness": 0.02416832657158896,
+       "Maelstrom Weapon": 0.3696900976101908,
+       "Rage of the Farseer": 0.020321797878490977,
+       "Totemic Focus": 0.0013075659464593103,
+       "Tidal Focus": 0.017608031423580917
+      }
+     },
+     "raid": {
+      "dps": 706.5549303339915,
+      "talents": {
+       "Convection": 4.773488091802669e-05,
+       "Call of Flame": 0.016093302905073492,
+       "Elemental Devastation": 0.017859738481454945,
+       "Elemental Focus": -7.01597525412101e-05,
+       "Thundering Strikes": 0.04623228960891612,
+       "Ancestral Knowledge": 0.009366224493528974,
+       "Mental Dexterity": 0.0709272349736626,
+       "Shamanistic Focus": 0.0004116980922997948,
+       "Elemental Weapons": 0.009225843271718714,
+       "Stormstrike": 0.22912050107188464,
+       "Flurry": 0.09234808115649129,
+       "Mental Quickness": 0.0231904246840009,
+       "Maelstrom Weapon": 0.48571751560906407,
+       "Rage of the Farseer": 0.023494146402396887,
+       "Totemic Focus": 0.0,
+       "Tidal Focus": 0.012513097045831367
+      }
+     }
+    },
+    "opt-enhancement-dps-parse": {
+     "ranks": {
+      "Concussion": 5,
+      "Call of Flame": 3,
+      "Elemental Devastation": 3,
+      "Reverberation": 5,
+      "Elemental Focus": 1,
+      "Elemental Alacrity": 3,
+      "Thundering Strikes": 5,
+      "Ancestral Knowledge": 5,
+      "Mental Dexterity": 3,
+      "Shamanistic Focus": 1,
+      "Elemental Weapons": 3,
+      "Stormstrike": 1,
+      "Flurry": 5,
+      "Mental Quickness": 2,
+      "Maelstrom Weapon": 5,
+      "Rage of the Farseer": 1
+     },
+     "dummy": {
+      "dps": 420.17538914534714,
+      "talents": {
+       "Concussion": 0.009810651582487284,
+       "Call of Flame": 0.019120626681193742,
+       "Elemental Devastation": 0.018245950067143135,
+       "Reverberation": 0.006325092230932139,
+       "Elemental Focus": 0.02338513009855203,
+       "Elemental Alacrity": 0.0,
+       "Thundering Strikes": 0.04909243307559319,
+       "Ancestral Knowledge": 0.016907603576752694,
+       "Mental Dexterity": 0.05320793416080527,
+       "Shamanistic Focus": 0.08372028536980503,
+       "Elemental Weapons": 0.009580920727290998,
+       "Stormstrike": 0.16441591950268564,
+       "Flurry": 0.07919041273581795,
+       "Mental Quickness": 0.023322579714189384,
+       "Maelstrom Weapon": 0.29261052926972186,
+       "Rage of the Farseer": 0.020795942153990943
+      }
+     },
+     "raid": {
+      "dps": 731.5059975817343,
+      "talents": {
+       "Concussion": 0.007840161099806009,
+       "Call of Flame": 0.014604268873871784,
+       "Elemental Devastation": 0.027965649735819054,
+       "Reverberation": 0.031145083824113073,
+       "Elemental Focus": 0.0007406111175993768,
+       "Elemental Alacrity": 0.0,
+       "Thundering Strikes": 0.04752190831526515,
+       "Ancestral Knowledge": 0.009375167079590074,
+       "Mental Dexterity": 0.07037542291714982,
+       "Shamanistic Focus": 0.001339101296590428,
+       "Elemental Weapons": 0.009116998164288681,
+       "Stormstrike": 0.22440229264795164,
+       "Flurry": 0.09275822966058678,
+       "Mental Quickness": 0.023513876083842256,
+       "Maelstrom Weapon": 0.3595561023791327,
+       "Rage of the Farseer": 0.022620409286112197
+      }
+     }
+    }
+   }
+  },
+  "stormcaller-dps": null
+ },
+ "druid": {
+  "balance-dps": {
+   "entry": "balance-dps",
+   "dummy_build": "balance-moonkin-raid",
+   "raid_build": "balance-moonkin-raid",
+   "builds": {
+    "balance-moonkin-raid": {
+     "ranks": {
+      "Genesis": 5,
+      "Nature's Reach": 2,
+      "Improved Moonfire": 2,
+      "Nature's Majesty": 2,
+      "Moonglow": 3,
+      "Nature's Splendor": 1,
+      "Insect Swarm": 1,
+      "Vengeance": 5,
+      "Improved Starfire": 5,
+      "Nature's Grace": 1,
+      "Moonfury": 5,
+      "Moonkin Form": 1,
+      "Heart of the Wild": 5,
+      "Nature's Focus": 5,
+      "Naturalist": 5,
+      "Reflection": 3
+     },
+     "dummy": {
+      "dps": 533.9579153445926,
+      "talents": {
+       "Genesis": 0.015224756701615938,
+       "Nature's Reach": 0.04224356950307384,
+       "Improved Moonfire": 0.029334692271361096,
+       "Nature's Majesty": 0.034402935008964075,
+       "Moonglow": 0.1671329721091639,
+       "Nature's Splendor": 0.038270085958210576,
+       "Insect Swarm": 0.08886070259660872,
+       "Vengeance": 0.09309176061298208,
+       "Improved Starfire": 0.08367948708477657,
+       "Nature's Grace": 0.010401140143088017,
+       "Moonfury": 0.09090909090909183,
+       "Moonkin Form": 0.06304012084157562,
+       "Heart of the Wild": 0.019358917338632486,
+       "Nature's Focus": 0.0,
+       "Naturalist": 0.04761904761904745,
+       "Reflection": 0.07967592137330626
+      }
+     },
+     "raid": {
+      "dps": 616.7008647936714,
+      "talents": {
+       "Genesis": 0.015011200514243317,
+       "Nature's Reach": 0.03885450882287145,
+       "Improved Moonfire": 0.02893047462478493,
+       "Nature's Majesty": 0.034679325343778156,
+       "Moonglow": 0.006971592823016293,
+       "Nature's Splendor": 0.029986642554631793,
+       "Insect Swarm": 0.08426056623071376,
+       "Vengeance": 0.10016095347953125,
+       "Improved Starfire": 0.10661543858491662,
+       "Nature's Grace": 0.015844225681116986,
+       "Moonfury": 0.09090909090909194,
+       "Moonkin Form": 0.0033020975500480665,
+       "Heart of the Wild": 0.0058351383139896296,
+       "Nature's Focus": 0.0,
+       "Naturalist": 0.04761904761904978,
+       "Reflection": 0.005674735025288702
+      }
+     }
+    }
+   }
+  },
+  "feral-cat-dps": {
+   "entry": "feral-cat-dps",
+   "dummy_build": "opt-feral-cat-dps-raid-dps",
+   "raid_build": "opt-feral-cat-dps-raid-dps",
+   "builds": {
+    "opt-feral-cat-dps-raid-dps": {
+     "ranks": {
+      "Genesis": 5,
+      "Nature's Majesty": 2,
+      "Nature's Reach": 2,
+      "Heart of the Wild": 5,
+      "Ferocity": 2,
+      "Thick Hide": 3,
+      "Sharpened Claws": 2,
+      "Savage Fury": 2,
+      "Feral Charge": 1,
+      "Blood Frenzy": 2,
+      "Shredding Attacks": 3,
+      "Predatory Strikes": 3,
+      "Leader of the Pack": 1,
+      "King of the Jungle": 3,
+      "Predatory Instincts": 2,
+      "Rend and Tear": 5,
+      "Berserk": 1,
+      "Furor": 5,
+      "Naturalist": 2
+     },
+     "dummy": {
+      "dps": 365.3987071371404,
+      "talents": {
+       "Genesis": 0.01775962828339872,
+       "Nature's Majesty": 0.034950349622417276,
+       "Nature's Reach": 0.020116391259112687,
+       "Heart of the Wild": 0.01691500106497279,
+       "Ferocity": 0.0,
+       "Thick Hide": 0.0,
+       "Sharpened Claws": 0.05228570939294608,
+       "Savage Fury": 0.028470418259971098,
+       "Feral Charge": 0.0,
+       "Blood Frenzy": 0.07154481701669113,
+       "Shredding Attacks": 0.15913904551059543,
+       "Predatory Strikes": 0.03042442372694243,
+       "Leader of the Pack": 0.02620487943068761,
+       "King of the Jungle": 0.08542336059031952,
+       "Predatory Instincts": 0.038254985072602055,
+       "Rend and Tear": 0.05354394472775292,
+       "Berserk": 0.02746620687780499,
+       "Furor": 0.0045070610085256035,
+       "Naturalist": 0.0196078431372545
+      }
+     },
+     "raid": {
+      "dps": 576.8969255446161,
+      "talents": {
+       "Genesis": 0.012674353500327862,
+       "Nature's Majesty": 0.033457333769308484,
+       "Nature's Reach": 0.021931901558916,
+       "Heart of the Wild": 0.01986201117006481,
+       "Ferocity": 0.0,
+       "Thick Hide": 0.0,
+       "Sharpened Claws": 0.0501512842316143,
+       "Savage Fury": 0.03078421327512937,
+       "Feral Charge": 0.0,
+       "Blood Frenzy": 0.051113123552298134,
+       "Shredding Attacks": 0.14986297672315307,
+       "Predatory Strikes": 0.026267287825641472,
+       "Leader of the Pack": 0.0,
+       "King of the Jungle": 0.08270873181146077,
+       "Predatory Instincts": 0.035775902029462237,
+       "Rend and Tear": 0.04858158755413233,
+       "Berserk": 0.02455662751656762,
+       "Furor": 0.004833700663296359,
+       "Naturalist": 0.018971448428763416
+      }
+     }
+    }
+   }
+  }
+ }
+}

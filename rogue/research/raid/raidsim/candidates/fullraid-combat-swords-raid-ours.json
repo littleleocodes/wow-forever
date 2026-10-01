@@ -1,0 +1,119 @@
+{
+ "id": "fullraid-combat-swords-raid-ours",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Lethality",
+    1
+   ],
+   [
+    "Improved Poisons",
+    4
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Improved Sinister Strike",
+    2
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Riposte",
+    1
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ],
+   [
+    "Lightning Reflexes",
+    3
+   ]
+  ],
+  "Subtlety": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for combat-swords-raid from /home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-combat-swords-raid.json in the raid setting: 649.1 -> 660.2 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-combat-swords-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Flawless Execution -> Weapon Expertise",
+    "gain_seed1": 0.007063281319150461,
+    "gain_seed2": 0.007119532394610273,
+    "split": "19/32/0"
+   },
+   {
+    "round": 2,
+    "move": "3 points Lethality -> Improved Poisons",
+    "gain_seed1": 0.009025396121745022,
+    "gain_seed2": 0.006228924763453936,
+    "split": "19/32/0"
+   },
+   {
+    "round": 3,
+    "move": "1 point Lethality -> Improved Poisons",
+    "gain_seed1": 0.0012856602572912657,
+    "gain_seed2": 0.0019298319449263523,
+    "split": "19/32/0"
+   }
+  ],
+  "dps_start": 649.0984899911023,
+  "dps_end": 660.150462059254,
+  "gain": 0.01702664886541827,
+  "tank": false
+ }
+}

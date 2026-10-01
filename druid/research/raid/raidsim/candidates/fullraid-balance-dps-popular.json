@@ -1,0 +1,108 @@
+{
+ "id": "fullraid-balance-dps-popular",
+ "allocation": {
+  "Balance": [
+   [
+    "Moonglow",
+    3
+   ],
+   [
+    "Improved Moonfire",
+    2
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Nature's Reach",
+    2
+   ],
+   [
+    "Nature's Splendor",
+    1
+   ],
+   [
+    "Insect Swarm",
+    1
+   ],
+   [
+    "Vengeance",
+    5
+   ],
+   [
+    "Improved Starfire",
+    5
+   ],
+   [
+    "Nature's Grace",
+    1
+   ],
+   [
+    "Moonfury",
+    5
+   ],
+   [
+    "Moonkin Form",
+    1
+   ],
+   [
+    "Genesis",
+    5
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Heart of the Wild",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Reflection",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for balance-dps from /home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-start-tf-popular-3-druid.json in the raid setting: 603.9 -> 616.7 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-start-tf-popular-3-druid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 points Improved Wrath -> Genesis",
+    "gain_seed1": 0.01525093325062632,
+    "gain_seed2": 0.015255756673028698,
+    "split": "36/0/15"
+   },
+   {
+    "round": 2,
+    "move": "3 points Eclipse -> Heart of the Wild",
+    "gain_seed1": 0.0035969144920215967,
+    "gain_seed2": 0.003500575315179333,
+    "split": "33/3/15"
+   },
+   {
+    "round": 3,
+    "move": "2 points Subtlety -> Heart of the Wild",
+    "gain_seed1": 0.0025322346427509856,
+    "gain_seed2": 0.002286805517302204,
+    "split": "33/5/13"
+   }
+  ],
+  "dps_start": 603.8602763653228,
+  "dps_end": 616.7455214237345,
+  "gain": 0.0213381233419907,
+  "tank": false
+ }
+}

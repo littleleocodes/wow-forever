@@ -1,0 +1,103 @@
+{
+ "id": "fullraid-frost-raid-popular",
+ "allocation": {
+  "Arcane": [],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ]
+  ],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Improved Frost Nova",
+    2
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Improved Blizzard",
+    3
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Improved Cone of Cold",
+    3
+   ],
+   [
+    "Cold Snap",
+    1
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ],
+   [
+    "Winter's Chill",
+    5
+   ],
+   [
+    "Ice Barrier",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for frost-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-mage.json in the raid setting: 696.6 -> 702.4 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-mage.json",
+  "setting": "raid",
+  "kept": [
+   "Fingers of Frost"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Permafrost -> Incineration",
+    "gain_seed1": 0.00845091769431039,
+    "gain_seed2": 0.008385079255656347,
+    "split": "0/3/48"
+   }
+  ],
+  "dps_start": 696.6350573544182,
+  "dps_end": 702.4275541615108,
+  "gain": 0.008314965986768508,
+  "tank": false
+ }
+}

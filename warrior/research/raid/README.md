@@ -14,6 +14,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Fury — Two-Handed (Improved Slam / Bloodthrill)](builds/arms-2h-raid.md) | 19/32/0 | DPS | [fury-2h-raid](../talents/classic-baseline/fury-2h-raid.md) |
 | [Arms — Battle Stance: Overpower, Rend and Slam (raid)](builds/arms-battle-raid.md) | 34/17/0 | DPS | — |
 | [Protection — Raid Tank (simulator winner adopted 2026-09-27)](builds/prot-raid-tank.md) | 14/5/32 | TANK | [prot-raid-tank](../talents/classic-baseline/prot-raid-tank.md) |
+| [Arms — Full raid (the community's #2 Arms build)](builds/arms-community-parse.md) | 37/14/0 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -64,8 +65,9 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`arms-battle-raid`](builds/arms-battle-raid.md) | ours: hand draft | 34/17/0 | 378 | +0.0% | 729 | -5.8% | 0 s |
-| 2 | *Arms 39/12/0* | community simulator | - | 369 | -2.2% | 774 | +0.0% | 0 s |
+| 1 | [`arms-battle-raid`](builds/arms-battle-raid.md) | ours: hand draft | 34/17/0 | 378 | +0.0% | 729 | -7.3% | 0 s |
+| 2 | [`arms-community-parse`](builds/arms-community-parse.md) | ours: parse build | 37/14/0 | 375 | -0.6% | 786 | +0.0% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 369 | -2.2% | 774 | -1.6% | 0 s |
 
 ## New spells and builds
 
@@ -82,7 +84,7 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 
 No new spell of this class opened a build of its own: the new spells go into the existing builds' rotations (above).
 
-The class's best raid DPS build on the training dummy: [`fury-dw-raid`](builds/fury-dw-raid.md) (fury-dw-raid), 380 DPS; in a raid: *Arms 39/12/0* (arms-battle-raid), 774 DPS.
+The class's best raid DPS build on the training dummy: [`fury-dw-raid`](builds/fury-dw-raid.md) (fury-dw-raid), 380 DPS; in a raid: [`arms-community-parse`](builds/arms-community-parse.md) (arms-battle-raid), 786 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -104,6 +106,7 @@ The class's best raid DPS build on the training dummy: [`fury-dw-raid`](builds/f
 | `arms-2h-raid` | dummy | sim preset: Arms 39/12/0 | - | 268 | -13.8% | 0 | - |
 | `arms-2h-raid` | dummy | `cand-arms-2h-raid-r2` | 20/31/0 | 264 | -15.1% | 0 | +50% |
 | `arms-battle-raid` | dummy | `arms-battle-raid` | 34/17/0 | 378 | +0.0% | 0 | - |
+| `arms-battle-raid` | dummy | `arms-community-parse` | 37/14/0 | 375 | -0.6% | 0 | - |
 | `arms-battle-raid` | dummy | sim preset: Arms 39/12/0 | - | 369 | -2.2% | 0 | - |
 | `fury-dw-raid` | dummy | `fury-dw-raid` | 13/38/0 | 380 | +0.0% | 0 | +94% |
 | `fury-dw-raid` | dummy | `opt-fury-dw-raid-raid-dps` | 13/38/0 | 380 | +0.0% | 0 | +94% |
@@ -148,6 +151,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `arms-2h-raid` | sim preset: Fury 17/34/0 | - | 281 | 326 | 601 | 601 | 675 |
 | `arms-2h-raid` | sim preset: Arms 39/12/0 | - | 268 | 307 | 586 | 586 | 617 |
 | `arms-battle-raid` | `arms-battle-raid` | 34/17/0 | 378 | 425 | 729 | 729 | 747 |
+| `arms-battle-raid` | `arms-community-parse` | 37/14/0 | 375 | 429 | 786 | 786 | 784 |
 | `arms-battle-raid` | sim preset: Arms 39/12/0 | - | 369 | 421 | 774 | 774 | 770 |
 | `fury-dw-raid` | `fury-dw-raid` | 13/38/0 | 380 | 400 | 681 | 681 | 760 |
 | `fury-dw-raid` | `opt-fury-dw-raid-raid-dps` | 13/38/0 | 380 | 400 | 685 | 685 | 762 |

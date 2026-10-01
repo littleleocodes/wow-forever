@@ -67,12 +67,13 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 ## Rank among our builds and the community simulator's
 
-**1 of 2** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 3** for `arms-battle-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 378 | +0.0% | 729 | -5.8% | 0 s |
-| 2 | *Arms 39/12/0* | community simulator | - | 369 | -2.2% | 774 | +0.0% | 0 s |
+| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 378 | +0.0% | 729 | -7.3% | 0 s |
+| 2 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 375 | -0.6% | 786 | +0.0% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 369 | -2.2% | 774 | -1.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

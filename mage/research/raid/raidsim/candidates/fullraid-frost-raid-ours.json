@@ -1,0 +1,96 @@
+{
+ "id": "fullraid-frost-raid-ours",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Arcane Mind",
+    1
+   ],
+   [
+    "Improved Channeling",
+    3
+   ]
+  ],
+  "Fire": [],
+  "Frost": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ],
+   [
+    "Winter's Chill",
+    5
+   ],
+   [
+    "Frost Channeling",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for frost-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-frost-fingers-of-frost-raid.json in the raid setting: 727.6 -> 731.5 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-frost-fingers-of-frost-raid.json",
+  "setting": "raid",
+  "kept": [
+   "Fingers of Frost",
+   "Missile Barrage"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Presence of Mind -> Winter's Chill",
+    "gain_seed1": 0.007516678761087414,
+    "gain_seed2": 0.006632523716055827,
+    "split": "21/0/30"
+   }
+  ],
+  "dps_start": 727.644317819534,
+  "dps_end": 731.4997344219496,
+  "gain": 0.005298490633402819,
+  "tank": false
+ }
+}

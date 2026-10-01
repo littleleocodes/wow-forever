@@ -1,0 +1,89 @@
+{
+ "id": "fullraid-shadow-dps-ours",
+ "allocation": {
+  "Discipline": [
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ]
+  ],
+  "Holy": [],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    5
+   ],
+   [
+    "Improved Shadow Word: Pain",
+    2
+   ],
+   [
+    "Shadow Affinity",
+    3
+   ],
+   [
+    "Shadow Reach",
+    1
+   ],
+   [
+    "Mind Flay",
+    1
+   ],
+   [
+    "Improved Mind Flay",
+    2
+   ],
+   [
+    "Improved Mind Blast",
+    5
+   ],
+   [
+    "Vampiric Embrace",
+    1
+   ],
+   [
+    "Shadow Weaving",
+    3
+   ],
+   [
+    "Devouring Contagion",
+    2
+   ],
+   [
+    "Darkness",
+    5
+   ],
+   [
+    "Shadowform",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for shadow-dps from /home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-opt-shadow-dps-raid-dps.json in the raid setting: 724.6 -> 724.6 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-opt-shadow-dps-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 724.6289594917621,
+  "dps_end": 724.6289594917621,
+  "gain": 0.0,
+  "tank": false
+ }
+}

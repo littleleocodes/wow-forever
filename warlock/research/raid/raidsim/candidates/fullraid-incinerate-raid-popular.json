@@ -1,0 +1,109 @@
+{
+ "id": "fullraid-incinerate-raid-popular",
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    2
+   ],
+   [
+    "Improved Life Tap",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Aftermath",
+    3
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for incinerate-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-warlock.json in the raid setting: 627.1 -> 648.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-warlock.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Destructive Reach -> Improved Corruption",
+    "gain_seed1": 0.03299582644922072,
+    "gain_seed2": 0.03294783113006394,
+    "split": "7/11/33"
+   },
+   {
+    "round": 2,
+    "move": "2 points Aftermath -> Improved Life Tap",
+    "gain_seed1": 0.0011063387842209504,
+    "gain_seed2": 0.0020521710503733637,
+    "split": "9/11/31"
+   }
+  ],
+  "dps_start": 627.1165775721167,
+  "dps_end": 648.936801149626,
+  "gain": 0.03479452522525617,
+  "tank": false
+ }
+}

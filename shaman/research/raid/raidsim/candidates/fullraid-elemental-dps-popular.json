@@ -1,0 +1,91 @@
+{
+ "id": "fullraid-elemental-dps-popular",
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Eye of the Storm",
+    3
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Elemental Reach",
+    2
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Earthbound",
+    1
+   ],
+   [
+    "Elemental Fury",
+    5
+   ],
+   [
+    "Lava Burst",
+    1
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Improved Ghost Wolf",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ]
+  ],
+  "Restoration": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for elemental-dps from /home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-shaman.json in the raid setting: 505.9 -> 505.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-shaman.json",
+  "setting": "raid",
+  "kept": [
+   "Elemental Focus"
+  ],
+  "moves": [],
+  "dps_start": 505.8915307017331,
+  "dps_end": 505.8915307017331,
+  "gain": 0.0,
+  "tank": false
+ }
+}

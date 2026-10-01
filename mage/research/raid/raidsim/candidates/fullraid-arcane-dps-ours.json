@@ -1,0 +1,93 @@
+{
+ "id": "fullraid-arcane-dps-ours",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Arcane Impact",
+    3
+   ],
+   [
+    "Arcane Blast",
+    1
+   ],
+   [
+    "Arcane Meditation",
+    3
+   ],
+   [
+    "Missile Barrage",
+    1
+   ],
+   [
+    "Presence of Mind",
+    1
+   ],
+   [
+    "Arcane Mind",
+    5
+   ],
+   [
+    "Arcane Instability",
+    3
+   ],
+   [
+    "Arcane Power",
+    1
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arcane-dps from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-arcane-blast-raid.json in the raid setting: 690.8 -> 690.8 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-arcane-blast-raid.json",
+  "setting": "raid",
+  "kept": [
+   "Arcane Blast",
+   "Missile Barrage"
+  ],
+  "moves": [],
+  "dps_start": 690.7929553814719,
+  "dps_end": 690.7929553814719,
+  "gain": 0.0,
+  "tank": false
+ }
+}

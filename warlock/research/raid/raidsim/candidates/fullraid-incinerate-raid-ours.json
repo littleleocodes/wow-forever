@@ -1,0 +1,102 @@
+{
+ "id": "fullraid-incinerate-raid-ours",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Life Tap",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Aftermath",
+    3
+   ],
+   [
+    "Cataclysm",
+    3
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Conflagrate",
+    1
+   ],
+   [
+    "Fire and Brimstone",
+    3
+   ],
+   [
+    "Bane of Havoc",
+    1
+   ],
+   [
+    "Shadow and Flame",
+    5
+   ],
+   [
+    "Incinerate",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for incinerate-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-destruction-incinerate-raid.json in the raid setting: 647.1 -> 649.0 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-destruction-incinerate-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Aftermath -> Cataclysm",
+    "gain_seed1": 0.0024185812251609207,
+    "gain_seed2": 0.0028387780137812957,
+    "split": "9/11/31"
+   }
+  ],
+  "dps_start": 647.0832195973811,
+  "dps_end": 649.0122788078247,
+  "gain": 0.0029811609264784877,
+  "tank": false
+ }
+}

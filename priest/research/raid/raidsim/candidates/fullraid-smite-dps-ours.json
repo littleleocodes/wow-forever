@@ -1,0 +1,96 @@
+{
+ "id": "fullraid-smite-dps-ours",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Holy Precision",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Penance",
+    1
+   ],
+   [
+    "Power Infusion",
+    1
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Silent Resolve",
+    2
+   ]
+  ],
+  "Holy": [
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Inspiration",
+    1
+   ],
+   [
+    "Searing Light",
+    2
+   ],
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Holy Nova",
+    1
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for smite-dps from /home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-smite-discipline-raid.json in the raid setting: 578.8 -> 578.8 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-smite-discipline-raid.json",
+  "setting": "raid",
+  "kept": [
+   "Inner Focus"
+  ],
+  "moves": [],
+  "dps_start": 578.8094302349378,
+  "dps_end": 578.8094302349378,
+  "gain": 0.0,
+  "tank": false
+ }
+}

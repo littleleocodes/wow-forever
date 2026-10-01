@@ -96,6 +96,48 @@ def neighbors(trees, flat, protect=()):
                     continue
                 seen.add(key)
                 out.append((f"{k} point{'s' if k > 1 else ''} {a} -> {b}", new))
+    out += chain_moves(trees, flat, protect, cap, seen)
+    return out
+
+
+def chain_moves(trees, flat, protect, cap, seen):
+    """Moves that buy a talent together with the prerequisite the build lacks (2026-10-01). In Forever, Mortal Strike requires
+    Sweeping Strikes: from an Arms build without either, Mortal Strike (+13% in a full raid) was two points away and Sweeping Strikes
+    alone is worth ~1%, so a one-talent-at-a-time search never took the first step. The points come from one talent, or from two."""
+    req = {n: t["talents"][n].get("requires") or [] for t in trees.values() for n in t["talents"]}
+    out = []
+    for b, reqs in req.items():
+        if flat.get(b, 0) or not reqs:
+            continue
+        missing = {p: r - flat.get(p, 0) for p, r in reqs if flat.get(p, 0) < r}
+        if not missing:
+            continue
+        for kb in sorted({1, cap[b]}):
+            add = dict(missing, **{b: kb})
+            need = sum(add.values())
+            srcs = [x for x, rx in flat.items() if rx > 0 and x not in add]
+            plans = [{x: need} for x in srcs if flat[x] >= need]
+            for i, x1 in enumerate(srcs):
+                for x2 in srcs[i + 1:]:
+                    t1 = min(flat[x1], need - 1)
+                    if t1 >= 1 and flat[x2] >= need - t1:
+                        plans.append({x1: t1, x2: need - t1})
+            for take in plans:
+                new = dict(flat)
+                for x, n in take.items():
+                    new[x] -= n
+                    if new[x] == 0:
+                        if x in protect:
+                            break
+                        del new[x]
+                else:
+                    for x, n in add.items():
+                        new[x] = new.get(x, 0) + n
+                    key = tuple(sorted(new.items()))
+                    if key in seen or not valid(trees, new):
+                        continue
+                    seen.add(key)
+                    out.append((" + ".join(f"{n} {x}" for x, n in take.items()) + " -> " + " + ".join(f"{n} {x}" for x, n in add.items()), new))
     return out
 
 

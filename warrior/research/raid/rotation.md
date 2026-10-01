@@ -423,43 +423,43 @@ Damage by ability:
 | Spearing Strike | 2% |
 | Dragonbreath Chili | 0% |
 
-### *Arms 39/12/0* (community simulator, 369 DPS)
+### [`arms-community-parse`](builds/arms-community-parse.md) (ours: parse build, 375 DPS), *Arms 39/12/0* (community simulator, 369 DPS)
 
 Before the pull: at -1s: cast Battle Stance.
 
-| # | Priority (the first line whose condition holds is cast) | *Arms 39/12/0* casts/min |
-|---|---|---|
-| 1 | cast Overpower | 6.1 |
-| 2 | if execute phase (E20): cast Execute | 3.3 |
-| 3 | cast Goblin Sapper Charge | as ready |
-| 4 | cast Dense Dynamite | as ready |
-| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
-| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | cast Mortal Strike | 0.5 |
-| 11 | if not Rend is on the target: cast Rend | 2.7 |
-| 12 | cast Slam | 2.8 |
-| 13 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 7.9 |
-| 15 | if not Berserker Stance is up: cast Berserker Stance | 25.3 |
-| 16 | if not Battle Stance is up: cast Battle Stance | 25.5 |
-| 17 | cast Spearing Strike | 1.8 |
-| 18 | cast Sunder Armor | 7.9 |
+| # | Priority (the first line whose condition holds is cast) | [`arms-community-parse`](builds/arms-community-parse.md) casts/min | *Arms 39/12/0* casts/min |
+|---|---|---|---|
+| 1 | cast Overpower | 6.2 | 6.1 |
+| 2 | if execute phase (E20): cast Execute | 3.4 | 3.3 |
+| 3 | cast Goblin Sapper Charge | as ready | as ready |
+| 4 | cast Dense Dynamite | as ready | as ready |
+| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready | as ready |
+| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready | as ready |
+| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready |
+| 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready | as ready |
+| 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready | as ready |
+| 10 | cast Mortal Strike | 0.6 | 0.5 |
+| 11 | if not Rend is on the target: cast Rend | 2.7 | 2.7 |
+| 12 | cast Slam | 2.8 | 2.8 |
+| 13 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 |
+| 14 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.2 | 7.9 |
+| 15 | if not Berserker Stance is up: cast Berserker Stance | 25.1 | 25.3 |
+| 16 | if not Battle Stance is up: cast Battle Stance | 25.3 | 25.5 |
+| 17 | cast Spearing Strike | 1.8 | 1.8 |
+| 18 | cast Sunder Armor | 8.2 | 7.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Bloodthirst (needs the Bloodthirst talent).
 
 Damage by ability:
 
-| Ability | *Arms 39/12/0* |
-|---|---|
-| Auto Attack | 44% |
-| Overpower | 25% |
-| Execute | 9% |
-| Slam | 9% |
-| Deep Wound | 6% |
-| Rend | 3% |
-| Spearing Strike | 2% |
-| Mortal Strike | 2% |
-| Dragonbreath Chili | 0% |
+| Ability | [`arms-community-parse`](builds/arms-community-parse.md) | *Arms 39/12/0* |
+|---|---|---|
+| Auto Attack | 43% | 44% |
+| Overpower | 26% | 25% |
+| Execute | 10% | 9% |
+| Slam | 9% | 9% |
+| Deep Wound | 5% | 6% |
+| Rend | 3% | 3% |
+| Mortal Strike | 2% | 2% |
+| Spearing Strike | 2% | 2% |
+| Dragonbreath Chili | 0% | 0% |

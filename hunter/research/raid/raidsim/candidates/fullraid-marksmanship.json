@@ -1,0 +1,90 @@
+{
+ "id": "fullraid-marksmanship",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Hawk Eye",
+    3
+   ],
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for mm-lonewolf-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/tf-popular-2-hunter.json in the raid setting: 797.7 -> 851.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/tf-popular-2-hunter.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 points Efficiency -> Improved Arcane Shot",
+    "gain_seed1": 0.07009061722118659,
+    "gain_seed2": 0.06761671380000345,
+    "split": "5/41/5"
+   }
+  ],
+  "dps_start": 797.6966347410596,
+  "dps_end": 851.8935370838531,
+  "gain": 0.06794174625092442,
+  "tank": false
+ }
+}

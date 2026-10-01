@@ -1,0 +1,104 @@
+{
+ "id": "fullraid-arms-2h-raid-ours",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Deflection",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Booming Voice",
+    2
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Improved Execute",
+    1
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arms-2h-raid from /home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-opt-arms-2h-raid-raid-dps.json in the raid setting: 658.1 -> 661.1 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-opt-arms-2h-raid-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Spearing Strike -> Impale",
+    "gain_seed1": 0.0025391577146312017,
+    "gain_seed2": 0.003632191363440729,
+    "split": "19/32/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Improved Execute -> Impale",
+    "gain_seed1": 0.0011757722865721743,
+    "gain_seed2": 0.0020100298703644714,
+    "split": "20/31/0"
+   }
+  ],
+  "dps_start": 658.1186730940467,
+  "dps_end": 661.0645238511311,
+  "gain": 0.004476169538291552,
+  "tank": false
+ }
+}

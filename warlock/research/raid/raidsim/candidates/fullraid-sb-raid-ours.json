@@ -1,0 +1,90 @@
+{
+ "id": "fullraid-sb-raid-ours",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ],
+   [
+    "Cataclysm",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for sb-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-sb-raid-raid-dps.json in the raid setting: 757.1 -> 760.5 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-sb-raid-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Improved Corruption -> Cataclysm",
+    "gain_seed1": 0.005686911171780551,
+    "gain_seed2": 0.00461215614148891,
+    "split": "20/11/20"
+   }
+  ],
+  "dps_start": 757.1132673149425,
+  "dps_end": 760.4584626465444,
+  "gain": 0.00441835518675493,
+  "tank": false
+ }
+}

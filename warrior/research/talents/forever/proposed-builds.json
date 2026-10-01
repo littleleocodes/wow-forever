@@ -1192,6 +1192,47 @@
       "notes": ["2026-09-30 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree first 31 s; stats model's order 38 s; own tree last 39 s. First Protection point at level 10.", "Fight-lab numbers are a model of the beta, not in-game measurements."],
       "open_questions": ["Check the Protection leveling pace at launch; the raid build's talents may cost speed early."],
       "sources": ["https://warcraftforever.games/talents/warrior"]
+    },
+    {
+      "id": "arms-community-parse",
+      "name": "Arms — Full raid (the community's #2 Arms build)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Arms",
+      "generated": "2026-09-30",
+      "derived": "raid",
+      "summary": "Arms for a full raid: talentsforever.com's #2 most popular Arms build (37/14/0, 2026-09-30 snapshot). In the community simulator's full-raid setting (every raid buff and debuff, the equal-tier phase-1 gear) it does 13.9% more than our best Arms build (704 vs 618 DPS, 20,000 iterations, seed 3); on the training dummy it ties it (-0.9%). A talent search from it found no better build.",
+      "allocation": {
+        "Arms": [
+          ["Improved Heroic Strike", 3],
+          ["Improved Rend", 3],
+          ["Improved Tactical Mastery", 5],
+          ["Improved Overpower", 2],
+          ["Anger Management", 1],
+          ["Deep Wounds", 3],
+          ["Spearing Strike", 1],
+          ["Two-Handed Weapon Specialization", 3],
+          ["Impale", 2],
+          ["Bloodthrill", 5],
+          ["Sweeping Strikes", 1],
+          ["Weaponmaster", 5],
+          ["Improved Slam", 2],
+          ["Mortal Strike", 1]
+        ],
+        "Fury": [
+          ["Cruelty", 5],
+          ["Unbridled Wrath", 5],
+          ["Piercing Howl", 1],
+          ["Boundless Rage", 3]
+        ],
+        "Protection": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["2026-09-30: found by the popular-builds race (popular_race.py) and confirmed by a full-raid talent search (raidsim/talent_opt.py --setting raid --min-tree Arms=30) and a head-to-head race. Simulator numbers are the community's model of the beta."],
+      "open_questions": ["Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model."],
+      "sources": ["https://talentsforever.com/warrior/60/30305213132515201-05050103--4", "https://talentsforever.com/popular.js"]
     }
   ]
 }

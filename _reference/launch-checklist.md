@@ -664,3 +664,6 @@
 **Protection — Leveling into the raid build** (`warrior/research/leveling/builds/protection-leveling.md`)
 - [ ] Check the Protection leveling pace at launch; the raid build's talents may cost speed early.
 
+**Arms — Full raid (the community's #2 Arms build)** (`warrior/research/raid/builds/arms-community-parse.md`)
+- [ ] Why does our dummy-picked Arms build lose 14% in a full raid? The talents that pay off on a buffed, debuffed target should be fitted into the raid-mode model.
+

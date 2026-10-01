@@ -1,0 +1,105 @@
+{
+ "id": "fullraid-subtlety-raid-ours",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    1
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    4
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Cold Blood",
+    1
+   ]
+  ],
+  "Combat": [],
+  "Subtlety": [
+   [
+    "Camouflage",
+    5
+   ],
+   [
+    "Master of Deception",
+    3
+   ],
+   [
+    "Opportunity",
+    2
+   ],
+   [
+    "Improved Ambush",
+    3
+   ],
+   [
+    "Initiative",
+    3
+   ],
+   [
+    "Ghostly Strike",
+    1
+   ],
+   [
+    "Premeditation",
+    1
+   ],
+   [
+    "Serrated Blades",
+    3
+   ],
+   [
+    "Dirty Deeds",
+    2
+   ],
+   [
+    "Preparation",
+    1
+   ],
+   [
+    "Hemorrhage",
+    1
+   ],
+   [
+    "Quietus",
+    5
+   ],
+   [
+    "Thousand Cuts",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for subtlety-raid from /home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-subtlety-hemo-raid.json in the raid setting: 629.2 -> 629.2 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-subtlety-hemo-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 629.2437047808761,
+  "dps_end": 629.2437047808761,
+  "gain": 0.0,
+  "tank": false
+ }
+}
