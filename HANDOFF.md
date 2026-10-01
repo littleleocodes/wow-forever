@@ -1,4 +1,4 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-09-30)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-01)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
@@ -107,6 +107,18 @@ Each class folder now opens with player pages and keeps the research below:
   entry: no other spec has a build 2%+ better than ours. Open: the leveling searches (`derive_leveling.py --fresh`) have not been
   re-run with the chain moves; the setting audit lists ~300 points worth <0.2% in both settings (mostly utility picks of the filler
   audit and tier fillers).
+
+- **Rogue questions answered** (2026-10-01, user questions; no build changed): poisons are Instant on the main hand, Deadly on the
+  off hand. In the full-raid setting the simulator stacks Windfury Totem with the main-hand poison (+2.3-2.5%; Classic would not
+  allow that): open whether full-raid rogue runs should drop the main-hand poison when Windfury is up. Slice and Dice is the #1
+  finisher (~7-8 casts per fight); Rupture loses (dummy -2 to -9%, raid 0 to -1.2%); Envenom does not exist in Forever; Thistle
+  Tea is used once per fight. Gear is 6 Nightslayer + 2 Bloodfang (swords) or 6 Shadowcraft (daggers); Forever's Nightslayer
+  bonuses are 3pc Vanish -30 s, 5pc +10 max energy, 8pc heal: no phase-1 set lengthens Slice and Dice (open: a source for any
+  Forever +50% SnD set). **Venom** (31 Assassination; requires Mutilate; a finisher: +30% poison damage, +10% poison chance):
+  from `assassination-seal-fate-raid` (30/19/2) with 2 Dual Wield Specialization -> Mutilate + Venom and Venom refreshed at 5
+  combo points (best of 6 legal ways to add it x 4 rotation variants, 20,000 iterations, seed 1) it loses 6.9% on the dummy
+  (379 vs 407) and 4.6% in a full raid (651 vs 682), ~3.7 casts per fight; consistent with `VERIFIED_UNUSED`. Not a full talent
+  search around Venom (`talent_opt.py --keep Venom` with a Venom rotation would settle it).
 
 ## Where things stand (2026-09-28)
 
