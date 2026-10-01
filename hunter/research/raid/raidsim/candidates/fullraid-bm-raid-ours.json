@@ -1,0 +1,81 @@
+{
+ "id": "fullraid-bm-raid-ours",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ],
+   [
+    "Summon Hawk",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ],
+   [
+    "Hawk Eye",
+    1
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for bm-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-mm-hawk-raid.json in the raid setting: 682.1 -> 682.1 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-mm-hawk-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 682.0615638202764,
+  "dps_end": 682.0615638202764,
+  "gain": 0.0,
+  "tank": false
+ }
+}

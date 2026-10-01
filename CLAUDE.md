@@ -431,6 +431,18 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   specs.json at them. Result: warrior DPS +71-76% (its "p1" presets held caster and tank pieces), paladin +51%, Shadow +31%, casters
   +13-22% (launch items), others 0-5%. Tanks keep their sets; healers are not simulated. Raid talents were re-searched in the new gear
   the same day (no hand draft lost by 2%). The pages enforce the 2% rule on derived builds (`render_modes.DERIVED_BAR`). The bench also takes `gear_json` per build.
+- **Why we missed the community's Arms build** (2026-10-01, user request: analyze it and apply the lesson to every spec). Two causes:
+  (1) **dummy-only valuation**: Mortal Strike is 0.8% of an Arms warrior's DPS on the training dummy (rage-starved, it rarely affords
+  it) and 13.2% in a full raid; mana talents the reverse (Resourcefulness 18.7% -> 0%, Moonglow 16.7% -> 0.7%, Holy Conduit 11.2% ->
+  0%). `raidsim/setting_audit.py --write` measures every talent of every damage spec's best builds in both settings
+  (`_reference/setting-audit.md`). (2) **search valleys**: in Forever Mortal Strike requires Sweeping Strikes (worth ~1% alone), and
+  every simulator search moved points one talent at a time, so it was unreachable; `talent_opt.neighbors` now adds prerequisite-chain
+  moves (the talent plus the prerequisite it lacks, paid from one or two talents; also used by `fl_talent_opt.py` and
+  `filler_audit.py`). Stat weights barely move between the settings (Arms, in attack-power units: hit 4.3 -> 5.5, crit 1.5 -> 1.9), so
+  the equal-tier gear holds for both. `raidsim/fullraid_search.py` runs the full-raid search for every damage entry (from ours and the
+  best popular build; bar: our best build of the spec in any entry, 2%); with the chain moves it finds the Arms gap from our own build
+  (+13.7%) and nothing else over 2% (records `raidsim/fullraid-search.json`). The dummy searches were re-run with the chain moves
+  (`derive_raid.py --fresh`): no change.
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

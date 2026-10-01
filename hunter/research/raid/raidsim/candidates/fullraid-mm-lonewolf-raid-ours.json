@@ -1,0 +1,74 @@
+{
+ "id": "fullraid-mm-lonewolf-raid-ours",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    5
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ],
+   [
+    "Survivalist",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for mm-lonewolf-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-opt-mm-lonewolf-raid-raid-dps.json in the raid setting: 851.5 -> 851.5 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-opt-mm-lonewolf-raid-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 851.5019886014392,
+  "dps_end": 851.5019886014392,
+  "gain": 0.0,
+  "tank": false
+ }
+}

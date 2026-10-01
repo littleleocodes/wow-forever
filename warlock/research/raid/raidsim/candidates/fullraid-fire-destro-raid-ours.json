@@ -1,0 +1,94 @@
+{
+ "id": "fullraid-fire-destro-raid-ours",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Life Tap",
+    2
+   ],
+   [
+    "Suppression",
+    5
+   ],
+   [
+    "Improved Corruption",
+    3
+   ],
+   [
+    "Amplify Curse",
+    1
+   ],
+   [
+    "Pandemic",
+    3
+   ],
+   [
+    "Malevolence",
+    5
+   ],
+   [
+    "Improved Bane of Agony",
+    2
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Demonic Aegis",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Shadowburn",
+    1
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fire-destro-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-fire-destro-raid-raid-dps.json in the raid setting: 727.9 -> 735.7 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-opt-fire-destro-raid-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Improved Corruption -> Improved Bane of Agony",
+    "gain_seed1": 0.009265205025417167,
+    "gain_seed2": 0.009957660509556376,
+    "split": "21/11/19"
+   }
+  ],
+  "dps_start": 727.8660771786529,
+  "dps_end": 735.7420082466415,
+  "gain": 0.01082057718435947,
+  "tank": false
+ }
+}

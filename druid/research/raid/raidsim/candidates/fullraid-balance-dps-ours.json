@@ -1,0 +1,86 @@
+{
+ "id": "fullraid-balance-dps-ours",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Reach",
+    2
+   ],
+   [
+    "Improved Moonfire",
+    2
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Moonglow",
+    3
+   ],
+   [
+    "Nature's Splendor",
+    1
+   ],
+   [
+    "Insect Swarm",
+    1
+   ],
+   [
+    "Vengeance",
+    5
+   ],
+   [
+    "Improved Starfire",
+    5
+   ],
+   [
+    "Nature's Grace",
+    1
+   ],
+   [
+    "Moonfury",
+    5
+   ],
+   [
+    "Moonkin Form",
+    1
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Heart of the Wild",
+    5
+   ]
+  ],
+  "Restoration": [
+   [
+    "Nature's Focus",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ],
+   [
+    "Reflection",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for balance-dps from /home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-start-balance-moonkin-raid.json in the raid setting: 616.7 -> 616.7 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-start-balance-moonkin-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 616.7455214237345,
+  "dps_end": 616.7455214237345,
+  "gain": 0.0,
+  "tank": false
+ }
+}

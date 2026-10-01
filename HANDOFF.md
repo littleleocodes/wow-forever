@@ -102,6 +102,12 @@ Each class folder now opens with player pages and keeps the research below:
   build `arms-community-parse`; Marksmanship and Enhancement: no gain (the searches ended on our builds). Open: why our
   dummy-picked Arms loses 14% in a full raid (raid-mode fit of the talents that pay off on a buffed, debuffed target).
 
+- **Arms miss analyzed and the lesson applied** (2026-10-01): see CLAUDE.md "Why we missed the community's Arms build". Setting audit
+  for every damage spec, prerequisite-chain moves in every simulator search, full-raid and dummy searches re-run for every damage
+  entry: no other spec has a build 2%+ better than ours. Open: the leveling searches (`derive_leveling.py --fresh`) have not been
+  re-run with the chain moves; the setting audit lists ~300 points worth <0.2% in both settings (mostly utility picks of the filler
+  audit and tier fillers).
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

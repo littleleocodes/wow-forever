@@ -1,0 +1,97 @@
+{
+ "id": "fullraid-bm-raid-popular",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    1
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Improved Revive Pet",
+    2
+   ],
+   [
+    "Bestial Swiftness",
+    1
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Intimidation",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    2
+   ],
+   [
+    "Frenzy",
+    5
+   ],
+   [
+    "Bestial Wrath",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ]
+  ],
+  "Survival": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for bm-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-hunter.json in the raid setting: 669.7 -> 691.3 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-hunter.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Efficiency -> Improved Stings",
+    "gain_seed1": 0.032236841017258655,
+    "gain_seed2": 0.03220820401515856,
+    "split": "31/20/0"
+   }
+  ],
+  "dps_start": 669.7451373331149,
+  "dps_end": 691.311701258188,
+  "gain": 0.03220115044201721,
+  "tank": false
+ }
+}

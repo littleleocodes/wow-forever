@@ -1,0 +1,109 @@
+{
+ "id": "fullraid-combat-daggers-raid-ours",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    3
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Blade Flurry",
+    1
+   ],
+   [
+    "Hack and Slash",
+    5
+   ],
+   [
+    "Weapon Expertise",
+    2
+   ],
+   [
+    "Aggression",
+    3
+   ],
+   [
+    "Adrenaline Rush",
+    1
+   ],
+   [
+    "Deflection",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for combat-daggers-raid from /home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-combat-daggers-raid.json in the raid setting: 645.8 -> 671.4 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-combat-daggers-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Murder -> Improved Expose Armor",
+    "gain_seed1": 0.03525873833313864,
+    "gain_seed2": 0.03580736987884481,
+    "split": "16/33/2"
+   },
+   {
+    "round": 2,
+    "move": "1 point Flawless Execution -> Lethality",
+    "gain_seed1": 0.0032258239603242256,
+    "gain_seed2": 0.0032424031522859664,
+    "split": "17/32/2"
+   }
+  ],
+  "dps_start": 645.8169987752253,
+  "dps_end": 671.3808795925888,
+  "gain": 0.03958378436282217,
+  "tank": false
+ }
+}

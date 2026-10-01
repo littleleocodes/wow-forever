@@ -1,0 +1,102 @@
+{
+ "id": "fullraid-demonology-raid-ours",
+ "allocation": {
+  "Affliction": [
+   [
+    "Improved Corruption",
+    1
+   ],
+   [
+    "Suppression",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Sayaad",
+    2
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ],
+   [
+    "Demonic Embrace",
+    3
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for demonology-raid from /home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-demonology-pact-raid.json in the raid setting: 820.6 -> 825.4 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-start-demonology-pact-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Improved Life Tap -> Suppression",
+    "gain_seed1": 0.006368847655326304,
+    "gain_seed2": 0.005231450531762327,
+    "split": "2/31/18"
+   }
+  ],
+  "dps_start": 820.5562052696868,
+  "dps_end": 825.3766209501359,
+  "gain": 0.005874570991593275,
+  "tank": false
+ }
+}

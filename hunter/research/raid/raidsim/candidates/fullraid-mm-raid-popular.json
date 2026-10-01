@@ -1,0 +1,101 @@
+{
+ "id": "fullraid-mm-raid-popular",
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Focused Fire",
+    2
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Hawk Eye",
+    1
+   ],
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Rapid Killing",
+    2
+   ],
+   [
+    "Lone Wolf",
+    1
+   ],
+   [
+    "Trueshot Aura",
+    1
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Rapid Recuperation",
+    2
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    5
+   ],
+   [
+    "Sniper Shot",
+    1
+   ],
+   [
+    "Improved Arcane Shot",
+    5
+   ]
+  ],
+  "Survival": [
+   [
+    "Improved Tracking",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for mm-raid from /home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-hunter.json in the raid setting: 725.0 -> 762.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-hunter.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 points Efficiency -> Improved Arcane Shot",
+    "gain_seed1": 0.03220735568205657,
+    "gain_seed2": 0.032530504145732886,
+    "split": "5/41/5"
+   },
+   {
+    "round": 2,
+    "move": "2 points Hawk Eye -> Focused Fire",
+    "gain_seed1": 0.019674137572716077,
+    "gain_seed2": 0.019674250310717234,
+    "split": "7/39/5"
+   }
+  ],
+  "dps_start": 725.0323950662158,
+  "dps_end": 762.8667106819009,
+  "gain": 0.05218293123609974,
+  "tank": false
+ }
+}

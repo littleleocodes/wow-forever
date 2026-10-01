@@ -1,0 +1,103 @@
+{
+ "id": "fullraid-fire-raid-popular",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Focus",
+    5
+   ],
+   [
+    "Arcane Concentration",
+    5
+   ]
+  ],
+  "Fire": [
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Blast Wave",
+    1
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fire-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-mage.json in the raid setting: 693.8 -> 728.9 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-tf-popular-4-mage.json",
+  "setting": "raid",
+  "kept": [
+   "Hot Streak"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Impact -> Elemental Precision",
+    "gain_seed1": 0.03377858483416474,
+    "gain_seed2": 0.037004201438252116,
+    "split": "10/36/5"
+   },
+   {
+    "round": 2,
+    "move": "2 points Flame Throwing -> Master of Elements",
+    "gain_seed1": 0.015594777053230757,
+    "gain_seed2": 0.014575904338963719,
+    "split": "10/36/5"
+   }
+  ],
+  "dps_start": 693.7623418837234,
+  "dps_end": 728.8593137780678,
+  "gain": 0.05058932976824315,
+  "tank": false
+ }
+}

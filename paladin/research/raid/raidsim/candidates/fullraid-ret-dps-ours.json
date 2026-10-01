@@ -1,0 +1,93 @@
+{
+ "id": "fullraid-ret-dps-ours",
+ "allocation": {
+  "Holy": [
+   [
+    "Divine Strength",
+    5
+   ],
+   [
+    "Divine Intellect",
+    5
+   ],
+   [
+    "Improved Seals",
+    3
+   ],
+   [
+    "Reverence",
+    3
+   ],
+   [
+    "Divine Favor",
+    1
+   ]
+  ],
+  "Protection": [],
+  "Retribution": [
+   [
+    "Benediction",
+    5
+   ],
+   [
+    "Holy Conduit",
+    2
+   ],
+   [
+    "Improved Judgement",
+    2
+   ],
+   [
+    "Conviction",
+    5
+   ],
+   [
+    "Seal of Command",
+    1
+   ],
+   [
+    "Sanctified Judgement",
+    3
+   ],
+   [
+    "Vindication",
+    3
+   ],
+   [
+    "Sacred Arbiter",
+    1
+   ],
+   [
+    "Vengeance",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Champion of the Light",
+    3
+   ],
+   [
+    "Instrument of Law",
+    2
+   ],
+   [
+    "Twist of Light",
+    1
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for ret-dps from /home/user/wow-forever/paladin/research/raid/raidsim/candidates/fullraid-start-ret-raid-dps.json in the raid setting: 957.2 -> 957.2 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/fullraid-start-ret-raid-dps.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [],
+  "dps_start": 957.223155741396,
+  "dps_end": 957.223155741396,
+  "gain": 0.0,
+  "tank": false
+ }
+}

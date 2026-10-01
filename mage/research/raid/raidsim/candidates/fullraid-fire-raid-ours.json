@@ -1,0 +1,88 @@
+{
+ "id": "fullraid-fire-raid-ours",
+ "allocation": {
+  "Arcane": [
+   [
+    "Arcane Concentration",
+    5
+   ],
+   [
+    "Improved Channeling",
+    5
+   ],
+   [
+    "Arcane Subtlety",
+    2
+   ]
+  ],
+  "Fire": [
+   [
+    "Improved Fireball",
+    5
+   ],
+   [
+    "Wake of Fire",
+    2
+   ],
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Burning Soul",
+    2
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fire-raid from /home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json in the raid setting: 728.8 -> 728.8 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-start-fire-raid.json",
+  "setting": "raid",
+  "kept": [
+   "Hot Streak"
+  ],
+  "moves": [],
+  "dps_start": 728.7888283547727,
+  "dps_end": 728.7888283547727,
+  "gain": 0.0,
+  "tank": false
+ }
+}

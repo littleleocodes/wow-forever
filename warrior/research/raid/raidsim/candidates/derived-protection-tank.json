@@ -11,12 +11,12 @@
     3
    ],
    [
-    "Improved Tactical Mastery",
-    5
+    "Improved Rend",
+    3
    ],
    [
-    "Anger Management",
-    1
+    "Deep Wounds",
+    3
    ]
   ],
   "Fury": [
@@ -72,15 +72,23 @@
    ]
   ]
  },
- "note": "Simulator talent search (raidsim/talent_opt.py, 2026-09-30) for prot-tank from prot-raid-tank in the raid setting: 426.8 -> 426.8 DPS on a third seed.",
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for prot-tank from prot-raid-tank in the raid setting: 426.8 -> 439.4 DPS on a third seed.",
  "search": {
   "start": "prot-raid-tank",
   "setting": "raid",
   "kept": [],
-  "moves": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "5 Improved Tactical Mastery + 1 Anger Management -> 3 Improved Rend + 3 Deep Wounds",
+    "gain_seed1": 0.006311395357880167,
+    "gain_seed2": 0.006339755097785282,
+    "split": "14/5/32"
+   }
+  ],
   "dps_start": 426.83385867914825,
-  "dps_end": 426.83385867914825,
-  "gain": 0.0,
+  "dps_end": 439.4060304549185,
+  "gain": 0.006301692717911811,
   "tank": true
  }
 }

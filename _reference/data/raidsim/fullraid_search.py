@@ -86,14 +86,18 @@ def race(cls, entry, cands):
     repo = R.repo_path(argparse.Namespace(repo=None))
     tr = R.load_trees(repo, cls)
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
-    ours = [b for b in e.get("builds", []) if b in data]
+    # every raid build of ours of the same spec (the entry's own list leaves out the optimizer's parse builds; 2026-10-01: Enhancement's
+    # +3.8% was +0.2% against its parse build)
+    tree = lead_tree(cls, R.alloc_of(json.load(open(next(iter(cands.values())), encoding="utf-8"))))
+    ours = [b for b, x in data.items() if x.get("content") == "raid" and x.get("role") not in ("healer", "tank")
+            and (b in e.get("builds", []) or (tree and SM.spec_of(cls, x) == tree))]
     bl = [{"label": b, "talents": R.talents_string(tr, R.alloc_of(data[b]))} for b in ours]
     bl += [{"label": f"cand:{k}", "talents": R.talents_string(tr, R.alloc_of(json.load(open(p, encoding="utf-8"))))} for k, p in cands.items()]
     rows = A.bench(e, repo, bl, 20000, 3, "raid", f"fullraid-{cls}-{entry}")
     our_best = max(ours, key=lambda b: (rows.get(b) or {}).get("dps") or 0)
     res = {k: (rows.get(f"cand:{k}") or {}).get("dps") or 0 for k in cands}
     top = max(res, key=res.get) if res else None
-    return {"our_best": our_best, "our_dps": rows[our_best]["dps"], "candidates": res, "top": top,
+    return {"spec_builds": ours, "our_best": our_best, "our_dps": rows[our_best]["dps"], "candidates": res, "top": top,
             "gain": (res[top] / rows[our_best]["dps"] - 1) if top else 0.0}
 
 
@@ -109,6 +113,13 @@ def run_entry(cls, entry, rec):
     r = race(cls, entry, cands) if cands else {}
     r.update({"starts": dict(starts), "files": cands, "date": TODAY})
     r["verdict"] = "new parse build" if r.get("gain", 0) >= MIN_GAIN else "ours stays"
+    # the spec's best full-raid build may live in another entry (another rotation: Marksmanship's Lone Wolf entry): the bar is the best
+    if r["verdict"] == "new parse build":
+        import render_start_here as rs
+        best = max([x["row"].get("raid") or 0 for x in rs.raid_rows(cls) if x["row"]["label"] in (r.get("spec_builds") or [])] + [0])
+        cand = r["candidates"][r["top"]]
+        if best and cand < best * (1 + MIN_GAIN):
+            r["verdict"] = f"ours stays (our best of the spec in any entry: {best:.0f})"
     print(f"== {cls} {entry}: ours {r.get('our_best')} {r.get('our_dps', 0):.0f}; " + ", ".join(f"{k} {v:.0f}" for k, v in r.get("candidates", {}).items())
           + f" -> {r['verdict']} ({r.get('gain', 0):+.1%})", flush=True)
     return r

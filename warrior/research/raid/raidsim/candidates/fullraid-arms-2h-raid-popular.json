@@ -1,0 +1,111 @@
+{
+ "id": "fullraid-arms-2h-raid-popular",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    3
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Cleave",
+    2
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ],
+   [
+    "Improved Execute",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arms-2h-raid from /home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-warrior.json in the raid setting: 622.6 -> 661.1 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-warrior.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "3 points Dual Wield Specialization -> Two-Handed Weapon Specialization",
+    "gain_seed1": 0.029429525000800316,
+    "gain_seed2": 0.029430762191259285,
+    "split": "18/33/0"
+   },
+   {
+    "round": 2,
+    "move": "2 points Dual Wield Specialization -> Impale",
+    "gain_seed1": 0.02113024711552458,
+    "gain_seed2": 0.02104733404439174,
+    "split": "20/31/0"
+   },
+   {
+    "round": 3,
+    "move": "1 point Raging Blows -> Improved Execute",
+    "gain_seed1": 0.009939560891711219,
+    "gain_seed2": 0.010143661684230976,
+    "split": "20/31/0"
+   }
+  ],
+  "dps_start": 622.5861513814942,
+  "dps_end": 661.0645238511311,
+  "gain": 0.0618040931110575,
+  "tank": false
+ }
+}

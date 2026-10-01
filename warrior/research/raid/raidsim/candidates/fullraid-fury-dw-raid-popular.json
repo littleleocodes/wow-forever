@@ -1,0 +1,104 @@
+{
+ "id": "fullraid-fury-dw-raid-popular",
+ "allocation": {
+  "Arms": [
+   [
+    "Improved Heroic Strike",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    2
+   ]
+  ],
+  "Fury": [
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Cleave",
+    2
+   ],
+   [
+    "Boundless Rage",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    5
+   ],
+   [
+    "Raging Blows",
+    1
+   ],
+   [
+    "Enrage",
+    5
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Death Wish",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Bloodthirst",
+    1
+   ],
+   [
+    "Improved Execute",
+    2
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for fury-dw-raid from /home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-warrior.json in the raid setting: 676.7 -> 701.6 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-tf-popular-5-warrior.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Deep Wounds -> Improved Execute",
+    "gain_seed1": 0.035692541690408586,
+    "gain_seed2": 0.0348835325119754,
+    "split": "13/38/0"
+   },
+   {
+    "round": 2,
+    "move": "1 point Improved Heroic Strike -> Deep Wounds",
+    "gain_seed1": 0.002748171792360532,
+    "gain_seed2": 0.0025900190871941398,
+    "split": "13/38/0"
+   }
+  ],
+  "dps_start": 676.6652600759296,
+  "dps_end": 701.5698952637273,
+  "gain": 0.03680495609454382,
+  "tank": false
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": "fullraid-arms-battle-raid-ours",
+ "allocation": {
+  "Arms": [
+   [
+    "Deflection",
+    2
+   ],
+   [
+    "Improved Rend",
+    3
+   ],
+   [
+    "Improved Tactical Mastery",
+    5
+   ],
+   [
+    "Improved Overpower",
+    2
+   ],
+   [
+    "Anger Management",
+    1
+   ],
+   [
+    "Deep Wounds",
+    3
+   ],
+   [
+    "Two-Handed Weapon Specialization",
+    3
+   ],
+   [
+    "Impale",
+    2
+   ],
+   [
+    "Bloodthrill",
+    5
+   ],
+   [
+    "Weaponmaster",
+    5
+   ],
+   [
+    "Improved Slam",
+    1
+   ],
+   [
+    "Spearing Strike",
+    1
+   ],
+   [
+    "Sweeping Strikes",
+    1
+   ],
+   [
+    "Mortal Strike",
+    1
+   ]
+  ],
+  "Fury": [
+   [
+    "Booming Voice",
+    5
+   ],
+   [
+    "Cruelty",
+    5
+   ],
+   [
+    "Unbridled Wrath",
+    5
+   ],
+   [
+    "Improved Execute",
+    1
+   ]
+  ],
+  "Protection": []
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for arms-battle-raid from /home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-arms-battle-raid.json in the raid setting: 618.0 -> 702.8 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-start-arms-battle-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 Improved Slam + 1 Improved Execute -> 1 Sweeping Strikes + 1 Mortal Strike",
+    "gain_seed1": 0.14035604584956407,
+    "gain_seed2": 0.13922840352055066,
+    "split": "35/16/0"
+   }
+  ],
+  "dps_start": 617.9562085692605,
+  "dps_end": 702.8122433666958,
+  "gain": 0.1373172299601948,
+  "tank": false
+ }
+}

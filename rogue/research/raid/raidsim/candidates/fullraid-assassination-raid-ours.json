@@ -1,0 +1,98 @@
+{
+ "id": "fullraid-assassination-raid-ours",
+ "allocation": {
+  "Assassination": [
+   [
+    "Malice",
+    5
+   ],
+   [
+    "Ruthlessness",
+    3
+   ],
+   [
+    "Improved Slice and Dice",
+    3
+   ],
+   [
+    "Relentless Strikes",
+    1
+   ],
+   [
+    "Lethality",
+    4
+   ],
+   [
+    "Vile Poisons",
+    2
+   ],
+   [
+    "Seal Fate",
+    5
+   ],
+   [
+    "Improved Expose Armor",
+    2
+   ],
+   [
+    "Improved Poisons",
+    5
+   ]
+  ],
+  "Combat": [
+   [
+    "Improved Eviscerate",
+    3
+   ],
+   [
+    "Lightning Reflexes",
+    5
+   ],
+   [
+    "Puncturing Wounds",
+    3
+   ],
+   [
+    "Precision",
+    3
+   ],
+   [
+    "Dual Wield Specialization",
+    3
+   ],
+   [
+    "Flawless Execution",
+    1
+   ],
+   [
+    "Deflection",
+    1
+   ]
+  ],
+  "Subtlety": [
+   [
+    "Opportunity",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for assassination-raid from /home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-assassination-seal-fate-raid.json in the raid setting: 651.2 -> 652.5 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-start-assassination-seal-fate-raid.json",
+  "setting": "raid",
+  "kept": [],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Cold Blood -> Lethality",
+    "gain_seed1": 0.0020485276176658296,
+    "gain_seed2": 0.001784104042108492,
+    "split": "30/19/2"
+   }
+  ],
+  "dps_start": 651.2183766852031,
+  "dps_end": 652.4846841699123,
+  "gain": 0.0019445205019472667,
+  "tank": false
+ }
+}

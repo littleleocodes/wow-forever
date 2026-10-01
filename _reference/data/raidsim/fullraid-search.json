@@ -1,0 +1,554 @@
+{
+ "mage": {
+  "frost-raid": {
+   "our_best": "frost-fingers-of-frost-raid",
+   "our_dps": 727.644317819534,
+   "candidates": {
+    "ours": 731.4997344219496,
+    "popular": 702.4275541615108
+   },
+   "top": "ours",
+   "gain": 0.005298490633402819,
+   "starts": {
+    "ours": "frost-fingers-of-frost-raid",
+    "popular": "tf-popular-5-mage"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-frost-raid-ours.json",
+    "popular": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-frost-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "fire-raid": {
+   "our_best": "fire-raid",
+   "our_dps": 728.7888283547727,
+   "candidates": {
+    "ours": 728.7888283547727,
+    "popular": 728.8593137780678
+   },
+   "top": "popular",
+   "gain": 9.671583942116868e-05,
+   "starts": {
+    "ours": "fire-raid",
+    "popular": "tf-popular-4-mage"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-fire-raid-ours.json",
+    "popular": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-fire-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "frostfire-raid": {
+   "our_best": "frostfire-raid",
+   "our_dps": 665.6935576046938,
+   "candidates": {
+    "ours": 665.6935576046938
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "frostfire-raid"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-frostfire-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "arcane-dps": {
+   "our_best": "arcane-blast-raid",
+   "our_dps": 690.7929553814719,
+   "candidates": {
+    "ours": 690.7929553814719,
+    "popular": 677.2230789309981
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "arcane-blast-raid",
+    "popular": "tf-popular-2-mage"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-arcane-dps-ours.json",
+    "popular": "/home/user/wow-forever/mage/research/raid/raidsim/candidates/fullraid-arcane-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "priest": {
+  "shadow-dps": {
+   "our_best": "opt-shadow-dps-raid-dps",
+   "our_dps": 724.6289594917621,
+   "candidates": {
+    "ours": 724.6289594917621,
+    "popular": 708.329713743411
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "opt-shadow-dps-raid-dps",
+    "popular": "tf-popular-1-priest"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-shadow-dps-ours.json",
+    "popular": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-shadow-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "smite-dps": {
+   "our_best": "smite-discipline-raid",
+   "our_dps": 578.8094302349378,
+   "candidates": {
+    "ours": 578.8094302349378,
+    "popular": 577.9934857062908
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "smite-discipline-raid",
+    "popular": "tf-popular-2-priest"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-smite-dps-ours.json",
+    "popular": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-smite-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "warlock": {
+  "fire-destro-raid": {
+   "our_best": "opt-fire-destro-raid-raid-dps",
+   "our_dps": 727.8660771786529,
+   "candidates": {
+    "ours": 735.7420082466415
+   },
+   "top": "ours",
+   "gain": 0.01082057718435947,
+   "starts": {
+    "ours": "opt-fire-destro-raid-raid-dps"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-fire-destro-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "affliction-raid": {
+   "our_best": "opt-affliction-raid-raid-dps",
+   "our_dps": 767.9770204384063,
+   "candidates": {
+    "ours": 769.2916640296764
+   },
+   "top": "ours",
+   "gain": 0.0017118267295546108,
+   "starts": {
+    "ours": "opt-affliction-raid-raid-dps"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-affliction-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "sb-raid": {
+   "our_best": "opt-sb-raid-raid-dps",
+   "our_dps": 757.1132673149425,
+   "candidates": {
+    "ours": 760.4584626465444
+   },
+   "top": "ours",
+   "gain": 0.00441835518675493,
+   "starts": {
+    "ours": "opt-sb-raid-raid-dps"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-sb-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "demonology-raid": {
+   "our_best": "demonology-pact-raid",
+   "our_dps": 820.5562052696868,
+   "candidates": {
+    "ours": 825.3766209501359
+   },
+   "top": "ours",
+   "gain": 0.005874570991593275,
+   "starts": {
+    "ours": "demonology-pact-raid"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-demonology-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "incinerate-raid": {
+   "our_best": "destruction-incinerate-raid",
+   "our_dps": 647.0832195973811,
+   "candidates": {
+    "ours": 649.0122788078247,
+    "popular": 648.936801149626
+   },
+   "top": "ours",
+   "gain": 0.0029811609264784877,
+   "starts": {
+    "ours": "destruction-incinerate-raid",
+    "popular": "tf-popular-2-warlock"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-incinerate-raid-ours.json",
+    "popular": "/home/user/wow-forever/warlock/research/raid/raidsim/candidates/fullraid-incinerate-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "hunter": {
+  "mm-lonewolf-raid": {
+   "our_best": "opt-mm-lonewolf-raid-raid-dps",
+   "our_dps": 851.5019886014392,
+   "candidates": {
+    "ours": 851.5019886014392,
+    "popular": 851.8935370838531
+   },
+   "top": "popular",
+   "gain": 0.00045983272811489506,
+   "starts": {
+    "ours": "opt-mm-lonewolf-raid-raid-dps",
+    "popular": "tf-popular-2-hunter"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-mm-lonewolf-raid-ours.json",
+    "popular": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-mm-lonewolf-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "bm-raid": {
+   "our_best": "mm-hawk-raid",
+   "our_dps": 682.0615638202764,
+   "candidates": {
+    "ours": 682.0615638202764,
+    "popular": 691.311701258188
+   },
+   "top": "popular",
+   "gain": 0.013562027137405064,
+   "starts": {
+    "ours": "mm-hawk-raid",
+    "popular": "tf-popular-4-hunter"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-bm-raid-ours.json",
+    "popular": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-bm-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "mm-raid": {
+   "our_best": "opt-mm-lonewolf-raid-raid-dps",
+   "our_dps": 748.2865705670216,
+   "candidates": {
+    "ours": 778.8664383678554,
+    "popular": 762.8667106819009
+   },
+   "top": "ours",
+   "gain": 0.040866519597781314,
+   "starts": {
+    "ours": "bm-mm-raid",
+    "popular": "tf-popular-2-hunter"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-mm-raid-ours.json",
+    "popular": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-mm-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays (our best of the spec in any entry: 852, mm-lonewolf-raid)"
+  },
+  "melee-dps": {
+   "our_best": "melee-survival-raid",
+   "our_dps": 990.3516971828176,
+   "candidates": {
+    "ours": 990.3516971828176,
+    "popular": 990.3516971828176
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "melee-survival-raid",
+    "popular": "tf-popular-1-hunter"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-melee-dps-ours.json",
+    "popular": "/home/user/wow-forever/hunter/research/raid/raidsim/candidates/fullraid-melee-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "rogue": {
+  "combat-swords-raid": {
+   "our_best": "combat-swords-raid",
+   "our_dps": 649.0984899911023,
+   "candidates": {
+    "ours": 660.150462059254
+   },
+   "top": "ours",
+   "gain": 0.01702664886541827,
+   "starts": {
+    "ours": "combat-swords-raid",
+    "popular": "tf-popular-1-rogue"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-combat-swords-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "assassination-raid": {
+   "our_best": "assassination-seal-fate-raid",
+   "our_dps": 651.2183766852031,
+   "candidates": {
+    "ours": 652.4846841699123
+   },
+   "top": "ours",
+   "gain": 0.0019445205019472667,
+   "starts": {
+    "ours": "assassination-seal-fate-raid",
+    "popular": "tf-popular-5-rogue"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-assassination-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "subtlety-raid": {
+   "our_best": "subtlety-hemo-raid",
+   "our_dps": 629.2437047808761,
+   "candidates": {
+    "ours": 629.2437047808761
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "subtlety-hemo-raid"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-subtlety-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "combat-daggers-raid": {
+   "our_best": "combat-raid",
+   "our_dps": 669.0760464396933,
+   "candidates": {
+    "ours": 671.3808795925888
+   },
+   "top": "ours",
+   "gain": 0.003444799982244229,
+   "starts": {
+    "ours": "combat-daggers-raid",
+    "popular": "tf-popular-5-rogue"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/rogue/research/raid/raidsim/candidates/fullraid-combat-daggers-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "warrior": {
+  "arms-2h-raid": {
+   "our_best": "opt-arms-2h-raid-raid-dps",
+   "our_dps": 658.1186730940467,
+   "candidates": {
+    "ours": 661.0645238511311,
+    "popular": 661.0645238511311
+   },
+   "top": "ours",
+   "gain": 0.004476169538291552,
+   "starts": {
+    "ours": "opt-arms-2h-raid-raid-dps",
+    "popular": "tf-popular-5-warrior"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-arms-2h-raid-ours.json",
+    "popular": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-arms-2h-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "fury-dw-raid": {
+   "our_best": "opt-fury-dw-raid-raid-dps",
+   "our_dps": 701.5698952637273,
+   "candidates": {
+    "ours": 701.5698952637273,
+    "popular": 701.5698952637273
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "opt-fury-dw-raid-raid-dps",
+    "popular": "tf-popular-5-warrior"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-fury-dw-raid-ours.json",
+    "popular": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-fury-dw-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "arms-battle-raid": {
+   "our_best": "arms-community-parse",
+   "our_dps": 703.6385267855143,
+   "candidates": {
+    "ours": 702.8122433666958,
+    "popular": 703.6385267855143
+   },
+   "top": "popular",
+   "gain": 0.0,
+   "starts": {
+    "ours": "arms-battle-raid",
+    "popular": "tf-popular-2-warrior"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-arms-battle-raid-ours.json",
+    "popular": "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/fullraid-arms-battle-raid-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "paladin": {
+  "ret-dps": {
+   "our_best": "ret-raid-dps",
+   "our_dps": 957.223155741396,
+   "candidates": {
+    "ours": 957.223155741396
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "ret-raid-dps",
+    "popular": "tf-popular-2-paladin"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/fullraid-ret-dps-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "seal-of-fury-raid": {
+   "our_best": "ret-raid-dps",
+   "our_dps": 794.0844420721173,
+   "candidates": {
+    "ours": 794.0844420721173
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "ret-raid-dps",
+    "popular": "tf-popular-2-paladin"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/paladin/research/raid/raidsim/candidates/fullraid-seal-of-fury-raid-ours.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "shockadin-raid": null
+ },
+ "shaman": {
+  "elemental-dps": {
+   "our_best": "opt-elemental-dps-raid-dps",
+   "our_dps": 534.6989619467104,
+   "candidates": {
+    "ours": 533.3914771093366,
+    "popular": 505.8915307017331
+   },
+   "top": "ours",
+   "gain": -0.0024452728178365746,
+   "starts": {
+    "ours": "elemental-raid-dps",
+    "popular": "tf-popular-4-shaman"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-elemental-dps-ours.json",
+    "popular": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-elemental-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "stormcaller-dps": null,
+  "enhancement-dps": {
+   "our_best": "opt-enhancement-dps-parse",
+   "our_dps": 731.1742462489033,
+   "candidates": {
+    "ours": 732.9110868236569,
+    "popular": 732.9110868236569
+   },
+   "top": "ours",
+   "gain": 0.002375412678529143,
+   "starts": {
+    "ours": "opt-enhancement-dps-raid-dps",
+    "popular": "tf-popular-5-shaman"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-enhancement-dps-ours.json",
+    "popular": "/home/user/wow-forever/shaman/research/raid/raidsim/candidates/fullraid-enhancement-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ },
+ "druid": {
+  "balance-dps": {
+   "our_best": "balance-moonkin-raid",
+   "our_dps": 616.7455214237345,
+   "candidates": {
+    "ours": 616.7455214237345,
+    "popular": 616.7455214237345
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "balance-moonkin-raid",
+    "popular": "tf-popular-3-druid"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-balance-dps-ours.json",
+    "popular": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-balance-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  },
+  "feral-cat-dps": {
+   "our_best": "opt-feral-cat-dps-raid-dps",
+   "our_dps": 576.8687267200099,
+   "candidates": {
+    "ours": 576.8687267200099,
+    "popular": 576.8687267200099
+   },
+   "top": "ours",
+   "gain": 0.0,
+   "starts": {
+    "ours": "opt-feral-cat-dps-raid-dps",
+    "popular": "tf-popular-2-druid"
+   },
+   "files": {
+    "ours": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-feral-cat-dps-ours.json",
+    "popular": "/home/user/wow-forever/druid/research/raid/raidsim/candidates/fullraid-feral-cat-dps-popular.json"
+   },
+   "date": "2026-10-01",
+   "verdict": "ours stays"
+  }
+ }
+}

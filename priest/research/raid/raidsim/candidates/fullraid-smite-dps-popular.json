@@ -1,0 +1,104 @@
+{
+ "id": "fullraid-smite-dps-popular",
+ "allocation": {
+  "Discipline": [
+   [
+    "Power in Light",
+    5
+   ],
+   [
+    "Wand Specialization",
+    2
+   ],
+   [
+    "Twin Disciplines",
+    5
+   ],
+   [
+    "Silent Resolve",
+    3
+   ],
+   [
+    "Holy Precision",
+    3
+   ],
+   [
+    "Mental Agility",
+    3
+   ],
+   [
+    "Inner Focus",
+    1
+   ],
+   [
+    "Meditation",
+    3
+   ],
+   [
+    "Mental Strength",
+    5
+   ],
+   [
+    "Penance",
+    1
+   ],
+   [
+    "Power Infusion",
+    1
+   ]
+  ],
+  "Holy": [
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Holy Specialization",
+    5
+   ],
+   [
+    "Spell Warding",
+    1
+   ],
+   [
+    "Divine Fury",
+    5
+   ],
+   [
+    "Holy Nova",
+    1
+   ],
+   [
+    "Searing Light",
+    2
+   ]
+  ],
+  "Shadow": [
+   [
+    "Shadow Focus",
+    2
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-10-01) for smite-dps from /home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-priest.json in the raid setting: 576.4 -> 578.0 DPS on a third seed.",
+ "search": {
+  "start": "/home/user/wow-forever/priest/research/raid/raidsim/candidates/fullraid-start-tf-popular-2-priest.json",
+  "setting": "raid",
+  "kept": [
+   "Inner Focus"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "2 points Holy Reach -> Shadow Focus",
+    "gain_seed1": 0.0028945891991056794,
+    "gain_seed2": 0.0026498086557520395,
+    "split": "32/17/2"
+   }
+  ],
+  "dps_start": 576.4373066105447,
+  "dps_end": 577.9934857062908,
+  "gain": 0.002699650209831761,
+  "tank": false
+ }
+}
