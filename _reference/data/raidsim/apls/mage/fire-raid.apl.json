@@ -35,7 +35,7 @@
          },
          "rhs": {
           "const": {
-           "val": "5s"
+           "val": "6s"
           }
          }
         }
@@ -48,7 +48,8 @@
       "spellId": 10207
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -193,6 +194,30 @@
     }
    },
    "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see fire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 143,
+      "rank": 2
+     }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "3s"
+       }
+      }
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fire-raid-rotation-search.json)"
   },
   {
    "action": {

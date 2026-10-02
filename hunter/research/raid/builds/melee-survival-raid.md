@@ -74,34 +74,41 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 
 ## Rank among our builds and the community simulator's
 
-**3 of 3** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 4** for `melee-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 445 | +0.0% | 967 | -2.4% | 12 s |
-| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 429 | -3.5% | 965 | -2.6% | 13 s |
-| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 428 | -3.8% | 991 | +0.0% | 37 s |
+| 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 450 | +0.0% | 967 | -2.4% | 12 s |
+| 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 430 | -4.5% | 965 | -2.6% | 9 s |
+| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | -0.0% | 47 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/11/35 | 336 | -25.3% | 991 | +0.0% | 124 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 428 -> 459 DPS (+7.3%)):
-  1. insert before the filler: cast Wing Clip (+7.4%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 1 changes to the base rotation; third-seed check: melee-survival-raid 893 -> 985 DPS (+10.3%)):
-  1. insert before the filler: cast Wing Clip (+10.3%)
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 3 passes, the last 2026-10-02, 5 changes to the base rotation; third-seed check: ml: Survival 318 -> 449 DPS (+41.5%)):
+  1. insert before the filler: cast Wing Clip (+7.4%, pass 1)
+  2. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+14.3%, pass 2)
+  3. insert in the middle: cast Major Mana Potion (+0.4%, pass 3)
+  4. move to the top: cast Immolation Trap (+0.5%, pass 3)
+  5. move to the top: cast Raptor Strike (+0.3%, pass 3)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 3 passes, the last 2026-10-02, 2 changes to the base rotation; third-seed check: ml: Survival 713 -> 968 DPS (+35.9%)):
+  1. insert before the filler: cast Wing Clip (+10.3%, pass 1)
+  2. spell probe: insert in the middle: if auraIsInactive: cast Summon Hawk (+15.0%, pass 2)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`melee-survival-raid`](melee-survival-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Aspect of the Beast | 0.3 |
-| 2 | use every other cooldown when ready | as ready |
-| 3 | cast Mongoose Bite | 11.4 |
-| 4 | cast Strider Kick | 5.7 |
-| 5 | cast Raptor Strike | 18.4 |
-| 6 | cast Immolation Trap | 2.7 |
-| 7 | cast Wing Clip | 19.4 |
+| 1 | cast Raptor Strike | 18.9 |
+| 2 | cast Immolation Trap | 2.8 |
+| 3 | cast Aspect of the Beast | 0.3 |
+| 4 | use every other cooldown when ready | as ready |
+| 5 | cast Mongoose Bite | 10.6 |
+| 6 | cast Major Mana Potion | as ready |
+| 7 | cast Strider Kick | 5.1 |
+| 8 | cast Wing Clip | 19.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
@@ -109,8 +116,8 @@ Damage by ability:
 |---|---|
 | Auto Attack | 46% |
 | Raptor Strike | 16% |
-| Mongoose Bite | 14% |
-| Immolation Trap | 10% |
+| Mongoose Bite | 13% |
+| Immolation Trap | 11% |
 | Strider Kick | 7% |
 | Wing Clip | 5% |
 | Dragonbreath Chili | 3% |

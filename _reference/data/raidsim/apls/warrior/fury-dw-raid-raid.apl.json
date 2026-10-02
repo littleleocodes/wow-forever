@@ -84,7 +84,7 @@
          },
          "rhs": {
           "const": {
-           "val": "30s"
+           "val": "45s"
           }
          }
         }
@@ -110,7 +110,8 @@
       "spellId": 12328
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "hide": true,
@@ -406,39 +407,21 @@
   {
    "action": {
     "condition": {
-     "or": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "30s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "140s"
-          }
-         }
-        }
+     "cmp": {
+      "op": "OpLe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "45s"
        }
-      ]
+      }
      }
     },
     "autocastOtherCooldowns": {}
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -521,7 +504,7 @@
       },
       "rhs": {
        "const": {
-        "val": "1.5s"
+        "val": "0s"
        }
       }
      }
@@ -532,7 +515,8 @@
       "tag": 1
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fury-dw-raid-rotation-search.json)"
   },
   {
    "action": {

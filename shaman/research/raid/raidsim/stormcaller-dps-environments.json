@@ -2,12 +2,12 @@
  "class": "shaman",
  "spec": "stormcaller-dps",
  "game": "forever",
- "date": "2026-09-30",
+ "date": "2026-10-02",
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "gear_raid": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
-  "gear_max": "/home/user/wow-forever/_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
+  "gear_max": "F:\\wow-forever\\_reference\\data\\raidsim\\gear_sets\\forever\\shaman-elemental-phase_1.p1opt.gear.json",
   "iterations": 3000,
   "seed": 1
  },
@@ -75,20 +75,20 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 409.12700720418854,
-    "dummy60": 503.9155125486702,
-    "ladder-mana": 424.3307571029845,
-    "ladder-armor": 424.3307571029845,
-    "ladder-physical": 432.4809446637628,
-    "ladder-spell": 484.13372426480663,
-    "raid": 536.732057918816,
-    "curve60": 449.486449297681,
-    "curve120": 434.5226946785364,
-    "curve180": 409.12700720418854,
-    "curve240": 409.9426868190209,
-    "curve360": 394.8098292806796,
-    "max": 536.732057918816,
-    "max60": 556.0655964669274
+    "dummy": 409.1270072041883,
+    "dummy60": 503.91551254867016,
+    "ladder-mana": 424.33075710298465,
+    "ladder-armor": 424.33075710298465,
+    "ladder-physical": 432.4809446637631,
+    "ladder-spell": 484.13372426480646,
+    "raid": 536.7320579188157,
+    "curve60": 449.4864492976811,
+    "curve120": 434.52269467853637,
+    "curve180": 409.1270072041883,
+    "curve240": 409.9426868190207,
+    "curve360": 394.80982928067965,
+    "max": 536.7320579188157,
+    "max60": 556.0655964669277
    }
   }
  ]

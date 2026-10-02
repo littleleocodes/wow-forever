@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.apl.json",
   "builds": [
    {
+    "label": "ml: Hybrid Fire/Frost",
+    "talents": "012-23550100130123051-005500033",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
+   },
+   {
     "label": "frostfire-raid",
-    "talents": "-03552020130133151-005500033"
+    "talents": "002-23550000130133151-005500033"
    }
   ],
   "iterations": 3000,
@@ -64,28 +69,93 @@
     "gain_seed2": 0.0015928591115876856,
     "candidates": 279,
     "pass": 2
+   },
+   {
+    "round": 7,
+    "change": "move down below 'if mana % \u2265 10%: cast Frostfire Bolt': cast Fire Blast",
+    "gain_seed1": 0.06541197346551808,
+    "gain_seed2": 0.06367408748460024,
+    "candidates": 382,
+    "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "only with 6s or more of the fight left: if mana % \u2265 10%: cast Frostfire Bolt",
+    "gain_seed1": 0.010967558411325573,
+    "gain_seed2": 0.01086604684660264,
+    "candidates": 382,
+    "pass": 4
+   },
+   {
+    "round": 9,
+    "change": "insert in the middle: cast Mana Citrine",
+    "gain_seed1": 0.005095611494118302,
+    "gain_seed2": 0.005324610894564152,
+    "candidates": 393,
+    "pass": 4
+   },
+   {
+    "round": 10,
+    "change": "threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast",
+    "gain_seed1": 0.002254071283584791,
+    "gain_seed2": 0.0033252011598035036,
+    "candidates": 400,
+    "pass": 4
+   },
+   {
+    "round": 11,
+    "change": "insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast",
+    "gain_seed1": 0.006585968711067869,
+    "gain_seed2": 0.005858645583262323,
+    "candidates": 401,
+    "pass": 4
+   },
+   {
+    "round": 12,
+    "change": "only with 20s or more of the fight left: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 6s): cast Scorch",
+    "gain_seed1": 0.0029824477276185757,
+    "gain_seed2": 0.0027015148032139003,
+    "candidates": 429,
+    "pass": 4
+   },
+   {
+    "round": 13,
+    "change": "insert in the middle: cast Combustion",
+    "gain_seed1": 0.002569240571571152,
+    "gain_seed2": 0.002549378575366301,
+    "candidates": 439,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "frostfire-raid": {
-     "before": 503.63349262933906,
-     "after": 513.2773742797098,
-     "base": 503.63349262933906,
+    "ml: Hybrid Fire/Frost": {
+     "before": 556.6343013110367,
+     "after": 612.3948928190599,
+     "base": 556.6343013110367,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.5831368499999976,
-     "oom_after": 0.5831368499999976
+     "oom_before": 0.7112911999974998,
+     "oom_after": 0.0020025999999999998
+    },
+    "frostfire-raid": {
+     "before": 551.7395983875488,
+     "after": 616.2296912551103,
+     "base": 551.7395983875488,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.0352599499973987,
+     "oom_after": 0.04697885
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "mage",
   "spec": "frostfire-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -93,8 +163,13 @@
   "start": "_reference\\data\\raidsim\\apls\\mage\\frostfire-raid.base.apl.json",
   "builds": [
    {
+    "label": "ml: Hybrid Fire/Frost",
+    "talents": "012-23550100130123051-005500033",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json"
+   },
+   {
     "label": "frostfire-raid",
-    "talents": "-03552020130133151-005500033"
+    "talents": "002-23550000130133151-005500033"
    }
   ],
   "iterations": 3000,
@@ -123,22 +198,87 @@
     "gain_seed2": 0.003466820922335856,
     "candidates": 263,
     "pass": 3
+   },
+   {
+    "round": 4,
+    "change": "drop: cast Fire Blast",
+    "gain_seed1": 0.023975068162498614,
+    "gain_seed2": 0.025484314532707497,
+    "candidates": 362,
+    "pass": 5
+   },
+   {
+    "round": 5,
+    "change": "threshold 5s -> 10s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.02052563150952791,
+    "gain_seed2": 0.022410872293892936,
+    "candidates": 348,
+    "pass": 5
+   },
+   {
+    "round": 6,
+    "change": "threshold 82.5 -> 165: if mana \u2265 (time left in the fight \u00d7 82.5): cast Fire Blast",
+    "gain_seed1": 0.014915642922185945,
+    "gain_seed2": 0.015711082115490438,
+    "candidates": 348,
+    "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "threshold 10s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 10s): cast Scorch",
+    "gain_seed1": 0.012555512558207083,
+    "gain_seed2": 0.00963153755301338,
+    "candidates": 352,
+    "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "threshold 165 -> 330: if mana \u2265 (time left in the fight \u00d7 165): cast Fire Blast",
+    "gain_seed1": 0.004244696685697935,
+    "gain_seed2": 0.005053034536189216,
+    "candidates": 352,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast",
+    "gain_seed1": 0.004751736389190464,
+    "gain_seed2": 0.0027615618843279677,
+    "candidates": 352,
+    "pass": 5
+   },
+   {
+    "round": 10,
+    "change": "insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast",
+    "gain_seed1": 0.0056481364467515505,
+    "gain_seed2": 0.0061546281333924036,
+    "candidates": 353,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "frostfire-raid": {
-     "before": 586.3221742235393,
-     "after": 590.1262194681215,
-     "base": 586.3221742235393,
+    "ml: Hybrid Fire/Frost": {
+     "before": 670.0485484777623,
+     "after": 726.9331803435538,
+     "base": 670.0485484777623,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
+     "oom_before": 0.10501214999809995,
+     "oom_after": 0
+    },
+    "frostfire-raid": {
+     "before": 664.1622592644118,
+     "after": 723.4882367164972,
+     "base": 664.1622592644118,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.11245644999950001,
      "oom_after": 0
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  }
 }

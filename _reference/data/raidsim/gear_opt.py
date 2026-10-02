@@ -9,8 +9,11 @@ says it beats the current one:
 
 1. Pool: items that drop in 5-man dungeons, Molten Core, Onyxia's Lair or the open world, plus crafted items and quest rewards;
    items with no source listed (custom, later-phase quest and PvP rewards) only when a phase-1, launch or pre-raid community preset
-   uses them; no Blackwing Lair, Zul'Gurub, Ahn'Qiraj or Naxxramas, no world-boss drops (Azuregos, Kazzak and the Dragons of Nightmare came in phase 2 and later), no legendaries (the item database's own
-   `phase` field puts Ahn'Qiraj in phase 1, so the source decides). The class must be allowed (classAllowlist), armor no heavier
+   uses them (item level 70 at most, except the phase-1 class quest rewards in `PHASE1_QUEST`: the hunter's Molten Core bow and stave);
+   no Blackwing Lair, Zul'Gurub, Ahn'Qiraj or Naxxramas, no world-boss drops (Azuregos, Kazzak and the Dragons of Nightmare came in
+   phase 2 and later) or Scourge Invasion bosses (`EVENT_NPCS`), no legendaries, no crafted items made from later raids' materials
+   (`LATER_PREFIXES`: Zul'Gurub's Bloodvine and hides, Ahn'Qiraj's Cenarion recipes and obsidian, Naxxramas's frost sets) (the item
+   database's own `phase` field puts Ahn'Qiraj in phase 1, so the source decides). The class must be allowed (classAllowlist), armor no heavier
    than the class wears at 60, weapons of a type the class's presets use, in the same weapon setup as the current set (two-hander,
    dual wield, one-hander + off-hand or shield, the same ranged or relic type).
 2. Stat weights: the simulator's own (bench `statweights`, the entry's rotation and setting, the group's best build of ours);
@@ -19,7 +22,10 @@ says it beats the current one:
    on-use or proc effect, which stat weights cannot value); trinkets are raced in the simulator from every trinket in the class's
    presets, and relics (idol, libram, totem) stay.
 4. Race: the current set and both variants on each entry's best build (seed 1), the leader confirmed on seed 2 with more iterations;
-   a new set is kept only when it wins by more than --min-gain on the average of the group's entries.
+   a new set is kept only when it wins by more than --min-gain on the average of the group's entries. A current item outside the pool
+   never competes or stays as a set piece, and a current set holding one does not race (fixed 2026-10-01: the 2026-09-30 sets kept the
+   current items of slots where nothing beat them and every current set piece, so the hunter and Retribution sets carried Zul'Gurub's
+   Bloodvine pieces and Enhancement Sulfuras).
 Enchants stay as the current set has them. Tanks keep their sets (their ranking is relative to their own hand draft); healers are
 not in the simulator. Writes `raidsim/gear_sets/forever/<group>.p1opt.gear.json` and a record `raidsim/gear-opt.json`; --apply points
 the group's specs.json entries at the new sets (with `gear_note`).
@@ -50,6 +56,9 @@ RAID_OK = {"Molten Core", "Onyxia's Lair"}
 RAID_NO = {"Blackwing Lair", "Zul'Gurub", "Ahn'Qiraj", "Ruins of Ahn'Qiraj", "Naxxramas", "Temple of Ahn'Qiraj"}
 SOURCELESS_MAX_ILVL = 70
 WORLD_BOSSES = {6109, 12397, 14887, 14888, 14889, 14890}
+# the Scourge Invasion's bosses (Sever, Balzaphon, Lady Falther'ess, Revanchion, Scorn, Lord Blackwood): an event of Classic's last phase that
+# no community launch or phase-1 preset uses (2026-10-02: the Staff of Balzaphon had entered the Balance druid's pre-BiS set)
+EVENT_NPCS = {14682, 14684, 14686, 14690, 14693, 14695}
 ARMOR_MAX = {"warrior": 4, "paladin": 4, "hunter": 3, "shaman": 3, "rogue": 2, "druid": 2, "mage": 1, "priest": 1, "warlock": 1}
 CLASS_ID = {"warrior": 1, "paladin": 2, "hunter": 3, "rogue": 4, "priest": 5, "shaman": 7, "mage": 8, "warlock": 9, "druid": 11}
 SLOT_TYPE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 12, 12, 13, 13, 14]   # ItemSlot index -> ItemType
@@ -62,8 +71,23 @@ def load_db(repo):
     return {i["id"]: i for i in db["items"]}, zones
 
 
+# crafted items made from later raids' materials or later reputations (our list, 2026-10-01; the database has the recipe, not its
+# materials): Zul'Gurub's Bloodvine and hides, Ahn'Qiraj's Cenarion Circle recipes and obsidian, Naxxramas's frost-resistance sets
+LATER_PREFIXES = ("Bloodvine", "Blood Tiger", "Primal Batskin", "Bloodsoul", "Darksoul", "Dreamscale", "Bramblewood", "Ironvine", "Sylvan",
+                  "Gaea's Embrace", "Sandstalker", "Spitfire", "Glacial", "Icebane", "Icy Scale", "Polar", "Heavy Obsidian", "Light Obsidian",
+                  "Jagged Obsidian", "Obsidian Mail", "Thick Obsidian", "Black Grasp of the Destroyer")
+# phase-1 class quest rewards the database lists without a source, above the sourceless item-level cap: the hunter's Molten Core quest
+# (Ancient Petrified Leaf from Majordomo's cache, 2026-10-01); every raiding hunter gets one, so they belong in a phase-1 set
+PHASE1_QUEST = {"Rhok'delar, Longbow of the Ancient Keepers", "Lok'delar, Stave of the Ancient Keepers"}
+
+
+def later_craft(it):
+    srcs = it.get("sources") or []
+    return bool(srcs) and all(s.get("crafted") for s in srcs) and it.get("name", "").startswith(LATER_PREFIXES)
+
+
 def in_pool(it, zones):
-    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2:
+    if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or later_craft(it):
         return False
     so = it.get("scalingOptions", {}).get("0", {})
     zs = {zones.get(s.get("drop", {}).get("zoneId")) for s in it.get("sources", []) if s.get("drop")}
@@ -71,10 +95,10 @@ def in_pool(it, zones):
     if zs & RAID_NO and not zs - RAID_NO:
         return False
     npcs = {s.get("drop", {}).get("npcId") for s in it.get("sources", []) if s.get("drop")}
-    if npcs and npcs <= WORLD_BOSSES:   # Classic phase 2 and later (Azuregos, Kazzak, the Dragons of Nightmare)
+    if npcs and npcs <= WORLD_BOSSES | EVENT_NPCS:   # Classic phase 2 and later (Azuregos, Kazzak, the Dragons of Nightmare; the Scourge Invasion)
         return False
     if not it.get("sources"):   # no source listed (custom, later-phase quest or PvP rewards): only items a phase-1 community preset uses
-        return it["id"] in VETTED and so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL
+        return it["id"] in VETTED and (so.get("ilvl", 0) <= SOURCELESS_MAX_ILVL or it.get("name") in PHASE1_QUEST)
     return True
 
 
@@ -210,15 +234,15 @@ def optimize(gear, members, repo, db, zones, a):
             if slot == 15 and new[14].get("id") and db.get(new[14]["id"], {}).get("handType") == 4:
                 new[15] = {}
                 continue
-            if keep_special and curit and (curit.get("setName") or curit.get("itemEffects")):
+            if keep_special and curit and in_pool(curit, zones) and (curit.get("setName") or curit.get("itemEffects")):
                 used.add(curx.get("id"))
                 continue
             if not curit and slot not in (15,):
                 continue
             cands = [it for it in db.values() if fits(it, slot, curit) and it["id"] not in used]
-            if curit:
+            if curit and in_pool(curit, zones):
                 cands.append(curit)
-            best = max(cands, key=lambda it: value(it, w, slot)) if cands else curit
+            best = max(cands, key=lambda it: value(it, w, slot)) if cands else curit   # an empty pool keeps the current item
             if best and best["id"] != curx.get("id"):
                 ench = curx.get("enchant")
                 new[slot] = {"id": best["id"], **({"enchant": ench} if ench else {})}
@@ -261,16 +285,22 @@ def optimize(gear, members, repo, db, zones, a):
     tbest = max(tr, key=tr.get)
     pair = cur_pair if tbest == "cur" else pairs[int(tbest[1:])]
     v1, v2 = with_trinkets(v1, pair), with_trinkets(v2, pair)
-    sets = {"current": cur_items, "all-slots": v1, "keep-sets-and-effects": v2}
+    in_tier = all(in_pool(db[x["id"]], zones) for x in cur_items if x.get("id") in db)
+    sets = ({"current": cur_items} if in_tier else {}) | {"all-slots": v1, "keep-sets-and-effects": v2}
     r1 = race(sets, a.iterations, 1)
     lead = max(r1, key=r1.get)
-    r2 = race({"current": cur_items, lead: sets[lead]}, a.confirm, 2) if lead != "current" else {"current": 1.0}
+    ref = "current" if in_tier else ("keep-sets-and-effects" if lead == "all-slots" else "all-slots")
+    r2 = race({ref: sets[ref], lead: sets[lead]}, a.confirm, 2) if lead != ref else {ref: 1.0}
     gain = r2.get(lead, 1.0) - 1
-    keep = lead != "current" and gain > a.min_gain
+    if not in_tier:   # the current set is out of the pool: the better variant replaces it whatever the margin
+        lead = lead if gain > 0 else ref
+        gain = max(gain, 0.0)
+    keep = lead != "current" and (gain > a.min_gain or not in_tier)
     ilvl = lambda items: sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in items if x.get("id") in db) / max(1, sum(1 for x in items if x.get("id") in db))  # noqa: E731
     return {"gear": gear, "members": [f"{c}/{n}" for c, n in members], "evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals],
             "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6}, "trinkets": [db[i]["name"] for i in pair if i in db],
             "race_seed1": r1, "confirm_seed2": r2, "chosen": lead if keep else "current", "gain": gain if keep else 0.0,
+            "current_in_pool": in_tier,
             "ilvl_before": round(ilvl([x for x in cur_items if x]), 1), "ilvl_after": round(ilvl([x for x in (sets[lead] if keep else cur_items) if x]), 1),
             "items": [x for x in (sets[lead] if keep else cur_items)], "changed": [
                 {"slot": s, "from": db.get(cur_items[s].get("id"), {}).get("name"), "to": db.get(sets[lead][s].get("id"), {}).get("name")}
@@ -319,12 +349,12 @@ def main():
     text = sp.read_text(encoding="utf-8")
     SETS.mkdir(parents=True, exist_ok=True)
     for gear, r in rec.items():
-        if r["chosen"] == "current":
+        if r["chosen"] == "current" or f'"gear": "{gear}"' not in text:   # kept, or a record of a set no entry uses any more
             continue
         cls = r["members"][0].split("/")[0]
         gp = pathlib.Path(gear)   # ui/specs/<class>/<spec>/gear_sets/<name>: the spec folder keeps sets of one class apart
         spec_dir = gp.parent.parent.name if gp.parent.name == "gear_sets" else "project"
-        name = f"{cls}-{spec_dir}-{gp.name.split('.')[0]}.p1opt.gear.json"
+        name = gp.name if gp.name.endswith(".p1opt.gear.json") else f"{cls}-{spec_dir}-{gp.name.split('.')[0]}.p1opt.gear.json"   # re-runs: in place
         (SETS / name).write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
         new = f"_reference/data/raidsim/gear_sets/forever/{name}"
         text = text.replace(f'"gear": "{gear}"', f'"gear": "{new}"')

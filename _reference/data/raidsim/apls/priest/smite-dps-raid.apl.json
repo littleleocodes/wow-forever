@@ -25,30 +25,6 @@
   },
   {
    "action": {
-    "strictSequence": {
-     "actions": [
-      {
-       "castSpell": {
-        "spellId": {
-         "spellId": 14751
-        }
-       }
-      },
-      {
-       "castSpell": {
-        "spellId": {
-         "spellId": 19280,
-         "rank": 6
-        }
-       }
-      }
-     ]
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
-  },
-  {
-   "action": {
     "condition": {
      "and": {
       "vals": [
@@ -85,6 +61,30 @@
       "spellId": 10894,
       "rank": 8
      }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "strictSequence": {
+     "actions": [
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 14751
+        }
+       }
+      },
+      {
+       "castSpell": {
+        "spellId": {
+         "spellId": 19280,
+         "rank": 6
+        }
+       }
+      }
+     ]
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
@@ -161,6 +161,30 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "currentManaPercent": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "40%"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10934,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -313,6 +337,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 15473
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   }
  ]
 }

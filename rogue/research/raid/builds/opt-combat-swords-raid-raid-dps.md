@@ -72,18 +72,24 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 | 6 | *Assassination Mutilate 31/20/0* | community simulator | - | 340 | -13.6% | 618 | -11.2% | 0 s |
 | 7 | *Mutilate* | community simulator | - | 330 | -16.3% | 608 | -12.6% | 0 s |
 | 8 | *Backstab* | community simulator | - | 319 | -19.0% | 621 | -10.7% | 0 s |
-| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 271 | -31.2% | 520 | -25.3% | 0 s |
+| 9 | *Subtlety Hemo 15/0/36* | community simulator | - | 302 | -23.4% | 536 | -23.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: combat-swords-raid 337 -> 401 DPS (+18.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-01, 8 changes to the base rotation; third-seed check: ):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+9.7%, pass 1)
   2. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.4%, pass 1)
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.8%, pass 2)
   5. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.9%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 1 changes to the base rotation; third-seed check: combat-swords-raid 698 -> 700 DPS (+0.3%)):
+  6. spell probe: insert before the filler: cast Hemorrhage (+13.1%, pass 4)
+  7. spell probe: insert in the middle: cast Mutilate (+1.2%, pass 4)
+  8. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.2%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-01, 4 changes to the base rotation; third-seed check: ):
   1. threshold 5 -> 2.5: if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.5%, pass 1)
+  2. spell probe: insert before the filler: cast Mutilate (+0.6%, pass 4)
+  3. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 4)
+  4. spell probe: insert at the top: cast Hemorrhage (+8.6%, pass 4)
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-combat-swords-raid-raid-dps`](opt-combat-swords-raid-raid-dps.md) casts/min |
 |---|---|---|
@@ -93,6 +99,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-s
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 |
 | 6 | cast Sinister Strike | 16.7 |
+
+Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 

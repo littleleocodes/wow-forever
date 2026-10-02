@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +102.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `parse`: score +100.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -36,9 +36,9 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 | **Blood Frenzy** | 2/2 | changed | Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point. |
 | **Shredding Attacks** | 3/3 | **NEW** | Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3. |
 | **Predatory Strikes** | 3/3 | changed | Increases your melee Attack Power in Cat Form, Bear Form, and Dire Bear Form by 150% of your level. |
-| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
 | **King of the Jungle** | 3/3 | **NEW** | Tiger's Fury now instantly grants you 60 Energy. |
 | **Predatory Instincts** | 2/2 | **NEW** | Increases the critical strike damage bonus of your melee abilities by 20%. |
+| **Leader of the Pack** | 1/1 | changed | While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura. |
 | **Rend and Tear** | 5/5 | **NEW** | Increases damage done by your melee abilities on Bleeding targets by 10%. |
 | **Berserk** | 1/1 | **NEW** | Causes your Primal Bite ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec. |
 
@@ -51,14 +51,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Core talents (priority order)
 
-1. **Shredding Attacks** — Removing it costs 34.3 points of score in this model.
-2. **King of the Jungle** — Removing it costs 17.4 points of score in this model.
-3. **Blood Frenzy** — Removing it costs 15.1 points of score in this model.
-4. **Sharpened Claws** — Removing it costs 10.7 points of score in this model.
-5. **Rend and Tear** — Removing it costs 10.1 points of score in this model.
-6. **Berserk** — Removing it costs 7.2 points of score in this model.
-7. **Predatory Strikes** — Removing it costs 6.5 points of score in this model.
-8. **Predatory Instincts** — Removing it costs 6.2 points of score in this model.
+1. **Shredding Attacks** — Removing it costs 34.0 points of score in this model.
+2. **King of the Jungle** — Removing it costs 17.2 points of score in this model.
+3. **Blood Frenzy** — Removing it costs 15.0 points of score in this model.
+4. **Sharpened Claws** — Removing it costs 10.6 points of score in this model.
+5. **Rend and Tear** — Removing it costs 10.0 points of score in this model.
+6. **Predatory Strikes** — Removing it costs 6.4 points of score in this model.
+7. **Savage Fury** — Removing it costs 6.1 points of score in this model.
+8. **Predatory Instincts** — Removing it costs 6.1 points of score in this model.
 
 ## Rotation
 

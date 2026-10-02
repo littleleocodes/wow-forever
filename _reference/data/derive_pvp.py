@@ -136,9 +136,8 @@ def main():
             data["builds"].append(build_of(cls, tree, r, hands, best_hand))
         if a.write:
             bp.write_text(dumps(data) + "\n", encoding="utf-8")
-    import fcntl   # classes run in parallel processes: merge under a lock
-    with open(OUT.with_suffix(".lock"), "w") as lk:
-        fcntl.flock(lk, fcntl.LOCK_EX)
+    from filelock import locked   # classes run in parallel processes: merge under a lock
+    with locked(OUT.with_suffix(".lock")):
         old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
         old.update(res)
         OUT.write_text(json.dumps(old, indent=1) + "\n", encoding="utf-8")

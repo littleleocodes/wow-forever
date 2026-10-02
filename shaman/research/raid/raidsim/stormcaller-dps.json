@@ -3,7 +3,7 @@
  "spec": "stormcaller-dps",
  "game": "forever",
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "shaman/elemental",
   "gear": "_reference/data/raidsim/gear_sets/forever/shaman-elemental-phase_1.p1opt.gear.json",
@@ -29,7 +29,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-09-30",
+ "date": "2026-10-02",
  "results": [
   {
    "label": "sim preset: Stormcaller 28/23/0",
@@ -37,39 +37,39 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "20554": 1.0,
-    "15208": 1.0,
     "10392": 23.405333333333335,
-    "29228": 15.781,
-    "10605": 7.504666666666667,
     "10438": 2.1353333333333335,
-    "529": 64.44333333333333
+    "20554": 1.0,
+    "529": 64.44333333333333,
+    "15208": 1.0,
+    "29228": 15.781,
+    "10605": 7.504666666666667
    },
    "casts": {
-    "Berserking": 1.0,
+    "OtherActionManaGain": 3.458666666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 2.0,
-    "Major Mana Potion": 1.4586666666666666,
     "Lightning Bolt": 88.84866666666666,
-    "Flame Shock": 15.781,
-    "Chain Lightning": 7.504666666666667,
     "Searing Totem": 2.1353333333333335,
-    "OtherActionManaGain": 3.458666666666667
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.4586666666666666,
+    "Flame Shock": 15.781,
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 7.504666666666667
    },
-   "dps": 409.12700720418854,
-   "dps_stdev": 20.005019796045385,
-   "threat": 411.0374840951948,
+   "dps": 409.1270072041883,
+   "dps_stdev": 20.005019796050476,
+   "threat": 411.03748409519505,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
-   "oom_seconds": 0.1251559999989999,
+   "oom_seconds": 0.125155999999,
    "error": null,
    "scorer": null,
    "shares": {
     "Lightning Bolt": 0.7079412351519895,
-    "Flame Shock": 0.18502331132657074,
-    "Chain Lightning": 0.060894606225119385,
-    "Attack": 0.04614084729632039
+    "Flame Shock": 0.1850233113265707,
+    "Chain Lightning": 0.06089460622511935,
+    "Attack": 0.046140847296320425
    },
    "source_shares": {},
    "unmatched_share": 1.0

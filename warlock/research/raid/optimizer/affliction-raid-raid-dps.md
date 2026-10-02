@@ -10,21 +10,21 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
 | Demonic Knowledge | Demonology | 5 | +2.13% | manual |
-| Agonizing Flames | Destruction | 4 | +1.79% | manual |
-| Bane | Destruction | 1 | +1.70% | manual |
+| Agonizing Flames | Destruction | 4 | +1.80% | manual |
+| Bane | Destruction | 1 | +1.71% | manual |
 | Master Demonologist | Demonology | 6 | +1.61% | manual |
 | Improved Shadow Bolt | Destruction | 1 | +1.03% | manual |
 | Suppression | Affliction | 1 | +0.92% | manual |
 | Shadow Mastery | Affliction | 6 | +0.83% | manual |
 | Improved Bane of Agony | Affliction | 3 | +0.78% | manual |
 | Improved Corruption | Affliction | 1 | +0.78% | manual |
-| Pandemic | Affliction | 3 | +0.78% | manual |
+| Pandemic | Affliction | 3 | +0.77% | manual |
 | Ruin | Destruction | 3 | +0.57% | manual |
 | Aftermath | Destruction | 2 | +0.56% | manual |
 | Decimation | Demonology | 4 | +0.52% | manual |
 | Malevolence | Affliction | 4 | +0.50% | manual |
 | Amplify Curse | Affliction | 3 | +0.43% | manual |
-| Malediction | Affliction | 2 | +0.42% | manual |
+| Malediction | Affliction | 2 | +0.41% | manual |
 | Wrack | Affliction | 7 | +0.41% | manual |
 | Nightfall | Affliction | 4 | +0.22% | manual |
 | Unholy Power | Demonology | 1 | +0.13% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Improved Drains | Affliction | 2 | +0.00% | manual |
 | Siphon Life | Affliction | 5 | +0.00% | manual |
 
-## Optimized build: 30/0/21  score +60.63%  (dps x1.606, sustain x1.088, surv x1.000, utility +0.00%)
+## Optimized build: 30/0/21  score +60.74%  (dps x1.607, sustain x1.088, surv x1.000, utility +0.00%)
 
 ```
   Affliction: Suppression 5, Improved Corruption 5, Improved Life Tap 2, Malediction 2, Pandemic 3, Improved Bane of Agony 2, Amplify Curse 1, Malevolence 5, Shadow Mastery 5
@@ -51,14 +51,14 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Demonic Sacrifice | Demonology 3 | 1/1 | +3.73% | no |
+| Demonic Sacrifice | Demonology 3 | 1/1 | +3.76% | no |
 | Demonic Knowledge | Demonology 5 | 1/3 | +3.35% | no |
 | Master Demonologist | Demonology 6 | 1/5 | +2.60% | no |
 | Fel Vitality | Demonology 2 | 1/3 | +1.12% | no |
-| Decimation | Demonology 4 | 1/2 | +0.90% | no |
-| Aftermath | Destruction 2 | 1/5 | +0.86% | yes |
-| Wrack | Affliction 7 | 1/1 | +0.65% | no |
-| Malediction | Affliction 2 | 3/5 | +0.63% | yes |
+| Decimation | Demonology 4 | 1/2 | +0.91% | no |
+| Aftermath | Destruction 2 | 1/5 | +0.85% | yes |
+| Wrack | Affliction 7 | 1/1 | +0.64% | no |
+| Malediction | Affliction 2 | 3/5 | +0.62% | yes |
 | Nightfall | Affliction 4 | 1/2 | +0.38% | yes |
 | Unholy Power | Demonology 1 | 1/5 | +0.13% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |

@@ -180,28 +180,26 @@
   },
   {
    "action": {
-    "condition": {
-     "auraShouldRefresh": {
-      "sourceUnit": {
-       "type": "CurrentTarget"
-      },
-      "auraId": {
-       "spellId": 9907
-      },
-      "maxOverlap": {
-       "const": {
-        "val": "28s"
-       }
-      }
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 9907
      }
+    },
+    "condition": {
+     "cmp": {
+      "op": "OpGe",
+      "lhs": {
+       "remainingTime": {}
+      },
+      "rhs": {
+       "const": {
+        "val": "6s"
+       }
+      }
+     }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see feral-cat-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see feral-cat-dps-rotation-search.json)"
   },
   {
    "action": {

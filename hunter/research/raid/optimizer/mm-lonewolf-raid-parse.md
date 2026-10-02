@@ -9,18 +9,18 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Lone Wolf | Marksmanship | 3 | +19.08% | manual |
+| Lone Wolf | Marksmanship | 3 | +19.13% | manual |
 | Efficiency | Marksmanship | 2 | +1.48% | manual |
-| Improved Stings | Marksmanship | 2 | +1.24% | manual |
+| Improved Stings | Marksmanship | 2 | +1.26% | manual |
 | Lightning Reflexes | Survival | 6 | +1.20% | manual |
 | Bestial Discipline | Beast Mastery | 5 | +1.00% | manual |
-| Deadly Aspects | Beast Mastery | 1 | +0.97% | manual |
-| Mortal Shots | Marksmanship | 4 | +0.97% | manual |
+| Mortal Shots | Marksmanship | 4 | +0.96% | manual |
+| Deadly Aspects | Beast Mastery | 1 | +0.96% | manual |
 | Careful Aim | Marksmanship | 2 | +0.89% | manual |
 | Lethal Attacks | Marksmanship | 1 | +0.86% | manual |
 | Ranged Weapon Specialization | Marksmanship | 6 | +0.75% | manual |
 | Barrage | Marksmanship | 5 | +0.41% | manual |
-| Improved Arcane Shot | Marksmanship | 3 | +0.40% | manual |
+| Improved Arcane Shot | Marksmanship | 3 | +0.41% | manual |
 | Resourcefulness | Survival | 5 | +0.20% | manual |
 | Improved Tracking | Survival | 1 | +0.10% | manual |
 | Intimidation | Beast Mastery | 5 | +0.00% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 50 hand-entered, 0 missing (scored as 0
 | Unleashed Fury | Beast Mastery | 3 | +0.00% | manual |
 | Improved Mend Pet | Beast Mastery | 4 | +0.00% | manual |
 
-## Optimized build: 5/37/9  score +67.43%  (dps x1.600, sustain x1.369, surv x1.080, utility +0.00%)
+## Optimized build: 5/37/9  score +67.51%  (dps x1.601, sustain x1.369, surv x1.080, utility +0.00%)
 
 ```
   Beast Mastery: Deadly Aspects 5

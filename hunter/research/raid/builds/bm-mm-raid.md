@@ -1,4 +1,4 @@
-# Beast Mastery / Marksmanship (simulator winner adopted 2026-09-27) — 22/29/0
+# Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02) — 22/29/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -12,7 +12,7 @@
 
 ## Summary
 
-Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+7.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.
+Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+5.1% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+7.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.
 
 ## Point allocation
 
@@ -24,7 +24,8 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 | **Endurance Training** | 3/5 | changed | Increases the Health and Armor of your pets by 9%. |
 | **Focused Fire** | 2/2 | **NEW** | Increases all damage you and your pet deal by 2% while your pet is active. |
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
-| **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
+| **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
+| **Ferocity** | 4/5 | changed | Increases the critical strike chance of your pets and hawks by 8%. |
 | **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
 
 ### Marksmanship (29)
@@ -34,10 +35,10 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Improved Stings** | 2/3 | **NEW** | Increased the damage of your Serpent Sting ability by 13%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec. |
-| **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
+| **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
+| **Improved Arcane Shot** | 1/5 | changed | Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot. |
 | **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
-| **Barrage** | 2/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 7%. |
+| **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
 | **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
 ### Survival (0)
@@ -46,76 +47,80 @@ Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in 
 
 ## Core talents (priority order)
 
-1. **Deadly Aspects** — Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement. Raid sim (2026-09-27): removing it costs +6% DPS.
-2. **Bestial Discipline** — Raid sim (2026-09-27): removing it costs +5% DPS.
-3. **Lethal Attacks** — +5% crit with all attacks (est.) — replaces Lethal Shots. Raid sim (2026-09-27): removing it costs +5% DPS.
-4. **Mortal Shots** — +30% ranged crit damage (est.); requires Careful Aim 5. Raid sim (2026-09-27): removing it costs +4% DPS.
-5. **Efficiency** — Mana on shots/stings (3%/rank). Raid sim (2026-09-27): removing it costs +4% DPS.
-6. **Careful Aim** — New: attack power from Intellect (20%/rank read; scaling unknown). Raid sim (2026-09-27): removing it costs +4% DPS.
-7. **Ranged Weapon Specialization** — +5% ranged damage. Raid sim (2026-09-27): removing it costs +3% DPS.
-8. **Trueshot Aura** — Group ranged attack power; now a 16-point talent (demo shows +30 RAP at level 38 — expect a higher rank at 60). Raid sim (2026-09-27): removing it costs +2% DPS.
+1. **Efficiency** — Mana on shots/stings (3%/rank). Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +6% DPS.
+2. **Unleashed Fury** — Raid sim (2026-10-02): removing it costs +5% DPS.
+3. **Summon Hawk** — Raid sim (2026-10-02): removing it costs +5% DPS.
+4. **Lethal Attacks** — +5% crit with all attacks (est.) — replaces Lethal Shots. Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-10-02): removing it costs +5% DPS.
+5. **Deadly Aspects** — Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement. Raid sim (2026-09-27): removing it costs +6% DPS. Raid sim (2026-10-02): removing it costs +4% DPS.
+6. **Bestial Discipline** — Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-10-02): removing it costs +4% DPS.
+7. **Careful Aim** — New: attack power from Intellect (20%/rank read; scaling unknown). Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +3% DPS.
+8. **Mortal Shots** — +30% ranged crit damage (est.); requires Careful Aim 5. Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +3% DPS.
 
 ## Flex points
 
 | Pts | Default | Alternatives | Why |
 |---|---|---|---|
-| 3 | Ferocity | any utility talent legal at that tier | Measures +0.9% DPS in the community simulator (noise): these points are free to move. |
 | 3 | Endurance Training | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 2 | Ferocity | Improved Mend Pet, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Improved Arcane Shot | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
 
-**2 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 7** for `mm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 425 | +0.0% | 737 | -4.8% | 69 s |
-| 2 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 424 | -0.2% | 738 | -4.7% | 67 s |
-| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 410 | -3.6% | 737 | -4.8% | 72 s |
-| 4 | *Marksmanship* | community simulator | - | 396 | -6.8% | 774 | +0.0% | 89 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 374 | -12.0% | 672 | -13.2% | 77 s |
-| 6 | *Marksmanship 0/39/12* | community simulator | - | 364 | -14.2% | 701 | -9.5% | 85 s |
-| 7 | *Survival 0/15/36* | community simulator | - | 341 | -19.8% | 620 | -20.0% | 76 s |
+| 1 | **[`bm-mm-raid`](bm-mm-raid.md)** | ours: hand draft | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
+| 2 | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) | ours: optimizer | 22/29/0 | 457 | +0.0% | 785 | -2.4% | 71 s |
+| 3 | [`bm-mm-full-buffs-raid`](bm-mm-full-buffs-raid.md) | ours: hand draft | 21/30/0 | 425 | -6.8% | 771 | -4.1% | 79 s |
+| 4 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.7% | 730 | -9.1% | 86 s |
+| 5 | *Marksmanship* | community simulator | - | 409 | -10.5% | 804 | +0.0% | 97 s |
+| 6 | *Marksmanship 0/39/12* | community simulator | - | 377 | -17.5% | 729 | -9.3% | 95 s |
+| 7 | *Survival 0/15/36* | community simulator | - | 353 | -22.6% | 649 | -19.3% | 87 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 395 -> 428 DPS (+8.5%), sim preset: Marksmanship 360 -> 399 DPS (+10.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-01, 6 changes to the base rotation; third-seed check: ):
   1. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.3%, pass 1)
   2. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+1.7%, pass 1)
   3. threshold 0.5s -> 1s: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 1)
   4. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   5. only with 20s or more of the fight left: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-mm-raid-raid-dps 644 -> 766 DPS (+19.0%), sim preset: Marksmanship 681 -> 817 DPS (+20.0%)):
+  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+6.4%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-01, 4 changes to the base rotation; third-seed check: ):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.0%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.3%, pass 1)
   3. only with 6s or more of the fight left: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 1)
+  4. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+1.3%, pass 5)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`bm-mm-raid`](bm-mm-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Arcane Shot | 8.5 |
+| 1 | if auraIsInactive: cast Summon Hawk | 8.5 |
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
 | 4 | if time to the next auto attack > 1s and time left in the fight ≥ 20s: cast Aimed Shot | 4.4 |
 | 5 | if time to the next auto attack > 1s: cast Multi-Shot | 0.6 |
-| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.7 |
+| 6 | if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
+
+Lines of the simulator's rotation these builds never cast: cast Arcane Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`bm-mm-raid`](bm-mm-raid.md) |
 |---|---|
-| Auto Shot | 43% |
-| Arcane Shot | 22% |
-| Serpent Sting | 16% |
-| Aimed Shot | 9% |
-| Pet: Auto Attack | 8% |
+| Auto Shot | 41% |
+| Summon Hawk | 26% |
+| Serpent Sting | 14% |
+| Aimed Shot | 8% |
+| Pet: Auto Attack | 7% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 | Multi-Shot | 1% |
 
 ## Notes
 
+- Adopted from the community simulator on 2026-10-02: `opt-mm-raid-raid-dps` beat the previous draft by +5.1% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.
 - Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.
 - Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.

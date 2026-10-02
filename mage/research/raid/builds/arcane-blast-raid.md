@@ -75,19 +75,21 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 592 | +0.0% | 690 | +0.0% | 0 s |
-| 2 | *Arcane DPS* | community simulator | - | 585 | -1.1% | 681 | -1.3% | 0 s |
-| 3 | *Arcane 35/0/16* | community simulator | - | 564 | -4.7% | 649 | -6.0% | 0 s |
+| 1 | **[`arcane-blast-raid`](arcane-blast-raid.md)** | ours: hand draft | 35/11/5 | 602 | +0.0% | 690 | +0.0% | 0 s |
+| 2 | *Arcane DPS* | community simulator | - | 594 | -1.3% | 681 | -1.3% | 0 s |
+| 3 | *Arcane 35/0/16* | community simulator | - | 569 | -5.5% | 649 | -6.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: arcane-blast-raid 514 -> 541 DPS (+5.3%), sim preset: Arcane DPS 512 -> 533 DPS (+4.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 7 changes to the base rotation; third-seed check: ml: Arcane 575 -> 603 DPS (+4.8%), arcane-blast-raid 561 -> 602 DPS (+7.3%), sim preset: Arcane DPS 558 -> 594 DPS (+6.6%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+2.2%, pass 1)
   2. drop 'mana % < 40%' from the condition: if (stacks of Arcane Blast ≥ 1.5 or mana % < 40%): cast Frostbolt (+0.4%, pass 1)
   3. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast + threshold 110 -> 220: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   4. drop the condition: if mana ≥ (time left in the fight × 220): cast Fire Blast (+2.9%, pass 2)
   5. move down below 'use every other cooldown when ready': cast Fire Blast (+0.4%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: arcane-blast-raid 591 -> 619 DPS (+4.8%), sim preset: Arcane DPS 589 -> 609 DPS (+3.5%)):
+  6. drop: if mana % < 15% and time left in the fight > 20s: cast Evocation (+0.9%, pass 5)
+  7. insert at the end: cast Fireball (+0.6%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Arcane 675 -> 691 DPS (+2.3%), arcane-blast-raid 667 -> 691 DPS (+3.6%), sim preset: Arcane DPS 664 -> 681 DPS (+2.5%)):
   1. threshold 3 -> 1.5: if (stacks of Arcane Blast ≥ 3 or mana % < 40%): cast Frostbolt (+0.2%, pass 1)
   2. insert in the middle: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.3%, pass 2)
   3. drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast (+2.4%, pass 2)
@@ -96,20 +98,21 @@ Arcane Blast, a Forever Arcane talent whose damage and cost grow with each cast,
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | cast Fire Blast | 9.2 |
-| 3 | if mana % < 15% and time left in the fight > 20s: cast Evocation | 0.2 |
-| 4 | if Missile Barrage is up: cast Arcane Missiles | 5.1 |
-| 5 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.1 |
-| 6 | cast Arcane Blast | 12.7 |
+| 3 | if Missile Barrage is up: cast Arcane Missiles | 5.2 |
+| 4 | if stacks of Arcane Blast ≥ 1.5: cast Frostbolt | 0.1 |
+| 5 | cast Arcane Blast | 12.9 |
+| 6 | cast Fireball | 0.4 |
 
 Damage by ability:
 
 | Ability | [`arcane-blast-raid`](arcane-blast-raid.md) |
 |---|---|
-| Arcane Blast | 40% |
+| Arcane Blast | 39% |
 | Arcane Missiles | 34% |
-| Fire Blast | 23% |
+| Fire Blast | 22% |
 | Ignite | 3% |
 | Frostbolt | 1% |
+| Fireball | 0% |
 
 ## Notes
 

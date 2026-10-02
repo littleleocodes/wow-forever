@@ -68,19 +68,20 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 6** for `ret-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | *P4/P5 Ret* | community simulator | - | 528 | +0.0% | 990 | -0.3% | 4 s |
-| 2 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 19/0/32 | 527 | -0.1% | 988 | -0.5% | 4 s |
-| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 523 | -0.9% | 975 | -1.7% | 2 s |
-| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 519 | -1.7% | 993 | +0.0% | 14 s |
-| 5 | *Retribution 9/0/42* | community simulator | - | 513 | -2.9% | 971 | -2.2% | 7 s |
+| 1 | [`retribution-ml-raid`](retribution-ml-raid.md) | ours: hand draft | 11/8/32 | 546 | +0.0% | 1015 | +0.0% | 0 s |
+| 2 | [`opt-ret-dps-raid-dps`](opt-ret-dps-raid-dps.md) | ours: optimizer | 12/8/31 | 544 | -0.3% | 1011 | -0.4% | 0 s |
+| 3 | [`ret-full-buffs-raid`](ret-full-buffs-raid.md) | ours: hand draft | 10/8/33 | 536 | -1.9% | 1011 | -0.4% | 0 s |
+| 4 | **[`ret-raid-dps`](ret-raid-dps.md)** | ours: hand draft | 17/0/34 | 529 | -3.0% | 986 | -2.9% | 0 s |
+| 5 | *P4/P5 Ret* | community simulator | - | 529 | -3.1% | 983 | -3.2% | 0 s |
+| 6 | *Retribution 9/0/42* | community simulator | - | 513 | -6.1% | 970 | -4.4% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 12 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 348 -> 369 DPS (+5.8%), sim preset: P4/P5 Ret 353 -> 366 DPS (+3.7%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 17 changes to the base rotation; third-seed check: ml: Retribution 489 -> 533 DPS (+9.0%), opt-ret-dps-raid-dps 477 -> 528 DPS (+10.6%), sim preset: P4/P5 Ret 478 -> 529 DPS (+10.5%)):
   1. only above 40% mana: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up: cast Seal of Command (+2.5%, pass 1)
   2. threshold 0.4s -> 0.9s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+1.1%, pass 1)
   3. threshold 70% -> 60%: if mana % ≥ 70%: cast Consecration + threshold 0.4s -> 0.2s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Righteousness is up and mana % ≥ 40%: cast Seal of Command (+0.3%, pass 1)
@@ -93,42 +94,49 @@ Allocation adopted on 2026-09-27 from `cand-ret-dps-r1`, the best build in the c
   10. threshold 60% -> 70%: if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 60%: cast Seal of Command (+0.6%, pass 2)
   11. threshold 0.9s -> 0.4s: if mana % ≥ 15% and time to the next auto attack < 0.9s and Seal of Command is up: cast Seal of Righteousness (+0.6%, pass 2)
   12. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: opt-ret-dps-raid-dps 730 -> 779 DPS (+6.8%), sim preset: P4/P5 Ret 727 -> 777 DPS (+6.8%)):
+  13. spell probe: insert at the top: cast Holy Shock (+8.0%, pass 4)
+  14. drop 'time to the next auto attack < 0.2s' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+1.8%, pass 5)
+  15. drop 'mana % ≥ 15%' from the condition: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 5)
+  16. threshold 70% -> 65%: if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command (+0.5%, pass 5)
+  17. threshold 1s -> 2s: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+0.2%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Retribution 922 -> 1013 DPS (+9.8%), opt-ret-dps-raid-dps 889 -> 978 DPS (+10.0%), sim preset: P4/P5 Ret 892 -> 982 DPS (+10.0%)):
   1. drop 'time left on Seal of Righteousness ≤ 1s' from the condition: if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command (+2.4%, pass 1)
   2. threshold 70% -> 50%: if mana % ≥ 70%: cast Consecration (+1.4%, pass 1)
   3. move to the top: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+0.2%, pass 1)
   4. threshold 0.4s -> 1.4s: if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness (+1.5%, pass 2)
   5. move to the top: cast Hammer of Wrath (+1.4%, pass 2)
   6. move down below 'if mana % ≥ 50%: cast Consecration': cast Holy Strike (+0.6%, pass 2)
+  7. spell probe: insert at the end: cast Holy Shock (+6.6%, pass 4)
+  8. insert in the middle: cast Consecration (+7.1%, pass 5)
+  9. insert in the middle: cast Demonic Rune (+0.2%, pass 5)
 
 Before the pull: at -1.5s: cast Seal of Command.
 
 | # | Priority (the first line whose condition holds is cast) | [`ret-raid-dps`](ret-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if mana % ≥ 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 3.0 |
+| 1 | if time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness | 5.3 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 1s: cast Seal of Command | 3.0 |
-| 4 | if mana % ≥ 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % ≥ 70%: cast Seal of Command | 3.0 |
-| 5 | cast Hammer of Wrath | 1.3 |
+| 3 | if time left on Seal of Command ≤ 1s and time left on Seal of Righteousness ≤ 2s: cast Seal of Command | 5.3 |
+| 4 | if mana % ≥ 15% and Seal of Righteousness is up and mana % ≥ 65%: cast Seal of Command | 5.3 |
+| 5 | cast Hammer of Wrath | 2.0 |
 | 6 | cast Holy Strike | 6.0 |
-| 7 | cast Consecration | 6.3 |
-| 8 | cast Consecration | 0.3 |
+| 7 | cast Consecration | 6.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Judgement (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Holy Shock, cast Judgement, cast Consecration (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`ret-raid-dps`](ret-raid-dps.md) |
 |---|---|
-| Consecration | 20% |
-| Auto Attack | 18% |
-| Seal of Righteousness | 17% |
+| Consecration | 18% |
+| Seal of Righteousness | 18% |
 | Judgement of Righteousness | 16% |
-| Holy Strike | 16% |
-| Hammer of Wrath | 4% |
-| Seal of Command | 4% |
-| Dragonbreath Chili | 3% |
+| Auto Attack | 16% |
+| Holy Strike | 14% |
+| Hammer of Wrath | 6% |
+| Seal of Command | 5% |
 | Judgement of Command | 3% |
+| Dragonbreath Chili | 3% |
 
 ## Notes
 

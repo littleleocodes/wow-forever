@@ -1,30 +1,27 @@
-# Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse) — 20/31/0
+# Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse) — 10/31/10
 
 *[Shaman](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 20/31/0 (Elemental / Enhancement / Restoration) |
+| **Build** | 10/31/10 (Elemental / Enhancement / Restoration) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +102.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancement-dps` and profile `parse`: score +104.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
-### Elemental (20)
+### Elemental (10)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
+| **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
-| **Elemental Devastation** | 3/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 9% for 10 sec. |
-| **Reverberation** | 5/5 | changed | Reduces the cooldown of your Shock spells by 1 sec. |
-| **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
+| **Elemental Devastation** | 2/3 | changed | Your offensive spell critical strikes will increase your chance to get a critical strike with melee attacks by 6% for 10 sec. |
 
 ### Enhancement (31)
 
@@ -41,20 +38,23 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 | **Maelstrom Weapon** | 5/5 | **NEW** | When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec. |
 | **Rage of the Farseer** | 1/1 | **NEW** | Increases your attack speed by 30% for 25 sec. |
 
-### Restoration (0)
+### Restoration (10)
 
-*No points.*
+| Talent | Pts | vs Classic | Effect at this rank |
+|---|---|---|---|
+| **Totemic Focus** | 5/5 | changed | Reduces the Mana cost of your totems and any spells that summon or move them by 25%. |
+| **Tidal Focus** | 5/5 | changed | Reduces the Mana cost of your healing spells by 5% and improves your chance to hit by 5%. |
 
 ## Core talents (priority order)
 
-1. **Stormstrike** — Removing it costs 39.4 points of score in this model.
-2. **Maelstrom Weapon** — Removing it costs 19.9 points of score in this model.
-3. **Flurry** — Removing it costs 15.2 points of score in this model.
+1. **Stormstrike** — Removing it costs 37.0 points of score in this model.
+2. **Maelstrom Weapon** — Removing it costs 25.3 points of score in this model.
+3. **Flurry** — Removing it costs 14.6 points of score in this model.
 4. **Mental Dexterity** — Removing it costs 10.5 points of score in this model.
-5. **Thundering Strikes** — Removing it costs 9.1 points of score in this model.
-6. **Mental Quickness** — Removing it costs 5.0 points of score in this model.
-7. **Call of Flame** — Removing it costs 4.2 points of score in this model.
-8. **Reverberation** — Removing it costs 3.6 points of score in this model.
+5. **Thundering Strikes** — Removing it costs 9.0 points of score in this model.
+6. **Mental Quickness** — Removing it costs 5.5 points of score in this model.
+7. **Tidal Focus** — Removing it costs 5.0 points of score in this model.
+8. **Call of Flame** — Removing it costs 4.5 points of score in this model.
 
 ## Rotation
 

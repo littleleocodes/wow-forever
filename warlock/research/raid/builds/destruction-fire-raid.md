@@ -73,29 +73,31 @@ Allocation adopted on 2026-09-28 from `opt-fire-destro-raid-raid-dps`, the best 
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | -0.4% | 3 s |
-| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 21/11/19 | 612 | -0.0% | 728 | +0.0% | 3 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.8% | 3 s |
-| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.8% | 3 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 552 | -9.8% | 651 | -10.6% | 2 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -17.2% | 3 s |
-| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.3% | 3 s |
-| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.3% | 3 s |
-| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.5% | 3 s |
+| 1 | **[`destruction-fire-raid`](destruction-fire-raid.md)** | ours: hand draft | 22/11/18 | 612 | +0.0% | 725 | +0.0% | 3 s |
+| 2 | [`opt-fire-destro-raid-raid-dps`](opt-fire-destro-raid-raid-dps.md) | ours: optimizer | 10/11/30 | 611 | -0.1% | 717 | -1.0% | 2 s |
+| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 586 | -4.3% | 693 | -4.4% | 3 s |
+| 4 | *DS/Ruin* | community simulator | - | 577 | -5.7% | 686 | -5.4% | 3 s |
+| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 538 | -12.1% | 630 | -13.1% | 2 s |
+| 6 | *Deep Affliction 35/0/16* | community simulator | - | 515 | -15.9% | 602 | -16.9% | 3 s |
+| 7 | *Affliction* | community simulator | - | 507 | -17.2% | 594 | -18.0% | 3 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 505 | -17.5% | 602 | -17.0% | 3 s |
+| 9 | *Demonic Pact* | community simulator | - | 501 | -18.2% | 593 | -18.2% | 3 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: destruction-fire-raid 543 -> 559 DPS (+3.0%), sim preset: DS/Ruin Pandemic 24/11/16 519 -> 534 DPS (+2.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-01, 7 changes to the base rotation; third-seed check: ):
   1. drop: cast Shadowburn (+0.6%, pass 1)
   2. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if mana % < 10%: cast Life Tap (+0.5%, pass 1)
   4. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
   5. only above 10% mana: if time left in the fight ≤ 3.5: cast Searing Pain (+0.2%, pass 2)
   6. threshold 1.5 -> 1.125: if time left in the fight ≤ 1.5: cast Shadowburn (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: destruction-fire-raid 651 -> 665 DPS (+2.1%), sim preset: DS/Ruin Pandemic 24/11/16 622 -> 635 DPS (+2.0%)):
+  7. spell probe: insert before the filler: cast Conflagrate (+8.3%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-01, 4 changes to the base rotation; third-seed check: ):
   1. drop: cast Shadowburn (+0.8%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
+  4. spell probe: insert in the middle: cast Conflagrate (+8.2%, pass 4)
 
 Before the pull: at -1.5s: cast Life Tap.
 
@@ -112,6 +114,8 @@ Before the pull: at -1.5s: cast Life Tap.
 | 9 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
 | 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.3 |
 | 11 | cast Shadow Bolt | 13.9 |
+
+Lines of the simulator's rotation these builds never cast: cast Conflagrate (needs the Conflagrate talent).
 
 Damage by ability:
 

@@ -10,23 +10,23 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
 | Improved Scorch | Fire | 4 | +17.34% | manual |
+| Pyroblast | Fire | 3 | +7.97% | manual |
 | Hot Streak | Fire | 4 | +7.00% | manual |
-| Pyroblast | Fire | 3 | +6.45% | manual |
 | Combustion | Fire | 7 | +6.35% | manual |
 | Arcane Power | Arcane | 7 | +2.42% | manual |
-| Ignite | Fire | 2 | +2.40% | manual |
+| Ignite | Fire | 2 | +2.41% | manual |
 | Critical Mass | Fire | 5 | +2.35% | manual |
+| Improved Fireball | Fire | 1 | +2.07% | manual |
 | Fire Power | Fire | 6 | +2.00% | manual |
-| Improved Fireball | Fire | 1 | +1.68% | manual |
 | Arcane Instability | Arcane | 6 | +1.46% | manual |
 | Elemental Precision | Frost | 1 | +1.19% | manual |
-| Incineration | Fire | 1 | +1.01% | manual |
+| Incineration | Fire | 1 | +1.00% | manual |
 | Presence of Mind | Arcane | 5 | +1.00% | manual |
 | Wake of Fire | Fire | 1 | +0.86% | manual |
 | Arcane Mind | Arcane | 5 | +0.34% | manual |
 | Master of Elements | Fire | 4 | +0.24% | manual |
-| Arcane Concentration | Arcane | 2 | +0.21% | manual |
 | Arcane Meditation | Arcane | 4 | +0.20% | manual |
+| Arcane Concentration | Arcane | 2 | +0.16% | manual |
 | Ice Barrier | Frost | 7 | +0.01% | manual |
 | Ice Block | Frost | 4 | +0.01% | manual |
 | Improved Channeling | Arcane | 1 | +0.01% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Geometry | Arcane | 3 | +0.00% | manual |
 | Flame Throwing | Fire | 2 | +0.00% | manual |
 
-## Optimized build: 13/33/5  score +186.17%  (dps x2.844, sustain x1.087, surv x1.010, utility +0.00%)
+## Optimized build: 13/33/5  score +194.72%  (dps x2.932, sustain x1.074, surv x1.010, utility +0.00%)
 
 ```
   Arcane: Improved Channeling 5, Magic Absorption 1, Arcane Subtlety 2, Arcane Concentration 5
@@ -52,10 +52,10 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +7.03% | no |
-| Arcane Instability | Arcane 6 | 1/3 | +3.93% | no |
-| Presence of Mind | Arcane 5 | 1/1 | +2.84% | no |
-| Arcane Mind | Arcane 5 | 1/5 | +0.52% | no |
+| Arcane Power | Arcane 7 | 1/1 | +7.25% | no |
+| Arcane Instability | Arcane 6 | 1/3 | +4.06% | no |
+| Presence of Mind | Arcane 5 | 1/1 | +2.93% | no |
+| Arcane Mind | Arcane 5 | 1/5 | +0.53% | no |
 | Arcane Meditation | Arcane 4 | 1/3 | +0.20% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |
 | Ice Block | Frost 4 | 1/1 | +0.01% | no |

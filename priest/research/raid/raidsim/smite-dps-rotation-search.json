@@ -2,7 +2,7 @@
  "dummy": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
+    "label": "ml: Hybrid Discipline/Holy",
+    "talents": "505031131305021001-30505101032",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+   },
+   {
     "label": "smite-discipline-raid",
-    "talents": "515030031305001031-00505023002-3"
+    "talents": "505230231305001001-30505101002-3"
    },
    {
     "label": "sim preset: Smite",
@@ -108,37 +113,70 @@
     "gain_seed2": 0.0017001293623493119,
     "candidates": 217,
     "pass": 3
+   },
+   {
+    "round": 12,
+    "change": "spell probe: insert at the end: cast Shadowform",
+    "gain_seed1": 0.0682,
+    "gain_seed2": 0.0679,
+    "candidates": 12,
+    "pass": 5
+   },
+   {
+    "round": 13,
+    "change": "insert at the top: if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain + move down below 'use every other cooldown when ready': if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain",
+    "gain_seed1": 0.005480574793518267,
+    "gain_seed2": 0.004181419586422708,
+    "candidates": 307,
+    "pass": 6
+   },
+   {
+    "round": 14,
+    "change": "rank 4 below 15% mana, above: if not Shadow Word: Pain is on the target and time left in the fight \u2265 5: cast Shadow Word: Pain",
+    "gain_seed1": 0.002147446981489942,
+    "gain_seed2": 0.002229023702104982,
+    "candidates": 337,
+    "pass": 6
    }
   ],
   "final": {
    "dummy": {
-    "smite-discipline-raid": {
-     "before": 223.14104469627884,
-     "after": 315.1810783683562,
-     "base": 223.14104469627884,
+    "ml: Hybrid Discipline/Holy": {
+     "before": 348.74408873797984,
+     "after": 489.10376287860487,
+     "base": 348.74408873797984,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.5209121998181994,
-     "oom_after": 2.5209121998181994
+     "oom_before": 4.179133549992034,
+     "oom_after": 5.948392199966342
+    },
+    "smite-discipline-raid": {
+     "before": 299.64177218430063,
+     "after": 444.483761951524,
+     "base": 299.64177218430063,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 19.821066899922826,
+     "oom_after": 20.154386049890803
     },
     "sim preset: Smite": {
-     "before": 222.17323902832925,
-     "after": 313.1828631434102,
-     "base": 222.17323902832925,
+     "before": 298.78784428489206,
+     "after": 441.2170539854862,
+     "base": 298.78784428489206,
      "before_value": null,
      "after_value": null,
-     "oom_before": 3.3175111497663528,
-     "oom_after": 3.3175111497663528
+     "oom_before": 21.360486899907016,
+     "oom_after": 22.259302599866846
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  },
  "raid": {
   "class": "priest",
   "spec": "smite-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -146,8 +184,13 @@
   "start": "ui\\specs\\priest\\dps\\apls\\smite.apl.json",
   "builds": [
    {
+    "label": "ml: Hybrid Discipline/Holy",
+    "talents": "505031131305021001-30505101032",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json"
+   },
+   {
     "label": "smite-discipline-raid",
-    "talents": "515030031305001031-00505023002-3"
+    "talents": "505230231305001001-30505101002-3"
    },
    {
     "label": "sim preset: Smite",
@@ -268,31 +311,64 @@
     "gain_seed2": 0.005168823836389169,
     "candidates": 305,
     "pass": 2
+   },
+   {
+    "round": 15,
+    "change": "spell probe: insert at the end: cast Shadowform",
+    "gain_seed1": 0.011,
+    "gain_seed2": 0.0118,
+    "candidates": 12,
+    "pass": 5
+   },
+   {
+    "round": 16,
+    "change": "insert in the middle: if mana % \u2265 40%: cast Smite",
+    "gain_seed1": 0.006683500040972179,
+    "gain_seed2": 0.006525323336422195,
+    "candidates": 392,
+    "pass": 6
+   },
+   {
+    "round": 17,
+    "change": "move down below 'if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain': strict sequence: cast Inner Focus; cast Devouring Plague",
+    "gain_seed1": 0.001670144473224111,
+    "gain_seed2": 0.0015264033195976356,
+    "candidates": 418,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "smite-discipline-raid": {
-     "before": 440.6893827237076,
-     "after": 476.7184005137158,
-     "base": 440.6893827237076,
+    "ml: Hybrid Discipline/Holy": {
+     "before": 630.7844109563913,
+     "after": 639.2755530465137,
+     "base": 630.7844109563913,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.0413340499851533,
-     "oom_after": 2.0413340499851533
+     "oom_before": 0.28724824999880005,
+     "oom_after": 0.16088884998660002
+    },
+    "smite-discipline-raid": {
+     "before": 572.1273718470835,
+     "after": 601.369594036171,
+     "base": 572.1273718470835,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 4.080308899991479,
+     "oom_after": 3.209696649627646
     },
     "sim preset: Smite": {
-     "before": 439.1640460310499,
-     "after": 471.1355875235472,
-     "base": 439.1640460310499,
+     "before": 569.9575646359889,
+     "after": 596.5791476352011,
+     "base": 569.9575646359889,
      "before_value": null,
      "after_value": null,
-     "oom_before": 2.432809299980831,
-     "oom_after": 2.432809299980831
+     "oom_before": 4.941982599988135,
+     "oom_after": 3.6109208496418015
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  }
 }

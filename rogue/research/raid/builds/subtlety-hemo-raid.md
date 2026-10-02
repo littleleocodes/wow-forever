@@ -82,12 +82,12 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 380 | +0.0% | 652 | +0.0% | 0 s |
-| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 335 | -11.9% | 616 | -5.5% | 0 s |
+| 1 | **[`subtlety-hemo-raid`](subtlety-hemo-raid.md)** | ours: hand draft | 20/0/31 | 386 | +0.0% | 653 | +0.0% | 0 s |
+| 2 | *Subtlety Hemo 15/0/36* | community simulator | - | 345 | -10.6% | 615 | -5.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 12 changes to the base rotation; third-seed check: subtlety-hemo-raid 331 -> 392 DPS (+18.5%), sim preset: Subtlety Hemo 15/0/36 306 -> 347 DPS (+13.3%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 15 changes to the base rotation; third-seed check: ml: Subtlety 344 -> 392 DPS (+13.9%), sim preset: Subtlety Hemo 15/0/36 305 -> 345 DPS (+13.1%)):
   1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.8%, pass 1)
   2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.6%, pass 1)
   3. threshold 20s -> 40s: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice (+0.6%, pass 1)
@@ -100,38 +100,45 @@ Subtlety to Hemorrhage and the Forever talents Quietus (+10% on targets under 35
   10. threshold 8 -> 12: if not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 3)
   11. threshold 3 -> 5: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 3)
   12. insert in the middle: cast Garrote (+3.0%, pass 4)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: subtlety-hemo-raid 636 -> 657 DPS (+3.3%), sim preset: Subtlety Hemo 15/0/36 600 -> 622 DPS (+3.6%)):
+  13. spell probe: insert before the filler: cast Blade Flurry (+0.5%, pass 5)
+  14. threshold 80s -> 160s: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 80s: cast Slice and Dice (+1.8%, pass 6)
+  15. threshold 60 -> 30: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.5%, pass 6)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Subtlety 650 -> 657 DPS (+1.2%), sim preset: Subtlety Hemo 15/0/36 599 -> 616 DPS (+3.0%)):
   1. drop 'combo points ≥ 4' from the condition: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+1.1%, pass 1)
   2. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   3. insert at the top: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
   4. threshold 5 -> 3.75: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice (+0.3%, pass 2)
   5. threshold 4 -> 2: if combo points ≥ 4 and not Rupture is on the target and time left in the fight > 8: cast Rupture (+0.2%, pass 2)
   6. insert in the middle: if not Garrote is on the target: cast Garrote (+1.7%, pass 4)
+  7. spell probe: insert before the filler: cast Cold Blood (+0.4%, pass 5)
+  8. spell probe: insert before the filler: if auraIsInactive: cast Ghostly Strike (+0.4%, pass 5)
+  9. threshold 1 -> 3: if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish (+0.2%, pass 6)
+  10. move down below 'cast Cold Blood': if auraIsInactive: cast Ghostly Strike (+0.2%, pass 6)
 
 | # | Priority (the first line whose condition holds is cast) | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) casts/min |
 |---|---|---|
 | 1 | if energy ≤ 29 and combo points < 5 and time left on Expose Armor ≤ 6 and timeToNextEnergyTick > 1 and not Adrenaline Rush is up: cast Thistle Tea | as ready |
-| 2 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.6 |
-| 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 80s: cast Slice and Dice | 1.8 |
-| 4 | if energy ≥ 60 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.6 |
-| 5 | cast Premeditation | 0.6 |
-| 6 | cast Garrote | 0.6 |
-| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.8 |
+| 2 | if time left on Expose Armor < 5 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.1 |
+| 3 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 160s: cast Slice and Dice | 0.7 |
+| 4 | if energy ≥ 30 and combo points ≤ 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish | 0.7 |
+| 5 | cast Premeditation | 0.7 |
+| 6 | cast Garrote | 0.7 |
+| 7 | if not Rupture is on the target and time left in the fight > 12: cast Rupture | 4.3 |
 | 8 | if Slice and Dice is up: use every other cooldown when ready | as ready |
 | 9 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 |
-| 10 | cast Hemorrhage | 19.5 |
+| 10 | cast Hemorrhage | 20.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ambush (its condition never held in these fights); cast Blade Flurry (needs the Blade Flurry talent).
 
 Damage by ability:
 
 | Ability | [`subtlety-hemo-raid`](subtlety-hemo-raid.md) |
 |---|---|
-| Auto Attack | 40% |
-| Hemorrhage | 26% |
-| Rupture | 16% |
-| Deadly Poison | 5% |
-| Dense Sharpening Stone | 5% |
+| Auto Attack | 37% |
+| Hemorrhage | 28% |
+| Rupture | 17% |
+| Dense Sharpening Stone | 4% |
+| Deadly Poison | 4% |
 | Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
 | Goblin Sapper Charge | 2% |

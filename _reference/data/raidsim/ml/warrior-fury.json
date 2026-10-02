@@ -1,0 +1,1640 @@
+{
+ "class": "warrior",
+ "spec": "Fury",
+ "slug": "fury",
+ "entries": [
+  "fury-dw-raid",
+  "arms-2h-raid"
+ ],
+ "best": "fury-dw-raid",
+ "best_entry": "fury-dw-raid",
+ "best_dps": 379.63,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "fury-dw-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "all-slots",
+   "ilvl": 65.4,
+   "trinkets": [
+    "Hand of Justice",
+    "Blackhand's Breadth"
+   ],
+   "names": [
+    "Lionheart Helm",
+    "Onyxia Tooth Pendant",
+    "Truestrike Shoulders",
+    "Howler's Furs",
+    "Timbermaw Tunic",
+    "Deeprock Bracers",
+    "Flameguard Gauntlets",
+    "Onslaught Girdle",
+    "Titanic Leggings",
+    "Boots of Heroism",
+    "Quick Strike Ring",
+    "Band of Accuria",
+    "Hand of Justice",
+    "Blackhand's Breadth",
+    "Brutality Blade",
+    "Premier High Warlord's Blade",
+    "Striker's Mark"
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0147845702605762,
+    "keep-sets-and-effects": 1.0147845702605762
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 1.0152708437903228
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.0891,
+    "PseudoStatOffHandDps": 0.7219,
+    "StatAgility": 0.2155,
+    "StatArmorPenetration": 0.0526,
+    "StatAttackPower": 0.1605,
+    "StatFireDamage": 0.0396,
+    "StatMeleeCritRating": 0.3002,
+    "StatMeleeHasteRating": 0.3811,
+    "StatMeleeHitRating": 0.3526,
+    "StatSpellCritRating": 0.0007,
+    "StatSpellDamage": 0.0396,
+    "StatSpellHasteRating": 0.0246,
+    "StatStrength": 0.3209
+   },
+   "evaluated_on": [
+    "fury-dw-raid: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "fury-dw-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.9,
+   "trinkets": [
+    "Hand of Justice",
+    "Blackhand's Breadth"
+   ],
+   "names": [
+    "Lionheart Helm",
+    "Mark of Fordring",
+    "Truestrike Shoulders",
+    "Howler's Furs",
+    "Timbermaw Tunic",
+    "Deeprock Bracers",
+    "Theramore Gauntlets",
+    "Radiant Girdle of the Dawn",
+    "Titanic Leggings",
+    "Boots of Heroism",
+    "Don Julio's Band",
+    "Don Julio's Band",
+    "Hand of Justice",
+    "Blackhand's Breadth",
+    "Premier High Warlord's Blade",
+    "Premier High Warlord's Cleaver",
+    "Premier High Warlord's Recurve"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.0776,
+    "PseudoStatOffHandDps": 0.6923,
+    "StatAgility": 0.1685,
+    "StatArmorPenetration": 0.0503,
+    "StatAttackPower": 0.1541,
+    "StatFireDamage": 0.0364,
+    "StatMeleeCritRating": 0.2464,
+    "StatMeleeHasteRating": 0.3287,
+    "StatMeleeHitRating": 0.2882,
+    "StatSpellCritRating": 0.0006,
+    "StatSpellDamage": 0.0364,
+    "StatSpellHasteRating": 0.0241,
+    "StatSpellHitRating": 0.0025,
+    "StatStrength": 0.3082
+   },
+   "evaluated_on": [
+    "fury-dw-raid: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "warrior",
+   "spec": "Fury",
+   "setting": "dummy",
+   "entry": "fury-dw-raid",
+   "date": "2026-10-01",
+   "constraint": "Fury 30+",
+   "protected": [],
+   "entries_screened": {
+    "fury-dw-raid": 383.73,
+    "arms-2h-raid": 368.63
+   },
+   "entries_searched": [
+    "fury-dw-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arms": [
+      [
+       "Improved Heroic Strike",
+       2
+      ],
+      [
+       "Improved Rend",
+       3
+      ],
+      [
+       "Improved Tactical Mastery",
+       5
+      ],
+      [
+       "Anger Management",
+       1
+      ],
+      [
+       "Deep Wounds",
+       2
+      ]
+     ],
+     "Fury": [
+      [
+       "Booming Voice",
+       1
+      ],
+      [
+       "Cruelty",
+       5
+      ],
+      [
+       "Iron Will",
+       1
+      ],
+      [
+       "Unbridled Wrath",
+       5
+      ],
+      [
+       "Improved Cleave",
+       1
+      ],
+      [
+       "Blood Craze",
+       1
+      ],
+      [
+       "Boundless Rage",
+       1
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Raging Blows",
+       1
+      ],
+      [
+       "Enrage",
+       5
+      ],
+      [
+       "Improved Execute",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Death Wish",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Bloodthirst",
+       1
+      ]
+     ],
+     "Protection": []
+    },
+    "split": "13/38/0",
+    "dps": 384.09,
+    "se": 0.061,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "14/37/0",
+    "dps": 383.72,
+    "se": 0.061,
+    "differs": [
+     [
+      "Deep Wounds",
+      2
+     ],
+     [
+      "Deep Wounds",
+      3
+     ],
+     [
+      "Precision",
+      2
+     ],
+     [
+      "Precision",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0009,
+   "runs": [
+    {
+     "entry": "fury-dw-raid",
+     "run": 1,
+     "simulated": 1999,
+     "best_screen": 384.14,
+     "best_split": "14/37/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 399,
+       "best": 383.73
+      },
+      {
+       "round": 1,
+       "simulated": 599,
+       "best": 383.73,
+       "predicted_top": 379.65
+      },
+      {
+       "round": 2,
+       "simulated": 799,
+       "best": 383.73,
+       "predicted_top": 382.97
+      },
+      {
+       "round": 3,
+       "simulated": 999,
+       "best": 383.73,
+       "predicted_top": 383.64
+      },
+      {
+       "round": 4,
+       "simulated": 1199,
+       "best": 384.14,
+       "predicted_top": 383.72
+      },
+      {
+       "round": 5,
+       "simulated": 1399,
+       "best": 384.14,
+       "predicted_top": 383.72
+      },
+      {
+       "round": 6,
+       "simulated": 1599,
+       "best": 384.14,
+       "predicted_top": 384.1
+      },
+      {
+       "round": 7,
+       "simulated": 1799,
+       "best": 384.14,
+       "predicted_top": 384.14
+      },
+      {
+       "round": 8,
+       "simulated": 1999,
+       "best": 384.14,
+       "predicted_top": 384.14
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "fury-dw-raid",
+     "run": 2,
+     "simulated": 1788,
+     "best_screen": 384.14,
+     "best_split": "14/37/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 388,
+       "best": 383.73
+      },
+      {
+       "round": 1,
+       "simulated": 588,
+       "best": 383.73,
+       "predicted_top": 378.15
+      },
+      {
+       "round": 2,
+       "simulated": 788,
+       "best": 383.73,
+       "predicted_top": 383.13
+      },
+      {
+       "round": 3,
+       "simulated": 988,
+       "best": 384.14,
+       "predicted_top": 383.51
+      },
+      {
+       "round": 4,
+       "simulated": 1188,
+       "best": 384.14,
+       "predicted_top": 383.68
+      },
+      {
+       "round": 5,
+       "simulated": 1388,
+       "best": 384.14,
+       "predicted_top": 384.08
+      },
+      {
+       "round": 6,
+       "simulated": 1588,
+       "best": 384.14,
+       "predicted_top": 384.13
+      },
+      {
+       "round": 7,
+       "simulated": 1788,
+       "best": 384.14,
+       "predicted_top": 384.14
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7,
+      383.7
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      383.75,
+      383.75,
+      383.75,
+      383.75,
+      383.75
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      383.72,
+      383.72
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      384.09,
+      383.72
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 248,
+     "best_gap": 0.0023,
+     "best_move": "1 Deep Wounds -> Precision",
+     "raced": [
+      "1 Deep Wounds -> Precision",
+      "2 Improved Heroic Strike -> Deflection"
+     ],
+     "confirmed_gap": 0.0013
+    },
+    {
+     "neighbours": 248,
+     "best_gap": 0.0004,
+     "best_move": "1 Precision -> Deep Wounds"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3734
+    },
+    {
+     "feature": "Improved Tactical Mastery",
+     "importance": 0.1647
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.1237
+    },
+    {
+     "feature": "Bloodthirst",
+     "importance": 0.0996
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0654
+    },
+    {
+     "feature": "Enrage",
+     "importance": 0.0398
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.0322
+    },
+    {
+     "feature": "Arms points",
+     "importance": 0.0197
+    },
+    {
+     "feature": "Anger Management",
+     "importance": 0.0164
+    },
+    {
+     "feature": "Improved Execute",
+     "importance": 0.0124
+    },
+    {
+     "feature": "Raging Blows",
+     "importance": 0.0073
+    },
+    {
+     "feature": "Deep Wounds",
+     "importance": 0.0072
+    }
+   ],
+   "simulated_builds": 5905,
+   "simulated_fights": 7637000,
+   "minutes": 7.5,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "warrior",
+   "spec": "Fury",
+   "setting": "dummy",
+   "entry": "fury-dw-raid",
+   "date": "2026-10-02",
+   "constraint": "Fury 30+",
+   "protected": [],
+   "entries_screened": {
+    "fury-dw-raid": 395.26,
+    "arms-2h-raid": 368.63
+   },
+   "entries_searched": [
+    "fury-dw-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arms": [
+      [
+       "Improved Heroic Strike",
+       2
+      ],
+      [
+       "Improved Rend",
+       3
+      ],
+      [
+       "Improved Tactical Mastery",
+       5
+      ],
+      [
+       "Anger Management",
+       1
+      ],
+      [
+       "Deep Wounds",
+       2
+      ]
+     ],
+     "Fury": [
+      [
+       "Booming Voice",
+       1
+      ],
+      [
+       "Cruelty",
+       5
+      ],
+      [
+       "Iron Will",
+       1
+      ],
+      [
+       "Unbridled Wrath",
+       5
+      ],
+      [
+       "Piercing Howl",
+       1
+      ],
+      [
+       "Blood Craze",
+       1
+      ],
+      [
+       "Boundless Rage",
+       1
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Raging Blows",
+       1
+      ],
+      [
+       "Enrage",
+       5
+      ],
+      [
+       "Improved Execute",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Death Wish",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Bloodthirst",
+       1
+      ]
+     ],
+     "Protection": []
+    },
+    "split": "13/38/0",
+    "dps": 396.03,
+    "se": 0.063,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "14/37/0",
+    "dps": 395.24,
+    "se": 0.063,
+    "differs": [
+     [
+      "Deep Wounds",
+      2
+     ],
+     [
+      "Deep Wounds",
+      3
+     ],
+     [
+      "Precision",
+      2
+     ],
+     [
+      "Precision",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.002,
+   "runs": [
+    {
+     "entry": "fury-dw-raid",
+     "run": 1,
+     "simulated": 1196,
+     "best_screen": 395.26,
+     "best_split": "14/37/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 396,
+       "best": 394.9
+      },
+      {
+       "round": 1,
+       "simulated": 596,
+       "best": 394.93,
+       "predicted_top": 389.3
+      },
+      {
+       "round": 2,
+       "simulated": 796,
+       "best": 395.26,
+       "predicted_top": 394.3
+      },
+      {
+       "round": 3,
+       "simulated": 996,
+       "best": 395.26,
+       "predicted_top": 394.89
+      },
+      {
+       "round": 4,
+       "simulated": 1196,
+       "best": 395.26,
+       "predicted_top": 395.2
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      395.24,
+      395.24,
+      395.24,
+      395.24,
+      395.24,
+      395.24
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      395.19,
+      395.19,
+      395.19,
+      395.19,
+      395.19
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      395.24,
+      395.24
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      396.03,
+      395.24
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 237,
+     "best_gap": 0.0024,
+     "best_move": "1 Deep Wounds -> Precision",
+     "raced": [
+      "1 Deep Wounds -> Precision"
+     ],
+     "confirmed_gap": 0.0022
+    },
+    {
+     "neighbours": 237,
+     "best_gap": 0.0,
+     "best_move": "1 Piercing Howl -> Boundless Rage"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3915
+    },
+    {
+     "feature": "Improved Tactical Mastery",
+     "importance": 0.162
+    },
+    {
+     "feature": "Bloodthirst",
+     "importance": 0.1279
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0841
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0488
+    },
+    {
+     "feature": "Enrage",
+     "importance": 0.0369
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.0341
+    },
+    {
+     "feature": "Deep Wounds",
+     "importance": 0.0245
+    },
+    {
+     "feature": "Anger Management",
+     "importance": 0.022
+    },
+    {
+     "feature": "Arms points",
+     "importance": 0.0156
+    },
+    {
+     "feature": "Improved Execute",
+     "importance": 0.0116
+    },
+    {
+     "feature": "Raging Blows",
+     "importance": 0.0059
+    }
+   ],
+   "simulated_builds": 2896,
+   "simulated_fights": 4501000,
+   "minutes": 4.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "warrior",
+   "spec": "Fury",
+   "setting": "raid",
+   "entry": "fury-dw-raid",
+   "date": "2026-10-02",
+   "constraint": "Fury 30+",
+   "protected": [],
+   "entries_screened": {
+    "fury-dw-raid": 722.88,
+    "arms-2h-raid": 699.45
+   },
+   "entries_searched": [
+    "fury-dw-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arms": [
+      [
+       "Improved Heroic Strike",
+       2
+      ],
+      [
+       "Improved Rend",
+       3
+      ],
+      [
+       "Improved Tactical Mastery",
+       5
+      ],
+      [
+       "Anger Management",
+       1
+      ],
+      [
+       "Deep Wounds",
+       2
+      ]
+     ],
+     "Fury": [
+      [
+       "Booming Voice",
+       2
+      ],
+      [
+       "Cruelty",
+       5
+      ],
+      [
+       "Unbridled Wrath",
+       5
+      ],
+      [
+       "Boundless Rage",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Raging Blows",
+       1
+      ],
+      [
+       "Enrage",
+       5
+      ],
+      [
+       "Improved Execute",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Death Wish",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Bloodthirst",
+       1
+      ]
+     ],
+     "Protection": []
+    },
+    "split": "13/38/0",
+    "dps": 722.66,
+    "se": 0.113,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "13/38/0",
+    "dps": 722.66,
+    "se": 0.113,
+    "differs": [
+     [
+      "Booming Voice",
+      1
+     ],
+     [
+      "Booming Voice",
+      2
+     ],
+     [
+      "Improved Cleave",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "fury-dw-raid",
+     "run": 1,
+     "simulated": 1212,
+     "best_screen": 722.88,
+     "best_split": "13/38/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 412,
+       "best": 722.88
+      },
+      {
+       "round": 1,
+       "simulated": 612,
+       "best": 722.88,
+       "predicted_top": 717.25
+      },
+      {
+       "round": 2,
+       "simulated": 812,
+       "best": 722.88,
+       "predicted_top": 719.88
+      },
+      {
+       "round": 3,
+       "simulated": 1012,
+       "best": 722.88,
+       "predicted_top": 721.55
+      },
+      {
+       "round": 4,
+       "simulated": 1212,
+       "best": 722.88,
+       "predicted_top": 722.58
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      722.91,
+      722.91,
+      722.91,
+      722.91,
+      722.91,
+      722.91
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      722.81,
+      722.81,
+      722.81,
+      722.81,
+      722.81
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      722.66,
+      722.66
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 239,
+     "best_gap": 0.0,
+     "best_move": "2 Booming Voice -> Blood Craze"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3708
+    },
+    {
+     "feature": "Bloodthirst",
+     "importance": 0.2231
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.091
+    },
+    {
+     "feature": "Improved Tactical Mastery",
+     "importance": 0.0786
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0721
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.034
+    },
+    {
+     "feature": "Iron Will",
+     "importance": 0.0232
+    },
+    {
+     "feature": "Booming Voice",
+     "importance": 0.0189
+    },
+    {
+     "feature": "Enrage",
+     "importance": 0.0185
+    },
+    {
+     "feature": "Arms points",
+     "importance": 0.0165
+    },
+    {
+     "feature": "Anger Management",
+     "importance": 0.0096
+    },
+    {
+     "feature": "Raging Blows",
+     "importance": 0.0074
+    }
+   ],
+   "simulated_builds": 2701,
+   "simulated_fights": 3578000,
+   "minutes": 4.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "warrior",
+   "spec": "Fury",
+   "setting": "dummy",
+   "entry": "fury-dw-raid",
+   "date": "2026-10-02",
+   "constraint": "Fury 30+",
+   "protected": [],
+   "entries_screened": {
+    "fury-dw-raid": 378.82,
+    "arms-2h-raid": 356.13
+   },
+   "entries_searched": [
+    "fury-dw-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arms": [
+      [
+       "Improved Heroic Strike",
+       1
+      ],
+      [
+       "Deflection",
+       1
+      ],
+      [
+       "Improved Rend",
+       3
+      ],
+      [
+       "Improved Tactical Mastery",
+       5
+      ],
+      [
+       "Anger Management",
+       1
+      ],
+      [
+       "Deep Wounds",
+       2
+      ]
+     ],
+     "Fury": [
+      [
+       "Booming Voice",
+       1
+      ],
+      [
+       "Cruelty",
+       5
+      ],
+      [
+       "Iron Will",
+       1
+      ],
+      [
+       "Unbridled Wrath",
+       5
+      ],
+      [
+       "Boundless Rage",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Raging Blows",
+       1
+      ],
+      [
+       "Enrage",
+       5
+      ],
+      [
+       "Improved Execute",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Death Wish",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Bloodthirst",
+       1
+      ]
+     ],
+     "Protection": []
+    },
+    "split": "13/38/0",
+    "dps": 379.74,
+    "se": 0.067,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "13/38/0",
+    "dps": 379.74,
+    "se": 0.067,
+    "differs": [
+     [
+      "Booming Voice",
+      1
+     ],
+     [
+      "Booming Voice",
+      2
+     ],
+     [
+      "Deflection",
+      1
+     ],
+     [
+      "Improved Heroic Strike",
+      1
+     ],
+     [
+      "Improved Heroic Strike",
+      2
+     ],
+     [
+      "Iron Will",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "fury-dw-raid",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 378.97,
+     "best_split": "14/37/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 378.82
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 378.82,
+       "predicted_top": 375.74
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 378.82,
+       "predicted_top": 378.16
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 378.82,
+       "predicted_top": 378.65
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 378.97,
+       "predicted_top": 378.75
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      380.03,
+      379.67,
+      379.67,
+      379.67,
+      379.67,
+      379.67
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      380.05,
+      380.04,
+      380.04,
+      380.04,
+      379.95
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      379.74,
+      379.74
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 237,
+     "best_gap": 0.0001,
+     "best_move": "2 Boundless Rage -> Blood Craze"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3678
+    },
+    {
+     "feature": "Bloodthirst",
+     "importance": 0.1806
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.1478
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0924
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.0368
+    },
+    {
+     "feature": "Enrage",
+     "importance": 0.0325
+    },
+    {
+     "feature": "Improved Tactical Mastery",
+     "importance": 0.0306
+    },
+    {
+     "feature": "Booming Voice",
+     "importance": 0.0241
+    },
+    {
+     "feature": "Arms points",
+     "importance": 0.017
+    },
+    {
+     "feature": "Improved Execute",
+     "importance": 0.0139
+    },
+    {
+     "feature": "Death Wish",
+     "importance": 0.0068
+    },
+    {
+     "feature": "Iron Will",
+     "importance": 0.006
+    }
+   ],
+   "simulated_builds": 2661,
+   "simulated_fights": 3534000,
+   "minutes": 3.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "warrior",
+   "spec": "Fury",
+   "setting": "raid",
+   "entry": "fury-dw-raid",
+   "date": "2026-10-02",
+   "constraint": "Fury 30+",
+   "protected": [],
+   "entries_screened": {
+    "fury-dw-raid": 703.82,
+    "arms-2h-raid": 682.98
+   },
+   "entries_searched": [
+    "fury-dw-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Arms": [
+      [
+       "Improved Heroic Strike",
+       2
+      ],
+      [
+       "Improved Rend",
+       3
+      ],
+      [
+       "Improved Tactical Mastery",
+       5
+      ],
+      [
+       "Anger Management",
+       1
+      ],
+      [
+       "Deep Wounds",
+       2
+      ]
+     ],
+     "Fury": [
+      [
+       "Booming Voice",
+       2
+      ],
+      [
+       "Cruelty",
+       5
+      ],
+      [
+       "Unbridled Wrath",
+       5
+      ],
+      [
+       "Boundless Rage",
+       3
+      ],
+      [
+       "Dual Wield Specialization",
+       5
+      ],
+      [
+       "Raging Blows",
+       1
+      ],
+      [
+       "Enrage",
+       5
+      ],
+      [
+       "Improved Execute",
+       2
+      ],
+      [
+       "Precision",
+       3
+      ],
+      [
+       "Death Wish",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Bloodthirst",
+       1
+      ]
+     ],
+     "Protection": []
+    },
+    "split": "13/38/0",
+    "dps": 704.59,
+    "se": 0.122,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "13/38/0",
+    "dps": 704.59,
+    "se": 0.122,
+    "differs": [
+     [
+      "Booming Voice",
+      1
+     ],
+     [
+      "Booming Voice",
+      2
+     ],
+     [
+      "Deflection",
+      1
+     ],
+     [
+      "Improved Heroic Strike",
+      1
+     ],
+     [
+      "Improved Heroic Strike",
+      2
+     ],
+     [
+      "Iron Will",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "fury-dw-raid",
+     "run": 1,
+     "simulated": 1213,
+     "best_screen": 703.82,
+     "best_split": "13/38/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 413,
+       "best": 703.82
+      },
+      {
+       "round": 1,
+       "simulated": 613,
+       "best": 703.82,
+       "predicted_top": 698.04
+      },
+      {
+       "round": 2,
+       "simulated": 813,
+       "best": 703.82,
+       "predicted_top": 702.83
+      },
+      {
+       "round": 3,
+       "simulated": 1013,
+       "best": 703.82,
+       "predicted_top": 703.57
+      },
+      {
+       "round": 4,
+       "simulated": 1213,
+       "best": 703.82,
+       "predicted_top": 703.74
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      705.14,
+      705.14,
+      705.14,
+      705.14,
+      705.14,
+      705.14
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      704.91,
+      704.91,
+      704.91,
+      704.91,
+      704.91
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      704.59,
+      704.59
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 239,
+     "best_gap": 0.0,
+     "best_move": "2 Booming Voice -> Blood Craze"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.4041
+    },
+    {
+     "feature": "Bloodthirst",
+     "importance": 0.1926
+    },
+    {
+     "feature": "Dual Wield Specialization",
+     "importance": 0.0771
+    },
+    {
+     "feature": "Improved Tactical Mastery",
+     "importance": 0.0587
+    },
+    {
+     "feature": "Enrage",
+     "importance": 0.0572
+    },
+    {
+     "feature": "Protection points",
+     "importance": 0.0516
+    },
+    {
+     "feature": "Fury points",
+     "importance": 0.0455
+    },
+    {
+     "feature": "Booming Voice",
+     "importance": 0.0241
+    },
+    {
+     "feature": "Arms points",
+     "importance": 0.0169
+    },
+    {
+     "feature": "Improved Execute",
+     "importance": 0.011
+    },
+    {
+     "feature": "Anger Management",
+     "importance": 0.0098
+    },
+    {
+     "feature": "Raging Blows",
+     "importance": 0.0092
+    }
+   ],
+   "simulated_builds": 2689,
+   "simulated_fights": 3566000,
+   "minutes": 4.2,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "fury-dw-raid",
+    "dps": 396.02,
+    "se": 0.063
+   },
+   "fury-dw-raid": {
+    "entry": "fury-dw-raid",
+    "dps": 396.0,
+    "se": 0.063
+   },
+   "arms-2h-raid": {
+    "entry": "arms-2h-raid",
+    "dps": 298.34,
+    "se": 0.06
+   }
+  },
+  "best_hand": "fury-dw-raid",
+  "gain_vs_hand": 0.0001
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "fury-dw-raid",
+   "dps": 720.17,
+   "se": 0.111
+  },
+  "bis-raid": {
+   "entry": "fury-dw-raid",
+   "dps": 722.57,
+   "se": 0.113
+  },
+  "gain": 0.0033,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-02",
+  "why": "confirms fury-dw-raid (+0.01%)"
+ }
+}

@@ -2,7 +2,7 @@
  "dummy": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,12 +10,17 @@
   "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
   "builds": [
    {
+    "label": "ml: Shadow",
+    "talents": "005300220303--500320501201312251",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json"
+   },
+   {
     "label": "opt-shadow-dps-raid-dps",
     "talents": "525000000305--500321501201302051"
    },
    {
-    "label": "sim preset: Shadow 15/0/36",
-    "talents": "0253000311--550022501201302251"
+    "label": "sim preset: Shadow",
+    "talents": "005300231303--505120501201300051"
    }
   ],
   "iterations": 3000,
@@ -48,33 +53,42 @@
   ],
   "final": {
    "dummy": {
+    "ml: Shadow": {
+     "before": 633.1195780562559,
+     "after": 634.132128171808,
+     "base": 633.1195780562559,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.02464959999865,
+     "oom_after": 0.02464959999865
+    },
     "opt-shadow-dps-raid-dps": {
-     "before": 552.3605387610696,
-     "after": 554.3518069279892,
-     "base": 552.3605387610696,
+     "before": 631.0669740249366,
+     "after": 631.8761834171025,
+     "base": 631.0669740249366,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.02099219999935,
+     "oom_after": 0.02099219999935
+    },
+    "sim preset: Shadow": {
+     "before": 617.7821836296819,
+     "after": 618.1420915107316,
+     "base": 617.7821836296819,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
-    },
-    "sim preset: Shadow 15/0/36": {
-     "before": 542.7242956977854,
-     "after": 545.2588274846576,
-     "base": 542.7242956977854,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00027859999985000003,
-     "oom_after": 0.00027859999985000003
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "priest",
   "spec": "shadow-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -82,12 +96,17 @@
   "start": "ui\\specs\\priest\\dps\\apls\\shadow.apl.json",
   "builds": [
    {
+    "label": "ml: Shadow",
+    "talents": "005300220303--500320501201312251",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/priest-shadow-bis.gear.json"
+   },
+   {
     "label": "opt-shadow-dps-raid-dps",
     "talents": "525000000305--500321501201302051"
    },
    {
-    "label": "sim preset: Shadow 15/0/36",
-    "talents": "0253000311--550022501201302251"
+    "label": "sim preset: Shadow",
+    "talents": "005300231303--505120501201300051"
    }
   ],
   "iterations": 3000,
@@ -104,19 +123,28 @@
   ],
   "final": {
    "raid": {
-    "opt-shadow-dps-raid-dps": {
-     "before": 634.1346186322886,
-     "after": 636.1792040535333,
-     "base": 634.1346186322886,
+    "ml: Shadow": {
+     "before": 725.1635520530617,
+     "after": 726.3123342991,
+     "base": 725.1635520530617,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
-    "sim preset: Shadow 15/0/36": {
-     "before": 623.3604929134717,
-     "after": 625.2148216058592,
-     "base": 623.3604929134717,
+    "opt-shadow-dps-raid-dps": {
+     "before": 723.9079661439353,
+     "after": 724.6289594917627,
+     "base": 723.9079661439353,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "sim preset: Shadow": {
+     "before": 709.0439307101605,
+     "after": 709.2088454782695,
+     "base": 709.0439307101605,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -125,6 +153,6 @@
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  }
 }

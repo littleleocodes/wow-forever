@@ -11,22 +11,26 @@
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| resto-raid-healer | resto-heal / raid-heal | - | - | Improved Tranquility +0.60, Improved Regrowth +0.59 |
-| resto-regrowth-natures-grace | resto-heal / raid-heal | - | Improved Entangling Roots 3, Improved Moonfire 2, Improved Wrath 1, Nature's Reach 2 | Living Spirit +4.30, Tranquil Spirit +3.09 |
-| feral-cat-dps | feral-cat-dps / raid-dps | - | Feral Swiftness 1, Ferocity 5 | Rend and Tear +2.14, Reflection +0.68 |
-| feral-bear-tank | feral-bear-tank / raid-tank | - | Furor 5 | Naturalist +0.60, Primal Bite +0.48 |
-| balance-moonkin-raid | balance-dps / raid-dps | Reflection 3, Subtlety 2 | Nature's Focus 5 | Heart of the Wild +0.34, Tranquil Spirit +0.00 |
+| resto-raid-healer | resto-heal / raid-heal | - | - | Improved Regrowth +0.63, Improved Tranquility +0.60 |
+| resto-regrowth-natures-grace | resto-heal / raid-heal | - | Improved Entangling Roots 3, Improved Moonfire 2, Improved Wrath 1, Nature's Reach 2 | Living Spirit +5.48, Tranquil Spirit +4.89 |
+| feral-cat-dps | feral-cat-dps / raid-dps | - | Feral Charge 1, Ferocity 2, Thick Hide 3 | Rend and Tear +2.11, Reflection +0.68 |
+| feral-bear-tank | feral-bear-tank / raid-tank | - | Furor 5 | Naturalist +0.60, Primal Bite +0.49 |
+| balance-moonkin-raid | balance-dps / raid-dps | - | Nature's Focus 5 | Improved Wrath +0.17, Improved Entangling Roots +0.00 |
 | pvp-resto | resto-heal / pvp | - | Moonglow 1 | Heart of the Wild +0.58, Living Spirit +0.12 |
 | leveling-feral | feral-cat-dps / leveling-st | - | Nature's Focus 5 | Naturalist +0.56, Thick Hide +0.36 |
 | opt-feral-cat-dps-leveling-st | feral-cat-dps / leveling-st | - | Nature's Focus 5 | Natural Shapeshifter +0.37, Rend and Tear +0.33 |
 | opt-feral-cat-dps-solo-60 | feral-cat-dps / solo-60 | - | Nature's Focus 5 | Natural Shapeshifter +0.37, Rend and Tear +0.33 |
 | opt-balance-dps-leveling-st | balance-dps / leveling-st | - | Nature's Focus 5 | Heart of the Wild +0.03, Subtlety +0.00 |
-| opt-resto-heal-raid-heal | resto-heal / raid-heal | - | - | Improved Regrowth +0.59, Subtlety +0.30 |
-| opt-balance-dps-raid-dps | balance-dps / raid-dps | Reflection 3 | Nature's Focus 5 | Thick Hide +0.00, Subtlety +0.00 |
-| opt-balance-dps-parse | balance-dps / parse | - | Nature's Focus 5 | Improved Wrath +0.01, Thick Hide +0.00 |
-| opt-feral-cat-dps-raid-dps | feral-cat-dps / raid-dps | - | Feral Swiftness 1, Ferocity 5 | Naturalist +2.05, Thick Hide +0.00 |
-| opt-feral-cat-dps-parse | feral-cat-dps / parse | - | Feral Swiftness 1, Ferocity 5, Leader of the Pack 1 | Naturalist +2.00, Thick Hide +0.00 |
-| opt-feral-bear-tank-raid-tank | feral-bear-tank / raid-tank | - | Nature's Focus 5 | Naturalist +0.60, Primal Bite +0.48 |
+| balance-pvp | balance-dps / pvp | - | - | Improved Entangling Roots +2.00, Moonfury +1.40 |
+| feral-combat-pvp | feral-cat-dps / pvp | Blood Frenzy 1, Primal Bite 1 | - | Naturalist +0.44, Rend and Tear +0.27 |
+| restoration-pvp | resto-heal / pvp | - | - | Furor +1.20, Feral Instinct +0.75 |
+| opt-resto-heal-raid-heal | resto-heal / raid-heal | - | - | Improved Regrowth +0.63, Improved Tranquility +0.60 |
+| restoration-leveling | not scored (no model) | | | |
+| opt-balance-dps-raid-dps | balance-dps / raid-dps | - | Nature's Focus 5 | Improved Wrath +0.17, Improved Entangling Roots +0.00 |
+| opt-balance-dps-parse | balance-dps / parse | - | Nature's Focus 5 | Improved Wrath +0.02, Improved Entangling Roots +0.01 |
+| opt-feral-cat-dps-raid-dps | feral-cat-dps / raid-dps | - | Feral Charge 1, Ferocity 2, Thick Hide 3 | Naturalist +2.02, Subtlety +0.00 |
+| opt-feral-cat-dps-parse | feral-cat-dps / parse | - | Feral Charge 1, Ferocity 2, Leader of the Pack 1, Thick Hide 3 | Naturalist +1.96, Subtlety +0.00 |
+| opt-feral-bear-tank-raid-tank | feral-bear-tank / raid-tank | - | Nature's Focus 5 | Naturalist +0.60, Primal Bite +0.49 |
 
 ## druid — Classic Era
 
@@ -35,7 +39,7 @@
 | resto-swiftmend-healer | resto-heal / raid-heal | Improved Wrath 5 | - | Nature's Grasp +0.00, Natural Weapons +0.00 |
 | resto-regrowth-natures-grace | resto-heal / raid-heal | - | Improved Entangling Roots 2, Improved Nature's Grasp 4, Improved Thorns 3, Improved Wrath 5, Natural Shapeshifter 3, Nature's Grasp 1, Nature's Reach 2 | Nature's Swiftness +2.78, Moonglow +1.50 |
 | feral-cat-dps | feral-cat-dps / raid-dps | - | Feline Swiftness 2, Ferocity 5, Improved Nature's Grasp 4, Nature's Grasp 1, Primal Fury 2, Savage Fury 2, Thick Hide 5 | Faerie Fire (Feral) +5.04, Feral Aggression +0.92 |
-| feral-bear-tank | feral-bear-tank / raid-tank | Natural Shapeshifter 3 (escape counts 0 here) | Improved Nature's Grasp 4, Nature's Grasp 1 | Primal Fury +1.78, Improved Enrage +0.91 |
+| feral-bear-tank | feral-bear-tank / raid-tank | Natural Shapeshifter 3 (escape counts 0 here) | Improved Nature's Grasp 4, Nature's Grasp 1 | Primal Fury +1.79, Improved Enrage +0.91 |
 | balance-moonkin-raid | balance-dps / raid-dps | Subtlety 2 | Improved Thorns 3, Nature's Focus 5, Nature's Reach 2 | Tranquil Spirit +0.00, Subtlety +0.00 |
 | pvp-resto-feral-hybrid | resto-heal / pvp | Improved Thorns 2 | - | Improved Entangling Roots +2.00, Improved Enrage +0.30 |
 | leveling-feral | feral-cat-dps / leveling-st | - | Improved Nature's Grasp 4, Improved Shred 2, Nature's Grasp 1, Primal Fury 2 | Faerie Fire (Feral) +1.05, Feral Charge +1.00 |
@@ -44,27 +48,38 @@
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| bm-mm-raid | mm-raid / raid-dps | - | Improved Mend Pet 2 | Improved Stings +1.71, Ranged Weapon Specialization +1.22 |
-| bm-mm-full-buffs-raid | mm-raid / raid-dps | Sniper Shot 1 | Improved Revive Pet 2, Rapid Killing 2 | Improved Stings +1.44, Bestial Discipline +1.14 |
-| mm-lone-wolf-raid | mm-lonewolf-raid / raid-dps | Hawk Eye 3, Rapid Recuperation 2, Sniper Shot 1 | Rapid Killing 2 | Survivalist +0.00, Scatter Shot +0.00 |
+| bm-mm-raid | mm-raid / raid-dps | - | - | Ranged Weapon Specialization +1.26, Ferocity +0.50 |
+| bm-mm-full-buffs-raid | mm-raid / raid-dps | - | - | Summon Hawk +8.09, Bestial Discipline +3.04 |
+| mm-lone-wolf-raid | mm-lonewolf-raid / raid-dps | Endurance Training 5 (needs a pet), Hawk Eye 3, Improved Aspect of the Monkey 1 (avoid counts 0 here), Rapid Recuperation 2 | Rapid Killing 2 | Improved Arcane Shot +0.52, Improved Tracking +0.18 |
 | mm-hawk-raid | not scored (no model) | | | |
 | survival-melee | melee-dps / raid-dps | - | Clever Traps 1, Deterrence 1, Survivalist 3 | Lone Wolf +15.23, Efficiency +0.63 |
 | bm-solo-farm | bm-leveling / solo-60 | Mortal Shots 5 | Bestial Swiftness 1, Intimidation 1 | Scatter Shot +0.60, Improved Stings +0.31 |
-| pvp-mm-surv | mm-raid / pvp | - | - | Sniper Shot +2.52, Strider Kick +2.25 |
+| pvp-mm-surv | mm-raid / pvp | - | - | Sniper Shot +2.56, Strider Kick +2.25 |
 | leveling-beast-mastery | bm-leveling / leveling-st | - | Hawk Eye 3, Rapid Killing 2, Trueshot Aura 1 | Careful Aim +0.37, Ferocity +0.23 |
 | melee-survival-raid | not scored (no model) | | | |
-| leveling-melee | melee-dps / leveling-st | - | - | Improved Stings +0.42, Survivalist's Discipline +0.30 |
+| leveling-melee | melee-dps / leveling-st | - | - | Improved Stings +0.39, Survivalist's Discipline +0.30 |
 | opt-bm-leveling-leveling-st | bm-leveling / leveling-st | - | Rapid Killing 2, Trueshot Aura 1 | Ferocity +0.22, Barrage +0.22 |
 | opt-bm-leveling-solo-60 | bm-leveling / solo-60 | - | Rapid Killing 2, Trueshot Aura 1 | Ferocity +0.21, Improved Tracking +0.18 |
-| opt-melee-dps-solo-60 | melee-dps / solo-60 | - | - | Improved Stings +0.39, Survivalist's Discipline +0.30 |
-| opt-mm-raid-leveling-st | mm-raid / leveling-st | - | - | Deflection +0.22, Mortal Shots +0.21 |
+| opt-melee-dps-solo-60 | melee-dps / solo-60 | - | - | Improved Stings +0.37, Survivalist's Discipline +0.30 |
+| opt-mm-raid-leveling-st | mm-raid / leveling-st | - | - | Improved Arcane Shot +0.50, Mortal Shots +0.23 |
 | opt-melee-dps-raid-dps | not scored (no model) | | | |
-| opt-bm-leveling-leveling-aoe | bm-leveling / leveling-aoe | - | Improved Revive Pet 1 | Ferocity +0.52, Lethal Attacks +0.22 |
-| opt-melee-dps-leveling-st | melee-dps / leveling-st | - | - | Survivalist's Discipline +0.30, Pathfinding +0.30 |
-| opt-mm-raid-raid-dps | mm-raid / raid-dps | - | - | Ferocity +0.24, Endurance Training +0.17 |
-| opt-mm-raid-parse | mm-raid / parse | - | - | Bestial Discipline +1.05, Efficiency +0.41 |
-| opt-mm-lonewolf-raid-raid-dps | mm-lonewolf-raid / raid-dps | Hawk Eye 2, Sniper Shot 1, Survivalist 5 | - | Surefooted +0.00, Scatter Shot +0.00 |
-| opt-mm-lonewolf-raid-parse | mm-lonewolf-raid / parse | Rapid Recuperation 2, Survivalist 5 | Rapid Killing 2 | Trueshot Aura +0.00, Surefooted +0.00 |
+| opt-bm-leveling-leveling-aoe | bm-leveling / leveling-aoe | - | Improved Revive Pet 1 | Ferocity +0.48, Lethal Attacks +0.21 |
+| opt-melee-dps-leveling-st | melee-dps / leveling-st | - | - | Lightning Reflexes +0.17, Deflection +0.13 |
+| beast-mastery-leveling | bm-leveling / leveling-st | - | Rapid Killing 2 | Rapid Recuperation +1.39, Scatter Shot +0.60 |
+| beast-mastery-pvp | not scored (no model) | | | |
+| marksmanship-pvp | not scored (no model) | | | |
+| survival-pvp | not scored (no model) | | | |
+| beast-mastery-raid | not scored (no model) | | | |
+| survival-raid | not scored (no model) | | | |
+| beast-mastery-ml-parse | not scored (no model) | | | |
+| beast-marks-ml-raid | not scored (no model) | | | |
+| marksmanship-ml-raid | mm-raid / raid-dps | Hawk Eye 3, Improved Aspect of the Monkey 1 (avoid counts 0 here), Lone Wolf 1 | - | Focused Fire +1.30, Improved Arcane Shot +0.44 |
+| marksmanship-ml-parse | not scored (no model) | | | |
+| survival-ml-parse | not scored (no model) | | | |
+| opt-mm-raid-raid-dps | mm-raid / raid-dps | - | - | Ranged Weapon Specialization +1.26, Ferocity +0.50 |
+| opt-mm-raid-parse | mm-raid / parse | - | - | Ranged Weapon Specialization +1.18, Efficiency +0.41 |
+| opt-mm-lonewolf-raid-raid-dps | mm-lonewolf-raid / raid-dps | Survivalist 3 | - | Survivalist +0.00, Hawk Eye +0.00 |
+| opt-mm-lonewolf-raid-parse | mm-lonewolf-raid / parse | Survivalist 4 | - | Survivalist +0.00, Hawk Eye +0.00 |
 
 ## hunter — Classic Era
 
@@ -80,22 +95,28 @@
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| frost-arcane-power-raid | frost-raid / raid-dps | Frost Channeling 2 | Arcane Blast 1, Arcane Concentration 5, Arcane Focus 3, Arcane Geometry 2, Arcane Meditation 3, Arcane Subtlety 2, Improved Counterspell 2, Missile Barrage 1, Wand Specialization 2 | Ice Block +0.00, Magic Absorption +0.00 |
-| frost-winters-chill-raid | frost-raid / raid-dps | Arcane Meditation 2, Arctic Reach 2, Frost Channeling 3, Ice Barrier 1, Ice Block 1, Shatter 3 | Arcane Blast 1, Arcane Concentration 5, Arcane Focus 3, Arcane Geometry 2, Arcane Subtlety 2, Cold Snap 1, Wand Specialization 2 | Magic Absorption +0.00, Arcane Shielding +0.00 |
-| frost-fingers-of-frost-raid | frost-raid / raid-dps | - | Arcane Concentration 5, Arcane Focus 5, Arcane Impact 3, Arcane Meditation 3, Arcane Subtlety 2, Improved Cone of Cold 1, Missile Barrage 1, Wand Specialization 1 | Winter's Chill +2.72, Incineration +0.72 |
-| fire-raid | fire-raid / raid-dps | Magic Absorption 2, Wand Specialization 2 | Arcane Focus 5 | Permafrost +0.00, Improved Frostbolt +0.00 |
+| frost-arcane-power-raid | frost-raid / raid-dps | Arcane Blast 1, Missile Barrage 1 | Improved Channeling 5 | Frost Channeling +0.71, Ice Block +0.00 |
+| frost-winters-chill-raid | frost-raid / raid-dps | Arcane Blast 1, Ice Barrier 1, Missile Barrage 1 | Arctic Reach 2, Cold Snap 1, Ice Block 1, Improved Channeling 3 | Arcane Meditation +1.81, Presence of Mind +1.63 |
+| frost-fingers-of-frost-raid | frost-raid / raid-dps | - | Improved Channeling 3, Missile Barrage 1 | Winter's Chill +2.30, Arcane Mind +0.87 |
+| fire-raid | fire-raid / raid-dps | Arcane Subtlety 2, Burning Soul 2 | Improved Channeling 5 | Magic Absorption +0.00, Burning Soul +0.00 |
 | frostfire-raid | not scored (no model) | | | |
 | arcane-blast-raid | not scored (no model) | | | |
 | pvp-frost | frost-leveling / pvp | - | Arcane Blast 1, Improved Cone of Cold 3, Wand Specialization 2 | Presence of Mind +6.35, Frostbite +6.01 |
 | leveling-frost | frost-leveling / leveling-st | - | Arcane Focus 3, Cold Snap 1, Wand Specialization 2 | Incineration +0.14, Arctic Reach +0.05 |
 | opt-fire-leveling-leveling-st | fire-leveling / leveling-st | - | - | Shatter +0.14, Master of Elements +0.13 |
 | opt-frost-leveling-leveling-st | frost-leveling / leveling-st | - | Arcane Focus 3, Cold Snap 1, Wand Specialization 2 | Winter's Chill +0.07, Arctic Reach +0.05 |
-| opt-frost-raid-raid-dps-extwc | frost-raid / raid-dps-extwc | Ice Barrier 1, Ice Block 1, Wand Specialization 1 | Cold Snap 1, Improved Fireball 3, Wake of Fire 2 | Wand Specialization +0.00, Pyroblast +0.00 |
-| opt-frost-aoe-leveling-aoe | frost-aoe / leveling-aoe | Arcane Focus 2, Winter's Chill 3 | Cold Snap 1 | Arcane Focus +0.02, Frost Warding +0.01 |
-| opt-frost-raid-raid-dps | frost-raid / raid-dps | - | Arcane Concentration 5, Arcane Focus 5, Arcane Impact 3, Arcane Meditation 3, Arcane Subtlety 2, Improved Cone of Cold 1, Missile Barrage 1, Wand Specialization 1 | Winter's Chill +2.72, Incineration +0.72 |
-| opt-frost-raid-parse | frost-raid / parse | - | Arcane Focus 5, Arcane Impact 3, Magic Absorption 2 | Frost Channeling +0.29, Ice Block +0.00 |
-| opt-fire-raid-raid-dps | fire-raid / raid-dps | Flame Throwing 1, Magic Absorption 2, Wand Specialization 1 | Improved Channeling 5 | Wand Specialization +0.00, Permafrost +0.00 |
-| opt-fire-raid-parse | fire-raid / parse | Arcane Geometry 1, Magic Absorption 2 | Arcane Focus 4, Wand Specialization 2 | Permafrost +0.00, Improved Frostbolt +0.00 |
+| opt-frost-raid-raid-dps-extwc | frost-raid / raid-dps-extwc | Ice Barrier 1, Ice Block 1, Wand Specialization 1 | Cold Snap 1, Improved Fireball 3, Wake of Fire 2 | Arcane Focus +0.24, Improved Channeling +0.00 |
+| opt-frost-aoe-leveling-aoe | frost-aoe / leveling-aoe | Arcane Focus 2, Winter's Chill 3 | Cold Snap 1 | Frost Warding +0.01, Winter's Chill +0.00 |
+| arcane-pvp | not scored (no model) | | | |
+| fire-pvp | fire-leveling / pvp | - | - | Arctic Reach +1.12, Frost Warding +0.80 |
+| frost-pvp | frost-leveling / pvp | Missile Barrage 1 | - | Elemental Precision +1.18, Frost Channeling +0.90 |
+| arcane-leveling | frost-leveling / leveling-st | Arcane Resilience 1, Arcane Shielding 1, Magic Absorption 1 | Arcane Focus 3, Arcane Impact 3, Wand Specialization 2 | Fingers of Frost +1.58, Arcane Power +0.83 |
+| fire-leveling | fire-leveling / leveling-st | - | - | Impact +0.26, Flame Throwing +0.16 |
+| frost-ml-raid | frost-raid / raid-dps | - | Arcane Blast 1, Improved Channeling 2, Missile Barrage 1 | Arcane Mind +0.88, Frost Channeling +0.75 |
+| opt-frost-raid-raid-dps | frost-raid / raid-dps | - | Arcane Subtlety 2, Improved Cone of Cold 1, Missile Barrage 1, Wand Specialization 1 | Winter's Chill +2.29, Arcane Mind +0.87 |
+| opt-frost-raid-parse | frost-raid / parse | - | Improved Channeling 4 | Incineration +0.55, Arcane Mind +0.36 |
+| opt-fire-raid-raid-dps | fire-raid / raid-dps | Arcane Subtlety 2, Magic Absorption 2 | Improved Channeling 5 | Burning Soul +0.00, Arcane Blast +0.00 |
+| opt-fire-raid-parse | fire-raid / parse | Arcane Subtlety 2, Burning Soul 1, Magic Absorption 1 | Improved Channeling 5 | Burning Soul +0.00, Magic Absorption +0.00 |
 
 ## mage — Classic Era
 
@@ -115,17 +136,23 @@
 |---|---|---|---|---|
 | holy-raid-healer | holy-heal / raid-heal | Conviction 3, Deflection 3 (avoid counts 0 here), Improved Judgement 2, Pursuit of Justice 2 (move counts 0 here), Unyielding Faith 2 (resist counts 0 here), Voice of Truth 1 (resist counts 0 here) | - | Vindication +0.00, Toughness +0.00 |
 | ret-raid-dps | not scored (no model) | | | |
-| ret-full-buffs-raid | ret-dps / raid-dps | - | Toughness 5 | Reverence +2.19, Divine Intellect +1.00 |
-| prot-tank | prot-tank / raid-tank | - | Benediction 3 | Shield Specialization +0.56, Instrument of Law +0.33 |
+| ret-full-buffs-raid | ret-dps / raid-dps | - | Toughness 5 | Divine Intellect +1.04, Reverence +0.87 |
+| prot-tank | prot-tank / raid-tank | - | Eye for an Eye 1, Improved Judgement 2 | Shield Specialization +0.56, Instrument of Law +0.33 |
 | pvp-shockadin | holy-heal / pvp | Improved Judgement 2 | Conviction 5 | Repentance +6.00, Vindication +1.25 |
-| leveling-retribution | ret-dps / leveling-st | - | - | Deflection +0.10, Divine Intellect +0.04 |
-| opt-ret-dps-leveling-st | ret-dps / leveling-st | - | - | Benediction +0.08, Divine Intellect +0.05 |
-| opt-ret-dps-solo-60 | ret-dps / solo-60 | - | - | Benediction +0.08, Divine Intellect +0.05 |
-| opt-ret-dps-leveling-aoe | ret-dps / leveling-aoe | - | - | Holy Conduit +0.21, Anticipation +0.03 |
+| leveling-retribution | ret-dps / leveling-st | - | - | Deflection +0.08, Divine Intellect +0.05 |
+| holy-pvp | holy-heal / pvp | - | Precision 3 | Deflection +1.20, Anticipation +0.20 |
+| protection-pvp | not scored (no model) | | | |
+| retribution-pvp | not scored (no model) | | | |
+| opt-ret-dps-leveling-aoe | ret-dps / leveling-aoe | - | - | Pursuit of Justice +0.25, Anticipation +0.05 |
+| opt-ret-dps-leveling-st | ret-dps / leveling-st | - | - | Benediction +0.06, Divine Intellect +0.05 |
+| opt-ret-dps-solo-60 | ret-dps / solo-60 | - | - | Benediction +0.06, Divine Intellect +0.05 |
 | opt-holy-heal-raid-heal | holy-heal / raid-heal | - | Conviction 5, Deflection 5, Holy Conduit 2, Pursuit of Justice 1, Seal of Command 1, Vindication 3 | Voice of Truth +0.00, Vengeance +0.00 |
-| opt-ret-dps-raid-dps | ret-dps / raid-dps | - | - | Illumination +0.44, Voice of Truth +0.00 |
-| opt-ret-dps-parse | ret-dps / parse | - | Toughness 5 | Divine Intellect +0.18, Unyielding Faith +0.00 |
-| opt-prot-tank-raid-tank | prot-tank / raid-tank | - | Benediction 3 | Shield Specialization +0.56, Instrument of Law +0.33 |
+| holy-leveling | holy-heal / leveling-st | Conviction 3, Improved Judgement 2, Purifying Power 2, Unyielding Faith 2 | - | Divine Precision +0.97, Deflection +0.20 |
+| protection-leveling | not scored (no model) | | | |
+| retribution-ml-raid | not scored (no model) | | | |
+| opt-ret-dps-raid-dps | ret-dps / raid-dps | - | Toughness 5 | Reverence +0.86, Two-Handed Weapon Specialization +0.70 |
+| opt-ret-dps-parse | ret-dps / parse | - | Toughness 5 | Divine Intellect +0.17, Redoubt +0.00 |
+| opt-prot-tank-raid-tank | prot-tank / raid-tank | - | Benediction 1, Eye for an Eye 2 | Shield Specialization +0.56, Instrument of Law +0.33 |
 
 ## paladin — Classic Era
 
@@ -133,25 +160,29 @@
 |---|---|---|---|---|
 | holy-raid-healer | holy-heal / raid-heal | Improved Blessing of Might 5 | Toughness 3, Unyielding Faith 2 | Lasting Judgement +0.30, Benediction +0.04 |
 | ret-raid-dps | not scored (no model) | | | |
-| prot-tank | prot-tank / raid-tank | - | - | Improved Seal of Righteousness +1.59, Reckoning +0.74 |
+| prot-tank | prot-tank / raid-tank | - | - | Improved Seal of Righteousness +1.51, Reckoning +0.72 |
 | pvp-shockadin | holy-heal / pvp | Benediction 5, Conviction 5, Improved Blessing of Might 5, Improved Judgement 2, Improved Seal of the Crusader 3 | Divine Strength 3 | Seal of Command +2.25, Vindication +1.25 |
-| leveling-retribution | ret-dps / leveling-st | Improved Retribution Aura 2 | - | Vindication +0.08, Improved Devotion Aura +0.03 |
+| leveling-retribution | ret-dps / leveling-st | Improved Retribution Aura 2 | - | Vindication +0.06, Improved Devotion Aura +0.02 |
 
 ## priest — Forever
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| holy-raid-healer | holy-heal / raid-heal | - | Divine Fury 1, Power in Light 2 | Spiritual Guidance +1.30, Spirit of Redemption +0.50 |
-| disc-penance-healer | holy-heal / raid-heal | - | Divine Fury 5 | Spiritual Guidance +1.22, Litany of Light +1.00 |
+| holy-raid-healer | holy-heal / raid-heal | - | Divine Fury 1, Power in Light 2 | Spiritual Guidance +1.31, Spirit of Redemption +0.50 |
+| disc-penance-healer | holy-heal / raid-heal | - | Divine Fury 5 | Mental Strength +1.41, Spiritual Guidance +1.24 |
 | shadow-pvp | shadow-dps / pvp | - | - | Soul Warding +2.25, Improved Mana Burn +1.12 |
 | leveling-shadow | shadow-dps / leveling-st | Inner Focus 1, Mental Strength 1 | Improved Power Word: Shield 3, Improved Shadow Word: Pain 2, Martyrdom 2, Meditation 3, Mental Agility 3, Silence 1, Spirit Tap 5 | Blackout +0.14, Mental Strength +0.04 |
 | opt-shadow-dps-leveling-st | shadow-dps / leveling-st | Improved Power Word: Shield 2 | Improved Renew 2, Spirit Tap 1, Twilight Focus 3 | Improved Power Word: Shield +0.01, Blessed Recovery +0.01 |
 | opt-shadow-dps-solo-60 | shadow-dps / solo-60 | Improved Power Word: Shield 2 | Improved Renew 2, Spirit Tap 1, Twilight Focus 3 | Improved Power Word: Shield +0.01, Blessed Recovery +0.01 |
 | opt-shadow-dps-leveling-aoe | shadow-dps / leveling-aoe | Mental Strength 2 | Early Demise 2, Improved Fade 1, Improved Psychic Scream 2, Improved Shadow Word: Pain 2, Martyrdom 2, Meditation 3, Silence 1, Spirit Tap 2, Twin Disciplines 4, Wand Specialization 2 | Shadow Weaving +0.22, Shadow Focus +0.18 |
-| opt-holy-heal-raid-heal | holy-heal / raid-heal | - | Divine Fury 1, Power in Light 2 | Spiritual Guidance +1.30, Spirit of Redemption +0.50 |
 | smite-discipline-raid | not scored (no model) | | | |
-| opt-shadow-dps-raid-dps | shadow-dps / raid-dps | - | Meditation 3, Power in Light 5, Shadow Affinity 3, Shadow Reach 1, Vampiric Embrace 1, Wand Specialization 2 | Inner Focus +4.64, Penance +1.20 |
-| opt-shadow-dps-parse | shadow-dps / parse | - | Blackout 4, Power in Light 5, Vampiric Embrace 1, Wand Specialization 1 | Mental Strength +0.35, Wand Specialization +0.00 |
+| discipline-pvp | holy-heal / pvp | - | Spirit Tap 1 | Improved Inner Fire +0.70, Holy Specialization +0.21 |
+| holy-pvp | holy-heal / pvp | - | Spirit Tap 1 | Spell Warding +0.75, Holy Specialization +0.34 |
+| opt-holy-heal-raid-heal | holy-heal / raid-heal | - | Divine Fury 1, Power in Light 2 | Spiritual Guidance +1.31, Spirit of Redemption +0.50 |
+| discipline-leveling | not scored (no model) | | | |
+| holy-leveling | holy-heal / leveling-st | - | Power in Light 2 | Spiritual Guidance +1.53, Spirit Tap +1.23 |
+| opt-shadow-dps-raid-dps | shadow-dps / raid-dps | - | Devouring Contagion 2, Power in Light 5, Shadow Affinity 3, Shadow Reach 1, Vampiric Embrace 1, Wand Specialization 2 | Inner Focus +5.83, Early Demise +0.78 |
+| opt-shadow-dps-parse | shadow-dps / parse | - | Martyrdom 2, Mental Agility 1, Shadow Affinity 3, Silence 1, Silent Resolve 3, Vampiric Embrace 1 | Mental Strength +0.28, Mental Agility +0.04 |
 
 ## priest — Classic Era
 
@@ -166,22 +197,27 @@
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| combat-swords-raid | combat-swords-raid / raid-dps | Improved Expose Armor 2 | Deflection 3, Endurance 1, Improved Sprint 2, Riposte 1 | Weapon Expertise +1.61, Improved Poisons +1.12 |
-| combat-daggers-raid | combat-daggers-raid / raid-dps | - | Endurance 2, Improved Sprint 2, Lightning Reflexes 2 | Lethality +1.07, Improved Expose Armor +0.62 |
+| combat-swords-raid | combat-swords-raid / raid-dps | Improved Expose Armor 2 | Deflection 3, Lightning Reflexes 3, Riposte 1 | Weapon Expertise +1.58, Improved Poisons +1.30 |
+| combat-daggers-raid | combat-daggers-raid / raid-dps | - | Deflection 1, Lightning Reflexes 5 | Improved Expose Armor +4.78, Lethality +0.98 |
 | assassination-mutilate-raid | not scored (no model) | | | |
 | assassination-seal-fate-raid | not scored (no model) | | | |
 | subtlety-hemo-raid | not scored (no model) | | | |
-| pvp-seal-fate-daggers | combat-daggers-raid / pvp | - | - | Ghostly Strike +4.28, Improved Gouge +2.00 |
+| pvp-seal-fate-daggers | combat-daggers-raid / pvp | - | - | Ghostly Strike +4.27, Improved Gouge +2.00 |
 | pvp-hemo-prep | combat-swords-raid / pvp | Thousand Cuts 1 | Hemorrhage 1 | Improved Kidney Shot +3.00, Mutilate +2.25 |
 | leveling-combat-swords | combat-swords-raid / leveling-st | Mutilate 1 | Endurance 1, Improved Gouge 3, Improved Slice and Dice 3, Improved Sprint 2 | Opportunity +0.26, Vile Poisons +0.25 |
-| opt-combat-daggers-raid-leveling-st | combat-daggers-raid / leveling-st | - | - | Vigor +0.24, Blade Flurry +0.24 |
+| opt-combat-daggers-raid-leveling-st | combat-daggers-raid / leveling-st | - | - | Blade Flurry +0.26, Vigor +0.24 |
 | opt-combat-swords-raid-leveling-st | combat-swords-raid / leveling-st | - | Improved Gouge 1 | Master of Deception +0.20, Dual Wield Specialization +0.18 |
 | opt-combat-swords-raid-solo-60 | combat-swords-raid / solo-60 | - | Improved Gouge 1 | Master of Deception +0.20, Dual Wield Specialization +0.18 |
 | opt-combat-swords-raid-leveling-aoe | combat-swords-raid / leveling-aoe | - | Improved Gouge 1 | Dual Wield Specialization +0.23, Lightning Reflexes +0.17 |
-| opt-combat-swords-raid-raid-dps | combat-swords-raid / raid-dps | - | Lightning Reflexes 5, Puncturing Wounds 2 | Vigor +0.97, Cold Blood +0.97 |
-| opt-combat-swords-raid-parse | combat-swords-raid / parse | - | Lightning Reflexes 5, Puncturing Wounds 2 | Vigor +0.97, Cold Blood +0.97 |
-| opt-combat-daggers-raid-raid-dps | combat-daggers-raid / raid-dps | - | Endurance 1, Improved Sinister Strike 2, Lightning Reflexes 3 | Murder +1.12, Lethality +1.06 |
-| opt-combat-daggers-raid-parse | combat-daggers-raid / parse | - | Endurance 1, Improved Sinister Strike 2, Lightning Reflexes 3 | Lethality +1.09, Dual Wield Specialization +1.02 |
+| combat-leveling | combat-swords-raid / leveling-st | - | Blade Flurry 1, Improved Gouge 1 | Improved Poisons +0.24, Vile Poisons +0.21 |
+| assassination-pvp | not scored (no model) | | | |
+| combat-pvp | combat-swords-raid / pvp | - | - | Heightened Senses +1.63, Dirty Tricks +1.12 |
+| combat-raid | combat-swords-raid / raid-dps | Opportunity 2 | Endurance 1, Improved Expose Armor 2, Lightning Reflexes 3, Puncturing Wounds 3 | Improved Poisons +1.30, Murder +0.98 |
+| subtlety-leveling | not scored (no model) | | | |
+| opt-combat-swords-raid-raid-dps | combat-swords-raid / raid-dps | - | Deflection 2, Lightning Reflexes 5 | Vigor +0.90, Hack and Slash +0.88 |
+| opt-combat-swords-raid-parse | combat-swords-raid / parse | - | Deflection 3, Lightning Reflexes 3, Riposte 1 | Vigor +0.90, Lethality +0.89 |
+| opt-combat-daggers-raid-raid-dps | combat-daggers-raid / raid-dps | - | Deflection 1, Lightning Reflexes 5 | Lethality +1.06, Flawless Execution +0.78 |
+| opt-combat-daggers-raid-parse | combat-daggers-raid / parse | - | Deflection 1, Lightning Reflexes 5 | Lethality +1.08, Flawless Execution +0.77 |
 
 ## rogue — Classic Era
 
@@ -198,19 +234,26 @@
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
 | resto-raid-healer | resto-heal / raid-heal | - | - | Natural Grace +0.20, Improved Reincarnation +0.00 |
-| elemental-raid-dps | elemental-dps / raid-dps | - | Earth's Grasp 2, Elemental Weapons 1, Guardian Totems 2, Improved Lightning Shield 3, Reverberation 4, Stormstrike 1 | Elemental Fury +3.05, Totemic Focus +0.06 |
-| enhancement-raid-dps | enhancement-dps / raid-dps | - | - | Call of Flame +1.73, Tidal Focus +1.19 |
+| elemental-raid-dps | elemental-dps / raid-dps | - | Anticipation 3, Earth's Grasp 2, Reverberation 4, Stormstrike 1, Toughness 3 | Elemental Fury +3.12, Totemic Focus +0.11 |
+| enhancement-raid-dps | enhancement-dps / raid-dps | - | - | Call of Flame +1.67, Tidal Focus +1.37 |
 | pvp-elemental-ns | elemental-dps / pvp | - | Natural Grace 1, Tidal Mastery 5 | Lava Burst +4.39, Eye of the Storm +2.08 |
 | leveling-enhancement | enhancement-dps / leveling-st | Improved Stormstrike 2 | Elemental Weapons 3, Maelstrom Weapon 5 | Improved Ghost Wolf +0.50, Guardian Totems +0.30 |
 | opt-enhancement-dps-leveling-st | enhancement-dps / leveling-st | - | - | Toughness +0.15, Reverberation +0.13 |
 | opt-enhancement-dps-solo-60 | enhancement-dps / solo-60 | - | - | Mindfulness +0.07, Concussion +0.04 |
 | opt-enhancement-dps-leveling-aoe | enhancement-dps / leveling-aoe | - | Mental Quickness 2, Totemic Focus 5 | Improved Lightning Shield +0.04, Shamanistic Focus +0.03 |
 | opt-elemental-dps-leveling-st | elemental-dps / leveling-st | - | - | Anticipation +0.20, Improved Reincarnation +0.20 |
+| elemental-raid | elemental-dps / raid-dps | - | Elemental Reach 1, Eye of the Storm 3 | Ancestral Knowledge +0.72, Healing Focus +0.00 |
+| elemental-pvp | elemental-dps / pvp | Improved Fire Nova 1 | - | Elemental Warding +0.60, Call of Flame +0.51 |
+| enhancement-pvp | enhancement-dps / pvp | - | Elemental Weapons 1 | Maelstrom Weapon +0.45, Flurry +0.44 |
+| restoration-pvp | resto-heal / pvp | - | - | Spirit Weapons +2.00, Toughness +1.00 |
 | opt-resto-heal-raid-heal | resto-heal / raid-heal | - | - | Natural Grace +0.20, Improved Reincarnation +0.00 |
-| opt-elemental-dps-raid-dps | elemental-dps / raid-dps | - | Elemental Warding 3, Reverberation 1 | Ancestral Knowledge +0.24, Improved Reincarnation +0.00 |
-| opt-elemental-dps-parse | elemental-dps / parse | - | Elemental Warding 3, Reverberation 1 | Ancestral Knowledge +0.12, Improved Reincarnation +0.00 |
-| opt-enhancement-dps-raid-dps | enhancement-dps / raid-dps | - | - | Tidal Focus +1.23, Elemental Devastation +1.08 |
-| opt-enhancement-dps-parse | enhancement-dps / parse | - | - | Elemental Devastation +0.96, Reverberation +0.50 |
+| restoration-leveling | not scored (no model) | | | |
+| enhancement-ml-raid | enhancement-dps / raid-dps | - | - | Lightning Overload +0.68, Elemental Alacrity +0.38 |
+| enhancement-ml-parse | enhancement-dps / raid-dps | Improved Fire Nova 2, Improved Stormstrike 2 | - | Elemental Alacrity +0.39, Concussion +0.28 |
+| opt-elemental-dps-raid-dps | elemental-dps / raid-dps | - | Elemental Reach 1, Eye of the Storm 3 | Ancestral Knowledge +0.72, Healing Focus +0.00 |
+| opt-elemental-dps-parse | elemental-dps / parse | - | Elemental Reach 1, Eye of the Storm 3 | Ancestral Knowledge +0.12, Healing Focus +0.00 |
+| opt-enhancement-dps-raid-dps | enhancement-dps / raid-dps | - | - | Tidal Focus +1.40, Elemental Devastation +0.94 |
+| opt-enhancement-dps-parse | enhancement-dps / parse | - | - | Elemental Devastation +0.80, Elemental Focus +0.44 |
 
 ## shaman — Classic Era
 
@@ -226,22 +269,29 @@
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| ds-ruin-raid | sb-raid / raid-dps | - | Demonic Embrace 5, Improved Health Funnel 2 | Improved Life Tap +2.62, Cataclysm +0.88 |
-| affliction-dot-raid | affliction-raid / raid-dps | - | - | Aftermath +0.70, Malediction +0.63 |
-| destruction-fire-raid | fire-destro-raid / raid-dps | - | Demonic Aegis 2, Improved Health Funnel 2, Improved Imp 3 | Improved Bane of Agony +1.14, Ruin +1.08 |
+| ds-ruin-raid | sb-raid / raid-dps | - | Demonic Aegis 2, Demonic Embrace 5 | Improved Life Tap +2.66, Cataclysm +0.90 |
+| affliction-dot-raid | affliction-raid / raid-dps | - | - | Cataclysm +0.83, Aftermath +0.82 |
+| destruction-fire-raid | fire-destro-raid / raid-dps | - | Demonic Aegis 2, Demonic Embrace 5 | Conflagrate +3.20, Improved Bane of Agony +1.11 |
 | demonology-pact-raid | not scored (no model) | | | |
 | destruction-incinerate-raid | not scored (no model) | | | |
-| pvp-soul-link | affliction-leveling / pvp | - | Demonic Sacrifice 1 | Improved Corruption +1.34, Demonic Knowledge +1.32 |
-| leveling-affliction | affliction-leveling / leveling-st | Curse of Exhaustion 1 (kite counts 0 here), Destructive Reach 2 (range counts 0 here), Improved Felhunter 2 (stun counts 0 here; needs the Felhunter) | Decimation 1, Demonic Energies 2, Demonic Sacrifice 1, Fel Domination 1, Improved Health Funnel 2, Improved Life Tap 2, Improved Sayaad 3, Improved Voidwalker 3, Master Summoner 2 | Malediction +0.30, Suppression +0.23 |
-| opt-affliction-leveling-leveling-st | affliction-leveling / leveling-st | - | Demonic Sacrifice 1, Fel Vitality 1, Improved Imp 3, Improved Voidwalker 3 | Shadow Mastery +0.38, Suppression +0.23 |
-| opt-affliction-leveling-solo-60 | affliction-leveling / solo-60 | - | Demonic Sacrifice 1, Fel Vitality 1, Improved Imp 3, Improved Voidwalker 3 | Shadow Mastery +0.37, Suppression +0.22 |
-| opt-affliction-leveling-leveling-aoe | affliction-leveling / leveling-aoe | - | Demonic Sacrifice 1, Master Summoner 2 | Shadow Mastery +0.13, Improved Drains +0.06 |
-| opt-affliction-raid-raid-dps | affliction-raid / raid-dps | - | - | Nightfall +0.86, Aftermath +0.71 |
-| opt-affliction-raid-parse | affliction-raid / parse | - | - | Aftermath +0.71, Malediction +0.64 |
-| opt-fire-destro-raid-raid-dps | fire-destro-raid / raid-dps | - | Demonic Aegis 2, Improved Health Funnel 2, Improved Imp 3 | Improved Bane of Agony +1.14, Ruin +1.08 |
-| opt-fire-destro-raid-parse | fire-destro-raid / parse | - | Demonic Aegis 2, Improved Health Funnel 2, Improved Imp 3 | Malediction +0.75, Aftermath +0.46 |
-| opt-sb-raid-raid-dps | sb-raid / raid-dps | - | Demonic Aegis 2, Improved Health Funnel 2, Improved Imp 3 | Improved Bane of Agony +1.50, Cataclysm +0.88 |
-| opt-sb-raid-parse | sb-raid / parse | - | Demonic Aegis 2, Improved Health Funnel 2, Improved Imp 3 | Malediction +0.72, Aftermath +0.68 |
+| pvp-soul-link | affliction-leveling / pvp | - | Demonic Embrace 5, Demonic Sacrifice 1 | Improved Corruption +1.33, Demonic Knowledge +1.27 |
+| leveling-affliction | affliction-leveling / leveling-st | Curse of Exhaustion 1 (kite counts 0 here), Destructive Reach 2 (range counts 0 here), Improved Felhunter 2 (stun counts 0 here; needs the Felhunter) | Decimation 1, Demonic Energies 2, Demonic Sacrifice 1, Fel Domination 1, Improved Health Funnel 2, Improved Life Tap 2, Improved Sayaad 3, Improved Voidwalker 3, Master Summoner 2 | Malediction +0.28, Suppression +0.25 |
+| affliction-pvp | affliction-raid / pvp | - | Demonic Sacrifice 1, Improved Voidwalker 1 | Bane +1.24, Wrack +1.14 |
+| demonology-pvp | not scored (no model) | | | |
+| destruction-pvp | not scored (no model) | | | |
+| opt-affliction-leveling-leveling-aoe | affliction-leveling / leveling-aoe | - | Demonic Sacrifice 1, Master Summoner 2 | Shadow Mastery +0.12, Improved Drains +0.05 |
+| opt-affliction-leveling-leveling-st | affliction-leveling / leveling-st | - | Demonic Aegis 2, Demonic Embrace 5, Demonic Sacrifice 1, Fel Vitality 1, Improved Imp 3, Improved Voidwalker 3 | Shadow Mastery +0.37, Malevolence +0.23 |
+| opt-affliction-leveling-solo-60 | affliction-leveling / solo-60 | - | Demonic Aegis 2, Demonic Embrace 5, Demonic Sacrifice 1, Fel Vitality 1, Improved Imp 3, Improved Voidwalker 3 | Shadow Mastery +0.36, Malevolence +0.21 |
+| affliction-leveling | affliction-leveling / leveling-st | Demonic Energies 1 | - | Aftermath +0.11, Improved Drains +0.06 |
+| demonology-leveling | affliction-leveling / leveling-st | - | Demonic Aegis 2, Demonic Brand 3, Demonic Embrace 2, Demonic Energies 2, Demonic Sacrifice 1, Improved Imp 3, Improved Life Tap 2, Improved Voidwalker 3 | Improved Corruption +0.33, Suppression +0.25 |
+| destruction-leveling | affliction-leveling / leveling-st | Destructive Reach 2 (range counts 0 here), Fire and Brimstone 1, Intensity 3 | Conflagrate 1 | Suppression +0.26, Malevolence +0.24 |
+| destruction-ml-raid | sb-raid / raid-dps | - | Demonic Aegis 2, Demonic Embrace 5 | Improved Corruption +1.95, Improved Bane of Agony +1.39 |
+| opt-affliction-raid-raid-dps | affliction-raid / raid-dps | - | - | Aftermath +0.85, Malediction +0.62 |
+| opt-affliction-raid-parse | affliction-raid / parse | - | - | Aftermath +0.84, Malediction +0.64 |
+| opt-fire-destro-raid-raid-dps | fire-destro-raid / raid-dps | - | Demonic Aegis 2, Demonic Embrace 5 | Improved Corruption +1.64, Improved Bane of Agony +1.19 |
+| opt-fire-destro-raid-parse | fire-destro-raid / parse | - | Demonic Aegis 2, Demonic Embrace 5 | Improved Bane of Agony +1.10, Amplify Curse +1.10 |
+| opt-sb-raid-raid-dps | sb-raid / raid-dps | - | Demonic Aegis 2, Demonic Embrace 5 | Cataclysm +0.90, Aftermath +0.84 |
+| opt-sb-raid-parse | sb-raid / parse | - | Demonic Aegis 2, Demonic Embrace 5 | Improved Bane of Agony +1.28, Pandemic +1.19 |
 
 ## warlock — Classic Era
 
@@ -249,27 +299,33 @@
 |---|---|---|---|---|
 | ds-ruin-raid | sb-raid / raid-dps | Demonic Sacrifice 1 | Demonic Embrace 5, Fel Domination 1, Fel Intellect 5, Fel Stamina 5, Improved Healthstone 2, Master Summoner 2 | Improved Corruption +0.75, Improved Immolate +0.43 |
 | sm-ruin-raid | sb-raid / raid-dps | - | Grim Reach 2, Improved Drain Soul 2, Siphon Life 1 | Improved Immolate +0.43, Cataclysm +0.24 |
-| pvp-soul-link | affliction-leveling / pvp | - | Demonic Sacrifice 1 | Siphon Life +11.52, Master Summoner +1.12 |
-| leveling-affliction-demo | affliction-leveling / leveling-st | - | Fel Intellect 2, Fel Stamina 5, Grim Reach 2, Improved Life Tap 2, Nightfall 2 | Master Summoner +0.40, Improved Shadow Bolt +0.31 |
+| pvp-soul-link | affliction-leveling / pvp | - | Demonic Sacrifice 1 | Siphon Life +11.75, Master Summoner +1.12 |
+| leveling-affliction-demo | affliction-leveling / leveling-st | - | Fel Intellect 2, Fel Stamina 5, Grim Reach 2, Improved Life Tap 2, Nightfall 2 | Master Summoner +0.40, Improved Shadow Bolt +0.29 |
 
 ## warrior — Forever
 
 | Build | Scenario (model / profile) | Dead points | Filler points | Best next point |
 |---|---|---|---|---|
-| fury-dw-raid | fury-dw-raid / raid-dps | - | Booming Voice 2, Enrage 5, Improved Rend 3, Improved Tactical Mastery 5 | Deep Wounds +1.73, Improved Berserker Rage +0.21 |
-| arms-2h-raid | arms-2h-raid / raid-dps | - | Booming Voice 2, Improved Heroic Strike 3, Improved Rend 3, Improved Tactical Mastery 5 | Impale +2.63, Spearing Strike +0.89 |
-| prot-raid-tank | prot-tank / raid-tank | - | Improved Tactical Mastery 5 | Improved Shield Bash +0.30, Improved Bloodrage +0.28 |
+| fury-dw-raid | fury-dw-raid / raid-dps | - | Booming Voice 5, Enrage 5, Improved Heroic Strike 2, Improved Rend 3, Improved Tactical Mastery 5 | Deep Wounds +2.32, Improved Berserker Rage +0.19 |
+| arms-2h-raid | arms-2h-raid / raid-dps | - | Booming Voice 5, Deflection 3, Improved Rend 3, Improved Tactical Mastery 5 | Spearing Strike +0.89, Impale +0.76 |
+| arms-battle-raid | not scored (no model) | | | |
+| prot-raid-tank | prot-tank / raid-tank | - | Improved Tactical Mastery 5 | Vanguard +1.00, Improved Shield Bash +0.30 |
 | arms-pvp | arms-2h-raid / pvp | - | Improved Heroic Strike 2 | Blood Craze +11.41, Death Wish +8.04 |
 | leveling-arms | arms-2h-raid / leveling-st | - | Piercing Howl 1, Sweeping Strikes 1 | Death Wish +1.86, Weaponmaster +0.70 |
 | opt-arms-2h-raid-leveling-st | arms-2h-raid / leveling-st | - | Deflection 2, Sweeping Strikes 1 | Death Wish +1.83, Precision +0.60 |
-| opt-fury-dw-raid-leveling-st | fury-dw-raid / leveling-st | - | - | Improved Intercept +0.20, Deflection +0.11 |
-| opt-fury-dw-raid-solo-60 | fury-dw-raid / solo-60 | - | - | Improved Intercept +0.20, Deflection +0.11 |
+| opt-fury-dw-raid-leveling-st | fury-dw-raid / leveling-st | - | Improved Heroic Strike 3 | Improved Intercept +0.20, Deflection +0.11 |
+| opt-fury-dw-raid-solo-60 | fury-dw-raid / solo-60 | - | Improved Heroic Strike 3 | Improved Intercept +0.20, Deflection +0.11 |
 | opt-arms-2h-raid-leveling-aoe | arms-2h-raid / leveling-aoe | - | Boundless Rage 1 | Dual Wield Specialization +0.06, Improved Berserker Rage +0.04 |
-| opt-arms-2h-raid-raid-dps | arms-2h-raid / raid-dps | - | Booming Voice 2, Improved Heroic Strike 3, Improved Rend 3, Improved Tactical Mastery 5 | Two-Handed Weapon Specialization +1.76, Spearing Strike +0.90 |
-| opt-arms-2h-raid-parse | arms-2h-raid / parse | - | Booming Voice 2, Improved Heroic Strike 3, Improved Rend 3, Improved Tactical Mastery 5 | Two-Handed Weapon Specialization +1.76, Spearing Strike +0.90 |
-| opt-fury-dw-raid-raid-dps | fury-dw-raid / raid-dps | - | Blood Craze 2, Enrage 5, Improved Rend 3, Improved Tactical Mastery 5 | Bloodthirst +0.49, Improved Berserker Rage +0.21 |
-| opt-fury-dw-raid-parse | fury-dw-raid / parse | - | Blood Craze 2, Enrage 5, Improved Rend 3, Improved Tactical Mastery 5 | Bloodthirst +0.49, Improved Berserker Rage +0.21 |
-| opt-prot-tank-raid-tank | prot-tank / raid-tank | - | Improved Tactical Mastery 5 | Improved Shield Bash +0.30, Improved Bloodrage +0.28 |
+| arms-pvp | arms-2h-raid / pvp | - | - | Enrage +1.02, Weaponmaster +0.73 |
+| fury-pvp | fury-dw-raid / pvp | - | - | Iron Will +0.65, Flurry +0.65 |
+| protection-pvp | not scored (no model) | | | |
+| protection-leveling | not scored (no model) | | | |
+| arms-community-parse | not scored (no model) | | | |
+| opt-arms-2h-raid-raid-dps | arms-2h-raid / raid-dps | - | Booming Voice 2, Deflection 3, Improved Rend 3, Improved Tactical Mastery 5 | Impale +0.77, Improved Berserker Rage +0.12 |
+| opt-arms-2h-raid-parse | arms-2h-raid / parse | - | Booming Voice 2, Deflection 3, Improved Rend 3, Improved Tactical Mastery 5 | Impale +0.82, Improved Berserker Rage +0.12 |
+| opt-fury-dw-raid-raid-dps | fury-dw-raid / raid-dps | - | Booming Voice 2, Deflection 2, Enrage 5, Improved Rend 3, Improved Tactical Mastery 5 | Deep Wounds +2.32, Improved Berserker Rage +0.19 |
+| opt-fury-dw-raid-parse | fury-dw-raid / parse | - | Booming Voice 2, Deflection 2, Enrage 5, Improved Rend 3, Improved Tactical Mastery 5 | Deep Wounds +2.31, Improved Berserker Rage +0.19 |
+| opt-prot-tank-raid-tank | prot-tank / raid-tank | - | Improved Tactical Mastery 5 | Improved Shield Bash +0.30, Improved Bloodrage +0.27 |
 
 ## warrior — Classic Era
 

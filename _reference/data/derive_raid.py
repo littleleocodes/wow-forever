@@ -14,7 +14,7 @@ Records: `_reference/data/derived-raid.json` (generated; reused unless --fresh);
 """
 import argparse
 import datetime
-import fcntl
+from filelock import locked
 import json
 import pathlib
 import subprocess
@@ -39,8 +39,7 @@ def hand(b):
 
 
 def save(cls, key, rec):
-    with open(OUT.with_suffix(".lock"), "w") as lk:
-        fcntl.flock(lk, fcntl.LOCK_EX)
+    with locked(OUT.with_suffix(".lock")):
         old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
         old.setdefault(cls, {})[key] = rec
         OUT.write_text(json.dumps(old, indent=1) + "\n", encoding="utf-8")

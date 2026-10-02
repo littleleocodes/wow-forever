@@ -2,7 +2,7 @@
  "dummy": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "ml: Retribution",
+    "talents": "25003-053-32225231001330321",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
+   },
+   {
     "label": "opt-ret-dps-raid-dps",
-    "talents": "55003003001--05225331001330321"
+    "talents": "45003003004--05225131001330321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
@@ -116,23 +121,72 @@
     "gain_seed2": 0.0015846701889605797,
     "candidates": 236,
     "pass": 2
+   },
+   {
+    "round": 13,
+    "change": "spell probe: insert at the top: cast Holy Shock",
+    "gain_seed1": 0.0803,
+    "gain_seed2": 0.0802,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 14,
+    "change": "drop 'time to the next auto attack < 0.2s' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.2s and Seal of Righteousness is up and mana % \u2265 70%: cast Seal of Command",
+    "gain_seed1": 0.018637130949286762,
+    "gain_seed2": 0.018074949951220054,
+    "candidates": 346,
+    "pass": 5
+   },
+   {
+    "round": 15,
+    "change": "drop 'mana % \u2265 15%' from the condition: if mana % \u2265 15% and time to the next auto attack < 0.4s and Seal of Command is up: cast Seal of Righteousness",
+    "gain_seed1": 0.00209719075924486,
+    "gain_seed2": 0.002344855617423258,
+    "candidates": 338,
+    "pass": 5
+   },
+   {
+    "round": 16,
+    "change": "threshold 70% -> 65%: if mana % \u2265 15% and Seal of Righteousness is up and mana % \u2265 70%: cast Seal of Command",
+    "gain_seed1": 0.00523165002042969,
+    "gain_seed2": 0.005193448775669518,
+    "candidates": 336,
+    "pass": 5
+   },
+   {
+    "round": 17,
+    "change": "threshold 1s -> 2s: if time left on Seal of Command \u2264 1s and time left on Seal of Righteousness \u2264 1s: cast Seal of Command",
+    "gain_seed1": 0.002468493693924989,
+    "gain_seed2": 0.0021432976481712274,
+    "candidates": 336,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
+    "ml: Retribution": {
+     "before": 488.79432461379633,
+     "after": 532.8011464238223,
+     "base": 488.79432461379633,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "opt-ret-dps-raid-dps": {
-     "before": 348.3465854663899,
-     "after": 368.65873125855876,
-     "base": 348.3465854663899,
+     "before": 477.3764418234959,
+     "after": 527.9324569889839,
+     "base": 477.3764418234959,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 352.5332300606761,
-     "after": 365.6705199712005,
-     "base": 352.5332300606761,
+     "before": 478.40936045643923,
+     "after": 528.795631543062,
+     "base": 478.40936045643923,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -141,12 +195,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 5
  },
  "raid": {
   "class": "paladin",
   "spec": "ret-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -154,8 +208,13 @@
   "start": "ui\\specs\\paladin\\retribution\\apls\\default.apl.json",
   "builds": [
    {
+    "label": "ml: Retribution",
+    "talents": "25003-053-32225231001330321",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-retribution-bis.gear.json"
+   },
+   {
     "label": "opt-ret-dps-raid-dps",
-    "talents": "55003003001--05225331001330321"
+    "talents": "45003003004--05225131001330321"
    },
    {
     "label": "sim preset: P4/P5 Ret",
@@ -212,23 +271,56 @@
     "gain_seed2": 0.005706170426355017,
     "candidates": 226,
     "pass": 2
+   },
+   {
+    "round": 7,
+    "change": "spell probe: insert at the end: cast Holy Shock",
+    "gain_seed1": 0.0665,
+    "gain_seed2": 0.0659,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "insert in the middle: cast Consecration",
+    "gain_seed1": 0.07194219515162437,
+    "gain_seed2": 0.07058191170041628,
+    "candidates": 338,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "insert in the middle: cast Demonic Rune",
+    "gain_seed1": 0.001210965804301578,
+    "gain_seed2": 0.0020764052406254674,
+    "candidates": 348,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
+    "ml: Retribution": {
+     "before": 922.0928640117107,
+     "after": 1012.543675257232,
+     "base": 922.0928640117107,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0.00054819999935
+    },
     "opt-ret-dps-raid-dps": {
-     "before": 729.6436606966244,
-     "after": 779.1291332179237,
-     "base": 729.6436606966244,
+     "before": 889.0373038612057,
+     "after": 978.2896474344357,
+     "base": 889.0373038612057,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: P4/P5 Ret": {
-     "before": 727.3323289757651,
-     "after": 776.9306800263338,
-     "base": 727.3323289757651,
+     "before": 892.3219036147943,
+     "after": 981.8234176472205,
+     "base": 892.3219036147943,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -237,6 +329,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 5
  }
 }

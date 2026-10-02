@@ -1,0 +1,5808 @@
+{
+ "warlock/incinerate-raid/dummy/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "incinerate-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 564.26,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.4292
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/incinerate-raid/raid/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "incinerate-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 649.83,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.4595
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/fire-destro-raid/dummy/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "fire-destro-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 589.84,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1817
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "spell": 1293813,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/fire-destro-raid/raid/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "fire-destro-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 685.27,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1841
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "spell": 1293813,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/sb-raid/dummy/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "sb-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 606.01,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1792
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "spell": 1293813,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/sb-raid/raid/Destruction": {
+  "class": "warlock",
+  "spec": "Destruction",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 703.21,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1741
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "spell": 1293813,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "9/11/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "druid/balance-dps/dummy/Balance": {
+  "class": "druid",
+  "spec": "Balance",
+  "entry": "balance-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 533.93,
+  "abilities": [
+   {
+    "ability": "Moonkin Form",
+    "talent": "Moonkin Form",
+    "spell": 24858,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "33/5/13",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Berserk",
+    "talent": "Berserk",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Primal Bite",
+    "talent": "Primal Bite",
+    "spell": 1238073,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "32/16/3",
+     "vs_spec_build": -0.2486
+    },
+    "kept": false
+   }
+  ]
+ },
+ "druid/balance-dps/raid/Balance": {
+  "class": "druid",
+  "spec": "Balance",
+  "entry": "balance-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 611.9,
+  "abilities": [
+   {
+    "ability": "Moonkin Form",
+    "talent": "Moonkin Form",
+    "spell": 24858,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "33/5/13",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Berserk",
+    "talent": "Berserk",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Primal Bite",
+    "talent": "Primal Bite",
+    "spell": 1238073,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "35/16/0",
+     "vs_spec_build": -0.1807
+    },
+    "kept": false
+   }
+  ]
+ },
+ "druid/feral-cat-dps/dummy/Feral Combat": {
+  "class": "druid",
+  "spec": "Feral Combat",
+  "entry": "feral-cat-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 365.66,
+  "abilities": [
+   {
+    "ability": "Insect Swarm",
+    "talent": "Insect Swarm",
+    "spell": 24977,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "before the filler",
+     "gain_seed1": -0.0702,
+     "split": "16/32/3",
+     "vs_spec_build": -0.251
+    },
+    "kept": false
+   },
+   {
+    "ability": "Moonkin Form",
+    "talent": "Moonkin Form",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Berserk",
+    "talent": "Berserk",
+    "spell": 417141,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": -0.0009,
+     "split": "9/35/7",
+     "vs_spec_build": -0.0009
+    },
+    "kept": false
+   },
+   {
+    "ability": "Primal Bite",
+    "talent": "Primal Bite",
+    "spell": 1238073,
+    "builds": "one move from the spec's build",
+    "builds_tried": 9,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "8/36/7",
+     "vs_spec_build": -0.0108
+    },
+    "kept": false
+   }
+  ]
+ },
+ "druid/feral-cat-dps/raid/Feral Combat": {
+  "class": "druid",
+  "spec": "Feral Combat",
+  "entry": "feral-cat-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 574.22,
+  "abilities": [
+   {
+    "ability": "Insect Swarm",
+    "talent": "Insect Swarm",
+    "spell": 24977,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "before the filler",
+     "gain_seed1": -0.1193,
+     "split": "16/34/1",
+     "vs_spec_build": -0.3072
+    },
+    "kept": false
+   },
+   {
+    "ability": "Moonkin Form",
+    "talent": "Moonkin Form",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Berserk",
+    "talent": "Berserk",
+    "spell": 417141,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": -0.001,
+     "split": "9/35/7",
+     "vs_spec_build": -0.001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Primal Bite",
+    "talent": "Primal Bite",
+    "spell": 1238073,
+    "builds": "one move from the spec's build",
+    "builds_tried": 9,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "8/36/7",
+     "vs_spec_build": -0.0113
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/bm-raid/dummy/Beast Mastery": {
+  "class": "hunter",
+  "spec": "Beast Mastery",
+  "entry": "bm-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 452.28,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "spell": 19574,
+    "builds": "one move from the spec's build",
+    "builds_tried": 41,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0007,
+     "split": "31/20/0",
+     "vs_spec_build": -0.0076
+    },
+    "kept": false
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 53,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0001,
+     "split": "31/20/0",
+     "vs_spec_build": -0.0083
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.0131
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "35/0/16",
+     "vs_spec_build": -0.176
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "40/0/11",
+     "vs_spec_build": -0.1674
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.2151
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/bm-raid/raid/Beast Mastery": {
+  "class": "hunter",
+  "spec": "Beast Mastery",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 747.79,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "spell": 19574,
+    "builds": "one move from the spec's build",
+    "builds_tried": 41,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0002,
+     "split": "32/19/0",
+     "vs_spec_build": 0.0142
+    },
+    "kept": false
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 53,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0001,
+     "split": "31/20/0",
+     "vs_spec_build": 0.0136
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.0072
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "35/0/16",
+     "vs_spec_build": -0.1528
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "33/7/11",
+     "vs_spec_build": -0.13
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.1674
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/mm-lonewolf-raid/dummy/Marksmanship": {
+  "class": "hunter",
+  "spec": "Marksmanship",
+  "entry": "mm-lonewolf-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 437.45,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/30/0",
+     "vs_spec_build": -0.1063
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0559,
+     "split": "16/32/3",
+     "vs_spec_build": -0.0514,
+     "gain_seed2": 0.0553
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": -0.0025
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "spell": 1310786,
+    "builds": "one move from the spec's build",
+    "builds_tried": 9,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0497,
+     "split": "5/38/8",
+     "vs_spec_build": -0.052
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/32/16",
+     "vs_spec_build": -0.1201
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/40/11",
+     "vs_spec_build": -0.1109
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1726
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/mm-lonewolf-raid/raid/Marksmanship": {
+  "class": "hunter",
+  "spec": "Marksmanship",
+  "entry": "mm-lonewolf-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 827.2,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/30/0",
+     "vs_spec_build": -0.1137
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.024,
+     "split": "16/32/3",
+     "vs_spec_build": -0.0504,
+     "gain_seed2": 0.0228
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": -0.004
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/30/16",
+     "vs_spec_build": -0.1381
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/40/11",
+     "vs_spec_build": -0.0848
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1854
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/mm-raid/dummy/Marksmanship": {
+  "class": "hunter",
+  "spec": "Marksmanship",
+  "entry": "mm-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 395.95,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0005,
+     "split": "21/30/0",
+     "vs_spec_build": -0.0544
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0639,
+     "split": "16/32/3",
+     "vs_spec_build": -0.0141,
+     "gain_seed2": 0.0641
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/39/7",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "spell": 1310786,
+    "builds": "one move from the spec's build",
+    "builds_tried": 9,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0386,
+     "split": "5/39/7",
+     "vs_spec_build": -0.0386
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/32/16",
+     "vs_spec_build": -0.1074
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/40/11",
+     "vs_spec_build": -0.1054
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1507
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/mm-raid/raid/Marksmanship": {
+  "class": "hunter",
+  "spec": "Marksmanship",
+  "entry": "mm-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 748.13,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0002,
+     "split": "21/30/0",
+     "vs_spec_build": -0.0743
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0128,
+     "split": "16/32/3",
+     "vs_spec_build": -0.0339,
+     "gain_seed2": 0.0127
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 10,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": -0.0001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/38/8",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": -0.1245
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/40/11",
+     "vs_spec_build": -0.0805
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "spell": 1317257,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1696
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/melee-dps/dummy/Survival": {
+  "class": "hunter",
+  "spec": "Survival",
+  "entry": "melee-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 444.75,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.4484
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.1431,
+     "split": "16/2/33",
+     "vs_spec_build": -0.3496,
+     "gain_seed2": 0.1432
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.3231
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/16/30",
+     "vs_spec_build": -0.0133
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 85,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/15/31",
+     "vs_spec_build": -0.0085
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/melee-dps/raid/Survival": {
+  "class": "hunter",
+  "spec": "Survival",
+  "entry": "melee-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 967.33,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.3608
+    },
+    "kept": false
+   },
+   {
+    "ability": "Summon Hawk",
+    "talent": "Summon Hawk",
+    "spell": 1293527,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.1521,
+     "split": "20/0/31",
+     "vs_spec_build": -0.2189,
+     "gain_seed2": 0.1502
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 1293527
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 1293527
+       }
+      }
+     }
+    },
+    "at": 4
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.2964
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/16/30",
+     "vs_spec_build": -0.0114
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "one move from the spec's build",
+    "builds_tried": 85,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/16/30",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "hunter/bm-raid/dummy/Hybrid Beast Mastery/Marksmanship": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "entry": "bm-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 460.63,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0051,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0201,
+     "gain_seed2": 0.0049
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 19577
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 19577
+       }
+      }
+     }
+    },
+    "at": 4
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 7,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0046
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/18/16",
+     "vs_spec_build": -0.1969
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "25/15/11",
+     "vs_spec_build": -0.1871
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "hunter/bm-raid/raid/Hybrid Beast Mastery/Marksmanship": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "entry": "bm-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 797.53,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0078
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 7,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/18/16",
+     "vs_spec_build": -0.174
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/20/11",
+     "vs_spec_build": -0.1795
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "hunter/mm-raid/dummy/Hybrid Beast Mastery/Marksmanship": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "entry": "mm-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 450.55,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0004,
+     "split": "24/27/0",
+     "vs_spec_build": -0.0218
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 7,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.006
+    },
+    "kept": false
+   },
+   {
+    "ability": "Sniper Shot",
+    "talent": "Sniper Shot",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/18/16",
+     "vs_spec_build": -0.201
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/20/14",
+     "vs_spec_build": -0.2077
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "hunter/mm-raid/raid/Hybrid Beast Mastery/Marksmanship": {
+  "class": "hunter",
+  "spec": "Hybrid Beast Mastery/Marksmanship",
+  "entry": "mm-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 786.42,
+  "abilities": [
+   {
+    "ability": "Bestial Wrath",
+    "talent": "Bestial Wrath",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Intimidation",
+    "talent": "Intimidation",
+    "spell": 19577,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0094
+    },
+    "kept": false
+   },
+   {
+    "ability": "Scatter Shot",
+    "talent": "Scatter Shot",
+    "spell": 19503,
+    "builds": "one move from the spec's build",
+    "builds_tried": 7,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": -0.0053
+    },
+    "kept": false
+   },
+   {
+    "ability": "Trueshot Aura",
+    "talent": "Trueshot Aura",
+    "spell": 20906,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/29/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Counterattack",
+    "talent": "Counterattack",
+    "spell": 20910,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "18/17/16",
+     "vs_spec_build": -0.162
+    },
+    "kept": false
+   },
+   {
+    "ability": "Deterrence",
+    "talent": "Deterrence",
+    "spell": 19263,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/20/11",
+     "vs_spec_build": -0.1564
+    },
+    "kept": false
+   },
+   {
+    "ability": "Strider Kick",
+    "talent": "Strider Kick",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "mage/arcane-dps/dummy/Arcane": {
+  "class": "mage",
+  "spec": "Arcane",
+  "entry": "arcane-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 592.34,
+  "abilities": [
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "spell": 12042,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": -0.0018,
+     "split": "35/11/5",
+     "vs_spec_build": -0.0018
+    },
+    "kept": false
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.1643
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": -0.0,
+     "split": "35/11/5",
+     "vs_spec_build": -0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0001,
+     "split": "38/2/11",
+     "vs_spec_build": -0.1144
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/arcane-dps/raid/Arcane": {
+  "class": "mage",
+  "spec": "Arcane",
+  "entry": "arcane-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 689.59,
+  "abilities": [
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "spell": 12042,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0,
+     "split": "35/11/5",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.1625
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "one move from the spec's build",
+    "builds_tried": 12,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "35/11/5",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "37/3/11",
+     "vs_spec_build": -0.12
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/fire-raid/dummy/Fire": {
+  "class": "mage",
+  "spec": "Fire",
+  "entry": "fire-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 601.91,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "13/33/5",
+     "vs_spec_build": -0.0025
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "12/34/5",
+     "vs_spec_build": -0.0025
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "12/34/5",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/35/11",
+     "vs_spec_build": -0.2103
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/fire-raid/raid/Fire": {
+  "class": "mage",
+  "spec": "Fire",
+  "entry": "fire-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 752.13,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "13/33/5",
+     "vs_spec_build": -0.0066
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "12/34/5",
+     "vs_spec_build": -0.0066
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "12/34/5",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/35/11",
+     "vs_spec_build": -0.1908
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frost-raid/dummy/Frost": {
+  "class": "mage",
+  "spec": "Frost",
+  "entry": "frost-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 590.8,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "11/10/30",
+     "vs_spec_build": -0.1897
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1824
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/14/36",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "spell": 13033,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/13/37",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frost-raid/raid/Frost": {
+  "class": "mage",
+  "spec": "Frost",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 705.05,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "11/10/30",
+     "vs_spec_build": -0.1876
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/21/30",
+     "vs_spec_build": -0.1808
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/14/36",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "spell": 13033,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/13/37",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frost-raid/dummy/Hybrid Arcane/Frost": {
+  "class": "mage",
+  "spec": "Hybrid Arcane/Frost",
+  "entry": "frost-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 639.92,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "one move from the spec's build",
+    "builds_tried": 8,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/0/29",
+     "vs_spec_build": -0.0024
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/14/17",
+     "vs_spec_build": -0.3114
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "mage/frost-raid/raid/Hybrid Arcane/Frost": {
+  "class": "mage",
+  "spec": "Hybrid Arcane/Frost",
+  "entry": "frost-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 728.22,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "one move from the spec's build",
+    "builds_tried": 8,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/0/29",
+     "vs_spec_build": -0.002
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Pyroblast",
+    "talent": "Pyroblast",
+    "spell": 18809,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/11/20",
+     "vs_spec_build": -0.2787
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "mage/frostfire-raid/dummy/Hybrid Fire/Frost": {
+  "class": "mage",
+  "spec": "Hybrid Fire/Frost",
+  "entry": "frostfire-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 562.39,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0002,
+     "split": "11/20/20",
+     "vs_spec_build": -0.3225
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "spell": 12042,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "31/10/10",
+     "vs_spec_build": -0.3849
+    },
+    "kept": false
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "before the filler",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": -0.0001,
+     "split": "2/33/16",
+     "vs_spec_build": -0.0001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "spell": 13033,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/17/31",
+     "vs_spec_build": -0.3244
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0002,
+     "split": "2/32/17",
+     "vs_spec_build": 0.0002
+    },
+    "kept": false
+   }
+  ]
+ },
+ "mage/frostfire-raid/raid/Hybrid Fire/Frost": {
+  "class": "mage",
+  "spec": "Hybrid Fire/Frost",
+  "entry": "frostfire-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 672.6,
+  "abilities": [
+   {
+    "ability": "Arcane Blast",
+    "talent": "Arcane Blast",
+    "spell": 1239700,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0001,
+     "split": "11/29/11",
+     "vs_spec_build": -0.3103
+    },
+    "kept": false
+   },
+   {
+    "ability": "Arcane Power",
+    "talent": "Arcane Power",
+    "spell": 12042,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "31/10/10",
+     "vs_spec_build": -0.4428
+    },
+    "kept": false
+   },
+   {
+    "ability": "Blast Wave",
+    "talent": "Blast Wave",
+    "spell": 13021,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "before the filler",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Combustion",
+    "talent": "Combustion",
+    "spell": 11129,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Barrier",
+    "talent": "Ice Barrier",
+    "spell": 13033,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "3/17/31",
+     "vs_spec_build": -0.3049
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ice Lance",
+    "talent": "Ice Lance",
+    "spell": 1240047,
+    "builds": "one move from the spec's build",
+    "builds_tried": 13,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0,
+     "split": "2/32/17",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "paladin/ret-dps/dummy/Retribution": {
+  "class": "paladin",
+  "spec": "Retribution",
+  "entry": "ret-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 509.35,
+  "abilities": [
+   {
+    "ability": "Divine Favor",
+    "talent": "Divine Favor",
+    "spell": 20216,
+    "builds": "one move from the spec's build",
+    "builds_tried": 6,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/0/31",
+     "vs_spec_build": -0.0242
+    },
+    "kept": false
+   },
+   {
+    "ability": "Holy Shock",
+    "talent": "Holy Shock",
+    "spell": 20930,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0803,
+     "split": "21/0/30",
+     "vs_spec_build": -0.1626,
+     "gain_seed2": 0.0802
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 20930
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Light's Vigil",
+    "talent": "Light's Vigil",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Shield",
+    "talent": "Holy Shield",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Repentance",
+    "talent": "Repentance",
+    "spell": 20066,
+    "builds": "one move from the spec's build",
+    "builds_tried": 6,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "19/0/32",
+     "vs_spec_build": -0.0243
+    },
+    "kept": false
+   }
+  ]
+ },
+ "paladin/ret-dps/raid/Retribution": {
+  "class": "paladin",
+  "spec": "Retribution",
+  "entry": "ret-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 914.56,
+  "abilities": [
+   {
+    "ability": "Divine Favor",
+    "talent": "Divine Favor",
+    "spell": 20216,
+    "builds": "one move from the spec's build",
+    "builds_tried": 6,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0001,
+     "split": "20/0/31",
+     "vs_spec_build": -0.0165
+    },
+    "kept": false
+   },
+   {
+    "ability": "Holy Shock",
+    "talent": "Holy Shock",
+    "spell": 20930,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0665,
+     "split": "21/0/30",
+     "vs_spec_build": -0.1826,
+     "gain_seed2": 0.0659
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 20930
+       }
+      }
+     }
+    },
+    "at": 8
+   },
+   {
+    "ability": "Light's Vigil",
+    "talent": "Light's Vigil",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Shield",
+    "talent": "Holy Shield",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Repentance",
+    "talent": "Repentance",
+    "spell": 20066,
+    "builds": "one move from the spec's build",
+    "builds_tried": 6,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "19/0/32",
+     "vs_spec_build": -0.0164
+    },
+    "kept": false
+   }
+  ]
+ },
+ "priest/shadow-dps/dummy/Shadow": {
+  "class": "priest",
+  "spec": "Shadow",
+  "entry": "shadow-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 633.62,
+  "abilities": [
+   {
+    "ability": "Penance",
+    "talent": "Penance",
+    "spell": 1316995,
+    "builds": "one move from the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.4514
+    },
+    "kept": false
+   },
+   {
+    "ability": "Power Infusion",
+    "talent": "Power Infusion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Nova",
+    "talent": "Holy Nova",
+    "spell": 27801,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/11/40",
+     "vs_spec_build": -0.5709
+    },
+    "kept": false
+   },
+   {
+    "ability": "Prayer of Mending",
+    "talent": "Prayer of Mending",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Vampiric Embrace",
+    "talent": "Vampiric Embrace",
+    "spell": 15286,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0,
+     "split": "20/0/31",
+     "vs_spec_build": -0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "priest/shadow-dps/raid/Shadow": {
+  "class": "priest",
+  "spec": "Shadow",
+  "entry": "shadow-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 725.86,
+  "abilities": [
+   {
+    "ability": "Penance",
+    "talent": "Penance",
+    "spell": 1316995,
+    "builds": "one move from the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.2054
+    },
+    "kept": false
+   },
+   {
+    "ability": "Power Infusion",
+    "talent": "Power Infusion",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Holy Nova",
+    "talent": "Holy Nova",
+    "spell": 27801,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/11/40",
+     "vs_spec_build": -0.3872
+    },
+    "kept": false
+   },
+   {
+    "ability": "Prayer of Mending",
+    "talent": "Prayer of Mending",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Vampiric Embrace",
+    "talent": "Vampiric Embrace",
+    "spell": 15286,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "priest/smite-dps/dummy/Hybrid Discipline/Holy": {
+  "class": "priest",
+  "spec": "Hybrid Discipline/Holy",
+  "entry": "smite-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 487.24,
+  "abilities": [
+   {
+    "ability": "Power Infusion",
+    "talent": "Power Infusion",
+    "spell": 10060,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0,
+     "split": "31/17/3",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Holy Nova",
+    "talent": "Holy Nova",
+    "spell": 27801,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0,
+     "split": "31/17/3",
+     "vs_spec_build": -0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Prayer of Mending",
+    "talent": "Prayer of Mending",
+    "spell": 1240827,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/31/3",
+     "vs_spec_build": -0.2456
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mind Flay",
+    "talent": "Mind Flay",
+    "spell": 18807,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/20/11",
+     "vs_spec_build": -0.204
+    },
+    "kept": false
+   },
+   {
+    "ability": "Shadowform",
+    "talent": "Shadowform",
+    "spell": 15473,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0682,
+     "split": "10/10/31",
+     "vs_spec_build": -0.4231,
+     "gain_seed2": 0.0679
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 15473
+       }
+      }
+     }
+    },
+    "at": 9
+   },
+   {
+    "ability": "Vampiric Embrace",
+    "talent": "Vampiric Embrace",
+    "spell": 15286,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "17/18/16",
+     "vs_spec_build": -0.2199
+    },
+    "kept": false
+   }
+  ]
+ },
+ "priest/smite-dps/raid/Hybrid Discipline/Holy": {
+  "class": "priest",
+  "spec": "Hybrid Discipline/Holy",
+  "entry": "smite-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 635.57,
+  "abilities": [
+   {
+    "ability": "Power Infusion",
+    "talent": "Power Infusion",
+    "spell": 10060,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0,
+     "split": "31/17/3",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Holy Nova",
+    "talent": "Holy Nova",
+    "spell": 27801,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -1.0,
+     "split": "31/17/3",
+     "vs_spec_build": -1.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Prayer of Mending",
+    "talent": "Prayer of Mending",
+    "spell": 1240827,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/31/4",
+     "vs_spec_build": -0.1419
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mind Flay",
+    "talent": "Mind Flay",
+    "spell": 18807,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 24,
+    "best": {
+     "line": "dot not ticking",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "26/14/11",
+     "vs_spec_build": -0.1485
+    },
+    "kept": false
+   },
+   {
+    "ability": "Shadowform",
+    "talent": "Shadowform",
+    "spell": 15473,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.011,
+     "split": "10/10/31",
+     "vs_spec_build": -0.1826,
+     "gain_seed2": 0.0118
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 15473
+       }
+      }
+     }
+    },
+    "at": 13
+   },
+   {
+    "ability": "Vampiric Embrace",
+    "talent": "Vampiric Embrace",
+    "spell": 15286,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "19/16/16",
+     "vs_spec_build": -0.1507
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/assassination-raid/dummy/Assassination": {
+  "class": "rogue",
+  "spec": "Assassination",
+  "entry": "assassination-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 410.28,
+  "abilities": [
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "spell": 1310703,
+    "builds": "one move from the spec's build",
+    "builds_tried": 32,
+    "lines_tried": 36,
+    "best": {
+     "line": "at 5 combo points, aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0008,
+     "split": "31/18/2",
+     "vs_spec_build": -0.0119
+    },
+    "kept": false
+   },
+   {
+    "ability": "Adrenaline Rush",
+    "talent": "Adrenaline Rush",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.0001,
+     "split": "30/21/0",
+     "vs_spec_build": -0.1331
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 19,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/19/2",
+     "vs_spec_build": -0.0126
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.021,
+     "split": "39/1/11",
+     "vs_spec_build": -0.2178,
+     "gain_seed2": 0.0198
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 14278
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 14278
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0846,
+     "split": "30/0/21",
+     "vs_spec_build": -0.1777,
+     "gain_seed2": 0.0841
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 16511
+       }
+      }
+     }
+    },
+    "at": 8
+   }
+  ]
+ },
+ "rogue/assassination-raid/raid/Assassination": {
+  "class": "rogue",
+  "spec": "Assassination",
+  "entry": "assassination-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 697.73,
+  "abilities": [
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "spell": 1310703,
+    "builds": "one move from the spec's build",
+    "builds_tried": 32,
+    "lines_tried": 36,
+    "best": {
+     "line": "at 5 combo points, aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "31/18/2",
+     "vs_spec_build": -0.0106
+    },
+    "kept": false
+   },
+   {
+    "ability": "Adrenaline Rush",
+    "talent": "Adrenaline Rush",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0017,
+     "split": "30/21/0",
+     "vs_spec_build": -0.0984
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 19,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/20/1",
+     "vs_spec_build": -0.012
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "in the middle",
+     "gain_seed1": 0.0187,
+     "split": "39/1/11",
+     "vs_spec_build": -0.1745,
+     "gain_seed2": 0.0175
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 14278
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 14278
+       }
+      }
+     }
+    },
+    "at": 3
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0978,
+     "split": "30/0/21",
+     "vs_spec_build": -0.1485,
+     "gain_seed2": 0.0989
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 16511
+       }
+      }
+     }
+    },
+    "at": 6
+   }
+  ]
+ },
+ "rogue/combat-daggers-raid/dummy/Combat": {
+  "class": "rogue",
+  "spec": "Combat",
+  "entry": "combat-daggers-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 421.6,
+  "abilities": [
+   {
+    "ability": "Cold Blood",
+    "talent": "Cold Blood",
+    "spell": 14177,
+    "builds": "one move from the spec's build",
+    "builds_tried": 8,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0009,
+     "split": "17/32/2",
+     "vs_spec_build": -0.0049
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.1579,
+     "split": "21/30/0",
+     "vs_spec_build": -0.1486,
+     "gain_seed2": 0.1564
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 1241584
+       }
+      }
+     }
+    },
+    "at": 3
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0005,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0005
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 59,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/33/2",
+     "vs_spec_build": -0.007
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": -0.0081,
+     "split": "0/40/11",
+     "vs_spec_build": -0.2775
+    },
+    "kept": false
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": -0.0192,
+     "split": "0/30/21",
+     "vs_spec_build": -0.3366
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/combat-daggers-raid/raid/Combat": {
+  "class": "rogue",
+  "spec": "Combat",
+  "entry": "combat-daggers-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 712.14,
+  "abilities": [
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0987,
+     "split": "21/30/0",
+     "vs_spec_build": -0.1217,
+     "gain_seed2": 0.0987
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 1241584
+       }
+      }
+     }
+    },
+    "at": 6
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0007,
+     "split": "16/33/2",
+     "vs_spec_build": 0.0007
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 59,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0067
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": -0.0027,
+     "split": "0/40/11",
+     "vs_spec_build": -0.1823
+    },
+    "kept": false
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0212,
+     "split": "0/30/21",
+     "vs_spec_build": -0.2545
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/combat-swords-raid/dummy/Combat": {
+  "class": "rogue",
+  "spec": "Combat",
+  "entry": "combat-swords-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 373.2,
+  "abilities": [
+   {
+    "ability": "Cold Blood",
+    "talent": "Cold Blood",
+    "spell": 14177,
+    "builds": "one move from the spec's build",
+    "builds_tried": 8,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0002,
+     "split": "17/33/1",
+     "vs_spec_build": 0.0024
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "in the middle",
+     "gain_seed1": 0.015,
+     "split": "21/30/0",
+     "vs_spec_build": -0.1097,
+     "gain_seed2": 0.0125
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 1241584
+       }
+      }
+     }
+    },
+    "at": 3
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.001,
+     "split": "16/33/2",
+     "vs_spec_build": 0.001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 59,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/34/1",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0219,
+     "split": "0/40/11",
+     "vs_spec_build": -0.266,
+     "gain_seed2": 0.0217
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 14278
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 14278
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.13,
+     "split": "0/30/21",
+     "vs_spec_build": -0.2503,
+     "gain_seed2": 0.1313
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 16511
+       }
+      }
+     }
+    },
+    "at": 5
+   }
+  ]
+ },
+ "rogue/combat-swords-raid/raid/Combat": {
+  "class": "rogue",
+  "spec": "Combat",
+  "entry": "combat-swords-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 643.53,
+  "abilities": [
+   {
+    "ability": "Cold Blood",
+    "talent": "Cold Blood",
+    "spell": 14177,
+    "builds": "one move from the spec's build",
+    "builds_tried": 8,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0017,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0021
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0082,
+     "split": "21/30/0",
+     "vs_spec_build": -0.0769,
+     "gain_seed2": 0.0059
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 1241584
+       }
+      }
+     }
+    },
+    "at": 4
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0012,
+     "split": "16/33/2",
+     "vs_spec_build": -0.0012
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "one move from the spec's build",
+    "builds_tried": 59,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/34/1",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": 0.0184,
+     "split": "0/40/11",
+     "vs_spec_build": -0.1682,
+     "gain_seed2": 0.0176
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 14278
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 14278
+       }
+      }
+     }
+    },
+    "at": 0
+   },
+   {
+    "ability": "Hemorrhage",
+    "talent": "Hemorrhage",
+    "spell": 16511,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0858,
+     "split": "0/30/21",
+     "vs_spec_build": -0.1778,
+     "gain_seed2": 0.0865
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 16511
+       }
+      }
+     }
+    },
+    "at": 0
+   }
+  ]
+ },
+ "rogue/subtlety-raid/dummy/Subtlety": {
+  "class": "rogue",
+  "spec": "Subtlety",
+  "entry": "subtlety-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 384.38,
+  "abilities": [
+   {
+    "ability": "Cold Blood",
+    "talent": "Cold Blood",
+    "spell": 14177,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0003,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0003
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "one move from the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.0783
+    },
+    "kept": false
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Adrenaline Rush",
+    "talent": "Adrenaline Rush",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0048,
+     "split": "0/21/30",
+     "vs_spec_build": -0.3256,
+     "gain_seed2": 0.005
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 13877
+       }
+      }
+     }
+    },
+    "at": 10
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/11/35",
+     "vs_spec_build": -0.306
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   }
+  ]
+ },
+ "rogue/subtlety-raid/raid/Subtlety": {
+  "class": "rogue",
+  "spec": "Subtlety",
+  "entry": "subtlety-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 649.83,
+  "abilities": [
+   {
+    "ability": "Cold Blood",
+    "talent": "Cold Blood",
+    "spell": 14177,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "before the filler",
+     "gain_seed1": 0.0026,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0026,
+     "gain_seed2": 0.0037
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "castSpell": {
+       "spellId": {
+        "spellId": 14177
+       }
+      }
+     }
+    },
+    "at": 9
+   },
+   {
+    "ability": "Mutilate",
+    "talent": "Mutilate",
+    "spell": 1241584,
+    "builds": "one move from the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/0/30",
+     "vs_spec_build": -0.0558
+    },
+    "kept": false
+   },
+   {
+    "ability": "Venom",
+    "talent": "Venom",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Adrenaline Rush",
+    "talent": "Adrenaline Rush",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Blade Flurry",
+    "talent": "Blade Flurry",
+    "spell": 13877,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the top",
+     "gain_seed1": 0.0023,
+     "split": "0/21/30",
+     "vs_spec_build": -0.2356,
+     "gain_seed2": 0.0011
+    },
+    "kept": false
+   },
+   {
+    "ability": "Riposte",
+    "talent": "Riposte",
+    "spell": 14251,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "5/11/35",
+     "vs_spec_build": -0.2386
+    },
+    "kept": false
+   },
+   {
+    "ability": "Ghostly Strike",
+    "talent": "Ghostly Strike",
+    "spell": 14278,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "before the filler",
+     "gain_seed1": 0.0031,
+     "split": "20/0/31",
+     "vs_spec_build": 0.0031,
+     "gain_seed2": 0.0038
+    },
+    "kept": true,
+    "line": {
+     "action": {
+      "condition": {
+       "auraIsInactive": {
+        "sourceUnit": {
+         "type": "Self"
+        },
+        "auraId": {
+         "spellId": 14278
+        }
+       }
+      },
+      "castSpell": {
+       "spellId": {
+        "spellId": 14278
+       }
+      }
+     }
+    },
+    "at": 9
+   }
+  ]
+ },
+ "shaman/elemental-dps/dummy/Elemental": {
+  "class": "shaman",
+  "spec": "Elemental",
+  "entry": "elemental-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 441.15,
+  "abilities": [
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/16/5",
+     "vs_spec_build": -0.1726
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "32/3/16",
+     "vs_spec_build": -0.1764
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0001,
+     "split": "31/6/14",
+     "vs_spec_build": -0.0084
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/elemental-dps/raid/Elemental": {
+  "class": "shaman",
+  "spec": "Elemental",
+  "entry": "elemental-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 556.07,
+  "abilities": [
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "35/16/0",
+     "vs_spec_build": -0.1822
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "32/3/16",
+     "vs_spec_build": -0.192
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "31/7/13",
+     "vs_spec_build": -0.0013
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/enhancement-dps/dummy/Enhancement": {
+  "class": "shaman",
+  "spec": "Enhancement",
+  "entry": "enhancement-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 408.08,
+  "abilities": [
+   {
+    "ability": "Lava Burst",
+    "talent": "Lava Burst",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "spell": 425336,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the top",
+     "gain_seed1": -0.0003,
+     "split": "11/31/9",
+     "vs_spec_build": -0.0003
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": -0.2238
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0024,
+     "split": "3/35/13",
+     "vs_spec_build": -0.1287,
+     "gain_seed2": 0.0004
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/enhancement-dps/raid/Enhancement": {
+  "class": "shaman",
+  "spec": "Enhancement",
+  "entry": "enhancement-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 749.79,
+  "abilities": [
+   {
+    "ability": "Lava Burst",
+    "talent": "Lava Burst",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "spell": 425336,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.001,
+     "split": "11/31/9",
+     "vs_spec_build": 0.001
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/33/16",
+     "vs_spec_build": -0.2265
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0014,
+     "split": "0/40/11",
+     "vs_spec_build": -0.1525
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/elemental-dps/dummy/Hybrid Elemental/Enhancement": {
+  "class": "shaman",
+  "spec": "Hybrid Elemental/Enhancement",
+  "entry": "elemental-dps",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 438.14,
+  "abilities": [
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "29/22/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/19/16",
+     "vs_spec_build": -0.2454
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/16/14",
+     "vs_spec_build": -0.153
+    },
+    "kept": false
+   }
+  ]
+ },
+ "shaman/elemental-dps/raid/Hybrid Elemental/Enhancement": {
+  "class": "shaman",
+  "spec": "Hybrid Elemental/Enhancement",
+  "entry": "elemental-dps",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 555.72,
+  "abilities": [
+   {
+    "ability": "Rage of the Farseer",
+    "talent": "Rage of the Farseer",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Stormstrike",
+    "talent": "Stormstrike",
+    "spell": 17364,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 12,
+    "best": {
+     "line": "aura not on you",
+     "spot": "before the filler",
+     "gain_seed1": 0.0,
+     "split": "29/22/0",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Mana Tide Totem",
+    "talent": "Mana Tide Totem",
+    "spell": 17359,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "16/19/16",
+     "vs_spec_build": -0.2662
+    },
+    "kept": false
+   },
+   {
+    "ability": "Water Shield",
+    "talent": "Water Shield",
+    "spell": 408510,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "20/20/11",
+     "vs_spec_build": -0.2159
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/affliction-raid/dummy/Affliction": {
+  "class": "warlock",
+  "spec": "Affliction",
+  "entry": "affliction-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 639.29,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "spell": 1316697,
+    "builds": "one move from the spec's build",
+    "builds_tried": 60,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "31/0/20",
+     "vs_spec_build": -0.0214
+    },
+    "kept": false
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "34/11/6",
+     "vs_spec_build": -0.2052
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.2141
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.0111
+    },
+    "kept": false
+   },
+   {
+    "ability": "Conflagrate",
+    "talent": "Conflagrate",
+    "spell": 18932,
+    "builds": "one move from the spec's build",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.0111
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warlock/affliction-raid/raid/Affliction": {
+  "class": "warlock",
+  "spec": "Affliction",
+  "entry": "affliction-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 767.84,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "spell": 1316697,
+    "builds": "one move from the spec's build",
+    "builds_tried": 60,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0,
+     "split": "31/0/20",
+     "vs_spec_build": -0.0196
+    },
+    "kept": false
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "34/11/6",
+     "vs_spec_build": -0.2238
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/21/0",
+     "vs_spec_build": -0.2414
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.0147
+    },
+    "kept": false
+   },
+   {
+    "ability": "Conflagrate",
+    "talent": "Conflagrate",
+    "spell": 18932,
+    "builds": "one move from the spec's build",
+    "builds_tried": 20,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": -0.0,
+     "split": "30/0/21",
+     "vs_spec_build": -0.0093
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warlock/demonology-raid/dummy/Demonology": {
+  "class": "warlock",
+  "spec": "Demonology",
+  "entry": "demonology-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 681.08,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.3014
+    },
+    "kept": false
+   },
+   {
+    "ability": "Conflagrate",
+    "talent": "Conflagrate",
+    "spell": 18932,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/31/19",
+     "vs_spec_build": -0.0223
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Shadowburn",
+    "talent": "Shadowburn",
+    "spell": 18871,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": -0.0161
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/demonology-raid/raid/Demonology": {
+  "class": "warlock",
+  "spec": "Demonology",
+  "entry": "demonology-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 826.99,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "spell": 19028,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "0/30/21",
+     "vs_spec_build": -0.3115
+    },
+    "kept": false
+   },
+   {
+    "ability": "Conflagrate",
+    "talent": "Conflagrate",
+    "spell": 18932,
+    "builds": "one move from the spec's build",
+    "builds_tried": 4,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "1/31/19",
+     "vs_spec_build": -0.0255
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Shadowburn",
+    "talent": "Shadowburn",
+    "spell": 18871,
+    "builds": "one move from the spec's build",
+    "builds_tried": 5,
+    "lines_tried": 12,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "2/31/18",
+     "vs_spec_build": -0.0167
+    },
+    "kept": false
+   }
+  ]
+ },
+ "warlock/sb-raid/dummy/Hybrid Affliction/Destruction": {
+  "class": "warlock",
+  "spec": "Hybrid Affliction/Destruction",
+  "entry": "sb-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 639.6,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/11/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/2/28",
+     "vs_spec_build": -0.2204
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warlock/sb-raid/raid/Hybrid Affliction/Destruction": {
+  "class": "warlock",
+  "spec": "Hybrid Affliction/Destruction",
+  "entry": "sb-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 758.59,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/11/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "19/11/21",
+     "vs_spec_build": -0.2255
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warlock/fire-destro-raid/dummy/Hybrid Affliction/Destruction": {
+  "class": "warlock",
+  "spec": "Hybrid Affliction/Destruction",
+  "entry": "fire-destro-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 616.0,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/11/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "21/2/28",
+     "vs_spec_build": -0.2173
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warlock/fire-destro-raid/raid/Hybrid Affliction/Destruction": {
+  "class": "warlock",
+  "spec": "Hybrid Affliction/Destruction",
+  "entry": "fire-destro-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 732.72,
+  "abilities": [
+   {
+    "ability": "Wrack",
+    "talent": "Wrack",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Demonic Sacrifice",
+    "talent": "Demonic Sacrifice",
+    "spell": 18788,
+    "builds": "the spec's build",
+    "builds_tried": 1,
+    "lines_tried": 4,
+    "best": {
+     "line": "plain",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "22/11/18",
+     "vs_spec_build": 0.0
+    },
+    "kept": false
+   },
+   {
+    "ability": "Soul Link",
+    "talent": "Soul Link",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   },
+   {
+    "ability": "Bane of Havoc",
+    "talent": "Bane of Havoc",
+    "spell": 1225228,
+    "builds": "random builds of the spec holding it",
+    "builds_tried": 20,
+    "lines_tried": 36,
+    "best": {
+     "line": "aura not on you",
+     "spot": "at the end",
+     "gain_seed1": 0.0,
+     "split": "19/11/21",
+     "vs_spec_build": -0.2242
+    },
+    "kept": false
+   },
+   {
+    "ability": "Incinerate",
+    "talent": "Incinerate",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/arms-battle-raid/dummy/Arms": {
+  "class": "warrior",
+  "spec": "Arms",
+  "entry": "arms-battle-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 387.91,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/arms-battle-raid/raid/Arms": {
+  "class": "warrior",
+  "spec": "Arms",
+  "entry": "arms-battle-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 746.03,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/fury-dw-raid/dummy/Fury": {
+  "class": "warrior",
+  "spec": "Fury",
+  "entry": "fury-dw-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 383.61,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/fury-dw-raid/raid/Fury": {
+  "class": "warrior",
+  "spec": "Fury",
+  "entry": "fury-dw-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 690.0,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/arms-2h-raid/dummy/Fury": {
+  "class": "warrior",
+  "spec": "Fury",
+  "entry": "arms-2h-raid",
+  "setting": "dummy",
+  "date": "2026-10-01",
+  "base_dps": 368.85,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ },
+ "warrior/arms-2h-raid/raid/Fury": {
+  "class": "warrior",
+  "spec": "Fury",
+  "entry": "arms-2h-raid",
+  "setting": "raid",
+  "date": "2026-10-01",
+  "base_dps": 691.99,
+  "abilities": [
+   {
+    "ability": "Shield Slam",
+    "talent": "Shield Slam",
+    "kept": false,
+    "result": "no legal build of the spec can hold it"
+   }
+  ]
+ }
+}

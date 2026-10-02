@@ -1,0 +1,1668 @@
+{
+ "class": "shaman",
+ "spec": "Enhancement",
+ "slug": "enhancement",
+ "entries": [
+  "enhancement-dps"
+ ],
+ "best": "opt-enhancement-dps-raid-dps",
+ "best_entry": "enhancement-dps",
+ "best_dps": 425.59,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "enhancement-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 65.3,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Talisman of Ephemeral Power"
+   ],
+   "names": [
+    "Black Dragonscale Helm",
+    "Onyxia Tooth Pendant",
+    "Truestrike Shoulders",
+    "Howler's Furs",
+    "Darkmantle Tunic",
+    "Earthfury Bracers",
+    "Blood Guard's Mail Vices",
+    "Knowledge of the Timbermaw",
+    "Ironfeather Leggings",
+    "Bloodmail Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Band of Accuria",
+    "Blackhand's Breadth",
+    "Talisman of Ephemeral Power",
+    "Spinal Reaper",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0055809640660496
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "keep-sets-and-effects": 1.0068096229333765
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.2605,
+    "StatAgility": 0.1321,
+    "StatArmorPenetration": 0.0218,
+    "StatAttackPower": 0.0917,
+    "StatFireDamage": 0.0687,
+    "StatIntellect": 0.179,
+    "StatMeleeCritRating": 0.1832,
+    "StatMeleeHasteRating": 0.1838,
+    "StatMeleeHitRating": 0.406,
+    "StatNatureDamage": 0.0923,
+    "StatSpellCritRating": 0.0894,
+    "StatSpellDamage": 0.1639,
+    "StatSpellHasteRating": 0.0202,
+    "StatSpellHitRating": 0.2159,
+    "StatStrength": 0.1834
+   },
+   "evaluated_on": [
+    "enhancement-dps: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "enhancement-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.3,
+   "trinkets": [
+    "Blackhand's Breadth",
+    "Rune of the Guard Captain"
+   ],
+   "names": [
+    "Black Dragonscale Helm",
+    "Beads of Ogre Might",
+    "Rugged Mantle of the Timbermaw",
+    "Howler's Furs",
+    "Darkmantle Tunic",
+    "Wildheart Bracers",
+    "Blood Guard's Mail Vices",
+    "Knowledge of the Timbermaw",
+    "Ironfeather Leggings",
+    "Bloodmail Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Don Julio's Band",
+    "Blackhand's Breadth",
+    "Rune of the Guard Captain",
+    "The Unstoppable Force",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0015089871502287
+   },
+   "confirm_seed2": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0009421748582317
+   },
+   "weights": {
+    "PseudoStatMainHandDps": 1.3387,
+    "StatAgility": 0.1279,
+    "StatArmorPenetration": 0.0211,
+    "StatAttackPower": 0.0974,
+    "StatFireDamage": 0.0694,
+    "StatIntellect": 0.1867,
+    "StatMeleeCritRating": 0.1671,
+    "StatMeleeHasteRating": 0.1871,
+    "StatMeleeHitRating": 0.3447,
+    "StatNatureDamage": 0.0967,
+    "StatSpellCritRating": 0.0773,
+    "StatSpellDamage": 0.1691,
+    "StatSpellHasteRating": 0.0428,
+    "StatSpellHitRating": 0.2317,
+    "StatStrength": 0.1947
+   },
+   "evaluated_on": [
+    "enhancement-dps: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "setting": "dummy",
+   "entry": "enhancement-dps",
+   "date": "2026-10-01",
+   "constraint": "Enhancement 30+",
+   "protected": [
+    "Maelstrom Weapon"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "enhancement-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       3
+      ],
+      [
+       "Reverberation",
+       4
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Elemental Weapons",
+       3
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Stormstrike",
+       1
+      ],
+      [
+       "Mental Quickness",
+       2
+      ],
+      [
+       "Maelstrom Weapon",
+       5
+      ],
+      [
+       "Rage of the Farseer",
+       1
+      ]
+     ],
+     "Restoration": [
+      [
+       "Totemic Focus",
+       1
+      ]
+     ]
+    },
+    "split": "19/31/1",
+    "dps": 412.25,
+    "se": 0.086,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "20/31/0",
+    "dps": 411.89,
+    "se": 0.086,
+    "differs": [
+     [
+      "Concussion",
+      3
+     ],
+     [
+      "Concussion",
+      5
+     ],
+     [
+      "Reverberation",
+      3
+     ],
+     [
+      "Reverberation",
+      4
+     ],
+     [
+      "Totemic Focus",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0009,
+   "runs": [
+    {
+     "entry": "enhancement-dps",
+     "run": 1,
+     "simulated": 2185,
+     "best_screen": 412.84,
+     "best_split": "19/31/1",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 385,
+       "best": 408.36
+      },
+      {
+       "round": 1,
+       "simulated": 585,
+       "best": 412.1,
+       "predicted_top": 405.44
+      },
+      {
+       "round": 2,
+       "simulated": 785,
+       "best": 412.1,
+       "predicted_top": 407.79
+      },
+      {
+       "round": 3,
+       "simulated": 985,
+       "best": 412.24,
+       "predicted_top": 409.97
+      },
+      {
+       "round": 4,
+       "simulated": 1185,
+       "best": 412.24,
+       "predicted_top": 411.01
+      },
+      {
+       "round": 5,
+       "simulated": 1385,
+       "best": 412.84,
+       "predicted_top": 411.23
+      },
+      {
+       "round": 6,
+       "simulated": 1585,
+       "best": 412.84,
+       "predicted_top": 411.49
+      },
+      {
+       "round": 7,
+       "simulated": 1785,
+       "best": 412.84,
+       "predicted_top": 411.06
+      },
+      {
+       "round": 8,
+       "simulated": 1985,
+       "best": 412.84,
+       "predicted_top": 411.35
+      },
+      {
+       "round": 9,
+       "simulated": 2185,
+       "best": 412.84,
+       "predicted_top": 411.58
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "enhancement-dps",
+     "run": 2,
+     "simulated": 1392,
+     "best_screen": 409.81,
+     "best_split": "18/33/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 392,
+       "best": 409.29
+      },
+      {
+       "round": 1,
+       "simulated": 592,
+       "best": 409.81,
+       "predicted_top": 404.42
+      },
+      {
+       "round": 2,
+       "simulated": 792,
+       "best": 409.81,
+       "predicted_top": 406.42
+      },
+      {
+       "round": 3,
+       "simulated": 992,
+       "best": 409.81,
+       "predicted_top": 407.32
+      },
+      {
+       "round": 4,
+       "simulated": 1192,
+       "best": 409.81,
+       "predicted_top": 408.03
+      },
+      {
+       "round": 5,
+       "simulated": 1392,
+       "best": 409.81,
+       "predicted_top": 407.91
+      }
+     ],
+     "best_stage1_gap": -0.008,
+     "agrees_with_winner": false
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      412.25,
+      411.52,
+      411.24,
+      411.22,
+      410.92,
+      410.74,
+      408.95,
+      408.55,
+      407.81,
+      407.66,
+      407.5,
+      407.17
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      411.87,
+      411.8,
+      411.74,
+      411.1,
+      411.09
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      412.25,
+      411.89
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 362,
+     "best_gap": 0.0021,
+     "best_move": "1 Totemic Focus -> Reverberation",
+     "raced": [
+      "1 Totemic Focus -> Reverberation",
+      "1 Concussion -> Reverberation"
+     ],
+     "confirmed_gap": 0.0004
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3206
+    },
+    {
+     "feature": "Stormstrike",
+     "importance": 0.2173
+    },
+    {
+     "feature": "Rage of the Farseer",
+     "importance": 0.0962
+    },
+    {
+     "feature": "Elemental Focus",
+     "importance": 0.065
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0525
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0413
+    },
+    {
+     "feature": "Earth's Grasp",
+     "importance": 0.0333
+    },
+    {
+     "feature": "Maelstrom Weapon",
+     "importance": 0.0245
+    },
+    {
+     "feature": "Improved Lightning Shield",
+     "importance": 0.0198
+    },
+    {
+     "feature": "Guardian Totems",
+     "importance": 0.0186
+    },
+    {
+     "feature": "Improved Ghost Wolf",
+     "importance": 0.0168
+    },
+    {
+     "feature": "Call of Flame",
+     "importance": 0.0165
+    }
+   ],
+   "simulated_builds": 3962,
+   "simulated_fights": 5226000,
+   "minutes": 4.5,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "setting": "dummy",
+   "entry": "enhancement-dps",
+   "date": "2026-10-02",
+   "constraint": "Enhancement 30+",
+   "protected": [
+    "Maelstrom Weapon"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "enhancement-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       4
+      ],
+      [
+       "Reverberation",
+       4
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Elemental Weapons",
+       3
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Stormstrike",
+       1
+      ],
+      [
+       "Mental Quickness",
+       2
+      ],
+      [
+       "Maelstrom Weapon",
+       5
+      ],
+      [
+       "Rage of the Farseer",
+       1
+      ]
+     ],
+     "Restoration": []
+    },
+    "split": "20/31/0",
+    "dps": 416.89,
+    "se": 0.087,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "19/31/1",
+    "dps": 416.32,
+    "se": 0.087,
+    "differs": [
+     [
+      "Reverberation",
+      3
+     ],
+     [
+      "Reverberation",
+      4
+     ],
+     [
+      "Totemic Focus",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0014,
+   "runs": [
+    {
+     "entry": "enhancement-dps",
+     "run": 1,
+     "simulated": 1200,
+     "best_screen": 417.03,
+     "best_split": "19/31/1",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 417.03
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 417.03,
+       "predicted_top": 412.69
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 417.03,
+       "predicted_top": 415.19
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 417.03,
+       "predicted_top": 415.34
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 417.03,
+       "predicted_top": 415.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      416.87,
+      416.78,
+      416.52,
+      415.8,
+      414.97,
+      414.58
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      416.93,
+      416.47,
+      416.45,
+      415.47,
+      415.2
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      416.89,
+      416.32
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 344,
+     "best_gap": -0.0008,
+     "best_move": "1 Concussion -> Totemic Focus"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3202
+    },
+    {
+     "feature": "Stormstrike",
+     "importance": 0.1467
+    },
+    {
+     "feature": "Call of Flame",
+     "importance": 0.0786
+    },
+    {
+     "feature": "Elemental Focus",
+     "importance": 0.0676
+    },
+    {
+     "feature": "Rage of the Farseer",
+     "importance": 0.0632
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0456
+    },
+    {
+     "feature": "Improved Lightning Shield",
+     "importance": 0.0444
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0373
+    },
+    {
+     "feature": "Mental Quickness",
+     "importance": 0.0372
+    },
+    {
+     "feature": "Maelstrom Weapon",
+     "importance": 0.0371
+    },
+    {
+     "feature": "Earth's Grasp",
+     "importance": 0.0178
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0143
+    }
+   ],
+   "simulated_builds": 1558,
+   "simulated_fights": 2645000,
+   "minutes": 2.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "setting": "raid",
+   "entry": "enhancement-dps",
+   "date": "2026-10-02",
+   "constraint": "Enhancement 30+",
+   "protected": [
+    "Maelstrom Weapon"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "enhancement-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       2
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       2
+      ],
+      [
+       "Improved Fire Nova",
+       2
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Elemental Weapons",
+       3
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Stormstrike",
+       1
+      ],
+      [
+       "Mental Quickness",
+       2
+      ],
+      [
+       "Improved Stormstrike",
+       2
+      ],
+      [
+       "Maelstrom Weapon",
+       5
+      ],
+      [
+       "Rage of the Farseer",
+       1
+      ]
+     ],
+     "Restoration": []
+    },
+    "split": "18/33/0",
+    "dps": 796.24,
+    "se": 0.164,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "18/33/0",
+    "dps": 796.19,
+    "se": 0.164,
+    "differs": [
+     [
+      "Concussion",
+      1
+     ],
+     [
+      "Concussion",
+      2
+     ],
+     [
+      "Elemental Alacrity",
+      2
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0001,
+   "runs": [
+    {
+     "entry": "enhancement-dps",
+     "run": 1,
+     "simulated": 1581,
+     "best_screen": 798.44,
+     "best_split": "18/33/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 381,
+       "best": 786.26
+      },
+      {
+       "round": 1,
+       "simulated": 581,
+       "best": 786.73,
+       "predicted_top": 774.66
+      },
+      {
+       "round": 2,
+       "simulated": 781,
+       "best": 790.58,
+       "predicted_top": 782.45
+      },
+      {
+       "round": 3,
+       "simulated": 981,
+       "best": 792.63,
+       "predicted_top": 787.65
+      },
+      {
+       "round": 4,
+       "simulated": 1181,
+       "best": 796.44,
+       "predicted_top": 791.24
+      },
+      {
+       "round": 5,
+       "simulated": 1381,
+       "best": 797.96,
+       "predicted_top": 794.73
+      },
+      {
+       "round": 6,
+       "simulated": 1581,
+       "best": 798.44,
+       "predicted_top": 796.68
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      796.82,
+      796.23,
+      795.92,
+      795.41,
+      795.21,
+      793.7
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      796.22,
+      795.64,
+      794.91,
+      794.52,
+      794.34
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      796.24,
+      796.19
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 429,
+     "best_gap": 0.0012,
+     "best_move": "1 Elemental Alacrity -> Concussion",
+     "raced": [
+      "1 Elemental Alacrity -> Concussion",
+      "2 Elemental Alacrity -> Reverberation"
+     ],
+     "confirmed_gap": 0.0001
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Elemental points",
+     "importance": 0.2658
+    },
+    {
+     "feature": "Flurry",
+     "importance": 0.201
+    },
+    {
+     "feature": "Stormstrike",
+     "importance": 0.1655
+    },
+    {
+     "feature": "Elemental Focus",
+     "importance": 0.0586
+    },
+    {
+     "feature": "Rage of the Farseer",
+     "importance": 0.0559
+    },
+    {
+     "feature": "Elemental Devastation",
+     "importance": 0.0521
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0478
+    },
+    {
+     "feature": "Improved Fire Nova",
+     "importance": 0.0189
+    },
+    {
+     "feature": "Maelstrom Weapon",
+     "importance": 0.0125
+    },
+    {
+     "feature": "Earth's Grasp",
+     "importance": 0.0123
+    },
+    {
+     "feature": "Call of Flame",
+     "importance": 0.0106
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0097
+    }
+   ],
+   "simulated_builds": 2027,
+   "simulated_fights": 3371000,
+   "minutes": 3.8,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "setting": "dummy",
+   "entry": "enhancement-dps",
+   "date": "2026-10-02",
+   "constraint": "Enhancement 30+",
+   "protected": [
+    "Maelstrom Weapon"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "enhancement-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Concussion",
+       4
+      ],
+      [
+       "Reverberation",
+       4
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Elemental Weapons",
+       3
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Stormstrike",
+       1
+      ],
+      [
+       "Mental Quickness",
+       2
+      ],
+      [
+       "Maelstrom Weapon",
+       5
+      ],
+      [
+       "Rage of the Farseer",
+       1
+      ]
+     ],
+     "Restoration": []
+    },
+    "split": "20/31/0",
+    "dps": 408.59,
+    "se": 0.087,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "20/31/0",
+    "dps": 408.34,
+    "se": 0.087,
+    "differs": [
+     [
+      "Concussion",
+      3
+     ],
+     [
+      "Concussion",
+      4
+     ],
+     [
+      "Reverberation",
+      4
+     ],
+     [
+      "Reverberation",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0006,
+   "runs": [
+    {
+     "entry": "enhancement-dps",
+     "run": 1,
+     "simulated": 1396,
+     "best_screen": 409.06,
+     "best_split": "20/31/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 396,
+       "best": 408.16
+      },
+      {
+       "round": 1,
+       "simulated": 596,
+       "best": 408.16,
+       "predicted_top": 402.32
+      },
+      {
+       "round": 2,
+       "simulated": 796,
+       "best": 409.06,
+       "predicted_top": 405.7
+      },
+      {
+       "round": 3,
+       "simulated": 996,
+       "best": 409.06,
+       "predicted_top": 407.06
+      },
+      {
+       "round": 4,
+       "simulated": 1196,
+       "best": 409.06,
+       "predicted_top": 407.33
+      },
+      {
+       "round": 5,
+       "simulated": 1396,
+       "best": 409.06,
+       "predicted_top": 407.35
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      408.64,
+      408.6,
+      408.5,
+      408.36,
+      407.66,
+      407.63
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      408.45,
+      408.15,
+      407.99,
+      407.55,
+      407.18
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      408.59,
+      408.34
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 344,
+     "best_gap": 0.0033,
+     "best_move": "1 Reverberation -> Concussion",
+     "raced": [
+      "1 Reverberation -> Concussion",
+      "1 Concussion -> Reverberation",
+      "1 Reverberation -> Totemic Focus"
+     ],
+     "confirmed_gap": -0.0003
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Stormstrike",
+     "importance": 0.3759
+    },
+    {
+     "feature": "Flurry",
+     "importance": 0.21
+    },
+    {
+     "feature": "Earth's Grasp",
+     "importance": 0.0815
+    },
+    {
+     "feature": "Rage of the Farseer",
+     "importance": 0.0634
+    },
+    {
+     "feature": "Shamanistic Focus",
+     "importance": 0.0374
+    },
+    {
+     "feature": "Improved Lightning Shield",
+     "importance": 0.0284
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0268
+    },
+    {
+     "feature": "Maelstrom Weapon",
+     "importance": 0.0216
+    },
+    {
+     "feature": "Elemental Focus",
+     "importance": 0.0208
+    },
+    {
+     "feature": "Anticipation",
+     "importance": 0.0147
+    },
+    {
+     "feature": "Improved Ghost Wolf",
+     "importance": 0.0125
+    },
+    {
+     "feature": "Call of Flame",
+     "importance": 0.0116
+    }
+   ],
+   "simulated_builds": 1758,
+   "simulated_fights": 2961000,
+   "minutes": 2.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "shaman",
+   "spec": "Enhancement",
+   "setting": "raid",
+   "entry": "enhancement-dps",
+   "date": "2026-10-02",
+   "constraint": "Enhancement 30+",
+   "protected": [
+    "Maelstrom Weapon"
+   ],
+   "entries_screened": {},
+   "entries_searched": [
+    "enhancement-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Elemental": [
+      [
+       "Convection",
+       5
+      ],
+      [
+       "Call of Flame",
+       3
+      ],
+      [
+       "Elemental Devastation",
+       3
+      ],
+      [
+       "Elemental Focus",
+       1
+      ],
+      [
+       "Elemental Alacrity",
+       3
+      ],
+      [
+       "Improved Fire Nova",
+       2
+      ],
+      [
+       "Call of Thunder",
+       1
+      ]
+     ],
+     "Enhancement": [
+      [
+       "Thundering Strikes",
+       5
+      ],
+      [
+       "Ancestral Knowledge",
+       5
+      ],
+      [
+       "Mental Dexterity",
+       3
+      ],
+      [
+       "Elemental Weapons",
+       3
+      ],
+      [
+       "Shamanistic Focus",
+       1
+      ],
+      [
+       "Flurry",
+       5
+      ],
+      [
+       "Stormstrike",
+       1
+      ],
+      [
+       "Mental Quickness",
+       2
+      ],
+      [
+       "Improved Stormstrike",
+       2
+      ],
+      [
+       "Maelstrom Weapon",
+       5
+      ],
+      [
+       "Rage of the Farseer",
+       1
+      ]
+     ],
+     "Restoration": []
+    },
+    "split": "18/33/0",
+    "dps": 778.05,
+    "se": 0.162,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "18/33/0",
+    "dps": 777.55,
+    "se": 0.162,
+    "differs": [
+     [
+      "Call of Thunder",
+      1
+     ],
+     [
+      "Concussion",
+      2
+     ],
+     [
+      "Elemental Alacrity",
+      2
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0006,
+   "runs": [
+    {
+     "entry": "enhancement-dps",
+     "run": 1,
+     "simulated": 1179,
+     "best_screen": 780.85,
+     "best_split": "18/33/0",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 379,
+       "best": 780.85
+      },
+      {
+       "round": 1,
+       "simulated": 579,
+       "best": 780.85,
+       "predicted_top": 769.68
+      },
+      {
+       "round": 2,
+       "simulated": 779,
+       "best": 780.85,
+       "predicted_top": 776.1
+      },
+      {
+       "round": 3,
+       "simulated": 979,
+       "best": 780.85,
+       "predicted_top": 778.48
+      },
+      {
+       "round": 4,
+       "simulated": 1179,
+       "best": 780.85,
+       "predicted_top": 778.28
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      777.72,
+      777.65,
+      777.17,
+      776.26,
+      775.98,
+      775.98
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      777.63,
+      777.58,
+      777.38,
+      776.66,
+      776.39
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      778.05,
+      777.55
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 252,
+     "best_gap": -0.0005,
+     "best_move": "1 Call of Thunder -> Concussion"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Flurry",
+     "importance": 0.3094
+    },
+    {
+     "feature": "Stormstrike",
+     "importance": 0.1821
+    },
+    {
+     "feature": "Improved Fire Nova",
+     "importance": 0.148
+    },
+    {
+     "feature": "Elemental points",
+     "importance": 0.0814
+    },
+    {
+     "feature": "Earth's Grasp",
+     "importance": 0.0505
+    },
+    {
+     "feature": "Elemental Focus",
+     "importance": 0.0497
+    },
+    {
+     "feature": "Rage of the Farseer",
+     "importance": 0.0241
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.023
+    },
+    {
+     "feature": "Guardian Totems",
+     "importance": 0.0154
+    },
+    {
+     "feature": "Maelstrom Weapon",
+     "importance": 0.0136
+    },
+    {
+     "feature": "Improved Stormstrike",
+     "importance": 0.0118
+    },
+    {
+     "feature": "Mental Quickness",
+     "importance": 0.0107
+    }
+   ],
+   "simulated_builds": 1445,
+   "simulated_fights": 2348000,
+   "minutes": 2.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "enhancement-dps",
+    "dps": 416.98,
+    "se": 0.087
+   },
+   "enhancement-raid-dps": {
+    "entry": "enhancement-dps",
+    "dps": 408.63,
+    "se": 0.086
+   },
+   "opt-enhancement-dps-raid-dps": {
+    "entry": "enhancement-dps",
+    "dps": 414.24,
+    "se": 0.085
+   }
+  },
+  "best_hand": "enhancement-raid-dps",
+  "gain_vs_hand": 0.0204
+ },
+ "aligned": {
+  "target": "enhancement-raid-dps",
+  "moves": [],
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Concussion",
+     4
+    ],
+    [
+     "Reverberation",
+     4
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Devastation",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     5
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Elemental Weapons",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Flurry",
+     5
+    ],
+    [
+     "Stormstrike",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ],
+    [
+     "Maelstrom Weapon",
+     5
+    ],
+    [
+     "Rage of the Farseer",
+     1
+    ]
+   ],
+   "Restoration": []
+  },
+  "split": "20/31/0",
+  "ratio": 1.0
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "enhancement-dps",
+   "dps": 772.38,
+   "se": 0.158
+  },
+  "bis-raid": {
+   "entry": "enhancement-dps",
+   "dps": 796.11,
+   "se": 0.163
+  },
+  "gain": 0.0307,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [
+   "enhancement-ml-parse",
+   "enhancement-ml-raid"
+  ],
+  "superseded": [
+   "enhancement-raid"
+  ],
+  "date": "2026-10-02"
+ }
+}

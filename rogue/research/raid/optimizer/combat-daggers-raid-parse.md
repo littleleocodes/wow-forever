@@ -9,39 +9,39 @@ Effect coverage: 0 parsed from tooltips, 53 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Relentless Strikes | Assassination | 3 | +5.88% | manual |
-| Puncturing Wounds | Combat | 2 | +4.30% | manual |
-| Adrenaline Rush | Combat | 7 | +3.69% | manual |
-| Improved Expose Armor | Assassination | 3 | +2.10% | manual |
-| Thousand Cuts | Subtlety | 7 | +1.80% | manual |
-| Improved Slice and Dice | Assassination | 2 | +1.33% | manual |
-| Opportunity | Subtlety | 1 | +1.29% | manual |
+| Relentless Strikes | Assassination | 3 | +5.80% | manual |
+| Puncturing Wounds | Combat | 2 | +4.34% | manual |
+| Adrenaline Rush | Combat | 7 | +3.64% | manual |
+| Improved Expose Armor | Assassination | 3 | +2.08% | manual |
+| Thousand Cuts | Subtlety | 7 | +1.82% | manual |
+| Improved Slice and Dice | Assassination | 2 | +1.31% | manual |
+| Opportunity | Subtlety | 1 | +1.30% | manual |
 | Precision | Combat | 2 | +1.22% | manual |
-| Ruthlessness | Assassination | 2 | +1.01% | manual |
+| Ruthlessness | Assassination | 2 | +1.00% | manual |
 | Malice | Assassination | 1 | +0.99% | manual |
 | Weapon Expertise | Combat | 6 | +0.95% | manual |
 | Ghostly Strike | Subtlety | 3 | +0.95% | manual |
 | Serrated Blades | Subtlety | 4 | +0.95% | manual |
 | Hack and Slash | Combat | 5 | +0.93% | manual |
-| Dual Wield Specialization | Combat | 4 | +0.90% | manual |
-| Seal Fate | Assassination | 6 | +0.76% | manual |
-| Blade Flurry | Combat | 5 | +0.61% | manual |
+| Dual Wield Specialization | Combat | 4 | +0.91% | manual |
+| Seal Fate | Assassination | 6 | +0.75% | manual |
+| Blade Flurry | Combat | 5 | +0.62% | manual |
 | Murder | Assassination | 2 | +0.60% | manual |
 | Improved Poisons | Assassination | 4 | +0.53% | manual |
-| Aggression | Combat | 6 | +0.51% | manual |
+| Aggression | Combat | 6 | +0.50% | manual |
 | Flawless Execution | Combat | 4 | +0.32% | manual |
 | Lethality | Assassination | 3 | +0.26% | manual |
-| Cutthroat | Subtlety | 6 | +0.22% | manual |
+| Cutthroat | Subtlety | 6 | +0.23% | manual |
 | Vile Poisons | Assassination | 4 | +0.21% | manual |
 | Cold Blood | Assassination | 4 | +0.21% | manual |
-| Improved Eviscerate | Combat | 1 | +0.13% | manual |
+| Improved Eviscerate | Combat | 1 | +0.09% | manual |
 | Vigor | Assassination | 5 | +0.09% | manual |
 | Lightning Reflexes | Combat | 1 | +0.00% | manual |
 | Deflection | Combat | 2 | +0.00% | manual |
 | Riposte | Combat | 3 | +0.00% | manual |
 
-## Optimized build: 17/32/2  score +85.08%  (dps x1.851, sustain x1.000, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.595  — use this to compare models with different pet shares.
+## Optimized build: 17/32/2  score +84.83%  (dps x1.848, sustain x1.000, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.593  — use this to compare models with different pet shares.
 
 ```
   Assassination: Malice 5, Improved Slice and Dice 3, Ruthlessness 3, Murder 2, Relentless Strikes 1, Improved Expose Armor 2, Lethality 1
@@ -53,15 +53,15 @@ Absolute DPS index (character alone, no talents = 1.00): 1.595  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Thousand Cuts | Subtlety 7 | 1/1 | +4.46% | no |
-| Seal Fate | Assassination 6 | 1/5 | +1.85% | no |
+| Thousand Cuts | Subtlety 7 | 1/1 | +4.51% | no |
+| Seal Fate | Assassination 6 | 1/5 | +1.83% | no |
 | Ghostly Strike | Subtlety 3 | 1/1 | +1.79% | no |
 | Serrated Blades | Subtlety 4 | 1/3 | +1.79% | no |
-| Lethality | Assassination 3 | 2/5 | +1.07% | yes |
-| Flawless Execution | Combat 4 | 1/1 | +0.78% | yes |
+| Lethality | Assassination 3 | 2/5 | +1.08% | yes |
+| Flawless Execution | Combat 4 | 1/1 | +0.77% | yes |
 | Improved Poisons | Assassination 4 | 1/5 | +0.58% | yes |
 | Cutthroat | Subtlety 6 | 1/5 | +0.56% | no |
-| Cold Blood | Assassination 4 | 1/1 | +0.52% | yes |
+| Cold Blood | Assassination 4 | 1/1 | +0.51% | yes |
 | Vile Poisons | Assassination 4 | 1/5 | +0.23% | yes |
 | Vigor | Assassination 5 | 1/2 | +0.21% | no |
 | Deflection | Combat 2 | 2/3 | +0.00% | yes |

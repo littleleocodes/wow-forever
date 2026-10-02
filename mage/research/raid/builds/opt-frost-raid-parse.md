@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +69.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-raid` and profile `parse`: score +69.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,13 +46,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
 
 ## Core talents (priority order)
 
-1. **Improved Frostbolt** — Removing it costs 21.6 points of score in this model.
-2. **Ice Shards** — Removing it costs 20.4 points of score in this model.
-3. **Fingers of Frost** — Removing it costs 18.5 points of score in this model.
-4. **Ice Lance** — Removing it costs 11.1 points of score in this model.
-5. **Winter's Chill** — Removing it costs 10.8 points of score in this model.
-6. **Shatter** — Removing it costs 10.5 points of score in this model.
-7. **Piercing Ice** — Removing it costs 8.4 points of score in this model.
+1. **Improved Frostbolt** — Removing it costs 21.5 points of score in this model.
+2. **Ice Shards** — Removing it costs 20.2 points of score in this model.
+3. **Fingers of Frost** — Removing it costs 18.3 points of score in this model.
+4. **Ice Lance** — Removing it costs 10.9 points of score in this model.
+5. **Winter's Chill** — Removing it costs 10.7 points of score in this model.
+6. **Shatter** — Removing it costs 10.4 points of score in this model.
+7. **Piercing Ice** — Removing it costs 8.3 points of score in this model.
 8. **Elemental Precision** — Removing it costs 8.3 points of score in this model.
 
 ## Rotation

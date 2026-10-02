@@ -25,6 +25,48 @@
   },
   {
    "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 10894,
+            "rank": 8
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10894,
+      "rank": 8
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see smite-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "strictSequence": {
      "actions": [
       {
@@ -98,6 +140,61 @@
      ]
     }
    }
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 10894,
+            "rank": 8
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "5"
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpLt",
+         "lhs": {
+          "currentManaPercent": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "15%"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 992,
+      "rank": 4
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -213,6 +310,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 15473
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see smite-dps-rotation-search.json)"
   }
  ]
 }

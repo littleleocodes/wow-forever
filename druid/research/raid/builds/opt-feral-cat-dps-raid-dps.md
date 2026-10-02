@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `raid-dps`: score +108.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-cat-dps` and profile `raid-dps`: score +106.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -51,14 +51,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 ## Core talents (priority order)
 
-1. **Shredding Attacks** — Removing it costs 35.4 points of score in this model.
-2. **King of the Jungle** — Removing it costs 17.9 points of score in this model.
+1. **Shredding Attacks** — Removing it costs 35.1 points of score in this model.
+2. **King of the Jungle** — Removing it costs 17.7 points of score in this model.
 3. **Blood Frenzy** — Removing it costs 15.3 points of score in this model.
-4. **Sharpened Claws** — Removing it costs 10.9 points of score in this model.
-5. **Rend and Tear** — Removing it costs 10.3 points of score in this model.
-6. **Berserk** — Removing it costs 7.4 points of score in this model.
-7. **Predatory Strikes** — Removing it costs 6.7 points of score in this model.
-8. **Predatory Instincts** — Removing it costs 6.6 points of score in this model.
+4. **Sharpened Claws** — Removing it costs 10.7 points of score in this model.
+5. **Rend and Tear** — Removing it costs 10.2 points of score in this model.
+6. **Predatory Strikes** — Removing it costs 6.6 points of score in this model.
+7. **Predatory Instincts** — Removing it costs 6.5 points of score in this model.
+8. **Savage Fury** — Removing it costs 6.3 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
@@ -66,14 +66,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/35/7 | 366 | +0.0% | 574 | +0.0% | 0 s |
-| 2 | *Feral Cat 9/35/7* | community simulator | - | 366 | +0.0% | 574 | +0.0% | 0 s |
-| 3 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 364 | -0.4% | 573 | -0.2% | 0 s |
-| 4 | *Feral* | community simulator | - | 349 | -4.4% | 551 | -4.0% | 0 s |
+| 1 | **[`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md)** | ours: optimizer | 9/35/7 | 370 | +0.0% | 576 | +0.0% | 0 s |
+| 2 | *Feral Cat 9/35/7* | community simulator | - | 370 | +0.0% | 576 | +0.0% | 0 s |
+| 3 | [`feral-cat-dps`](feral-cat-dps.md) | ours: hand draft | 9/32/10 | 369 | -0.4% | 575 | -0.2% | 0 s |
+| 4 | *Feral* | community simulator | - | 354 | -4.6% | 553 | -4.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 7 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 336 -> 356 DPS (+6.0%), sim preset: Feral Cat 9/35/7 336 -> 356 DPS (+6.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Feral Combat 346 -> 371 DPS (+7.2%), sim preset: Feral Cat 9/35/7 346 -> 371 DPS (+7.2%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+2.2%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.6%, pass 1)
   3. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+1.1%, pass 1)
@@ -81,22 +81,25 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
   5. drop the condition: if not Cat Form is up: cast Goblin Sapper Charge (+0.2%, pass 1)
   6. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form (+0.2%, pass 1)
   7. threshold 14.0s -> 28s: if Faerie Fire should be refreshed: cast Faerie Fire (+0.2%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-feral-cat-dps-raid-dps 549 -> 566 DPS (+3.2%), sim preset: Feral Cat 9/35/7 549 -> 566 DPS (+3.2%)):
+  8. drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire (+0.6%, pass 4)
+  9. only with 6s or more of the fight left: cast Faerie Fire (+0.8%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 5 changes to the base rotation; third-seed check: ml: Feral Combat 558 -> 576 DPS (+3.2%), sim preset: Feral Cat 9/35/7 558 -> 576 DPS (+3.2%)):
   1. drop: if combo points = 5.0 and not Clearcasting is up and (energy + 20.2) < (current cost + current cost): cast Ferocious Bite (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip (+1.3%, pass 1)
   3. drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate (+0.5%, pass 1)
   4. threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form (+0.2%, pass 1)
+  5. drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form (+0.2%, pass 4)
 
 Before the pull: at -1.0s: cast Faerie Fire; at -3.5s: cast Tiger's Fury.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-feral-cat-dps-raid-dps`](opt-feral-cat-dps-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | cast Tiger's Fury | 2.3 |
-| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
+| 2 | if Faerie Fire should be refreshed: cast Faerie Fire | 36.9 |
 | 3 | if Cat Form is up: use every other cooldown when ready | as ready |
-| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 4.9 |
-| 5 | cast Shred | 17.5 |
-| 6 | if Faerie Fire should be refreshed: cast Faerie Fire | 5.5 |
+| 4 | if combo points ≥ 3.75 and not Rip is on the target: cast Rip | 5.0 |
+| 5 | cast Shred | 17.8 |
+| 6 | if time left in the fight ≥ 6s: cast Faerie Fire | 36.9 |
 | 7 | cast Goblin Sapper Charge | as ready |
 | 8 | if not Cat Form is up and (mana + 1500.0) ≤ (mana ÷ mana %): cast Demonic Rune | as ready |
 | 9 | if not Cat Form is up and (mana + 2250.0) ≤ (mana ÷ mana %): cast Potion | as ready |

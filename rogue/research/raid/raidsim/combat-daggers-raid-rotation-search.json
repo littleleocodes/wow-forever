@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,9 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
-    "label": "opt-combat-daggers-raid-raid-dps",
-    "talents": "00530310301-32330310001515231-002"
+    "label": "ml: Combat",
+    "talents": "005303121001-32330310001515231-002",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
    },
    {
     "label": "sim preset: Combat Dual-Wield 15/33/3",
@@ -52,23 +53,39 @@
     "gain_seed2": 0.001646182988671363,
     "candidates": 291,
     "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "spell probe: insert in the middle: cast Mutilate",
+    "gain_seed1": 0.1579,
+    "gain_seed2": 0.1564,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "threshold 6 -> 12: if time left on Expose Armor < 6 and combo points \u2265 5 and time left in the fight \u2265 3 and time left in the fight \u2265 10s: cast Expose Armor",
+    "gain_seed1": 0.0034803044554283513,
+    "gain_seed2": 0.003863088373284862,
+    "candidates": 399,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
-    "opt-combat-daggers-raid-raid-dps": {
-     "before": 373.69179578155865,
-     "after": 413.47478444004867,
-     "base": 373.69179578155865,
+    "ml: Combat": {
+     "before": 361.0249262040755,
+     "after": 424.7545086716364,
+     "base": 361.0249262040755,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 364.8325699694361,
-     "after": 404.7470251348269,
-     "base": 364.8325699694361,
+     "before": 354.9579326389345,
+     "after": 393.89848490865904,
+     "base": 354.9579326389345,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -77,12 +94,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 5
  },
  "raid": {
   "class": "rogue",
   "spec": "combat-daggers-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -90,8 +107,9 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_backstab.apl.json",
   "builds": [
    {
-    "label": "opt-combat-daggers-raid-raid-dps",
-    "talents": "00530310301-32330310001515231-002"
+    "label": "ml: Combat",
+    "talents": "005303121001-32330310001515231-002",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-combat-bis.gear.json"
    },
    {
     "label": "sim preset: Combat Dual-Wield 15/33/3",
@@ -116,23 +134,31 @@
     "gain_seed2": 0.002706079932641714,
     "candidates": 250,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "spell probe: insert before the filler: cast Mutilate",
+    "gain_seed1": 0.0987,
+    "gain_seed2": 0.0987,
+    "candidates": 12,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
-    "opt-combat-daggers-raid-raid-dps": {
-     "before": 730.8750154890665,
-     "after": 741.7384110527158,
-     "base": 730.8750154890665,
+    "ml: Combat": {
+     "before": 706.6717723538363,
+     "after": 712.5289439949958,
+     "base": 706.6717723538363,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Combat Dual-Wield 15/33/3": {
-     "before": 714.4787888848302,
-     "after": 720.704615940219,
-     "base": 714.4787888848302,
+     "before": 696.925272309925,
+     "after": 702.183327988566,
+     "base": 696.925272309925,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -141,6 +167,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 5
  }
 }

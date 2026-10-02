@@ -446,21 +446,6 @@
   },
   {
    "action": {
-    "condition": {
-     "isExecutePhase": {
-      "threshold": "E20"
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 20662,
-      "rank": 5
-     }
-    }
-   }
-  },
-  {
-   "action": {
     "castSpell": {
      "spellId": {
       "spellId": 11574
@@ -475,6 +460,21 @@
         }
        }
       }
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "isExecutePhase": {
+      "threshold": "E20"
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 20662,
+      "rank": 5
      }
     }
    }
@@ -574,43 +574,6 @@
   },
   {
    "action": {
-    "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "spellTimeToReady": {
-           "spellId": {
-            "spellId": 23894,
-            "rank": 4
-           }
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "1.5s"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "currentRage": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "40"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
     "castSpell": {
      "spellId": {
       "spellId": 7373,
@@ -618,7 +581,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-29: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see arms-battle-raid-rotation-search.json)"
   },
   {
    "action": {

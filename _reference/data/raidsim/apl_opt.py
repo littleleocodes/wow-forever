@@ -56,8 +56,10 @@ CLASS = [None]   # the class being searched (spell_ranks)
 
 # ------------------------------------------------------------------------------------------------ simulator calls
 def bench(entry, repo, builds, iterations, seed, setting, tag):
-    """{label: result row} for builds [{label, talents, apl_json?}] in one simulator run."""
-    cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "gear": R.sim_path(entry["gear"]), "apl": str(R.apl_path(entry, repo)),
+    """{label: result row} for builds [{label, talents, apl_json?, gear_json?}] in one simulator run. The rotation is the setting's own
+    (run.py apl_path(entry, repo, setting)): until 2026-10-01 this took the entry's ranking setting, so raid-setting calls of damage
+    entries (talent_opt.py --setting raid, fullraid_search.py, setting_audit.py's raid half) ran the dummy rotation in a full raid."""
+    cfg = {"class": entry["sim_class"], "race": entry.get("race", "RaceHuman"), "gear": R.sim_path(entry["gear"]), "apl": str(R.apl_path(entry, repo, setting)),
            "spec": entry.get("spec", {}), **R.setting_cfg(entry, setting),
            "profession1": entry.get("profession1", "Engineering"), "profession2": entry.get("profession2", ""),
            "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
@@ -370,7 +372,8 @@ def new_spell_pool(cls):
             continue
         for sp in tab.get("spells", []):
             ranks = [r for r in sp.get("ranks", []) if r.get("id")]
-            if not ranks or any(sp.get("name", "").startswith(x) for x in NOT_COMBAT + NOT_COMBAT_SPELLS) or "Passive" in (ranks[-1].get("rank") or ""):
+            if not ranks or "Passive" in (ranks[-1].get("rank") or "") or (sp.get("name") not in COMBAT_ALLOW
+                                                                            and any(sp.get("name", "").startswith(x) for x in NOT_COMBAT + NOT_COMBAT_SPELLS)):
                 continue
             text_all = " ".join(str(r.get("text", "")) for r in ranks)
             if not COMBAT_TEXT.search(text_all):
@@ -412,6 +415,7 @@ NOT_COMBAT_SPELLS = ("Summon", "Conjure", "Create", "Track", "Find ", "Portal", 
                      "Disenchant", "Pick Lock", "Sap", "Distract", "Stealth", "Vanish", "Prowl", "Shadowmeld", "Fade", "Feign Death", "Soulstone",
                      "Ritual", "Enslave", "Banish", "Fear", "Hibernate", "Polymorph", "Shackle", "Mind Control", "Scare", "Turn Undead",
                      "Psychic Scream", "Howl of Terror", "Seduction", "Blind", "Gouge", "Freezing Trap", "Frost Trap", "Scatter Shot", "Repentance")
+COMBAT_ALLOW = ("Summon Hawk",)   # damage spells the prefixes above would drop (2026-10-01: Summon Hawk is a Beast Mastery damage talent)
 COMBAT_TEXT = re.compile(r"damage|attack power|attack speed|haste|critical|spell power|chance to hit|armor by|mana regen|restores? \d+ mana|increas\w+ (your|all)", re.I)
 
 
@@ -460,7 +464,7 @@ def cooldown_pool(entry, repo, builds, setting, tag, apls):
     lets the search keep the useful ones."""
     found = {}
     for n, ap in enumerate(apls):
-        bl = [{"label": f"{n}|{i}", "talents": b["talents"], "apl_json": ap} for i, b in enumerate(builds)]
+        bl = [{"label": f"{n}|{i}", "talents": b["talents"], "apl_json": ap, **gear_of(b)} for i, b in enumerate(builds)]
         for r in bench(entry, repo, bl, 300, 1, setting, tag + "-cd").values():
             for x in r.get("actions") or []:
                 if (x.get("damage") or 0) == 0 and 0 < (x.get("casts") or 0) <= 4:
@@ -472,6 +476,26 @@ def cooldown_pool(entry, repo, builds, setting, tag, apls):
 
 
 # ------------------------------------------------------------------------------------------------ targets
+def gear_of(b):
+    """A tuning build's own gear (bench gear_json), when it carries one."""
+    return {"gear_json": b["gear_json"]} if b.get("gear_json") else {}
+
+
+def tune_builds(path, cls, trees):
+    """--tune: builds to tune on, from a JSON list of {label, allocation ({talent: rank} or by tree) or talents, gear (a .gear.json
+    path, optional)}, on top of the entry's main builds, which stay protected (2026-10-01: ml_pipeline.py tunes each entry's rotation
+    on the talent search's winners in their tier gear; a first version tuned on them alone, so a change could cost the hand drafts)."""
+    out = []
+    for b in json.load(open(path, encoding="utf-8")):
+        al = b.get("allocation")
+        if isinstance(al, dict) and al and all(isinstance(v, list) for v in al.values()):
+            al = {n: r for items in al.values() for n, r in items}
+        t = b.get("talents") or R.talents_string(trees, al)
+        g = b.get("gear")
+        out.append({"label": b["label"], "talents": t, **({"gear_json": {"items": json.load(open(ROOT / g, encoding="utf-8"))["items"]}, "gear": g} if g else {})})
+    return out
+
+
 def main_builds(cls, spec, entry, repo, trees):
     """The builds a spec's rotation is tuned on: our best build and the simulator's best preset in the last race, plus the entry's
     `tune_builds` (builds whose own lines the rotation carries, so no change may cost them either)."""
@@ -508,6 +532,9 @@ def search(cls, spec, a, repo, N, where=None):
     setting = where or R.setting(entry)
     trees = R.load_trees(repo, cls)
     builds = main_builds(cls, spec, entry, repo, trees)
+    if getattr(a, "tune", None):   # the given builds first; the entry's main builds stay protected (no change may cost them 0.1% either)
+        extra = tune_builds(a.tune, cls, trees)
+        builds = extra + [b for b in builds if b["talents"] not in {x["talents"] for x in extra}]
     base_path = (repo / entry["apl"]) if getattr(a, "fresh", False) and not entry["apl"].startswith("_reference/") else R.apl_path(entry, repo, setting)
     base = json.load(open(base_path, encoding="utf-8"))
     pool = class_pool(repo, entry)
@@ -527,7 +554,7 @@ def search(cls, spec, a, repo, N, where=None):
           + ", ".join(b["label"] for b in builds) + f" ({setting}{', tank value' if tank else ''})", flush=True)
 
     def run_set(apls, iterations, seed):
-        bl = [{"label": f"{ci}|{bi}", "talents": b["talents"], "apl_json": ap} for ci, ap in enumerate(apls) for bi, b in enumerate(builds)]
+        bl = [{"label": f"{ci}|{bi}", "talents": b["talents"], "apl_json": ap, **gear_of(b)} for ci, ap in enumerate(apls) for bi, b in enumerate(builds)]
         return bench(entry, repo, bl, iterations, seed, setting, tag)
 
     def per_build(rows, ci):
@@ -605,7 +632,7 @@ def search(cls, spec, a, repo, N, where=None):
     return {"class": cls, "spec": spec, "date": datetime.date.today().isoformat(), "commit": R.git_commit(repo), "setting": setting, "tank": tank,
             "simulator_apl": entry["apl"],
             "start": str(base_path.relative_to(repo) if str(base_path).startswith(str(repo)) else base_path.relative_to(ROOT)),
-            "builds": builds, "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final}, base, cur
+            "builds": [{k: v for k, v in b.items() if k != "gear_json"} for b in builds], "iterations": a.iterations, "confirm": a.confirm, "changes": log, "final": final}, base, cur
 
 
 def write(cls, spec, rec, base, cur, N):
@@ -658,18 +685,10 @@ def write(cls, spec, rec, base, cur, N):
 
 @contextlib.contextmanager
 def specs_lock():
-    """An exclusive lock on specs.json.lock where the platform has fcntl (Linux, the cloud sessions); a no-op elsewhere."""
-    try:
-        import fcntl
-    except ImportError:
+    """An exclusive lock on specs.json.lock (Linux and Windows: filelock.py), so searches of different classes can run in parallel."""
+    from filelock import locked
+    with locked(HERE / "specs.json.lock"):
         yield
-        return
-    with open(HERE / "specs.json.lock", "w") as fh:
-        fcntl.flock(fh, fcntl.LOCK_EX)
-        try:
-            yield
-        finally:
-            fcntl.flock(fh, fcntl.LOCK_UN)
 
 
 def _point_specs(sp, cls, spec, k, out):
@@ -712,6 +731,7 @@ def main():
     ap.add_argument("--repo")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--insert-only", action="store_true", help="try only insertions of spellbook spells the rotation does not cast (the sweep of 2026-09-29)")
+    ap.add_argument("--tune", help="JSON list of builds to tune on instead of the last race's best (see tune_builds)")
     a = ap.parse_args()
     INSERT_ONLY[0] = a.insert_only
     R.set_game("forever")

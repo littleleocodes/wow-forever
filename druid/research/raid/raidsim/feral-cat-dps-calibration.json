@@ -6,18 +6,18 @@
  "builds": [
   "feral-cat-dps",
   "opt-feral-cat-dps-raid-dps",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-hand-2026-09-26.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral-cat-9-35-7.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-preset-feral.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r1.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r2.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r3.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r4.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r5.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-cat-dps-r6.json"
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-hand-2026-09-26.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-preset-feral-cat-9-35-7.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-preset-feral.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r1.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r2.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r3.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r4.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r5.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-cat-dps-r6.json"
  ],
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "druid/feralcat",
   "gear": "_reference/data/raidsim/gear_sets/forever/druid-feralcat-launch.p1opt.gear.json",
@@ -46,9 +46,9 @@
  "talents": [
   {
    "talent": "Shredding Attacks",
-   "sim": 0.18833974435020315,
-   "ev_before": 0.2048233016471883,
-   "ev_after": 0.2048233016471883,
+   "sim": 0.17810084605973336,
+   "ev_before": 0.20513072437303922,
+   "ev_after": 0.20512850381674727,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -65,9 +65,9 @@
   },
   {
    "talent": "King of the Jungle",
-   "sim": 0.09410628499890898,
-   "ev_before": 0.09403885875391257,
-   "ev_after": 0.09403885875391257,
+   "sim": 0.08329274147053138,
+   "ev_before": 0.09403892349964187,
+   "ev_after": 0.09403797084119081,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -85,9 +85,9 @@
   },
   {
    "talent": "Blood Frenzy",
-   "sim": 0.08169216503892439,
-   "ev_before": 0.0825874202250927,
-   "ev_after": 0.0825874202250927,
+   "sim": 0.08241978746959508,
+   "ev_before": 0.08342726634309479,
+   "ev_after": 0.08342642439856048,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -106,9 +106,9 @@
   },
   {
    "talent": "Sharpened Claws",
-   "sim": 0.056679304517181145,
-   "ev_before": 0.05454866626803392,
-   "ev_after": 0.05454866626803392,
+   "sim": 0.057251987351228294,
+   "ev_before": 0.054317674267714715,
+   "ev_after": 0.05431714531312317,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -127,9 +127,9 @@
   },
   {
    "talent": "Rend and Tear",
-   "sim": 0.046215514439859204,
-   "ev_before": 0.04472667425074876,
-   "ev_after": 0.04472667425074876,
+   "sim": 0.04684140737270144,
+   "ev_before": 0.0447267039156277,
+   "ev_after": 0.04472626904950184,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -148,9 +148,9 @@
   },
   {
    "talent": "Predatory Instincts",
-   "sim": 0.0387001322573383,
-   "ev_before": 0.03176921492257935,
-   "ev_after": 0.03176921492257935,
+   "sim": 0.038834719852312356,
+   "ev_before": 0.03163746124346086,
+   "ev_after": 0.03163715977184098,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -169,9 +169,9 @@
   },
   {
    "talent": "Nature's Majesty",
-   "sim": 0.037657152615503175,
-   "ev_before": 0.029119508932975345,
-   "ev_after": 0.029119508932975345,
+   "sim": 0.03759867525511756,
+   "ev_before": 0.028998368913578914,
+   "ev_after": 0.028998093352578712,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -189,9 +189,9 @@
   },
   {
    "talent": "Naturalist",
-   "sim": 0.03600000000000022,
-   "ev_before": 0.03596741932770302,
-   "ev_after": 0.03596741932770302,
+   "sim": 0.036000000000000074,
+   "ev_before": 0.03596744278671213,
+   "ev_after": 0.03596709457772977,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -209,51 +209,9 @@
   },
   {
    "talent": "Predatory Strikes",
-   "sim": 0.03173582401249861,
-   "ev_before": 0.03302245348962676,
-   "ev_after": 0.03302245348962676,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-cat-dps",
-    "opt-feral-cat-dps-raid-dps",
-    "cand-feral-cat-dps-hand-2026-09-26",
-    "cand-feral-cat-dps-preset-feral-cat-9-35-7",
-    "cand-feral-cat-dps-preset-feral",
-    "cand-feral-cat-dps-r1",
-    "cand-feral-cat-dps-r2",
-    "cand-feral-cat-dps-r3",
-    "cand-feral-cat-dps-r4",
-    "cand-feral-cat-dps-r5",
-    "cand-feral-cat-dps-r6"
-   ]
-  },
-  {
-   "talent": "Berserk",
-   "sim": 0.02855633517081071,
-   "ev_before": 0.036718029275135095,
-   "ev_after": 0.036718029275135095,
-   "scale": 1.0,
-   "how": "kept",
-   "builds": [
-    "feral-cat-dps",
-    "opt-feral-cat-dps-raid-dps",
-    "cand-feral-cat-dps-hand-2026-09-26",
-    "cand-feral-cat-dps-preset-feral-cat-9-35-7",
-    "cand-feral-cat-dps-preset-feral",
-    "cand-feral-cat-dps-r1",
-    "cand-feral-cat-dps-r2",
-    "cand-feral-cat-dps-r3",
-    "cand-feral-cat-dps-r4",
-    "cand-feral-cat-dps-r5",
-    "cand-feral-cat-dps-r6"
-   ]
-  },
-  {
-   "talent": "Leader of the Pack",
-   "sim": 0.028273363381148008,
-   "ev_before": 0.02714042715828713,
-   "ev_after": 0.02714042715828713,
+   "sim": 0.031631005950694784,
+   "ev_before": 0.033022475110846876,
+   "ev_after": 0.03302215932986109,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -272,9 +230,9 @@
   },
   {
    "talent": "Savage Fury",
-   "sim": 0.028215149110147372,
-   "ev_before": 0.02995747427996588,
-   "ev_after": 0.02995747427996588,
+   "sim": 0.028361211505016234,
+   "ev_before": 0.029997015307519193,
+   "ev_after": 0.029996731109991112,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -292,10 +250,52 @@
    ]
   },
   {
+   "talent": "Leader of the Pack",
+   "sim": 0.028248106057062215,
+   "ev_before": 0.027028451745882257,
+   "ev_after": 0.02702819533424305,
+   "scale": 1.0,
+   "how": "kept",
+   "builds": [
+    "feral-cat-dps",
+    "opt-feral-cat-dps-raid-dps",
+    "cand-feral-cat-dps-hand-2026-09-26",
+    "cand-feral-cat-dps-preset-feral-cat-9-35-7",
+    "cand-feral-cat-dps-preset-feral",
+    "cand-feral-cat-dps-r1",
+    "cand-feral-cat-dps-r2",
+    "cand-feral-cat-dps-r3",
+    "cand-feral-cat-dps-r4",
+    "cand-feral-cat-dps-r5",
+    "cand-feral-cat-dps-r6"
+   ]
+  },
+  {
+   "talent": "Berserk",
+   "sim": 0.025747176915071245,
+   "ev_before": 0.036718053402013166,
+   "ev_after": 0.02574689766727125,
+   "scale": 0.7012190143577754,
+   "how": "fitted",
+   "builds": [
+    "feral-cat-dps",
+    "opt-feral-cat-dps-raid-dps",
+    "cand-feral-cat-dps-hand-2026-09-26",
+    "cand-feral-cat-dps-preset-feral-cat-9-35-7",
+    "cand-feral-cat-dps-preset-feral",
+    "cand-feral-cat-dps-r1",
+    "cand-feral-cat-dps-r2",
+    "cand-feral-cat-dps-r3",
+    "cand-feral-cat-dps-r4",
+    "cand-feral-cat-dps-r5",
+    "cand-feral-cat-dps-r6"
+   ]
+  },
+  {
    "talent": "Nature's Reach",
-   "sim": 0.02276494260951665,
-   "ev_before": 0.030383415833433697,
-   "ev_after": 0.030383415833433697,
+   "sim": 0.02167163551114417,
+   "ev_before": 0.030383419996558414,
+   "ev_after": 0.030383358919739915,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -313,9 +313,9 @@
   },
   {
    "talent": "Genesis",
-   "sim": 0.017913075713789688,
-   "ev_before": 0.01454086223366364,
-   "ev_after": 0.01454086223366364,
+   "sim": 0.018080609910660746,
+   "ev_before": 0.014679319792910225,
+   "ev_after": 0.014679181150016022,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -333,9 +333,9 @@
   },
   {
    "talent": "Heart of the Wild",
-   "sim": 0.01740421497242335,
-   "ev_before": 0.014014936094565332,
-   "ev_after": 0.014014936094565332,
+   "sim": 0.017343167456714603,
+   "ev_before": 0.014014326468427074,
+   "ev_after": 0.014023230876756531,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -354,11 +354,11 @@
   },
   {
    "talent": "Furor",
-   "sim": 0.006622682350657407,
-   "ev_before": 0.004881387628993299,
-   "ev_after": 0.004881387628993299,
+   "sim": 0.0025747710768511435,
+   "ev_before": 0.0048813907294379885,
+   "ev_after": 0.0048813453194987005,
    "scale": 1.0,
-   "how": "kept",
+   "how": "noise",
    "builds": [
     "feral-cat-dps",
     "opt-feral-cat-dps-raid-dps",
@@ -376,8 +376,8 @@
   {
    "talent": "Feral Charge",
    "sim": 0.0,
-   "ev_before": 2.404430536088993e-05,
-   "ev_after": 2.404430536088993e-05,
+   "ev_before": 2.4025405486468968e-05,
+   "ev_after": 2.428238890563937e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -411,8 +411,8 @@
   {
    "talent": "Thick Hide",
    "sim": 0.0,
-   "ev_before": 1.4427995334722348e-05,
-   "ev_after": 1.4427995334722348e-05,
+   "ev_before": 1.4416654450959006e-05,
+   "ev_after": 1.4570857523253848e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -452,8 +452,8 @@
   {
    "talent": "Natural Shapeshifter",
    "sim": 0.0,
-   "ev_before": 4.868526373828891e-05,
-   "ev_after": 4.868526373828891e-05,
+   "ev_before": 4.8654079061966675e-05,
+   "ev_after": 4.9174453963072266e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -475,8 +475,8 @@
   {
    "talent": "Moonglow",
    "sim": 0.0,
-   "ev_before": 4.421954975051771e-05,
-   "ev_after": 4.421954975051771e-05,
+   "ev_before": 4.4184791483281986e-05,
+   "ev_after": 4.465740297118534e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -499,70 +499,70 @@
   "limit": null,
   "builds": {
    "feral-cat-dps": {
-    "dps": 364.31987516547434,
-    "surplus": 364.31761091660405,
+    "dps": 368.7818791789397,
+    "surplus": 369.63457552385063,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023068630517112387
    },
    "opt-feral-cat-dps-raid-dps": {
-    "dps": 365.67377370685915,
-    "surplus": 365.6734256113489,
+    "dps": 370.26446054201637,
+    "surplus": 371.1270281165426,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023241841988812517
    },
    "cand-feral-cat-dps-hand-2026-09-26": {
-    "dps": 340.4348955210693,
-    "surplus": 340.9284362130672,
+    "dps": 348.2374038448949,
+    "surplus": 348.00620814579673,
     "oom_seconds": 0.0,
-    "deficit": 0.0014476372152467665
+    "deficit": 0.0
    },
    "cand-feral-cat-dps-preset-feral-cat-9-35-7": {
-    "dps": 365.67377370685915,
-    "surplus": 365.6734256113489,
+    "dps": 370.26446054201637,
+    "surplus": 371.1270281165426,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023241841988812517
    },
    "cand-feral-cat-dps-preset-feral": {
-    "dps": 349.09962730553866,
-    "surplus": 349.6005703796043,
+    "dps": 353.4160094353366,
+    "surplus": 353.73895145644866,
     "oom_seconds": 0.0,
-    "deficit": 0.0014329011921281332
+    "deficit": 0.0009129388205126876
    },
    "cand-feral-cat-dps-r1": {
-    "dps": 307.7594429752933,
-    "surplus": 307.223415480089,
+    "dps": 314.19782461945795,
+    "surplus": 314.84922702379004,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0020689344245488073
    },
    "cand-feral-cat-dps-r2": {
-    "dps": 316.5215665865186,
-    "surplus": 315.9680763036292,
+    "dps": 323.20860261725875,
+    "surplus": 323.8855337647858,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.002090032054406832
    },
    "cand-feral-cat-dps-r3": {
-    "dps": 357.7718003474499,
-    "surplus": 357.40363284988797,
+    "dps": 362.72057409443397,
+    "surplus": 363.56208428736085,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023146258350245086
    },
    "cand-feral-cat-dps-r4": {
-    "dps": 364.31987516547434,
-    "surplus": 364.31761091660405,
+    "dps": 368.7818791789397,
+    "surplus": 369.63457552385063,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023068630517112387
    },
    "cand-feral-cat-dps-r5": {
-    "dps": 365.67377370685915,
-    "surplus": 365.6734256113489,
+    "dps": 370.26446054201637,
+    "surplus": 371.1270281165426,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023241841988812517
    },
    "cand-feral-cat-dps-r6": {
-    "dps": 365.67377370685915,
-    "surplus": 365.6734256113489,
+    "dps": 370.26446054201637,
+    "surplus": 371.1270281165426,
     "oom_seconds": 0.0,
-    "deficit": 0.0
+    "deficit": 0.0023241841988812517
    }
   },
   "removals": {}

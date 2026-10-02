@@ -2,7 +2,7 @@
  "dummy": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,9 @@
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-feral-cat-dps-raid-dps",
-    "talents": "050022-5510002023032213051-052"
+    "label": "ml: Feral Combat",
+    "talents": "050022-2500032123032213051-052",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
    },
    {
     "label": "sim preset: Feral Cat 9/35/7",
@@ -31,7 +32,7 @@
    },
    {
     "round": 2,
-    "change": "threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip",
+    "change": "threshold 5 -> 3.75: if combo points \u2265 5 and not Rip is on the target: cast Rip",
     "gain_seed1": 0.01769883832679664,
     "gain_seed2": 0.016306988432532865,
     "candidates": 380,
@@ -39,7 +40,7 @@
    },
    {
     "round": 3,
-    "change": "drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form",
+    "change": "drop: if Furor is known and mana \u2265 current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form",
     "gain_seed1": 0.011010857768606996,
     "gain_seed2": 0.011157215923282227,
     "candidates": 379,
@@ -47,7 +48,7 @@
    },
    {
     "round": 4,
-    "change": "threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
+    "change": "threshold 27.8 -> 13.9: if Furor is known and mana \u2265 current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
     "gain_seed1": 0.002210003839751007,
     "gain_seed2": 0.0035093121359617285,
     "candidates": 346,
@@ -63,7 +64,7 @@
    },
    {
     "round": 6,
-    "change": "drop: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form",
+    "change": "drop: if Furor is known and mana \u2265 current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 13.9: cancel Cat Form",
     "gain_seed1": 0.0010676856700149173,
     "gain_seed2": 0.001713237646959076,
     "candidates": 351,
@@ -76,23 +77,39 @@
     "gain_seed2": 0.0016071808614435135,
     "candidates": 339,
     "pass": 1
+   },
+   {
+    "round": 8,
+    "change": "drop the condition: if Faerie Fire should be refreshed: cast Faerie Fire",
+    "gain_seed1": 0.004900272747658363,
+    "gain_seed2": 0.005538737191032261,
+    "candidates": 469,
+    "pass": 4
+   },
+   {
+    "round": 9,
+    "change": "only with 6s or more of the fight left: cast Faerie Fire",
+    "gain_seed1": 0.008247017827998748,
+    "gain_seed2": 0.008238845493417246,
+    "candidates": 459,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "opt-feral-cat-dps-raid-dps": {
-     "before": 336.3097731878436,
-     "after": 356.42429425825105,
-     "base": 336.3097731878436,
+    "ml: Feral Combat": {
+     "before": 345.71291133175134,
+     "after": 370.533611848079,
+     "base": 345.71291133175134,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 336.3097731878436,
-     "after": 356.42429425825105,
-     "base": 336.3097731878436,
+     "before": 345.71291133175134,
+     "after": 370.533611848079,
+     "base": 345.71291133175134,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -101,12 +118,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "druid",
   "spec": "feral-cat-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -114,8 +131,9 @@
   "start": "ui\\specs\\druid\\feralcat\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-feral-cat-dps-raid-dps",
-    "talents": "050022-5510002023032213051-052"
+    "label": "ml: Feral Combat",
+    "talents": "050022-2500032123032213051-052",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-feral-combat-bis.gear.json"
    },
    {
     "label": "sim preset: Feral Cat 9/35/7",
@@ -135,7 +153,7 @@
    },
    {
     "round": 2,
-    "change": "threshold 5 -> 3.75: if combo points ≥ 5 and not Rip is on the target: cast Rip",
+    "change": "threshold 5 -> 3.75: if combo points \u2265 5 and not Rip is on the target: cast Rip",
     "gain_seed1": 0.011059249207356903,
     "gain_seed2": 0.013009208079847179,
     "candidates": 380,
@@ -143,7 +161,7 @@
    },
    {
     "round": 3,
-    "change": "drop: if not Cat Form is up and mana % ≤ 40% and time left in the fight ≥ 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate",
+    "change": "drop: if not Cat Form is up and mana % \u2264 40% and time left in the fight \u2265 20.0 and not (Demonic Rune is known and Demonic Rune is ready or Potion is known and Potion is ready): cast Innervate",
     "gain_seed1": 0.006728494551307751,
     "gain_seed2": 0.005304454999722985,
     "candidates": 379,
@@ -151,28 +169,36 @@
    },
    {
     "round": 4,
-    "change": "threshold 27.8 -> 13.9: if Furor is known and mana ≥ current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
+    "change": "threshold 27.8 -> 13.9: if Furor is known and mana \u2265 current cost and the global cooldown is ready and Clearcasting is known and Clearcasting is up and energy < 27.8: cancel Cat Form",
     "gain_seed1": 0.0012417965825086696,
     "gain_seed2": 0.0016716670766716568,
     "candidates": 352,
     "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "drop: if Furor is known and mana \u2265 current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo points = 5.0 and (energy + 20.2) < current cost or Clearcasting is known and Clearcasting is up and energy < 27.8): cancel Cat Form",
+    "gain_seed1": 0.0025472928926464355,
+    "gain_seed2": 0.001823315024780836,
+    "candidates": 480,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
-    "opt-feral-cat-dps-raid-dps": {
-     "before": 548.5288119189955,
-     "after": 565.9624298865533,
-     "base": 548.5288119189955,
+    "ml: Feral Combat": {
+     "before": 557.9076573616202,
+     "after": 575.8153192411974,
+     "base": 557.9076573616202,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Feral Cat 9/35/7": {
-     "before": 548.5288119189955,
-     "after": 565.9624298865533,
-     "base": 548.5288119189955,
+     "before": 557.9076573616202,
+     "after": 575.8153192411974,
+     "base": 557.9076573616202,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -181,6 +207,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

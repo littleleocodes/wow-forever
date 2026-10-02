@@ -9,14 +9,14 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.52% | manual |
-| Shredding Attacks | Feral Combat | 4 | +3.79% | manual |
-| Berserk | Feral Combat | 7 | +3.68% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.58% | manual |
+| Shredding Attacks | Feral Combat | 4 | +3.80% | manual |
 | King of the Jungle | Feral Combat | 5 | +3.36% | manual |
-| Leader of the Pack | Feral Combat | 5 | +2.69% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.63% | manual |
+| Leader of the Pack | Feral Combat | 5 | +2.68% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.62% | manual |
+| Berserk | Feral Combat | 7 | +2.58% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
-| Nature's Majesty | Balance | 2 | +1.45% | manual |
+| Nature's Majesty | Balance | 2 | +1.44% | manual |
 | Savage Fury | Feral Combat | 3 | +1.23% | manual |
 | Predatory Strikes | Feral Combat | 4 | +1.10% | manual |
 | Rend and Tear | Feral Combat | 6 | +1.05% | manual |
@@ -24,7 +24,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Naturalist | Restoration | 2 | +1.00% | manual |
 | Reflection | Restoration | 3 | +0.68% | manual |
 | Moonkin Form | Balance | 7 | +0.60% | manual |
-| Genesis | Balance | 1 | +0.32% | manual |
+| Genesis | Balance | 1 | +0.33% | manual |
 | Heart of the Wild | Feral Combat | 1 | +0.30% | manual |
 | Tranquil Spirit | Restoration | 4 | +0.12% | manual |
 | Furor | Restoration | 1 | +0.10% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Natural Reaction | Feral Combat | 6 | +0.00% | manual |
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
 
-## Optimized build: 9/35/7  score +108.02%  (dps x2.078, sustain x1.008, surv x1.000, utility +0.00%)
+## Optimized build: 9/35/7  score +105.98%  (dps x2.058, sustain x1.008, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
@@ -52,7 +52,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Naturalist | Restoration 2 | 3/5 | +2.04% | yes |
+| Naturalist | Restoration 2 | 3/5 | +2.02% | yes |
 | Reflection | Restoration 3 | 1/3 | +0.68% | no |
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |

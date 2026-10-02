@@ -9,11 +9,11 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Blood Frenzy | Feral Combat | 4 | +5.43% | manual |
-| Shredding Attacks | Feral Combat | 4 | +3.82% | manual |
-| Berserk | Feral Combat | 7 | +3.68% | manual |
+| Blood Frenzy | Feral Combat | 4 | +5.49% | manual |
+| Shredding Attacks | Feral Combat | 4 | +3.83% | manual |
 | King of the Jungle | Feral Combat | 5 | +3.36% | manual |
-| Sharpened Claws | Feral Combat | 3 | +2.59% | manual |
+| Sharpened Claws | Feral Combat | 3 | +2.58% | manual |
+| Berserk | Feral Combat | 7 | +2.58% | manual |
 | Nature's Reach | Balance | 2 | +1.52% | manual |
 | Nature's Majesty | Balance | 2 | +1.42% | manual |
 | Savage Fury | Feral Combat | 3 | +1.24% | manual |
@@ -40,11 +40,11 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Improved Moonfire | Balance | 2 | +0.00% | manual |
 | Nature's Splendor | Balance | 3 | +0.00% | manual |
 
-## Optimized build: 9/35/7  score +102.54%  (dps x2.024, sustain x1.008, surv x1.000, utility +0.00%)
+## Optimized build: 9/35/7  score +100.57%  (dps x2.004, sustain x1.008, surv x1.000, utility +0.00%)
 
 ```
   Balance: Genesis 5, Nature's Majesty 2, Nature's Reach 2
-  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Sharpened Claws 2, Savage Fury 2, Feral Charge 1, Blood Frenzy 2, Shredding Attacks 3, Predatory Strikes 3, Leader of the Pack 1, King of the Jungle 3, Predatory Instincts 2, Rend and Tear 5, Berserk 1
+  Feral Combat: Heart of the Wild 5, Ferocity 2, Thick Hide 3, Sharpened Claws 2, Savage Fury 2, Feral Charge 1, Blood Frenzy 2, Shredding Attacks 3, Predatory Strikes 3, King of the Jungle 3, Predatory Instincts 2, Leader of the Pack 1, Rend and Tear 5, Berserk 1
   Restoration: Furor 5, Naturalist 2
 ```
 
@@ -52,7 +52,7 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Naturalist | Restoration 2 | 3/5 | +1.98% | yes |
+| Naturalist | Restoration 2 | 3/5 | +1.96% | yes |
 | Reflection | Restoration 3 | 1/3 | +0.68% | no |
 | Moonkin Form | Balance 7 | 1/1 | +0.60% | no |
 | Tranquil Spirit | Restoration 4 | 1/5 | +0.12% | no |

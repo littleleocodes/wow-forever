@@ -5,6 +5,29 @@
   {
    "action": {
     "condition": {
+     "not": {
+      "val": {
+       "auraIsActive": {
+        "sourceUnit": {
+         "type": "CurrentTarget"
+        },
+        "auraId": {
+         "spellId": 1311680
+        }
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1311680
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {
@@ -146,6 +169,54 @@
       "vals": [
        {
         "cmp": {
+         "op": "OpLe",
+         "lhs": {
+          "dotRemainingTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         },
+         "rhs": {
+          "spellCastTime": {
+           "spellId": {
+            "spellId": 25311
+           }
+          }
+         }
+        }
+       },
+       {
+        "cmp": {
+         "op": "OpGe",
+         "lhs": {
+          "remainingTime": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "10s"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 25311
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
          "op": "OpLt",
          "lhs": {
           "currentManaPercent": {}
@@ -189,14 +260,14 @@
       "lhs": {
        "dotRemainingTime": {
         "spellId": {
-         "spellId": 25311
+         "spellId": 25309
         }
        }
       },
       "rhs": {
        "spellCastTime": {
         "spellId": {
-         "spellId": 25311
+         "spellId": 25309
         }
        }
       }
@@ -204,33 +275,11 @@
     },
     "castSpell": {
      "spellId": {
-      "spellId": 25311
+      "spellId": 25309
      }
     }
-   }
-  },
-  {
-   "action": {
-    "condition": {
-     "not": {
-      "val": {
-       "auraIsActive": {
-        "sourceUnit": {
-         "type": "CurrentTarget"
-        },
-        "auraId": {
-         "spellId": 1311680
-        }
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 1311680
-     }
-    }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see demonology-raid-rotation-search.json)"
   },
   {
    "action": {

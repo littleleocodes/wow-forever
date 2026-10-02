@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,18 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
+    "label": "ml: Destruction",
+    "talents": "252-0050003201-055030510310035",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+   },
+   {
+    "label": "ml: Hybrid Affliction/Destruction",
+    "talents": "25210020035-1050103001-0550205003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-bis.gear.json"
+   },
+   {
     "label": "opt-sb-raid-raid-dps",
-    "talents": "25500010135-2300203001-0550005003"
+    "talents": "25500020035-0050203001-0550005003"
    },
    {
     "label": "sim preset: DS/Ruin Pandemic 24/11/16",
@@ -36,37 +46,63 @@
     "gain_seed2": 0.0031055127021186735,
     "candidates": 275,
     "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "spell probe: insert before the filler: cast Conflagrate",
+    "gain_seed1": 0.0777,
+    "gain_seed2": 0.08,
+    "candidates": 4,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "opt-sb-raid-raid-dps": {
-     "before": 571.4501395152927,
-     "after": 575.3735308132013,
-     "base": 571.4501395152927,
+    "ml: Destruction": {
+     "before": 581.3868103737855,
+     "after": 622.4072108275218,
+     "base": 581.3868103737855,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.1799250000000001,
-     "oom_after": 1.1799250000000001
+     "oom_before": 0.32975000000000004,
+     "oom_after": 0.32975000000000004
+    },
+    "ml: Hybrid Affliction/Destruction": {
+     "before": 640.8284272916195,
+     "after": 641.9350062585985,
+     "base": 640.8284272916195,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.50565,
+     "oom_after": 0.50565
+    },
+    "opt-sb-raid-raid-dps": {
+     "before": 637.2526138614625,
+     "after": 638.7465533730315,
+     "base": 637.2526138614625,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.300425,
+     "oom_after": 1.300425
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 543.6278744637357,
-     "after": 546.131664171005,
-     "base": 543.6278744637357,
+     "before": 603.0872005704387,
+     "after": 605.1682905239463,
+     "base": 603.0872005704387,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.0751,
-     "oom_after": 1.0751
+     "oom_before": 1.10745,
+     "oom_after": 1.10745
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 5
  },
  "raid": {
   "class": "warlock",
   "spec": "sb-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -74,8 +110,18 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\ds_ruin.apl.json",
   "builds": [
    {
+    "label": "ml: Destruction",
+    "talents": "252-0050003201-055030510310035",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+   },
+   {
+    "label": "ml: Hybrid Affliction/Destruction",
+    "talents": "25210020035-1050103001-0550205003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-bis.gear.json"
+   },
+   {
     "label": "opt-sb-raid-raid-dps",
-    "talents": "25500010135-2300203001-0550005003"
+    "talents": "25500020035-0050203001-0550005003"
    },
    {
     "label": "sim preset: DS/Ruin Pandemic 24/11/16",
@@ -116,31 +162,65 @@
     "gain_seed2": 0.00191859001599326,
     "candidates": 300,
     "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "spell probe: insert before the filler: cast Conflagrate",
+    "gain_seed1": 0.076,
+    "gain_seed2": 0.0768,
+    "candidates": 4,
+    "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "threshold 60% -> 80%: if time left in the fight \u2265 15s and mana % \u2264 60%: cast Demonic Rune",
+    "gain_seed1": 0.0016559474811965735,
+    "gain_seed2": 0.0018909707071457227,
+    "candidates": 491,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "opt-sb-raid-raid-dps": {
-     "before": 682.66359088386,
-     "after": 689.4739907024073,
-     "base": 682.66359088386,
+    "ml: Destruction": {
+     "before": 686.2127922954378,
+     "after": 736.4186575443651,
+     "base": 686.2127922954378,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.67105,
-     "oom_after": 1.67105
+     "oom_before": 2.892825,
+     "oom_after": 2.462225
+    },
+    "ml: Hybrid Affliction/Destruction": {
+     "before": 757.2173953704742,
+     "after": 763.4760740007295,
+     "base": 757.2173953704742,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.257975,
+     "oom_after": 0.9029
+    },
+    "opt-sb-raid-raid-dps": {
+     "before": 754.0546694975144,
+     "after": 760.3773417079798,
+     "base": 754.0546694975144,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 3.219475,
+     "oom_after": 2.8497000000000003
     },
     "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 652.756898882293,
-     "after": 658.1738242577683,
-     "base": 652.756898882293,
+     "before": 715.0196351437446,
+     "after": 719.8316276680547,
+     "base": 715.0196351437446,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.391075,
-     "oom_after": 1.391075
+     "oom_before": 2.5504999999999995,
+     "oom_after": 2.245575
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 5
  }
 }

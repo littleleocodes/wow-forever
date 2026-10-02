@@ -5,50 +5,45 @@
   "builds": [
     {
       "id": "bm-mm-raid",
-      "name": "Beast Mastery / Marksmanship (simulator winner adopted 2026-09-27)",
+      "name": "Beast Mastery / Marksmanship (simulator winner adopted 2026-10-02)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
       "based_on": "bm-mm-raid",
-      "summary": "Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+7.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.",
+      "summary": "Allocation adopted on 2026-10-02 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+5.1% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: Allocation adopted on 2026-09-27 from `opt-mm-raid-raid-dps`, the best build in the community simulator (+7.6% DPS vs the previous draft with the simulator's gear, rotation and buffs; the previous draft is kept under raid/raidsim/candidates/). Core talents are ranked by the simulator's removal cost. Previous summary: The Classic 20/31/0 maps well: Deadly Aspects replaces Improved Aspect of the Hawk (same 10% haste proc at max rank), Lethal Attacks replaces Lethal Shots, Careful Aim (Intellect to attack power) is the new Mortal Shots prerequisite, Trueshot Aura is cheaper at tier 4, and Sniper Shot is the capstone. Focused Fire and a stronger Unleashed Fury/Ferocity keep the pet worth its 20 points.",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
           ["Endurance Training", 3],
           ["Focused Fire", 2],
           ["Unleashed Fury", 5],
-          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 4],
           ["Bestial Discipline", 2]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
           ["Efficiency", 5],
           ["Careful Aim", 5],
-          ["Improved Stings", 2],
-          ["Mortal Shots", 5],
+          ["Improved Stings", 3],
+          ["Improved Arcane Shot", 1],
           ["Trueshot Aura", 1],
-          ["Barrage", 2],
+          ["Mortal Shots", 5],
           ["Ranged Weapon Specialization", 4]
         ],
         "Survival": []
       },
       "core": [
-        {"talent": "Deadly Aspects", "why": "Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement. Raid sim (2026-09-27): removing it costs +6% DPS."},
-        {"talent": "Bestial Discipline", "why": "Raid sim (2026-09-27): removing it costs +5% DPS."},
-        {"talent": "Lethal Attacks", "why": "+5% crit with all attacks (est.) — replaces Lethal Shots. Raid sim (2026-09-27): removing it costs +5% DPS."},
-        {"talent": "Mortal Shots", "why": "+30% ranged crit damage (est.); requires Careful Aim 5. Raid sim (2026-09-27): removing it costs +4% DPS."},
-        {"talent": "Efficiency", "why": "Mana on shots/stings (3%/rank). Raid sim (2026-09-27): removing it costs +4% DPS."},
-        {"talent": "Careful Aim", "why": "New: attack power from Intellect (20%/rank read; scaling unknown). Raid sim (2026-09-27): removing it costs +4% DPS."},
-        {"talent": "Ranged Weapon Specialization", "why": "+5% ranged damage. Raid sim (2026-09-27): removing it costs +3% DPS."},
-        {"talent": "Trueshot Aura", "why": "Group ranged attack power; now a 16-point talent (demo shows +30 RAP at level 38 — expect a higher rank at 60). Raid sim (2026-09-27): removing it costs +2% DPS."}
+        {"talent": "Efficiency", "why": "Mana on shots/stings (3%/rank). Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +6% DPS."},
+        {"talent": "Unleashed Fury", "why": "Raid sim (2026-10-02): removing it costs +5% DPS."},
+        {"talent": "Summon Hawk", "why": "Raid sim (2026-10-02): removing it costs +5% DPS."},
+        {"talent": "Lethal Attacks", "why": "+5% crit with all attacks (est.) — replaces Lethal Shots. Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-10-02): removing it costs +5% DPS."},
+        {"talent": "Deadly Aspects", "why": "Hawk: 2%/rank (est. 10%) chance per auto-shot for +30% ranged haste — the Improved Aspect of the Hawk replacement. Raid sim (2026-09-27): removing it costs +6% DPS. Raid sim (2026-10-02): removing it costs +4% DPS."},
+        {"talent": "Bestial Discipline", "why": "Raid sim (2026-09-27): removing it costs +5% DPS. Raid sim (2026-10-02): removing it costs +4% DPS."},
+        {"talent": "Careful Aim", "why": "New: attack power from Intellect (20%/rank read; scaling unknown). Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +3% DPS."},
+        {"talent": "Mortal Shots", "why": "+30% ranged crit damage (est.); requires Careful Aim 5. Raid sim (2026-09-27): removing it costs +4% DPS. Raid sim (2026-10-02): removing it costs +3% DPS."}
       ],
       "flex": [
-        {
-          "points": 3,
-          "default": "Ferocity",
-          "alternatives": ["any utility talent legal at that tier"],
-          "why": "Measures +0.9% DPS in the community simulator (noise): these points are free to move."
-        },
         {
           "points": 3,
           "default": "Endurance Training",
@@ -56,13 +51,13 @@
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         },
         {
-          "points": 2,
-          "default": "Ferocity",
-          "alternatives": ["Improved Mend Pet", "any utility talent legal at that tier"],
+          "points": 1,
+          "default": "Improved Arcane Shot",
+          "alternatives": ["any utility talent legal at that tier"],
           "why": "Measures +0.0% DPS in the community simulator (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Ferocity (+0.2% DPS); Improved Mend Pet -> Ferocity (+0.2% DPS). Net +0.49% on a third seed."],
+      "notes": ["Adopted from the community simulator on 2026-10-02: `opt-mm-raid-raid-dps` beat the previous draft by +5.1% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-27: opt-mm-raid-raid-dps beat the previous draft by +7.6% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Aimed Shot is no longer a talent — either baseline or gone; Barrage's tooltip still names it, which suggests baseline.", "Compare with the Lone Wolf build: +20% own damage without a pet vs. ~25-30% more pet damage plus Focused Fire.", "Companion build `bm-mm-full-buffs-raid` (restored 2026-09-27): in a raid with Blessing of Wisdom and Mana Spring it does 687 DPS against this build's 643 (+6.8%, ElliotWood/Forever 40be98e, 3000 iterations); this build wins on the training dummy (352 vs 327).", "Summon Hawk (new-builds survey, 2026-09-28): this draft does not take Summon Hawk, and the Marksmanship rotation never casts it. In the simulator one point in it, under a rotation that casts it on cooldown, is worth +47% to bm-mm-raid on the training dummy: see mm-hawk-raid, whose lead rests on the simulator's guess at the hawks' follow-up attacks.", "2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Improved Mend Pet -> Ferocity (+0.2% DPS); Improved Mend Pet -> Ferocity (+0.2% DPS). Net +0.49% on a third seed."],
       "open_questions": ["Trueshot Aura value at level 60 and whether it still stacks with other AP buffs.", "Careful Aim scaling (20% of Intellect per rank would be enormous; likely 20% total).", "Sniper Shot in a shot rotation: a 4s cast for +160 damage vs. two Auto Shots."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -566,7 +561,7 @@
           "why": "Measures +0.0% time per kill at 60 in the fight lab (noise): these points are free to move."
         }
       ],
-      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-09-30, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
+      "notes": ["Adopted from the fight-lab race on 2026-09-26: cand-bm-r2 beat the previous draft by +3.8% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.", "Loop: pet in, Hunter's Mark, Serpent Sting, Auto Shot (+ hawk from 25); Feign Death if the pet loses the mob; Mend Pet between pulls.", "Lone Wolf (+20% damage with no pet) is not a leveling choice — the pet is the leveling engine.", "2026-09-27 scenario audit: Improved Revive Pet 2, Bestial Swiftness 1 -> Ferocity 3. Improved Revive Pet only helps after a pet death and Bestial Swiftness only speeds the pet's run to the mob; the fight lab measures both at 0.0%. Ferocity's pet and hawk crit is damage on every fight. Fight lab race (1500 fights per level): equal at 20, 0.3-0.5% less time per kill at 30-50, 1.5% less at 60; Pathfinding moves to 18-19 to keep Unleashed Fury at 20.", "2026-09-30: renamed from \"Leveling — Beast Mastery (fight-lab winner adopted 2026-09-26)\" so the name matches the spec the pages file it under (the point split decides the spec, spec_modes.py).", "Fight lab (leveling/fightlab/bm-leveling.md, 2026-10-02, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 18/24/28/29/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-bm-leveling-leveling-st is -1% at 60 and -10% at 30 (negative = faster); race winner over the leveling: leveling-beast-mastery; top talents at 60: Summon Hawk +14%, Unleashed Fury +4%, Efficiency +4%, Rapid Recuperation +3%; about zero: Barrage, Endurance Training, Pathfinding, Rapid Killing, Scatter Shot, Sniper Shot. See the Fight lab section of leveling/README.md."],
       "open_questions": ["Summon Hawk damage at 60 and whether the 'only 2 hawks' text means two can be up at once.", "Deadly Aspects rank scaling (extrapolated from 2%)."],
       "sources": ["https://warcraftforever.games/talents/hunter"]
     },
@@ -1492,12 +1487,54 @@
       "replaces": "melee-survival-raid"
     },
     {
-      "id": "opt-mm-raid-raid-dps",
-      "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
+      "id": "beast-mastery-ml-parse",
+      "name": "Beast Mastery — Full raid (parse) (machine-learning search)",
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +57.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "spec": "Beast Mastery",
+      "generated": "2026-10-02",
+      "derived": "raid",
+      "summary": "The Beast Mastery build the machine-learning talent search found in a full raid (every raid buff and debuff) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Bestial Swiftness", 1],
+          ["Unleashed Fury", 5],
+          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Intimidation", 1],
+          ["Bestial Discipline", 2],
+          ["Frenzy", 5],
+          ["Bestial Wrath", 1]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 2],
+          ["Careful Aim", 5],
+          ["Mortal Shots", 5]
+        ],
+        "Survival": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["In a full raid it does +3.2% over the training-dummy winner (812.2 vs 786.8 DPS, 100,000 fights, one seed, BiS gear).", "Search result: 31/20/0 at 812.0 ± 0.08 DPS over 100,000 fights; runner-up 31/20/0 (+0.21%; the winner takes Endurance Training 3, Frenzy 5; the runner-up Endurance Training 4, Frenzy 4); 1,723 builds simulated; certificate: 1 confirmed move first, then none of its 156 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation."],
+      "open_questions": ["A machine-searched Beast Mastery build: check it against the community's Beast Mastery builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "beast-marks-ml-raid",
+      "name": "Beast-Marks — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Hybrid Beast Mastery/Marksmanship",
+      "generated": "2026-10-02",
+      "derived": "raid",
+      "summary": "The Beast-Marks build the machine-learning talent search found on the training dummy (only your own buffs) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
@@ -1505,6 +1542,163 @@
           ["Focused Fire", 2],
           ["Unleashed Fury", 5],
           ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Bestial Discipline", 2]
+        ],
+        "Marksmanship": [
+          ["Hawk Eye", 1],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Ranged Weapon Specialization", 3]
+        ],
+        "Survival": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft mm-hawk-raid in the same gear and fights (100,000, one seed): +2.6% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow mm-hawk-raid: Improved Arcane Shot → Hawk Eye (the same DPS as the search winner 23/28/0 on one seed, 30,000 fights).", "Search result: 23/28/0 at 473.1 ± 0.04 DPS over 100,000 fights; runner-up 23/28/0 (+0.00%; the winner takes Endurance Training 3; the runner-up Endurance Training 2, Pathfinding 1); 3,004 builds simulated; certificate: none of its 260 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 23/28/0 at 439.8 DPS on the dummy (the same talents)."],
+      "open_questions": ["A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"],
+      "replaces": "mm-hawk-raid"
+    },
+    {
+      "id": "marksmanship-ml-raid",
+      "name": "Marksmanship — Raid (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-10-02",
+      "derived": "raid",
+      "summary": "The Marksmanship build the machine-learning talent search found on the training dummy (only your own buffs) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry mm-lonewolf-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 5],
+          ["Improved Aspect of the Monkey", 1]
+        ],
+        "Marksmanship": [
+          ["Hawk Eye", 3],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Improved Arcane Shot", 4],
+          ["Lone Wolf", 1],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5]
+        ],
+        "Survival": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["Against the best hand draft mm-lone-wolf-raid in the same gear and fights (100,000, one seed): +2.4% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).", "Where the simulator measured no difference, the points follow mm-lone-wolf-raid: Focused Fire → Endurance Training, Survivalist → Endurance Training (3 points), Improved Tracking → Endurance Training, Improved Tracking → Improved Aspect of the Monkey, Improved Tracking → Hawk Eye (3 points) (the same DPS as the search winner 6/37/8 on one seed, 30,000 fights).", "Search result: 6/37/8 at 452.0 ± 0.05 DPS over 100,000 fights; runner-up 6/37/8 (+0.00%; the winner takes Improved Tracking 5; the runner-up Deflection 1, Improved Tracking 4); 3,029 builds simulated; certificate: none of its 412 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "Pre-BiS gear: 21/30/0 at 437.0 DPS on the dummy (other talents: _reference/dps-rankings.md)."],
+      "open_questions": ["A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"],
+      "replaces": "mm-lone-wolf-raid"
+    },
+    {
+      "id": "marksmanship-ml-parse",
+      "name": "Marksmanship — Full raid (parse) (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Marksmanship",
+      "generated": "2026-10-02",
+      "derived": "raid",
+      "summary": "The Marksmanship build the machine-learning talent search found in a full raid (every raid buff and debuff) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry mm-lonewolf-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 1],
+          ["Improved Revive Pet", 1]
+        ],
+        "Marksmanship": [
+          ["Hawk Eye", 1],
+          ["Lethal Attacks", 5],
+          ["Improved Stings", 3],
+          ["Efficiency", 5],
+          ["Careful Aim", 5],
+          ["Rapid Killing", 2],
+          ["Improved Arcane Shot", 5],
+          ["Lone Wolf", 1],
+          ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
+          ["Rapid Recuperation", 2],
+          ["Barrage", 3],
+          ["Ranged Weapon Specialization", 5],
+          ["Sniper Shot", 1]
+        ],
+        "Survival": []
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["In a full raid it does +4.6% over the training-dummy winner (909.4 vs 869.2 DPS, 100,000 fights, one seed, BiS gear).", "Search result: 7/44/0 at 909.6 ± 0.10 DPS over 100,000 fights; runner-up 8/43/0 (+0.00%; the winner takes Hawk Eye 1; the runner-up Focused Fire 1); 3,426 builds simulated; certificate: none of its 241 one-move and chain-move neighbours was 0.1% ahead.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation."],
+      "open_questions": ["A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "survival-ml-parse",
+      "name": "Survival — Full raid (parse) (machine-learning search)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Survival",
+      "generated": "2026-10-02",
+      "derived": "raid",
+      "summary": "The Survival build the machine-learning talent search found in a full raid (every raid buff and debuff) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry melee-dps (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5]
+        ],
+        "Marksmanship": [
+          ["Lethal Attacks", 5],
+          ["Careful Aim", 5],
+          ["Lone Wolf", 1]
+        ],
+        "Survival": [
+          ["Deflection", 5],
+          ["Savage Strikes", 2],
+          ["Survivalist", 3],
+          ["Clever Traps", 2],
+          ["Surefooted", 3],
+          ["Deterrence", 1],
+          ["Survival Tactics", 2],
+          ["Predator's Edge", 5],
+          ["Counterattack", 1],
+          ["Expose Prey", 2],
+          ["Survivalist's Discipline", 2],
+          ["Strider Kick", 1],
+          ["Lightning Reflexes", 5],
+          ["Lacerating Strikes", 1]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["In a full raid it does +2.3% over the training-dummy winner (990.2 vs 967.7 DPS, 100,000 fights, one seed, BiS gear).", "Search result: 5/11/35 at 990.3 ± 0.15 DPS over 100,000 fights; runner-up 5/11/35 (+0.00%; the winner takes Counterattack 1, Deflection 5, Deterrence 1, Survivalist 3; the runner-up Entrapment 5, Improved Tracking 5); 1,559 builds simulated; certificate: the neighbours ahead on the short run (of 340) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation."],
+      "open_questions": ["A machine-searched Survival build: check it against the community's Survival builds at launch."],
+      "sources": ["https://github.com/ElliotWood/Forever"]
+    },
+    {
+      "id": "opt-mm-raid-raid-dps",
+      "name": "Optimizer — Marksmanship raid DPS with a pet (Classic 20/31/0 style) (raid-dps)",
+      "role": "dps",
+      "content": "raid",
+      "tier": "draft",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `raid-dps`: score +60.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "allocation": {
+        "Beast Mastery": [
+          ["Deadly Aspects", 5],
+          ["Endurance Training", 3],
+          ["Focused Fire", 2],
+          ["Unleashed Fury", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 4],
           ["Bestial Discipline", 2]
         ],
         "Marksmanship": [
@@ -1513,21 +1707,21 @@
           ["Careful Aim", 5],
           ["Improved Stings", 3],
           ["Improved Arcane Shot", 1],
-          ["Mortal Shots", 5],
           ["Trueshot Aura", 1],
+          ["Mortal Shots", 5],
           ["Ranged Weapon Specialization", 4]
         ],
         "Survival": []
       },
       "core": [
-        {"talent": "Bestial Discipline", "why": "Removing it costs 10.0 points of score in this model."},
-        {"talent": "Efficiency", "why": "Removing it costs 9.0 points of score in this model."},
-        {"talent": "Careful Aim", "why": "Removing it costs 7.4 points of score in this model."},
+        {"talent": "Summon Hawk", "why": "Removing it costs 9.3 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 9.2 points of score in this model."},
+        {"talent": "Bestial Discipline", "why": "Removing it costs 8.7 points of score in this model."},
         {"talent": "Mortal Shots", "why": "Removing it costs 7.0 points of score in this model."},
-        {"talent": "Lethal Attacks", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 6.9 points of score in this model."},
         {"talent": "Deadly Aspects", "why": "Removing it costs 6.4 points of score in this model."},
-        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 5.1 points of score in this model."},
-        {"talent": "Improved Stings", "why": "Removing it costs 3.7 points of score in this model."}
+        {"talent": "Careful Aim", "why": "Removing it costs 5.9 points of score in this model."},
+        {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 5.1 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: hunter/research/talents/forever/optimizer/mm-raid-raid-dps.md"],
@@ -1540,21 +1734,22 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +43.6% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid` and profile `parse`: score +45.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5],
           ["Endurance Training", 3],
           ["Focused Fire", 2],
           ["Unleashed Fury", 5],
-          ["Ferocity", 5],
+          ["Summon Hawk", 1],
+          ["Ferocity", 4],
           ["Bestial Discipline", 2]
         ],
         "Marksmanship": [
           ["Lethal Attacks", 5],
           ["Careful Aim", 5],
-          ["Improved Stings", 3],
           ["Efficiency", 2],
+          ["Improved Stings", 3],
           ["Improved Arcane Shot", 5],
           ["Mortal Shots", 5],
           ["Ranged Weapon Specialization", 4]
@@ -1562,14 +1757,14 @@
         "Survival": []
       },
       "core": [
-        {"talent": "Bestial Discipline", "why": "Removing it costs 7.6 points of score in this model."},
-        {"talent": "Mortal Shots", "why": "Removing it costs 6.9 points of score in this model."},
-        {"talent": "Careful Aim", "why": "Removing it costs 6.7 points of score in this model."},
-        {"talent": "Lethal Attacks", "why": "Removing it costs 6.2 points of score in this model."},
-        {"talent": "Deadly Aspects", "why": "Removing it costs 4.9 points of score in this model."},
+        {"talent": "Summon Hawk", "why": "Removing it costs 7.0 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 6.8 points of score in this model."},
+        {"talent": "Bestial Discipline", "why": "Removing it costs 6.6 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 6.1 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 5.4 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 4.8 points of score in this model."},
         {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 4.7 points of score in this model."},
-        {"talent": "Improved Stings", "why": "Removing it costs 4.0 points of score in this model."},
-        {"talent": "Focused Fire", "why": "Removing it costs 2.5 points of score in this model."}
+        {"talent": "Improved Stings", "why": "Removing it costs 4.0 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: hunter/research/talents/forever/optimizer/mm-raid-parse.md"],
@@ -1582,7 +1777,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +79.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5]
@@ -1605,14 +1800,14 @@
         ]
       },
       "core": [
-        {"talent": "Lone Wolf", "why": "Removing it costs 29.7 points of score in this model."},
-        {"talent": "Efficiency", "why": "Removing it costs 14.0 points of score in this model."},
-        {"talent": "Lethal Attacks", "why": "Removing it costs 9.5 points of score in this model."},
-        {"talent": "Mortal Shots", "why": "Removing it costs 9.4 points of score in this model."},
-        {"talent": "Deadly Aspects", "why": "Removing it costs 8.8 points of score in this model."},
-        {"talent": "Careful Aim", "why": "Removing it costs 7.7 points of score in this model."},
+        {"talent": "Lone Wolf", "why": "Removing it costs 29.6 points of score in this model."},
+        {"talent": "Efficiency", "why": "Removing it costs 11.9 points of score in this model."},
+        {"talent": "Lethal Attacks", "why": "Removing it costs 9.4 points of score in this model."},
+        {"talent": "Mortal Shots", "why": "Removing it costs 9.3 points of score in this model."},
+        {"talent": "Deadly Aspects", "why": "Removing it costs 9.0 points of score in this model."},
+        {"talent": "Careful Aim", "why": "Removing it costs 7.6 points of score in this model."},
         {"talent": "Ranged Weapon Specialization", "why": "Removing it costs 6.5 points of score in this model."},
-        {"talent": "Improved Stings", "why": "Removing it costs 5.2 points of score in this model."}
+        {"talent": "Improved Stings", "why": "Removing it costs 5.0 points of score in this model."}
       ],
       "flex": [],
       "notes": ["Report: hunter/research/talents/forever/optimizer/mm-lonewolf-raid-raid-dps.md"],
@@ -1625,7 +1820,7 @@
       "role": "dps",
       "content": "raid",
       "tier": "draft",
-      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +67.4% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
+      "summary": "Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `parse`: score +67.5% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.",
       "allocation": {
         "Beast Mastery": [
           ["Deadly Aspects", 5]
@@ -1647,7 +1842,7 @@
         ]
       },
       "core": [
-        {"talent": "Lone Wolf", "why": "Removing it costs 25.7 points of score in this model."},
+        {"talent": "Lone Wolf", "why": "Removing it costs 25.8 points of score in this model."},
         {"talent": "Mortal Shots", "why": "Removing it costs 8.6 points of score in this model."},
         {"talent": "Lethal Attacks", "why": "Removing it costs 7.9 points of score in this model."},
         {"talent": "Efficiency", "why": "Removing it costs 7.4 points of score in this model."},

@@ -75,47 +75,52 @@ The conservative dagger adaptation: Puncturing Wounds replaces Improved Backstab
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 422 | +0.0% | 712 | -0.0% | 0 s |
-| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 416 | -1.4% | 696 | -2.3% | 0 s |
-| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 399 | -5.4% | 712 | +0.0% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.5% | 702 | -1.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -12.0% | 672 | -5.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 371 | -12.1% | 648 | -9.0% | 0 s |
-| 7 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -14.8% | 630 | -11.6% | 0 s |
-| 8 | *Improved Expose Armor (SS)* | community simulator | - | 347 | -17.7% | 620 | -12.9% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -20.7% | 629 | -11.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.8% | 500 | -29.8% | 0 s |
+| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 425 | +0.0% | 712 | -0.0% | 0 s |
+| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | -1.4% | 696 | -2.3% | 0 s |
+| 3 | **[`combat-daggers-raid`](combat-daggers-raid.md)** | ours: hand draft | 16/33/2 | 398 | -6.2% | 712 | +0.0% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -7.3% | 702 | -1.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -12.7% | 672 | -5.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 355 | -16.3% | 642 | -9.8% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -17.8% | 620 | -12.9% | 0 s |
+| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -19.4% | 625 | -12.3% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -21.4% | 629 | -11.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -39.2% | 500 | -29.8% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 374 -> 413 DPS (+10.6%), sim preset: Combat Dual-Wield 15/33/3 365 -> 405 DPS (+10.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 6 changes to the base rotation; third-seed check: ml: Combat 361 -> 425 DPS (+17.7%), sim preset: Combat Dual-Wield 15/33/3 355 -> 394 DPS (+11.0%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+9.7%, pass 1)
   2. only with 10s or more of the fight left: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.2%, pass 1)
   3. only with 20s or more of the fight left: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   4. threshold 3 -> 6: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: opt-combat-daggers-raid-raid-dps 731 -> 742 DPS (+1.5%), sim preset: Combat Dual-Wield 15/33/3 714 -> 721 DPS (+0.9%)):
+  5. spell probe: insert in the middle: cast Mutilate (+15.6%, pass 4)
+  6. threshold 6 -> 12: if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor (+0.4%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Combat 707 -> 713 DPS (+0.8%), sim preset: Combat Dual-Wield 15/33/3 697 -> 702 DPS (+0.8%)):
   1. insert at the top: if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate (+0.9%, pass 1)
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
+  3. spell probe: insert before the filler: cast Mutilate (+9.9%, pass 4)
 
 | # | Priority (the first line whose condition holds is cast) | [`combat-daggers-raid`](combat-daggers-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Expose Armor < 6 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.7 |
+| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
 | 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.5 |
-| 6 | cast Backstab | 11.9 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 |
+| 6 | cast Backstab | 11.8 |
+
+Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
 | Ability | [`combat-daggers-raid`](combat-daggers-raid.md) |
 |---|---|
-| Auto Attack | 47% |
+| Auto Attack | 48% |
 | Backstab | 37% |
 | Deadly Poison | 6% |
 | Dense Sharpening Stone | 3% |
-| Eviscerate | 3% |
 | Dragonbreath Chili | 2% |
+| Eviscerate | 2% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes

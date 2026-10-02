@@ -19,47 +19,6 @@
   {
    "action": {
     "condition": {
-     "and": {
-      "vals": [
-       {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15%"
-          }
-         }
-        }
-       },
-       {
-        "cmp": {
-         "op": "OpGt",
-         "lhs": {
-          "remainingTime": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "20s"
-          }
-         }
-        }
-       }
-      ]
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 12051
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "condition": {
      "auraIsActive": {
       "auraId": {
        "spellId": 44404
@@ -108,6 +67,17 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 143,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see arcane-dps-rotation-search.json)"
   }
  ]
 }

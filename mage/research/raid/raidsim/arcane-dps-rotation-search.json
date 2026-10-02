@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
    {
+    "label": "ml: Arcane",
+    "talents": "050005023110311531-2305-0451",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
+   },
+   {
     "label": "arcane-blast-raid",
-    "talents": "050215003100311531-23050032-005"
+    "talents": "055205003100311531-2305001-005"
    },
    {
     "label": "sim preset: Arcane DPS",
@@ -60,37 +65,62 @@
     "gain_seed2": 0.004156637953215192,
     "candidates": 177,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "drop: if mana % < 15% and time left in the fight > 20s: cast Evocation",
+    "gain_seed1": 0.008732577067689373,
+    "gain_seed2": 0.008536761843484841,
+    "candidates": 281,
+    "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "insert at the end: cast Fireball",
+    "gain_seed1": 0.006095873422412135,
+    "gain_seed2": 0.006030125031904365,
+    "candidates": 257,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
-    "arcane-blast-raid": {
-     "before": 514.31469046039,
-     "after": 541.4337133010331,
-     "base": 514.31469046039,
+    "ml: Arcane": {
+     "before": 574.9081710406551,
+     "after": 602.6795327220035,
+     "base": 574.9081710406551,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.10421020000000003,
-     "oom_after": 0.10421020000000003
+     "oom_before": 0.10469885,
+     "oom_after": 0.15413824999995
+    },
+    "arcane-blast-raid": {
+     "before": 561.1219496302391,
+     "after": 601.9653857362199,
+     "base": 561.1219496302391,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.11610289999999998,
+     "oom_after": 0.1872558
     },
     "sim preset: Arcane DPS": {
-     "before": 511.6826710172626,
-     "after": 533.3722264711977,
-     "base": 511.6826710172626,
+     "before": 557.5247646749617,
+     "after": 594.4564163704521,
+     "base": 557.5247646749617,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0516926,
-     "oom_after": 0.0516926
+     "oom_before": 0.10693164999999999,
+     "oom_after": 0.10822295
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "mage",
   "spec": "arcane-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -98,8 +128,13 @@
   "start": "ui\\specs\\mage\\dps\\apls\\arcane.apl.json",
   "builds": [
    {
+    "label": "ml: Arcane",
+    "talents": "050005023110311531-2305-0451",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json"
+   },
+   {
     "label": "arcane-blast-raid",
-    "talents": "050215003100311531-23050032-005"
+    "talents": "055205003100311531-2305001-005"
    },
    {
     "label": "sim preset: Arcane DPS",
@@ -136,19 +171,28 @@
   ],
   "final": {
    "raid": {
+    "ml: Arcane": {
+     "before": 675.2558232357023,
+     "after": 690.7276240323154,
+     "base": 675.2558232357023,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
     "arcane-blast-raid": {
-     "before": 590.9426858598165,
-     "after": 619.1043352581207,
-     "base": 590.9426858598165,
+     "before": 666.6773806200792,
+     "after": 690.7929553814713,
+     "base": 666.6773806200792,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Arcane DPS": {
-     "before": 588.5896968012763,
-     "after": 609.4476361156346,
-     "base": 588.5896968012763,
+     "before": 664.0958505777761,
+     "after": 680.9865380750813,
+     "base": 664.0958505777761,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -157,6 +201,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  }
 }

@@ -160,6 +160,17 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "spellId": 143,
+      "rank": 2
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see fire-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 2948
      }
     }

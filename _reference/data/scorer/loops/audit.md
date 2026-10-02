@@ -37,7 +37,7 @@
 | classic | `resto-swiftmend-healer` | resto-heal / raid-heal | **Subtlety** | Restoration | 5 | +0.30% | manual | utility | -20% healing threat. |
 | classic | `resto-swiftmend-healer` | resto-heal / raid-heal | **Nature's Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance on Healing Touch/Regrowth when hit. |
 
-## Hunter - 32 flagged of 58 taken talents, 5 without a documented reason
+## Hunter - 32 flagged of 57 taken talents, 5 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -124,7 +124,7 @@
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Missile Barrage** | Arcane | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Improved Channeling** | Arcane | 5 | +0.01% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 5 | +0.28% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 5 | +0.29% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
 | forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Cold Snap** | Frost | 1 | +0.00% | manual | safety | Second Ice Block. |
 | forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arctic Reach** | Frost | 2 | +0.00% | manual | control (from frost-aoe) | 'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers. |
 | forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
@@ -258,7 +258,7 @@
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Improved Stormstrike** | Enhancement | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Maelstrom Weapon** | Enhancement | 5 | +0.14% | manual | throughput | Melee hits stack -20% cast time and mana on the next Lightning Bolt, five stacks (beta): instant Lightning Bolts inside the melee loop. The  |
 
-## Warlock - 22 flagged of 65 taken talents, 8 without a documented reason
+## Warlock - 22 flagged of 68 taken talents, 8 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -285,7 +285,7 @@
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 
-## Warrior - 14 flagged of 68 taken talents, 1 without a documented reason
+## Warrior - 15 flagged of 69 taken talents, 1 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -302,5 +302,6 @@
 | classic | `leveling-arms` | arms-2h-raid / leveling-st | **Improved Heroic Strike** | Arms | 2 | +0.35% | manual | sustain | Cheaper rage dump: more Heroic Strikes per pull. |
 | classic | `prot-raid-tank` | prot-tank / raid-tank | **Improved Sunder Armor** | Protection | 3 | +0.00% | parsed | sustain | -1 rage/rank on Sunder Armor, the tank's threat filler (35% of the threat split): rage economy the threat model does not carry beyond the ab |
 | classic | `prot-raid-tank` | prot-tank / raid-tank | **Anticipation** | Protection | 5 | +0.30% | manual | safety | 'Not quite as good as it might look at first glance. While 10 Defense is a strong defensive boost, it comes at the cost of 5 precious talent |
+| forever-draft | `fury-dw-raid` | fury-dw-raid / raid-dps | **Improved Heroic Strike** | Arms | 2 | +0.00% | manual | sustain (from arms-2h-raid) | Cheaper rage dump: more Heroic Strikes per pull. |
 | forever-draft | `prot-raid-tank` | prot-tank / raid-tank | **Improved Bloodrage** | Protection | 1 | +0.27% | manual | OPEN |  |
 

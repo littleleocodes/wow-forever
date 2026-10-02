@@ -18,7 +18,7 @@ Records: `_reference/data/derived-leveling.json` (generated; one entry per spec,
 """
 import argparse
 import datetime
-import fcntl
+from filelock import locked
 import json
 import pathlib
 import subprocess
@@ -82,8 +82,7 @@ def sh(args, log):
 
 
 def save(cls, tree, rec):
-    with open(OUT.with_suffix(".lock"), "w") as lk:
-        fcntl.flock(lk, fcntl.LOCK_EX)
+    with locked(OUT.with_suffix(".lock")):
         old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
         old.setdefault(cls, {})[tree] = rec
         OUT.write_text(json.dumps(old, indent=1) + "\n", encoding="utf-8")

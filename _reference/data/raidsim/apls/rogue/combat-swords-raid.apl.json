@@ -4,6 +4,26 @@
   {
    "action": {
     "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 14278
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 14278
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
      "and": {
       "vals": [
        {
@@ -251,6 +271,16 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1241584
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "auraIsActive": {
       "auraId": {
@@ -329,6 +359,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 16511
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see combat-swords-raid-rotation-search.json)"
   },
   {
    "action": {

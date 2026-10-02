@@ -3,7 +3,7 @@
  "spec": "seal-of-fury-raid",
  "game": "forever",
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "paladin/retribution",
   "gear": "_reference/data/raidsim/gear_sets/forever/paladin-retribution-default.p1opt.gear.json",
@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-09-30",
+ "date": "2026-10-02",
  "results": [
   {
    "label": "ret-raid-dps",
@@ -39,31 +39,31 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20414": 23.0,
+    "24239": 6.0,
     "26573": 22.0,
-    "20423": 7.0,
-    "10333": 18.0,
     "20216": 2.0,
+    "20414": 23.0,
+    "20423": 7.0,
     "20920": 1.0,
-    "24239": 6.0
+    "10333": 18.0
    },
    "casts": {
-    "OtherActionManaGain": 25.0,
-    "Judgement of Fury": 23.0,
-    "Auto Attack": 53.0,
-    "Consecration": 22.0,
-    "Major Mana Potion": 1.0,
-    "Seal of Fury": 7.0,
-    "Holy Strike": 18.0,
-    "Divine Favor": 2.0,
-    "item 272439": 2.0,
-    "Seal of Command": 1.0,
     "Hammer of Wrath": 6.0,
-    "Demonic Rune": 1.0
+    "Consecration": 22.0,
+    "Auto Attack": 53.0,
+    "Frozen Heart of the Mountain": 1.0,
+    "Divine Favor": 2.0,
+    "Major Mana Potion": 1.0,
+    "Judgement of Fury": 23.0,
+    "Seal of Fury": 7.0,
+    "Seal of Command": 1.0,
+    "OtherActionManaGain": 25.0,
+    "Demonic Rune": 1.0,
+    "Holy Strike": 18.0
    },
-   "dps": 444.31548791151596,
-   "dps_stdev": 17.693487056283846,
-   "threat": 369.1523903292129,
+   "dps": 414.5034317340867,
+   "dps_stdev": 20.258364739670395,
+   "threat": 345.3027453872694,
    "dtps": 0,
    "tmi": 0,
    "hps": 0,
@@ -71,14 +71,14 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Judgement of Fury": 0.22598283048504803,
-    "Auto Attack": 0.2040959641633127,
-    "Holy Strike": 0.18207672832745597,
-    "Consecration": 0.17641705150207546,
-    "Seal of Fury": 0.09727597068367393,
-    "Hammer of Wrath": 0.07509425353614914,
-    "Dragonbreath Chili": 0.03631395733702689,
-    "Seal of Command": 0.0027432439652578344
+    "Judgement of Fury": 0.2269593368921303,
+    "Auto Attack": 0.20546066715646663,
+    "Holy Strike": 0.18108345792130642,
+    "Consecration": 0.17594748773163799,
+    "Seal of Fury": 0.09732680582667427,
+    "Hammer of Wrath": 0.07525189937899356,
+    "Dragonbreath Chili": 0.03513544612400429,
+    "Seal of Command": 0.0028348989687865694
    },
    "source_shares": {},
    "unmatched_share": 1.0

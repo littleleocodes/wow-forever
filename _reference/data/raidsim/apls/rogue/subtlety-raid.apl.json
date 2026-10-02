@@ -278,7 +278,7 @@
          },
          "rhs": {
           "const": {
-           "val": "80s"
+           "val": "160s"
           }
          }
         }
@@ -293,7 +293,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -308,7 +308,7 @@
          },
          "rhs": {
           "const": {
-           "val": "60"
+           "val": "30"
           }
          }
         }
@@ -355,7 +355,8 @@
       "spellId": 1856
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -506,6 +507,16 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 13877
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see subtlety-raid-rotation-search.json)"
   },
   {
    "action": {

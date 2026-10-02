@@ -71,64 +71,75 @@ Deep Arms played in Battle Stance (2026-09-29): Rend kept up so Bloodthrill open
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 378 | +0.0% | 729 | -7.3% | 0 s |
-| 2 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 375 | -0.6% | 786 | +0.0% | 0 s |
-| 3 | *Arms 39/12/0* | community simulator | - | 369 | -2.2% | 774 | -1.6% | 0 s |
+| 1 | **[`arms-battle-raid`](arms-battle-raid.md)** | ours: hand draft | 34/17/0 | 391 | +0.0% | 740 | -6.5% | 0 s |
+| 2 | [`arms-community-parse`](arms-community-parse.md) | ours: parse build | 37/14/0 | 387 | -0.9% | 792 | +0.0% | 0 s |
+| 3 | *Arms 39/12/0* | community simulator | - | 381 | -2.4% | 778 | -1.7% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 7 changes to the base rotation; third-seed check: arms-battle-raid 210 -> 236 DPS (+12.7%), sim preset: Arms 39/12/0 198 -> 227 DPS (+15.0%)):
-  1. insert before the filler: if not Berserker Stance is up: cast Berserker Stance (+6.0%)
-  2. insert at the end: cast Sunder Armor (+3.4%)
-  3. drop: cast Whirlwind (+1.5%)
-  4. move to the top: cast Overpower (+0.8%)
-  5. drop: cast Spearing Strike (+0.8%)
-  6. threshold 25.5s -> 24.5s: if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+0.4%)
-  7. insert before the filler: cast Spearing Strike (+0.3%)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 8 changes to the base rotation; third-seed check: arms-battle-raid 460 -> 487 DPS (+5.8%), sim preset: Arms 39/12/0 454 -> 476 DPS (+4.9%)):
-  1. move to the top: cast Overpower (+2.0%)
-  2. drop: if (time left in the fight ≤ 30s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.2%)
-  3. drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.4%)
-  4. insert before the filler: cast Mocking Blow (+0.2%)
-  5. move to the top: cast Slam (+0.3%)
-  6. threshold 80 -> 40: if time until Bloodthirst is ready > 1.5s and rage > 80: cast Hamstring (+0.5%)
-  7. move down below 'cast Overpower': cast Slam (+0.4%)
-  8. move down below 'if not Rend is on the target: cast Rend': cast Mortal Strike (+0.3%)
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 2 passes, the last 2026-10-02, 12 changes to the base rotation; third-seed check: ml: Arms 363 -> 404 DPS (+11.3%), sim preset: Arms 39/12/0 353 -> 380 DPS (+7.6%)):
+  1. insert before the filler: if not Berserker Stance is up: cast Berserker Stance (+6.0%, pass 1)
+  2. insert at the end: cast Sunder Armor (+3.4%, pass 1)
+  3. drop: cast Whirlwind (+1.5%, pass 1)
+  4. move to the top: cast Overpower (+0.8%, pass 1)
+  5. drop: cast Spearing Strike (+0.8%, pass 1)
+  6. threshold 25.5s -> 24.5s: if (time left in the fight ≤ 25.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+0.4%, pass 1)
+  7. insert before the filler: cast Spearing Strike (+0.3%, pass 1)
+  8. drop 'time left in the fight ≥ 140s' from the condition: if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.9%, pass 2)
+  9. insert in the middle: if rage < 90: cast Bloodrage (+0.6%, pass 2)
+  10. insert before the filler: if time until Bloodthirst is ready > 1.5s: cast Whirlwind (+0.5%, pass 2)
+  11. move to the top: if not Battle Stance is up: cast Battle Stance (+0.2%, pass 2)
+  12. threshold 24.5s -> 36.75s: if time left in the fight ≤ 24.5s: use every other cooldown when ready (+0.3%, pass 2)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-29, 2 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Arms 626 -> 755 DPS (+20.6%), sim preset: Arms 39/12/0 722 -> 777 DPS (+7.7%)):
+  1. move to the top: cast Overpower (+2.0%, pass 1)
+  2. drop: if (time left in the fight ≤ 30s or time left in the fight ≥ 140s): use every other cooldown when ready (+1.2%, pass 1)
+  3. drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring (+0.4%, pass 1)
+  4. insert before the filler: cast Mocking Blow (+0.2%, pass 1)
+  5. move to the top: cast Slam (+0.3%, pass 1)
+  6. threshold 80 -> 40: if time until Bloodthirst is ready > 1.5s and rage > 80: cast Hamstring (+0.5%, pass 1)
+  7. move down below 'cast Overpower': cast Slam (+0.4%, pass 1)
+  8. move down below 'if not Rend is on the target: cast Rend': cast Mortal Strike (+0.3%, pass 1)
+  9. move down below 'if not Rend is on the target: cast Rend': if execute phase (E20): cast Execute (+0.6%, pass 2)
+  10. drop the condition: if time until Bloodthirst is ready > 1.5s and rage > 40: cast Hamstring (+0.4%, pass 2)
 
 Before the pull: at -1s: cast Battle Stance.
 
 | # | Priority (the first line whose condition holds is cast) | [`arms-battle-raid`](arms-battle-raid.md) casts/min |
 |---|---|---|
-| 1 | cast Overpower | 6.1 |
-| 2 | if execute phase (E20): cast Execute | 3.9 |
-| 3 | cast Goblin Sapper Charge | as ready |
-| 4 | cast Dense Dynamite | as ready |
-| 5 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
-| 6 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
-| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 1 | if not Battle Stance is up: cast Battle Stance | 25.8 |
+| 2 | cast Overpower | 6.3 |
+| 3 | if execute phase (E20): cast Execute | 3.5 |
+| 4 | cast Goblin Sapper Charge | as ready |
+| 5 | cast Dense Dynamite | as ready |
+| 6 | if (time left in the fight ≤ 20s or time left in the fight ≥ 140s): cast Potion | as ready |
+| 7 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike | as ready |
 | 8 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
-| 9 | if (time left in the fight ≤ 24.5s or time left in the fight ≥ 140s): use every other cooldown when ready | as ready |
-| 10 | if not Rend is on the target: cast Rend | 2.5 |
-| 11 | cast Slam | 2.8 |
-| 12 | if not Battle Shout is up: cast Battle Shout | 0.3 |
-| 13 | if stacks of Sunder Armor < 5: cast Sunder Armor | 9.0 |
-| 14 | if not Berserker Stance is up: cast Berserker Stance | 25.0 |
-| 15 | if not Battle Stance is up: cast Battle Stance | 25.2 |
-| 16 | cast Spearing Strike | 1.9 |
-| 17 | cast Sunder Armor | 9.0 |
+| 9 | if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest | as ready |
+| 10 | if time left in the fight ≤ 36.75s: use every other cooldown when ready | as ready |
+| 11 | if rage < 90: cast Bloodrage | 1.0 |
+| 12 | if number of targets > 1: cast Whirlwind | 1.0 |
+| 13 | if not Rend is on the target: cast Rend | 2.5 |
+| 14 | cast Slam | 2.8 |
+| 15 | if not Battle Shout is up: cast Battle Shout | 0.3 |
+| 16 | if stacks of Sunder Armor < 5: cast Sunder Armor | 8.0 |
+| 17 | if not Berserker Stance is up: cast Berserker Stance | 25.6 |
+| 18 | cast Spearing Strike | 1.8 |
+| 19 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 1.0 |
+| 20 | cast Sunder Armor | 8.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Whirlwind, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
+Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Blood Fury, cast Diamond Flask, cast Jom Gabbar, cast Cleave, cast Hamstring (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Bloodthirst (needs the Bloodthirst talent).
 
 Damage by ability:
 
 | Ability | [`arms-battle-raid`](arms-battle-raid.md) |
 |---|---|
-| Auto Attack | 43% |
+| Auto Attack | 42% |
 | Overpower | 25% |
-| Execute | 12% |
-| Slam | 9% |
+| Execute | 13% |
+| Slam | 8% |
 | Deep Wound | 5% |
 | Rend | 3% |
+| Whirlwind | 2% |
 | Spearing Strike | 2% |
 | Dragonbreath Chili | 0% |
 

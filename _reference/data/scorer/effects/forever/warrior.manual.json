@@ -88,7 +88,7 @@
     ]
   },
   "Anger Management": {
-    "note": "'Generates 1 Rage every 3 seconds' (Icy Veins) in and out of combat: fights open with rage. Leveling +5% yellow damage, raid +4%, tanking +2% threat (rage-starved on pulls). Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.6% time per kill in the simulator (scorer said 2.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
+    "note": "'Generates 1 Rage every 3 seconds' (Icy Veins) in and out of combat: fights open with rage. Leveling +5% yellow damage, raid +4%, tanking +2% threat (rage-starved on pulls). Fight lab calibration (2026-09-28, levels 40,60): removing it costs -0.6% time per kill in the simulator (scorer said 2.3% on the same scale); leveling-st/solo-60 values scaled x0.00 to match (0.0%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.2% on the same scale); already within tolerance, raid effects split off unchanged (1.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -156,7 +156,7 @@
     ]
   },
   "Deep Wounds": {
-    "note": "Crits apply a bleed of 20%/rank of average weapon damage over 12s (does not stack). With 25-30% crit and ~1.5 attacks/s the bleed is up permanently: ~1.5%/rank of melee damage dual-wield, ~2%/rank two-handed (bigger weapon average). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.8% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.21 to match (2.8%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
+    "note": "Crits apply a bleed of 20%/rank of average weapon damage over 12s (does not stack). With 25-30% crit and ~1.5 attacks/s the bleed is up permanently: ~1.5%/rank of melee damage dual-wield, ~2%/rank two-handed (bigger weapon average). Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.8% time per kill in the simulator (scorer said 5.5% on the same scale); leveling-st/solo-60 values scaled x0.21 to match (2.8%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.6% DPS in the simulator (scorer said 0.2% on the same scale); already within tolerance, raid effects split off unchanged (0.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -326,20 +326,13 @@
     ]
   },
   "Spearing Strike": {
-    "note": "40% weapon damage every 20s (+80% vs Giants/Dragonkin/mounted): ~+1.5% melee damage, ~+2.5% vs raid bosses that are Giants/Dragonkin. Raid sim calibration (2026-09-29, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs -3.1% DPS in the simulator (scorer said 0.0% on the same scale); already within tolerance, raid effects split off unchanged (0.0%). Other modes unchanged.",
+    "note": "40% weapon damage every 20s (+80% vs Giants/Dragonkin/mounted): ~+1.5% melee damage, ~+2.5% vs raid bosses that are Giants/Dragonkin. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 1.0% DPS in the simulator (scorer said 0.0% on the same scale); re-seeded from its tooltip (an earlier fit had left its raid values at zero), already within tolerance, raid effects split off unchanged (0.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
         "scope": ["type:melee"],
         "modes": ["leveling"],
         "values": [0.003]
-      },
-      {
-        "channel": "dmg",
-        "scope": ["type:melee"],
-        "values": [0.004999],
-        "modes": ["raid"],
-        "specs": ["arms-2h-raid"]
       },
       {
         "channel": "dmg",
@@ -359,8 +352,15 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
-        "values": [0.0],
+        "values": [0.004999],
         "modes": ["raid"],
+        "specs": ["arms-2h-raid"]
+      },
+      {
+        "channel": "dmg",
+        "scope": ["type:melee"],
+        "modes": ["raid"],
+        "values": [0.003],
         "specs": ["fury-dw-raid"]
       }
     ]
@@ -515,7 +515,7 @@
     ]
   },
   "Weaponmaster": {
-    "note": "Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.4% DPS in the simulator (scorer said 1.7% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
+    "note": "Axe/polearm +1%/rank crit, sword 1%/rank extra attacks, mace 3% armor ignore: all roughly +1% melee damage per rank for the matching weapon. Encoded as +1%/rank damage (assumes you use the matching weapon type). Fight lab calibration (2026-09-28, levels 30,60): removing it costs 1.7% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.4% DPS in the simulator (scorer said 1.7% on the same scale); already within tolerance, raid effects split off unchanged (1.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -658,7 +658,7 @@
     ]
   },
   "Mortal Strike": {
-    "note": "Weapon damage + 85 every 6s for 30 rage: ~25% of an Arms warrior's damage, replacing Heroic Strikes worth ~15% -> ~+10% total damage; healing debuff not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.3% time per kill in the simulator (scorer said 12.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (12.0%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 4.0% on the same scale); raid values scaled x0.64 to match (2.6%). Other modes unchanged.",
+    "note": "Weapon damage + 85 every 6s for 30 rage: ~25% of an Arms warrior's damage, replacing Heroic Strikes worth ~15% -> ~+10% total damage; healing debuff not scored. Fight lab calibration (2026-09-28, levels 30,60): removing it costs 13.3% time per kill in the simulator (scorer said 12.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (12.0%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.6% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -766,7 +766,7 @@
     ]
   },
   "Unbridled Wrath": {
-    "note": "12%/rank chance per weapon hit for +1 rage (60% at 5/5, Classic 40%): DW at ~2.5 hits/s gains ~1 rage/s (~+18% rage at 5/5) -> +1%/rank yellow damage on dual-wield sources; two-handers hit half as often -> +0.5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 4.8% on the same scale); raid values scaled x0.49 to match (2.4%). Other modes unchanged.",
+    "note": "12%/rank chance per weapon hit for +1 rage (60% at 5/5, Classic 40%): DW at ~2.5 hits/s gains ~1 rage/s (~+18% rage at 5/5) -> +1%/rank yellow damage on dual-wield sources; two-handers hit half as often -> +0.5%/rank. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 2.5% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.5%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 2.4% DPS in the simulator (scorer said 2.4% on the same scale); already within tolerance, raid effects split off unchanged (2.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -851,16 +851,16 @@
       {
         "channel": "dmg",
         "scope": ["dw"],
-        "per_rank": 0.010788,
-        "values": [0.010788, 0.021576, 0.032363, 0.043151, 0.053939],
+        "per_rank": 0.01488,
+        "values": [0.01488, 0.02976, 0.044639, 0.059519, 0.0744],
         "modes": ["raid"],
         "specs": ["arms-2h-raid"]
       },
       {
         "channel": "dmg",
         "scope": ["weapon:2h"],
-        "per_rank": 0.005394,
-        "values": [0.005394, 0.010788, 0.016182, 0.021576, 0.02697],
+        "per_rank": 0.00744,
+        "values": [0.00744, 0.01488, 0.02232, 0.02976, 0.0372],
         "modes": ["raid"],
         "specs": ["arms-2h-raid"]
       },
@@ -1027,7 +1027,7 @@
     ]
   },
   "Dual Wield Specialization": {
-    "note": "+5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 19.6% DPS in the simulator (scorer said 17.4% on the same scale); already within tolerance, raid effects split off unchanged (17.3%). Other modes unchanged.",
+    "note": "+5%/rank off-hand damage, +20%/rank off-hand rage generation, +2%/rank off-hand hit (rank-1 text; est. 25%/100%/10% at 5/5). Off-hand hit is worth a lot against the 27% dual-wield white miss. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 20.4% DPS in the simulator (scorer said 17.5% on the same scale); already within tolerance, raid effects split off unchanged (17.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1125,7 +1125,7 @@
     ]
   },
   "Raging Blows": {
-    "note": "Whirlwind also hits with the off-hand (~+50% Whirlwind damage) and Cleave costs 2 less: dual-wield only. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.8% DPS in the simulator (scorer said 4.2% on the same scale); already within tolerance, raid effects split off unchanged (4.2%). Other modes unchanged.",
+    "note": "Whirlwind also hits with the off-hand (~+50% Whirlwind damage) and Cleave costs 2 less: dual-wield only. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 4.2% DPS in the simulator (scorer said 4.5% on the same scale); already within tolerance, raid effects split off unchanged (4.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1242,7 +1242,7 @@
     ]
   },
   "Flurry": {
-    "note": "+5%/rank attack speed for 3 swings after a crit (est. 25% at 5/5, Classic 30%). Raid crit ~30% with ~2 swings/s: uptime ~80% -> haste EV 4/8/12/16/20% on white swings; leveling crit ~8%: uptime ~35% -> 1.7/3.5/5/7/9%. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 17.5% DPS in the simulator (scorer said 13.0% on the same scale); raid values scaled x1.34 to match (16.9%). Other modes unchanged.",
+    "note": "+5%/rank attack speed for 3 swings after a crit (est. 25% at 5/5, Classic 30%). Raid crit ~30% with ~2 swings/s: uptime ~80% -> haste EV 4/8/12/16/20% on white swings; leveling crit ~8%: uptime ~35% -> 1.7/3.5/5/7/9%. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 17.6% DPS in the simulator (scorer said 16.9% on the same scale); already within tolerance, raid effects split off unchanged (16.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "haste",
@@ -1296,7 +1296,7 @@
     ]
   },
   "Bloodthirst": {
-    "note": "35% AP + flat damage every 6s for 30 rage (Classic 45% AP): the best rage-per-damage dump -> ~+12% total damage over Heroic Strike dumping in raid gear, +10% leveling. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.9% DPS in the simulator (scorer said 2.1% on the same scale); raid values scaled x1.76 to match (3.9%). Other modes unchanged.",
+    "note": "35% AP + flat damage every 6s for 30 rage (Classic 45% AP): the best rage-per-damage dump -> ~+12% total damage over Heroic Strike dumping in raid gear, +10% leveling. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 10.1% DPS in the simulator (scorer said 14.2% on the same scale); raid values scaled x0.10 to match (10.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1329,14 +1329,14 @@
       {
         "channel": "dmg",
         "scope": ["type:melee"],
-        "values": [0.041523],
+        "values": [0.004328],
         "modes": ["raid"],
         "specs": ["fury-dw-raid"]
       }
     ]
   },
   "Death Wish": {
-    "note": "+20% physical damage for 30s every 3 min (16.7% uptime) = +3.3% average; parser read it as permanent. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 4.1% DPS in the simulator (scorer said 5.3% on the same scale); raid values scaled x0.77 to match (4.1%). Other modes unchanged.",
+    "note": "+20% physical damage for 30s every 3 min (16.7% uptime) = +3.3% average; parser read it as permanent. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 5.2% DPS in the simulator (scorer said 4.1% on the same scale); raid values scaled x1.28 to match (5.2%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1383,14 +1383,14 @@
       {
         "channel": "dmg",
         "scope": ["school:physical"],
-        "values": [0.040986],
+        "values": [0.052348],
         "modes": ["raid"],
         "specs": ["fury-dw-raid"]
       }
     ]
   },
   "Shield Specialization": {
-    "note": "+1%/rank block chance and 20% chance for 5 rage on block: mitigation + tank rage. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.9% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
+    "note": "+1%/rank block chance and 20% chance for 5 rage on block: mitigation + tank rage. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.9% DPS in the simulator (scorer said 1.9% on the same scale); already within tolerance, raid effects split off unchanged (1.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1502,7 +1502,7 @@
     ]
   },
   "Master of Defense": {
-    "note": "50% chance for 5 rage on dodge/parry with a shield: tank rage while being avoided. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
+    "note": "50% chance for 5 rage on dodge/parry with a shield: tank rage while being avoided. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.9% DPS in the simulator (scorer said 1.4% on the same scale); already within tolerance, raid effects split off unchanged (1.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1530,7 +1530,7 @@
     ]
   },
   "Vanguard": {
-    "note": "Charge in Defensive Stance: tank opener utility. 2026-09-27 audit: Charge in Defensive Stance only matters to a Defensive-Stance player (the Arms and Fury loops charge in Battle / Berserker Stance). Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.7%). Other modes unchanged.",
+    "note": "Charge in Defensive Stance: tank opener utility. 2026-09-27 audit: Charge in Defensive Stance only matters to a Defensive-Stance player (the Arms and Fury loops charge in Battle / Berserker Stance). Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.0% DPS in the simulator (scorer said 0.7% on the same scale); raid values scaled x0.00 to match (0.7%). Other modes unchanged.",
     "effects": [
       {
         "channel": "utility",
@@ -1594,7 +1594,7 @@
     ]
   },
   "Shield Slam": {
-    "note": "Shield-block-value slam every 6s for 20 rage: the highest threat ability -> ~+20% threat output for a tank. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 15.4% DPS in the simulator (scorer said 16.5% on the same scale); already within tolerance, raid effects split off unchanged (16.5%). Other modes unchanged.",
+    "note": "Shield-block-value slam every 6s for 20 rage: the highest threat ability -> ~+20% threat output for a tank. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 15.4% DPS in the simulator (scorer said 16.5% on the same scale); already within tolerance, raid effects split off unchanged (16.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1661,7 +1661,7 @@
     ]
   },
   "Improved Revenge": {
-    "note": "+20%/rank Revenge damage (parsed) -> tank threat. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.8% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
+    "note": "+20%/rank Revenge damage (parsed) -> tank threat. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.8% DPS in the simulator (scorer said 2.6% on the same scale); already within tolerance, raid effects split off unchanged (2.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1689,7 +1689,7 @@
     ]
   },
   "Defiance": {
-    "note": "+5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
+    "note": "+5%/rank threat in Defensive Stance with a shield (est. 15%). Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 6.0% DPS in the simulator (scorer said 6.0% on the same scale); already within tolerance, raid effects split off unchanged (6.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "threat_up",
@@ -1717,7 +1717,7 @@
     ]
   },
   "Bastion": {
-    "note": "+2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
+    "note": "+2%/rank all damage with a shield equipped (est. 10%): tank threat. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.6% DPS in the simulator (scorer said 3.5% on the same scale); already within tolerance, raid effects split off unchanged (3.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -1779,7 +1779,7 @@
     ]
   },
   "Precision": {
-    "note": "+1%/rank hit with all attacks (parser scoped it to abilities). Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 2.7% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
+    "note": "+1%/rank hit with all attacks (parser scoped it to abilities). Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 3.2% DPS in the simulator (scorer said 3.1% on the same scale); already within tolerance, raid effects split off unchanged (3.1%). Other modes unchanged.",
     "effects": [
       {
         "channel": "hit",
@@ -1832,7 +1832,7 @@
     ]
   },
   "Improved Thunder Clap": {
-    "note": "-2/rank rage on Thunder Clap (parsed) - AoE tank utility. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.1% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
+    "note": "-2/rank rage on Thunder Clap (parsed) - AoE tank utility. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.1% DPS in the simulator (scorer said 1.8% on the same scale); already within tolerance, raid effects split off unchanged (1.8%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -1888,7 +1888,7 @@
     ]
   },
   "Anticipation": {
-    "note": "+4 defense/rank (Forever doubles Classic): each defense point is +0.04% dodge, parry, block and to-be-missed and -0.04% chance to be crit -> +1.6% avoidance and -0.4% crit at 5/5, ~+3% effective health for a tank (~0.6%/rank). Icy Veins: 'not quite as good as it might look... it comes at the cost of 5 precious talent points'. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.5% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
+    "note": "+4 defense/rank (Forever doubles Classic): each defense point is +0.04% dodge, parry, block and to-be-missed and -0.04% chance to be crit -> +1.6% avoidance and -0.4% crit at 5/5, ~+3% effective health for a tank (~0.6%/rank). Icy Veins: 'not quite as good as it might look... it comes at the cost of 5 precious talent points'. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 2.5% DPS in the simulator (scorer said 2.0% on the same scale); already within tolerance, raid effects split off unchanged (2.0%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -1993,7 +1993,7 @@
     ]
   },
   "Deflection": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 4.2% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.4% DPS in the simulator (scorer said 3.4% on the same scale); already within tolerance, raid effects split off unchanged (3.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.8% time per kill in the simulator (scorer said 4.2% on the same scale); leveling-st/solo-60 values scaled x0.32 to match (1.8%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.4% DPS in the simulator (scorer said 3.4% on the same scale); already within tolerance, raid effects split off unchanged (3.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "surv",
@@ -2099,7 +2099,7 @@
     ]
   },
   "Two-Handed Weapon Specialization": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.8%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 1.9% time per kill in the simulator (scorer said 2.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (2.8%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, arms-2h-raid, training dummy): removing it costs 2.9% DPS in the simulator (scorer said 2.9% on the same scale); already within tolerance, raid effects split off unchanged (2.9%). Other modes unchanged.",
     "effects": [
       {
         "channel": "dmg",
@@ -2152,7 +2152,7 @@
     ]
   },
   "Impale": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 0.2% time per kill in the simulator (scorer said 0.0% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (0.0%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.7% DPS in the simulator (scorer said 0.4% on the same scale); already within tolerance, raid effects split off unchanged (0.4%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit_bonus",
@@ -2236,7 +2236,7 @@
     ]
   },
   "Cruelty": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 12.2% time per kill in the simulator (scorer said 11.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (11.8%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.5% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 12.2% time per kill in the simulator (scorer said 11.8% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (11.8%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 1.5% DPS in the simulator (scorer said 1.6% on the same scale); already within tolerance, raid effects split off unchanged (1.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "crit",
@@ -2297,7 +2297,7 @@
     ]
   },
   "Improved Execute": {
-    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 5.8% DPS in the simulator (scorer said 4.4% on the same scale); raid values scaled x1.22 to match (5.9%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; leveling values fitted to the fight lab. Fight lab calibration (2026-09-28, levels 40,60): removing it costs 2.4% time per kill in the simulator (scorer said 3.1% on the same scale); already within tolerance, leveling-st/solo-60 effects split off unchanged (3.1%). Other modes unchanged. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, fury-dw-raid, training dummy): removing it costs 6.0% DPS in the simulator (scorer said 6.3% on the same scale); already within tolerance, raid effects split off unchanged (6.3%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -2358,7 +2358,7 @@
     ]
   },
   "Improved Heroic Strike": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.8% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 0.8% DPS in the simulator (scorer said 0.6% on the same scale); already within tolerance, raid effects split off unchanged (0.6%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",
@@ -2434,7 +2434,7 @@
     ]
   },
   "Focused Rage": {
-    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-09-30, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.2% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
+    "note": "Parsed values kept for the other modes; raid values fitted to the community simulator. Raid sim calibration (2026-10-02, ElliotWood/Forever 40be98e, prot-tank): removing it costs 3.2% DPS in the simulator (scorer said 2.5% on the same scale); already within tolerance, raid effects split off unchanged (2.5%). Other modes unchanged.",
     "effects": [
       {
         "channel": "resource_cost",

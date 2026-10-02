@@ -2,13 +2,18 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
+   {
+    "label": "ml: Marksmanship",
+    "talents": "501-005355041150305-50003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
     "talents": "5-005355051150305-50003"
@@ -60,43 +65,65 @@
     "gain_seed2": 0.0054318682355090075,
     "candidates": 132,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0559,
+    "gain_seed2": 0.0553,
+    "candidates": 36,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 405.3870045995461,
-     "after": 432.96025182938166,
-     "base": 405.3870045995461,
+    "ml: Marksmanship": {
+     "before": 382.1039582185975,
+     "after": 454.9538699815476,
+     "base": 382.1039582185975,
      "before_value": null,
      "after_value": null,
-     "oom_before": 64.8374588255081,
-     "oom_after": 64.8374588255081
+     "oom_before": 94.04337415242199,
+     "oom_after": 94.04337415242199
+    },
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "before": 384.4368090369877,
+     "after": 445.7745926346385,
+     "base": 384.4368090369877,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 100.44417514332052,
+     "oom_after": 100.44417514332052
     },
     "sim preset: Marksmanship": {
-     "before": 314.6859737751968,
-     "after": 353.2485522892974,
-     "base": 314.6859737751968,
+     "before": 303.7878921039203,
+     "after": 362.149269241782,
+     "base": 303.7878921039203,
      "before_value": null,
      "after_value": null,
-     "oom_before": 64.8374588255081,
-     "oom_after": 64.8374588255081
+     "oom_before": 100.44417514332052,
+     "oom_after": 100.44417514332052
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 5
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-lonewolf-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
   "builds": [
+   {
+    "label": "ml: Marksmanship",
+    "talents": "501-005355041150305-50003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json"
+   },
    {
     "label": "opt-mm-lonewolf-raid-raid-dps",
     "talents": "5-005355051150305-50003"
@@ -140,31 +167,72 @@
     "gain_seed2": 0.0021761482528681597,
     "candidates": 130,
     "pass": 1
+   },
+   {
+    "round": 5,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.024,
+    "gain_seed2": 0.0228,
+    "candidates": 36,
+    "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "insert at the top: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.0262724484706931,
+    "gain_seed2": 0.027059309705274037,
+    "candidates": 350,
+    "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "drop the condition: if time to the next auto attack > 1s: cast Aimed Shot",
+    "gain_seed1": 0.015132796851951236,
+    "gain_seed2": 0.015017901189666505,
+    "candidates": 366,
+    "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "drop 'mana % \u2265 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready \u2265 0.5 and time until Multi-Shot is ready \u2265 0.5 and mana % \u2265 30%: cast Serpent Sting",
+    "gain_seed1": 0.009514311800845832,
+    "gain_seed2": 0.009149891825052103,
+    "candidates": 364,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "opt-mm-lonewolf-raid-raid-dps": {
-     "before": 683.2969715520624,
-     "after": 848.2085284188661,
-     "base": 683.2969715520624,
+    "ml: Marksmanship": {
+     "before": 669.9368497239998,
+     "after": 878.3504062954919,
+     "base": 669.9368497239998,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
-     "oom_after": 0
+     "oom_after": 0.002215002171
     },
-    "sim preset: Marksmanship": {
-     "before": 602.1005335552054,
-     "after": 733.2265510869388,
-     "base": 602.1005335552054,
+    "opt-mm-lonewolf-raid-raid-dps": {
+     "before": 683.2477174987459,
+     "after": 897.7508956693741,
+     "base": 683.2477174987459,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0022539206457,
-     "oom_after": 0.0022539206457
+     "oom_before": 0,
+     "oom_after": 0.16609137918825
+    },
+    "sim preset: Marksmanship": {
+     "before": 600.1604389309994,
+     "after": 748.7111961227373,
+     "base": 600.1604389309994,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 5.72568635812715,
+     "oom_after": 14.234735612460199
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 5
  }
 }

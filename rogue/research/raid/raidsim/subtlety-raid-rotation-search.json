@@ -2,7 +2,7 @@
  "dummy": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,9 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
-    "label": "subtlety-hemo-raid",
-    "talents": "005303121014--5320003310013211501"
+    "label": "ml: Subtlety",
+    "talents": "005303121014--5320003310013211501",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json"
    },
    {
     "label": "sim preset: Subtlety Hemo 15/0/36",
@@ -116,23 +117,47 @@
     "gain_seed2": 0.03042442134692447,
     "candidates": 84,
     "pass": 4
+   },
+   {
+    "round": 13,
+    "change": "spell probe: insert before the filler: cast Blade Flurry",
+    "gain_seed1": 0.0048,
+    "gain_seed2": 0.005,
+    "candidates": 12,
+    "pass": 5
+   },
+   {
+    "round": 14,
+    "change": "threshold 80s -> 160s: if (combo points \u2265 1 and not Slice and Dice is up and time left in the fight \u2265 6 or combo points \u2265 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight \u2265 80s: cast Slice and Dice",
+    "gain_seed1": 0.019423347977845618,
+    "gain_seed2": 0.018498486973727912,
+    "candidates": 511,
+    "pass": 6
+   },
+   {
+    "round": 15,
+    "change": "threshold 60 -> 30: if energy \u2265 60 and combo points \u2264 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish",
+    "gain_seed1": 0.005215278157109093,
+    "gain_seed2": 0.005197913681468602,
+    "candidates": 511,
+    "pass": 6
    }
   ],
   "final": {
    "dummy": {
-    "subtlety-hemo-raid": {
-     "before": 330.5273333371424,
-     "after": 391.7721387695834,
-     "base": 330.5273333371424,
+    "ml: Subtlety": {
+     "before": 343.98038568130556,
+     "after": 391.75178272290174,
+     "base": 343.98038568130556,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 306.37758895685045,
-     "after": 347.23373197207104,
-     "base": 306.37758895685045,
+     "before": 304.8855178799845,
+     "after": 344.90062749586605,
+     "base": 304.8855178799845,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -141,12 +166,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  },
  "raid": {
   "class": "rogue",
   "spec": "subtlety-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -154,8 +179,9 @@
   "start": "ui\\specs\\rogue\\dps\\apls\\forever_hemorrhage.apl.json",
   "builds": [
    {
-    "label": "subtlety-hemo-raid",
-    "talents": "005303121014--5320003310013211501"
+    "label": "ml: Subtlety",
+    "talents": "005303121014--5320003310013211501",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-subtlety-bis.gear.json"
    },
    {
     "label": "sim preset: Subtlety Hemo 15/0/36",
@@ -212,23 +238,55 @@
     "gain_seed2": 0.016656244057246417,
     "candidates": 84,
     "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "spell probe: insert before the filler: cast Cold Blood",
+    "gain_seed1": 0.0026,
+    "gain_seed2": 0.0037,
+    "candidates": 4,
+    "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "spell probe: insert before the filler: if auraIsInactive: cast Ghostly Strike",
+    "gain_seed1": 0.0031,
+    "gain_seed2": 0.0038,
+    "candidates": 12,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "threshold 1 -> 3: if energy \u2265 60 and combo points \u2264 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish",
+    "gain_seed1": 0.0025849924967873417,
+    "gain_seed2": 0.002496749189385472,
+    "candidates": 443,
+    "pass": 6
+   },
+   {
+    "round": 10,
+    "change": "move down below 'cast Cold Blood': if auraIsInactive: cast Ghostly Strike",
+    "gain_seed1": 0.0018555853645971787,
+    "gain_seed2": 0.0018751263186833622,
+    "candidates": 449,
+    "pass": 6
    }
   ],
   "final": {
    "raid": {
-    "subtlety-hemo-raid": {
-     "before": 636.0142320259401,
-     "after": 656.7470123477495,
-     "base": 636.0142320259401,
+    "ml: Subtlety": {
+     "before": 649.502055194924,
+     "after": 657.2727489422765,
+     "base": 649.502055194924,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Subtlety Hemo 15/0/36": {
-     "before": 600.1158494945938,
-     "after": 621.9625735152335,
-     "base": 600.1158494945938,
+     "before": 598.5934132325159,
+     "after": 616.3193819349663,
+     "base": 598.5934132325159,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -237,6 +295,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 6
  }
 }

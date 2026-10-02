@@ -1,0 +1,173 @@
+[
+ {
+  "label": "ml: Elemental",
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     5
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Elemental Alacrity",
+     3
+    ],
+    [
+     "Eye of the Storm",
+     2
+    ],
+    [
+     "Call of Thunder",
+     1
+    ],
+    [
+     "Elemental Reach",
+     1
+    ],
+    [
+     "Lightning Overload",
+     3
+    ],
+    [
+     "Earthbound",
+     1
+    ],
+    [
+     "Elemental Fury",
+     5
+    ],
+    [
+     "Lava Burst",
+     1
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     2
+    ]
+   ],
+   "Restoration": [
+    [
+     "Improved Healing Wave",
+     3
+    ],
+    [
+     "Totemic Focus",
+     2
+    ],
+    [
+     "Mindfulness",
+     3
+    ],
+    [
+     "Tidal Focus",
+     5
+    ]
+   ]
+  },
+  "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+ },
+ {
+  "label": "ml: Hybrid Elemental/Enhancement",
+  "allocation": {
+   "Elemental": [
+    [
+     "Convection",
+     4
+    ],
+    [
+     "Concussion",
+     5
+    ],
+    [
+     "Call of Flame",
+     3
+    ],
+    [
+     "Elemental Devastation",
+     2
+    ],
+    [
+     "Elemental Focus",
+     1
+    ],
+    [
+     "Elemental Alacrity",
+     3
+    ],
+    [
+     "Improved Fire Nova",
+     2
+    ],
+    [
+     "Call of Thunder",
+     1
+    ],
+    [
+     "Elemental Reach",
+     1
+    ],
+    [
+     "Lightning Overload",
+     3
+    ],
+    [
+     "Elemental Fury",
+     4
+    ]
+   ],
+   "Enhancement": [
+    [
+     "Earth's Grasp",
+     2
+    ],
+    [
+     "Thundering Strikes",
+     5
+    ],
+    [
+     "Ancestral Knowledge",
+     5
+    ],
+    [
+     "Mental Dexterity",
+     3
+    ],
+    [
+     "Shamanistic Focus",
+     1
+    ],
+    [
+     "Toughness",
+     3
+    ],
+    [
+     "Flurry",
+     1
+    ],
+    [
+     "Mental Quickness",
+     2
+    ]
+   ],
+   "Restoration": []
+  },
+  "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
+ }
+]

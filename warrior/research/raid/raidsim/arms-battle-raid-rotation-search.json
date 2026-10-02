@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warrior",
   "spec": "arms-battle-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,9 @@
   "start": "_reference/data/raidsim/apls/warrior/arms-battle-raid.base.apl.json",
   "builds": [
    {
-    "label": "arms-battle-raid",
-    "talents": "02305213032515101-550500000002"
+    "label": "ml: Arms",
+    "talents": "023052131325052-550500000002",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json"
    },
    {
     "label": "sim preset: Arms 39/12/0",
@@ -26,78 +27,127 @@
     "change": "insert before the filler: if not Berserker Stance is up: cast Berserker Stance",
     "gain_seed1": 0.061468456969331564,
     "gain_seed2": 0.060090819424131414,
-    "candidates": 738
+    "candidates": 738,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "insert at the end: cast Sunder Armor",
     "gain_seed1": 0.032045504831360594,
     "gain_seed2": 0.033855079080714834,
-    "candidates": 746
+    "candidates": 746,
+    "pass": 1
    },
    {
     "round": 3,
     "change": "drop: cast Whirlwind",
     "gain_seed1": 0.017510175956476193,
     "gain_seed2": 0.01495933813281769,
-    "candidates": 765
+    "candidates": 765,
+    "pass": 1
    },
    {
     "round": 4,
     "change": "move to the top: cast Overpower",
     "gain_seed1": 0.008397210725700877,
     "gain_seed2": 0.007694653698565368,
-    "candidates": 754
+    "candidates": 754,
+    "pass": 1
    },
    {
     "round": 5,
     "change": "drop: cast Spearing Strike",
     "gain_seed1": 0.007347247877895757,
     "gain_seed2": 0.007728501511174546,
-    "candidates": 754
+    "candidates": 754,
+    "pass": 1
    },
    {
     "round": 6,
     "change": "threshold 25.5s -> 24.5s: if (time left in the fight \u2264 25.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
     "gain_seed1": 0.0031970196835100495,
     "gain_seed2": 0.003906274038178337,
-    "candidates": 747
+    "candidates": 747,
+    "pass": 1
    },
    {
     "round": 7,
     "change": "insert before the filler: cast Spearing Strike",
     "gain_seed1": 0.002561105108195294,
     "gain_seed2": 0.0030258348678036118,
-    "candidates": 747
+    "candidates": 747,
+    "pass": 1
+   },
+   {
+    "round": 8,
+    "change": "drop 'time left in the fight \u2265 140s' from the condition: if (time left in the fight \u2264 24.5s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.01802891927187722,
+    "gain_seed2": 0.018866649108279843,
+    "candidates": 754,
+    "pass": 2
+   },
+   {
+    "round": 9,
+    "change": "insert in the middle: if rage < 90: cast Bloodrage",
+    "gain_seed1": 0.004558945120998192,
+    "gain_seed2": 0.00615554460895229,
+    "candidates": 743,
+    "pass": 2
+   },
+   {
+    "round": 10,
+    "change": "insert before the filler: if time until Bloodthirst is ready > 1.5s: cast Whirlwind",
+    "gain_seed1": 0.009380892069475788,
+    "gain_seed2": 0.005425844599328489,
+    "candidates": 759,
+    "pass": 2
+   },
+   {
+    "round": 11,
+    "change": "move to the top: if not Battle Stance is up: cast Battle Stance",
+    "gain_seed1": 0.0017225929314288457,
+    "gain_seed2": 0.0023946521024411638,
+    "candidates": 776,
+    "pass": 2
+   },
+   {
+    "round": 12,
+    "change": "threshold 24.5s -> 36.75s: if time left in the fight \u2264 24.5s: use every other cooldown when ready",
+    "gain_seed1": 0.0026660689878217347,
+    "gain_seed2": 0.0025569735150945405,
+    "candidates": 776,
+    "pass": 2
    }
   ],
   "final": {
    "dummy": {
-    "arms-battle-raid": {
-     "before": 209.65313404454963,
-     "after": 236.3769917198394,
-     "base": 209.65313404454963,
+    "ml: Arms": {
+     "before": 362.818149208978,
+     "after": 403.64802176170946,
+     "base": 362.818149208978,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Arms 39/12/0": {
-     "before": 197.8252033210953,
-     "after": 227.4799962109501,
-     "base": 197.8252033210953,
+     "before": 353.416102458639,
+     "after": 380.2512584173336,
+     "base": 353.416102458639,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     }
    }
-  }
+  },
+  "first_date": "2026-09-29",
+  "passes": 2
  },
  "raid": {
   "class": "warrior",
   "spec": "arms-battle-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -105,8 +155,9 @@
   "start": "_reference/data/raidsim/apls/warrior/arms-battle-raid-raid.apl.json",
   "builds": [
    {
-    "label": "arms-battle-raid",
-    "talents": "02305213032515101-550500000002"
+    "label": "ml: Arms",
+    "talents": "023052131325052-550500000002",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json"
    },
    {
     "label": "sim preset: Arms 39/12/0",
@@ -121,79 +172,105 @@
     "change": "move to the top: cast Overpower",
     "gain_seed1": 0.02025865818379291,
     "gain_seed2": 0.01959384064580716,
-    "candidates": 726
+    "candidates": 726,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "drop: if (time left in the fight \u2264 30s or time left in the fight \u2265 140s): use every other cooldown when ready",
     "gain_seed1": 0.01236418894191127,
     "gain_seed2": 0.012261503229795467,
-    "candidates": 726
+    "candidates": 726,
+    "pass": 1
    },
    {
     "round": 3,
     "change": "drop 'time until Whirlwind is ready > 1.5s' from the condition: if time until Bloodthirst is ready > 1.5s and time until Whirlwind is ready > 1.5s and rage > 80: cast Hamstring",
     "gain_seed1": 0.004360268165626069,
     "gain_seed2": 0.004305888465379049,
-    "candidates": 706
+    "candidates": 706,
+    "pass": 1
    },
    {
     "round": 4,
     "change": "insert before the filler: cast Mocking Blow",
     "gain_seed1": 0.0037062938041636517,
     "gain_seed2": 0.0020546304432800255,
-    "candidates": 700
+    "candidates": 700,
+    "pass": 1
    },
    {
     "round": 5,
     "change": "move to the top: cast Slam",
     "gain_seed1": 0.0018657949491858172,
     "gain_seed2": 0.0025063277043839705,
-    "candidates": 710
+    "candidates": 710,
+    "pass": 1
    },
    {
     "round": 6,
     "change": "threshold 80 -> 40: if time until Bloodthirst is ready > 1.5s and rage > 80: cast Hamstring",
     "gain_seed1": 0.004702081373684663,
     "gain_seed2": 0.00526786909671495,
-    "candidates": 710
+    "candidates": 710,
+    "pass": 1
    },
    {
     "round": 7,
     "change": "move down below 'cast Overpower': cast Slam",
     "gain_seed1": 0.005023721432457329,
     "gain_seed2": 0.004082768754266608,
-    "candidates": 710
+    "candidates": 710,
+    "pass": 1
    },
    {
     "round": 8,
     "change": "move down below 'if not Rend is on the target: cast Rend': cast Mortal Strike",
     "gain_seed1": 0.0045565959593827365,
     "gain_seed2": 0.0030994352749758036,
-    "candidates": 710
+    "candidates": 710,
+    "pass": 1
+   },
+   {
+    "round": 9,
+    "change": "move down below 'if not Rend is on the target: cast Rend': if execute phase (E20): cast Execute",
+    "gain_seed1": 0.00633348407340284,
+    "gain_seed2": 0.005969610313099949,
+    "candidates": 702,
+    "pass": 2
+   },
+   {
+    "round": 10,
+    "change": "drop the condition: if time until Bloodthirst is ready > 1.5s and rage > 40: cast Hamstring",
+    "gain_seed1": 0.003247768206007029,
+    "gain_seed2": 0.003941323665841434,
+    "candidates": 702,
+    "pass": 2
    }
   ],
   "final": {
    "raid": {
-    "arms-battle-raid": {
-     "before": 460.3023074707311,
-     "after": 486.94818480072587,
-     "base": 455.0947787181699,
+    "ml: Arms": {
+     "before": 626.3384330546935,
+     "after": 755.3811953359003,
+     "base": 626.3384330546935,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Arms 39/12/0": {
-     "before": 453.6265778519053,
-     "after": 476.03748255009634,
-     "base": 447.0493927725913,
+     "before": 721.6476592536812,
+     "after": 777.4210316521809,
+     "base": 721.6476592536812,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     }
    }
-  }
+  },
+  "first_date": "2026-09-29",
+  "passes": 2
  }
 }

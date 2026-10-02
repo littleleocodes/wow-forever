@@ -78,42 +78,51 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 679 | +0.0% | 824 | +0.0% | 0 s |
-| 2 | *Demonic Pact 2/31/18* | community simulator | - | 658 | -3.2% | 797 | -3.4% | 1 s |
-| 3 | *Demonic Pact* | community simulator | - | 649 | -4.4% | 782 | -5.1% | 1 s |
+| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 687 | +0.0% | 833 | +0.0% | 1 s |
+| 2 | *Demonic Pact 2/31/18* | community simulator | - | 664 | -3.4% | 802 | -3.7% | 1 s |
+| 3 | *Demonic Pact* | community simulator | - | 659 | -4.2% | 790 | -5.1% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: demonology-pact-raid 614 -> 621 DPS (+1.2%), sim preset: Demonic Pact 2/31/18 596 -> 605 DPS (+1.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Demonology 681 -> 688 DPS (+0.9%), demonology-pact-raid 682 -> 688 DPS (+0.8%), sim preset: Demonic Pact 2/31/18 660 -> 665 DPS (+0.7%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.5%, pass 1)
   2. only with 6s or more of the fight left: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   3. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   4. move down below 'if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony': if mana % < 10% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 1)
   5. threshold 10% -> 15%: if mana % < 10% and time left in the fight ≥ 6s: cast Life Tap (+0.4%, pass 2)
   6. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: demonology-pact-raid 752 -> 761 DPS (+1.1%), sim preset: Demonic Pact 2/31/18 728 -> 737 DPS (+1.2%)):
+  7. insert before the filler: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.3%, pass 5)
+  8. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 5)
+  9. move down below 'if time left on Corruption ≤ cast time of Corruption: cast Corruption': if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap (+0.2%, pass 5)
+  10. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 5 changes to the base rotation; third-seed check: ml: Demonology 825 -> 832 DPS (+0.9%), demonology-pact-raid 825 -> 831 DPS (+0.8%), sim preset: Demonic Pact 2/31/18 795 -> 801 DPS (+0.8%)):
   1. drop: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.6%, pass 1)
   2. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.5%, pass 1)
+  3. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 5)
+  4. insert before the filler: if time left on Immolate ≤ cast time of Immolate: cast Immolate + only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.3%, pass 5)
+  5. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.2%, pass 5)
 
 | # | Priority (the first line whose condition holds is cast) | [`demonology-pact-raid`](demonology-pact-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
-| 2 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
-| 3 | use every other cooldown when ready | as ready |
-| 4 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
-| 5 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.9 |
-| 6 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 6.0 |
-| 7 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.5 |
-| 8 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
-| 9 | cast Shadow Bolt | 15.8 |
+| 1 | if not Curse of the Elements is up: cast Curse of the Elements | 0.4 |
+| 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
+| 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
+| 4 | use every other cooldown when ready | as ready |
+| 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
+| 6 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.8 |
+| 7 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.5 |
+| 8 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 6.7 |
+| 9 | if time left on Immolate ≤ cast time of Immolate: cast Immolate | 3.9 |
+| 10 | cast Shadow Bolt | 13.2 |
 
 Damage by ability:
 
 | Ability | [`demonology-pact-raid`](demonology-pact-raid.md) |
 |---|---|
-| Shadow Bolt | 59% |
+| Shadow Bolt | 48% |
 | Bane of Agony | 17% |
-| Corruption | 17% |
+| Corruption | 16% |
+| Immolate | 12% |
 | Pet: Auto Attack | 5% |
 | Pet: Lash of Pain | 1% |
 | Searing Pain | 1% |

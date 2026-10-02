@@ -20,22 +20,19 @@
  "priorityList": [
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20930
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "and": {
       "vals": [
-       {
-        "cmp": {
-         "op": "OpGe",
-         "lhs": {
-          "currentManaPercent": {}
-         },
-         "rhs": {
-          "const": {
-           "val": "15%"
-          }
-         }
-        }
-       },
        {
         "cmp": {
          "op": "OpLt",
@@ -69,7 +66,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see ret-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -128,7 +125,7 @@
          },
          "rhs": {
           "const": {
-           "val": "1s"
+           "val": "2s"
           }
          }
         }
@@ -142,7 +139,8 @@
       "rank": 5
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see ret-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -163,21 +161,6 @@
         }
        },
        {
-        "cmp": {
-         "op": "OpLt",
-         "lhs": {
-          "autoTimeToNext": {
-           "autoType": "MeleeAuto"
-          }
-         },
-         "rhs": {
-          "const": {
-           "val": "0.2s"
-          }
-         }
-        }
-       },
-       {
         "auraIsActive": {
          "auraId": {
           "spellId": 20293,
@@ -193,7 +176,7 @@
          },
          "rhs": {
           "const": {
-           "val": "70%"
+           "val": "65%"
           }
          }
         }
@@ -208,7 +191,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see ret-dps-rotation-search.json)"
   },
   {
    "action": {

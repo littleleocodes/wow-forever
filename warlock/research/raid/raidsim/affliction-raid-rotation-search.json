@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
+    "label": "ml: Affliction",
+    "talents": "2525002013500005--0550305003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+   },
+   {
     "label": "opt-affliction-raid-raid-dps",
-    "talents": "2552002013500005--0550035003"
+    "talents": "2552002013500005--0550305003"
    },
    {
     "label": "sim preset: Demonic Pact 2/31/18",
@@ -44,37 +49,54 @@
     "gain_seed2": 0.0020038796375172474,
     "candidates": 304,
     "pass": 2
+   },
+   {
+    "round": 4,
+    "change": "only with 10s or more of the fight left: if time left on Corruption \u2264 cast time of Corruption: cast Corruption",
+    "gain_seed1": 0.0016363840633424331,
+    "gain_seed2": 0.0015215845864284816,
+    "candidates": 483,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "opt-affliction-raid-raid-dps": {
-     "before": 568.0118080732794,
-     "after": 572.397522078494,
-     "base": 568.0118080732794,
+    "ml: Affliction": {
+     "before": 638.4180882254033,
+     "after": 641.6718669320178,
+     "base": 638.4180882254033,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.6321999999999999,
-     "oom_after": 1.6321999999999999
+     "oom_before": 0.9382750000000001,
+     "oom_after": 0.9653
+    },
+    "opt-affliction-raid-raid-dps": {
+     "before": 637.0862325696396,
+     "after": 640.5431860264114,
+     "base": 637.0862325696396,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 2.0717,
+     "oom_after": 1.9479499999999998
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 533.0090873797142,
-     "after": 537.3109268580382,
-     "base": 533.0090873797142,
+     "before": 590.153443203336,
+     "after": 592.9505220091289,
+     "base": 590.153443203336,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.369425,
-     "oom_after": 0.369425
+     "oom_before": 0.5598,
+     "oom_after": 0.49857500000000005
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "warlock",
   "spec": "affliction-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -82,8 +104,13 @@
   "start": "ui\\specs\\warlock\\dps\\apls\\affliction.apl.json",
   "builds": [
    {
+    "label": "ml: Affliction",
+    "talents": "2525002013500005--0550305003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-bis.gear.json"
+   },
+   {
     "label": "opt-affliction-raid-raid-dps",
-    "talents": "2552002013500005--0550035003"
+    "talents": "2552002013500005--0550305003"
    },
    {
     "label": "sim preset: Demonic Pact 2/31/18",
@@ -112,27 +139,36 @@
   ],
   "final": {
    "raid": {
-    "opt-affliction-raid-raid-dps": {
-     "before": 695.7020164412879,
-     "after": 698.4198704657955,
-     "base": 695.7020164412879,
+    "ml: Affliction": {
+     "before": 768.0496406615442,
+     "after": 770.2177810432418,
+     "base": 768.0496406615442,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.72645,
-     "oom_after": 0.72645
+     "oom_before": 0.7897749999999999,
+     "oom_after": 0.7897749999999999
+    },
+    "opt-affliction-raid-raid-dps": {
+     "before": 766.0573779336939,
+     "after": 768.1322896625429,
+     "base": 766.0573779336939,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.99495,
+     "oom_after": 0.99495
     },
     "sim preset: Demonic Pact 2/31/18": {
-     "before": 651.7303803564048,
-     "after": 654.7359586714397,
-     "base": 651.7303803564048,
+     "before": 711.3695797152824,
+     "after": 713.6038918366321,
+     "base": 711.3695797152824,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.582085,
-     "oom_after": 0.582085
+     "oom_before": 0.643585,
+     "oom_after": 0.643585
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  }
 }

@@ -1,4 +1,4 @@
-# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-01)
+# Handoff — continuing this project in a Claude Code cloud session (updated 2026-10-02)
 
 This knowledge base was built in local Claude Code sessions on Windows (project in `F:\wow-forever`, simulator tools in
 `%USERPROFILE%\.wow-forever-tools`) and moved to GitHub on 2026-09-28 so the work can continue in Claude Code cloud sessions.
@@ -119,6 +119,43 @@ Each class folder now opens with player pages and keeps the research below:
   combo points (best of 6 legal ways to add it x 4 rotation variants, 20,000 iterations, seed 1) it loses 6.9% on the dummy
   (379 vs 407) and 4.6% in a full raid (651 vs 682), ~3.7 casts per fight; consistent with `VERIFIED_UNUSED`. Not a full talent
   search around Venom (`talent_opt.py --keep Venom` with a Venom rotation would settle it).
+
+- **Systematic search for every raid damage spec, pre-BiS and BiS rankings** (2026-10-01/02, local session; user request: "approach
+  these classes and specs in a more systematic machine learning method ... find the absolute most optimal", "DPS ranking for Pre-bis
+  as well as best in slot armor, similar to WoWSims", "make sure the system is allowed to use all spells"; the user chose all raid DPS
+  specs and the two tiers). See CLAUDE.md "Systematic search". `raidsim/ml_pipeline.py` ran 26 specs (about 15 hours locally):
+  per-spec gear tiers, a spell probe, a random-forest + genetic talent search, the rotations re-tuned on the winners, the final
+  searches per tier and setting and a comparison race. Results (BiS gear, comparison race, 100,000 fights):
+  - New raid picks (2%+ over the best hand draft, which stays as the alternative): **Frost mage** `frost-ml-raid` 21/0/30 (+13.7% over
+    `frost-winters-chill-raid`: Arcane's mana and cooldown talents with 30 Frost points), **Destruction** `destruction-ml-raid` 10/11/30 in
+    the Shadow Bolt rotation (+12.0% over `destruction-incinerate-raid`), **Beast-Marks** `beast-marks-ml-raid` (+2.6%), **Marksmanship**
+    `marksmanship-ml-raid` (+2.4%), **Enhancement** `enhancement-ml-raid` (+2.0%; supersedes the derived `enhancement-raid`).
+    `retribution-ml-raid` (+1.7%) is an alternative. Full-raid parse builds: Beast Mastery (+3.2% over the dummy winner in a full raid),
+    Marksmanship (+4.6%), Survival (+2.3%), Enhancement (+3.1%); Arms's search ties `arms-community-parse`.
+  - The other 20 specs: the search confirms the current pick (within 0.5%).
+  - Rankings: `_reference/dps-rankings.md` (every spec, pre-BiS and phase-1 BiS, dummy and full raid, talents and gear), "## DPS by gear
+    tier" in each research raid README, a tier block on every player raid page. BiS dummy top: Demonology 689, Frost 647, Arcane-Frost
+    644, Affliction 642, Shadow Bolt hybrid 641, Shadow 634. A shareable HTML view was published as a private claude.ai artifact
+    (https://claude.ai/artifact/1pQVMKZPb5NkU1jCPLdQSw; made from the records by a script outside the repository).
+  - Spell probe: kept Summon Hawk (melee hunter), Holy Shock (Retribution builds that take it, +8%), Shadowform in the Smite rotation
+    (Forever's Shadowform blocks only healing), Hemorrhage / Ghostly Strike / Mutilate in the rogue rotations, Blade Flurry and Cold Blood
+    (Subtlety), Intimidation (Beast-Marks).
+  - Rotations re-tuned on 22 entries (both settings), the entries' existing best builds protected: Frostfire +9-10%, Retribution full
+    raid +7%, Marksmanship full raid +4-7%, Arms and Fury +3-4%, Frost, Fire, Arcane, BM, Survival, Feral, Subtlety, Demonology +0.5-2%.
+  - Fixed on the way: `apl_opt.bench` sent the dummy rotation in raid-setting calls, so before 2026-10-01 `talent_opt.py --setting raid`,
+    `fullraid_search.py` and `setting_audit.py`'s raid half ran full-raid builds on the dummy rotation; `gear_opt.py` kept current items
+    outside its pool (the standard hunter and Retribution sets held Zul'Gurub Bloodvine pieces, Enhancement Sulfuras: re-geared;
+    Rhok'delar now counts for hunters, Scourge Invasion drops never); the tier sets take the best-measured set; filelock.py for Windows.
+  - After it: `rebuild.py --steps raid,adopt` (every hand draft and ML build stands; `bm-mm-raid` adopted the optimizer's build, +5.1%),
+    the rotation-only entries raced with `run.py` (rebuild's raid step skips them), `rebuild.py --steps regen`. Checks: all builds valid,
+    mage regression IDENTICAL, 3367 links 0 broken, Classic check 0 changed cases, scenario audit rewritten.
+  - Open: re-run `raidsim/setting_audit.py --write` and `raidsim/fullraid_search.py` (their raid halves used the dummy rotation); the
+    rotations of entries without a search winner (incinerate, fire-destro, mm-raid, combat-swords, arms-2h, Seal of Fury, Shockadin,
+    Stormcaller, tanks) were not re-tuned. Of the user's deferred items (2026-10-01): the rotation re-tune at 180 s in the new gear is
+    done for those 22 entries; the Venom question is answered (the probe tried Venom at 5 combo points at every rotation spot in
+    builds holding it, dummy and raid: -0.08% to 0.00%, and the search over every legal Assassination build never takes it); the
+    others (leveling searches with chain moves, the rogue main-hand poison under Windfury, equal gear for tanks and healers, stats
+    models for the new leveling specs) stay open.
 
 ## Where things stand (2026-09-28)
 

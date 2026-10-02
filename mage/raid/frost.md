@@ -2,13 +2,17 @@
 
 [Mage](../README.md) > [Raid (training dummy and parse)](README.md) > Frost
 
-**[Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md)** (1/13/37) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-4)
+**✅ Recommended** for raid (the best mage spec here, or within 3% of it).
+
+**[Frost — Raid](../research/raid/builds/frost-ml-raid.md)** (21/0/30) — [open the talent tree](https://talentsforever.com/mage/60/052005003100311--055500031100030025-4)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (frost-winters-chill-raid) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Evocation** when your mana is below 20%
+1. **Arcane Missiles** when Missile Barrage is active
 2. **Ice Lance** when Fingers of Frost is active
 3. **Frostbolt**
 
@@ -16,7 +20,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Cold Snap**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
+- **Presence of Mind**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -25,12 +29,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 591 |
-| Parse (a full raid: every raid buff and debuff) | 705 |
+| Training dummy, 3-minute fight (only your own buffs) | 647 |
+| Parse (a full raid: every raid buff and debuff) | 739 |
+
+**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
+
+| Gear | Training dummy | Full raid | Best talents (dummy) |
+|---|---|---|---|
+| Pre-BiS | 627 | 716 | [21/0/30](https://talentsforever.com/mage/60/0520050031003101--055500031100030025-4) |
+| Phase 1 BiS | 647 | 739 | this build |
+
+- **Pre-BiS gear** (average item level 61.8): Head: Spellweaver's Turban; Neck: Nacreous Shell Necklace; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of the Archmage; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Ban'thok Sash; Legs: Skyshroud Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Rune Band of Wizardry; Trinket: Briarwood Reed; Trinket: Eye of the Beast; Main hand: Elemental Attuned Blade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus
+- **Phase 1 BiS gear** (average item level 65.6): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Mana Igniting Cord; Legs: Netherwind Pants; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Rune Band of Wizardry; Trinket: Talisman of Ephemeral Power; Trinket: Briarwood Reed; Main hand: Azuresong Mageblade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 591 → mana +5% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 705
+Dummy 647 → mana +0% → armor +0% → physical -1% → spell +10% → everything else +5% → raid 739
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -38,7 +52,7 @@ Dummy 591 → mana +5% → armor +0% → physical -1% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 614 | 622 | 591 | 559 | 479 |
+| 651 | 653 | 647 | 652 | 618 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
@@ -47,7 +61,8 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 ## Other builds of this spec
 
 - [Frost — Winter's Chill](../research/raid/builds/frost-winters-chill-raid.md) (20/0/31, 569 DPS on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/05300500310021--0555000330021001051-4)
+- [Raid Frostbolt with Ice Lance on Fingers of Frost charges](../research/raid/builds/opt-frost-raid-raid-dps-extwc.md) (1/13/37, 554 DPS on the dummy) — [open the talent tree](https://talentsforever.com/mage/60/1-2330203-0555000331021301251-4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-09-30 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

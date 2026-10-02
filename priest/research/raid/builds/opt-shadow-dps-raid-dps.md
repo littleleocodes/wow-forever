@@ -71,11 +71,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `shadow-d
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 552 -> 554 DPS (+0.4%), sim preset: Shadow 15/0/36 543 -> 545 DPS (+0.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Shadow 633 -> 634 DPS (+0.2%), opt-shadow-dps-raid-dps 631 -> 632 DPS (+0.1%), sim preset: Shadow 618 -> 618 DPS (+0.1%)):
   1. always rank 2 instead of rank 4: cast Shadow Word: Death (+1.7%, pass 1)
   2. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.3%, pass 1)
   3. insert in the middle: cast Shadow Word: Death (+1.1%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 1 changes to the base rotation; third-seed check: opt-shadow-dps-raid-dps 634 -> 636 DPS (+0.3%), sim preset: Shadow 15/0/36 623 -> 625 DPS (+0.3%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 4 passes, the last 2026-10-02, 1 changes to the base rotation; third-seed check: ml: Shadow 725 -> 726 DPS (+0.2%), opt-shadow-dps-raid-dps 724 -> 725 DPS (+0.1%), sim preset: Shadow 709 -> 709 DPS (+0.0%)):
   1. move down below 'cast Shadow Word: Death': cast Mind Blast (+0.4%, pass 1)
 
 Before the pull: at -1s: cast Shadowform.
@@ -103,7 +103,7 @@ Damage by ability:
 
 ## Notes
 
-- Allocation taken from cand-shadow-dps-r3 on 2026-09-30: the optimizer's earlier round beat its last export in the community simulator (632 vs 619 DPS; the calibration moved the model past the better build).
+- Allocation taken from cand-shadow-dps-r3 on 2026-10-02: the optimizer's earlier round beat its last export in the community simulator (632 vs 619 DPS; the calibration moved the model past the better build).
 - Report: priest/research/talents/forever/optimizer/shadow-dps-raid-dps.md
 
 ## Open questions (verify in the live game)

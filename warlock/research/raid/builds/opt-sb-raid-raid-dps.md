@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +94.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid` and profile `raid-dps`: score +107.1% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -46,41 +46,45 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `sb-raid`
 
 ## Core talents (priority order)
 
-1. **Demonic Sacrifice** — Removing it costs 26.7 points of score in this model.
-2. **Bane** — Removing it costs 18.3 points of score in this model.
-3. **Agonizing Flames** — Removing it costs 12.3 points of score in this model.
-4. **Suppression** — Removing it costs 10.9 points of score in this model.
-5. **Improved Shadow Bolt** — Removing it costs 10.8 points of score in this model.
-6. **Malevolence** — Removing it costs 10.1 points of score in this model.
-7. **Improved Corruption** — Removing it costs 9.1 points of score in this model.
-8. **Ruin** — Removing it costs 8.1 points of score in this model.
+1. **Conflagrate** — Removing it costs 27.3 points of score in this model.
+2. **Demonic Sacrifice** — Removing it costs 27.0 points of score in this model.
+3. **Shadow and Flame** — Removing it costs 26.3 points of score in this model.
+4. **Bane** — Removing it costs 21.2 points of score in this model.
+5. **Agonizing Flames** — Removing it costs 13.8 points of score in this model.
+6. **Suppression** — Removing it costs 11.7 points of score in this model.
+7. **Improved Shadow Bolt** — Removing it costs 11.0 points of score in this model.
+8. **Fel Vitality** — Removing it costs 8.5 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 9** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 10** for `sb-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | -0.0% | 1 s |
-| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | +0.0% | 1 s |
-| 3 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 719 | -5.3% | 1 s |
-| 4 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 711 | -6.4% | 1 s |
-| 5 | *Shadow and Flame 13/11/27* | community simulator | - | 570 | -10.8% | 674 | -11.2% | 1 s |
-| 6 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 619 | -18.5% | 1 s |
-| 7 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -17.9% | 1 s |
-| 8 | *Affliction* | community simulator | - | 523 | -18.2% | 610 | -19.6% | 1 s |
-| 9 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 615 | -19.1% | 0 s |
+| 1 | **[`opt-sb-raid-raid-dps`](opt-sb-raid-raid-dps.md)** | ours: optimizer | 22/11/18 | 639 | +0.0% | 759 | +0.0% | 1 s |
+| 2 | [`ds-ruin-raid`](ds-ruin-raid.md) | ours: hand draft | 22/11/18 | 636 | -0.5% | 759 | -0.1% | 1 s |
+| 3 | [`destruction-ml-raid`](destruction-ml-raid.md) | ours: hand draft | 10/11/30 | 628 | -1.7% | 741 | -2.4% | 1 s |
+| 4 | *DS/Ruin Pandemic 24/11/16* | community simulator | - | 605 | -5.3% | 721 | -5.0% | 1 s |
+| 5 | *DS/Ruin* | community simulator | - | 598 | -6.5% | 709 | -6.6% | 1 s |
+| 6 | *Shadow and Flame 13/11/27* | community simulator | - | 554 | -13.3% | 653 | -14.0% | 1 s |
+| 7 | *Deep Affliction 35/0/16* | community simulator | - | 531 | -17.0% | 620 | -18.4% | 1 s |
+| 8 | *Demonic Pact 2/31/18* | community simulator | - | 525 | -17.9% | 623 | -18.0% | 1 s |
+| 9 | *Affliction* | community simulator | - | 523 | -18.2% | 612 | -19.4% | 1 s |
+| 10 | *Demonic Pact* | community simulator | - | 518 | -18.9% | 613 | -19.3% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 2 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 571 -> 575 DPS (+0.7%), sim preset: DS/Ruin Pandemic 24/11/16 544 -> 546 DPS (+0.5%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Destruction 581 -> 622 DPS (+7.1%), ml: Hybrid Affliction/Destruction 641 -> 642 DPS (+0.2%), opt-sb-raid-raid-dps 637 -> 639 DPS (+0.2%), sim preset: DS/Ruin Pandemic 24/11/16 603 -> 605 DPS (+0.3%)):
   1. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   2. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.3%, pass 1)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-sb-raid-raid-dps 683 -> 689 DPS (+1.0%), sim preset: DS/Ruin Pandemic 24/11/16 653 -> 658 DPS (+0.8%)):
+  3. spell probe: insert before the filler: cast Conflagrate (+8.0%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 6 changes to the base rotation; third-seed check: ml: Destruction 686 -> 736 DPS (+7.3%), ml: Hybrid Affliction/Destruction 757 -> 763 DPS (+0.8%), opt-sb-raid-raid-dps 754 -> 760 DPS (+0.8%), sim preset: DS/Ruin Pandemic 24/11/16 715 -> 720 DPS (+0.7%)):
   1. threshold 10% -> 5%: if mana % < 10%: cast Life Tap (+0.4%, pass 1)
   2. move to the top: if not Curse of the Elements is up: cast Curse of the Elements (+0.3%, pass 1)
   3. only with 20s or more of the fight left: if time left on Immolate ≤ cast time of Immolate: cast Immolate (+0.2%, pass 1)
   4. only with 10s or more of the fight left: if time left on Corruption ≤ cast time of Corruption: cast Corruption (+0.2%, pass 2)
+  5. spell probe: insert before the filler: cast Conflagrate (+7.7%, pass 4)
+  6. threshold 60% -> 80%: if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune (+0.2%, pass 5)
 
 Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 
@@ -97,7 +101,7 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 10 | cast Shadow Bolt | 14.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent).
+Lines of the simulator's rotation these builds never cast: cast Shadowburn (needs the Shadowburn talent); cast Amplify Curse (needs the Amplify Curse talent); cast Conflagrate (needs the Conflagrate talent).
 
 Damage by ability:
 
@@ -111,6 +115,7 @@ Damage by ability:
 
 ## Notes
 
+- Allocation taken from cand-sb-raid-r9 on 2026-10-02: the optimizer's earlier round beat its last export in the community simulator (639 vs 623 DPS; the calibration moved the model past the better build).
 - Report: warlock/research/talents/forever/optimizer/sb-raid-raid-dps.md
 
 ## Open questions (verify in the live game)

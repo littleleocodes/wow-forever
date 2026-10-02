@@ -2,22 +2,13 @@
  "dummy": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
-  "builds": [
-   {
-    "label": "destruction-fire-raid",
-    "talents": "25500010135-2300203001-0550004103"
-   },
-   {
-    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -68,52 +59,32 @@
     "gain_seed2": 0.002167885768376898,
     "candidates": 300,
     "pass": 2
+   },
+   {
+    "round": 7,
+    "change": "spell probe: insert before the filler: cast Conflagrate",
+    "gain_seed1": 0.0831,
+    "gain_seed2": 0.0835,
+    "candidates": 4,
+    "pass": 4
    }
   ],
   "final": {
-   "dummy": {
-    "destruction-fire-raid": {
-     "before": 542.5789968465622,
-     "after": 558.6431514985997,
-     "base": 542.5789968465622,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.9496499999999999,
-     "oom_after": 1.9496499999999999
-    },
-    "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 518.681730433894,
-     "after": 533.675065609184,
-     "base": 518.681730433894,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.5589750000000002,
-     "oom_after": 1.5589750000000002
-    }
-   }
+   "dummy": {}
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "warlock",
   "spec": "fire-destro-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/warlock/dps/apls/destruction.apl.json",
   "start": "ui\\specs\\warlock\\dps\\apls\\destruction.apl.json",
-  "builds": [
-   {
-    "label": "destruction-fire-raid",
-    "talents": "25500010135-2300203001-0550004103"
-   },
-   {
-    "label": "sim preset: DS/Ruin Pandemic 24/11/16",
-    "talents": "25220010135201-0025003001-05500051"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -140,31 +111,20 @@
     "gain_seed2": 0.0028598406255317954,
     "candidates": 269,
     "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "spell probe: insert in the middle: cast Conflagrate",
+    "gain_seed1": 0.0817,
+    "gain_seed2": 0.0823,
+    "candidates": 4,
+    "pass": 4
    }
   ],
   "final": {
-   "raid": {
-    "destruction-fire-raid": {
-     "before": 650.7736433856717,
-     "after": 664.5072042816607,
-     "base": 650.7736433856717,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.9221000000000001,
-     "oom_after": 1.9221000000000001
-    },
-    "sim preset: DS/Ruin Pandemic 24/11/16": {
-     "before": 622.349528545336,
-     "after": 635.0271445000085,
-     "base": 622.349528545336,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 1.4922500000000003,
-     "oom_after": 1.4922500000000003
-    }
-   }
+   "raid": {}
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  }
 }

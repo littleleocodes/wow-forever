@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `parse`: score +93.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-raid` and profile `parse`: score +118.2% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -20,7 +20,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Rend** | 3/3 | changed | Increases the Bleed damage done by your Rend ability by 35%. |
-| **Improved Heroic Strike** | 2/3 | changed | Reduces the cost of your Heroic Strike ability by 2 Rage. |
+| **Deflection** | 2/5 | unchanged | Increases your Parry chance by 2%. |
 | **Improved Tactical Mastery** | 5/5 | **NEW** | Tactical Mastery lets you retain up to an additional 15 Rage when you change stances. |
 | **Anger Management** | 1/1 | changed | Generates 1 Rage every 3 sec while in combat, and reduces Rage loss while out of combat by 30%. |
 | **Deep Wounds** | 2/3 | changed | Your critical strikes cause your opponent to Bleed, dealing 40% of your melee weapon's average damage over 12 sec. |
@@ -48,14 +48,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `fury-dw-
 
 ## Core talents (priority order)
 
-1. **Dual Wield Specialization** — Removing it costs 28.5 points of score in this model.
-2. **Flurry** — Removing it costs 27.6 points of score in this model.
-3. **Improved Execute** — Removing it costs 10.8 points of score in this model.
-4. **Cruelty** — Removing it costs 8.7 points of score in this model.
-5. **Death Wish** — Removing it costs 7.6 points of score in this model.
-6. **Raging Blows** — Removing it costs 7.4 points of score in this model.
-7. **Bloodthirst** — Removing it costs 7.4 points of score in this model.
-8. **Precision** — Removing it costs 6.5 points of score in this model.
+1. **Dual Wield Specialization** — Removing it costs 31.8 points of score in this model.
+2. **Flurry** — Removing it costs 30.8 points of score in this model.
+3. **Bloodthirst** — Removing it costs 19.6 points of score in this model.
+4. **Improved Execute** — Removing it costs 12.8 points of score in this model.
+5. **Death Wish** — Removing it costs 10.9 points of score in this model.
+6. **Cruelty** — Removing it costs 9.8 points of score in this model.
+7. **Raging Blows** — Removing it costs 8.8 points of score in this model.
+8. **Precision** — Removing it costs 7.3 points of score in this model.
 
 ## Rotation
 

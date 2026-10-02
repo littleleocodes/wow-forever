@@ -5,19 +5,19 @@
  "iterations": 1500,
  "builds": [
   "opt-shadow-dps-raid-dps",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-preset-shadow.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r1.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r2.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r3.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r4.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r5.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r6.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r7.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r8.json",
-  "/home/user/wow-forever/priest/research/raid/raidsim/candidates/cand-shadow-dps-r9.json"
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-preset-shadow.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r1.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r2.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r3.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r4.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r5.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r6.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r7.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r8.json",
+  "F:\\wow-forever\\priest\\research\\raid\\raidsim\\candidates\\cand-shadow-dps-r9.json"
  ],
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "priest/dps",
   "gear": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
@@ -46,8 +46,8 @@
   {
    "talent": "Mind Flay",
    "sim": 0.7761384027437542,
-   "ev_before": 0.9136364214754686,
-   "ev_after": 0.9136312680932656,
+   "ev_before": 0.9136312680932654,
+   "ev_after": 0.9136312680932654,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -66,8 +66,8 @@
   },
   {
    "talent": "Shadowform",
-   "sim": 0.7643020817457677,
-   "ev_before": 0.739043761581189,
+   "sim": 0.7643020817457672,
+   "ev_before": 0.69234885133567,
    "ev_after": 0.69234885133567,
    "scale": 1.0,
    "how": "kept",
@@ -88,7 +88,7 @@
   {
    "talent": "Darkness",
    "sim": 0.10000000000000137,
-   "ev_before": 0.09999387241537748,
+   "ev_before": 0.09999354759526562,
    "ev_after": 0.09999354759526562,
    "scale": 1.0,
    "how": "kept",
@@ -108,8 +108,8 @@
   },
   {
    "talent": "Shadow Weaving",
-   "sim": 0.09425513328485367,
-   "ev_before": 0.09999387241537748,
+   "sim": 0.0942551332848538,
+   "ev_before": 0.09999354759526562,
    "ev_after": 0.09999354759526562,
    "scale": 1.0,
    "how": "kept",
@@ -129,8 +129,8 @@
   },
   {
    "talent": "Improved Mind Flay",
-   "sim": 0.08500209670045353,
-   "ev_before": 0.09661056505451002,
+   "sim": 0.08500209670045358,
+   "ev_before": 0.09661063189114052,
    "ev_after": 0.09661063189114052,
    "scale": 1.0,
    "how": "kept",
@@ -150,8 +150,8 @@
   },
   {
    "talent": "Meditation",
-   "sim": 0.06451425040296815,
-   "ev_before": 0.09110081558147928,
+   "sim": 0.06451425040296803,
+   "ev_before": 0.06988495787050424,
    "ev_after": 0.06988495787050424,
    "scale": 1.0,
    "how": "kept",
@@ -170,11 +170,11 @@
   },
   {
    "talent": "Shadow Focus",
-   "sim": 0.03706863618167123,
-   "ev_before": 0.04876619842403218,
-   "ev_after": 0.037067983003124895,
-   "scale": 0.7601303518749774,
-   "how": "fitted",
+   "sim": 0.03706863618167136,
+   "ev_before": 0.03706798300312489,
+   "ev_after": 0.03706798300312489,
+   "scale": 1.0,
+   "how": "kept",
    "builds": [
     "opt-shadow-dps-raid-dps",
     "cand-shadow-dps-preset-shadow",
@@ -191,8 +191,8 @@
   },
   {
    "talent": "Improved Shadow Word: Pain",
-   "sim": 0.022506891285666675,
-   "ev_before": 0.02611861563224014,
+   "sim": 0.0225068912856667,
+   "ev_before": 0.026101166741957994,
    "ev_after": 0.026101166741957994,
    "scale": 1.0,
    "how": "kept",
@@ -212,8 +212,8 @@
   },
   {
    "talent": "Improved Mind Blast",
-   "sim": 0.01950379980104274,
-   "ev_before": 0.01329501131327581,
+   "sim": 0.01950379980104304,
+   "ev_before": 0.013294969077847654,
    "ev_after": 0.013294969077847654,
    "scale": 1.0,
    "how": "kept",
@@ -231,8 +231,8 @@
   },
   {
    "talent": "Twin Disciplines",
-   "sim": 0.011418157604166384,
-   "ev_before": 0.016636568128086313,
+   "sim": 0.01141815760416659,
+   "ev_before": 0.01663651821558076,
    "ev_after": 0.01663651821558076,
    "scale": 1.0,
    "how": "kept",
@@ -252,8 +252,8 @@
   },
   {
    "talent": "Mental Strength",
-   "sim": 0.010603741081329806,
-   "ev_before": 0.005742132913014369,
+   "sim": 0.010603741081330132,
+   "ev_before": 0.005663684765982998,
    "ev_after": 0.005663684765982998,
    "scale": 1.0,
    "how": "kept",
@@ -273,9 +273,9 @@
   },
   {
    "talent": "Mental Agility",
-   "sim": 0.002915984259325836,
-   "ev_before": 0.001470065502735655,
-   "ev_after": 0.0014399863950656892,
+   "sim": 0.0029159842593258355,
+   "ev_before": 0.0014399863950656895,
+   "ev_after": 0.0014399863950656895,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -290,8 +290,8 @@
   },
   {
    "talent": "Early Demise",
-   "sim": 0.0027613772819612193,
-   "ev_before": 0.0024899304880072687,
+   "sim": 0.002761377281961256,
+   "ev_before": 0.0024900683690941053,
    "ev_after": 0.0024900683690941053,
    "scale": 1.0,
    "how": "noise",
@@ -305,9 +305,9 @@
   },
   {
    "talent": "Devouring Contagion",
-   "sim": 0.0005532766550715353,
-   "ev_before": 0.0015499619028063892,
-   "ev_after": 0.0015181736287068945,
+   "sim": 0.000553276655071553,
+   "ev_before": 0.0015181736287068948,
+   "ev_after": 0.0015181736287068948,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -344,8 +344,8 @@
   {
    "talent": "Shadow Affinity",
    "sim": 0.0,
-   "ev_before": 1.5000419196010502e-05,
-   "ev_after": 1.5843790790479083e-05,
+   "ev_before": 1.5843790790479087e-05,
+   "ev_after": 1.5843790790479087e-05,
    "scale": 1.0,
    "how": "noise",
    "builds": [
@@ -358,7 +358,7 @@
   {
    "talent": "Shadow Reach",
    "sim": 0.0,
-   "ev_before": 3.0121331253304497e-06,
+   "ev_before": 3.1814854868770167e-06,
    "ev_after": 3.1814854868770167e-06,
    "scale": 1.0,
    "how": "noise",
@@ -406,7 +406,7 @@
   {
    "talent": "Martyrdom",
    "sim": 0.0,
-   "ev_before": 1.4920132060110881e-05,
+   "ev_before": 1.5758974966754273e-05,
    "ev_after": 1.5758974966754273e-05,
    "scale": 1.0,
    "how": "noise",
@@ -419,7 +419,7 @@
   {
    "talent": "Silent Resolve",
    "sim": 0.0,
-   "ev_before": 1.7904211898857226e-05,
+   "ev_before": 1.8910829563254126e-05,
    "ev_after": 1.8910829563254126e-05,
    "scale": 1.0,
    "how": "noise",
@@ -462,7 +462,7 @@
   {
    "talent": "Silence",
    "sim": 0.0,
-   "ev_before": 7.450125654429729e-06,
+   "ev_before": 7.868977502988157e-06,
    "ev_after": 7.868977502988157e-06,
    "scale": 1.0,
    "how": "noise",
@@ -472,8 +472,8 @@
   },
   {
    "talent": "Inner Focus",
-   "sim": -0.011047434609672406,
-   "ev_before": 0.01120836482028857,
+   "sim": -0.011047434609672382,
+   "ev_before": 0.011167970566067888,
    "ev_after": 0.011167970566067888,
    "scale": 1.0,
    "how": "apl",
@@ -502,8 +502,8 @@
   },
   "builds": {
    "opt-shadow-dps-raid-dps": {
-    "dps": 631.109311297724,
-    "surplus": 630.591839491786,
+    "dps": 631.1093112977242,
+    "surplus": 630.5918394917861,
     "oom_seconds": 0.011329333333333334,
     "deficit": 0.0,
     "sustain": 1.6445,
@@ -511,7 +511,7 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-preset-shadow": {
-    "dps": 617.9190360661851,
+    "dps": 617.9190360661852,
     "surplus": 617.5851682607554,
     "oom_seconds": 0.0,
     "deficit": 0.0,
@@ -520,8 +520,8 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r1": {
-    "dps": 619.6872830532183,
-    "surplus": 619.4477794748267,
+    "dps": 619.6872830532184,
+    "surplus": 619.4477794748269,
     "oom_seconds": 0.0,
     "deficit": 0.0,
     "sustain": 1.6406,
@@ -529,17 +529,17 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r2": {
-    "dps": 607.2577090168879,
-    "surplus": 619.4151332422773,
-    "oom_seconds": 9.38953333333333,
-    "deficit": 0.019627263805700568,
+    "dps": 607.2577090168877,
+    "surplus": 619.4151332422771,
+    "oom_seconds": 9.389533333333333,
+    "deficit": 0.01962726380570068,
     "sustain": 1.5251,
     "bound_share": 1.0,
     "model_deficit": 0.0049
    },
    "cand-shadow-dps-r3": {
-    "dps": 631.109311297724,
-    "surplus": 630.591839491786,
+    "dps": 631.1093112977242,
+    "surplus": 630.5918394917861,
     "oom_seconds": 0.011329333333333334,
     "deficit": 0.0,
     "sustain": 1.6445,
@@ -547,17 +547,17 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r4": {
-    "dps": 616.2702525613695,
-    "surplus": 616.4806872365593,
+    "dps": 616.2702525613691,
+    "surplus": 616.4806872365592,
     "oom_seconds": 0.0,
-    "deficit": 0.0003413483658881722,
+    "deficit": 0.0003413483658886163,
     "sustain": 1.6445,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r5": {
     "dps": 619.1965524994459,
-    "surplus": 619.0245606090102,
+    "surplus": 619.02456060901,
     "oom_seconds": 0.0,
     "deficit": 0.0,
     "sustain": 1.6531,
@@ -565,8 +565,8 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r6": {
-    "dps": 602.9814294780849,
-    "surplus": 602.8888090284978,
+    "dps": 602.9814294780847,
+    "surplus": 602.8888090284977,
     "oom_seconds": 0.0,
     "deficit": 0.0,
     "sustain": 1.6531,
@@ -574,28 +574,28 @@
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r7": {
-    "dps": 578.9109095616308,
-    "surplus": 620.0776516339672,
-    "oom_seconds": 22.79316666666665,
-    "deficit": 0.06638965614041714,
+    "dps": 578.910909561631,
+    "surplus": 620.0776516339671,
+    "oom_seconds": 22.793166666666668,
+    "deficit": 0.06638965614041659,
     "sustain": 1.4639,
     "bound_share": 1.0,
     "model_deficit": 0.0661
    },
    "cand-shadow-dps-r8": {
-    "dps": 618.5509538016018,
-    "surplus": 619.3754892623199,
-    "oom_seconds": 1.2309359999786673,
-    "deficit": 0.0013312368264686292,
+    "dps": 618.5509538016021,
+    "surplus": 619.3754892623198,
+    "oom_seconds": 1.2309359999786667,
+    "deficit": 0.001331236826468074,
     "sustain": 1.5779,
     "bound_share": 1.0,
     "model_deficit": 0.0
    },
    "cand-shadow-dps-r9": {
-    "dps": 618.7332619651772,
+    "dps": 618.7332619651773,
     "surplus": 619.2200520284273,
-    "oom_seconds": 0.5007199999880001,
-    "deficit": 0.0007861342048847142,
+    "oom_seconds": 0.5007199999879999,
+    "deficit": 0.0007861342048846032,
     "sustain": 1.5813,
     "bound_share": 1.0,
     "model_deficit": 0.0

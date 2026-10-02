@@ -66,17 +66,19 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 
 ## Rank among our builds and the community simulator's
 
-**2 of 3** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 455 | +0.0% | 754 | -1.9% | 13 s |
-| 2 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 453 | -0.4% | 769 | +0.0% | 21 s |
-| 3 | *Beast Mastery 35/16/0* | community simulator | - | 421 | -7.6% | 728 | -5.2% | 17 s |
+| 1 | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) | ours: hand draft | 23/28/0 | 473 | +0.0% | 808 | -0.5% | 18 s |
+| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 465 | -1.8% | 793 | -2.3% | 22 s |
+| 3 | **[`mm-hawk-raid`](mm-hawk-raid.md)** | ours: hand draft | 22/29/0 | 461 | -2.6% | 810 | -0.2% | 26 s |
+| 4 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 450 | -5.0% | 812 | +0.0% | 30 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 431 | -8.8% | 762 | -6.1% | 28 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 9 changes to the base rotation; third-seed check: mm-hawk-raid 442 -> 469 DPS (+5.9%), sim preset: Beast Mastery 35/16/0 415 -> 437 DPS (+5.2%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Beast Mastery 433 -> 465 DPS (+7.4%), ml: Hybrid Beast Mastery/Marksmanship 442 -> 473 DPS (+6.9%), beast-mastery-raid 433 -> 464 DPS (+7.2%), sim preset: Beast Mastery 35/16/0 406 -> 432 DPS (+6.4%)):
   1. drop: use every other cooldown when ready (+3.0%, pass 1)
   2. drop: if time to the next auto attack > 1s: cast Aimed Shot (+0.5%, pass 1)
   3. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+2.1%, pass 1)
@@ -86,28 +88,35 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
   7. insert before the filler: use every other cooldown when ready (+3.8%, pass 2)
   8. threshold 1s -> 2s: if time left on Serpent Sting < 1s: cast Serpent Sting (+0.4%, pass 2)
   9. threshold 2s -> 4s: if time left on Serpent Sting < 2s: cast Serpent Sting (+1.3%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: mm-hawk-raid 792 -> 815 DPS (+2.9%), sim preset: Beast Mastery 35/16/0 743 -> 764 DPS (+2.7%)):
+  10. spell probe: insert at the end: if auraIsInactive: cast Intimidation (+0.5%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 8 changes to the base rotation; third-seed check: ml: Beast Mastery 762 -> 787 DPS (+3.3%), ml: Hybrid Beast Mastery/Marksmanship 782 -> 808 DPS (+3.2%), beast-mastery-raid 768 -> 793 DPS (+3.3%), sim preset: Beast Mastery 35/16/0 741 -> 763 DPS (+3.0%)):
   1. move to the top: if time to the next auto attack > 0.5s: cast Multi-Shot (+1.9%, pass 1)
   2. drop the condition: if time to the next auto attack > 1s: cast Summon Hawk (+0.4%, pass 1)
   3. threshold 1s -> 0.75s: if time left on Serpent Sting < 1s and mana % ≥ 30%: cast Serpent Sting (+0.2%, pass 2)
   4. threshold 0.75s -> 0.25s: if time left on Serpent Sting < 0.75s and mana % ≥ 30%: cast Serpent Sting + move to the top: if time left on Serpent Sting < 0.25s and mana % ≥ 30%: cast Serpent Sting (+0.3%, pass 3)
+  5. drop: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.6%, pass 5)
+  6. insert at the end: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.3%, pass 5)
+  7. move down below 'cast Summon Hawk': if time to the next auto attack > 1s: cast Aimed Shot (+0.4%, pass 5)
+  8. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+0.2%, pass 5)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 10.0 |
+| 2 | cast Summon Hawk | 9.7 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.7 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
+
+Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
 
 Damage by ability:
 
 | Ability | [`mm-hawk-raid`](mm-hawk-raid.md) |
 |---|---|
-| Auto Shot | 40% |
-| Summon Hawk | 29% |
-| Serpent Sting | 22% |
+| Auto Shot | 41% |
+| Summon Hawk | 28% |
+| Serpent Sting | 21% |
 | Pet: Auto Attack | 7% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |

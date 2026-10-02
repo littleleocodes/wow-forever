@@ -6,17 +6,17 @@
  "builds": [
   "feral-bear-tank",
   "opt-feral-bear-tank-raid-tank",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-hand-2026-09-26.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-hand-2026-09-27.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r1.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r2.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r3.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r4.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r5.json",
-  "/home/user/wow-forever/druid/research/raid/raidsim/candidates/cand-feral-bear-tank-r6.json"
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-hand-2026-09-26.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-hand-2026-09-27.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r1.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r2.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r3.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r4.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r5.json",
+  "F:\\wow-forever\\druid\\research\\raid\\raidsim\\candidates\\cand-feral-bear-tank-r6.json"
  ],
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "druid/feralbear",
   "gear": "ui/specs/druid/feralbear/gear_sets/launch.gear.json",
@@ -46,8 +46,8 @@
   {
    "talent": "Blood Frenzy",
    "sim": 0.06583725703698837,
-   "ev_before": 0.06733080587836907,
-   "ev_after": 0.06733080587836907,
+   "ev_before": 0.06733080587836905,
+   "ev_after": 0.06733080587836905,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -85,7 +85,7 @@
   },
   {
    "talent": "Shredding Attacks",
-   "sim": 0.06335392796523984,
+   "sim": 0.06335392796523998,
    "ev_before": 0.06375918014900735,
    "ev_after": 0.06375918014900735,
    "scale": 1.0,
@@ -100,7 +100,7 @@
   },
   {
    "talent": "Natural Reaction",
-   "sim": 0.05085789613021929,
+   "sim": 0.05085789613021925,
    "ev_before": 0.04741593858007636,
    "ev_after": 0.04741593858007636,
    "scale": 1.0,
@@ -120,9 +120,9 @@
   },
   {
    "talent": "Sharpened Claws",
-   "sim": 0.03994073344761292,
-   "ev_before": 0.04403879221722067,
-   "ev_after": 0.04403879221722067,
+   "sim": 0.03994073344761289,
+   "ev_before": 0.04403879221722068,
+   "ev_after": 0.04403879221722068,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -140,7 +140,7 @@
   },
   {
    "talent": "Rend and Tear",
-   "sim": 0.03815904256083649,
+   "sim": 0.03815904256083655,
    "ev_before": 0.03742016994809336,
    "ev_after": 0.03742016994809336,
    "scale": 1.0,
@@ -159,9 +159,9 @@
   },
   {
    "talent": "Nature's Majesty",
-   "sim": 0.02684707822548603,
-   "ev_before": 0.01924729949916048,
-   "ev_after": 0.01924729949916048,
+   "sim": 0.026847078225486154,
+   "ev_before": 0.019247299499160483,
+   "ev_after": 0.019247299499160483,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -177,7 +177,7 @@
   },
   {
    "talent": "Feral Swiftness",
-   "sim": 0.024878126190848806,
+   "sim": 0.02487812619084897,
    "ev_before": 0.02359894635149158,
    "ev_after": 0.02359894635149158,
    "scale": 1.0,
@@ -196,7 +196,7 @@
   },
   {
    "talent": "Naturalist",
-   "sim": 0.01992096665783604,
+   "sim": 0.01992096665783605,
    "ev_before": 0.01625798955707326,
    "ev_after": 0.01625798955707326,
    "scale": 1.0,
@@ -214,9 +214,9 @@
   },
   {
    "talent": "Predatory Instincts",
-   "sim": 0.01768927110603719,
-   "ev_before": 0.012508191079972487,
-   "ev_after": 0.012508191079972487,
+   "sim": 0.01768927110603724,
+   "ev_before": 0.012508191079972489,
+   "ev_after": 0.012508191079972489,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -234,8 +234,8 @@
   {
    "talent": "Predatory Strikes",
    "sim": 0.016938816552154755,
-   "ev_before": 0.014967505305075263,
-   "ev_after": 0.014967505305075263,
+   "ev_before": 0.014967505305075266,
+   "ev_after": 0.014967505305075266,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -253,7 +253,7 @@
   },
   {
    "talent": "Ferocity",
-   "sim": 0.01354558562213309,
+   "sim": 0.013545585622133084,
    "ev_before": 0.016921658246778208,
    "ev_after": 0.016921658246778208,
    "scale": 1.0,
@@ -273,7 +273,7 @@
   },
   {
    "talent": "Genesis",
-   "sim": 0.0036755431707061275,
+   "sim": 0.0036755431707062303,
    "ev_before": 0.004300726985680047,
    "ev_after": 0.004300726985680047,
    "scale": 1.0,
@@ -289,7 +289,7 @@
   },
   {
    "talent": "Primal Bite",
-   "sim": 0.0017834759232178414,
+   "sim": 0.0017834759232178597,
    "ev_before": 0.002995249310946018,
    "ev_after": 0.002995249310946018,
    "scale": 1.0,
@@ -305,7 +305,7 @@
   },
   {
    "talent": "Savage Fury",
-   "sim": 0.0008595525753206975,
+   "sim": 0.000859552575320819,
    "ev_before": 0.0005257572984697312,
    "ev_after": 0.0005257572984697312,
    "scale": 1.0,
@@ -325,7 +325,7 @@
   },
   {
    "talent": "Berserk",
-   "sim": 0.000706699207645905,
+   "sim": 0.00070669920764578,
    "ev_before": 0.0,
    "ev_after": 0.0,
    "scale": 1.0,
@@ -339,7 +339,7 @@
   },
   {
    "talent": "Nature's Reach",
-   "sim": 0.00012384673260596953,
+   "sim": 0.00012384673260608785,
    "ev_before": 0.0005273392904267278,
    "ev_after": 0.0005273392904267278,
    "scale": 1.0,
@@ -353,8 +353,8 @@
   {
    "talent": "Feral Charge",
    "sim": 0.0,
-   "ev_before": 0.006890822139967913,
-   "ev_after": 0.006890822139967913,
+   "ev_before": 0.006890822139967912,
+   "ev_after": 0.006890822139967912,
    "scale": 4.656612873077393e-10,
    "how": "fitted",
    "builds": [
@@ -501,7 +501,7 @@
   },
   {
    "talent": "Heart of the Wild",
-   "sim": -0.005799554039136285,
+   "sim": -0.005799554039135964,
    "ev_before": 0.00018838746160730236,
    "ev_after": 0.00018838746160730236,
    "scale": 1.0,

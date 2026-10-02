@@ -2,22 +2,13 @@
  "dummy": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
-  "builds": [
-   {
-    "label": "opt-mm-raid-raid-dps",
-    "talents": "53200005050002-005355010150004"
-   },
-   {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -60,52 +51,32 @@
     "gain_seed2": 0.002269176128165018,
     "candidates": 126,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0639,
+    "gain_seed2": 0.0641,
+    "candidates": 36,
+    "pass": 5
    }
   ],
   "final": {
-   "dummy": {
-    "opt-mm-raid-raid-dps": {
-     "before": 394.6150443958022,
-     "after": 428.08593263447875,
-     "base": 394.6150443958022,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 44.746121805192445,
-     "oom_after": 44.746121805192445
-    },
-    "sim preset: Marksmanship": {
-     "before": 360.18599196749824,
-     "after": 399.426996236206,
-     "base": 360.18599196749824,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 59.79187258591577,
-     "oom_after": 59.79187258591577
-    }
-   }
+   "dummy": {}
   },
   "first_date": "2026-09-27",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "hunter",
   "spec": "mm-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/hunter/dps/apls/mm.apl.json",
   "start": "ui\\specs\\hunter\\dps\\apls\\mm.apl.json",
-  "builds": [
-   {
-    "label": "opt-mm-raid-raid-dps",
-    "talents": "53200005050002-005355010150004"
-   },
-   {
-    "label": "sim preset: Marksmanship",
-    "talents": "5023000501-0050550501503051"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -132,31 +103,20 @@
     "gain_seed2": 0.0022231869844990815,
     "candidates": 133,
     "pass": 1
+   },
+   {
+    "round": 4,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Summon Hawk",
+    "gain_seed1": 0.0128,
+    "gain_seed2": 0.0127,
+    "candidates": 36,
+    "pass": 5
    }
   ],
   "final": {
-   "raid": {
-    "opt-mm-raid-raid-dps": {
-     "before": 643.6885186496314,
-     "after": 765.8976487079499,
-     "base": 643.6885186496314,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    },
-    "sim preset: Marksmanship": {
-     "before": 681.1448639275205,
-     "after": 817.137790824437,
-     "base": 681.1448639275205,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.006672922542800001,
-     "oom_after": 0.006672922542800001
-    }
-   }
+   "raid": {}
   },
   "first_date": "2026-09-27",
-  "passes": 4
+  "passes": 5
  }
 }

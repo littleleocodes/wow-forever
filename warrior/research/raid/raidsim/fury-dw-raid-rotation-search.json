@@ -2,7 +2,7 @@
  "dummy": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,13 @@
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
-    "label": "opt-fury-dw-raid-raid-dps",
-    "talents": "20305013-05050023515231005"
+    "label": "ml: Fury",
+    "talents": "20305012-151510115152310051",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json"
+   },
+   {
+    "label": "fury-dw-raid",
+    "talents": "20305012-550500005152310051"
    },
    {
     "label": "sim preset: DPS",
@@ -140,23 +145,72 @@
     "gain_seed2": 0.0024141406244333474,
     "candidates": 706,
     "pass": 1
+   },
+   {
+    "round": 16,
+    "change": "drop: if stacks of Sunder Armor < 4 and not Expose Armor is up and time left in the fight \u2265 20s: cast Sunder Armor",
+    "gain_seed1": 0.005333984412809967,
+    "gain_seed2": 0.0050524164140375305,
+    "candidates": 814,
+    "pass": 5
+   },
+   {
+    "round": 17,
+    "change": "threshold 60 -> 120: if number of targets = 1 and (rage \u2265 60 or execute phase (E20)) and time left in the fight \u2265 40s: cast Heroic Strike",
+    "gain_seed1": 0.0038520480638000176,
+    "gain_seed2": 0.003911449408091405,
+    "candidates": 773,
+    "pass": 5
+   },
+   {
+    "round": 18,
+    "change": "threshold 22.5s -> 33.75s: if time left in the fight \u2264 22.5s: cast Recklessness",
+    "gain_seed1": 0.0023649616288363706,
+    "gain_seed2": 0.002638560823941871,
+    "candidates": 773,
+    "pass": 5
+   },
+   {
+    "round": 19,
+    "change": "threshold 30s -> 45s: if (time left in the fight \u2264 30s or time left in the fight \u2265 211.5s): cast Death Wish",
+    "gain_seed1": 0.011591267520942417,
+    "gain_seed2": 0.011754282726053944,
+    "candidates": 773,
+    "pass": 5
+   },
+   {
+    "round": 20,
+    "change": "threshold 22.5s -> 33.75s: if (time left in the fight \u2264 22.5s or time left in the fight \u2265 70s): use every other cooldown when ready",
+    "gain_seed1": 0.003481533820054894,
+    "gain_seed2": 0.0035334102738289186,
+    "candidates": 777,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
-    "opt-fury-dw-raid-raid-dps": {
-     "before": 182.88096936418248,
-     "after": 256.43049727748917,
-     "base": 182.88096936418248,
+    "ml: Fury": {
+     "before": 319.5979213297867,
+     "after": 395.9918786018993,
+     "base": 319.5979213297867,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "fury-dw-raid": {
+     "before": 318.1328747466998,
+     "after": 390.17165326530767,
+     "base": 318.1328747466998,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 171.22236522425362,
-     "after": 240.39394679543017,
-     "base": 171.22236522425362,
+     "before": 299.10625937244873,
+     "after": 370.7457789179735,
+     "base": 299.10625937244873,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -165,12 +219,12 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  },
  "raid": {
   "class": "warrior",
   "spec": "fury-dw-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -178,8 +232,13 @@
   "start": "ui\\specs\\warrior\\dps\\apls\\dps_no_reck.apl.json",
   "builds": [
    {
-    "label": "opt-fury-dw-raid-raid-dps",
-    "talents": "20305013-05050023515231005"
+    "label": "ml: Fury",
+    "talents": "20305012-151510115152310051",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-fury-bis.gear.json"
+   },
+   {
+    "label": "fury-dw-raid",
+    "talents": "20305012-550500005152310051"
    },
    {
     "label": "sim preset: DPS",
@@ -228,23 +287,64 @@
     "gain_seed2": 0.0033637992252737448,
     "candidates": 598,
     "pass": 1
+   },
+   {
+    "round": 6,
+    "change": "drop 'time left in the fight \u2265 140s' from the condition: if (time left in the fight \u2264 30s or time left in the fight \u2265 140s): use every other cooldown when ready",
+    "gain_seed1": 0.018222973040818102,
+    "gain_seed2": 0.01811465703612547,
+    "candidates": 689,
+    "pass": 5
+   },
+   {
+    "round": 7,
+    "change": "threshold 30s -> 45s: if (time left in the fight \u2264 30s or time left in the fight \u2265 211.5s): cast Death Wish",
+    "gain_seed1": 0.006841865632747579,
+    "gain_seed2": 0.006932728101535446,
+    "candidates": 682,
+    "pass": 5
+   },
+   {
+    "round": 8,
+    "change": "threshold 1.5s -> 0s: if time until Bloodthirst is ready > 1.5s: cast Whirlwind",
+    "gain_seed1": 0.007031590093062201,
+    "gain_seed2": 0.006457277375841786,
+    "candidates": 686,
+    "pass": 5
+   },
+   {
+    "round": 9,
+    "change": "threshold 30s -> 45s: if time left in the fight \u2264 30s: use every other cooldown when ready",
+    "gain_seed1": 0.0040103609420416575,
+    "gain_seed2": 0.00509653387832909,
+    "candidates": 683,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
-    "opt-fury-dw-raid-raid-dps": {
-     "before": 382.7559920189903,
-     "after": 441.09947305076474,
-     "base": 382.7559920189903,
+    "ml: Fury": {
+     "before": 669.0330687375048,
+     "after": 720.04662487141,
+     "base": 669.0330687375048,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0,
+     "oom_after": 0
+    },
+    "fury-dw-raid": {
+     "before": 665.008121672816,
+     "after": 706.7076971440978,
+     "base": 665.008121672816,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: DPS": {
-     "before": 377.5160049267463,
-     "after": 438.66363829111253,
-     "base": 377.5160049267463,
+     "before": 631.9482424507721,
+     "after": 682.9640263293679,
+     "base": 631.9482424507721,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
@@ -253,6 +353,6 @@
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 5
  }
 }

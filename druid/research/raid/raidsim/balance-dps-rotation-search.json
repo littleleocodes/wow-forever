@@ -2,7 +2,7 @@
  "dummy": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,8 +10,9 @@
   "start": "ui\\specs\\druid\\balance\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-balance-dps-raid-dps",
-    "talents": "0532220115501051-05-505003"
+    "label": "ml: Balance",
+    "talents": "0532220115501051-05-505003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json"
    },
    {
     "label": "sim preset: Balance",
@@ -60,46 +61,55 @@
     "gain_seed2": 0.001729356611086974,
     "candidates": 192,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "insert at the end: cast Wrath",
+    "gain_seed1": 0.0020079508572110605,
+    "gain_seed2": 0.0017187464382164563,
+    "candidates": 326,
+    "pass": 5
    }
   ],
   "final": {
    "dummy": {
-    "opt-balance-dps-raid-dps": {
-     "before": 457.88433743928687,
-     "after": 462.3616113408301,
-     "base": 457.88433743928687,
+    "ml: Balance": {
+     "before": 515.8326171181279,
+     "after": 535.4662360948944,
+     "base": 515.8326171181279,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.00423835,
-     "oom_after": 0.00423835
+     "oom_before": 1.8222469999999977,
+     "oom_after": 3.8251866999999953
     },
     "sim preset: Balance": {
-     "before": 411.45869627632237,
-     "after": 410.8905739041697,
-     "base": 411.45869627632237,
+     "before": 475.00171566028274,
+     "after": 485.0160785648182,
+     "base": 475.00171566028274,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0006493,
-     "oom_after": 0.0006493
+     "oom_before": 1.0743013000000008,
+     "oom_after": 0.5441245500000002
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 5
  },
  "raid": {
   "class": "druid",
   "spec": "balance-dps",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/druid/balance/apls/default.apl.json",
-  "start": "ui/specs/druid/balance/apls/default.apl.json",
+  "start": "ui\\specs\\druid\\balance\\apls\\default.apl.json",
   "builds": [
    {
-    "label": "opt-balance-dps-raid-dps",
-    "talents": "0532220115501051-05-505003"
+    "label": "ml: Balance",
+    "talents": "0532220115501051-05-505003",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json"
    },
    {
     "label": "sim preset: Balance",
@@ -108,22 +118,30 @@
   ],
   "iterations": 3000,
   "confirm": 20000,
-  "changes": [],
+  "changes": [
+   {
+    "round": 1,
+    "change": "move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms)",
+    "gain_seed1": 0.004723764816533249,
+    "gain_seed2": 0.003281910879091132,
+    "candidates": 295
+   }
+  ],
   "final": {
    "raid": {
-    "opt-balance-dps-raid-dps": {
-     "before": 517.5722261362412,
-     "after": 517.5722261362412,
-     "base": 517.5722261362412,
+    "ml: Balance": {
+     "before": 609.1576201992759,
+     "after": 613.587704165002,
+     "base": 609.1576201992759,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,
      "oom_after": 0
     },
     "sim preset: Balance": {
-     "before": 463.8452073512482,
-     "after": 463.8452073512482,
-     "base": 463.8452073512482,
+     "before": 547.5063263450521,
+     "after": 548.0252328285069,
+     "base": 547.5063263450521,
      "before_value": null,
      "after_value": null,
      "oom_before": 0,

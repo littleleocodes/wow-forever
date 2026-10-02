@@ -40,31 +40,31 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
 
-## Optimized build: 20/11/20  score +84.38%  (dps x1.836, sustain x1.036, surv x1.020, utility +0.00%)
+## Optimized build: 10/11/30  score +98.36%  (dps x1.976, sustain x1.036, surv x1.020, utility +0.00%)
 
 ```
-  Affliction: Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Pandemic 3, Malevolence 5
+  Affliction: Suppression 5, Improved Corruption 5
   Demonology: Demonic Embrace 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
-  Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 2, Ruin 5, Agonizing Flames 3
+  Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 2, Ruin 5, Shadowburn 1, Agonizing Flames 3, Conflagrate 1, Fire and Brimstone 3, Shadow and Flame 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Shadow Mastery | Affliction 6 | 1/5 | +1.66% | no |
-| Decimation | Demonology 4 | 1/2 | +1.11% | no |
-| Aftermath | Destruction 2 | 3/5 | +0.79% | yes |
-| Shadowburn | Destruction 3 | 1/1 | +0.78% | yes |
+| Malevolence | Affliction 4 | 1/5 | +1.74% | no |
+| Shadow Mastery | Affliction 6 | 1/5 | +1.72% | no |
+| Improved Bane of Agony | Affliction 3 | 1/2 | +1.28% | yes |
+| Decimation | Demonology 4 | 1/2 | +1.20% | no |
+| Pandemic | Affliction 3 | 1/3 | +1.19% | yes |
+| Aftermath | Destruction 2 | 3/5 | +1.18% | yes |
+| Malediction | Affliction 2 | 1/5 | +0.78% | yes |
 | Wrack | Affliction 7 | 1/1 | +0.77% | no |
-| Malediction | Affliction 2 | 1/5 | +0.72% | yes |
-| Amplify Curse | Affliction 3 | 1/1 | +0.71% | yes |
-| Nightfall | Affliction 4 | 1/2 | +0.24% | yes |
+| Amplify Curse | Affliction 3 | 1/1 | +0.64% | yes |
+| Nightfall | Affliction 4 | 1/2 | +0.26% | no |
 | Improved Life Tap | Affliction 1 | 1/2 | +0.24% | yes |
 | Cataclysm | Destruction 2 | 1/3 | +0.08% | yes |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
 | Intensity | Destruction 4 | 1/3 | +0.00% | yes |
 | Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
-| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
-| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |
 

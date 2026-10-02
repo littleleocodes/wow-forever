@@ -121,7 +121,7 @@
       },
       "rhs": {
        "const": {
-        "val": "5"
+        "val": "3.75"
        }
       }
      }
@@ -131,7 +131,8 @@
       "spellId": 15208
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   },
   {
    "action": {
@@ -206,6 +207,46 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "and": {
+      "vals": [
+       {
+        "cmp": {
+         "op": "OpEq",
+         "lhs": {
+          "numberTargets": {}
+         },
+         "rhs": {
+          "const": {
+           "val": "1"
+          }
+         }
+        }
+       },
+       {
+        "not": {
+         "val": {
+          "dotIsActive": {
+           "spellId": {
+            "spellId": 10438
+           }
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 10438
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see enhancement-dps-rotation-search.json)"
   }
  ]
 }

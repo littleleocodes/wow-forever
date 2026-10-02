@@ -443,6 +443,63 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   best popular build; bar: our best build of the spec in any entry, 2%); with the chain moves it finds the Arms gap from our own build
   (+13.7%) and nothing else over 2% (records `raidsim/fullraid-search.json`). The dummy searches were re-run with the chain moves
   (`derive_raid.py --fresh`): no change.
+- **Systematic search: machine learning, every spell, gear tiers** (2026-10-01, user request: "approach these classes and specs in a
+  more systematic machine learning method ... to find the absolute most optimal", "DPS ranking for Pre-bis as well as best in slot
+  armor, similar to WoWSims", "make sure the system is allowed to use all spells"). It applies the lessons of the earlier searches
+  (local-search valleys, dummy-only valuation, talents and rotation tuned apart, a search pool that limits what can be found, setup
+  bugs) to every raid damage spec. `raidsim/ml_pipeline.py` runs, per spec (`targets`: every spec x raid-entry pair of our raced
+  builds; hybrids search any split under their `spec` field; `EXCLUDE` keeps the Seal of Fury and Shockadin showcase entries out):
+  1. `gear`: the spec's phase-1 BiS set for its current best build (`raidsim/gear_tiers.py`, below);
+  2. `spells`: `raidsim/spell_probe.py` gives every ability a talent grants a fair trial in the entry's rotation: the spec's build,
+     else a one-move neighbour, else random legal builds of the spec holding the talent (`Space.room_for_protected` makes room for
+     deep talents); lines plain / dot-guarded / aura-guarded / at 5 combo points, at the top, the middle, before the filler and the
+     end; kept when it gains 0.2% against the same build not casting it, confirmed on seed 2 (written as a rotation-search pass,
+     record `raidsim/ml/spell-probe.json`). Baseline spells are the rotation search's job (its pool already offers every combat spell);
+     cooldowns the simulator auto-casts measure ~0 here. `apl_opt.COMBAT_ALLOW` lets Summon Hawk through the non-combat filter;
+  3. `talents`: `raidsim/ml_talents.py`: a random-forest surrogate (sklearn; mean and spread over the trees, UCB acquisition) trained
+     on every simulated build guides a genetic search over the legal builds of the spec (mutation by 1/2/3/5-point and
+     prerequisite-chain moves, per-tree crossover with repair, `Space` = caps, 5-per-tier gating, prerequisites, 51 points, the
+     protected talents the entry's rotation conditions on); entries screened first when a spec has several; two independent runs
+     (one in the final searches);
+     finalists raced by successive halving on fresh seeds (10k, 30k, 100k fights); the winner checked against every one-move and
+     chain-move neighbour (a neighbour 0.1% ahead on 3,000 fights is raced on 30,000 and, if it holds, becomes the winner; up to 6
+     steps). Two runs agree when both reach the top within 0.3% on the race's first stage;
+  4. `rotations`: `apl_opt.py --tune <file>` re-tunes each entry's rotations (both settings) on the winners in their BiS sets, on top
+     of the entry's main builds, which stay protected (no change may cost any of them 0.1%); the pipeline then reloads specs.json in
+     every loaded copy of run.py (`reload_specs`: a first tuned rotation adds a key the running process would not know);
+  5. `final`: the BiS set again for the winner, then the talent search in BiS gear on the dummy and in a full raid, the pre-BiS set
+     and both searches in it, and a comparison race (winner, the spec's two best hand drafts and its current best; 100,000 fights,
+     one seed, BiS set).
+  Records `raidsim/ml/<class>-<spec slug>.json` (resumable step by step; `--fresh` redoes). Locally (12 threads) the 26 specs took
+     about 15 hours: spells 0.5 h, talents 1.3 h, rotations 7.7 h, final 4 h.
+  `raidsim/ml_builds.py --builds` turns them into builds: the BiS dummy winner becomes `<spec page slug>-ml-raid` (🔬 derived) only
+  when it is 0.5%+ ahead of every build of the comparison race (else the record says the search confirms the current pick), with
+  `replaces` at 2%+ over the best hand draft (the pages enforce the bar on race numbers); its free points first follow the hand draft (`align`: a winner picks arbitrarily among talents that do nothing on the
+  dummy, Burning Soul and Magic Absorption measure exactly alike with common random numbers; one point per step while within 0.03%);
+  it supersedes derive_raid.py's build of the spec (removed; `superseded` in derived-raid.json). The full-raid winner becomes
+  `<slug>-ml-parse` when it beats the dummy winner by 2%+ in a full raid and the spec's existing parse builds by 0.5%+. After writing
+  builds, re-race: `rebuild.py --steps raid,adopt` covers the scorer-model entries only, so race the rotation-only entries with
+  `run.py <class> --spec <entry> --write` and `--env environments --write`, then `rebuild.py --steps regen`. `--rank` writes `_reference/dps-rankings.md` (every spec,
+  pre-BiS and BiS, dummy and full raid, talent links, the gear) and the research raid READMEs' "## DPS by gear tier"; the player raid
+  pages and indexes show the tier numbers (`render_modes.tier_lines`, `tier_table`). Search winners are the simulator's answer for
+  that gear and rotation, not proof against in-game play.
+  **Gear tiers** (`raidsim/gear_tiers.py`): **bis** = gear_opt.py's phase-1 pool (dungeons, Molten Core, Onyxia, world, crafted,
+  quest; sourceless items only from community phase-0/1, launch or pre-raid presets, item level 70 at most except `PHASE1_QUEST`:
+  Rhok'delar and Lok'delar); **prebis** = no raid drop, no raid-boss quest reward (`RAID_QUEST`), no crafted item made from Molten
+  Core or Onyxia materials (`PHASE1_RAID_MADE`), sourceless items only from launch or pre-raid presets. Both exclude later raids'
+  crafts (`gear_opt.LATER_PREFIXES`: Bloodvine, Primal Batskin, the Cenarion and Naxxramas sets), the Scourge Invasion bosses' drops
+  (`gear_opt.EVENT_NPCS`: no community preset uses them; the Staff of Balzaphon had entered a pre-BiS set) and crafted items of item
+  level 65+ that no tier preset uses. Each spec gets its own set per tier: the simulator's stat weights for its best build, the best item per
+  slot (every slot, or keeping set pieces and items with effects), weights refreshed once, trinket pairs from the class's presets
+  raced, the variants raced on seed 1 and confirmed on seed 2; in the BiS tier the spec's specs.json set competes when every item is
+  in the pool, and the best-measured set wins (no 0.5% margin: with it, an item-level-33 mace stayed in the Shadow priest's set).
+  Sets `raidsim/gear_sets/forever/tiers/<class>-<spec slug>-<tier>.gear.json`; passed per build (`gear_json`), so specs.json keeps its
+  standard sets. Fixed the same day in `gear_opt.py`: a current item outside the pool kept its slot and every current set piece
+  stayed, so the standard hunter and Retribution sets carried Zul'Gurub's Bloodvine and Enhancement Sulfuras (re-geared).
+  **Bench fix** (same day): `apl_opt.bench` sent the dummy rotation in raid-setting calls (`R.apl_path(entry, repo)` without the
+  setting), so `talent_opt.py --setting raid`, `fullraid_search.py` and `setting_audit.py`'s raid half ran full-raid builds on the
+  dummy rotation before 2026-10-01; the ML pipeline's full-raid searches use the raid rotation. `_reference/data/filelock.py` locks the
+  shared records on Windows (msvcrt) and POSIX (fcntl).
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

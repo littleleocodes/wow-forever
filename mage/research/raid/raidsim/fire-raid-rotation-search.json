@@ -2,7 +2,7 @@
  "dummy": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,12 +10,17 @@
   "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
   "builds": [
    {
-    "label": "fire-raid",
-    "talents": "250025-23550000130133051-005"
+    "label": "ml: Fire",
+    "talents": "050005002-23550000130133051-01501",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json"
    },
    {
-    "label": "sim preset: Fire 0/35/16",
-    "talents": "-03552020130133151-005500033"
+    "label": "fire-raid",
+    "talents": "005205-23550020130133051-005"
+   },
+   {
+    "label": "sim preset: Fire DPS",
+    "talents": "0502252000003-23550000130133051-"
    }
   ],
   "iterations": 3000,
@@ -23,7 +28,7 @@
   "changes": [
    {
     "round": 1,
-    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
     "gain_seed1": 0.034320338780310156,
     "gain_seed2": 0.0305169267447718,
     "candidates": 218,
@@ -31,7 +36,7 @@
    },
    {
     "round": 2,
-    "change": "drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast",
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
     "gain_seed1": 0.030151486184799126,
     "gain_seed2": 0.031231982100876632,
     "candidates": 218,
@@ -52,37 +57,70 @@
     "gain_seed2": 0.004621764380807747,
     "candidates": 242,
     "pass": 2
+   },
+   {
+    "round": 5,
+    "change": "insert before the filler: cast Fireball",
+    "gain_seed1": 0.0035013735856745942,
+    "gain_seed2": 0.00293184055164164,
+    "candidates": 343,
+    "pass": 4
+   },
+   {
+    "round": 6,
+    "change": "threshold 5s -> 6s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
+    "gain_seed1": 0.0022775252580160554,
+    "gain_seed2": 0.003056905250062414,
+    "candidates": 354,
+    "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "only with 3s or more of the fight left: cast Fireball",
+    "gain_seed1": 0.0016603388744858005,
+    "gain_seed2": 0.0016462350881711885,
+    "candidates": 358,
+    "pass": 4
    }
   ],
   "final": {
    "dummy": {
-    "fire-raid": {
-     "before": 494.9125501774345,
-     "after": 533.8537766560491,
-     "base": 494.9125501774345,
+    "ml: Fire": {
+     "before": 567.953651060596,
+     "after": 606.9738186816326,
+     "base": 567.953651060596,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.6885887999954463,
-     "oom_after": 0.6885887999954463
+     "oom_before": 1.3349743999920984,
+     "oom_after": 1.7838921499913998
     },
-    "sim preset: Fire 0/35/16": {
-     "before": 481.36372396994483,
-     "after": 519.6505219560045,
-     "base": 481.36372396994483,
+    "fire-raid": {
+     "before": 562.5760749752769,
+     "after": 598.2517774522972,
+     "base": 562.5760749752769,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.007986249999999997,
-     "oom_after": 0.007986249999999997
+     "oom_before": 1.846606299993399,
+     "oom_after": 2.408139099993702
+    },
+    "sim preset: Fire DPS": {
+     "before": 536.5878479171225,
+     "after": 577.6213388298232,
+     "base": 536.5878479171225,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.3639968999990001,
+     "oom_after": 0.4926947999987507
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "mage",
   "spec": "fire-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-02",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -90,12 +128,17 @@
   "start": "ui\\specs\\mage\\dps\\apls\\fire.apl.json",
   "builds": [
    {
-    "label": "fire-raid",
-    "talents": "250025-23550000130133051-005"
+    "label": "ml: Fire",
+    "talents": "050005002-23550000130133051-01501",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json"
    },
    {
-    "label": "sim preset: Fire 0/35/16",
-    "talents": "-03552020130133151-005500033"
+    "label": "fire-raid",
+    "talents": "005205-23550020130133051-005"
+   },
+   {
+    "label": "sim preset: Fire DPS",
+    "talents": "0502252000003-23550000130133051-"
    }
   ],
   "iterations": 3000,
@@ -103,7 +146,7 @@
   "changes": [
    {
     "round": 1,
-    "change": "drop the condition: if mana ≥ (time left in the fight × 110): cast Fire Blast",
+    "change": "drop the condition: if mana \u2265 (time left in the fight \u00d7 110): cast Fire Blast",
     "gain_seed1": 0.03827614461840345,
     "gain_seed2": 0.037360124739891365,
     "candidates": 218,
@@ -111,7 +154,7 @@
    },
    {
     "round": 2,
-    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
+    "change": "move to the top: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
     "gain_seed1": 0.02606291829981533,
     "gain_seed2": 0.024678490932543262,
     "candidates": 212,
@@ -127,7 +170,7 @@
    },
    {
     "round": 4,
-    "change": "only with 3s or more of the fight left: if mana % ≥ 10%: cast Fireball",
+    "change": "only with 3s or more of the fight left: if mana % \u2265 10%: cast Fireball",
     "gain_seed1": 0.0018996283310339646,
     "gain_seed2": 0.0018078211194869631,
     "candidates": 195,
@@ -143,7 +186,7 @@
    },
    {
     "round": 6,
-    "change": "threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch",
+    "change": "threshold 5s -> 7.5s: if (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability \u2264 5s): cast Scorch",
     "gain_seed1": 0.00427671761768722,
     "gain_seed2": 0.0043896998297348055,
     "candidates": 209,
@@ -164,32 +207,48 @@
     "gain_seed2": 0.0025322809894774423,
     "candidates": 108,
     "pass": 3
+   },
+   {
+    "round": 9,
+    "change": "insert before the filler: cast Fireball",
+    "gain_seed1": 0.003000727250097812,
+    "gain_seed2": 0.002908240139218643,
+    "candidates": 314,
+    "pass": 4
    }
   ],
   "final": {
    "raid": {
-    "fire-raid": {
-     "before": 619.4162422787845,
-     "after": 664.5904035513712,
-     "base": 619.4162422787845,
+    "ml: Fire": {
+     "before": 697.101160483984,
+     "after": 754.1942637543483,
+     "base": 697.101160483984,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0.0001091
+     "oom_before": 0.2551333999846999,
+     "oom_after": 0.33440529997795015
     },
-    "sim preset: Fire 0/35/16": {
-     "before": 608.4132814204198,
-     "after": 653.2360461745377,
-     "base": 608.4132814204198,
+    "fire-raid": {
+     "before": 688.4274077887162,
+     "after": 746.4716474624136,
+     "base": 688.4274077887162,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
+     "oom_before": 0.4525417499783504,
+     "oom_after": 0.5739033499746009
+    },
+    "sim preset: Fire DPS": {
+     "before": 658.677599698066,
+     "after": 712.6432611869709,
+     "base": 658.677599698066,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0105333999994,
+     "oom_after": 0.012219349999199998
     }
    }
   },
   "first_date": "2026-09-27",
-  "passes": 3,
-  "note_2026_09_29": "The spellbook sweep kept Blast Wave (+0.33%) and Cone of Cold (+0.26%) in the raid rotation; both reach 10 yards and the entry stands the mage 20 yards away, so the simulator's missing range check made them artifacts: removed by hand the same night."
+  "passes": 4
  }
 }

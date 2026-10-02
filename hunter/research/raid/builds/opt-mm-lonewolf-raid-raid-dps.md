@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +79.7% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonewolf-raid` and profile `raid-dps`: score +77.8% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -45,41 +45,48 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-lonew
 
 ## Core talents (priority order)
 
-1. **Lone Wolf** — Removing it costs 29.7 points of score in this model.
-2. **Efficiency** — Removing it costs 14.0 points of score in this model.
-3. **Lethal Attacks** — Removing it costs 9.5 points of score in this model.
-4. **Mortal Shots** — Removing it costs 9.4 points of score in this model.
-5. **Deadly Aspects** — Removing it costs 8.8 points of score in this model.
-6. **Careful Aim** — Removing it costs 7.7 points of score in this model.
+1. **Lone Wolf** — Removing it costs 29.6 points of score in this model.
+2. **Efficiency** — Removing it costs 11.9 points of score in this model.
+3. **Lethal Attacks** — Removing it costs 9.4 points of score in this model.
+4. **Mortal Shots** — Removing it costs 9.3 points of score in this model.
+5. **Deadly Aspects** — Removing it costs 9.0 points of score in this model.
+6. **Careful Aim** — Removing it costs 7.6 points of score in this model.
 7. **Ranged Weapon Specialization** — Removing it costs 6.5 points of score in this model.
-8. **Improved Stings** — Removing it costs 5.2 points of score in this model.
+8. **Improved Stings** — Removing it costs 5.0 points of score in this model.
 
 ## Rank among our builds and the community simulator's
 
-**1 of 6** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 8** for `mm-lonewolf-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 434 | +0.0% | 817 | +0.0% | 97 s |
-| 2 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 428 | -1.5% | 796 | -2.6% | 82 s |
-| 3 | *Marksmanship* | community simulator | - | 352 | -18.9% | 693 | -15.2% | 97 s |
-| 4 | *Marksmanship 0/39/12* | community simulator | - | 332 | -23.6% | 649 | -20.6% | 90 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 321 | -26.0% | 565 | -30.9% | 69 s |
-| 6 | *Survival 0/15/36* | community simulator | - | 303 | -30.2% | 564 | -30.9% | 83 s |
+| 1 | [`marksmanship-ml-raid`](marksmanship-ml-raid.md) | ours: hand draft | 11/40/0 | 447 | +0.0% | 894 | -4.4% | 100 s |
+| 2 | **[`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md)** | ours: optimizer | 5/38/8 | 446 | -0.3% | 898 | -4.0% | 100 s |
+| 3 | [`marksmanship-ml-parse`](marksmanship-ml-parse.md) | ours: parse build | 7/44/0 | 446 | -0.3% | 935 | +0.0% | 100 s |
+| 4 | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) | ours: hand draft | 11/40/0 | 443 | -1.0% | 834 | -10.8% | 87 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 367 | -18.0% | 625 | -33.2% | 75 s |
+| 6 | *Marksmanship* | community simulator | - | 362 | -19.0% | 748 | -20.0% | 100 s |
+| 7 | *Marksmanship 0/39/12* | community simulator | - | 347 | -22.4% | 697 | -25.5% | 97 s |
+| 8 | *Survival 0/15/36* | community simulator | - | 316 | -29.2% | 590 | -36.9% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 5 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 405 -> 433 DPS (+6.8%), sim preset: Marksmanship 315 -> 353 DPS (+12.3%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 6 changes to the base rotation; third-seed check: ml: Marksmanship 382 -> 455 DPS (+19.1%), opt-mm-lonewolf-raid-raid-dps 384 -> 446 DPS (+16.0%), sim preset: Marksmanship 304 -> 362 DPS (+19.2%)):
   1. drop: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+3.3%, pass 1)
   2. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+2.4%, pass 1)
   3. threshold 1s -> 0.5s: if time to the next auto attack > 1s: cast Aimed Shot (+0.7%, pass 1)
   4. threshold 1s -> 2s: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting (+0.2%, pass 1)
   5. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 3 passes, the last 2026-09-29, 4 changes to the base rotation; third-seed check: opt-mm-lonewolf-raid-raid-dps 683 -> 848 DPS (+24.1%), sim preset: Marksmanship 602 -> 733 DPS (+21.8%)):
+  6. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+5.5%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-27, 5 passes, the last 2026-10-02, 8 changes to the base rotation; third-seed check: ml: Marksmanship 670 -> 878 DPS (+31.1%), opt-mm-lonewolf-raid-raid-dps 683 -> 898 DPS (+31.4%), sim preset: Marksmanship 600 -> 749 DPS (+24.8%)):
   1. drop: if time to the next auto attack > 1s: cast Aimed Shot (+1.7%, pass 1)
   2. drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire (+0.5%, pass 1)
   3. drop 'time to the next auto attack > 1s' from the condition: if time to the next auto attack > 1s and time until Aimed Shot is ready ≥ 1 and time until Multi-Shot is ready ≥ 1: cast Sniper Shot (+0.3%, pass 1)
   4. drop the condition: if time to the next auto attack > 0.5s: cast Multi-Shot (+0.2%, pass 1)
+  5. spell probe: insert at the top: if auraIsInactive: cast Summon Hawk (+2.3%, pass 4)
+  6. insert at the top: if time to the next auto attack > 1s: cast Aimed Shot (+2.7%, pass 5)
+  7. drop the condition: if time to the next auto attack > 1s: cast Aimed Shot (+1.5%, pass 5)
+  8. drop 'mana % ≥ 30%' from the condition: if time left on Serpent Sting < 1s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5 and mana % ≥ 30%: cast Serpent Sting (+0.9%, pass 5)
 
 Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 
@@ -87,19 +94,19 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
 | 2 | if time to the next auto attack < 0.1: cast Rapid Fire | 0.3 |
-| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 4.0 |
-| 4 | cast Arcane Shot | 8.6 |
-| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.3 |
+| 3 | if time to the next auto attack > 0.5s: cast Aimed Shot | 3.9 |
+| 4 | cast Arcane Shot | 8.4 |
+| 5 | if time left on Serpent Sting < 2s and time until Aimed Shot is ready ≥ 0.5 and time until Multi-Shot is ready ≥ 0.5: cast Serpent Sting | 2.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Multi-Shot (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Multi-Shot (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`opt-mm-lonewolf-raid-raid-dps`](opt-mm-lonewolf-raid-raid-dps.md) |
 |---|---|
-| Auto Shot | 49% |
-| Arcane Shot | 25% |
-| Serpent Sting | 16% |
+| Auto Shot | 50% |
+| Arcane Shot | 26% |
+| Serpent Sting | 15% |
 | Aimed Shot | 9% |
 | Multi-Shot | 0% |
 

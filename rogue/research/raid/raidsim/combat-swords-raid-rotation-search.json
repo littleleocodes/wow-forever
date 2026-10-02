@@ -2,18 +2,13 @@
  "dummy": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
-  "builds": [
-   {
-    "label": "combat-swords-raid",
-    "talents": "005303125-32003311201515131"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -56,39 +51,48 @@
     "gain_seed2": 0.008667470042669434,
     "candidates": 288,
     "pass": 2
+   },
+   {
+    "round": 6,
+    "change": "spell probe: insert before the filler: cast Hemorrhage",
+    "gain_seed1": 0.13,
+    "gain_seed2": 0.1313,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 7,
+    "change": "spell probe: insert in the middle: cast Mutilate",
+    "gain_seed1": 0.015,
+    "gain_seed2": 0.0125,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 8,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike",
+    "gain_seed1": 0.0219,
+    "gain_seed2": 0.0217,
+    "candidates": 36,
+    "pass": 4
    }
   ],
   "final": {
-   "dummy": {
-    "combat-swords-raid": {
-     "before": 337.16222616192726,
-     "after": 401.02640730657777,
-     "base": 337.16222616192726,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    }
-   }
+   "dummy": {}
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  },
  "raid": {
   "class": "rogue",
   "spec": "combat-swords-raid",
-  "date": "2026-09-29",
+  "date": "2026-10-01",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
   "simulator_apl": "ui/specs/rogue/dps/apls/combat_sinister_strike.apl.json",
   "start": "ui\\specs\\rogue\\dps\\apls\\combat_sinister_strike.apl.json",
-  "builds": [
-   {
-    "label": "combat-swords-raid",
-    "talents": "005303125-32003311201515131"
-   }
-  ],
+  "builds": [],
   "iterations": 3000,
   "confirm": 20000,
   "changes": [
@@ -99,22 +103,36 @@
     "gain_seed2": 0.005166519939721503,
     "candidates": 206,
     "pass": 1
+   },
+   {
+    "round": 2,
+    "change": "spell probe: insert before the filler: cast Mutilate",
+    "gain_seed1": 0.0082,
+    "gain_seed2": 0.0059,
+    "candidates": 12,
+    "pass": 4
+   },
+   {
+    "round": 3,
+    "change": "spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike",
+    "gain_seed1": 0.0184,
+    "gain_seed2": 0.0176,
+    "candidates": 36,
+    "pass": 4
+   },
+   {
+    "round": 4,
+    "change": "spell probe: insert at the top: cast Hemorrhage",
+    "gain_seed1": 0.0858,
+    "gain_seed2": 0.0865,
+    "candidates": 12,
+    "pass": 4
    }
   ],
   "final": {
-   "raid": {
-    "combat-swords-raid": {
-     "before": 697.9122186070203,
-     "after": 700.0724500816631,
-     "base": 697.9122186070203,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0,
-     "oom_after": 0
-    }
-   }
+   "raid": {}
   },
   "first_date": "2026-09-28",
-  "passes": 3
+  "passes": 4
  }
 }

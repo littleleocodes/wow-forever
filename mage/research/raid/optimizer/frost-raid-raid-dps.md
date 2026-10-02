@@ -9,18 +9,18 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tree | Tier | Value | Source |
 |---|---|---|---|---|
-| Improved Frostbolt | Frost | 1 | +3.58% | manual |
+| Improved Frostbolt | Frost | 1 | +3.56% | manual |
 | Arcane Power | Arcane | 7 | +2.40% | manual |
-| Piercing Ice | Frost | 3 | +1.62% | manual |
+| Piercing Ice | Frost | 3 | +1.61% | manual |
 | Arcane Instability | Arcane | 6 | +1.47% | manual |
+| Arcane Meditation | Arcane | 4 | +1.17% | manual |
 | Ice Shards | Frost | 2 | +1.13% | manual |
 | Presence of Mind | Arcane | 5 | +1.00% | manual |
 | Elemental Precision | Frost | 1 | +0.96% | manual |
 | Winter's Chill | Frost | 6 | +0.75% | manual |
-| Arcane Meditation | Arcane | 4 | +0.75% | manual |
-| Arcane Mind | Arcane | 5 | +0.52% | manual |
-| Frost Channeling | Frost | 3 | +0.44% | manual |
-| Arcane Concentration | Arcane | 2 | +0.40% | manual |
+| Arcane Mind | Arcane | 5 | +0.53% | manual |
+| Frost Channeling | Frost | 3 | +0.45% | manual |
+| Arcane Concentration | Arcane | 2 | +0.41% | manual |
 | Arcane Focus | Arcane | 1 | +0.23% | manual |
 | Arcane Impact | Arcane | 3 | +0.18% | manual |
 | Master of Elements | Fire | 4 | +0.02% | manual |
@@ -40,7 +40,7 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Arcane Resilience | Arcane | 2 | +0.00% | manual |
 | Frost Warding | Frost | 1 | +0.00% | manual |
 
-## Optimized build: 18/1/32  score +75.70%  (dps x1.756, sustain x1.051, surv x1.000, utility +0.00%)
+## Optimized build: 18/1/32  score +77.45%  (dps x1.774, sustain x1.062, surv x1.000, utility +0.00%)
 
 ```
   Arcane: Arcane Focus 5, Improved Channeling 2, Arcane Concentration 5, Arcane Impact 3, Arcane Meditation 3
@@ -52,10 +52,10 @@ Effect coverage: 2 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Arcane Power | Arcane 7 | 1/1 | +4.23% | no |
-| Arcane Instability | Arcane 6 | 1/3 | +3.01% | no |
-| Presence of Mind | Arcane 5 | 1/1 | +1.76% | no |
-| Arcane Mind | Arcane 5 | 1/5 | +0.85% | no |
+| Arcane Power | Arcane 7 | 1/1 | +4.27% | no |
+| Arcane Instability | Arcane 6 | 1/3 | +3.04% | no |
+| Presence of Mind | Arcane 5 | 1/1 | +1.77% | no |
+| Arcane Mind | Arcane 5 | 1/5 | +0.88% | no |
 | Incineration | Fire 1 | 2/3 | +0.59% | yes |
 | Master of Elements | Fire 4 | 1/3 | +0.04% | no |
 | Ice Barrier | Frost 7 | 1/1 | +0.01% | no |

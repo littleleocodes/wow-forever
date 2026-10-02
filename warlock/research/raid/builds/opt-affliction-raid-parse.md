@@ -11,7 +11,7 @@
 
 ## Summary
 
-Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +61.9% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
+Produced by the stats model (`_reference/data/scorer/`) for spec model `affliction-raid` and profile `parse`: score +62.0% (DPS gain vs. no talents). Every number behind it is in the effect files (tooltip-parsed or hand-entered with its arithmetic); change those, not this build.
 
 ## Point allocation
 
@@ -45,7 +45,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 ## Core talents (priority order)
 
-1. **Bane** — Removing it costs 14.2 points of score in this model.
+1. **Bane** — Removing it costs 14.3 points of score in this model.
 2. **Agonizing Flames** — Removing it costs 9.4 points of score in this model.
 3. **Improved Shadow Bolt** — Removing it costs 8.0 points of score in this model.
 4. **Suppression** — Removing it costs 7.0 points of score in this model.

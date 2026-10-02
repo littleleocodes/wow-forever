@@ -14,3 +14,4 @@ current summary.
 | [wow-forever-raidsim.md](wow-forever-raidsim.md) | The raid simulator setup, the training-dummy ranking, the mana limit, the potion fix |
 | [wow-forever-scenario-weights.md](wow-forever-scenario-weights.md) | Scenario and playstyle weights, calibration fixes, open items |
 | [wow-forever-rotations.md](wow-forever-rotations.md) | The rotation searches, the talent search and the new-builds survey |
+| [wow-forever-ml-pipeline.md](wow-forever-ml-pipeline.md) | The machine-learning raid search, the pre-BiS/BiS gear tiers and rankings, the bugs found on the way (2026-10-01/02) |

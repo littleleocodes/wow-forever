@@ -81,7 +81,7 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 7 changes to the base rotation; third-seed check: assassination-seal-fate-raid 148 -> 413 DPS (+179.2%), sim preset: Mutilate 335 -> 377 DPS (+12.4%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 9 changes to the base rotation; third-seed check: ml: Assassination 152 -> 411 DPS (+169.5%), assassination-seal-fate-raid 148 -> 407 DPS (+173.9%), sim preset: Mutilate 329 -> 371 DPS (+12.7%)):
   1. insert at the top: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+8.6%, pass 1)
   2. threshold 5 -> 3.75: if time left on Expose Armor < 3 and combo points ≥ 5 and time left in the fight ≥ 3: cast Expose Armor (+0.8%, pass 1)
   3. insert at the top: cast Backstab (+1.6%, pass 1)
@@ -89,8 +89,12 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
   5. threshold 6 -> 12: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.2%, pass 1)
   6. threshold 4 -> 5: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood + drop 'combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9' from the condition: if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 12 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9): cast Slice and Dice (+0.3%, pass 1)
   7. insert at the top: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea + threshold 29 -> 43.5: if energy ≤ 29 and timeToNextEnergyTick > 1 and combo points < 5 and not Adrenaline Rush is up: cast Thistle Tea (+0.3%, pass 3)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 1 changes to the base rotation; third-seed check: assassination-seal-fate-raid 294 -> 693 DPS (+135.8%), sim preset: Mutilate 652 -> 659 DPS (+1.1%)):
+  8. spell probe: insert at the end: cast Hemorrhage (+8.4%, pass 5)
+  9. spell probe: insert at the top: if auraIsInactive: cast Ghostly Strike (+2.0%, pass 5)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 6 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ml: Assassination 311 -> 697 DPS (+124.0%), assassination-seal-fate-raid 294 -> 682 DPS (+132.0%), sim preset: Mutilate 642 -> 648 DPS (+1.0%)):
   1. insert before the filler: cast Backstab (+0.8%, pass 1)
+  2. spell probe: insert at the end: cast Hemorrhage (+9.9%, pass 5)
+  3. spell probe: insert in the middle: if auraIsInactive: cast Ghostly Strike (+1.8%, pass 5)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) casts/min |
 |---|---|---|
@@ -102,7 +106,7 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
 | 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Mutilate (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 

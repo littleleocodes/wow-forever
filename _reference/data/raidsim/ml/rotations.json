@@ -1,0 +1,310 @@
+{
+ "druid/balance-dps": {
+  "rc": 0,
+  "minutes": 4.7,
+  "date": "2026-10-01",
+  "tail": [
+   "== druid balance-dps: 5 actions from default.apl.json, 62 pool actions (2 cooldowns, 23 spellbook spells), builds ml: Balance, sim preset: Balance (raid)",
+   "  round 1: move down below 'keep Insect Swarm on up to 1 targets (refresh under 0ms)': keep Moonfire on up to 1 targets (refresh under 0ms)  (+0.47% seed 1, +0.33% seed 2; 295 candidates)",
+   "  round 2: 295 candidates, none ahead on seed 1 (best +0.03%: only with 10s or more of the fight left: keep Insect Swarm on up to 1 targets (refresh under 0ms))",
+   "  raid   ml: Balance                                     609.2 ->    613.6 DPS (+0.73%)",
+   "  raid   sim preset: Balance                             547.5 ->    548.0 DPS (+0.09%)",
+   "  wrote _reference\\data\\raidsim\\apls\\druid\\balance-dps-raid.apl.json and druid\\research\\raid\\raidsim\\balance-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "druid/feral-cat-dps": {
+  "rc": 0,
+  "minutes": 12.5,
+  "date": "2026-10-01",
+  "tail": [
+   "== druid feral-cat-dps: 14 actions from feral-cat-dps-raid.apl.json, 62 pool actions (2 cooldowns, 23 spellbook spells), builds ml: Feral Combat, sim preset: Feral Cat 9/35/7 (raid)",
+   "  round 1: drop: if Furor is known and mana \u2265 current cost and the global cooldown is ready and (combo points < 5.0 and (energy + 20.2) < current cost or combo p  (+0.25% seed 1, +0.18% seed 2; 480 candidates)",
+   "  round 2: 448 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.08%)",
+   "  raid   ml: Feral Combat                                574.7 ->    575.8 DPS (+0.19%)",
+   "  raid   sim preset: Feral Cat 9/35/7                    574.7 ->    575.8 DPS (+0.19%)",
+   "  wrote _reference\\data\\raidsim\\apls\\druid\\feral-cat-dps-raid.apl.json and druid\\research\\raid\\raidsim\\feral-cat-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "hunter/bm-raid": {
+  "rc": 0,
+  "minutes": 45.5,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 5: 310 candidates, none ahead on seed 1 (best +0.06%: drop 'time until Aimed Shot is ready < 0.5' from the condition: if time to the next auto attack < 0.1 and time)",
+   "  raid   ml: Beast Mastery                               775.3 ->    786.5 DPS (+1.45%)",
+   "  raid   ml: Hybrid Beast Mastery/Marksmanship           795.9 ->    807.5 DPS (+1.46%)",
+   "  raid   beast-mastery-raid                              781.4 ->    792.8 DPS (+1.46%)",
+   "  raid   sim preset: Beast Mastery 35/16/0               751.8 ->    762.8 DPS (+1.46%)",
+   "  wrote _reference\\data\\raidsim\\apls\\hunter\\bm-raid-raid.apl.json and hunter\\research\\raid\\raidsim\\bm-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "hunter/melee-dps": {
+  "rc": 0,
+  "minutes": 3.2,
+  "date": "2026-10-01",
+  "tail": [
+   "  dummy  ml: Survival                                    444.3 ->    449.4 DPS (+1.15%)",
+   "  wrote _reference\\data\\raidsim\\apls\\hunter\\melee-dps.apl.json and hunter\\research\\raid\\raidsim\\melee-dps-rotation-search.json",
+   "== hunter melee-dps: 10 actions from melee-dps-raid.apl.json, 36 pool actions (2 cooldowns, 26 spellbook spells), builds ml: Survival (raid)",
+   "  round 1: 270 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.12%)",
+   "  raid   ml: Survival                                    968.3 ->    968.3 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\hunter\\melee-dps-raid.apl.json and hunter\\research\\raid\\raidsim\\melee-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "hunter/mm-lonewolf-raid": {
+  "rc": 0,
+  "minutes": 16.7,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 4: no single edit ahead; 1136 two-edit candidates, 5 ahead on seed 1",
+   "  round 4: 361 candidates, 5 ahead on seed 1, none confirmed on seed 2 (best +0.05%)",
+   "  raid   ml: Marksmanship                                817.8 ->    878.4 DPS (+7.41%)",
+   "  raid   opt-mm-lonewolf-raid-raid-dps                   859.4 ->    897.8 DPS (+4.47%)",
+   "  raid   sim preset: Marksmanship                        721.7 ->    748.7 DPS (+3.75%)",
+   "  wrote _reference\\data\\raidsim\\apls\\hunter\\mm-lonewolf-raid-raid.apl.json and hunter\\research\\raid\\raidsim\\mm-lonewolf-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "mage/arcane-dps": {
+  "rc": 0,
+  "minutes": 4.5,
+  "date": "2026-10-01",
+  "tail": [
+   "== mage arcane-dps: 6 actions from arcane-dps-raid.apl.json, 45 pool actions (8 cooldowns, 21 spellbook spells), builds ml: Arcane, arcane-blast-raid, sim preset: Arcane DPS (raid)",
+   "  round 1: 289 candidates, 4 ahead on seed 1, none confirmed on seed 2 (best +0.01%)",
+   "  raid   ml: Arcane                                      690.7 ->    690.7 DPS (+0.00%)",
+   "  raid   arcane-blast-raid                               690.8 ->    690.8 DPS (+0.00%)",
+   "  raid   sim preset: Arcane DPS                          681.0 ->    681.0 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\mage\\arcane-dps-raid.apl.json and mage\\research\\raid\\raidsim\\arcane-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "mage/fire-raid": {
+  "rc": 0,
+  "minutes": 12.7,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: insert before the filler: cast Fireball  (+0.30% seed 1, +0.29% seed 2; 314 candidates)",
+   "  round 2: 325 candidates, 5 ahead on seed 1, none confirmed on seed 2 (best +0.10%)",
+   "  raid   ml: Fire                                        751.7 ->    754.2 DPS (+0.33%)",
+   "  raid   fire-raid                                       742.9 ->    746.5 DPS (+0.47%)",
+   "  raid   sim preset: Fire DPS                            712.4 ->    712.6 DPS (+0.03%)",
+   "  wrote _reference\\data\\raidsim\\apls\\mage\\fire-raid-raid.apl.json and mage\\research\\raid\\raidsim\\fire-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "mage/frost-raid": {
+  "rc": 0,
+  "minutes": 21.6,
+  "date": "2026-10-01",
+  "tail": [
+   "  raid   ml: Frost                                       731.2 ->    737.3 DPS (+0.83%)",
+   "  raid   ml: Hybrid Arcane/Frost                         728.1 ->    735.5 DPS (+1.01%)",
+   "  raid   frost-fingers-of-frost-raid                     727.6 ->    734.6 DPS (+0.95%)",
+   "  raid   sim preset: Frost DPS                           686.7 ->    691.1 DPS (+0.64%)",
+   "  raid   frost-arcane-power-raid                         689.4 ->    693.2 DPS (+0.56%)",
+   "  wrote _reference\\data\\raidsim\\apls\\mage\\frost-raid-raid.apl.json and mage\\research\\raid\\raidsim\\frost-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "mage/frostfire-raid": {
+  "rc": 0,
+  "minutes": 16.3,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 6: threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast  (+0.48% seed 1, +0.28% seed 2; 352 candidates)",
+   "  round 7: insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast  (+0.56% seed 1, +0.62% seed 2; 353 candidates)",
+   "  round 8: 381 candidates, 2 ahead on seed 1, none confirmed on seed 2 (best +0.10%)",
+   "  raid   ml: Hybrid Fire/Frost                           667.9 ->    726.9 DPS (+8.84%)",
+   "  raid   frostfire-raid                                  663.4 ->    723.5 DPS (+9.05%)",
+   "  wrote _reference\\data\\raidsim\\apls\\mage\\frostfire-raid-raid.apl.json and mage\\research\\raid\\raidsim\\frostfire-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "paladin/ret-dps": {
+  "rc": 0,
+  "minutes": 32.1,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 2: insert in the middle: cast Demonic Rune  (+0.12% seed 1, +0.21% seed 2; 348 candidates)",
+   "  round 3: 355 candidates, 3 ahead on seed 1, none confirmed on seed 2 (best +0.13%)",
+   "  raid   ml: Retribution                                 940.0 ->   1012.5 DPS (+7.72%)",
+   "  raid   opt-ret-dps-raid-dps                            914.2 ->    978.3 DPS (+7.01%)",
+   "  raid   sim preset: P4/P5 Ret                           917.5 ->    981.8 DPS (+7.01%)",
+   "  wrote _reference\\data\\raidsim\\apls\\paladin\\ret-dps-raid.apl.json and paladin\\research\\raid\\raidsim\\ret-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "priest/shadow-dps": {
+  "rc": 0,
+  "minutes": 1.6,
+  "date": "2026-10-01",
+  "tail": [
+   "== priest shadow-dps: 6 actions from shadow-dps-raid.apl.json, 40 pool actions (3 cooldowns, 23 spellbook spells), builds ml: Shadow, opt-shadow-dps-raid-dps, sim preset: Shadow (raid)",
+   "  round 1: 231 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.14%)",
+   "  raid   ml: Shadow                                      726.3 ->    726.3 DPS (+0.00%)",
+   "  raid   opt-shadow-dps-raid-dps                         724.6 ->    724.6 DPS (+0.00%)",
+   "  raid   sim preset: Shadow                              709.2 ->    709.2 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\priest\\shadow-dps-raid.apl.json and priest\\research\\raid\\raidsim\\shadow-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "priest/smite-dps": {
+  "rc": 0,
+  "minutes": 11.9,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 2: move down below 'if not Shadow Word: Pain is on the target and time left in the fight \u2265 10: cast Shadow Word: Pain': strict sequence: cast Inner Focus  (+0.17% seed 1, +0.15% seed 2; 418 candidates)",
+   "  round 3: 418 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.12%)",
+   "  raid   ml: Hybrid Discipline/Holy                      631.1 ->    639.3 DPS (+1.29%)",
+   "  raid   smite-discipline-raid                           598.7 ->    601.4 DPS (+0.45%)",
+   "  raid   sim preset: Smite                               592.8 ->    596.6 DPS (+0.64%)",
+   "  wrote _reference\\data\\raidsim\\apls\\priest\\smite-dps-raid.apl.json and priest\\research\\raid\\raidsim\\smite-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "rogue/assassination-raid": {
+  "rc": 0,
+  "minutes": 15.1,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: no single edit ahead; 984 two-edit candidates, 6 ahead on seed 1",
+   "  round 1: 320 candidates, 6 ahead on seed 1, none confirmed on seed 2 (best +0.11%)",
+   "  raid   ml: Assassination                               696.6 ->    696.6 DPS (+0.00%)",
+   "  raid   assassination-seal-fate-raid                    682.5 ->    682.5 DPS (+0.00%)",
+   "  raid   sim preset: Mutilate                            647.9 ->    647.9 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\rogue\\assassination-raid-raid.apl.json and rogue\\research\\raid\\raidsim\\assassination-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "rogue/combat-daggers-raid": {
+  "rc": 0,
+  "minutes": 11.1,
+  "date": "2026-10-01",
+  "tail": [
+   "  wrote _reference\\data\\raidsim\\apls\\rogue\\combat-daggers-raid.apl.json and rogue\\research\\raid\\raidsim\\combat-daggers-raid-rotation-search.json",
+   "== rogue combat-daggers-raid: 8 actions from combat-daggers-raid-raid.apl.json, 43 pool actions (2 cooldowns, 20 spellbook spells), builds ml: Combat, sim preset: Combat Dual-Wield 15/33/3 (raid)",
+   "  round 1: 383 candidates, 3 ahead on seed 1, none confirmed on seed 2 (best +0.07%)",
+   "  raid   ml: Combat                                      712.5 ->    712.5 DPS (+0.00%)",
+   "  raid   sim preset: Combat Dual-Wield 15/33/3           702.2 ->    702.2 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\rogue\\combat-daggers-raid-raid.apl.json and rogue\\research\\raid\\raidsim\\combat-daggers-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "rogue/subtlety-raid": {
+  "rc": 0,
+  "minutes": 19.9,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: threshold 1 -> 3: if energy \u2265 60 and combo points \u2264 1 and Slice and Dice is up and time left in the fight > 10: cast Vanish  (+0.26% seed 1, +0.25% seed 2; 443 candidates)",
+   "  round 2: move down below 'cast Cold Blood': if auraIsInactive: cast Ghostly Strike  (+0.19% seed 1, +0.19% seed 2; 449 candidates)",
+   "  round 3: 449 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.05%)",
+   "  raid   ml: Subtlety                                    651.4 ->    657.3 DPS (+0.91%)",
+   "  raid   sim preset: Subtlety Hemo 15/0/36               616.2 ->    616.3 DPS (+0.01%)",
+   "  wrote _reference\\data\\raidsim\\apls\\rogue\\subtlety-raid-raid.apl.json and rogue\\research\\raid\\raidsim\\subtlety-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "shaman/elemental-dps": {
+  "rc": 0,
+  "minutes": 4.8,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: 346 candidates, 3 ahead on seed 1, none confirmed on seed 2 (best +0.13%)",
+   "  raid   ml: Elemental                                   555.5 ->    555.5 DPS (+0.00%)",
+   "  raid   ml: Hybrid Elemental/Enhancement                555.7 ->    555.7 DPS (+0.00%)",
+   "  raid   opt-elemental-dps-raid-dps                      553.8 ->    553.8 DPS (+0.00%)",
+   "  raid   sim preset: Elemental 31/6/14                   548.9 ->    548.9 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\shaman\\elemental-dps-raid.apl.json and shaman\\research\\raid\\raidsim\\elemental-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "shaman/enhancement-dps": {
+  "rc": 0,
+  "minutes": 22.5,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: threshold 3.75 -> 2.812: if stacks of Maelstrom Weapon \u2265 3.75: cast Lightning Bolt  (+0.26% seed 1, +0.32% seed 2; 323 candidates)",
+   "  round 2: 323 candidates, none ahead on seed 1 (best +0.04%: insert in the middle: cast Rage of the Farseer)",
+   "  raid   ml: Enhancement                                 769.1 ->    771.6 DPS (+0.33%)",
+   "  raid   opt-enhancement-dps-raid-dps                    751.8 ->    754.9 DPS (+0.41%)",
+   "  raid   sim preset: Level 60                            753.3 ->    755.8 DPS (+0.33%)",
+   "  wrote _reference\\data\\raidsim\\apls\\shaman\\enhancement-dps-raid.apl.json and shaman\\research\\raid\\raidsim\\enhancement-dps-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warlock/affliction-raid": {
+  "rc": 0,
+  "minutes": 10.7,
+  "date": "2026-10-01",
+  "tail": [
+   "== warlock affliction-raid: 13 actions from affliction-raid-raid.apl.json, 59 pool actions (3 cooldowns, 42 spellbook spells), builds ml: Affliction, opt-affliction-raid-raid-dps, sim preset: Demonic Pact 2/31/18 (raid)",
+   "  round 1: 479 candidates, 5 ahead on seed 1, none confirmed on seed 2 (best +0.15%)",
+   "  raid   ml: Affliction                                  770.2 ->    770.2 DPS (+0.00%)",
+   "  raid   opt-affliction-raid-raid-dps                    768.1 ->    768.1 DPS (+0.00%)",
+   "  raid   sim preset: Demonic Pact 2/31/18                713.6 ->    713.6 DPS (+0.00%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warlock\\affliction-raid-raid.apl.json and warlock\\research\\raid\\raidsim\\affliction-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warlock/demonology-raid": {
+  "rc": 0,
+  "minutes": 49.7,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 4: no single edit ahead; 1356 two-edit candidates, 6 ahead on seed 1",
+   "  round 4: 459 candidates, 6 ahead on seed 1, none confirmed on seed 2 (best +0.11%)",
+   "  raid   ml: Demonology                                  827.2 ->    832.1 DPS (+0.59%)",
+   "  raid   demonology-pact-raid                            823.7 ->    831.4 DPS (+0.94%)",
+   "  raid   sim preset: Demonic Pact 2/31/18                795.2 ->    801.5 DPS (+0.79%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warlock\\demonology-raid-raid.apl.json and warlock\\research\\raid\\raidsim\\demonology-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warlock/sb-raid": {
+  "rc": 0,
+  "minutes": 7.8,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 2: 495 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.03%)",
+   "  raid   ml: Destruction                                 732.3 ->    736.4 DPS (+0.56%)",
+   "  raid   ml: Hybrid Affliction/Destruction               762.7 ->    763.5 DPS (+0.10%)",
+   "  raid   opt-sb-raid-raid-dps                            760.1 ->    760.4 DPS (+0.03%)",
+   "  raid   sim preset: DS/Ruin Pandemic 24/11/16           720.0 ->    719.8 DPS (-0.02%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warlock\\sb-raid-raid.apl.json and warlock\\research\\raid\\raidsim\\sb-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warrior/arms-battle-raid": {
+  "rc": 0,
+  "minutes": 42.8,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 1: move down below 'if not Rend is on the target: cast Rend': if execute phase (E20): cast Execute  (+0.63% seed 1, +0.60% seed 2; 702 candidates)",
+   "  round 2: drop the condition: if time until Bloodthirst is ready > 1.5s and rage > 40: cast Hamstring  (+0.32% seed 1, +0.39% seed 2; 702 candidates)",
+   "  round 3: 682 candidates, 1 ahead on seed 1, none confirmed on seed 2 (best +0.11%)",
+   "  raid   ml: Arms                                        746.6 ->    755.4 DPS (+1.17%)",
+   "  raid   sim preset: Arms 39/12/0                        771.2 ->    777.4 DPS (+0.80%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warrior\\arms-battle-raid-raid.apl.json and warrior\\research\\raid\\raidsim\\arms-battle-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ },
+ "warrior/fury-dw-raid": {
+  "rc": 0,
+  "minutes": 97.6,
+  "date": "2026-10-01",
+  "tail": [
+   "  round 5: no single edit ahead; 2061 two-edit candidates, 6 ahead on seed 1",
+   "  round 5: 683 candidates, 6 ahead on seed 1, none confirmed on seed 2 (best +0.00%)",
+   "  raid   ml: Fury                                        693.1 ->    720.0 DPS (+3.88%)",
+   "  raid   fury-dw-raid                                    681.9 ->    706.7 DPS (+3.64%)",
+   "  raid   sim preset: DPS                                 661.4 ->    683.0 DPS (+3.26%)",
+   "  wrote _reference\\data\\raidsim\\apls\\warrior\\fury-dw-raid-raid.apl.json and warrior\\research\\raid\\raidsim\\fury-dw-raid-rotation-search.json"
+  ],
+  "stderr": ""
+ }
+}

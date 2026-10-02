@@ -21,6 +21,44 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "spellId": 14266
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 14305
+     }
+    }
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 1293527
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 1293527
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see melee-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 1299447
      }
     }
@@ -53,25 +91,17 @@
    "action": {
     "castSpell": {
      "spellId": {
+      "itemId": 13444
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see melee-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
       "spellId": 1317257
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 14266
-     }
-    }
-   }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 14305
      }
     }
    }

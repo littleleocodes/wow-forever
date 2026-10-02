@@ -1,0 +1,1685 @@
+{
+ "class": "warlock",
+ "spec": "Destruction",
+ "slug": "destruction",
+ "entries": [
+  "incinerate-raid",
+  "fire-destro-raid",
+  "sb-raid"
+ ],
+ "best": "destruction-incinerate-raid",
+ "best_entry": "incinerate-raid",
+ "best_dps": 560.7,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "sb-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "current",
+   "ilvl": 65.8,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Choker of the Fire Lord",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Robe of Volatile Power",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Mana Igniting Cord",
+    "Nemesis Leggings",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Ring of Spell Power",
+    "Talisman of Ephemeral Power",
+    "Briarwood Reed",
+    "Azuresong Mageblade",
+    "Scepter of Interminable Focus",
+    "Bonecreeper Stylus"
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 0.9988208501356278
+   },
+   "confirm_seed2": {
+    "current": 1.0
+   },
+   "weights": {
+    "StatFireDamage": 0.11,
+    "StatIntellect": 0.1749,
+    "StatShadowDamage": 0.4446,
+    "StatSpellCritRating": 0.4394,
+    "StatSpellDamage": 0.5546,
+    "StatSpellHasteRating": 0.3951,
+    "StatSpellHitRating": 0.6574,
+    "StatSpirit": 0.0699
+   },
+   "evaluated_on": [
+    "sb-raid: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "sb-raid",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.5,
+   "trinkets": [
+    "Briarwood Reed",
+    "Royal Seal of Eldre'Thalas"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Nacreous Shell Necklace",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Robe of the Void",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Knowledge of the Timbermaw",
+    "Skyshroud Leggings",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Signet Ring of the Bronze Dragonflight",
+    "Briarwood Reed",
+    "Royal Seal of Eldre'Thalas",
+    "Elemental Attuned Blade",
+    "Scepter of Interminable Focus",
+    "Bonecreeper Stylus"
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatFireDamage": 0.1062,
+    "StatIntellect": 0.2997,
+    "StatShadowDamage": 0.4161,
+    "StatSpellCritRating": 0.4463,
+    "StatSpellDamage": 0.5223,
+    "StatSpellHasteRating": 0.3801,
+    "StatSpellHitRating": 0.5776,
+    "StatSpirit": 0.0893
+   },
+   "evaluated_on": [
+    "sb-raid: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "dummy",
+   "entry": "sb-raid",
+   "date": "2026-10-01",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "incinerate-raid": 568.71,
+    "fire-destro-raid": 597.58,
+    "sb-raid": 615.99
+   },
+   "entries_searched": [
+    "sb-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ]
+     ],
+     "Demonology": [
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       2
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Shadowburn",
+       1
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "9/11/31",
+    "dps": 622.61,
+    "se": 0.102,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/11/31",
+    "dps": 622.61,
+    "se": 0.102,
+    "differs": [
+     [
+      "Demonic Embrace",
+      3
+     ],
+     [
+      "Demonic Embrace",
+      5
+     ],
+     [
+      "Demonic Energies",
+      2
+     ],
+     [
+      "Improved Health Funnel",
+      2
+     ],
+     [
+      "Improved Imp",
+      2
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 2201,
+     "best_screen": 622.99,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 401,
+       "best": 610.23
+      },
+      {
+       "round": 1,
+       "simulated": 601,
+       "best": 615.99,
+       "predicted_top": 604.37
+      },
+      {
+       "round": 2,
+       "simulated": 801,
+       "best": 618.71,
+       "predicted_top": 611.58
+      },
+      {
+       "round": 3,
+       "simulated": 1001,
+       "best": 620.08,
+       "predicted_top": 615.21
+      },
+      {
+       "round": 4,
+       "simulated": 1201,
+       "best": 621.44,
+       "predicted_top": 618.52
+      },
+      {
+       "round": 5,
+       "simulated": 1401,
+       "best": 622.99,
+       "predicted_top": 620.72
+      },
+      {
+       "round": 6,
+       "simulated": 1601,
+       "best": 622.99,
+       "predicted_top": 622.09
+      },
+      {
+       "round": 7,
+       "simulated": 1801,
+       "best": 622.99,
+       "predicted_top": 622.31
+      },
+      {
+       "round": 8,
+       "simulated": 2001,
+       "best": 622.99,
+       "predicted_top": 622.31
+      },
+      {
+       "round": 9,
+       "simulated": 2201,
+       "best": 622.99,
+       "predicted_top": 622.45
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "sb-raid",
+     "run": 2,
+     "simulated": 2600,
+     "best_screen": 622.99,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 400,
+       "best": 609.52
+      },
+      {
+       "round": 1,
+       "simulated": 600,
+       "best": 613.2,
+       "predicted_top": 604.08
+      },
+      {
+       "round": 2,
+       "simulated": 800,
+       "best": 617.35,
+       "predicted_top": 609.58
+      },
+      {
+       "round": 3,
+       "simulated": 1000,
+       "best": 620.08,
+       "predicted_top": 614.77
+      },
+      {
+       "round": 4,
+       "simulated": 1200,
+       "best": 622.33,
+       "predicted_top": 617.23
+      },
+      {
+       "round": 5,
+       "simulated": 1400,
+       "best": 622.33,
+       "predicted_top": 620.13
+      },
+      {
+       "round": 6,
+       "simulated": 1600,
+       "best": 622.33,
+       "predicted_top": 622.17
+      },
+      {
+       "round": 7,
+       "simulated": 1800,
+       "best": 622.99,
+       "predicted_top": 622.28
+      },
+      {
+       "round": 8,
+       "simulated": 2000,
+       "best": 622.99,
+       "predicted_top": 622.33
+      },
+      {
+       "round": 9,
+       "simulated": 2200,
+       "best": 622.99,
+       "predicted_top": 622.33
+      },
+      {
+       "round": 10,
+       "simulated": 2400,
+       "best": 622.99,
+       "predicted_top": 622.8
+      },
+      {
+       "round": 11,
+       "simulated": 2600,
+       "best": 622.99,
+       "predicted_top": 622.99
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34,
+      623.34
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      622.56,
+      622.56,
+      622.56,
+      622.56,
+      622.56
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      622.61,
+      622.61
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 520,
+     "best_gap": 0.0005,
+     "best_move": "1 Improved Shadow Bolt -> Improved Corruption"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.3923
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.1732
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0998
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0892
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0483
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0328
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0305
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0285
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0224
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0143
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0086
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0078
+    }
+   ],
+   "simulated_builds": 7715,
+   "simulated_fights": 9208000,
+   "minutes": 4.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "dummy",
+   "entry": "sb-raid",
+   "date": "2026-10-02",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "incinerate-raid": 567.19,
+    "fire-destro-raid": 613.09,
+    "sb-raid": 629.59
+   },
+   "entries_searched": [
+    "sb-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       3
+      ]
+     ],
+     "Demonology": [
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       2
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       2
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Shadowburn",
+       1
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "10/11/30",
+    "dps": 627.7,
+    "se": 0.105,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "10/11/30",
+    "dps": 627.7,
+    "se": 0.105,
+    "differs": [
+     [
+      "Demonic Energies",
+      1
+     ],
+     [
+      "Demonic Energies",
+      2
+     ],
+     [
+      "Improved Voidwalker",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1198,
+     "best_screen": 629.62,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 398,
+       "best": 629.59
+      },
+      {
+       "round": 1,
+       "simulated": 598,
+       "best": 629.62,
+       "predicted_top": 626.69
+      },
+      {
+       "round": 2,
+       "simulated": 798,
+       "best": 629.62,
+       "predicted_top": 628.36
+      },
+      {
+       "round": 3,
+       "simulated": 998,
+       "best": 629.62,
+       "predicted_top": 629.4
+      },
+      {
+       "round": 4,
+       "simulated": 1198,
+       "best": 629.62,
+       "predicted_top": 629.59
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      628.01,
+      628.01,
+      628.01,
+      628.01,
+      628.01,
+      628.01
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      627.47,
+      627.47,
+      627.47,
+      627.47,
+      627.47
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      627.7,
+      627.7
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 392,
+     "best_gap": 0.0013,
+     "best_move": "1 Fire and Brimstone -> Cataclysm",
+     "raced": [
+      "1 Fire and Brimstone -> Cataclysm"
+     ],
+     "confirmed_gap": 0.0003
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.4175
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.1768
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.1159
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0673
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0432
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0328
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0306
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0245
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0238
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0084
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0075
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0074
+    }
+   ],
+   "simulated_builds": 3993,
+   "simulated_fights": 5234000,
+   "minutes": 2.3,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "raid",
+   "entry": "sb-raid",
+   "date": "2026-10-02",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "incinerate-raid": 648.17,
+    "fire-destro-raid": 719.31,
+    "sb-raid": 743.84
+   },
+   "entries_searched": [
+    "sb-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ]
+     ],
+     "Demonology": [
+      [
+       "Improved Health Funnel",
+       1
+      ],
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       1
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Shadowburn",
+       1
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "9/11/31",
+    "dps": 744.37,
+    "se": 0.134,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "10/11/30",
+    "dps": 743.0,
+    "se": 0.133,
+    "differs": [
+     [
+      "Improved Corruption",
+      2
+     ],
+     [
+      "Improved Corruption",
+      3
+     ],
+     [
+      "Shadowburn",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0018,
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1208,
+     "best_screen": 744.15,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 408,
+       "best": 743.84
+      },
+      {
+       "round": 1,
+       "simulated": 608,
+       "best": 743.84,
+       "predicted_top": 739.02
+      },
+      {
+       "round": 2,
+       "simulated": 808,
+       "best": 744.15,
+       "predicted_top": 743.1
+      },
+      {
+       "round": 3,
+       "simulated": 1008,
+       "best": 744.15,
+       "predicted_top": 743.87
+      },
+      {
+       "round": 4,
+       "simulated": 1208,
+       "best": 744.15,
+       "predicted_top": 744.12
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      743.63,
+      743.63,
+      743.63,
+      743.63,
+      743.63,
+      743.63
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      743.38,
+      743.38,
+      743.38,
+      743.38,
+      743.38
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      743.0,
+      743.0
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      744.37,
+      743.0
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 398,
+     "best_gap": 0.0043,
+     "best_move": "1 Improved Corruption -> Shadowburn",
+     "raced": [
+      "1 Improved Corruption -> Shadowburn",
+      "1 Improved Corruption -> Malediction",
+      "1 Improved Corruption -> Aftermath",
+      "1 Improved Life Tap -> Shadowburn"
+     ],
+     "confirmed_gap": 0.0022
+    },
+    {
+     "neighbours": 530,
+     "best_gap": 0.0004,
+     "best_move": "1 Improved Life Tap -> Malediction"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.371
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.1968
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0972
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0721
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.071
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.045
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0305
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0228
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0179
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0175
+    },
+    {
+     "feature": "Improved Shadow Bolt",
+     "importance": 0.0085
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0064
+    }
+   ],
+   "simulated_builds": 4157,
+   "simulated_fights": 6757000,
+   "minutes": 3.6,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "dummy",
+   "entry": "sb-raid",
+   "date": "2026-10-02",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "incinerate-raid": 542.64,
+    "fire-destro-raid": 581.39,
+    "sb-raid": 597.58
+   },
+   "entries_searched": [
+    "sb-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ],
+      [
+       "Malediction",
+       1
+      ]
+     ],
+     "Demonology": [
+      [
+       "Improved Imp",
+       1
+      ],
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       1
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "10/11/30",
+    "dps": 597.89,
+    "se": 0.09,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "10/11/30",
+    "dps": 597.89,
+    "se": 0.09,
+    "differs": [
+     [
+      "Demonic Energies",
+      1
+     ],
+     [
+      "Demonic Energies",
+      2
+     ],
+     [
+      "Improved Imp",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1396,
+     "best_screen": 597.6,
+     "best_split": "10/11/30",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 396,
+       "best": 595.85
+      },
+      {
+       "round": 1,
+       "simulated": 596,
+       "best": 596.86,
+       "predicted_top": 590.62
+      },
+      {
+       "round": 2,
+       "simulated": 796,
+       "best": 597.58,
+       "predicted_top": 594.7
+      },
+      {
+       "round": 3,
+       "simulated": 996,
+       "best": 597.6,
+       "predicted_top": 596.95
+      },
+      {
+       "round": 4,
+       "simulated": 1196,
+       "best": 597.6,
+       "predicted_top": 597.48
+      },
+      {
+       "round": 5,
+       "simulated": 1396,
+       "best": 597.6,
+       "predicted_top": 597.57
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      598.38,
+      598.38,
+      598.38,
+      598.38,
+      598.38,
+      598.38
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      597.69,
+      597.69,
+      597.69,
+      597.69,
+      597.69
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      597.89,
+      597.89
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 421,
+     "best_gap": 0.0,
+     "best_move": "1 Demonic Energies -> Improved Voidwalker"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.3867
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.2151
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0822
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0776
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.0466
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.0433
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0377
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0174
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0167
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.015
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0082
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0081
+    }
+   ],
+   "simulated_builds": 3831,
+   "simulated_fights": 5072000,
+   "minutes": 2.2,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "warlock",
+   "spec": "Destruction",
+   "setting": "raid",
+   "entry": "sb-raid",
+   "date": "2026-10-02",
+   "constraint": "Destruction 30+",
+   "protected": [],
+   "entries_screened": {
+    "incinerate-raid": 626.43,
+    "fire-destro-raid": 689.74,
+    "sb-raid": 713.16
+   },
+   "entries_searched": [
+    "sb-raid"
+   ],
+   "winner": {
+    "allocation": {
+     "Affliction": [
+      [
+       "Improved Life Tap",
+       2
+      ],
+      [
+       "Suppression",
+       5
+      ],
+      [
+       "Improved Corruption",
+       2
+      ]
+     ],
+     "Demonology": [
+      [
+       "Improved Health Funnel",
+       1
+      ],
+      [
+       "Demonic Embrace",
+       5
+      ],
+      [
+       "Fel Vitality",
+       3
+      ],
+      [
+       "Demonic Energies",
+       1
+      ],
+      [
+       "Demonic Sacrifice",
+       1
+      ]
+     ],
+     "Destruction": [
+      [
+       "Improved Shadow Bolt",
+       5
+      ],
+      [
+       "Bane",
+       5
+      ],
+      [
+       "Cataclysm",
+       3
+      ],
+      [
+       "Ruin",
+       5
+      ],
+      [
+       "Shadowburn",
+       1
+      ],
+      [
+       "Agonizing Flames",
+       3
+      ],
+      [
+       "Conflagrate",
+       1
+      ],
+      [
+       "Fire and Brimstone",
+       3
+      ],
+      [
+       "Shadow and Flame",
+       5
+      ]
+     ]
+    },
+    "split": "9/11/31",
+    "dps": 711.9,
+    "se": 0.119,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "9/11/31",
+    "dps": 711.9,
+    "se": 0.119,
+    "differs": [
+     [
+      "Demonic Aegis",
+      2
+     ],
+     [
+      "Demonic Energies",
+      1
+     ],
+     [
+      "Improved Health Funnel",
+      1
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "sb-raid",
+     "run": 1,
+     "simulated": 1205,
+     "best_screen": 713.16,
+     "best_split": "9/11/31",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 405,
+       "best": 713.16
+      },
+      {
+       "round": 1,
+       "simulated": 605,
+       "best": 713.16,
+       "predicted_top": 709.59
+      },
+      {
+       "round": 2,
+       "simulated": 805,
+       "best": 713.16,
+       "predicted_top": 712.74
+      },
+      {
+       "round": 3,
+       "simulated": 1005,
+       "best": 713.16,
+       "predicted_top": 713.03
+      },
+      {
+       "round": 4,
+       "simulated": 1205,
+       "best": 713.16,
+       "predicted_top": 713.14
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      711.92,
+      711.92,
+      711.92,
+      711.92,
+      711.92,
+      711.92
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      712.21,
+      712.21,
+      712.21,
+      712.21,
+      712.21
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      711.9,
+      711.9
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 530,
+     "best_gap": 0.0005,
+     "best_move": "1 Improved Life Tap -> Malediction"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Demonic Sacrifice",
+     "importance": 0.4138
+    },
+    {
+     "feature": "Shadow and Flame",
+     "importance": 0.1852
+    },
+    {
+     "feature": "Molten Skin",
+     "importance": 0.0871
+    },
+    {
+     "feature": "Destructive Reach",
+     "importance": 0.0866
+    },
+    {
+     "feature": "Demonology points",
+     "importance": 0.033
+    },
+    {
+     "feature": "Aftermath",
+     "importance": 0.0314
+    },
+    {
+     "feature": "Fel Vitality",
+     "importance": 0.0312
+    },
+    {
+     "feature": "Affliction points",
+     "importance": 0.029
+    },
+    {
+     "feature": "Intensity",
+     "importance": 0.0261
+    },
+    {
+     "feature": "Suppression",
+     "importance": 0.0155
+    },
+    {
+     "feature": "Destruction points",
+     "importance": 0.0089
+    },
+    {
+     "feature": "Agonizing Flames",
+     "importance": 0.0085
+    }
+   ],
+   "simulated_builds": 3943,
+   "simulated_fights": 5402000,
+   "minutes": 3.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 627.91,
+    "se": 0.105
+   },
+   "destruction-incinerate-raid": {
+    "entry": "incinerate-raid",
+    "dps": 560.64,
+    "se": 0.068
+   }
+  },
+  "best_hand": "destruction-incinerate-raid",
+  "gain_vs_hand": 0.12
+ },
+ "aligned": {
+  "target": "destruction-incinerate-raid",
+  "moves": [
+   {
+    "from": "Demonic Energies",
+    "to": "Demonic Aegis",
+    "ratio": 1.0
+   },
+   {
+    "from": "Demonic Energies",
+    "to": "Demonic Aegis",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     5
+    ],
+    [
+     "Improved Corruption",
+     3
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     5
+    ],
+    [
+     "Demonic Aegis",
+     2
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     2
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Shadowburn",
+     1
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ]
+   ]
+  },
+  "split": "10/11/30",
+  "ratio": 1.0
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "sb-raid",
+   "dps": 741.14,
+   "se": 0.133
+  },
+  "bis-raid": {
+   "entry": "sb-raid",
+   "dps": 744.24,
+   "se": 0.134
+  },
+  "gain": 0.0042,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [
+   "destruction-ml-raid"
+  ],
+  "superseded": [],
+  "date": "2026-10-02"
+ }
+}

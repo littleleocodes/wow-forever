@@ -32,7 +32,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc"],
+      "builds": ["frost-arcane-power-raid", "frost-winters-chill-raid", "frost-fingers-of-frost-raid", "opt-frost-raid-raid-dps", "opt-frost-raid-raid-dps-extwc", "frost-ml-raid"],
       "tune_builds": ["frost-arcane-power-raid"],
       "rotation_note": "Base rotation (2026-09-28): the simulator's `frost.apl.json` plus Arcane Missiles on a Missile Barrage proc, guarded by `auraIsKnown` so only builds with Missile Barrage cast it. The simulator's Frost rotation never casts Arcane Missiles, which cost the Arcane Power Frost draft (the one Frost build with Missile Barrage) 13% on the training dummy (484.8 -> 548.0 DPS) and 10% in the raid setting; the Fingers of Frost and Winter's Chill builds are unchanged. The rotation search also tunes on that draft (`tune_builds`)."
     },
@@ -301,7 +301,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps"]
+      "builds": ["ds-ruin-raid", "opt-sb-raid-raid-dps", "destruction-ml-raid"]
     },
     "demonology-raid": {
       "apl_opt_raid": "_reference/data/raidsim/apls/warlock/demonology-raid-raid.apl.json",
@@ -443,7 +443,7 @@
         "foodId": 20452,
         "potId": 13444
       },
-      "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps"],
+      "builds": ["mm-lone-wolf-raid", "opt-mm-lonewolf-raid-raid-dps", "marksmanship-ml-parse", "marksmanship-ml-raid"],
       "buffs_off": ["trueshot_aura"],
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
@@ -482,7 +482,7 @@
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["mm-hawk-raid", "beast-mastery-raid"],
+      "builds": ["mm-hawk-raid", "beast-mastery-raid", "beast-mastery-ml-parse", "beast-marks-ml-raid"],
       "rotation_only": true,
       "preset_names": ["Beast Mastery 35/16/0"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
@@ -520,7 +520,7 @@
       },
       "self_debuffs": {"hunters_mark": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps", "survival-raid"],
+      "builds": ["melee-survival-raid", "opt-melee-dps-raid-dps", "survival-raid", "survival-ml-parse"],
       "rotation_only": true,
       "preset_names": [],
       "rotation_note": "Melee hunter (2026-09-27): our melee builds on our own base rotation and a dual-wield version of the hunter's phase-1 gear (Deathbringer and Brutality Blade with Crusader). The simulator models only Aspect of the Hawk; our patch adds Aspect of the Beast (below). The scorer's melee model is not calibrated to these numbers. Traps (2026-09-29, user request): Immolation Trap then Explosive Trap as the last lines of both rotations, cast in combat under the target. No rotation had cast them (the search pools only insert new Forever spells and cooldowns). The simulator gives all traps one shared 30 s cooldown (its author's reading of the demo streams; the beta tooltips say only '30 sec cooldown' and 'only one Fire trap can be active'): with it, +7.7% on the dummy and +3.8% in the raid (Immolation alone; Explosive is then never cast); with separate cooldowns (a temporary patch, not kept) +12.6% and +6.4%. The user's reading (2026-09-29): fire traps share a cooldown with each other and frost traps with each other, so the shared-cooldown numbers apply (Immolation every 30 s; the Explosive line stays for packs). The simulator puts the frost traps on the same timer too, which no rotation here casts. Aspect of the Beast (2026-09-29): our simulator patch (patches/forever/sim/hunter/aspect_of_the_beast.go) adds Aspect of the Beast (+110 melee attack power) and the melee half of Deadly Aspects (10% per melee auto attack, +30% melee speed for 12 s); both rotations open with it: +12.3% dummy, +12.9% raid. Melee hunter numbers from that date rest on this patch (our model)."
@@ -830,7 +830,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps"],
+      "builds": ["ret-raid-dps", "ret-full-buffs-raid", "opt-ret-dps-raid-dps", "retribution-ml-raid"],
       "self_buffs": {"greater_blessing_of_might": true},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -1012,7 +1012,7 @@
         "foodId": 13810,
         "potId": 13444
       },
-      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-raid"],
+      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-parse", "enhancement-ml-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -1056,6 +1056,7 @@
   },
   "druid": {
     "balance-dps": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/druid/balance-dps-raid.apl.json",
       "apl_opt": "_reference/data/raidsim/apls/druid/balance-dps.apl.json",
       "sim_class": "ClassDruid",
       "sim_spec": "druid/balance",

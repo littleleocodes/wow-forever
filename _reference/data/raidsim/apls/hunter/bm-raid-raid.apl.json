@@ -79,30 +79,6 @@
   },
   {
    "action": {
-    "condition": {
-     "cmp": {
-      "op": "OpGt",
-      "lhs": {
-       "autoTimeToNext": {
-        "autoType": "RangedAuto"
-       }
-      },
-      "rhs": {
-       "const": {
-        "val": "0.5s"
-       }
-      }
-     }
-    },
-    "castSpell": {
-     "spellId": {
-      "spellId": 2643
-     }
-    }
-   }
-  },
-  {
-   "action": {
     "autocastOtherCooldowns": {}
    }
   },
@@ -155,6 +131,26 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 1293527
+     }
+    }
+   },
+   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20904
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpGt",
@@ -165,27 +161,17 @@
       },
       "rhs": {
        "const": {
-        "val": "1s"
+        "val": "0.5s"
        }
       }
      }
     },
     "castSpell": {
      "spellId": {
-      "spellId": 20904
+      "spellId": 2643
      }
     }
    }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 1293527
-     }
-    }
-   },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   }
  ]
 }

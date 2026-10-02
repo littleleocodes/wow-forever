@@ -104,6 +104,27 @@
   },
   {
    "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20924,
+      "rank": 5
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "itemId": 12662
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see ret-dps-rotation-search.json)"
+  },
+  {
+   "action": {
     "condition": {
      "cmp": {
       "op": "OpLe",
@@ -216,6 +237,16 @@
      }
     }
    }
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 20930
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see ret-dps-rotation-search.json)"
   }
  ]
 }

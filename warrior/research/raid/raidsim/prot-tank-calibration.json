@@ -6,15 +6,15 @@
  "builds": [
   "prot-raid-tank",
   "opt-prot-tank-raid-tank",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-26.json",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-hand-2026-09-27.json",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-preset-protection.json",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r1.json",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r2.json",
-  "/home/user/wow-forever/warrior/research/raid/raidsim/candidates/cand-prot-tank-r3.json"
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-26.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-hand-2026-09-27.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-preset-protection.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r1.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r2.json",
+  "F:\\wow-forever\\warrior\\research\\raid\\raidsim\\candidates\\cand-prot-tank-r3.json"
  ],
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "spec_folder": "warrior/protection",
   "gear": "ui/specs/warrior/protection/gear_sets/launch.gear.json",
@@ -43,9 +43,9 @@
  "talents": [
   {
    "talent": "Shield Slam",
-   "sim": 0.1535407204156973,
-   "ev_before": 0.16476845226043424,
-   "ev_after": 0.16476845226043424,
+   "sim": 0.1535407204156974,
+   "ev_before": 0.1647684522604342,
+   "ev_after": 0.1647684522604342,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -60,7 +60,7 @@
   },
   {
    "talent": "Defiance",
-   "sim": 0.06005421765740936,
+   "sim": 0.06005421765740949,
    "ev_before": 0.06010653013594707,
    "ev_after": 0.06010653013594707,
    "scale": 1.0,
@@ -77,7 +77,7 @@
   },
   {
    "talent": "Bastion",
-   "sim": 0.03574949810347976,
+   "sim": 0.03574949810347982,
    "ev_before": 0.035463823243488575,
    "ev_after": 0.035463823243488575,
    "scale": 1.0,
@@ -92,7 +92,7 @@
   },
   {
    "talent": "Deflection",
-   "sim": 0.03411381922091368,
+   "sim": 0.03411381922091364,
    "ev_before": 0.03433131731719298,
    "ev_after": 0.03433131731719298,
    "scale": 1.0,
@@ -110,7 +110,7 @@
   },
   {
    "talent": "Focused Rage",
-   "sim": 0.03193065367125738,
+   "sim": 0.03193065367125753,
    "ev_before": 0.025144973923807358,
    "ev_after": 0.025144973923807358,
    "scale": 1.0,
@@ -127,7 +127,7 @@
   },
   {
    "talent": "Anticipation",
-   "sim": 0.025264869867396334,
+   "sim": 0.025264869867396383,
    "ev_before": 0.020032802756350745,
    "ev_after": 0.020032802756350745,
    "scale": 1.0,
@@ -144,7 +144,7 @@
   },
   {
    "talent": "Weaponmaster",
-   "sim": 0.023708974549910913,
+   "sim": 0.023708974549910874,
    "ev_before": 0.017002615046862575,
    "ev_after": 0.017002615046862575,
    "scale": 1.0,
@@ -155,7 +155,7 @@
   },
   {
    "talent": "Improved Thunder Clap",
-   "sim": 0.020874490770249558,
+   "sim": 0.020874490770249537,
    "ev_before": 0.018329766888366683,
    "ev_after": 0.018329766888366683,
    "scale": 1.0,
@@ -172,7 +172,7 @@
   },
   {
    "talent": "Shield Specialization",
-   "sim": 0.01910495265170188,
+   "sim": 0.019104952651702024,
    "ev_before": 0.018920269945294495,
    "ev_after": 0.018920269945294495,
    "scale": 1.0,
@@ -190,7 +190,7 @@
   },
   {
    "talent": "Improved Revenge",
-   "sim": 0.018475516768082928,
+   "sim": 0.018475516768082987,
    "ev_before": 0.026481735234683383,
    "ev_after": 0.026481735234683383,
    "scale": 1.0,
@@ -208,7 +208,7 @@
   },
   {
    "talent": "Cruelty",
-   "sim": 0.015066346484562208,
+   "sim": 0.015066346484562272,
    "ev_before": 0.015868494406500906,
    "ev_after": 0.015868494406500906,
    "scale": 1.0,
@@ -225,9 +225,9 @@
   },
   {
    "talent": "Master of Defense",
-   "sim": 0.008918111742466943,
-   "ev_before": 0.01420456340706967,
-   "ev_after": 0.01420456340706967,
+   "sim": 0.008918111742466883,
+   "ev_before": 0.014204563407069673,
+   "ev_after": 0.014204563407069673,
    "scale": 1.0,
    "how": "kept",
    "builds": [
@@ -243,7 +243,7 @@
   },
   {
    "talent": "Anger Management",
-   "sim": 0.008587197622253023,
+   "sim": 0.008587197622252973,
    "ev_before": 0.01166625084406075,
    "ev_after": 0.01166625084406075,
    "scale": 1.0,
@@ -259,7 +259,7 @@
   },
   {
    "talent": "Improved Heroic Strike",
-   "sim": 0.007629226978056278,
+   "sim": 0.007629226978056239,
    "ev_before": 0.006464070796788654,
    "ev_after": 0.006464070796788654,
    "scale": 1.0,
@@ -277,7 +277,7 @@
   },
   {
    "talent": "Impale",
-   "sim": 0.0069739191179935345,
+   "sim": 0.00697391911799361,
    "ev_before": 0.0035489689095648327,
    "ev_after": 0.0035489689095648327,
    "scale": 1.0,
@@ -288,7 +288,7 @@
   },
   {
    "talent": "Deep Wounds",
-   "sim": 0.006276048607244981,
+   "sim": 0.00627604860724491,
    "ev_before": 0.002319798394085953,
    "ev_after": 0.002319798394085953,
    "scale": 1.0,
@@ -299,7 +299,7 @@
   },
   {
    "talent": "Improved Bloodrage",
-   "sim": 0.004655682642223474,
+   "sim": 0.004655682642223584,
    "ev_before": 0.003026884733464382,
    "ev_after": 0.003026884733464382,
    "scale": 1.0,
@@ -315,7 +315,7 @@
   },
   {
    "talent": "Improved Rend",
-   "sim": 0.0028636331904860948,
+   "sim": 0.0028636331904861676,
    "ev_before": 0.002850531733985776,
    "ev_after": 0.002850531733985776,
    "scale": 1.0,
@@ -326,7 +326,7 @@
   },
   {
    "talent": "Bloodthrill",
-   "sim": 0.002028009451312547,
+   "sim": 0.0020280094513127137,
    "ev_before": 0.004362573854007174,
    "ev_after": 0.004362573854007174,
    "scale": 1.0,

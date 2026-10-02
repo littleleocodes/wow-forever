@@ -40,8 +40,8 @@ Effect coverage: 0 parsed from tooltips, 51 hand-entered, 0 missing (scored as 0
 | Feral Swiftness | Feral Combat | 2 | +0.00% | manual |
 | Feral Instinct | Feral Combat | 2 | +0.00% | manual |
 
-## Optimized build: 33/5/13  score +127.16%  (dps x2.271, sustain x1.702, surv x1.000, utility +0.00%)
-Absolute DPS index (character alone, no talents = 1.00): 1.115  — use this to compare models with different pet shares.
+## Optimized build: 33/5/13  score +130.75%  (dps x2.307, sustain x1.702, surv x1.000, utility +0.00%)
+Absolute DPS index (character alone, no talents = 1.00): 1.133  — use this to compare models with different pet shares.
 
 ```
   Balance: Genesis 5, Nature's Reach 2, Improved Moonfire 2, Nature's Majesty 2, Moonglow 3, Nature's Splendor 1, Insect Swarm 1, Vengeance 5, Improved Starfire 5, Nature's Grace 1, Moonfury 5, Moonkin Form 1
@@ -53,8 +53,8 @@ Absolute DPS index (character alone, no talents = 1.00): 1.115  — use this to 
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Living Spirit | Restoration 5 | 1/3 | +4.70% | no |
-| Nature's Swiftness | Restoration 5 | 1/1 | +1.14% | no |
+| Living Spirit | Restoration 5 | 1/3 | +4.76% | no |
+| Nature's Swiftness | Restoration 5 | 1/1 | +1.15% | no |
 | Improved Wrath | Balance 1 | 1/5 | +0.17% | yes |
 | Improved Entangling Roots | Balance 3 | 1/3 | +0.00% | yes |
 | Feral Charge | Feral Combat 3 | 1/1 | +0.00% | no |

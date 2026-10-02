@@ -72,48 +72,66 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 2/33/16 | 556 | +0.0% | 664 | +0.0% | 1 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 2/33/16 | 616 | +0.0% | 726 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: frostfire-raid 504 -> 513 DPS (+1.9%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 13 changes to the base rotation; third-seed check: ml: Hybrid Fire/Frost 557 -> 612 DPS (+10.0%), frostfire-raid 552 -> 616 DPS (+11.7%)):
   1. insert before the filler: cast Fireball (+0.7%, pass 1)
   2. threshold 20% -> 10%: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.5%, pass 1)
   3. only with 3s or more of the fight left: cast Fireball (+0.3%, pass 1)
   4. insert before the filler: cast Robe of the Archmage (+0.6%, pass 2)
   5. threshold 5s -> 6s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+0.4%, pass 2)
   6. insert at the top: cast Berserking (+0.2%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: frostfire-raid 586 -> 590 DPS (+0.6%)):
+  7. move down below 'if mana % ≥ 10%: cast Frostfire Bolt': cast Fire Blast (+6.4%, pass 4)
+  8. only with 6s or more of the fight left: if mana % ≥ 10%: cast Frostfire Bolt (+1.1%, pass 4)
+  9. insert in the middle: cast Mana Citrine (+0.5%, pass 4)
+  10. threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast (+0.3%, pass 4)
+  11. insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast (+0.6%, pass 4)
+  12. only with 20s or more of the fight left: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch (+0.3%, pass 4)
+  13. insert in the middle: cast Combustion (+0.3%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 5 passes, the last 2026-10-02, 10 changes to the base rotation; third-seed check: ml: Hybrid Fire/Frost 670 -> 727 DPS (+8.5%), frostfire-raid 664 -> 723 DPS (+8.9%)):
   1. insert at the top: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   2. threshold 110 -> 82.5: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.2%, pass 1)
   3. insert at the top: cast Berserking (+0.3%, pass 3)
+  4. drop: cast Fire Blast (+2.5%, pass 5)
+  5. threshold 5s -> 10s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 5s): cast Scorch (+2.2%, pass 5)
+  6. threshold 82.5 -> 165: if mana ≥ (time left in the fight × 82.5): cast Fire Blast (+1.6%, pass 5)
+  7. threshold 10s -> 7.5s: if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 10s): cast Scorch (+1.0%, pass 5)
+  8. threshold 165 -> 330: if mana ≥ (time left in the fight × 165): cast Fire Blast (+0.5%, pass 5)
+  9. threshold 3 -> 2: if stacks of Hot Streak = 3: cast Pyroblast (+0.3%, pass 5)
+  10. insert in the middle: if stacks of Hot Streak = 3: cast Pyroblast (+0.6%, pass 5)
 
 | # | Priority (the first line whose condition holds is cast) | [`frostfire-raid`](frostfire-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserking | 0.3 |
-| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s): cast Scorch | 4.0 |
+| 2 | if Fire Vulnerability is known and (stacks of Fire Vulnerability < 5 or time left on Fire Vulnerability ≤ 6s) and time left in the fight ≥ 20s: cast Scorch | 3.7 |
 | 3 | if mana % ≤ 80%: cast Mana Ruby (mana gem) | as ready |
 | 4 | use every other cooldown when ready | as ready |
 | 5 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
-| 6 | if stacks of Hot Streak = 3: cast Pyroblast | 0.9 |
-| 7 | cast Fire Blast | 7.8 |
-| 8 | if mana % ≥ 10%: cast Frostfire Bolt | 11.0 |
-| 9 | if time left in the fight ≥ 3s: cast Fireball | 3.3 |
-| 10 | cast Robe of the Archmage | as ready |
-| 11 | cast Scorch | 0.3 |
+| 6 | if stacks of Hot Streak = 2: cast Pyroblast | 0.2 |
+| 7 | if stacks of Hot Streak = 3: cast Pyroblast | 0.2 |
+| 8 | cast Combustion | 0.3 |
+| 9 | cast Mana Citrine | as ready |
+| 10 | if mana % ≥ 10% and time left in the fight ≥ 6s: cast Frostfire Bolt | 16.9 |
+| 11 | cast Fire Blast | 0.4 |
+| 12 | if Missile Barrage is up: cast Arcane Missiles | 0.3 |
+| 13 | if time left in the fight ≥ 3s: cast Fireball | 0.1 |
+| 14 | cast Robe of the Archmage | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Arcane Missiles (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Scorch (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`frostfire-raid`](frostfire-raid.md) |
 |---|---|
-| Frostfire Bolt | 43% |
-| Fire Blast | 23% |
-| Ignite | 14% |
-| Scorch | 8% |
-| Pyroblast | 7% |
-| Fireball | 5% |
+| Frostfire Bolt | 70% |
+| Ignite | 21% |
+| Scorch | 6% |
+| Pyroblast | 1% |
+| Fire Blast | 1% |
+| Arcane Missiles | 1% |
+| Fireball | 0% |
 
 ## Notes
 

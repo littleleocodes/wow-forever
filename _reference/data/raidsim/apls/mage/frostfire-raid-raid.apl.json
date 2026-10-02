@@ -27,7 +27,7 @@
         },
         "rhs": {
          "const": {
-          "val": "82.5"
+          "val": "330"
          }
         }
        }
@@ -40,7 +40,7 @@
      }
     }
    },
-   "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -86,7 +86,7 @@
             },
             "rhs": {
              "const": {
-              "val": "5s"
+              "val": "7.5s"
              }
             }
            }
@@ -102,7 +102,8 @@
       "spellId": 10207
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -129,6 +130,32 @@
   {
    "action": {
     "autocastOtherCooldowns": {}
+   }
+  },
+  {
+   "action": {
+    "condition": {
+     "cmp": {
+      "op": "OpEq",
+      "lhs": {
+       "auraNumStacks": {
+        "auraId": {
+         "spellId": 400625
+        }
+       }
+      },
+      "rhs": {
+       "const": {
+        "val": "3"
+       }
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 18809
+     }
+    }
    }
   },
   {
@@ -186,7 +213,7 @@
       },
       "rhs": {
        "const": {
-        "val": "3"
+        "val": "2"
        }
       }
      }
@@ -196,16 +223,8 @@
       "spellId": 18809
      }
     }
-   }
-  },
-  {
-   "action": {
-    "castSpell": {
-     "spellId": {
-      "spellId": 10199
-     }
-    }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see frostfire-raid-rotation-search.json)"
   },
   {
    "action": {

@@ -11,7 +11,8 @@ spec-builds.json for the generated builds; spec_modes.py decides a build's spec)
                                       recommended picks marked) and "Which spec is best?" (per mode); the rest is hand-written
   <class>/<mode>/README.md            one mode: its specs ranked
   <class>/<mode>/<spec>.md            one spec in one mode: the build (talentsforever.com link), talent order (leveling), what to
-                                      press, the numbers, alternatives
+                                      press, the numbers (raid: also by gear tier, pre-BiS and phase-1 BiS, from the
+                                      machine-learning pipeline's records raidsim/ml/), alternatives
 
 Everything technical stays in <class>/research/. Generated: never hand-edit (rebuild.py's regen step runs this).
 """
@@ -38,6 +39,73 @@ GEN_MARK = "⚗"   # marks a generated build (spec_builds.py) wherever a player 
 DER_MARK = "🔬"   # marks a derived build (derive_leveling.py, derive_raid.py, derive_pvp.py): searched in a simulator or from the model + community
 DERIVED = {m: json.load(open(HERE / f"derived-{m}.json", encoding="utf-8")) if (HERE / f"derived-{m}.json").exists() else {}
            for m in ("leveling", "raid", "pvp")}
+
+
+def ml_tiers():
+    """{(class, spec): record} of the machine-learning pipeline (raidsim/ml_pipeline.py) with a pre-BiS or BiS result."""
+    out = {}
+    d = HERE / "raidsim" / "ml"
+    for p in sorted(d.glob("*.json")) if d.exists() else []:
+        if p.name in ("spell-probe.json", "rotations.json"):
+            continue
+        try:
+            r = json.load(open(p, encoding="utf-8"))
+        except ValueError:   # a record the pipeline is writing right now
+            continue
+        if r.get("class") and any(((r.get("search") or {}).get(k) or {}).get("winner") for k in ("bis-dummy", "prebis-dummy")):
+            out[(r["class"], r["spec"])] = r
+    return out
+
+
+TIERS = ml_tiers()
+TIER_KEYS = (("prebis", "Pre-BiS"), ("bis", "Phase 1 BiS"))
+SLOTS = ["Head", "Neck", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Finger", "Finger", "Trinket", "Trinket",
+         "Main hand", "Off hand", "Ranged/relic"]
+RANKINGS = ROOT / "_reference" / "dps-rankings.md"
+
+
+def tier_dps(r, k):
+    w = ((r.get("search") or {}).get(k) or {}).get("winner")
+    return f"{w['dps']:.0f}" if w else "-"
+
+
+def tier_lines(cls, spec, src, top):
+    """A spec raid page's DPS by gear tier: the best talents per tier and setting in the spec's own gear, and that gear."""
+    r = TIERS.get((cls, spec))
+    if not r:
+        return []
+    flat = lambda a: {n: k for items in a.values() for n, k in items}   # noqa: E731
+    o = ["**By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning "
+         f"search in the community simulator; [every spec]({paths.rel(src, RANKINGS)})):", "",
+         "| Gear | Training dummy | Full raid | Best talents (dummy) |", "|---|---|---|---|"]
+    for t, name in TIER_KEYS:
+        w = ((r.get("search") or {}).get(f"{t}-dummy") or {}).get("winner")
+        if not w:
+            continue
+        al = r["aligned"] if t == "bis" and (r.get("aligned") or {}).get("moves") else w
+        tl = "this build" if rs.flat(top) == flat(al["allocation"]) else f"[{al['split']}]({rs.tf_link(cls, flat(al['allocation']))})"
+        o.append(f"| {name} | {tier_dps(r, f'{t}-dummy')} | {tier_dps(r, f'{t}-raid')} | {tl} |")
+    o.append("")
+    for t, name in TIER_KEYS:
+        g = (r.get("gear") or {}).get(t) or {}
+        if g.get("names"):
+            o.append(f"- **{name} gear** (average item level {g.get('ilvl', '-')}): "
+                     + "; ".join(f"{SLOTS[i] if i < len(SLOTS) else '?'}: {n}" for i, n in enumerate(g["names"]) if n))
+    return o + [""]
+
+
+def tier_table(cls, specs, src):
+    """A class raid index's DPS by gear tier for its damage specs."""
+    rows = [(spec, TIERS[(cls, spec)]) for spec in specs if (cls, spec) in TIERS]
+    if not rows:
+        return []
+    rows.sort(key=lambda x: -((((x[1].get("search") or {}).get("bis-dummy") or {}).get("winner") or {}).get("dps") or 0))
+    o = ["**By gear tier**: each damage spec with its best talents for each tier, in its own gear (training dummy / full raid DPS; "
+         f"[every class]({paths.rel(src, RANKINGS)})):", "", "| Spec | Pre-BiS | Phase 1 BiS |", "|---|---|---|"]
+    for spec, r in rows:
+        o.append(f"| [{SM.spec_name(cls, spec)}]({SM.spec_slug(cls, spec)}.md) | {tier_dps(r, 'prebis-dummy')} / {tier_dps(r, 'prebis-raid')} | "
+                 f"{tier_dps(r, 'bis-dummy')} / {tier_dps(r, 'bis-raid')} |")
+    return o + [""]
 
 
 def mark(b):
@@ -240,7 +308,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
                  if ords else "") + ". A model of the beta, to check at launch.", ""]
     elif top.get("derived"):
         o += [f"> {DER_MARK} Derived build: " + {"leveling": "searched in the fight lab (this project's leveling simulator) from the spec's builds and the stats model's best one",
-                                               "raid": "searched in the community's raid simulator from the spec's best build",
+                                               "raid": ("found by this project's machine-learning search over every legal build of the spec in the community's raid "
+                                                        "simulator (phase-1 BiS gear, then raced against the spec's builds)" if top["id"].endswith("-ml-raid")
+                                                        else "searched in the community's raid simulator from the spec's best build"),
                                                "pvp": "the stats model's best PvP build, with the community's most-picked talents where the model rates talents alike"}[mode]
               + (f"; it beat the hand-made build ({top['replaces']}) by 2% or more, which stays below as the alternative" if top.get("replaces") else "")
               + ". A model of the beta, to check at launch.", ""]
@@ -307,6 +377,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
             numbers.append("")
             if nn:
                 numbers += [f"> Note: {nn}", ""]
+            numbers += tier_lines(cls, spec, src, top)
             lad, cur = env_info(cls, r["entry"], top["id"])
             if lad:
                 numbers += ["**Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):", "",
@@ -482,6 +553,8 @@ def class_pages(cls):
             src.write_text("\n".join(o) + "\n", encoding="utf-8")
         idx = [f"# {cls.capitalize()} — {SM.MODE_TITLE[mode]}", "", f"[{cls.capitalize()}](../README.md) > {SM.MODE_TITLE[mode]}", ""]
         idx += ranking(cls, g, specs, mode, nums)
+        if mode == "raid":
+            idx += tier_table(cls, specs, d / "README.md")
         idx += [f"{DER_MARK} = a derived build (searched in a simulator, or for PvP the stats model plus the community's picks). "
                 f"{GEN_MARK} = a generated build (no hand-made build for that spec and mode yet). Differences under 2-3% are within the "
                 "simulations' noise and assumptions: treat them as a tie.", "", "---", FOOT, ""]
@@ -555,6 +628,8 @@ def root_page(infos):
           f"- **{BADGE}**: the best spec for that mode in its class, or within 3% of it. **{GEN_MARK}**: a generated build (a starting point).",
           "- Everything is a simulation of the beta, not a measurement in the game. Treat differences under 2-3% as a tie.", "",
           "## Everything else", "",
+          "- [Raid DPS rankings by gear tier](_reference/dps-rankings.md): every raid damage spec in pre-BiS and phase-1 BiS gear, on the "
+          "training dummy and in a full raid, with its best talents and gear for each.",
           "- [_reference/README.md](_reference/README.md): how the project works, its tools and its rules.",
           "- [_reference/](_reference/): cross-class reports (simulator summaries, the talentsforever.com comparison, launch checklists).",
           "- Each class's `research/` folder: every build, report and simulation behind its pages.", "",

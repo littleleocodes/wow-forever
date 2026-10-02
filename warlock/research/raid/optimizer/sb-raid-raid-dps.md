@@ -12,8 +12,8 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Demonic Sacrifice | Demonology | 3 | +15.90% | manual |
 | Agonizing Flames | Destruction | 4 | +1.99% | manual |
 | Bane | Destruction | 1 | +1.88% | manual |
-| Fel Vitality | Demonology | 2 | +1.46% | manual |
-| Improved Life Tap | Affliction | 1 | +1.46% | manual |
+| Fel Vitality | Demonology | 2 | +1.47% | manual |
+| Improved Life Tap | Affliction | 1 | +1.47% | manual |
 | Suppression | Affliction | 1 | +1.19% | manual |
 | Improved Shadow Bolt | Destruction | 1 | +1.17% | manual |
 | Improved Corruption | Affliction | 1 | +0.96% | manual |
@@ -40,31 +40,31 @@ Effect coverage: 0 parsed from tooltips, 52 hand-entered, 0 missing (scored as 0
 | Destructive Reach | Destruction | 1 | +0.00% | manual |
 | Improved Drains | Affliction | 2 | +0.00% | manual |
 
-## Optimized build: 22/11/18  score +93.97%  (dps x1.939, sustain x1.060, surv x1.020, utility +0.00%)
+## Optimized build: 10/11/30  score +107.15%  (dps x2.071, sustain x1.060, surv x1.020, utility +0.00%)
 
 ```
-  Affliction: Improved Life Tap 2, Suppression 5, Improved Corruption 5, Improved Bane of Agony 2, Pandemic 3, Malevolence 5
+  Affliction: Improved Life Tap 2, Suppression 5, Improved Corruption 3
   Demonology: Demonic Embrace 5, Fel Vitality 3, Demonic Aegis 2, Demonic Sacrifice 1
-  Destruction: Bane 5, Improved Shadow Bolt 5, Ruin 5, Agonizing Flames 3
+  Destruction: Bane 5, Improved Shadow Bolt 5, Aftermath 2, Ruin 5, Shadowburn 1, Conflagrate 1, Agonizing Flames 3, Fire and Brimstone 3, Shadow and Flame 5
 ```
 
 ## Next-rank values from the optimized build (what a 52nd point would buy)
 
 | Talent | Tier | Next rank | Value | Legal now |
 |---|---|---|---|---|
-| Shadow Mastery | Affliction 6 | 1/5 | +1.77% | no |
-| Decimation | Demonology 4 | 1/2 | +1.19% | no |
-| Cataclysm | Destruction 2 | 1/3 | +0.89% | yes |
-| Aftermath | Destruction 2 | 1/5 | +0.84% | yes |
-| Shadowburn | Destruction 3 | 1/1 | +0.83% | yes |
+| Improved Corruption | Affliction 1 | 4/5 | +1.93% | yes |
+| Malevolence | Affliction 4 | 1/5 | +1.85% | no |
+| Shadow Mastery | Affliction 6 | 1/5 | +1.79% | no |
+| Improved Bane of Agony | Affliction 3 | 1/2 | +1.38% | yes |
+| Aftermath | Destruction 2 | 3/5 | +1.26% | yes |
+| Decimation | Demonology 4 | 1/2 | +1.24% | no |
+| Pandemic | Affliction 3 | 1/3 | +1.07% | yes |
+| Cataclysm | Destruction 2 | 1/3 | +0.96% | yes |
+| Malediction | Affliction 2 | 1/5 | +0.83% | yes |
 | Wrack | Affliction 7 | 1/1 | +0.81% | no |
-| Malediction | Affliction 2 | 1/5 | +0.75% | yes |
-| Amplify Curse | Affliction 3 | 1/1 | +0.75% | yes |
-| Nightfall | Affliction 4 | 1/2 | +0.26% | yes |
+| Amplify Curse | Affliction 3 | 1/1 | +0.68% | yes |
+| Nightfall | Affliction 4 | 1/2 | +0.27% | no |
 | Fel Concentration | Affliction 3 | 1/3 | +0.00% | yes |
 | Intensity | Destruction 4 | 1/3 | +0.00% | yes |
 | Demonic Brand | Demonology 4 | 1/3 | +0.00% | no |
-| Soul Harvesting | Affliction 2 | 1/2 | +0.00% | yes |
-| Master Summoner | Demonology 3 | 1/2 | +0.00% | yes |
-| Molten Skin | Destruction 2 | 1/5 | +0.00% | yes |
 

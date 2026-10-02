@@ -121,7 +121,7 @@
          },
          "rhs": {
           "const": {
-           "val": "60%"
+           "val": "80%"
           }
          }
         }
@@ -134,7 +134,8 @@
       "itemId": 12662
      }
     }
-   }
+   },
+   "notes": "apl_opt 2026-10-02: changed or added by the rotation search (see sb-raid-rotation-search.json)"
   },
   {
    "action": {
@@ -340,6 +341,16 @@
     }
    },
    "notes": "apl_opt 2026-09-27: changed or added by the rotation search (see sb-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "castSpell": {
+     "spellId": {
+      "spellId": 18932
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see sb-raid-rotation-search.json)"
   },
   {
    "action": {

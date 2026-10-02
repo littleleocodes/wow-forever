@@ -1,0 +1,1438 @@
+{
+ "class": "druid",
+ "spec": "Balance",
+ "slug": "balance",
+ "entries": [
+  "balance-dps"
+ ],
+ "best": "balance-moonkin-raid",
+ "best_entry": "balance-dps",
+ "best_dps": 533.93,
+ "any_split": false,
+ "date": "2026-10-01",
+ "gear": {
+  "bis": {
+   "entry": "balance-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json",
+   "date": "2026-10-01",
+   "chosen": "all-slots",
+   "ilvl": 65.7,
+   "trinkets": [
+    "Briarwood Reed",
+    "Talisman of Ephemeral Power"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Choker of the Fire Lord",
+    "Rugged Mantle of the Timbermaw",
+    "Sapphiron Drape",
+    "Robe of Volatile Power",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Mana Igniting Cord",
+    "Ironfeather Leggings",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Ring of Spell Power",
+    "Briarwood Reed",
+    "Talisman of Ephemeral Power",
+    "Staff of Dominance",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0037065497511084,
+    "keep-sets-and-effects": 1.0037065497511084
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 1.0027196173927195
+   },
+   "weights": {
+    "StatArcaneDamage": 0.3902,
+    "StatIntellect": 0.2862,
+    "StatNatureDamage": 0.1059,
+    "StatSpellCritRating": 0.3459,
+    "StatSpellDamage": 0.4961,
+    "StatSpellHasteRating": 0.3488,
+    "StatSpellHitRating": 0.6252,
+    "StatSpirit": 0.2315
+   },
+   "evaluated_on": [
+    "balance-dps: ml winner"
+   ]
+  },
+  "bis2": true,
+  "prebis": {
+   "entry": "balance-dps",
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json",
+   "date": "2026-10-02",
+   "chosen": "keep-sets-and-effects",
+   "ilvl": 62.8,
+   "trinkets": [
+    "Briarwood Reed",
+    "Weakness Analyzer"
+   ],
+   "names": [
+    "Spellweaver's Turban",
+    "Orb of the Darkmoon",
+    "Rugged Mantle of the Timbermaw",
+    "Crystalline Threaded Cape",
+    "Ironfeather Breastplate",
+    "Rockfury Bracers",
+    "Hands of Power",
+    "Knowledge of the Timbermaw",
+    "Leggings of Arcana",
+    "Sorcerer's Boots",
+    "Leafre's Ring of Precise Spell Power",
+    "Signet Ring of the Bronze Dragonflight",
+    "Briarwood Reed",
+    "Weakness Analyzer",
+    "Lord Valthalak's Staff of Command",
+    null,
+    null
+   ],
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0
+   },
+   "confirm_seed2": {
+    "keep-sets-and-effects": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatArcaneDamage": 0.3861,
+    "StatIntellect": 0.3654,
+    "StatNatureDamage": 0.1017,
+    "StatSpellCritRating": 0.3205,
+    "StatSpellDamage": 0.4877,
+    "StatSpellHasteRating": 0.2868,
+    "StatSpellHitRating": 0.5399,
+    "StatSpirit": 0.3087
+   },
+   "evaluated_on": [
+    "balance-dps: ml winner (bis)"
+   ]
+  }
+ },
+ "search": {
+  "bis-dummy-1": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "dummy",
+   "entry": "balance-dps",
+   "date": "2026-10-01",
+   "constraint": "Balance 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "balance-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ],
+      [
+       "Moonkin Form",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Heart of the Wild",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ]
+     ]
+    },
+    "split": "33/5/13",
+    "dps": 535.87,
+    "se": 0.097,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "33/5/13",
+    "dps": 535.87,
+    "se": 0.097,
+    "differs": [
+     [
+      "Furor",
+      1
+     ],
+     [
+      "Nature's Focus",
+      4
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1186,
+     "best_screen": 535.57,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 386,
+       "best": 535.57
+      },
+      {
+       "round": 1,
+       "simulated": 586,
+       "best": 535.57,
+       "predicted_top": 530.27
+      },
+      {
+       "round": 2,
+       "simulated": 786,
+       "best": 535.57,
+       "predicted_top": 532.65
+      },
+      {
+       "round": 3,
+       "simulated": 986,
+       "best": 535.57,
+       "predicted_top": 533.0
+      },
+      {
+       "round": 4,
+       "simulated": 1186,
+       "best": 535.57,
+       "predicted_top": 532.62
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    },
+    {
+     "entry": "balance-dps",
+     "run": 2,
+     "simulated": 1195,
+     "best_screen": 535.57,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 395,
+       "best": 535.57
+      },
+      {
+       "round": 1,
+       "simulated": 595,
+       "best": 535.57,
+       "predicted_top": 528.78
+      },
+      {
+       "round": 2,
+       "simulated": 795,
+       "best": 535.57,
+       "predicted_top": 532.94
+      },
+      {
+       "round": 3,
+       "simulated": 995,
+       "best": 535.57,
+       "predicted_top": 533.0
+      },
+      {
+       "round": 4,
+       "simulated": 1195,
+       "best": 535.57,
+       "predicted_top": 531.97
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 2,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      535.69,
+      535.69,
+      535.69,
+      535.69,
+      535.69,
+      535.69
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      535.55,
+      535.55,
+      535.55,
+      535.55,
+      535.55
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      535.87,
+      535.87
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Nature's Focus -> Furor"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.2865
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.2265
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.1127
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.0603
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.059
+    },
+    {
+     "feature": "Moonkin Form",
+     "importance": 0.0524
+    },
+    {
+     "feature": "Moonglow",
+     "importance": 0.0428
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0283
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0243
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0199
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0187
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0108
+    }
+   ],
+   "simulated_builds": 2628,
+   "simulated_fights": 3493000,
+   "minutes": 1.4,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json"
+  },
+  "bis-dummy": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "dummy",
+   "entry": "balance-dps",
+   "date": "2026-10-01",
+   "constraint": "Balance 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "balance-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ],
+      [
+       "Moonkin Form",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Heart of the Wild",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ]
+     ]
+    },
+    "split": "33/5/13",
+    "dps": 535.87,
+    "se": 0.097,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "33/5/13",
+    "dps": 535.87,
+    "se": 0.097,
+    "differs": [
+     [
+      "Furor",
+      5
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 535.57,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 535.57
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 535.57,
+       "predicted_top": 529.7
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 535.57,
+       "predicted_top": 532.4
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 535.57,
+       "predicted_top": 533.06
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 535.57,
+       "predicted_top": 534.25
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      535.69,
+      535.69,
+      535.69,
+      535.69,
+      535.69,
+      535.69
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      535.55,
+      535.55,
+      535.55,
+      535.55,
+      535.55
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      535.87,
+      535.87
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Nature's Focus -> Furor"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.288
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.2465
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0975
+    },
+    {
+     "feature": "Moonkin Form",
+     "importance": 0.0787
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0521
+    },
+    {
+     "feature": "Moonglow",
+     "importance": 0.0349
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.03
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0273
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.027
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0196
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0149
+    },
+    {
+     "feature": "Genesis",
+     "importance": 0.0144
+    }
+   ],
+   "simulated_builds": 1444,
+   "simulated_fights": 2309000,
+   "minutes": 1.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json"
+  },
+  "bis-raid": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "raid",
+   "entry": "balance-dps",
+   "date": "2026-10-02",
+   "constraint": "Balance 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "balance-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ],
+      [
+       "Moonkin Form",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Heart of the Wild",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ]
+     ]
+    },
+    "split": "33/5/13",
+    "dps": 613.61,
+    "se": 0.106,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "33/5/13",
+    "dps": 613.61,
+    "se": 0.106,
+    "differs": [
+     [
+      "Furor",
+      1
+     ],
+     [
+      "Nature's Focus",
+      4
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1197,
+     "best_screen": 615.32,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 397,
+       "best": 615.32
+      },
+      {
+       "round": 1,
+       "simulated": 597,
+       "best": 615.32,
+       "predicted_top": 614.27
+      },
+      {
+       "round": 2,
+       "simulated": 797,
+       "best": 615.32,
+       "predicted_top": 614.68
+      },
+      {
+       "round": 3,
+       "simulated": 997,
+       "best": 615.32,
+       "predicted_top": 614.48
+      },
+      {
+       "round": 4,
+       "simulated": 1197,
+       "best": 615.32,
+       "predicted_top": 613.91
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      613.92,
+      613.92,
+      613.92,
+      613.92,
+      613.92,
+      613.92
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      613.6,
+      613.6,
+      613.6,
+      613.6,
+      613.6
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      613.61,
+      613.61
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Nature's Focus -> Furor"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.2265
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.2176
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.1758
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0622
+    },
+    {
+     "feature": "Improved Starfire",
+     "importance": 0.0567
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0528
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0366
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.0294
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0276
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0273
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0262
+    },
+    {
+     "feature": "Ferocity",
+     "importance": 0.0119
+    }
+   ],
+   "simulated_builds": 1444,
+   "simulated_fights": 2309000,
+   "minutes": 1.1,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-bis.gear.json"
+  },
+  "prebis-dummy": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "dummy",
+   "entry": "balance-dps",
+   "date": "2026-10-02",
+   "constraint": "Balance 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "balance-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ],
+      [
+       "Moonkin Form",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Heart of the Wild",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ]
+     ]
+    },
+    "split": "33/5/13",
+    "dps": 496.76,
+    "se": 0.081,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "33/5/13",
+    "dps": 496.76,
+    "se": 0.081,
+    "differs": [
+     [
+      "Furor",
+      5
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1191,
+     "best_screen": 497.28,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 391,
+       "best": 497.28
+      },
+      {
+       "round": 1,
+       "simulated": 591,
+       "best": 497.28,
+       "predicted_top": 492.02
+      },
+      {
+       "round": 2,
+       "simulated": 791,
+       "best": 497.28,
+       "predicted_top": 495.79
+      },
+      {
+       "round": 3,
+       "simulated": 991,
+       "best": 497.28,
+       "predicted_top": 496.13
+      },
+      {
+       "round": 4,
+       "simulated": 1191,
+       "best": 497.28,
+       "predicted_top": 495.75
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      496.8,
+      496.8,
+      496.8,
+      496.8,
+      496.8,
+      496.8
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      497.04,
+      497.04,
+      497.04,
+      497.04,
+      497.04
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      496.76,
+      496.76
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Nature's Focus -> Furor"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.3102
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.2209
+    },
+    {
+     "feature": "Moonkin Form",
+     "importance": 0.1417
+    },
+    {
+     "feature": "Naturalist",
+     "importance": 0.0582
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.0532
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0462
+    },
+    {
+     "feature": "Moonglow",
+     "importance": 0.033
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0241
+    },
+    {
+     "feature": "Genesis",
+     "importance": 0.017
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0165
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.014
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0124
+    }
+   ],
+   "simulated_builds": 1438,
+   "simulated_fights": 2303000,
+   "minutes": 0.9,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json"
+  },
+  "prebis-raid": {
+   "class": "druid",
+   "spec": "Balance",
+   "setting": "raid",
+   "entry": "balance-dps",
+   "date": "2026-10-02",
+   "constraint": "Balance 30+",
+   "protected": [],
+   "entries_screened": {},
+   "entries_searched": [
+    "balance-dps"
+   ],
+   "winner": {
+    "allocation": {
+     "Balance": [
+      [
+       "Genesis",
+       5
+      ],
+      [
+       "Moonglow",
+       3
+      ],
+      [
+       "Improved Moonfire",
+       2
+      ],
+      [
+       "Nature's Majesty",
+       2
+      ],
+      [
+       "Nature's Reach",
+       2
+      ],
+      [
+       "Nature's Splendor",
+       1
+      ],
+      [
+       "Insect Swarm",
+       1
+      ],
+      [
+       "Vengeance",
+       5
+      ],
+      [
+       "Improved Starfire",
+       5
+      ],
+      [
+       "Nature's Grace",
+       1
+      ],
+      [
+       "Moonfury",
+       5
+      ],
+      [
+       "Moonkin Form",
+       1
+      ]
+     ],
+     "Feral Combat": [
+      [
+       "Heart of the Wild",
+       5
+      ]
+     ],
+     "Restoration": [
+      [
+       "Nature's Focus",
+       5
+      ],
+      [
+       "Naturalist",
+       5
+      ],
+      [
+       "Reflection",
+       3
+      ]
+     ]
+    },
+    "split": "33/5/13",
+    "dps": 565.73,
+    "se": 0.089,
+    "iterations": 100000
+   },
+   "runner_up": {
+    "split": "33/5/13",
+    "dps": 565.73,
+    "se": 0.089,
+    "differs": [
+     [
+      "Furor",
+      2
+     ],
+     [
+      "Nature's Focus",
+      3
+     ],
+     [
+      "Nature's Focus",
+      5
+     ]
+    ]
+   },
+   "gap_to_runner_up": 0.0,
+   "runs": [
+    {
+     "entry": "balance-dps",
+     "run": 1,
+     "simulated": 1181,
+     "best_screen": 565.88,
+     "best_split": "33/5/13",
+     "trace": [
+      {
+       "round": 0,
+       "simulated": 381,
+       "best": 565.88
+      },
+      {
+       "round": 1,
+       "simulated": 581,
+       "best": 565.88,
+       "predicted_top": 564.24
+      },
+      {
+       "round": 2,
+       "simulated": 781,
+       "best": 565.88,
+       "predicted_top": 565.17
+      },
+      {
+       "round": 3,
+       "simulated": 981,
+       "best": 565.88,
+       "predicted_top": 565.56
+      },
+      {
+       "round": 4,
+       "simulated": 1181,
+       "best": 565.88,
+       "predicted_top": 565.22
+      }
+     ],
+     "best_stage1_gap": 0.0,
+     "agrees_with_winner": true
+    }
+   ],
+   "runs_agree": 1,
+   "race": [
+    {
+     "iterations": 10000,
+     "seed": 2,
+     "dps": [
+      565.96,
+      565.96,
+      565.96,
+      565.96,
+      565.96,
+      565.96
+     ]
+    },
+    {
+     "iterations": 30000,
+     "seed": 3,
+     "dps": [
+      565.9,
+      565.9,
+      565.9,
+      565.9,
+      565.9
+     ]
+    },
+    {
+     "iterations": 100000,
+     "seed": 4,
+     "dps": [
+      565.73,
+      565.73
+     ]
+    }
+   ],
+   "certificate": [
+    {
+     "neighbours": 233,
+     "best_gap": 0.0,
+     "best_move": "5 Nature's Focus -> Furor"
+    }
+   ],
+   "other_entries": [],
+   "important_features": [
+    {
+     "feature": "Naturalist",
+     "importance": 0.2493
+    },
+    {
+     "feature": "Improved Wrath",
+     "importance": 0.2352
+    },
+    {
+     "feature": "Moonfury",
+     "importance": 0.2031
+    },
+    {
+     "feature": "Improved Starfire",
+     "importance": 0.0613
+    },
+    {
+     "feature": "Improved Entangling Roots",
+     "importance": 0.0385
+    },
+    {
+     "feature": "Insect Swarm",
+     "importance": 0.0339
+    },
+    {
+     "feature": "Balance points",
+     "importance": 0.0315
+    },
+    {
+     "feature": "Vengeance",
+     "importance": 0.0313
+    },
+    {
+     "feature": "Restoration points",
+     "importance": 0.0235
+    },
+    {
+     "feature": "Reflection",
+     "importance": 0.0204
+    },
+    {
+     "feature": "Feral Combat points",
+     "importance": 0.0171
+    },
+    {
+     "feature": "Moonkin Form",
+     "importance": 0.0117
+    }
+   ],
+   "simulated_builds": 1428,
+   "simulated_fights": 2293000,
+   "minutes": 1.0,
+   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/druid-balance-prebis.gear.json"
+  }
+ },
+ "spells_done": {
+  "date": "2026-10-01",
+  "lines_kept": 0
+ },
+ "compare": {
+  "dps": {
+   "winner": {
+    "entry": "balance-dps",
+    "dps": 535.68,
+    "se": 0.097
+   },
+   "balance-moonkin-raid": {
+    "entry": "balance-dps",
+    "dps": 535.68,
+    "se": 0.097
+   }
+  },
+  "best_hand": "balance-moonkin-raid",
+  "gain_vs_hand": 0.0
+ },
+ "parse": {
+  "bis-dummy": {
+   "entry": "balance-dps",
+   "dps": 613.61,
+   "se": 0.106
+  },
+  "bis-raid": {
+   "entry": "balance-dps",
+   "dps": 613.61,
+   "se": 0.106
+  },
+  "gain": 0.0,
+  "vs_parse": null
+ },
+ "builds": {
+  "written": [],
+  "superseded": [],
+  "date": "2026-10-02",
+  "why": "confirms balance-moonkin-raid (+0.00%)"
+ }
+}

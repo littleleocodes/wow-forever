@@ -120,6 +120,26 @@
     }
    },
    "notes": "apl_opt 2026-09-28: changed or added by the rotation search (see bm-raid-rotation-search.json)"
+  },
+  {
+   "action": {
+    "condition": {
+     "auraIsInactive": {
+      "sourceUnit": {
+       "type": "Self"
+      },
+      "auraId": {
+       "spellId": 19577
+      }
+     }
+    },
+    "castSpell": {
+     "spellId": {
+      "spellId": 19577
+     }
+    }
+   },
+   "notes": "apl_opt 2026-10-01: changed or added by the rotation search (see bm-raid-rotation-search.json)"
   }
  ]
 }

@@ -66,29 +66,33 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**4 of 6** for `enhancement-dps` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 426 | +0.0% | 780 | +0.0% | 9 s |
-| 2 | [`enhancement-raid`](enhancement-raid.md) | ours: hand draft | 11/31/9 | 424 | -0.4% | 770 | -1.2% | 0 s |
-| 3 | *Level 60* | community simulator | - | 421 | -1.1% | 775 | -0.6% | 26 s |
-| 4 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 420 | -1.3% | 770 | -1.3% | 9 s |
-| 5 | *Enhancement 16/35/0* | community simulator | - | 388 | -8.9% | 761 | -2.3% | 81 s |
+| 1 | [`enhancement-ml-raid`](enhancement-ml-raid.md) | ours: hand draft | 20/31/0 | 414 | +0.0% | 774 | -3.0% | 27 s |
+| 2 | [`opt-enhancement-dps-raid-dps`](opt-enhancement-dps-raid-dps.md) | ours: optimizer | 11/31/9 | 413 | -0.2% | 755 | -5.3% | 14 s |
+| 3 | [`enhancement-ml-parse`](enhancement-ml-parse.md) | ours: parse build | 18/33/0 | 408 | -1.4% | 798 | +0.0% | 17 s |
+| 4 | **[`enhancement-raid-dps`](enhancement-raid-dps.md)** | ours: hand draft | 11/31/9 | 408 | -1.6% | 745 | -6.6% | 14 s |
+| 5 | *Level 60* | community simulator | - | 405 | -2.2% | 755 | -5.4% | 31 s |
+| 6 | *Enhancement 16/35/0* | community simulator | - | 367 | -11.4% | 734 | -8.1% | 84 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 3 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 406 -> 415 DPS (+2.3%), sim preset: Level 60 392 -> 400 DPS (+2.0%)):
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 5 changes to the base rotation; third-seed check: ml: Enhancement 400 -> 417 DPS (+4.3%), opt-enhancement-dps-raid-dps 392 -> 413 DPS (+5.3%), sim preset: Level 60 390 -> 405 DPS (+3.7%)):
   1. insert before the filler: if not Flame Shock is on the target: cast Flame Shock (+0.6%, pass 1)
   2. only above 60% mana: cast Earth Shock (+1.1%, pass 1)
   3. drop the condition: if mana % ≥ 60%: cast Earth Shock (+3.0%, pass 2)
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 3 passes, the last 2026-09-29, 6 changes to the base rotation; third-seed check: opt-enhancement-dps-raid-dps 702 -> 774 DPS (+10.3%), sim preset: Level 60 690 -> 756 DPS (+9.7%)):
+  4. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.8%, pass 4)
+  5. insert at the end: if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem (+0.4%, pass 4)
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 4 passes, the last 2026-10-02, 7 changes to the base rotation; third-seed check: ml: Enhancement 684 -> 772 DPS (+12.8%), opt-enhancement-dps-raid-dps 662 -> 755 DPS (+14.1%), sim preset: Level 60 669 -> 756 DPS (+13.0%)):
   1. insert in the middle: if not Flame Shock is on the target: cast Flame Shock (+1.0%, pass 1)
   2. threshold 5 -> 3.75: if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt (+0.3%, pass 1)
   3. drop 'time left in the fight ≥ 20s' from the condition: if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem (+0.2%, pass 1)
   4. insert before the filler: cast Fire Nova (+7.3%, pass 2)
   5. move down below 'cast Stormstrike': if not Flame Shock is on the target: cast Flame Shock (+0.3%, pass 2)
   6. move down below 'cast Earth Shock': cast Fire Nova + only with 10s or more of the fight left: if not Flame Shock is on the target: cast Flame Shock (+0.2%, pass 2)
+  7. threshold 3.75 -> 2.812: if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt (+0.3%, pass 4)
 
 Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
@@ -98,23 +102,23 @@ Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of A
 | 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 14.1 |
-| 5 | if stacks of Maelstrom Weapon ≥ 5: cast Lightning Bolt | 3.8 |
-| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.2 |
-| 8 | cast Earth Shock | 5.0 |
+| 5 | if stacks of Maelstrom Weapon ≥ 3.75: cast Lightning Bolt | 4.6 |
+| 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.0 |
+| 8 | cast Earth Shock | 4.8 |
+| 9 | if number of targets = 1 and not Searing Totem is on the target: cast Searing Totem | 1.3 |
 
 Damage by ability:
 
 | Ability | [`enhancement-raid-dps`](enhancement-raid-dps.md) |
 |---|---|
-| Auto Attack | 29% |
-| Windfury Weapon | 19% |
-| Stormstrike | 12% |
-| Earth Shock | 11% |
+| Auto Attack | 28% |
+| Windfury Weapon | 18% |
+| Lightning Bolt | 12% |
+| Earth Shock | 12% |
 | Flame Shock | 10% |
-| Lightning Bolt | 9% |
-| Attack | 5% |
-| Elemental Sharpening Stone | 3% |
+| Stormstrike | 10% |
+| Attack | 6% |
 | Dragonbreath Chili | 3% |
 
 ## Notes
