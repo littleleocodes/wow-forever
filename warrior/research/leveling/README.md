@@ -28,7 +28,7 @@ Classic Era reference builds: [leveling-arms](../talents/classic-baseline/leveli
 
 - [Leveling guide](guide.md): the recommended build `leveling-arms` level by level, what each bracket feels like and what the fight lab does not model.
 - [Rotation](rotation.md): the priority the fight lab plays and what each leveling build casts per kill, level by level.
-- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**66.3 h** (26.3% faster than talentless), 0 respec(s).).
+- [Respec plan](respec-plan.md): when a respec while leveling pays for itself (**66.1 h** (26.5% faster than talentless), 1 respec(s).).
 - Recommended build: [leveling-arms](builds/leveling-arms.md).
 
 ## Fight lab (Monte Carlo fight simulator)

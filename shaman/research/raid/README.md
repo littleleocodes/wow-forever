@@ -37,12 +37,12 @@ Our builds and the community simulator's own builds, run through the same simula
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
-| 2 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
-| 3 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 438 | -0.4% | 556 | +0.0% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 434 | -1.2% | 549 | -1.3% | 0 s |
-| 5 | *Stormcaller 28/23/0* | community simulator | - | 421 | -4.3% | 537 | -3.4% | 0 s |
-| 6 | *Level 60* | community simulator | - | 419 | -4.7% | 530 | -4.7% | 0 s |
+| 1 | [`opt-elemental-dps-raid-dps`](builds/opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 440 | +0.0% | 553 | -0.3% | 0 s |
+| 2 | [`elemental-raid`](builds/elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.3% | 0 s |
+| 3 | [`elemental-raid-dps`](builds/elemental-raid-dps.md) | ours: hand draft | 29/22/0 | 438 | -0.5% | 555 | +0.0% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 434 | -1.2% | 549 | -1.1% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 421 | -4.3% | 537 | -3.2% | 0 s |
+| 6 | *Level 60* | community simulator | - | 419 | -4.7% | 530 | -4.6% | 0 s |
 
 **enhancement-dps**
 
@@ -106,19 +106,9 @@ The class's best raid DPS build on the training dummy: [`opt-elemental-dps-raid-
 |---|---|---|---|---|---|---|---|
 | `elemental-dps` | dummy | `opt-elemental-dps-raid-dps` | 31/7/13 | 440 | +0.0% | 0 | +72% |
 | `elemental-dps` | dummy | `elemental-raid` | 31/7/13 | 440 | +0.0% | 0 | +72% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r8` | 31/7/13 | 440 | +0.0% | 0 | +72% |
-| `elemental-dps` | dummy | `cand-elemental-dps-spec-elemental` | 31/7/13 | 440 | +0.0% | 0 | +72% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r7` | 31/7/13 | 439 | -0.1% | 0 | +72% |
-| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 438 | -0.4% | 0 | +70% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r1` | 29/22/0 | 438 | -0.4% | 0 | +69% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r2` | 29/22/0 | 438 | -0.4% | 0 | +69% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r3` | 29/22/0 | 437 | -0.7% | 0 | +69% |
-| `elemental-dps` | dummy | `cand-elemental-dps-r4` | 29/22/0 | 437 | -0.7% | 0 | +70% |
+| `elemental-dps` | dummy | `elemental-raid-dps` | 29/22/0 | 438 | -0.5% | 0 | +70% |
 | `elemental-dps` | dummy | sim preset: Elemental 31/6/14 | - | 434 | -1.2% | 0 | - |
-| `elemental-dps` | dummy | `cand-elemental-dps-r6` | 30/11/10 | 430 | -2.2% | 0 | +69% |
-| `elemental-dps` | dummy | `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 423 | -3.9% | 0 | +65% |
 | `elemental-dps` | dummy | sim preset: Stormcaller 28/23/0 | - | 421 | -4.3% | 0 | - |
-| `elemental-dps` | dummy | `cand-elemental-dps-r5` | 16/22/13 | 419 | -4.6% | 0 | +64% |
 | `elemental-dps` | dummy | sim preset: Level 60 | - | 419 | -4.7% | 0 | - |
 | `enhancement-dps` | dummy | `enhancement-ml-raid` | 20/31/0 | 414 | +0.0% | 27 | +121% |
 | `enhancement-dps` | dummy | `opt-enhancement-dps-raid-dps` | 11/31/9 | 413 | -0.2% | 14 | +124% |
@@ -152,7 +142,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `elemental-dps` | `opt-elemental-dps-raid-dps` | 31/7/13 | 440 | 517 | 553 | 553 | 567 |
 | `elemental-dps` | `elemental-raid` | 31/7/13 | 440 | 517 | 553 | 553 | 567 |
 | `elemental-dps` | `opt-elemental-dps-parse` | 31/7/13 | 440 | 517 | 553 | 553 | 567 |
-| `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 438 | 538 | 556 | 556 | 568 |
+| `elemental-dps` | `elemental-raid-dps` | 29/22/0 | 438 | 538 | 555 | 555 | 570 |
 | `elemental-dps` | sim preset: Elemental 31/6/14 | - | 434 | 511 | 549 | 549 | 565 |
 | `elemental-dps` | sim preset: Stormcaller 28/23/0 | - | 421 | 518 | 537 | 537 | 558 |
 | `elemental-dps` | sim preset: Level 60 | - | 419 | 494 | 530 | 530 | 543 |

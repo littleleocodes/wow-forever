@@ -1618,5 +1618,421 @@
   ],
   "superseded": [],
   "date": "2026-10-02"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Arcane Focus",
+      5
+     ],
+     [
+      "Improved Channeling",
+      3
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Arcane Meditation",
+      3
+     ],
+     [
+      "Missile Barrage",
+      1
+     ],
+     [
+      "Presence of Mind",
+      1
+     ]
+    ],
+    "Fire": [],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      1
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Winter's Chill",
+      5
+     ]
+    ]
+   },
+   "split": "21/0/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arcane Blast",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    }
+   ],
+   "abilities_never_cast": [
+    "Arcane Blast"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Arcane Focus",
+      5
+     ],
+     [
+      "Improved Channeling",
+      5
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Arcane Meditation",
+      1
+     ],
+     [
+      "Missile Barrage",
+      1
+     ],
+     [
+      "Arcane Mind",
+      1
+     ]
+    ],
+    "Fire": [],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      1
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Winter's Chill",
+      5
+     ]
+    ]
+   },
+   "split": "21/0/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arcane Blast",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Arcane Resilience",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    }
+   ],
+   "abilities_never_cast": [
+    "Arcane Blast"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Arcane Focus",
+      5
+     ],
+     [
+      "Improved Channeling",
+      3
+     ],
+     [
+      "Arcane Concentration",
+      5
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Arcane Meditation",
+      3
+     ],
+     [
+      "Missile Barrage",
+      1
+     ],
+     [
+      "Arcane Mind",
+      1
+     ]
+    ],
+    "Fire": [],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      1
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Winter's Chill",
+      5
+     ]
+    ]
+   },
+   "split": "21/0/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arcane Blast",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    }
+   ],
+   "abilities_never_cast": [
+    "Arcane Blast"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Arcane Focus",
+      5
+     ],
+     [
+      "Improved Channeling",
+      5
+     ],
+     [
+      "Magic Absorption",
+      2
+     ],
+     [
+      "Arcane Concentration",
+      2
+     ],
+     [
+      "Arcane Impact",
+      3
+     ],
+     [
+      "Missile Barrage",
+      1
+     ],
+     [
+      "Arcane Mind",
+      1
+     ],
+     [
+      "Arcane Subtlety",
+      2
+     ]
+    ],
+    "Fire": [],
+    "Frost": [
+     [
+      "Improved Frostbolt",
+      5
+     ],
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Ice Lance",
+      1
+     ],
+     [
+      "Shatter",
+      3
+     ],
+     [
+      "Fingers of Frost",
+      2
+     ],
+     [
+      "Winter's Chill",
+      5
+     ],
+     [
+      "Frost Channeling",
+      1
+     ]
+    ]
+   },
+   "split": "21/0/30",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arcane Concentration",
+     "to": "Improved Channeling",
+     "seed1": 0.00043968803492133723,
+     "seed2": 7.632887459574356e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Arcane Blast",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Arcane Shielding",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Improved Counterspell",
+     "to": "Arcane Subtlety",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Improved Counterspell",
+     "to": "Arcane Subtlety",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Frost Warding",
+     "to": "Frost Channeling",
+     "seed1": -6.7003410441413e-05,
+     "seed2": 0.0002481500191557906,
+     "utility": "threat"
+    }
+   ],
+   "abilities_never_cast": [
+    "Arcane Blast"
+   ],
+   "final_seed3": -1.7916357758052115e-05
+  }
  }
 }

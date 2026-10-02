@@ -6,19 +6,9 @@
 |---|---|---|---|---|---|---|---|
 | `opt-elemental-dps-raid-dps` | 31/7/13 | 440 | 21 | +0.0% | 446 | 0 | +71.7% |
 | `elemental-raid` | 31/7/13 | 440 | 21 | +0.0% | 446 | 0 | +71.7% |
-| `cand-elemental-dps-r8` | 31/7/13 | 440 | 21 | +0.0% | 446 | 0 | +71.7% |
-| `cand-elemental-dps-spec-elemental` | 31/7/13 | 440 | 21 | +0.0% | 446 | 0 | +71.7% |
-| `cand-elemental-dps-r7` | 31/7/13 | 439 | 21 | -0.1% | 445 | 0 | +71.7% |
-| `elemental-raid-dps` | 29/22/0 | 438 | 23 | -0.4% | 442 | 0 | +69.5% |
-| `cand-elemental-dps-r1` | 29/22/0 | 438 | 23 | -0.4% | 442 | 0 | +69.5% |
-| `cand-elemental-dps-r2` | 29/22/0 | 438 | 23 | -0.4% | 442 | 0 | +69.5% |
-| `cand-elemental-dps-r3` | 29/22/0 | 437 | 23 | -0.7% | 441 | 0 | +69.5% |
-| `cand-elemental-dps-r4` | 29/22/0 | 437 | 23 | -0.7% | 441 | 0 | +69.5% |
+| `elemental-raid-dps` | 29/22/0 | 438 | 23 | -0.5% | 442 | 0 | +69.5% |
 | sim preset: Elemental 31/6/14 | - | 434 | 21 | -1.2% | 441 | 0 | - |
-| `cand-elemental-dps-r6` | 30/11/10 | 430 | 21 | -2.2% | 433 | 0 | +69.1% |
-| `cand-elemental-dps-hand-2026-09-26` | 31/0/20 | 423 | 20 | -3.9% | 406 | 0 | +65.4% |
 | sim preset: Stormcaller 28/23/0 | - | 421 | 21 | -4.3% | 425 | 0 | - |
-| `cand-elemental-dps-r5` | 16/22/13 | 419 | 16 | -4.6% | 435 | 0 | +63.6% |
 | sim preset: Level 60 | - | 419 | 19 | -4.7% | 364 | 0 | - |
 
 ## Damage shares (`opt-elemental-dps-raid-dps`, simulator actions)
@@ -38,18 +28,8 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 
 - opt-elemental-dps-raid-dps: `5500301303113051-052-05305`
 - elemental-raid: `5500301303113051-052-05305`
-- cand-elemental-dps-r8: `5500301303113051-052-05305`
-- cand-elemental-dps-spec-elemental: `5530311300103051-052-05305`
-- cand-elemental-dps-r7: `5531301300103051-052-05305`
-- elemental-raid-dps: `550430130010304-255000001330102`
-- cand-elemental-dps-r1: `550430130010304-255200311000102`
-- cand-elemental-dps-r2: `550430130010304-055230301000102`
-- cand-elemental-dps-r3: `553130130010304-055222301000002`
-- cand-elemental-dps-r4: `553130130010304-055100301050002`
+- elemental-raid-dps: `550230130210304-255000001340002`
 - sim preset: Elemental 31/6/14: `2505301300123051-0500001-053050001`
-- cand-elemental-dps-r6: `553130130010305-055000001-05005`
-- cand-elemental-dps-hand-2026-09-26: `5500301302123051--053150001041`
 - sim preset: Stormcaller 28/23/0: `150533130010303-055030030004102`
-- cand-elemental-dps-r5: `35003013001-055001301050002-05305`
 - sim preset: Level 60: `5505301300103051--503352001`
 

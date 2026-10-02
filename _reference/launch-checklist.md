@@ -415,7 +415,8 @@
 **Combat Daggers (raid DPS)** (`rogue/research/raid/builds/combat-daggers-raid.md`)
 - [ ] Hack and Slash dagger rank scaling (only rank 1 = 1% crit was read; ranks 2-5 are extrapolated).
 
-**Assassination — Mutilate / Venom (raid DPS)** (`rogue/research/raid/builds/assassination-mutilate-raid.md`)
+**Assassination — Seal Fate / Vigor (raid DPS; formerly the Mutilate draft)** (`rogue/research/raid/builds/assassination-mutilate-raid.md`)
+- [ ] At launch: does Mutilate beat Backstab for a dagger Assassination rogue? If it does, put a point back into Mutilate (it replaced Improved Poisons 1 of 5) and play it as the builder.
 - [ ] Mutilate damage at level 60 (demo shows level-38 numbers) and whether Venom's poison bonus makes poison builds the top damage.
 - [ ] Whether poisons still consume charges / how Improved Poisons interacts with Windfury Totem for Horde.
 

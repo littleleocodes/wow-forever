@@ -7,7 +7,7 @@
 | mage | `arcane-dps` | `arcane-blast-raid` | 602 | - | - | - | - |
 | mage | `fire-raid` | `cand-fire-raid-r5` | 599 | Fire DPS | 579 | `opt-fire-raid-raid-dps` | 598 |
 | mage | `frost-raid` | `frost-ml-raid` | 647 | Frost DPS | 603 | `opt-frost-raid-raid-dps` | 643 |
-| mage | `frostfire-raid` | `frostfire-raid` | 616 | - | - | - | - |
+| mage | `frostfire-raid` | `frostfire-raid` | 615 | - | - | - | - |
 | priest | `shadow-dps` | `opt-shadow-dps-raid-dps` | 632 | Shadow | 618 | `opt-shadow-dps-raid-dps` | 632 |
 | priest | `smite-dps` | `smite-discipline-raid` | 444 | - | - | - | - |
 | warlock | `affliction-raid` | `opt-affliction-raid-raid-dps` | 640 | Demonic Pact 2/31/18 | 592 | `opt-affliction-raid-raid-dps` | 640 |
@@ -46,7 +46,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | mage | Forever | `arcane-dps` | `arcane-blast-raid` (35/11/5) | 602 | 690 | 690 | 690 | 756 | - | Arcane DPS 681 |
 | mage | Forever | `fire-raid` | `fire-raid` (12/34/5) | 598 | 689 | 747 | 747 | 810 | `opt-fire-raid-parse` 747 | Fire 0/35/16 720 |
 | mage | Forever | `frost-raid` | `frost-ml-raid` (21/0/30) | 647 | 710 | 739 | 739 | 750 | `opt-frost-raid-parse` 706 | Frost 14/0/37 702 |
-| mage | Forever | `frostfire-raid` | `frostfire-raid` (2/33/16) | 616 | 752 | 726 | 726 | 695 | - | - |
+| mage | Forever | `frostfire-raid` | `frostfire-raid` (4/31/16) | 615 | 751 | 722 | 722 | 679 | - | - |
 | mage | Classic | `fire-raid` | `fire-raid` (17/31/3) | 495 | - | 1003 | 1014 | 1025 | - | Frost DPS 752 |
 | mage | Classic | `frost-raid` | `frost-arcane-power-raid` (31/0/20) | 461 | - | 781 | 836 | 866 | - | Frost DPS 752 |
 | priest | Forever | `shadow-dps` | `opt-shadow-dps-raid-dps` (20/0/31) | 632 | 689 | 724 | 724 | 698 | `opt-shadow-dps-parse` 711 | Shadow 710 |
@@ -58,7 +58,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | warlock | Forever | `sb-raid` | `opt-sb-raid-raid-dps` (22/11/18) | 639 | 730 | 759 | 759 | 787 | `opt-sb-raid-parse` 733 | DS/Ruin Pandemic 24/11/16 721 |
 | warlock | Classic | `sb-raid` | `sm-ruin-raid` (30/0/21) | 599 | - | 1092 | 1105 | 1153 | - | - |
 | hunter | Forever | `bm-raid` | `beast-mastery-ml-parse` (31/20/0) | 450 | 491 | 812 | 812 | 835 | `beast-mastery-ml-parse` 812 | Beast Mastery 35/16/0 762 |
-| hunter | Forever | `melee-dps` | `survival-ml-parse` (5/11/35) | 336 | 404 | 991 | 991 | 1026 | `survival-ml-parse` 991 | - |
+| hunter | Forever | `melee-dps` | `melee-survival-raid` (5/11/35) | 426 | 501 | 991 | 991 | 1026 | `survival-ml-parse` 991 | - |
 | hunter | Forever | `mm-lonewolf-raid` | `marksmanship-ml-parse` (7/44/0) | 446 | 480 | 935 | 935 | 957 | `marksmanship-ml-parse` 935 | Marksmanship 748 |
 | hunter | Forever | `mm-raid` | `opt-mm-raid-parse` (22/29/0) | 439 | 474 | 771 | 785 | 803 | `opt-mm-raid-parse` 785 | Marksmanship 804 |
 | hunter | Classic | `mm-raid` | `bm-mm-raid` (20/31/0) | 405 | - | 1049 | 1085 | 1146 | - | Marksmanship 1087 |
@@ -77,7 +77,7 @@ The best of our builds per spec model on the boss-level training dummy with your
 | paladin | Forever | `ret-dps` | `retribution-ml-raid` (11/8/32) | 546 | 608 | 1015 | 1015 | 1002 | `opt-ret-dps-parse` 1009 | P4/P5 Ret 983 |
 | paladin | Forever | `seal-of-fury-raid` | `ret-raid-dps` (17/0/34) | 415 | 459 | 738 | 738 | 749 | - | - |
 | paladin | Classic | `ret-dps` | `ret-raid-dps` (11/0/40) | 213 | - | 661 | 661 | 671 | - | P4/P5 Ret 710 |
-| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 438 | 538 | 556 | 556 | 568 | `opt-elemental-dps-parse` 553 | Elemental 31/6/14 549 |
+| shaman | Forever | `elemental-dps` | `elemental-raid-dps` (29/22/0) | 438 | 538 | 555 | 555 | 570 | `opt-elemental-dps-parse` 553 | Elemental 31/6/14 549 |
 | shaman | Forever | `enhancement-dps` | `enhancement-ml-parse` (18/33/0) | 408 | 459 | 798 | 798 | 851 | `enhancement-ml-parse` 798 | Level 60 755 |
 | shaman | Classic | `elemental-dps` | `elemental-raid-dps` (31/0/20) | 298 | - | 730 | 1051 | 1184 | - | Level 60 1014 |
 | shaman | Classic | `enhancement-dps` | `enhancement-raid-support` (0/31/20) | 222 | - | 777 | 938 | 958 | - | Level 60 938 |

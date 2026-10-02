@@ -8,6 +8,8 @@
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
+**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Rapid Fire**
@@ -28,7 +30,7 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 437 | 834 | [21/30/0](https://talentsforever.com/hunter/60/50131005041001-005355001150005--4) |
+| Pre-BiS | 437 | 834 | [21/30/0](https://talentsforever.com/hunter/60/52030005041001-005355001150005--4) |
 | Phase 1 BiS | 452 | 910 | [11/40/0](https://talentsforever.com/hunter/60/5501-305355041150305--4) |
 
 - **Pre-BiS gear** (average item level 63.1): Head: Black Dragonscale Helm; Neck: Pendant of Celerity; Shoulders: Theramore Pauldrons; Back: Earthweave Cloak; Chest: Magister's Robes; Wrist: Rockfury Bracers; Hands: Beaststalker's Gloves; Waist: Knowledge of the Timbermaw; Legs: Outrider's Chain Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Premier High Warlord's Recurve

@@ -74,7 +74,7 @@
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Killing** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `mm-lone-wolf-raid` | mm-lonewolf-raid / raid-dps | **Rapid Recuperation** | Marksmanship | 2 | +0.00% | manual | OPEN |  |
 
-## Mage - 54 flagged of 107 taken talents, 3 without a documented reason
+## Mage - 49 flagged of 104 taken talents, 4 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -121,16 +121,11 @@
 | classic | `leveling-frost` | frost-leveling / leveling-st | **Frost Channeling** | Frost | 3 | +0.33% | manual | sustain (from frost-aoe) | 'A great Mana efficiency increase' on the Blizzard channel. |
 | classic | `leveling-frost` | frost-leveling / leveling-st | **Arcane Subtlety** | Arcane | 2 | +0.37% | manual | filler (from frost-aoe) | 'Here to help with any enemies that have frost or arcane resistances' - Arcane tier-1 path point. |
 | forever-draft | `fire-raid` | fire-raid / raid-dps | **Burning Soul** | Fire | 2 | +0.00% | manual | utility | Threat reduction and pushback resistance: taken with 2-3 points so Fire mages do not pull aggro. |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
 | forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Missile Barrage** | Arcane | 1 | +0.00% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Improved Channeling** | Arcane | 5 | +0.01% | manual | OPEN |  |
-| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 5 | +0.29% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Cold Snap** | Frost | 1 | +0.00% | manual | safety | Second Ice Block. |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arctic Reach** | Frost | 2 | +0.00% | manual | control (from frost-aoe) | 'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers. |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Arcane Blast** | Arcane | 1 | +0.00% | manual | throughput | The Arcane nuke (beta: every cast raises your other spells' damage by 10% and its own cost): part of the 31-point Arcane Power rotation. The |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Ice Block** | Frost | 1 | +0.00% | manual | safety | Survival on fire/AoE mechanics (Ragnaros, Baron Geddon); no DPS. |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Improved Channeling** | Arcane | 3 | +0.00% | manual | OPEN |  |
-| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Ice Barrier** | Frost | 1 | +0.01% | manual | safety | Absorb and no pushback: a small casting-uptime gain and survival. |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Improved Channeling** | Arcane | 5 | +0.00% | manual | OPEN |  |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Focus** | Arcane | 5 | +0.30% | manual | filler | Cheapest tier-1 path to Arcane Concentration; Arcane hit does nothing for Frostbolt. |
+| forever-draft | `frost-arcane-power-raid` | frost-raid / raid-dps-extwc | **Arcane Impact** | Arcane | 3 | +0.34% | manual | OPEN |  |
+| forever-draft | `frost-winters-chill-raid` | frost-raid / raid-dps | **Improved Channeling** | Arcane | 4 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-frost` | frost-leveling / leveling-st | **Arctic Reach** | Frost | 1 | +0.05% | manual | control (from frost-aoe) | 'Hit enemies with your frost spells from further away, reducing your melee damage taken'; a bigger Nova/Cone radius catches stragglers. |
 
 ## Paladin - 25 flagged of 72 taken talents, 1 without a documented reason
@@ -192,7 +187,7 @@
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Silence** | Shadow | 1 | +0.00% | manual | control | 5 s silence and a 3 s interrupt (beta): the leveling answer to caster mobs (the fight lab's interrupt); raid utility only. |
 | forever-draft | `leveling-shadow` | shadow-dps / raid-dps | **Mental Agility** | Discipline | 3 | +0.11% | manual | sustain (from holy-heal) | Cheaper instants (Renew, Shield): part of the mana budget. |
 
-## Rogue - 23 flagged of 63 taken talents, 5 without a documented reason
+## Rogue - 22 flagged of 62 taken talents, 4 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -212,7 +207,6 @@
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Lightning Reflexes** | Combat | 4 | +0.16% | parsed | filler | Raid: tier filler (dodge does nothing on bosses); leveling: 1% dodge per rank. |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.17% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
 | classic | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Blade Flurry** | Combat | 1 | +0.34% | manual | OPEN |  |
-| forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Riposte** | Combat | 1 | +0.00% | manual | OPEN |  |
 | forever-draft | `combat-swords-raid` | combat-swords-raid / raid-dps | **Improved Expose Armor** | Assassination | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Improved Slice and Dice** | Assassination | 3 | +0.00% | manual | enabler | 'A staple in both Rogue builds, since it helps you spend less combo points on maintaining the buff.' |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Mutilate** | Assassination | 1 | +0.00% | manual | OPEN |  |
@@ -220,7 +214,7 @@
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Endurance** | Combat | 1 | +0.00% | manual | safety | Evasion/Sprint cooldowns: leveling survivability and escapes; raid filler. |
 | forever-draft | `leveling-combat-swords` | combat-swords-raid / leveling-st | **Dual Wield Specialization** | Combat | 4 | +0.19% | manual | OPEN |  |
 
-## Shaman - 33 flagged of 73 taken talents, 5 without a documented reason
+## Shaman - 32 flagged of 72 taken talents, 4 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -251,7 +245,6 @@
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Grace** | Restoration | 2 | +0.30% | manual | utility | -15% healing threat. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Healing Focus** | Restoration | 5 | +0.36% | manual | throughput | Pushback resistance when hit. |
 | classic | `resto-raid-healer` | resto-heal / raid-heal | **Tidal Mastery** | Restoration | 5 | +0.37% | manual | throughput | Crit heals (and Lightning). |
-| forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Reverberation** | Elemental | 4 | +0.00% | manual | OPEN |  |
 | forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Anticipation** | Enhancement | 3 | +0.00% | manual | safety (from enhancement-dps) | Dodge for a melee who takes hits; raid filler. |
 | forever-draft | `elemental-raid-dps` | elemental-dps / raid-dps | **Earth's Grasp** | Enhancement | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Elemental Weapons** | Enhancement | 3 | +0.00% | manual | throughput | +40% Windfury Weapon effect (beta): the imbue that is 23-33% of enhancement damage in the simulators; Enhancement tier-3 path. |

@@ -5,7 +5,7 @@
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 30/19/2 | 407 | 22 | +0.0% | 289 | 0 | - |
-| `assassination-mutilate-raid` | 30/21/0 | 392 | 22 | -3.7% | 278 | 0 | - |
+| `assassination-mutilate-raid` | 30/21/0 | 394 | 22 | -3.1% | 280 | 0 | - |
 | sim preset: Mutilate | - | 371 | 20 | -8.8% | 263 | 0 | - |
 | sim preset: Assassination Mutilate 31/20/0 | - | 359 | 20 | -11.7% | 255 | 0 | - |
 
@@ -27,7 +27,7 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
 - assassination-seal-fate-raid: `0053031232150005-305313000013-002`
-- assassination-mutilate-raid: `0053031252102105-305313000015`
+- assassination-mutilate-raid: `0053031252112005-305313000015`
 - sim preset: Mutilate: `00530310551021051-302303202004`
 - sim preset: Assassination Mutilate 31/20/0: `02532010531201051-225303000005`
 

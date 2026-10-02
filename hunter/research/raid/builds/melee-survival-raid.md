@@ -80,8 +80,8 @@ Forever's melee hunter for raids, built around traps: Survival's melee package (
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 450 | +0.0% | 967 | -2.4% | 12 s |
 | 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 430 | -4.5% | 965 | -2.6% | 9 s |
-| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | -0.0% | 47 s |
-| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/11/35 | 336 | -25.3% | 991 | +0.0% | 124 s |
+| 3 | **[`melee-survival-raid`](melee-survival-raid.md)** | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | +0.0% | 47 s |
+| 4 | [`survival-ml-parse`](survival-ml-parse.md) | ours: parse build | 5/14/32 | 347 | -22.9% | 991 | -0.0% | 119 s |
 
 ## Rotation (community simulator, training dummy)
 

@@ -496,9 +496,12 @@ def tune_builds(path, cls, trees):
     return out
 
 
-def main_builds(cls, spec, entry, repo, trees):
-    """The builds a spec's rotation is tuned on: our best build and the simulator's best preset in the last race, plus the entry's
-    `tune_builds` (builds whose own lines the rotation carries, so no change may cost them either)."""
+def main_builds(cls, spec, entry, repo, trees, where=None):
+    """The builds a spec's rotation is tuned on: our best build and the simulator's best preset in the last race, the entry's
+    `tune_builds` (builds whose own lines the rotation carries), and since 2026-10-02 every other build of ours the entry lists (the
+    pages show them as alternatives; parse builds only in the raid setting): no change may cost any of them more than --max-loss.
+    Before, an alternative was unprotected: the 2026-10-01 pass dropped the Frost rotation's Evocation line and cost the 1/13/37 Frost
+    build, which has no Arcane mana talents, 6.1%."""
     rep_path = paths.raidsim_dir(cls) / f"{spec}.json"
     tank = bool(entry.get("tank"))
     out = []
@@ -521,6 +524,12 @@ def main_builds(cls, spec, entry, repo, trees):
         t = R.talents_string(trees, R.alloc_of(data[bid]))
         if t not in {b["talents"] for b in out}:
             out.append({"label": bid, "talents": t})
+    raid = (where or R.setting(entry)) == "raid"
+    for bid in entry.get("builds", []):   # every alternative the pages show is protected too
+        if bid in data and (raid or not bid.endswith("-parse")):
+            t = R.talents_string(trees, R.alloc_of(data[bid]))
+            if t not in {b["talents"] for b in out}:
+                out.append({"label": bid, "talents": t})
     return out
 
 
@@ -531,7 +540,7 @@ def search(cls, spec, a, repo, N, where=None):
     tank = bool(entry.get("tank"))
     setting = where or R.setting(entry)
     trees = R.load_trees(repo, cls)
-    builds = main_builds(cls, spec, entry, repo, trees)
+    builds = main_builds(cls, spec, entry, repo, trees, setting)
     if getattr(a, "tune", None):   # the given builds first; the entry's main builds stay protected (no change may cost them 0.1% either)
         extra = tune_builds(a.tune, cls, trees)
         builds = extra + [b for b in builds if b["talents"] not in {x["talents"] for x in extra}]

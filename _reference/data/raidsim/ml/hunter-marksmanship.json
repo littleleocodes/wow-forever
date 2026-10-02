@@ -1815,5 +1815,323 @@
   ],
   "superseded": [],
   "date": "2026-10-02"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Hawk Eye",
+      3
+     ],
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Improved Stings",
+      3
+     ],
+     [
+      "Efficiency",
+      5
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Rapid Killing",
+      2
+     ],
+     [
+      "Improved Arcane Shot",
+      5
+     ],
+     [
+      "Lone Wolf",
+      1
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ],
+     [
+      "Mortal Shots",
+      5
+     ],
+     [
+      "Rapid Recuperation",
+      2
+     ],
+     [
+      "Barrage",
+      3
+     ],
+     [
+      "Ranged Weapon Specialization",
+      5
+     ],
+     [
+      "Sniper Shot",
+      1
+     ]
+    ],
+    "Survival": []
+   },
+   "split": "5/46/0",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Endurance Training",
+     "to": "Hawk Eye",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Revive Pet",
+     "to": "Hawk Eye",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ],
+     [
+      "Improved Aspect of the Monkey",
+      3
+     ],
+     [
+      "Unleashed Fury",
+      5
+     ],
+     [
+      "Ferocity",
+      4
+     ],
+     [
+      "Summon Hawk",
+      1
+     ],
+     [
+      "Bestial Discipline",
+      1
+     ],
+     [
+      "Endurance Training",
+      2
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Improved Stings",
+      3
+     ],
+     [
+      "Efficiency",
+      5
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Lone Wolf",
+      1
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ],
+     [
+      "Mortal Shots",
+      5
+     ],
+     [
+      "Ranged Weapon Specialization",
+      5
+     ]
+    ],
+    "Survival": []
+   },
+   "split": "21/30/0",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Focused Fire",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Pathfinding",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Beast Mastery": [
+     [
+      "Deadly Aspects",
+      5
+     ],
+     [
+      "Endurance Training",
+      4
+     ]
+    ],
+    "Marksmanship": [
+     [
+      "Hawk Eye",
+      3
+     ],
+     [
+      "Lethal Attacks",
+      5
+     ],
+     [
+      "Improved Stings",
+      3
+     ],
+     [
+      "Efficiency",
+      5
+     ],
+     [
+      "Careful Aim",
+      5
+     ],
+     [
+      "Improved Arcane Shot",
+      5
+     ],
+     [
+      "Lone Wolf",
+      1
+     ],
+     [
+      "Trueshot Aura",
+      1
+     ],
+     [
+      "Mortal Shots",
+      5
+     ],
+     [
+      "Barrage",
+      3
+     ],
+     [
+      "Ranged Weapon Specialization",
+      5
+     ],
+     [
+      "Sniper Shot",
+      1
+     ]
+    ],
+    "Survival": []
+   },
+   "split": "9/42/0",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Endurance Training",
+     "to": "Hawk Eye",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Focused Fire",
+     "to": "Hawk Eye",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Focused Fire",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Pathfinding",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Rapid Killing",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Scatter Shot",
+     "to": "Endurance Training",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Scatter Shot",
+    "Trueshot Aura"
+   ],
+   "final_seed3": 0.0
+  }
  }
 }

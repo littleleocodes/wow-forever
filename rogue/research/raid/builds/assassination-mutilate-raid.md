@@ -1,4 +1,4 @@
-# Assassination — Mutilate / Venom (raid DPS) — 30/21/0
+# Assassination — Seal Fate / Vigor (raid DPS; formerly the Mutilate draft) — 30/21/0
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned targets) at Assassination tier 5, Seal Fate (100% extra combo point on crits at max rank), Vigor and the Venom capstone (+30% poison damage), with Puncturing Wounds, Precision and Dual Wield Specialization from Combat. No Classic baseline — built from the demo tree.
+Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It began as the Mutilate / Venom draft (a new Forever spec built from the demo tree), but the simulator's tuned rotation never casts Mutilate (Backstab out-damages it in the simulator), so its Mutilate point moved to Improved Poisons on 2026-10-02 (+0.7% DPS) and Venom left on 2026-09-29. Mutilate and Venom are launch questions, not part of this build; assassination-seal-fate-raid is the simulator search's sibling.
 
 ## Point allocation
 
@@ -27,9 +27,9 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | **Vile Poisons** | 2/5 | moved | Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects. |
 | **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 | **Vigor** | 2/2 | changed | Increases your maximum Energy by 10. |
-| **Mutilate** | 1/1 | **NEW** | Instantly attacks with both weapons for 75% weapon damage plus an additional 13 with each weapon. Damage increased by 20% against Poisoned targets. Awards 2 Combo Points. |
 | **Seal Fate** | 5/5 | moved | Your critical strikes from abilities that add Combo Points have a 100% chance to add an additional Combo Point. |
 | **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
+| **Improved Poisons** | 1/5 | changed | Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge. |
 
 ### Combat (21)
 
@@ -49,17 +49,16 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 
 ## Core talents (priority order)
 
-1. **Mutilate** — Both weapons, 2 combo points, +20% vs. poisoned targets, no positional requirement.
-2. **Seal Fate** — Every crit from a combo-point builder adds a combo point at max rank — with Mutilate's two hits, 5-point finishers every other global.
-3. **Venom** — Capstone finisher: +30% poison damage and +10% poison application for up to 21s.
-4. **Puncturing Wounds** — +15% Mutilate crit.
-5. **Lethality** — +30% crit damage on Mutilate.
-6. **Malice** — +5% crit with attacks and poisons.
-7. **Dual Wield Specialization** — Mutilate hits with both weapons.
-8. **Precision** — +3% hit with attacks and poisons.
-9. **Vigor** — +10 max energy — Mutilate costs 60.
-10. **Cold Blood** — Guaranteed Mutilate/Eviscerate crit (tier 4 now).
-11. **Improved Slice and Dice** — Slice and Dice uptime.
+1. **Seal Fate** — Every crit from a combo-point builder adds a combo point: with Backstab's crit talents, frequent 5-point finishers.
+2. **Venom** — Capstone finisher: +30% poison damage and +10% poison application for up to 21s.
+3. **Puncturing Wounds** — +30% Backstab crit and a 45% chance for Backstab to add a combo point (beta tooltip).
+4. **Lethality** — +20% crit damage bonus on Backstab (beta tooltip).
+5. **Malice** — +5% crit with attacks and poisons.
+6. **Dual Wield Specialization** — +25% off-hand damage (beta tooltip).
+7. **Precision** — +3% hit with attacks and poisons.
+8. **Vigor** — +10 maximum energy (pools energy for Backstab and finishers).
+9. **Cold Blood** — A guaranteed Backstab or Eviscerate crit once per cooldown.
+10. **Improved Slice and Dice** — Slice and Dice uptime.
 
 ## Flex points
 
@@ -75,7 +74,7 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | +0.0% | 0 s |
-| 2 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 392 | -3.7% | 665 | -2.6% | 0 s |
+| 2 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 394 | -3.1% | 667 | -2.2% | 0 s |
 | 3 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
 | 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -7.7% | 0 s |
 
@@ -106,29 +105,31 @@ A genuinely new spec: Mutilate (both weapons, 2 combo points, +20% vs. poisoned 
 | 6 | if combo points ≥ 5 and Slice and Dice is up: cast Cold Blood | 0.3 |
 | 7 | if combo points ≥ 4 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 2.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (its condition never held in these fights); cast Hemorrhage (needs the Hemorrhage talent).
+Lines of the simulator's rotation these builds never cast: cast Ghostly Strike (needs the Ghostly Strike talent); cast Mutilate (needs the Mutilate talent); cast Hemorrhage (needs the Hemorrhage talent).
 
 Damage by ability:
 
 | Ability | [`assassination-mutilate-raid`](assassination-mutilate-raid.md) |
 |---|---|
 | Auto Attack | 43% |
-| Backstab | 31% |
+| Backstab | 30% |
 | Eviscerate | 13% |
 | Deadly Poison | 7% |
-| Dense Sharpening Stone | 3% |
+| Dense Sharpening Stone | 4% |
 | Dragonbreath Chili | 2% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes
 
-- Rotation hypothesis: Slice and Dice -> Mutilate to 4-5 points -> Venom (keep up) -> Eviscerate/Rupture; poisons on both weapons.
+- Original rotation hypothesis (Mutilate draft): Slice and Dice -> Mutilate to 4-5 points -> Venom (keep up) -> Eviscerate/Rupture; the simulator plays Backstab instead.
 - Gives up Blade Flurry, Adrenaline Rush, Hack and Slash and Restless Blades — the comparison with Combat daggers is the key launch test.
 - Mutilate in the simulator (new-builds survey, 2026-09-28): the tuned Assassination rotation casts Backstab before Mutilate (Backstab out-damages it with the simulator's daggers), so this draft plays as a Backstab build there; the simulator talent search's version is assassination-seal-fate-raid (Mutilate's point moved to Improved Poisons).
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Murder -> Improved Expose Armor (+1.9% DPS); Murder -> Improved Expose Armor (+1.9% DPS); Venom -> Flawless Execution (+2.1% DPS); Endurance -> Lightning Reflexes (survival); Endurance -> Lightning Reflexes (survival); Improved Sprint -> Lightning Reflexes (survival); Improved Sprint -> Deflection (survival). Net +5.97% on a third seed.
+- 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Mutilate was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Mutilate -> Improved Poisons (+0.8% DPS). Net +0.67% on a third seed.
 
 ## Open questions (verify in the live game)
 
+- At launch: does Mutilate beat Backstab for a dagger Assassination rogue? If it does, put a point back into Mutilate (it replaced Improved Poisons 1 of 5) and play it as the builder.
 - Mutilate damage at level 60 (demo shows level-38 numbers) and whether Venom's poison bonus makes poison builds the top damage.
 - Whether poisons still consume charges / how Improved Poisons interacts with Windfury Totem for Horde.
 

@@ -3,121 +3,49 @@
  "spec": "smite-dps",
  "build": "smite-discipline-raid",
  "setting": "dummy",
- "date": "2026-09-29",
+ "date": "2026-10-02",
  "tank": false,
  "removal": {
-  "Blessed Recovery": -0.0,
-  "Divine Aegis": -0.0,
-  "Divine Fury": 0.10151264684456596,
-  "Holy Precision": 0.11366912124351491,
-  "Holy Specialization": 0.01667327361296156,
-  "Inner Focus": 0.2356220527704922,
+  "Divine Fury": 0.1297274191453167,
+  "Holy Nova": -0.0,
+  "Holy Precision": 0.1011881827881227,
+  "Holy Specialization": 0.017314364046044917,
+  "Inner Focus": 0.11237409427338496,
   "Inspiration": -0.0,
-  "Meditation": 0.10900087155248361,
-  "Mental Agility": 0.03339433155570526,
-  "Mental Strength": 0.019968681015086753,
-  "Penance": 0.07561722576914032,
-  "Power Infusion": 0.027900724576004676,
-  "Power in Light": 0.046203731213986576,
-  "Searing Light": 0.03248644258804945,
-  "Shadow Focus": 0.006642612645247459,
-  "Twin Disciplines": 0.013540903526503945,
-  "Wand Specialization": -0.0
+  "Martyrdom": -0.0,
+  "Meditation": 0.12609031872967358,
+  "Mental Agility": 0.031823403356888935,
+  "Mental Strength": 0.009595222531943448,
+  "Penance": 0.06903758280980243,
+  "Power Infusion": 0.019807857021651554,
+  "Power in Light": 0.04956537312335785,
+  "Searing Light": 0.035321357821163524,
+  "Shadow Focus": 0.006943586140049973,
+  "Silent Resolve": -0.0,
+  "Twilight Focus": -0.0,
+  "Twin Disciplines": 0.011710407607297801
  },
  "free": [
-  "Blessed Recovery",
-  "Divine Aegis",
+  "Holy Nova",
   "Inspiration",
-  "Wand Specialization"
+  "Martyrdom",
+  "Silent Resolve",
+  "Twilight Focus"
  ],
  "kept_for_rotation": [
   "Inner Focus"
  ],
  "active_never_worth": [],
- "moves": [
-  {
-   "round": 1,
-   "kind": "utility",
-   "from": "Blessed Recovery",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 2,
-   "kind": "utility",
-   "from": "Blessed Recovery",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 3,
-   "kind": "utility",
-   "from": "Divine Aegis",
-   "to": "Martyrdom",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Divine Aegis",
-   "to": "Martyrdom",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 5,
-   "kind": "utility",
-   "from": "Inspiration",
-   "to": "Twilight Focus",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
-  },
-  {
-   "round": 6,
-   "kind": "utility",
-   "from": "Divine Aegis",
-   "to": "Silent Resolve",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "threat"
-  },
-  {
-   "round": 7,
-   "kind": "utility",
-   "from": "Inspiration",
-   "to": "Holy Nova",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "threat"
-  },
-  {
-   "round": 8,
-   "kind": "utility",
-   "from": "Wand Specialization",
-   "to": "Silent Resolve",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "threat"
-  }
+ "abilities_never_cast": [
+  "Holy Nova"
  ],
+ "moves": [],
  "final_seed3": 0.0,
  "start": {
   "Discipline": [
    [
     "Power in Light",
     5
-   ],
-   [
-    "Wand Specialization",
-    1
    ],
    [
     "Twin Disciplines",
@@ -148,12 +76,16 @@
     1
    ],
    [
-    "Divine Aegis",
-    3
-   ],
-   [
     "Power Infusion",
     1
+   ],
+   [
+    "Martyrdom",
+    2
+   ],
+   [
+    "Silent Resolve",
+    2
    ]
   ],
   "Holy": [
@@ -166,16 +98,20 @@
     5
    ],
    [
-    "Blessed Recovery",
-    2
-   ],
-   [
     "Inspiration",
-    3
+    1
    ],
    [
     "Searing Light",
     2
+   ],
+   [
+    "Twilight Focus",
+    3
+   ],
+   [
+    "Holy Nova",
+    1
    ]
   ],
   "Shadow": [

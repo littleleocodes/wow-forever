@@ -1520,5 +1520,125 @@
   "superseded": [],
   "date": "2026-10-02",
   "why": "confirms smite-discipline-raid (+0.05%)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Discipline": [
+     [
+      "Power in Light",
+      5
+     ],
+     [
+      "Twin Disciplines",
+      5
+     ],
+     [
+      "Holy Precision",
+      3
+     ],
+     [
+      "Martyrdom",
+      2
+     ],
+     [
+      "Mental Agility",
+      3
+     ],
+     [
+      "Inner Focus",
+      1
+     ],
+     [
+      "Meditation",
+      3
+     ],
+     [
+      "Mental Strength",
+      5
+     ],
+     [
+      "Penance",
+      1
+     ],
+     [
+      "Power Infusion",
+      1
+     ],
+     [
+      "Silent Resolve",
+      2
+     ]
+    ],
+    "Holy": [
+     [
+      "Twilight Focus",
+      3
+     ],
+     [
+      "Holy Specialization",
+      5
+     ],
+     [
+      "Divine Fury",
+      5
+     ],
+     [
+      "Holy Nova",
+      1
+     ],
+     [
+      "Inspiration",
+      1
+     ],
+     [
+      "Improved Healing",
+      3
+     ],
+     [
+      "Searing Light",
+      2
+     ]
+    ],
+    "Shadow": []
+   },
+   "split": "31/20/0",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Improved Mana Burn",
+     "to": "Martyrdom",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Improved Mana Burn",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Improved Power Word: Shield",
+     "to": "Silent Resolve",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    }
+   ],
+   "abilities_never_cast": [
+    "Holy Nova"
+   ],
+   "final_seed3": 0.0
+  },
+  "bis-raid": null,
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

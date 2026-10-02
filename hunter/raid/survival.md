@@ -60,7 +60,7 @@ Dummy 450 → mana +0% → armor +47% → physical +52% → spell +4% → everyt
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Survival — Full raid](../research/raid/builds/survival-ml-parse.md) (5/11/35) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230231251022151-4).
+**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Survival — Full raid](../research/raid/builds/survival-ml-parse.md) (5/14/32) — [open the talent tree](https://talentsforever.com/hunter/60/5-005035001-050230230150022151-4).
 
 ## Other builds of this spec
 

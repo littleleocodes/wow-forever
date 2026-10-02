@@ -10,6 +10,8 @@
 
 **Before the pull:** **Holy Fire**.
 
+**Talents with no line below:** **Holy Nova**: a defensive spell: cast it when you need it, it is not part of the damage rotation.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Shadow Word: Pain**: keep it on the target
@@ -39,7 +41,7 @@
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
 | Pre-BiS | 471 | 622 | this build |
-| Phase 1 BiS | 489 | 643 | [31/20/0](https://talentsforever.com/priest/60/505031131305021001-30505101032--4) |
+| Phase 1 BiS | 489 | 643 | [31/20/0](https://talentsforever.com/priest/60/505230231305001001-30505101032--4) |
 
 - **Pre-BiS gear** (average item level 63.0): Head: Spellweaver's Turban; Neck: Orb of the Darkmoon; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Virtuous Gown; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Knowledge of the Timbermaw; Legs: Skyshroud Leggings; Feet: Virtuous Slippers; Finger: Leafre's Ring of Precise Spell Power; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Briarwood Reed; Trinket: Weakness Analyzer; Main hand: Dark Whisper Blade; Off hand: Therazane's Touch; Ranged/relic: Bonecreeper Stylus
 - **Phase 1 BiS gear** (average item level 65.4): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Mana Igniting Cord; Legs: Flarecore Leggings; Feet: Virtuous Slippers; Finger: Leafre's Ring of Precise Spell Power; Finger: Ring of Spell Power; Trinket: Briarwood Reed; Trinket: Weakness Analyzer; Main hand: Aurastone Hammer; Off hand: Therazane's Touch; Ranged/relic: Bonecreeper Stylus

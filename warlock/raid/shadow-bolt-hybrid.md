@@ -10,6 +10,8 @@
 
 **Before the pull:** **Amplify Curse**, **Life Tap**.
 
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Curse of the Elements**: keep it on the target
@@ -39,8 +41,8 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 605 | 727 | [22/11/18](https://talentsforever.com/warlock/60/25310020135-2210203001-0550005003-4) |
-| Phase 1 BiS | 641 | 764 | [21/11/19](https://talentsforever.com/warlock/60/25300020135-2210203001-0550005103-4) |
+| Pre-BiS | 605 | 727 | [22/11/18](https://talentsforever.com/warlock/60/25310020135-0050203001-0550005003-4) |
+| Phase 1 BiS | 641 | 764 | [21/11/19](https://talentsforever.com/warlock/60/25300020135-0050203001-0550005103-4) |
 
 - **Pre-BiS gear** (average item level 62.2): Head: Spellweaver's Turban; Neck: Nacreous Shell Necklace; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of the Void; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Knowledge of the Timbermaw; Legs: Skyshroud Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Briarwood Reed; Trinket: Eye of the Beast; Main hand: Elemental Attuned Blade; Off hand: Scepter of Interminable Focus; Ranged/relic: Skul's Ghastly Touch
 - **Phase 1 BiS gear** (average item level 65.8): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Mana Igniting Cord; Legs: Nemesis Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Ring of Spell Power; Trinket: Talisman of Ephemeral Power; Trinket: Briarwood Reed; Main hand: Azuresong Mageblade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus

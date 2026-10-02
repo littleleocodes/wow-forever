@@ -29,7 +29,7 @@
 | 55 | Fury | Boundless Rage | 1 |
 | 56-60 | Fury | Enrage | 5 |
 
-Respec plan: **66.3 h** (26.3% faster than talentless), 0 respec(s).
+Respec plan: **66.1 h** (26.5% faster than talentless), 1 respec(s).
 
 ## What each bracket feels like
 

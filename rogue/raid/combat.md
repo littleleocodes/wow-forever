@@ -63,7 +63,7 @@ Falling numbers mean cooldowns used at the pull, or mana running out in long fig
 
 - [Combat — Raid](../research/raid/builds/combat-raid.md) (16/33/2, 425 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303121001-32330310001515231-002-4)
 - [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 398 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
-- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 394 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32303301001515131--4)
+- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 394 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--4)
 - [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 376 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
 
 ---

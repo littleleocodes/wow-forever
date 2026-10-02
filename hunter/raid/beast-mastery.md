@@ -12,6 +12,8 @@
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
+**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Rapid Fire**
@@ -31,8 +33,8 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 435 | 739 | this build |
-| Phase 1 BiS | 465 | 812 | [30/21/0](https://talentsforever.com/hunter/60/542000150510025-00535500012--4) |
+| Pre-BiS | 435 | 739 | [30/21/0](https://talentsforever.com/hunter/60/552000050510025-00534500013--4) |
+| Phase 1 BiS | 465 | 812 | [30/21/0](https://talentsforever.com/hunter/60/552000050510025-00535500012--4) |
 
 - **Pre-BiS gear** (average item level 62.9): Head: Black Dragonscale Helm; Neck: Pendant of Celerity; Shoulders: Theramore Pauldrons; Back: Earthweave Cloak; Chest: Magister's Robes; Wrist: Rockfury Bracers; Hands: Beaststalker's Gloves; Waist: Marksman's Girdle; Legs: Outrider's Chain Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 65.6): Head: Black Dragonscale Helm; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Earthweave Cloak; Chest: Dawn Armor; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Dragonstalker's Legguards; Feet: Giantstalker's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Rhok'delar, Longbow of the Ancient Keepers

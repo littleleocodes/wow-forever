@@ -8,31 +8,8 @@
   "tank": false,
   "simulator_apl": "_reference/data/raidsim/apls/mage/frost-raid.base.apl.json",
   "start": "_reference\\data\\raidsim\\apls\\mage\\frost-raid.apl.json",
-  "builds": [
-   {
-    "label": "ml: Frost",
-    "talents": "052005003100311--055500031100030025",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-bis.gear.json"
-   },
-   {
-    "label": "ml: Hybrid Arcane/Frost",
-    "talents": "0502050030103102--055500031100030024",
-    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json"
-   },
-   {
-    "label": "frost-fingers-of-frost-raid",
-    "talents": "0530050030003111--055500031100030024"
-   },
-   {
-    "label": "sim preset: Frost DPS",
-    "talents": "0502050030003--055500033100030024"
-   },
-   {
-    "label": "frost-arcane-power-raid",
-    "talents": "055005003100311531--05550003"
-   }
-  ],
-  "iterations": 3000,
+  "builds": [],
+  "iterations": 20000,
   "confirm": 20000,
   "changes": [
    {
@@ -40,65 +17,31 @@
     "change": "drop: if mana % < 20% and time left in the fight > 25s: cast Evocation",
     "gain_seed1": 0.003336744187915741,
     "gain_seed2": 0.0034527184282318046,
-    "candidates": 276
+    "candidates": 276,
+    "pass": 1
    },
    {
     "round": 2,
     "change": "move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance",
     "gain_seed1": 0.0019332383896126792,
     "gain_seed2": 0.0021829792383254443,
-    "candidates": 251
+    "candidates": 251,
+    "pass": 1
+   },
+   {
+    "round": 3,
+    "change": "repair: insert before the filler: if mana % < 5% and time left in the fight > 25s: cast Evocation (every frost-raid build raced, 20,000 fights, seed 3: opt-frost-raid-raid-dps-extwc +6.6%, the others -0.02% to +0.00%)",
+    "gain_seed1": 0.0656,
+    "gain_seed2": 0.0656,
+    "candidates": 16,
+    "pass": 2
    }
   ],
   "final": {
-   "dummy": {
-    "ml: Frost": {
-     "before": 643.9839330281794,
-     "after": 647.0816740193216,
-     "base": 643.9839330281794,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00047899999999999993,
-     "oom_after": 0.01976405
-    },
-    "ml: Hybrid Arcane/Frost": {
-     "before": 640.1333492740132,
-     "after": 643.4686055203781,
-     "base": 640.1333492740132,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.00031539999999999997,
-     "oom_after": 0.007065400000000001
-    },
-    "frost-fingers-of-frost-raid": {
-     "before": 640.0890239399837,
-     "after": 643.1849976157962,
-     "base": 640.0890239399837,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0005965,
-     "oom_after": 0.012777949999999998
-    },
-    "sim preset: Frost DPS": {
-     "before": 596.9817348371004,
-     "after": 603.4795790615652,
-     "base": 596.9817348371004,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 7.5e-05,
-     "oom_after": 0.05273635000000001
-    },
-    "frost-arcane-power-raid": {
-     "before": 601.5684067566385,
-     "after": 602.9189073978935,
-     "base": 601.5684067566385,
-     "before_value": null,
-     "after_value": null,
-     "oom_before": 0.0033477999999999997,
-     "oom_after": 0.04149945
-    }
-   }
-  }
+   "dummy": {}
+  },
+  "first_date": "2026-10-02",
+  "passes": 2
  },
  "raid": {
   "class": "mage",

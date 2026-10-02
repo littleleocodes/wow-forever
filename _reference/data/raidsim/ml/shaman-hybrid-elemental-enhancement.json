@@ -1574,5 +1574,202 @@
   "superseded": [],
   "date": "2026-10-02",
   "why": "confirms elemental-raid-dps (-0.13%)"
+ },
+ "tidied": {
+  "bis-dummy": null,
+  "bis-raid": {
+   "allocation": {
+    "Elemental": [
+     [
+      "Convection",
+      4
+     ],
+     [
+      "Concussion",
+      5
+     ],
+     [
+      "Reverberation",
+      2
+     ],
+     [
+      "Call of Flame",
+      3
+     ],
+     [
+      "Elemental Focus",
+      1
+     ],
+     [
+      "Elemental Alacrity",
+      3
+     ],
+     [
+      "Call of Thunder",
+      1
+     ],
+     [
+      "Lightning Overload",
+      3
+     ],
+     [
+      "Elemental Fury",
+      4
+     ],
+     [
+      "Eye of the Storm",
+      3
+     ]
+    ],
+    "Enhancement": [
+     [
+      "Earth's Grasp",
+      2
+     ],
+     [
+      "Thundering Strikes",
+      5
+     ],
+     [
+      "Ancestral Knowledge",
+      5
+     ],
+     [
+      "Shamanistic Focus",
+      1
+     ],
+     [
+      "Mental Quickness",
+      2
+     ],
+     [
+      "Anticipation",
+      3
+     ],
+     [
+      "Toughness",
+      4
+     ]
+    ],
+    "Restoration": []
+   },
+   "split": "29/22/0",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Elemental Devastation",
+     "to": "Eye of the Storm",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Elemental Devastation",
+     "to": "Eye of the Storm",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Reverberation",
+     "to": "Eye of the Storm",
+     "seed1": -0.0005780925844877105,
+     "seed2": -0.0006530814342732283,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Reverberation",
+     "to": "Convection",
+     "seed1": -0.0002966112128433007,
+     "seed2": -0.0005015784271386048,
+     "utility": "mana"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Reverberation",
+     "to": "Convection",
+     "seed1": 0.0002567398796717857,
+     "seed2": 0.0006822005047582014,
+     "utility": "mana"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Elemental Weapons",
+     "to": "Anticipation",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Improved Ghost Wolf",
+     "to": "Anticipation",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Improved Lightning Shield",
+     "to": "Anticipation",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 9,
+     "kind": "utility",
+     "from": "Improved Lightning Shield",
+     "to": "Toughness",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 10,
+     "kind": "utility",
+     "from": "Mental Dexterity",
+     "to": "Toughness",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 11,
+     "kind": "utility",
+     "from": "Mental Dexterity",
+     "to": "Toughness",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    },
+    {
+     "round": 12,
+     "kind": "utility",
+     "from": "Stormstrike",
+     "to": "Toughness",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "survival"
+    }
+   ],
+   "abilities_never_cast": [
+    "Stormstrike"
+   ],
+   "final_seed3": -0.00011600044394843856
+  },
+  "prebis-dummy": null,
+  "prebis-raid": null
  }
 }

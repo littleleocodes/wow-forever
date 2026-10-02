@@ -12,7 +12,7 @@ The best talents and the best way to play every class in **World of Warcraft: Fo
 | [**Paladin**](paladin/README.md) | damage, tank, healer | [Retribution](paladin/leveling/retribution.md) (28 s/kill) | [Retribution](paladin/raid/retribution.md) (544 dummy / 1011 parse) |
 | [**Priest**](priest/README.md) | damage, healer | [Shadow](priest/leveling/shadow.md) (26 s/kill) | [Shadow](priest/raid/shadow.md) (632 dummy / 724 parse) |
 | [**Rogue**](rogue/README.md) | damage | [Assassination](rogue/leveling/assassination.md) (25 s/kill), [Combat](rogue/leveling/combat.md) (26 s/kill) | [Combat](rogue/raid/combat.md) (419 dummy / 696 parse), [Assassination](rogue/raid/assassination.md) (407 dummy / 682 parse) |
-| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Elemental](shaman/raid/elemental.md) (440 dummy / 553 parse), [Elemental-Enhancement](shaman/raid/elemental-enhancement.md) (438 dummy / 556 parse) |
+| [**Shaman**](shaman/README.md) | damage, healer | [Enhancement](shaman/leveling/enhancement.md) (33 s/kill) | [Elemental](shaman/raid/elemental.md) (440 dummy / 553 parse), [Elemental-Enhancement](shaman/raid/elemental-enhancement.md) (438 dummy / 555 parse) |
 | [**Warlock**](warlock/README.md) | damage | [Demonology](warlock/leveling/demonology.md) (36 s/kill), [Affliction-Demonology](warlock/leveling/affliction-demonology.md) (37 s/kill) | [Demonology](warlock/raid/demonology.md) (687 dummy / 833 parse) |
 | [**Warrior**](warrior/README.md) | damage, tank | [Arms](warrior/leveling/arms.md) (28 s/kill), [Fury](warrior/leveling/fury.md) (29 s/kill) | [Arms](warrior/raid/arms.md) (391 dummy / 740 parse), [Fury](warrior/raid/fury.md) (390 dummy / 706 parse) |
 

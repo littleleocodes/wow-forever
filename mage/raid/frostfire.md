@@ -4,7 +4,7 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**[Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md)** (2/33/16) — [open the talent tree](https://talentsforever.com/mage/60/002-23550000130133151-005500033-4)
+**[Frostfire — Frostfire Bolt / Hot Streak](../research/raid/builds/frostfire-raid.md)** (4/31/16) — [open the talent tree](https://talentsforever.com/mage/60/004-03251030130133051-005500033-4)
 
 ## How to play
 
@@ -23,7 +23,7 @@
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Ignite**: part of the rotation (about 29 times a fight)
+- **Ignite**: part of the rotation (about 28 times a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -32,22 +32,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 616 |
-| Parse (a full raid: every raid buff and debuff) | 726 |
+| Training dummy, 3-minute fight (only your own buffs) | 615 |
+| Parse (a full raid: every raid buff and debuff) | 722 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 602 | 722 | [3/32/16](https://talentsforever.com/mage/60/03-21552100130113151-005500132-4) |
-| Phase 1 BiS | 627 | 740 | [1/34/16](https://talentsforever.com/mage/60/01-22552000130133151-005500033-4) |
+| Pre-BiS | 602 | 722 | [6/31/14](https://talentsforever.com/mage/60/0051-10552030130113051-005500031-4) |
+| Phase 1 BiS | 627 | 740 | [4/31/16](https://talentsforever.com/mage/60/004-00551030130133051-005500033-4) |
 
 - **Pre-BiS gear** (average item level 61.1): Head: Spellweaver's Turban; Neck: Nacreous Shell Necklace; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of the Archmage; Wrist: Rockfury Bracers; Hands: Inferno Gloves; Waist: Knowledge of the Timbermaw; Legs: Skyshroud Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Rune Band of Wizardry; Trinket: Briarwood Reed; Trinket: Eye of the Beast; Main hand: Searing Golden Blade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus
 - **Phase 1 BiS gear** (average item level 66.4): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Gloves of the Hypnotic Flame; Waist: Mana Igniting Cord; Legs: Netherwind Pants; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Ring of Spell Power; Trinket: Talisman of Ephemeral Power; Trinket: Briarwood Reed; Main hand: Azuresong Mageblade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 616 → mana +4% → armor +0% → physical -2% → spell +10% → everything else +6% → raid 726
+Dummy 615 → mana +4% → armor +0% → physical -2% → spell +10% → everything else +5% → raid 722
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -55,7 +55,7 @@ Dummy 616 → mana +4% → armor +0% → physical -2% → spell +10% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 559 | 619 | 616 | 589 | 517 |
+| 559 | 619 | 615 | 587 | 514 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

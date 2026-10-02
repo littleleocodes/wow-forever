@@ -1,0 +1,301 @@
+{
+ "date": "2026-10-02",
+ "rows": [
+  {
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "bm-mm-raid",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.017,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "bm-mm-full-buffs-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0205,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-raid",
+   "build": "opt-mm-raid-raid-dps",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.017,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "mm-lone-wolf-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0229,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "opt-mm-lonewolf-raid-raid-dps",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0228,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "marksmanship-ml-parse",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "raid",
+   "removal_loss": 0.0206,
+   "kind": "automatic",
+   "needed_by": [
+    "Sniper Shot"
+   ],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "mm-lonewolf-raid",
+   "build": "marksmanship-ml-raid",
+   "spec": "Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0227,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "bm-raid",
+   "build": "mm-hawk-raid",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0158,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "bm-raid",
+   "build": "beast-mastery-raid",
+   "spec": "Beast Mastery",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0152,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "hunter",
+   "entry": "bm-raid",
+   "build": "beast-marks-ml-raid",
+   "spec": "Hybrid Beast Mastery/Marksmanship",
+   "talent": "Trueshot Aura",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0156,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "turn it on before the pull"
+  },
+  {
+   "class": "mage",
+   "entry": "frost-raid",
+   "build": "opt-frost-raid-raid-dps-extwc",
+   "spec": "Frost",
+   "talent": "Ice Barrier",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "situational",
+   "needed_by": [],
+   "advice": "a defensive spell: cast it when you need it, it is not part of the damage rotation"
+  },
+  {
+   "class": "priest",
+   "entry": "shadow-dps",
+   "build": "opt-shadow-dps-raid-dps",
+   "spec": "Shadow",
+   "talent": "Vampiric Embrace",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Shadowform"
+   ],
+   "advice": "taken because Shadowform requires it"
+  },
+  {
+   "class": "priest",
+   "entry": "smite-dps",
+   "build": "smite-discipline-raid",
+   "spec": "Hybrid Discipline/Holy",
+   "talent": "Holy Nova",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "situational",
+   "needed_by": [],
+   "advice": "a defensive spell: cast it when you need it, it is not part of the damage rotation"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "destruction-fire-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1148,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "opt-fire-destro-raid-raid-dps",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1015,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "ds-ruin-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.115,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "opt-sb-raid-raid-dps",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1152,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "destruction-ml-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1011,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1058,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Bane of Havoc",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Incinerate"
+   ],
+   "advice": "taken because Incinerate requires it"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0471,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it)"
+  }
+ ]
+}

@@ -9,8 +9,8 @@ Every spell the Forever beta spellbook (build 1.60.1.70009) marks new against Cl
 | Class | Idea | Build | Dummy DPS | Raid DPS | Against the class's best |
 |---|---|---|---|---|---|
 | Hunter | Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/research/raid/builds/mm-hawk-raid.md) | 461 | 810 | -2.6% on the dummy; -18.3% in a raid |
-| Hunter | A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/research/raid/builds/melee-survival-raid.md) | 426 | 991 | -10.0% on the dummy; -0.0% in a raid |
-| Mage | Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](../mage/research/raid/builds/frostfire-raid.md) | 616 | 726 | -4.9% on the dummy; -2.8% in a raid |
+| Hunter | A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/research/raid/builds/melee-survival-raid.md) | 426 | 991 | -10.0% on the dummy; the best in a raid |
+| Mage | Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](../mage/research/raid/builds/frostfire-raid.md) | 615 | 722 | -4.9% on the dummy; -3.3% in a raid |
 | Mage | Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](../mage/research/raid/builds/arcane-blast-raid.md) | 602 | 690 | -7.0% on the dummy; -7.6% in a raid |
 | Mage | Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](../mage/research/raid/builds/frost-arcane-power-raid.md) | 602 | 694 | -7.0% on the dummy; -7.1% in a raid |
 | Paladin | Seal of Fury (Holy damage on every melee hit, and its Judgement of Fury) kept up instead of the Seal of Command / Righteousness twist | [`ret-raid-dps`](../paladin/research/raid/builds/ret-raid-dps.md) (playing Seal of Fury) | 415 | 738 | -24.1% on the dummy; -27.2% in a raid. As a straight swap the Retribution draft loses a fifth of its training-dummy DPS with Seal of Fury; the rotation search on that build dropped Seal of Fury and went back to the Seal of Command / Seal of Righteousness twist within four rounds. No Seal of Fury build. |
@@ -59,9 +59,9 @@ The class's best raid DPS build on the training dummy: [`balance-moonkin-raid`](
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
 | Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](../hunter/research/raid/builds/mm-hawk-raid.md) | 22/29/0 | 461 | 810 | -2.6% on the dummy; -18.3% in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/research/raid/builds/melee-survival-raid.md) | 5/11/35 | 426 | 991 | -10.0% on the dummy; -0.0% in a raid | from `melee-survival-raid`, 0 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](../hunter/research/raid/builds/melee-survival-raid.md) | 5/11/35 | 426 | 991 | -10.0% on the dummy; the best in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](../hunter/research/raid/builds/beast-marks-ml-raid.md) (bm-raid), 473 DPS; in a raid: [`survival-ml-parse`](../hunter/research/raid/builds/survival-ml-parse.md) (melee-dps), 991 DPS.
+The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](../hunter/research/raid/builds/beast-marks-ml-raid.md) (bm-raid), 473 DPS; in a raid: [`melee-survival-raid`](../hunter/research/raid/builds/melee-survival-raid.md) (melee-dps), 991 DPS.
 
 ## Mage
 
@@ -78,9 +78,9 @@ The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](.
 
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
-| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](../mage/research/raid/builds/frostfire-raid.md) | 2/33/16 | 616 | 726 | -4.9% on the dummy; -2.8% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.4 s a kill against 29.2 (+21%); 50: 29.8 s a kill against 24.5 (+22%); 60: 27.4 s a kill against 23.1 (+19%) |
+| Frostfire Bolt, which counts as Fire and Frost, as the filler of a Fire/Frost hybrid (the build asked for by name) | [`frostfire-raid`](../mage/research/raid/builds/frostfire-raid.md) | 4/31/16 | 615 | 722 | -4.9% on the dummy; -3.3% in a raid | from `frostfire-raid`, 1 move | the Frost leveling build playing Frostfire Bolt instead of Frostbolt from 40, against itself playing Frostbolt (fight lab `frostfire-leveling`): 40: 35.4 s a kill against 29.2 (+21%); 50: 29.8 s a kill against 24.5 (+22%); 60: 27.4 s a kill against 23.1 (+19%) |
 | Arcane Blast, a Forever Arcane talent that stacks its own damage and cost, as a build of its own | [`arcane-blast-raid`](../mage/research/raid/builds/arcane-blast-raid.md) | 35/11/5 | 602 | 690 | -7.0% on the dummy; -7.6% in a raid | from `sim preset: Arcane DPS`, 2 moves | - |
-| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](../mage/research/raid/builds/frost-arcane-power-raid.md) | 33/0/18 | 602 | 694 | -7.0% on the dummy; -7.1% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
+| Arcane Power Frost with Missile Barrage (Forever talent): Frostbolt, and Arcane Missiles on its procs, which the simulator's Frost rotation never cast | [`frost-arcane-power-raid`](../mage/research/raid/builds/frost-arcane-power-raid.md) | 32/0/19 | 602 | 694 | -7.0% on the dummy; -7.1% in a raid | from `frost-arcane-power-raid`, 2 moves | - |
 
 The class's best raid DPS build on the training dummy: [`frost-ml-raid`](../mage/research/raid/builds/frost-ml-raid.md) (frost-raid), 647 DPS; in a raid: [`fire-raid`](../mage/research/raid/builds/fire-raid.md) (fire-raid), 747 DPS.
 

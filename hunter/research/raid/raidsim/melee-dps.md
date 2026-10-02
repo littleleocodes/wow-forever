@@ -7,7 +7,7 @@
 | `survival-raid` | 5/16/30 | 450 | 21 | +0.0% | 456 | 12 | +112.1% |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 430 | 22 | -4.5% | 436 | 9 | +123.7% |
 | `melee-survival-raid` | 5/11/35 | 426 | 20 | -5.3% | 432 | 47 | +111.4% |
-| `survival-ml-parse` | 5/11/35 | 336 | 19 | -25.3% | 343 | 124 | +95.8% |
+| `survival-ml-parse` | 5/14/32 | 347 | 19 | -22.9% | 354 | 119 | +97.7% |
 
 ## Damage shares (`survival-raid`, simulator actions)
 
@@ -29,5 +29,5 @@ Scorer = the expected-value stats model's score of the same allocation for its r
 - survival-raid: `5-005055001-50023023005022213`
 - opt-melee-dps-raid-dps: `5-005045001-500250030050220151`
 - melee-survival-raid: `5-005005001-050230230250222151`
-- survival-ml-parse: `5-005005001-050230231251022151`
+- survival-ml-parse: `5-005035001-050230230150022151`
 

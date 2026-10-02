@@ -10,6 +10,8 @@
 
 **Before the pull:** **Amplify Curse**, **Life Tap**.
 
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage for 2 hours; summoning any demon cancels it).
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Curse of the Elements**: keep it on the target
@@ -41,7 +43,7 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 598 | 712 | [10/11/30](https://talentsforever.com/warlock/60/2521-0150003101-055030500310035-4) |
+| Pre-BiS | 598 | 712 | [10/11/30](https://talentsforever.com/warlock/60/2521-0050203001-055030500310035-4) |
 | Phase 1 BiS | 628 | 744 | this build |
 
 - **Pre-BiS gear** (average item level 62.5): Head: Spellweaver's Turban; Neck: Nacreous Shell Necklace; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of the Void; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Knowledge of the Timbermaw; Legs: Skyshroud Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Briarwood Reed; Trinket: Royal Seal of Eldre'Thalas; Main hand: Elemental Attuned Blade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus

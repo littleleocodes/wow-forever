@@ -7,15 +7,7 @@
 | `combat-swords-raid` | 19/32/0 | 394 | 18 | +0.0% | 280 | 0 | +63.6% |
 | sim preset: Improved Expose Armor (SS) | - | 394 | 18 | +0.0% | 280 | 0 | - |
 | `opt-combat-swords-raid-raid-dps` | 20/31/0 | 376 | 18 | -4.5% | 267 | 0 | +68.6% |
-| `cand-combat-swords-raid-r7` | 20/31/0 | 376 | 18 | -4.5% | 267 | 0 | +68.6% |
-| `cand-combat-swords-raid-r5` | 20/31/0 | 376 | 18 | -4.6% | 267 | 0 | +68.5% |
-| `cand-combat-swords-raid-r6` | 20/31/0 | 376 | 18 | -4.6% | 267 | 0 | +68.5% |
-| `cand-combat-swords-raid-r3` | 18/33/0 | 374 | 18 | -5.0% | 266 | 0 | +66.6% |
-| `cand-combat-swords-raid-r1` | 20/31/0 | 374 | 17 | -5.1% | 265 | 0 | +67.7% |
-| `cand-combat-swords-raid-r4` | 18/33/0 | 372 | 18 | -5.5% | 264 | 0 | +66.9% |
-| `cand-combat-swords-raid-r2` | 18/33/0 | 371 | 18 | -5.7% | 264 | 0 | +65.7% |
 | sim preset: Sinister Strike | - | 371 | 18 | -5.7% | 264 | 0 | - |
-| `cand-combat-swords-raid-hand-2026-09-28` | 18/33/0 | 370 | 18 | -6.1% | 263 | 0 | +66.2% |
 | sim preset: Combat Dual-Wield 15/33/3 | - | 365 | 18 | -7.4% | 259 | 0 | - |
 | sim preset: Assassination Mutilate 31/20/0 | - | 340 | 19 | -13.6% | 242 | 0 | - |
 | sim preset: Mutilate | - | 330 | 18 | -16.3% | 234 | 0 | - |
@@ -39,18 +31,10 @@ Mapped onto the spec model's sources: `white_mh` 37%, `sinister` 32%, `white_oh`
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- combat-swords-raid: `005303125-32303301001515131`
+- combat-swords-raid: `005303125-32403300001515131`
 - sim preset: Improved Expose Armor (SS): `005303125-32003311201515131`
 - opt-combat-swords-raid-raid-dps: `005323101005-32502300000514231`
-- cand-combat-swords-raid-r7: `005323101005-32502300000514231`
-- cand-combat-swords-raid-r5: `005323101005-32520300001513231`
-- cand-combat-swords-raid-r6: `005323101005-32502300001513231`
-- cand-combat-swords-raid-r3: `005303103012-32520300001515231`
-- cand-combat-swords-raid-r1: `005323101014-32520300001513231`
-- cand-combat-swords-raid-r4: `005323101012-32520300001515231`
-- cand-combat-swords-raid-r2: `00530310501-32520300001515231`
 - sim preset: Sinister Strike: `00530310501-32003311201515231`
-- cand-combat-swords-raid-hand-2026-09-28: `005313105-32102320201515231`
 - sim preset: Combat Dual-Wield 15/33/3: `1053231-22530300001515231-012`
 - sim preset: Assassination Mutilate 31/20/0: `02532010531201051-225303000005`
 - sim preset: Mutilate: `00530310551021051-302303202004`

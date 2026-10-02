@@ -1622,5 +1622,690 @@
   "superseded": [],
   "date": "2026-10-02",
   "why": "confirms frostfire-raid (+0.08%)"
+ },
+ "tidied": {
+  "bis-dummy": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      4
+     ]
+    ],
+    "Fire": [
+     [
+      "Improved Fireball",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Hot Streak",
+      1
+     ],
+     [
+      "Master of Elements",
+      3
+     ],
+     [
+      "Critical Mass",
+      3
+     ],
+     [
+      "Fire Power",
+      5
+     ],
+     [
+      "Combustion",
+      1
+     ],
+     [
+      "Burning Soul",
+      3
+     ],
+     [
+      "Flame Throwing",
+      1
+     ]
+    ],
+    "Frost": [
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      3
+     ]
+    ]
+   },
+   "split": "4/31/16",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Incineration",
+     "to": "Improved Channeling",
+     "seed1": 0.0009830245418995798,
+     "seed2": 0.0008765064568863057,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Incineration",
+     "to": "Improved Channeling",
+     "seed1": 0.0008765951269293915,
+     "seed2": -8.407151051670336e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Blast Wave",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": -4.430429970170291e-05,
+     "seed2": -6.061211232177843e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Wake of Fire",
+     "to": "Burning Soul",
+     "seed1": -7.208125367919038e-06,
+     "seed2": 6.832178346405371e-06,
+     "utility": "threat"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Wake of Fire",
+     "to": "Flame Throwing",
+     "seed1": -1.698407783023992e-05,
+     "seed2": -1.0765968873838183e-05,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Blast Wave"
+   ],
+   "final_seed3": 0.0002642647491279959
+  },
+  "bis-raid": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      4
+     ]
+    ],
+    "Fire": [
+     [
+      "Wake of Fire",
+      1
+     ],
+     [
+      "Improved Fireball",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Improved Flamestrike",
+      1
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Hot Streak",
+      1
+     ],
+     [
+      "Critical Mass",
+      3
+     ],
+     [
+      "Fire Power",
+      5
+     ],
+     [
+      "Combustion",
+      1
+     ],
+     [
+      "Burning Soul",
+      3
+     ],
+     [
+      "Flame Throwing",
+      2
+     ]
+    ],
+    "Frost": [
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      3
+     ]
+    ]
+   },
+   "split": "4/31/16",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arctic Reach",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Frostbite",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Ice Lance",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Impact",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Impact",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Impact",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Ice Lance"
+   ],
+   "final_seed3": 0.0
+  },
+  "prebis-dummy": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      5
+     ],
+     [
+      "Arcane Subtlety",
+      1
+     ]
+    ],
+    "Fire": [
+     [
+      "Wake of Fire",
+      1
+     ],
+     [
+      "Improved Fireball",
+      5
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Hot Streak",
+      1
+     ],
+     [
+      "Master of Elements",
+      1
+     ],
+     [
+      "Critical Mass",
+      3
+     ],
+     [
+      "Fire Power",
+      5
+     ],
+     [
+      "Combustion",
+      1
+     ],
+     [
+      "Burning Soul",
+      3
+     ],
+     [
+      "Flame Throwing",
+      2
+     ]
+    ],
+    "Frost": [
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      1
+     ]
+    ]
+   },
+   "split": "6/31/14",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "gain",
+     "from": "Frost Channeling",
+     "to": "Arcane Focus",
+     "seed1": 0.009623041170637947,
+     "seed2": 0.006627942770487838,
+     "utility": null
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Incineration",
+     "to": "Improved Channeling",
+     "seed1": 0.0002093337208457502,
+     "seed2": 0.0012836781165339595,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Frostbite",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": -6.3825215930291e-05,
+     "seed2": -5.497313471325427e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": -5.9621626729566835e-05,
+     "seed2": -5.909869824960445e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": -6.233093047225413e-05,
+     "seed2": -5.254516555641686e-05,
+     "utility": "interrupt"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Blast Wave",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 9,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 10,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Arcane Subtlety",
+     "seed1": -6.734973379829423e-05,
+     "seed2": -6.644302004732427e-05,
+     "utility": "threat"
+    },
+    {
+     "round": 11,
+     "kind": "utility",
+     "from": "Impact",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 12,
+     "kind": "utility",
+     "from": "Wake of Fire",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Blast Wave"
+   ],
+   "final_seed3": 0.0077701995843597604
+  },
+  "prebis-raid": {
+   "allocation": {
+    "Arcane": [
+     [
+      "Improved Channeling",
+      5
+     ]
+    ],
+    "Fire": [
+     [
+      "Wake of Fire",
+      2
+     ],
+     [
+      "Improved Fireball",
+      4
+     ],
+     [
+      "Ignite",
+      5
+     ],
+     [
+      "Pyroblast",
+      1
+     ],
+     [
+      "Improved Scorch",
+      3
+     ],
+     [
+      "Hot Streak",
+      1
+     ],
+     [
+      "Master of Elements",
+      1
+     ],
+     [
+      "Critical Mass",
+      3
+     ],
+     [
+      "Fire Power",
+      5
+     ],
+     [
+      "Combustion",
+      1
+     ],
+     [
+      "Burning Soul",
+      3
+     ],
+     [
+      "Flame Throwing",
+      2
+     ]
+    ],
+    "Frost": [
+     [
+      "Elemental Precision",
+      5
+     ],
+     [
+      "Ice Shards",
+      5
+     ],
+     [
+      "Piercing Ice",
+      3
+     ],
+     [
+      "Frost Channeling",
+      2
+     ]
+    ]
+   },
+   "split": "5/31/15",
+   "moves": [
+    {
+     "round": 1,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 2,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 3,
+     "kind": "utility",
+     "from": "Arcane Focus",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 4,
+     "kind": "utility",
+     "from": "Frostbite",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 5,
+     "kind": "utility",
+     "from": "Ice Lance",
+     "to": "Improved Channeling",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "interrupt"
+    },
+    {
+     "round": 6,
+     "kind": "utility",
+     "from": "Blast Wave",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 7,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 8,
+     "kind": "utility",
+     "from": "Flame Throwing",
+     "to": "Burning Soul",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "threat"
+    },
+    {
+     "round": 9,
+     "kind": "utility",
+     "from": "Impact",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    },
+    {
+     "round": 10,
+     "kind": "utility",
+     "from": "Improved Fireball",
+     "to": "Flame Throwing",
+     "seed1": 0.0,
+     "seed2": 0.0,
+     "utility": "range"
+    }
+   ],
+   "abilities_never_cast": [
+    "Blast Wave",
+    "Ice Lance"
+   ],
+   "final_seed3": 0.0
+  }
  }
 }

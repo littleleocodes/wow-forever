@@ -7,27 +7,12 @@
 | `frost-ml-raid` | 21/0/30 | 647 | 39 | +0.0% | 523 | 0 | +77.1% |
 | `frost-fingers-of-frost-raid` | 22/0/29 | 643 | 38 | -0.7% | 521 | 0 | +75.7% |
 | `opt-frost-raid-raid-dps` | 22/0/29 | 643 | 39 | -0.7% | 525 | 0 | +75.0% |
-| `cand-frost-raid-r1` | 22/0/29 | 643 | 39 | -0.7% | 525 | 0 | +75.0% |
-| `cand-frost-raid-r2` | 22/0/29 | 639 | 38 | -1.3% | 480 | 0 | +75.0% |
-| `cand-frost-raid-hand-2026-09-28` | 18/1/32 | 614 | 39 | -5.1% | 365 | 0 | +77.5% |
-| `cand-frost-raid-r12` | 18/1/32 | 614 | 39 | -5.1% | 365 | 0 | +77.5% |
-| `cand-frost-raid-r7` | 18/1/32 | 614 | 39 | -5.1% | 365 | 0 | +77.5% |
-| `cand-frost-raid-r11` | 17/2/32 | 613 | 40 | -5.2% | 365 | 1 | +76.1% |
 | sim preset: Frost DPS | - | 603 | 39 | -6.8% | 359 | 0 | - |
-| `frost-arcane-power-raid` | 33/0/18 | 602 | 32 | -7.0% | 620 | 0 | +70.1% |
-| `cand-frost-raid-from-arcane-power` | 33/0/18 | 596 | 36 | -7.9% | 570 | 2 | +64.7% |
-| `cand-frost-raid-r4` | 0/18/33 | 591 | 47 | -8.7% | 359 | 10 | +67.9% |
-| `cand-frost-raid-hand-2026-09-27` | 14/0/37 | 584 | 42 | -9.8% | 353 | 11 | +70.1% |
-| `cand-frost-raid-r5` | 0/17/34 | 577 | 44 | -10.9% | 350 | 14 | +67.8% |
-| `cand-frost-raid-r10` | 21/0/30 | 576 | 42 | -11.1% | 488 | 15 | +76.4% |
-| `frost-winters-chill-raid` | 20/0/31 | 569 | 28 | -12.2% | 454 | 0 | +63.4% |
-| `cand-frost-raid-r3` | 27/0/24 | 568 | 41 | -12.3% | 481 | 11 | +73.2% |
-| `cand-frost-raid-r9` | 13/3/35 | 561 | 40 | -13.3% | 339 | 19 | +69.6% |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 554 | 39 | -14.4% | 334 | 21 | +67.8% |
-| `cand-frost-raid-r6` | 1/18/32 | 531 | 43 | -18.0% | 454 | 28 | +65.6% |
-| sim preset: Frost 14/0/37 | - | 530 | 41 | -18.2% | 451 | 29 | - |
-| sim preset: Arcane 35/0/16 | - | 517 | 31 | -20.2% | 417 | 0 | - |
-| `cand-frost-raid-r8` | 16/3/32 | 502 | 37 | -22.4% | 427 | 37 | +66.7% |
+| `frost-arcane-power-raid` | 32/0/19 | 602 | 32 | -7.0% | 576 | 0 | +70.9% |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 591 | 39 | -8.7% | 355 | 7 | +67.8% |
+| sim preset: Frost 14/0/37 | - | 586 | 38 | -9.5% | 497 | 8 | - |
+| `frost-winters-chill-raid` | 21/0/30 | 575 | 28 | -11.2% | 459 | 0 | +65.0% |
+| sim preset: Arcane 35/0/16 | - | 517 | 31 | -20.1% | 417 | 0 | - |
 | sim preset: Arcane DPS | - | 451 | 29 | -30.3% | 429 | 0 | - |
 | sim preset: Fire 0/35/16 | - | 408 | 22 | -37.0% | 305 | 0 | - |
 | sim preset: Fire DPS | - | 341 | 19 | -47.4% | 359 | 0 | - |
@@ -45,30 +30,15 @@ Mapped onto the spec model's sources: `frostbolt` 61%, `ice_lance` 20%, `missile
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- frost-ml-raid: `052005003100311--055500031100030025`
+- frost-ml-raid: `053005003000311--055500031100030025`
 - frost-fingers-of-frost-raid: `0530050030003111--055500031100030024`
 - opt-frost-raid-raid-dps: `1502050030003111--055500030100031024`
-- cand-frost-raid-r1: `1502050030003111--055500030100031024`
-- cand-frost-raid-r2: `2522050000003111--055500031100030024`
-- cand-frost-raid-hand-2026-09-28: `0500250030003-01-055500033100030025`
-- cand-frost-raid-r12: `0520050030003-01-055500033100030025`
-- cand-frost-raid-r7: `0500250030003-01-055500033100030025`
-- cand-frost-raid-r11: `0520050030002-02-055500033100030025`
 - sim preset: Frost DPS: `0502050030003--055500033100030024`
-- frost-arcane-power-raid: `055005003100311531--05550003`
-- cand-frost-raid-from-arcane-power: `250205023102011531--05550003`
-- cand-frost-raid-r4: `-2350203000003-055500033101030025`
-- cand-frost-raid-hand-2026-09-27: `230225--0555000331021301251`
-- cand-frost-raid-r5: `-2350203000002-055500033102030025`
-- cand-frost-raid-r10: `050025003020301--055500030100130025`
-- frost-winters-chill-raid: `05300500310021--0555000330021001051`
-- cand-frost-raid-r3: `24022500002030142--05550003010003002`
-- cand-frost-raid-r9: `253021-03-0555000331001301251`
+- frost-arcane-power-raid: `055005003000311531--055500031`
 - opt-frost-raid-raid-dps-extwc: `1-2330203-0555000331021301251`
-- cand-frost-raid-r6: `1-2355000000003-0555000301001301251`
 - sim preset: Frost 14/0/37: `050005013--0555003301001301251`
+- frost-winters-chill-raid: `054005003000211--055500033002100105`
 - sim preset: Arcane 35/0/16: `055005023100311531--005500033`
-- cand-frost-raid-r8: `25502001001-03-0555000301001301251`
 - sim preset: Arcane DPS: `050215003100311531-2305003202003-`
 - sim preset: Fire 0/35/16: `-03552020130133151-005500033`
 - sim preset: Fire DPS: `0502252000003-23550000130133051-`

@@ -8,11 +8,11 @@
 | `frost-fingers-of-frost-raid` | 22/0/29 | 643 | 706 | 735 | 735 | 747 |
 | `opt-frost-raid-raid-dps` | 22/0/29 | 643 | 705 | 735 | 735 | 747 |
 | sim preset: Frost DPS | - | 603 | 656 | 692 | 692 | 696 |
-| `frost-arcane-power-raid` | 33/0/18 | 602 | 660 | 694 | 694 | 745 |
-| `opt-frost-raid-parse` | 21/0/30 | 596 | 650 | 706 | 706 | 719 |
-| `frost-winters-chill-raid` | 20/0/31 | 569 | 621 | 651 | 651 | 657 |
-| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 554 | 601 | 709 | 709 | 714 |
-| sim preset: Frost 14/0/37 | - | 530 | 578 | 702 | 702 | 704 |
+| `frost-arcane-power-raid` | 32/0/19 | 602 | 659 | 694 | 694 | 744 |
+| `opt-frost-raid-parse` | 21/0/30 | 597 | 650 | 706 | 706 | 719 |
+| `opt-frost-raid-raid-dps-extwc` | 1/13/37 | 591 | 641 | 709 | 709 | 714 |
+| sim preset: Frost 14/0/37 | - | 586 | 635 | 702 | 702 | 704 |
+| `frost-winters-chill-raid` | 21/0/30 | 575 | 628 | 658 | 658 | 669 |
 | sim preset: Arcane 35/0/16 | - | 517 | 566 | 596 | 596 | 644 |
 | sim preset: Arcane DPS | - | 451 | 515 | 514 | 514 | 557 |
 | sim preset: Fire 0/35/16 | - | 408 | 438 | 472 | 472 | 489 |
@@ -35,10 +35,10 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `opt-frost-raid-raid-dps` | 643 | +0% | +0% | -1% | +10% | +5% | 735 |
 | sim preset: Frost DPS | 603 | +0% | +0% | -1% | +10% | +6% | 692 |
 | `frost-arcane-power-raid` | 602 | +0% | +0% | -1% | +10% | +6% | 694 |
-| `opt-frost-raid-parse` | 596 | +3% | +0% | -1% | +10% | +6% | 706 |
-| `frost-winters-chill-raid` | 569 | +0% | +0% | -1% | +10% | +6% | 651 |
-| `opt-frost-raid-raid-dps-extwc` | 554 | +11% | +0% | -1% | +11% | +7% | 709 |
-| sim preset: Frost 14/0/37 | 530 | +16% | +0% | -1% | +11% | +7% | 702 |
+| `opt-frost-raid-parse` | 597 | +3% | +0% | -1% | +10% | +6% | 706 |
+| `opt-frost-raid-raid-dps-extwc` | 591 | +5% | +0% | -1% | +10% | +6% | 709 |
+| sim preset: Frost 14/0/37 | 586 | +4% | +0% | -1% | +10% | +6% | 702 |
+| `frost-winters-chill-raid` | 575 | +0% | +0% | -1% | +10% | +6% | 658 |
 | sim preset: Arcane 35/0/16 | 517 | +0% | +0% | -1% | +10% | +6% | 596 |
 | sim preset: Arcane DPS | 451 | +0% | +0% | -1% | +10% | +5% | 514 |
 | sim preset: Fire 0/35/16 | 408 | -0% | +0% | -1% | +10% | +7% | 472 |
@@ -52,19 +52,19 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
-| `frost-ml-raid` | 651 | 653 | 647 | 652 | 618 |
-| `frost-fingers-of-frost-raid` | 647 | 648 | 643 | 648 | 616 |
-| `opt-frost-raid-raid-dps` | 647 | 648 | 643 | 641 | 591 |
-| sim preset: Frost DPS | 598 | 606 | 603 | 588 | 525 |
-| `frost-arcane-power-raid` | 639 | 615 | 602 | 602 | 554 |
-| `opt-frost-raid-parse` | 620 | 621 | 596 | 538 | 479 |
-| `frost-winters-chill-raid` | 566 | 572 | 569 | 577 | 568 |
-| `opt-frost-raid-raid-dps-extwc` | 614 | 622 | 554 | 481 | 427 |
-| sim preset: Frost 14/0/37 | 607 | 589 | 530 | 450 | 399 |
+| `frost-ml-raid` | 651 | 653 | 647 | 652 | 639 |
+| `frost-fingers-of-frost-raid` | 647 | 648 | 643 | 648 | 635 |
+| `opt-frost-raid-raid-dps` | 647 | 648 | 643 | 643 | 629 |
+| sim preset: Frost DPS | 598 | 606 | 603 | 593 | 582 |
+| `frost-arcane-power-raid` | 640 | 616 | 602 | 611 | 594 |
+| `opt-frost-raid-parse` | 620 | 621 | 597 | 601 | 532 |
+| `opt-frost-raid-raid-dps-extwc` | 614 | 622 | 591 | 559 | 479 |
+| sim preset: Frost 14/0/37 | 607 | 589 | 586 | 522 | 447 |
+| `frost-winters-chill-raid` | 577 | 579 | 575 | 579 | 573 |
 | sim preset: Arcane 35/0/16 | 551 | 528 | 517 | 530 | 520 |
 | sim preset: Arcane DPS | 481 | 462 | 451 | 463 | 454 |
-| sim preset: Fire 0/35/16 | 413 | 413 | 408 | 385 | 340 |
-| sim preset: Fire DPS | 345 | 344 | 341 | 338 | 307 |
+| sim preset: Fire 0/35/16 | 413 | 413 | 408 | 390 | 381 |
+| sim preset: Fire DPS | 345 | 344 | 341 | 338 | 332 |
 
 Gear presets: raid `mage-dps-p1.p1opt.gear.json`, maximum `mage-dps-p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

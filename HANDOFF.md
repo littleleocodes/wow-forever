@@ -157,6 +157,19 @@ Each class folder now opens with player pages and keeps the research below:
     others (leveling searches with chain moves, the rogue main-hand poison under Windfury, equal gear for tanks and healers, stats
     models for the new leveling specs) stay open.
 
+- **Never-cast ability talents fixed** (2026-10-02, user report: the new Frost build took Arcane Blast and never cast it): see CLAUDE.md
+  "Talents whose ability is never cast". The filler audit moved those points in eight builds: Arcane Blast -> Improved Channeling or
+  Frost Channeling in the three Frost builds (frost-winters-chill-raid also moved Ice Barrier to Presence of Mind, +1.1%), Blast Wave out of
+  frostfire-raid, Riposte out of combat-swords-raid, Stormstrike out of elemental-raid-dps, Counterattack and Deterrence out of
+  survival-ml-parse, Mutilate -> Improved Poisons (+0.7%) in assassination-mutilate-raid, renamed "Seal Fate / Vigor (formerly the
+  Mutilate draft)" because the simulator's rotation never casts Mutilate (Backstab beats it; a launch question). Every remaining
+  never-cast ability talent is automatic (Trueshot Aura, Demonic Sacrifice, Soul Link: the raid pages now tell the player to cast them
+  before the pull), a prerequisite or defensive (`_reference/unused-abilities.md`).
+  Same day: the 2026-10-01 rotation re-tune had protected only each entry's best builds, so the Frost rotation lost its Evocation line
+  and the 1/13/37 Frost build fell from 591 to 554 DPS (out of mana). Repaired (Evocation below 5% mana: back to 591, no other Frost
+  build moved), and apl_opt.py now protects every build an entry lists. Old vs new rotations raced for every build of the 22
+  re-tuned entries: no other loss above 0.5% (the Survival parse build's dummy number, -4.6%, is not its setting; full raid +0.0%).
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

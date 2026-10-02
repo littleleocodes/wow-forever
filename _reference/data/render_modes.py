@@ -58,6 +58,19 @@ def ml_tiers():
 
 
 TIERS = ml_tiers()
+
+
+def unused_talents():
+    """{(class, build id): [row]} of raidsim/unused_abilities.py: talents whose ability the rotation does not cast, and why they stay."""
+    p = HERE / "raidsim" / "unused-abilities.json"
+    out = {}
+    if p.exists():
+        for r in json.load(open(p, encoding="utf-8")).get("rows", []):
+            out.setdefault((r["class"], r["build"]), []).append(r)
+    return out
+
+
+UNUSED = unused_talents()
 TIER_KEYS = (("prebis", "Pre-BiS"), ("bis", "Phase 1 BiS"))
 SLOTS = ["Head", "Neck", "Shoulders", "Back", "Chest", "Wrist", "Hands", "Waist", "Legs", "Feet", "Finger", "Finger", "Trinket", "Trinket",
          "Main hand", "Off hand", "Ranged/relic"]
@@ -82,7 +95,8 @@ def tier_lines(cls, spec, src, top):
         w = ((r.get("search") or {}).get(f"{t}-dummy") or {}).get("winner")
         if not w:
             continue
-        al = r["aligned"] if t == "bis" and (r.get("aligned") or {}).get("moves") else w
+        al = ((r.get("tidied") or {}).get(f"{t}-dummy")   # moved out of abilities the winner never casts (ml_builds.tidy_winners)
+              or (r["aligned"] if t == "bis" and (r.get("aligned") or {}).get("moves") else w))
         tl = "this build" if rs.flat(top) == flat(al["allocation"]) else f"[{al['split']}]({rs.tf_link(cls, flat(al['allocation']))})"
         o.append(f"| {name} | {tier_dps(r, f'{t}-dummy')} | {tier_dps(r, f'{t}-raid')} | {tl} |")
     o.append("")
@@ -399,6 +413,9 @@ def mode_section(cls, spec, mode, builds, nums, src):
                 play += ["**Before the pull:** " + ", ".join(f"**{x}**" for x in pre) + ".", ""]
             if keep:
                 play += ["**Keep up all fight:** " + ", ".join(f"**{x}**" for x in keep) + ".", ""]
+            quiet = [u for u in UNUSED.get((cls, top["id"]), []) if u["kind"] != "wasted"]
+            if quiet:   # talents the build takes whose ability has no line in the rotation (2026-10-02, user report on unused abilities)
+                play += ["**Talents with no line below:** " + "; ".join(f"**{u['talent']}**: {u['advice']}" for u in quiet) + ".", ""]
             if prio:
                 play += ["**Then press the first one that is ready**, top to bottom:", ""] + [f"{i}. {x}" for i, x in enumerate(prio, 1)]
                 filler = prio[-1].count("**") == 2 and prio[-1].endswith("**")   # a plain last line: the filler

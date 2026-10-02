@@ -7,7 +7,7 @@
 | `survival-raid` | 5/16/30 | 450 | 527 | 967 | 967 | 1000 |
 | `opt-melee-dps-raid-dps` | 5/15/31 | 430 | 506 | 965 | 965 | 1003 |
 | `melee-survival-raid` | 5/11/35 | 426 | 501 | 991 | 991 | 1026 |
-| `survival-ml-parse` | 5/11/35 | 336 | 404 | 991 | 991 | 1026 |
+| `survival-ml-parse` | 5/14/32 | 347 | 415 | 991 | 991 | 1026 |
 
 - **training dummy**: a boss-level (63) training dummy with only your own buffs (the class's self-buffs and the spec's standard consumables, no raid or party buffs, no debuffs from others), execute phases as a dying boss, phase-1 gear, 180 s: the setting that ranks the raid DPS builds (Forever)
 - **level-60 dummy**: an in-game style dummy: level 60, never dies (no execute phase), your own buffs and consumables only (Forever; the Classic sim: no buffs and no consumables), phase-1 gear, 180 s
@@ -24,7 +24,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | `survival-raid` | 450 | +0% | +47% | +52% | +4% | +12% | 967 |
 | `opt-melee-dps-raid-dps` | 430 | +0% | +50% | +56% | +3% | +15% | 965 |
 | `melee-survival-raid` | 426 | +8% | +50% | +56% | +4% | +14% | 991 |
-| `survival-ml-parse` | 336 | +37% | +64% | +71% | +5% | +18% | 991 |
+| `survival-ml-parse` | 347 | +33% | +62% | +69% | +5% | +18% | 991 |
 
 Groups: **mana** mana_spring_totem, mana_tide_totems, greater_blessing_of_wisdom, judgement_of_wisdom; **armor** sunder_armor, expose_armor, faerie_fire, curse_of_recklessness; **physical** battle_shout, greater_blessing_of_might, windfury_totem, strength_of_earth_totem, leader_of_the_pack, trueshot_aura, hunters_mark, gift_of_arthas; **spell** arcane_brilliance, moonkin_aura, curse_of_elements, judgement_of_the_crusader. A spec's own raid buff stays its own (the raid setting's rule). The order matters a little: a buff is worth more on top of the ones before it.
 
@@ -37,7 +37,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | `survival-raid` | 463 | 453 | 450 | 416 | 401 |
 | `opt-melee-dps-raid-dps` | 446 | 435 | 430 | 402 | 392 |
 | `melee-survival-raid` | 473 | 427 | 426 | 390 | 378 |
-| `survival-ml-parse` | 434 | 339 | 336 | 315 | 306 |
+| `survival-ml-parse` | 441 | 349 | 347 | 326 | 317 |
 
 Gear presets: raid `hunter-project-hunter_melee_p1.p1opt.gear.json`, maximum `hunter-project-hunter_melee_p1.p1opt.gear.json`. `opt-<spec>-parse` is the scorer's parse build (personal DPS only, the raid brings every buff); the raid builds bring their own buff.
 

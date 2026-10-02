@@ -46,7 +46,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
 | 1 | [Elemental](raid/elemental.md) — Elemental (optimized) | 440 | 553 | 422 | best |
-| 2 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 438 | 556 | 423 | -0% |
+| 2 | [Elemental-Enhancement](raid/elemental-enhancement.md) — Elemental — Lava Burst / Lightning Overload | 438 | 555 | 423 | -0% |
 | 3 | [Enhancement](raid/enhancement.md) — One slow weapon | 413 | 755 | 374 | -6% |
 
 **Healing**: [Restoration](raid/restoration.md) — Restoration — Raid Healer.

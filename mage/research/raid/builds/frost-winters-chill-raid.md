@@ -1,10 +1,10 @@
-# Frost — Winter's Chill (raid support) — 20/0/31
+# Frost — Winter's Chill (raid support) — 21/0/30
 
 *[Mage](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 20/0/31 (Arcane / Fire / Frost) |
+| **Build** | 21/0/30 (Arcane / Fire / Frost) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -16,23 +16,23 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 ## Point allocation
 
-### Arcane (20)
+### Arcane (21)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Arcane Focus** | 5/5 | changed | Improves your chance to hit with Arcane spells by 5%. |
 | **Arcane Concentration** | 5/5 | unchanged | Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
-| **Arcane Blast** | 1/1 | **NEW** | Blasts the target with energy, dealing 57 to 65 Arcane damage. Each time you cast Arcane Blast, the damage of all your other spells is increased by 10% and the mana cost of Arcane Blast is increased by 175%. Effect stacks up to 4 times and lasts 8 sec or until any other damage spell is cast. |
 | **Arcane Meditation** | 2/3 | changed | Allows 33% of your Mana regeneration to continue while casting. |
 | **Missile Barrage** | 1/1 | **NEW** | Gives your Arcane Blast spell a 40% chance, and your Fireball, Frostbolt, and Frostfire Bolt spells a 20% chance to reduce the channeled duration of your next Arcane Missiles spell by 50%, reduce the Mana cost by 100%, and missiles fire every 0.5 sec. |
 | **Arcane Impact** | 3/3 | **NEW** | Increases the critical strike chance of your Arcane spells by 6%. |
-| **Improved Channeling** | 3/5 | **NEW** | Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 42% chance while casting Arcane Blast. |
+| **Improved Channeling** | 4/5 | **NEW** | Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles and a 56% chance while casting Arcane Blast. |
+| **Presence of Mind** | 1/1 | unchanged | When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell. |
 
 ### Fire (0)
 
 *No points.*
 
-### Frost (31)
+### Frost (30)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -44,7 +44,6 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 | **Ice Block** | 1/1 | moved | You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move, or cast spells. |
 | **Cold Snap** | 1/1 | changed | Finishes the remaining cooldown on all your other Frost spells. |
 | **Winter's Chill** | 5/5 | changed | Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance your Ice Lance and Frostbolt spells will critically hit the target by 2% for 15 sec. Stacks up to 5 times. |
-| **Ice Barrier** | 1/1 | changed | Instantly shields you, absorbing 447 damage. Lasts 1 min. While the shield holds, your spellcasts will not be interrupted or delayed from taking damage. |
 | **Arctic Reach** | 2/2 | unchanged | Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%. |
 
 ## Core talents (priority order)
@@ -55,10 +54,9 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 4. **Improved Frostbolt** — Cast time.
 5. **Piercing Ice** — Frost damage.
 6. **Ice Block** — Now the 16-point Frost talent — cheap immunity.
-7. **Ice Barrier** — Capstone shield; requires Cold Snap.
-8. **Shatter** — 3 ranks, est. +51% crit vs. Frozen — AoE/dungeon value and Fingers of Frost synergy later.
-9. **Frost Channeling** — Mana and threat.
-10. **Arcane Meditation** — Regen while casting (2/3).
+7. **Shatter** — 3 ranks, est. +51% crit vs. Frozen — AoE/dungeon value and Fingers of Frost synergy later.
+8. **Frost Channeling** — Mana and threat.
+9. **Arcane Meditation** — Regen while casting (2/3).
 
 ## Flex points
 
@@ -68,7 +66,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 
 ## Rank among our builds and the community simulator's
 
-**6 of 12** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**8 of 12** for `frost-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
@@ -76,20 +74,21 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 | 2 | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) | ours: hand draft | 22/0/29 | 643 | -0.7% | 735 | -0.5% | 0 s |
 | 3 | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) | ours: optimizer | 22/0/29 | 643 | -0.7% | 735 | -0.5% | 0 s |
 | 4 | *Frost DPS* | community simulator | - | 603 | -6.8% | 692 | -6.3% | 0 s |
-| 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 33/0/18 | 602 | -7.0% | 694 | -6.1% | 0 s |
-| 6 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 20/0/31 | 569 | -12.2% | 651 | -11.8% | 0 s |
-| 7 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 554 | -14.4% | 709 | -4.0% | 21 s |
-| 8 | *Frost 14/0/37* | community simulator | - | 530 | -18.2% | 702 | -5.0% | 29 s |
-| 9 | *Arcane 35/0/16* | community simulator | - | 517 | -20.2% | 596 | -19.3% | 0 s |
+| 5 | [`frost-arcane-power-raid`](frost-arcane-power-raid.md) | ours: hand draft | 32/0/19 | 602 | -7.0% | 694 | -6.1% | 0 s |
+| 6 | [`opt-frost-raid-raid-dps-extwc`](opt-frost-raid-raid-dps-extwc.md) | ours: optimizer | 1/13/37 | 591 | -8.7% | 709 | -4.0% | 7 s |
+| 7 | *Frost 14/0/37* | community simulator | - | 586 | -9.5% | 702 | -5.0% | 8 s |
+| 8 | **[`frost-winters-chill-raid`](frost-winters-chill-raid.md)** | ours: hand draft | 21/0/30 | 575 | -11.2% | 658 | -10.9% | 0 s |
+| 9 | *Arcane 35/0/16* | community simulator | - | 517 | -20.1% | 596 | -19.3% | 0 s |
 | 10 | *Arcane DPS* | community simulator | - | 451 | -30.3% | 514 | -30.5% | 0 s |
 | 11 | *Fire 0/35/16* | community simulator | - | 408 | -37.0% | 472 | -36.1% | 0 s |
 | 12 | *Fire DPS* | community simulator | - | 341 | -47.4% | 388 | -47.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
-- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 2 changes to the base rotation; third-seed check: ml: Frost 644 -> 647 DPS (+0.5%), ml: Hybrid Arcane/Frost 640 -> 643 DPS (+0.5%), frost-fingers-of-frost-raid 640 -> 643 DPS (+0.5%), sim preset: Frost DPS 597 -> 603 DPS (+1.1%), frost-arcane-power-raid 602 -> 603 DPS (+0.2%)):
-  1. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.3%)
-  2. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%)
+- **The training dummy:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 2 passes, the last 2026-10-02, 3 changes to the base rotation; third-seed check: ):
+  1. drop: if mana % < 20% and time left in the fight > 25s: cast Evocation (+0.3%, pass 1)
+  2. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%, pass 1)
+  3. repair: insert before the filler: if mana % < 5% and time left in the fight > 25s: cast Evocation (every frost-raid build raced, 20,000 fights, seed 3: opt-frost-raid-raid-dps-extwc +6.6%, the others -0.02% to +0.00%) (+6.6%, pass 2)
 - **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-02, 2 changes to the base rotation; third-seed check: ml: Frost 731 -> 737 DPS (+0.8%), ml: Hybrid Arcane/Frost 728 -> 735 DPS (+1.0%), frost-fingers-of-frost-raid 728 -> 735 DPS (+1.0%), sim preset: Frost DPS 687 -> 691 DPS (+0.6%), frost-arcane-power-raid 689 -> 693 DPS (+0.6%)):
   1. move down below 'if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles': if Fingers of Frost is up: cast Ice Lance (+0.2%)
   2. only with 3s or more of the fight left: cast Frostbolt + insert at the end: if mana ≥ (time left in the fight × 110): cast Fire Blast (+0.5%)
@@ -101,7 +100,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
 | 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 4.0 |
 | 4 | cast Frostbolt | 20.0 |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent).
+Lines of the simulator's rotation these builds never cast: cast Ice Lance (needs the Ice Lance talent); cast Evocation (its condition never held in these fights).
 
 Damage by ability:
 
@@ -115,6 +114,7 @@ Damage by ability:
 - Ice Lance + Fingers of Frost are not taken here; they need 3 more Frost points (see the Fingers of Frost build).
 - 2026-09-27 scenario audit: Improved Frost Nova 2 -> Arctic Reach 2. Improved Frost Nova shortens a root's cooldown: control a raid boss ignores (simulator 0.0%). Arctic Reach 2/2 adds range. This draft is superseded in Forever: the beta Winter's Chill raises only your own Frostbolt and Ice Lance crit, so the raid-support reason for skipping Fingers of Frost is gone, and frost-fingers-of-frost-raid simulates about 14% higher (645 vs 559 DPS).
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Arctic Reach -> Missile Barrage (+7.6% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Geometry -> Arcane Impact (+0.2% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arcane Subtlety -> Arcane Focus (+0.3% DPS); Arctic Reach -> Arcane Impact (+0.2% DPS); Shatter -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Wand Specialization -> Improved Channeling (interrupt); Shatter -> Arctic Reach (range); Shatter -> Arctic Reach (range). Net +8.80% on a third seed.
+- 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Arcane Blast, Ice Barrier was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Ice Barrier -> Presence of Mind (+1.1% DPS); Arcane Blast -> Improved Channeling (interrupt). Net +1.11% on a third seed.
 
 ## Open questions (verify in the live game)
 

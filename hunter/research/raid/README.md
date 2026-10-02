@@ -22,7 +22,7 @@ Hand drafts (the recommendations; each is a hypothesis to check at launch):
 | [Beast-Marks — Raid (machine-learning search)](builds/beast-marks-ml-raid.md) | 23/28/0 | DPS | — |
 | [Marksmanship — Raid (machine-learning search)](builds/marksmanship-ml-raid.md) | 11/40/0 | DPS | — |
 | [Marksmanship — Full raid (parse) (machine-learning search)](builds/marksmanship-ml-parse.md) | 7/44/0 | DPS | — |
-| [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) | 5/11/35 | DPS | — |
+| [Survival — Full raid (parse) (machine-learning search)](builds/survival-ml-parse.md) | 5/14/32 | DPS | — |
 
 Optimizer builds (the stats model's optimum per use-case, see the Optimizer section):
 
@@ -81,8 +81,8 @@ Our builds and the community simulator's own builds, run through the same simula
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`survival-raid`](builds/survival-raid.md) | ours: hand draft | 5/16/30 | 450 | +0.0% | 967 | -2.4% | 12 s |
 | 2 | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 430 | -4.5% | 965 | -2.6% | 9 s |
-| 3 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | -0.0% | 47 s |
-| 4 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: parse build | 5/11/35 | 336 | -25.3% | 991 | +0.0% | 124 s |
+| 3 | [`melee-survival-raid`](builds/melee-survival-raid.md) | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | +0.0% | 47 s |
+| 4 | [`survival-ml-parse`](builds/survival-ml-parse.md) | ours: parse build | 5/14/32 | 347 | -22.9% | 991 | -0.0% | 119 s |
 
 ## DPS by gear tier
 
@@ -116,9 +116,9 @@ The spells new in Forever, what the simulators measured them doing, and the buil
 | Idea | Build | Split | Dummy DPS | Raid DPS | Against the class's best | Talent search | Leveling |
 |---|---|---|---|---|---|---|---|
 | Summon Hawk, a Forever Beast Mastery talent that sends a hawk to dive-bomb the target every 6 seconds (two hawks attack at once), in a raid build: searched from the simulator's Beast Mastery preset and from our Marksmanship draft | [`mm-hawk-raid`](builds/mm-hawk-raid.md) | 22/29/0 | 461 | 810 | -2.6% on the dummy; -18.3% in a raid | from `bm-mm-raid`, 4 moves | - |
-| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 426 | 991 | -10.0% on the dummy; -0.0% in a raid | from `melee-survival-raid`, 0 moves | - |
+| A melee hunter around the new Survival abilities (Strider Kick, Lacerate) and Aspect of the Beast | [`melee-survival-raid`](builds/melee-survival-raid.md) | 5/11/35 | 426 | 991 | -10.0% on the dummy; the best in a raid | from `melee-survival-raid`, 0 moves | - |
 
-The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) (bm-raid), 473 DPS; in a raid: [`survival-ml-parse`](builds/survival-ml-parse.md) (melee-dps), 991 DPS.
+The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](builds/beast-marks-ml-raid.md) (bm-raid), 473 DPS; in a raid: [`melee-survival-raid`](builds/melee-survival-raid.md) (melee-dps), 991 DPS.
 
 ## Raid sim (community simulator, level 60)
 
@@ -134,7 +134,7 @@ The class's best raid DPS build on the training dummy: [`beast-marks-ml-raid`](b
 | `melee-dps` | dummy | `survival-raid` | 5/16/30 | 450 | +0.0% | 12 | +112% |
 | `melee-dps` | dummy | `opt-melee-dps-raid-dps` | 5/15/31 | 430 | -4.5% | 9 | +124% |
 | `melee-dps` | dummy | `melee-survival-raid` | 5/11/35 | 426 | -5.3% | 47 | +111% |
-| `melee-dps` | dummy | `survival-ml-parse` | 5/11/35 | 336 | -25.3% | 124 | +96% |
+| `melee-dps` | dummy | `survival-ml-parse` | 5/14/32 | 347 | -22.9% | 119 | +98% |
 | `mm-lonewolf-raid` | dummy | `marksmanship-ml-raid` | 11/40/0 | 447 | +0.0% | 100 | +76% |
 | `mm-lonewolf-raid` | dummy | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 446 | -0.3% | 100 | +78% |
 | `mm-lonewolf-raid` | dummy | `cand-mm-lonewolf-raid-r6` | 5/38/8 | 446 | -0.3% | 100 | +78% |
@@ -190,7 +190,7 @@ Scorer = the stats model's own score of the allocation for its raid profile (rel
 | `melee-dps` | `survival-raid` | 5/16/30 | 450 | 527 | 967 | 967 | 1000 |
 | `melee-dps` | `opt-melee-dps-raid-dps` | 5/15/31 | 430 | 506 | 965 | 965 | 1003 |
 | `melee-dps` | `melee-survival-raid` | 5/11/35 | 426 | 501 | 991 | 991 | 1026 |
-| `melee-dps` | `survival-ml-parse` | 5/11/35 | 336 | 404 | 991 | 991 | 1026 |
+| `melee-dps` | `survival-ml-parse` | 5/14/32 | 347 | 415 | 991 | 991 | 1026 |
 | `mm-lonewolf-raid` | `marksmanship-ml-raid` | 11/40/0 | 447 | 482 | 894 | 894 | 912 |
 | `mm-lonewolf-raid` | `opt-mm-lonewolf-raid-raid-dps` | 5/38/8 | 446 | 480 | 898 | 898 | 924 |
 | `mm-lonewolf-raid` | `marksmanship-ml-parse` | 7/44/0 | 446 | 480 | 935 | 935 | 957 |

@@ -251,7 +251,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 407 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 392 DPS), *Mutilate* (community simulator, 371 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS)
+### [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) (ours: hand draft, 407 DPS), [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) (ours: hand draft, 394 DPS), *Mutilate* (community simulator, 371 DPS), *Assassination Mutilate 31/20/0* (community simulator, 359 DPS)
 
 | # | Priority (the first line whose condition holds is cast) | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) casts/min | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) casts/min | *Mutilate* casts/min | *Assassination Mutilate 31/20/0* casts/min |
 |---|---|---|---|---|---|
@@ -270,10 +270,10 @@ Damage by ability:
 | Ability | [`assassination-seal-fate-raid`](builds/assassination-seal-fate-raid.md) | [`assassination-mutilate-raid`](builds/assassination-mutilate-raid.md) | *Mutilate* | *Assassination Mutilate 31/20/0* |
 |---|---|---|---|---|
 | Auto Attack | 40% | 43% | 44% | 46% |
-| Backstab | 31% | 31% | 30% | 31% |
+| Backstab | 31% | 30% | 30% | 31% |
 | Eviscerate | 12% | 13% | 9% | 6% |
 | Deadly Poison | 8% | 7% | 8% | 8% |
-| Dense Sharpening Stone | 5% | 3% | 4% | 4% |
+| Dense Sharpening Stone | 5% | 4% | 4% | 4% |
 | Dragonbreath Chili | 2% | 2% | 2% | 2% |
 | Goblin Sapper Charge | 2% | 2% | 2% | 2% |
 

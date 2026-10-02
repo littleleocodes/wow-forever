@@ -324,20 +324,20 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 
 The tables below are the training-dummy rotation, filtered per build:
 
-### [`survival-raid`](builds/survival-raid.md) (ours: hand draft, 450 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 430 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 426 DPS), [`survival-ml-parse`](builds/survival-ml-parse.md) (ours: parse build, 336 DPS)
+### [`survival-raid`](builds/survival-raid.md) (ours: hand draft, 450 DPS), [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) (ours: optimizer, 430 DPS), [`melee-survival-raid`](builds/melee-survival-raid.md) (ours: hand draft, 426 DPS), [`survival-ml-parse`](builds/survival-ml-parse.md) (ours: parse build, 347 DPS)
 
 Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`survival-raid`](builds/survival-raid.md) casts/min | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) casts/min | [`melee-survival-raid`](builds/melee-survival-raid.md) casts/min | [`survival-ml-parse`](builds/survival-ml-parse.md) casts/min |
 |---|---|---|---|---|---|
-| 1 | cast Raptor Strike | 20.0 | 20.0 | 18.9 | 12.5 |
+| 1 | cast Raptor Strike | 20.0 | 20.0 | 18.9 | 14.3 |
 | 2 | cast Immolation Trap | 3.3 | 2.0 | 2.8 | 1.7 |
 | 3 | cast Aspect of the Beast | 0.3 | 0.3 | 0.3 | 0.3 |
 | 4 | use every other cooldown when ready | as ready | as ready | as ready | as ready |
-| 5 | cast Mongoose Bite | 6.3 | 12.3 | 10.6 | 6.8 |
+| 5 | cast Mongoose Bite | 6.3 | 12.3 | 10.6 | 7.4 |
 | 6 | cast Major Mana Potion | as ready | as ready | as ready | as ready |
-| 7 | cast Strider Kick | 6.5 | 6.4 | 5.1 | 2.6 |
-| 8 | cast Wing Clip | 22.9 | 24.5 | 19.0 | 9.2 |
+| 7 | cast Strider Kick | 6.5 | 6.4 | 5.1 | 2.7 |
+| 8 | cast Wing Clip | 22.9 | 24.5 | 19.0 | 9.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
@@ -345,8 +345,8 @@ Damage by ability:
 
 | Ability | [`survival-raid`](builds/survival-raid.md) | [`opt-melee-dps-raid-dps`](builds/opt-melee-dps-raid-dps.md) | [`melee-survival-raid`](builds/melee-survival-raid.md) | [`survival-ml-parse`](builds/survival-ml-parse.md) |
 |---|---|---|---|---|
-| Auto Attack | 42% | 45% | 46% | 57% |
-| Raptor Strike | 16% | 17% | 16% | 13% |
+| Auto Attack | 42% | 45% | 46% | 55% |
+| Raptor Strike | 16% | 17% | 16% | 15% |
 | Mongoose Bite | 13% | 15% | 13% | 11% |
 | Immolation Trap | 12% | 6% | 11% | 8% |
 | Strider Kick | 8% | 8% | 7% | 4% |

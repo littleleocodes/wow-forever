@@ -291,7 +291,10 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   other rotations) an action; drop or loosen a condition; change a threshold; add a mana guard or a fight-time guard; cast a lower
   spell rank always or below a mana share; two-edit lookahead when no single edit wins. Candidates run with common random numbers on
   the spec's main builds (our best and the simulator's best preset); a change is kept only when it wins on a second seed and costs no
-  tuning build more than 0.1%. Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
+  tuning build more than 0.1%. Since 2026-10-02 every other build of ours the entry lists is a protected tuning build too (parse builds
+  only in the raid setting): the 2026-10-01 pass, tuned on the best builds alone, dropped Frost's Evocation line and cost the 1/13/37
+  Frost build 6.1% (repaired with Evocation below 5% mana, a recorded pass; a race of every re-tuned entry's builds under the old and
+  new rotations found no other loss above 0.5% outside a parse build's dummy number). Two rotations per DPS spec: `apl_opt` for the training dummies (own buffs, short of mana) and
   `apl_opt_raid` for the raid settings (full buffs); tanks one (`apl_opt_raid`). `run.py apl_path(entry, repo, where)` picks the
   rotation for a setting (environments included), falling back to the simulator's; a search that finds nothing keeps the
   simulator's rotation (no copy). Records: `<class>/research/raid/raidsim/<spec>-rotation-search.json`; rotations:
@@ -408,6 +411,18 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   `--all --apply` writes the builds with a note. The utility order is our judgment: the simulator models no pushback, range or threat.
   Raid pages list the class's own spells a build casts that the simple rotation leaves out as "Advanced" (cooldowns, mana tools,
   with casts per fight from the race report; `simple_rotation.advanced`).
+  **Talents whose ability is never cast** (2026-10-02, user report: "the new Frost mage spec takes Arcane Blast but never uses the
+  ability in its rotation ... a wasted talent point"): the search scores every dead point alike, so a tier-gating filler could sit in an
+  ability talent (Arcane Blast in three Frost builds, Stormstrike in the Elemental hybrid, Riposte, Blast Wave, Counterattack, Mutilate in
+  the old Mutilate draft). `filler_audit.py` now counts such a talent as free when the build never casts it (base run in both settings,
+  no pre-pull line) and casting it was shown not to pay (the spell probe kept no line in that entry, VERIFIED_UNUSED, a rotation line
+  that never fires, or a parry trigger); its tag-based utility is ignored unless the ability is defensive (absorb, dodge, heal).
+  `raidsim/unused_abilities.py --write` measures every remaining never-cast ability talent by removal and sorts it: `automatic` (the
+  simulator applies it without a cast: Trueshot Aura, Demonic Sacrifice from the class options, Soul Link), `prerequisite`,
+  `situational` (defensive) or `wasted` (0 after the fix); record `raidsim/unused-abilities.json`, page `_reference/unused-abilities.md`.
+  Raid pages print "Talents with no line below" for the top build from it (turn on Trueshot Aura, sacrifice the Imp before the pull,
+  taken for Shadowform...). `ml_builds.py` runs the filler audit on every build it writes (`tidy`) and, with `--tidy-winners`, on the
+  search winners the rankings show (record key `tidied`; `filler_audit.audit(..., alloc=, setting=)` audits an allocation).
 - **Seeds in the raid sim** (fixed 2026-09-29): the simulator reseeds iteration i with RandomSeed + i, so our seeds 1, 2 and 3 used
   to share almost every iteration. `run.sim_seed(k)` maps seed k to 1 + (k - 1) * 1,000,000 (seed 1 unchanged, the others disjoint)
   in every bench config (run.py, apl_opt.py and through it talent_opt.py). Seed-2 confirmations and third-seed checks recorded

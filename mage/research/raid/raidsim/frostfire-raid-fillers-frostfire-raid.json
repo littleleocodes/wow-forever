@@ -3,153 +3,98 @@
  "spec": "frostfire-raid",
  "build": "frostfire-raid",
  "setting": "dummy",
- "date": "2026-09-29",
+ "date": "2026-10-02",
  "tank": false,
  "removal": {
   "Blast Wave": -0.0,
-  "Burning Soul": -0.0,
-  "Combustion": 0.1285778244577851,
-  "Critical Mass": 0.05582926851471326,
-  "Elemental Precision": 0.019315803425864253,
-  "Fire Power": 0.08789022512535438,
-  "Flame Throwing": -0.0,
-  "Frost Channeling": -0.006281303556262552,
-  "Hot Streak": 0.27111263245442696,
-  "Ice Shards": 0.08585142593506445,
-  "Ignite": 0.1458148823187928,
-  "Improved Fireball": 0.0006871754296623456,
-  "Improved Scorch": 0.10000895949229882,
-  "Incineration": 0.008862605695211245,
-  "Master of Elements": -0.006453591299224737,
-  "Piercing Ice": 0.033207523621110346,
-  "Pyroblast": 0.022522889058220308
+  "Combustion": 0.2876484057932449,
+  "Critical Mass": 0.051931377413329205,
+  "Elemental Precision": 0.010849370041174144,
+  "Fire Power": 0.086259515561394,
+  "Frost Channeling": 0.022628415276980784,
+  "Hot Streak": 0.39516851896384675,
+  "Ice Shards": 0.16875382083142365,
+  "Ignite": 0.20544623290696873,
+  "Improved Channeling": -0.0,
+  "Improved Fireball": 0.0006150076433552032,
+  "Improved Scorch": 0.30181909420865183,
+  "Incineration": -0.003548837516504033,
+  "Master of Elements": 0.01727022099731257,
+  "Piercing Ice": 0.046141577473976625,
+  "Pyroblast": 0.021936067667321812,
+  "Wake of Fire": 4.599310015940272e-05
  },
  "free": [
-  "Burning Soul",
-  "Flame Throwing",
-  "Improved Fireball"
+  "Blast Wave",
+  "Improved Channeling",
+  "Improved Fireball",
+  "Wake of Fire"
  ],
  "kept_for_rotation": [
   "Hot Streak"
  ],
- "active_never_worth": [
+ "active_never_worth": [],
+ "abilities_never_cast": [
   "Blast Wave"
  ],
  "moves": [
   {
    "round": 1,
-   "kind": "gain",
-   "from": "Burning Soul",
-   "to": "Wake of Fire",
-   "seed1": 0.012609090848957338,
-   "seed2": 0.01587055543890159,
-   "utility": null
+   "kind": "utility",
+   "from": "Blast Wave",
+   "to": "Improved Channeling",
+   "seed1": 0.0,
+   "seed2": 0.0,
+   "utility": "interrupt"
   },
   {
    "round": 2,
-   "kind": "gain",
-   "from": "Burning Soul",
-   "to": "Wake of Fire",
-   "seed1": 0.00864707933579667,
-   "seed2": 0.009560143891778283,
-   "utility": null
+   "kind": "utility",
+   "from": "Wake of Fire",
+   "to": "Improved Channeling",
+   "seed1": -2.8452895663111377e-05,
+   "seed2": 6.745268601671128e-06,
+   "utility": "interrupt"
   },
   {
    "round": 3,
    "kind": "utility",
-   "from": "Flame Throwing",
-   "to": "Improved Channeling",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
+   "from": "Wake of Fire",
+   "to": "Burning Soul",
+   "seed1": -1.7540703580065653e-05,
+   "seed2": -1.9882451220087916e-05,
+   "utility": "threat"
   },
   {
    "round": 4,
    "kind": "utility",
-   "from": "Flame Throwing",
-   "to": "Improved Channeling",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "interrupt"
+   "from": "Improved Fireball",
+   "to": "Burning Soul",
+   "seed1": -0.00013050742295750428,
+   "seed2": -0.0001266523106147055,
+   "utility": "threat"
+  },
+  {
+   "round": 5,
+   "kind": "utility",
+   "from": "Improved Fireball",
+   "to": "Burning Soul",
+   "seed1": -8.818162355894721e-05,
+   "seed2": -0.00012568714432137362,
+   "utility": "threat"
+  },
+  {
+   "round": 6,
+   "kind": "utility",
+   "from": "Improved Fireball",
+   "to": "Flame Throwing",
+   "seed1": -0.00011563331811170752,
+   "seed2": -8.396208008731865e-05,
+   "utility": "range"
   }
  ],
- "final_seed3": 0.024508353489599122,
+ "final_seed3": -0.0003889685333025028,
  "start": {
-  "Arcane": [],
-  "Fire": [
-   [
-    "Incineration",
-    3
-   ],
-   [
-    "Improved Fireball",
-    5
-   ],
-   [
-    "Ignite",
-    5
-   ],
-   [
-    "Flame Throwing",
-    2
-   ],
-   [
-    "Burning Soul",
-    2
-   ],
-   [
-    "Pyroblast",
-    1
-   ],
-   [
-    "Improved Scorch",
-    3
-   ],
-   [
-    "Hot Streak",
-    1
-   ],
-   [
-    "Master of Elements",
-    3
-   ],
-   [
-    "Critical Mass",
-    3
-   ],
-   [
-    "Blast Wave",
-    1
-   ],
-   [
-    "Fire Power",
-    5
-   ],
-   [
-    "Combustion",
-    1
-   ]
-  ],
-  "Frost": [
-   [
-    "Elemental Precision",
-    5
-   ],
-   [
-    "Ice Shards",
-    5
-   ],
-   [
-    "Piercing Ice",
-    3
-   ],
-   [
-    "Frost Channeling",
-    3
-   ]
-  ]
- },
- "allocation": {
   "Arcane": [
    [
     "Improved Channeling",
@@ -204,6 +149,82 @@
    [
     "Wake of Fire",
     2
+   ]
+  ],
+  "Frost": [
+   [
+    "Elemental Precision",
+    5
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Piercing Ice",
+    3
+   ],
+   [
+    "Frost Channeling",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Arcane": [
+   [
+    "Improved Channeling",
+    4
+   ]
+  ],
+  "Fire": [
+   [
+    "Incineration",
+    3
+   ],
+   [
+    "Improved Fireball",
+    2
+   ],
+   [
+    "Ignite",
+    5
+   ],
+   [
+    "Pyroblast",
+    1
+   ],
+   [
+    "Improved Scorch",
+    3
+   ],
+   [
+    "Hot Streak",
+    1
+   ],
+   [
+    "Master of Elements",
+    3
+   ],
+   [
+    "Critical Mass",
+    3
+   ],
+   [
+    "Fire Power",
+    5
+   ],
+   [
+    "Combustion",
+    1
+   ],
+   [
+    "Burning Soul",
+    3
+   ],
+   [
+    "Flame Throwing",
+    1
    ]
   ],
   "Frost": [

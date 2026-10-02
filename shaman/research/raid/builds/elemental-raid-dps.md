@@ -23,12 +23,13 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | **Concussion** | 5/5 | changed | Increases the damage done by your Lightning Bolt, Chain Lightning, and Earth Shock spells by 5%. |
 | **Convection** | 5/5 | changed | Reduces the mana cost of your Shock, Lightning Bolt, Lava Burst, and Chain Lightning spells by 10%. |
 | **Call of Flame** | 3/3 | changed | Increases the damage done by your Fire Totems and by your Flame Shock, Fire Nova, and Lava Burst spells by 15%. |
-| **Reverberation** | 4/5 | changed | Reduces the cooldown of your Shock spells by 0.8 sec. |
+| **Reverberation** | 2/5 | changed | Reduces the cooldown of your Shock spells by 0.4 sec. |
 | **Elemental Alacrity** | 3/3 | **NEW** | Reduces the cast time of your Lightning Bolt, Chain Lightning, and Lava Burst spells by 0.50 sec. |
 | **Elemental Focus** | 1/1 | moved | Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%. |
 | **Call of Thunder** | 1/1 | changed | Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%. |
 | **Lightning Overload** | 3/3 | **NEW** | Gives your Lightning Bolt and Chain Lightning spells a 10% chance to cast a second, similar spell on the same target at no additional cost that causes half damage and no threat. |
 | **Elemental Fury** | 4/5 | changed | Increases the critical strike damage bonus of your Searing and Magma Totems and your Fire, Frost, and Nature spells by 80%. |
+| **Eye of the Storm** | 2/3 | changed | Reduces the pushback suffered from damaging attacks while casting Lightning Bolt, Chain Lightning, and Lava Burst by 47%. |
 
 ### Enhancement (22)
 
@@ -38,10 +39,9 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | **Ancestral Knowledge** | 5/5 | changed | Increases your Intellect by 10%. |
 | **Earth's Grasp** | 2/2 | moved | Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%. |
 | **Shamanistic Focus** | 1/1 | **NEW** | Reduces the mana cost of your Shock and Lightning Shield spells by 45%. |
-| **Stormstrike** | 1/1 | changed | Instantly strike for normal weapon damage and increase the damage you deal to the target with your next Lightning Bolt, Chain Lightning, or Earth Shock spell by 20% for 12 sec. |
 | **Mental Quickness** | 2/2 | **NEW** | Increases your spell damage and healing by up to 30% of your Intellect. |
 | **Anticipation** | 3/3 | changed | Increases your chance to dodge by an additional 6%. |
-| **Toughness** | 3/5 | changed | Increases your Stamina by 6%. |
+| **Toughness** | 4/5 | changed | Increases your Stamina by 8%. |
 
 ### Restoration (0)
 
@@ -66,7 +66,7 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 | 3 | Toughness | Improved Lightning Shield, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 2 | Anticipation | Guardian Totems, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 1 | Anticipation | Elemental Weapons, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
-| 1 | Stormstrike | any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
+| 1 | Toughness | Stormstrike, any utility talent legal at that tier | Measures +0.0% DPS in the community simulator (noise): these points are free to move. |
 | 4 | Reverberation | any utility talent legal at that tier | Measures -0.7% DPS in the community simulator (noise): these points are free to move. |
 
 ## Rank among our builds and the community simulator's
@@ -75,12 +75,12 @@ Allocation adopted on 2026-09-26 from `cand-elemental-dps-r1`, the best build in
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
-| 2 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.5% | 0 s |
-| 3 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 438 | -0.4% | 556 | +0.0% | 0 s |
-| 4 | *Elemental 31/6/14* | community simulator | - | 434 | -1.2% | 549 | -1.3% | 0 s |
-| 5 | *Stormcaller 28/23/0* | community simulator | - | 421 | -4.3% | 537 | -3.4% | 0 s |
-| 6 | *Level 60* | community simulator | - | 419 | -4.7% | 530 | -4.7% | 0 s |
+| 1 | [`opt-elemental-dps-raid-dps`](opt-elemental-dps-raid-dps.md) | ours: optimizer | 31/7/13 | 440 | +0.0% | 553 | -0.3% | 0 s |
+| 2 | [`elemental-raid`](elemental-raid.md) | ours: hand draft | 31/7/13 | 440 | +0.0% | 553 | -0.3% | 0 s |
+| 3 | **[`elemental-raid-dps`](elemental-raid-dps.md)** | ours: hand draft | 29/22/0 | 438 | -0.5% | 555 | +0.0% | 0 s |
+| 4 | *Elemental 31/6/14* | community simulator | - | 434 | -1.2% | 549 | -1.1% | 0 s |
+| 5 | *Stormcaller 28/23/0* | community simulator | - | 421 | -4.3% | 537 | -3.2% | 0 s |
+| 6 | *Level 60* | community simulator | - | 419 | -4.7% | 530 | -4.6% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -123,6 +123,7 @@ Damage by ability:
 - Thundering Strikes (Enhancement tier 1) is now +5% crit with all spells — a 5/31/15 variant that drops Mana Tide for it is plausible.
 - Beta client: Tidal Mastery moved to Restoration tier 4 and Totemic Focus to tier 1, so the 20 Restoration points are now Totemic Focus 5, Mindfulness 3, Tidal Focus 5, Natural Grace 1, Water Shield 1, Restorative Totems 4, Mana Tide Totem 1 (Restorative Totems replaces Tidal Mastery as the filler).
 - 2026-09-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Elemental Weapons -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Guardian Totems -> Anticipation (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival); Improved Lightning Shield -> Toughness (survival). Net +0.00% on a third seed.
+- 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Stormstrike was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Reverberation -> Eye of the Storm (interrupt); Reverberation -> Eye of the Storm (interrupt); Stormstrike -> Toughness (survival). Net -0.13% on a third seed.
 
 ## Open questions (verify in the live game)
 

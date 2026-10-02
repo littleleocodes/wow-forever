@@ -4,7 +4,7 @@
 
 | Build | Split | DPS | ± | vs best | Threat | OOM s | Scorer |
 |---|---|---|---|---|---|---|---|
-| `frostfire-raid` | 2/33/16 | 616 | 71 | +0.0% | 515 | 0 | - |
+| `frostfire-raid` | 4/31/16 | 615 | 70 | +0.0% | 408 | 0 | - |
 
 ## Damage shares (`frostfire-raid`, simulator actions)
 
@@ -23,5 +23,5 @@ Mapped onto the spec model's sources: ; 100% of the damage matched no source (ra
 
 Scorer = the expected-value stats model's score of the same allocation for its raid profile (relative to a talentless character; only comparable within a spec model). Talent strings sent to the sim:
 
-- frostfire-raid: `002-23550000130133151-005500033`
+- frostfire-raid: `004-03251030130133051-005500033`
 

@@ -27,3 +27,10 @@ builds); the pipeline must reload specs.json after the rotation step (`reload_sp
 (Bloodvine, Sulfuras; fixed); Rhok'delar is epic but sourceless at ilvl 75 -> `PHASE1_QUEST`; Scourge Invasion drops -> `EVENT_NPCS`;
 fcntl is Unix-only -> `filelock.py`. Dead talents measure exactly equal under common random numbers, hence `align`.
 Deferred user items: do not start without asking (the rotation re-tune and the Venom question are now covered; see HANDOFF.md).
+
+Follow-ups 2026-10-02 (user reports): (1) the Frost winner kept a never-cast Arcane Blast as a tier-gating filler -> filler_audit now frees
+never-cast ability talents (probe-verified, never-firing line, parry trigger), `unused_abilities.py` sorts the rest (automatic: TSA,
+Demonic Sacrifice via class options, Soul Link; prerequisite; situational), raid pages print "Talents with no line below", ml_builds
+`tidy` + `--tidy-winners`. (2) The ML rotation re-tune protected only the best builds -> Frost lost Evocation and the 1/13/37 build -6.1%;
+repaired (Evocation <5% mana) and apl_opt.main_builds now protects every build the entry lists (parse builds only in raid).
+Lesson: any optimizer whose objective is DPS treats dead points as free and unprotected builds as expendable; check what players see.

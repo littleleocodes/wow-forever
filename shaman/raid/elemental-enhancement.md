@@ -6,7 +6,7 @@
 
 **✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
 
-**[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550430130010304-255000001330102--4)
+**[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550230130210304-255000001340002--4)
 
 ## How to play
 
@@ -29,7 +29,7 @@
 | Setting | DPS |
 |---|---|
 | Training dummy, 3-minute fight (only your own buffs) | 438 |
-| Parse (a full raid: every raid buff and debuff) | 556 |
+| Parse (a full raid: every raid buff and debuff) | 555 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
@@ -43,7 +43,7 @@
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 438 → mana +0% → armor +0% → physical +2% → spell +12% → everything else +13% → raid 556
+Dummy 438 → mana +0% → armor +0% → physical +2% → spell +12% → everything else +12% → raid 555
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -51,7 +51,7 @@ Dummy 438 → mana +0% → armor +0% → physical +2% → spell +12% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 452 | 446 | 438 | 433 | 423 |
+| 454 | 446 | 438 | 433 | 423 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 

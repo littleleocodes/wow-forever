@@ -5,7 +5,7 @@
 | Build | Split | Training dummy | Level-60 dummy | Raid | Maximum | Maximum, 60 s |
 |---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 30/19/2 | 407 | 476 | 682 | 690 | 733 |
-| `assassination-mutilate-raid` | 30/21/0 | 392 | 461 | 665 | 674 | 719 |
+| `assassination-mutilate-raid` | 30/21/0 | 394 | 464 | 667 | 677 | 722 |
 | sim preset: Mutilate | - | 371 | 438 | 648 | 658 | 699 |
 | sim preset: Assassination Mutilate 31/20/0 | - | 359 | 425 | 630 | 637 | 678 |
 
@@ -22,7 +22,7 @@ Each build from the training dummy to the raid, one group of raid buffs at a tim
 | Build | Dummy | + mana | + armor | + physical | + spell | + rest | Raid |
 |---|---|---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 407 | +0% | +20% | +31% | +2% | +15% | 682 |
-| `assassination-mutilate-raid` | 392 | -0% | +20% | +32% | +1% | +16% | 665 |
+| `assassination-mutilate-raid` | 394 | +0% | +20% | +32% | +1% | +16% | 667 |
 | sim preset: Mutilate | 371 | +0% | +20% | +32% | +2% | +21% | 648 |
 | sim preset: Assassination Mutilate 31/20/0 | 359 | -0% | +22% | +33% | +2% | +19% | 630 |
 
@@ -35,7 +35,7 @@ Average DPS on the training dummy (no execute phase) if the fight lasts this lon
 | Build | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|---|
 | `assassination-seal-fate-raid` | 434 | 414 | 407 | 405 | 407 |
-| `assassination-mutilate-raid` | 420 | 399 | 392 | 389 | 391 |
+| `assassination-mutilate-raid` | 422 | 401 | 394 | 392 | 393 |
 | sim preset: Mutilate | 394 | 377 | 371 | 369 | 371 |
 | sim preset: Assassination Mutilate 31/20/0 | 379 | 364 | 359 | 357 | 359 |
 

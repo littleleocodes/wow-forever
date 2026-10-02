@@ -8,6 +8,8 @@
 
 ## How to play
 
+**Talents with no line below:** **Demonic Sacrifice**: before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out; **Soul Link**: turn it on with your demon out (it lasts while the demon lives).
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Curse of the Elements**: keep it on the target
@@ -37,8 +39,8 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 656 | 801 | [2/31/18](https://talentsforever.com/warlock/60/101-0115003031220301351-0550005003-4) |
-| Phase 1 BiS | 689 | 836 | [2/31/18](https://talentsforever.com/warlock/60/101-0115003031220301351-0550005003-4) |
+| Pre-BiS | 656 | 801 | [2/31/18](https://talentsforever.com/warlock/60/101-0025003031220301351-0550005003-4) |
+| Phase 1 BiS | 689 | 836 | [2/31/18](https://talentsforever.com/warlock/60/101-0025003031220301351-0550005003-4) |
 
 - **Pre-BiS gear** (average item level 62.8): Head: Spellweaver's Turban; Neck: Orb of the Darkmoon; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of the Void; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Knowledge of the Timbermaw; Legs: Skyshroud Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Briarwood Reed; Trinket: Eye of the Beast; Main hand: Elemental Attuned Blade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus
 - **Phase 1 BiS gear** (average item level 65.8): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Hands of Power; Waist: Mana Igniting Cord; Legs: Nemesis Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Ring of Spell Power; Trinket: Talisman of Ephemeral Power; Trinket: Briarwood Reed; Main hand: Azuresong Mageblade; Off hand: Scepter of Interminable Focus; Ranged/relic: Bonecreeper Stylus

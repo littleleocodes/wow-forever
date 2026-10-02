@@ -1,10 +1,10 @@
-# Survival — Full raid (parse) (machine-learning search) — 5/11/35
+# Survival — Full raid (parse) (machine-learning search) — 5/14/32
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 5/11/35 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 5/14/32 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -21,15 +21,16 @@ The Survival build the machine-learning talent search found in a full raid (ever
 |---|---|---|---|
 | **Deadly Aspects** | 5/5 | **NEW** | While Aspect of the Hawk is active, Auto Shot has a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec. |
 
-### Marksmanship (11)
+### Marksmanship (14)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
 | **Lone Wolf** | 1/1 | **NEW** | You deal 20% increased damage with all attacks while you do not have an active pet. |
+| **Efficiency** | 3/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 9%. |
 
-### Survival (35)
+### Survival (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -38,10 +39,8 @@ The Survival build the machine-learning talent search found in a full raid (ever
 | **Survivalist** | 3/5 | changed | Increases your total Health by 6%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
-| **Deterrence** | 1/1 | unchanged | When activated, increases your Dodge and Parry chance by 25% for 10 sec. |
-| **Survival Tactics** | 2/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 10%. |
+| **Survival Tactics** | 1/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. |
 | **Predator's Edge** | 5/5 | **NEW** | Increases your melee critical strike damage by 30% and your offhand weapon damage by 50%. |
-| **Counterattack** | 1/1 | changed | A strike that becomes active after parrying an opponent's attack. This attack deals 50% weapon damage plus 13 and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried. |
 | **Expose Prey** | 2/2 | **NEW** | Your attacks against targets with Hunter's Mark have a 10% chance to activate your Mongoose Bite for 5 sec. |
 | **Survivalist's Discipline** | 2/2 | **NEW** | Reduces the cooldown of your Trap and Deterrence abilities by 40%. |
 | **Strider Kick** | 1/1 | **NEW** | A powerful kick that deals 100% melee weapon damage and increases movement speed by 30% for 3 sec. |
@@ -56,8 +55,8 @@ The Survival build the machine-learning talent search found in a full raid (ever
 |---|---|---|---|---|---|---|---|---|
 | 1 | [`survival-raid`](survival-raid.md) | ours: hand draft | 5/16/30 | 450 | +0.0% | 967 | -2.4% | 12 s |
 | 2 | [`opt-melee-dps-raid-dps`](opt-melee-dps-raid-dps.md) | ours: optimizer | 5/15/31 | 430 | -4.5% | 965 | -2.6% | 9 s |
-| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | -0.0% | 47 s |
-| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/11/35 | 336 | -25.3% | 991 | +0.0% | 124 s |
+| 3 | [`melee-survival-raid`](melee-survival-raid.md) | ours: hand draft | 5/11/35 | 426 | -5.3% | 991 | +0.0% | 47 s |
+| 4 | **[`survival-ml-parse`](survival-ml-parse.md)** | ours: parse build | 5/14/32 | 347 | -22.9% | 991 | -0.0% | 119 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -75,23 +74,23 @@ Before the pull: at -3s: cast Hunter's Mark.
 
 | # | Priority (the first line whose condition holds is cast) | [`survival-ml-parse`](survival-ml-parse.md) casts/min |
 |---|---|---|
-| 1 | cast Raptor Strike | 12.5 |
+| 1 | cast Raptor Strike | 14.3 |
 | 2 | cast Immolation Trap | 1.7 |
 | 3 | cast Aspect of the Beast | 0.3 |
 | 4 | use every other cooldown when ready | as ready |
-| 5 | cast Mongoose Bite | 6.8 |
+| 5 | cast Mongoose Bite | 7.4 |
 | 6 | cast Major Mana Potion | as ready |
-| 7 | cast Strider Kick | 2.6 |
-| 8 | cast Wing Clip | 9.2 |
+| 7 | cast Strider Kick | 2.7 |
+| 8 | cast Wing Clip | 9.1 |
 
-Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack, cast Explosive Trap (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Summon Hawk (needs the Summon Hawk talent); cast Counterattack (needs the Counterattack talent); cast Explosive Trap (its condition never held in these fights).
 
 Damage by ability:
 
 | Ability | [`survival-ml-parse`](survival-ml-parse.md) |
 |---|---|
-| Auto Attack | 57% |
-| Raptor Strike | 13% |
+| Auto Attack | 55% |
+| Raptor Strike | 15% |
 | Mongoose Bite | 11% |
 | Immolation Trap | 8% |
 | Strider Kick | 4% |
@@ -103,6 +102,7 @@ Damage by ability:
 - In a full raid it does +2.3% over the training-dummy winner (990.2 vs 967.7 DPS, 100,000 fights, one seed, BiS gear).
 - Search result: 5/11/35 at 990.3 ± 0.15 DPS over 100,000 fights; runner-up 5/11/35 (+0.00%; the winner takes Counterattack 1, Deflection 5, Deterrence 1, Survivalist 3; the runner-up Entrapment 5, Improved Tracking 5); 1,559 builds simulated; certificate: the neighbours ahead on the short run (of 340) did not hold on the longer one.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- 2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Counterattack, Deterrence was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Counterattack -> Efficiency (mana); Deterrence -> Efficiency (mana); Survival Tactics -> Efficiency (mana). Net -0.00% on a third seed.
 
 ## Open questions (verify in the live game)
 

@@ -20,6 +20,8 @@ every raid damage spec, and "DPS ranking for Pre-bis as well as best in slot arm
   that do nothing on the dummy (Burning Soul and Magic Absorption measure exactly the same with common random numbers), so every point
   is moved toward the spec's best hand draft (else its current best build) while the build stays legal and within 0.03% of the winner
   on one seed (5,000 fights to screen the moves, the kept move confirmed over 30,000).
+Every written build then goes through filler_audit.py (`tidy`: zero-value points and talents whose ability the rotation never casts move
+to a DPS gain or a useful talent; 2026-10-02, after the Frost winner kept a never-cast Arcane Blast for tier gating).
 The pages need race numbers for the new builds: re-race their entries afterwards (raidsim/run.py, or rebuild.py --steps raid,adopt,regen).
 --rank: every spec's pre-BiS and BiS DPS, training dummy and full raid, from the records (each a search winner raced over 100,000
 fights; talents searched separately for each tier and setting, gear per spec and tier by gear_tiers.py).
@@ -357,6 +359,21 @@ def write_builds(classes):
                 for bid in (r.get("builds") or {}).get("written", []):
                     k = "bis-raid" if bid.endswith("-parse") else "bis-dummy"
                     SB.add_to_entry(cls, r["search"][k]["entry"], bid)
+                    tidy(cls, r["search"][k]["entry"], bid)
+
+
+def tidy(cls, entry, bid):
+    """filler_audit.py on a written build: a point in a talent whose ability the rotation never casts (Arcane Blast in the Frost search
+    winner, 2026-10-02 user report), or in any talent the simulator measures at 0, moves to a DPS gain or a talent that helps in a real raid."""
+    import subprocess
+    r = subprocess.run([sys.executable, str(HERE / "filler_audit.py"), cls, "--spec", entry, "--build", bid, "--write"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
+    for ln in r.stdout.strip().splitlines()[-4:]:
+        print("    " + ln, flush=True)
+    FA = _load("filler_audit_mod", HERE / "filler_audit.py")
+    rec_path = FA.record_path(cls, entry, bid)
+    if r.returncode == 0 and rec_path.exists():
+        FA.apply(json.load(open(rec_path, encoding="utf-8")))
 
 
 # ------------------------------------------------------------------------------------------------ pages
@@ -369,11 +386,67 @@ def gear_text(r, tier):
     return "; ".join(f"{s}: {n}" for s, n in gear_names(r, tier)) or "-"
 
 
-def tf(r, k):
-    w = winner(r, k)
+def shown(r, k):
+    """The talents the pages show for a search winner: tidied by filler_audit.py when it moved points (`tidy_winners`), else the
+    bis-dummy winner aligned to the hand draft, else the winner itself; {split, allocation}."""
+    t = (r.get("tidied") or {}).get(k)
+    if t:
+        return t
     if k == "bis-dummy" and (r.get("aligned") or {}).get("moves"):
-        w = r["aligned"]   # the same build with its free points following the hand draft (what the build page shows)
+        return r["aligned"]   # the same build with its free points following the hand draft (what the build page shows)
+    return winner(r, k)
+
+
+def tf(r, k):
+    w = shown(r, k)
     return f"[{w['split']}]({RSH.tf_link(r['class'], flat_of(w['allocation']))})" if w else "-"
+
+
+def tidy_winners(classes):
+    """filler_audit.py on every search winner that holds a talent whose ability it never casts (dummy and full raid, 1,500 fights each);
+    the tidied talents are what the rankings and the raid pages show (record key `tidied`; 2026-10-02 user report on unused abilities)."""
+    FA = _load("filler_audit_mod", HERE / "filler_audit.py")
+    SPm = _load("spell_probe_mod", HERE / "spell_probe.py")
+    FA.R.set_game("forever")
+    repo = FA.R.repo_path(argparse.Namespace(repo=None))
+    for r in records(classes):
+        if not complete(r):
+            continue
+        cls = r["class"]
+        abil = {t for t, _, _, _ in SPm.talent_abilities(cls)}
+        book = FA.spell_ids(cls)
+        trees = FA.R.load_trees(repo, cls)
+        done = r.setdefault("tidied", {})
+        for k in KEYS:
+            if k in done:
+                continue
+            w = r["search"][k]
+            src = (r.get("aligned") or {}).get("allocation") if k == "bis-dummy" and (r.get("aligned") or {}).get("moves") else w["winner"]["allocation"]
+            al = flat_of(src)
+            held = [t for t in al if t in abil]
+            setting = "raid" if k.endswith("-raid") else "dummy"
+            e = FA.R.SPECS[cls][w["entry"]]
+            never = []
+            if held:
+                cast = {t: 0.0 for t in held}
+                for st in ("dummy", "raid"):
+                    row = FA.A.bench(e, repo, [{"label": "x", "talents": FA.R.talents_string(trees, al)}], 1500, 1, st, f"tw-{cls}").get("x") or {}
+                    for act in row.get("actions") or []:
+                        for t in held:
+                            if act.get("spellId") in book[t][0]:
+                                cast[t] += act.get("casts") or 0
+                never = [t for t in held if not cast[t]]
+            if not never:
+                done[k] = None
+                save(r)
+                continue
+            rec = FA.audit(cls, w["entry"], f"{r['slug']}-{k}", 3000, 12000, alloc=al, setting=setting)
+            moved = rec["moves"]
+            pts = {t: sum(n for _, n in items) for t, items in rec["allocation"].items()}
+            done[k] = ({"allocation": rec["allocation"], "split": "/".join(str(v) for v in pts.values()), "moves": moved,
+                        "abilities_never_cast": rec["abilities_never_cast"], "final_seed3": rec["final_seed3"]} if moved else None)
+            save(r)
+            print(f"  {cls} {r['spec']} {k}: never cast {', '.join(never)}; " + ("; ".join(f"{m['from']} -> {m['to']}" for m in moved) or "no move"), flush=True)
 
 
 def num(r, k):
@@ -458,10 +531,13 @@ def main():
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--builds", action="store_true")
     ap.add_argument("--rank", action="store_true")
+    ap.add_argument("--tidy-winners", action="store_true", help="filler_audit.py on the search winners that hold an ability they never cast")
     a = ap.parse_args()
     if a.builds:
         write_builds(a.classes)
-    if a.rank or not a.builds:
+    if a.tidy_winners:
+        tidy_winners(a.classes)
+    if a.rank or not (a.builds or a.tidy_winners):
         write_rankings(a.classes)
 
 

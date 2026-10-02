@@ -3,178 +3,72 @@
  "spec": "elemental-dps",
  "build": "elemental-raid-dps",
  "setting": "dummy",
- "date": "2026-09-29",
+ "date": "2026-10-02",
  "tank": false,
  "removal": {
-  "Ancestral Knowledge": 0.020037400982548914,
-  "Call of Flame": 0.03008078835829886,
-  "Call of Thunder": 0.01763800709528518,
-  "Concussion": 0.03663717250411269,
-  "Convection": 0.01268079121086041,
+  "Ancestral Knowledge": 0.015110654827970471,
+  "Anticipation": -0.0,
+  "Call of Flame": 0.030547000542586966,
+  "Call of Thunder": 0.01730896051677233,
+  "Concussion": 0.03646696805588068,
+  "Convection": 0.009384727189071018,
   "Earth's Grasp": -0.0,
-  "Elemental Alacrity": 0.15655082164949674,
-  "Elemental Focus": 0.012732232340148864,
-  "Elemental Fury": 0.06650458784873592,
-  "Elemental Weapons": -0.0,
-  "Guardian Totems": -0.0,
-  "Improved Lightning Shield": -0.0,
-  "Lightning Overload": 0.032533015412752775,
-  "Mental Quickness": 0.08428016431818697,
-  "Reverberation": 0.0016469798466349772,
-  "Shamanistic Focus": 0.023669485629869924,
+  "Elemental Alacrity": 0.1598593217451305,
+  "Elemental Focus": 0.00933373829386186,
+  "Elemental Fury": 0.06834326566426552,
+  "Lightning Overload": 0.02989075568707844,
+  "Mental Quickness": 0.08681700587560337,
+  "Reverberation": 0.00101945613718335,
+  "Shamanistic Focus": 0.015292507472655315,
   "Stormstrike": -0.0,
-  "Thundering Strikes": 0.03828573343746955
+  "Thundering Strikes": 0.03806207437650866,
+  "Toughness": -0.0
  },
  "free": [
+  "Anticipation",
   "Earth's Grasp",
-  "Elemental Weapons",
-  "Guardian Totems",
-  "Improved Lightning Shield",
-  "Reverberation"
+  "Reverberation",
+  "Stormstrike",
+  "Toughness"
  ],
  "kept_for_rotation": [
   "Elemental Focus"
  ],
- "active_never_worth": [
+ "active_never_worth": [],
+ "abilities_never_cast": [
   "Stormstrike"
  ],
  "moves": [
   {
    "round": 1,
    "kind": "utility",
-   "from": "Elemental Weapons",
-   "to": "Anticipation",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "from": "Reverberation",
+   "to": "Eye of the Storm",
+   "seed1": -9.17033645339016e-05,
+   "seed2": -0.0008694191569006415,
+   "utility": "interrupt"
   },
   {
    "round": 2,
    "kind": "utility",
-   "from": "Guardian Totems",
-   "to": "Anticipation",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
+   "from": "Reverberation",
+   "to": "Eye of the Storm",
+   "seed1": -0.00082554135816304,
+   "seed2": -0.00030007827513423013,
+   "utility": "interrupt"
   },
   {
    "round": 3,
    "kind": "utility",
-   "from": "Guardian Totems",
-   "to": "Anticipation",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 4,
-   "kind": "utility",
-   "from": "Improved Lightning Shield",
-   "to": "Toughness",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 5,
-   "kind": "utility",
-   "from": "Improved Lightning Shield",
-   "to": "Toughness",
-   "seed1": 0.0,
-   "seed2": 0.0,
-   "utility": "survival"
-  },
-  {
-   "round": 6,
-   "kind": "utility",
-   "from": "Improved Lightning Shield",
+   "from": "Stormstrike",
    "to": "Toughness",
    "seed1": 0.0,
    "seed2": 0.0,
    "utility": "survival"
   }
  ],
- "final_seed3": 0.0,
+ "final_seed3": -0.0013301650968657874,
  "start": {
-  "Elemental": [
-   [
-    "Concussion",
-    5
-   ],
-   [
-    "Convection",
-    5
-   ],
-   [
-    "Call of Flame",
-    3
-   ],
-   [
-    "Reverberation",
-    4
-   ],
-   [
-    "Elemental Alacrity",
-    3
-   ],
-   [
-    "Elemental Focus",
-    1
-   ],
-   [
-    "Call of Thunder",
-    1
-   ],
-   [
-    "Lightning Overload",
-    3
-   ],
-   [
-    "Elemental Fury",
-    4
-   ]
-  ],
-  "Enhancement": [
-   [
-    "Thundering Strikes",
-    5
-   ],
-   [
-    "Ancestral Knowledge",
-    5
-   ],
-   [
-    "Earth's Grasp",
-    2
-   ],
-   [
-    "Improved Lightning Shield",
-    3
-   ],
-   [
-    "Guardian Totems",
-    2
-   ],
-   [
-    "Elemental Weapons",
-    1
-   ],
-   [
-    "Shamanistic Focus",
-    1
-   ],
-   [
-    "Stormstrike",
-    1
-   ],
-   [
-    "Mental Quickness",
-    2
-   ]
-  ],
-  "Restoration": []
- },
- "allocation": {
   "Elemental": [
    [
     "Concussion",
@@ -245,6 +139,81 @@
    [
     "Toughness",
     3
+   ]
+  ],
+  "Restoration": []
+ },
+ "allocation": {
+  "Elemental": [
+   [
+    "Concussion",
+    5
+   ],
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Reverberation",
+    2
+   ],
+   [
+    "Elemental Alacrity",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Call of Thunder",
+    1
+   ],
+   [
+    "Lightning Overload",
+    3
+   ],
+   [
+    "Elemental Fury",
+    4
+   ],
+   [
+    "Eye of the Storm",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Earth's Grasp",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Anticipation",
+    3
+   ],
+   [
+    "Toughness",
+    4
    ]
   ],
   "Restoration": []

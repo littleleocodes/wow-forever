@@ -1659,7 +1659,8 @@
         "Marksmanship": [
           ["Lethal Attacks", 5],
           ["Careful Aim", 5],
-          ["Lone Wolf", 1]
+          ["Lone Wolf", 1],
+          ["Efficiency", 3]
         ],
         "Survival": [
           ["Deflection", 5],
@@ -1667,10 +1668,8 @@
           ["Survivalist", 3],
           ["Clever Traps", 2],
           ["Surefooted", 3],
-          ["Deterrence", 1],
-          ["Survival Tactics", 2],
+          ["Survival Tactics", 1],
           ["Predator's Edge", 5],
-          ["Counterattack", 1],
           ["Expose Prey", 2],
           ["Survivalist's Discipline", 2],
           ["Strider Kick", 1],
@@ -1680,7 +1679,7 @@
       },
       "core": [],
       "flex": [],
-      "notes": ["In a full raid it does +2.3% over the training-dummy winner (990.2 vs 967.7 DPS, 100,000 fights, one seed, BiS gear).", "Search result: 5/11/35 at 990.3 ± 0.15 DPS over 100,000 fights; runner-up 5/11/35 (+0.00%; the winner takes Counterattack 1, Deflection 5, Deterrence 1, Survivalist 3; the runner-up Entrapment 5, Improved Tracking 5); 1,559 builds simulated; certificate: the neighbours ahead on the short run (of 340) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation."],
+      "notes": ["In a full raid it does +2.3% over the training-dummy winner (990.2 vs 967.7 DPS, 100,000 fights, one seed, BiS gear).", "Search result: 5/11/35 at 990.3 ± 0.15 DPS over 100,000 fights; runner-up 5/11/35 (+0.00%; the winner takes Counterattack 1, Deflection 5, Deterrence 1, Survivalist 3; the runner-up Entrapment 5, Improved Tracking 5); 1,559 builds simulated; certificate: the neighbours ahead on the short run (of 340) did not hold on the longer one.", "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.", "2026-10-02 filler audit (raidsim/filler_audit.py, user question on zero-value fillers; 2026-10-02 user report on talents whose ability the rotation never casts: Counterattack, Deterrence was never cast here): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Counterattack -> Efficiency (mana); Deterrence -> Efficiency (mana); Survival Tactics -> Efficiency (mana). Net -0.00% on a third seed."],
       "open_questions": ["A machine-searched Survival build: check it against the community's Survival builds at launch."],
       "sources": ["https://github.com/ElliotWood/Forever"]
     },

@@ -10,6 +10,8 @@
 
 **Before the pull:** **Shadowform**.
 
+**Talents with no line below:** **Vampiric Embrace**: taken because Shadowform requires it.
+
 **Then press the first one that is ready**, top to bottom:
 
 1. **Shadow Word: Pain**: keep it on the target
@@ -33,7 +35,7 @@
 
 | Gear | Training dummy | Full raid | Best talents (dummy) |
 |---|---|---|---|
-| Pre-BiS | 621 | 712 | [18/0/33](https://talentsforever.com/priest/60/015201220203--500320501201312251-4) |
+| Pre-BiS | 621 | 712 | [18/0/33](https://talentsforever.com/priest/60/005300220303--500320501201312251-4) |
 | Phase 1 BiS | 634 | 727 | [18/0/33](https://talentsforever.com/priest/60/005300220303--500320501201312251-4) |
 
 - **Pre-BiS gear** (average item level 60.8): Head: Spellweaver's Turban; Neck: Orb of the Darkmoon; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Robe of Winter Night; Wrist: Rockfury Bracers; Hands: Felcloth Gloves; Waist: Knowledge of the Timbermaw; Legs: Leggings of Torment; Feet: Maleki's Footwraps; Finger: Leafre's Ring of Precise Spell Power; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Briarwood Reed; Trinket: Eye of the Beast; Main hand: Death Speaker Scepter; Off hand: Scepter of Interminable Focus; Ranged/relic: Skul's Ghastly Touch

@@ -6,9 +6,9 @@
 
 | # | Spec and build | Dummy DPS | Parse DPS | 6-minute fight | Behind the best |
 |---|---|---|---|---|---|
-| 1 | [Frost](frost.md) — Frost — Raid 🔬 | 647 | 739 | 618 | best |
-| 2 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 643 | 735 | 616 | -1% |
-| 3 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 616 | 726 | 517 | -5% |
+| 1 | [Frost](frost.md) — Frost — Raid 🔬 | 647 | 739 | 639 | best |
+| 2 | [Arcane-Frost](arcane-frost.md) — Frost — Fingers of Frost / Ice Lance / Shatter | 643 | 735 | 635 | -1% |
+| 3 | [Frostfire](frostfire.md) — Frostfire — Frostfire Bolt / Hot Streak | 615 | 722 | 514 | -5% |
 | 4 | [Arcane](arcane.md) — Arcane — Arcane Blast | 602 | 690 | 570 | -7% |
 | 5 | [Fire](fire.md) — Fire — Ignite / Hot Streak | 598 | 747 | 475 | -8% |
 
