@@ -400,6 +400,16 @@ class Sim:
 
 
 # ------------------------------------------------------------------------------------------------ the search
+def _r(x, nd=2):
+    """A score as stored: DPS to 2 decimals; a small-scale score (healer capacity, tank value: about 1) to 4."""
+    return round(x, nd if abs(x) >= 10 else 4)
+
+
+def _f(x):
+    """A score as printed: DPS to 0.1; a small-scale score to 0.0001."""
+    return f"{x:.1f}" if abs(x) >= 10 else f"{x:.4f}"
+
+
 def fit_forest(X, y, rng):
     from sklearn.ensemble import RandomForestRegressor
     rf = RandomForestRegressor(n_estimators=160, min_samples_leaf=2, max_features=0.4, n_jobs=-1, random_state=rng.randrange(1 << 30))
@@ -442,8 +452,8 @@ def search(space, sim, starts, rng, a, log, label=""):
     init += [space.random_build(rng) for _ in range(a.random_init)]
     evaluate(init)
     best = max(v[1] for v in data.values()) if data else 0.0
-    trace = [{"round": 0, "simulated": len(data), "best": round(best, 2)}]
-    log(f"    {label}design: {len(data)} builds, best {best:.1f}")
+    trace = [{"round": 0, "simulated": len(data), "best": _r(best)}]
+    log(f"    {label}design: {len(data)} builds, best {_f(best)}")
     quiet = 0
     for rnd in range(1, a.max_rounds + 1):
         if len(data) >= a.budget or quiet >= a.patience:
@@ -476,8 +486,8 @@ def search(space, sim, starts, rng, a, log, label=""):
         nb = max(v[1] for v in data.values())
         quiet = 0 if nb > best * (1 + a.min_gain) else quiet + 1
         best = max(best, nb)
-        trace.append({"round": rnd, "simulated": len(data), "best": round(best, 2), "predicted_top": round(float(mu.max()), 2)})
-        log(f"    {label}round {rnd}: {len(data)} simulated, best {best:.1f}" + (" (no gain)" if quiet else ""))
+        trace.append({"round": rnd, "simulated": len(data), "best": _r(best), "predicted_top": _r(float(mu.max()))})
+        log(f"    {label}round {rnd}: {len(data)} simulated, best {_f(best)}" + (" (no gain)" if quiet else ""))
     return data, trace
 
 
@@ -490,10 +500,10 @@ def race(sim, cands, log, stages=((10000, 2, 5), (30000, 3, 2), (100000, 4, 2)),
         if first is not None and not hist:
             first.update({key(f): r[0] for f, r in zip(cur, res)})
         ranked = sorted(zip(cur, res), key=lambda x: -x[1][0])
-        hist.append({"iterations": its, "seed": seed, "dps": [round(r[1][0], 2) for r in ranked]})
+        hist.append({"iterations": its, "seed": seed, "dps": [_r(r[1][0]) for r in ranked]})
         cur = [r[0] for r in ranked[:keep]]
         last = [(f, d, sd / math.sqrt(its)) for f, (d, sd) in ranked]
-    log(f"    race: " + " -> ".join(f"{h['iterations'] // 1000}k: " + ", ".join(f"{x:.1f}" for x in h["dps"][:5]) for h in hist))
+    log(f"    race: " + " -> ".join(f"{h['iterations'] // 1000}k: " + ", ".join(_f(x) for x in h["dps"][:5]) for h in hist))
     return last, hist
 
 
@@ -612,7 +622,7 @@ def optimize(space, sims, starts, a, log):
             rng = random.Random(rng0.randrange(1 << 30))
             data, trace = search(space, sim, starts, rng, a, log, label=f"[{name} run {r + 1}] ")
             ranked = sorted(data.values(), key=lambda v: -v[1])
-            runs.append({"entry": name, "run": r + 1, "simulated": len(data), "best_screen": round(ranked[0][1], 2), "best_split": space.split(ranked[0][0]),
+            runs.append({"entry": name, "run": r + 1, "simulated": len(data), "best_screen": _r(ranked[0][1]), "best_split": space.split(ranked[0][0]),
                          "best": key(ranked[0][0]), "trace": trace})
             for f, d in ranked[: a.finalists]:
                 finalists.append((name, f))
@@ -648,15 +658,15 @@ def optimize(space, sims, starts, a, log):
     agree = [r["entry"] == name and (r.get("best_stage1_gap") is not None and r["best_stage1_gap"] >= -0.003) for r in runs]
     rec = {"class": space.cls, "spec": space.spec, "setting": sims[name].setting, "entry": name, "date": TODAY,
            "constraint": "spec field (entry rotation)" if space.any else (f"Hybrid of {' and '.join(space.pair)}" if space.pair else f"{space.spec} 30+"),
-           "protected": sorted(space.protect), "entries_screened": {k: round(v, 2) for k, v in screens.items()}, "entries_searched": chosen,
+           "protected": sorted(space.protect), "entries_screened": {k: _r(v) for k, v in screens.items()}, "entries_searched": chosen,
            "winner": {"allocation": {t: [[n, win[n]] for n in space.by_tree[t] if win.get(n)] for t in space.tree_names}, "split": space.split(win),
-                      "dps": round(wd, 2), "se": round(wse, 3), "iterations": 100000},
-           "runner_up": ({"split": space.split(ru[0]), "dps": round(ru[1], 2), "se": round(ru[2], 3),
+                      "dps": _r(wd), "se": _r(wse, 3), "iterations": 100000},
+           "runner_up": ({"split": space.split(ru[0]), "dps": _r(ru[1]), "se": _r(ru[2], 3),
                           "differs": sorted(set(key(ru[0])) ^ set(key(win)))} if ru else None),
            "gap_to_runner_up": round(wd / ru[1] - 1, 4) if ru else None,
            "runs": [dict({k: v for k, v in r.items() if k not in ("best", "finalists")}, agrees_with_winner=ag) for r, ag in zip(runs, agree)],
            "runs_agree": sum(agree), "race": hist, "certificate": cert,
-           "other_entries": [{"entry": n, "dps": round(l[0][1], 2), "split": space.split(l[0][0])} for n, l, _, _ in best_per_entry[1:]],
+           "other_entries": [{"entry": n, "dps": _r(l[0][1]), "split": space.split(l[0][0])} for n, l, _, _ in best_per_entry[1:]],
            "important_features": imp, "simulated_builds": sum(s.n for s in sims.values()),
            "simulated_fights": sum(s.fights for s in sims.values()), "minutes": round((time.time() - t0) / 60, 1)}
     return rec, win
@@ -749,7 +759,7 @@ def run_target(cls, spec, entries, setting, gear_path, a, log, extra_starts=(), 
     sims = {e: Sim(cls, e, setting, gear, repo, f"ml-{cls}-{e}-{setting}") for e in entries}
     rec, win = optimize(space, sims, starts, a, log)
     rec["gear"] = gear_path
-    log(f"  winner {rec['winner']['split']} in {rec['entry']}: {rec['winner']['dps']:.1f} ± {rec['winner']['se']:.2f} DPS"
+    log(f"  winner {rec['winner']['split']} in {rec['entry']}: {_f(rec['winner']['dps'])} ± {rec['winner']['se']:.2f} DPS"
         + (f"; runner-up {rec['runner_up']['split']} {rec['gap_to_runner_up']:+.2%}" if rec.get("runner_up") else "")
         + f"; runs agreeing {rec['runs_agree']}/{len(rec['runs'])}; {rec['simulated_builds']} builds, {rec['minutes']} min")
     return rec, win

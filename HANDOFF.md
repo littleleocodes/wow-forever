@@ -181,6 +181,14 @@ Each class folder now opens with player pages and keeps the research below:
   `retribution-ml-raid` stay alternatives on the pages, less than 2% ahead in the standard phase-1 gear (the 2% rule). Open: the races, calibrations and adopt step still run on the dummy; the build-family matrix (each dip family with
   its own rotation, e.g. a Summon Hawk melee hunter) is designed (see the conversation) but not built.
 
+- **Deep runs ready for every class** (2026-10-03, user request): `python -u _reference/data/deep_class.py <class>` runs a class's
+  deep optimisation and everything after it (damage specs, every healer spec, the tank, builds, re-races, rankings, pages, link check);
+  the same command resumes after a failure. New: `raidsim/deep_tank.py` (tanks on tank value), Discipline in `heallab/deep_heal.py`
+  (per-spec records and reports), the Discipline priest and the Regrowth druid builds now have healer-lab capacities, gear links
+  (`raidsim/gear_links.py`: Wowhead Forever items and simulator share links on the raid pages and the rankings). Every class passed a
+  `--smoke` test (see CLAUDE.md "Deep optimisation of one class" for the procedure at the end of the beta and the time it takes: about
+  five days of computing for the eight classes left, less in parallel cloud sessions). Not started: the real runs (the user decides when).
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

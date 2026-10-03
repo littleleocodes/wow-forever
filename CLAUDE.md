@@ -335,7 +335,7 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   rotation turned into Frostbolt spam). Tune rotation and talents in turns. Builds raced only in rotation-only entries have no
   scorer model: the scenario audit leaves them out.
 - **Simulator patches** (`raidsim/patches/<game>/`, applied by `setup.py` on every build, reset before `--update`): our additions to
-  the community simulator, today Frostfire Bolt (the fork ships a stub). Numbers that depend on a patch are our model: say so.
+  the community simulator, today Frostfire Bolt (the fork ships a stub). Since 2026-10-03 also Forever's hunter pet scaling (`patches/forever/sim/hunter/pet_scaling.go`; Blizzard's class deep dive: pets get stats from the hunter's gear; the community's numbers: 10% of the highest attack power, 100% of crit, 30% of armor, 2 health per Stamina; the fork gives pets nothing; `WOW_FOREVER_PET_SCALING=0` turns it off): a Beast Mastery pet 97 -> 166 DPS in a full raid, the build +8.5%. Open: a forum measurement (level 20) has a 1.2 s pet 45% ahead of a 2.0 s one, while the simulator normalizes pet damage by attack speed. Numbers that depend on a patch are our model: say so.
 - **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched
   around new spells, each a rotation-only entry with its own rotation and a build, plus notes; no numbers) and
   `render_new_builds.py` (regen step) write `_reference/new-builds-survey.md` and the "New spells and builds" section of each raid
@@ -556,6 +556,24 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   below Enhancement), Restoration 0/10/41 confirmed (the policy re-tune +1.6%); converged in 3 cycles; no two-move neighbour 0.1% ahead.
   Found on the way: the healer lab applied a talent's parsed "mana cost -100%" to heals when its tooltip limits it to damage spells
   (Elemental Focus's clearcasting: capacity x2 in the first test); `engine.DAMAGE_ONLY` now skips such effects for heals.
+  **Every class** (2026-10-03, user request "go with next steps"): `python -u _reference/data/deep_class.py <class>` runs it all, in
+  order (`--steps damage,heal,tank,builds,race,pages`): deep_opt.py (damage specs), deep_heal.py (every healer spec of the class:
+  `HEAL_SPECS`, the priest's Holy and Discipline; the class's heal-choice policy file is shared, so each tune protects every healer spec's
+  hand draft and the other specs' deep winners; records `heallab/deep/<class>-<spec slug>.json`, reports
+  `research/raid/heallab/deep-optimization-<spec slug>.md`), `raidsim/deep_tank.py` (warrior and paladin `prot-tank`, druid
+  `feral-bear-tank`: the same search on tank value against one fixed reference, the hand draft over 20,000 fights; the entry's gear and
+  raid setting; the rotation re-tuned on the winner; two-move check; a 100,000-fight final race; `<spec slug>-ml-tank` at 0.5%, tidied by
+  the filler audit and added to the entry; record `raidsim/deep/<class>-tank.json`, report `research/raid/deep-optimization-tank.md`),
+  then `ml_builds.py --builds`, validate, every entry of the class raced again (dummy and environments), `--tidy-winners`, `--rank`,
+  `unused_abilities.py`, `rebuild.py --steps regen` and the link check; a failed step stops it, and the same command resumes (the deep
+  steps keep their records). `--smoke` runs the three deep steps on tiny budgets into `deep-smoke/` records (git-ignored, nothing else
+  written); logs `_reference/data/deep-runs/<class>.log` (git-ignored). Scores below 10 (capacity, tank value) keep four decimals in the
+  search's records (`ml_talents._r`). The shaman took about 14 hours for three damage specs and 2-3 for Restoration on 12 threads; the
+  rotation re-tunes cost about an hour per entry, so the other eight classes need about five days on one such machine (several cloud
+  sessions can take one class each). At the end of the beta: the simulator's fork must have the final build (setup.py --update, the
+  pin), our data refreshed (refresh_forever_talents.py and the steps after it), then deep_class.py per class (deep_opt.py takes its specs,
+  first gear sets and starting builds from the ML records; starts the new trees no longer allow are dropped, and from cycle 2 it re-gears
+  itself, so `ml_pipeline.py`, about 15 hours, is only needed when a new spec or hybrid appears).
 - Our `foreverbench/main.go` is the source of truth for the bench tool (setup.py copies it into the clone and builds it).
   A fresh setup builds the pinned simulator commit (`GAMES[...]["commit"]` in setup.py, 40be98e since 2026-09-28) so every machine
   and cloud session simulates the same fork; after a simulator update (`setup.py --update`) set the new pin and re-run

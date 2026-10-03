@@ -174,7 +174,8 @@ def main():
     global OUT, DEEP, QUICK, FINAL_FIGHTS, SMOKE
     if a.smoke:
         OUT, FINAL_FIGHTS, SMOKE = HERE / "deep-smoke", 4000, True
-        DEEP = QUICK = dict(runs=1, budget=150, screen=300, patience=1, max_rounds=1, random_init=40, pool=600, parents=8, finalists=2, screen_budget=60)
+        DEEP = QUICK = dict(runs=1, budget=150, screen=300, patience=1, max_rounds=1, random_init=40, pool=600, parents=8, finalists=2, screen_budget=60,
+                            race_stages=((1000, 2, 2), (2000, 3, 1), (4000, 4, 1)), cert_its=(500, 2000))   # a test: small races too
     cls = a.cls
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))

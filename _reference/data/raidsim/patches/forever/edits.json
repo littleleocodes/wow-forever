@@ -10,5 +10,11 @@
   "after": "\thunter.registerAspectOfTheHawkSpell()\n",
   "insert": "\thunter.registerAspectOfTheBeastSpell() // wow-forever patch: Aspect of the Beast + melee Deadly Aspects (patches/forever/sim/hunter/aspect_of_the_beast.go)\n",
   "why": "the fork models only Aspect of the Hawk and the ranged half of Deadly Aspects"
+ },
+ {
+  "file": "sim/hunter/pet.go",
+  "after": "\treturn func(ownerStats stats.Stats) stats.Stats {\n",
+  "insert": "\t\treturn foreverPetScaling(ownerStats) // wow-forever patch: Forever's pet scaling (patches/forever/sim/hunter/pet_scaling.go)\n",
+  "why": "the fork's pets inherit nothing from the hunter; Forever pets get 10% of the highest attack power, 100% crit, 30% armor, 2 health per stamina"
  }
 ]

@@ -47,7 +47,7 @@ Ranked by time per kill in the fight lab (levels 20-60, higher levels count more
 | 1 | [Shadow](raid/shadow.md) — Shadow leveling/raid | 724 | 632 | 553 | best |
 | 2 | [Smite](raid/smite.md) — Discipline/Holy — Smite | 602 | 444 | 392 | -17% |
 
-**Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](raid/holy.md) — Holy — Raid Healer (0.62), [Discipline](raid/discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion.
+**Healing** (ranked by the healer lab's capacity: the raid damage the healer keeps up with): [Holy](raid/holy.md) — Holy — Raid Healer (0.62), [Discipline](raid/discipline.md) — Discipline — Penance / Divine Aegis / Power Infusion (0.56).
 
 ### PvP
 
