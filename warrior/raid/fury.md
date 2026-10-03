@@ -1,28 +1,25 @@
-# Fury Warrior — Raid (training dummy and parse)
+# Fury Warrior — Raid (group)
 
-[Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Fury
+[Warrior](../README.md) > [Raid (group)](README.md) > Fury
 
-**✅ Recommended** for raid (the best warrior spec here, or within 3% of it).
-
-**[Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-550500005152310051--4)
+**[Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md)** (13/38/0) — [open the talent tree](https://talentsforever.com/warrior/60/02305012-250500035152310051--4)
 
 ## How to play
-
-**Keep up all fight:** **Battle Shout**.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Death Wish**: a big cooldown, use it at the start of the fight and again whenever it is ready
-2. **Execute** when the target is below 20% health
-3. **Bloodthirst**
-4. **Recklessness**: in the last 35 seconds of the fight
-5. **Whirlwind**
-6. **Hamstring** when you have 80+ rage to spare
-7. **Sunder Armor**: stack it to 5 on the target
+2. **Whirlwind**
+3. **Execute** when the target is below 20% health
+4. **Bloodthirst**
+5. **Hamstring** when you have 80+ rage to spare
+6. **Bloodrage**
+
+**Bloodrage** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Bloodrage**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
+- **Recklessness**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
@@ -31,22 +28,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 390 |
-| Parse (a full raid: every raid buff and debuff) | 706 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 710 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 390 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 380 | 705 | [13/38/0](https://talentsforever.com/warrior/60/11305012-151500035152310051--4) |
-| Phase 1 BiS | 396 | 723 | [13/38/0](https://talentsforever.com/warrior/60/20305012-151501115152310051--4) |
+| Pre-BiS | 705 | 380 | [13/38/0](https://talentsforever.com/warrior/60/20305012-250500035152310051--4) |
+| Phase 1 BiS | 723 | 396 | [13/38/0](https://talentsforever.com/warrior/60/20305012-250500035152310051--4) (ties this build) |
 
 - **Pre-BiS gear** (average item level 62.9): Head: Lionheart Helm; Neck: Mark of Fordring; Shoulders: Truestrike Shoulders; Back: Howler's Furs; Chest: Timbermaw Tunic; Wrist: Deeprock Bracers; Hands: Theramore Gauntlets; Waist: Radiant Girdle of the Dawn; Legs: Titanic Leggings; Feet: Boots of Heroism; Finger: Don Julio's Band; Finger: Don Julio's Band; Trinket: Hand of Justice; Trinket: Blackhand's Breadth; Main hand: Premier High Warlord's Blade; Off hand: Premier High Warlord's Cleaver; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 65.4): Head: Lionheart Helm; Neck: Onyxia Tooth Pendant; Shoulders: Truestrike Shoulders; Back: Howler's Furs; Chest: Timbermaw Tunic; Wrist: Deeprock Bracers; Hands: Flameguard Gauntlets; Waist: Onslaught Girdle; Legs: Titanic Leggings; Feet: Boots of Heroism; Finger: Quick Strike Ring; Finger: Band of Accuria; Trinket: Hand of Justice; Trinket: Blackhand's Breadth; Main hand: Brutality Blade; Off hand: Premier High Warlord's Blade; Ranged/relic: Striker's Mark
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 390 → mana +0% → armor +32% → physical +38% → spell +0% → everything else +11% → raid 706
+Dummy 390 → mana +0% → armor +32% → physical +39% → spell +0% → everything else +11% → raid 710
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -58,14 +55,12 @@ Dummy 390 → mana +0% → armor +32% → physical +38% → spell +0% → everyt
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-parse.md) (19/32/0) — [open the talent tree](https://talentsforever.com/warrior/60/0330501313-250500030052310051--4).
-
 ## Other builds of this spec
 
-- [Raid dual-wield Fury](../research/raid/builds/opt-fury-dw-raid-raid-dps.md) (13/38/0, 390 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/02305012-250500035152310051--4)
-- [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 311 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-550500000052310051--4)
-- [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (19/32/0, 310 DPS on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/0330501313-250500030052310051--4)
+- [Fury — Dual Wield](../research/raid/builds/fury-dw-raid.md) (13/38/0, 706 DPS in a full raid, 390 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/20305012-550500005152310051--4)
+- [Fury — Two-Handed](../research/raid/builds/arms-2h-raid.md) (19/32/0, 662 DPS in a full raid, 311 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/03305013031-550500000052310051--4)
+- [Two-handed Arms/raid or leveling](../research/raid/builds/opt-arms-2h-raid-raid-dps.md) (19/32/0, 661 DPS in a full raid, 310 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/0330501313-250500030052310051--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

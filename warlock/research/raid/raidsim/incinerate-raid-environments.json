@@ -2,7 +2,7 @@
  "class": "warlock",
  "spec": "incinerate-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,34 @@
     "curve360": 543.8090732752185,
     "max": 647.2670674709586,
     "max60": 658.1338521842218
+   },
+   "raid_spell_casts": {
+    "11713": 8.668333333333333,
+    "25309": 10.781,
+    "18871": 0.955,
+    "11689": 11.182666666666666,
+    "1259821": 2.0,
+    "1311680": 1.105,
+    "17923": 1.3316666666666668,
+    "1293813": 46.87,
+    "18932": 14.245,
+    "25311": 10.600666666666667
+   },
+   "raid_casts": {
+    "Major Mana Potion": 2.0,
+    "Demonic Rune": 2.0,
+    "Bane of Agony": 8.668333333333333,
+    "Immolate": 10.781,
+    "Shadowburn": 0.955,
+    "Life Tap": 11.182666666666666,
+    "Eureka!": 2.0,
+    "Curse of the Elements": 1.105,
+    "Searing Pain": 1.3316666666666668,
+    "Incinerate": 46.87,
+    "Talisman of Ephemeral Power": 2.158,
+    "Conflagrate": 14.245,
+    "OtherActionManaGain": 57.579,
+    "Corruption": 10.600666666666667
    }
   }
  ]

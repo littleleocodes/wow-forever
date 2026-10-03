@@ -54,6 +54,16 @@ def is_self(spell):
     return any(k in spell for k in SELF)
 
 
+@functools.lru_cache(maxsize=None)
+def cooldowns(cls):
+    """{spell: True when any rank of it has a cooldown} from the beta spellbook."""
+    out = {}
+    for tab in json.load(open(HERE / "forever-spells" / f"{cls}.json", encoding="utf-8"))["tabs"]:
+        for sp in tab["spells"]:
+            out[sp["name"]] = out.get(sp["name"], False) or any((r.get("cooldown") or "").strip() for r in sp.get("ranks", []))
+    return out
+
+
 def _unwrap(c):
     c = c.strip()
     while c.startswith("(") and c.endswith(")") and c.count("(") == c.count(")"):
@@ -137,6 +147,7 @@ REACTIVE = {"Mongoose Bite": "when it lights up (after the target dodges)", "Ove
             "Victory Rush": "after a kill", "Hammer of Wrath": "when the target is below 20% health", "Shadow Word: Death": "",
             "Execute": "when the target is below 20% health"}
 CUR = [None]   # the class being parsed (for _clause's other-class test)
+FLOOR = [None]   # (spell, seconds) when the line just parsed is an always-ready spell cast while more than that many seconds are left
 
 
 def _parse(cls, t):
@@ -168,6 +179,9 @@ def _parse(cls, t):
     if sp.endswith("Totem") or is_self(sp):   # totems and self-buffs go in the "keep up all fight" line
         return ([sp], f"KEEP:{sp}", swing)
     clauses = [c for c in (_clause(x, sp, ok) for x in (_cond_parts(cond) if cond else [])) if c]
+    fl = re.fullmatch(r"time left in the fight (?:≥|>) ([\d.]+)s?", _unwrap(cond)) if cond else None
+    if fl and float(fl.group(1)) <= 10 and cooldowns(cls).get(sp) is False:
+        FLOOR[0] = (sp, float(fl.group(1)))   # an always-ready spell cast until the last seconds: what follows is end-of-fight play
     if cond and re.search(r"time left in the fight (?:≤|<) ([\d.]+)", cond) and " or " not in cond and not clauses:
         left = float(re.search(r"time left in the fight (?:≤|<) ([\d.]+)", cond).group(1))
         if left < 10:   # a last-seconds filler (Searing Pain, Shadowburn as the boss dies): fine tuning
@@ -192,19 +206,30 @@ def _parse(cls, t):
     return ([sp], txt, swing)
 
 
-def simplify(cls, texts):
-    """(keep up all fight, the priority list) for a build's used rotation lines (the translated APL texts, in priority order)."""
-    parsed = [x for x in (_parse(cls, t) for t in texts) if x]
-    plain = {s for sp, _, sw in parsed if not sw for s in sp}   # swing-timed lines (clipped shots) only when nothing else casts the spell
-    keep, out, seen = [], [], set()
-    for sp, txt, sw in parsed:
+def simplify(cls, texts, late=None):
+    """(keep up all fight, the priority list) for a build's used rotation lines (the translated APL texts, in priority order).
+    A line after an always-ready spell cast only while some seconds of the fight are left (the Frost raid rotation's Frostbolt while 3+
+    seconds are left, then Fire Blast) is end-of-fight play, not the filler: it goes to `late` as (spell, seconds, the filler)."""
+    parsed = []
+    for t in texts:
+        FLOOR[0] = None
+        x = _parse(cls, t)
+        if x:
+            parsed.append((*x, FLOOR[0]))
+    plain = {s for sp, _, sw, _ in parsed if not sw for s in sp}   # swing-timed lines (clipped shots) only when nothing else casts the spell
+    keep, out, seen, closed = [], [], set(), None
+    for sp, txt, sw, floor in parsed:
         if (sw and all(s in plain for s in sp)) or set(sp) & seen:
             continue
         seen.update(sp)
         if txt.startswith("KEEP:"):
             keep.append(txt[5:])
+        elif closed:
+            if late is not None:
+                late += [(s, closed[1], closed[0]) for s in sp]
         elif len(out) < LIMIT:
             out.append(txt)
+            closed = floor
     return keep, out
 
 
@@ -222,7 +247,7 @@ def advanced(cls, casts, shown):
     """The advanced extras: the class's own spells a build casts in the simulator that the simple list leaves out (cooldowns such as
     Presence of Mind, Bestial Wrath, Death Wish, mana tools such as Evocation), with how often per fight. `casts` is the report's casts
     per fight for the build; `shown` the spells already in the simple list."""
-    ok = class_spells(cls)
+    ok = set(cooldowns(cls))   # the active spells of the beta spellbook: a passive talent's effect (Ignite) shows in the casts too
     out = []
     for sp, n in sorted(casts.items(), key=lambda kv: -kv[1]):
         if sp not in ok or sp in shown or n < 0.05 or sp in ("Auto Shot", "Attack", "Shoot"):   # automatic attacks

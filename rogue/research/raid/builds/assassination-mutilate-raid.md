@@ -69,14 +69,15 @@ Seal Fate daggers with Vigor and Lethality: an Assassination Backstab build. It 
 
 ## Rank among our builds and the community simulator's
 
-**2 of 4** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `assassination-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | +0.0% | 0 s |
-| 2 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 394 | -3.1% | 667 | -2.2% | 0 s |
-| 3 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.0% | 0 s |
-| 4 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -7.7% | 0 s |
+| 1 | [`assassination-seal-fate-raid`](assassination-seal-fate-raid.md) | ours: hand draft | 30/19/2 | 407 | +0.0% | 682 | -0.8% | 0 s |
+| 2 | [`assassination-ml-raid`](assassination-ml-raid.md) | ours: hand draft | 30/19/2 | 394 | -3.0% | 687 | +0.0% | 0 s |
+| 3 | **[`assassination-mutilate-raid`](assassination-mutilate-raid.md)** | ours: hand draft | 30/21/0 | 394 | -3.1% | 667 | -2.9% | 0 s |
+| 4 | *Mutilate* | community simulator | - | 371 | -8.8% | 648 | -5.8% | 0 s |
+| 5 | *Assassination Mutilate 31/20/0* | community simulator | - | 359 | -11.7% | 630 | -8.4% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

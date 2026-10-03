@@ -18,6 +18,7 @@ class Healer(E.BaseHealer):
         "Ancestral Healing": "a critical heal gives the target +25% armor for 15 s (33%/rank chance)",
         "Water Shield": "a critical heal restores 2% of maximum mana (one globe every 3 s)",
         "Totemic Focus": "totem mana only: nothing for heals",
+        "Elemental Focus": "clearcasting from damage spells, for the next damage spell: nothing for heals",
         "Riptide": "instant heal plus a 15 s HoT on a 6 s cooldown: the emergency heal and the tank's HoT",
         "Healing Stream Totem": "placed at the pull: 11 (+Restorative Totems) every 2 s on the group",
     }

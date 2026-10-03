@@ -1,26 +1,26 @@
-# Elemental-Enhancement Shaman — Raid (training dummy and parse)
+# Elemental-Enhancement Shaman — Raid (group)
 
-[Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Elemental-Enhancement
+[Shaman](../README.md) > [Raid (group)](README.md) > Elemental-Enhancement
 
 *A Lightning Bolt caster that dips Enhancement for its passive bonuses.* (a hybrid: Elemental/Enhancement).
 
-**✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
+**[Elemental-Enhancement — Raid](../research/raid/builds/elemental-enhancement-ml-raid.md)** (22/29/0) — [open the talent tree](https://talentsforever.com/shaman/60/530533102-05503001100510224--4)
 
-**[Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md)** (29/22/0) — [open the talent tree](https://talentsforever.com/shaman/60/550230130210304-255000001340002--4)
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (elemental-raid-dps) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Before the pull:** **Lightning Bolt**.
-
-**Keep up all fight:** **Searing Totem**.
+**Before the pull, then keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Flame Shock**: keep it on the target
-2. **Chain Lightning** when Clearcasting is active
-3. **Lightning Bolt**
+1. **Stormstrike**
+2. **Flame Shock**: keep it on the target
+3. **Lightning Bolt** when Maelstrom Weapon has 3 stacks
+4. **Earth Shock**
+5. **Fire Nova**
 
-**Lightning Bolt** is your filler: cast it whenever nothing above is ready.
+**Fire Nova** is your filler: cast it whenever nothing above is ready.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -28,22 +28,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 438 |
-| Parse (a full raid: every raid buff and debuff) | 555 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 764 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 387 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 425 | 544 | [29/22/0](https://talentsforever.com/shaman/60/550032131011304-255030001031002--4) |
-| Phase 1 BiS | 437 | 555 | [29/22/0](https://talentsforever.com/shaman/60/450032132011304-255030001031002--4) |
+| Pre-BiS | 663 | 425 | [22/29/0](https://talentsforever.com/shaman/60/500533132-05503001100510224--4) |
+| Phase 1 BiS | 679 | 438 | this build |
 
 - **Pre-BiS gear** (average item level 62.9): Head: Spellweaver's Turban; Neck: Nacreous Shell Necklace; Shoulders: Rugged Mantle of the Timbermaw; Back: Crystalline Threaded Cape; Chest: Zandalar Augur's Hauberk; Wrist: Rockfury Bracers; Hands: Gloves of Earthen Power; Waist: Knowledge of the Timbermaw; Legs: Ironfeather Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Rune Band of Wizardry; Trinket: Briarwood Reed; Trinket: Weakness Analyzer; Main hand: Lord Valthalak's Staff of Command
 - **Phase 1 BiS gear** (average item level 64.7): Head: Spellweaver's Turban; Neck: Choker of the Fire Lord; Shoulders: Deep Earth Spaulders; Back: Sapphiron Drape; Chest: Robe of Volatile Power; Wrist: Rockfury Bracers; Hands: Gloves of the Greatfather; Waist: Mana Igniting Cord; Legs: Ironfeather Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Ring of Spell Power; Trinket: Talisman of Ephemeral Power; Trinket: Briarwood Reed; Main hand: Staff of Dominance
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 438 → mana +0% → armor +0% → physical +2% → spell +12% → everything else +12% → raid 555
+Dummy 387 → mana +6% → armor +31% → physical +18% → spell +7% → everything else +34% → raid 764
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -51,10 +51,16 @@ Dummy 438 → mana +0% → armor +0% → physical +2% → spell +12% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 454 | 446 | 438 | 433 | 423 |
+| 423 | 406 | 387 | 361 | 339 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
+**Alone instead of in a raid?** [Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md) (29/22/0) does 438 DPS on the training dummy with only your own buffs (+13% over this build there) — [open the talent tree](https://talentsforever.com/shaman/60/550230130210304-255000001340002--4).
+
+## Other builds of this spec
+
+- [Elemental — Lava Burst / Lightning Overload](../research/raid/builds/elemental-raid-dps.md) (29/22/0, 555 DPS in a full raid, 438 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/550230130210304-255000001340002--4)
+
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

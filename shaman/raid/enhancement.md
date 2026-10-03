@@ -1,23 +1,26 @@
-# Enhancement Shaman — Raid (training dummy and parse)
+# Enhancement Shaman — Raid (group)
 
-[Shaman](../README.md) > [Raid (training dummy and parse)](README.md) > Enhancement
+[Shaman](../README.md) > [Raid (group)](README.md) > Enhancement
 
-**[One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md)** (11/31/9) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
+**✅ Recommended** for raid (the best shaman spec here, or within 3% of it).
+
+**[Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md)** (19/32/0) — [open the talent tree](https://talentsforever.com/shaman/60/500533102-055030021005102251--4)
+
+> 🔬 Derived build: found by this project's machine-learning search over every legal build of the spec in the community's raid simulator (phase-1 BiS gear, then raced against the spec's builds); it beat the hand-made build (enhancement-raid-dps) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
 
 ## How to play
 
-**Before the pull:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
-
-**Keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
+**Before the pull, then keep up all fight:** **Strength of Earth Totem**, **Grace of Air Totem**, **Searing Totem**.
 
 **Then press the first one that is ready**, top to bottom:
 
 1. **Stormstrike**
-2. **Lightning Bolt** when Maelstrom Weapon has 4 stacks
-3. **Flame Shock**: keep it on the target
+2. **Flame Shock**: keep it on the target
+3. **Lightning Bolt** when Maelstrom Weapon has 3 stacks
 4. **Earth Shock**
+5. **Fire Nova**
 
-**Earth Shock** is your filler: cast it whenever nothing above is ready.
+**Fire Nova** is your filler: cast it whenever nothing above is ready.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
@@ -30,22 +33,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 413 |
-| Parse (a full raid: every raid buff and debuff) | 755 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 801 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 409 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 409 | 778 | [20/31/0](https://talentsforever.com/shaman/60/5404331-055030031005102051--4) |
-| Phase 1 BiS | 417 | 796 | [20/31/0](https://talentsforever.com/shaman/60/5404331-055030031005102051--4) |
+| Pre-BiS | 782 | 408 | [19/32/0](https://talentsforever.com/shaman/60/500533102-054030031005102251--4) |
+| Phase 1 BiS | 801 | 417 | this build |
 
 - **Pre-BiS gear** (average item level 62.3): Head: Black Dragonscale Helm; Neck: Beads of Ogre Might; Shoulders: Rugged Mantle of the Timbermaw; Back: Howler's Furs; Chest: Darkmantle Tunic; Wrist: Wildheart Bracers; Hands: Blood Guard's Mail Vices; Waist: Knowledge of the Timbermaw; Legs: Ironfeather Leggings; Feet: Bloodmail Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Don Julio's Band; Trinket: Blackhand's Breadth; Trinket: Rune of the Guard Captain; Main hand: The Unstoppable Force
 - **Phase 1 BiS gear** (average item level 65.3): Head: Black Dragonscale Helm; Neck: Onyxia Tooth Pendant; Shoulders: Truestrike Shoulders; Back: Howler's Furs; Chest: Darkmantle Tunic; Wrist: Earthfury Bracers; Hands: Blood Guard's Mail Vices; Waist: Knowledge of the Timbermaw; Legs: Ironfeather Leggings; Feet: Bloodmail Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Band of Accuria; Trinket: Blackhand's Breadth; Trinket: Talisman of Ephemeral Power; Main hand: Spinal Reaper
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 413 → mana +1% → armor +30% → physical +17% → spell +7% → everything else +28% → raid 755
+Dummy 409 → mana +4% → armor +31% → physical +18% → spell +7% → everything else +36% → raid 801
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -53,17 +56,17 @@ Dummy 413 → mana +1% → armor +30% → physical +17% → spell +7% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 446 | 427 | 413 | 401 | 374 |
+| 455 | 430 | 409 | 390 | 363 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Enhancement — Full raid](../research/raid/builds/enhancement-ml-parse.md) (18/33/0) — [open the talent tree](https://talentsforever.com/shaman/60/520033122-055030031005102251--4).
+**Alone instead of in a raid?** [One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9) does 413 DPS on the training dummy with only your own buffs (+1% over this build there) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4).
 
 ## Other builds of this spec
 
-- [Enhancement — Raid](../research/raid/builds/enhancement-ml-raid.md) (20/31/0, 414 DPS on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5404331-055030031005102051--4)
-- [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 408 DPS on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5200031-055030031005102051-05004-4)
+- [One slow weapon](../research/raid/builds/opt-enhancement-dps-raid-dps.md) (11/31/9, 755 DPS in a full raid, 413 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5000321-055030031005102051-05004-4)
+- [Enhancement — Stormstrike / Maelstrom Weapon](../research/raid/builds/enhancement-raid-dps.md) (11/31/9, 745 DPS in a full raid, 408 on the dummy) — [open the talent tree](https://talentsforever.com/shaman/60/5200031-055030031005102051-05004-4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

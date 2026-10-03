@@ -1613,11 +1613,11 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "frost-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms frost-ml-raid (+0.10% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
@@ -2034,5 +2034,32 @@
    ],
    "final_seed3": -1.7916357758052115e-05
   }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 738.88,
+    "se": 0.139
+   },
+   "frost-winters-chill-raid": {
+    "entry": "frost-raid",
+    "dps": 657.62,
+    "se": 0.106
+   },
+   "frost-ml-raid": {
+    "entry": "frost-raid",
+    "dps": 738.13,
+    "se": 0.137
+   },
+   "opt-frost-raid-raid-dps-extwc": {
+    "entry": "frost-raid",
+    "dps": 707.16,
+    "se": 0.144
+   }
+  },
+  "best_hand": "frost-winters-chill-raid",
+  "gain_vs_hand": 0.1236
  }
 }

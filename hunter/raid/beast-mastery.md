@@ -1,10 +1,8 @@
-# Beast Mastery Hunter — Raid (training dummy and parse)
+# Beast Mastery Hunter — Raid (group)
 
-[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Beast Mastery
+[Hunter](../README.md) > [Raid (group)](README.md) > Beast Mastery
 
-**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
-
-**[Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md)** (30/21/0) — [open the talent tree](https://talentsforever.com/hunter/60/522002150510025-00534500013--4)
+**[Beast Mastery — Full raid](../research/raid/builds/beast-mastery-ml-parse.md)** (31/20/0) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505101251-00532500005--4)
 
 > 🔬 Derived build: searched in the community's raid simulator from the spec's best build. A model of the beta, to check at launch.
 
@@ -12,13 +10,20 @@
 
 **Before the pull:** **Aspect of the Hawk**, **Aimed Shot**.
 
-**Talents with no line below:** **Trueshot Aura**: turn it on before the pull.
-
 **Then press the first one that is ready**, top to bottom:
 
-1. **Rapid Fire**
-2. **Summon Hawk**
-3. **Serpent Sting**: keep it on the target
+1. **Serpent Sting**: keep it on the target
+2. **Rapid Fire**
+3. **Summon Hawk**
+4. **Aimed Shot**
+
+**Aimed Shot** is your filler: cast it whenever nothing above is ready.
+
+**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
+
+- **Intimidation**: a cooldown, use it at the start of the fight and again whenever it is ready (about 3 times a fight)
+- **Bestial Wrath**: a cooldown, use it at the start of the fight and again whenever it is ready (about 2 times a fight)
+- Use your trinkets, your racial and a potion together with your big cooldowns.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -26,22 +31,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 465 |
-| Parse (a full raid: every raid buff and debuff) | 793 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 812 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 450 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 435 | 739 | [30/21/0](https://talentsforever.com/hunter/60/552000050510025-00534500013--4) |
-| Phase 1 BiS | 465 | 812 | [30/21/0](https://talentsforever.com/hunter/60/552000050510025-00535500012--4) |
+| Pre-BiS | 739 | 435 | [31/20/0](https://talentsforever.com/hunter/60/5320001505101251-00530502005--4) |
+| Phase 1 BiS | 812 | 465 | this build |
 
 - **Pre-BiS gear** (average item level 62.9): Head: Black Dragonscale Helm; Neck: Pendant of Celerity; Shoulders: Theramore Pauldrons; Back: Earthweave Cloak; Chest: Magister's Robes; Wrist: Rockfury Bracers; Hands: Beaststalker's Gloves; Waist: Marksman's Girdle; Legs: Outrider's Chain Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 65.6): Head: Black Dragonscale Helm; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Earthweave Cloak; Chest: Dawn Armor; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Dragonstalker's Legguards; Feet: Giantstalker's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Rhok'delar, Longbow of the Ancient Keepers
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 465 → mana +2% → armor +30% → physical +8% → spell +3% → everything else +28% → raid 793
+Dummy 450 → mana +6% → armor +32% → physical +10% → spell +4% → everything else +29% → raid 812
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -49,12 +54,16 @@ Dummy 465 → mana +2% → armor +30% → physical +8% → spell +3% → everyth
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 478 | 474 | 465 | 449 | 432 |
+| 485 | 477 | 450 | 424 | 407 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Beast Mastery — Full raid](../research/raid/builds/beast-mastery-ml-parse.md) (31/20/0) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505101251-00532500005--4).
+**Alone instead of in a raid?** [Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md) (30/21/0) does 465 DPS on the training dummy with only your own buffs (+3% over this build there) — [open the talent tree](https://talentsforever.com/hunter/60/522002150510025-00534500013--4).
+
+## Other builds of this spec
+
+- [Beast Mastery — Raid](../research/raid/builds/beast-mastery-raid.md) (30/21/0, 793 DPS in a full raid, 465 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/522002150510025-00534500013--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

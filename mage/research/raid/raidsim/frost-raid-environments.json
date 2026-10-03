@@ -2,7 +2,7 @@
  "class": "mage",
  "spec": "frost-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,29 @@
     "curve360": 593.8489770558735,
     "max": 693.5428194995479,
     "max60": 743.9561569416688
+   },
+   "raid_spell_casts": {
+    "12043": 1.0,
+    "10199": 0.8246666666666667,
+    "12042": 1.0,
+    "25304": 60.11366666666667,
+    "25345": 12.061666666666667,
+    "25346": 59.790333333333336,
+    "20554": 1.0
+   },
+   "raid_casts": {
+    "Mana Ruby": 0.604,
+    "Presence of Mind": 1.0,
+    "Major Mana Potion": 0.005,
+    "Fire Blast": 0.8246666666666667,
+    "OtherActionManaGain": 56.743,
+    "Arcane Power": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 60.11366666666667,
+    "Arcane Missiles": 71.852,
+    "Demonic Rune": 0.5,
+    "Mana Citrine": 0.20933333333333334,
+    "Berserking": 1.0
    }
   },
   {
@@ -110,6 +133,28 @@
     "curve360": 572.6959466752239,
     "max": 658.1669722316054,
     "max60": 668.5026241868079
+   },
+   "raid_spell_casts": {
+    "25346": 59.801,
+    "12043": 1.0,
+    "12472": 1.0,
+    "20554": 1.0,
+    "25304": 60.111,
+    "25345": 12.061333333333334,
+    "10199": 0.8276666666666667
+   },
+   "raid_casts": {
+    "Arcane Missiles": 71.86233333333334,
+    "OtherActionManaGain": 56.156666666666666,
+    "Mana Ruby": 0.5436666666666666,
+    "Mana Citrine": 0.03833333333333333,
+    "Presence of Mind": 1.0,
+    "Cold Snap": 1.0,
+    "Berserking": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 60.111,
+    "Demonic Rune": 0.10166666666666667,
+    "Fire Blast": 0.8276666666666667
    }
   },
   {
@@ -131,6 +176,29 @@
     "curve360": 635.2471188459102,
     "max": 735.2880277463304,
     "max60": 746.5722309819001
+   },
+   "raid_spell_casts": {
+    "10199": 0.787,
+    "1240047": 13.706,
+    "25304": 53.23733333333333,
+    "20554": 1.0,
+    "12043": 1.0,
+    "25346": 53.071,
+    "25345": 10.672333333333333
+   },
+   "raid_casts": {
+    "Fire Blast": 0.787,
+    "Ice Lance": 13.706,
+    "OtherActionManaGain": 56.48766666666667,
+    "Frostbolt": 53.23733333333333,
+    "Demonic Rune": 0.2633333333333333,
+    "Mana Citrine": 0.09533333333333334,
+    "Mana Ruby": 0.7613333333333333,
+    "Major Mana Potion": 0.0036666666666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Berserking": 1.0,
+    "Presence of Mind": 1.0,
+    "Arcane Missiles": 63.74333333333333
    }
   },
   {
@@ -152,6 +220,29 @@
     "curve360": 628.8609190547661,
     "max": 734.7909031263241,
     "max60": 746.5722309819001
+   },
+   "raid_spell_casts": {
+    "12043": 1.0,
+    "20554": 1.0,
+    "10199": 0.7866666666666666,
+    "25345": 10.720333333333333,
+    "1240047": 13.626,
+    "25346": 53.308,
+    "25304": 53.23833333333334
+   },
+   "raid_casts": {
+    "Presence of Mind": 1.0,
+    "Major Mana Potion": 0.023666666666666666,
+    "Demonic Rune": 0.48733333333333334,
+    "Berserking": 1.0,
+    "Fire Blast": 0.7866666666666666,
+    "Arcane Missiles": 64.02833333333334,
+    "Ice Lance": 13.626,
+    "OtherActionManaGain": 57.02433333333333,
+    "Mana Citrine": 0.18633333333333332,
+    "Frostbolt": 53.23833333333334,
+    "Mana Ruby": 0.8913333333333333,
+    "Talisman of Ephemeral Power": 2.0
    }
   },
   {
@@ -173,6 +264,26 @@
     "curve360": 478.7677739718845,
     "max": 709.4783217706774,
     "max60": 714.2021999869478
+   },
+   "raid_spell_casts": {
+    "10199": 0.8866666666666667,
+    "25304": 62.266,
+    "12472": 1.0,
+    "20554": 1.0,
+    "1240047": 16.138
+   },
+   "raid_casts": {
+    "OtherActionManaGain": 40.349,
+    "Fire Blast": 0.8866666666666667,
+    "Major Mana Potion": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Citrine": 0.8586666666666667,
+    "Demonic Rune": 1.1563333333333334,
+    "Mana Ruby": 1.0,
+    "Frostbolt": 62.266,
+    "Cold Snap": 1.0,
+    "Berserking": 1.0,
+    "Ice Lance": 16.138
    }
   },
   {
@@ -194,6 +305,29 @@
     "curve360": 639.167357889624,
     "max": 738.8193010429945,
     "max60": 750.3179936305901
+   },
+   "raid_spell_casts": {
+    "12043": 1.0,
+    "25346": 52.791,
+    "25345": 10.622333333333334,
+    "20554": 1.0,
+    "1240047": 13.803,
+    "25304": 53.234,
+    "10199": 0.7726666666666666
+   },
+   "raid_casts": {
+    "Major Mana Potion": 0.004333333333333333,
+    "Presence of Mind": 1.0,
+    "Arcane Missiles": 63.41333333333333,
+    "Berserking": 1.0,
+    "Ice Lance": 13.803,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Ruby": 0.7803333333333333,
+    "Mana Citrine": 0.108,
+    "Frostbolt": 53.234,
+    "Fire Blast": 0.7726666666666666,
+    "OtherActionManaGain": 56.468666666666664,
+    "Demonic Rune": 0.2816666666666667
    }
   },
   {
@@ -215,6 +349,26 @@
     "curve360": 532.2455294949954,
     "max": 706.1050123366108,
     "max60": 718.7552671642403
+   },
+   "raid_spell_casts": {
+    "25304": 62.66133333333333,
+    "1240047": 16.165666666666667,
+    "10199": 0.8806666666666667,
+    "20554": 1.0,
+    "12043": 1.0
+   },
+   "raid_casts": {
+    "Demonic Rune": 0.9996666666666667,
+    "Frostbolt": 62.66133333333333,
+    "Ice Lance": 16.165666666666667,
+    "Mana Citrine": 0.8083333333333333,
+    "Talisman of Ephemeral Power": 2.0,
+    "Fire Blast": 0.8806666666666667,
+    "OtherActionManaGain": 40.137,
+    "Berserking": 1.0,
+    "Presence of Mind": 1.0,
+    "Major Mana Potion": 0.8096666666666666,
+    "Mana Ruby": 1.0
    }
   },
   {
@@ -236,6 +390,24 @@
     "curve360": 581.7352793973561,
     "max": 692.2068009145277,
     "max60": 695.7076091194593
+   },
+   "raid_spell_casts": {
+    "25304": 62.31966666666667,
+    "10199": 0.88,
+    "20554": 1.0,
+    "1240047": 16.066333333333333
+   },
+   "raid_casts": {
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 62.31966666666667,
+    "Fire Blast": 0.88,
+    "Mana Citrine": 0.354,
+    "Major Mana Potion": 0.050333333333333334,
+    "OtherActionManaGain": 38.64966666666667,
+    "Berserking": 1.0,
+    "Mana Ruby": 0.9993333333333333,
+    "Ice Lance": 16.066333333333333,
+    "Demonic Rune": 0.9433333333333334
    }
   },
   {
@@ -257,6 +429,30 @@
     "curve360": 453.95282413175386,
     "max": 513.6092951749343,
     "max60": 556.6019101718657
+   },
+   "raid_spell_casts": {
+    "25345": 10.384666666666666,
+    "10199": 0.85,
+    "12043": 1.0,
+    "412538": 0.21033333333333334,
+    "25346": 51.452,
+    "25304": 51.688,
+    "20554": 1.0,
+    "12042": 1.0
+   },
+   "raid_casts": {
+    "Arcane Missiles": 61.836666666666666,
+    "Talisman of Ephemeral Power": 2.0,
+    "Demonic Rune": 0.15066666666666667,
+    "Fire Blast": 0.85,
+    "OtherActionManaGain": 57.13,
+    "Mana Ruby": 0.20566666666666666,
+    "Presence of Mind": 1.0,
+    "Ignite": 0.21033333333333334,
+    "Mana Citrine": 0.034,
+    "Frostbolt": 51.688,
+    "Berserking": 1.0,
+    "Arcane Power": 1.0
    }
   },
   {
@@ -278,6 +474,26 @@
     "curve360": 331.68798565423515,
     "max": 388.3743583337901,
     "max60": 403.8020456340625
+   },
+   "raid_spell_casts": {
+    "20554": 1.0,
+    "10199": 1.0,
+    "412538": 0.364,
+    "25304": 60.0,
+    "11129": 1.0
+   },
+   "raid_casts": {
+    "Talisman of Ephemeral Power": 2.0,
+    "OtherActionManaGain": 39.1,
+    "Mana Ruby": 0.9976666666666667,
+    "Mana Citrine": 0.2823333333333333,
+    "Demonic Rune": 0.869,
+    "Major Mana Potion": 0.028666666666666667,
+    "Berserking": 1.0,
+    "Fire Blast": 1.0,
+    "Ignite": 0.364,
+    "Frostbolt": 60.0,
+    "Combustion": 1.0
    }
   },
   {
@@ -299,6 +515,26 @@
     "curve360": 381.0642947389337,
     "max": 472.39610619730115,
     "max60": 488.74300738321193
+   },
+   "raid_spell_casts": {
+    "412538": 0.393,
+    "11129": 1.0,
+    "20554": 1.0,
+    "25304": 60.0,
+    "10199": 1.0
+   },
+   "raid_casts": {
+    "Mana Citrine": 0.658,
+    "Major Mana Potion": 0.899,
+    "OtherActionManaGain": 42.62233333333333,
+    "Ignite": 0.393,
+    "Mana Ruby": 1.0,
+    "Combustion": 1.0,
+    "Berserking": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Frostbolt": 60.0,
+    "Fire Blast": 1.0,
+    "Demonic Rune": 1.0656666666666668
    }
   },
   {
@@ -320,6 +556,26 @@
     "curve360": 447.3509877127159,
     "max": 701.6856817068217,
     "max60": 704.1813239747605
+   },
+   "raid_spell_casts": {
+    "1240047": 15.982666666666667,
+    "12472": 1.0,
+    "20554": 1.0,
+    "25304": 62.358333333333334,
+    "10199": 0.8913333333333333
+   },
+   "raid_casts": {
+    "Ice Lance": 15.982666666666667,
+    "Major Mana Potion": 1.0,
+    "Cold Snap": 1.0,
+    "Mana Ruby": 1.0,
+    "Berserking": 1.0,
+    "OtherActionManaGain": 40.903666666666666,
+    "Frostbolt": 62.358333333333334,
+    "Demonic Rune": 1.6126666666666667,
+    "Fire Blast": 0.8913333333333333,
+    "Mana Citrine": 0.9653333333333334,
+    "Talisman of Ephemeral Power": 2.0
    }
   },
   {
@@ -341,6 +597,27 @@
     "curve360": 519.5980154698241,
     "max": 596.0241430510391,
     "max60": 643.7940826564566
+   },
+   "raid_spell_casts": {
+    "10199": 0.8516666666666667,
+    "25345": 10.365666666666666,
+    "12042": 1.0,
+    "25346": 51.37466666666667,
+    "25304": 51.70133333333333,
+    "12043": 1.0,
+    "20554": 1.0
+   },
+   "raid_casts": {
+    "Fire Blast": 0.8516666666666667,
+    "OtherActionManaGain": 47.661,
+    "Arcane Missiles": 61.74033333333334,
+    "Demonic Rune": 0.017,
+    "Arcane Power": 1.0,
+    "Frostbolt": 51.70133333333333,
+    "Presence of Mind": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Ruby": 0.013333333333333334,
+    "Berserking": 1.0
    }
   }
  ]

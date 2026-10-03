@@ -68,11 +68,12 @@ A Fire/Frost hybrid built on Frostfire Bolt, new in Forever (trained at 40, 50 a
 
 ## Rank among our builds and the community simulator's
 
-**1 of 1** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 2** for `frostfire-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 615 | +0.0% | 722 | +0.0% | 0 s |
+| 1 | **[`frostfire-raid`](frostfire-raid.md)** | ours: hand draft | 4/31/16 | 615 | +0.0% | 722 | -1.6% | 0 s |
+| 2 | [`frostfire-ml-raid`](frostfire-ml-raid.md) | ours: hand draft | 4/31/16 | 608 | -1.2% | 734 | +0.0% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

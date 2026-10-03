@@ -2,7 +2,7 @@
  "class": "shaman",
  "spec": "stormcaller-dps",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,25 @@
     "curve360": 394.80982928067965,
     "max": 536.7320579188157,
     "max60": 556.0655964669277
+   },
+   "raid_spell_casts": {
+    "10438": 3.9976666666666665,
+    "10605": 7.661,
+    "29228": 15.451333333333332,
+    "529": 13.299,
+    "20554": 1.0,
+    "15208": 61.918
+   },
+   "raid_casts": {
+    "Major Mana Potion": 1.9896666666666667,
+    "OtherActionManaGain": 45.545,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.9976666666666665,
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 7.661,
+    "Flame Shock": 15.451333333333332,
+    "Lightning Bolt": 75.217,
+    "Berserking": 1.0
    }
   }
  ]

@@ -186,9 +186,6 @@
 **Beast Mastery — Full raid (parse) (machine-learning search)** (`hunter/research/raid/builds/beast-mastery-ml-parse.md`)
 - [ ] A machine-searched Beast Mastery build: check it against the community's Beast Mastery builds at launch.
 
-**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
-- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
-
 **Marksmanship — Raid (machine-learning search)** (`hunter/research/raid/builds/marksmanship-ml-raid.md`)
 - [ ] A machine-searched Marksmanship build: check it against the community's Marksmanship builds at launch.
 
@@ -209,6 +206,9 @@
 
 **Optimizer — Marksmanship without a pet (Forever Lone Wolf) (parse)** (`hunter/research/raid/builds/opt-mm-lonewolf-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Beast-Marks — Raid (machine-learning search)** (`hunter/research/raid/builds/beast-marks-ml-raid.md`)
+- [ ] A machine-searched Beast-Marks build: check it against the community's Beast-Marks builds at launch.
 
 ### Mage
 
@@ -286,6 +286,9 @@
 
 **Optimizer — Raid Fireball spam with Scorch upkeep (parse)** (`mage/research/raid/builds/opt-fire-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Frostfire — Raid (machine-learning search)** (`mage/research/raid/builds/frostfire-ml-raid.md`)
+- [ ] A machine-searched Frostfire build: check it against the community's Frostfire builds at launch.
 
 ### Paladin
 
@@ -457,9 +460,6 @@
 **Combat — PvP (derived)** (`rogue/research/pvp/builds/combat-pvp.md`)
 - [ ] A derived Combat PvP build: check it in duels and battlegrounds at launch.
 
-**Combat — Raid (derived)** (`rogue/research/raid/builds/combat-raid.md`)
-- [ ] A derived Combat raid build: check it against the community's Combat builds at launch.
-
 **Subtlety — Leveling (derived)** (`rogue/research/leveling/builds/subtlety-leveling.md`)
 - [ ] A derived Subtlety leveling build: check it while leveling at launch.
 
@@ -474,6 +474,12 @@
 
 **Optimizer — Raid daggers: white ~40%, Backstab (or Mutilate via talent) ~33%, Eviscerate ~12%, poisons ~10%, Rupture ~5% (parse)** (`rogue/research/raid/builds/opt-combat-daggers-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Assassination — Raid (machine-learning search)** (`rogue/research/raid/builds/assassination-ml-raid.md`)
+- [ ] A machine-searched Assassination build: check it against the community's Assassination builds at launch.
+
+**Combat — Raid (machine-learning search)** (`rogue/research/raid/builds/combat-ml-raid.md`)
+- [ ] A machine-searched Combat build: check it against the community's Combat builds at launch.
 
 ### Shaman
 
@@ -527,12 +533,6 @@
 **Restoration — Leveling into the raid build** (`shaman/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
-**Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
-- [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
-
-**Enhancement — Full raid (parse) (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-parse.md`)
-- [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
-
 **Optimizer — Lightning Bolt 60%, Chain Lightning 15%, Earth Shock 10%, Flame Shock 8%, fire totem 7%; Lava Burst via talent (raid-dps)** (`shaman/research/raid/builds/opt-elemental-dps-raid-dps.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
@@ -544,6 +544,12 @@
 
 **Optimizer — One slow weapon: white 40%, Windfury extra attacks 20%, Earth Shock 12%, Lightning Bolt 8%, Flame Shock 5%, Lightning Shield 5%, Rockbiter/other 10%; Stormstrike via talent (parse)** (`shaman/research/raid/builds/opt-enhancement-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/enhancement-ml-raid.md`)
+- [ ] A machine-searched Enhancement build: check it against the community's Enhancement builds at launch.
+
+**Elemental-Enhancement — Raid (machine-learning search)** (`shaman/research/raid/builds/elemental-enhancement-ml-raid.md`)
+- [ ] A machine-searched Elemental-Enhancement build: check it against the community's Elemental-Enhancement builds at launch.
 
 ### Warlock
 
@@ -623,6 +629,9 @@
 
 **Optimizer — Shadow Bolt 74%, Corruption 12%, Curse/Bane of Agony 6%, Immolate 4%, Imp 4% (a raid warlock's pet does little) (parse)** (`warlock/research/raid/builds/opt-sb-raid-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Demonology — Raid (machine-learning search)** (`warlock/research/raid/builds/demonology-ml-raid.md`)
+- [ ] A machine-searched Demonology build: check it against the community's Demonology builds at launch.
 
 ### Warrior
 

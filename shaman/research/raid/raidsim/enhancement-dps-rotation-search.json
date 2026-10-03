@@ -2,7 +2,7 @@
  "dummy": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,17 +10,31 @@
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "ml: Enhancement",
-    "talents": "5304331-055030031005102051-01",
+    "label": "deep: Enhancement (dummy)",
+    "talents": "5404331-055030031005102051",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
    },
    {
-    "label": "opt-enhancement-dps-raid-dps",
-    "talents": "5000321-055030031005102051-05004"
+    "label": "deep: Enhancement (raid)",
+    "talents": "500533102-055030021005102251",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Elemental/Enhancement (raid)",
+    "talents": "530533102-05503001100510224",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
    },
    {
     "label": "sim preset: Level 60",
     "talents": "5505301-053030031005112251"
+   },
+   {
+    "label": "enhancement-raid-dps",
+    "talents": "5200031-055030031005102051-05004"
+   },
+   {
+    "label": "opt-enhancement-dps-raid-dps",
+    "talents": "5000321-055030031005102051-05004"
    }
   ],
   "iterations": 3000,
@@ -69,23 +83,32 @@
   ],
   "final": {
    "dummy": {
-    "ml: Enhancement": {
-     "before": 399.53430903515226,
-     "after": 416.51469297941355,
-     "base": 399.53430903515226,
+    "deep: Enhancement (dummy)": {
+     "before": 400.04395088517646,
+     "after": 416.8981535540851,
+     "base": 400.04395088517646,
      "before_value": null,
      "after_value": null,
-     "oom_before": 18.031589862532147,
-     "oom_after": 20.000430328849347
+     "oom_before": 20.946192584239544,
+     "oom_after": 20.946192584239544
     },
-    "opt-enhancement-dps-raid-dps": {
-     "before": 391.9580397209538,
-     "after": 412.65904995240237,
-     "base": 391.9580397209538,
+    "deep: Enhancement (raid)": {
+     "before": 394.6787528794729,
+     "after": 412.22198552516375,
+     "base": 394.6787528794729,
      "before_value": null,
      "after_value": null,
-     "oom_before": 11.443806097142152,
-     "oom_after": 13.711445229904355
+     "oom_before": 23.174315582777506,
+     "oom_after": 23.174315582777506
+    },
+    "deep: Hybrid Elemental/Enhancement (raid)": {
+     "before": 341.9373106719113,
+     "after": 362.7642687648465,
+     "base": 341.9373106719113,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 5.938301247144352,
+     "oom_after": 5.938301247144352
     },
     "sim preset: Level 60": {
      "before": 390.27201484120127,
@@ -93,18 +116,36 @@
      "base": 390.27201484120127,
      "before_value": null,
      "after_value": null,
-     "oom_before": 29.51458863518294,
+     "oom_before": 31.284670781891858,
      "oom_after": 31.284670781891858
+    },
+    "enhancement-raid-dps": {
+     "before": 393.2078358475795,
+     "after": 406.8594494298848,
+     "base": 393.2078358475795,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 13.736890700642848,
+     "oom_after": 13.736890700642848
+    },
+    "opt-enhancement-dps-raid-dps": {
+     "before": 391.9580397209538,
+     "after": 412.65904995240237,
+     "base": 391.9580397209538,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 13.711445229904355,
+     "oom_after": 13.711445229904355
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 7
  },
  "raid": {
   "class": "shaman",
   "spec": "enhancement-dps",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -112,17 +153,35 @@
   "start": "ui\\specs\\shaman\\enhancement\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "ml: Enhancement",
-    "talents": "5304331-055030031005102051-01",
+    "label": "deep: Enhancement (dummy)",
+    "talents": "5404331-055030031005102051",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+   },
+   {
+    "label": "deep: Enhancement (raid)",
+    "talents": "500533102-055030021005102251",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json"
+   },
+   {
+    "label": "deep: Hybrid Elemental/Enhancement (raid)",
+    "talents": "530533102-05503001100510224",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
+   },
+   {
+    "label": "sim preset: Level 60",
+    "talents": "5505301-053030031005112251"
+   },
+   {
+    "label": "enhancement-raid-dps",
+    "talents": "5200031-055030031005102051-05004"
    },
    {
     "label": "opt-enhancement-dps-raid-dps",
     "talents": "5000321-055030031005102051-05004"
    },
    {
-    "label": "sim preset: Level 60",
-    "talents": "5505301-053030031005112251"
+    "label": "enhancement-ml-parse",
+    "talents": "520033122-055030031005102251"
    }
   ],
   "iterations": 3000,
@@ -187,23 +246,32 @@
   ],
   "final": {
    "raid": {
-    "ml: Enhancement": {
-     "before": 683.866539748264,
-     "after": 771.5900701937462,
-     "base": 683.866539748264,
+    "deep: Enhancement (dummy)": {
+     "before": 685.4405560082741,
+     "after": 772.897988306688,
+     "base": 685.4405560082741,
      "before_value": null,
      "after_value": null,
-     "oom_before": 1.7646165943796492,
-     "oom_after": 3.755275036069899
+     "oom_before": 3.8985611333917984,
+     "oom_after": 3.8985611333917984
     },
-    "opt-enhancement-dps-raid-dps": {
-     "before": 661.8503810315564,
-     "after": 754.9064599120742,
-     "base": 661.8503810315564,
+    "deep: Enhancement (raid)": {
+     "before": 679.3483788946911,
+     "after": 801.5374862470562,
+     "base": 679.3483788946911,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.7132594361334,
-     "oom_after": 1.6510288974361997
+     "oom_before": 20.320382058872745,
+     "oom_after": 20.320382058872745
+    },
+    "deep: Hybrid Elemental/Enhancement (raid)": {
+     "before": 542.4240620807383,
+     "after": 679.063468580652,
+     "base": 542.4240620807383,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 12.295978434514657,
+     "oom_after": 12.295978434514657
     },
     "sim preset: Level 60": {
      "before": 668.9482696650705,
@@ -211,12 +279,39 @@
      "base": 668.9482696650705,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.26907124245715,
+     "oom_before": 0.7584282206507503,
      "oom_after": 0.7584282206507503
+    },
+    "enhancement-raid-dps": {
+     "before": 666.4995700934867,
+     "after": 744.6771493218064,
+     "base": 666.4995700934867,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.6199848760876998,
+     "oom_after": 1.6199848760876998
+    },
+    "opt-enhancement-dps-raid-dps": {
+     "before": 661.8503810315564,
+     "after": 754.9064599120742,
+     "base": 661.8503810315564,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 1.6510288974361997,
+     "oom_after": 1.6510288974361997
+    },
+    "enhancement-ml-parse": {
+     "before": 662.7723246759715,
+     "after": 796.8495039410772,
+     "base": 662.7723246759715,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 21.133907836846188,
+     "oom_after": 21.133907836846188
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 7
  }
 }

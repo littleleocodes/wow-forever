@@ -2,9 +2,9 @@
  "class": "paladin",
  "spec": "prot-tank",
  "game": "forever",
- "date": "2026-09-30",
+ "date": "2026-10-03",
  "sim": {
-  "repo": "/root/.wow-forever-tools/forever-repo",
+  "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
   "gear_raid": "ui/specs/paladin/protection/gear_sets/default.gear.json",
   "gear_max": "ui/specs/paladin/protection/gear_sets/default.gear.json",
@@ -75,11 +75,35 @@
    "split": "0/23/28",
    "ours": true,
    "dps": {
-    "dummy": 152.52329131236803,
-    "dummy60": 183.87351622587187,
-    "raid": 518.4948376129661,
-    "max": 518.4948376129661,
+    "dummy": 152.52329131236806,
+    "dummy60": 183.8735162258718,
+    "raid": 518.4948376129662,
+    "max": 518.4948376129662,
     "max60": 520.012522551055
+   },
+   "raid_spell_casts": {
+    "1310994": 3.0,
+    "1311015": 1.0,
+    "25780": 1.0,
+    "20293": 6.931666666666667,
+    "10333": 16.959333333333333,
+    "10301": 76.396,
+    "20924": 19.692,
+    "20286": 24.915,
+    "10310": 1.0
+   },
+   "raid_casts": {
+    "Swift Judgement": 3.0,
+    "Templar's Bulwark": 1.0,
+    "Righteous Fury": 1.0,
+    "Seal of Righteousness": 6.931666666666667,
+    "Holy Strike": 16.959333333333333,
+    "Retribution Aura": 76.396,
+    "Auto Attack": 93.996,
+    "Consecration": 19.692,
+    "OtherActionManaGain": 105.081,
+    "Judgement of Righteousness": 24.915,
+    "Lay on Hands": 1.0
    }
   },
   {
@@ -87,11 +111,35 @@
    "split": "0/23/28",
    "ours": true,
    "dps": {
-    "dummy": 157.76067061832936,
-    "dummy60": 187.88635970993434,
-    "raid": 501.5166253154823,
-    "max": 501.5166253154823,
-    "max60": 504.3920529443798
+    "dummy": 157.76067061832924,
+    "dummy60": 187.88635970993442,
+    "raid": 501.51662531548243,
+    "max": 501.51662531548243,
+    "max60": 504.39205294437977
+   },
+   "raid_spell_casts": {
+    "10301": 76.37666666666667,
+    "20286": 19.174333333333333,
+    "20924": 19.691,
+    "25780": 1.0,
+    "1310994": 3.0,
+    "20293": 6.939333333333333,
+    "10310": 1.0,
+    "10333": 16.993,
+    "1311015": 1.0
+   },
+   "raid_casts": {
+    "Auto Attack": 93.30933333333333,
+    "OtherActionManaGain": 96.059,
+    "Retribution Aura": 76.37666666666667,
+    "Judgement of Righteousness": 19.174333333333333,
+    "Consecration": 19.691,
+    "Righteous Fury": 1.0,
+    "Swift Judgement": 3.0,
+    "Seal of Righteousness": 6.939333333333333,
+    "Lay on Hands": 1.0,
+    "Holy Strike": 16.993,
+    "Templar's Bulwark": 1.0
    }
   },
   {
@@ -99,11 +147,37 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 133.69978410555333,
-    "dummy60": 161.60740686364284,
-    "raid": 422.0566253644249,
-    "max": 422.0566253644249,
-    "max60": 439.2806244153956
+    "dummy": 133.6997841055533,
+    "dummy60": 161.60740686364286,
+    "raid": 422.056625364425,
+    "max": 422.056625364425,
+    "max60": 439.28062441539527
+   },
+   "raid_spell_casts": {
+    "20924": 13.234,
+    "20293": 6.341,
+    "10301": 67.64766666666667,
+    "10333": 16.943,
+    "10310": 1.0,
+    "1311015": 1.0,
+    "25780": 1.0,
+    "1310994": 3.001,
+    "20286": 19.429666666666666,
+    "20928": 16.842666666666666
+   },
+   "raid_casts": {
+    "Consecration": 13.234,
+    "Seal of Righteousness": 6.341,
+    "Retribution Aura": 67.64766666666667,
+    "Auto Attack": 97.761,
+    "Holy Strike": 16.943,
+    "Lay on Hands": 1.0,
+    "Templar's Bulwark": 1.0,
+    "Righteous Fury": 1.0,
+    "Swift Judgement": 3.001,
+    "Judgement of Righteousness": 19.429666666666666,
+    "OtherActionManaGain": 91.03666666666666,
+    "Holy Shield": 16.842666666666666
    }
   },
   {
@@ -111,11 +185,37 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 130.63760431759272,
-    "dummy60": 158.1877950707864,
-    "raid": 416.3484811298514,
-    "max": 416.3484811298514,
-    "max60": 437.65890540656324
+    "dummy": 130.63760431759266,
+    "dummy60": 158.18779507078636,
+    "raid": 416.3484811298513,
+    "max": 416.3484811298513,
+    "max60": 437.65890540656335
+   },
+   "raid_spell_casts": {
+    "20286": 19.395,
+    "25780": 1.0,
+    "10333": 16.950333333333333,
+    "1310994": 3.0003333333333333,
+    "20924": 11.648666666666667,
+    "1311015": 1.0,
+    "20293": 6.261333333333333,
+    "10310": 1.0,
+    "10301": 69.675,
+    "20928": 16.471
+   },
+   "raid_casts": {
+    "Judgement of Righteousness": 19.395,
+    "Righteous Fury": 1.0,
+    "Auto Attack": 97.686,
+    "Holy Strike": 16.950333333333333,
+    "Swift Judgement": 3.0003333333333333,
+    "Consecration": 11.648666666666667,
+    "Templar's Bulwark": 1.0,
+    "Seal of Righteousness": 6.261333333333333,
+    "Lay on Hands": 1.0,
+    "OtherActionManaGain": 90.03066666666666,
+    "Retribution Aura": 69.675,
+    "Holy Shield": 16.471
    }
   },
   {
@@ -123,11 +223,37 @@
    "split": "",
    "ours": false,
    "dps": {
-    "dummy": 125.76061014438467,
-    "dummy60": 152.17084694291447,
-    "raid": 400.21256229823445,
-    "max": 400.21256229823445,
-    "max60": 416.49476605710134
+    "dummy": 125.76061014438464,
+    "dummy60": 152.17084694291452,
+    "raid": 400.2125622982343,
+    "max": 400.2125622982343,
+    "max60": 416.49476605710106
+   },
+   "raid_spell_casts": {
+    "1310994": 3.0003333333333333,
+    "25780": 1.0,
+    "20924": 13.371,
+    "10301": 67.515,
+    "1311015": 1.0,
+    "10310": 1.0,
+    "20286": 19.415333333333333,
+    "10333": 16.952333333333332,
+    "20293": 6.325,
+    "20928": 16.839666666666666
+   },
+   "raid_casts": {
+    "Swift Judgement": 3.0003333333333333,
+    "OtherActionManaGain": 90.90566666666666,
+    "Righteous Fury": 1.0,
+    "Consecration": 13.371,
+    "Retribution Aura": 67.515,
+    "Templar's Bulwark": 1.0,
+    "Lay on Hands": 1.0,
+    "Judgement of Righteousness": 19.415333333333333,
+    "Auto Attack": 97.83533333333334,
+    "Holy Strike": 16.952333333333332,
+    "Seal of Righteousness": 6.325,
+    "Holy Shield": 16.839666666666666
    }
   }
  ]

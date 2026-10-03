@@ -1634,13 +1634,41 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms fury-dw-raid (+0.01%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-fury-dw-raid-raid-dps (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "fury-dw-raid",
+    "dps": 722.62,
+    "se": 0.113
+   },
+   "fury-dw-raid": {
+    "entry": "fury-dw-raid",
+    "dps": 717.55,
+    "se": 0.11
+   },
+   "arms-2h-raid": {
+    "entry": "arms-2h-raid",
+    "dps": 593.26,
+    "se": 0.115
+   },
+   "opt-fury-dw-raid-raid-dps": {
+    "entry": "fury-dw-raid",
+    "dps": 722.62,
+    "se": 0.113
+   }
+  },
+  "best_hand": "fury-dw-raid",
+  "gain_vs_hand": 0.0071
  }
 }

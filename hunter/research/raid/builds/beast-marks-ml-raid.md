@@ -1,21 +1,21 @@
-# Beast-Marks — Raid (machine-learning search) — 23/28/0
+# Beast-Marks — Raid (machine-learning search) — 22/29/0
 
 *[Hunter](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 23/28/0 (Beast Mastery / Marksmanship / Survival) |
+| **Build** | 22/29/0 (Beast Mastery / Marksmanship / Survival) |
 | **Role** | DPS — Raid |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70009 (2026-09-25 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Beast-Marks build the machine-learning talent search found on the training dummy (only your own buffs) on 2026-10-02 in the community simulator, in the spec's phase-1 BiS gear and the rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
+The Beast-Marks build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry bm-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
-### Beast Mastery (23)
+### Beast Mastery (22)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -25,20 +25,19 @@ The Beast-Marks build the machine-learning talent search found on the training d
 | **Unleashed Fury** | 5/5 | changed | Increases the damage done by your pets and hawks by 15%. |
 | **Ferocity** | 5/5 | changed | Increases the critical strike chance of your pets and hawks by 10%. |
 | **Summon Hawk** | 1/1 | **NEW** | Command a hawk to dive-bomb your targeted enemy, dealing 32 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot. |
-| **Bestial Discipline** | 2/2 | changed | Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting. |
+| **Bestial Discipline** | 1/2 | changed | Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting. |
 
-### Marksmanship (28)
+### Marksmanship (29)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Hawk Eye** | 1/3 | moved | Increases the range of your ranged weapons by 2 yards. |
 | **Lethal Attacks** | 5/5 | **NEW** | Increases your critical strike chance with all attacks by 5%. |
 | **Improved Stings** | 3/3 | **NEW** | Increased the damage of your Serpent Sting ability by 20%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec. |
-| **Efficiency** | 5/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%. |
+| **Efficiency** | 4/5 | changed | Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%. |
 | **Careful Aim** | 5/5 | **NEW** | Increases your Attack Power by 100% of your Intellect. |
-| **Trueshot Aura** | 1/1 | changed | Increases the Ranged Attack Power of party members within 45 yards by 30. Lasts 30 min. |
 | **Mortal Shots** | 5/5 | changed | Increases the critical strike damage bonus on all ranged abilities by 30%. |
-| **Ranged Weapon Specialization** | 3/5 | unchanged | Increases the damage you deal with ranged weapons by 3%. |
+| **Barrage** | 3/3 | changed | Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 10%. |
+| **Ranged Weapon Specialization** | 4/5 | unchanged | Increases the damage you deal with ranged weapons by 4%. |
 
 ### Survival (0)
 
@@ -46,15 +45,15 @@ The Beast-Marks build the machine-learning talent search found on the training d
 
 ## Rank among our builds and the community simulator's
 
-**1 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**3 of 5** for `bm-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: hand draft | 23/28/0 | 473 | +0.0% | 808 | -0.5% | 18 s |
-| 2 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 465 | -1.8% | 793 | -2.3% | 22 s |
-| 3 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 461 | -2.6% | 810 | -0.2% | 26 s |
-| 4 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 450 | -5.0% | 812 | +0.0% | 30 s |
-| 5 | *Beast Mastery 35/16/0* | community simulator | - | 431 | -8.8% | 762 | -6.1% | 28 s |
+| 1 | [`beast-mastery-raid`](beast-mastery-raid.md) | ours: hand draft | 30/21/0 | 465 | +0.0% | 793 | -3.4% | 22 s |
+| 2 | [`mm-hawk-raid`](mm-hawk-raid.md) | ours: hand draft | 22/29/0 | 461 | -0.9% | 810 | -1.4% | 26 s |
+| 3 | **[`beast-marks-ml-raid`](beast-marks-ml-raid.md)** | ours: hand draft | 22/29/0 | 451 | -2.9% | 821 | +0.0% | 36 s |
+| 4 | [`beast-mastery-ml-parse`](beast-mastery-ml-parse.md) | ours: parse build | 31/20/0 | 450 | -3.2% | 812 | -1.1% | 30 s |
+| 5 | *Beast Mastery 35/16/0* | community simulator | - | 431 | -7.2% | 762 | -7.1% | 28 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -84,9 +83,9 @@ Before the pull: at -10s: cast Aspect of the Hawk; at -2.5s: cast Aimed Shot.
 | # | Priority (the first line whose condition holds is cast) | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) casts/min |
 |---|---|---|
 | 1 | if time to the next auto attack < 0.1 and time until Aimed Shot is ready < 0.5: cast Rapid Fire | 0.3 |
-| 2 | cast Summon Hawk | 9.7 |
+| 2 | cast Summon Hawk | 9.3 |
 | 3 | use every other cooldown when ready | as ready |
-| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 5.0 |
+| 4 | if time left on Serpent Sting < 4s: cast Serpent Sting | 4.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Intimidation (needs the Intimidation talent).
 
@@ -94,20 +93,20 @@ Damage by ability:
 
 | Ability | [`beast-marks-ml-raid`](beast-marks-ml-raid.md) |
 |---|---|
-| Auto Shot | 39% |
-| Summon Hawk | 27% |
-| Serpent Sting | 24% |
+| Auto Shot | 40% |
+| Summon Hawk | 28% |
+| Serpent Sting | 22% |
 | Pet: Auto Attack | 7% |
 | Pet: Claw | 2% |
 | Pet: Bite | 1% |
 
 ## Notes
 
-- Against the best hand draft mm-hawk-raid in the same gear and fights (100,000, one seed): +2.6% (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the alternative).
-- Where the simulator measured no difference, the points follow mm-hawk-raid: Improved Arcane Shot → Hawk Eye (the same DPS as the search winner 23/28/0 on one seed, 30,000 fights).
-- Search result: 23/28/0 at 473.1 ± 0.04 DPS over 100,000 fights; runner-up 23/28/0 (+0.00%; the winner takes Endurance Training 3; the runner-up Endurance Training 2, Pathfinding 1); 3,004 builds simulated; certificate: none of its 260 one-move and chain-move neighbours was 0.1% ahead.
+- Against the best hand draft mm-hawk-raid in a full raid, same gear and fights (100,000, one seed): +1.4% (under the 2% bar: the hand draft stays the pick).
+- Search result (full raid): 22/29/0 at 820.8 ± 0.08 DPS over 100,000 fights; runner-up 22/29/0 (+0.00%; the winner takes Endurance Training 3; the runner-up Endurance Training 2, Improved Revive Pet 1); 3,375 builds simulated; certificate: none of its 213 one-move and chain-move neighbours was 0.1% ahead.
 - Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
-- Pre-BiS gear: 23/28/0 at 439.8 DPS on the dummy (the same talents).
+- Pre-BiS gear: 22/29/0 at 780.9 DPS in a full raid (the same talents).
+- Alone on the training dummy (only your own buffs) the search's best is 23/28/0 at 473.1 DPS.
 
 ## Open questions (verify in the live game)
 

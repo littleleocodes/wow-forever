@@ -1,4 +1,4 @@
-# Combat — Raid (derived) — 16/33/2
+# Combat — Raid (machine-learning search) — 16/33/2
 
 *[Rogue](../../../README.md) · [Raids: training dummy, raid and parse](../README.md) · WoW: Forever — proposed*
 
@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat raid damage build derived on 2026-09-30 (derive_raid.py): the community simulator's talent search (raidsim/talent_opt.py, entry combat-daggers-raid, training dummy) from the spec's best build opt-combat-daggers-raid-raid-dps, 30+ points kept in Combat.
+The Combat build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) on 2026-10-03 in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry combat-daggers-raid (raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain neighbours).
 
 ## Point allocation
 
@@ -20,27 +20,25 @@ The Combat raid damage build derived on 2026-09-30 (derive_raid.py): the communi
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Malice** | 5/5 | changed | Increases your critical strike chance with all attacks and Poisons by 5%. |
-| **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Ruthlessness** | 3/3 | unchanged | Gives your finishing moves a 60% chance to add a Combo Point to your target. |
+| **Improved Slice and Dice** | 3/3 | unchanged | Increases the duration of your Slice and Dice ability by 45%. |
 | **Relentless Strikes** | 1/1 | unchanged | Your finishing moves have a 20% chance per Combo Point to restore 25 Energy. |
-| **Lethality** | 1/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 4%. |
-| **Improved Expose Armor** | 2/2 | changed | Reduces the Energy cost of your Expose Armor ability by 10, and refunds 2 Combo Points when cast with 5 Combo Points. |
-| **Improved Poisons** | 1/5 | changed | Increases the chance to apply Poisons to your target by 2%, and gives Poison applications a 10% chance to not consume a charge. |
+| **Lethality** | 3/5 | changed | Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, and Hemorrhage abilities by 12%. |
+| **Cold Blood** | 1/1 | changed | When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, Eviscerate, or Mutilate by 100%. |
 
 ### Combat (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Eviscerate** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%. |
-| **Improved Sinister Strike** | 2/2 | unchanged | Reduces the Energy cost of your Sinister Strike ability by 5. |
-| **Lightning Reflexes** | 3/5 | unchanged | Increases your Dodge chance by 3%. |
+| **Lightning Reflexes** | 5/5 | unchanged | Increases your Dodge chance by 5%. |
 | **Puncturing Wounds** | 3/3 | **NEW** | Increases the critical strike chance of your Backstab by 30% and your Mutilate by 15%, and gives Backstab a 45% chance to add an additional Combo Point. |
+| **Deflection** | 1/3 | changed | Increases your Parry chance by 2%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
-| **Endurance** | 1/2 | changed | Reduces the cooldown of your Sprint and Evasion abilities by 30%. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 10. |
 | **Dual Wield Specialization** | 5/5 | changed | Increases the damage done by your off-hand weapon by 25%. |
-| **Hack and Slash** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 5% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 5%.   Mace: Your attacks ignore 15% of  your target's armor. |
 | **Blade Flurry** | 1/1 | changed | Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec. |
+| **Hack and Slash** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Sword: Your successful  melee attacks have a 5% chance  to trigger an extra attack on the   target.   Dagger/Fist: Increases your  critical strike chance by 5%.   Mace: Your attacks ignore 15% of  your target's armor. |
 | **Weapon Expertise** | 2/2 | changed | Reduces the chance for your attacks to be Dodged or Parried by 2%. |
 | **Aggression** | 3/3 | changed | Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 6%. |
 | **Adrenaline Rush** | 1/1 | unchanged | Increases your Energy regeneration rate by 100% for 15 sec. |
@@ -53,20 +51,20 @@ The Combat raid damage build derived on 2026-09-30 (derive_raid.py): the communi
 
 ## Rank among our builds and the community simulator's
 
-**1 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**2 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`combat-raid`](combat-raid.md)** | ours: hand draft | 16/33/2 | 425 | +0.0% | 712 | -0.0% | 0 s |
-| 2 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | -1.4% | 696 | -2.3% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -6.2% | 712 | +0.0% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -7.3% | 702 | -1.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -12.7% | 672 | -5.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 355 | -16.3% | 642 | -9.8% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -17.8% | 620 | -12.9% | 0 s |
-| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -19.4% | 625 | -12.3% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -21.4% | 629 | -11.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -39.2% | 500 | -29.8% | 0 s |
+| 1 | [`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md) | ours: optimizer | 17/32/2 | 419 | +0.0% | 696 | -3.3% | 0 s |
+| 2 | **[`combat-ml-raid`](combat-ml-raid.md)** | ours: hand draft | 16/33/2 | 402 | -4.0% | 720 | +0.0% | 0 s |
+| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -4.9% | 712 | -1.1% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 702 | -2.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 672 | -6.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 355 | -15.1% | 642 | -10.8% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -16.6% | 620 | -13.8% | 0 s |
+| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -18.3% | 625 | -13.2% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.3% | 629 | -12.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.4% | 500 | -30.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 
@@ -82,38 +80,41 @@ The Combat raid damage build derived on 2026-09-30 (derive_raid.py): the communi
   2. insert at the top: if combo points ≥ 4 and Slice and Dice is up: cast Cold Blood (+0.3%, pass 1)
   3. spell probe: insert before the filler: cast Mutilate (+9.9%, pass 4)
 
-| # | Priority (the first line whose condition holds is cast) | [`combat-raid`](combat-raid.md) casts/min |
+| # | Priority (the first line whose condition holds is cast) | [`combat-ml-raid`](combat-ml-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 2.0 |
-| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.5 |
+| 1 | if time left on Expose Armor < 12 and combo points ≥ 5 and time left in the fight ≥ 3 and time left in the fight ≥ 10s: cast Expose Armor | 1.9 |
+| 2 | if (combo points ≥ 1 and not Slice and Dice is up and time left in the fight ≥ 6 or combo points ≥ 5 and time left on Slice and Dice < 3 and time left in the fight > 9) and time left in the fight ≥ 20s: cast Slice and Dice | 2.7 |
 | 3 | if energy < 59 and timeToNextEnergyTick < 1: cast Adrenaline Rush | 0.3 |
 | 4 | if Slice and Dice is up: use every other cooldown when ready | as ready |
-| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 1.0 |
-| 6 | cast Backstab | 12.4 |
+| 5 | if combo points ≥ 5 and (Slice and Dice is up or energy ≥ 79 or time left in the fight < 6): cast Eviscerate | 0.4 |
+| 6 | cast Backstab | 11.8 |
 
 Lines of the simulator's rotation these builds never cast: cast Mutilate (needs the Mutilate talent).
 
 Damage by ability:
 
-| Ability | [`combat-raid`](combat-raid.md) |
+| Ability | [`combat-ml-raid`](combat-ml-raid.md) |
 |---|---|
-| Auto Attack | 46% |
-| Backstab | 36% |
+| Auto Attack | 48% |
+| Backstab | 37% |
 | Deadly Poison | 6% |
-| Eviscerate | 5% |
 | Dense Sharpening Stone | 3% |
 | Dragonbreath Chili | 2% |
+| Eviscerate | 2% |
 | Goblin Sapper Charge | 2% |
 
 ## Notes
 
-- About +5.7% over the hand draft combat-daggers-raid (over the 2% replacement bar): this build is the spec's raid pick, the hand draft stays as the alternative.
-- Simulator talent search from opt-combat-daggers-raid-raid-dps: 2 points Lethality -> Improved Expose Armor; 1 point Cold Blood -> Improved Poisons (+4.7% DPS on the search's third seed).
-- Simulator numbers are the community's model of the beta (ElliotWood/Forever), not in-game measurements.
+- Against the best hand draft combat-daggers-raid in a full raid, same gear and fights (100,000, one seed): +1.1% (under the 2% bar: the hand draft stays the pick).
+- Where the simulator measured no difference, the points follow combat-daggers-raid: Improved Sinister Strike → Lightning Reflexes (2 points), Endurance → Deflection (the same DPS as the search winner 16/33/2 on one seed, 30,000 fights).
+- Search result (full raid): 16/33/2 at 720.3 ± 0.10 DPS over 100,000 fights; runner-up 16/33/2 (+0.18%; the winner takes Cold Blood 1; the runner-up Improved Poisons 1); 3,601 builds simulated; certificate: 1 confirmed move first, then none of its 295 one-move and chain-move neighbours was 0.1% ahead.
+- Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game measurements; the talents are the simulator's answer for this gear and rotation.
+- Pre-BiS gear: 16/33/2 at 672.3 DPS in a full raid (the same talents).
+- Alone on the training dummy (only your own buffs) the search's best is 16/33/2 at 424.7 DPS.
 
 ## Open questions (verify in the live game)
 
-- A derived Combat raid build: check it against the community's Combat builds at launch.
+- A machine-searched Combat build: check it against the community's Combat builds at launch.
 
 ## Sources
 

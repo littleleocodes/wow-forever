@@ -1602,15 +1602,157 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms combat-raid (+0.00%)"
+  "written": [
+   "combat-ml-raid"
+  ],
+  "superseded": [
+   "combat-raid"
+  ],
+  "date": "2026-10-03",
+  "setting": "raid"
  },
  "tidied": {
   "bis-dummy": null,
-  "bis-raid": null,
   "prebis-dummy": null,
-  "prebis-raid": null
+  "prebis-raid": null,
+  "bis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "combat-daggers-raid",
+    "dps": 720.21,
+    "se": 0.097
+   },
+   "combat-daggers-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 712.71,
+    "se": 0.097
+   },
+   "combat-swords-raid": {
+    "entry": "combat-swords-raid",
+    "dps": 638.74,
+    "se": 0.088
+   },
+   "combat-raid": {
+    "entry": "combat-daggers-raid",
+    "dps": 712.61,
+    "se": 0.097
+   },
+   "opt-combat-daggers-raid-raid-dps": {
+    "entry": "combat-daggers-raid",
+    "dps": 696.04,
+    "se": 0.093
+   }
+  },
+  "best_hand": "combat-daggers-raid",
+  "gain_vs_hand": 0.0105
+ },
+ "aligned_raid": {
+  "target": "combat-daggers-raid",
+  "moves": [
+   {
+    "from": "Improved Sinister Strike",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   },
+   {
+    "from": "Improved Sinister Strike",
+    "to": "Lightning Reflexes",
+    "ratio": 1.0
+   },
+   {
+    "from": "Endurance",
+    "to": "Deflection",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Assassination": [
+    [
+     "Malice",
+     5
+    ],
+    [
+     "Ruthlessness",
+     3
+    ],
+    [
+     "Improved Slice and Dice",
+     3
+    ],
+    [
+     "Relentless Strikes",
+     1
+    ],
+    [
+     "Lethality",
+     3
+    ],
+    [
+     "Cold Blood",
+     1
+    ]
+   ],
+   "Combat": [
+    [
+     "Improved Eviscerate",
+     3
+    ],
+    [
+     "Lightning Reflexes",
+     5
+    ],
+    [
+     "Puncturing Wounds",
+     3
+    ],
+    [
+     "Deflection",
+     1
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Blade Flurry",
+     1
+    ],
+    [
+     "Hack and Slash",
+     5
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     3
+    ],
+    [
+     "Adrenaline Rush",
+     1
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Opportunity",
+     2
+    ]
+   ]
+  },
+  "split": "16/33/2",
+  "ratio": 1.0
  }
 }

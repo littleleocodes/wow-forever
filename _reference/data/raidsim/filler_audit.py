@@ -275,6 +275,7 @@ def main():
     ap.add_argument("--jobs", type=int, default=3)
     ap.add_argument("--iterations", type=int, default=3000)
     ap.add_argument("--confirm", type=int, default=12000)
+    ap.add_argument("--setting", choices=["dummy", "raid"], help="the setting to audit in (default: the entry's; a -parse build: the raid)")
     ap.add_argument("--write", action="store_true")
     ap.add_argument("--apply", action="store_true", help="with --all: apply the written records to proposed-builds.json")
     a = ap.parse_args()
@@ -298,7 +299,7 @@ def main():
         for p in procs:
             p.wait()
         return
-    rec = audit(a.cls, a.spec, a.build, a.iterations, a.confirm)
+    rec = audit(a.cls, a.spec, a.build, a.iterations, a.confirm, setting=a.setting)
     if a.write:
         p = record_path(a.cls, a.spec, a.build)
         p.write_text(json.dumps(rec, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

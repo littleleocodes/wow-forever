@@ -2,7 +2,7 @@
  "class": "warlock",
  "spec": "demonology-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,83 @@
     "curve360": 653.4048187300186,
     "max": 832.9097780797418,
     "max60": 861.9065971445009
+   },
+   "raid_spell_casts": {
+    "1311680": 1.1696666666666666,
+    "25307": 46.082,
+    "25311": 10.461333333333334,
+    "17923": 1.1073333333333333,
+    "11689": 10.281333333333333,
+    "1259821": 2.0,
+    "11713": 8.193333333333333,
+    "25309": 10.876333333333333,
+    "11780": 15.01
+   },
+   "raid_casts": {
+    "Demonic Rune": 2.0,
+    "Curse of the Elements": 1.1696666666666666,
+    "Major Mana Potion": 2.0,
+    "Shadow Bolt": 46.082,
+    "Corruption": 10.461333333333334,
+    "Searing Pain": 1.1073333333333333,
+    "Life Tap": 10.281333333333333,
+    "OtherActionManaGain": 47.27633333333333,
+    "Eureka!": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Bane of Agony": 8.193333333333333,
+    "Immolate": 10.876333333333333,
+    "Pet: Auto Attack": 90.004,
+    "Pet: OtherActionManaGain": 51.20166666666667,
+    "Pet: Lash of Pain": 15.01
+   }
+  },
+  {
+   "label": "demonology-ml-raid",
+   "split": "2/31/18",
+   "ours": true,
+   "dps": {
+    "dummy": 686.4730631740605,
+    "dummy60": 819.4587956764317,
+    "ladder-mana": 723.4253577628829,
+    "ladder-armor": 743.143605488322,
+    "ladder-physical": 766.9335255473534,
+    "ladder-spell": 775.0494561156586,
+    "raid": 837.558828644866,
+    "curve60": 753.0395268070713,
+    "curve120": 688.4092748692015,
+    "curve180": 680.9343390219703,
+    "curve240": 660.5666384797246,
+    "curve360": 650.5864423102537,
+    "max": 837.558828644866,
+    "max60": 873.0665797268161
+   },
+   "raid_spell_casts": {
+    "1259821": 2.0,
+    "11713": 8.113333333333333,
+    "25307": 45.81433333333333,
+    "1311680": 1.1603333333333334,
+    "11689": 10.988666666666667,
+    "25309": 10.829333333333333,
+    "25311": 10.329333333333333,
+    "17923": 1.134,
+    "11780": 15.01
+   },
+   "raid_casts": {
+    "OtherActionManaGain": 48.12266666666667,
+    "Eureka!": 2.0,
+    "Bane of Agony": 8.113333333333333,
+    "Talisman of Ephemeral Power": 2.0,
+    "Major Mana Potion": 2.0,
+    "Shadow Bolt": 45.81433333333333,
+    "Demonic Rune": 2.0,
+    "Curse of the Elements": 1.1603333333333334,
+    "Life Tap": 10.988666666666667,
+    "Immolate": 10.829333333333333,
+    "Corruption": 10.329333333333333,
+    "Searing Pain": 1.134,
+    "Pet: Lash of Pain": 15.01,
+    "Pet: Auto Attack": 90.004,
+    "Pet: OtherActionManaGain": 51.20166666666667
    }
   },
   {
@@ -110,6 +187,34 @@
     "curve360": 635.1981267122853,
     "max": 790.0850907352275,
     "max60": 813.3355070907239
+   },
+   "raid_spell_casts": {
+    "1259821": 2.0,
+    "11713": 8.248,
+    "25309": 11.021,
+    "25307": 46.503,
+    "1311680": 1.1696666666666666,
+    "25311": 10.448666666666666,
+    "11689": 10.025666666666666,
+    "17923": 1.3766666666666667,
+    "11780": 15.01
+   },
+   "raid_casts": {
+    "OtherActionManaGain": 47.341,
+    "Eureka!": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Bane of Agony": 8.248,
+    "Immolate": 11.021,
+    "Shadow Bolt": 46.503,
+    "Major Mana Potion": 2.0,
+    "Curse of the Elements": 1.1696666666666666,
+    "Corruption": 10.448666666666666,
+    "Life Tap": 10.025666666666666,
+    "Searing Pain": 1.3766666666666667,
+    "Demonic Rune": 2.0,
+    "Pet: Lash of Pain": 15.01,
+    "Pet: Auto Attack": 90.004,
+    "Pet: OtherActionManaGain": 61.19733333333333
    }
   },
   {
@@ -131,6 +236,34 @@
     "curve360": 633.001412784715,
     "max": 801.9747215683847,
     "max60": 831.9928413241538
+   },
+   "raid_spell_casts": {
+    "11713": 8.123,
+    "25309": 10.943333333333333,
+    "11689": 10.648666666666667,
+    "25307": 46.38433333333333,
+    "1259821": 2.0,
+    "1311680": 1.1603333333333334,
+    "25311": 10.324333333333334,
+    "17923": 1.3386666666666667,
+    "11780": 15.01
+   },
+   "raid_casts": {
+    "Bane of Agony": 8.123,
+    "Immolate": 10.943333333333333,
+    "Life Tap": 10.648666666666667,
+    "Shadow Bolt": 46.38433333333333,
+    "Eureka!": 2.0,
+    "Curse of the Elements": 1.1603333333333334,
+    "Corruption": 10.324333333333334,
+    "Major Mana Potion": 2.0,
+    "Demonic Rune": 2.0,
+    "Searing Pain": 1.3386666666666667,
+    "OtherActionManaGain": 48.099,
+    "Talisman of Ephemeral Power": 2.0,
+    "Pet: OtherActionManaGain": 61.815666666666665,
+    "Pet: Lash of Pain": 15.01,
+    "Pet: Auto Attack": 90.004
    }
   }
  ]

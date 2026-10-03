@@ -2,7 +2,7 @@
  "class": "hunter",
  "spec": "mm-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,33 @@
     "curve360": 412.052642215805,
     "max": 784.6770476911177,
     "max60": 802.6084975175881
+   },
+   "raid_spell_casts": {
+    "2643": 27.689,
+    "20904": 1.0,
+    "1293527": 28.908333333333335,
+    "20554": 1.0,
+    "25296": 1.0,
+    "3045": 1.0,
+    "25295": 11.283,
+    "17261": 13.506666666666666,
+    "3009": 27.810333333333332
+   },
+   "raid_casts": {
+    "Multi-Shot": 27.689,
+    "Aimed Shot": 1.0,
+    "OtherActionManaGain": 62.62,
+    "Summon Hawk": 28.908333333333335,
+    "Berserking": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Major Mana Potion": 0.9766666666666667,
+    "Rapid Fire": 1.0,
+    "Serpent Sting": 11.283,
+    "Auto Shot": 83.83933333333333,
+    "Pet: Bite": 13.506666666666666,
+    "Pet: Claw": 27.810333333333332,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0
    }
   },
   {
@@ -110,6 +137,33 @@
     "curve360": 378.81305523802797,
     "max": 771.177463313963,
     "max60": 809.7218036169459
+   },
+   "raid_spell_casts": {
+    "3045": 1.0,
+    "2643": 27.402,
+    "25295": 12.0,
+    "20554": 1.0,
+    "20904": 1.0,
+    "25296": 1.0,
+    "14287": 28.004333333333335,
+    "17261": 11.0,
+    "3009": 27.807666666666666
+   },
+   "raid_casts": {
+    "Auto Shot": 83.595,
+    "Rapid Fire": 1.0,
+    "Multi-Shot": 27.402,
+    "Serpent Sting": 12.0,
+    "OtherActionManaGain": 76.81433333333334,
+    "Berserking": 1.0,
+    "Major Mana Potion": 0.997,
+    "Aimed Shot": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 28.004333333333335,
+    "Pet: Bite": 11.0,
+    "Pet: Claw": 27.807666666666666,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0
    }
   },
   {
@@ -131,6 +185,33 @@
     "curve360": 412.052642215805,
     "max": 784.6770476911177,
     "max60": 802.6084975175881
+   },
+   "raid_spell_casts": {
+    "2643": 27.689,
+    "1293527": 28.908333333333335,
+    "3045": 1.0,
+    "25295": 11.283,
+    "25296": 1.0,
+    "20554": 1.0,
+    "20904": 1.0,
+    "17261": 13.506666666666666,
+    "3009": 27.810333333333332
+   },
+   "raid_casts": {
+    "Auto Shot": 83.83933333333333,
+    "Major Mana Potion": 0.9766666666666667,
+    "Multi-Shot": 27.689,
+    "Summon Hawk": 28.908333333333335,
+    "OtherActionManaGain": 62.62,
+    "Rapid Fire": 1.0,
+    "Serpent Sting": 11.283,
+    "Aspect of the Hawk": 1.0,
+    "Berserking": 1.0,
+    "Aimed Shot": 1.0,
+    "Pet: Bite": 13.506666666666666,
+    "Pet: Claw": 27.810333333333332,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0
    }
   },
   {
@@ -152,6 +233,33 @@
     "curve360": 396.3078983780878,
     "max": 785.4427790652036,
     "max60": 802.6084975175881
+   },
+   "raid_spell_casts": {
+    "20554": 1.0,
+    "1293527": 28.917666666666666,
+    "20904": 1.0,
+    "25296": 1.0,
+    "3045": 1.0,
+    "2643": 27.689666666666668,
+    "25295": 11.283333333333333,
+    "3009": 27.810333333333332,
+    "17261": 13.506666666666666
+   },
+   "raid_casts": {
+    "Berserking": 1.0,
+    "Summon Hawk": 28.917666666666666,
+    "Aimed Shot": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Rapid Fire": 1.0,
+    "Multi-Shot": 27.689666666666668,
+    "Auto Shot": 83.861,
+    "Major Mana Potion": 1.004,
+    "Serpent Sting": 11.283333333333333,
+    "OtherActionManaGain": 62.870333333333335,
+    "Pet: Claw": 27.810333333333332,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0,
+    "Pet: Bite": 13.506666666666666
    }
   },
   {
@@ -173,6 +281,35 @@
     "curve360": 362.9820813938913,
     "max": 803.8115133734009,
     "max60": 849.7467869727213
+   },
+   "raid_spell_casts": {
+    "20904": 1.0,
+    "1310786": 8.746666666666666,
+    "25295": 9.818,
+    "3045": 1.0,
+    "25296": 1.0,
+    "2643": 25.306333333333335,
+    "14287": 33.899,
+    "20554": 1.0,
+    "17261": 2.0,
+    "3009": 36.80766666666667
+   },
+   "raid_casts": {
+    "Aimed Shot": 1.0,
+    "Sniper Shot": 8.746666666666666,
+    "Serpent Sting": 9.818,
+    "Rapid Fire": 1.0,
+    "Auto Shot": 83.59933333333333,
+    "Aspect of the Hawk": 1.0,
+    "Multi-Shot": 25.306333333333335,
+    "OtherActionManaGain": 82.731,
+    "Major Mana Potion": 1.9003333333333334,
+    "Arcane Shot": 33.899,
+    "Berserking": 1.0,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0,
+    "Pet: Bite": 2.0,
+    "Pet: Claw": 36.80766666666667
    }
   },
   {
@@ -194,6 +331,37 @@
     "curve360": 380.7933145982594,
     "max": 743.281111453947,
     "max60": 763.7547659993514
+   },
+   "raid_spell_casts": {
+    "20904": 1.0,
+    "20554": 1.0,
+    "25296": 1.0,
+    "2643": 27.681,
+    "3045": 1.0,
+    "19577": 3.0,
+    "19574": 2.0,
+    "1293527": 28.923,
+    "25295": 11.288333333333334,
+    "17261": 13.861,
+    "3009": 27.029666666666667
+   },
+   "raid_casts": {
+    "Aimed Shot": 1.0,
+    "Berserking": 1.0,
+    "Aspect of the Hawk": 1.0,
+    "Major Mana Potion": 1.0033333333333334,
+    "Auto Shot": 83.76533333333333,
+    "Multi-Shot": 27.681,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 62.812666666666665,
+    "Intimidation": 3.0,
+    "Bestial Wrath": 2.0,
+    "Summon Hawk": 28.923,
+    "Serpent Sting": 11.288333333333334,
+    "Pet: Bite": 13.861,
+    "Pet: Claw": 27.029666666666667,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 178.43866666666668
    }
   },
   {
@@ -215,6 +383,35 @@
     "curve360": 331.2832653920282,
     "max": 728.836444990547,
     "max60": 775.3904167468849
+   },
+   "raid_spell_casts": {
+    "25295": 10.369,
+    "2643": 25.898,
+    "3045": 1.0,
+    "1310786": 8.968333333333334,
+    "25296": 1.0,
+    "14287": 28.039,
+    "20904": 1.0,
+    "20554": 1.0,
+    "17261": 2.0,
+    "3009": 36.80766666666667
+   },
+   "raid_casts": {
+    "Serpent Sting": 10.369,
+    "Multi-Shot": 25.898,
+    "Rapid Fire": 1.0,
+    "OtherActionManaGain": 76.26433333333334,
+    "Auto Shot": 75.0,
+    "Sniper Shot": 8.968333333333334,
+    "Aspect of the Hawk": 1.0,
+    "Arcane Shot": 28.039,
+    "Aimed Shot": 1.0,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.879,
+    "Pet: Bite": 2.0,
+    "Pet: Claw": 36.80766666666667,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0
    }
   },
   {
@@ -236,6 +433,33 @@
     "curve360": 311.1807106932881,
     "max": 661.7620162155998,
     "max60": 693.7702061781434
+   },
+   "raid_spell_casts": {
+    "3045": 1.0,
+    "14287": 28.0,
+    "2643": 27.0,
+    "25295": 12.0,
+    "25296": 1.0,
+    "20904": 1.0,
+    "20554": 1.0,
+    "3009": 36.80766666666667,
+    "17261": 2.0
+   },
+   "raid_casts": {
+    "Rapid Fire": 1.0,
+    "Auto Shot": 75.0,
+    "Arcane Shot": 28.0,
+    "Multi-Shot": 27.0,
+    "Major Mana Potion": 0.949,
+    "Serpent Sting": 12.0,
+    "OtherActionManaGain": 72.65233333333333,
+    "Aspect of the Hawk": 1.0,
+    "Aimed Shot": 1.0,
+    "Berserking": 1.0,
+    "Pet: Claw": 36.80766666666667,
+    "Pet: OtherActionMove": 1.0,
+    "Pet: Auto Attack": 150.0,
+    "Pet: Bite": 2.0
    }
   }
  ]

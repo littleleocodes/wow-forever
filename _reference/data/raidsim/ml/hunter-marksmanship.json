@@ -1809,12 +1809,11 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "marksmanship-ml-parse",
-   "marksmanship-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms marksmanship-ml-parse (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
@@ -2133,5 +2132,42 @@
    ],
    "final_seed3": 0.0
   }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 909.34,
+    "se": 0.104
+   },
+   "mm-lone-wolf-raid": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 809.94,
+    "se": 0.096
+   },
+   "bm-mm-full-buffs-raid": {
+    "entry": "mm-raid",
+    "dps": 751.34,
+    "se": 0.077
+   },
+   "marksmanship-ml-parse": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 909.34,
+    "se": 0.104
+   },
+   "opt-mm-lonewolf-raid-raid-dps": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 872.58,
+    "se": 0.095
+   },
+   "marksmanship-ml-raid": {
+    "entry": "mm-lonewolf-raid",
+    "dps": 869.11,
+    "se": 0.097
+   }
+  },
+  "best_hand": "mm-lone-wolf-raid",
+  "gain_vs_hand": 0.1227
  }
 }

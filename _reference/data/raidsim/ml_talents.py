@@ -523,6 +523,63 @@ def certificate(space, sim, winner, log, its=3000, seed=5, conf_its=30000):
     return winner, steps
 
 
+def two_moves(space, flat, expand=None):
+    """(one-move neighbours, two-move neighbours) of a build: every legal build reached by one move (1, 2, 3 or 5 points from one talent to
+    another, or a prerequisite chain) and by two such moves in a row, deduplicated. `expand` limits the second move to the given
+    one-move neighbours (keys), for slow labs."""
+    first = space.neighbours(flat)
+    seen = {key(flat)} | {key(n) for _, n in first}
+    second = []
+    for m1, n1 in first:
+        if expand is not None and key(n1) not in expand:
+            continue
+        for m2, n2 in space.neighbours(n1):
+            k = key(n2)
+            if k not in seen:
+                seen.add(k)
+                second.append((f"{m1}; then {m2}", n2))
+    return first, second
+
+
+def two_move_certificate(space, sim, winner, log, screen=1000, seed=21, conf=(20000, 100000), top=60, expand_top=None, rounds=3):
+    """'No better build within two talent moves', checked exhaustively: every one- and two-move neighbour of the winner simulated on one
+    seed with common random numbers (`screen` fights each), the best `top` raced against the winner on a fresh seed (conf[0] fights), the
+    best 5 of those once more (conf[1]); a neighbour still 0.1% ahead replaces the winner and the check repeats (at most `rounds` times).
+    `expand_top`: expand only the best one-move neighbours a second time (for labs too slow for the full two-move set)."""
+    steps = []
+    for rep in range(rounds):
+        expand = None
+        if expand_top:
+            first = space.neighbours(winner)
+            r0 = sim.run([winner] + [c for _, c in first], screen, seed + 30 + rep)
+            ranked = sorted(range(len(first)), key=lambda i: -r0[i + 1][0])[:expand_top]
+            expand = {key(first[i][1]) for i in ranked}
+        first, second = two_moves(space, winner, expand)
+        cands = first + second
+        t0 = time.time()
+        res = sim.run([winner] + [c for _, c in cands], screen, seed + rep)
+        w = res[0][0] or 1.0
+        gaps = sorted(((res[i + 1][0] / w - 1, i) for i in range(len(cands))), reverse=True)
+        best = gaps[:top]
+        r1 = sim.run([winner] + [cands[i][1] for _, i in best], conf[0], seed + 10 + rep)
+        g1 = sorted(((r1[k + 1][0] / (r1[0][0] or 1.0) - 1, best[k][1]) for k in range(len(best))), reverse=True)[:5]
+        r2 = sim.run([winner] + [cands[i][1] for _, i in g1], conf[1], seed + 20 + rep)
+        g2 = sorted(((r2[k + 1][0] / (r2[0][0] or 1.0) - 1, g1[k][1]) for k in range(len(g1))), reverse=True)
+        rec = {"one_move": len(first), "two_move": len(second), "expanded": len(expand) if expand is not None else None, "screen": screen,
+               "screen_best": [(cands[i][0], round(g, 4)) for g, i in gaps[:5]], "raced": len(best),
+               "confirmed": [(cands[i][0], round(g, 4)) for g, i in g2], "minutes": round((time.time() - t0) / 60, 1)}
+        steps.append(rec)
+        lead = g2[0] if g2 else None
+        log(f"    two-move check: {len(first)} one-move + {len(second)} two-move builds, the best {len(best)} raced; "
+            + (f"best {lead[0]:+.2%} ({cands[lead[1]][0]})" if lead else "none raced") + f"; {rec['minutes']} min")
+        if lead and lead[0] > 0.001:
+            winner = cands[lead[1]][1]
+            log(f"    two-move check: moved to {space.split(winner)} ({lead[0]:+.2%} on {conf[1]})")
+            continue
+        return winner, steps
+    return winner, steps
+
+
 def importance(space, data, rng, top=12):
     flats = [v[0] for v in data.values()]
     X = np.array([space.vec(f) for f in flats], dtype=float)
@@ -571,14 +628,16 @@ def optimize(space, sims, starts, a, log):
                 seen.add(key(f))
                 cands.append(f)
         stage1 = {}
-        last, hist = race(sims[name], cands, log, first=stage1)
+        stages = getattr(a, "race_stages", None) or ((10000, 2, 5), (30000, 3, 2), (100000, 4, 2))
+        last, hist = race(sims[name], cands, log, stages=stages, first=stage1)
         top1 = max(stage1.values()) if stage1 else 0.0
         for r in runs:
             if r["entry"] == name and stage1:
                 r["best_stage1_gap"] = round(max(stage1.get(k, 0.0) for k in r["finalists"]) / top1 - 1, 4) if top1 else None
-        win, cert = certificate(space, sims[name], last[0][0], log)
+        its, conf_its = getattr(a, "cert_its", None) or (3000, 30000)
+        win, cert = certificate(space, sims[name], last[0][0], log, its=its, conf_its=conf_its)
         if key(win) != key(last[0][0]):
-            last, hist2 = race(sims[name], [win, last[0][0]], log, stages=((100000, 4, 2),))
+            last, hist2 = race(sims[name], [win, last[0][0]], log, stages=(stages[-1][:2] + (2,),))
             hist += hist2
         best_per_entry.append((name, last, hist, cert))
     best_per_entry.sort(key=lambda x: -x[1][0][1])

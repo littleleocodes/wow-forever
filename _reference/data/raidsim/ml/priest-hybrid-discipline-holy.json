@@ -1518,8 +1518,9 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms smite-discipline-raid (+0.05%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms smite-discipline-raid (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
@@ -1640,5 +1641,22 @@
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "smite-dps",
+    "dps": 642.76,
+    "se": 0.056
+   },
+   "smite-discipline-raid": {
+    "entry": "smite-dps",
+    "dps": 642.76,
+    "se": 0.056
+   }
+  },
+  "best_hand": "smite-discipline-raid",
+  "gain_vs_hand": 0.0
  }
 }

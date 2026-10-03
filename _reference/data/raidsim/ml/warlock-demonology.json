@@ -1560,10 +1560,12 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [],
+  "written": [
+   "demonology-ml-raid"
+  ],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms demonology-pact-raid (+0.10%)"
+  "date": "2026-10-03",
+  "setting": "raid"
  },
  "tidied": {
   "bis-dummy": {
@@ -1571,105 +1573,6 @@
     "Affliction": [
      [
       "Improved Life Tap",
-      1
-     ],
-     [
-      "Improved Corruption",
-      1
-     ]
-    ],
-    "Demonology": [
-     [
-      "Demonic Embrace",
-      2
-     ],
-     [
-      "Unholy Power",
-      5
-     ],
-     [
-      "Fel Vitality",
-      3
-     ],
-     [
-      "Improved Sayaad",
-      3
-     ],
-     [
-      "Demonic Sacrifice",
-      1
-     ],
-     [
-      "Master Summoner",
-      2
-     ],
-     [
-      "Decimation",
-      2
-     ],
-     [
-      "Demonic Brand",
-      3
-     ],
-     [
-      "Soul Link",
-      1
-     ],
-     [
-      "Demonic Knowledge",
-      3
-     ],
-     [
-      "Master Demonologist",
-      5
-     ],
-     [
-      "Demonic Pact",
-      1
-     ]
-    ],
-    "Destruction": [
-     [
-      "Improved Shadow Bolt",
-      5
-     ],
-     [
-      "Bane",
-      5
-     ],
-     [
-      "Ruin",
-      5
-     ],
-     [
-      "Agonizing Flames",
-      3
-     ]
-    ]
-   },
-   "split": "2/31/18",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Improved Imp",
-     "to": "Demonic Embrace",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "survival"
-    }
-   ],
-   "abilities_never_cast": [
-    "Demonic Sacrifice",
-    "Soul Link"
-   ],
-   "final_seed3": 0.0
-  },
-  "bis-raid": {
-   "allocation": {
-    "Affliction": [
-     [
-      "Suppression",
       1
      ],
      [
@@ -1961,6 +1864,116 @@
     "Soul Link"
    ],
    "final_seed3": 0.0
-  }
+  },
+  "bis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "demonology-raid",
+    "dps": 836.27,
+    "se": 0.16
+   },
+   "demonology-pact-raid": {
+    "entry": "demonology-raid",
+    "dps": 831.96,
+    "se": 0.162
+   }
+  },
+  "best_hand": "demonology-pact-raid",
+  "gain_vs_hand": 0.0052
+ },
+ "aligned_raid": {
+  "target": "demonology-pact-raid",
+  "moves": [
+   {
+    "from": "Improved Imp",
+    "to": "Demonic Embrace",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Affliction": [
+    [
+     "Suppression",
+     1
+    ],
+    [
+     "Improved Corruption",
+     1
+    ]
+   ],
+   "Demonology": [
+    [
+     "Demonic Embrace",
+     2
+    ],
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Fel Vitality",
+     3
+    ],
+    [
+     "Improved Sayaad",
+     3
+    ],
+    [
+     "Demonic Sacrifice",
+     1
+    ],
+    [
+     "Master Summoner",
+     2
+    ],
+    [
+     "Decimation",
+     2
+    ],
+    [
+     "Demonic Brand",
+     3
+    ],
+    [
+     "Soul Link",
+     1
+    ],
+    [
+     "Demonic Knowledge",
+     3
+    ],
+    [
+     "Master Demonologist",
+     5
+    ],
+    [
+     "Demonic Pact",
+     1
+    ]
+   ],
+   "Destruction": [
+    [
+     "Improved Shadow Bolt",
+     5
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ]
+   ]
+  },
+  "split": "2/31/18",
+  "ratio": 1.0
  }
 }

@@ -1529,13 +1529,36 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms opt-feral-cat-dps-raid-dps (-0.08%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-feral-cat-dps-raid-dps (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "feral-cat-dps",
+    "dps": 575.66,
+    "se": 0.064
+   },
+   "feral-cat-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 574.75,
+    "se": 0.063
+   },
+   "opt-feral-cat-dps-raid-dps": {
+    "entry": "feral-cat-dps",
+    "dps": 575.66,
+    "se": 0.064
+   }
+  },
+  "best_hand": "feral-cat-dps",
+  "gain_vs_hand": 0.0016
  }
 }

@@ -2,7 +2,7 @@
  "class": "mage",
  "spec": "frostfire-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,75 @@
     "curve360": 513.5220291755148,
     "max": 722.4124193082479,
     "max60": 679.0637978945279
+   },
+   "raid_spell_casts": {
+    "10199": 2.002,
+    "412538": 31.198,
+    "10207": 11.971,
+    "18809": 0.9026666666666666,
+    "1237313": 51.933,
+    "20554": 1.0,
+    "11129": 1.0
+   },
+   "raid_casts": {
+    "Fire Blast": 2.002,
+    "Ignite": 31.198,
+    "Scorch": 11.971,
+    "Pyroblast": 0.9026666666666666,
+    "OtherActionManaGain": 64.76633333333334,
+    "Mana Citrine": 0.9476666666666667,
+    "Major Mana Potion": 0.9993333333333333,
+    "Demonic Rune": 1.0663333333333334,
+    "Frostfire Bolt": 51.933,
+    "Berserking": 1.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Mana Ruby": 1.0,
+    "Combustion": 1.0
+   }
+  },
+  {
+   "label": "frostfire-ml-raid",
+   "split": "4/31/16",
+   "ours": true,
+   "dps": {
+    "dummy": 608.1028250333067,
+    "dummy60": 737.1248075146884,
+    "ladder-mana": 642.163581637572,
+    "ladder-armor": 642.163581637572,
+    "ladder-physical": 632.4429144020137,
+    "ladder-spell": 695.6872058422144,
+    "raid": 734.2579857879617,
+    "curve60": 545.5888999589687,
+    "curve120": 587.0407145427084,
+    "curve180": 608.1028250333067,
+    "curve240": 551.8918909691912,
+    "curve360": 476.2931953606562,
+    "max": 734.2579857879617,
+    "max60": 679.1826826249293
+   },
+   "raid_spell_casts": {
+    "11129": 1.0,
+    "20554": 1.0,
+    "18809": 0.6996666666666667,
+    "1237313": 52.608,
+    "10199": 1.547,
+    "10207": 11.968666666666667,
+    "412538": 31.929333333333332
+   },
+   "raid_casts": {
+    "Combustion": 1.0,
+    "Berserking": 1.0,
+    "Pyroblast": 0.6996666666666667,
+    "Frostfire Bolt": 52.608,
+    "Mana Citrine": 0.992,
+    "Fire Blast": 1.547,
+    "Talisman of Ephemeral Power": 2.0,
+    "Scorch": 11.968666666666667,
+    "Ignite": 31.929333333333332,
+    "Mana Ruby": 1.0,
+    "Major Mana Potion": 1.0,
+    "Demonic Rune": 1.348,
+    "OtherActionManaGain": 33.84733333333333
    }
   }
  ]

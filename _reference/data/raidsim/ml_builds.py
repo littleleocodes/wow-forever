@@ -4,25 +4,24 @@ every raid damage spec, and "DPS ranking for Pre-bis as well as best in slot arm
     python _reference/data/raidsim/ml_builds.py [classes] --builds     # winners into proposed-builds.json (then validate + render)
     python _reference/data/raidsim/ml_builds.py [classes] --rank       # _reference/dps-rankings.md + "## DPS by gear tier" of the research READMEs
 
---builds, for every spec whose record (`raidsim/ml/<class>-<spec slug>.json`, written by ml_pipeline.py) is complete:
-- the training-dummy winner in the spec's phase-1 BiS set becomes the spec's derived raid build `<spec page slug>-ml-raid` (🔬, `derived:
-  raid`) when the record's comparison race (100,000 fights, one fresh seed, BiS set) has it 0.5% or more ahead of every build raced
-  there (the spec's current best and its two best hand drafts); otherwise the search confirms the current pick and no build is written
-  (the first finished specs tied: Balance exactly, Feral within 0.1%). It carries `replaces` when it beats the spec's best hand draft
-  there by 2% or more (the user's rule: the hand draft stays
-  as the alternative; the pages enforce the rule on the race numbers, render_modes.DERIVED_BAR). It supersedes the spec's earlier
-  derived raid build (derive_raid.py's local search; parse builds stay), which is removed and marked "superseded" in derived-raid.json
-  so a later `derive_raid.py --write` does not bring it back. It joins the specs.json builds of the entry it won in.
-- when the full-raid winner is another build, beats the dummy winner by 2% or more in a full raid and every existing parse build of the
-  spec by 0.5% or more (all raced on one fresh seed, 100,000 fights, the BiS set), it becomes the spec's parse build
-  `<spec page slug>-ml-parse` (the Arms lesson: a full raid values talents differently), whether or not a raid build is written.
-- before that, points the simulator cannot tell apart follow the hand draft (`align`): a search winner picks arbitrarily among talents
-  that do nothing on the dummy (Burning Soul and Magic Absorption measure exactly the same with common random numbers), so every point
-  is moved toward the spec's best hand draft (else its current best build) while the build stays legal and within 0.03% of the winner
-  on one seed (5,000 fights to screen the moves, the kept move confirmed over 30,000).
-Every written build then goes through filler_audit.py (`tidy`: zero-value points and talents whose ability the rotation never casts move
-to a DPS gain or a useful talent; 2026-10-02, after the Frost winner kept a never-cast Arcane Blast for tier gating).
-The pages need race numbers for the new builds: re-race their entries afterwards (raidsim/run.py, or rebuild.py --steps raid,adopt,regen).
+--builds, for every spec whose record (`raidsim/ml/<class>-<spec slug>.json`, written by ml_pipeline.py or deep_opt.py) is complete
+(raid-first since 2026-10-02, user decision: "the recommendations should always be what offers the highest dps in a raid/group setting"):
+- the full-raid winner in the spec's phase-1 BiS set becomes the spec's derived raid build `<spec page slug>-ml-raid` (🔬, `derived:
+  raid`) when the record's full-raid comparison race (`compare_raid`: ml_pipeline.compare(..., "raid"), 100,000 fights, one fresh seed,
+  BiS set) has it 0.5% or more ahead of every build raced there (the spec's three best builds by full-raid DPS and its two best hand
+  drafts); otherwise the search confirms the current pick and no build is written. It carries `replaces` when it beats the spec's best
+  hand draft there by 2% or more (the user's rule: the hand draft stays as the alternative; the pages enforce the rule on the race
+  numbers, render_modes.DERIVED_BAR). It supersedes the spec's earlier derived raid builds (derive_raid.py's local search, earlier ML
+  builds, the old training-dummy `-ml-raid` and full-raid `-ml-parse` pair), removed and marked "superseded" in derived-raid.json so a
+  later `derive_raid.py --write` does not bring them back. It joins the specs.json builds of the entry it won in.
+- before that, points the simulator cannot tell apart follow the hand draft (`align`, in the full raid): a search winner picks
+  arbitrarily among talents that do nothing (Burning Soul and Magic Absorption measure exactly the same with common random numbers), so
+  every point is moved toward the spec's best hand draft (else its current best build) while the build stays legal and within 0.03% of
+  the winner on one seed (5,000 fights to screen the moves, the kept move confirmed over 30,000).
+Every written build then goes through filler_audit.py in the full raid (`tidy`: zero-value points and talents whose ability the rotation
+never casts move to a DPS gain or a useful talent; 2026-10-02, after the Frost winner kept a never-cast Arcane Blast for tier gating).
+The pages need race numbers for the new builds: re-race their entries afterwards (raidsim/run.py with --env environments, or rebuild.py
+--steps raid,adopt,regen).
 --rank: every spec's pre-BiS and BiS DPS, training dummy and full raid, from the records (each a search winner raced over 100,000
 fights; talents searched separately for each tier and setting, gear per spec and tier by gear_tiers.py).
 """
@@ -56,7 +55,7 @@ OUT = HERE / "ml"
 PAGE = ROOT / "_reference" / "dps-rankings.md"
 DERIVED_RAID = ROOT / "_reference" / "data" / "derived-raid.json"
 TODAY = datetime.date.today().isoformat()
-MIN_GAIN = 0.02     # the user's replacement bar (hand draft -> derived build; dummy winner -> parse build)
+MIN_GAIN = 0.02     # the user's replacement bar (hand draft -> derived build)
 GAIN_NEW = 0.005    # an ML winner becomes a build only this far ahead of every build in its comparison race (else it confirms them)
 ALIGN_TOL = 0.0003  # alignment: moves toward the hand draft keep the build within this of the winner (same seed)
 KEYS = ("bis-dummy", "bis-raid", "prebis-dummy", "prebis-raid")
@@ -131,30 +130,6 @@ def supersede(cls, spec, old_ids, by):
             DERIVED_RAID.write_text(json.dumps(d, indent=1) + "\n", encoding="utf-8")
 
 
-def parse_check(r, data):
-    """The full-raid winner against the dummy winner and the spec's existing parse builds in the full raid (BiS set, one fresh seed,
-    100,000 fights), each in its entry (a parse build's entry: the first specs.json entry listing it, the record's entries first)."""
-    MLT, repo = mlt()
-    cls = r["class"]
-    gear = json.load(open(ROOT / r["gear"]["bis"]["gear"], encoding="utf-8"))["items"]
-    rows = {k: (r["search"][k]["entry"], flat_of(r["search"][k]["winner"]["allocation"])) for k in ("bis-dummy", "bis-raid")}
-    specs = json.load(open(HERE / "specs.json", encoding="utf-8")).get(cls, {})
-    for b in data.values():
-        if b["id"].endswith("-parse") and not b["id"].endswith("-ml-parse") and SM.spec_of(cls, b) == r["spec"]:
-            ents = [e for e in list(r["entries"]) + sorted(specs) if isinstance(specs.get(e), dict) and b["id"] in specs[e].get("builds", [])]
-            if ents:
-                rows[b["id"]] = (ents[0], flat_of(b["allocation"]))
-    out = {}
-    for k, (entry, al) in rows.items():
-        sim = MLT.Sim(cls, entry, "raid", gear, repo, f"mlb-{cls}")
-        d, sd = sim.run([al], 100000, 9)[0]
-        out[k] = {"entry": entry, "dps": round(d, 2), "se": round(sd / math.sqrt(100000), 3)}
-    out["gain"] = round(out["bis-raid"]["dps"] / out["bis-dummy"]["dps"] - 1, 4) if out["bis-dummy"]["dps"] else None
-    others = [k for k in out if k not in ("bis-dummy", "bis-raid", "gain")]
-    out["vs_parse"] = round(out["bis-raid"]["dps"] / max(out[k]["dps"] for k in others) - 1, 4) if others else None
-    return out
-
-
 def cert_text(w):
     cert = w.get("certificate") or []
     if not cert:
@@ -179,48 +154,50 @@ def differs_text(w):
     return "; ".join(parts) or "the same talents"
 
 
-def make_build(r, kind):
+def make_build(r):
+    """The spec's full-raid winner as a derived raid build (raid pages rank by full-raid DPS since 2026-10-02)."""
     cls, spec = r["class"], r["spec"]
-    s = r["search"]
-    w = s["bis-dummy" if kind == "raid" else "bis-raid"]
+    w = r["search"]["bis-raid"]
     name = SM.spec_name(cls, spec)
-    where = "on the training dummy (only your own buffs)" if kind == "raid" else "in a full raid (every raid buff and debuff)"
     ru = w.get("runner_up")
-    b = {"id": f"{SM.spec_slug(cls, spec)}-ml-{'raid' if kind == 'raid' else 'parse'}",
-         "name": f"{name} — {'Raid' if kind == 'raid' else 'Full raid (parse)'} (machine-learning search)",
+    al = r.get("aligned_raid") or {}
+    b = {"id": f"{SM.spec_slug(cls, spec)}-ml-raid", "name": f"{name} — Raid (machine-learning search)",
          "role": "dps", "content": "raid", "tier": "draft", "spec": spec, "generated": TODAY, "derived": "raid",
-         "summary": (f"The {name} build the machine-learning talent search found {where} on {TODAY} in the community simulator, in the spec's "
-                     f"phase-1 BiS gear and the rotation of the entry {w['entry']} (raidsim/ml_talents.py: a random forest trained on simulated "
-                     f"builds guides a genetic search over every legal build of the spec; the finalists are raced on fresh seeds and the winner "
-                     f"is checked against all its one-move and prerequisite-chain neighbours)."),
-         "allocation": (r.get("aligned") or {}).get("allocation") if kind == "raid" and r.get("aligned") else w["winner"]["allocation"],
+         "summary": (f"The {name} build the machine-learning talent search found in a full raid (every raid buff and debuff: the group setting) "
+                     f"on {TODAY} in the community simulator, in the spec's phase-1 BiS gear and the raid rotation of the entry {w['entry']} "
+                     f"(raidsim/ml_talents.py: a random forest trained on simulated builds guides a genetic search over every legal build of the "
+                     f"spec; the finalists are raced on fresh seeds and the winner is checked against all its one-move and prerequisite-chain "
+                     f"neighbours)."),
+         "allocation": al.get("allocation") if al.get("moves") else w["winner"]["allocation"],
          "core": [], "flex": [],
-         "notes": [f"Search result: {w['winner']['split']} at {w['winner']['dps']:.1f} ± {w['winner']['se']:.2f} DPS over "
+         "notes": [f"Search result (full raid): {w['winner']['split']} at {w['winner']['dps']:.1f} ± {w['winner']['se']:.2f} DPS over "
                    f"{w['winner']['iterations']:,} fights; runner-up "
-                   + (f"{ru['split']} ({w['gap_to_runner_up']:+.2%}; {differs_text(w)})" if ru else "none")
-                   + f"; {w['simulated_builds']:,} builds simulated; certificate: {cert_text(w)}.",
+                   + (f"{ru['split']} ({w['gap_to_runner_up']:+.2%}; {differs_text(w)})" if ru and w.get("gap_to_runner_up") is not None else "none")
+                   + f"; {w.get('simulated_builds') or 0:,} builds simulated; certificate: {cert_text(w)}.",
                    "Simulator numbers are the community's model of the beta (ElliotWood/Forever 40be98e with this project's patches), not in-game "
                    "measurements; the talents are the simulator's answer for this gear and rotation."],
          "open_questions": [f"A machine-searched {name} build: check it against the community's {name} builds at launch."],
          "sources": ["https://github.com/ElliotWood/Forever"]}
-    if kind == "raid":
-        c = r["compare"]
-        if c.get("gain_vs_hand") is not None:
-            over = c["gain_vs_hand"] >= MIN_GAIN
-            b["notes"].insert(0, f"Against the best hand draft {c['best_hand']} in the same gear and fights (100,000, one seed): "
-                                 f"{c['gain_vs_hand']:+.1%}" + (" (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the "
-                                                                "alternative)." if over else " (under the 2% bar: the hand draft stays the pick)."))
-            if over:
-                b["replaces"] = c["best_hand"]
-        al = r.get("aligned") or {}
-        if al.get("moves"):
-            cost = ("the same DPS as" if al["ratio"] >= 1 else f"within {1 - al['ratio']:.2%} of")
-            b["notes"].insert(1, f"Where the simulator measured no difference, the points follow {al['target']}: {moves_text(al)} ({cost} the "
-                                 f"search winner {w['winner']['split']} on one seed, 30,000 fights).")
-        pre = winner(r, "prebis-dummy")
+    c = r["compare_raid"]
+    if c.get("gain_vs_hand") is not None:
+        over = c["gain_vs_hand"] >= MIN_GAIN
+        b["notes"].insert(0, f"Against the best hand draft {c['best_hand']} in a full raid, same gear and fights (100,000, one seed): "
+                             f"{c['gain_vs_hand']:+.1%}" + (" (over the 2% bar: this build is the spec's raid pick, the hand draft stays as the "
+                                                            "alternative)." if over else " (under the 2% bar: the hand draft stays the pick)."))
+        if over:
+            b["replaces"] = c["best_hand"]
+    if al.get("moves"):
+        cost = ("the same DPS as" if al["ratio"] >= 1 else f"within {1 - al['ratio']:.2%} of")
+        b["notes"].insert(1, f"Where the simulator measured no difference, the points follow {al['target']}: {moves_text(al)} ({cost} the "
+                             f"search winner {w['winner']['split']} on one seed, 30,000 fights).")
+    pre = winner(r, "prebis-raid")
+    if pre:
         same = flat_of(pre["allocation"]) == flat_of(w["winner"]["allocation"])
-        b["notes"].append(f"Pre-BiS gear: {pre['split']} at {pre['dps']:.1f} DPS on the dummy"
+        b["notes"].append(f"Pre-BiS gear: {pre['split']} at {pre['dps']:.1f} DPS in a full raid"
                           + (" (the same talents)." if same else " (other talents: _reference/dps-rankings.md)."))
+    dum = winner(r, "bis-dummy")
+    if dum:
+        b["notes"].append(f"Alone on the training dummy (only your own buffs) the search's best is {dum['split']} at {dum['dps']:.1f} DPS.")
     return b
 
 
@@ -231,19 +208,20 @@ def mlt():
 
 
 def align(r, data):
-    """The dummy winner with its free points moved toward the spec's best hand draft (else its current best build): one point per step,
-    the step that costs least, while the build stays legal and within ALIGN_TOL of the winner on the same seed."""
+    """The full-raid winner with its free points moved toward the spec's best hand draft (else its current best build): one point per step,
+    the step that costs least, while the build stays legal and within ALIGN_TOL of the winner on the same seed (full raid)."""
     MLT, repo = mlt()
     cls = r["class"]
-    w = r["search"]["bis-dummy"]
-    target = r["compare"].get("best_hand") or r.get("best")
+    w = r["search"]["bis-raid"]
+    c = r.get("compare_raid") or {}
+    target = c.get("best_hand") or max(((k, v["dps"]) for k, v in (c.get("dps") or {}).items() if k != "winner"), key=lambda kv: kv[1], default=(None, 0))[0]
     if target not in data:
         return {"target": None, "moves": [], "allocation": w["winner"]["allocation"]}
-    space = MLT.Space(cls, r["spec"], protect=w.get("protected") or (), any_split=r.get("any_split", False))
+    space = MLT.Space(cls, r["spec"], protect=w.get("protected") or (), any_split=r.get("any_split", False) and not r.get("deep"))
     H = flat_of(data[target]["allocation"])
     cur = flat_of(w["winner"]["allocation"])
     gear = json.load(open(ROOT / r["gear"]["bis"]["gear"], encoding="utf-8"))["items"]
-    sim = MLT.Sim(cls, w["entry"], "dummy", gear, repo, f"mla-{cls}")
+    sim = MLT.Sim(cls, w["entry"], "raid", gear, repo, f"mla-{cls}")
     base_s = sim.run([cur], 5000, 11)[0][0]
     base_c = sim.run([cur], 30000, 12)[0][0]
     moves = []
@@ -268,9 +246,9 @@ def align(r, data):
         for i in order[:3]:
             if res[i][0] < base_s * (1 - ALIGN_TOL):
                 break
-            c = sim.run([cands[i][2]], 30000, 12)[0][0]
-            if c >= base_c * (1 - ALIGN_TOL):
-                kept = (i, c)
+            cc = sim.run([cands[i][2]], 30000, 12)[0][0]
+            if cc >= base_c * (1 - ALIGN_TOL):
+                kept = (i, cc)
                 break
         if kept is None:
             break
@@ -291,82 +269,78 @@ def moves_text(al):
 
 
 def verdict(r):
-    """(write, why): an ML winner is written only GAIN_NEW or more ahead of every other build of its comparison race."""
-    c = r["compare"]["dps"]
+    """(write, why): the full-raid winner is written only GAIN_NEW or more ahead of every other build of its full-raid comparison race."""
+    c = r["compare_raid"]["dps"]
     w = c["winner"]["dps"]
     others = {k: v["dps"] for k, v in c.items() if k != "winner" and v.get("dps")}
     if not others:
         return True, ""
     k = max(others, key=others.get)
     if w < others[k] * (1 + GAIN_NEW):
-        return False, f"confirms {k} ({w / others[k] - 1:+.2%})"
+        return False, f"confirms {k} ({w / others[k] - 1:+.2%} in a full raid)"
     return True, ""
 
 
 def write_builds(classes):
     SB = _load("spec_builds_mod", ROOT / "_reference/data/spec_builds.py")
+    MP = None
     for cls in sorted({r["class"] for r in records(classes)}):
         bp = paths.builds_json("forever", cls)
         data = json.load(open(bp, encoding="utf-8"))
-        changed, dropped = False, set()
+        changed, dropped, written = False, set(), []
         for r in records([cls]):
             if not complete(r):
                 print(f"  {cls} {r['spec']}: record not complete, skipped")
                 continue
+            if "compare_raid" not in r:
+                if MP is None:
+                    MP = _load("ml_pipeline_mlb", HERE / "ml_pipeline.py")
+                    MP.R.set_game("forever")
+                r["compare_raid"] = MP.compare(r, MP.R.repo_path(argparse.Namespace(repo=None)), "raid")
+                save(r)
             by_id = {b["id"]: b for b in data["builds"]}
             ok, why = verdict(r)
             new = []
             if ok:
-                if "aligned" not in r:
-                    r["aligned"] = align(r, by_id)
+                if "aligned_raid" not in r:
+                    r["aligned_raid"] = align(r, by_id)
+                    if r["aligned_raid"].get("moves"):
+                        (r.get("tidied") or {}).pop("bis-raid", None)   # tidy_winners re-checks the aligned build the page shows
                     save(r)
-                new.append(make_build(r, "raid"))
-            if "parse" not in r:
-                r["parse"] = parse_check(r, by_id)
-                save(r)
-            p = r["parse"]
-            differs = flat_of(r["search"]["bis-raid"]["winner"]["allocation"]) != flat_of(r["search"]["bis-dummy"]["winner"]["allocation"])
-            if differs and (p["gain"] or 0) >= MIN_GAIN and (p.get("vs_parse") is None or p["vs_parse"] >= GAIN_NEW):
-                pb = make_build(r, "parse")
-                pb["notes"].insert(0, f"In a full raid it does {p['gain']:+.1%} over the training-dummy winner ({p['bis-raid']['dps']:.1f} vs "
-                                      f"{p['bis-dummy']['dps']:.1f} DPS, 100,000 fights, one seed, BiS gear)"
-                                      + (f" and {p['vs_parse']:+.1%} over the spec's best earlier parse build." if p.get("vs_parse") is not None else "."))
-                new.append(pb)
+                new.append(make_build(r))
             ids = {b["id"] for b in new}
-            # a new raid build supersedes the spec's earlier derived raid builds (derive_raid.py, an earlier ML run); parse builds of
-            # other origin stay; an earlier ML build of the spec goes whenever this run did not write its kind again
+            # a new raid build supersedes the spec's earlier derived raid builds (derive_raid.py, earlier ML builds of either kind);
+            # parse builds of other origin stay
             old = [x for x in data["builds"] if x["id"] in ids
-                   or (ok and x.get("derived") == "raid" and x.get("generated") and x.get("role") != "tank" and SM.spec_of(cls, x) == r["spec"]
-                       and not x["id"].endswith("-parse"))
-                   or (x["id"].endswith(("-ml-raid", "-ml-parse")) and SM.spec_of(cls, x) == r["spec"])]
+                   or (ok and x.get("derived") == "raid" and x.get("generated") and x.get("role") not in ("tank", "healer")
+                       and SM.spec_of(cls, x) == r["spec"] and (not x["id"].endswith("-parse") or x["id"].endswith("-ml-parse")))]
             gone = {x["id"] for x in old} - ids
             data["builds"] = [x for x in data["builds"] if x not in old] + new
             dropped |= gone
             if gone and ok:
                 supersede(cls, r["spec"], gone, new[0]["id"])
             changed = changed or bool(new or gone)
-            r["builds"] = {"written": sorted(ids), "superseded": sorted(gone), "date": TODAY, **({} if ok else {"why": why})}
+            r["builds"] = {"written": sorted(ids), "superseded": sorted(gone), "date": TODAY, "setting": "raid", **({} if ok else {"why": why})}
             save(r)
+            written += [(b["id"], r["search"]["bis-raid"]["entry"]) for b in new]
             print(f"  {cls} {r['spec']}: " + (", ".join(b["id"] for b in new) or "no build") + (f" ({why})" if not ok else "")
                   + (f" (replaces {new[0]['replaces']})" if new and new[0].get("replaces") else "")
-                  + (f"; parse: {p['gain']:+.1%} over the dummy winner in a full raid" + (f", {p['vs_parse']:+.1%} over the best parse build" if p.get("vs_parse") is not None else ""))
                   + (f"; removed {', '.join(sorted(gone))}" if gone else ""))
         if changed:
             bp.write_text(dumps(data) + "\n", encoding="utf-8")
             if dropped:
                 drop_from_entries(cls, dropped)
-            for r in records([cls]):
-                for bid in (r.get("builds") or {}).get("written", []):
-                    k = "bis-raid" if bid.endswith("-parse") else "bis-dummy"
-                    SB.add_to_entry(cls, r["search"][k]["entry"], bid)
-                    tidy(cls, r["search"][k]["entry"], bid)
+            for bid, entry in written:
+                SB.add_to_entry(cls, entry, bid)
+                tidy(cls, entry, bid)
 
 
-def tidy(cls, entry, bid):
-    """filler_audit.py on a written build: a point in a talent whose ability the rotation never casts (Arcane Blast in the Frost search
-    winner, 2026-10-02 user report), or in any talent the simulator measures at 0, moves to a DPS gain or a talent that helps in a real raid."""
+def tidy(cls, entry, bid, setting="raid"):
+    """filler_audit.py on a written build, in the full raid: a point in a talent whose ability the rotation never casts (Arcane Blast in
+    the Frost search winner, 2026-10-02 user report), or in any talent the simulator measures at 0, moves to a DPS gain or a talent that
+    helps in a real raid."""
     import subprocess
-    r = subprocess.run([sys.executable, str(HERE / "filler_audit.py"), cls, "--spec", entry, "--build", bid, "--write"],
+    r = subprocess.run([sys.executable, str(HERE / "filler_audit.py"), cls, "--spec", entry, "--build", bid, "--setting", setting, "--write"],
                        capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=str(ROOT))
     for ln in r.stdout.strip().splitlines()[-4:]:
         print("    " + ln, flush=True)
@@ -392,8 +366,8 @@ def shown(r, k):
     t = (r.get("tidied") or {}).get(k)
     if t:
         return t
-    if k == "bis-dummy" and (r.get("aligned") or {}).get("moves"):
-        return r["aligned"]   # the same build with its free points following the hand draft (what the build page shows)
+    if k == "bis-raid" and (r.get("aligned_raid") or {}).get("moves"):
+        return r["aligned_raid"]   # the same build with its free points following the hand draft (what the build page shows)
     return winner(r, k)
 
 
@@ -421,7 +395,7 @@ def tidy_winners(classes):
             if k in done:
                 continue
             w = r["search"][k]
-            src = (r.get("aligned") or {}).get("allocation") if k == "bis-dummy" and (r.get("aligned") or {}).get("moves") else w["winner"]["allocation"]
+            src = (r.get("aligned_raid") or {}).get("allocation") if k == "bis-raid" and (r.get("aligned_raid") or {}).get("moves") else w["winner"]["allocation"]
             al = flat_of(src)
             held = [t for t in al if t in abil]
             setting = "raid" if k.endswith("-raid") else "dummy"
@@ -455,24 +429,24 @@ def num(r, k):
 
 
 def tier_rows(rs_, tier):
-    return sorted((r for r in rs_ if winner(r, f"{tier}-dummy")), key=lambda r: -winner(r, f"{tier}-dummy")["dps"])
+    return sorted((r for r in rs_ if winner(r, f"{tier}-raid")), key=lambda r: -winner(r, f"{tier}-raid")["dps"])
 
 
 def table(rs_, tier, src):
     rows = tier_rows(rs_, tier)
     if not rows:
         return ["No results yet.", ""]
-    best = winner(rows[0], f"{tier}-dummy")["dps"]
-    raid = sorted((r for r in rows if winner(r, f"{tier}-raid")), key=lambda r: -winner(r, f"{tier}-raid")["dps"])
-    rank = {(r["class"], r["spec"]): i for i, r in enumerate(raid, 1)}
-    o = ["| # | Spec | Training dummy | Behind the best | Full raid | Full-raid rank | Talents: dummy / full raid |", "|---|---|---|---|---|---|---|"]
+    best = winner(rows[0], f"{tier}-raid")["dps"]
+    dummy = sorted((r for r in rows if winner(r, f"{tier}-dummy")), key=lambda r: -winner(r, f"{tier}-dummy")["dps"])
+    rank = {(r["class"], r["spec"]): i for i, r in enumerate(dummy, 1)}
+    o = ["| # | Spec | Full raid | Behind the best | Training dummy | Dummy rank | Talents: full raid / dummy |", "|---|---|---|---|---|---|---|"]
     for i, r in enumerate(rows, 1):
-        d = winner(r, f"{tier}-dummy")["dps"]
+        d = winner(r, f"{tier}-raid")["dps"]
         page = paths.rel(src, ROOT / r["class"] / "raid" / f"{SM.spec_slug(r['class'], r['spec'])}.md")
         o.append(f"| {i} | [{SM.spec_name(r['class'], r['spec'])} {r['class'].title()}]({page}) | {d:.0f} | {'best' if i == 1 else f'{d / best - 1:+.0%}'} | "
-                 f"{num(r, f'{tier}-raid')} | {rank.get((r['class'], r['spec']), '-')} | {tf(r, f'{tier}-dummy')} / {tf(r, f'{tier}-raid')} |")
-    return o + ["", "Ranked by training-dummy DPS (the project's ranking setting); *full-raid rank* is the spec's place when every raid buff "
-                    "and debuff is up, where the physical specs that live on raid buffs (warriors, hunters, Enhancement, Retribution) climb.", ""]
+                 f"{num(r, f'{tier}-dummy')} | {rank.get((r['class'], r['spec']), '-')} | {tf(r, f'{tier}-raid')} / {tf(r, f'{tier}-dummy')} |")
+    return o + ["", "Ranked by DPS in a full raid (every raid buff and debuff: the group setting the raid pages recommend on); *training "
+                    "dummy* is the same spec's best build alone with only its own buffs, and its rank there.", ""]
 
 
 def intro():
@@ -507,20 +481,20 @@ def write_rankings(classes):
     print(f"wrote {PAGE.relative_to(ROOT).as_posix()}")
     for cls in classes or SM.CLASSES:
         readme = paths.scenario_readme(cls, "raid")
-        mine = sorted((r for r in allr if r["class"] == cls), key=lambda r: -((winner(r, "bis-dummy") or winner(r, "bis-dummy-1") or {}).get("dps") or 0))
+        mine = sorted((r for r in allr if r["class"] == cls), key=lambda r: -((winner(r, "bis-raid") or {}).get("dps") or 0))
         sec = [HEAD, "", f"Pre-BiS and phase-1 BiS DPS of the class's damage specs, each in its own gear, talents searched for each tier and setting "
                           f"([every class]({paths.rel(readme, PAGE)}); generated by `_reference/data/raidsim/ml_builds.py` on {TODAY}; the "
                           f"records: `_reference/data/raidsim/ml/`).", ""]
         if not mine:
             sec += ["No damage spec of this class has a result yet.", ""]
         else:
-            sec += ["| Spec | Pre-BiS dummy | Pre-BiS raid | BiS dummy | BiS raid | Rotation (entry) | Search result |", "|---|---|---|---|---|---|---|"]
+            sec += ["| Spec | Pre-BiS raid | Pre-BiS dummy | BiS raid | BiS dummy | Rotation (entry) | Search result |", "|---|---|---|---|---|---|---|"]
             for r in mine:
-                e = (r["search"].get("bis-dummy") or r["search"].get("bis-dummy-1") or {}).get("entry", "-")
+                e = (r["search"].get("bis-raid") or {}).get("entry", "-")
                 built = (r.get("builds") or {}).get("written") or []
                 why = (r.get("builds") or {}).get("why")
-                sec.append(f"| {SM.spec_name(cls, r['spec'])} | {num(r, 'prebis-dummy')} | {num(r, 'prebis-raid')} | {num(r, 'bis-dummy')} | "
-                           f"{num(r, 'bis-raid')} | {e} | {', '.join(f'new build {b}' for b in built) or why or '-'} |")
+                sec.append(f"| {SM.spec_name(cls, r['spec'])} | {num(r, 'prebis-raid')} | {num(r, 'prebis-dummy')} | {num(r, 'bis-raid')} | "
+                           f"{num(r, 'bis-dummy')} | {e} | {', '.join(f'new build {b}' for b in built) or why or '-'} |")
             sec.append("")
         RS.splice_ordered(readme, "raid", HEAD, "\n".join(sec))
     print(f"wrote the '{HEAD[3:]}' section of {len(classes or SM.CLASSES)} research raid READMEs")

@@ -1440,13 +1440,36 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms fire-raid (+0.08%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms fire-raid (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "fire-raid",
+    "dps": 755.62,
+    "se": 0.17
+   },
+   "fire-raid": {
+    "entry": "fire-raid",
+    "dps": 755.62,
+    "se": 0.17
+   },
+   "opt-fire-raid-raid-dps": {
+    "entry": "fire-raid",
+    "dps": 755.62,
+    "se": 0.17
+   }
+  },
+  "best_hand": "fire-raid",
+  "gain_vs_hand": 0.0
  }
 }

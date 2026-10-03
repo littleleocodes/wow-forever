@@ -1539,13 +1539,31 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms arcane-blast-raid (+0.30%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms arcane-blast-raid (+0.06% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "arcane-dps",
+    "dps": 691.95,
+    "se": 0.114
+   },
+   "arcane-blast-raid": {
+    "entry": "arcane-dps",
+    "dps": 691.54,
+    "se": 0.113
+   }
+  },
+  "best_hand": "arcane-blast-raid",
+  "gain_vs_hand": 0.0006
  }
 }

@@ -30,7 +30,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "results": [
   {
    "label": "ret-raid-dps",
@@ -39,27 +39,27 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "24239": 6.0,
-    "26573": 22.0,
-    "20216": 2.0,
-    "20414": 23.0,
     "20423": 7.0,
-    "20920": 1.0,
-    "10333": 18.0
+    "20414": 23.0,
+    "10333": 18.0,
+    "20216": 2.0,
+    "26573": 22.0,
+    "24239": 6.0,
+    "20920": 1.0
    },
    "casts": {
-    "Hammer of Wrath": 6.0,
-    "Consecration": 22.0,
+    "Seal of Fury": 7.0,
+    "OtherActionManaGain": 25.0,
+    "Major Mana Potion": 1.0,
     "Auto Attack": 53.0,
+    "Judgement of Fury": 23.0,
+    "Demonic Rune": 1.0,
+    "Holy Strike": 18.0,
     "Frozen Heart of the Mountain": 1.0,
     "Divine Favor": 2.0,
-    "Major Mana Potion": 1.0,
-    "Judgement of Fury": 23.0,
-    "Seal of Fury": 7.0,
-    "Seal of Command": 1.0,
-    "OtherActionManaGain": 25.0,
-    "Demonic Rune": 1.0,
-    "Holy Strike": 18.0
+    "Consecration": 22.0,
+    "Hammer of Wrath": 6.0,
+    "Seal of Command": 1.0
    },
    "dps": 414.5034317340867,
    "dps_stdev": 20.258364739670395,

@@ -1486,12 +1486,11 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "beast-mastery-ml-parse"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms beast-mastery-raid (+0.14%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms beast-mastery-ml-parse (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
@@ -1676,5 +1675,27 @@
    "final_seed3": 0.0
   },
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 812.14,
+    "se": 0.077
+   },
+   "beast-mastery-ml-parse": {
+    "entry": "bm-raid",
+    "dps": 812.14,
+    "se": 0.077
+   },
+   "beast-mastery-raid": {
+    "entry": "bm-raid",
+    "dps": 792.81,
+    "se": 0.071
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
  }
 }

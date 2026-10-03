@@ -2,7 +2,7 @@
  "class": "paladin",
  "spec": "seal-of-fury-raid",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,27 @@
     "curve360": 381.78099191227534,
     "max": 738.4341286324335,
     "max60": 749.1940892873375
+   },
+   "raid_spell_casts": {
+    "24239": 6.0,
+    "10333": 18.0,
+    "26573": 22.0,
+    "20216": 2.0,
+    "20920": 1.0,
+    "20423": 7.0,
+    "20414": 23.0
+   },
+   "raid_casts": {
+    "Hammer of Wrath": 6.0,
+    "Holy Strike": 18.0,
+    "Consecration": 22.0,
+    "Divine Favor": 2.0,
+    "Seal of Command": 1.0,
+    "Auto Attack": 74.85733333333333,
+    "OtherActionManaGain": 93.41566666666667,
+    "Seal of Fury": 7.0,
+    "Frozen Heart of the Mountain": 1.0,
+    "Judgement of Fury": 23.0
    }
   }
  ]

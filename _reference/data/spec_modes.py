@@ -19,7 +19,7 @@ import pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
 MODES = ("leveling", "raid", "pvp")
-MODE_TITLE = {"leveling": "Leveling", "raid": "Raid (training dummy and parse)", "pvp": "PvP"}
+MODE_TITLE = {"leveling": "Leveling (solo)", "raid": "Raid (group)", "pvp": "PvP"}   # 2026-10-02: leveling ranks solo play, raid the full raid group
 SPEC_POINTS = 30
 HEAL_TREES = {"priest": ("Holy", "Discipline"), "paladin": ("Holy",), "shaman": ("Restoration",), "druid": ("Restoration",)}
 TANK_TREE = {"warrior": "Protection", "paladin": "Protection", "druid": "Feral Combat"}

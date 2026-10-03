@@ -1542,8 +1542,9 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms opt-shadow-dps-raid-dps (+0.09%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-shadow-dps-raid-dps (+0.02% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
@@ -1940,5 +1941,22 @@
    ],
    "final_seed3": 2.5431498738015534e-06
   }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "shadow-dps",
+    "dps": 726.4,
+    "se": 0.078
+   },
+   "opt-shadow-dps-raid-dps": {
+    "entry": "shadow-dps",
+    "dps": 726.24,
+    "se": 0.078
+   }
+  },
+  "best_hand": null,
+  "gain_vs_hand": null
  }
 }

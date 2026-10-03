@@ -62,20 +62,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `combat-d
 
 ## Rank among our builds and the community simulator's
 
-**2 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 10** for `combat-daggers-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | [`combat-raid`](combat-raid.md) | ours: hand draft | 16/33/2 | 425 | +0.0% | 712 | -0.0% | 0 s |
-| 2 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 17/32/2 | 419 | -1.4% | 696 | -2.3% | 0 s |
-| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -6.2% | 712 | +0.0% | 0 s |
-| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -7.3% | 702 | -1.5% | 0 s |
-| 5 | *Backstab* | community simulator | - | 371 | -12.7% | 672 | -5.6% | 0 s |
-| 6 | *Mutilate* | community simulator | - | 355 | -16.3% | 642 | -9.8% | 0 s |
-| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -17.8% | 620 | -12.9% | 0 s |
-| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -19.4% | 625 | -12.3% | 0 s |
-| 9 | *Sinister Strike* | community simulator | - | 334 | -21.4% | 629 | -11.6% | 0 s |
-| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -39.2% | 500 | -29.8% | 0 s |
+| 1 | **[`opt-combat-daggers-raid-raid-dps`](opt-combat-daggers-raid-raid-dps.md)** | ours: optimizer | 17/32/2 | 419 | +0.0% | 696 | -3.3% | 0 s |
+| 2 | [`combat-ml-raid`](combat-ml-raid.md) | ours: hand draft | 16/33/2 | 402 | -4.0% | 720 | +0.0% | 0 s |
+| 3 | [`combat-daggers-raid`](combat-daggers-raid.md) | ours: hand draft | 16/33/2 | 398 | -4.9% | 712 | -1.1% | 0 s |
+| 4 | *Combat Dual-Wield 15/33/3* | community simulator | - | 394 | -6.0% | 702 | -2.5% | 0 s |
+| 5 | *Backstab* | community simulator | - | 371 | -11.5% | 672 | -6.6% | 0 s |
+| 6 | *Mutilate* | community simulator | - | 355 | -15.1% | 642 | -10.8% | 0 s |
+| 7 | *Improved Expose Armor (SS)* | community simulator | - | 349 | -16.6% | 620 | -13.8% | 0 s |
+| 8 | *Assassination Mutilate 31/20/0* | community simulator | - | 342 | -18.3% | 625 | -13.2% | 0 s |
+| 9 | *Sinister Strike* | community simulator | - | 334 | -20.3% | 629 | -12.6% | 0 s |
+| 10 | *Subtlety Hemo 15/0/36* | community simulator | - | 258 | -38.4% | 500 | -30.5% | 0 s |
 
 ## Rotation (community simulator, training dummy)
 

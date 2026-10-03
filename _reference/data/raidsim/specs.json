@@ -131,7 +131,7 @@
         "conjuredId": 12662,
         "mhImbueId": 25122
       },
-      "builds": ["frostfire-raid"],
+      "builds": ["frostfire-raid", "frostfire-ml-raid"],
       "rotation_only": true,
       "preset_names": [],
       "rotation_note": "Frostfire Bolt mage (2026-09-28, new-builds survey): a Fire/Frost hybrid built on Frostfire Bolt, which counts as both schools. The community simulator ships Frostfire Bolt as a stub: this target runs on our implementation of it (_reference/data/raidsim/patches/), so its numbers are our model of the beta, not the community's."
@@ -332,7 +332,7 @@
         "potId": 13444,
         "conjuredId": 12662
       },
-      "builds": ["demonology-pact-raid"],
+      "builds": ["demonology-pact-raid", "demonology-ml-raid"],
       "rotation_only": true,
       "preset_names": ["Demonic Pact", "Demonic Pact 2/31/18"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs."
@@ -593,7 +593,7 @@
         "ohImbueId": 27186,
         "goblinSapper": true
       },
-      "builds": ["combat-daggers-raid", "opt-combat-daggers-raid-raid-dps", "combat-raid"],
+      "builds": ["combat-daggers-raid", "opt-combat-daggers-raid-raid-dps", "combat-ml-raid"],
       "not_measured": {"Murder": "+4% against Humanoid and Giant targets only (beta tooltip); the simulator's standard target is neither, so the removal run reads 0. Raid value = 30% of the bonus (assumed share of raid boss fights against those types: Zul'Gurub's trolls, several Molten Core and AQ40 bosses; not Blackwing Lair's dragonkin or Naxxramas's undead)."},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },
@@ -628,7 +628,7 @@
         "goblinSapper": true
       },
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches.",
-      "builds": ["assassination-mutilate-raid", "assassination-seal-fate-raid"],
+      "builds": ["assassination-mutilate-raid", "assassination-seal-fate-raid", "assassination-ml-raid"],
       "rotation_only": true,
       "preset_names": ["Mutilate", "Assassination Mutilate 31/20/0"],
       "rotation_note": "Rotation-only target (2026-09-27): a talent tree none of our scorer spec models covers. The rotation search tunes its rotation on the simulator's own builds for the tree (preset_names) or ours when listed; no talent calibration or optimizer runs. Our assassination-mutilate-raid build moves here from combat-daggers-raid (it ran under the combat rotation there)."
@@ -1012,7 +1012,7 @@
         "foodId": 13810,
         "potId": 13444
       },
-      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-parse", "enhancement-ml-raid"],
+      "builds": ["enhancement-raid-dps", "opt-enhancement-dps-raid-dps", "enhancement-ml-raid", "elemental-enhancement-ml-raid"],
       "self_buffs": {"mana_spring_totem": "TristateEffectRegular"},
       "self_note": "Training dummy (2026-09-27): the main runs of the Forever DPS specs use a boss-level dummy with only your own buffs: what the class code adds itself (talent auras, Arcane Brilliance, the priest buffs, the shout, curse, totems and imbues in the rotation), the spec's standard consumables, and self_buffs / self_debuffs: buffs this class casts on itself that the simulator only has as raid switches."
     },

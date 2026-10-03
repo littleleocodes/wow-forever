@@ -1537,7 +1537,8 @@
    "beast-marks-ml-raid"
   ],
   "superseded": [],
-  "date": "2026-10-02"
+  "date": "2026-10-03",
+  "setting": "raid"
  },
  "tidied": {
   "bis-dummy": null,
@@ -1628,5 +1629,101 @@
    "final_seed3": 0.0
   },
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "bm-raid",
+    "dps": 820.84,
+    "se": 0.079
+   },
+   "mm-hawk-raid": {
+    "entry": "bm-raid",
+    "dps": 809.85,
+    "se": 0.078
+   },
+   "bm-mm-raid": {
+    "entry": "mm-raid",
+    "dps": 784.81,
+    "se": 0.074
+   },
+   "beast-marks-ml-raid": {
+    "entry": "bm-raid",
+    "dps": 807.48,
+    "se": 0.077
+   }
+  },
+  "best_hand": "mm-hawk-raid",
+  "gain_vs_hand": 0.0136
+ },
+ "aligned_raid": {
+  "target": "mm-hawk-raid",
+  "moves": [],
+  "allocation": {
+   "Beast Mastery": [
+    [
+     "Deadly Aspects",
+     5
+    ],
+    [
+     "Endurance Training",
+     3
+    ],
+    [
+     "Focused Fire",
+     2
+    ],
+    [
+     "Unleashed Fury",
+     5
+    ],
+    [
+     "Ferocity",
+     5
+    ],
+    [
+     "Summon Hawk",
+     1
+    ],
+    [
+     "Bestial Discipline",
+     1
+    ]
+   ],
+   "Marksmanship": [
+    [
+     "Lethal Attacks",
+     5
+    ],
+    [
+     "Improved Stings",
+     3
+    ],
+    [
+     "Efficiency",
+     4
+    ],
+    [
+     "Careful Aim",
+     5
+    ],
+    [
+     "Mortal Shots",
+     5
+    ],
+    [
+     "Barrage",
+     3
+    ],
+    [
+     "Ranged Weapon Specialization",
+     4
+    ]
+   ],
+   "Survival": []
+  },
+  "split": "22/29/0",
+  "ratio": 1.0
  }
 }

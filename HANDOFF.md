@@ -170,6 +170,17 @@ Each class folder now opens with player pages and keeps the research below:
   build moved), and apl_opt.py now protects every build an entry lists. Old vs new rotations raced for every build of the 22
   re-tuned entries: no other loss above 0.5% (the Survival parse build's dummy number, -4.6%, is not its setting; full raid +0.0%).
 
+- **Shaman deep optimisation and raid-first pages** (2026-10-02/03, user requests): `raidsim/deep_opt.py shaman` and
+  `heallab/deep_heal.py shaman` (see CLAUDE.md "Deep optimisation of one class"): Elemental 31/7/13 and Restoration 0/10/41 confirmed,
+  Enhancement 19/32/0 (full raid, 801 DPS in BiS), the Elemental-Enhancement hybrid as a melee build in a raid (22/29/0); three cycles to
+  converge, two-move checks clean, final races over 200,000 fights (healer: 400 seeds). Then the user decided the raid pages rank on the
+  group setting: raid pages, recommendations, rankings and the ML builds use full-raid DPS, leveling stays solo, the dummy is the
+  "alone" number (CLAUDE.md "What the pages rank on"); every entry re-raced with the raid casts recorded, `ml_builds.py --builds` wrote
+  full-raid winners (new: Frostfire, Assassination, Combat, Enhancement, the Elemental-Enhancement hybrid, Demonology, Beast-Marks; the
+  other 19 specs' searches confirm the current pick); five of the new ones (all but the two shaman builds) and the earlier
+  `retribution-ml-raid` stay alternatives on the pages, less than 2% ahead in the standard phase-1 gear (the 2% rule). Open: the races, calibrations and adopt step still run on the dummy; the build-family matrix (each dip family with
+  its own rotation, e.g. a Summon Hawk melee hunter) is designed (see the conversation) but not built.
+
 ## Where things stand (2026-09-28)
 
 Everything below is generated and current as of this date; the pages are the source, not this summary.

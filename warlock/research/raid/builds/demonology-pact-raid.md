@@ -74,13 +74,14 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 ## Rank among our builds and the community simulator's
 
-**1 of 3** for `demonology-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**1 of 4** for `demonology-raid` by training-dummy DPS in the community simulator (ElliotWood/Forever 40be98e); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Dummy DPS | vs best | Raid DPS | vs best in a raid | Out of mana on the dummy |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 687 | +0.0% | 833 | +0.0% | 1 s |
-| 2 | *Demonic Pact 2/31/18* | community simulator | - | 664 | -3.4% | 802 | -3.7% | 1 s |
-| 3 | *Demonic Pact* | community simulator | - | 659 | -4.2% | 790 | -5.1% | 1 s |
+| 1 | **[`demonology-pact-raid`](demonology-pact-raid.md)** | ours: hand draft | 2/31/18 | 687 | +0.0% | 833 | -0.6% | 1 s |
+| 2 | [`demonology-ml-raid`](demonology-ml-raid.md) | ours: hand draft | 2/31/18 | 686 | -0.1% | 838 | +0.0% | 1 s |
+| 3 | *Demonic Pact 2/31/18* | community simulator | - | 664 | -3.4% | 802 | -4.2% | 1 s |
+| 4 | *Demonic Pact* | community simulator | - | 659 | -4.2% | 790 | -5.7% | 1 s |
 
 ## Rotation (community simulator, training dummy)
 

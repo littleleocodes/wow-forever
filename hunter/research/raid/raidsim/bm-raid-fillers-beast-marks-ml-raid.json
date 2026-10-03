@@ -1,0 +1,158 @@
+{
+ "class": "hunter",
+ "spec": "bm-raid",
+ "build": "beast-marks-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-03",
+ "tank": false,
+ "removal": {
+  "Barrage": 0.01336478509675143,
+  "Bestial Discipline": 0.009401836455178003,
+  "Careful Aim": 0.04610919613584108,
+  "Deadly Aspects": 0.04734702707521987,
+  "Efficiency": 0.01497691127658829,
+  "Endurance Training": -0.0,
+  "Ferocity": 0.024788970725327153,
+  "Focused Fire": 0.01909765242763628,
+  "Improved Stings": 0.027476981551272206,
+  "Lethal Attacks": 0.04302989954638525,
+  "Mortal Shots": 0.03880841012006753,
+  "Ranged Weapon Specialization": 0.02094627266788629,
+  "Summon Hawk": 0.1770659488094516,
+  "Unleashed Fury": 0.034501995017841236
+ },
+ "free": [
+  "Endurance Training"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ]
+  ],
+  "Survival": []
+ },
+ "allocation": {
+  "Beast Mastery": [
+   [
+    "Deadly Aspects",
+    5
+   ],
+   [
+    "Endurance Training",
+    3
+   ],
+   [
+    "Focused Fire",
+    2
+   ],
+   [
+    "Unleashed Fury",
+    5
+   ],
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Summon Hawk",
+    1
+   ],
+   [
+    "Bestial Discipline",
+    1
+   ]
+  ],
+  "Marksmanship": [
+   [
+    "Lethal Attacks",
+    5
+   ],
+   [
+    "Improved Stings",
+    3
+   ],
+   [
+    "Efficiency",
+    4
+   ],
+   [
+    "Careful Aim",
+    5
+   ],
+   [
+    "Mortal Shots",
+    5
+   ],
+   [
+    "Barrage",
+    3
+   ],
+   [
+    "Ranged Weapon Specialization",
+    4
+   ]
+  ],
+  "Survival": []
+ }
+}

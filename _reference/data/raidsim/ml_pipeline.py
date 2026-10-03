@@ -171,28 +171,36 @@ def rotations(recs, a):
         (OUT / "rotations.json").write_text(json.dumps(done, indent=1) + "\n", encoding="utf-8")
 
 
-def compare(rec, repo):
-    """The winner, the spec's best hand draft and its current pick, each in its own entry and in the BiS set, on one fresh seed."""
+def compare(rec, repo, setting="dummy"):
+    """The winner of the setting (bis-dummy or bis-raid), the spec's two best hand drafts and its current best builds (dummy: the
+    target's best; raid: the three best builds of any origin by full-raid DPS), each in its own entry and in the BiS set, on one fresh
+    seed. Raid pages rank by full-raid DPS since 2026-10-02 (user decision), so ml_builds.py decides on the raid comparison."""
     cls = rec["class"]
+    key = "dps" if setting == "dummy" else "group"
     data = {b["id"]: b for b in json.load(open(paths.builds_json("forever", cls), encoding="utf-8"))["builds"]}
     nums = rm().raid_numbers(cls)
-    hands = [b for b in data.values() if SM.mode_of(b) == "raid" and SM.spec_of(cls, b) == rec["spec"] and b.get("role") not in ("healer", "tank")
-             and not b.get("generated") and not b["id"].startswith("opt-") and not b["id"].endswith("-parse") and nums.get(b["id"], {}).get("dps")]
+    mine = [b for b in data.values() if SM.mode_of(b) == "raid" and SM.spec_of(cls, b) == rec["spec"] and b.get("role") not in ("healer", "tank")
+            and nums.get(b["id"], {}).get(key) and not nums[b["id"]].get("tank")]
+    hands = [b for b in mine if not b.get("generated") and not b["id"].startswith("opt-") and (setting == "raid" or not b["id"].endswith("-parse"))]
     gear_items = json.load(open(ROOT / rec["gear"]["bis"]["gear"], encoding="utf-8"))["items"]
-    w = rec["search"]["bis-dummy"]
+    w = rec["search"]["bis-dummy" if setting == "dummy" else "bis-raid"]
     rows = {"winner": (w["entry"], flat_of(w["winner"]["allocation"]))}
-    for b in sorted(hands, key=lambda b: -nums[b["id"]]["dps"])[:2]:
+    for b in sorted(hands, key=lambda b: -nums[b["id"]][key])[:2]:
         rows[b["id"]] = (nums[b["id"]]["entry"], R.alloc_of(b))
-    if rec["best"] in data:
+    if setting == "raid":
+        for b in sorted(mine, key=lambda b: -nums[b["id"]][key])[:3]:
+            rows.setdefault(b["id"], (nums[b["id"]]["entry"], R.alloc_of(b)))
+    elif rec["best"] in data:
         rows.setdefault(rec["best"], (rec["best_entry"], R.alloc_of(data[rec["best"]])))
     out = {}
     for label, (entry, al) in rows.items():
-        sim = MLT.Sim(cls, entry, "dummy", gear_items, repo, f"ml-cmp-{cls}")
+        sim = MLT.Sim(cls, entry, setting, gear_items, repo, f"ml-cmp-{cls}")
         d, sd = sim.run([al], 100000, 7)[0]
         out[label] = {"entry": entry, "dps": round(d, 2), "se": round(sd / 316.23, 3)}
-    hand_best = max((k for k in out if k not in ("winner", rec["best"]) or (k == rec["best"] and k in [b["id"] for b in hands])), key=lambda k: out[k]["dps"] if k != "winner" else -1, default=None)
-    return {"dps": out, "best_hand": hand_best if hand_best != "winner" else None,
-            "gain_vs_hand": round(out["winner"]["dps"] / out[hand_best]["dps"] - 1, 4) if hand_best and hand_best != "winner" else None}
+    hand_ids = {b["id"] for b in hands}
+    hand_best = max((k for k in out if k in hand_ids), key=lambda k: out[k]["dps"], default=None)
+    return {"setting": setting, "dps": out, "best_hand": hand_best,
+            "gain_vs_hand": round(out["winner"]["dps"] / out[hand_best]["dps"] - 1, 4) if hand_best else None}
 
 
 def final(rec, repo, db, zones):

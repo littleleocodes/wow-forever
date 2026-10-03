@@ -2,7 +2,7 @@
  "class": "priest",
  "spec": "shadow-dps",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,27 @@
     "curve360": 552.5309058301757,
     "max": 724.2320436065469,
     "max60": 698.2768731616126
+   },
+   "raid_spell_casts": {
+    "15473": 1.0,
+    "20554": 1.0,
+    "19280": 3.0,
+    "10947": 20.768333333333334,
+    "18807": 39.91866666666667,
+    "10894": 7.6723333333333334,
+    "1309636": 11.554666666666666
+   },
+   "raid_casts": {
+    "OtherActionManaGain": 38.78066666666667,
+    "Shadowform": 1.0,
+    "Berserking": 1.0,
+    "Devouring Plague": 3.0,
+    "Demonic Rune": 1.004,
+    "Mind Blast": 20.768333333333334,
+    "Mind Flay": 39.91866666666667,
+    "Shadow Word: Pain": 7.6723333333333334,
+    "Major Mana Potion": 0.031,
+    "Shadow Word: Death": 11.554666666666666
    }
   },
   {
@@ -110,6 +131,29 @@
     "curve360": 563.1046814287137,
     "max": 711.3859615357243,
     "max60": 698.8887688740022
+   },
+   "raid_spell_casts": {
+    "14751": 1.0,
+    "10894": 7.692333333333333,
+    "1309636": 11.386666666666667,
+    "10947": 20.956333333333333,
+    "19280": 1.0,
+    "20554": 1.0,
+    "15473": 1.0,
+    "18807": 40.870333333333335
+   },
+   "raid_casts": {
+    "Inner Focus": 1.0,
+    "Shadow Word: Pain": 7.692333333333333,
+    "Shadow Word: Death": 11.386666666666667,
+    "OtherActionManaGain": 38.172,
+    "Major Mana Potion": 0.0003333333333333333,
+    "Mind Blast": 20.956333333333333,
+    "Devouring Plague": 1.0,
+    "Berserking": 1.0,
+    "Shadowform": 1.0,
+    "Demonic Rune": 0.998,
+    "Mind Flay": 40.870333333333335
    }
   },
   {
@@ -131,6 +175,28 @@
     "curve360": 567.6553704320198,
     "max": 709.5011470975035,
     "max60": 696.4353700963808
+   },
+   "raid_spell_casts": {
+    "10947": 20.957666666666668,
+    "1309636": 11.389333333333333,
+    "20554": 1.0,
+    "10894": 7.693,
+    "15473": 1.0,
+    "18807": 40.86666666666667,
+    "14751": 1.0,
+    "19280": 1.0
+   },
+   "raid_casts": {
+    "Mind Blast": 20.957666666666668,
+    "Shadow Word: Death": 11.389333333333333,
+    "Berserking": 1.0,
+    "Demonic Rune": 0.9936666666666667,
+    "Shadow Word: Pain": 7.693,
+    "Shadowform": 1.0,
+    "Mind Flay": 40.86666666666667,
+    "OtherActionManaGain": 38.10333333333333,
+    "Inner Focus": 1.0,
+    "Devouring Plague": 1.0
    }
   },
   {
@@ -152,6 +218,29 @@
     "curve360": 489.66893509567893,
     "max": 707.921993313647,
     "max60": 696.2908033653576
+   },
+   "raid_spell_casts": {
+    "14751": 1.0,
+    "18807": 40.87533333333333,
+    "10894": 7.701,
+    "20554": 1.0,
+    "10947": 20.957666666666668,
+    "19280": 1.0,
+    "1309636": 11.385,
+    "15473": 1.0
+   },
+   "raid_casts": {
+    "Inner Focus": 1.0,
+    "Mind Flay": 40.87533333333333,
+    "Shadow Word: Pain": 7.701,
+    "OtherActionManaGain": 39.224333333333334,
+    "Berserking": 1.0,
+    "Mind Blast": 20.957666666666668,
+    "Devouring Plague": 1.0,
+    "Shadow Word: Death": 11.385,
+    "Shadowform": 1.0,
+    "Major Mana Potion": 0.9036666666666666,
+    "Demonic Rune": 1.0973333333333333
    }
   },
   {
@@ -173,6 +262,27 @@
     "curve360": 165.09374382680633,
     "max": 257.0688970418888,
     "max60": 278.18402746984447
+   },
+   "raid_spell_casts": {
+    "10894": 11.486666666666666,
+    "14751": 1.0,
+    "10060": 1.0,
+    "1309636": 12.0,
+    "20554": 1.0,
+    "19280": 1.0,
+    "10947": 17.969666666666665
+   },
+   "raid_casts": {
+    "Shadow Word: Pain": 11.486666666666666,
+    "Inner Focus": 1.0,
+    "Power Infusion": 1.0,
+    "Shadow Word: Death": 12.0,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.0056666666666667,
+    "Devouring Plague": 1.0,
+    "Mind Blast": 17.969666666666665,
+    "OtherActionManaGain": 21.263,
+    "Demonic Rune": 2.0
    }
   },
   {
@@ -194,6 +304,27 @@
     "curve360": 165.09374382680633,
     "max": 257.0688970418888,
     "max60": 278.18402746984447
+   },
+   "raid_spell_casts": {
+    "10894": 11.486666666666666,
+    "10060": 1.0,
+    "1309636": 12.0,
+    "14751": 1.0,
+    "19280": 1.0,
+    "20554": 1.0,
+    "10947": 17.969666666666665
+   },
+   "raid_casts": {
+    "Major Mana Potion": 1.0056666666666667,
+    "Shadow Word: Pain": 11.486666666666666,
+    "Power Infusion": 1.0,
+    "Demonic Rune": 2.0,
+    "Shadow Word: Death": 12.0,
+    "OtherActionManaGain": 21.263,
+    "Inner Focus": 1.0,
+    "Devouring Plague": 1.0,
+    "Berserking": 1.0,
+    "Mind Blast": 17.969666666666665
    }
   }
  ]

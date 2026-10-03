@@ -77,12 +77,13 @@ def short(text, n=260):
 
 
 # ------------------------------------------------------------------------------------------------ data
-def raid_rows(cls):
-    """Every raid entry's rows (our builds and the simulator's presets) with the entry's lines, from the raid sim reports."""
+def raid_rows(cls, setting="dummy"):
+    """Every raid entry's rows (our builds and the simulator's presets) with the entry's lines, from the raid sim reports (setting "raid":
+    the raid rotation's lines and the builds' casts in a full raid, render_rotations.spec_data)."""
     out = []
     for spec, entry in rr.raid_specs(cls):
         try:
-            d = rr.spec_data(cls, spec)
+            d = rr.spec_data(cls, spec, setting)
         except Exception:   # noqa: BLE001 - a missing report or rotation leaves the entry out
             d = None
         if not d:

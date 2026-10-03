@@ -1,10 +1,10 @@
-# Combat Rogue — Raid (training dummy and parse)
+# Combat Rogue — Raid (group)
 
-[Rogue](../README.md) > [Raid (training dummy and parse)](README.md) > Combat
+[Rogue](../README.md) > [Raid (group)](README.md) > Combat
 
 **✅ Recommended** for raid (the best rogue spec here, or within 3% of it).
 
-**[Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md)** (17/32/2) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4)
+**[Combat Daggers](../research/raid/builds/combat-daggers-raid.md)** (16/33/2) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
 
 ## How to play
 
@@ -12,10 +12,9 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Expose Armor**: keep it on the target, when you have 5 combo points
+1. **Eviscerate** when you have 4 combo points and Slice and Dice is active
 2. **Adrenaline Rush**
-3. **Eviscerate** when you have 5 combo points and Slice and Dice is active
-4. **Backstab**
+3. **Backstab**
 
 **Backstab** is your filler: cast it whenever nothing above is ready.
 
@@ -30,22 +29,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 419 |
-| Parse (a full raid: every raid buff and debuff) | 696 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 712 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 398 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 383 | 672 | [16/33/2](https://talentsforever.com/rogue/60/005303121001-32330310001515231-002-4) |
-| Phase 1 BiS | 425 | 720 | [16/33/2](https://talentsforever.com/rogue/60/005303121001-32330310001515231-002-4) |
+| Pre-BiS | 672 | 383 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-32330310001515231-002-4) |
+| Phase 1 BiS | 720 | 425 | [16/33/2](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4) |
 
 - **Pre-BiS gear** (average item level 63.3): Head: Darkmantle Cap; Neck: Mark of Fordring; Shoulders: Theramore Pauldrons; Back: Howler's Furs; Chest: Dawn Armor; Wrist: Forest Stalker's Bracers; Hands: Theramore Gloves; Waist: Assassin's Waistguard; Legs: Plaguehound Leggings; Feet: Darkmantle Footpads; Finger: Don Julio's Band; Finger: Ferocious Watcher's Signet; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Premier High Warlord's Razor; Off hand: Premier High Warlord's Blade; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 64.7): Head: Bloodfang Hood; Neck: Onyxia Tooth Pendant; Shoulders: Shadowcraft Spaulders; Back: Cape of the Black Baron; Chest: Shadowcraft Tunic; Wrist: Shadowcraft Bracers; Hands: Aged Core Leather Gloves; Waist: Shadowcraft Belt; Legs: Shadowcraft Pants; Feet: Shadowcraft Boots; Finger: Band of Accuria; Finger: Blackstone Ring; Trinket: Blackhand's Breadth; Trinket: Hand of Justice; Main hand: Perdition's Blade; Off hand: Core Hound Tooth; Ranged/relic: Striker's Mark
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 419 → mana -0% → armor +17% → physical +32% → spell +1% → everything else +16% → raid 696
+Dummy 398 → mana -0% → armor +20% → physical +33% → spell +1% → everything else +25% → raid 712
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -53,19 +52,19 @@ Dummy 419 → mana -0% → armor +17% → physical +32% → spell +1% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 465 | 429 | 419 | 413 | 421 |
+| 448 | 409 | 398 | 392 | 400 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-parse.md) (20/31/0) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32303301000514231--4).
+**Alone instead of in a raid?** [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2) does 419 DPS on the training dummy with only your own buffs (+5% over this build there) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4).
 
 ## Other builds of this spec
 
-- [Combat — Raid](../research/raid/builds/combat-raid.md) (16/33/2, 425 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303121001-32330310001515231-002-4)
-- [Combat Daggers](../research/raid/builds/combat-daggers-raid.md) (16/33/2, 398 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323102-30531300001515231-002-4)
-- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 394 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--4)
-- [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 376 DPS on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
+- [Combat — Raid](../research/raid/builds/combat-ml-raid.md) (16/33/2, 720 DPS in a full raid, 402 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/00530310301-30531300001515231-002-4)
+- [Raid daggers](../research/raid/builds/opt-combat-daggers-raid-raid-dps.md) (17/32/2, 696 DPS in a full raid, 419 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323121-30531300000515231-002-4)
+- [Combat Swords](../research/raid/builds/combat-swords-raid.md) (19/32/0, 687 DPS in a full raid, 394 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005303125-32403300001515131--4)
+- [Raid Combat swords](../research/raid/builds/opt-combat-swords-raid-raid-dps.md) (20/31/0, 682 DPS in a full raid, 376 on the dummy) — [open the talent tree](https://talentsforever.com/rogue/60/005323101005-32502300000514231--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

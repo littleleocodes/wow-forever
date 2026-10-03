@@ -1503,12 +1503,11 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "survival-ml-parse"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms survival-raid (+0.00%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms melee-survival-raid (-0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
@@ -1627,5 +1626,32 @@
   },
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "melee-dps",
+    "dps": 990.27,
+    "se": 0.154
+   },
+   "melee-survival-raid": {
+    "entry": "melee-dps",
+    "dps": 990.28,
+    "se": 0.154
+   },
+   "survival-ml-parse": {
+    "entry": "melee-dps",
+    "dps": 990.28,
+    "se": 0.154
+   },
+   "survival-raid": {
+    "entry": "melee-dps",
+    "dps": 967.71,
+    "se": 0.153
+   }
+  },
+  "best_hand": "melee-survival-raid",
+  "gain_vs_hand": -0.0
  }
 }

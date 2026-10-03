@@ -735,6 +735,8 @@ def run_environments(cls, spec, a, repo):
     bench_dir = repo / "bench"
     bench_dir.mkdir(exist_ok=True)
     dps = {b["label"]: {} for b in builds}
+    raid_casts = {b["label"]: ({}, {}) for b in builds}   # (spell casts, action casts) in the raid: the raid pages' rotation (2026-10-02)
+    names = spell_names(repo, cls)
     for env, cfg in envs.items():
         cfg_path = bench_dir / f"{cls}-{spec}-{env}.json"
         cfg_path.write_text(json.dumps(cfg, indent=1), encoding="utf-8")
@@ -747,7 +749,10 @@ def run_environments(cls, spec, a, repo):
                 d = json.loads(line)
                 if d["label"] in dps:
                     dps[d["label"]][env] = d.get("dps")
-    rows = [{"label": b["label"], "split": b["split"], "ours": b["ours"], "dps": dps[b["label"]]} for b in builds]
+                    if env == "raid":
+                        raid_casts[d["label"]] = action_casts(d.get("actions"), names)
+    rows = [{"label": b["label"], "split": b["split"], "ours": b["ours"], "dps": dps[b["label"]],
+             "raid_spell_casts": raid_casts[b["label"]][0], "raid_casts": raid_casts[b["label"]][1]} for b in builds]
     out = {"class": cls, "spec": spec, "game": GAME, "date": datetime.date.today().isoformat(), "sim": {"repo": str(repo), "commit": git_commit(repo), "gear_raid": entry["gear"], "gear_max": gear_max,
                                                                                                           "iterations": a.iterations, "seed": a.seed}, "environments": ENVIRONMENTS, "results": rows}
     print(f"== {cls} {spec} environments (gear raid {pathlib.Path(entry['gear']).name}, max {pathlib.Path(gear_max).name}):")

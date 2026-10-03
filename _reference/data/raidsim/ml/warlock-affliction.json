@@ -1478,13 +1478,36 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms opt-affliction-raid-raid-dps (+0.21%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-affliction-raid-raid-dps (+0.19% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "affliction-raid",
+    "dps": 769.76,
+    "se": 0.13
+   },
+   "affliction-dot-raid": {
+    "entry": "affliction-raid",
+    "dps": 763.08,
+    "se": 0.129
+   },
+   "opt-affliction-raid-raid-dps": {
+    "entry": "affliction-raid",
+    "dps": 768.3,
+    "se": 0.13
+   }
+  },
+  "best_hand": "affliction-dot-raid",
+  "gain_vs_hand": 0.0088
  }
 }

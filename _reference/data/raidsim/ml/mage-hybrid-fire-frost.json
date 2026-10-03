@@ -1618,10 +1618,12 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [],
+  "written": [
+   "frostfire-ml-raid"
+  ],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms frostfire-raid (+0.08%)"
+  "date": "2026-10-03",
+  "setting": "raid"
  },
  "tidied": {
   "bis-dummy": {
@@ -1776,163 +1778,6 @@
     "Blast Wave"
    ],
    "final_seed3": 0.0002642647491279959
-  },
-  "bis-raid": {
-   "allocation": {
-    "Arcane": [
-     [
-      "Improved Channeling",
-      4
-     ]
-    ],
-    "Fire": [
-     [
-      "Wake of Fire",
-      1
-     ],
-     [
-      "Improved Fireball",
-      5
-     ],
-     [
-      "Ignite",
-      5
-     ],
-     [
-      "Improved Flamestrike",
-      1
-     ],
-     [
-      "Pyroblast",
-      1
-     ],
-     [
-      "Improved Scorch",
-      3
-     ],
-     [
-      "Hot Streak",
-      1
-     ],
-     [
-      "Critical Mass",
-      3
-     ],
-     [
-      "Fire Power",
-      5
-     ],
-     [
-      "Combustion",
-      1
-     ],
-     [
-      "Burning Soul",
-      3
-     ],
-     [
-      "Flame Throwing",
-      2
-     ]
-    ],
-    "Frost": [
-     [
-      "Elemental Precision",
-      5
-     ],
-     [
-      "Ice Shards",
-      5
-     ],
-     [
-      "Piercing Ice",
-      3
-     ],
-     [
-      "Frost Channeling",
-      3
-     ]
-    ]
-   },
-   "split": "4/31/16",
-   "moves": [
-    {
-     "round": 1,
-     "kind": "utility",
-     "from": "Arctic Reach",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 2,
-     "kind": "utility",
-     "from": "Frostbite",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 3,
-     "kind": "utility",
-     "from": "Ice Lance",
-     "to": "Improved Channeling",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "interrupt"
-    },
-    {
-     "round": 4,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 5,
-     "kind": "utility",
-     "from": "Flame Throwing",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 6,
-     "kind": "utility",
-     "from": "Impact",
-     "to": "Burning Soul",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "threat"
-    },
-    {
-     "round": 7,
-     "kind": "utility",
-     "from": "Impact",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    },
-    {
-     "round": 8,
-     "kind": "utility",
-     "from": "Impact",
-     "to": "Flame Throwing",
-     "seed1": 0.0,
-     "seed2": 0.0,
-     "utility": "range"
-    }
-   ],
-   "abilities_never_cast": [
-    "Ice Lance"
-   ],
-   "final_seed3": 0.0
   },
   "prebis-dummy": {
    "allocation": {
@@ -2306,6 +2151,141 @@
     "Ice Lance"
    ],
    "final_seed3": 0.0
-  }
+  },
+  "bis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frostfire-raid",
+    "dps": 739.29,
+    "se": 0.23
+   },
+   "frostfire-raid": {
+    "entry": "frostfire-raid",
+    "dps": 727.6,
+    "se": 0.228
+   }
+  },
+  "best_hand": "frostfire-raid",
+  "gain_vs_hand": 0.0161
+ },
+ "aligned_raid": {
+  "target": "frostfire-raid",
+  "moves": [
+   {
+    "from": "Improved Fireball",
+    "to": "Burning Soul",
+    "ratio": 1.0
+   },
+   {
+    "from": "Flame Throwing",
+    "to": "Burning Soul",
+    "ratio": 1.0
+   },
+   {
+    "from": "Impact",
+    "to": "Burning Soul",
+    "ratio": 1.0
+   },
+   {
+    "from": "Frostbite",
+    "to": "Improved Channeling",
+    "ratio": 1.0
+   },
+   {
+    "from": "Ice Lance",
+    "to": "Improved Channeling",
+    "ratio": 1.0
+   },
+   {
+    "from": "Arctic Reach",
+    "to": "Improved Channeling",
+    "ratio": 1.0
+   }
+  ],
+  "allocation": {
+   "Arcane": [
+    [
+     "Improved Channeling",
+     4
+    ]
+   ],
+   "Fire": [
+    [
+     "Wake of Fire",
+     1
+    ],
+    [
+     "Improved Fireball",
+     4
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Flame Throwing",
+     1
+    ],
+    [
+     "Impact",
+     2
+    ],
+    [
+     "Burning Soul",
+     3
+    ],
+    [
+     "Improved Flamestrike",
+     1
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Scorch",
+     3
+    ],
+    [
+     "Hot Streak",
+     1
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     5
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Elemental Precision",
+     5
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Piercing Ice",
+     3
+    ],
+    [
+     "Frost Channeling",
+     3
+    ]
+   ]
+  },
+  "split": "4/31/16",
+  "ratio": 1.0
  }
 }

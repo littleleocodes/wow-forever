@@ -1741,16 +1741,48 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "retribution-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms retribution-ml-raid (+0.18% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "ret-dps",
+    "dps": 1042.35,
+    "se": 0.159
+   },
+   "ret-full-buffs-raid": {
+    "entry": "ret-dps",
+    "dps": 1037.26,
+    "se": 0.159
+   },
+   "ret-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 1008.78,
+    "se": 0.165
+   },
+   "retribution-ml-raid": {
+    "entry": "ret-dps",
+    "dps": 1040.51,
+    "se": 0.158
+   },
+   "opt-ret-dps-raid-dps": {
+    "entry": "ret-dps",
+    "dps": 1035.78,
+    "se": 0.157
+   }
+  },
+  "best_hand": "ret-full-buffs-raid",
+  "gain_vs_hand": 0.0049
  }
 }

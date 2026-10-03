@@ -2,7 +2,7 @@
  "class": "shaman",
  "spec": "enhancement-dps",
  "game": "forever",
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "sim": {
   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\forever-repo",
   "commit": "40be98e",
@@ -89,6 +89,34 @@
     "curve360": 370.14647535723554,
     "max": 744.9795684534637,
     "max60": 797.8170258973564
+   },
+   "raid_spell_casts": {
+    "15208": 17.802333333333333,
+    "17364": 42.556,
+    "425336": 1.0,
+    "20572": 2.0,
+    "10414": 15.140333333333333,
+    "29228": 12.293,
+    "25359": 1.0,
+    "10438": 4.0,
+    "408345": 15.871,
+    "25361": 1.0
+   },
+   "raid_casts": {
+    "Lightning Bolt": 17.802333333333333,
+    "Stormstrike": 42.556,
+    "Auto Attack": 64.348,
+    "Rage of the Farseer": 1.0,
+    "Blood Fury": 2.0,
+    "Earth Shock": 15.140333333333333,
+    "Flame Shock": 12.293,
+    "Talisman of Ephemeral Power": 2.0,
+    "Grace of Air Totem": 1.0,
+    "Searing Totem": 4.0,
+    "Fire Nova": 15.871,
+    "Strength of Earth Totem": 1.0,
+    "OtherActionManaGain": 89.72266666666667,
+    "Major Mana Potion": 1.7556666666666667
    }
   },
   {
@@ -110,48 +138,130 @@
     "curve360": 373.98100724078995,
     "max": 755.4878064796046,
     "max60": 807.9146209040648
-   }
-  },
-  {
-   "label": "enhancement-ml-parse",
-   "split": "18/33/0",
-   "ours": true,
-   "dps": {
-    "dummy": 408.3374892397522,
-    "dummy60": 458.503571303583,
-    "ladder-mana": 416.0865692078663,
-    "ladder-armor": 541.9142172838671,
-    "ladder-physical": 612.3448078222514,
-    "ladder-spell": 640.6711618823716,
-    "raid": 797.9062854905699,
-    "curve60": 444.8878434605212,
-    "curve120": 424.93889621953684,
-    "curve180": 408.3374892397522,
-    "curve240": 394.3711247030842,
-    "curve360": 367.5991258049562,
-    "max": 797.9062854905699,
-    "max60": 850.8668311157794
+   },
+   "raid_spell_casts": {
+    "25361": 1.0,
+    "408345": 15.870666666666667,
+    "29228": 12.285333333333334,
+    "425336": 1.0,
+    "20572": 2.0,
+    "17364": 42.537333333333336,
+    "15208": 17.76,
+    "10438": 4.0,
+    "10414": 15.151333333333334,
+    "25359": 1.0
+   },
+   "raid_casts": {
+    "Strength of Earth Totem": 1.0,
+    "Fire Nova": 15.870666666666667,
+    "Flame Shock": 12.285333333333334,
+    "Major Mana Potion": 1.7556666666666667,
+    "Rage of the Farseer": 1.0,
+    "Blood Fury": 2.0,
+    "OtherActionManaGain": 89.67866666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "Stormstrike": 42.537333333333336,
+    "Auto Attack": 64.15566666666666,
+    "Lightning Bolt": 17.76,
+    "Searing Totem": 4.0,
+    "Earth Shock": 15.151333333333334,
+    "Grace of Air Totem": 1.0
    }
   },
   {
    "label": "enhancement-ml-raid",
-   "split": "20/31/0",
+   "split": "19/32/0",
    "ours": true,
    "dps": {
-    "dummy": 414.1686873164056,
-    "dummy60": 463.23969687297097,
-    "ladder-mana": 431.07885269516555,
-    "ladder-armor": 558.3711459281881,
-    "ladder-physical": 627.5739509414531,
-    "ladder-spell": 657.2388322268836,
-    "raid": 774.2142825111434,
-    "curve60": 458.7694339789068,
-    "curve120": 434.7371706873689,
-    "curve180": 414.1686873164056,
-    "curve240": 395.13413757371603,
-    "curve360": 368.1706475509574,
-    "max": 774.2142825111434,
-    "max60": 824.734677797191
+    "dummy": 409.27374461343777,
+    "dummy60": 458.0728274189126,
+    "ladder-mana": 427.30000583769674,
+    "ladder-armor": 553.7239275894626,
+    "ladder-physical": 625.5814259472857,
+    "ladder-spell": 655.0070441646028,
+    "raid": 800.5251216525199,
+    "curve60": 454.8830285694857,
+    "curve120": 430.19611609240036,
+    "curve180": 409.27374461343777,
+    "curve240": 389.70069509291807,
+    "curve360": 363.43410772032985,
+    "max": 800.5251216525199,
+    "max60": 862.0206097626566
+   },
+   "raid_spell_casts": {
+    "17364": 43.47633333333333,
+    "15208": 17.483,
+    "10414": 19.886,
+    "10438": 3.998,
+    "25359": 1.0,
+    "25361": 1.0,
+    "29228": 11.733666666666666,
+    "425336": 1.0,
+    "20572": 2.0,
+    "408345": 21.576333333333334
+   },
+   "raid_casts": {
+    "Stormstrike": 43.47633333333333,
+    "Lightning Bolt": 17.483,
+    "Earth Shock": 19.886,
+    "Auto Attack": 64.39466666666667,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.998,
+    "Grace of Air Totem": 1.0,
+    "Strength of Earth Totem": 1.0,
+    "Flame Shock": 11.733666666666666,
+    "Rage of the Farseer": 1.0,
+    "Blood Fury": 2.0,
+    "Major Mana Potion": 1.9926666666666666,
+    "Fire Nova": 21.576333333333334,
+    "OtherActionManaGain": 93.633
+   }
+  },
+  {
+   "label": "elemental-enhancement-ml-raid",
+   "split": "22/29/0",
+   "ours": true,
+   "dps": {
+    "dummy": 387.3526924861182,
+    "dummy60": 433.77273839083836,
+    "ladder-mana": 411.7557256542997,
+    "ladder-armor": 532.8337818494448,
+    "ladder-physical": 601.7752846107027,
+    "ladder-spell": 630.1055888114659,
+    "raid": 763.6193277256093,
+    "curve60": 422.83772513160335,
+    "curve120": 406.2890190903541,
+    "curve180": 387.3526924861182,
+    "curve240": 361.24469832396915,
+    "curve360": 338.61914054950233,
+    "max": 763.6193277256093,
+    "max60": 800.9766296277245
+   },
+   "raid_spell_casts": {
+    "17364": 43.16566666666667,
+    "10414": 19.858,
+    "25359": 1.0,
+    "29228": 11.638666666666667,
+    "10438": 3.997333333333333,
+    "408345": 20.996,
+    "20572": 2.0,
+    "25361": 1.0,
+    "15208": 13.671666666666667
+   },
+   "raid_casts": {
+    "Stormstrike": 43.16566666666667,
+    "OtherActionManaGain": 88.99133333333333,
+    "Earth Shock": 19.858,
+    "Talisman of Ephemeral Power": 2.0,
+    "Grace of Air Totem": 1.0,
+    "Flame Shock": 11.638666666666667,
+    "Auto Attack": 60.68,
+    "Searing Totem": 3.997333333333333,
+    "Fire Nova": 20.996,
+    "Blood Fury": 2.0,
+    "Major Mana Potion": 1.9973333333333334,
+    "Strength of Earth Totem": 1.0,
+    "Lightning Bolt": 13.671666666666667
    }
   },
   {
@@ -173,6 +283,34 @@
     "curve360": 366.2792486574615,
     "max": 754.5087497852585,
     "max60": 807.2399055510589
+   },
+   "raid_spell_casts": {
+    "10414": 15.057666666666666,
+    "15208": 17.722333333333335,
+    "408345": 15.711666666666666,
+    "25359": 1.0,
+    "20572": 2.0,
+    "17364": 42.53266666666667,
+    "425336": 1.0003333333333333,
+    "25361": 1.0,
+    "29228": 12.293,
+    "10438": 4.0
+   },
+   "raid_casts": {
+    "Earth Shock": 15.057666666666666,
+    "Lightning Bolt": 17.722333333333335,
+    "Fire Nova": 15.711666666666666,
+    "Grace of Air Totem": 1.0,
+    "Blood Fury": 2.0,
+    "OtherActionManaGain": 89.75366666666666,
+    "Stormstrike": 42.53266666666667,
+    "Rage of the Farseer": 1.0003333333333333,
+    "Strength of Earth Totem": 1.0,
+    "Auto Attack": 64.102,
+    "Flame Shock": 12.293,
+    "Major Mana Potion": 1.974,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 4.0
    }
   },
   {
@@ -194,6 +332,34 @@
     "curve360": 361.0545846800915,
     "max": 754.5729646996151,
     "max60": 806.058241062084
+   },
+   "raid_spell_casts": {
+    "408345": 16.467,
+    "25361": 1.0,
+    "17364": 44.36666666666666,
+    "425336": 1.0,
+    "10414": 21.023,
+    "15208": 17.280666666666665,
+    "25359": 1.0,
+    "29228": 11.577666666666667,
+    "20572": 2.0,
+    "10438": 4.0
+   },
+   "raid_casts": {
+    "Fire Nova": 16.467,
+    "Strength of Earth Totem": 1.0,
+    "Stormstrike": 44.36666666666666,
+    "Rage of the Farseer": 1.0,
+    "Earth Shock": 21.023,
+    "Talisman of Ephemeral Power": 2.0,
+    "Lightning Bolt": 17.280666666666665,
+    "Major Mana Potion": 1.9216666666666666,
+    "Grace of Air Totem": 1.0,
+    "Flame Shock": 11.577666666666667,
+    "Blood Fury": 2.0,
+    "Searing Totem": 4.0,
+    "OtherActionManaGain": 91.23666666666666,
+    "Auto Attack": 63.65133333333333
    }
   },
   {
@@ -215,6 +381,34 @@
     "curve360": 334.12848510164116,
     "max": 733.5060569759951,
     "max60": 813.1178075709055
+   },
+   "raid_spell_casts": {
+    "25361": 1.0,
+    "15208": 17.746,
+    "408345": 12.206333333333333,
+    "10438": 3.9996666666666667,
+    "10414": 14.396666666666667,
+    "29228": 11.194333333333333,
+    "17364": 42.562,
+    "425336": 1.0,
+    "20572": 2.0,
+    "25359": 1.0
+   },
+   "raid_casts": {
+    "Strength of Earth Totem": 1.0,
+    "Lightning Bolt": 17.746,
+    "Fire Nova": 12.206333333333333,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.9996666666666667,
+    "Earth Shock": 14.396666666666667,
+    "Flame Shock": 11.194333333333333,
+    "Stormstrike": 42.562,
+    "Rage of the Farseer": 1.0,
+    "Auto Attack": 64.45,
+    "Blood Fury": 2.0,
+    "OtherActionManaGain": 86.36633333333333,
+    "Major Mana Potion": 1.9993333333333334,
+    "Grace of Air Totem": 1.0
    }
   }
  ]

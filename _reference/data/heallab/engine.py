@@ -19,6 +19,8 @@ import re
 
 import tables as T
 
+DAMAGE_ONLY = re.compile(r"damage spell|offensive spell", re.I)   # tooltips of talents that cannot touch a heal
+
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 
@@ -181,6 +183,10 @@ class BaseHealer:
         for name, rank in self.alloc.items():
             if name in self.MECHANICS:
                 continue   # hand-coded below; the parsed numbers are not applied twice
+            text = self.parsed.get(name, {}).get("text", "")
+            if DAMAGE_ONLY.search(text) and not re.search(r"heal", text, re.I):
+                continue   # a damage-spell talent does nothing for heals (2026-10-02: Elemental Focus's clearcasting proc had parsed as
+                #            a permanent -100% mana cost on every spell, so the shaman's deep talent search found "free" heals)
             for e in self.parsed.get(name, {}).get("effects", []):
                 vals = e.get("values") or [e.get("per_rank", 0.0) * r for r in range(1, 6)]
                 v = vals[min(rank, len(vals)) - 1] if vals else 0.0

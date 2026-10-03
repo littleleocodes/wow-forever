@@ -1546,13 +1546,31 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms subtlety-hemo-raid (+0.00%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms subtlety-hemo-raid (+0.44% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "subtlety-raid",
+    "dps": 674.14,
+    "se": 0.085
+   },
+   "subtlety-hemo-raid": {
+    "entry": "subtlety-raid",
+    "dps": 671.21,
+    "se": 0.084
+   }
+  },
+  "best_hand": "subtlety-hemo-raid",
+  "gain_vs_hand": 0.0044
  }
 }

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "rows": [
   {
    "class": "hunter",
@@ -121,19 +121,6 @@
    "advice": "turn it on before the pull"
   },
   {
-   "class": "hunter",
-   "entry": "bm-raid",
-   "build": "beast-marks-ml-raid",
-   "spec": "Hybrid Beast Mastery/Marksmanship",
-   "talent": "Trueshot Aura",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0156,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "turn it on before the pull"
-  },
-  {
    "class": "mage",
    "entry": "frost-raid",
    "build": "opt-frost-raid-raid-dps-extwc",
@@ -144,7 +131,7 @@
    "removal_loss": 0.0,
    "kind": "situational",
    "needed_by": [],
-   "advice": "a defensive spell: cast it when you need it, it is not part of the damage rotation"
+   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation"
   },
   {
    "class": "priest",
@@ -172,7 +159,7 @@
    "removal_loss": 0.0,
    "kind": "situational",
    "needed_by": [],
-   "advice": "a defensive spell: cast it when you need it, it is not part of the damage rotation"
+   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation"
   },
   {
    "class": "warlock",
@@ -258,6 +245,36 @@
    "class": "warlock",
    "entry": "demonology-raid",
    "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1056,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
    "spec": "Demonology",
    "talent": "Soul Link",
    "ranks": 1,

@@ -2,7 +2,7 @@
  "dummy": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "commit": "40be98e",
   "setting": "dummy",
   "tank": false,
@@ -10,13 +10,18 @@
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "ml: Elemental",
+    "label": "deep: Elemental (dummy)",
+    "talents": "5500301303113051-052-23305",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+   },
+   {
+    "label": "deep: Elemental (raid)",
     "talents": "5500301302113151-052-32305",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
    },
    {
-    "label": "ml: Hybrid Elemental/Enhancement",
-    "talents": "450032132011304-255030001031002",
+    "label": "deep: Hybrid Elemental/Enhancement (dummy)",
+    "talents": "550330131010304-055032201101002",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
    },
    {
@@ -26,6 +31,10 @@
    {
     "label": "sim preset: Elemental 31/6/14",
     "talents": "2505301300123051-0500001-053050001"
+   },
+   {
+    "label": "elemental-raid-dps",
+    "talents": "550230130210304-255000001340002"
    }
   ],
   "iterations": 3000,
@@ -66,7 +75,16 @@
   ],
   "final": {
    "dummy": {
-    "ml: Elemental": {
+    "deep: Elemental (dummy)": {
+     "before": 423.20479610678944,
+     "after": 441.12465857346376,
+     "base": 423.20479610678944,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.07560199999999999,
+     "oom_after": 0.07560199999999999
+    },
+    "deep: Elemental (raid)": {
      "before": 423.09056260247525,
      "after": 440.94962617723036,
      "base": 423.09056260247525,
@@ -75,14 +93,14 @@
      "oom_before": 0.08267469999999998,
      "oom_after": 0.08267469999999998
     },
-    "ml: Hybrid Elemental/Enhancement": {
-     "before": 424.93165777113666,
-     "after": 437.2806549480058,
-     "base": 424.93165777113666,
+    "deep: Hybrid Elemental/Enhancement (dummy)": {
+     "before": 426.2968998136063,
+     "after": 437.6081503525818,
+     "base": 426.2968998136063,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0032973000000000004,
-     "oom_after": 0.0032973000000000004
+     "oom_before": 0.00130229999995,
+     "oom_after": 0.00130229999995
     },
     "opt-elemental-dps-raid-dps": {
      "before": 423.422670776831,
@@ -101,16 +119,25 @@
      "after_value": null,
      "oom_before": 0.15144729999994985,
      "oom_after": 0.15144729999994985
+    },
+    "elemental-raid-dps": {
+     "before": 426.4008104248588,
+     "after": 437.41731697461086,
+     "base": 426.4008104248588,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0018645999991999999,
+     "oom_after": 0.0018645999991999999
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 7
  },
  "raid": {
   "class": "shaman",
   "spec": "elemental-dps",
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "commit": "40be98e",
   "setting": "raid",
   "tank": false,
@@ -118,13 +145,18 @@
   "start": "ui\\specs\\shaman\\elemental\\apls\\forever.apl.json",
   "builds": [
    {
-    "label": "ml: Elemental",
+    "label": "deep: Elemental (dummy)",
+    "talents": "5500301303113051-052-23305",
+    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
+   },
+   {
+    "label": "deep: Elemental (raid)",
     "talents": "5500301302113151-052-32305",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json"
    },
    {
-    "label": "ml: Hybrid Elemental/Enhancement",
-    "talents": "450032132011304-255030001031002",
+    "label": "deep: Hybrid Elemental/Enhancement (dummy)",
+    "talents": "550330131010304-055032201101002",
     "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-hybrid-elemental-enhancement-bis.gear.json"
    },
    {
@@ -134,6 +166,10 @@
    {
     "label": "sim preset: Elemental 31/6/14",
     "talents": "2505301300123051-0500001-053050001"
+   },
+   {
+    "label": "elemental-raid-dps",
+    "talents": "550230130210304-255000001340002"
    }
   ],
   "iterations": 3000,
@@ -166,7 +202,16 @@
   ],
   "final": {
    "raid": {
-    "ml: Elemental": {
+    "deep: Elemental (dummy)": {
+     "before": 553.8824232487998,
+     "after": 555.5623400904874,
+     "base": 553.8824232487998,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.00633719999975,
+     "oom_after": 0.00633719999975
+    },
+    "deep: Elemental (raid)": {
      "before": 553.9456069424149,
      "after": 555.5056586467806,
      "base": 553.9456069424149,
@@ -175,14 +220,14 @@
      "oom_before": 0.0066457999998,
      "oom_after": 0.0066457999998
     },
-    "ml: Hybrid Elemental/Enhancement": {
-     "before": 555.4824838289032,
-     "after": 555.7070214439726,
-     "base": 555.4824838289032,
+    "deep: Hybrid Elemental/Enhancement (dummy)": {
+     "before": 554.6998444921827,
+     "after": 554.9423559203495,
+     "base": 554.6998444921827,
      "before_value": null,
      "after_value": null,
-     "oom_before": 0.0025817,
-     "oom_after": 0.0025817
+     "oom_before": 0.0003996,
+     "oom_after": 0.0003996
     },
     "opt-elemental-dps-raid-dps": {
      "before": 553.0329712963513,
@@ -201,10 +246,19 @@
      "after_value": null,
      "oom_before": 0.04253949999995,
      "oom_after": 0.04253949999995
+    },
+    "elemental-raid-dps": {
+     "before": 554.917111747437,
+     "after": 555.0558608740997,
+     "base": 554.917111747437,
+     "before_value": null,
+     "after_value": null,
+     "oom_before": 0.0002118999997,
+     "oom_after": 0.0002118999997
     }
    }
   },
   "first_date": "2026-09-28",
-  "passes": 4
+  "passes": 7
  }
 }

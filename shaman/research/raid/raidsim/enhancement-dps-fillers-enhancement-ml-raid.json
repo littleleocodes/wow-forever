@@ -1,0 +1,185 @@
+{
+ "class": "shaman",
+ "spec": "enhancement-dps",
+ "build": "enhancement-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-03",
+ "tank": false,
+ "removal": {
+  "Ancestral Knowledge": 0.01535940214520326,
+  "Call of Flame": 0.02747718841268232,
+  "Convection": 0.02021083392692591,
+  "Elemental Devastation": 0.03107926940488681,
+  "Elemental Focus": 0.021749988434416778,
+  "Elemental Weapons": 0.005407004707415397,
+  "Flurry": 0.08201292303945351,
+  "Improved Fire Nova": 0.03296255253109648,
+  "Improved Stormstrike": 0.024856582800983018,
+  "Maelstrom Weapon": 0.3522287277601407,
+  "Mental Dexterity": 0.06061979772282089,
+  "Mental Quickness": 0.027676949009457164,
+  "Rage of the Farseer": 0.01986391480853078,
+  "Reverberation": 0.012889512918782264,
+  "Shamanistic Focus": 0.06976519684410654,
+  "Stormstrike": 0.1706258102659287,
+  "Thundering Strikes": 0.04121495279148413
+ },
+ "free": [],
+ "kept_for_rotation": [
+  "Maelstrom Weapon"
+ ],
+ "active_never_worth": [],
+ "abilities_never_cast": [],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Improved Fire Nova",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": []
+ },
+ "allocation": {
+  "Elemental": [
+   [
+    "Convection",
+    5
+   ],
+   [
+    "Reverberation",
+    5
+   ],
+   [
+    "Call of Flame",
+    3
+   ],
+   [
+    "Elemental Devastation",
+    3
+   ],
+   [
+    "Elemental Focus",
+    1
+   ],
+   [
+    "Improved Fire Nova",
+    2
+   ]
+  ],
+  "Enhancement": [
+   [
+    "Thundering Strikes",
+    5
+   ],
+   [
+    "Ancestral Knowledge",
+    5
+   ],
+   [
+    "Mental Dexterity",
+    3
+   ],
+   [
+    "Elemental Weapons",
+    2
+   ],
+   [
+    "Shamanistic Focus",
+    1
+   ],
+   [
+    "Flurry",
+    5
+   ],
+   [
+    "Stormstrike",
+    1
+   ],
+   [
+    "Mental Quickness",
+    2
+   ],
+   [
+    "Improved Stormstrike",
+    2
+   ],
+   [
+    "Maelstrom Weapon",
+    5
+   ],
+   [
+    "Rage of the Farseer",
+    1
+   ]
+  ],
+  "Restoration": []
+ }
+}

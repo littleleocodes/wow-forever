@@ -1676,11 +1676,11 @@
   "vs_parse": null
  },
  "builds": {
-  "written": [
-   "destruction-ml-raid"
-  ],
+  "written": [],
   "superseded": [],
-  "date": "2026-10-02"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms destruction-ml-raid (+0.48% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
@@ -1981,5 +1981,32 @@
    ],
    "final_seed3": 0.0
   }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 744.52,
+    "se": 0.134
+   },
+   "destruction-incinerate-raid": {
+    "entry": "incinerate-raid",
+    "dps": 647.16,
+    "se": 0.079
+   },
+   "destruction-ml-raid": {
+    "entry": "sb-raid",
+    "dps": 740.96,
+    "se": 0.133
+   },
+   "opt-fire-destro-raid-raid-dps": {
+    "entry": "fire-destro-raid",
+    "dps": 716.66,
+    "se": 0.126
+   }
+  },
+  "best_hand": "destruction-incinerate-raid",
+  "gain_vs_hand": 0.1504
  }
 }

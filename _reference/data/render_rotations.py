@@ -148,15 +148,20 @@ def spell_ids(x):
 
 
 @functools.lru_cache(maxsize=None)
-def spec_data(cls, spec):
-    """Everything the raid pages need for one spec model: the rotation lines and, per build, its lines, casts and damage."""
+def spec_data(cls, spec, setting="dummy"):
+    """Everything the raid pages need for one spec model: the rotation lines and, per build, its lines, casts and damage.
+    setting "raid" (2026-10-02, user decision: raid pages are about the group setting): the entry's raid rotation, each line's use from
+    the build's casts in the environments run's raid column (falls back to the dummy race's casts for a report without them), rows ranked
+    by full-raid DPS. Tanks always use the race (their race runs in the raid setting)."""
     entry = dict(raid_specs(cls))[spec]
     rep = _json(paths.raidsim_dir(cls) / f"{spec}.json")
     if not rep:
         return None
     env = _json(paths.raidsim_dir(cls) / f"{spec}-environments.json") or {"results": []}
     env_by = {x["label"]: x["dps"] for x in env["results"]}
-    apl = json.load(open(raidrun().apl_path(entry, repo()), encoding="utf-8"))   # ours when apl_opt.py found a better one
+    env_casts = {x["label"]: x.get("raid_spell_casts") for x in env["results"] if x.get("raid_spell_casts")}
+    raid_view = setting == "raid" and not entry.get("tank") and bool(env_casts)
+    apl = json.load(open(raidrun().apl_path(entry, repo(), "raid" if raid_view else None), encoding="utf-8"))   # ours when apl_opt.py found a better one
     N = names()
     pm = presets_mod()
     lines = [{"text": pm.action(it.get("action", {}), N), "ids": spell_ids(it.get("action", {})),
@@ -170,7 +175,7 @@ def spec_data(cls, spec):
     for x in rep["results"]:
         if x.get("removal") or x["label"].startswith("cand-") or not x.get("dps"):
             continue
-        casts = {int(k): v for k, v in (x.get("spell_casts") or {}).items()}
+        casts = {int(k): v for k, v in ((env_casts.get(x["label"]) if raid_view else None) or x.get("spell_casts") or {}).items()}
         alloc = decode(cls, x.get("talents"))
         per_line = []
         for ln in lines:
@@ -183,9 +188,10 @@ def spec_data(cls, spec):
         rows.append({"label": x["label"], "by": made_by(cls, x["label"]), "split": x.get("split") or "", "dps": x["dps"], "value": x.get("value"),
                      "threat": x.get("threat"), "dtps": x.get("dtps"), "oom": x.get("oom_seconds"), "shares": x.get("shares") or {},
                      "raid": (env_by.get(x["label"]) or {}).get("raid"), "lines": per_line})
-    key = (lambda r: -(r["value"] or 0)) if tank else (lambda r: -(r["dps"] or 0))
+    key = (lambda r: -(r["value"] or 0)) if tank else ((lambda r: -(r["raid"] or r["dps"] or 0)) if raid_view else (lambda r: -(r["dps"] or 0)))
     rows.sort(key=key)
-    return {"spec": spec, "entry": entry, "apl": raidrun().apl_label(entry, repo()), "lines": lines, "pre": pre, "rows": rows, "tank": tank,
+    return {"spec": spec, "entry": entry, "apl": raidrun().apl_label(entry, repo(), "raid" if raid_view else None), "lines": lines, "pre": pre, "rows": rows,
+            "tank": tank, "view": "raid" if raid_view else "dummy",
             "setting": rep["sim"].get("setting", "raid"), "commit": rep["sim"].get("commit", "?"), "iterations": rep["sim"].get("iterations"), "duration": dur}
 
 

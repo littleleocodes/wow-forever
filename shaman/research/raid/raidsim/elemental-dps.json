@@ -29,7 +29,7 @@
   "seed": 1,
   "duration": 180.0
  },
- "date": "2026-10-02",
+ "date": "2026-10-03",
  "results": [
   {
    "label": "elemental-raid-dps",
@@ -38,24 +38,24 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "10438": 3.0,
     "529": 2.0936666666666666,
     "10605": 7.389,
-    "29228": 15.476333333333333,
+    "10391": 69.83833333333334,
     "15208": 1.0,
     "20554": 1.0,
-    "10391": 69.83833333333334
+    "10438": 3.0,
+    "29228": 15.476333333333333
    },
    "casts": {
-    "Searing Totem": 3.0,
-    "Major Mana Potion": 1.9956666666666667,
     "Lightning Bolt": 72.932,
     "Chain Lightning": 7.389,
-    "Flame Shock": 15.476333333333333,
-    "OtherActionManaGain": 3.9956666666666667,
     "Talisman of Ephemeral Power": 2.0,
-    "Demonic Rune": 2.0,
-    "Berserking": 1.0
+    "Berserking": 1.0,
+    "Searing Totem": 3.0,
+    "OtherActionManaGain": 3.9956666666666667,
+    "Flame Shock": 15.476333333333333,
+    "Major Mana Potion": 1.9956666666666667,
+    "Demonic Rune": 2.0
    },
    "dps": 437.7400381003313,
    "dps_stdev": 22.661605159094837,
@@ -67,7 +67,7 @@
    "error": null,
    "scorer": 0.695226897666564,
    "shares": {
-    "Lightning Bolt": 0.7100066004370957,
+    "Lightning Bolt": 0.7100066004370956,
     "Flame Shock": 0.1717541637102796,
     "Attack": 0.061484117657405093,
     "Chain Lightning": 0.05675511819521963
@@ -86,26 +86,26 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "29228": 14.972333333333333,
     "20554": 1.0,
-    "10438": 3.0,
-    "1238300": 13.99,
-    "10605": 7.027,
-    "529": 20.363666666666667,
     "15208": 1.0,
-    "10391": 42.937333333333335
+    "1238300": 13.99,
+    "29228": 14.972333333333333,
+    "10391": 42.937333333333335,
+    "529": 20.363666666666667,
+    "10605": 7.027,
+    "10438": 3.0
    },
    "casts": {
-    "Flame Shock": 14.972333333333333,
+    "Major Mana Potion": 1.999,
     "Berserking": 1.0,
-    "Searing Totem": 3.0,
-    "Lava Burst": 13.99,
-    "Chain Lightning": 7.027,
-    "Lightning Bolt": 64.301,
     "OtherActionManaGain": 3.999,
-    "Talisman of Ephemeral Power": 2.0,
+    "Lightning Bolt": 64.301,
+    "Lava Burst": 13.99,
+    "Flame Shock": 14.972333333333333,
     "Demonic Rune": 2.0,
-    "Major Mana Potion": 1.999
+    "Chain Lightning": 7.027,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.0
    },
    "dps": 439.8319006671122,
    "dps_stdev": 20.769603700633755,
@@ -137,25 +137,25 @@
    "ours": true,
    "measured": true,
    "spell_casts": {
-    "20554": 1.0,
-    "529": 20.363666666666667,
-    "15208": 1.0,
-    "10438": 3.0,
     "1238300": 13.99,
+    "529": 20.363666666666667,
     "10391": 42.937333333333335,
+    "10438": 3.0,
+    "20554": 1.0,
     "10605": 7.027,
+    "15208": 1.0,
     "29228": 14.972333333333333
    },
    "casts": {
-    "Berserking": 1.0,
-    "Lightning Bolt": 64.301,
-    "Searing Totem": 3.0,
-    "Lava Burst": 13.99,
+    "OtherActionManaGain": 3.999,
     "Demonic Rune": 2.0,
     "Talisman of Ephemeral Power": 2.0,
+    "Lava Burst": 13.99,
     "Major Mana Potion": 1.999,
+    "Lightning Bolt": 64.301,
+    "Searing Totem": 3.0,
+    "Berserking": 1.0,
     "Chain Lightning": 7.027,
-    "OtherActionManaGain": 3.999,
     "Flame Shock": 14.972333333333333
    },
    "dps": 439.8319006671122,
@@ -187,26 +187,26 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "29228": 15.162333333333333,
-    "10391": 39.63166666666667,
     "20554": 1.0,
-    "10605": 6.99,
+    "10391": 39.63166666666667,
     "529": 24.642666666666667,
-    "1238300": 13.993666666666666,
     "15208": 1.0,
-    "10438": 3.0
+    "1238300": 13.993666666666666,
+    "10605": 6.99,
+    "10438": 3.0,
+    "29228": 15.162333333333333
    },
    "casts": {
-    "Flame Shock": 15.162333333333333,
-    "Demonic Rune": 2.0,
-    "Lightning Bolt": 65.27433333333333,
-    "Berserking": 1.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Chain Lightning": 6.99,
-    "Lava Burst": 13.993666666666666,
     "OtherActionManaGain": 3.9996666666666667,
+    "Berserking": 1.0,
+    "Major Mana Potion": 1.9996666666666667,
+    "Lightning Bolt": 65.27433333333333,
+    "Talisman of Ephemeral Power": 2.0,
+    "Lava Burst": 13.993666666666666,
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 6.99,
     "Searing Totem": 3.0,
-    "Major Mana Potion": 1.9996666666666667
+    "Flame Shock": 15.162333333333333
    },
    "dps": 419.2437961797231,
    "dps_stdev": 19.417722452459387,
@@ -218,7 +218,7 @@
    "error": null,
    "scorer": null,
    "shares": {
-    "Lightning Bolt": 0.5454161287398763,
+    "Lightning Bolt": 0.5454161287398762,
     "Lava Burst": 0.17045839663077875,
     "Flame Shock": 0.16781482659072247,
     "Attack": 0.06395332638774533,
@@ -237,26 +237,26 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "10438": 3.0,
     "29228": 15.011,
+    "15208": 1.0,
+    "10605": 6.633333333333334,
     "20554": 1.0,
     "1238300": 13.954333333333333,
-    "10605": 6.633333333333334,
+    "10438": 3.0,
     "529": 31.192333333333334,
-    "10391": 35.111,
-    "15208": 1.0
+    "10391": 35.111
    },
    "casts": {
-    "Searing Totem": 3.0,
     "Flame Shock": 15.011,
-    "OtherActionManaGain": 4.0,
+    "Lightning Bolt": 67.30333333333334,
+    "Demonic Rune": 2.0,
+    "Chain Lightning": 6.633333333333334,
     "Berserking": 1.0,
     "Major Mana Potion": 2.0,
+    "OtherActionManaGain": 4.0,
     "Talisman of Ephemeral Power": 2.0,
     "Lava Burst": 13.954333333333333,
-    "Chain Lightning": 6.633333333333334,
-    "Demonic Rune": 2.0,
-    "Lightning Bolt": 67.30333333333333
+    "Searing Totem": 3.0
    },
    "dps": 434.48036008245043,
    "dps_stdev": 20.877843132153664,
@@ -287,24 +287,24 @@
    "split": "",
    "ours": false,
    "spell_casts": {
-    "15208": 1.0,
-    "10438": 3.0,
-    "10391": 45.046,
-    "529": 35.285333333333334,
     "20554": 1.0,
+    "10391": 45.046,
+    "29228": 15.52,
+    "529": 35.285333333333334,
     "10605": 7.305666666666666,
-    "29228": 15.52
+    "15208": 1.0,
+    "10438": 3.0
    },
    "casts": {
+    "Berserking": 1.0,
     "Demonic Rune": 2.0,
     "Lightning Bolt": 81.33133333333333,
-    "OtherActionManaGain": 4.0,
-    "Talisman of Ephemeral Power": 2.0,
-    "Searing Totem": 3.0,
-    "Berserking": 1.0,
-    "Major Mana Potion": 2.0,
+    "Flame Shock": 15.52,
     "Chain Lightning": 7.305666666666666,
-    "Flame Shock": 15.52
+    "OtherActionManaGain": 4.0,
+    "Major Mana Potion": 2.0,
+    "Talisman of Ephemeral Power": 2.0,
+    "Searing Totem": 3.0
    },
    "dps": 420.70488727115946,
    "dps_stdev": 20.78439908516033,

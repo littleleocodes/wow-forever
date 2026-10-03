@@ -1477,13 +1477,36 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms arms-battle-raid (+0.00%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms arms-community-parse (+0.00% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "arms-battle-raid",
+    "dps": 816.32,
+    "se": 0.178
+   },
+   "arms-battle-raid": {
+    "entry": "arms-battle-raid",
+    "dps": 754.76,
+    "se": 0.139
+   },
+   "arms-community-parse": {
+    "entry": "arms-battle-raid",
+    "dps": 816.32,
+    "se": 0.178
+   }
+  },
+  "best_hand": "arms-battle-raid",
+  "gain_vs_hand": 0.0816
  }
 }

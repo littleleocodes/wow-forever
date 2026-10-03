@@ -1,34 +1,29 @@
-# Arms Warrior — Raid (training dummy and parse)
+# Arms Warrior — Raid (group)
 
-[Warrior](../README.md) > [Raid (training dummy and parse)](README.md) > Arms
+[Warrior](../README.md) > [Raid (group)](README.md) > Arms
 
 **✅ Recommended** for raid (the best warrior spec here, or within 3% of it).
 
-**[Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md)** (34/17/0) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-550500000002--4)
+**[Arms — Full raid](../research/raid/builds/arms-community-parse.md)** (37/14/0) — [open the talent tree](https://talentsforever.com/warrior/60/30305213132515201-05050103--4)
+
+> 🔬 Derived build: searched in the community's raid simulator from the spec's best build. A model of the beta, to check at launch.
 
 ## How to play
 
 **Before the pull:** **Battle Stance**.
 
-**Keep up all fight:** **Battle Shout**.
-
 **Then press the first one that is ready**, top to bottom:
 
-1. **Battle Stance**: keep it on the target
-2. **Overpower** when it lights up (after the target dodges)
-3. **Execute** when the target is below 20% health
-4. **Bloodrage**
-5. **Whirlwind**
-6. **Rend**: keep it on the target
-7. **Slam**
-8. **Sunder Armor**: stack it to 5 on the target
+1. **Overpower** when it lights up (after the target dodges)
+2. **Slam**
+3. **Rend**: keep it on the target
+4. **Execute** when the target is below 20% health
+5. **Mortal Strike**
+6. **Spearing Strike**
+7. **Hamstring**
+8. **Bloodrage**
 
-**Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
-
-- **Berserker Stance**: part of the rotation (about 77 times a fight)
-- **Spearing Strike**: a cooldown, use it at the start of the fight and again whenever it is ready (about 5 times a fight)
-- **Recklessness**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
-- Use your trinkets, your racial and a potion together with your big cooldowns.
+**Bloodrage** is your filler: cast it whenever nothing above is ready.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -36,22 +31,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 391 |
-| Parse (a full raid: every raid buff and debuff) | 740 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 792 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 387 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 331 | 682 | this build |
-| Phase 1 BiS | 404 | 816 | this build |
+| Pre-BiS | 682 | 331 | [34/17/0](https://talentsforever.com/warrior/60/02305213032514201-151500120002--4) |
+| Phase 1 BiS | 816 | 404 | this build |
 
 - **Pre-BiS gear** (average item level 62.9): Head: Lionheart Helm; Neck: Mark of Fordring; Shoulders: Theramore Pauldrons; Back: Deathguard's Cloak; Chest: Timbermaw Tunic; Wrist: Deeprock Bracers; Hands: Theramore Gauntlets; Waist: Radiant Girdle of the Dawn; Legs: Titanic Leggings; Feet: Scalegut Treaders; Finger: Signet Ring of the Bronze Dragonflight; Finger: Ferocious Watcher's Signet; Trinket: Hand of Justice; Trinket: Blackhand's Breadth; Main hand: The Unstoppable Force; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 65.1): Head: Crown of Destruction; Neck: Mark of Fordring; Shoulders: Theramore Pauldrons; Back: Deathguard's Cloak; Chest: Darkmantle Tunic; Wrist: Wristguards of Stability; Hands: Gauntlets of Might; Waist: Onslaught Girdle; Legs: Titanic Leggings; Feet: Boots of Heroism; Finger: Quick Strike Ring; Finger: Signet Ring of the Bronze Dragonflight; Trinket: Hand of Justice; Trinket: Rune of the Guard Captain; Main hand: Bonereaver's Edge; Ranged/relic: Premier High Warlord's Recurve
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 391 → mana +0% → armor +19% → physical +47% → spell +0% → everything else +24% → raid 740
+Dummy 387 → mana +0% → armor +23% → physical +53% → spell +0% → everything else +28% → raid 792
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -59,12 +54,16 @@ Dummy 391 → mana +0% → armor +19% → physical +47% → spell +0% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 368 | 372 | 372 | 373 | 374 |
+| 365 | 374 | 374 | 376 | 377 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Arms — Full raid](../research/raid/builds/arms-community-parse.md) (37/14/0) — [open the talent tree](https://talentsforever.com/warrior/60/30305213132515201-05050103--4).
+**Alone instead of in a raid?** [Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md) (34/17/0) does 391 DPS on the training dummy with only your own buffs (+1% over this build there) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-550500000002--4).
+
+## Other builds of this spec
+
+- [Arms — Battle Stance](../research/raid/builds/arms-battle-raid.md) (34/17/0, 740 DPS in a full raid, 391 on the dummy) — [open the talent tree](https://talentsforever.com/warrior/60/023052131325052-550500000002--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

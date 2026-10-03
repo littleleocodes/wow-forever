@@ -1,8 +1,10 @@
-# Marksmanship Hunter — Raid (training dummy and parse)
+# Marksmanship Hunter — Raid (group)
 
-[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Marksmanship
+[Hunter](../README.md) > [Raid (group)](README.md) > Marksmanship
 
-**[Marksmanship without a pet](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md)** (5/38/8) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4)
+**[Marksmanship — Full raid](../research/raid/builds/marksmanship-ml-parse.md)** (7/44/0) — [open the talent tree](https://talentsforever.com/hunter/60/510001-1053552511523051--4)
+
+> 🔬 Derived build: searched in the community's raid simulator from the spec's best build. A model of the beta, to check at launch.
 
 ## How to play
 
@@ -12,10 +14,13 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Rapid Fire**
-2. **Aimed Shot**
-3. **Arcane Shot**
-4. **Serpent Sting**: keep it on the target
+1. **Aimed Shot**
+2. **Rapid Fire**
+3. **Serpent Sting**: keep it on the target
+4. **Arcane Shot**
+5. **Sniper Shot**
+
+**Sniper Shot** is your filler: cast it whenever nothing above is ready.
 
 *The simulator's full rotation for this build, with every condition: [research rotation page](../research/raid/rotation.md).*
 
@@ -23,22 +28,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 446 |
-| Parse (a full raid: every raid buff and debuff) | 898 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 935 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 446 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 437 | 834 | [21/30/0](https://talentsforever.com/hunter/60/52030005041001-005355001150005--4) |
-| Phase 1 BiS | 452 | 910 | [11/40/0](https://talentsforever.com/hunter/60/5501-305355041150305--4) |
+| Pre-BiS | 834 | 437 | [9/42/0](https://talentsforever.com/hunter/60/54-3053550511503051--4) |
+| Phase 1 BiS | 910 | 452 | [5/46/0](https://talentsforever.com/hunter/60/5-3053552511523051--4) (ties this build) |
 
 - **Pre-BiS gear** (average item level 63.1): Head: Black Dragonscale Helm; Neck: Pendant of Celerity; Shoulders: Theramore Pauldrons; Back: Earthweave Cloak; Chest: Magister's Robes; Wrist: Rockfury Bracers; Hands: Beaststalker's Gloves; Waist: Knowledge of the Timbermaw; Legs: Outrider's Chain Leggings; Feet: Sorcerer's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 65.8): Head: Black Dragonscale Helm; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Earthweave Cloak; Chest: Magister's Robes; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Dragonstalker's Legguards; Feet: Giantstalker's Boots; Finger: Leafre's Ring of Precise Spell Power; Finger: Leafre's Ring of Precise Spell Power; Trinket: Blackhand's Breadth; Trinket: Royal Seal of Eldre'Thalas; Main hand: Barbarous Blade; Ranged/relic: Rhok'delar, Longbow of the Ancient Keepers
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 446 → mana +32% → armor +37% → physical +6% → spell +11% → everything else +15% → raid 898
+Dummy 446 → mana +35% → armor +38% → physical +7% → spell +9% → everything else +21% → raid 935
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -46,18 +51,17 @@ Dummy 446 → mana +32% → armor +37% → physical +6% → spell +11% → every
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 619 | 462 | 446 | 407 | 390 |
+| 619 | 461 | 446 | 410 | 391 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Marksmanship — Full raid](../research/raid/builds/marksmanship-ml-parse.md) (7/44/0) — [open the talent tree](https://talentsforever.com/hunter/60/510001-1053552511523051--4).
-
 ## Other builds of this spec
 
-- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 447 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--4)
-- [Marksmanship — Lone Wolf](../research/raid/builds/mm-lone-wolf-raid.md) (11/40/0, 443 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355201152305--4)
-- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 425 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--4)
+- [Marksmanship without a pet](../research/raid/builds/opt-mm-lonewolf-raid-raid-dps.md) (5/38/8, 898 DPS in a full raid, 446 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005355051150305-50003-4)
+- [Marksmanship — Raid](../research/raid/builds/marksmanship-ml-raid.md) (11/40/0, 894 DPS in a full raid, 447 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355041150305--4)
+- [Marksmanship — Lone Wolf](../research/raid/builds/mm-lone-wolf-raid.md) (11/40/0, 834 DPS in a full raid, 443 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5501-305355201152305--4)
+- [Marksmanship with Beast Mastery support](../research/raid/builds/bm-mm-full-buffs-raid.md) (21/30/0, 771 DPS in a full raid, 425 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/53200005050001-005155000150305--4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

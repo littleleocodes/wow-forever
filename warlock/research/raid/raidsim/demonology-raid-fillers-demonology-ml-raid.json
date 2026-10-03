@@ -1,0 +1,201 @@
+{
+ "class": "warlock",
+ "spec": "demonology-raid",
+ "build": "demonology-ml-raid",
+ "setting": "raid",
+ "date": "2026-10-03",
+ "tank": false,
+ "removal": {
+  "Agonizing Flames": 0.05634544789979801,
+  "Bane": 0.10734314448430138,
+  "Decimation": 0.008887900946685567,
+  "Demonic Brand": 2.607418248246063e-05,
+  "Demonic Embrace": -0.0,
+  "Demonic Knowledge": 0.04879896970140685,
+  "Demonic Pact": 0.10617001278219662,
+  "Demonic Sacrifice": 0.10617001278219662,
+  "Fel Vitality": 0.015288932273147648,
+  "Improved Corruption": 0.022084243169787854,
+  "Improved Sayaad": 0.0024025551957999047,
+  "Improved Shadow Bolt": 0.05986751678617519,
+  "Master Demonologist": 0.07494694229033405,
+  "Master Summoner": -0.0,
+  "Ruin": 0.04940004775169793,
+  "Soul Link": 0.02902676549075789,
+  "Suppression": 0.010901026908499145,
+  "Unholy Power": 0.0070176289229910704
+ },
+ "free": [
+  "Demonic Brand",
+  "Demonic Embrace",
+  "Master Summoner"
+ ],
+ "kept_for_rotation": [],
+ "active_never_worth": [],
+ "abilities_never_cast": [
+  "Demonic Sacrifice",
+  "Soul Link"
+ ],
+ "moves": [],
+ "final_seed3": 0.0,
+ "start": {
+  "Affliction": [
+   [
+    "Suppression",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Sayaad",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ },
+ "allocation": {
+  "Affliction": [
+   [
+    "Suppression",
+    1
+   ],
+   [
+    "Improved Corruption",
+    1
+   ]
+  ],
+  "Demonology": [
+   [
+    "Demonic Embrace",
+    2
+   ],
+   [
+    "Unholy Power",
+    5
+   ],
+   [
+    "Fel Vitality",
+    3
+   ],
+   [
+    "Improved Sayaad",
+    3
+   ],
+   [
+    "Demonic Sacrifice",
+    1
+   ],
+   [
+    "Master Summoner",
+    2
+   ],
+   [
+    "Decimation",
+    2
+   ],
+   [
+    "Demonic Brand",
+    3
+   ],
+   [
+    "Soul Link",
+    1
+   ],
+   [
+    "Demonic Knowledge",
+    3
+   ],
+   [
+    "Master Demonologist",
+    5
+   ],
+   [
+    "Demonic Pact",
+    1
+   ]
+  ],
+  "Destruction": [
+   [
+    "Improved Shadow Bolt",
+    5
+   ],
+   [
+    "Bane",
+    5
+   ],
+   [
+    "Ruin",
+    5
+   ],
+   [
+    "Agonizing Flames",
+    3
+   ]
+  ]
+ }
+}

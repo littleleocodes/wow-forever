@@ -7630,7 +7630,7 @@
   }
  },
  "last_run": {
-  "date": "2026-10-02T14:58:53",
+  "date": "2026-10-03T09:22:22",
   "classes": [
    "mage",
    "priest",
@@ -7651,7 +7651,7 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 835,
+  "seconds": 847,
   "refresh": null,
   "regen_log": [
    {
@@ -7677,7 +7677,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "mage: raid sim section written (4 specs)",
      "priest: raid sim section written (2 specs)",
@@ -7782,15 +7782,15 @@
     "seconds": 1,
     "tail": [
      "rogue/classic-baseline: 5 build pages + README.md",
-     "rogue: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "rogue: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "priest/classic-baseline: 4 build pages + README.md",
      "priest: 15 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "shaman/classic-baseline: 5 build pages + README.md",
      "shaman: 21 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "mage/classic-baseline: 7 build pages + README.md",
-     "mage: 22 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "mage: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "warlock/classic-baseline: 4 build pages + README.md",
-     "warlock: 23 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
+     "warlock: 24 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs",
      "druid/classic-baseline: 7 build pages + README.md",
      "druid: 20 Forever build pages in leveling/builds, raid/builds, pvp/builds + scenario READMEs"
     ],
@@ -7799,7 +7799,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage priest warlock hunter warrior rogue paladin shaman druid",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "wrote _reference\\new-builds-survey.md",
      "wrote the New spells and builds section of 9 raid READMEs"
@@ -7827,7 +7827,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 154,
+    "seconds": 158,
     "tail": [
      "| fire-leveling -> level-20 build (0/0/11) | +0.7% | +3.6% | +42.8% | +44.0% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
      "| fire-leveling -> level-30 build (0/10/11) | +0.7% | +3.6% | +14.9% | +20.7% | +52.7% | +54.5% | +55.5% | +56.5% | +60.1% | +63.0% | +64.3% |",
@@ -7867,7 +7867,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
     "rc": 0,
-    "seconds": 83,
+    "seconds": 84,
     "tail": [
      "| affliction-leveling -> level-20 build (11/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
      "| affliction-leveling -> level-30 build (21/0/0) | +0.3% | +2.3% | +4.6% | +6.9% | +16.6% | +18.0% | +19.9% | +21.0% | +21.7% | +22.1% | +23.2% |",
@@ -7887,7 +7887,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py hunter --write",
     "rc": 0,
-    "seconds": 34,
+    "seconds": 35,
     "tail": [
      "| bm-leveling -> level-20 build (0/11/0) | +0.2% | +1.9% | +6.0% | +8.3% | +11.0% | +14.2% | +16.1% | +19.3% | +20.7% | +22.4% | +27.6% |",
      "| bm-leveling -> level-30 build (21/0/0) | +0.4% | +2.2% | +3.6% | +10.7% | +12.2% | +12.9% | +17.4% | +19.4% | +20.5% | +24.7% | +26.2% |",
@@ -7927,7 +7927,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py rogue --write",
     "rc": 0,
-    "seconds": 94,
+    "seconds": 97,
     "tail": [
      "| combat-daggers-raid -> level-20 build (0/9/2) | +1.6% | +3.7% | +13.6% | +15.7% | +18.6% | +21.7% | +23.0% | +29.3% | +32.9% | +34.1% | +36.0% |",
      "| combat-daggers-raid -> level-30 build (3/16/2) | +1.6% | +5.1% | +8.5% | +16.2% | +20.2% | +22.7% | +25.9% | +27.3% | +32.9% | +33.9% | +35.6% |",
@@ -7947,7 +7947,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py paladin --write",
     "rc": 0,
-    "seconds": 62,
+    "seconds": 63,
     "tail": [
      "| ret-dps -> level-20 build (0/0/11) | +0.7% | +4.7% | +16.9% | +24.3% | +28.0% | +32.3% | +34.9% | +35.3% | +36.1% | +38.8% | +39.3% |",
      "| ret-dps -> level-30 build (0/0/21) | +0.7% | +4.1% | +15.7% | +24.4% | +28.3% | +32.4% | +35.0% | +35.3% | +36.1% | +38.8% | +39.3% |",
@@ -8061,7 +8061,7 @@
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote _reference\\launch-checklist.md (262 per-build questions)"
+     "wrote _reference\\launch-checklist.md (265 per-build questions)"
     ],
     "stderr": []
    },

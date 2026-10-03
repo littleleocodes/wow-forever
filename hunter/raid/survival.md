@@ -1,10 +1,10 @@
-# Survival Hunter — Raid (training dummy and parse)
+# Survival Hunter — Raid (group)
 
-[Hunter](../README.md) > [Raid (training dummy and parse)](README.md) > Survival
+[Hunter](../README.md) > [Raid (group)](README.md) > Survival
 
-**[Survival — Raid](../research/raid/builds/survival-raid.md)** (5/16/30) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
+**✅ Recommended** for raid (the best hunter spec here, or within 3% of it).
 
-> 🔬 Derived build: searched in the community's raid simulator from the spec's best build; it beat the hand-made build (melee-survival-raid) by 2% or more, which stays below as the alternative. A model of the beta, to check at launch.
+**[Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md)** (5/11/35) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
 
 ## How to play
 
@@ -14,10 +14,10 @@
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Raptor Strike**
-2. **Immolation Trap**
-3. **Mongoose Bite** when it lights up (after the target dodges)
-4. **Strider Kick**
+1. **Mongoose Bite** when it lights up (after the target dodges)
+2. **Strider Kick**
+3. **Raptor Strike**
+4. **Immolation Trap**
 5. **Wing Clip**
 
 **Wing Clip** is your filler: cast it whenever nothing above is ready.
@@ -33,22 +33,22 @@
 
 | Setting | DPS |
 |---|---|
-| Training dummy, 3-minute fight (only your own buffs) | 450 |
-| Parse (a full raid: every raid buff and debuff) | 967 |
+| Full raid, 3-minute fight (every raid buff and debuff: what this page ranks on) | 991 |
+| Training dummy, 3-minute fight (alone, only your own buffs) | 426 |
 
 **By gear tier** (the spec's best talents for each tier and setting in its own gear, found by this project's machine-learning search in the community simulator; [every spec](../../_reference/dps-rankings.md)):
 
-| Gear | Training dummy | Full raid | Best talents (dummy) |
+| Gear | Full raid | Training dummy | Best talents (full raid) |
 |---|---|---|---|
-| Pre-BiS | 370 | 804 | [5/16/30](https://talentsforever.com/hunter/60/5-005055001-43021023015022212-4) |
-| Phase 1 BiS | 450 | 990 | this build |
+| Pre-BiS | 804 | 370 | this build |
+| Phase 1 BiS | 990 | 450 | [5/14/32](https://talentsforever.com/hunter/60/5-005035001-050230230150022151-4) (ties this build) |
 
 - **Pre-BiS gear** (average item level 63.4): Head: Black Dragonscale Helm; Neck: Mark of Fordring; Shoulders: Theramore Pauldrons; Back: Howler's Furs; Chest: Dawn Armor; Wrist: Forest Stalker's Bracers; Hands: Theramore Gloves; Waist: Warpwood Binding; Legs: Outrider's Chain Leggings; Feet: Bloodmail Boots; Finger: Don Julio's Band; Finger: Ferocious Watcher's Signet; Trinket: Blackhand's Breadth; Trinket: Hand of Justice; Main hand: Premier High Warlord's Razor; Off hand: Premier High Warlord's Blade; Ranged/relic: Premier High Warlord's Recurve
 - **Phase 1 BiS gear** (average item level 67.6): Head: Giantstalker's Helmet; Neck: Onyxia Tooth Pendant; Shoulders: Giantstalker's Epaulets; Back: Howler's Furs; Chest: Giantstalker's Breastplate; Wrist: Giantstalker's Bracers; Hands: Giantstalker's Gloves; Waist: Giantstalker's Belt; Legs: Giantstalker's Leggings; Feet: Giantstalker's Boots; Finger: Band of Accuria; Finger: Band of Accuria; Trinket: Blackhand's Breadth; Trinket: Hand of Justice; Main hand: Deathbringer; Off hand: Brutality Blade; Ranged/relic: Striker's Mark
 
 **Where the raid damage comes from** (the same build, adding the raid's buffs one group at a time; percent of the dummy DPS):
 
-Dummy 450 → mana +0% → armor +47% → physical +52% → spell +4% → everything else +12% → raid 967
+Dummy 426 → mana +8% → armor +50% → physical +56% → spell +4% → everything else +14% → raid 991
 
 (*mana*: Blessing of Wisdom, Mana Spring; *armor*: Sunder Armor, Faerie Fire, Curse of Recklessness; *physical*: Battle Shout, Blessing of Might, Windfury, Leader of the Pack, Trueshot Aura; *spell*: Curse of the Elements, Arcane Brilliance, Moonkin Aura; *everything else*: Kings, stamina, spirit, auras and the raid rotation.)
 
@@ -56,18 +56,18 @@ Dummy 450 → mana +0% → armor +47% → physical +52% → spell +4% → everyt
 
 | 1 min | 2 min | 3 min | 4 min | 6 min |
 |---|---|---|---|---|
-| 463 | 453 | 450 | 416 | 401 |
+| 473 | 427 | 426 | 390 | 378 |
 
 Falling numbers mean cooldowns used at the pull, or mana running out in long fights.
 
-**Parse build** (personal damage in a full raid, where the raid brings the buffs): [Survival — Full raid](../research/raid/builds/survival-ml-parse.md) (5/14/32) — [open the talent tree](https://talentsforever.com/hunter/60/5-005035001-050230230150022151-4).
+**Alone instead of in a raid?** [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30) does 450 DPS on the training dummy with only your own buffs (+6% over this build there) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4).
 
 ## Other builds of this spec
 
-- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 430 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
-- [Melee Survival — Lone Wolf](../research/raid/builds/melee-survival-raid.md) (5/11/35, 426 DPS on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005005001-050230230250222151-4)
+- [Survival — Raid](../research/raid/builds/survival-raid.md) (5/16/30, 967 DPS in a full raid, 450 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005055001-50023023005022213-4)
+- [Melee hunter](../research/raid/builds/opt-melee-dps-raid-dps.md) (5/15/31, 965 DPS in a full raid, 430 on the dummy) — [open the talent tree](https://talentsforever.com/hunter/60/5-005045001-500250030050220151-4)
 - [Survival — Melee](../research/raid/builds/survival-melee.md) (9/11/31) — [open the talent tree](https://talentsforever.com/hunter/60/522-005015-500230131050220151-4)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-10-02 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-10-03 from this project's builds and simulations of the WoW: Forever beta (client build 1.60.1.70009). Simulations, not in-game measurements. Do not hand-edit.*
 

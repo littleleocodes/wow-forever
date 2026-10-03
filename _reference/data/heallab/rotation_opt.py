@@ -58,12 +58,29 @@ def alloc_of(build):
     return {n: r for lst in build["allocation"].values() for n, r in lst if r > 0}
 
 
+def tuning_builds(cls, P, extra):
+    """[(label, alloc)]: the class pipeline's hand draft, plus --build ids or allocation .json files ({talent: rank} or by tree, or a
+    build with `allocation`): the policy is shared by every healer build of the spec, so it is tuned on several and may cost none of
+    them more than --max-loss (2026-10-02: deep_heal.py tunes it on the talent search's winner and the hand draft)."""
+    data = {b["id"]: b for b in json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))["builds"]}
+    out = [(P["hand"], alloc_of(data[P["hand"]]))]
+    for ref in extra or []:
+        if ref in data:
+            al = alloc_of(data[ref])
+        else:
+            x = json.load(open(ref, encoding="utf-8"))
+            al = x.get("allocation", x)
+            if al and all(isinstance(v, list) for v in al.values()):
+                al = {n: r for lst in al.values() for n, r in lst if r > 0}
+        if al not in [a2 for _, a2 in out]:
+            out.append((pathlib.Path(ref).stem, al))
+    return out
+
+
 def search(pool, cls, a):
     mod = importlib.import_module(CLASSES[cls])
     P = mod.PIPELINE
-    data = json.load(open(ROOT / cls / "research/talents/forever/proposed-builds.json", encoding="utf-8"))
-    build = next(b for b in data["builds"] if b["id"] == P["hand"])
-    alloc = alloc_of(build)
+    builds = tuning_builds(cls, P, getattr(a, "build", None))
     rot_path = HERE / "rotations" / f"{cls}-{P['spec']}.json"
     defaults = {k: getattr(T, k) for k in KNOBS}
     start = dict(defaults, **((json.load(open(rot_path, encoding="utf-8")).get("tables") or {}) if rot_path.exists() and not a.fresh else {}))
@@ -72,35 +89,45 @@ def search(pool, cls, a):
     seeds2 = list(range(1000, 1000 + a.confirm))
 
     def caps(settings_list, seeds):
-        return pool.map(_cap, [(cls, alloc, s, seeds, a.steps) for s in settings_list], chunksize=1)
+        """[[capacity per tuning build] per settings]."""
+        flat = pool.map(_cap, [(cls, al, s, seeds, a.steps) for s in settings_list for _, al in builds], chunksize=1)
+        n = len(builds)
+        return [flat[i * n:(i + 1) * n] for i in range(len(settings_list))]
+
+    def ratio(row, ref):
+        rs = [c / r for c, r in zip(row, ref)]
+        return sum(rs) / len(rs), min(rs)
 
     base1 = caps([cur], seeds1)[0]
-    print(f"== {cls} {P['spec']} ({P['hand']}): capacity {base1:.3f} with " + ", ".join(f"{k} {v}" for k, v in cur.items()), flush=True)
+    print(f"== {cls} {P['spec']} ({', '.join(lb for lb, _ in builds)}): capacity {', '.join(f'{c:.3f}' for c in base1)} with "
+          + ", ".join(f"{k} {v}" for k, v in cur.items()), flush=True)
     log = []
     for rnd in range(1, a.rounds + 1):
         cands = [(k, v) for k, vals in KNOBS.items() for v in vals if v != cur[k]]
         res = caps([dict(cur, **{k: v}) for k, v in cands], seeds1)
-        scored = sorted(((c / base1, i) for i, c in enumerate(res)), key=lambda x: -x[0])
-        top = [(sc, i) for sc, i in scored if sc > 1 + a.screen_gain][: a.top]
+        scored = sorted(((ratio(c, base1), i) for i, c in enumerate(res)), key=lambda x: -x[0][0])
+        top = [(sc, i) for sc, i in scored if sc[0] > 1 + a.screen_gain and sc[1] >= 1 - a.max_loss][: a.top]
         if not top:
-            print(f"  round {rnd}: {len(cands)} candidates, none ahead (best {scored[0][0] - 1:+.2%}: {cands[scored[0][1]][0]} = {cands[scored[0][1]][1]})", flush=True)
+            print(f"  round {rnd}: {len(cands)} candidates, none ahead (best {scored[0][0][0] - 1:+.2%}: {cands[scored[0][1]][0]} = {cands[scored[0][1]][1]})", flush=True)
             break
         conf = caps([cur] + [dict(cur, **{cands[i][0]: cands[i][1]}) for _, i in top], seeds2)
-        best = max(((conf[k] / conf[0], sc1, i) for k, (sc1, i) in enumerate(top, start=1)), key=lambda x: x[0])
-        if best[0] <= 1 + a.min_gain:
-            print(f"  round {rnd}: {len(top)} ahead on the first seeds, none confirmed (best {best[0] - 1:+.2%})", flush=True)
+        rated = [(ratio(conf[k], conf[0]), sc1, i) for k, (sc1, i) in enumerate(top, start=1)]
+        ok = [x for x in rated if x[0][1] >= 1 - a.max_loss]
+        best = max(ok, key=lambda x: x[0][0]) if ok else None
+        if not best or best[0][0] <= 1 + a.min_gain:
+            print(f"  round {rnd}: {len(top)} ahead on the first seeds, none confirmed" + (f" (best {best[0][0] - 1:+.2%})" if best else ""), flush=True)
             break
         sc2, sc1, i = best
         k, v = cands[i]
-        log.append({"round": rnd, "change": f"{k} {cur[k]} -> {v}", "gain_seeds1": sc1 - 1, "gain_seeds2": sc2 - 1})
-        print(f"  round {rnd}: {k} {cur[k]} -> {v}  ({sc1 - 1:+.2%} first seeds, {sc2 - 1:+.2%} confirmation seeds)", flush=True)
+        log.append({"round": rnd, "change": f"{k} {cur[k]} -> {v}", "gain_seeds1": sc1[0] - 1, "gain_seeds2": sc2[0] - 1, "worst_build_seeds2": sc2[1] - 1})
+        print(f"  round {rnd}: {k} {cur[k]} -> {v}  ({sc1[0] - 1:+.2%} first seeds, {sc2[0] - 1:+.2%} confirmation seeds, worst build {sc2[1] - 1:+.2%})", flush=True)
         cur[k] = v
         base1 = res[i]
     fin = caps([start, cur], list(range(5000, 5000 + a.confirm)))
-    print(f"  final (other seeds, {a.confirm} runs): capacity {fin[0]:.3f} -> {fin[1]:.3f} ({fin[1] / fin[0] - 1:+.2%})", flush=True)
-    return {"class": cls, "spec": P["spec"], "build": P["hand"], "date": datetime.date.today().isoformat(), "runs": a.runs, "confirm": a.confirm,
-            "tables": {k: v for k, v in cur.items() if v != defaults[k]}, "defaults": defaults, "changes": log,
-            "capacity_before": fin[0], "capacity_after": fin[1]}
+    print(f"  final (other seeds, {a.confirm} runs): capacity " + "; ".join(f"{lb} {b:.3f} -> {c:.3f} ({c / b - 1:+.2%})" for (lb, _), b, c in zip(builds, fin[0], fin[1])), flush=True)
+    return {"class": cls, "spec": P["spec"], "build": P["hand"], "builds": [lb for lb, _ in builds], "date": datetime.date.today().isoformat(),
+            "runs": a.runs, "confirm": a.confirm, "tables": {k: v for k, v in cur.items() if v != defaults[k]}, "defaults": defaults, "changes": log,
+            "capacity_before": fin[0][0], "capacity_after": fin[1][0], "capacity_by_build": {lb: [b, c] for (lb, _), b, c in zip(builds, fin[0], fin[1])}}
 
 
 def main():
@@ -116,6 +143,8 @@ def main():
     ap.add_argument("--min-gain", type=float, default=0.005)
     ap.add_argument("--jobs", type=int, default=max(1, (os.cpu_count() or 4) - 2))
     ap.add_argument("--fresh", action="store_true")
+    ap.add_argument("--build", action="append", help="also tune on this build (id or allocation .json); repeatable")
+    ap.add_argument("--max-loss", type=float, default=0.003, help="a setting may cost no tuning build more than this")
     ap.add_argument("--write", action="store_true")
     a = ap.parse_args()
     with multiprocessing.Pool(a.jobs, initializer=_init) as pool:

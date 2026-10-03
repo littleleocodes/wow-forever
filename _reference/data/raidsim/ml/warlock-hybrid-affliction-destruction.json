@@ -1578,8 +1578,9 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms opt-sb-raid-raid-dps (+0.36%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms opt-sb-raid-raid-dps (+0.46% in a full raid)"
  },
  "tidied": {
   "bis-dummy": {
@@ -1925,5 +1926,32 @@
    ],
    "final_seed3": 0.0
   }
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "sb-raid",
+    "dps": 763.71,
+    "se": 0.142
+   },
+   "ds-ruin-raid": {
+    "entry": "sb-raid",
+    "dps": 759.85,
+    "se": 0.141
+   },
+   "destruction-fire-raid": {
+    "entry": "fire-destro-raid",
+    "dps": 725.29,
+    "se": 0.128
+   },
+   "opt-sb-raid-raid-dps": {
+    "entry": "sb-raid",
+    "dps": 760.22,
+    "se": 0.141
+   }
+  },
+  "best_hand": "ds-ruin-raid",
+  "gain_vs_hand": 0.0051
  }
 }

@@ -1516,13 +1516,41 @@
  "builds": {
   "written": [],
   "superseded": [],
-  "date": "2026-10-02",
-  "why": "confirms frost-fingers-of-frost-raid (+0.03%)"
+  "date": "2026-10-03",
+  "setting": "raid",
+  "why": "confirms frost-fingers-of-frost-raid (+0.11% in a full raid)"
  },
  "tidied": {
   "bis-dummy": null,
   "bis-raid": null,
   "prebis-dummy": null,
   "prebis-raid": null
+ },
+ "compare_raid": {
+  "setting": "raid",
+  "dps": {
+   "winner": {
+    "entry": "frost-raid",
+    "dps": 735.37,
+    "se": 0.139
+   },
+   "frost-fingers-of-frost-raid": {
+    "entry": "frost-raid",
+    "dps": 734.59,
+    "se": 0.138
+   },
+   "frost-arcane-power-raid": {
+    "entry": "frost-raid",
+    "dps": 693.05,
+    "se": 0.118
+   },
+   "opt-frost-raid-raid-dps": {
+    "entry": "frost-raid",
+    "dps": 734.49,
+    "se": 0.138
+   }
+  },
+  "best_hand": "frost-fingers-of-frost-raid",
+  "gain_vs_hand": 0.0011
  }
 }
