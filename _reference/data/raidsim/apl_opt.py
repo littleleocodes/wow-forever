@@ -55,7 +55,7 @@ CLASS = [None]   # the class being searched (spell_ranks)
 
 
 # ------------------------------------------------------------------------------------------------ simulator calls
-def bench(entry, repo, builds, iterations, seed, setting, tag):
+def bench(entry, repo, builds, iterations, seed, setting, tag, extra=None):
     """{label: result row} for builds [{label, talents, apl_json?, gear_json?}] in one simulator run. The rotation is the setting's own
     (run.py apl_path(entry, repo, setting)): until 2026-10-01 this took the entry's ranking setting, so raid-setting calls of damage
     entries (talent_opt.py --setting raid, fullraid_search.py, setting_audit.py's raid half) ran the dummy rotation in a full raid."""
@@ -63,7 +63,8 @@ def bench(entry, repo, builds, iterations, seed, setting, tag):
            "spec": entry.get("spec", {}), **R.setting_cfg(entry, setting),
            "profession1": entry.get("profession1", "Engineering"), "profession2": entry.get("profession2", ""),
            "distanceFromTarget": entry.get("distance", 5), "inFrontOfTarget": entry.get("in_front", False), "reactionTimeMs": 200,
-           "iterations": iterations, "duration": R.FIGHT, "seed": R.sim_seed(seed), "isTank": entry.get("tank", False), "builds": builds}
+           "iterations": iterations, "duration": R.FIGHT, "seed": R.sim_seed(seed), "isTank": entry.get("tank", False), "builds": builds,
+           **(extra or {})}   # extra config keys: {"link": true, "api_version": n} makes share links (gear_links.py)
     d = repo / "bench"
     d.mkdir(exist_ok=True)
     p = d / f"aplopt-{tag}-{os.getpid()}.json"

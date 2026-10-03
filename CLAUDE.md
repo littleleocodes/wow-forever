@@ -527,6 +527,18 @@ This folder is a knowledge base for optimizing every class in **World of Warcraf
   setting), so `talent_opt.py --setting raid`, `fullraid_search.py` and `setting_audit.py`'s raid half ran full-raid builds on the
   dummy rotation before 2026-10-01; the ML pipeline's full-raid searches use the raid rotation. `_reference/data/filelock.py` locks the
   shared records on Windows (msvcrt) and POSIX (fcntl).
+- **Gear links** (2026-10-03, user request: "an armory or link of sorts so that the pre-bis and bis gear have a way to see the actual
+  items"): `raidsim/gear_links.py --write` (run by `ml_builds.py --rank`) writes `raidsim/gear-links.json`: every item and enchant of
+  each spec's pre-BiS and BiS set with its Wowhead Forever link (`www.wowhead.com/forever/item=`, the database the simulator's UI uses),
+  item level and source (boss and zone, profession, quest or vendor, from the simulator's `assets/database/db.json`; about 40% of items
+  list none there), the enchant matched to the item's slot (one enchant effect id serves a bracer and a glove enchant, a 1H and a 2H
+  one), and one share link per tier x setting that opens the character in the community simulator's live web UI
+  (`elliotwood.github.io/Forever/forever/<sim_spec>/#...`): gear, enchants, the talents the pages show, the setting's rotation,
+  consumables, buffs and encounter. The links come from foreverbench's `link` mode (the UI's own encoding: the IndividualSimSettings
+  proto, zlib, base64, stamped with proto/common.proto's version; the live site's protos matched our pin on 2026-10-03, re-check after a
+  simulator update). `gear_tables.py` renders them: the raid pages' "The gear" table and "Open in the simulator" line, the rankings page.
+  The Classic bench (`setup.py --game classic`) no longer compiles: the potion and conjured-item lists (2026-09-28) and the stat-weight
+  mode (2026-09-30) use Forever-only proto fields; the classicbench.exe in use dates from 2026-09-27.
 - **Deep optimisation of one class** (2026-10-02/03, user request for the shaman: "Find the best talent tree entirely for each spec and
   the best rotation for each ... a full ML model analysis that 100% finds the best optimization"). No search over this many builds can
   prove a global optimum; these make a better build very unlikely. `raidsim/deep_opt.py <class>`: per damage spec (the class's ML records;

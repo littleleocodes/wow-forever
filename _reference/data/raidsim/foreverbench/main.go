@@ -19,6 +19,11 @@
 //	  "builds": [{"label": "opt-frost-raid-raid-dps", "talents": "0502050030003--055500033100030024"}]
 //	}
 //
+// "link": true prints, per build, the simulator's share link instead of simulating: {"label", "link"} where link is the UI's
+// URL hash (the IndividualSimSettings proto with the build's gear, talents, rotation, consumables, buffs and encounter, zlib-compressed
+// and base64-encoded, as the UI's "copy link" writes it; "api_version" stamps the UI's proto version on it). Open it as
+// <site>/<class>/<spec>/#<link> (2026-10-03: the gear-tier pages link every set to the live simulator).
+//
 // A build may carry its own rotation: "apl" (a path) or "apl_json" (the rotation inline); otherwise the config's "apl" applies.
 //
 // Output per build: {"label", "talents", "dps", "dps_stdev", "hps", "threat", "oom_seconds", "iterations", "seconds",
@@ -30,6 +35,9 @@
 package main
 
 import (
+	"bytes"
+	"compress/zlib"
+	"encoding/base64"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -82,6 +90,9 @@ type config struct {
 	// "statweights": true prints, per build, the simulator's stat weights (DPS per point of each stat, weapon DPS as pseudo-stats)
 	// instead of a race row (2026-09-30: raidsim/gear_opt.py builds equal-tier gear sets from them)
 	StatWeights        bool            `json:"statweights"`
+	// "link": true prints each build's share link for the simulator's web UI instead of a race row (see the file header)
+	Link       bool  `json:"link"`
+	APIVersion int32 `json:"api_version"` // the UI's proto version (proto/common.proto current_version_number) stamped on links
 	Builds             []build         `json:"builds"`
 }
 
@@ -366,6 +377,31 @@ func main() {
 					}
 				}
 			}
+		}
+		if cfg.Link {
+			settings := &proto.IndividualSimSettings{
+				Settings:  &proto.SimSettings{Iterations: cfg.Iterations},
+				RaidBuffs: raid.Buffs, PartyBuffs: raid.Parties[0].Buffs, Debuffs: raid.Debuffs,
+				Player: raid.Parties[0].Players[0], Encounter: encounter, Tanks: raid.Tanks,
+			}
+			if cfg.APIVersion > 0 { // by name: the classic simulator's settings have no api_version field
+				if fd := settings.ProtoReflect().Descriptor().Fields().ByName("api_version"); fd != nil {
+					settings.ProtoReflect().Set(fd, protoreflect.ValueOfInt32(cfg.APIVersion))
+				}
+			}
+			out := map[string]interface{}{"label": b.Label}
+			if bin, err := gproto.Marshal(settings); err != nil {
+				out["error"] = err.Error()
+			} else {
+				var buf bytes.Buffer
+				zw := zlib.NewWriter(&buf) // the zlib wrapper: the UI reads links with pako.inflate
+				zw.Write(bin)
+				zw.Close()
+				out["link"] = base64.StdEncoding.EncodeToString(buf.Bytes())
+			}
+			line, _ := json.Marshal(out)
+			fmt.Println(string(line))
+			continue
 		}
 		if cfg.StatWeights {
 			pl := raid.Parties[0].Players[0]

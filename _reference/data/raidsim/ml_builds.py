@@ -36,6 +36,7 @@ import sys
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(ROOT / "_reference/data"), str(HERE)]
+import gear_tables as GTAB  # noqa: E402
 import paths  # noqa: E402
 import readme_sections as RS  # noqa: E402
 import render_start_here as RSH  # noqa: E402
@@ -469,9 +470,17 @@ def write_rankings(classes):
          "(`_reference/data/raidsim/ml/`). Do not hand-edit.", "", intro(), ""]
     for tier in ("bis", "prebis"):
         o += [f"## {TIER_NAME[tier]}", ""] + table(allr, tier, PAGE)
-    o += ["## Gear by spec", "", "Relics stay as in the project's standard set. Enchants: the standard set's.", ""]
+    o += ["## Gear by spec", "", "Each item opens its Wowhead Forever page (with where it drops: the boss and zone, the profession, the quest or "
+          "the vendor, when the simulator's item database says) and its enchant; *Open in the simulator* loads the whole character "
+          "(gear, enchants, talents, rotation, consumables, buffs) in the community's Forever simulator on the web "
+          "(raidsim/gear_links.py). Relics stay as in the project's standard set. Enchants: the standard set's.", ""]
     for r in sorted(allr, key=lambda r: (r["class"], SM.spec_name(r["class"], r["spec"]))):
         o += [f"**{SM.spec_name(r['class'], r['spec'])} {r['class'].title()}**", ""]
+        gt = GTAB.table(r["class"], r["spec"])
+        if gt:
+            sl = GTAB.sim_line(r["class"], r["spec"])
+            o += gt + [""] + ([sl, ""] if sl else [])
+            continue
         for tier in ("bis", "prebis"):
             g = (r.get("gear") or {}).get(tier) or {}
             o.append(f"- {TIER_NAME[tier]} (average item level {g.get('ilvl', '-')}): {gear_text(r, tier)}")
@@ -512,6 +521,11 @@ def main():
     if a.tidy_winners:
         tidy_winners(a.classes)
     if a.rank or not (a.builds or a.tidy_winners):
+        # the gear's Wowhead links and the simulator share links first (they need the bench); a failure keeps the last file
+        import subprocess
+        g = subprocess.run([sys.executable, str(HERE / "gear_links.py"), *a.classes, "--write"], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", cwd=str(ROOT))
+        print((g.stdout.strip().splitlines() or ["gear_links.py: no output"])[-1] if not g.returncode else f"gear_links.py failed: {g.stderr[-400:]}")
         write_rankings(a.classes)
 
 

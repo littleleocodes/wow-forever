@@ -27,6 +27,7 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 import paths  # noqa: E402
 import readme_sections  # noqa: E402
+import gear_tables  # noqa: E402
 import simple_rotation  # noqa: E402
 import render_rotations as rr  # noqa: E402
 import render_start_here as rs  # noqa: E402
@@ -105,6 +106,14 @@ def tier_lines(cls, spec, src, top):
             tl += " (ties this build)"
         o.append(f"| {name} | {tier_dps(r, f'{t}-raid')} | {tier_dps(r, f'{t}-dummy')} | {tl} |")
     o.append("")
+    gt = gear_tables.table(cls, spec)   # every item and enchant linked to Wowhead, where it drops (raidsim/gear_links.py)
+    if gt:
+        il = "; ".join(f"{name} {((r.get('gear') or {}).get(t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if (r.get("gear") or {}).get(t))
+        o += [f"**The gear** (average item level: {il}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
+        sl = gear_tables.sim_line(cls, spec)
+        if sl:
+            o += [sl, ""]
+        return o
     for t, name in TIER_KEYS:
         g = (r.get("gear") or {}).get(t) or {}
         if g.get("names"):
